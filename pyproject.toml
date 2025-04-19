@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "chordpro-converter" # Or the name you chose during poetry init
+version = "0.1.0"
+description = "Utility to parse HTML song pages into ChordPro metadata"
+authors = ["Your Name <you@example.com>"] # Fill this in
+readme = "README.md" # Optional, but recommended
+packages = [{include = "chordpro_converter", from = "src"}] # Tells Poetry where your package is
+
+[tool.poetry.dependencies]
+python = "^3.10" # Or your compatible Python version
+beautifulsoup4 = "^4.12.3" # Example version, Poetry will select latest compatible
+lxml = "^5.3.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1" # Example version
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Optional: Add configuration for tools like pytest, black, isort here
+# [tool.pytest.ini_options]
+# pythonpath = ["src"]
+# testpaths = ["tests"]
+
+# Optional: Define a script entry point (makes 'convert-chordpro' command available after install)
+# [tool.poetry.scripts]
+# convert-chordpro = "chordpro_converter.convert_to_chordpro:main"
