@@ -1,6 +1,7 @@
 # development of various functions / utiltiies.
 
 import re
+import json
 from bs4 import BeautifulSoup, NavigableString, FeatureNotFound
 from html import unescape
 from unicodedata import normalize
@@ -13,33 +14,8 @@ CHORD_PATTERN = re.compile(
     r'\b([A-G][#b]?(?:m|min|maj|dim|aug|sus|add)?(?:[2-79]|11|13)?(?:sus[24])?(?:/[A-G][#b]?)?)\b'
 )
 
-# Chord pattern logic with leading and trailing whitespace.
-CHORD_PATTERN_WITH_WHITESPACE = re.compile(
-    r'(\s?)'  # Optional whitespace before (captured)
-    r'\b'
-    r'([A-G][#b]?(?:m|min|maj|dim|aug|sus|add)?(?:[2-79]|11|13)?(?:sus[24])?(?:/[A-G][#b]?)?)'
-    r'\b'
-    r'(\s?)'  # Optional whitespace after (captured)
-)
-
 # Songs should have at least one chord.
 MIN_CHORD_COUNT = 1
-
-def find_chords_with_optional_whitespace(text):
-  """
-  Finds chords in the text, capturing optional single whitespace
-  characters immediately before and after each chord.
-  Returns a list of the full matched strings (chord + optional whitespace).
-  """
-  matches = CHORD_PATTERN_WITH_WHITESPACE.finditer(text)
-  results = []
-  for match in matches:
-    leading_whitespace = match.group(1)
-    chord = match.group(2)
-    trailing_whitespace = match.group(3)
-    results.append(leading_whitespace + chord + trailing_whitespace)
-  return results
-
 
 def find_containers_containing_text(soup, text):
   """
@@ -58,42 +34,9 @@ def find_containers_containing_text(soup, text):
       containers.append(container.name)
   return containers
 
-def parse_classic_country_music_song_lyrics(file_path):
-  """Parse a single file scraped from classic-country-music.com and return the metadata, lyrics, and chords.
-
-  Args:
-    file_path (str): The path to the HTML file.
-  Returns:
-    dict: A dictionary containing the metadata, lyrics, and chords.
-  """
-
-
-if __name__ == "__main__":
-  filename = "/Users/mike/workspace/bluegrass_songbook_v2/tests/classic_country_song_lyrics/test_inputs/classic_country_song_lyrics/manofconstantsorrowlyricsandchords.html"
-  # filename = "/Users/mike/workspace/bluegrass_songbook_v2/tests/classic_country_song_lyrics/test_inputs/classic_country_song_lyrics/talkaboutmeandseewhatshellsaylyricschords.html"
-  # filename = "/Users/mike/workspace/bluegrass_songbook_v2/tests/classic_country_song_lyrics/test_inputs/classic_country_song_lyrics/thewonderfulworldofChristmaslyricschords.html"
-
-  with open (filename) as in_file:
-    file_string = ''.join(in_file.readlines())
-  
-  approx_chords = CHORD_PATTERN.findall(file_string)
-  container_search_chords = Counter(find_chords_with_optional_whitespace(file_string))
-  approx_chord_count = Counter(approx_chords)
-
-  print(approx_chord_count)
-  soup = BeautifulSoup(file_string , 'html.parser')
-
-  containers = []
-  for container_chord in container_search_chords.keys():
-    containers+=find_containers_containing_text(soup, container_chord)
-  most_likely_container = Counter(containers).most_common(1)[0][0]
-  title, artist = None, None
-  for elem in soup.find_all('title'):
-    if "|" in elem.string:
-      title, artist = elem.string.split("|")
-      title = title.replace("lyrics and chords", "").strip()
-      artist = artist.strip()
-
+def parse_from_span(soup, artist, title, end_str):
+  """Tries to parse the song from a span tag. Use artist and title to find the start of the song. Use end str to find
+  the end of the song."""
   lyric_lines = []
   keep = False
   elements = soup.find_all('span')
@@ -131,11 +74,68 @@ if __name__ == "__main__":
     except Exception as e:
       pass
     try:
-      if 'if you want to change the "key" on any song' in next_line.lower():
-        print(next_line.upper())
+      if end_str in next_line.lower():
         keep = False
     except Exception as e:
       pass
     if keep:
       lyric_lines.append(line)
-  print("\n".join(lyric_lines))
+  return lyric_lines
+
+def check_if_line_is_chord(line, chord_counts):
+  """If all tokens in the line are chords, then return true, otherwise return false."""
+  for token in line.split():
+    if token not in chord_counts:
+      return False
+  return True
+
+def process_lyrics(lyric_lines, chord_counts):
+  """Create the lyrics list of dictionaries. If the lyric and chord are '' then assume it is a line break.
+  
+  Args:
+    lyric_lines (list): The list of lyric lines.
+  Returns:
+    [
+      {
+        'chords': 'a line with chords anchored to the space where they are played',
+        'lyrics': 'a line of lyrics',
+      }
+    ]
+  """
+  processed_lyrics = []
+  for i, line in enumerate(lyric_lines):
+    if line == "$$EMPTY_LINE$$":
+      processed_lyrics.append({'chords': '', 'lyrics': ''})
+    if check_if_line_is_chord(line, chord_counts):
+      processed_lyrics.append({'chords': line, 'lyrics': lyric_lines[i+1]})
+  return processed_lyrics
+
+if __name__ == "__main__":
+  filename = "/Users/mike/workspace/bluegrass_songbook_v2/tests/classic_country_song_lyrics/test_inputs/classic_country_song_lyrics/manofconstantsorrowlyricsandchords.html"
+  # filename = "/Users/mike/workspace/bluegrass_songbook_v2/tests/classic_country_song_lyrics/test_inputs/classic_country_song_lyrics/talkaboutmeandseewhatshellsaylyricschords.html"
+  # filename = "/Users/mike/workspace/bluegrass_songbook_v2/tests/classic_country_song_lyrics/test_inputs/classic_country_song_lyrics/thewonderfulworldofChristmaslyricschords.html"
+
+  with open (filename) as in_file:
+    file_string = ''.join(in_file.readlines())
+  
+  soup = BeautifulSoup(file_string , 'html.parser')
+
+  clean_text = re.sub(r"\s", " ", soup.text)
+  chords = Counter(CHORD_PATTERN.findall(clean_text))
+
+  print(chords)
+
+
+  # containers = []
+  # for container_chord in container_search_chords.keys():
+  #   containers+=find_containers_containing_text(soup, container_chord)
+  # most_likely_container = Counter(containers).most_common(1)[0][0]
+  # title, artist = None, None
+  # for elem in soup.find_all('title'):
+  #   if "|" in elem.string:
+  #     title, artist = elem.string.split("|")
+  #     title = title.replace("lyrics and chords", "").strip()
+  #     artist = artist.strip()
+  # lyric_lines = parse_from_span(soup, artist, title,  'if you want to change the "key" on any song')
+  # processed_lyrics = process_lyrics(lyric_lines, approx_chord_count)
+  # print(json.dumps(processed_lyrics, indent=2))

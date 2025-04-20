@@ -20,8 +20,8 @@ TEST_OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
 
 TEST_INPUTS = [
   ("manofconstantsorrowlyricsandchords.html", "Soggy Bottom Boys"),
-  # ("talkaboutmeandseewhatshellsaylyricschords.html", "Johnny Paycheck"),
-  # ("thewonderfulworldofChristmaslyricschords.html", "Elvis Presley"), 
+  ("talkaboutmeandseewhatshellsaylyricschords.html", "Johnny Paycheck"),
+  ("thewonderfulworldofChristmaslyricschords.html", "Elvis Presley"), 
 ]
 
 @pytest.mark.parametrize("filename,expected_artist", TEST_INPUTS)
