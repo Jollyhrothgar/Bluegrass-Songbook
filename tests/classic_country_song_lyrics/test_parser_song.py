@@ -52,13 +52,6 @@ def test_extract_first_line(filename, expected_line):
     parser = ClassicCountrySongLyricsParser(test_file)
     song = parser.get_song()
 
-    print("\n\nDEBUGGING SONG TESTS")
-    print("="*50)
-
-    debug_song = parser.to_dict()
-    print(json.dumps(debug_song, indent=2))
-
-
     # Try to find a matching line in the output
     matched_line = next(
         (line for line in song if line["chords"] == expected_line["chords"] and line["lyrics"] == expected_line["lyrics"]),
@@ -69,3 +62,20 @@ def test_extract_first_line(filename, expected_line):
         f"Expected line not found.\n"
         f"Expected lyrics: '{expected_line['lyrics']}', chords: '{expected_line['chords']}'"
     )
+
+@pytest.mark.parametrize("filename, expected_chords", HAS_CHORDS_TEST_INPUT)
+def test_has_chords(filename, expected_chords):
+    test_file = TEST_INPUTS_DIR / filename
+    assert test_file.exists(), f"Test file {filename} does not exist."
+
+    parser = ClassicCountrySongLyricsParser(test_file)
+    chords = parser.get_chords()
+
+    matched_all = False
+    for chord in expected_chords:
+        if chord in chords:
+            matched_all = True
+        else:
+            matched_all = False
+            break
+    assert matched_all, f"Expected to find all chords {expected_chords}, but found: {chords}."
