@@ -15,7 +15,7 @@ class ClassicCountrySongLyricsParser(BaseParser):
     self._file_path = Path(file_path)
     self._title = None
     self._artist = None
-    self._song = None
+    self._lines = None
     self._chords = None
     with self._file_path.open() as f:
       self._file_string = f.read()
@@ -37,11 +37,21 @@ class ClassicCountrySongLyricsParser(BaseParser):
     return self._chords
 
   def get_song(self) -> list[dict[str, str]]:
-    if self._song is None:
+    if self._lines is None:
       self._chords = self.get_chords()
       lines = self._parse_song_from_span(self.get_artist(), self.get_title())
-      self._song = self._process_lyric_lines(lines, self._chords)
-    return self._song
+      self._lines = self._process_lyric_lines(lines, self._chords)
+    # Implement a check to avoid false positives.
+    # Error case detected in nowandforeverlyricschords.html which presented in commit 
+    # aeaf1aa60edb07c48428c89e81078f0b954a352e where this song shows as correctly parsed (it is not). This case is
+    # detectable because while the regex for chords is correct, the chord lines do not have all the chords.
+    chord_check_results, regex_chord_set, line_chord_set = self.check_chords(self.get_chords(), self._lines)
+    if not chord_check_results:
+      self._lines = []
+      raise ValueError(f"Chord sets do not match. Regex extracted chords: {regex_chord_set}, Line extracted chords: {line_chord_set}")
+
+
+    return self._lines
 
   def to_dict(self) -> dict:
     return {
@@ -50,6 +60,19 @@ class ClassicCountrySongLyricsParser(BaseParser):
       "artist": self.get_artist(),
       "lines": self.get_song()
     }
+  
+  @classmethod
+  def check_chords(cls, chords: list[str], lines: list[dict]) -> bool:
+    """
+    Processe cls.get_chords() against cls._lines to check if all the chords are present.
+    """
+    line_chord_set = set()
+    for line in lines:
+      line_chords = [ch.strip() for ch in line['chords'].split()]
+      line_chord_set.update(line_chords)
+    regex_chord_set = set(chords)
+    return line_chord_set == regex_chord_set, regex_chord_set, line_chord_set
+
 
   def _parse_title_and_artist(self) -> tuple[str, str]:
     title, artist = "NO TITLE FOUND", "NO ARTIST FOUND"

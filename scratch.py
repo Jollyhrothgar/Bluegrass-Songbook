@@ -2,12 +2,11 @@
 
 import re
 import json
-from bs4 import BeautifulSoup, NavigableString, FeatureNotFound
-from html import unescape
-from unicodedata import normalize
-from urllib.parse import urlparse
-import logging
+from bs4 import BeautifulSoup
 from collections import Counter
+from chordpro_converter.parsers.classic_country_song_lyrics import ClassicCountrySongLyricsParser
+from pathlib import Path
+from tqdm import tqdm
 
 # Chord pattern logic to find all chords in HTML.
 CHORD_PATTERN = re.compile(
@@ -17,11 +16,8 @@ CHORD_PATTERN = re.compile(
 # Songs should have at least one chord.
 MIN_CHORD_COUNT = 1
 
-if __name__ == "__main__":
-  filename = "/Users/mike/workspace/bluegrass_songbook_v2/tests/classic_country_song_lyrics/test_inputs/classic_country_song_lyrics/manofconstantsorrowlyricsandchords.html"
-  # filename = "/Users/mike/workspace/bluegrass_songbook_v2/tests/classic_country_song_lyrics/test_inputs/classic_country_song_lyrics/talkaboutmeandseewhatshellsaylyricschords.html"
-  # filename = "/Users/mike/workspace/bluegrass_songbook_v2/tests/classic_country_song_lyrics/test_inputs/classic_country_song_lyrics/thewonderfulworldofChristmaslyricschords.html"
 
+def test_span_parsing(filename):
   with open (filename) as in_file:
     file_string = ''.join(in_file.readlines())
   
@@ -37,7 +33,15 @@ if __name__ == "__main__":
       title = title.replace("lyrics and chords", "").strip()
       artist = artist.strip()
 
+  parser = ClassicCountrySongLyricsParser(filename)
+  song = parser.to_dict()
+  song_string = "\n".join([f"    {line}" for line in json.dumps(song, indent=2, ensure_ascii=False).split("\n")])
+
+  print()
   print(filename)
-  print(f"  {chords}")
-  print(f"  {artist}")
-  print(f"  {title}")
+  print(song_string)
+
+
+if __name__ == "__main__":
+  infile = "/Users/mike/workspace/bluegrass_songbook_v2/sources/www.classic-country-song-lyrics.com/nowandforeverlyricschords.html"
+  test_span_parsing(infile)
