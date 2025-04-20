@@ -2,6 +2,7 @@
 import pytest
 from pathlib import Path
 import sys
+import json
 
 from chordpro_converter.parsers.classic_country_song_lyrics import ClassicCountrySongLyricsParser
 
@@ -19,17 +20,13 @@ TEST_OUTPUTS_DIR = (Path(__file__).parent / 'test_outputs/classic_country_song_l
 TEST_OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
 
 TEST_SONG_EXTRACTION = [
-  (
-      "manofconstantsorrowlyricsandchords.html",
-      [
+    (
+        "manofconstantsorrowlyricsandchords.html",
         {
-          "chords": "G             G7          C",
-          "lyrics": "I am the ma-n of constant sorrow"
-        },
-      ]
-  ),
-  # ("talkaboutmeandseewhatshellsaylyricschords.html", "Johnny Paycheck"),
-  # ("thewonderfulworldofChristmaslyricschords.html", "Elvis Presley"), 
+            "chords": "G             G7          C",
+            "lyrics": "I am the ma-n of constant sorrow"
+        }
+    ),
 ]
 
 TOTAL_CHORD_LINES_TEST_INPUT = [
@@ -47,35 +44,28 @@ HAS_CHORDS_TEST_INPUT = [
 ]
 
 
-@pytest.mark.parametrize("filename,song_lines", TEST_SONG_EXTRACTION)
-def test_extract_first_line(filename, song_lines):
-    """
-    Test that the first line is extracted correctly from the HTML file.
-    """
+@pytest.mark.parametrize("filename, expected_line", TEST_SONG_EXTRACTION)
+def test_extract_first_line(filename, expected_line):
     test_file = TEST_INPUTS_DIR / filename
     assert test_file.exists(), f"Test file {filename} does not exist."
-    parser = ClassicCountrySongLyricsParser(test_file) 
-    
+
+    parser = ClassicCountrySongLyricsParser(test_file)
     song = parser.get_song()
 
-    line = "ERROR"
-    chords = "ERROR"
+    print("\n\nDEBUGGING SONG TESTS")
+    print("="*50)
 
-    # idx = 0
-    for line in song:
-        if line['chords'] == song_lines[0]['chords'] and line['lyrics'] == song_lines[0]['lyrics']:
-          lyric = line['lyrics']
-          chords = line['chords']
-          break
-    assert (lyric == song_lines[0]['lyrics'] and chords == song_lines[0]['chords']), f"Expected lyrics: '{song_lines[0]['lyrics']}', but got '{lyric}' and expected chords: '{song_lines[0]['chords']}', but got '{chords}'"
-# @pytest.mark.parametrize("filename,first_lyric,last_lyric", TEST_INPUTS)
-# def test_extract_title(filename, expected_artist):
-#     """
-#     Test that the title is extracted correctly from the HTML file.
-#     """
-#     test_file = TEST_INPUTS_DIR / filename
-#     assert test_file.exists(), f"Test file {filename} does not exist."
-#     parser = ClassicCountrySongLyricsParser(test_file) 
-    
-#     artist = parser.get_artist()
-#     assert artist == expected_artist, f"Expected artist '{expected_artist}', but got '{artist}'"
+    debug_song = parser.to_dict()
+    print(json.dumps(debug_song, indent=2))
+
+
+    # Try to find a matching line in the output
+    matched_line = next(
+        (line for line in song if line["chords"] == expected_line["chords"] and line["lyrics"] == expected_line["lyrics"]),
+        None
+    )
+
+    assert matched_line is not None, (
+        f"Expected line not found.\n"
+        f"Expected lyrics: '{expected_line['lyrics']}', chords: '{expected_line['chords']}'"
+    )

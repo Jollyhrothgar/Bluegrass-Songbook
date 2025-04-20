@@ -33,5 +33,5 @@ def test_extract_title(filename, expected_title):
     assert test_file.exists(), f"Test file {filename} does not exist."
     parser = ClassicCountrySongLyricsParser(test_file) 
     
-    title = parser._parse_title()
+    title = parser.get_title()
     assert title == expected_title, f"Expected title '{expected_title}', but got '{title}'"

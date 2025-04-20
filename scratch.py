@@ -124,18 +124,12 @@ if __name__ == "__main__":
   chords = Counter(CHORD_PATTERN.findall(clean_text))
 
   print(chords)
-
-
-  # containers = []
-  # for container_chord in container_search_chords.keys():
-  #   containers+=find_containers_containing_text(soup, container_chord)
-  # most_likely_container = Counter(containers).most_common(1)[0][0]
-  # title, artist = None, None
-  # for elem in soup.find_all('title'):
-  #   if "|" in elem.string:
-  #     title, artist = elem.string.split("|")
-  #     title = title.replace("lyrics and chords", "").strip()
-  #     artist = artist.strip()
-  # lyric_lines = parse_from_span(soup, artist, title,  'if you want to change the "key" on any song')
-  # processed_lyrics = process_lyrics(lyric_lines, approx_chord_count)
-  # print(json.dumps(processed_lyrics, indent=2))
+  title, artist = None, None
+  for elem in soup.find_all('title'):
+    if "|" in elem.string:
+      title, artist = elem.string.split("|")
+      title = title.replace("lyrics and chords", "").strip()
+      artist = artist.strip()
+  lyric_lines = parse_from_span(soup, artist, title,  'if you want to change the "key" on any song')
+  processed_lyrics = process_lyrics(lyric_lines, chords)
+  print(json.dumps(processed_lyrics, indent=2))

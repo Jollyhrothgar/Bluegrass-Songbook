@@ -1,5 +1,6 @@
 # tests/classic_country_song_lyrics/test_parser_title.py
 import pytest
+import json
 from pathlib import Path
 import sys
 
@@ -32,6 +33,5 @@ def test_extract_title(filename, expected_artist):
     test_file = TEST_INPUTS_DIR / filename
     assert test_file.exists(), f"Test file {filename} does not exist."
     parser = ClassicCountrySongLyricsParser(test_file) 
-    
     artist = parser.get_artist()
     assert artist == expected_artist, f"Expected artist '{expected_artist}', but got '{artist}'"

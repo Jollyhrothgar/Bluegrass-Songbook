@@ -1,174 +1,137 @@
-# src/chordpro_converter/parsers/classic_country_song_lyrics.py
-
 import re
-from bs4 import BeautifulSoup, NavigableString, FeatureNotFound
-from html import unescape
-from unicodedata import normalize
-from urllib.parse import urlparse
 import logging
+from bs4 import BeautifulSoup
 from collections import Counter
+from pathlib import Path
+from html import unescape
 from .base import BaseParser
 
-# Chord pattern logic to find all chords in HTML.
 CHORD_PATTERN = re.compile(
-    r'\b([A-G][#b]?(?:m|min|maj|dim|aug|sus|add)?(?:[2-79]|11|13)?(?:sus[24])?(?:/[A-G][#b]?)?)\b'
+  r'\b([A-G][#b]?(?:m|min|maj|dim|aug|sus|add)?(?:[2-79]|11|13)?(?:sus[24])?(?:/[A-G][#b]?)?)\b'
 )
 
 class ClassicCountrySongLyricsParser(BaseParser):
   def __init__(self, file_path: str):
-    self._song_info = {
-      "title": "",
-      "artist": "",
-      "lines": [{'chords': "", "text": ""}]
-    }
-    with open (file_path) as in_file:
-      self._file_string = ''.join(in_file.readlines())
-    
-    self._artist = None
+    self._file_path = Path(file_path)
     self._title = None
+    self._artist = None
     self._song = None
     self._chords = None
-    self._soup = BeautifulSoup(self._file_string , 'html.parser')
+    with self._file_path.open() as f:
+      self._file_string = f.read()
+    self._soup = BeautifulSoup(self._file_string, 'html.parser')
 
-  def get_title(self):
-    """Returns the title of the song.
-    """
+  def get_title(self) -> str:
     if self._title is None:
-      self._title =  self._parse_title()
+      self._title, _ = self._parse_title_and_artist()
     return self._title
 
-
-  def get_artist(self):
-    """Returns the artist of the song.
-    """
+  def get_artist(self) -> str:
     if self._artist is None:
-      self._artist = self._parse_artist()
+      _, self._artist = self._parse_title_and_artist()
     return self._artist
 
-  def get_chords(self):
-    """Returns the chords of the song.
-    """
+  def get_chords(self) -> Counter:
     if self._chords is None:
       self._chords = self._parse_chords()
     return self._chords
 
-  def get_song(self):
-    """Returns the song.
-    """
+  def get_song(self) -> list[dict[str, str]]:
     if self._song is None:
-      self._song = self._parse_song()
+      self._chords = self.get_chords()
+      lines = self._parse_song_from_span(self.get_artist(), self.get_title())
+      self._song = self._process_lyric_lines(lines, self._chords)
     return self._song
-  
 
-  def _parse_title(self):
-    """Reads the soup and returns the title of the song."""
+  def to_dict(self) -> dict:
+    return {
+      "title": self.get_title(),
+      "chords": self.get_chords(),
+      "artist": self.get_artist(),
+      "lines": self.get_song()
+    }
 
-    title = "NO TITLE FOUND"
-    for elem in self._soup.find_all('title'):
-      if "|" in elem.string:
-        title, _ = elem.string.split("|")
-        title = re.sub(r"lyrics( and)? chords", "", title)
-        title = title.strip()
+  def _parse_title_and_artist(self) -> tuple[str, str]:
+    title, artist = "NO TITLE FOUND", "NO ARTIST FOUND"
+    tag = self._soup.find("title")
+    if tag and "|" in tag.text:
+      parts = [part.strip() for part in tag.text.split("|")]
+      if len(parts) == 2:
+        raw_title, raw_artist = parts
+        title = re.sub(r"lyrics( and)? chords", "", raw_title, flags=re.IGNORECASE).strip()
+        artist = raw_artist.strip()
+    return title, artist
 
-    return title
+  def _parse_chords(self) -> Counter:
+    clean_text = re.sub(r"\s", " ", self._soup.get_text())
+    return list(Counter(CHORD_PATTERN.findall(clean_text)).keys())
 
-  def _parse_artist(self):  
-    """Reads the soup and returns the artist of the song."""
-    artist = "NO ARTIST FOUND"
-    for elem in self._soup.find_all('title'):
-      if "|" in elem.string:
-        _, artist = elem.string.split("|")
-        artist = artist.strip()
+  # Parses the song content from a sequence of <span> tags.
+  # This logic assumes a known structure from classic-country-song-lyrics.com:
+  # - Chords and lyrics are stacked inside <span> elements in alternating lines
+  # - The song begins after the artist/title span
+  # - The song ends when a known "end marker" string appears
+  # - Whitespaces are flattened (\n, \t, \r, \u00a0) but spacing between tokens is preserved for chord alignment
+  # NOTE: We keep two versions of the text:
+  # - `flat` is normalized for detecting the end marker reliably
+  # - `text` preserves visual structure for accurate spacing
+  def _parse_song_from_span(self, artist: str, title: str) -> list[str]:
+    """
+    Assumes all chords and lyrics are stored in <span> tags.
+    Song starts shortly after spans containing artist and title.
+    Song ends when a span contains the full known end marker string.
+    """
+    END_MARKER = 'if you want to change the "key" on any song'
 
-    return artist
+    spans = self._soup.find_all('span')
+    lines = []
+    capturing = False
 
-    
-  def _parse_chords(self):
-    clean_text = re.sub(r"\s", " ", self._soup.text)
-    self._chords = Counter(CHORD_PATTERN.findall(clean_text))
-    return self._chords
+    for i, span in enumerate(spans):
+      raw = unescape(span.string or '')
+      flat = re.sub(r"\s", " ", raw).strip().lower()
+      text = raw.replace(" ", " ").replace("\n", " ").replace("\r", " ").replace("\t", " ")
 
+      if not capturing:
+        prev_1 = spans[i - 1].get_text(strip=True) if i > 0 else ""
+        prev_2 = spans[i - 2].get_text(strip=True) if i > 1 else ""
+        if (
+          (title.lower() in prev_1.lower() or title.lower() in prev_2.lower()) and
+          (artist.lower() in prev_1.lower() or artist.lower() in prev_2.lower())
+        ):
+          capturing = True
+          continue
 
-  def _parse_song_from_span(self, artist, title, end_str):
-    """Tries to parse the song from a span tag. Use artist and title to find the start of the song. Use end str to find
-    the end of the song."""
-    lyric_lines = []
-    keep = False
-    elements = self._soup.find_all('span')
-    for i, elem in enumerate(elements):
-      try:
-        one_before_line = elements[i - 1].string
-        two_before_line = elements[i - 2].string
-        next_line = elements[i + 1].string
+      if capturing:
+        if END_MARKER.lower() in flat:
+          break
+        lines.append(text if text.strip() else "$$EMPTY_LINE$$")
 
-        try:
-          one_before_line = re.sub(r'\s', ' ', one_before_line)
-          two_before_line = re.sub(r'\s', ' ', two_before_line)
-          next_line = re.sub(r'\s', ' ', next_line)
-        except:
-          pass
-      except IndexError:
-        pass
-      line = elem.string
-      try:
-        line = re.sub(r'\s', ' ', line)
-      except TypeError:
-        if line is None:
-          line = "$$EMPTY_LINE$$"
-        else:
-          raise ValueError(f"Unexpected line type: {type(line)}")
-      line_chars = Counter(line)
-      if len(line_chars.keys()) == 1 and line_chars[' '] > 0:
-        line = "$$EMPTY_LINE$$"
-      else:
-        if line is None:
-          line = "$$EMPTY_LINE$$"
-      try:
-        if (artist in one_before_line or artist in two_before_line) and (title in one_before_line or title in two_before_line):
-          keep = True
-      except Exception as e:
-        pass
-      try:
-        if end_str in next_line.lower():
-          keep = False
-      except Exception as e:
-        pass
-      if keep:
-        lyric_lines.append(line)
-    return lyric_lines
-
-  @classmethod 
-  def check_if_line_is_chord(cls, line, chord_counts):
-    """If all tokens in the line are chords, then return true, otherwise return false."""
-    for token in line.split():
-      if token not in chord_counts:
-        return False
-    return True
+    return lines
 
   @classmethod
-  def _process_lyric_lines(cls, lyric_lines, chord_counts):
-    """Create the lyrics list of dictionaries. If the lyric and chord are '' then assume it is a line break.
-    
-    Args:
-      lyric_lines (list): The list of lyric lines.
-    Returns:
-      [
-        {
-          'chords': 'a line with chords anchored to the space where they are played',
-          'lyrics': 'a line of lyrics',
-        }
-      ]
-    """
-    processed_lyrics = []
-    for i, line in enumerate(lyric_lines):
-      if line == "$$EMPTY_LINE$$":
-        processed_lyrics.append({'chords': '', 'lyrics': ''})
-      if cls.check_if_line_is_chord(line, chord_counts):
-        processed_lyrics.append({'chords': line, 'lyrics': lyric_lines[i+1]})
-    return processed_lyrics
+  def check_if_line_is_chord(cls, line: str, chords: list) -> bool:
+    return all(token in chords for token in line.split())
 
-  def _parse_song(self):
-    self._chords = self._parse_chords()
-    lyric_lines = self._parse_song_from_span(self.get_artist(), self.get_title(), "Chorus")
-    self._song = self._process_lyric_lines(lyric_lines, self._chords) 
-    return self._song
+  @classmethod
+  def _process_lyric_lines(cls, lyric_lines: list[str], chords: list) -> list[dict[str, str]]:
+    processed = []
+    skip_next = False
+
+    for i in range(len(lyric_lines) - 1):
+      if skip_next:
+        skip_next = False
+        continue
+
+      line = lyric_lines[i]
+      next_line = lyric_lines[i + 1]
+
+      if line == "$$EMPTY_LINE$$":
+        processed.append({"chords": "", "lyrics": ""})
+      elif cls.check_if_line_is_chord(line.strip(), chords):
+        processed.append({"chords": line.rstrip("\n"), "lyrics": next_line.rstrip("\n")})
+        skip_next = True
+      else:
+        processed.append({"chords": "", "lyrics": line.rstrip("\n")})
+
+    return processed
