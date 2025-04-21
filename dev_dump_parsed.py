@@ -8,7 +8,9 @@ TEST_INPUTS = [
     # "talkaboutmeandseewhatshellsaylyricschords.html",
     # "thewonderfulworldofChristmaslyricschords.html",
     # "halfofthishalfofthatlyricschords.html",
-    "homeontherangelyricschords.html"
+    # "homeontherangelyricschords.html"
+    # "whenyousaynothingatalllyricschords.html",
+    "theflowersthesunsetthetreeslyricschords.html"
 ]
 
 BASE_DIR = Path("tests/classic_country_lyrics/shared_song_inputs/classic_country_song_lyrics")

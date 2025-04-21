@@ -2,7 +2,7 @@
 
 # Usage: ./sample_from_log.sh "A:1 T:1 C:1 L:1"
 
-LOG_FILE="song_parsing_summary.log"
+LOG_FILE="song_parsing_summary_scoring.log"
 CONDITION="$1"
 PROJECT_ROOT="$(pwd)"
 
@@ -10,12 +10,6 @@ if [ -z "$CONDITION" ]; then
   echo "Usage: $0 \"A:1 T:1 C:1 L:1\""
   exit 1
 fi
-
-# Emoji replacement
-EMOJI_CONDITION=$(echo "$CONDITION" | \
-  sed -E 's/A:1/✅/; s/T:1/✅/; s/C:1/✅/; s/L:1/✅/' | \
-  sed -E 's/A:0/❌/; s/T:0/❌/; s/C:0/❌/; s/L:0/❌/' | \
-  sed 's/ / | /g')
 
 # Choose shuffle command
 if command -v shuf >/dev/null 2>&1; then
@@ -28,10 +22,10 @@ else
 fi
 
 # Search for matching file
-MATCHING_LINE=$(tail -n +3 "$LOG_FILE" | grep "$EMOJI_CONDITION" | $SHUFFLER -n 1)
+MATCHING_LINE=$(tail -n +3 "$LOG_FILE" | grep "$CONDITION" | $SHUFFLER -n 1)
 
 if [ -z "$MATCHING_LINE" ]; then
-  echo "No match found for: $CONDITION (→ $EMOJI_CONDITION)"
+  echo "No match found for: $CONDITION"
   exit 1
 fi
 
