@@ -40,4 +40,8 @@ echo "Removing coverage data (.coverage, htmlcov/)..."
 rm -f .coverage*
 rm -rf htmlcov/
 
+# Remove logging data
+echo "Removing logs"
+rm -f ./song_parsing_debug.log
+
 echo "Cleaning complete."

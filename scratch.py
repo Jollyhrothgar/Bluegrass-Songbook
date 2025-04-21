@@ -44,4 +44,6 @@ def test_span_parsing(filename):
 
 if __name__ == "__main__":
   infile = "/Users/mike/workspace/bluegrass_songbook_v2/sources/www.classic-country-song-lyrics.com/nowandforeverlyricschords.html"
+  # infile = "/Users/mike/workspace/bluegrass_songbook_v2/sources//www.classic-country-song-lyrics.com/manofconstantsorrowlyricsandchords.html"
+
   test_span_parsing(infile)

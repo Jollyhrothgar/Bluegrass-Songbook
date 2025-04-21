@@ -5,6 +5,9 @@ from collections import Counter
 from pathlib import Path
 from html import unescape
 from .base import BaseParser
+import logging
+logger = logging.getLogger(__name__)
+
 
 CHORD_PATTERN = re.compile(
   r'\b([A-G][#b]?(?:m|min|maj|dim|aug|sus|add)?(?:[2-79]|11|13)?(?:sus[24])?(?:/[A-G][#b]?)?)\b'
@@ -38,19 +41,36 @@ class ClassicCountrySongLyricsParser(BaseParser):
 
   def get_song(self) -> list[dict[str, str]]:
     if self._lines is None:
-      self._chords = self.get_chords()
-      lines = self._parse_song_from_span(self.get_artist(), self.get_title())
-      self._lines = self._process_lyric_lines(lines, self._chords)
-    # Implement a check to avoid false positives.
-    # Error case detected in nowandforeverlyricschords.html which presented in commit 
-    # aeaf1aa60edb07c48428c89e81078f0b954a352e where this song shows as correctly parsed (it is not). This case is
-    # detectable because while the regex for chords is correct, the chord lines do not have all the chords.
+        self._chords = self.get_chords()
+        lines = self._parse_song_from_span(self.get_artist(), self.get_title())
+        self._lines = self._process_lyric_lines(lines, self._chords)
+
+    # Validate chord integrity
     chord_check_results, regex_chord_set, line_chord_set = self.check_chords(self.get_chords(), self._lines)
     if not chord_check_results:
-      self._lines = []
-      raise ValueError(f"Chord sets do not match. Regex extracted chords: {regex_chord_set}, Line extracted chords: {line_chord_set}")
-
-
+        logger.warning(
+            "Chord mismatch in file %s\n"
+            "Title: %s | Artist: %s\n"
+            "Regex chords: %s\n"
+            "Line chords: %s\n",
+            self._file_path.name,
+            self.get_title(),
+            self.get_artist(),
+            sorted(regex_chord_set),
+            sorted(line_chord_set)
+        )
+        self._lines = []
+    # Validate lyric token count:
+    lyric_token_threshold = 30
+    if self.get_lyric_token_count(self._lines) < lyric_token_threshold:
+        logger.warning(
+            f"Lyric token count ({lyric_token_threshold}) is too low for file %s\n"
+            "Title: %s | Artist: %s\n",
+            self._file_path.name,
+            self.get_title(),
+            self.get_artist()
+        )
+        self._lines = []
     return self._lines
 
   def to_dict(self) -> dict:
@@ -72,6 +92,16 @@ class ClassicCountrySongLyricsParser(BaseParser):
       line_chord_set.update(line_chords)
     regex_chord_set = set(chords)
     return line_chord_set == regex_chord_set, regex_chord_set, line_chord_set
+
+  @classmethod
+  def get_lyric_token_count(cls, lines: list[dict]) -> int:
+    """
+    Returns the number of tokens in the lyrics.
+    """
+    tokens_count = 0
+    for line in lines:
+      tokens_count += len(line['lyrics'].split())
+    return tokens_count
 
 
   def _parse_title_and_artist(self) -> tuple[str, str]:

@@ -3,6 +3,14 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from collections import Counter
 from tqdm import tqdm
 
+import logging
+
+logging.basicConfig(
+    filename='song_parsing_debug.log',
+    level=logging.WARNING,
+    format='%(asctime)s [%(levelname)s] %(message)s'
+)
+
 from src.chordpro_converter.parsers.classic_country_song_lyrics import ClassicCountrySongLyricsParser
 
 source_dir = Path("sources/www.classic-country-song-lyrics.com")
