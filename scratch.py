@@ -4,7 +4,8 @@ import re
 import json
 from bs4 import BeautifulSoup
 from collections import Counter
-from chordpro_converter.parsers.classic_country_song_lyrics import ClassicCountrySongLyricsParser
+from chordpro_converter.parsers.classic_country_anchoring_parser import AnchoringParser
+from chordpro_converter.parsers.classic_country_scoring_parser import ScoringSongParser
 from pathlib import Path
 from tqdm import tqdm
 
@@ -43,7 +44,19 @@ def test_span_parsing(filename):
 
 
 if __name__ == "__main__":
-  infile = "/Users/mike/workspace/bluegrass_songbook_v2/sources/www.classic-country-song-lyrics.com/nowandforeverlyricschords.html"
+  # infile = "/Users/mike/workspace/bluegrass_songbook_v2/sources/www.classic-country-song-lyrics.com/nowandforeverlyricschords.html"
+  # infile = "/Users/mike/workspace/bluegrass_songbook_v2/sources/www.classic-country-song-lyrics.com/homeontherangelyricschords.html"
   # infile = "/Users/mike/workspace/bluegrass_songbook_v2/sources//www.classic-country-song-lyrics.com/manofconstantsorrowlyricsandchords.html"
+  infile = "/Users/mike/workspace/bluegrass_songbook_v2/sources/www.classic-country-song-lyrics.com/halfofthishalfofthatlyricschords.html"
 
-  test_span_parsing(infile)
+  # test_span_parsing(infile)
+
+  with open(infile) as f:
+    html = f.read()
+
+  parser = ScoringSongParser(html)
+  song_data = parser.to_dict()
+
+  print(json.dumps(song_data, indent=2, ensure_ascii=False))
+
+  print(ScoringSongParser)

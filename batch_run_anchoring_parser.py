@@ -1,24 +1,32 @@
+import logging
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from collections import Counter
 from tqdm import tqdm
 
-import logging
+# --- Logging Setup ---
+WARNINGS_LOG_NAME = "bluegrass_songbook.log"
+SUMMARY_LOG_NAME = "song_parsing_summary.log"
 
-logging.basicConfig(
-    filename='song_parsing_debug.log',
-    level=logging.WARNING,
-    format='%(asctime)s [%(levelname)s] %(message)s'
-)
+logger = logging.getLogger("bluegrass_songbook_logger")
+logger.setLevel(logging.WARNING)
+logger.propagate = False
 
-from src.chordpro_converter.parsers.classic_country_song_lyrics import ClassicCountrySongLyricsParser
+if not logger.handlers:
+  file_handler = logging.FileHandler(WARNINGS_LOG_NAME, mode="w", encoding="utf-8")
+  file_handler.setFormatter(logging.Formatter('%(asctime)s [%(levelname)s] %(message)s'))
+  logger.addHandler(file_handler)
 
+# --- Parser Import ---
+from chordpro_converter.parsers.classic_country_anchoring_parser import AnchoringParser
+
+# --- Constants ---
 source_dir = Path("sources/www.classic-country-song-lyrics.com")
-log_path = Path("song_parsing_debug.log")
 
+# --- Core Check Function ---
 def check_song(file_path: Path):
   try:
-    parser = ClassicCountrySongLyricsParser(file_path)
+    parser = AnchoringParser(file_path)
 
     artist = parser.get_artist()
     title = parser.get_title()
@@ -43,6 +51,7 @@ def check_song(file_path: Path):
     }
 
   except Exception as e:
+    logger.warning("Exception parsing %s: %s", file_path.name, e)
     return {
       "filename": file_path.name,
       "artist_ok": False,
@@ -53,6 +62,7 @@ def check_song(file_path: Path):
       "error": str(e),
     }
 
+# --- Main Execution ---
 def main():
   files = list(source_dir.rglob("*.html"))
   results = []
@@ -65,8 +75,8 @@ def main():
       results.append(result)
       summary[result["result_key"]] += 1
 
-  # Write log
-  with log_path.open("w") as log:
+  # Write human-readable summary log
+  with Path(SUMMARY_LOG_NAME).open("w", encoding="utf-8") as log:
     log.write("filename | artist | title | chords | lines | error\n")
     log.write("-" * 90 + "\n")
     for r in results:
@@ -79,7 +89,7 @@ def main():
         f"{r['error'] or ''}\n"
       )
 
-  # Print summary
+  # Print summary to terminal
   print("\n=== Summary ===")
   for key, count in sorted(summary.items(), key=lambda x: -x[1]):
     print(f"{key:20} : {count} files")

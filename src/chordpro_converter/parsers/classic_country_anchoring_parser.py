@@ -6,14 +6,14 @@ from pathlib import Path
 from html import unescape
 from .base import BaseParser
 import logging
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("bluegrass_songbook_logger")
 
 
 CHORD_PATTERN = re.compile(
   r'\b([A-G][#b]?(?:m|min|maj|dim|aug|sus|add)?(?:[2-79]|11|13)?(?:sus[24])?(?:/[A-G][#b]?)?)\b'
 )
 
-class ClassicCountrySongLyricsParser(BaseParser):
+class AnchoringParser(BaseParser):
   def __init__(self, file_path: str):
     self._file_path = Path(file_path)
     self._title = None
@@ -118,6 +118,19 @@ class ClassicCountrySongLyricsParser(BaseParser):
   def _parse_chords(self) -> Counter:
     clean_text = re.sub(r"\s", " ", self._soup.get_text())
     return list(Counter(CHORD_PATTERN.findall(clean_text)).keys())
+  
+  # Brute force filter boilerplate.
+  def _is_boilerplate_line(self, text: str) -> bool:
+    text = text.lower().strip()
+    return any([
+      "lyrics and chords are intended for your personal use" in text,
+      "low prices on" in text,
+      "easy to download" in text,
+      "country gospel cd" in text,
+      "most only $.99" in text,
+      "freefind" in text
+    ])
+
 
   # Parses the song content from a sequence of <span> tags.
   # This logic assumes a known structure from classic-country-song-lyrics.com:
@@ -130,44 +143,67 @@ class ClassicCountrySongLyricsParser(BaseParser):
   # - `text` preserves visual structure for accurate spacing
   def _parse_song_from_span(self, artist: str, title: str) -> list[str]:
     """
-    Assumes all chords and lyrics are stored in <span> tags.
-    Song starts shortly after spans containing artist and title.
-    Song ends when a span contains the full known end marker string.
+    Parses song content from <span> tags using the first exact, non-boilerplate title match.
+    - Skips known boilerplate before and during capture
+    - Strips junk lines between anchor and real song
+    - Stops at known END_MARKER
     """
     END_MARKER = 'if you want to change the "key" on any song'
 
     spans = self._soup.find_all('span')
     lines = []
-    capturing = False
 
+    normalized_title = re.sub(r"\s+", " ", title.strip().lower())
+    title_match_index = None
+
+    # --- Find the first exact title match that is not boilerplate ---
     for i, span in enumerate(spans):
       raw = unescape(span.string or '')
-      flat = re.sub(r"\s", " ", raw).strip().lower()
-      text = raw.replace(" ", " ").replace("\n", " ").replace("\r", " ").replace("\t", " ")
+      flat = re.sub(r"\s+", " ", raw).strip().lower()
+      if flat == normalized_title and not self._is_boilerplate_line(flat):
+        title_match_index = i
+        break
 
-      if not capturing:
-        prev_1 = spans[i - 1].get_text(strip=True) if i > 0 else ""
-        prev_2 = spans[i - 2].get_text(strip=True) if i > 1 else ""
-        if (
-          (title.lower() in prev_1.lower() or title.lower() in prev_2.lower()) and
-          (artist.lower() in prev_1.lower() or artist.lower() in prev_2.lower())
-        ):
-          capturing = True
-          continue
+    if title_match_index is None:
+      logger.warning("Could not match normalized title in span content: %s", self._file_path.name)
+      return []
 
-      if capturing:
-        if END_MARKER.lower() in flat:
-          break
-        lines.append(text if text.strip() else "$$EMPTY_LINE$$")
+    # --- Start parsing from just after the title match ---
+    for span in spans[title_match_index + 1:]:
+      raw = unescape(span.string or '')
+      flat = re.sub(r"\s+", " ", raw).strip().lower()
+      text = raw.replace("\u00a0", " ").replace("\n", " ").replace("\r", " ").replace("\t", " ")
+
+      if END_MARKER.lower() in flat:
+        break
+
+      if self._is_boilerplate_line(flat):
+        continue
+
+      lines.append(text if text.strip() else "$$EMPTY_LINE$$")
+
+    # --- Trim junk from the beginning only ---
+    def is_pre_song_junk(line: str) -> bool:
+      junk = line.strip().lower()
+      return junk in {"", ".", "-", "and", "freefind", "country gospel cd"}
+
+    while lines and is_pre_song_junk(lines[0]):
+      lines.pop(0)
 
     return lines
+
+
 
   @classmethod
   def check_if_line_is_chord(cls, line: str, chords: list) -> bool:
     return all(token in chords for token in line.split())
 
   @classmethod
-  def _process_lyric_lines(cls, lyric_lines: list[str], chords: list) -> list[dict[str, str]]:
+  def _process_lyric_lines(cls, lyric_lines: list[str], chords: list[str]) -> list[dict[str, str]]:
+    """
+    Takes raw lyric lines and pairs chords with lyrics.
+    Preserves intentional empty lines but skips redundant input lines.
+    """
     processed = []
     skip_next = False
 

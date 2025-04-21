@@ -4,7 +4,7 @@ from pathlib import Path
 import sys
 import json
 
-from chordpro_converter.parsers.classic_country_song_lyrics import ClassicCountrySongLyricsParser
+from chordpro_converter.parsers.classic_country_anchoring_parser import ClassicCountrySongLyricsParser
 
 # Ensure src path is available
 project_root = Path(__file__).resolve().parent.parent

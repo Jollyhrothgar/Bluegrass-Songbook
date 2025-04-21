@@ -42,6 +42,6 @@ rm -rf htmlcov/
 
 # Remove logging data
 echo "Removing logs"
-rm -f ./song_parsing_debug.log
+rm -f ./*.log
 
 echo "Cleaning complete."

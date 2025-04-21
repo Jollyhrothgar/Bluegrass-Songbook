@@ -2,7 +2,7 @@
 
 # Usage: ./sample_from_log.sh "A:1 T:1 C:1 L:1"
 
-LOG_FILE="song_parsing_debug.log"
+LOG_FILE="song_parsing_summary.log"
 CONDITION="$1"
 PROJECT_ROOT="$(pwd)"
 
