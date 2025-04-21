@@ -41,7 +41,7 @@ class ScoringParser:
       self._used_pre = True
       return lines
 
-    courier_spans = self.soup.find_all("span", style=lambda s: s and "Courier New" in s)
+    courier_spans = self.soup.find_all("span", style=lambda s: s and ("Courier New" in s or "Courier" in s))
     if courier_spans:
       self._used_pre = False
       blocks = []
