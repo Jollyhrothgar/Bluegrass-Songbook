@@ -21,7 +21,8 @@ JUNK_PHRASES = [
   "mp3s",
   "most only $.99",
   "search engine",
-  "classic country music"
+  "classic country music",
+  "if you want to change the \"key\""
 ]
 
 class ScoringParser:
@@ -33,22 +34,23 @@ class ScoringParser:
     self.title, self.artist, self.writer = self._extract_metadata()
 
   def _extract_spans_or_pre(self) -> list[str]:
-    spans = self.soup.find_all("span")
     pre = self.soup.find("pre")
-
     if pre:
       raw = pre.get_text("\n")
       lines = [line.rstrip("\n") for line in raw.splitlines()]
       self._used_pre = True
       return lines
 
-    if spans:
+    courier_spans = self.soup.find_all("span", style=lambda s: s and "Courier New" in s)
+    if courier_spans:
       self._used_pre = False
-      return [
-        unescape(span.get_text() or "").replace("\xa0", " ")
-        for span in spans
-        if span.get_text(strip=True)
-      ]
+      blocks = []
+      for span in courier_spans:
+        text = unescape(span.get_text(" ")).replace("\xa0", " ").replace("\n", " ")
+        line = text.strip("\n").rstrip()
+        if line.strip():
+          blocks.append(line)
+      return blocks
 
     return []
 
@@ -79,7 +81,7 @@ class ScoringParser:
     start_idx = 0
     for i, line in enumerate(lower_lines):
       if self.title.lower() in line or self.artist.lower() in line:
-        start_idx = i
+        start_idx = i + 1
         break
 
     relevant_lines = self.span_lines[start_idx:]
@@ -119,8 +121,13 @@ class ScoringParser:
       not extended[0].strip()
       or "written by" in extended[0].lower()
       or any(p in extended[0].lower() for p in JUNK_PHRASES)
+      or self.artist.lower() in extended[0].lower()
+      or self.title.lower() in extended[0].lower()
     ):
       extended.pop(0)
+
+    while extended and any(p in extended[-1].lower() for p in JUNK_PHRASES):
+      extended.pop()
 
     return extended
 
@@ -130,7 +137,7 @@ class ScoringParser:
     lines = []
     i = 0
     while i < len(block):
-      line = block[i].rstrip("\n")
+      line = block[i].replace("\n", " ").rstrip()
       if not line.strip():
         lines.append({"chords": "", "lyrics": ""})
         i += 1
@@ -145,19 +152,19 @@ class ScoringParser:
       is_chord_line = tokens and all(t in self.chord_set for t in tokens)
 
       if is_chord_line and i + 1 < len(block):
-        next_line = block[i + 1].rstrip("\n")
+        next_line = block[i + 1].replace("\n", " ").rstrip()
         next_tokens = next_line.strip().split()
         if next_line and not any(t in self.chord_set for t in next_tokens):
-          lines.append({"chords": line, "lyrics": next_line})
+          lines.append({"chords": line.rstrip(), "lyrics": next_line.rstrip()})
           i += 2
           continue
         else:
-          lines.append({"chords": line, "lyrics": ""})
+          lines.append({"chords": line.rstrip(), "lyrics": ""})
           i += 1
           continue
 
       if CHORD_PATTERN.fullmatch(line.strip()) and i + 1 < len(block):
-        lyric_line = block[i + 1].rstrip("\n")
+        lyric_line = block[i + 1].replace("\n", " ").rstrip()
         if len(lyric_line.strip().split()) >= 3:
           lines.append({"chords": line.rstrip(), "lyrics": lyric_line.rstrip()})
           i += 2
@@ -165,7 +172,7 @@ class ScoringParser:
 
       chord_match = CHORD_PATTERN.search(line)
       if chord_match and len(tokens) == 1 and i + 1 < len(block):
-        next_line = block[i + 1].rstrip("\n")
+        next_line = block[i + 1].replace("\n", " ").rstrip()
         lines.append({"chords": line.rstrip(), "lyrics": next_line.rstrip()})
         i += 2
         continue

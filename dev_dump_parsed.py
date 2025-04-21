@@ -4,11 +4,11 @@ from chordpro_converter.parsers.classic_country_scoring_parser import ScoringPar
 
 TEST_INPUTS = [
     # "manofconstantsorrowlyricsandchords.html",
+    # "nowandforeverlyricschords.html",
     # "talkaboutmeandseewhatshellsaylyricschords.html",
     # "thewonderfulworldofChristmaslyricschords.html",
     # "halfofthishalfofthatlyricschords.html",
-    # "homeontherangelyricschords.html",
-    "nowandforeverlyricschords.html"
+    "homeontherangelyricschords.html"
 ]
 
 BASE_DIR = Path("tests/classic_country_lyrics/shared_song_inputs/classic_country_song_lyrics")
@@ -19,8 +19,10 @@ for filename in TEST_INPUTS:
     parser = ScoringParser(html)
     parsed = parser.to_dict()
 
-    print("=" * 80)
-    print(f"{filename}")
-    print("=" * 80)
+    label = filename
+    padding = len(label)
+    print("=" * padding)
+    print(f"{label}")
+    print("=" * padding)
     print(json.dumps(parsed, indent=2, ensure_ascii=False))
     print(len(parsed['lines']))
