@@ -86,7 +86,7 @@ class ScoringParser:
 
     relevant_lines = self.span_lines[start_idx:]
     if len(relevant_lines) < window_size:
-      print(f"[WARN] Not enough lines for windowing: {len(relevant_lines)} lines in source.")
+      # print(f"[WARN] Not enough lines for windowing: {len(relevant_lines)} lines in source.")
       best_start = 0
       best_block = relevant_lines
     else:
@@ -212,3 +212,43 @@ class ScoringParser:
             break
 
     return title, artist, writer
+
+  def to_chordpro(self) -> str:
+      chordpro_output = []
+
+      song_data = self.to_dict()
+
+      # Add metadata
+      if song_data.get("title"):
+          chordpro_output.append(f"{{title: {song_data['title']}}}")
+      if song_data.get("artist"):
+          chordpro_output.append(f"{{artist: {song_data['artist']}}}")
+      if song_data.get("writer") is not None:
+          chordpro_output.append(f"{{composer: {song_data['writer']}}}")
+      else:
+          chordpro_output.append("{composer: unknown}")
+
+      # Add the extra newline after metadata
+      if song_data.get("title") or song_data.get("artist") or song_data.get("writer") is not None:
+          chordpro_output.append("")
+
+      # Process each line
+      for line_data in song_data["lines"]:
+          chords = line_data.get("chords", "")
+          lyrics = line_data.get("lyrics", "")
+          chord_indices = []
+          for match in CHORD_PATTERN.finditer(chords):
+              chord_indices.append((match.start(), match.group(0)))
+
+          chord_indices.sort(key=lambda item: item[0])
+
+          processed_lyric = ""
+          last_index = 0
+          for index, chord in chord_indices:
+              processed_lyric += lyrics[last_index:index]
+              processed_lyric += f"[{chord}]"
+              last_index = index
+          processed_lyric += lyrics[last_index:]
+          chordpro_output.append(processed_lyric)
+
+      return "\n".join(chordpro_output)

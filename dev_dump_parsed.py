@@ -1,9 +1,10 @@
 import json
 from pathlib import Path
-from chordpro_converter.parsers.classic_country_scoring_parser import ScoringParser
+# from chordpro_converter.parsers.classic_country_scoring_parser import ScoringParser
+from chordpro_converter.parsers.gemini_simplified_scoring_parser import ScoringParser
 
 TEST_INPUTS = [
-    # "manofconstantsorrowlyricsandchords.html",
+    "manofconstantsorrowlyricsandchords.html",
     # "nowandforeverlyricschords.html",
     # "talkaboutmeandseewhatshellsaylyricschords.html",
     # "thewonderfulworldofChristmaslyricschords.html",
@@ -11,7 +12,7 @@ TEST_INPUTS = [
     # "homeontherangelyricschords.html",
     # "whenyousaynothingatalllyricschords.html",
     # "theflowersthesunsetthetreeslyricschords.html",
-    "mysterytrainlyricschords.html"
+    # "mysterytrainlyricschords.html"
 ]
 
 BASE_DIR = Path("tests/classic_country_lyrics/shared_song_inputs/classic_country_song_lyrics")
@@ -29,3 +30,5 @@ for filename in TEST_INPUTS:
     print("=" * padding)
     print(json.dumps(parsed, indent=2, ensure_ascii=False))
     print(len(parsed['lines']))
+
+    print(parser.to_chordpro())
