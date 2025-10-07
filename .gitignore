@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# Project specific
+output/
+archive/
+batch_processing_report.json
+stratified_sample_spot_check.json
+
+# IDE
+.vscode/
+.idea/
+.claude/
+
+# OS
+.DS_Store
+*.swp
