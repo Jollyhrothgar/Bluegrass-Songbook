@@ -19,21 +19,21 @@ Converts scraped HTML song files from classic-country-song-lyrics.com to ChordPr
 ├── output/                    # Generated ChordPro files (gitignored)
 ├── html/                      # Input HTML corpus
 ├── chordpro_cli.py           # Command-line interface
-└── requirements.txt          # Dependencies
+├── pyproject.toml            # Project dependencies (UV)
+└── requirements.txt          # Dependencies (legacy, use pyproject.toml)
 ```
 
 ## Installation
 
 ```bash
-# Create virtual environment
-uv venv
+# Install dependencies and create virtual environment
+uv sync
 
-# Activate virtual environment
+# Or if you need to activate the environment manually
 source .venv/bin/activate
-
-# Install dependencies
-uv pip install -r requirements.txt
 ```
+
+Note: This project uses [UV](https://github.com/astral-sh/uv) for dependency management. The `uv sync` command will automatically create a virtual environment and install all dependencies from `pyproject.toml`.
 
 ## Usage
 
