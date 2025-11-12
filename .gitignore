@@ -10,7 +10,6 @@ ENV/
 env/
 
 # Project specific
-output/
 archive/
 batch_processing_report.json
 stratified_sample_spot_check.json

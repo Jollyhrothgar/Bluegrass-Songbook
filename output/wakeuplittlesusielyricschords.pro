@@ -1,0 +1,44 @@
+{meta: title Wake Up Little Susie}
+{meta: artist The Everly Brothers}
+{meta: writer Boudleaux and Felice Bryant}
+
+{start_of_verse: Verse 1}
+[C]Wake up little Susie wake up [Eb]    [F]   [Eb]
+[C]Wake up little Susie wake up [C7]
+We’ve [F]both been [C]sound a[F]sleep   wake up little [C]Susie and [F]weep 
+The movie’s [C]over it’s [F]four o’[C]clock and [F]we’re in [C]trouble [F]deep 
+Wake up little [G7]Susie  [F]wake up little [G7]Susie   w-ell 
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Whatta we gonna [D7]tell your [G7]momma 
+Whatta we gonna [D7]tell your [G7]pa
+Whatta we gonna [D7]tell our fri[G]ends when they say ooh-la-la[G7] 
+Wake up little [C]Susie  [G7]wake up little [C]Susie  w-ell 
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+I told your mama that you’d be in by ten 
+[C7]Well [F]Susie baby looks like we goofed again 
+Wake up little [G7]Susie  [F]wake up little [G]Susie 
+[G7]We gotta go home 
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+[C]Wake up little Susie wake up  [Eb]    [F]   [Eb]
+[C]Wake up little Susie wake up [C7]
+The [F]movie [C]wasn’t so [F]hot it didn’t [C7]have much of a [F]plot 
+We fell a[C]sleep our [F]goose is [C]cooked our [F]repu[C]tation is [F]shot
+Wake up little [G7]Susie  [F]wake up little [G7]Susie    w-ell
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Whatta we gonna [D7]tell your [G7]momma 
+Whatta we gonna [D7]tell your [G7]pa
+Whatta we gonna [D7]tell our fri[G]ends when they say ooh-la-la[G7] 
+Wake up little [C]Susie  [G7]wake up little [C]Susie  w-ell 
+{end_of_verse}
+
+{start_of_verse: Verse 5}
+[G7]Wake up little [C]Susie  
+{end_of_verse}

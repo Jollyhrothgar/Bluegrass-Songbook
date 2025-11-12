@@ -256,7 +256,7 @@ def main():
     # Configuration
     input_dir = "html"
     output_dir = "output"
-    max_workers = 16  # Adjust based on CPU cores
+    max_workers = 32  # Increased for I/O-bound workload
 
     # Create processor
     processor = BatchProcessor(input_dir, output_dir, max_workers)

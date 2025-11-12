@@ -1,0 +1,591 @@
+Outliers Report: Word Count
+================================================================================
+
+Thresholds: Bottom 0.1% <= 0.00, Top 0.1% >= 467.88
+
+Bottom 0.1% (127 files):
+--------------------------------------------------------------------------------
+  HTML: html/scotchandsodalyricschords.html
+  PRO:  output/scotchandsodalyricschords.pro
+  Word Count: 0
+
+  HTML: html/justalittletalkwithjesuslyricschords.html
+  PRO:  output/justalittletalkwithjesuslyricschords.pro
+  Word Count: 0
+
+  HTML: html/mountainmusiclyricschords.html
+  PRO:  output/mountainmusiclyricschords.pro
+  Word Count: 0
+
+  HTML: html/royorbisonlyrics.html
+  PRO:  output/royorbisonlyrics.pro
+  Word Count: 0
+
+  HTML: html/beforethenextteardropfallslyricschords.html
+  PRO:  output/beforethenextteardropfallslyricschords.pro
+  Word Count: 0
+
+  HTML: html/prettyflamingolyricschords.html
+  PRO:  output/prettyflamingolyricschords.pro
+  Word Count: 0
+
+  HTML: html/iwalkandiwalkandiwalklyricschords.html
+  PRO:  output/iwalkandiwalkandiwalklyricschords.pro
+  Word Count: 0
+
+  HTML: html/foolfoolfoollyricsandchords.html
+  PRO:  output/foolfoolfoollyricsandchords.pro
+  Word Count: 0
+
+  HTML: html/clingingtoasavinghandlyricschords.html
+  PRO:  output/clingingtoasavinghandlyricschords.pro
+  Word Count: 0
+
+  HTML: html/ramblingroselyricschords.html
+  PRO:  output/ramblingroselyricschords.pro
+  Word Count: 0
+
+  HTML: html/imgonnaloveyoutoolyricschords.html
+  PRO:  output/imgonnaloveyoutoolyricschords.pro
+  Word Count: 0
+
+  HTML: html/youroldstandbylyricschords.html
+  PRO:  output/youroldstandbylyricschords.pro
+  Word Count: 0
+
+  HTML: html/ifihadlastnighttoliveoverlyricschords.html
+  PRO:  output/ifihadlastnighttoliveoverlyricschords.pro
+  Word Count: 0
+
+  HTML: html/youllneverbethesunlyricschords.html
+  PRO:  output/youllneverbethesunlyricschords.pro
+  Word Count: 0
+
+  HTML: html/yesiseeGodlyricschords.html
+  PRO:  output/yesiseeGodlyricschords.pro
+  Word Count: 0
+
+  HTML: html/lifeslikepoetrylyricschords.html
+  PRO:  output/lifeslikepoetrylyricschords.pro
+  Word Count: 0
+
+  HTML: html/marydontyouweepformelyricschords.html
+  PRO:  output/marydontyouweepformelyricschords.pro
+  Word Count: 0
+
+  HTML: html/weaknesslyricschords.html
+  PRO:  output/weaknesslyricschords.pro
+  Word Count: 0
+
+  HTML: html/redlipswhiteliesandbluehourslyricschords.html
+  PRO:  output/redlipswhiteliesandbluehourslyricschords.pro
+  Word Count: 0
+
+  HTML: html/mrmoonlyricsandchords.html
+  PRO:  output/mrmoonlyricsandchords.pro
+  Word Count: 0
+
+  HTML: html/givethemalltoJesuslyricschords.html
+  PRO:  output/givethemalltoJesuslyricschords.pro
+  Word Count: 0
+
+  HTML: html/thekentuckiansonglyricschords.html
+  PRO:  output/thekentuckiansonglyricschords.pro
+  Word Count: 0
+
+  HTML: html/ifiknewlyricsandchords.html
+  PRO:  output/ifiknewlyricsandchords.pro
+  Word Count: 0
+
+  HTML: html/mycarolinasunshinegirllyricschords.html
+  PRO:  output/mycarolinasunshinegirllyricschords.pro
+  Word Count: 0
+
+  HTML: html/ifGodcanforgiveyousocanilyricschords.html
+  PRO:  output/ifGodcanforgiveyousocanilyricschords.pro
+  Word Count: 0
+
+  HTML: html/mollydarlinglyricschords.html
+  PRO:  output/mollydarlinglyricschords.pro
+  Word Count: 0
+
+  HTML: html/iminlovewithyoulyricschords.html
+  PRO:  output/iminlovewithyoulyricschords.pro
+  Word Count: 0
+
+  HTML: html/redsteagalllyricschords.html
+  PRO:  output/redsteagalllyricschords.pro
+  Word Count: 0
+
+  HTML: html/thoughtsofafoollyricschords.html
+  PRO:  output/thoughtsofafoollyricschords.pro
+  Word Count: 0
+
+  HTML: html/lonelywomenlyricschords.html
+  PRO:  output/lonelywomenlyricschords.pro
+  Word Count: 0
+
+  HTML: html/makingplanslyricschords.html
+  PRO:  output/makingplanslyricschords.pro
+  Word Count: 0
+
+  HTML: html/angelbandlyricschords.html
+  PRO:  output/angelbandlyricschords.pro
+  Word Count: 0
+
+  HTML: html/sundaymorningcomingdownlyricschords.html
+  PRO:  output/sundaymorningcomingdownlyricschords.pro
+  Word Count: 0
+
+  HTML: html/lovelettersinthesandlyricschords.html
+  PRO:  output/lovelettersinthesandlyricschords.pro
+  Word Count: 0
+
+  HTML: html/dissatisfiedlyricsandchords.html
+  PRO:  output/dissatisfiedlyricsandchords.pro
+  Word Count: 0
+
+  HTML: html/rickyvansheltonlyricschords.html
+  PRO:  output/rickyvansheltonlyricschords.pro
+  Word Count: 0
+
+  HTML: html/icamestraighttoyoulyricschords.html
+  PRO:  output/icamestraighttoyoulyricschords.pro
+  Word Count: 0
+
+  HTML: html/whiskeyriverlyricschords.html
+  PRO:  output/whiskeyriverlyricschords.pro
+  Word Count: 0
+
+  HTML: html/babybluelyricschords.html
+  PRO:  output/babybluelyricschords.pro
+  Word Count: 0
+
+  HTML: html/myloveforyoulyricschords.html
+  PRO:  output/myloveforyoulyricschords.pro
+  Word Count: 0
+
+  HTML: html/thekindofloveicantforgetlyricschords.html
+  PRO:  output/thekindofloveicantforgetlyricschords.pro
+  Word Count: 0
+
+  HTML: html/manmusthidetocrylyricschords.html
+  PRO:  output/manmusthidetocrylyricschords.pro
+  Word Count: 0
+
+  HTML: html/jesustakethewheellyricschords.html
+  PRO:  output/jesustakethewheellyricschords.pro
+  Word Count: 0
+
+  HTML: html/blueavenuelyricschords.html
+  PRO:  output/blueavenuelyricschords.pro
+  Word Count: 0
+
+  HTML: html/mrrecordmanlyricschords.html
+  PRO:  output/mrrecordmanlyricschords.pro
+  Word Count: 0
+
+  HTML: html/blessedjesusholdmyhandlyricschords.html
+  PRO:  output/blessedjesusholdmyhandlyricschords.pro
+  Word Count: 0
+
+  HTML: html/ibelievelyricschords.html
+  PRO:  output/ibelievelyricschords.pro
+  Word Count: 0
+
+  HTML: html/rebamcentirelyricschords.html
+  PRO:  output/rebamcentirelyricschords.pro
+  Word Count: 0
+
+  HTML: html/mirrormirroronthewalllyricschords.html
+  PRO:  output/mirrormirroronthewalllyricschords.pro
+  Word Count: 0
+
+  HTML: html/myfilipinoroselyricschords.html
+  PRO:  output/myfilipinoroselyricschords.pro
+  Word Count: 0
+
+  HTML: html/lazyladylyricschords.html
+  PRO:  output/lazyladylyricschords.pro
+  Word Count: 0
+
+  HTML: html/charliepridelyrics.html
+  PRO:  output/charliepridelyrics.pro
+  Word Count: 0
+
+  HTML: html/igottaknowlyricschords.html
+  PRO:  output/igottaknowlyricschords.pro
+  Word Count: 0
+
+  HTML: html/murderonmusicrowlyricschords.html
+  PRO:  output/murderonmusicrowlyricschords.pro
+  Word Count: 0
+
+  HTML: html/mountainoflovelyricschords.html
+  PRO:  output/mountainoflovelyricschords.pro
+  Word Count: 0
+
+  HTML: html/millerscavelyricschords.html
+  PRO:  output/millerscavelyricschords.pro
+  Word Count: 0
+
+  HTML: html/bombedboozedandbustedlyricschords.html
+  PRO:  output/bombedboozedandbustedlyricschords.pro
+  Word Count: 0
+
+  HTML: html/letterandaringlyricschords.html
+  PRO:  output/letterandaringlyricschords.pro
+  Word Count: 0
+
+  HTML: html/idratherseeyouwavegoodbyelyricschords.html
+  PRO:  output/idratherseeyouwavegoodbyelyricschords.pro
+  Word Count: 0
+
+  HTML: html/footprintsinthesnowlyricsandchords.html
+  PRO:  output/footprintsinthesnowlyricsandchords.pro
+  Word Count: 0
+
+  HTML: html/ifJesuscomestomorrowwhatthenlyricschords.html
+  PRO:  output/ifJesuscomestomorrowwhatthenlyricschords.pro
+  Word Count: 0
+
+  HTML: html/whatllidoifidonthaveyoulyricschords.html
+  PRO:  output/whatllidoifidonthaveyoulyricschords.pro
+  Word Count: 0
+
+  HTML: html/mylifesbeenapleasurelyricschords.html
+  PRO:  output/mylifesbeenapleasurelyricschords.pro
+  Word Count: 0
+
+  HTML: html/myelusivedreamslyricschords.html
+  PRO:  output/myelusivedreamslyricschords.pro
+  Word Count: 0
+
+  HTML: html/iknowwhoholdstomorrowlyricschords.html
+  PRO:  output/iknowwhoholdstomorrowlyricschords.pro
+  Word Count: 0
+
+  HTML: html/Godscoloringbooklyricschords.html
+  PRO:  output/Godscoloringbooklyricschords.pro
+  Word Count: 0
+
+  HTML: html/mickeygilleylyricschords.html
+  PRO:  output/mickeygilleylyricschords.pro
+  Word Count: 0
+
+  HTML: html/myangeljudylyricschords.html
+  PRO:  output/myangeljudylyricschords.pro
+  Word Count: 0
+
+  HTML: html/gonnahavelovelyricschords.html
+  PRO:  output/gonnahavelovelyricschords.pro
+  Word Count: 0
+
+  HTML: html/highanddrylyricschords.html
+  PRO:  output/highanddrylyricschords.pro
+  Word Count: 0
+
+  HTML: html/downandoutthiswayagainlyricschords.html
+  PRO:  output/downandoutthiswayagainlyricschords.pro
+  Word Count: 0
+
+  HTML: html/lifesgoneandslippedawaylyricschords.html
+  PRO:  output/lifesgoneandslippedawaylyricschords.pro
+  Word Count: 0
+
+  HTML: html/headoverheelsinlovewithyoulyricschords.html
+  PRO:  output/headoverheelsinlovewithyoulyricschords.pro
+  Word Count: 0
+
+  HTML: html/mrmoonlightlyricschords.html
+  PRO:  output/mrmoonlightlyricschords.pro
+  Word Count: 0
+
+  HTML: html/whenthemooncomesoverthemountainlyricschords.html
+  PRO:  output/whenthemooncomesoverthemountainlyricschords.pro
+  Word Count: 0
+
+  HTML: html/letthefourwindsblowlyricschords.html
+  PRO:  output/letthefourwindsblowlyricschords.pro
+  Word Count: 0
+
+  HTML: html/hesgotthewholeworldinhishandslyricschords.html
+  PRO:  output/hesgotthewholeworldinhishandslyricschords.pro
+  Word Count: 0
+
+  HTML: html/rightwordslyricschords.html
+  PRO:  output/rightwordslyricschords.pro
+  Word Count: 0
+
+  HTML: html/thewhitecliffsofdoverlyricschords.html
+  PRO:  output/thewhitecliffsofdoverlyricschords.pro
+  Word Count: 0
+
+  HTML: html/mightyevergladeslyricschords.html
+  PRO:  output/mightyevergladeslyricschords.pro
+  Word Count: 0
+
+  HTML: html/southerngospelsonglyricschords.html
+  PRO:  output/southerngospelsonglyricschords.pro
+  Word Count: 0
+
+  HTML: html/illtakeyourloveanytimelyricschords.html
+  PRO:  output/illtakeyourloveanytimelyricschords.pro
+  Word Count: 0
+
+  HTML: html/isforeverlongerthanalwayslyricschords.html
+  PRO:  output/isforeverlongerthanalwayslyricschords.pro
+  Word Count: 0
+
+  HTML: html/16thavenuelyricschords.html
+  PRO:  output/16thavenuelyricschords.pro
+  Word Count: 0
+
+  HTML: html/rightorwronglyricsandchords.html
+  PRO:  output/rightorwronglyricsandchords.pro
+  Word Count: 0
+
+  HTML: html/myhearthasamindofitsownlyricschords.html
+  PRO:  output/myhearthasamindofitsownlyricschords.pro
+  Word Count: 0
+
+  HTML: html/behindcloseddoorslyricschords.html
+  PRO:  output/behindcloseddoorslyricschords.pro
+  Word Count: 0
+
+  HTML: html/meandjesuslyricschords.html
+  PRO:  output/meandjesuslyricschords.pro
+  Word Count: 0
+
+  HTML: html/wontyousometimesthinkofmelyricschords.html
+  PRO:  output/wontyousometimesthinkofmelyricschords.pro
+  Word Count: 0
+
+  HTML: html/manhascriedlyricschords.html
+  PRO:  output/manhascriedlyricschords.pro
+  Word Count: 0
+
+  HTML: html/lovesickblueslyricsandchords.html
+  PRO:  output/lovesickblueslyricsandchords.pro
+  Word Count: 0
+
+  HTML: html/athousandtimesadaylyricschords.html
+  PRO:  output/athousandtimesadaylyricschords.pro
+  Word Count: 0
+
+  HTML: html/lonelystreetlyricsandchords.html
+  PRO:  output/lonelystreetlyricsandchords.pro
+  Word Count: 0
+
+  HTML: html/housewhereloveliveslyricschords.html
+  PRO:  output/housewhereloveliveslyricschords.pro
+  Word Count: 0
+
+  HTML: html/goneandleftmeblueslyricschords.html
+  PRO:  output/goneandleftmeblueslyricschords.pro
+  Word Count: 0
+
+  HTML: html/mycathedrallyricschords.html
+  PRO:  output/mycathedrallyricschords.pro
+  Word Count: 0
+
+  HTML: html/youcancheckonmelyricschords.html
+  PRO:  output/youcancheckonmelyricschords.pro
+  Word Count: 0
+
+  HTML: html/mostofalllyricsandchords.html
+  PRO:  output/mostofalllyricsandchords.pro
+  Word Count: 0
+
+  HTML: html/theresnoroominmyheartfortheblueslyricschords.html
+  PRO:  output/theresnoroominmyheartfortheblueslyricschords.pro
+  Word Count: 0
+
+  HTML: html/youknowmebetterthanthatlyricschords.html
+  PRO:  output/youknowmebetterthanthatlyricschords.pro
+  Word Count: 0
+
+  HTML: html/cmonsixtyfivelyricschords.html
+  PRO:  output/cmonsixtyfivelyricschords.pro
+  Word Count: 0
+
+  HTML: html/lightattheriverlyricschords.html
+  PRO:  output/lightattheriverlyricschords.pro
+  Word Count: 0
+
+  HTML: html/middleagecrazylyricschords.html
+  PRO:  output/middleagecrazylyricschords.pro
+  Word Count: 0
+
+  HTML: html/drivingmylifeawaylyricschords.html
+  PRO:  output/drivingmylifeawaylyricschords.pro
+  Word Count: 0
+
+  HTML: html/myhandsarecleanlyricschords.html
+  PRO:  output/myhandsarecleanlyricschords.pro
+  Word Count: 0
+
+  HTML: html/onceinabluemoonlyricschords.html
+  PRO:  output/onceinabluemoonlyricschords.pro
+  Word Count: 0
+
+  HTML: html/bluechristmaslyricschords.html
+  PRO:  output/bluechristmaslyricschords.pro
+  Word Count: 0
+
+  HTML: html/lovetheworldawaylyricschords.html
+  PRO:  output/lovetheworldawaylyricschords.pro
+  Word Count: 0
+
+  HTML: html/thatlittleboyofminelyricschords.html
+  PRO:  output/thatlittleboyofminelyricschords.pro
+  Word Count: 0
+
+  HTML: html/beggartoakinglyricschords.html
+  PRO:  output/beggartoakinglyricschords.pro
+  Word Count: 0
+
+  HTML: html/californiadreamlyricschords.html
+  PRO:  output/californiadreamlyricschords.pro
+  Word Count: 0
+
+  HTML: html/tracybyrdlyricschords.html
+  PRO:  output/tracybyrdlyricschords.pro
+  Word Count: 0
+
+  HTML: html/whydidntihearitfromyoulyricschords.html
+  PRO:  output/whydidntihearitfromyoulyricschords.pro
+  Word Count: 0
+
+  HTML: html/lonesomewaltzlyricschords.html
+  PRO:  output/lonesomewaltzlyricschords.pro
+  Word Count: 0
+
+  HTML: html/mistybluelyricsandchords.html
+  PRO:  output/mistybluelyricsandchords.pro
+  Word Count: 0
+
+  HTML: html/atthecrosslyricschords.html
+  PRO:  output/atthecrosslyricschords.pro
+  Word Count: 0
+
+  HTML: html/myheartskipsabeatlyricschords.html
+  PRO:  output/myheartskipsabeatlyricschords.pro
+  Word Count: 0
+
+  HTML: html/mrandmrsusedtobelyricschords.html
+  PRO:  output/mrandmrsusedtobelyricschords.pro
+  Word Count: 0
+
+  HTML: html/lonelygirllyricschords.html
+  PRO:  output/lonelygirllyricschords.pro
+  Word Count: 0
+
+  HTML: html/iaintafraidofdyinglyrics-chords.html
+  PRO:  output/iaintafraidofdyinglyrics-chords.pro
+  Word Count: 0
+
+  HTML: html/onlyyouandyoualonelyricschords.html
+  PRO:  output/onlyyouandyoualonelyricschords.pro
+  Word Count: 0
+
+  HTML: html/meandmybrokenheartlyricschords.html
+  PRO:  output/meandmybrokenheartlyricschords.pro
+  Word Count: 0
+
+  HTML: html/settledownlyricschords.html
+  PRO:  output/settledownlyricschords.pro
+  Word Count: 0
+
+  HTML: html/margielyricschords.html
+  PRO:  output/margielyricschords.pro
+  Word Count: 0
+
+  HTML: html/onlyyoulyricschords.html
+  PRO:  output/onlyyoulyricschords.pro
+  Word Count: 0
+
+  HTML: html/marriedbythebiblelyricschords.html
+  PRO:  output/marriedbythebiblelyricschords.pro
+  Word Count: 0
+
+  HTML: html/mymemoriesofyoulyricschords.html
+  PRO:  output/mymemoriesofyoulyricschords.pro
+  Word Count: 0
+
+
+
+Top 0.1% (18 files):
+--------------------------------------------------------------------------------
+  HTML: html/feleenalyricschords.html
+  PRO:  output/feleenalyricschords.pro
+  Word Count: 887
+
+  HTML: html/georgiabloodlyricschords.html
+  PRO:  output/georgiabloodlyricschords.pro
+  Word Count: 659
+
+  HTML: html/onepieceatatimelyricschords.html
+  PRO:  output/onepieceatatimelyricschords.pro
+  Word Count: 631
+
+  HTML: html/rosaliesgoodeatscafelyricschords.html
+  PRO:  output/rosaliesgoodeatscafelyricschords.pro
+  Word Count: 602
+
+  HTML: html/sanangelolyricschords.html
+  PRO:  output/sanangelolyricschords.pro
+  Word Count: 586
+
+  HTML: html/deckofcardslyricschords.html
+  PRO:  output/deckofcardslyricschords.pro
+  Word Count: 565
+
+  HTML: html/mrshortylyricschords.html
+  PRO:  output/mrshortylyricschords.pro
+  Word Count: 563
+
+  HTML: html/auctioneerlyricschords.html
+  PRO:  output/auctioneerlyricschords.pro
+  Word Count: 534
+
+  HTML: html/wherewereyouwhentheworldstoppedturninglyricschords.html
+  PRO:  output/wherewereyouwhentheworldstoppedturninglyricschords.pro
+  Word Count: 533
+
+  HTML: html/thewinnerlyricschords.html
+  PRO:  output/thewinnerlyricschords.pro
+  Word Count: 532
+
+  HTML: html/thejoggerlyricschords.html
+  PRO:  output/thejoggerlyricschords.pro
+  Word Count: 525
+
+  HTML: html/peglegjacklyricschords.html
+  PRO:  output/peglegjacklyricschords.pro
+  Word Count: 516
+
+  HTML: html/goodtimelyricschords.html
+  PRO:  output/goodtimelyricschords.pro
+  Word Count: 496
+
+  HTML: html/richestmanintheworldlyricschords.html
+  PRO:  output/richestmanintheworldlyricschords.pro
+  Word Count: 484
+
+  HTML: html/longarmofthelawlyricschords.html
+  PRO:  output/longarmofthelawlyricschords.pro
+  Word Count: 480
+
+  HTML: html/afrontseattohearolejohnnysinglyricschords.html
+  PRO:  output/afrontseattohearolejohnnysinglyricschords.pro
+  Word Count: 480
+
+  HTML: html/ourtownlyricschords.html
+  PRO:  output/ourtownlyricschords.pro
+  Word Count: 472
+
+  HTML: html/oscartheangellyricschords.html
+  PRO:  output/oscartheangellyricschords.pro
+  Word Count: 468
+

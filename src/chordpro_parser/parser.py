@@ -37,6 +37,7 @@ class SongLine:
 class Paragraph:
     """Represents a verse, chorus, or other song section"""
     lines: List[SongLine]
+    section_type: Optional[str] = None  # 'verse', 'chorus', 'bridge', 'outro', 'intro', etc.
 
 
 @dataclass
@@ -84,6 +85,42 @@ class HTMLNormalizer:
         return HTMLNormalizer.normalize_whitespace(text)
 
 
+class SectionMarkerDetector:
+    """Detects and normalizes song section markers like [Chorus], [Verse], etc."""
+
+    # Section marker patterns and their ChordPro equivalents
+    SECTION_MARKERS = {
+        'chorus': 'chorus',
+        'verse': 'verse',
+        'bridge': 'bridge',
+        'intro': 'verse',  # Treat intro as verse
+        'outro': 'verse',  # Treat outro as verse
+        'instrumental': 'verse',
+        'interlude': 'verse',
+        'pre-chorus': 'verse',
+        'prechorus': 'verse',
+        'refrain': 'chorus',
+    }
+
+    @staticmethod
+    def detect_section_marker(text: str) -> Optional[str]:
+        """
+        Detects if a line is a section marker like [Chorus], [Verse], etc.
+        Returns the normalized section type, or None if not a marker.
+        """
+        if not text:
+            return None
+
+        # Check for bracketed markers: [Chorus], [Verse], etc.
+        text_clean = text.strip().lower()
+        if text_clean.startswith('[') and text_clean.endswith(']'):
+            marker_text = text_clean[1:-1].strip()
+            # Check against known section types
+            return SectionMarkerDetector.SECTION_MARKERS.get(marker_text)
+
+        return None
+
+
 class StructureDetector:
     """Detects the HTML structure type and whether file contains parseable content"""
 
@@ -122,8 +159,11 @@ class StructureDetector:
             # Only use pre tag if it has actual chord content (at least 3 chords)
             # This prevents selecting boilerplate pre tags with 0-2 false positive matches
             if best_pre and max_chord_count >= 3:
-                # Check if it has a font child
-                if best_pre.find('font'):
+                # Check if it has font children or MANY span children (structured content)
+                # These need to be parsed with pre_tag parser logic
+                # Require >5 spans to avoid detecting single boilerplate spans
+                spans_count = len(best_pre.find_all('span'))
+                if best_pre.find('font') or spans_count > 5:
                     return 'pre_tag'
                 # Plain pre tag (most common pattern #1)
                 return 'pre_plain'
@@ -376,6 +416,7 @@ class ContentExtractor:
         """Parse span+br structure (like Man of Constant Sorrow)"""
         paragraphs = []
         current_paragraph_lines = []
+        current_section_type = None  # Track current section type (chorus, verse, etc.)
 
         # Find all span elements with Courier New font
         courier_spans = soup.find_all('span', style=re.compile(r'font-family:\s*Courier New', re.I))
@@ -488,7 +529,7 @@ class ContentExtractor:
             if item['type'] == 'repeat':
                 # Close current paragraph if any
                 if current_paragraph_lines:
-                    paragraphs.append(Paragraph(lines=current_paragraph_lines))
+                    paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
                     current_paragraph_lines = []
 
                 # Add repeat marker as a special paragraph
@@ -505,7 +546,7 @@ class ContentExtractor:
                 if i + 1 < len(items) and items[i + 1]['type'] == 'br':
                     # Double break - paragraph boundary
                     if current_paragraph_lines:
-                        paragraphs.append(Paragraph(lines=current_paragraph_lines))
+                        paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
                         current_paragraph_lines = []
                     i += 2  # Skip both brs
                     continue
@@ -564,7 +605,7 @@ class ContentExtractor:
 
         # Add final paragraph
         if current_paragraph_lines:
-            paragraphs.append(Paragraph(lines=current_paragraph_lines))
+            paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
 
         return paragraphs
 
@@ -604,6 +645,7 @@ class ContentExtractor:
         """Parse <pre> tag structure (like Old Home Place)"""
         paragraphs = []
         current_paragraph_lines = []
+        current_section_type = None  # Track current section type (chorus, verse, etc.)
 
         pre_tag = ContentExtractor._find_best_pre_tag(soup)
         if not pre_tag:
@@ -615,27 +657,27 @@ class ContentExtractor:
         font_elems = []
         
         # Collect direct font children of pre
-        direct_fonts = [child for child in pre_tag.children 
+        direct_fonts = [child for child in pre_tag.children
                        if hasattr(child, 'name') and child.name == 'font']
         font_elems.extend(direct_fonts)
-        
-        # Also check for small > font structure and collect those fonts
-        small_elems = [child for child in pre_tag.children 
-                      if hasattr(child, 'name') and child.name == 'small']
-        for small in small_elems:
-            # Get direct font children of small (not nested fonts)
-            fonts_in_small = [child for child in small.children 
-                             if hasattr(child, 'name') and child.name == 'font']
-            font_elems.extend(fonts_in_small)
+
+        # Also check for small > font and big > font structures
+        container_elems = [child for child in pre_tag.children
+                          if hasattr(child, 'name') and child.name in ['small', 'big']]
+        for container in container_elems:
+            # Get direct font children of container (not nested fonts)
+            fonts_in_container = [child for child in container.children
+                                 if hasattr(child, 'name') and child.name == 'font']
+            font_elems.extend(fonts_in_container)
         
         # If still no fonts, try finding first-level fonts (not deeply nested)
         if not font_elems:
-            # Find fonts that are direct children of pre or direct children of small
+            # Find fonts that are direct children of pre or direct children of small or big
             all_fonts = pre_tag.find_all('font', recursive=True)
-            # Filter to only fonts that are direct children of pre or direct children of small
+            # Filter to only fonts that are direct children of pre or direct children of small/big
             for font in all_fonts:
                 parent = font.parent
-                if parent == pre_tag or (parent and parent.name == 'small' and parent.parent == pre_tag):
+                if parent == pre_tag or (parent and parent.name in ['small', 'big'] and parent.parent == pre_tag):
                     if font not in font_elems:  # Avoid duplicates
                         font_elems.append(font)
         
@@ -823,7 +865,7 @@ class ContentExtractor:
             if item['type'] == 'repeat':
                 # Close current paragraph if any
                 if current_paragraph_lines:
-                    paragraphs.append(Paragraph(lines=current_paragraph_lines))
+                    paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
                     current_paragraph_lines = []
 
                 # Add repeat marker as a special paragraph
@@ -839,7 +881,7 @@ class ContentExtractor:
                 if i + 1 < len(items) and items[i + 1]['type'] == 'br':
                     # Double break - paragraph boundary
                     if current_paragraph_lines:
-                        paragraphs.append(Paragraph(lines=current_paragraph_lines))
+                        paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
                         current_paragraph_lines = []
                     i += 2  # Skip both brs
                     continue
@@ -851,6 +893,18 @@ class ContentExtractor:
             # Process span
             if item['type'] == 'span':
                 span_text = item['text']
+
+                # Check if this is a section marker like [Chorus], [Verse], etc.
+                section_type = SectionMarkerDetector.detect_section_marker(span_text)
+                if section_type:
+                    # Close current paragraph with detected section type
+                    if current_paragraph_lines:
+                        paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
+                        current_paragraph_lines = []
+                    # Set section type for next paragraph
+                    current_section_type = section_type
+                    i += 1
+                    continue
 
                 # Check if chord line
                 if ChordDetector.is_chord_line(span_text):
@@ -890,7 +944,7 @@ class ContentExtractor:
                 i += 1
 
         if current_paragraph_lines:
-            paragraphs.append(Paragraph(lines=current_paragraph_lines))
+            paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
 
         return paragraphs
 
@@ -899,6 +953,7 @@ class ContentExtractor:
         """Parse plain <pre> tag structure (no font/span children)"""
         paragraphs = []
         current_paragraph_lines = []
+        current_section_type = None  # Track current section type (chorus, verse, etc.)
 
         pre_tag = ContentExtractor._find_best_pre_tag(soup)
         if not pre_tag:
@@ -951,7 +1006,7 @@ class ContentExtractor:
                     # 3. Single blank line followed by lyrics = just internal spacing
                     if blank_count >= 2 or ChordDetector.is_chord_line(next_line):
                         if current_paragraph_lines:
-                            paragraphs.append(Paragraph(lines=current_paragraph_lines))
+                            paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
                             current_paragraph_lines = []
 
                 i += 1
@@ -962,7 +1017,7 @@ class ContentExtractor:
             if repeat_match:
                 # Close current paragraph if any
                 if current_paragraph_lines:
-                    paragraphs.append(Paragraph(lines=current_paragraph_lines))
+                    paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
                     current_paragraph_lines = []
 
                 # Parse comma-separated verse numbers
@@ -974,6 +1029,18 @@ class ContentExtractor:
                     paragraphs.append(Paragraph(lines=[
                         SongLine(lyrics=f"REPEAT_VERSE_{verse_num}", chords=[])
                     ]))
+                i += 1
+                continue
+
+            # Check if this line is a section marker like [Chorus], [Verse], etc.
+            section_type = SectionMarkerDetector.detect_section_marker(line)
+            if section_type:
+                # Close current paragraph if any
+                if current_paragraph_lines:
+                    paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
+                    current_paragraph_lines = []
+                # Set section type for next paragraph
+                current_section_type = section_type
                 i += 1
                 continue
 
@@ -1028,7 +1095,7 @@ class ContentExtractor:
                 i += 1
 
         if current_paragraph_lines:
-            paragraphs.append(Paragraph(lines=current_paragraph_lines))
+            paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
 
         return paragraphs
 
@@ -1210,8 +1277,18 @@ class ChordProGenerator:
             paragraph_occurrence[para_idx] = occurrence
 
             # Determine section label and tags
-            if para_idx in chorus_paragraphs:
-                # It's a chorus
+            # First check if section type was explicitly detected
+            if paragraph.section_type == 'chorus':
+                if occurrence == 1:
+                    lines.append("{start_of_chorus}")
+                else:
+                    lines.append(f"{{start_of_chorus: Repeat {occurrence - 1}}}")
+                end_tag = "{end_of_chorus}"
+            elif paragraph.section_type == 'bridge':
+                lines.append("{start_of_bridge}")
+                end_tag = "{end_of_bridge}"
+            elif para_idx in chorus_paragraphs:
+                # It's a chorus (detected by repetition heuristic)
                 if occurrence == 1:
                     lines.append("{start_of_chorus}")
                 else:

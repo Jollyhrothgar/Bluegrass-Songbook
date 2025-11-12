@@ -5,13 +5,21 @@ Simple web server for the ChordPro validator UI
 
 import json
 import sys
+import os
 from pathlib import Path
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 import io
 
+# Get the project root directory (parent of viewer directory)
+PROJECT_ROOT = Path(__file__).parent.parent
+VIEWER_DIR = Path(__file__).parent
+
+# Change to project root to ensure relative paths work
+os.chdir(PROJECT_ROOT)
+
 # Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.chordpro_parser import (
     StructureDetector, ContentExtractor, ChordProGenerator
@@ -228,4 +236,8 @@ def run_server(port=8000):
 
 
 if __name__ == '__main__':
-    run_server()
+    import argparse
+    parser = argparse.ArgumentParser(description='ChordPro Parser Validator Server')
+    parser.add_argument('--port', type=int, default=8000, help='Port to run server on (default: 8000)')
+    args = parser.parse_args()
+    run_server(args.port)

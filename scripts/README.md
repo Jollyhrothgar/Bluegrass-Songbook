@@ -138,6 +138,87 @@ The script automatically:
        --review-only
    ```
 
+## select_outliers.py
+
+Selects outlier files stratified by HTML structure type for focused debugging.
+
+### Usage
+
+```bash
+# Select 1 bottom and 1 top outlier for chord count (default)
+uv run python scripts/select_outliers.py
+
+# Select outliers for different metrics
+uv run python scripts/select_outliers.py --metric verse_count
+uv run python scripts/select_outliers.py --metric word_count
+
+# Select more outliers
+uv run python scripts/select_outliers.py --count 5
+
+# Custom paths
+uv run python scripts/select_outliers.py \
+    --batch-report batch_processing_report.json \
+    --analysis-dir analysis
+```
+
+### Output
+
+Displays:
+- Structure type distribution in corpus
+- Total outliers by category (bottom/top)
+- Selected files with full paths (HTML and PRO)
+- Structure type for each selected file
+- Metric value for each file
+
+### Stratification
+
+Outlier selection is weighted by HTML structure type frequency:
+- ~60% from pre_plain files
+- ~32% from pre_tag files
+- ~8% from span_br files
+
+This ensures representative sampling across all parser code paths.
+
+## create_outlier_sample.py
+
+Creates a sample file for the viewer from selected outliers.
+
+### Usage
+
+```bash
+# Create sample from specific files
+uv run python scripts/create_outlier_sample.py \
+    --files file1.html file2.html file3.html
+
+# Create sample from outlier report (top 10)
+uv run python scripts/create_outlier_sample.py \
+    --from-report analysis/reports/chord_count_outliers.txt \
+    --count 10
+
+# Custom output location
+uv run python scripts/create_outlier_sample.py \
+    --files file1.html file2.html \
+    --output my_sample.json
+```
+
+### Integration with Viewer
+
+After creating the sample:
+
+```bash
+# Start viewer (uses stratified_sample_spot_check.json by default)
+uv run python3 viewer/server.py
+
+# Visit in browser
+open http://localhost:8000
+```
+
+The viewer provides:
+- Side-by-side comparison of HTML and generated ChordPro
+- Live parsing (see changes immediately without batch reprocessing)
+- Structured feedback collection
+- Keyboard shortcuts for efficient navigation
+
 ## chord_counter.py
 
 Counts chords in ChordPro files.
