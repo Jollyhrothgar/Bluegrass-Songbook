@@ -14,6 +14,7 @@ output/
 archive/
 batch_processing_report.json
 stratified_sample_spot_check.json
+analysis/
 
 # Logs and temporary files
 *.log

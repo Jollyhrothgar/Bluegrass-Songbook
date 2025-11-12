@@ -97,14 +97,37 @@ class StructureDetector:
         Determine which HTML structure pattern the song uses
         Returns: 'pre_tag', 'pre_plain', 'span_br', or None if not parseable
         """
-        # Look for <pre> tag (with or without font)
-        pre_tag = soup.find('pre')
-        if pre_tag:
-            # Check if it has a font child
-            if pre_tag.find('font'):
-                return 'pre_tag'
-            # Plain pre tag (most common pattern #1)
-            return 'pre_plain'
+        # Look for <pre> tags - there may be multiple, find the one with actual content
+        pre_tags = soup.find_all('pre')
+        if pre_tags:
+            # Find the pre tag with the most song content (chords/lyrics)
+            # Some files have boilerplate in first pre, song in second pre
+            best_pre = None
+            max_chord_count = 0
+            
+            for pre_tag in pre_tags:
+                # Count potential chords in this pre tag
+                # Use raw HTML string to preserve spacing between chords
+                # (get_text() concatenates without spaces, breaking chord detection)
+                raw_html = str(pre_tag)
+                chord_pattern = r'\b[A-G][#b]?(?:maj|min|m|sus|dim|aug|add)?\d*\b'
+                chord_matches = re.findall(chord_pattern, raw_html)
+                chord_count = len(chord_matches)
+                
+                # Prefer pre tags with more chords (actual song content)
+                if chord_count > max_chord_count:
+                    max_chord_count = chord_count
+                    best_pre = pre_tag
+            
+            # Only use pre tag if it has actual chord content (at least 3 chords)
+            # This prevents selecting boilerplate pre tags with 0-2 false positive matches
+            if best_pre and max_chord_count >= 3:
+                # Check if it has a font child
+                if best_pre.find('font'):
+                    return 'pre_tag'
+                # Plain pre tag (most common pattern #1)
+                return 'pre_plain'
+            # If pre tags exist but have no chord content, fall through to span_br check
 
         # Look for multiple span tags with Courier New font followed by br tags
         courier_spans = soup.find_all('span', style=re.compile(r'font-family:\s*Courier New', re.I))
@@ -168,6 +191,68 @@ class ChordDetector:
             position = match.start()
             chords.append(ChordPosition(chord=chord, position=position))
         return chords
+    
+    @staticmethod
+    def map_chord_positions_to_lyrics(chord_line: str, lyric_line: str, chord_positions: List[ChordPosition]) -> List[ChordPosition]:
+        """
+        Map chord positions from chord line (with alignment spaces) to lyric line (without those spaces).
+        
+        The chord line uses spaces to align chords with words below. This function maps those
+        positions to the actual character positions in the lyric line by finding which word
+        each chord aligns with based on character position.
+        """
+        if not chord_positions:
+            return []
+        
+        # Get words with their positions in the lyric line
+        lyric_words = []
+        pos = 0
+        for word in lyric_line.split():
+            word_start = lyric_line.find(word, pos)
+            word_end = word_start + len(word)
+            lyric_words.append((word, word_start, word_end))
+            pos = word_end
+        
+        if not lyric_words:
+            # No words in lyric line, return original positions clamped
+            return [ChordPosition(chord=cp.chord, position=min(cp.position, len(lyric_line))) 
+                    for cp in chord_positions]
+        
+        # Map each chord position to a lyric word position
+        # The chord line has spaces that align chords with words below
+        # We map based on the character position: find which word in the lyric line
+        # corresponds to the chord's position in the chord line
+        mapped_chords = []
+        for chord_pos in chord_positions:
+            chord_char_pos = chord_pos.position
+            
+            # Find which word in lyric_line this chord aligns with
+            # We do this by mapping the character position proportionally
+            # or by finding the closest word
+            
+            # Simple approach: find the word whose start position is closest to the
+            # chord's position (scaled to lyric line length)
+            best_word_idx = 0
+            min_distance = float('inf')
+            
+            # Scale chord position to lyric line length
+            if len(chord_line) > 0:
+                scaled_pos = (chord_char_pos / len(chord_line)) * len(lyric_line)
+            else:
+                scaled_pos = chord_char_pos
+            
+            # Find the word whose start is closest to the scaled position
+            for i, (word, word_start, word_end) in enumerate(lyric_words):
+                distance = abs(word_start - scaled_pos)
+                if distance < min_distance:
+                    min_distance = distance
+                    best_word_idx = i
+            
+            # Use the start of the best matching word
+            mapped_pos = lyric_words[best_word_idx][1]
+            mapped_chords.append(ChordPosition(chord=chord_pos.chord, position=mapped_pos))
+        
+        return mapped_chords
 
 
 class MetadataExtractor:
@@ -455,7 +540,11 @@ class ContentExtractor:
                         lyric_text = items[next_span_idx]['text']
                         # CRITICAL: Preserve whitespace for chord alignment!
                         lyric_text = lyric_text.replace('\n', ' ')
-                        song_line = SongLine(lyrics=lyric_text, chords=chord_positions)
+                        # Map chord positions from chord line to lyric line
+                        mapped_chord_positions = ChordDetector.map_chord_positions_to_lyrics(
+                            span_text, lyric_text, chord_positions
+                        )
+                        song_line = SongLine(lyrics=lyric_text, chords=mapped_chord_positions)
                         current_paragraph_lines.append(song_line)
                         i = next_span_idx + 1  # Skip to after lyric span
                     else:
@@ -480,17 +569,76 @@ class ContentExtractor:
         return paragraphs
 
     @staticmethod
+    def _find_best_pre_tag(soup):
+        """Find the pre tag with the most song content (chords/lyrics)"""
+        pre_tags = soup.find_all('pre')
+        if not pre_tags:
+            return None
+        
+        # Find the pre tag with the most song content
+        best_pre = None
+        max_chord_count = 0
+        
+        for pre_tag in pre_tags:
+            # Count potential chords in this pre tag
+            # Use raw HTML string to preserve spacing between chords
+            # (get_text() concatenates without spaces, breaking chord detection)
+            raw_html = str(pre_tag)
+            chord_pattern = r'\b[A-G][#b]?(?:maj|min|m|sus|dim|aug|add)?\d*\b'
+            chord_matches = re.findall(chord_pattern, raw_html)
+            chord_count = len(chord_matches)
+            
+            # Prefer pre tags with more chords (actual song content)
+            if chord_count > max_chord_count:
+                max_chord_count = chord_count
+                best_pre = pre_tag
+        
+        # Only return pre tag if it has actual chord content (at least 3 chords)
+        # This prevents selecting boilerplate pre tags with 0-2 false positive matches
+        if best_pre and max_chord_count >= 3:
+            return best_pre
+        return None
+
+    @staticmethod
     def parse_pre_tag_structure(soup) -> List[Paragraph]:
         """Parse <pre> tag structure (like Old Home Place)"""
         paragraphs = []
         current_paragraph_lines = []
 
-        pre_tag = soup.find('pre')
+        pre_tag = ContentExtractor._find_best_pre_tag(soup)
         if not pre_tag:
             return paragraphs
 
-        # There may be multiple font elements - check all of them
-        font_elems = pre_tag.find_all('font')
+        # There may be multiple font elements - need to find them correctly
+        # Structure can be: <pre><font>...</font></pre> or <pre><small><font>...</font></small></pre>
+        # We need to collect ALL fonts (both direct and inside small) to process them in order
+        font_elems = []
+        
+        # Collect direct font children of pre
+        direct_fonts = [child for child in pre_tag.children 
+                       if hasattr(child, 'name') and child.name == 'font']
+        font_elems.extend(direct_fonts)
+        
+        # Also check for small > font structure and collect those fonts
+        small_elems = [child for child in pre_tag.children 
+                      if hasattr(child, 'name') and child.name == 'small']
+        for small in small_elems:
+            # Get direct font children of small (not nested fonts)
+            fonts_in_small = [child for child in small.children 
+                             if hasattr(child, 'name') and child.name == 'font']
+            font_elems.extend(fonts_in_small)
+        
+        # If still no fonts, try finding first-level fonts (not deeply nested)
+        if not font_elems:
+            # Find fonts that are direct children of pre or direct children of small
+            all_fonts = pre_tag.find_all('font', recursive=True)
+            # Filter to only fonts that are direct children of pre or direct children of small
+            for font in all_fonts:
+                parent = font.parent
+                if parent == pre_tag or (parent and parent.name == 'small' and parent.parent == pre_tag):
+                    if font not in font_elems:  # Avoid duplicates
+                        font_elems.append(font)
+        
         if not font_elems:
             # No font tags, use pre directly
             font_elems = [pre_tag]
@@ -500,11 +648,16 @@ class ContentExtractor:
         found_song_content = False
 
         # Process all font elements (some files have metadata in first font, content in second)
-        for content in font_elems:
-            for child in content.children:
+        # Also handle nested font structures: <font><font>content</font></font>
+        def process_element(element, found_song_content_ref):
+            """Recursively process an element and its children"""
+            for child in element.children:
                 if hasattr(child, 'name') and child.name:  # Must have name AND it must be non-None
                     if child.name == 'br':
                         items.append({'type': 'br'})
+                    elif child.name == 'font':
+                        # Nested font - recursively process it
+                        process_element(child, found_song_content_ref)
                     elif child.name == 'span':
                         text = HTMLNormalizer.extract_text_preserving_position(child)
 
@@ -530,17 +683,98 @@ class ContentExtractor:
                             # Add repeat marker for each verse number
                             for verse_num in verse_nums:
                                 items.append({'type': 'repeat', 'verse_num': verse_num})
-                            found_song_content = True
+                            found_song_content_ref[0] = True
                             continue
 
                         # Check if song content
                         if ChordDetector.is_chord_line(text):
-                            found_song_content = True
+                            found_song_content_ref[0] = True
 
-                        if found_song_content:
+                        if found_song_content_ref[0]:
                             # Skip whitespace-only spans (they're just spacing, not content)
                             if text.strip():
                                 items.append({'type': 'span', 'text': text})
+                    elif child.name == 'big':
+                        # Handle <big> elements that contain chords/lyrics
+                        # Process children directly (spans and brs) to preserve structure
+                        # This handles both: <big>text</big> and <big><span>...</span><br>...</big>
+                        # Also handles nested <small> and nested <big> elements
+                        def process_big_element(big_elem):
+                            """Recursively process big element and its nested children"""
+                            big_children_to_process = []
+                            for big_child in big_elem.children:
+                                if hasattr(big_child, 'name') and big_child.name:
+                                    if big_child.name == 'small':
+                                        # Nested small - process its children recursively
+                                        big_children_to_process.extend(process_big_element(big_child))
+                                    elif big_child.name == 'big':
+                                        # Nested big - process its children recursively
+                                        big_children_to_process.extend(process_big_element(big_child))
+                                    else:
+                                        big_children_to_process.append(big_child)
+                                else:
+                                    big_children_to_process.append(big_child)
+                            return big_children_to_process
+                        
+                        big_children_to_process = process_big_element(child)
+                        
+                        for big_child in big_children_to_process:
+                            if hasattr(big_child, 'name') and big_child.name:
+                                if big_child.name == 'br':
+                                    items.append({'type': 'br'})
+                                elif big_child.name == 'span':
+                                    # Process span like we do for font children
+                                    span_text = HTMLNormalizer.extract_text_preserving_position(big_child)
+                                    
+                                    # End anchor - stop at footer boilerplate
+                                    if 'key' in span_text.lower() and 'on any song' in span_text.lower():
+                                        break
+                                    
+                                    # Skip metadata
+                                    if (big_child.find('big') or
+                                        'recorded by' in span_text.lower() or
+                                        'written by' in span_text.lower() or
+                                        len(span_text) > 150):
+                                        continue
+                                    
+                                    # Check for repeat instructions
+                                    repeat_match = re.search(r'repeat\s+#?([\d,\s]+)', span_text, re.I)
+                                    if repeat_match:
+                                        verse_nums_str = repeat_match.group(1).replace(' ', '')
+                                        verse_nums = [int(n) for n in verse_nums_str.split(',') if n.strip()]
+                                        for verse_num in verse_nums:
+                                            items.append({'type': 'repeat', 'verse_num': verse_num})
+                                        found_song_content_ref[0] = True
+                                        continue
+                                    
+                                    # Check if song content
+                                    if ChordDetector.is_chord_line(span_text):
+                                        found_song_content_ref[0] = True
+                                    
+                                    if found_song_content_ref[0]:
+                                        # Skip whitespace-only spans
+                                        if span_text.strip():
+                                            items.append({'type': 'span', 'text': span_text})
+                            else:
+                                # Text node inside <big>
+                                text = str(big_child).strip()
+                                if text:
+                                    # Check for repeat instructions
+                                    repeat_match = re.search(r'repeat\s+#?([\d,\s]+)', text, re.I)
+                                    if repeat_match:
+                                        verse_nums_str = repeat_match.group(1).replace(' ', '')
+                                        verse_nums = [int(n) for n in verse_nums_str.split(',') if n.strip()]
+                                        for verse_num in verse_nums:
+                                            items.append({'type': 'repeat', 'verse_num': verse_num})
+                                        found_song_content_ref[0] = True
+                                        continue
+                                    
+                                    # Check if song content
+                                    if ChordDetector.is_chord_line(text):
+                                        found_song_content_ref[0] = True
+                                    
+                                    if found_song_content_ref[0]:
+                                        items.append({'type': 'span', 'text': text})
                 else:
                     # Handle text nodes (direct text children of font element)
                     text = str(child).strip()
@@ -561,15 +795,24 @@ class ContentExtractor:
                             # Add repeat marker for each verse number
                             for verse_num in verse_nums:
                                 items.append({'type': 'repeat', 'verse_num': verse_num})
-                            found_song_content = True
+                            found_song_content_ref[0] = True
                             continue
 
                         # Check if song content
                         if ChordDetector.is_chord_line(text):
-                            found_song_content = True
+                            found_song_content_ref[0] = True
 
-                        if found_song_content:
+                        if found_song_content_ref[0]:
                             items.append({'type': 'span', 'text': text})
+        
+        # Use a list to allow modification in nested function
+        found_song_content_ref = [found_song_content]
+        
+        # Process all font elements
+        for content in font_elems:
+            process_element(content, found_song_content_ref)
+        
+        found_song_content = found_song_content_ref[0]
 
         # Now process items, looking for double-br as paragraph break
         i = 0
@@ -624,7 +867,11 @@ class ContentExtractor:
                         # Have lyric line - preserve whitespace for chord alignment!
                         lyric_text = items[next_span_idx]['text']
                         lyric_text = lyric_text.replace('\n', ' ')
-                        song_line = SongLine(lyrics=lyric_text, chords=chord_positions)
+                        # Map chord positions from chord line to lyric line
+                        mapped_chord_positions = ChordDetector.map_chord_positions_to_lyrics(
+                            span_text, lyric_text, chord_positions
+                        )
+                        song_line = SongLine(lyrics=lyric_text, chords=mapped_chord_positions)
                         current_paragraph_lines.append(song_line)
                         i = next_span_idx + 1  # Skip to after lyric span
                     else:
@@ -653,7 +900,7 @@ class ContentExtractor:
         paragraphs = []
         current_paragraph_lines = []
 
-        pre_tag = soup.find('pre')
+        pre_tag = ContentExtractor._find_best_pre_tag(soup)
         if not pre_tag:
             return paragraphs
 
