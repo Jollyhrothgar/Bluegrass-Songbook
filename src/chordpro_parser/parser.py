@@ -299,68 +299,100 @@ class ContentExtractor:
         if not courier_spans:
             return paragraphs
 
-        # Build a sequence by walking through all elements in order
-        items = []
-        found_song_content = False
-        processed_elements = set()
-
-        # Start from first Courier New span's parent and walk through children
-        container = courier_spans[0].parent
-
-        for element in container.descendants:
-            # Skip if already processed
-            if id(element) in processed_elements:
-                continue
-            processed_elements.add(id(element))
-
-            # Handle spans with Courier New
-            if (hasattr(element, 'name') and element.name == 'span' and
-                element.get('style') and 'Courier New' in element.get('style', '')):
-
-                text = HTMLNormalizer.extract_text_preserving_position(element)
-
-                # End anchor
-                if 'key' in text.lower() and 'on any song' in text.lower():
+        # Find the actual song content area by looking for a span containing "recorded by"
+        # followed by chord lines. This helps us skip early boilerplate.
+        song_start_idx = 0
+        for i, span in enumerate(courier_spans):
+            text = HTMLNormalizer.extract_text_preserving_position(span)
+            # Look for "recorded by" followed by chord lines
+            if 'recorded by' in text.lower():
+                # Check if next few spans contain chord lines
+                for j in range(i + 1, min(i + 5, len(courier_spans))):
+                    next_text = HTMLNormalizer.extract_text_preserving_position(courier_spans[j])
+                    if ChordDetector.is_chord_line(next_text):
+                        song_start_idx = i
+                        break
+                if song_start_idx > 0:
                     break
 
-                # Skip boilerplate
-                if ('recorded by' in text.lower() or
-                    'written by' in text.lower() or
-                    'lyrics and chords' in text.lower() or
-                    'low prices on' in text.lower() or
-                    'country music cds' in text.lower() or
-                    'mp3s' in text.lower() or
-                    len(text) > 150):
-                    continue
+        # Build a sequence by iterating through Courier New spans directly
+        items = []
+        found_song_content = False
 
-                # Skip titles
-                if element.find('big') or element.find_parent(['h1', 'h2', 'h3']):
-                    continue
+        # Iterate through spans starting from song_start_idx
+        for i in range(song_start_idx, len(courier_spans)):
+            span = courier_spans[i]
+            text = HTMLNormalizer.extract_text_preserving_position(span)
 
-                # Check for repeat instructions (supports "Repeat #4", "Repeat #4,5", etc.)
-                repeat_match = re.search(r'repeat\s+#?([\d,\s]+)', text, re.I)
-                if repeat_match:
-                    # Parse comma-separated verse numbers
-                    verse_nums_str = repeat_match.group(1).replace(' ', '')
-                    verse_nums = [int(n) for n in verse_nums_str.split(',') if n.strip()]
+            # End anchor
+            if 'key' in text.lower() and 'on any song' in text.lower():
+                break
 
-                    # Add repeat marker for each verse number
-                    for verse_num in verse_nums:
-                        items.append({'type': 'repeat', 'verse_num': verse_num})
-                    found_song_content = True
-                    continue
+            # Skip boilerplate (but allow "recorded by" if it's part of metadata)
+            # Only skip "recorded by" if it's in a long line (likely boilerplate)
+            skip_boilerplate = False
+            if 'written by' in text.lower():
+                skip_boilerplate = True
+            elif 'lyrics and chords' in text.lower():
+                skip_boilerplate = True
+            elif 'low prices on' in text.lower():
+                skip_boilerplate = True
+            elif 'country music cds' in text.lower():
+                skip_boilerplate = True
+            elif 'mp3s' in text.lower() and len(text) > 100:
+                skip_boilerplate = True
+            elif len(text) > 150:
+                skip_boilerplate = True
+            elif 'recorded by' in text.lower() and len(text) > 100:
+                # Only skip "recorded by" if it's in a long line (boilerplate)
+                skip_boilerplate = True
+            
+            if skip_boilerplate:
+                continue
 
-                # Check for song content
-                if ChordDetector.is_chord_line(text):
-                    found_song_content = True
+            # Skip titles
+            if span.find('big') or span.find_parent(['h1', 'h2', 'h3']):
+                continue
 
-                if found_song_content and text.strip():
-                    items.append({'type': 'span', 'text': text})
+            # Check for repeat instructions (supports "Repeat #4", "Repeat #4,5", etc.)
+            repeat_match = re.search(r'repeat\s+#?([\d,\s]+)', text, re.I)
+            if repeat_match:
+                # Parse comma-separated verse numbers
+                verse_nums_str = repeat_match.group(1).replace(' ', '')
+                verse_nums = [int(n) for n in verse_nums_str.split(',') if n.strip()]
 
-            # Handle br tags (only if we've found song content)
-            elif (found_song_content and hasattr(element, 'name') and
-                  element.name == 'br'):
-                items.append({'type': 'br'})
+                # Add repeat marker for each verse number
+                for verse_num in verse_nums:
+                    items.append({'type': 'repeat', 'verse_num': verse_num})
+                found_song_content = True
+                continue
+
+            # Check for song content
+            if ChordDetector.is_chord_line(text):
+                found_song_content = True
+
+            if found_song_content and text.strip():
+                items.append({'type': 'span', 'text': text})
+            
+            # Check for br tags between spans
+            # Use a more robust approach: find the parent container and check for br tags
+            # between this span and the next span in document order
+            if i + 1 < len(courier_spans) and found_song_content:
+                next_span = courier_spans[i + 1]
+                # Find common parent
+                span_parent = span.parent
+                next_parent = next_span.parent
+                if span_parent == next_parent:
+                    # Spans are siblings - check for br tags between them
+                    current = span.next_sibling
+                    while current and current != next_span:
+                        if hasattr(current, 'name') and current.name == 'br':
+                            items.append({'type': 'br'})
+                        current = current.next_sibling if hasattr(current, 'next_sibling') else None
+                else:
+                    # Spans are in different parents - add a br to maintain structure
+                    # (This is a conservative approach to maintain paragraph breaks)
+                    items.append({'type': 'br'})
 
         # Process items, detecting double-br as paragraph break
         i = 0

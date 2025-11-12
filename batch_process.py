@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 sys.path.insert(0, str(Path(__file__).parent))
 
 from src.chordpro_parser import (
-    StructureDetector, ContentExtractor, ChordProGenerator
+    StructureDetector, ContentExtractor, ChordProGenerator, StructuralValidator
 )
 
 
@@ -35,11 +35,21 @@ class BatchProcessor:
             'end_time': None
         }
 
-    def process_file(self, html_file: Path) -> Tuple[bool, str, str]:
+    def process_file(self, html_file: Path) -> Tuple[bool, str, str, Dict]:
         """
         Process a single HTML file to ChordPro
-        Returns: (success, filename, error_or_structure_type)
+        Returns: (success, filename, error_or_structure_type, quality_metrics)
         """
+        quality_metrics = {
+            'has_content': False,
+            'paragraph_count': 0,
+            'total_lines': 0,
+            'lines_with_chords': 0,
+            'lines_with_lyrics': 0,
+            'confidence': 0.0,
+            'quality_status': 'unknown'
+        }
+        
         try:
             with open(html_file, 'r', encoding='utf-8', errors='ignore') as f:
                 html_content = f.read()
@@ -49,9 +59,22 @@ class BatchProcessor:
             structure_type = StructureDetector.detect_structure_type(soup)
 
             if not structure_type:
-                return False, html_file.name, "Could not determine structure type"
+                return False, html_file.name, "Could not determine structure type", quality_metrics
 
             song = ContentExtractor.parse(soup, structure_type, html_file.name)
+            
+            # Validate quality
+            validation_result = StructuralValidator.validate(song)
+            quality_metrics.update({
+                'has_content': validation_result.metrics.get('has_content', False),
+                'paragraph_count': validation_result.metrics.get('paragraph_count', 0),
+                'total_lines': validation_result.metrics.get('total_lines', 0),
+                'lines_with_chords': validation_result.metrics.get('lines_with_chords', 0),
+                'lines_with_lyrics': validation_result.metrics.get('lines_with_lyrics', 0),
+                'confidence': validation_result.confidence,
+                'quality_status': BatchProcessor._determine_quality_status(song, validation_result)
+            })
+            
             chordpro = ChordProGenerator.song_to_chordpro(song)
 
             # Write output file
@@ -59,10 +82,42 @@ class BatchProcessor:
             with open(output_file, 'w', encoding='utf-8') as f:
                 f.write(chordpro)
 
-            return True, html_file.name, structure_type
+            return True, html_file.name, structure_type, quality_metrics
 
         except Exception as e:
-            return False, html_file.name, str(e)
+            return False, html_file.name, str(e), quality_metrics
+    
+    @staticmethod
+    def _determine_quality_status(song, validation_result) -> str:
+        """
+        Determine quality status: 'complete', 'incomplete', or 'minimal'
+        """
+        metrics = validation_result.metrics
+        
+        # Check if has any content at all
+        if not metrics.get('has_content', False) or metrics.get('paragraph_count', 0) == 0:
+            return 'minimal'
+        
+        paragraph_count = metrics.get('paragraph_count', 0)
+        total_lines = metrics.get('total_lines', 0)
+        lines_with_chords = metrics.get('lines_with_chords', 0)
+        lines_with_lyrics = metrics.get('lines_with_lyrics', 0)
+        
+        # Complete: Has multiple paragraphs, substantial lines, and both chords and lyrics
+        if (paragraph_count >= 2 and 
+            total_lines >= 10 and 
+            lines_with_chords >= 3 and 
+            lines_with_lyrics >= 5):
+            return 'complete'
+        
+        # Incomplete: Has some content but not enough
+        if (paragraph_count >= 1 and 
+            total_lines >= 3 and 
+            (lines_with_chords > 0 or lines_with_lyrics > 0)):
+            return 'incomplete'
+        
+        # Minimal: Just metadata or very little content
+        return 'minimal'
 
     def process_all(self, pattern: str = "*.html") -> Dict:
         """Process all HTML files matching pattern"""
@@ -91,12 +146,13 @@ class BatchProcessor:
             completed = 0
             for future in as_completed(future_to_file):
                 completed += 1
-                success, filename, info = future.result()
+                success, filename, info, quality_metrics = future.result()
 
                 if success:
                     self.results['success'].append({
                         'file': filename,
-                        'structure_type': info
+                        'structure_type': info,
+                        'quality': quality_metrics
                     })
                 else:
                     self.results['failed'].append({
@@ -143,6 +199,31 @@ class BatchProcessor:
             pct = count / success_count * 100
             report.append(f"  {stype:15} {count:6} ({pct:.1f}%)")
         report.append("")
+        
+        # Quality breakdown
+        quality_counts = {'complete': 0, 'incomplete': 0, 'minimal': 0}
+        for item in self.results['success']:
+            quality = item.get('quality', {}).get('quality_status', 'unknown')
+            if quality in quality_counts:
+                quality_counts[quality] += 1
+        
+        report.append("Content Quality:")
+        report.append(f"  Complete:      {quality_counts['complete']:6} ({quality_counts['complete']/success_count*100:.1f}%)")
+        report.append(f"  Incomplete:    {quality_counts['incomplete']:6} ({quality_counts['incomplete']/success_count*100:.1f}%)")
+        report.append(f"  Minimal:       {quality_counts['minimal']:6} ({quality_counts['minimal']/success_count*100:.1f}%)")
+        report.append("")
+        
+        # Quality metrics summary
+        if self.results['success']:
+            avg_confidence = sum(item.get('quality', {}).get('confidence', 0) for item in self.results['success']) / success_count
+            avg_paragraphs = sum(item.get('quality', {}).get('paragraph_count', 0) for item in self.results['success']) / success_count
+            avg_lines = sum(item.get('quality', {}).get('total_lines', 0) for item in self.results['success']) / success_count
+            
+            report.append("Quality Metrics (averages):")
+            report.append(f"  Avg confidence:  {avg_confidence:.2%}")
+            report.append(f"  Avg paragraphs:  {avg_paragraphs:.1f}")
+            report.append(f"  Avg lines:       {avg_lines:.1f}")
+            report.append("")
 
         # Error breakdown (top 10)
         if self.results['failed']:

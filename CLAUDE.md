@@ -148,6 +148,10 @@ python3 viewer/server.py
 2. **Text node handling** - Fixed NavigableString detection in pre_tag parser
 3. **Multi-verse repeats** - Added support for "Repeat #4,5" syntax
 4. **Quality improvement** - 50% → 70% → 100% correct on successive samples
+5. **span_br parser improvements** - Fixed parsing for files like "Man of Constant Sorrow" by:
+   - Finding song start index by detecting "recorded by" followed by chord lines
+   - Iterating through Courier New spans directly instead of walking all descendants
+   - Improved boilerplate filtering and br tag detection
 
 ## Next Steps (Optional)
 

@@ -15,6 +15,12 @@ archive/
 batch_processing_report.json
 stratified_sample_spot_check.json
 
+# Logs and temporary files
+*.log
+*.backup
+*summary*.txt
+*_summary.txt
+
 # IDE
 .vscode/
 .idea/

@@ -49,9 +49,9 @@ return None  # No recognized pattern
 **Method**: `parse(soup, structure_type, filename) → Song`
 
 **Three Pattern-Specific Parsers**:
-- `parse_span_br_structure(soup)` → `List[Paragraph]` (lines 290-386)
-- `parse_pre_tag_structure(soup)` → `List[Paragraph]` (lines 388-582)
-- `parse_pre_plain_structure(soup)` → `List[Paragraph]` (lines 584-756)
+- `parse_span_br_structure(soup)` → `List[Paragraph]` (lines 290-482)
+- `parse_pre_tag_structure(soup)` → `List[Paragraph]` (lines 483-650)
+- `parse_pre_plain_structure(soup)` → `List[Paragraph]` (lines 651-1080)
 
 #### Common Parsing Flow
 
@@ -63,7 +63,7 @@ Each parser follows this pattern:
 
 #### Critical: Verse Boundary Detection
 
-**pre_plain parser** (lines 656-676) - Most sophisticated rules:
+**pre_plain parser** (lines 690-710) - Most sophisticated rules:
 
 ```python
 # Count consecutive blank lines
@@ -88,14 +88,12 @@ if not line.strip():
 
 **Why this matters**: The 2+ blank line rule fixed the "Blue Suede Shoes" bug where all verses were merged into one. Some songs don't have chord lines starting verses, only lyrics.
 
-**span_br parser** (lines 357-363):
-```python
-# Paragraph break = two consecutive <br> tags
-if item['type'] == 'br':
-    if prev_was_br:
-        start_new_paragraph()
-    prev_was_br = True
-```
+**span_br parser** (lines 290-482):
+- **Song content detection**: Finds the actual song start by locating "recorded by" span followed by chord lines, skipping early boilerplate
+- **Direct span iteration**: Iterates through Courier New spans in document order (lines 323-396)
+- **Improved boilerplate filtering**: More lenient filtering that allows short "recorded by" metadata lines while filtering long boilerplate
+- **Paragraph breaks**: Detected by two consecutive `<br>` tags (lines 422-435)
+- **Br tag detection**: Robust detection between spans, handling both sibling and non-sibling cases (lines 377-395)
 
 **pre_tag parser** (similar to span_br but handles both `<span>` and text nodes)
 
@@ -105,7 +103,7 @@ if item['type'] == 'br':
 
 **Regex**: `r'repeat\s+#?([\d,\s]+)'`
 
-**Implementation** (same in all three parsers, e.g., lines 340-351 for span_br):
+**Implementation** (same in all three parsers, e.g., lines 357-368 for span_br):
 ```python
 repeat_match = re.search(r'repeat\s+#?([\d,\s]+)', text, re.I)
 if repeat_match:
