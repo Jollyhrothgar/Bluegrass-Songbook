@@ -173,8 +173,19 @@ class StructureDetector:
                 # These need to be parsed with pre_tag parser logic
                 # Require >5 spans to avoid detecting single boilerplate spans
                 spans_count = len(best_pre.find_all('span'))
-                if best_pre.find('font') or spans_count > 5:
+
+                # Check for font tags, but only if they have meaningful content
+                font_tag = best_pre.find('font')
+                if font_tag:
+                    font_text = font_tag.get_text().strip()
+                    # Only treat as pre_tag if font has actual content (not just empty/whitespace)
+                    if font_text and len(font_text) > 10:
+                        return 'pre_tag'
+
+                # Check if many spans (structured content)
+                if spans_count > 5:
                     return 'pre_tag'
+
                 # Plain pre tag (most common pattern #1)
                 return 'pre_plain'
             # If pre tags exist but have no chord content, fall through to span_br check
@@ -464,6 +475,27 @@ class ContentExtractor:
             if 'key' in text.lower() and 'on any song' in text.lower():
                 break
 
+            # Handle large spans that contain song content with <br> tags
+            # These need to be split into individual lines (same fix as pre_tag parser)
+            if len(text) > 150 and len(span.find_all('br')) > 5:
+                # This is a large span with many br tags - likely song content
+                # Extract text segments between br tags
+                # IMPORTANT: Only process immediate children, not ALL descendants
+                # to avoid duplicating content from nested spans
+                for child in span.children:
+                    if isinstance(child, str):
+                        segment_text = str(child).strip()
+                        if segment_text and segment_text != '\xa0':
+                            # Check if this is boilerplate metadata
+                            if ('recorded by' not in segment_text.lower() and
+                                'written by' not in segment_text.lower() and
+                                'lyrics and chords' not in segment_text.lower()):
+                                items.append({'type': 'span', 'text': segment_text})
+                    elif hasattr(child, 'name') and child.name == 'br':
+                        items.append({'type': 'br'})
+                found_song_content = True
+                continue
+
             # Skip boilerplate (but allow "recorded by" if it's part of metadata)
             # Only skip "recorded by" if it's in a long line (likely boilerplate)
             skip_boilerplate = False
@@ -478,11 +510,12 @@ class ContentExtractor:
             elif 'mp3s' in text.lower() and len(text) > 100:
                 skip_boilerplate = True
             elif len(text) > 150:
+                # Shouldn't reach here (large spans handled above), but keep for safety
                 skip_boilerplate = True
             elif 'recorded by' in text.lower() and len(text) > 100:
                 # Only skip "recorded by" if it's in a long line (boilerplate)
                 skip_boilerplate = True
-            
+
             if skip_boilerplate:
                 continue
 
@@ -729,12 +762,14 @@ class ContentExtractor:
                         if len(text) > 150 and len(child.find_all('br')) > 5:
                             # This is a large span with many br tags - likely song content
                             # Extract text segments between br tags
-                            for segment_elem in child.descendants:
-                                if isinstance(segment_elem, str):
-                                    segment_text = str(segment_elem).strip()
+                            # IMPORTANT: Only process immediate children, not ALL descendants
+                            # to avoid duplicating content from nested spans
+                            for segment in child.children:
+                                if isinstance(segment, str):
+                                    segment_text = str(segment).strip()
                                     if segment_text and segment_text != '\xa0':
                                         items.append({'type': 'span', 'text': segment_text})
-                                elif hasattr(segment_elem, 'name') and segment_elem.name == 'br':
+                                elif hasattr(segment, 'name') and segment.name == 'br':
                                     items.append({'type': 'br'})
                             found_song_content_ref[0] = True
                             continue

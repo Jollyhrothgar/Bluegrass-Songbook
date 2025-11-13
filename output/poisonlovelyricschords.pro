@@ -31,3 +31,9 @@ But still my heart cries out for you
 And you alone my [G7]darling
 And fate will never ever let me [C]go
 {end_of_verse}
+
+{start_of_verse: Verse 6}
+All my pleas and prayers have been in vain
+[G7]For you and you alone dear
+[C]And my better judgment tells me to say no
+{end_of_verse}

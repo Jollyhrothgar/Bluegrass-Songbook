@@ -21,12 +21,19 @@ And no one seemed to [C]hear his lonely [G]cry
 They [D7]laughed with Christmas cheer and walked on [G]by
 [C]Inside they watched a clock upon the [G]wall
 Put [D7]silver in the box and left the [G]hall
-spoken:Soon the church was quiet in the night
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+repeat #2
+{end_of_verse}
+
+{start_of_verse: Verse 5}
+[D7]spoken:Soon the church was quiet in the [G]night
 And one-by-one the candles lost their light
 In darkness now the old man knelt to pray
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 6}
 Forgive them Lord they must have lost their way
 Oh [C]Lord if you're there hear my [G]prayer
 Let [D7]the message of Your birthday fill the [G]air

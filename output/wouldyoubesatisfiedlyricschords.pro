@@ -3,6 +3,8 @@
 {meta: writer Johnny Mullins}
 
 {start_of_verse: Verse 1}
+Would You Be Satisfied
+recorded by Jean Shepard
 [G]I'm just someone who's all alone 
 In a [C]cold and empty [G]home
 {end_of_verse}

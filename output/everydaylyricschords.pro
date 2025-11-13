@@ -5,9 +5,9 @@
 {start_of_verse: Verse 1}
 [C]Everyday [F]it's a getting [G7]closer
 [C]Going faster [F]than a roller [G7]coaster
-[C]Love like yours will [F]surely [G7]come my [C]way  [F]a-hey [C]hey
+[C]Love like yours will [F]surely [G7]come my [C]way  a[F]-hey [C]hey
 [C]Everyday [F]it's a getting [G7]faster
-[C]Everyone says go [F]ahead and ask [G7]her
+[C]Everyone says [F]go ahead and [G7]ask her
 [C]Love like yours will [F]surely [G7]come my [C]way  [F]a-hey [C]hey
 {end_of_verse}
 
