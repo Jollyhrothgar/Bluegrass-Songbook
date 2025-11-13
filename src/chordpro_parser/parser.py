@@ -732,6 +732,20 @@ class ContentExtractor:
         items = []  # Will contain: {'type': 'span'/'br', 'text': ...}
         found_song_content = False
 
+        # IMPORTANT: Some files have structure like:
+        # <pre>
+        #   Song content as direct text/br children
+        #   <font>Small metadata</font>
+        # </pre>
+        # In these cases, we need to process BOTH the direct children of pre AND the font children
+        # We'll track if font elements are small (metadata only) vs large (song content)
+        has_small_font_only = False
+        if font_elems and font_elems[0] != pre_tag:
+            # Check if all fonts are small (< 100 chars = likely just metadata)
+            all_fonts_small = all(len(font.get_text(strip=True)) < 100 for font in font_elems)
+            if all_fonts_small:
+                has_small_font_only = True
+
         # Process all font elements (some files have metadata in first font, content in second)
         # Also handle nested font structures: <font><font>content</font></font>
         def process_element(element, found_song_content_ref):
