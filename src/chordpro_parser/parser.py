@@ -929,8 +929,41 @@ class ContentExtractor:
         # Process all font elements
         for content in font_elems:
             process_element(content, found_song_content_ref)
-        
+
         found_song_content = found_song_content_ref[0]
+
+        # If we only have small fonts (metadata), also process direct children of pre tag
+        # This handles files like "youroldstandbylyricschords.html" where structure is:
+        # <pre>
+        #   Direct text and <br> tags with song content
+        #   <font>Written by ...</font>  (small metadata only)
+        # </pre>
+        if has_small_font_only and pre_tag:
+            for child in pre_tag.children:
+                # Skip font elements (already processed)
+                if hasattr(child, 'name') and child.name == 'font':
+                    continue
+
+                # Process br tags
+                if hasattr(child, 'name') and child.name == 'br':
+                    items.append({'type': 'br'})
+                # Process text nodes
+                elif not hasattr(child, 'name') or not child.name:
+                    text = str(child).strip()
+                    if text and text != '\xa0':
+                        # Skip metadata
+                        if ('recorded by' in text.lower() or
+                            'written by' in text.lower() or
+                            len(text) > 150):
+                            continue
+
+                        # Check if song content
+                        if ChordDetector.is_chord_line(text):
+                            found_song_content_ref[0] = True
+                            found_song_content = True
+
+                        if found_song_content_ref[0] or ChordDetector.is_chord_line(text):
+                            items.append({'type': 'span', 'text': text})
 
         # Now process items, looking for double-br as paragraph break
         i = 0
