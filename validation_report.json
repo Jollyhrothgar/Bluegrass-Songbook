@@ -1,0 +1,988 @@
+{
+  "summary": {
+    "total_files": 17122,
+    "failed": 95,
+    "low_confidence": 447,
+    "medium_confidence": 6318,
+    "high_confidence": 10262
+  },
+  "failed_by_structure": {
+    "pre_tag": 35,
+    "span_br": 57,
+    "unknown": 3
+  },
+  "failed_files": [
+    {
+      "filename": "justalittletalkwithjesuslyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 27,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "beforethenextteardropfallslyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 40,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "prettyflamingolyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 50,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "foolfoolfoollyricsandchords",
+      "structure_type": "pre_tag",
+      "regex_chords": 39,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "imgonnaloveyoutoolyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 68,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "youroldstandbylyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 27,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "ifihadlastnighttoliveoverlyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 23,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "yesiseeGodlyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 26,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "givethemalltoJesuslyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 33,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "angelbandlyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 51,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "thekindofloveicantforgetlyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 13,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "jesustakethewheellyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 80,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "blueavenuelyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 32,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "blessedjesusholdmyhandlyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 24,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "ibelievelyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 48,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "lazyladylyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 31,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "bombedboozedandbustedlyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 45,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "idratherseeyouwavegoodbyelyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 45,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "footprintsinthesnowlyricsandchords",
+      "structure_type": "pre_tag",
+      "regex_chords": 24,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mylifesbeenapleasurelyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 39,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "Godscoloringbooklyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 52,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "highanddrylyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 45,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "downandoutthiswayagainlyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 41,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "headoverheelsinlovewithyoulyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 25,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "isforeverlongerthanalwayslyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 17,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "behindcloseddoorslyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 40,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "illbehomeforchristmaslyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 43,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mostofalllyricsandchords",
+      "structure_type": "pre_tag",
+      "regex_chords": 50,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "cmonsixtyfivelyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 83,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "bluechristmaslyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 20,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "beggartoakinglyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 75,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "californiadreamlyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 26,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "whydidntihearitfromyoulyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 52,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "iaintafraidofdyinglyrics-chords",
+      "structure_type": "pre_tag",
+      "regex_chords": 44,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "onlyyoulyricschords",
+      "structure_type": "pre_tag",
+      "regex_chords": 33,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mountainmusiclyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 36,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "lifeslikepoetrylyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 27,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mrmoonlyricsandchords",
+      "structure_type": "span_br",
+      "regex_chords": 33,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "thekentuckiansonglyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 32,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mycarolinasunshinegirllyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 25,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mollydarlinglyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 78,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "redsteagalllyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 11,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "lonelywomenlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 34,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "makingplanslyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 28,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "sundaymorningcomingdownlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 19,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "lovelettersinthesandlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 25,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "rickyvansheltonlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 8,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "whiskeyriverlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 27,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "myloveforyoulyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 22,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "manmusthidetocrylyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 27,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mrrecordmanlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 21,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "rebamcentirelyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 9,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mirrormirroronthewalllyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 22,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "myfilipinoroselyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 47,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "murderonmusicrowlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 49,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mountainoflovelyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 32,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "millerscavelyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 55,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "letterandaringlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 46,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "myelusivedreamslyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 50,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mickeygilleylyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 16,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "myangeljudylyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 17,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "lifesgoneandslippedawaylyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 35,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mrmoonlightlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 43,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "whenthemooncomesoverthemountainlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 32,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "letthefourwindsblowlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 17,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "rightwordslyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 25,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "thewhitecliffsofdoverlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 45,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mightyevergladeslyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 74,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "southerngospelsonglyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 123,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "myhearthasamindofitsownlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 33,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "meandjesuslyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 29,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "manhascriedlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 25,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "lovesickblueslyricsandchords",
+      "structure_type": "span_br",
+      "regex_chords": 29,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "athousandtimesadaylyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 77,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "lonelystreetlyricsandchords",
+      "structure_type": "span_br",
+      "regex_chords": 32,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mycathedrallyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 36,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "lightattheriverlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 27,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "middleagecrazylyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 25,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "myhandsarecleanlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 16,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "onceinabluemoonlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 72,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "lovetheworldawaylyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 35,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "thatlittleboyofminelyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 36,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "tracybyrdlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 6,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "lonesomewaltzlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 23,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mistybluelyricsandchords",
+      "structure_type": "span_br",
+      "regex_chords": 29,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "myheartskipsabeatlyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 36,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mrandmrsusedtobelyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 32,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "lonelygirllyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 16,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "onlyyouandyoualonelyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 17,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "margielyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 18,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "marriedbythebiblelyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 25,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "mymemoriesofyoulyricschords",
+      "structure_type": "span_br",
+      "regex_chords": 21,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "royorbisonlyrics",
+      "structure_type": "unknown",
+      "regex_chords": 5,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "charliepridelyrics",
+      "structure_type": "unknown",
+      "regex_chords": 9,
+      "parsed_chords": 0
+    },
+    {
+      "filename": "johnandersonlyricschords",
+      "structure_type": "unknown",
+      "regex_chords": 8,
+      "parsed_chords": 0
+    }
+  ],
+  "low_confidence_files": [
+    {
+      "filename": "astrangersjustafriendlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 67,
+      "parsed_chords": 25,
+      "parsed_verses": 4,
+      "parsed_words": 108
+    },
+    {
+      "filename": "stepintothewaterlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 29,
+      "parsed_chords": 65,
+      "parsed_verses": 7,
+      "parsed_words": 301
+    },
+    {
+      "filename": "sweetsusannahlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 12,
+      "parsed_chords": 36,
+      "parsed_verses": 9,
+      "parsed_words": 242
+    },
+    {
+      "filename": "dontsaylovelyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 18,
+      "parsed_chords": 42,
+      "parsed_verses": 7,
+      "parsed_words": 298
+    },
+    {
+      "filename": "dancingyourmemoryawaylyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 24,
+      "parsed_chords": 51,
+      "parsed_verses": 6,
+      "parsed_words": 224
+    },
+    {
+      "filename": "howmanyangelslyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 35,
+      "parsed_chords": 74,
+      "parsed_verses": 8,
+      "parsed_words": 261
+    },
+    {
+      "filename": "backinyourarmsagainlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 49,
+      "parsed_chords": 105,
+      "parsed_verses": 7,
+      "parsed_words": 226
+    },
+    {
+      "filename": "babybabybyebyelyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 21,
+      "parsed_chords": 45,
+      "parsed_verses": 9,
+      "parsed_words": 185
+    },
+    {
+      "filename": "memorykillerlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 26,
+      "parsed_chords": 61,
+      "parsed_verses": 7,
+      "parsed_words": 181
+    },
+    {
+      "filename": "letthefourwindschooselyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 37,
+      "parsed_chords": 86,
+      "parsed_verses": 13,
+      "parsed_words": 421
+    },
+    {
+      "filename": "familyreunionlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 39,
+      "parsed_chords": 84,
+      "parsed_verses": 6,
+      "parsed_words": 287
+    },
+    {
+      "filename": "almostjamaicalyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 21,
+      "parsed_chords": 45,
+      "parsed_verses": 11,
+      "parsed_words": 200
+    },
+    {
+      "filename": "twoheartslyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 39,
+      "parsed_chords": 84,
+      "parsed_verses": 7,
+      "parsed_words": 176
+    },
+    {
+      "filename": "nomatterhowhighigetlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 30,
+      "parsed_chords": 70,
+      "parsed_verses": 9,
+      "parsed_words": 357
+    },
+    {
+      "filename": "withbellsonlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 23,
+      "parsed_chords": 51,
+      "parsed_verses": 7,
+      "parsed_words": 253
+    },
+    {
+      "filename": "themoreiseeofthosecowboyslyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 22,
+      "parsed_chords": 46,
+      "parsed_verses": 7,
+      "parsed_words": 208
+    },
+    {
+      "filename": "givealittletakealittlelyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 51,
+      "parsed_chords": 15,
+      "parsed_verses": 2,
+      "parsed_words": 111
+    },
+    {
+      "filename": "lonelyrainlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 26,
+      "parsed_chords": 65,
+      "parsed_verses": 6,
+      "parsed_words": 201
+    },
+    {
+      "filename": "homecominglyricsandchords",
+      "structure_type": "pre_plain",
+      "regex_chords": 39,
+      "parsed_chords": 91,
+      "parsed_verses": 7,
+      "parsed_words": 181
+    },
+    {
+      "filename": "memorylanelyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 35,
+      "parsed_chords": 71,
+      "parsed_verses": 9,
+      "parsed_words": 269
+    },
+    {
+      "filename": "Jesusiscomingsoonlyricsandchords",
+      "structure_type": "pre_plain",
+      "regex_chords": 56,
+      "parsed_chords": 113,
+      "parsed_verses": 6,
+      "parsed_words": 253
+    },
+    {
+      "filename": "beyondthesunsetformelyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 19,
+      "parsed_chords": 43,
+      "parsed_verses": 7,
+      "parsed_words": 255
+    },
+    {
+      "filename": "chattahoocheelyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 25,
+      "parsed_chords": 56,
+      "parsed_verses": 11,
+      "parsed_words": 353
+    },
+    {
+      "filename": "holdontotheloveivegotlyricsandchords",
+      "structure_type": "pre_plain",
+      "regex_chords": 33,
+      "parsed_chords": 77,
+      "parsed_verses": 11,
+      "parsed_words": 389
+    },
+    {
+      "filename": "walkininjerusalemlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 29,
+      "parsed_chords": 101,
+      "parsed_verses": 11,
+      "parsed_words": 381
+    },
+    {
+      "filename": "icanttakeanotherheartachelyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 21,
+      "parsed_chords": 45,
+      "parsed_verses": 8,
+      "parsed_words": 169
+    },
+    {
+      "filename": "bigmidnightspeciallyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 29,
+      "parsed_chords": 59,
+      "parsed_verses": 13,
+      "parsed_words": 242
+    },
+    {
+      "filename": "hillbillyhighwaylyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 37,
+      "parsed_chords": 85,
+      "parsed_verses": 8,
+      "parsed_words": 243
+    },
+    {
+      "filename": "foolthatiamlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 33,
+      "parsed_chords": 15,
+      "parsed_verses": 2,
+      "parsed_words": 99
+    },
+    {
+      "filename": "burdensareliftedatcalvarylyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 23,
+      "parsed_chords": 47,
+      "parsed_verses": 7,
+      "parsed_words": 108
+    },
+    {
+      "filename": "501blueslyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 17,
+      "parsed_chords": 53,
+      "parsed_verses": 7,
+      "parsed_words": 285
+    },
+    {
+      "filename": "ivegotJesusinmysoullyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 22,
+      "parsed_chords": 45,
+      "parsed_verses": 6,
+      "parsed_words": 192
+    },
+    {
+      "filename": "downthelinelyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 16,
+      "parsed_chords": 35,
+      "parsed_verses": 8,
+      "parsed_words": 250
+    },
+    {
+      "filename": "helltakeyouinlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 29,
+      "parsed_chords": 59,
+      "parsed_verses": 6,
+      "parsed_words": 296
+    },
+    {
+      "filename": "whenthelastofourdaysshallcomelyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 29,
+      "parsed_chords": 64,
+      "parsed_verses": 10,
+      "parsed_words": 293
+    },
+    {
+      "filename": "tennesseewomanlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 26,
+      "parsed_chords": 59,
+      "parsed_verses": 6,
+      "parsed_words": 198
+    },
+    {
+      "filename": "wereallGodschildrenlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 42,
+      "parsed_chords": 89,
+      "parsed_verses": 11,
+      "parsed_words": 256
+    },
+    {
+      "filename": "didyoueverseeadreamwalkinglyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 35,
+      "parsed_chords": 17,
+      "parsed_verses": 4,
+      "parsed_words": 98
+    },
+    {
+      "filename": "bluebloodedwomanlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 29,
+      "parsed_chords": 68,
+      "parsed_verses": 8,
+      "parsed_words": 255
+    },
+    {
+      "filename": "unclepenlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 19,
+      "parsed_chords": 43,
+      "parsed_verses": 8,
+      "parsed_words": 267
+    },
+    {
+      "filename": "horseshoebendlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 28,
+      "parsed_chords": 60,
+      "parsed_verses": 7,
+      "parsed_words": 215
+    },
+    {
+      "filename": "westtexaswaltzlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 39,
+      "parsed_chords": 81,
+      "parsed_verses": 6,
+      "parsed_words": 198
+    },
+    {
+      "filename": "alabamaskylyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 33,
+      "parsed_chords": 69,
+      "parsed_verses": 6,
+      "parsed_words": 195
+    },
+    {
+      "filename": "heavenboundimreadylyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 27,
+      "parsed_chords": 67,
+      "parsed_verses": 7,
+      "parsed_words": 251
+    },
+    {
+      "filename": "lifedonthavetobesohardlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 34,
+      "parsed_chords": 70,
+      "parsed_verses": 6,
+      "parsed_words": 220
+    },
+    {
+      "filename": "whenyousaynothingatalllyricsandchords",
+      "structure_type": "pre_plain",
+      "regex_chords": 58,
+      "parsed_chords": 118,
+      "parsed_verses": 6,
+      "parsed_words": 260
+    },
+    {
+      "filename": "ourlovelyricsandchords",
+      "structure_type": "pre_plain",
+      "regex_chords": 19,
+      "parsed_chords": 43,
+      "parsed_verses": 7,
+      "parsed_words": 303
+    },
+    {
+      "filename": "wheneveryoucomearoundlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 27,
+      "parsed_chords": 57,
+      "parsed_verses": 6,
+      "parsed_words": 225
+    },
+    {
+      "filename": "thesweetestgiftlyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 16,
+      "parsed_chords": 33,
+      "parsed_verses": 6,
+      "parsed_words": 242
+    },
+    {
+      "filename": "overlovingyoulyricschords",
+      "structure_type": "pre_plain",
+      "regex_chords": 16,
+      "parsed_chords": 48,
+      "parsed_verses": 7,
+      "parsed_words": 267
+    }
+  ]
+}

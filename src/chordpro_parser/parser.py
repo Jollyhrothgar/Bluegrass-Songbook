@@ -159,6 +159,16 @@ class StructureDetector:
             # Only use pre tag if it has actual chord content (at least 3 chords)
             # This prevents selecting boilerplate pre tags with 0-2 false positive matches
             if best_pre and max_chord_count >= 3:
+                # Check if there are many Courier New spans outside the pre tag
+                # If so, the actual content is likely in span_br format, not pre
+                courier_spans = soup.find_all('span', style=re.compile(r'font-family:\s*Courier New', re.I))
+                pre_length = len(best_pre.get_text())
+
+                # If there are >20 Courier New spans and pre tag is small (<200 chars),
+                # the pre is likely just a bridge/note, not the main content
+                if len(courier_spans) > 20 and pre_length < 200:
+                    return 'span_br'
+
                 # Check if it has font children or MANY span children (structured content)
                 # These need to be parsed with pre_tag parser logic
                 # Require >5 spans to avoid detecting single boilerplate spans
@@ -708,11 +718,28 @@ class ContentExtractor:
                         if 'key' in text.lower() and 'on any song' in text.lower():
                             break
 
-                        # Skip metadata and titles
+                        # Skip metadata and titles (but not large spans with <br> tags)
                         if (child.find('big') or
                             'recorded by' in text.lower() or
-                            'written by' in text.lower() or
-                            len(text) > 150):
+                            'written by' in text.lower()):
+                            continue
+
+                        # Handle large spans that contain song content with <br> tags
+                        # These need to be split into individual lines
+                        if len(text) > 150 and len(child.find_all('br')) > 5:
+                            # This is a large span with many br tags - likely song content
+                            # Extract text segments between br tags
+                            for segment_elem in child.descendants:
+                                if isinstance(segment_elem, str):
+                                    segment_text = str(segment_elem).strip()
+                                    if segment_text and segment_text != '\xa0':
+                                        items.append({'type': 'span', 'text': segment_text})
+                                elif hasattr(segment_elem, 'name') and segment_elem.name == 'br':
+                                    items.append({'type': 'br'})
+                            found_song_content_ref[0] = True
+                            continue
+                        elif len(text) > 150:
+                            # Large span without br tags - likely boilerplate
                             continue
 
                         # Check for repeat instructions (supports "Repeat #4", "Repeat #4,5", etc.)

@@ -29,6 +29,29 @@ def load_batch_report(report_path: Path) -> Dict[str, str]:
     return mapping
 
 
+def load_reviewed_files(feedback_path: Path) -> set:
+    """Load files that have been reviewed and marked as correct"""
+    reviewed = set()
+
+    if not feedback_path.exists():
+        return reviewed
+
+    with open(feedback_path, 'r') as f:
+        for line in f:
+            if line.strip():
+                try:
+                    feedback = json.loads(line)
+                    # Only exclude files marked as "correct"
+                    if feedback.get('status') == 'correct':
+                        # Convert to just the base filename without .html
+                        filename = feedback['file'].replace('.html', '')
+                        reviewed.add(filename)
+                except json.JSONDecodeError:
+                    continue
+
+    return reviewed
+
+
 def parse_outlier_report(report_path: Path) -> List[Dict]:
     """Parse outlier report and extract file information"""
     outliers = []
@@ -152,6 +175,12 @@ def main():
     structure_mapping = load_batch_report(args.batch_report)
     print(f"  Loaded {len(structure_mapping)} file mappings")
 
+    # Load reviewed files to skip
+    feedback_path = Path('viewer/feedback.jsonl')
+    reviewed_files = load_reviewed_files(feedback_path)
+    if reviewed_files:
+        print(f"  Excluding {len(reviewed_files)} files already marked as correct")
+
     # Count structure types
     structure_counts = defaultdict(int)
     for structure_type in structure_mapping.values():
@@ -167,6 +196,13 @@ def main():
     outlier_report_path = args.analysis_dir / 'reports' / f'{args.metric}_outliers.txt'
     print(f"\nLoading outlier report: {outlier_report_path}")
     outliers = parse_outlier_report(outlier_report_path)
+
+    # Filter out already reviewed files
+    outliers_before = len(outliers)
+    outliers = [o for o in outliers if Path(o['html_path']).stem not in reviewed_files]
+    if outliers_before > len(outliers):
+        print(f"  Filtered out {outliers_before - len(outliers)} already-reviewed files")
+
     print(f"  Found {len(outliers)} total outliers")
 
     # Separate into bottom and top outliers
