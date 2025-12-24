@@ -8,9 +8,10 @@ A two-phase project to build a searchable bluegrass/country songbook:
 2. **Search Application** (in development): Serverless semantic search on GitHub Pages
 
 **Current Status:**
-- 17,122 songs parsed from classic-country-song-lyrics.com (98.5% success rate)
+- 17,053 songs parsed from classic-country-song-lyrics.com (98.5% success rate)
 - Parser handles three HTML structure patterns with accurate chord alignment
-- Search application architecture defined, implementation pending
+- Search UI working locally (keyword search, song viewing)
+- Next: semantic search with embeddings, chord progression search, key detection
 
 ## Quick Start
 
@@ -27,6 +28,11 @@ python3 viewer/server.py
 
 # Run tests
 uv run pytest
+
+# Build search index and start search UI
+uv run python3 scripts/build_index.py
+python3 -m http.server 8080 --directory docs
+# Visit: http://localhost:8080
 ```
 
 ## Repository Structure
@@ -40,36 +46,33 @@ Bluegrass-Songbook/
 │
 ├── src/songbook/                # Main Python package
 │   ├── parser/                  # HTML → ChordPro conversion
-│   │   ├── detector.py          # Structure type detection
-│   │   ├── extractor.py         # Content extraction
-│   │   ├── generator.py         # ChordPro generation
-│   │   └── batch.py             # Batch processing
-│   ├── analysis/                # Chord analysis (NEW)
-│   │   ├── key_detector.py      # Detect song key from chords
-│   │   └── normalizer.py        # Convert to Nashville numbers
-│   └── search/                  # Search index building (NEW)
-│       ├── indexer.py           # Parse .pro → metadata + lyrics
-│       └── embedder.py          # Generate vector embeddings
+│   │   ├── parser.py            # Main parser (StructureDetector, ContentExtractor, ChordProGenerator)
+│   │   ├── batch.py             # Batch processing
+│   │   └── validator.py         # Quality validation
+│   ├── analysis/                # Chord analysis (placeholder)
+│   │   └── __init__.py          # Key detection, Nashville numbers (TODO)
+│   └── search/                  # Search index building (placeholder)
+│       └── __init__.py          # Embeddings (TODO)
 │
-├── tests/                       # Test suite
+├── docs/                        # GitHub Pages static site (WORKING)
+│   ├── index.html               # Search UI
+│   ├── css/style.css            # Dark theme styles
+│   ├── js/search.js             # Search + song display logic
+│   └── data/index.json          # Song index (33MB, 17K songs)
+│
+├── scripts/                     # Build & dev tools
+│   ├── build_index.py           # Build docs/data/index.json from .pro files
+│   ├── regression_test.py       # Before/after comparison for parser changes
+│   └── validator.py             # Statistical analysis of parsed output
+│
+├── tests/                       # Test suite (pytest)
 │   ├── parser/                  # Parser unit + integration tests
-│   ├── analysis/                # Key detection tests
+│   ├── analysis/                # Key detection tests (placeholder)
 │   └── fixtures/                # Test HTML/pro files
 │
-├── scripts/                     # Development tools
-│   ├── regression_test.py       # Before/after comparison for parser changes
-│   ├── validator.py             # Statistical analysis of output
-│   └── README.md                # Script documentation
-│
-├── viewer/                      # Manual validation web UI
+├── viewer/                      # Manual validation web UI (for parser dev)
 │   ├── server.py                # Flask server
 │   └── templates/               # HTML templates
-│
-├── docs/                        # GitHub Pages static site (search UI)
-│   ├── index.html               # Search interface
-│   ├── js/                      # Search logic + transformers.js
-│   ├── css/                     # Styles
-│   └── data/                    # Build output (index.json, embeddings)
 │
 ├── songs/                       # Song data organized by source
 │   └── classic-country/
@@ -279,11 +282,25 @@ uv run pytest --cov=src/songbook
 
 | I want to... | Go to... |
 |--------------|----------|
-| Understand the parser | `src/songbook/parser/` |
-| Modify chord detection | `src/songbook/analysis/key_detector.py` |
-| Add search features | `src/songbook/search/` |
+| Understand the parser | `src/songbook/parser/parser.py` |
+| Build search index | `scripts/build_index.py` |
+| Modify search UI | `docs/js/search.js` |
+| Add key detection | `src/songbook/analysis/` (TODO) |
 | Run regression tests | `scripts/regression_test.py` |
-| Validate output manually | `viewer/server.py` |
-| See original requirements | `docs/CLAUDE.md` |
+| Validate parser output | `viewer/server.py` |
 | See performance results | `RESULTS.md` |
 | See future roadmap | `ROADMAP.md` |
+
+## Next Steps (Search Application)
+
+**Working:**
+- Basic keyword search (title, artist, lyrics)
+- Song display with chord highlighting
+- Dark theme, mobile-friendly UI
+
+**TODO:**
+1. **Compress index.json** - Currently 33MB, should gzip to ~5MB
+2. **Key detection** - Implement `src/songbook/analysis/key_detector.py` using diatonic heuristics
+3. **Nashville numbers** - Implement chord normalization for key-agnostic progression search
+4. **Semantic search** - Add embeddings with `all-MiniLM-L6-v2` and transformers.js
+5. **Deploy to GitHub Pages** - Configure repo settings

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluegrass Songbook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bluegrass Songbook</h1>
+            <p class="subtitle">17,000+ songs with chords</p>
+        </header>
+
+        <div class="search-container">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search by title, artist, or lyrics..."
+                autocomplete="off"
+            >
+            <div id="search-stats" class="search-stats"></div>
+        </div>
+
+        <div id="results" class="results"></div>
+
+        <div id="song-view" class="song-view hidden">
+            <div class="song-view-header">
+                <button id="back-btn" class="back-btn">&larr; Back to results</button>
+                <button id="bug-btn" class="bug-btn">Report Bug</button>
+            </div>
+            <div id="song-content" class="song-content"></div>
+        </div>
+
+        <!-- Bug Report Modal -->
+        <div id="bug-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Report Parsing Bug</h2>
+                    <button id="modal-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <label for="bug-feedback">Describe the issue:</label>
+                    <textarea id="bug-feedback" placeholder="e.g., Chord alignment is off in verse 2, missing repeat section, wrong artist name..."></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button id="copy-bug-btn" class="copy-btn">Copy Bug Report</button>
+                    <span id="copy-status" class="copy-status"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/search.js"></script>
+</body>
+</html>

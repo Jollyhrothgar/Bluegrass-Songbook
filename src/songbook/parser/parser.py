@@ -1531,33 +1531,36 @@ class ChordProGenerator:
 
 
 if __name__ == "__main__":
-    # Test with example files
+    # Test with sample songs from the actual corpus
     import sys
+    from pathlib import Path
 
-    test_files = [
-        'man_of_constant_sorrow_input.html',
-        'old_home_place_input.html'
-    ]
+    # Use songs from the actual corpus
+    songs_dir = Path('songs/classic-country/raw')
+    test_files = list(songs_dir.glob('*.html'))[:3]  # Test first 3 files
+
+    if not test_files:
+        print("No test files found. Run from project root.")
+        sys.exit(1)
 
     for test_file in test_files:
         print(f"\n{'='*60}")
-        print(f"Processing: {test_file}")
+        print(f"Processing: {test_file.name}")
         print('='*60)
 
-        with open(test_file, 'r', encoding='utf-8') as f:
-            html_content = f.read()
+        html_content = test_file.read_text(encoding='utf-8')
 
         if not StructureDetector.has_parseable_content(html_content):
-            print(f"✗ {test_file} does not have parseable content")
+            print(f"✗ {test_file.name} does not have parseable content")
             continue
 
-        print(f"✓ {test_file} has parseable content")
+        print(f"✓ {test_file.name} has parseable content")
         soup = BeautifulSoup(html_content, 'html.parser')
         structure_type = StructureDetector.detect_structure_type(soup)
         print(f"  Structure type: {structure_type}")
 
         # Parse the song
-        song = ContentExtractor.parse(soup, structure_type, test_file)
+        song = ContentExtractor.parse(soup, structure_type, str(test_file))
 
         # Print metadata
         print(f"\nMetadata:")
@@ -1570,8 +1573,6 @@ if __name__ == "__main__":
             print(f"\nStructure:")
             print(f"  Paragraphs: {len(song.song_content.paragraphs)}")
             print(f"  Playback sequence: {song.song_content.playback_sequence}")
-            if song.song_content.raw_repeat_instruction_text:
-                print(f"  Repeat instruction: {song.song_content.raw_repeat_instruction_text}")
 
         # Generate ChordPro output
         chordpro_output = ChordProGenerator.song_to_chordpro(song)

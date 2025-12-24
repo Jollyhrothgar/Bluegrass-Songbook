@@ -16,8 +16,12 @@ stratified_sample_spot_check.json
 
 # Regression testing artifacts
 analysis/
+analysis_test/
 analysis_before_*/
 analysis_after_*/
+
+# Old/orphaned directories
+examples/
 
 # Logs and temporary files
 *.log

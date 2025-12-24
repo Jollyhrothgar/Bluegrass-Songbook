@@ -433,32 +433,35 @@ class BatchValidator:
 
 
 if __name__ == "__main__":
-    # Test with example files
+    # Test with sample songs from the actual corpus
+    from pathlib import Path
     from .parser import ContentExtractor, StructureDetector
     from bs4 import BeautifulSoup
 
-    test_files = [
-        ('man_of_constant_sorrow_input.html', 'man_of_constant_sorrow_output.txt'),
-        ('old_home_place_input.html', 'old_home_place_output.txt')
-    ]
+    # Use songs from the actual corpus
+    songs_dir = Path('songs/classic-country/raw')
+    test_files = list(songs_dir.glob('*.html'))[:5]  # Test first 5 files
 
     print("=" * 60)
     print("VALIDATION REPORT")
     print("=" * 60)
 
+    if not test_files:
+        print("No test files found. Run from project root.")
+        exit(1)
+
     all_songs = []
 
-    for html_file, expected_file in test_files:
-        print(f"\n{html_file}")
+    for html_file in test_files:
+        print(f"\n{html_file.name}")
         print("-" * 60)
 
         # Parse the HTML
-        with open(html_file, 'r', encoding='utf-8') as f:
-            html_content = f.read()
+        html_content = html_file.read_text(encoding='utf-8')
 
         soup = BeautifulSoup(html_content, 'html.parser')
         structure_type = StructureDetector.detect_structure_type(soup)
-        song = ContentExtractor.parse(soup, structure_type, html_file)
+        song = ContentExtractor.parse(soup, structure_type, str(html_file))
 
         all_songs.append((html_file, song))
 
@@ -477,21 +480,18 @@ if __name__ == "__main__":
                 location = f" [{issue.location}]" if issue.location else ""
                 print(f"  [{issue.severity.upper()}]{location} {issue.message}")
 
-        # Comparison validation (if expected output exists)
-        try:
-            with open(expected_file, 'r', encoding='utf-8') as f:
-                expected = f.read()
-
+        # Check if corresponding .pro file exists for comparison
+        pro_file = Path('songs/classic-country/parsed') / f"{html_file.stem}.pro"
+        if pro_file.exists():
+            expected = pro_file.read_text(encoding='utf-8')
             comp_result = ComparisonValidator.compare_with_expected(song, expected)
-            print(f"\nComparison with expected output:")
+            print(f"\nComparison with parsed output:")
             print(f"  Match: {comp_result.valid}")
             print(f"  Similarity: {comp_result.confidence:.2%}")
             if comp_result.issues:
                 print(f"  Issues: {len(comp_result.issues)}")
                 for issue in comp_result.issues[:3]:  # Show first 3
                     print(f"    [{issue.severity}] {issue.message}")
-        except FileNotFoundError:
-            print(f"\nNo expected output file found: {expected_file}")
 
     # Batch statistics
     print("\n" + "=" * 60)
