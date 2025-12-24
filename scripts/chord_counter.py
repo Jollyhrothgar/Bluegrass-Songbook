@@ -42,10 +42,10 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog='''
 Examples:
-  %(prog)s song.pro                    # Count chords in a single file
-  %(prog)s output/ --recursive         # Count chords in directory recursively
-  %(prog)s output/ --top 10            # Show top 10 most common chords
-  %(prog)s output/ --format json       # Output results as JSON
+  %(prog)s song.pro                                    # Count chords in a single file
+  %(prog)s songs/classic-country/parsed/ --recursive  # Count chords in directory recursively
+  %(prog)s songs/classic-country/parsed/ --top 10     # Show top 10 most common chords
+  %(prog)s songs/classic-country/parsed/ --format json # Output results as JSON
         '''
     )
 

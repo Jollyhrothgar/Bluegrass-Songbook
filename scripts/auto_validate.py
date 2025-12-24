@@ -313,13 +313,13 @@ def main():
     parser.add_argument(
         '--html-dir',
         type=Path,
-        default=Path('html'),
+        default=Path('songs/classic-country/raw'),
         help='Directory containing HTML files'
     )
     parser.add_argument(
         '--output-dir',
         type=Path,
-        default=Path('output'),
+        default=Path('songs/classic-country/parsed'),
         help='Directory containing ChordPro output files'
     )
     parser.add_argument(

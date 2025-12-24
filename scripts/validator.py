@@ -210,14 +210,14 @@ def main():
     parser.add_argument(
         '--output-dir',
         type=str,
-        default='output',
-        help='Directory containing .pro files (default: output)'
+        default='songs/classic-country/parsed',
+        help='Directory containing .pro files (default: songs/classic-country/parsed)'
     )
     parser.add_argument(
         '--html-dir',
         type=str,
-        default='html',
-        help='Directory containing .html files (default: html)'
+        default='songs/classic-country/raw',
+        help='Directory containing .html files (default: songs/classic-country/raw)'
     )
     parser.add_argument(
         '--analysis-dir',

@@ -13,7 +13,11 @@ env/
 archive/
 batch_processing_report.json
 stratified_sample_spot_check.json
+
+# Regression testing artifacts
 analysis/
+analysis_before_*/
+analysis_after_*/
 
 # Logs and temporary files
 *.log
@@ -22,7 +26,7 @@ analysis/
 *_summary.txt
 
 # IDE
-CLAUDE.md
+GEMINI.md
 .vscode/
 .idea/
 .claude/
@@ -30,3 +34,6 @@ CLAUDE.md
 # OS
 .DS_Store
 *.swp
+
+# Search build outputs (large binary files)
+docs/data/embeddings.bin

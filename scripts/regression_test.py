@@ -29,9 +29,9 @@ from datetime import datetime
 
 
 def check_git_status():
-    """Check if output/ has uncommitted changes"""
+    """Check if songs/classic-country/parsed/ has uncommitted changes"""
     result = subprocess.run(
-        ["git", "status", "--porcelain", "output/"],
+        ["git", "status", "--porcelain", "songs/classic-country/parsed/"],
         capture_output=True,
         text=True
     )
@@ -44,7 +44,7 @@ def check_git_status():
 
 
 def count_output_changes():
-    """Count how many files in output/ have changed"""
+    """Count how many files in songs/classic-country/parsed/ have changed"""
     changed_files, error = check_git_status()
     if error:
         return 0, error
@@ -161,12 +161,12 @@ Examples:
             print(f"\n⚠️  Warning: {error}")
             print("   Git rollback will not be available")
         elif change_count > 0:
-            print(f"\n⚠️  Warning: output/ has {change_count} uncommitted changes")
+            print(f"\n⚠️  Warning: songs/classic-country/parsed/ has {change_count} uncommitted changes")
             print("   These will be overwritten by batch processing")
             print(f"\n   To save current state:")
-            print(f"   git add output/ && git commit -m 'Pre-{name} baseline'")
+            print(f"   git add songs/classic-country/parsed/ && git commit -m 'Pre-{name} baseline'")
             print(f"\n   To discard current changes:")
-            print(f"   git checkout HEAD -- output/")
+            print(f"   git checkout HEAD -- songs/classic-country/parsed/")
             response = input("\n   Continue anyway? (y/N): ")
             if response.lower() != 'y':
                 print("Aborted.")
@@ -246,13 +246,13 @@ Examples:
     # Git rollback instructions
     if final_change_count and final_change_count > 0:
         print(f"\n🔄 Git Status:")
-        print(f"   {final_change_count:,} files changed in output/")
+        print(f"   {final_change_count:,} files changed in songs/classic-country/parsed/")
         print(f"\n   To commit these changes:")
-        print(f"   git add output/ && git commit -m 'Apply {name} changes'")
+        print(f"   git add songs/classic-country/parsed/ && git commit -m 'Apply {name} changes'")
         print(f"\n   To rollback all changes:")
-        print(f"   git checkout HEAD -- output/")
+        print(f"   git checkout HEAD -- songs/classic-country/parsed/")
         print(f"\n   To rollback specific files:")
-        print(f"   git checkout HEAD -- output/<filename>.pro")
+        print(f"   git checkout HEAD -- songs/classic-country/parsed/<filename>.pro")
 
     print(f"\n💡 Next Steps:")
     print(f"   - Review comparison output above")

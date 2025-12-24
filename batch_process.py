@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from src.chordpro_parser import (
+from src.songbook import (
     StructureDetector, ContentExtractor, ChordProGenerator, StructuralValidator
 )
 
@@ -254,8 +254,8 @@ class BatchProcessor:
 def main():
     """Main entry point"""
     # Configuration
-    input_dir = "html"
-    output_dir = "output"
+    input_dir = "songs/classic-country/raw"
+    output_dir = "songs/classic-country/parsed"
     max_workers = 32  # Increased for I/O-bound workload
 
     # Create processor

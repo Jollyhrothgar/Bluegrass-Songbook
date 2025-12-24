@@ -1,169 +1,118 @@
-# HTML to ChordPro Parser
+# Bluegrass Songbook
 
-Converts scraped HTML song files from classic-country-song-lyrics.com to ChordPro format.
-
-## Project Structure
-
-```
-.
-├── src/
-│   └── chordpro_parser/      # Main package
-│       ├── __init__.py
-│       ├── parser.py          # Core parsing logic
-│       ├── validator.py       # Validation framework
-│       └── batch_processor.py # Batch processing
-├── examples/                  # Example input/output files
-├── docs/                      # Documentation
-│   ├── README.md             # This file
-│   └── CLAUDE.md             # Project instructions
-├── output/                    # Generated ChordPro files (gitignored)
-├── html/                      # Input HTML corpus
-├── chordpro_cli.py           # Command-line interface
-├── pyproject.toml            # Project dependencies (UV)
-└── requirements.txt          # Dependencies (legacy, use pyproject.toml)
-```
-
-## Installation
-
-```bash
-# Install dependencies and create virtual environment
-uv sync
-
-# Or if you need to activate the environment manually
-source .venv/bin/activate
-```
-
-Note: This project uses [UV](https://github.com/astral-sh/uv) for dependency management. The `uv sync` command will automatically create a virtual environment and install all dependencies from `pyproject.toml`.
-
-## Usage
-
-### Command Line
-
-```bash
-# Process all HTML files in a directory
-python3 chordpro_cli.py html/ -o output/
-
-# With JSONL output
-python3 chordpro_cli.py html/ -o output/ -j songs.jsonl
-
-# Process limited number (for testing)
-python3 chordpro_cli.py html/ -o output/ -l 100
-
-# Full options
-python3 chordpro_cli.py --help
-```
-
-### Python API
-
-```python
-from bs4 import BeautifulSoup
-from src.chordpro_parser import (
-    StructureDetector,
-    ContentExtractor,
-    ChordProGenerator,
-    StructuralValidator
-)
-
-# Parse single file
-with open('song.html') as f:
-    soup = BeautifulSoup(f.read(), 'html.parser')
-
-structure_type = StructureDetector.detect_structure_type(soup)
-song = ContentExtractor.parse(soup, structure_type, 'song.html')
-
-# Validate
-result = StructuralValidator.validate(song)
-print(f"Confidence: {result.confidence:.2%}")
-
-# Generate ChordPro
-chordpro = ChordProGenerator.song_to_chordpro(song)
-with open('song.pro', 'w') as f:
-    f.write(chordpro)
-```
-
-### Batch Processing
-
-```python
-from src.chordpro_parser import BatchProcessor
-
-processor = BatchProcessor(
-    input_dir='html/',
-    output_dir='output/',
-    jsonl_output='songs.jsonl'
-)
-
-stats = processor.process_batch()
-processor.print_report()
-processor.save_report('report.json')
-```
+A searchable collection of 17,000+ bluegrass and country songs in ChordPro format, with semantic search capabilities.
 
 ## Features
 
-- **Multi-pattern HTML parsing**: Handles `span+br` and `pre+font` structures
-- **Accurate chord alignment**: Preserves horizontal positioning from fixed-width layouts
-- **Metadata extraction**: Title, artist, composer, recorded_by
-- **Paragraph segmentation**: Identifies verses, choruses, etc.
-- **Repeat instructions**: Parses "Repeat #N xM" directives
-- **Comprehensive validation**:
-  - Structural integrity checks
-  - Confidence scoring (0-100%)
-  - Error and warning tracking
-  - Batch statistics
-- **Multiple output formats**:
-  - ChordPro (.pro files)
-  - JSONL (structured data)
-  - JSON reports
+- **17,122 songs** parsed from classic-country-song-lyrics.com
+- **Accurate chord alignment** preserving original positioning
+- **ChordPro format** compatible with standard apps (OnSong, SongbookPro, etc.)
+- **Semantic search** (coming soon) - find songs by "vibe" or meaning
+- **Progression search** (coming soon) - find songs by chord patterns (I-IV-V)
 
-## Validation
+## Using the Songs
 
-The validator provides confidence scores and detailed metrics:
+### Browse the Collection
 
-- **High confidence (>80%)**: Ready for use
-- **Medium confidence (50-80%)**: Review recommended
-- **Low confidence (<50%)**: Manual review required
+Songs are in `songs/classic-country/parsed/` as `.pro` files:
 
-Validation checks:
-- Metadata completeness
-- Chord position accuracy
-- Paragraph structure
-- Playback sequence validity
-- Chord coverage ratio
-
-## Output Format
-
-### ChordPro (.pro)
 ```
-{title: Song Title}
-{artist: Artist Name}
-{composer: Writer Name}
+songs/classic-country/parsed/
+├── abeautifullife.pro
+├── abillionairesong.pro
+├── abornloser.pro
+└── ... (17,122 files)
+```
 
-{c: Verse 1}
+### ChordPro Format
+
+Each file follows the [ChordPro standard](https://www.chordpro.org/):
+
+```chordpro
+{title: Your Cheatin' Heart}
+{artist: Hank Williams}
+{composer: Hank Williams}
+{key: C}
+
 {sov}
-[G]Lyric line with [D7]chords inline
-More lyrics [C]here
+Your cheatin' [C]heart will make you [F]weep
+You'll cry and [C]cry and try to [G7]sleep
 {eov}
 ```
 
-### JSONL
-One JSON object per line with complete song structure including paragraphs, chord positions, and playback sequences.
+### Import to Apps
 
-## Known Limitations
+These `.pro` files work with:
+- [OnSong](https://onsongapp.com/) (iOS)
+- [SongbookPro](https://songbook-pro.com/) (iOS/Android)
+- [Songsheet Generator](https://tenbyten.com/software/songsgen/)
+- Any ChordPro-compatible app
 
-1. Currently handles 2 main HTML patterns; additional patterns may exist
-2. Chord alignment accuracy: ±1-2 characters due to HTML complexity
-3. Boilerplate filtering uses heuristics that may need corpus-specific tuning
+## Search (Coming Soon)
 
-## Testing
+A static web interface for searching the collection:
+
+- **Semantic search**: Find songs by theme ("murder ballads", "songs about trains")
+- **Lyric search**: Search for exact phrases
+- **Progression search**: Find songs using specific chord patterns
+
+## For Developers
+
+See [CLAUDE.md](CLAUDE.md) for architecture details and development workflow.
+
+### Quick Start
 
 ```bash
-# Test with example files
-python3 chordpro_cli.py examples/ -o output/
+# Install dependencies
+uv sync
 
-# Check output
-ls output/
-cat output/old_home_place_input.pro
+# Run parser on new HTML files
+uv run python3 batch_process.py
+
+# Validate output
+python3 viewer/server.py
+# Visit http://localhost:8000
+
+# Run tests
+uv run pytest
 ```
 
-## Development
+### Project Structure
 
-See `docs/CLAUDE.md` for detailed project instructions and parsing requirements.
+```
+├── src/songbook/           # Python package
+│   ├── parser/             # HTML → ChordPro conversion
+│   ├── analysis/           # Key detection, chord normalization
+│   └── search/             # Search index building
+├── songs/                  # Song data by source
+│   └── classic-country/
+│       ├── raw/            # Original HTML
+│       └── parsed/         # ChordPro output
+├── docs/                   # GitHub Pages search UI
+└── viewer/                 # Validation UI
+```
+
+### Adding Songs from New Sources
+
+1. Add HTML files to `songs/<source>/raw/`
+2. Create or adapt a parser for the HTML structure
+3. Run batch processing
+4. Validate with the viewer UI
+
+See [ROADMAP.md](ROADMAP.md) for planned features and sources.
+
+## Data Sources
+
+| Source | Songs | Status |
+|--------|-------|--------|
+| classic-country-song-lyrics.com | 17,122 | Complete |
+| Ultimate Guitar | - | Planned |
+| Chordie | - | Planned |
+
+## License
+
+Song lyrics and chords are sourced from publicly available websites. This project provides parsing tools and does not claim ownership of the musical content.
+
+## Contributing
+
+Contributions welcome! See [CLAUDE.md](CLAUDE.md) for development setup and testing requirements.

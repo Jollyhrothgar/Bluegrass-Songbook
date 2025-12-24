@@ -61,8 +61,8 @@ def parse_outlier_report(report_path: Path) -> List[Dict]:
 
     # Parse each outlier entry
     # Format:
-    #   HTML: html/filename.html
-    #   PRO:  output/filename.pro
+    #   HTML: songs/classic-country/raw/filename.html
+    #   PRO:  songs/classic-country/parsed/filename.pro
     #   Metric Name: value
     pattern = r'HTML:\s+([^\n]+)\n\s+PRO:\s+([^\n]+)\n\s+([^:]+):\s+(\d+(?:\.\d+)?)'
 

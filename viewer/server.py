@@ -22,7 +22,7 @@ os.chdir(PROJECT_ROOT)
 # Add parent directory to path for imports
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.chordpro_parser import (
+from src.songbook import (
     StructureDetector, ContentExtractor, ChordProGenerator
 )
 from bs4 import BeautifulSoup
@@ -53,7 +53,7 @@ class ValidatorServer(SimpleHTTPRequestHandler):
         # Serve HTML files
         elif path.startswith('/html/'):
             filename = path.replace('/html/', '')
-            html_path = Path('html') / filename
+            html_path = Path('songs/classic-country/raw') / filename
             if html_path.exists():
                 self.serve_file(str(html_path), 'text/html')
             else:
@@ -170,7 +170,7 @@ class ValidatorServer(SimpleHTTPRequestHandler):
         """Serve a random file from successfully parsed files"""
         try:
             # Get list of all successfully parsed .pro files
-            output_dir = Path('output')
+            output_dir = Path('songs/classic-country/parsed')
             pro_files = list(output_dir.glob('*.pro'))
 
             if not pro_files:
@@ -182,7 +182,7 @@ class ValidatorServer(SimpleHTTPRequestHandler):
             html_filename = random_pro.stem + '.html'
 
             # Check if HTML exists
-            html_path = Path('html') / html_filename
+            html_path = Path('songs/classic-country/raw') / html_filename
             if not html_path.exists():
                 # Try again with a different file
                 self.serve_random_file()
@@ -199,7 +199,7 @@ class ValidatorServer(SimpleHTTPRequestHandler):
     def serve_chordpro(self, filename):
         """Parse HTML and return ChordPro"""
         try:
-            html_path = Path('html') / filename
+            html_path = Path('songs/classic-country/raw') / filename
 
             if not html_path.exists():
                 self.send_json_response({'success': False, 'error': 'File not found'})
