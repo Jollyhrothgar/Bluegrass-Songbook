@@ -9,6 +9,16 @@
 <body>
     <div class="container">
         <header>
+            <div class="header-top">
+                <button id="theme-toggle" class="icon-btn" title="Toggle theme">
+                    <span class="icon-sun">&#9728;</span>
+                    <span class="icon-moon">&#9790;</span>
+                </button>
+                <button id="favorites-toggle" class="icon-btn" title="Show favorites">
+                    <span class="icon-heart">&#9825;</span>
+                    <span id="favorites-count" class="favorites-count hidden">0</span>
+                </button>
+            </div>
             <h1>Bluegrass Songbook</h1>
             <p class="subtitle">17,000+ songs with chords</p>
         </header>
@@ -27,8 +37,14 @@
 
         <div id="song-view" class="song-view hidden">
             <div class="song-view-header">
-                <button id="back-btn" class="back-btn">&larr; Back to results</button>
-                <button id="bug-btn" class="bug-btn">Report Bug</button>
+                <button id="back-btn" class="back-btn">&larr; Back</button>
+                <div class="song-actions">
+                    <button id="favorite-btn" class="icon-btn favorite-btn" title="Add to favorites">
+                        <span class="heart-empty">&#9825;</span>
+                        <span class="heart-full">&#9829;</span>
+                    </button>
+                    <button id="bug-btn" class="bug-btn">Report Bug</button>
+                </div>
             </div>
             <div id="song-content" class="song-content"></div>
         </div>
