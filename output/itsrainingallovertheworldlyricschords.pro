@@ -21,30 +21,23 @@ There’s no [G7]wars and no fears in my [F]baby’s [C]arms
 No [D7]recessions or depressions I feel [G7]safe from all harm
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 4}
 [C]Yes it’s raining all [C7]over the [F]world
 But [G7]I know a place where the [F]sun [C]shines
 Every [F]night by her [Fm]side with a [C]heart filled with [Am]pride
 I thank [D7]God for this [G7]woman of [C]mine
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_chorus: Repeat 1}
+{start_of_verse: Verse 4}
 [C]Yes it’s raining all [C7]over the [F]world
 But [G7]I know a place where the [F]sun [C]shines
 Every [F]night by her [Fm]side with a [C]heart filled with [Am]pride
 I thank [D7]God for this [G7]woman of [C]mine
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_chorus: Repeat 2}
+{start_of_verse: Verse 4}
 [C]Yes it’s raining all [C7]over the [F]world
 But [G7]I know a place where the [F]sun [C]shines
 Every [F]night by her [Fm]side with a [C]heart filled with [Am]pride
 I thank [D7]God for this [G7]woman of [C]mine
-{end_of_chorus}
-
-{start_of_chorus}
-[C]Yes it’s raining all [C7]over the [F]world
-But [G7]I know a place where the [F]sun [C]shines
-Every [F]night by her [Fm]side with a [C]heart filled with [Am]pride
-I thank [D7]God for this [G7]woman of [C]mine
-{end_of_chorus}
+{end_of_verse}

@@ -16,44 +16,37 @@
 [G7]But she loves [C]me
 {end_of_verse}
 
-{start_of_chorus}
-And she loves my troubles away
-[G7]Every night she makes my day
-[C]Troubles get me down but they never [F]stay
-[C]Cause she [G7]loves my troubles [C]away
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-And she loves my troubles away
-[G7]Every night she makes my day
-[C]Troubles get me down but they never [F]stay
-[C]Cause she [G7]loves my troubles [C]away
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-And she loves my troubles away
-[G7]Every night she makes my day
-[C]Troubles get me down but they never [F]stay
-[C]Cause she [G7]loves my troubles [C]away
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+And she loves my troubles away
+[G7]Every night she makes my day
+[C]Troubles get me down but they never [F]stay
+[C]Cause she [G7]loves my troubles [C]away
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 And I can't give her fancy things
 [F]Pretty clothes and [C]diamond [G7]rings
 [C]Nor the pleasure [F]money [C]brings
 [G7]Cause she loves me
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 [C]Late at night she takes my [G7]hand
 [C]Says you know [F]I [C]understand
 [F]You just do the best you [C]can
 [G7]Then she loves [C]me
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 And she loves my troubles away
 [G7]Every night she makes my day
 [C]Troubles get me down but they never [F]stay
 [C]Cause she [G7]loves my troubles [C]away
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+And she loves my troubles away
+[G7]Every night she makes my day
+[C]Troubles get me down but they never [F]stay
+[C]Cause she [G7]loves my troubles [C]away
+{end_of_verse}

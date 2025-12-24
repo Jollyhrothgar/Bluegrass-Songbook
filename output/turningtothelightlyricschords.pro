@@ -53,6 +53,16 @@ There's a new day dawning bright
 [D7]Oh I'm turning to the [G]light
 {end_of_verse}
 
+{start_of_verse: Verse 2}
+I am turning to the light 
+I am reaching toward the sun
+I have [D7]journeyed through the night
+And the [G]battle now is won
+There's a new song in my heart
+There's a new day dawning bright
+[D7]Oh I'm turning to the [G]light
+{end_of_verse}
+
 {start_of_verse: Verse 5}
 [D7]Oh I'm turning to the [G]light
 {end_of_verse}

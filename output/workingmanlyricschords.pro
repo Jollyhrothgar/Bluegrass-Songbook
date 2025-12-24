@@ -20,34 +20,16 @@ The boss is in his usual mood
 [F]Showing the wear and [G7]tear in their [C]eyes
 {end_of_verse}
 
-{start_of_chorus}
-They're [F]makin' it hard on the [C]workin' man
-[G7]Tryin' to make a livin' any [C]way he can
-[F]Makin' ends meet on the [C]installment plan
-His [G7]money goes right [C]through his hands
-[F]Heaven help him if you [C]think you can
-They're [F]makin' it har[G7]d on the workin' [C]man
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-They're [F]makin' it hard on the [C]workin' man
-[G7]Tryin' to make a livin' any [C]way he can
-[F]Makin' ends meet on the [C]installment plan
-His [G7]money goes right [C]through his hands
-[F]Heaven help him if you [C]think you can
-They're [F]makin' it har[G7]d on the workin' [C]man
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-They're [F]makin' it hard on the [C]workin' man
-[G7]Tryin' to make a livin' any [C]way he can
-[F]Makin' ends meet on the [C]installment plan
-His [G7]money goes right [C]through his hands
-[F]Heaven help him if you [C]think you can
-They're [F]makin' it har[G7]d on the workin' [C]man
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+They're [F]makin' it hard on the [C]workin' man
+[G7]Tryin' to make a livin' any [C]way he can
+[F]Makin' ends meet on the [C]installment plan
+His [G7]money goes right [C]through his hands
+[F]Heaven help him if you [C]think you can
+They're [F]makin' it har[G7]d on the workin' [C]man
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Big policeman in his prime 
 [G7]Sits behind his billboard sign
 [F]Aims his radar [G7]gun right straight at [C]me[G7]
@@ -56,16 +38,16 @@ Big policeman in his prime
 Is [F]this the way the [G7]good life's supposed to [C]be
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 They're [F]makin' it hard on the [C]workin' man
 [G7]Tryin' to make a livin' any [C]way he can
 [F]Makin' ends meet on the [C]installment plan
 His [G7]money goes right [C]through his hands
 [F]Heaven help him if you [C]think you can
 They're [F]makin' it har[G7]d on the workin' [C]man
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Stumble from my good warm bed 
 [G7]Monday mornin' oh my head
 [F]Gotta go and [G7]do it all [C]again[G7]
@@ -74,11 +56,20 @@ Stumble from my good warm bed
 [F]Payment's late on [G7]my old truck [C]again
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 They're [F]makin' it hard on the [C]workin' man
 [G7]Tryin' to make a livin' any [C]way he can
 [F]Makin' ends meet on the [C]installment plan
 His [G7]money goes right [C]through his hands
 [F]Heaven help him if you [C]think you can
 They're [F]makin' it har[G7]d on the workin' [C]man
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+They're [F]makin' it hard on the [C]workin' man
+[G7]Tryin' to make a livin' any [C]way he can
+[F]Makin' ends meet on the [C]installment plan
+His [G7]money goes right [C]through his hands
+[F]Heaven help him if you [C]think you can
+They're [F]makin' it har[G7]d on the workin' [C]man
+{end_of_verse}

@@ -16,37 +16,30 @@ I keep [F]saying you didn't [G7]mean it
 When you said good[Am]bye  [G7]
 {end_of_verse}
 
-{start_of_chorus}
-Oh [C]I keep puttin' off [F]gettin' over you
-[G7]Cause that would be too hard to [C]ever do
-[Am]I just can't believe [F]you and I are through
-[G7]So I keep puttin' off gettin' over [Am]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Oh [C]I keep puttin' off [F]gettin' over you
-[G7]Cause that would be too hard to [C]ever do
-[Am]I just can't believe [F]you and I are through
-[G7]So I keep puttin' off gettin' over [Am]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Oh [C]I keep puttin' off [F]gettin' over you
-[G7]Cause that would be too hard to [C]ever do
-[Am]I just can't believe [F]you and I are through
-[G7]So I keep puttin' off gettin' over [Am]you
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Oh [C]I keep puttin' off [F]gettin' over you
+[G7]Cause that would be too hard to [C]ever do
+[Am]I just can't believe [F]you and I are through
+[G7]So I keep puttin' off gettin' over [Am]you
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I know you [C]told me to [Am]forget you
 Said go and [C]find me someone [Am]else
 But I keep [F]saying you're gonna [G7]come back
 So I keep [C]livin' all by my[G7]self
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Oh [C]I keep puttin' off [F]gettin' over you
 [G7]Cause that would be too hard to [C]ever do
 [Am]I just can't believe [F]you and I are through
 [G7]So I keep puttin' off gettin' over [Am]you
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Oh [C]I keep puttin' off [F]gettin' over you
+[G7]Cause that would be too hard to [C]ever do
+[Am]I just can't believe [F]you and I are through
+[G7]So I keep puttin' off gettin' over [Am]you
+{end_of_verse}

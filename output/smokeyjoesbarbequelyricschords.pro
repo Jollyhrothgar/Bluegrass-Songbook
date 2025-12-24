@@ -11,34 +11,16 @@
 [G7]At Smokey Joe's [C]Barbeque
 {end_of_verse}
 
-{start_of_chorus}
-[F]Smokey Joe's barbeque Smokey Joe's [C]Barbeque
-[D7]There's always fun for everyone at Smokey Joe's [G7]Barbeque
-[C]The string band plays Turkey in the Hay
-[F]They play it just for [C]you
-[F]You’ll laugh and be gay till the Judgment [C]Day
-[G7]At Smokey Joe's [C]Barbeque
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]Smokey Joe's barbeque Smokey Joe's [C]Barbeque
-[D7]There's always fun for everyone at Smokey Joe's [G7]Barbeque
-[C]The string band plays Turkey in the Hay
-[F]They play it just for [C]you
-[F]You’ll laugh and be gay till the Judgment [C]Day
-[G7]At Smokey Joe's [C]Barbeque
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]Smokey Joe's barbeque Smokey Joe's [C]Barbeque
-[D7]There's always fun for everyone at Smokey Joe's [G7]Barbeque
-[C]The string band plays Turkey in the Hay
-[F]They play it just for [C]you
-[F]You’ll laugh and be gay till the Judgment [C]Day
-[G7]At Smokey Joe's [C]Barbeque
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[F]Smokey Joe's barbeque Smokey Joe's [C]Barbeque
+[D7]There's always fun for everyone at Smokey Joe's [G7]Barbeque
+[C]The string band plays Turkey in the Hay
+[F]They play it just for [C]you
+[F]You’ll laugh and be gay till the Judgment [C]Day
+[G7]At Smokey Joe's [C]Barbeque
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 When the dogwoods bloom and the red birds sing
 [F]That's a time I love to [C]see
 [D7]When work is through and the crops laid by I dream of [G7]reality
@@ -47,11 +29,20 @@ When the dogwoods bloom and the red birds sing
 [G7]At Smokey Joe's [C]Barbeque
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [F]Smokey Joe's barbeque Smokey Joe's [C]Barbeque
 [D7]There's always fun for everyone at Smokey Joe's [G7]Barbeque
 [C]The string band plays Turkey in the Hay
 [F]They play it just for [C]you
 [F]You’ll laugh and be gay till the Judgment [C]Day
 [G7]At Smokey Joe's [C]Barbeque
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[F]Smokey Joe's barbeque Smokey Joe's [C]Barbeque
+[D7]There's always fun for everyone at Smokey Joe's [G7]Barbeque
+[C]The string band plays Turkey in the Hay
+[F]They play it just for [C]you
+[F]You’ll laugh and be gay till the Judgment [C]Day
+[G7]At Smokey Joe's [C]Barbeque
+{end_of_verse}

@@ -11,28 +11,14 @@ There [A7]on that final [D7]warning
 It's just about [Em]time to [D7]cross to the other [G]side
 {end_of_verse}
 
-{start_of_chorus}
-It's just about time for [C]watching and [G]waiting
-It's just about time what [A7]joy I'm antici[D7]pating
-[G]Where we shall meet that [C]day and never [G]die
-It's just about [Em]time to [D7]cross to the other [G]side
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-It's just about time for [C]watching and [G]waiting
-It's just about time what [A7]joy I'm antici[D7]pating
-[G]Where we shall meet that [C]day and never [G]die
-It's just about [Em]time to [D7]cross to the other [G]side
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-It's just about time for [C]watching and [G]waiting
-It's just about time what [A7]joy I'm antici[D7]pating
-[G]Where we shall meet that [C]day and never [G]die
-It's just about [Em]time to [D7]cross to the other [G]side
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+It's just about time for [C]watching and [G]waiting
+It's just about time what [A7]joy I'm antici[D7]pating
+[G]Where we shall meet that [C]day and never [G]die
+It's just about [Em]time to [D7]cross to the other [G]side
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 I know the land has been prepared and [C]someday I am [G]going
 To live in that land where the saints abide
 Where the [A7]crystal river is [D7]flowing
@@ -41,13 +27,20 @@ It [G]fills my soul to know to know I live there
 It's just about [Em]time to [D7]cross to the other [G]side 
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 It's just about time for [C]watching and [G]waiting
 It's just about time what [A7]joy I'm antici[D7]pating
 [G]Where we shall meet that [C]day and never [G]die
 It's just about [Em]time to [D7]cross to the other [G]side
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+It's just about time for [C]watching and [G]waiting
+It's just about time what [A7]joy I'm antici[D7]pating
+[G]Where we shall meet that [C]day and never [G]die
+It's just about [Em]time to [D7]cross to the other [G]side
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 It's just about [Em]time to [D7]cross to the other [G]side
 {end_of_verse}

@@ -19,22 +19,12 @@ I never knew two women who acted the [G7]same
 Whoa oh it's [C]two in the morning I'm [G7]running and she wants to [C]walk
 {end_of_verse}
 
-{start_of_chorus}
-Something's got a hold on [F]me it's [G7]cheap but it ain't [C]free
-Love or something [Am]like it's got a [C]hold [G7]on [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Something's got a hold on [F]me it's [G7]cheap but it ain't [C]free
-Love or something [Am]like it's got a [C]hold [G7]on [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Something's got a hold on [F]me it's [G7]cheap but it ain't [C]free
-Love or something [Am]like it's got a [C]hold [G7]on [C]me
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Something's got a hold on [F]me it's [G7]cheap but it ain't [C]free
+Love or something [Am]like it's got a [C]hold [G7]on [C]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 That's when I asked her my place or your place
 [F]I hope I'm not out of [C]line I asked the wrong thing
 But just the right woman this [G7]time 
@@ -43,7 +33,12 @@ Whoa oh the [C]cheaper the grapes are
 The [G7]sweeter the taste of the [C]wine
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Something's got a hold on [F]me it's [G7]cheap but it ain't [C]free
 Love or something [Am]like it's got a [C]hold [G7]on [C]me
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Something's got a hold on [F]me it's [G7]cheap but it ain't [C]free
+Love or something [Am]like it's got a [C]hold [G7]on [C]me
+{end_of_verse}

@@ -16,41 +16,34 @@ If you wanna make a young man [F]happy one more time
 [G7]I'd sure like to spend the night with [C]you
 {end_of_verse}
 
-{start_of_chorus}
-And she said stranger shut out the light and [F]lead me
-[G7]Somewhere shut out the shadows [C]too
-And while we lay there making believe you [F]love me
-[G7]Stranger could I believe in [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-And she said stranger shut out the light and [F]lead me
-[G7]Somewhere shut out the shadows [C]too
-And while we lay there making believe you [F]love me
-[G7]Stranger could I believe in [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-And she said stranger shut out the light and [F]lead me
-[G7]Somewhere shut out the shadows [C]too
-And while we lay there making believe you [F]love me
-[G7]Stranger could I believe in [C]you
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+And she said stranger shut out the light and [F]lead me
+[G7]Somewhere shut out the shadows [C]too
+And while we lay there making believe you [F]love me
+[G7]Stranger could I believe in [C]you
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Maybe you got all you got [F]together
 [G7]Maybe you keep rolling like a [C]stone
 Maybe some old lonesome song'll [F]take you by surprise
 [G7]Leaving you a little more [C]alone
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 And she said stranger shut out the light and [F]lead me
 [G7]Somewhere shut out the shadows [C]too
 And while we lay there making believe you [F]love me
 [G7]Stranger could I believe in [C]you
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+And she said stranger shut out the light and [F]lead me
+[G7]Somewhere shut out the shadows [C]too
+And while we lay there making believe you [F]love me
+[G7]Stranger could I believe in [C]you
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 [G7]Stranger could I believe in [C]you
 {end_of_verse}

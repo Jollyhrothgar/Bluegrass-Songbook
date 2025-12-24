@@ -16,49 +16,42 @@ Everything looked different
 [Em]And He [D7]made me [G]strong
 {end_of_verse}
 
-{start_of_chorus}
-[D7]The Lord is smiling on [G]me
-[C]A beautiful and glorious [G]day
-[Em]I've got so much to be thankful for
-[E7]The Lord [D7]is smiling on [G]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[D7]The Lord is smiling on [G]me
-[C]A beautiful and glorious [G]day
-[Em]I've got so much to be thankful for
-[E7]The Lord [D7]is smiling on [G]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[D7]The Lord is smiling on [G]me
-[C]A beautiful and glorious [G]day
-[Em]I've got so much to be thankful for
-[E7]The Lord [D7]is smiling on [G]me
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[D7]The Lord is smiling on [G]me
+[C]A beautiful and glorious [G]day
+[Em]I've got so much to be thankful for
+[E7]The Lord [D7]is smiling on [G]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I don't have to be depressed
 [D7]When sadness comes [G]along
 [C]I found someone stronger than [G]me
 [Em]To place [D7]my burdens [G]on
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 I know someone loves me
 [D7]Even when I'm not my [G]best
 [C]I just do all that I [G]can
 [Em]And let God [D7]do the [G]rest
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [D7]The Lord is smiling on [G]me
 [C]A beautiful and glorious [G]day
 [Em]I've got so much to be thankful for
 [E7]The Lord [D7]is smiling on [G]me
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 3}
+[D7]The Lord is smiling on [G]me
+[C]A beautiful and glorious [G]day
+[Em]I've got so much to be thankful for
+[E7]The Lord [D7]is smiling on [G]me
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 [D7]The Lord is smiling on [G]me
 [D7]The Lord is smiling on [G]me
 {end_of_verse}

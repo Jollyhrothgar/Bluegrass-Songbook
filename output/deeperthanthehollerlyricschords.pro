@@ -11,45 +11,37 @@ And that [Dm]would not justice to the [Em]way I feel for you
 So I [F]had to sing a [C]song about [Dm]all the things I [G7]knew
 {end_of_verse}
 
-{start_of_chorus}
-My love is [C]deeper than the [F]holler [C]stronger than the [F]river
-[Am]Higher than the [Dm]pine trees growing [F]tall upon the [Dm]hill
-[G7]My love is [C]purer than the [F]snowflakes that [C]fall in late [Am]December
-And [Dm]honest as a [C]robin on a [F]springtime window sill
-And [Dm]longer than the [G7]song of a whippoor[C]will
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-My love is [C]deeper than the [F]holler [C]stronger than the [F]river
-[Am]Higher than the [Dm]pine trees growing [F]tall upon the [Dm]hill
-[G7]My love is [C]purer than the [F]snowflakes that [C]fall in late [Am]December
-And [Dm]honest as a [C]robin on a [F]springtime window sill
-And [Dm]longer than the [G7]song of a whippoor[C]will
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-My love is [C]deeper than the [F]holler [C]stronger than the [F]river
-[Am]Higher than the [Dm]pine trees growing [F]tall upon the [Dm]hill
-[G7]My love is [C]purer than the [F]snowflakes that [C]fall in late [Am]December
-And [Dm]honest as a [C]robin on a [F]springtime window sill
-And [Dm]longer than the [G7]song of a whippoor[C]will
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+My love is [C]deeper than the [F]holler [C]stronger than the [F]river
+[Am]Higher than the [Dm]pine trees growing [F]tall upon the [Dm]hill
+[G7]My love is [C]purer than the [F]snowflakes that [C]fall in late [Am]December
+And [Dm]honest as a [C]robin on a [F]springtime window sill
+And [Dm]longer than the [G7]song of a whippoor[C]will
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [F]From the [C]backroads to the [F]Broadway shows with a [C]million miles [F]between
 There's at [C]least a million [F]love songs that [C]people [F]love to [C]sing
 And [Dm]everyone is different and [Em]everyone's the same
 And [F]this is just [C]another way of [Dm]saying the same [G7]thing
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 My love is [C]deeper than the [F]holler [C]stronger than the [F]river
 [Am]Higher than the [Dm]pine trees growing [F]tall upon the [Dm]hill
 [G7]My love is [C]purer than the [F]snowflakes that [C]fall in late [Am]December
 And [Dm]honest as a [C]robin on a [F]springtime window sill
 And [Dm]longer than the [G7]song of a whippoor[C]will
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+My love is [C]deeper than the [F]holler [C]stronger than the [F]river
+[Am]Higher than the [Dm]pine trees growing [F]tall upon the [Dm]hill
+[G7]My love is [C]purer than the [F]snowflakes that [C]fall in late [Am]December
+And [Dm]honest as a [C]robin on a [F]springtime window sill
+And [Dm]longer than the [G7]song of a whippoor[C]will
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 A [G7]whippoor[C]will
 {end_of_verse}

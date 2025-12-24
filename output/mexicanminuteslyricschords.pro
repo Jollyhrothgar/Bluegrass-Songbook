@@ -10,37 +10,17 @@
 [C]So I don't think we're gonna [F]beat this postcard [G7]home
 {end_of_verse}
 
-{start_of_chorus}
-[F]We're down to the worm in the [G7]bottle
-[C]The chips and the salsa are [F]gone
-[C]Now we know why [F]J.T. sang [C]oh [G7]Mexi[C]co
-[F]We're two days south of the [G7]border
-[C]Feeling too good to care [F]why
-These [C]Mexican minutes get [G7]longer and longer
-As the days goes [C]by
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]We're down to the worm in the [G7]bottle
-[C]The chips and the salsa are [F]gone
-[C]Now we know why [F]J.T. sang [C]oh [G7]Mexi[C]co
-[F]We're two days south of the [G7]border
-[C]Feeling too good to care [F]why
-These [C]Mexican minutes get [G7]longer and longer
-As the days goes [C]by
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]We're down to the worm in the [G7]bottle
-[C]The chips and the salsa are [F]gone
-[C]Now we know why [F]J.T. sang [C]oh [G7]Mexi[C]co
-[F]We're two days south of the [G7]border
-[C]Feeling too good to care [F]why
-These [C]Mexican minutes get [G7]longer and longer
-As the days goes [C]by
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[F]We're down to the worm in the [G7]bottle
+[C]The chips and the salsa are [F]gone
+[C]Now we know why [F]J.T. sang [C]oh [G7]Mexi[C]co
+[F]We're two days south of the [G7]border
+[C]Feeling too good to care [F]why
+These [C]Mexican minutes get [G7]longer and longer
+As the days goes [C]by
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [G7]We're dropping our worries and pickin’ up [C]espanol
 [G7]Down here the sunsets are red the [C]tequila is gold
 [F]Life is sublime here on [G7]Mexican time
@@ -49,7 +29,7 @@ As the days goes [C]by
 Don't [G7]be concerned
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [F]We're down to the worm in the [G7]bottle
 [C]The chips and the salsa are [F]gone
 [C]Now we know why [F]J.T. sang [C]oh [G7]Mexi[C]co
@@ -57,9 +37,19 @@ Don't [G7]be concerned
 [C]Feeling too good to care [F]why
 These [C]Mexican minutes get [G7]longer and longer
 As the days goes [C]by
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+[F]We're down to the worm in the [G7]bottle
+[C]The chips and the salsa are [F]gone
+[C]Now we know why [F]J.T. sang [C]oh [G7]Mexi[C]co
+[F]We're two days south of the [G7]border
+[C]Feeling too good to care [F]why
+These [C]Mexican minutes get [G7]longer and longer
+As the days goes [C]by
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 These Mexican minutes get [G7]longer and longer
 As the days goes [C]by
 {end_of_verse}

@@ -9,41 +9,34 @@
 [G7]They knew His heart would never beat [C]again
 {end_of_verse}
 
-{start_of_chorus}
-[G7]Then love love rolled away the [C]stone
-[F]And He rose from the ashes where He [C]lay
-[F]His Heavenly Father had come to take Him home
-[C]And love love [G7]rolled the stone [C]away
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[G7]Then love love rolled away the [C]stone
-[F]And He rose from the ashes where He [C]lay
-[F]His Heavenly Father had come to take Him home
-[C]And love love [G7]rolled the stone [C]away
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[G7]Then love love rolled away the [C]stone
-[F]And He rose from the ashes where He [C]lay
-[F]His Heavenly Father had come to take Him home
-[C]And love love [G7]rolled the stone [C]away
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[G7]Then love love rolled away the [C]stone
+[F]And He rose from the ashes where He [C]lay
+[F]His Heavenly Father had come to take Him home
+[C]And love love [G7]rolled the stone [C]away
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [F]The angels gathered round Him took him by the [C]hand
 [G7]Jesus knew His earthly work was [C]done
 [F]When the gates of Heaven opened into the promise [C]land
 [G7]Glory to the Father and the [C]Son
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [G7]Then love love rolled away the [C]stone
 [F]And He rose from the ashes where He [C]lay
 [F]His Heavenly Father had come to take Him home
 [C]And love love [G7]rolled the stone [C]away
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+[G7]Then love love rolled away the [C]stone
+[F]And He rose from the ashes where He [C]lay
+[F]His Heavenly Father had come to take Him home
+[C]And love love [G7]rolled the stone [C]away
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [G7]And love love rolled the stone [C]away
 {end_of_verse}

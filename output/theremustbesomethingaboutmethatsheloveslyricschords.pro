@@ -9,44 +9,37 @@
 [D7]There must be something about me that she [G]loves
 {end_of_verse}
 
-{start_of_chorus}
-There must be something about me that she loves
-[D7]There must be something about me that she loves (that she loves)
-[G]I can tell the way she's smilin' when we're walking [C]hand in [G]hand
-[C]There must be [D7]something about me that she [G]loves
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-There must be something about me that she loves
-[D7]There must be something about me that she loves (that she loves)
-[G]I can tell the way she's smilin' when we're walking [C]hand in [G]hand
-[C]There must be [D7]something about me that she [G]loves
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-There must be something about me that she loves
-[D7]There must be something about me that she loves (that she loves)
-[G]I can tell the way she's smilin' when we're walking [C]hand in [G]hand
-[C]There must be [D7]something about me that she [G]loves
-{end_of_chorus}
-
-{start_of_chorus: Repeat 3}
-There must be something about me that she loves
-[D7]There must be something about me that she loves (that she loves)
-[G]I can tell the way she's smilin' when we're walking [C]hand in [G]hand
-[C]There must be [D7]something about me that she [G]loves
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+There must be something about me that she loves
+[D7]There must be something about me that she loves (that she loves)
+[G]I can tell the way she's smilin' when we're walking [C]hand in [G]hand
+[C]There must be [D7]something about me that she [G]loves
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [C]I can't fathom why she's always here when I come home at [G]night
 [D7]There must be something about me that she [G]loves
 [C]In the hard times in the tired times Lord knows she treats me [G]right
 [D7]There must be something about me that she [G]loves
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 There must be something about me that she loves
 [D7]There must be something about me that she loves (that she loves)
 [G]I can tell the way she's smilin' when we're walking [C]hand in [G]hand
 [C]There must be [D7]something about me that she [G]loves
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+There must be something about me that she loves
+[D7]There must be something about me that she loves (that she loves)
+[G]I can tell the way she's smilin' when we're walking [C]hand in [G]hand
+[C]There must be [D7]something about me that she [G]loves
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+There must be something about me that she loves
+[D7]There must be something about me that she loves (that she loves)
+[G]I can tell the way she's smilin' when we're walking [C]hand in [G]hand
+[C]There must be [D7]something about me that she [G]loves
+{end_of_verse}

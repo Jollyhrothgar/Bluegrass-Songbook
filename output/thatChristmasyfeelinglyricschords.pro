@@ -10,28 +10,14 @@ And every[C7]body's holdin' [F]hands
 We've got that [G7]Christmasy feeling [C]again 
 {end_of_verse}
 
-{start_of_chorus}
-Singin' Joy To The World and Here Comes Santa [G7]Claus 
-Momma's bakin' turkey and daddy's makin' popcorn [C]balls 
-And sister's hangin' mistletoe there's [C7]good will to all [F]men 
-We've got that [G7]Christmasy feeling [C]again  
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Singin' Joy To The World and Here Comes Santa [G7]Claus 
-Momma's bakin' turkey and daddy's makin' popcorn [C]balls 
-And sister's hangin' mistletoe there's [C7]good will to all [F]men 
-We've got that [G7]Christmasy feeling [C]again  
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Singin' Joy To The World and Here Comes Santa [G7]Claus 
-Momma's bakin' turkey and daddy's makin' popcorn [C]balls 
-And sister's hangin' mistletoe there's [C7]good will to all [F]men 
-We've got that [G7]Christmasy feeling [C]again  
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Singin' Joy To The World and Here Comes Santa [G7]Claus 
+Momma's bakin' turkey and daddy's makin' popcorn [C]balls 
+And sister's hangin' mistletoe there's [C7]good will to all [F]men 
+We've got that [G7]Christmasy feeling [C]again  
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 There's happiness in my heart with Christmas on its [G7]way 
 With the family all back together again oh what a happy [C]day 
 I hope it snows and the north wind blows 
@@ -39,9 +25,16 @@ My [C7]boy wants a little toy [F]train
 We've got that [G7]Christmasy feeling [C]again 
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Singin' Joy To The World and Here Comes Santa [G7]Claus 
 Momma's bakin' turkey and daddy's makin' popcorn [C]balls 
 And sister's hangin' mistletoe there's [C7]good will to all [F]men 
 We've got that [G7]Christmasy feeling [C]again  
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Singin' Joy To The World and Here Comes Santa [G7]Claus 
+Momma's bakin' turkey and daddy's makin' popcorn [C]balls 
+And sister's hangin' mistletoe there's [C7]good will to all [F]men 
+We've got that [G7]Christmasy feeling [C]again  
+{end_of_verse}

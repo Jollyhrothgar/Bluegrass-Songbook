@@ -16,49 +16,42 @@ The [Dm]natural conclusion I'm [C]about to realize
 [A7]This is the beginning or the [Dm]end
 {end_of_verse}
 
-{start_of_chorus}
-There's a [A#7]light at the [C]end of the [Am]tunnel I can [Dm]see
-[A#7]Now I'm not so [A7]sure that's the [Dm]way
-[A#7]I still might find a [C]way to change [Am]where I'll be [Dm]bound tomorrow
-[A#7]But I'm never gonna [A7]wake up yester[Dm]day
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-There's a [A#7]light at the [C]end of the [Am]tunnel I can [Dm]see
-[A#7]Now I'm not so [A7]sure that's the [Dm]way
-[A#7]I still might find a [C]way to change [Am]where I'll be [Dm]bound tomorrow
-[A#7]But I'm never gonna [A7]wake up yester[Dm]day
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-There's a [A#7]light at the [C]end of the [Am]tunnel I can [Dm]see
-[A#7]Now I'm not so [A7]sure that's the [Dm]way
-[A#7]I still might find a [C]way to change [Am]where I'll be [Dm]bound tomorrow
-[A#7]But I'm never gonna [A7]wake up yester[Dm]day
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+There's a [A#7]light at the [C]end of the [Am]tunnel I can [Dm]see
+[A#7]Now I'm not so [A7]sure that's the [Dm]way
+[A#7]I still might find a [C]way to change [Am]where I'll be [Dm]bound tomorrow
+[A#7]But I'm never gonna [A7]wake up yester[Dm]day
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 There's no uneasy feeling [Gm]and no disbelieving
 This is something good there's got to be a [Dm]sign
 Back there in the darkness I see [Gm]nothing I'd be leaving
 Why don't I look back on anything as [Dm]mine
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Am I [C]looking at tomorrow or is it [Gm]back the other way
 [D]Or is where I am where I'm supposed to [A#7]be
 A [Dm]voice of reassurance says it's [C]just another day
 But the [A7]voice inside my head don't sound like [Dm]me
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 There's a [A#7]light at the [C]end of the [Am]tunnel I can [Dm]see
 [A#7]Now I'm not so [A7]sure that's the [Dm]way
 [A#7]I still might find a [C]way to change [Am]where I'll be [Dm]bound tomorrow
 [A#7]But I'm never gonna [A7]wake up yester[Dm]day
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 3}
+There's a [A#7]light at the [C]end of the [Am]tunnel I can [Dm]see
+[A#7]Now I'm not so [A7]sure that's the [Dm]way
+[A#7]I still might find a [C]way to change [Am]where I'll be [Dm]bound tomorrow
+[A#7]But I'm never gonna [A7]wake up yester[Dm]day
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 No [A#7]I'm never gonna [A7]wake up yester[Dm]day 
 No [A#7]I'm never gonna wake [A7]up  [Dm]
 {end_of_verse}

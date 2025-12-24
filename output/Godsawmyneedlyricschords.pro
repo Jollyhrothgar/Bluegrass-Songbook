@@ -16,44 +16,37 @@ But like [Em]Paul I was travel[C]ing and [G]blinded [C]
 Till I [G]saw the light the [D7]truth and the [G]way
 {end_of_verse}
 
-{start_of_chorus}
-In the darkness [C]God saw my [G]need
-Saw my sorrow my [Em]lust and my [D7]greed
-Just one [G]touch of His [C]hand I was [G]free
-In my darkness [D7]God saw my [G]need
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-In the darkness [C]God saw my [G]need
-Saw my sorrow my [Em]lust and my [D7]greed
-Just one [G]touch of His [C]hand I was [G]free
-In my darkness [D7]God saw my [G]need
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-In the darkness [C]God saw my [G]need
-Saw my sorrow my [Em]lust and my [D7]greed
-Just one [G]touch of His [C]hand I was [G]free
-In my darkness [D7]God saw my [G]need
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+In the darkness [C]God saw my [G]need
+Saw my sorrow my [Em]lust and my [D7]greed
+Just one [G]touch of His [C]hand I was [G]free
+In my darkness [D7]God saw my [G]need
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I could name you every book in the [D7]bible
 And I knew all the pretty words it took to [G]pray
 But like [Em]Zacchaeus I was [C]short on things that [G]mattered
 Still the [A7]Lord stopped in at my house one [D7]day
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Ah it's [G]a thin thin line between a [D7]good man
 And one who knows he’s been [G]saved
 Like [Em]Lazarus I’m [C]now a friend of [G]Jesus [C]
 And this [G]body is all I'm [D7]taking to the [G]grave
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 In the darkness [C]God saw my [G]need
 Saw my sorrow my [Em]lust and my [D7]greed
 Just one [G]touch of His [C]hand I was [G]free
 In my darkness [D7]God saw my [G]need
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+In the darkness [C]God saw my [G]need
+Saw my sorrow my [Em]lust and my [D7]greed
+Just one [G]touch of His [C]hand I was [G]free
+In my darkness [D7]God saw my [G]need
+{end_of_verse}

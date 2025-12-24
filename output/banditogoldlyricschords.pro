@@ -16,58 +16,51 @@ But the [F]pastures all have died and [C]McLennan Creek runs [Am]dry
 [F]Son I’ve got to [G7]sell Bandito [C]Gold
 {end_of_verse}
 
-{start_of_chorus}
-Bandito [F]Gold think of all the mighty rivers we have crossed
-And all the mountains we have [C]climbed 
-Bandito [F]Gold think of all the outlaw bands 
-That we’ve [D7]captured single handed in our [G7]minds
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Bandito [F]Gold think of all the mighty rivers we have crossed
-And all the mountains we have [C]climbed 
-Bandito [F]Gold think of all the outlaw bands 
-That we’ve [D7]captured single handed in our [G7]minds
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Bandito [F]Gold think of all the mighty rivers we have crossed
-And all the mountains we have [C]climbed 
-Bandito [F]Gold think of all the outlaw bands 
-That we’ve [D7]captured single handed in our [G7]minds
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Bandito [F]Gold think of all the mighty rivers we have crossed
+And all the mountains we have [C]climbed 
+Bandito [F]Gold think of all the outlaw bands 
+That we’ve [D7]captured single handed in our [G7]minds
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [C]Thank the Lord that [G7]spring we got the [C]rain
 With [F]thunder storms and buckets full it [C]came
 Then the [F]prairie flowers bloomed and [C]McLennan Creek ran [Am]full
 And the [F]pastures turn to a [G7]brilliant Kelly [C]green 
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 And the first of May our [G7]old mare Dixie [C]foaled
 Four [F]white socks and a pretty yellow [C]colt
 With [F]pride we watched him grow until [C]now he’s ten years [Am]old
 But [F]he never has [G7]replaced Bandito [C]Gold
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Bandito [F]Gold think of all the mighty rivers we have crossed
 And all the mountains we have [C]climbed 
 Bandito [F]Gold think of all the outlaw bands 
 That we’ve [D7]captured single handed in our [G7]minds
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 6}
 It’s my turn to ride my [G7]horse is in chute [C]five
 And [F]I’ve checked the rein and pulled my saddle [C]tight
 Way [F]out in Idaho at the [C]Twin Falls [Am]Rodeo
 I’ve [F]drawn the outlaw [G7]horse Bandito [C]Gold
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Bandito [F]Gold think of all the mighty rivers we have crossed
 And all the mountains we have [C]climbed 
 Bandito [F]Gold think of all the outlaw bands 
 That we’ve [D7]captured single handed in our [G7]minds
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Bandito [F]Gold think of all the mighty rivers we have crossed
+And all the mountains we have [C]climbed 
+Bandito [F]Gold think of all the outlaw bands 
+That we’ve [D7]captured single handed in our [G7]minds
+{end_of_verse}

@@ -9,41 +9,34 @@ I'm ready to [C]accept some blame
 So [G]let's back up [D7]to yester[G]day
 {end_of_verse}
 
-{start_of_chorus}
-Let's get back in love back to [C]dreaming of
-All those [G]little things we used to [D7]do
-Let's start [G]holding hands let's start [C]making plans
-Honey [G]let's get [D7]back to me and [G]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Let's get back in love back to [C]dreaming of
-All those [G]little things we used to [D7]do
-Let's start [G]holding hands let's start [C]making plans
-Honey [G]let's get [D7]back to me and [G]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Let's get back in love back to [C]dreaming of
-All those [G]little things we used to [D7]do
-Let's start [G]holding hands let's start [C]making plans
-Honey [G]let's get [D7]back to me and [G]you
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Let's get back in love back to [C]dreaming of
+All those [G]little things we used to [D7]do
+Let's start [G]holding hands let's start [C]making plans
+Honey [G]let's get [D7]back to me and [G]you
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 It's not like it was when we [C]fell in love
 [G]When all we had was [D7]enough
 Well I [G]don't like the blues I like [C]love that's true
 Honey [G]let's get [D7]back to me and [G]you
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Let's get back in love back to [C]dreaming of
 All those [G]little things we used to [D7]do
 Let's start [G]holding hands let's start [C]making plans
 Honey [G]let's get [D7]back to me and [G]you
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+Let's get back in love back to [C]dreaming of
+All those [G]little things we used to [D7]do
+Let's start [G]holding hands let's start [C]making plans
+Honey [G]let's get [D7]back to me and [G]you
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Well honey get on [D7]back to me and [G]you
 {end_of_verse}

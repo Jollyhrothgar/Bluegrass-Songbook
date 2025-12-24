@@ -15,37 +15,30 @@ I've been tied up and tied down with the [D7]rednecks
 And I don’t feel at home on the [G]range
 {end_of_verse}
 
-{start_of_chorus}
-[C]Three times I married a [G]wrangler
-[C]And three times I got a di[D7]vorce
-And the [C]more I see of these [G]cowboys
-The [D7]more I think of their [G]horse
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Three times I married a [G]wrangler
-[C]And three times I got a di[D7]vorce
-And the [C]more I see of these [G]cowboys
-The [D7]more I think of their [G]horse
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Three times I married a [G]wrangler
-[C]And three times I got a di[D7]vorce
-And the [C]more I see of these [G]cowboys
-The [D7]more I think of their [G]horse
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]Three times I married a [G]wrangler
+[C]And three times I got a di[D7]vorce
+And the [C]more I see of these [G]cowboys
+The [D7]more I think of their [G]horse
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I’ve been down to Billy Bob’s [D7]Texas
 And I’ve danced to some big cowboy [G]bands
 I've had my toes stepped on at [D7]Gilley's
 And I’ve heard all the bull I can [G]stand
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]Three times I married a [G]wrangler
 [C]And three times I got a di[D7]vorce
 And the [C]more I see of these [G]cowboys
 The [D7]more I think of their [G]horse
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C]Three times I married a [G]wrangler
+[C]And three times I got a di[D7]vorce
+And the [C]more I see of these [G]cowboys
+The [D7]more I think of their [G]horse
+{end_of_verse}

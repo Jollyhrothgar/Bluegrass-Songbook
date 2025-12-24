@@ -9,19 +9,11 @@
 [F]You take off your [C]ring and go to [D7]town
 {end_of_verse}
 
-{start_of_chorus}
-Lookin' for a good time
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Lookin' for a good time
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Lookin' for a good time
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Lookin' for a good time
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [G]Jeannie Marie you were a [F]lady
 [C]You were a lady when I married [G]you
 [F]Jeannie Marie you were a lady
@@ -30,17 +22,21 @@ Lookin' for a good time
 [G]When we kissed goodbye you were a lady
 {end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 [F]Jeannie are you [C]really the lady that I [G]see
 [F]Or are you something [C]different than you appear to [G]be
 [F]I won't stop [C]believing in you [G]now
 [F]Jeannie if you'll [C]only tell me [D7]how
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Do the men all know you
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Lookin' for a good time
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Lookin' for a good time
+{end_of_verse}

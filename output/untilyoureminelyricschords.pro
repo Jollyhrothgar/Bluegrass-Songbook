@@ -16,46 +16,38 @@ Cause I [C]spend a whole lotta [F]time
 And I'll [C]spend a whole lot [G7]more until you're [C]mine
 {end_of_verse}
 
-{start_of_chorus}
-Un[F]til you're mine I won't have time for [C]much
-Un[F]til you're mine I'm a workin' just to win your [C]touch
-I gotta [F]lotta love a hidden [G7]away
-And that's [C]exactly where it's gonna [F]stay
-Until you're [G7]mine oh until you're mine
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Un[F]til you're mine I won't have time for [C]much
-Un[F]til you're mine I'm a workin' just to win your [C]touch
-I gotta [F]lotta love a hidden [G7]away
-And that's [C]exactly where it's gonna [F]stay
-Until you're [G7]mine oh until you're mine
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Un[F]til you're mine I won't have time for [C]much
-Un[F]til you're mine I'm a workin' just to win your [C]touch
-I gotta [F]lotta love a hidden [G7]away
-And that's [C]exactly where it's gonna [F]stay
-Until you're [G7]mine oh until you're mine
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Un[F]til you're mine I won't have time for [C]much
+Un[F]til you're mine I'm a workin' just to win your [C]touch
+I gotta [F]lotta love a hidden [G7]away
+And that's [C]exactly where it's gonna [F]stay
+Until you're [G7]mine oh until you're mine
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Well I'm [C]workin' workin' endlessly
 To make to make you notice [G7]me
 Well I [C]tried a million [F]times
 And I would [C]try a million [G7]more until you're [C]mine
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Un[F]til you're mine I won't have time for [C]much
 Un[F]til you're mine I'm a workin' just to win your [C]touch
 I gotta [F]lotta love a hidden [G7]away
 And that's [C]exactly where it's gonna [F]stay
 Until you're [G7]mine oh until you're mine
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+Un[F]til you're mine I won't have time for [C]much
+Un[F]til you're mine I'm a workin' just to win your [C]touch
+I gotta [F]lotta love a hidden [G7]away
+And that's [C]exactly where it's gonna [F]stay
+Until you're [G7]mine oh until you're mine
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 Un[F]til you're [G7]mine oh baby until you're mine
 Un[F]til you're [G7]mine oh until you're mine
 {end_of_verse}

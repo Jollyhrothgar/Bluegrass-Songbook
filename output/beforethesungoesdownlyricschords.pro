@@ -13,37 +13,17 @@ But I’ll bet money that you’ll be back
 [D7]Before the sun goes [G]down
 {end_of_verse}
 
-{start_of_chorus}
-[C]Before the sun goes down 
-[G]You’ll be all ready for some lovin’
-You’ll run to your daddy 
-For some kissin’ and huggin’
-And I’ll be waitin’ [C]around
-For I [G]know you’ll be home 
-[D7]Before the sun goes [G]down
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Before the sun goes down 
-[G]You’ll be all ready for some lovin’
-You’ll run to your daddy 
-For some kissin’ and huggin’
-And I’ll be waitin’ [C]around
-For I [G]know you’ll be home 
-[D7]Before the sun goes [G]down
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Before the sun goes down 
-[G]You’ll be all ready for some lovin’
-You’ll run to your daddy 
-For some kissin’ and huggin’
-And I’ll be waitin’ [C]around
-For I [G]know you’ll be home 
-[D7]Before the sun goes [G]down
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[C]Before the sun goes down 
+[G]You’ll be all ready for some lovin’
+You’ll run to your daddy 
+For some kissin’ and huggin’
+And I’ll be waitin’ [C]around
+For I [G]know you’ll be home 
+[D7]Before the sun goes [G]down
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Honey there ain’t nothing else in the book 
 That you ain’t said to me      
 All kinds of names and low down things
@@ -54,7 +34,7 @@ But you’ll cool off come a draggin’ it back
 [D7]Before the sun goes [G]down
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [C]Before the sun goes down 
 [G]You’ll be all ready for some lovin’
 You’ll run to your daddy 
@@ -62,4 +42,14 @@ For some kissin’ and huggin’
 And I’ll be waitin’ [C]around
 For I [G]know you’ll be home 
 [D7]Before the sun goes [G]down
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[C]Before the sun goes down 
+[G]You’ll be all ready for some lovin’
+You’ll run to your daddy 
+For some kissin’ and huggin’
+And I’ll be waitin’ [C]around
+For I [G]know you’ll be home 
+[D7]Before the sun goes [G]down
+{end_of_verse}

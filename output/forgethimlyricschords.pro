@@ -12,25 +12,13 @@ When he speaks your [C]name
 [F]Please baby don't let him win
 {end_of_verse}
 
-{start_of_chorus}
-[C]Forget him [F]forget him
-[G7]He'll break your heart if you [C]let him
-[G7]Baby please [C]forget him 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Forget him [F]forget him
-[G7]He'll break your heart if you [C]let him
-[G7]Baby please [C]forget him 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Forget him [F]forget him
-[G7]He'll break your heart if you [C]let him
-[G7]Baby please [C]forget him 
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[C]Forget him [F]forget him
+[G7]He'll break your heart if you [C]let him
+[G7]Baby please [C]forget him 
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 He plays a kind of a [F]game 
 That can only [C]hurt you
 He'll promise love that won't [F]die 
@@ -40,8 +28,14 @@ But he'll let you [C]down
 [F]Don't let him take you away
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [C]Forget him [F]forget him
 [G7]He'll break your heart if you [C]let him
 [G7]Baby please [C]forget him 
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[C]Forget him [F]forget him
+[G7]He'll break your heart if you [C]let him
+[G7]Baby please [C]forget him 
+{end_of_verse}

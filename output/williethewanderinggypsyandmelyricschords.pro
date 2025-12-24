@@ -16,44 +16,37 @@ My [G]woman's tired with an [C]overdue [G]baby
 Willie keeps yelling hey [D7]gypsy let's [G]go
 {end_of_verse}
 
-{start_of_chorus}
-[D7]Willie you're wild as a [C]Texas blue [G]norther
-[D7]Ready rolled from the same [C]makin's as [G]me
-I reckon we're gonna ramble till [C]hell freezes [G]over
-Willie the wandering [D7]gypsy and [G]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[D7]Willie you're wild as a [C]Texas blue [G]norther
-[D7]Ready rolled from the same [C]makin's as [G]me
-I reckon we're gonna ramble till [C]hell freezes [G]over
-Willie the wandering [D7]gypsy and [G]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[D7]Willie you're wild as a [C]Texas blue [G]norther
-[D7]Ready rolled from the same [C]makin's as [G]me
-I reckon we're gonna ramble till [C]hell freezes [G]over
-Willie the wandering [D7]gypsy and [G]me
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[D7]Willie you're wild as a [C]Texas blue [G]norther
+[D7]Ready rolled from the same [C]makin's as [G]me
+I reckon we're gonna ramble till [C]hell freezes [G]over
+Willie the wandering [D7]gypsy and [G]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Ladies we surely will [C]take off your favors
 And [G]we'll surely warn you there never will [D7]be
 A [G]single soul living that could [C]put brand or [G]handle
 On Willie the wandering [D7]gypsy and [G]me
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Dance on the mountain [C]shout in the canyons
 [G]Swarm in a loose heard like a wild buffa[D7]lo
 [G]Jamming our heads full of [C]figures and [G]angles
 And telling us stuff that we [D7]already [G]know
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [D7]Willie you're wild as a [C]Texas blue [G]norther
 [D7]Ready rolled from the same [C]makin's as [G]me
 I reckon we're gonna ramble till [C]hell freezes [G]over
 Willie the wandering [D7]gypsy and [G]me
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[D7]Willie you're wild as a [C]Texas blue [G]norther
+[D7]Ready rolled from the same [C]makin's as [G]me
+I reckon we're gonna ramble till [C]hell freezes [G]over
+Willie the wandering [D7]gypsy and [G]me
+{end_of_verse}

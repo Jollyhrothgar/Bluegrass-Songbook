@@ -9,37 +9,30 @@ But [C]Jesus came to me and [F]by His grace I'm free
 [C]Now it's different [G7]oh so different [C]now
 {end_of_verse}
 
-{start_of_chorus}
-It's different [G7]now since Jesus saved my [C]soul
-So different [G7]now since by His blood I’m [C]whole
-Ole Satan had to flee when [F]Jesus rescued me
-[C]Now it's different [G7]oh so different [C]now
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-It's different [G7]now since Jesus saved my [C]soul
-So different [G7]now since by His blood I’m [C]whole
-Ole Satan had to flee when [F]Jesus rescued me
-[C]Now it's different [G7]oh so different [C]now
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-It's different [G7]now since Jesus saved my [C]soul
-So different [G7]now since by His blood I’m [C]whole
-Ole Satan had to flee when [F]Jesus rescued me
-[C]Now it's different [G7]oh so different [C]now
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+It's different [G7]now since Jesus saved my [C]soul
+So different [G7]now since by His blood I’m [C]whole
+Ole Satan had to flee when [F]Jesus rescued me
+[C]Now it's different [G7]oh so different [C]now
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 I went to church one day to [F]hear them sing and pray
 The [F]preacher firmly plowed the gospel [G7]blood
 He [C]said you must repent so [F]down the aisle I went  
 [C]Now it's different [G7]oh so different [C]now
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 It's different [G7]now since Jesus saved my [C]soul
 So different [G7]now since by His blood I’m [C]whole
 Ole Satan had to flee when [F]Jesus rescued me
 [C]Now it's different [G7]oh so different [C]now
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+It's different [G7]now since Jesus saved my [C]soul
+So different [G7]now since by His blood I’m [C]whole
+Ole Satan had to flee when [F]Jesus rescued me
+[C]Now it's different [G7]oh so different [C]now
+{end_of_verse}

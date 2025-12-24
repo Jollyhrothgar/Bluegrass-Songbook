@@ -42,6 +42,13 @@ And I hope [F]Hank's on the jukebox Bob [C]Wills has a fiddle in his [A7]hand
 And I hope [C]heaven has a honky tonk [G7]with a five piece [C]band
 {end_of_verse}
 
+{start_of_verse: Verse 3}
+And I hope [F]heaven has a honky tonk [C]with a five piece band
+[G7]Cowboy boots and blue jeans are [C]part of the master plan
+And I hope [F]Hank's on the jukebox Bob [C]Wills has a fiddle in his [A7]hand
+And I hope [C]heaven has a honky tonk [G7]with a five piece [C]band
+{end_of_verse}
+
 {start_of_verse: Verse 5}
 [F]I hope [C]heaven has a honky tonk [G7]with a five piece [C]band
 {end_of_verse}

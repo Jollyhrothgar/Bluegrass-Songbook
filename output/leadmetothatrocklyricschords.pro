@@ -43,3 +43,10 @@ Oh [G7]lead me to that rock yes Lord [C]lead me to that rock
 Why don't you [F]lead me to that rock that is [C]higher than [D7]I
 [C]Thou hast been a [G7]shelter for [C]me
 {end_of_verse}
+
+{start_of_verse: Verse 1}
+[C]Why don't you [F]lead me to that rock that is [C]higher than I
+Oh [G7]lead me to that rock yes Lord [C]lead me to that rock
+Why don't you [F]lead me to that rock that is [C]higher than [D7]I
+[C]Thou hast been a [G7]shelter for [C]me
+{end_of_verse}

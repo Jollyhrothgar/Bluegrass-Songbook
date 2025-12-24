@@ -16,41 +16,34 @@ How momma [C]sounded like an angel on those [F]high soprano notes
 When the [C]roll is called up [G7]yonder I'll be [C]there
 {end_of_verse}
 
-{start_of_chorus}
-Looking back now that little mountain [F]church house
-Has [C]become my life's corner[G7]stone
-It was [C]there in that little mountain [F]church house
-I first [C]heard the words [G7]I based my life [C]upon
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Looking back now that little mountain [F]church house
-Has [C]become my life's corner[G7]stone
-It was [C]there in that little mountain [F]church house
-I first [C]heard the words [G7]I based my life [C]upon
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Looking back now that little mountain [F]church house
-Has [C]become my life's corner[G7]stone
-It was [C]there in that little mountain [F]church house
-I first [C]heard the words [G7]I based my life [C]upon
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Looking back now that little mountain [F]church house
+Has [C]become my life's corner[G7]stone
+It was [C]there in that little mountain [F]church house
+I first [C]heard the words [G7]I based my life [C]upon
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 At the all day Sunday singings and [F]dinner on the ground
 [C]Many were the souls that were [G7]revived
 While the [C]bothers and the sisters who've gone [F]on to Gloryland
 Slept in [C]peace in the [G7]maple grove [C]nearby
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Looking back now that little mountain [F]church house
 Has [C]become my life's corner[G7]stone
 It was [C]there in that little mountain [F]church house
 I first [C]heard the words [G7]I based my life [C]upon
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+Looking back now that little mountain [F]church house
+Has [C]become my life's corner[G7]stone
+It was [C]there in that little mountain [F]church house
+I first [C]heard the words [G7]I based my life [C]upon
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 I first heard the words [G7]I based my life [C]upon
 {end_of_verse}

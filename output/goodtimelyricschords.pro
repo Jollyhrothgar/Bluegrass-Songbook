@@ -10,28 +10,14 @@ For a [F]good time[A]   [F]
 I need a [C]good time
 {end_of_verse}
 
-{start_of_chorus}
-Yea I've been [G7]workin' all week
-And I'm tired and I don't wanna sleep
-I [F]wanna have fun 
-It's time for a [C]good time
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Yea I've been [G7]workin' all week
-And I'm tired and I don't wanna sleep
-I [F]wanna have fun 
-It's time for a [C]good time
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Yea I've been [G7]workin' all week
-And I'm tired and I don't wanna sleep
-I [F]wanna have fun 
-It's time for a [C]good time
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Yea I've been [G7]workin' all week
+And I'm tired and I don't wanna sleep
+I [F]wanna have fun 
+It's time for a [C]good time
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 I cashed my check cleaned my truck
 Put on my hat forgot about work
 Sun goin' down head across town
@@ -40,14 +26,14 @@ Good [F]time ah [A]   [F]
 I need a [C]good time
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Yea I've been [G7]workin' all week
 And I'm tired and I don't wanna sleep
 I [F]wanna have fun 
 It's time for a [C]good time
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 Pig in the ground beer on ice
 Just like ole Hank taught us about
 Singin' along Bocephus songs
@@ -56,14 +42,14 @@ Rowdy friends all night long
 Lord we're having a [C]good time
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Yea I've been [G7]workin' all week
 And I'm tired and I don't wanna sleep
 I [F]wanna have fun 
 It's time for a [C]good time
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Heel toe dosey doe
 Scootin' our boots swingin' doors
 B and D Kix and Dunn
@@ -72,28 +58,12 @@ Honkin' tonk heaven double shotgun
 Lord we're havin' a [C]good time
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Yea I've been [G7]workin' all week
 And I'm tired and I don't wanna sleep
 I [F]wanna have fun 
 It's time for a [C]good time
-{end_of_chorus}
-
-{start_of_verse: Verse 5}
-Shot of Tequila beer on tap
-Sweet southern woman set on my lap
-G with an O O with a D
-T with an I and an M and an E
-And a [F]good time [A]   [F]
-Shew [C]good time
 {end_of_verse}
-
-{start_of_chorus}
-Yea I've been [G7]workin' all week
-And I'm tired and I don't wanna sleep
-I [F]wanna have fun 
-It's time for a [C]good time
-{end_of_chorus}
 
 {start_of_verse: Verse 6}
 Shot of Tequila beer on tap
@@ -104,21 +74,37 @@ And a [F]good time [A]   [F]
 Shew [C]good time
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Yea I've been [G7]workin' all week
 And I'm tired and I don't wanna sleep
 I [F]wanna have fun 
 It's time for a [C]good time
-{end_of_chorus}
-
-{start_of_chorus}
-Yea I've been [G7]workin' all week
-And I'm tired and I don't wanna sleep
-I [F]wanna have fun 
-It's time for a [C]good time
-{end_of_chorus}
+{end_of_verse}
 
 {start_of_verse: Verse 7}
+Shot of Tequila beer on tap
+Sweet southern woman set on my lap
+G with an O O with a D
+T with an I and an M and an E
+And a [F]good time [A]   [F]
+Shew [C]good time
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Yea I've been [G7]workin' all week
+And I'm tired and I don't wanna sleep
+I [F]wanna have fun 
+It's time for a [C]good time
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Yea I've been [G7]workin' all week
+And I'm tired and I don't wanna sleep
+I [F]wanna have fun 
+It's time for a [C]good time
+{end_of_verse}
+
+{start_of_verse: Verse 8}
 Twelve o'clock two o'clock three o'clock four
 Five o'clock we know were that's gonna go
 Closing the door shuttin' em down
@@ -127,14 +113,21 @@ Good [F]time [A]   [F]
 Oh we're havin' a [C]good time
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Yea I've been [G7]workin' all week
 And I'm tired and I don't wanna sleep
 I [F]wanna have fun 
 It's time for a [C]good time
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 8}
+{start_of_verse: Verse 2}
+Yea I've been [G7]workin' all week
+And I'm tired and I don't wanna sleep
+I [F]wanna have fun 
+It's time for a [C]good time
+{end_of_verse}
+
+{start_of_verse: Verse 9}
 Oh yea a good time I need a good time
 Yea a [F]good [C]time
 {end_of_verse}

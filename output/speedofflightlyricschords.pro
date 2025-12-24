@@ -11,37 +11,17 @@ But as I [Dm]watched her plane [Em]disappear
 It [F]left me with no [G7]doubt
 {end_of_verse}
 
-{start_of_chorus}
-She's [C]gone into the night [Am]gone out of my [F]life
-And I'm here [G7]alone
-My [C]tears kept falling down 
-As [Am]her plane left the ground
-[F]I watched a flame go [G7]dark
-[F]Faster than speed of [Dm]flight 
-My [G7]world fell a[C]part[G7]
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-She's [C]gone into the night [Am]gone out of my [F]life
-And I'm here [G7]alone
-My [C]tears kept falling down 
-As [Am]her plane left the ground
-[F]I watched a flame go [G7]dark
-[F]Faster than speed of [Dm]flight 
-My [G7]world fell a[C]part[G7]
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-She's [C]gone into the night [Am]gone out of my [F]life
-And I'm here [G7]alone
-My [C]tears kept falling down 
-As [Am]her plane left the ground
-[F]I watched a flame go [G7]dark
-[F]Faster than speed of [Dm]flight 
-My [G7]world fell a[C]part[G7]
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+She's [C]gone into the night [Am]gone out of my [F]life
+And I'm here [G7]alone
+My [C]tears kept falling down 
+As [Am]her plane left the ground
+[F]I watched a flame go [G7]dark
+[F]Faster than speed of [Dm]flight 
+My [G7]world fell a[C]part[G7]
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 There's [C]times that I'd swear she's right next to me
 Sometimes [Am]I smell her perfume in the evening breeze
 It still [F]tears me up[G7]
@@ -51,7 +31,7 @@ Then a [Dm]clock clicking [Em]double time
 [F]Wouldn't change a [G7]thing
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 She's [C]gone into the night [Am]gone out of my [F]life
 And I'm here [G7]alone
 My [C]tears kept falling down 
@@ -59,4 +39,14 @@ As [Am]her plane left the ground
 [F]I watched a flame go [G7]dark
 [F]Faster than speed of [Dm]flight 
 My [G7]world fell a[C]part[G7]
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+She's [C]gone into the night [Am]gone out of my [F]life
+And I'm here [G7]alone
+My [C]tears kept falling down 
+As [Am]her plane left the ground
+[F]I watched a flame go [G7]dark
+[F]Faster than speed of [Dm]flight 
+My [G7]world fell a[C]part[G7]
+{end_of_verse}

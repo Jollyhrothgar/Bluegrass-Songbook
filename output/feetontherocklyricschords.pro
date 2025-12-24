@@ -25,34 +25,27 @@ Those simple words of wisdom can [C]open heaven's [G]door
 So every time I [D7]get the chance I [G]say
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 4}
 Come on put your feet on the rock [C]and your name on the [G]roll
 So when it's called up yonder you [A7]won't worry about your [D7]soul
 [G]You know your home is waiting and it's [C]something to [G]behold
 So put your feet on the rock [D7]and your name on the [G]roll
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Come on put your feet on the rock [C]and your name on the [G]roll
-So when it's called up yonder you [A7]won't worry about your [D7]soul
-[G]You know your home is waiting and it's [C]something to [G]behold
-So put your feet on the rock [D7]and your name on the [G]roll
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Come on put your feet on the rock [C]and your name on the [G]roll
-So when it's called up yonder you [A7]won't worry about your [D7]soul
-[G]You know your home is waiting and it's [C]something to [G]behold
-So put your feet on the rock [D7]and your name on the [G]roll
-{end_of_chorus}
-
-{start_of_chorus}
-Come on put your feet on the rock [C]and your name on the [G]roll
-So when it's called up yonder you [A7]won't worry about your [D7]soul
-[G]You know your home is waiting and it's [C]something to [G]behold
-So put your feet on the rock [D7]and your name on the [G]roll
-{end_of_chorus}
+{end_of_verse}
 
 {start_of_verse: Verse 4}
+Come on put your feet on the rock [C]and your name on the [G]roll
+So when it's called up yonder you [A7]won't worry about your [D7]soul
+[G]You know your home is waiting and it's [C]something to [G]behold
+So put your feet on the rock [D7]and your name on the [G]roll
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+Come on put your feet on the rock [C]and your name on the [G]roll
+So when it's called up yonder you [A7]won't worry about your [D7]soul
+[G]You know your home is waiting and it's [C]something to [G]behold
+So put your feet on the rock [D7]and your name on the [G]roll
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 Put your feet on the rock [D7]and your name on the [G]roll
 {end_of_verse}

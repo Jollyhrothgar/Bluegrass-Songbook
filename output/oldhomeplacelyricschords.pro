@@ -16,44 +16,37 @@ I thought that she would be [D7]true
 And worked in a [D7]sawmill [G]too
 {end_of_verse}
 
-{start_of_chorus}
-[D7]What have they done to the old home [G]place
-[A7]Why did they tear it [D7]down
-And [G]why did I [B7]leave my plow [C]in the [G]field
-And look for a [D7]job in the [G]town
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[D7]What have they done to the old home [G]place
-[A7]Why did they tear it [D7]down
-And [G]why did I [B7]leave my plow [C]in the [G]field
-And look for a [D7]job in the [G]town
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[D7]What have they done to the old home [G]place
-[A7]Why did they tear it [D7]down
-And [G]why did I [B7]leave my plow [C]in the [G]field
-And look for a [D7]job in the [G]town
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[D7]What have they done to the old home [G]place
+[A7]Why did they tear it [D7]down
+And [G]why did I [B7]leave my plow [C]in the [G]field
+And look for a [D7]job in the [G]town
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Well the girl ran [B7]off with [C]somebody [G]else
 The tariffs took all my [D7]pay
 [G]And here I [B7]stand where the old [C]home [G]stood
 Before they [D7]took it [G]away
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Now the geese fly [B7]south and the cold [C]wind [G]moans
 As I stand her and hang my [D7]head
 [G]I've lost my [B7]love I've [C]lost my [G]home
 And now I [D7]wish that I was [G]dead 
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [D7]What have they done to the old home [G]place
 [A7]Why did they tear it [D7]down
 And [G]why did I [B7]leave my plow [C]in the [G]field
 And look for a [D7]job in the [G]town
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[D7]What have they done to the old home [G]place
+[A7]Why did they tear it [D7]down
+And [G]why did I [B7]leave my plow [C]in the [G]field
+And look for a [D7]job in the [G]town
+{end_of_verse}

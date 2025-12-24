@@ -9,29 +9,24 @@
 [C]All I got to do is picture you and [D7]I can feel you in my [G]heart
 {end_of_verse}
 
-{start_of_chorus}
-[C]So [D7]dream of me  every time you get to feeling [G]blue
-[C]Dream of me  [D7]and I'll be dreaming of [G]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]So [D7]dream of me  every time you get to feeling [G]blue
-[C]Dream of me  [D7]and I'll be dreaming of [G]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]So [D7]dream of me  every time you get to feeling [G]blue
-[C]Dream of me  [D7]and I'll be dreaming of [G]you
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[C]So [D7]dream of me  every time you get to feeling [G]blue
+[C]Dream of me  [D7]and I'll be dreaming of [G]you
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [C]I've been a lot of places but there's just no place like [G]home
 [C]And I'm always on my way back to you every minute that I'm [D7]gone
 [G]So when you get to feeling lonely just [C]remember we won't always be [G]apart
 [C]Close your eyes and think [D7]of me and you can feel me in your [G]heart
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [C]So [D7]dream of me  every time you get to feeling [G]blue
 [C]Dream of me  [D7]and I'll be dreaming of [G]you
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[C]So [D7]dream of me  every time you get to feeling [G]blue
+[C]Dream of me  [D7]and I'll be dreaming of [G]you
+{end_of_verse}

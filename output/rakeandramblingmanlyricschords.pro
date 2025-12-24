@@ -16,50 +16,43 @@ Now its three months ago last Wednesday  [G7]since I woke up in her [C]bed
 Lord I think I love her  but it [G7]scares me half to [C]death
 {end_of_verse}
 
-{start_of_chorus}
-Cause you know [F]I'm a rake and rambling [C]man
-[F]Free as and eagle [C]flies well [F]look at me now and tell [C]me the [F]truth
-[C]Do I look like a [F]daddy to [C]you 
-Oh do I look like a [F]daddy to [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Cause you know [F]I'm a rake and rambling [C]man
-[F]Free as and eagle [C]flies well [F]look at me now and tell [C]me the [F]truth
-[C]Do I look like a [F]daddy to [C]you 
-Oh do I look like a [F]daddy to [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Cause you know [F]I'm a rake and rambling [C]man
-[F]Free as and eagle [C]flies well [F]look at me now and tell [C]me the [F]truth
-[C]Do I look like a [F]daddy to [C]you 
-Oh do I look like a [F]daddy to [C]you
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Cause you know [F]I'm a rake and rambling [C]man
+[F]Free as and eagle [C]flies well [F]look at me now and tell [C]me the [F]truth
+[C]Do I look like a [F]daddy to [C]you 
+Oh do I look like a [F]daddy to [C]you
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [C]Now she's feeling sick in the morning
 [G7]She can't get into her [C]jeans
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 I spent my last ten dollars
 [G7]And bought her a second hand [C]ring
 {end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 6}
 I start to work next Monday
 [G7]Cause I just can't let her [C]down
 {end_of_verse}
 
-{start_of_verse: Verse 6}
+{start_of_verse: Verse 7}
 I've had me some good times
 [G7]But that's all changing [C]now
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Cause you know [F]I'm a rake and rambling [C]man
 [F]Free as and eagle [C]flies well [F]look at me now and tell [C]me the [F]truth
 [C]Do I look like a [F]daddy to [C]you 
 Oh do I look like a [F]daddy to [C]you
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Cause you know [F]I'm a rake and rambling [C]man
+[F]Free as and eagle [C]flies well [F]look at me now and tell [C]me the [F]truth
+[C]Do I look like a [F]daddy to [C]you 
+Oh do I look like a [F]daddy to [C]you
+{end_of_verse}

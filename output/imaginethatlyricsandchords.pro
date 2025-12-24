@@ -9,44 +9,37 @@ In an empty bed in an empty home
 Someone to hold in my [C]arms
 {end_of_verse}
 
-{start_of_chorus}
-Imagine that how sweet it'd be 
-To have you here again with me
-Oh [F]Lord I wish I had you back 
-But [C]all I can do is [G7]imagine [C]that
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Imagine that how sweet it'd be 
-To have you here again with me
-Oh [F]Lord I wish I had you back 
-But [C]all I can do is [G7]imagine [C]that
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Imagine that how sweet it'd be 
-To have you here again with me
-Oh [F]Lord I wish I had you back 
-But [C]all I can do is [G7]imagine [C]that
-{end_of_chorus}
-
-{start_of_chorus: Repeat 3}
-Imagine that how sweet it'd be 
-To have you here again with me
-Oh [F]Lord I wish I had you back 
-But [C]all I can do is [G7]imagine [C]that
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Imagine that how sweet it'd be 
+To have you here again with me
+Oh [F]Lord I wish I had you back 
+But [C]all I can do is [G7]imagine [C]that
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 No more silence in the hall 
 No more staring at the walls
 [G]Someone to laugh with 
 Someone to share in my [C]dreams
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Imagine that how sweet it'd be 
 To have you here again with me
 Oh [F]Lord I wish I had you back 
 But [C]all I can do is [G7]imagine [C]that
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Imagine that how sweet it'd be 
+To have you here again with me
+Oh [F]Lord I wish I had you back 
+But [C]all I can do is [G7]imagine [C]that
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Imagine that how sweet it'd be 
+To have you here again with me
+Oh [F]Lord I wish I had you back 
+But [C]all I can do is [G7]imagine [C]that
+{end_of_verse}

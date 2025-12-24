@@ -10,34 +10,16 @@ To them [D7]old fiddle tunes
 Mr. band man play Sierra [G]Swing
 {end_of_verse}
 
-{start_of_chorus}
-I [C]never will forget 
-That [G]song called Faded Love
-It [A7]brings back some sweet memo[D7]ries
-We would [G]dance all night long 
-To them [D7]old fiddle tunes
-Mr. band man play Sierra [G]Swing
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I [C]never will forget 
-That [G]song called Faded Love
-It [A7]brings back some sweet memo[D7]ries
-We would [G]dance all night long 
-To them [D7]old fiddle tunes
-Mr. band man play Sierra [G]Swing
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I [C]never will forget 
-That [G]song called Faded Love
-It [A7]brings back some sweet memo[D7]ries
-We would [G]dance all night long 
-To them [D7]old fiddle tunes
-Mr. band man play Sierra [G]Swing
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+I [C]never will forget 
+That [G]song called Faded Love
+It [A7]brings back some sweet memo[D7]ries
+We would [G]dance all night long 
+To them [D7]old fiddle tunes
+Mr. band man play Sierra [G]Swing
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 When they play Sierra Swing 
 It takes me [D7]back where I come from
 Tommy Duncan singing Cotton Eyed [G]Joe
@@ -46,15 +28,24 @@ When they [D7]play them fiddle tunes
 Mr. band man play the Sierra [G]Swing
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 I [C]never will forget 
 That [G]song called Faded Love
 It [A7]brings back some sweet memo[D7]ries
 We would [G]dance all night long 
 To them [D7]old fiddle tunes
 Mr. band man play Sierra [G]Swing
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+I [C]never will forget 
+That [G]song called Faded Love
+It [A7]brings back some sweet memo[D7]ries
+We would [G]dance all night long 
+To them [D7]old fiddle tunes
+Mr. band man play Sierra [G]Swing
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [D7]Mr. band man play Sierra [G]Swing
 {end_of_verse}

@@ -22,6 +22,7 @@ analysis/
 *_summary.txt
 
 # IDE
+CLAUDE.md
 .vscode/
 .idea/
 .claude/

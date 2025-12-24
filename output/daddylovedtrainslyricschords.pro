@@ -16,37 +16,30 @@ And [F]every night she'd [C]swear he'd really [Dm]rather be at [G7]home
 He'd [F]have that faraway look he never could [G7]disguise
 {end_of_verse}
 
-{start_of_chorus}
-[F]Momma loved daddy but daddy loved [G7]trains
-The [F]steel rails controlled him like whiskey in his [G7]brain
-[C]Number two [F]diesel fuel [G7]flowed through his [C]veins
-[F]Momma loved [C]daddy but [G7]daddy loved [C]trains
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]Momma loved daddy but daddy loved [G7]trains
-The [F]steel rails controlled him like whiskey in his [G7]brain
-[C]Number two [F]diesel fuel [G7]flowed through his [C]veins
-[F]Momma loved [C]daddy but [G7]daddy loved [C]trains
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]Momma loved daddy but daddy loved [G7]trains
-The [F]steel rails controlled him like whiskey in his [G7]brain
-[C]Number two [F]diesel fuel [G7]flowed through his [C]veins
-[F]Momma loved [C]daddy but [G7]daddy loved [C]trains
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[F]Momma loved daddy but daddy loved [G7]trains
+The [F]steel rails controlled him like whiskey in his [G7]brain
+[C]Number two [F]diesel fuel [G7]flowed through his [C]veins
+[F]Momma loved [C]daddy but [G7]daddy loved [C]trains
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Now that I've grown [F]older there's some [G7]things I under[C]stand
 It [F]takes a special [C]person to [Dm]love that kind of [G7]man
 In [C]ways I guess I'm [F]different but in [G7]way's I'm just the [C]same
 I've [F]grown to love somebody like my daddy loved those [G7]trains
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [F]Momma loved daddy but daddy loved [G7]trains
 The [F]steel rails controlled him like whiskey in his [G7]brain
 [C]Number two [F]diesel fuel [G7]flowed through his [C]veins
 [F]Momma loved [C]daddy but [G7]daddy loved [C]trains
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[F]Momma loved daddy but daddy loved [G7]trains
+The [F]steel rails controlled him like whiskey in his [G7]brain
+[C]Number two [F]diesel fuel [G7]flowed through his [C]veins
+[F]Momma loved [C]daddy but [G7]daddy loved [C]trains
+{end_of_verse}

@@ -23,55 +23,48 @@ I want a [F]blue[G7]grass [C]Christmas
 It's a [D7]house filled with music of [G7]ones that I love so
 {end_of_verse}
 
-{start_of_chorus}
-I want [F]green on the [G7]Christmas tree [C]white on the ground
-The [F]tinsel of [G7]silver and [C]gold
-But [F]if I had one [G7]wish to [Em]bring me Christmas [Am]cheer
-I'd want a [D7]bluegrass [G7]Christmas this [C]year
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I want [F]green on the [G7]Christmas tree [C]white on the ground
-The [F]tinsel of [G7]silver and [C]gold
-But [F]if I had one [G7]wish to [Em]bring me Christmas [Am]cheer
-I'd want a [D7]bluegrass [G7]Christmas this [C]year
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I want [F]green on the [G7]Christmas tree [C]white on the ground
-The [F]tinsel of [G7]silver and [C]gold
-But [F]if I had one [G7]wish to [Em]bring me Christmas [Am]cheer
-I'd want a [D7]bluegrass [G7]Christmas this [C]year
-{end_of_chorus}
-
 {start_of_verse: Verse 4}
+I want [F]green on the [G7]Christmas tree [C]white on the ground
+The [F]tinsel of [G7]silver and [C]gold
+But [F]if I had one [G7]wish to [Em]bring me Christmas [Am]cheer
+I'd want a [D7]bluegrass [G7]Christmas this [C]year
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 [G7]I want the [C]family all together with [Am]friends dropping in
 And the [F]house filled with the [G7]smell of momma's [C]pie
 I'd like to see daddy [G7]sittin' in that [Am]same old easy chair
 While [F]all the kids wait for Santa to [G7]arrive
 {end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 6}
 Let’s [C]bring out the guitars I'll [Am]play my old banjo
 Let’s [F]sing Rudolph [G7]Winter Wonder[C]land
 But don't [F]let the music [G7]stop till we [C]play Rocky [Am]Top
 [D7]Away In A Manger Little [G7]Town Of Bethlehem
 {end_of_verse}
 
-{start_of_verse: Verse 6}
+{start_of_verse: Verse 7}
 I want a [F]blue[G7]grass [C]Christmas
 [F]Just like the [G7]ones I used to [C]know
 Where the tree tops glisten and [F]children listen
 Like a [D7]family singing those old songs [G7]ones that I love so
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 4}
 I want [F]green on the [G7]Christmas tree [C]white on the ground
 The [F]tinsel of [G7]silver and [C]gold
 But [F]if I had one [G7]wish to [Em]bring me Christmas [Am]cheer
 I'd want a [D7]bluegrass [G7]Christmas this [C]year
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 7}
+{start_of_verse: Verse 4}
+I want [F]green on the [G7]Christmas tree [C]white on the ground
+The [F]tinsel of [G7]silver and [C]gold
+But [F]if I had one [G7]wish to [Em]bring me Christmas [Am]cheer
+I'd want a [D7]bluegrass [G7]Christmas this [C]year
+{end_of_verse}
+
+{start_of_verse: Verse 8}
 I'm dreaming of a [F]blue[G7]grass [C]Christmas
 {end_of_verse}

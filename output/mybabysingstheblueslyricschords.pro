@@ -27,38 +27,29 @@ And the [G7]singing just got lost along the [C]way
 Then [G7]cries herself to sleep there in the [C]dark
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 4}
 From a blessing to a curse
 Things just went from bad to worse
 Life at night worked out the way she [G7]planned
 And although her dreams were gone
 She just couldn't go back home
 To a town she knew that would not under[C]stand
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_chorus: Repeat 1}
+{start_of_verse: Verse 4}
 From a blessing to a curse
 Things just went from bad to worse
 Life at night worked out the way she [G7]planned
 And although her dreams were gone
 She just couldn't go back home
 To a town she knew that would not under[C]stand
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_chorus: Repeat 2}
+{start_of_verse: Verse 4}
 From a blessing to a curse
 Things just went from bad to worse
 Life at night worked out the way she [G7]planned
 And although her dreams were gone
 She just couldn't go back home
 To a town she knew that would not under[C]stand
-{end_of_chorus}
-
-{start_of_chorus}
-From a blessing to a curse
-Things just went from bad to worse
-Life at night worked out the way she [G7]planned
-And although her dreams were gone
-She just couldn't go back home
-To a town she knew that would not under[C]stand
-{end_of_chorus}
+{end_of_verse}

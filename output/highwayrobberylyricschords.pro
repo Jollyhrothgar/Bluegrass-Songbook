@@ -18,28 +18,14 @@ And [C]smiled like we were meant to be
 [D7]Oh he stole my heart from a movin' car
 {end_of_verse}
 
-{start_of_chorus}
-It was [G]high[A]way [G]robbery
-He [C]grabbed my heart and took off on the [D7]run
-It was [D]high[A]way [C]robbery
-He ought to do time in my [D]arms for [D7]what he's [G]done
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-It was [G]high[A]way [G]robbery
-He [C]grabbed my heart and took off on the [D7]run
-It was [D]high[A]way [C]robbery
-He ought to do time in my [D]arms for [D7]what he's [G]done
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-It was [G]high[A]way [G]robbery
-He [C]grabbed my heart and took off on the [D7]run
-It was [D]high[A]way [C]robbery
-He ought to do time in my [D]arms for [D7]what he's [G]done
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+It was [G]high[A]way [G]robbery
+He [C]grabbed my heart and took off on the [D7]run
+It was [D]high[A]way [C]robbery
+He ought to do time in my [D]arms for [D7]what he's [G]done
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 So hey officer how 'bout you under[C]standin'
 Won't you [G]turn that blue light on and help me catch that [D7]bandit
 [G]He's got something that belongs to T
@@ -47,13 +33,20 @@ Won't you [G]turn that blue light on and help me catch that [D7]bandit
 [D7]Oh it’s only right that he's mine tonight
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 It was [G]high[A]way [G]robbery
 He [C]grabbed my heart and took off on the [D7]run
 It was [D]high[A]way [C]robbery
 He ought to do time in my [D]arms for [D7]what he's [G]done
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+It was [G]high[A]way [G]robbery
+He [C]grabbed my heart and took off on the [D7]run
+It was [D]high[A]way [C]robbery
+He ought to do time in my [D]arms for [D7]what he's [G]done
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 He ought to do time in my [D]arms for [D7]what he's [G]done
 {end_of_verse}

@@ -16,47 +16,25 @@ When your daddy said [D7]son do you love her
 I'd [D7]say that's [G]right
 {end_of_verse}
 
-{start_of_chorus}
-I'd say that's [C]right on the money 
-[D7]Sure as summer in Florida sunny
-[G]I'd say that's [C]right as the rain 
-On a [D7]tin roof Texas night
-[G]I'd say that's [C]right down the middle 
-[D7]Ain't no doubt not even a little
-[G]Will I love you for the [D7]rest of my life[C] 
-I'd [D7]say that's [G]right
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I'd say that's [C]right on the money 
-[D7]Sure as summer in Florida sunny
-[G]I'd say that's [C]right as the rain 
-On a [D7]tin roof Texas night
-[G]I'd say that's [C]right down the middle 
-[D7]Ain't no doubt not even a little
-[G]Will I love you for the [D7]rest of my life[C] 
-I'd [D7]say that's [G]right
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I'd say that's [C]right on the money 
-[D7]Sure as summer in Florida sunny
-[G]I'd say that's [C]right as the rain 
-On a [D7]tin roof Texas night
-[G]I'd say that's [C]right down the middle 
-[D7]Ain't no doubt not even a little
-[G]Will I love you for the [D7]rest of my life[C] 
-I'd [D7]say that's [G]right
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+I'd say that's [C]right on the money 
+[D7]Sure as summer in Florida sunny
+[G]I'd say that's [C]right as the rain 
+On a [D7]tin roof Texas night
+[G]I'd say that's [C]right down the middle 
+[D7]Ain't no doubt not even a little
+[G]Will I love you for the [D7]rest of my life[C] 
+I'd [D7]say that's [G]right
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 If I woke up [D7]tomorrow up in heaven 
 [C]St Peter looked me in the [D7]eye
 [G]And said mister would you [D7]rather be with her[C] 
 I'd [D7]say that's [G]right
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 I'd say that's [C]right on the money 
 [D7]Sure as summer in Florida sunny
 [G]I'd say that's [C]right as the rain 
@@ -65,8 +43,19 @@ On a [D7]tin roof Texas night
 [D7]Ain't no doubt not even a little
 [G]Will I love you for the [D7]rest of my life[C] 
 I'd [D7]say that's [G]right
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+I'd say that's [C]right on the money 
+[D7]Sure as summer in Florida sunny
+[G]I'd say that's [C]right as the rain 
+On a [D7]tin roof Texas night
+[G]I'd say that's [C]right down the middle 
+[D7]Ain't no doubt not even a little
+[G]Will I love you for the [D7]rest of my life[C] 
+I'd [D7]say that's [G]right
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 [C]I'd [D7]say that's [G]right  [C]I'd [D7]say that's [G]right
 {end_of_verse}

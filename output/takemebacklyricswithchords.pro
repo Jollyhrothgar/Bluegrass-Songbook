@@ -13,28 +13,14 @@ Honey if I [Dm]have to
 I'll do what it takes to [C]hold you 
 {end_of_verse}
 
-{start_of_chorus}
-Take me take me [Dm]back
-I [G7]promise I won't hurt you any[C]more
-Take me take me [Dm]back
-[G7]Baby we'll make it like it was [C]before 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Take me take me [Dm]back
-I [G7]promise I won't hurt you any[C]more
-Take me take me [Dm]back
-[G7]Baby we'll make it like it was [C]before 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Take me take me [Dm]back
-I [G7]promise I won't hurt you any[C]more
-Take me take me [Dm]back
-[G7]Baby we'll make it like it was [C]before 
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Take me take me [Dm]back
+I [G7]promise I won't hurt you any[C]more
+Take me take me [Dm]back
+[G7]Baby we'll make it like it was [C]before 
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Do you ever think of me 
 When all the world is [Dm]sleeping
 And you're lyin' there [G7]alone 
@@ -45,9 +31,16 @@ So try to under[Dm]stand
 And you'll always be my [C]man 
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Take me take me [Dm]back
 I [G7]promise I won't hurt you any[C]more
 Take me take me [Dm]back
 [G7]Baby we'll make it like it was [C]before 
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Take me take me [Dm]back
+I [G7]promise I won't hurt you any[C]more
+Take me take me [Dm]back
+[G7]Baby we'll make it like it was [C]before 
+{end_of_verse}

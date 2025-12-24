@@ -16,42 +16,35 @@ I steered you wrong I told you lies
 [D7]I'm givin' up this cheatin' kind of [G]life
 {end_of_verse}
 
-{start_of_chorus}
-[C]Don't pack your bags don't close the [G]door
-[D7]You won't find another man who loves you more
-[G]Just one more chance I'll make it [C]right
-[G]I'm givin' up this [D7]cheatin' kind of [G]life
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Don't pack your bags don't close the [G]door
-[D7]You won't find another man who loves you more
-[G]Just one more chance I'll make it [C]right
-[G]I'm givin' up this [D7]cheatin' kind of [G]life
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Don't pack your bags don't close the [G]door
-[D7]You won't find another man who loves you more
-[G]Just one more chance I'll make it [C]right
-[G]I'm givin' up this [D7]cheatin' kind of [G]life
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]Don't pack your bags don't close the [G]door
+[D7]You won't find another man who loves you more
+[G]Just one more chance I'll make it [C]right
+[G]I'm givin' up this [D7]cheatin' kind of [G]life
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I'll turn around I won't look back
 [F]We'll put this train back on the track
 [C]This time I'll love and hold you [G]tight
 [D7]And forget about this cheatin' kind of [G]life
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]Don't pack your bags don't close the [G]door
 [D7]You won't find another man who loves you more
 [G]Just one more chance I'll make it [C]right
 [G]I'm givin' up this [D7]cheatin' kind of [G]life
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+[C]Don't pack your bags don't close the [G]door
+[D7]You won't find another man who loves you more
+[G]Just one more chance I'll make it [C]right
+[G]I'm givin' up this [D7]cheatin' kind of [G]life
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 [C]I won't let ya go without a fight
 [G]I'm givin' up this [D7]cheatin' kind of [G]life
 {end_of_verse}

@@ -18,43 +18,34 @@ Your troubles just walked out the [D7]door
 You don't need that heartache any[G]more
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]Maybe in a while you'll feel better 
 [G]Try real hard to forget her
 [C]She ain't worth your teardrops or [G]walking the [D7]floor
 It's [C]gonna take time but I know you'll do it 
 [G]Come on heart if you can get through it
 [D7]You don't need that heartache any[G]more
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Maybe in a while you'll feel better 
-[G]Try real hard to forget her
-[C]She ain't worth your teardrops or [G]walking the [D7]floor
-It's [C]gonna take time but I know you'll do it 
-[G]Come on heart if you can get through it
-[D7]You don't need that heartache any[G]more
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Maybe in a while you'll feel better 
-[G]Try real hard to forget her
-[C]She ain't worth your teardrops or [G]walking the [D7]floor
-It's [C]gonna take time but I know you'll do it 
-[G]Come on heart if you can get through it
-[D7]You don't need that heartache any[G]more
-{end_of_chorus}
-
-{start_of_chorus}
-[C]Maybe in a while you'll feel better 
-[G]Try real hard to forget her
-[C]She ain't worth your teardrops or [G]walking the [D7]floor
-It's [C]gonna take time but I know you'll do it 
-[G]Come on heart if you can get through it
-[D7]You don't need that heartache any[G]more
-{end_of_chorus}
+{end_of_verse}
 
 {start_of_verse: Verse 3}
+[C]Maybe in a while you'll feel better 
+[G]Try real hard to forget her
+[C]She ain't worth your teardrops or [G]walking the [D7]floor
+It's [C]gonna take time but I know you'll do it 
+[G]Come on heart if you can get through it
+[D7]You don't need that heartache any[G]more
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C]Maybe in a while you'll feel better 
+[G]Try real hard to forget her
+[C]She ain't worth your teardrops or [G]walking the [D7]floor
+It's [C]gonna take time but I know you'll do it 
+[G]Come on heart if you can get through it
+[D7]You don't need that heartache any[G]more
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [D7]You don't need that heartache any[G]more 
 [D7]You don't need that heartache any[G]more
 {end_of_verse}

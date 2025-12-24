@@ -9,28 +9,14 @@ Another lesson bout a naive fool [D7]that came to Babylon
 And found out that the pie don't taste so [G]sweet [D7]
 {end_of_verse}
 
-{start_of_chorus}
-Now it's [G]guitars Cadillacs [D7]hillbilly music
-And lonely lonely streets I call [G]home [D7]
-Yeah my [G]guitars Cadillacs [D7]hillbilly music
-It's the only thing that keeps me hanging [G]on
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Now it's [G]guitars Cadillacs [D7]hillbilly music
-And lonely lonely streets I call [G]home [D7]
-Yeah my [G]guitars Cadillacs [D7]hillbilly music
-It's the only thing that keeps me hanging [G]on
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Now it's [G]guitars Cadillacs [D7]hillbilly music
-And lonely lonely streets I call [G]home [D7]
-Yeah my [G]guitars Cadillacs [D7]hillbilly music
-It's the only thing that keeps me hanging [G]on
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Now it's [G]guitars Cadillacs [D7]hillbilly music
+And lonely lonely streets I call [G]home [D7]
+Yeah my [G]guitars Cadillacs [D7]hillbilly music
+It's the only thing that keeps me hanging [G]on
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 There ain't no glamor in this tinseled land 
 [D7]Of lost and wasted last
 And painful scars are all that's left of [G]me
@@ -39,14 +25,21 @@ Oh but thank you girl for teaching me
 And if I can find my mind now I guess I'll just [G]leave[D7]
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Now it's [G]guitars Cadillacs [D7]hillbilly music
 And lonely lonely streets I call [G]home [D7]
 Yeah my [G]guitars Cadillacs [D7]hillbilly music
 It's the only thing that keeps me hanging [G]on
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+Now it's [G]guitars Cadillacs [D7]hillbilly music
+And lonely lonely streets I call [G]home [D7]
+Yeah my [G]guitars Cadillacs [D7]hillbilly music
+It's the only thing that keeps me hanging [G]on
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [D7]It's the only thing that keeps me hanging [G]on
 [D7]It's the only thing that keeps me hanging [G]on
 {end_of_verse}

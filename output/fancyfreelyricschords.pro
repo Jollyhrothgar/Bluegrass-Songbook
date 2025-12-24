@@ -9,37 +9,30 @@
 [C]But along with all my dreams [G7]I'm setting fancy [C]free
 {end_of_verse}
 
-{start_of_chorus}
-[F]Yes I'm setting fancy free even though I love her [C]still
-[G7]She'd be no good to me [C]if I held her against her [C7]will
-[F]Even though that girl she's the best part of my [C]world
-[G7]Along with all my dreams I'm setting fancy [C]free
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]Yes I'm setting fancy free even though I love her [C]still
-[G7]She'd be no good to me [C]if I held her against her [C7]will
-[F]Even though that girl she's the best part of my [C]world
-[G7]Along with all my dreams I'm setting fancy [C]free
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]Yes I'm setting fancy free even though I love her [C]still
-[G7]She'd be no good to me [C]if I held her against her [C7]will
-[F]Even though that girl she's the best part of my [C]world
-[G7]Along with all my dreams I'm setting fancy [C]free
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[F]Yes I'm setting fancy free even though I love her [C]still
+[G7]She'd be no good to me [C]if I held her against her [C7]will
+[F]Even though that girl she's the best part of my [C]world
+[G7]Along with all my dreams I'm setting fancy [C]free
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [G7]Oh Lord you just don't know how it hurts to say goodbye
 [C]She did her best to stay I can't say she did not try
 [C7]I just hope the road she takes leads back to [F]me
 [C]So along with all my dreams [G7]I'm setting fancy [C]free
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [F]Yes I'm setting fancy free even though I love her [C]still
 [G7]She'd be no good to me [C]if I held her against her [C7]will
 [F]Even though that girl she's the best part of my [C]world
 [G7]Along with all my dreams I'm setting fancy [C]free
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[F]Yes I'm setting fancy free even though I love her [C]still
+[G7]She'd be no good to me [C]if I held her against her [C7]will
+[F]Even though that girl she's the best part of my [C]world
+[G7]Along with all my dreams I'm setting fancy [C]free
+{end_of_verse}

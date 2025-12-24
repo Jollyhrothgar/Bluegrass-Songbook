@@ -11,34 +11,16 @@ I [F]owe my life to Him
 I've got [C]so much to [G7]thank Him [C]for
 {end_of_verse}
 
-{start_of_chorus}
-I've got so much to thank Him for
-[F]So much to praise Him for
-You [C]see He has been so good to [G7]me
-When I [C]think of what He's done
-And [F]where He’s brought me from
-I've got [C]so much to [G7]thank Him [C]for
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I've got so much to thank Him for
-[F]So much to praise Him for
-You [C]see He has been so good to [G7]me
-When I [C]think of what He's done
-And [F]where He’s brought me from
-I've got [C]so much to [G7]thank Him [C]for
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I've got so much to thank Him for
-[F]So much to praise Him for
-You [C]see He has been so good to [G7]me
-When I [C]think of what He's done
-And [F]where He’s brought me from
-I've got [C]so much to [G7]thank Him [C]for
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+I've got so much to thank Him for
+[F]So much to praise Him for
+You [C]see He has been so good to [G7]me
+When I [C]think of what He's done
+And [F]where He’s brought me from
+I've got [C]so much to [G7]thank Him [C]for
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 And sometimes while on this way
 I [F]kneel and I stop and say
 Lord [C]thank You for all You've done for [G7]me
@@ -47,16 +29,25 @@ Oh [F]please let me kneel once more
 I've got [C]so much to [G7]thank You [C]for
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 I've got so much to thank Him for
 [F]So much to praise Him for
 You [C]see He has been so good to [G7]me
 When I [C]think of what He's done
 And [F]where He’s brought me from
 I've got [C]so much to [G7]thank Him [C]for
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+I've got so much to thank Him for
+[F]So much to praise Him for
+You [C]see He has been so good to [G7]me
+When I [C]think of what He's done
+And [F]where He’s brought me from
+I've got [C]so much to [G7]thank Him [C]for
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [G7]When I [C]think of what He's done
 And [F]where He’s brought me from
 I've got [C]so much to [G7]thank Him [C]for

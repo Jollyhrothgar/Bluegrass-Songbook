@@ -16,30 +16,23 @@
 [G7]Cause to me Jesus is a good ole [C]boy
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [G7]He walks with me and he talks with [C]me
 [G7]And I believe he knows my [C]voice
 [G7]Heaven's only a whisper [C]away
 [G7]Cause to me Jesus is a good ole [C]boy
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_chorus: Repeat 1}
+{start_of_verse: Verse 3}
 [G7]He walks with me and he talks with [C]me
 [G7]And I believe he knows my [C]voice
 [G7]Heaven's only a whisper [C]away
 [G7]Cause to me Jesus is a good ole [C]boy
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_chorus: Repeat 2}
+{start_of_verse: Verse 3}
 [G7]He walks with me and he talks with [C]me
 [G7]And I believe he knows my [C]voice
 [G7]Heaven's only a whisper [C]away
 [G7]Cause to me Jesus is a good ole [C]boy
-{end_of_chorus}
-
-{start_of_chorus}
-[G7]He walks with me and he talks with [C]me
-[G7]And I believe he knows my [C]voice
-[G7]Heaven's only a whisper [C]away
-[G7]Cause to me Jesus is a good ole [C]boy
-{end_of_chorus}
+{end_of_verse}

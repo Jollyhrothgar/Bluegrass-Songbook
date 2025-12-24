@@ -8,22 +8,12 @@
 [G7]And Barbara said why it's a million miles and [F]the story got [C]around
 {end_of_verse}
 
-{start_of_chorus}
-[F]It's a million miles to [C]the city from the [G7]hills and the valleys we [C]know
-[F]It's a million miles to [C]the city and some [G7]day we all wanna [C]go
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]It's a million miles to [C]the city from the [G7]hills and the valleys we [C]know
-[F]It's a million miles to [C]the city and some [G7]day we all wanna [C]go
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]It's a million miles to [C]the city from the [G7]hills and the valleys we [C]know
-[F]It's a million miles to [C]the city and some [G7]day we all wanna [C]go
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[F]It's a million miles to [C]the city from the [G7]hills and the valleys we [C]know
+[F]It's a million miles to [C]the city and some [G7]day we all wanna [C]go
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [F]There was a town near by but a town is a town
 [C]And a city well that's somethin' else
 [G7]Our daddy had been to a city [F]but he never was much [C]help
@@ -32,12 +22,12 @@
 [G7]Ain't nobody could climb that high the [F]cities were wide and [C]flat
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [F]It's a million miles to [C]the city from the [G7]hills and the valleys we [C]know
 [F]It's a million miles to [C]the city and some [G7]day we all wanna [C]go
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 [F]Well now time has passed and we have grown and traveled far and [C]wide
 [G7]The cities have changed the kids we were we [F]see it in each other's [C]eyes
 [F]Lord I'd love to go back to those hills again to the boy I used [C]to be
@@ -45,7 +35,12 @@
 [F]And the whippoorwills were part of the land like [C]me
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [F]It's a million miles to [C]the city from the [G7]hills and the valleys we [C]know
 [F]It's a million miles to [C]the city and some [G7]day we all wanna [C]go
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[F]It's a million miles to [C]the city from the [G7]hills and the valleys we [C]know
+[F]It's a million miles to [C]the city and some [G7]day we all wanna [C]go
+{end_of_verse}

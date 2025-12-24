@@ -16,41 +16,34 @@ Any[D7]way that I can please you I will try with all my might
 I'm an all day sucker when it comes to [G]you
 {end_of_verse}
 
-{start_of_chorus}
-So from morning until evening I'll be at your beck and call
-I'll do anything at all that pleases [C]you
-You can [D7]wind me round your finger almost anyway at all
-I'm an all day sucker when it comes to [G]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-So from morning until evening I'll be at your beck and call
-I'll do anything at all that pleases [C]you
-You can [D7]wind me round your finger almost anyway at all
-I'm an all day sucker when it comes to [G]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-So from morning until evening I'll be at your beck and call
-I'll do anything at all that pleases [C]you
-You can [D7]wind me round your finger almost anyway at all
-I'm an all day sucker when it comes to [G]you
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+So from morning until evening I'll be at your beck and call
+I'll do anything at all that pleases [C]you
+You can [D7]wind me round your finger almost anyway at all
+I'm an all day sucker when it comes to [G]you
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Then today I cleaned your workshop washed the car and mowed the lawn
 And I even shined the laces in your [C]shoes
 I try [D7]hard to make you love me and it's all an uphill run
 I'm an all day sucker when it comes to [G]you
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 So from morning until evening I'll be at your beck and call
 I'll do anything at all that pleases [C]you
 You can [D7]wind me round your finger almost anyway at all
 I'm an all day sucker when it comes to [G]you
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+So from morning until evening I'll be at your beck and call
+I'll do anything at all that pleases [C]you
+You can [D7]wind me round your finger almost anyway at all
+I'm an all day sucker when it comes to [G]you
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 I'm an [D7]all day sucker when it comes to [G]you
 {end_of_verse}

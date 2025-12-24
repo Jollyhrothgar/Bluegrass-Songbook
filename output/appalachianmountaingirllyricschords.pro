@@ -15,51 +15,44 @@ To [G]never feel her [C]touch again
 Or [G]taste that m[D7]ountain s[G]now
 {end_of_verse}
 
-{start_of_chorus}
-That Appalachian [C]Mountain Girl 
-That [G]haunts me from [D7]above
-My [G]heart will never [C]beat the same 
-With[G]out her [D7]mountain [G]love
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-That Appalachian [C]Mountain Girl 
-That [G]haunts me from [D7]above
-My [G]heart will never [C]beat the same 
-With[G]out her [D7]mountain [G]love
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-That Appalachian [C]Mountain Girl 
-That [G]haunts me from [D7]above
-My [G]heart will never [C]beat the same 
-With[G]out her [D7]mountain [G]love
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+That Appalachian [C]Mountain Girl 
+That [G]haunts me from [D7]above
+My [G]heart will never [C]beat the same 
+With[G]out her [D7]mountain [G]love
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I often wake up [C]late at night 
 [G]Dreaming about [D7]her
 Then [G]walked on floor till [C]morning comes 
 And [G]hope she [D7]will re[G]turn
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 That Appalachian [C]Mountain Girl 
 That [G]haunts me from [D7]above
 My [G]heart will never [C]beat the same 
 With[G]out her [D7]mountain [G]love
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Sometimes the wind will [C]blow just right 
 And [G]I think I can [D7]smell
 The [G]flowers that head[C]lined the road 
 That [G]led me [D7]to this [G]hell
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 That Appalachian [C]Mountain Girl 
 That [G]haunts me from [D7]above
 My [G]heart will never [C]beat the same 
 With[G]out her [D7]mountain [G]love
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+That Appalachian [C]Mountain Girl 
+That [G]haunts me from [D7]above
+My [G]heart will never [C]beat the same 
+With[G]out her [D7]mountain [G]love
+{end_of_verse}

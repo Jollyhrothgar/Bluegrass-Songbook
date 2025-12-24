@@ -16,41 +16,34 @@ It's the [C]last thing you had [F]planned
 Headin' [C]out of the [G7]blue clear [C]sky
 {end_of_verse}
 
-{start_of_chorus}
-Here she comes a [G7]walking talking true love
-[C]Saying I've been [F]looking for you [C]love
-Surprise your [G7]new love has [Am]arrived 
-[F]Out of a [G7]blue clear [C]sky 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Here she comes a [G7]walking talking true love
-[C]Saying I've been [F]looking for you [C]love
-Surprise your [G7]new love has [Am]arrived 
-[F]Out of a [G7]blue clear [C]sky 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Here she comes a [G7]walking talking true love
-[C]Saying I've been [F]looking for you [C]love
-Surprise your [G7]new love has [Am]arrived 
-[F]Out of a [G7]blue clear [C]sky 
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Here she comes a [G7]walking talking true love
+[C]Saying I've been [F]looking for you [C]love
+Surprise your [G7]new love has [Am]arrived 
+[F]Out of a [G7]blue clear [C]sky 
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Ain't love a funny [F]thing 
 One [C]day you're giving up the [F]dream
 And the [C]next you're picking out a [F]ring 
 [C]Out of the [G7]blue clear [C]sky
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Here she comes a [G7]walking talking true love
 [C]Saying I've been [F]looking for you [C]love
 Surprise your [G7]new love has [Am]arrived 
 [F]Out of a [G7]blue clear [C]sky 
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+Here she comes a [G7]walking talking true love
+[C]Saying I've been [F]looking for you [C]love
+Surprise your [G7]new love has [Am]arrived 
+[F]Out of a [G7]blue clear [C]sky 
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 [F]Out of a [G7]blue clear [C]sky
 {end_of_verse}

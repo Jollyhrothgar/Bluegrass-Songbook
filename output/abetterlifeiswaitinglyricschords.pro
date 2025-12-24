@@ -12,31 +12,15 @@ How His [F]gates will open [C]wide
 I know a better life is waiting for me [G7]on the other [C]side[F]  [C]
 {end_of_verse}
 
-{start_of_chorus}
-I'm going [F]home (I'm going home) I'm going [C]home (I'm going home)
-When I cross the dead valley I won't be [G7]alone
-I'll walk [C]down a lighted pathway with my [F]Jesus for my [C]guide
-I’ll find a better life is waiting for me [G7]on the other [C]side
-([F]The other [C]side) 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I'm going [F]home (I'm going home) I'm going [C]home (I'm going home)
-When I cross the dead valley I won't be [G7]alone
-I'll walk [C]down a lighted pathway with my [F]Jesus for my [C]guide
-I’ll find a better life is waiting for me [G7]on the other [C]side
-([F]The other [C]side) 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I'm going [F]home (I'm going home) I'm going [C]home (I'm going home)
-When I cross the dead valley I won't be [G7]alone
-I'll walk [C]down a lighted pathway with my [F]Jesus for my [C]guide
-I’ll find a better life is waiting for me [G7]on the other [C]side
-([F]The other [C]side) 
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+I'm going [F]home (I'm going home) I'm going [C]home (I'm going home)
+When I cross the dead valley I won't be [G7]alone
+I'll walk [C]down a lighted pathway with my [F]Jesus for my [C]guide
+I’ll find a better life is waiting for me [G7]on the other [C]side
+([F]The other [C]side) 
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 I'll sing and shout and praise His name
 Glory halle[F]luiah when I get [C]home
 I'll shake hands with dad and mother
@@ -46,10 +30,18 @@ Heaven is a [F]place that money can't [C]buy
 I know a better life is waiting for me [G7]on the other [C]side
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 I'm going [F]home (I'm going home) I'm going [C]home (I'm going home)
 When I cross the dead valley I won't be [G7]alone
 I'll walk [C]down a lighted pathway with my [F]Jesus for my [C]guide
 I’ll find a better life is waiting for me [G7]on the other [C]side
 ([F]The other [C]side) 
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+I'm going [F]home (I'm going home) I'm going [C]home (I'm going home)
+When I cross the dead valley I won't be [G7]alone
+I'll walk [C]down a lighted pathway with my [F]Jesus for my [C]guide
+I’ll find a better life is waiting for me [G7]on the other [C]side
+([F]The other [C]side) 
+{end_of_verse}

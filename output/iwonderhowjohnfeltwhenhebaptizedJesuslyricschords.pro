@@ -17,37 +17,30 @@ Cause [F]he sure could tell the [C]news
 But he said there's a man coming after me and [G7]I can't tie His [C]shoes
 {end_of_verse}
 
-{start_of_chorus}
-I wonder how John felt when he baptized [F]Jesus
-How did he feel when [C]Jesus came and [D7]said let it be [G7]done
-[C]I wonder how John felt when he led Him in the [F]water
-Don't you know it was a [C]blessin' to [G7]baptize God's only [C]Son
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I wonder how John felt when he baptized [F]Jesus
-How did he feel when [C]Jesus came and [D7]said let it be [G7]done
-[C]I wonder how John felt when he led Him in the [F]water
-Don't you know it was a [C]blessin' to [G7]baptize God's only [C]Son
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I wonder how John felt when he baptized [F]Jesus
-How did he feel when [C]Jesus came and [D7]said let it be [G7]done
-[C]I wonder how John felt when he led Him in the [F]water
-Don't you know it was a [C]blessin' to [G7]baptize God's only [C]Son
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+I wonder how John felt when he baptized [F]Jesus
+How did he feel when [C]Jesus came and [D7]said let it be [G7]done
+[C]I wonder how John felt when he led Him in the [F]water
+Don't you know it was a [C]blessin' to [G7]baptize God's only [C]Son
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 John talked to a lot of people and [F]many saw the [C]light
 But what about walking up and shaking [D7]hands with Jesus [G7]Christ
 I [C]wonder if he trembled when [F]he first saw the [C]Man
 Don't you know he felt the spirit when he [G7]touched the Master's [C]Hand
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 I wonder how John felt when he baptized [F]Jesus
 How did he feel when [C]Jesus came and [D7]said let it be [G7]done
 [C]I wonder how John felt when he led Him in the [F]water
 Don't you know it was a [C]blessin' to [G7]baptize God's only [C]Son
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+I wonder how John felt when he baptized [F]Jesus
+How did he feel when [C]Jesus came and [D7]said let it be [G7]done
+[C]I wonder how John felt when he led Him in the [F]water
+Don't you know it was a [C]blessin' to [G7]baptize God's only [C]Son
+{end_of_verse}

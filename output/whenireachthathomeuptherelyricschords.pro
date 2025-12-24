@@ -30,3 +30,10 @@ There with [F]my dear Savior never more to [C]roam
 And I'll sit with my father mother sister and my [Am]brother
 When I [C]reach my [G7]home up [C]there
 {end_of_verse}
+
+{start_of_verse: Verse 2}
+And there'll be shouts of gladness brother hallelujah I am home
+There with [F]my dear Savior never more to [C]roam
+And I'll sit with my father mother sister and my [Am]brother
+When I [C]reach my [G7]home up [C]there
+{end_of_verse}

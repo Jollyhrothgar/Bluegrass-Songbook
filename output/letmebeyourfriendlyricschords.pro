@@ -9,51 +9,44 @@ That you'd ever go and leave me
 And this [D7]heart you taught to [G]cry
 {end_of_verse}
 
-{start_of_chorus}
-Darling wait until I see you
-Since you [C]say it is the [G]end
-Though I know that you don't love me
-Won't you [D7]let me be your [G]friend
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Darling wait until I see you
-Since you [C]say it is the [G]end
-Though I know that you don't love me
-Won't you [D7]let me be your [G]friend
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Darling wait until I see you
-Since you [C]say it is the [G]end
-Though I know that you don't love me
-Won't you [D7]let me be your [G]friend
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Darling wait until I see you
+Since you [C]say it is the [G]end
+Though I know that you don't love me
+Won't you [D7]let me be your [G]friend
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 As I lay upon my pillow
 Thinking [C]of you in my [G]dreams
 Are you happy with another
 I'm so [D7]lonesome here it [G]seems
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Darling wait until I see you
 Since you [C]say it is the [G]end
 Though I know that you don't love me
 Won't you [D7]let me be your [G]friend
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 Do you ever think about me
 Will you [C]love again some[G]day
 Will you ever think my darling
 Of this [D7]heart you stole [G]away
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Darling wait until I see you
 Since you [C]say it is the [G]end
 Though I know that you don't love me
 Won't you [D7]let me be your [G]friend
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Darling wait until I see you
+Since you [C]say it is the [G]end
+Though I know that you don't love me
+Won't you [D7]let me be your [G]friend
+{end_of_verse}

@@ -8,51 +8,44 @@ I [G]wrote to my girl that I was comin' [Em]home
 But my [G]last old [D7]dollar is done [G]gone
 {end_of_verse}
 
-{start_of_chorus}
-Oh my last old dollar is done gone
-Oh my last old dollar is done [D7]gone
-Now [G]how can a poor boy get back [Em]home
-When his [G]last old [D7]dollar is done [G]gone
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Oh my last old dollar is done gone
-Oh my last old dollar is done [D7]gone
-Now [G]how can a poor boy get back [Em]home
-When his [G]last old [D7]dollar is done [G]gone
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Oh my last old dollar is done gone
-Oh my last old dollar is done [D7]gone
-Now [G]how can a poor boy get back [Em]home
-When his [G]last old [D7]dollar is done [G]gone
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Oh my last old dollar is done gone
+Oh my last old dollar is done [D7]gone
+Now [G]how can a poor boy get back [Em]home
+When his [G]last old [D7]dollar is done [G]gone
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Now the east bound train is done run
 Now the east bound train is done [D7]run
 Now that [G]train is done run and left me all [Em]alone
 Cause my [G]last old [D7]dollar is done [G]gone
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Oh my last old dollar is done gone
 Oh my last old dollar is done [D7]gone
 Now [G]how can a poor boy get back [Em]home
 When his [G]last old [D7]dollar is done [G]gone
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 I've drank and I've rambled around
 I've drank and I've rambled [D7]around
 Now the [G]time has come when I wanna go [Em]home
 But my [G]last old [D7]dollar is done [G]gone
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Oh my last old dollar is done gone
 Oh my last old dollar is done [D7]gone
 Now [G]how can a poor boy get back [Em]home
 When his [G]last old [D7]dollar is done [G]gone
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Oh my last old dollar is done gone
+Oh my last old dollar is done [D7]gone
+Now [G]how can a poor boy get back [Em]home
+When his [G]last old [D7]dollar is done [G]gone
+{end_of_verse}

@@ -10,31 +10,15 @@ That keeps [F]passing all the while
 As we [G7]leave the land of yester[C]day
 {end_of_verse}
 
-{start_of_chorus}
-I’ll never pass this way [G7]again
-As I travel to my journey’s [C]end
-May I leave each precious mile 
-With some [F]kindness and a smile
-Oh I’ll [G7]never pass this way [C]again
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I’ll never pass this way [G7]again
-As I travel to my journey’s [C]end
-May I leave each precious mile 
-With some [F]kindness and a smile
-Oh I’ll [G7]never pass this way [C]again
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I’ll never pass this way [G7]again
-As I travel to my journey’s [C]end
-May I leave each precious mile 
-With some [F]kindness and a smile
-Oh I’ll [G7]never pass this way [C]again
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+I’ll never pass this way [G7]again
+As I travel to my journey’s [C]end
+May I leave each precious mile 
+With some [F]kindness and a smile
+Oh I’ll [G7]never pass this way [C]again
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 A word of kindness now and [G7]then
 Makes our burdens lighter you will [C]find
 But each minute spent in pain
@@ -42,10 +26,18 @@ Makes us [F]sixty seconds late
 Finding [G7]happiness and peace of [C]mind
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 I’ll never pass this way [G7]again
 As I travel to my journey’s [C]end
 May I leave each precious mile 
 With some [F]kindness and a smile
 Oh I’ll [G7]never pass this way [C]again
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+I’ll never pass this way [G7]again
+As I travel to my journey’s [C]end
+May I leave each precious mile 
+With some [F]kindness and a smile
+Oh I’ll [G7]never pass this way [C]again
+{end_of_verse}

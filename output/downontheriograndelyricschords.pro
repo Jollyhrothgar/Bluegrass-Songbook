@@ -19,44 +19,38 @@ My Mexican lady Lord how she loved me
 [D7]Down on the Rio Grande
 {end_of_verse}
 
-{start_of_chorus}
-[G]Strolling with my lover hand in hand
-Oh I'd [Em]give anything to be 
-[A7]Down on the Rio [D7]Grande
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[G]Strolling with my lover hand in hand
-Oh I'd [Em]give anything to be 
-[A7]Down on the Rio [D7]Grande
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[G]Strolling with my lover hand in hand
-Oh I'd [Em]give anything to be 
-[A7]Down on the Rio [D7]Grande
-{end_of_chorus}
-
 {start_of_verse: Verse 4}
+[G]Strolling with my lover hand in hand
+Oh I'd [Em]give anything to be 
+[A7]Down on the Rio [D7]Grande
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 [G]Endless highways and wide open spaces
 Children smile with their sun burnt faces
 [D7]Down on the Rio Grande
 {end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 6}
 [G]All the love that my lady was giving
 Was the sweetest part of living
 [D7]Down on the Rio Grande
 {end_of_verse}
 
-{start_of_verse: Verse 6}
+{start_of_verse: Verse 7}
 [A7]And if these memories could take me there
 [G]I'd be loving my woman with the raven hair I'd be
 [D7]Down on the Rio Grande
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 4}
 [G]Strolling with my lover hand in hand
 Oh I'd [Em]give anything to be 
 [A7]Down on the Rio [D7]Grande
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+[G]Strolling with my lover hand in hand
+Oh I'd [Em]give anything to be 
+[A7]Down on the Rio [D7]Grande
+{end_of_verse}

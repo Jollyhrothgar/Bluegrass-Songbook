@@ -23,51 +23,44 @@ And who can [C]point the [G]moment love grows [D7]cold
 Though why it's [C]gone [G]neither of us [D7]know
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 4}
 Oh I've [G]lost you yes I've lost you
 I can't reach you anymore 
 We [C]ought to talk it over now
 But [D7]reason [G]can't stand in for [D7]feeling [G]low
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Oh I've [G]lost you yes I've lost you
-I can't reach you anymore 
-We [C]ought to talk it over now
-But [D7]reason [G]can't stand in for [D7]feeling [G]low
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Oh I've [G]lost you yes I've lost you
-I can't reach you anymore 
-We [C]ought to talk it over now
-But [D7]reason [G]can't stand in for [D7]feeling [G]low
-{end_of_chorus}
-
-{start_of_chorus}
-Oh I've [G]lost you yes I've lost you
-I can't reach you anymore 
-We [C]ought to talk it over now
-But [D7]reason [G]can't stand in for [D7]feeling [G]low
-{end_of_chorus}
+{end_of_verse}
 
 {start_of_verse: Verse 4}
+Oh I've [G]lost you yes I've lost you
+I can't reach you anymore 
+We [C]ought to talk it over now
+But [D7]reason [G]can't stand in for [D7]feeling [G]low
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 Six o'clock the [D7]baby will be [Em]cry[G]ing
 And you will [C]stumble slee[G]py to the [D7]door
 [G]In the chill and [D7]solemn gray of the [Em]morn[G]ing
 We play the [C]parts that we have [G]learned too [D7]well
 {end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 6}
 Oh I've [G]lost you oh I've lost you
 Oh you won't admit it so
 I've [C]lost you on a journey
 But I [D7]can't re[G]member [D7]where or when no more 
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 4}
 Oh I've [G]lost you yes I've lost you
 I can't reach you anymore 
 We [C]ought to talk it over now
 But [D7]reason [G]can't stand in for [D7]feeling [G]low
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+Oh I've [G]lost you yes I've lost you
+I can't reach you anymore 
+We [C]ought to talk it over now
+But [D7]reason [G]can't stand in for [D7]feeling [G]low
+{end_of_verse}

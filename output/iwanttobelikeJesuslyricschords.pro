@@ -9,42 +9,35 @@ Some wanna gain great wealth and fame
 I wanna [D7]be like [G]Jesus
 {end_of_verse}
 
-{start_of_chorus}
-I wanna be like Jesus
-[C]I wanna be like [G]Jesus
-Walking in the light always in the right
-I wanna [D7]be like [G]Jesus
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I wanna be like Jesus
-[C]I wanna be like [G]Jesus
-Walking in the light always in the right
-I wanna [D7]be like [G]Jesus
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I wanna be like Jesus
-[C]I wanna be like [G]Jesus
-Walking in the light always in the right
-I wanna [D7]be like [G]Jesus
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+I wanna be like Jesus
+[C]I wanna be like [G]Jesus
+Walking in the light always in the right
+I wanna [D7]be like [G]Jesus
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Some wanna have a big church choir 
 Some wanna [D7]be a [G]preacher
 Some just want to fly away
 I wanna [D7]be like [G]Jesus
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 I wanna be like Jesus
 [C]I wanna be like [G]Jesus
 Walking in the light always in the right
 I wanna [D7]be like [G]Jesus
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+I wanna be like Jesus
+[C]I wanna be like [G]Jesus
+Walking in the light always in the right
+I wanna [D7]be like [G]Jesus
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Walking in the light always in the right
 I wanna [D7]be like [G]Jesus
 {end_of_verse}

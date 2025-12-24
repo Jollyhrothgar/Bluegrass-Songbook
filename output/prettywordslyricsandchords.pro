@@ -11,37 +11,17 @@ He's [G]gonna hurt you I can [F]tell
 Tomorrow he will [D7]leave you for [G]another
 {end_of_verse}
 
-{start_of_chorus}
-[C]Pretty is as pretty [F]does 
-[C]That's how it is and [F]always was
-[C]Pretty words are [F]all he's giving [G]you
-[C]And when he whispers in the [F]dark 
-[C]Watch out he's gonna [F]break your heart
-[C]Pretty words won't [F]make your dreams [D7]come true
-Just pretty [G]words [D7]just pretty [G]words
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Pretty is as pretty [F]does 
-[C]That's how it is and [F]always was
-[C]Pretty words are [F]all he's giving [G]you
-[C]And when he whispers in the [F]dark 
-[C]Watch out he's gonna [F]break your heart
-[C]Pretty words won't [F]make your dreams [D7]come true
-Just pretty [G]words [D7]just pretty [G]words
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Pretty is as pretty [F]does 
-[C]That's how it is and [F]always was
-[C]Pretty words are [F]all he's giving [G]you
-[C]And when he whispers in the [F]dark 
-[C]Watch out he's gonna [F]break your heart
-[C]Pretty words won't [F]make your dreams [D7]come true
-Just pretty [G]words [D7]just pretty [G]words
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[C]Pretty is as pretty [F]does 
+[C]That's how it is and [F]always was
+[C]Pretty words are [F]all he's giving [G]you
+[C]And when he whispers in the [F]dark 
+[C]Watch out he's gonna [F]break your heart
+[C]Pretty words won't [F]make your dreams [D7]come true
+Just pretty [G]words [D7]just pretty [G]words
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 In the morning you will [C]find 
 [G]That you were just the next in [F]line
 [G]There's nothing I can do that's gonna stop [F]you
@@ -50,7 +30,7 @@ In the morning you will [C]find
 [G]I'll be here long after [D7]he's forgot [G]you
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [C]Pretty is as pretty [F]does 
 [C]That's how it is and [F]always was
 [C]Pretty words are [F]all he's giving [G]you
@@ -58,4 +38,14 @@ In the morning you will [C]find
 [C]Watch out he's gonna [F]break your heart
 [C]Pretty words won't [F]make your dreams [D7]come true
 Just pretty [G]words [D7]just pretty [G]words
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[C]Pretty is as pretty [F]does 
+[C]That's how it is and [F]always was
+[C]Pretty words are [F]all he's giving [G]you
+[C]And when he whispers in the [F]dark 
+[C]Watch out he's gonna [F]break your heart
+[C]Pretty words won't [F]make your dreams [D7]come true
+Just pretty [G]words [D7]just pretty [G]words
+{end_of_verse}

@@ -16,41 +16,33 @@ But [C]of all those times we knew [G]are over for me and [E7]you
 [A7]And there’s only one way [D7]I can bring ‘em [G]back
 {end_of_verse}
 
-{start_of_chorus}
-Gonna lay me down beside my memo[C]ries
-Gonna [D7]turn my thoughts to how it used to [G]be
-Gonna hold you in my mind reach out 
-And [C]touch old lonesome [A7]times
-Gonna [D7]lay me down beside my memo[G]ries
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Gonna lay me down beside my memo[C]ries
-Gonna [D7]turn my thoughts to how it used to [G]be
-Gonna hold you in my mind reach out 
-And [C]touch old lonesome [A7]times
-Gonna [D7]lay me down beside my memo[G]ries
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Gonna lay me down beside my memo[C]ries
-Gonna [D7]turn my thoughts to how it used to [G]be
-Gonna hold you in my mind reach out 
-And [C]touch old lonesome [A7]times
-Gonna [D7]lay me down beside my memo[G]ries
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Gonna lay me down beside my memo[C]ries
+Gonna [D7]turn my thoughts to how it used to [G]be
+Gonna hold you in my mind reach out 
+And [C]touch old lonesome [A7]times
+Gonna [D7]lay me down beside my memo[G]ries
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I wish we could sit down and do us a little talking
 [C]Run through the past and sort out a thing or [G]two
 But [C]you don’t agree one bit [G]you just wanna call it [E7]quits
 So [A7]there’s only one thing [D7]left for me to [G]do
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Gonna lay me down beside my memo[C]ries
 Gonna [D7]turn my thoughts to how it used to [G]be
 Gonna hold you in my mind reach out 
 And [C]touch old lonesome [A7]times
 Gonna [D7]lay me down beside my memo[G]ries
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Gonna lay me down beside my memo[C]ries
+Gonna [D7]turn my thoughts to how it used to [G]be
+Gonna hold you in my mind reach out 
+And [C]touch old lonesome [A7]times
+Gonna [D7]lay me down beside my memo[G]ries
+{end_of_verse}

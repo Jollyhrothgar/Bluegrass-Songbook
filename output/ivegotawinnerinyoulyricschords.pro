@@ -10,28 +10,14 @@
 [G7]I won’t loose again this time I [C]know
 {end_of_verse}
 
-{start_of_chorus}
-[F]I’ve got a winner in you
-[G7]No way I can [C]loose
-[Am]A love I can hold [F]onto
-[G7]I’ve got a winner in [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]I’ve got a winner in you
-[G7]No way I can [C]loose
-[Am]A love I can hold [F]onto
-[G7]I’ve got a winner in [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]I’ve got a winner in you
-[G7]No way I can [C]loose
-[Am]A love I can hold [F]onto
-[G7]I’ve got a winner in [C]you
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[F]I’ve got a winner in you
+[G7]No way I can [C]loose
+[Am]A love I can hold [F]onto
+[G7]I’ve got a winner in [C]you
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [G7]I know how it feels  when you try and try [C]again
 [G7]And then you never win I know how it [C]feels
 [F]Oh but this time around
@@ -39,9 +25,9 @@
 [G7]They write songs about  the way that I [C]feel
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [F]I’ve got a winner in you
 [G7]No way I can [C]loose
 [Am]A love I can hold [F]onto
 [G7]I’ve got a winner in [C]you
-{end_of_chorus}
+{end_of_verse}

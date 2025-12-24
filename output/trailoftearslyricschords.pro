@@ -16,56 +16,49 @@ But you won't be the [C]first my [G]friend
 You're [C]following a [D7]trail of [G]tears
 {end_of_verse}
 
-{start_of_chorus}
-A [C]trail of teardrops [F]always [C]fall
-Cause [G]girls like that don't [D7]care at [G]all
-[C]She just wants to [F]see you [C]crawl
-[G]Crawling through the [D7]trail of [G]tears
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-A [C]trail of teardrops [F]always [C]fall
-Cause [G]girls like that don't [D7]care at [G]all
-[C]She just wants to [F]see you [C]crawl
-[G]Crawling through the [D7]trail of [G]tears
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-A [C]trail of teardrops [F]always [C]fall
-Cause [G]girls like that don't [D7]care at [G]all
-[C]She just wants to [F]see you [C]crawl
-[G]Crawling through the [D7]trail of [G]tears
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+A [C]trail of teardrops [F]always [C]fall
+Cause [G]girls like that don't [D7]care at [G]all
+[C]She just wants to [F]see you [C]crawl
+[G]Crawling through the [D7]trail of [G]tears
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 You'll tell her that you [C]need her [G]so
 But [C]she'll just laugh and [D7]then you'll [G]know
 That you've got a lifetime [C]left to [G]go
 [C]Following a [D7]trail of [G]tears
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 A [C]trail of teardrops [F]always [C]fall
 Cause [G]girls like that don't [D7]care at [G]all
 [C]She just wants to [F]see you [C]crawl
 [G]Crawling through the [D7]trail of [G]tears
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 You're asking me how [C]I can [G]tell
 [C]But it's a story [D7]that I know [G]well
 Cause I've been walked all [C]over [G]hell
 [C]Following a [D7]trail of [G]tears
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 A [C]trail of teardrops [F]always [C]fall
 Cause [G]girls like that don't [D7]care at [G]all
 [C]She just wants to [F]see you [C]crawl
 [G]Crawling through the [D7]trail of [G]tears
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 3}
+A [C]trail of teardrops [F]always [C]fall
+Cause [G]girls like that don't [D7]care at [G]all
+[C]She just wants to [F]see you [C]crawl
+[G]Crawling through the [D7]trail of [G]tears
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 Crawling through a [D7]trail of [G]tears
 [C]Crawling through a [D7]trail of [G]tears
 {end_of_verse}

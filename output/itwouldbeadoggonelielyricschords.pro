@@ -16,44 +16,37 @@ She [F]said today she was leaving
 [G7]And now she's fancy [C]free
 {end_of_verse}
 
-{start_of_chorus}
-[F]I could say I don't worry 
-I could say I won't cry
-I [C]could say I won't miss her 
-But it [G7]would be a doggone [C]lie
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]I could say I don't worry 
-I could say I won't cry
-I [C]could say I won't miss her 
-But it [G7]would be a doggone [C]lie
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]I could say I don't worry 
-I could say I won't cry
-I [C]could say I won't miss her 
-But it [G7]would be a doggone [C]lie
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[F]I could say I don't worry 
+I could say I won't cry
+I [C]could say I won't miss her 
+But it [G7]would be a doggone [C]lie
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Did you ever try to stop breathing
 Well it just can't be [C7]done
 I [F]have to find somebody
 To [G7]take her place while she's [C]gone
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 When she gets tired of roaming
 She's gonna wanna come [C7]back
 And [F]I ain't gonna be foolish
 [G7]I'm gonna take my baby [C]back
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [F]I could say I don't worry 
 I could say I won't cry
 I [C]could say I won't miss her 
 But it [G7]would be a doggone [C]lie
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[F]I could say I don't worry 
+I could say I won't cry
+I [C]could say I won't miss her 
+But it [G7]would be a doggone [C]lie
+{end_of_verse}

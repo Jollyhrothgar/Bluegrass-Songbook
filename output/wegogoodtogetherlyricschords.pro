@@ -16,37 +16,30 @@ We're [G7]glidin' over troubles with the [C]ease of birds that fly
 And [F]every day's a [G7]lovin' day and [C]that's [G7]the reason [C]why
 {end_of_verse}
 
-{start_of_chorus}
-We go good together we [E7]don't see stormy weather
-[F]We got [G7]sunshine every[C]day
-Our love grows even stronger [E7]we'll love together [Am]longer
-There's [G7]happiness in love this [C]way
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-We go good together we [E7]don't see stormy weather
-[F]We got [G7]sunshine every[C]day
-Our love grows even stronger [E7]we'll love together [Am]longer
-There's [G7]happiness in love this [C]way
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-We go good together we [E7]don't see stormy weather
-[F]We got [G7]sunshine every[C]day
-Our love grows even stronger [E7]we'll love together [Am]longer
-There's [G7]happiness in love this [C]way
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+We go good together we [E7]don't see stormy weather
+[F]We got [G7]sunshine every[C]day
+Our love grows even stronger [E7]we'll love together [Am]longer
+There's [G7]happiness in love this [C]way
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 We walk through meadows [F]hand in hand with [G7]love that's over[C]flowin'
 The flowers turn their [F]faces up and [G7]tell us that it's [C]showin'
 The [F]trees along the [G7]path we take sing [C]love songs in the wind
 Then we [F]stop and think [G7]about our love and [C]sing [G7]our song [C]again
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 We go good together we [E7]don't see stormy weather
 [F]We got [G7]sunshine every[C]day
 Our love grows even stronger [E7]we'll love together [Am]longer
 There's [G7]happiness in love this [C]way
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+We go good together we [E7]don't see stormy weather
+[F]We got [G7]sunshine every[C]day
+Our love grows even stronger [E7]we'll love together [Am]longer
+There's [G7]happiness in love this [C]way
+{end_of_verse}

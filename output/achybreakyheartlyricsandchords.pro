@@ -16,44 +16,37 @@ Or you can tell my lips to tell my fingertips
 They won't be reaching out for you no [C]more
 {end_of_verse}
 
-{start_of_chorus}
-But don't tell my heart my achy breaky heart
-I just don't think it'd under[G7]stand
-And if you tell my heart my achy breaky heart
-It might blow up and kill this [C]man
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-But don't tell my heart my achy breaky heart
-I just don't think it'd under[G7]stand
-And if you tell my heart my achy breaky heart
-It might blow up and kill this [C]man
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-But don't tell my heart my achy breaky heart
-I just don't think it'd under[G7]stand
-And if you tell my heart my achy breaky heart
-It might blow up and kill this [C]man
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+But don't tell my heart my achy breaky heart
+I just don't think it'd under[G7]stand
+And if you tell my heart my achy breaky heart
+It might blow up and kill this [C]man
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 You can tell your ma I moved to Arkansas
 Or you can tell your dog to bite my [G7]leg
 Or tell your brother Cliff who's fist can tell my lip
 He never really liked me any[C]way
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Or tell your aunt Louise tell anything you please
 Myself already knows I'm not [G7]okay
 Or you can tell my eye to watch out for my mind
 It might be walkin' out on me [C]today
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 But don't tell my heart my achy breaky heart
 I just don't think it'd under[G7]stand
 And if you tell my heart my achy breaky heart
 It might blow up and kill this [C]man
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+But don't tell my heart my achy breaky heart
+I just don't think it'd under[G7]stand
+And if you tell my heart my achy breaky heart
+It might blow up and kill this [C]man
+{end_of_verse}

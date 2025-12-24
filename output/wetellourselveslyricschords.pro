@@ -11,34 +11,16 @@ They were lookin' into [D]mine
 But found the one we wanted just quit [D]trying
 {end_of_verse}
 
-{start_of_chorus}
-So we [G]tell ourselves that what we found 
-Is what we meant to [D]find
-That's what we [G]tell ourselves you won't believe 
-The things a heart could tell a [D]mind
-Somehow we [E7]sell ourselves on love 
-I just [G]don't think I'll [A7]believe my heart this [D]time
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-So we [G]tell ourselves that what we found 
-Is what we meant to [D]find
-That's what we [G]tell ourselves you won't believe 
-The things a heart could tell a [D]mind
-Somehow we [E7]sell ourselves on love 
-I just [G]don't think I'll [A7]believe my heart this [D]time
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-So we [G]tell ourselves that what we found 
-Is what we meant to [D]find
-That's what we [G]tell ourselves you won't believe 
-The things a heart could tell a [D]mind
-Somehow we [E7]sell ourselves on love 
-I just [G]don't think I'll [A7]believe my heart this [D]time
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+So we [G]tell ourselves that what we found 
+Is what we meant to [D]find
+That's what we [G]tell ourselves you won't believe 
+The things a heart could tell a [D]mind
+Somehow we [E7]sell ourselves on love 
+I just [G]don't think I'll [A7]believe my heart this [D]time
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [C]I oughta know the language [G]well 
 I've heard me tell myself these things [D]before
 [C]I finally made my mind up my heart tells [G]me 
@@ -47,11 +29,20 @@ To look for something [D]more
 Was she the one well you never can be [D]sure
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 So we [G]tell ourselves that what we found 
 Is what we meant to [D]find
 That's what we [G]tell ourselves you won't believe 
 The things a heart could tell a [D]mind
 Somehow we [E7]sell ourselves on love 
 I just [G]don't think I'll [A7]believe my heart this [D]time
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+So we [G]tell ourselves that what we found 
+Is what we meant to [D]find
+That's what we [G]tell ourselves you won't believe 
+The things a heart could tell a [D]mind
+Somehow we [E7]sell ourselves on love 
+I just [G]don't think I'll [A7]believe my heart this [D]time
+{end_of_verse}

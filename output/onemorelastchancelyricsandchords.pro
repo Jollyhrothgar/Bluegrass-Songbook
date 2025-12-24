@@ -13,40 +13,18 @@ If you don't listen to my preaching boy
 I'm gonna [G7]have to beat you half to [C]death
 {end_of_verse}
 
-{start_of_chorus}
-Give me just a one more last chance 
-[F]Before you say we're [C]through
-I know I drive you crazy baby 
-It's the [G7]best that I can do
-We're just some [C]good ol' boys a making noise 
-I ain't [F]running round on [C]you
-Give me just a [F]one more [C]last chance 
-[G7]Before you say we're [C]through
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Give me just a one more last chance 
-[F]Before you say we're [C]through
-I know I drive you crazy baby 
-It's the [G7]best that I can do
-We're just some [C]good ol' boys a making noise 
-I ain't [F]running round on [C]you
-Give me just a [F]one more [C]last chance 
-[G7]Before you say we're [C]through
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Give me just a one more last chance 
-[F]Before you say we're [C]through
-I know I drive you crazy baby 
-It's the [G7]best that I can do
-We're just some [C]good ol' boys a making noise 
-I ain't [F]running round on [C]you
-Give me just a [F]one more [C]last chance 
-[G7]Before you say we're [C]through
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Give me just a one more last chance 
+[F]Before you say we're [C]through
+I know I drive you crazy baby 
+It's the [G7]best that I can do
+We're just some [C]good ol' boys a making noise 
+I ain't [F]running round on [C]you
+Give me just a [F]one more [C]last chance 
+[G7]Before you say we're [C]through
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 At first she hid my glasses 
 Because she [F]knows that I can't [C]see
 She said you ain't going nowhere boy 
@@ -57,7 +35,7 @@ Well she might've took my car keys
 But she [G7]forgot about my old John [C]Deere
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Give me just a one more last chance 
 [F]Before you say we're [C]through
 I know I drive you crazy baby 
@@ -66,9 +44,20 @@ We're just some [C]good ol' boys a making noise
 I ain't [F]running round on [C]you
 Give me just a [F]one more [C]last chance 
 [G7]Before you say we're [C]through
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+Give me just a one more last chance 
+[F]Before you say we're [C]through
+I know I drive you crazy baby 
+It's the [G7]best that I can do
+We're just some [C]good ol' boys a making noise 
+I ain't [F]running round on [C]you
+Give me just a [F]one more [C]last chance 
+[G7]Before you say we're [C]through
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Give me just a [F]one more [C]last chance 
 [G7]Before you say we're [C]through
 {end_of_verse}

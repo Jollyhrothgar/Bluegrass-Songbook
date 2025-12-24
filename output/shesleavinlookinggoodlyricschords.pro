@@ -16,49 +16,42 @@
 [D7]Our wedding night
 {end_of_verse}
 
-{start_of_chorus}
-[C]And I can't help but want her still
-[G]Any man who saw her [D7]would
-[G]She may be leaving me [C]today
-[D7]But she's leavin' looking [G]good
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]And I can't help but want her still
-[G]Any man who saw her [D7]would
-[G]She may be leaving me [C]today
-[D7]But she's leavin' looking [G]good
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]And I can't help but want her still
-[G]Any man who saw her [D7]would
-[G]She may be leaving me [C]today
-[D7]But she's leavin' looking [G]good
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]And I can't help but want her still
+[G]Any man who saw her [D7]would
+[G]She may be leaving me [C]today
+[D7]But she's leavin' looking [G]good
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 That uptown crowd weren't our crowd
 [C]Till he taught her the [D7]part
 [G]They took her in that's when she [C]started
 [D7]Breakin' this old heart
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 [G]Now she's wears no sign she hurt me
 [C]No guilt behind her [D7]smile
 [G]She's even learned to do me [C]wrong
 [D7]With such a sense of style
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]And I can't help but want her still
 [G]Any man who saw her [D7]would
 [G]She may be leaving me [C]today
 [D7]But she's leavin' looking [G]good
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 3}
+[C]And I can't help but want her still
+[G]Any man who saw her [D7]would
+[G]She may be leaving me [C]today
+[D7]But she's leavin' looking [G]good
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 [C]She may be leaving me today
 [D7]But she's leavin' looking [G]good
 {end_of_verse}

@@ -16,51 +16,44 @@ She wasn’t [D7]looking when he [C]caught her eye
 [Am]It’s getting scary [G]but she loves [C]how it [D7]feels
 {end_of_verse}
 
-{start_of_chorus}
-[G]Because she’s got a [D7]man on her [C]mind
-[G]Stirring in her [D7]soul taking [C]up all her time
-[G]She's got all the [D7]symptoms she's [Em]showing [D7]all the [C]signs
-[G]She's got a [D7]man on her [Em]mind
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[G]Because she’s got a [D7]man on her [C]mind
-[G]Stirring in her [D7]soul taking [C]up all her time
-[G]She's got all the [D7]symptoms she's [Em]showing [D7]all the [C]signs
-[G]She's got a [D7]man on her [Em]mind
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[G]Because she’s got a [D7]man on her [C]mind
-[G]Stirring in her [D7]soul taking [C]up all her time
-[G]She's got all the [D7]symptoms she's [Em]showing [D7]all the [C]signs
-[G]She's got a [D7]man on her [Em]mind
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[G]Because she’s got a [D7]man on her [C]mind
+[G]Stirring in her [D7]soul taking [C]up all her time
+[G]She's got all the [D7]symptoms she's [Em]showing [D7]all the [C]signs
+[G]She's got a [D7]man on her [Em]mind
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [G]She's seeing [D7]less and less and [C]less of the girls
 [G]Can't seem to [D7]fit ‘em into [C]her new world
 [G]Always the [D7]first to say that [C]love wouldn’t last
 [Am]Now she's the one that’s [G]falling and she’s [C]falling pretty [D7]fast
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [G]Because she’s got a [D7]man on her [C]mind
 [G]Stirring in her [D7]soul taking [C]up all her time
 [G]She's got all the [D7]symptoms she's [Em]showing [D7]all the [C]signs
 [G]She's got a [D7]man on her [Em]mind
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 [Em]It ain't been easy just [G]hanging tough
 Even [Am]harder under[G]standing why she [C]needs him so [D7]much
 [Em]She's not herself when [G]he's not around
 Why he's [Am]even got her [G]thinking 'bout [C]settlin' [D7]down
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [G]Because she’s got a [D7]man on her [C]mind
 [G]Stirring in her [D7]soul taking [C]up all her time
 [G]She's got all the [D7]symptoms she's [Em]showing [D7]all the [C]signs
 [G]She's got a [D7]man on her [Em]mind
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[G]Because she’s got a [D7]man on her [C]mind
+[G]Stirring in her [D7]soul taking [C]up all her time
+[G]She's got all the [D7]symptoms she's [Em]showing [D7]all the [C]signs
+[G]She's got a [D7]man on her [Em]mind
+{end_of_verse}

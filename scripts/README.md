@@ -2,6 +2,100 @@
 
 Utility scripts for the Bluegrass Songbook project.
 
+## regression_test.py ⭐ PRIMARY TESTING TOOL
+
+**Automated regression testing workflow. USE THIS for all parser changes.**
+
+Automates the complete pre/post comparison workflow:
+1. Creates baseline analysis from current output
+2. Runs batch process with your changes
+3. Creates post-change analysis
+4. Compares results and flags regressions
+5. Generates comprehensive summary
+
+### Usage
+
+```bash
+# Full regression test (recommended)
+python3 scripts/regression_test.py --name <change_description>
+
+# Example
+python3 scripts/regression_test.py --name repeat_fix
+
+# Skip baseline if already created
+python3 scripts/regression_test.py --name repeat_fix --skip-baseline
+
+# Rerun comparison only (after batch already completed)
+python3 scripts/regression_test.py --name repeat_fix --skip-baseline --skip-batch
+```
+
+### Output
+
+Creates two analysis directories:
+- `analysis_before_<name>/` - Baseline metrics, histograms, outlier reports
+- `analysis_after_<name>/` - Post-change metrics, histograms, outlier reports
+
+Prints to stdout:
+- Detailed change analysis (per-file breakdown)
+- Files flagged for review (>10% change in any metric)
+- Summary statistics comparison
+- Change categories (improved/degraded/neutral/fixed)
+- Overall assessment (POSITIVE/NEGATIVE/CAUTION)
+
+### When to Use
+
+**Required:** Every time you modify `src/chordpro_parser/parser.py`
+
+**Catches:**
+- Unintended side effects on unrelated files
+- Regressions in verse boundary detection
+- Chord extraction failures
+- Changes in output quality
+
+### Workflow
+
+```bash
+# 1. Make parser changes
+vim src/chordpro_parser/parser.py
+
+# 2. Run regression test
+python3 scripts/regression_test.py --name my_change
+
+# 3. Review output
+#    - Check for regressions
+#    - Review files flagged for manual inspection
+#    - Verify changes are intentional
+
+# 4a. If clean, commit both parser and output
+git add src/chordpro_parser/parser.py output/
+git commit -m "Fix: description"
+
+# 4b. If regressions found, rollback
+git checkout HEAD -- output/              # Rollback all changes
+git checkout HEAD -- output/bad_file.pro  # Rollback specific files
+```
+
+### Git Integration
+
+The regression test **automatically checks git status** and warns if `output/` has uncommitted changes.
+
+**Since output/ is tracked in git**, you have two rollback options:
+
+1. **Fast rollback** - Restore from git (instant):
+   ```bash
+   git checkout HEAD -- output/
+   ```
+
+2. **Regenerate** - Revert parser code and rebuild (~3 min):
+   ```bash
+   git checkout HEAD -- src/chordpro_parser/parser.py
+   uv run python3 batch_process.py
+   ```
+
+**Best practice:** Commit `output/` changes along with parser changes, so git history shows which parser version produced which output.
+
+---
+
 ## validator.py
 
 Analyzes parsed ChordPro files to find potential parsing errors by identifying statistical outliers.

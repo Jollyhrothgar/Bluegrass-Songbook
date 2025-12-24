@@ -45,3 +45,10 @@ You've got to [F]learn to let it go [C]when love lets you down
 [F]With a love that's [G7]gonna bring you [C]around 
 [F]Only [C]love is gonna [G7]bring you [C]around
 {end_of_verse}
+
+{start_of_verse: Verse 3}
+You've got to [F]learn to let it go [C]when love lets you down
+[F]Learn to let it go so you [C]don't miss the one waiting to be [Am]found
+[F]With a love that's [G7]gonna bring you [C]around 
+[F]Only [C]love is gonna [G7]bring you [C]around
+{end_of_verse}

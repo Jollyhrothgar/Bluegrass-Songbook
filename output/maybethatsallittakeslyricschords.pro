@@ -16,37 +16,30 @@
 [C]You learn to [F]forgive and just go [G7]on
 {end_of_verse}
 
-{start_of_chorus}
-[C]Maybe that's [F]a-ll it [C]takes
-[D7]Just lettin' go of the old [G7]mistakes
-[F]Holdin' on tight to the love we [C]make
-[F]Maybe that's all [G7]it [C]takes
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Maybe that's [F]a-ll it [C]takes
-[D7]Just lettin' go of the old [G7]mistakes
-[F]Holdin' on tight to the love we [C]make
-[F]Maybe that's all [G7]it [C]takes
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Maybe that's [F]a-ll it [C]takes
-[D7]Just lettin' go of the old [G7]mistakes
-[F]Holdin' on tight to the love we [C]make
-[F]Maybe that's all [G7]it [C]takes
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]Maybe that's [F]a-ll it [C]takes
+[D7]Just lettin' go of the old [G7]mistakes
+[F]Holdin' on tight to the love we [C]make
+[F]Maybe that's all [G7]it [C]takes
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [F]We've done our share of slamming [G7]doors
 [C]And wondering [F]what we're together [G7]for
 [F]Yes we've [C]been [F]through a [C]tear or [F][G7]two
 [C]And for every [F]tear I'll love you [G7]more
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]Maybe that's [F]a-ll it [C]takes
 [D7]Just lettin' go of the old [G7]mistakes
 [F]Holdin' on tight to the love we [C]make
 [F]Maybe that's all [G7]it [C]takes
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C]Maybe that's [F]a-ll it [C]takes
+[D7]Just lettin' go of the old [G7]mistakes
+[F]Holdin' on tight to the love we [C]make
+[F]Maybe that's all [G7]it [C]takes
+{end_of_verse}

@@ -28,3 +28,10 @@
 [C]I’m gonna have a mansion [F]on a street of [C]gold
 [G7]And love of Jesus is going to be my [C]life
 {end_of_verse}
+
+{start_of_verse: Verse 2}
+[F]According to the bible every joy I’m [C]told
+[D7]I’ll know my friends up there on [G7]sight
+[C]I’m gonna have a mansion [F]on a street of [C]gold
+[G7]And love of Jesus is going to be my [C]life
+{end_of_verse}

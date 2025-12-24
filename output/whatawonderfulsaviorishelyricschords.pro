@@ -8,41 +8,34 @@ Broke the chains of Satan setting me free
 What a wonderful [D7]Savior is [G]He
 {end_of_verse}
 
-{start_of_chorus}
-What a wonderful Savior is He
-What a wonderful [A7]Savior to [D7]me
-[G]How He loved me so I never could see
-What a wonderful [D7]Savior is [G]He
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-What a wonderful Savior is He
-What a wonderful [A7]Savior to [D7]me
-[G]How He loved me so I never could see
-What a wonderful [D7]Savior is [G]He
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-What a wonderful Savior is He
-What a wonderful [A7]Savior to [D7]me
-[G]How He loved me so I never could see
-What a wonderful [D7]Savior is [G]He
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+What a wonderful Savior is He
+What a wonderful [A7]Savior to [D7]me
+[G]How He loved me so I never could see
+What a wonderful [D7]Savior is [G]He
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Weak unworthy I was wandering that day
 With the light of love that [D7]shown on my [G]way
 Just as sinful as a sinner could be
 What a wonderful [D7]Savior is [G]He
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 What a wonderful Savior is He
 What a wonderful [A7]Savior to [D7]me
 [G]How He loved me so I never could see
 What a wonderful [D7]Savior is [G]He
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+What a wonderful Savior is He
+What a wonderful [A7]Savior to [D7]me
+[G]How He loved me so I never could see
+What a wonderful [D7]Savior is [G]He
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 What a wonderful [D7]Savior is [G]He
 {end_of_verse}

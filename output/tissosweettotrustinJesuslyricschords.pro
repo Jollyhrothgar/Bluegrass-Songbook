@@ -16,30 +16,23 @@ Jesus Jesus how [F]I trust [G7]Him
 O for [F]grace to [G7]trust Him [C]more
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 I'm so glad I learned [F]to trust [C]Him
 Precious Jesus [F]Savior and [G7]friend
 [C]And I know that He [F]is with [C]me
 Will be [F]with me [G7]to the [C]end
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_chorus: Repeat 1}
+{start_of_verse: Verse 3}
 I'm so glad I learned [F]to trust [C]Him
 Precious Jesus [F]Savior and [G7]friend
 [C]And I know that He [F]is with [C]me
 Will be [F]with me [G7]to the [C]end
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_chorus: Repeat 2}
+{start_of_verse: Verse 3}
 I'm so glad I learned [F]to trust [C]Him
 Precious Jesus [F]Savior and [G7]friend
 [C]And I know that He [F]is with [C]me
 Will be [F]with me [G7]to the [C]end
-{end_of_chorus}
-
-{start_of_chorus}
-I'm so glad I learned [F]to trust [C]Him
-Precious Jesus [F]Savior and [G7]friend
-[C]And I know that He [F]is with [C]me
-Will be [F]with me [G7]to the [C]end
-{end_of_chorus}
+{end_of_verse}

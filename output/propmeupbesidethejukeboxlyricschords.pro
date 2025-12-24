@@ -41,3 +41,10 @@ Lord I wanna go to heaven but I don't [D7]wanna go tonight
 [G]Fill my boots [G7]up with sand [C]put a stiff drink in my [C7]hand
 Prop me [G]up beside the [D7]jukebox if I [G]die
 {end_of_verse}
+
+{start_of_verse: Verse 2}
+[G]Prop me up beside the jukebox if I die
+Lord I wanna go to heaven but I don't [D7]wanna go tonight
+[G]Fill my boots [G7]up with sand [C]put a stiff drink in my [C7]hand
+Prop me [G]up beside the [D7]jukebox if I [G]die
+{end_of_verse}

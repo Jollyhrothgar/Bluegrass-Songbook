@@ -9,42 +9,28 @@ They say [C]World War III is a [F]comin' any [C]day
 But me I couldn't care [G7]less either [C]way
 {end_of_verse}
 
-{start_of_chorus}
-I ain't got time to be unhappy
-I [G7]ain't got time to be unhappy
-[C]Lovin' you makes me wanna [F]slap my [C]pappy
-And I ain't got time [G7]to be [C]unhappy
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I ain't got time to be unhappy
-I [G7]ain't got time to be unhappy
-[C]Lovin' you makes me wanna [F]slap my [C]pappy
-And I ain't got time [G7]to be [C]unhappy
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I ain't got time to be unhappy
-I [G7]ain't got time to be unhappy
-[C]Lovin' you makes me wanna [F]slap my [C]pappy
-And I ain't got time [G7]to be [C]unhappy
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+I ain't got time to be unhappy
+I [G7]ain't got time to be unhappy
+[C]Lovin' you makes me wanna [F]slap my [C]pappy
+And I ain't got time [G7]to be [C]unhappy
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 The world keeps changin' everyday
 But things in the heart stay the same ole [G7]way
 A rocket to the [C]moon and [F]filter [C]cigarettes
 Ain't had n[G7]o effect on[C] my life as yet
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 I ain't got time to be unhappy
 I [G7]ain't got time to be unhappy
 [C]Lovin' you makes me wanna [F]slap my [C]pappy
 And I ain't got time [G7]to be [C]unhappy
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 So take my advice if you ever get blue
 Find a little girl that just digs [G7]you
 Live on [C]love let [F]the world [C]be

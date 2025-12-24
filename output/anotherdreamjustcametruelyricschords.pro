@@ -9,44 +9,37 @@
 [C]The moment I first [D7]looked into your [G]eyes
 {end_of_verse}
 
-{start_of_chorus}
-[A7]Another dream just came true another dream just came true
-[C]Right out of the blue another [G]dream [D7]just came [G]true
-[A7]Another dream just came true another dream just came true
-[C]Lying next to you another [G]dream [D7]just came [G]true
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[A7]Another dream just came true another dream just came true
-[C]Right out of the blue another [G]dream [D7]just came [G]true
-[A7]Another dream just came true another dream just came true
-[C]Lying next to you another [G]dream [D7]just came [G]true
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[A7]Another dream just came true another dream just came true
-[C]Right out of the blue another [G]dream [D7]just came [G]true
-[A7]Another dream just came true another dream just came true
-[C]Lying next to you another [G]dream [D7]just came [G]true
-{end_of_chorus}
-
-{start_of_chorus: Repeat 3}
-[A7]Another dream just came true another dream just came true
-[C]Right out of the blue another [G]dream [D7]just came [G]true
-[A7]Another dream just came true another dream just came true
-[C]Lying next to you another [G]dream [D7]just came [G]true
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[A7]Another dream just came true another dream just came true
+[C]Right out of the blue another [G]dream [D7]just came [G]true
+[A7]Another dream just came true another dream just came true
+[C]Lying next to you another [G]dream [D7]just came [G]true
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [A7]Never thought that I would find anyone
 [C]Who could be so much a [D7]lover and a [G]friend
 [A7]But now I know I've found my own special one
 [C]I won't ever [D7]have to look [G]again
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [A7]Another dream just came true another dream just came true
 [C]Right out of the blue another [G]dream [D7]just came [G]true
 [A7]Another dream just came true another dream just came true
 [C]Lying next to you another [G]dream [D7]just came [G]true
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[A7]Another dream just came true another dream just came true
+[C]Right out of the blue another [G]dream [D7]just came [G]true
+[A7]Another dream just came true another dream just came true
+[C]Lying next to you another [G]dream [D7]just came [G]true
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[A7]Another dream just came true another dream just came true
+[C]Right out of the blue another [G]dream [D7]just came [G]true
+[A7]Another dream just came true another dream just came true
+[C]Lying next to you another [G]dream [D7]just came [G]true
+{end_of_verse}

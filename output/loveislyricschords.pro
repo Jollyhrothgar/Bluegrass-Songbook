@@ -9,40 +9,33 @@
 [F]Love is a [G7]heart a[C]bused [F]love is a [G7]mind con[C]fused
 {end_of_verse}
 
-{start_of_chorus}
-And [F]love is the pleasures I'm told
-And for [C]some [G7]love is still a band of [C]gold
-My [G7]love has no [Am]reason has no [F]rhyme
-[C]My [G7]love cross the [F]double [C]line
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-And [F]love is the pleasures I'm told
-And for [C]some [G7]love is still a band of [C]gold
-My [G7]love has no [Am]reason has no [F]rhyme
-[C]My [G7]love cross the [F]double [C]line
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-And [F]love is the pleasures I'm told
-And for [C]some [G7]love is still a band of [C]gold
-My [G7]love has no [Am]reason has no [F]rhyme
-[C]My [G7]love cross the [F]double [C]line
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+And [F]love is the pleasures I'm told
+And for [C]some [G7]love is still a band of [C]gold
+My [G7]love has no [Am]reason has no [F]rhyme
+[C]My [G7]love cross the [F]double [C]line
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [F]Love is a [G7]mine of [C]gold [F]love is a [G7]man to [C]hold
 [F]Love is a [G7]drowning [C]soul [F]love is [G7]its own [C]reward
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 And [F]love is the pleasures I'm told
 And for [C]some [G7]love is still a band of [C]gold
 My [G7]love has no [Am]reason has no [F]rhyme
 [C]My [G7]love cross the [F]double [C]line
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+And [F]love is the pleasures I'm told
+And for [C]some [G7]love is still a band of [C]gold
+My [G7]love has no [Am]reason has no [F]rhyme
+[C]My [G7]love cross the [F]double [C]line
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Oh my [G7]love cross the [F]double [C]line
 Oh my [G7]love cross the [F]double [C]line
 {end_of_verse}

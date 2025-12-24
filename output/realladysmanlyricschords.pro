@@ -15,35 +15,30 @@ Has always tempted [C]fools
 It can't compare with [G]what you [D7]stand to [G]lose
 {end_of_verse}
 
-{start_of_chorus}
-Re[C]member the [G]promise you [C]wear on your left [Em]hand
-[C]Cheatings no [G]companion for a [D7]real lady's [G]man
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Re[C]member the [G]promise you [C]wear on your left [Em]hand
-[C]Cheatings no [G]companion for a [D7]real lady's [G]man
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Re[C]member the [G]promise you [C]wear on your left [Em]hand
-[C]Cheatings no [G]companion for a [D7]real lady's [G]man
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Re[C]member the [G]promise you [C]wear on your left [Em]hand
+[C]Cheatings no [G]companion for a [D7]real lady's [G]man
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 If only [C]I had [G]listened 
 To my [C]own words of [G]advice
 And turned down the [C]invi[G]tation 
 In [D7]another woman's eyes
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 For the [G]softness [C]of a [G]stranger 
 I threw good love [C]away
 Friend there ain't no [G]higher [D7]price to [G]pay
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Re[C]member the [G]promise you [C]wear on your left [Em]hand
 [C]Cheatings no [G]companion for a [D7]real lady's [G]man
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Re[C]member the [G]promise you [C]wear on your left [Em]hand
+[C]Cheatings no [G]companion for a [D7]real lady's [G]man
+{end_of_verse}

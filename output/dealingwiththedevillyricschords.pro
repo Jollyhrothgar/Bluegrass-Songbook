@@ -16,51 +16,43 @@ I'm not dancing with those [C]demons
 I'm not [D7]dealing with the devil [G]anymore
 {end_of_verse}
 
-{start_of_chorus}
-Go to [C]sleep my weary [G]lady
-Heaven [C]knows you've done your [G]chore
-You were [C]sent here just [G]to save [Em]me
-I'm not dancing with those [C]demons
-I'm not [D7]dealing with the devil [G]anymore
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Go to [C]sleep my weary [G]lady
-Heaven [C]knows you've done your [G]chore
-You were [C]sent here just [G]to save [Em]me
-I'm not dancing with those [C]demons
-I'm not [D7]dealing with the devil [G]anymore
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Go to [C]sleep my weary [G]lady
-Heaven [C]knows you've done your [G]chore
-You were [C]sent here just [G]to save [Em]me
-I'm not dancing with those [C]demons
-I'm not [D7]dealing with the devil [G]anymore
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Go to [C]sleep my weary [G]lady
+Heaven [C]knows you've done your [G]chore
+You were [C]sent here just [G]to save [Em]me
+I'm not dancing with those [C]demons
+I'm not [D7]dealing with the devil [G]anymore
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I live for the whiskey
 And the [D7]good time and the [C]ladies of the [G]night
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Then the whiskey took control
 And left me [D7]waltzing with the [C]witches in my [G]mind
 {end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 6}
 [C]Imaginary bottles fill my empty pockets 
 Lying on the [Em][G]floor
 I'm not dancing with those [C]demons
 I'm not [D7]dealing with the devil [G]anymore
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Go to [C]sleep my weary [G]lady
 Heaven [C]knows you've done your [G]chore
 You were [C]sent here just [G]to save [Em]me
 I'm not dancing with those [C]demons
 I'm not [D7]dealing with the devil [G]anymore
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Go to [C]sleep my weary [G]lady
+Heaven [C]knows you've done your [G]chore
+You were [C]sent here just [G]to save [Em]me
+I'm not dancing with those [C]demons
+I'm not [D7]dealing with the devil [G]anymore
+{end_of_verse}

@@ -523,11 +523,24 @@ class ContentExtractor:
             if span.find('big') or span.find_parent(['h1', 'h2', 'h3']):
                 continue
 
-            # Check for repeat instructions (supports "Repeat #4", "Repeat #4,5", etc.)
-            repeat_match = re.search(r'repeat\s+#?([\d,\s]+)', text, re.I)
-            if repeat_match:
-                # Parse comma-separated verse numbers
-                verse_nums_str = repeat_match.group(1).replace(' ', '')
+            # Check for repeat instructions
+            # Support "Repeat #3 x 4" (repeat verse 3, 4 times) and "Repeat #4,5" (repeat verses 4 and 5)
+            repeat_match_multiplier = re.search(r'repeat\s+#?(\d+)\s*x\s*(\d+)', text, re.I)
+            repeat_match_comma = re.search(r'repeat\s+#?([\d,\s]+)', text, re.I)
+
+            if repeat_match_multiplier:
+                # "Repeat #3 x 4" - repeat verse 3 four times
+                verse_num = int(repeat_match_multiplier.group(1))
+                repeat_count = int(repeat_match_multiplier.group(2))
+
+                # Add repeat marker multiple times
+                for _ in range(repeat_count):
+                    items.append({'type': 'repeat', 'verse_num': verse_num})
+                found_song_content = True
+                continue
+            elif repeat_match_comma:
+                # "Repeat #4,5" - repeat verses 4 and 5
+                verse_nums_str = repeat_match_comma.group(1).replace(' ', '')
                 verse_nums = [int(n) for n in verse_nums_str.split(',') if n.strip()]
 
                 # Add repeat marker for each verse number
@@ -791,11 +804,24 @@ class ContentExtractor:
                             # Large span without br tags - likely boilerplate
                             continue
 
-                        # Check for repeat instructions (supports "Repeat #4", "Repeat #4,5", etc.)
-                        repeat_match = re.search(r'repeat\s+#?([\d,\s]+)', text, re.I)
-                        if repeat_match:
-                            # Parse comma-separated verse numbers
-                            verse_nums_str = repeat_match.group(1).replace(' ', '')
+                        # Check for repeat instructions
+                        # Support "Repeat #3 x 4" (repeat verse 3, 4 times) and "Repeat #4,5" (repeat verses 4 and 5)
+                        repeat_match_multiplier = re.search(r'repeat\s+#?(\d+)\s*x\s*(\d+)', text, re.I)
+                        repeat_match_comma = re.search(r'repeat\s+#?([\d,\s]+)', text, re.I)
+
+                        if repeat_match_multiplier:
+                            # "Repeat #3 x 4" - repeat verse 3 four times
+                            verse_num = int(repeat_match_multiplier.group(1))
+                            repeat_count = int(repeat_match_multiplier.group(2))
+
+                            # Add repeat marker multiple times
+                            for _ in range(repeat_count):
+                                items.append({'type': 'repeat', 'verse_num': verse_num})
+                            found_song_content_ref[0] = True
+                            continue
+                        elif repeat_match_comma:
+                            # "Repeat #4,5" - repeat verses 4 and 5
+                            verse_nums_str = repeat_match_comma.group(1).replace(' ', '')
                             verse_nums = [int(n) for n in verse_nums_str.split(',') if n.strip()]
 
                             # Add repeat marker for each verse number
@@ -856,10 +882,26 @@ class ContentExtractor:
                                         continue
                                     
                                     # Check for repeat instructions
-                                    repeat_match = re.search(r'repeat\s+#?([\d,\s]+)', span_text, re.I)
-                                    if repeat_match:
-                                        verse_nums_str = repeat_match.group(1).replace(' ', '')
+                                    # Support "Repeat #3 x 4" (repeat verse 3, 4 times) and "Repeat #4,5" (repeat verses 4 and 5)
+                                    repeat_match_multiplier = re.search(r'repeat\s+#?(\d+)\s*x\s*(\d+)', span_text, re.I)
+                                    repeat_match_comma = re.search(r'repeat\s+#?([\d,\s]+)', span_text, re.I)
+
+                                    if repeat_match_multiplier:
+                                        # "Repeat #3 x 4" - repeat verse 3 four times
+                                        verse_num = int(repeat_match_multiplier.group(1))
+                                        repeat_count = int(repeat_match_multiplier.group(2))
+
+                                        # Add repeat marker multiple times
+                                        for _ in range(repeat_count):
+                                            items.append({'type': 'repeat', 'verse_num': verse_num})
+                                        found_song_content_ref[0] = True
+                                        continue
+                                    elif repeat_match_comma:
+                                        # "Repeat #4,5" - repeat verses 4 and 5
+                                        verse_nums_str = repeat_match_comma.group(1).replace(' ', '')
                                         verse_nums = [int(n) for n in verse_nums_str.split(',') if n.strip()]
+
+                                        # Add repeat marker for each verse number
                                         for verse_num in verse_nums:
                                             items.append({'type': 'repeat', 'verse_num': verse_num})
                                         found_song_content_ref[0] = True
@@ -903,11 +945,24 @@ class ContentExtractor:
                             len(text) > 150):
                             continue
 
-                        # Check for repeat instructions (supports "Repeat #4", "Repeat #4,5", etc.)
-                        repeat_match = re.search(r'repeat\s+#?([\d,\s]+)', text, re.I)
-                        if repeat_match:
-                            # Parse comma-separated verse numbers
-                            verse_nums_str = repeat_match.group(1).replace(' ', '')
+                        # Check for repeat instructions
+                        # Support "Repeat #3 x 4" (repeat verse 3, 4 times) and "Repeat #4,5" (repeat verses 4 and 5)
+                        repeat_match_multiplier = re.search(r'repeat\s+#?(\d+)\s*x\s*(\d+)', text, re.I)
+                        repeat_match_comma = re.search(r'repeat\s+#?([\d,\s]+)', text, re.I)
+
+                        if repeat_match_multiplier:
+                            # "Repeat #3 x 4" - repeat verse 3 four times
+                            verse_num = int(repeat_match_multiplier.group(1))
+                            repeat_count = int(repeat_match_multiplier.group(2))
+
+                            # Add repeat marker multiple times
+                            for _ in range(repeat_count):
+                                items.append({'type': 'repeat', 'verse_num': verse_num})
+                            found_song_content_ref[0] = True
+                            continue
+                        elif repeat_match_comma:
+                            # "Repeat #4,5" - repeat verses 4 and 5
+                            verse_nums_str = repeat_match_comma.group(1).replace(' ', '')
                             verse_nums = [int(n) for n in verse_nums_str.split(',') if n.strip()]
 
                             # Add repeat marker for each verse number
@@ -1121,16 +1176,36 @@ class ContentExtractor:
                 i += 1
                 continue
 
-            # Check for repeat instructions (supports "Repeat #4", "Repeat #4,5", etc.)
-            repeat_match = re.search(r'repeat\s+#?([\d,\s]+)', line, re.I)
-            if repeat_match:
+            # Check for repeat instructions
+            # Support "Repeat #3 x 4" (repeat verse 3, 4 times) and "Repeat #4,5" (repeat verses 4 and 5)
+            repeat_match_multiplier = re.search(r'repeat\s+#?(\d+)\s*x\s*(\d+)', line, re.I)
+            repeat_match_comma = re.search(r'repeat\s+#?([\d,\s]+)', line, re.I)
+
+            if repeat_match_multiplier:
                 # Close current paragraph if any
                 if current_paragraph_lines:
                     paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
                     current_paragraph_lines = []
 
-                # Parse comma-separated verse numbers
-                verse_nums_str = repeat_match.group(1).replace(' ', '')
+                # "Repeat #3 x 4" - repeat verse 3 four times
+                verse_num = int(repeat_match_multiplier.group(1))
+                repeat_count = int(repeat_match_multiplier.group(2))
+
+                # Add repeat marker multiple times
+                for _ in range(repeat_count):
+                    paragraphs.append(Paragraph(lines=[
+                        SongLine(lyrics=f"REPEAT_VERSE_{verse_num}", chords=[])
+                    ]))
+                i += 1
+                continue
+            elif repeat_match_comma:
+                # Close current paragraph if any
+                if current_paragraph_lines:
+                    paragraphs.append(Paragraph(lines=current_paragraph_lines, section_type=current_section_type))
+                    current_paragraph_lines = []
+
+                # "Repeat #4,5" - repeat verses 4 and 5
+                verse_nums_str = repeat_match_comma.group(1).replace(' ', '')
                 verse_nums = [int(n) for n in verse_nums_str.split(',') if n.strip()]
 
                 # Add repeat marker for each verse number
@@ -1245,27 +1320,18 @@ class ContentExtractor:
         else:
             paragraphs = []
 
-        # Extract repeat instructions
-        repeat_text, repeat_info = ContentExtractor.extract_repeat_instructions(soup)
+        # NOTE: Repeat instructions are now handled inline by the individual parsers
+        # (parse_span_br_structure, parse_pre_tag_structure, parse_pre_plain_structure)
+        # which create REPEAT_VERSE_N marker paragraphs. The ChordProGenerator expands these.
+        # The old top-level extract_repeat_instructions() approach has been disabled.
 
-        # Build playback sequence
-        if repeat_info:
-            para_idx, repeat_count = repeat_info
-            # Default sequence
-            playback_sequence = list(range(len(paragraphs)))
-            # Insert repeats after the original occurrence
-            if para_idx < len(paragraphs):
-                insert_pos = para_idx + 1
-                for _ in range(repeat_count):
-                    playback_sequence.insert(insert_pos, para_idx)
-                    insert_pos += 1
-        else:
-            playback_sequence = list(range(len(paragraphs)))
+        # Build playback sequence (simple sequential order)
+        playback_sequence = list(range(len(paragraphs)))
 
         song_content = SongContent(
             paragraphs=paragraphs,
             playback_sequence=playback_sequence,
-            raw_repeat_instruction_text=repeat_text
+            raw_repeat_instruction_text=None  # Now handled inline by parsers
         )
 
         return Song(

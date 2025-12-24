@@ -16,44 +16,37 @@ But last night when she took me [Am]in her arms
 [F]The way she [G7]whispered my [C]name
 {end_of_verse}
 
-{start_of_chorus}
-She reminded me of [F]you
-All the [G7]love that we once [C]knew
-All the little things you [F]used to do
-She [G7]reminded me of [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-She reminded me of [F]you
-All the [G7]love that we once [C]knew
-All the little things you [F]used to do
-She [G7]reminded me of [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-She reminded me of [F]you
-All the [G7]love that we once [C]knew
-All the little things you [F]used to do
-She [G7]reminded me of [C]you
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+She reminded me of [F]you
+All the [G7]love that we once [C]knew
+All the little things you [F]used to do
+She [G7]reminded me of [C]you
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 And if she knew that we were [F]talking
 [C]The truth would tear her [F]up
 She knows that I still [Am]think of you
 Ah honey but she [F]doesn't know [G7]how much
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 [C]I pretended I was [F]with you
 [C]But I didn't let it [F]show
 Last night I let her [Am]take your place
 [F]But I'll never [G7]let her [C]know
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 She reminded me of [F]you
 All the [G7]love that we once [C]knew
 All the little things you [F]used to do
 She [G7]reminded me of [C]you
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+She reminded me of [F]you
+All the [G7]love that we once [C]knew
+All the little things you [F]used to do
+She [G7]reminded me of [C]you
+{end_of_verse}

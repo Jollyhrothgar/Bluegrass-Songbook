@@ -16,42 +16,35 @@ I’ll take you in my arms like yesterday
 [D7]And love the hurt away
 {end_of_verse}
 
-{start_of_chorus}
-Let’s [G]make it like the [Am]first [D7]time[Am]
-[D7]Turning back the [G]hands of time
-Baby let that [Am]love light [D7]shine[Am]
-And [D7]make it like the [C]first [G]time[D7]
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Let’s [G]make it like the [Am]first [D7]time[Am]
-[D7]Turning back the [G]hands of time
-Baby let that [Am]love light [D7]shine[Am]
-And [D7]make it like the [C]first [G]time[D7]
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Let’s [G]make it like the [Am]first [D7]time[Am]
-[D7]Turning back the [G]hands of time
-Baby let that [Am]love light [D7]shine[Am]
-And [D7]make it like the [C]first [G]time[D7]
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Let’s [G]make it like the [Am]first [D7]time[Am]
+[D7]Turning back the [G]hands of time
+Baby let that [Am]love light [D7]shine[Am]
+And [D7]make it like the [C]first [G]time[D7]
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [D7]Tomorrow waits [G]outside while we have tonight
 Let’s forget our [C]pride and who was wrong or [Am]right
 That’s a crazy game that lovers play 
 [D7]And nobody wins that way 
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Let’s [G]make it like the [Am]first [D7]time[Am]
 [D7]Turning back the [G]hands of time
 Baby let that [Am]love light [D7]shine[Am]
 And [D7]make it like the [C]first [G]time[D7]
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+Let’s [G]make it like the [Am]first [D7]time[Am]
+[D7]Turning back the [G]hands of time
+Baby let that [Am]love light [D7]shine[Am]
+And [D7]make it like the [C]first [G]time[D7]
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 [G]Baby let that [Am]love light [D7]shine[Am]
 And [D7]make it like the [C]first [G]time
 {end_of_verse}

@@ -30,65 +30,58 @@ We knew the girls at every [C]dance-hall
 Had a [G7]tab at every [C]bar
 {end_of_verse}
 
-{start_of_chorus}
-If I could live my life all [G7]over
-[F]It wouldn't matter [C]anyway
-Cause I never could stay [G7]sober
-On the Corpus Christi [C]Bay
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-If I could live my life all [G7]over
-[F]It wouldn't matter [C]anyway
-Cause I never could stay [G7]sober
-On the Corpus Christi [C]Bay
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-If I could live my life all [G7]over
-[F]It wouldn't matter [C]anyway
-Cause I never could stay [G7]sober
-On the Corpus Christi [C]Bay
-{end_of_chorus}
-
 {start_of_verse: Verse 5}
+If I could live my life all [G7]over
+[F]It wouldn't matter [C]anyway
+Cause I never could stay [G7]sober
+On the Corpus Christi [C]Bay
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 My brother had a wife and family
 You know he gave them a good [F]home
 But his wife thought we were [C]crazy
 And one [G7]day we found them [C]gone
 {end_of_verse}
 
-{start_of_verse: Verse 6}
+{start_of_verse: Verse 7}
 We threw her clothes into the car trunk
 Her photographs her rosa[F]ry
 We went out to the pier and got [C]drunk
 And threw [G7]it all into the [C]sea
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 5}
 If I could live my life all [G7]over
 [F]It wouldn't matter [C]anyway
 Cause I never could stay [G7]sober
 On the Corpus Christi [C]Bay
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 7}
+{start_of_verse: Verse 8}
 Now my brother lives in Houston
 He married for the second [F]time
 He got a good job with the [C]union
 And it's keeping him in [G7]line
 {end_of_verse}
 
-{start_of_verse: Verse 8}
+{start_of_verse: Verse 9}
 He came to [C]Corpus just this weekend
 It was good to see him [F]here
 He said he finally gave up [C]drinking
 Then he [G7]ordered me a [C]beer
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 5}
 If I could live my life all [G7]over
 [F]It wouldn't matter [C]anyway
 Cause I never could stay [G7]sober
 On the Corpus Christi [C]Bay
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 5}
+If I could live my life all [G7]over
+[F]It wouldn't matter [C]anyway
+Cause I never could stay [G7]sober
+On the Corpus Christi [C]Bay
+{end_of_verse}

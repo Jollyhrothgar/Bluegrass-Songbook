@@ -16,41 +16,34 @@ I can [F]almost feel that warm southern [Em]breeze
 I got a [F]yearnin' to be [G7]free Delta [C]Queen
 {end_of_verse}
 
-{start_of_chorus}
-[Am]Delta Queen [F]rollin' along
-[Am]Delta Queen [F]whistelin' a song
-[C]Say bye-bye worries leave 'em [F]all up [Em]stream
-[Dm]Carry me [G7]away Delta [C]Queen
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[Am]Delta Queen [F]rollin' along
-[Am]Delta Queen [F]whistelin' a song
-[C]Say bye-bye worries leave 'em [F]all up [Em]stream
-[Dm]Carry me [G7]away Delta [C]Queen
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[Am]Delta Queen [F]rollin' along
-[Am]Delta Queen [F]whistelin' a song
-[C]Say bye-bye worries leave 'em [F]all up [Em]stream
-[Dm]Carry me [G7]away Delta [C]Queen
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[Am]Delta Queen [F]rollin' along
+[Am]Delta Queen [F]whistelin' a song
+[C]Say bye-bye worries leave 'em [F]all up [Em]stream
+[Dm]Carry me [G7]away Delta [C]Queen
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Magnolia blossom honey [D7]suckle vine
 There's a [F]place that's waitin' just for [Em]me
 [C]Stars shine like diamonds in that [D7]southern sky
 For [F]me and my [G7]Delta [C]Queen
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [Am]Delta Queen [F]rollin' along
 [Am]Delta Queen [F]whistelin' a song
 [C]Say bye-bye worries leave 'em [F]all up [Em]stream
 [Dm]Carry me [G7]away Delta [C]Queen
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+[Am]Delta Queen [F]rollin' along
+[Am]Delta Queen [F]whistelin' a song
+[C]Say bye-bye worries leave 'em [F]all up [Em]stream
+[Dm]Carry me [G7]away Delta [C]Queen
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 [G7]Delta [C]Queen
 {end_of_verse}

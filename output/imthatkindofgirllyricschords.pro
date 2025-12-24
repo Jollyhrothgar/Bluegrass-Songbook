@@ -12,28 +12,14 @@ Saying [G7]baby put on something hot
 [F]But if you wanna make real romance
 {end_of_verse}
 
-{start_of_chorus}
-[G7]I'm that kind of [C]girl [F]  [C]  I'm [G7]that kind of [C]girl[F]
-I ain't the [G7]woman in [C]red I ain't the [F]girl next [C]door
-But if some[G7]where in the [C]middle's what you're [F]looking for
-I'm [G7]that kind of [C]girl [F]  yes I'm [G7]that kind of [C]girl[F]
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[G7]I'm that kind of [C]girl [F]  [C]  I'm [G7]that kind of [C]girl[F]
-I ain't the [G7]woman in [C]red I ain't the [F]girl next [C]door
-But if some[G7]where in the [C]middle's what you're [F]looking for
-I'm [G7]that kind of [C]girl [F]  yes I'm [G7]that kind of [C]girl[F]
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[G7]I'm that kind of [C]girl [F]  [C]  I'm [G7]that kind of [C]girl[F]
-I ain't the [G7]woman in [C]red I ain't the [F]girl next [C]door
-But if some[G7]where in the [C]middle's what you're [F]looking for
-I'm [G7]that kind of [C]girl [F]  yes I'm [G7]that kind of [C]girl[F]
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[G7]I'm that kind of [C]girl [F]  [C]  I'm [G7]that kind of [C]girl[F]
+I ain't the [G7]woman in [C]red I ain't the [F]girl next [C]door
+But if some[G7]where in the [C]middle's what you're [F]looking for
+I'm [G7]that kind of [C]girl [F]  yes I'm [G7]that kind of [C]girl[F]
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Let me [G7]tell ya that I [C]like my lovin' 
 [F]Just as much as [C]any woman [G7]but I'm [C]drawin' the [F]line
 [G7]A little sensi[C]tivity [F]always seems to [C]get to me[G7]    [C]every [F]time
@@ -43,14 +29,21 @@ Let me [G7]tell ya that I [C]like my lovin'
 [F]But if you're looking for real romance
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [G7]I'm that kind of [C]girl [F]  [C]  I'm [G7]that kind of [C]girl[F]
 I ain't the [G7]woman in [C]red I ain't the [F]girl next [C]door
 But if some[G7]where in the [C]middle's what you're [F]looking for
 I'm [G7]that kind of [C]girl [F]  yes I'm [G7]that kind of [C]girl[F]
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+[G7]I'm that kind of [C]girl [F]  [C]  I'm [G7]that kind of [C]girl[F]
+I ain't the [G7]woman in [C]red I ain't the [F]girl next [C]door
+But if some[G7]where in the [C]middle's what you're [F]looking for
+I'm [G7]that kind of [C]girl [F]  yes I'm [G7]that kind of [C]girl[F]
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I'm [G7]that [C]kind of [F]girl [C]   [G7]oh [C]  [F]oh 
 I'm [G7]that [C]kind of [F]girl [C]   [G7]oh [C]  [F]oh [G7]   [C]
 {end_of_verse}

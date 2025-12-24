@@ -17,48 +17,43 @@
 [G]One by one our [C]dreams are coming [D7]true
 {end_of_verse}
 
-{start_of_chorus}
-[G]Love finds its own way
-[D7]Through the darkest [G]nights
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[G]Love finds its own way
-[D7]Through the darkest [G]nights
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[G]Love finds its own way
-[D7]Through the darkest [G]nights
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[G]Love finds its own way
+[D7]Through the darkest [G]nights
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Love finds its own way
 [D7]It needs no guiding [G]light
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 [C]It only needs two [G]people
 [Am]With a [D7]dream and endless [G]faith
 [C]And [D7]given time [G]and [Em]patience
 [Am]Love [D7]finds its own [G]way
 {end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 6}
 [C]I know you must have pushed aside your feelings
 [D7]When down inside you thought you'd fall [G]apart
 [C]And if it hadn't been for your believing
 [D7]We might still be stumbling in the [G]dark
 {end_of_verse}
 
-{start_of_verse: Verse 6}
+{start_of_verse: Verse 7}
 [C]Now we're standing on the threshold of a new [Bm]beginning
 [Am]The doors [D7]of life are opened [G]wide
 [C]For once in our [F]lives we're [A#7]finally [D]winning
 [G]All because [C]love is on our [D7]side
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [G]Love finds its own way
 [D7]Through the darkest [G]nights
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[G]Love finds its own way
+[D7]Through the darkest [G]nights
+{end_of_verse}

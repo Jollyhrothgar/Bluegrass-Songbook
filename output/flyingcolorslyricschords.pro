@@ -16,42 +16,35 @@ But love [F]got the best of me and I turn [C]green with jealou[Am]sy
 When you [D7]made it crystal clear you did not [G7]care
 {end_of_verse}
 
-{start_of_chorus}
-I came [C]thro[F]ugh with flying [C]colors
-My eyes are [F]red from cryin' the whole night [C]through
-I should [F]win the Purple Heart cause you [C]tore mine all [Am]apart
-But I came [D7]through with flying [G7]colors after losing [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I came [C]thro[F]ugh with flying [C]colors
-My eyes are [F]red from cryin' the whole night [C]through
-I should [F]win the Purple Heart cause you [C]tore mine all [Am]apart
-But I came [D7]through with flying [G7]colors after losing [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I came [C]thro[F]ugh with flying [C]colors
-My eyes are [F]red from cryin' the whole night [C]through
-I should [F]win the Purple Heart cause you [C]tore mine all [Am]apart
-But I came [D7]through with flying [G7]colors after losing [C]you
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+I came [C]thro[F]ugh with flying [C]colors
+My eyes are [F]red from cryin' the whole night [C]through
+I should [F]win the Purple Heart cause you [C]tore mine all [Am]apart
+But I came [D7]through with flying [G7]colors after losing [C]you
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Yes I've [F]got a yeller streak cause I [C]know your past is weak
 And I [F]still get pale whenever you're in [C]sight
 I’m a [F]shade out of my mind oh but [Am]I'm not color blind
 Cause I've [C]learned that love ain't [G7]only black and [C]white
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 I came [C]thro[F]ugh with flying [C]colors
 My eyes are [F]red from cryin' the whole night [C]through
 I should [F]win the Purple Heart cause you [C]tore mine all [Am]apart
 But I came [D7]through with flying [G7]colors after losing [C]you
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+I came [C]thro[F]ugh with flying [C]colors
+My eyes are [F]red from cryin' the whole night [C]through
+I should [F]win the Purple Heart cause you [C]tore mine all [Am]apart
+But I came [D7]through with flying [G7]colors after losing [C]you
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 I should [F]win the Purple Heart cause you [C]tore mine all [Am]apart
 But I came [D7]through with flying [G7]colors after losing [C]you
 {end_of_verse}

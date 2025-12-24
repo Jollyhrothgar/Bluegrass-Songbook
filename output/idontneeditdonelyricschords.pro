@@ -16,44 +16,37 @@ I'll just move along no I [C]don't mind waking up all [A7]alone
 I [D7]found one real true love now I don't need it [G]done
 {end_of_verse}
 
-{start_of_chorus}
-I don't need it done oh I don't need it [C]done
-Yeah [D7]I found a real true love now I don't need it [G]done
-I don't need it done oh I don't need it [C]done 
-Yeah I [D7]found a real true love now I don't need it [G]done
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I don't need it done oh I don't need it [C]done
-Yeah [D7]I found a real true love now I don't need it [G]done
-I don't need it done oh I don't need it [C]done 
-Yeah I [D7]found a real true love now I don't need it [G]done
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I don't need it done oh I don't need it [C]done
-Yeah [D7]I found a real true love now I don't need it [G]done
-I don't need it done oh I don't need it [C]done 
-Yeah I [D7]found a real true love now I don't need it [G]done
-{end_of_chorus}
-
-{start_of_chorus: Repeat 3}
-I don't need it done oh I don't need it [C]done
-Yeah [D7]I found a real true love now I don't need it [G]done
-I don't need it done oh I don't need it [C]done 
-Yeah I [D7]found a real true love now I don't need it [G]done
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+I don't need it done oh I don't need it [C]done
+Yeah [D7]I found a real true love now I don't need it [G]done
+I don't need it done oh I don't need it [C]done 
+Yeah I [D7]found a real true love now I don't need it [G]done
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [D7]Well it's been [G]one long day all right still I don't need it [D7]done
 You say I could stay all night until the morning [G]comes
 It's not easy but I've got to [C]give up all you [A7]got
 Yeah I [D7]found a real true love now I don't need it [G]done
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 I don't need it done oh I don't need it [C]done
 Yeah [D7]I found a real true love now I don't need it [G]done
 I don't need it done oh I don't need it [C]done 
 Yeah I [D7]found a real true love now I don't need it [G]done
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+I don't need it done oh I don't need it [C]done
+Yeah [D7]I found a real true love now I don't need it [G]done
+I don't need it done oh I don't need it [C]done 
+Yeah I [D7]found a real true love now I don't need it [G]done
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+I don't need it done oh I don't need it [C]done
+Yeah [D7]I found a real true love now I don't need it [G]done
+I don't need it done oh I don't need it [C]done 
+Yeah I [D7]found a real true love now I don't need it [G]done
+{end_of_verse}

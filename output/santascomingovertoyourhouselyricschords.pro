@@ -11,28 +11,14 @@
 They [G]call me crazy but there's [D7]toys and stuff all over the [G]den
 {end_of_verse}
 
-{start_of_chorus}
-[C]Santa's coming over to [G]your house
-[C]Christmas coming down the [G]line
-[C]Santa's coming over to your [E7]house
-I [A7]know cause he [D7]just left [G]mine
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Santa's coming over to [G]your house
-[C]Christmas coming down the [G]line
-[C]Santa's coming over to your [E7]house
-I [A7]know cause he [D7]just left [G]mine
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Santa's coming over to [G]your house
-[C]Christmas coming down the [G]line
-[C]Santa's coming over to your [E7]house
-I [A7]know cause he [D7]just left [G]mine
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[C]Santa's coming over to [G]your house
+[C]Christmas coming down the [G]line
+[C]Santa's coming over to your [E7]house
+I [A7]know cause he [D7]just left [G]mine
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 He left a Barbie and a video game
 [C]He filled the stockings with the red candy canes
 [G]He hid a skateboard and a football up under the [D7]tree
@@ -42,13 +28,20 @@ He left a Barbie and a video game
 But I'm [D7]telling you you got to [G]believe
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [C]Santa's coming over to [G]your house
 [C]Christmas coming down the [G]line
 [C]Santa's coming over to your [E7]house
 I [A7]know cause he [D7]just left [G]mine
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+[C]Santa's coming over to [G]your house
+[C]Christmas coming down the [G]line
+[C]Santa's coming over to your [E7]house
+I [A7]know cause he [D7]just left [G]mine
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Yeah I [A7]know cause he [D7]just left [G]mine
 {end_of_verse}

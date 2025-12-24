@@ -16,26 +16,12 @@ You better be[C]lieve and under[F]stand before old [C]Satan takes command
 He’s gonna take you but it ain’t gonna [G7]be to the promised [C]land
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 I’ve been talked about and laughed at
 I’ve been locked out in the [F]cold
 But I don’t [C]aim to give ol’ Satan
 Any [G7]claim upon my [C]soul
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I’ve been talked about and laughed at
-I’ve been locked out in the [F]cold
-But I don’t [C]aim to give ol’ Satan
-Any [G7]claim upon my [C]soul
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I’ve been talked about and laughed at
-I’ve been locked out in the [F]cold
-But I don’t [C]aim to give ol’ Satan
-Any [G7]claim upon my [C]soul
-{end_of_chorus}
+{end_of_verse}
 
 {start_of_verse: Verse 2}
 You’d better look around you’d better look around
@@ -44,16 +30,23 @@ You better be[C]lieve and under[F]stand before old [C]Satan takes command
 He’s gonna take you but it ain’t gonna [G7]be to the promised [C]land
 {end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 When temptations all around you
 And you feel like turnin’ [F]back
 Just re[C]member that old Satan’s
 Right there [G7]breathin’ down your [C]back
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 I’ve been talked about and laughed at
 I’ve been locked out in the [F]cold
 But I don’t [C]aim to give ol’ Satan
 Any [G7]claim upon my [C]soul
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+I’ve been talked about and laughed at
+I’ve been locked out in the [F]cold
+But I don’t [C]aim to give ol’ Satan
+Any [G7]claim upon my [C]soul
+{end_of_verse}

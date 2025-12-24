@@ -16,41 +16,34 @@ And the [C]risk of going nowhere is the [Em]greatest risk of all
 So just [Am]listen to the [G]voice that says I'll [D7]catch you if you fall
 {end_of_verse}
 
-{start_of_chorus}
-On the [G]other side of [D7]doubt is [G]faith
-On the other side of [D7]pain lies [G]strength
-The [C]journey may seem endless when you [Em]know the road is [C]rough
-But on the [G]other side of [D7]fear is [G]love
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-On the [G]other side of [D7]doubt is [G]faith
-On the other side of [D7]pain lies [G]strength
-The [C]journey may seem endless when you [Em]know the road is [C]rough
-But on the [G]other side of [D7]fear is [G]love
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-On the [G]other side of [D7]doubt is [G]faith
-On the other side of [D7]pain lies [G]strength
-The [C]journey may seem endless when you [Em]know the road is [C]rough
-But on the [G]other side of [D7]fear is [G]love
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+On the [G]other side of [D7]doubt is [G]faith
+On the other side of [D7]pain lies [G]strength
+The [C]journey may seem endless when you [Em]know the road is [C]rough
+But on the [G]other side of [D7]fear is [G]love
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 For such a long time [D7]I put my dreams [G]aside
 The tides of change felt [D7]dangerous the [Em]mountains seemed too high
 But my [C]dreams were slowly fading as [Em]time went quickly by
 So I [Am]held my breath with [G]every step never [D7]knowing I would find
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 On the [G]other side of [D7]doubt is [G]faith
 On the other side of [D7]pain lies [G]strength
 The [C]journey may seem endless when you [Em]know the road is [C]rough
 But on the [G]other side of [D7]fear is [G]love
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+On the [G]other side of [D7]doubt is [G]faith
+On the other side of [D7]pain lies [G]strength
+The [C]journey may seem endless when you [Em]know the road is [C]rough
+But on the [G]other side of [D7]fear is [G]love
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 On the other side of [D7]fear is [G]love
 {end_of_verse}

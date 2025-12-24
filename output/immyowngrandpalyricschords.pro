@@ -23,46 +23,40 @@ For [G7]if he was my uncle that [C]also made him the brother
 Of the [A7]widow's grown-up daughter who of [D7]course was my step-mother
 {end_of_verse}
 
-{start_of_chorus}
-[G]I'm my [D7]own grand[G]pa  [G7]    [C]I'm my own grand[Am]pa
-It sounds [C]funny I know but it [G]really is [Em]so
-[Am]I'm my [D7]own grand[G]pa 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[G]I'm my [D7]own grand[G]pa  [G7]    [C]I'm my own grand[Am]pa
-It sounds [C]funny I know but it [G]really is [Em]so
-[Am]I'm my [D7]own grand[G]pa 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[G]I'm my [D7]own grand[G]pa  [G7]    [C]I'm my own grand[Am]pa
-It sounds [C]funny I know but it [G]really is [Em]so
-[Am]I'm my [D7]own grand[G]pa 
-{end_of_chorus}
-
 {start_of_verse: Verse 4}
+[G]I'm my [D7]own grand[G]pa  [G7]    [C]I'm my own grand[Am]pa
+It sounds [C]funny I know but it [G]really is [Em]so
+[Am]I'm my [D7]own grand[G]pa 
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 My father's wife then had a son that [D7]kept them on the run
 And he became my grandchild for he [G]was my daughter's son
 My wife is now my [G7]mother's mother and [C]it makes me blue
 Be[A7]cause she is my wife she's [D7]my grandmother too
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 4}
 [G]I'm my [D7]own grand[G]pa  [G7]    [C]I'm my own grand[Am]pa
 It sounds [C]funny I know but it [G]really is [Em]so
 [Am]I'm my [D7]own grand[G]pa 
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 6}
 Now [G]if my wife is my grandmother [D7]then I am her grandchild
 And every time I think of it  it [G]nearly drives me wild
 For [G7]now I have become the strangest [C]case you ever saw
 As the [A7]husband of my grandmother I [D7]am my own grandpa
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 4}
 [G]I'm my [D7]own grand[G]pa  [G7]    [C]I'm my own grand[Am]pa
 It sounds [C]funny I know but it [G]really is [Em]so
 [Am]I'm my [D7]own grand[G]pa 
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+[G]I'm my [D7]own grand[G]pa  [G7]    [C]I'm my own grand[Am]pa
+It sounds [C]funny I know but it [G]really is [Em]so
+[Am]I'm my [D7]own grand[G]pa 
+{end_of_verse}

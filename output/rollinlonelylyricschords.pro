@@ -32,3 +32,11 @@ Cause [Dm]I said some things [G7]I didn’t mean and I [Dm]just gotta make it [G
 I’m [F]movin like lightnin’ through the [Fm]pourin’ rain
 [Dm]Rollin lonely [G7]all the way to Memphis [C]tonight[G7]
 {end_of_verse}
+
+{start_of_verse: Verse 2}
+Cause I’m [C]rollin’ lonely I need you to hold me in your [F]arms tonight
+Cause [Dm]I said some things [G7]I didn’t mean and I [Dm]just gotta make it [G7]right
+18 [C]wheels are singin’ out your name
+I’m [F]movin like lightnin’ through the [Fm]pourin’ rain
+[Dm]Rollin lonely [G7]all the way to Memphis [C]tonight[G7]
+{end_of_verse}

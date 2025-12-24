@@ -16,39 +16,33 @@ Ain't gonna find [C]nothing but an empty house
 [G7]If you ever come [C]back
 {end_of_verse}
 
-{start_of_chorus}
-[C]I'm a long [Am]gone that's what I'll [C]be
-Gonna [F]find me a [C]girl and a [F]brand new [C]world
-I'll forget about [Am]you you'll forget about [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]I'm a long [Am]gone that's what I'll [C]be
-Gonna [F]find me a [C]girl and a [F]brand new [C]world
-I'll forget about [Am]you you'll forget about [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]I'm a long [Am]gone that's what I'll [C]be
-Gonna [F]find me a [C]girl and a [F]brand new [C]world
-I'll forget about [Am]you you'll forget about [C]me
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]I'm a long [Am]gone that's what I'll [C]be
+Gonna [F]find me a [C]girl and a [F]brand new [C]world
+I'll forget about [Am]you you'll forget about [C]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Well a big white [Am]house with flower [C]beds
 And satin [Am]pillows underneath the [G7]head
 Well I cross the [C]tracks the money runs [Am]free
 Run right [C]along to be fancy [G7]free you don't worry bout [C]me
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 I'm a long [Am]gone that's what I'll [C]be
 Gonna [F]find me a [C]girl and a [F]brand new [C]world
 I'll forget about [Am]you you'll forget about [C]me
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]I'm a long [Am]gone that's what I'll [C]be
 Gonna [F]find me a [C]girl and a [F]brand new [C]world
 I'll forget about [Am]you you'll forget about [C]me
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C]I'm a long [Am]gone that's what I'll [C]be
+Gonna [F]find me a [C]girl and a [F]brand new [C]world
+I'll forget about [Am]you you'll forget about [C]me
+{end_of_verse}

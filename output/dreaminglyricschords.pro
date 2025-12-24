@@ -9,41 +9,34 @@
 [G7]But I guess that's what I'll always [C]do
 {end_of_verse}
 
-{start_of_chorus}
-[F]I'm dreaming dreaming dreaming dreaming
-[G7]Dreaming of the love that never will be [C]true
-[F]I'm dreaming dreaming dreaming dreaming
-[G7]That is what I'll always [C]do
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]I'm dreaming dreaming dreaming dreaming
-[G7]Dreaming of the love that never will be [C]true
-[F]I'm dreaming dreaming dreaming dreaming
-[G7]That is what I'll always [C]do
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]I'm dreaming dreaming dreaming dreaming
-[G7]Dreaming of the love that never will be [C]true
-[F]I'm dreaming dreaming dreaming dreaming
-[G7]That is what I'll always [C]do
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[F]I'm dreaming dreaming dreaming dreaming
+[G7]Dreaming of the love that never will be [C]true
+[F]I'm dreaming dreaming dreaming dreaming
+[G7]That is what I'll always [C]do
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [F]Dreaming of the lips that I love to kiss
 [G7]Dreaming of the charms I never can [C]resist
 [F]Dreaming of the words you spoke that were untrue
 [G7]But I guess that's what I'll always [C]do
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [F]I'm dreaming dreaming dreaming dreaming
 [G7]Dreaming of the love that never will be [C]true
 [F]I'm dreaming dreaming dreaming dreaming
 [G7]That is what I'll always [C]do
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+[F]I'm dreaming dreaming dreaming dreaming
+[G7]Dreaming of the love that never will be [C]true
+[F]I'm dreaming dreaming dreaming dreaming
+[G7]That is what I'll always [C]do
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [G7]That is what I'll always [C]do
 {end_of_verse}

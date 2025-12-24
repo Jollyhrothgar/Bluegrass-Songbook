@@ -9,49 +9,41 @@ But each [Dm]time they do
 I [G7]think of you and it [F]makes me [G7]rea[C]lize[G7]
 {end_of_verse}
 
-{start_of_chorus}
-Just [C]any old love won't do
-No [Dm]any old love won't [G7]do 
-I [Dm]don't want to love
-If it [G7]isn't with you 
-Just [F]any old [G7]love won't [C]do
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Just [C]any old love won't do
-No [Dm]any old love won't [G7]do 
-I [Dm]don't want to love
-If it [G7]isn't with you 
-Just [F]any old [G7]love won't [C]do
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Just [C]any old love won't do
-No [Dm]any old love won't [G7]do 
-I [Dm]don't want to love
-If it [G7]isn't with you 
-Just [F]any old [G7]love won't [C]do
-{end_of_chorus}
-
-{start_of_chorus: Repeat 3}
-Just [C]any old love won't do
-No [Dm]any old love won't [G7]do 
-I [Dm]don't want to love
-If it [G7]isn't with you 
-Just [F]any old [G7]love won't [C]do
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Just [C]any old love won't do
+No [Dm]any old love won't [G7]do 
+I [Dm]don't want to love
+If it [G7]isn't with you 
+Just [F]any old [G7]love won't [C]do
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 You've got the only arms
 I've [Dm]ever come runnin' [G7]to
 Love has [Dm]always led me [G7]to your bed
 Just [F]any old [G7]love won't [C]do [G7]
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Just [C]any old love won't do
 No [Dm]any old love won't [G7]do 
 I [Dm]don't want to love
 If it [G7]isn't with you 
 Just [F]any old [G7]love won't [C]do
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Just [C]any old love won't do
+No [Dm]any old love won't [G7]do 
+I [Dm]don't want to love
+If it [G7]isn't with you 
+Just [F]any old [G7]love won't [C]do
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Just [C]any old love won't do
+No [Dm]any old love won't [G7]do 
+I [Dm]don't want to love
+If it [G7]isn't with you 
+Just [F]any old [G7]love won't [C]do
+{end_of_verse}

@@ -11,34 +11,16 @@ And every [G]day is one more [C]day
 The hardest [C]thing you'll ever do but it's not [D7]true
 {end_of_verse}
 
-{start_of_chorus}
-It may be the [C]fal[D7]l that brings you to [G]your knees
-Yeah the [C]losing it [D7]all leaves you [G]weak
-Yeah your [C]heart drops and your [D7]world stops 
-When you're [G]falling [D7]out of [Em]love
-Well it's not the [C]fall that's so [D7]hard 
-It's the getting back [G]up [C]
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-It may be the [C]fal[D7]l that brings you to [G]your knees
-Yeah the [C]losing it [D7]all leaves you [G]weak
-Yeah your [C]heart drops and your [D7]world stops 
-When you're [G]falling [D7]out of [Em]love
-Well it's not the [C]fall that's so [D7]hard 
-It's the getting back [G]up [C]
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-It may be the [C]fal[D7]l that brings you to [G]your knees
-Yeah the [C]losing it [D7]all leaves you [G]weak
-Yeah your [C]heart drops and your [D7]world stops 
-When you're [G]falling [D7]out of [Em]love
-Well it's not the [C]fall that's so [D7]hard 
-It's the getting back [G]up [C]
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+It may be the [C]fal[D7]l that brings you to [G]your knees
+Yeah the [C]losing it [D7]all leaves you [G]weak
+Yeah your [C]heart drops and your [D7]world stops 
+When you're [G]falling [D7]out of [Em]love
+Well it's not the [C]fall that's so [D7]hard 
+It's the getting back [G]up [C]
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 I was ok at [G]first then it started to [C]hurt
 And the [G]getting better just kept getting [C]worse
 But as bad as it's [G]been I'm not giving [C]in 
@@ -47,16 +29,25 @@ Every minute's [G]one more minute [C]I just made it [Am]through
 [G]That's the best I can [D7]do
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 It may be the [C]fal[D7]l that brings you to [G]your knees
 Yeah the [C]losing it [D7]all leaves you [G]weak
 Yeah your [C]heart drops and your [D7]world stops 
 When you're [G]falling [D7]out of [Em]love
 Well it's not the [C]fall that's so [D7]hard 
 It's the getting back [G]up [C]
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+It may be the [C]fal[D7]l that brings you to [G]your knees
+Yeah the [C]losing it [D7]all leaves you [G]weak
+Yeah your [C]heart drops and your [D7]world stops 
+When you're [G]falling [D7]out of [Em]love
+Well it's not the [C]fall that's so [D7]hard 
+It's the getting back [G]up [C]
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [G]Yeah your [C]heart drops and your [D7]world stops 
 When you're [G]falling [D7]out of [Em]love
 Well it's not the [C]fall that's so [D7]hard 

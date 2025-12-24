@@ -16,44 +16,37 @@ He sees the old folks [D7]dying
 He gives us [G]all His love
 {end_of_verse}
 
-{start_of_chorus}
-[C]He gives us [G]all His love 
-He gives us [A7]all His love
-He's smiling [D7]down on us from up above
-He gives us [G]all His love
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]He gives us [G]all His love 
-He gives us [A7]all His love
-He's smiling [D7]down on us from up above
-He gives us [G]all His love
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]He gives us [G]all His love 
-He gives us [A7]all His love
-He's smiling [D7]down on us from up above
-He gives us [G]all His love
-{end_of_chorus}
-
-{start_of_chorus: Repeat 3}
-[C]He gives us [G]all His love 
-He gives us [A7]all His love
-He's smiling [D7]down on us from up above
-He gives us [G]all His love
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]He gives us [G]all His love 
+He gives us [A7]all His love
+He's smiling [D7]down on us from up above
+He gives us [G]all His love
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 And if you [Bm]need [D7]someone to [G]talk to
 You can [Bm]always [D7]talk to [G]Him
 And if you [Bm]need [D7]someone to [G]lean on
 You [Am]can lean on Him
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]He gives us [G]all His love 
 He gives us [A7]all His love
 He's smiling [D7]down on us from up above
 He gives us [G]all His love
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C]He gives us [G]all His love 
+He gives us [A7]all His love
+He's smiling [D7]down on us from up above
+He gives us [G]all His love
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C]He gives us [G]all His love 
+He gives us [A7]all His love
+He's smiling [D7]down on us from up above
+He gives us [G]all His love
+{end_of_verse}

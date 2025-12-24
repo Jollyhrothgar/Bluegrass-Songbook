@@ -11,28 +11,14 @@
 [C]I would go there [D7]anticipat[G]ing
 {end_of_verse}
 
-{start_of_chorus}
-In the garden [C]past the foun[G]tain
-Near the weeping [D7]willow tree
-[G]By the ivy [C]covered arbor
-[G]My one and true love [D7]waits for [G]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-In the garden [C]past the foun[G]tain
-Near the weeping [D7]willow tree
-[G]By the ivy [C]covered arbor
-[G]My one and true love [D7]waits for [G]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-In the garden [C]past the foun[G]tain
-Near the weeping [D7]willow tree
-[G]By the ivy [C]covered arbor
-[G]My one and true love [D7]waits for [G]me
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+In the garden [C]past the foun[G]tain
+Near the weeping [D7]willow tree
+[G]By the ivy [C]covered arbor
+[G]My one and true love [D7]waits for [G]me
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 As time past as [C]it's inclined to
 [G]More and more I [D7]sensed a change
 [G]Subtle hints and [C]indications
@@ -41,14 +27,14 @@ As time past as [C]it's inclined to
 [C]For old times sake [D7]will you meet [G]me
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 In the garden [C]past the foun[G]tain
 Near the weeping [D7]willow tree
 [G]By the ivy [C]covered arbor
 [G]My one and true love [D7]waits for [G]me
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 First I begged him [C]then I pleaded
 [G]Sadly it was all to [D7]no avail
 [G]Then I reached in[C]side my pocket
@@ -57,9 +43,16 @@ First I begged him [C]then I pleaded
 [C]Underneath a [D7]bed of [G]roses
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 In the garden [C]past the foun[G]tain
 Near the weeping [D7]willow tree
 [G]By the ivy [C]covered arbor
 [G]My one and true love [D7]waits for [G]me
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+In the garden [C]past the foun[G]tain
+Near the weeping [D7]willow tree
+[G]By the ivy [C]covered arbor
+[G]My one and true love [D7]waits for [G]me
+{end_of_verse}

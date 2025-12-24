@@ -10,34 +10,16 @@ I don't need to see no to panic
 All I need is someone sweet to [G]love
 {end_of_verse}
 
-{start_of_chorus}
-[C]Don't you bring me Doctor Jake
-I'm strong enough to swim a lake
-[G]All I need is what I'm dreaming [D7]of
-She [G]lives just around some corner
-Help me out or I'm a goner
-[D7]I've gotta find me someone sweet to [G]love
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Don't you bring me Doctor Jake
-I'm strong enough to swim a lake
-[G]All I need is what I'm dreaming [D7]of
-She [G]lives just around some corner
-Help me out or I'm a goner
-[D7]I've gotta find me someone sweet to [G]love
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Don't you bring me Doctor Jake
-I'm strong enough to swim a lake
-[G]All I need is what I'm dreaming [D7]of
-She [G]lives just around some corner
-Help me out or I'm a goner
-[D7]I've gotta find me someone sweet to [G]love
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[C]Don't you bring me Doctor Jake
+I'm strong enough to swim a lake
+[G]All I need is what I'm dreaming [D7]of
+She [G]lives just around some corner
+Help me out or I'm a goner
+[D7]I've gotta find me someone sweet to [G]love
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Yes I work hard to make my money
 Like the beehives love their honey
 Everything but one fits like a [D7]glove
@@ -46,15 +28,24 @@ Asking me if I feel better
 All I need is someone sweet to [G]love
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [C]Don't you bring me Doctor Jake
 I'm strong enough to swim a lake
 [G]All I need is what I'm dreaming [D7]of
 She [G]lives just around some corner
 Help me out or I'm a goner
 [D7]I've gotta find me someone sweet to [G]love
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+[C]Don't you bring me Doctor Jake
+I'm strong enough to swim a lake
+[G]All I need is what I'm dreaming [D7]of
+She [G]lives just around some corner
+Help me out or I'm a goner
+[D7]I've gotta find me someone sweet to [G]love
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Oh [D7]I've gotta find me someone sweet to [G]love
 {end_of_verse}

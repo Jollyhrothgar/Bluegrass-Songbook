@@ -16,51 +16,44 @@
 [Dm]Before all the feeling is [G]gone
 {end_of_verse}
 
-{start_of_chorus}
-[C]I'm losing your love  it's slippin' [Em]away
-[F]Minute by minute day by [G]day
-[C]I'm losing your love  don't you think I [Em]know
-[F]It's a matter of [Dm]time [Em]'til [F]you [G]let [C]go
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]I'm losing your love  it's slippin' [Em]away
-[F]Minute by minute day by [G]day
-[C]I'm losing your love  don't you think I [Em]know
-[F]It's a matter of [Dm]time [Em]'til [F]you [G]let [C]go
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]I'm losing your love  it's slippin' [Em]away
-[F]Minute by minute day by [G]day
-[C]I'm losing your love  don't you think I [Em]know
-[F]It's a matter of [Dm]time [Em]'til [F]you [G]let [C]go
-{end_of_chorus}
-
-{start_of_chorus: Repeat 3}
-[C]I'm losing your love  it's slippin' [Em]away
-[F]Minute by minute day by [G]day
-[C]I'm losing your love  don't you think I [Em]know
-[F]It's a matter of [Dm]time [Em]'til [F]you [G]let [C]go
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]I'm losing your love  it's slippin' [Em]away
+[F]Minute by minute day by [G]day
+[C]I'm losing your love  don't you think I [Em]know
+[F]It's a matter of [Dm]time [Em]'til [F]you [G]let [C]go
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [Am]I see the moon shinin' up above
 [G]Reminded me how good it [Em]was
 [C]There's a chill comin' over [Am]me
 [G]Why can't it be like it used to [Em]be
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 [F]I feel so helpless I can't make you stay
 [C]No matter how hard I try
 [F]I can't deny that look in your eyes
 [Dm]Tryin' to tell me [G]goodbye
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]I'm losing your love  it's slippin' [Em]away
 [F]Minute by minute day by [G]day
 [C]I'm losing your love  don't you think I [Em]know
 [F]It's a matter of [Dm]time [Em]'til [F]you [G]let [C]go
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C]I'm losing your love  it's slippin' [Em]away
+[F]Minute by minute day by [G]day
+[C]I'm losing your love  don't you think I [Em]know
+[F]It's a matter of [Dm]time [Em]'til [F]you [G]let [C]go
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C]I'm losing your love  it's slippin' [Em]away
+[F]Minute by minute day by [G]day
+[C]I'm losing your love  don't you think I [Em]know
+[F]It's a matter of [Dm]time [Em]'til [F]you [G]let [C]go
+{end_of_verse}

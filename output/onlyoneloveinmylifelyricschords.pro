@@ -15,39 +15,34 @@ There's [F]only one moon that [G7]shines in the night
 And [F]only one [G7]love in my [C]life
 {end_of_verse}
 
-{start_of_chorus}
-[Am]Only one love in my [C]life [F]only one [G7]love in my [C]life
-I'm a [Em]ship on the open [Am]ocean [D7]darling [C]you're my [G7]guiding [C]light
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[Am]Only one love in my [C]life [F]only one [G7]love in my [C]life
-I'm a [Em]ship on the open [Am]ocean [D7]darling [C]you're my [G7]guiding [C]light
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[Am]Only one love in my [C]life [F]only one [G7]love in my [C]life
-I'm a [Em]ship on the open [Am]ocean [D7]darling [C]you're my [G7]guiding [C]light
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[Am]Only one love in my [C]life [F]only one [G7]love in my [C]life
+I'm a [Em]ship on the open [Am]ocean [D7]darling [C]you're my [G7]guiding [C]light
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 The [G7]radio played my new song today
 And I [C]heard someone say man he sure got it made
 If [Dm]only they know how much [F]you have made of [C]me
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 [G7]Together we came from [E7]nowhere to fame
 And I [Am]never could have made it alone
 For me there's [F]only one moon that [G7]shines in the night
 And [F]only one [G7]love in my [C]life
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [Am]Only one love in my [C]life [F]only one [G7]love in my [C]life
 I'm a [Em]ship on the open [Am]ocean [D7]darling [C]you're my [G7]guiding [C]light
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 3}
+[Am]Only one love in my [C]life [F]only one [G7]love in my [C]life
+I'm a [Em]ship on the open [Am]ocean [D7]darling [C]you're my [G7]guiding [C]light
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 [G7]You're my guiding [C]light  and you're the [F]only [G7]love in my [C]life
 {end_of_verse}

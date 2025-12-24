@@ -43,3 +43,10 @@ Hey git down the fiddle and you git down the [G7]bow
 Dance in the kitchen till the morning [G7]light
 [F]Louisiana [G7]Saturday [C]night
 {end_of_verse}
+
+{start_of_verse: Verse 2}
+Hey git down the fiddle and you git down the [G7]bow
+[F]Kick off your shoes and throw 'em in the [C]floor
+Dance in the kitchen till the morning [G7]light
+[F]Louisiana [G7]Saturday [C]night
+{end_of_verse}

@@ -16,35 +16,28 @@
 [F]Behind your [G7]heavenly gates in the [C]sky
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [F]What kind of reward Jesus have you out on me
 [G7]I wonder how the words on my big wanted [A#7]poster do [C][G7]read
 [F]And oh how I'd love to be taken into your custody
 [C]And what kind of reward [G7]Jesus have you got out on [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]What kind of reward Jesus have you out on me
-[G7]I wonder how the words on my big wanted [A#7]poster do [C][G7]read
-[F]And oh how I'd love to be taken into your custody
-[C]And what kind of reward [G7]Jesus have you got out on [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]What kind of reward Jesus have you out on me
-[G7]I wonder how the words on my big wanted [A#7]poster do [C][G7]read
-[F]And oh how I'd love to be taken into your custody
-[C]And what kind of reward [G7]Jesus have you got out on [C]me
-{end_of_chorus}
-
-{start_of_chorus}
-[F]What kind of reward Jesus have you out on me
-[G7]I wonder how the words on my big wanted [A#7]poster do [C][G7]read
-[F]And oh how I'd love to be taken into your custody
-[C]And what kind of reward [G7]Jesus have you got out on [C]me
-{end_of_chorus}
+{end_of_verse}
 
 {start_of_verse: Verse 3}
+[F]What kind of reward Jesus have you out on me
+[G7]I wonder how the words on my big wanted [A#7]poster do [C][G7]read
+[F]And oh how I'd love to be taken into your custody
+[C]And what kind of reward [G7]Jesus have you got out on [C]me
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[F]What kind of reward Jesus have you out on me
+[G7]I wonder how the words on my big wanted [A#7]poster do [C][G7]read
+[F]And oh how I'd love to be taken into your custody
+[C]And what kind of reward [G7]Jesus have you got out on [C]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [F]And oh how I'd love to be taken into your custody
 [C]And what kind of reward [G7]Jesus have you got out on [C]me
 {end_of_verse}

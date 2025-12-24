@@ -12,33 +12,27 @@ We could leave our troubles [Am]all behind
 And [F]nothing could [G7]keep us [C]here 
 {end_of_verse}
 
-{start_of_chorus}
-We could soar like an [A#7]eagle touch the [Am]sky like a [F]dove
-We could [C]fly to the top of the [Am]world and [A#7]fly into [Dm]love 
-[A#7]F---[F]ly into [C]love 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-We could soar like an [A#7]eagle touch the [Am]sky like a [F]dove
-We could [C]fly to the top of the [Am]world and [A#7]fly into [Dm]love 
-[A#7]F---[F]ly into [C]love 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-We could soar like an [A#7]eagle touch the [Am]sky like a [F]dove
-We could [C]fly to the top of the [Am]world and [A#7]fly into [Dm]love 
-[A#7]F---[F]ly into [C]love 
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+We could soar like an [A#7]eagle touch the [Am]sky like a [F]dove
+We could [C]fly to the top of the [Am]world and [A#7]fly into [Dm]love 
+[A#7]F---[F]ly into [C]love 
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Sunshine [Am]all the time is [F]just beyond the [C]hill 
 True love is [Am]waiting there and [F]we can find it [G7]still 
 Your [C]blue eyes are my [Am]blue skies [F]forever is in [C]sight 
 Let's put our dreams [Am]together now and [F]fly [G7]away [C]tonight 
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 We could soar like an [A#7]eagle touch the [Am]sky like a [F]dove
 We could [C]fly to the top of the [Am]world and [A#7]fly into [Dm]love 
 [A#7]F---[F]ly into [C]love 
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+We could soar like an [A#7]eagle touch the [Am]sky like a [F]dove
+We could [C]fly to the top of the [Am]world and [A#7]fly into [Dm]love 
+[A#7]F---[F]ly into [C]love 
+{end_of_verse}

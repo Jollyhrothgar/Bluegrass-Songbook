@@ -12,31 +12,15 @@ And it would take more than the Crew Cuts
 And Pat [G7]Boone to take me [C]home
 {end_of_verse}
 
-{start_of_chorus}
-I want the real thing give me the [F]real thing
-Make it [C]loud I'll make you proud of the songs they'd [G7]sing
-I don't want you [C]under my roof with your 86 proof
-Watered [F]down till it tastes like [C]tea
-You're gonna pull my string make it the [G7]real thing for [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I want the real thing give me the [F]real thing
-Make it [C]loud I'll make you proud of the songs they'd [G7]sing
-I don't want you [C]under my roof with your 86 proof
-Watered [F]down till it tastes like [C]tea
-You're gonna pull my string make it the [G7]real thing for [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I want the real thing give me the [F]real thing
-Make it [C]loud I'll make you proud of the songs they'd [G7]sing
-I don't want you [C]under my roof with your 86 proof
-Watered [F]down till it tastes like [C]tea
-You're gonna pull my string make it the [G7]real thing for [C]me
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+I want the real thing give me the [F]real thing
+Make it [C]loud I'll make you proud of the songs they'd [G7]sing
+I don't want you [C]under my roof with your 86 proof
+Watered [F]down till it tastes like [C]tea
+You're gonna pull my string make it the [G7]real thing for [C]me
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 I remember ol’ Elvis when he Forgot to [F]Remember to Forget[C]
 And when young Johnny Cash hadn't seen this side of [G7]Big River yet
 [C]And when Sun was more than daylight shinin' on [F]Memphis Tennessee
@@ -44,14 +28,22 @@ And when young Johnny Cash hadn't seen this side of [G7]Big River yet
 And [G7]playin' them songs for [C]me
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 I want the real thing give me the [F]real thing
 Make it [C]loud I'll make you proud of the songs they'd [G7]sing
 I don't want you [C]under my roof with your 86 proof
 Watered [F]down till it tastes like [C]tea
 You're gonna pull my string make it the [G7]real thing for [C]me
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+I want the real thing give me the [F]real thing
+Make it [C]loud I'll make you proud of the songs they'd [G7]sing
+I don't want you [C]under my roof with your 86 proof
+Watered [F]down till it tastes like [C]tea
+You're gonna pull my string make it the [G7]real thing for [C]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 You're gonna pull my string make it the [G7]real thing for [C]me
 {end_of_verse}

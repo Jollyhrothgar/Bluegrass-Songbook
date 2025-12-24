@@ -1,0 +1,195 @@
+Outliers Report: Chord Count
+================================================================================
+
+Thresholds: Bottom 0.1% <= 0.00, Top 0.1% >= 131.75
+
+Bottom 0.1% (28 files):
+--------------------------------------------------------------------------------
+  HTML: html/oneylyricschords.html
+  PRO:  output/oneylyricschords.pro
+  Chord Count: 0
+
+  HTML: html/royorbisonlyrics.html
+  PRO:  output/royorbisonlyrics.pro
+  Chord Count: 0
+
+  HTML: html/letmetakethatheartacheoffyourhandslyricschords.html
+  PRO:  output/letmetakethatheartacheoffyourhandslyricschords.pro
+  Chord Count: 0
+
+  HTML: html/notearstonightlyricschords.html
+  PRO:  output/notearstonightlyricschords.pro
+  Chord Count: 0
+
+  HTML: html/redsteagalllyricschords.html
+  PRO:  output/redsteagalllyricschords.pro
+  Chord Count: 0
+
+  HTML: html/sundaymorningcomingdownlyricschords.html
+  PRO:  output/sundaymorningcomingdownlyricschords.pro
+  Chord Count: 0
+
+  HTML: html/rickyvansheltonlyricschords.html
+  PRO:  output/rickyvansheltonlyricschords.pro
+  Chord Count: 0
+
+  HTML: html/whiskeyriverlyricschords.html
+  PRO:  output/whiskeyriverlyricschords.pro
+  Chord Count: 0
+
+  HTML: html/boyfromtupelolyricschords.html
+  PRO:  output/boyfromtupelolyricschords.pro
+  Chord Count: 0
+
+  HTML: html/rebamcentirelyricschords.html
+  PRO:  output/rebamcentirelyricschords.pro
+  Chord Count: 0
+
+  HTML: html/lazyladylyricschords.html
+  PRO:  output/lazyladylyricschords.pro
+  Chord Count: 0
+
+  HTML: html/charliepridelyrics.html
+  PRO:  output/charliepridelyrics.pro
+  Chord Count: 0
+
+  HTML: html/idratherseeyouwavegoodbyelyricschords.html
+  PRO:  output/idratherseeyouwavegoodbyelyricschords.pro
+  Chord Count: 0
+
+  HTML: html/mickeygilleylyricschords.html
+  PRO:  output/mickeygilleylyricschords.pro
+  Chord Count: 0
+
+  HTML: html/johnandersonlyricschords.html
+  PRO:  output/johnandersonlyricschords.pro
+  Chord Count: 0
+
+  HTML: html/whenthemooncomesoverthemountainlyricschords.html
+  PRO:  output/whenthemooncomesoverthemountainlyricschords.pro
+  Chord Count: 0
+
+  HTML: html/rightwordslyricschords.html
+  PRO:  output/rightwordslyricschords.pro
+  Chord Count: 0
+
+  HTML: html/southerngospelsonglyricschords.html
+  PRO:  output/southerngospelsonglyricschords.pro
+  Chord Count: 0
+
+  HTML: html/aheartlikeherslyricschords.html
+  PRO:  output/aheartlikeherslyricschords.pro
+  Chord Count: 0
+
+  HTML: html/isforeverlongerthanalwayslyricschords.html
+  PRO:  output/isforeverlongerthanalwayslyricschords.pro
+  Chord Count: 0
+
+  HTML: html/millionairelyricschords.html
+  PRO:  output/millionairelyricschords.pro
+  Chord Count: 0
+
+  HTML: html/behindcloseddoorslyricschords.html
+  PRO:  output/behindcloseddoorslyricschords.pro
+  Chord Count: 0
+
+  HTML: html/bottlesholdinmelyricschords.html
+  PRO:  output/bottlesholdinmelyricschords.pro
+  Chord Count: 0
+
+  HTML: html/illbehomeforchristmaslyricschords.html
+  PRO:  output/illbehomeforchristmaslyricschords.pro
+  Chord Count: 0
+
+  HTML: html/mostofalllyricsandchords.html
+  PRO:  output/mostofalllyricsandchords.pro
+  Chord Count: 0
+
+  HTML: html/hidinginmyheartlyricschords.html
+  PRO:  output/hidinginmyheartlyricschords.pro
+  Chord Count: 0
+
+  HTML: html/tracybyrdlyricschords.html
+  PRO:  output/tracybyrdlyricschords.pro
+  Chord Count: 0
+
+  HTML: html/margielyricschords.html
+  PRO:  output/margielyricschords.pro
+  Chord Count: 0
+
+
+
+Top 0.1% (18 files):
+--------------------------------------------------------------------------------
+  HTML: html/frenchiemccormicklyricschords.html
+  PRO:  output/frenchiemccormicklyricschords.pro
+  Chord Count: 200
+
+  HTML: html/longhardroadlyricschords.html
+  PRO:  output/longhardroadlyricschords.pro
+  Chord Count: 163
+
+  HTML: html/mrshortylyricschords.html
+  PRO:  output/mrshortylyricschords.pro
+  Chord Count: 154
+
+  HTML: html/oscartheangellyricschords.html
+  PRO:  output/oscartheangellyricschords.pro
+  Chord Count: 151
+
+  HTML: html/thetownilovedsowelllyricschords.html
+  PRO:  output/thetownilovedsowelllyricschords.pro
+  Chord Count: 150
+
+  HTML: html/theoldmanandhisfiddlelyricschords.html
+  PRO:  output/theoldmanandhisfiddlelyricschords.pro
+  Chord Count: 149
+
+  HTML: html/thepartyaintoveryetlyricschords.html
+  PRO:  output/thepartyaintoveryetlyricschords.pro
+  Chord Count: 142
+
+  HTML: html/foolmelyricschords.html
+  PRO:  output/foolmelyricschords.pro
+  Chord Count: 142
+
+  HTML: html/thedecisionlyricschords.html
+  PRO:  output/thedecisionlyricschords.pro
+  Chord Count: 142
+
+  HTML: html/seattlelyricschords.html
+  PRO:  output/seattlelyricschords.pro
+  Chord Count: 141
+
+  HTML: html/carslyricschords.html
+  PRO:  output/carslyricschords.pro
+  Chord Count: 138
+
+  HTML: html/thesoundsofgoodbyelyricschords.html
+  PRO:  output/thesoundsofgoodbyelyricschords.pro
+  Chord Count: 136
+
+  HTML: html/themanwhoshotlibertyvalancelyricschords.html
+  PRO:  output/themanwhoshotlibertyvalancelyricschords.pro
+  Chord Count: 136
+
+  HTML: html/whatacryingshamelyricschords.html
+  PRO:  output/whatacryingshamelyricschords.pro
+  Chord Count: 135
+
+  HTML: html/thenitslovelyricschords.html
+  PRO:  output/thenitslovelyricschords.pro
+  Chord Count: 134
+
+  HTML: html/mymindisonyoulyricschords.html
+  PRO:  output/mymindisonyoulyricschords.pro
+  Chord Count: 134
+
+  HTML: html/babybluelyricschords.html
+  PRO:  output/babybluelyricschords.pro
+  Chord Count: 133
+
+  HTML: html/gardenpartylyricschords.html
+  PRO:  output/gardenpartylyricschords.pro
+  Chord Count: 132
+

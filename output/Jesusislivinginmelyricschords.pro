@@ -11,34 +11,16 @@ The [G]Lord met me [C]there
 Now [G]Jesus [D7]He’s living in [G]me
 {end_of_verse}
 
-{start_of_chorus}
-He’s in my feet when I’m walking
-In my [G7]tongue when I’m talking
-In my [C]eyes and [D7]now I can [G]see
-He’s in the [C]songs that I’m singing
-In my [G]heart His joy is [C]ringing
-[G]Jesus [D7]is living in [G]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-He’s in my feet when I’m walking
-In my [G7]tongue when I’m talking
-In my [C]eyes and [D7]now I can [G]see
-He’s in the [C]songs that I’m singing
-In my [G]heart His joy is [C]ringing
-[G]Jesus [D7]is living in [G]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-He’s in my feet when I’m walking
-In my [G7]tongue when I’m talking
-In my [C]eyes and [D7]now I can [G]see
-He’s in the [C]songs that I’m singing
-In my [G]heart His joy is [C]ringing
-[G]Jesus [D7]is living in [G]me
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+He’s in my feet when I’m walking
+In my [G7]tongue when I’m talking
+In my [C]eyes and [D7]now I can [G]see
+He’s in the [C]songs that I’m singing
+In my [G]heart His joy is [C]ringing
+[G]Jesus [D7]is living in [G]me
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Through the valleys He has brought me
 To the [G7]top of the mountain
 And [C]over life’s [D7]troubles trouble [G]seems
@@ -47,15 +29,24 @@ Songs that [G]tells a great [C]story
 Cause [G]Jesus [D7]is living in [G]me
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 He’s in my feet when I’m walking
 In my [G7]tongue when I’m talking
 In my [C]eyes and [D7]now I can [G]see
 He’s in the [C]songs that I’m singing
 In my [G]heart His joy is [C]ringing
 [G]Jesus [D7]is living in [G]me
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+He’s in my feet when I’m walking
+In my [G7]tongue when I’m talking
+In my [C]eyes and [D7]now I can [G]see
+He’s in the [C]songs that I’m singing
+In my [G]heart His joy is [C]ringing
+[G]Jesus [D7]is living in [G]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Yes my Jesus [D7]is living in [C]m-[G]e
 {end_of_verse}

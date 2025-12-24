@@ -9,39 +9,33 @@
 [G7]That's what you need for a Texas Saturday [C]night
 {end_of_verse}
 
-{start_of_chorus}
-And it's hi diddle diddle and a Texas fiddle
-[F]And we might jump over the moon
-[G7]Talk about living in a cowboy's [C]paradise
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-And it's hi diddle diddle and a Texas fiddle
-[F]And we might jump over the moon
-[G7]Talk about living in a cowboy's [C]paradise
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-And it's hi diddle diddle and a Texas fiddle
-[F]And we might jump over the moon
-[G7]Talk about living in a cowboy's [C]paradise
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+And it's hi diddle diddle and a Texas fiddle
+[F]And we might jump over the moon
+[G7]Talk about living in a cowboy's [C]paradise
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Don't be surprised if tequila sunrise
 [F]Don't roll around the moon
 [G7]That's how it is on a Texas Saturday [C]night
 {end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 [Dm]T for Texas M for me
 [G7]Me's for knowing where I'm gonna [C]be
 [Dm]You believe in neon lights
 [G7]You're gonna love a Texas Saturday [C]night
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 And it's hi diddle diddle and a Texas fiddle
 [F]And we might jump over the moon
 [G7]Talk about living in a cowboy's [C]paradise
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+And it's hi diddle diddle and a Texas fiddle
+[F]And we might jump over the moon
+[G7]Talk about living in a cowboy's [C]paradise
+{end_of_verse}

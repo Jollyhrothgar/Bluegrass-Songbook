@@ -11,34 +11,16 @@
 [F]The kind of man I promised her I'd [D7]be
 {end_of_verse}
 
-{start_of_chorus}
-As any fool can [G]see
-She's gonna [C]cross that line 
-[G]She's got leaving [C]on her mind
-And [Am]it's too late but [C]what keeps killing [D7]me
-Is knowing [F]I've been blind 
-[D7]As any fool can [G]see
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-As any fool can [G]see
-She's gonna [C]cross that line 
-[G]She's got leaving [C]on her mind
-And [Am]it's too late but [C]what keeps killing [D7]me
-Is knowing [F]I've been blind 
-[D7]As any fool can [G]see
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-As any fool can [G]see
-She's gonna [C]cross that line 
-[G]She's got leaving [C]on her mind
-And [Am]it's too late but [C]what keeps killing [D7]me
-Is knowing [F]I've been blind 
-[D7]As any fool can [G]see
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+As any fool can [G]see
+She's gonna [C]cross that line 
+[G]She's got leaving [C]on her mind
+And [Am]it's too late but [C]what keeps killing [D7]me
+Is knowing [F]I've been blind 
+[D7]As any fool can [G]see
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 How long did I [C]think she'd stand 
 [Em]For me to be the [C]kind of man
 [Am]That came and went just as I dang well [D7]pleased [C]
@@ -47,11 +29,20 @@ How long did I [C]think she'd stand
 [F]Lord knows goodbye would bring me to my [D7]knees
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 As any fool can [G]see
 She's gonna [C]cross that line 
 [G]She's got leaving [C]on her mind
 And [Am]it's too late but [C]what keeps killing [D7]me
 Is knowing [F]I've been blind 
 [D7]As any fool can [G]see
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+As any fool can [G]see
+She's gonna [C]cross that line 
+[G]She's got leaving [C]on her mind
+And [Am]it's too late but [C]what keeps killing [D7]me
+Is knowing [F]I've been blind 
+[D7]As any fool can [G]see
+{end_of_verse}

@@ -16,37 +16,30 @@ Then I [F]heard an awful noise and I [C]asked one of the boys
 What had happened and you [G7]should of heard him [C]shout
 {end_of_verse}
 
-{start_of_chorus}
-Where were you when the ship hit the sand
-I said I was in there praying for dry [G7]land
-With a [C]bucket and my breakfast in my [F]hand
-Where were [C]you when the [G7]ship hit the [C]sand
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Where were you when the ship hit the sand
-I said I was in there praying for dry [G7]land
-With a [C]bucket and my breakfast in my [F]hand
-Where were [C]you when the [G7]ship hit the [C]sand
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Where were you when the ship hit the sand
-I said I was in there praying for dry [G7]land
-With a [C]bucket and my breakfast in my [F]hand
-Where were [C]you when the [G7]ship hit the [C]sand
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Where were you when the ship hit the sand
+I said I was in there praying for dry [G7]land
+With a [C]bucket and my breakfast in my [F]hand
+Where were [C]you when the [G7]ship hit the [C]sand
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Oh the captain he came a [G7]running up on [C]deck
 He was a looking kinda pale around the [G7]neck
 As he [F]stood there shouting orders I stood [C]splashing in the water
 And I ask exactly [G7]what you might [C]expect
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Where were you when the ship hit the sand
 I said I was in there praying for dry [G7]land
 With a [C]bucket and my breakfast in my [F]hand
 Where were [C]you when the [G7]ship hit the [C]sand
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Where were you when the ship hit the sand
+I said I was in there praying for dry [G7]land
+With a [C]bucket and my breakfast in my [F]hand
+Where were [C]you when the [G7]ship hit the [C]sand
+{end_of_verse}

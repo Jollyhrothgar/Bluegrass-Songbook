@@ -13,41 +13,35 @@ Heard people say that love's a [Em]thing
 [C]But baby I [F]love you [Dm]baby yes I [C]love you
 {end_of_verse}
 
-{start_of_chorus}
-But I don't [G7]care what people say 
-I still [F]love you any[Fm]way
-Oh yes I [C]love you[G7]  I still [C]love you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-But I don't [G7]care what people say 
-I still [F]love you any[Fm]way
-Oh yes I [C]love you[G7]  I still [C]love you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-But I don't [G7]care what people say 
-I still [F]love you any[Fm]way
-Oh yes I [C]love you[G7]  I still [C]love you
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
-OO [Em]OOOO [Am]OOOO[C]OOOO[F]OOO[Dm]O   OOO[C]OOOO
+But I don't [G7]care what people say 
+I still [F]love you any[Fm]way
+Oh yes I [C]love you[G7]  I still [C]love you
 {end_of_verse}
 
 {start_of_verse: Verse 4}
+OO [Em]OOOO [Am]OOOO[C]OOOO[F]OOO[Dm]O   OOO[C]OOOO
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 Missed you most for all this [Em]year 
 [Am]I must have cry a million tears
 [C]Cause baby I [F]love you [Dm]  baby yes I [C]love you
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 But I don't [G7]care what people say 
 I still [F]love you any[Fm]way
 Oh yes I [C]love you[G7]  I still [C]love you
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 3}
+But I don't [G7]care what people say 
+I still [F]love you any[Fm]way
+Oh yes I [C]love you[G7]  I still [C]love you
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 OO [Em]OOOO [Am]OOOO[C]OOOO[F]OOO[Dm]O   OOO[C]OOOO
 OO [Em]OOOO [Am]OOOO[C]OOOO[F]OOO[Dm]O   OOO[C]OOOO
 {end_of_verse}

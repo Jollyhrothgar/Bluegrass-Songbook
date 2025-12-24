@@ -9,42 +9,35 @@ And long distance ain't the [D7]answer
 My little heart can't stand the [G]strain
 {end_of_verse}
 
-{start_of_chorus}
-I'm a [C]waitin' for your love waitin' every night and [G]day
-Hopin' you'll come by and [C]get me baby take me far [D7]away
-I'm a waitin' [C]for your love girl I ain't afraid to [G]say
-That you're all I ever [A7]wanted [C]so come and steal my heart [G]away
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I'm a [C]waitin' for your love waitin' every night and [G]day
-Hopin' you'll come by and [C]get me baby take me far [D7]away
-I'm a waitin' [C]for your love girl I ain't afraid to [G]say
-That you're all I ever [A7]wanted [C]so come and steal my heart [G]away
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I'm a [C]waitin' for your love waitin' every night and [G]day
-Hopin' you'll come by and [C]get me baby take me far [D7]away
-I'm a waitin' [C]for your love girl I ain't afraid to [G]say
-That you're all I ever [A7]wanted [C]so come and steal my heart [G]away
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+I'm a [C]waitin' for your love waitin' every night and [G]day
+Hopin' you'll come by and [C]get me baby take me far [D7]away
+I'm a waitin' [C]for your love girl I ain't afraid to [G]say
+That you're all I ever [A7]wanted [C]so come and steal my heart [G]away
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Well I was never one to [C]beg you know I always [G]played it cool so cool
 But you've got me on my [D7]knees now [C]you're the exception to the [G]rule
 Well there ain't no turnin' [C]back you know I'm too far [G]gone
 So I keep the front door [D7]open and keep the porch light [G]on
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 I'm a [C]waitin' for your love waitin' every night and [G]day
 Hopin' you'll come by and [C]get me baby take me far [D7]away
 I'm a waitin' [C]for your love girl I ain't afraid to [G]say
 That you're all I ever [A7]wanted [C]so come and steal my heart [G]away
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+I'm a [C]waitin' for your love waitin' every night and [G]day
+Hopin' you'll come by and [C]get me baby take me far [D7]away
+I'm a waitin' [C]for your love girl I ain't afraid to [G]say
+That you're all I ever [A7]wanted [C]so come and steal my heart [G]away
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I'm a [C]waitin' for your love waitin' every night and [G]day
 You're all I ever [A7]wanted [C]so come and steal my heart [G]away
 {end_of_verse}

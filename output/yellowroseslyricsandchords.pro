@@ -15,37 +15,30 @@ And on every rare occasion [C7]and for [F]no good reason to
 A big bouquet or a [C]single yellow [G7]rose was sent from [C]you
 {end_of_verse}
 
-{start_of_chorus}
-[C7]Yellow [F]roses the color of [C]sunshine
-You loved me at [G7]one time why did you have to [C]go
-[C7]Yellow [F]roses are you sending your [C]new love
-My bright yellow [G7]rose buds I still love you [C]so
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C7]Yellow [F]roses the color of [C]sunshine
-You loved me at [G7]one time why did you have to [C]go
-[C7]Yellow [F]roses are you sending your [C]new love
-My bright yellow [G7]rose buds I still love you [C]so
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C7]Yellow [F]roses the color of [C]sunshine
-You loved me at [G7]one time why did you have to [C]go
-[C7]Yellow [F]roses are you sending your [C]new love
-My bright yellow [G7]rose buds I still love you [C]so
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C7]Yellow [F]roses the color of [C]sunshine
+You loved me at [G7]one time why did you have to [C]go
+[C7]Yellow [F]roses are you sending your [C]new love
+My bright yellow [G7]rose buds I still love you [C]so
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I never see a yellow rose [F]that I don't think of you
 [G7]It's still my favorite flower though the [F]yellow's turned to [C]blue
 The day you left my teardrops fell [F]upon your farewell note
 You said goodbye like you [C]said hello with [G7]a single yellow [C]rose
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C7]Yellow [F]roses the color of [C]sunshine
 You loved me at [G7]one time why did you have to [C]go
 [C7]Yellow [F]roses are you sending your [C]new love
 My bright yellow [G7]rose buds I still love you [C]so
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C7]Yellow [F]roses the color of [C]sunshine
+You loved me at [G7]one time why did you have to [C]go
+[C7]Yellow [F]roses are you sending your [C]new love
+My bright yellow [G7]rose buds I still love you [C]so
+{end_of_verse}

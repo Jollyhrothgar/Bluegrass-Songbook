@@ -15,42 +15,35 @@ Well I got [C]too much rebel [F]in me
 I [G7]gotta be somewhere where I can [C]breathe
 {end_of_verse}
 
-{start_of_chorus}
-You can take me [A#7]out of the [F]country
-[C]Miles from where I wanna [G7]be
-You can [C]take me [A#7]out of the [F]country
-But you [G7]can't take the country outta [A#7]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-You can take me [A#7]out of the [F]country
-[C]Miles from where I wanna [G7]be
-You can [C]take me [A#7]out of the [F]country
-But you [G7]can't take the country outta [A#7]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-You can take me [A#7]out of the [F]country
-[C]Miles from where I wanna [G7]be
-You can [C]take me [A#7]out of the [F]country
-But you [G7]can't take the country outta [A#7]me
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+You can take me [A#7]out of the [F]country
+[C]Miles from where I wanna [G7]be
+You can [C]take me [A#7]out of the [F]country
+But you [G7]can't take the country outta [A#7]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [C]Hurry home to my [F]woman
 Big blue [C]eyes and long blonde [G7]hair
 And we'll make [C]love way until [F]mornin’
 And [G7]tell the world I don't [C]care
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 You can take me [A#7]out of the [F]country
 [C]Miles from where I wanna [G7]be
 You can [C]take me [A#7]out of the [F]country
 But you [G7]can't take the country outta [A#7]me
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+You can take me [A#7]out of the [F]country
+[C]Miles from where I wanna [G7]be
+You can [C]take me [A#7]out of the [F]country
+But you [G7]can't take the country outta [A#7]me
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 You can [C]take me [A#7]out of the [F]country
 But you [G7]can't take the country outta [C]me
 {end_of_verse}

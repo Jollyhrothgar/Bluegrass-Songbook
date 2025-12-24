@@ -16,37 +16,30 @@ The little tombstone out behind the [F]cabin
 There's [C]more that holds this [G7]picture than the [C]frame
 {end_of_verse}
 
-{start_of_chorus}
-[F]See that bible on the bedside [C]table
-[G7]See that hand made quilt there on the [C]bed
-[F]See those calloused hands around my [C]grandma
-They [G7]always worked to keep his family [C]fed
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]See that bible on the bedside [C]table
-[G7]See that hand made quilt there on the [C]bed
-[F]See those calloused hands around my [C]grandma
-They [G7]always worked to keep his family [C]fed
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]See that bible on the bedside [C]table
-[G7]See that hand made quilt there on the [C]bed
-[F]See those calloused hands around my [C]grandma
-They [G7]always worked to keep his family [C]fed
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[F]See that bible on the bedside [C]table
+[G7]See that hand made quilt there on the [C]bed
+[F]See those calloused hands around my [C]grandma
+They [G7]always worked to keep his family [C]fed
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Look close and you will see that old wax [G7]candle
 At times I almost feel the warming [C]flame
 And listen you can almost hear them [F]praying
 There's [C]more that holds this [G7]picture than the [C]frame
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [F]See that bible on the bedside [C]table
 [G7]See that hand made quilt there on the [C]bed
 [F]See those calloused hands around my [C]grandma
 They [G7]always worked to keep his family [C]fed
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[F]See that bible on the bedside [C]table
+[G7]See that hand made quilt there on the [C]bed
+[F]See those calloused hands around my [C]grandma
+They [G7]always worked to keep his family [C]fed
+{end_of_verse}

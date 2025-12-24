@@ -11,28 +11,14 @@ Last parts of her dreams flying
 [C]As I kiss the night time from her [D7]eyes
 {end_of_verse}
 
-{start_of_chorus}
-I [C]love that early [D7]morning kind of [G]love
-When [Em]she makes real what [A7]I’ve been dreaming [D7]of
-When [C]we’re so close the two of us [G]melts into just [C]one
-I love that early [D7]morning kind of [G]love
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I [C]love that early [D7]morning kind of [G]love
-When [Em]she makes real what [A7]I’ve been dreaming [D7]of
-When [C]we’re so close the two of us [G]melts into just [C]one
-I love that early [D7]morning kind of [G]love
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I [C]love that early [D7]morning kind of [G]love
-When [Em]she makes real what [A7]I’ve been dreaming [D7]of
-When [C]we’re so close the two of us [G]melts into just [C]one
-I love that early [D7]morning kind of [G]love
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+I [C]love that early [D7]morning kind of [G]love
+When [Em]she makes real what [A7]I’ve been dreaming [D7]of
+When [C]we’re so close the two of us [G]melts into just [C]one
+I love that early [D7]morning kind of [G]love
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Lord knows when I hold her 
 Lying soft against my shoulder
 [C]Like an angel come from up [D7]above
@@ -41,14 +27,14 @@ The soft touch of her finger tips
 [C]I love that early morning kind of [D7]love
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 I [C]love that early [D7]morning kind of [G]love
 When [Em]she makes real what [A7]I’ve been dreaming [D7]of
 When [C]we’re so close the two of us [G]melts into just [C]one
 I love that early [D7]morning kind of [G]love
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 Tangled sheets and thrown off covers
 Left behind by morning lovers
 [C]Now gone on to face another [D7]day
@@ -57,13 +43,20 @@ We’ll pray the Lord our soul to keep
 [C]So we can wake up in that special [D7]way 
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 I [C]love that early [D7]morning kind of [G]love
 When [Em]she makes real what [A7]I’ve been dreaming [D7]of
 When [C]we’re so close the two of us [G]melts into just [C]one
 I love that early [D7]morning kind of [G]love
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 2}
+I [C]love that early [D7]morning kind of [G]love
+When [Em]she makes real what [A7]I’ve been dreaming [D7]of
+When [C]we’re so close the two of us [G]melts into just [C]one
+I love that early [D7]morning kind of [G]love
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 I [C]love that early [D7]morning kind of [G]love
 {end_of_verse}

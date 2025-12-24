@@ -8,22 +8,12 @@
 [C]Guess who paid the cost
 {end_of_verse}
 
-{start_of_chorus}
-When they nailed Him to the cross
-[G7]And He paid the price for me and for [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-When they nailed Him to the cross
-[G7]And He paid the price for me and for [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-When they nailed Him to the cross
-[G7]And He paid the price for me and for [C]you
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+When they nailed Him to the cross
+[G7]And He paid the price for me and for [C]you
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Yes He walked (yes He walked)
 [F]Up the hill to [C]Calvary
 [G7]God was giving up His only child
@@ -32,18 +22,23 @@ Yes He walked (yes He walked)
 [G7]How He walked that impossible [C]mile
 {end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 Oh the thunder it did roll and the wind it did blow
 [G7]As they walked through the street in single file
 [C]And the blood began to flow
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 From the crown of thorns He wore
 [G7]As He walked that impossible [C]mile
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 When they nailed Him to the cross
 [G7]And He paid the price for me and for [C]you
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+When they nailed Him to the cross
+[G7]And He paid the price for me and for [C]you
+{end_of_verse}

@@ -16,28 +16,14 @@ I'll [F]be gone when the [G7]sun comes up [Am][C]tomorrow
 I [F]believe it's time to [G7]say goodbye to [C]you
 {end_of_verse}
 
-{start_of_chorus}
-And it [G7]sure smells like [F]snow in Bossier [C]City
-But there [D7]ain't no weather quite as cold as [G7]you
-I'd [F]sooner stand in [G7]mother nature's [Am][C]anger
-Than to [F]spend another [G7]lonely night with [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-And it [G7]sure smells like [F]snow in Bossier [C]City
-But there [D7]ain't no weather quite as cold as [G7]you
-I'd [F]sooner stand in [G7]mother nature's [Am][C]anger
-Than to [F]spend another [G7]lonely night with [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-And it [G7]sure smells like [F]snow in Bossier [C]City
-But there [D7]ain't no weather quite as cold as [G7]you
-I'd [F]sooner stand in [G7]mother nature's [Am][C]anger
-Than to [F]spend another [G7]lonely night with [C]you
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+And it [G7]sure smells like [F]snow in Bossier [C]City
+But there [D7]ain't no weather quite as cold as [G7]you
+I'd [F]sooner stand in [G7]mother nature's [Am][C]anger
+Than to [F]spend another [G7]lonely night with [C]you
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I'm [F]talking but I'm [G7]feeling you're not [C]listenin'
 [F]My words they just [G7]fall heavy on the [C]floor
 Yes it's true [F]that you knew I would not [G7]stay [Am]forever
@@ -51,9 +37,16 @@ I'll [F]be gone when the [G7]sun comes up [Am][C]tomorrow
 I [F]believe it's time to [G7]say goodbye to [C]you
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 And it [G7]sure smells like [F]snow in Bossier [C]City
 But there [D7]ain't no weather quite as cold as [G7]you
 I'd [F]sooner stand in [G7]mother nature's [Am][C]anger
 Than to [F]spend another [G7]lonely night with [C]you
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+And it [G7]sure smells like [F]snow in Bossier [C]City
+But there [D7]ain't no weather quite as cold as [G7]you
+I'd [F]sooner stand in [G7]mother nature's [Am][C]anger
+Than to [F]spend another [G7]lonely night with [C]you
+{end_of_verse}

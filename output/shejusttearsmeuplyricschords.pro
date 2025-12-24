@@ -10,38 +10,29 @@ Well [C]she so fine I wanna [G]hold her tight
 [D7]She just tears me [G]up
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Well she just tears me up every time she looks my way
 It just tears me up cause I can’t think on nothing to say
 Any[C]time at night when I’m [G]feeling just right
 [D7]I’m gonna take her [G]up
 I’m [C]gonna love her so and I [G]won’t let go
 [D7]She just tears me [G]up
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_chorus: Repeat 1}
+{start_of_verse: Verse 2}
 Well she just tears me up every time she looks my way
 It just tears me up cause I can’t think on nothing to say
 Any[C]time at night when I’m [G]feeling just right
 [D7]I’m gonna take her [G]up
 I’m [C]gonna love her so and I [G]won’t let go
 [D7]She just tears me [G]up
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_chorus: Repeat 2}
+{start_of_verse: Verse 2}
 Well she just tears me up every time she looks my way
 It just tears me up cause I can’t think on nothing to say
 Any[C]time at night when I’m [G]feeling just right
 [D7]I’m gonna take her [G]up
 I’m [C]gonna love her so and I [G]won’t let go
 [D7]She just tears me [G]up
-{end_of_chorus}
-
-{start_of_chorus}
-Well she just tears me up every time she looks my way
-It just tears me up cause I can’t think on nothing to say
-Any[C]time at night when I’m [G]feeling just right
-[D7]I’m gonna take her [G]up
-I’m [C]gonna love her so and I [G]won’t let go
-[D7]She just tears me [G]up
-{end_of_chorus}
+{end_of_verse}

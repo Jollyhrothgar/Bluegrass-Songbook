@@ -43,3 +43,24 @@ Still like that old time rock and roll
 [G7]I reminisce about the days of old
 [C]With that old time rock and roll
 {end_of_verse}
+
+{start_of_verse: Verse 3}
+Still like that old time rock and roll
+[F]That kind of music just soothes the soul
+[G7]I reminisce about the days of old
+[C]With that old time rock and roll
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Still like that old time rock and roll
+[F]That kind of music just soothes the soul
+[G7]I reminisce about the days of old
+[C]With that old time rock and roll
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Still like that old time rock and roll
+[F]That kind of music just soothes the soul
+[G7]I reminisce about the days of old
+[C]With that old time rock and roll
+{end_of_verse}

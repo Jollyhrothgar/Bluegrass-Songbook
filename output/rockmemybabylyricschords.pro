@@ -9,51 +9,44 @@ Love me baby you know how
 Yes a-[G7]rock me my [C]baby
 {end_of_verse}
 
-{start_of_chorus}
-Well [F]rock a-like a [C]hickory dickory dock 
-[F]Rock-a-bye my [C]baby
-[F]Up and down around the clock
-Well a-[G7]rock me my [C]baby
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Well [F]rock a-like a [C]hickory dickory dock 
-[F]Rock-a-bye my [C]baby
-[F]Up and down around the clock
-Well a-[G7]rock me my [C]baby
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Well [F]rock a-like a [C]hickory dickory dock 
-[F]Rock-a-bye my [C]baby
-[F]Up and down around the clock
-Well a-[G7]rock me my [C]baby
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Well [F]rock a-like a [C]hickory dickory dock 
+[F]Rock-a-bye my [C]baby
+[F]Up and down around the clock
+Well a-[G7]rock me my [C]baby
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Well plant your kisses on my lips
 And make me bubble brightly
 Thrill me to my fingertips
 Well a-[G7]rock me my [C]baby
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Well [F]rock a-like a [C]hickory dickory dock 
 [F]Rock-a-bye my [C]baby
 [F]Up and down around the clock
 Well a-[G7]rock me my [C]baby
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 Well tell me that you love me too
 And say you'll never me
 No one loves you like I do
 So [G7]rock me my [C]baby
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Well [F]rock a-like a [C]hickory dickory dock 
 [F]Rock-a-bye my [C]baby
 [F]Up and down around the clock
 Well a-[G7]rock me my [C]baby
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Well [F]rock a-like a [C]hickory dickory dock 
+[F]Rock-a-bye my [C]baby
+[F]Up and down around the clock
+Well a-[G7]rock me my [C]baby
+{end_of_verse}

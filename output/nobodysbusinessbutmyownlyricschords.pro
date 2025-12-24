@@ -59,6 +59,13 @@ Nobody's business nobody's [C]business
 [G]Nobody's [D7]business but my [G]own
 {end_of_verse}
 
+{start_of_verse: Verse 2}
+Nobody's business nobody's [C]business
+[G]Nobody's business but my [D7]own
+[G]Nobody's business nobody's [C]business
+[G]Nobody's [D7]business but my [G]own
+{end_of_verse}
+
 {start_of_verse: Verse 6}
 Ain't nobody's [D7]business but our [G]own
 {end_of_verse}

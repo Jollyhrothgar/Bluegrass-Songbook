@@ -18,34 +18,16 @@ She’s ready to [F]leave her troubles [G]behind
 [C]We’re both [F]needing so much [G]more
 {end_of_verse}
 
-{start_of_chorus}
-[C]I'll give you [G]all my love [F]tonight
-[Fm]Baby the time has [C]come
-This can’t be [G]wrong it feels so [F]right[Fm]
-Any [Dm]time you [G]question what you [Em]feel
-You [Am]never see what’s [F]real
-Baby take a [G]good look at [Am]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]I'll give you [G]all my love [F]tonight
-[Fm]Baby the time has [C]come
-This can’t be [G]wrong it feels so [F]right[Fm]
-Any [Dm]time you [G]question what you [Em]feel
-You [Am]never see what’s [F]real
-Baby take a [G]good look at [Am]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]I'll give you [G]all my love [F]tonight
-[Fm]Baby the time has [C]come
-This can’t be [G]wrong it feels so [F]right[Fm]
-Any [Dm]time you [G]question what you [Em]feel
-You [Am]never see what’s [F]real
-Baby take a [G]good look at [Am]me
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]I'll give you [G]all my love [F]tonight
+[Fm]Baby the time has [C]come
+This can’t be [G]wrong it feels so [F]right[Fm]
+Any [Dm]time you [G]question what you [Em]feel
+You [Am]never see what’s [F]real
+Baby take a [G]good look at [Am]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 It’s hard erasing [F]all that [G]doubt
 [Am]But we know one thing [F]baby 
 We [G]just can’t live with[F]out
@@ -54,19 +36,28 @@ We [G]just can’t live with[F]out
 [C]And following our [F]hearts will make it [G]right
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]I'll give you [G]all my love [F]tonight
 [Fm]Baby the time has [C]come
 This can’t be [G]wrong it feels so [F]right[Fm]
 Any [Dm]time you [G]question what you [Em]feel
 You [Am]never see what’s [F]real
 Baby take a [G]good look at [Am]me
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
-I'll give you [G]all my love [F]tonight[Fm]
+{start_of_verse: Verse 3}
+[C]I'll give you [G]all my love [F]tonight
+[Fm]Baby the time has [C]come
+This can’t be [G]wrong it feels so [F]right[Fm]
+Any [Dm]time you [G]question what you [Em]feel
+You [Am]never see what’s [F]real
+Baby take a [G]good look at [Am]me
 {end_of_verse}
 
 {start_of_verse: Verse 5}
+I'll give you [G]all my love [F]tonight[Fm]
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 [C]I'll give you [G]all my love [F]tonight[Fm]    [C]
 {end_of_verse}

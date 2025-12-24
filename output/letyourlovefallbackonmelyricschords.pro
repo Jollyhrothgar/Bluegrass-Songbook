@@ -16,44 +16,37 @@ If [G]your plan should [C]fall apart
 Let your [A7]love fall [D7]back on [G]me
 {end_of_verse}
 
-{start_of_chorus}
-If your love not [D7]being [G]used
-If your [C]happiness [D7]falls [G]through
-[C]If your [D7]life's not [G]what it should [Em]be
-Let your [A7]love fall [D7]back on [G]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-If your love not [D7]being [G]used
-If your [C]happiness [D7]falls [G]through
-[C]If your [D7]life's not [G]what it should [Em]be
-Let your [A7]love fall [D7]back on [G]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-If your love not [D7]being [G]used
-If your [C]happiness [D7]falls [G]through
-[C]If your [D7]life's not [G]what it should [Em]be
-Let your [A7]love fall [D7]back on [G]me
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+If your love not [D7]being [G]used
+If your [C]happiness [D7]falls [G]through
+[C]If your [D7]life's not [G]what it should [Em]be
+Let your [A7]love fall [D7]back on [G]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 If all I hear is true 
 [C]There'll soon be [D7]wedding [G]bells
 [C]I guess you've [G]set the date
 [Am]I guess I wish you [D7]well
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 [G]If you find the [C]road you're on
 [G]Hard to travel any[C]way at all
 If [G]you should [E7]stumble and fall
 Let your [A7]love fall [D7]back on [G]me
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 If your love not [D7]being [G]used
 If your [C]happiness [D7]falls [G]through
 [C]If your [D7]life's not [G]what it should [Em]be
 Let your [A7]love fall [D7]back on [G]me
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+If your love not [D7]being [G]used
+If your [C]happiness [D7]falls [G]through
+[C]If your [D7]life's not [G]what it should [Em]be
+Let your [A7]love fall [D7]back on [G]me
+{end_of_verse}

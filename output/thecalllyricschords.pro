@@ -14,45 +14,39 @@ It's just a face in the crowd where the traffic roars loud
 But don't you know he'd be proud to give a [G]helping hand
 {end_of_verse}
 
-{start_of_chorus}
-Mister can you find it in your heart to lend me a [D7]dollar 
-For the times have been slow I'm fresh outta dough 
-And I ain't got the money to [G]call him 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Mister can you find it in your heart to lend me a [D7]dollar 
-For the times have been slow I'm fresh outta dough 
-And I ain't got the money to [G]call him 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Mister can you find it in your heart to lend me a [D7]dollar 
-For the times have been slow I'm fresh outta dough 
-And I ain't got the money to [G]call him 
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Mister can you find it in your heart to lend me a [D7]dollar 
+For the times have been slow I'm fresh outta dough 
+And I ain't got the money to [G]call him 
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I threw my pride out the door 
 Cause I've been turned down before but I'll [D7]keep trying
 This type of pain is kind of hard to explain
 But the feeling's the same as like [G]dying
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Mister can you find it in your heart to lend me a [D7]dollar 
 For the times have been slow I'm fresh outta dough 
 And I ain't got the money to [G]call him 
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 You put the change in my hand you're the world's kindest man
 And I [D7]thank you sir  you'll never know what you've done
 For this poor mother's son a thirsty man just got a cold cup of [G]water
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Mister can you find it in your heart to lend me a [D7]dollar 
 For the times have been slow I'm fresh outta dough 
 And I ain't got the money to [G]call him 
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Mister can you find it in your heart to lend me a [D7]dollar 
+For the times have been slow I'm fresh outta dough 
+And I ain't got the money to [G]call him 
+{end_of_verse}

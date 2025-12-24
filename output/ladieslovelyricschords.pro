@@ -11,40 +11,18 @@ There's a [Am]few things about the [D7]ladies
 That you need to [G]know
 {end_of_verse}
 
-{start_of_chorus}
-Well ladies love warm sunshine 
-Sipping on [C]sweet red wine
-They love [Am]flowers and flirting
-[D7]And dancing in [G]three four time[D7]
-Ladies loves [G]fancy things 
-Silk and satin and [C]diamond rings
-But [Am]most of all they love that [D7]feeling
-That true love [G]brings
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Well ladies love warm sunshine 
-Sipping on [C]sweet red wine
-They love [Am]flowers and flirting
-[D7]And dancing in [G]three four time[D7]
-Ladies loves [G]fancy things 
-Silk and satin and [C]diamond rings
-But [Am]most of all they love that [D7]feeling
-That true love [G]brings
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Well ladies love warm sunshine 
-Sipping on [C]sweet red wine
-They love [Am]flowers and flirting
-[D7]And dancing in [G]three four time[D7]
-Ladies loves [G]fancy things 
-Silk and satin and [C]diamond rings
-But [Am]most of all they love that [D7]feeling
-That true love [G]brings
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Well ladies love warm sunshine 
+Sipping on [C]sweet red wine
+They love [Am]flowers and flirting
+[D7]And dancing in [G]three four time[D7]
+Ladies loves [G]fancy things 
+Silk and satin and [C]diamond rings
+But [Am]most of all they love that [D7]feeling
+That true love [G]brings
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Now I've known a few ladies
 And I've learned how to treat them [D7]right
 A little [Am]tender loving care 
@@ -55,7 +33,7 @@ You've got to [Am]know what's in a ladies [D7]heart
 To win a ladies [G]love
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Well ladies love warm sunshine 
 Sipping on [C]sweet red wine
 They love [Am]flowers and flirting
@@ -64,4 +42,15 @@ Ladies loves [G]fancy things
 Silk and satin and [C]diamond rings
 But [Am]most of all they love that [D7]feeling
 That true love [G]brings
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Well ladies love warm sunshine 
+Sipping on [C]sweet red wine
+They love [Am]flowers and flirting
+[D7]And dancing in [G]three four time[D7]
+Ladies loves [G]fancy things 
+Silk and satin and [C]diamond rings
+But [Am]most of all they love that [D7]feeling
+That true love [G]brings
+{end_of_verse}

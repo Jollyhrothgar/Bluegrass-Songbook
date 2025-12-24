@@ -16,37 +16,30 @@ Tonight he's embracin' reali[Em]ty
 And he [G]curses the [D7]day he was [G]born
 {end_of_verse}
 
-{start_of_chorus}
-And the [C]darkness still echoes her [G]warning
-You [C]can't have two [G]loves in your [Em]life
-Now the [G]things that will haunt him till the day that he [C]dies
-Is the [G]smell of cheap whiskey and the [D7]sound of good[G]bye
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-And the [C]darkness still echoes her [G]warning
-You [C]can't have two [G]loves in your [Em]life
-Now the [G]things that will haunt him till the day that he [C]dies
-Is the [G]smell of cheap whiskey and the [D7]sound of good[G]bye
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-And the [C]darkness still echoes her [G]warning
-You [C]can't have two [G]loves in your [Em]life
-Now the [G]things that will haunt him till the day that he [C]dies
-Is the [G]smell of cheap whiskey and the [D7]sound of good[G]bye
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+And the [C]darkness still echoes her [G]warning
+You [C]can't have two [G]loves in your [Em]life
+Now the [G]things that will haunt him till the day that he [C]dies
+Is the [G]smell of cheap whiskey and the [D7]sound of good[G]bye
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Since the hour she left he's been [Em]sober
 Each [G]breath that he [D7]draws makes him [G]think
 By the love of his life gone for[Em]ever
 When he [G]traded her [D7]love for a [G]drink
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 And the [C]darkness still echoes her [G]warning
 You [C]can't have two [G]loves in your [Em]life
 Now the [G]things that will haunt him till the day that he [C]dies
 Is the [G]smell of cheap whiskey and the [D7]sound of good[G]bye
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+And the [C]darkness still echoes her [G]warning
+You [C]can't have two [G]loves in your [Em]life
+Now the [G]things that will haunt him till the day that he [C]dies
+Is the [G]smell of cheap whiskey and the [D7]sound of good[G]bye
+{end_of_verse}

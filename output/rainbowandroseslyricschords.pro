@@ -9,37 +9,30 @@ And [Dm]no one quite as [G7]happy as two [Dm]lovers picking [G7]out a wedding [C
 And [Dm]nothing in this [G7]world that will [Dm]ever [G7]take your [C]place[G7]
 {end_of_verse}
 
-{start_of_chorus}
-[C]You’re my [Em]rainbow and [Dm]roses 
-[G7]You’re all the beauty I [C]need[G7]
-[C]You’re my [Em]rainbow and [Dm]roses 
-You’re all the [G7]world to [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]You’re my [Em]rainbow and [Dm]roses 
-[G7]You’re all the beauty I [C]need[G7]
-[C]You’re my [Em]rainbow and [Dm]roses 
-You’re all the [G7]world to [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]You’re my [Em]rainbow and [Dm]roses 
-[G7]You’re all the beauty I [C]need[G7]
-[C]You’re my [Em]rainbow and [Dm]roses 
-You’re all the [G7]world to [C]me
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[C]You’re my [Em]rainbow and [Dm]roses 
+[G7]You’re all the beauty I [C]need[G7]
+[C]You’re my [Em]rainbow and [Dm]roses 
+You’re all the [G7]world to [C]me
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [G7]There’s [C]nothing quite as [G7]sweet as the [C]fragrance from a lover’s [Dm]rose[G7]
 And [Dm]no one with more [G7]affection than [Dm]someone that’s [G7]alone and growing [C]old[G7]  
 There’s [C]nothing quite as [G7]pleasing as a [C]dream that suddenly comes [Dm]true[G7]
 And [Dm]nothing in this [G7]world I will [Dm]ever [G7]love more than [C]you [G7]
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [C]You’re my [Em]rainbow and [Dm]roses 
 [G7]You’re all the beauty I [C]need[G7]
 [C]You’re my [Em]rainbow and [Dm]roses 
 You’re all the [G7]world to [C]me
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[C]You’re my [Em]rainbow and [Dm]roses 
+[G7]You’re all the beauty I [C]need[G7]
+[C]You’re my [Em]rainbow and [Dm]roses 
+You’re all the [G7]world to [C]me
+{end_of_verse}

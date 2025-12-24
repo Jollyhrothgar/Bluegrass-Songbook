@@ -16,49 +16,42 @@ And she [Dm]knows she can't [G7]possess me and she [C]knows she never [Am]will
 There's [Dm]just this empty place [F]inside of me that [Dm]only she can [G7]fill
 {end_of_verse}
 
-{start_of_chorus}
-[Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
-[Dm]Loving [G7]both of you is [C]breaking all the rules
-[Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
-[Dm]Loving you both is [Em]breaking all the [C]rules
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
-[Dm]Loving [G7]both of you is [C]breaking all the rules
-[Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
-[Dm]Loving you both is [Em]breaking all the [C]rules
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
-[Dm]Loving [G7]both of you is [C]breaking all the rules
-[Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
-[Dm]Loving you both is [Em]breaking all the [C]rules
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
+[Dm]Loving [G7]both of you is [C]breaking all the rules
+[Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
+[Dm]Loving you both is [Em]breaking all the [C]rules
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [Dm]She mustn't think you've [G7]failed me just [C]because there's someone else
 You [Dm]were the first real [G7]love I ever [C]had
 [Dm]And all the things I ever [G7]said I [C]swear they still are [Am]true
 [Dm]No one else can [F]have the [Dm]part of me I [G7]gave to you
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
 [Dm]Loving [G7]both of you is [C]breaking all the rules
 [Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
 [Dm]Loving you both is [Em]breaking all the [C]rules
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 I [Dm]couldn't really [G7]blame you if you [C]turned and walked [Am]away
 But [Dm]with everything I [F]feel inside I'm [Dm]asking you to [G7]stay
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
 [Dm]Loving [G7]both of you is [C]breaking all the rules
 [Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
 [Dm]Loving you both is [Em]breaking all the [C]rules
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
+[Dm]Loving [G7]both of you is [C]breaking all the rules
+[Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
+[Dm]Loving you both is [Em]breaking all the [C]rules
+{end_of_verse}

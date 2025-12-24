@@ -8,49 +8,40 @@ Our loved ones are waiting they're now congregating
 Beyond the [G7]sunset for [C]me
 {end_of_verse}
 
-{start_of_chorus}
-Beyond the sunset in that better home
-The [F]sunset angels are waiting to carry me home
-In [C]Heaven with Jesus I'll [G7]be
-[C]Beyond the sunset of life all cares will vanish away
-The [F]sunset will shine as the light of the day
-[C]Beyond the [G7]sunset for [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Beyond the sunset in that better home
-The [F]sunset angels are waiting to carry me home
-In [C]Heaven with Jesus I'll [G7]be
-[C]Beyond the sunset of life all cares will vanish away
-The [F]sunset will shine as the light of the day
-[C]Beyond the [G7]sunset for [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Beyond the sunset in that better home
-The [F]sunset angels are waiting to carry me home
-In [C]Heaven with Jesus I'll [G7]be
-[C]Beyond the sunset of life all cares will vanish away
-The [F]sunset will shine as the light of the day
-[C]Beyond the [G7]sunset for [C]me
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Beyond the sunset in that better home
+The [F]sunset angels are waiting to carry me home
+In [C]Heaven with Jesus I'll [G7]be
+[C]Beyond the sunset of life all cares will vanish away
+The [F]sunset will shine as the light of the day
+[C]Beyond the [G7]sunset for [C]me
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Such comfort in knowing that I'll soon be going
 Where my [F]soul shall forever be [C]free
 I see Jesus standing on the shore by the landing
 Beyond the [G7]sunset for [C]me
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Beyond the sunset in that better home
 The [F]sunset angels are waiting to carry me home
 In [C]Heaven with Jesus I'll [G7]be
 [C]Beyond the sunset of life all cares will vanish away
 The [F]sunset will shine as the light of the day
 [C]Beyond the [G7]sunset for [C]me
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+Beyond the sunset in that better home
+The [F]sunset angels are waiting to carry me home
+In [C]Heaven with Jesus I'll [G7]be
+[C]Beyond the sunset of life all cares will vanish away
+The [F]sunset will shine as the light of the day
+[C]Beyond the [G7]sunset for [C]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Beyond the [G7]sunset for [C]me
 {end_of_verse}

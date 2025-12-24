@@ -9,37 +9,30 @@ I've [E7]never seen the world's seven [Am]wonders[G7]
 But I'll [D7]see the greatest wonder that [Dm]day when I go [G7]home
 {end_of_verse}
 
-{start_of_chorus}
-I'm [C]gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
-I'll see Him [Dm]smile open His [G7]arms and walk my [C]way
-I'm gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
-I'm gonna [Dm]look in[C]to His [F]eyes some[C]day
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I'm [C]gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
-I'll see Him [Dm]smile open His [G7]arms and walk my [C]way
-I'm gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
-I'm gonna [Dm]look in[C]to His [F]eyes some[C]day
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I'm [C]gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
-I'll see Him [Dm]smile open His [G7]arms and walk my [C]way
-I'm gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
-I'm gonna [Dm]look in[C]to His [F]eyes some[C]day
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+I'm [C]gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
+I'll see Him [Dm]smile open His [G7]arms and walk my [C]way
+I'm gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
+I'm gonna [Dm]look in[C]to His [F]eyes some[C]day
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 I may not see that much of [F]riches
 [C]I may not see that much of fame
 [E7]I may not see that much of worldly [Am]treasures[G7]
 And if I [D7]never do I really [Dm]haven't missed a [G7]thing cause
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 I'm [C]gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
 I'll see Him [Dm]smile open His [G7]arms and walk my [C]way
 I'm gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
 I'm gonna [Dm]look in[C]to His [F]eyes some[C]day
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+I'm [C]gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
+I'll see Him [Dm]smile open His [G7]arms and walk my [C]way
+I'm gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
+I'm gonna [Dm]look in[C]to His [F]eyes some[C]day
+{end_of_verse}

@@ -9,41 +9,34 @@ If I said goodbye to my first true love my heart would break in [D7]two
 [G]For I'm halfway still in love with him and [D7]half in love with [G]you
 {end_of_verse}
 
-{start_of_chorus}
-Tra le la la triangle [C]tra le la la triangle
-[D7]Tra le la la triangle [G]my life's in such a tangle
-Tra le la la triangle [C]tra le la la triangle
-[D7]Tra le la la triangle what'll I do [G]about you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Tra le la la triangle [C]tra le la la triangle
-[D7]Tra le la la triangle [G]my life's in such a tangle
-Tra le la la triangle [C]tra le la la triangle
-[D7]Tra le la la triangle what'll I do [G]about you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Tra le la la triangle [C]tra le la la triangle
-[D7]Tra le la la triangle [G]my life's in such a tangle
-Tra le la la triangle [C]tra le la la triangle
-[D7]Tra le la la triangle what'll I do [G]about you
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Tra le la la triangle [C]tra le la la triangle
+[D7]Tra le la la triangle [G]my life's in such a tangle
+Tra le la la triangle [C]tra le la la triangle
+[D7]Tra le la la triangle what'll I do [G]about you
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 I saw you at the movie show just the other [D7]day
 [G]But I was with my other love so I [D7]looked the other [G]way
 I didn't want to hurt him couldn't bear for him to [D7]see
 [G]The way that I would look at you and the [D7]way you’d look at [G]me
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Tra le la la triangle [C]tra le la la triangle
 [D7]Tra le la la triangle [G]my life's in such a tangle
 Tra le la la triangle [C]tra le la la triangle
 [D7]Tra le la la triangle what'll I do [G]about you
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+Tra le la la triangle [C]tra le la la triangle
+[D7]Tra le la la triangle [G]my life's in such a tangle
+Tra le la la triangle [C]tra le la la triangle
+[D7]Tra le la la triangle what'll I do [G]about you
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [D7]What'll I do [G]about you [D7]what'll I do [G]about you
 {end_of_verse}

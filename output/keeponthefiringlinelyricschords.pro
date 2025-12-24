@@ -15,49 +15,42 @@ A [F]coward in the service he will find no place
 So [C]keep on the [G7]firing [C]line
 {end_of_verse}
 
-{start_of_chorus}
-Oh you must fight be brave against all evil
-Never run nor [D7]even lag be[G7]hind 
-If [C]you would win for [F]God and the right
-Just [C]keep on the [G7]firing [C]line
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Oh you must fight be brave against all evil
-Never run nor [D7]even lag be[G7]hind 
-If [C]you would win for [F]God and the right
-Just [C]keep on the [G7]firing [C]line
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Oh you must fight be brave against all evil
-Never run nor [D7]even lag be[G7]hind 
-If [C]you would win for [F]God and the right
-Just [C]keep on the [G7]firing [C]line
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Oh you must fight be brave against all evil
+Never run nor [D7]even lag be[G7]hind 
+If [C]you would win for [F]God and the right
+Just [C]keep on the [G7]firing [C]line
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Well when we get to heaven brother we'll be glad
 [F]Keep on the firing [C]line
 Oh I will praise the Savior for the call we've had
 [D7]Keep on the firing [G7]line
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 [C]When we see the souls that we have helped to win
 [F]Leading them to Jesus from the [C]paths of sin
 [F]With a shout of welcome we will march right in
 So [C]keep on the [G7]firing [C]line
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Oh you must fight be brave against all evil
 Never run nor [D7]even lag be[G7]hind 
 If [C]you would win for [F]God and the right
 Just [C]keep on the [G7]firing [C]line
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 3}
+Oh you must fight be brave against all evil
+Never run nor [D7]even lag be[G7]hind 
+If [C]you would win for [F]God and the right
+Just [C]keep on the [G7]firing [C]line
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 [F]Just [C]keep on the [G7]firing [C]line
 [F]Just [C]keep on the [G7]firing [C]line
 {end_of_verse}

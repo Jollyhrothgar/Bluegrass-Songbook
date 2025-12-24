@@ -11,34 +11,16 @@ Watchin' you pullin' them [F]clothes off the line
 You [F]know how to throw a present on [G7]me
 {end_of_verse}
 
-{start_of_chorus}
-Like [F]fried green tomatoes a plate of mashed potatoes
-[C]A scoop of ice cream on a steaming apple pie
-[F]There’s some turnip greens a tall drink of sweet tea
-[G7]Oh I think I'm working up an appetite
-You've got me cooking with [F]desire
-Headed [D]straight from the frying pan [G7]into the [C]fire
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Like [F]fried green tomatoes a plate of mashed potatoes
-[C]A scoop of ice cream on a steaming apple pie
-[F]There’s some turnip greens a tall drink of sweet tea
-[G7]Oh I think I'm working up an appetite
-You've got me cooking with [F]desire
-Headed [D]straight from the frying pan [G7]into the [C]fire
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Like [F]fried green tomatoes a plate of mashed potatoes
-[C]A scoop of ice cream on a steaming apple pie
-[F]There’s some turnip greens a tall drink of sweet tea
-[G7]Oh I think I'm working up an appetite
-You've got me cooking with [F]desire
-Headed [D]straight from the frying pan [G7]into the [C]fire
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Like [F]fried green tomatoes a plate of mashed potatoes
+[C]A scoop of ice cream on a steaming apple pie
+[F]There’s some turnip greens a tall drink of sweet tea
+[G7]Oh I think I'm working up an appetite
+You've got me cooking with [F]desire
+Headed [D]straight from the frying pan [G7]into the [C]fire
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Biscuits in the oven a little kiss and huggin'
 [F]Between making gravy and taking up the chicken
 You [C]frost the chocolate cake and toss on the bacon
@@ -47,15 +29,24 @@ You [C]frost the chocolate cake and toss on the bacon
 You [F]know how to throw a craving on [G7]me
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Like [F]fried green tomatoes a plate of mashed potatoes
 [C]A scoop of ice cream on a steaming apple pie
 [F]There’s some turnip greens a tall drink of sweet tea
 [G7]Oh I think I'm working up an appetite
 You've got me cooking with [F]desire
 Headed [D]straight from the frying pan [G7]into the [C]fire
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+Like [F]fried green tomatoes a plate of mashed potatoes
+[C]A scoop of ice cream on a steaming apple pie
+[F]There’s some turnip greens a tall drink of sweet tea
+[G7]Oh I think I'm working up an appetite
+You've got me cooking with [F]desire
+Headed [D]straight from the frying pan [G7]into the [C]fire
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 We're heading [D]straight from the frying pan [G7]into your [C]fire
 {end_of_verse}

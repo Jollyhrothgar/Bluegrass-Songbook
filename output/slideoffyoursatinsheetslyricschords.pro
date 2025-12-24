@@ -9,44 +9,37 @@
 [C]Cause every time he’s [D7]gone I get your [G]call
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [Am]Slide off of your satin sheets
 [D7]Slip into your long soft [G]mink
 [Am]You know where to find my door
 [D7]I know what you're [C]cry-ing [G][Am]for
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[Am]Slide off of your satin sheets
-[D7]Slip into your long soft [G]mink
-[Am]You know where to find my door
-[D7]I know what you're [C]cry-ing [G][Am]for
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[Am]Slide off of your satin sheets
-[D7]Slip into your long soft [G]mink
-[Am]You know where to find my door
-[D7]I know what you're [C]cry-ing [G][Am]for
-{end_of_chorus}
-
-{start_of_chorus}
-[Am]Slide off of your satin sheets
-[D7]Slip into your long soft [G]mink
-[Am]You know where to find my door
-[D7]I know what you're [C]cry-ing [G][Am]for
-{end_of_chorus}
+{end_of_verse}
 
 {start_of_verse: Verse 2}
+[Am]Slide off of your satin sheets
+[D7]Slip into your long soft [G]mink
+[Am]You know where to find my door
+[D7]I know what you're [C]cry-ing [G][Am]for
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [Am]Baby you once told me I was good for nothing
 [C]And you couldn’t live on dreams and crystal [D7]balls
 [G]His money buys you everything but my [Am]loving
 [C]So I guess I'm good for [D7]something after [G]all
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [Am]Slide off of your satin sheets
 [D7]Slip into your long soft [G]mink
 [Am]You know where to find my door
 [D7]I know what you're [C]cry-ing [G][Am]for
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[Am]Slide off of your satin sheets
+[D7]Slip into your long soft [G]mink
+[Am]You know where to find my door
+[D7]I know what you're [C]cry-ing [G][Am]for
+{end_of_verse}

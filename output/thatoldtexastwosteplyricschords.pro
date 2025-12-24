@@ -16,42 +16,35 @@ Knew I was a goner when I [D7]looked into her eyes
 She [G7]asked if I could two step I said no but I can [C]try
 {end_of_verse}
 
-{start_of_chorus}
-She [F]taught me a new step that [C]old Texas two step
-[G7]I thought Texas women they were easy to [C]please
-But [F]somewhere about dawn well I could [C]see she was gone
-And that [G7]gal had Texas two stepped out on [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-She [F]taught me a new step that [C]old Texas two step
-[G7]I thought Texas women they were easy to [C]please
-But [F]somewhere about dawn well I could [C]see she was gone
-And that [G7]gal had Texas two stepped out on [C]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-She [F]taught me a new step that [C]old Texas two step
-[G7]I thought Texas women they were easy to [C]please
-But [F]somewhere about dawn well I could [C]see she was gone
-And that [G7]gal had Texas two stepped out on [C]me
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+She [F]taught me a new step that [C]old Texas two step
+[G7]I thought Texas women they were easy to [C]please
+But [F]somewhere about dawn well I could [C]see she was gone
+And that [G7]gal had Texas two stepped out on [C]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Now the sign said country music I’m [D7]learning all the songs
 My [G7]Texas Cinderella is wherever she [C]belongs
 I guess I am the victim of a [D7]hit and run romance 
 I [G7]think I’ve got a heartache but at least I’ve learned to [C]dance
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 She [F]taught me a new step that [C]old Texas two step
 [G7]I thought Texas women they were easy to [C]please
 But [F]somewhere about dawn well I could [C]see she was gone
 And that [G7]gal had Texas two stepped out on [C]me
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+She [F]taught me a new step that [C]old Texas two step
+[G7]I thought Texas women they were easy to [C]please
+But [F]somewhere about dawn well I could [C]see she was gone
+And that [G7]gal had Texas two stepped out on [C]me
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 But [F]somewhere about dawn I could [C]see she was gone
 And that [G7]gal had Texas two stepped out on [C]me
 {end_of_verse}

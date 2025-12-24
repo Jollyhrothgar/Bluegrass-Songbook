@@ -2,28 +2,14 @@
 {meta: artist Lee Ann Womack}
 {meta: writer Michael Curtis and Marty Raybon}
 
-{start_of_chorus}
-[C]Get up get up get up in Jesus' [A#7]name
-[C]The Lord is calling daily to those who would be [G7]saved
-[F]Don't go down defeated while [C]victory's here to [F]claim
-[A#7]Get up [F]get up get [G7]up in Jesus' [C]name
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Get up get up get up in Jesus' [A#7]name
-[C]The Lord is calling daily to those who would be [G7]saved
-[F]Don't go down defeated while [C]victory's here to [F]claim
-[A#7]Get up [F]get up get [G7]up in Jesus' [C]name
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Get up get up get up in Jesus' [A#7]name
-[C]The Lord is calling daily to those who would be [G7]saved
-[F]Don't go down defeated while [C]victory's here to [F]claim
-[A#7]Get up [F]get up get [G7]up in Jesus' [C]name
-{end_of_chorus}
-
 {start_of_verse: Verse 1}
+[C]Get up get up get up in Jesus' [A#7]name
+[C]The Lord is calling daily to those who would be [G7]saved
+[F]Don't go down defeated while [C]victory's here to [F]claim
+[A#7]Get up [F]get up get [G7]up in Jesus' [C]name
+{end_of_verse}
+
+{start_of_verse: Verse 2}
 Oh at the gate called beautiful
 [A#7]They're laid out in the street
 [C]A poor and lowly beggar who was crippled in his [A#7]feet
@@ -32,23 +18,30 @@ Oh at the gate called beautiful
 [G7]But they gave him what they had
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 1}
 [C]Get up get up get up in Jesus' [A#7]name
 [C]The Lord is calling daily to those who would be [G7]saved
 [F]Don't go down defeated while [C]victory's here to [F]claim
 [A#7]Get up [F]get up get [G7]up in Jesus' [C]name
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 2}
+{start_of_verse: Verse 3}
 [A#7]In the day which we live in there's evil everywhere
 [C]Oh the body seems discouraged and overcome with [A#7]fear
 [F]Well God is needing soldiers to get out of the pews
 [C]And take hold of the power that John and Peter [G7]used
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 1}
 [C]Get up get up get up in Jesus' [A#7]name
 [C]The Lord is calling daily to those who would be [G7]saved
 [F]Don't go down defeated while [C]victory's here to [F]claim
 [A#7]Get up [F]get up get [G7]up in Jesus' [C]name
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 1}
+[C]Get up get up get up in Jesus' [A#7]name
+[C]The Lord is calling daily to those who would be [G7]saved
+[F]Don't go down defeated while [C]victory's here to [F]claim
+[A#7]Get up [F]get up get [G7]up in Jesus' [C]name
+{end_of_verse}

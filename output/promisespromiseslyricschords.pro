@@ -18,31 +18,15 @@ Promises promises [C]that's all I ever get
 That's all I ever get
 {end_of_verse}
 
-{start_of_chorus}
-[G]Promises promises that's all I get
-[F]All you gave me since the [G]day we met
-[F]You'll break my heart in two [G]again I'll bet
-Promises promises [C]that's all I ever get
-That's all I ever get
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[G]Promises promises that's all I get
-[F]All you gave me since the [G]day we met
-[F]You'll break my heart in two [G]again I'll bet
-Promises promises [C]that's all I ever get
-That's all I ever get
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[G]Promises promises that's all I get
-[F]All you gave me since the [G]day we met
-[F]You'll break my heart in two [G]again I'll bet
-Promises promises [C]that's all I ever get
-That's all I ever get
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[G]Promises promises that's all I get
+[F]All you gave me since the [G]day we met
+[F]You'll break my heart in two [G]again I'll bet
+Promises promises [C]that's all I ever get
+That's all I ever get
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [G]And now you tell me that you're goin' away
 You swear to me that this time you'll stay
 [F]But I can't believe that I'm [G]rid of you yet
@@ -50,10 +34,18 @@ Promises promises [C]that's all I ever get
 That's all I ever get
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [G]Promises promises that's all I get
 [F]All you gave me since the [G]day we met
 [F]You'll break my heart in two [G]again I'll bet
 Promises promises [C]that's all I ever get
 That's all I ever get
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[G]Promises promises that's all I get
+[F]All you gave me since the [G]day we met
+[F]You'll break my heart in two [G]again I'll bet
+Promises promises [C]that's all I ever get
+That's all I ever get
+{end_of_verse}

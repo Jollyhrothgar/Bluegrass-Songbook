@@ -18,31 +18,15 @@ And see the [C]rules of thumb are all the same that measure every day
 The grass is green on both sides of the [G7]hill there's no time to [C]kill
 {end_of_verse}
 
-{start_of_chorus}
-No time to [F]kill even I've said it and probably always will
-But I can look ahead and see that time ain't standin' still
-No time to [C]kill but time to change the kind of hurry I've been in
-Quit this [F]work and worry lookin' [C]back at where I've been
-If you don't look ahead nobody [G7]will there's no time to [C]kill
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-No time to [F]kill even I've said it and probably always will
-But I can look ahead and see that time ain't standin' still
-No time to [C]kill but time to change the kind of hurry I've been in
-Quit this [F]work and worry lookin' [C]back at where I've been
-If you don't look ahead nobody [G7]will there's no time to [C]kill
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-No time to [F]kill even I've said it and probably always will
-But I can look ahead and see that time ain't standin' still
-No time to [C]kill but time to change the kind of hurry I've been in
-Quit this [F]work and worry lookin' [C]back at where I've been
-If you don't look ahead nobody [G7]will there's no time to [C]kill
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+No time to [F]kill even I've said it and probably always will
+But I can look ahead and see that time ain't standin' still
+No time to [C]kill but time to change the kind of hurry I've been in
+Quit this [F]work and worry lookin' [C]back at where I've been
+If you don't look ahead nobody [G7]will there's no time to [C]kill
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 If we had an hourglass to watch each one go by
 Or a bell to mark each one to pass we'd just see what they fly
 Would we [F]escalate the value to the worth its weight in gold
@@ -50,14 +34,22 @@ Or would we [C]never know the fortunes that we have till we grow old
 And do we just keep killin' time [G7]until there's no time to [C]kill
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 No time to [F]kill even I've said it and probably always will
 But I can look ahead and see that time ain't standin' still
 No time to [C]kill but time to change the kind of hurry I've been in
 Quit this [F]work and worry lookin' [C]back at where I've been
 If you don't look ahead nobody [G7]will there's no time to [C]kill
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+No time to [F]kill even I've said it and probably always will
+But I can look ahead and see that time ain't standin' still
+No time to [C]kill but time to change the kind of hurry I've been in
+Quit this [F]work and worry lookin' [C]back at where I've been
+If you don't look ahead nobody [G7]will there's no time to [C]kill
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 [F]No time to [C]kill [F]no time to [C]kill ([F]no time to [C]kill)
 {end_of_verse}

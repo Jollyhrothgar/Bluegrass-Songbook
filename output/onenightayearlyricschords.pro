@@ -16,49 +16,40 @@
 [D7]Again we tell the story of [G7]how the Christ Child came
 {end_of_verse}
 
-{start_of_chorus}
-One night a [C]year we be[F]lieve in peace on [G7]earth
-One night a [C]year we [F]praise our Savior's [G7]birth
-I wish every [Em]night the whole [E7]year through could [Am]be
-[F]Like Christmas Eve
-When [C]love's pure light is [G7]shining every[F]where 
-One night a [C]year
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-One night a [C]year we be[F]lieve in peace on [G7]earth
-One night a [C]year we [F]praise our Savior's [G7]birth
-I wish every [Em]night the whole [E7]year through could [Am]be
-[F]Like Christmas Eve
-When [C]love's pure light is [G7]shining every[F]where 
-One night a [C]year
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-One night a [C]year we be[F]lieve in peace on [G7]earth
-One night a [C]year we [F]praise our Savior's [G7]birth
-I wish every [Em]night the whole [E7]year through could [Am]be
-[F]Like Christmas Eve
-When [C]love's pure light is [G7]shining every[F]where 
-One night a [C]year
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+One night a [C]year we be[F]lieve in peace on [G7]earth
+One night a [C]year we [F]praise our Savior's [G7]birth
+I wish every [Em]night the whole [E7]year through could [Am]be
+[F]Like Christmas Eve
+When [C]love's pure light is [G7]shining every[F]where 
+One night a [C]year
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Once again around the world heads are bowed in prayer
 [F]Once again the promise of [Fm]peace is in the air
 But [C]soon will come the [G7]morning and the [F]feeling will be past
 And [D7]I can't help but wonder why the [G7]feeling only lasts
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 One night a [C]year we be[F]lieve in peace on [G7]earth
 One night a [C]year we [F]praise our Savior's [G7]birth
 I wish every [Em]night the whole [E7]year through could [Am]be
 [F]Like Christmas Eve
 When [C]love's pure light is [G7]shining every[F]where 
 One night a [C]year
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+One night a [C]year we be[F]lieve in peace on [G7]earth
+One night a [C]year we [F]praise our Savior's [G7]birth
+I wish every [Em]night the whole [E7]year through could [Am]be
+[F]Like Christmas Eve
+When [C]love's pure light is [G7]shining every[F]where 
+One night a [C]year
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 [G7]One night a [C]year
 {end_of_verse}

@@ -16,49 +16,42 @@ Till my guilty soul in glory returned
 To [D7]Cal-va-[G]ry
 {end_of_verse}
 
-{start_of_chorus}
-[C]Mercy there was great and [G]grace was free
-[D7]Pardon there was multi[G]plied to me
-[C]There my burdened soul found [G]liberty
-At [D7]Cal-va-[G]ry
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Mercy there was great and [G]grace was free
-[D7]Pardon there was multi[G]plied to me
-[C]There my burdened soul found [G]liberty
-At [D7]Cal-va-[G]ry
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Mercy there was great and [G]grace was free
-[D7]Pardon there was multi[G]plied to me
-[C]There my burdened soul found [G]liberty
-At [D7]Cal-va-[G]ry
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]Mercy there was great and [G]grace was free
+[D7]Pardon there was multi[G]plied to me
+[C]There my burdened soul found [G]liberty
+At [D7]Cal-va-[G]ry
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Now I’ve given to Jesus everything
 [D7]Now I gladly own Him [G]as my King
 Now my raptured soul can only sing
 Of [D7]Cal-va-[G]ry
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Oh the love that drew salvation’s plan
 Oh [D7]the grace that brought it [G]down to man
 Oh the mighty gulf that God did span
 At [D7]Cal-va-[G]ry
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]Mercy there was great and [G]grace was free
 [D7]Pardon there was multi[G]plied to me
 [C]There my burdened soul found [G]liberty
 At [D7]Cal-va-[G]ry
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 3}
+[C]Mercy there was great and [G]grace was free
+[D7]Pardon there was multi[G]plied to me
+[C]There my burdened soul found [G]liberty
+At [D7]Cal-va-[G]ry
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 [C]There my burdened soul found [G]liberty
 At [D7]Cal-va-[G]ry
 {end_of_verse}

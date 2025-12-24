@@ -16,44 +16,37 @@
 [G7]And it was surely music to our [C]ears
 {end_of_verse}
 
-{start_of_chorus}
-[G7]And that's how I learned to love good old country music
-[C]There's somethin' about it close to my soul
-[C7]I'm so glad everyone is lovin' good old country [F]music
-[G7]It's the music of the country and this country is my [C]home
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[G7]And that's how I learned to love good old country music
-[C]There's somethin' about it close to my soul
-[C7]I'm so glad everyone is lovin' good old country [F]music
-[G7]It's the music of the country and this country is my [C]home
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[G7]And that's how I learned to love good old country music
-[C]There's somethin' about it close to my soul
-[C7]I'm so glad everyone is lovin' good old country [F]music
-[G7]It's the music of the country and this country is my [C]home
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[G7]And that's how I learned to love good old country music
+[C]There's somethin' about it close to my soul
+[C7]I'm so glad everyone is lovin' good old country [F]music
+[G7]It's the music of the country and this country is my [C]home
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [G7]Many nights I went to bed without [C]sleepin'
 [G7]Just a listenin' to our beat up radio
 [C]I held the ground wire tight just to get a strain of two
 [D7]Of a far off song from Del [G7]Rio
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 [C]Oh it faded in and [G7]out through the [C]static
 [C7]But it made me dream of seeing [F]Tennessee
 [C]And the greatest thrill of all was to see those hallowed halls
 [G7]The Mother Church the Grand Ole [C]Opry
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [G7]And that's how I learned to love good old country music
 [C]There's somethin' about it close to my soul
 [C7]I'm so glad everyone is lovin' good old country [F]music
 [G7]It's the music of the country and this country is my [C]home
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[G7]And that's how I learned to love good old country music
+[C]There's somethin' about it close to my soul
+[C7]I'm so glad everyone is lovin' good old country [F]music
+[G7]It's the music of the country and this country is my [C]home
+{end_of_verse}

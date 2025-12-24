@@ -11,25 +11,13 @@ When [C]I don't show up well what'll my baby [G]do
 She'll [D7]travel through the tunnel of love with someone [G]new
 {end_of_verse}
 
-{start_of_chorus}
-Oooo Oooo what'll I do my money's all gone
-Baby baby it's true
-I [C]got a hole in my pocket I [D7]don't know what to [G]do
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Oooo Oooo what'll I do my money's all gone
-Baby baby it's true
-I [C]got a hole in my pocket I [D7]don't know what to [G]do
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Oooo Oooo what'll I do my money's all gone
-Baby baby it's true
-I [C]got a hole in my pocket I [D7]don't know what to [G]do
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Oooo Oooo what'll I do my money's all gone
+Baby baby it's true
+I [C]got a hole in my pocket I [D7]don't know what to [G]do
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 I got a hole in my pocket and my money just runs on through
 I [C]got a hole in my pocket and my money just runs on [G]through
 Can't [D7]seem to save a dollar like my baby dolly wants me [G]too
@@ -38,12 +26,18 @@ Well [C]I told my baby we could have a little fun [G]tonight
 But it [D7]won't be so funny when there ain't a bit of money in [G]sight
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Oooo Oooo what'll I do my money's all gone
 Baby baby it's true
 I [C]got a hole in my pocket I [D7]don't know what to [G]do
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+Oooo Oooo what'll I do my money's all gone
+Baby baby it's true
+I [C]got a hole in my pocket I [D7]don't know what to [G]do
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I [C]got a hole in my pocket and I [D7]don't know what to [G]do
 {end_of_verse}

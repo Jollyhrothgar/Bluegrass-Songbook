@@ -9,45 +9,37 @@ Jingle bells and mistletoe are [D7]everywhere
 But all I want is Mary for [G]Christmas
 {end_of_verse}
 
-{start_of_chorus}
-[C]Folks are singing merrily [Bm]Santa's on his way
-The [A7]time is here to spread good cheer
-On the [D7]happiest holiday
-[G]Santa if I get Mary for [D7]Christmas
-Then I will have a happy new [G]year
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Folks are singing merrily [Bm]Santa's on his way
-The [A7]time is here to spread good cheer
-On the [D7]happiest holiday
-[G]Santa if I get Mary for [D7]Christmas
-Then I will have a happy new [G]year
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Folks are singing merrily [Bm]Santa's on his way
-The [A7]time is here to spread good cheer
-On the [D7]happiest holiday
-[G]Santa if I get Mary for [D7]Christmas
-Then I will have a happy new [G]year
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[C]Folks are singing merrily [Bm]Santa's on his way
+The [A7]time is here to spread good cheer
+On the [D7]happiest holiday
+[G]Santa if I get Mary for [D7]Christmas
+Then I will have a happy new [G]year
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 It's time again for all good friends and [D7]family
 To laugh and sing old songs around the [G]Christmas tree
 I'm sure that Santa you've been asked for [D7]everything
 But all I need is Mary for [G]Christmas
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [C]Folks are singing merrily [Bm]Santa's on his way
 The [A7]time is here to spread good cheer
 On the [D7]happiest holiday
 [G]Santa if I get Mary for [D7]Christmas
 Then I will have a happy new [G]year
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+[C]Folks are singing merrily [Bm]Santa's on his way
+The [A7]time is here to spread good cheer
+On the [D7]happiest holiday
+[G]Santa if I get Mary for [D7]Christmas
+Then I will have a happy new [G]year
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Yes let’s [D7]all have a happy new [G]year
 {end_of_verse}

@@ -22,38 +22,29 @@ For awhile she'll be [Dm]mine again[G7]
 If you can paint me at Birming[C]ham
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 He looked at me with [Dm]knowing eyes
 Then [G7]took a canvas from a bag there by his [C]side
 Picked up a brush [Dm]and said to me
 Son [G7]just where in this picture would you [C]like to be
 I [Dm]said if there's any way you [G7]can
 Could you [F]paint me back into her [G7]arms again
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_chorus: Repeat 1}
+{start_of_verse: Verse 3}
 He looked at me with [Dm]knowing eyes
 Then [G7]took a canvas from a bag there by his [C]side
 Picked up a brush [Dm]and said to me
 Son [G7]just where in this picture would you [C]like to be
 I [Dm]said if there's any way you [G7]can
 Could you [F]paint me back into her [G7]arms again
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_chorus: Repeat 2}
+{start_of_verse: Verse 3}
 He looked at me with [Dm]knowing eyes
 Then [G7]took a canvas from a bag there by his [C]side
 Picked up a brush [Dm]and said to me
 Son [G7]just where in this picture would you [C]like to be
 I [Dm]said if there's any way you [G7]can
 Could you [F]paint me back into her [G7]arms again
-{end_of_chorus}
-
-{start_of_chorus}
-He looked at me with [Dm]knowing eyes
-Then [G7]took a canvas from a bag there by his [C]side
-Picked up a brush [Dm]and said to me
-Son [G7]just where in this picture would you [C]like to be
-I [Dm]said if there's any way you [G7]can
-Could you [F]paint me back into her [G7]arms again
-{end_of_chorus}
+{end_of_verse}

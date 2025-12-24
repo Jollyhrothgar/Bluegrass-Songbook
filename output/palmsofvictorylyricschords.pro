@@ -9,58 +9,53 @@
 [D7]It shouted as he traveled deliverance has [G]come
 {end_of_verse}
 
-{start_of_chorus}
-[D7]Then palms of victory crowns of [G]glory
-[D7]Palms of victory I shall [G]wear
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[D7]Then palms of victory crowns of [G]glory
-[D7]Palms of victory I shall [G]wear
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[D7]Then palms of victory crowns of [G]glory
-[D7]Palms of victory I shall [G]wear
-{end_of_chorus}
-
-{start_of_chorus: Repeat 3}
-[D7]Then palms of victory crowns of [G]glory
-[D7]Palms of victory I shall [G]wear
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[D7]Then palms of victory crowns of [G]glory
+[D7]Palms of victory I shall [G]wear
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [D7]I saw him in the evening the sun was sinking [G]low
 [D7]It'd overcome the mountain and reached the vale [G]below
 [D7]He saw that golden city his ever lasting [G]home
 [D7]And shouted loud Hosanna deliverance has [G]come
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [D7]Then palms of victory crowns of [G]glory
 [D7]Palms of victory I shall [G]wear
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 [D7]While gazing on that city just o'er that narrow [G]flood
 [D7]A band of holy angels came from the throne of [G]God
 [D7]They bore him on their pinions they bore the dashing [G]foam
 [D7]And joined him in his triumph deliverance has [G]come
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [D7]Then palms of victory crowns of [G]glory
 [D7]Palms of victory I shall [G]wear
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 [D7]It seems I hear the angels around the throne so [G]grand
 [D7]They're shouting glad Hosanna we reached the promise [G]land
 [D7]When we have reached that city our race on earth we've [G]run
 [D7]We'll all shout loud Hosanna deliverance has [G]come
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [D7]Then palms of victory crowns of [G]glory
 [D7]Palms of victory I shall [G]wear
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[D7]Then palms of victory crowns of [G]glory
+[D7]Palms of victory I shall [G]wear
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[D7]Then palms of victory crowns of [G]glory
+[D7]Palms of victory I shall [G]wear
+{end_of_verse}

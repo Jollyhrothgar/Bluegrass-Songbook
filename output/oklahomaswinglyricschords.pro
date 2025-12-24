@@ -16,41 +16,34 @@ Oh my momma tried to warn me he's done [F]time in California
 But he'll [C]be an Okie [G]till his dyin' [C]day
 {end_of_verse}
 
-{start_of_chorus}
-There's a [F]dance we do in Okla[C]homa
-A [F]dance like you've never [C]seen
-Sit [F]back and we're gonna [C]show ya
-[D7]How to do that [G]Oklahoma [C]swing
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-There's a [F]dance we do in Okla[C]homa
-A [F]dance like you've never [C]seen
-Sit [F]back and we're gonna [C]show ya
-[D7]How to do that [G]Oklahoma [C]swing
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-There's a [F]dance we do in Okla[C]homa
-A [F]dance like you've never [C]seen
-Sit [F]back and we're gonna [C]show ya
-[D7]How to do that [G]Oklahoma [C]swing
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+There's a [F]dance we do in Okla[C]homa
+A [F]dance like you've never [C]seen
+Sit [F]back and we're gonna [C]show ya
+[D7]How to do that [G]Oklahoma [C]swing
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [G]Well when two [C]Okies get together man there's [F]nothin' they like better
 Than to [C]hold each other [G]on a sawdust [C]floor
 Oh I love it when we're swayin' to those [F]sweet twin fiddles playin'
 [C]Come on boy what are [G]we waitin' [C]for
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 There's a [F]dance we do in Okla[C]homa
 A [F]dance like you've never [C]seen
 Sit [F]back and we're gonna [C]show ya
 [D7]How to do that [G]Oklahoma [C]swing
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+There's a [F]dance we do in Okla[C]homa
+A [F]dance like you've never [C]seen
+Sit [F]back and we're gonna [C]show ya
+[D7]How to do that [G]Oklahoma [C]swing
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 Yeah [D7]how to do that [G]Oklahoma [C]swing
 {end_of_verse}

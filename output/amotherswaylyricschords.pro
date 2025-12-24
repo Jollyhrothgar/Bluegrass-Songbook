@@ -14,40 +14,33 @@
 [C]But you don't see her cry
 {end_of_verse}
 
-{start_of_chorus}
-[F]For a while she hides behind a smile
-[G7]But then her eyes reveal she worries still [C]today
-[F]Take her hand show her you understand
-[G7]A little tenderness will go a long long [C]way
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]For a while she hides behind a smile
-[G7]But then her eyes reveal she worries still [C]today
-[F]Take her hand show her you understand
-[G7]A little tenderness will go a long long [C]way
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]For a while she hides behind a smile
-[G7]But then her eyes reveal she worries still [C]today
-[F]Take her hand show her you understand
-[G7]A little tenderness will go a long long [C]way
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[F]For a while she hides behind a smile
+[G7]But then her eyes reveal she worries still [C]today
+[F]Take her hand show her you understand
+[G7]A little tenderness will go a long long [C]way
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [F]And now the [G7]years have flown  she's sitting all [C]alone
 [F]With all her photographs and memories of the [G7]past
 [C]She's glad when you come home
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [F]For a while she hides behind a smile
 [G7]But then her eyes reveal she worries still [C]today
 [F]Take her hand show her you understand
 [G7]A little tenderness will go a long long [C]way
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+[F]For a while she hides behind a smile
+[G7]But then her eyes reveal she worries still [C]today
+[F]Take her hand show her you understand
+[G7]A little tenderness will go a long long [C]way
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 [G7]A little tenderness will go a long long [C]way
 {end_of_verse}

@@ -16,48 +16,41 @@ Operator hook me up to [F]Houston
 Cause you [C]can't be choosy [G7]when you're this [C]alone
 {end_of_verse}
 
-{start_of_chorus}
-Won't you [F]talk to me Texas [C]let me hear that draw
-I [F]spent my last five dollars on this [G7]one long distance call
-Won't you [C]talk to me Texas I [F]got these homesick blues
-[C]Tell me I can [G7]come on home to [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Won't you [F]talk to me Texas [C]let me hear that draw
-I [F]spent my last five dollars on this [G7]one long distance call
-Won't you [C]talk to me Texas I [F]got these homesick blues
-[C]Tell me I can [G7]come on home to [C]you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Won't you [F]talk to me Texas [C]let me hear that draw
-I [F]spent my last five dollars on this [G7]one long distance call
-Won't you [C]talk to me Texas I [F]got these homesick blues
-[C]Tell me I can [G7]come on home to [C]you
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Won't you [F]talk to me Texas [C]let me hear that draw
+I [F]spent my last five dollars on this [G7]one long distance call
+Won't you [C]talk to me Texas I [F]got these homesick blues
+[C]Tell me I can [G7]come on home to [C]you
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I got this faded number in my [F]wallet
 It's [C]been in here a dozen years I [G7]know
 I [C]used to call it up when I was [F]lonely
 [C]Lord that women [G7]sure could love me [C]so
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 I know by now she's probably changed her [F]number
 And [C]with my luck she's probably changed her [G7]name
 If [C]there's a chance in hell I think I'll [F]take it
 Cause I'd [C]love to hear that [G7]woman's voice [C]again
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Won't you [F]talk to me Texas [C]let me hear that draw
 I [F]spent my last five dollars on this [G7]one long distance call
 Won't you [C]talk to me Texas I [F]got these homesick blues
 [C]Tell me I can [G7]come on home to [C]you
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 3}
+Won't you [F]talk to me Texas [C]let me hear that draw
+I [F]spent my last five dollars on this [G7]one long distance call
+Won't you [C]talk to me Texas I [F]got these homesick blues
+[C]Tell me I can [G7]come on home to [C]you
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 Hey tell me I can [G7]come on home to [C]you
 {end_of_verse}

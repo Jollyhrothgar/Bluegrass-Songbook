@@ -9,44 +9,24 @@
 The [D7]light I saw in the night was a penny [G7]arc[F]ad[G7]e 
 {end_of_verse}
 
-{start_of_chorus}
-[C]Step up and play each machine seemed to say 
-As I walked round and round the penny [G7]arcade 
-Just ring the bell on the big bagatelle 
-And you'll make all the colored lights [C]cascade 
-And music [F]played in the penny [C]arcade 
-Yes it [F]played and it played [G7]played all the time 
-[C]Roll up and [F]spend your last [C]dime 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Step up and play each machine seemed to say 
-As I walked round and round the penny [G7]arcade 
-Just ring the bell on the big bagatelle 
-And you'll make all the colored lights [C]cascade 
-And music [F]played in the penny [C]arcade 
-Yes it [F]played and it played [G7]played all the time 
-[C]Roll up and [F]spend your last [C]dime 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Step up and play each machine seemed to say 
-As I walked round and round the penny [G7]arcade 
-Just ring the bell on the big bagatelle 
-And you'll make all the colored lights [C]cascade 
-And music [F]played in the penny [C]arcade 
-Yes it [F]played and it played [G7]played all the time 
-[C]Roll up and [F]spend your last [C]dime 
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[C]Step up and play each machine seemed to say 
+As I walked round and round the penny [G7]arcade 
+Just ring the bell on the big bagatelle 
+And you'll make all the colored lights [C]cascade 
+And music [F]played in the penny [C]arcade 
+Yes it [F]played and it played [G7]played all the time 
+[C]Roll up and [F]spend your last [C]dime 
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 At first I thought it a dream that I was [F]in 
 [D7]Lost lost in a sea of glass and [G7]tin 
 But [C]no so dipping my hand in the back of my [F]jeans
 I [D7]grabbed a handful of coins to feed the [G7]mac[F]hi[G7]nes
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [C]Step up and play each machine seemed to say 
 As I walked round and round the penny [G7]arcade 
 Just ring the bell on the big bagatelle 
@@ -54,9 +34,19 @@ And you'll make all the colored lights [C]cascade
 And music [F]played in the penny [C]arcade 
 Yes it [F]played and it played [G7]played all the time 
 [C]Roll up and [F]spend your last [C]dime 
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+[C]Step up and play each machine seemed to say 
+As I walked round and round the penny [G7]arcade 
+Just ring the bell on the big bagatelle 
+And you'll make all the colored lights [C]cascade 
+And music [F]played in the penny [C]arcade 
+Yes it [F]played and it played [G7]played all the time 
+[C]Roll up and [F]spend your last [C]dime 
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Roll up and [F]spend your [C]last  
 Roll up and [F]spend your last [C]dime 
 {end_of_verse}

@@ -15,37 +15,30 @@ Oh [C]how I wish that [F]he was still here [C]with us
 My [Dm]memories of [G7]him will never [C]die
 {end_of_verse}
 
-{start_of_chorus}
-When the [Am]stockings are hung 
-Silent night has been [D7]sung
-And [F]Christmas is finally [D7]here
-It [Dm]won't be the [G7]same this [C]year
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-When the [Am]stockings are hung 
-Silent night has been [D7]sung
-And [F]Christmas is finally [D7]here
-It [Dm]won't be the [G7]same this [C]year
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-When the [Am]stockings are hung 
-Silent night has been [D7]sung
-And [F]Christmas is finally [D7]here
-It [Dm]won't be the [G7]same this [C]year
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+When the [Am]stockings are hung 
+Silent night has been [D7]sung
+And [F]Christmas is finally [D7]here
+It [Dm]won't be the [G7]same this [C]year
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Losin' my b[F]ig brother hurt so bad[C]ly
 It's helped me learn what [F]Christmas really [G7]means
 There's [C]nothing more [F]important then your [C]family
 We're [Dm]all the children [G7]of the King of [C]kings
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 When the [Am]stockings are hung 
 Silent night has been [D7]sung
 And [F]Christmas is finally [D7]here
 It [Dm]won't be the [G7]same this [C]year
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+When the [Am]stockings are hung 
+Silent night has been [D7]sung
+And [F]Christmas is finally [D7]here
+It [Dm]won't be the [G7]same this [C]year
+{end_of_verse}

@@ -20,39 +20,33 @@ Or a [C]sculpture that's [Em]made out of [Dm]clay
 And if I [F]knew how to [Em]write you a [Dm]love song
 {end_of_verse}
 
-{start_of_chorus}
-[G]Maybe I could [C]find a [F]new way to say I [G]love you
-Cause there's [C]gotta be a [F]new way to say I [G]love you
-There's just [C]gotta be a [F]new way to say I [G]love you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[G]Maybe I could [C]find a [F]new way to say I [G]love you
-Cause there's [C]gotta be a [F]new way to say I [G]love you
-There's just [C]gotta be a [F]new way to say I [G]love you
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[G]Maybe I could [C]find a [F]new way to say I [G]love you
-Cause there's [C]gotta be a [F]new way to say I [G]love you
-There's just [C]gotta be a [F]new way to say I [G]love you
-{end_of_chorus}
-
 {start_of_verse: Verse 4}
+[G]Maybe I could [C]find a [F]new way to say I [G]love you
+Cause there's [C]gotta be a [F]new way to say I [G]love you
+There's just [C]gotta be a [F]new way to say I [G]love you
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 I [F]know you've probably [G]heard this [C]many times [Am]before
 [F]Many people [G]mean it but [C]I [G]I mean it [Am]more
 [F]I want you for a [G]lifetime and [E7]now you know for [Am]sure
 {end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 6}
 [G]But how can I tell you how can I tell you
 Like an [F]artist in [Em]search of per[Dm]fection
 I [F]can't say it [Em]all in a [Dm]day
 But if you [F]just stay with [Em]me for a [Dm]lifetime
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 4}
 [G]Maybe I could [C]find a [F]new way to say I [G]love you
 Cause there's [C]gotta be a [F]new way to say I [G]love you
 There's just [C]gotta be a [F]new way to say I [G]love you
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 4}
+[G]Maybe I could [C]find a [F]new way to say I [G]love you
+Cause there's [C]gotta be a [F]new way to say I [G]love you
+There's just [C]gotta be a [F]new way to say I [G]love you
+{end_of_verse}

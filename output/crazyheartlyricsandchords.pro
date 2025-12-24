@@ -9,41 +9,34 @@ One night we're in love the next I'm [D7]hurtin'
 Your crazy heart is driving me [G]insane
 {end_of_verse}
 
-{start_of_chorus}
-Crazy heart I wish I didn't [D7]love you
-And I could turn around and walk [G]away
-I've only got a half a mind to [D7]leave you
-Your crazy heart is driving me [G]insane
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Crazy heart I wish I didn't [D7]love you
-And I could turn around and walk [G]away
-I've only got a half a mind to [D7]leave you
-Your crazy heart is driving me [G]insane
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Crazy heart I wish I didn't [D7]love you
-And I could turn around and walk [G]away
-I've only got a half a mind to [D7]leave you
-Your crazy heart is driving me [G]insane
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Crazy heart I wish I didn't [D7]love you
+And I could turn around and walk [G]away
+I've only got a half a mind to [D7]leave you
+Your crazy heart is driving me [G]insane
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 All I want is a love that I can [D7]count on
 Can't hold to the promises you've [G]made
 How can it feel so right then go [D7]so wrong
 Your crazy heart is driving me [G]insane
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Crazy heart I wish I didn't [D7]love you
 And I could turn around and walk [G]away
 I've only got a half a mind to [D7]leave you
 Your crazy heart is driving me [G]insane
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+Crazy heart I wish I didn't [D7]love you
+And I could turn around and walk [G]away
+I've only got a half a mind to [D7]leave you
+Your crazy heart is driving me [G]insane
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Your crazy [D7]heart is driving me [G]insane
 {end_of_verse}

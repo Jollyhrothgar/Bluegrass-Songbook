@@ -16,39 +16,31 @@
 [Dm]I've got to [F]stand behind the [G7]promise that I made
 {end_of_verse}
 
-{start_of_chorus}
-Where were [Am]you when [F]I could have [C]loved you
-Where were [Am]you when I [F]gave my heart [G7]away
-All my [F]life [G7]I've been dreamin' [Am]of you
-[F]You came [C]along one [G7]promise too [Am]late
-[F]You came [C]along one [G7]promise too [C]late
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Where were [Am]you when [F]I could have [C]loved you
-Where were [Am]you when I [F]gave my heart [G7]away
-All my [F]life [G7]I've been dreamin' [Am]of you
-[F]You came [C]along one [G7]promise too [Am]late
-[F]You came [C]along one [G7]promise too [C]late
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Where were [Am]you when [F]I could have [C]loved you
-Where were [Am]you when I [F]gave my heart [G7]away
-All my [F]life [G7]I've been dreamin' [Am]of you
-[F]You came [C]along one [G7]promise too [Am]late
-[F]You came [C]along one [G7]promise too [C]late
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Where were [Am]you when [F]I could have [C]loved you
+Where were [Am]you when I [F]gave my heart [G7]away
+All my [F]life [G7]I've been dreamin' [Am]of you
+[F]You came [C]along one [G7]promise too [Am]late
+[F]You came [C]along one [G7]promise too [C]late
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [Em]I won't say that I'm [Am]sorry that I met you
 [Em]I can't have you but I [F]never will [G7]forget you
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Where were [Am]you when [F]I could have [C]loved you
 Where were [Am]you when I [F]gave my heart [G7]away
 All my [F]life [G7]I've been dreamin' [Am]of you
 [F]You came [C]along one [G7]promise too [Am]late
 [F]You came [C]along one [G7]promise too [C]late
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Where were [Am]you when [F]I could have [C]loved you
+Where were [Am]you when I [F]gave my heart [G7]away
+All my [F]life [G7]I've been dreamin' [Am]of you
+[F]You came [C]along one [G7]promise too [Am]late
+[F]You came [C]along one [G7]promise too [C]late
+{end_of_verse}

@@ -11,28 +11,14 @@ And I been [C]waitin' all [Am]night
 Now [D7]all my dreams are comin' [G7]true
 {end_of_verse}
 
-{start_of_chorus}
-[F]I'm holdin' [C]heaven in my [G7]arms to[C]night 
-[F]Everything [C]about you is so [G7]perfectly right
-[F]I've never been [C]there but I [G7]think I [Am]might 
-[F]Be holdin' [C]heaven in my [G7]arms to[C]night
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]I'm holdin' [C]heaven in my [G7]arms to[C]night 
-[F]Everything [C]about you is so [G7]perfectly right
-[F]I've never been [C]there but I [G7]think I [Am]might 
-[F]Be holdin' [C]heaven in my [G7]arms to[C]night
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]I'm holdin' [C]heaven in my [G7]arms to[C]night 
-[F]Everything [C]about you is so [G7]perfectly right
-[F]I've never been [C]there but I [G7]think I [Am]might 
-[F]Be holdin' [C]heaven in my [G7]arms to[C]night
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[F]I'm holdin' [C]heaven in my [G7]arms to[C]night 
+[F]Everything [C]about you is so [G7]perfectly right
+[F]I've never been [C]there but I [G7]think I [Am]might 
+[F]Be holdin' [C]heaven in my [G7]arms to[C]night
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [F]I'm not sure where you [C]came from 
 [F]But I thank my lucky stars [C]above
 [F]And I got the chance [C]to have a [Am]dance
@@ -40,13 +26,20 @@ Now [D7]all my dreams are comin' [G7]true
 [D7]I think I'm fallin' in [G7]love
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [F]I'm holdin' [C]heaven in my [G7]arms to[C]night 
 [F]Everything [C]about you is so [G7]perfectly right
 [F]I've never been [C]there but I [G7]think I [Am]might 
 [F]Be holdin' [C]heaven in my [G7]arms to[C]night
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+[F]I'm holdin' [C]heaven in my [G7]arms to[C]night 
+[F]Everything [C]about you is so [G7]perfectly right
+[F]I've never been [C]there but I [G7]think I [Am]might 
+[F]Be holdin' [C]heaven in my [G7]arms to[C]night
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [F]I'm holdin' [C]heaven in my [G7]arms to[C]night
 {end_of_verse}

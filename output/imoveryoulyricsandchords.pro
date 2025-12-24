@@ -11,31 +11,15 @@ You can't believe everything you read
 [F]On my face I'm over [C]you
 {end_of_verse}
 
-{start_of_chorus}
-[G7]You heard I'm drinkin’ more than I should
-That I [F]ain't been lookin’ [C]all that good
-[G7]Someone told you I was takin it rough
-Now [F]why're they makin’ those stories up
-When I'm over [C]you 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[G7]You heard I'm drinkin’ more than I should
-That I [F]ain't been lookin’ [C]all that good
-[G7]Someone told you I was takin it rough
-Now [F]why're they makin’ those stories up
-When I'm over [C]you 
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[G7]You heard I'm drinkin’ more than I should
-That I [F]ain't been lookin’ [C]all that good
-[G7]Someone told you I was takin it rough
-Now [F]why're they makin’ those stories up
-When I'm over [C]you 
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[G7]You heard I'm drinkin’ more than I should
+That I [F]ain't been lookin’ [C]all that good
+[G7]Someone told you I was takin it rough
+Now [F]why're they makin’ those stories up
+When I'm over [C]you 
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 There were times if you'd been around
 You would've seen me broken down
 [F]But now you won't I'm over [C]you
@@ -44,14 +28,22 @@ It only means you've lost the hold
 You [F]had on me I'm over [C]you
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [G7]You heard I'm drinkin’ more than I should
 That I [F]ain't been lookin’ [C]all that good
 [G7]Someone told you I was takin it rough
 Now [F]why're they makin’ those stories up
 When I'm over [C]you 
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+[G7]You heard I'm drinkin’ more than I should
+That I [F]ain't been lookin’ [C]all that good
+[G7]Someone told you I was takin it rough
+Now [F]why're they makin’ those stories up
+When I'm over [C]you 
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [C]I'm over you I'm over you
 {end_of_verse}

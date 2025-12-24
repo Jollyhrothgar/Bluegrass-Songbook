@@ -17,34 +17,16 @@ Took [Am]away from the thoughts of a [F]pretty girl
 Now I [C]wanna go back to [G7]catch up in this [F]song [C]
 {end_of_verse}
 
-{start_of_chorus}
-Now I don’t [Am]want nothing [G7]heavy
-Just my [F]baby in the back of my [C]Chevy
-A [Am]little loving on the [G7]weekends [F]make me feel [G7]alright
-I don’t [Am]want nothing [G7]heavy
-Just my [F]baby in the back of my [C]Chevy
-To kiss away my [G7]blues in the full moon[F]light[C]
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Now I don’t [Am]want nothing [G7]heavy
-Just my [F]baby in the back of my [C]Chevy
-A [Am]little loving on the [G7]weekends [F]make me feel [G7]alright
-I don’t [Am]want nothing [G7]heavy
-Just my [F]baby in the back of my [C]Chevy
-To kiss away my [G7]blues in the full moon[F]light[C]
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Now I don’t [Am]want nothing [G7]heavy
-Just my [F]baby in the back of my [C]Chevy
-A [Am]little loving on the [G7]weekends [F]make me feel [G7]alright
-I don’t [Am]want nothing [G7]heavy
-Just my [F]baby in the back of my [C]Chevy
-To kiss away my [G7]blues in the full moon[F]light[C]
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Now I don’t [Am]want nothing [G7]heavy
+Just my [F]baby in the back of my [C]Chevy
+A [Am]little loving on the [G7]weekends [F]make me feel [G7]alright
+I don’t [Am]want nothing [G7]heavy
+Just my [F]baby in the back of my [C]Chevy
+To kiss away my [G7]blues in the full moon[F]light[C]
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 So life became an con[G7]glomeration
 [Am]Of momma’s ways and a [F]Woodstock nation
 And [C]I was so confused nowhere to [G7]turn
@@ -53,11 +35,20 @@ And then my [C]lady got so [G7]psychedelic
 Now I [C]wanna kindle the [G7]flame that used to [F]burn[C]
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Now I don’t [Am]want nothing [G7]heavy
 Just my [F]baby in the back of my [C]Chevy
 A [Am]little loving on the [G7]weekends [F]make me feel [G7]alright
 I don’t [Am]want nothing [G7]heavy
 Just my [F]baby in the back of my [C]Chevy
 To kiss away my [G7]blues in the full moon[F]light[C]
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+Now I don’t [Am]want nothing [G7]heavy
+Just my [F]baby in the back of my [C]Chevy
+A [Am]little loving on the [G7]weekends [F]make me feel [G7]alright
+I don’t [Am]want nothing [G7]heavy
+Just my [F]baby in the back of my [C]Chevy
+To kiss away my [G7]blues in the full moon[F]light[C]
+{end_of_verse}

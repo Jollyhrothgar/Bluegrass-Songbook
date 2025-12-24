@@ -49,3 +49,10 @@
 [F]You can have the [G7]city lights and [C]I'll take the [Am]moon
 [F]Bet 'cha that I'm happier than [G7]you
 {end_of_verse}
+
+{start_of_verse: Verse 3}
+[F]I believe in [G7]good old country [C]music
+[F]Where everyone can [G7]clap and sing [C]along
+[F]You can have the [G7]city lights and [C]I'll take the [Am]moon
+[F]Bet 'cha that I'm happier than [G7]you
+{end_of_verse}

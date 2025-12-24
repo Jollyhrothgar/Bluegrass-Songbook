@@ -30,6 +30,13 @@ She's a-[G7]waitin' for me I [F]gotta be on time
 I gotta [C]roll roll roll roll roll roll roll roll 
 {end_of_verse}
 
+{start_of_verse: Verse 1}
+[C]Well my old car's a-rollin' down the line
+[F]Thoughts of my baby runnin' through my mind
+She's a-[G7]waitin' for me I [F]gotta be on time
+I gotta [C]roll roll roll roll roll roll roll roll 
+{end_of_verse}
+
 {start_of_verse: Verse 2}
 Well the white marker's flying off the road below
 [F]Man I'm really flying low

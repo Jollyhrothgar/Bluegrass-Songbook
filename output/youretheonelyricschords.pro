@@ -16,45 +16,36 @@
 [G]But that was [D7]before you [G]came
 {end_of_verse}
 
-{start_of_chorus}
-[C]You’re the one in a million
-[G]You’re the one you’re the one
-[C]You’re the one in a million I [G]see
-[C]You’re the one in a million
-[G]You’re the one you’re the one
-[C]You’re the one [D7]in a million for [G]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]You’re the one in a million
-[G]You’re the one you’re the one
-[C]You’re the one in a million I [G]see
-[C]You’re the one in a million
-[G]You’re the one you’re the one
-[C]You’re the one [D7]in a million for [G]me
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]You’re the one in a million
-[G]You’re the one you’re the one
-[C]You’re the one in a million I [G]see
-[C]You’re the one in a million
-[G]You’re the one you’re the one
-[C]You’re the one [D7]in a million for [G]me
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]You’re the one in a million
+[G]You’re the one you’re the one
+[C]You’re the one in a million I [G]see
+[C]You’re the one in a million
+[G]You’re the one you’re the one
+[C]You’re the one [D7]in a million for [G]me
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [C]All of the others were places to go to
 [G]When I had nowhere to [D7]sleep
 [G]I never made any promises to [C]them
 [G]None they’d [D7]expect me to [G]keep
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]You’re the one in a million
 [G]You’re the one you’re the one
 [C]You’re the one in a million I [G]see
 [C]You’re the one in a million
 [G]You’re the one you’re the one
 [C]You’re the one [D7]in a million for [G]me
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C]You’re the one in a million
+[G]You’re the one you’re the one
+[C]You’re the one in a million I [G]see
+[C]You’re the one in a million
+[G]You’re the one you’re the one
+[C]You’re the one [D7]in a million for [G]me
+{end_of_verse}

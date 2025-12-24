@@ -16,48 +16,41 @@ With the [G]sound of a [C]thousand voices [G]singing
 [Am]Warming me [D7]through my heavy [G]soul
 {end_of_verse}
 
-{start_of_chorus}
-Get on [Em]board it's the [D7]last train to [C]glory
-[Am]Ride the golden [C]rail of the [D7]Lord
-Get on [Em]board it's the [D7]last train to [C]glory
-[Am]Lay your burdens [C]down [D7]get on [G]board
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Get on [Em]board it's the [D7]last train to [C]glory
-[Am]Ride the golden [C]rail of the [D7]Lord
-Get on [Em]board it's the [D7]last train to [C]glory
-[Am]Lay your burdens [C]down [D7]get on [G]board
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Get on [Em]board it's the [D7]last train to [C]glory
-[Am]Ride the golden [C]rail of the [D7]Lord
-Get on [Em]board it's the [D7]last train to [C]glory
-[Am]Lay your burdens [C]down [D7]get on [G]board
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Get on [Em]board it's the [D7]last train to [C]glory
+[Am]Ride the golden [C]rail of the [D7]Lord
+Get on [Em]board it's the [D7]last train to [C]glory
+[Am]Lay your burdens [C]down [D7]get on [G]board
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Out came the [C]hand of the con[G]ductor[C]
 [G]Then I once [C]handed out a [G]dime[C]
 And saying [G]come on you don't [C]need to buy a [G]ticket
 [Am]You've been payin' such a long [D7]long time
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Just [G]ride the [C]same way you've been [G]livin'[C]
 Just [G]turn around and [C]help the next one [G]on [C]
 You're [G]here because you [C]know the gift of [G]givin'
 And [Am]no one makes it [D7]on this train [G]alone
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Get on [Em]board it's the [D7]last train to [C]glory
 [Am]Ride the golden [C]rail of the [D7]Lord
 Get on [Em]board it's the [D7]last train to [C]glory
 [Am]Lay your burdens [C]down [D7]get on [G]board
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 3}
+Get on [Em]board it's the [D7]last train to [C]glory
+[Am]Ride the golden [C]rail of the [D7]Lord
+Get on [Em]board it's the [D7]last train to [C]glory
+[Am]Lay your burdens [C]down [D7]get on [G]board
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 [Am]Lay your burdens [C]down [D7] get on [G]board
 {end_of_verse}

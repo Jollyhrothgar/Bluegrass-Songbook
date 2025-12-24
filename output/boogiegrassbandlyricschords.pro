@@ -9,37 +9,30 @@
 [C]And dance to the boogie grass [G]sound
 {end_of_verse}
 
-{start_of_chorus}
-[C]I love to hear a fiddle sing about [G]Kentucky
-[D7]And the Allman brothers Ramblin Man
-[C]We put the music all [G]together
-[D7]So dance to the boogie grass [G]band
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]I love to hear a fiddle sing about [G]Kentucky
-[D7]And the Allman brothers Ramblin Man
-[C]We put the music all [G]together
-[D7]So dance to the boogie grass [G]band
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]I love to hear a fiddle sing about [G]Kentucky
-[D7]And the Allman brothers Ramblin Man
-[C]We put the music all [G]together
-[D7]So dance to the boogie grass [G]band
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[C]I love to hear a fiddle sing about [G]Kentucky
+[D7]And the Allman brothers Ramblin Man
+[C]We put the music all [G]together
+[D7]So dance to the boogie grass [G]band
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [F]My daddy plays the banjo and saws the fiddle too
 [C]And taught me how to sing and play for [G]you
 [F]I got bluegrass in my soul and rhythm in my feet
 [C]So dance to the boogie grass [G]beat
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [C]I love to hear a fiddle sing about [G]Kentucky
 [D7]And the Allman brothers Ramblin Man
 [C]We put the music all [G]together
 [D7]So dance to the boogie grass [G]band
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+[C]I love to hear a fiddle sing about [G]Kentucky
+[D7]And the Allman brothers Ramblin Man
+[C]We put the music all [G]together
+[D7]So dance to the boogie grass [G]band
+{end_of_verse}

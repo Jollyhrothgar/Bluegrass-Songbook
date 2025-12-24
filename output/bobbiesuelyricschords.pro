@@ -16,45 +16,36 @@ Her daddy Robert and her mama Ruth
 [G]Nobody's gonna tell her what to do
 {end_of_verse}
 
-{start_of_chorus}
-[C]B-B-B-B Bobbie Sue c-can't you see my love is true
-{comment: D7                      G}
-I'll take her riding [B][B]on [B][B]a [B][B][B]Friday night
-[C]Straight down the highway in the clear moonlight
-[D7]My Chevy's humming and she holds me tight
-[G]We'll find a preacher and we'll do it right
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]B-B-B-B Bobbie Sue c-can't you see my love is true
-{comment: D7                      G}
-I'll take her riding [B][B]on [B][B]a [B][B][B]Friday night
-[C]Straight down the highway in the clear moonlight
-[D7]My Chevy's humming and she holds me tight
-[G]We'll find a preacher and we'll do it right
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]B-B-B-B Bobbie Sue c-can't you see my love is true
-{comment: D7                      G}
-I'll take her riding [B][B]on [B][B]a [B][B][B]Friday night
-[C]Straight down the highway in the clear moonlight
-[D7]My Chevy's humming and she holds me tight
-[G]We'll find a preacher and we'll do it right
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]B-B-B-B Bobbie Sue c-can't you see my love is true
+{comment: D7                      G}
+I'll take her riding [B][B]on [B][B]a [B][B][B]Friday night
+[C]Straight down the highway in the clear moonlight
+[D7]My Chevy's humming and she holds me tight
+[G]We'll find a preacher and we'll do it right
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Her daddy told her that she'd have to wait
 [C]Her mama said don't make a big mistake
 [D7]But we'll keep driving till we're out of reach
 [G]And when they find us it'll be too late
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]B-B-B-B Bobbie Sue c-can't you see my love is true
 {comment: D7                      G}
 I'll take her riding [B][B]on [B][B]a [B][B][B]Friday night
 [C]Straight down the highway in the clear moonlight
 [D7]My Chevy's humming and she holds me tight
 [G]We'll find a preacher and we'll do it right
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C]B-B-B-B Bobbie Sue c-can't you see my love is true
+{comment: D7                      G}
+I'll take her riding [B][B]on [B][B]a [B][B][B]Friday night
+[C]Straight down the highway in the clear moonlight
+[D7]My Chevy's humming and she holds me tight
+[G]We'll find a preacher and we'll do it right
+{end_of_verse}

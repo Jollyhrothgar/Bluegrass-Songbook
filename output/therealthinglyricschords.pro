@@ -16,41 +16,33 @@ I don’t want to be just a pass time fling
 [C]It’s got to be the real [G][D7]thing
 {end_of_verse}
 
-{start_of_chorus}
-[C]Have it in your heart but keep it in [D7]mind
-[G]If it’s with me that you wanna make [E7]time
-[C]It’s got to be the real thing this is [D7]true
-[G]And honey that don’t mean just an hour or [E7]two
-[C]You got to [D7]guarantee me the real [G]thing
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Have it in your heart but keep it in [D7]mind
-[G]If it’s with me that you wanna make [E7]time
-[C]It’s got to be the real thing this is [D7]true
-[G]And honey that don’t mean just an hour or [E7]two
-[C]You got to [D7]guarantee me the real [G]thing
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Have it in your heart but keep it in [D7]mind
-[G]If it’s with me that you wanna make [E7]time
-[C]It’s got to be the real thing this is [D7]true
-[G]And honey that don’t mean just an hour or [E7]two
-[C]You got to [D7]guarantee me the real [G]thing
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]Have it in your heart but keep it in [D7]mind
+[G]If it’s with me that you wanna make [E7]time
+[C]It’s got to be the real thing this is [D7]true
+[G]And honey that don’t mean just an hour or [E7]two
+[C]You got to [D7]guarantee me the real [G]thing
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 I’ll lay with you and talk with you
 [G7]But that’s about as close as we’re coming to
 [C]What you have in mind is well and [Am]fine
 [C]But it’s got to be [D7]the real [G]thing
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]Have it in your heart but keep it in [D7]mind
 [G]If it’s with me that you wanna make [E7]time
 [C]It’s got to be the real thing this is [D7]true
 [G]And honey that don’t mean just an hour or [E7]two
 [C]You got to [D7]guarantee me the real [G]thing
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C]Have it in your heart but keep it in [D7]mind
+[G]If it’s with me that you wanna make [E7]time
+[C]It’s got to be the real thing this is [D7]true
+[G]And honey that don’t mean just an hour or [E7]two
+[C]You got to [D7]guarantee me the real [G]thing
+{end_of_verse}

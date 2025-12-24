@@ -24,34 +24,16 @@ Then brother you have [C]met Him
 Because [D7]Jesus gets [G]around
 {end_of_verse}
 
-{start_of_chorus}
-Would you recognize [C]Jesus 
-If you [G]met Him face to face
-Or would you wonder if He's [C]just 
-A[G]nother one you could not [D7]place
-You [G]may not find Him [C]coming in a [G]chariot of the Lord
-Jesus could be [C]riding in a '[D7]49 [G]Ford
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Would you recognize [C]Jesus 
-If you [G]met Him face to face
-Or would you wonder if He's [C]just 
-A[G]nother one you could not [D7]place
-You [G]may not find Him [C]coming in a [G]chariot of the Lord
-Jesus could be [C]riding in a '[D7]49 [G]Ford
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Would you recognize [C]Jesus 
-If you [G]met Him face to face
-Or would you wonder if He's [C]just 
-A[G]nother one you could not [D7]place
-You [G]may not find Him [C]coming in a [G]chariot of the Lord
-Jesus could be [C]riding in a '[D7]49 [G]Ford
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+Would you recognize [C]Jesus 
+If you [G]met Him face to face
+Or would you wonder if He's [C]just 
+A[G]nother one you could not [D7]place
+You [G]may not find Him [C]coming in a [G]chariot of the Lord
+Jesus could be [C]riding in a '[D7]49 [G]Ford
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 You can find Him in your momma's eyes 
 Or in your daddy's face
 You can [C]find He's always there 
@@ -62,15 +44,24 @@ My God is hoping [C]someone
 Can find [D7]Him and you and [G]me
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 Would you recognize [C]Jesus 
 If you [G]met Him face to face
 Or would you wonder if He's [C]just 
 A[G]nother one you could not [D7]place
 You [G]may not find Him [C]coming in a [G]chariot of the Lord
 Jesus could be [C]riding in a '[D7]49 [G]Ford
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
+Would you recognize [C]Jesus 
+If you [G]met Him face to face
+Or would you wonder if He's [C]just 
+A[G]nother one you could not [D7]place
+You [G]may not find Him [C]coming in a [G]chariot of the Lord
+Jesus could be [C]riding in a '[D7]49 [G]Ford
+{end_of_verse}
+
+{start_of_verse: Verse 5}
 Jesus could be [C]riding in a '[D7]49 [G]Ford
 {end_of_verse}

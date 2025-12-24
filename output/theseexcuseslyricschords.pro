@@ -19,28 +19,14 @@ It’s always got plenty
 If [C]this is for [D7]feeling low [G]down[D7]
 {end_of_verse}
 
-{start_of_chorus}
-It means it’s [G]too soon for feeling low [C]down
-Always [G]there always just hanging [D7]around
-Making [G]sure they can be easily [C]found
-It’s just [G]easy for [D7]feeling low [G]down
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-It means it’s [G]too soon for feeling low [C]down
-Always [G]there always just hanging [D7]around
-Making [G]sure they can be easily [C]found
-It’s just [G]easy for [D7]feeling low [G]down
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-It means it’s [G]too soon for feeling low [C]down
-Always [G]there always just hanging [D7]around
-Making [G]sure they can be easily [C]found
-It’s just [G]easy for [D7]feeling low [G]down
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+It means it’s [G]too soon for feeling low [C]down
+Always [G]there always just hanging [D7]around
+Making [G]sure they can be easily [C]found
+It’s just [G]easy for [D7]feeling low [G]down
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Now I’ve got to talk to myself now
 Admit to myself how
 I [C]make myself just slip back [G]again[D7]  
@@ -49,9 +35,16 @@ I bet you were a boozer
 And [C]swore he’d never [D7]do this [G]again[D7]
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 It means it’s [G]too soon for feeling low [C]down
 Always [G]there always just hanging [D7]around
 Making [G]sure they can be easily [C]found
 It’s just [G]easy for [D7]feeling low [G]down
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+It means it’s [G]too soon for feeling low [C]down
+Always [G]there always just hanging [D7]around
+Making [G]sure they can be easily [C]found
+It’s just [G]easy for [D7]feeling low [G]down
+{end_of_verse}

@@ -15,56 +15,49 @@ Now the river's still here but [F]you're long [C]gone
 You left me and the river here [G7]all a[C]lone
 {end_of_verse}
 
-{start_of_chorus}
-I got the [F]Dog [G7]river [C]blues
-I've walked [F]holes in [G7]both my [C]shoes
-Now I [F]still got the [G7]river but I [C]ain't got [F]you
-I got the [C]Dog [G7]River [C]blues
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-I got the [F]Dog [G7]river [C]blues
-I've walked [F]holes in [G7]both my [C]shoes
-Now I [F]still got the [G7]river but I [C]ain't got [F]you
-I got the [C]Dog [G7]River [C]blues
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-I got the [F]Dog [G7]river [C]blues
-I've walked [F]holes in [G7]both my [C]shoes
-Now I [F]still got the [G7]river but I [C]ain't got [F]you
-I got the [C]Dog [G7]River [C]blues
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+I got the [F]Dog [G7]river [C]blues
+I've walked [F]holes in [G7]both my [C]shoes
+Now I [F]still got the [G7]river but I [C]ain't got [F]you
+I got the [C]Dog [G7]River [C]blues
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Well the rain came down and the [F]river rose [C]up
 Filled up the [G7]cab on my [C]pickup truck
 It came in the house and [F]down the [C]hall
 And washed your picture [G7]right off the [C]wall
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 I got the [F]Dog [G7]river [C]blues
 I've walked [F]holes in [G7]both my [C]shoes
 Now I [F]still got the [G7]river but I [C]ain't got [F]you
 I got the [C]Dog [G7]River [C]blues
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Well my heart still yearns and the [F]river still [C]rolls
 I pray someday it'll [G7]bring you [C]home
 If you change your mind [F]honey I'll be [C]here
 Waiting on the banks of that [G7]ol' Dog [C]River
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 I got the [F]Dog [G7]river [C]blues
 I've walked [F]holes in [G7]both my [C]shoes
 Now I [F]still got the [G7]river but I [C]ain't got [F]you
 I got the [C]Dog [G7]River [C]blues
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 3}
+I got the [F]Dog [G7]river [C]blues
+I've walked [F]holes in [G7]both my [C]shoes
+Now I [F]still got the [G7]river but I [C]ain't got [F]you
+I got the [C]Dog [G7]River [C]blues
+{end_of_verse}
+
+{start_of_verse: Verse 6}
 Oh I [F]still got the [G7]river but I [C]ain't got [F]you 
 I got the [C]Dog [G7]River [C]blues
 {end_of_verse}

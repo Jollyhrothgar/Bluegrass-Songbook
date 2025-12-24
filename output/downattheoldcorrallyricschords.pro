@@ -9,37 +9,31 @@ In [C]memory I recall those simpler [F]times
 [D7]And a way of life I never [G7]left [D7]beh[G7]ind
 {end_of_verse}
 
-{start_of_chorus}
-[C]Down at the old corral just sittin' [D7]watchin' the sun go down
-Oh how I'm [Fm]wishin' that I could be there [G7]now
-Down at the old [C]corral [G7]
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Down at the old corral just sittin' [D7]watchin' the sun go down
-Oh how I'm [Fm]wishin' that I could be there [G7]now
-Down at the old [C]corral [G7]
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Down at the old corral just sittin' [D7]watchin' the sun go down
-Oh how I'm [Fm]wishin' that I could be there [G7]now
-Down at the old [C]corral [G7]
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+[C]Down at the old corral just sittin' [D7]watchin' the sun go down
+Oh how I'm [Fm]wishin' that I could be there [G7]now
+Down at the old [C]corral [G7]
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 [C]I remember everything I ever [D7]heard
 Like [G7]how to judge a man's true worth by [C]how he [A7]keeps his [D7]word
 That [C]saddle wisdom never seemed to [F]end
 [D7]Everything I need to know I [G7]learned [D7]back [G7]then
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 [C]Down at the old corral just sittin' [D7]watchin' the sun go down
 Oh how I'm [Fm]wishin' that I could be there [G7]now
 Down at the old [C]corral [G7]
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
+[C]Down at the old corral just sittin' [D7]watchin' the sun go down
+Oh how I'm [Fm]wishin' that I could be there [G7]now
+Down at the old [C]corral [G7]
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Down at the old [C]corral [G7]down at the old [C]corral
 {end_of_verse}

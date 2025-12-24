@@ -6,6 +6,7 @@ Simple web server for the ChordPro validator UI
 import json
 import sys
 import os
+import random
 from pathlib import Path
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
@@ -38,9 +39,16 @@ class ValidatorServer(SimpleHTTPRequestHandler):
         if path == '/' or path == '/index.html':
             self.serve_file('viewer/index.html', 'text/html')
 
+        elif path == '/random' or path == '/random.html':
+            self.serve_file('viewer/random.html', 'text/html')
+
         # API: Get file list
         elif path == '/api/files':
             self.serve_file_list()
+
+        # API: Get random file
+        elif path == '/api/random':
+            self.serve_random_file()
 
         # Serve HTML files
         elif path.startswith('/html/'):
@@ -158,6 +166,36 @@ class ValidatorServer(SimpleHTTPRequestHandler):
         except Exception as e:
             self.send_error(500, str(e))
 
+    def serve_random_file(self):
+        """Serve a random file from successfully parsed files"""
+        try:
+            # Get list of all successfully parsed .pro files
+            output_dir = Path('output')
+            pro_files = list(output_dir.glob('*.pro'))
+
+            if not pro_files:
+                self.send_json_response({'success': False, 'error': 'No parsed files found'})
+                return
+
+            # Pick a random file
+            random_pro = random.choice(pro_files)
+            html_filename = random_pro.stem + '.html'
+
+            # Check if HTML exists
+            html_path = Path('html') / html_filename
+            if not html_path.exists():
+                # Try again with a different file
+                self.serve_random_file()
+                return
+
+            self.send_json_response({
+                'success': True,
+                'filename': html_filename
+            })
+
+        except Exception as e:
+            self.send_json_response({'success': False, 'error': str(e)})
+
     def serve_chordpro(self, filename):
         """Parse HTML and return ChordPro"""
         try:
@@ -212,15 +250,17 @@ def run_server(port=8000):
 ║     ChordPro Parser Validator                             ║
 ╠═══════════════════════════════════════════════════════════╣
 ║                                                           ║
-║  Server running at: http://localhost:{port}              ║
+║  Random Validator:  http://localhost:{port}/random       ║
+║  Full Validator:    http://localhost:{port}/             ║
 ║                                                           ║
-║  Open this URL in your browser to start validation       ║
+║  Random mode: Shows one random song at a time            ║
 ║                                                           ║
 ║  Keyboard shortcuts:                                      ║
-║    ← → : Navigate files                                   ║
 ║    1   : Mark as correct                                  ║
 ║    2   : Mark as minor issues                             ║
 ║    3   : Mark as wrong                                    ║
+║    Ctrl+N : Next random song                              ║
+║    Ctrl+Enter : Submit & next                             ║
 ║                                                           ║
 ║  Feedback saved to: viewer/feedback.jsonl                 ║
 ║                                                           ║

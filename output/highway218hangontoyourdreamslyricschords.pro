@@ -16,52 +16,43 @@ Follow your nose you're a [F]rambling rose
 [G7]And it might be just around the [C]bend
 {end_of_verse}
 
-{start_of_chorus}
-[F]Hang on to your [G7]dreams on that [C]highway [F]2-[C]18
-[F]Live everyday [G7]love it away
-There's is a [Dm]whole world you've never [G7]seen
-[F]Hang on to your [G7]dreams on that [C]highway [F]2-[C]18
-It's great to be young with a [G7]song in your lungs
-So hang on to your [C]dreams
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[F]Hang on to your [G7]dreams on that [C]highway [F]2-[C]18
-[F]Live everyday [G7]love it away
-There's is a [Dm]whole world you've never [G7]seen
-[F]Hang on to your [G7]dreams on that [C]highway [F]2-[C]18
-It's great to be young with a [G7]song in your lungs
-So hang on to your [C]dreams
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[F]Hang on to your [G7]dreams on that [C]highway [F]2-[C]18
-[F]Live everyday [G7]love it away
-There's is a [Dm]whole world you've never [G7]seen
-[F]Hang on to your [G7]dreams on that [C]highway [F]2-[C]18
-It's great to be young with a [G7]song in your lungs
-So hang on to your [C]dreams
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[F]Hang on to your [G7]dreams on that [C]highway [F]2-[C]18
+[F]Live everyday [G7]love it away
+There's is a [Dm]whole world you've never [G7]seen
+[F]Hang on to your [G7]dreams on that [C]highway [F]2-[C]18
+It's great to be young with a [G7]song in your lungs
+So hang on to your [C]dreams
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 Let the rhythm roll on let the [F]wheels go round
 The [G7]sky flying by is your [C]friend
 And chasing the blue comes [F]natural to you
 So [G7]now is the time to [C]begin
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 5}
 Sling your fate to the breeze you can [F]do what you please
 [G7]Sing it out like a mando[C]lin
 Trust in your toes cause they [F]knows where they goes
 [G7]They're just following the feeling [C]within
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [F]Hang on to your [G7]dreams on that [C]highway [F]2-[C]18
 [F]Live everyday [G7]love it away
 There's is a [Dm]whole world you've never [G7]seen
 [F]Hang on to your [G7]dreams on that [C]highway [F]2-[C]18
 It's great to be young with a [G7]song in your lungs
 So hang on to your [C]dreams
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[F]Hang on to your [G7]dreams on that [C]highway [F]2-[C]18
+[F]Live everyday [G7]love it away
+There's is a [Dm]whole world you've never [G7]seen
+[F]Hang on to your [G7]dreams on that [C]highway [F]2-[C]18
+It's great to be young with a [G7]song in your lungs
+So hang on to your [C]dreams
+{end_of_verse}

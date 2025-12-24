@@ -11,28 +11,14 @@ And I've worked in three all night service stations
 And [D7]drove a [G]truck
 {end_of_verse}
 
-{start_of_chorus}
-Take me [C]home
-My [D7]heart is heavy and my feet are [G]sore
-Take me [C]home
-I [D7]don't wanna roam no [G]more
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Take me [C]home
-My [D7]heart is heavy and my feet are [G]sore
-Take me [C]home
-I [D7]don't wanna roam no [G]more
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Take me [C]home
-My [D7]heart is heavy and my feet are [G]sore
-Take me [C]home
-I [D7]don't wanna roam no [G]more
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Take me [C]home
+My [D7]heart is heavy and my feet are [G]sore
+Take me [C]home
+I [D7]don't wanna roam no [G]more
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 Well I've slept all night in a water trough
 Had the [D7]flu and the croup and the whooping [G]cough
 Had the mumps and the measles and the seven-year itch
@@ -41,14 +27,14 @@ Not to mention all the times that I've cut my fingers
 On a [D7]sardine [G]can
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Take me [C]home
 My [D7]heart is heavy and my feet are [G]sore
 Take me [C]home
 I [D7]don't wanna roam no [G]more
-{end_of_chorus}
+{end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 4}
 Well I can just see 'em all now just a gatherin' round
 [D7]Momma's supper table when the sun goes [G]down
 And my good old pappy when the blessin' is said
@@ -57,9 +43,16 @@ And a great big hunk of my dear sweet momma's
 Hot [D7]buttered corn[G]bread
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Take me [C]home
 My [D7]heart is heavy and my feet are [G]sore
 Take me [C]home
 I [D7]don't wanna roam no [G]more
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Take me [C]home
+My [D7]heart is heavy and my feet are [G]sore
+Take me [C]home
+I [D7]don't wanna roam no [G]more
+{end_of_verse}

@@ -16,37 +16,30 @@
 [G7]When there's no where to turn you gotta turn it around
 {end_of_verse}
 
-{start_of_chorus}
-[C]Now I'm back on my feet  back on [G7]the road [F]to [C]love
-[G7]Yeah I'm back on my feet  taking advantage of
-[F]Learning a lesson or two  [C]hurting [F]all over and totally [C]blue
-[F]I'm putting the word on the [G7]street that I'm back on my [C]feet
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-[C]Now I'm back on my feet  back on [G7]the road [F]to [C]love
-[G7]Yeah I'm back on my feet  taking advantage of
-[F]Learning a lesson or two  [C]hurting [F]all over and totally [C]blue
-[F]I'm putting the word on the [G7]street that I'm back on my [C]feet
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-[C]Now I'm back on my feet  back on [G7]the road [F]to [C]love
-[G7]Yeah I'm back on my feet  taking advantage of
-[F]Learning a lesson or two  [C]hurting [F]all over and totally [C]blue
-[F]I'm putting the word on the [G7]street that I'm back on my [C]feet
-{end_of_chorus}
-
 {start_of_verse: Verse 3}
+[C]Now I'm back on my feet  back on [G7]the road [F]to [C]love
+[G7]Yeah I'm back on my feet  taking advantage of
+[F]Learning a lesson or two  [C]hurting [F]all over and totally [C]blue
+[F]I'm putting the word on the [G7]street that I'm back on my [C]feet
+{end_of_verse}
+
+{start_of_verse: Verse 4}
 [G7]I'm gonna be fine fine [C]fine  now that I'm back in my [F]mind
 [G7]Gonna chalk this one up as an honest [C]mistake
 [F]Only the night to blame  it's all in the game
 [G7]Even if it happens too soon it's never to late
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 3}
 [C]Now I'm back on my feet  back on [G7]the road [F]to [C]love
 [G7]Yeah I'm back on my feet  taking advantage of
 [F]Learning a lesson or two  [C]hurting [F]all over and totally [C]blue
 [F]I'm putting the word on the [G7]street that I'm back on my [C]feet
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 3}
+[C]Now I'm back on my feet  back on [G7]the road [F]to [C]love
+[G7]Yeah I'm back on my feet  taking advantage of
+[F]Learning a lesson or two  [C]hurting [F]all over and totally [C]blue
+[F]I'm putting the word on the [G7]street that I'm back on my [C]feet
+{end_of_verse}

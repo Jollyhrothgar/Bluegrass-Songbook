@@ -11,22 +11,12 @@ I believe I'll be up in above a time or [D7]two
 Way beyond the [G]blue
 {end_of_verse}
 
-{start_of_chorus}
-Way beyond the bl[D7]ue  way beyond the [G]blue
-I'll be loving yo[D7]u  way beyond the [G]blue
-{end_of_chorus}
-
-{start_of_chorus: Repeat 1}
-Way beyond the bl[D7]ue  way beyond the [G]blue
-I'll be loving yo[D7]u  way beyond the [G]blue
-{end_of_chorus}
-
-{start_of_chorus: Repeat 2}
-Way beyond the bl[D7]ue  way beyond the [G]blue
-I'll be loving yo[D7]u  way beyond the [G]blue
-{end_of_chorus}
-
 {start_of_verse: Verse 2}
+Way beyond the bl[D7]ue  way beyond the [G]blue
+I'll be loving yo[D7]u  way beyond the [G]blue
+{end_of_verse}
+
+{start_of_verse: Verse 3}
 If sometimes love is like a falling star
 It goes so fast and only goes so [D7]far
 Before it breaks your heart in [G]two
@@ -35,7 +25,12 @@ The higher we go the far we're gonna [D7]get
 Way beyond the [G]blue
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_verse: Verse 2}
 Way beyond the bl[D7]ue  way beyond the [G]blue
 I'll be loving yo[D7]u  way beyond the [G]blue
-{end_of_chorus}
+{end_of_verse}
+
+{start_of_verse: Verse 2}
+Way beyond the bl[D7]ue  way beyond the [G]blue
+I'll be loving yo[D7]u  way beyond the [G]blue
+{end_of_verse}
