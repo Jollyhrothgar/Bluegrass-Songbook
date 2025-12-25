@@ -1,6 +1,6 @@
 {meta: title She Believes In Me}
 {meta: artist Kenny Rogers}
-{meta: writer Steve Gibb}
+{meta: composer Steve Gibb}
 
 {start_of_verse: Verse 1}
 [G]While she lays sleeping

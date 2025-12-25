@@ -1,6 +1,6 @@
 {meta: title Cinderella}
 {meta: artist Buck Owens}
-{meta: writer Buddy Mize}
+{meta: composer Buddy Mize}
 
 {start_of_verse: Verse 1}
 {comment: F}

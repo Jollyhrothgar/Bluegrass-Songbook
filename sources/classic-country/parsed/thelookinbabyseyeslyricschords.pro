@@ -1,6 +1,6 @@
 {meta: title The Look In Baby's Eyes}
 {meta: artist Johnny Duncan}
-{meta: writer Ann J. Morton}
+{meta: composer Ann J. Morton}
 
 {start_of_verse: Verse 1}
 [C]There's our house [G7]the porch light's [C]on

@@ -1,6 +1,6 @@
 {meta: title Gonna Drink Milwaukee Dry}
 {meta: artist Charlie Walker}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]They make it here they [C]break it here

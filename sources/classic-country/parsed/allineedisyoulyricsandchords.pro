@@ -1,6 +1,6 @@
 {meta: title All I Need Is You}
 {meta: artist Web Pierce}
-{meta: writer Marijohn Wilkin, Wayne Walker, Webb Pierce}
+{meta: composer Marijohn Wilkin, Wayne Walker, Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C](All I need is you [G7]all I need is you) 

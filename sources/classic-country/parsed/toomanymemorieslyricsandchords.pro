@@ -1,6 +1,6 @@
 {meta: title Too Many Memories}
 {meta: artist Patty Loveless}
-{meta: writer Stephen Bruton}
+{meta: composer Stephen Bruton}
 
 {start_of_verse: Verse 1}
 [C]I remember this [G7]town  [C] with a love by my [F]side[G7]

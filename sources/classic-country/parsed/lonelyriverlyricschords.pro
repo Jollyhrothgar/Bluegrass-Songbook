@@ -1,6 +1,6 @@
 {meta: title Lonely River}
 {meta: artist Hank Snow}
-{meta: writer Fred Rose, Gene Autry, Ray Whitley}
+{meta: composer Fred Rose, Gene Autry, Ray Whitley}
 
 {start_of_verse: Verse 1}
 [C]Lonely river [F]in the [C]moonlight winding through my [G7]songs

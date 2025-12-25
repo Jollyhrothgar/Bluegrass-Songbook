@@ -1,6 +1,6 @@
 {meta: title You're A Little Doll}
 {meta: artist George Morgan}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 Well you're a little [C]doll as cute as you can be

@@ -1,6 +1,6 @@
 {meta: title Who Did You Love}
 {meta: artist Johnny Lee}
-{meta: writer Wanda Mallette, Bob Morrison, Patti Ryan}
+{meta: composer Wanda Mallette, Bob Morrison, Patti Ryan}
 
 {start_of_verse: Verse 1}
 [G7]Can you picture a place we all wind [F]up in [C]time

@@ -1,6 +1,6 @@
 {meta: title Dyin' For Someone To Live For}
 {meta: artist The Gibson Brothers}
-{meta: writer Shawn Camp and Loretta Lynn}
+{meta: composer Shawn Camp and Loretta Lynn}
 
 {start_of_verse: Verse 1}
 [G]Loneliness [C]falls all [G]around

@@ -1,6 +1,6 @@
 {meta: title I Love How You Love Me}
 {meta: artist Bobby Vinton}
-{meta: writer Larry Kolber and Barry Mann}
+{meta: composer Larry Kolber and Barry Mann}
 
 {start_of_verse: Verse 1}
 [G7]I love how your [C]eyes close whenever you [Am]kiss me

@@ -1,6 +1,6 @@
 {meta: title Bluest Heartache Of The Year}
 {meta: artist Kenny Dale}
-{meta: writer Warren W. Wimberly}
+{meta: composer Warren W. Wimberly}
 
 {start_of_verse: Verse 1}
 [C]Bluest Heart[C7]ache of the [F]year

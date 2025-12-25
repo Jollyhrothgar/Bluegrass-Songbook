@@ -1,6 +1,6 @@
 {meta: title There Ain't Enough Love To Go Around}
 {meta: artist Tony Booth}
-{meta: writer Robert Jones}
+{meta: composer Robert Jones}
 
 {start_of_verse: Verse 1}
 [C]Well the chairs are on the table and the [F]morning waits out[C]side

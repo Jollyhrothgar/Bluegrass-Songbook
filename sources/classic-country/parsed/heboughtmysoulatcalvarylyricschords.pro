@@ -1,6 +1,6 @@
 {meta: title He Bought My Soul At Calvary}
 {meta: artist Slim Whitman}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [C]There's a cross for everyone to bear

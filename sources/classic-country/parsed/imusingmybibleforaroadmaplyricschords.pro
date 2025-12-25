@@ -1,6 +1,6 @@
 {meta: title I’m Using My Bible For A Road Map}
 {meta: artist Mac Wiseman}
-{meta: writer Don Reno and Charles Schroeder}
+{meta: composer Don Reno and Charles Schroeder}
 
 {start_of_verse: Verse 1}
 [G]I'm using my Bible for a road [C]map 

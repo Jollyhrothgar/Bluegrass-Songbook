@@ -1,6 +1,6 @@
 {meta: title Whiskey Heaven}
 {meta: artist Fats Domino}
-{meta: writer C. Cofford, J. Durrill, S. Garrett}
+{meta: composer C. Cofford, J. Durrill, S. Garrett}
 
 {start_of_verse: Verse 1}
 [C]Every afternoon when I wake [C7]up

@@ -1,6 +1,6 @@
 {meta: title I'm So Used To Loving You}
 {meta: artist Conway Twitty}
-{meta: writer Harold L. Jenkins}
+{meta: composer Harold L. Jenkins}
 
 {start_of_verse: Verse 1}
 [G]I'm so used to loving you sweetheart

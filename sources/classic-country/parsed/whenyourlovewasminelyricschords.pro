@@ -1,6 +1,6 @@
 {meta: title When Your Love Was Mine}
 {meta: artist Marty Robbins}
-{meta: writer Joe Babcock}
+{meta: composer Joe Babcock}
 
 {start_of_verse: Verse 1}
 [C]Where is the [Am]sun that [F]used to [G7]sh-ine a[C]bove

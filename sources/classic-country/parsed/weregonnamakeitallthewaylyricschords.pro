@@ -1,6 +1,6 @@
 {meta: title We're Gonna Make It All The Way}
 {meta: artist Barbara Mandrell}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]They said I'd never [D7]settle down they [C]warned you of my [G]past

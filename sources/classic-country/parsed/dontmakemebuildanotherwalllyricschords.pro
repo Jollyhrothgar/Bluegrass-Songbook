@@ -1,6 +1,6 @@
 {meta: title Don't Make Me Build Another Wall}
 {meta: artist Melba Montgomery}
-{meta: writer Melba Montgomery, Carl Montgomery, Bill Hayes}
+{meta: composer Melba Montgomery, Carl Montgomery, Bill Hayes}
 
 {start_of_verse: Verse 1}
 [C]Not long ago this heart of mine was [F]broken

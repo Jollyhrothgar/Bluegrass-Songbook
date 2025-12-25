@@ -1,6 +1,6 @@
 {meta: title I Cried Again}
 {meta: artist Wanda Jackson}
-{meta: writer Autry Inman}
+{meta: composer Autry Inman}
 
 {start_of_verse: Verse 1}
 [C]Tear-drops [F]fell the night you [C]said 

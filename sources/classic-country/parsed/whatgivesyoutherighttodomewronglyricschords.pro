@@ -1,6 +1,6 @@
 {meta: title What Gives You The Right (To Do Me Wrong)}
 {meta: artist Wanda Jackson}
-{meta: writer John Scott Sherrill, Bob DiPiero, Rosie Flores}
+{meta: composer John Scott Sherrill, Bob DiPiero, Rosie Flores}
 
 {start_of_verse: Verse 1}
 [C]You [G7]know I had no reason not to [C]trust you  

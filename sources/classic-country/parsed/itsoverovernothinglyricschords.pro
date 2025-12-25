@@ -1,6 +1,6 @@
 {meta: title It's Over Over Nothing}
 {meta: artist Hank Snow}
-{meta: writer Betty Jean Robinson and Tony Seen}
+{meta: composer Betty Jean Robinson and Tony Seen}
 
 {start_of_verse: Verse 1}
 [C]The sweetest thing that ever came into my life was [G7]you

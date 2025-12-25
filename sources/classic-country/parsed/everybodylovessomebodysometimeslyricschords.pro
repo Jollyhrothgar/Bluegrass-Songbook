@@ -1,6 +1,6 @@
 {meta: title Everybody Loves Somebody Sometimes}
 {meta: artist Dean Martin}
-{meta: writer Irving Taylor and Ken Lane}
+{meta: composer Irving Taylor and Ken Lane}
 
 {start_of_verse: Verse 1}
 [C]Everybody [E7]loves somebody [F]sometime

@@ -1,6 +1,6 @@
 {meta: title Your Loving Side}
 {meta: artist Conway Twitty}
-{meta: writer Roger Murrah, John Schweers, Carson Whitsett}
+{meta: composer Roger Murrah, John Schweers, Carson Whitsett}
 
 {start_of_verse: Verse 1}
 [C]You and [G]I have known a love [C]beyond compare

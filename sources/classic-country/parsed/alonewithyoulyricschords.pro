@@ -1,6 +1,6 @@
 {meta: title Alone With You}
 {meta: artist Faron Young}
-{meta: writer Roy Drusky, Lester Vanadore, Faron Young}
+{meta: composer Roy Drusky, Lester Vanadore, Faron Young}
 
 {start_of_verse: Verse 1}
 [G]How I'd love to be around you 

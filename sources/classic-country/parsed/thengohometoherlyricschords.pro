@@ -1,6 +1,6 @@
 {meta: title Then Go Home To Her}
 {meta: artist Norma Jean}
-{meta: writer Hank Cochran and Jeannie Seely}
+{meta: composer Hank Cochran and Jeannie Seely}
 
 {start_of_verse: Verse 1}
 [C]You take me out in splendor then go [F]home to her

@@ -1,6 +1,6 @@
 {meta: title Walk Over God's Heaven}
 {meta: artist Alison Krauss}
-{meta: writer Thomas A. Dorsey}
+{meta: composer Thomas A. Dorsey}
 
 {start_of_verse: Verse 1}
 [C]I got shoes you got shoes

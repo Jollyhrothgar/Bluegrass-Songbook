@@ -1,6 +1,6 @@
 {meta: title We Made A Mistake}
 {meta: artist Kitty Wells}
-{meta: writer Joel Chunn and Jimmie Lou Lane}
+{meta: composer Joel Chunn and Jimmie Lou Lane}
 
 {start_of_verse: Verse 1}
 [G]We made a mistake dear by [C]playing a cheating [G]game

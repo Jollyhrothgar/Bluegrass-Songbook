@@ -1,6 +1,6 @@
 {meta: title I'm Gonna See My Baby Tonight Lyrics and Chords}
 {meta: artist Webb Pierce}
-{meta: writer Linda Baggett and Webb Pierce}
+{meta: composer Linda Baggett and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna see my baby tonight

@@ -1,6 +1,6 @@
 {meta: title A New Baby For Christmas}
 {meta: artist George Jones}
-{meta: writer George Jones and Lester Blackwell}
+{meta: composer George Jones and Lester Blackwell}
 
 {start_of_verse: Verse 1}
 [C]I want a new baby for Christmas

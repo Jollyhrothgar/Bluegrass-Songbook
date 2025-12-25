@@ -1,6 +1,6 @@
 {meta: title I Get Lonely When It Rains}
 {meta: artist Leroy Van Dyke}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [D7]When the day is dark and the clouds 

@@ -1,6 +1,6 @@
 {meta: title The Unicorn}
 {meta: artist Bill Anderson}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]A long time ago when the [Dm]earth was green

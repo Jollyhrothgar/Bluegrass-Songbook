@@ -1,6 +1,6 @@
 {meta: title I've Come A Long Way From Goodbye}
 {meta: artist George Jones}
-{meta: writer Melba Montgomery and Carl Montgomery}
+{meta: composer Melba Montgomery and Carl Montgomery}
 
 {start_of_verse: Verse 1}
 [G]I saw him [D7]again [G]today and [D7]I was [G]surprised

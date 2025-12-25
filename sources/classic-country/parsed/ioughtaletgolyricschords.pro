@@ -1,6 +1,6 @@
 {meta: title I Oughta Let Go}
 {meta: artist Tanya Tucker}
-{meta: writer Troy Seals, Eddie Setser, Steve Diamond}
+{meta: composer Troy Seals, Eddie Setser, Steve Diamond}
 
 {start_of_verse: Verse 1}
 [D7]I oughta be [G]shot [C]thinkin' that [D7]you could [G]love me

@@ -1,6 +1,6 @@
 {meta: title Girls In Disgrace}
 {meta: artist Jean Shepard}
-{meta: writer Dan Welch and Mary McDaniel}
+{meta: composer Dan Welch and Mary McDaniel}
 
 {start_of_verse: Verse 1}
 [C]So faithfully you promised me we'd marry [C7]in the [F]spring

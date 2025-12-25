@@ -1,6 +1,6 @@
 {meta: title Scarlet Wings}
 {meta: artist Hank Locklin}
-{meta: writer Damon Black}
+{meta: composer Damon Black}
 
 {start_of_verse: Verse 1}
 [G]I just overheard him [C]calling you an [G]angel

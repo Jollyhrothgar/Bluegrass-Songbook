@@ -1,6 +1,6 @@
 {meta: title Little Boy Blue}
 {meta: artist Huelyn Duvall}
-{meta: writer Jerry Arnold and Doyle Turner}
+{meta: composer Jerry Arnold and Doyle Turner}
 
 {start_of_verse: Verse 1}
 [C]Little boy blue  come [F]blow your [C]horn

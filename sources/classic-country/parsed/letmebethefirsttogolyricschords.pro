@@ -1,6 +1,6 @@
 {meta: title Let Me Be The First To Go}
 {meta: artist Gene Watson}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Lord I've never asked for [C7]any [F]favors

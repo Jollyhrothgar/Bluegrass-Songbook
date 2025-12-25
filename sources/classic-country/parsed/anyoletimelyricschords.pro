@@ -1,6 +1,6 @@
 {meta: title Any Ole Time}
 {meta: artist The Lonesome River Band}
-{meta: writer Tom Botkin, Kevin Denney, Mike Rogers}
+{meta: composer Tom Botkin, Kevin Denney, Mike Rogers}
 
 {start_of_verse: Verse 1}
 [G]Any ole [C]time you get [G]lonely

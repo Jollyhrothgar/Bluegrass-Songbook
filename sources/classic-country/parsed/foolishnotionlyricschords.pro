@@ -1,6 +1,6 @@
 {meta: title Foolish Notion}
 {meta: artist Buck Owens}
-{meta: writer Bob Morris}
+{meta: composer Bob Morris}
 
 {start_of_verse: Verse 1}
 [C]I just knew that someday you would fall in love with [F]me

@@ -1,6 +1,6 @@
 {meta: title Baby I Need Lovin'}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Dorothy Thompson}
+{meta: composer Hank Thompson and Dorothy Thompson}
 
 {start_of_verse: Verse 1}
 [C]Baby I need lovin' in any kind of [G7]way

@@ -1,6 +1,6 @@
 {meta: title That's Me Every Chance I Get}
 {meta: artist George Strait}
-{meta: writer Mark D. Sanders and Ed Hill}
+{meta: composer Mark D. Sanders and Ed Hill}
 
 {start_of_verse: Verse 1}
 [C]Picture a fellow with his boots [G7]shined up 

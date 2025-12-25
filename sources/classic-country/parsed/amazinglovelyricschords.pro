@@ -1,6 +1,6 @@
 {meta: title Amazing Love}
 {meta: artist Charley Pride}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [G]When she wakes up this morning and turns to [C]kiss me

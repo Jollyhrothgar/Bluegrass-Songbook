@@ -1,6 +1,6 @@
 {meta: title I'll Be Blue Till Then}
 {meta: artist Hank Locklin}
-{meta: writer Wendy Blevins}
+{meta: composer Wendy Blevins}
 
 {start_of_verse: Verse 1}
 [F]Till I'm holding you like I want to [C]do

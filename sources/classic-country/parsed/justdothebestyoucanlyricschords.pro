@@ -1,6 +1,6 @@
 {meta: title Just Do The Best You Can}
 {meta: artist Bobby Helms}
-{meta: writer Johnny Mathis}
+{meta: composer Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [G]I don't care what kind of stories [D7]that's been told on you

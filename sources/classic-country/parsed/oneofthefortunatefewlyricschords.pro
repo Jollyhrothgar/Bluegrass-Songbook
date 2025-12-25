@@ -1,6 +1,6 @@
 {meta: title One Of The Fortunate Few}
 {meta: artist Hank Thompson}
-{meta: writer Charlie Williams}
+{meta: composer Charlie Williams}
 
 {start_of_verse: Verse 1}
 [D7]When the [G]world closes in your arms are a place I can [D7]hide

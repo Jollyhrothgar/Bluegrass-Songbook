@@ -1,6 +1,6 @@
 {meta: title Indian Love Call}
 {meta: artist Slim Whitman}
-{meta: writer Otto Harbach, Oscar Hammerstein II, Rudolf Friml}
+{meta: composer Otto Harbach, Oscar Hammerstein II, Rudolf Friml}
 
 {start_of_verse: Verse 1}
 [C]Ooo  [G7]ooo  [C]ooo  ooo  [G7]ooo  [C]ooo

@@ -1,6 +1,6 @@
 {meta: title Just Dropped In}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [C]I jumped up this mornin' with the sundown shinin' in

@@ -1,6 +1,6 @@
 {meta: title Blueberry Hill}
 {meta: artist Fats Domino}
-{meta: writer Al Lewis, Larry Stock, Vincent Rose}
+{meta: composer Al Lewis, Larry Stock, Vincent Rose}
 
 {start_of_verse: Verse 1}
 [G]I found my [C]thrill on Blueberry [G]Hill

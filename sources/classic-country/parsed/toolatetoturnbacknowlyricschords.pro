@@ -1,6 +1,6 @@
 {meta: title Too Late To Turn Back Now}
 {meta: artist Don Williams}
-{meta: writer Don Williams and Allen Reynolds}
+{meta: composer Don Williams and Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [G]Uh-mmh-uh-mmh [C]uh-mmh-uh-[G]mmh

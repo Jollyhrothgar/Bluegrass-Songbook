@@ -1,6 +1,6 @@
 {meta: title You And Me Against The World}
 {meta: artist Jack Greene}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [C]You and [F]me against the world [C]that's how [G7]it used to [C]be

@@ -1,6 +1,6 @@
 {meta: title I'll Never Fall In Love Again}
 {meta: artist Anne Murray}
-{meta: writer Hal David and Burt Bacharach}
+{meta: composer Hal David and Burt Bacharach}
 
 {start_of_verse: Verse 1}
 [G]What do you get when you [Em]fall in [G]love

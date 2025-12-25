@@ -1,6 +1,6 @@
 {meta: title Walk Our Own Road}
 {meta: artist Randy Travis}
-{meta: writer Bernie Nelson and Lisa Pals}
+{meta: composer Bernie Nelson and Lisa Pals}
 
 {start_of_verse: Verse 1}
 [C]There's do'ers and [G7]don'ters and [C]I wills and won'ters

@@ -1,6 +1,6 @@
 {meta: title I Take The Chance}
 {meta: artist Jim Ed Brown}
-{meta: writer Charles &amp; Ira Louvin}
+{meta: composer Charles &amp; Ira Louvin}
 
 {start_of_verse: Verse 1}
 [G]I take the [C]chance to [D7]lose my soul my [C]life my [G]pride 

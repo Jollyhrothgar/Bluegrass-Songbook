@@ -1,6 +1,6 @@
 {meta: title Those Wonderful Years}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Don Schroeder}
+{meta: composer Webb Pierce and Don Schroeder}
 
 {start_of_verse: Verse 1}
 [C]Anytime you [G7]need me [F]I'll come [G7]running back to [C]you

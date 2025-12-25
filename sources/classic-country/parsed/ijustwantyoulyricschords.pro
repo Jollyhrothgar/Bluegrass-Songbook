@@ -1,6 +1,6 @@
 {meta: title I Just Want You}
 {meta: artist Keith Whitley}
-{meta: writer Max D. Barnes and Troy Seals}
+{meta: composer Max D. Barnes and Troy Seals}
 
 {start_of_verse: Verse 1}
 [C]Honey I'm [G]home

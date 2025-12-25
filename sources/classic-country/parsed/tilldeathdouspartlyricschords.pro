@@ -1,6 +1,6 @@
 {meta: title Till Death Do Us Part}
 {meta: artist Ray Price}
-{meta: writer Stu Davis}
+{meta: composer Stu Davis}
 
 {start_of_verse: Verse 1}
 [C]I call you on the phone but to me you're not at [F]home

@@ -1,6 +1,6 @@
 {meta: title Glory Hallelujah Now I'm Satisfied}
 {meta: artist Carl Story and his Rambling Mountaineers}
-{meta: writer Carl Story and Marshall Pack}
+{meta: composer Carl Story and Marshall Pack}
 
 {start_of_verse: Verse 1}
 [G]One day He came into my life when [C]I was out in [G]sin

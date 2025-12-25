@@ -1,6 +1,6 @@
 {meta: title They Remind Me Too Much Of You}
 {meta: artist Elvis Presley}
-{meta: writer Don Robertson}
+{meta: composer Don Robertson}
 
 {start_of_verse: Verse 1}
 [C]Take away the scent of flowers [Am]

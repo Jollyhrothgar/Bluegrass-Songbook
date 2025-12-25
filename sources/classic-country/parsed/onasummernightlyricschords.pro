@@ -1,6 +1,6 @@
 {meta: title On A Summer Night}
 {meta: artist The Bellamy Brothers}
-{meta: writer Ralph Siegel and Bernd Meinunger}
+{meta: composer Ralph Siegel and Bernd Meinunger}
 
 {start_of_verse: Verse 1}
 [C]There's another kind of livin’

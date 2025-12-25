@@ -1,6 +1,6 @@
 {meta: title Tennessee Stud}
 {meta: artist Eddy Arnold}
-{meta: writer Jimmie Driftwoodintro:Well there never was a hoss like the Tennessee stud}
+{meta: composer Jimmie Driftwoodintro:Well there never was a hoss like the Tennessee stud}
 
 {start_of_verse: Verse 1}
 [G]Along about eighteen twenty five

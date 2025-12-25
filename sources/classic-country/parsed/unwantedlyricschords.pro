@@ -1,6 +1,6 @@
 {meta: title Unwanted}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Eddie Nesbitt}
+{meta: composer Eddie Nesbitt}
 
 {start_of_verse: Verse 1}
 [C]You’ll never know how it feels to be unwanted

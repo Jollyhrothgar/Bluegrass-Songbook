@@ -1,6 +1,6 @@
 {meta: title I Recall A Gypsy Woman}
 {meta: artist Don Williams}
-{meta: writer Bob McDill and Allen Reynolds}
+{meta: composer Bob McDill and Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [G]Silver coins that [C]jingle [G]jangle  fancy shoes that dance in [D7]time

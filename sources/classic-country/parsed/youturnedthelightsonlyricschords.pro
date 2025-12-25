@@ -1,6 +1,6 @@
 {meta: title You Turned The Lights On}
 {meta: artist Jack Greene}
-{meta: writer Haze Jones}
+{meta: composer Haze Jones}
 
 {start_of_verse: Verse 1}
 [F]You turned the [C]lights on [G7]all over my [F]worl[C]d

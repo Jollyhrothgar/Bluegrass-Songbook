@@ -1,6 +1,6 @@
 {meta: title You Were A Good Friend}
 {meta: artist Kenny Rogers}
-{meta: writer Dave Ellingson and Kim Carnes}
+{meta: composer Dave Ellingson and Kim Carnes}
 
 {start_of_verse: Verse 1}
 [G]If I closed my eyes [D7]it doesn’t hurt quite so [G]bad [D7]

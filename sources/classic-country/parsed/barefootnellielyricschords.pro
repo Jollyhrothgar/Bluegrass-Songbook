@@ -1,6 +1,6 @@
 {meta: title Barefoot Nellie}
 {meta: artist Porter Wagoner}
-{meta: writer Jimmie Davis and Don Reno}
+{meta: composer Jimmie Davis and Don Reno}
 
 {start_of_verse: Verse 1}
 [C]Redheaded peckerwood sittin' on a limb

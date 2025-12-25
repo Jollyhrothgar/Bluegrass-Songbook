@@ -1,6 +1,6 @@
 {meta: title Johnny Freedom}
 {meta: artist Johnny Horton}
-{meta: writer Jule Styne and George David Weiss}
+{meta: composer Jule Styne and George David Weiss}
 
 {start_of_verse: Verse 1}
 [G]When our country [D7]was a [G]baby [D7]and the [G]Redcoats [D7]had their [G]way

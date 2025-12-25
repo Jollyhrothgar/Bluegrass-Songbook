@@ -1,6 +1,6 @@
 {meta: title The Truth About Men}
 {meta: artist Tracy Byrd}
-{meta: writer Paul Overstreet, Tim Johnson, Rory Lee}
+{meta: composer Paul Overstreet, Tim Johnson, Rory Lee}
 
 {start_of_verse: Verse 1}
 [C]We don't like to go out shoppin' we [F]don't care what's on [C]sale

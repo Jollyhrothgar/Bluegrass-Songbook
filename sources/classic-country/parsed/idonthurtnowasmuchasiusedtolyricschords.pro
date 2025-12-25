@@ -1,6 +1,6 @@
 {meta: title I Don't Hurt Now As Much As I Used To}
 {meta: artist Carl Smith}
-{meta: writer Wayne P. Walker and Carl Smith}
+{meta: composer Wayne P. Walker and Carl Smith}
 
 {start_of_verse: Verse 1}
 [G]I don’t hurt now as much as I [C]used to

@@ -1,6 +1,6 @@
 {meta: title It's All Going To Pot}
 {meta: artist Merle Haggard}
-{meta: writer Buddy Cannon, Jamey Johnson and Larry Shell}
+{meta: composer Buddy Cannon, Jamey Johnson and Larry Shell}
 
 {start_of_verse: Verse 1}
 It's All Going To Pot

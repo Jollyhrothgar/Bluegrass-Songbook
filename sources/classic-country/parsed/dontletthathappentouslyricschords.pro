@@ -1,6 +1,6 @@
 {meta: title Don't Let That Happen To Us}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew and Clyde Pitts}
+{meta: composer Carl Belew and Clyde Pitts}
 
 {start_of_verse: Verse 1}
 [C]I'm so happy we're still happy and together

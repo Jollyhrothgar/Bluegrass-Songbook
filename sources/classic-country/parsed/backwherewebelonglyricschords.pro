@@ -1,6 +1,6 @@
 {meta: title Back Where We Belong}
 {meta: artist Ricky Skaggs}
-{meta: writer Jim Rushing and Keith Sewell}
+{meta: composer Jim Rushing and Keith Sewell}
 
 {start_of_verse: Verse 1}
 [G]Feelin' low [A#7]tension high [C]that's the way things were last [G]night

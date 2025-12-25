@@ -1,6 +1,6 @@
 {meta: title My Wishing Room}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Sanger D. Shafer}
+{meta: composer Lefty Frizzell and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Love is I love [G7]things for [Am]you

@@ -1,6 +1,6 @@
 {meta: title I Had My Heart Set On You}
 {meta: artist Emmylou Harris}
-{meta: writer Rodney Crowell and Paul Kennerley}
+{meta: composer Rodney Crowell and Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [C]On our wedding [G7]day did you [C]lie

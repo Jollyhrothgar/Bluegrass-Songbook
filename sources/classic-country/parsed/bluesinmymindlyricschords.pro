@@ -1,6 +1,6 @@
 {meta: title Blues In My Mind}
 {meta: artist Roy Orbison}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]I ought to hate you for these [Gm]blues in my [C]mind

@@ -1,6 +1,6 @@
 {meta: title Overnight Success}
 {meta: artist George Strait}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]If it was [F]in your [C]mind to really cut me [F]down

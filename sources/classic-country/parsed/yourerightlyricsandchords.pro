@@ -1,6 +1,6 @@
 {meta: title You're Right}
 {meta: artist Faron Young}
-{meta: writer Helen Carter and Chet Atkins}
+{meta: composer Helen Carter and Chet Atkins}
 
 {start_of_verse: Verse 1}
 [C]If you think I'm gonna cry because you said [F]goodbye

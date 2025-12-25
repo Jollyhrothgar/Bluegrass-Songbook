@@ -1,6 +1,6 @@
 {meta: title A Rose Between Two Thorns}
 {meta: artist George Hamilton IV}
-{meta: writer Bobby R. Warren, Dale D. Siegenthaler, Roy G. Ownbey}
+{meta: composer Bobby R. Warren, Dale D. Siegenthaler, Roy G. Ownbey}
 
 {start_of_verse: Verse 1}
 [C]For God so loved this world [G7]that He sent down His [C]son

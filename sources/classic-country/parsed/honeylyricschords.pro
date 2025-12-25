@@ -1,6 +1,6 @@
 {meta: title Honey}
 {meta: artist Bobby Goldboro}
-{meta: writer Bobby Russell}
+{meta: composer Bobby Russell}
 
 {start_of_verse: Verse 1}
 [C]See the tree how big it's grown

@@ -1,6 +1,6 @@
 {meta: title All We Had Going Is Gone}
 {meta: artist Wilburn Brothers}
-{meta: writer Sharon Higgins}
+{meta: composer Sharon Higgins}
 
 {start_of_verse: Verse 1}
 [C]Why wear a ring that's turned to [F]rust 

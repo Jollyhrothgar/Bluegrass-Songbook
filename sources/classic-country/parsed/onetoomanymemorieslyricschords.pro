@@ -1,6 +1,6 @@
 {meta: title One Too Many Memories}
 {meta: artist Ray Pillow}
-{meta: writer Kent Westberry}
+{meta: composer Kent Westberry}
 
 {start_of_verse: Verse 1}
 [C]Well here I am in a honky tonk in [F]Texas

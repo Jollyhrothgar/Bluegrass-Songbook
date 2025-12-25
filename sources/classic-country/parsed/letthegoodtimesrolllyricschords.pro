@@ -1,6 +1,6 @@
 {meta: title Let The Good Times Roll}
 {meta: artist Roy Orbison}
-{meta: writer Leonard Lee and Shirley Goodman}
+{meta: composer Leonard Lee and Shirley Goodman}
 
 {start_of_verse: Verse 1}
 [G]Come on baby let the good times roll

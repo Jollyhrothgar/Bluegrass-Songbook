@@ -1,6 +1,6 @@
 {meta: title New Dreams And Sunshine}
 {meta: artist Rhonda Vincent}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]Don't it seem to rain a lot in our [F]lives

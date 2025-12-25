@@ -1,6 +1,6 @@
 {meta: title Heart Mender}
 {meta: artist Crystal Gayle}
-{meta: writer Richard Leigh and Milton Blackford}
+{meta: composer Richard Leigh and Milton Blackford}
 
 {start_of_verse: Verse 1}
 [C]I should have [Em]known that love would [Dm]make me [G7]blue

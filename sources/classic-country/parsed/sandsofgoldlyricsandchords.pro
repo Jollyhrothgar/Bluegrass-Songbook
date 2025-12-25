@@ -1,6 +1,6 @@
 {meta: title Sands of Gold}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce, Cliff Parman, Hal Eddy}
+{meta: composer Webb Pierce, Cliff Parman, Hal Eddy}
 
 {start_of_verse: Verse 1}
 [C]The sands of gold forever wait beside the [G7]sea

@@ -1,6 +1,6 @@
 {meta: title Smoke Filled Bar}
 {meta: artist Moe Bandy}
-{meta: writer Ginger Boatwright}
+{meta: composer Ginger Boatwright}
 
 {start_of_verse: Verse 1}
 [C]Smoke filled bar my [F]guitar in my [C]hand

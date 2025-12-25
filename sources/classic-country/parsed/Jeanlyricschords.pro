@@ -1,6 +1,6 @@
 {meta: title Jean}
 {meta: artist Jimmy Dean}
-{meta: writer Rod McKuen}
+{meta: composer Rod McKuen}
 
 {start_of_verse: Verse 1}
 [C]Jean [Em]Jean [F]roses are [G7]red

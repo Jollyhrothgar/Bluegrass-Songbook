@@ -1,6 +1,6 @@
 {meta: title Come Early Morning}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]I've been a walking  [F]walking in the [C]moonlight 

@@ -1,6 +1,6 @@
 {meta: title I'd Like To See Jesus}
 {meta: artist Tammy Wynette}
-{meta: writer Robert Seay and Dorval Smith}
+{meta: composer Robert Seay and Dorval Smith}
 
 {start_of_verse: Verse 1}
 [C]I'd like to see Jesus on [F]the Midnight [C]Special

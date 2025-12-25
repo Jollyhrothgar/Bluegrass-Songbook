@@ -1,6 +1,6 @@
 {meta: title I Must Be Getting Over You}
 {meta: artist Lefty Frizzell}
-{meta: writer Lawrence E. Reynolds}
+{meta: composer Lawrence E. Reynolds}
 
 {start_of_verse: Verse 1}
 [C]The silence of [F]two AM [G7]no longer tortures [C]me

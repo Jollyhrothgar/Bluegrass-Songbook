@@ -1,6 +1,6 @@
 {meta: title It's All Right With Me}
 {meta: artist George Strait}
-{meta: writer Jackson Leap}
+{meta: composer Jackson Leap}
 
 {start_of_verse: Verse 1}
 [C]It's alright with me if [G7]it's alright with [C]you

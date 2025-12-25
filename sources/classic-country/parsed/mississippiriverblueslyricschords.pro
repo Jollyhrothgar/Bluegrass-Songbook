@@ -1,6 +1,6 @@
 {meta: title Mississippi River Blues}
 {meta: artist Hank Snow}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]Oh you Mississippi river with [F]waters so deep and [C]wide

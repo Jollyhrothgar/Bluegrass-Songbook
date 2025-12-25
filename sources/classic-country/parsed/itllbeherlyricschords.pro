@@ -1,6 +1,6 @@
 {meta: title It'll Be Her}
 {meta: artist Johnny Rodriguez}
-{meta: writer Billy Ray Reynolds}
+{meta: composer Billy Ray Reynolds}
 
 {start_of_verse: Verse 1}
 It'll Be Her

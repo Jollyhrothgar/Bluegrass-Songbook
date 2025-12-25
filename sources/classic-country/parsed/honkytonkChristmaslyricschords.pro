@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Christmas}
 {meta: artist Mickey Gilley}
-{meta: writer Ralph James Murphy}
+{meta: composer Ralph James Murphy}
 
 {start_of_verse: Verse 1}
 [G]Well you left me in the spring the snow was [C]melting

@@ -1,6 +1,6 @@
 {meta: title Much Too Young (To Feel This Damn Old)}
 {meta: artist Garth Brooks}
-{meta: writer Randy Taylor and Garth Brooks}
+{meta: composer Randy Taylor and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G]This old highway's getting [Am]longer

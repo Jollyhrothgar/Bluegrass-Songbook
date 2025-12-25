@@ -1,6 +1,6 @@
 {meta: title Born To Be A Loser}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Charles Carpenter}
+{meta: composer Charles Carpenter}
 
 {start_of_verse: Verse 1}
 [G]I guess I’m born to be a loser

@@ -1,6 +1,6 @@
 {meta: title Something Borrowed Something Blue}
 {meta: artist John Anderson}
-{meta: writer Norro Wilson and Wayland Holyfield}
+{meta: composer Norro Wilson and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]Oh something borrowed something [F]blue

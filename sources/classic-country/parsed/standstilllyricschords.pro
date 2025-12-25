@@ -1,6 +1,6 @@
 {meta: title Stand Still}
 {meta: artist Charlie Walker}
-{meta: writer Bob Tanner}
+{meta: composer Bob Tanner}
 
 {start_of_verse: Verse 1}
 [G]Stand still don't move I'm [G7]looking at an [C]angel

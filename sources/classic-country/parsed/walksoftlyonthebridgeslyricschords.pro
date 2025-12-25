@@ -1,6 +1,6 @@
 {meta: title Walk Softly On The Bridges}
 {meta: artist Tammy Wynette}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]Don't be careless [F]with your [C]darling

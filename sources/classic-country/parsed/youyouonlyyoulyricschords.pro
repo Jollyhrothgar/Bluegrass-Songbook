@@ -1,6 +1,6 @@
 {meta: title You You Only You Lyrics with Chords}
 {meta: artist Buck Owens}
-{meta: writer Red Simpson and Don Rich}
+{meta: composer Red Simpson and Don Rich}
 
 {start_of_verse: Verse 1}
 [G]I got two arms that reach [C]for you I got [D7]two eyes that watch for [G]you

@@ -1,6 +1,6 @@
 {meta: title Forgettin' Bout You}
 {meta: artist Crystal Gayle}
-{meta: writer Don Williams and Allen Reynolds}
+{meta: composer Don Williams and Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [C]Since you've gone gone gone I'm here all alone

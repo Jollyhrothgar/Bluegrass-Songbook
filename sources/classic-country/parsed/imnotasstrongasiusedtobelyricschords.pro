@@ -1,6 +1,6 @@
 {meta: title I'm Not As Strong As I Used To Be}
 {meta: artist Moe Bandy}
-{meta: writer Phyllis Powell and Dewayne Orender}
+{meta: composer Phyllis Powell and Dewayne Orender}
 
 {start_of_verse: Verse 1}
 [C]Pardon me I don't know [F]what made me break [C]down

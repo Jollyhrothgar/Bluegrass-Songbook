@@ -1,6 +1,6 @@
 {meta: title You're Not By Yourself}
 {meta: artist Vern Gosdin}
-{meta: writer Murray F. Cannon, Garland Perry Cochran, Vern Gosdin}
+{meta: composer Murray F. Cannon, Garland Perry Cochran, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]You're leaving [G7]without a [C]reason

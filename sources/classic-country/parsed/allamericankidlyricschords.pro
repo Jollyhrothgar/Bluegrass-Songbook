@@ -1,6 +1,6 @@
 {meta: title All American Kid}
 {meta: artist Garth Brooks}
-{meta: writer Terry McBride, Brice Long, Craig Campbell}
+{meta: composer Terry McBride, Brice Long, Craig Campbell}
 
 {start_of_verse: Verse 1}
 [C]Was the captain of the team his [G7]senior [C]year

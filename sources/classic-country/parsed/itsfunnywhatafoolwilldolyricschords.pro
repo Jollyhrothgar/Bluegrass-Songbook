@@ -1,6 +1,6 @@
 {meta: title It's Funny What A Fool Will Do}
 {meta: artist George Jones}
-{meta: writer Johnny Mathis and George Jones}
+{meta: composer Johnny Mathis and George Jones}
 
 {start_of_verse: Verse 1}
 [C]Here am I [C7]without your arms [F]again

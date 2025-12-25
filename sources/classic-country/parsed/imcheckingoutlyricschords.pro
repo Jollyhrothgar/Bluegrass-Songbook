@@ -1,6 +1,6 @@
 {meta: title I'm Checking Out}
 {meta: artist Conway Twitty}
-{meta: writer Mickey Jaco}
+{meta: composer Mickey Jaco}
 
 {start_of_verse: Verse 1}
 [G]Lately you've been actin' kinda strange it's [D7]true

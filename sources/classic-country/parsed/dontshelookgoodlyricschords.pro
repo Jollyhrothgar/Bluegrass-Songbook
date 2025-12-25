@@ -1,6 +1,6 @@
 {meta: title Don’t She Look Good}
 {meta: artist Bill Anderson}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]She was on her way out of your life when I found her

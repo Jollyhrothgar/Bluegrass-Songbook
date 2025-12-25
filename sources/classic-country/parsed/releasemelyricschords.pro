@@ -1,6 +1,6 @@
 {meta: title Release Me}
 {meta: artist Ray Price}
-{meta: writer Eddie Miller, Robert Yount}
+{meta: composer Eddie Miller, Robert Yount}
 
 {start_of_verse: Verse 1}
 [G]Please release me let me [C]go 

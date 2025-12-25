@@ -1,6 +1,6 @@
 {meta: title Too Many Parties Too Many Pals}
 {meta: artist Hank Williams}
-{meta: writer Billy Rose, Mort Dixon, Ray Henderson}
+{meta: composer Billy Rose, Mort Dixon, Ray Henderson}
 
 {start_of_verse: Verse 1}
 [C]Too many [A7]parties and [D7]too many pals

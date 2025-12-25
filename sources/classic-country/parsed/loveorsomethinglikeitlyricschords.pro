@@ -1,6 +1,6 @@
 {meta: title Love Or Something Like It}
 {meta: artist Kenny Rogers}
-{meta: writer Kenny Rogers and Steve Glassmeyer}
+{meta: composer Kenny Rogers and Steve Glassmeyer}
 
 {start_of_verse: Verse 1}
 [C]Show me a bar with a good looking woman 

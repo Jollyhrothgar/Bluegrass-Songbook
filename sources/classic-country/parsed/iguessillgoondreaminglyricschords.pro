@@ -1,6 +1,6 @@
 {meta: title I Guess I'll Go On Dreaming}
 {meta: artist Kitty Wells}
-{meta: writer Johnnie Bailes and Walter Bailes}
+{meta: composer Johnnie Bailes and Walter Bailes}
 
 {start_of_verse: Verse 1}
 [C]You tell me you are leaving you don't [F]love me anymore 

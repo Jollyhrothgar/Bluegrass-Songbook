@@ -1,6 +1,6 @@
 {meta: title Drinking Tequila}
 {meta: artist Jim Reeves}
-{meta: writer Bob Center}
+{meta: composer Bob Center}
 
 {start_of_verse: Verse 1}
 [C]I'm just gettin' back from [G7]Juarez Mexico

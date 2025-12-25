@@ -1,6 +1,6 @@
 {meta: title I Just Can't Leave Your Love Alone}
 {meta: artist Crystal Gayle}
-{meta: writer Joe Sample and Will Jennings}
+{meta: composer Joe Sample and Will Jennings}
 
 {start_of_verse: Verse 1}
 [Am]You let me [E7]down all over town

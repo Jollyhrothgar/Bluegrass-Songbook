@@ -1,6 +1,6 @@
 {meta: title Everybody's Somebody's Fool}
 {meta: artist Connie Francis}
-{meta: writer Howard Greenfield and Jack Keller}
+{meta: composer Howard Greenfield and Jack Keller}
 
 {start_of_verse: Verse 1}
 [C]The tears I've cried for you could fill an [F]ocean

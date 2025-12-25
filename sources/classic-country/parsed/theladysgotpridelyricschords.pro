@@ -1,6 +1,6 @@
 {meta: title The Lady's Got Pride}
 {meta: artist Moe Bandy}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]I'll say one thing the [G7]lady's got [C]pride

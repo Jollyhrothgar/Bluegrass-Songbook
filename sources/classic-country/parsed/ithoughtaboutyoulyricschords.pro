@@ -1,6 +1,6 @@
 {meta: title I Thought About You}
 {meta: artist Mel Tillis}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [C]I thought about a walkin' thought about talkin'

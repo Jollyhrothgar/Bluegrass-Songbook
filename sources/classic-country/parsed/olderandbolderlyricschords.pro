@@ -1,6 +1,6 @@
 {meta: title Older And Bolder}
 {meta: artist Eddy Arnold}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]Many years ago when a girl said no 

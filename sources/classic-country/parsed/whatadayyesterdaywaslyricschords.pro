@@ -1,6 +1,6 @@
 {meta: title What A Day Yesterday Was}
 {meta: artist Alan Jackson}
-{meta: writer Charlie Craig and Mel Besher}
+{meta: composer Charlie Craig and Mel Besher}
 
 {start_of_verse: Verse 1}
 [G7]Looking [C]through these old photo[Em]graphs

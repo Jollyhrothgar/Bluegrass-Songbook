@@ -1,6 +1,6 @@
 {meta: title Things I Almost Had With You}
 {meta: artist Leona Williams}
-{meta: writer David C. Kirby, Ronald K. Williams, Jr., Leona Williams}
+{meta: composer David C. Kirby, Ronald K. Williams, Jr., Leona Williams}
 
 {start_of_verse: Verse 1}
 [G]There’s a little boy and [C]girl next door to [G]mommas 

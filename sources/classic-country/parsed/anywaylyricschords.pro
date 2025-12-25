@@ -1,6 +1,6 @@
 {meta: title Anyway}
 {meta: artist George Hamilton IV}
-{meta: writer Bobby Bond}
+{meta: composer Bobby Bond}
 
 {start_of_verse: Verse 1}
 [G]There's a big bird out on a runway darlin'

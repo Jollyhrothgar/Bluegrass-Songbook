@@ -1,6 +1,6 @@
 {meta: title Freedom}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Tommy Blake}
+{meta: composer Tommy Blake}
 
 {start_of_verse: Verse 1}
 [C]I wanted my freedom from [F]love and all its [C]pain

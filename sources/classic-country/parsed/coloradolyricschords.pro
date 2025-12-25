@@ -1,6 +1,6 @@
 {meta: title Colorado}
 {meta: artist Merle Haggard}
-{meta: writer David C. Kirby}
+{meta: composer David C. Kirby}
 
 {start_of_verse: Verse 1}
 [G]There's a place where Mother Nature's got [C]it all [G]together

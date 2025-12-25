@@ -1,6 +1,6 @@
 {meta: title From Your Knees}
 {meta: artist Randy Travis}
-{meta: writer Leslie Winn Satcher}
+{meta: composer Leslie Winn Satcher}
 
 {start_of_verse: Verse 1}
 [G]He tore down the [D7]work of [G]17 [D7]years brick by [G]brick

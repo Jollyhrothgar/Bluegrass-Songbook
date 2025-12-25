@@ -1,6 +1,6 @@
 {meta: title You're Running Wild}
 {meta: artist Emmylou Harris}
-{meta: writer Ray Edenton and Don Winters}
+{meta: composer Ray Edenton and Don Winters}
 
 {start_of_verse: Verse 1}
 [G]You're running wild how long can this go [D7]on

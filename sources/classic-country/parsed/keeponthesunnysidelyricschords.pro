@@ -1,6 +1,6 @@
 {meta: title Keep On The Sunny Side}
 {meta: artist Lester Flatt}
-{meta: writer A.P. Carer}
+{meta: composer A.P. Carer}
 
 {start_of_verse: Verse 1}
 [C]There's a dark and a [F]troubled side of [C]life

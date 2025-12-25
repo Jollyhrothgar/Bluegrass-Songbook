@@ -1,6 +1,6 @@
 {meta: title Little At A Time}
 {meta: artist Lee Greenwood}
-{meta: writer Mark Nesler}
+{meta: composer Mark Nesler}
 
 {start_of_verse: Verse 1}
 [C]Hello it's me again the one who [Dm]loves you [A7]

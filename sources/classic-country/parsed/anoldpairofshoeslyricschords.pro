@@ -1,6 +1,6 @@
 {meta: title An Old Pair Of Shoes}
 {meta: artist Randy Travis}
-{meta: writer Jerry Foster, A J Masters, Johnny Morris}
+{meta: composer Jerry Foster, A J Masters, Johnny Morris}
 
 {start_of_verse: Verse 1}
 [C]I've walked a million miles across this floor

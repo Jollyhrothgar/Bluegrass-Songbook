@@ -1,6 +1,6 @@
 {meta: title A Memory Away}
 {meta: artist Gene Watson}
-{meta: writer Warren Robb and David Kirby}
+{meta: composer Warren Robb and David Kirby}
 
 {start_of_verse: Verse 1}
 [G]I woke up this [D7]morning [Em]thinking about those [G]times

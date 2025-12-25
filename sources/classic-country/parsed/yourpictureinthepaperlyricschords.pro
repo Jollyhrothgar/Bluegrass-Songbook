@@ -1,6 +1,6 @@
 {meta: title Your Picture In The Paper}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]I saw your picture in the [C]paper Sunday [G]morning

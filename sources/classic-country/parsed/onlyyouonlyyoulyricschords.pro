@@ -1,6 +1,6 @@
 {meta: title Only You Only You}
 {meta: artist Charlie Walker}
-{meta: writer Jack Newman and Charlie Walker}
+{meta: composer Jack Newman and Charlie Walker}
 
 {start_of_verse: Verse 1}
 [C]Only you could steal my heart away from me

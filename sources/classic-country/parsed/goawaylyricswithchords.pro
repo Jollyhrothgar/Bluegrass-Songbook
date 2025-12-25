@@ -1,6 +1,6 @@
 {meta: title Go Away}
 {meta: artist Ray Price}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]Go away can't you see I'm [G7]crying

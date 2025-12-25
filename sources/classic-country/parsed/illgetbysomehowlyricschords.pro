@@ -1,6 +1,6 @@
 {meta: title I'll Get by Somehow}
 {meta: artist Webb Pierce}
-{meta: writer Wayne Walker}
+{meta: composer Wayne Walker}
 
 {start_of_verse: Verse 1}
 [C]Throw away all my [G7]souvenirs take my pictures from the [C]shelf

@@ -1,6 +1,6 @@
 {meta: title Rock Of Ages}
 {meta: artist The Statler Brothers}
-{meta: writer Brantley George}
+{meta: composer Brantley George}
 
 {start_of_verse: Verse 1}
 [G]Rock of ages [C]cleft for [G]me 

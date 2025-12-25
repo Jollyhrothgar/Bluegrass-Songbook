@@ -1,6 +1,6 @@
 {meta: title Bigger Man Than Me}
 {meta: artist George Strait}
-{meta: writer Curtis Wayne}
+{meta: composer Curtis Wayne}
 
 {start_of_verse: Verse 1}
 [C]I never thought too much about her [G7]leavin'

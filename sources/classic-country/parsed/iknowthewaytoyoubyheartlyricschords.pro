@@ -1,6 +1,6 @@
 {meta: title I Know The Way To You By Heart}
 {meta: artist Vern Gosdin}
-{meta: writer Tony Laiolo}
+{meta: composer Tony Laiolo}
 
 {start_of_verse: Verse 1}
 [G7]As a [C]boy I believed it was [F]best just to leave

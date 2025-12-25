@@ -1,6 +1,6 @@
 {meta: title How Do You Feel About Foolin' Around}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson, Stephen Bruton, Mike Utley}
+{meta: composer Kris Kristofferson, Stephen Bruton, Mike Utley}
 
 {start_of_verse: Verse 1}
 [G]So many people got [A7]so many lines

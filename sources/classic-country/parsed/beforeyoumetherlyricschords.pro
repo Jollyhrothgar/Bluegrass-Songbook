@@ -1,6 +1,6 @@
 {meta: title Before You Met Her}
 {meta: artist The Gibson Brothers}
-{meta: writer Eric Gibson}
+{meta: composer Eric Gibson}
 
 {start_of_verse: Verse 1}
 [C]Before you met her [F]she said she’d be mine [C]forever

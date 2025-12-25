@@ -1,6 +1,6 @@
 {meta: title Break Away Break Away}
 {meta: artist Cowboy Copas}
-{meta: writer Boudleaux Bryant AND Felice Bryant}
+{meta: composer Boudleaux Bryant AND Felice Bryant}
 
 {start_of_verse: Verse 1}
 [G7](Break away break [C]away)

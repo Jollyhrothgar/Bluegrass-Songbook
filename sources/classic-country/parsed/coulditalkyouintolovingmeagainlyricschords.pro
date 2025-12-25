@@ -1,6 +1,6 @@
 {meta: title Could I Talk You Into Loving Me Again}
 {meta: artist Wynn Stewart}
-{meta: writer Len Green and Wynn Stewart}
+{meta: composer Len Green and Wynn Stewart}
 
 {start_of_verse: Verse 1}
 Could I Talk You Into Loving Me Again

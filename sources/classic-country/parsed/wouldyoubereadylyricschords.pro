@@ -1,6 +1,6 @@
 {meta: title Would You Be Ready}
 {meta: artist Buck Owens}
-{meta: writer Don Rich}
+{meta: composer Don Rich}
 
 {start_of_verse: Verse 1}
 [G]There are lots of hard times Christians living [C]round us every [G]day

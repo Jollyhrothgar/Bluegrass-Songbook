@@ -1,6 +1,6 @@
 {meta: title My Heart Won't Wander Very Far From You}
 {meta: artist George Strait}
-{meta: writer Arnette Cotter and Buddy Carvathe}
+{meta: composer Arnette Cotter and Buddy Carvathe}
 
 {start_of_verse: Verse 1}
 [C]Well honey don't you worry I don't need no barroom queen

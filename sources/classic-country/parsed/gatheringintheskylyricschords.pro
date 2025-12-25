@@ -1,6 +1,6 @@
 {meta: title Gathering In The Sky}
 {meta: artist Porter Wagoner}
-{meta: writer Wayne Raney and R.E. Winsett}
+{meta: composer Wayne Raney and R.E. Winsett}
 
 {start_of_verse: Verse 1}
 [G]There'll be a great gathering in the sky 

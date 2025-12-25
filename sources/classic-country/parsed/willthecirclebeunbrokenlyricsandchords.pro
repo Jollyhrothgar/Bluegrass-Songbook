@@ -1,6 +1,6 @@
 {meta: title Will The Circle Be Unbroken}
 {meta: artist Eddy Arnold}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]There are loved ones in the glory

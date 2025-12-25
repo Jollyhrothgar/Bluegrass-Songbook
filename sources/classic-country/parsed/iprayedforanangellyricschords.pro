@@ -1,6 +1,6 @@
 {meta: title I Prayed for an Angel}
 {meta: artist Jack Scott}
-{meta: writer Laura Veronica}
+{meta: composer Laura Veronica}
 
 {start_of_verse: Verse 1}
 I Prayed for an Angel 

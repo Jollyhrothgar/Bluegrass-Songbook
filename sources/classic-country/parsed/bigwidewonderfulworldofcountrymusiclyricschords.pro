@@ -1,6 +1,6 @@
 {meta: title Big Wide Wonderful World Of Country Music}
 {meta: artist Leroy Van Dyke}
-{meta: writer Gene Nash}
+{meta: composer Gene Nash}
 
 {start_of_verse: Verse 1}
 [D7]It's a [G]big wide [C]wonderful [G]world of country [C]music

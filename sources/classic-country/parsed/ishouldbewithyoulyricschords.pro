@@ -1,6 +1,6 @@
 {meta: title I Should Be With You}
 {meta: artist Porter Wagoner}
-{meta: writer Pete Stamper and Werth Becker}
+{meta: composer Pete Stamper and Werth Becker}
 
 {start_of_verse: Verse 1}
 [G]Last night I met an old love

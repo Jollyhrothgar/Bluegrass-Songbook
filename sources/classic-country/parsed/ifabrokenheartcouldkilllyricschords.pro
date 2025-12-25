@@ -1,6 +1,6 @@
 {meta: title If A Broken Heart Could Kill}
 {meta: artist Keith Whitley}
-{meta: writer Allen Henson, Norris D. Wilson}
+{meta: composer Allen Henson, Norris D. Wilson}
 
 {start_of_verse: Verse 1}
 [D7]Oh it's [G]choking [C]me to [G]death

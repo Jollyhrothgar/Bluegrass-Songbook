@@ -1,6 +1,6 @@
 {meta: title No Sad Songs For Me}
 {meta: artist Bobby Bare}
-{meta: writer Tim Springfield}
+{meta: composer Tim Springfield}
 
 {start_of_verse: Verse 1}
 [Am]I walk around [Dm]imagining the [G7]way she'll say good[C]bye [E7]

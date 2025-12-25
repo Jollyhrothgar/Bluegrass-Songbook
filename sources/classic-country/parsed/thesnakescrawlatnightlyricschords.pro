@@ -1,6 +1,6 @@
 {meta: title The Snakes Crawl at Night}
 {meta: artist Charley Pride}
-{meta: writer Mel Tillis and Fred Burch}
+{meta: composer Mel Tillis and Fred Burch}
 
 {start_of_verse: Verse 1}
 [G]The snakes crawl at night

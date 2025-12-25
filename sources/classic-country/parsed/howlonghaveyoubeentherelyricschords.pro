@@ -1,6 +1,6 @@
 {meta: title How Long Have You Been There}
 {meta: artist Waylon Jennings}
-{meta: writer Dee Moeller}
+{meta: composer Dee Moeller}
 
 {start_of_verse: Verse 1}
 [G7]I've been [C]walking in the shadows for so [Am]long 

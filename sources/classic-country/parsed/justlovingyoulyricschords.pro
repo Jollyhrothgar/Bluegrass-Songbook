@@ -1,6 +1,6 @@
 {meta: title Just Loving You}
 {meta: artist Doyle Lawson}
-{meta: writer Doyle Lawson and Jamie Dailey}
+{meta: composer Doyle Lawson and Jamie Dailey}
 
 {start_of_verse: Verse 1}
 [G]Loving [C]you loving [G]you 

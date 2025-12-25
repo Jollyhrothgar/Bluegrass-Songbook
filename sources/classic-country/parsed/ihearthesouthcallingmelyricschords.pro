@@ -1,6 +1,6 @@
 {meta: title I Hear the South Calling Me}
 {meta: artist Hank Thompson}
-{meta: writer R.C. Bannon and John Bettis}
+{meta: composer R.C. Bannon and John Bettis}
 
 {start_of_verse: Verse 1}
 [G]I hear the south calling me

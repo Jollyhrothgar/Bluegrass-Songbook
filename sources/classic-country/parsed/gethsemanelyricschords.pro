@@ -1,6 +1,6 @@
 {meta: title Gethsemane}
 {meta: artist Carl Smith}
-{meta: writer Billy Smith and W.B. Waldrop}
+{meta: composer Billy Smith and W.B. Waldrop}
 
 {start_of_verse: Verse 1}
 [C]On a hillside so lonely knelt [F]Jesus one [C]day

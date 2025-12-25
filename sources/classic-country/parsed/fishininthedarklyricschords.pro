@@ -1,6 +1,6 @@
 {meta: title Fishin' In The Dark}
 {meta: artist Garth Brooks}
-{meta: writer Wendy Waldman and Jim Photoglo}
+{meta: composer Wendy Waldman and Jim Photoglo}
 
 {start_of_verse: Verse 1}
 [C]Lazy yellow moon coming up tonight 

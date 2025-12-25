@@ -1,6 +1,6 @@
 {meta: title 30,000 Feet}
 {meta: artist John Anderson}
-{meta: writer Troy Seals and John Anderson}
+{meta: composer Troy Seals and John Anderson}
 
 {start_of_verse: Verse 1}
 [G]From 30,000 feet you can’t tell the difference [C]between a doe and a [G]buck

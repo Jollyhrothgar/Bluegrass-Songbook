@@ -1,6 +1,6 @@
 {meta: title Sweeter And Sweeter}
 {meta: artist Statler Brothers}
-{meta: writer Donald S. Reid and Harold W. Reid}
+{meta: composer Donald S. Reid and Harold W. Reid}
 
 {start_of_verse: Verse 1}
 [C]Sweeter and sweeter the [F]days going [C]by

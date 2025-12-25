@@ -1,6 +1,6 @@
 {meta: title Gypsy Feet}
 {meta: artist Jim Reeves}
-{meta: writer Nellie Smith and Leona Butrum}
+{meta: composer Nellie Smith and Leona Butrum}
 
 {start_of_verse: Verse 1}
 [C]Gypsy feet will wander gypsy feet will [G7]stray

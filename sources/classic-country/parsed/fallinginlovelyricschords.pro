@@ -1,6 +1,6 @@
 {meta: title Falling In Love}
 {meta: artist Don Williams}
-{meta: writer Bob McDill and Wayland Holyfield}
+{meta: composer Bob McDill and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 Falling In Love

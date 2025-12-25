@@ -1,6 +1,6 @@
 {meta: title With You By My Side}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Max Powell}
+{meta: composer Wayne P. Walker and Max Powell}
 
 {start_of_verse: Verse 1}
 [D7](With you by my [G]side)

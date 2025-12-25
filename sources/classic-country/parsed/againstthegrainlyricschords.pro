@@ -1,6 +1,6 @@
 {meta: title Against The Grain}
 {meta: artist Garth Brooks}
-{meta: writer Larry Cordle, Bruce Bouton, Carl Jackson}
+{meta: composer Larry Cordle, Bruce Bouton, Carl Jackson}
 
 {start_of_verse: Verse 1}
 [C]Folks call me a maverick guess I ain't too diplomatic

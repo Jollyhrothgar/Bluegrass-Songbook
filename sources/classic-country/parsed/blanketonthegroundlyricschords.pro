@@ -1,6 +1,6 @@
 {meta: title Blanket on the Ground}
 {meta: artist Tammy Wynette}
-{meta: writer Roger Bowling}
+{meta: composer Roger Bowling}
 
 {start_of_verse: Verse 1}
 [G]Come and look out through the window

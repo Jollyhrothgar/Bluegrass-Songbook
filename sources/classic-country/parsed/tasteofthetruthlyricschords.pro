@@ -1,6 +1,6 @@
 {meta: title Taste Of The Truth}
 {meta: artist Gene Watson}
-{meta: writer Rebecca Lynn Howard}
+{meta: composer Rebecca Lynn Howard}
 
 {start_of_verse: Verse 1}
 [G]You gave me what I was hungry for

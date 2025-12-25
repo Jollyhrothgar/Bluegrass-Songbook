@@ -1,6 +1,6 @@
 {meta: title Down Home}
 {meta: artist Alabama}
-{meta: writer Rick Bowles and Josh Leo}
+{meta: composer Rick Bowles and Josh Leo}
 
 {start_of_verse: Verse 1}
 [G]Just off of the beaten [D7]path

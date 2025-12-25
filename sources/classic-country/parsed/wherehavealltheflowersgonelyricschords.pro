@@ -1,6 +1,6 @@
 {meta: title Where Have All The Flowers Gone}
 {meta: artist Eddy Arnold}
-{meta: writer Pete Seeger}
+{meta: composer Pete Seeger}
 
 {start_of_verse: Verse 1}
 [G]Where have all the [Em]flowers gone

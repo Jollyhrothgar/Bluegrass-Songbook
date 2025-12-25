@@ -1,6 +1,6 @@
 {meta: title This Cold War with You}
 {meta: artist Ray Price}
-{meta: writer Floyd Tillman}
+{meta: composer Floyd Tillman}
 
 {start_of_verse: Verse 1}
 [C]The sun goes down [F]and leaves me sad and [C]blue

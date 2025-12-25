@@ -1,6 +1,6 @@
 {meta: title I Think I’ve Got A Love On For You}
 {meta: artist Moe Bandy}
-{meta: writer Dallas Frazier and Larry Lee}
+{meta: composer Dallas Frazier and Larry Lee}
 
 {start_of_verse: Verse 1}
 [G]What in this world has come and [D7]slipped up on me

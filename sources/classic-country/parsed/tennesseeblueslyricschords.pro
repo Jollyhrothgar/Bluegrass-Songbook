@@ -1,6 +1,6 @@
 {meta: title Tennessee Blues}
 {meta: artist J.D. Crowe}
-{meta: writer Bobby Charles}
+{meta: composer Bobby Charles}
 
 {start_of_verse: Verse 1}
 [G]If I had my way I'd [C]leave here to[G]day 

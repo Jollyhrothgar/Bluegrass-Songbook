@@ -1,6 +1,6 @@
 {meta: title Keep Your Distance}
 {meta: artist Patty Loveless}
-{meta: writer Richard Thompson}
+{meta: composer Richard Thompson}
 
 {start_of_verse: Verse 1}
 [G]Oh if I cross your path again

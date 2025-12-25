@@ -1,6 +1,6 @@
 {meta: title Mary Claire Melvina Rebecca Jane}
 {meta: artist Eddy Arnold}
-{meta: writer Martha White and Sarah Nix}
+{meta: composer Martha White and Sarah Nix}
 
 {start_of_verse: Verse 1}
 [C](Her name is Mary [G]Claire Melvina [D7]Rebecca [G]Jane)

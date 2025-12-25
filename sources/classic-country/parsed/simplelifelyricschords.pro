@@ -1,6 +1,6 @@
 {meta: title Simple Life}
 {meta: artist Ricky Skaggs}
-{meta: writer Mac McAnally}
+{meta: composer Mac McAnally}
 
 {start_of_verse: Verse 1}
 [C]I live a simple [G7]life

@@ -1,6 +1,6 @@
 {meta: title Every Which Way But Loose}
 {meta: artist Eddie Rabbitt}
-{meta: writer Snuff Garrett, Stephen Dorff, Milton Brown}
+{meta: composer Snuff Garrett, Stephen Dorff, Milton Brown}
 
 {start_of_verse: Verse 1}
 [C]I’ve always been the kind of man

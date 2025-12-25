@@ -1,6 +1,6 @@
 {meta: title Fly Into Love}
 {meta: artist Charly McClain}
-{meta: writer Lewis Anderson and Mark Wright}
+{meta: composer Lewis Anderson and Mark Wright}
 
 {start_of_verse: Verse 1}
 [C]Way down in [Am]Sad Town in the [F]valley of broken [C]dreams 

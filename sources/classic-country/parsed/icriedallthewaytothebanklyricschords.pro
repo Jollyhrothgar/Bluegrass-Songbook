@@ -1,6 +1,6 @@
 {meta: title I Cried All The Way To The Bank}
 {meta: artist Norma Jean}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]Our divorce has been granted there's no [G7]more you and me

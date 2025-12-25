@@ -1,6 +1,6 @@
 {meta: title Here I Am (Alone Again)}
 {meta: artist Billy Walker}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]The first time that you went away [F]without saying why

@@ -1,6 +1,6 @@
 {meta: title Love Is The Look You're Looking For Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Rose Lee Mathis}
+{meta: composer Rose Lee Mathis}
 
 {start_of_verse: Verse 1}
 [D7]Love puts the blush in your [G]smile

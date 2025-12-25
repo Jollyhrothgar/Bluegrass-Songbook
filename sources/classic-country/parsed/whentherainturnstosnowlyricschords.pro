@@ -1,6 +1,6 @@
 {meta: title When The Rain Turns To Snow}
 {meta: artist Lee Greenwood}
-{meta: writer Ed Penney and Steve Chappell}
+{meta: composer Ed Penney and Steve Chappell}
 
 {start_of_verse: Verse 1}
 [G]Looking out the [Am]window

@@ -1,6 +1,6 @@
 {meta: title I Never Will Marry}
 {meta: artist Hank Snow}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]One morning as I [G7]rambled down by [C]the [F]seashore

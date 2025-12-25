@@ -1,6 +1,6 @@
 {meta: title Heart In Hand}
 {meta: artist Brenda Lee}
-{meta: writer Jackie DeShannon and Sharon Sheeley}
+{meta: composer Jackie DeShannon and Sharon Sheeley}
 
 {start_of_verse: Verse 1}
 [G7]Here [C]I [Dm][Am]stand----------heart [C][G7]in [Dm][Am]hand

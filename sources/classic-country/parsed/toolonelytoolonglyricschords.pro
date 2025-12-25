@@ -1,6 +1,6 @@
 {meta: title Too Lonely Too Long}
 {meta: artist Mel Tillis}
-{meta: writer Jim Owens}
+{meta: composer Jim Owens}
 
 {start_of_verse: Verse 1}
 [C]Go on look down your [F]righteous nose at me

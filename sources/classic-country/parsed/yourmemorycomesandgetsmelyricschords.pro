@@ -1,6 +1,6 @@
 {meta: title Your Memory Comes And Gets Me}
 {meta: artist Wanda Jackson}
-{meta: writer Billy Graham and Tommy Jackson}
+{meta: composer Billy Graham and Tommy Jackson}
 
 {start_of_verse: Verse 1}
 [G]You've got power over me that [C]I just can't under[G]stand

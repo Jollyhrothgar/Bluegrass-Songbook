@@ -1,6 +1,6 @@
 {meta: title Christmas Everyday}
 {meta: artist Kenny Rogers}
-{meta: writer Pete McCann}
+{meta: composer Pete McCann}
 
 {start_of_verse: Verse 1}
 [C]He was born so far [F]away  so [G7]the story’s [C]told

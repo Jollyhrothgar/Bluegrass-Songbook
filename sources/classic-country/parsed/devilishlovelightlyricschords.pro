@@ -1,6 +1,6 @@
 {meta: title Devilish Love Light}
 {meta: artist Johnny Horton}
-{meta: writer Fabor Robison and Johnny Horton}
+{meta: composer Fabor Robison and Johnny Horton}
 
 {start_of_verse: Verse 1}
 [C]I like that devilish [G7]moonlight in my [C]darlin’s eyes

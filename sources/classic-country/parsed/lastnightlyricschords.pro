@@ -1,6 +1,6 @@
 {meta: title Last Night}
 {meta: artist Webb Pierce}
-{meta: writer Warner H. McPherson and Michael Webb Pierce}
+{meta: composer Warner H. McPherson and Michael Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]Last night (last night) I stepped out (stepped [C]out)

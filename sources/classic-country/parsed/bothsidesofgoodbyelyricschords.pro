@@ -1,6 +1,6 @@
 {meta: title Both Sides of Goodbye}
 {meta: artist Ray Price}
-{meta: writer Kim Williams and Jackson Leap}
+{meta: composer Kim Williams and Jackson Leap}
 
 {start_of_verse: Verse 1}
 [C]When you pack your clothes tonight  don't pack up all the [F]blame

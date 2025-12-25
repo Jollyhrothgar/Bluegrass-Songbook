@@ -1,6 +1,6 @@
 {meta: title Louisville}
 {meta: artist Leroy Van Dyke}
-{meta: writer Chuck Rogers}
+{meta: composer Chuck Rogers}
 
 {start_of_verse: Verse 1}
 [C]My car broke [G7]down in [C]Georgia hard luck's followin' me

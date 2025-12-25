@@ -1,6 +1,6 @@
 {meta: title Mean Little Mama}
 {meta: artist Roy Orbison}
-{meta: writer Sam Phillips}
+{meta: composer Sam Phillips}
 
 {start_of_verse: Verse 1}
 [G7]Well why do you treat me so [C]mean

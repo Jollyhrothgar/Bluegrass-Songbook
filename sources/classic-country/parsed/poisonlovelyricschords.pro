@@ -1,6 +1,6 @@
 {meta: title Poison Love}
 {meta: artist Mel Tillis}
-{meta: writer Elmer Laird}
+{meta: composer Elmer Laird}
 
 {start_of_verse: Verse 1}
 [C]All your poison love has stained 

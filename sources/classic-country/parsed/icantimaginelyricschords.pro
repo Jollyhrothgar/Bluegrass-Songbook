@@ -1,6 +1,6 @@
 {meta: title I Can't Imagine}
 {meta: artist Jean Shepard}
-{meta: writer Dewayne Orender and Rose Young}
+{meta: composer Dewayne Orender and Rose Young}
 
 {start_of_verse: Verse 1}
 [C]Saw you out last night [G7]with a [C]stranger

@@ -1,6 +1,6 @@
 {meta: title (I Still Long To Hold You) Now And Then}
 {meta: artist Reba McEntire}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [G]I see you now[Am]  I think of then

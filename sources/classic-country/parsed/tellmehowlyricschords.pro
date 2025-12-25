@@ -1,6 +1,6 @@
 {meta: title Tell Me How}
 {meta: artist Buddy Holly}
-{meta: writer Jerry Allison, Norman Petty, Buddy Charles Holly}
+{meta: composer Jerry Allison, Norman Petty, Buddy Charles Holly}
 
 {start_of_verse: Verse 1}
 [G]Tell me how to keep your [D7]love

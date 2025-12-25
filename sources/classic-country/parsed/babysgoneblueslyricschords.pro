@@ -1,6 +1,6 @@
 {meta: title Baby's Gone Blues}
 {meta: artist Reba McEntire}
-{meta: writer Mary Ann Kennedy, Pat Bunch, Pam Rose}
+{meta: composer Mary Ann Kennedy, Pat Bunch, Pam Rose}
 
 {start_of_verse: Verse 1}
 [G]I feel the blues coming on  cause [C]I feel you being [G]gone

@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Love Her On The Radio}
 {meta: artist Charlie Pride}
-{meta: writer Howard Thomas Brasfield and Lyman C. McAnally}
+{meta: composer Howard Thomas Brasfield and Lyman C. McAnally}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna love her on the radio

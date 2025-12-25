@@ -1,6 +1,6 @@
 {meta: title Sweet Mama Good Times}
 {meta: artist Mickey Gilley}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]Sweet Mama Good Times [C]Mama let the good times [G]roll

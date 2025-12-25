@@ -1,6 +1,6 @@
 {meta: title Camping In Canaan’s Land}
 {meta: artist Slim Whitman}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [G]I have left the land of bondage [C]with its earthly treasures

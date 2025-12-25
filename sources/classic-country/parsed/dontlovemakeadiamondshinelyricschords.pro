@@ -1,6 +1,6 @@
 {meta: title Don't Love Make A Diamond Shine}
 {meta: artist Tracy Byrd}
-{meta: writer Craig Wiseman and Mike Dekle}
+{meta: composer Craig Wiseman and Mike Dekle}
 
 {start_of_verse: Verse 1}
 [C]Tommy and Janey barely eighteen 

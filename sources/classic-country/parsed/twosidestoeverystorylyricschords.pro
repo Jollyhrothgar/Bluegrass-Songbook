@@ -1,6 +1,6 @@
 {meta: title Two Sides To Every Story}
 {meta: artist Willie Nelson}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]There must be two [D7]sides to every [G]story [G7]

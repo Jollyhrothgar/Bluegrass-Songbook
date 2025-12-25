@@ -1,6 +1,6 @@
 {meta: title Nickels And Dimes And Love}
 {meta: artist Vern Gosdin}
-{meta: writer Johnny McRae and Steve Clark}
+{meta: composer Johnny McRae and Steve Clark}
 
 {start_of_verse: Verse 1}
 [C]Remember when pocket change was all we [F]had

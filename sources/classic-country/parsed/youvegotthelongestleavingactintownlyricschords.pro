@@ -1,6 +1,6 @@
 {meta: title You've Got The Longest Leaving Act In Town}
 {meta: artist John Anderson}
-{meta: writer Dave Kirby and Sonny Throckmorton}
+{meta: composer Dave Kirby and Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]Wasn't that you packing your things 

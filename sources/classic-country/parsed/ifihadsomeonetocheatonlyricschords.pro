@@ -1,6 +1,6 @@
 {meta: title If I Had Someone To Cheat On}
 {meta: artist Moe Bandy}
-{meta: writer J.R. Cochran}
+{meta: composer J.R. Cochran}
 
 {start_of_verse: Verse 1}
 [G]I'm not here just drinking someone's [D7]memory away

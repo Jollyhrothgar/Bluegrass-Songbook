@@ -1,6 +1,6 @@
 {meta: title Who Will It Be}
 {meta: artist Hank Locklin}
-{meta: writer W.S. Stevenson}
+{meta: composer W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [G]There’s two hearts breakin’ in her life

@@ -1,6 +1,6 @@
 {meta: title Life Gets Away}
 {meta: artist Clint Black}
-{meta: writer Clint Black, Hayden Nicholas, Thom Schuyler}
+{meta: composer Clint Black, Hayden Nicholas, Thom Schuyler}
 
 {start_of_verse: Verse 1}
 [G]We're [F]tied to our [C]memories they [G]won't let us stray

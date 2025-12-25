@@ -1,6 +1,6 @@
 {meta: title Always Remember}
 {meta: artist Bill Anderson}
-{meta: writer Jerry Bradley and Patsy Lawley}
+{meta: composer Jerry Bradley and Patsy Lawley}
 
 {start_of_verse: Verse 1}
 [C]Always remember [F]I [Am]love [Dm]you

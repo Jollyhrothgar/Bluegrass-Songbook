@@ -1,6 +1,6 @@
 {meta: title Curtain Of Tears}
 {meta: artist Slim Whitman}
-{meta: writer Cecil Harris and Arlie Carter}
+{meta: composer Cecil Harris and Arlie Carter}
 
 {start_of_verse: Verse 1}
 [C]I wondered through acres of flowers

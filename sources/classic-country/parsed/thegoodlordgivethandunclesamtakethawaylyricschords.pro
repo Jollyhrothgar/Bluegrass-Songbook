@@ -1,6 +1,6 @@
 {meta: title The Good Lord Giveth (And Uncle Sam Taketh Away)}
 {meta: artist Webb Pierce}
-{meta: writer Sylvia Fisher and Michael Webb Pierce}
+{meta: composer Sylvia Fisher and Michael Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]Well the good Lord giveth and Uncle Sam taketh away

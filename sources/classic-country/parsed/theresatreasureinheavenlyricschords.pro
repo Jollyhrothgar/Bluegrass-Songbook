@@ -1,6 +1,6 @@
 {meta: title There's A Treasure In Heaven}
 {meta: artist Doyle Lawson}
-{meta: writer Jerry Salley and Leroy Anderson}
+{meta: composer Jerry Salley and Leroy Anderson}
 
 {start_of_verse: Verse 1}
 [G]There's a treasure in heaven [C]faithfully kept in God's [G]care

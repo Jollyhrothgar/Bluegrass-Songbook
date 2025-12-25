@@ -1,6 +1,6 @@
 {meta: title So Glad You're Mine}
 {meta: artist Elvis Presley}
-{meta: writer Arthur Crudup}
+{meta: composer Arthur Crudup}
 
 {start_of_verse: Verse 1}
 [C]My baby's long and tall 

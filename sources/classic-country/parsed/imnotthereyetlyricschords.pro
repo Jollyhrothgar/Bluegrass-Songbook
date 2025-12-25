@@ -1,6 +1,6 @@
 {meta: title I'm Not There Yet}
 {meta: artist The Lonesome River Band}
-{meta: writer Brandon Rickman and Kevin Denney}
+{meta: composer Brandon Rickman and Kevin Denney}
 
 {start_of_verse: Verse 1}
 [C]When I woke up this morning [F]you were the first thing on my [C]mind

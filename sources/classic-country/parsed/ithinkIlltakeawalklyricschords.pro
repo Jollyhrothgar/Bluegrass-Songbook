@@ -1,6 +1,6 @@
 {meta: title I Think I'll Take A Walk}
 {meta: artist Charley Pride}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]I think I'll take a boat and sail the [F]ocean

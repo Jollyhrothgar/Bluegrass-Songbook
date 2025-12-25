@@ -1,6 +1,6 @@
 {meta: title This Song Is For You}
 {meta: artist Merle Haggard}
-{meta: writer Freddy Powers and Mary Powers}
+{meta: composer Freddy Powers and Mary Powers}
 
 {start_of_verse: Verse 1}
 [C]This song is for you  you know who you are

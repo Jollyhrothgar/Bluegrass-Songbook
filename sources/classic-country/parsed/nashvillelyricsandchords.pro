@@ -1,6 +1,6 @@
 {meta: title Nashville}
 {meta: artist David Houston}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]In the year of forty-[G7]three momma [C]finished feedin' [F]me

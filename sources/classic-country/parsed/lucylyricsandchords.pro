@@ -1,6 +1,6 @@
 {meta: title Lucy}
 {meta: artist Johnny Duncan}
-{meta: writer Alex Harvey}
+{meta: composer Alex Harvey}
 
 {start_of_verse: Verse 1}
 [C]Lucy if [F]you should wake up [G7]in the [C]night

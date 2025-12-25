@@ -1,6 +1,6 @@
 {meta: title Because I Love You}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]Nights have a way of getting [F]lone[C]some

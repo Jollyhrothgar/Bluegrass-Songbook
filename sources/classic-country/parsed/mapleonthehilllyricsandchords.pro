@@ -1,6 +1,6 @@
 {meta: title Maple on the Hill}
 {meta: artist Hank Locklin}
-{meta: writer Addison Cole}
+{meta: composer Addison Cole}
 
 {start_of_verse: Verse 1}
 [G]Here upon the quiet country village stood the [C]maple on the [G]hill

@@ -1,6 +1,6 @@
 {meta: title To Know Him Is To Love Him}
 {meta: artist Emmylou Harris}
-{meta: writer Phil Spector}
+{meta: composer Phil Spector}
 
 {start_of_verse: Verse 1}
 [C]To know know know him

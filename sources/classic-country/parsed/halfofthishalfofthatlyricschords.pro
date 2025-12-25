@@ -1,6 +1,6 @@
 {meta: title Half Of This Half Of That}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart and Don Sessions}
+{meta: composer Wynn Stewart and Don Sessions}
 
 {start_of_verse: Verse 1}
 [C]Don't leave me half of [G]this and [D7]half of that and all [G]alone

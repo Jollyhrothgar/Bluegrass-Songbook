@@ -1,6 +1,6 @@
 {meta: title You Can Lead A Heart To Love}
 {meta: artist Tammy Wynette}
-{meta: writer Joe Chambers, Larry Jenkins, Mike Jenkins}
+{meta: composer Joe Chambers, Larry Jenkins, Mike Jenkins}
 
 {start_of_verse: Verse 1}
 [G]It was [C]love at first sight when I [G]looked into his eyes

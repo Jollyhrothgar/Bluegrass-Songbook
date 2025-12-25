@@ -1,6 +1,6 @@
 {meta: title All I Need Is You}
 {meta: artist Dolly Parton}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [C]Find the loneliest [F]girl in a [C]thousand

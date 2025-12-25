@@ -1,6 +1,6 @@
 {meta: title Cowboys Ain’t Suppose To Cry}
 {meta: artist Moe Bandy}
-{meta: writer Arthur Leo Owens}
+{meta: composer Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]Oh I'm just a [F]cowboy on my way back to [C]Houston

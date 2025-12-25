@@ -1,6 +1,6 @@
 {meta: title Man Man Mr. Sandman}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart and Hal Bynum}
+{meta: composer Wynn Stewart and Hal Bynum}
 
 {start_of_verse: Verse 1}
 [G]Man man Mr. [C]Sandman 

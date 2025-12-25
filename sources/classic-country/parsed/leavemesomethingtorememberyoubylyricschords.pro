@@ -1,6 +1,6 @@
 {meta: title Leave Me Something To Remember You By}
 {meta: artist Buck Owens}
-{meta: writer Don Rich and Buck Owens}
+{meta: composer Don Rich and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]Leave me a lock [C]of your golden hair

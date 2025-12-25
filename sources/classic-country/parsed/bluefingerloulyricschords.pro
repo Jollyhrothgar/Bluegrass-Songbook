@@ -1,6 +1,6 @@
 {meta: title Blue Finger Lou}
 {meta: artist Anne Murray}
-{meta: writer Alan O'Day}
+{meta: composer Alan O'Day}
 
 {start_of_verse: Verse 1}
 [G]When I heard you playing now you stole my heart away

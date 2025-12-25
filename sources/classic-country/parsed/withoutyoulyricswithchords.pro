@@ -1,6 +1,6 @@
 {meta: title Without You}
 {meta: artist Tony Booth}
-{meta: writer Buck Owens and Gene Price}
+{meta: composer Buck Owens and Gene Price}
 
 {start_of_verse: Verse 1}
 [C]When the dawn brings [F]another day 

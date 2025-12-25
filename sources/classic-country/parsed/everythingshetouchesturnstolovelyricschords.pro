@@ -1,6 +1,6 @@
 {meta: title Everything She Touches Turns To Love}
 {meta: artist Charley Pride}
-{meta: writer Shirley Worth}
+{meta: composer Shirley Worth}
 
 {start_of_verse: Verse 1}
 [G]She creates vibrations of [C]love I can't [G]explain

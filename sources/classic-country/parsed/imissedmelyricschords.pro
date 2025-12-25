@@ -1,6 +1,6 @@
 {meta: title I Missed Me}
 {meta: artist Jim Reeves}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]Last night was the worst night of my life no [D7]doubt

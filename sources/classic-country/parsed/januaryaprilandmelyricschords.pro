@@ -1,6 +1,6 @@
 {meta: title January April And Me}
 {meta: artist Curtis Potter}
-{meta: writer Billy Mize}
+{meta: composer Billy Mize}
 
 {start_of_verse: Verse 1}
 [C]In the nineteen-fifty-seven blue and green two door [G7]sedan

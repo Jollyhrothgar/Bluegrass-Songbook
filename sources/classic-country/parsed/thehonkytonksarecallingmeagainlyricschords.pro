@@ -1,6 +1,6 @@
 {meta: title The Honky Tonks Are Calling Me Again}
 {meta: artist Billy Walker}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [G]Checkered table cloths homemade ashtrays and neon [C]lights

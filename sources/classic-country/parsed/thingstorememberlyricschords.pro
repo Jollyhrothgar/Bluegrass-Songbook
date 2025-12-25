@@ -1,6 +1,6 @@
 {meta: title Things To Remember Lyrics and chords}
 {meta: artist Faron Young}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]I've cried so much lately that I've made out a [G7]list

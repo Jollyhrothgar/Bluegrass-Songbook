@@ -1,6 +1,6 @@
 {meta: title All By Myself}
 {meta: artist Hank Williams Jr.}
-{meta: writer Eric Carmen}
+{meta: composer Eric Carmen}
 
 {start_of_verse: Verse 1}
 [C]When I was young I never needed anyone

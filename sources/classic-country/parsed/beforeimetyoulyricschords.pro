@@ -1,6 +1,6 @@
 {meta: title Before I Met You}
 {meta: artist Reba McEntire}
-{meta: writer Charles Seitz, Joe Lewis, Elmar Rader}
+{meta: composer Charles Seitz, Joe Lewis, Elmar Rader}
 
 {start_of_verse: Verse 1}
 [C]Well I thought I had seen good looking men [F]in my [C]time

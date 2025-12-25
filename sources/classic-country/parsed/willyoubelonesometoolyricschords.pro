@@ -1,6 +1,6 @@
 {meta: title Will You Be Lonesome Too}
 {meta: artist J.D. Crowe}
-{meta: writer Alton Delmore}
+{meta: composer Alton Delmore}
 
 {start_of_verse: Verse 1}
 [G]How would you like be lonesome 

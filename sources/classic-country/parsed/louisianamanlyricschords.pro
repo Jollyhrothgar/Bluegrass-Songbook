@@ -1,6 +1,6 @@
 {meta: title Louisiana Man}
 {meta: artist Buck Owens}
-{meta: writer Doug Kershaw}
+{meta: composer Doug Kershaw}
 
 {start_of_verse: Verse 1}
 [C]At first mom and papa called little boy Ned

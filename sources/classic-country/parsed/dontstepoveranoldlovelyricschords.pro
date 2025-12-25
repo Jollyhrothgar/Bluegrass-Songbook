@@ -1,6 +1,6 @@
 {meta: title Don't Step Over An Old Love}
 {meta: artist Stanley Brothers}
-{meta: writer Fred Stryker}
+{meta: composer Fred Stryker}
 
 {start_of_verse: Verse 1}
 [C]All the things that we have done [G7]together

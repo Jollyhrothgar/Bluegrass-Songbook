@@ -1,6 +1,6 @@
 {meta: title Is This Desire}
 {meta: artist Billy Walker}
-{meta: writer Kay Arnold}
+{meta: composer Kay Arnold}
 
 {start_of_verse: Verse 1}
 [G]Is this desire that [Am]starts me [D7]trembling

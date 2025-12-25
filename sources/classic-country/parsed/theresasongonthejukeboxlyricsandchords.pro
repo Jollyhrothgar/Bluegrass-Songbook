@@ -1,6 +1,6 @@
 {meta: title There's A Song On The Jukebox}
 {meta: artist Mickey Gilley}
-{meta: writer Billy Sherrill and Carmol Taylor}
+{meta: composer Billy Sherrill and Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [G]I want a drink and here's a twenty and [C]bring my change in dimes 

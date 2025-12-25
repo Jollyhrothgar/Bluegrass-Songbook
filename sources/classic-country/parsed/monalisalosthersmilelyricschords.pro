@@ -1,6 +1,6 @@
 {meta: title Mona Lisa Lost Her Smile}
 {meta: artist David Allan Coe}
-{meta: writer Johnny Cunningham}
+{meta: composer Johnny Cunningham}
 
 {start_of_verse: Verse 1}
 [G]Mona Lisa lost her [Am]smile

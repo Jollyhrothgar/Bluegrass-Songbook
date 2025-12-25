@@ -1,6 +1,6 @@
 {meta: title You Don't Have Very Far To Go}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Red Simpson}
+{meta: composer Merle Haggard and Red Simpson}
 
 {start_of_verse: Verse 1}
 [G]You always find a way to hurt my [C]pride

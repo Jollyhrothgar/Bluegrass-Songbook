@@ -1,6 +1,6 @@
 {meta: title Take Me to Your World}
 {meta: artist Tammy Wynette}
-{meta: writer Glenn Sutton and Billy Sherrill}
+{meta: composer Glenn Sutton and Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [C]If you can find it in your heart  to just [G7]forgive

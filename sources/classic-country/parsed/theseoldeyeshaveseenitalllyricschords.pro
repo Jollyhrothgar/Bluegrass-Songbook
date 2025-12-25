@@ -1,6 +1,6 @@
 {meta: title These Old Eyes Have Seen It All}
 {meta: artist George Jones}
-{meta: writer Curly Putman and Bucky Jones}
+{meta: composer Curly Putman and Bucky Jones}
 
 {start_of_verse: Verse 1}
 [C]The old mans hair was white and his eyes looked tired

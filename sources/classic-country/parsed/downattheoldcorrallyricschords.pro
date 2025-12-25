@@ -1,6 +1,6 @@
 {meta: title Down At The Old Corral}
 {meta: artist Randy Travis}
-{meta: writer Roger Brown and Luke Reed}
+{meta: composer Roger Brown and Luke Reed}
 
 {start_of_verse: Verse 1}
 [G7]It [C]seems no matter how far I may [D7]roam

@@ -1,6 +1,6 @@
 {meta: title Aura Lee}
 {meta: artist Jimmy Dean}
-{meta: writer George Poulton and W.W. Fosdick}
+{meta: composer George Poulton and W.W. Fosdick}
 
 {start_of_verse: Verse 1}
 [C](Aura Lee [Em]Aura Lee maid of [Fm]golden [C]hair

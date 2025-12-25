@@ -1,6 +1,6 @@
 {meta: title You Don’t Know How Lucky You Are}
 {meta: artist Rhonda Vincent}
-{meta: writer Carl Jackson and David Wills}
+{meta: composer Carl Jackson and David Wills}
 
 {start_of_verse: Verse 1}
 [C]Most people use [C7]money to [F]measure success

@@ -1,6 +1,6 @@
 {meta: title I Think of You}
 {meta: artist Webb Pierce}
-{meta: writer and recorded by Webb Pierce}
+{meta: composer and recorded by Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]I think of you  more than [C7]you think I [F]do

@@ -1,6 +1,6 @@
 {meta: title If You Don't Want Me To (The Freeze)}
 {meta: artist Ronnie Milsap}
-{meta: writer Jimmie Lee Sloas and Robert White Johnson}
+{meta: composer Jimmie Lee Sloas and Robert White Johnson}
 
 {start_of_verse: Verse 1}
 [G]Don't tempt me with your [Em]eyes or fill my heart with [C]lies

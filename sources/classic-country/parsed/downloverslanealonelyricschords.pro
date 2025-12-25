@@ -1,6 +1,6 @@
 {meta: title Down Lovers Lane Alone}
 {meta: artist Faron Young}
-{meta: writer Faron Young and Chuck Woods}
+{meta: composer Faron Young and Chuck Woods}
 
 {start_of_verse: Verse 1}
 [C]I seem to see a shadow of heartaches and [G7]despair

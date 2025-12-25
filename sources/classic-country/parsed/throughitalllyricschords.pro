@@ -1,6 +1,6 @@
 {meta: title Through It All}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Andrae Crouch}
+{meta: composer Andrae Crouch}
 
 {start_of_verse: Verse 1}
 [G]I’ve had many tears and sorrows

@@ -1,6 +1,6 @@
 {meta: title Wolf Call}
 {meta: artist Elvis Presley}
-{meta: writer Bill Giant, Bernie Baum, Florenece Kaye}
+{meta: composer Bill Giant, Bernie Baum, Florenece Kaye}
 
 {start_of_verse: Verse 1}
 [C]Flip flop with kay-eye what a cutie pie I see

@@ -1,6 +1,6 @@
 {meta: title In Pictures}
 {meta: artist Alabama}
-{meta: writer Bobby Boyd and Joe Doyle}
+{meta: composer Bobby Boyd and Joe Doyle}
 
 {start_of_verse: Verse 1}
 [F]I've got her photograph [C]on a stand by my [F]bed

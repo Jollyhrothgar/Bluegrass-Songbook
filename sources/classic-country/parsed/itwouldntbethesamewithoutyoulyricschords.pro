@@ -1,6 +1,6 @@
 {meta: title It Wouldn’t Be the Same Without You}
 {meta: artist Ray Price}
-{meta: writer Fred Rose and Jimmy Wakely}
+{meta: composer Fred Rose and Jimmy Wakely}
 
 {start_of_verse: Verse 1}
 [C]I could wander the [A7]by-ways that [D7]we wander too

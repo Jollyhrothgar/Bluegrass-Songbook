@@ -1,6 +1,6 @@
 {meta: title Two Step Around The Christmas Tree}
 {meta: artist Michael Martin Murphey}
-{meta: writer Suzy Bogguss and Doug Crider}
+{meta: composer Suzy Bogguss and Doug Crider}
 
 {start_of_verse: Verse 1}
 [C]There's a wondrous sight and a joyful sound

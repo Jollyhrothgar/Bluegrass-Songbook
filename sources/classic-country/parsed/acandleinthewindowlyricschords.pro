@@ -1,6 +1,6 @@
 {meta: title A Candle In The Window}
 {meta: artist Alabama}
-{meta: writer Gary Baker, Susan Longacre, Walt Aldridge}
+{meta: composer Gary Baker, Susan Longacre, Walt Aldridge}
 
 {start_of_verse: Verse 1}
 [C]There's a road that I remember [F]leading to a special [C]place

@@ -1,6 +1,6 @@
 {meta: title The Visit}
 {meta: artist George Jones}
-{meta: writer Gene Ellsworth, Brad Rodgers, Charles Stefl}
+{meta: composer Gene Ellsworth, Brad Rodgers, Charles Stefl}
 
 {start_of_verse: Verse 1}
 [C]Sorry I'm so late but I've been out [F]a-walking

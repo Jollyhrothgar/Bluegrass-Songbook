@@ -1,6 +1,6 @@
 {meta: title Good Ones And Bad Ones}
 {meta: artist George Jones}
-{meta: writer Joe Chambers and Larry Jenkins}
+{meta: composer Joe Chambers and Larry Jenkins}
 
 {start_of_verse: Verse 1}
 [C]Some come from heaven and some crawl from hell

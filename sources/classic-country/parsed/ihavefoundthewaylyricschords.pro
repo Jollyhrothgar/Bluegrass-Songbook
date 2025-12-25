@@ -1,6 +1,6 @@
 {meta: title I Have Found the Way}
 {meta: artist Doyle Lawson}
-{meta: writer Adgar M Pace and L.A. Green}
+{meta: composer Adgar M Pace and L.A. Green}
 
 {start_of_verse: Verse 1}
 [G]I have found the way that [C]leads to endless [G]day

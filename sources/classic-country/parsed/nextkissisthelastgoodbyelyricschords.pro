@@ -1,6 +1,6 @@
 {meta: title Next Kiss Is The Last Goodbye}
 {meta: artist Conway Twitty}
-{meta: writer Buddy Kaye, David Hill, Ethel Lee}
+{meta: composer Buddy Kaye, David Hill, Ethel Lee}
 
 {start_of_verse: Verse 1}
 [G]Time to say goodbye I know I've said it bef[Em]ore

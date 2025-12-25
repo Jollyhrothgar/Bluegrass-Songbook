@@ -1,6 +1,6 @@
 {meta: title One Night With You}
 {meta: artist Elvis Presley}
-{meta: writer Dave Bartholomew, Pearl King, Anita Steiman}
+{meta: composer Dave Bartholomew, Pearl King, Anita Steiman}
 
 {start_of_verse: Verse 1}
 [G7]One night with [C]you

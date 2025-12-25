@@ -1,6 +1,6 @@
 {meta: title If I Only Knew}
 {meta: artist Bobby Helms}
-{meta: writer Bob Saffer}
+{meta: composer Bob Saffer}
 
 {start_of_verse: Verse 1}
 [G]If I [D7]only knew [G]how much I'd [C]miss you 

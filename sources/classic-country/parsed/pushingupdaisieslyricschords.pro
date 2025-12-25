@@ -1,6 +1,6 @@
 {meta: title Pushing Up Daisies}
 {meta: artist Garth Brooks}
-{meta: writer John Hadley, Kevin Welch, Gary Scruggs}
+{meta: composer John Hadley, Kevin Welch, Gary Scruggs}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I tell you the [F]way that I [C]feel

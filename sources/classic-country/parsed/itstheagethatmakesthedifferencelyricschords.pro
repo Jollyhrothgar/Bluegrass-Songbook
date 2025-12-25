@@ -1,6 +1,6 @@
 {meta: title It's The Age That Makes The Difference}
 {meta: artist Ernest Tubb}
-{meta: writer George Sherry and Vernon Claude}
+{meta: composer George Sherry and Vernon Claude}
 
 {start_of_verse: Verse 1}
 [G]When I was just a little boy and [C]life was bright and [G]new

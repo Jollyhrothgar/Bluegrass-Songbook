@@ -1,6 +1,6 @@
 {meta: title Foolish Heart}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo and Evan York}
+{meta: composer Raul Malo and Evan York}
 
 {start_of_verse: Verse 1}
 [G7]Foo[F]lish [C]heart you made me [G7]weep

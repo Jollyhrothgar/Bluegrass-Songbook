@@ -1,6 +1,6 @@
 {meta: title I Couldn't Wait Forever}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton and Bill Owens}
+{meta: composer Dolly Parton and Bill Owens}
 
 {start_of_verse: Verse 1}
 [C]I couldn't wait forever did [F]you expect me to

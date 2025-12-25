@@ -1,6 +1,6 @@
 {meta: title Teach My Daddy How To Pray with chords}
 {meta: artist Ernest Tubb}
-{meta: writer Jim Owen and James Baker}
+{meta: composer Jim Owen and James Baker}
 
 {start_of_verse: Verse 1}
 [C]For a long [F]long time I thought of [C]leaving

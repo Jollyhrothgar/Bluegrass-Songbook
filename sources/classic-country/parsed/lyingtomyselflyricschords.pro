@@ -1,6 +1,6 @@
 {meta: title Lying To Myself}
 {meta: artist Doug Stone}
-{meta: writer Scott Shevel, Jimmy Devine,}
+{meta: composer Scott Shevel, Jimmy Devine,}
 
 {start_of_verse: Verse 1}
 [D7]Your [G]perfume is [Bm]on the [Am]pillow

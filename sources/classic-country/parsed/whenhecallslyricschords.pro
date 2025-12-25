@@ -1,6 +1,6 @@
 {meta: title When He Calls}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [C]When darkness fills the [F]valley 

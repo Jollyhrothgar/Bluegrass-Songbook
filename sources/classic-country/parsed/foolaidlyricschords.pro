@@ -1,6 +1,6 @@
 {meta: title Foolaid}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Cecil Harrelson and Carmon Holland}
+{meta: composer Cecil Harrelson and Carmon Holland}
 
 {start_of_verse: Verse 1}
 [G]If you've lost a love that you can't live [C]without it seems

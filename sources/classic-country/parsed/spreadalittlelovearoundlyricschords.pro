@@ -1,6 +1,6 @@
 {meta: title Spread A Little Love Around}
 {meta: artist Ricky Skaggs}
-{meta: writer Harley Lee Allen and John Wayne Wiggins}
+{meta: composer Harley Lee Allen and John Wayne Wiggins}
 
 {start_of_verse: Verse 1}
 [C]Sometimes this [F]crazy world can [G7]make us all feel [C]bad

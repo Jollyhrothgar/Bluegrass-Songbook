@@ -1,6 +1,6 @@
 {meta: title Someday}
 {meta: artist Alan Jackson}
-{meta: writer Jim McBride and Alan Jackson}
+{meta: composer Jim McBride and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]She looked me in the [G7]eye and said it's [F]over

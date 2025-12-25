@@ -1,6 +1,6 @@
 {meta: title Won't It Be Wonderful There}
 {meta: artist George Jones}
-{meta: writer James Rowe}
+{meta: composer James Rowe}
 
 {start_of_verse: Verse 1}
 [G]When with the Savior we enter [C]the glory [G]land

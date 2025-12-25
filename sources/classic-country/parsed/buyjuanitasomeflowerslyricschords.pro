@@ -1,6 +1,6 @@
 {meta: title Buy Juanita Some Flowers}
 {meta: artist Billy Walker}
-{meta: writer Steve Karliski}
+{meta: composer Steve Karliski}
 
 {start_of_verse: Verse 1}
 [C]My outfit was stationed near a small border [G7]town

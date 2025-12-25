@@ -1,6 +1,6 @@
 {meta: title Ain't Gonna Hobo No More}
 {meta: artist Johnny Cash}
-{meta: writer Don Devaney}
+{meta: composer Don Devaney}
 
 {start_of_verse: Verse 1}
 [G]Well here I am a hobo with my [D7]hobo's pots and [G]pans

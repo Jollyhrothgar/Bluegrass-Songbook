@@ -1,6 +1,6 @@
 {meta: title Harry And Joe}
 {meta: artist Don Williams}
-{meta: writer Len Handler and A.J. Gundell}
+{meta: composer Len Handler and A.J. Gundell}
 
 {start_of_verse: Verse 1}
 [C]Harry and [G7]Joe move [Am]south with their [C]wives

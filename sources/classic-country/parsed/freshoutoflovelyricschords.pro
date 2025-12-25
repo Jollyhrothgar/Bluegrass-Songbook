@@ -1,6 +1,6 @@
 {meta: title Fresh Out Of Love}
 {meta: artist Wynn Stewart}
-{meta: writer Bill Brown and Harry Cunningham}
+{meta: composer Bill Brown and Harry Cunningham}
 
 {start_of_verse: Verse 1}
 [C]Yes I can walk with you and even talk with [G7]you

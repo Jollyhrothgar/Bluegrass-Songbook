@@ -1,6 +1,6 @@
 {meta: title Don't Call Me From a Honky Tonk}
 {meta: artist Tony Booth}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]You call and say you're lonesome you [G7]want me back [C]again

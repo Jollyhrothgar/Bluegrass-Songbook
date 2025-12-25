@@ -1,6 +1,6 @@
 {meta: title Roll Along Kentucky Moon}
 {meta: artist JImmy Rodgers}
-{meta: writer Bill Halley}
+{meta: composer Bill Halley}
 
 {start_of_verse: Verse 1}
 [C]Where are you old moon of Ken[G7]tucky

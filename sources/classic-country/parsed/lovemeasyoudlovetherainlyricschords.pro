@@ -1,6 +1,6 @@
 {meta: title Love Me As You'd Love The Rain}
 {meta: artist Doyle Lawson}
-{meta: writer Leroy Maxey Drumm and Pete Goble}
+{meta: composer Leroy Maxey Drumm and Pete Goble}
 
 {start_of_verse: Verse 1}
 [G]If I have caused your [C]dreams to [G]die 

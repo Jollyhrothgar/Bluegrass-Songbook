@@ -1,6 +1,6 @@
 {meta: title Laura What's He Got That I Ain't Got}
 {meta: artist Kenny Rogers}
-{meta: writer Leon Ashley and Margie Singleton}
+{meta: composer Leon Ashley and Margie Singleton}
 
 {start_of_verse: Verse 1}
 [C]Laura hold these [F]hands and count my [C]fingers 

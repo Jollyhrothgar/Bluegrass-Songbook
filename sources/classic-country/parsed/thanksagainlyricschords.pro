@@ -1,6 +1,6 @@
 {meta: title Thanks Again}
 {meta: artist Ricky Skaggs}
-{meta: writer Jim Rushing}
+{meta: composer Jim Rushing}
 
 {start_of_verse: Verse 1}
 [D7]I've sent [G]bouquets for [D7]Mother's Day

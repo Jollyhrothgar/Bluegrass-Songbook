@@ -1,6 +1,6 @@
 {meta: title Everybody Loves Me But You}
 {meta: artist Brenda Lee}
-{meta: writer Ronnie Self}
+{meta: composer Ronnie Self}
 
 {start_of_verse: Verse 1}
 [C]Why did I listen [D7]to my friends when they told me what to [G]do

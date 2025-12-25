@@ -1,6 +1,6 @@
 {meta: title Keep The Change}
 {meta: artist George Jones}
-{meta: writer Billy Sherrill, Carmol Taylor, Monroe Fields}
+{meta: composer Billy Sherrill, Carmol Taylor, Monroe Fields}
 
 {start_of_verse: Verse 1}
 [G]It was so good when he loved you

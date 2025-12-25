@@ -1,6 +1,6 @@
 {meta: title You've Been On My Mind}
 {meta: artist Emmylou Harris}
-{meta: writer Rodney Crowell}
+{meta: composer Rodney Crowell}
 
 {start_of_verse: Verse 1}
 [C]Guess it's time for me [F]to say how it [G7]is that I feel [C]today

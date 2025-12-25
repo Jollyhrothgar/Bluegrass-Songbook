@@ -1,6 +1,6 @@
 {meta: title Lord Help Me Be As Thou}
 {meta: artist Slim Whitman}
-{meta: writer John Crist/Quarles}
+{meta: composer John Crist/Quarles}
 
 {start_of_verse: Verse 1}
 [C]If I should fail to do my best

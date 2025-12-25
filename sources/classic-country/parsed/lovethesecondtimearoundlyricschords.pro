@@ -1,6 +1,6 @@
 {meta: title Love The Second Time Around}
 {meta: artist Ronnie Milsap}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]This time I won't [G7]be dressed up in a [F]coat and tie

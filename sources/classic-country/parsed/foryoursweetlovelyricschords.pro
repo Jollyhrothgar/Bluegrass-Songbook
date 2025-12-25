@@ -1,6 +1,6 @@
 {meta: title For Your Sweet Love}
 {meta: artist Ricky Nelson}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]Take a piece of chalk [Am]draw a line 

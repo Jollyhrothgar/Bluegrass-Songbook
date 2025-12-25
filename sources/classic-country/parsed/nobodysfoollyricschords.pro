@@ -1,6 +1,6 @@
 {meta: title Nobody's Fool}
 {meta: artist Jim Reeves}
-{meta: writer Hal Bynum}
+{meta: composer Hal Bynum}
 
 {start_of_verse: Verse 1}
 [G]I know they've been saying  [G7]that you broke every [C]rule

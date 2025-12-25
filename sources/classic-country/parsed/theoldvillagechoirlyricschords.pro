@@ -1,6 +1,6 @@
 {meta: title The Old Village Choir}
 {meta: artist Jim Ed Brown}
-{meta: writer Guy Singer}
+{meta: composer Guy Singer}
 
 {start_of_verse: Verse 1}
 [C]How well I remember soft [F]nights in Sep[Fm]tember

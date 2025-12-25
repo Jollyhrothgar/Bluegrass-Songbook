@@ -1,6 +1,6 @@
 {meta: title Christmas At Home}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Max Powell}
+{meta: composer Wayne P. Walker and Max Powell}
 
 {start_of_verse: Verse 1}
 [C]Christmas at home [D7]oh how I would love to spend this Christmas at [G]home

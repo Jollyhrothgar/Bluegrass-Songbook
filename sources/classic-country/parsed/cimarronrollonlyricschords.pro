@@ -1,6 +1,6 @@
 {meta: title Cimarron Roll On}
 {meta: artist The Willis Brothers}
-{meta: writer Johnny Bond}
+{meta: composer Johnny Bond}
 
 {start_of_verse: Verse 1}
 [G7]Cimarron roll [C]on  

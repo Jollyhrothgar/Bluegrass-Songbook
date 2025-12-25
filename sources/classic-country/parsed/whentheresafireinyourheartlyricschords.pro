@@ -1,6 +1,6 @@
 {meta: title When There's A Fire In Your Heart}
 {meta: artist Tammy Wynette}
-{meta: writer Merle Kilgore and Spencer Williams}
+{meta: composer Merle Kilgore and Spencer Williams}
 
 {start_of_verse: Verse 1}
 [G]When there's a fire in your heart

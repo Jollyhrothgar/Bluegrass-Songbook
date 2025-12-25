@@ -1,6 +1,6 @@
 {meta: title Barely Holding On}
 {meta: artist Lee Greenwood}
-{meta: writer Jan Crutchfield and Jerry Crutchfield}
+{meta: composer Jan Crutchfield and Jerry Crutchfield}
 
 {start_of_verse: Verse 1}
 [G]Overheard you yesterday talking to a friend

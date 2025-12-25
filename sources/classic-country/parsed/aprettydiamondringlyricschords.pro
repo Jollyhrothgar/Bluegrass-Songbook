@@ -1,6 +1,6 @@
 {meta: title A Pretty Diamond Ring}
 {meta: artist T.G. Sheppard}
-{meta: writer Glenn Martin}
+{meta: composer Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]He put his arms around her he gave her a pretty diamond [G7]ring

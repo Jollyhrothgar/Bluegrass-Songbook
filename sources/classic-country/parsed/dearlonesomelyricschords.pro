@@ -1,6 +1,6 @@
 {meta: title Dear Lonesome}
 {meta: artist Porter Wagoner}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [D7]Dear lonesome [C]with a broken [G]heart

@@ -1,6 +1,6 @@
 {meta: title I'm A Believer}
 {meta: artist Wanda Jackson}
-{meta: writer Neil Diamond}
+{meta: composer Neil Diamond}
 
 {start_of_verse: Verse 1}
 [G]I thought love was [D]only true in [G]fairy tales

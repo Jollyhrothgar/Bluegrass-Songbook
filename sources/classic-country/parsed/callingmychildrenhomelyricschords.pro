@@ -1,6 +1,6 @@
 {meta: title Calling My Children Home}
 {meta: artist Emmylou Harris}
-{meta: writer Doyle Lawson, Charles Waller, Robert Yates}
+{meta: composer Doyle Lawson, Charles Waller, Robert Yates}
 
 {start_of_verse: Verse 1}
 [C]Those lives were mine to love and cherish

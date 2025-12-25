@@ -1,6 +1,6 @@
 {meta: title He's Back In Texas}
 {meta: artist Moe Bandy}
-{meta: writer Troy Seals and Wood Newton}
+{meta: composer Troy Seals and Wood Newton}
 
 {start_of_verse: Verse 1}
 [C]First time that you see him you'd [G]think he's a regular guy

@@ -1,6 +1,6 @@
 {meta: title When I Lost You}
 {meta: artist Jim Reeves}
-{meta: writer Irvin Berlin}
+{meta: composer Irvin Berlin}
 
 {start_of_verse: Verse 1}
 [C]I lost the sunshine and [F][G7]ros-es 

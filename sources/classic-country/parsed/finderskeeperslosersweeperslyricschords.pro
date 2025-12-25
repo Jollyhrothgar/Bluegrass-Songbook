@@ -1,6 +1,6 @@
 {meta: title Finders Keepers Losers Weepers}
 {meta: artist Elvis Presley}
-{meta: writer Dory Jones and Ollie Jones}
+{meta: composer Dory Jones and Ollie Jones}
 
 {start_of_verse: Verse 1}
 [C]Finders keepers [F]losers [C]weepers 

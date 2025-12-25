@@ -1,6 +1,6 @@
 {meta: title Easy For You To Say}
 {meta: artist Emmylou Harris}
-{meta: writer Jack W. Routh and Randy Sharp}
+{meta: composer Jack W. Routh and Randy Sharp}
 
 {start_of_verse: Verse 1}
 [C]These things happen

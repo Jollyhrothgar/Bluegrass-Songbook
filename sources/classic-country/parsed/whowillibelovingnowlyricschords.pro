@@ -1,6 +1,6 @@
 {meta: title Who Will I Be Loving Now}
 {meta: artist George Jones}
-{meta: writer Agnes Wilson and Carmol Taylor}
+{meta: composer Agnes Wilson and Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [C]Well I thought you found your happiness [F]right here loving [C]me

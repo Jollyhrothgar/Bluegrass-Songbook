@@ -1,6 +1,6 @@
 {meta: title Everywhere You Go}
 {meta: artist Jim Reeves}
-{meta: writer Larry Shay, Joe Goodwin, Mark Fisher}
+{meta: composer Larry Shay, Joe Goodwin, Mark Fisher}
 
 {start_of_verse: Verse 1}
 [C]Everywhere you go sunshine follows [G7]you

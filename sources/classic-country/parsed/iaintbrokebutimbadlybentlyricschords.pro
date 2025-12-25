@@ -1,6 +1,6 @@
 {meta: title I Ain't Broke But I'm Badly Bent}
 {meta: artist Dan Tyminski}
-{meta: writer Fred Carter}
+{meta: composer Fred Carter}
 
 {start_of_verse: Verse 1}
 [G]Well I'm going back to the country

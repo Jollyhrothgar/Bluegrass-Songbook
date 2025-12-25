@@ -1,6 +1,6 @@
 {meta: title I Slipped And Fell In Love}
 {meta: artist Alan Jackson}
-{meta: writer Harley Allen and John Wiggins}
+{meta: composer Harley Allen and John Wiggins}
 
 {start_of_verse: Verse 1}
 [C]A drunk man walking down a [F]rainy [G7]street

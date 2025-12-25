@@ -1,6 +1,6 @@
 {meta: title Mommy Will My Doggie Understand}
 {meta: artist The Blue Sky Boys}
-{meta: writer Jim Eanes}
+{meta: composer Jim Eanes}
 
 {start_of_verse: Verse 1}
 [C]Our little girl so pale and wan [F]lay on her dying bed

@@ -1,6 +1,6 @@
 {meta: title Greystone Chapel}
 {meta: artist Johnny Cash}
-{meta: writer Glen Sherley}
+{meta: composer Glen Sherley}
 
 {start_of_verse: Verse 1}
 [G7][C]Inside the walls of prison my body may [C]be

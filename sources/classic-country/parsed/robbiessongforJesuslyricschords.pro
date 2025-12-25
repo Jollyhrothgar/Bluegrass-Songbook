@@ -1,6 +1,6 @@
 {meta: title Robbie's Song For Jesus}
 {meta: artist Anne Murray}
-{meta: writer Robbie MacNeill}
+{meta: composer Robbie MacNeill}
 
 {start_of_verse: Verse 1}
 [C]Wake up with no will to carry [F]on

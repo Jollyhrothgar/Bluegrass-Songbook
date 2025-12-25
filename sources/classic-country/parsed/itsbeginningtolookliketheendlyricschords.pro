@@ -1,6 +1,6 @@
 {meta: title It's Beginning To Look Like The End}
 {meta: artist Vern Gosdin}
-{meta: writer Larry Bastian}
+{meta: composer Larry Bastian}
 
 {start_of_verse: Verse 1}
 [G]Our ties have quit binding and [C]we're finding out [G]now

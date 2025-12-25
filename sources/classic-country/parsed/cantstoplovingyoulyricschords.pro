@@ -1,6 +1,6 @@
 {meta: title Can't Stop Loving You}
 {meta: artist Roger Miller}
-{meta: writer Billy Nicholls}
+{meta: composer Billy Nicholls}
 
 {start_of_verse: Verse 1}
 [G]Well I’ve tried my best but that ain't enough

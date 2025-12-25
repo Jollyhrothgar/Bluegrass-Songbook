@@ -1,6 +1,6 @@
 {meta: title Down To My Last Goodbye}
 {meta: artist Sonny James}
-{meta: writer Ronnie Dwaine Reynolds}
+{meta: composer Ronnie Dwaine Reynolds}
 
 {start_of_verse: Verse 1}
 [C]Well I’m back where I first began [C7]

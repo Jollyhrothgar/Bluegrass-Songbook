@@ -1,6 +1,6 @@
 {meta: title You Caused It All By Telling Lies}
 {meta: artist Hank Williams}
-{meta: writer Clyde Moody}
+{meta: composer Clyde Moody}
 
 {start_of_verse: Verse 1}
 [G]When you're alone and blue tonight my little [C]darling

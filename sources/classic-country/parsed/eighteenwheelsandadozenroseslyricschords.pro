@@ -1,6 +1,6 @@
 {meta: title Eighteen Wheels And A Dozen Roses}
 {meta: artist Kathy Mattea}
-{meta: writer Gene Nelson and Paul Nelson}
+{meta: composer Gene Nelson and Paul Nelson}
 
 {start_of_verse: Verse 1}
 [G]Charlie's got a gold watch

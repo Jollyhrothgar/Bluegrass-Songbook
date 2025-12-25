@@ -1,6 +1,6 @@
 {meta: title Keep On Telling Me Lies}
 {meta: artist Mickey Gilley}
-{meta: writer Roger Murrah and Tim Lewis}
+{meta: composer Roger Murrah and Tim Lewis}
 
 {start_of_verse: Verse 1}
 [Am]Say it's not true my love means [D7]something to you

@@ -1,6 +1,6 @@
 {meta: title Old Flames Can't Hold A Candle To You}
 {meta: artist Merle Haggard}
-{meta: writer Pebe Sebert and Hugh Moffatt}
+{meta: composer Pebe Sebert and Hugh Moffatt}
 
 {start_of_verse: Verse 1}
 [C]Downtown tonight I saw an old friend  someone [F]who

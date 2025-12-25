@@ -1,6 +1,6 @@
 {meta: title It Don't Hurt To Dream}
 {meta: artist Ronnie Milsap}
-{meta: writer Charles Quillen, Dan Pate, Jane Pate}
+{meta: composer Charles Quillen, Dan Pate, Jane Pate}
 
 {start_of_verse: Verse 1}
 [C]Arms go ahead and hold her the way we [G7]want to

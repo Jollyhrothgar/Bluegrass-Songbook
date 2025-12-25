@@ -1,6 +1,6 @@
 {meta: title If I Didn't Have You}
 {meta: artist Randy Travis}
-{meta: writer Max D. Barnes and Skip Ewing}
+{meta: composer Max D. Barnes and Skip Ewing}
 
 {start_of_verse: Verse 1}
 [C]Well I lost my heart on the [F]day we [C]met

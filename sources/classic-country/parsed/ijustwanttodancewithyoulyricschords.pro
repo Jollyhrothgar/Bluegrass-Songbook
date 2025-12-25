@@ -1,6 +1,6 @@
 {meta: title I Just Want To Dance With You}
 {meta: artist George Strait}
-{meta: writer John Prine and Roger Cook}
+{meta: composer John Prine and Roger Cook}
 
 {start_of_verse: Verse 1}
 [C]I don’t want to be the kind to hesitate  

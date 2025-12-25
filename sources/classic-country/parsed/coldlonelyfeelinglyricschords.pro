@@ -1,6 +1,6 @@
 {meta: title Cold Lonely Feeling}
 {meta: artist Tammy Wynette}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]Who [F]could've told me [C]that you've been with her [G7]one more [C]time

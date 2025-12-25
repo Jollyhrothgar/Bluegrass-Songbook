@@ -1,6 +1,6 @@
 {meta: title Out Of My Mind}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Kenneth Lovelace}
+{meta: composer Kenneth Lovelace}
 
 {start_of_verse: Verse 1}
 [C]I'm sitting here drinking [G7]thinking of you

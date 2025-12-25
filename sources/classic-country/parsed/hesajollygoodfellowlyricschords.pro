@@ -1,6 +1,6 @@
 {meta: title He's A Jolly Good Fellow}
 {meta: artist Charlie Walker}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]He's a jolly good [C]fellow 

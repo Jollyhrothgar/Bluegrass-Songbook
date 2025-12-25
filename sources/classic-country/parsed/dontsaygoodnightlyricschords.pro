@@ -1,6 +1,6 @@
 {meta: title Don't Say Goodnight}
 {meta: artist Everly Brothers}
-{meta: writer Brian Neary and Jim Photoglo}
+{meta: composer Brian Neary and Jim Photoglo}
 
 {start_of_verse: Verse 1}
 [G]Fifteen years come [Em]December

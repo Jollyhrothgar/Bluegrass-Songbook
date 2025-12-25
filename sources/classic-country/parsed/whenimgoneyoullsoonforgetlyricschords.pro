@@ -1,6 +1,6 @@
 {meta: title When I'm Gone You'll Soon Forget}
 {meta: artist Gene Autry}
-{meta: writer James Edward Haley}
+{meta: composer James Edward Haley}
 
 {start_of_verse: Verse 1}
 [C]When I'm gone you'll soon forget me

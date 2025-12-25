@@ -1,6 +1,6 @@
 {meta: title I'll Never Let You Go (Little Darlin')}
 {meta: artist Elvis Presley}
-{meta: writer Jimmy Wakely}
+{meta: composer Jimmy Wakely}
 
 {start_of_verse: Verse 1}
 [C]I'll [F]never let you go little [C]darlin' 

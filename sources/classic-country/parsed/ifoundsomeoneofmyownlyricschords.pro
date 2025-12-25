@@ -1,6 +1,6 @@
 {meta: title I Found Someone Of My Own}
 {meta: artist Cal Smith}
-{meta: writer Frank F. Robinson}
+{meta: composer Frank F. Robinson}
 
 {start_of_verse: Verse 1}
 [G]I [D7]got up this morning and while I was having my [G]coffee

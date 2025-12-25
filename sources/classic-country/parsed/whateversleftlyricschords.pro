@@ -1,6 +1,6 @@
 {meta: title Whatever's Left}
 {meta: artist Faron Young}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [G]She never was [D7]much when it [G]came to pre[G7]tendin'

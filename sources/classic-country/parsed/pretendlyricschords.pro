@@ -1,6 +1,6 @@
 {meta: title Pretend}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo and Kostas Lazarides}
+{meta: composer Raul Malo and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [G]Pretend you're [D7]still in love with [G]me 

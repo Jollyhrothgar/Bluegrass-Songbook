@@ -1,6 +1,6 @@
 {meta: title Come In Out Of The Pain}
 {meta: artist Doug Stone}
-{meta: writer Don Pfrimmer and Frank Myers}
+{meta: composer Don Pfrimmer and Frank Myers}
 
 {start_of_verse: Verse 1}
 [D7]I'd be [G]lyin' if I said [D7]I never [C]prayed for [G]this

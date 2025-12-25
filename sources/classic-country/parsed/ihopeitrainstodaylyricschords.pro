@@ -1,6 +1,6 @@
 {meta: title I Hope It Rains Today}
 {meta: artist Hank Williams Jr.}
-{meta: writer Kay Arnold}
+{meta: composer Kay Arnold}
 
 {start_of_verse: Verse 1}
 [C]I had that dream again the [G7]same one I've had be[C]fore

@@ -1,6 +1,6 @@
 {meta: title It’s Not The Wind}
 {meta: artist Kenny and Amanda Smith}
-{meta: writer Bobby Harrison}
+{meta: composer Bobby Harrison}
 
 {start_of_verse: Verse 1}
 [G]From the start of our life together

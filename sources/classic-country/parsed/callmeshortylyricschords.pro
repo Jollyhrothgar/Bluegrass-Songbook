@@ -1,6 +1,6 @@
 {meta: title Call Me Shorty}
 {meta: artist Mickey Gilley}
-{meta: writer Charles Matthews}
+{meta: composer Charles Matthews}
 
 {start_of_verse: Verse 1}
 [C]I smoke a big cigar I drive a Cadillac car

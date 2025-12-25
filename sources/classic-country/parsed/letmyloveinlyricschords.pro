@@ -1,6 +1,6 @@
 {meta: title Let My Love In}
 {meta: artist Charley Pride}
-{meta: writer John Riggs}
+{meta: composer John Riggs}
 
 {start_of_verse: Verse 1}
 [G]I'll stand by your si[G7]de I'll always [F]love [C]you

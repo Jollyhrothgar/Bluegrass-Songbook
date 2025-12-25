@@ -1,6 +1,6 @@
 {meta: title She Just Wrote Me From Atlanta}
 {meta: artist Nat Stuckey}
-{meta: writer Vincent Matthews}
+{meta: composer Vincent Matthews}
 
 {start_of_verse: Verse 1}
 [C]She wrote to tell me she [F]likes At[C]lanta

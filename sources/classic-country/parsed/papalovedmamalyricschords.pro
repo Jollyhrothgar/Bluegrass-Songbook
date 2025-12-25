@@ -1,6 +1,6 @@
 {meta: title Papa Loved Mama}
 {meta: artist Garth Brooks}
-{meta: writer Kim Williams and Garth Brooks}
+{meta: composer Kim Williams and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]Papa drove a truck nearly all of his life

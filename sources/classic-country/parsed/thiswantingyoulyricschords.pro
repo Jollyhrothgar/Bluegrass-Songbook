@@ -1,6 +1,6 @@
 {meta: title This Wanting You}
 {meta: artist Gene Watson with Rhonda Vincent}
-{meta: writer Bruce Bouton, Bruce Burch, T. Graham Brown}
+{meta: composer Bruce Bouton, Bruce Burch, T. Graham Brown}
 
 {start_of_verse: Verse 1}
 [C]I almost wish that I could [C7]loose my [F]mind sometime

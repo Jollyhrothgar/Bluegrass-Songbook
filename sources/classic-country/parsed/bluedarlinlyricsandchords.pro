@@ -1,6 +1,6 @@
 {meta: title Blue Darlin'}
 {meta: artist Don Gibson}
-{meta: writer Leslie Lyle[3/4 time]}
+{meta: composer Leslie Lyle[3/4 time]}
 
 {start_of_verse: Verse 1}
 [G]I was a fool broke every rule [G7]blue [C]darlin'

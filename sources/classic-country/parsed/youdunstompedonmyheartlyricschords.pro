@@ -1,6 +1,6 @@
 {meta: title You Dun Stomped On My Heart}
 {meta: artist John Denver}
-{meta: writer Mason D. Williams}
+{meta: composer Mason D. Williams}
 
 {start_of_verse: Verse 1}
 [G]I told you that I love you

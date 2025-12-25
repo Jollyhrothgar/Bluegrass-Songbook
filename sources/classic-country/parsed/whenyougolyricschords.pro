@@ -1,6 +1,6 @@
 {meta: title When You Go}
 {meta: artist Ferlin Husky}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]This cry inside is big [C]enough to drown [G]me

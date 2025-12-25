@@ -1,6 +1,6 @@
 {meta: title Candlelight World}
 {meta: artist Jean Shepard}
-{meta: writer Larry Butler}
+{meta: composer Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]A checkered cloth red and white

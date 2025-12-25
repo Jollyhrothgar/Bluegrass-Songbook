@@ -1,6 +1,6 @@
 {meta: title If You Want Me To I'll Go}
 {meta: artist Don Gibson}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [G7]Well the [C]rain just touched the [E7]flower in the [A7]meadow

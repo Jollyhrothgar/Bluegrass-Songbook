@@ -1,6 +1,6 @@
 {meta: title Gulf Coast Highway}
 {meta: artist Emmylou Harris}
-{meta: writer Daniel Flowers, Danny Flowers, James H. Brown Jr.,}
+{meta: composer Daniel Flowers, Danny Flowers, James H. Brown Jr.,}
 
 {start_of_verse: Verse 1}
 [C]Gulf Coast Highway he [F]worked the [C]rails

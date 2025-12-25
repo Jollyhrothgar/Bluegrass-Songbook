@@ -1,6 +1,6 @@
 {meta: title I've Waited A Lifetime}
 {meta: artist Wynn Stewart}
-{meta: writer Bill Privett, Larry Stowell, Don Wright}
+{meta: composer Bill Privett, Larry Stowell, Don Wright}
 
 {start_of_verse: Verse 1}
 [G]I'm just a little bit lonesome and just a little bit [D7]blue

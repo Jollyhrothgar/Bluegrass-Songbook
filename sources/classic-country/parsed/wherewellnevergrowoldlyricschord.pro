@@ -1,6 +1,6 @@
 {meta: title Where We'll Never Grow Old}
 {meta: artist Eddy Arnold}
-{meta: writer James C. Moore}
+{meta: composer James C. Moore}
 
 {start_of_verse: Verse 1}
 Where We'll Never Grow Old

@@ -1,6 +1,6 @@
 {meta: title Talk Me Some Sense}
 {meta: artist Bobby Bare}
-{meta: writer Keith Colley and Nancie Mantz}
+{meta: composer Keith Colley and Nancie Mantz}
 
 {start_of_verse: Verse 1}
 [C]Talk me some [Dm]sense [G7]talk me some [C]sense

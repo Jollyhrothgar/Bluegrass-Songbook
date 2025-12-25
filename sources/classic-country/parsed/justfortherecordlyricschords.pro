@@ -1,6 +1,6 @@
 {meta: title Just For The Record}
 {meta: artist Ray Price}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I know our love is [F]over  [C]you've made it plain to [F]see

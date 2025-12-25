@@ -1,6 +1,6 @@
 {meta: title Three Steps To The Phone}
 {meta: artist George Hamilton IV}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]It's only three steps to the [C]phone

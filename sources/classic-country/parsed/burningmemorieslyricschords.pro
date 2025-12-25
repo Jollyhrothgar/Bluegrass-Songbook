@@ -1,6 +1,6 @@
 {meta: title Burning Memories}
 {meta: artist Mel Tillis}
-{meta: writer Wayne P. Walker and Mel Tillis}
+{meta: composer Wayne P. Walker and Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C][G7]To-night I'm Burning Old Love [D7]Letters

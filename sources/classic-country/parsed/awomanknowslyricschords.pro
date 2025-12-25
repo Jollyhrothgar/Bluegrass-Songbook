@@ -1,6 +1,6 @@
 {meta: title A Woman Knows}
 {meta: artist John Anderson}
-{meta: writer John Rich, Vicky McGehee, Julie Roberts}
+{meta: composer John Rich, Vicky McGehee, Julie Roberts}
 
 {start_of_verse: Verse 1}
 [C]He's a good man and he's [F]always been [G7]right there by her [C]side

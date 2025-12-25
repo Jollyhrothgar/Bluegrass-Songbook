@@ -1,6 +1,6 @@
 {meta: title Renegades Rebels And Rogues}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone, Paul Nelson, Earl Clark}
+{meta: composer Larry Boone, Paul Nelson, Earl Clark}
 
 {start_of_verse: Verse 1}
 [C]They come from the wrong side of the track born a breed apart

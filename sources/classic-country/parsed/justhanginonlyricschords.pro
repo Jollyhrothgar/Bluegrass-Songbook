@@ -1,6 +1,6 @@
 {meta: title Just Hangin’ On}
 {meta: artist Mel Street}
-{meta: writer Wayland Holyfield}
+{meta: composer Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]Up in the [Am]morning stumble [C]out of my bed 

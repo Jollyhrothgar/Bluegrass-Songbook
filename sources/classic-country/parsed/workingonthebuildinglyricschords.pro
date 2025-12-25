@@ -1,6 +1,6 @@
 {meta: title Working on the Building}
 {meta: artist Elvis Presley}
-{meta: writer Lillian M. Bowles and W.O. Hayle}
+{meta: composer Lillian M. Bowles and W.O. Hayle}
 
 {start_of_verse: Verse 1}
 [C]Well I’m [G7]working on the [C]building it's a [G7]true foun[C]dation

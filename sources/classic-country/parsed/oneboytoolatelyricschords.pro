@@ -1,6 +1,6 @@
 {meta: title One Boy Too Late}
 {meta: artist Ricky Nelson}
-{meta: writer Tony Powers and Ellie Greenwich}
+{meta: composer Tony Powers and Ellie Greenwich}
 
 {start_of_verse: Verse 1}
 [C]Tell her you need [Dm]her tell [G7]her you love [C]her

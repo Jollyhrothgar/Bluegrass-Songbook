@@ -1,6 +1,6 @@
 {meta: title Don't Ask Me Why}
 {meta: artist Jim Reeves}
-{meta: writer Joan Hager}
+{meta: composer Joan Hager}
 
 {start_of_verse: Verse 1}
 [C]Don't ask me why I stand aside

@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Make Real Sure}
 {meta: artist Everly Brothers}
-{meta: writer Phil Everly}
+{meta: composer Phil Everly}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna make real [C]sure [D7]that you don't make her [G]blue

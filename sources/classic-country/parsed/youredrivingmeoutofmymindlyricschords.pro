@@ -1,6 +1,6 @@
 {meta: title You're Driving Me Out Of My Mind}
 {meta: artist Kitty Wells}
-{meta: writer Gayle Smith}
+{meta: composer Gayle Smith}
 
 {start_of_verse: Verse 1}
 [C]You drove me to the church on Sunday [F]to our home on Monday

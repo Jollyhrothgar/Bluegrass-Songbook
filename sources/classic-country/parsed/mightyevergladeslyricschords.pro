@@ -1,6 +1,6 @@
 {meta: title Mighty Everglades}
 {meta: artist Jim Reeves}
-{meta: writer Karl Davis}
+{meta: composer Karl Davis}
 
 {start_of_verse: Verse 1}
 [G]South from Okeechobee and reachin' to the [Am]keys

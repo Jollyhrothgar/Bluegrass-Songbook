@@ -1,6 +1,6 @@
 {meta: title Please Talk To My Heart}
 {meta: artist Ray Price}
-{meta: writer Country Johnny Mathis and Walt Breeland}
+{meta: composer Country Johnny Mathis and Walt Breeland}
 
 {start_of_verse: Verse 1}
 [C]Please talk to my heart because I'm [F]lonesome 

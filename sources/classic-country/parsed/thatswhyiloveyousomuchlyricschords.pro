@@ -1,6 +1,6 @@
 {meta: title That's Why I Love You So Much}
 {meta: artist Ferlin Husky}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]You stood by [C]me whenever [D7]times were [G]bad 

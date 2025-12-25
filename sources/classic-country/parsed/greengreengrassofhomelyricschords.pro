@@ -1,6 +1,6 @@
 {meta: title Green Green Grass Of Home}
 {meta: artist Johnny Cash}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]The old home town looks the same

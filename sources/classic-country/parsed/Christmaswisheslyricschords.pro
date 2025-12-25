@@ -1,6 +1,6 @@
 {meta: title Christmas Wishes}
 {meta: artist Anne Murray}
-{meta: writer Randy Sparks and Arthur Podell}
+{meta: composer Randy Sparks and Arthur Podell}
 
 {start_of_verse: Verse 1}
 [Dm]If I had my way [G7]this [C]Christmas

@@ -1,6 +1,6 @@
 {meta: title As We Kiss Our World Goodbye}
 {meta: artist Rhonda Vincent}
-{meta: writer Billy Wayne Yates}
+{meta: composer Billy Wayne Yates}
 
 {start_of_verse: Verse 1}
 [G]Time [D7]just stood [G]still it's the moment [C]that we [G]will

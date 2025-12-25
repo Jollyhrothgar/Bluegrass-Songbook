@@ -1,6 +1,6 @@
 {meta: title Moonlight On The Colorado}
 {meta: artist Slim Whitman}
-{meta: writer Robert A. King and Billy Moll}
+{meta: composer Robert A. King and Billy Moll}
 
 {start_of_verse: Verse 1}
 [C]Moonlight on the [F]river Colo[C]rado

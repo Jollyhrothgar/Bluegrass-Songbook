@@ -1,6 +1,6 @@
 {meta: title She Knows What She's Crying About}
 {meta: artist George Jones}
-{meta: writer John Riggs}
+{meta: composer John Riggs}
 
 {start_of_verse: Verse 1}
 [C]You may think she ain't been true all those [F]things she's telling [C]you

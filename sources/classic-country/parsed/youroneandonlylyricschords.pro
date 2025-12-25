@@ -1,6 +1,6 @@
 {meta: title Your One And Only}
 {meta: artist Ricky Van Shelton}
-{meta: writer Even Stevens and Hillary Kanter}
+{meta: composer Even Stevens and Hillary Kanter}
 
 {start_of_verse: Verse 1}
 [C]You're the last one I think of when I [F]lay down to [C]sleep

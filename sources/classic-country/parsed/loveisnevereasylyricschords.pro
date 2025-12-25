@@ -1,6 +1,6 @@
 {meta: title Love Is Never Easy}
 {meta: artist Reba McEntire}
-{meta: writer Bob Morrison and Johnny McRae}
+{meta: composer Bob Morrison and Johnny McRae}
 
 {start_of_verse: Verse 1}
 [C]Love should be [F]easy [C]it's such a natural [F]thing

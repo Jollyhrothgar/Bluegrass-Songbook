@@ -1,6 +1,6 @@
 {meta: title When There's Not A Tear Left To My Name}
 {meta: artist Gene Watson}
-{meta: writer Bennie Boling and Billy Troy}
+{meta: composer Bennie Boling and Billy Troy}
 
 {start_of_verse: Verse 1}
 [C]Every time I read your letter tears fill my eyes

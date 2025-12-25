@@ -1,6 +1,6 @@
 {meta: title You'll Drive Me Back Into Her Arms Again}
 {meta: artist Faron Young}
-{meta: writer Merle Kilgore and Miriam Lewis}
+{meta: composer Merle Kilgore and Miriam Lewis}
 
 {start_of_verse: Verse 1}
 [C]I told you if your lips stayed so cold to [G7]me

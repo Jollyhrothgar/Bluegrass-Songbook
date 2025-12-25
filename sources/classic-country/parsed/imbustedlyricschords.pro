@@ -1,6 +1,6 @@
 {meta: title I'm Busted}
 {meta: artist Charlie Pride}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]The bills are all due and my baby needs shoes

@@ -1,6 +1,6 @@
 {meta: title When The Cactus Is In Bloom}
 {meta: artist Bill Monroe}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]The cattle prowled and the coyotes howled

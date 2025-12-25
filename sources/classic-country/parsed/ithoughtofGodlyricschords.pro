@@ -1,6 +1,6 @@
 {meta: title I Thought Of God}
 {meta: artist Porter Wagoner}
-{meta: writer Marijohn Wilkin}
+{meta: composer Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [G]I walked through the [D7]whispering [G]forest

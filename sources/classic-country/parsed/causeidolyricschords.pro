@@ -1,6 +1,6 @@
 {meta: title Cause I Do}
 {meta: artist Faron Young}
-{meta: writer John Holaday and Becki Holaday}
+{meta: composer John Holaday and Becki Holaday}
 
 {start_of_verse: Verse 1}
 [G]I can feel a chill of loneliness when [D7]I'm near you

@@ -1,6 +1,6 @@
 {meta: title I'll Call You Charlie (You Call Me Joan)}
 {meta: artist George Morgan}
-{meta: writer Roy Kitson}
+{meta: composer Roy Kitson}
 
 {start_of_verse: Verse 1}
 [C]The [F]one that we're tied to won't [C]know who's on the phone

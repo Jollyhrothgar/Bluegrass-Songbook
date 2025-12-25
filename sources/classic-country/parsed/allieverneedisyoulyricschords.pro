@@ -1,6 +1,6 @@
 {meta: title All I Ever Need Is You}
 {meta: artist Kenny Rogers}
-{meta: writer Jimmy Holiday and Eddie Reeves}
+{meta: composer Jimmy Holiday and Eddie Reeves}
 
 {start_of_verse: Verse 1}
 [C]Sometimes when I'm down and all [E7]alone

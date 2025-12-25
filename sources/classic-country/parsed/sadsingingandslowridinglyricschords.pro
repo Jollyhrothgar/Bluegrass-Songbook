@@ -1,6 +1,6 @@
 {meta: title Sad Singing And Slow Riding}
 {meta: artist Jean Shepard}
-{meta: writer Curley Fox and Texas Ruby}
+{meta: composer Curley Fox and Texas Ruby}
 
 {start_of_verse: Verse 1}
 [C]There'll be some sad singing and some slow [F]riding

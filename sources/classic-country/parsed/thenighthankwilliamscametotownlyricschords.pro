@@ -1,6 +1,6 @@
 {meta: title The Night Hank Williams Came To Town}
 {meta: artist Johnny Cash}
-{meta: writer Bobby Braddock and Charlie Williams}
+{meta: composer Bobby Braddock and Charlie Williams}
 
 {start_of_verse: Verse 1}
 [C]Harry Truman was our [F]president

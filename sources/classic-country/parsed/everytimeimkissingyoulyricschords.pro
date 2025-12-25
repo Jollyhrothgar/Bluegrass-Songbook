@@ -1,6 +1,6 @@
 {meta: title Every Time I'm Kissing You}
 {meta: artist Johnny Horton}
-{meta: writer Carl Belew, Faron Young, Johnny Horton}
+{meta: composer Carl Belew, Faron Young, Johnny Horton}
 
 {start_of_verse: Verse 1}
 [C]I came home and I found you  in the arms [F]of a [C]friend

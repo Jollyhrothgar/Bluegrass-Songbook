@@ -1,6 +1,6 @@
 {meta: title If You're Ever Lonely}
 {meta: artist Ray Price}
-{meta: writer Lefty Frizzell}
+{meta: composer Lefty Frizzell}
 
 {start_of_verse: Verse 1}
 [C]If you're ever lonely darling

@@ -1,6 +1,6 @@
 {meta: title Please Operator (Could You Trace This Call)}
 {meta: artist Garth Brooks}
-{meta: writer Dewayne Blackwell}
+{meta: composer Dewayne Blackwell}
 
 {start_of_verse: Verse 1}
 [F]Please operator could [C]you trace this call

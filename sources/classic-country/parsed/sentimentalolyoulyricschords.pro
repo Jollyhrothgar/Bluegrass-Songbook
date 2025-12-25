@@ -1,6 +1,6 @@
 {meta: title Sentimental ol' You}
 {meta: artist Charly McClain}
-{meta: writer Bob Dipiero and Patrick Joseph McManusG}
+{meta: composer Bob Dipiero and Patrick Joseph McManusG}
 
 {start_of_verse: Verse 1}
 [C]Who saves each [D7]card I've ever [G]sent 

@@ -1,6 +1,6 @@
 {meta: title Silver Sandals}
 {meta: artist Dolly Parton & Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]In [F]silver sandals she goes walking up those golden [C]stairs

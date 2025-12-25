@@ -1,6 +1,6 @@
 {meta: title Somebody's Stolen My Honey}
 {meta: artist Ernest Tubb}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]Somebody’s stolen my honey and it [D7]just ain’t right

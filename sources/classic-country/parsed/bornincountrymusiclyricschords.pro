@@ -1,6 +1,6 @@
 {meta: title Born in Country Music}
 {meta: artist Dick Curless}
-{meta: writer G. Martin}
+{meta: composer G. Martin}
 
 {start_of_verse: Verse 1}
 [C]Born in Mississi[F]ppi raised in [C]New Orleans

@@ -1,6 +1,6 @@
 {meta: title Baby I Feel For You}
 {meta: artist Mickey Gilley}
-{meta: writer Larry Butler and Dean Dillon and Bud McGuire}
+{meta: composer Larry Butler and Dean Dillon and Bud McGuire}
 
 {start_of_verse: Verse 1}
 [C]Darling tell me all about it

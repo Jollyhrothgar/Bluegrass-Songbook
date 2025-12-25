@@ -1,6 +1,6 @@
 {meta: title Little Country Church}
 {meta: artist Pat Boone}
-{meta: writer Chuck Girard}
+{meta: composer Chuck Girard}
 
 {start_of_verse: Verse 1}
 [C]Little country church on the [F]edge of [G7]town

@@ -1,6 +1,6 @@
 {meta: title Don't Toss us Away Lyrics and Chords}
 {meta: artist Patty Loveless}
-{meta: writer Brian McLelan}
+{meta: composer Brian McLelan}
 
 {start_of_verse: Verse 1}
 [C]Well it seems that everyone we [F]know

@@ -1,6 +1,6 @@
 {meta: title Heartaches Teardrops And Sorrow}
 {meta: artist Jean Shepard}
-{meta: writer Kid Murdock and Lila Hargiss}
+{meta: composer Kid Murdock and Lila Hargiss}
 
 {start_of_verse: Verse 1}
 [G7]You brought me [C]heartaches teardrops and [F]sorrow

@@ -1,6 +1,6 @@
 {meta: title U.S. Male}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Reed}
+{meta: composer Jerry Reed}
 
 {start_of_verse: Verse 1}
 [G]I'm a U.S. Male cause I was [Am]born

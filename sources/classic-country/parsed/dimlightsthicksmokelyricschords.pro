@@ -1,6 +1,6 @@
 {meta: title Dim Lights Thick Smoke}
 {meta: artist Marty Stuart}
-{meta: writer Joe Maphis, Max Fidler, Rose Lee Maphis}
+{meta: composer Joe Maphis, Max Fidler, Rose Lee Maphis}
 
 {start_of_verse: Verse 1}
 [C]Dim lights  thick smoke  and loud [C7]loud [F]music

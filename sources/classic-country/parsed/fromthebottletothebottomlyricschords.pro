@@ -1,6 +1,6 @@
 {meta: title From The Bottle To The Bottom}
 {meta: artist Billy Walker}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [G]You ask me if I'm happy now 

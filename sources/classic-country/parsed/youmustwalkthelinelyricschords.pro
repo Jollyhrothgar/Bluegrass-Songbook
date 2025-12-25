@@ -1,6 +1,6 @@
 {meta: title You Must Walk The Line}
 {meta: artist Eddy Arnold}
-{meta: writer J.G. Hall, Wally Fowler, Eddy Arnold}
+{meta: composer J.G. Hall, Wally Fowler, Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [C]My dear you cannot go your way and [F]leave your love [C]behind

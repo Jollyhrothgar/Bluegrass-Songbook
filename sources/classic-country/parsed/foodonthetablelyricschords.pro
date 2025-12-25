@@ -1,6 +1,6 @@
 {meta: title Food On The Table}
 {meta: artist Alabama}
-{meta: writer Randy Owen}
+{meta: composer Randy Owen}
 
 {start_of_verse: Verse 1}
 [C]My dad was a big man with a [F]will that was tough

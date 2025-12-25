@@ -1,6 +1,6 @@
 {meta: title If You Were Mine To Lose}
 {meta: artist Connie Smith}
-{meta: writer Mickey Jaco}
+{meta: composer Mickey Jaco}
 
 {start_of_verse: Verse 1}
 [C]Just to know [G]that you [D7]were mine to [G]lose

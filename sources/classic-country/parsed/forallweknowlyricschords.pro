@@ -1,6 +1,6 @@
 {meta: title For All We Know}
 {meta: artist Slim Whitman}
-{meta: writer Fred J. Coots and Sam Lewis}
+{meta: composer Fred J. Coots and Sam Lewis}
 
 {start_of_verse: Verse 1}
 [C]For all we [D7]know we may [G7]never meet again

@@ -1,6 +1,6 @@
 {meta: title Think About A Lullaby}
 {meta: artist Merle Haggard}
-{meta: writer Theresa Haggard}
+{meta: composer Theresa Haggard}
 
 {start_of_verse: Verse 1}
 [C]Think about a [F]lulla[C]by think about a [F]lulla[C]by

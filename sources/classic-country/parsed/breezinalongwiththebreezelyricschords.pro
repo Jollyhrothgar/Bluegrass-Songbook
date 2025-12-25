@@ -1,6 +1,6 @@
 {meta: title Breezin' Along With The Breeze}
 {meta: artist Ferlin Husky}
-{meta: writer Haven Gillespie and Brook Benton}
+{meta: composer Haven Gillespie and Brook Benton}
 
 {start_of_verse: Verse 1}
 [G]I'm just breezin' along with the [B7]breeze

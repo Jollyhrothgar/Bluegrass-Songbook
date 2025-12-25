@@ -1,6 +1,6 @@
 {meta: title It's Too Soon To Know}
 {meta: artist Roy Orbison}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [C]It's too [Em]soon to [Dm]know if [G7]I can for[C]get her

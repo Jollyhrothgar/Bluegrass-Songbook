@@ -1,6 +1,6 @@
 {meta: title How You Drink The Wine}
 {meta: artist Mel Tillis}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [G]Well I sat down at a table [G7]next to a [C]party

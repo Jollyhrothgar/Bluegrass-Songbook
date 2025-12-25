@@ -1,6 +1,6 @@
 {meta: title East Bound Freight Train}
 {meta: artist Reno and Smiley}
-{meta: writer Grandpa Jones}
+{meta: composer Grandpa Jones}
 
 {start_of_verse: Verse 1}
 [G]I never was so [D7]lonesome for my [G]hometown 

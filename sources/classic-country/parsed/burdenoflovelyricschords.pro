@@ -1,6 +1,6 @@
 {meta: title Burden Of Love}
 {meta: artist Mel Tillis}
-{meta: writer Jim Rister}
+{meta: composer Jim Rister}
 
 {start_of_verse: Verse 1}
 [C]Add one more day [G7]to the life we planned [C]together

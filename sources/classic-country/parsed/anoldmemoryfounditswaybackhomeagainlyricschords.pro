@@ -1,6 +1,6 @@
 {meta: title An Old Memory (Found Its Way Back Home Again)}
 {meta: artist Rhonda Vincent}
-{meta: writer Melba Montgomery and Jerry Salley}
+{meta: composer Melba Montgomery and Jerry Salley}
 
 {start_of_verse: Verse 1}
 [G]I thought I had driven you out of my [C]mind

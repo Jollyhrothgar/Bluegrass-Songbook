@@ -1,6 +1,6 @@
 {meta: title It Sure Looks Lonesome Outside}
 {meta: artist Slim Whitman}
-{meta: writer Gary Bruce}
+{meta: composer Gary Bruce}
 
 {start_of_verse: Verse 1}
 [D7]Well I [G]stand by my window and [D7]watch people go by

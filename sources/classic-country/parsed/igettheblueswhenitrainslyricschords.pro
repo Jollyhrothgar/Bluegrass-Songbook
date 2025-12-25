@@ -1,6 +1,6 @@
 {meta: title I Get The Blues When It Rains}
 {meta: artist Jim Reeves}
-{meta: writer Marcy Klauber and Harry Stoddard}
+{meta: composer Marcy Klauber and Harry Stoddard}
 
 {start_of_verse: Verse 1}
 [C]I get the blues when it [G7]rains

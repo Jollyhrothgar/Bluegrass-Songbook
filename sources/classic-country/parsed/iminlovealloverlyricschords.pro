@@ -1,6 +1,6 @@
 {meta: title I'm In Love All Over}
 {meta: artist Reba McEntire}
-{meta: writer J.D. Martin and Don King}
+{meta: composer J.D. Martin and Don King}
 
 {start_of_verse: Verse 1}
 [C]Well I'm flyin' out of Tulsa tryin' to get out to the coast

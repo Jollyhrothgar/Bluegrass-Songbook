@@ -1,6 +1,6 @@
 {meta: title Walking the Streets}
 {meta: artist Webb Pierce}
-{meta: writer Jim Fields}
+{meta: composer Jim Fields}
 
 {start_of_verse: Verse 1}
 [G]I'm walking the streets watching the sun go [C]down

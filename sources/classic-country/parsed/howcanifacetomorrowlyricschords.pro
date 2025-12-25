@@ -1,6 +1,6 @@
 {meta: title How Can I Face Tomorrow}
 {meta: artist Patsy Cline}
-{meta: writer C.L. Jiles, W.S. Stevenson, C.C. Beam}
+{meta: composer C.L. Jiles, W.S. Stevenson, C.C. Beam}
 
 {start_of_verse: Verse 1}
 [C]Tonight alone I'm thinking of the things we use to [F]do

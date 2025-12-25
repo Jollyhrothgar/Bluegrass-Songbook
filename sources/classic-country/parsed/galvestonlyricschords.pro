@@ -1,6 +1,6 @@
 {meta: title Galveston}
 {meta: artist Glen Campbell}
-{meta: writer Jimmy Webb}
+{meta: composer Jimmy Webb}
 
 {start_of_verse: Verse 1}
 {comment: F }

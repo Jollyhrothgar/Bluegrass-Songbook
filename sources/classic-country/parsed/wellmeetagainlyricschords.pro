@@ -1,6 +1,6 @@
 {meta: title We’ll Meet Again}
 {meta: artist Anne Murray}
-{meta: writer Sammy Fain and Irving Kahal}
+{meta: composer Sammy Fain and Irving Kahal}
 
 {start_of_verse: Verse 1}
 [C]We'll meet [E7]again don't know [A7]where don't know when

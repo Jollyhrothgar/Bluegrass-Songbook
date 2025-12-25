@@ -1,6 +1,6 @@
 {meta: title Everybody Knows}
 {meta: artist Jimmy Dean}
-{meta: writer Charlie Rich}
+{meta: composer Charlie Rich}
 
 {start_of_verse: Verse 1}
 [D7]Every[G]body [D7]knows now everybody [C]know[G]s

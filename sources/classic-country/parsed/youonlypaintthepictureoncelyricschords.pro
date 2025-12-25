@@ -1,6 +1,6 @@
 {meta: title You Only Paint The Picture Once}
 {meta: artist Alabama}
-{meta: writer Randy Owen, Teddy Gentry, Greg Fowler}
+{meta: composer Randy Owen, Teddy Gentry, Greg Fowler}
 
 {start_of_verse: Verse 1}
 [G7]Look at those [Dm]evening [G7]shadows [Dm]casting a peaceful [G7]light

@@ -1,6 +1,6 @@
 {meta: title Why Don't You Spend The Night}
 {meta: artist Ronnie Milsap}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]How did it get so late where did the night [Am]go to

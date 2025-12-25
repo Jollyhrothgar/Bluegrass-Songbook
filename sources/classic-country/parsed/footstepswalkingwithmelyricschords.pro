@@ -1,6 +1,6 @@
 {meta: title Footsteps Walking With Me}
 {meta: artist Daniel O'Donnell}
-{meta: writer Steve and Heather Taylor}
+{meta: composer Steve and Heather Taylor}
 
 {start_of_verse: Verse 1}
 [C]Footsteps [G7]walking with [C]me

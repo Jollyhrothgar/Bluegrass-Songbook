@@ -1,6 +1,6 @@
 {meta: title I'm Lost Between Right And Wrong}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Lee Hayes}
+{meta: composer Lefty Frizzell and Lee Hayes}
 
 {start_of_verse: Verse 1}
 [G]I'm married to one [G7]in love with [C]another

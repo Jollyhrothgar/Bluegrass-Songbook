@@ -1,6 +1,6 @@
 {meta: title Come With Me}
 {meta: artist Waylon Jennings}
-{meta: writer Chuck Howard}
+{meta: composer Chuck Howard}
 
 {start_of_verse: Verse 1}
 [G]If you're in a valley with a troubled [C]mind

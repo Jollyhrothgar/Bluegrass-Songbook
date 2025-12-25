@@ -1,6 +1,6 @@
 {meta: title Footprints In The Sands Of Time}
 {meta: artist Charley Pride}
-{meta: writer Jerry McBee}
+{meta: composer Jerry McBee}
 
 {start_of_verse: Verse 1}
 [G]The strange lonely [C]whistle of the [G]distant movin' train

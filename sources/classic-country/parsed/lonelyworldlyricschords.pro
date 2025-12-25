@@ -1,6 +1,6 @@
 {meta: title Lonely World}
 {meta: artist Ray Price}
-{meta: writer Eddy West}
+{meta: composer Eddy West}
 
 {start_of_verse: Verse 1}
 [G]Lonely world [G7]without you around [C]me

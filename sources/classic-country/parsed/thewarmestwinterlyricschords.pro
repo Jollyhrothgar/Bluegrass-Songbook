@@ -1,6 +1,6 @@
 {meta: title The Warmest Winter}
 {meta: artist Doug Stone}
-{meta: writer Bruce Burch and Will Robinson}
+{meta: composer Bruce Burch and Will Robinson}
 
 {start_of_verse: Verse 1}
 [G]See the morning frost [D7]on the window pain

@@ -1,6 +1,6 @@
 {meta: title You Go Your Way}
 {meta: artist Alan Jackson}
-{meta: writer Troy Jones, David Lee, Tony Lane}
+{meta: composer Troy Jones, David Lee, Tony Lane}
 
 {start_of_verse: Verse 1}
 [C]All your pretty [G7]bags are packed

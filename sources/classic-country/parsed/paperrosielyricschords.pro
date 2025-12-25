@@ -1,6 +1,6 @@
 {meta: title Paper Rosie}
 {meta: artist Gene Watson}
-{meta: writer Dallas Harms}
+{meta: composer Dallas Harms}
 
 {start_of_verse: Verse 1}
 [G]The sun goes down in Calvin [C]county

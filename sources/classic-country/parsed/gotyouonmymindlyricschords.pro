@@ -1,6 +1,6 @@
 {meta: title Got You On My Mind}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Allee Willis, David Lasley, Howard Biggs}
+{meta: composer Allee Willis, David Lasley, Howard Biggs}
 
 {start_of_verse: Verse 1}
 [G]Got you on my mind [C]feeling kinda sad and [G]low

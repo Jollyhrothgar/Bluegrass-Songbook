@@ -1,6 +1,6 @@
 {meta: title Bottom Dollar}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Billy Joe Shaver and Danny Finley}
+{meta: composer Billy Joe Shaver and Danny Finley}
 
 {start_of_verse: Verse 1}
 [G]Bottom [B7]dollar [C]it looks like [G]the [A7]end

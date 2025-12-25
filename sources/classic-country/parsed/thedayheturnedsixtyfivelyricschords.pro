@@ -1,6 +1,6 @@
 {meta: title The Day He Turned Sixty-Five}
 {meta: artist John Conlee}
-{meta: writer Don Henry}
+{meta: composer Don Henry}
 
 {start_of_verse: Verse 1}
 [C]The day he turned sixty-[F]five

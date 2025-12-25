@@ -1,6 +1,6 @@
 {meta: title I Feel the Christmas Spirit}
 {meta: artist Doyle Lawson}
-{meta: writer Joe Isaacs}
+{meta: composer Joe Isaacs}
 
 {start_of_verse: Verse 1}
 [C]I used to mark the calendar and watch the days go [G7]by

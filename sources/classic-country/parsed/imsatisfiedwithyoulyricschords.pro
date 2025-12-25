@@ -1,6 +1,6 @@
 {meta: title I'm Satisfied With You}
 {meta: artist Hank Williams}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]You don't dress up in satin you don't [F]wear diamond rings

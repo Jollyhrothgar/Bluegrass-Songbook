@@ -1,6 +1,6 @@
 {meta: title Everything I'll Ever Own}
 {meta: artist Reba McEntire}
-{meta: writer Bob Morrison and Johnny McRae}
+{meta: composer Bob Morrison and Johnny McRae}
 
 {start_of_verse: Verse 1}
 [C]Funny you can [G7]hold it in your hand 

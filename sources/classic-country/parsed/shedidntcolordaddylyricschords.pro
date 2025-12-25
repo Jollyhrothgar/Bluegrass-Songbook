@@ -1,6 +1,6 @@
 {meta: title She Didn't Color Daddy}
 {meta: artist Wynn Stewart}
-{meta: writer Scott Turner and Roy Warren}
+{meta: composer Scott Turner and Roy Warren}
 
 {start_of_verse: Verse 1}
 [C]I go to see my [G7]little [C]girl 

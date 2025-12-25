@@ -1,6 +1,6 @@
 {meta: title Paper Roses}
 {meta: artist Connie Smith}
-{meta: writer Janice Torre and Fred Spielman}
+{meta: composer Janice Torre and Fred Spielman}
 
 {start_of_verse: Verse 1}
 [Dm](Paper [G7]roses [C]paper [Dm]ros[G7]es)

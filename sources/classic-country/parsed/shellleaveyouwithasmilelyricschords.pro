@@ -1,6 +1,6 @@
 {meta: title She'll Leave You With A Smile}
 {meta: artist George Strait}
-{meta: writer Jackson Leap}
+{meta: composer Jackson Leap}
 
 {start_of_verse: Verse 1}
 [D7]I can [G]see you're falling [C]for her 

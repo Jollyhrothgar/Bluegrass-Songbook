@@ -1,6 +1,6 @@
 {meta: title Looking Out My Window Through The Pain}
 {meta: artist Mel Street}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]I watched from my window as she [F]slipped from the [C]house

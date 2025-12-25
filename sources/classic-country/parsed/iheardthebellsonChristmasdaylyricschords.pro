@@ -1,6 +1,6 @@
 {meta: title I Heard The Bells On Christmas Day}
 {meta: artist Larry Sparks}
-{meta: writer Henry Wadsworth Longfellow and Johnny Marks}
+{meta: composer Henry Wadsworth Longfellow and Johnny Marks}
 
 {start_of_verse: Verse 1}
 [C]I heard the [Am]bells on [D7]Christmas [G7]day

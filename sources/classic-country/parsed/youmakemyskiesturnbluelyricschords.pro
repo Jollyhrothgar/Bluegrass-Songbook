@@ -1,6 +1,6 @@
 {meta: title You Make My Skies Turn Blue}
 {meta: artist Tammy Wynette}
-{meta: writer Jerry Crutchfield}
+{meta: composer Jerry Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]I'll give you love if [F]that's the [A7]price

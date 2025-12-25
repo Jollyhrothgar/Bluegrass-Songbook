@@ -1,6 +1,6 @@
 {meta: title Preparations To Be Blue}
 {meta: artist Lefty Frizzell}
-{meta: writer Del Reeves and Elen Reeves}
+{meta: composer Del Reeves and Elen Reeves}
 
 {start_of_verse: Verse 1}
 [C]I got out my old [F]teardrops [C]tonight

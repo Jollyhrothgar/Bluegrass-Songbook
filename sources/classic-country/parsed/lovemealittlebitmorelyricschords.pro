@@ -1,6 +1,6 @@
 {meta: title Love Me A Little Bit More}
 {meta: artist Jim Reeves}
-{meta: writer Kenny Marlow and Cliff Maynard}
+{meta: composer Kenny Marlow and Cliff Maynard}
 
 {start_of_verse: Verse 1}
 [C]Tease me a little bit squeeze me a little bit

@@ -1,6 +1,6 @@
 {meta: title Out of Mind Out of Sight}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson and Stephen Bruton}
+{meta: composer Kris Kristofferson and Stephen Bruton}
 
 {start_of_verse: Verse 1}
 [F]Buddy tip your bottle back [C]climb aboard the bus

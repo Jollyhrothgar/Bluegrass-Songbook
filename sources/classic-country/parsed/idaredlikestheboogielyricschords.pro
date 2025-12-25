@@ -1,6 +1,6 @@
 {meta: title Ida Red Likes The Boogie}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills and Dean Moore}
+{meta: composer Bob Wills and Dean Moore}
 
 {start_of_verse: Verse 1}
 [G]Now everybody's learning how to do the boogie woogie

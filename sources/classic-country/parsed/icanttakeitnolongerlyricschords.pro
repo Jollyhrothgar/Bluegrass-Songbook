@@ -1,6 +1,6 @@
 {meta: title I Can't Take It No Longer}
 {meta: artist Hank Williams Jr.}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [C]No I can't take it no [F]longer I'm goin' outta my [C]mind

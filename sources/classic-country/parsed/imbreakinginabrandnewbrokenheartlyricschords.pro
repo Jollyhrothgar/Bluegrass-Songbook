@@ -1,6 +1,6 @@
 {meta: title I’m Breaking In A Brand New Broken Heart}
 {meta: artist Wilburn Brothers}
-{meta: writer Howard Greenfield and Jack Keller}
+{meta: composer Howard Greenfield and Jack Keller}
 
 {start_of_verse: Verse 1}
 [C]If my friends should ask for me

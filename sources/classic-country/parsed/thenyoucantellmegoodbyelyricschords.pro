@@ -1,6 +1,6 @@
 {meta: title Then You Can Tell Me Goodbye}
 {meta: artist Eddy Arnold}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G]Kiss me each [Em]morning for a [C]million [D7]years

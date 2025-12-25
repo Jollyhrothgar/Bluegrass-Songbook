@@ -1,6 +1,6 @@
 {meta: title Bottle Of Wine}
 {meta: artist Porter Wagoner}
-{meta: writer Tom Paxton}
+{meta: composer Tom Paxton}
 
 {start_of_verse: Verse 1}
 [C]Bottle of wine fruit of the vine

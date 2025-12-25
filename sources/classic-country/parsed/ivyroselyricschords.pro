@@ -1,6 +1,6 @@
 {meta: title Ivy Rose}
 {meta: artist George Hamilton IV}
-{meta: writer Al Hoffman and Dick Manning}
+{meta: composer Al Hoffman and Dick Manning}
 
 {start_of_verse: Verse 1}
 [G]Ivy Rose [D7]Ivy [G]Rose I'm in [Am]love with [D7]you

@@ -1,6 +1,6 @@
 {meta: title Rock Salt And Nails}
 {meta: artist J.D. Crowe & the New South}
-{meta: writer Bruce Phillips}
+{meta: composer Bruce Phillips}
 
 {start_of_verse: Verse 1}
 [G]On the banks of the river  [C]where the willows hang [G]down

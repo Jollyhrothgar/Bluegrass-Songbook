@@ -1,6 +1,6 @@
 {meta: title Merry Christmas Polka}
 {meta: artist Jim Reeves}
-{meta: writer Willie Phelps}
+{meta: composer Willie Phelps}
 
 {start_of_verse: Verse 1}
 [C]This is Christmas season so there isn't any reason

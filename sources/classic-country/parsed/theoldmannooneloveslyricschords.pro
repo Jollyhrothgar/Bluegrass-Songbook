@@ -1,6 +1,6 @@
 {meta: title The Old Man No One Loves}
 {meta: artist George Jones}
-{meta: writer Wyman Asbill}
+{meta: composer Wyman Asbill}
 
 {start_of_verse: Verse 1}
 [G]In a bar room down in Georgia sits an [C]old man 

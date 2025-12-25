@@ -1,6 +1,6 @@
 {meta: title Thistlehair The Christmas Bear}
 {meta: artist Alabama}
-{meta: writer Donny Lowery}
+{meta: composer Donny Lowery}
 
 {start_of_verse: Verse 1}
 [C]The city's full of manger scenes 

@@ -1,6 +1,6 @@
 {meta: title Born to Lose}
 {meta: artist Eddy Arnold}
-{meta: writer Ted Daffan}
+{meta: composer Ted Daffan}
 
 {start_of_verse: Verse 1}
 [F]Born [G7]to [C]lose I've [F]lived my [G7]life in [C]vain [C7]

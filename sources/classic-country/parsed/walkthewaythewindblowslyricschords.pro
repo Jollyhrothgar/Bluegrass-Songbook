@@ -1,6 +1,6 @@
 {meta: title Walk the Way the Wind Blows}
 {meta: artist Kathy Mattea}
-{meta: writer Tim O'Brien}
+{meta: composer Tim O'Brien}
 
 {start_of_verse: Verse 1}
 [C]Up along the hallway

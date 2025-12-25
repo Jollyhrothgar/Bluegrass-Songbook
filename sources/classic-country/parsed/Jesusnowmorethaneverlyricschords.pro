@@ -1,6 +1,6 @@
 {meta: title Jesus Now More Than Ever}
 {meta: artist Jimmy Swaggart}
-{meta: writer John A. Stallings}
+{meta: composer John A. Stallings}
 
 {start_of_verse: Verse 1}
 [C]For we [F]need yes we need Jesus [G7]now more than [C]ever

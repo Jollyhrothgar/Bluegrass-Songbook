@@ -1,6 +1,6 @@
 {meta: title Sweet Things I Remember About You}
 {meta: artist Cal Smith}
-{meta: writer Darlene Shofner}
+{meta: composer Darlene Shofner}
 
 {start_of_verse: Verse 1}
 [G]The softness of your warm red lips

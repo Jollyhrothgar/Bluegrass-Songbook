@@ -1,6 +1,6 @@
 {meta: title I'll Break Out Again Tonight}
 {meta: artist Darrell McCall}
-{meta: writer Arthur Leo Owens & Sanger D. Shafer}
+{meta: composer Arthur Leo Owens & Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Slowly the long day turns to night

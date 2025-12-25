@@ -1,6 +1,6 @@
 {meta: title The Birth Of The Blues}
 {meta: artist Randy Travis}
-{meta: writer Buddy DeSylva, Lew Brown, Ray Henderson}
+{meta: composer Buddy DeSylva, Lew Brown, Ray Henderson}
 
 {start_of_verse: Verse 1}
 [G7]Oh they say some people long [D7]ago

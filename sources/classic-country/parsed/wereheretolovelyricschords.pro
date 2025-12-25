@@ -1,6 +1,6 @@
 {meta: title We're Here To Love}
 {meta: artist Ronnie Milsap}
-{meta: writer Troy Seals and Mike Reid}
+{meta: composer Troy Seals and Mike Reid}
 
 {start_of_verse: Verse 1}
 [C]We all live on a little ball

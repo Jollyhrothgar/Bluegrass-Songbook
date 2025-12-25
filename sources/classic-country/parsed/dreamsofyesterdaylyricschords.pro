@@ -1,6 +1,6 @@
 {meta: title Dreams of Yesterday}
 {meta: artist Bobby Bare}
-{meta: writer Bobby Bare}
+{meta: composer Bobby Bare}
 
 {start_of_verse: Verse 1}
 [G]I can still recall my [D7]mother [Em]standing on the [Bm]porch

@@ -1,6 +1,6 @@
 {meta: title Will Your Lawyer Talk To God}
 {meta: artist Kitty Wells}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Your lawyer called and said he had the [F]papers all prepared

@@ -1,6 +1,6 @@
 {meta: title A Stranger Was Here}
 {meta: artist Darrell McCall}
-{meta: writer Bob Forshee}
+{meta: composer Bob Forshee}
 
 {start_of_verse: Verse 1}
 [C]The door said a stranger [G7]knocked on it today

@@ -1,6 +1,6 @@
 {meta: title I'll Get Over You}
 {meta: artist Crystal Gayle}
-{meta: writer Richard Leigh}
+{meta: composer Richard Leigh}
 
 {start_of_verse: Verse 1}
 [C]One thing `bout this heart of [F]mine

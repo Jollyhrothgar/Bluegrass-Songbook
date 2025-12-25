@@ -1,6 +1,6 @@
 {meta: title Step Into The Water}
 {meta: artist Cathedral Quartet}
-{meta: writer Kirk Talley}
+{meta: composer Kirk Talley}
 
 {start_of_verse: Verse 1}
 [G]Step into the water wade out a little bit deeper

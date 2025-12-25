@@ -1,6 +1,6 @@
 {meta: title I Heard My Savior Calling Me}
 {meta: artist Rhonda Vincent}
-{meta: writer Rhonda Vincent and Dorothy Johnson}
+{meta: composer Rhonda Vincent and Dorothy Johnson}
 
 {start_of_verse: Verse 1}
 [C]There was a great revival in our [F]little country [C]church

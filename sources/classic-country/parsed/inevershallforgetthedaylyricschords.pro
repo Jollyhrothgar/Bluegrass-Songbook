@@ -1,6 +1,6 @@
 {meta: title I Never Shall Forget The Day}
 {meta: artist The Statler Brothers}
-{meta: writer G.T. Speer}
+{meta: composer G.T. Speer}
 
 {start_of_verse: Verse 1}
 [C]Long years ago [F]when out in [C]sin

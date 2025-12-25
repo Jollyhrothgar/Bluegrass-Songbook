@@ -1,6 +1,6 @@
 {meta: title Marie Laveau}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein and Baxtor Taylor}
+{meta: composer Shel Silverstein and Baxtor Taylor}
 
 {start_of_verse: Verse 1}
 [G]Down in Louisiana where the black trees grow 

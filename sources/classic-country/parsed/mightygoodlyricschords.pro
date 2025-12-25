@@ -1,6 +1,6 @@
 {meta: title Mighty Good}
 {meta: artist Ricky Nelson}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [G]Now when I see you walking by with a wiggle walk

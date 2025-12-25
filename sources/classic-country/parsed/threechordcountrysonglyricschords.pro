@@ -1,6 +1,6 @@
 {meta: title Three Chord Country Song}
 {meta: artist Red Steagall}
-{meta: writer Danny and Red Steagall}
+{meta: composer Danny and Red Steagall}
 
 {start_of_verse: Verse 1}
 [G]Don't you dare put a quarter in the [D7]jukebox 

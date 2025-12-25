@@ -1,6 +1,6 @@
 {meta: title Blue Ridge Mountain Blues}
 {meta: artist Mac Wiseman}
-{meta: writer Bill Clifton and Buddy Dee}
+{meta: composer Bill Clifton and Buddy Dee}
 
 {start_of_verse: Verse 1}
 [G]When I was young and in my [D7]prime

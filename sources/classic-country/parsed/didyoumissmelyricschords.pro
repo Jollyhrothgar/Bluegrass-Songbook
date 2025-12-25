@@ -1,6 +1,6 @@
 {meta: title Did You Miss Me}
 {meta: artist Wanda Jackson}
-{meta: writer Bobby Lord}
+{meta: composer Bobby Lord}
 
 {start_of_verse: Verse 1}
 [G]Tell me did you miss me [C]while I was [D7]gone

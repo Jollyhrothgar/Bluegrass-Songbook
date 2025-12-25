@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Season}
 {meta: artist Charlie Walker}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Today's the first day of honky tonk [C]season

@@ -1,6 +1,6 @@
 {meta: title A Distant Land To Roam}
 {meta: artist Ralph Stanley}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]I remember very well

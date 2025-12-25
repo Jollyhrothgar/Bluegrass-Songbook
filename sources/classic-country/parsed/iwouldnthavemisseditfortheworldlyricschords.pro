@@ -1,6 +1,6 @@
 {meta: title I Wouldn't Have Missed It For The World}
 {meta: artist Ronnie Milsap}
-{meta: writer Rhonda Kye Fleming, Charles W. Quillen, Dennis W. Morgan}
+{meta: composer Rhonda Kye Fleming, Charles W. Quillen, Dennis W. Morgan}
 
 {start_of_verse: Verse 1}
 [Am]Our paths may never cross [G]again

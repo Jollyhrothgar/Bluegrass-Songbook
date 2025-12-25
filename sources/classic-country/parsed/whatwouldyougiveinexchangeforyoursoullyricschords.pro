@@ -1,6 +1,6 @@
 {meta: title What Would You Give In Exchange For Your Soul}
 {meta: artist Webb Pierce}
-{meta: writer J. H. Carr and F. J. Berry}
+{meta: composer J. H. Carr and F. J. Berry}
 
 {start_of_verse: Verse 1}
 [G]Brother afar  from the Savior today

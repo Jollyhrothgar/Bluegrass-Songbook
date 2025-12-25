@@ -1,6 +1,6 @@
 {meta: title Rollin' And Ramblin' (The Death Of Hank Williams)}
 {meta: artist Emmylou Harris}
-{meta: writer Robin Williams, Linda Williams, Jerome Clark}
+{meta: composer Robin Williams, Linda Williams, Jerome Clark}
 
 {start_of_verse: Verse 1}
 Rollin' And Ramblin' 

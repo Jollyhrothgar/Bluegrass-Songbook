@@ -1,6 +1,6 @@
 {meta: title If You Were A Song}
 {meta: artist Ray Price}
-{meta: writer Mac Davis}
+{meta: composer Mac Davis}
 
 {start_of_verse: Verse 1}
 [C]Soft your fingers wipe away the [F]pain

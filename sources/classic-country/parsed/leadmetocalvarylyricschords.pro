@@ -1,6 +1,6 @@
 {meta: title Lead Me To Calvary}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Willie Woodruff}
+{meta: composer Willie Woodruff}
 
 {start_of_verse: Verse 1}
 [C]King [G7]of my [C]life I [F]crown [G7]Thee [C]now

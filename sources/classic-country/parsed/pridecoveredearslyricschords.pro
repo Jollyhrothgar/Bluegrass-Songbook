@@ -1,6 +1,6 @@
 {meta: title Pride Covered Ears}
 {meta: artist Johnny Paycheck}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [G]It sounds like a mad heard of elephants

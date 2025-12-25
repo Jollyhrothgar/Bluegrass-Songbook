@@ -1,6 +1,6 @@
 {meta: title My Last Date}
 {meta: artist Skeeter Davis}
-{meta: writer Skeeter Davis, Floyd Cramer, Boudleaux Bryant}
+{meta: composer Skeeter Davis, Floyd Cramer, Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]One hour and I'll be [F]meeting you

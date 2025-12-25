@@ -1,6 +1,6 @@
 {meta: title Another Lonely Song}
 {meta: artist Tammy Wynette}
-{meta: writer Norris Wilson, Billy Sherrill, Tammy Wynette}
+{meta: composer Norris Wilson, Billy Sherrill, Tammy Wynette}
 
 {start_of_verse: Verse 1}
 [C]Time  won't [G7]ease my memory  it's [Am]killing me [C]now

@@ -1,6 +1,6 @@
 {meta: title I Don't Wanna Love You}
 {meta: artist Ricky Nelson}
-{meta: writer Barry Mann and Cynthia Weil}
+{meta: composer Barry Mann and Cynthia Weil}
 
 {start_of_verse: Verse 1}
 [C]I don't wanna dream about you [F]every single [G7]night

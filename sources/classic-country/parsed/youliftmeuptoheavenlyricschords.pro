@@ -1,6 +1,6 @@
 {meta: title You Lift Me Up To Heaven}
 {meta: artist Reba McEntire}
-{meta: writer Bob Morrison, Johnny McRae, Jim Zerface}
+{meta: composer Bob Morrison, Johnny McRae, Jim Zerface}
 
 {start_of_verse: Verse 1}
 [C]Been to Colorado where the mountains touch the sky

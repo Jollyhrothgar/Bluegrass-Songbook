@@ -1,6 +1,6 @@
 {meta: title Six Thousand Miles Of Wire}
 {meta: artist Red Steagall}
-{meta: writer Russell D. Steagall and Danny M. Steagall}
+{meta: composer Russell D. Steagall and Danny M. Steagall}
 
 {start_of_verse: Verse 1}
 [C]When we first saw the plains there was [F]nothing but [C]grass

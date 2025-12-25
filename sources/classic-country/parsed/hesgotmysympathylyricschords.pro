@@ -1,6 +1,6 @@
 {meta: title He's Got My Sympathy}
 {meta: artist The Everly Brothers}
-{meta: writer Jack Keller and Gerry Goffin}
+{meta: composer Jack Keller and Gerry Goffin}
 
 {start_of_verse: Verse 1}
 [G7]Some lucky guy has caught your [C]eye

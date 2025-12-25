@@ -1,6 +1,6 @@
 {meta: title We Were Almost Like A Dream Come True}
 {meta: artist Rhonda Vincent}
-{meta: writer Larry Cordle, Donnie Clark, Vickie Clark}
+{meta: composer Larry Cordle, Donnie Clark, Vickie Clark}
 
 {start_of_verse: Verse 1}
 [G]I held you last [C]night while I was [G]dreaming

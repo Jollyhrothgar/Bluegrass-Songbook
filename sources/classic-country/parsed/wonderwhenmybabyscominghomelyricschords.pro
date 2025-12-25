@@ -1,6 +1,6 @@
 {meta: title Wonder When My Baby's Coming Home}
 {meta: artist Barbara Mandrell}
-{meta: writer Arthur Kent and Kermit Goell}
+{meta: composer Arthur Kent and Kermit Goell}
 
 {start_of_verse: Verse 1}
 [C]Haven't seen a [E7]sunny day 

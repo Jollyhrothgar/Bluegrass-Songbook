@@ -1,6 +1,6 @@
 {meta: title There Never Was A Time}
 {meta: artist Bobby Bare}
-{meta: writer Myra Smith and Margaret Lewis}
+{meta: composer Myra Smith and Margaret Lewis}
 
 {start_of_verse: Verse 1}
 [G]There was a time we'd sit in the backyard cause the house would get so hot

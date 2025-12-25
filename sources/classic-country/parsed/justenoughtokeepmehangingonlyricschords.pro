@@ -1,6 +1,6 @@
 {meta: title Just Enough To Keep Me Hanging On}
 {meta: artist Vern Gosdin}
-{meta: writer Ira Allen and Buddy Mize}
+{meta: composer Ira Allen and Buddy Mize}
 
 {start_of_verse: Verse 1}
 [C]It's true you have me [Em]twisted around your [F]finger 

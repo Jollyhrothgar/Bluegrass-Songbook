@@ -1,6 +1,6 @@
 {meta: title The Gift}
 {meta: artist Randy Travis}
-{meta: writer Phillip Moore and Ray Scott}
+{meta: composer Phillip Moore and Ray Scott}
 
 {start_of_verse: Verse 1}
 [C]He was born in [F]Bethlehem they [C]say [F]

@@ -1,6 +1,6 @@
 {meta: title She Can}
 {meta: artist Alabama}
-{meta: writer Steve Seskin and Austin Gardner}
+{meta: composer Steve Seskin and Austin Gardner}
 
 {start_of_verse: Verse 1}
 [C]She can light a fire under me

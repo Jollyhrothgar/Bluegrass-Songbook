@@ -1,6 +1,6 @@
 {meta: title Fool For Your Love}
 {meta: artist Mickey Gilley}
-{meta: writer Don R. Singleton}
+{meta: composer Don R. Singleton}
 
 {start_of_verse: Verse 1}
 [G7]I'm just a [C]fo-[Am]ol for you [Dm]baby[G7]

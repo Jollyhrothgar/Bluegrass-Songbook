@@ -1,6 +1,6 @@
 {meta: title Paralyzed}
 {meta: artist Elvis Presley}
-{meta: writer Otis Blackwell and Elvis Presley}
+{meta: composer Otis Blackwell and Elvis Presley}
 
 {start_of_verse: Verse 1}
 [C]When you looked into my eyes

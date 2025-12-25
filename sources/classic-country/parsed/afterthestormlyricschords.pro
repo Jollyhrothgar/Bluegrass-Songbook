@@ -1,6 +1,6 @@
 {meta: title After the Storm}
 {meta: artist Marty Robbins}
-{meta: writer Dale Noe}
+{meta: composer Dale Noe}
 
 {start_of_verse: Verse 1}
 [G]We both have fought the storms of life [D7]together

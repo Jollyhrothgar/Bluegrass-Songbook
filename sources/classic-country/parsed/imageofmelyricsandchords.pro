@@ -1,6 +1,6 @@
 {meta: title The Image of Me}
 {meta: artist Conway Twitty}
-{meta: writer Wayne Kemp}
+{meta: composer Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [G]Yes I know she's the life of the [C]party

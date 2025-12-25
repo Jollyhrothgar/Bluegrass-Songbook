@@ -1,6 +1,6 @@
 {meta: title What A Memory You'll Make}
 {meta: artist Johnny Rodriguez}
-{meta: writer Raymond N. "Rusty" Russell}
+{meta: composer Raymond N. "Rusty" Russell}
 
 {start_of_verse: Verse 1}
 [C]Now and then with a bitter pain of losing [F]you

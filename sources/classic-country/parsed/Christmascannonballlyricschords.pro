@@ -1,6 +1,6 @@
 {meta: title Christmas Cannonball}
 {meta: artist Hank Snow}
-{meta: writer Jack Rollins and Steve Nelson}
+{meta: composer Jack Rollins and Steve Nelson}
 
 {start_of_verse: Verse 1}
 [G]From out the frozen northland to the [C]better tempered [G]clime

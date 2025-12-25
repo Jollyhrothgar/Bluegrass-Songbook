@@ -1,6 +1,6 @@
 {meta: title Do You Live What You Preach}
 {meta: artist Doyle Lawson}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]Many prophets are here as a [F]witness for [C]God

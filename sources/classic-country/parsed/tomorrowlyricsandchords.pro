@@ -1,6 +1,6 @@
 {meta: title Tomorrow}
 {meta: artist The Sullivans}
-{meta: writer Marty Stuart}
+{meta: composer Marty Stuart}
 
 {start_of_verse: Verse 1}
 [G]Tomorrow is uncertain as [C]today was yesterday

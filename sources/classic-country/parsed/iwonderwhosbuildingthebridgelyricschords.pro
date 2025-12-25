@@ -1,6 +1,6 @@
 {meta: title I Wonder Who's Building The Bridge}
 {meta: artist Lefty Frizzell}
-{meta: writer Roger Burch, A.L. Owens, Lou Rochelle}
+{meta: composer Roger Burch, A.L. Owens, Lou Rochelle}
 
 {start_of_verse: Verse 1}
 [C]When I first met her she [G7]cried all of the time

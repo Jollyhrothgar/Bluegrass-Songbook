@@ -1,6 +1,6 @@
 {meta: title Charlie's Angel}
 {meta: artist Mel Tillis}
-{meta: writer Dee Gaskin}
+{meta: composer Dee Gaskin}
 
 {start_of_verse: Verse 1}
 [G]Charlie's some where [C]in the [G]bar

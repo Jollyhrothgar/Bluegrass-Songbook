@@ -1,6 +1,6 @@
 {meta: title He Grew The Tree}
 {meta: artist Barbara Mandrell}
-{meta: writer Chuck Lawrence}
+{meta: composer Chuck Lawrence}
 
 {start_of_verse: Verse 1}
 [C]He molded and [F]built a [C]small lonely [G7]hill[C]

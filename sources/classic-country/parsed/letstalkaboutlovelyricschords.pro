@@ -1,6 +1,6 @@
 {meta: title Let's Talk About Love}
 {meta: artist Jimmy Dean}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [G]Let's talk about love  all [C]day [G]long

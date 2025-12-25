@@ -1,6 +1,6 @@
 {meta: title I'm So In Love With You}
 {meta: artist Wilburn Brothers}
-{meta: writer Sonny James and John Skye}
+{meta: composer Sonny James and John Skye}
 
 {start_of_verse: Verse 1}
 [D7]I'm so in love with [G]you

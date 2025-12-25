@@ -1,6 +1,6 @@
 {meta: title Jesus It's Me Again}
 {meta: artist Charlie Pride}
-{meta: writer Dick Damron}
+{meta: composer Dick Damron}
 
 {start_of_verse: Verse 1}
 [G]Lately Lord [C] I almost feel like [G]dyin'

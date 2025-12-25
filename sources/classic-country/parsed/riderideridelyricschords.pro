@@ -1,6 +1,6 @@
 {meta: title Ride Ride Ride}
 {meta: artist Norma Jean}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]If you don't want me baby

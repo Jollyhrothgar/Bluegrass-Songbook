@@ -1,6 +1,6 @@
 {meta: title He'll Be The One}
 {meta: artist Bob Luman}
-{meta: writer Steve Wariner}
+{meta: composer Steve Wariner}
 
 {start_of_verse: Verse 1}
 [G7]The [C]hurt shows on your [G7]face

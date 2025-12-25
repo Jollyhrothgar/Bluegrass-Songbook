@@ -1,6 +1,6 @@
 {meta: title The Old Lamplighter}
 {meta: artist Jim Ed Brown}
-{meta: writer Charles Tobias and Nat Simon}
+{meta: composer Charles Tobias and Nat Simon}
 
 {start_of_verse: Verse 1}
 [C]He made the [F]night a little [C]brighter

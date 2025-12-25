@@ -1,6 +1,6 @@
 {meta: title Close Enough For Lonesome}
 {meta: artist Mel Street}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]Dim blue [G7]lights and a [F]sad sad [C]jukebox [F]

@@ -1,6 +1,6 @@
 {meta: title Everything}
 {meta: artist Doug Stone}
-{meta: writer Jeff Jones, Rusty VanSickle, Terry Clayton}
+{meta: composer Jeff Jones, Rusty VanSickle, Terry Clayton}
 
 {start_of_verse: Verse 1}
 [C]I don't own a brand new Benz

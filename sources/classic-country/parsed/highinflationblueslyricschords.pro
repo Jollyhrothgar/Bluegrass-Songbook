@@ -1,6 +1,6 @@
 {meta: title High Inflation Blues}
 {meta: artist Moe Bandy}
-{meta: writer Steve Collom}
+{meta: composer Steve Collom}
 
 {start_of_verse: Verse 1}
 [C]Tryin' to make a livin' gets harder every [F]day

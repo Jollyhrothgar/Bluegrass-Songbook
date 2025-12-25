@@ -1,6 +1,6 @@
 {meta: title Tennessee Nights}
 {meta: artist Crystal Gayle}
-{meta: writer Jan Buckingham and Shawna Harrington}
+{meta: composer Jan Buckingham and Shawna Harrington}
 
 {start_of_verse: Verse 1}
 [G]Sunlight is [D7]gone  a wind stirs the [G]willow

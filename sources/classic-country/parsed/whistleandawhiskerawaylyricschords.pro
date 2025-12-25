@@ -1,6 +1,6 @@
 {meta: title A Whistle And A Whisker Away}
 {meta: artist Lynn Anderson}
-{meta: writer Bill Hayes and Lee Hayes}
+{meta: composer Bill Hayes and Lee Hayes}
 
 {start_of_verse: Verse 1}
 [G]It's starting to snow and [Em]you ought to [G]know 

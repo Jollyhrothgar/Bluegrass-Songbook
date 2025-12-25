@@ -1,6 +1,6 @@
 {meta: title No More Hanging On}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [G7]Well if you [C]think it's really over[F] 

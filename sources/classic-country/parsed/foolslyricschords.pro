@@ -1,6 +1,6 @@
 {meta: title Fools}
 {meta: artist Jim Ed Brown and Helen Cornelius}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [C]Fools  [F]never [C]learn  you play [F]with [C]fire 

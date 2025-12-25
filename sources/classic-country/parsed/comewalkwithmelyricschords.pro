@@ -1,6 +1,6 @@
 {meta: title Come Walk With Me}
 {meta: artist Joe Val}
-{meta: writer Burkett Graves}
+{meta: composer Burkett Graves}
 
 {start_of_verse: Verse 1}
 [C]Come walk with me down lover’s [G7]lane

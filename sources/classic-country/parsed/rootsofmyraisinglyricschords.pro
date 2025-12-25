@@ -1,6 +1,6 @@
 {meta: title Roots of my Raising}
 {meta: artist Merle Haggard}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]I left the four lane highway took a [F]blacktop seven [C]miles

@@ -1,6 +1,6 @@
 {meta: title He's Got A Way With Women}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Rodney Lay}
+{meta: composer Hank Thompson and Rodney Lay}
 
 {start_of_verse: Verse 1}
 [C]He walks right [G7]he talks right 

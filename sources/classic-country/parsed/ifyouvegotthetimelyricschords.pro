@@ -1,6 +1,6 @@
 {meta: title If You've Got The Time}
 {meta: artist Red Steagall}
-{meta: writer B. Backer and B. Davis}
+{meta: composer B. Backer and B. Davis}
 
 {start_of_verse: Verse 1}
 [G]If you've got the time  [G7]I've got the [C]place  the same ol' [A7]place

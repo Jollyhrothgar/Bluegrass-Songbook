@@ -1,6 +1,6 @@
 {meta: title Whose Heartache Is This Anyway}
 {meta: artist Reba McEntire}
-{meta: writer Wayland Holyfield and Jim McBride}
+{meta: composer Wayland Holyfield and Jim McBride}
 
 {start_of_verse: Verse 1}
 [G]Don't tell me that time will ease the [C]pain

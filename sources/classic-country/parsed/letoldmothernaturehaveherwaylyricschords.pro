@@ -1,6 +1,6 @@
 {meta: title Let Old Mother Nature Have Her Way}
 {meta: artist Carl Smith}
-{meta: writer Loys Southerland and Louis Clark}
+{meta: composer Loys Southerland and Louis Clark}
 
 {start_of_verse: Verse 1}
 [C]Now Darling this is my Desire

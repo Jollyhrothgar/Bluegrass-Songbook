@@ -1,6 +1,6 @@
 {meta: title If It's So Easy}
 {meta: artist The Bellamy Brothers}
-{meta: writer Richard C. Leigh}
+{meta: composer Richard C. Leigh}
 
 {start_of_verse: Verse 1}
 If It's So Easy

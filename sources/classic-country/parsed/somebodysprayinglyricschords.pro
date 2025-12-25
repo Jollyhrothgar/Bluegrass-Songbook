@@ -1,6 +1,6 @@
 {meta: title Somebody's Praying}
 {meta: artist Ricky Skaggs}
-{meta: writer John G. Elliott}
+{meta: composer John G. Elliott}
 
 {start_of_verse: Verse 1}
 [C]Somebody's [Am]praying

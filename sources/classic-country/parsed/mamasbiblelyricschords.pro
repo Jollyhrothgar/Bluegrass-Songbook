@@ -1,6 +1,6 @@
 {meta: title Mama's Bible}
 {meta: artist Stonewall Jackson}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]Mama's Bible pages [F]trimmed with [C]gold

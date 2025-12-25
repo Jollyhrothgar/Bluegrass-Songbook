@@ -1,6 +1,6 @@
 {meta: title A Different Kind Of Sad}
 {meta: artist Buck Owens}
-{meta: writer Robert John Jones}
+{meta: composer Robert John Jones}
 
 {start_of_verse: Verse 1}
 [C]I've had rainy days and [F]troubles in my [C]life

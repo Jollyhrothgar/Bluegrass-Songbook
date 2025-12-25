@@ -1,6 +1,6 @@
 {meta: title My Baby Lied To Me}
 {meta: artist George Morgan}
-{meta: writer George Morgan and Mary Lee}
+{meta: composer George Morgan and Mary Lee}
 
 {start_of_verse: Verse 1}
 [G]Last night I got a phone call from my honeybee

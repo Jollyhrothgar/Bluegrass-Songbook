@@ -1,6 +1,6 @@
 {meta: title Last Cup Of Coffee}
 {meta: artist Mel Tillis}
-{meta: writer Paul Evans}
+{meta: composer Paul Evans}
 
 {start_of_verse: Verse 1}
 [C]I’ve had my last cup of [G7]coffee with [C]you

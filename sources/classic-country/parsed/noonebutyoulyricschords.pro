@@ -1,6 +1,6 @@
 {meta: title No One But You}
 {meta: artist Ray Price}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [G]I've been to all the old familiar [C]places

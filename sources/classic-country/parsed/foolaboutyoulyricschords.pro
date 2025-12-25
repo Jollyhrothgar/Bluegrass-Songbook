@@ -1,6 +1,6 @@
 {meta: title Fool About You}
 {meta: artist Hank Williams}
-{meta: writer Ralph C. Hutcheson}
+{meta: composer Ralph C. Hutcheson}
 
 {start_of_verse: Verse 1}
 [C]Like a hog a rootin' up under a fence

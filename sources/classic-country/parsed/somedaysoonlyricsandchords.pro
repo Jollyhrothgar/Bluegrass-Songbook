@@ -1,6 +1,6 @@
 {meta: title Someday Soon}
 {meta: artist Moe Bandy}
-{meta: writer Ian Tyson}
+{meta: composer Ian Tyson}
 
 {start_of_verse: Verse 1}
 [G]There's a young girl [Em]that I know she [C]just turned twenty-[G]one

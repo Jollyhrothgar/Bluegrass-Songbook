@@ -1,6 +1,6 @@
 {meta: title It's A Lovely Lovely World}
 {meta: artist Carl Smith}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]Mother Nature's opened up the door

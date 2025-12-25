@@ -1,6 +1,6 @@
 {meta: title Feelin' The Feelin'}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]It started with a smile and the brush of your hand

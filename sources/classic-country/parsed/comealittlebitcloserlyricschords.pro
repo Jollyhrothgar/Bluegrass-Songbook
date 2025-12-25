@@ -1,6 +1,6 @@
 {meta: title Come A Little Bit Closer}
 {meta: artist Johnny Duncan and Janie Fricke}
-{meta: writer Tommy Boyce, Bobby Hart, Wes Farrell}
+{meta: composer Tommy Boyce, Bobby Hart, Wes Farrell}
 
 {start_of_verse: Verse 1}
 [C]In a little cafe just the [F]other side of the [C]border

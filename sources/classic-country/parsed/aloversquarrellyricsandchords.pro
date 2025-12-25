@@ -1,6 +1,6 @@
 {meta: title A Lover's Quarrel}
 {meta: artist George Morgan}
-{meta: writer Newt Richardson and Vic McAlpin}
+{meta: composer Newt Richardson and Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [C]I just had a date that didn’t mean a thing

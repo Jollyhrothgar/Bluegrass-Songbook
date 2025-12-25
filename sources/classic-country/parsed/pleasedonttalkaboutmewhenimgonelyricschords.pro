@@ -1,6 +1,6 @@
 {meta: title Please Don't Talk About Me When I'm Gone}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Sidney Clare, Sam Stept, Bee Palmer}
+{meta: composer Sidney Clare, Sam Stept, Bee Palmer}
 
 {start_of_verse: Verse 1}
 [C]Please don't talk [E7]about me when I'm [A7]gone

@@ -1,6 +1,6 @@
 {meta: title Adalida}
 {meta: artist George Strait}
-{meta: writer Mike Geiger, Mike Huffman, Woody Mullis}
+{meta: composer Mike Geiger, Mike Huffman, Woody Mullis}
 
 {start_of_verse: Verse 1}
 [C]Adalida pretty little Cajun [G7]queen

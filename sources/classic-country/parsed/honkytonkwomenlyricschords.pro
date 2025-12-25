@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Women}
 {meta: artist Ronnie Milsap}
-{meta: writer Mick Jagger and Keith Richards}
+{meta: composer Mick Jagger and Keith Richards}
 
 {start_of_verse: Verse 1}
 [G]I met a gin soaked bar-room queen in [C]Memphis

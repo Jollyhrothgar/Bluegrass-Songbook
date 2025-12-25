@@ -1,6 +1,6 @@
 {meta: title Boulder To Birmingham}
 {meta: artist Emmylou Harris}
-{meta: writer Bill Danoff and Emmylou Harris}
+{meta: composer Bill Danoff and Emmylou Harris}
 
 {start_of_verse: Verse 1}
 [D7]I don't wanna hear a love [G]song

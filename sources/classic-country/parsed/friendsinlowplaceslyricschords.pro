@@ -1,6 +1,6 @@
 {meta: title Friends In Low Places}
 {meta: artist Garth Brooks}
-{meta: writer Dewayne Blackwell and Earl Bud Lee}
+{meta: composer Dewayne Blackwell and Earl Bud Lee}
 
 {start_of_verse: Verse 1}
 [G]Blame it all on my roots I showed up in boots

@@ -1,6 +1,6 @@
 {meta: title If I Could Only Stay Asleep}
 {meta: artist Patsy Cline}
-{meta: writer Ethel Bassey and Wayland Chandler}
+{meta: composer Ethel Bassey and Wayland Chandler}
 
 {start_of_verse: Verse 1}
 [G]Last night I [D7]dreamed  of you [G]sweetheart

@@ -1,6 +1,6 @@
 {meta: title Do It Now}
 {meta: artist Ernest Tubb}
-{meta: writer Jimmie Dallas}
+{meta: composer Jimmie Dallas}
 
 {start_of_verse: Verse 1}
 [C]If you ever gonna kiss me then do [F]it [C]now

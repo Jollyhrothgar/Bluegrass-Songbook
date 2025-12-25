@@ -1,6 +1,6 @@
 {meta: title It'll Take A While}
 {meta: artist Wanda Jackson}
-{meta: writer Curtis Wayne}
+{meta: composer Curtis Wayne}
 
 {start_of_verse: Verse 1}
 [C]Here I sit alone and broken [G7]hearted 

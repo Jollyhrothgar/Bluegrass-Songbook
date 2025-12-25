@@ -1,6 +1,6 @@
 {meta: title I Can't Cry Him Away}
 {meta: artist Jean Shepard}
-{meta: writer Neal Merritt}
+{meta: composer Neal Merritt}
 
 {start_of_verse: Verse 1}
 [G]Every jukebox that I see holds a memory for [C]me

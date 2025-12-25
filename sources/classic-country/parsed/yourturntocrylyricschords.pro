@@ -1,6 +1,6 @@
 {meta: title Your Turn To Cry}
 {meta: artist Hank Williams Jr.}
-{meta: writer Hank Williams and Hank Williams Jr.}
+{meta: composer Hank Williams and Hank Williams Jr.}
 
 {start_of_verse: Verse 1}
 [C]The day that we parted you [G7]laughed when I [C]cried

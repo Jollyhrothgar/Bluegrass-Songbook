@@ -1,6 +1,6 @@
 {meta: title I’m Starting Over}
 {meta: artist Ricky Van Shelton}
-{meta: writer Kix Brooks, Mark Sherrill, John W. Ryles}
+{meta: composer Kix Brooks, Mark Sherrill, John W. Ryles}
 
 {start_of_verse: Verse 1}
 [G]I know you're [D7]surprised to see [G]me here [C]tonight

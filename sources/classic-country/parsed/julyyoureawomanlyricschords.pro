@@ -1,6 +1,6 @@
 {meta: title July You're A Woman}
 {meta: artist Ed Bruce}
-{meta: writer John C. Stewart}
+{meta: composer John C. Stewart}
 
 {start_of_verse: Verse 1}
 [G]I can’t hold it on the [Em]road when you’re [C]sitting right beside [D7]me

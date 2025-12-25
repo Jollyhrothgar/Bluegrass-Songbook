@@ -1,6 +1,6 @@
 {meta: title Someone With No One To Love}
 {meta: artist Buck Owens}
-{meta: writer Red Simpson and Buck Owens}
+{meta: composer Red Simpson and Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]I'm as sad as a bird that can't [G7]sing 

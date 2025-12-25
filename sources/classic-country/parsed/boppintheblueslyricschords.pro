@@ -1,6 +1,6 @@
 {meta: title Boppin' The Blues}
 {meta: artist Ricky Nelson}
-{meta: writer Carl Perkins and Curly Griffin}
+{meta: composer Carl Perkins and Curly Griffin}
 
 {start_of_verse: Verse 1}
 [C]Well all my friends are boppin' the blues it must be goin' [C7]round

@@ -1,6 +1,6 @@
 {meta: title If You Tried As Hard To Love Me}
 {meta: artist Carl Smith}
-{meta: writer J.D. Miller}
+{meta: composer J.D. Miller}
 
 {start_of_verse: Verse 1}
 [G]If you tried as hard to love me as you do to break my heart

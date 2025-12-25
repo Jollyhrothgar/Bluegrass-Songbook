@@ -1,6 +1,6 @@
 {meta: title Put A Little Holiday In Your Heart}
 {meta: artist LeAnn Rimes}
-{meta: writer Greg Wojahn, Roger Wojahn, Scott Wojahn}
+{meta: composer Greg Wojahn, Roger Wojahn, Scott Wojahn}
 
 {start_of_verse: Verse 1}
 [C]Feel the [G7]cold wind [Am]blowing [Dm]winters coming [C]on

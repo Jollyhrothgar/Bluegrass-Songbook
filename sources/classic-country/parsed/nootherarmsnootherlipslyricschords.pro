@@ -1,6 +1,6 @@
 {meta: title No Other Arms No Other Lips}
 {meta: artist Slim Whitman}
-{meta: writer Joan Whitney, Alex Kramer, Hy Zaret}
+{meta: composer Joan Whitney, Alex Kramer, Hy Zaret}
 
 {start_of_verse: Verse 1}
 [C]No other arms [G]no other lips [D7]no other love but [G]you

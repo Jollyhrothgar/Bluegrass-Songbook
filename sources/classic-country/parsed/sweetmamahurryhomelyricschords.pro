@@ -1,6 +1,6 @@
 {meta: title Sweet Mama Hurry Home}
 {meta: artist JImmy Rodgers}
-{meta: writer Jack Neville and Jimmie Rodgers}
+{meta: composer Jack Neville and Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]I've been so [G7]blue [C]and lonesome [G7]too

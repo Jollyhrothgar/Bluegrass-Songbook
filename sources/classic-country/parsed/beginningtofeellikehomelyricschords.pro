@@ -1,6 +1,6 @@
 {meta: title Beginning To Feel Like Home}
 {meta: artist Anne Murray}
-{meta: writer Colleen Peterson}
+{meta: composer Colleen Peterson}
 
 {start_of_verse: Verse 1}
 [G]Well a chillin' [B7]wind has filled the [D7][Em]town

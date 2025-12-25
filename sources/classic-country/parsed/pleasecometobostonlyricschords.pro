@@ -1,6 +1,6 @@
 {meta: title Please Come To Boston}
 {meta: artist Willie Nelson}
-{meta: writer Dave Loggins}
+{meta: composer Dave Loggins}
 
 {start_of_verse: Verse 1}
 [C]Please come to Boston for the [F]springtime

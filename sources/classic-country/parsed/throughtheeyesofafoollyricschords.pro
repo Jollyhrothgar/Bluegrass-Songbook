@@ -1,6 +1,6 @@
 {meta: title Through The Eyes Of A Fool}
 {meta: artist Lefty Frizzell}
-{meta: writer Bobby Bare and Charlie Williams}
+{meta: composer Bobby Bare and Charlie Williams}
 
 {start_of_verse: Verse 1}
 [C]I'll keep [G7]looking through the eyes of a [C]fool

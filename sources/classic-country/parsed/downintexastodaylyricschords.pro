@@ -1,6 +1,6 @@
 {meta: title Down In Texas Today}
 {meta: artist Curtis Potter}
-{meta: writer Mel W. Holt}
+{meta: composer Mel W. Holt}
 
 {start_of_verse: Verse 1}
 [G]Down in Texas today there's [C]this song that they play

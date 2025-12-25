@@ -1,6 +1,6 @@
 {meta: title Happy Memories}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Carole Smith}
+{meta: composer Sonny James and Carole Smith}
 
 {start_of_verse: Verse 1}
 [G7]Happy [C]memories happy [Dm][F]memories

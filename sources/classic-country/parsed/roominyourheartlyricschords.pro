@@ -1,6 +1,6 @@
 {meta: title Room In Your Heart}
 {meta: artist Sonny James}
-{meta: writer Frances Long and Sonny James}
+{meta: composer Frances Long and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]Is there room [Em]room [Am]room in your [C]heart for [Dm]me 

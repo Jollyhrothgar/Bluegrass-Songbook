@@ -1,6 +1,6 @@
 {meta: title If It's Gonna Rain}
 {meta: artist George Strait}
-{meta: writer Dean Dillon, Donny Kees, Scotty Emerick}
+{meta: composer Dean Dillon, Donny Kees, Scotty Emerick}
 
 {start_of_verse: Verse 1}
 [G]If it's gonna rain  [D7]I hope it [G]pours

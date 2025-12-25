@@ -1,6 +1,6 @@
 {meta: title Green Pastures In The Sky}
 {meta: artist Ricky Skaggs}
-{meta: writer Osburn Thorpe}
+{meta: composer Osburn Thorpe}
 
 {start_of_verse: Verse 1}
 [C]The Shepherd leads me out to green [A]pastures

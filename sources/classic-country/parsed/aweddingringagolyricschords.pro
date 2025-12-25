@@ -1,6 +1,6 @@
 {meta: title A Wedding Ring Ago}
 {meta: artist Kitty Wells}
-{meta: writer Claude King and Tillman Franks}
+{meta: composer Claude King and Tillman Franks}
 
 {start_of_verse: Verse 1}
 [G]You say that I was all to blame that's untrue because you know

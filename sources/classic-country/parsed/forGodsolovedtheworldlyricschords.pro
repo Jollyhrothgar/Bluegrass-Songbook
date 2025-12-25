@@ -1,6 +1,6 @@
 {meta: title For God So Loved The World}
 {meta: artist Jimmy Davis}
-{meta: writer Lonnie Hunter}
+{meta: composer Lonnie Hunter}
 
 {start_of_verse: Verse 1}
 [G]As the Savior was [C]walking up [G]Calvary's Hill

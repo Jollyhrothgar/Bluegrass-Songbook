@@ -1,6 +1,6 @@
 {meta: title Got no Reason for Going Home}
 {meta: artist Gene Watson}
-{meta: writer Johnny Russell}
+{meta: composer Johnny Russell}
 
 {start_of_verse: Verse 1}
 [C]Got no reason now for going [F]home 

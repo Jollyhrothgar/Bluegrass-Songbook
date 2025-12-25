@@ -1,6 +1,6 @@
 {meta: title Portrait Of My Woman}
 {meta: artist Eddy Arnold}
-{meta: writer Glen Sherley}
+{meta: composer Glen Sherley}
 
 {start_of_verse: Verse 1}
 [G]Eyes that shine with [C]love for me [D7]caring not for [C]fame's pre[G]stige 

@@ -1,6 +1,6 @@
 {meta: title It Looks Like The Sun’s Gonna Shine}
 {meta: artist Wilburn Brothers}
-{meta: writer Andrew Eddings}
+{meta: composer Andrew Eddings}
 
 {start_of_verse: Verse 1}
 [C]Oh it looks like the sun's gonna shine shine shine

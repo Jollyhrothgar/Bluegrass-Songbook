@@ -1,6 +1,6 @@
 {meta: title What They All Call Love}
 {meta: artist Vince Gill}
-{meta: writer Vince Gill}
+{meta: composer Vince Gill}
 
 {start_of_verse: Verse 1}
 What They All Call Love

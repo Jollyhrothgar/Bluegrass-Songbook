@@ -1,6 +1,6 @@
 {meta: title Cash on the Barrelhead}
 {meta: artist the Louvin Brothers}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]Got in a little trouble at the county seat

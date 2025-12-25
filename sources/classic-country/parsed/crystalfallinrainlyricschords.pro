@@ -1,6 +1,6 @@
 {meta: title Crystal Fallin' Rain}
 {meta: artist Ronnie Milsap}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]When everyone [Dm]you [G7]love [C]hurts you in [Am]return

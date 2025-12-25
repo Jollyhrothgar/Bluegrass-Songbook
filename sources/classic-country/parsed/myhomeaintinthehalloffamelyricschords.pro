@@ -1,6 +1,6 @@
 {meta: title My Home Ain't In The Hall Of Fame}
 {meta: artist J.D. Crowe}
-{meta: writer Joe Dolce}
+{meta: composer Joe Dolce}
 
 {start_of_verse: Verse 1}
 [C]My home ain't [F]in the hall of [C]fame

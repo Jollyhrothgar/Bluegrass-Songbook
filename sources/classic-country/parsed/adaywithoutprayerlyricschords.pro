@@ -1,6 +1,6 @@
 {meta: title A Day Without Prayer}
 {meta: artist Jimmie Davis}
-{meta: writer Jimmie Davis and Lorine Emberton}
+{meta: composer Jimmie Davis and Lorine Emberton}
 
 {start_of_verse: Verse 1}
 [G]The Lord has provided a [C]wonderful [G]way

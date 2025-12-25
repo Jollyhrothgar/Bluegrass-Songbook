@@ -1,6 +1,6 @@
 {meta: title Mr. And Mrs. Santa Claus}
 {meta: artist George Jones and Tammy Wynette}
-{meta: writer Dallas Frazier and Earl Montgomery}
+{meta: composer Dallas Frazier and Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [G]Honey the snow [C]outside is softly [G]fallin'

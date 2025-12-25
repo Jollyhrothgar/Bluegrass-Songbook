@@ -1,6 +1,6 @@
 {meta: title Tiny Blue Transistor Radio}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]On the [F]tiny blue [C]transistor [C][G7]radio

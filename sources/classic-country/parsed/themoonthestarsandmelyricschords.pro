@@ -1,6 +1,6 @@
 {meta: title The Moon The Stars And Me}
 {meta: artist Dolly Parton}
-{meta: writer Wayland Patton and Diana Rae}
+{meta: composer Wayland Patton and Diana Rae}
 
 {start_of_verse: Verse 1}
 [G]Tonight I feel a [C]chill in the [G]air 

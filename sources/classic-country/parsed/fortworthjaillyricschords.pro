@@ -1,6 +1,6 @@
 {meta: title Fort Worth Jail}
 {meta: artist Jimmy Dean}
-{meta: writer Dick Reinhardt}
+{meta: composer Dick Reinhardt}
 
 {start_of_verse: Verse 1}
 [G7]Way [C]down in the [G7]Fort Worth [C]jailhouse feeling kinda [G7]low

@@ -1,6 +1,6 @@
 {meta: title The Old Cross Road}
 {meta: artist Ricky Skaggs}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [G]O my brother take this warning

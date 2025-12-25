@@ -1,6 +1,6 @@
 {meta: title Running Out Of Reasons}
 {meta: artist Mickey Gilley}
-{meta: writer J. W. Gostick and R.E. Westmoreland}
+{meta: composer J. W. Gostick and R.E. Westmoreland}
 
 {start_of_verse: Verse 1}
 [C]Baby you don't love me [G7]perhaps you don't care

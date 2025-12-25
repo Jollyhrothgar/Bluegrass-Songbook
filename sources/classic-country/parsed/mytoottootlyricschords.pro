@@ -1,6 +1,6 @@
 {meta: title My Toot Toot}
 {meta: artist Fats Domino}
-{meta: writer Sidney Semien}
+{meta: composer Sidney Semien}
 
 {start_of_verse: Verse 1}
 [G]Don't mess with my toot toot 

@@ -1,6 +1,6 @@
 {meta: title When Your Old Wedding Ring Was New}
 {meta: artist Jimmy Dean}
-{meta: writer Charles McCarthy, Joe Solieri, Bert Douglas}
+{meta: composer Charles McCarthy, Joe Solieri, Bert Douglas}
 
 {start_of_verse: Verse 1}
 [B7]When your [G]old wedding [D7]ring was [G]new

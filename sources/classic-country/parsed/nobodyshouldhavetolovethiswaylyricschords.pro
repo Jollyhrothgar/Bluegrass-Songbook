@@ -1,6 +1,6 @@
 {meta: title Nobody Should Have To Love This Way}
 {meta: artist Crystal Gayle}
-{meta: writer Rory Bourke, Tommy Rocco, Charlie Black}
+{meta: composer Rory Bourke, Tommy Rocco, Charlie Black}
 
 {start_of_verse: Verse 1}
 [C]Well it looks like [Am]I'm in line

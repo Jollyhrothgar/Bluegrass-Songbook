@@ -1,6 +1,6 @@
 {meta: title Raindrops Keep Falling on My Head}
 {meta: artist B J Thomas}
-{meta: writer Burt Bacharach and Hal David}
+{meta: composer Burt Bacharach and Hal David}
 
 {start_of_verse: Verse 1}
 [C]Raindrops keep falling on my head

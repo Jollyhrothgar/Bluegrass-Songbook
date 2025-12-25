@@ -1,6 +1,6 @@
 {meta: title Years From Now}
 {meta: artist Don Williams}
-{meta: writer Roger Cook and Charles Cochran}
+{meta: composer Roger Cook and Charles Cochran}
 
 {start_of_verse: Verse 1}
 [C]Years [G7]from [F]now [G7]I'll want you [C]years [G7]from [F]now

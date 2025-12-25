@@ -1,6 +1,6 @@
 {meta: title Another Mule}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew}
+{meta: composer Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [G]If your liver starts to jump

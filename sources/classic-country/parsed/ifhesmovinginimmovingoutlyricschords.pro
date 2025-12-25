@@ -1,6 +1,6 @@
 {meta: title If He's Moving In I’m Moving Out}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills and Bobby Miller}
+{meta: composer Bob Wills and Bobby Miller}
 
 {start_of_verse: Verse 1}
 [C]If he moves in I’m moving  [F]out of your heart

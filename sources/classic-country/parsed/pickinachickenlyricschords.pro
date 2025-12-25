@@ -1,6 +1,6 @@
 {meta: title Pickin' A Chicken}
 {meta: artist Jim Reeves}
-{meta: writer Derek Bernfield, John Roberts, Trevor Boswell}
+{meta: composer Derek Bernfield, John Roberts, Trevor Boswell}
 
 {start_of_verse: Verse 1}
 [C]Come to the barbeque and [G7]sit by my side

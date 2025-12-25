@@ -1,6 +1,6 @@
 {meta: title With You It's The Money}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]With you it’s the money it’s never been love

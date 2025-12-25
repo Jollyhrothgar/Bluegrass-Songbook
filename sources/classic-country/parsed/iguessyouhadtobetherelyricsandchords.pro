@@ -1,6 +1,6 @@
 {meta: title I Guess You Had To Be There}
 {meta: artist Gene Watson}
-{meta: writer Dave Lindsey and Edwin Rowell}
+{meta: composer Dave Lindsey and Edwin Rowell}
 
 {start_of_verse: Verse 1}
 [G]I wish that [D7]I could [G]tell you what it [D7]means to know her [G]love

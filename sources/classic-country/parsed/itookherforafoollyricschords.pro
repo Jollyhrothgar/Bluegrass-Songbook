@@ -1,6 +1,6 @@
 {meta: title I Took Her For A Fool}
 {meta: artist Cal Smith}
-{meta: writer Randall J. Colemus}
+{meta: composer Randall J. Colemus}
 
 {start_of_verse: Verse 1}
 [G]I'm setting in this honky tonk down to my last [D7]dime

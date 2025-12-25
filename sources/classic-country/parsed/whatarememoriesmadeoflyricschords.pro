@@ -1,6 +1,6 @@
 {meta: title What Are Memories Made Of}
 {meta: artist Billy Crash Craddock}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [C]What are memories [F]made of[G7]

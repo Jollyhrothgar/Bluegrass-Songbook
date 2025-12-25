@@ -1,6 +1,6 @@
 {meta: title I'm Blue}
 {meta: artist Hank Locklin}
-{meta: writer Jessi Colter}
+{meta: composer Jessi Colter}
 
 {start_of_verse: Verse 1}
 [G]I'm [C]blue [G]so [C]blue

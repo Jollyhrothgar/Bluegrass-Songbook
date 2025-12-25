@@ -1,6 +1,6 @@
 {meta: title Coast Of Colorado}
 {meta: artist Skip Ewing}
-{meta: writer Max D. Barnes and Skip Ewing}
+{meta: composer Max D. Barnes and Skip Ewing}
 
 {start_of_verse: Verse 1}
 [C]I know leavin' me is killin' [F]you     

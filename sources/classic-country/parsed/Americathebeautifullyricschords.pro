@@ -1,6 +1,6 @@
 {meta: title America The Beautiful}
 {meta: artist Boxcar Willie}
-{meta: writer Katherine Lee Bates, Samuel A. Ward}
+{meta: composer Katherine Lee Bates, Samuel A. Ward}
 
 {start_of_verse: Verse 1}
 [G]Oh beautiful for [D7]spacious skies

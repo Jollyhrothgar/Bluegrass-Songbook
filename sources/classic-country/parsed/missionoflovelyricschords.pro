@@ -1,6 +1,6 @@
 {meta: title Mission Of Love}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray and Hank Thompson}
+{meta: composer Billy Gray and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]I received the ultimatum that you sent me

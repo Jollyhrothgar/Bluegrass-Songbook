@@ -1,6 +1,6 @@
 {meta: title Down In Mexico}
 {meta: artist Bobby Bare}
-{meta: writer Bobby Bare and Skeets McDonald}
+{meta: composer Bobby Bare and Skeets McDonald}
 
 {start_of_verse: Verse 1}
 [C]I'm down in [G7]Mexi[F]co [G7]had to [F]go [C]won't be [B7]home no [C]more

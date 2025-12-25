@@ -1,6 +1,6 @@
 {meta: title I Need You}
 {meta: artist Ricky Nelson}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [G]If you should ever think of leaving me don't let it go too [D7]far

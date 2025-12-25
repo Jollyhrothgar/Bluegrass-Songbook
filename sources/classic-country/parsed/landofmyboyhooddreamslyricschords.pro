@@ -1,6 +1,6 @@
 {meta: title Land Of My Boyhood Dreams}
 {meta: artist Hank Snow}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]Alone in a [G7]great big [C]city I'm as [F]lonesome as I can [C]be

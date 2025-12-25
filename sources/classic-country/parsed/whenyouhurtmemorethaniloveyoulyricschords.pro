@@ -1,6 +1,6 @@
 {meta: title When You Hurt Me More Than I Love You}
 {meta: artist Lynn Anderson}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]The time will come when I'll be free 

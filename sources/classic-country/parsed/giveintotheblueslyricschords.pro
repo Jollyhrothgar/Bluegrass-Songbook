@@ -1,6 +1,6 @@
 {meta: title Give In To The Blues}
 {meta: artist Stonewall Jackson}
-{meta: writer Stonewall Jackson and Juanita Jackson}
+{meta: composer Stonewall Jackson and Juanita Jackson}
 
 {start_of_verse: Verse 1}
 [C]There's a party going on on the other side of [G7]town

@@ -1,6 +1,6 @@
 {meta: title Blue Is Not A Word}
 {meta: artist George Strait}
-{meta: writer Joel Sonier and Judy Ball}
+{meta: composer Joel Sonier and Judy Ball}
 
 {start_of_verse: Verse 1}
 [C]I've never once in my [Em]life [F]met someone like [Dm]you

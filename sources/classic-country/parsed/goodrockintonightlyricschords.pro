@@ -1,6 +1,6 @@
 {meta: title Good Rockin’ Tonight}
 {meta: artist Buddy Holly}
-{meta: writer Roy Brown}
+{meta: composer Roy Brown}
 
 {start_of_verse: Verse 1}
 [C]Well I heard the news there's good rockin' tonight

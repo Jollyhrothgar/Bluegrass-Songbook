@@ -1,6 +1,6 @@
 {meta: title The Long Way}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Jeff Hill}
+{meta: composer Jeff Hill}
 
 {start_of_verse: Verse 1}
 [C]I met her I [G7]loved her we [C]married

@@ -1,6 +1,6 @@
 {meta: title Too Busy Being In Love}
 {meta: artist Doug Stone}
-{meta: writer Gary Burr and Victoria Shaw}
+{meta: composer Gary Burr and Victoria Shaw}
 
 {start_of_verse: Verse 1}
 [C]If I had taken the [Dm]time to write down a few [Em]lines

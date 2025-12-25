@@ -1,6 +1,6 @@
 {meta: title Four Minus Three Equals Zero}
 {meta: artist George Strait}
-{meta: writer Lonnie Williams}
+{meta: composer Lonnie Williams}
 
 {start_of_verse: Verse 1}
 [G]You always [D7]said you [G]loved me

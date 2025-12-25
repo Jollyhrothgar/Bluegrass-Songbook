@@ -1,6 +1,6 @@
 {meta: title The Last Letter}
 {meta: artist Jack Greene}
-{meta: writer Rex Griffin}
+{meta: composer Rex Griffin}
 
 {start_of_verse: Verse 1}
 [C]Why do you treat me as if I were only a [G7]friend

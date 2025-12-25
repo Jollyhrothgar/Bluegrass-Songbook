@@ -1,6 +1,6 @@
 {meta: title Some Broken Hearts Never Mend}
 {meta: artist Don Williams}
-{meta: writer Waylon Holyfield}
+{meta: composer Waylon Holyfield}
 
 {start_of_verse: Verse 1}
 [G]Coffee black  [D7]cigarette 

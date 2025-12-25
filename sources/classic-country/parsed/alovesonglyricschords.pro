@@ -1,6 +1,6 @@
 {meta: title A Love Song}
 {meta: artist Anne Murray}
-{meta: writer Kenny Loggins and D.L. George}
+{meta: composer Kenny Loggins and D.L. George}
 
 {start_of_verse: Verse 1}
 [G]There's a wren in a willow wood 

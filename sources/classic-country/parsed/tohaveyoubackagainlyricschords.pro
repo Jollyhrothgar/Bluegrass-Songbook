@@ -1,6 +1,6 @@
 {meta: title To Have You Back Again}
 {meta: artist Patty Loveless}
-{meta: writer Annie Roboff and Arnie Roman}
+{meta: composer Annie Roboff and Arnie Roman}
 
 {start_of_verse: Verse 1}
 [C]Love [G7]  love's a cha[Am]meleon [C]makes one in a [F]million[Dm] 

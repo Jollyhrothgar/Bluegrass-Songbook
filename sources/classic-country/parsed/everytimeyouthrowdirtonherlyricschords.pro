@@ -1,6 +1,6 @@
 {meta: title Every Time You Throw Dirt On Her}
 {meta: artist George Strait}
-{meta: writer Michael Garvin and Tom Shapiro}
+{meta: composer Michael Garvin and Tom Shapiro}
 
 {start_of_verse: Verse 1}
 [C]I guess you think it’s fun to [F]laugh at her expense

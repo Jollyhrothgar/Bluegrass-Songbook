@@ -1,6 +1,6 @@
 {meta: title You Got Me Over A Heartache Tonight}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton and Larry Weiss}
+{meta: composer Dolly Parton and Larry Weiss}
 
 {start_of_verse: Verse 1}
 [C]Can't say we're lovers [G7]can't say we're [C]friends 

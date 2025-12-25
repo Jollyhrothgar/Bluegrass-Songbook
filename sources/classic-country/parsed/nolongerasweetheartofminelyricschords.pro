@@ -1,6 +1,6 @@
 {meta: title No Longer a Sweetheart of Mine}
 {meta: artist Reno and Smiley}
-{meta: writer Don Reno, Fred Swift, Red Smiley}
+{meta: composer Don Reno, Fred Swift, Red Smiley}
 
 {start_of_verse: Verse 1}
 [C]We are saying goodbye dear [G7]forever

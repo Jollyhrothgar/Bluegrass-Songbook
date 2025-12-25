@@ -1,6 +1,6 @@
 {meta: title Let the World Keep on a Turning}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]Let the world keep on a turning 

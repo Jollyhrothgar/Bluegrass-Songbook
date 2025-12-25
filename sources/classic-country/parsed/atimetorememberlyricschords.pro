@@ -1,6 +1,6 @@
 {meta: title A Time To Remember}
 {meta: artist Bob Luman}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]One moment lives [E7]forever [F]somewhere in my mind

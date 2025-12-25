@@ -1,6 +1,6 @@
 {meta: title Gunsmoke Trail}
 {meta: artist Tex Ritter}
-{meta: writer Glenn Spencer and Rex Koury}
+{meta: composer Glenn Spencer and Rex Koury}
 
 {start_of_verse: Verse 1}
 [G]Gunsmoke trail oh tell me of days gone [C]by

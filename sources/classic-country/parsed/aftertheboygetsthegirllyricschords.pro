@@ -1,6 +1,6 @@
 {meta: title After the Boy Gets the Girl Lyrics Chords}
 {meta: artist Web Pierce}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]My story begins where most stories [F]end  

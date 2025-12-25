@@ -1,6 +1,6 @@
 {meta: title You Know Just What I’d Do}
 {meta: artist Conway Twitty}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]If we lost all we [F]had

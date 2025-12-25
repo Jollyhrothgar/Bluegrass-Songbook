@@ -1,6 +1,6 @@
 {meta: title River Boy}
 {meta: artist Waylon Jennings}
-{meta: writer Fred F. Carter Jr.}
+{meta: composer Fred F. Carter Jr.}
 
 {start_of_verse: Verse 1}
 [C]I was born and raised on the [F]river

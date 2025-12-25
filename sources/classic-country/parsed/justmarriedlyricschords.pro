@@ -1,6 +1,6 @@
 {meta: title Just Married Lyrics chords}
 {meta: artist Marty Robbins}
-{meta: writer Al Allen}
+{meta: composer Al Allen}
 
 {start_of_verse: Verse 1}
 [G]Just married this mornin' how [C]happy they [D7]are

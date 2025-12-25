@@ -1,6 +1,6 @@
 {meta: title Is It That Time Again}
 {meta: artist George Strait}
-{meta: writer Dean Dillon, Buddy Cannon, Vern Gosdin}
+{meta: composer Dean Dillon, Buddy Cannon, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [G7]Is it that [C]time again [G7]closin' time closin' in

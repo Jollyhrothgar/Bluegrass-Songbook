@@ -1,6 +1,6 @@
 {meta: title I'm Not Blaming You}
 {meta: artist Marty Robbins}
-{meta: writer Billy Mize}
+{meta: composer Billy Mize}
 
 {start_of_verse: Verse 1}
 [C]She might meet you secretly when she's [G7]lonely

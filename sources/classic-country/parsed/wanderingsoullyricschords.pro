@@ -1,6 +1,6 @@
 {meta: title Wandering Soul}
 {meta: artist George Jones}
-{meta: writer George Jones and Bill Dudley}
+{meta: composer George Jones and Bill Dudley}
 
 {start_of_verse: Verse 1}
 [G]Oh lend me a hand [C]please Lord and guide [G]me

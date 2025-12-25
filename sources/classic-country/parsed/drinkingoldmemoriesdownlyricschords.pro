@@ -1,6 +1,6 @@
 {meta: title Drinking Old Memories Down}
 {meta: artist Mickey Gilley}
-{meta: writer Stanley Kimble Garland}
+{meta: composer Stanley Kimble Garland}
 
 {start_of_verse: Verse 1}
 [G]Well I'm drinking old memories [C]down

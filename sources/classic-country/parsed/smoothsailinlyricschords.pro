@@ -1,6 +1,6 @@
 {meta: title Smooth Sailin'}
 {meta: artist T.G.Sheppard}
-{meta: writer Curly Putman and Sonny Throckmorton}
+{meta: composer Curly Putman and Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [G]We got smooth sailin' sailin'

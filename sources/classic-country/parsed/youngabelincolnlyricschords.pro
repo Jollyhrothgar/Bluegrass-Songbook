@@ -1,6 +1,6 @@
 {meta: title Young Abe Lincoln}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Horton and Ronald Hauffstettler}
+{meta: composer Johnny Horton and Ronald Hauffstettler}
 
 {start_of_verse: Verse 1}
 [C]Well he lived in a cabin way down [F]by the [C]creek

@@ -1,6 +1,6 @@
 {meta: title Oh Gentle Shepherd}
 {meta: artist Jim Reeves}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]My soul is lost so [G7]lonely and so [C]cold 

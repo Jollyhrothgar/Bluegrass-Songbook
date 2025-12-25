@@ -1,6 +1,6 @@
 {meta: title Quarter To Three}
 {meta: artist Billy Crash Craddock}
-{meta: writer Razzy Bailey}
+{meta: composer Razzy Bailey}
 
 {start_of_verse: Verse 1}
 [C]Doin' my thing playin' on the strings 

@@ -1,6 +1,6 @@
 {meta: title Facing The Wall}
 {meta: artist Charlie Walker}
-{meta: writer Hank Mills and Charlie Walker}
+{meta: composer Hank Mills and Charlie Walker}
 
 {start_of_verse: Verse 1}
 [G]Facing the w-all [C]feeling [G]lonely

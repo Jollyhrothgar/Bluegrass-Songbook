@@ -1,6 +1,6 @@
 {meta: title I Want To Live Again}
 {meta: artist Merle Haggard and Bonnie Owens}
-{meta: writer Fuzzy Owen}
+{meta: composer Fuzzy Owen}
 
 {start_of_verse: Verse 1}
 [C]We stopped living when [G]our love died and I [D7]wanta live [G]again

@@ -1,6 +1,6 @@
 {meta: title Half A Heart}
 {meta: artist Willie Nelson}
-{meta: writer Buddy Killen and Robert Riley}
+{meta: composer Buddy Killen and Robert Riley}
 
 {start_of_verse: Verse 1}
 [C]I don't [G7]love you like [C]I used [C7]to

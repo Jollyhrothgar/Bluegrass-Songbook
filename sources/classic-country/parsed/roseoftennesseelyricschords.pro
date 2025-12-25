@@ -1,6 +1,6 @@
 {meta: title Rose Of Tennessee}
 {meta: artist Cowboy Copas}
-{meta: writer Robert Foster and Lloyd Copas}
+{meta: composer Robert Foster and Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [C]There's a flower that is blooming down in [G7]old Tennessee

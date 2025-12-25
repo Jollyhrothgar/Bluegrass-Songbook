@@ -1,6 +1,6 @@
 {meta: title The Closer You Get}
 {meta: artist Alabama}
-{meta: writer Mark Eugene Gray and James P. Pennnington}
+{meta: composer Mark Eugene Gray and James P. Pennnington}
 
 {start_of_verse: Verse 1}
 [D7]The closer you [G]get the further I [C]fall 

@@ -1,6 +1,6 @@
 {meta: title I Want To Be Like Jesus}
 {meta: artist Larry Sparks}
-{meta: writer John Smith}
+{meta: composer John Smith}
 
 {start_of_verse: Verse 1}
 [G]Some wanna be a prophet of the Lord

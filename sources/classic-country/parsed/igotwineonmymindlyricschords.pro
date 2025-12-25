@@ -1,6 +1,6 @@
 {meta: title I Got Wine On My Mind}
 {meta: artist Johnny Paycheck}
-{meta: writer B. George}
+{meta: composer B. George}
 
 {start_of_verse: Verse 1}
 [C]I’d like to go to [F]church Sunday [C]morning

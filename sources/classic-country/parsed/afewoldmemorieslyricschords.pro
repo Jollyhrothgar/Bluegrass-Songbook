@@ -1,6 +1,6 @@
 {meta: title A Few Old Memories}
 {meta: artist Dolly Parton}
-{meta: writer Hazel Dickens}
+{meta: composer Hazel Dickens}
 
 {start_of_verse: Verse 1}
 [G]Just a few old memories 

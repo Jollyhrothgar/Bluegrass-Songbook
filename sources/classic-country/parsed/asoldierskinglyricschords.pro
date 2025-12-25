@@ -1,6 +1,6 @@
 {meta: title A Soldier's King}
 {meta: artist Kenny Rogers}
-{meta: writer John Barlow Jarvis and Kenny Horton}
+{meta: composer John Barlow Jarvis and Kenny Horton}
 
 {start_of_verse: Verse 1}
 [C]No one seemed to notice the [Am]man beside the [C]road

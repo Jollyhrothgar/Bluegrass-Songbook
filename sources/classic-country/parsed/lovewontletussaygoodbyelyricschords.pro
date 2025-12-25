@@ -1,6 +1,6 @@
 {meta: title Love Won't Let Us Say Goodbye}
 {meta: artist Lee Greenwood}
-{meta: writer Jan Crutchfield and Paul Harrison}
+{meta: composer Jan Crutchfield and Paul Harrison}
 
 {start_of_verse: Verse 1}
 [C]We promised love forever

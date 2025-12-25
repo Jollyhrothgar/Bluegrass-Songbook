@@ -1,6 +1,6 @@
 {meta: title Don't Go My Love}
 {meta: artist Crystal Gayle}
-{meta: writer James Valentini and Frank Saulino}
+{meta: composer James Valentini and Frank Saulino}
 
 {start_of_verse: Verse 1}
 [D7]What a [G]beautiful [D7]gift a [Em]heart can [D7]be 

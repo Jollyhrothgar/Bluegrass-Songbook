@@ -1,6 +1,6 @@
 {meta: title Breeze Blow My Baby Back To Me}
 {meta: artist Jim Reeves}
-{meta: writer Ted Daffan and Bernard Landes}
+{meta: composer Ted Daffan and Bernard Landes}
 
 {start_of_verse: Verse 1}
 [C]Breeze you took her from my [G7]side 

@@ -1,6 +1,6 @@
 {meta: title One Night To Remember}
 {meta: artist Ray Price}
-{meta: writer Raymond Smith}
+{meta: composer Raymond Smith}
 
 {start_of_verse: Verse 1}
 [G]It's funny [B7]now that it's [C]ending

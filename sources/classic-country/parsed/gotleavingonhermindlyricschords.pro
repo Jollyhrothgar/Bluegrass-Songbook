@@ -1,6 +1,6 @@
 {meta: title Got Leaving On Her Mind}
 {meta: artist Charlie Pride}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]She don't hold and [F]kiss me like [C]she did one [Am]time

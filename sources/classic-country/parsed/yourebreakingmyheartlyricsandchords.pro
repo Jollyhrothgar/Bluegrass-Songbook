@@ -1,6 +1,6 @@
 {meta: title You're Breaking My Heart}
 {meta: artist Ernest Tubb}
-{meta: writer H.H. Melka}
+{meta: composer H.H. Melka}
 
 {start_of_verse: Verse 1}
 [G]The clothes that I wear [G7]are shabby and [C]old

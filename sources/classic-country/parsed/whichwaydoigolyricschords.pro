@@ -1,6 +1,6 @@
 {meta: title Which Way Do I Go}
 {meta: artist Waylon Jennings}
-{meta: writer Johnny McRae and Steve Clark}
+{meta: composer Johnny McRae and Steve Clark}
 
 {start_of_verse: Verse 1}
 [C]I put yesterday and [F]half the night [C]between us

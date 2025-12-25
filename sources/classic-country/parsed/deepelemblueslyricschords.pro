@@ -1,6 +1,6 @@
 {meta: title Deep Elem Blues}
 {meta: artist Hank Thompson}
-{meta: writer Bob Attlesey and Joe Attlesey}
+{meta: composer Bob Attlesey and Joe Attlesey}
 
 {start_of_verse: Verse 1}
 [G]When you go down to Deep Elem just to have a little fun

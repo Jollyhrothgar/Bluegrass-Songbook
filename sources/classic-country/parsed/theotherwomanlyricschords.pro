@@ -1,6 +1,6 @@
 {meta: title The Other Woman}
 {meta: artist Ray Price}
-{meta: writer Don Rollins}
+{meta: composer Don Rollins}
 
 {start_of_verse: Verse 1}
 [C]Don't accuse me of being without [F]feelings  

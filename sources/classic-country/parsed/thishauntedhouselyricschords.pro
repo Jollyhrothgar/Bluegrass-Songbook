@@ -1,6 +1,6 @@
 {meta: title This Haunted House}
 {meta: artist Loretta Lynn}
-{meta: writer Oliver Doolittle}
+{meta: composer Oliver Doolittle}
 
 {start_of_verse: Verse 1}
 [C]I watched you leave that's [F]how I know you're [C]gone

@@ -1,6 +1,6 @@
 {meta: title I Walked Out On Heaven}
 {meta: artist Hank Williams Jr.}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]When I walked out I said  [D7]it had to be this [G]way

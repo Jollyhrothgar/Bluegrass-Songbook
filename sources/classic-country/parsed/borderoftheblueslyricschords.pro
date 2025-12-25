@@ -1,6 +1,6 @@
 {meta: title Border Of The Blues}
 {meta: artist Hank Locklin}
-{meta: writer Lawton Williams and Frankie Miller}
+{meta: composer Lawton Williams and Frankie Miller}
 
 {start_of_verse: Verse 1}
 [G]I stopped into our old hang out

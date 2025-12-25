@@ -1,6 +1,6 @@
 {meta: title Long White Cadillac}
 {meta: artist Dwight Yoakam}
-{meta: writer Dave Alvin}
+{meta: composer Dave Alvin}
 
 {start_of_verse: Verse 1}
 [C]Night wolves moan winter hills are black

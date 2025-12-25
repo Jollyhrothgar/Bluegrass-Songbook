@@ -1,6 +1,6 @@
 {meta: title The Lady Takes A Cowboy Everytime}
 {meta: artist Gatlin Brothers}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 [G]Sm--ooth talker

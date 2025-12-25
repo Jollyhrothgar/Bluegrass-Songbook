@@ -1,6 +1,6 @@
 {meta: title You And Me Together}
 {meta: artist Tammy Wynette}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [G]Well we found a life together

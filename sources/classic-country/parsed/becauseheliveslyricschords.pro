@@ -1,6 +1,6 @@
 {meta: title Because He Lives}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Bill and Gloria Gaither}
+{meta: composer Bill and Gloria Gaither}
 
 {start_of_verse: Verse 1}
 [C]God sent His son and they called Him [F]Jesus

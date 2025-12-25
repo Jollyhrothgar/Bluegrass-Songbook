@@ -1,6 +1,6 @@
 {meta: title Soldier's Last Letter}
 {meta: artist Ernest Tubb}
-{meta: writer Sgt. Henry Stewart and Ernest Tubb}
+{meta: composer Sgt. Henry Stewart and Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]When the postman delivered a [G7]letter

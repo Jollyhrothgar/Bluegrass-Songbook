@@ -1,6 +1,6 @@
 {meta: title For Sale Lyrics and Chords}
 {meta: artist Hank Snow}
-{meta: writer John Howard and Eugene Dragee}
+{meta: composer John Howard and Eugene Dragee}
 
 {start_of_verse: Verse 1}
 [C]For sale one ring that's on your finger (it's such a pretty [G7]thing)

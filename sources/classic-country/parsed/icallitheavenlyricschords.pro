@@ -1,6 +1,6 @@
 {meta: title I Call It Heaven}
 {meta: artist Billy Walker}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [C]They call me a fool and say it won't [F]last 

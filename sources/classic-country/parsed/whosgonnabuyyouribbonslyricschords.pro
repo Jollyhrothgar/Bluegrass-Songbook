@@ -1,6 +1,6 @@
 {meta: title Who's Gonna Buy You Ribbons}
 {meta: artist Jim Ed Brown}
-{meta: writer Paul Clayton}
+{meta: composer Paul Clayton}
 
 {start_of_verse: Verse 1}
 [C]Ain't no use to [E7]sit and cry [Am]now [F]darling

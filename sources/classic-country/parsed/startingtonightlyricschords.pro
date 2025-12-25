@@ -1,6 +1,6 @@
 {meta: title Starting Tonight}
 {meta: artist Alabama}
-{meta: writer Teddy Gentry, Greg Fowler, John Jarrad}
+{meta: composer Teddy Gentry, Greg Fowler, John Jarrad}
 
 {start_of_verse: Verse 1}
 [G]If I could [Em]design forever[G] 

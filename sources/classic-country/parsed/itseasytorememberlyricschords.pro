@@ -1,6 +1,6 @@
 {meta: title It's Easy To Remember}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Lorenz Hart and Richard Rodgers}
+{meta: composer Lorenz Hart and Richard Rodgers}
 
 {start_of_verse: Verse 1}
 [G]It's so easy to re[C]member

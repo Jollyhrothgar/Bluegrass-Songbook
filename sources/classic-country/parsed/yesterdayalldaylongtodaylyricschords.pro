@@ -1,6 +1,6 @@
 {meta: title Yesterday All Day Long Today}
 {meta: artist Norma Jean}
-{meta: writer Clark Bentley}
+{meta: composer Clark Bentley}
 
 {start_of_verse: Verse 1}
 [C]When I awoke this morning I looked [F]around and you were [C]back

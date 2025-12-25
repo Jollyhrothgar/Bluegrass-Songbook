@@ -1,6 +1,6 @@
 {meta: title So Much to Thank Him For}
 {meta: artist Kevin Spencer}
-{meta: writer Robert Deel}
+{meta: composer Robert Deel}
 
 {start_of_verse: Verse 1}
 [C]When I look around and see

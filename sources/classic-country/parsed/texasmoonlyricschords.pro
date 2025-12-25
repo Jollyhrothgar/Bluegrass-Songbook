@@ -1,6 +1,6 @@
 {meta: title Texas Moon}
 {meta: artist Johnny Duncan}
-{meta: writer David Patton}
+{meta: composer David Patton}
 
 {start_of_verse: Verse 1}
 [C]On the window sill of an [F]empty hotel [C]room

@@ -1,6 +1,6 @@
 {meta: title You Are The One}
 {meta: artist Carl Smith}
-{meta: writer Pat Petterson}
+{meta: composer Pat Petterson}
 
 {start_of_verse: Verse 1}
 [C]You are the one you’re the one in my [G7]heart

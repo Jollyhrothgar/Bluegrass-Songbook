@@ -1,6 +1,6 @@
 {meta: title My House Is Your Honky Tonk}
 {meta: artist Lefty Frizzell}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]If you're gonna slip around with my [D7]woman

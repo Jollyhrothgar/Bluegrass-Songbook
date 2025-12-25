@@ -1,6 +1,6 @@
 {meta: title Mockingbird Hill}
 {meta: artist Slim Whitman}
-{meta: writer Vaughn Horton}
+{meta: composer Vaughn Horton}
 
 {start_of_verse: Verse 1}
 [C]When the [G7]sun in the morning peeps [C]over the hill

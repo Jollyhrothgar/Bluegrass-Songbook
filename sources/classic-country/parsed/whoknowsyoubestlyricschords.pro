@@ -1,6 +1,6 @@
 {meta: title Who Knows You Best}
 {meta: artist George Morgan}
-{meta: writer Roy Drusky, Vic McAlpin, Marie Wilson}
+{meta: composer Roy Drusky, Vic McAlpin, Marie Wilson}
 
 {start_of_verse: Verse 1}
 [C]There are two sides to [G7]every [C]story

@@ -1,6 +1,6 @@
 {meta: title Give Me Jesus}
 {meta: artist Vince Gill}
-{meta: writer Fernando Ortega}
+{meta: composer Fernando Ortega}
 
 {start_of_verse: Verse 1}
 [C]In the morning when I [Am]rise

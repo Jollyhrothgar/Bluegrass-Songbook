@@ -1,6 +1,6 @@
 {meta: title Lovin' Lies}
 {meta: artist Porter Wagoner}
-{meta: writer Dorothy Chapman, Troy Martin, Pete Pyle}
+{meta: composer Dorothy Chapman, Troy Martin, Pete Pyle}
 
 {start_of_verse: Verse 1}
 [G]I'll never understand dear as [C]long as I [G]live

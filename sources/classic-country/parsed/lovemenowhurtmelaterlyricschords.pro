@@ -1,6 +1,6 @@
 {meta: title Love Me Now Hurt Me Later}
 {meta: artist Billy Walker}
-{meta: writer Nat Stuckey}
+{meta: composer Nat Stuckey}
 
 {start_of_verse: Verse 1}
 [G]If I thought I could forget you that was [D7]my mistake

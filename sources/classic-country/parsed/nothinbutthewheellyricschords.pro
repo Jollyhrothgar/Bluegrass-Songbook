@@ -1,6 +1,6 @@
 {meta: title Nothin' But The Wheel}
 {meta: artist Patty Loveless}
-{meta: writer John S. Sherrill}
+{meta: composer John S. Sherrill}
 
 {start_of_verse: Verse 1}
 [C]Well I’m past the [G7]boulevards 

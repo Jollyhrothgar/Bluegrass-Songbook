@@ -1,6 +1,6 @@
 {meta: title Some Hearts Get All The Breaks}
 {meta: artist Roger Miller}
-{meta: writer Buck Moore and Jeff Raymond}
+{meta: composer Buck Moore and Jeff Raymond}
 
 {start_of_verse: Verse 1}
 [C]Some hearts have all the fun

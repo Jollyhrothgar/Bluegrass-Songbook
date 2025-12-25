@@ -1,6 +1,6 @@
 {meta: title Somewhere In Old Wyoming}
 {meta: artist Sons Of Pioneers}
-{meta: writer Charlie Tobia and Peter De Rose}
+{meta: composer Charlie Tobia and Peter De Rose}
 
 {start_of_verse: Verse 1}
 [C]Somewhere in [G7]old Wy[C]oming 

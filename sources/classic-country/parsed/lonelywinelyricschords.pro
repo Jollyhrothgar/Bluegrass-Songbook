@@ -1,6 +1,6 @@
 {meta: title Lonely Wine}
 {meta: artist Roy Orbison}
-{meta: writer Roy Wells}
+{meta: composer Roy Wells}
 
 {start_of_verse: Verse 1}
 [G]The night is bright and gay but I'm so [B7]blue

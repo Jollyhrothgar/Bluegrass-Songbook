@@ -1,6 +1,6 @@
 {meta: title Loveless Love}
 {meta: artist Bob Wills}
-{meta: writer W. C. Handy}
+{meta: composer W. C. Handy}
 
 {start_of_verse: Verse 1}
 [C]Love oh love [G7]oh loveless [C]love

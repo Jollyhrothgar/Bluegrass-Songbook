@@ -1,6 +1,6 @@
 {meta: title I Just Don’t Like Loving You}
 {meta: artist The Malpass Brothers}
-{meta: writer Christopher Malpass}
+{meta: composer Christopher Malpass}
 
 {start_of_verse: Verse 1}
 [G]I walked into the living room 

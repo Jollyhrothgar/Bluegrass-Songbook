@@ -1,6 +1,6 @@
 {meta: title Think Of Me}
 {meta: artist Charlie Walker}
-{meta: writer Paul Williams}
+{meta: composer Paul Williams}
 
 {start_of_verse: Verse 1}
 [C]When you embrace her in a fond [G7]caress

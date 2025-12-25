@@ -1,6 +1,6 @@
 {meta: title Just For You}
 {meta: artist Ferlin Husky}
-{meta: writer Curly Putman and Larry Butler}
+{meta: composer Curly Putman and Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]Just for you  just for you

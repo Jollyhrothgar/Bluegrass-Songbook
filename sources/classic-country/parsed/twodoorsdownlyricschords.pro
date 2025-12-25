@@ -1,6 +1,6 @@
 {meta: title Two Doors Down}
 {meta: artist Dwight Yoakam}
-{meta: writer Dwight Yoakam and Kostas}
+{meta: composer Dwight Yoakam and Kostas}
 
 {start_of_verse: Verse 1}
 [D7]Two doors [G]down there's a [D7]jukebox that [G]plays all night long

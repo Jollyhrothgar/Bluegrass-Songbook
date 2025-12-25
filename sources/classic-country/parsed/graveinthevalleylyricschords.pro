@@ -1,6 +1,6 @@
 {meta: title Grave In The Valley}
 {meta: artist Jim and Jesse}
-{meta: writer Don McHan}
+{meta: composer Don McHan}
 
 {start_of_verse: Verse 1}
 [G]There's grave in the bend of the [D7]valley

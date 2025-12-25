@@ -1,6 +1,6 @@
 {meta: title Carry Me Back To The Lone Prairie}
 {meta: artist Gene Autry}
-{meta: writer Carson J. Robison}
+{meta: composer Carson J. Robison}
 
 {start_of_verse: Verse 1}
 [C]Oh carry me back to the lone prairie

@@ -1,6 +1,6 @@
 {meta: title What Will I Tell My Darling}
 {meta: artist Faron Young}
-{meta: writer Jerry Crutchfield and Faron Young}
+{meta: composer Jerry Crutchfield and Faron Young}
 
 {start_of_verse: Verse 1}
 [G](What) [D7]what will I tell my [G]darling

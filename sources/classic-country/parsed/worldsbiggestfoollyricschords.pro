@@ -1,6 +1,6 @@
 {meta: title World's Biggest Fool}
 {meta: artist Rhonda Vincent}
-{meta: writer Byron Hill and Darrell Hayes}
+{meta: composer Byron Hill and Darrell Hayes}
 
 {start_of_verse: Verse 1}
 [G]I'm not that lonely anymore

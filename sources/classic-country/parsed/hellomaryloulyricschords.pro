@@ -1,6 +1,6 @@
 {meta: title Hello Mary Lou}
 {meta: artist Ricky Nelson}
-{meta: writer Gene Pitney}
+{meta: composer Gene Pitney}
 
 {start_of_verse: Verse 1}
 [C]Hello Mary Lou  [F]goodbye heart

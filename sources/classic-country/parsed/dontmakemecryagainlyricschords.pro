@@ -1,6 +1,6 @@
 {meta: title Don't Make Me Cry Again}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Billy Gray}
+{meta: composer Hank Thompson and Billy Gray}
 
 {start_of_verse: Verse 1}
 [C]Don’t make me [G7]cry again by coming back [C]again

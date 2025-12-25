@@ -1,6 +1,6 @@
 {meta: title Beneath A Painted Sky}
 {meta: artist Tammy Wynette}
-{meta: writer Joe Chambers and Bucky Jones}
+{meta: composer Joe Chambers and Bucky Jones}
 
 {start_of_verse: Verse 1}
 [G]There never was a little girl more wanted than [D7]me

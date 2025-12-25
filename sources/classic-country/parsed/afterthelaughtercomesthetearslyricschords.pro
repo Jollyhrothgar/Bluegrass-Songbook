@@ -1,6 +1,6 @@
 {meta: title After The Laughter Comes The Tears}
 {meta: artist Eddy Arnold}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]You know [G7]that [C]after the laughter comes the [D7]tears

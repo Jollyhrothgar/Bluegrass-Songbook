@@ -1,6 +1,6 @@
 {meta: title Friday Night Blues}
 {meta: artist John Conlee}
-{meta: writer Sonny Throckmorton and Rafe Vanhoy}
+{meta: composer Sonny Throckmorton and Rafe Vanhoy}
 
 {start_of_verse: Verse 1}
 [G]He's been working all week he's got mental fatigue

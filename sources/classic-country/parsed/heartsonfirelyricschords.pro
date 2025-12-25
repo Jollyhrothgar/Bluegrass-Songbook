@@ -1,6 +1,6 @@
 {meta: title Hearts On Fire}
 {meta: artist Emmylou Harris}
-{meta: writer by Walter Egan and Tom Guidera}
+{meta: composer by Walter Egan and Tom Guidera}
 
 {start_of_verse: Verse 1}
 [G]Hearts on [C]fire

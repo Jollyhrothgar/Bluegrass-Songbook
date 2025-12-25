@@ -1,6 +1,6 @@
 {meta: title Don’t Look At Me In That Tone Of Voice}
 {meta: artist Gene Watson}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]Won't you talk to me my darling tell me what a [C]fool I [G]am

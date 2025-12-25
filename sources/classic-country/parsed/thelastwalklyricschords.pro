@@ -1,6 +1,6 @@
 {meta: title The Last Walk}
 {meta: artist Jimmie Davis}
-{meta: writer Bob Willis and Jimmie Davis}
+{meta: composer Bob Willis and Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [D7]Jesus [G]walked to the [C]tomb of [G]Lazarus

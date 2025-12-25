@@ -1,6 +1,6 @@
 {meta: title The Great Pretender}
 {meta: artist Roy Orbison}
-{meta: writer Buck Ram}
+{meta: composer Buck Ram}
 
 {start_of_verse: Verse 1}
 [G7]Oh [C]yes I'm the [F]great pre[C]tender

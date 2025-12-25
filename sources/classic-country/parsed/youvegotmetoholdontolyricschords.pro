@@ -1,6 +1,6 @@
 {meta: title You've Got Me To Hold On To}
 {meta: artist Tanya Tucker}
-{meta: writer Dave Loggins}
+{meta: composer Dave Loggins}
 
 {start_of_verse: Verse 1}
 [C]Don't it make life just a little more special 

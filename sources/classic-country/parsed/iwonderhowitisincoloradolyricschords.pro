@@ -1,6 +1,6 @@
 {meta: title I Wonder How It Is In Colorado}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [G]I thought of hungry children 

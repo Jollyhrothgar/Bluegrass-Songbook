@@ -1,6 +1,6 @@
 {meta: title I Don't Think She'd Really Mind At All}
 {meta: artist Gene Watson}
-{meta: writer A.L. Owens &amp; Dennis Knutson}
+{meta: composer A.L. Owens &amp; Dennis Knutson}
 
 {start_of_verse: Verse 1}
 [G]I've got her right where I don't want [C]her

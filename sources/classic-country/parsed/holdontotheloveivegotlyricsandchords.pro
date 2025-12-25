@@ -1,6 +1,6 @@
 {meta: title Hold On (To The Love I Got)}
 {meta: artist Barbara Mandrell}
-{meta: writer Norro Wilson, Carmol Taylor, Tammy Wynette}
+{meta: composer Norro Wilson, Carmol Taylor, Tammy Wynette}
 
 {start_of_verse: Verse 1}
 [G7]I'm gonna hold on to the love I've got

@@ -1,6 +1,6 @@
 {meta: title Jealous Darling}
 {meta: artist Johnny Rodriguez}
-{meta: writer Tom T. Hall and Hillman Hall}
+{meta: composer Tom T. Hall and Hillman Hall}
 
 {start_of_verse: Verse 1}
 [G]Jealous darling [C]that you [G]are you think you [C]know [G]me

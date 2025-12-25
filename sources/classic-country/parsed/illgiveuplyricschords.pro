@@ -1,6 +1,6 @@
 {meta: title I'll Give Up}
 {meta: artist Tony Booth}
-{meta: writer Dale Vest, Tommy Overstreet, Juanita Hainsworth}
+{meta: composer Dale Vest, Tommy Overstreet, Juanita Hainsworth}
 
 {start_of_verse: Verse 1}
 [C]If someday you try me [Am]on and [F]I don't fit like a [G7]glove 

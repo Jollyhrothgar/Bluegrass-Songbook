@@ -1,6 +1,6 @@
 {meta: title Too Much Love Between Us}
 {meta: artist Kitty Wells}
-{meta: writer Ed Bruce and Tom McKeon}
+{meta: composer Ed Bruce and Tom McKeon}
 
 {start_of_verse: Verse 1}
 [C]If sometimes I hurt you sayin' things that I don't mean

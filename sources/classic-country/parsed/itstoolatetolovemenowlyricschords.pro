@@ -1,6 +1,6 @@
 {meta: title It’s Too Late To Love Me Now}
 {meta: artist Dolly Parton}
-{meta: writer Rory Bourke, Gene Dobbins, Johnny Wilson}
+{meta: composer Rory Bourke, Gene Dobbins, Johnny Wilson}
 
 {start_of_verse: Verse 1}
 [G]It's too late

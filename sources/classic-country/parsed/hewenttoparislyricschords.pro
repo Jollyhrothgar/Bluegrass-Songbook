@@ -1,5 +1,5 @@
 {meta: artist Waylon Jennings}
-{meta: writer Jimmy Buffett}
+{meta: composer Jimmy Buffett}
 
 {start_of_verse: Verse 1}
 [G]He went to Paris lookin' for answers to [C]questions that bothered him [G]so

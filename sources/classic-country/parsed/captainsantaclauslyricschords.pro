@@ -1,6 +1,6 @@
 {meta: title Captain Santa Claus}
 {meta: artist Bobby Helms}
-{meta: writer Don Reid and Arthur Altman}
+{meta: composer Don Reid and Arthur Altman}
 
 {start_of_verse: Verse 1}
 [C]The [G7]word had spread from [C]town to town

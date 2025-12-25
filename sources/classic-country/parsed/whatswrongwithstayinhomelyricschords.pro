@@ -1,6 +1,6 @@
 {meta: title What's Wrong With Stayin' Home}
 {meta: artist Merle Haggard}
-{meta: writer Bob Morris}
+{meta: composer Bob Morris}
 
 {start_of_verse: Verse 1}
 [C]The boys are wantin' [Dm]me to go out [G7]drinking

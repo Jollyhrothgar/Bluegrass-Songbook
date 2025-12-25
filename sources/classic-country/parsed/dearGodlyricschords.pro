@@ -1,6 +1,6 @@
 {meta: title Dear God}
 {meta: artist Patsy Cline}
-{meta: writer V.F. Stewart}
+{meta: composer V.F. Stewart}
 
 {start_of_verse: Verse 1}
 [C]I go to [F]church on a [C]Sunday

@@ -1,6 +1,6 @@
 {meta: title Guitar Polka}
 {meta: artist Chet Atkins}
-{meta: writer James B. Harris and Al Dexter}
+{meta: composer James B. Harris and Al Dexter}
 
 {start_of_verse: Verse 1}
 [C]A cowboy rode one day down to old Monterey

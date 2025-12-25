@@ -1,6 +1,6 @@
 {meta: title Everybody’s Reaching Out For Someone}
 {meta: artist Brenda Lee}
-{meta: writer Dickey Lee and Allen Reynolds}
+{meta: composer Dickey Lee and Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [G]Everybody's reaching out for [C]someone

@@ -1,6 +1,6 @@
 {meta: title Someday with chords}
 {meta: artist Webb Pierce}
-{meta: writer Sonny Curtis and Webb PierceC}
+{meta: composer Sonny Curtis and Webb PierceC}
 
 {start_of_verse: Verse 1}
 Chains of [G7]love I [C]may fall in [F]love [G7]again

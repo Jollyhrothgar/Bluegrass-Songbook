@@ -1,6 +1,6 @@
 {meta: title I Forgot To Remember Santa Claus}
 {meta: artist Sonny James}
-{meta: writer Sonny James and John Skye}
+{meta: composer Sonny James and John Skye}
 
 {start_of_verse: Verse 1}
 [G]I bought a top for Tommy a dresser set for mommy

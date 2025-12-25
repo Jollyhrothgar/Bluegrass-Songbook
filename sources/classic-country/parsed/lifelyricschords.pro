@@ -1,6 +1,6 @@
 {meta: title Life}
 {meta: artist Elvis Presley}
-{meta: writer Shirl Milete}
+{meta: composer Shirl Milete}
 
 {start_of_verse: Verse 1}
 [C]Somewhere out in empty space 

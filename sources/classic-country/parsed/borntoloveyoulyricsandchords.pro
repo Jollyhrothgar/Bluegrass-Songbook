@@ -1,6 +1,6 @@
 {meta: title Born To Love You}
 {meta: artist Jack Greene}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Born [D7]to [G]love you born to [Em]love you [C]born to [G]love you [D7]till I [G]die

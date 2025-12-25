@@ -1,6 +1,6 @@
 {meta: title How Far Down Can I Go}
 {meta: artist Lefty Frizzell}
-{meta: writer Harlan Howard &amp; Jerome C. Barney}
+{meta: composer Harlan Howard &amp; Jerome C. Barney}
 
 {start_of_verse: Verse 1}
 [C]I've hurt all who loved me they don't [F]understand

@@ -1,6 +1,6 @@
 {meta: title Just Enough Love For One Woman}
 {meta: artist Don Williams}
-{meta: writer Dave Kirby and Danny Morrison}
+{meta: composer Dave Kirby and Danny Morrison}
 
 {start_of_verse: Verse 1}
 [C]I've got just enough love for one [Dm]woman

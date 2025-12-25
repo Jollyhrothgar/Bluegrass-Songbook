@@ -1,6 +1,6 @@
 {meta: title Ancient History}
 {meta: artist Billy Walker}
-{meta: writer Wayne P. Walker and Irene Stanton}
+{meta: composer Wayne P. Walker and Irene Stanton}
 
 {start_of_verse: Verse 1}
 [C]Just walk on out the door it's all [G7]over

@@ -1,6 +1,6 @@
 {meta: title It’s All I Can Do}
 {meta: artist Ronnie Milsap}
-{meta: writer Archie P. Jordan and Richard Leigh}
+{meta: composer Archie P. Jordan and Richard Leigh}
 
 {start_of_verse: Verse 1}
 [C]It's been a while [Am]how have you [Dm]been

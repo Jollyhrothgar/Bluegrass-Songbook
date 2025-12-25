@@ -1,6 +1,6 @@
 {meta: title To Make Love Sweeter For You}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Glenn Sutton and Jerry Kennedy}
+{meta: composer Glenn Sutton and Jerry Kennedy}
 
 {start_of_verse: Verse 1}
 [C]Well I'd like to send an orchid at the start of every [D7]day

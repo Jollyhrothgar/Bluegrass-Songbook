@@ -1,6 +1,6 @@
 {meta: title Brooklyn Bridge}
 {meta: artist Bobby Bare}
-{meta: writer Bobby Bare and Lance Guyness}
+{meta: composer Bobby Bare and Lance Guyness}
 
 {start_of_verse: Verse 1}
 [C]Oh there I stood in the great big [F]city

@@ -1,6 +1,6 @@
 {meta: title I'm Saving My Tears For Tomorrow}
 {meta: artist Faron Young}
-{meta: writer Faron Young and Virginia Midgett}
+{meta: composer Faron Young and Virginia Midgett}
 
 {start_of_verse: Verse 1}
 For [G7]tomorrow when I'll be [C]alone

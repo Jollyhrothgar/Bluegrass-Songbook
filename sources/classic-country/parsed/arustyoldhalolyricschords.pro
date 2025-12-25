@@ -1,6 +1,6 @@
 {meta: title A Rusty Old Halo}
 {meta: artist Jim Ed Brown}
-{meta: writer Bob Miller}
+{meta: composer Bob Miller}
 
 {start_of_verse: Verse 1}
 [C]A rusty old halo [G7]skinny white [C]cloud

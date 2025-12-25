@@ -1,6 +1,6 @@
 {meta: title Turn The Jukebox Up Louder}
 {meta: artist Porter Wagoner}
-{meta: writer Wayne Morse}
+{meta: composer Wayne Morse}
 
 {start_of_verse: Verse 1}
 [C]This smoke filled barroom  [F]just suits me [C]fine

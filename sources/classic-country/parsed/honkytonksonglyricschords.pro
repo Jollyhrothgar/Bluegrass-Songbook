@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Song}
 {meta: artist George Jones}
-{meta: writer Frank Meyers and Billy Yates}
+{meta: composer Frank Meyers and Billy Yates}
 
 {start_of_verse: Verse 1}
 [C]I saw those blue lights flashin' [F]over my left [C]shoulder

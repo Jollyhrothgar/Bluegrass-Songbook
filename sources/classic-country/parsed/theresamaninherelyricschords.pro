@@ -1,6 +1,6 @@
 {meta: title There's A Man In Here}
 {meta: artist Statler Brother}
-{meta: writer Harold Reid}
+{meta: composer Harold Reid}
 
 {start_of_verse: Verse 1}
 [G]There's a man in here who turns water to wine

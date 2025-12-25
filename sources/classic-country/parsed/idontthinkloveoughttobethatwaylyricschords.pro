@@ -1,6 +1,6 @@
 {meta: title I Don't Think Love Ought To Be That Way}
 {meta: artist Reba McEntire}
-{meta: writer Laying Martine and Richard Mainegra}
+{meta: composer Laying Martine and Richard Mainegra}
 
 {start_of_verse: Verse 1}
 [C]Oh I'm feelin' so fine and you're [F]looking so [C]good

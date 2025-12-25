@@ -1,6 +1,6 @@
 {meta: title Wake Up Irene}
 {meta: artist Hank Thompson}
-{meta: writer Weldon Allard and Johnny Hathcock}
+{meta: composer Weldon Allard and Johnny Hathcock}
 
 {start_of_verse: Verse 1}
 [G]For months and months and [C]months around the [G]country 

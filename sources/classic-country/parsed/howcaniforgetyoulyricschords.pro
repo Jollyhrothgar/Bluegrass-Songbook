@@ -1,6 +1,6 @@
 {meta: title How Can I Forget You}
 {meta: artist Faron Young}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [C]You told me to forget I love you   but you never told me [F]how

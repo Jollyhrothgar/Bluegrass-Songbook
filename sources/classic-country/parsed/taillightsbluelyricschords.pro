@@ -1,6 +1,6 @@
 {meta: title Taillights Blue}
 {meta: artist Alan Jackson}
-{meta: writer Jay Knowles and Adam Wright}
+{meta: composer Jay Knowles and Adam Wright}
 
 {start_of_verse: Verse 1}
 [C]You got the last of [F]all [G7]your [C]stuff

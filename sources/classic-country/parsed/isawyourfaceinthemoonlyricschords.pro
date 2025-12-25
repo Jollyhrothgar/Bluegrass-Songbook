@@ -1,6 +1,6 @@
 {meta: title I Saw You Face in the Moon}
 {meta: artist Webb Pierce}
-{meta: writer Odis Elder}
+{meta: composer Odis Elder}
 
 {start_of_verse: Verse 1}
 [C]I saw your face in the moon honey

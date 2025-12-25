@@ -1,6 +1,6 @@
 {meta: title Everything I Had Going For Me Is Gone}
 {meta: artist Jeannie Seely}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]Gonna sit here and feel sorry for myself

@@ -1,6 +1,6 @@
 {meta: title Just A Memory}
 {meta: artist Kitty Wells}
-{meta: writer Roy Botkin}
+{meta: composer Roy Botkin}
 
 {start_of_verse: Verse 1}
 [C]Here comes the [G7]reason I'm [C]lonely

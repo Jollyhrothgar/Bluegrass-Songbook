@@ -1,6 +1,6 @@
 {meta: title Miss Memory}
 {meta: artist Bobby Helms}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G](Miss memory [Am]   [D7]   [G]miss memory)[Am]   [D7]

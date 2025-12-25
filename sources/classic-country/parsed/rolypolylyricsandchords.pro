@@ -1,6 +1,6 @@
 {meta: title Roly Poly and chord}
 {meta: artist Bob Wills}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]ROLY POLY  [F]eatin' corn n' [C]'taters

@@ -1,6 +1,6 @@
 {meta: title More Than Anything In This World}
 {meta: artist Carl Smith}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [G7]More than [C]anything else in this world 

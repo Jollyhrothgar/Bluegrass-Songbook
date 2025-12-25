@@ -1,6 +1,6 @@
 {meta: title Lone Star Beer And Bob Wills Music}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton and Red Steagall}
+{meta: composer Glenn Sutton and Red Steagall}
 
 {start_of_verse: Verse 1}
 [C]My yellow rose of Texas [F]packed up and left this morning

@@ -1,6 +1,6 @@
 {meta: title I Love You Nellie}
 {meta: artist Hank Snow}
-{meta: writer Rex Griffin}
+{meta: composer Rex Griffin}
 
 {start_of_verse: Verse 1}
 [G]Standing in the moonlight by the old garden [D7]gate

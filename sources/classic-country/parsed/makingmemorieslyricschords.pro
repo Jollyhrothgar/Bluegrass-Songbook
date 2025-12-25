@@ -1,6 +1,6 @@
 {meta: title Making Memories}
 {meta: artist The Statler Brothers}
-{meta: writer Harold and Don Reid}
+{meta: composer Harold and Don Reid}
 
 {start_of_verse: Verse 1}
 [C]Memories memories memories

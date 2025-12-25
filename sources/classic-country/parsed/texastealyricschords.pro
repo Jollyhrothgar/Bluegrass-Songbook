@@ -1,6 +1,6 @@
 {meta: title Texas Tea}
 {meta: artist Leroy Van Dyke}
-{meta: writer Sacha Distel and Jack Reardon}
+{meta: composer Sacha Distel and Jack Reardon}
 
 {start_of_verse: Verse 1}
 [G]I was just a poor boy who lived on forty acres of bad [Am]land[D7] 

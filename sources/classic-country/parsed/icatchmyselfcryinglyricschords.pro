@@ -1,6 +1,6 @@
 {meta: title I Catch Myself Crying}
 {meta: artist Jim Reeves}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]It doesn't matter one way or [F]another I [G7]say

@@ -1,6 +1,6 @@
 {meta: title Leroy The Redneck Reindeer}
 {meta: artist Joe Diffie}
-{meta: writer Steve Pippin, Stacey Slate, Joe Diffie}
+{meta: composer Steve Pippin, Stacey Slate, Joe Diffie}
 
 {start_of_verse: Verse 1}
 [C]Well you've all heard the story about [F]Rudolph and his [C]nose

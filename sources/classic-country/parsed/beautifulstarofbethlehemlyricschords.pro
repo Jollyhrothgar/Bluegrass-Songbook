@@ -1,6 +1,6 @@
 {meta: title Beautiful Star of Bethlehem}
 {meta: artist The Oak Ridge Boys}
-{meta: writer R. Fisher Boyce and Adger M. Pace}
+{meta: composer R. Fisher Boyce and Adger M. Pace}
 
 {start_of_verse: Verse 1}
 [C]O beautiful star of Bethlehem

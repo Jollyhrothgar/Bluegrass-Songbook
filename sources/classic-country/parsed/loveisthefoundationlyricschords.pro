@@ -1,6 +1,6 @@
 {meta: title Love Is The Foundation}
 {meta: artist Cal Smith}
-{meta: writer William C. Hall}
+{meta: composer William C. Hall}
 
 {start_of_verse: Verse 1}
 [G]I've seen her as she awakens [C]in the [G]morning

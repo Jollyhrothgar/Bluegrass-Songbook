@@ -1,6 +1,6 @@
 {meta: title I'd Still Want To Serve Him Today}
 {meta: artist Connie Smith}
-{meta: writer Ray Lewis}
+{meta: composer Ray Lewis}
 
 {start_of_verse: Verse 1}
 [G]If there were no hope beyond earthly shadows

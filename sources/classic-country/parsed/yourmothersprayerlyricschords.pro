@@ -1,6 +1,6 @@
 {meta: title Your Mother's Prayer}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Eddie Miller}
+{meta: composer Buck Owens and Eddie Miller}
 
 {start_of_verse: Verse 1}
 [C]You lived through the crash on the highway[C7] 

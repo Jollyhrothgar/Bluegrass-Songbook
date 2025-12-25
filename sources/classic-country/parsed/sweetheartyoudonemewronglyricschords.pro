@@ -1,6 +1,6 @@
 {meta: title Sweetheart You Done Me Wrong}
 {meta: artist Doyle Lawson}
-{meta: writer Bill Monroe and Lester Flatt}
+{meta: composer Bill Monroe and Lester Flatt}
 
 {start_of_verse: Verse 1}
 [C]You told me that your love was [F]true

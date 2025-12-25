@@ -1,6 +1,6 @@
 {meta: title I Want To Grow Old With You}
 {meta: artist George Jones}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]I saw a sweet old couple in the park the other day

@@ -1,6 +1,6 @@
 {meta: title Tropical Depression}
 {meta: artist Alan Jackson}
-{meta: writer Jim McBride, Charlie Craig, Alan Jackson}
+{meta: composer Jim McBride, Charlie Craig, Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G]I thought some time in the sun would help me get over [C]you

@@ -1,6 +1,6 @@
 {meta: title If I Could Climb The Walls Of This Bottle}
 {meta: artist David Allan Coe}
-{meta: writer Don Goodman and Dan Seals}
+{meta: composer Don Goodman and Dan Seals}
 
 {start_of_verse: Verse 1}
 [G7]If I could climb the walls of this [C]bottle

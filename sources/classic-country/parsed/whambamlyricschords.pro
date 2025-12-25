@@ -1,6 +1,6 @@
 {meta: title Wham Bam}
 {meta: artist Don Rich}
-{meta: writer Buck Owens, Don Rich, Bonnie Owens}
+{meta: composer Buck Owens, Don Rich, Bonnie Owens}
 
 {start_of_verse: Verse 1}
 [G]Wham bam thank you ma'am [C]I'll be on my [G]way

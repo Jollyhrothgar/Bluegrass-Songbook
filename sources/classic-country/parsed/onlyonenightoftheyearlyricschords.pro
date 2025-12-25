@@ -1,6 +1,6 @@
 {meta: title Only One Night Of The Year}
 {meta: artist Ronnie Milsap}
-{meta: writer Mike Reid}
+{meta: composer Mike Reid}
 
 {start_of_verse: Verse 1}
 [C]There's a magic light in the [F]stars tonight 

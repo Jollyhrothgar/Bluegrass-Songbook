@@ -1,6 +1,6 @@
 {meta: title Flower Of My Heart}
 {meta: artist Buddy Holly}
-{meta: writer Bob Montgomery and Don Guess}
+{meta: composer Bob Montgomery and Don Guess}
 
 {start_of_verse: Verse 1}
 [C]Do you think of me [G7]darlin'

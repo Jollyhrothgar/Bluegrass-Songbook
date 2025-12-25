@@ -1,6 +1,6 @@
 {meta: title How's The World Treating You}
 {meta: artist Elvis Presley}
-{meta: writer Chet Atkins and Boudleaux Bryant}
+{meta: composer Chet Atkins and Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]I've had nothing but sorrow since you said we were [G7]through

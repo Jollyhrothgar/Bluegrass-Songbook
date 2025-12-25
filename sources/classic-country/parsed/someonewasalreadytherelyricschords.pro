@@ -1,6 +1,6 @@
 {meta: title Someone Was Already There}
 {meta: artist Bobby Helms}
-{meta: writer Bobby Helms and Don Abram}
+{meta: composer Bobby Helms and Don Abram}
 
 {start_of_verse: Verse 1}
 [C]Last night I [G7]went to see my [C]baby

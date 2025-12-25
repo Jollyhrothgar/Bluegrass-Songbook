@@ -1,6 +1,6 @@
 {meta: title I Buy Her Roses}
 {meta: artist Sammy Kershaw}
-{meta: writer Roger Brown and Glenn Ray}
+{meta: composer Roger Brown and Glenn Ray}
 
 {start_of_verse: Verse 1}
 [G]Pardon me I need to buy some [C]roses

@@ -1,6 +1,6 @@
 {meta: title Are You Ashamed To Call Me Darlin'}
 {meta: artist Lonesome River Band}
-{meta: writer Dick Charles and Jimmy Wakely}
+{meta: composer Dick Charles and Jimmy Wakely}
 
 {start_of_verse: Verse 1}
 [G]You said our love was all that mattered

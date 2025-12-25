@@ -1,6 +1,6 @@
 {meta: title Someday He'll Whisper My Name}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]Bitter and better the [F]likeness of letter

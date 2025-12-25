@@ -1,6 +1,6 @@
 {meta: title Home}
 {meta: artist Jim Reeves}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]Well I've been a traveler [F]most of my [C]life

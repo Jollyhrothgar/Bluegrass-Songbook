@@ -1,6 +1,6 @@
 {meta: title Lonesome Night}
 {meta: artist Ricky Skaggs}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]On a [F]lonesome night I’m far from [C]home

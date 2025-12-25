@@ -1,6 +1,6 @@
 {meta: title He Can't Help It If He's Not You}
 {meta: artist Anne Murray}
-{meta: writer Steve Gillette}
+{meta: composer Steve Gillette}
 
 {start_of_verse: Verse 1}
 [G]Don't wanna lose my new found love [C]so many things [D7]do fall [G]through

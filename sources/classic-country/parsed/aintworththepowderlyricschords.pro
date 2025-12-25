@@ -1,6 +1,6 @@
 {meta: title Ain't Worth The Powder}
 {meta: artist David Allan Coe}
-{meta: writer Max D. Barnes and Gib Guilbeau}
+{meta: composer Max D. Barnes and Gib Guilbeau}
 
 {start_of_verse: Verse 1}
 [C]I came up the hard way and fought with my back to the [F]wall

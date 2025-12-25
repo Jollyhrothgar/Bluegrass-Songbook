@@ -1,6 +1,6 @@
 {meta: title There’s A New Star Over Texas}
 {meta: artist Vince Gill}
-{meta: writer Leslie Satcher and Vince Gill}
+{meta: composer Leslie Satcher and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]There's a blue moon that's dancing across Texas

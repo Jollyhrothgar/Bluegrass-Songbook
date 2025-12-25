@@ -1,6 +1,6 @@
 {meta: title Least Of All You}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Carole Smith}
+{meta: composer Sonny James and Carole Smith}
 
 {start_of_verse: Verse 1}
 [C]Who in all this [Am]world did I [F]think would be [C]untrue

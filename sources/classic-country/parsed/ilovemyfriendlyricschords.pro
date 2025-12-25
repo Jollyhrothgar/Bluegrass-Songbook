@@ -1,6 +1,6 @@
 {meta: title I Love My Friend}
 {meta: artist Charlie Rich}
-{meta: writer Billy Sherrill and Norris D. Wilson}
+{meta: composer Billy Sherrill and Norris D. Wilson}
 
 {start_of_verse: Verse 1}
 [C]She was [F]crying [C]   [D7]and I was [G7]lonely [F]

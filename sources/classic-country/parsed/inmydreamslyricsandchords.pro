@@ -1,6 +1,6 @@
 {meta: title In My Dreams}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [G]When the sun goes down on the [C]other side of town [G]tonight

@@ -1,6 +1,6 @@
 {meta: title Long Canyon Christmas}
 {meta: artist Red Steagall}
-{meta: writer R.W. Hampton}
+{meta: composer R.W. Hampton}
 
 {start_of_verse: Verse 1}
 [G]It’s cold and it’s windy up here on the flats

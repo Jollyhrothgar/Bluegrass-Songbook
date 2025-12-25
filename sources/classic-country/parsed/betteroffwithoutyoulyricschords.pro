@@ -1,6 +1,6 @@
 {meta: title Better Off Without You}
 {meta: artist Emmylou Harris}
-{meta: writer Marshall Chapman, Dennis Walker, Fontaine Brown}
+{meta: composer Marshall Chapman, Dennis Walker, Fontaine Brown}
 
 {start_of_verse: Verse 1}
 [G7]Room 16 the Palms [F]Motel

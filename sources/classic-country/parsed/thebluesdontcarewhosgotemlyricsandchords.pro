@@ -1,6 +1,6 @@
 {meta: title The Blues Don't Care Who's Got 'Em}
 {meta: artist Eddy Arnold}
-{meta: writer Wayland D. Holyfield and Dickey Lee}
+{meta: composer Wayland D. Holyfield and Dickey Lee}
 
 {start_of_verse: Verse 1}
 [C]Oh the blues don't care who's [F]got 'em

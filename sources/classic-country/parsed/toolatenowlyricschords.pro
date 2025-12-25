@@ -1,6 +1,6 @@
 {meta: title Too Late Now}
 {meta: artist Slim Whitman}
-{meta: writer Harry Rodcay}
+{meta: composer Harry Rodcay}
 
 {start_of_verse: Verse 1}
 [C]Too late now to cry [F]we said goodbye

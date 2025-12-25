@@ -1,6 +1,6 @@
 {meta: title Cry Cry Darling}
 {meta: artist Web Pierce}
-{meta: writer Jimmy D. Miller and Jimmy Newman}
+{meta: composer Jimmy D. Miller and Jimmy Newman}
 
 {start_of_verse: Verse 1}
 [C]C-ry [C7]c-ry [F]darling that's what I [C]do if you'd leave me with the [G7]blues

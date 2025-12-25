@@ -1,6 +1,6 @@
 {meta: title Her Goodbye Hit Me In The Heart}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Frank Dycus}
+{meta: composer Dean Dillon and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [C]There's never been a man [G7]who could bring me [C]down

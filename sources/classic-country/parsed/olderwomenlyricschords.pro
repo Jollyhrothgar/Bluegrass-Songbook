@@ -1,6 +1,6 @@
 {meta: title Older Women}
 {meta: artist Ronnie McDowell}
-{meta: writer Jamie O'hara}
+{meta: composer Jamie O'hara}
 
 {start_of_verse: Verse 1}
 [G]Older women are beautiful [C]lovers

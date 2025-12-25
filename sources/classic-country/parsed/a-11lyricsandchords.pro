@@ -1,6 +1,6 @@
 {meta: title A-11}
 {meta: artist Buck Owens}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 {comment: A-11}

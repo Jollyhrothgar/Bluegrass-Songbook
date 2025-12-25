@@ -1,6 +1,6 @@
 {meta: title Blowing In The Wind}
 {meta: artist Dolly Parton}
-{meta: writer Bob Dylan}
+{meta: composer Bob Dylan}
 
 {start_of_verse: Verse 1}
 [C]How many roads [F]must a man walk [C]down

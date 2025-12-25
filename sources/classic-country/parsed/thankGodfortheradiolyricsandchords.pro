@@ -1,6 +1,6 @@
 {meta: title Thank God For The Radio}
 {meta: artist Alan Jackson}
-{meta: writer Max D. Barnes and Robert Jones}
+{meta: composer Max D. Barnes and Robert Jones}
 
 {start_of_verse: Verse 1}
 [C]On the wrong end of the highway[Am] 

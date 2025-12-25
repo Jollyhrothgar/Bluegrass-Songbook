@@ -1,6 +1,6 @@
 {meta: title Is She All You Thought She Would Be}
 {meta: artist Faron Young}
-{meta: writer Roy Drusky and Bud Auge}
+{meta: composer Roy Drusky and Bud Auge}
 
 {start_of_verse: Verse 1}
 [D7]Is she [G]all that you [G7]thought she would [C]be

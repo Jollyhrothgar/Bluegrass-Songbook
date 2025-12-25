@@ -1,6 +1,6 @@
 {meta: title My Friend On The Right Lyrics chords}
 {meta: artist Faron Young}
-{meta: writer Red Lane and Faron Young}
+{meta: composer Red Lane and Faron Young}
 
 {start_of_verse: Verse 1}
 My Friend On The Right

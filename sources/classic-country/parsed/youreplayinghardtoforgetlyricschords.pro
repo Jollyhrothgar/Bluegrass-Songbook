@@ -1,6 +1,6 @@
 {meta: title You're Playing Hard To Forget}
 {meta: artist Eddy Raven}
-{meta: writer Elroy Kahanek and Keith Stegall}
+{meta: composer Elroy Kahanek and Keith Stegall}
 
 {start_of_verse: Verse 1}
 [C]You moved out last Monday [Dm]morning

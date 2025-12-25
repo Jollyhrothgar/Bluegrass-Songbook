@@ -1,6 +1,6 @@
 {meta: title Strange}
 {meta: artist Patsy Cline}
-{meta: writer Mel Tillis & Fred Burch}
+{meta: composer Mel Tillis & Fred Burch}
 
 {start_of_verse: Verse 1}
 [G]Strange  how you stopped loving [Em]me

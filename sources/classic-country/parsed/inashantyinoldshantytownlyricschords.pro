@@ -1,6 +1,6 @@
 {meta: title In A Shanty in Old Shanty Town}
 {meta: artist Fats Domino}
-{meta: writer Jack Little, Ira Schuster, Joe Young}
+{meta: composer Jack Little, Ira Schuster, Joe Young}
 
 {start_of_verse: Verse 1}
 [G7]It's [C]only a [E7]shanty in [A7]old shanty town

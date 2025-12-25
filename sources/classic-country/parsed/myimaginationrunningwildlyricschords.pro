@@ -1,6 +1,6 @@
 {meta: title My Imagination Running Wild}
 {meta: artist Faron Young}
-{meta: writer Billy Deaton}
+{meta: composer Billy Deaton}
 
 {start_of_verse: Verse 1}
 [C]Just like all the other times [G7]as we [C]entered

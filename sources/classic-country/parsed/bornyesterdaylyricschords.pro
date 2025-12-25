@@ -1,6 +1,6 @@
 {meta: title Born Yesterday}
 {meta: artist Everly Brothers}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [Am]Living in the city where the [G]walls have ears

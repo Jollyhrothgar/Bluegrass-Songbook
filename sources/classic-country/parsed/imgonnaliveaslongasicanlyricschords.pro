@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Live (As Long As I Can)}
 {meta: artist Charlie Walker}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna live just as [D7]long as I [G]can

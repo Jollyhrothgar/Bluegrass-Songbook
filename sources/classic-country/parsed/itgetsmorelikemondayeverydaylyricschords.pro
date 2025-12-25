@@ -1,6 +1,6 @@
 {meta: title It Gets More Like Monday Everyday}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Don McMillan}
+{meta: composer Hank Thompson and Don McMillan}
 
 {start_of_verse: Verse 1}
 [G]Monday morning [B7]takes a little [C]longer

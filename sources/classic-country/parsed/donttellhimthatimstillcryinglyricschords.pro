@@ -1,6 +1,6 @@
 {meta: title Don't Tell Him That I'm Still Crying}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Don't tell him that I'm still cry[C]in'

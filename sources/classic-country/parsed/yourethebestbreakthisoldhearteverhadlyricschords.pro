@@ -1,6 +1,6 @@
 {meta: title You're The Best Break This Old Heart Ever Had}
 {meta: artist Ed Bruce}
-{meta: writer Waylon Holyfield and Randy Hatch}
+{meta: composer Waylon Holyfield and Randy Hatch}
 
 {start_of_verse: Verse 1}
 [C]Oh there were others

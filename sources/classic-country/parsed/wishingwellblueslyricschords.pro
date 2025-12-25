@@ -1,6 +1,6 @@
 {meta: title Wishing Well Blues}
 {meta: artist Rhonda Vincent}
-{meta: writer Marshall Wilborn}
+{meta: composer Marshall Wilborn}
 
 {start_of_verse: Verse 1}
 [C]There’s a sign on the cafe [Am]window 

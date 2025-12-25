@@ -1,6 +1,6 @@
 {meta: title Whisper My Name}
 {meta: artist Randy Travis}
-{meta: writer Trey Bruce}
+{meta: composer Trey Bruce}
 
 {start_of_verse: Verse 1}
 [C]I heard a freight train [F]out across the [C]way

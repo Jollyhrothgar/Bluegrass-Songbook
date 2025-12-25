@@ -1,6 +1,6 @@
 {meta: title The Fall That Pride Goes Before}
 {meta: artist Stonewall Jackson}
-{meta: writer Neal Merritt}
+{meta: composer Neal Merritt}
 
 {start_of_verse: Verse 1}
 [C]It's dark and it's cold on the street where I stand

@@ -1,6 +1,6 @@
 {meta: title Good Morning Dear}
 {meta: artist Don Gibson}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [G7]Now were the [C]nights any [Em]sweeter 

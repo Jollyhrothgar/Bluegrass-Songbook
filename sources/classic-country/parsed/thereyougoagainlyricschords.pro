@@ -1,6 +1,6 @@
 {meta: title There You Go Again}
 {meta: artist Kenny Rogers}
-{meta: writer Terry McBride, Tommy James, Jennifer Kimball}
+{meta: composer Terry McBride, Tommy James, Jennifer Kimball}
 
 {start_of_verse: Verse 1}
 [G7]There you [F]go again you take my [G7]breath away

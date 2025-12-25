@@ -1,6 +1,6 @@
 {meta: title Sweet Mercy Brown}
 {meta: artist Nat Stuckey}
-{meta: writer Jim Owen}
+{meta: composer Jim Owen}
 
 {start_of_verse: Verse 1}
 [C]Her daddy was a Louisiana banker 

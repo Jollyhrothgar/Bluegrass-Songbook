@@ -1,6 +1,6 @@
 {meta: title If It Ain't One Thing (It's You)}
 {meta: artist Alan Jackson}
-{meta: writer Jim McBride and Alan Jackson}
+{meta: composer Jim McBride and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G]I guess it's [Bm]just not my [C]day

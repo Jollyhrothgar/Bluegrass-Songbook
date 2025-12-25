@@ -1,6 +1,6 @@
 {meta: title Just A Little Sunshine In The Rain}
 {meta: artist Connie Smith}
-{meta: writer Ricci Mareno}
+{meta: composer Ricci Mareno}
 
 {start_of_verse: Verse 1}
 [G]Like a wonderous dream that ends with [Am]dawn [D7]

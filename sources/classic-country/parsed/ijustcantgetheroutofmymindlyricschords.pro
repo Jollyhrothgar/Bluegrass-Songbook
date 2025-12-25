@@ -1,6 +1,6 @@
 {meta: title I Just Can't Get Her Out of My Mind}
 {meta: artist Johnny Rodriguez}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 [C]Never before has a woman ever haunted [F]me

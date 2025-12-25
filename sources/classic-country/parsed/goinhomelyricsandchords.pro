@@ -1,6 +1,6 @@
 {meta: title Goin’ Home}
 {meta: artist Vernon Oxford}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I’m goin’ home  I’ve been gone so doggone long

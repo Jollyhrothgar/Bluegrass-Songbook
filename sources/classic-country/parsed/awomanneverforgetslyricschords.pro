@@ -1,6 +1,6 @@
 {meta: title A Woman Never Forgets}
 {meta: artist Kitty Wells}
-{meta: writer Johnny Wright and Bill Phillips}
+{meta: composer Johnny Wright and Bill Phillips}
 
 {start_of_verse: Verse 1}
 [G]Tie a string [C]around your [G]finger

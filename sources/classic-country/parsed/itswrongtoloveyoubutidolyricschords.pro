@@ -1,6 +1,6 @@
 {meta: title It's Wrong To Love You But I Do}
 {meta: artist Cowboy Copas}
-{meta: writer Lloyd Copas and Jean Branch}
+{meta: composer Lloyd Copas and Jean Branch}
 
 {start_of_verse: Verse 1}
 [C]I'm sure it isn't right dear I feel [F]a sense of [C]shame

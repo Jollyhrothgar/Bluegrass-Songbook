@@ -1,6 +1,6 @@
 {meta: title His Hand In Mine}
 {meta: artist Elvis Presley}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [C]You may ask me [G7]how I know my Lord is real [C](my [G7]Lord is [C]real)

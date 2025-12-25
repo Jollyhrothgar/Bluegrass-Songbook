@@ -1,6 +1,6 @@
 {meta: title I’d Rather Not Know}
 {meta: artist Jim Reeves}
-{meta: writer Billy Deaton and Jim Reeves}
+{meta: composer Billy Deaton and Jim Reeves}
 
 {start_of_verse: Verse 1}
 [G]Our once precious love was marred by [D7]separation

@@ -1,6 +1,6 @@
 {meta: title A Little Good News}
 {meta: artist Anne Murray}
-{meta: writer Charles Black, Rory Bourke, and Thomas Rocco}
+{meta: composer Charles Black, Rory Bourke, and Thomas Rocco}
 
 {start_of_verse: Verse 1}
 [C]I rolled out this morning kids had the morning news show [F]on

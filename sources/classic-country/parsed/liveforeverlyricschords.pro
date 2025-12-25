@@ -1,5 +1,5 @@
 {meta: artist Billy Joe Shaver}
-{meta: writer Billy Joe Shaver and Eddy Shaver}
+{meta: composer Billy Joe Shaver and Eddy Shaver}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna live forever

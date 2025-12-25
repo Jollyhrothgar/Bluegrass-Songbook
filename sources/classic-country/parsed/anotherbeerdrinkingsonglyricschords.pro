@@ -1,6 +1,6 @@
 {meta: title Another Beer Drinking Song}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby and Warren Robb}
+{meta: composer Dave Kirby and Warren Robb}
 
 {start_of_verse: Verse 1}
 [C]You're just another   beer drinking song

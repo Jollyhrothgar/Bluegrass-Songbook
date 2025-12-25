@@ -1,6 +1,6 @@
 {meta: title Nothing At All}
 {meta: artist Wilburn Brothers}
-{meta: writer Fred Powers and Harold Donny}
+{meta: composer Fred Powers and Harold Donny}
 
 {start_of_verse: Verse 1}
 [C]If you only [F]care for things [C]money can buy

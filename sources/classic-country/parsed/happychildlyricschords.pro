@@ -1,6 +1,6 @@
 {meta: title Happy Child}
 {meta: artist Jimmy Dean}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]I got a little bit of everything I [C]need

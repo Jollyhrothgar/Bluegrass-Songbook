@@ -1,6 +1,6 @@
 {meta: title Always Always}
 {meta: artist Dolly Parton}
-{meta: writer Joyce McCord}
+{meta: composer Joyce McCord}
 
 {start_of_verse: Verse 1}
 [C]Darling will you love [F]me [C]forever

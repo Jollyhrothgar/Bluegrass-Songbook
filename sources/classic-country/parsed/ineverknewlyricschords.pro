@@ -1,6 +1,6 @@
 {meta: title I Never Knew}
 {meta: artist Roy Orbison}
-{meta: writer Sam Phillips}
+{meta: composer Sam Phillips}
 
 {start_of_verse: Verse 1}
 [D7]I  [G]never knew how [C]much I'd [D7]miss your touch 

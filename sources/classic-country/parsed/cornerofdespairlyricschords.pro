@@ -1,6 +1,6 @@
 {meta: title Corner Of Despair}
 {meta: artist Jean Shepard}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]We were both two lonely [C]people

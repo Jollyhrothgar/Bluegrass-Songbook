@@ -1,6 +1,6 @@
 {meta: title Living in the Kingdom of God}
 {meta: artist Jamie Dailey and Darrin Vincent}
-{meta: writer Jamie Dailey}
+{meta: composer Jamie Dailey}
 
 {start_of_verse: Verse 1}
 [G]My life changed on the [D7]day when the Lord saved my [G]soul

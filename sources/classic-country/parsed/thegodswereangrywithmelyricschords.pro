@@ -1,6 +1,6 @@
 {meta: title The Gods Were Angry With Me}
 {meta: artist Jim Reeves}
-{meta: writer Herman L. Watkins and Ruth Oma Wilkinson}
+{meta: composer Herman L. Watkins and Ruth Oma Wilkinson}
 
 {start_of_verse: Verse 1}
 [G]The Gods were angry with me for loving you

@@ -1,6 +1,6 @@
 {meta: title Ashes by Now}
 {meta: artist Emmylou Harris}
-{meta: writer Rodney Crowell}
+{meta: composer Rodney Crowell}
 
 {start_of_verse: Verse 1}
 [C]This morning is Monday where are you now

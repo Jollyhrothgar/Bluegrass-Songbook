@@ -1,6 +1,6 @@
 {meta: title Houston Solution}
 {meta: artist Ronnie Milsap}
-{meta: writer Paul Overstreet and Don Schlitz}
+{meta: composer Paul Overstreet and Don Schlitz}
 
 {start_of_verse: Verse 1}
 [G]I've got some friends down in [G7]Houston who [C]know me quite well

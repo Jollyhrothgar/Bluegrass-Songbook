@@ -1,6 +1,6 @@
 {meta: title The Party Ain't Over Yet}
 {meta: artist Patty Loveless}
-{meta: writer John David}
+{meta: composer John David}
 
 {start_of_verse: Verse 1}
 [C]There's a [A#7]troubled [F]wind  [C]  a blowin' [A#7]through my [F]crazy [C]life

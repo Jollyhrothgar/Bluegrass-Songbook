@@ -1,6 +1,6 @@
 {meta: title Rock My Cradle Once Again}
 {meta: artist Hank Williams Sr.}
-{meta: writer John Bond and Billy Folger}
+{meta: composer John Bond and Billy Folger}
 
 {start_of_verse: Verse 1}
 [C]Far away from friends and loved ones

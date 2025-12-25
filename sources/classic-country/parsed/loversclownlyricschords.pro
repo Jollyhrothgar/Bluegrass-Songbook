@@ -1,6 +1,6 @@
 {meta: title Lover's Clown}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Steve Wariner}
+{meta: composer Clint Black and Steve Wariner}
 
 {start_of_verse: Verse 1}
 [Am]Tiny pieces of my heart [F]like confetti everywhere

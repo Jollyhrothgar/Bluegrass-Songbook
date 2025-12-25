@@ -1,6 +1,6 @@
 {meta: title Blue Fiddle Waltz}
 {meta: artist Dottie West}
-{meta: writer Averal Aldridge, Cindy Richardson, Lisa Silver}
+{meta: composer Averal Aldridge, Cindy Richardson, Lisa Silver}
 
 {start_of_verse: Verse 1}
 [F]Under the moonlight in the Tennessee [A7]hills

@@ -1,6 +1,6 @@
 {meta: title Remember Me}
 {meta: artist Willie Nelson}
-{meta: writer Scott Wiseman}
+{meta: composer Scott Wiseman}
 
 {start_of_verse: Verse 1}
 [C]You told me once you were [F]mine  alone [C]forever

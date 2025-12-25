@@ -1,6 +1,6 @@
 {meta: title Three Lovers Were Losers Today}
 {meta: artist Red Sovine}
-{meta: writer Webb Pierce, Max Powell, Red Sovine}
+{meta: composer Webb Pierce, Max Powell, Red Sovine}
 
 {start_of_verse: Verse 1}
 [G]I had dinner today with your mother and [C]dad

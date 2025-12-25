@@ -1,6 +1,6 @@
 {meta: title If I Can Stay Away Long Enough}
 {meta: artist Jack Greene}
-{meta: writer Benny Martin}
+{meta: composer Benny Martin}
 
 {start_of_verse: Verse 1}
 [C]If I can stay away long [Am]enough 

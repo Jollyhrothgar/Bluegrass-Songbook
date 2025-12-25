@@ -1,6 +1,6 @@
 {meta: title God's Little Candles}
 {meta: artist Hank Snow}
-{meta: writer Jimmy Kennedy}
+{meta: composer Jimmy Kennedy}
 
 {start_of_verse: Verse 1}
 [C]The angels are lighting [F]God's little [C]candles

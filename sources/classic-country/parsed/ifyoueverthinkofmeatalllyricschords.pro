@@ -1,6 +1,6 @@
 {meta: title If You Ever Think Of Me At All}
 {meta: artist David Allan Coe}
-{meta: writer Shel Silverstein and David A. Coe}
+{meta: composer Shel Silverstein and David A. Coe}
 
 {start_of_verse: Verse 1}
 [C]You said you were loving me you said I could never see

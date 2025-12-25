@@ -1,6 +1,6 @@
 {meta: title Grazing In Greener Pastures}
 {meta: artist Ray Price}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]Anytime love's [F]waters  [G7]grow cold and [C]deep

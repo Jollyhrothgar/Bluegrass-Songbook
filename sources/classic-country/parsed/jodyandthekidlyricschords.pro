@@ -1,6 +1,6 @@
 {meta: title Jody And The Kid}
 {meta: artist Roy Drusky}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [C]She would meet me in the morning on my way down to the river

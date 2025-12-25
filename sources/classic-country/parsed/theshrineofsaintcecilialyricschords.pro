@@ -1,6 +1,6 @@
 {meta: title The Shrine Of Saint Cecilia}
 {meta: artist Faron Young}
-{meta: writer Pern Jokern and Carroll Loveday}
+{meta: composer Pern Jokern and Carroll Loveday}
 
 {start_of_verse: Verse 1}
 [C]Our home is in shambles

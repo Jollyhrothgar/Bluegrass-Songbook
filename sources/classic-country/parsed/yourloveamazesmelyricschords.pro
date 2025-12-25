@@ -1,6 +1,6 @@
 {meta: title Your Love Amazes Me}
 {meta: artist Tanya Tucker}
-{meta: writer Amanda Hunt-Taylor and Charles Harmon Jones}
+{meta: composer Amanda Hunt-Taylor and Charles Harmon Jones}
 
 {start_of_verse: Verse 1}
 [C]I've seen the seven wonders of the world

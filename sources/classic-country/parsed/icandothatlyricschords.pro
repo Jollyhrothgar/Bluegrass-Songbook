@@ -1,6 +1,6 @@
 {meta: title I Can Do That}
 {meta: artist Tanya Tucker}
-{meta: writer Earl Clark, Jerry Laseter, David Stewart}
+{meta: composer Earl Clark, Jerry Laseter, David Stewart}
 
 {start_of_verse: Verse 1}
 [G]I can’t promise you a [G7]world of only blue [C]skies

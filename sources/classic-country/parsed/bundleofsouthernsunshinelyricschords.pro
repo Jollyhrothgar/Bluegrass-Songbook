@@ -1,6 +1,6 @@
 {meta: title Bundle Of Southern Sunshine}
 {meta: artist Eddy Arnold}
-{meta: writer Sunny Clapp}
+{meta: composer Sunny Clapp}
 
 {start_of_verse: Verse 1}
 [G]They took a bundle of bright southern [E7]sunshine

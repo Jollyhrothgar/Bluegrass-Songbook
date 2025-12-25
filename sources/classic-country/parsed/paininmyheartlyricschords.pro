@@ -1,6 +1,6 @@
 {meta: title Pain In My Heart}
 {meta: artist The Osborne Brothers}
-{meta: writer Bobby Osborne and Larry Richardson}
+{meta: composer Bobby Osborne and Larry Richardson}
 
 {start_of_verse: Verse 1}
 [G]When I first I met you right from the [D7]start

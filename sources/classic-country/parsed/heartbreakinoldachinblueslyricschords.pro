@@ -1,6 +1,6 @@
 {meta: title Heartbreakin' Old Achin' Blues}
 {meta: artist Rhonda Vincent}
-{meta: writer Mickey Harris and Rhonda Vincent}
+{meta: composer Mickey Harris and Rhonda Vincent}
 
 {start_of_verse: Verse 1}
 [C]On the road so far from home

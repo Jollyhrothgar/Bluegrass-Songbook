@@ -1,6 +1,6 @@
 {meta: title I've Got A Weakness For Cowboys}
 {meta: artist Joni Harms}
-{meta: writer Carl Jackson Vipperman}
+{meta: composer Carl Jackson Vipperman}
 
 {start_of_verse: Verse 1}
 [C]Oh I've got a [A7]weakness for [D7]cowboys

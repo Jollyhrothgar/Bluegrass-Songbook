@@ -1,6 +1,6 @@
 {meta: title Blue Velvet}
 {meta: artist Brenda Lee}
-{meta: writer Bernie Wayne and Lee Morris}
+{meta: composer Bernie Wayne and Lee Morris}
 
 {start_of_verse: Verse 1}
 [C](Blue [Em]velvet [Dm]oh [G7]oh)

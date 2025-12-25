@@ -1,6 +1,6 @@
 {meta: title Heart First}
 {meta: artist Jeanne Pruett}
-{meta: writer Johnny Wilson, Kim Morrison, Scott Phelps}
+{meta: composer Johnny Wilson, Kim Morrison, Scott Phelps}
 
 {start_of_verse: Verse 1}
 [G]I've had other [Em]lovers [C]before we met each [G]other

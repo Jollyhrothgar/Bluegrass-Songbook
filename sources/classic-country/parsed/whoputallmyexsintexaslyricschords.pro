@@ -1,6 +1,6 @@
 {meta: title Who Put All My Ex's In Texas}
 {meta: artist Willie Nelson}
-{meta: writer Eddie Rabbitt, Larry Lee, Tony Moon}
+{meta: composer Eddie Rabbitt, Larry Lee, Tony Moon}
 
 {start_of_verse: Verse 1}
 [C]Who put my Alice in [A7]Dallas

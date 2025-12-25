@@ -1,6 +1,6 @@
 {meta: title How Long Will It Take}
 {meta: artist Loretta Lynn}
-{meta: writer Warner McPherson}
+{meta: composer Warner McPherson}
 
 {start_of_verse: Verse 1}
 [C](How long will it take)

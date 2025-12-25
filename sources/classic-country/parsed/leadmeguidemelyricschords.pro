@@ -1,6 +1,6 @@
 {meta: title Lead Me Guide Me}
 {meta: artist Elvis Presley}
-{meta: writer Doris Akers}
+{meta: composer Doris Akers}
 
 {start_of_verse: Verse 1}
 [C]Lead me oh Lord [G7]won’t you lead [C]me     

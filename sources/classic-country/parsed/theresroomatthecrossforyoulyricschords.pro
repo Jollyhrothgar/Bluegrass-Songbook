@@ -1,6 +1,6 @@
 {meta: title There's Room At The Cross For You}
 {meta: artist David Mcllwain}
-{meta: writer Ira Stanphill}
+{meta: composer Ira Stanphill}
 
 {start_of_verse: Verse 1}
 [G]The cross upon which Jesus [C]die[E7]d

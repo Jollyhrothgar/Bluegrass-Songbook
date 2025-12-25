@@ -1,6 +1,6 @@
 {meta: title There My Future Goes}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Billy Gray}
+{meta: composer Hank Thompson and Billy Gray}
 
 {start_of_verse: Verse 1}
 [G]The [C]love light in your eye is growing [G]dimmer day by day

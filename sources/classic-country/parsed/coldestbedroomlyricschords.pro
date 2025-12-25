@@ -1,6 +1,6 @@
 {meta: title Coldest Bedroom}
 {meta: artist Vern Gosdin}
-{meta: writer J. Sins}
+{meta: composer J. Sins}
 
 {start_of_verse: Verse 1}
 [C]There's a cold chill running through my bones [F]tonight

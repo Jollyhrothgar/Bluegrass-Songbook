@@ -1,6 +1,6 @@
 {meta: title Katy Brought My Guitar Back Today}
 {meta: artist Alabama}
-{meta: writer John Jarrard and Mickey Gates}
+{meta: composer John Jarrard and Mickey Gates}
 
 {start_of_verse: Verse 1}
 [C]Katy brought my guitar back [C][Am]today

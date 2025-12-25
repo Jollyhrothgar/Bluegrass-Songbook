@@ -1,6 +1,6 @@
 {meta: title I Don’t Think She’s In Love Anymore}
 {meta: artist Charley Pride}
-{meta: writer Kent Robbins}
+{meta: composer Kent Robbins}
 
 {start_of_verse: Verse 1}
 [C]Well I came in late again  last [F]night 

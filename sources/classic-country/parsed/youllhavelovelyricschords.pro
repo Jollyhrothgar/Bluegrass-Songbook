@@ -1,6 +1,6 @@
 {meta: title You'll Have Love}
 {meta: artist David Houston}
-{meta: writer Carmol Taylor and Quinton Claunch}
+{meta: composer Carmol Taylor and Quinton Claunch}
 
 {start_of_verse: Verse 1}
 [C]I'll do my very [F]best for you in [C]every [G7]way I [C]can

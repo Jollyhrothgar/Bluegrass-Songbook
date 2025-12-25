@@ -1,6 +1,6 @@
 {meta: title I Need Some Good News Bad}
 {meta: artist Bobby Bare}
-{meta: writer Red Lane and Danny Morrison}
+{meta: composer Red Lane and Danny Morrison}
 
 {start_of_verse: Verse 1}
 [C]Sorrow comes like a [F]thief in the [C]night

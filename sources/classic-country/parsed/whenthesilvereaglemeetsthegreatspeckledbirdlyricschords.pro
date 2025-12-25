@@ -1,6 +1,6 @@
 {meta: title When The Silver Eagle Meets The Great Speckled Bird}
 {meta: artist Porter Wagoner}
-{meta: writer Damon Black}
+{meta: composer Damon Black}
 
 {start_of_verse: Verse 1}
 [C]We've got Silver Eagles rolling on the freeways [F]everyday

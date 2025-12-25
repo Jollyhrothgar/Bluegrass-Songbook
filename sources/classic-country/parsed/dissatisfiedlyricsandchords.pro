@@ -1,6 +1,6 @@
 {meta: title Dissatisfied}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson, Jan Howard, Carter Howard}
+{meta: composer Bill Anderson, Jan Howard, Carter Howard}
 
 {start_of_verse: Verse 1}
 [C]Dissatisfied [F]dissatisfied

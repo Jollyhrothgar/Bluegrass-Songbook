@@ -1,6 +1,6 @@
 {meta: title Merry Christmas To You From Me}
 {meta: artist Marty Robbins}
-{meta: writer Jack Pruett}
+{meta: composer Jack Pruett}
 
 {start_of_verse: Verse 1}
 [G]Well honey [D7]I'll take one of you in every [G]size

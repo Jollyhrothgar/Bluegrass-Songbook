@@ -1,6 +1,6 @@
 {meta: title Galvanized Washing Tub}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Cottonseed Clark and Chet Turner}
+{meta: composer Cottonseed Clark and Chet Turner}
 
 {start_of_verse: Verse 1}
 [G]Did you ever take your Saturday bath 

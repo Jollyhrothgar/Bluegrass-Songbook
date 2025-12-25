@@ -1,6 +1,6 @@
 {meta: title Country Girl Lyrics and Chords}
 {meta: artist Dottie West}
-{meta: writer Red Lane and Dottie West}
+{meta: composer Red Lane and Dottie West}
 
 {start_of_verse: Verse 1}
 [C]I was [G7]born a country girl  I will [C]die a [D7]country [G7]girl

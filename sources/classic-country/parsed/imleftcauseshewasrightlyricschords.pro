@@ -1,6 +1,6 @@
 {meta: title I'm Left Cause She Was Right}
 {meta: artist Cal Smith}
-{meta: writer Glen Davis and Ralph Davis}
+{meta: composer Glen Davis and Ralph Davis}
 
 {start_of_verse: Verse 1}
 [C]From the window of this house I see the sun [C7]is almost [F]down

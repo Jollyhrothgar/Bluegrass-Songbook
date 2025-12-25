@@ -1,6 +1,6 @@
 {meta: title Oh How I Miss You Tonight}
 {meta: artist Jim Reeves}
-{meta: writer Benny Davis, Joe Burke, Mark Fisher}
+{meta: composer Benny Davis, Joe Burke, Mark Fisher}
 
 {start_of_verse: Verse 1}
 [C]Oh how I miss you tonight 

@@ -1,6 +1,6 @@
 {meta: title Que Sera Sera (Whatever Will Be Will Be)}
 {meta: artist Doris Day}
-{meta: writer Raymond B. Evans and Jay Livingston}
+{meta: composer Raymond B. Evans and Jay Livingston}
 
 {start_of_verse: Verse 1}
 [C]When I was just a little girl

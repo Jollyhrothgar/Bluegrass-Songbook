@@ -1,6 +1,6 @@
 {meta: title Along Came You}
 {meta: artist George Jones}
-{meta: writer Wayne Kemp, George Jones, Jack Rich}
+{meta: composer Wayne Kemp, George Jones, Jack Rich}
 
 {start_of_verse: Verse 1}
 [C]Well I used to sit at home and wonder why why [G7]why

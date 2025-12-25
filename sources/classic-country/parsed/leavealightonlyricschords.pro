@@ -1,6 +1,6 @@
 {meta: title Leave A Light On}
 {meta: artist Garth Brooks}
-{meta: writer Randy Goodrum and Tommy Simms}
+{meta: composer Randy Goodrum and Tommy Simms}
 
 {start_of_verse: Verse 1}
 [C]I [F]lost my [C]way but [F]found [G7]tod[C]ay

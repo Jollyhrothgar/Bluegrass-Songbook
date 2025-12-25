@@ -1,6 +1,6 @@
 {meta: title Above and Beyond the Call of Love}
 {meta: artist Buck Owens}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]A poor boy's chances for [C]pretty girl's glances 

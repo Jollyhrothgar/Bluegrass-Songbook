@@ -1,6 +1,6 @@
 {meta: title Arkansas}
 {meta: artist Wilburn Brothers}
-{meta: writer Damon Black}
+{meta: composer Damon Black}
 
 {start_of_verse: Verse 1}
 [C]Though the brambles took the cabin I was born in

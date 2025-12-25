@@ -1,6 +1,6 @@
 {meta: title I Never Had It So Good}
 {meta: artist Jack Greene}
-{meta: writer Roy C. Bennett and Arthur Kent}
+{meta: composer Roy C. Bennett and Arthur Kent}
 
 {start_of_verse: Verse 1}
 [G]Step up and [Bm]meet Mr. [Em]Sunshine[C] 

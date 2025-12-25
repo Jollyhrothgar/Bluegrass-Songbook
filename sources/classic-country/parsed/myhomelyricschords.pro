@@ -1,6 +1,6 @@
 {meta: title My Home}
 {meta: artist Heirline}
-{meta: writer Michael Wayne Smith}
+{meta: composer Michael Wayne Smith}
 
 {start_of_verse: Verse 1}
 My Home

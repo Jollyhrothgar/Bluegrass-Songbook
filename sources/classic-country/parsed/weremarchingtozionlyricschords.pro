@@ -1,6 +1,6 @@
 {meta: title We're Marching To Zion}
 {meta: artist Burl Ives}
-{meta: writer Isaac Watts}
+{meta: composer Isaac Watts}
 
 {start_of_verse: Verse 1}
 [G]Come ye that [D7]love the [G]Lord

@@ -1,6 +1,6 @@
 {meta: title If You See A Change In Me}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]They crucified our Jesus nailed His body [F]to a [C]cross

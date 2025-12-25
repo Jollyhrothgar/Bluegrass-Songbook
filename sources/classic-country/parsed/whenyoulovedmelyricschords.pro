@@ -1,6 +1,6 @@
 {meta: title When You Loved Me}
 {meta: artist Brenda Lee}
-{meta: writer Bob Tubert and Joe Byers}
+{meta: composer Bob Tubert and Joe Byers}
 
 {start_of_verse: Verse 1}
 [Em]When you [Am]loved me 

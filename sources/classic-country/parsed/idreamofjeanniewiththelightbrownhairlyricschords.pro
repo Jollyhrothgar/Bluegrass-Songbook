@@ -1,6 +1,6 @@
 {meta: title I Dream Of Jeannie With The Light Brown Hair}
 {meta: artist Charlie Rich}
-{meta: writer Stephen C. Foster}
+{meta: composer Stephen C. Foster}
 
 {start_of_verse: Verse 1}
 [C]I dream of Jeannie with the light brown hair

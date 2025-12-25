@@ -1,6 +1,6 @@
 {meta: title A Wonder Like You}
 {meta: artist Ricky Nelson}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]I've seen the snow white [F]mountains of [C]Alaska

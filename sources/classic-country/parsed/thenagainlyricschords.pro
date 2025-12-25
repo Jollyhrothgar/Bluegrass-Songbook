@@ -1,6 +1,6 @@
 {meta: title Then Again}
 {meta: artist Alabama}
-{meta: writer Rick Bowles and Jeff Silbar}
+{meta: composer Rick Bowles and Jeff Silbar}
 
 {start_of_verse: Verse 1}
 [G]We could walk away now call it [C]over and done

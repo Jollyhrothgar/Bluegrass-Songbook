@@ -1,6 +1,6 @@
 {meta: title For Christ's Sake It's Christmas}
 {meta: artist George Strait}
-{meta: writer Hank Cochran and Dean Dillon}
+{meta: composer Hank Cochran and Dean Dillon}
 
 {start_of_verse: Verse 1}
 For Christ's Sake It's Christmas

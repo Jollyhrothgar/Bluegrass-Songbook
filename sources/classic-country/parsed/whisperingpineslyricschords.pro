@@ -1,6 +1,6 @@
 {meta: title Whispering Pines}
 {meta: artist Johnny Horton}
-{meta: writer Howard Hausey}
+{meta: composer Howard Hausey}
 
 {start_of_verse: Verse 1}
 [C]The snowflakes fall it's winter's call

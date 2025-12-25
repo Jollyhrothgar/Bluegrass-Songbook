@@ -1,6 +1,6 @@
 {meta: title Don't Take It Away}
 {meta: artist Conway Twitty}
-{meta: writer Max Barnes and Troy Seals}
+{meta: composer Max Barnes and Troy Seals}
 
 {start_of_verse: Verse 1}
 [C]I been looking for you all night long darling 

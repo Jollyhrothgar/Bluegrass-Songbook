@@ -1,6 +1,6 @@
 {meta: title A Cowboy Like You}
 {meta: artist Reba McEntire}
-{meta: writer Tompall Glaser}
+{meta: composer Tompall Glaser}
 
 {start_of_verse: Verse 1}
 [C]Well there's a [G]jukebox [D7]in my [G]ear 

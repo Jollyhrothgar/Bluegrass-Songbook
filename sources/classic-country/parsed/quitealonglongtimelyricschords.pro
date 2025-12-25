@@ -1,6 +1,6 @@
 {meta: title Quite A Long Long Time}
 {meta: artist Statler Brothers}
-{meta: writer Lew DeWitt}
+{meta: composer Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [C]Perhaps the semi [G7]darkness of this [C]room has me confused

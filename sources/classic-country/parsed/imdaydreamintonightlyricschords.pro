@@ -1,6 +1,6 @@
 {meta: title I'm Day Dreamin' Tonight}
 {meta: artist Porter Wagoner}
-{meta: writer Mildred Burk and Ross Burk}
+{meta: composer Mildred Burk and Ross Burk}
 
 {start_of_verse: Verse 1}
 [G]From nighttime I'll borrow [C]sunshine

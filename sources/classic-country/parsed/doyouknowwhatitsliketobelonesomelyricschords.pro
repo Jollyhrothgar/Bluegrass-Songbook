@@ -1,6 +1,6 @@
 {meta: title Do You Know What It’s Like To Be Lonesome}
 {meta: artist Jerry Wallace}
-{meta: writer Bert Pellish}
+{meta: composer Bert Pellish}
 
 {start_of_verse: Verse 1}
 [G7]Do you [C]know what it's [E7]like to [A7]be [Em]lonesome

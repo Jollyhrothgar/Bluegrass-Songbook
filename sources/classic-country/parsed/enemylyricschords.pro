@@ -1,6 +1,6 @@
 {meta: title Enemy}
 {meta: artist George Morgan}
-{meta: writer Johnny Adcock}
+{meta: composer Johnny Adcock}
 
 {start_of_verse: Verse 1}
 [G]The work day is done it's time to go [D7]home

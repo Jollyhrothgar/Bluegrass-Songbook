@@ -1,6 +1,6 @@
 {meta: title Someday You Will}
 {meta: artist Charley Pride}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]You don't know [C]how I [G]feel but [D7]someday you [C][G]will

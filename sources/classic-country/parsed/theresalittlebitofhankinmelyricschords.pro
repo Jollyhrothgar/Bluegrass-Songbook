@@ -1,6 +1,6 @@
 {meta: title There's A Little Bit Of Hank In Me}
 {meta: artist Charlie Pride}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]Well Hank I never met you [F]but I sure heard you [C]sing

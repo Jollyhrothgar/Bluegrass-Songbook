@@ -1,6 +1,6 @@
 {meta: title Somewhere I Wanna Go}
 {meta: artist Tracy Byrd}
-{meta: writer Mark Nesler, Tony Martin, Tom Shapiro}
+{meta: composer Mark Nesler, Tony Martin, Tom Shapiro}
 
 {start_of_verse: Verse 1}
 [G]Here's the thing about your [D7]memory

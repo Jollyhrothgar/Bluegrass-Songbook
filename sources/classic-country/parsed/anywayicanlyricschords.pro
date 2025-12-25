@@ -1,6 +1,6 @@
 {meta: title Anyway I Can}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy, Howard Bellamy, Donald Alan Schlitz}
+{meta: composer David Bellamy, Howard Bellamy, Donald Alan Schlitz}
 
 {start_of_verse: Verse 1}
 [G]She's a [C]heart [G]you can't [D7]own

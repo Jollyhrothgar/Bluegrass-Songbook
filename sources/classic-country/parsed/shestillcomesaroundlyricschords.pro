@@ -1,6 +1,6 @@
 {meta: title She Still Comes Around}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]I know I am not a model husband  although I'd like to [C]be

@@ -1,6 +1,6 @@
 {meta: title When Love Was All We Had To Share}
 {meta: artist Vern Gosdin}
-{meta: writer Earl Montgomery and George Richey}
+{meta: composer Earl Montgomery and George Richey}
 
 {start_of_verse: Verse 1}
 [C]My heart is [G7]so thankful for [C]your love I’m [F]grateful

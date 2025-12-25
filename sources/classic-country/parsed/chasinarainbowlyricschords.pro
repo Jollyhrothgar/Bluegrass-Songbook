@@ -1,6 +1,6 @@
 {meta: title Chasin' A Rainbow}
 {meta: artist Hank Snow}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [C](Chasin' a [G]Rainbow till the [D7]day that I [G]d-[C]i-[G]e)[D7]   [G]

@@ -1,6 +1,6 @@
 {meta: title Kiss an Angel Good Morning}
 {meta: artist Charlie Pride}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]When ever I chance to meet   some old friends [G7]on the [C]street

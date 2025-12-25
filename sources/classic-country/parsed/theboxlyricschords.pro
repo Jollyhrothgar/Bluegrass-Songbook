@@ -1,6 +1,6 @@
 {meta: title The Box}
 {meta: artist Randy Travis}
-{meta: writer Buck A. Moore and Randy Bruce Traywick}
+{meta: composer Buck A. Moore and Randy Bruce Traywick}
 
 {start_of_verse: Verse 1}
 [G]On the top shelf in the closet

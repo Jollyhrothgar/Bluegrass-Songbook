@@ -1,6 +1,6 @@
 {meta: title No Reason To Quit}
 {meta: artist Merle Haggard}
-{meta: writer Dean Holloway}
+{meta: composer Dean Holloway}
 
 {start_of_verse: Verse 1}
 [C]There's a circle of [G7]people 

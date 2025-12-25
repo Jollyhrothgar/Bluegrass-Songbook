@@ -1,6 +1,6 @@
 {meta: title Malena}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 ([C]A wish that [A#7]Malena had [C]wings)

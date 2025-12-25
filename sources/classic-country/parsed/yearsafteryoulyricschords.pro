@@ -1,6 +1,6 @@
 {meta: title Years After You}
 {meta: artist John Conlee}
-{meta: writer Thom Schuyler}
+{meta: composer Thom Schuyler}
 
 {start_of_verse: Verse 1}
 [C]I don't [F]know if I can [C]explain it 

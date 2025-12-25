@@ -1,6 +1,6 @@
 {meta: title Burnin' The Honky Tonks Down}
 {meta: artist Alan Jackson}
-{meta: writer Billy Burnette and Shawn Camp}
+{meta: composer Billy Burnette and Shawn Camp}
 
 {start_of_verse: Verse 1}
 [C]She's burnin' the honky tonks down

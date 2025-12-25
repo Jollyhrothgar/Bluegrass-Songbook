@@ -1,6 +1,6 @@
 {meta: title These Things Shall Pass}
 {meta: artist Johnny Cash}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [G]These things shall pass and some great [C]morning 

@@ -1,6 +1,6 @@
 {meta: title The Coast Is Clear}
 {meta: artist Tracy Lawrence}
-{meta: writer Brett Jones and Jess Brown}
+{meta: composer Brett Jones and Jess Brown}
 
 {start_of_verse: Verse 1}
 [C]Say the weather in Atlanta is foggy and gray 

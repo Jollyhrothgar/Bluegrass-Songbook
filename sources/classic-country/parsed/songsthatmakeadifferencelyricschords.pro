@@ -1,6 +1,6 @@
 {meta: title Songs That Make a Difference}
 {meta: artist The Highwaymen}
-{meta: writer Johnny Cash}
+{meta: composer Johnny Cash}
 
 {start_of_verse: Verse 1}
 [G]Hey Babe do you remember [C]back in nineteen [D7]sixty-[G]nine

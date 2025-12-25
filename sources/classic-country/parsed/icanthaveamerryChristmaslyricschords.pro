@@ -1,6 +1,6 @@
 {meta: title I Can't Have A Merry Christmas}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Bill Lancaster}
+{meta: composer Bill Lancaster}
 
 {start_of_verse: Verse 1}
 [C]I can't have a Merry Christmas  Mary without [G7]you

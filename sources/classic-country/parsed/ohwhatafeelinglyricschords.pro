@@ -1,6 +1,6 @@
 {meta: title Oh What A Feeling}
 {meta: artist Everly Brothers}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [G]It  [C]must be [G][E7]love

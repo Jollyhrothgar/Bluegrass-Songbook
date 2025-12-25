@@ -1,6 +1,6 @@
 {meta: title Let The Church Roll On}
 {meta: artist Lester Flatt}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]Let the church roll [C]on (oh my lord)

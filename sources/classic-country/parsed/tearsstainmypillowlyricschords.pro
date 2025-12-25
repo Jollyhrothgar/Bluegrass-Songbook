@@ -1,6 +1,6 @@
 {meta: title Tears Stain My Pillow}
 {meta: artist Slim Whitman}
-{meta: writer Byron}
+{meta: composer Byron}
 
 {start_of_verse: Verse 1}
 [C]Tears stain my pillow every night

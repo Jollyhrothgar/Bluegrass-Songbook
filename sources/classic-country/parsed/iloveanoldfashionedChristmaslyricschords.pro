@@ -1,6 +1,6 @@
 {meta: title I Love An Old Fashioned Christmas}
 {meta: artist Bobby Bare}
-{meta: writer Theodore Purvil}
+{meta: composer Theodore Purvil}
 
 {start_of_verse: Verse 1}
 [G]I love an old [F]fashioned [G]Christmas

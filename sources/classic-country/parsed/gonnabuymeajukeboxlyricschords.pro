@@ -1,6 +1,6 @@
 {meta: title Gonna Buy Me A Jukebox}
 {meta: artist Charlie Walker}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna buy me a jukebox and put it in the [G7]den

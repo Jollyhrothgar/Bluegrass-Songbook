@@ -1,6 +1,6 @@
 {meta: title I'm not Crazy Yet}
 {meta: artist Ray Price}
-{meta: writer Don Rollins}
+{meta: composer Don Rollins}
 
 {start_of_verse: Verse 1}
 [G]Don’t leave believing [C]that I didn’t [G]care

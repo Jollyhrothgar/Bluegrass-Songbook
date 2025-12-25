@@ -1,6 +1,6 @@
 {meta: title Divorce Me C. O. D.}
 {meta: artist Carl Smith}
-{meta: writer Cliff Stone and Merle Travis}
+{meta: composer Cliff Stone and Merle Travis}
 
 {start_of_verse: Verse 1}
 recorded gy [C]Carl [D]Smith

@@ -1,6 +1,6 @@
 {meta: title If You Ever Need My Love}
 {meta: artist Jack Greene}
-{meta: writer Lindy Leigh and Marie Wilson}
+{meta: composer Lindy Leigh and Marie Wilson}
 
 {start_of_verse: Verse 1}
 [G]If you ever need my [D7]love I’ll be [G]there

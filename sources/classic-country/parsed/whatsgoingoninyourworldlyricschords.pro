@@ -1,6 +1,6 @@
 {meta: title What's Going On In Your World}
 {meta: artist George Strait}
-{meta: writer Royce Porter, David Chamberlain, Red Steagall}
+{meta: composer Royce Porter, David Chamberlain, Red Steagall}
 
 {start_of_verse: Verse 1}
 [G]What's going [D7]on in [G]your world [C]I hope that [Em]you're doing [Am]fine[C]

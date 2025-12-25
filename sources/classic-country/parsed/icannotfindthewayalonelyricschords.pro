@@ -1,6 +1,6 @@
 {meta: title I Cannot Find The Way Alone}
 {meta: artist Jimmie Davis}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [C]As I journey through this vale of [F]sorrow

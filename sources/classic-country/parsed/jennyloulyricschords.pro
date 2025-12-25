@@ -1,6 +1,6 @@
 {meta: title Jenny Lou}
 {meta: artist Sonny James}
-{meta: writer Mark W. McIntyre and William Olofson}
+{meta: composer Mark W. McIntyre and William Olofson}
 
 {start_of_verse: Verse 1}
 [C]I was put here by a [F]jury

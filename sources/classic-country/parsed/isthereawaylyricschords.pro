@@ -1,6 +1,6 @@
 {meta: title Is There A Way}
 {meta: artist Marsha Thornton}
-{meta: writer Dean Folkword and Kostas Lazarides}
+{meta: composer Dean Folkword and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [G7]Is there a [C]way that [F]I can come back t[C]o your heart

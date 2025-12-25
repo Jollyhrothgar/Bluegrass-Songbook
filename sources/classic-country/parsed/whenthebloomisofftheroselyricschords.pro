@@ -1,6 +1,6 @@
 {meta: title When The Bloom Is Off The Rose}
 {meta: artist Rhonda Vincent}
-{meta: writer Roger Brown}
+{meta: composer Roger Brown}
 
 {start_of_verse: Verse 1}
 [C]When the bloom is off the [F]rose 

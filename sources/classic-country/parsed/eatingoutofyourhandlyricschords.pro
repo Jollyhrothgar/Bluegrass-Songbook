@@ -1,6 +1,6 @@
 {meta: title Eating Out Of Your Hand}
 {meta: artist Bill Harrell}
-{meta: writer Bill Harrell and Hope Harlow}
+{meta: composer Bill Harrell and Hope Harlow}
 
 {start_of_verse: Verse 1}
 [C]I'm tired of eating out of your hand I'm [F]tired of getting [D7]told

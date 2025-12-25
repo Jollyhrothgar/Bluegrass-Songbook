@@ -1,6 +1,6 @@
 {meta: title I'll Walk Alone}
 {meta: artist Ricky Nelson}
-{meta: writer Sammy Cahn and Jule Styne}
+{meta: composer Sammy Cahn and Jule Styne}
 
 {start_of_verse: Verse 1}
 [C]I'll walk alone because to tell you the [Am]truth 

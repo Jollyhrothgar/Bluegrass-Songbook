@@ -1,6 +1,6 @@
 {meta: title You Don't Love God If You Don't Love Your Neighbor}
 {meta: artist Rhonda Vincent}
-{meta: writer Carl Story}
+{meta: composer Carl Story}
 
 {start_of_verse: Verse 1}
 [C]There are many people who will say they're Christians

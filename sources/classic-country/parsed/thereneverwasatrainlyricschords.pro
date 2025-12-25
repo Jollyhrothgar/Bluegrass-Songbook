@@ -1,6 +1,6 @@
 {meta: title There Never Was A Train}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [C]Given up the [G7]traveling it's [F]driving me insane 

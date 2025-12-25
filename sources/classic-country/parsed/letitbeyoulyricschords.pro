@@ -1,6 +1,6 @@
 {meta: title Let It Be You}
 {meta: artist Ricky Skaggs}
-{meta: writer Kevin Welch and Harry Stinson}
+{meta: composer Kevin Welch and Harry Stinson}
 
 {start_of_verse: Verse 1}
 [G]If I could find a love to treasure with this [C]heart and with these [G]hands

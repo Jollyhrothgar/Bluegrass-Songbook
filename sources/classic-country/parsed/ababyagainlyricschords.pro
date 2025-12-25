@@ -1,6 +1,6 @@
 {meta: title A Baby Again}
 {meta: artist Jim Ed Brown}
-{meta: writer Billy Ed Wheeler}
+{meta: composer Billy Ed Wheeler}
 
 {start_of_verse: Verse 1}
 [G]She didn't [C]warn me the [G]way she said she would

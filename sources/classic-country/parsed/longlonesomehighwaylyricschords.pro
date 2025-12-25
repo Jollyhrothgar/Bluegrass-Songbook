@@ -1,6 +1,6 @@
 {meta: title Long Lonesome Highway}
 {meta: artist Dick Curless}
-{meta: writer James Hendricks}
+{meta: composer James Hendricks}
 
 {start_of_verse: Verse 1}
 [A7]Going down that long lonesome [D7]highway

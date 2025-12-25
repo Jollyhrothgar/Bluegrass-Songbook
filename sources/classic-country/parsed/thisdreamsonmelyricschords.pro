@@ -1,6 +1,6 @@
 {meta: title This Dream's On Me}
 {meta: artist Gene Watson}
-{meta: writer Fredrick G. Koller}
+{meta: composer Fredrick G. Koller}
 
 {start_of_verse: Verse 1}
 [C]You said you dreamed of candle[C7]light

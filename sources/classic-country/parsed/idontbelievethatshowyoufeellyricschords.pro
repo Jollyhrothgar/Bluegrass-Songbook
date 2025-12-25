@@ -1,6 +1,6 @@
 {meta: title I Don't Believe That's How You Feel}
 {meta: artist Tanya Tucker}
-{meta: writer Harlan Howard and Kostas}
+{meta: composer Harlan Howard and Kostas}
 
 {start_of_verse: Verse 1}
 [C]I don't believe that's how you feel

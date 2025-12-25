@@ -1,6 +1,6 @@
 {meta: title Chandelier Of Stars}
 {meta: artist Jim Ed Brown}
-{meta: writer Eddie White and Mack Wolfson}
+{meta: composer Eddie White and Mack Wolfson}
 
 {start_of_verse: Verse 1}
 [C]The miracle we [G]saw that night 

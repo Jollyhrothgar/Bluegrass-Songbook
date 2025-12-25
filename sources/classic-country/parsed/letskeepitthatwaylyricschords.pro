@@ -1,6 +1,6 @@
 {meta: title Let's Keep It That Way}
 {meta: artist Anne Murray}
-{meta: writer Claude Putman Jr. and Rafe G. Van Hoy}
+{meta: composer Claude Putman Jr. and Rafe G. Van Hoy}
 
 {start_of_verse: Verse 1}
 [G]There's no need to lie 

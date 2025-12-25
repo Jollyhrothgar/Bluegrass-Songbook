@@ -1,6 +1,6 @@
 {meta: title The Sun Never Comes Up Again}
 {meta: artist Ray Price}
-{meta: writer Dave Kirby and Joe Allen}
+{meta: composer Dave Kirby and Joe Allen}
 
 {start_of_verse: Verse 1}
 [C]Tonight you're saying you love [F]me

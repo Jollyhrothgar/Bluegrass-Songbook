@@ -1,6 +1,6 @@
 {meta: title Little Green Valley}
 {meta: artist Marty Robbins}
-{meta: writer Carson Robison}
+{meta: composer Carson Robison}
 
 {start_of_verse: Verse 1}
 [C]I see a candlelight [F]down in the little green [C]valley

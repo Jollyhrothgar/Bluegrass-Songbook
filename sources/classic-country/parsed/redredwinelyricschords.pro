@@ -1,6 +1,6 @@
 {meta: title Red Red Wine}
 {meta: artist Johnny Duncan}
-{meta: writer Neil Diamond}
+{meta: composer Neil Diamond}
 
 {start_of_verse: Verse 1}
 [G7]Red red [C]wine [F]  [Dm]  go to my [C]head

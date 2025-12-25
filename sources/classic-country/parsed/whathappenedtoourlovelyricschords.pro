@@ -1,6 +1,6 @@
 {meta: title What Happened To Our Love}
 {meta: artist Moe Bandy}
-{meta: writer Sanger D. Shafer and Moe Bandy}
+{meta: composer Sanger D. Shafer and Moe Bandy}
 
 {start_of_verse: Verse 1}
 [G]Last night I wandered through my mind 

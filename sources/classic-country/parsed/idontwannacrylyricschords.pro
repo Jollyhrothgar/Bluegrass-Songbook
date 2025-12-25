@@ -1,6 +1,6 @@
 {meta: title I Don't Wanna Cry}
 {meta: artist Gatlin Brothers}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 [G]I don't wanna cry this [B7]early this [C]morning

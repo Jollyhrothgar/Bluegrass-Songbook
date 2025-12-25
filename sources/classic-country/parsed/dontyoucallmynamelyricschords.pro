@@ -1,6 +1,6 @@
 {meta: title Don’t You Call My Name}
 {meta: artist Dailey and Vincent}
-{meta: writer Herbert Campbell}
+{meta: composer Herbert Campbell}
 
 {start_of_verse: Verse 1}
 [C]Don’t you call my name cause I won’t answer

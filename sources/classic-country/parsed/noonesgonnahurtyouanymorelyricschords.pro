@@ -1,6 +1,6 @@
 {meta: title No One's Gonna Hurt You Anymore}
 {meta: artist Jack Greene}
-{meta: writer Steve Karliski and Ted Cooper}
+{meta: composer Steve Karliski and Ted Cooper}
 
 {start_of_verse: Verse 1}
 [C]You've cried the [G7]last tear you're gonna cry

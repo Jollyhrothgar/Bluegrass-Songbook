@@ -1,6 +1,6 @@
 {meta: title Until at Last I'm Home}
 {meta: artist Jamie Dailey and Darrin Vincent}
-{meta: writer Brad Price, Darrin Vincent, Jim Britton}
+{meta: composer Brad Price, Darrin Vincent, Jim Britton}
 
 {start_of_verse: Verse 1}
 [C]My heart was cold and dark no [G7]joy or peace with[C]in

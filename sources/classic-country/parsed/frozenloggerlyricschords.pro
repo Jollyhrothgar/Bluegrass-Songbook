@@ -1,6 +1,6 @@
 {meta: title Frozen Logger}
 {meta: artist Johnny Cash}
-{meta: writer James Stevens}
+{meta: composer James Stevens}
 
 {start_of_verse: Verse 1}
 [G]As I stepped out one [D7]morning into a small [G]cafe

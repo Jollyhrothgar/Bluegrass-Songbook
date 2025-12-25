@@ -1,6 +1,6 @@
 {meta: title Wrapped Around Her Finger}
 {meta: artist George Jones}
-{meta: writer George Jones and Tammy Wynette}
+{meta: composer George Jones and Tammy Wynette}
 
 {start_of_verse: Verse 1}
 [G]Like a string she’s got me [C]wrapped around her [G]finger

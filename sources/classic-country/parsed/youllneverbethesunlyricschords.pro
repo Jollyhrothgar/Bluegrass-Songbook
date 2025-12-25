@@ -1,6 +1,6 @@
 {meta: title (You'll) Never Be The Sun}
 {meta: artist Emmylou Harris, Dolly Parton, Linda Ronstadt}
-{meta: writer Donagh Long}
+{meta: composer Donagh Long}
 
 {start_of_verse: Verse 1}
 [C]You'll [G7]never be the [C]sun turning in the [F]sky

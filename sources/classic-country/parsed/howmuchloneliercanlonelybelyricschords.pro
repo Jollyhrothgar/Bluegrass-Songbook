@@ -1,6 +1,6 @@
 {meta: title How Much Lonelier Can Lonely Be}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C](How much lonelier [G7]can lonely [C]be)

@@ -1,6 +1,6 @@
 {meta: title The Hanging Tree}
 {meta: artist Marty Robbins}
-{meta: writer Jerry Livingston and Mack David}
+{meta: composer Jerry Livingston and Mack David}
 
 {start_of_verse: Verse 1}
 [C]I came to town [Am]to search for gold

@@ -1,6 +1,6 @@
 {meta: title Christmas Time Is Near}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Don Rich}
+{meta: composer Buck Owens and Don Rich}
 
 {start_of_verse: Verse 1}
 [C]Snowflakes falling [C7]on the ground 

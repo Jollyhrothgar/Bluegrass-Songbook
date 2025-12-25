@@ -1,6 +1,6 @@
 {meta: title Somebody's Gonna Do It Tonight}
 {meta: artist Bob Luman}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]Somebody's gonna do it to[F]night

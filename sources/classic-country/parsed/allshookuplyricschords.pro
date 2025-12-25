@@ -1,6 +1,6 @@
 {meta: title All Shook Up}
 {meta: artist Elvis Presley}
-{meta: writer Otis Blackwell and Elvis Presley}
+{meta: composer Otis Blackwell and Elvis Presley}
 
 {start_of_verse: Verse 1}
 [G]A well I bless my soul what's wrong with me

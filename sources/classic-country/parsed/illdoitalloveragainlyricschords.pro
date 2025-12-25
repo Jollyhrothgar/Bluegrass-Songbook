@@ -1,6 +1,6 @@
 {meta: title I’ll Do It All Over Again}
 {meta: artist Crystal Gayle}
-{meta: writer Bob McDill and Wayne Holyfield}
+{meta: composer Bob McDill and Wayne Holyfield}
 
 {start_of_verse: Verse 1}
 [C]Was I right was I [G7]wrong

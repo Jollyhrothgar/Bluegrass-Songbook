@@ -1,6 +1,6 @@
 {meta: title On Down The Line}
 {meta: artist Patty Loveless}
-{meta: writer Kostas Lazarides}
+{meta: composer Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [G]Tryin' to make a livin' that's the bottom line

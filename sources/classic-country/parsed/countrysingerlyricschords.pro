@@ -1,6 +1,6 @@
 {meta: title Country Singer}
 {meta: artist Vernon Oxford}
-{meta: writer Jimmie Morris}
+{meta: composer Jimmie Morris}
 
 {start_of_verse: Verse 1}
 [C]I just wanna [F]be a country [C]singer

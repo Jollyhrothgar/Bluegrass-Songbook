@@ -1,6 +1,6 @@
 {meta: title Love Didn't Drive My Good Woman Wild}
 {meta: artist Darrell McCall}
-{meta: writer Earl Thomas Conley}
+{meta: composer Earl Thomas Conley}
 
 {start_of_verse: Verse 1}
 [G]The jukebox is playing her [C]favorite [G]song

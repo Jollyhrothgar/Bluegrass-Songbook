@@ -1,6 +1,6 @@
 {meta: title Beyond Those Years}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Eddie Setser and Troy Seals}
+{meta: composer Eddie Setser and Troy Seals}
 
 {start_of_verse: Verse 1}
 [G]Full moons and empty promises

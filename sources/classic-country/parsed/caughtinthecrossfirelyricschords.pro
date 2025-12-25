@@ -1,6 +1,6 @@
 {meta: title Caught In The Crossfire}
 {meta: artist Rhonda Vincent}
-{meta: writer Terry Herd and Rhonda Vincent}
+{meta: composer Terry Herd and Rhonda Vincent}
 
 {start_of_verse: Verse 1}
 [Em]In the month of June five years ago that's when I came to [G7]be

@@ -1,6 +1,6 @@
 {meta: title Take A Taste Of My Wine}
 {meta: artist Buck Owens}
-{meta: writer Bob Morris and Larry Scott}
+{meta: composer Bob Morris and Larry Scott}
 
 {start_of_verse: Verse 1}
 [G]Come a little closer be a little bolder

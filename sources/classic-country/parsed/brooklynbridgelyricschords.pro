@@ -1,6 +1,6 @@
 {meta: title Brooklyn Bridge}
 {meta: artist Mel Tillis}
-{meta: writer Mel Tillis and Wayne P. Walker}
+{meta: composer Mel Tillis and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]Well I had me a girl with the golden curls [F]she vowed to treat me [C]right

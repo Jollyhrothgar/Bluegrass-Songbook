@@ -1,6 +1,6 @@
 {meta: title I'll Be There}
 {meta: artist Ray Price}
-{meta: writer Ray Price and Rusty Gabbard}
+{meta: composer Ray Price and Rusty Gabbard}
 
 {start_of_verse: Verse 1}
 [C]There ain't no chains strong enough to hold me

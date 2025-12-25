@@ -1,6 +1,6 @@
 {meta: title This Is My Heaven}
 {meta: artist Elvis Presley}
-{meta: writer Bernie Baum, Bill Giant, Florence Kaye}
+{meta: composer Bernie Baum, Bill Giant, Florence Kaye}
 
 {start_of_verse: Verse 1}
 [G]This is my heaven

@@ -1,6 +1,6 @@
 {meta: title Ramona}
 {meta: artist Jim Reeves}
-{meta: writer Wolfe L. Gilbert and Mabel Wayne}
+{meta: composer Wolfe L. Gilbert and Mabel Wayne}
 
 {start_of_verse: Verse 1}
 [G]Ramona I hear the mission [Am]bells above [D7]

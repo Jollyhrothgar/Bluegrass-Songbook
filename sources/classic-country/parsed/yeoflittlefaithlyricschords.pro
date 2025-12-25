@@ -1,6 +1,6 @@
 {meta: title Ye Of Little Faith}
 {meta: artist Porter Wagoner}
-{meta: writer Lorraine Wagoner Hall}
+{meta: composer Lorraine Wagoner Hall}
 
 {start_of_verse: Verse 1}
 [C]Now we're so busy here no time to sing and pray

@@ -1,6 +1,6 @@
 {meta: title A Courtroom Then Goodbye}
 {meta: artist Patsy Cline}
-{meta: writer Eddie Miller and W.S. Stevenson}
+{meta: composer Eddie Miller and W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [G]The first scene was the church then the [D7]altar

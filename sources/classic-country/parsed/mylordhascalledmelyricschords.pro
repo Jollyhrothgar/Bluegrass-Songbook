@@ -1,6 +1,6 @@
 {meta: title My Lord Has Called Me}
 {meta: artist George Jones}
-{meta: writer George Jones and Lester Weytek}
+{meta: composer George Jones and Lester Weytek}
 
 {start_of_verse: Verse 1}
 [C]My Lord has [G7]called me [C]today[G7]

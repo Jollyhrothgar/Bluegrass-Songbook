@@ -1,6 +1,6 @@
 {meta: title No Mother Or Dad}
 {meta: artist Lester Flatt and Earl Scruggs}
-{meta: writer Curley Sechler and Lester Flatt}
+{meta: composer Curley Sechler and Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]Now brother and I are [C]all a[G]lone

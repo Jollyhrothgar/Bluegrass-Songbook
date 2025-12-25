@@ -1,6 +1,6 @@
 {meta: title Don't Blame It On Your Wife}
 {meta: artist Ricky Nelson}
-{meta: writer Terence Boylan}
+{meta: composer Terence Boylan}
 
 {start_of_verse: Verse 1}
 [C]She works so hard all day [G7]long

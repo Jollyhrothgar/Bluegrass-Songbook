@@ -1,6 +1,6 @@
 {meta: title Don't It Make You Lonely}
 {meta: artist Conway Twitty}
-{meta: writer Jackson Lee Leap}
+{meta: composer Jackson Lee Leap}
 
 {start_of_verse: Verse 1}
 [G]Couples walking in the park

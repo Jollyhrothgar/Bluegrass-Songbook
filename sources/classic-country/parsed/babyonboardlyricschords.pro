@@ -1,6 +1,6 @@
 {meta: title Baby On Board}
 {meta: artist The Oak Ridge Boys}
-{meta: writer J.C. Crowley and Jeff Silbar}
+{meta: composer J.C. Crowley and Jeff Silbar}
 
 {start_of_verse: Verse 1}
 [G]Hey there mister in a Cadillac

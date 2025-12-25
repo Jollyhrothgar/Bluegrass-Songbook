@@ -1,6 +1,6 @@
 {meta: title If Her Blue Eyes Don't Get You}
 {meta: artist Marty Robbins}
-{meta: writer Curly Putman, Steve Pippin, Richard Hill}
+{meta: composer Curly Putman, Steve Pippin, Richard Hill}
 
 {start_of_verse: Verse 1}
 [G7]If her blue eyes don't get ya ooh I'll bet [F]ya

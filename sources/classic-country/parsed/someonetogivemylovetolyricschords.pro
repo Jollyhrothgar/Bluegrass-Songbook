@@ -1,6 +1,6 @@
 {meta: title Someone To Give My Love To}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]I could search from now till the [E7]end of [F]time 

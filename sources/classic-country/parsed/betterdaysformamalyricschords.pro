@@ -1,6 +1,6 @@
 {meta: title Better Days For Mama}
 {meta: artist Stonewall Jackson}
-{meta: writer Hugh H. King}
+{meta: composer Hugh H. King}
 
 {start_of_verse: Verse 1}
 [C]That whiskey and [F]his wild reckless [C]way

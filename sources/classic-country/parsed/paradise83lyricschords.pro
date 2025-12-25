@@ -1,6 +1,6 @@
 {meta: title Paradise '83}
 {meta: artist Vern Gosdin}
-{meta: writer Buddy Cannon, Vern Gosdin, Mickey Baker}
+{meta: composer Buddy Cannon, Vern Gosdin, Mickey Baker}
 
 {start_of_verse: Verse 1}
 [C]That Florida moon was shinning bright

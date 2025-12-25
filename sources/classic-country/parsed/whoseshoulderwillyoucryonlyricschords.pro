@@ -1,6 +1,6 @@
 {meta: title Whose Shoulder Will You Cry On}
 {meta: artist Kitty Wells}
-{meta: writer Billy Wallace and Kitty Wells}
+{meta: composer Billy Wallace and Kitty Wells}
 
 {start_of_verse: Verse 1}
 [G7]Once you [C]were my life [G7]and [F]breath 

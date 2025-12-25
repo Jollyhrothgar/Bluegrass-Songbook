@@ -1,6 +1,6 @@
 {meta: title I Can't Get Over Missing You}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Hazel Pitts}
+{meta: composer Sonny James and Hazel Pitts}
 
 {start_of_verse: Verse 1}
 [C]I miss some loving that I used to get from you

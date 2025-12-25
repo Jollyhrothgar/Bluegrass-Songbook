@@ -1,6 +1,6 @@
 {meta: title His Grace Is Sufficient}
 {meta: artist The Booth Brothers}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [G7]Many [C]times I'm tried and tested

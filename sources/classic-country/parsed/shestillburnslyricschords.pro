@@ -1,6 +1,6 @@
 {meta: title She Still Burns}
 {meta: artist Mel Tillis}
-{meta: writer Sam Weedman}
+{meta: composer Sam Weedman}
 
 {start_of_verse: Verse 1}
 [G]She said goodbye to thirty  [C]some years ago

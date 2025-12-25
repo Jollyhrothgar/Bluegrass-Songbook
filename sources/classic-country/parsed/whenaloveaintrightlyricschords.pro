@@ -1,6 +1,6 @@
 {meta: title When A Love Ain't Right}
 {meta: artist Charly McClain}
-{meta: writer Bob Morrison and Johnny Wilson}
+{meta: composer Bob Morrison and Johnny Wilson}
 
 {start_of_verse: Verse 1}
 [C]Teardrops fall hearts will [Am]break 

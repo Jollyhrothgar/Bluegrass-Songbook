@@ -1,6 +1,6 @@
 {meta: title The Chocolate Song}
 {meta: artist Charlie Walker}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Boys love girls and girls love pearls

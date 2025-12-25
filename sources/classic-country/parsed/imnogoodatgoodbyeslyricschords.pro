@@ -1,6 +1,6 @@
 {meta: title I'm No Good At Goodbyes}
 {meta: artist Ronnie Milsap}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]You don't have to tell me that it's [F]over

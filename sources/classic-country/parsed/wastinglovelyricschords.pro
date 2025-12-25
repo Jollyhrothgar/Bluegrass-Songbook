@@ -1,6 +1,6 @@
 {meta: title Wasting Love}
 {meta: artist Porter Wagoner}
-{meta: writer Porter Wagoner}
+{meta: composer Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [G]It seems we lost the feeling some[C]where along the [G]way

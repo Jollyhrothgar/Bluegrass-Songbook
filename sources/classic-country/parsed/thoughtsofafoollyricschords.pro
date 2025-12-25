@@ -1,6 +1,6 @@
 {meta: title Thoughts Of A Fool}
 {meta: artist Carl Smith}
-{meta: writer Mel Tillis and Wayne P. Walker}
+{meta: composer Mel Tillis and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]I had a love  [F]and it was all [C]mine

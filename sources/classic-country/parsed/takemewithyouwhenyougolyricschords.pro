@@ -1,6 +1,6 @@
 {meta: title Take Me With You When You Go}
 {meta: artist Tracy Byrd}
-{meta: writer Mark Nesler and Jennifer Hanson}
+{meta: composer Mark Nesler and Jennifer Hanson}
 
 {start_of_verse: Verse 1}
 [G7]You can [C]settle down in Mexico [F]runaway join a [G7]circus show

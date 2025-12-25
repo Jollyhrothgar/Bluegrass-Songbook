@@ -1,6 +1,6 @@
 {meta: title Queen of the Ballroom}
 {meta: artist Buddy Holly}
-{meta: writer Don Guess}
+{meta: composer Don Guess}
 
 {start_of_verse: Verse 1}
 [C]You're the queen of the ballroom

@@ -1,6 +1,6 @@
 {meta: title When It's Your Turn To Fall}
 {meta: artist Johnny Bush}
-{meta: writer Maryland Welch Francis, Sanger D. Shafer}
+{meta: composer Maryland Welch Francis, Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G]Someday you’ll know  what I’m going [D7]through

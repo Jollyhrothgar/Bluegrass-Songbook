@@ -1,6 +1,6 @@
 {meta: title You’re My Jamaica}
 {meta: artist Charley Pride}
-{meta: writer Kent Robbins}
+{meta: composer Kent Robbins}
 
 {start_of_verse: Verse 1}
 [G]Everyday I read ads in the paper saying [D7]come to the island 

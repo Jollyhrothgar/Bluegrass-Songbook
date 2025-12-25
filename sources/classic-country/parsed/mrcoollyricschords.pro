@@ -1,6 +1,6 @@
 {meta: title Mr. Cool}
 {meta: artist Charlie Walker}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Mr. Cool you’re a [C]fool 

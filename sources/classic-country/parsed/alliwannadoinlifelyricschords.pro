@@ -1,6 +1,6 @@
 {meta: title All I Wanna Do In Life}
 {meta: artist Crystal Gayle}
-{meta: writer Allen Reynolds and Sandy Mason}
+{meta: composer Allen Reynolds and Sandy Mason}
 
 {start_of_verse: Verse 1}
 [G]You've been right and [C]I've been [G]wrong

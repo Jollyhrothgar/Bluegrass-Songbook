@@ -1,6 +1,6 @@
 {meta: title 1959}
 {meta: artist John Anderson}
-{meta: writer Gary Gentry}
+{meta: composer Gary Gentry}
 
 {start_of_verse: Verse 1}
 [C]Cigarettes were a quarter then bobby socks and jeans were in 

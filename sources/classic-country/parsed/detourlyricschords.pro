@@ -1,6 +1,6 @@
 {meta: title Detour}
 {meta: artist Hank Thompson}
-{meta: writer Paul Westmoreland}
+{meta: composer Paul Westmoreland}
 
 {start_of_verse: Verse 1}
 [G]Headed down life's crooked road 

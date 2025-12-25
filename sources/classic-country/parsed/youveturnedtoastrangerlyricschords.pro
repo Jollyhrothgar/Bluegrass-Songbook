@@ -1,6 +1,6 @@
 {meta: title You've Turned to a Stranger}
 {meta: artist Wanda Jackson}
-{meta: writer Jack Rhodes and Freddy Franks}
+{meta: composer Jack Rhodes and Freddy Franks}
 
 {start_of_verse: Verse 1}
 [C]The nights make you lonely   so [F]you want to [C]roam

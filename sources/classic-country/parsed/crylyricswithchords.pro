@@ -1,6 +1,6 @@
 {meta: title Cry}
 {meta: artist Tanya Tucker}
-{meta: writer Frank Musker and Garth Murphy}
+{meta: composer Frank Musker and Garth Murphy}
 
 {start_of_verse: Verse 1}
 [C]I heard her [G7]cry at night  I heard him [C]slam the door

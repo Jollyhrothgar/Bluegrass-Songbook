@@ -1,6 +1,6 @@
 {meta: title Hands Across the Table}
 {meta: artist Fats Domino}
-{meta: writer Mitchell Parish and Jean Delettre}
+{meta: composer Mitchell Parish and Jean Delettre}
 
 {start_of_verse: Verse 1}
 [C]Hands across the [C7]table

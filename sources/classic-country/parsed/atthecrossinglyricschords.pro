@@ -1,6 +1,6 @@
 {meta: title At The Crossing}
 {meta: artist Jimmie Davis}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [G]There's a river some[C]where that's called [G]Jordan

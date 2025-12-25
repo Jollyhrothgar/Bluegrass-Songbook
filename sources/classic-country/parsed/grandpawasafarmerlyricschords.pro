@@ -1,6 +1,6 @@
 {meta: title Grandpa Was A Farmer}
 {meta: artist The Marksmen}
-{meta: writer Mark Earle Wheeler}
+{meta: composer Mark Earle Wheeler}
 
 {start_of_verse: Verse 1}
 [C]Grandpa was a farmer when I was a kid

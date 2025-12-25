@@ -1,6 +1,6 @@
 {meta: title Welcome To The Sunshine (Sweet Baby Jane)}
 {meta: artist Jeanne Pruett}
-{meta: writer Ray Willis}
+{meta: composer Ray Willis}
 
 {start_of_verse: Verse 1}
 [C]Welcome to the sunshine [G]sweet baby Jane

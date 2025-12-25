@@ -1,6 +1,6 @@
 {meta: title Complicated}
 {meta: artist Ricky Van Shelton}
-{meta: writer Bill LaBounty and Pat McLaughlin}
+{meta: composer Bill LaBounty and Pat McLaughlin}
 
 {start_of_verse: Verse 1}
 [G]Throw up a quarter and I'll [C]call it  

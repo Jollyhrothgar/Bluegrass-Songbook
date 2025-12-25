@@ -1,6 +1,6 @@
 {meta: title Don't The Girls All Get Prettier At Closing Time}
 {meta: artist Mickey Gilley}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [C]The girls all get prettier at [F]closing time

@@ -1,6 +1,6 @@
 {meta: title Wall Of Tears}
 {meta: artist Mickey Gilley}
-{meta: writer Richard Leigh and Peter McCann}
+{meta: composer Richard Leigh and Peter McCann}
 
 {start_of_verse: Verse 1}
 [C]Looking out my [F]window [G7] staring through the [C]pain

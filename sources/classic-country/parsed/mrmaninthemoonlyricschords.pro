@@ -1,6 +1,6 @@
 {meta: title Mr. Man In The Moon}
 {meta: artist Patty Loveless}
-{meta: writer Wally Wilson and Mike Henderson}
+{meta: composer Wally Wilson and Mike Henderson}
 
 {start_of_verse: Verse 1}
 [G]Mr. Man in the Moon are [Em]you really blue

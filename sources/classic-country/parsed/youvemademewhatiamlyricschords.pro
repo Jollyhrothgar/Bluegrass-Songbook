@@ -1,6 +1,6 @@
 {meta: title You've Made Me What I Am}
 {meta: artist Loretta Lynn}
-{meta: writer Oliver Doolittle}
+{meta: composer Oliver Doolittle}
 
 {start_of_verse: Verse 1}
 [G]You say that I'm no angel oh I [D7]know it much too [G]well

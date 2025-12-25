@@ -1,6 +1,6 @@
 {meta: title Old Country}
 {meta: artist Mark Chesnutt}
-{meta: writer Bobby Harden}
+{meta: composer Bobby Harden}
 
 {start_of_verse: Verse 1}
 [C]Sitting sun goes down at night

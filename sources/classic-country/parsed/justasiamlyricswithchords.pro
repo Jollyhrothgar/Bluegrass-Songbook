@@ -1,6 +1,6 @@
 {meta: title Just As I Am}
 {meta: artist Ray Price}
-{meta: writer Charlotte Elliott}
+{meta: composer Charlotte Elliott}
 
 {start_of_verse: Verse 1}
 [C](Just as I [G7]am just as I [C]am)

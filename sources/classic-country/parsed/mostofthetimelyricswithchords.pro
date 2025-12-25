@@ -1,6 +1,6 @@
 {meta: title Most Of The Time}
 {meta: artist Marty Robbins}
-{meta: writer Lee Emerson}
+{meta: composer Lee Emerson}
 
 {start_of_verse: Verse 1}
 [C]Most of the time while I'm here [G7]cryin'

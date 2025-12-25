@@ -1,6 +1,6 @@
 {meta: title Anymore}
 {meta: artist Roy Drusky}
-{meta: writer Vic McAlpin, Roy Drusky, Marie Wilson}
+{meta: composer Vic McAlpin, Roy Drusky, Marie Wilson}
 
 {start_of_verse: Verse 1}
 [C]I [G7]don't believe you love me [C]anymore

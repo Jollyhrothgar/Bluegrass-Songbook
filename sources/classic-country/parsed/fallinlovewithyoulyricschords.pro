@@ -1,6 +1,6 @@
 {meta: title Fall In Love With You}
 {meta: artist David Allan Coe}
-{meta: writer David A. Coe and Skeet Petty}
+{meta: composer David A. Coe and Skeet Petty}
 
 {start_of_verse: Verse 1}
 [C]If I ever [F]needed love [G7]I need it [C]now

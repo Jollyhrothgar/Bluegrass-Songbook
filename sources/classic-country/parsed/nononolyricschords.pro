@@ -1,6 +1,6 @@
 {meta: title No No No}
 {meta: artist Rex Allen Jr.}
-{meta: writer Wayland Holyfield and Bob McDill}
+{meta: composer Wayland Holyfield and Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]She was lonely and shy 

@@ -1,6 +1,6 @@
 {meta: title Some Dreams Die Hard}
 {meta: artist Johnny Lee}
-{meta: writer Jenna Schell}
+{meta: composer Jenna Schell}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I think I'm [Dm]over you

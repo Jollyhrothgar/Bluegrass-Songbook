@@ -1,6 +1,6 @@
 {meta: title The Twelfth Rose}
 {meta: artist Jim Ed Brown}
-{meta: writer Buddy Killen and Marvin Moore}
+{meta: composer Buddy Killen and Marvin Moore}
 
 {start_of_verse: Verse 1}
 [C]How long has it [Am]been [C]since the first time I told [Am]you

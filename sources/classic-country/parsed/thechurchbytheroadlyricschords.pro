@@ -1,6 +1,6 @@
 {meta: title The Church By The Road}
 {meta: artist Charlie Sizemore}
-{meta: writer Charles Ethan Sizemore}
+{meta: composer Charles Ethan Sizemore}
 
 {start_of_verse: Verse 1}
 [C]Often times in my memories I wondered again 

@@ -1,6 +1,6 @@
 {meta: title I'd Be Better Off In A Pine Box}
 {meta: artist Doug Stone}
-{meta: writer Johnny MacRae and Steve Clark}
+{meta: composer Johnny MacRae and Steve Clark}
 
 {start_of_verse: Verse 1}
 [G]I said the night you left me nothing [C]worse could ever [G]happen

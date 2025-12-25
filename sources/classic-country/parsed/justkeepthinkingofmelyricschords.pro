@@ -1,6 +1,6 @@
 {meta: title Just Keep On Thinking Of Me}
 {meta: artist Sonny James}
-{meta: writer John Skye}
+{meta: composer John Skye}
 
 {start_of_verse: Verse 1}
 [C]Darling when we’re miles apart 

@@ -1,6 +1,6 @@
 {meta: title Mobile Bay}
 {meta: artist Cal Smith}
-{meta: writer Curly Putman and Dave Kirby}
+{meta: composer Curly Putman and Dave Kirby}
 
 {start_of_verse: Verse 1}
 [G]We were gathered 'round the garbage can [C]passin' round the [G]bottle

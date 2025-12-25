@@ -1,6 +1,6 @@
 {meta: title It's Five O'Clock Somewhere}
 {meta: artist Alan Jackson}
-{meta: writer Jess Brown and Don Rollins}
+{meta: composer Jess Brown and Don Rollins}
 
 {start_of_verse: Verse 1}
 [C]The sun is hot and [G7]that old clock is [C]movin' slow and [G7]so am I

@@ -1,6 +1,6 @@
 {meta: title Just Pretend}
 {meta: artist Elvis Presley}
-{meta: writer Doug Flett and Guy Fletcher}
+{meta: composer Doug Flett and Guy Fletcher}
 
 {start_of_verse: Verse 1}
 [C]Just pretend [F]I'm holding you 

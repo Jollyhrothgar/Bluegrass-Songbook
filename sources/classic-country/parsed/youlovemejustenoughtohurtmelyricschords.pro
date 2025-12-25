@@ -1,6 +1,6 @@
 {meta: title You Love Me Just Enough to Hurt Me}
 {meta: artist George Morgan}
-{meta: writer Floyd Tillman}
+{meta: composer Floyd Tillman}
 
 {start_of_verse: Verse 1}
 [C]You love me just enough to [A7]hurt me 

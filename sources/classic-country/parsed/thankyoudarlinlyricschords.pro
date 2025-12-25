@@ -1,6 +1,6 @@
 {meta: title Thank You Darlin'}
 {meta: artist Ricky Nelson}
-{meta: writer Jackie DeShannon and Sharon Sheeley}
+{meta: composer Jackie DeShannon and Sharon Sheeley}
 
 {start_of_verse: Verse 1}
 [C]Thank you thank you [Am]darling

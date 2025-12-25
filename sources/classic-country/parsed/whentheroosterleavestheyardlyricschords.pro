@@ -1,6 +1,6 @@
 {meta: title When The Rooster Leaves The Yard}
 {meta: artist Lefty Frizzel}
-{meta: writer Eddie Pleasant and A.C. Solberg}
+{meta: composer Eddie Pleasant and A.C. Solberg}
 
 {start_of_verse: Verse 1}
 [C]I took a job away from home to [C7]make my income [F]grow

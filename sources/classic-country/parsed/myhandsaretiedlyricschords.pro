@@ -1,6 +1,6 @@
 {meta: title My Hands Are Tied}
 {meta: artist Merle Haggard}
-{meta: writer Tommy Collins, Merle Haggard, Kay Adams}
+{meta: composer Tommy Collins, Merle Haggard, Kay Adams}
 
 {start_of_verse: Verse 1}
 [C]She came her to see me today

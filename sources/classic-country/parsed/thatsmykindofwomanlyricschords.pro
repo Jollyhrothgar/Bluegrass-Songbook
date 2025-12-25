@@ -1,6 +1,6 @@
 {meta: title That's My Kind Of Woman}
 {meta: artist George Strait}
-{meta: writer Tammy Hyler, Dean Dillon}
+{meta: composer Tammy Hyler, Dean Dillon}
 
 {start_of_verse: Verse 1}
 [C]She can [F]drive a truck and [G7]rope and [C]ride[F]  [Am]   [G7]

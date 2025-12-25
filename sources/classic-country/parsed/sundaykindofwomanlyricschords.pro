@@ -1,6 +1,6 @@
 {meta: title Sunday Kind Of Woman}
 {meta: artist Charlie Rich}
-{meta: writer Margaret A. Rich}
+{meta: composer Margaret A. Rich}
 
 {start_of_verse: Verse 1}
 [C]I can [G]only i[D7]magine for our [Em]worlds are far [G]apart

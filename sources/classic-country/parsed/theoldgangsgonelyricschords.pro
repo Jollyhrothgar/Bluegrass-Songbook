@@ -1,6 +1,6 @@
 {meta: title The Old Gang's Gone}
 {meta: artist Mel Tillis}
-{meta: writer Bobby Cisco and Bill Guess}
+{meta: composer Bobby Cisco and Bill Guess}
 
 {start_of_verse: Verse 1}
 [C]The old gang's [F]gone 

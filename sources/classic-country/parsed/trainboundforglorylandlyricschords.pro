@@ -1,6 +1,6 @@
 {meta: title Train Bound for Glory Land}
 {meta: artist The Yonder Mountain String Band}
-{meta: writer Benjamin E Galloway}
+{meta: composer Benjamin E Galloway}
 
 {start_of_verse: Verse 1}
 [G]That train bound for Glory land is headed up the line

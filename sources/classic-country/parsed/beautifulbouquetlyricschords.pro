@@ -1,6 +1,6 @@
 {meta: title Beautiful Bouquet}
 {meta: artist The Cox Family}
-{meta: writer Rose Maddox and Dusty Rose}
+{meta: composer Rose Maddox and Dusty Rose}
 
 {start_of_verse: Verse 1}
 [G]For pleasure I went walking out through the fields one [D7]day

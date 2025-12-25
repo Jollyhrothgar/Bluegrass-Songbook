@@ -1,6 +1,6 @@
 {meta: title What Ain't To Be Just Might Happen}
 {meta: artist Dolly Parton}
-{meta: writer Porter Wagoner}
+{meta: composer Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]I've learned to live my life just a little bit lighter

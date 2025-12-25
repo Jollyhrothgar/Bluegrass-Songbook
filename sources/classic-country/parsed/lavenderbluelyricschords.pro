@@ -1,6 +1,6 @@
 {meta: title Lavender Blue}
 {meta: artist Jim Ed Brown}
-{meta: writer Larry Moray and Eliot Daniel}
+{meta: composer Larry Moray and Eliot Daniel}
 
 {start_of_verse: Verse 1}
 [G]Lavender blue dilly dilly [C]lavender [G]green

@@ -1,6 +1,6 @@
 {meta: title Hanging Up My Traveling Shoes}
 {meta: artist Alabama}
-{meta: writer Randy Owen and Teddy Gentry}
+{meta: composer Randy Owen and Teddy Gentry}
 
 {start_of_verse: Verse 1}
 [C]I've been going around in a whirlwind 

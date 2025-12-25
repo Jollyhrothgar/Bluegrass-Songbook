@@ -1,6 +1,6 @@
 {meta: title Don't Give Up When You're Down}
 {meta: artist Ray Price}
-{meta: writer Lee Dresser}
+{meta: composer Lee Dresser}
 
 {start_of_verse: Verse 1}
 [C]If you're having times of sorrow 

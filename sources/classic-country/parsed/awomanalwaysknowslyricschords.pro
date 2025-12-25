@@ -1,6 +1,6 @@
 {meta: title A Woman Always Knows}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill}
+{meta: composer Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [G]There's no lipstick on his shirt when he comes [D7]home

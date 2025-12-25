@@ -1,6 +1,6 @@
 {meta: title It Could Be You (Instead Of Him)}
 {meta: artist Johnny Cash}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [G]If you should meet some lonely soul

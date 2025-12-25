@@ -1,6 +1,6 @@
 {meta: title My Dreams Lyrics chords}
 {meta: artist Faron Young}
-{meta: writer Herbert Duncan}
+{meta: composer Herbert Duncan}
 
 {start_of_verse: Verse 1}
 [C]When day ends and night falls

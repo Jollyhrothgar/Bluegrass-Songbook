@@ -1,6 +1,6 @@
 {meta: title Anybody Else's Heart But Mine}
 {meta: artist Tracy Byrd}
-{meta: writer Wayland Holyfield and Kent M. Robbins}
+{meta: composer Wayland Holyfield and Kent M. Robbins}
 
 {start_of_verse: Verse 1}
 [D7]She's history don't ruin good beer 

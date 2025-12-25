@@ -1,6 +1,6 @@
 {meta: title Sun Shines Down On Me}
 {meta: artist Connie Smith}
-{meta: writer Larry Lee}
+{meta: composer Larry Lee}
 
 {start_of_verse: Verse 1}
 [G]Sometimes when I'm alone at [G7]night

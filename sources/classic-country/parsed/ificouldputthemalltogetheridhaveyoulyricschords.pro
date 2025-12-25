@@ -1,6 +1,6 @@
 {meta: title If I Could Put Them All Together I'd Have You}
 {meta: artist Bob Luman}
-{meta: writer Even Stevens}
+{meta: composer Even Stevens}
 
 {start_of_verse: Verse 1}
 [C]I guess I ran to Rhonda for [F]her sympathy 

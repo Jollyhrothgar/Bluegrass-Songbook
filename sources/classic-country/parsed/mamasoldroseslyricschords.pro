@@ -1,6 +1,6 @@
 {meta: title Mama Sold Roses}
 {meta: artist Gene Watson}
-{meta: writer Dallas Harms}
+{meta: composer Dallas Harms}
 
 {start_of_verse: Verse 1}
 [C]Mama sold roses in the [F]year [C]'49

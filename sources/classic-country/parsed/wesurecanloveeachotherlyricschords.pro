@@ -1,6 +1,6 @@
 {meta: title We Sure Can Love Each Other}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Tammy Wynette}
+{meta: composer Billy Sherrill and Tammy Wynette}
 
 {start_of_verse: Verse 1}
 [C]We sure can love each other when we try 

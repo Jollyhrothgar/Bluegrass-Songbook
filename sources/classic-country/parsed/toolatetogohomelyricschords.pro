@@ -1,6 +1,6 @@
 {meta: title Too Late To Go Home}
 {meta: artist Johnny Rodriguez}
-{meta: writer Len Chera}
+{meta: composer Len Chera}
 
 {start_of_verse: Verse 1}
 [C]Here comes the morning  the man [F]in the moon is fading [C]fast

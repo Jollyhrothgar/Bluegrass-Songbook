@@ -1,6 +1,6 @@
 {meta: title I Can Take It Or Leave It}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart and Curtis Leach}
+{meta: composer Wynn Stewart and Curtis Leach}
 
 {start_of_verse: Verse 1}
 [C]I knew a man who drank himself to death

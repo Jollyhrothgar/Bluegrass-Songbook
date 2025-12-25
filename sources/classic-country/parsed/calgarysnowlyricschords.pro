@@ -1,6 +1,6 @@
 {meta: title Calgary Snow}
 {meta: artist Bobby Bare}
-{meta: writer Dave Hickey}
+{meta: composer Dave Hickey}
 
 {start_of_verse: Verse 1}
 [G]Last Friday she said to me [D7]hey Billy Joe

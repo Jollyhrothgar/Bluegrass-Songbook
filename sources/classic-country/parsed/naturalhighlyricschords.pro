@@ -1,6 +1,6 @@
 {meta: title Natural High}
 {meta: artist Merle Haggard}
-{meta: writer Freddy Powers}
+{meta: composer Freddy Powers}
 
 {start_of_verse: Verse 1}
 [C]You stayed with me thru thick and thin

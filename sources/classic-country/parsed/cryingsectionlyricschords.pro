@@ -1,6 +1,6 @@
 {meta: title Crying Section}
 {meta: artist Billy Walker}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]Seat me [D7]in the crying [G]section 

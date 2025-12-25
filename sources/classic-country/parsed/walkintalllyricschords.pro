@@ -1,6 +1,6 @@
 {meta: title Walkin' Tall}
 {meta: artist Eric Wurst and David Wurst}
-{meta: writer Eric Wurst and David Wurst}
+{meta: composer Eric Wurst and David Wurst}
 
 {start_of_verse: Verse 1}
 [C]When I first [G7]saw you Lord I was [C]hooked

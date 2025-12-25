@@ -1,6 +1,6 @@
 {meta: title Highly Prized Possession}
 {meta: artist Anne Murray}
-{meta: writer Dave Palmer and Brian Russell}
+{meta: composer Dave Palmer and Brian Russell}
 
 {start_of_verse: Verse 1}
 [C]I know it's not your passion

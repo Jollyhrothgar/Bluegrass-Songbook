@@ -1,6 +1,6 @@
 {meta: title Would You Be Satisfied}
 {meta: artist Jean Shepard}
-{meta: writer Johnny Mullins}
+{meta: composer Johnny Mullins}
 
 {start_of_verse: Verse 1}
 Would You Be Satisfied

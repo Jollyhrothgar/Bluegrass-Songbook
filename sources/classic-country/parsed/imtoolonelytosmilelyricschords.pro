@@ -1,6 +1,6 @@
 {meta: title I'm too Lonely to Smile}
 {meta: artist Kitty Wells}
-{meta: writer Hal Smith}
+{meta: composer Hal Smith}
 
 {start_of_verse: Verse 1}
 [C]All my life I had nothing [F]but [C]trouble 

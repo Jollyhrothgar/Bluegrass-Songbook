@@ -1,6 +1,6 @@
 {meta: title Rudolph The Red Nosed Reindeer}
 {meta: artist Gene Autry}
-{meta: writer Johnny Marks}
+{meta: composer Johnny Marks}
 
 {start_of_verse: Verse 1}
 [C]Rudolph the red-nosed reindeer

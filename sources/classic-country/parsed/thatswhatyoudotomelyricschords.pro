@@ -1,6 +1,6 @@
 {meta: title That's What You Do To Me}
 {meta: artist the Everly Brothers}
-{meta: writer Bob Montgomery and Earl Sinks}
+{meta: composer Bob Montgomery and Earl Sinks}
 
 {start_of_verse: Verse 1}
 [G]Bom do-dee [D7]bom do-dee [G]bom bom [C]bom ba do-dee

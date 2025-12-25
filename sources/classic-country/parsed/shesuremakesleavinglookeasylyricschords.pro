@@ -1,6 +1,6 @@
 {meta: title She Sure Makes Leaving Look Easy}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]She seems so [G7]carefree [C]as she moves [G7]about

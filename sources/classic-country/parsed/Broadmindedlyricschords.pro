@@ -1,6 +1,6 @@
 {meta: title Broadminded}
 {meta: artist Tammy Wynette}
-{meta: writer Jimmy Payne and Leona Williams}
+{meta: composer Jimmy Payne and Leona Williams}
 
 {start_of_verse: Verse 1}
 [C]Every night I catch you sleepin' with a smile on your [F]face

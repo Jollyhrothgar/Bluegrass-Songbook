@@ -1,6 +1,6 @@
 {meta: title Repenting}
 {meta: artist Kitty Wells}
-{meta: writer Gary Walker}
+{meta: composer Gary Walker}
 
 {start_of_verse: Verse 1}
 [G]Repenting  yes I'm [C]repenting

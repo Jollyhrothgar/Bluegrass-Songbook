@@ -1,6 +1,6 @@
 {meta: title Another Cup of Coffee}
 {meta: artist Marty Robbins}
-{meta: writer Michael Rutherford and Christopher Neil}
+{meta: composer Michael Rutherford and Christopher Neil}
 
 {start_of_verse: Verse 1}
 [C]I just stopped by to have a cup of [G7]coffee

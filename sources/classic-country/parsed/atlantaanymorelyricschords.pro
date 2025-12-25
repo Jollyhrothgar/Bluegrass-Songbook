@@ -1,6 +1,6 @@
 {meta: title Atlanta Anymore}
 {meta: artist Gene Watson}
-{meta: writer Charlie Craig and Keith Stegall}
+{meta: composer Charlie Craig and Keith Stegall}
 
 {start_of_verse: Verse 1}
 [G]Inside a suit coat pocket in the back of his closet today

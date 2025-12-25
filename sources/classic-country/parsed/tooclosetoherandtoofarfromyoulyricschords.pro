@@ -1,6 +1,6 @@
 {meta: title Too Close To Her (And Too Far From You)}
 {meta: artist Hank Locklin}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]I was just lonesome [C]I was just [G]blue

@@ -1,6 +1,6 @@
 {meta: title Always It's You}
 {meta: artist The Everly Brothers}
-{meta: writer Felice and Boudleaux Bryant}
+{meta: composer Felice and Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]When I feel [Dm]downhearted

@@ -1,6 +1,6 @@
 {meta: title After All This Time}
 {meta: artist Kenny Rogers}
-{meta: writer Steve Dorff and Peter Beckett}
+{meta: composer Steve Dorff and Peter Beckett}
 
 {start_of_verse: Verse 1}
 [C]We used to think our [Am]love would be a [G7]fantasy

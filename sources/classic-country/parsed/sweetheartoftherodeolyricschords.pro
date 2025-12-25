@@ -1,6 +1,6 @@
 {meta: title Sweetheart Of The Rodeo}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley and Emmylou Harris}
+{meta: composer Paul Kennerley and Emmylou Harris}
 
 {start_of_verse: Verse 1}
 [G]I hear the sound of [C]sorrow in the [G]wind

@@ -1,6 +1,6 @@
 {meta: title It's All Over}
 {meta: artist The Everly Brothers}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [C]It's all [D7]over [F]didn't even [C]cry

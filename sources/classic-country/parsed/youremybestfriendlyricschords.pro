@@ -1,6 +1,6 @@
 {meta: title You're My Best Friend}
 {meta: artist Don Williams}
-{meta: writer Waylon Holyfield}
+{meta: composer Waylon Holyfield}
 
 {start_of_verse: Verse 1}
 [G]You placed gold  [D7]on my [G]finger

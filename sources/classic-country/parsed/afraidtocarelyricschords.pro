@@ -1,6 +1,6 @@
 {meta: title Afraid To Care}
 {meta: artist Jack Greene}
-{meta: writer Kenneth Campbell and Jack Greene}
+{meta: composer Kenneth Campbell and Jack Greene}
 
 {start_of_verse: Verse 1}
 [C]Here I go again love's standing at my door

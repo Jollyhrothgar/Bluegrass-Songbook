@@ -1,6 +1,6 @@
 {meta: title In The Valley He Restoreth My Soul}
 {meta: artist Connie Smith}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [C]When I'm low in spirit I cry Lord lift me up

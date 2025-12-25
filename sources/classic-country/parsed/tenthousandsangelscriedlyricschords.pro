@@ -1,6 +1,6 @@
 {meta: title Ten Thousands Angels Cried}
 {meta: artist LeAnn Rimes}
-{meta: writer David Patillo}
+{meta: composer David Patillo}
 
 {start_of_verse: Verse 1}
 [G]Stillness filled the heavens on crucifixion [Am]day

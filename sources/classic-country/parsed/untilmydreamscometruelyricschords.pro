@@ -1,6 +1,6 @@
 {meta: title Until My Dreams Come True}
 {meta: artist Jack Greene}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]I'll keep on [G]dreaming until [D7]my dreams come [G]true

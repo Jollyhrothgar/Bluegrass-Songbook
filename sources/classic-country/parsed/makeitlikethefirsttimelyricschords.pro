@@ -1,6 +1,6 @@
 {meta: title Make It Like The First Time}
 {meta: artist Mickey Gilley}
-{meta: writer J.D. Cunningham}
+{meta: composer J.D. Cunningham}
 
 {start_of_verse: Verse 1}
 [D7]Play the music [G]soft turn the lights down low

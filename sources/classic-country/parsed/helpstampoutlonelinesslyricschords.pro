@@ -1,6 +1,6 @@
 {meta: title Help Stamp Out Loneliness}
 {meta: artist Stonewall Jackson}
-{meta: writer Carl R. Belew and Van Givens}
+{meta: composer Carl R. Belew and Van Givens}
 
 {start_of_verse: Verse 1}
 [G]Help help help stamp out loneliness 

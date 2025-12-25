@@ -1,6 +1,6 @@
 {meta: title Lead Me Gently Home}
 {meta: artist Hank Locklin}
-{meta: writer Will L. Thompson and Gene Clark}
+{meta: composer Will L. Thompson and Gene Clark}
 
 {start_of_verse: Verse 1}
 [G]Lead me gently home [G][C]father

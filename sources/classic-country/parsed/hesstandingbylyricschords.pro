@@ -1,6 +1,6 @@
 {meta: title He's Standing By}
 {meta: artist Red Sovine}
-{meta: writer Mildred A. Burk, Ross Burk, Red Sovine}
+{meta: composer Mildred A. Burk, Ross Burk, Red Sovine}
 
 {start_of_verse: Verse 1}
 [C]I hear a song  although [F]the night is [C]silent 

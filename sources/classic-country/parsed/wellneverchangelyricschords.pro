@@ -1,6 +1,6 @@
 {meta: title We'll Never Change}
 {meta: artist Ernest Tubb and Loretta Lynn}
-{meta: writer John Cliff}
+{meta: composer John Cliff}
 
 {start_of_verse: Verse 1}
 [G]The years will [D7]see us [G]together

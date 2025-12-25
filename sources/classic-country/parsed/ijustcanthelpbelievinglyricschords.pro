@@ -1,6 +1,6 @@
 {meta: title I Just Can't Help Believing}
 {meta: artist B J Thomas}
-{meta: writer Cynthia Weil and Barry Mann}
+{meta: composer Cynthia Weil and Barry Mann}
 
 {start_of_verse: Verse 1}
 [C]Oh I just can't help believing 

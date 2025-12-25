@@ -1,6 +1,6 @@
 {meta: title What Made Milwaukee Famous}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Glen Sutton}
+{meta: composer Glen Sutton}
 
 {start_of_verse: Verse 1}
 [C]It's late and she's waiting

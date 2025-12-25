@@ -1,6 +1,6 @@
 {meta: title Wasted Days And Wasted Nights}
 {meta: artist Freddie Fender}
-{meta: writer Wayne Duncan and Freddy Fender}
+{meta: composer Wayne Duncan and Freddy Fender}
 
 {start_of_verse: Verse 1}
 [G7]Wasted days and wasted [C]nights I have left for you be[G7]hind

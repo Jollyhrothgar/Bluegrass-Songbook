@@ -1,6 +1,6 @@
 {meta: title Golden Slipper Rose}
 {meta: artist Charlie Rich}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]Now mama wore those [F]skin tight dresses [C]all the time

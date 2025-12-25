@@ -1,6 +1,6 @@
 {meta: title I'll Hold You In My Heart}
 {meta: artist Eddy Arnold}
-{meta: writer Eddy Arnold, Hal Horton, Tommy Dilbeck}
+{meta: composer Eddy Arnold, Hal Horton, Tommy Dilbeck}
 
 {start_of_verse: Verse 1}
 [C]I'll hold you in my heart

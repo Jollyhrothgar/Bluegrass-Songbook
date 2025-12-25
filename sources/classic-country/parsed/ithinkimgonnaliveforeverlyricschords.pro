@@ -1,6 +1,6 @@
 {meta: title I Think I'm Gonna Live Forever}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard, Dennis Hromek, Bennie Binion}
+{meta: composer Merle Haggard, Dennis Hromek, Bennie Binion}
 
 {start_of_verse: Verse 1}
 [G]When you first left me [C]baby

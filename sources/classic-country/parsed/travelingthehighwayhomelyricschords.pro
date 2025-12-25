@@ -1,6 +1,6 @@
 {meta: title Traveling The Highway Home}
 {meta: artist Doug Martin}
-{meta: writer Walter Bailes and Frankie Bailes}
+{meta: composer Walter Bailes and Frankie Bailes}
 
 {start_of_verse: Verse 1}
 [G]Traveling the highway home

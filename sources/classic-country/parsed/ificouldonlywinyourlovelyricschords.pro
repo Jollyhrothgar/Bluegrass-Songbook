@@ -1,6 +1,6 @@
 {meta: title If I Could Only Win Your Love}
 {meta: artist Emmylou Harris}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]If I could only [G7]win your [C]love

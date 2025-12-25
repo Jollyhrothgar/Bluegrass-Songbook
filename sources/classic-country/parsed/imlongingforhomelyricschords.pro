@@ -1,6 +1,6 @@
 {meta: title I'm Longing For Home}
 {meta: artist Jerry Lee Lewis}
-{meta: writer O.S. Davis and Rupert Cravens}
+{meta: composer O.S. Davis and Rupert Cravens}
 
 {start_of_verse: Verse 1}
 [C]I'm just a [G7]pilgrim and a [C]stranger

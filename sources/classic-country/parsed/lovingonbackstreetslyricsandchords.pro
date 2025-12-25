@@ -1,6 +1,6 @@
 {meta: title Loving on Back Streets}
 {meta: artist Mel Street}
-{meta: writer Hugh King}
+{meta: composer Hugh King}
 
 {start_of_verse: Verse 1}
 [G]We tried to pick the most unlikely [C]places

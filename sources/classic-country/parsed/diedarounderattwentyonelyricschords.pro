@@ -1,6 +1,6 @@
 {meta: title Died A Rounder At Twenty-One}
 {meta: artist Dale Evans}
-{meta: writer Jimmie Skinner}
+{meta: composer Jimmie Skinner}
 
 {start_of_verse: Verse 1}
 [C]He drank whiskey for his liver 

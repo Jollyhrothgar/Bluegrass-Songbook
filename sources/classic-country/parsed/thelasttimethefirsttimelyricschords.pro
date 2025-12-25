@@ -1,6 +1,6 @@
 {meta: title The Last Time The First Time}
 {meta: artist George Strait}
-{meta: writer Robert Kelly}
+{meta: composer Robert Kelly}
 
 {start_of_verse: Verse 1}
 [G]I'm seeing you for the [D7]last [G]time

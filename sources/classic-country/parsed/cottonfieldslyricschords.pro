@@ -1,6 +1,6 @@
 {meta: title Cotton Fields}
 {meta: artist Buck Owens}
-{meta: writer Huddie Ledbetter}
+{meta: composer Huddie Ledbetter}
 
 {start_of_verse: Verse 1}
 [G]When I was a little bitty baby

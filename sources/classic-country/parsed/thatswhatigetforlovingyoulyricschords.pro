@@ -1,6 +1,6 @@
 {meta: title That’s What I Get For Loving You}
 {meta: artist Ray Price}
-{meta: writer Don Helms and Estille E. Merriman}
+{meta: composer Don Helms and Estille E. Merriman}
 
 {start_of_verse: Verse 1}
 [G]Eyes that stay awake until the day is [D7]dawning

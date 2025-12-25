@@ -1,6 +1,6 @@
 {meta: title Loving You}
 {meta: artist Tony Booth}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]You take my [F]breath [C]away each time you [D7]touch me

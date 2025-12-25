@@ -1,6 +1,6 @@
 {meta: title I'm A Memory}
 {meta: artist Brenda Lee}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]I'm a [C]game [Em]that you use to [G]play[C]

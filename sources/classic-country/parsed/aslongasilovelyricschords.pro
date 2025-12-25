@@ -1,6 +1,6 @@
 {meta: title As Long As I Love}
 {meta: artist Dottie West}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [G]Hurt is no [C]stranger to [G]me

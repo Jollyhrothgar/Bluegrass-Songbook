@@ -1,6 +1,6 @@
 {meta: title Big Butter And Egg Man}
 {meta: artist Randy Travis}
-{meta: writer Percy Venable}
+{meta: composer Percy Venable}
 
 {start_of_verse: Verse 1}
 [C]Hey she wants a big butter and [D7]egg man

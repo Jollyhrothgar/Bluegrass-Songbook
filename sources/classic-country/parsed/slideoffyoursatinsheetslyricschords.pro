@@ -1,6 +1,6 @@
 {meta: title Slide Off Your Satin Sheets}
 {meta: artist Johnny Paycheck}
-{meta: writer Wayne Carson and Donn Tankersley}
+{meta: composer Wayne Carson and Donn Tankersley}
 
 {start_of_verse: Verse 1}
 [G]What a beautiful mansion he built [Am]you

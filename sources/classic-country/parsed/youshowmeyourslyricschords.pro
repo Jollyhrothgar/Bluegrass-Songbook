@@ -1,6 +1,6 @@
 {meta: title You Show Me Yours}
 {meta: artist Willie Nelson}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [C]If you're feeling salty well [F]I'm your [C]tequila

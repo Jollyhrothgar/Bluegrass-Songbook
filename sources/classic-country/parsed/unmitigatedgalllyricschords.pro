@@ -1,6 +1,6 @@
 {meta: title Unmitigated Gall}
 {meta: artist Faron Young}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]Well how can you have the unmitigated gall 

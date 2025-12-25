@@ -1,6 +1,6 @@
 {meta: title Goodbye My Love I Heard A Silver Trumpet}
 {meta: artist Billy Walker}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G7]Good[C]bye my love it's time to go 

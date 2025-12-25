@@ -1,6 +1,6 @@
 {meta: title Flip Flop And Fly}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Charles Calhoun and Lou Turner}
+{meta: composer Charles Calhoun and Lou Turner}
 
 {start_of_verse: Verse 1}
 [C]Now when I get the blues I get me a rockin' chair

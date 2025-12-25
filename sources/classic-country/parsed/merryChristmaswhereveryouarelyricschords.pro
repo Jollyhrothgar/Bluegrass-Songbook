@@ -1,6 +1,6 @@
 {meta: title Merry Christmas Wherever You Are}
 {meta: artist George Strait}
-{meta: writer Mack Vickery and Jerry Laseter}
+{meta: composer Mack Vickery and Jerry Laseter}
 
 {start_of_verse: Verse 1}
 [C]I had no [G7]reason [C]for shopping this [F]season

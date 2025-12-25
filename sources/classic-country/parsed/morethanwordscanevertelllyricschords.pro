@@ -1,6 +1,6 @@
 {meta: title More Than Words Can Ever Tell}
 {meta: artist Dolly Parton}
-{meta: writer Porter Wagoner}
+{meta: composer Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]When you're rocking back and [F]forth there by the [C]window

@@ -1,6 +1,6 @@
 {meta: title It's Up To You}
 {meta: artist Ricky Nelson}
-{meta: writer by Jerry Fuller}
+{meta: composer by Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]It's up to [Am]you because I've [F]done everything [G7]I [C]can  

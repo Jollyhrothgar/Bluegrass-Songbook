@@ -1,6 +1,6 @@
 {meta: title Don't Blame It All On Me}
 {meta: artist Mac Wiseman}
-{meta: writer Curt Barrett and Charles Wilkens}
+{meta: composer Curt Barrett and Charles Wilkens}
 
 {start_of_verse: Verse 1}
 [G]If our love should fade like a [C]cold winter [A7]day

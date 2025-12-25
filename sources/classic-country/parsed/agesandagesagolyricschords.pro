@@ -1,6 +1,6 @@
 {meta: title Ages And Ages Ago}
 {meta: artist Slim Whitman}
-{meta: writer Gene Autry, Fred Rose, Ray Whitley}
+{meta: composer Gene Autry, Fred Rose, Ray Whitley}
 
 {start_of_verse: Verse 1}
 [C]I  remember [G7]when I made you [C]cry 

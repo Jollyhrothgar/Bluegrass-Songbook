@@ -1,6 +1,6 @@
 {meta: title I'd Have To Be Crazy}
 {meta: artist Willie Nelson}
-{meta: writer Steven Fromholz}
+{meta: composer Steven Fromholz}
 
 {start_of_verse: Verse 1}
 [C]I'd have to be crazy to stop all my singing

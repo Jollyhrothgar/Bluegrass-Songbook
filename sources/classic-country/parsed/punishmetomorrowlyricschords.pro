@@ -1,6 +1,6 @@
 {meta: title Punish Me Tomorrow}
 {meta: artist Carl and Pearl Butler}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [G]I know it’s wrong to love her

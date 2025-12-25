@@ -1,6 +1,6 @@
 {meta: title We Can't Let This Happen To Us}
 {meta: artist Porter Wagoner}
-{meta: writer Dorothy Jo Hope}
+{meta: composer Dorothy Jo Hope}
 
 {start_of_verse: Verse 1}
 [C]Lately we're [F]acting as if we [C]were [F]strangers

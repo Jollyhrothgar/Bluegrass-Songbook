@@ -1,6 +1,6 @@
 {meta: title More From Habit Than Desire}
 {meta: artist Red Sovine}
-{meta: writer Bill Parson and Red Sovine}
+{meta: composer Bill Parson and Red Sovine}
 
 {start_of_verse: Verse 1}
 [G]You tell me how you [C]need me when you're [D7]lonely

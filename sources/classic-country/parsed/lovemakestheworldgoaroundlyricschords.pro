@@ -1,6 +1,6 @@
 {meta: title Love Makes The World Go Around}
 {meta: artist Kitty Wells}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [C]Love makes the world go around and [G]around and around

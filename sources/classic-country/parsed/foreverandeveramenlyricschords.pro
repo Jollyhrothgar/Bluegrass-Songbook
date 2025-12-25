@@ -1,6 +1,6 @@
 {meta: title Forever And Ever Amen}
 {meta: artist Randy Travis}
-{meta: writer Don Schlitz and Paul Overstreet}
+{meta: composer Don Schlitz and Paul Overstreet}
 
 {start_of_verse: Verse 1}
 [C]You may think that [F]I'm talkin' [C]foolish

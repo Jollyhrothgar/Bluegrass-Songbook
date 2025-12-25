@@ -1,6 +1,6 @@
 {meta: title All By My Lonesome}
 {meta: artist Charley Pride}
-{meta: writer Terry Clayton and Billy Yates}
+{meta: composer Terry Clayton and Billy Yates}
 
 {start_of_verse: Verse 1}
 [G]All by my lonesome heart broke and [C]then some

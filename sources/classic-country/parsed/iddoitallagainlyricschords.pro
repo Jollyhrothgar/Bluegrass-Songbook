@@ -1,6 +1,6 @@
 {meta: title I'd Do It All Again}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jerry G. Foster and Bill Rice}
+{meta: composer Jerry G. Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]Well the band was on its final break

@@ -1,6 +1,6 @@
 {meta: title She's Walking Through My Memory}
 {meta: artist Doyle Lawson}
-{meta: writer Leroy Drumm and Pete Goble}
+{meta: composer Leroy Drumm and Pete Goble}
 
 {start_of_verse: Verse 1}
 [G]Somewhere in my thoughts there lives a [C]lady

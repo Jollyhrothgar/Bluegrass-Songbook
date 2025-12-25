@@ -1,6 +1,6 @@
 {meta: title Don't Wait The Last Minute To Pray}
 {meta: artist Kitty Wells}
-{meta: writer Harley Huggins}
+{meta: composer Harley Huggins}
 
 {start_of_verse: Verse 1}
 [C]A great day is coming it's [F]not far a[C]way

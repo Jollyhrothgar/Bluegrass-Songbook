@@ -1,6 +1,6 @@
 {meta: title Till We Two Are One}
 {meta: artist Ernest Tubb}
-{meta: writer Tom Glazer, Billy Martin, Larry Martin}
+{meta: composer Tom Glazer, Billy Martin, Larry Martin}
 
 {start_of_verse: Verse 1}
 [C]Take my lips and [G7]give me yours take my arms and [C]give me yours

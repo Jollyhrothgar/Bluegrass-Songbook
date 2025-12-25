@@ -1,6 +1,6 @@
 {meta: title Diamonds In The Rough}
 {meta: artist The Blue Ridge Mountain Boys}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]While walking out one evening

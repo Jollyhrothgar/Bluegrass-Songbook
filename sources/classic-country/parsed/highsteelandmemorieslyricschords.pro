@@ -1,6 +1,6 @@
 {meta: title High Steel And Memories}
 {meta: artist Keith Whitley}
-{meta: writer Robb Warren and Shafer Sanger}
+{meta: composer Robb Warren and Shafer Sanger}
 
 {start_of_verse: Verse 1}
 [G]The boss man and the boys

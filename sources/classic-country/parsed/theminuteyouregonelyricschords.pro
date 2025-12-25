@@ -1,6 +1,6 @@
 {meta: title The Minute You're Gone}
 {meta: artist Sonny James}
-{meta: writer Jimmy GateleyG C}
+{meta: composer Jimmy GateleyG C}
 
 {start_of_verse: Verse 1}
 The minute [D7]you're gone I cry 

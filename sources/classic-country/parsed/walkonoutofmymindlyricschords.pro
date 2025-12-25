@@ -1,6 +1,6 @@
 {meta: title Walk On Out Of My Mind}
 {meta: artist Waylon Jennings}
-{meta: writer Red Lane}
+{meta: composer Red Lane}
 
 {start_of_verse: Verse 1}
 [G]I hear the echo of your footsteps

@@ -1,6 +1,6 @@
 {meta: title Roses From A Stranger}
 {meta: artist Leroy Van Dyke}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]You've been getting roses from a stranger[Em]

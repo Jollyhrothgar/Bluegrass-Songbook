@@ -1,6 +1,6 @@
 {meta: title Milk And Cookies}
 {meta: artist Clint Black}
-{meta: writer Clint Black, Hayden Nicholas, Shake Russell}
+{meta: composer Clint Black, Hayden Nicholas, Shake Russell}
 
 {start_of_verse: Verse 1}
 [G]Now I'm only [C]five years old [G]I've gotta do just [C]what I'm told

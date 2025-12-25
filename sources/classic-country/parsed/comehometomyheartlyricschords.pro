@@ -1,6 +1,6 @@
 {meta: title Come Home To My Heart}
 {meta: artist Johnny Paycheck}
-{meta: writer Country Johnny Mathis}
+{meta: composer Country Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [C]If you get lonely out there in that [F]old [C]world

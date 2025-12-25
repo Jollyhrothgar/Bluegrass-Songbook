@@ -1,6 +1,6 @@
 {meta: title Show Me}
 {meta: artist Barbara Mandrell}
-{meta: writer Joe Tex}
+{meta: composer Joe Tex}
 
 {start_of_verse: Verse 1}
 [C]Show me a man that's got a good woman [F]show me

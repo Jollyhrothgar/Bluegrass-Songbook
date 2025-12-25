@@ -1,6 +1,6 @@
 {meta: title Rainbow On The Rio Colorado}
 {meta: artist Slim Whitman}
-{meta: writer Gene Autry and Fred Rose}
+{meta: composer Gene Autry and Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]There's a rainbow on the [F]Rio Colo[C]rado

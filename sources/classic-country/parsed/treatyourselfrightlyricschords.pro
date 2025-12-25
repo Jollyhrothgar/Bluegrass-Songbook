@@ -1,6 +1,6 @@
 {meta: title Treat Yourself Right}
 {meta: artist Vernon Oxford}
-{meta: writer Harlan Howard and Don Harris}
+{meta: composer Harlan Howard and Don Harris}
 
 {start_of_verse: Verse 1}
 [C]Now if you’ve got a heartache and it’s beyond control

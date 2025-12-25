@@ -1,6 +1,6 @@
 {meta: title I Wonder If The Angels Could Use Another Singer}
 {meta: artist Walt Mills}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [C]I hear the sweetest singin' 

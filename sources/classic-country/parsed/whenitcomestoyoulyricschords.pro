@@ -1,6 +1,6 @@
 {meta: title When It Comes To You}
 {meta: artist John Anderson}
-{meta: writer Mark Knopfler}
+{meta: composer Mark Knopfler}
 
 {start_of_verse: Verse 1}
 [Am]If we can't get along we oughta be apart

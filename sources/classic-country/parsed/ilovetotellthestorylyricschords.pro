@@ -1,6 +1,6 @@
 {meta: title I Love To Tell The Story}
 {meta: artist Emmylou Harris}
-{meta: writer Katherine Hankey and William Fisher}
+{meta: composer Katherine Hankey and William Fisher}
 
 {start_of_verse: Verse 1}
 [C]I love to tell the story of [F]unseen things [C]above

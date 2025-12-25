@@ -1,6 +1,6 @@
 {meta: title Santa's Flying A 747 Tonight}
 {meta: artist Doug Stone}
-{meta: writer Phyllis Bennett and Lonnie Williams}
+{meta: composer Phyllis Bennett and Lonnie Williams}
 
 {start_of_verse: Verse 1}
 [G]I saw St Nick down at the mall [C]today

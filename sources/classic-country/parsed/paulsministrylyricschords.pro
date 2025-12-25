@@ -1,6 +1,6 @@
 {meta: title Paul's Ministry}
 {meta: artist Kitty Wells}
-{meta: writer William Travel}
+{meta: composer William Travel}
 
 {start_of_verse: Verse 1}
 [G]The Lord said stand up Paul and dry up your [D7]tears

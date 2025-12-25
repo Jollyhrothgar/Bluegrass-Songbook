@@ -1,6 +1,6 @@
 {meta: title Deep In The West}
 {meta: artist Waylon Jennings}
-{meta: writer Shake Russell}
+{meta: composer Shake Russell}
 
 {start_of_verse: Verse 1}
 [C]Deep in the west where the [G7]tall mountains grow I've gone [F]home

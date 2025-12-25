@@ -1,6 +1,6 @@
 {meta: title If I Knew}
 {meta: artist Buck Owens}
-{meta: writer Ed King and Buck Owens}
+{meta: composer Ed King and Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]If I knew what made the world go round 

@@ -1,6 +1,6 @@
 {meta: title You And You Alone}
 {meta: artist Vince Gill}
-{meta: writer Vince Gill and Amy Grant Gill}
+{meta: composer Vince Gill and Amy Grant Gill}
 
 {start_of_verse: Verse 1}
 [C]If we have to wait forever that's all right

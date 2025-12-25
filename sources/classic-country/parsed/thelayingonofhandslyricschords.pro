@@ -1,6 +1,6 @@
 {meta: title The Laying On Of Hands}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Healin' hands on the blind and the [C]blind could see

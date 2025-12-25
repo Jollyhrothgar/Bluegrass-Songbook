@@ -1,6 +1,6 @@
 {meta: title Just To Satisfy You}
 {meta: artist Waylon Jennings}
-{meta: writer Waylon Jennings and Don Bowman}
+{meta: composer Waylon Jennings and Don Bowman}
 
 {start_of_verse: Verse 1}
 [G]Someone's gonna get [F]hurt before you're [G]through

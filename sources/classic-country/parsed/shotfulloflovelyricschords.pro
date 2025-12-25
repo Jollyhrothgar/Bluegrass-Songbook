@@ -1,6 +1,6 @@
 {meta: title Shot Full Of Love}
 {meta: artist Nitty Gritty Dirt Band}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]Once I had a [G7]heart cold as [Am]ice

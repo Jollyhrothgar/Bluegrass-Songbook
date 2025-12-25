@@ -1,6 +1,6 @@
 {meta: title This Time The Hurtin's on Me}
 {meta: artist Faron Young}
-{meta: writer Dallas Frazier and Sanger D. Shafer}
+{meta: composer Dallas Frazier and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Back when your patience had time to forgive [F]me

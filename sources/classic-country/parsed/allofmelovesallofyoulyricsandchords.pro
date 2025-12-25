@@ -1,6 +1,6 @@
 {meta: title All Of Me (Loves All Of You)}
 {meta: artist George Strait}
-{meta: writer Kim Williams and David Lewis}
+{meta: composer Kim Williams and David Lewis}
 
 {start_of_verse: Verse 1}
 [G]All of me loves [A7]all of you

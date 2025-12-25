@@ -1,6 +1,6 @@
 {meta: title That's The Thing About A Memory}
 {meta: artist Tracy Byrd}
-{meta: writer Keith Stegall, Lewis Anderson, Tracy Byrd}
+{meta: composer Keith Stegall, Lewis Anderson, Tracy Byrd}
 
 {start_of_verse: Verse 1}
 [C]Well I woke up this morning [G7]   and I was feeling [C]fine

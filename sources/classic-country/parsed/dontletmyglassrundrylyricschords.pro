@@ -1,6 +1,6 @@
 {meta: title Don't Let My Glass Run Dry}
 {meta: artist Red Sovine}
-{meta: writer Tommy Hill and Red Sovine}
+{meta: composer Tommy Hill and Red Sovine}
 
 {start_of_verse: Verse 1}
 [G]Don't let my glass run dry my heart [G7]can't stand the [C]pain

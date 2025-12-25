@@ -1,6 +1,6 @@
 {meta: title Right Before My Eyes}
 {meta: artist Waylon Jennings}
-{meta: writer Waylon Jennings and Don Bowman}
+{meta: composer Waylon Jennings and Don Bowman}
 
 {start_of_verse: Verse 1}
 Right Before My Eyes

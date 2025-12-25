@@ -1,6 +1,6 @@
 {meta: title I Ain’t Gonna Love You Anymore}
 {meta: artist Hank Williams}
-{meta: writer Ernest Tubb}
+{meta: composer Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]No need for you to sit alone

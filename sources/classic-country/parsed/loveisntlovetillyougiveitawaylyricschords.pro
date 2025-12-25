@@ -1,6 +1,6 @@
 {meta: title Love Isn't Love (Till You Give It Away)}
 {meta: artist Reba McEntire}
-{meta: writer Ricci Mareno and Bobby Fisher}
+{meta: composer Ricci Mareno and Bobby Fisher}
 
 {start_of_verse: Verse 1}
 [C]A smile's not a smile till it [Dm]wrinkles your face

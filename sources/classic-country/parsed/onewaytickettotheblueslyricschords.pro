@@ -1,6 +1,6 @@
 {meta: title One Way Ticket To The Blues}
 {meta: artist Porter Wagoner}
-{meta: writer Jimmie Dallas}
+{meta: composer Jimmie Dallas}
 
 {start_of_verse: Verse 1}
 [C]Once I thought your love I'd [F]win

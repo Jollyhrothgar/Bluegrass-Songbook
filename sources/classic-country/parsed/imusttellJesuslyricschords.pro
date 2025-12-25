@@ -1,6 +1,6 @@
 {meta: title I Must Tell Jesus}
 {meta: artist The Kingsmen}
-{meta: writer Elisha A Hoffman}
+{meta: composer Elisha A Hoffman}
 
 {start_of_verse: Verse 1}
 [C]I must tell Jesus all of my [G7]tria[C]ls

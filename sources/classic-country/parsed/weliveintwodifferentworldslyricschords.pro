@@ -1,6 +1,6 @@
 {meta: title We Live in Two Different Worlds}
 {meta: artist Hank Williams}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]We live in two different worlds [F]dear

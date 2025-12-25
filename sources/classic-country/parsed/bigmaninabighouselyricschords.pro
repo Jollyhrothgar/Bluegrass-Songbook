@@ -1,6 +1,6 @@
 {meta: title Big Man In A Big House}
 {meta: artist Leroy Van Dyke}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 Big Man In A Big House

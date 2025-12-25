@@ -1,6 +1,6 @@
 {meta: title Write This Down}
 {meta: artist George Strait}
-{meta: writer Kent M. Robbins and Dana Hunt}
+{meta: composer Kent M. Robbins and Dana Hunt}
 
 {start_of_verse: Verse 1}
 [D7]I never saw the [G]end in sight fools are kind of [A7]blind

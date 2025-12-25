@@ -1,6 +1,6 @@
 {meta: title Trade Some Memories}
 {meta: artist Johnny Rodriguez}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]I came here to trade some [F]memories 

@@ -1,6 +1,6 @@
 {meta: title Strawberry Snow}
 {meta: artist Brenda Lee}
-{meta: writer Ronnie Self}
+{meta: composer Ronnie Self}
 
 {start_of_verse: Verse 1}
 [C]Sleep with your spoon in your pillow

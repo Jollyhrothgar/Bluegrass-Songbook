@@ -1,6 +1,6 @@
 {meta: title Blue Christmas Tree}
 {meta: artist Buck Owens}
-{meta: writer Eddie Miller and Bob Morris}
+{meta: composer Eddie Miller and Bob Morris}
 
 {start_of_verse: Verse 1}
 [G]Dream is the [G7]color and [C]joy it should be

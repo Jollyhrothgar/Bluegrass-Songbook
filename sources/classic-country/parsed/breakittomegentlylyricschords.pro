@@ -1,6 +1,6 @@
 {meta: title Break It To Me Gently}
 {meta: artist Brenda Lee}
-{meta: writer Diane Lampert - Joe Seneca}
+{meta: composer Diane Lampert - Joe Seneca}
 
 {start_of_verse: Verse 1}
 [C]Break it  to me [F]gently

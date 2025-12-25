@@ -1,6 +1,6 @@
 {meta: title That's What You Do To Me}
 {meta: artist Charly McClain}
-{meta: writer Bob Morrison and Johnny McRae}
+{meta: composer Bob Morrison and Johnny McRae}
 
 {start_of_verse: Verse 1}
 [C]Love me high love me [Am]low

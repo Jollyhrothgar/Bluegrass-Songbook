@@ -1,6 +1,6 @@
 {meta: title Farthest Thing From My Mind}
 {meta: artist Ray Price}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [C]She was everything in life [F]I’ve ever dreamed [C]of

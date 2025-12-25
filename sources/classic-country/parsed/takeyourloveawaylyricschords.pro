@@ -1,6 +1,6 @@
 {meta: title Take Your Love Away}
 {meta: artist Reba McEntire}
-{meta: writer Randy Sharp}
+{meta: composer Randy Sharp}
 
 {start_of_verse: Verse 1}
 [C]Do my heart a favor take your [G7]love away

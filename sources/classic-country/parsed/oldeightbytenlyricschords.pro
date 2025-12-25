@@ -1,6 +1,6 @@
 {meta: title Old Eight By Ten}
 {meta: artist Randy Travis}
-{meta: writer Joe Chambers and Larry Jenkins}
+{meta: composer Joe Chambers and Larry Jenkins}
 
 {start_of_verse: Verse 1}
 [G]Well I know it ain't much but it's all that I have since she's [C]gone

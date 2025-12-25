@@ -1,6 +1,6 @@
 {meta: title Sing Her Home To Me George Jones}
 {meta: artist Moe Bandy}
-{meta: writer Bobby P. Barker}
+{meta: composer Bobby P. Barker}
 
 {start_of_verse: Verse 1}
 [C]George you wouldn't know my woman if she [G7]passed you on the street

@@ -1,6 +1,6 @@
 {meta: title Kismet}
 {meta: artist Elvis Presley}
-{meta: writer Sid Tepper and Roy C. Bennett}
+{meta: composer Sid Tepper and Roy C. Bennett}
 
 {start_of_verse: Verse 1}
 [C]When we meet by chance [E7]it's not by chance it's [C]kismet

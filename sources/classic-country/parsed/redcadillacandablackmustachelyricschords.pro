@@ -1,6 +1,6 @@
 {meta: title Red Cadillac And A Black Mustache}
 {meta: artist Bob Luman}
-{meta: writer Lillian May}
+{meta: composer Lillian May}
 
 {start_of_verse: Verse 1}
 [C]Who you been lovin' since [Am]I've been gone

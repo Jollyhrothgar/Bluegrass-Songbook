@@ -1,6 +1,6 @@
 {meta: title I'm Only In It For The Love}
 {meta: artist John Conlee}
-{meta: writer Deborah Allen, Leon Brooks, Rafe G. Van Hoy}
+{meta: composer Deborah Allen, Leon Brooks, Rafe G. Van Hoy}
 
 {start_of_verse: Verse 1}
 [G]There's something you got that really gets me going

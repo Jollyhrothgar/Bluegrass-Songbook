@@ -1,6 +1,6 @@
 {meta: title Y'all Come Back Saloon}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Sharon Vaughn}
+{meta: composer Sharon Vaughn}
 
 {start_of_verse: Verse 1}
 [C]She played tambourine with a silver jingle

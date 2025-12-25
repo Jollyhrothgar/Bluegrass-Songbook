@@ -1,6 +1,6 @@
 {meta: title Any Single Solitary Heart}
 {meta: artist The Everly Brothers}
-{meta: writer John Hiatt and Mike Porter}
+{meta: composer John Hiatt and Mike Porter}
 
 {start_of_verse: Verse 1}
 [Am]You’ve lost at love [F]before you never [G]closed that [C]door

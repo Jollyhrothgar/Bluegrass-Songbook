@@ -1,6 +1,6 @@
 {meta: title Do You Ever Fool Around}
 {meta: artist Joe Stampley}
-{meta: writer Don Griffin and Jerry Strickland}
+{meta: composer Don Griffin and Jerry Strickland}
 
 {start_of_verse: Verse 1}
 [C]If the time and the place was [F]right

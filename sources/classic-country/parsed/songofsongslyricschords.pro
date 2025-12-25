@@ -1,6 +1,6 @@
 {meta: title Song Of Songs}
 {meta: artist Boxcar Willie}
-{meta: writer Vern Stovall, Bill Palmer & Lloene Martin}
+{meta: composer Vern Stovall, Bill Palmer & Lloene Martin}
 
 {start_of_verse: Verse 1}
 [G]How I love that old melody they're [C]playing

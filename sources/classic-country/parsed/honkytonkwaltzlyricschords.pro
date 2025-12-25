@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Waltz}
 {meta: artist Kitty Wells}
-{meta: writer Billy Wallace}
+{meta: composer Billy Wallace}
 
 {start_of_verse: Verse 1}
 [G]The lights are dim and low in the [C]tavern 

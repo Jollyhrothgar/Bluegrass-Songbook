@@ -1,6 +1,6 @@
 {meta: title Pretty Words}
 {meta: artist Vince Gill}
-{meta: writer Don Schlitz and Vince Gill}
+{meta: composer Don Schlitz and Vince Gill}
 
 {start_of_verse: Verse 1}
 [G]I've seen the way he cast his [C]spell 

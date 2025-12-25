@@ -1,6 +1,6 @@
 {meta: title That Makes Two Of Us}
 {meta: artist Reba McEntire}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [G7]So you [C]like Sunday picnics 

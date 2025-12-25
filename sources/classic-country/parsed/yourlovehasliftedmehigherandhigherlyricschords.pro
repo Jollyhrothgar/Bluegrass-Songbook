@@ -1,6 +1,6 @@
 {meta: title Your Love Has Lifted Me Higher And Higher}
 {meta: artist Dolly Parton}
-{meta: writer Carl Smith and Gary Jackson}
+{meta: composer Carl Smith and Gary Jackson}
 
 {start_of_verse: Verse 1}
 [C]Your love has lifted me [F]your love has lifted me 

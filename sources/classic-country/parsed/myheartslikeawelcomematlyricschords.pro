@@ -1,6 +1,6 @@
 {meta: title My Heart's Like A Welcome Mat}
 {meta: artist Jim Reeves}
-{meta: writer Al Courtney, Macy Lela Henry, Jim Reeves}
+{meta: composer Al Courtney, Macy Lela Henry, Jim Reeves}
 
 {start_of_verse: Verse 1}
 [G]My heart's like a [C]welcome [G]mat

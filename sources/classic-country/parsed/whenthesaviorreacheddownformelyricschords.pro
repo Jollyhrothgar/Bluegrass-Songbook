@@ -1,6 +1,6 @@
 {meta: title When The Savior Reached Down For Me}
 {meta: artist The Oak Ridge Boys}
-{meta: writer G.E. Wright}
+{meta: composer G.E. Wright}
 
 {start_of_verse: Verse 1}
 [G]Once my soul was astray from the [D7]heavenly [G]way 

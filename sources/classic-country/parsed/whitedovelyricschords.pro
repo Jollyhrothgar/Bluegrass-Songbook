@@ -1,6 +1,6 @@
 {meta: title White Dove}
 {meta: artist The Stanley Brothers}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]In the deep rolling hills of old [F]Virginia

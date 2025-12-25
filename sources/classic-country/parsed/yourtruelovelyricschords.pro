@@ -1,6 +1,6 @@
 {meta: title Your True Love}
 {meta: artist Ricky Nelson}
-{meta: writer Carl Perkins}
+{meta: composer Carl Perkins}
 
 {start_of_verse: Verse 1}
 [C]True love (your love) true love (your love)

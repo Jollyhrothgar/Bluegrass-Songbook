@@ -1,6 +1,6 @@
 {meta: title My Heart Won't Pay Me No Mind}
 {meta: artist Johnny Rodriguez}
-{meta: writer John S. Sherrill and Thomas Cain}
+{meta: composer John S. Sherrill and Thomas Cain}
 
 {start_of_verse: Verse 1}
 [G]My heart [C]won't pay me no [D7]mind

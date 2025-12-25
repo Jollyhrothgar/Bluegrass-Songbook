@@ -1,6 +1,6 @@
 {meta: title First Year Blues}
 {meta: artist Hank Williams}
-{meta: writer Ernest Tubb}
+{meta: composer Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]Now I've been married about six months

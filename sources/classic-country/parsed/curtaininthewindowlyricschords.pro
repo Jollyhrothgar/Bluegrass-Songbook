@@ -1,6 +1,6 @@
 {meta: title Curtain in the Window}
 {meta: artist Ray Price}
-{meta: writer Lee Ross}
+{meta: composer Lee Ross}
 
 {start_of_verse: Verse 1}
 [G]These lyin' lips said they'd [D7]forget

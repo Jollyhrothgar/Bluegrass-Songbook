@@ -1,6 +1,6 @@
 {meta: title Over There}
 {meta: artist Gene Watson}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]I gotta home so much better 

@@ -1,6 +1,6 @@
 {meta: title Angels Among Us}
 {meta: artist Alabama}
-{meta: writer Don Goodman and Becky Hobbs}
+{meta: composer Don Goodman and Becky Hobbs}
 
 {start_of_verse: Verse 1}
 [G]I was walkin' home from school on a [Em]cold winter [C]day

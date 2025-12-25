@@ -1,6 +1,6 @@
 {meta: title He Thought He'd Die Laughing}
 {meta: artist Bobby Helms}
-{meta: writer Joe Poovey and Gene McCaslin}
+{meta: composer Joe Poovey and Gene McCaslin}
 
 {start_of_verse: Verse 1}
 [G]His mind was numb by [C]alcoholic [G]beverages

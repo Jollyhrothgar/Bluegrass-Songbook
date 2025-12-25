@@ -1,6 +1,6 @@
 {meta: title Don't Tell Me You're Sorry}
 {meta: artist Conway Twitty}
-{meta: writer Loretta Lynn}
+{meta: composer Loretta Lynn}
 
 {start_of_verse: Verse 1}
 [G]I'm sorry honey that you walked in 

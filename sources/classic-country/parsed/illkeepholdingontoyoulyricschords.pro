@@ -1,6 +1,6 @@
 {meta: title I'll Keep Holding on to You}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert and Sonny James}
+{meta: composer Bob Tubert and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]I'll keep holding on just to your [G7]love 

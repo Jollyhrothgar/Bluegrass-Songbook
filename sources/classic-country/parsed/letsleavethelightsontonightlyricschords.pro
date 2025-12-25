@@ -1,6 +1,6 @@
 {meta: title Let's Leave The Lights On Tonight}
 {meta: artist Johnny Rodriguez}
-{meta: writer Bob McDill and Rory Bourke}
+{meta: composer Bob McDill and Rory Bourke}
 
 {start_of_verse: Verse 1}
 [C]We were two broken hearts in the darkness we both [F]pretend

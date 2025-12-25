@@ -1,6 +1,6 @@
 {meta: title I Won All The Battles}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone and Paul Nelson}
+{meta: composer Larry Boone and Paul Nelson}
 
 {start_of_verse: Verse 1}
 [C]We argued over whether [Am]I could buy that Chevy

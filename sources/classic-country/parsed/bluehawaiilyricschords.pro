@@ -1,6 +1,6 @@
 {meta: title Blue Hawaii}
 {meta: artist Hank Locklin}
-{meta: writer Leo Robin and Ralph Rainger}
+{meta: composer Leo Robin and Ralph Rainger}
 
 {start_of_verse: Verse 1}
 [C]Night and you [F]and blue [C]Hawaii

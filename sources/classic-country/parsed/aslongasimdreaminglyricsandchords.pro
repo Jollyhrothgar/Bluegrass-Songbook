@@ -1,6 +1,6 @@
 {meta: title As Long as I'm Dreaming Lyrics and Chords}
 {meta: artist Hank Snow}
-{meta: writer Vaughn Horton}
+{meta: composer Vaughn Horton}
 
 {start_of_verse: Verse 1}
 [C]As long as I'm [F]dream-[C]ing you'll be in my [G7]arms dear

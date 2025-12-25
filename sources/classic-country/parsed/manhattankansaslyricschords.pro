@@ -1,6 +1,6 @@
 {meta: title Manhattan Kansas}
 {meta: artist Leona Williams}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [C]Manhattan Kansas ain't no [F]place to have a baby

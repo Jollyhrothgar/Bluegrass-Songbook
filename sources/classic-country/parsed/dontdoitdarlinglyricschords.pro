@@ -1,6 +1,6 @@
 {meta: title Don't Do it Darling}
 {meta: artist Hank Williams}
-{meta: writer Zeke Manners}
+{meta: composer Zeke Manners}
 
 {start_of_verse: Verse 1}
 [C]If you're worrying over me like I've worried over you

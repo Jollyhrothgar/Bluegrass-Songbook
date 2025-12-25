@@ -1,6 +1,6 @@
 {meta: title Watching The Way}
 {meta: artist Mickey Gilley}
-{meta: writer J.W. Gostick Jr. and R.E. Westmoreland}
+{meta: composer J.W. Gostick Jr. and R.E. Westmoreland}
 
 {start_of_verse: Verse 1}
 [G]I went over to your house [G7]I wanted to [C]talk

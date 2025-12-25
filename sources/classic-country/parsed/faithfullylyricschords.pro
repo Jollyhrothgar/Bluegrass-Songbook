@@ -1,6 +1,6 @@
 {meta: title Faithfully}
 {meta: artist Eddy Arnold}
-{meta: writer Stanley Styne and Larry Grossman}
+{meta: composer Stanley Styne and Larry Grossman}
 
 {start_of_verse: Verse 1}
 [G]Faithfully ray as the [D7]day may be[Dm]

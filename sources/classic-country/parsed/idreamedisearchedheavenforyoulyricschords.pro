@@ -1,6 +1,6 @@
 {meta: title I Dreamed I Searched Heaven For You}
 {meta: artist Kitty Wells}
-{meta: writer James D. Vaughn - Mary Ethel Weiss}
+{meta: composer James D. Vaughn - Mary Ethel Weiss}
 
 {start_of_verse: Verse 1}
 [G]I dreamed I had gone to that city

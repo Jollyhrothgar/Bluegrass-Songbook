@@ -1,6 +1,6 @@
 {meta: title Back Again}
 {meta: artist George Morgan}
-{meta: writer Wayne P. Walker and Jay Coleman}
+{meta: composer Wayne P. Walker and Jay Coleman}
 
 {start_of_verse: Verse 1}
 [C]We started out together chasing dreams of things to [F]be

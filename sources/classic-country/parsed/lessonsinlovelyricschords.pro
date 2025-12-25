@@ -1,6 +1,6 @@
 {meta: title Lessons In Love}
 {meta: artist Hank Locklin}
-{meta: writer Peter Graves}
+{meta: composer Peter Graves}
 
 {start_of_verse: Verse 1}
 [G]You may think you’re mighty wise

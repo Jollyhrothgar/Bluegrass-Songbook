@@ -1,6 +1,6 @@
 {meta: title Second Best}
 {meta: artist Jean Shepard}
-{meta: writer Marie Wilson}
+{meta: composer Marie Wilson}
 
 {start_of_verse: Verse 1}
 [C]I know you'll never love me the way I love [G7]you

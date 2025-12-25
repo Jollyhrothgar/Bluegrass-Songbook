@@ -1,6 +1,6 @@
 {meta: title I Don't Wanna Lose Your Love}
 {meta: artist Crystal Gayle}
-{meta: writer Joey Carbone}
+{meta: composer Joey Carbone}
 
 {start_of_verse: Verse 1}
 [C]You look at me and I can see the [F]feelings gone

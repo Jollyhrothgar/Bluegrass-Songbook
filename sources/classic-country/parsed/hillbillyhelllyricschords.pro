@@ -1,6 +1,6 @@
 {meta: title Hillbilly Hell}
 {meta: artist Bobby Bare}
-{meta: writer Bob McDill &amp; Wayland Holyfield}
+{meta: composer Bob McDill &amp; Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]My friends and my [F]mother  [G7]they all like my [F]songs

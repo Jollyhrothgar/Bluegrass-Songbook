@@ -1,6 +1,6 @@
 {meta: title Judge My Soul Again}
 {meta: artist Johnny Burke}
-{meta: writer Bardon Yorke}
+{meta: composer Bardon Yorke}
 
 {start_of_verse: Verse 1}
 [C]She knelt by the bed held his cold [C7]trembling [F]hands

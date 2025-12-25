@@ -1,6 +1,6 @@
 {meta: title Mama Take Me Home}
 {meta: artist George Jones}
-{meta: writer Carmol Taylor}
+{meta: composer Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [G]A drunk man crossed the street today he [C]staggered all around   

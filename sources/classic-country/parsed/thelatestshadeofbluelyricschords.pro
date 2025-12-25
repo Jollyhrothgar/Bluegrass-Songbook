@@ -1,6 +1,6 @@
 {meta: title The Latest Shade Of Blue}
 {meta: artist Connie Smith}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [G]Just when it [D7]starts to get [G]better

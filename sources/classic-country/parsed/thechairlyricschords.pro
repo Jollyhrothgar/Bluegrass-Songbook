@@ -1,6 +1,6 @@
 {meta: title The Chair}
 {meta: artist George Strait}
-{meta: writer Hank Cochran and Dean Dillon}
+{meta: composer Hank Cochran and Dean Dillon}
 
 {start_of_verse: Verse 1}
 [G]Well excuse me but I think you've got my [Am]chair

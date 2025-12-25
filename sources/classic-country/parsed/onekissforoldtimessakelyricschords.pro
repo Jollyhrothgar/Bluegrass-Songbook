@@ -1,6 +1,6 @@
 {meta: title One Kiss For Old Times Sake}
 {meta: artist Eddy Arnold}
-{meta: writer Kenny Young and Artie Resnick}
+{meta: composer Kenny Young and Artie Resnick}
 
 {start_of_verse: Verse 1}
 [G](I want you I [Em]need you I [Am]love you [D7]please grant me [G]this)

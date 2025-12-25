@@ -1,6 +1,6 @@
 {meta: title Together}
 {meta: artist Connie Francis}
-{meta: writer Lew Brown, Ray Henderson, Buddy De Sylva}
+{meta: composer Lew Brown, Ray Henderson, Buddy De Sylva}
 
 {start_of_verse: Verse 1}
 [C]We strolled the lane [G7]together

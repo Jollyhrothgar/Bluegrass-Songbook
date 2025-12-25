@@ -1,6 +1,6 @@
 {meta: title Red Neckin' Love Makin' Night}
 {meta: artist Conway Twitty}
-{meta: writer Troy Seals and Max D. Barnes}
+{meta: composer Troy Seals and Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]Hello baby Conway here [F]let me lay this in your ear

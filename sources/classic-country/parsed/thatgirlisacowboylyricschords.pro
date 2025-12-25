@@ -1,6 +1,6 @@
 {meta: title That Girl Is A Cowboy}
 {meta: artist Garth Brooks}
-{meta: writer Richie Brown, Jerrod Niemann, Garth Brooks}
+{meta: composer Richie Brown, Jerrod Niemann, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [F]It was a [C]hundred and seven we were heading to town

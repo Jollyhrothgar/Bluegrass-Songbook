@@ -1,6 +1,6 @@
 {meta: title Just A Simple Song}
 {meta: artist Tommy Overstreet}
-{meta: writer Odis Elder}
+{meta: composer Odis Elder}
 
 {start_of_verse: Verse 1}
 [G7]It's just a [C]simple song it won't take long to [G7]sing

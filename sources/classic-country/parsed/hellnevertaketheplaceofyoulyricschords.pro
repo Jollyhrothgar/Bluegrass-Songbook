@@ -1,6 +1,6 @@
 {meta: title He'll Never Take The Place Of You}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill, Charlie Daniels, Bob Johnson}
+{meta: composer Billy Sherrill, Charlie Daniels, Bob Johnson}
 
 {start_of_verse: Verse 1}
 [G]Sure he gives me everything  [E7]I ask [C]for

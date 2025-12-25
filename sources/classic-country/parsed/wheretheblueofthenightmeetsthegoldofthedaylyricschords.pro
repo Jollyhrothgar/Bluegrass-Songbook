@@ -1,6 +1,6 @@
 {meta: title Where The Blue Of The Night Meets The Gold Of The Day}
 {meta: artist Hank Locklin}
-{meta: writer Roy Turk, Fred Ahlert, Bing Crosby}
+{meta: composer Roy Turk, Fred Ahlert, Bing Crosby}
 
 {start_of_verse: Verse 1}
 Where The Blue Of The Night Meets The Gold Of The Day

@@ -1,6 +1,6 @@
 {meta: title I Told You So}
 {meta: artist Ray Price}
-{meta: writer Rex Griffin and Jimmie Davis}
+{meta: composer Rex Griffin and Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [G]So your new love let your feelings sad and [D7]blue

@@ -1,6 +1,6 @@
 {meta: title Don't You Know How Much I Love You}
 {meta: artist Ronnie Milsap}
-{meta: writer Michael D. Stewart and Dan Edward Williams}
+{meta: composer Michael D. Stewart and Dan Edward Williams}
 
 {start_of_verse: Verse 1}
 [G]Why must you disappear

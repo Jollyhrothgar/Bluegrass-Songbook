@@ -1,6 +1,6 @@
 {meta: title When The Roses Bloom Next Spring}
 {meta: artist Red Steagall}
-{meta: writer Fletcher Jowers}
+{meta: composer Fletcher Jowers}
 
 {start_of_verse: Verse 1}
 [G]It's an early frosty morning and the [C]campfire's burning [Am]hot

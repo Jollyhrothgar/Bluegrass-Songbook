@@ -1,6 +1,6 @@
 {meta: title Never No Mo' Blues}
 {meta: artist Lefty Frizzell}
-{meta: writer Jimmie Rodgers and Elsie McWilliams}
+{meta: composer Jimmie Rodgers and Elsie McWilliams}
 
 {start_of_verse: Verse 1}
 [C]I'm just as blue as I can be

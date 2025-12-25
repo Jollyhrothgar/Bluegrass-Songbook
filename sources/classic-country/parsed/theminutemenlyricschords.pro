@@ -1,6 +1,6 @@
 {meta: title The Minute Men (Are Turning In Their Graves)}
 {meta: artist Stonewall Jackson}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [G]They march in lines and carry signs pro[C]testers one and [G]all

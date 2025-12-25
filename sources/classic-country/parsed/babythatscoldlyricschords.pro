@@ -1,6 +1,6 @@
 {meta: title Baby That's Cold}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes, Hank Cochran, Vern Gosdin}
+{meta: composer Max D. Barnes, Hank Cochran, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]You said sit down here and listen

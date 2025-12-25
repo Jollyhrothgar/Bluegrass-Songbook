@@ -1,6 +1,6 @@
 {meta: title Lovers Friends And Strangers}
 {meta: artist Ronnie Milsap}
-{meta: writer Kent M. Robbins}
+{meta: composer Kent M. Robbins}
 
 {start_of_verse: Verse 1}
 [F]Looking [G7]back into the [C]world we knew

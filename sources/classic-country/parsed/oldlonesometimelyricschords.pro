@@ -1,6 +1,6 @@
 {meta: title Old Lonesome Time}
 {meta: artist Carl Smith}
-{meta: writer Sonny James and Hazel H. Pitts}
+{meta: composer Sonny James and Hazel H. Pitts}
 
 {start_of_verse: Verse 1}
 [G]Don’t judge me guilty about the [C]word going around

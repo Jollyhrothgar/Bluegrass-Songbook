@@ -1,6 +1,6 @@
 {meta: title I'm Just Me}
 {meta: artist Charlie Pride}
-{meta: writer Glenn Martin}
+{meta: composer Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]Down at the railroad station there's people getting [G7]on

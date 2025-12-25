@@ -1,6 +1,6 @@
 {meta: title Down the Trail of Aching Hearts}
 {meta: artist Hank Snow}
-{meta: writer Jimmy Kennedy and Nat Simon}
+{meta: composer Jimmy Kennedy and Nat Simon}
 
 {start_of_verse: Verse 1}
 [C]Down the trail of achin' [G]hearts

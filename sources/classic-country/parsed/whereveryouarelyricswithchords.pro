@@ -1,6 +1,6 @@
 {meta: title Wherever You Are}
 {meta: artist Johnny Paycheck}
-{meta: writer Johnny Paycheck and Aubrey Mayhew}
+{meta: composer Johnny Paycheck and Aubrey Mayhew}
 
 {start_of_verse: Verse 1}
 [D7]When you [G]hear this song wher[C]ever you are [G]think of me 

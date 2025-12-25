@@ -1,6 +1,6 @@
 {meta: title The Town I Loved So Well}
 {meta: artist The Dubliners}
-{meta: writer m Phil Coulter}
+{meta: composer m Phil Coulter}
 
 {start_of_verse: Verse 1}
 [D7]In my [G]memo[D7]ry I will [C]always [G]see 

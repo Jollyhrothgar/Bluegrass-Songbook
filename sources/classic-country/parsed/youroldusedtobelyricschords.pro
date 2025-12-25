@@ -1,6 +1,6 @@
 {meta: title Your Old Used To Be}
 {meta: artist Faron Young}
-{meta: writer Faron Young and Hilda Young}
+{meta: composer Faron Young and Hilda Young}
 
 {start_of_verse: Verse 1}
 [C]Will I [F]ever get used to being [G7]your old used to [C]be

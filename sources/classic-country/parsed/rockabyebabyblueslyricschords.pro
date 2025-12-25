@@ -1,6 +1,6 @@
 {meta: title Rock-a-bye Baby Blues and chord}
 {meta: artist Bob Wills}
-{meta: writer Billy Jack Wills, Bob Wills, Louis Tierney}
+{meta: composer Billy Jack Wills, Bob Wills, Louis Tierney}
 
 {start_of_verse: Verse 1}
 [G]I come home in the evening and [D7]I'm all tired [G]out

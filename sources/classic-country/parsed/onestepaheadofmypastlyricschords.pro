@@ -1,6 +1,6 @@
 {meta: title One Step Ahead Of My Past}
 {meta: artist Hank Locklin}
-{meta: writer Don Robertson and Hal Blair}
+{meta: composer Don Robertson and Hal Blair}
 
 {start_of_verse: Verse 1}
 [G]The love that I've waited [C]and longed [G]for 

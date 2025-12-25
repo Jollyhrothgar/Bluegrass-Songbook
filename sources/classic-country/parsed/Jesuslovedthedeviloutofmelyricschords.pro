@@ -1,6 +1,6 @@
 {meta: title Jesus Loved The Devil Out Of Me}
 {meta: artist Kitty Wells}
-{meta: writer Eddie Pleasant}
+{meta: composer Eddie Pleasant}
 
 {start_of_verse: Verse 1}
 [C]Jesus loved the devil out of [G7]me

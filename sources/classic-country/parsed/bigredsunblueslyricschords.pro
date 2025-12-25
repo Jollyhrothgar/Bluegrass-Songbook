@@ -1,6 +1,6 @@
 {meta: title Big Red Sun Blues}
 {meta: artist Johnny Rodriguez}
-{meta: writer Lucinda Williams}
+{meta: composer Lucinda Williams}
 
 {start_of_verse: Verse 1}
 [C]Everything is [F]going wrong it’s not right [C]anymore

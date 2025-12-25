@@ -1,6 +1,6 @@
 {meta: title The Twelfth Of Never}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Livingston}
+{meta: composer Jerry Livingston}
 
 {start_of_verse: Verse 1}
 [C]You ask how much I need [Am]you must [F]I [C]explain

@@ -1,6 +1,6 @@
 {meta: title I'm Biting My Fingernails And Thinking Of You}
 {meta: artist Ernest Tubb and Loretta Lynn}
-{meta: writer Ernest Tubb, Ernie Benedict, Roy West, Lenny Sanders}
+{meta: composer Ernest Tubb, Ernie Benedict, Roy West, Lenny Sanders}
 
 {start_of_verse: Verse 1}
 [C]Bitin' my fingernails [F]thinkin' of you

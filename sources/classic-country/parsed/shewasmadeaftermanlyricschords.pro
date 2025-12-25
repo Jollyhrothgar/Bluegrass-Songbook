@@ -1,6 +1,6 @@
 {meta: title She Was Made After Man}
 {meta: artist Wynn Stewart}
-{meta: writer Burt Long}
+{meta: composer Burt Long}
 
 {start_of_verse: Verse 1}
 [C]God made man in His own image [F]everything was goin' [C]right

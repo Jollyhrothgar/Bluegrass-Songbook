@@ -1,6 +1,6 @@
 {meta: title You Can't Trust A Crazy Man}
 {meta: artist Mel Tillis}
-{meta: writer Barbara Cummings and Jimmy Null}
+{meta: composer Barbara Cummings and Jimmy Null}
 
 {start_of_verse: Verse 1}
 [C]I can't treat you like a lady anymore

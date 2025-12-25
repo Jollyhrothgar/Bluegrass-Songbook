@@ -1,6 +1,6 @@
 {meta: title All That You Could Be}
 {meta: artist Kenny Rogers}
-{meta: writer Rory Bourke and Mike Reid}
+{meta: composer Rory Bourke and Mike Reid}
 
 {start_of_verse: Verse 1}
 [C]A star up in the sky [F]will never know

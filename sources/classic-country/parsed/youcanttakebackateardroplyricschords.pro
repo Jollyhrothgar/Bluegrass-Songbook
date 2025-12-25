@@ -1,6 +1,6 @@
 {meta: title You Can't Take Back A Teardrop Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Christopher Waters Dunn and Tom C. Shapiro}
+{meta: composer Christopher Waters Dunn and Tom C. Shapiro}
 
 {start_of_verse: Verse 1}
 [C]You came back tonight to take [F]back the things that you said to [C]me

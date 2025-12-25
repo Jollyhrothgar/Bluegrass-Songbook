@@ -1,6 +1,6 @@
 {meta: title An Article From Life}
 {meta: artist Ferlin Husky}
-{meta: writer Jim Wilson}
+{meta: composer Jim Wilson}
 
 {start_of_verse: Verse 1}
 [C]Evening sun had just gone down

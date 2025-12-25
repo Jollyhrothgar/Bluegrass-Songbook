@@ -1,6 +1,6 @@
 {meta: title Pride}
 {meta: artist Ray Price}
-{meta: writer Irene}
+{meta: composer Irene}
 
 {start_of_verse: Verse 1}
 [C]You know that you're doing lots of things that ain't right

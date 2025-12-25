@@ -1,6 +1,6 @@
 {meta: title That's What Breaking Hearts Do}
 {meta: artist George Strait}
-{meta: writer George Strait and Bubba Strait}
+{meta: composer George Strait and Bubba Strait}
 
 {start_of_verse: Verse 1}
 [Em]You try and try to [G]erase 

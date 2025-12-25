@@ -1,6 +1,6 @@
 {meta: title Fool Me One More Time}
 {meta: artist Wilburn Brothers}
-{meta: writer John Keith Reedy}
+{meta: composer John Keith Reedy}
 
 {start_of_verse: Verse 1}
 [C]Fool me one more [C7]time and say you [F]love me

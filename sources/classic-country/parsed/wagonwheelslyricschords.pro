@@ -1,6 +1,6 @@
 {meta: title Wagon Wheels}
 {meta: artist Sons of the Pioneers}
-{meta: writer Billy Hill and Peter Derose}
+{meta: composer Billy Hill and Peter Derose}
 
 {start_of_verse: Verse 1}
 [C]Wagon wheels (rollin' rollin' rollin') [G7]wagon wheels

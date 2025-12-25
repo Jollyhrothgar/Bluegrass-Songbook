@@ -1,6 +1,6 @@
 {meta: title Charlie's Shoes}
 {meta: artist Billy Walker}
-{meta: writer Roy Baham}
+{meta: composer Roy Baham}
 
 {start_of_verse: Verse 1}
 [C]I'd like to be in Charlie's [C7]shoes   that's what I always [F]said

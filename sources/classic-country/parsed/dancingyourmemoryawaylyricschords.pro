@@ -1,6 +1,6 @@
 {meta: title Dancing Your Memory Away}
 {meta: artist Charly McClain}
-{meta: writer Eddie Burton and Thomas Allen Grant}
+{meta: composer Eddie Burton and Thomas Allen Grant}
 
 {start_of_verse: Verse 1}
 [C]It’s Friday night you must be [F]alone 

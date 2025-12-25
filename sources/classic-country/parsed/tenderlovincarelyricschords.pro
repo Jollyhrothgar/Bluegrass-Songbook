@@ -1,6 +1,6 @@
 {meta: title Tender Lovin' Care}
 {meta: artist George Morgan}
-{meta: writer George Morgan and Curt Gibson}
+{meta: composer George Morgan and Curt Gibson}
 
 {start_of_verse: Verse 1}
 [C]Get your favorite photo and send it to [F]me

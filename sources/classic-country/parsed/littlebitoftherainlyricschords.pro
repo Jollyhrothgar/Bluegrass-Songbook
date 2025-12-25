@@ -1,6 +1,6 @@
 {meta: title Little Bit Of The Rain}
 {meta: artist Crystal Gayle}
-{meta: writer Jack W. Routh}
+{meta: composer Jack W. Routh}
 
 {start_of_verse: Verse 1}
 [G]I'm not [D7]telling you [G]baby what to [D7]do with your [G]time 

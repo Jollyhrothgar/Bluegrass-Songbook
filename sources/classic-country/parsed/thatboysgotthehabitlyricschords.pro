@@ -1,6 +1,6 @@
 {meta: title That Boy's Got The Habit}
 {meta: artist Johnny Horton}
-{meta: writer Fred B. Horton}
+{meta: composer Fred B. Horton}
 
 {start_of_verse: Verse 1}
 [C]Me and my gal went to the woods to shoot a big fat [G7]rabbit

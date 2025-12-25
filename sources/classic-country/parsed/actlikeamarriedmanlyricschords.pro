@@ -1,6 +1,6 @@
 {meta: title Act Like A Married Man}
 {meta: artist Jean Shepard}
-{meta: writer Jim Odom}
+{meta: composer Jim Odom}
 
 {start_of_verse: Verse 1}
 [G]You say you want to take me out so [C]we can paint the town

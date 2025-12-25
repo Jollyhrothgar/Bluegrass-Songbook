@@ -1,6 +1,6 @@
 {meta: title Love Takes Care Of Me}
 {meta: artist Jack Greene}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [C]Cause your love [F]takes good care of [C]me

@@ -1,6 +1,6 @@
 {meta: title MacArthur's Hand}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [G]With high cheekbones and [C]dark sad eyes and [G]shaggy [D7]coarse black [G]hair

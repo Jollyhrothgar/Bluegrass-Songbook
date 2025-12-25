@@ -1,6 +1,6 @@
 {meta: title Southern Dixie Flyer}
 {meta: artist Marty Robbins}
-{meta: writer Joe Babcock}
+{meta: composer Joe Babcock}
 
 {start_of_verse: Verse 1}
 [C]At the station house one day was a lady old and gray

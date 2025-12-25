@@ -1,6 +1,6 @@
 {meta: title Taste Of Heaven}
 {meta: artist Jim Ed Brown}
-{meta: writer Jimmy Rule and David Briggs}
+{meta: composer Jimmy Rule and David Briggs}
 
 {start_of_verse: Verse 1}
 [C]Oh I [F]found the taste of heaven give me [G7]more

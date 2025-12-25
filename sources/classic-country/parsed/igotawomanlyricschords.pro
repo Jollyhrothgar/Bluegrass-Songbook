@@ -1,6 +1,6 @@
 {meta: title I Got a Woman}
 {meta: artist Elvis Presley}
-{meta: writer Ray Charles}
+{meta: composer Ray Charles}
 
 {start_of_verse: Verse 1}
 [C]Well I've got a woman way cross [G7]town

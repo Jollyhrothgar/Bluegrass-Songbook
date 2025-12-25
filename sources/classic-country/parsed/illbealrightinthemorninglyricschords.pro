@@ -1,6 +1,6 @@
 {meta: title I'll Be Alright In The Morning}
 {meta: artist Faron Young}
-{meta: writer Roy Drusky, Faron Young, Bob Stroud}
+{meta: composer Roy Drusky, Faron Young, Bob Stroud}
 
 {start_of_verse: Verse 1}
 [C]Oh to[G7]night I found myself forgetting [C]you

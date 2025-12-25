@@ -1,6 +1,6 @@
 {meta: title You Called Me Another Woman's Name}
 {meta: artist Norma Jean}
-{meta: writer Vic McAlpin and Lester Vanadore}
+{meta: composer Vic McAlpin and Lester Vanadore}
 
 {start_of_verse: Verse 1}
 [D7]Last night you called me another woman's [G]name

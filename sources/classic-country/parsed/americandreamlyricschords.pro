@@ -1,6 +1,6 @@
 {meta: title American Dream}
 {meta: artist Garth Brooks}
-{meta: writer Jenny Yates and Garth Brooks}
+{meta: composer Jenny Yates and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]And the [Am]oil fields fed our [C]family

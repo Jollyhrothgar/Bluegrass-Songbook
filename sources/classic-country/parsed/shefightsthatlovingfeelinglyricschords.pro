@@ -1,6 +1,6 @@
 {meta: title She Fights That Loving Feeling}
 {meta: artist Faron Young}
-{meta: writer Jack Adams}
+{meta: composer Jack Adams}
 
 {start_of_verse: Verse 1}
 [C]She is filled with mixed emotions

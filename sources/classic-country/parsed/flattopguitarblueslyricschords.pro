@@ -1,6 +1,6 @@
 {meta: title Flat Top Guitar Blues}
 {meta: artist Cowboy Copas}
-{meta: writer and recorded by Lloyd Copas}
+{meta: composer and recorded by Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [C]I went down to Nashville on a Saturday night

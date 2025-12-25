@@ -1,6 +1,6 @@
 {meta: title Without A Song}
 {meta: artist Willie Nelson}
-{meta: writer Billy Rose, Edward Eliscu, Vincent Youmans}
+{meta: composer Billy Rose, Edward Eliscu, Vincent Youmans}
 
 {start_of_verse: Verse 1}
 [G7]Without a [C]song the day would [F]never end

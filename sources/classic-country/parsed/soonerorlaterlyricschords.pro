@@ -1,6 +1,6 @@
 {meta: title Sooner Or Later}
 {meta: artist Bob Wills}
-{meta: writer Artie Glenn and Bob Wills}
+{meta: composer Artie Glenn and Bob Wills}
 
 {start_of_verse: Verse 1}
 [G]Sooner or [D7]later [G]you will [D7]fall for [G]someone

@@ -1,6 +1,6 @@
 {meta: title Holy Ghost Baptizer}
 {meta: artist Wanda Jackson}
-{meta: writer Maury Pigs}
+{meta: composer Maury Pigs}
 
 {start_of_verse: Verse 1}
 [C]I used to walk with the wicked

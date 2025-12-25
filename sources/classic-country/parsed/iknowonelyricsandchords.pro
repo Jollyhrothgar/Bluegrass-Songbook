@@ -1,6 +1,6 @@
 {meta: title I Know One}
 {meta: artist Charlie Pride}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]When All Your Loves Have Ended

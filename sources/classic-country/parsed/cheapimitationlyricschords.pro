@@ -1,6 +1,6 @@
 {meta: title Cheap Imitation}
 {meta: artist Mel Tillis}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [G]She was just another cheap [D7]imitation of [G]you

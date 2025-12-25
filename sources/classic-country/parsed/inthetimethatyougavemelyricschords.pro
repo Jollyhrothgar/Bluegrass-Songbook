@@ -1,6 +1,6 @@
 {meta: title In The Time That You Gave Me}
 {meta: artist Joey Feek}
-{meta: writer Dennis Morgan and Shawn Camp}
+{meta: composer Dennis Morgan and Shawn Camp}
 
 {start_of_verse: Verse 1}
 [C]In the time that You gave me 

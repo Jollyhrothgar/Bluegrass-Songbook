@@ -1,6 +1,6 @@
 {meta: title It Hurts To Know}
 {meta: artist The Osborne Brothers}
-{meta: writer Red Allen and Tommy Sutton}
+{meta: composer Red Allen and Tommy Sutton}
 
 {start_of_verse: Verse 1}
 [C]Today I'm here thinking about [G7]you

@@ -1,6 +1,6 @@
 {meta: title It’s Never Too Late}
 {meta: artist Stanley Brothers}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]Now darlin' I've tried I've never done wrong

@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Make It After All}
 {meta: artist Johnny Rodriguez}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]I've been done wrong I've been [G7]stepped on 

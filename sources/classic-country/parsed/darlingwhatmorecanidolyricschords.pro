@@ -1,6 +1,6 @@
 {meta: title Darling What More Can I Do}
 {meta: artist Hank Thompson}
-{meta: writer Gene Autry and Jenny Lou Carson}
+{meta: composer Gene Autry and Jenny Lou Carson}
 
 {start_of_verse: Verse 1}
 [G]You say that I'm unfair

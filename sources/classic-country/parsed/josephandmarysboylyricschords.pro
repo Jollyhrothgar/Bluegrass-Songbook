@@ -1,6 +1,6 @@
 {meta: title Joseph And Mary's Boy}
 {meta: artist Alabama}
-{meta: writer Don Cook and Keith Whitley}
+{meta: composer Don Cook and Keith Whitley}
 
 {start_of_verse: Verse 1}
 [C]Out here in the country there's [Em]magic in the air

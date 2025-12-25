@@ -1,6 +1,6 @@
 {meta: title If Love Was A Bottle Of Wine}
 {meta: artist Tommy Overstreet}
-{meta: writer Sterling Whipple}
+{meta: composer Sterling Whipple}
 
 {start_of_verse: Verse 1}
 [C]If love was a bottle of wine we'd be tryin' to buy [F]it

@@ -1,6 +1,6 @@
 {meta: title All The Good Is Gone}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Norro Wilson and Dottie Bruce}
+{meta: composer Norro Wilson and Dottie Bruce}
 
 {start_of_verse: Verse 1}
 [C]It was only yesterday  that I noticed a sudden [F]change

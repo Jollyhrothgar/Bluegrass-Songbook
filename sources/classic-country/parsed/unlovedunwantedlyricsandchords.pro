@@ -1,6 +1,6 @@
 {meta: title Unloved Unwanted}
 {meta: artist Ray Price}
-{meta: writer Wayne P. Walker and Irene Stanton}
+{meta: composer Wayne P. Walker and Irene Stanton}
 
 {start_of_verse: Verse 1}
 [C]Un-loved [G7]unwanted  [C]I've never been so [G7]blue

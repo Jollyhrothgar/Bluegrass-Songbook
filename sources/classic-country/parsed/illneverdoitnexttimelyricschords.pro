@@ -1,6 +1,6 @@
 {meta: title I'll Never Do It Next Time}
 {meta: artist Carl Smith}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G]I'll never [C]be [G]someone you'll see

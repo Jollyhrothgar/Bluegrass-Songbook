@@ -1,6 +1,6 @@
 {meta: title I've Got To Hurry Hurry Hurry}
 {meta: artist Ray Price}
-{meta: writer Louise Ulrich}
+{meta: composer Louise Ulrich}
 
 {start_of_verse: Verse 1}
 [C]Now I got the cutest baby that you ever did [C7]see

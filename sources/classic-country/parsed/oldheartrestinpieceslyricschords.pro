@@ -1,6 +1,6 @@
 {meta: title Old Heart Rest In Pieces}
 {meta: artist Charlie Pride}
-{meta: writer Bobby Crocker, Perry Jones, Roger West}
+{meta: composer Bobby Crocker, Perry Jones, Roger West}
 
 {start_of_verse: Verse 1}
 [C]You're like I'm here today to pay my last [F]respect

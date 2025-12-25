@@ -1,6 +1,6 @@
 {meta: title You've Got To Hide Your Love Away}
 {meta: artist Waylon Jennings}
-{meta: writer John Lennon and Paul McCartney}
+{meta: composer John Lennon and Paul McCartney}
 
 {start_of_verse: Verse 1}
 [G]Here I [D7]stand [C]hand in [G]hand [C]turnin' my face to the [F]wall[C]

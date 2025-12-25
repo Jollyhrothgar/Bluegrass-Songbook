@@ -1,6 +1,6 @@
 {meta: title All Fall Down}
 {meta: artist Emmylou Harris}
-{meta: writer Harlan Howard and Ron Peterson}
+{meta: composer Harlan Howard and Ron Peterson}
 
 {start_of_verse: Verse 1}
 [C]Castles tall  houses [F]small

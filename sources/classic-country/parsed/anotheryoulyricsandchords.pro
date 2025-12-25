@@ -1,6 +1,6 @@
 {meta: title Another You}
 {meta: artist Loretta Lynn}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [G]His eyes may be a deeper blue but they [C]remind me so much of you

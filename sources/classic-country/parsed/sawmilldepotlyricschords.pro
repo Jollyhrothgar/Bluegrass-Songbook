@@ -1,6 +1,6 @@
 {meta: title Sawmill Depot}
 {meta: artist Jack Greene}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Your daddy caught us [F]at the old sawmill [C]depot

@@ -1,6 +1,6 @@
 {meta: title Blame It On Mexico}
 {meta: artist George Strait}
-{meta: writer Darrell Statler}
+{meta: composer Darrell Statler}
 
 {start_of_verse: Verse 1}
 [F]In a [C]bar in [Am]Acuna called Ma [F]Crosby's

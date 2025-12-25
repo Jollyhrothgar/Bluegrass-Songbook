@@ -1,6 +1,6 @@
 {meta: title Still Holding On}
 {meta: artist Clint Black}
-{meta: writer Matraca Berg, Marty Stuart, Clint Black}
+{meta: composer Matraca Berg, Marty Stuart, Clint Black}
 
 {start_of_verse: Verse 1}
 [G]There's [Em]something out there [C]left for you [G]but it's not me

@@ -1,6 +1,6 @@
 {meta: title I'll Be Alright Tomorrow}
 {meta: artist Mac Wiseman}
-{meta: writer Bobby Osborne and Pete Goble}
+{meta: composer Bobby Osborne and Pete Goble}
 
 {start_of_verse: Verse 1}
 [G]I may be a little bit tired tonight

@@ -1,6 +1,6 @@
 {meta: title Arizona Whiz}
 {meta: artist Cal Smith}
-{meta: writer Max D. Barnes and Harlan Sander}
+{meta: composer Max D. Barnes and Harlan Sander}
 
 {start_of_verse: Verse 1}
 [G]The campus crowd was noisy as [C]we waited for the [G]show

@@ -1,6 +1,6 @@
 {meta: title I Only Want You For Christmas}
 {meta: artist Alan Jackson}
-{meta: writer Tim Nichols and Zack Turner}
+{meta: composer Tim Nichols and Zack Turner}
 
 {start_of_verse: Verse 1}
 [F]The snow is falling it's Christmas [C]Eve

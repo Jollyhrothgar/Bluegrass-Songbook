@@ -1,6 +1,6 @@
 {meta: title My Second Home}
 {meta: artist Tracy Lawrence}
-{meta: writer Paul Nelson, Kenny Beard, Tracy Lawrence}
+{meta: composer Paul Nelson, Kenny Beard, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [G]There's a honky tonk on the edge of town 

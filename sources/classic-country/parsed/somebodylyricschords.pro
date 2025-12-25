@@ -1,6 +1,6 @@
 {meta: title Somebody}
 {meta: artist Rhonda Vincent}
-{meta: writer Al Anderson and Robert E. Orrall}
+{meta: composer Al Anderson and Robert E. Orrall}
 
 {start_of_verse: Verse 1}
 [C]You think [F]love is nothing but [C]trouble

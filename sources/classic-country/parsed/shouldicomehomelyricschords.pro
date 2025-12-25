@@ -1,6 +1,6 @@
 {meta: title Should I Come Home (or Should I Go Crazy)}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [G]I wonder if you've [C]had the time it [D7]takes to think it [G]over

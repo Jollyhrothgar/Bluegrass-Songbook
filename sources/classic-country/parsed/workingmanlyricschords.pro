@@ -1,6 +1,6 @@
 {meta: title Working Man}
 {meta: artist John Conlee}
-{meta: writer Billy Ray Reymnolds and Jim Hurt}
+{meta: composer Billy Ray Reymnolds and Jim Hurt}
 
 {start_of_verse: Verse 1}
 [C]Stumble from my good warm bed 

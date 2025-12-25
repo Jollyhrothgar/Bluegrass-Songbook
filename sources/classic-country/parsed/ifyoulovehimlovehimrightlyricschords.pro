@@ -1,6 +1,6 @@
 {meta: title If You Love Him Love Him Right}
 {meta: artist Tammy Wynette}
-{meta: writer Carmol Taylor and Quinton Claunch}
+{meta: composer Carmol Taylor and Quinton Claunch}
 
 {start_of_verse: Verse 1}
 [G]So many times I've [D7]heard a man's [G]trouble

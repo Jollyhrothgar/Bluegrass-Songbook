@@ -1,6 +1,6 @@
 {meta: title Where He Leads Me I Will Follow}
 {meta: artist Donna Fargo}
-{meta: writer John S. Norris and E.W. Blandy}
+{meta: composer John S. Norris and E.W. Blandy}
 
 {start_of_verse: Verse 1}
 [C]I can hear my [F]Savior [G7]calling

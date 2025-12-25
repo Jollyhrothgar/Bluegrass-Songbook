@@ -1,6 +1,6 @@
 {meta: title Tender Years}
 {meta: artist George Jones}
-{meta: writer Darrell Edwards}
+{meta: composer Darrell Edwards}
 
 {start_of_verse: Verse 1}
 [C]You keep saying you love him

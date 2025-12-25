@@ -1,6 +1,6 @@
 {meta: title There's A Big Wheel}
 {meta: artist Dottie West}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [C]There's a [F]big wheel there's a [C]big wheel 

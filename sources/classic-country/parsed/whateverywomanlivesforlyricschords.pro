@@ -1,6 +1,6 @@
 {meta: title What Every Woman Lives For}
 {meta: artist Elvis Presley}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [C]She may say she [G7]needs [Am]fancy bangles and beads[G7]

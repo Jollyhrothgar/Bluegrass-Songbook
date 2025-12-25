@@ -1,6 +1,6 @@
 {meta: title All My Woman Asks}
 {meta: artist Jim Ed Brown}
-{meta: writer Willis Graham}
+{meta: composer Willis Graham}
 
 {start_of_verse: Verse 1}
 [C]All my woman [Am]asks is that I [D7]love her[G7]

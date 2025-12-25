@@ -1,6 +1,6 @@
 {meta: title Little Robin}
 {meta: artist Marty Robbins}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]Little robin are you ever lonely and [D7]blue

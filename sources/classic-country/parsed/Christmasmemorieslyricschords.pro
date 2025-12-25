@@ -1,6 +1,6 @@
 {meta: title Christmas Memories}
 {meta: artist Alabama}
-{meta: writer Randy Albright, John Grenebaum and Becky Hobbs}
+{meta: composer Randy Albright, John Grenebaum and Becky Hobbs}
 
 {start_of_verse: Verse 1}
 [C]There's a blanket of snow coverin' [Dm]up the old road 

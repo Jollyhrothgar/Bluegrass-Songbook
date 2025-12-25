@@ -1,6 +1,6 @@
 {meta: title The Girl Of My Best Friend}
 {meta: artist Elvis Presley}
-{meta: writer Beverly Ross and Sam Bobrick}
+{meta: composer Beverly Ross and Sam Bobrick}
 
 {start_of_verse: Verse 1}
 [C]The way she [Am]walks [C]the way she [Am]talks

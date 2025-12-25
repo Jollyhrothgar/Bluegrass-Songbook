@@ -1,6 +1,6 @@
 {meta: title Big Big Love}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart and Ray Carroll}
+{meta: composer Wynn Stewart and Ray Carroll}
 
 {start_of_verse: Verse 1}
 [C]Well can't you tell my love's a growing 

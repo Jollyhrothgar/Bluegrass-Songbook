@@ -1,6 +1,6 @@
 {meta: title Is That What You'd Have Me Do}
 {meta: artist The Statler Brothers}
-{meta: writer Lew DeWitt}
+{meta: composer Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [C]Cherish a [G7]memory that [C]I hold divine

@@ -1,6 +1,6 @@
 {meta: title Between This Time And The Next Time}
 {meta: artist Gene Watson}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]Let's not waste a [G7]minute of each [C]other 

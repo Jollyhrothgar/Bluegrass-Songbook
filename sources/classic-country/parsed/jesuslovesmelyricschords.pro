@@ -1,6 +1,6 @@
 {meta: title Jesus Loves Me}
 {meta: artist Brenda Lee}
-{meta: writer William B. Bradbury, Anna B. Warner, Reba Ware}
+{meta: composer William B. Bradbury, Anna B. Warner, Reba Ware}
 
 {start_of_verse: Verse 1}
 [C]Jesus loves me this I know

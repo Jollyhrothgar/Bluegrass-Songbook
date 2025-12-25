@@ -1,6 +1,6 @@
 {meta: title Living For The Night}
 {meta: artist George Strait}
-{meta: writer Dean Dillon, Bubba Strait, George Strait}
+{meta: composer Dean Dillon, Bubba Strait, George Strait}
 
 {start_of_verse: Verse 1}
 [C]Everyday is a lifetime without [Em]you

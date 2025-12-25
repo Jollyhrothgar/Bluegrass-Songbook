@@ -1,6 +1,6 @@
 {meta: title My One Desire}
 {meta: artist Ricky Nelson}
-{meta: writer Dorsey Burnette}
+{meta: composer Dorsey Burnette}
 
 {start_of_verse: Verse 1}
 [G]I wanna walk with ya talk with ya all about love

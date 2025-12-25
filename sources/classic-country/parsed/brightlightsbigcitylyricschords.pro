@@ -1,6 +1,6 @@
 {meta: title Bright Lights Big City}
 {meta: artist Sonny James}
-{meta: writer Jimmy Reed}
+{meta: composer Jimmy Reed}
 
 {start_of_verse: Verse 1}
 [C]Bright lights big city gone to my baby's head

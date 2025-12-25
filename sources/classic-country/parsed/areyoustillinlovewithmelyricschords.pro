@@ -1,6 +1,6 @@
 {meta: title Are You Still In Love With Me}
 {meta: artist Anne Murray}
-{meta: writer K.C. Porter, Mark Spiro, Jack White}
+{meta: composer K.C. Porter, Mark Spiro, Jack White}
 
 {start_of_verse: Verse 1}
 [C]I can hear the cars out on the [G7]street

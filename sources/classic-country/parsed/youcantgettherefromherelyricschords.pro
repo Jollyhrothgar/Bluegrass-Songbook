@@ -1,6 +1,6 @@
 {meta: title You Can't Get There From Here}
 {meta: artist Charlie Walker}
-{meta: writer Eddie Hazlewood}
+{meta: composer Eddie Hazlewood}
 
 {start_of_verse: Verse 1}
 [C]Now if you're looking for a honey

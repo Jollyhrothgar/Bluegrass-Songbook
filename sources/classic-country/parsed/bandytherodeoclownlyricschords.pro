@@ -1,6 +1,6 @@
 {meta: title Bandy The Rodeo Clown}
 {meta: artist Moe Bandy}
-{meta: writer Lefty Frizzell}
+{meta: composer Lefty Frizzell}
 
 {start_of_verse: Verse 1}
 [G]Who was once a bull hooking son of a [Am]gun                  

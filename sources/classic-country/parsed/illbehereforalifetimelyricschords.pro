@@ -1,6 +1,6 @@
 {meta: title I'll Be Here For A Lifetime}
 {meta: artist Ferlin Husky}
-{meta: writer Ken Rogers}
+{meta: composer Ken Rogers}
 
 {start_of_verse: Verse 1}
 [C]I’m gonna be here fer a lifetime if I [F]live that [C]long

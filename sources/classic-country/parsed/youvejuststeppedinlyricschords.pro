@@ -1,6 +1,6 @@
 {meta: title You've Just Stepped In}
 {meta: artist Loretta Lynn}
-{meta: writer Don Trowbridge}
+{meta: composer Don Trowbridge}
 
 {start_of_verse: Verse 1}
 [G]You've just stepped in from stepping out on me

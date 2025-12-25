@@ -1,6 +1,6 @@
 {meta: title Rounded Up In Glory}
 {meta: artist Gene Autry}
-{meta: writer Oscar Fox}
+{meta: composer Oscar Fox}
 
 {start_of_verse: Verse 1}
 [G]I've have been thinking [G7]today

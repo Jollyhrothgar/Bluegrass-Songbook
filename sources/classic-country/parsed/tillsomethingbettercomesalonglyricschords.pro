@@ -1,6 +1,6 @@
 {meta: title Till Something Better Comes Along}
 {meta: artist Charlie Walker}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [G]I don't believe she [Em]loves me as [G]much as [D7]she lets [G]on 

@@ -1,6 +1,6 @@
 {meta: title It's Time to Pay the Fiddler}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne and Walter Haynes}
+{meta: composer Don Wayne and Walter Haynes}
 
 {start_of_verse: Verse 1}
 [G]Well it's time to pay the fiddler

@@ -1,6 +1,6 @@
 {meta: title Mr. Peepers}
 {meta: artist Bill Anderson}
-{meta: writer Mark Raymond Charron}
+{meta: composer Mark Raymond Charron}
 
 {start_of_verse: Verse 1}
 [C]As she rode in the car behind a black limousine

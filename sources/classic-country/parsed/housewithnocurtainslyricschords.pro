@@ -1,6 +1,6 @@
 {meta: title House With No Curtains}
 {meta: artist Alan Jackson}
-{meta: writer Jim McBride and Alan Jackson}
+{meta: composer Jim McBride and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G7]We [C]still wear our [G7]rings we [C]still say I [F]love you

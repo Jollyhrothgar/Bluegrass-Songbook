@@ -1,6 +1,6 @@
 {meta: title You're So Close To Me}
 {meta: artist Johnny Cash}
-{meta: writer Mac Davis}
+{meta: composer Mac Davis}
 
 {start_of_verse: Verse 1}
 [G]You're so close to me

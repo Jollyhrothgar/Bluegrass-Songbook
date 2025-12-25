@@ -1,6 +1,6 @@
 {meta: title Among My Souvenirs}
 {meta: artist Marty Robbins}
-{meta: writer Edgar Leslie and Horatio Nicholls}
+{meta: composer Edgar Leslie and Horatio Nicholls}
 
 {start_of_verse: Verse 1}
 [G]There's nothing left for [Am]me 

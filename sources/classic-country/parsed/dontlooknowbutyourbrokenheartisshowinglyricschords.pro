@@ -1,6 +1,6 @@
 {meta: title Don't Look Now (But Your Broken Heart Is Showing)}
 {meta: artist Hank Thompson}
-{meta: writer Ernest Tubb}
+{meta: composer Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]He left you flat and crying too the way that you left me

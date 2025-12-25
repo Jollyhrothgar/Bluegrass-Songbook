@@ -1,6 +1,6 @@
 {meta: title Out Of A Honky Tonk}
 {meta: artist Charlie Walker}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Out of a honky tonk came the [C]girl I love

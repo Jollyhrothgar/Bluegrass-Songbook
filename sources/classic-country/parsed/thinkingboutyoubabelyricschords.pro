@@ -1,6 +1,6 @@
 {meta: title Thinking Bout You Babe}
 {meta: artist Billy Walker}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]I got into a barroom fight

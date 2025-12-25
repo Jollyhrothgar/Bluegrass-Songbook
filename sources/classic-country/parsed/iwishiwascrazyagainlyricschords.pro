@@ -1,6 +1,6 @@
 {meta: title I Wish I Was Crazy Again}
 {meta: artist Waylon Jennings}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]I met an old [D7]friend this [G]morning 

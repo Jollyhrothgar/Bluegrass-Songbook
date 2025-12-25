@@ -1,6 +1,6 @@
 {meta: title Back Pocket Money}
 {meta: artist Jimmy C. Newman}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [G]My baby won't give me no back pocket [D7]money

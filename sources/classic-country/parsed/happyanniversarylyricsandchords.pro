@@ -1,6 +1,6 @@
 {meta: title Happy Anniversary}
 {meta: artist Roy Rogers}
-{meta: writer Bill Eldridge and G. Stewart}
+{meta: composer Bill Eldridge and G. Stewart}
 
 {start_of_verse: Verse 1}
 [G]My darling [C]Happy [G][D7]Anniversary

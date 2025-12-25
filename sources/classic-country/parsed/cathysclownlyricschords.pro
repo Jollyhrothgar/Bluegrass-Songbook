@@ -1,6 +1,6 @@
 {meta: title Cathy's Clown}
 {meta: artist Everly Brothers}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [G]Don’t want your lo-o-o-o-ove [G][D7]any-more

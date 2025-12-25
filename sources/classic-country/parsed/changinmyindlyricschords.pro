@@ -1,6 +1,6 @@
 {meta: title Changin' My Mind}
 {meta: artist Bobby Bare}
-{meta: writer Al Gorgoni}
+{meta: composer Al Gorgoni}
 
 {start_of_verse: Verse 1}
 [C]I keep changin' [Dm]my [G7]mind

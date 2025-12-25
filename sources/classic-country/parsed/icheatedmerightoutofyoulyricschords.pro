@@ -1,6 +1,6 @@
 {meta: title I Cheated Me Right Out Of You}
 {meta: artist Moe Bandy}
-{meta: writer Bobby P. Parker}
+{meta: composer Bobby P. Parker}
 
 {start_of_verse: Verse 1}
 [G]After hundreds of lies  and fake [C]alibis

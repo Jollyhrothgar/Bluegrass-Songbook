@@ -1,6 +1,6 @@
 {meta: title Even If I Have To Steal}
 {meta: artist Mel Street}
-{meta: writer Ralph L. Carter}
+{meta: composer Ralph L. Carter}
 
 {start_of_verse: Verse 1}
 [C]Even if I have to [F]steal your love I [C]want you

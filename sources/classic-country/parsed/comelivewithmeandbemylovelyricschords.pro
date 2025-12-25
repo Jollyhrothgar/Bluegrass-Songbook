@@ -1,6 +1,6 @@
 {meta: title Come Live With Me And Be My Love}
 {meta: artist Eddy Arnold}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Come live with me [G7]and be my [C]love

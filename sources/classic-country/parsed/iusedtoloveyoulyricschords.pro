@@ -1,6 +1,6 @@
 {meta: title I Used To Love You}
 {meta: artist The Everly Brothers}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [G]I used to [C]love you [Am]not so long [G]ago

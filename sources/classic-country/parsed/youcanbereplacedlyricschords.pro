@@ -1,6 +1,6 @@
 {meta: title You Can Be Replaced}
 {meta: artist Tammy Wynette}
-{meta: writer Bill Anderson and Jerry Crutchfield}
+{meta: composer Bill Anderson and Jerry Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]Somebody new  is loving you

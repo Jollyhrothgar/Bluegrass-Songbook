@@ -1,6 +1,6 @@
 {meta: title I Will Miss You When You Go}
 {meta: artist Johnny Cash}
-{meta: writer Ernest Tubb and Henry Stewart}
+{meta: composer Ernest Tubb and Henry Stewart}
 
 {start_of_verse: Verse 1}
 [G]I will miss you when you go much [C]more than you'll ever [G]know

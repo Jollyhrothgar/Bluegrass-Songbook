@@ -1,6 +1,6 @@
 {meta: title It Takes A Lot Of Money}
 {meta: artist Wilburn Brothers}
-{meta: writer Bob Morris}
+{meta: composer Bob Morris}
 
 {start_of_verse: Verse 1}
 [C]Oh it takes a lot of money 

@@ -1,6 +1,6 @@
 {meta: title Jenny}
 {meta: artist Marty Robbins}
-{meta: writer Janis Ian}
+{meta: composer Janis Ian}
 
 {start_of_verse: Verse 1}
 [C]What are friends for [F]Jenny

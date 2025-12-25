@@ -1,6 +1,6 @@
 {meta: title The Storms Are On The Ocean}
 {meta: artist Connie Smith}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]I'm going [C]away for to [G]leave you love

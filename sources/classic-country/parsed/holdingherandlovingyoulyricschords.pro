@@ -1,6 +1,6 @@
 {meta: title Holding Her and Loving You}
 {meta: artist Earl Thomas Conley}
-{meta: writer Walt Aldridge and Tom Brasfield}
+{meta: composer Walt Aldridge and Tom Brasfield}
 
 {start_of_verse: Verse 1}
 [G]It's the third hardest [C]thing I'll ever [G]do  [C]

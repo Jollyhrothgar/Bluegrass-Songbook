@@ -1,6 +1,6 @@
 {meta: title Mommy For A Day}
 {meta: artist Kitty Wells}
-{meta: writer Harlan Howard and Buck Owens}
+{meta: composer Harlan Howard and Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]I go to see my little [F]girl each Sunday [C]afternoon

@@ -1,6 +1,6 @@
 {meta: title Sleeping Single In A Double Bed}
 {meta: artist Barbara Mandrell}
-{meta: writer Dennis W. Morgan and Rhonda Kye Fleming}
+{meta: composer Dennis W. Morgan and Rhonda Kye Fleming}
 
 {start_of_verse: Verse 1}
 [C]Sleeping single in a double bed

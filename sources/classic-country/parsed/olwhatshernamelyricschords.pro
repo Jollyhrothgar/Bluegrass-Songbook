@@ -1,6 +1,6 @@
 {meta: title Ol’ What's Her Name}
 {meta: artist Wynn Stewart}
-{meta: writer Fuzzy Owen}
+{meta: composer Fuzzy Owen}
 
 {start_of_verse: Verse 1}
 [G]Well I'll admit that there's been lots of [C]pretty girls I've [G]known

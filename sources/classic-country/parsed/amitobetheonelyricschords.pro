@@ -1,6 +1,6 @@
 {meta: title Am I To Be The One}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Otis Blackwell and Bobby Stevenson}
+{meta: composer Otis Blackwell and Bobby Stevenson}
 
 {start_of_verse: Verse 1}
 [G]Am I to be the one that your heart picks 

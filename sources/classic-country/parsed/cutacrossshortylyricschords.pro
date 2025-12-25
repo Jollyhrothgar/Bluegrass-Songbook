@@ -1,6 +1,6 @@
 {meta: title Cut Across Shorty}
 {meta: artist Carl Smith}
-{meta: writer Marijohn Wilkin and Wayne P. Walker}
+{meta: composer Marijohn Wilkin and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]A country boy named Shorty and a city boy named [C]Dan

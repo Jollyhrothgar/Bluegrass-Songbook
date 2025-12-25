@@ -1,6 +1,6 @@
 {meta: title I'm Falling In Love Tonight}
 {meta: artist Elvis Presley}
-{meta: writer Otis Blackwell and Winfield Scott}
+{meta: composer Otis Blackwell and Winfield Scott}
 
 {start_of_verse: Verse 1}
 [G]I'm falling in [C]love [G]tonight  [G7]somehow I [C]know

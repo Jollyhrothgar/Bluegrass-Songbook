@@ -1,6 +1,6 @@
 {meta: title Two Separate Bar Stools}
 {meta: artist Wanda Jackson}
-{meta: writer Billy Graham}
+{meta: composer Billy Graham}
 
 {start_of_verse: Verse 1}
 [G]Two lonely people drinking [C]alone 

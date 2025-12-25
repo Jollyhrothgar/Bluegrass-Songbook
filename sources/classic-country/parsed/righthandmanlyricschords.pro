@@ -1,6 +1,6 @@
 {meta: title Right Hand Man}
 {meta: artist Eddy Raven}
-{meta: writer Gary Scruggs}
+{meta: composer Gary Scruggs}
 
 {start_of_verse: Verse 1}
 [G]Johnny gave [D7]Susan a [G]wedding band 

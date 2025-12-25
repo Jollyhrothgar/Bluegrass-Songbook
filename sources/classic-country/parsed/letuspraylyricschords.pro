@@ -1,6 +1,6 @@
 {meta: title Let Us Pray}
 {meta: artist Elvis Presley}
-{meta: writer Buddy Kaye and Ben Weisman}
+{meta: composer Buddy Kaye and Ben Weisman}
 
 {start_of_verse: Verse 1}
 [C]Come praise the Lord for He is [F]good

@@ -1,6 +1,6 @@
 {meta: title Baby You're Something}
 {meta: artist Johnny Rodriguez}
-{meta: writer Curly Putman, Don Cook, Rafe VanHoy}
+{meta: composer Curly Putman, Don Cook, Rafe VanHoy}
 
 {start_of_verse: Verse 1}
 [C]You ask me why I'm not [G7]falling for you

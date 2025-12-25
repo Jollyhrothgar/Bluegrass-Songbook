@@ -1,6 +1,6 @@
 {meta: title Don't Pay The Ransom}
 {meta: artist Nat Stuckey}
-{meta: writer Dalton Roberts and Jack Shoemake}
+{meta: composer Dalton Roberts and Jack Shoemake}
 
 {start_of_verse: Verse 1}
 [G]Last night I stopped off for a beer [C]on my way home

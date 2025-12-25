@@ -1,6 +1,6 @@
 {meta: title Old Weakness (Coming On Strong)}
 {meta: artist Tanya Tucker}
-{meta: writer Bob DiPiero and Gary Nicholson}
+{meta: composer Bob DiPiero and Gary Nicholson}
 
 {start_of_verse: Verse 1}
 [G]Two in the morning too hot to sleep

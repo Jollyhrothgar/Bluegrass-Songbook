@@ -1,6 +1,6 @@
 {meta: title Looking For Tomorrow}
 {meta: artist Mel Tillis}
-{meta: writer Billy Arr and David Allds}
+{meta: composer Billy Arr and David Allds}
 
 {start_of_verse: Verse 1}
 [G]I've tried so hard to get you off my [C]mind

@@ -1,6 +1,6 @@
 {meta: title Doin’ The Lovers Leap Lyrics Chords}
 {meta: artist Webb Pierce}
-{meta: writer Lee Emerson and Webb Pierce}
+{meta: composer Lee Emerson and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]One two  [D7]three four  [G]it all started in [D7]Baltimore

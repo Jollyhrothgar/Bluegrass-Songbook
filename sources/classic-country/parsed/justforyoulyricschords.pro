@@ -1,6 +1,6 @@
 {meta: title Just For You}
 {meta: artist Wanda Jackson}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]I gave up all my friends just for [D7]you

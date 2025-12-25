@@ -1,6 +1,6 @@
 {meta: title The First In Line}
 {meta: artist the Everly Brothers}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [C]They say that [G]you have [D7]found a [G]love

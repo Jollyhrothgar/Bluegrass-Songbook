@@ -1,6 +1,6 @@
 {meta: title Bye Bye Baby}
 {meta: artist Jimmy Dean}
-{meta: writer Leo Robin and Jule Styne}
+{meta: composer Leo Robin and Jule Styne}
 
 {start_of_verse: Verse 1}
 [C]Bye bye [G7]baby [F]bye [C]bye 

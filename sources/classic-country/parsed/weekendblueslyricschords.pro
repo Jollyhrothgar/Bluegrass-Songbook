@@ -1,6 +1,6 @@
 {meta: title Weekend Blues}
 {meta: artist Jimmy Dean}
-{meta: writer Steven Harvey and Martin Seligson}
+{meta: composer Steven Harvey and Martin Seligson}
 
 {start_of_verse: Verse 1}
 [G]My Friday nights are lonely

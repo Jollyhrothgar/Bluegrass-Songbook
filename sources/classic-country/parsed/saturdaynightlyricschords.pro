@@ -1,6 +1,6 @@
 {meta: title Saturday Night}
 {meta: artist Webb Pierce}
-{meta: writer Sue Brewer, Max T. Powell, Michael Webb Pierce}
+{meta: composer Sue Brewer, Max T. Powell, Michael Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]We’re gonna do the [D7]town come Saturday [G]night

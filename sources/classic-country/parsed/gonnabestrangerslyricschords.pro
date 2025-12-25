@@ -1,6 +1,6 @@
 {meta: title Gonna Be Strangers}
 {meta: artist Ernest Tubb}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]All the love you promised would be mine [F]forever

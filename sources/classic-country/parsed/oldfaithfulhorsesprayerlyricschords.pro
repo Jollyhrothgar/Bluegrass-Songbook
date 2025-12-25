@@ -1,6 +1,6 @@
 {meta: title Old Faithful (Horse's Prayer)}
 {meta: artist Eddy Arnold}
-{meta: writer Michael Carr and Jimmy Kennedy}
+{meta: composer Michael Carr and Jimmy Kennedy}
 
 {start_of_verse: Verse 1}
 [C]Old faithful we [F]rode the range [C]together

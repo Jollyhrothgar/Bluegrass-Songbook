@@ -1,6 +1,6 @@
 {meta: title Cornbread And Buttermilk}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Roland Johnson and Earl Nunn}
+{meta: composer Roland Johnson and Earl Nunn}
 
 {start_of_verse: Verse 1}
 [G]When you was just a little boy remember how your ma

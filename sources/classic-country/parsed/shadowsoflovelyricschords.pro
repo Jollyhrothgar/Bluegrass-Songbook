@@ -1,6 +1,6 @@
 {meta: title Shadows Of Love}
 {meta: artist Tommy Overstreet}
-{meta: writer Wayland Holyfield}
+{meta: composer Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]Shadows [Am]   I'm standing in the [C]shadows [Am]

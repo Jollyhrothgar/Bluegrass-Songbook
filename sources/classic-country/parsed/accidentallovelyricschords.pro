@@ -1,6 +1,6 @@
 {meta: title Accidental Love}
 {meta: artist Mel Street}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [C]I'd say my meeting her was [F]accidental love

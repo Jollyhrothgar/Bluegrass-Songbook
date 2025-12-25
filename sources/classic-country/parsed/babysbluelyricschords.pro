@@ -1,6 +1,6 @@
 {meta: title Baby's Blue}
 {meta: artist Ferlin Husky}
-{meta: writer Rory Bourke and Gayle Barnhill}
+{meta: composer Rory Bourke and Gayle Barnhill}
 
 {start_of_verse: Verse 1}
 [C]Baby's blue [F]eyes baby's blue [C]gown

@@ -1,6 +1,6 @@
 {meta: title Go On}
 {meta: artist Patty Loveless}
-{meta: writer Roger Murrah and Patty Loveless}
+{meta: composer Roger Murrah and Patty Loveless}
 
 {start_of_verse: Verse 1}
 [C]Maybe in time [G7]it'll get [C]easier

@@ -1,6 +1,6 @@
 {meta: title Behind This Last Goodbye}
 {meta: artist Lorrie Morgan}
-{meta: writer Gerald Smith and Charles Harter}
+{meta: composer Gerald Smith and Charles Harter}
 
 {start_of_verse: Verse 1}
 [G]With a gentle hand he sweeps a strand of [D7]hair 

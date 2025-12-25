@@ -1,6 +1,6 @@
 {meta: title I'll Step Aside}
 {meta: artist Marty Robbins}
-{meta: writer Johnny Bond}
+{meta: composer Johnny Bond}
 
 {start_of_verse: Verse 1}
 [C]I'll [G7]step [C]aside for you if you [C7]don't want [F]me

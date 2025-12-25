@@ -1,6 +1,6 @@
 {meta: title Never Alone}
 {meta: artist Wilburn Brothers}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [C]Never [G7]alone but always [C]lonely

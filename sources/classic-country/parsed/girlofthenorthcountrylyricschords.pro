@@ -1,6 +1,6 @@
 {meta: title Girl Of The North Country}
 {meta: artist The Country Gentlemen}
-{meta: writer Bob Dylan}
+{meta: composer Bob Dylan}
 
 {start_of_verse: Verse 1}
 [C]If you're travelin' in the [F]north country [C]fair

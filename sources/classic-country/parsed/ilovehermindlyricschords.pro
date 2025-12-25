@@ -1,6 +1,6 @@
 {meta: title I Love Her Mind}
 {meta: artist The Bellamy Brothers}
-{meta: writer David M. Bellamy}
+{meta: composer David M. Bellamy}
 
 {start_of_verse: Verse 1}
 [G]Forget about her eyes that [C]dance around like [D7]diamonds in the [G]night [C]  [D7]

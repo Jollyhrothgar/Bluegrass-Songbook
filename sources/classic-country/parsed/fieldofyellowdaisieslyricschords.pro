@@ -1,6 +1,6 @@
 {meta: title Field Of Yellow Daisies}
 {meta: artist Charlie Rich}
-{meta: writer Margaret Rich}
+{meta: composer Margaret Rich}
 
 {start_of_verse: Verse 1}
 [C]We met in a [Dm]field of yellow [Dm][C]daisies 

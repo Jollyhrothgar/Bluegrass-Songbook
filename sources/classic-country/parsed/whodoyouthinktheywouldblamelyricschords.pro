@@ -1,6 +1,6 @@
 {meta: title Who Do You Think They Would Blame}
 {meta: artist Dusty Owens}
-{meta: writer Bill Dee Staten}
+{meta: composer Bill Dee Staten}
 
 {start_of_verse: Verse 1}
 [C]If I told all your friends how you cheated on me

@@ -1,6 +1,6 @@
 {meta: title Bill Bailey Won’t You Please Come Home}
 {meta: artist Patsy Cline}
-{meta: writer Hughie Cannon}
+{meta: composer Hughie Cannon}
 
 {start_of_verse: Verse 1}
 [G]Won't you come home Bill Bailey  won't you come home

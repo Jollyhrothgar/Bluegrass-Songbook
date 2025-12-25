@@ -1,6 +1,6 @@
 {meta: title Who I Am}
 {meta: artist Alan Jackson}
-{meta: writer Harley Allen and Mel Besher}
+{meta: composer Harley Allen and Mel Besher}
 
 {start_of_verse: Verse 1}
 [C]Well I know you hate my drinking and the way I [F]talk some[C]times 

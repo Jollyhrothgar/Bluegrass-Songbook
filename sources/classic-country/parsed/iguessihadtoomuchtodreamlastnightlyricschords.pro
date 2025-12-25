@@ -1,6 +1,6 @@
 {meta: title I Guess I Had Too Much To Dream Last Night}
 {meta: artist Faron Young}
-{meta: writer Billy J. Moore}
+{meta: composer Billy J. Moore}
 
 {start_of_verse: Verse 1}
 [C]My eyes aren't seeing very well this [F]morning

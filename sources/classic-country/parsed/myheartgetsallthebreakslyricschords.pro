@@ -1,6 +1,6 @@
 {meta: title My Heart Gets All The Breaks}
 {meta: artist Wanda Jackson}
-{meta: writer Steve Karliski}
+{meta: composer Steve Karliski}
 
 {start_of_verse: Verse 1}
 [C]Just my heart's luck to be stuck with a [G7]fool like me

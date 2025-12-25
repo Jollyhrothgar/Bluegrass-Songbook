@@ -1,6 +1,6 @@
 {meta: title Don't Bother To Cry Lyrics and Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Bob Merrill}
+{meta: composer Bob Merrill}
 
 {start_of_verse: Verse 1}
 [C]Don’t bother to cry cause I ain’t [F]looking

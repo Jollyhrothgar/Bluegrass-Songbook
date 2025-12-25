@@ -1,6 +1,6 @@
 {meta: title Thicker Than Blood}
 {meta: artist Garth Brooks}
-{meta: writer Jenny Yates and Garth Brooks}
+{meta: composer Jenny Yates and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [F]She was [C]born in Kansas City [Am]raised in Arkansas

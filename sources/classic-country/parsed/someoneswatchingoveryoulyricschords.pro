@@ -1,6 +1,6 @@
 {meta: title Someone's Watching Over You}
 {meta: artist George Jones}
-{meta: writer J.P. Richardson}
+{meta: composer J.P. Richardson}
 
 {start_of_verse: Verse 1}
 [C](Someone who's [F]watching over [G7]you to[C]night)

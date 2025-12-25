@@ -1,6 +1,6 @@
 {meta: title When I Call Your Name}
 {meta: artist Vince Gill}
-{meta: writer Tim Dubois and Vince Gill}
+{meta: composer Tim Dubois and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]I rushed home from work like [F]I always [C]do

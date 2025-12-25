@@ -1,6 +1,6 @@
 {meta: title You're The Perfect Picture}
 {meta: artist Doug Supernaw}
-{meta: writer Bob McDill and Bucky E. Jones}
+{meta: composer Bob McDill and Bucky E. Jones}
 
 {start_of_verse: Verse 1}
 [G]Come on in close the door have I [C]seen you here before

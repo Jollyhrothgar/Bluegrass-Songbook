@@ -1,6 +1,6 @@
 {meta: title I Don't See What I Saw}
 {meta: artist Kitty Wells}
-{meta: writer William Baker}
+{meta: composer William Baker}
 
 {start_of_verse: Verse 1}
 [G]Not so long ago you were true as the [C]setting [G]sun

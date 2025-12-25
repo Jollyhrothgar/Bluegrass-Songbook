@@ -1,6 +1,6 @@
 {meta: title Glass Of Pride}
 {meta: artist Cal Smith}
-{meta: writer Joe Poovey}
+{meta: composer Joe Poovey}
 
 {start_of_verse: Verse 1}
 [C]I sit drinkin' in this [G7]tavern tryin' to [F]wash away the [C]pain

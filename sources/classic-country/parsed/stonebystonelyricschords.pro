@@ -1,6 +1,6 @@
 {meta: title Stone By Stone}
 {meta: artist Vernon Oxford}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]As night time falls these old four walls become a [G7]prison

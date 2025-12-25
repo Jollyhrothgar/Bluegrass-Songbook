@@ -1,6 +1,6 @@
 {meta: title Ole George}
 {meta: artist Leona Williams}
-{meta: writer David C. Kirby}
+{meta: composer David C. Kirby}
 
 {start_of_verse: Verse 1}
 [G]He was born somewhere down around Beaumont Texas

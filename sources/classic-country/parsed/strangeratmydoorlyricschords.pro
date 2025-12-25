@@ -1,6 +1,6 @@
 {meta: title Stranger At My Door}
 {meta: artist Anne Murray}
-{meta: writer Charlie Black, Kerry Chater, Rory M. Bourke}
+{meta: composer Charlie Black, Kerry Chater, Rory M. Bourke}
 
 {start_of_verse: Verse 1}
 [G]Well hello my old friend

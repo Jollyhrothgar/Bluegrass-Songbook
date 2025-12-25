@@ -1,6 +1,6 @@
 {meta: title Robe Of Calvary}
 {meta: artist Eddy Arnold}
-{meta: writer Kathleen Twomey, Fred White, Elaine Rivers}
+{meta: composer Kathleen Twomey, Fred White, Elaine Rivers}
 
 {start_of_verse: Verse 1}
 [G]His robe His [C]robe the [G]robe of [Em]Calva[D7]ry

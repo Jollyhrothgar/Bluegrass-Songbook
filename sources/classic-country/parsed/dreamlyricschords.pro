@@ -1,6 +1,6 @@
 {meta: title Dream}
 {meta: artist Roy Orbison}
-{meta: writer Johnny Mercer}
+{meta: composer Johnny Mercer}
 
 {start_of_verse: Verse 1}
 [C]Dream when you're feeling [B7]blue

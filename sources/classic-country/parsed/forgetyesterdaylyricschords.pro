@@ -1,6 +1,6 @@
 {meta: title Forget Yesterday}
 {meta: artist Vern Gosdin}
-{meta: writer Wayne Bradford}
+{meta: composer Wayne Bradford}
 
 {start_of_verse: Verse 1}
 [C]The hurt was deep my life [G7]was all in [C]pieces

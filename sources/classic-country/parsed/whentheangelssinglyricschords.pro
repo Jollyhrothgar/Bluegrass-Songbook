@@ -1,6 +1,6 @@
 {meta: title When The Angels Sing}
 {meta: artist Rhonda Vincent}
-{meta: writer Aubrey Noble, Darrin Vincent, Rhonda Vincent,}
+{meta: composer Aubrey Noble, Darrin Vincent, Rhonda Vincent,}
 
 {start_of_verse: Verse 1}
 [C]When love is faithful [F]strong and true

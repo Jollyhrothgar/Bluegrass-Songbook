@@ -1,6 +1,6 @@
 {meta: title If I'm A Fool For Loving You}
 {meta: artist Elvis Presley}
-{meta: writer Stan Kesler}
+{meta: composer Stan Kesler}
 
 {start_of_verse: Verse 1}
 [F]If I'm a fool for [C]loving you [G7]then that's just what I want to [C]be

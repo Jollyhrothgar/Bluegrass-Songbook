@@ -1,6 +1,6 @@
 {meta: title Sweethearts Again}
 {meta: artist The Osborne Brothers}
-{meta: writer Bob Gallion}
+{meta: composer Bob Gallion}
 
 {start_of_verse: Verse 1}
 [G]I'll never love another it's [C]true

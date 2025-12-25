@@ -1,6 +1,6 @@
 {meta: title Let's Give It Up Or Get It On}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [C]There's a new car in the driveway and some [F]money I don't [C]need

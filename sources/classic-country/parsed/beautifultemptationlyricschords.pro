@@ -1,6 +1,6 @@
 {meta: title Beautiful Temptation}
 {meta: artist Freddie Hart}
-{meta: writer Jim Foster}
+{meta: composer Jim Foster}
 
 {start_of_verse: Verse 1}
 [G]Beautiful temptation you're so [C]fine

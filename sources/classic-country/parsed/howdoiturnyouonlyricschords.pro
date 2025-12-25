@@ -1,6 +1,6 @@
 {meta: title How Do I Turn You On}
 {meta: artist Ronnie Milsap}
-{meta: writer Mike Reid and Robert Byrne}
+{meta: composer Mike Reid and Robert Byrne}
 
 {start_of_verse: Verse 1}
 [G]I'd like to be a fly on your wall

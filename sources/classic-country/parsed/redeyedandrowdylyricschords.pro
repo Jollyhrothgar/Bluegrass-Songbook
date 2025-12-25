@@ -1,6 +1,6 @@
 {meta: title Red Eyed And Rowdy}
 {meta: artist Jim Reeves}
-{meta: writer Jim Reeves and Tom Perryman}
+{meta: composer Jim Reeves and Tom Perryman}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna get red eyed and rowdy

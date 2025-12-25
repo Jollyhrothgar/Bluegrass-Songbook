@@ -1,6 +1,6 @@
 {meta: title Blue Love Lyrics and Chords}
 {meta: artist Hank Williams}
-{meta: writer Floyd Jenkins}
+{meta: composer Floyd Jenkins}
 
 {start_of_verse: Verse 1}
 [C]I've got a B-lue [G7]Love in my [C]heart

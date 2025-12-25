@@ -1,6 +1,6 @@
 {meta: title Just Enough To Start Me Dreamin'}
 {meta: artist Eddy Arnold}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]You started a [G7]flame [F]I can't drown

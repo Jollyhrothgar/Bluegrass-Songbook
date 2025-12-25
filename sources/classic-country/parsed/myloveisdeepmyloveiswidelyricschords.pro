@@ -1,6 +1,6 @@
 {meta: title My Love Is Deep My Love Is Wide}
 {meta: artist Ronnie Milsap}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]My love is [F]deep  [C]my love is [F]wide

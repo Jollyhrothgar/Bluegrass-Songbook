@@ -1,6 +1,6 @@
 {meta: title I Wanna Be There When The Lovin' Starts}
 {meta: artist Mel Street}
-{meta: writer Curly Putman, Sonny Throckmorton, Don Cook}
+{meta: composer Curly Putman, Sonny Throckmorton, Don Cook}
 
 {start_of_verse: Verse 1}
 [C]Somebody's gonna get love at my house [F]tonight

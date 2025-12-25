@@ -1,6 +1,6 @@
 {meta: title The Talking Walls}
 {meta: artist Jim Reeves}
-{meta: writer Mattie O'Neil}
+{meta: composer Mattie O'Neil}
 
 {start_of_verse: Verse 1}
 [G]When the shades of twilight close the [C]day

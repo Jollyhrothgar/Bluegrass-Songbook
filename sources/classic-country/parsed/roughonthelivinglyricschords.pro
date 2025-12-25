@@ -1,6 +1,6 @@
 {meta: title Rough On The Living}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]His picture was in [G7]all the [C]papers

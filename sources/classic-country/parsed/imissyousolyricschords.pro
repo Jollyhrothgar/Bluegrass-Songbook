@@ -1,6 +1,6 @@
 {meta: title I Miss You So}
 {meta: artist Mickey Gilley}
-{meta: writer Jimmy Henderson, Bertha Scott, Sid Robin}
+{meta: composer Jimmy Henderson, Bertha Scott, Sid Robin}
 
 {start_of_verse: Verse 1}
 [C]Those happy hours

@@ -1,6 +1,6 @@
 {meta: title Back In Your Arms Again}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Rusty Golden}
+{meta: composer Rusty Golden}
 
 {start_of_verse: Verse 1}
 [G7]The [Am]call that I [F]made [Em]tonight 

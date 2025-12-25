@@ -1,6 +1,6 @@
 {meta: title That's All She Needs To Hear}
 {meta: artist Moe Bandy}
-{meta: writer Blake Mevis, Bill Shore, Becky Hobbs}
+{meta: composer Blake Mevis, Bill Shore, Becky Hobbs}
 
 {start_of_verse: Verse 1}
 [C]She sat there all alone and [F]in the barroom [C]light

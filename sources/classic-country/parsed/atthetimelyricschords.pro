@@ -1,6 +1,6 @@
 {meta: title At The Time}
 {meta: artist Jean Shepard}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]I told him that I loved him cause I [C]loved him at the [G]time

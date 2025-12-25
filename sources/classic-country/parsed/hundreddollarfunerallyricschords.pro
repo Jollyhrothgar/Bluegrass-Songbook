@@ -1,6 +1,6 @@
 {meta: title Hundred Dollar Funeral}
 {meta: artist Porter Wagoner}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [G]With one nickel in his pocket and a pack of [C]cigarette

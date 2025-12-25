@@ -1,6 +1,6 @@
 {meta: title Let Me Be Your Teddy Bear}
 {meta: artist Elvis Presley}
-{meta: writer Kal Mann and Bernie Lowe}
+{meta: composer Kal Mann and Bernie Lowe}
 
 {start_of_verse: Verse 1}
 [C]Baby let me be your [F]loving Teddy [C]Bear

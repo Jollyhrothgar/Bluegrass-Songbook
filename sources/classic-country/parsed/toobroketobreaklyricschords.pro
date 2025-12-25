@@ -1,6 +1,6 @@
 {meta: title Too Broke To Break}
 {meta: artist Jean Shepard}
-{meta: writer Johnny Russell and Voni Morrison}
+{meta: composer Johnny Russell and Voni Morrison}
 
 {start_of_verse: Verse 1}
 [G]You're a telling everybody just exactly how it's gonna [D7]be

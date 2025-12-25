@@ -1,6 +1,6 @@
 {meta: title Lucille}
 {meta: artist Kenny Rogers}
-{meta: writer Roger Bowling and Hal Bynum}
+{meta: composer Roger Bowling and Hal Bynum}
 
 {start_of_verse: Verse 1}
 [G]In a bar in Toledo across from the depot

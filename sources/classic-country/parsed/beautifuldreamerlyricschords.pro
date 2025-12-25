@@ -1,6 +1,6 @@
 {meta: title Beautiful Dreamer}
 {meta: artist Roy Orbison}
-{meta: writer Stephen Foster}
+{meta: composer Stephen Foster}
 
 {start_of_verse: Verse 1}
 [C]Beautiful dreamer wake unto [Dm]me

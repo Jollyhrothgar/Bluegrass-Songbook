@@ -1,6 +1,6 @@
 {meta: title Just Can't Live That Fast}
 {meta: artist Lefty Frizzell}
-{meta: writer Joel Johnson and Lefty Frizzell}
+{meta: composer Joel Johnson and Lefty Frizzell}
 
 {start_of_verse: Verse 1}
 [C]Hey I was out last night started a fight

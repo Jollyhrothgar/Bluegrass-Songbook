@@ -1,6 +1,6 @@
 {meta: title Barred From Every Honky Tonk In Town}
 {meta: artist Wilburn Brothers}
-{meta: writer Tompall Glaser}
+{meta: composer Tompall Glaser}
 
 {start_of_verse: Verse 1}
 [G]When I have a couple drinks I lose my head and try to fight

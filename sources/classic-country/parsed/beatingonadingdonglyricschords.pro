@@ -1,6 +1,6 @@
 {meta: title Beating On A Ding Dong}
 {meta: artist Jim Reeves}
-{meta: writer Bob Shelton and Idell Shelton}
+{meta: composer Bob Shelton and Idell Shelton}
 
 {start_of_verse: Verse 1}
 [C]Beatin' on the ding dong all day [G7]long

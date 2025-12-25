@@ -1,6 +1,6 @@
 {meta: title Two Of A Kind Workin' On A Full House}
 {meta: artist Garth Brooks}
-{meta: writer Dennis Robbins, Bobby Boyd, Warren Haynes}
+{meta: composer Dennis Robbins, Bobby Boyd, Warren Haynes}
 
 {start_of_verse: Verse 1}
 [C]Hey she's my lady luck hey I'm her wild card man

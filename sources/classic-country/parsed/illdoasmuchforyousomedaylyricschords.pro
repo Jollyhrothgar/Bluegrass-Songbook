@@ -1,6 +1,6 @@
 {meta: title I'll Do As Much For You Someday}
 {meta: artist Slim Whitman}
-{meta: writer Steve Nelson and Ed G. Nelson}
+{meta: composer Steve Nelson and Ed G. Nelson}
 
 {start_of_verse: Verse 1}
 [G]Will you try and see my old sweetheart [C]who lives across the way

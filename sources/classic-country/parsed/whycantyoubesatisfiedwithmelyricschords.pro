@@ -1,6 +1,6 @@
 {meta: title Why Can't You Be Satisfied With Me}
 {meta: artist Carl Smith}
-{meta: writer Wayne P. Walker, Carl Perkins, Carl Mann}
+{meta: composer Wayne P. Walker, Carl Perkins, Carl Mann}
 
 {start_of_verse: Verse 1}
 [C]You’re a good girl that’s true 

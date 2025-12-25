@@ -1,6 +1,6 @@
 {meta: title There's Gotta Be Much More To Life Than You}
 {meta: artist Hank Williams Jr.}
-{meta: writer Steve Karliski}
+{meta: composer Steve Karliski}
 
 {start_of_verse: Verse 1}
 [C]I was born long [F]before I ever [C]met you

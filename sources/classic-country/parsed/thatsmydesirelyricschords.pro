@@ -1,6 +1,6 @@
 {meta: title That’s My Desire}
 {meta: artist Jim Reeves}
-{meta: writer Carroll Loveday and Helmy Kresa}
+{meta: composer Carroll Loveday and Helmy Kresa}
 
 {start_of_verse: Verse 1}
 [G]To spend one night with you in our old [D7]rendezvous

@@ -1,6 +1,6 @@
 {meta: title I Like To Hear ‘em Preaching}
 {meta: artist Jimmy Martin}
-{meta: writer Jimmy Martin and Paul Williams}
+{meta: composer Jimmy Martin and Paul Williams}
 
 {start_of_verse: Verse 1}
 [C]I like to hear ‘em preaching [F]I like hear ‘em [C]pray

@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Hang Out My Mind Today}
 {meta: artist Lefty Frizzell}
-{meta: writer Dallas Frazier and Darlene Shafer}
+{meta: composer Dallas Frazier and Darlene Shafer}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna hang out my [G7]mind and let it [C]dry

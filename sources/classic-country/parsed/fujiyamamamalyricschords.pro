@@ -1,6 +1,6 @@
 {meta: title Fujiyama Mama}
 {meta: artist Wanda Jackson}
-{meta: writer Earl Burrows}
+{meta: composer Earl Burrows}
 
 {start_of_verse: Verse 1}
 [G]I've been to Nagasaki Hiroshima [D7]too

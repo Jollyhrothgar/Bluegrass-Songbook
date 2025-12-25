@@ -1,6 +1,6 @@
 {meta: title Almost Home}
 {meta: artist Joe Diffie}
-{meta: writer Larry Williams and Johnny Slate}
+{meta: composer Larry Williams and Johnny Slate}
 
 {start_of_verse: Verse 1}
 [C]I just can’t remember  [G7]when he started slipping

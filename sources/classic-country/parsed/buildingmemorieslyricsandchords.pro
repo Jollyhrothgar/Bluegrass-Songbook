@@ -1,6 +1,6 @@
 {meta: title Building Memories}
 {meta: artist Sonny James}
-{meta: writer Arleigh E. Duff}
+{meta: composer Arleigh E. Duff}
 
 {start_of_verse: Verse 1}
 [C]Down every [F]step we [C]take 

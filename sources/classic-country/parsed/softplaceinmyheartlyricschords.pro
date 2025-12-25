@@ -1,6 +1,6 @@
 {meta: title Soft Place in My Heart}
 {meta: artist Buddy Holly}
-{meta: writer Bob Montgomery}
+{meta: composer Bob Montgomery}
 
 {start_of_verse: Verse 1}
 [C]I've got a [F]soft [C]place in my [G7]heart for you

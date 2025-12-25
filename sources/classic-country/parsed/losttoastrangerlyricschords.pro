@@ -1,6 +1,6 @@
 {meta: title Lost To A Stranger}
 {meta: artist Ricky Skaggs}
-{meta: writer Frankie Brown[3/4 time]}
+{meta: composer Frankie Brown[3/4 time]}
 
 {start_of_verse: Verse 1}
 [G]We went out one evening [C]my darling and [G]I

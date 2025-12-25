@@ -1,6 +1,6 @@
 {meta: title Gone Home}
 {meta: artist Ricky Skaggs}
-{meta: writer Bill Carlisle}
+{meta: composer Bill Carlisle}
 
 {start_of_verse: Verse 1}
 [G]All of my friends that I[C] loved yester[G]day

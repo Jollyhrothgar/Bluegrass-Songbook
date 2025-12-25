@@ -1,6 +1,6 @@
 {meta: title How Do You Fall In Love}
 {meta: artist Alabama}
-{meta: writer Randy Owen, Teddy Gentry, Greg Fowler}
+{meta: composer Randy Owen, Teddy Gentry, Greg Fowler}
 
 {start_of_verse: Verse 1}
 [C]How do you [G7]fall in [F]love 

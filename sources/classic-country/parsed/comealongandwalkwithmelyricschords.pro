@@ -1,6 +1,6 @@
 {meta: title Come Along And Walk With Me}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G]If you're weary from [C]climbing [G]mountains

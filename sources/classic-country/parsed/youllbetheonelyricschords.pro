@@ -1,6 +1,6 @@
 {meta: title You'll Be The One}
 {meta: artist Hank Thompson}
-{meta: writer Orville Proctor and Lyle Gaston}
+{meta: composer Orville Proctor and Lyle Gaston}
 
 {start_of_verse: Verse 1}
 [C]If I ever fall in love with someone you'll be the [G7]one

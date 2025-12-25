@@ -1,6 +1,6 @@
 {meta: title Surely Goodness And Mercy}
 {meta: artist The Blackwood Brothers}
-{meta: writer John W. Peterson and Alred B. Smith}
+{meta: composer John W. Peterson and Alred B. Smith}
 
 {start_of_verse: Verse 1}
 [C]Surely goodness and mercy shall follow me

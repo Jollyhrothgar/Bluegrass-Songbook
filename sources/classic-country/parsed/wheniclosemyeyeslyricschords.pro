@@ -1,6 +1,6 @@
 {meta: title When I Close My Eyes}
 {meta: artist Rhonda Vincent}
-{meta: writer Carol Annette Musick and Mark Alan Springer}
+{meta: composer Carol Annette Musick and Mark Alan Springer}
 
 {start_of_verse: Verse 1}
 [C]There's so many things I didn't say

@@ -1,6 +1,6 @@
 {meta: title Divorce Granted}
 {meta: artist Ernest Tubb}
-{meta: writer Charles E. Tebbetts and Dave Washington}
+{meta: composer Charles E. Tebbetts and Dave Washington}
 
 {start_of_verse: Verse 1}
 [G]In a court room all crowed with [D7]strangers there

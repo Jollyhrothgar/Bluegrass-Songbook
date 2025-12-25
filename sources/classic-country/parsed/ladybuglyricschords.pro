@@ -1,6 +1,6 @@
 {meta: title Lady Bug}
 {meta: artist Anne Murray}
-{meta: writer James Stein}
+{meta: composer James Stein}
 
 {start_of_verse: Verse 1}
 [C]Don't disturb the Lady [F]Bug

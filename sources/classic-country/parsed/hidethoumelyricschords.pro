@@ -1,6 +1,6 @@
 {meta: title Hide Thou Me}
 {meta: artist The Oak Ridge Boys}
-{meta: writer L.R. Tolbert and Theo Harris}
+{meta: composer L.R. Tolbert and Theo Harris}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I [G7]feel [C]discouraged

@@ -1,6 +1,6 @@
 {meta: title I Ain’t Her Cowboy Anymore}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Scotty Emerick}
+{meta: composer Dean Dillon and Scotty Emerick}
 
 {start_of_verse: Verse 1}
 [C]I pack my saddle throw it in that two horse trailer

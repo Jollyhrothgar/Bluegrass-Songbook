@@ -1,6 +1,6 @@
 {meta: title Texas Bein' Texas}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Richard Hampton}
+{meta: composer Red Steagall and Richard Hampton}
 
 {start_of_verse: Verse 1}
 [G]A golden sunrise brightens up an [C]ashen morning [Am]sky

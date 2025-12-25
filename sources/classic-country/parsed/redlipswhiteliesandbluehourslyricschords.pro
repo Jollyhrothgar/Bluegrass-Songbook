@@ -1,6 +1,6 @@
 {meta: title Red Lips White Lies And Blue Hours}
 {meta: artist Don Gibson}
-{meta: writer Don Bowman, Francis Dailey, Wallace Dailey}
+{meta: composer Don Bowman, Francis Dailey, Wallace Dailey}
 
 {start_of_verse: Verse 1}
 [C]Red lips white lies and blue [F]hours

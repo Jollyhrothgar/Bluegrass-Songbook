@@ -1,6 +1,6 @@
 {meta: title Amarillo By Morning}
 {meta: artist George Strait}
-{meta: writer Paul Fraser and Terry Stafford}
+{meta: composer Paul Fraser and Terry Stafford}
 
 {start_of_verse: Verse 1}
 [C]Amarillo by [Em]morning [F]up from San [C]Antone

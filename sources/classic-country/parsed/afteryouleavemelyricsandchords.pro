@@ -1,6 +1,6 @@
 {meta: title After You Leave Me}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Bonnie Owens}
+{meta: composer Buck Owens and Bonnie Owens}
 
 {start_of_verse: Verse 1}
 [C]After you leave me [C7]after you're [F]gone 

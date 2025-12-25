@@ -1,6 +1,6 @@
 {meta: title Memories}
 {meta: artist Buddy Holly}
-{meta: writer Bob Montgomery}
+{meta: composer Bob Montgomery}
 
 {start_of_verse: Verse 1}
 [C]You've left me alone [G7]with [C]memories

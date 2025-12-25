@@ -1,6 +1,6 @@
 {meta: title Satisfaction Guaranteed}
 {meta: artist Carl Smith}
-{meta: writer Kay Twomey, Ben Weisman, Fred Wise}
+{meta: composer Kay Twomey, Ben Weisman, Fred Wise}
 
 {start_of_verse: Verse 1}
 [C]The heart I got to offer is [G7]one you can’t refuse

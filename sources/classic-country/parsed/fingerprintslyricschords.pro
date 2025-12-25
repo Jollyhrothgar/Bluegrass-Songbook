@@ -1,6 +1,6 @@
 {meta: title Fingerprints}
 {meta: artist Patsy Cline}
-{meta: writer Donn Hecht, W.O. Fleener, W.S. Stevenson}
+{meta: composer Donn Hecht, W.O. Fleener, W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [D7]I feel the [G]fingerprints

@@ -1,6 +1,6 @@
 {meta: title Oh Maria}
 {meta: artist Johnny Duncan}
-{meta: writer Billy Sherrill and Ed Penney}
+{meta: composer Billy Sherrill and Ed Penney}
 
 {start_of_verse: Verse 1}
 [G]There's not much to do when you're travelin' through Eldo[D7]rado

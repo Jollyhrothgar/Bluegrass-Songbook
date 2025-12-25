@@ -1,6 +1,6 @@
 {meta: title Old Porch Swing}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen & Charlie Williams}
+{meta: composer Joe Allen & Charlie Williams}
 
 {start_of_verse: Verse 1}
 [C]Its hung there on the front porch

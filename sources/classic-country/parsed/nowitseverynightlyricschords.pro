@@ -1,6 +1,6 @@
 {meta: title Now It's Every Night}
 {meta: artist Norma Jean}
-{meta: writer Joe Hayes}
+{meta: composer Joe Hayes}
 
 {start_of_verse: Verse 1}
 [C]One night a week out on the town 

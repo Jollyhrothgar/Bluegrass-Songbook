@@ -1,6 +1,6 @@
 {meta: title I'm Standing At The End Of My World}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [C]I'm standing at the end of my [G7]world

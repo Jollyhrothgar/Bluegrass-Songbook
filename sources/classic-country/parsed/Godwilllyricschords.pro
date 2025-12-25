@@ -1,6 +1,6 @@
 {meta: title God Will}
 {meta: artist Connie Smith}
-{meta: writer John D. Loudermilk and Marijohn Wilkin}
+{meta: composer John D. Loudermilk and Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [C]God will walk with me down the [F]streets

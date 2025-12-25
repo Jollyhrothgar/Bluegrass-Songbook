@@ -1,6 +1,6 @@
 {meta: title Alone And Broke In Birmingham}
 {meta: artist Cal Smith}
-{meta: writer Jan Crutchfield and Jimmy Rule}
+{meta: composer Jan Crutchfield and Jimmy Rule}
 
 {start_of_verse: Verse 1}
 [C]Nobody knows how blue I am

@@ -1,6 +1,6 @@
 {meta: title I Can't Sleep With You}
 {meta: artist Norma Jean}
-{meta: writer Mike Kosser and Steve Pippin}
+{meta: composer Mike Kosser and Steve Pippin}
 
 {start_of_verse: Verse 1}
 [C]I can't [G]sleep with you  [C]I can't [G]sleep with you  [D7]on my [G]mind

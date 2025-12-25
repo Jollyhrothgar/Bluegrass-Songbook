@@ -1,6 +1,6 @@
 {meta: title The Highwaymen}
 {meta: artist Willie Nelson, Johnny Cash, Kris Kristofferson and Waylon Jennings}
-{meta: writer Jimmy Webb}
+{meta: composer Jimmy Webb}
 
 {start_of_verse: Verse 1}
 [Am]I was a [G7]highwayman along the [F]coach roads I did [Am]ride

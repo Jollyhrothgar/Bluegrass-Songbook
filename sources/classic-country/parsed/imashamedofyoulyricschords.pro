@@ -1,6 +1,6 @@
 {meta: title I'm Ashamed Of You}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]Heart I'm ashamed of you [F]lips I'm ashamed of you

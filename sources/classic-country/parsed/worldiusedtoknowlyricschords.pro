@@ -1,6 +1,6 @@
 {meta: title World I Used To Know}
 {meta: artist Eddy Arnold}
-{meta: writer Rod McKuen}
+{meta: composer Rod McKuen}
 
 {start_of_verse: Verse 1}
 [C]Some day some old familiar [Em]rain [F]

@@ -1,6 +1,6 @@
 {meta: title Where The Mountains Meet The Sky}
 {meta: artist Eddy Arnold}
-{meta: writer Aston Williams and Sammy Kaye}
+{meta: composer Aston Williams and Sammy Kaye}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna ride [F]ride [C]ride ride 

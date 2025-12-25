@@ -1,6 +1,6 @@
 {meta: title Hey Ring-A-Ding}
 {meta: artist Connie Francis}
-{meta: writer Eddie Curtis}
+{meta: composer Eddie Curtis}
 
 {start_of_verse: Verse 1}
 [G]Hey ring-a-ding [D7]what are you doing this [G]evening

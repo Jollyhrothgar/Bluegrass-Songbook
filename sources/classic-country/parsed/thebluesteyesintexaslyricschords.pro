@@ -1,6 +1,6 @@
 {meta: title The Bluest Eyes In Texas}
 {meta: artist Restless Heart}
-{meta: writer Tim DuBois, Dave Robbins, Van Stephenson}
+{meta: composer Tim DuBois, Dave Robbins, Van Stephenson}
 
 {start_of_verse: Verse 1}
 [G]The lonesome Texas sun was setting [C]low

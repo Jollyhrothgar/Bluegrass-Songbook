@@ -1,6 +1,6 @@
 {meta: title This Time I Almost Made It}
 {meta: artist Barbara Mandrell}
-{meta: writer Billy Sherrill}
+{meta: composer Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [G]This time I almost made it [E7]came so close to [Am]saying no

@@ -1,6 +1,6 @@
 {meta: title I Went Down A Beggar But I Came Up A Millionaire}
 {meta: artist Paul Williams}
-{meta: writer Gerald Sweatman}
+{meta: composer Gerald Sweatman}
 
 {start_of_verse: Verse 1}
 [C]I used to be a beggar I [F]had no silver or [C]gold 

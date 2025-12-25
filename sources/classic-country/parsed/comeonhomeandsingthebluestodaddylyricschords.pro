@@ -1,6 +1,6 @@
 {meta: title Come On Home And Sing The Blues To Daddy}
 {meta: artist Bobby Bare}
-{meta: writer Ray Corbin}
+{meta: composer Ray Corbin}
 
 {start_of_verse: Verse 1}
 [C]I hear say your new romance has [G7]faded

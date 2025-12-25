@@ -1,6 +1,6 @@
 {meta: title Someone Else's Tears}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Gerry House}
+{meta: composer Clint Black and Gerry House}
 
 {start_of_verse: Verse 1}
 [C]Here in the silence [G7]I can hear the truth[A#7]

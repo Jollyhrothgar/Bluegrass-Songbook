@@ -1,6 +1,6 @@
 {meta: title Bells Of Memory}
 {meta: artist Slim Whitman}
-{meta: writer Will Callahan and Lee Roberts}
+{meta: composer Will Callahan and Lee Roberts}
 
 {start_of_verse: Verse 1}
 [G]When I hear those bells [G7]of [C]memory

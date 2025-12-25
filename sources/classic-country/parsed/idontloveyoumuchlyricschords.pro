@@ -1,6 +1,6 @@
 {meta: title I Don't Love You Much}
 {meta: artist Emmylou Harris}
-{meta: writer Guy Clark}
+{meta: composer Guy Clark}
 
 {start_of_verse: Verse 1}
 [C]I don't love you much do I

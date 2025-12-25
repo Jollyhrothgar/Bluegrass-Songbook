@@ -1,6 +1,6 @@
 {meta: title The Love I Have For You}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Buddy Killen}
+{meta: composer Buddy Killen}
 
 {start_of_verse: Verse 1}
 The Love I Have For You

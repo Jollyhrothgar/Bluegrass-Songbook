@@ -1,6 +1,6 @@
 {meta: title Time To Bum Again}
 {meta: artist Waylon Jennings}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Woman you get meaner [C]every day

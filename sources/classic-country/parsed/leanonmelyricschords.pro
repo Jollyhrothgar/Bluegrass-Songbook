@@ -1,6 +1,6 @@
 {meta: title Lean on Me}
 {meta: artist Anne Murray}
-{meta: writer Bill}
+{meta: composer Bill}
 
 {start_of_verse: Verse 1}
 [C]Sometimes in our [F]lives

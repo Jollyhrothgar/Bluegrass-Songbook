@@ -1,6 +1,6 @@
 {meta: title Hold To God's Unchanging Hand}
 {meta: artist J.D. Crowe, Doyle Lawson, Paul Williams}
-{meta: writer Roy Acuff}
+{meta: composer Roy Acuff}
 
 {start_of_verse: Verse 1}
 [C]Time is filled with swift transition

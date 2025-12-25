@@ -1,6 +1,6 @@
 {meta: title That's A Sad Affair}
 {meta: artist Jim Reeves}
-{meta: writer Redd Stewart}
+{meta: composer Redd Stewart}
 
 {start_of_verse: Verse 1}
 [G]I know a boy who knows a girl and she is so in [D7]love

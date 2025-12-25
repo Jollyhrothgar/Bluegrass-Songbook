@@ -1,6 +1,6 @@
 {meta: title I Fell Off The Wagon}
 {meta: artist Vern Gosdin}
-{meta: writer Jody Emerson, William M. Emerson}
+{meta: composer Jody Emerson, William M. Emerson}
 
 {start_of_verse: Verse 1}
 [G]I hadn’t had a drop of nothing since I [D7]got that DU[G]I

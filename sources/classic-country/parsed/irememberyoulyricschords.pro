@@ -1,6 +1,6 @@
 {meta: title I Remember You Lyrics Chords}
 {meta: artist Slim Whitman}
-{meta: writer Johnny Mercer and Victor Shertzinger}
+{meta: composer Johnny Mercer and Victor Shertzinger}
 
 {start_of_verse: Verse 1}
 [G]I remember [F]you  you’re [G]the one who made my dreams come [C]true

@@ -1,6 +1,6 @@
 {meta: title If I Could Only Dance With You}
 {meta: artist Jim Glaser}
-{meta: writer Patrick J. McManus}
+{meta: composer Patrick J. McManus}
 
 {start_of_verse: Verse 1}
 [C]Never dreamed I’d see you around [F]this far from [G7]our hometown

@@ -1,6 +1,6 @@
 {meta: title I'll Never Have To Be Alone}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]One of these days yes I know I'm gonna find me a [G7]girl

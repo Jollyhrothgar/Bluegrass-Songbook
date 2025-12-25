@@ -1,6 +1,6 @@
 {meta: title I Can See Clearly Now}
 {meta: artist Anne Murray}
-{meta: writer Johnny Nash}
+{meta: composer Johnny Nash}
 
 {start_of_verse: Verse 1}
 [G]I can see [C]clearly now the [G]rain has is gone

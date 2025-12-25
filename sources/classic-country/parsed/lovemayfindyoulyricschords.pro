@@ -1,6 +1,6 @@
 {meta: title Love May Find You}
 {meta: artist Crystal Gayle}
-{meta: writer Wendy Waldman and Eric Kaz}
+{meta: composer Wendy Waldman and Eric Kaz}
 
 {start_of_verse: Verse 1}
 [Em]How can I trust this [D]love to the wind

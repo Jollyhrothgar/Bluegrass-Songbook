@@ -1,6 +1,6 @@
 {meta: title I Saw Him Walk Out Of The Sky}
 {meta: artist Doyle Lawson}
-{meta: writer Dee Gaskin}
+{meta: composer Dee Gaskin}
 
 {start_of_verse: Verse 1}
 [G]I’ve been searching so long for the words to describe 

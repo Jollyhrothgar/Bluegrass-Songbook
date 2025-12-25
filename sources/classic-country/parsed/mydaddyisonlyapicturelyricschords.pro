@@ -1,6 +1,6 @@
 {meta: title My Daddy Is Only A Picture}
 {meta: artist Eddy Arnold}
-{meta: writer Thomas C. Dilbeck}
+{meta: composer Thomas C. Dilbeck}
 
 {start_of_verse: Verse 1}
 [C]I asked a little[G7] boy to call his[C] daddy

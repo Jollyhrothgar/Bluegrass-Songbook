@@ -1,6 +1,6 @@
 {meta: title Teach Me How To Pray}
 {meta: artist Jim Reeves}
-{meta: writer Kathryn Twitty}
+{meta: composer Kathryn Twitty}
 
 {start_of_verse: Verse 1}
 ([F]Daddy my [C]dad[Am]dy [D7]teach me [G7]how to [C]pray)

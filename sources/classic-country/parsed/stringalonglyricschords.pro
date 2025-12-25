@@ -1,6 +1,6 @@
 {meta: title String Along}
 {meta: artist Ricky Nelson}
-{meta: writer Robert Glen Doyle and Jimmy Duncan}
+{meta: composer Robert Glen Doyle and Jimmy Duncan}
 
 {start_of_verse: Verse 1}
 [C]String [Am]along  [F]that's all I am [G7]is just your [C]string [Am]along

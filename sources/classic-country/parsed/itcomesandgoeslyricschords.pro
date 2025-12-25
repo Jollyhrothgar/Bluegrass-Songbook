@@ -1,6 +1,6 @@
 {meta: title It Comes And Goes}
 {meta: artist Eddy Arnold}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]Everybody asks if I still love you

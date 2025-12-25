@@ -1,6 +1,6 @@
 {meta: title Someday My Day Will Come}
 {meta: artist George Jones}
-{meta: writer Christopher C. Ryder,}
+{meta: composer Christopher C. Ryder,}
 
 {start_of_verse: Verse 1}
 [C]Someday my day will [F]come and I won't need a [C]thing at all

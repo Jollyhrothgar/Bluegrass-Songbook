@@ -1,6 +1,6 @@
 {meta: title Just Leave Me Alone}
 {meta: artist Eddy Raven}
-{meta: writer Sanger D. Shafer and Eddy Raven}
+{meta: composer Sanger D. Shafer and Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]I would wish for you what I [F]wish for my[C]self

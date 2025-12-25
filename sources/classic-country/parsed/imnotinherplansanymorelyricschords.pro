@@ -1,6 +1,6 @@
 {meta: title I'm Not In Her Plans Anymore}
 {meta: artist Carl Smith}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]It was nature’s plan for a [F]woman and a [C]man

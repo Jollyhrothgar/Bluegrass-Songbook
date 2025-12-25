@@ -1,6 +1,6 @@
 {meta: title Go On And Go}
 {meta: artist Loretta Lynn}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [D7]Why not [G]tell me that I'm [C]really losing [G]you

@@ -1,6 +1,6 @@
 {meta: title If I Never Get To Heaven}
 {meta: artist Eddy Arnold}
-{meta: writer Jenny Lou Carson and Roy Botkin}
+{meta: composer Jenny Lou Carson and Roy Botkin}
 
 {start_of_verse: Verse 1}
 [C]If I never get to heaven it will be for loving [D7]you

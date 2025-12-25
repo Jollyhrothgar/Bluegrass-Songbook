@@ -1,6 +1,6 @@
 {meta: title Sorrow In The Wind}
 {meta: artist Emmylou Harris}
-{meta: writer Jean Ritchie}
+{meta: composer Jean Ritchie}
 
 {start_of_verse: Verse 1}
 [G]I [D7]hear the soft wind [G]sighing 

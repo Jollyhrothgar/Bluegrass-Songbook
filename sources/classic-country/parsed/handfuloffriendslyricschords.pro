@@ -1,6 +1,6 @@
 {meta: title Handful Of Friends}
 {meta: artist Leroy Van Dyke}
-{meta: writer Don Carroll}
+{meta: composer Don Carroll}
 
 {start_of_verse: Verse 1}
 [Em]Our love has faded [C]away

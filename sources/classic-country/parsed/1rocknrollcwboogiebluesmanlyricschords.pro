@@ -1,6 +1,6 @@
 {meta: title #1 Rock 'N' Roll C & W Boogie Blues Man}
 {meta: artist Mickey Gilley}
-{meta: writer Tom Maberry}
+{meta: composer Tom Maberry}
 
 {start_of_verse: Verse 1}
 [G]Well I been around the country in a custom built bus

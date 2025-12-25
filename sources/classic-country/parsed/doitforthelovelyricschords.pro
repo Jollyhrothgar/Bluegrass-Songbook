@@ -1,6 +1,6 @@
 {meta: title Do It For The Love}
 {meta: artist Jack Greene}
-{meta: writer David Wills}
+{meta: composer David Wills}
 
 {start_of_verse: Verse 1}
 [C]She works in a café [F]for minimum [C]wage

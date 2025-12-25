@@ -1,6 +1,6 @@
 {meta: title I'll Always Wonder (But I'll Never Know)}
 {meta: artist Sonny James}
-{meta: writer Arlie Duff}
+{meta: composer Arlie Duff}
 
 {start_of_verse: Verse 1}
 [C]I'll always wonder [G7]but I'll never [C]know

@@ -1,6 +1,6 @@
 {meta: title Wind In The Wheel}
 {meta: artist Red Steagall}
-{meta: writer Dale Burson and Russell D. Steagall}
+{meta: composer Dale Burson and Russell D. Steagall}
 
 {start_of_verse: Verse 1}
 [G7]It's [C]beautiful [F]here in the [G7]canyon to[C]night

@@ -1,6 +1,6 @@
 {meta: title You are my flower}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer A. P. Carter}
+{meta: composer A. P. Carter}
 
 {start_of_verse: Verse 1}
 [G]When summertime is gone

@@ -1,6 +1,6 @@
 {meta: title Greener Than The Grass We Laid On}
 {meta: artist Tanya Tucker}
-{meta: writer David Alan Coe}
+{meta: composer David Alan Coe}
 
 {start_of_verse: Verse 1}
 [G]He painted quite a [D7]picture for the [C]girls in my home [G]town

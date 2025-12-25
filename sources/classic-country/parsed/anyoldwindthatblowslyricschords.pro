@@ -1,6 +1,6 @@
 {meta: title Any Old Wind That Blows}
 {meta: artist Johnny Cash}
-{meta: writer Dick Feller}
+{meta: composer Dick Feller}
 
 {start_of_verse: Verse 1}
 [C]Lord she's restless

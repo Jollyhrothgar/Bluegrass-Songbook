@@ -1,6 +1,6 @@
 {meta: title I Found You Just In Time}
 {meta: artist Lynn Anderson}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]I found you [Dm]just in [G7]time[F]

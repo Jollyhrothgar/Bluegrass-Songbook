@@ -1,6 +1,6 @@
 {meta: title Dear Lord Remember Me}
 {meta: artist Hank Snow}
-{meta: writer Myrtle Jackson}
+{meta: composer Myrtle Jackson}
 
 {start_of_verse: Verse 1}
 [G]I won't care how dark and drear my way may [D7]be 

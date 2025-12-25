@@ -1,6 +1,6 @@
 {meta: title Treasure Of Love}
 {meta: artist George Jones}
-{meta: writer J.P. Richardson and George Jones}
+{meta: composer J.P. Richardson and George Jones}
 
 {start_of_verse: Verse 1}
 [C]I've got a pocket full of [G7]pennies the [F]heart full of [C]gold

@@ -1,6 +1,6 @@
 {meta: title Kaw-liga}
 {meta: artist Charlie Pride}
-{meta: writer Hank Williams and Fred Rose}
+{meta: composer Hank Williams and Fred Rose}
 
 {start_of_verse: Verse 1}
 [Am]Kaw-liga was a wooden Indian standing by the door

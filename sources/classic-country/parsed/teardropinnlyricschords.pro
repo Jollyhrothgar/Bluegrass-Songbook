@@ -1,6 +1,6 @@
 {meta: title Teardrop Inn}
 {meta: artist Fastlane}
-{meta: writer Mike Wells}
+{meta: composer Mike Wells}
 
 {start_of_verse: Verse 1}
 [C]He told her he couldn't make it home for [Dm]dinner

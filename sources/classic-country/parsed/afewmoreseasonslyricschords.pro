@@ -1,6 +1,6 @@
 {meta: title A Few More Seasons}
 {meta: artist Ralph Stanley}
-{meta: writer Ralph Stanley}
+{meta: composer Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]Mother first was called to [C]heaven

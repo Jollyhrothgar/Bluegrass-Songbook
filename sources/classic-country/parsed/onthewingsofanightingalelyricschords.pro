@@ -1,6 +1,6 @@
 {meta: title On The Wings Of A Nightingale}
 {meta: artist Everly Brothers}
-{meta: writer Paul McCartney}
+{meta: composer Paul McCartney}
 
 {start_of_verse: Verse 1}
 [G]When I love I get a [D7]feeling

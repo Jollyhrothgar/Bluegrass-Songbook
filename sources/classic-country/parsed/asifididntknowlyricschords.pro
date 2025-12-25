@@ -1,6 +1,6 @@
 {meta: title As If I Didn't Know}
 {meta: artist Lee Greenwood}
-{meta: writer Mel Tillis and Hal Bynum}
+{meta: composer Mel Tillis and Hal Bynum}
 
 {start_of_verse: Verse 1}
 [C]I don't have to [F]read be[G7]tween the [C]lines

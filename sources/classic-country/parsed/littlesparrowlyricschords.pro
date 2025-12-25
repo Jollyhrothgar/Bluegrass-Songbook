@@ -1,6 +1,6 @@
 {meta: title Little Sparrow}
 {meta: artist Eddy Arnold}
-{meta: writer Jan Crutchfield and Jerry Crutchfield}
+{meta: composer Jan Crutchfield and Jerry Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]Little sparrow little [C][G7]sparrow

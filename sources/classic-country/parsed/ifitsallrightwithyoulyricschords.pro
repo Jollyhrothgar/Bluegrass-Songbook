@@ -1,6 +1,6 @@
 {meta: title If It's All Right With You}
 {meta: artist Eddy Arnold}
-{meta: writer Kenny O'Dell and Larry Henley}
+{meta: composer Kenny O'Dell and Larry Henley}
 
 {start_of_verse: Verse 1}
 [C]If it's all right with [F]you   [Dm][C]I'd like to [G7]stay here and [C]love [Em]you

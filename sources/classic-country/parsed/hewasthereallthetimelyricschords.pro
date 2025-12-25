@@ -1,6 +1,6 @@
 {meta: title He Was There All the Time}
 {meta: artist Connie Smith}
-{meta: writer Gary Paxton}
+{meta: composer Gary Paxton}
 
 {start_of_verse: Verse 1}
 [G]Time after time

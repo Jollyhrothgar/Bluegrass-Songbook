@@ -1,6 +1,6 @@
 {meta: title Life Or Love}
 {meta: artist Alan Jackson}
-{meta: writer Harley Allen and Gary Cotton}
+{meta: composer Harley Allen and Gary Cotton}
 
 {start_of_verse: Verse 1}
 [G]I tried to [D7]stay on the [Em]straight and narrow 

@@ -1,6 +1,6 @@
 {meta: title I Can See It In Your Eyes}
 {meta: artist Randy Travis}
-{meta: writer Pastor Hagee and Randy Travis}
+{meta: composer Pastor Hagee and Randy Travis}
 
 {start_of_verse: Verse 1}
 [G]The first time I saw [Am]you I felt [D7]weak [G]inside

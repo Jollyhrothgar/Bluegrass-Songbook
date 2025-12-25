@@ -1,6 +1,6 @@
 {meta: title He's Just On My Mind}
 {meta: artist Leona Williams}
-{meta: writer Justin Trevino, Ron Williams, Leona Williams}
+{meta: composer Justin Trevino, Ron Williams, Leona Williams}
 
 {start_of_verse: Verse 1}
 [C]Just because you see me [C7]smile don’t think I’m [F]happy

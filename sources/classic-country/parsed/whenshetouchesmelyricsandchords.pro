@@ -1,6 +1,6 @@
 {meta: title When She Touches Me}
 {meta: artist Johnny Duncan}
-{meta: writer Carolyn Varga}
+{meta: composer Carolyn Varga}
 
 {start_of_verse: Verse 1}
 [C]She's mean to me [E7]she's so bad to [F]me

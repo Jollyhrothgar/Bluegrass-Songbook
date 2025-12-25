@@ -1,6 +1,6 @@
 {meta: title Till I Stop Needing You}
 {meta: artist Moe Bandy}
-{meta: writer Steve Collom}
+{meta: composer Steve Collom}
 
 {start_of_verse: Verse 1}
 [C]I know you'll never love me like I want you [F]to

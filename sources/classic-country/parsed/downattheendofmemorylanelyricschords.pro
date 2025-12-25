@@ -1,6 +1,6 @@
 {meta: title Down At The End Of Memory Lane}
 {meta: artist Jimmie Davis}
-{meta: writer Jimmie Davis and Robert Anthony Jones}
+{meta: composer Jimmie Davis and Robert Anthony Jones}
 
 {start_of_verse: Verse 1}
 [C]Down at the end of [F]Memory lane

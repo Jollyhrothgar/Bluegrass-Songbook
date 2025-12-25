@@ -1,6 +1,6 @@
 {meta: title I Catch Myself}
 {meta: artist Gene Watson}
-{meta: writer Bruce Burch}
+{meta: composer Bruce Burch}
 
 {start_of_verse: Verse 1}
 [C]Sometimes late at night I think about [F]you

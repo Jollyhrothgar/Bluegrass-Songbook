@@ -1,6 +1,6 @@
 {meta: title Lookin' For Love}
 {meta: artist Johnny Lee}
-{meta: writer Wanda Mallette, Bob Morrison, Pat Ryan}
+{meta: composer Wanda Mallette, Bob Morrison, Pat Ryan}
 
 {start_of_verse: Verse 1}
 [C]Well I spent a lifetime [F]lookin' for [C]you

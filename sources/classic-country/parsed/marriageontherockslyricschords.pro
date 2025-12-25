@@ -1,6 +1,6 @@
 {meta: title Marriage On The Rocks}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]You still smile at me when [F]I come home

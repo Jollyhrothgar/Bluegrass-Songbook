@@ -1,6 +1,6 @@
 {meta: title All I Want For Christmas Is You Lyrics with Chords}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Don Rich}
+{meta: composer Buck Owens and Don Rich}
 
 {start_of_verse: Verse 1}
 [G]Here it is Christmas Day and you're [D7]many miles away

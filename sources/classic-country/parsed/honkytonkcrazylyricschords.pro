@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Crazy}
 {meta: artist Gene Watson}
-{meta: writer Harland Howard and Ron Peterson}
+{meta: composer Harland Howard and Ron Peterson}
 
 {start_of_verse: Verse 1}
 [C]Woman you’d better get up and [F]run while you [D7]can

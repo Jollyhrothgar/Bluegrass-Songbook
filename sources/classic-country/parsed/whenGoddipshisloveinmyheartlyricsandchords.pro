@@ -1,6 +1,6 @@
 {meta: title When God Dips His Love In My Heart}
 {meta: artist Webb Pierce}
-{meta: writer Cleavant Derricks}
+{meta: composer Cleavant Derricks}
 
 {start_of_verse: Verse 1}
 [G](Uh uh uh [C]uh uh uh when [G]God dips His [D7]love in my [G]heart [D7]in my [G]heart)

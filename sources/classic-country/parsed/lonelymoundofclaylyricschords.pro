@@ -1,6 +1,6 @@
 {meta: title Lonely Mound Of Clay}
 {meta: artist The Louvin Brothers}
-{meta: writer Roy Acuff}
+{meta: composer Roy Acuff}
 
 {start_of_verse: Verse 1}
 [G]Beside a new made grave [C]heartbroken

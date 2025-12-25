@@ -1,6 +1,6 @@
 {meta: title How Beautiful Heaven Must Be}
 {meta: artist George Jones}
-{meta: writer A.P. Bland and A.S. Bridgewater}
+{meta: composer A.P. Bland and A.S. Bridgewater}
 
 {start_of_verse: Verse 1}
 [C]We read of a place that's called heaven

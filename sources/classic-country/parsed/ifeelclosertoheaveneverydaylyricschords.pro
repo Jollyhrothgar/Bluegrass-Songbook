@@ -1,6 +1,6 @@
 {meta: title I Feel Closer To Heaven Everyday}
 {meta: artist Rhonda Vincent}
-{meta: writer Thelma Wilson}
+{meta: composer Thelma Wilson}
 
 {start_of_verse: Verse 1}
 [C]There's a new feeling [F]abiding within [C]me

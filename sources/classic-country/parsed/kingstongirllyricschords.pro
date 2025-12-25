@@ -1,6 +1,6 @@
 {meta: title Kingston Girl}
 {meta: artist Marty Robbins}
-{meta: writer Don Winters}
+{meta: composer Don Winters}
 
 {start_of_verse: Verse 1}
 [C]Just another [F]night and day 

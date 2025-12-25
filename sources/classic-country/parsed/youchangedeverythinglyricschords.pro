@@ -1,6 +1,6 @@
 {meta: title You Changed Everything}
 {meta: artist Norma Jean}
-{meta: writer Hank Cochran and Jeannie Seely}
+{meta: composer Hank Cochran and Jeannie Seely}
 
 {start_of_verse: Verse 1}
 [C]You changed [F]everything about me but my name

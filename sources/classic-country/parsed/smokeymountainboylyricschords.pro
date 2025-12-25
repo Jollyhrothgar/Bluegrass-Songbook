@@ -1,6 +1,6 @@
 {meta: title Smokey Mountain Boy}
 {meta: artist Elvis Presley}
-{meta: writer Victor Millrose and Lenore Rosenblatt}
+{meta: composer Victor Millrose and Lenore Rosenblatt}
 
 {start_of_verse: Verse 1}
 [G]I'm just a [D7]Smokey Mountain boy

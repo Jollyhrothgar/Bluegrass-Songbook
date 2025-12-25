@@ -1,6 +1,6 @@
 {meta: title Achy Breaky Heart}
 {meta: artist Boxcar Willie}
-{meta: writer Don Von Tress}
+{meta: composer Don Von Tress}
 
 {start_of_verse: Verse 1}
 [C]Well you can tell the world you never was my girl

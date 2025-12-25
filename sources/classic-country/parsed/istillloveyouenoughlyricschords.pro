@@ -1,6 +1,6 @@
 {meta: title I Still Love You Enough}
 {meta: artist Tommy Overstreet}
-{meta: writer Ricci Mareno}
+{meta: composer Ricci Mareno}
 
 {start_of_verse: Verse 1}
 [C]I still [D7]love you enough to [G7]love you all over [C]again[F]   [C]  [G7]

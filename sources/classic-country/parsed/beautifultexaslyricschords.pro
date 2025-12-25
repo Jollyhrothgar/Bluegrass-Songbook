@@ -1,6 +1,6 @@
 {meta: title Beautiful Texas}
 {meta: artist Hank Thompson}
-{meta: writer Wilbert Lee O'Daniels}
+{meta: composer Wilbert Lee O'Daniels}
 
 {start_of_verse: Verse 1}
 [C]We've all read of the beautiful stories

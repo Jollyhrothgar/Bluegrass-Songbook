@@ -1,6 +1,6 @@
 {meta: title Another World}
 {meta: artist Crystal Gayle}
-{meta: writer John Leffler and Ralph Schuckett}
+{meta: composer John Leffler and Ralph Schuckett}
 
 {start_of_verse: Verse 1}
 [C]I've always seen myself as a reckless gambler[F]  [G7]

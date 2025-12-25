@@ -1,6 +1,6 @@
 {meta: title Colonel Maggie}
 {meta: artist Roger Miller}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [C]Colonel Maggie is my [F]friend

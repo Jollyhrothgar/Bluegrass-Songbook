@@ -1,6 +1,6 @@
 {meta: title Fifteen Hundred Times A Day}
 {meta: artist Vern Gosdin}
-{meta: writer Cathy Gosdin}
+{meta: composer Cathy Gosdin}
 
 {start_of_verse: Verse 1}
 [C]I'm learning how to [F]live my life [C]without you

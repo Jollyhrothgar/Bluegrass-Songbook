@@ -1,6 +1,6 @@
 {meta: title I Want You To Meet My Friend}
 {meta: artist Tom T Hall}
-{meta: writer Tom T. Hall and Dixie Hall}
+{meta: composer Tom T. Hall and Dixie Hall}
 
 {start_of_verse: Verse 1}
 [G]You ask me [C]why I seem so [G]happy

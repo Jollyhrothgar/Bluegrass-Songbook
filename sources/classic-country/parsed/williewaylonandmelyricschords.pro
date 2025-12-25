@@ -1,6 +1,6 @@
 {meta: title Willie Waylon And Me}
 {meta: artist David Allan Coe}
-{meta: writer David A. Coe and Deborah Coe}
+{meta: composer David A. Coe and Deborah Coe}
 
 {start_of_verse: Verse 1}
 [D7]I heard The Burritos out [F]in California could fly [C]higher than The [G7]Byrds

@@ -1,6 +1,6 @@
 {meta: title Step Into My Soul}
 {meta: artist Bobby Helms}
-{meta: writer Johnny Paycheck and Aubrey Mayhew}
+{meta: composer Johnny Paycheck and Aubrey Mayhew}
 
 {start_of_verse: Verse 1}
 [C]If you could step into my soul 

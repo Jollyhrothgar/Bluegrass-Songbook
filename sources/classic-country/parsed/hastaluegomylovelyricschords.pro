@@ -1,6 +1,6 @@
 {meta: title Hasta Luego My Love}
 {meta: artist David Ball}
-{meta: writer Jennifer Kimball, Tommy James, Terry McBride}
+{meta: composer Jennifer Kimball, Tommy James, Terry McBride}
 
 {start_of_verse: Verse 1}
 [G]I know it's [C]getting [D7]late I hear the [C]mission [G]bells[C]  [D7]   [C]

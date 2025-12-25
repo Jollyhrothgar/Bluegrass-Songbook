@@ -1,6 +1,6 @@
 {meta: title Is It Only That You're Lonely}
 {meta: artist Lefty Frizzell}
-{meta: writer Aaron Schroeder and Ben Weisman}
+{meta: composer Aaron Schroeder and Ben Weisman}
 
 {start_of_verse: Verse 1}
 [C]Is it only that you're [F]lonely and I happen to be [C]near

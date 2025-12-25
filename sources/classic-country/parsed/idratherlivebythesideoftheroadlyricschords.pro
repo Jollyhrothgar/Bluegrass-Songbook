@@ -1,6 +1,6 @@
 {meta: title I'd Rather Live By The Side Of The Road}
 {meta: artist Mac Wiseman}
-{meta: writer Albert E. Brumley Sr.}
+{meta: composer Albert E. Brumley Sr.}
 
 {start_of_verse: Verse 1}
 [G]There are people who would rather live in splendor

@@ -1,6 +1,6 @@
 {meta: title Mama's Face}
 {meta: artist Cal Smith}
-{meta: writer Glenn Martin}
+{meta: composer Glenn Martin}
 
 {start_of_verse: Verse 1}
 [G]My mama loved my [D7]dad for fifty [G]years

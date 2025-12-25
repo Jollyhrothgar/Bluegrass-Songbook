@@ -1,6 +1,6 @@
 {meta: title The Great Divide}
 {meta: artist Gene Watson}
-{meta: writer John Royce Lindley and Randy Bruce Traywick}
+{meta: composer John Royce Lindley and Randy Bruce Traywick}
 
 {start_of_verse: Verse 1}
 [G]It's time for us to settle up [C]and go [D7]our separate [G]ways

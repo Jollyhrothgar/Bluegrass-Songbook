@@ -1,6 +1,6 @@
 {meta: title Reflections Of An Old Man}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin}
+{meta: composer Lloene S. Martin}
 
 {start_of_verse: Verse 1}
 [C]I’m staring at the mirror now [F]what do I see

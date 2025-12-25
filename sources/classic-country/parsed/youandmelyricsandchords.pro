@@ -1,6 +1,6 @@
 {meta: title You And Me}
 {meta: artist Kenny Rogers}
-{meta: writer Roger Bowling and Larry Butler}
+{meta: composer Roger Bowling and Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]Ain’t it good babe  [F]you and [C]me

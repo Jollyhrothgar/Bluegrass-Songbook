@@ -1,6 +1,6 @@
 {meta: title Ain't That Lonely Yet}
 {meta: artist Dwight Yoakam}
-{meta: writer James House and Kostas}
+{meta: composer James House and Kostas}
 
 {start_of_verse: Verse 1}
 [C]You keep callin' me [F]on the tele[C]phone

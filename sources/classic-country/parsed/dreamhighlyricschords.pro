@@ -1,6 +1,6 @@
 {meta: title Dream High}
 {meta: artist Doug Stone}
-{meta: writer Joe Henry and Mike Reid}
+{meta: composer Joe Henry and Mike Reid}
 
 {start_of_verse: Verse 1}
 [C]Someday every [F]person on this earth some[G7]way every[C]one

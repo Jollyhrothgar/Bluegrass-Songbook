@@ -1,6 +1,6 @@
 {meta: title Downfall Of Me}
 {meta: artist Sonny James}
-{meta: writer Ted Riedel}
+{meta: composer Ted Riedel}
 
 {start_of_verse: Verse 1}
 [G]Missing your loving [Am]touch 

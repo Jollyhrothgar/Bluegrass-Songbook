@@ -1,6 +1,6 @@
 {meta: title Hey Gypsy}
 {meta: artist David Allan Coe}
-{meta: writer David Allan Coe and Fred Spears}
+{meta: composer David Allan Coe and Fred Spears}
 
 {start_of_verse: Verse 1}
 [C]Hey gypsy hey [F]gypsy come on home

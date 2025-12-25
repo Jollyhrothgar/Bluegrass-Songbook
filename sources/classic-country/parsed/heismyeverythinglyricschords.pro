@@ -1,6 +1,6 @@
 {meta: title He is My Everything}
 {meta: artist Elvis Presley}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]I long to be His [C]possession

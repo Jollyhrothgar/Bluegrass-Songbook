@@ -1,6 +1,6 @@
 {meta: title It Will Come To Pass}
 {meta: artist Willie Nelson}
-{meta: writer Don Baird}
+{meta: composer Don Baird}
 
 {start_of_verse: Verse 1}
 [C]The turning earth will raise its wand

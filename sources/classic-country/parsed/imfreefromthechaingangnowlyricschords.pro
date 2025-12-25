@@ -1,6 +1,6 @@
 {meta: title I'm Free From The Chain Gang Now}
 {meta: artist JImmy Rodgers}
-{meta: writer Lou Herscher}
+{meta: composer Lou Herscher}
 
 {start_of_verse: Verse 1}
 [C]I've got rid of the [F]shackles that [C]bound me

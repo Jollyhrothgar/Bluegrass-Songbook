@@ -1,6 +1,6 @@
 {meta: title In The House Of The Lord}
 {meta: artist Hank Locklin}
-{meta: writer Lawrence Lewis and Katherine Adelman}
+{meta: composer Lawrence Lewis and Katherine Adelman}
 
 {start_of_verse: Verse 1}
 [G]Have you been dreaming of a new [C]life

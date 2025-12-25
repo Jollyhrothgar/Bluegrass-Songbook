@@ -1,6 +1,6 @@
 {meta: title On The Wings Of Love}
 {meta: artist Buck Owens}
-{meta: writer recorded by Buck Owens}
+{meta: composer recorded by Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna be ridin' on the wings of love out there somewhere up above 

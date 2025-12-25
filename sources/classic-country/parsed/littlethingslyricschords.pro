@@ -1,6 +1,6 @@
 {meta: title Little Things}
 {meta: artist Tanya Tucker}
-{meta: writer Steven Dale Jones and Michael Dulaney}
+{meta: composer Steven Dale Jones and Michael Dulaney}
 
 {start_of_verse: Verse 1}
 [C]Love can't be measured with [Am]diamonds and [C]gold

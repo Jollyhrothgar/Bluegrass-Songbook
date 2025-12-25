@@ -1,6 +1,6 @@
 {meta: title I Wanna Know I'm Goin' Home}
 {meta: artist David Allan Coe}
-{meta: writer Buzz Rabin}
+{meta: composer Buzz Rabin}
 
 {start_of_verse: Verse 1}
 [C]Well I hope the years that [F]wrinkled up our [C]faces

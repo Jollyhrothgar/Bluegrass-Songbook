@@ -1,6 +1,6 @@
 {meta: title You Can't Break A Heart}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills and Joe Andrews}
+{meta: composer Bob Wills and Joe Andrews}
 
 {start_of_verse: Verse 1}
 [C]You can’t break a heart without [F]killing a [D7]soul

@@ -1,6 +1,6 @@
 {meta: title Harp With Golden Strings}
 {meta: artist Loretta Lynn}
-{meta: writer Mac McCarty and Jimmie Keath}
+{meta: composer Mac McCarty and Jimmie Keath}
 
 {start_of_verse: Verse 1}
 [G]I love to hear those good old songs they sing unto the Lord

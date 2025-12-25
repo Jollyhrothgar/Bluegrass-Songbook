@@ -1,6 +1,6 @@
 {meta: title Resting Place}
 {meta: artist Charlie Pride}
-{meta: writer Ricky Arkinson}
+{meta: composer Ricky Arkinson}
 
 {start_of_verse: Verse 1}
 [C]Many times our [F]work seems [C]endless

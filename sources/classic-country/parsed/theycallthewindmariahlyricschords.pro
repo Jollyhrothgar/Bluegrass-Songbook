@@ -1,6 +1,6 @@
 {meta: title They Call the Wind Mariah}
 {meta: artist Jim Ed Brown}
-{meta: writer Alan J. Lerner and Frederick Loewe}
+{meta: composer Alan J. Lerner and Frederick Loewe}
 
 {start_of_verse: Verse 1}
 [C]Way out west they [Am]have a name for [C]rain and wind and [Am]fire

@@ -1,6 +1,6 @@
 {meta: title Passin' Through}
 {meta: artist David Houston}
-{meta: writer David Houston and Richard Blakeslee}
+{meta: composer David Houston and Richard Blakeslee}
 
 {start_of_verse: Verse 1}
 [G]Passin' through passin' through

@@ -1,6 +1,6 @@
 {meta: title I Go Anywhere (To Forget You)}
 {meta: artist Charlie Walker}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Oh I go [C]anywhere anywhere to [G]forget you

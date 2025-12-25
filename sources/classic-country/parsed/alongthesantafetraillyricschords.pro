@@ -1,6 +1,6 @@
 {meta: title Along The Santa Fe Trail}
 {meta: artist Jimmy Wakely}
-{meta: writer Al Dubin, Edwina Coolidge, Will Grosz}
+{meta: composer Al Dubin, Edwina Coolidge, Will Grosz}
 
 {start_of_verse: Verse 1}
 [C]Angels come to paint the desert [D7]nightly

@@ -1,6 +1,6 @@
 {meta: title As Right Now}
 {meta: artist Alabama}
-{meta: writer Teddy Gentry and Greg Fowler}
+{meta: composer Teddy Gentry and Greg Fowler}
 
 {start_of_verse: Verse 1}
 [G]You're still the lady of my dreams

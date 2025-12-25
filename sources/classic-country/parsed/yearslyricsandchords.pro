@@ -1,6 +1,6 @@
 {meta: title Years}
 {meta: artist Barbara Mandrell}
-{meta: writer Dennis Morgan and Rhonda Fleming}
+{meta: composer Dennis Morgan and Rhonda Fleming}
 
 {start_of_verse: Verse 1}
 [C]Faded photographs   [F]the feelings all [G7]come [C]back

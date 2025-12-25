@@ -1,6 +1,6 @@
 {meta: title New York City}
 {meta: artist The Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]She came to me shortly after [D7]Christmas

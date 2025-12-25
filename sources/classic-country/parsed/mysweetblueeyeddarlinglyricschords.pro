@@ -1,6 +1,6 @@
 {meta: title My Sweet Blue Eyed Darling}
 {meta: artist The Lonesome River Band}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [G]You're my sweet blue-eyed darling

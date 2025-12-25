@@ -1,6 +1,6 @@
 {meta: title This Guitar Is For Sale}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein and Fred Koller}
+{meta: composer Shel Silverstein and Fred Koller}
 
 {start_of_verse: Verse 1}
 [G]This [D7]guitar is for [G]sale [G7]I'll let her go [C]cheap[Em]   [Am]

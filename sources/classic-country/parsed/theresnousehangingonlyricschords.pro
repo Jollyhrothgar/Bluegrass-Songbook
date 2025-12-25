@@ -1,6 +1,6 @@
 {meta: title There's No Use Hanging On}
 {meta: artist Tammy Wynette}
-{meta: writer Monroe Fields and Carmol Taylor}
+{meta: composer Monroe Fields and Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [C]I might as well just hang it [F]up

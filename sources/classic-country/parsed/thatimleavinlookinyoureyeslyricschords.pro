@@ -1,6 +1,6 @@
 {meta: title That I'm Leavin' Look In Your Eyes}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Danny Steagall}
+{meta: composer Red Steagall and Danny Steagall}
 
 {start_of_verse: Verse 1}
 [C]When our love was [C7]young it was [F]honest and true

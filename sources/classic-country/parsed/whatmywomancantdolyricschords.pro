@@ -1,6 +1,6 @@
 {meta: title What My Woman Can't Do}
 {meta: artist George Jones}
-{meta: writer Billy Sherrill, Earl Montgomery, George Jones}
+{meta: composer Billy Sherrill, Earl Montgomery, George Jones}
 
 {start_of_verse: Verse 1}
 [F]What my woman [C]can't do [G7]can't be [C]done

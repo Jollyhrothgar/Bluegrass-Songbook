@@ -1,6 +1,6 @@
 {meta: title Livin' In God's Country}
 {meta: artist Loretta Lynn}
-{meta: writer Teddy Wilburn, Doyle Wilburn, Don Helms}
+{meta: composer Teddy Wilburn, Doyle Wilburn, Don Helms}
 
 {start_of_verse: Verse 1}
 Intro:

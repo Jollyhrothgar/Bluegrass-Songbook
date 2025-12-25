@@ -1,6 +1,6 @@
 {meta: title The Fields Of Home}
 {meta: artist Ricky Skaggs}
-{meta: writer Larry Cordle and Larry Shell}
+{meta: composer Larry Cordle and Larry Shell}
 
 {start_of_verse: Verse 1}
 [C]I remember how I’d [G7]cuss 

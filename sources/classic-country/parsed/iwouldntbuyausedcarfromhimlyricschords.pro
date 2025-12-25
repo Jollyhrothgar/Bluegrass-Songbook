@@ -1,6 +1,6 @@
 {meta: title I Wouldn't Buy A Used Car From Him}
 {meta: artist Norma Jean}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Yes it's true that he and I were [F]sweethearts

@@ -1,6 +1,6 @@
 {meta: title When We're Gone Long Gone}
 {meta: artist Emmylou Harris}
-{meta: writer Jamie O'Hara and Kieran Kane}
+{meta: composer Jamie O'Hara and Kieran Kane}
 
 {start_of_verse: Verse 1}
 [C]Trouble [G7]we have known [F]trouble 

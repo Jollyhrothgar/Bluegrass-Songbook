@@ -1,6 +1,6 @@
 {meta: title Not That I Care}
 {meta: artist Ricky Van Shelton}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G7]So you [C]saw her last [G7]night with her [C]new love

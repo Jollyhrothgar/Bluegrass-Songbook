@@ -1,6 +1,6 @@
 {meta: title Give Us A Happy Home}
 {meta: artist Ricky Skaggs}
-{meta: writer Wayland Patton and Michael White}
+{meta: composer Wayland Patton and Michael White}
 
 {start_of_verse: Verse 1}
 [C]He's been wounded already in the [F]struggle of [G7]life

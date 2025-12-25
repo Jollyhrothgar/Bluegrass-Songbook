@@ -1,6 +1,6 @@
 {meta: title This World Holds Nothing Since You're Gone}
 {meta: artist Stonewall Jackson}
-{meta: writer Jack Schneider and Claude Southall}
+{meta: composer Jack Schneider and Claude Southall}
 
 {start_of_verse: Verse 1}
 [C]I don't like the sunshine [Am]I don't see the stars

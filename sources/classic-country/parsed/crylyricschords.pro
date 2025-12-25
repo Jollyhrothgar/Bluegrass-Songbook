@@ -1,6 +1,6 @@
 {meta: title Cry}
 {meta: artist Crystal Gayle}
-{meta: writer Churchill Kohlman}
+{meta: composer Churchill Kohlman}
 
 {start_of_verse: Verse 1}
 [G7]If your [C]sweetheart sends a letter of [E7]goodbye

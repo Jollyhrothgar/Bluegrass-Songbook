@@ -1,6 +1,6 @@
 {meta: title The Big Man Above}
 {meta: artist Conway Twitty}
-{meta: writer L.E. White}
+{meta: composer L.E. White}
 
 {start_of_verse: Verse 1}
 [C]Sometimes in life we ought to think twice

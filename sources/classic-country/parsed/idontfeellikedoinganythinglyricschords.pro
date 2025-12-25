@@ -1,6 +1,6 @@
 {meta: title I Don't Feel Like Doing Anything}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin}
+{meta: composer Lloene S. Martin}
 
 {start_of_verse: Verse 1}
 [G]I go to bed each [D7]night 

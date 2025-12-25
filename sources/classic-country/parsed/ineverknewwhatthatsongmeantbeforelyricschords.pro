@@ -1,6 +1,6 @@
 {meta: title I Never Knew What That Song Meant Before}
 {meta: artist Connie Smith}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]I sang goodbye a thousand times[C7] 

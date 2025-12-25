@@ -1,6 +1,6 @@
 {meta: title Get Me Back To Tennessee}
 {meta: artist Dave Dudley}
-{meta: writer Randall Jay Rogers}
+{meta: composer Randall Jay Rogers}
 
 {start_of_verse: Verse 1}
 [C]Get me back to [G7]Tennessee I'm [F]homesick

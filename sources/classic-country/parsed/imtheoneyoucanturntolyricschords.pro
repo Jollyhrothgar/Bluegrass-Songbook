@@ -1,6 +1,6 @@
 {meta: title I'm The One You Can Turn To}
 {meta: artist Billy Walker}
-{meta: writer Yvonne Devaney}
+{meta: composer Yvonne Devaney}
 
 {start_of_verse: Verse 1}
 [C]I'm the one you can [F]turn [G7]to

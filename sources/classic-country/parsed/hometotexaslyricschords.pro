@@ -1,6 +1,6 @@
 {meta: title Home To Texas}
 {meta: artist Johnny Bush}
-{meta: writer David Hurd}
+{meta: composer David Hurd}
 
 {start_of_verse: Verse 1}
 [C]You can keep the house and the money honey both cars

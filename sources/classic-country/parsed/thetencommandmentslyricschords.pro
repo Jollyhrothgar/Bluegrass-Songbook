@@ -1,6 +1,6 @@
 {meta: title The Ten Commandments}
 {meta: artist Johnny Cash}
-{meta: writer Lew DeWitt}
+{meta: composer Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [G]Moses led God's children out to find the promised land

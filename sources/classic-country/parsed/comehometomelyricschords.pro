@@ -1,6 +1,6 @@
 {meta: title Come Home To Me}
 {meta: artist George Jones}
-{meta: writer Bobby Lamoyne Harden}
+{meta: composer Bobby Lamoyne Harden}
 
 {start_of_verse: Verse 1}
 [C]Lying here thinking  [F]and I happen to [C]think

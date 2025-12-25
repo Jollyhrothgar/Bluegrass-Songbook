@@ -1,6 +1,6 @@
 {meta: title She's In Love With A Rodeo Man}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]She's a barmaid in a west Texas dance [F]hall

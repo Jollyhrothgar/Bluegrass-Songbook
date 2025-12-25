@@ -1,6 +1,6 @@
 {meta: title I'll Never Love Nobody But You}
 {meta: artist Jim and Jesse}
-{meta: writer Jesse McReynolds and Jim McReynolds}
+{meta: composer Jesse McReynolds and Jim McReynolds}
 
 {start_of_verse: Verse 1}
 [G]I'll never love any[C]body but you [D7]baby baby

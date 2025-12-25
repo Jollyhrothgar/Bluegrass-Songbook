@@ -1,6 +1,6 @@
 {meta: title I’m Falling Too}
 {meta: artist Skeeter Davis}
-{meta: writer Hal Blair and Don Robertson}
+{meta: composer Hal Blair and Don Robertson}
 
 {start_of_verse: Verse 1}
 [G]You say that you're falling  [C]but what can I [G]do

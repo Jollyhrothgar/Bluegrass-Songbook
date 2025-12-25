@@ -1,6 +1,6 @@
 {meta: title Grapevine}
 {meta: artist Mickey Gilley}
-{meta: writer Dale/Matassa}
+{meta: composer Dale/Matassa}
 
 {start_of_verse: Verse 1}
 [G]I got it through the grapevine that [C]you were through with [G]me

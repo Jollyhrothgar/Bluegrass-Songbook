@@ -1,6 +1,6 @@
 {meta: title She Understands Me}
 {meta: artist Johnny Tillotson}
-{meta: writer Merle Kilgore and Margie Singleton}
+{meta: composer Merle Kilgore and Margie Singleton}
 
 {start_of_verse: Verse 1}
 [G7]Whoa whoa dum-bi-ady [F]dum-bi-ady [C]doe

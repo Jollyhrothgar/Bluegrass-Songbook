@@ -1,6 +1,6 @@
 {meta: title The Phone Call}
 {meta: artist Mickey Gilley}
-{meta: writer Even Stevens and Billy Joe Walker}
+{meta: composer Even Stevens and Billy Joe Walker}
 
 {start_of_verse: Verse 1}
 [F]Oh I've been driving all night long 

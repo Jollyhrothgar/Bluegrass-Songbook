@@ -1,6 +1,6 @@
 {meta: title Short Sweet Ride}
 {meta: artist Alan Jackson}
-{meta: writer Jim McBride and Alan Jackson}
+{meta: composer Jim McBride and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G]I could see it coming from a [C]mile [G]away

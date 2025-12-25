@@ -1,6 +1,6 @@
 {meta: title Little Community Church}
 {meta: artist Ricky Skaggs}
-{meta: writer Lester Flatt and Bill Monroe}
+{meta: composer Lester Flatt and Bill Monroe}
 
 {start_of_verse: Verse 1}
 [C]I was lost in sin so long with no one to guide my way

@@ -1,6 +1,6 @@
 {meta: title Any Old Arms Won't Do}
 {meta: artist Willie Nelson}
-{meta: writer Hank Cochran and Willie Nelson}
+{meta: composer Hank Cochran and Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]I'd like to rush into somebody's arms 

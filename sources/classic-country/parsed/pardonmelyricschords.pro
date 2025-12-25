@@ -1,6 +1,6 @@
 {meta: title Pardon Me}
 {meta: artist Moe Bandy}
-{meta: writer Becky Hobbs and Candy Parton}
+{meta: composer Becky Hobbs and Candy Parton}
 
 {start_of_verse: Verse 1}
 [C]The band was playing that old [F]love song

@@ -1,6 +1,6 @@
 {meta: title Marching For Jesus}
 {meta: artist Boxcar Willie}
-{meta: writer Peter Chatman}
+{meta: composer Peter Chatman}
 
 {start_of_verse: Verse 1}
 [G]Marching for Jesus [C]marching for Jesus

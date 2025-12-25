@@ -1,6 +1,6 @@
 {meta: title April's Fool}
 {meta: artist Tracy Lawrence}
-{meta: writer Keith Perry, Bernie Faulkner, Wayne Davis}
+{meta: composer Keith Perry, Bernie Faulkner, Wayne Davis}
 
 {start_of_verse: Verse 1}
 [G7]There's no [C]way [F]I could ever [C]leave her

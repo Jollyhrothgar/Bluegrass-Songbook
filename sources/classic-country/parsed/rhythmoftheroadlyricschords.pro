@@ -1,6 +1,6 @@
 {meta: title Rhythm Of The Road}
 {meta: artist George Strait}
-{meta: writer Dan McCoy}
+{meta: composer Dan McCoy}
 
 {start_of_verse: Verse 1}
 [C]I'd rather be home 

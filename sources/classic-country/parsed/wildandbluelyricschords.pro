@@ -1,6 +1,6 @@
 {meta: title Wild And Blue}
 {meta: artist John Anderson}
-{meta: writer John Scott Sherrill [3/4 time]}
+{meta: composer John Scott Sherrill [3/4 time]}
 
 {start_of_verse: Verse 1}
 [G]Way across town a phone rings off the wall

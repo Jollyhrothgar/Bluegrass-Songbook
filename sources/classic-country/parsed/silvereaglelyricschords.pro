@@ -1,6 +1,6 @@
 {meta: title Silver Eagle}
 {meta: artist Reba McEntire}
-{meta: writer Chip Hardy, Janis Carnes, Rick Carnes}
+{meta: composer Chip Hardy, Janis Carnes, Rick Carnes}
 
 {start_of_verse: Verse 1}
 [G]Luck can always change the state of your direction

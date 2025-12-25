@@ -1,6 +1,6 @@
 {meta: title Bow Thy Head}
 {meta: artist Webb Pierce}
-{meta: writer P. Kallenger and Webb Pierce}
+{meta: composer P. Kallenger and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]I have heard of a land

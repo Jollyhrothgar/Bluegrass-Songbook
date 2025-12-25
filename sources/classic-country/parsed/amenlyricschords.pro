@@ -1,6 +1,6 @@
 {meta: title Amen}
 {meta: artist Johnny Cash}
-{meta: writer Jester Hairston}
+{meta: composer Jester Hairston}
 
 {start_of_verse: Verse 1}
 [C](Amen amen amen [F]a-[C]men [G7]a-m[C]en)

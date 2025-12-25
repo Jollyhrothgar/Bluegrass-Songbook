@@ -1,6 +1,6 @@
 {meta: title All I Want To Do}
 {meta: artist George Jones}
-{meta: writer Sonny James and George Jones}
+{meta: composer Sonny James and George Jones}
 
 {start_of_verse: Verse 1}
 [G]I don't want to be the one that makes you lonely

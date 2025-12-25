@@ -1,6 +1,6 @@
 {meta: title Hello I Love You}
 {meta: artist Crystal Gayle}
-{meta: writer Roger Cook and Charles Cochran}
+{meta: composer Roger Cook and Charles Cochran}
 
 {start_of_verse: Verse 1}
 [C]You [G7]take the [F]darkness [C]out [G7]of my [F]night[C]

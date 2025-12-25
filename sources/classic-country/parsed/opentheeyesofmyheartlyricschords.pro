@@ -1,6 +1,6 @@
 {meta: title Open The Eyes Of My Heart}
 {meta: artist Randy Travis}
-{meta: writer Paul Baloche}
+{meta: composer Paul Baloche}
 
 {start_of_verse: Verse 1}
 [C]Open the eyes of my heart Lord

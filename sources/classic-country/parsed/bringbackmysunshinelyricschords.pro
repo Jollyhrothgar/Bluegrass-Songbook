@@ -1,6 +1,6 @@
 {meta: title Bring Back My Sunshine}
 {meta: artist Ray Price}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [C]Girl it's not [Dm]easy [G7]  being [Em]alone[Am]

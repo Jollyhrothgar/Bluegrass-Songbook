@@ -1,6 +1,6 @@
 {meta: title If That's The Way You Feel}
 {meta: artist Ricky Skaggs}
-{meta: writer Carter Stanley and Ralph Stanley}
+{meta: composer Carter Stanley and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [C]I don't blame you for [F]I know you want [C]him 

@@ -1,6 +1,6 @@
 {meta: title Your Bedroom Eyes}
 {meta: artist Vern Gosdin}
-{meta: writer Rich Landers}
+{meta: composer Rich Landers}
 
 {start_of_verse: Verse 1}
 [C]Your bedroom eyes  [F]make me know what I [C]wanted [F]

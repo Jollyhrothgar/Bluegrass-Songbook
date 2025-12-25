@@ -1,6 +1,6 @@
 {meta: title You Wouldn't Know An Angel}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Frances Rhodes}
+{meta: composer Loretta Lynn and Frances Rhodes}
 
 {start_of_verse: Verse 1}
 [G]Because I won't give in to you 

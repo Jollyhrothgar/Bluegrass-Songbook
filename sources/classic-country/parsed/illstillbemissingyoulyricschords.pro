@@ -1,6 +1,6 @@
 {meta: title I'll Still Be Missing You}
 {meta: artist Connie Smith}
-{meta: writer Warner McPherson}
+{meta: composer Warner McPherson}
 
 {start_of_verse: Verse 1}
 [C]I'll still be missing [F]you

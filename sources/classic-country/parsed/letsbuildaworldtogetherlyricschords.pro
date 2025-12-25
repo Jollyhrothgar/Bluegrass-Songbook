@@ -1,6 +1,6 @@
 {meta: title Let's Build A World Together}
 {meta: artist David Houston}
-{meta: writer Norro Wilson, Carmol Taylor, George Richey}
+{meta: composer Norro Wilson, Carmol Taylor, George Richey}
 
 {start_of_verse: Verse 1}
 [C]I never believed a woman like you [F]existed

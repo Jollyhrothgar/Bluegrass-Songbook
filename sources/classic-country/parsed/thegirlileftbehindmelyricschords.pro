@@ -1,6 +1,6 @@
 {meta: title The Girl I Left Behind Me}
 {meta: artist Bob Wills}
-{meta: writer Leroy Anderson}
+{meta: composer Leroy Anderson}
 
 {start_of_verse: Verse 1}
 [G]I wrote her a letter when I'd known [C]better

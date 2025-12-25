@@ -1,6 +1,6 @@
 {meta: title The Silver That Nailed Him To The Cross}
 {meta: artist Cowboy Copas}
-{meta: writer Floyd Wilson}
+{meta: composer Floyd Wilson}
 
 {start_of_verse: Verse 1}
 [G]Jesus I love you [C]more than silver

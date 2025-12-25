@@ -1,6 +1,6 @@
 {meta: title Someone Somewhere Tonight}
 {meta: artist Kenny Rogers}
-{meta: writer Davis Raines and Walt Wilkins}
+{meta: composer Davis Raines and Walt Wilkins}
 
 {start_of_verse: Verse 1}
 [C]Someone somewhere tonight is taking their [G7]first steps

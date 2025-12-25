@@ -1,6 +1,6 @@
 {meta: title Just Walking in the Rain}
 {meta: artist Jim Reeves}
-{meta: writer Bob Riley, Johnny Bragg, Buddy Killen}
+{meta: composer Bob Riley, Johnny Bragg, Buddy Killen}
 
 {start_of_verse: Verse 1}
 [C]Just walking in the rain getting soak and wet

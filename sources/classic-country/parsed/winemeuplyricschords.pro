@@ -1,6 +1,6 @@
 {meta: title Wine Me Up}
 {meta: artist Tanya Tucker}
-{meta: writer Faron Young and Billy Deaton}
+{meta: composer Faron Young and Billy Deaton}
 
 {start_of_verse: Verse 1}
 [G]Well I'm the center of attention in this bar room

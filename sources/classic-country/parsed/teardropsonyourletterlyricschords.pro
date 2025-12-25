@@ -1,6 +1,6 @@
 {meta: title Teardrops On Your Letter}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Henry Glover}
+{meta: composer Henry Glover}
 
 {start_of_verse: Verse 1}
 [C]Teardrops on a [F]letter that [C]I got from [F]you

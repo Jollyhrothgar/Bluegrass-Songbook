@@ -1,6 +1,6 @@
 {meta: title As Far As I'm Concerned}
 {meta: artist Faron Young}
-{meta: writer Dale Parker}
+{meta: composer Dale Parker}
 
 {start_of_verse: Verse 1}
 [G]As far as I'm concerned I [C]don't believe a [G]word

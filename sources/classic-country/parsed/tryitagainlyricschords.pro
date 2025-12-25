@@ -1,6 +1,6 @@
 {meta: title Try It Again}
 {meta: artist Mel Tillis}
-{meta: writer Earl Singleton}
+{meta: composer Earl Singleton}
 
 {start_of_verse: Verse 1}
 [C]You wake up [A7]Monday morning [D7]feeling so down

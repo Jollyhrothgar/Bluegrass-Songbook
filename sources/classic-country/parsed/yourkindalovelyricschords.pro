@@ -1,6 +1,6 @@
 {meta: title Your Kinda Love}
 {meta: artist Patsy Cline}
-{meta: writer Alex Zanetis and Roy Drusky}
+{meta: composer Alex Zanetis and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [G]You say you love me then you treat [G7]me like a [C]stranger

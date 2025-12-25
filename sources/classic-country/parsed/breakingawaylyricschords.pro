@@ -1,6 +1,6 @@
 {meta: title Breaking Away}
 {meta: artist Tammy Wynette}
-{meta: writer Jim Rushing and Richie Albright}
+{meta: composer Jim Rushing and Richie Albright}
 
 {start_of_verse: Verse 1}
 [G]We've hurt too much to go on anymore

@@ -1,6 +1,6 @@
 {meta: title Too Many Nights Alone}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein and Even Stevens}
+{meta: composer Shel Silverstein and Even Stevens}
 
 {start_of_verse: Verse 1}
 [G]Midnight flights and [D7]barroom lights

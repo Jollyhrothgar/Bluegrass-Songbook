@@ -1,6 +1,6 @@
 {meta: title It's All In My Mind}
 {meta: artist George Jones}
-{meta: writer Wynn Stewart and Vern Stovall}
+{meta: composer Wynn Stewart and Vern Stovall}
 
 {start_of_verse: Verse 1}
 [C]I just turned out the [F]lights up[Fm]stairs

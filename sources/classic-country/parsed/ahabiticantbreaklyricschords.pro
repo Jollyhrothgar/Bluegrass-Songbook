@@ -1,6 +1,6 @@
 {meta: title A Habit I Can't Break}
 {meta: artist Dolly Parton}
-{meta: writer Bill Owens}
+{meta: composer Bill Owens}
 
 {start_of_verse: Verse 1}
 [G7](A [F]habit [G7]I can't [C]break)

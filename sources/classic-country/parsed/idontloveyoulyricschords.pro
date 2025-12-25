@@ -1,6 +1,6 @@
 {meta: title I Don't Love You}
 {meta: artist Conway Twitty}
-{meta: writer Liz Hengber and Tommy James}
+{meta: composer Liz Hengber and Tommy James}
 
 {start_of_verse: Verse 1}
 [G]Pray before I close my eyes

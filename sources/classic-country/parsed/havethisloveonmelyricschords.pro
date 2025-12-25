@@ -1,6 +1,6 @@
 {meta: title Have This Love On Me}
 {meta: artist Bobby Helms}
-{meta: writer Johnny Russell}
+{meta: composer Johnny Russell}
 
 {start_of_verse: Verse 1}
 [G]There you stand holding her like you know you shouldn't [D7]do 

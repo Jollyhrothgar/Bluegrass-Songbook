@@ -1,6 +1,6 @@
 {meta: title A Long Time Ago}
 {meta: artist Waylon Jennings}
-{meta: writer Shel Silverstein and Waylon Jennings}
+{meta: composer Shel Silverstein and Waylon Jennings}
 
 {start_of_verse: Verse 1}
 [C]I don't look the way the average cowboy singer looks

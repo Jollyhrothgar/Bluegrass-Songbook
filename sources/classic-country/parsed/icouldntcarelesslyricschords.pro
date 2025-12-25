@@ -1,6 +1,6 @@
 {meta: title I Couldn’t Care Less}
 {meta: artist Carl Smith}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [G]I couldn't [C]care less couldn't [G]care less

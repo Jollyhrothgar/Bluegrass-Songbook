@@ -1,6 +1,6 @@
 {meta: title Fallin' As Fast As I Can}
 {meta: artist Billy Walker}
-{meta: writer Rory Bourke, Gene Dubois, Johnny Wilson}
+{meta: composer Rory Bourke, Gene Dubois, Johnny Wilson}
 
 {start_of_verse: Verse 1}
 [F](Fallin' as [G7]fast as I [C]can)

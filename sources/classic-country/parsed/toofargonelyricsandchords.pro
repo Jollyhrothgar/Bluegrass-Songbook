@@ -1,6 +1,6 @@
 {meta: title Too Far Gone}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill}
+{meta: composer Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [G]I can tell that [D7]somewhere there's [G]someone you've [E7]loved more than [A7]me

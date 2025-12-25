@@ -1,6 +1,6 @@
 {meta: title The Last Round Up}
 {meta: artist Sons of the Pioneers}
-{meta: writer Billy Hill}
+{meta: composer Billy Hill}
 
 {start_of_verse: Verse 1}
 [C]I'm heading for the last roundup

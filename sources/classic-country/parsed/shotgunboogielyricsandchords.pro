@@ -1,6 +1,6 @@
 {meta: title Shotgun Boogie}
 {meta: artist Cal Smith}
-{meta: writer Ernie Ford}
+{meta: composer Ernie Ford}
 
 {start_of_verse: Verse 1}
 [G]There it stands in the corner with the barrel so straight

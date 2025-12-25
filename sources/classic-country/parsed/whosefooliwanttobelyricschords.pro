@@ -1,6 +1,6 @@
 {meta: title Whose Fool I Want To Be}
 {meta: artist Gene Watson}
-{meta: writer Gene Nelson and Paul Nelson}
+{meta: composer Gene Nelson and Paul Nelson}
 
 {start_of_verse: Verse 1}
 [C]Not a word is [F]spoken as she's [G7]puttin' on her [C]makeup

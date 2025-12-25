@@ -1,6 +1,6 @@
 {meta: title Why Did You Wait}
 {meta: artist Jean Shepard}
-{meta: writer Clyde Wilson and Bettie Westergard}
+{meta: composer Clyde Wilson and Bettie Westergard}
 
 {start_of_verse: Verse 1}
 [C]Why did you wait to prove [F]to be [C]untrue

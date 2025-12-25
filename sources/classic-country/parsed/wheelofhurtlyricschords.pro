@@ -1,6 +1,6 @@
 {meta: title Wheel Of Hurt}
 {meta: artist Margaret Whiting}
-{meta: writer Charles Singleton and Eddie Snyder}
+{meta: composer Charles Singleton and Eddie Snyder}
 
 {start_of_verse: Verse 1}
 [C]You're gonna know what it [F]means to be [C]lonely

@@ -1,6 +1,6 @@
 {meta: title Promises}
 {meta: artist Lefty Frizzell}
-{meta: writer J. Tucker}
+{meta: composer J. Tucker}
 
 {start_of_verse: Verse 1}
 [C]How can I believe that you won't [G7]deceive

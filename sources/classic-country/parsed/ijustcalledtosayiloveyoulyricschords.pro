@@ -1,6 +1,6 @@
 {meta: title I Just Called to Say I Love You}
 {meta: artist Jason Allen}
-{meta: writer Stevie Wonder}
+{meta: composer Stevie Wonder}
 
 {start_of_verse: Verse 1}
 [C]No New Year's Day [G7]to cele[C]brate [G7]

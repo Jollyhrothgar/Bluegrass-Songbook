@@ -1,6 +1,6 @@
 {meta: title If Fingerprints Showed Up On Skin}
 {meta: artist Freddie Hart}
-{meta: writer Kenneth E. Hunt and Freddie Hart}
+{meta: composer Kenneth E. Hunt and Freddie Hart}
 
 {start_of_verse: Verse 1}
 [C]If [F]fingerprints [C]showed up on skin [G7]wonder who's I'd find on [C]you

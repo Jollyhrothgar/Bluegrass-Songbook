@@ -1,6 +1,6 @@
 {meta: title Reckless}
 {meta: artist Alabama}
-{meta: writer Jeff Stevens and Michael Clark}
+{meta: composer Jeff Stevens and Michael Clark}
 
 {start_of_verse: Verse 1}
 [C]Let's roll the windows down turn the [F]radio up 

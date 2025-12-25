@@ -1,6 +1,6 @@
 {meta: title I'll Be On That Good Road Someday}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Bruce Phillips}
+{meta: composer Bruce Phillips}
 
 {start_of_verse: Verse 1}
 [C]I'll be on that good road [F]someday 

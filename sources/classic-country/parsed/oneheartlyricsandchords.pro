@@ -1,6 +1,6 @@
 {meta: title One Heart}
 {meta: artist George Hamilton IV}
-{meta: writer Carl Wells}
+{meta: composer Carl Wells}
 
 {start_of_verse: Verse 1}
 [G]One heart[F]   [G]is all I can [C]give

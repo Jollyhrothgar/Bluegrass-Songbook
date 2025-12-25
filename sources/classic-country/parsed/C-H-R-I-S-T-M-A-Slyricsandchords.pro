@@ -1,6 +1,6 @@
 {meta: title C-H-R-I-S-T-M-A-S}
 {meta: artist Slim Whitman}
-{meta: writer Scott Turner and Slim Whitman}
+{meta: composer Scott Turner and Slim Whitman}
 
 {start_of_verse: Verse 1}
 [C]C is for the Christ Child who [Am]died for us

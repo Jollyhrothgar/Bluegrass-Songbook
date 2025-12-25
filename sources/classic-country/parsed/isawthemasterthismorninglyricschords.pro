@@ -1,6 +1,6 @@
 {meta: title I Saw The Master This Morning}
 {meta: artist Daryl Dasher}
-{meta: writer David Gillon and Sharon Higgins}
+{meta: composer David Gillon and Sharon Higgins}
 
 {start_of_verse: Verse 1}
 [G]I saw the [D7]Master this [G]morning

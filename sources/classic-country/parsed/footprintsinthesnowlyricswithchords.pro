@@ -1,6 +1,6 @@
 {meta: title Footprints In The Snow}
 {meta: artist Carl Smith}
-{meta: writer Rupert Jones}
+{meta: composer Rupert Jones}
 
 {start_of_verse: Verse 1}
 [G]Now some folks like the summertime when they can walk [C]about

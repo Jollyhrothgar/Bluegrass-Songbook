@@ -1,6 +1,6 @@
 {meta: title Don't You Believe Her}
 {meta: artist Ray Price}
-{meta: writer Nat Stuckey}
+{meta: composer Nat Stuckey}
 
 {start_of_verse: Verse 1}
 [C]She can give you a reason to live if she wants [G7]to

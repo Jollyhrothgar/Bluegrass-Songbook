@@ -1,6 +1,6 @@
 {meta: title I Called On The Master}
 {meta: artist Eddy Arnold}
-{meta: writer Gorad Brady and Ralph Wingert}
+{meta: composer Gorad Brady and Ralph Wingert}
 
 {start_of_verse: Verse 1}
 [C]I called on the [F]Mas[C]ter

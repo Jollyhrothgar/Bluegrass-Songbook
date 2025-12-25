@@ -1,6 +1,6 @@
 {meta: title That's Where My Baby Feels At Home}
 {meta: artist Faron Young}
-{meta: writer Wayne Kemp, Curtis Wayne, Faron Young}
+{meta: composer Wayne Kemp, Curtis Wayne, Faron Young}
 
 {start_of_verse: Verse 1}
 [C]I met her in that smoke filled bar 

@@ -1,6 +1,6 @@
 {meta: title Just Like Old Times}
 {meta: artist Charlie Rich}
-{meta: writer Spooner Oldham and Don Schroeder}
+{meta: composer Spooner Oldham and Don Schroeder}
 
 {start_of_verse: Verse 1}
 [C]Well I walked [G7]where we used to [C]walk

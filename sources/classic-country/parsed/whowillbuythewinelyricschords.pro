@@ -1,6 +1,6 @@
 {meta: title Who Will Buy The Wine}
 {meta: artist Charlie Walker}
-{meta: writer Billy Mize}
+{meta: composer Billy Mize}
 
 {start_of_verse: Verse 1}
 [C]Not long ago you held our babies [F]bottle

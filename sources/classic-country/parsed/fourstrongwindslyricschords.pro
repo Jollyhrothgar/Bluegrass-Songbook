@@ -1,6 +1,6 @@
 {meta: title Four Strong Winds}
 {meta: artist Bobby Bare}
-{meta: writer Ian Tyson}
+{meta: composer Ian Tyson}
 
 {start_of_verse: Verse 1}
 [C]Four Strong Winds That Blow [F]Lonely

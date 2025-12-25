@@ -1,6 +1,6 @@
 {meta: title Here Comes That Sin Again}
 {meta: artist Carl Smith}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Here comes that sin again

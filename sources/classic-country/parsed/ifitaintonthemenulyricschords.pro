@@ -1,6 +1,6 @@
 {meta: title If It Ain't On The Menu}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Eddie Noack}
+{meta: composer Eddie Noack}
 
 {start_of_verse: Verse 1}
 [G]When a dog gets hungry he needs a bone

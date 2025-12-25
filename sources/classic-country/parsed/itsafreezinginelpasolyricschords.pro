@@ -1,6 +1,6 @@
 {meta: title It's A Freezing In El Paso}
 {meta: artist Bobby Bare}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [C]I can [G7]hear her footsteps walkin' by my [Am]bedside Lord she's leavin'

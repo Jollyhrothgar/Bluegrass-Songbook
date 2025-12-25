@@ -1,6 +1,6 @@
 {meta: title Tennessee Bird Walk}
 {meta: artist Buck Owens}
-{meta: writer Jack Blanchard}
+{meta: composer Jack Blanchard}
 
 {start_of_verse: Verse 1}
 [G]Take away the trees and the birds

@@ -1,6 +1,6 @@
 {meta: title Both Sides Now}
 {meta: artist Anne Murray}
-{meta: writer Joni Mitchell}
+{meta: composer Joni Mitchell}
 
 {start_of_verse: Verse 1}
 [C]Bows and [F]flows of [C]angel hair and ice cream [Em]castles in [F]the [C]air

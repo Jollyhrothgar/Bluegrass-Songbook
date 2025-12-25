@@ -1,6 +1,6 @@
 {meta: title Why Don't We Sleep On It}
 {meta: artist Billy Crash Craddock}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G7]Why don't we [C]sle[Em]ep on [Am]it  [C]

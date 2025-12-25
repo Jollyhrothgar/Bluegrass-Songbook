@@ -1,6 +1,6 @@
 {meta: title Hallelujah I Love Him So}
 {meta: artist Brenda Lee}
-{meta: writer Ray Charles}
+{meta: composer Ray Charles}
 
 {start_of_verse: Verse 1}
 [C]Let me tell you bout a guy [F]I [C]know

@@ -1,6 +1,6 @@
 {meta: title Wedding Bells}
 {meta: artist Hank Williams}
-{meta: writer Claude Boone}
+{meta: composer Claude Boone}
 
 {start_of_verse: Verse 1}
 [G]I have the invitation [D7]that you sent [G]me

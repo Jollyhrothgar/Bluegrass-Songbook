@@ -1,6 +1,6 @@
 {meta: title A Little At A Time}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash and Gordon Terry}
+{meta: composer Johnny Cash and Gordon Terry}
 
 {start_of_verse: Verse 1}
 [C]Stop loving me a [F]little at a [C]time

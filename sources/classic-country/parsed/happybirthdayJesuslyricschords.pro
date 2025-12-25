@@ -1,6 +1,6 @@
 {meta: title Happy Birthday Jesus}
 {meta: artist Faron Young}
-{meta: writer Bill Emerson and Jody Emerson}
+{meta: composer Bill Emerson and Jody Emerson}
 
 {start_of_verse: Verse 1}
 [G]Happy Birthday Jesus [C]we all [D7]love you [G]so

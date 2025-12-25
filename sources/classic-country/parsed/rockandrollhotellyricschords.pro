@@ -1,6 +1,6 @@
 {meta: title Rock And Roll Hotel}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]If you ever get down to Nashville way

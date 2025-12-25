@@ -1,6 +1,6 @@
 {meta: title Bethlehem Star}
 {meta: artist Slim Whitman}
-{meta: writer E.S. Tillotson and W. Moore}
+{meta: composer E.S. Tillotson and W. Moore}
 
 {start_of_verse: Verse 1}
 [C]Wrapped in the silence of midnight

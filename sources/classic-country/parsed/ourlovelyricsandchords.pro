@@ -1,6 +1,6 @@
 {meta: title Our Love}
 {meta: artist Ricky Van Shelton}
-{meta: writer Mike Geiger, Woody Mullis, Deanna Cox}
+{meta: composer Mike Geiger, Woody Mullis, Deanna Cox}
 
 {start_of_verse: Verse 1}
 [C]Well I never did think that anything happens for a [G7]reason

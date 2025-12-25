@@ -1,6 +1,6 @@
 {meta: title We Missed You}
 {meta: artist Kitty Wells}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]We missed you and we're [D7]glad you've come [G]home

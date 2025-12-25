@@ -1,6 +1,6 @@
 {meta: title My Rifle My Pony And Me}
 {meta: artist Don Williams}
-{meta: writer Paul F. Webster and Dimitri Tiomkin}
+{meta: composer Paul F. Webster and Dimitri Tiomkin}
 
 {start_of_verse: Verse 1}
 [C]The sun is sinking in the west

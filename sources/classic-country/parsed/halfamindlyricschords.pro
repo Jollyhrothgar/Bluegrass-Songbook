@@ -1,6 +1,6 @@
 {meta: title Half A Mind}
 {meta: artist Ernest Tubb}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]I don't [D7]love you like [G]I used to [G7]do 

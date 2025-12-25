@@ -1,6 +1,6 @@
 {meta: title Another Dream Just Came True}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Don Schlitz}
+{meta: composer Don Schlitz}
 
 {start_of_verse: Verse 1}
 [G]I was lonely and [A7]downhearted

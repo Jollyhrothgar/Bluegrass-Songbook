@@ -1,6 +1,6 @@
 {meta: title Drop Some Silver In The Jukebox}
 {meta: artist Dick Curless}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]I walked into a tavern it was cheap and [G7]small

@@ -1,6 +1,6 @@
 {meta: title The Armour}
 {meta: artist Lifebreakthrough}
-{meta: writer Hubert Dapliyan}
+{meta: composer Hubert Dapliyan}
 
 {start_of_verse: Verse 1}
 [G]Brace yourselves for the dark cloud is here 

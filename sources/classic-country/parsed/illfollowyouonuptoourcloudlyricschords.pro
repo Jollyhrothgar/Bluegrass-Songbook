@@ -1,6 +1,6 @@
 {meta: title I'll Follow You On Up To Our Cloud}
 {meta: artist Johnny Paycheck}
-{meta: writer David Turner}
+{meta: composer David Turner}
 
 {start_of_verse: Verse 1}
 [G]I've been t-o-ld  [D7][Am]my days are [G]numbered

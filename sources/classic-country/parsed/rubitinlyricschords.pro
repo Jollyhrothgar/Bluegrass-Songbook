@@ -1,6 +1,6 @@
 {meta: title Rub It In}
 {meta: artist Billy Crash Craddock}
-{meta: writer Layng Martine}
+{meta: composer Layng Martine}
 
 {start_of_verse: Verse 1}
 [G]Lie beside me on the sand

@@ -1,6 +1,6 @@
 {meta: title Where The Sidewalk Ends}
 {meta: artist George Strait}
-{meta: writer Jim Lauderdale and John Leventhal}
+{meta: composer Jim Lauderdale and John Leventhal}
 
 {start_of_verse: Verse 1}
 [G]Where the sidewalk ends and the road [Em]begins 

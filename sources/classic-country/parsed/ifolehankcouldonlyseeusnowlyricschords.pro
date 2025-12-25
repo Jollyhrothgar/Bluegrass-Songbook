@@ -1,6 +1,6 @@
 {meta: title If Ole Hank Could Only See Us Now}
 {meta: artist Waylon Jennings}
-{meta: writer Waylon Jennings and Roger Murrah}
+{meta: composer Waylon Jennings and Roger Murrah}
 
 {start_of_verse: Verse 1}
 [G]If Ole Hank could only see us now

@@ -1,6 +1,6 @@
 {meta: title Blues Are Settin' In Lyrics Chords}
 {meta: artist Kitty Wells}
-{meta: writer Bill Phillips}
+{meta: composer Bill Phillips}
 
 {start_of_verse: Verse 1}
 [C]Lonely nights and blues are settin' in

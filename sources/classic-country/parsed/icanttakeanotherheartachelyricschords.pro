@@ -1,6 +1,6 @@
 {meta: title I Can’t Take Another Heartache}
 {meta: artist John Anderson}
-{meta: writer Roger Murrah and Scott Anders}
+{meta: composer Roger Murrah and Scott Anders}
 
 {start_of_verse: Verse 1}
 [C]Lips tell me she was lying

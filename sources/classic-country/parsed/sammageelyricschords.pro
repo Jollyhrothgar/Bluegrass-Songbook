@@ -1,6 +1,6 @@
 {meta: title Sam Magee}
 {meta: artist Johnny Horton}
-{meta: writer Jimmie Driftwood}
+{meta: composer Jimmie Driftwood}
 
 {start_of_verse: Verse 1}
 [C]There's a valley by the ol' North [F]Pole

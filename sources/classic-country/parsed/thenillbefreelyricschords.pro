@@ -1,6 +1,6 @@
 {meta: title Then I'll Be Free}
 {meta: artist Don Gibson}
-{meta: writer Don Bowman and Ray Corbin}
+{meta: composer Don Bowman and Ray Corbin}
 
 {start_of_verse: Verse 1}
 [Am]All I gotta [C]do is forget about you

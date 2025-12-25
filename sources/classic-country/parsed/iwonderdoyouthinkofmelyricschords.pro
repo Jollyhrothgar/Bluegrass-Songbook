@@ -1,6 +1,6 @@
 {meta: title I Wonder Do You Think Of Me}
 {meta: artist Keith Whitley}
-{meta: writer Sander D. Shafer}
+{meta: composer Sander D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]If you drive [Em]around back in [F]our old home[Fm]town

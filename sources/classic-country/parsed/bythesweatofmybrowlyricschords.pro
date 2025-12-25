@@ -1,6 +1,6 @@
 {meta: title By The Sweat Of My Brow}
 {meta: artist Hank Locklin}
-{meta: writer Jack Rhodes}
+{meta: composer Jack Rhodes}
 
 {start_of_verse: Verse 1}
 [C]I’m making my living by the [C7]sweat of my [F]brow

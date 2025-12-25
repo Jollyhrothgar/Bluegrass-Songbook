@@ -1,4 +1,4 @@
-{meta: writer John Henry Hopkins}
+{meta: composer John Henry Hopkins}
 
 {start_of_verse: Verse 1}
 [Em]We three kings of [B7]Orient [Em]are

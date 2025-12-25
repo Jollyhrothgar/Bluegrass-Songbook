@@ -1,6 +1,6 @@
 {meta: title Down The Sawdust Trail}
 {meta: artist Jimmie Davis}
-{meta: writer Millie Lou Pace}
+{meta: composer Millie Lou Pace}
 
 {start_of_verse: Verse 1}
 [G]There are so many [D7]memories of my [G]childhood

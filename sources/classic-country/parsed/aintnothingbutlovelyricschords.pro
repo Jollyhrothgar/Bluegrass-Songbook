@@ -1,6 +1,6 @@
 {meta: title Ain't Nothing But Love}
 {meta: artist Ricky Nelson}
-{meta: writer Thomas Knight}
+{meta: composer Thomas Knight}
 
 {start_of_verse: Verse 1}
 [G](It ain't nothin' but [D7]love it ain't nothin' but [G]love)

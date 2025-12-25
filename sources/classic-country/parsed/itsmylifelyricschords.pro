@@ -1,6 +1,6 @@
 {meta: title It's My Life}
 {meta: artist Bill Anderson}
-{meta: writer recorded by Bill Anderson}
+{meta: composer recorded by Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]You don't understand the pattern of my life

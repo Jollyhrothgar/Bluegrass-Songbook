@@ -1,6 +1,6 @@
 {meta: title That's All I Need To Know}
 {meta: artist Alan Jackson}
-{meta: writer Jim McBride and Alan Jackson}
+{meta: composer Jim McBride and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]I had to look through our old pictures 

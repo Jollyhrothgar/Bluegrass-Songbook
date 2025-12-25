@@ -1,6 +1,6 @@
 {meta: title When Will The Rainbow Follow The Rain}
 {meta: artist Carl Smith}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]You came along but now you're gone

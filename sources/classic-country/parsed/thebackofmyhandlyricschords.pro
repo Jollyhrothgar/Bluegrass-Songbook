@@ -1,6 +1,6 @@
 {meta: title The Back Of My Hand}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Jimmy Dickens and Skip Graves}
+{meta: composer Jimmy Dickens and Skip Graves}
 
 {start_of_verse: Verse 1}
 [G]You're leaving [G7]again your [C]things are all packed

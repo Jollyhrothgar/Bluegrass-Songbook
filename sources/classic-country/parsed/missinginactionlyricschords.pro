@@ -1,6 +1,6 @@
 {meta: title Missing In Action}
 {meta: artist Ernest Tubb}
-{meta: writer A. Q. Smith and Helen Kaye}
+{meta: composer A. Q. Smith and Helen Kaye}
 
 {start_of_verse: Verse 1}
 [C]The warships had landed and [F]I came a[C]shore

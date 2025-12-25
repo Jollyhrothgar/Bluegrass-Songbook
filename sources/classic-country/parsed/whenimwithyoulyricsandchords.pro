@@ -1,6 +1,6 @@
 {meta: title When I'm With You}
 {meta: artist Webb Pierce}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [F]When we're apart time stands [C]still

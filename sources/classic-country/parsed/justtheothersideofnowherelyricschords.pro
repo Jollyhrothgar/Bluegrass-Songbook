@@ -1,6 +1,6 @@
 {meta: title Just The Other Side Of Nowhere}
 {meta: artist Johnny Cash}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [C]I come from just the other side of nowhere

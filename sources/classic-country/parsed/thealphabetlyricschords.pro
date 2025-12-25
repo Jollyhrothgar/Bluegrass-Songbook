@@ -1,6 +1,6 @@
 {meta: title The Alphabet}
 {meta: artist Hank Snow}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [G](Hear hear hear the alphabet

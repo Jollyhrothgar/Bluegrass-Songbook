@@ -1,6 +1,6 @@
 {meta: title Snap Your Fingers}
 {meta: artist Ronnie Milsap}
-{meta: writer Grady Martin and Alex Zinetis}
+{meta: composer Grady Martin and Alex Zinetis}
 
 {start_of_verse: Verse 1}
 [G]Snap your fingers I'll come [C]running

@@ -1,6 +1,6 @@
 {meta: title C'mon Everybody}
 {meta: artist Elvis Presley}
-{meta: writer Joy Byers}
+{meta: composer Joy Byers}
 
 {start_of_verse: Verse 1}
 [C]Come on everybody and snap your fingers now

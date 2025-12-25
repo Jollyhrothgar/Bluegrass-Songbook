@@ -1,6 +1,6 @@
 {meta: title Mississippi River Let Your Water Flow}
 {meta: artist Doyle Lawson}
-{meta: writer Jamie Dailey and Doyle Lawson}
+{meta: composer Jamie Dailey and Doyle Lawson}
 
 {start_of_verse: Verse 1}
 [C]It's been a long time coming but I'm finally on my way 

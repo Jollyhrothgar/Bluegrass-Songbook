@@ -1,6 +1,6 @@
 {meta: title I Had Someone Else Before I Had You}
 {meta: artist Bob Wills}
-{meta: writer John Darcy and Phil Harris}
+{meta: composer John Darcy and Phil Harris}
 
 {start_of_verse: Verse 1}
 [C]I had someone else before I had you

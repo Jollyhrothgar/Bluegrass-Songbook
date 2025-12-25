@@ -1,6 +1,6 @@
 {meta: title It Would Be A Doggone Lie}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Autry Inman}
+{meta: composer Autry Inman}
 
 {start_of_verse: Verse 1}
 [C]When the sun come up this morning 

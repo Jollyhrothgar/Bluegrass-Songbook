@@ -1,6 +1,6 @@
 {meta: title Come From The Heart}
 {meta: artist Don Williams}
-{meta: writer Richard Leigh and Susanna Clark}
+{meta: composer Richard Leigh and Susanna Clark}
 
 {start_of_verse: Verse 1}
 [C]My daddy told me when I was a young [F]man

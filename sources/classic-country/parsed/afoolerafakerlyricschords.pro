@@ -1,6 +1,6 @@
 {meta: title A Fooler A Faker}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Billy Gray}
+{meta: composer Hank Thompson and Billy Gray}
 
 {start_of_verse: Verse 1}
 [G]You're a fooler a faker a [C]little heart[G]breaker

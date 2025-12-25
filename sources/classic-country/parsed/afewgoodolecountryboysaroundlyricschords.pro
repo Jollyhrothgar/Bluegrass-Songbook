@@ -1,6 +1,6 @@
 {meta: title A Few Good Ole Country Boys Around}
 {meta: artist George Jones and Randy Travis}
-{meta: writer Troy H. Seals and Ralph M. Williams}
+{meta: composer Troy H. Seals and Ralph M. Williams}
 
 {start_of_verse: Verse 1}
 [G]Not too many years ago when [G7]dreams were coming [C]true

@@ -1,6 +1,6 @@
 {meta: title Just For The Love Of It}
 {meta: artist Charley Pride}
-{meta: writer Jeff Korretz Chase and Wood A. Newton}
+{meta: composer Jeff Korretz Chase and Wood A. Newton}
 
 {start_of_verse: Verse 1}
 [C]I remember walking with my daddy through his weathered fields of [F]grain

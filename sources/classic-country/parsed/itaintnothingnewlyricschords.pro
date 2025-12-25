@@ -1,6 +1,6 @@
 {meta: title It Ain't Nothing New}
 {meta: artist Randy Travis & Rhonda Vincent}
-{meta: writer Larry E. Cordle, Larry Shell, Betty Key}
+{meta: composer Larry E. Cordle, Larry Shell, Betty Key}
 
 {start_of_verse: Verse 1}
 [G]They say that once the new wears off the [D7]test of love begins

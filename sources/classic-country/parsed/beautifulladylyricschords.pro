@@ -1,6 +1,6 @@
 {meta: title Beautiful Lady}
 {meta: artist Jack Greene}
-{meta: writer Charles F. Craig and Gayron C. Lytle}
+{meta: composer Charles F. Craig and Gayron C. Lytle}
 
 {start_of_verse: Verse 1}
 [C]I know you are a lady and [F]why you are [C]here

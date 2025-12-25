@@ -1,6 +1,6 @@
 {meta: title Mistakes I Made Yesterday}
 {meta: artist Leon Copas}
-{meta: writer Wade Holmes}
+{meta: composer Wade Holmes}
 
 {start_of_verse: Verse 1}
 [C]My head is bowed in sorrow my [F]heart is filled with [C]pain

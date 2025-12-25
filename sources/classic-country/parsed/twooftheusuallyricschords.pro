@@ -1,6 +1,6 @@
 {meta: title Two Of The Usual}
 {meta: artist Conway Twitty}
-{meta: writer Fred Carter}
+{meta: composer Fred Carter}
 
 {start_of_verse: Verse 1}
 [G]We had just set [C]our wedding day and [D7]I took you [G]home

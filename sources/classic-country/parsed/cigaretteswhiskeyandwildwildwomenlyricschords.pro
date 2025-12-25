@@ -1,6 +1,6 @@
 {meta: title Cigarettes Whiskey and Wild Wild Women}
 {meta: artist Wilburn Brothers}
-{meta: writer Tim Spencer}
+{meta: composer Tim Spencer}
 
 {start_of_verse: Verse 1}
 [G]Cigarettes and whiskey and [C]wild wild [G]women

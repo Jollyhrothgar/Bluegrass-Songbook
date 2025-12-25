@@ -1,6 +1,6 @@
 {meta: title Teardrops On The Rocks}
 {meta: artist Jim Reeves}
-{meta: writer Bobby Bare and Charlie Williams}
+{meta: composer Bobby Bare and Charlie Williams}
 
 {start_of_verse: Verse 1}
 [C]Well hello Sam now how you been

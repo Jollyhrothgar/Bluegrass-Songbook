@@ -1,6 +1,6 @@
 {meta: title Have I Stayed Away Too Long}
 {meta: artist Willie Nelson}
-{meta: writer Frank Loesser}
+{meta: composer Frank Loesser}
 
 {start_of_verse: Verse 1}
 [C]Have I stayed [G7]away too [C]long 

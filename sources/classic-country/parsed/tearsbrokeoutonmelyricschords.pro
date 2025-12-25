@@ -1,6 +1,6 @@
 {meta: title Tears Broke Out On Me}
 {meta: artist Eddy Arnold}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I haven't been well in the [G7]last two days 

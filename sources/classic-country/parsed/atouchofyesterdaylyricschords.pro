@@ -1,6 +1,6 @@
 {meta: title A Touch Of Yesterday}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]I'd beg and [E7]steal [F]if I could [D7]feel

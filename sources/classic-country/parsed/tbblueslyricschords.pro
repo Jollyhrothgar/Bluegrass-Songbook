@@ -1,6 +1,6 @@
 {meta: title T.B. Blues}
 {meta: artist Merle Haggard}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]My good gal's trying to make a fool out of me[C7]

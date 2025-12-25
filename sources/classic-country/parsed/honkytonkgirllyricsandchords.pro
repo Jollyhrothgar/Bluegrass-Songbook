@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Girl}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Chuck Hardin}
+{meta: composer Hank Thompson and Chuck Hardin}
 
 {start_of_verse: Verse 1}
 [G]Don't be fool by big blue [D7]eyes 

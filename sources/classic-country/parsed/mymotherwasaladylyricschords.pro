@@ -1,6 +1,6 @@
 {meta: title My Mother Was A Lady}
 {meta: artist Marty Robbins}
-{meta: writer E.B Marks Jr. and Joseph Stern}
+{meta: composer E.B Marks Jr. and Joseph Stern}
 
 {start_of_verse: Verse 1}
 [C]Two drummers they were seated in a grand hotel one day

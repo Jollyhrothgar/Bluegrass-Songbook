@@ -1,6 +1,6 @@
 {meta: title But You Know I Love You}
 {meta: artist Bill Anderson}
-{meta: writer Mike Settle and Pierre Delanoe}
+{meta: composer Mike Settle and Pierre Delanoe}
 
 {start_of_verse: Verse 1}
 [G]Now the morning sun streaks across my [D7]room

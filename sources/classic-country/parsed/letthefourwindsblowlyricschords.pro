@@ -1,6 +1,6 @@
 {meta: title Let The Four Winds Blow}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Antoine Domino}
+{meta: composer Dave Bartholomew and Antoine Domino}
 
 {start_of_verse: Verse 1}
 [G]I like the way you [C]walk

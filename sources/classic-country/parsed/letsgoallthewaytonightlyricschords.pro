@@ -1,6 +1,6 @@
 {meta: title Let's Go All The Way Tonight}
 {meta: artist Mel Tillis}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [G7]Darling [F]let's go all [G7]the way [C]tonight

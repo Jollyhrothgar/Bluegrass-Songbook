@@ -1,6 +1,6 @@
 {meta: title Everything's A Wreck (Since You're Gone)}
 {meta: artist Dottie West}
-{meta: writer Dottie West and Bill West}
+{meta: composer Dottie West and Bill West}
 
 {start_of_verse: Verse 1}
 [G]The grass on the lawn is almost knee [C]high

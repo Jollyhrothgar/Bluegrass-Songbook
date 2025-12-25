@@ -1,6 +1,6 @@
 {meta: title Maybe Love Will Save The Day}
 {meta: artist Ron Williams}
-{meta: writer Jody W. Johnson and David H. Lindsey}
+{meta: composer Jody W. Johnson and David H. Lindsey}
 
 {start_of_verse: Verse 1}
 [C]Let's count all your reasons for [F]leavin'

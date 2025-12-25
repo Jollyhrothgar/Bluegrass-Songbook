@@ -1,6 +1,6 @@
 {meta: title When You Need a Laugh}
 {meta: artist Patsy Cline}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]You can't imagine how it hurts me  to have you treat me like you [C7]do

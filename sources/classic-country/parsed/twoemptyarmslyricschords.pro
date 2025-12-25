@@ -1,6 +1,6 @@
 {meta: title Two Empty Arms}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]The one that I love just walked right out on [G7]me

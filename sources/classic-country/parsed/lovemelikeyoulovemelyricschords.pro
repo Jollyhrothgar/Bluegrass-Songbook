@@ -1,6 +1,6 @@
 {meta: title Love Me Like You Love Me}
 {meta: artist Clay Walker}
-{meta: writer Bill LaBounty and Steve Wariner}
+{meta: composer Bill LaBounty and Steve Wariner}
 
 {start_of_verse: Verse 1}
 [G]Back when we led the [Em]good times roll

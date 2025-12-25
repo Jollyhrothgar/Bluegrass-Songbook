@@ -1,6 +1,6 @@
 {meta: title I Am Weary Let Me Rest}
 {meta: artist The Cox Family}
-{meta: writer Pete Kuykendall}
+{meta: composer Pete Kuykendall}
 
 {start_of_verse: Verse 1}
 [C]Kiss me mother  kiss [F]your [C]darling

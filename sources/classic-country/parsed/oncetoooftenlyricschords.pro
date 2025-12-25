@@ -1,6 +1,6 @@
 {meta: title Once Too Often}
 {meta: artist Billy Walker}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]You brushed away my caress 

@@ -1,6 +1,6 @@
 {meta: title God's Own Singer}
 {meta: artist J.D. Crowe}
-{meta: writer Bernie Leadon}
+{meta: composer Bernie Leadon}
 
 {start_of_verse: Verse 1}
 [C]Straight backed chair [G7]and a [C]table where he [G7]sits when he's [F]able

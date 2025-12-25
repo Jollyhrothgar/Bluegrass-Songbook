@@ -1,6 +1,6 @@
 {meta: title Tiny Town}
 {meta: artist Tracy Byrd}
-{meta: writer Keith Stegall}
+{meta: composer Keith Stegall}
 
 {start_of_verse: Verse 1}
 [C]I grew up in a [G7]tiny town 

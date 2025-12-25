@@ -1,6 +1,6 @@
 {meta: title It's A Mighty Thin Line Between Love And Hate}
 {meta: artist Johnny Paycheck}
-{meta: writer Johnny Paycheck and Aubrey Mayhew}
+{meta: composer Johnny Paycheck and Aubrey Mayhew}
 
 {start_of_verse: Verse 1}
 [G]I love you so much it never [F]entered my [C]mind

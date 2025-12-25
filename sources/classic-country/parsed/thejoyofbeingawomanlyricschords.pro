@@ -1,6 +1,6 @@
 {meta: title The Joy Of Being A Woman}
 {meta: artist Tammy Wynette}
-{meta: writer Dan Hoffman and Chuck Woolery}
+{meta: composer Dan Hoffman and Chuck Woolery}
 
 {start_of_verse: Verse 1}
 [G]See our baby [Bm]on the swing

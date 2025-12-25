@@ -1,6 +1,6 @@
 {meta: title Walking My Lord Up Calvary’s Hill}
 {meta: artist Rhonda Vincent}
-{meta: writer Ruby Moody}
+{meta: composer Ruby Moody}
 
 {start_of_verse: Verse 1}
 [G]On the cross as He hung in [C]shame was for[G]saken

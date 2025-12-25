@@ -1,6 +1,6 @@
 {meta: title Sweet Susannah}
 {meta: artist Kris Kristofferson}
-{meta: writer Gib Guilbeau}
+{meta: composer Gib Guilbeau}
 
 {start_of_verse: Verse 1}
 [C]C'est la belle 'la Louise Anne te va [G7]fomma faire ma faume

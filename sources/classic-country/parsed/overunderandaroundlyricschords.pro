@@ -1,6 +1,6 @@
 {meta: title Over Under And Around}
 {meta: artist Reba McEntire}
-{meta: writer Mark Miller and Robert Randall}
+{meta: composer Mark Miller and Robert Randall}
 
 {start_of_verse: Verse 1}
 [Am]You've been treatin' me like a [C]candle

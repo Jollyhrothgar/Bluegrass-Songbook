@@ -1,6 +1,6 @@
 {meta: title Shiny Red Automobile}
 {meta: artist George Morgan}
-{meta: writer Dixie Deen and Ray King}
+{meta: composer Dixie Deen and Ray King}
 
 {start_of_verse: Verse 1}
 [C]I pulled out of St. Paul and started my haul

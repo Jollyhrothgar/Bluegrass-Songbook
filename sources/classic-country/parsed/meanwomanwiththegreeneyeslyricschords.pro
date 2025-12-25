@@ -1,6 +1,6 @@
 {meta: title Mean Woman With The Green Eyes}
 {meta: artist Charlie Walker}
-{meta: writer Sheb Wooley}
+{meta: composer Sheb Wooley}
 
 {start_of_verse: Verse 1}
 [G]It takes a mean woman with the [E7]green eyes 

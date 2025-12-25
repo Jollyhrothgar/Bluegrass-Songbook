@@ -1,6 +1,6 @@
 {meta: title Looking For Ways}
 {meta: artist Eddy Raven}
-{meta: writer Frank J. Myers and Eddy Raven}
+{meta: composer Frank J. Myers and Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]The moon is already high [F]up over [C]Austin

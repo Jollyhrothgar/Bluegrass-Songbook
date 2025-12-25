@@ -1,6 +1,6 @@
 {meta: title That Don't Change The Way I Feel About You}
 {meta: artist George Strait}
-{meta: writer and recorded by George Strait}
+{meta: composer and recorded by George Strait}
 
 {start_of_verse: Verse 1}
 [C]My old pickup truck

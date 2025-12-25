@@ -1,6 +1,6 @@
 {meta: title I Love You Baby}
 {meta: artist Johnny Horton}
-{meta: writer Donnie Bowshier}
+{meta: composer Donnie Bowshier}
 
 {start_of_verse: Verse 1}
 [C]I love you baby I [G7]don't mean maybe you drive [C]me [F]crazy

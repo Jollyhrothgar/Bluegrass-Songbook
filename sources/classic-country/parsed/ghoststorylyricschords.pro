@@ -1,6 +1,6 @@
 {meta: title Ghost Story}
 {meta: artist Don Williams}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [G]I see how he travels

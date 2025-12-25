@@ -1,6 +1,6 @@
 {meta: title Blue Monday}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew}
+{meta: composer Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [G]Blue Monday I hate blue Monday

@@ -1,6 +1,6 @@
 {meta: title Through The Bottom Of The Glass}
 {meta: artist Leon Rausch}
-{meta: writer Paul Craft}
+{meta: composer Paul Craft}
 
 {start_of_verse: Verse 1}
 [C]She’s off misbehaving [G7]with him not with [C]me

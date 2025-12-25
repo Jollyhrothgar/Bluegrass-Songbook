@@ -1,6 +1,6 @@
 {meta: title Love's Gonna Happen To Me}
 {meta: artist Wynn Stewart}
-{meta: writer Jim Stewart}
+{meta: composer Jim Stewart}
 
 {start_of_verse: Verse 1}
 [C]Every time I see you I get a funny feeling like

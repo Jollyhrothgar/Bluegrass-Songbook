@@ -1,6 +1,6 @@
 {meta: title Your Love Is Like A Flower}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer E. Lilly, Lester Flatt, Earl Scruggs}
+{meta: composer E. Lilly, Lester Flatt, Earl Scruggs}
 
 {start_of_verse: Verse 1}
 [G]It was long long ago in the [C]moonlight

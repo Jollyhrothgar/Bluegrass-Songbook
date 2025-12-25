@@ -1,6 +1,6 @@
 {meta: title You'd Still Find A Way To Cheat On Me}
 {meta: artist Jean Shepard}
-{meta: writer Jack Rhodes, Billie Jo Spears, Henry Ebner}
+{meta: composer Jack Rhodes, Billie Jo Spears, Henry Ebner}
 
 {start_of_verse: Verse 1}
 [G]I could lock you in a deep [C]darken [G]dungeon

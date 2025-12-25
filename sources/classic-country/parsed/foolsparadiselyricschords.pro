@@ -1,6 +1,6 @@
 {meta: title Fool's Paradise}
 {meta: artist Buddy Holly}
-{meta: writer Horace Linsley, Norman Petty, Sonny LeGlaire}
+{meta: composer Horace Linsley, Norman Petty, Sonny LeGlaire}
 
 {start_of_verse: Verse 1}
 [C]You took me up to heaven when you took me in your arms

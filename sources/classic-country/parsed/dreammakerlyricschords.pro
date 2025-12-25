@@ -1,6 +1,6 @@
 {meta: title Dream Maker}
 {meta: artist Conway Twitty}
-{meta: writer Byron Hill and Remington Wilde}
+{meta: composer Byron Hill and Remington Wilde}
 
 {start_of_verse: Verse 1}
 [D7]You are my dream [G]maker

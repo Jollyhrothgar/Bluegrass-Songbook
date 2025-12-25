@@ -1,6 +1,6 @@
 {meta: title I Learned It All From You}
 {meta: artist Jean Shepard}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]If I'm sometimes unkind and treat you cruel [F]dear

@@ -1,6 +1,6 @@
 {meta: title The First Step Down Is The Longest}
 {meta: artist The Wilburn Brothers}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]The [F]first step down is the [C]longest 

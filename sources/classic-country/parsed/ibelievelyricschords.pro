@@ -1,6 +1,6 @@
 {meta: title I Believe}
 {meta: artist Elvis Presley}
-{meta: writer Ervin Drake, Irvin Grahm, Jimmy Shirl, Al Stillman}
+{meta: composer Ervin Drake, Irvin Grahm, Jimmy Shirl, Al Stillman}
 
 {start_of_verse: Verse 1}
 [C]I believe for [Am]every drop of [Dm]rain that falls  [G7]a flower [G7][C]grows

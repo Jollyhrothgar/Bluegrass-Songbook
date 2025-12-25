@@ -1,6 +1,6 @@
 {meta: title Where's Willie}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [G]Where's Willie where [C]did that rascal [G]go 

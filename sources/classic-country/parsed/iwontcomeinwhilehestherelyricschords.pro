@@ -1,6 +1,6 @@
 {meta: title I Won't Come In While He's There}
 {meta: artist Jim Reeves}
-{meta: writer Gene Davis}
+{meta: composer Gene Davis}
 
 {start_of_verse: Verse 1}
 [C]Thought I'd stop by awhile [G7]and see [C]you 

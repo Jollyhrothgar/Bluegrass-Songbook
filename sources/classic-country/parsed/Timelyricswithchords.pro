@@ -1,6 +1,6 @@
 {meta: title Time}
 {meta: artist Doug Stone}
-{meta: writer Steve Nelson and Suzanna Spring}
+{meta: composer Steve Nelson and Suzanna Spring}
 
 {start_of_verse: Verse 1}
 [G]Who knows why the wind blows [D7]who knows where it ends

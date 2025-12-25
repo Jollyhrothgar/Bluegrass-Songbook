@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Be Moving}
 {meta: artist Vern Gosdin}
-{meta: writer Randall Hilton}
+{meta: composer Randall Hilton}
 
 {start_of_verse: Verse 1}
 [G]This old world's no place for living

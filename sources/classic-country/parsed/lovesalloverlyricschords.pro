@@ -1,6 +1,6 @@
 {meta: title Love's All Over}
 {meta: artist Dolly Parton}
-{meta: writer Porter Wagoner}
+{meta: composer Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]I can see it on your face it's over 

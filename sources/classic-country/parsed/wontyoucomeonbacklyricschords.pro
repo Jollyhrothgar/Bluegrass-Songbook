@@ -1,6 +1,6 @@
 {meta: title Won't You Come On Back}
 {meta: artist Fats Domino}
-{meta: writer Antoine Domino, Tim Gillis, Marion Carpenter}
+{meta: composer Antoine Domino, Tim Gillis, Marion Carpenter}
 
 {start_of_verse: Verse 1}
 [G]You said you was going away I said I didn't mind

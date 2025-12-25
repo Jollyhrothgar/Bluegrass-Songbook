@@ -1,6 +1,6 @@
 {meta: title Are You Mine}
 {meta: artist Ernest Tubb and Loretta Lynn}
-{meta: writer Don Grashey, Jim Amaded and Myrna Lorrie}
+{meta: composer Don Grashey, Jim Amaded and Myrna Lorrie}
 
 {start_of_verse: Verse 1}
 [C]Are You Mine all life through

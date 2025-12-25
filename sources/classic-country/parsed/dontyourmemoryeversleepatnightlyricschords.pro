@@ -1,6 +1,6 @@
 {meta: title Don't Your Memory Ever Sleep at Night}
 {meta: artist Ronnie Milsap}
-{meta: writer Randy Hatch and Steve Dean}
+{meta: composer Randy Hatch and Steve Dean}
 
 {start_of_verse: Verse 1}
 [C]It's daybreak and I'm still [Am]awake

@@ -1,6 +1,6 @@
 {meta: title Blue Sea}
 {meta: artist Marty Robbins}
-{meta: writer Don Bailey}
+{meta: composer Don Bailey}
 
 {start_of_verse: Verse 1}
 [C]Blue sea [F]carry me [C]away

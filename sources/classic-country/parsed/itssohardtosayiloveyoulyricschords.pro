@@ -1,6 +1,6 @@
 {meta: title It's So Hard To Say I Love You}
 {meta: artist Hank Locklin}
-{meta: writer Biff Collie}
+{meta: composer Biff Collie}
 
 {start_of_verse: Verse 1}
 [G]It’s so [G7]hard to say I [C]love you

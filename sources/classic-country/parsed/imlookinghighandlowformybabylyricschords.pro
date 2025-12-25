@@ -1,6 +1,6 @@
 {meta: title I'm Looking High And Low For My Baby}
 {meta: artist Ernest Tubb}
-{meta: writer Art Gibson}
+{meta: composer Art Gibson}
 
 {start_of_verse: Verse 1}
 [C]I'm looking high and low for my [D7]baby

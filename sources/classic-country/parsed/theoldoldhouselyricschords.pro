@@ -1,6 +1,6 @@
 {meta: title The Old Old House}
 {meta: artist George Jones}
-{meta: writer Hal Bynum and George Jones}
+{meta: composer Hal Bynum and George Jones}
 
 {start_of_verse: Verse 1}
 [G]There's an old old house that [C]once was a [G]mansion

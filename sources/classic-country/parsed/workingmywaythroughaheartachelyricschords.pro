@@ -1,6 +1,6 @@
 {meta: title Working My Way Through A Heartache Lyrics Chords}
 {meta: artist Marty Robbins}
-{meta: writer Buddy Mize and Charles Field}
+{meta: composer Buddy Mize and Charles Field}
 
 {start_of_verse: Verse 1}
 [C]I get up every morning and start my daily [G7]routine

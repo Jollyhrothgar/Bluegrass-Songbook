@@ -1,6 +1,6 @@
 {meta: title Move Up A Little Closer}
 {meta: artist Wilburn Brothers}
-{meta: writer Johnny Mullins}
+{meta: composer Johnny Mullins}
 
 {start_of_verse: Verse 1}
 [C]Oh how well I do remember back in [F]old camp meetin' [C]times

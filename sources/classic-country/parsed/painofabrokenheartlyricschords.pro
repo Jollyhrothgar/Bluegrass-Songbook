@@ -1,6 +1,6 @@
 {meta: title Pain Of A Broken Heart}
 {meta: artist Connie Smith}
-{meta: writer Connie Smith and Marty Stuart}
+{meta: composer Connie Smith and Marty Stuart}
 
 {start_of_verse: Verse 1}
 [C]Oh the pain the pain of a broken heart

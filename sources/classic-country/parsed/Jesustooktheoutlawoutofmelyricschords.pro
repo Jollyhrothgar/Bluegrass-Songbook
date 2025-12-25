@@ -1,6 +1,6 @@
 {meta: title Jesus Took The Outlaw Out Of Me}
 {meta: artist Stonewall Jackson}
-{meta: writer Bill Sterling}
+{meta: composer Bill Sterling}
 
 {start_of_verse: Verse 1}
 [C]Jesus took the outlaw out of me praise God

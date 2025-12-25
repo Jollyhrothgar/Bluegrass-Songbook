@@ -1,6 +1,6 @@
 {meta: title I Get Up Early In The Morning}
 {meta: artist Roger Miller}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]When Christopher Columbus [D7]returned to Spain

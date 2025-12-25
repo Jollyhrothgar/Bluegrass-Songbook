@@ -1,6 +1,6 @@
 {meta: title Air That I Breathe}
 {meta: artist Hank Williams Jr.}
-{meta: writer Albert Hammond and Mike Hazlewood}
+{meta: composer Albert Hammond and Mike Hazlewood}
 
 {start_of_verse: Verse 1}
 [G]If I could make a wish I [B7]think I'd pass

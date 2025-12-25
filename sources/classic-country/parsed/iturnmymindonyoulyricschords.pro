@@ -1,6 +1,6 @@
 {meta: title I Turn My Mind On You}
 {meta: artist Jack Greene}
-{meta: writer Wayne Kemp and Dale Ward}
+{meta: composer Wayne Kemp and Dale Ward}
 
 {start_of_verse: Verse 1}
 [G]I knew the day you turned away

@@ -1,6 +1,6 @@
 {meta: title In A Mississippi Cotton Picking Delta Town}
 {meta: artist Charley Pride}
-{meta: writer Harold Dorman, Wiley Gann}
+{meta: composer Harold Dorman, Wiley Gann}
 
 {start_of_verse: Verse 1}
 [C]In a Mississippi cotton picking [G7]Delta town 

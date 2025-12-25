@@ -1,6 +1,6 @@
 {meta: title Angels Rock Me To Sleep}
 {meta: artist The Bluegrass Cardinals}
-{meta: writer Thomas Ramsey and Marion W. Easterling}
+{meta: composer Thomas Ramsey and Marion W. Easterling}
 
 {start_of_verse: Verse 1}
 [G]My heart is sad my [C]soul is [G]weary

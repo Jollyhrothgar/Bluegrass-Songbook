@@ -1,6 +1,6 @@
 {meta: title I'll Sing For You}
 {meta: artist Don Gibson}
-{meta: writer Bobby Bond}
+{meta: composer Bobby Bond}
 
 {start_of_verse: Verse 1}
 [C]When the night is cold and stormy and you're sittin' all [F]alone

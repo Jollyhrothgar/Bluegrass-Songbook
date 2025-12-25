@@ -1,6 +1,6 @@
 {meta: title Every Night About This Time}
 {meta: artist Fats Domino}
-{meta: writer Fats Domino and Dave Bartholomew}
+{meta: composer Fats Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [D7]Every night about this [G]time

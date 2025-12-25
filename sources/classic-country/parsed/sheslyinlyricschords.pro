@@ -1,6 +1,6 @@
 {meta: title She's Lyin'}
 {meta: artist Lee Greenwood}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [G7]As her key unlocks the front [C]door

@@ -1,6 +1,6 @@
 {meta: title Don't Keep Me Lonely Too Long}
 {meta: artist Connie Smith}
-{meta: writer Melba Montgomery}
+{meta: composer Melba Montgomery}
 
 {start_of_verse: Verse 1}
 [G]Life sure gets lonely alone no one to talk to [D7]alone

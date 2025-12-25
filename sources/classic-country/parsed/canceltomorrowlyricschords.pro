@@ -1,6 +1,6 @@
 {meta: title Cancel Tomorrow}
 {meta: artist Dottie West}
-{meta: writer Red Lane and Dottie West}
+{meta: composer Red Lane and Dottie West}
 
 {start_of_verse: Verse 1}
 [C]Cancel [C][F]tomorrow

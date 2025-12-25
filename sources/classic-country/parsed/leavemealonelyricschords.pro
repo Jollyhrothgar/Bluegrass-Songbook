@@ -1,6 +1,6 @@
 {meta: title Leave Me Alone}
 {meta: artist Jean Shepard}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]I don't want you anymore I found somebody [G7]new

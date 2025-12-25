@@ -1,6 +1,6 @@
 {meta: title Is There Anything I Can Do}
 {meta: artist Lefty Frizzell}
-{meta: writer Bruce Delaney and Abe Mulkey}
+{meta: composer Bruce Delaney and Abe Mulkey}
 
 {start_of_verse: Verse 1}
 [C]Tears in your [G7]eyes  [F]tug at my [G7]heart

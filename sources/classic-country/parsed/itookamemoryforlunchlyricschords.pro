@@ -1,6 +1,6 @@
 {meta: title I Took A Memory For Lunch}
 {meta: artist Bobby Bare}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [D7]Tod[G]ay the weather was so [C]pretty 

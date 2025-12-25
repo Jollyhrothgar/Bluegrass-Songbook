@@ -1,6 +1,6 @@
 {meta: title Till It Snows In Mexico}
 {meta: artist Reba McEntire}
-{meta: writer Gordon Payne and Roger LaVoie}
+{meta: composer Gordon Payne and Roger LaVoie}
 
 {start_of_verse: Verse 1}
 [G]Rollin' up in Oklahoma people cross my mind[C]

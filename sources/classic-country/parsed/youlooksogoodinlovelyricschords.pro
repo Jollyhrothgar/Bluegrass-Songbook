@@ -1,6 +1,6 @@
 {meta: title You Look So Good In Love}
 {meta: artist George Strait}
-{meta: writer Kerry Chater, Rory Bourke, Glen Ballard}
+{meta: composer Kerry Chater, Rory Bourke, Glen Ballard}
 
 {start_of_verse: Verse 1}
 [G]Oh how you sparkle and [Am]oh how you shine

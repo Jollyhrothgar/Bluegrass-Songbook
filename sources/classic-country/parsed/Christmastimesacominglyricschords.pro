@@ -1,6 +1,6 @@
 {meta: title Christmas Time's A Coming}
 {meta: artist Bill Anderson}
-{meta: writer Tex Logan}
+{meta: composer Tex Logan}
 
 {start_of_verse: Verse 1}
 [C]Christmas time's a coming 

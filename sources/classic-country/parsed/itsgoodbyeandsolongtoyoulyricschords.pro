@@ -1,6 +1,6 @@
 {meta: title It's Goodbye And So Long To You}
 {meta: artist Mac Wiseman and The Osborne Brothers}
-{meta: writer Harold Breau and Raymond Contere}
+{meta: composer Harold Breau and Raymond Contere}
 
 {start_of_verse: Verse 1}
 [C]You can send me pretty flowers you can send me valentines

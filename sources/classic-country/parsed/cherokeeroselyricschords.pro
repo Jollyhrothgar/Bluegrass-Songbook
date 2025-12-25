@@ -1,6 +1,6 @@
 {meta: title Cherokee Rose}
 {meta: artist Jack Greene}
-{meta: writer Billy Ray Reynolds, Doug Gilmore, Grant Boatwright}
+{meta: composer Billy Ray Reynolds, Doug Gilmore, Grant Boatwright}
 
 {start_of_verse: Verse 1}
 [C]Oh my Chero[F]kee [C]Rose your loves gotta [F]hold on my heart and [C]soul

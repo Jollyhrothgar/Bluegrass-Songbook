@@ -1,6 +1,6 @@
 {meta: title Father Of Judy Ann}
 {meta: artist Red Sovine}
-{meta: writer Bill Owens}
+{meta: composer Bill Owens}
 
 {start_of_verse: Verse 1}
 [C]I'm the father of Judy [F]Ann

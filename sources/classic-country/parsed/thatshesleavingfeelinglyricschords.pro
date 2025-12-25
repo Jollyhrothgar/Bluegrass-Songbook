@@ -1,6 +1,6 @@
 {meta: title That She's Leaving Feeling}
 {meta: artist The Wilburn Brothers}
-{meta: writer Larry Whitehead}
+{meta: composer Larry Whitehead}
 
 {start_of_verse: Verse 1}
 [G]Ever since she told me she was [C]leaving

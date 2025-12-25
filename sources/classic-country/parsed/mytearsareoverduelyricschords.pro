@@ -1,6 +1,6 @@
 {meta: title My Tears Are Overdue}
 {meta: artist Porter Wagoner}
-{meta: writer Freddie Hart}
+{meta: composer Freddie Hart}
 
 {start_of_verse: Verse 1}
 [C]If you want to see [G7]somebody cry their heart [C]out

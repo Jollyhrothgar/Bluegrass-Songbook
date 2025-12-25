@@ -1,6 +1,6 @@
 {meta: title Virginia}
 {meta: artist Jean Shepard}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [C]He came out here [G7]lookin' for [C]somethin' a little bit [G7]different

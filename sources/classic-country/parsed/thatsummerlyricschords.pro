@@ -1,6 +1,6 @@
 {meta: title That Summer}
 {meta: artist Garth Brooks}
-{meta: writer Pat Alger, Sandy Mahl, Garth Brooks}
+{meta: composer Pat Alger, Sandy Mahl, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G]I went to work for her that summer 

@@ -1,6 +1,6 @@
 {meta: title Alabama Clay}
 {meta: artist Garth Brooks}
-{meta: writer Ronny Scaife and Larry Cordle}
+{meta: composer Ronny Scaife and Larry Cordle}
 
 {start_of_verse: Verse 1}
 [C]First time he [G7]saw the ground get [Am]busted [C]

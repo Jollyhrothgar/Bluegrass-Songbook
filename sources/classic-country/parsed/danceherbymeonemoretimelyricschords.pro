@@ -1,6 +1,6 @@
 {meta: title Dance Her By Me One More Time}
 {meta: artist Faron Young}
-{meta: writer Danny Walfe}
+{meta: composer Danny Walfe}
 
 {start_of_verse: Verse 1}
 [G]Dance her by me one more [C]time

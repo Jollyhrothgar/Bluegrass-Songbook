@@ -1,6 +1,6 @@
 {meta: title Louisville}
 {meta: artist Dwight Yoakam}
-{meta: writer Pat Gallagher and Jann Browne}
+{meta: composer Pat Gallagher and Jann Browne}
 
 {start_of_verse: Verse 1}
 [C]I've been waiting here in [G7]Louisville

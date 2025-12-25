@@ -1,6 +1,6 @@
 {meta: title I Could Sing All Night}
 {meta: artist Ferlin Husky}
-{meta: writer Tommy Collins and Ferlin Husky}
+{meta: composer Tommy Collins and Ferlin Husky}
 
 {start_of_verse: Verse 1}
 [C]I could sing sing sing all night

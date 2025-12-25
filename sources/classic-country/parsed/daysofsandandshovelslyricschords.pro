@@ -1,6 +1,6 @@
 {meta: title Days Of Sand And Shovels}
 {meta: artist Charley Pride}
-{meta: writer Bud Reneau and Doyle Marsh}
+{meta: composer Bud Reneau and Doyle Marsh}
 
 {start_of_verse: Verse 1}
 [C]When I noticed her the first time

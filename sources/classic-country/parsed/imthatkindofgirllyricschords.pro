@@ -1,6 +1,6 @@
 {meta: title I'm That Kind Of Girl}
 {meta: artist Patty Loveless}
-{meta: writer Matraca Berg and Ronnie Samoset}
+{meta: composer Matraca Berg and Ronnie Samoset}
 
 {start_of_verse: Verse 1}
 [F]There's a [G7]man in a Stetson hat 

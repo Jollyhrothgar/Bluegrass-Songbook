@@ -1,6 +1,6 @@
 {meta: title A Broken Heart A Wedding Band}
 {meta: artist Stonewall Jackson}
-{meta: writer Joel Price}
+{meta: composer Joel Price}
 
 {start_of_verse: Verse 1}
 [C]One more kiss [G7]before you [C]go there'll be no harm in [F]that I [C]know

@@ -1,6 +1,6 @@
 {meta: title Sixty Minute Man}
 {meta: artist Hank Thompson}
-{meta: writer William Ward}
+{meta: composer William Ward}
 
 {start_of_verse: Verse 1}
 [C]Listen here girls I'm a-[F]tellin’ you what they [C]call me loving [C7]Dan 

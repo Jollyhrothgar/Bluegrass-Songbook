@@ -1,6 +1,6 @@
 {meta: title I'd Be Just As Lonely There}
 {meta: artist Jeannie Seely}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]I'd [C]be just as lonely [G]there

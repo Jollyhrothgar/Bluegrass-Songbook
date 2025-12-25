@@ -1,6 +1,6 @@
 {meta: title Multiply The Heartaches}
 {meta: artist George Jones}
-{meta: writer Kathy Dee}
+{meta: composer Kathy Dee}
 
 {start_of_verse: Verse 1}
 [C]Once I thought two happy hearts would [F]someday beat as one

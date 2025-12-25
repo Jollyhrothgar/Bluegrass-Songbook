@@ -1,6 +1,6 @@
 {meta: title It's My Love (And I'm Gonna Give It)}
 {meta: artist Mel Tillis}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]Old friends say you'll [D7]tear me [G]down

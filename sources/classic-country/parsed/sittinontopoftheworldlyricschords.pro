@@ -1,5 +1,5 @@
 {meta: artist Bob Wills}
-{meta: writer Lonnie Carter and Walter Jacobs}
+{meta: composer Lonnie Carter and Walter Jacobs}
 
 {start_of_verse: Verse 1}
 [G]All the summer all of fall

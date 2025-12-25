@@ -1,6 +1,6 @@
 {meta: title We Might As Well Forget It}
 {meta: artist Bob Wills}
-{meta: writer Johnny Bond}
+{meta: composer Johnny Bond}
 
 {start_of_verse: Verse 1}
 [C]I’ve tried to save what was lost no [D7]matter what be the cost

@@ -1,6 +1,6 @@
 {meta: title Out Of Hand}
 {meta: artist Gary Stewart}
-{meta: writer Jeff Barry and Tom Jans}
+{meta: composer Jeff Barry and Tom Jans}
 
 {start_of_verse: Verse 1}
 [G]I never intended to [C]even know your [Am]name 

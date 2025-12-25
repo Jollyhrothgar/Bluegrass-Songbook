@@ -1,6 +1,6 @@
 {meta: title Same Old Me}
 {meta: artist Ray Price}
-{meta: writer Frank Owens}
+{meta: composer Frank Owens}
 
 {start_of_verse: Verse 1}
 [G]When I saw you with your new love [C]today

@@ -1,6 +1,6 @@
 {meta: title I Don't Blame You}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb and Jim Scott}
+{meta: composer Ernest Tubb and Jim Scott}
 
 {start_of_verse: Verse 1}
 [C]I have been a wayward lover and I'm [F]sorry

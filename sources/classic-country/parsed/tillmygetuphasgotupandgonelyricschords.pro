@@ -1,6 +1,6 @@
 {meta: title Till My Get up Has Got Up and Gone}
 {meta: artist Ernest Tubb}
-{meta: writer Bud Logan and Charles Snoddy}
+{meta: composer Bud Logan and Charles Snoddy}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna have some fun while I can

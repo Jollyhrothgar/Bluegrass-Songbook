@@ -1,6 +1,6 @@
 {meta: title I Don't Have Far To Fall}
 {meta: artist Skip Ewing}
-{meta: writer Donald R. Ewing II and Donald R. Sampson}
+{meta: composer Donald R. Ewing II and Donald R. Sampson}
 
 {start_of_verse: Verse 1}
 [C]Tonight as I lay holding you [F]you whisper

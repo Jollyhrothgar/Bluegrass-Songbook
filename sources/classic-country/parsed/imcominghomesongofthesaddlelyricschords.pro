@@ -1,6 +1,6 @@
 {meta: title I'm Coming Home (Song Of The Saddle)}
 {meta: artist Hank Snow}
-{meta: writer Norman Kelly}
+{meta: composer Norman Kelly}
 
 {start_of_verse: Verse 1}
 [G]Don’t you weep anymore for me tonight

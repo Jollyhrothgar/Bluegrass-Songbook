@@ -1,6 +1,6 @@
 {meta: title Let's All Help The Cowboys Sing The Blues}
 {meta: artist Waylon Jennings}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]Cowboys they are ladies men [F]alright

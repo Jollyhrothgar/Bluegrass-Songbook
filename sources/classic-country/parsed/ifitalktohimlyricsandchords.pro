@@ -1,6 +1,6 @@
 {meta: title If I Talk to Him}
 {meta: artist Connie Smith}
-{meta: writer Priscilla Mitchell and Dolores Edgin}
+{meta: composer Priscilla Mitchell and Dolores Edgin}
 
 {start_of_verse: Verse 1}
 [G]If I [C]talk to him I'd take him back [G]again 

@@ -1,6 +1,6 @@
 {meta: title Green Green}
 {meta: artist Eddy Arnold}
-{meta: writer Randy Sparks, Barry McGuire, Encino Mandalay}
+{meta: composer Randy Sparks, Barry McGuire, Encino Mandalay}
 
 {start_of_verse: Verse 1}
 [G]Green green it's green they [C]say

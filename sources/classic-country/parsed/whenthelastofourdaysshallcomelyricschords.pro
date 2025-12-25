@@ -1,6 +1,6 @@
 {meta: title When the Last of Our Days Shall Come}
 {meta: artist Doyle Lawson}
-{meta: writer Chris Stuart}
+{meta: composer Chris Stuart}
 
 {start_of_verse: Verse 1}
 [G]When the last of our days shall come

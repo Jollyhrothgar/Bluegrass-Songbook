@@ -1,6 +1,6 @@
 {meta: title I Bought The Shoes That Just Walked Out On Me}
 {meta: artist Wynn Stewart}
-{meta: writer Red Simpson and Steve Stone}
+{meta: composer Red Simpson and Steve Stone}
 
 {start_of_verse: Verse 1}
 [C]A tavern girl that's what you were the [C7]day I [F]found you

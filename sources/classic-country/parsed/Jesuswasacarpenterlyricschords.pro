@@ -1,6 +1,6 @@
 {meta: title Jesus Was A Carpenter}
 {meta: artist Johnny Cash}
-{meta: writer Chris Warren}
+{meta: composer Chris Warren}
 
 {start_of_verse: Verse 1}
 [G]Jesus was a carpenter and He worked with a [C]saw and a [D]hammer

@@ -1,6 +1,6 @@
 {meta: title I'll Live For You}
 {meta: artist Jean Shepard}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]I can't be free to marry [F]you we both know [C]that

@@ -1,6 +1,6 @@
 {meta: title Four Down And Twelve Across}
 {meta: artist George Strait}
-{meta: writer Tom Douglas and Dean Dillon}
+{meta: composer Tom Douglas and Dean Dillon}
 
 {start_of_verse: Verse 1}
 [C]I don’t know [Am]what to think of it

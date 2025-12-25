@@ -1,6 +1,6 @@
 {meta: title I Don't Want To Be A Memory}
 {meta: artist Lee Greenwood}
-{meta: writer James Pennington and Sonny Lemaire}
+{meta: composer James Pennington and Sonny Lemaire}
 
 {start_of_verse: Verse 1}
 [C]I've been the one you talked to

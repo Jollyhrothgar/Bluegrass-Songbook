@@ -1,6 +1,6 @@
 {meta: title It's Almost Tomorrow}
 {meta: artist The Dream Weavers}
-{meta: writer Eugene H. Adkinson and Wade Buff}
+{meta: composer Eugene H. Adkinson and Wade Buff}
 
 {start_of_verse: Verse 1}
 [C]My dearest [Em]my darling [F]tomorrow is [C]near

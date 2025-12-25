@@ -1,6 +1,6 @@
 {meta: title That Rain Makin' Baby Of Mine}
 {meta: artist Johnny Bush}
-{meta: writer Dallas Frazier and Warren Robb}
+{meta: composer Dallas Frazier and Warren Robb}
 
 {start_of_verse: Verse 1}
 [C]I've been leaning on the wine

@@ -1,6 +1,6 @@
 {meta: title All That She Could Take}
 {meta: artist Tony Booth}
-{meta: writer Guyanne Mccall and Justin Trevino}
+{meta: composer Guyanne Mccall and Justin Trevino}
 
 {start_of_verse: Verse 1}
 [C]She doesn't wear her wedding [G7]band

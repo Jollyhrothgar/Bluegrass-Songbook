@@ -1,6 +1,6 @@
 {meta: title You're The World}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy and Jesse Bellamy}
+{meta: composer David Bellamy and Jesse Bellamy}
 
 {start_of_verse: Verse 1}
 [G]When you climbed out of bed this [C]morning

@@ -1,6 +1,6 @@
 {meta: title I Won't Go Hunting With you Jake}
 {meta: artist Jimmy Dean}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [C]Oh it's springtime in the mountains

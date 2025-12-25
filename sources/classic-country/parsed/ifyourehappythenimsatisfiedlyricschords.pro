@@ -1,6 +1,6 @@
 {meta: title If You’re Happy Then I'm Satisfied}
 {meta: artist Billy Walker}
-{meta: writer Marvin Rainwater and Glenn Reeves}
+{meta: composer Marvin Rainwater and Glenn Reeves}
 
 {start_of_verse: Verse 1}
 [C]Now you’ve found somebody who can make you [G7]happy

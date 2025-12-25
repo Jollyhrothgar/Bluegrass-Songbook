@@ -1,6 +1,6 @@
 {meta: title If You Think You're Lonely}
 {meta: artist Ray Price}
-{meta: writer Linda Buell, Carl Rupp, Larry Johnson}
+{meta: composer Linda Buell, Carl Rupp, Larry Johnson}
 
 {start_of_verse: Verse 1}
 [C]It's just me  by myself and [C7]I'm sure missing [F]you

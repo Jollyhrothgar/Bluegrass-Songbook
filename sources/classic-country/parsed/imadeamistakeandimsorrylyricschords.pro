@@ -1,6 +1,6 @@
 {meta: title I Made A Mistake And I'm Sorry}
 {meta: artist Ray Price}
-{meta: writer Braverman}
+{meta: composer Braverman}
 
 {start_of_verse: Verse 1}
 [C]I made a mistake and I'm [F]sorry

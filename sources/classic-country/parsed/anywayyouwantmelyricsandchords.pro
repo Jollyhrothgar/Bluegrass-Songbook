@@ -1,6 +1,6 @@
 {meta: title Anyway You Want Me}
 {meta: artist Gene Watson}
-{meta: writer Leo Ofman}
+{meta: composer Leo Ofman}
 
 {start_of_verse: Verse 1}
 [G]You come in to hear me sing

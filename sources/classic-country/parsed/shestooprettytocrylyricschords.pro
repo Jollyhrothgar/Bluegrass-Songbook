@@ -1,6 +1,6 @@
 {meta: title She's Too Pretty To Cry}
 {meta: artist Johnny Rodriguez}
-{meta: writer Averal Ann Aldridge and George Soul}
+{meta: composer Averal Ann Aldridge and George Soul}
 
 {start_of_verse: Verse 1}
 [C]She don’t know that I’m not sleeping

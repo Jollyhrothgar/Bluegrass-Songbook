@@ -1,6 +1,6 @@
 {meta: title Back In The Swing Of Things Again}
 {meta: artist Red Steagall}
-{meta: writer David Wills and Bob Moulds}
+{meta: composer David Wills and Bob Moulds}
 
 {start_of_verse: Verse 1}
 [C]I’m [G7]high as a kite on life these [C]days

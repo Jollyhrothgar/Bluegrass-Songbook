@@ -1,6 +1,6 @@
 {meta: title In The Middle Of A Memory}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew and Clyde Pitts}
+{meta: composer Carl Belew and Clyde Pitts}
 
 {start_of_verse: Verse 1}
 [C]I'm in the middle of a [G7]memory

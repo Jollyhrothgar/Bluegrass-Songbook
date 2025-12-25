@@ -1,6 +1,6 @@
 {meta: title I Still Believe In Fairy Tales}
 {meta: artist Tammy Wynette}
-{meta: writer Glenn Martin}
+{meta: composer Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]I  be[G7]lieve in [C]fairy tales

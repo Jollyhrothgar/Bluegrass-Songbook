@@ -1,6 +1,6 @@
 {meta: title When You Say Love}
 {meta: artist Bob Luman}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]When [D7]you say [C]love you're telling [D7]everyone your moment's come

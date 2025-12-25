@@ -1,6 +1,6 @@
 {meta: title Just Give Me Love}
 {meta: artist Jean Shepard}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]Don’t wish the world belonged to me

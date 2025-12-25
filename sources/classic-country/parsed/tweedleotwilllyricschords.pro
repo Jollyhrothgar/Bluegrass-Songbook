@@ -1,6 +1,6 @@
 {meta: title Tweedle O'Twill}
 {meta: artist Jim Reeves}
-{meta: writer Fred Rose and Gene Autry}
+{meta: composer Fred Rose and Gene Autry}
 
 {start_of_verse: Verse 1}
 [G]Tweedle O'twill puffing  on corn silks  Tweedle O'twill  whittling [D7]wood

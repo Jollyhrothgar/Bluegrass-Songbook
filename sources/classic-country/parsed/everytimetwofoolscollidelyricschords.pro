@@ -1,6 +1,6 @@
 {meta: title Every Time Two Fools Collide}
 {meta: artist Kenny Rogers}
-{meta: writer Jeffery Tweel and Jan Dyer}
+{meta: composer Jeffery Tweel and Jan Dyer}
 
 {start_of_verse: Verse 1}
 [C]You want [Am]things your [Em]way and [F]I want them [C]mine 

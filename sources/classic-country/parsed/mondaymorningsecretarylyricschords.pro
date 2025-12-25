@@ -1,6 +1,6 @@
 {meta: title Monday Morning Secretary}
 {meta: artist The Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]She leaves home at eight a little bit late

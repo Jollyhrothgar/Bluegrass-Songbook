@@ -1,6 +1,6 @@
 {meta: title Ten Feet Away}
 {meta: artist Keith Whitley}
-{meta: writer Billy Sherrill, Troy Seals, Max D. Barnes}
+{meta: composer Billy Sherrill, Troy Seals, Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [G]Alone at a corner [Em]table

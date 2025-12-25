@@ -1,6 +1,6 @@
 {meta: title They Tell Me}
 {meta: artist Billy Walker}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]They tell me you're [G7]seeing [C]somebody else in [F]town

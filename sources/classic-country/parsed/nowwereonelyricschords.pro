@@ -1,6 +1,6 @@
 {meta: title Now We're One}
 {meta: artist Buddy Holly}
-{meta: writer Bobby Darin}
+{meta: composer Bobby Darin}
 
 {start_of_verse: Verse 1}
 [C]And now we're one and I love you so

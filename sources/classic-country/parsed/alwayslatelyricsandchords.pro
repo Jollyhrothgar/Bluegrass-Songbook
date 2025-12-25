@@ -1,6 +1,6 @@
 {meta: title Always Late}
 {meta: artist Lefty Frizzel}
-{meta: writer Lefty Frizzell and Blackie Crafford}
+{meta: composer Lefty Frizzell and Blackie Crafford}
 
 {start_of_verse: Verse 1}
 [C]Always late with [F]your [C]kisses

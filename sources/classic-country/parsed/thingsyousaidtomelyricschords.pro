@@ -1,6 +1,6 @@
 {meta: title Things You Said To Me}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo and Al Anderson}
+{meta: composer Raul Malo and Al Anderson}
 
 {start_of_verse: Verse 1}
 [C]You said you'd always be true as long as I were to [G7]you

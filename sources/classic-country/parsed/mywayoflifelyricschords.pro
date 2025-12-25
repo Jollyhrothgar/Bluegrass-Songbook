@@ -1,6 +1,6 @@
 {meta: title My Way Of Life}
 {meta: artist Jimmy Dean}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [C]Standing on a road [A7]walking down a [D7]highway

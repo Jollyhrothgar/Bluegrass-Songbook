@@ -1,6 +1,6 @@
 {meta: title Amanda}
 {meta: artist Waylon Jennings}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]I've held it all inward [F]Lord knows I've [C]tried

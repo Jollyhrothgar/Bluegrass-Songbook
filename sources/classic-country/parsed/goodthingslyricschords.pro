@@ -1,6 +1,6 @@
 {meta: title Good Things}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill, Norro Wilson, Carmol Taylor}
+{meta: composer Billy Sherrill, Norro Wilson, Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [C]When I wake up early in the morning

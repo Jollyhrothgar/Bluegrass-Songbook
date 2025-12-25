@@ -1,6 +1,6 @@
 {meta: title Somebody Like Me}
 {meta: artist Eddy Arnold}
-{meta: writer Wayne Carson Thompson}
+{meta: composer Wayne Carson Thompson}
 
 {start_of_verse: Verse 1}
 [C]Your baby loves you [F]now 

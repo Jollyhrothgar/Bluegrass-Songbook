@@ -1,6 +1,6 @@
 {meta: title The End Of The Lyin'}
 {meta: artist Alabama}
-{meta: writer Robert Byrne and Alan Schulman}
+{meta: composer Robert Byrne and Alan Schulman}
 
 {start_of_verse: Verse 1}
 [G]You took me for a [C]fool

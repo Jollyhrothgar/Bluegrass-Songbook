@@ -1,6 +1,6 @@
 {meta: title Living Together Alone}
 {meta: artist Conway Twitty}
-{meta: writer Sandy Burnett and Joe McClure}
+{meta: composer Sandy Burnett and Joe McClure}
 
 {start_of_verse: Verse 1}
 [C]I can't believe the life we live

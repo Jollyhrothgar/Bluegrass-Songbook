@@ -1,6 +1,6 @@
 {meta: title Lonesome Rodeo Cowboy}
 {meta: artist George Strait}
-{meta: writer Clay Blaker}
+{meta: composer Clay Blaker}
 
 {start_of_verse: Verse 1}
 [C]I own this horse and saddle and [F]that old Cadi[C]llac

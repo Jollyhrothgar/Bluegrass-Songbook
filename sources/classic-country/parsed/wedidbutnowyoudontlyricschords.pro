@@ -1,6 +1,6 @@
 {meta: title We Did But Now You Don't}
 {meta: artist Conway Twitty}
-{meta: writer Woody Bomar, Patrick J. McManus, Berni Clifford}
+{meta: composer Woody Bomar, Patrick J. McManus, Berni Clifford}
 
 {start_of_verse: Verse 1}
 [C]Falling into love so young seemed so [F]right

@@ -1,6 +1,6 @@
 {meta: title Above Suspicion}
 {meta: artist Mel Tillis}
-{meta: writer Mel Tillis and Buck Peddy}
+{meta: composer Mel Tillis and Buck Peddy}
 
 {start_of_verse: Verse 1}
 [C]We're above suspicion both you and [G7]I

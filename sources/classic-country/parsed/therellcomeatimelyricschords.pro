@@ -1,6 +1,6 @@
 {meta: title There'll Come A Time}
 {meta: artist Webb Pierce}
-{meta: writer Audrey Grisham and Sylvia Fisher}
+{meta: composer Audrey Grisham and Sylvia Fisher}
 
 {start_of_verse: Verse 1}
 [C]There'll come a [C7]time you'll [Dm]remember

@@ -1,6 +1,6 @@
 {meta: title Bed Time Story}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]I've told you almost every bedtime story

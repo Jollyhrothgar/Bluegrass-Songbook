@@ -1,6 +1,6 @@
 {meta: title Gold Watch And Chain}
 {meta: artist Emmylou Harris}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [F]Oh I'll pawn you my gold watch and chain [C]love

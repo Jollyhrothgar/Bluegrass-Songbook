@@ -1,6 +1,6 @@
 {meta: title For The Kids}
 {meta: artist Waylon Jennings}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]You work like a slave for the [G7]kids

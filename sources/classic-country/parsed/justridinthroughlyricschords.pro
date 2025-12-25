@@ -1,6 +1,6 @@
 {meta: title Just Ridin' Through}
 {meta: artist Darrell McCall}
-{meta: writer Don Cusic}
+{meta: composer Don Cusic}
 
 {start_of_verse: Verse 1}
 [C]Pack up your [G7]guitar [C]cowboy

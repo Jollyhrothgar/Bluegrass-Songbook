@@ -1,6 +1,6 @@
 {meta: title I've Got Texas In My Heart}
 {meta: artist Loretta Lynn}
-{meta: writer Mildred Burk and Ross Burk}
+{meta: composer Mildred Burk and Ross Burk}
 
 {start_of_verse: Verse 1}
 [C]I'm packin' up my ole [G7]suitcases

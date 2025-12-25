@@ -1,6 +1,6 @@
 {meta: title Like Old Times Again Lyrics and Chords}
 {meta: artist Ray Price}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [C]Here she comes again  looking like [C7]the dream she’s always [F]been

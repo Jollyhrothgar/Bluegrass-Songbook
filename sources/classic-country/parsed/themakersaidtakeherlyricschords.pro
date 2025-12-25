@@ -1,6 +1,6 @@
 {meta: title The Maker Said Take Her}
 {meta: artist Alabama}
-{meta: writer Randall Rogers and Mark Wright}
+{meta: composer Randall Rogers and Mark Wright}
 
 {start_of_verse: Verse 1}
 [C]I was taught to believe and never to [G7]doubt 

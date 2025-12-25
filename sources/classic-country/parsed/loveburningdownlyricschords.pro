@@ -1,6 +1,6 @@
 {meta: title Love Burning Down}
 {meta: artist Eddy Raven}
-{meta: writer Ron Moore and Doug Hauseman}
+{meta: composer Ron Moore and Doug Hauseman}
 
 {start_of_verse: Verse 1}
 [G]Table for [C]one  she sips her [G]wine

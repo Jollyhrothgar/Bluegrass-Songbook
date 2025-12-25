@@ -1,6 +1,6 @@
 {meta: title Near You}
 {meta: artist Tammy Wynette}
-{meta: writer Francis Craig and Kermit Goell}
+{meta: composer Francis Craig and Kermit Goell}
 
 {start_of_verse: Verse 1}
 [C]There's just one [G7]place for me  near [C]you

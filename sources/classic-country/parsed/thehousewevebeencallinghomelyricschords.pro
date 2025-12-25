@@ -1,6 +1,6 @@
 {meta: title The House We've Been Calling Home}
 {meta: artist David Allan Coe}
-{meta: writer David Allan Coe and Deborah Coe}
+{meta: composer David Allan Coe and Deborah Coe}
 
 {start_of_verse: Verse 1}
 [C]Jessie she stares like a cat with a bird that has [F]fallen and broken its [C]wing

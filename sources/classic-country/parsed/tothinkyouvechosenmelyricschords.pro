@@ -1,6 +1,6 @@
 {meta: title To Think You've Chosen Me}
 {meta: artist Marty Robbins}
-{meta: writer George Weiss and Bennie Benjamin}
+{meta: composer George Weiss and Bennie Benjamin}
 
 {start_of_verse: Verse 1}
 [G]It isn't just the [Bm]way you smile that [C]warms my heart

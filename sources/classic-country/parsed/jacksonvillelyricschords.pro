@@ -1,6 +1,6 @@
 {meta: title Jacksonville}
 {meta: artist Cal Smith}
-{meta: writer Walter Haynes and Jimmy Rule}
+{meta: composer Walter Haynes and Jimmy Rule}
 
 {start_of_verse: Verse 1}
 [C]Gonna get up early in the morning gonna get down to the train

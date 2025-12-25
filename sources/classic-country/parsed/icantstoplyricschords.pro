@@ -1,6 +1,6 @@
 {meta: title I Can't Stop}
 {meta: artist Alabama}
-{meta: writer Robert Byrne and Teddy Gentry}
+{meta: composer Robert Byrne and Teddy Gentry}
 
 {start_of_verse: Verse 1}
 [G]My love is like an automobile

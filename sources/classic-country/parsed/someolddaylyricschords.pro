@@ -1,6 +1,6 @@
 {meta: title Some Old Day}
 {meta: artist J.D. Crowe & the New South}
-{meta: writer Louise Certain and Gladys Stacey}
+{meta: composer Louise Certain and Gladys Stacey}
 
 {start_of_verse: Verse 1}
 [G]I've been working out in the rain 

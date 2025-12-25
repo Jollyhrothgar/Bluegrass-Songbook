@@ -1,6 +1,6 @@
 {meta: title When Your Hair Has Turned To Silver}
 {meta: artist Eddy Arnold}
-{meta: writer Charles Tobias and Peter DeRose}
+{meta: composer Charles Tobias and Peter DeRose}
 
 {start_of_verse: Verse 1}
 [C]When your hair has turned to silver

@@ -1,6 +1,6 @@
 {meta: title I Almost Forgot Her Today}
 {meta: artist Carl Smith}
-{meta: writer Del Reeves &amp; Ellen Reeves}
+{meta: composer Del Reeves &amp; Ellen Reeves}
 
 {start_of_verse: Verse 1}
 [C]I didn't make the call when [F]I picked up the [C]phone

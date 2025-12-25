@@ -1,6 +1,6 @@
 {meta: title Hooray For That Little Difference}
 {meta: artist Johnny Horton}
-{meta: writer Autry Inman}
+{meta: composer Autry Inman}
 
 {start_of_verse: Verse 1}
 [G]Well a long time ago in a foreign land

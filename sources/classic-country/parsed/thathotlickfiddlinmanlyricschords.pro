@@ -1,6 +1,6 @@
 {meta: title That Hot Lick Fiddlin' Man}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker and Bob Wills}
+{meta: composer Cindy Walker and Bob Wills}
 
 {start_of_verse: Verse 1}
 [G7]Oh that fiddlin' man

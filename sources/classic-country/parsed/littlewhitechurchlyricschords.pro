@@ -1,6 +1,6 @@
 {meta: title Little White Church}
 {meta: artist Jim and Jesse}
-{meta: writer Karen Fairchild, Kimberly Schlapman}
+{meta: composer Karen Fairchild, Kimberly Schlapman}
 
 {start_of_verse: Verse 1}
 [G]Oh the church in the valley oh that little white [C]church

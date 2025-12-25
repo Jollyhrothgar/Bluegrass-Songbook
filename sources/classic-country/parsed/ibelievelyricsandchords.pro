@@ -1,6 +1,6 @@
 {meta: title I Believe}
 {meta: artist Jamie Dailey and Darrin Vincent}
-{meta: writer Jimmy Fortune}
+{meta: composer Jimmy Fortune}
 
 {start_of_verse: Verse 1}
 [C]When I see the [F]sunrise in the [C]morning

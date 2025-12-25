@@ -1,6 +1,6 @@
 {meta: title A Few Old Memories}
 {meta: artist Statler Brothers}
-{meta: writer Don S. Reid and Harold W. Reid}
+{meta: composer Don S. Reid and Harold W. Reid}
 
 {start_of_verse: Verse 1}
 [C]I burned all those [F]pictures at [C]least ten years ago

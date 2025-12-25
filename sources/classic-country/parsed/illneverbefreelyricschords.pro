@@ -1,6 +1,6 @@
 {meta: title I'll Never Be Free}
 {meta: artist Jean Shepard}
-{meta: writer Bennie Benjamin and George Weiss}
+{meta: composer Bennie Benjamin and George Weiss}
 
 {start_of_verse: Verse 1}
 [G7]Each time I [C]hold somebody [C7]new

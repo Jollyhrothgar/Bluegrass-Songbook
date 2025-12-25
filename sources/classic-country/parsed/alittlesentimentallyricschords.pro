@@ -1,6 +1,6 @@
 {meta: title A Little Sentimental}
 {meta: artist Marty Robbins}
-{meta: writer Joe Babcock}
+{meta: composer Joe Babcock}
 
 {start_of_verse: Verse 1}
 [C]Sitting here with you [F]don't know why I'm [C]blue

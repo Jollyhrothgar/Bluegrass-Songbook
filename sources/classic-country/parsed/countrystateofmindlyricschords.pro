@@ -1,6 +1,6 @@
 {meta: title Country State Of Mind}
 {meta: artist Hank Williams Jr.}
-{meta: writer Hank Williams Jr. and Roger Alan Wade}
+{meta: composer Hank Williams Jr. and Roger Alan Wade}
 
 {start_of_verse: Verse 1}
 [C]That hot old summer sun

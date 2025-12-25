@@ -1,6 +1,6 @@
 {meta: title Jackson Ain’t A Very Big Town}
 {meta: artist Tammy Wynette}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [C]Tonight at nine we get [F]married

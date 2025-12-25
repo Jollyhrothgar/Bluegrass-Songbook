@@ -1,6 +1,6 @@
 {meta: title Make Room For The Blues}
 {meta: artist The Del McCoury Band}
-{meta: writer Hank DeVito and Paul Kennerley}
+{meta: composer Hank DeVito and Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [C]It’s all over now but the [G7]crying

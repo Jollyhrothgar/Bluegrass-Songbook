@@ -1,6 +1,6 @@
 {meta: title Come Stay With Me}
 {meta: artist Waylon Jennings}
-{meta: writer Jackie DeShannon}
+{meta: composer Jackie DeShannon}
 
 {start_of_verse: Verse 1}
 [C]I'll send away all my false [D]pride

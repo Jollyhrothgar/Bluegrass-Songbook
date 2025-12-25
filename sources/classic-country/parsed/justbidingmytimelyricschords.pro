@@ -1,6 +1,6 @@
 {meta: title Just Biding My Time}
 {meta: artist Anne Murray}
-{meta: writer Gene MacLellan}
+{meta: composer Gene MacLellan}
 
 {start_of_verse: Verse 1}
 [G]I can't believe that you’re honestly thinking of leaving [Am]me

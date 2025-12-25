@@ -1,6 +1,6 @@
 {meta: title Thank God For The U.S.A.}
 {meta: artist Jim and Jesse}
-{meta: writer Albert E. Brumley Sr.}
+{meta: composer Albert E. Brumley Sr.}
 
 {start_of_verse: Verse 1}
 [C]Thank God for the [G7]U.S.[C]A.

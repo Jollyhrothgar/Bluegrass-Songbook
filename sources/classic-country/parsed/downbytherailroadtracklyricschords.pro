@@ -1,6 +1,6 @@
 {meta: title Down By The Railroad Track}
 {meta: artist Lefty Frizzel}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Down by the [F]railroad [C]track

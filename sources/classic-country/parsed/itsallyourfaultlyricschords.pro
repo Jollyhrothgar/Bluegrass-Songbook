@@ -1,6 +1,6 @@
 {meta: title It's All Your Fault}
 {meta: artist Ray Price}
-{meta: writer Wayne Walker}
+{meta: composer Wayne Walker}
 
 {start_of_verse: Verse 1}
 [C]It’s all your fault all [D7]your fault

@@ -1,6 +1,6 @@
 {meta: title Heart We Did All We Could}
 {meta: artist Jean Shepard}
-{meta: writer Ned Miller}
+{meta: composer Ned Miller}
 
 {start_of_verse: Verse 1}
 [G]Well there he goes he hardly knows [C]the heart he's [G]breaking

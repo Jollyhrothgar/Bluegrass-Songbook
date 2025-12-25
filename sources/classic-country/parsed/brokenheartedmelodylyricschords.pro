@@ -1,6 +1,6 @@
 {meta: title Broken Hearted Melody}
 {meta: artist Dottie West}
-{meta: writer Hal David and Stoney Edwards}
+{meta: composer Hal David and Stoney Edwards}
 
 {start_of_verse: Verse 1}
 [C]Broken hearted melody [G7]once you were our song of [C]love

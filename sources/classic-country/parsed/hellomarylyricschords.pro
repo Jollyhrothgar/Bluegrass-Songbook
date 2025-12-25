@@ -1,6 +1,6 @@
 {meta: title Hello Mary}
 {meta: artist Moe Bandy}
-{meta: writer Bobby Bond}
+{meta: composer Bobby Bond}
 
 {start_of_verse: Verse 1}
 [C]Hello Mary (hello Mary) yeah this is [F]me

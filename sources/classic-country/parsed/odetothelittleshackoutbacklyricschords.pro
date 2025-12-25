@@ -1,6 +1,6 @@
 {meta: title Ode To The Little Shack Out Back}
 {meta: artist Bobby Bare}
-{meta: writer Billy Ed Wheeler}
+{meta: composer Billy Ed Wheeler}
 
 {start_of_verse: Verse 1}
 [G]They passed an ordinance in the town

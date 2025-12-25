@@ -1,6 +1,6 @@
 {meta: title Must I Believe}
 {meta: artist Brenda Lee}
-{meta: writer Eddie Polo}
+{meta: composer Eddie Polo}
 
 {start_of_verse: Verse 1}
 [C]Must I believe in every [F]breath of lif[Fm]e

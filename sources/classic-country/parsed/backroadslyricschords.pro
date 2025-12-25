@@ -1,6 +1,6 @@
 {meta: title Backroads}
 {meta: artist Ricky Van Shelton}
-{meta: writer Charlie Majors}
+{meta: composer Charlie Majors}
 
 {start_of_verse: Verse 1}
 [G]I've got the radio blasting I've got the windows rolled down

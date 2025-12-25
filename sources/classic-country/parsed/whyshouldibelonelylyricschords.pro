@@ -1,6 +1,6 @@
 {meta: title Why Should I Be Lonely}
 {meta: artist Merle Haggard}
-{meta: writer Jimmie Rodgers and Estelle Lowell}
+{meta: composer Jimmie Rodgers and Estelle Lowell}
 
 {start_of_verse: Verse 1}
 [C]Oh the moon lights so bright makes me lonely [Dm]tonight

@@ -1,6 +1,6 @@
 {meta: title Down The Old Road To Home}
 {meta: artist Hank Snow}
-{meta: writer Jimmie Rodgers and Carey Harvey}
+{meta: composer Jimmie Rodgers and Carey Harvey}
 
 {start_of_verse: Verse 1}
 [C]I'm [F]thinking of you while here all [C]alone

@@ -1,6 +1,6 @@
 {meta: title He Loved Me Once And He'll Love Me Again}
 {meta: artist Jean Shepard}
-{meta: writer Rubye Glasgow and Joan Hager}
+{meta: composer Rubye Glasgow and Joan Hager}
 
 {start_of_verse: Verse 1}
 [C]You have stolen my darling my letter began

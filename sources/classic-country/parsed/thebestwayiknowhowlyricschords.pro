@@ -1,6 +1,6 @@
 {meta: title The Best Way I Know How}
 {meta: artist Mel Tillis}
-{meta: writer Jerry Chestnut}
+{meta: composer Jerry Chestnut}
 
 {start_of_verse: Verse 1}
 [G]I look up and there you stand before [D7]me

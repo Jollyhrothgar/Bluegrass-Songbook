@@ -1,6 +1,6 @@
 {meta: title For Rent}
 {meta: artist Patsy Cline}
-{meta: writer Sonny James and Jack Morrow}
+{meta: composer Sonny James and Jack Morrow}
 
 {start_of_verse: Verse 1}
 [C]For rent  for rent an [C7]empty [F]heart

@@ -1,6 +1,6 @@
 {meta: title Old Before My Time}
 {meta: artist Hank Williams Jr.}
-{meta: writer Steve Karliski}
+{meta: composer Steve Karliski}
 
 {start_of_verse: Verse 1}
 [C]You'd like to have me take you dancin' every other night

@@ -1,6 +1,6 @@
 {meta: title The Color of Love}
 {meta: artist Faron Young}
-{meta: writer Bobby Sykes}
+{meta: composer Bobby Sykes}
 
 {start_of_verse: Verse 1}
 [C]Blue was the dress that she wore that night

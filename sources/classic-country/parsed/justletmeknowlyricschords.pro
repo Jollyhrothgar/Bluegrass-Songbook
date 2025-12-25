@@ -1,6 +1,6 @@
 {meta: title Just Let Me Know Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Marty Stuart and Connie Smith}
+{meta: composer Marty Stuart and Connie Smith}
 
 {start_of_verse: Verse 1}
 [C]If you're trying to win my heart there's no [G7]deny-[F]ing

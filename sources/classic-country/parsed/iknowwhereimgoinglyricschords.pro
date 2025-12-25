@@ -1,6 +1,6 @@
 {meta: title I Know Where I'm Going}
 {meta: artist George Hamilton IV}
-{meta: writer Warren Nadel, Dick Wolf, Randy Starr}
+{meta: composer Warren Nadel, Dick Wolf, Randy Starr}
 
 {start_of_verse: Verse 1}
 [C]I know where I'm going

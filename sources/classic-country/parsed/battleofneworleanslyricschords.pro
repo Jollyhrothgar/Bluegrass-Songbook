@@ -1,6 +1,6 @@
 {meta: title Battle of New Orleans}
 {meta: artist Johnny Horton}
-{meta: writer Jimmie Driftwood}
+{meta: composer Jimmie Driftwood}
 
 {start_of_verse: Verse 1}
 [C]In 1814 we took a little [F]trip

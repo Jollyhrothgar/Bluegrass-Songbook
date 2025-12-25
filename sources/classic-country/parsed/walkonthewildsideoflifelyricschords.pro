@@ -1,6 +1,6 @@
 {meta: title Walk On The Wild Side Of Life}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]You're not [F]gone really [C]gone you'll be [F]back I know you [C]will

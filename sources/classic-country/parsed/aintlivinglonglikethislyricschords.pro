@@ -1,6 +1,6 @@
 {meta: title Ain’t Living Long Like This}
 {meta: artist Waylon Jennings}
-{meta: writer Rodney J. Crowell}
+{meta: composer Rodney J. Crowell}
 
 {start_of_verse: Verse 1}
 [G]I look for trouble and I found it son

@@ -1,6 +1,6 @@
 {meta: title One Night A Day}
 {meta: artist Garth Brooks}
-{meta: writer Gary Burr and Pete Wasner}
+{meta: composer Gary Burr and Pete Wasner}
 
 {start_of_verse: Verse 1}
 [G]There's not a lot of [Bm]things to do 

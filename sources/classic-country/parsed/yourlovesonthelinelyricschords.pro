@@ -1,6 +1,6 @@
 {meta: title Your Love's On The Line}
 {meta: artist Earl Thomas Conley}
-{meta: writer Earl Thomas Conley and Randy Scruggs}
+{meta: composer Earl Thomas Conley and Randy Scruggs}
 
 {start_of_verse: Verse 1}
 [G]You've never cheated [C]you've never [G]lied

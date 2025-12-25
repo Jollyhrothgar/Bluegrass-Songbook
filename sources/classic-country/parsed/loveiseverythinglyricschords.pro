@@ -1,6 +1,6 @@
 {meta: title Love Is Everything}
 {meta: artist George Strait}
-{meta: writer Casey Beathard and Pat Mclaughlin}
+{meta: composer Casey Beathard and Pat Mclaughlin}
 
 {start_of_verse: Verse 1}
 [G7]Love is [C]everything[Am]

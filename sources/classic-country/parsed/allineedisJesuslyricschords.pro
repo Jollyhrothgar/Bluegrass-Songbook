@@ -1,6 +1,6 @@
 {meta: title All I Need Is Jesus}
 {meta: artist Jimmy Davis}
-{meta: writer Paul Tripp}
+{meta: composer Paul Tripp}
 
 {start_of_verse: Verse 1}
 [C]I don't need diamonds or [F]silver

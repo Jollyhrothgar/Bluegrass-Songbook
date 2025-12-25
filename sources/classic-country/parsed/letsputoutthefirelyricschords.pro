@@ -1,6 +1,6 @@
 {meta: title Let's Put Out The Fire}
 {meta: artist Mel Street}
-{meta: writer Betty Carol}
+{meta: composer Betty Carol}
 
 {start_of_verse: Verse 1}
 [G]Well your burning kisses [C]really turnin' me [G]on

@@ -1,6 +1,6 @@
 {meta: title Mr. D.J.}
 {meta: artist Jack Greene}
-{meta: writer Gil Francis and Bob House}
+{meta: composer Gil Francis and Bob House}
 
 {start_of_verse: Verse 1}
 [C]Mr. D.J. would you please play

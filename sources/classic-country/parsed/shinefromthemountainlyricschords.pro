@@ -1,6 +1,6 @@
 {meta: title Shine From The Mountain}
 {meta: artist Gene Watson}
-{meta: writer Bobbie Bost}
+{meta: composer Bobbie Bost}
 
 {start_of_verse: Verse 1}
 [G]My desire is to speak life as those all [G7]around me are [C]dying

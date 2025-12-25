@@ -1,6 +1,6 @@
 {meta: title Seattle}
 {meta: artist Connie Smith}
-{meta: writer Ernie Sheldon, Jack Keller, Hugo Montenegro}
+{meta: composer Ernie Sheldon, Jack Keller, Hugo Montenegro}
 
 {start_of_verse: Verse 1}
 [C]The bluest skies [G7]you've [Am]ever [F]seen [C]are in [G7][Am][G7]Seattle

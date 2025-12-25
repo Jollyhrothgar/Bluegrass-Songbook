@@ -1,6 +1,6 @@
 {meta: title Do Me With Love}
 {meta: artist Janie Fricke}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]Words are cheap and I love yous are [F]free

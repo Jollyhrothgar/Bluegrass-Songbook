@@ -1,6 +1,6 @@
 {meta: title Do What You Gotta Do}
 {meta: artist Garth Brooks}
-{meta: writer Pat Flynn}
+{meta: composer Pat Flynn}
 
 {start_of_verse: Verse 1}
 [C]Sometimes you've got to [F]take the [C]heat 

@@ -1,6 +1,6 @@
 {meta: title Beautiful You}
 {meta: artist The Oak Ridge Boys}
-{meta: writer David Hanner}
+{meta: composer David Hanner}
 
 {start_of_verse: Verse 1}
 [G]Please  don't cry  oh [C]my  you're so [G]blue

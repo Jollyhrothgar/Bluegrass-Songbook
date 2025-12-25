@@ -1,6 +1,6 @@
 {meta: title It's All Coming Back To Me Now}
 {meta: artist Keith Whitley}
-{meta: writer Curly Putman, Don Cook, Keith Whitley}
+{meta: composer Curly Putman, Don Cook, Keith Whitley}
 
 {start_of_verse: Verse 1}
 [C]That innocent [Em]look in her [F]green eyes

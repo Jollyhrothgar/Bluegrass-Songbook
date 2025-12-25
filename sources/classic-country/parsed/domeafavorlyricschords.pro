@@ -1,6 +1,6 @@
 {meta: title Do Me A Favor}
 {meta: artist Marty Robbins}
-{meta: writer Don Winters}
+{meta: composer Don Winters}
 
 {start_of_verse: Verse 1}
 [G]Do me a [C]favor let me [G]forget

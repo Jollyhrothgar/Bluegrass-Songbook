@@ -1,6 +1,6 @@
 {meta: title Walking In The Moonlight}
 {meta: artist Don Gibson}
-{meta: writer Johnnie Masters and Muriel Deason Wright}
+{meta: composer Johnnie Masters and Muriel Deason Wright}
 
 {start_of_verse: Verse 1}
 [C]I [F]never liked to [C]be alone [G7]I like compa[C]ny

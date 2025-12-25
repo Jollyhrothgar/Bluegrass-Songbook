@@ -1,6 +1,6 @@
 {meta: title High Noon}
 {meta: artist Moe Bandy}
-{meta: writer Ned Washington and Dimitri Tiomkin}
+{meta: composer Ned Washington and Dimitri Tiomkin}
 
 {start_of_verse: Verse 1}
 [C]Do not forsake me oh my darling on this our wedding [F]day

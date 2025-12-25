@@ -1,6 +1,6 @@
 {meta: title Alcohol of Fame}
 {meta: artist Stonewall Jackson}
-{meta: writer Molly Thomas}
+{meta: composer Molly Thomas}
 
 {start_of_verse: Verse 1}
 [G]I used to be a big man I [D7]owned most all this [G]town 

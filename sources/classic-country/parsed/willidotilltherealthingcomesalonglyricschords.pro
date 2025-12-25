@@ -1,6 +1,6 @@
 {meta: title Will I Do (Till the Real Thing Comes Along)}
 {meta: artist Prairie Oyster}
-{meta: writer Joan Besen}
+{meta: composer Joan Besen}
 
 {start_of_verse: Verse 1}
 [C]I don't look the way the one you [G7]dream about should look

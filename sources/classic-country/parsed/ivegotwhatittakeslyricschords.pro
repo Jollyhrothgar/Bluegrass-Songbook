@@ -1,6 +1,6 @@
 {meta: title I've Got What It Takes}
 {meta: artist Tracy Byrd}
-{meta: writer Jeff Stevens and Marv Green}
+{meta: composer Jeff Stevens and Marv Green}
 
 {start_of_verse: Verse 1}
 [C]You need a [F]man with an honest [C]heart 

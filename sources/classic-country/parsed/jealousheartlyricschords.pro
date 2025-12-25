@@ -1,6 +1,6 @@
 {meta: title Jealous Heart}
 {meta: artist Loretta Lynn}
-{meta: writer Jenny Lou Carson}
+{meta: composer Jenny Lou Carson}
 
 {start_of_verse: Verse 1}
 [G]Jealous heart oh jealous heart stop [D7]beating

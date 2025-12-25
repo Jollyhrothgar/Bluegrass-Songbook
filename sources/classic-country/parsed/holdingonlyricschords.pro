@@ -1,6 +1,6 @@
 {meta: title Holding On}
 {meta: artist Connie Smith}
-{meta: writer Lee Emerson}
+{meta: composer Lee Emerson}
 
 {start_of_verse: Verse 1}
 [G]Holding on [D7]barely holding on

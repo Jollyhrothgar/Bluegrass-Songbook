@@ -1,6 +1,6 @@
 {meta: title Wrong's What I Do Best}
 {meta: artist George Jones}
-{meta: writer Michael Alan Campbell, Dickey Lee, Freddy Weller}
+{meta: composer Michael Alan Campbell, Dickey Lee, Freddy Weller}
 
 {start_of_verse: Verse 1}
 [G]Some men look for diamonds [C]some men look for [G]gold

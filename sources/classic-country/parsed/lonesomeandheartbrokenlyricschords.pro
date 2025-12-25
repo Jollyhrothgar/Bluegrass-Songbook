@@ -1,6 +1,6 @@
 {meta: title Lonesome And Heartbroken}
 {meta: artist Johnny Horton}
-{meta: writer Bobby Bobo}
+{meta: composer Bobby Bobo}
 
 {start_of_verse: Verse 1}
 [C]I’m lonesome [A7]and heart[D7]broken

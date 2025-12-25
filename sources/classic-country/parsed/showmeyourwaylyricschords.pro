@@ -1,6 +1,6 @@
 {meta: title Show Me Your Way}
 {meta: artist Glen Campbell}
-{meta: writer Craig Thomas Fall}
+{meta: composer Craig Thomas Fall}
 
 {start_of_verse: Verse 1}
 [G]When I find myself in sadness

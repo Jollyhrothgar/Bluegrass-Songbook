@@ -1,6 +1,6 @@
 {meta: title A Pretty Wreath For Mother’s Grave}
 {meta: artist The Reno Brothers}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [C]In my [F]memory there’s a [C]picture 

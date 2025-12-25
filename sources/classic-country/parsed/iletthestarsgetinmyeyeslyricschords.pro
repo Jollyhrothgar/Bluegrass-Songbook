@@ -1,6 +1,6 @@
 {meta: title I Let The Stars Get In My Eyes}
 {meta: artist Goldie Hill}
-{meta: writer Slim Willet}
+{meta: composer Slim Willet}
 
 {start_of_verse: Verse 1}
 [G]I let the stars get in my eyes 

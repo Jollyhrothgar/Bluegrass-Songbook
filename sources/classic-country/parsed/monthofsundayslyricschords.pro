@@ -1,6 +1,6 @@
 {meta: title Month Of Sundays}
 {meta: artist Vern Gosdin}
-{meta: writer Vern Gosdin, John Northrup, Buddy Cannon}
+{meta: composer Vern Gosdin, John Northrup, Buddy Cannon}
 
 {start_of_verse: Verse 1}
 [C]There musta been 100 parties and I hit [F]everyone in [C]town

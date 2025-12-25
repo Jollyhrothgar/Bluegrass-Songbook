@@ -1,6 +1,6 @@
 {meta: title Once And For All}
 {meta: artist Vern Gosdin}
-{meta: writer Dean Dillon, Buddy Cannon, Vern Gosdin}
+{meta: composer Dean Dillon, Buddy Cannon, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]Today's the day now's the time

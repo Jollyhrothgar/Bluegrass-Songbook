@@ -1,6 +1,6 @@
 {meta: title Little Drummer Boy}
 {meta: artist Johnny Cash}
-{meta: writer Katherine Davis, Henri Onerati, Harry Simeone}
+{meta: composer Katherine Davis, Henri Onerati, Harry Simeone}
 
 {start_of_verse: Verse 1}
 [G]Come they told me our new born King to see

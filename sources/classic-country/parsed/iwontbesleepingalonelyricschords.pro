@@ -1,6 +1,6 @@
 {meta: title I Won't Be Sleeping Alone}
 {meta: artist Gene Watson}
-{meta: writer Charles Stewart and Jerry Abbott}
+{meta: composer Charles Stewart and Jerry Abbott}
 
 {start_of_verse: Verse 1}
 [C]I believe that today [G7]is a new [C]day

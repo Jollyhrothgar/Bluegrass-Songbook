@@ -1,6 +1,6 @@
 {meta: title Beside The Still Waters}
 {meta: artist Mac Wiseman}
-{meta: writer Theodore Silva}
+{meta: composer Theodore Silva}
 
 {start_of_verse: Verse 1}
 [G]Beside the still [G7]waters in [C]pastures of green 

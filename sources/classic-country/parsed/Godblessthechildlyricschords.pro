@@ -1,6 +1,6 @@
 {meta: title God Bless the Child}
 {meta: artist Crystal Gayle}
-{meta: writer Arthur Herzog and Billie Holiday}
+{meta: composer Arthur Herzog and Billie Holiday}
 
 {start_of_verse: Verse 1}
 [G]Them that's got shall [C]get

@@ -1,6 +1,6 @@
 {meta: title I'm Just an Old Chunk of Coal}
 {meta: artist Stonewall Jackson}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [C]I'm just an old chunk of coal 

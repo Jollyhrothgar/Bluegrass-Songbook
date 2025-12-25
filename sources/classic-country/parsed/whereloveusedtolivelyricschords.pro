@@ -1,6 +1,6 @@
 {meta: title Where Love Used To Live}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Four men in a [G7]big truck came [C]today

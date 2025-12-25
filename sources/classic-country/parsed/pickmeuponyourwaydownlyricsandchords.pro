@@ -1,6 +1,6 @@
 {meta: title Pick Me Up On Your Way Down}
 {meta: artist Patsy Cline}
-{meta: writer Burton Levy, Glenn Reeves, Mae Boren Axton}
+{meta: composer Burton Levy, Glenn Reeves, Mae Boren Axton}
 
 {start_of_verse: Verse 1}
 [G7]Once my love was good enough

@@ -1,6 +1,6 @@
 {meta: title Yard Sale}
 {meta: artist Sammy Kershaw}
-{meta: writer DeWayne Blackwell and Larry Bastian}
+{meta: composer DeWayne Blackwell and Larry Bastian}
 
 {start_of_verse: Verse 1}
 [C]Cardboard sign says yard sale real estate sign says sold

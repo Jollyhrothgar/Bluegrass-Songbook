@@ -1,6 +1,6 @@
 {meta: title Sweet Lies}
 {meta: artist Lefty Frizzell}
-{meta: writer J.A. Ross and Jerry Organ}
+{meta: composer J.A. Ross and Jerry Organ}
 
 {start_of_verse: Verse 1}
 Sweet Lies

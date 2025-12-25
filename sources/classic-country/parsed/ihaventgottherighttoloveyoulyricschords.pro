@@ -1,6 +1,6 @@
 {meta: title I Haven't Got The Right To Love You}
 {meta: artist Mac Wiseman}
-{meta: writer Sam Buchanan}
+{meta: composer Sam Buchanan}
 
 {start_of_verse: Verse 1}
 [G]Oh my dear I haven't got the right to [C]love you

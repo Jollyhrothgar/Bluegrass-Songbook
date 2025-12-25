@@ -1,6 +1,6 @@
 {meta: title Asleep In Jesus}
 {meta: artist The Jordanaires}
-{meta: writer William Bradbury and Margaret McKay}
+{meta: composer William Bradbury and Margaret McKay}
 
 {start_of_verse: Verse 1}
 [C]Asleep in Jesus blessed [G7]sleep

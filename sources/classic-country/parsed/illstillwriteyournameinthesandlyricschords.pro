@@ -1,6 +1,6 @@
 {meta: title I’ll Still Write Your Name In The Sand}
 {meta: artist Mac Wiseman}
-{meta: writer Oby Edgar Starcher}
+{meta: composer Oby Edgar Starcher}
 
 {start_of_verse: Verse 1}
 [C]It's been many years since we were childhood [F]sweethearts

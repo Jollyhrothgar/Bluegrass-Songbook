@@ -1,6 +1,6 @@
 {meta: title Oklahoma}
 {meta: artist Cal Smith}
-{meta: writer Webb Pierce and Max Powell}
+{meta: composer Webb Pierce and Max Powell}
 
 {start_of_verse: Verse 1}
 [F]O-[C]h Okla[G7]homa  

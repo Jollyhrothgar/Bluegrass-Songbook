@@ -1,6 +1,6 @@
 {meta: title The Covered Wagon Rolled Right Along}
 {meta: artist Bob Wills}
-{meta: writer Hy Heath and Britt Wood}
+{meta: composer Hy Heath and Britt Wood}
 
 {start_of_verse: Verse 1}
 [C]Oh the covered wagon rolled right along

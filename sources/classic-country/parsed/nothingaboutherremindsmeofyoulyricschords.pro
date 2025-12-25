@@ -1,6 +1,6 @@
 {meta: title Nothing About Her Reminds Me Of You}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby}
+{meta: composer Dave Kirby}
 
 {start_of_verse: Verse 1}
 [C]She doesn't have [F]raven black [C]hair

@@ -1,6 +1,6 @@
 {meta: title Take Time To Love Her}
 {meta: artist Nat Stuckey}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]Take time to [F]love her for days at home and nights alone

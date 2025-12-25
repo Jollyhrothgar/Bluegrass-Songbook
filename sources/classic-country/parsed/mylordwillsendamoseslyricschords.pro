@@ -1,6 +1,6 @@
 {meta: title My Lord Will Send A Moses}
 {meta: artist The Cathedrals}
-{meta: writer Malcom Jones}
+{meta: composer Malcom Jones}
 
 {start_of_verse: Verse 1}
 [C]My Lord sent Moses down to see king pharaoh

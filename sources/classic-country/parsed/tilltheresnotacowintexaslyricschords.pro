@@ -1,6 +1,6 @@
 {meta: title Till There's Not A Cow In Texas}
 {meta: artist Red Steagall}
-{meta: writer Written by Glenn Sutton and Red Steagall}
+{meta: composer Written by Glenn Sutton and Red Steagall}
 
 {start_of_verse: Verse 1}
 [C]You ask me just how long I'm gonna love you

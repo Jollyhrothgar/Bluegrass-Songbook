@@ -1,6 +1,6 @@
 {meta: title The Deeper We Fall}
 {meta: artist Johnny Lee}
-{meta: writer Wayland Holyfield and Gary Nicholson}
+{meta: composer Wayland Holyfield and Gary Nicholson}
 
 {start_of_verse: Verse 1}
 [Dm]It was magic when I [C]met you 

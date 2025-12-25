@@ -1,6 +1,6 @@
 {meta: title It's a Little More Like Heaven}
 {meta: artist Hank Locklin}
-{meta: writer Hoyt Atkins and Jim Atkins}
+{meta: composer Hoyt Atkins and Jim Atkins}
 
 {start_of_verse: Verse 1}
 [G]I have sailed the peaceful water salty ocean deep and blue

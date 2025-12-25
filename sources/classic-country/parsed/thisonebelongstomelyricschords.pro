@@ -1,6 +1,6 @@
 {meta: title This One Belongs To Me}
 {meta: artist Jack Greene}
-{meta: writer D.L. King and John Swayne}
+{meta: composer D.L. King and John Swayne}
 
 {start_of_verse: Verse 1}
 [C]Ten years old and trembling as I faced that angry [F]man

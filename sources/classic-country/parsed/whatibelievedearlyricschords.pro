@@ -1,6 +1,6 @@
 {meta: title What I Believe Dear}
 {meta: artist Kitty Wells}
-{meta: writer Tott Wilson and Sue Wilson}
+{meta: composer Tott Wilson and Sue Wilson}
 
 {start_of_verse: Verse 1}
 [G]What I [C]believe dear is all up to [G]you

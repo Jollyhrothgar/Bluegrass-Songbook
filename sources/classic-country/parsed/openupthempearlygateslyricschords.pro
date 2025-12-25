@@ -1,6 +1,6 @@
 {meta: title Open Up Them Pearly Gates}
 {meta: artist The Seekers}
-{meta: writer Judith Mavis Edgeworth, Athol George Guy,}
+{meta: composer Judith Mavis Edgeworth, Athol George Guy,}
 
 {start_of_verse: Verse 1}
 [G]Listen all of you people

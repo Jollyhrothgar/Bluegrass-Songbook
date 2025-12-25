@@ -1,6 +1,6 @@
 {meta: title Can't Hurt A Man}
 {meta: artist Randy Travis}
-{meta: writer Lance Miller, Brad Warren, Brett Warren}
+{meta: composer Lance Miller, Brad Warren, Brett Warren}
 
 {start_of_verse: Verse 1}
 [C]Don't mistake me for [Dm]somebody

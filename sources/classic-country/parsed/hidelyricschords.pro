@@ -1,6 +1,6 @@
 {meta: title Hide}
 {meta: artist Vernon Oxford}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]Never again will [F]I hold you so close to me

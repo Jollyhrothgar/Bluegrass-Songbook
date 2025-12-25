@@ -1,6 +1,6 @@
 {meta: title Careless Darling}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb, Lou Wayne, Bob Shelton}
+{meta: composer Ernest Tubb, Lou Wayne, Bob Shelton}
 
 {start_of_verse: Verse 1}
 [G]You said you love me and me [C]alone 

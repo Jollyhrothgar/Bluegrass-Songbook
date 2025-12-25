@@ -1,6 +1,6 @@
 {meta: title Tall Pines}
 {meta: artist Laurie Lewis}
-{meta: writer Damon Black}
+{meta: composer Damon Black}
 
 {start_of_verse: Verse 1}
 [C]Once in my youth I stood [F]on a [C]mountain

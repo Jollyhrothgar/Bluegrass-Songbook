@@ -1,6 +1,6 @@
 {meta: title I Got Religion Last Saturday Night}
 {meta: artist Webb Pierce}
-{meta: writer Ted Daffan and Michael Webb Pierce}
+{meta: composer Ted Daffan and Michael Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]I've been working hard the [F]whole week long

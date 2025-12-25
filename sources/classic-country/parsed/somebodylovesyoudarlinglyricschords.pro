@@ -1,6 +1,6 @@
 {meta: title Somebody Loves You Darling}
 {meta: artist Jim and Jesse}
-{meta: writer Wiley Morris and Zake Morris}
+{meta: composer Wiley Morris and Zake Morris}
 
 {start_of_verse: Verse 1}
 [C]Somebody loves you [G7]darling 

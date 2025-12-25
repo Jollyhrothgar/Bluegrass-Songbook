@@ -1,6 +1,6 @@
 {meta: title Rosie Cries A Lot}
 {meta: artist Ferlin Husky}
-{meta: writer Jerry Foster}
+{meta: composer Jerry Foster}
 
 {start_of_verse: Verse 1}
 [C]Rosie starts the [F]morning by picking up his [C]cloths

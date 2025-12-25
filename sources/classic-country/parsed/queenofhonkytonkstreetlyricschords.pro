@@ -1,6 +1,6 @@
 {meta: title Queen Of Honky Tonk Street}
 {meta: artist Kitty Wells}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [G]The lights are low and the [C]jukebox is [G]loud

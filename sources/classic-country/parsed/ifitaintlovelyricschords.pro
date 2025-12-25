@@ -1,6 +1,6 @@
 {meta: title If It Ain't Love}
 {meta: artist Tammy Wynette}
-{meta: writer Mark Nesler}
+{meta: composer Mark Nesler}
 
 {start_of_verse: Verse 1}
 [G]One sided love affairs you can bet I've had my share

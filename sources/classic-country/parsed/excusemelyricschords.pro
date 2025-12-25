@@ -1,6 +1,6 @@
 {meta: title Excuse Me}
 {meta: artist Buck Owens}
-{meta: writer Harlan Howard - Buck Owens}
+{meta: composer Harlan Howard - Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]They just don't know how lost I feel without [F]you

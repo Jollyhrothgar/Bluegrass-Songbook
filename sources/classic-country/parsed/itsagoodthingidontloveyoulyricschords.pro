@@ -1,6 +1,6 @@
 {meta: title It's A Good Thing I Don't Love You}
 {meta: artist Doug Stone}
-{meta: writer Keith Palmer and Bobby Barker}
+{meta: composer Keith Palmer and Bobby Barker}
 
 {start_of_verse: Verse 1}
 [G]I brush by you in a [C]crowd

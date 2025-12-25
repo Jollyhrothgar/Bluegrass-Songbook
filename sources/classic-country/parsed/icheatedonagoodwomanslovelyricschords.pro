@@ -1,6 +1,6 @@
 {meta: title I Cheated On A Good Woman’s Love}
 {meta: artist Billy Crash Craddock}
-{meta: writer Del Bryant}
+{meta: composer Del Bryant}
 
 {start_of_verse: Verse 1}
 [G]Gather round I'm gonna tell a story

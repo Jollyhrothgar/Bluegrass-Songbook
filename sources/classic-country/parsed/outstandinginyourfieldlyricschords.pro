@@ -1,6 +1,6 @@
 {meta: title Outstanding In Your Field}
 {meta: artist Jean Shepard}
-{meta: writer Larry Lee}
+{meta: composer Larry Lee}
 
 {start_of_verse: Verse 1}
 [C]You're [F]outstanding in your field and that's where you ought to [C]be

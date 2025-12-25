@@ -1,6 +1,6 @@
 {meta: title If The Lord Wasn't Walking By My Side}
 {meta: artist Elvis Presley}
-{meta: writer Henry Slaughter}
+{meta: composer Henry Slaughter}
 
 {start_of_verse: Verse 1}
 [G]I don't know just what I'd do if the [C]Lord wasn't walking by my [G]side

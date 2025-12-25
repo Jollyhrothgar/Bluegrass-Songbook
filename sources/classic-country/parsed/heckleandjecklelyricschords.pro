@@ -1,6 +1,6 @@
 {meta: title Heckle And Jeckle}
 {meta: artist George Jones}
-{meta: writer Max D. Barnes and Max T. Barnes}
+{meta: composer Max D. Barnes and Max T. Barnes}
 
 {start_of_verse: Verse 1}
 [C]Well you and me baby know what [F]love's all about

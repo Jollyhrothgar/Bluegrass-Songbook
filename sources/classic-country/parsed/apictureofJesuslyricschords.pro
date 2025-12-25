@@ -1,6 +1,6 @@
 {meta: title A Picture Of Jesus}
 {meta: artist Nancy Moore}
-{meta: writer Dixie Hall and Tom T. Hall}
+{meta: composer Dixie Hall and Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [G]On a journey through the [D7]mountains of [G]Virginia

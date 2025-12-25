@@ -1,6 +1,6 @@
 {meta: title What If We Were Running Out Of Love}
 {meta: artist Tanya Tucker}
-{meta: writer Linda Hargrove}
+{meta: composer Linda Hargrove}
 
 {start_of_verse: Verse 1}
 [C]Everybody's wonderin' how this [F]world will get around

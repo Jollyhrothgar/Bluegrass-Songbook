@@ -1,6 +1,6 @@
 {meta: title Everything But You}
 {meta: artist Willie Nelson}
-{meta: writer Hank Cochran and Willie Nelson}
+{meta: composer Hank Cochran and Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]I've got a new car and it [G7]drives just like a [C]dream

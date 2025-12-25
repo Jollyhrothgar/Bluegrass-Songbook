@@ -1,6 +1,6 @@
 {meta: title My Sugar's Gone}
 {meta: artist Dean Martin}
-{meta: writer Ed Warren and Arthur Kent}
+{meta: composer Ed Warren and Arthur Kent}
 
 {start_of_verse: Verse 1}
 [C](Cause my [F]sweet sweet Sugar's [G7]gone

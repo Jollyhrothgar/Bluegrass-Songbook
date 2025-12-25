@@ -1,6 +1,6 @@
 {meta: title Soft As A Rose}
 {meta: artist David Houston}
-{meta: writer Norro Wilson, Carmol Taylor, Mark Sherrill}
+{meta: composer Norro Wilson, Carmol Taylor, Mark Sherrill}
 
 {start_of_verse: Verse 1}
 Intro: 

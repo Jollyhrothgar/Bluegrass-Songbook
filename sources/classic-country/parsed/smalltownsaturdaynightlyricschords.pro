@@ -1,6 +1,6 @@
 {meta: title Small Town Saturday Night}
 {meta: artist Hal Ketchum}
-{meta: writer Pat Alger and Hank DeVito}
+{meta: composer Pat Alger and Hank DeVito}
 
 {start_of_verse: Verse 1}
 [G]There's an Elvis movie on the [D7]marquee [G]sign

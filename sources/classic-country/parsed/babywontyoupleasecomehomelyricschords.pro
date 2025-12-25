@@ -1,6 +1,6 @@
 {meta: title Baby Won't You Please Come Home}
 {meta: artist Ricky Nelson}
-{meta: writer Charles Warfield and Clarence Williams}
+{meta: composer Charles Warfield and Clarence Williams}
 
 {start_of_verse: Verse 1}
 [C]Baby won't you please come [A7]home

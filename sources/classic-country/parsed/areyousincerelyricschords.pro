@@ -1,6 +1,6 @@
 {meta: title Are You Sincere}
 {meta: artist Faron Young}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]Are you sincere [Em]when you say [F]I love [G7]you

@@ -1,6 +1,6 @@
 {meta: title I'm Afraid I Lied}
 {meta: artist Jack Greene}
-{meta: writer Hank Cochran and Dave Kirby}
+{meta: composer Hank Cochran and Dave Kirby}
 
 {start_of_verse: Verse 1}
 [C]I know I told you I could [F]take it 

@@ -1,6 +1,6 @@
 {meta: title Who's Gonna Fill Their Shoes}
 {meta: artist George Jones}
-{meta: writer Troy Seals and Max D. Barnes}
+{meta: composer Troy Seals and Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]You know this whole world is full of singers

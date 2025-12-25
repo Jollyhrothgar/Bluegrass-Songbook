@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Love You Back To Loving Me Again}
 {meta: artist Joe Stampley}
-{meta: writer Murry E. Kellum and Larry Cheshier}
+{meta: composer Murry E. Kellum and Larry Cheshier}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna love you back to loving me [D7]again

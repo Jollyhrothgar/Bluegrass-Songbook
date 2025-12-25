@@ -1,6 +1,6 @@
 {meta: title A Ghost Of A Chance}
 {meta: artist Moe Bandy}
-{meta: writer Steve Collom}
+{meta: composer Steve Collom}
 
 {start_of_verse: Verse 1}
 [C]In the back of my mind you're [F]calling my [C]name

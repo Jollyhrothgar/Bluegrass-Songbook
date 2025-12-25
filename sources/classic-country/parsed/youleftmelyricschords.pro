@@ -1,6 +1,6 @@
 {meta: title You Left Me}
 {meta: artist Fats Domino}
-{meta: writer Antoine Domino and Dave Bartholomew}
+{meta: composer Antoine Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [G7]You [C]left me all by myself

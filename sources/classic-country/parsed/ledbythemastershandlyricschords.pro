@@ -1,6 +1,6 @@
 {meta: title Led By The Master's Hand}
 {meta: artist The Blackwood Brothers}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [C]As I walk the road of life my feet grow [F]weary

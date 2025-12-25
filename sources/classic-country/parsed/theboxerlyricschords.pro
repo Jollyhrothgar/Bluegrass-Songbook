@@ -1,6 +1,6 @@
 {meta: title The Boxer}
 {meta: artist Alison Krauss and Shawn Colvin}
-{meta: writer Paul Simon}
+{meta: composer Paul Simon}
 
 {start_of_verse: Verse 1}
 [C]I am just a poor boy though my story's [G7]seldom [Am]told 

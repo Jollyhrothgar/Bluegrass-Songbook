@@ -1,6 +1,6 @@
 {meta: title Away Out On A Mountain}
 {meta: artist Jimmy Rodgers}
-{meta: writer Kelly Harrell}
+{meta: composer Kelly Harrell}
 
 {start_of_verse: Verse 1}
 [C]I packed my grip for a farewell trip

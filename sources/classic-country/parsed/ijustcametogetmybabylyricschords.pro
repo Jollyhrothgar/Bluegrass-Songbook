@@ -1,6 +1,6 @@
 {meta: title I Just Came To Get My Baby}
 {meta: artist Faron Young}
-{meta: writer Wayne Kemp}
+{meta: composer Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [C]Well I didn't come in here to cause you no [F]trouble

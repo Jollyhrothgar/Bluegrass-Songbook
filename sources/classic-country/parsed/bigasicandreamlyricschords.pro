@@ -1,6 +1,6 @@
 {meta: title Big As I Can Dream}
 {meta: artist Roy Orbison}
-{meta: writer Bob Montgomery}
+{meta: composer Bob Montgomery}
 
 {start_of_verse: Verse 1}
 [C]I know  [F]they don't think  [G7]that I'll amount to [C]much 

@@ -1,6 +1,6 @@
 {meta: title Falling For You}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens - Don Rich - Bonnie Owens}
+{meta: composer Buck Owens - Don Rich - Bonnie Owens}
 
 {start_of_verse: Verse 1}
 [C]Oh the bells started ringing 

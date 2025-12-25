@@ -1,6 +1,6 @@
 {meta: title Darling Companion}
 {meta: artist Johnny Cash & June Carter}
-{meta: writer John Sebastian}
+{meta: composer John Sebastian}
 
 {start_of_verse: Verse 1}
 [D7]Darling com[C]panion come on and give me [G]understandin’

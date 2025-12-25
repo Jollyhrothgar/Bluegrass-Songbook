@@ -1,6 +1,6 @@
 {meta: title I'm Not Gonna Cry For You}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo}
+{meta: composer Raul Malo}
 
 {start_of_verse: Verse 1}
 [C]I am not gonna [G]cry for you 

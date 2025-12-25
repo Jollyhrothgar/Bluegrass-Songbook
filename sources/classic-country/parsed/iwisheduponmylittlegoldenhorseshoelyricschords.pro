@@ -1,6 +1,6 @@
 {meta: title I Wished Upon My Little Golden Horse Shoe}
 {meta: artist Hank Snow}
-{meta: writer and recorded by Hank Snow}
+{meta: composer and recorded by Hank Snow}
 
 {start_of_verse: Verse 1}
 [G]Some folks like to wish upon a [C]little silver [G]star

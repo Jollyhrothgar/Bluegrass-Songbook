@@ -1,6 +1,6 @@
 {meta: title Picking Sweethearts}
 {meta: artist Jimmy Dean}
-{meta: writer Ben Adelman, Sam Adelman, Louis Mastesky}
+{meta: composer Ben Adelman, Sam Adelman, Louis Mastesky}
 
 {start_of_verse: Verse 1}
 [C]I'm always picking [F]sweet[C]hearts for somebody [G7]else

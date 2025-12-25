@@ -1,6 +1,6 @@
 {meta: title Living In The Shadow Of His Memory}
 {meta: artist Webb Pierce}
-{meta: writer Audrey Grisham, Sylvia Fisher, Leon Miller}
+{meta: composer Audrey Grisham, Sylvia Fisher, Leon Miller}
 
 {start_of_verse: Verse 1}
 [C]The one you love has [F]gone to e[C]ternity

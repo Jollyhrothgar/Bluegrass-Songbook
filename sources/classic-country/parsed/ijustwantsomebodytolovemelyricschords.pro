@@ -1,6 +1,6 @@
 {meta: title I Just Want Somebody to Love Me}
 {meta: artist Vernon Oxford}
-{meta: writer Everett Corbin}
+{meta: composer Everett Corbin}
 
 {start_of_verse: Verse 1}
 [C]I just want  somebody to love [F]me

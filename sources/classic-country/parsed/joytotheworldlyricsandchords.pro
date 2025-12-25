@@ -1,6 +1,6 @@
 {meta: title Joy To The World}
 {meta: artist Stonewall Jackson}
-{meta: writer Hoyt Axton}
+{meta: composer Hoyt Axton}
 
 {start_of_verse: Verse 1}
 [G]Jeremiah was a bullfrog he was a good friend of mine

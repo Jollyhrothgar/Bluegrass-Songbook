@@ -1,6 +1,6 @@
 {meta: title Pictures And Memories}
 {meta: artist Alabama}
-{meta: writer Jeff Cook and Monty Wilson}
+{meta: composer Jeff Cook and Monty Wilson}
 
 {start_of_verse: Verse 1}
 [G]There's a teardrop falling [G7]slowly from my [C]eyes tonight

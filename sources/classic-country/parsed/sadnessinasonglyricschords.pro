@@ -1,6 +1,6 @@
 {meta: title Sadness In A Song}
 {meta: artist Stonewall Jackson}
-{meta: writer Wayne P. Walker and Irene Stanton}
+{meta: composer Wayne P. Walker and Irene Stanton}
 
 {start_of_verse: Verse 1}
 [F]Oh the [G7]sadness in a [C]song

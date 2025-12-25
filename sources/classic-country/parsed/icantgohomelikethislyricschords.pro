@@ -1,6 +1,6 @@
 {meta: title I Can't Go Home Like This}
 {meta: artist Ray Price}
-{meta: writer Nellie Wallace}
+{meta: composer Nellie Wallace}
 
 {start_of_verse: Verse 1}
 [C]There's too much lipstick on my collar

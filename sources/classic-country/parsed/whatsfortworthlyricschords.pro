@@ -1,6 +1,6 @@
 {meta: title What's Fort Worth}
 {meta: artist Bob Wills}
-{meta: writer Larry Lee}
+{meta: composer Larry Lee}
 
 {start_of_verse: Verse 1}
 [C]I've got a foreign palace just [F]30 miles from Dallas

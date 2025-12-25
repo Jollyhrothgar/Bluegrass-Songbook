@@ -1,6 +1,6 @@
 {meta: title The Cowboy}
 {meta: artist Johnny Rodriguez}
-{meta: writer Randy Newman}
+{meta: composer Randy Newman}
 
 {start_of_verse: Verse 1}
 [C]I’m the cowboy that came here from [F]Texas

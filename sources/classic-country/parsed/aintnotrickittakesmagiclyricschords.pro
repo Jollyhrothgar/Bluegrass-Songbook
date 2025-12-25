@@ -1,6 +1,6 @@
 {meta: title Ain't No Trick It Takes Magic}
 {meta: artist Lee Greenwood}
-{meta: writer Jim Hurt and Steve Pippin}
+{meta: composer Jim Hurt and Steve Pippin}
 
 {start_of_verse: Verse 1}
 [C]Ain't no big deal to [F]lose  I [Dm]keep [G7]telling [C]myself

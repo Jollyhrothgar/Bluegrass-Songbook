@@ -1,6 +1,6 @@
 {meta: title The Man Who Shot Liberty Valance}
 {meta: artist Gene Pitney}
-{meta: writer Burt F. Bacharach and Hal David}
+{meta: composer Burt F. Bacharach and Hal David}
 
 {start_of_verse: Verse 1}
 [C]When Liberty [Am]Valance rode to [F]town

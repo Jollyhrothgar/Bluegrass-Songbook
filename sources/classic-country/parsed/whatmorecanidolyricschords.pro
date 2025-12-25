@@ -1,6 +1,6 @@
 {meta: title What More Can I Do}
 {meta: artist Norma Jean}
-{meta: writer Hank Cochran and Hound Dog Taylor}
+{meta: composer Hank Cochran and Hound Dog Taylor}
 
 {start_of_verse: Verse 1}
 [G]Lord what [C]more [G]can I [C]do You've done so much for [G]me

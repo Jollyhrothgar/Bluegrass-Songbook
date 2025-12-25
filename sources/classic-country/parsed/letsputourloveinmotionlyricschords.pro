@@ -1,6 +1,6 @@
 {meta: title Let's Put Our Love In Motion}
 {meta: artist Charly McClain}
-{meta: writer Bob Morrison, Johnny McRae, Larry Rogers}
+{meta: composer Bob Morrison, Johnny McRae, Larry Rogers}
 
 {start_of_verse: Verse 1}
 [C]Here we [G7]are [F]alone to[G7]gether 

@@ -1,6 +1,6 @@
 {meta: title God put a rainbow in the Clouds}
 {meta: artist Chuck Wagon Gang}
-{meta: writer Andrew Jenkins and Irene Spain}
+{meta: composer Andrew Jenkins and Irene Spain}
 
 {start_of_verse: Verse 1}
 [G]When God shut Noah in the grand old [C]ark

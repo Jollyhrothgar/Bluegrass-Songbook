@@ -1,6 +1,6 @@
 {meta: title Nobody's Darling But Mine}
 {meta: artist Webb Pierce}
-{meta: writer Jimmie Davis}
+{meta: composer Jimmie Davis}
 
 {start_of_verse: Verse 1}
 Come and sit by my side little [C]darling

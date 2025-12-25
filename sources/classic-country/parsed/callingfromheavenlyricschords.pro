@@ -1,6 +1,6 @@
 {meta: title Calling From Heaven}
 {meta: artist Doyle Lawson}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [G]As you go along from day to day

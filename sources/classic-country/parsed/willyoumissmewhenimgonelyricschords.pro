@@ -1,6 +1,6 @@
 {meta: title Will You Miss Me When I'm Gone}
 {meta: artist Bob Wills}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]Will you miss me when I'm [C]gone

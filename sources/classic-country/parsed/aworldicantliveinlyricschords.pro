@@ -1,6 +1,6 @@
 {meta: title A World I Can’t Live In}
 {meta: artist Jan Howard}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]Once more I've [D7]said that I'll [G]leave you 

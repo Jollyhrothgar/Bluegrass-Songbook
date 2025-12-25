@@ -1,6 +1,6 @@
 {meta: title You're Dancin' This Dance All Wrong}
 {meta: artist George Strait}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G7]As I [C]waltz in the arms of [Dm]somebody new

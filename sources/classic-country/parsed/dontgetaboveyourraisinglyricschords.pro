@@ -1,6 +1,6 @@
 {meta: title Don't Get Above Your Raising}
 {meta: artist Ricky Skaggs}
-{meta: writer Lester Flatt and Earl Scruggs}
+{meta: composer Lester Flatt and Earl Scruggs}
 
 {start_of_verse: Verse 1}
 [G]Well I got a gal that's sweet to me 

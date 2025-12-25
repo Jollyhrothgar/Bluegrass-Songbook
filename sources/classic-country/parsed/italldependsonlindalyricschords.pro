@@ -1,6 +1,6 @@
 {meta: title It All Depends On Linda}
 {meta: artist Bobby Bare}
-{meta: writer Bobby Bare and Charlie Williams}
+{meta: composer Bobby Bare and Charlie Williams}
 
 {start_of_verse: Verse 1}
 [C]I'd buy the world if my Linda wants to [G7]be a rich man's [C]wife 

@@ -1,6 +1,6 @@
 {meta: title Will You Still Love Me Tomorrow}
 {meta: artist Brenda Lee}
-{meta: writer Gerry Goffin and Carole King}
+{meta: composer Gerry Goffin and Carole King}
 
 {start_of_verse: Verse 1}
 [C]Tonight you're mine [G7][F]completely

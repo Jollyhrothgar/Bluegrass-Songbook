@@ -1,6 +1,6 @@
 {meta: title Tonight My Baby's Coming Home}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Last night he called from Dallas 

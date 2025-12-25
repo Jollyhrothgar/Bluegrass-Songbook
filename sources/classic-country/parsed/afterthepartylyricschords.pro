@@ -1,6 +1,6 @@
 {meta: title After The Party}
 {meta: artist Gene Watson}
-{meta: writer Joe Eddie Gough}
+{meta: composer Joe Eddie Gough}
 
 {start_of_verse: Verse 1}
 [G]How does it [C]feel in the [D7]morning [G]after the [C]party

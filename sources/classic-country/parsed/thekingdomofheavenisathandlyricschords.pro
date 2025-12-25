@@ -1,6 +1,6 @@
 {meta: title The Kingdom Of Heaven Is At Hand}
 {meta: artist The Statler Brothers}
-{meta: writer Lew DeWitt}
+{meta: composer Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [G]Jesus walked that lonesome road to [D7]preach the gospel [G]news

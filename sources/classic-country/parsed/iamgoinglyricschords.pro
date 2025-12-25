@@ -1,6 +1,6 @@
 {meta: title I Am Going}
 {meta: artist Randy Travis}
-{meta: writer Buck Moore and Randy Travis}
+{meta: composer Buck Moore and Randy Travis}
 
 {start_of_verse: Verse 1}
 [G]I am going [C]where I've never [G]been

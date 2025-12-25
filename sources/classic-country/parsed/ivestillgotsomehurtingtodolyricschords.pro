@@ -1,6 +1,6 @@
 {meta: title I’ve Still Got Some Hurting To Do}
 {meta: artist George Jones}
-{meta: writer Donny Kees and Richard Ross}
+{meta: composer Donny Kees and Richard Ross}
 
 {start_of_verse: Verse 1}
 [C]Tonight I [F]went out with some old [C]friends  

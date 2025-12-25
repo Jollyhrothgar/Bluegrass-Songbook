@@ -1,6 +1,6 @@
 {meta: title Ocean Front Property}
 {meta: artist George Strait}
-{meta: writer Hank Cochran, Dean Dillon, Royce Porter}
+{meta: composer Hank Cochran, Dean Dillon, Royce Porter}
 
 {start_of_verse: Verse 1}
 [C]If you leave me [F]I won't [C]miss you

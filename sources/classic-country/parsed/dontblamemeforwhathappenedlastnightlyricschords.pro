@@ -1,6 +1,6 @@
 {meta: title Don't Blame Me For What Happened Last Night}
 {meta: artist Boxcar Willie}
-{meta: writer Lecil Travis Martin}
+{meta: composer Lecil Travis Martin}
 
 {start_of_verse: Verse 1}
 [G]How long has it [G7]been since you [C]kissed me

@@ -1,6 +1,6 @@
 {meta: title Country Hall Of Fame}
 {meta: artist Hank Locklin}
-{meta: writer Karl Davis}
+{meta: composer Karl Davis}
 
 {start_of_verse: Verse 1}
 [C]I was roaming around in Nashville in the state of Tennessee 

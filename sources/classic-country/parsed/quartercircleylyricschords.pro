@@ -1,6 +1,6 @@
 {meta: title Quarter Circle Y}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Luke Reed}
+{meta: composer Red Steagall and Luke Reed}
 
 {start_of_verse: Verse 1}
 [C]She could hear him whistling Dixie

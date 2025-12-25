@@ -1,6 +1,6 @@
 {meta: title September In The Rain}
 {meta: artist Brenda Lee}
-{meta: writer Harry Warren and Al Dubin}
+{meta: composer Harry Warren and Al Dubin}
 
 {start_of_verse: Verse 1}
 [C]The leaves of brown came tumbling down [F]remember

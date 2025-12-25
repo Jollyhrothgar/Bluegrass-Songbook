@@ -1,6 +1,6 @@
 {meta: title Before The Night Is Over}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]I can tell by the way you're a little bit [C]lonely just like Jerry Lee

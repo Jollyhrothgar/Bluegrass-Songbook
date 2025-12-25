@@ -1,6 +1,6 @@
 {meta: title Who Put The Leaving In Your Eyes}
 {meta: artist Dottie West}
-{meta: writer Jim Owen}
+{meta: composer Jim Owen}
 
 {start_of_verse: Verse 1}
 [G]There you are standing at [C]the window [D7]again

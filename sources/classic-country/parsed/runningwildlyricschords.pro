@@ -1,6 +1,6 @@
 {meta: title Running Wild}
 {meta: artist Tom T Hall}
-{meta: writer Tom T. Hall and Alan Pace}
+{meta: composer Tom T. Hall and Alan Pace}
 
 {start_of_verse: Verse 1}
 [G]In the shadow of the [C]sa[G]ddle running [C]wild and running [G]free

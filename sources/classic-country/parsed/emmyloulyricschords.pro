@@ -1,6 +1,6 @@
 {meta: title Emmylou}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Buzz Cason}
+{meta: composer Buzz Cason}
 
 {start_of_verse: Verse 1}
 [C]Oh [G7]oh [F]Emmylou [C]Emmylou what in [G7]the world can [D7]I [G7]do

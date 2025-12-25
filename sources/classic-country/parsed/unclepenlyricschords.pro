@@ -1,6 +1,6 @@
 {meta: title Uncle Pen}
 {meta: artist Ricky Skaggs}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [G]Oh the people would come from far away

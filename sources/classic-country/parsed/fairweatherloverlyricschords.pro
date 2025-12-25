@@ -1,6 +1,6 @@
 {meta: title Fair Weather Lover}
 {meta: artist Dottie West}
-{meta: writer Dottie West and Bill West}
+{meta: composer Dottie West and Bill West}
 
 {start_of_verse: Verse 1}
 [C]Fair [G7]weather [C]lover that's what [C7]you've always [F]been

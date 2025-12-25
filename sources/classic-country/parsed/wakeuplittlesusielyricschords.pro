@@ -1,6 +1,6 @@
 {meta: title Wake Up Little Susie}
 {meta: artist The Everly Brothers}
-{meta: writer Boudleaux and Felice Bryant}
+{meta: composer Boudleaux and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]Wake up little Susie wake up [Eb]    [F]   [Eb]

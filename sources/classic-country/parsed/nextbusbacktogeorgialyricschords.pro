@@ -1,6 +1,6 @@
 {meta: title Next Bus Back To Georgia}
 {meta: artist Jean Shepard}
-{meta: writer Rudie Whaling}
+{meta: composer Rudie Whaling}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna take the next bus on back to Georgia

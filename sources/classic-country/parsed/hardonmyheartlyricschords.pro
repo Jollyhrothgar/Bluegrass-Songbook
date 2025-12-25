@@ -1,6 +1,6 @@
 {meta: title Hard On My Heart}
 {meta: artist Del McCoury}
-{meta: writer Sharon Higgins, Terry Smith, William Smith}
+{meta: composer Sharon Higgins, Terry Smith, William Smith}
 
 {start_of_verse: Verse 1}
 [G]It's a shame I fell in love with a knocked out beauty queen

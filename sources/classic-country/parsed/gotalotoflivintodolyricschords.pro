@@ -1,6 +1,6 @@
 {meta: title Got A Lot Of Livin' To Do}
 {meta: artist Elvis Presley}
-{meta: writer Aaron Schroeder and Ben Weisman}
+{meta: composer Aaron Schroeder and Ben Weisman}
 
 {start_of_verse: Verse 1}
 [C]Oh yes I've [G7]got a lot o' livin' to do

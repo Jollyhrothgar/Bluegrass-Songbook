@@ -1,6 +1,6 @@
 {meta: title My Confessions}
 {meta: artist Ray Price}
-{meta: writer Bob Wills}
+{meta: composer Bob Wills}
 
 {start_of_verse: Verse 1}
 [C]Sweetheart I'm all alone [G7]tonight 

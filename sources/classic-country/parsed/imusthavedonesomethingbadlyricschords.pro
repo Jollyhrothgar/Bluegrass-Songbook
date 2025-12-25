@@ -1,6 +1,6 @@
 {meta: title I Must Have Done Something Bad}
 {meta: artist George Jones}
-{meta: writer Red Lane}
+{meta: composer Red Lane}
 
 {start_of_verse: Verse 1}
 [C]I must have done something bad [C7]sometime in my [F]life

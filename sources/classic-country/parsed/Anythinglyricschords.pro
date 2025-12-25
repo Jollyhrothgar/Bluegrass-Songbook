@@ -1,6 +1,6 @@
 {meta: title Anything}
 {meta: artist Randy Travis}
-{meta: writer Ronny Scaife and Phil Thomas}
+{meta: composer Ronny Scaife and Phil Thomas}
 
 {start_of_verse: Verse 1}
 [G]I'd do anything if you'd just let me hold you

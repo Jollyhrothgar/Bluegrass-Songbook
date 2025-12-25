@@ -1,6 +1,6 @@
 {meta: title With Christmas Near}
 {meta: artist Ray Price}
-{meta: writer Mel W. Holt}
+{meta: composer Mel W. Holt}
 
 {start_of_verse: Verse 1}
 [C]At this time of year with Christmas [F]time so near

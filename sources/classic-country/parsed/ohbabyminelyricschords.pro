@@ -1,6 +1,6 @@
 {meta: title Oh Baby Mine}
 {meta: artist Statler Brothers}
-{meta: writer Pat Ballard}
+{meta: composer Pat Ballard}
 
 {start_of_verse: Verse 1}
 [C]Oh baby mine I get so lonely

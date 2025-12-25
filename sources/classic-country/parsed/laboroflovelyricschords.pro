@@ -1,6 +1,6 @@
 {meta: title Labor Of Love}
 {meta: artist Bob Luman}
-{meta: writer Steve Wariner}
+{meta: composer Steve Wariner}
 
 {start_of_verse: Verse 1}
 [C]It's a labor of [Dm]love  [G7]created by the [C]Lord above[A7]

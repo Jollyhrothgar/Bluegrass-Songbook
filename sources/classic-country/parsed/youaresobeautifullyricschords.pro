@@ -1,6 +1,6 @@
 {meta: title You Are So Beautiful}
 {meta: artist Kenny Rogers}
-{meta: writer Billy Preston and Bruce Fisher}
+{meta: composer Billy Preston and Bruce Fisher}
 
 {start_of_verse: Verse 1}
 [C]You [C7]are so [F]beautiful   [Fm]to [C]me

@@ -1,6 +1,6 @@
 {meta: title You've Destroyed Me}
 {meta: artist Dottie West}
-{meta: writer William Rainsford}
+{meta: composer William Rainsford}
 
 {start_of_verse: Verse 1}
 [C]There's very little hope [F]of [C]recovering

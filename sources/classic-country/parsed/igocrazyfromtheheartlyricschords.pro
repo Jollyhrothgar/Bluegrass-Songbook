@@ -1,6 +1,6 @@
 {meta: title I Go Crazy From The Heart}
 {meta: artist The Bellamy Brothers}
-{meta: writer Don Schlitz and David Bellamy}
+{meta: composer Don Schlitz and David Bellamy}
 
 {start_of_verse: Verse 1}
 [G]I know the reasons why [C]you’re not here with [Am]me

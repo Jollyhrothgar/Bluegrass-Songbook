@@ -1,6 +1,6 @@
 {meta: title Chasin' That Neon Rainbow}
 {meta: artist Alan Jackson}
-{meta: writer Jim McBride and Alan Jackson}
+{meta: composer Jim McBride and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G]Daddy won a radio he [C]tuned it to a country show

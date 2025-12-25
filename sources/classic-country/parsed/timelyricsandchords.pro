@@ -1,6 +1,6 @@
 {meta: title Time}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]Ain't the snow falling just a [D7]bit deeper these days

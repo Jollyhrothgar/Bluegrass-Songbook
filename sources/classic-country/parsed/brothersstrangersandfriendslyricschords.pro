@@ -1,6 +1,6 @@
 {meta: title Brothers Strangers And Friends}
 {meta: artist Ronnie Milsap}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G7]With her [C]long auburn [C7]hair [F]and her baby blue [C]eyes

@@ -1,6 +1,6 @@
 {meta: title Misery Known As Heartache}
 {meta: artist Stonewall Jackson}
-{meta: writer Juanita Wair and Jimmy Fox}
+{meta: composer Juanita Wair and Jimmy Fox}
 
 {start_of_verse: Verse 1}
 [C]As I gather up the [F]pieces of my [C]heart dear

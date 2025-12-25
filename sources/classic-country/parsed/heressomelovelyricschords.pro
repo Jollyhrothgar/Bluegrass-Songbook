@@ -1,6 +1,6 @@
 {meta: title Here's Some Love}
 {meta: artist Tanya Tucker}
-{meta: writer Richard Mainegra and Jack Roberts}
+{meta: composer Richard Mainegra and Jack Roberts}
 
 {start_of_verse: Verse 1}
 [C]I've been watching you [F]crying [G7]when you do I just [C]feel like dying

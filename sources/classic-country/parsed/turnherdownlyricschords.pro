@@ -1,6 +1,6 @@
 {meta: title Turn Her Down}
 {meta: artist Faron Young}
-{meta: writer Ted Edlin and Faron Young}
+{meta: composer Ted Edlin and Faron Young}
 
 {start_of_verse: Verse 1}
 [C]I was offered the love of a girl who is [G7]married

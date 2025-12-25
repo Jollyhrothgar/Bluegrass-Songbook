@@ -1,6 +1,6 @@
 {meta: title Till I Stop Shaking}
 {meta: artist Billy Crash Craddock}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [G]Lady you don't [D7]know me 

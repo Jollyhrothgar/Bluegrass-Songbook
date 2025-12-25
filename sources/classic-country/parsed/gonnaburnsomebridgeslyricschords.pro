@@ -1,6 +1,6 @@
 {meta: title Gonna Burn Some Bridges}
 {meta: artist Ray Price}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [G]Tonight I'm going out and burn some [D7]bridges

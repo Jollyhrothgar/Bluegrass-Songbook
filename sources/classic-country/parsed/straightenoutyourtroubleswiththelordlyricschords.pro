@@ -1,6 +1,6 @@
 {meta: title Straighten Out Your Troubles (With the Lord)}
 {meta: artist Ole Rasmussen}
-{meta: writer Tex Atchison}
+{meta: composer Tex Atchison}
 
 {start_of_verse: Verse 1}
 [G]The Lord is standing by to lend a helping hand

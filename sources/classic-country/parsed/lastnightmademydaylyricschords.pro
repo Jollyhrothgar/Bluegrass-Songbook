@@ -1,6 +1,6 @@
 {meta: title Last Night Made My Day}
 {meta: artist Johnny Duncan}
-{meta: writer Bobby Goldsboro}
+{meta: composer Bobby Goldsboro}
 
 {start_of_verse: Verse 1}
 [C]Baby last night made my day

@@ -1,6 +1,6 @@
 {meta: title Ho Honey Ho}
 {meta: artist Red Allen}
-{meta: writer Bob Osborne and Tommy Sutton}
+{meta: composer Bob Osborne and Tommy Sutton}
 
 {start_of_verse: Verse 1}
 [C]Apples in the summer time

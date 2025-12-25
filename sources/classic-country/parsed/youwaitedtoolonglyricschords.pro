@@ -1,6 +1,6 @@
 {meta: title You waited too long}
 {meta: artist Roy Rogers}
-{meta: writer Fred Rose, Gene Autry, Ray Whitley}
+{meta: composer Fred Rose, Gene Autry, Ray Whitley}
 
 {start_of_verse: Verse 1}
 [G]You waited too long to [C]say that you're [Am]sorry

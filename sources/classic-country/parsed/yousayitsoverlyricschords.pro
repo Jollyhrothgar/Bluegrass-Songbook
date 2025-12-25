@@ -1,6 +1,6 @@
 {meta: title You Say It's Over}
 {meta: artist Marty Robbins}
-{meta: writer Jimmy Sweeney}
+{meta: composer Jimmy Sweeney}
 
 {start_of_verse: Verse 1}
 [C]You say it's over for [G7]us I'm broken [C]hearted

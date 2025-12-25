@@ -1,6 +1,6 @@
 {meta: title Jacob's Well}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Danny Steagall}
+{meta: composer Red Steagall and Danny Steagall}
 
 {start_of_verse: Verse 1}
 [C]The oldest fires and souls of men who [G7]searched for wealth

@@ -1,6 +1,6 @@
 {meta: title Before The Ring On Your Finger Turns Green}
 {meta: artist Dottie West}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]He's just leadin' you on [G]honey he'll be gone

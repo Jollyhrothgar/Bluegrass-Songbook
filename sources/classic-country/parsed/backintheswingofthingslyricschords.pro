@@ -1,6 +1,6 @@
 {meta: title Back In The Swing Of Things}
 {meta: artist Vern Gosdin}
-{meta: writer Buddy Cannon, Dean Dillon, Vern Gosdin}
+{meta: composer Buddy Cannon, Dean Dillon, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [G]Oh I was feeling down I'd really been uptight

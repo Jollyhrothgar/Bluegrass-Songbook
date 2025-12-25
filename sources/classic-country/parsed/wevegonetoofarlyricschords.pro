@@ -1,6 +1,6 @@
 {meta: title We've Gone Too Far}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Billy Gray}
+{meta: composer Hank Thompson and Billy Gray}
 
 {start_of_verse: Verse 1}
 [G]Our first affair was just a dare [D7]to tempt our patience [G]greed

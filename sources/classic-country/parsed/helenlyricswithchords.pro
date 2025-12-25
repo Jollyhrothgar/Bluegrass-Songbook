@@ -1,6 +1,6 @@
 {meta: title Helen}
 {meta: artist J.D. Crowe}
-{meta: writer Rebe Gosdin}
+{meta: composer Rebe Gosdin}
 
 {start_of_verse: Verse 1}
 [G]Helen the night that I [C]met you

@@ -1,6 +1,6 @@
 {meta: title Never No More Hard Time Blues}
 {meta: artist Bob Wills}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]I've got a barrel of flower lawd I've got a bucket of [C7]lard

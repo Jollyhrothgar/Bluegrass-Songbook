@@ -1,6 +1,6 @@
 {meta: title Cowboys Forever}
 {meta: artist Garth Brooks}
-{meta: writer Dean Dillon, Wynn Varble, John Martin}
+{meta: composer Dean Dillon, Wynn Varble, John Martin}
 
 {start_of_verse: Verse 1}
 [G7]They were [C]carved from the [G7]canyons [Am]raised on the plains

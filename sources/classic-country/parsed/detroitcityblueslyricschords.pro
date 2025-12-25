@@ -1,6 +1,6 @@
 {meta: title Detroit City Blues}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Fats Domino}
+{meta: composer Dave Bartholomew and Fats Domino}
 
 {start_of_verse: Verse 1}
 [C]Detroit City [F]it was the finest in this [C]world

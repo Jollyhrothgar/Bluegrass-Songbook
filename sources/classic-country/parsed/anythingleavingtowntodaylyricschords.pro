@@ -1,6 +1,6 @@
 {meta: title Anything Leaving Town Today}
 {meta: artist Red Sovine}
-{meta: writer Tom T. Hall and Dave Dudley}
+{meta: composer Tom T. Hall and Dave Dudley}
 
 {start_of_verse: Verse 1}
 [C]There are places I would like to see I know

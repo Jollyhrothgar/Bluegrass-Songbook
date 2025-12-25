@@ -1,6 +1,6 @@
 {meta: title Bad Moon Rising}
 {meta: artist Vernon Oxford}
-{meta: writer John C. Fogerty}
+{meta: composer John C. Fogerty}
 
 {start_of_verse: Verse 1}
 [G]I see the [D7]bad moon a-[G]rising I see [D7]trouble on the [G]way

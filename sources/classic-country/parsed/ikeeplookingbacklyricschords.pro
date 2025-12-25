@@ -1,6 +1,6 @@
 {meta: title I Keep Looking Back}
 {meta: artist Ray Price}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [G]I keep [C]looking back over my [G]shoulder

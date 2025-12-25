@@ -1,6 +1,6 @@
 {meta: title Here Comes The Rain Baby}
 {meta: artist Roy Orbison}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [C]Here comes the rain [G7]baby

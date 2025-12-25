@@ -1,6 +1,6 @@
 {meta: title Ballad Of The Green Berets}
 {meta: artist SSgt. Barry Sadler}
-{meta: writer Robin Moore and Barry Sadler}
+{meta: composer Robin Moore and Barry Sadler}
 
 {start_of_verse: Verse 1}
 [C]Fighting soldiers [G7]from the [C]sky

@@ -1,6 +1,6 @@
 {meta: title Ages And Ages Ago with chords}
 {meta: artist Jan Howard}
-{meta: writer Gene Autry, Fred Rose, Ray Whitley}
+{meta: composer Gene Autry, Fred Rose, Ray Whitley}
 
 {start_of_verse: Verse 1}
 [C]I [G7]remember when I made you [C]cry

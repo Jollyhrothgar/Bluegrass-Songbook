@@ -1,6 +1,6 @@
 {meta: title Wine Take Me Away}
 {meta: artist Merle Haggard}
-{meta: writer Tommy Collins and Merle Haggard}
+{meta: composer Tommy Collins and Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]Warm red wine you know that place where you take me some times

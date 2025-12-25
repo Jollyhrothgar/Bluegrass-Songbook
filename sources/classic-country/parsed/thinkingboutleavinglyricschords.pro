@@ -1,6 +1,6 @@
 {meta: title Thinking Bout Leaving}
 {meta: artist Gene Watson}
-{meta: writer Randy Albright, Mark D. Sanders, Butch Paulson}
+{meta: composer Randy Albright, Mark D. Sanders, Butch Paulson}
 
 {start_of_verse: Verse 1}
 [G]I planned to [C]tell her this [G]morning

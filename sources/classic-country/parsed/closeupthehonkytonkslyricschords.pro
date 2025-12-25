@@ -1,6 +1,6 @@
 {meta: title Close Up The Honky Tonks}
 {meta: artist Buck Owen}
-{meta: writer Red Simson}
+{meta: composer Red Simson}
 
 {start_of_verse: Verse 1}
 [G]She's in some honky tonk tonight I [C]know

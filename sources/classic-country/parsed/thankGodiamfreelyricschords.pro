@@ -1,6 +1,6 @@
 {meta: title Thank God I Am Free}
 {meta: artist Carroll Roberson}
-{meta: writer James McFall}
+{meta: composer James McFall}
 
 {start_of_verse: Verse 1}
 [G]For a long time I traveled down a long lonely [C]road 

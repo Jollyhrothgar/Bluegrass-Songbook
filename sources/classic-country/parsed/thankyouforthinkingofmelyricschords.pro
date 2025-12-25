@@ -1,6 +1,6 @@
 {meta: title Thank You For Thinking Of Me}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Wayne Walker}
+{meta: composer Wayne Walker}
 
 {start_of_verse: Verse 1}
 [C]To you mom and [Am]dad I [F]owe [G7]everything

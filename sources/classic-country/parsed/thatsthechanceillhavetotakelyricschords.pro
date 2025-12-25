@@ -1,6 +1,6 @@
 {meta: title That's The Chance I'll Have To Take}
 {meta: artist Waylon Jennings}
-{meta: writer Jackson King}
+{meta: composer Jackson King}
 
 {start_of_verse: Verse 1}
 [C]Troubles and a worried [G7]mind

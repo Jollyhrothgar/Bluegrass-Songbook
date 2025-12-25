@@ -1,6 +1,6 @@
 {meta: title I'm Making Love To A Stranger}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]I'm making love to a [G7]stranger

@@ -1,6 +1,6 @@
 {meta: title Before I Lose My Mind}
 {meta: artist Wanda Jackson}
-{meta: writer Vic McAlpin and Roy Drusky}
+{meta: composer Vic McAlpin and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [C]You're telling everybody   that it's [G7]over

@@ -1,6 +1,6 @@
 {meta: title Beautiful People}
 {meta: artist Bill Anderson}
-{meta: writer Kenny O'Dell}
+{meta: composer Kenny O'Dell}
 
 {start_of_verse: Verse 1}
 [C]La la la la [Em]la la la la la la [Am]la la la la [G7]la

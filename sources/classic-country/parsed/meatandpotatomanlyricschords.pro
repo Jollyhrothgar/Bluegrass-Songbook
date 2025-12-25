@@ -1,6 +1,6 @@
 {meta: title Meat And Potato Man}
 {meta: artist Alan Jackson}
-{meta: writer Harley Allen and John Pennell}
+{meta: composer Harley Allen and John Pennell}
 
 {start_of_verse: Verse 1}
 [G7]I like my [C]steak well done [F]my taters fried 

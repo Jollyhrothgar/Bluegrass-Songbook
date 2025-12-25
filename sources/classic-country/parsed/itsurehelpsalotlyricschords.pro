@@ -1,6 +1,6 @@
 {meta: title It Sure Helps A Lot}
 {meta: artist Ernest Tubb}
-{meta: writer Jerry D. Crutchfield and Buckley Maxwell}
+{meta: composer Jerry D. Crutchfield and Buckley Maxwell}
 
 {start_of_verse: Verse 1}
 [C]I know that sitting on this stool and [F]drinking like I do

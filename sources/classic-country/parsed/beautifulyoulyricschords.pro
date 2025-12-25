@@ -1,6 +1,6 @@
 {meta: title Beautiful You}
 {meta: artist Gene Watson}
-{meta: writer Joe Gough}
+{meta: composer Joe Gough}
 
 {start_of_verse: Verse 1}
 [G]Every dream I have is [C]filled with beautiful [G]you

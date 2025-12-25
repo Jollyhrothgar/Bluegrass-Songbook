@@ -1,6 +1,6 @@
 {meta: title Love Without End Amen}
 {meta: artist George Strait}
-{meta: writer Aaron Barker}
+{meta: composer Aaron Barker}
 
 {start_of_verse: Verse 1}
 [C]I got sent home from school one day with a [F]shiner on my [C]eye

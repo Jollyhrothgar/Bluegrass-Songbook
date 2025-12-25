@@ -1,6 +1,6 @@
 {meta: title Sometimes When We Touch}
 {meta: artist Tammy Wynette}
-{meta: writer Barry Mann and Dan Hill}
+{meta: composer Barry Mann and Dan Hill}
 
 {start_of_verse: Verse 1}
 [C]You ask me if I [F]love you [G7]and I choke on my [C]reply

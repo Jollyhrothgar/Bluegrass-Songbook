@@ -1,6 +1,6 @@
 {meta: title How Long Does It Hurt}
 {meta: artist Jean Shepard}
-{meta: writer Virginia Midgett and D.W. Orinich}
+{meta: composer Virginia Midgett and D.W. Orinich}
 
 {start_of_verse: Verse 1}
 [G]How [C]long does it hurt [D7]when a heart [G]breaks

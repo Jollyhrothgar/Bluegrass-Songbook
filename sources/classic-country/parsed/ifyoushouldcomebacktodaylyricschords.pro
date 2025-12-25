@@ -1,6 +1,6 @@
 {meta: title If You Should Come Back Today}
 {meta: artist Johnny Paycheck}
-{meta: writer Pete Howard and Johnny Mathis}
+{meta: composer Pete Howard and Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [G]You'd stop a hundred and forty tears

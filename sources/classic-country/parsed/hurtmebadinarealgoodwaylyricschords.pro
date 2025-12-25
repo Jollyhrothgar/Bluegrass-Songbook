@@ -1,6 +1,6 @@
 {meta: title Hurt Me Bad In A Real Good Way}
 {meta: artist Patty Loveless}
-{meta: writer Rafe Van Hoy and Deborah Allen}
+{meta: composer Rafe Van Hoy and Deborah Allen}
 
 {start_of_verse: Verse 1}
 [C]Would've [F]never found [C]you if he had [F]wanted to [C]stay

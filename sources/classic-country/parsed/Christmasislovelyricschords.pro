@@ -1,6 +1,6 @@
 {meta: title Christmas Is Love}
 {meta: artist Alabama}
-{meta: writer Rich Alves, Jeff Knight, Jerry Taylor}
+{meta: composer Rich Alves, Jeff Knight, Jerry Taylor}
 
 {start_of_verse: Verse 1}
 [C]It's that time of [G]year  [C]when the whole world is [G]heart to heart

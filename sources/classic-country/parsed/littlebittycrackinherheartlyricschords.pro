@@ -1,6 +1,6 @@
 {meta: title Little Bitty Crack In Her Heart}
 {meta: artist Randy Travis}
-{meta: writer Jim Rushing and Shawn Camp}
+{meta: composer Jim Rushing and Shawn Camp}
 
 {start_of_verse: Verse 1}
 [C]Shattered inside and scattered around

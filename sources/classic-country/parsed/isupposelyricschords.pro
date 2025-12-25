@@ -1,6 +1,6 @@
 {meta: title I Suppose}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Rusty Gabbard}
+{meta: composer Rusty Gabbard}
 
 {start_of_verse: Verse 1}
 [C]I suppose you didn't know how much I love [F]you

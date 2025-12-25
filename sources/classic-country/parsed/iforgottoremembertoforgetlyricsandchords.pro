@@ -1,6 +1,6 @@
 {meta: title I Forgot to Remember to Forget}
 {meta: artist Elvis Presley}
-{meta: writer Stan Kesler and Carl Feathers}
+{meta: composer Stan Kesler and Carl Feathers}
 
 {start_of_verse: Verse 1}
 [C]I forgot to remember to forget [G7]her

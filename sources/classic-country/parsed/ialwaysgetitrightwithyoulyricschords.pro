@@ -1,6 +1,6 @@
 {meta: title I Always Get It Right With You}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen and Charlie Williams}
+{meta: composer Joe Allen and Charlie Williams}
 
 {start_of_verse: Verse 1}
 [C]Baby I ran when [G7]I should have walked

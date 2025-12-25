@@ -1,6 +1,6 @@
 {meta: title Country Boy Rock And Roll}
 {meta: artist Don Reno and Red Smiley}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [C]You can tell I'm from the country see I'm from outta town

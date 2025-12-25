@@ -1,6 +1,6 @@
 {meta: title Someone Took My Place With You}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Lester Flatt, Earl Scruggs, Gurney Thomas}
+{meta: composer Lester Flatt, Earl Scruggs, Gurney Thomas}
 
 {start_of_verse: Verse 1}
 [G]Now someone took my place with [D7]you

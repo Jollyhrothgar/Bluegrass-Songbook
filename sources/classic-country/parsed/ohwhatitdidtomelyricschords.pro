@@ -1,6 +1,6 @@
 {meta: title Oh What It Did To Me}
 {meta: artist Tanya Tucker}
-{meta: writer Jerry Crutchfield}
+{meta: composer Jerry Crutchfield}
 
 {start_of_verse: Verse 1}
 [G]I saw you tonight in her arms so [D7]tight

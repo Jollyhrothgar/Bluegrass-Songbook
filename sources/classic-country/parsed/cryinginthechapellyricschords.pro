@@ -1,6 +1,6 @@
 {meta: title Crying in the Chapel}
 {meta: artist Eddy Arnold}
-{meta: writer Artie Glenn}
+{meta: composer Artie Glenn}
 
 {start_of_verse: Verse 1}
 [C]You saw me crying in the [F]chapel

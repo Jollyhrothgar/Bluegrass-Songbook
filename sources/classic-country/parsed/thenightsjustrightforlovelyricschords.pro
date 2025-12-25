@@ -1,6 +1,6 @@
 {meta: title The Night's Just Right For Love}
 {meta: artist George Strait}
-{meta: writer Rodney Crowell}
+{meta: composer Rodney Crowell}
 
 {start_of_verse: Verse 1}
 [Dm]I don't mind the [G7]thought of growing [C]old

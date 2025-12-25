@@ -1,6 +1,6 @@
 {meta: title In My Dear Old Southern Home}
 {meta: artist Doc Watson}
-{meta: writer Ellsworth Cozzens and Jimmie Rodgers}
+{meta: composer Ellsworth Cozzens and Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]In my dear old southern home

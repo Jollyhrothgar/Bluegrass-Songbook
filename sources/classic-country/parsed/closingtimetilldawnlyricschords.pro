@@ -1,6 +1,6 @@
 {meta: title Closing Time Till Dawn}
 {meta: artist Red Sovine}
-{meta: writer Warren Robb}
+{meta: composer Warren Robb}
 
 {start_of_verse: Verse 1}
 [G]With wine I try to [C]satisfy my [D7]hunger for the [G]past

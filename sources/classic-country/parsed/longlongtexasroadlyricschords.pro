@@ -1,6 +1,6 @@
 {meta: title Long Long Texas Road}
 {meta: artist Roy Drusky}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [C]I've been up and I've been [F]down 

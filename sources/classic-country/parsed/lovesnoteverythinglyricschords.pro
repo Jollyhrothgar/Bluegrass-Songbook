@@ -1,6 +1,6 @@
 {meta: title Love's Not Everything Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Marty Stuart and Connie Smith}
+{meta: composer Marty Stuart and Connie Smith}
 
 {start_of_verse: Verse 1}
 [C]I can't hold you but [C7]I can't let you [F]go

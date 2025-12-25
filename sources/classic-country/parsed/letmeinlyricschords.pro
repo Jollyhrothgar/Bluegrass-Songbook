@@ -1,6 +1,6 @@
 {meta: title Let Me In}
 {meta: artist Porter Wagoner}
-{meta: writer Gene Crysler}
+{meta: composer Gene Crysler}
 
 {start_of_verse: Verse 1}
 [G]A little boy knocked at the warden's door of [D7]Sing Sing then in tears

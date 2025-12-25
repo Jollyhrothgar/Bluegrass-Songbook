@@ -1,6 +1,6 @@
 {meta: title You're No Angel Yourself}
 {meta: artist Kitty Wells}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [C]Your jealous heart I [F]can't [C]understand

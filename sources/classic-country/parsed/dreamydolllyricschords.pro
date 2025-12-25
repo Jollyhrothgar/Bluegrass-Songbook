@@ -1,6 +1,6 @@
 {meta: title Dreamy Doll}
 {meta: artist Bob Luman}
-{meta: writer Ron Hargrave and Sheb Wooley}
+{meta: composer Ron Hargrave and Sheb Wooley}
 
 {start_of_verse: Verse 1}
 [G]I had a [Em]dream last night [C]it wasn't [D7]you [G]

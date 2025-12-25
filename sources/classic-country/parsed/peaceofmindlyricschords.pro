@@ -1,6 +1,6 @@
 {meta: title Peace Of Mind}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Aaron Barker}
+{meta: composer Dean Dillon and Aaron Barker}
 
 {start_of_verse: Verse 1}
 [C]I go [F]anywhere that [C]ol' wind blows [F]

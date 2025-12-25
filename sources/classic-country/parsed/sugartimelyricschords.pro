@@ -1,6 +1,6 @@
 {meta: title Sugartime}
 {meta: artist McGuire Sisters}
-{meta: writer Odis Echols and Charlie Phillips}
+{meta: composer Odis Echols and Charlie Phillips}
 
 {start_of_verse: Verse 1}
 [C]We-[G7]l-l [C]sugar in the morning 

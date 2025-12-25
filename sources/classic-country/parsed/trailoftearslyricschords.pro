@@ -1,6 +1,6 @@
 {meta: title Trail Of Tears}
 {meta: artist Tanya Tucker}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [G]She'll always get you when your [C]guard is [G]down

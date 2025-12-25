@@ -1,6 +1,6 @@
 {meta: title Bo Weevil}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Fats Domino}
+{meta: composer Dave Bartholomew and Fats Domino}
 
 {start_of_verse: Verse 1}
 [G]On Saturday night where I was born

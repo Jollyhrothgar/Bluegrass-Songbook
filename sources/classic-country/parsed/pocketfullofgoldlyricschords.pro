@@ -1,6 +1,6 @@
 {meta: title Pocket Full Of Gold}
 {meta: artist Vince Gill}
-{meta: writer Brian Allsmiller and Vince Gill}
+{meta: composer Brian Allsmiller and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]He slipped the ring off his [F]finger 

@@ -1,6 +1,6 @@
 {meta: title It's The Wine That's Talking}
 {meta: artist Jean Shepard}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]I want so much to [D7]believe the things you're [G]saying

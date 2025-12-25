@@ -1,6 +1,6 @@
 {meta: title Mardi Gras In New Orleans}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Fats Domino}
+{meta: composer Dave Bartholomew and Fats Domino}
 
 {start_of_verse: Verse 1}
 [G]Well I'm going to New Orleans I'm gonna see the Mardi Gras

@@ -1,6 +1,6 @@
 {meta: title Night Games}
 {meta: artist Charlie Pride}
-{meta: writer Alan R. Mevis, Norris Wilson}
+{meta: composer Alan R. Mevis, Norris Wilson}
 
 {start_of_verse: Verse 1}
 [C]When that [F]neon sun comes up in the [C]evening

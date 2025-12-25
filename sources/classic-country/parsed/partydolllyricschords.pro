@@ -1,6 +1,6 @@
 {meta: title Party Doll}
 {meta: artist Buddy Knox}
-{meta: writer Jimmy Bowen, Buddy Knox, Dave Alldred}
+{meta: composer Jimmy Bowen, Buddy Knox, Dave Alldred}
 
 {start_of_verse: Verse 1}
 [D7]Well all I want is a [G]party doll

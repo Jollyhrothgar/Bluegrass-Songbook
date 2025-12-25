@@ -1,6 +1,6 @@
 {meta: title Winning You Sure Made A Loser Out Of Me and Chords}
 {meta: artist Faron Young}
-{meta: writer David Wilkins and Jody Johnson}
+{meta: composer David Wilkins and Jody Johnson}
 
 {start_of_verse: Verse 1}
 [C]If I’d never won your [Em]love [Am]

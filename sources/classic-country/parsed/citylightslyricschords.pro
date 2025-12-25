@@ -1,6 +1,6 @@
 {meta: title City Lights}
 {meta: artist Ray Price}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]A bright array of city lights 

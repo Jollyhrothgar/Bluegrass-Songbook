@@ -1,6 +1,6 @@
 {meta: title Mama Come Get Your Baby Boy}
 {meta: artist Eddy Arnold}
-{meta: writer Leon Merritt and Alvin Alton}
+{meta: composer Leon Merritt and Alvin Alton}
 
 {start_of_verse: Verse 1}
 [C]Once I was a happy boy [F]free as I could be

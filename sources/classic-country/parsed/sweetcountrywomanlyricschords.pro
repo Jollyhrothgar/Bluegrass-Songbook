@@ -1,6 +1,6 @@
 {meta: title Sweet Country Woman}
 {meta: artist Johnny Duncan}
-{meta: writer Sandy St.John & Chuck Thorp}
+{meta: composer Sandy St.John & Chuck Thorp}
 
 {start_of_verse: Verse 1}
 [C]Monday morning I'm feeling down

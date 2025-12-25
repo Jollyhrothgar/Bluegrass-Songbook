@@ -1,6 +1,6 @@
 {meta: title Only You (And You Alone)}
 {meta: artist Reba McEntire}
-{meta: writer Andre Rand and Buck Ram}
+{meta: composer Andre Rand and Buck Ram}
 
 {start_of_verse: Verse 1}
 [G7]Only [C]you can make this [E7]world seem right

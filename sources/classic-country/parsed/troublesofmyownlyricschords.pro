@@ -1,6 +1,6 @@
 {meta: title Troubles of My Own}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Antoine Domino}
+{meta: composer Dave Bartholomew and Antoine Domino}
 
 {start_of_verse: Verse 1}
 [C]Nobody knows my trouble

@@ -1,6 +1,6 @@
 {meta: title I Would Fly}
 {meta: artist Mel Tillis}
-{meta: writer Tracy Newman}
+{meta: composer Tracy Newman}
 
 {start_of_verse: Verse 1}
 [G]If I fail to please you 

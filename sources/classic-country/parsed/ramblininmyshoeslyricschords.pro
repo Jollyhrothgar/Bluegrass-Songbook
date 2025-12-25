@@ -1,6 +1,6 @@
 {meta: title Ramblin’ In My Shoes}
 {meta: artist Hank Williams Jr.}
-{meta: writer Bill Emerson and Vince Emerson}
+{meta: composer Bill Emerson and Vince Emerson}
 
 {start_of_verse: Verse 1}
 [C]Now daddy told me stories 

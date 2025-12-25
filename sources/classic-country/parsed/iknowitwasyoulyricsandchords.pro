@@ -1,6 +1,6 @@
 {meta: title I Know it Was You}
 {meta: artist Webb Pierce}
-{meta: writer Wayne Walker and John Bailes}
+{meta: composer Wayne Walker and John Bailes}
 
 {start_of_verse: Verse 1}
 [C]Through all my wasted [F]years [G7]through all my bitter [C]tears

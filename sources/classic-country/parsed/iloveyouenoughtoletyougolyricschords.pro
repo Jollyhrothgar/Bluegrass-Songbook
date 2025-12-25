@@ -1,6 +1,6 @@
 {meta: title I Love You Enough To Let You Go}
 {meta: artist Alabama}
-{meta: writer Randy Owens, Gary Baker, Frank J. Myers}
+{meta: composer Randy Owens, Gary Baker, Frank J. Myers}
 
 {start_of_verse: Verse 1}
 [G7]I've re[C]hearsed this day a thou[Am]sand times 

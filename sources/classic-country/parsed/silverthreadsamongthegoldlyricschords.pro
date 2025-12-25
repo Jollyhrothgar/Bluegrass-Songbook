@@ -1,6 +1,6 @@
 {meta: title Silver Threads Among The Gold}
 {meta: artist Slim Whitman}
-{meta: writer H.P. Danks and Eben E. Rexford}
+{meta: composer H.P. Danks and Eben E. Rexford}
 
 {start_of_verse: Verse 1}
 [G]Darlin' I am growin' [D7]older [G]mmm

@@ -1,6 +1,6 @@
 {meta: title Take Me Like I Am}
 {meta: artist Johnny Horton}
-{meta: writer Claude King}
+{meta: composer Claude King}
 
 {start_of_verse: Verse 1}
 [C]I'm a-livin' on the other side [G7]of the track its [C]true

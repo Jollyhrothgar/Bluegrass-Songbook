@@ -1,6 +1,6 @@
 {meta: title Snowing On Raton}
 {meta: artist Emmylou Harris}
-{meta: writer Townes Van Zandt}
+{meta: composer Townes Van Zandt}
 
 {start_of_verse: Verse 1}
 [C]Well when the [G7]wind don't blow in [C]Amarillo

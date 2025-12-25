@@ -1,6 +1,6 @@
 {meta: title Telephone Line}
 {meta: artist Leona Williams}
-{meta: writer Leona Williams and Marilyn Belken}
+{meta: composer Leona Williams and Marilyn Belken}
 
 {start_of_verse: Verse 1}
 [C]When I got to work this morning

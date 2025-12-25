@@ -1,6 +1,6 @@
 {meta: title Pick Me Ups}
 {meta: artist Jim Ed Brown}
-{meta: writer Buck Graves}
+{meta: composer Buck Graves}
 
 {start_of_verse: Verse 1}
 [G]You wonder why I'm gone so much and come home late at [G7]night

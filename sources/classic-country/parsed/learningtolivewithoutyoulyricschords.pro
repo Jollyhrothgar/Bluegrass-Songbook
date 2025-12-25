@@ -1,6 +1,6 @@
 {meta: title Learning To Live Without You}
 {meta: artist Mickey Gilley}
-{meta: writer Steve Michaels}
+{meta: composer Steve Michaels}
 
 {start_of_verse: Verse 1}
 [G]I'd like to know if you're [C]lonely

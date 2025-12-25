@@ -1,6 +1,6 @@
 {meta: title Oh Boy}
 {meta: artist Buddy Holly}
-{meta: writer Norman Petty, Bill Tilgman, Sonny West}
+{meta: composer Norman Petty, Bill Tilgman, Sonny West}
 
 {start_of_verse: Verse 1}
 [G]All of my love all of my kissing 

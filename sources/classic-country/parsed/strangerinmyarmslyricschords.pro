@@ -1,6 +1,6 @@
 {meta: title Stranger In My Arms}
 {meta: artist Merle Haggard}
-{meta: writer Fuzzy Owen and Wally Lewis}
+{meta: composer Fuzzy Owen and Wally Lewis}
 
 {start_of_verse: Verse 1}
 [G]I don't thrill you like I used to do there's something on your [C]mind

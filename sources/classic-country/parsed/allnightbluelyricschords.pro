@@ -1,6 +1,6 @@
 {meta: title All Night Blue}
 {meta: artist Billy Crash Craddock}
-{meta: writer Ava Aldridge and Cindy Richardson}
+{meta: composer Ava Aldridge and Cindy Richardson}
 
 {start_of_verse: Verse 1}
 [C]You've got a life [F]somewhere without me

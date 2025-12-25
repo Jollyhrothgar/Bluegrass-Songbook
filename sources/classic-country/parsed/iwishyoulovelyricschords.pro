@@ -1,6 +1,6 @@
 {meta: title I Wish You Love}
 {meta: artist Billy Walker}
-{meta: writer W.S. Stevenson, Carl Belew, Tommy Blake}
+{meta: composer W.S. Stevenson, Carl Belew, Tommy Blake}
 
 {start_of_verse: Verse 1}
 [C]No more to kiss [G7]you 

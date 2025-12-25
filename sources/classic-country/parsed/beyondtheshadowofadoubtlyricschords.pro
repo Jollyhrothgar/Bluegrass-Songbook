@@ -1,6 +1,6 @@
 {meta: title Beyond The Shadow Of A Doubt}
 {meta: artist Jim Reeves}
-{meta: writer Ted Daffan and Theda Daffan}
+{meta: composer Ted Daffan and Theda Daffan}
 
 {start_of_verse: Verse 1}
 [G]You are my guiding [C]star

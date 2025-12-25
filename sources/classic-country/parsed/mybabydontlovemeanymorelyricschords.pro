@@ -1,6 +1,6 @@
 {meta: title My Baby Don't Love Me Anymore}
 {meta: artist Johnny Paycheck}
-{meta: writer Aubrey Mayhew and Johnny Paycheck}
+{meta: composer Aubrey Mayhew and Johnny Paycheck}
 
 {start_of_verse: Verse 1}
 [C]Teardrops scattered all over the floor

@@ -1,6 +1,6 @@
 {meta: title Walking To Jerusalem}
 {meta: artist Tracy Byrd}
-{meta: writer Sam Hogin and Mark D. Sanders}
+{meta: composer Sam Hogin and Mark D. Sanders}
 
 {start_of_verse: Verse 1}
 [C]I dressed up in my best my [G7]Ropers and my vest

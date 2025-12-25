@@ -1,6 +1,6 @@
 {meta: title Even The Bad Times Are Good}
 {meta: artist George Jones}
-{meta: writer Carl Belew and Clyde Pitts}
+{meta: composer Carl Belew and Clyde Pitts}
 
 {start_of_verse: Verse 1}
 [G]If there's a chance that your heart misses 

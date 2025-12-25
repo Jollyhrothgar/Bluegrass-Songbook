@@ -1,6 +1,6 @@
 {meta: title The Door Is Always Open}
 {meta: artist Ernest Tubb}
-{meta: writer Bob McDill and Dickey Lee}
+{meta: composer Bob McDill and Dickey Lee}
 
 {start_of_verse: Verse 1}
 [G]Saw your picture in the paper [C]and I see you've married [G]good

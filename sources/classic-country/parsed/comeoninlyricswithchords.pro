@@ -1,6 +1,6 @@
 {meta: title Come On In}
 {meta: artist Sonny James}
-{meta: writer Virgil F. Stewart, Carole Smith, Sonny James}
+{meta: composer Virgil F. Stewart, Carole Smith, Sonny James}
 
 {start_of_verse: Verse 1}
 [C]I hear you knocking at my door

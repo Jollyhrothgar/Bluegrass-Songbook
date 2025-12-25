@@ -1,6 +1,6 @@
 {meta: title Rain Fallin'}
 {meta: artist Reba McEntire}
-{meta: writer Charlie Black}
+{meta: composer Charlie Black}
 
 {start_of_verse: Verse 1}
 [G]Rain fallin' fallin' rain 

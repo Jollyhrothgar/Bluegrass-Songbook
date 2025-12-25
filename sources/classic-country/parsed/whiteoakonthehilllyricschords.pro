@@ -1,6 +1,6 @@
 {meta: title White Oak On The Hill}
 {meta: artist Boone Creek Grass}
-{meta: writer Mike Todd}
+{meta: composer Mike Todd}
 
 {start_of_verse: Verse 1}
 [G]There's a white oak on the hill at my [C]old clinch mountain [G]home

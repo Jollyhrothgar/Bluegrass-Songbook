@@ -1,6 +1,6 @@
 {meta: title Before You Go}
 {meta: artist Buck Owens}
-{meta: writer Don Rich and Buck Owens}
+{meta: composer Don Rich and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]Oh you say that you're going away and leave me

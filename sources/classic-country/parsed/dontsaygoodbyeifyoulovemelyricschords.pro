@@ -1,6 +1,6 @@
 {meta: title Don’t Say Goodbye If You Love Me}
 {meta: artist Jim and Jesse}
-{meta: writer Jimmie Davis and Bonnie Dodd}
+{meta: composer Jimmie Davis and Bonnie Dodd}
 
 {start_of_verse: Verse 1}
 [G]Don’t say goodbye if you [C]love me

@@ -1,6 +1,6 @@
 {meta: title It's Easier Said Than Done}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [G](Easier [C]said [G]easier [C]said [G]easier said than [D7]done)

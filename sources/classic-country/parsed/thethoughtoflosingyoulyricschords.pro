@@ -1,6 +1,6 @@
 {meta: title The Thought Of Losing You}
 {meta: artist Charlie Pride}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]You look good to [C]me every [D7]morning over [G]coffee 

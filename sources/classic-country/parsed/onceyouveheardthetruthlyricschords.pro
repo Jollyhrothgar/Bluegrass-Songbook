@@ -1,6 +1,6 @@
 {meta: title Once You've Heard The Truth}
 {meta: artist Randy Travis}
-{meta: writer Leslie Satcher and Chuck Jones}
+{meta: composer Leslie Satcher and Chuck Jones}
 
 {start_of_verse: Verse 1}
 [C]It was just like every other morning

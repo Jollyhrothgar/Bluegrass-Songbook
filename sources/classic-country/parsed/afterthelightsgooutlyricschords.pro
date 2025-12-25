@@ -1,6 +1,6 @@
 {meta: title After The Lights Go Out}
 {meta: artist Ricky Van Shelton}
-{meta: writer Warner McPherson}
+{meta: composer Warner McPherson}
 
 {start_of_verse: Verse 1}
 [G]Tonight I'm [C]out with the [G]crowd

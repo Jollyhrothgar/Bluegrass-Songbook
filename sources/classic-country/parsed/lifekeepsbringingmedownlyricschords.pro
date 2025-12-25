@@ -1,6 +1,6 @@
 {meta: title Life Keeps Bringing Me Down}
 {meta: artist Alan Jackson}
-{meta: writer Al Anderson and Shawn Camp}
+{meta: composer Al Anderson and Shawn Camp}
 
 {start_of_verse: Verse 1}
 [C]Well I'm the poorest old boy that [F]you've ever [C]seen

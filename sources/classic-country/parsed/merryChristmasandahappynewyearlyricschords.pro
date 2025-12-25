@@ -1,6 +1,6 @@
 {meta: title Merry Christmas And A Happy New Year}
 {meta: artist The Bellamy Brothers}
-{meta: writer Ralph Siegel}
+{meta: composer Ralph Siegel}
 
 {start_of_verse: Verse 1}
 [C]Merry Christmas [F]joy to [C]you

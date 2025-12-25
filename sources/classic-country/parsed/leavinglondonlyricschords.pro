@@ -1,6 +1,6 @@
 {meta: title Leaving London}
 {meta: artist Doc Watson}
-{meta: writer Tom Paxton}
+{meta: composer Tom Paxton}
 
 {start_of_verse: Verse 1}
 [G]There’s a dark and rolling [Em]sea 

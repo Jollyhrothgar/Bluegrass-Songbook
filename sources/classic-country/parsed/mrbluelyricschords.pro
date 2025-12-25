@@ -1,6 +1,6 @@
 {meta: title Mr. Blue}
 {meta: artist Garth Brooks}
-{meta: writer Dewayne Blackwell}
+{meta: composer Dewayne Blackwell}
 
 {start_of_verse: Verse 1}
 [F]Our guardian star lost all it's [Fm]glow 

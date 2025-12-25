@@ -1,6 +1,6 @@
 {meta: title Poor Sweet Baby}
 {meta: artist Jean Shepard}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]I knew this morning as [D7]soon as the phone [G]rang

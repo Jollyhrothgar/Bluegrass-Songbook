@@ -1,6 +1,6 @@
 {meta: title Anything That's Part Of You}
 {meta: artist Elvis Presley}
-{meta: writer Don Robertson}
+{meta: composer Don Robertson}
 
 {start_of_verse: Verse 1}
 [C]I memorize the note you sent [Em]

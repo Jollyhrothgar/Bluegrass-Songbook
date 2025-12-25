@@ -1,6 +1,6 @@
 {meta: title Speaking Of The Angel}
 {meta: artist Gene Watson}
-{meta: writer Shawn Camp and Jim Rushing}
+{meta: composer Shawn Camp and Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]In a den of noise there's silence when you're [G7]nursing on a whiskey [C]glass

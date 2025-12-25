@@ -1,6 +1,6 @@
 {meta: title If It Was Up To Me}
 {meta: artist Doug Stone}
-{meta: writer Johnny MacRae and Steve Clark}
+{meta: composer Johnny MacRae and Steve Clark}
 
 {start_of_verse: Verse 1}
 [G]All our friends are [D7]asking me [G]about you

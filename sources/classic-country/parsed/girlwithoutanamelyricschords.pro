@@ -1,6 +1,6 @@
 {meta: title Girl Without A Name}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [D7]Watch her when she [C]walks across the [G]floor

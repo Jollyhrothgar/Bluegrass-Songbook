@@ -1,6 +1,6 @@
 {meta: title When Santa Lost His Way}
 {meta: artist George Morgan}
-{meta: writer Warren Brown}
+{meta: composer Warren Brown}
 
 {start_of_verse: Verse 1}
 [C]A little known tale now [F]almost [C]lost

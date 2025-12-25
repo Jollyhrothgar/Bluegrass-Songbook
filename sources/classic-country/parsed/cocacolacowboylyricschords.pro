@@ -1,6 +1,6 @@
 {meta: title Coca Cola Cowboy chords}
 {meta: artist Mel Tillis}
-{meta: writer James S. Pinkard,Jr., Irving Dain}
+{meta: composer James S. Pinkard,Jr., Irving Dain}
 
 {start_of_verse: Verse 1}
 [D7]I called collect on the [G]phone

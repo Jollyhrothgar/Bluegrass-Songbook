@@ -1,6 +1,6 @@
 {meta: title The Day That Love Walked In}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Good mornin' sun you've been a long time [F][A#7]shinin'

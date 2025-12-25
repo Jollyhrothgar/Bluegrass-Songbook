@@ -1,6 +1,6 @@
 {meta: title Think It Over}
 {meta: artist Ricky Van Shelton}
-{meta: writer Richard W. Bennett and Stephen F. Earle}
+{meta: composer Richard W. Bennett and Stephen F. Earle}
 
 {start_of_verse: Verse 1}
 [C]You're here you're [G7]gone I'm still [F]hanging [G7]on

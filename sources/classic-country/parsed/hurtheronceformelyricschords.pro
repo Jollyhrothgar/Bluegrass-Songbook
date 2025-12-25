@@ -1,6 +1,6 @@
 {meta: title Hurt Her Once For Me}
 {meta: artist Wilburn Brothers}
-{meta: writer Vincent Finneran and John Russell Bright}
+{meta: composer Vincent Finneran and John Russell Bright}
 
 {start_of_verse: Verse 1}
 [C]She's all hang up on you 

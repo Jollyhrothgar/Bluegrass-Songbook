@@ -1,6 +1,6 @@
 {meta: title Country Memories}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]I [C]hear the [E7]bullfrogs singing bass on the [A7]pond

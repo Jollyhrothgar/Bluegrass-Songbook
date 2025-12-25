@@ -1,6 +1,6 @@
 {meta: title It Hurts So Much To See You Go}
 {meta: artist Jim Reeves}
-{meta: writer Bobby Lee Warren, Billy Guitar, Jim Reeves}
+{meta: composer Bobby Lee Warren, Billy Guitar, Jim Reeves}
 
 {start_of_verse: Verse 1}
 [C]Tonight we'll reach the hour we [C7]set for [F]parting

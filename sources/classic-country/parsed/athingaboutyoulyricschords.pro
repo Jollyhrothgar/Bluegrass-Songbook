@@ -1,6 +1,6 @@
 {meta: title A Thing About You}
 {meta: artist Emmylou Harris}
-{meta: writer Tom Petty}
+{meta: composer Tom Petty}
 
 {start_of_verse: Verse 1}
 [G]I'm not much on mystery

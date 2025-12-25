@@ -1,6 +1,6 @@
 {meta: title Ride Me Back Home}
 {meta: artist Willie Nelson}
-{meta: writer Lucinda Hinton, Joe Manual,}
+{meta: composer Lucinda Hinton, Joe Manual,}
 
 {start_of_verse: Verse 1}
 [C]We rode into battle barebacked and saddled

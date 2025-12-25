@@ -1,6 +1,6 @@
 {meta: title My Heroes Have Always Been Cowboys}
 {meta: artist Waylon Jennings}
-{meta: writer Sharon Vaughn}
+{meta: composer Sharon Vaughn}
 
 {start_of_verse: Verse 1}
 [C]I grew up dreaming of being a cowboy

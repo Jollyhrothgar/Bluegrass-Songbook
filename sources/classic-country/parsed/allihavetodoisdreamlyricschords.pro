@@ -1,6 +1,6 @@
 {meta: title All I Have to Do Is Dream}
 {meta: artist the Everly Brothers}
-{meta: writer Felice and Boudleaux Bryant}
+{meta: composer Felice and Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]Drea-ea-ea-ea-[Am]eam  [F]dream  dream  [G7]dream

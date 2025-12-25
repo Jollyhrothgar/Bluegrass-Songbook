@@ -1,6 +1,6 @@
 {meta: title Redneck Roses}
 {meta: artist Tracy Byrd}
-{meta: writer Byron Hill and Tracy Byrd}
+{meta: composer Byron Hill and Tracy Byrd}
 
 {start_of_verse: Verse 1}
 [C]Not so long ago on his [Am]way home from work 

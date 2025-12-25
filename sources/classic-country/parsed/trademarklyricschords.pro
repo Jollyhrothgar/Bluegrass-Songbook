@@ -1,6 +1,6 @@
 {meta: title Trademark}
 {meta: artist Carl Smith}
-{meta: writer Gary Walker and Porter Wagoner}
+{meta: composer Gary Walker and Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]A little bit of crooning a little bit of spooning

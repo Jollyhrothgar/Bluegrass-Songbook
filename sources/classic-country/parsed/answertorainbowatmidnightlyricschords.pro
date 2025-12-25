@@ -1,6 +1,6 @@
 {meta: title Answer To Rainbow At Midnight}
 {meta: artist Ernest Tubb}
-{meta: writer Warren Michael Defever}
+{meta: composer Warren Michael Defever}
 
 {start_of_verse: Verse 1}
 [G]I saw a rainbow at [C]midnight

@@ -1,6 +1,6 @@
 {meta: title Answer To Weeping Willow}
 {meta: artist Mac Wiseman}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]My love is dead and [F]buried yonder

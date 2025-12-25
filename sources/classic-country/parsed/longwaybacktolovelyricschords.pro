@@ -1,6 +1,6 @@
 {meta: title Long Way Back To Love}
 {meta: artist Roy Drusky}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]Once I tried to tell you that some[F]day his love would end

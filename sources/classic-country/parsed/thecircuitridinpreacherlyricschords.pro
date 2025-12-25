@@ -1,6 +1,6 @@
 {meta: title The Circuit Ridin' Preacher}
 {meta: artist Jim Ed Brown}
-{meta: writer Tim Spencer}
+{meta: composer Tim Spencer}
 
 {start_of_verse: Verse 1}
 [C]Rock of ages [F]cleft for [C]me let me hide [G7]myself in [C]Thee

@@ -1,6 +1,6 @@
 {meta: title Window Number Five}
 {meta: artist Johnny Duncan}
-{meta: writer Charlie Craig}
+{meta: composer Charlie Craig}
 
 {start_of_verse: Verse 1}
 [G]In a building I pass by in window number five

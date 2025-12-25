@@ -1,6 +1,6 @@
 {meta: title Come Back Little Pal}
 {meta: artist Roy Acuff}
-{meta: writer Roy Hall}
+{meta: composer Roy Hall}
 
 {start_of_verse: Verse 1}
 [G]I am lonely tonight little [D7]pal

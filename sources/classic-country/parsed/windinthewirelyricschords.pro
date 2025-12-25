@@ -1,6 +1,6 @@
 {meta: title Wind In The Wire}
 {meta: artist Randy Travis}
-{meta: writer Stewart McDougall and David Wilkie}
+{meta: composer Stewart McDougall and David Wilkie}
 
 {start_of_verse: Verse 1}
 [Am]I'd been ridin' [G]fence all day [E7]way up on the [Am]summer range

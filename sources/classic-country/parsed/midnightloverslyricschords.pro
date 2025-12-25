@@ -1,6 +1,6 @@
 {meta: title Midnight Lovers}
 {meta: artist Mel Street}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [C]Well it started in a barroom and [F]moved on to a [C]bedroom

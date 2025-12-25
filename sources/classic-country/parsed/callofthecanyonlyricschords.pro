@@ -1,6 +1,6 @@
 {meta: title Call Of The Canyon}
 {meta: artist Jimmy Wakely}
-{meta: writer Billy Hill}
+{meta: composer Billy Hill}
 
 {start_of_verse: Verse 1}
 [C]Just a melan[Am]choly [Fm]echo

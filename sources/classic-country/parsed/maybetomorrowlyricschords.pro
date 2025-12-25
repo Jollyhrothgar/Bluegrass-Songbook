@@ -1,6 +1,6 @@
 {meta: title Maybe Tomorrow}
 {meta: artist David Ball}
-{meta: writer and recorded by David Ball}
+{meta: composer and recorded by David Ball}
 
 {start_of_verse: Verse 1}
 [G]Well I hate to say goodbye don't you [C]know

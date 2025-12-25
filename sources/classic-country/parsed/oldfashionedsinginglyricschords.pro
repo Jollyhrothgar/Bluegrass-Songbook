@@ -1,6 +1,6 @@
 {meta: title Old Fashioned Singing}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery and Tammy Wynette}
+{meta: composer Earl Montgomery and Tammy Wynette}
 
 {start_of_verse: Verse 1}
 [C]I just love  good [F]old gospel [C]singing 

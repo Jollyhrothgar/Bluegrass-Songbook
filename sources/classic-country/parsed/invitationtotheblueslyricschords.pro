@@ -1,6 +1,6 @@
 {meta: title Invitation to the Blues}
 {meta: artist Ray Price}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]I couldn't sleep last night just walked the [F]floor 

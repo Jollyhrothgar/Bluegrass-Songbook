@@ -1,6 +1,6 @@
 {meta: title A Little Boy Called Joe}
 {meta: artist Ralph Stanley}
-{meta: writer Leamon Allen and Ralph Stanley}
+{meta: composer Leamon Allen and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]In a war torn land of poverty some[C]where across the [G]sea

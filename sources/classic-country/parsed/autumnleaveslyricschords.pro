@@ -1,6 +1,6 @@
 {meta: title Autumn Leaves}
 {meta: artist the Everly Brothers}
-{meta: writer Joseph Kosma and Jacques Andre Marie}
+{meta: composer Joseph Kosma and Jacques Andre Marie}
 
 {start_of_verse: Verse 1}
 [Am]The fall-ing [Dm]leaves [G7]drift by the [C]window

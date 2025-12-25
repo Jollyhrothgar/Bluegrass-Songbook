@@ -1,6 +1,6 @@
 {meta: title We Got Love}
 {meta: artist David Houston}
-{meta: writer Gene Davis}
+{meta: composer Gene Davis}
 
 {start_of_verse: Verse 1}
 [C]You got me I got [G7]you we [C]got [G7]love

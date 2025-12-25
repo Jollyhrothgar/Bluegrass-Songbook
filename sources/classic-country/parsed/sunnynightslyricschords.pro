@@ -1,6 +1,6 @@
 {meta: title Sunny Nights}
 {meta: artist Ferlin Husky}
-{meta: writer Fred Carter}
+{meta: composer Fred Carter}
 
 {start_of_verse: Verse 1}
 [G]There's a gonna be some sunny [C]nights

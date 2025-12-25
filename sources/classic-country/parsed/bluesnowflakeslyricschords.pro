@@ -1,6 +1,6 @@
 {meta: title Blue Snowflakes}
 {meta: artist Ernest Tubb}
-{meta: writer Bill Hayes}
+{meta: composer Bill Hayes}
 
 {start_of_verse: Verse 1}
 [C]Blue snowflakes [F]cover the [C]ground

@@ -1,6 +1,6 @@
 {meta: title You're Free To Go}
 {meta: artist Jim Reeves}
-{meta: writer Don Robertson and Lou Hersher}
+{meta: composer Don Robertson and Lou Hersher}
 
 {start_of_verse: Verse 1}
 [C]You're free to go [E7]darling 

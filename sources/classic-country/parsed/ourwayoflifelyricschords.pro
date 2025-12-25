@@ -1,6 +1,6 @@
 {meta: title Our Way Of Life}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery and Melba Montgomery}
+{meta: composer Earl Montgomery and Melba Montgomery}
 
 {start_of_verse: Verse 1}
 [C]Well I'm tired of all of this [F]cookin' and a makin' [C]beds

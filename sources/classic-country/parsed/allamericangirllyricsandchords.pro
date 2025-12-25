@@ -1,6 +1,6 @@
 {meta: title All American Girl}
 {meta: artist Johnny Rodriguez Lyrics with Chords}
-{meta: writer Robert Lee McDill}
+{meta: composer Robert Lee McDill}
 
 {start_of_verse: Verse 1}
 [C]It’s a marriage made in heaven so her mom is fond of [F]saying

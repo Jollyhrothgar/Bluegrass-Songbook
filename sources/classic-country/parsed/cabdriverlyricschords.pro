@@ -1,6 +1,6 @@
 {meta: title Cab Driver Lyrics chords}
 {meta: artist Hank Thompson}
-{meta: writer C. Carson Parks}
+{meta: composer C. Carson Parks}
 
 {start_of_verse: Verse 1}
 [G]Cab Driver  drive by Mary's [D7]place

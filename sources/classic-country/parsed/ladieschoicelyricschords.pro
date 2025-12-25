@@ -1,6 +1,6 @@
 {meta: title Ladies Choice}
 {meta: artist Ricky Nelson}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]Went to a dance one night 

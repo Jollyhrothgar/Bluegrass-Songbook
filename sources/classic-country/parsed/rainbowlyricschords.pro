@@ -1,6 +1,6 @@
 {meta: title Rainbow}
 {meta: artist Marty Robbins}
-{meta: writer Oakie Jones}
+{meta: composer Oakie Jones}
 
 {start_of_verse: Verse 1}
 [G]Did you ever find your[C]self out chasing [G]rainbows

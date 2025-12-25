@@ -1,6 +1,6 @@
 {meta: title With One Exception}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]I've seen lots of pretty [G7]faces 

@@ -1,6 +1,6 @@
 {meta: title Hidin' Out}
 {meta: artist Patsy Cline}
-{meta: writer Eddie Miller and W.S. Stevenson}
+{meta: composer Eddie Miller and W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [G]People point us out and [D7]shake their heads in shame 

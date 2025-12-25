@@ -1,6 +1,6 @@
 {meta: title Breaking The Rules}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson, Billy Gray, Al Blasingame}
+{meta: composer Hank Thompson, Billy Gray, Al Blasingame}
 
 {start_of_verse: Verse 1}
 [G]Breaking the rules 

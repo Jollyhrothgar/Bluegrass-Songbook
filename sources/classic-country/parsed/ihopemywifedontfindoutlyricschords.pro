@@ -1,6 +1,6 @@
 {meta: title I Hope My Wife Don't Find Out}
 {meta: artist Red Sovine}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [G]I finally found a woman that I [D7]care for

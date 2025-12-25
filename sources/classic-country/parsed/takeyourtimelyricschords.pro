@@ -1,6 +1,6 @@
 {meta: title Take Your Time}
 {meta: artist Buddy Holly}
-{meta: writer Charles Holley and Norman Petty}
+{meta: composer Charles Holley and Norman Petty}
 
 {start_of_verse: Verse 1}
 [G]Take [C]your [D7]time [G]I [C]can [D7]wait

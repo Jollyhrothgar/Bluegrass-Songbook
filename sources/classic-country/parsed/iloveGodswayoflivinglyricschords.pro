@@ -1,6 +1,6 @@
 {meta: title I Love God's Way Of Living}
 {meta: artist White Mountain Bluegrass}
-{meta: writer Ira Louvin and Charlie Louvin}
+{meta: composer Ira Louvin and Charlie Louvin}
 
 {start_of_verse: Verse 1}
 [G]I was on the sea of death drifting onward to distress

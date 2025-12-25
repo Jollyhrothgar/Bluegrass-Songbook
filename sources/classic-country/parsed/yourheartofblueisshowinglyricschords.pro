@@ -1,6 +1,6 @@
 {meta: title Your Heart Of Blue Is Showing}
 {meta: artist Marty Robbins}
-{meta: writer Bernard L. Spurlock}
+{meta: composer Bernard L. Spurlock}
 
 {start_of_verse: Verse 1}
 [C]Don't look now but your heart of blue is [G7]showin'

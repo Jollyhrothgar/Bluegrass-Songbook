@@ -1,6 +1,6 @@
 {meta: title I Don't Want To Be With Me}
 {meta: artist Conway Twitty}
-{meta: writer Mickey Jaco}
+{meta: composer Mickey Jaco}
 
 {start_of_verse: Verse 1}
 [C]People say when I walk [G7]by 

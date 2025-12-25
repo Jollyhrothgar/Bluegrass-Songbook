@@ -1,6 +1,6 @@
 {meta: title Fallen Leaves}
 {meta: artist Porter Wagoner}
-{meta: writer Louis M. Jones}
+{meta: composer Louis M. Jones}
 
 {start_of_verse: Verse 1}
 [C]Fallen leaves that lie scattered on the [F]ground

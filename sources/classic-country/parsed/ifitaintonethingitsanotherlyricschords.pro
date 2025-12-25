@@ -1,6 +1,6 @@
 {meta: title If It Ain't One Thing It's Another}
 {meta: artist Randy Travis}
-{meta: writer Bobby Carmichael, Joe Stampley, Tony Stampley}
+{meta: composer Bobby Carmichael, Joe Stampley, Tony Stampley}
 
 {start_of_verse: Verse 1}
 [G]I got up this morning tried to get off of work

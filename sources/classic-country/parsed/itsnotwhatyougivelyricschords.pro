@@ -1,6 +1,6 @@
 {meta: title It's Not What You Give Lyrics with Chords}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Bob Morris}
+{meta: composer Buck Owens and Bob Morris}
 
 {start_of_verse: Verse 1}
 [C]My little boy [F]wrapped a toy in some [C]paper

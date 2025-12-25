@@ -1,6 +1,6 @@
 {meta: title Last Train To Heaven}
 {meta: artist Boxcar Willie}
-{meta: writer Jan B. Shuster and Guy Henry Workman}
+{meta: composer Jan B. Shuster and Guy Henry Workman}
 
 {start_of_verse: Verse 1}
 [C]I'll ride that [F]last train to heaven

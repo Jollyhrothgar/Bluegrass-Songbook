@@ -1,6 +1,6 @@
 {meta: title When I've Traveled My Last Mile}
 {meta: artist Jamie Dailey and Darrin Vincent}
-{meta: writer Henry Donohue}
+{meta: composer Henry Donohue}
 
 {start_of_verse: Verse 1}
 When I've Traveled My Last Mile

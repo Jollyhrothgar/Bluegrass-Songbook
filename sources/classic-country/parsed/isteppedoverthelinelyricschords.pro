@@ -1,6 +1,6 @@
 {meta: title I Stepped Over the Line}
 {meta: artist Hank Snow}
-{meta: writer Donald Robertson}
+{meta: composer Donald Robertson}
 
 {start_of_verse: Verse 1}
 [G]You threw the roses that I [C]brought you on the [G]floor

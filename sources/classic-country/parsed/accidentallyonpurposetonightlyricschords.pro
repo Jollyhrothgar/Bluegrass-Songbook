@@ -1,6 +1,6 @@
 {meta: title Accidentally On Purpose Tonight}
 {meta: artist Moe Bandy}
-{meta: writer Pat Bunch and Peggy White}
+{meta: composer Pat Bunch and Peggy White}
 
 {start_of_verse: Verse 1}
 [D7]You'll just [G]happen to be where you'll [C]run into me

@@ -1,6 +1,6 @@
 {meta: title I Can Still See Him In Your Eyes}
 {meta: artist George Jones}
-{meta: writer Dickey Lee}
+{meta: composer Dickey Lee}
 
 {start_of_verse: Verse 1}
 [G]We were sitting at the [D7]table and [G]we saw your old [G7]flame

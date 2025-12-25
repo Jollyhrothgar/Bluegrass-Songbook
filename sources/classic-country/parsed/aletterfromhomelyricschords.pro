@@ -1,6 +1,6 @@
 {meta: title A Letter From Home}
 {meta: artist Johnny Cash}
-{meta: writer Maybelle Carter and Dixie Dean}
+{meta: composer Maybelle Carter and Dixie Dean}
 
 {start_of_verse: Verse 1}
 [G]A cowpoke rode in [D7]one hot dusty [G]day 

@@ -1,6 +1,6 @@
 {meta: title Tempted}
 {meta: artist Marty Stuart}
-{meta: writer Marty Stuart and Paul Kennerley}
+{meta: composer Marty Stuart and Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [G]There's a girl trying to [C]steal my [D7]heart and I'm [G]tempted

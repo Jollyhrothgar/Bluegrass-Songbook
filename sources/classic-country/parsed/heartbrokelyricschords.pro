@@ -1,6 +1,6 @@
 {meta: title Heartbroke}
 {meta: artist Ricky Skaggs}
-{meta: writer Guy Clark}
+{meta: composer Guy Clark}
 
 {start_of_verse: Verse 1}
 [G]Well who wouldn't notice the fire in your eyes 

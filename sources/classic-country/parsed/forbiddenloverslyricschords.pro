@@ -1,6 +1,6 @@
 {meta: title Forbidden Lovers}
 {meta: artist Hank Snow}
-{meta: writer Wayne P. Walker and Irene Stanton}
+{meta: composer Wayne P. Walker and Irene Stanton}
 
 {start_of_verse: Verse 1}
 [G]In the darkness of the night

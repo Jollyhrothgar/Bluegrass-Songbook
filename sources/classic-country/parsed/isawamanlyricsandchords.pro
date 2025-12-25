@@ -1,6 +1,6 @@
 {meta: title I Saw A Man}
 {meta: artist Hank Snow}
-{meta: writer Arthur Smith}
+{meta: composer Arthur Smith}
 
 {start_of_verse: Verse 1}
 [G]Last night I [D7]dreamed an angel [G]came

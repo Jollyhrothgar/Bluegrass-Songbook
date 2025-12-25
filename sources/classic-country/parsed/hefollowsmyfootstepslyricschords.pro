@@ -1,6 +1,6 @@
 {meta: title He Follows My Footsteps}
 {meta: artist Charlie Rich}
-{meta: writer Margaret A. Rich}
+{meta: composer Margaret A. Rich}
 
 {start_of_verse: Verse 1}
 [C]He follows my footsteps with every step I take

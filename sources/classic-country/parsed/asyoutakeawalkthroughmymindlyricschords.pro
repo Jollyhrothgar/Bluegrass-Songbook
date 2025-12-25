@@ -1,6 +1,6 @@
 {meta: title As You Take A Walk Through My Mind}
 {meta: artist Slim Whitman}
-{meta: writer Claude Taylor}
+{meta: composer Claude Taylor}
 
 {start_of_verse: Verse 1}
 [C]I walk down the street with a head full of nothing but [F]you [Am]   [Dm]

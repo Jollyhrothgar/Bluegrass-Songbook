@@ -1,6 +1,6 @@
 {meta: title There Was Jesus}
 {meta: artist Zach Williams}
-{meta: writer Casey M. Beathard, Jonathan L. Smith}
+{meta: composer Casey M. Beathard, Jonathan L. Smith}
 
 {start_of_verse: Verse 1}
 [C]Every time I tried to make it on my own

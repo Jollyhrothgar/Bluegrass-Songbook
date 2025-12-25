@@ -1,6 +1,6 @@
 {meta: title Hide Away Blues}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino and Dave Bartholomew}
+{meta: composer Antonio Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [G]I'm leavin' you baby

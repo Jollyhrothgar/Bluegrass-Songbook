@@ -1,6 +1,6 @@
 {meta: title Paradise Tonight}
 {meta: artist Mickey Gilley}
-{meta: writer Bill Kenner and Mark Wright}
+{meta: composer Bill Kenner and Mark Wright}
 
 {start_of_verse: Verse 1}
 [C]Honestly I can't believe the [Am]magic you do

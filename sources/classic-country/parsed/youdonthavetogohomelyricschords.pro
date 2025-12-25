@@ -1,6 +1,6 @@
 {meta: title You Don't Have To Go Home}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Larry Shell, Larry Cordle, Jerry Salley}
+{meta: composer Larry Shell, Larry Cordle, Jerry Salley}
 
 {start_of_verse: Verse 1}
 [C]The [G7]Lord knows I'm [C]guilty [C7]of livin' my [F]life

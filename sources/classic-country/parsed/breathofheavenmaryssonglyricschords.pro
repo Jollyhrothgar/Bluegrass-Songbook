@@ -1,6 +1,6 @@
 {meta: title Breath of Heaven (Mary’s Song)}
 {meta: artist Vince Gill}
-{meta: writer Amy Grant and Christopher Eaton}
+{meta: composer Amy Grant and Christopher Eaton}
 
 {start_of_verse: Verse 1}
 [C]I have [Dm]traveled [Am]many moon[F]less [Dm]nights

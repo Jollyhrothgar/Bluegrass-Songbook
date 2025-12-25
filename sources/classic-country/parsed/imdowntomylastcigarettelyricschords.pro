@@ -1,6 +1,6 @@
 {meta: title I'm Down To My Last Cigarette}
 {meta: artist Billy Walker}
-{meta: writer Harlan Howard and Billy Walker}
+{meta: composer Harlan Howard and Billy Walker}
 
 {start_of_verse: Verse 1}
 [C]The coffee's all [G7]gone and my [C]eyes burn like [C7]fire

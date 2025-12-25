@@ -1,6 +1,6 @@
 {meta: title A World Without You}
 {meta: artist Marty Stuart}
-{meta: writer Marty Stuart and Connie Smith}
+{meta: composer Marty Stuart and Connie Smith}
 
 {start_of_verse: Verse 1}
 [G]There was a time I [C]held you in my [G]arms

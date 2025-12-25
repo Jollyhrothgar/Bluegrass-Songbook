@@ -1,6 +1,6 @@
 {meta: title Soft Lips And Hard Liquor}
 {meta: artist Charlie Walker}
-{meta: writer Lorene Allen and Walter Haynes}
+{meta: composer Lorene Allen and Walter Haynes}
 
 {start_of_verse: Verse 1}
 [G]Soft lips and hard liquor make a fool out of a man

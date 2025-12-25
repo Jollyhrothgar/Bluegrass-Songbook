@@ -1,6 +1,6 @@
 {meta: title I Can Count On You}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Roger Murrah and Randle E. Van Warmer}
+{meta: composer Roger Murrah and Randle E. Van Warmer}
 
 {start_of_verse: Verse 1}
 [C]You can say the word and [G]warm the [D7]day

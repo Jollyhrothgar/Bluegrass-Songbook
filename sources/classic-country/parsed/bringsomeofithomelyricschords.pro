@@ -1,6 +1,6 @@
 {meta: title Bring Some Of It Home}
 {meta: artist Loretta Lynn}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [C]Today is payday and [C7]tonight will be [F]long

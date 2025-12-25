@@ -1,6 +1,6 @@
 {meta: title Last Mile Of The Way}
 {meta: artist Red Sovine}
-{meta: writer Red Sovine and Kenneth Bonham}
+{meta: composer Red Sovine and Kenneth Bonham}
 
 {start_of_verse: Verse 1}
 [G7]When I've done [C]everything that you asked me to [G7]do

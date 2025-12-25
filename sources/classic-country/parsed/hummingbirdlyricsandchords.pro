@@ -1,6 +1,6 @@
 {meta: title Hummingbird}
 {meta: artist Ricky Skaggs}
-{meta: writer Tim Dubois and Greg Jennings}
+{meta: composer Tim Dubois and Greg Jennings}
 
 {start_of_verse: Verse 1}
 [G]Got tired of livin' in that one horse town

@@ -1,6 +1,6 @@
 {meta: title That Don’t Make Her A Bad Girl}
 {meta: artist Charlie Walker}
-{meta: writer Clyde Pitts and Van Givens}
+{meta: composer Clyde Pitts and Van Givens}
 
 {start_of_verse: Verse 1}
 [C]Just because she [F]works in a [C]honky tonk at night

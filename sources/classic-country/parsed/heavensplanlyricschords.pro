@@ -1,6 +1,6 @@
 {meta: title Heaven's Plan}
 {meta: artist Lefty Frizzel}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]Little [F]girl's were made to [Dm]kiss

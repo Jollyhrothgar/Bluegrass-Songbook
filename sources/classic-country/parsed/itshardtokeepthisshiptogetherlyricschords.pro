@@ -1,6 +1,6 @@
 {meta: title It's Hard To Keep This Ship Together}
 {meta: artist John Anderson}
-{meta: writer Fred Carter and John Anderson}
+{meta: composer Fred Carter and John Anderson}
 
 {start_of_verse: Verse 1}
 [Am]Like a lost ship on the sea 

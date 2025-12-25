@@ -1,6 +1,6 @@
 {meta: title Swoop Down Sweet Jesus}
 {meta: artist George Jones}
-{meta: writer Bill Emerson, John Anderson, James Bohon}
+{meta: composer Bill Emerson, John Anderson, James Bohon}
 
 {start_of_verse: Verse 1}
 [C]Well-a want You swoop down sweet Jesus [F]and put a hold on [C]me

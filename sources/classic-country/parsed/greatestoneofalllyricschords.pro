@@ -1,6 +1,6 @@
 {meta: title Greatest One Of All}
 {meta: artist Gene Pitney}
-{meta: writer George Riddle}
+{meta: composer George Riddle}
 
 {start_of_verse: Verse 1}
 [C]Although the heartaches one can know in a [F]lifetime

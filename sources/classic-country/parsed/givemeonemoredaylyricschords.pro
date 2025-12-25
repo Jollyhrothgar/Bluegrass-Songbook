@@ -1,6 +1,6 @@
 {meta: title Give Me One More Day}
 {meta: artist Mel Tillis}
-{meta: writer Rochelle Frazier}
+{meta: composer Rochelle Frazier}
 
 {start_of_verse: Verse 1}
 [G]I know I promised months ago that I’d divorce my [C]wife

@@ -1,6 +1,6 @@
 {meta: title Delta Dawn}
 {meta: artist Tanya Tucker}
-{meta: writer Alex Harvey and Larry Collins}
+{meta: composer Alex Harvey and Larry Collins}
 
 {start_of_verse: Verse 1}
 [G]Delta Dawn  what's that [C]flower you have [G]on

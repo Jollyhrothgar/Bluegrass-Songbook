@@ -1,5 +1,5 @@
 {meta: artist Carl Smith lyrics and chords}
-{meta: writer Jimmie Davis and Johnny Roberts}
+{meta: composer Jimmie Davis and Johnny Roberts}
 
 {start_of_verse: Verse 1}
 [C]I [F]wish I had never seen [C]sunshine

@@ -1,6 +1,6 @@
 {meta: title Please Change The Subject}
 {meta: artist Faron Young}
-{meta: writer Johnny McCollum}
+{meta: composer Johnny McCollum}
 
 {start_of_verse: Verse 1}
 [G7]You've [C]come here to [Em]my house

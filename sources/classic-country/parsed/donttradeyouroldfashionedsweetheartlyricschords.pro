@@ -1,6 +1,6 @@
 {meta: title Don't Trade Your Old Fashioned Sweetheart}
 {meta: artist Ernest Tubb}
-{meta: writer Eddie Noack}
+{meta: composer Eddie Noack}
 
 {start_of_verse: Verse 1}
 [G]Take away the [G7]bright lights and [C]music 

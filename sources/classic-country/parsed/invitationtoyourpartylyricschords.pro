@@ -1,6 +1,6 @@
 {meta: title Invitation To Your Party}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Bill Taylor}
+{meta: composer Bill Taylor}
 
 {start_of_verse: Verse 1}
 [C]I received my invitation to your [G7]party

@@ -1,6 +1,6 @@
 {meta: title Put Your Hand In Mine}
 {meta: artist Tracy Byrd}
-{meta: writer Jimmy Barber and Skip Ewing}
+{meta: composer Jimmy Barber and Skip Ewing}
 
 {start_of_verse: Verse 1}
 [C]He sat up on the [G7]bed [F]and he watched me [C]packing

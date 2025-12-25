@@ -1,6 +1,6 @@
 {meta: title The Day The Saw Mill Closed Down}
 {meta: artist Bobby Bare}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]Her house on the [F]corner of [C]Cedar and [F]Elm

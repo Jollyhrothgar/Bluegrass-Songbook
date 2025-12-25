@@ -1,6 +1,6 @@
 {meta: title Montana Cowgirl}
 {meta: artist Emmylou Harris}
-{meta: writer Ray Park}
+{meta: composer Ray Park}
 
 {start_of_verse: Verse 1}
 [C]For many long years I've played a lone hand

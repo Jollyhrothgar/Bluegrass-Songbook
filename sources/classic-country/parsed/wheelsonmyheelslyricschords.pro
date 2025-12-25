@@ -1,6 +1,6 @@
 {meta: title Wheels On My Heels}
 {meta: artist Elvis Presley}
-{meta: writer Sid Tepper and Roy C. Bennett}
+{meta: composer Sid Tepper and Roy C. Bennett}
 
 {start_of_verse: Verse 1}
 [C]Gotta do some livin' got the wanderlust

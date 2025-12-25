@@ -1,6 +1,6 @@
 {meta: title Girl In White Lives}
 {meta: artist Wynn Stewart}
-{meta: writer Bobby Austin and Wynn Stewart}
+{meta: composer Bobby Austin and Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [C]The church bells are ringing the choir is [F]singing

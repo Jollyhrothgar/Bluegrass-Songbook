@@ -1,6 +1,6 @@
 {meta: title Something's Wrong With Me}
 {meta: artist Brenda Lee}
-{meta: writer Bobby Hart and Danny Janssen}
+{meta: composer Bobby Hart and Danny Janssen}
 
 {start_of_verse: Verse 1}
 [C]Something's wrong with me can't get you [F]out of my mind

@@ -1,6 +1,6 @@
 {meta: title Coming Down With Love}
 {meta: artist Charley Pride}
-{meta: writer James Bullington}
+{meta: composer James Bullington}
 
 {start_of_verse: Verse 1}
 [C]My mind has been in a constant whirl

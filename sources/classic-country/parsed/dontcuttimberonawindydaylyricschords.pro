@@ -1,6 +1,6 @@
 {meta: title Don't Cut Timber On A Windy Day}
 {meta: artist Sonny James}
-{meta: writer Ted Riedel}
+{meta: composer Ted Riedel}
 
 {start_of_verse: Verse 1}
 [C]I once had a friend named Joe

@@ -1,6 +1,6 @@
 {meta: title A Jukebox With a Country Song}
 {meta: artist Doug Stone}
-{meta: writer Gene Nelson and Ronald A. Santaniello}
+{meta: composer Gene Nelson and Ronald A. Santaniello}
 
 {start_of_verse: Verse 1}
 [C]After three good [G7]years to[C]gether we [F]had our first big [C]fight

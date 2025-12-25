@@ -1,6 +1,6 @@
 {meta: title Good Intentions}
 {meta: artist Randy Travis}
-{meta: writer Merle Haggard, Randy Travis, Marvin Coe}
+{meta: composer Merle Haggard, Randy Travis, Marvin Coe}
 
 {start_of_verse: Verse 1}
 [C]Momma always prayed that I'd be a [F]better man than [C]daddy

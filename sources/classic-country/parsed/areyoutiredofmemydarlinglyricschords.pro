@@ -1,6 +1,6 @@
 {meta: title Are You Tired Of Me My Darling}
 {meta: artist Jim and Jesse}
-{meta: writer G.P. Cook, Ralph Roland, Nanci Griffith}
+{meta: composer G.P. Cook, Ralph Roland, Nanci Griffith}
 
 {start_of_verse: Verse 1}
 [G]Are you tired of me my [C]darling

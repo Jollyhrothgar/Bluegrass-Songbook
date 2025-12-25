@@ -1,6 +1,6 @@
 {meta: title I Do All My Crying (On The Inside)}
 {meta: artist Doug Stone}
-{meta: writer Kim Williams, Randy Boudreaux, Stan Davis}
+{meta: composer Kim Williams, Randy Boudreaux, Stan Davis}
 
 {start_of_verse: Verse 1}
 [C]For the [Dm]first time [G7]tonight she's walked [C]out

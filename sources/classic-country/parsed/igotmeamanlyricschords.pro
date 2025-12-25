@@ -1,6 +1,6 @@
 {meta: title I Got Me A Man}
 {meta: artist Tammy Wynette}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [D7]I've got the [G]kind of a man every woman hopes to [C]find[Am]

@@ -1,6 +1,6 @@
 {meta: title Go Mena Si (I'm Sorry)}
 {meta: artist Wilburn Brothers}
-{meta: writer Billy Hervey}
+{meta: composer Billy Hervey}
 
 {start_of_verse: Verse 1}
 [C]On the Island of Japan far [G7]away across the sea

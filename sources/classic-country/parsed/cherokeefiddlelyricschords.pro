@@ -1,6 +1,6 @@
 {meta: title Cherokee Fiddle}
 {meta: artist Johnny Lee}
-{meta: writer Michael Martin Murphy}
+{meta: composer Michael Martin Murphy}
 
 {start_of_verse: Verse 1}
 [C]When the train pulled into the [F]station

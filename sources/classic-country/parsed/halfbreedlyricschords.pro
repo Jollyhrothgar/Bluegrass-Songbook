@@ -1,6 +1,6 @@
 {meta: title Half Breed}
 {meta: artist Canadian Sweethearts}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G]Your pappy was a trader and your [C]mammy was an Indian [G]maid boy

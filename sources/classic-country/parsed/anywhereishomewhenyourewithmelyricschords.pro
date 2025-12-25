@@ -1,6 +1,6 @@
 {meta: title Anywhere Is Home When You're With Me}
 {meta: artist Rhonda Vincent}
-{meta: writer George Doering and Ellen Doering}
+{meta: composer George Doering and Ellen Doering}
 
 {start_of_verse: Verse 1}
 [G]I spent some time in the hills [C]of old [G]Kentucky

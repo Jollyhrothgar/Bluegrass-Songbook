@@ -1,6 +1,6 @@
 {meta: title Someone That I Can Forget}
 {meta: artist Moe Bandy}
-{meta: writer Linda Ann Hargrove and Pete Drake}
+{meta: composer Linda Ann Hargrove and Pete Drake}
 
 {start_of_verse: Verse 1}
 [C]I come here tonight to [F]discover 

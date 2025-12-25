@@ -1,6 +1,6 @@
 {meta: title You'll Never Get A Better Chance Than This}
 {meta: artist Ernest Tubb}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]If you've got to hurt someone who really [F]loves you

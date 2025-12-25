@@ -1,6 +1,6 @@
 {meta: title Another Broken Heart}
 {meta: artist Bill Clifton}
-{meta: writer Bill Clifton and Buddy Dee}
+{meta: composer Bill Clifton and Buddy Dee}
 
 {start_of_verse: Verse 1}
 [C]They stood on the beach one evening

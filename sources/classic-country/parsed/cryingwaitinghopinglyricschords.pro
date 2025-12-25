@@ -1,6 +1,6 @@
 {meta: title Crying Waiting Hoping}
 {meta: artist Buddy Holly}
-{meta: writer Charles Holley}
+{meta: composer Charles Holley}
 
 {start_of_verse: Verse 1}
 [G]Crying  waiting  [D7]hoping  [G]you'll come [C]back

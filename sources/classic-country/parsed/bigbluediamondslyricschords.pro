@@ -1,6 +1,6 @@
 {meta: title Big Blue Diamonds}
 {meta: artist Jimmy Dean}
-{meta: writer Earl "Kit" Carson}
+{meta: composer Earl "Kit" Carson}
 
 {start_of_verse: Verse 1}
 [C]Big diamonds big blue [E7]diamonds on her [F]finger

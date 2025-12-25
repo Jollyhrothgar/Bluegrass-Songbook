@@ -1,6 +1,6 @@
 {meta: title One Has My Name (The Other Has My Heart)}
 {meta: artist Cal Smith}
-{meta: writer Eddie Dean, Dixie Dean, Hal Blair}
+{meta: composer Eddie Dean, Dixie Dean, Hal Blair}
 
 {start_of_verse: Verse 1}
 [G]One has my name the [D7]other has my heart

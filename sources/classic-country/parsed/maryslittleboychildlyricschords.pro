@@ -1,6 +1,6 @@
 {meta: title Mary's Little Boy Child}
 {meta: artist Jim Reeves}
-{meta: writer Jester Hairston}
+{meta: composer Jester Hairston}
 
 {start_of_verse: Verse 1}
 [C]Long time ago in [F]Bethlehem so [G7]the Holy Bible [C]says

@@ -1,6 +1,6 @@
 {meta: title Your Kind Of Man}
 {meta: artist Bob Luman}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]With a heavy [F]heart I write this [C]letter

@@ -1,6 +1,6 @@
 {meta: title I've Lived A Lot In My Time}
 {meta: artist Jim Reeves}
-{meta: writer Jack Rhodes, Dick Reynolds, Jim Reeves}
+{meta: composer Jack Rhodes, Dick Reynolds, Jim Reeves}
 
 {start_of_verse: Verse 1}
 [C]I once had a mansion and [F]lived in my [C]glory

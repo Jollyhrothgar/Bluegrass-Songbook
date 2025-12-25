@@ -1,6 +1,6 @@
 {meta: title Make Me An Offer}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Hugh X. Lewis and Benny Jay}
+{meta: composer Hugh X. Lewis and Benny Jay}
 
 {start_of_verse: Verse 1}
 [G]So you'd like to step into my shoes 

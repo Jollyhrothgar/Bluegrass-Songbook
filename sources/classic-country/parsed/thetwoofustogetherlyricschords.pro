@@ -1,6 +1,6 @@
 {meta: title The Two Of Us Together}
 {meta: artist Don Gibson}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [C]The two of us to[D7]gether 

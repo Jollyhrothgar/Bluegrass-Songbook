@@ -1,6 +1,6 @@
 {meta: title Trying To Love Two Women}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]Trying to love two women is like a ball and chain

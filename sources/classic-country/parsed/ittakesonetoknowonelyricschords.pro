@@ -1,6 +1,6 @@
 {meta: title It Takes One To Know One}
 {meta: artist Jimmy Martin}
-{meta: writer Harlan Howard and Freddie Hart}
+{meta: composer Harlan Howard and Freddie Hart}
 
 {start_of_verse: Verse 1}
 [G]Little girl you [G7]stand out in the [C]crowd

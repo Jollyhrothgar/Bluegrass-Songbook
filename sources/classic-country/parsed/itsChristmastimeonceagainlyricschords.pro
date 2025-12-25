@@ -1,6 +1,6 @@
 {meta: title It's Christmas Time Once Again}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Joe Bonsall}
+{meta: composer Joe Bonsall}
 
 {start_of_verse: Verse 1}
 [G]Tinsel and [Em]holly [C]lights all a[D7]glow

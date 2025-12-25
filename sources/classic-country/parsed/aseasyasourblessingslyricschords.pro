@@ -1,6 +1,6 @@
 {meta: title As Easy as Our Blessings}
 {meta: artist Tracy Lawrence}
-{meta: writer Mark Nesler and Tony Martin}
+{meta: composer Mark Nesler and Tony Martin}
 
 {start_of_verse: Verse 1}
 [Am]Lately I've been [G7]having more [F]nights that I can't sleep

@@ -1,6 +1,6 @@
 {meta: title Hideaway}
 {meta: artist Laurie Lewis and Kathy Kallick}
-{meta: writer Debbie Cotter}
+{meta: composer Debbie Cotter}
 
 {start_of_verse: Verse 1}
 [G]I can see the sad expression 

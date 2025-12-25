@@ -1,6 +1,6 @@
 {meta: title Never No More}
 {meta: artist Patsy Cline}
-{meta: writer Rita Ross, Alan Block and Don Hecht}
+{meta: composer Rita Ross, Alan Block and Don Hecht}
 
 {start_of_verse: Verse 1}
 [C]Never no more will I be all alone

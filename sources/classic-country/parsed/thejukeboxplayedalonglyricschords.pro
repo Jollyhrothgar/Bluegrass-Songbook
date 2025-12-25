@@ -1,6 +1,6 @@
 {meta: title The Jukebox Played Along}
 {meta: artist Gene Watson}
-{meta: writer Ken Bell & Charles Quillen}
+{meta: composer Ken Bell & Charles Quillen}
 
 {start_of_verse: Verse 1}
 [G]Well I got off work and headed for town to have a [D7]few

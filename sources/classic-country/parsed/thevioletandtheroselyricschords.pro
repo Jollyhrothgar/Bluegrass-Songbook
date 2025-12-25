@@ -1,6 +1,6 @@
 {meta: title The Violet and the Rose}
 {meta: artist Wanda Jackson}
-{meta: writer Mel Tillis and Bud Auge}
+{meta: composer Mel Tillis and Bud Auge}
 
 {start_of_verse: Verse 1}
 [C]A violet fell in love with a [G7]rose 

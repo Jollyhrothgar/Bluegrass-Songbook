@@ -1,6 +1,6 @@
 {meta: title Beautiful Day For Goodbye}
 {meta: artist George Strait}
-{meta: writer Pat Bunch and Doug Johnson}
+{meta: composer Pat Bunch and Doug Johnson}
 
 {start_of_verse: Verse 1}
 [G7]Isn't it like her to look so [C]pretty

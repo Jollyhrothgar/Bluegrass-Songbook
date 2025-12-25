@@ -1,6 +1,6 @@
 {meta: title Last Thing I Needed First Thing This Morning}
 {meta: artist Willie Nelson}
-{meta: writer G.P. Nunn and D.S. Farar}
+{meta: composer G.P. Nunn and D.S. Farar}
 
 {start_of_verse: Verse 1}
 [C]Postman delivered a past due bill [G7]notice

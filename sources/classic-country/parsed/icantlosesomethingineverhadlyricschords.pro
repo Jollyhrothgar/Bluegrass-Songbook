@@ -1,6 +1,6 @@
 {meta: title I Can't Lose Something (I Never Had)}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew, Tommy Blake, W.S. Stevenson}
+{meta: composer Carl Belew, Tommy Blake, W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [C]I said I'd forget you 

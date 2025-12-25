@@ -1,6 +1,6 @@
 {meta: title Cowpoke}
 {meta: artist Don Walser}
-{meta: writer David Houston and Tillman Franks}
+{meta: composer David Houston and Tillman Franks}
 
 {start_of_verse: Verse 1}
 [C]woo hoo doo woo woo hoo ooo woo [Am]ooo

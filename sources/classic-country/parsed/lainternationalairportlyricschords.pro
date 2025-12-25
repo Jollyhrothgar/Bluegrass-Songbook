@@ -1,6 +1,6 @@
 {meta: title L A International Airport}
 {meta: artist Susan Raye}
-{meta: writer Leanne Scott}
+{meta: composer Leanne Scott}
 
 {start_of_verse: Verse 1}
 [C]Standing in that silent hall waiting for that final call

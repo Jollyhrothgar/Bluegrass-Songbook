@@ -1,6 +1,6 @@
 {meta: title Walls Of Time}
 {meta: artist Ricky Skaggs}
-{meta: writer Bill Monroe and Peter Rowan}
+{meta: composer Bill Monroe and Peter Rowan}
 
 {start_of_verse: Verse 1}
 [G]The wind is blowing across the mountain

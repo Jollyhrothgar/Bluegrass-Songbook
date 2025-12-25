@@ -1,6 +1,6 @@
 {meta: title You're The One}
 {meta: artist Bobby Helms}
-{meta: writer Marijohn Wilkin}
+{meta: composer Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [Am](You're the only [G7]one)[C]   [Am]   [F]  [G7]

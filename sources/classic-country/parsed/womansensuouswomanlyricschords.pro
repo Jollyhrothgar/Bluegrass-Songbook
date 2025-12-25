@@ -1,6 +1,6 @@
 {meta: title Woman Sensuous Woman}
 {meta: artist Don Gibson}
-{meta: writer Gary S. Paxton}
+{meta: composer Gary S. Paxton}
 
 {start_of_verse: Verse 1}
 [G]Woman oo  [C]sensuous [G]woman 

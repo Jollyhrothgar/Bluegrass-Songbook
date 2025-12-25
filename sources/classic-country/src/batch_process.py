@@ -12,6 +12,11 @@ from typing import Dict, List, Tuple
 import time
 from bs4 import BeautifulSoup
 
+# Add src directory to path for imports when run from repo root
+_src_dir = Path(__file__).parent
+if str(_src_dir) not in sys.path:
+    sys.path.insert(0, str(_src_dir))
+
 # Import from local parser
 from parser import (
     StructureDetector, ContentExtractor, ChordProGenerator

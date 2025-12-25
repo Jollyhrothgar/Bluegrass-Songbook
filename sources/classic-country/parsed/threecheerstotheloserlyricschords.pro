@@ -1,6 +1,6 @@
 {meta: title Three Cheers To The Loser}
 {meta: artist Wynn Stewart}
-{meta: writer Carl Belew}
+{meta: composer Carl Belew}
 
 {start_of_verse: Verse 1}
 [C]Now gather around me blues I'd like to make a [G7]toast

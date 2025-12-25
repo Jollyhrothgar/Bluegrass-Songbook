@@ -1,6 +1,6 @@
 {meta: title Heartbreak Affair}
 {meta: artist Porter Wagoner}
-{meta: writer Kay Adams}
+{meta: composer Kay Adams}
 
 {start_of_verse: Verse 1}
 [G]Glad that we're [F]through I keep [G]telling [F]myself

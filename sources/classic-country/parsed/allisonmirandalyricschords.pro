@@ -1,6 +1,6 @@
 {meta: title Allison Miranda}
 {meta: artist Garth Brooks}
-{meta: writer Danny Roberts, Bobby Wood, Garth Brooks}
+{meta: composer Danny Roberts, Bobby Wood, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]On a two lane north of Casper is [F]where this all begins

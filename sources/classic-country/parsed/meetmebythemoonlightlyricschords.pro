@@ -1,6 +1,6 @@
 {meta: title Meet Me By The Moonlight}
 {meta: artist Stanley Brothers}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]Meet me by the [F]moonlight love [C]meet me

@@ -1,6 +1,6 @@
 {meta: title I Can't Go On This Way}
 {meta: artist Bob Wills}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]Moanin' low moanin' high hair is turnin' [D7]gray

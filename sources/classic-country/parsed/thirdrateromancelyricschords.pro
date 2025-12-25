@@ -1,6 +1,6 @@
 {meta: title Third Rate Romance}
 {meta: artist Johnny Duncan}
-{meta: writer Russell Smith}
+{meta: composer Russell Smith}
 
 {start_of_verse: Verse 1}
 [G]Sittin' at a tiny table in a ritzy restau[D7]rant

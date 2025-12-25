@@ -1,6 +1,6 @@
 {meta: title We Owe It All To Yesterday}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [C]Yesterday will [F]never be [G7]forgotten

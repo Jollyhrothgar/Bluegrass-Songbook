@@ -1,6 +1,6 @@
 {meta: title The Comeback}
 {meta: artist Faron Young}
-{meta: writer Danny Dill}
+{meta: composer Danny Dill}
 
 {start_of_verse: Verse 1}
 [C]I was the world’s champion lover to my [G7]baby

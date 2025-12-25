@@ -1,6 +1,6 @@
 {meta: title Wondering}
 {meta: artist Ernest Tubb}
-{meta: writer Joe Werner}
+{meta: composer Joe Werner}
 
 {start_of_verse: Verse 1}
 [G]Wondering wondering who's kissing [D7]you

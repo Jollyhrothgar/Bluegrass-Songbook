@@ -1,6 +1,6 @@
 {meta: title Christmas Country Style}
 {meta: artist Statler Brothers}
-{meta: writer Jimmy Fortune}
+{meta: composer Jimmy Fortune}
 
 {start_of_verse: Verse 1}
 [C]Light the candles on the [F]mantelpiece

@@ -1,6 +1,6 @@
 {meta: title Can I Sleep in Your Arms}
 {meta: artist Willie Nelson}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]Can I sleep in your [G7]arms tonight [C]lady

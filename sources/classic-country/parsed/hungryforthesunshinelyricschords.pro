@@ -1,6 +1,6 @@
 {meta: title Hungry For The Sunshine}
 {meta: artist Mickey Gilley}
-{meta: writer Linne Black}
+{meta: composer Linne Black}
 
 {start_of_verse: Verse 1}
 [C]I just looked out my window and it gave [F]my heart a [C]thrill

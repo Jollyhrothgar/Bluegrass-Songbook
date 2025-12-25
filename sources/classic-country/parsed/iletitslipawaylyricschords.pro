@@ -1,6 +1,6 @@
 {meta: title I Let It Slip Away}
 {meta: artist Faron Young}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]Once I had it then [F]I let it slip [G7][C]away

@@ -1,6 +1,6 @@
 {meta: title Yes Mr. Rogers}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein and Fred Koller}
+{meta: composer Shel Silverstein and Fred Koller}
 
 {start_of_verse: Verse 1}
 [C]Yes Mr. Rogers I'm livin' in sin with your [G7]daughter

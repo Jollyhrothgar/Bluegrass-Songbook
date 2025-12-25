@@ -1,6 +1,6 @@
 {meta: title We'll Soon Be Done With Troubles And Trials chords}
 {meta: artist The Statler Brothers}
-{meta: writer Cleavant Derricks}
+{meta: composer Cleavant Derricks}
 
 {start_of_verse: Verse 1}
 [C]Some of these days I'm going home where no [F]sorrows ever [C]come

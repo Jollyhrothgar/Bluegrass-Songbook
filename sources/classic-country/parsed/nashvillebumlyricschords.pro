@@ -1,6 +1,6 @@
 {meta: title Nashville Bum}
 {meta: artist Waylon Jennings}
-{meta: writer Glenn Corbin, Frankie Miller, and Waylon Jennings}
+{meta: composer Glenn Corbin, Frankie Miller, and Waylon Jennings}
 
 {start_of_verse: Verse 1}
 [C]I've been chasing the big wheels a[F]ll over N[C]ashville

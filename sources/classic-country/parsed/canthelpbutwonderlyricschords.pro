@@ -1,6 +1,6 @@
 {meta: title Can't Help But Wonder}
 {meta: artist Barbara Mandrell}
-{meta: writer Sharon Sanders}
+{meta: composer Sharon Sanders}
 
 {start_of_verse: Verse 1}
 [C]Another Friday evening with the [F]TV set 

@@ -1,6 +1,6 @@
 {meta: title First Fall Of Snow}
 {meta: artist Hank Williams}
-{meta: writer Lorene Rose}
+{meta: composer Lorene Rose}
 
 {start_of_verse: Verse 1}
 [C]I talked with a stranger so sad [C7]and [F]forlorn

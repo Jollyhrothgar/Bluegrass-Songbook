@@ -1,6 +1,6 @@
 {meta: title It's Not Easy Being Fifteen}
 {meta: artist John Conlee}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [C]It's not [F]easy [C]being fifteen

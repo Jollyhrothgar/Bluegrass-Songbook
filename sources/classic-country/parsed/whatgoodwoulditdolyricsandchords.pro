@@ -1,6 +1,6 @@
 {meta: title What Good Would It Do}
 {meta: artist Faron Young}
-{meta: writer Billy Deaton and Jerry Len Pitts}
+{meta: composer Billy Deaton and Jerry Len Pitts}
 
 {start_of_verse: Verse 1}
 [C]Sometimes in the night my world gets [G7]lonely

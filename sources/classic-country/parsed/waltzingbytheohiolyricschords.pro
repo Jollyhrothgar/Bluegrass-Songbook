@@ -1,6 +1,6 @@
 {meta: title Waltzing By The Ohio}
 {meta: artist George Morgan}
-{meta: writer George Morgan and Harry Beasley Smith}
+{meta: composer George Morgan and Harry Beasley Smith}
 
 {start_of_verse: Verse 1}
 [G]I was waltzing by the [C]Ohio  [G]River of dreams

@@ -1,6 +1,6 @@
 {meta: title You'll Be There}
 {meta: artist George Strait}
-{meta: writer Cory Mayo}
+{meta: composer Cory Mayo}
 
 {start_of_verse: Verse 1}
 [C]Hope is an anchor and love is a ship 

@@ -1,6 +1,6 @@
 {meta: title One Row At A Time}
 {meta: artist Merle Haggard}
-{meta: writer Red Lane and Dottie West}
+{meta: composer Red Lane and Dottie West}
 
 {start_of_verse: Verse 1}
 [C]The southeast Georgia red clay dust is [F]ground into my [C]blue jeans

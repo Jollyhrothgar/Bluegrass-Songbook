@@ -1,6 +1,6 @@
 {meta: title Money Marbles And Chalk}
 {meta: artist Rex Allen}
-{meta: writer Pop Eckler}
+{meta: composer Pop Eckler}
 
 {start_of_verse: Verse 1}
 [C]Now there's an old [F]sayin' that's [C]been all around

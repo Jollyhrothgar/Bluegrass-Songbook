@@ -1,6 +1,6 @@
 {meta: title When The Trains Come In}
 {meta: artist Charley Pride}
-{meta: writer Al Urban}
+{meta: composer Al Urban}
 
 {start_of_verse: Verse 1}
 [C]Another [G7]lonely day is almost [C]gone

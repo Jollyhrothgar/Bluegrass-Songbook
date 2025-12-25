@@ -1,6 +1,6 @@
 {meta: title Curtains Of Sorrow}
 {meta: artist Jim Eanes}
-{meta: writer Riley Shepard}
+{meta: composer Riley Shepard}
 
 {start_of_verse: Verse 1}
 [C]The curtains of sorrow have [F]descended

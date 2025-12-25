@@ -1,6 +1,6 @@
 {meta: title All The Way Through}
 {meta: artist Vern Gosdin}
-{meta: writer Dennis Knutson and Vern Gosdin}
+{meta: composer Dennis Knutson and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]Like the [F]sun that shine’s through our [C]window

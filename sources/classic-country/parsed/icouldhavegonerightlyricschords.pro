@@ -1,6 +1,6 @@
 {meta: title I Could Have Gone Right}
 {meta: artist Stonewall Jackson}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]I was born a good boy my [F]folks just loved me [C]so

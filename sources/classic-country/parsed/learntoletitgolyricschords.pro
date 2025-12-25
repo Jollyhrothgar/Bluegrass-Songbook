@@ -1,6 +1,6 @@
 {meta: title Learn To Let It Go}
 {meta: artist Don Williams}
-{meta: writer Rory Bourke and Mike Reid}
+{meta: composer Rory Bourke and Mike Reid}
 
 {start_of_verse: Verse 1}
 [C]There's a young man sits by the river 

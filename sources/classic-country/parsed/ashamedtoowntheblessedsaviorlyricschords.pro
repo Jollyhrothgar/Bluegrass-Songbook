@@ -1,6 +1,6 @@
 {meta: title Ashamed To Own The Blessed Savior}
 {meta: artist Jim and Jesse}
-{meta: writer John Bailes and Walter Bailes}
+{meta: composer John Bailes and Walter Bailes}
 
 {start_of_verse: Verse 1}
 [C]Up[F]on the lonely tree of [C]Calvary

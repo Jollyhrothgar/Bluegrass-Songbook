@@ -1,6 +1,6 @@
 {meta: title Where I Ought To Be}
 {meta: artist Skeeter Davis}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]I got your wedding invitation [A#7]    [G]

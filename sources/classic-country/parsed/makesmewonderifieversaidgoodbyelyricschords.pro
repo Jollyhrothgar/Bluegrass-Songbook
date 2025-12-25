@@ -1,6 +1,6 @@
 {meta: title Makes Me Wonder If I Ever Said Goodbye}
 {meta: artist Kenny Rogers}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [G]She at times still comes around 

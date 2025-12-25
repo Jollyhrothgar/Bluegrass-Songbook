@@ -1,6 +1,6 @@
 {meta: title Run That By Me One More Time}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [F]Run that by me one more time

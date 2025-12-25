@@ -1,6 +1,6 @@
 {meta: title You Can't Buy Your Way Out Of The Blues}
 {meta: artist George Strait}
-{meta: writer Larry Cordle and Mike Anthony}
+{meta: composer Larry Cordle and Mike Anthony}
 
 {start_of_verse: Verse 1}
 [G]I'd been workin' at forgettin' since you [D7]said goodbye

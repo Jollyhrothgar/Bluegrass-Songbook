@@ -1,6 +1,6 @@
 {meta: title Cowboys And Daddy's}
 {meta: artist Bobby Bare}
-{meta: writer Marty Cooper}
+{meta: composer Marty Cooper}
 
 {start_of_verse: Verse 1}
 [C]I know you're [G7]sleepy it's [C]time to go [G7]home

@@ -1,6 +1,6 @@
 {meta: title A Guy Named Joe}
 {meta: artist Ernest Tubb}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]I stepped a-shore in Tokyo [C]feeling kinda [D7]blue

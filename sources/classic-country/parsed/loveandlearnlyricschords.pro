@@ -1,6 +1,6 @@
 {meta: title Love And Learn}
 {meta: artist Brenda Lee}
-{meta: writer Bob Montgomery and Earl Sinks}
+{meta: composer Bob Montgomery and Earl Sinks}
 
 {start_of_verse: Verse 1}
 [C]Love and learn about the [Am]birds and bees

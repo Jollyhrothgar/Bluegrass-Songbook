@@ -1,6 +1,6 @@
 {meta: title I Wanna Wake Up With You}
 {meta: artist Johnny Rodriguez}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]I wanna [G7]wake up with [Am]you [C]  [F]

@@ -1,6 +1,6 @@
 {meta: title As Long As There's A Sunday}
 {meta: artist Ernest Tubb}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]Though I can't come to [F]see you every [C]day

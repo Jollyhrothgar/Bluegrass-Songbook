@@ -1,6 +1,6 @@
 {meta: title My Mind Hangs On To You}
 {meta: artist Billy Walker}
-{meta: writer Felice Bryant and Boudleaux Bryant}
+{meta: composer Felice Bryant and Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [G]My mind hangs on to you no matter what I [C]do

@@ -1,6 +1,6 @@
 {meta: title Do You Wanna Make Love}
 {meta: artist Jim Ed Brown}
-{meta: writer Peter McCann}
+{meta: composer Peter McCann}
 
 {start_of_verse: Verse 1}
 [G]Sometimes the love rhymes that [C]fill the afternoon

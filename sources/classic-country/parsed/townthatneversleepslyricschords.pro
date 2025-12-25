@@ -1,6 +1,6 @@
 {meta: title Town That Never Sleeps}
 {meta: artist Charlie Walker}
-{meta: writer Autry Inman}
+{meta: composer Autry Inman}
 
 {start_of_verse: Verse 1}
 [G]My baby flirts and walks [C]the [G]streets

@@ -1,6 +1,6 @@
 {meta: title Two Together}
 {meta: artist Connie Smith}
-{meta: writer Nat Stuckey}
+{meta: composer Nat Stuckey}
 
 {start_of_verse: Verse 1}
 [G]If you're not in my arms then you're too far away

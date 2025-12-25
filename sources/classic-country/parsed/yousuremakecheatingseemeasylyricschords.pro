@@ -1,6 +1,6 @@
 {meta: title You Sure Make Cheating Seem Easy}
 {meta: artist Gene Watson}
-{meta: writer Warren Robb and Dave Kirby}
+{meta: composer Warren Robb and Dave Kirby}
 
 {start_of_verse: Verse 1}
 [G]You caught me when my [C]arms were [G]empty

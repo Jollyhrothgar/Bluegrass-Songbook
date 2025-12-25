@@ -1,6 +1,6 @@
 {meta: title Baby For You}
 {meta: artist Ferlin Husky}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Late at night when [E7]I can't sleep 

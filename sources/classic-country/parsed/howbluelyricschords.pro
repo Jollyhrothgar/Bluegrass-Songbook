@@ -1,6 +1,6 @@
 {meta: title How Blue}
 {meta: artist Reba McEntire}
-{meta: writer Hugh Moffatt}
+{meta: composer Hugh Moffatt}
 
 {start_of_verse: Verse 1}
 [G7]How [C]blue (how blue) can you [F]make me

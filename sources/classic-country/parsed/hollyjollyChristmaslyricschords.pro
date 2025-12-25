@@ -1,6 +1,6 @@
 {meta: title Holly Jolly Christmas}
 {meta: artist Burl Ives}
-{meta: writer Johnny Marks}
+{meta: composer Johnny Marks}
 
 {start_of_verse: Verse 1}
 [C]Have a holly jolly Christmas

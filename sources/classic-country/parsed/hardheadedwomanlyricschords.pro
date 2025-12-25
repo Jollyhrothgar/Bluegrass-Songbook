@@ -1,6 +1,6 @@
 {meta: title Hard Headed Woman}
 {meta: artist Elvis Presley}
-{meta: writer Claude Demetrius}
+{meta: composer Claude Demetrius}
 
 {start_of_verse: Verse 1}
 [G]Well a hard headed woman a soft hearted man

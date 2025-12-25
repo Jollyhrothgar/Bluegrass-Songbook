@@ -1,6 +1,6 @@
 {meta: title Juke Joint Johnny}
 {meta: artist Red Sovine}
-{meta: writer Lattie Moore}
+{meta: composer Lattie Moore}
 
 {start_of_verse: Verse 1}
 [G]Well I called my baby and I told her to be

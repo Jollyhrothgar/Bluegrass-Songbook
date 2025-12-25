@@ -1,6 +1,6 @@
 {meta: title Christmas In Your Arms}
 {meta: artist Alabama}
-{meta: writer Bill Anderson and Steve Wariner}
+{meta: composer Bill Anderson and Steve Wariner}
 
 {start_of_verse: Verse 1}
 [C]All my friends are asking me [F]where I plan to spend the holi[C]days

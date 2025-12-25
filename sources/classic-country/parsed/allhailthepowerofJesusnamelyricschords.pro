@@ -1,6 +1,6 @@
 {meta: title All Hail The Power Of Jesus' Name}
 {meta: artist Patti Page}
-{meta: writer Harris Hubble}
+{meta: composer Harris Hubble}
 
 {start_of_verse: Verse 1}
 [C]All hail the power of [G7]Jesus' name

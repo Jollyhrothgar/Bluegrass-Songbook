@@ -1,6 +1,6 @@
 {meta: title Two Sparrows In A Hurricane}
 {meta: artist Tanya Tucker}
-{meta: writer Mark Alan Springer}
+{meta: composer Mark Alan Springer}
 
 {start_of_verse: Verse 1}
 [C]She's fifteen and [F]he's barely driving a [C]car

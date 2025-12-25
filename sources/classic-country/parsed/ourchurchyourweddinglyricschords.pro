@@ -1,6 +1,6 @@
 {meta: title Our Church Your Wedding}
 {meta: artist Roy Drusky}
-{meta: writer Roy Drusky and Lester Vanadore}
+{meta: composer Roy Drusky and Lester Vanadore}
 
 {start_of_verse: Verse 1}
 [G]I went to the church dear 

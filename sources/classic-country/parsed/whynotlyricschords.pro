@@ -1,6 +1,6 @@
 {meta: title Why Not}
 {meta: artist Everly Brothers}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 Why Not

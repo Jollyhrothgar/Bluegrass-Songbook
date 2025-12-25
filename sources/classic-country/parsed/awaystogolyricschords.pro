@@ -1,6 +1,6 @@
 {meta: title A Ways To Go}
 {meta: artist Emmylou Harris}
-{meta: writer Lainie Marsh}
+{meta: composer Lainie Marsh}
 
 {start_of_verse: Verse 1}
 [G]I hear the clock a ticking [D7]see the sweat upon my brow

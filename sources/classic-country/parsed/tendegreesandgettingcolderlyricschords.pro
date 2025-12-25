@@ -1,6 +1,6 @@
 {meta: title Ten Degrees And Getting Colder}
 {meta: artist J.D. Crowe}
-{meta: writer Gordon Lightfoot}
+{meta: composer Gordon Lightfoot}
 
 {start_of_verse: Verse 1}
 [C]He was standing by the highway with a sign that just said mother

@@ -1,6 +1,6 @@
 {meta: title Black Jack's Bar}
 {meta: artist Porter Wagoner}
-{meta: writer Jimmie Driftwood}
+{meta: composer Jimmie Driftwood}
 
 {start_of_verse: Verse 1}
 [C]When I was a young man I played my guitar

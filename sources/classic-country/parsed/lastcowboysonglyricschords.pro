@@ -1,6 +1,6 @@
 {meta: title Last Cowboy Song}
 {meta: artist Waylon Jennings}
-{meta: writer Ed Bruce and Ron Peterson}
+{meta: composer Ed Bruce and Ron Peterson}
 
 {start_of_verse: Verse 1}
 [C]This is the last cowboy song

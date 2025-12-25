@@ -1,6 +1,6 @@
 {meta: title I Hear A Choo Choo Coming}
 {meta: artist Stanley Brothers}
-{meta: writer Ralph Stanley}
+{meta: composer Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]I hear a choo choo coming

@@ -1,6 +1,6 @@
 {meta: title Love Ain't Never Gonna Be No Better}
 {meta: artist Webb Pierce}
-{meta: writer Cecil Null and Rusty Adams}
+{meta: composer Cecil Null and Rusty Adams}
 
 {start_of_verse: Verse 1}
 [C]Now love ain't never gonna be no better than it [G7]is right now

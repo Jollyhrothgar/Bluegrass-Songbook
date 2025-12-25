@@ -1,6 +1,6 @@
 {meta: title A Man Is On His Own}
 {meta: artist Hank Williams Jr.}
-{meta: writer John Scoggins and Hank Williams Jr.}
+{meta: composer John Scoggins and Hank Williams Jr.}
 
 {start_of_verse: Verse 1}
 [C]When a [Dm]man [G7]leaves his [C]home

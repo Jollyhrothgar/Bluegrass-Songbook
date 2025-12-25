@@ -1,6 +1,6 @@
 {meta: title Come Along}
 {meta: artist Elvis Presley}
-{meta: writer David Hess}
+{meta: composer David Hess}
 
 {start_of_verse: Verse 1}
 [C]Come along [Am]come along there's a [C]full moon shining [G7]bright

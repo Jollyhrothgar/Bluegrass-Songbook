@@ -1,6 +1,6 @@
 {meta: title Go It Alone}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [C]Here we are [G7]again [Dm]my old [C]friend[G7]

@@ -1,6 +1,6 @@
 {meta: title Love Of The Common People}
 {meta: artist Waylon Jennings}
-{meta: writer Ronnie Wilkins and John Hurley}
+{meta: composer Ronnie Wilkins and John Hurley}
 
 {start_of_verse: Verse 1}
 [G]Living on free food tickets

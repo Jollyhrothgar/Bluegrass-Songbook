@@ -1,6 +1,6 @@
 {meta: title Teach Me To Cheat}
 {meta: artist The Kendalls}
-{meta: writer J.L. Wallace, Ken Bell, Terry Skinner}
+{meta: composer J.L. Wallace, Ken Bell, Terry Skinner}
 
 {start_of_verse: Verse 1}
 [C]Teach me to cheat [F]show me how you do [C]it

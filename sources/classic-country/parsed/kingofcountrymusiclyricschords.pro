@@ -1,6 +1,6 @@
 {meta: title King Of Country Music}
 {meta: artist Tanya Tucker}
-{meta: writer Steve Dorff and Milton Brown}
+{meta: composer Steve Dorff and Milton Brown}
 
 {start_of_verse: Verse 1}
 [C]The battered bus pulls into one more nameless little [D7]town

@@ -1,6 +1,6 @@
 {meta: title Right On Time}
 {meta: artist Randy Travis}
-{meta: writer Sharon Vaughn and Al Anderson}
+{meta: composer Sharon Vaughn and Al Anderson}
 
 {start_of_verse: Verse 1}
 [C]It's not my nature to be [Dm]patient 

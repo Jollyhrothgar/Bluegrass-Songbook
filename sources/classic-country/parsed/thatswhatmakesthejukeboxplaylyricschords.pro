@@ -1,6 +1,6 @@
 {meta: title That's What Makes The Jukebox Play}
 {meta: artist Moe Bandy}
-{meta: writer Jimmy WorkG}
+{meta: composer Jimmy WorkG}
 
 {start_of_verse: Verse 1}
 Trying to dry [D7]my tears away

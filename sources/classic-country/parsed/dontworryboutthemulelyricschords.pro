@@ -1,6 +1,6 @@
 {meta: title Don't Worry 'Bout The Mule}
 {meta: artist Carl Smith}
-{meta: writer Glen Barber}
+{meta: composer Glen Barber}
 
 {start_of_verse: Verse 1}
 [C]Well you said you wouldn't leave me 

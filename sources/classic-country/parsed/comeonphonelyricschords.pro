@@ -1,6 +1,6 @@
 {meta: title Come On Phone}
 {meta: artist Jean Shepard}
-{meta: writer Larry Henley and Johnny Slate}
+{meta: composer Larry Henley and Johnny Slate}
 
 {start_of_verse: Verse 1}
 [C]Got me a phone in my [F]home but my hand [C]don't fit the [F]handle

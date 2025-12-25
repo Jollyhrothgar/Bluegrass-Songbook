@@ -1,6 +1,6 @@
 {meta: title Blues Ain't Nothing}
 {meta: artist Ferlin Husky}
-{meta: writer Hank Mills, Walter Haynes, Shorty Lavender}
+{meta: composer Hank Mills, Walter Haynes, Shorty Lavender}
 
 {start_of_verse: Verse 1}
 [G]When you wake up in the morning and you're [C]sick from head to [G]toe

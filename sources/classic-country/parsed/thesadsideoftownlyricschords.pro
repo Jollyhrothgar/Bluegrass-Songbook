@@ -1,6 +1,6 @@
 {meta: title The Sad Side Of Town}
 {meta: artist Dwight Yoakam}
-{meta: writer Buck Owens and Dwight Yoakam}
+{meta: composer Buck Owens and Dwight Yoakam}
 
 {start_of_verse: Verse 1}
 [G]We've agreed not to mention any [D7]memories 

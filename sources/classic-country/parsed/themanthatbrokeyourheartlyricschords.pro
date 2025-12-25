@@ -1,6 +1,6 @@
 {meta: title The Man That Broke Your Heart}
 {meta: artist Gene Watson}
-{meta: writer Bill Joe Foster, Gene Pistilli, Tommy Collins}
+{meta: composer Bill Joe Foster, Gene Pistilli, Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]You're crying cause he treated you so [D7]bad

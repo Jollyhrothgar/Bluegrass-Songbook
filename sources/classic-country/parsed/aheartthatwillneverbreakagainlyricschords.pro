@@ -1,6 +1,6 @@
 {meta: title A Heart That Will Never Break Again}
 {meta: artist The Easter Brothers}
-{meta: writer Edd Easter, James Easter, and Russell Lee Easter}
+{meta: composer Edd Easter, James Easter, and Russell Lee Easter}
 
 {start_of_verse: Verse 1}
 [G]I'll have a heart that will [D7]never break [G]again

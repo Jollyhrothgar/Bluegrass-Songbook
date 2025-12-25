@@ -1,6 +1,6 @@
 {meta: title Fifteen Years Going Up}
 {meta: artist George Strait}
-{meta: writer Peggy Forman}
+{meta: composer Peggy Forman}
 
 {start_of_verse: Verse 1}
 [G]Fifteen years together we [C]climbed by work and [G]will

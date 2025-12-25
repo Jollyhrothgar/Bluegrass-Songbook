@@ -1,6 +1,6 @@
 {meta: title It's A Beautiful Thing}
 {meta: artist Ronnie Milsap}
-{meta: writer Craig Wiseman and Jeffrey Steele}
+{meta: composer Craig Wiseman and Jeffrey Steele}
 
 {start_of_verse: Verse 1}
 [G7]When I [Dm]look in your [C]eyes and [G7]see how much she [C]loves [Em]me [C]  [G7]

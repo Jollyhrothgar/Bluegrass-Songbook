@@ -1,6 +1,6 @@
 {meta: title Don't You Say Nothing At All}
 {meta: artist Stonewall Jackson}
-{meta: writer Adam Ross and Ronald Kramer}
+{meta: composer Adam Ross and Ronald Kramer}
 
 {start_of_verse: Verse 1}
 [G]Well listen to me [C]mister I [D7]just came in here for a [G]drink

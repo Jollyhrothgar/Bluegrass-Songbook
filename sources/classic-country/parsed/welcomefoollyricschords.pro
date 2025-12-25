@@ -1,6 +1,6 @@
 {meta: title Welcome Fool}
 {meta: artist Mark Chesnutt}
-{meta: writer Dave Loggins}
+{meta: composer Dave Loggins}
 
 {start_of_verse: Verse 1}
 [C]If you're here to sit and [G7]talk

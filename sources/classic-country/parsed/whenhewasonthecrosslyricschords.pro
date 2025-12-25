@@ -1,6 +1,6 @@
 {meta: title When He Was On the Cross}
 {meta: artist Penny Gilley}
-{meta: writer Ronald Payne and Ronny Hinson}
+{meta: composer Ronald Payne and Ronny Hinson}
 
 {start_of_verse: Verse 1}
 [G]I'm not on an ego trip

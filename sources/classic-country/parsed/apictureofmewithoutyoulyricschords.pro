@@ -1,6 +1,6 @@
 {meta: title A Picture of me Without You}
 {meta: artist George Jones}
-{meta: writer Norro Wilson and George Richey}
+{meta: composer Norro Wilson and George Richey}
 
 {start_of_verse: Verse 1}
 [G]Imagine a world where no music [C]was [G]playing

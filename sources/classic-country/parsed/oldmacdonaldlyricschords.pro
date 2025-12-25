@@ -1,6 +1,6 @@
 {meta: title Old MacDonald}
 {meta: artist Elvis Presley}
-{meta: writer Randy Starr}
+{meta: composer Randy Starr}
 
 {start_of_verse: Verse 1}
 [G]Old MacDonald [C]had a [G]farm [G][D7]ee-i-ee-i-o

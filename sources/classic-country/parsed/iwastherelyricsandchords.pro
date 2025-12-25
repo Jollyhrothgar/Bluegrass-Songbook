@@ -1,6 +1,6 @@
 {meta: title I Was There}
 {meta: artist Dwight Yoakam}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]I was there (I was there) I was there (I was there)

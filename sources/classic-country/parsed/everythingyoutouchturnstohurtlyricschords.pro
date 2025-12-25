@@ -1,6 +1,6 @@
 {meta: title Everything You Touch Turns To Hurt}
 {meta: artist Johnny Paycheck}
-{meta: writer Johnny Paycheck and Aubrey Mayhew}
+{meta: composer Johnny Paycheck and Aubrey Mayhew}
 
 {start_of_verse: Verse 1}
 [C]First impressions aren't always the ones to go by

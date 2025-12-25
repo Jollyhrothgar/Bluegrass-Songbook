@@ -1,6 +1,6 @@
 {meta: title Looking Back To See}
 {meta: artist Jim Ed Brown}
-{meta: writer Jim Ed Brown and Maxine Brown}
+{meta: composer Jim Ed Brown and Maxine Brown}
 
 {start_of_verse: Verse 1}
 [G]I was looking back to see

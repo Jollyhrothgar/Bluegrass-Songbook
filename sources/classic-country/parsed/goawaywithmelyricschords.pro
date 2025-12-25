@@ -1,6 +1,6 @@
 {meta: title Go Away With Me}
 {meta: artist Wilburn Brothers}
-{meta: writer Dan Welch}
+{meta: composer Dan Welch}
 
 {start_of_verse: Verse 1}
 [C]Go go go away with [G7]me [C]mmm  

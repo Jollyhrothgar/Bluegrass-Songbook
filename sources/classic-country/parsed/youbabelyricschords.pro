@@ -1,6 +1,6 @@
 {meta: title You Babe}
 {meta: artist Merle Haggard}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G]Sometimes this ol' world's a [C]drag it really pulls me [G]down

@@ -1,6 +1,6 @@
 {meta: title Flame In My Heart}
 {meta: artist George Jones}
-{meta: writer George Jones and Bernard Spurlock}
+{meta: composer George Jones and Bernard Spurlock}
 
 {start_of_verse: Verse 1}
 [G]You cheated on me (you cheated [G7]me)

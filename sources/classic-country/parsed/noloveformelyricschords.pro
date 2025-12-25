@@ -1,6 +1,6 @@
 {meta: title No Love For Me}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ernest Floyd and Kenny Sowder}
+{meta: composer Ernest Floyd and Kenny Sowder}
 
 {start_of_verse: Verse 1}
 [C]Oh she was my first love I loved her [G7]so

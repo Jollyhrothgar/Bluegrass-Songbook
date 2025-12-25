@@ -1,6 +1,6 @@
 {meta: title Long And Lonesome Ride To Dalhart}
 {meta: artist Red Steagall}
-{meta: writer Michael Martin Murphey}
+{meta: composer Michael Martin Murphey}
 
 {start_of_verse: Verse 1}
 [C]There was snow on the Spanish peaks that morning

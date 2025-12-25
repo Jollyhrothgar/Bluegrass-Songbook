@@ -1,6 +1,6 @@
 {meta: title It's Only Love}
 {meta: artist Vern Gosdin}
-{meta: writer Tim Krekel}
+{meta: composer Tim Krekel}
 
 {start_of_verse: Verse 1}
 [C]I’ve heard that word before

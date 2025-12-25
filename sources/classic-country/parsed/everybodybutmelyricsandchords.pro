@@ -1,6 +1,6 @@
 {meta: title Everybody But Me}
 {meta: artist Ricky Nelson}
-{meta: writer Dave Burgess}
+{meta: composer Dave Burgess}
 
 {start_of_verse: Verse 1}
 [D7](Everybody [G]everybody [D7]everybody)

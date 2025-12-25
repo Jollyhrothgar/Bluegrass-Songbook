@@ -1,6 +1,6 @@
 {meta: title I’ve Never Seen The Likes Of You}
 {meta: artist Conway Twitty}
-{meta: writer Bob McDill and Wayland Holyfield}
+{meta: composer Bob McDill and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]You walk in  and [F]I can hear the [C]whispers

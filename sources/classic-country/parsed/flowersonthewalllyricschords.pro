@@ -1,6 +1,6 @@
 {meta: title Flowers On The Wall}
 {meta: artist the Statler Brothers}
-{meta: writer Lewis Dewitt}
+{meta: composer Lewis Dewitt}
 
 {start_of_verse: Verse 1}
 [C]I keep hearing you're concerned about my [Am]happiness

@@ -1,5 +1,5 @@
 {meta: artist George StraitWritten by Donald Yetter Gardner}
-{meta: writer Donald Yetter Gardner}
+{meta: composer Donald Yetter Gardner}
 
 {start_of_verse: Verse 1}
 [C]All I want for Christmas is my two front [D7]teeth

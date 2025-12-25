@@ -1,6 +1,6 @@
 {meta: title Mona Lisa}
 {meta: artist Jim Reeves}
-{meta: writer Jay Livingston and Ray Evans}
+{meta: composer Jay Livingston and Ray Evans}
 
 {start_of_verse: Verse 1}
 [G7]Mona [C]Lisa Mona Lisa men have [F]named [C]you 

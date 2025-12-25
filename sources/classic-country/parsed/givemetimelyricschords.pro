@@ -1,6 +1,6 @@
 {meta: title Give Me Time}
 {meta: artist Sonny James}
-{meta: writer Richard Hollingsworth and Sonny James}
+{meta: composer Richard Hollingsworth and Sonny James}
 
 {start_of_verse: Verse 1}
 [G7]Give me [C]time ([G7]give me [C]time) you must be[F]lieve me

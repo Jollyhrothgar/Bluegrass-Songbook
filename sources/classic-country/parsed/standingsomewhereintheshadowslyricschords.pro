@@ -1,6 +1,6 @@
 {meta: title Standing Somewhere In The Shadows}
 {meta: artist Mac Wiseman}
-{meta: writer Kenneth Downie}
+{meta: composer Kenneth Downie}
 
 {start_of_verse: Verse 1}
 [G]When the world is crumbling [C]around you

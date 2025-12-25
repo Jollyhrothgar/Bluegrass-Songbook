@@ -1,6 +1,6 @@
 {meta: title I Can See Sunshine}
 {meta: artist Wynn Stewart}
-{meta: writer Neal Merritt and Shorty Hall}
+{meta: composer Neal Merritt and Shorty Hall}
 
 {start_of_verse: Verse 1}
 [C]I gave my raincoat away

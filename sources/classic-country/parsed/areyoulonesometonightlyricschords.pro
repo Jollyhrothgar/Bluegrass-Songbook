@@ -1,6 +1,6 @@
 {meta: title Are You Lonesome Tonight}
 {meta: artist Elvis Presley}
-{meta: writer Roy Turk and Lou Handman}
+{meta: composer Roy Turk and Lou Handman}
 
 {start_of_verse: Verse 1}
 [C]Are you lonesome tonight do you miss me tonight 

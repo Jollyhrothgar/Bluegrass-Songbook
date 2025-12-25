@@ -1,6 +1,6 @@
 {meta: title He Was On To Something}
 {meta: artist Ricky Skaggs}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [C]The moon ain't yellow and the moon ain't blue

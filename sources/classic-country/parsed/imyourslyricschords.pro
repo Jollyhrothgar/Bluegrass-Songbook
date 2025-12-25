@@ -1,6 +1,6 @@
 {meta: title I'm Yours}
 {meta: artist Elvis Presley}
-{meta: writer Don Roberson and Hal Blair}
+{meta: composer Don Roberson and Hal Blair}
 
 {start_of_verse: Verse 1}
 My love I [G]offer to you now my heart and all it can [C]give

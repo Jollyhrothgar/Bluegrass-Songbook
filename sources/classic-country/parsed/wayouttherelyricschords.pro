@@ -1,6 +1,6 @@
 {meta: title Way Out There}
 {meta: artist Marty Robbins}
-{meta: writer Bob Nolan}
+{meta: composer Bob Nolan}
 
 {start_of_verse: Verse 1}
 [F]Ee oo ee dle dee dee ho oo lay dee ee [C]dee 

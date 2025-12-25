@@ -1,6 +1,6 @@
 {meta: title All Prayed Up}
 {meta: artist Vince Gill}
-{meta: writer Vince Gill}
+{meta: composer Vince Gill}
 
 {start_of_verse: Verse 1}
 [G]I'm all prayed up I'm [C]ready to meet my [G]Savior

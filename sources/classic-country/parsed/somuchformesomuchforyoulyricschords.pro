@@ -1,6 +1,6 @@
 {meta: title So Much For Me So Much For You}
 {meta: artist Merle Haggard}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]So much for [G7]me so much for [C]you

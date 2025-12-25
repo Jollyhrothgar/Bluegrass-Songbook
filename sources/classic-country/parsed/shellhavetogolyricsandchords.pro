@@ -1,6 +1,6 @@
 {meta: title She'll Have To Go}
 {meta: artist Anne Murray}
-{meta: writer Joe Allison and Audrey Allison}
+{meta: composer Joe Allison and Audrey Allison}
 
 {start_of_verse: Verse 1}
 [C]Put your sweet lips a little [F]closer to the [C]phone

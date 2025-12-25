@@ -1,6 +1,6 @@
 {meta: title I'll Remember You Love In My Prayers Lyrics and Chords}
 {meta: artist Hank Snow}
-{meta: writer Will Hays}
+{meta: composer Will Hays}
 
 {start_of_verse: Verse 1}
 [G]When the curtains of night are pinned [C]back by the [G]stars

@@ -1,6 +1,6 @@
 {meta: title Don't Keep Me Hanging On}
 {meta: artist Sonny James}
-{meta: writer Carole Smith and Sonny James}
+{meta: composer Carole Smith and Sonny James}
 
 {start_of_verse: Verse 1}
 [G]Don't keep me hanging [C]on 

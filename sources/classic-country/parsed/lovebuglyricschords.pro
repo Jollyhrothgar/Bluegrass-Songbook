@@ -1,6 +1,6 @@
 {meta: title Love Bug}
 {meta: artist George Strait}
-{meta: writer Wayne Kemp and Curtis Wayne}
+{meta: composer Wayne Kemp and Curtis Wayne}
 
 {start_of_verse: Verse 1}
 [G]Well I was rulin’ the roost had all the chicks to [D7]myself

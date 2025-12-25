@@ -1,6 +1,6 @@
 {meta: title The Bells That Broke My Heart}
 {meta: artist Slim Whitman}
-{meta: writer Walter Rollins and Mark Rollins}
+{meta: composer Walter Rollins and Mark Rollins}
 
 {start_of_verse: Verse 1}
 [C]Though I watched you [B7]with the [C]smile as you started [B7]down the [C]aisle

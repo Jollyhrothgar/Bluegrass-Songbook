@@ -1,6 +1,6 @@
 {meta: title Once More With Feeling}
 {meta: artist Willie Nelson}
-{meta: writer Shirley Nelson}
+{meta: composer Shirley Nelson}
 
 {start_of_verse: Verse 1}
 [C]Once more with [F]feeling [G7]once more with [C][F]feel-ing

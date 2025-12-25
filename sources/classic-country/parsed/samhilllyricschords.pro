@@ -1,6 +1,6 @@
 {meta: title Sam Hill}
 {meta: artist Jimmy Dean}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]There's a certain hill outside of town called Sam [Am]Hill

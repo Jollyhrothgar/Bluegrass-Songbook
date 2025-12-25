@@ -1,6 +1,6 @@
 {meta: title Let Me Take That Heartache (Off Your Hands)}
 {meta: artist Clay Walker}
-{meta: writer Kent Blazy, Kim Williams, Clay Walker}
+{meta: composer Kent Blazy, Kim Williams, Clay Walker}
 
 {start_of_verse: Verse 1}
 [D7]Once [G]again he left you here [C]crying

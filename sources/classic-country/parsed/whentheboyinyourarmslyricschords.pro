@@ -1,6 +1,6 @@
 {meta: title When The Boy In Your Arms}
 {meta: artist Connie Francis}
-{meta: writer Roy Bennett and Sid Tepper}
+{meta: composer Roy Bennett and Sid Tepper}
 
 {start_of_verse: Verse 1}
 [C]When the boy in your arms 

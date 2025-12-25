@@ -1,6 +1,6 @@
 {meta: title It's Baby's First Christmas}
 {meta: artist Connie Francis}
-{meta: writer Benny Davis and Murray Mencher}
+{meta: composer Benny Davis and Murray Mencher}
 
 {start_of_verse: Verse 1}
 [C]It's baby's first Christmas [G7]it's somethin' to see 

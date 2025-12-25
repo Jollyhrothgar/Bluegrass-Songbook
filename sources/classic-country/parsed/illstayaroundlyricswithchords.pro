@@ -1,6 +1,6 @@
 {meta: title I'll Stay Around}
 {meta: artist Ricky Skaggs}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]Now you just told me that you're leavin'

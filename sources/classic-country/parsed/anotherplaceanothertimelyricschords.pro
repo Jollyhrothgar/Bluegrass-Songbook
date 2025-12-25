@@ -1,6 +1,6 @@
 {meta: title Another Place Another Time}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jerry Chestnut}
+{meta: composer Jerry Chestnut}
 
 {start_of_verse: Verse 1}
 [G]One by one 

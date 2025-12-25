@@ -1,6 +1,6 @@
 {meta: title Let Somebody Else Drive}
 {meta: artist John Anderson}
-{meta: writer Merle Kilgore and Mack Vickery}
+{meta: composer Merle Kilgore and Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]I heard it on the radio and six o'clock news

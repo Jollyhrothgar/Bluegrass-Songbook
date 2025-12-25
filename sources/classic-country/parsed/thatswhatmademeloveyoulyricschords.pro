@@ -1,6 +1,6 @@
 {meta: title That's What Made Me Love You}
 {meta: artist Bill Anderson}
-{meta: writer Lawrence Shoberg}
+{meta: composer Lawrence Shoberg}
 
 {start_of_verse: Verse 1}
 [C]Two nights in the [F]pourin' rain

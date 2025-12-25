@@ -1,6 +1,6 @@
 {meta: title Teardrops On The Roses}
 {meta: artist George Morgan}
-{meta: writer Jenny Lou Carson and Johnny Lange}
+{meta: composer Jenny Lou Carson and Johnny Lange}
 
 {start_of_verse: Verse 1}
 [C]Don't mind the teardrops on the [C7]roses that I [F]sent you

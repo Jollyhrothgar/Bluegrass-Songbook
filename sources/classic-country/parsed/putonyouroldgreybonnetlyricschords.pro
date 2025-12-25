@@ -1,6 +1,6 @@
 {meta: title Put On Your Old Grey Bonnet}
 {meta: artist Jimmy Dean}
-{meta: writer Percy Wenrich and Stanley Murphy}
+{meta: composer Percy Wenrich and Stanley Murphy}
 
 {start_of_verse: Verse 1}
 [G7]On an [C]old farm house veranda 

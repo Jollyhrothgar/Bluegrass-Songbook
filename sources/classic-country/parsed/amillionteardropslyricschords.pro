@@ -1,6 +1,6 @@
 {meta: title A Million Teardrops}
 {meta: artist Conway Twitty}
-{meta: writer Fred Carter}
+{meta: composer Fred Carter}
 
 {start_of_verse: Verse 1}
 [G]Well I picked up my baby at the [C]usual [D7]time last [G]night[D7]

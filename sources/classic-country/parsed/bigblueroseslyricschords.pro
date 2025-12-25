@@ -1,6 +1,6 @@
 {meta: title Big Blue Roses}
 {meta: artist Feller and Hill}
-{meta: writer Tom T. Hall and Dixie Hall}
+{meta: composer Tom T. Hall and Dixie Hall}
 
 {start_of_verse: Verse 1}
 [G]Big blue roses round my [C]door

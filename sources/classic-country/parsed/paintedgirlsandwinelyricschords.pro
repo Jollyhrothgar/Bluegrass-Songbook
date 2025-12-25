@@ -1,6 +1,6 @@
 {meta: title Painted Girls And Wine}
 {meta: artist Faron Young}
-{meta: writer Jack Ripley}
+{meta: composer Jack Ripley}
 
 {start_of_verse: Verse 1}
 [G7]Oh it's [C]funny how wine makes fools out of men around [G7]women

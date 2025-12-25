@@ -1,6 +1,6 @@
 {meta: title Straight From The Factory}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [C]Straight from the factory we [F]were made for each other

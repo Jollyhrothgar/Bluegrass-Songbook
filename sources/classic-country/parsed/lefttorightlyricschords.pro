@@ -1,6 +1,6 @@
 {meta: title Left To Right}
 {meta: artist Kitty Wells}
-{meta: writer Lorene Mann}
+{meta: composer Lorene Mann}
 
 {start_of_verse: Verse 1}
 [G]I'm taking your [D7]ring from my [G]left hand

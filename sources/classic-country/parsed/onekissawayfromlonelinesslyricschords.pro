@@ -1,6 +1,6 @@
 {meta: title One Kiss Away From Loneliness}
 {meta: artist The Osborne Brothers}
-{meta: writer Paul Williams and Sam Humphrey}
+{meta: composer Paul Williams and Sam Humphrey}
 
 {start_of_verse: Verse 1}
 [C]I'm walking you home for the last [G7]time

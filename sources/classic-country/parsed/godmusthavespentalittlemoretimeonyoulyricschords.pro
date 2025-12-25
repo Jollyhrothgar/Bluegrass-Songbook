@@ -1,6 +1,6 @@
 {meta: title God Must Have Spent A Little More Time On You chords}
 {meta: artist Alabama}
-{meta: writer Sturken Carl Allen, Rogers Evan A}
+{meta: composer Sturken Carl Allen, Rogers Evan A}
 
 {start_of_verse: Verse 1}
 {comment: Bb }

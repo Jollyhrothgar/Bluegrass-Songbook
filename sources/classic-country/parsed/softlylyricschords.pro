@@ -1,6 +1,6 @@
 {meta: title Softly}
 {meta: artist Hank Locklin}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]Soft[C]ly so [G]soft[Em]ly 

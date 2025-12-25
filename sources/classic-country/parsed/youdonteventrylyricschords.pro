@@ -1,6 +1,6 @@
 {meta: title You Don't Even Try}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Fuzzy Owen}
+{meta: composer Merle Haggard and Fuzzy Owen}
 
 {start_of_verse: Verse 1}
 [G]Our love keeps drifting and you [C]keep giving me the [G]blame

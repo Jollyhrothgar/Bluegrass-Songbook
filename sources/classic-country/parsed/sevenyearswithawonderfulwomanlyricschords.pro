@@ -1,6 +1,6 @@
 {meta: title Seven Years With A Wonderful Woman}
 {meta: artist Charlie Pride}
-{meta: writer Roland Davis}
+{meta: composer Roland Davis}
 
 {start_of_verse: Verse 1}
 [G]Tonight as I lie here I'm sleepless

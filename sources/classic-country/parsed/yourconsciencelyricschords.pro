@@ -1,6 +1,6 @@
 {meta: title Your Conscience}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Robert Lumpkins}
+{meta: composer Robert Lumpkins}
 
 {start_of_verse: Verse 1}
 [C]Well when you go to bed at night is [C7]your conscience fr[F]ee

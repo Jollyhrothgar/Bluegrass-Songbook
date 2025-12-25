@@ -1,6 +1,6 @@
 {meta: title Amigo}
 {meta: artist David Ball}
-{meta: writer Kostas and David Ball}
+{meta: composer Kostas and David Ball}
 
 {start_of_verse: Verse 1}
 [Am]Where ever you go we [D7]go [G]amigo

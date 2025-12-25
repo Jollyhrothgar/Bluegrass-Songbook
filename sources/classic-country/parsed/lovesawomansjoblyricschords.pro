@@ -1,6 +1,6 @@
 {meta: title Love's A Woman's Job}
 {meta: artist Norma Jean}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [G]I just overheard [C]on the tele[G]phone

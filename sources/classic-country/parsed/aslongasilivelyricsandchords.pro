@@ -1,6 +1,6 @@
 {meta: title As Long As I Live}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Dorsey Burnette}
+{meta: composer Dorsey Burnette}
 
 {start_of_verse: Verse 1}
 [C]As long as I live  baby I'm gonna [F]give

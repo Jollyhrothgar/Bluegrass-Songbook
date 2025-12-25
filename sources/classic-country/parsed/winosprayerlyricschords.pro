@@ -1,6 +1,6 @@
 {meta: title Wino's Prayer}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby and Icie Berg Kirby}
+{meta: composer Dave Kirby and Icie Berg Kirby}
 
 {start_of_verse: Verse 1}
 [G]I saw the ole man shuffle down the street

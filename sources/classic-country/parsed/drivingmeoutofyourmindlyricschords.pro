@@ -1,6 +1,6 @@
 {meta: title Driving Me Out Of Your Mind}
 {meta: artist Tracy Byrd}
-{meta: writer Mark Nesler}
+{meta: composer Mark Nesler}
 
 {start_of_verse: Verse 1}
 [G]He's driving me [C]out of your [D7]mind 

@@ -1,6 +1,6 @@
 {meta: title Come On Home Boy}
 {meta: artist George Hamilton IV}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]He got a letter saying guess you don't remember [C]me

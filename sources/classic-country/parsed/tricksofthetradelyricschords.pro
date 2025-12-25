@@ -1,6 +1,6 @@
 {meta: title Tricks Of The Trade}
 {meta: artist Porter Wagoner}
-{meta: writer Gene Wilson}
+{meta: composer Gene Wilson}
 
 {start_of_verse: Verse 1}
 [D7]Tricks of the trade tricks of the trade

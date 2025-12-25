@@ -1,6 +1,6 @@
 {meta: title Where'd Ya Stay Last Night}
 {meta: artist Webb Pierce}
-{meta: writer Joe Hudgins}
+{meta: composer Joe Hudgins}
 
 {start_of_verse: Verse 1}
 [G]Well you came home this morning 

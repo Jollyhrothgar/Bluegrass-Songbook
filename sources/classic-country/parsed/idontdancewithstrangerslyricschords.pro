@@ -1,6 +1,6 @@
 {meta: title I Don't Dance With Strangers}
 {meta: artist Becky Hobbs}
-{meta: writer Jerry Hawkins and Becky Hobbs}
+{meta: composer Jerry Hawkins and Becky Hobbs}
 
 {start_of_verse: Verse 1}
 [G]The band is playing that old melo[Am]dy

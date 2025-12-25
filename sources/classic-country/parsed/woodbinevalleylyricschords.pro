@@ -1,6 +1,6 @@
 {meta: title Woodbine Valley}
 {meta: artist Sonny James}
-{meta: writer Mark Irish and Ronald Becker}
+{meta: composer Mark Irish and Ronald Becker}
 
 {start_of_verse: Verse 1}
 [G7]I'm on that [C]long long [Em]road to [F]Woodbine [C]Valley 

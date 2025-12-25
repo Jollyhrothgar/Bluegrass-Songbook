@@ -1,6 +1,6 @@
 {meta: title Crown Victoria Custom '51}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Andy Paley, Jerry Lee Burton,}
+{meta: composer Andy Paley, Jerry Lee Burton,}
 
 {start_of_verse: Verse 1}
 [C]Born in Detroit City back in '51

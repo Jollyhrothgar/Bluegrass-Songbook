@@ -1,6 +1,6 @@
 {meta: title I'll Be The Wind}
 {meta: artist Garth Brooks}
-{meta: writer Mark Irwin and Josh Kear}
+{meta: composer Mark Irwin and Josh Kear}
 
 {start_of_verse: Verse 1}
 [Em]You let him lock you away in his prison of [G]sadness

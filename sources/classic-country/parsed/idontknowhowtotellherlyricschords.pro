@@ -1,6 +1,6 @@
 {meta: title I Don’t Know How To Tell Her}
 {meta: artist Gene Watson}
-{meta: writer B. Fischer and Sonny Throckmorton}
+{meta: composer B. Fischer and Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]I don't know how to tell her that she's [F]changed

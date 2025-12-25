@@ -1,6 +1,6 @@
 {meta: title Blessed Assurance}
 {meta: artist Bill Anderson}
-{meta: writer Phoebe P. Knapp and Fanny J. Crosby}
+{meta: composer Phoebe P. Knapp and Fanny J. Crosby}
 
 {start_of_verse: Verse 1}
 [C]This is my story  [F]this is my [C]song

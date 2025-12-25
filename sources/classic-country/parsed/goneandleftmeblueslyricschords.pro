@@ -1,6 +1,6 @@
 {meta: title Gone And Left Me Blues}
 {meta: artist Ernest Tubb}
-{meta: writer Johnny Bond and Jimmy Wakely}
+{meta: composer Johnny Bond and Jimmy Wakely}
 
 {start_of_verse: Verse 1}
 [C]My weary heart for you is [F]crying

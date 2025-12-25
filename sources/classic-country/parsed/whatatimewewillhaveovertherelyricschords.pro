@@ -1,6 +1,6 @@
 {meta: title What a Time We Will Have Over There}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Richard R. Reid and Vivian L. Reid}
+{meta: composer Richard R. Reid and Vivian L. Reid}
 
 {start_of_verse: Verse 1}
 [G]What a time we will have when we [C]cross the misty foam

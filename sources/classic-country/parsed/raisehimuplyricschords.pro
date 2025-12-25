@@ -1,6 +1,6 @@
 {meta: title Raise Him Up}
 {meta: artist Randy Travis}
-{meta: writer Rivers Rutherford and Robb Royer}
+{meta: composer Rivers Rutherford and Robb Royer}
 
 {start_of_verse: Verse 1}
 [G]When I first met His momma [Bm]she was just nineteen

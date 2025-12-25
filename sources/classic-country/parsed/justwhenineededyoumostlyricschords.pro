@@ -1,6 +1,6 @@
 {meta: title Just When I Needed You Most}
 {meta: artist Dolly Parton}
-{meta: writer Randy Van Warmer}
+{meta: composer Randy Van Warmer}
 
 {start_of_verse: Verse 1}
 [G]You packed in the morning I stared out the window

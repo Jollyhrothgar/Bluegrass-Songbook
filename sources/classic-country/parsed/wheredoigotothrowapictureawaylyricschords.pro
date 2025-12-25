@@ -1,6 +1,6 @@
 {meta: title Where Do I Go To Throw A Picture Away}
 {meta: artist Jim Reeves}
-{meta: writer Carl Belew, W.S. Stevenson, Jim Reeves}
+{meta: composer Carl Belew, W.S. Stevenson, Jim Reeves}
 
 {start_of_verse: Verse 1}
 [G]I'm kissing your [D7]picture [G]goodbye

@@ -1,6 +1,6 @@
 {meta: title Dear Judge}
 {meta: artist Ernest Tubb}
-{meta: writer Billy Hughes}
+{meta: composer Billy Hughes}
 
 {start_of_verse: Verse 1}
 [C]The divorce had been granted 

@@ -1,6 +1,6 @@
 {meta: title Smorgasbord}
 {meta: artist Elvis Presley}
-{meta: writer Sid Tepper and Roy C. Bennett}
+{meta: composer Sid Tepper and Roy C. Bennett}
 
 {start_of_verse: Verse 1}
 [G]Some like their women short some like 'em tall

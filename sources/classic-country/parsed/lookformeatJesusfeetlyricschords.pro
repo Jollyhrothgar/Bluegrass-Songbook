@@ -1,6 +1,6 @@
 {meta: title Look For Me At Jesus' Feet}
 {meta: artist The Booth Brothers}
-{meta: writer Squire E. Parsons Jr.}
+{meta: composer Squire E. Parsons Jr.}
 
 {start_of_verse: Verse 1}
 [C]If I leave this world [Em]of [C]sorrow

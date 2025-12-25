@@ -1,6 +1,6 @@
 {meta: title Lazarus And The Rich Man}
 {meta: artist Larry Sparks}
-{meta: writer Connie Leigh}
+{meta: composer Connie Leigh}
 
 {start_of_verse: Verse 1}
 [C]Well a rich man one day heard a [F]poor man a [C]begging

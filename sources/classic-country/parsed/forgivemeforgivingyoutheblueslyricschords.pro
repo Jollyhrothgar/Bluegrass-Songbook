@@ -1,6 +1,6 @@
 {meta: title Every Now And Then}
 {meta: artist Mel Tillis}
-{meta: writer Jerry House}
+{meta: composer Jerry House}
 
 {start_of_verse: Verse 1}
 [G]I’m afraid of to[G7]morrow and [C]ashamed of today

@@ -1,6 +1,6 @@
 {meta: title Hey Loretta}
 {meta: artist Loretta Lynn}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]Well goodbye tubs and clothes lines goodbye pots and [G7]pans

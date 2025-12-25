@@ -1,6 +1,6 @@
 {meta: title Let The Children Pick The Flowers}
 {meta: artist Webb Pierce}
-{meta: writer Robert Daniel Russell}
+{meta: composer Robert Daniel Russell}
 
 {start_of_verse: Verse 1}
 [G]I recall one Sunday [C]morning on the [D7]way to Sunday [G]school

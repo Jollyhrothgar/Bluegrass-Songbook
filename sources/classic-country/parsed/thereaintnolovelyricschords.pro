@@ -1,6 +1,6 @@
 {meta: title There Ain't No Love}
 {meta: artist Reba McEntire}
-{meta: writer Pat McManus}
+{meta: composer Pat McManus}
 
 {start_of_verse: Verse 1}
 There Ain't No Love

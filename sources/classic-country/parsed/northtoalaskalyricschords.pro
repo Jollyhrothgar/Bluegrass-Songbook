@@ -1,6 +1,6 @@
 {meta: title North To Alaska}
 {meta: artist Johnny Horton}
-{meta: writer Mike Phillips}
+{meta: composer Mike Phillips}
 
 {start_of_verse: Verse 1}
 [C]Way up north (north to Alaska) way up north (north to [G7]Alaska)

@@ -1,6 +1,6 @@
 {meta: title Would You Catch A Falling Star}
 {meta: artist John Anderson}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]You know the crowd was very [F]small for a country music [C]show

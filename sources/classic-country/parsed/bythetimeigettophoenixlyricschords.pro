@@ -1,6 +1,6 @@
 {meta: title By The Time I Get To Phoenix}
 {meta: artist Glen Campbell}
-{meta: writer Jim Webb}
+{meta: composer Jim Webb}
 
 {start_of_verse: Verse 1}
 [Dm]By the time I get to Phoenix she'll be [C]rising

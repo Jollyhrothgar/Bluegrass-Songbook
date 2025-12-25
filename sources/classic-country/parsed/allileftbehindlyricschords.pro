@@ -1,6 +1,6 @@
 {meta: title All I Left Behind}
 {meta: artist Emmylou Harris}
-{meta: writer Emmylou Harris and Anna McCarrigle}
+{meta: composer Emmylou Harris and Anna McCarrigle}
 
 {start_of_verse: Verse 1}
 [Em]All I left behind should come [C]as no [G]surprise

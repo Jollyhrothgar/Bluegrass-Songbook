@@ -1,6 +1,6 @@
 {meta: title Carry Me Back To Old Virginia}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Glen Powell and James Bland}
+{meta: composer Glen Powell and James Bland}
 
 {start_of_verse: Verse 1}
 [G]Carry me back to [C]old Vir[G]ginia

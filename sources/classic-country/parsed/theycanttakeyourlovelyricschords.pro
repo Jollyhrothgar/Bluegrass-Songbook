@@ -1,6 +1,6 @@
 {meta: title They Can't Take Your Love}
 {meta: artist Kitty Wells}
-{meta: writer May Hawks}
+{meta: composer May Hawks}
 
 {start_of_verse: Verse 1}
 [C]They may try to plan my life as people often [F]do

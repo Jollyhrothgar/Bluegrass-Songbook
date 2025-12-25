@@ -1,6 +1,6 @@
 {meta: title I'm Watching My Watch}
 {meta: artist Johnny Tillotson}
-{meta: writer Robert Sherman and George Weiss}
+{meta: composer Robert Sherman and George Weiss}
 
 {start_of_verse: Verse 1}
 [C]I'm watching my [G]watch it's a [C]heartache after [A7]ten

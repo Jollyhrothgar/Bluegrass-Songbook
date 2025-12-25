@@ -1,6 +1,6 @@
 {meta: title Old Fashioned Preacher}
 {meta: artist Lester Flatt}
-{meta: writer Jerry Organ and Gladys Stacey}
+{meta: composer Jerry Organ and Gladys Stacey}
 
 {start_of_verse: Verse 1}
 [G]My heart is longing now for the [C]days of long [G]ago

@@ -1,6 +1,6 @@
 {meta: title Invisible Tears}
 {meta: artist Sonny James}
-{meta: writer Ned Miller and Susan Miller}
+{meta: composer Ned Miller and Susan Miller}
 
 {start_of_verse: Verse 1}
 [G]Invisible tears [Am]in my eyes   incredible [D7]pain in my [G]heart

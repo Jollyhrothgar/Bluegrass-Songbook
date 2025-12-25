@@ -1,6 +1,6 @@
 {meta: title You Can't Be A Beacon}
 {meta: artist Donna Fargo}
-{meta: writer Marty Cooper}
+{meta: composer Marty Cooper}
 
 {start_of_verse: Verse 1}
 [C]You can't be a beacon if your light don't shine

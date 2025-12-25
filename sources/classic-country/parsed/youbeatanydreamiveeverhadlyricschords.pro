@@ -1,6 +1,6 @@
 {meta: title You Beat Any Dream I've Ever Had}
 {meta: artist Johnny Rodriguez}
-{meta: writer Billy Sherrill, Glenn Sutton, Johnny Rodriguez}
+{meta: composer Billy Sherrill, Glenn Sutton, Johnny Rodriguez}
 
 {start_of_verse: Verse 1}
 [C]I used to go to bed at night and [F]dream of movie [C]queens

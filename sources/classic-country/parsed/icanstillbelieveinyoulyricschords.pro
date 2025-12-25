@@ -1,6 +1,6 @@
 {meta: title I Can Still Believe In You}
 {meta: artist Tammy Wynette}
-{meta: writer Mike Kosser and Steve Pippin}
+{meta: composer Mike Kosser and Steve Pippin}
 
 {start_of_verse: Verse 1}
 [G]The weatherman [D7]promised me a [C]bright [D7]sunshiny [G]day

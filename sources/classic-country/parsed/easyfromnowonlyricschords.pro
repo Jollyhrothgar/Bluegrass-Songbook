@@ -1,6 +1,6 @@
 {meta: title Easy From Now On}
 {meta: artist Emmylou Harris}
-{meta: writer Susanna Clark &amp; Carlene Carter}
+{meta: composer Susanna Clark &amp; Carlene Carter}
 
 {start_of_verse: Verse 1}
 [C]There he goes gone [F]again

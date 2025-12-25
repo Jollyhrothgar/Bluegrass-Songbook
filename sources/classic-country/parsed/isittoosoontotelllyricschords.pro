@@ -1,6 +1,6 @@
 {meta: title Is It Too Soon To Tell}
 {meta: artist Marsha Thornton}
-{meta: writer Michael Noble, Jeff Pennig, Marsha Thornton}
+{meta: composer Michael Noble, Jeff Pennig, Marsha Thornton}
 
 {start_of_verse: Verse 1}
 [G]Soft sudden breeze [B7]magnolia trees a [E7]new moon above

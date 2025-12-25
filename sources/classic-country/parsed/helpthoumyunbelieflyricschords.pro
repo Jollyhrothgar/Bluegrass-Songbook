@@ -1,6 +1,6 @@
 {meta: title Help Thou My Unbelief}
 {meta: artist Ray Price}
-{meta: writer Suzy Hamblen}
+{meta: composer Suzy Hamblen}
 
 {start_of_verse: Verse 1}
 [D7]The [G]wondrous gift that Jesus offers [Am]me  [D7]

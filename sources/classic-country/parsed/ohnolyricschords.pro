@@ -1,6 +1,6 @@
 {meta: title Oh No}
 {meta: artist Carl Smith}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]Oh no don't start me fallin' in love again

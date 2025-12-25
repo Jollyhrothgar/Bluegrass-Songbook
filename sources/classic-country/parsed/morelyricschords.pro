@@ -1,6 +1,6 @@
 {meta: title More}
 {meta: artist Brenda Lee}
-{meta: writer Norman Newell, Riziero Ortolani, Nino Oliviero}
+{meta: composer Norman Newell, Riziero Ortolani, Nino Oliviero}
 
 {start_of_verse: Verse 1}
 [G]More than the [Em]greatest love the [Am]world has [D7]known

@@ -1,6 +1,6 @@
 {meta: title Born To Love Me}
 {meta: artist Kris Kristofferson}
-{meta: writer Bob Morrison}
+{meta: composer Bob Morrison}
 
 {start_of_verse: Verse 1}
 [C]Not many'd say your handsome [F] cause they don't realize 

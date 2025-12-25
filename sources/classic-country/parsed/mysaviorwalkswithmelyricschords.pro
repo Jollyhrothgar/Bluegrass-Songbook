@@ -1,6 +1,6 @@
 {meta: title My Savior Walks With Me}
 {meta: artist Jamie Dailey and Darrin Vincent}
-{meta: writer Jamie Dailey and Doyle Lawson}
+{meta: composer Jamie Dailey and Doyle Lawson}
 
 {start_of_verse: Verse 1}
 [C]Sometimes in my life I [F]get so dis[C]couraged

@@ -1,6 +1,6 @@
 {meta: title I Don't Need To Know Right Now}
 {meta: artist Johnny Paycheck}
-{meta: writer David Astri and Charles Deskin}
+{meta: composer David Astri and Charles Deskin}
 
 {start_of_verse: Verse 1}
 [G7]I've seen the [C]glow of the [G7]candle in your [C]eyes

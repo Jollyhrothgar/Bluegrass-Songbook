@@ -1,6 +1,6 @@
 {meta: title Waltz Of The Wind}
 {meta: artist Hank Williams}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]You were there in my arms [F]alone in the [C]moonlight

@@ -1,6 +1,6 @@
 {meta: title Wanderin' Man}
 {meta: artist Jeannie Seely}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [F](A woman can't [G7]hold a wanderin' [C]man)

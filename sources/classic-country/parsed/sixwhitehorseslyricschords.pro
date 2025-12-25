@@ -1,6 +1,6 @@
 {meta: title Six White Horses}
 {meta: artist Tommy Cash}
-{meta: writer Larry Murray}
+{meta: composer Larry Murray}
 
 {start_of_verse: Verse 1}
 [C]Mmm some folks drink and some folks smoke 

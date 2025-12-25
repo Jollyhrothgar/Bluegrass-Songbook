@@ -1,6 +1,6 @@
 {meta: title There Goes My Heart}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo and Kostas Lazarides}
+{meta: composer Raul Malo and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [C]There goes my heart breaking in [G7]two

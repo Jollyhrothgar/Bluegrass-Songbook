@@ -1,6 +1,6 @@
 {meta: title You're Easy To Remember}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
-{meta: writer Eddie Hollowell and James O'Gwynn}
+{meta: composer Eddie Hollowell and James O'Gwynn}
 
 {start_of_verse: Verse 1}
 [C]I could forget the love I gave you 

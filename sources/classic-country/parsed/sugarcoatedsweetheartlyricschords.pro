@@ -1,6 +1,6 @@
 {meta: title Sugar Coated Sweetheart}
 {meta: artist Jimmy Dean}
-{meta: writer Kay Adelman and Jewel Kibbler}
+{meta: composer Kay Adelman and Jewel Kibbler}
 
 {start_of_verse: Verse 1}
 [C]You’re a sugar coated [F]sweet[C]heart you’re so sweet for a [G7]while

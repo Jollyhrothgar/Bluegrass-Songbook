@@ -1,6 +1,6 @@
 {meta: title Early In The Morning}
 {meta: artist Buddy Holly}
-{meta: writer Bobby Darin and Woody Harris}
+{meta: composer Bobby Darin and Woody Harris}
 
 {start_of_verse: Verse 1}
 [C]Well you're gonna miss me

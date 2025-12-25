@@ -1,6 +1,6 @@
 {meta: title Stop Me If You've Heard This One Before}
 {meta: artist Ernest Tubb}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [G]Can I buy you a drink you look [C]lonely 

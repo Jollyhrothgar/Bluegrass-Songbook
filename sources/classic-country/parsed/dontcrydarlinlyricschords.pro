@@ -1,6 +1,6 @@
 {meta: title Don't Cry Darlin'}
 {meta: artist David Allan Coe}
-{meta: writer Dean Dillon}
+{meta: composer Dean Dillon}
 
 {start_of_verse: Verse 1}
 [C]Drunk totally [Em]drained

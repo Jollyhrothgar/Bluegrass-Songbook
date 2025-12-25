@@ -1,6 +1,6 @@
 {meta: title Skip a Rope}
 {meta: artist George Jones}
-{meta: writer Jack Moran and Glenn Tubb}
+{meta: composer Jack Moran and Glenn Tubb}
 
 {start_of_verse: Verse 1}
 [C]Skip a Rope  Skip [G7]a Rope 

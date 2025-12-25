@@ -1,6 +1,6 @@
 {meta: title Homecoming}
 {meta: artist Bobby Bare}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]I guess I should have written dad to let you know that I was coming home [C7]

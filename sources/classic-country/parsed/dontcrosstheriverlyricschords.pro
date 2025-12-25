@@ -1,6 +1,6 @@
 {meta: title Don't Cross The River}
 {meta: artist Garth Brooks}
-{meta: writer Dan Peek}
+{meta: composer Dan Peek}
 
 {start_of_verse: Verse 1}
 [Em]There's a little girl out [D7]lying on her own

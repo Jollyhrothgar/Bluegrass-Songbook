@@ -1,6 +1,6 @@
 {meta: title Easy As Pie}
 {meta: artist Billy Crash Craddock}
-{meta: writer Rory Bourke, Gene Dobbins, Johnny Wilson}
+{meta: composer Rory Bourke, Gene Dobbins, Johnny Wilson}
 
 {start_of_verse: Verse 1}
 [D7]She meant [G]nothing to me [C][Em]just another one [D7]night [G]stand 

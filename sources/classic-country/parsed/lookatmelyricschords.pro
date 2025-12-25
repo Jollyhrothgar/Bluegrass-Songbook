@@ -1,6 +1,6 @@
 {meta: title Look At Me}
 {meta: artist Buddy Holly}
-{meta: writer Buddy Holly, Jerry Allison, Norman Petty}
+{meta: composer Buddy Holly, Jerry Allison, Norman Petty}
 
 {start_of_verse: Verse 1}
 [G]Hey-hey [C]look at me and [G]tell me

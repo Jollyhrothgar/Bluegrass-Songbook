@@ -1,6 +1,6 @@
 {meta: title Don't Take Your Love Away From Me}
 {meta: artist Randy Travis}
-{meta: writer Verlon Thompson and Mark D. Sanders}
+{meta: composer Verlon Thompson and Mark D. Sanders}
 
 {start_of_verse: Verse 1}
 [C]Well I [F]pray I'm [C]wrong

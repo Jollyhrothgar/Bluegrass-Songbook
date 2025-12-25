@@ -1,6 +1,6 @@
 {meta: title Lobby of Your Heart}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray and Hank Thompson}
+{meta: composer Billy Gray and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]I didn't have to be [D7]thrown in the [G]dungeon

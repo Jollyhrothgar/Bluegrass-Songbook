@@ -1,6 +1,6 @@
 {meta: title The Red River Rose}
 {meta: artist Red Steagall}
-{meta: writer Ken Alford, Danny Steagall, Red Steagall}
+{meta: composer Ken Alford, Danny Steagall, Red Steagall}
 
 {start_of_verse: Verse 1}
 [C]On a fence line north of Estelline the strangest sight I'd ever seen

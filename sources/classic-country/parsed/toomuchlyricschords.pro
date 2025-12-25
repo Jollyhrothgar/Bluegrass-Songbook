@@ -1,6 +1,6 @@
 {meta: title Too Much}
 {meta: artist Elvis Presley}
-{meta: writer Bernard Weinman and Lee Rosenberg}
+{meta: composer Bernard Weinman and Lee Rosenberg}
 
 {start_of_verse: Verse 1}
 [G]Well honey I love you too much

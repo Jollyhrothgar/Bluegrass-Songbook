@@ -1,6 +1,6 @@
 {meta: title I'm Looking Over A Four Leaf Clover}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Mort Dixon and Harry Woods}
+{meta: composer Mort Dixon and Harry Woods}
 
 {start_of_verse: Verse 1}
 [C]I'm looking over a four leaf clover

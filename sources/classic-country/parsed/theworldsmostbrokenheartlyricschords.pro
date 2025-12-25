@@ -1,6 +1,6 @@
 {meta: title The World's Most Broken Heart}
 {meta: artist Tammy Wynette}
-{meta: writer Troy Seals and Fred LaBour}
+{meta: composer Troy Seals and Fred LaBour}
 
 {start_of_verse: Verse 1}
 [C]Step right this way [F]here's our main a[C]ttraction

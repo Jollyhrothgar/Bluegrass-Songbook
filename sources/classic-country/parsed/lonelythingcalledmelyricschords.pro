@@ -1,6 +1,6 @@
 {meta: title Lonely Thing Called Me}
 {meta: artist Roy Drusky}
-{meta: writer Phil Parr and Herby Treece}
+{meta: composer Phil Parr and Herby Treece}
 
 {start_of_verse: Verse 1}
 [C]My heart is yours I just use it to love [D7]you

@@ -1,6 +1,6 @@
 {meta: title Take Up Thy Cross}
 {meta: artist Wilburn Brothers}
-{meta: writer Alfred Ackley}
+{meta: composer Alfred Ackley}
 
 {start_of_verse: Verse 1}
 [C]I walked one day along a country [G7]road

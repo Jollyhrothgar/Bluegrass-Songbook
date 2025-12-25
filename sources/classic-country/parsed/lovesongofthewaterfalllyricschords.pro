@@ -1,6 +1,6 @@
 {meta: title Love Song Of The Waterfall}
 {meta: artist Slim Whitman}
-{meta: writer Bernard Barnes and Carl Winge}
+{meta: composer Bernard Barnes and Carl Winge}
 
 {start_of_verse: Verse 1}
 [C][F][C]Ooh...do-do-do-ooh-ooh

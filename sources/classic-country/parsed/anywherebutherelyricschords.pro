@@ -1,6 +1,6 @@
 {meta: title Anywhere But Here}
 {meta: artist Sammy Kershaw}
-{meta: writer Bob DiPiero, Buddy Cannon, John S. Sherrill}
+{meta: composer Bob DiPiero, Buddy Cannon, John S. Sherrill}
 
 {start_of_verse: Verse 1}
 [G]Hey mister what time does the next bus [D7]leave

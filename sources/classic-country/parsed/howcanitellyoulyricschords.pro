@@ -1,6 +1,6 @@
 {meta: title How Can I Tell You}
 {meta: artist Slim Whitman}
-{meta: writer Jack Rhodes, Dick Reynolds, Jerry Crist}
+{meta: composer Jack Rhodes, Dick Reynolds, Jerry Crist}
 
 {start_of_verse: Verse 1}
 [C]How can I [F]tell you [C]how much [F]I love [C]you

@@ -1,6 +1,6 @@
 {meta: title A Time To Sing}
 {meta: artist Hank Williams Jr.}
-{meta: writer John Scoggins}
+{meta: composer John Scoggins}
 
 {start_of_verse: Verse 1}
 [G]The waters of a [D7]river [G]flow down[D7]stream sometimes stand [G]still

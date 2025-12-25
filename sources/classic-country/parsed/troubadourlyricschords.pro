@@ -1,6 +1,6 @@
 {meta: title Troubadour}
 {meta: artist George Strait}
-{meta: writer Monty Holmes and Leslie Winn Satcher}
+{meta: composer Monty Holmes and Leslie Winn Satcher}
 
 {start_of_verse: Verse 1}
 [D7]I still [G]feel twenty five  [Em]most of the [G]time

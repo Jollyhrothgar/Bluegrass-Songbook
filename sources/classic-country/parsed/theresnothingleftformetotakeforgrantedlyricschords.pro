@@ -1,6 +1,6 @@
 {meta: title There's Nothing Left For Me To Take For Granted}
 {meta: artist John Anderson}
-{meta: writer John Anderson and Lionel Delmore}
+{meta: composer John Anderson and Lionel Delmore}
 
 {start_of_verse: Verse 1}
 [C]There's nothing left for [F]me to take for [C]granted

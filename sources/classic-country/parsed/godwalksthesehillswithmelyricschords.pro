@@ -1,6 +1,6 @@
 {meta: title God Walks These Hills With Me}
 {meta: artist Porter Wagoner}
-{meta: writer Vic McAlpin and Marvin Hughes}
+{meta: composer Vic McAlpin and Marvin Hughes}
 
 {start_of_verse: Verse 1}
 [G]We all have treasures we [C]call our [G]own

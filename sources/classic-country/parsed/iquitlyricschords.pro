@@ -1,6 +1,6 @@
 {meta: title I Quit}
 {meta: artist Vince Gill}
-{meta: writer Max D. Barnes and Vince Gill}
+{meta: composer Max D. Barnes and Vince Gill}
 
 {start_of_verse: Verse 1}
 [G]When your said you were [D7]leaving 

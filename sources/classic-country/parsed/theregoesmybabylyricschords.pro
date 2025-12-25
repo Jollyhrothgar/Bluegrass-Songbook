@@ -1,6 +1,6 @@
 {meta: title There Goes My Baby}
 {meta: artist Ricky Nelson}
-{meta: writer James Kirkland and Gary Burton}
+{meta: composer James Kirkland and Gary Burton}
 
 {start_of_verse: Verse 1}
 [C]There goes my baby going for a ride

@@ -1,6 +1,6 @@
 {meta: title Enclosed One Broken Heart}
 {meta: artist Eddy Arnold}
-{meta: writer Sadie Nordin Sallis and Eddy Arnold}
+{meta: composer Sadie Nordin Sallis and Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [G7]Enclosed you'll find one broken [C]heart

@@ -1,6 +1,6 @@
 {meta: title You've Got What It Takes}
 {meta: artist Anne Murray}
-{meta: writer Clyde Otis and Murray Stein}
+{meta: composer Clyde Otis and Murray Stein}
 
 {start_of_verse: Verse 1}
 [G]You don't drive a big black car

@@ -1,6 +1,6 @@
 {meta: title Wonderful Tonight}
 {meta: artist Johnny Duncan}
-{meta: writer Eric Clapton}
+{meta: composer Eric Clapton}
 
 {start_of_verse: Verse 1}
 [C]It's late in the even[G7]ing[F] 

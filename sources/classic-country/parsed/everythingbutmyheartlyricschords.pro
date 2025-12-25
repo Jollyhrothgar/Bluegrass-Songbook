@@ -1,6 +1,6 @@
 {meta: title Everything But My Heart}
 {meta: artist Reba McEntire}
-{meta: writer Troy Seals and Graham Lyle}
+{meta: composer Troy Seals and Graham Lyle}
 
 {start_of_verse: Verse 1}
 [C]The bed is cold and empty in the [G7]morning light

@@ -1,6 +1,6 @@
 {meta: title Out Of The Blue}
 {meta: artist Reba McEntire}
-{meta: writer Byron Hill and Robert Johnson}
+{meta: composer Byron Hill and Robert Johnson}
 
 {start_of_verse: Verse 1}
 [C]Out of the [Em]blue[Dm]  I needed some[G7]one to take [C]me

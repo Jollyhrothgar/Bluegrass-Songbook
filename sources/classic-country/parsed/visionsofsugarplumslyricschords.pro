@@ -1,6 +1,6 @@
 {meta: title Visions Of Sugar Plums}
 {meta: artist Glen Campbell}
-{meta: writer Jerry Fuller and Glen Campbell}
+{meta: composer Jerry Fuller and Glen Campbell}
 
 {start_of_verse: Verse 1}
 [Am]When I want to drop out of [C]reality I cop out

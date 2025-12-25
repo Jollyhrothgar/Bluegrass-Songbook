@@ -1,6 +1,6 @@
 {meta: title You're Stronger Than Me}
 {meta: artist Patsy Cline}
-{meta: writer Hank Cockran and Jimmy Key}
+{meta: composer Hank Cockran and Jimmy Key}
 
 {start_of_verse: Verse 1}
 [G]If you are sincere when you [C]say you don't [D7]care 

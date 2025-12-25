@@ -1,6 +1,6 @@
 {meta: title The Leaves Mustn't Fall}
 {meta: artist Lacy J. Dalton}
-{meta: writer Dorothy Sebastian and Jack Kenney}
+{meta: composer Dorothy Sebastian and Jack Kenney}
 
 {start_of_verse: Verse 1}
 [C]The autumn leaves were falling

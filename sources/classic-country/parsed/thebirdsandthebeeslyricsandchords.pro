@@ -1,6 +1,6 @@
 {meta: title The Birds And The Bees}
 {meta: artist Brenda Lee}
-{meta: writer Barry Stuart}
+{meta: composer Barry Stuart}
 
 {start_of_verse: Verse 1}
 [C]Let me tell you bout the birds and the bees

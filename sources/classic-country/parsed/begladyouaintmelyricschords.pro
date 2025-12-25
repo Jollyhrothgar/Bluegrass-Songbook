@@ -1,6 +1,6 @@
 {meta: title Be Glad You Ain't Me}
 {meta: artist Porter Wagoner}
-{meta: writer Dave Estes and Porter Wagoner}
+{meta: composer Dave Estes and Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]If you've never [F]laid a[C]wake at night and [F]prayed to be set [C]free

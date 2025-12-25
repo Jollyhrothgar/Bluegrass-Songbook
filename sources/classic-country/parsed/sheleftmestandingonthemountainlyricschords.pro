@@ -1,6 +1,6 @@
 {meta: title She Left Me Standing On The Mountain}
 {meta: artist Jim and Jesse}
-{meta: writer Alton Delmore}
+{meta: composer Alton Delmore}
 
 {start_of_verse: Verse 1}
 [G]Darling will you marry me I asked a maiden fair

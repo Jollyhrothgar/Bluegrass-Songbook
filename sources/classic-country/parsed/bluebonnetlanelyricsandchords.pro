@@ -1,6 +1,6 @@
 {meta: title Blue Bonnet Lane}
 {meta: artist J.D. Crowe}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]In my memories there [C]lingers

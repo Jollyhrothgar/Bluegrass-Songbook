@@ -1,6 +1,6 @@
 {meta: title Back To The Simple Things}
 {meta: artist Don Williams}
-{meta: writer Jennifer Hanson, Mark Nesler, Marty Dodson}
+{meta: composer Jennifer Hanson, Mark Nesler, Marty Dodson}
 
 {start_of_verse: Verse 1}
 [C]It' so [G]easy to get all [Bm]caught up

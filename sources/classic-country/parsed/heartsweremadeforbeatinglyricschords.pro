@@ -1,6 +1,6 @@
 {meta: title Hearts Were Made For Beating}
 {meta: artist Billy Walker}
-{meta: writer Lamar Morris and Warren Keith}
+{meta: composer Lamar Morris and Warren Keith}
 
 {start_of_verse: Verse 1}
 [C]God made man and then God made a [F]woman

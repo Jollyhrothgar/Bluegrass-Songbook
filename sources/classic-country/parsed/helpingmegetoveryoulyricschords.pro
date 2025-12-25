@@ -1,6 +1,6 @@
 {meta: title Helping Me Get Over You}
 {meta: artist Travis Tritt}
-{meta: writer Travis Tritt and Lari White}
+{meta: composer Travis Tritt and Lari White}
 
 {start_of_verse: Verse 1}
 [C]You ask who's lying in my [F]bed 

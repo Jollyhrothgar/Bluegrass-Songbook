@@ -1,6 +1,6 @@
 {meta: title Modern Day Romance}
 {meta: artist Nitty Gritty Dirt Band}
-{meta: writer Dan Tyler and Kix Brooks}
+{meta: composer Dan Tyler and Kix Brooks}
 
 {start_of_verse: Verse 1}
 [G]We met on the [C]highway she flagged me [G]down

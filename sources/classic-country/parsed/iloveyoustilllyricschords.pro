@@ -1,6 +1,6 @@
 {meta: title I Love You Still}
 {meta: artist Don Gibson}
-{meta: writer Melvin Endsley}
+{meta: composer Melvin Endsley}
 
 {start_of_verse: Verse 1}
 [C]Although you broke my heart into

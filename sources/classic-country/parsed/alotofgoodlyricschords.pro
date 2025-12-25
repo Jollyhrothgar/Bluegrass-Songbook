@@ -1,6 +1,6 @@
 {meta: title A Lot Of Good}
 {meta: artist Waylon Jennings}
-{meta: writer Troy Seals, Buddy Emmons, Waylon Jennings}
+{meta: composer Troy Seals, Buddy Emmons, Waylon Jennings}
 
 {start_of_verse: Verse 1}
 [C]As I watched the [F]tail lights disa[C]ppear

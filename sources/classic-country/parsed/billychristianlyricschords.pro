@@ -1,6 +1,6 @@
 {meta: title Billy Christian}
 {meta: artist Statler Brothers}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [D7]If you're listenin' Billy Christian come on [G]home 

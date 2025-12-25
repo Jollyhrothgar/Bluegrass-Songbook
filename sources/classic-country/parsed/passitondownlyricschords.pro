@@ -1,6 +1,6 @@
 {meta: title Pass It On Down}
 {meta: artist Alabama}
-{meta: writer Teddy Gentry, Randy Owen, William Robinson}
+{meta: composer Teddy Gentry, Randy Owen, William Robinson}
 
 {start_of_verse: Verse 1}
 [G]We live in the land of [F]plenty

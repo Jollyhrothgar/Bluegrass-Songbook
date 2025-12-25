@@ -1,6 +1,6 @@
 {meta: title Hook In My Heart}
 {meta: artist Charley Pride}
-{meta: writer Kevin M. Wicker}
+{meta: composer Kevin M. Wicker}
 
 {start_of_verse: Verse 1}
 [C]I’m just an ordinary average guy

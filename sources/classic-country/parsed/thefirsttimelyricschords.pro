@@ -1,6 +1,6 @@
 {meta: title The First Time}
 {meta: artist Cal Smith}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [G]No rose will ever seems as red  

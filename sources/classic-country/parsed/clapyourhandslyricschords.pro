@@ -1,6 +1,6 @@
 {meta: title Clap Your Hands}
 {meta: artist Ronnie Milsap}
-{meta: writer Kent M. Robbins}
+{meta: composer Kent M. Robbins}
 
 {start_of_verse: Verse 1}
 [C]Everyone who came to hear the [F]music

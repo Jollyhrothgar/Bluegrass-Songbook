@@ -1,6 +1,6 @@
 {meta: title Clinging Vine}
 {meta: artist Sonny James}
-{meta: writer Earl Shuman, Leon Carr, Grace Lane}
+{meta: composer Earl Shuman, Leon Carr, Grace Lane}
 
 {start_of_verse: Verse 1}
 [G]Cling to me clinging [C]vine just to [D7]me clinging [G]vine

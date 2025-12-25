@@ -1,6 +1,6 @@
 {meta: title Just What I Had In Mind}
 {meta: artist Faron Young}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]I come home at the end of the [F]day

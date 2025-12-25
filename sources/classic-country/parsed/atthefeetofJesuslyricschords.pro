@@ -1,6 +1,6 @@
 {meta: title At The Feet Of Jesus}
 {meta: artist Margo Smith}
-{meta: writer Jerry Salley and Joel Lindsey}
+{meta: composer Jerry Salley and Joel Lindsey}
 
 {start_of_verse: Verse 1}
 [G]Throughout the years the [C]church 

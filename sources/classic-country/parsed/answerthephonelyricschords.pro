@@ -1,6 +1,6 @@
 {meta: title Answer The Phone}
 {meta: artist Darrell McCall}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]I’ve called and I’ve called you [F]but each time I [C]phone

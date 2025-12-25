@@ -1,6 +1,6 @@
 {meta: title It's All Between the Lines}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Owen Perry}
+{meta: composer Webb Pierce and Owen Perry}
 
 {start_of_verse: Verse 1}
 [C]I have this [G7]letter that you [F]wr-ote [C]me

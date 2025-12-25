@@ -1,5 +1,5 @@
 {meta: artist John Denver}
-{meta: writer Steve Weisberg}
+{meta: composer Steve Weisberg}
 
 {start_of_verse: Verse 1}
 [F]Tall in the [C]saddle we [G7]spend Christmas [Am]Day

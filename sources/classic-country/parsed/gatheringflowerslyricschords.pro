@@ -1,6 +1,6 @@
 {meta: title Gathering Flowers}
 {meta: artist Kitty Wells}
-{meta: writer Marvin E. Baumgardner}
+{meta: composer Marvin E. Baumgardner}
 
 {start_of_verse: Verse 1}
 [C]Death is an angel sent [F]down from [C]above

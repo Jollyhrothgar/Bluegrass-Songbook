@@ -1,6 +1,6 @@
 {meta: title In His Arms I'm Not Afraid}
 {meta: artist The Isaacs}
-{meta: writer Homer Eanes}
+{meta: composer Homer Eanes}
 
 {start_of_verse: Verse 1}
 [C]Not afraid to [F]bid this world good[C]bye 

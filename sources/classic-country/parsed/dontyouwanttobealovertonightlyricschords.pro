@@ -1,6 +1,6 @@
 {meta: title Don't You Want To Be A Lover Tonight}
 {meta: artist Tanya Tucker}
-{meta: writer Sterling Whipple}
+{meta: composer Sterling Whipple}
 
 {start_of_verse: Verse 1}
 [C]It's the time of night when lovers head for [F]home

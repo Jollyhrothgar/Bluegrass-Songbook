@@ -1,6 +1,6 @@
 {meta: title Fair and Tender Ladies}
 {meta: artist Carter Sisters}
-{meta: writer Maybelle Carter}
+{meta: composer Maybelle Carter}
 
 {start_of_verse: Verse 1}
 [C]Come all ye fair and tender ladies

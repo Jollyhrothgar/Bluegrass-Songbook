@@ -1,6 +1,6 @@
 {meta: title Follow Me}
 {meta: artist Ernest Tubb}
-{meta: writer Sandra Adlon, Virginia Balmer, Leon Rhodes}
+{meta: composer Sandra Adlon, Virginia Balmer, Leon Rhodes}
 
 {start_of_verse: Verse 1}
 [G]At the end of the day my [D7]heart's filled with [G]despair

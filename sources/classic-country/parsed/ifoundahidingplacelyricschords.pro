@@ -1,6 +1,6 @@
 {meta: title I Found A Hiding Place}
 {meta: artist Bill Monroe}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [C]High on that lonesome road to heavens blessed abode

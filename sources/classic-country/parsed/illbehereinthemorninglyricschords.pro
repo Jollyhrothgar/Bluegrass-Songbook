@@ -1,6 +1,6 @@
 {meta: title I'll Be Here In The Morning}
 {meta: artist Don Williams}
-{meta: writer Townes Van Zandt}
+{meta: composer Townes Van Zandt}
 
 {start_of_verse: Verse 1}
 [Am]There's no [C]stronger wind than the one 

@@ -1,6 +1,6 @@
 {meta: title Move To Town In The Fall}
 {meta: artist Vernon Oxford}
-{meta: writer Jeff Clay}
+{meta: composer Jeff Clay}
 
 {start_of_verse: Verse 1}
 [C]I pick cotton by the ton

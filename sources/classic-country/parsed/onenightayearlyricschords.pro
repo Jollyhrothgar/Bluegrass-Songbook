@@ -1,6 +1,6 @@
 {meta: title One Night A Year}
 {meta: artist Barbara Mandrell}
-{meta: writer C Bannon Royal, John Bettis, Royal C Bannon}
+{meta: composer C Bannon Royal, John Bettis, Royal C Bannon}
 
 {start_of_verse: Verse 1}
 [C]Once again the windows shine with pretty lights

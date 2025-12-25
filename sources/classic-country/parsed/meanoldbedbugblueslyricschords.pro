@@ -1,6 +1,6 @@
 {meta: title Mean Old Bed Bug Blues}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ernest Tubb}
+{meta: composer Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]Did you ever see a bed bug that looks just like a whale

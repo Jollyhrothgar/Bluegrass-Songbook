@@ -1,6 +1,6 @@
 {meta: title Promises}
 {meta: artist Randy Travis}
-{meta: writer John Lindley and Randy Travis}
+{meta: composer John Lindley and Randy Travis}
 
 {start_of_verse: Verse 1}
 [C]Cheap perfume and painted faces fallin' angels fill the places

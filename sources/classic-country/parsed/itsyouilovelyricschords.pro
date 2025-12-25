@@ -1,6 +1,6 @@
 {meta: title It’s You I Love}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Fats Domino}
+{meta: composer Dave Bartholomew and Fats Domino}
 
 {start_of_verse: Verse 1}
 [C]You know I love you want you to love me [G7]too

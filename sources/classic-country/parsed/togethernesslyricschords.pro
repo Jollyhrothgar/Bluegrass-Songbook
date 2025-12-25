@@ -1,6 +1,6 @@
 {meta: title Togetherness}
 {meta: artist Buck Owens}
-{meta: writer Freddie Hart}
+{meta: composer Freddie Hart}
 
 {start_of_verse: Verse 1}
 [G7]When a [C]lonely boy meets a lonely girl that's to[G7]getherness

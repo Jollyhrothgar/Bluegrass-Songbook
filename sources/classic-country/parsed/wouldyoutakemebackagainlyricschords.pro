@@ -1,6 +1,6 @@
 {meta: title Would You Take Me Back Again}
 {meta: artist Marty Robbins}
-{meta: writer Bobby Sykes}
+{meta: composer Bobby Sykes}
 
 {start_of_verse: Verse 1}
 [G]One too many [G7]times you left me [C]lonely

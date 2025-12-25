@@ -1,6 +1,6 @@
 {meta: title You're Always The One}
 {meta: artist Ferlin Husky}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [G]When my world around me [B7]crumbles when [C]in darkness I [G]stumble

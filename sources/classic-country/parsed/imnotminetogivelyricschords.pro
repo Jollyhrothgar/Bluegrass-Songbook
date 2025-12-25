@@ -1,6 +1,6 @@
 {meta: title I'm Not Mine To Give}
 {meta: artist Tammy Wynette}
-{meta: writer Fred Lehner}
+{meta: composer Fred Lehner}
 
 {start_of_verse: Verse 1}
 [C]I know how you love me [F]you tell me all the time

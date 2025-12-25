@@ -1,6 +1,6 @@
 {meta: title Dixie On My Mind}
 {meta: artist Hank Williams Jr.}
-{meta: writer Hank Williams}
+{meta: composer Hank Williams}
 
 {start_of_verse: Verse 1}
 Dixie On My Mind 

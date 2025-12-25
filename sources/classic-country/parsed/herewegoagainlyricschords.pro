@@ -1,6 +1,6 @@
 {meta: title Here We Go Again}
 {meta: artist George Strait}
-{meta: writer Russell Steagall and Don Lanier}
+{meta: composer Russell Steagall and Don Lanier}
 
 {start_of_verse: Verse 1}
 [G7]Here we [C]go again she's back in [F]town again

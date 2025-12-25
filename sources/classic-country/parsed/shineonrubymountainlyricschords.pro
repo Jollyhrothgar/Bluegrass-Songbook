@@ -1,6 +1,6 @@
 {meta: title Shine On Ruby Mountain}
 {meta: artist Kenny Rogers}
-{meta: writer Kenny Young}
+{meta: composer Kenny Young}
 
 {start_of_verse: Verse 1}
 [G]Shine on [C]Ruby [G]mountain

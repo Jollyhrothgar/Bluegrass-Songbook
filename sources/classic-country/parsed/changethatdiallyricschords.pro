@@ -1,6 +1,6 @@
 {meta: title Change That Dial}
 {meta: artist Marty Robbins}
-{meta: writer Joyce Winters}
+{meta: composer Joyce Winters}
 
 {start_of_verse: Verse 1}
 [C]Change the [F]dial  turn off that [C]song

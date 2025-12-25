@@ -1,6 +1,6 @@
 {meta: title Am I Losing Your Memory Or Mine}
 {meta: artist George Jones}
-{meta: writer D. Kirby and R. Lane}
+{meta: composer D. Kirby and R. Lane}
 
 {start_of_verse: Verse 1}
 [G]Did I wake up this mornin' thinkin' of you 

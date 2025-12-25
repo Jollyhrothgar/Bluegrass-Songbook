@@ -1,6 +1,6 @@
 {meta: title Trail Of Sorrow}
 {meta: artist Reno Brothers}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [G]I know I’m headin’ for a trail of [C]sorrow

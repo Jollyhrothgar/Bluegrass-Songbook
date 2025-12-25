@@ -1,6 +1,6 @@
 {meta: title Let Your Lovin' Do Your Talkin'}
 {meta: artist Ferlin Husky}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G]A let your lovin' do your [D7]talkin'

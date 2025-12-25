@@ -1,6 +1,6 @@
 {meta: title Deep Water}
 {meta: artist Bob Wills}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]I'm  [G7]drifting into deep [G][C]water

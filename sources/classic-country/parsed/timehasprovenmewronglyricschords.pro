@@ -1,6 +1,6 @@
 {meta: title Time Has Proven Me Wrong}
 {meta: artist Hank Williams}
-{meta: writer Hank Williams, Curley Williams and Mel Foree}
+{meta: composer Hank Williams, Curley Williams and Mel Foree}
 
 {start_of_verse: Verse 1}
 [C]There was a time I thought you loved [G7]me

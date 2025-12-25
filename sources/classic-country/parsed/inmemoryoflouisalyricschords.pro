@@ -1,6 +1,6 @@
 {meta: title In Memory Of Louisa}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert and Sonny James}
+{meta: composer Bob Tubert and Sonny James}
 
 {start_of_verse: Verse 1}
 [G7]In [C]memory [G7]of [C]Louisa I save each [F]tear [Dm]I [G7]cry

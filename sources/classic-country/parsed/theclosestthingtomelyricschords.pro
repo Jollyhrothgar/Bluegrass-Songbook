@@ -1,6 +1,6 @@
 {meta: title The Closest Thing To Me}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew and Clyde Pitts}
+{meta: composer Carl Belew and Clyde Pitts}
 
 {start_of_verse: Verse 1}
 [C]I was searching for something 

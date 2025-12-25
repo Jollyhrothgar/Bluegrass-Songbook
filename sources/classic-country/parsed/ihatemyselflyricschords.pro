@@ -1,6 +1,6 @@
 {meta: title I Hate Myself}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ted Vandall}
+{meta: composer Ted Vandall}
 
 {start_of_verse: Verse 1}
 [C]I hate myself [F] for making you [C]cry

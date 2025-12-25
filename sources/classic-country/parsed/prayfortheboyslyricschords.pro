@@ -1,6 +1,6 @@
 {meta: title Pray For The Boys The Bad}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Carter Stanley and Ralph Stanley}
+{meta: composer Carter Stanley and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]Don't for[C]get to often pray for the [G]boys so far away

@@ -1,6 +1,6 @@
 {meta: title Maple Sugar Sweetheart}
 {meta: artist Mac Wiseman}
-{meta: writer Ward Allen and Henry Hank Lariviere}
+{meta: composer Ward Allen and Henry Hank Lariviere}
 
 {start_of_verse: Verse 1}
 [G]Well I left her in the mountains in the golden summertime

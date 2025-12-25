@@ -1,6 +1,6 @@
 {meta: title All My Life}
 {meta: artist Conway Twitty}
-{meta: writer Jesse Harris}
+{meta: composer Jesse Harris}
 
 {start_of_verse: Verse 1}
 [G]Maybe it's the [D7]way you [Em]kiss me [C]or that [G]twinkle in your [D7]eye

@@ -1,6 +1,6 @@
 {meta: title Cora Is Gone}
 {meta: artist Flatt and Scruggs}
-{meta: writer Odell McLeod}
+{meta: composer Odell McLeod}
 
 {start_of_verse: Verse 1}
 [C]The wind through the night is blowing so lonesome

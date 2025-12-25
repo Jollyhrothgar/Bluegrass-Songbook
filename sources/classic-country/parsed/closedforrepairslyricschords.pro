@@ -1,6 +1,6 @@
 {meta: title Closed For Repairs}
 {meta: artist Hank Snow}
-{meta: writer Brad Browne and Bob Wills}
+{meta: composer Brad Browne and Bob Wills}
 
 {start_of_verse: Verse 1}
 [C]I saw a sign out on the [F]highway

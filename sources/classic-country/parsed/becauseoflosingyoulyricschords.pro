@@ -1,6 +1,6 @@
 {meta: title Because Of Losing You}
 {meta: artist Bob Luman}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]This falling out of your love baby [C] will hurt for quite awhile

@@ -1,6 +1,6 @@
 {meta: title Footsteps In The Night}
 {meta: artist Curtis Potter}
-{meta: writer Mel Holt}
+{meta: composer Mel Holt}
 
 {start_of_verse: Verse 1}
 [G7]When [C]you’re all alone up in [F]your room late at [C]night

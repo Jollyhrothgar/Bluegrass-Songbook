@@ -1,6 +1,6 @@
 {meta: title Christmas Island}
 {meta: artist Leon Redbone}
-{meta: writer Lyle Moraine}
+{meta: composer Lyle Moraine}
 
 {start_of_verse: Verse 1}
 [F]Aloha ay  [C]aloha ay [G7]aloha oha [C]ay  [F]   [C]

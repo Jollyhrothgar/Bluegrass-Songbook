@@ -1,6 +1,6 @@
 {meta: title Come Back To Me}
 {meta: artist Carl Smith}
-{meta: writer Sonny James and John Skye}
+{meta: composer Sonny James and John Skye}
 
 {start_of_verse: Verse 1}
 [G]Come back to me when roamin' days are [D7]over

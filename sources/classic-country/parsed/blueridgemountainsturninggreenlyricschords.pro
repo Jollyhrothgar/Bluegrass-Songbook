@@ -1,6 +1,6 @@
 {meta: title Blue Ridge Mountains Turning Green}
 {meta: artist Charley Pride}
-{meta: writer James Lunsford}
+{meta: composer James Lunsford}
 
 {start_of_verse: Verse 1}
 [G]Blue [C]Ridge [D7]Mountains turning [G]green

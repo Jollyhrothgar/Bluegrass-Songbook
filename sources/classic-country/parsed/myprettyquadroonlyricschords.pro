@@ -1,6 +1,6 @@
 {meta: title My Pretty Quadroon}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Fred Howard and Nat Vincent}
+{meta: composer Fred Howard and Nat Vincent}
 
 {start_of_verse: Verse 1}
 [C]Oh my [F]pretty quad[C]roon

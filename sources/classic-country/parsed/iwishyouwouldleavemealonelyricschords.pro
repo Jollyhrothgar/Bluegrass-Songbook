@@ -1,6 +1,6 @@
 {meta: title I Wish You Would Leave Me Alone}
 {meta: artist Vernon Oxford}
-{meta: writer Charlie Craig}
+{meta: composer Charlie Craig}
 
 {start_of_verse: Verse 1}
 [C]If you're only staying for [D7]awhile

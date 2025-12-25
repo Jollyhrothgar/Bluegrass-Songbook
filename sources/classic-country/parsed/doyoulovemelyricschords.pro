@@ -1,6 +1,6 @@
 {meta: title Do You Love Me}
 {meta: artist Jimmy Dean}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]Do you love me do you want me do you [F]feel the way I [C]do

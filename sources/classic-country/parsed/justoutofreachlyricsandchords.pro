@@ -1,6 +1,6 @@
 {meta: title Just Out of Reach}
 {meta: artist Patsy Cline}
-{meta: writer Virgil F. Stewart}
+{meta: composer Virgil F. Stewart}
 
 {start_of_verse: Verse 1}
 [G]Love that runs away from me

@@ -1,6 +1,6 @@
 {meta: title He Little Thinged Her Out Of My Arms}
 {meta: artist Jack Greene}
-{meta: writer Hank Cockran}
+{meta: composer Hank Cockran}
 
 {start_of_verse: Verse 1}
 [C]I brought her a mansion [F]he gave her some flowers

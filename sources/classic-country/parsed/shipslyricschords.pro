@@ -1,6 +1,6 @@
 {meta: title Ships}
 {meta: artist Patty Loveless}
-{meta: writer Gretchen Peters}
+{meta: composer Gretchen Peters}
 
 {start_of_verse: Verse 1}
 [G]Eddie had a few days comin'

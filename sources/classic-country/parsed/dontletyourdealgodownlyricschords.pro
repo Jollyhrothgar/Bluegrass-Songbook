@@ -1,6 +1,6 @@
 {meta: title Don't Let Your Deal Go Down}
 {meta: artist Lester Flatt and Earl Scruggs}
-{meta: writer Gladys Stacey, Louise Certain,}
+{meta: composer Gladys Stacey, Louise Certain,}
 
 {start_of_verse: Verse 1}
 [A7]Oh I've been all around this [D7]whole wide world

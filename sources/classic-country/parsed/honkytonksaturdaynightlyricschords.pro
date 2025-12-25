@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Saturday Night}
 {meta: artist George Strait}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Angels and devils [F]share the same tables

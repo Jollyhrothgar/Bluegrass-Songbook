@@ -1,6 +1,6 @@
 {meta: title I Wonder If I Ever Said Goodbye}
 {meta: artist Johnny Rodriguez}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [G]At times she still comes around

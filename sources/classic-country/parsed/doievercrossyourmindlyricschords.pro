@@ -1,6 +1,6 @@
 {meta: title Do I Ever Cross Your Mind}
 {meta: artist Emmylou Harris}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]Oh sometimes I go walking through fields where we walked

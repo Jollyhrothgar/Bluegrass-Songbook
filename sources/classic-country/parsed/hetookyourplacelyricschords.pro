@@ -1,6 +1,6 @@
 {meta: title He Took Your Place}
 {meta: artist Porter Wagoner}
-{meta: writer Lester Flatt & Earl Scruggs}
+{meta: composer Lester Flatt & Earl Scruggs}
 
 {start_of_verse: Verse 1}
 [C]Upon the cruel tree of [F]Calvary

@@ -1,6 +1,6 @@
 {meta: title If You Ever Come This Way Again}
 {meta: artist Sammy Kershaw}
-{meta: writer Dean Dillon and Donny Kees}
+{meta: composer Dean Dillon and Donny Kees}
 
 {start_of_verse: Verse 1}
 [C]I sure do hate to see you [F]go

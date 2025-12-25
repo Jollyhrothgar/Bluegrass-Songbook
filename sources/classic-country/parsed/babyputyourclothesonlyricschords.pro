@@ -1,6 +1,6 @@
 {meta: title Baby Put Your Clothes On}
 {meta: artist Tracy Byrd}
-{meta: writer Bill Anderson, Paul Overstreet, Buddy Cannon}
+{meta: composer Bill Anderson, Paul Overstreet, Buddy Cannon}
 
 {start_of_verse: Verse 1}
 [C]Baby put your clothes on put on those brand new shoes

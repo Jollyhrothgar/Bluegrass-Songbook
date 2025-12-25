@@ -1,6 +1,6 @@
 {meta: title Loser Makin' Good}
 {meta: artist Red Sovine}
-{meta: writer Shirl Milete}
+{meta: composer Shirl Milete}
 
 {start_of_verse: Verse 1}
 [C]Well I'm a loser makin' good I always knew I [Dm]would

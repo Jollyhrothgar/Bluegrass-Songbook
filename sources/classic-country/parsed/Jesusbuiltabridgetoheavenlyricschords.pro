@@ -1,6 +1,6 @@
 {meta: title Jesus Built A Bridge To Heaven}
 {meta: artist Rhonda Vincent}
-{meta: writer Glen Duncan and Mark Grant}
+{meta: composer Glen Duncan and Mark Grant}
 
 {start_of_verse: Verse 1}
 [G]Jesus built a bridge to heaven

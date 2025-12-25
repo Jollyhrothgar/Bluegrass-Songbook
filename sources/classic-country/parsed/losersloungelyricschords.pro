@@ -1,6 +1,6 @@
 {meta: title Loser's Lounge}
 {meta: artist Cal Smith}
-{meta: writer Bobby Pierce}
+{meta: composer Bobby Pierce}
 
 {start_of_verse: Verse 1}
 [C]There's a honky tonk in this town that they [F]call the Loser's [C]Lounge

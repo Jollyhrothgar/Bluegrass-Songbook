@@ -1,6 +1,6 @@
 {meta: title Life Turned Him That Way}
 {meta: artist Jean Shepard}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G7]If he [C]seems cold and bitter [C7]I beg of [F]you

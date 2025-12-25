@@ -1,6 +1,6 @@
 {meta: title A Letter To My Heart}
 {meta: artist Jim Reeves}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Dear heart there is [D7]something I must tell [G]you

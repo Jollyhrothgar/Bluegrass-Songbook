@@ -1,6 +1,6 @@
 {meta: title Hold Hands}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino, Pee Wee Maddux, Jimmy Donley}
+{meta: composer Antonio Domino, Pee Wee Maddux, Jimmy Donley}
 
 {start_of_verse: Verse 1}
 [G]When your hair has turned to gray

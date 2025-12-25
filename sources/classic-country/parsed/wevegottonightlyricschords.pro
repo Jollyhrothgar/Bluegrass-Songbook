@@ -1,6 +1,6 @@
 {meta: title We've Got Tonight}
 {meta: artist Kenny Rogers and Sheena Easton}
-{meta: writer Bob Seger}
+{meta: composer Bob Seger}
 
 {start_of_verse: Verse 1}
 [D7]I know it's [G]late  [D7]I know your [C]weary [D7]

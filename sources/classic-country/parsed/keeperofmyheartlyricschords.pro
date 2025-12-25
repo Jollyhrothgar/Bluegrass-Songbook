@@ -1,6 +1,6 @@
 {meta: title Keeper Of My Heart}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills and Jerry Irby}
+{meta: composer Bob Wills and Jerry Irby}
 
 {start_of_verse: Verse 1}
 [C]If again you were just [G7]mine

@@ -1,6 +1,6 @@
 {meta: title Marking Time}
 {meta: artist Roy Drusky}
-{meta: writer Vic McAlpin and Roy Drusky}
+{meta: composer Vic McAlpin and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [C]Your face reveals a love you think is [F]real

@@ -1,6 +1,6 @@
 {meta: title Storm Of Love}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Harland Howard}
+{meta: composer Buck Owens and Harland Howard}
 
 {start_of_verse: Verse 1}
 [G]There's a storm of love a-brewing now I'm losing [C]you

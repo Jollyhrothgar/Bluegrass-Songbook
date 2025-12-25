@@ -1,6 +1,6 @@
 {meta: title The Master's Touch}
 {meta: artist Marty Robbins}
-{meta: writer Edward Crowe}
+{meta: composer Edward Crowe}
 
 {start_of_verse: Verse 1}
 [C]Tonight a hand has [Em]touched me was the [F]Master

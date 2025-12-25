@@ -1,6 +1,6 @@
 {meta: title Your Old Love Letters}
 {meta: artist Jim Reeves}
-{meta: writer Johnny Bond}
+{meta: composer Johnny Bond}
 
 {start_of_verse: Verse 1}
 [C]Today I burned your old love letters

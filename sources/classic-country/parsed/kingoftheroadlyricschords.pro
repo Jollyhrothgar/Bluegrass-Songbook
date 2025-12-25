@@ -1,6 +1,6 @@
 {meta: title King of the Road}
 {meta: artist The Statler Brothers}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]Trailer for sale [C]or rent rooms [D7]to let fifty [G]cents

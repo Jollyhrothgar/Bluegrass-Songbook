@@ -1,6 +1,6 @@
 {meta: title I'm Still Crazy}
 {meta: artist Vern Gosdin}
-{meta: writer Slev Gosdin, Vern Gosdin, Buddy Cannon}
+{meta: composer Slev Gosdin, Vern Gosdin, Buddy Cannon}
 
 {start_of_verse: Verse 1}
 [G]Well I woke up one morning with a note [C]upon my [G]chest

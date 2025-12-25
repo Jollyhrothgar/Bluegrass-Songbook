@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Dancing Machine}
 {meta: artist Tracy Byrd}
-{meta: writer Mark Nesler and Tracy Byrd}
+{meta: composer Mark Nesler and Tracy Byrd}
 
 {start_of_verse: Verse 1}
 [C]I could tell she was a hot rod when she walked in all [C7]alone

@@ -1,6 +1,6 @@
 {meta: title Bad Luck And Trouble}
 {meta: artist Fats Domino}
-{meta: writer Antoine Domino, J Donley, Pee Wee Maddux}
+{meta: composer Antoine Domino, J Donley, Pee Wee Maddux}
 
 {start_of_verse: Verse 1}
 [C]Have you ever been in trouble

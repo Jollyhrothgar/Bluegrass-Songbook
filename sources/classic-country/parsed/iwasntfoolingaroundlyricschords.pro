@@ -1,6 +1,6 @@
 {meta: title I Wasn't Fooling Around}
 {meta: artist George Strait}
-{meta: writer Jim Lauderdale and John Leventhal}
+{meta: composer Jim Lauderdale and John Leventhal}
 
 {start_of_verse: Verse 1}
 [C]I wasn't fooling [D7]around 

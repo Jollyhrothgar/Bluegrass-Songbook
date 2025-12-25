@@ -1,6 +1,6 @@
 {meta: title Favorite Fool Of All}
 {meta: artist Vern Gosdin}
-{meta: writer Rex Gosdin and V.L. Haywood}
+{meta: composer Rex Gosdin and V.L. Haywood}
 
 {start_of_verse: Verse 1}
 [C]There’s no telling how many [F]hearts you caused to [C]break

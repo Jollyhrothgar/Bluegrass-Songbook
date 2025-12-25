@@ -1,6 +1,6 @@
 {meta: title Evening Gown}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Mick Jagger}
+{meta: composer Mick Jagger}
 
 {start_of_verse: Verse 1}
 [C]People think that I'm [F]high class

@@ -1,6 +1,6 @@
 {meta: title I'm Running Out Of Love}
 {meta: artist Dolly Parton}
-{meta: writer Bill Owens}
+{meta: composer Bill Owens}
 
 {start_of_verse: Verse 1}
 [G]I'm running [C]out of love and I'm [D7]running out of patience

@@ -1,6 +1,6 @@
 {meta: title Headed For The Country}
 {meta: artist David Allan Coe}
-{meta: writer Larry Murray}
+{meta: composer Larry Murray}
 
 {start_of_verse: Verse 1}
 [C]Lightly tripping [Em]through the misty dripping [F]morning

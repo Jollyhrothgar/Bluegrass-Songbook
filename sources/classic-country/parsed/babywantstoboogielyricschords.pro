@@ -1,6 +1,6 @@
 {meta: title Baby Wants To Boogie}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]Come home [D7]late [G]tired and [D7]beat

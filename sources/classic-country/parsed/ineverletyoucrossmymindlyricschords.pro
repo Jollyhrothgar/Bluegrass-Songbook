@@ -1,6 +1,6 @@
 {meta: title I Never Let You Cross My Mind}
 {meta: artist Marty Robbins}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]I never let you [C7]cross my mind [F]unless I want you [C]to

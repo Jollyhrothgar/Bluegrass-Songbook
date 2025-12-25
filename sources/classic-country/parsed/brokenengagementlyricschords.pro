@@ -1,6 +1,6 @@
 {meta: title Broken Engagement}
 {meta: artist The Louvin Brothers}
-{meta: writer Wayne P. Walker, Max Powell, Mary C. Rhodes}
+{meta: composer Wayne P. Walker, Max Powell, Mary C. Rhodes}
 
 {start_of_verse: Verse 1}
 [C]They were standing by a window [G7]on the night he kissed her [C7][C]cheek

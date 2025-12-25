@@ -1,6 +1,6 @@
 {meta: title A Poor Man's Roses}
 {meta: artist Patsy Cline}
-{meta: writer Bob Hillard &amp; Milton Delugg}
+{meta: composer Bob Hillard &amp; Milton Delugg}
 
 {start_of_verse: Verse 1}
 [G7]I must make up my [C]mind today

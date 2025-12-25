@@ -1,6 +1,6 @@
 {meta: title Sea Of Regret}
 {meta: artist Ricky Skaggs}
-{meta: writer David Sloas and Kenneth Sloas}
+{meta: composer David Sloas and Kenneth Sloas}
 
 {start_of_verse: Verse 1}
 [C]The love that you promised to me on that [G7]day

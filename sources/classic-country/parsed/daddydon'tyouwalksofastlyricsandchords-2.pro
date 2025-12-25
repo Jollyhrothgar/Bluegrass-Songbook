@@ -1,6 +1,6 @@
 {meta: title Daddy Don't You Walk So Fast}
 {meta: artist Charlie Rich}
-{meta: writer Peter Callender and Geoff Stephens}
+{meta: composer Peter Callender and Geoff Stephens}
 
 {start_of_verse: Verse 1}
 [C]The love between the two of us was [Dm]dying 

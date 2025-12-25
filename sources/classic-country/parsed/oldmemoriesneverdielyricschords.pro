@@ -1,6 +1,6 @@
 {meta: title Old Memories Never Die}
 {meta: artist Jeannie Seely}
-{meta: writer Carl Belew and Clyde Pitts}
+{meta: composer Carl Belew and Clyde Pitts}
 
 {start_of_verse: Verse 1}
 [G]Not so very [C]long ago 

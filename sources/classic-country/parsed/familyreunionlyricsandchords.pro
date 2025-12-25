@@ -1,6 +1,6 @@
 {meta: title Family Reunion}
 {meta: artist Cowboy Copas}
-{meta: writer Rusty Gabbard and William Holt}
+{meta: composer Rusty Gabbard and William Holt}
 
 {start_of_verse: Verse 1}
 [G]Come one come all to the family reunion

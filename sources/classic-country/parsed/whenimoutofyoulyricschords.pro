@@ -1,6 +1,6 @@
 {meta: title When I'm Out Of You}
 {meta: artist John Conlee}
-{meta: writer Sanger D. Shafer and Sonny Throckmorton}
+{meta: composer Sanger D. Shafer and Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]It sure is good to know you love me [F]baby

@@ -1,6 +1,6 @@
 {meta: title Blue Little Girl}
 {meta: artist Connie Smith}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [G]Once I had everything going for me like I [D7]planned

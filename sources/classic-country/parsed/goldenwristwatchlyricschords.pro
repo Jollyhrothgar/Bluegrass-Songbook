@@ -1,6 +1,6 @@
 {meta: title Golden Wristwatch}
 {meta: artist Hank Locklin}
-{meta: writer Wally Fowler}
+{meta: composer Wally Fowler}
 
 {start_of_verse: Verse 1}
 [C]I gave you my heart and you [F]broke it into

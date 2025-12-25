@@ -1,6 +1,6 @@
 {meta: title We Robbed Trains}
 {meta: artist Gene Watson}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]Cowboys and outlaws [F]and long shiny [C]rails

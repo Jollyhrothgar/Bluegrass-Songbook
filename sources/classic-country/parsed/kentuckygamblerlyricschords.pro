@@ -1,6 +1,6 @@
 {meta: title Kentucky Gambler}
 {meta: artist Merle Haggard}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [G]I wanted more from life than four kids and a [C]wife

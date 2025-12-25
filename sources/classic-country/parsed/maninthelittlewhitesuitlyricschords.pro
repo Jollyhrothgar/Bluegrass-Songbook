@@ -1,6 +1,6 @@
 {meta: title Man In The Little White Suit}
 {meta: artist Charlie Walker}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Smoking cigarettes by the carton drinking [C]coffee by the pound

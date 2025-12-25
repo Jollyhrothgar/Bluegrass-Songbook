@@ -1,6 +1,6 @@
 {meta: title Burning Down The Town}
 {meta: artist Doug Stone}
-{meta: writer Wayne Perry and Joe Diffie}
+{meta: composer Wayne Perry and Joe Diffie}
 
 {start_of_verse: Verse 1}
 [G]I hope the clouds are gathering

@@ -1,6 +1,6 @@
 {meta: title Trail Of Time}
 {meta: artist John Anderson}
-{meta: writer Lionel Delmore}
+{meta: composer Lionel Delmore}
 
 {start_of_verse: Verse 1}
 [C]Down a trail of time there's many [B7]sorr[C]ows

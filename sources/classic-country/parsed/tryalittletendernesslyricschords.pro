@@ -1,6 +1,6 @@
 {meta: title Try A Little Tenderness}
 {meta: artist Charlie Rich}
-{meta: writer Harry Woods, Jimmy Campbell, Red Connelly}
+{meta: composer Harry Woods, Jimmy Campbell, Red Connelly}
 
 {start_of_verse: Verse 1}
 [C]She may get [Am]weary  [Dm]women do get [G7]weary

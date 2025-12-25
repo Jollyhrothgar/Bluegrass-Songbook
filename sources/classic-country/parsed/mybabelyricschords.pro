@@ -1,6 +1,6 @@
 {meta: title My Babe}
 {meta: artist Ricky Nelson}
-{meta: writer Willie Dixon}
+{meta: composer Willie Dixon}
 
 {start_of_verse: Verse 1}
 [C]Well my babe don't stand no kissing my babe

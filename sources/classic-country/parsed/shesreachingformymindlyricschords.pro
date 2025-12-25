@@ -1,6 +1,6 @@
 {meta: title She's Reaching For My Mind}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]My broken heart it's not [C7]enough to [F]keep her satis[D7]fied

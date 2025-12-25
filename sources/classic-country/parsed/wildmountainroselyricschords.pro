@@ -1,6 +1,6 @@
 {meta: title Wild Mountain Rose}
 {meta: artist Conway Twitty}
-{meta: writer L.E. White, Betty Jo White, Charles Haney}
+{meta: composer L.E. White, Betty Jo White, Charles Haney}
 
 {start_of_verse: Verse 1}
 [G]High on the mountain where the wild flowers grow

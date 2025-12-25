@@ -1,6 +1,6 @@
 {meta: title Bitter Tears}
 {meta: artist Jean Shepard}
-{meta: writer Jimmy Hall}
+{meta: composer Jimmy Hall}
 
 {start_of_verse: Verse 1}
 [C]Oh darling how I wish [F]that we could start all [C]over

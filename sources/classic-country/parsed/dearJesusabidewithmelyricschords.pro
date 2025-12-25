@@ -1,6 +1,6 @@
 {meta: title Dear Jesus Abide With Me}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Jimmy Taylor}
+{meta: composer Jimmy Taylor}
 
 {start_of_verse: Verse 1}
 [G]Sometimes my way seems [D7]rough and long

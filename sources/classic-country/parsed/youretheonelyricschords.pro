@@ -1,6 +1,6 @@
 {meta: title You’re The One}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Champion Jack Dupree, Carly Simon, David Clayton-Thomas}
+{meta: composer Champion Jack Dupree, Carly Simon, David Clayton-Thomas}
 
 {start_of_verse: Verse 1}
 [G]Many’s the time I have looked in the [C]water

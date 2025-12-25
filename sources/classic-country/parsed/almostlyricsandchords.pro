@@ -1,6 +1,6 @@
 {meta: title Almost}
 {meta: artist George Morgan}
-{meta: writer Vic McAlpin and Jack Toombs}
+{meta: composer Vic McAlpin and Jack Toombs}
 
 {start_of_verse: Verse 1}
 [C][G7]Al-most you [G7]fell in love with [C]me 

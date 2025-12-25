@@ -1,6 +1,6 @@
 {meta: title When The World Has Turned You Down}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb}
+{meta: composer Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]It's been many months dear since we [F]parted

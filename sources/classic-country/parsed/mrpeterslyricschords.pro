@@ -1,6 +1,6 @@
 {meta: title Mr. Peters}
 {meta: artist Roy Drusky}
-{meta: writer Steve Karliski and Larry Kolber}
+{meta: composer Steve Karliski and Larry Kolber}
 
 {start_of_verse: Verse 1}
 [G]Hello dear will the same place be [D7]alright

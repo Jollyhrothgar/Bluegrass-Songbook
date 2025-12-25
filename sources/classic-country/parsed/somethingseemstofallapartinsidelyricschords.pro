@@ -1,6 +1,6 @@
 {meta: title Something Seems to Fall Apart Inside}
 {meta: artist Jack Greene}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]It’s hard sweetheart to try and hide my [D7]feelings

@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Myself To Death}
 {meta: artist George Jones}
-{meta: writer Max D. Barnes and Max T. Barnes}
+{meta: composer Max D. Barnes and Max T. Barnes}
 
 {start_of_verse: Verse 1}
 [C]Well I don't know why you left me

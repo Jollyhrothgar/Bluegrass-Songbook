@@ -1,6 +1,6 @@
 {meta: title Tryin' To Get Over You}
 {meta: artist Vince Gill}
-{meta: writer Jim Weatherly and Vince Gill}
+{meta: composer Jim Weatherly and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]You could have [F]given me a million [G7]reasons why

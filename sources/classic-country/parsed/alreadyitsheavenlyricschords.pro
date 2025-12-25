@@ -1,6 +1,6 @@
 {meta: title Already It's Heaven}
 {meta: artist Freddie Hart}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Tonight I told all [G7]my friends [C]goodbye

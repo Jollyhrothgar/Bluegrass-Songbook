@@ -1,6 +1,6 @@
 {meta: title Oklahoma Swing}
 {meta: artist Reba McEntire}
-{meta: writer Tim Dubois and Vince Gill}
+{meta: composer Tim Dubois and Vince Gill}
 
 {start_of_verse: Verse 1}
 [G]There's a redhead from my hometown that [C]loves to let her hair down

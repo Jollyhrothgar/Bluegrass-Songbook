@@ -1,6 +1,6 @@
 {meta: title Hot Dog That Made Him Mad}
 {meta: artist Wanda Jackson}
-{meta: writer Don Raye and Danny Barker}
+{meta: composer Don Raye and Danny Barker}
 
 {start_of_verse: Verse 1}
 [G]I've got a guy I like him fine

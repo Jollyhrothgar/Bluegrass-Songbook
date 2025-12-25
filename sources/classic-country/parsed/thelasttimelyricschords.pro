@@ -1,6 +1,6 @@
 {meta: title The Last Time}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Mae Boren Axton and Glen Reeves}
+{meta: composer Mae Boren Axton and Glen Reeves}
 
 {start_of_verse: Verse 1}
 [G]I’m kissing [C]you for the [G]last time

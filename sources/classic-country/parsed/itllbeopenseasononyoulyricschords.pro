@@ -1,6 +1,6 @@
 {meta: title It'll Be Open Season On You}
 {meta: artist Loretta Lynn}
-{meta: writer Charles William Aldridge}
+{meta: composer Charles William Aldridge}
 
 {start_of_verse: Verse 1}
 [G]Well I caught you chasin' my man last night

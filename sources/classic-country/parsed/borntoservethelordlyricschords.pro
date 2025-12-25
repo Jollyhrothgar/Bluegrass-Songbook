@@ -1,6 +1,6 @@
 {meta: title Born To Serve The Lord}
 {meta: artist Jimmie Davis}
-{meta: writer Bud Chambers}
+{meta: composer Bud Chambers}
 
 {start_of_verse: Verse 1}
 [C]From the dust of the earth [F]God created [C]man

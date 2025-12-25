@@ -1,6 +1,6 @@
 {meta: title My Filipino Baby}
 {meta: artist Ernest Tubb}
-{meta: writer Billy Cox and Clarke Van Ness}
+{meta: composer Billy Cox and Clarke Van Ness}
 
 {start_of_verse: Verse 1}
 [C]When the warships left Manila Sailing proudly over the [F]sea

@@ -1,6 +1,6 @@
 {meta: title Hard Game Of Love}
 {meta: artist Doyle Lawson}
-{meta: writer Robert J. Gateley}
+{meta: composer Robert J. Gateley}
 
 {start_of_verse: Verse 1}
 [C]In the hard game of love I’m the [G7]last one to [C]fall

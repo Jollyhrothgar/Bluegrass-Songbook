@@ -1,6 +1,6 @@
 {meta: title Echoes Of Love}
 {meta: artist Elvis Presley}
-{meta: writer Ruth Batchelor and Bob Roberts}
+{meta: composer Ruth Batchelor and Bob Roberts}
 
 {start_of_verse: Verse 1}
 [C]Though you are [G7]gone I still wear your [C]ring

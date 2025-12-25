@@ -1,6 +1,6 @@
 {meta: title Scarlet Fever}
 {meta: artist Kenny Rogers}
-{meta: writer Mike Dekle}
+{meta: composer Mike Dekle}
 
 {start_of_verse: Verse 1}
 [C]I stood outside the Lucky Star staring at the flashing sign

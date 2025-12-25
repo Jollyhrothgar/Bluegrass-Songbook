@@ -1,6 +1,6 @@
 {meta: title God Save The Queen Of The Honky Tonks}
 {meta: artist Charlie Walker}
-{meta: writer Wayne Kemp and Mack Vickery}
+{meta: composer Wayne Kemp and Mack Vickery}
 
 {start_of_verse: Verse 1}
 [C]God save the queen of the honky tonks

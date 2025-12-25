@@ -1,6 +1,6 @@
 {meta: title That's When Your Heartaches Begins}
 {meta: artist Elvis Presley}
-{meta: writer William Raskin, William J. Hill, Fred Fisher}
+{meta: composer William Raskin, William J. Hill, Fred Fisher}
 
 {start_of_verse: Verse 1}
 [C]If you find your [E7]sweetheart [F]in the arms of a [Fm]friend

@@ -1,6 +1,6 @@
 {meta: title Cindy Oh Cindy}
 {meta: artist Waylon Jennings}
-{meta: writer Bob Barron and Burt Long}
+{meta: composer Bob Barron and Burt Long}
 
 {start_of_verse: Verse 1}
 [C]I joined the navy to [Am]see the world but [F]nowhere could I [C]find

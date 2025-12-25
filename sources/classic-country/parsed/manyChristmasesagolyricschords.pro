@@ -1,6 +1,6 @@
 {meta: title Many Christmases Ago}
 {meta: artist Marty Robbins}
-{meta: writer Phoebe Binkley and Bob Binkley}
+{meta: composer Phoebe Binkley and Bob Binkley}
 
 {start_of_verse: Verse 1}
 [C]There were shepherds in the [F]field that [C]night

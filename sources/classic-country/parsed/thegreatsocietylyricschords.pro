@@ -1,6 +1,6 @@
 {meta: title The Great Society}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Bill Penix}
+{meta: composer Hank Thompson and Bill Penix}
 
 {start_of_verse: Verse 1}
 [G]There ain't [C]no place for me in your [G]great society

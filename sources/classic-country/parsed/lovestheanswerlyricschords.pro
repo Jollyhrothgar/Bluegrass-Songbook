@@ -1,6 +1,6 @@
 {meta: title Love's The Answer}
 {meta: artist Tanya Tucker}
-{meta: writer Norro Wilson and Emily Mitchell}
+{meta: composer Norro Wilson and Emily Mitchell}
 
 {start_of_verse: Verse 1}
 [C]If you think it's hard in this day and time

@@ -1,6 +1,6 @@
 {meta: title Left Over Biscuits}
 {meta: artist The Lost and Found}
-{meta: writer Harold Douglas Handy}
+{meta: composer Harold Douglas Handy}
 
 {start_of_verse: Verse 1}
 [G]Left over biscuits [A7]left over ham

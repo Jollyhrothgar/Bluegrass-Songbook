@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Act Right}
 {meta: artist Carl Smith}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna quit rambling [G7]gambling [C]staying out late at [F]night

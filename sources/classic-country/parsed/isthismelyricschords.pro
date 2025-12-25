@@ -1,6 +1,6 @@
 {meta: title Is This Me}
 {meta: artist Jim Reeves}
-{meta: writer Dottie West and Bill West}
+{meta: composer Dottie West and Bill West}
 
 {start_of_verse: Verse 1}
 [C]Is this me is it really me sitting here [F]crying

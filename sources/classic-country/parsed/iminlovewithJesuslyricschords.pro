@@ -1,6 +1,6 @@
 {meta: title I'm In Love With Jesus}
 {meta: artist Hank Snow}
-{meta: writer John Benson and Elizabeth Paite}
+{meta: composer John Benson and Elizabeth Paite}
 
 {start_of_verse: Verse 1}
 [Dm]One [C]day the blessed [G7]Savior brought sweet [C]romance to [G7]my [C]heart

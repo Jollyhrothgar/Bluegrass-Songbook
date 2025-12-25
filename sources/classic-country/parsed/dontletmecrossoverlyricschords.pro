@@ -1,6 +1,6 @@
 {meta: title Don’t Let Me Cross Over}
 {meta: artist Webb Pierce}
-{meta: writer Penny Jay [3/4 time]}
+{meta: composer Penny Jay [3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]Don't let me cross over [G7]love's cheating [C]line

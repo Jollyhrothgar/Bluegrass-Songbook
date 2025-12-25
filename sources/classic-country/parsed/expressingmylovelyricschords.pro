@@ -1,6 +1,6 @@
 {meta: title Expressing My Love}
 {meta: artist Bobby Helms}
-{meta: writer Johnny Mathis}
+{meta: composer Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [C]A million words could [G7]never make a [C]start

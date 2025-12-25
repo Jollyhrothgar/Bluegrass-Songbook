@@ -1,6 +1,6 @@
 {meta: title If It Don't Come Easy}
 {meta: artist Tanya Tucker}
-{meta: writer Craig Karp and Dave Gibson}
+{meta: composer Craig Karp and Dave Gibson}
 
 {start_of_verse: Verse 1}
 [G]I know a man a good friend of mine he spends all of his [C]time

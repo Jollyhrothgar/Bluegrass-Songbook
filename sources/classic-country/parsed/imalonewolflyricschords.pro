@@ -1,6 +1,6 @@
 {meta: title I'm A Lone Wolf}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [C]Baby I’m a-stepping out tonight and I [F]want your [C]company

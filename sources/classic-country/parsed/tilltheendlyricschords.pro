@@ -1,6 +1,6 @@
 {meta: title Till The End}
 {meta: artist Vern Gosdin}
-{meta: writer Cathy Gosdin}
+{meta: composer Cathy Gosdin}
 
 {start_of_verse: Verse 1}
 [C]If I never see your [G7]loving face [C]again  

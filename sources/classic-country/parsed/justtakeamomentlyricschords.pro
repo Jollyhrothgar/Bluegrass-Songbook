@@ -1,6 +1,6 @@
 {meta: title Just Take A Moment}
 {meta: artist Ricky Nelson}
-{meta: writer Jerry Fuller and Cissi Wilson}
+{meta: composer Jerry Fuller and Cissi Wilson}
 
 {start_of_verse: Verse 1}
 [C]Just take a moment to remember the [F]love that we once [C]knew

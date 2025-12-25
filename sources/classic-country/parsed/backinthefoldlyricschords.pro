@@ -1,6 +1,6 @@
 {meta: title Back In The Fold}
 {meta: artist Johnny Cash}
-{meta: writer Marijohn Wilkin}
+{meta: composer Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [C]Lord I know how long you've waited for me to come back [F]home

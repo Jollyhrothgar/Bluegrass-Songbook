@@ -1,6 +1,6 @@
 {meta: title He Thinks I Love Him}
 {meta: artist Tammy Wynette}
-{meta: writer Carmol Taylor and Quinton Claunch}
+{meta: composer Carmol Taylor and Quinton Claunch}
 
 {start_of_verse: Verse 1}
 [G]He thinks he owned my [D7]body heart and [G]soul

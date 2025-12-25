@@ -1,6 +1,6 @@
 {meta: title Echo Bonita Lyrics Chords}
 {meta: artist Jim Reeves}
-{meta: writer Kenny Devine}
+{meta: composer Kenny Devine}
 
 {start_of_verse: Verse 1}
 [C]Echo Bonita  I'm sad and [G7]blue

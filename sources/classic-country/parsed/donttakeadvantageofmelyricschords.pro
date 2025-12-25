@@ -1,6 +1,6 @@
 {meta: title Don't Take Advantage Of Me}
 {meta: artist Jean Shepard}
-{meta: writer Bob Morris and Bonnie Owens}
+{meta: composer Bob Morris and Bonnie Owens}
 
 {start_of_verse: Verse 1}
 [C]Don't make me a promise and then make me [F]blue

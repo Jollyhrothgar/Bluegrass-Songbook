@@ -1,6 +1,6 @@
 {meta: title Motel Matches}
 {meta: artist Moe Bandy}
-{meta: writer Don Pfrimmer and Blake Mevis}
+{meta: composer Don Pfrimmer and Blake Mevis}
 
 {start_of_verse: Verse 1}
 [C]Just an hour ago I [F]didn’t know her [C]name

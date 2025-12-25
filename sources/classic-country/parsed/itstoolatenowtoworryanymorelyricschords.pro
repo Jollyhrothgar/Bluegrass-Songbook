@@ -1,6 +1,6 @@
 {meta: title It’s Too Late Now To Worry Anymore}
 {meta: artist Marty Robbins}
-{meta: writer Joe Pope}
+{meta: composer Joe Pope}
 
 {start_of_verse: Verse 1}
 [G]Things have changed a [D7]lot since first we [G]met

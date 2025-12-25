@@ -1,6 +1,6 @@
 {meta: title Barroom Roses}
 {meta: artist Moe Bandy}
-{meta: writer Byron Gallimore, Blake Mevis, William D. Shore}
+{meta: composer Byron Gallimore, Blake Mevis, William D. Shore}
 
 {start_of_verse: Verse 1}
 [G]You better leave those bar room roses alone

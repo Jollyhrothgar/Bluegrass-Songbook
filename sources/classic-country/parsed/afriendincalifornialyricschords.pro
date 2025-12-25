@@ -1,6 +1,6 @@
 {meta: title A Friend In California}
 {meta: artist Merle Haggard}
-{meta: writer Freddy Powers}
+{meta: composer Freddy Powers}
 
 {start_of_verse: Verse 1}
 [G]L.A. traffic is bad this time of [D7]year

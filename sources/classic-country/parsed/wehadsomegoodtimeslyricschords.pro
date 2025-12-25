@@ -1,6 +1,6 @@
 {meta: title We Had Some Good Times}
 {meta: artist Jean Shepard}
-{meta: writer Glenn Martin}
+{meta: composer Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]I guess I should have woke him and [F]told him goodbye

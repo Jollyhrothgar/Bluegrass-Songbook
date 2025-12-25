@@ -1,6 +1,6 @@
 {meta: title Blues Ain't Workin' On Me}
 {meta: artist Rhonda Vincent}
-{meta: writer George Teren and Tom Shapiro}
+{meta: composer George Teren and Tom Shapiro}
 
 {start_of_verse: Verse 1}
 [C]There's a new [F]expression on my [C]face I ain't [F]seen in quite a [C]while

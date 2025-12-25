@@ -1,6 +1,6 @@
 {meta: title My Eyes Are Jealous}
 {meta: artist Gene Watson}
-{meta: writer Jimmy Day}
+{meta: composer Jimmy Day}
 
 {start_of_verse: Verse 1}
 [C]Your eyes aren't like the [G7]stars they're just your [C]eyes

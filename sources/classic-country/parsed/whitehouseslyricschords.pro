@@ -1,6 +1,6 @@
 {meta: title White Houses}
 {meta: artist Charley Pride}
-{meta: writer Johnny Cunningham}
+{meta: composer Johnny Cunningham}
 
 {start_of_verse: Verse 1}
 [G7]Got it [C]bad and you know that ain’t good

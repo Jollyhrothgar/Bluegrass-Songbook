@@ -1,6 +1,6 @@
 {meta: title Believing it Yourself}
 {meta: artist Faron Young}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [G]You're telling everybody that she loves you   [C]you know she don't

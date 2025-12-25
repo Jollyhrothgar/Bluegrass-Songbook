@@ -1,6 +1,6 @@
 {meta: title Birth Of Our Love}
 {meta: artist Jack Greene}
-{meta: writer Jerry Edge, Jimmy Dry, Barbara Greene}
+{meta: composer Jerry Edge, Jimmy Dry, Barbara Greene}
 
 {start_of_verse: Verse 1}
 [C]Oceans have made from little raindrops 

@@ -1,6 +1,6 @@
 {meta: title It's Not the Moon That Makes the Difference}
 {meta: artist Wynn Stewart}
-{meta: writer Leon Tassin and Willie B. Carpenter}
+{meta: composer Leon Tassin and Willie B. Carpenter}
 
 {start_of_verse: Verse 1}
 [C]There’s so many tales about the moon and [F]all its loveli[C]ness 

@@ -1,6 +1,6 @@
 {meta: title Last Night I Laid Your Memory To Rest}
 {meta: artist John Anderson}
-{meta: writer Frankia Treat and Donna Anderson}
+{meta: composer Frankia Treat and Donna Anderson}
 
 {start_of_verse: Verse 1}
 [C]It's been years [G7]since you said [C]goodbye

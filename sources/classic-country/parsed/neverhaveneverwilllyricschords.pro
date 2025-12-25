@@ -1,6 +1,6 @@
 {meta: title Never Have Never Will}
 {meta: artist Ferlin Husky}
-{meta: writer Tim Johnson and Steven Jones}
+{meta: composer Tim Johnson and Steven Jones}
 
 {start_of_verse: Verse 1}
 [C]I never [G7]have and [C]never [F]will

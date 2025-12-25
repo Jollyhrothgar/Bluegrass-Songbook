@@ -1,6 +1,6 @@
 {meta: title Future Mister Me}
 {meta: artist Randy Travis}
-{meta: writer John Lindley and Randy Travis}
+{meta: composer John Lindley and Randy Travis}
 
 {start_of_verse: Verse 1}
 [C]I didn't come in here to fight [F]I didn't come to [Fm]ruin your night

@@ -1,6 +1,6 @@
 {meta: title A Good Love Is Like A Good Song}
 {meta: artist Bob Luman}
-{meta: writer Casey Kelly}
+{meta: composer Casey Kelly}
 
 {start_of_verse: Verse 1}
 [G7]I was a lonely soul no [F]voice in the [C]crowd

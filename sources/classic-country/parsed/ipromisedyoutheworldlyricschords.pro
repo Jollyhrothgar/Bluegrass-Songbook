@@ -1,6 +1,6 @@
 {meta: title I Promised You The World}
 {meta: artist Ferlin Husky}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]The time has [C]come once [D7]more for us to [Am]move on [D7]

@@ -1,6 +1,6 @@
 {meta: title Before I Go To Bed}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew and Clyde Pitts}
+{meta: composer Carl Belew and Clyde Pitts}
 
 {start_of_verse: Verse 1}
 [C]I’ll always dress [F]my very best [G7]before I go to [C]bed

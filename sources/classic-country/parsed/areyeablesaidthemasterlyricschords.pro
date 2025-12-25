@@ -1,6 +1,6 @@
 {meta: title Are Ye Able Said The Master}
 {meta: artist Burl Ives}
-{meta: writer Earl Bowman Marlatt and Harry Silverdale Mason}
+{meta: composer Earl Bowman Marlatt and Harry Silverdale Mason}
 
 {start_of_verse: Verse 1}
 [G]Are ye able said the [C]Master

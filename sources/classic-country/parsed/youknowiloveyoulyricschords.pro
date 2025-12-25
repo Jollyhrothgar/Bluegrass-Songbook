@@ -1,6 +1,6 @@
 {meta: title You Know I Love You}
 {meta: artist Kenny Rogers}
-{meta: writer Mike Settle}
+{meta: composer Mike Settle}
 
 {start_of_verse: Verse 1}
 [G]When the morning sun  streaks across my [D7]room 

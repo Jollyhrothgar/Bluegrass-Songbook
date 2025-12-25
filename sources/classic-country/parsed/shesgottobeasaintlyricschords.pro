@@ -1,6 +1,6 @@
 {meta: title She's Got To Be A Saint}
 {meta: artist Ray Price}
-{meta: writer Joe Paulini and Mike DiNapoli}
+{meta: composer Joe Paulini and Mike DiNapoli}
 
 {start_of_verse: Verse 1}
 [G]I'm out late every night doing things that ain't right 

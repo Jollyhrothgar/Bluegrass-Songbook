@@ -1,6 +1,6 @@
 {meta: title Don't Worry About The Runt Lord}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]Look at them hogs Lord hugging that [F]feed trough

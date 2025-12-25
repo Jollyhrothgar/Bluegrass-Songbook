@@ -1,6 +1,6 @@
 {meta: title Your Lying Blue Eyes}
 {meta: artist John Anderson}
-{meta: writer Ken McDuffie}
+{meta: composer Ken McDuffie}
 
 {start_of_verse: Verse 1}
 [C]Your lying blue eyes used to [C7]charm me

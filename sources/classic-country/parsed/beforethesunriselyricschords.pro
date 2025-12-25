@@ -1,6 +1,6 @@
 {meta: title Before The Sunrise}
 {meta: artist Bobby Bare}
-{meta: writer Jerry McBee}
+{meta: composer Jerry McBee}
 
 {start_of_verse: Verse 1}
 [C]I guess I'd better try again 

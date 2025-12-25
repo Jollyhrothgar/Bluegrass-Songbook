@@ -1,6 +1,6 @@
 {meta: title Flying South}
 {meta: artist Hank Locklin}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [E7]Winter's gone and summertime's a [A7]coming

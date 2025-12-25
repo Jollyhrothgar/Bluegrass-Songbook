@@ -1,6 +1,6 @@
 {meta: title One In A Million}
 {meta: artist Johnny Lee}
-{meta: writer Tim Mosley and Melissa Elliott}
+{meta: composer Tim Mosley and Melissa Elliott}
 
 {start_of_verse: Verse 1}
 [G]Sometimes it seems the world's a jungle

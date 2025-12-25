@@ -1,6 +1,6 @@
 {meta: title Back Up Buddy}
 {meta: artist Carl Smith}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]Back up buddy don't you come any [F]closer

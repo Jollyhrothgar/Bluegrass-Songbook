@@ -1,6 +1,6 @@
 {meta: title Memories Of Old Santa Fe}
 {meta: artist Randy Travis}
-{meta: writer Roger Brown and Rick Peoples}
+{meta: composer Roger Brown and Rick Peoples}
 
 {start_of_verse: Verse 1}
 [C]As blue shadows [G7]fall a[C]cross the canyon [C7]wall

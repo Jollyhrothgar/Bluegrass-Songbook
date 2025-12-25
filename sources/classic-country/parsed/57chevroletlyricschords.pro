@@ -1,6 +1,6 @@
 {meta: title 57 Chevrolet}
 {meta: artist Billie Jo Spears}
-{meta: writer Roger Bowling}
+{meta: composer Roger Bowling}
 
 {start_of_verse: Verse 1}
 [G]Come and look at this old faded [D7]photo[G]graph 

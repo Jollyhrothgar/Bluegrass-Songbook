@@ -1,6 +1,6 @@
 {meta: title Rocking My Life Away}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]Fourteen ninety-five and nineteen forty eight

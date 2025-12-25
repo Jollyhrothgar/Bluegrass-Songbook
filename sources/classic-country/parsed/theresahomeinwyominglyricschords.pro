@@ -1,6 +1,6 @@
 {meta: title There's A Home In Wyoming}
 {meta: artist Sons Of Pioneers}
-{meta: writer Billy Hill and Peter De Rose}
+{meta: composer Billy Hill and Peter De Rose}
 
 {start_of_verse: Verse 1}
 [C]Pale moon [F]carry me [C]away

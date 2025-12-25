@@ -1,6 +1,6 @@
 {meta: title Lover Please}
 {meta: artist Kris Kristofferson}
-{meta: writer Billy Swan}
+{meta: composer Billy Swan}
 
 {start_of_verse: Verse 1}
 [C]Lover please please come back

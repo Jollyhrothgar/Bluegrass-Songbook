@@ -1,6 +1,6 @@
 {meta: title I Never Did Know}
 {meta: artist David Ball}
-{meta: writer David Ball and Dean Dillon}
+{meta: composer David Ball and Dean Dillon}
 
 {start_of_verse: Verse 1}
 [C]Pour that glass just as full [F]as you can pour [C]it

@@ -1,6 +1,6 @@
 {meta: title I Wish It Would Rain}
 {meta: artist Randy Travis}
-{meta: writer Ron Avis and Randy Travis}
+{meta: composer Ron Avis and Randy Travis}
 
 {start_of_verse: Verse 1}
 [G]It's the last thing I needed on a star [D7]filled [G]night

@@ -1,6 +1,6 @@
 {meta: title Caught In The Middle Of Two Hearts}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [G]I’ve been [D7]living a [G]double life

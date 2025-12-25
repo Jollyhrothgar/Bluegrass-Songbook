@@ -1,6 +1,6 @@
 {meta: title Gettin' Back To Norma}
 {meta: artist Bob Luman}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]Well I left one early mornin' 

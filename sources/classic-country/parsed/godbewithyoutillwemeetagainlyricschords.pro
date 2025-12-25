@@ -1,6 +1,6 @@
 {meta: title God Be With You Till We Meet Again}
 {meta: artist Jim Reeves}
-{meta: writer J.E. Rankin and W.G. Tomer}
+{meta: composer J.E. Rankin and W.G. Tomer}
 
 {start_of_verse: Verse 1}
 [G]God be with you till we meet [G][D7]again 

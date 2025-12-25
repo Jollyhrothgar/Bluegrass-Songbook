@@ -1,6 +1,6 @@
 {meta: title Hula Love}
 {meta: artist Buddy Knox}
-{meta: writer Dave Alldred, Jimmy Bowen, Buddy Knox, Donnie H. Lanier}
+{meta: composer Dave Alldred, Jimmy Bowen, Buddy Knox, Donnie H. Lanier}
 
 {start_of_verse: Verse 1}
 [C]On the Isle of Filalilla out [G7]Hawaii way

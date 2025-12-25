@@ -1,6 +1,6 @@
 {meta: title The Life They Live In Song}
 {meta: artist Kitty Wells}
-{meta: writer Raymond F. Scrivner}
+{meta: composer Raymond F. Scrivner}
 
 {start_of_verse: Verse 1}
 [G]All the songs they sing these day are [C]about the trifling [G]ways

@@ -1,6 +1,6 @@
 {meta: title If I Had To Do It All Over Again}
 {meta: artist Roy Clark}
-{meta: writer Bobby Springfield}
+{meta: composer Bobby Springfield}
 
 {start_of_verse: Verse 1}
 [C]We're not as young as we [Em]used to be

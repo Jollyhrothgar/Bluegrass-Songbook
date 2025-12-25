@@ -1,6 +1,6 @@
 {meta: title A Little Old Wine Drinker Me}
 {meta: artist Dean Martin}
-{meta: writer Hank Mills and Dick Jennings}
+{meta: composer Hank Mills and Dick Jennings}
 
 {start_of_verse: Verse 1}
 [C]I'm praying for rain [F]in [C]California

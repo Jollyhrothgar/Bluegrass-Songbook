@@ -1,6 +1,6 @@
 {meta: title Chew Tobacco Rag}
 {meta: artist Pee Wee King}
-{meta: writer Billy Briggs}
+{meta: composer Billy Briggs}
 
 {start_of_verse: Verse 1}
 [G]Well I like to smoke my old corn pipe

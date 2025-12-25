@@ -1,6 +1,6 @@
 {meta: title It Keeps Raining}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew, Antoine Domino, Robert Guidry}
+{meta: composer Dave Bartholomew, Antoine Domino, Robert Guidry}
 
 {start_of_verse: Verse 1}
 [C]It keeps raining and raining

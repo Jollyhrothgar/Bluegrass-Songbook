@@ -1,6 +1,6 @@
 {meta: title Stairway To Heaven}
 {meta: artist Slim Whitman}
-{meta: writer Herman Church}
+{meta: composer Herman Church}
 
 {start_of_verse: Verse 1}
 [C]God built a stairway [C7]to [F]heaven

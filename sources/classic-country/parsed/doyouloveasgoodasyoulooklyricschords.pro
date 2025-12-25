@@ -1,6 +1,6 @@
 {meta: title Do You Love As Good As You Look}
 {meta: artist The Bellamy Brothers}
-{meta: writer C. Black, R. Bourke & J. Gillespie}
+{meta: composer C. Black, R. Bourke & J. Gillespie}
 
 {start_of_verse: Verse 1}
 [G]Long blonde [C]hair sky blue [G]eyes

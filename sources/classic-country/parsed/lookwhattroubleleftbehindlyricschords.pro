@@ -1,6 +1,6 @@
 {meta: title Look What Trouble Left Behind}
 {meta: artist Bob Wills}
-{meta: writer Margaret Crownover and Bob Wills}
+{meta: composer Margaret Crownover and Bob Wills}
 
 {start_of_verse: Verse 1}
 [C]Look what trouble left behind 

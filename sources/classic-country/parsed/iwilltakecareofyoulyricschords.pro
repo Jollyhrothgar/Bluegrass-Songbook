@@ -1,6 +1,6 @@
 {meta: title I Will Take Care Of You}
 {meta: artist George Morgan}
-{meta: writer Lorene Mann and Bob Jennings}
+{meta: composer Lorene Mann and Bob Jennings}
 
 {start_of_verse: Verse 1}
 [G]Though times are hard life's road is rough

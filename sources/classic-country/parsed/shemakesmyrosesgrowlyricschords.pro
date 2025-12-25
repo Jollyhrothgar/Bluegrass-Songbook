@@ -1,6 +1,6 @@
 {meta: title She Makes My Roses Grow}
 {meta: artist Eddy Arnold}
-{meta: writer Wayne Carson}
+{meta: composer Wayne Carson}
 
 {start_of_verse: Verse 1}
 [G]My life's been like a [C]leaf in the wind

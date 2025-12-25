@@ -1,6 +1,6 @@
 {meta: title Bossier City}
 {meta: artist David Allan Coe}
-{meta: writer Bobby Bourgoin}
+{meta: composer Bobby Bourgoin}
 
 {start_of_verse: Verse 1}
 [C]My [F]hands are shaking as [G7]I'm sadly [C]learnin'

@@ -1,6 +1,6 @@
 {meta: title You're The Only World I Know}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert and Sonny James}
+{meta: composer Bob Tubert and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]You're the only world I know 

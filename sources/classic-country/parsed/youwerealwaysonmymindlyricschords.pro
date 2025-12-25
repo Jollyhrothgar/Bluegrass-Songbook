@@ -1,6 +1,6 @@
 {meta: title You Were Always on My Mind}
 {meta: artist Willie Nelson}
-{meta: writer Wayne C. Thompson and Johnny Christopher}
+{meta: composer Wayne C. Thompson and Johnny Christopher}
 
 {start_of_verse: Verse 1}
 [G]Maybe I didn't love [D7]you

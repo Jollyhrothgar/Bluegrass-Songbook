@@ -1,6 +1,6 @@
 {meta: title I Never Had The One That I Wanted}
 {meta: artist Ernest Tubb}
-{meta: writer Jimmie Louis, Claude Gray & Sheb Wooley}
+{meta: composer Jimmie Louis, Claude Gray & Sheb Wooley}
 
 {start_of_verse: Verse 1}
 [C]I never had the one that I [F]wanted

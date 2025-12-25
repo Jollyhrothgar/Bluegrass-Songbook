@@ -1,6 +1,6 @@
 {meta: title You're Out Of Step}
 {meta: artist Hank Locklin}
-{meta: writer Don Reynolds and Slim Stuart}
+{meta: composer Don Reynolds and Slim Stuart}
 
 {start_of_verse: Verse 1}
 [G]You’re out of step with the beat of my heart

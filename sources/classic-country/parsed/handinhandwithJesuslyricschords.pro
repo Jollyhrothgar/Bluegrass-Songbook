@@ -1,6 +1,6 @@
 {meta: title Hand In Hand With Jesus}
 {meta: artist Skeeter Davis}
-{meta: writer Johnson Oatman and L.D. Huffstutler}
+{meta: composer Johnson Oatman and L.D. Huffstutler}
 
 {start_of_verse: Verse 1}
 [G]Once from my poor [Em]sin sick [G]soul

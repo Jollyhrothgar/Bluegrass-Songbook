@@ -1,6 +1,6 @@
 {meta: title He's Got You}
 {meta: artist Ricky Van Shelton}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I've got your picture [G7]that you gave to [C]me

@@ -1,6 +1,6 @@
 {meta: title Yesterday's Winner Is A Loser Today}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb, Jesse O. Rogers, Jimmie Skinner}
+{meta: composer Ernest Tubb, Jesse O. Rogers, Jimmie Skinner}
 
 {start_of_verse: Verse 1}
 [C]The world loves a winner [F]but someone must lose

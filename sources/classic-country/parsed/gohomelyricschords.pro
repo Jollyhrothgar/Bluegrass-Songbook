@@ -1,6 +1,6 @@
 {meta: title Go Home}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer D. Wheeler}
+{meta: composer D. Wheeler}
 
 {start_of_verse: Verse 1}
 [C]While drinking alone in a [F]tavern one [C]day

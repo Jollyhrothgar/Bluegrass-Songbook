@@ -1,6 +1,6 @@
 {meta: title This Is My Year For Mexico}
 {meta: artist Gene Watson}
-{meta: writer Vince Matthews}
+{meta: composer Vince Matthews}
 
 {start_of_verse: Verse 1}
 [C]I no longer notice if [F]you’re wearing [C]perfume

@@ -1,6 +1,6 @@
 {meta: title Able Bodied Man}
 {meta: artist Charley Pride}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]I'm calling from the station and I [F]haven't got much time to let you [C]know

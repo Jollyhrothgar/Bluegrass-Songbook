@@ -1,6 +1,6 @@
 {meta: title By Heart}
 {meta: artist Conway Twitty}
-{meta: writer Hugh Prestwood}
+{meta: composer Hugh Prestwood}
 
 {start_of_verse: Verse 1}
 [C]Her face reflects as [G7]much of me [F]as any mirror [C]can

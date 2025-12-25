@@ -1,6 +1,6 @@
 {meta: title I'm To Blame}
 {meta: artist Mickey Gilley}
-{meta: writer Huey Meaux}
+{meta: composer Huey Meaux}
 
 {start_of_verse: Verse 1}
 [C]Have you told your [G7]new friend [C]about me

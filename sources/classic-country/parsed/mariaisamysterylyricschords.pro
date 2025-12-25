@@ -1,6 +1,6 @@
 {meta: title Maria Is A Mystery}
 {meta: artist David Allan Coe}
-{meta: writer David A. Coe and Jay Bolotin}
+{meta: composer David A. Coe and Jay Bolotin}
 
 {start_of_verse: Verse 1}
 [C]Maria has a music box she winds most every day

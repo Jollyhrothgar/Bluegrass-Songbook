@@ -1,6 +1,6 @@
 {meta: title Whatever Happened To Us}
 {meta: artist George Jones}
-{meta: writer Donald R. Sampson and Donald R. Kees}
+{meta: composer Donald R. Sampson and Donald R. Kees}
 
 {start_of_verse: Verse 1}
 [G]Looking through this worn out book of [C]pictures 

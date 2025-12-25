@@ -1,6 +1,6 @@
 {meta: title Real Good Woman}
 {meta: artist Jean Shepard}
-{meta: writer Johnny Mosby and Jonie Mosby}
+{meta: composer Johnny Mosby and Jonie Mosby}
 
 {start_of_verse: Verse 1}
 [G]There oughta be a law against your runnin' [G7]around

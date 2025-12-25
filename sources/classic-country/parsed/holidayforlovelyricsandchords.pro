@@ -1,6 +1,6 @@
 {meta: title Holiday for Love}
 {meta: artist Mel Tillis}
-{meta: writer Wayne P. Walker and Mel Tillis}
+{meta: composer Wayne P. Walker and Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]I'd like to make everyday [F]with you a [C]holiday for love

@@ -1,6 +1,6 @@
 {meta: title Another Man's Woman}
 {meta: artist Conway Twitty}
-{meta: writer Conway Twitty}
+{meta: composer Conway Twitty}
 
 {start_of_verse: Verse 1}
 [C]I've tried to be strong I've tried to leave [F]town

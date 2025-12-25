@@ -1,6 +1,6 @@
 {meta: title Feelings Change}
 {meta: artist Ronnie Milsap}
-{meta: writer Rhonda Fleming and Dennis Morgan}
+{meta: composer Rhonda Fleming and Dennis Morgan}
 
 {start_of_verse: Verse 1}
 [G7]Feelings [C]change[Am]   [F]nothing stays the [G7]same

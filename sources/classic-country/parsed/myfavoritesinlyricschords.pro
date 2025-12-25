@@ -1,6 +1,6 @@
 {meta: title My Favorite Sin}
 {meta: artist Stonewall Jackson}
-{meta: writer Hugh X. Lewis}
+{meta: composer Hugh X. Lewis}
 
 {start_of_verse: Verse 1}
 [G]I still wake up in a cold [D7]sweat on the hottest [G]night

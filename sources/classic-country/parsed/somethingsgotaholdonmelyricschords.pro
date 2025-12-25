@@ -1,6 +1,6 @@
 {meta: title Something's Got a Hold on Me}
 {meta: artist Hank Williams Sr.}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]At first when I heard of some people who claim

@@ -1,6 +1,6 @@
 {meta: title The Yellow Rose Of Texas}
 {meta: artist Ernest Tubb}
-{meta: writer Don George}
+{meta: composer Don George}
 
 {start_of_verse: Verse 1}
 [C]There's a yellow rose in Texas that I'm gonna see

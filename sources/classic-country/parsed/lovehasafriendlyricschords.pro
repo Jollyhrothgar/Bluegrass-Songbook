@@ -1,6 +1,6 @@
 {meta: title Love Has A Friend}
 {meta: artist Cal Smith}
-{meta: writer Binky Bryant and John Owen}
+{meta: composer Binky Bryant and John Owen}
 
 {start_of_verse: Verse 1}
 [G]When love finds a [D7]heart to move [G]into

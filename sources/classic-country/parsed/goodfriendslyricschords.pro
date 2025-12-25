@@ -1,6 +1,6 @@
 {meta: title Good Friends}
 {meta: artist Reba McEntire}
-{meta: writer Chris Gantry and Len Chera}
+{meta: composer Chris Gantry and Len Chera}
 
 {start_of_verse: Verse 1}
 [F]Feeling one another's joy and [G7]sorrow 

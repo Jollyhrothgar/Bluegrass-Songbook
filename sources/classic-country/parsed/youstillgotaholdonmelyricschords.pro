@@ -1,6 +1,6 @@
 {meta: title You Still Got A Hold On Me}
 {meta: artist Eddy Arnold}
-{meta: writer Merle Kilgore}
+{meta: composer Merle Kilgore}
 
 {start_of_verse: Verse 1}
 [C]Though I only see you now and [G7]then

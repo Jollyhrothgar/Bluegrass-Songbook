@@ -1,6 +1,6 @@
 {meta: title Stairway To The Sky}
 {meta: artist Ray Price}
-{meta: writer Lee Dress}
+{meta: composer Lee Dress}
 
 {start_of_verse: Verse 1}
 [C]Gonna get a hammer gonna get some nails

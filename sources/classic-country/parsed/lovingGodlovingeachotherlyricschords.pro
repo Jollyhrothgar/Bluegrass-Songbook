@@ -1,6 +1,6 @@
 {meta: title Loving God Loving Each Other}
 {meta: artist The Oak Ridge Boys}
-{meta: writer William and Gloria Gaither}
+{meta: composer William and Gloria Gaither}
 
 {start_of_verse: Verse 1}
 [C]Loving God [F]loving each [C]other

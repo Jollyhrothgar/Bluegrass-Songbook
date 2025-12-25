@@ -1,6 +1,6 @@
 {meta: title Blue Lonely Winter}
 {meta: artist Goldie Hill}
-{meta: writer Jimmy Newman and Roy A. Baham}
+{meta: composer Jimmy Newman and Roy A. Baham}
 
 {start_of_verse: Verse 1}
 [G]Blue [C]lonely winter 

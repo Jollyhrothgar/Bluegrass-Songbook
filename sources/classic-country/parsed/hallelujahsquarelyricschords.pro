@@ -1,6 +1,6 @@
 {meta: title Hallelujah Square}
 {meta: artist The Cathedrals}
-{meta: writer Ray Overholt}
+{meta: composer Ray Overholt}
 
 {start_of_verse: Verse 1}
 [C]I saw a blind man [F]tapping [C]along

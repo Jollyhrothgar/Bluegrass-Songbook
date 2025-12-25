@@ -1,6 +1,6 @@
 {meta: title Tony's Tank Up Drive In Cafe}
 {meta: artist Hank Thompson}
-{meta: writer Royce Glenn Sutton}
+{meta: composer Royce Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Well the smoke in here is like the L.A. smog

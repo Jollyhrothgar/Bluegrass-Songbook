@@ -1,6 +1,6 @@
 {meta: title Houston}
 {meta: artist Dean Martin}
-{meta: writer Lee Hazelwood}
+{meta: composer Lee Hazelwood}
 
 {start_of_verse: Verse 1}
 [G]Well it's lonesome in this old [C]town

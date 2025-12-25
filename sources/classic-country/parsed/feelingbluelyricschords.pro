@@ -1,6 +1,6 @@
 {meta: title Feeling Blue}
 {meta: artist The Grascals}
-{meta: writer Aubrey Holt}
+{meta: composer Aubrey Holt}
 
 {start_of_verse: Verse 1}
 [C]I'm a feeling blue [C7]tonight little [F]darling

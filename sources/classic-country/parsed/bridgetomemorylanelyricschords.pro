@@ -1,6 +1,6 @@
 {meta: title Bridge To Memory Lane}
 {meta: artist Tony Booth}
-{meta: writer Kent Westberry and Eddie Burton}
+{meta: composer Kent Westberry and Eddie Burton}
 
 {start_of_verse: Verse 1}
 [C]Last night I burned the bridge to memory [Dm]lane[F]

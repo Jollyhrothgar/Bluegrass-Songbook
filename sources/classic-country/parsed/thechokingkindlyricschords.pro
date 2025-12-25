@@ -1,6 +1,6 @@
 {meta: title The Choking Kind}
 {meta: artist Waylon Jennings}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [C]I only meant to love you don't you [Dm]know it babe

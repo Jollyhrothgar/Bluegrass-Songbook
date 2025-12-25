@@ -1,6 +1,6 @@
 {meta: title If I Make It Through Tonight}
 {meta: artist Billy Parker}
-{meta: writer Jeannie Seely and Virginia Gail Talley}
+{meta: composer Jeannie Seely and Virginia Gail Talley}
 
 {start_of_verse: Verse 1}
 [C]You just told me [G7]that it's [C]over 

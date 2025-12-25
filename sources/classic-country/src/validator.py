@@ -11,8 +11,15 @@ Provides multiple levels of validation:
 from dataclasses import dataclass
 from typing import List, Optional, Dict, Tuple
 import re
+import sys
+from pathlib import Path
 
-from .parser import Song, SongLine, Paragraph
+# Add src directory to path for imports when run from repo root
+_src_dir = Path(__file__).parent
+if str(_src_dir) not in sys.path:
+    sys.path.insert(0, str(_src_dir))
+
+from parser import Song, SongLine, Paragraph
 
 
 @dataclass

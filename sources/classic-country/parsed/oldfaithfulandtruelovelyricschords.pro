@@ -1,6 +1,6 @@
 {meta: title Old Faithful And True Love}
 {meta: artist Cowboy Copas}
-{meta: writer Charles Singleton and Rose Marie McCoy}
+{meta: composer Charles Singleton and Rose Marie McCoy}
 
 {start_of_verse: Verse 1}
 [G]I've got that old faithful and true 

@@ -1,6 +1,6 @@
 {meta: title Cry Cry Again}
 {meta: artist Tammy Wynette}
-{meta: writer Liz Anderson and Dick Land}
+{meta: composer Liz Anderson and Dick Land}
 
 {start_of_verse: Verse 1}
 [G]I put my little girl to bed with [D7]teardrops in her eyes

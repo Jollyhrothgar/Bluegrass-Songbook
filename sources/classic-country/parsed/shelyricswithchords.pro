@@ -1,6 +1,6 @@
 {meta: title She}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Bill Dees}
+{meta: composer Roy Orbison and Bill Dees}
 
 {start_of_verse: Verse 1}
 [C]She was the [Em]wind the [F]earth and [G7]sky

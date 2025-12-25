@@ -1,6 +1,6 @@
 {meta: title Farmers Blues}
 {meta: artist Marty Stuart}
-{meta: writer Marty Stuart and Connie Smith}
+{meta: composer Marty Stuart and Connie Smith}
 
 {start_of_verse: Verse 1}
 [G]Who'll buy my wheat who'll buy my corn

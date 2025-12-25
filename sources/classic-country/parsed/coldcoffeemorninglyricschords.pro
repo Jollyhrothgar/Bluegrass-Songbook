@@ -1,6 +1,6 @@
 {meta: title Cold Coffee Morning}
 {meta: artist Jon Randall}
-{meta: writer Bill Anderson and Jon Randall}
+{meta: composer Bill Anderson and Jon Randall}
 
 {start_of_verse: Verse 1}
 [G]The saddest face I've ever shaved [C]is staring back at [G]me 

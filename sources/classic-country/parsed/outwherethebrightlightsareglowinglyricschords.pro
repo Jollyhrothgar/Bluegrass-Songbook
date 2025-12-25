@@ -1,6 +1,6 @@
 {meta: title Out Where The Bright Lights Are Glowing}
 {meta: artist Ronnie Milsap}
-{meta: writer Gary Harrison and Kent Robbins}
+{meta: composer Gary Harrison and Kent Robbins}
 
 {start_of_verse: Verse 1}
 [C]I was only eigh[G7]teen in a ducktail and [F]jeans when he had to [C]go

@@ -1,6 +1,6 @@
 {meta: title Sittin' On Top Of The World}
 {meta: artist Doc Watson}
-{meta: writer Walter Vinson and Lonnie Chatmon}
+{meta: composer Walter Vinson and Lonnie Chatmon}
 
 {start_of_verse: Verse 1}
 [C]Was in the spring one sunny [C7]day

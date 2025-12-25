@@ -1,6 +1,6 @@
 {meta: title Love Don't Get No Better Than This}
 {meta: artist Lee Greenwood}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]I can feel your body tremble and I [F]know you feel mine

@@ -1,6 +1,6 @@
 {meta: title Jesus Is Coming Soon}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Robert Emmett Winsett}
+{meta: composer Robert Emmett Winsett}
 
 {start_of_verse: Verse 1}
 [C]Troublesome times [G7]are [C]here filling men's [Am]hearts with fear

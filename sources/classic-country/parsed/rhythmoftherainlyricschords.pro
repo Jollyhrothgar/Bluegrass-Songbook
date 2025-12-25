@@ -1,6 +1,6 @@
 {meta: title Rhythm of the Rain}
 {meta: artist Everly Brothers}
-{meta: writer John Gummoe}
+{meta: composer John Gummoe}
 
 {start_of_verse: Verse 1}
 [C]Listen to the rhythm of the falling [F]rain

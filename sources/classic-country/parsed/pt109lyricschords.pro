@@ -1,6 +1,6 @@
 {meta: title P. T. 109}
 {meta: artist Jimmy Dean}
-{meta: writer Marijohn Wilkin & Fred Burch}
+{meta: composer Marijohn Wilkin & Fred Burch}
 
 {start_of_verse: Verse 1}
 [C]In forty-three they put to [F]sea

@@ -1,6 +1,6 @@
 {meta: title Play The Star Spangled Banner Over Me}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene Martin}
+{meta: composer Lloene Martin}
 
 {start_of_verse: Verse 1}
 [C]Play the Star Spangled Banner over [G7]me

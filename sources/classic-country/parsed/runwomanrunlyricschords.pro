@@ -1,6 +1,6 @@
 {meta: title Run Woman Run}
 {meta: artist Tammy Wynette}
-{meta: writer Ann Booth, Duke Goff, Dan Hoffman}
+{meta: composer Ann Booth, Duke Goff, Dan Hoffman}
 
 {start_of_verse: Verse 1}
 [G]Today's the day you're telling [C]him that he's [G]got to [D7]set you [Em]free

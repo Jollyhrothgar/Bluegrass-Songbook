@@ -1,6 +1,6 @@
 {meta: title Your Love Died Like The Rose}
 {meta: artist The Johnson Mountain Boys}
-{meta: writer Dudley Dale Connell}
+{meta: composer Dudley Dale Connell}
 
 {start_of_verse: Verse 1}
 [C]The rose that I planted with [F]such tender [C]care

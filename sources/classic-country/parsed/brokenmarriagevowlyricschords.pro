@@ -1,6 +1,6 @@
 {meta: title Broken Marriage Vow}
 {meta: artist Kitty Wells}
-{meta: writer Johnnie Bailes and Walter Bailes}
+{meta: composer Johnnie Bailes and Walter Bailes}
 
 {start_of_verse: Verse 1}
 [C]I got the letter darling read it [F]o'er and o'er [C]again

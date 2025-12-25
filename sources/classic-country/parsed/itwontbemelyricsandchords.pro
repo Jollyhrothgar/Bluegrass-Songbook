@@ -1,6 +1,6 @@
 {meta: title It Won't Be Me}
 {meta: artist Tanya Tucker}
-{meta: writer Tom Shapiro and Chris Waters}
+{meta: composer Tom Shapiro and Chris Waters}
 
 {start_of_verse: Verse 1}
 [G]Somebody oughta tell that girl 

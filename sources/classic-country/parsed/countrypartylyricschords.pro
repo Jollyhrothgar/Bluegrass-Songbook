@@ -1,6 +1,6 @@
 {meta: title Country Party}
 {meta: artist Johnny Lee}
-{meta: writer Ricky Nelson}
+{meta: composer Ricky Nelson}
 
 {start_of_verse: Verse 1}
 [C]I went to a country [F]party remi[C]nisce with my old [F]friends

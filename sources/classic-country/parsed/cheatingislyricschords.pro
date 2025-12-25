@@ -1,6 +1,6 @@
 {meta: title Cheating Is}
 {meta: artist Barbara Fairchild}
-{meta: writer Rafe VanHoy}
+{meta: composer Rafe VanHoy}
 
 {start_of_verse: Verse 1}
 [C]Cheating is a thing that starts when you bring

@@ -1,6 +1,6 @@
 {meta: title Destination Life}
 {meta: artist Rhonda Vincent}
-{meta: writer Donna Noeline Dean}
+{meta: composer Donna Noeline Dean}
 
 {start_of_verse: Verse 1}
 [G]Picking up her clothes from the bedroom [C]floor

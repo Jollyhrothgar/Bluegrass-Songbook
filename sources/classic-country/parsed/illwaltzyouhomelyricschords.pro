@@ -1,6 +1,6 @@
 {meta: title I'll Waltz You Home}
 {meta: artist Ronnie Cox}
-{meta: writer Ronnie Cox and Russell Smith}
+{meta: composer Ronnie Cox and Russell Smith}
 
 {start_of_verse: Verse 1}
 [G]I’ll Waltz you hom[C]e   

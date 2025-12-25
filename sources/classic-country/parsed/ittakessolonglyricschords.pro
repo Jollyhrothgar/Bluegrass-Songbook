@@ -1,6 +1,6 @@
 {meta: title It Takes So Long}
 {meta: artist Jim Ed Brown}
-{meta: writer Helen Cornelius}
+{meta: composer Helen Cornelius}
 
 {start_of_verse: Verse 1}
 [G7]It takes [C]so long so [F]long to say good[C]night

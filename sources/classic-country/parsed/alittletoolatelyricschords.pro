@@ -1,6 +1,6 @@
 {meta: title A Little Too Late}
 {meta: artist Toby Keith}
-{meta: writer Dean Dillon, Scott Emerick, Toby Keith}
+{meta: composer Dean Dillon, Scott Emerick, Toby Keith}
 
 {start_of_verse: Verse 1}
 [C]It's a little too late I'm a little too [Em]gone

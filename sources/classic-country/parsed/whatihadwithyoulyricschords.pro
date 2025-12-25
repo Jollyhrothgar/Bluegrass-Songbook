@@ -1,6 +1,6 @@
 {meta: title What I Had With You}
 {meta: artist Wilburn Brothers}
-{meta: writer Curly Putman and Sonny Throckmorton}
+{meta: composer Curly Putman and Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]All I want is what I had with [F]you

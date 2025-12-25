@@ -1,6 +1,6 @@
 {meta: title Who'll Turn Out The Lights}
 {meta: artist Mel Street}
-{meta: writer Wayne Kemp and Mack Vickery}
+{meta: composer Wayne Kemp and Mack Vickery}
 
 {start_of_verse: Verse 1}
 [C]I wonder who’ll turn out the lights in [F]your world [C]tonight

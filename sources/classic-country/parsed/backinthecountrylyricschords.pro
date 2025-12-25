@@ -1,6 +1,6 @@
 {meta: title Back In The Country}
 {meta: artist Connie Smith}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]When was the last time you got [Dm]up before the sun

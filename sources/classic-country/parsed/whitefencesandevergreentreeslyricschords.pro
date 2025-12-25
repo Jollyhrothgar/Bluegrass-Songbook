@@ -1,6 +1,6 @@
 {meta: title White Fences And Evergreen Trees}
 {meta: artist Ferlin Husky}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]If I could paint [F]pictures I'd [G7]paint one for [C]you

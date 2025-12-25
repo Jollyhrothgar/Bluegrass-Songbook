@@ -1,6 +1,6 @@
 {meta: title Sweet Baby Jesus}
 {meta: artist Gatlin Brothers}
-{meta: writer Mary Ann Kennedy, Pamela Rose, Pat Bunch}
+{meta: composer Mary Ann Kennedy, Pamela Rose, Pat Bunch}
 
 {start_of_verse: Verse 1}
 [G]A child like face through a crown of thorns

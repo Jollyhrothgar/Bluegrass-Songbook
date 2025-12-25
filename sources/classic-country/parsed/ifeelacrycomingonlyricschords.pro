@@ -1,6 +1,6 @@
 {meta: title I Feel a Cry Coming On}
 {meta: artist Hank Locklin}
-{meta: writer Ann Prince}
+{meta: composer Ann Prince}
 
 {start_of_verse: Verse 1}
 [G]I feel a cry coming [C]on  [D7]mmm  [G]mmm

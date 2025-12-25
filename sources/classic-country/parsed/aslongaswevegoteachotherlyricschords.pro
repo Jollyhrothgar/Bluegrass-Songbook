@@ -1,6 +1,6 @@
 {meta: title As Long As We've Got Each Other}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]As long as we've got each [G]other [C]to love and to [G]share

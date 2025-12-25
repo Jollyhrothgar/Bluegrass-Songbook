@@ -1,6 +1,6 @@
 {meta: title Hem Of His Garment}
 {meta: artist Cowboy Copas}
-{meta: writer Bill Starling}
+{meta: composer Bill Starling}
 
 {start_of_verse: Verse 1}
 [C]Once I was sinking so [F]low in sins [C]place

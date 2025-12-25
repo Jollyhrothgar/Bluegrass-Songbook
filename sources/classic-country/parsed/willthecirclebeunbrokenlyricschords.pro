@@ -1,6 +1,6 @@
 {meta: title Will the Circle Be Unbroken}
 {meta: artist George Jones}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]I was standing by my window

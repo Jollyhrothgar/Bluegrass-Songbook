@@ -1,6 +1,6 @@
 {meta: title Jesus Don't Give Up On Me}
 {meta: artist Hank Williams Jr.}
-{meta: writer Jack Clement and Alex Zanetis}
+{meta: composer Jack Clement and Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [G]Jesus I know I've [C]neglected to [G]do

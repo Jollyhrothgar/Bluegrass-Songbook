@@ -1,6 +1,6 @@
 {meta: title When Baby Gets The Blues}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Charles Phipps}
+{meta: composer Charles Phipps}
 
 {start_of_verse: Verse 1}
 [C]For months she's a perfect wife and a [G7]mother

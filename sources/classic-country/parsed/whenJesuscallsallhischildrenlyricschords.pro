@@ -1,6 +1,6 @@
 {meta: title When Jesus Calls All His Children}
 {meta: artist Buck Owens}
-{meta: writer Red Simpson and Buck Owens}
+{meta: composer Red Simpson and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]Someday [C]someway [D7]somewhere you will [G]see 

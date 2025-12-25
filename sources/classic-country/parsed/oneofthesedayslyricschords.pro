@@ -1,6 +1,6 @@
 {meta: title One Of These Days}
 {meta: artist Emmylou Harris}
-{meta: writer Earl Montgomery}
+{meta: composer Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [G]I won't have to chop no wood

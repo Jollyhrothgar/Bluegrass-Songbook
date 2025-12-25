@@ -1,6 +1,6 @@
 {meta: title Christmas In Cabo San Lucas}
 {meta: artist Merle Haggard}
-{meta: writer Douglas W. Colosio, Jame Dyar, Scott Joss}
+{meta: composer Douglas W. Colosio, Jame Dyar, Scott Joss}
 
 {start_of_verse: Verse 1}
 [C]Christmas in [G7]Cabo San [C]Lucas

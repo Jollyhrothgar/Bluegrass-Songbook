@@ -1,6 +1,6 @@
 {meta: title Old Home Place}
 {meta: artist J.D. Crowe and the New South}
-{meta: writer Dean Webb and Mitchell Jayne}
+{meta: composer Dean Webb and Mitchell Jayne}
 
 {start_of_verse: Verse 1}
 [G]It's been ten long [B7]years since I [C]left my [G]home

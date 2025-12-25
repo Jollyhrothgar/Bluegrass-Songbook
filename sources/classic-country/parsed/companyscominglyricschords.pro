@@ -1,6 +1,6 @@
 {meta: title Company's Coming}
 {meta: artist Porter Wagoner}
-{meta: writer Johnny Mullins}
+{meta: composer Johnny Mullins}
 
 {start_of_verse: Verse 1}
 [C]Oh mama I'm excited I'm [F]almost out of [C]breath

@@ -1,6 +1,6 @@
 {meta: title Maybe I Should Have Been Listening}
 {meta: artist Gene Watson}
-{meta: writer Buzz Rabin}
+{meta: composer Buzz Rabin}
 
 {start_of_verse: Verse 1}
 [C]Here you are back on my mind where you stay quite a [F]lot

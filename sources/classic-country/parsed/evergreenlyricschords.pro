@@ -1,6 +1,6 @@
 {meta: title Evergreen}
 {meta: artist Roy Orbison}
-{meta: writer Joe Tanner}
+{meta: composer Joe Tanner}
 
 {start_of_verse: Verse 1}
 [C]Sometimes love will [Em]bloom in the [G7][F]springtime

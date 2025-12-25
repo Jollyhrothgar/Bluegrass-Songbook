@@ -1,6 +1,6 @@
 {meta: title Day Dreaming}
 {meta: artist Wanda Jackson}
-{meta: writer William Cantrell, Quinton Claunch, Bud Deckelman}
+{meta: composer William Cantrell, Quinton Claunch, Bud Deckelman}
 
 {start_of_verse: Verse 1}
 [C]You're the sweetest daydream that I've ever [G7]known

@@ -1,6 +1,6 @@
 {meta: title Weaker Moments}
 {meta: artist Ferlin Husky}
-{meta: writer Ray Buzzeo}
+{meta: composer Ray Buzzeo}
 
 {start_of_verse: Verse 1}
 [G]I said I'm [C]leavin' this time we're [D7]through

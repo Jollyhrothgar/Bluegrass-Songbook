@@ -1,6 +1,6 @@
 {meta: title Working On A Feeling}
 {meta: artist Tommy Cash}
-{meta: writer Red Lane, Royce Porter, Tom McKeon}
+{meta: composer Red Lane, Royce Porter, Tom McKeon}
 
 {start_of_verse: Verse 1}
 [C]Love is all around us this we must [Am]believe

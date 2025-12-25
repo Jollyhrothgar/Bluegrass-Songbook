@@ -1,6 +1,6 @@
 {meta: title Nothing Sure Looked Good on You}
 {meta: artist Gene Watson}
-{meta: writer Jim Rushing}
+{meta: composer Jim Rushing}
 
 {start_of_verse: Verse 1}
 [G]You found your greener pastures in a mansion on a [C]hill

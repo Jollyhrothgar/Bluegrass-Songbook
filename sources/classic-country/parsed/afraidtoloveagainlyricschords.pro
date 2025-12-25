@@ -1,6 +1,6 @@
 {meta: title Afraid To Love Again}
 {meta: artist Porter Wagoner}
-{meta: writer Jerry Chesnut and Theresa Beaty}
+{meta: composer Jerry Chesnut and Theresa Beaty}
 
 {start_of_verse: Verse 1}
 [C]If every time that you got hurt it left a [G7]scar

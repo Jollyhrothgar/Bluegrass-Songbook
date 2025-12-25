@@ -1,6 +1,6 @@
 {meta: title Quittin' Time}
 {meta: artist Keith Whitley}
-{meta: writer Ron Hellard}
+{meta: composer Ron Hellard}
 
 {start_of_verse: Verse 1}
 [G]Quitin' time quittin' time

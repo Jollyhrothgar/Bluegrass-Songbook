@@ -1,6 +1,6 @@
 {meta: title Blue Darlin'}
 {meta: artist Leona Williams}
-{meta: writer Leslie Lyle}
+{meta: composer Leslie Lyle}
 
 {start_of_verse: Verse 1}
 [C]I was a fool broke every [C7]rule blue [F]darlin'

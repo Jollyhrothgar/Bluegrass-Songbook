@@ -1,6 +1,6 @@
 {meta: title Twas The Dawn Of A Beautiful Day}
 {meta: artist Eddy Arnold}
-{meta: writer Glenn Wagoner}
+{meta: composer Glenn Wagoner}
 
 {start_of_verse: Verse 1}
 [G]Twas the dawn of a beautiful [C]beautiful [G]day

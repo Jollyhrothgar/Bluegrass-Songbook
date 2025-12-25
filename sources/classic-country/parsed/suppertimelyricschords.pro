@@ -1,6 +1,6 @@
 {meta: title Suppertime}
 {meta: artist Jim Reeves}
-{meta: writer Ira F Stanphill}
+{meta: composer Ira F Stanphill}
 
 {start_of_verse: Verse 1}
 [G]Many years ago [C]in days of [G]childhood 

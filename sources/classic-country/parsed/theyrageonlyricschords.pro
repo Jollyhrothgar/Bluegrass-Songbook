@@ -1,6 +1,6 @@
 {meta: title They Rage On}
 {meta: artist Dan Seals}
-{meta: writer Bob McDill and Dan Seals}
+{meta: composer Bob McDill and Dan Seals}
 
 {start_of_verse: Verse 1}
 [C]She's a small town girl with no [G7]room to grow

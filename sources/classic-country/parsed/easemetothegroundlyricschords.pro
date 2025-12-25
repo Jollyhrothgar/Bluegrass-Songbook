@@ -1,6 +1,6 @@
 {meta: title Ease Me To The Ground}
 {meta: artist Johnny Bush}
-{meta: writer Bud Reneau}
+{meta: composer Bud Reneau}
 
 {start_of_verse: Verse 1}
 [C]I've never had to live without your love

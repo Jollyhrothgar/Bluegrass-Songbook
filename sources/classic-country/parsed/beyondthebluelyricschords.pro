@@ -1,4 +1,4 @@
-{meta: writer Beth Nielsen Chapman}
+{meta: composer Beth Nielsen Chapman}
 
 {start_of_verse: Verse 1}
 Beyond The Blue  

@@ -1,6 +1,6 @@
 {meta: title Rosa Rio}
 {meta: artist Jim Reeves}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]My heart is in [C]Rosa [G]Rio under the Argentine [D7]skies

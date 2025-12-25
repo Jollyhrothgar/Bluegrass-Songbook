@@ -1,6 +1,6 @@
 {meta: title Night Life}
 {meta: artist Ray Price}
-{meta: writer Willie Nelson, Paul Buskirk, Walt Breeland}
+{meta: composer Willie Nelson, Paul Buskirk, Walt Breeland}
 
 {start_of_verse: Verse 1}
 [C]When the evening sun goes down

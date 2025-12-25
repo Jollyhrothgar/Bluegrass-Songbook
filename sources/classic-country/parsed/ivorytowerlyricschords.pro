@@ -1,6 +1,6 @@
 {meta: title Ivory Tower}
 {meta: artist Hank Locklin}
-{meta: writer Jack Fulton and Lois Steele}
+{meta: composer Jack Fulton and Lois Steele}
 
 {start_of_verse: Verse 1}
 [C]Come [G7]down come down from your ivory [C]tower

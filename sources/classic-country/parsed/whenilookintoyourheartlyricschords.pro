@@ -1,6 +1,6 @@
 {meta: title When I Look Into Your Heart}
 {meta: artist Vince Gill}
-{meta: writer Vince Gill}
+{meta: composer Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]When I look into your [Em]heart 

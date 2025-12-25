@@ -1,6 +1,6 @@
 {meta: title Johnny B. Goode}
 {meta: artist Buck Owens}
-{meta: writer Chuck Berry}
+{meta: composer Chuck Berry}
 
 {start_of_verse: Verse 1}
 [G]Deep down in Louisiana close to New Orleans

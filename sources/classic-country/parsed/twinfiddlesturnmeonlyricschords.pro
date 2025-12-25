@@ -1,6 +1,6 @@
 {meta: title Twin Fiddles Turn Me On}
 {meta: artist Curtis Potter}
-{meta: writer Mel Holt}
+{meta: composer Mel Holt}
 
 {start_of_verse: Verse 1}
 [G]Twin fiddles watch you turn me on 

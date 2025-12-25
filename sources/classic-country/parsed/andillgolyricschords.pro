@@ -1,6 +1,6 @@
 {meta: title And I'll Go}
 {meta: artist The Everly Brothers}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [C]Look at me and tell me [Am]you don’t want me around [Em]anymore

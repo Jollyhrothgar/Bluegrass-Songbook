@@ -1,6 +1,6 @@
 {meta: title Three Minutes At A Time}
 {meta: artist Gene Watson}
-{meta: writer Tim Mensey and Keith Stegall}
+{meta: composer Tim Mensey and Keith Stegall}
 
 {start_of_verse: Verse 1}
 [C]With a pocket full of quarters and [C7]time on my [F]hands

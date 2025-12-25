@@ -1,6 +1,6 @@
 {meta: title I Want To Be Free}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Leiber and Mike Stoller}
+{meta: composer Jerry Leiber and Mike Stoller}
 
 {start_of_verse: Verse 1}
 [G7]There's no [C]joy in my [G7]heart only [C]sorrow[G7]

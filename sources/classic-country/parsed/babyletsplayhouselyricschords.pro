@@ -1,6 +1,6 @@
 {meta: title Baby Let's Play House (I Wanna Play House With You)}
 {meta: artist Buddy Holly}
-{meta: writer Arthur Neal Gunter}
+{meta: composer Arthur Neal Gunter}
 
 {start_of_verse: Verse 1}
 [C]Baby baby baby baby baby baby baby babe

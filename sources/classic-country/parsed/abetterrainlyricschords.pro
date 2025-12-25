@@ -1,6 +1,6 @@
 {meta: title A Better Rain}
 {meta: artist George Strait}
-{meta: writer David Cory Lee and Tony Lane}
+{meta: composer David Cory Lee and Tony Lane}
 
 {start_of_verse: Verse 1}
 [C]Baby what do you say when love comes [F]down on you

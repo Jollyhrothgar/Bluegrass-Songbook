@@ -1,6 +1,6 @@
 {meta: title Don't Say Goodnight Say Good Morning}
 {meta: artist Reba McEntire}
-{meta: writer Patti Ryan and Wanda Mallette}
+{meta: composer Patti Ryan and Wanda Mallette}
 
 {start_of_verse: Verse 1}
 [G]Thought we could make it on our [C]own 

@@ -1,6 +1,6 @@
 {meta: title Sioux City Sue}
 {meta: artist Moe Bandy}
-{meta: writer Ray Freedman and Dick Thomas}
+{meta: composer Ray Freedman and Dick Thomas}
 
 {start_of_verse: Verse 1}
 [C]Sioux City Sue [D7]Sioux City Sue

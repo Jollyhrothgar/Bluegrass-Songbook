@@ -1,6 +1,6 @@
 {meta: title I'd Do It All Over Again}
 {meta: artist Wanda Jackson}
-{meta: writer Ron Mason}
+{meta: composer Ron Mason}
 
 {start_of_verse: Verse 1}
 [C]You turned down the love that I tried to give

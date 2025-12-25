@@ -1,6 +1,6 @@
 {meta: title Couldn't Love Have Picked A Better Place To Die}
 {meta: artist Gene Watson}
-{meta: writer Curly Putman and Bucky Jones}
+{meta: composer Curly Putman and Bucky Jones}
 
 {start_of_verse: Verse 1}
 [C]Of all the people in this world [F]why you and [D7]I

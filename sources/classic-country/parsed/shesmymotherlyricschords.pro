@@ -1,6 +1,6 @@
 {meta: title She’s My Mother}
 {meta: artist George Jones}
-{meta: writer Charlie Louvin, Eddie Hill, Ira Louvin}
+{meta: composer Charlie Louvin, Eddie Hill, Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]I'm thinking of a little [F]lady 

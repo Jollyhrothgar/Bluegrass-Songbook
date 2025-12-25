@@ -1,6 +1,6 @@
 {meta: title Wreck On The Highway}
 {meta: artist Ricky Skaggs}
-{meta: writer Dorsey Dixon [3/4 time]}
+{meta: composer Dorsey Dixon [3/4 time]}
 
 {start_of_verse: Verse 1}
 [G]Who did you say it was brother

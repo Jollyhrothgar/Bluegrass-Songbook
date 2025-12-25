@@ -1,6 +1,6 @@
 {meta: title Left Over Corner Of Your Heart}
 {meta: artist Dottie West}
-{meta: writer Dottie West, Bill West, Charlie Dick}
+{meta: composer Dottie West, Bill West, Charlie Dick}
 
 {start_of_verse: Verse 1}
 [C]You tell me you [G7]love her with [C]all of your heart

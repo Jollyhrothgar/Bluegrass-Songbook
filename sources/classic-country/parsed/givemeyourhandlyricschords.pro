@@ -1,6 +1,6 @@
 {meta: title Give Me Your Hand}
 {meta: artist Doyle Lawson}
-{meta: writer Jimmy Martin and Paul Williams}
+{meta: composer Jimmy Martin and Paul Williams}
 
 {start_of_verse: Verse 1}
 [C]As an army we're marching toward heaven

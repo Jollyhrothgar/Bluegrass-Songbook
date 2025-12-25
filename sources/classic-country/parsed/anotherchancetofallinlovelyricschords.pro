@@ -1,6 +1,6 @@
 {meta: title Another Chance To Fall In Love}
 {meta: artist Kitty Wells}
-{meta: writer Bill C. Phillips}
+{meta: composer Bill C. Phillips}
 
 {start_of_verse: Verse 1}
 [G]Let’s give [C]ourselves another [G]chance to [D7]fall in [G]love

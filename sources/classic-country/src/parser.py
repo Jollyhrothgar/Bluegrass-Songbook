@@ -1371,7 +1371,7 @@ class ChordProGenerator:
             lines.append(f"{{meta: artist {artist}}}")
 
         if song.composer:
-            lines.append(f"{{meta: writer {song.composer}}}")
+            lines.append(f"{{meta: composer {song.composer}}}")
 
         if song.lyricist:
             lines.append(f"{{meta: lyricist {song.lyricist}}}")

@@ -1,6 +1,6 @@
 {meta: title Paper Love Affair}
 {meta: artist Jimmy Dean}
-{meta: writer Grace Kiniken}
+{meta: composer Grace Kiniken}
 
 {start_of_verse: Verse 1}
 [D7]Your love for [G]me was just a paper love [D7]affair

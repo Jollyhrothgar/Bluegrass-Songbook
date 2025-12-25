@@ -1,6 +1,6 @@
 {meta: title Hope Of A Broken Heart}
 {meta: artist Cowboy Copas}
-{meta: writer Lois Mann and Lloyd Copas}
+{meta: composer Lois Mann and Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [C]You broke my [G7]heart when you [C]went [G7]away

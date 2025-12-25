@@ -1,6 +1,6 @@
 {meta: title I'm As Free As The Breeze}
 {meta: artist Ernest Tubb}
-{meta: writer Rex Alsie Griffin and Ernest Tubb}
+{meta: composer Rex Alsie Griffin and Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]I'm as free as the breeze [Am]happy as you please

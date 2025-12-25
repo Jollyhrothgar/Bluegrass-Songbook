@@ -1,6 +1,6 @@
 {meta: title I Know Who Holds Tomorrow}
 {meta: artist Faron Young}
-{meta: writer Ira P. Stanphill}
+{meta: composer Ira P. Stanphill}
 
 {start_of_verse: Verse 1}
 [G]I don't know about tomorrow

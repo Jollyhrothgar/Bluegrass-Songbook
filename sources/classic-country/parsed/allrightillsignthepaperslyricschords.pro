@@ -1,6 +1,6 @@
 {meta: title All Right I'll Sign The Papers}
 {meta: artist Ray Price}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]I've tried so hard to keep our [C7]home [F]alive 

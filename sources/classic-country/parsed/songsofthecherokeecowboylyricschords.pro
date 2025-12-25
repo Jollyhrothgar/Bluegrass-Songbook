@@ -1,6 +1,6 @@
 {meta: title Songs Of The Cherokee Cowboy}
 {meta: artist Willie Nelson}
-{meta: writer Curtis Potter and Willie Nelson}
+{meta: composer Curtis Potter and Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]When the neon lights come on

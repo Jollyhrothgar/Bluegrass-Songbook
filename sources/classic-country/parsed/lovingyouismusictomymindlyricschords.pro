@@ -1,6 +1,6 @@
 {meta: title Loving You Is Music To My Mind}
 {meta: artist Vern Gosdin}
-{meta: writer Vernon L. Reed &amp; Rex Gosdin}
+{meta: composer Vernon L. Reed &amp; Rex Gosdin}
 
 {start_of_verse: Verse 1}
 [G]When the words have all been said

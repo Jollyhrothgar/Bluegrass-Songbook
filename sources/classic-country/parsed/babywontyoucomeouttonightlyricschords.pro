@@ -1,6 +1,6 @@
 {meta: title Baby Won't You Come Out Tonight}
 {meta: artist Buddy Holly}
-{meta: writer Buddy Holly and Don Guess}
+{meta: composer Buddy Holly and Don Guess}
 
 {start_of_verse: Verse 1}
 [C]Well go baby go baby go baby go baby

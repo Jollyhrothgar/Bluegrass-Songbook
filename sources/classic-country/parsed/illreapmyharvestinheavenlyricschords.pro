@@ -1,6 +1,6 @@
 {meta: title I'll Reap My Harvest In Heaven}
 {meta: artist Kitty Wells}
-{meta: writer Floyd Jenkins}
+{meta: composer Floyd Jenkins}
 
 {start_of_verse: Verse 1}
 [G]The time has come to depart from this world

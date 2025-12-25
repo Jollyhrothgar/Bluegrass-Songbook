@@ -1,6 +1,6 @@
 {meta: title Anna}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
-{meta: writer Fred Burch}
+{meta: composer Fred Burch}
 
 {start_of_verse: Verse 1}
 [G]This old house is falling [Dm]down

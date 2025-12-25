@@ -1,6 +1,6 @@
 {meta: title I Wish I Could Say The Same}
 {meta: artist Wynn Stewart}
-{meta: writer Bobby Bare, Harlan Howard, Wynn Stewart}
+{meta: composer Bobby Bare, Harlan Howard, Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [G]You thought your freedom you're [C]taking

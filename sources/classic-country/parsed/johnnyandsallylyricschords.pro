@@ -1,6 +1,6 @@
 {meta: title Johnny And Sally}
 {meta: artist Doyle Lawson}
-{meta: writer John Michael Keith, David H. Lindsey, Matt Lindsey}
+{meta: composer John Michael Keith, David H. Lindsey, Matt Lindsey}
 
 {start_of_verse: Verse 1}
 [G]Johnny and Sally [C]grew up in the mountains

@@ -1,6 +1,6 @@
 {meta: title Please Don't Hurt Me}
 {meta: artist Norma Jean}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I can't stand another [F]broken heart 

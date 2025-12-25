@@ -1,6 +1,6 @@
 {meta: title City Limits Of Heaven}
 {meta: artist Betty Jean Robinson}
-{meta: writer Roscoe Reed}
+{meta: composer Roscoe Reed}
 
 {start_of_verse: Verse 1}
 [C]Some wonderful day we're [F]leaving for [C]glory

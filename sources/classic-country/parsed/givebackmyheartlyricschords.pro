@@ -1,6 +1,6 @@
 {meta: title Give Back My Heart}
 {meta: artist Billy Walker}
-{meta: writer Billy Walker and Freddie Hart}
+{meta: composer Billy Walker and Freddie Hart}
 
 {start_of_verse: Verse 1}
 [C]Give back my heart  [C7]for our love is [F]over

@@ -1,6 +1,6 @@
 {meta: title Band Keeps Playing On}
 {meta: artist Charlie Walker}
-{meta: writer Red Simpson and Fuzzy Owen}
+{meta: composer Red Simpson and Fuzzy Owen}
 
 {start_of_verse: Verse 1}
 [C]You walked in with me but you walked out with [F]someone else

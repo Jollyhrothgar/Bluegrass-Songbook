@@ -1,6 +1,6 @@
 {meta: title All Together Now}
 {meta: artist Stonewall Jackson}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [G]All together now everybody drink  (everybody [D7]drink)

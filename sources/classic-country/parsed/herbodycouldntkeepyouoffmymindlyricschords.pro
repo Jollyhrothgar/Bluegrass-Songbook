@@ -1,6 +1,6 @@
 {meta: title Her Body Couldn’t Keep You Off my Mind}
 {meta: artist Gene Watson}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]I could call her up [F]again tonight

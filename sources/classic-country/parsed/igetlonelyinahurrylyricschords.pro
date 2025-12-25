@@ -1,6 +1,6 @@
 {meta: title I Get Lonely In A Hurry}
 {meta: artist George Jones}
-{meta: writer George Jones and Johnny Mathis}
+{meta: composer George Jones and Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [G]Well I get [C]lonely in a hurry if you [G]left for a minute

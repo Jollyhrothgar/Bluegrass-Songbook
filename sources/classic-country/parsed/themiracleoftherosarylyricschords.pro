@@ -1,6 +1,6 @@
 {meta: title The Miracle Of The Rosary}
 {meta: artist Elvis Presley}
-{meta: writer Lee Denson}
+{meta: composer Lee Denson}
 
 {start_of_verse: Verse 1}
 [G]Oh blessed mother we pray to [C]Thee

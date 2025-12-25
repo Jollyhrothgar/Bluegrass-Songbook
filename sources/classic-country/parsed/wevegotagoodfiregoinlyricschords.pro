@@ -1,6 +1,6 @@
 {meta: title We've Got A Good Fire Goin'}
 {meta: artist Don Williams}
-{meta: writer Dave Loggins}
+{meta: composer Dave Loggins}
 
 {start_of_verse: Verse 1}
 [C]There's a storm rolling over the hill and the [F]willow [G7]tree's a [C]blowin'

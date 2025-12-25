@@ -1,6 +1,6 @@
 {meta: title Answer to Your Letter}
 {meta: artist Johnny Rodriguez}
-{meta: writer Tom T. Hall and Johnny Rodriguez}
+{meta: composer Tom T. Hall and Johnny Rodriguez}
 
 {start_of_verse: Verse 1}
 [G]Your letter came to me today  I noticed no return [C]address

@@ -1,6 +1,6 @@
 {meta: title Sweet And Tender Times}
 {meta: artist Don Gibson}
-{meta: writer Shel Silverstein and Don Gibson}
+{meta: composer Shel Silverstein and Don Gibson}
 
 {start_of_verse: Verse 1}
 [G]When the last song is written [D7]and the story’s told

@@ -1,6 +1,6 @@
 {meta: title King Of A Lonely Castle}
 {meta: artist Willie Nelson}
-{meta: writer Kenny Devine}
+{meta: composer Kenny Devine}
 
 {start_of_verse: Verse 1}
 [G7]The courtyard is [C]empty and the [G7]drawbridge is [C]high

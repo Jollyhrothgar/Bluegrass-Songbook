@@ -1,6 +1,6 @@
 {meta: title Little Sandy Sleighfoot}
 {meta: artist Jimmy Dean}
-{meta: writer Joseph E. Savarino and Philip M. Crane}
+{meta: composer Joseph E. Savarino and Philip M. Crane}
 
 {start_of_verse: Verse 1}
 [C]His name was Sandy [F]Sleighfoot

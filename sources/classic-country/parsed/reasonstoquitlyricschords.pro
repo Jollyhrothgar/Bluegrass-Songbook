@@ -1,6 +1,6 @@
 {meta: title Reasons to Quit}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 [G]Reasons to quit the [C]smoke and beer don't do me like [G]before

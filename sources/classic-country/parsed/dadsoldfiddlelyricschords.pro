@@ -1,6 +1,6 @@
 {meta: title Dad's Old Fiddle}
 {meta: artist Merle Haggard}
-{meta: writer Glenn Martin}
+{meta: composer Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]There's two nails in the wall above the [F]door in the [C]hall

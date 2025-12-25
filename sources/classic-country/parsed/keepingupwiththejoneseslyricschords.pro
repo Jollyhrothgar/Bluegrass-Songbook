@@ -1,6 +1,6 @@
 {meta: title Keeping Up With The Joneses}
 {meta: artist Faron Young}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]Well the Joneses [G7]bought a new house we [C]did too

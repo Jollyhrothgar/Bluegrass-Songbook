@@ -1,6 +1,6 @@
 {meta: title Tattletale Eyes}
 {meta: artist George Jones}
-{meta: writer J. Emerson}
+{meta: composer J. Emerson}
 
 {start_of_verse: Verse 1}
 [C]Here we are [F]staring at each [C]other

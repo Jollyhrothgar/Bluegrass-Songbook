@@ -1,6 +1,6 @@
 {meta: title Daddy Number Two}
 {meta: artist Johnny Lee}
-{meta: writer Glenn Barber and Joe Melson}
+{meta: composer Glenn Barber and Joe Melson}
 
 {start_of_verse: Verse 1}
 [G]I don't mind his daddy's picture on our table

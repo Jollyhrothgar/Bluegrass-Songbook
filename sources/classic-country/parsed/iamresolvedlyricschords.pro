@@ -1,6 +1,6 @@
 {meta: title I Am Resolved}
 {meta: artist Jamie Dailey and Darrin Vincent}
-{meta: writer Lewis Hartsough and Gary Lanier}
+{meta: composer Lewis Hartsough and Gary Lanier}
 
 {start_of_verse: Verse 1}
 [C]I am resolved no [F]longer to linger

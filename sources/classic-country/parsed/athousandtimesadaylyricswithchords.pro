@@ -1,6 +1,6 @@
 {meta: title A Thousand Times A Day}
 {meta: artist Patty Loveless}
-{meta: writer Gary Burr and Gary Nicholson}
+{meta: composer Gary Burr and Gary Nicholson}
 
 {start_of_verse: Verse 1}
 [G]I gave up cigarettes haven't had to light one yet 

@@ -1,6 +1,6 @@
 {meta: title For The Last Time}
 {meta: artist Stonewall Jackson}
-{meta: writer Clyde Gordon}
+{meta: composer Clyde Gordon}
 
 {start_of_verse: Verse 1}
 [C]Every time we meet it's for the last [F]time

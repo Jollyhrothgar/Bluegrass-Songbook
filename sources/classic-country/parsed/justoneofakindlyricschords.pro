@@ -1,6 +1,6 @@
 {meta: title Just One Of A Kind}
 {meta: artist Rhonda Vincent}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [G]Within the prison of my soul 

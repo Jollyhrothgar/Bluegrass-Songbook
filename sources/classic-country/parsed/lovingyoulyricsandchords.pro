@@ -1,6 +1,6 @@
 {meta: title Loving You}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo and Al Anderson}
+{meta: composer Raul Malo and Al Anderson}
 
 {start_of_verse: Verse 1}
 [C]You're everything I'll ever need [G7]beside me

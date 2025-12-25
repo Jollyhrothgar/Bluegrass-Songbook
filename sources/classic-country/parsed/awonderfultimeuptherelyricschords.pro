@@ -1,6 +1,6 @@
 {meta: title A Wonderful Time Up There}
 {meta: artist Pat Boone}
-{meta: writer Lee Roy Abernathy}
+{meta: composer Lee Roy Abernathy}
 
 {start_of_verse: Verse 1}
 [G]Everybody's gonna have [G7]religion and glory

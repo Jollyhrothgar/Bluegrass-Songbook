@@ -1,6 +1,6 @@
 {meta: title When The Cottonwoods Are Yellow}
 {meta: artist Red Steagall}
-{meta: writer Andy Wilkinson}
+{meta: composer Andy Wilkinson}
 
 {start_of_verse: Verse 1}
 [C]The works is almost over

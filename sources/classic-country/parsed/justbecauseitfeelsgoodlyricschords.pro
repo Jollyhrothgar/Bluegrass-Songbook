@@ -1,6 +1,6 @@
 {meta: title Just Because It Feels Good}
 {meta: artist Ronnie Milsap}
-{meta: writer Waylon D. Holyfield, Robert Lee McDill}
+{meta: composer Waylon D. Holyfield, Robert Lee McDill}
 
 {start_of_verse: Verse 1}
 [G]One more round of [D7]drinks is on the [G]table

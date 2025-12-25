@@ -1,6 +1,6 @@
 {meta: title How Are Things In Clay Kentucky}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [G7]How are [C]things in Clay, Kentucky [C7]bet you [F]thought I'd never [C]care

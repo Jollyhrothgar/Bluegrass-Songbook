@@ -1,6 +1,6 @@
 {meta: title Husband Hunting}
 {meta: artist Lynn Anderson}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]I'm lonely and I'm lookin' for a husband

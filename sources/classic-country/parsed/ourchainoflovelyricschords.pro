@@ -1,6 +1,6 @@
 {meta: title Our Chain Of Love}
 {meta: artist Jack Greene}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]When the [F]chain of love is [C]broken 

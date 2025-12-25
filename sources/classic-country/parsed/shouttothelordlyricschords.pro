@@ -1,6 +1,6 @@
 {meta: title Shout To The Lord}
 {meta: artist Randy Travis}
-{meta: writer Darlene Zschech}
+{meta: composer Darlene Zschech}
 
 {start_of_verse: Verse 1}
 [G]My Jesus [D7]my Savior

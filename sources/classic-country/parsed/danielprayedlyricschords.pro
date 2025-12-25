@@ -1,6 +1,6 @@
 {meta: title Daniel Prayed}
 {meta: artist Patty Loveless}
-{meta: writer Ralph Stanley and G.T. Speer}
+{meta: composer Ralph Stanley and G.T. Speer}
 
 {start_of_verse: Verse 1}
 [C]I read about a man one day

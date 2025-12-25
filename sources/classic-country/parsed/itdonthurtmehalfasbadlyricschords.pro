@@ -1,6 +1,6 @@
 {meta: title It Don't Hurt Me Half As Bad}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen, Bucky Lindsey, Deoin Lay}
+{meta: composer Joe Allen, Bucky Lindsey, Deoin Lay}
 
 {start_of_verse: Verse 1}
 [C]It hurts me just to know I had to leave [F]her

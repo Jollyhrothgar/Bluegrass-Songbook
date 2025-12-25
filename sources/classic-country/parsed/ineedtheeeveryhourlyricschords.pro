@@ -1,6 +1,6 @@
 {meta: title I Need Thee Every Hour}
 {meta: artist Don Gibson}
-{meta: writer Robert Lowry and Annie S. Hawks}
+{meta: composer Robert Lowry and Annie S. Hawks}
 
 {start_of_verse: Verse 1}
 [G]I need Thee every hour most gracious [G][C]Lord

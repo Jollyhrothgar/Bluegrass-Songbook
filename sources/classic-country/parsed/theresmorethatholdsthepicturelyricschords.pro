@@ -1,6 +1,6 @@
 {meta: title There's More That Holds The Picture}
 {meta: artist Larry Sparks}
-{meta: writer Marshal Warwick}
+{meta: composer Marshal Warwick}
 
 {start_of_verse: Verse 1}
 [C]There's sixty years of marriage in that [G7]picture

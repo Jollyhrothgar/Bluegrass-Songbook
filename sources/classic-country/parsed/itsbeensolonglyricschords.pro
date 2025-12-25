@@ -1,6 +1,6 @@
 {meta: title It’s Been So Long}
 {meta: artist Webb Pierce}
-{meta: writer Autry Grisham}
+{meta: composer Autry Grisham}
 
 {start_of_verse: Verse 1}
 [G]It's been so long since we [C]said goodbye

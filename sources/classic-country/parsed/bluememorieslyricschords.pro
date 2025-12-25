@@ -1,6 +1,6 @@
 {meta: title Blue Memories}
 {meta: artist Patty Loveless}
-{meta: writer Paul Kennerley and Karen Brooks}
+{meta: composer Paul Kennerley and Karen Brooks}
 
 {start_of_verse: Verse 1}
 [C]When I close my eyes I almost see

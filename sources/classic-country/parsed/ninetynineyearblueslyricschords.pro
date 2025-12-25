@@ -1,6 +1,6 @@
 {meta: title Ninety Nine Year Blues}
 {meta: artist Hank Snow}
-{meta: writer Jimmie Rodgers and Roy E. Hall}
+{meta: composer Jimmie Rodgers and Roy E. Hall}
 
 {start_of_verse: Verse 1}
 [C]Lawd these ninety nine blues ain't no fancy dream

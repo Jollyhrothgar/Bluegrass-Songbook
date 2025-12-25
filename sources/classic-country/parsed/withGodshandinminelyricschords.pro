@@ -1,6 +1,6 @@
 {meta: title With God's Hand In Mine}
 {meta: artist Slim Whitman}
-{meta: writer Fred J. Coots}
+{meta: composer Fred J. Coots}
 
 {start_of_verse: Verse 1}
 [G7]With [C]God's hand in [A7]mine I [Dm]walk in the [G7]sunshine

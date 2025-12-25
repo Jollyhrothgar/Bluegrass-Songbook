@@ -1,6 +1,6 @@
 {meta: title Red Rocking Chair}
 {meta: artist The Country Gentlemen}
-{meta: writer William York and John Duffy}
+{meta: composer William York and John Duffy}
 
 {start_of_verse: Verse 1}
 [G]Ain't got no use for your red rocking [Em]chair

@@ -1,6 +1,6 @@
 {meta: title Who'll be the First}
 {meta: artist Ray Price}
-{meta: writer Bobby George and Vern Stovall}
+{meta: composer Bobby George and Vern Stovall}
 
 {start_of_verse: Verse 1}
 [G]Everybody told me what a fool I [D7]was

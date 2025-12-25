@@ -1,6 +1,6 @@
 {meta: title Hall Of Shame}
 {meta: artist Gene Pitney}
-{meta: writer George Riddle}
+{meta: composer George Riddle}
 
 {start_of_verse: Verse 1}
 [C]Should they ever build a hall of shame 

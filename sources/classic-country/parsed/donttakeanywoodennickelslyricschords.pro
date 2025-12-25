@@ -1,6 +1,6 @@
 {meta: title Don't Take Any Wooden Nickels}
 {meta: artist Billy Crash Craddock}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]It's been nice it's been [F]fun

@@ -1,6 +1,6 @@
 {meta: title The Other Shoe}
 {meta: artist Marsha Thornton}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [G]It's not like you to be so sweet to [C]me

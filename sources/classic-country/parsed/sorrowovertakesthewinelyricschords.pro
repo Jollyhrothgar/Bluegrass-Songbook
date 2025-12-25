@@ -1,6 +1,6 @@
 {meta: title Sorrow Overtakes The Wine}
 {meta: artist Porter Wagoner}
-{meta: writer Joyce McCord}
+{meta: composer Joyce McCord}
 
 {start_of_verse: Verse 1}
 [C]They say my tears come from the [F]bottle

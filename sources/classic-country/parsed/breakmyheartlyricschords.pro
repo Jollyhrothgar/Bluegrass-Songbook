@@ -1,6 +1,6 @@
 {meta: title Break My Heart}
 {meta: artist Rhonda Vincent}
-{meta: writer Irl Hees}
+{meta: composer Irl Hees}
 
 {start_of_verse: Verse 1}
 [C]You told me one day you'd be [F]mine

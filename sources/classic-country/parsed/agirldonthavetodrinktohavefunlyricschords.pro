@@ -1,6 +1,6 @@
 {meta: title Girl Don't Have To Drink To Have Fun}
 {meta: artist Wanda Jackson}
-{meta: writer Charlie Williams and Joe Nixon}
+{meta: composer Charlie Williams and Joe Nixon}
 
 {start_of_verse: Verse 1}
 [C]I know what you're doing and [C7]I'll save you the [F]trouble

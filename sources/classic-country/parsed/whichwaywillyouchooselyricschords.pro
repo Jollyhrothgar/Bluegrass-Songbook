@@ -1,6 +1,6 @@
 {meta: title Which Way Will You Choose}
 {meta: artist Randy Travis}
-{meta: writer Ron Block}
+{meta: composer Ron Block}
 
 {start_of_verse: Verse 1}
 [Em]As the world becomes entwined in the [D7]lies from Satan's [Em]mind

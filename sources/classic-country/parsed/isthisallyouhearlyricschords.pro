@@ -1,6 +1,6 @@
 {meta: title Is This All You Hear}
 {meta: artist Connie Smith}
-{meta: writer Charlie Williams}
+{meta: composer Charlie Williams}
 
 {start_of_verse: Verse 1}
 [G]Is this all you hear when a [D7]heart breaks

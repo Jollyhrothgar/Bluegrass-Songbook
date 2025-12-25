@@ -1,6 +1,6 @@
 {meta: title To Be Alone}
 {meta: artist Bill Anderson}
-{meta: writer Billy Vaughn}
+{meta: composer Billy Vaughn}
 
 {start_of_verse: Verse 1}
 [F](To be alone) to be alone

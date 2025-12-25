@@ -1,6 +1,6 @@
 {meta: title Bluer Than Blue}
 {meta: artist Bob Wills}
-{meta: writer Randy Goodrum}
+{meta: composer Randy Goodrum}
 
 {start_of_verse: Verse 1}
 [C]Oh why did I trust you

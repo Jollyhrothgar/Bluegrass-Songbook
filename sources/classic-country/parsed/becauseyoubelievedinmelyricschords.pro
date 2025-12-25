@@ -1,6 +1,6 @@
 {meta: title Because You Believed In Me}
 {meta: artist Gene Watson}
-{meta: writer Arthur Leo Owens, Shorty Hall, Gene Vowell}
+{meta: composer Arthur Leo Owens, Shorty Hall, Gene Vowell}
 
 {start_of_verse: Verse 1}
 [G]It seemed like forever before [D7]I could [G]gather

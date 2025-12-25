@@ -1,6 +1,6 @@
 {meta: title You've Got Me (Right Where You Want Me)}
 {meta: artist Connie Smith}
-{meta: writer George Richey and Connie Smith}
+{meta: composer George Richey and Connie Smith}
 
 {start_of_verse: Verse 1}
 [G]Darling could I just have one moment with you

@@ -1,6 +1,6 @@
 {meta: title Cabin Of Love}
 {meta: artist Lonesome River Band}
-{meta: writer Birch Monroe}
+{meta: composer Birch Monroe}
 
 {start_of_verse: Verse 1}
 [G]I'm only a dreamer of [C]romance

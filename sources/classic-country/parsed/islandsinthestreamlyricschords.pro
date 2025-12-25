@@ -1,6 +1,6 @@
 {meta: title Islands In The Stream}
 {meta: artist Kenny Rogers}
-{meta: writer Barry Gibb, Maurice Ernest Gibb}
+{meta: composer Barry Gibb, Maurice Ernest Gibb}
 
 {start_of_verse: Verse 1}
 [C]Baby when I met you there was peace unknown

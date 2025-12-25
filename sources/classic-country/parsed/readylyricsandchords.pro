@@ -1,6 +1,6 @@
 {meta: title Ready}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Max Powell}
+{meta: composer Webb Pierce and Max Powell}
 
 {start_of_verse: Verse 1}
 [C]I remember the first time I dated [F]you

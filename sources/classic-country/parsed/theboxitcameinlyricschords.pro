@@ -1,6 +1,6 @@
 {meta: title The Box It Came In}
 {meta: artist Wanda Jackson}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [C]My clothes are all ragged my Goodwill [C7]coat's not the [F]best

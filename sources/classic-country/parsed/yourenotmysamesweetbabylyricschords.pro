@@ -1,6 +1,6 @@
 {meta: title You're Not My Same Sweet Baby}
 {meta: artist Waylon Jennings}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [G]You're not my [C]same [D7]sweet baby [G]lady

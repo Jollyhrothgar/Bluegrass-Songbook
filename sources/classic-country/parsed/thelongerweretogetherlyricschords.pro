@@ -1,6 +1,6 @@
 {meta: title The Longer We're Together}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [G]The [C]longer we're together the [G]more we drift apart

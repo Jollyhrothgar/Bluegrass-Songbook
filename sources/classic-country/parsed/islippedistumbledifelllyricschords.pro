@@ -1,6 +1,6 @@
 {meta: title I Slipped I Stumbled I Fell}
 {meta: artist Elvis Presley}
-{meta: writer Ben Weisman and Fred Wise}
+{meta: composer Ben Weisman and Fred Wise}
 
 {start_of_verse: Verse 1}
 [G7]I look at you and wham I'm head over [C]heels

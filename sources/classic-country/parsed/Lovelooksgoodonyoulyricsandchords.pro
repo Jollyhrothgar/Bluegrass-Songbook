@@ -1,6 +1,6 @@
 {meta: title Love Looks Good On You}
 {meta: artist Lefty Frizzell}
-{meta: writer Jerry Shook}
+{meta: composer Jerry Shook}
 
 {start_of_verse: Verse 1}
 [C]I've never seen that [G7]look in your [C]eyes before

@@ -1,6 +1,6 @@
 {meta: title Misty Morning Rain}
 {meta: artist Ray Price}
-{meta: writer Don Chapel}
+{meta: composer Don Chapel}
 
 {start_of_verse: Verse 1}
 [C]She asked me would I do her one last [F]favor

@@ -1,6 +1,6 @@
 {meta: title I Do My Swinging At Home}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill}
+{meta: composer Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [G]Nobody loves a [C]drink anymore than [G]me

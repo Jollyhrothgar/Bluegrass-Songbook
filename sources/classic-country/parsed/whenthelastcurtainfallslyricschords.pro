@@ -1,6 +1,6 @@
 {meta: title When The Last Curtain Falls}
 {meta: artist George Jones}
-{meta: writer Emory Gordy Jr. and Jim Rushing}
+{meta: composer Emory Gordy Jr. and Jim Rushing}
 
 {start_of_verse: Verse 1}
 [G]Even though I still steam

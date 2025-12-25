@@ -1,6 +1,6 @@
 {meta: title It's All Over Now}
 {meta: artist John Anderson}
-{meta: writer Bobby Womack and Shirley Jean Womack}
+{meta: composer Bobby Womack and Shirley Jean Womack}
 
 {start_of_verse: Verse 1}
 [G]Well baby used to stay out all night long

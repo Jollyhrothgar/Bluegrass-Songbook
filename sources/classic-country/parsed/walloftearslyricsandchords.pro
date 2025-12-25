@@ -1,6 +1,6 @@
 {meta: title Wall Of Tears}
 {meta: artist Ray Price}
-{meta: writer Mel Tillis and Wayne P. Walker}
+{meta: composer Mel Tillis and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]My baby left [F]me this [G7]morning

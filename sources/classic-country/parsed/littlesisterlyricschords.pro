@@ -1,6 +1,6 @@
 {meta: title Little Sister}
 {meta: artist Elvis Presley}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [C]Little sister don't you little sister don't you

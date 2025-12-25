@@ -1,6 +1,6 @@
 {meta: title There's Gonna Be More Loving}
 {meta: artist Melba Montgomery}
-{meta: writer Melba Montgomery and Earl Montgomery}
+{meta: composer Melba Montgomery and Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna write you a letter beggin' you to come home [D7]today

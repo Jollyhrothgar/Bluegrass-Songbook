@@ -1,6 +1,6 @@
 {meta: title I'm Not A Candle In The Wind}
 {meta: artist Bobby Bare}
-{meta: writer Mary Sharon Rice and Bill Rice}
+{meta: composer Mary Sharon Rice and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]Neath your feet you feel [D7]the world is [G]shaking

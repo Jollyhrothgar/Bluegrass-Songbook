@@ -1,6 +1,6 @@
 {meta: title Too Much on My Heart}
 {meta: artist Statler Brothers}
-{meta: writer Jimmy Fortune}
+{meta: composer Jimmy Fortune}
 
 {start_of_verse: Verse 1}
 [G7]You're [C]having second thoughts 

@@ -1,6 +1,6 @@
 {meta: title I'll Never Stand In Your Way}
 {meta: artist Billy Walker}
-{meta: writer Fred Rose and Hy Heath}
+{meta: composer Fred Rose and Hy Heath}
 
 {start_of_verse: Verse 1}
 [C]If you found someone [C7]new

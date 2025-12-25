@@ -1,6 +1,6 @@
 {meta: title Ain't It Funny}
 {meta: artist Loretta Lynn}
-{meta: writer Tracey Lee}
+{meta: composer Tracey Lee}
 
 {start_of_verse: Verse 1}
 [C]The sun comes up and brings the dawn to a new [G7]day

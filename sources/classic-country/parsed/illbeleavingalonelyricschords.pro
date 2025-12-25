@@ -1,6 +1,6 @@
 {meta: title I'll Be Leaving Alone}
 {meta: artist Charlie Pride}
-{meta: writer Wayland Holyfield and Dickey Lee}
+{meta: composer Wayland Holyfield and Dickey Lee}
 
 {start_of_verse: Verse 1}
 [C]Yes I'll buy you a drink if [F]you'd like me [C]to 

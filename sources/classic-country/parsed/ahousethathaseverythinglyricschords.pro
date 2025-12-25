@@ -1,6 +1,6 @@
 {meta: title A House That Has Everything}
 {meta: artist Elvis Presley}
-{meta: writer Sid Tepper and Roy C. Bennett}
+{meta: composer Sid Tepper and Roy C. Bennett}
 
 {start_of_verse: Verse 1}
 [C]I can see you now living like a [Am]queen 

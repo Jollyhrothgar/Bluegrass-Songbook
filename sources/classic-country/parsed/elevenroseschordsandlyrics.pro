@@ -1,6 +1,6 @@
 {meta: title Eleven Roses chords and}
 {meta: artist Sonny James}
-{meta: writer Lomar Morris and Darrell McCall}
+{meta: composer Lomar Morris and Darrell McCall}
 
 {start_of_verse: Verse 1}
 [G]I guess you noticed there is only [C]eleven [G]roses

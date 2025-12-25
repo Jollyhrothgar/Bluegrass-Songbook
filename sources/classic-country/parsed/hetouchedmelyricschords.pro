@@ -1,6 +1,6 @@
 {meta: title He Touched Me}
 {meta: artist The Gaither Trio}
-{meta: writer Bill Gaither}
+{meta: composer Bill Gaither}
 
 {start_of_verse: Verse 1}
 [D7]Shackled by a heavy [G]burden

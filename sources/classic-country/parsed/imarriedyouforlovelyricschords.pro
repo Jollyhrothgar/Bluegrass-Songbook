@@ -1,6 +1,6 @@
 {meta: title I Married You For Love}
 {meta: artist Jean Shepard}
-{meta: writer Jack Rhodes}
+{meta: composer Jack Rhodes}
 
 {start_of_verse: Verse 1}
 [C]I was counting all my riches as I sat alone [G7]today

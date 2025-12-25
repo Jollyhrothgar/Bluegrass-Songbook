@@ -1,6 +1,6 @@
 {meta: title Shake Hands With Mother Again}
 {meta: artist Wilburn Brothers}
-{meta: writer W.A. Berry}
+{meta: composer W.A. Berry}
 
 {start_of_verse: Verse 1}
 [C]If I should be living when Jesus comes

@@ -1,6 +1,6 @@
 {meta: title When the Angels Carry Me Home}
 {meta: artist Lester Flatt}
-{meta: writer Charlie Monroe}
+{meta: composer Charlie Monroe}
 
 {start_of_verse: Verse 1}
 [G]I'll fly away to heaven and I won't fall

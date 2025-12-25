@@ -1,6 +1,6 @@
 {meta: title My Hometown}
 {meta: artist Ferlin Husky}
-{meta: writer Dorsey Burnette}
+{meta: composer Dorsey Burnette}
 
 {start_of_verse: Verse 1}
 [G]I wonder if there's anyone remembers me in my [G][C]hometown

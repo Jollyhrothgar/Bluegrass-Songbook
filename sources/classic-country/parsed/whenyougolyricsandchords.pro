@@ -1,6 +1,6 @@
 {meta: title When You Go}
 {meta: artist Tracy Byrd}
-{meta: writer Michael Heeney, Casey Beathard, Marla Cannon}
+{meta: composer Michael Heeney, Casey Beathard, Marla Cannon}
 
 {start_of_verse: Verse 1}
 [C]The yelling and cussing was [Am]different this [G7]time

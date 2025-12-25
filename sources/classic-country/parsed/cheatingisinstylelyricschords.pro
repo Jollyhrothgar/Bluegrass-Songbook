@@ -1,6 +1,6 @@
 {meta: title Cheating Is In Style}
 {meta: artist Wynn Stewart}
-{meta: writer Tommy Crelila and B. Weaver}
+{meta: composer Tommy Crelila and B. Weaver}
 
 {start_of_verse: Verse 1}
 [G]The widow woman [D7]kind and sweet 

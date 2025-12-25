@@ -1,6 +1,6 @@
 {meta: title Take The Keys To My Heart}
 {meta: artist Garth Brooks}
-{meta: writer Pamela Wolfe, Benita Hill, Tommy Smith}
+{meta: composer Pamela Wolfe, Benita Hill, Tommy Smith}
 
 {start_of_verse: Verse 1}
 [G7]I've been [C]out on this highway of heartache

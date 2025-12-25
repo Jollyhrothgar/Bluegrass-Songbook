@@ -1,6 +1,6 @@
 {meta: title Country Boy Love}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Antoine Domino}
+{meta: composer Dave Bartholomew and Antoine Domino}
 
 {start_of_verse: Verse 1}
 [C]Have you heard the story [F]of the little country [C]boy

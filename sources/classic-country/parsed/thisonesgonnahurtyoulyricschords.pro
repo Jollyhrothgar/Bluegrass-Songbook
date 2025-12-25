@@ -1,6 +1,6 @@
 {meta: title This One's Gonna Hurt You}
 {meta: artist Marty Stuart}
-{meta: writer Marty Stuart}
+{meta: composer Marty Stuart}
 
 {start_of_verse: Verse 1}
 [G]Baby close that suitcase let's turn this [C]thing [G]around

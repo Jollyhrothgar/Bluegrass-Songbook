@@ -1,6 +1,6 @@
 {meta: title Freedom}
 {meta: artist Roger Miller}
-{meta: writer Roger Miller and Chuck Blore}
+{meta: composer Roger Miller and Chuck Blore}
 
 {start_of_verse: Verse 1}
 [C]What if someone said you [G7]couldn't say I [Dm]love you

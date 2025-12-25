@@ -1,6 +1,6 @@
 {meta: title I'd Still Play The Fool}
 {meta: artist Conway Twitty}
-{meta: writer Ben Weisman and Edna Lewis}
+{meta: composer Ben Weisman and Edna Lewis}
 
 {start_of_verse: Verse 1}
 [C]Though you told me lies and [Am]left when I [C]cried

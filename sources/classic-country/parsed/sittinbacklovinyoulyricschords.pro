@@ -1,6 +1,6 @@
 {meta: title Sittin' Back Lovin' You}
 {meta: artist Anne Murray}
-{meta: writer John Sebastian}
+{meta: composer John Sebastian}
 
 {start_of_verse: Verse 1}
 [G]If you will wonder [C]what I'm gonna do

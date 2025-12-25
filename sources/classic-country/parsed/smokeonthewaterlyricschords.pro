@@ -1,6 +1,6 @@
 {meta: title Smoke On The Water}
 {meta: artist Bob Wills}
-{meta: writer Earl Nunn &amp; Zeke Clements}
+{meta: composer Earl Nunn &amp; Zeke Clements}
 
 {start_of_verse: Verse 1}
 [C]There will be a sad day coming for the foes of all mankind

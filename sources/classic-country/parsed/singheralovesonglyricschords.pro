@@ -1,6 +1,6 @@
 {meta: title Sing Her A Love Song}
 {meta: artist Carl Smith}
-{meta: writer Arthur Smith and James Pritchett}
+{meta: composer Arthur Smith and James Pritchett}
 
 {start_of_verse: Verse 1}
 [C]The words of a love song [F]just like a love [C]letter

@@ -1,6 +1,6 @@
 {meta: title Take It Easy}
 {meta: artist Crystal Gayle}
-{meta: writer Delbert McClinton}
+{meta: composer Delbert McClinton}
 
 {start_of_verse: Verse 1}
 [G7]Take it [C]easy lovin' [F]me

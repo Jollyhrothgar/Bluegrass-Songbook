@@ -1,6 +1,6 @@
 {meta: title I’m Not Over You}
 {meta: artist Rhonda Vincent}
-{meta: writer Carl Jackson and Melba Montgomery}
+{meta: composer Carl Jackson and Melba Montgomery}
 
 {start_of_verse: Verse 1}
 [C]Tonight the rain that's falling only adds to my [G7]heartache

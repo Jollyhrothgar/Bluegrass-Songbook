@@ -1,6 +1,6 @@
 {meta: title Birmingham Turnaround}
 {meta: artist Keith Whitley}
-{meta: writer Sanger D. Shafer and Warren Robb}
+{meta: composer Sanger D. Shafer and Warren Robb}
 
 {start_of_verse: Verse 1}
 [C]Caught a plane to Birming[F]ham

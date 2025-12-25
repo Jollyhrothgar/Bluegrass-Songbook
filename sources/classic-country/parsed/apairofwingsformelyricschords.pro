@@ -1,6 +1,6 @@
 {meta: title A Pair Of Wings For Me}
 {meta: artist Carl Smith}
-{meta: writer Dallas Frazier and Sanger D. Shafer}
+{meta: composer Dallas Frazier and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]I never have deserved her all I've ever done was hurt her

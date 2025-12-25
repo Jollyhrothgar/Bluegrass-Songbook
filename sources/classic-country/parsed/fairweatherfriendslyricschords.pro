@@ -1,6 +1,6 @@
 {meta: title Fair Weather Friends}
 {meta: artist Don Williams}
-{meta: writer Johnny Cash and Joe Allen}
+{meta: composer Johnny Cash and Joe Allen}
 
 {start_of_verse: Verse 1}
 [C]Fairweather friends fairweather [C][F]sailors

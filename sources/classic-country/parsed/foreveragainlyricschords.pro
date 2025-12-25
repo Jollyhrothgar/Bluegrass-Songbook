@@ -1,6 +1,6 @@
 {meta: title Forever Again}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby and Warren Robb}
+{meta: composer Dave Kirby and Warren Robb}
 
 {start_of_verse: Verse 1}
 [C]I wish I could step out of my mind

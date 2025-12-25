@@ -1,6 +1,6 @@
 {meta: title Charley's Picture}
 {meta: artist Porter Wagoner}
-{meta: writer Larry Kingston and Frank Dycus}
+{meta: composer Larry Kingston and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [G]A wino we called [C]Charley had a [G]picture 

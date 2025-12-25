@@ -1,6 +1,6 @@
 {meta: title Baby I'm Sorry}
 {meta: artist Ricky Nelson}
-{meta: writer Kenneth E. Scott}
+{meta: composer Kenneth E. Scott}
 
 {start_of_verse: Verse 1}
 [G]If you love me like you say you do baby be true to me

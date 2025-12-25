@@ -1,6 +1,6 @@
 {meta: title A Faded Red Ribbon}
 {meta: artist Lester Flatt and Earl Scruggs}
-{meta: writer Dennis Bassham}
+{meta: composer Dennis Bassham}
 
 {start_of_verse: Verse 1}
 [C]A lock of your hair and a faded red ribbon

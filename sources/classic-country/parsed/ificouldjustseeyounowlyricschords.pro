@@ -1,6 +1,6 @@
 {meta: title If I Could Just See You Now}
 {meta: artist Alabama}
-{meta: writer Jeff Cook and Linne Black}
+{meta: composer Jeff Cook and Linne Black}
 
 {start_of_verse: Verse 1}
 [G]Your love for me is gone but my [Em]love for you lives on

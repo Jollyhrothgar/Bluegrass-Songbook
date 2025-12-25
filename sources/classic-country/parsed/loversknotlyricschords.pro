@@ -1,6 +1,6 @@
 {meta: title Lover's Knot}
 {meta: artist Anne Murray}
-{meta: writer Richard Supa}
+{meta: composer Richard Supa}
 
 {start_of_verse: Verse 1}
 [C]Here we are tangled up again

@@ -1,6 +1,6 @@
 {meta: title Endlessly}
 {meta: artist Sonny James}
-{meta: writer Clyde Lovern Otis and Brook Benton}
+{meta: composer Clyde Lovern Otis and Brook Benton}
 
 {start_of_verse: Verse 1}
 [C]Higher than the highest [C][F]mountain

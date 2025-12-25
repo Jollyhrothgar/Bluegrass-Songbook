@@ -1,6 +1,6 @@
 {meta: title All Hat No Cattle}
 {meta: artist Gene Watson}
-{meta: writer Lee Bach, Billy Troy, Leroy Anderson}
+{meta: composer Lee Bach, Billy Troy, Leroy Anderson}
 
 {start_of_verse: Verse 1}
 [G7]He's [F]dressed up like a cowboy right out of [C]Hollywood

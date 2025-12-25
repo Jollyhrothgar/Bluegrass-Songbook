@@ -1,6 +1,6 @@
 {meta: title Easy}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Chick Rains}
+{meta: composer Chick Rains}
 
 {start_of_verse: Verse 1}
 [G]All the boys called her Easy [D7]took her to drive-in [Em]movies

@@ -1,6 +1,6 @@
 {meta: title Another Neon Night}
 {meta: artist Jean Shepard}
-{meta: writer Carolyn Sue Howard and Joanne Spain}
+{meta: composer Carolyn Sue Howard and Joanne Spain}
 
 {start_of_verse: Verse 1}
 [C]The neon light plays a sad tune on the ceilin'

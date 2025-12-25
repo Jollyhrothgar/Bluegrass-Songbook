@@ -1,6 +1,6 @@
 {meta: title Somebody Called L.A.}
 {meta: artist Tony Booth}
-{meta: writer Homer Joy}
+{meta: composer Homer Joy}
 
 {start_of_verse: Verse 1}
 [C]This old road I'm walkin' on it runs [G7]two ways

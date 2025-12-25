@@ -1,6 +1,6 @@
 {meta: title Little Joe The Wrangler}
 {meta: artist Marty Robbins}
-{meta: writer Howard Thorpe}
+{meta: composer Howard Thorpe}
 
 {start_of_verse: Verse 1}
 [C]Little Joe the wrangler will [F]wrangle [C]nevermore

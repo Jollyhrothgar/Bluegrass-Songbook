@@ -1,6 +1,6 @@
 {meta: title You're The Girl Of My Dreams}
 {meta: artist Mac Wiseman}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]Oh I first met you down in lover's [G7]lane

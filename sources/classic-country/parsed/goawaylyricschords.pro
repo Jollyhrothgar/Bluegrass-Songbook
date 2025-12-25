@@ -1,6 +1,6 @@
 {meta: title Go Away}
 {meta: artist Roy Orbison}
-{meta: writer Bill Dees and Roy Orbison}
+{meta: composer Bill Dees and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [Am]I really wouldn't mind it [D7]might be fun

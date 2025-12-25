@@ -1,6 +1,6 @@
 {meta: title Pure Love}
 {meta: artist Ronnie Milsap}
-{meta: writer Eddie Rabbitt}
+{meta: composer Eddie Rabbitt}
 
 {start_of_verse: Verse 1}
 [C]Pure love  baby it's pure [Dm]love

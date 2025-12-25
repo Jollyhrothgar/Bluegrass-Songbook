@@ -1,6 +1,6 @@
 {meta: title June Is as Cold as December}
 {meta: artist The Everly Brothers}
-{meta: writer Marge Barton}
+{meta: composer Marge Barton}
 
 {start_of_verse: Verse 1}
 [C]June is as [F]cold as [G7]December

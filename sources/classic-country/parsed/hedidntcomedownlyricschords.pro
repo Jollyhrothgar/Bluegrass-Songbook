@@ -1,6 +1,6 @@
 {meta: title He Didn't Come Down}
 {meta: artist The Cathedrals}
-{meta: writer Al Harkins}
+{meta: composer Al Harkins}
 
 {start_of_verse: Verse 1}
 [C]Often I stop to think just where I'd [G7]be

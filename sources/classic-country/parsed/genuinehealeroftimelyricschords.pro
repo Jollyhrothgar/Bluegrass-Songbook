@@ -1,6 +1,6 @@
 {meta: title Genuine Healer Of Time}
 {meta: artist Johnny Bush}
-{meta: writer Larry Patton and Ronald Knuth}
+{meta: composer Larry Patton and Ronald Knuth}
 
 {start_of_verse: Verse 1}
 [C]I’ve never been [F]inside your [C]barroom

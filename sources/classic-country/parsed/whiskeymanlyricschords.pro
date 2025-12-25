@@ -1,6 +1,6 @@
 {meta: title Whiskey Man}
 {meta: artist Darrell McCall}
-{meta: writer Darrell McCall}
+{meta: composer Darrell McCall}
 
 {start_of_verse: Verse 1}
 [C]Today is mine [F]tomorrow and [G7]forever

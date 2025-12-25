@@ -1,6 +1,6 @@
 {meta: title Mother's Mansion Is Higher Than Mine}
 {meta: artist Mac Wiseman}
-{meta: writer Albert E. Brumley Sr.}
+{meta: composer Albert E. Brumley Sr.}
 
 {start_of_verse: Verse 1}
 [G]There are mansions high there are mansions wide way [C]up in the glory [G]land 

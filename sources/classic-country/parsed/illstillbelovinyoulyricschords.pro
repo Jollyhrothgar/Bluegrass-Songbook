@@ -1,6 +1,6 @@
 {meta: title I'll Still Be Lovin' You}
 {meta: artist Lee Greenwood}
-{meta: writer Steve Eaton}
+{meta: composer Steve Eaton}
 
 {start_of_verse: Verse 1}
 [G]When the songs on the radio say love is blind

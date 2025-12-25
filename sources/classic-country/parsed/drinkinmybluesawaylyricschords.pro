@@ -1,6 +1,6 @@
 {meta: title Drinkin' My Blues Away Lyrics Chords}
 {meta: artist Webb Pierce}
-{meta: writer Frank Bandy and Webb Pierce}
+{meta: composer Frank Bandy and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]Well tell me a joke and make it funny

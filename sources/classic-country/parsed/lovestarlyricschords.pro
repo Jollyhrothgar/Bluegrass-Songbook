@@ -1,6 +1,6 @@
 {meta: title Love Star}
 {meta: artist Emmylou Harris}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Love Star oh star of love have you [D7]forgotten me 

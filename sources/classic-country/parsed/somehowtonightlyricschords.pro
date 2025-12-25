@@ -1,6 +1,6 @@
 {meta: title Somehow Tonight}
 {meta: artist Ricky Skaggs}
-{meta: writer Earl Scruggs}
+{meta: composer Earl Scruggs}
 
 {start_of_verse: Verse 1}
 [G]Somehow tonight I feel lonely [C]my [G]darling

@@ -1,6 +1,6 @@
 {meta: title I Used It All On You}
 {meta: artist Charley Pride}
-{meta: writer Tom Crum}
+{meta: composer Tom Crum}
 
 {start_of_verse: Verse 1}
 [C]Oh there's [F]just no love to [G7]give her I [F]used it [G7]all on [C]you

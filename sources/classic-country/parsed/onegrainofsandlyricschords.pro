@@ -1,6 +1,6 @@
 {meta: title One Grain Of Sand}
 {meta: artist Eddy Arnold}
-{meta: writer Buck Maxwell, Ruth Maxwell, Rosella Larue}
+{meta: composer Buck Maxwell, Ruth Maxwell, Rosella Larue}
 
 {start_of_verse: Verse 1}
 [G]One [Am]one [D7]one grain of [G]sand one [Am]one [D7]one grain of [G]sand

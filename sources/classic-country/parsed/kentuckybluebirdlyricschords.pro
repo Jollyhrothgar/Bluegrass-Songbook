@@ -1,6 +1,6 @@
 {meta: title Kentucky Bluebird}
 {meta: artist Keith Whitley}
-{meta: writer Don Cook and Wally Wilson}
+{meta: composer Don Cook and Wally Wilson}
 
 {start_of_verse: Verse 1}
 [C]Blown down the highway by [G7]two different winds

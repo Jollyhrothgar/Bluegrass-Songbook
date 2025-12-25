@@ -1,6 +1,6 @@
 {meta: title Many Mansions}
 {meta: artist Moe Bandy}
-{meta: writer Carol Ann Etheridge, Mark D. Sanders, Alice Randall}
+{meta: composer Carol Ann Etheridge, Mark D. Sanders, Alice Randall}
 
 {start_of_verse: Verse 1}
 [G]Hope is a thing with feathers that perches on the [Em]soul

@@ -1,6 +1,6 @@
 {meta: title Turn Your Eyes Upon Jesus}
 {meta: artist Alan Jackson}
-{meta: writer Helen H. Lemmel}
+{meta: composer Helen H. Lemmel}
 
 {start_of_verse: Verse 1}
 [C]O soul are you [G7]weary and [Am]trou[C]bled 

@@ -1,6 +1,6 @@
 {meta: title All Of The Time}
 {meta: artist Ferlin Husky}
-{meta: writer Joe Allison and Audrey Allison}
+{meta: composer Joe Allison and Audrey Allison}
 
 {start_of_verse: Verse 1}
 [G]I'll try anything that's new if [D7]something old won't do

@@ -1,6 +1,6 @@
 {meta: title Operator Operator}
 {meta: artist Eddy Raven}
-{meta: writer Larry Willoughby and Janet Willoughby}
+{meta: composer Larry Willoughby and Janet Willoughby}
 
 {start_of_verse: Verse 1}
 [G]Now I thought it over how it's come to this

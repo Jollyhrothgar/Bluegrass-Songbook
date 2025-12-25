@@ -1,6 +1,6 @@
 {meta: title Anywhere Just Inside Your Arms}
 {meta: artist Charley Pride}
-{meta: writer Wanda Ballman}
+{meta: composer Wanda Ballman}
 
 {start_of_verse: Verse 1}
 [C]There are places to go where the cold north wind [F]blows

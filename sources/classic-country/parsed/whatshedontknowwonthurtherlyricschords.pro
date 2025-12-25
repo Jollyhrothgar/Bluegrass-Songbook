@@ -1,6 +1,6 @@
 {meta: title What She Don't Know Won't Hurt Her}
 {meta: artist Gene Watson}
-{meta: writer Dave Lindsey and Ernie Rowell}
+{meta: composer Dave Lindsey and Ernie Rowell}
 
 {start_of_verse: Verse 1}
 [C]My woman thinks I wouldn't cheat on [F]her when we're [C]apart

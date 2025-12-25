@@ -1,6 +1,6 @@
 {meta: title Who Am I To Say}
 {meta: artist The Statler Brothers}
-{meta: writer Kim Reid}
+{meta: composer Kim Reid}
 
 {start_of_verse: Verse 1}
 [G]I wish I had a dollar [D7]for every time I was [C]unkind

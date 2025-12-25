@@ -1,6 +1,6 @@
 {meta: title The Girl I Love Don't Pay Me No Mind}
 {meta: artist The Earls Of Leicester}
-{meta: writer Arthur Leroy Smith}
+{meta: composer Arthur Leroy Smith}
 
 {start_of_verse: Verse 1}
 [G]The girl I love don't pay me no mind

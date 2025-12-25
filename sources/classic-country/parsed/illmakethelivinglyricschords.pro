@@ -1,6 +1,6 @@
 {meta: title I'll Make The Living}
 {meta: artist Jim Ed Brown}
-{meta: writer Carl Belew and Van Givens}
+{meta: composer Carl Belew and Van Givens}
 
 {start_of_verse: Verse 1}
 [C]Honey I think that it's [F]just about time

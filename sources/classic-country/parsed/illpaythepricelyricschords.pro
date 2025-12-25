@@ -1,6 +1,6 @@
 {meta: title I'll Pay The Price}
 {meta: artist Cowboy Copas}
-{meta: writer Redd Stewart and Lloyd Copas}
+{meta: composer Redd Stewart and Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm thinking of [F]yesterday

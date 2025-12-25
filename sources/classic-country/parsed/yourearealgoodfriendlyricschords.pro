@@ -1,6 +1,6 @@
 {meta: title You're A Real Good Friend}
 {meta: artist Ernest Tubb}
-{meta: writer Cy Coben and Charles Grean}
+{meta: composer Cy Coben and Charles Grean}
 
 {start_of_verse: Verse 1}
 [C]When I was broke and blue I gave advice to you

@@ -1,6 +1,6 @@
 {meta: title Man With The Bag}
 {meta: artist Lee Ann Womack}
-{meta: writer Dudley Brooks, Hal Stanley, Irving Taylor}
+{meta: composer Dudley Brooks, Hal Stanley, Irving Taylor}
 
 {start_of_verse: Verse 1}
 [G]Old Mr. [A7]Kringle is [Bm]soon gonna [C]jingle

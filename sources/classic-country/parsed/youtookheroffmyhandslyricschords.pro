@@ -1,6 +1,6 @@
 {meta: title You Took Her Off My Hands}
 {meta: artist Ray Price}
-{meta: writer Harlan Howard and Wynn Stewart}
+{meta: composer Harlan Howard and Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [C]You took her off my hands [C7]when you stepped [F]in

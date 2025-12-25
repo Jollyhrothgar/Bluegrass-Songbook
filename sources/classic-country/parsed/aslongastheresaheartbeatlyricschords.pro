@@ -1,6 +1,6 @@
 {meta: title As Long As There's A Heartbeat}
 {meta: artist Tanya Tucker}
-{meta: writer David Powelson}
+{meta: composer David Powelson}
 
 {start_of_verse: Verse 1}
 [G]There's a full moon up above [C]tonight

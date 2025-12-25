@@ -1,6 +1,6 @@
 {meta: title Midnight Angel}
 {meta: artist Rhonda Vincent}
-{meta: writer Bobby Osborne, Brian Vincent, Pete Goble}
+{meta: composer Bobby Osborne, Brian Vincent, Pete Goble}
 
 {start_of_verse: Verse 1}
 Midnight Angel

@@ -1,6 +1,6 @@
 {meta: title From A Distance}
 {meta: artist Ricky Nelson}
-{meta: writer Johnny Bachelor}
+{meta: composer Johnny Bachelor}
 
 {start_of_verse: Verse 1}
 [C]Oh I hate to love you [Am]love you from a distance

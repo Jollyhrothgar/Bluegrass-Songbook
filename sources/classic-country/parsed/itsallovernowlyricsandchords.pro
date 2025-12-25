@@ -1,6 +1,6 @@
 {meta: title It's All Over Now}
 {meta: artist Charlie Rich}
-{meta: writer Bobby Womack and Shirley Jean Womack}
+{meta: composer Bobby Womack and Shirley Jean Womack}
 
 {start_of_verse: Verse 1}
 [C]I've been thinking it [C][F]o-ver  I can't figure out [G7]how

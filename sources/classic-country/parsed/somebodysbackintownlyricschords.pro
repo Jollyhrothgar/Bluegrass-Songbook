@@ -1,6 +1,6 @@
 {meta: title Somebody's Back in Town}
 {meta: artist Loretta Lynn}
-{meta: writer Teddy Wilburn and Loretta Lynn}
+{meta: composer Teddy Wilburn and Loretta Lynn}
 
 {start_of_verse: Verse 1}
 [C]I just heard the saddest news somebody's back in [G7]town

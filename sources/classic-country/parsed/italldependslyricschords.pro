@@ -1,6 +1,6 @@
 {meta: title It All Depends}
 {meta: artist Mickey Gilley}
-{meta: writer Billy Mize}
+{meta: composer Billy Mize}
 
 {start_of_verse: Verse 1}
 [G]The kind of life you're living since you [C]left me

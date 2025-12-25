@@ -1,6 +1,6 @@
 {meta: title You're Part Of Me}
 {meta: artist Roger Miller}
-{meta: writer F. Price and Ray Presley}
+{meta: composer F. Price and Ray Presley}
 
 {start_of_verse: Verse 1}
 [G]You'll always be a part of me

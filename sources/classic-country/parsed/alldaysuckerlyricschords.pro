@@ -1,6 +1,6 @@
 {meta: title All Day Sucker}
 {meta: artist Lynn Anderson}
-{meta: writer Liz Anderson and Casey Anderson}
+{meta: composer Liz Anderson and Casey Anderson}
 
 {start_of_verse: Verse 1}
 [G]I got up at six this morning and I polished up the sun

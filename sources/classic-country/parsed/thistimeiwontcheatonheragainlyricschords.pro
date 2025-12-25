@@ -1,6 +1,6 @@
 {meta: title This Time I Won't Cheat On Her Again}
 {meta: artist Moe Bandy}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]I hear that you just [G7]told your new [C]forever where to [F]go

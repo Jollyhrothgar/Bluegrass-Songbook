@@ -1,6 +1,6 @@
 {meta: title Lamp Lighting Time In The Valley}
 {meta: artist Marty Robbins}
-{meta: writer Harold Goodman, Sam C. Hart, Joe Lyons, Curt Poulton, Dean Upson}
+{meta: composer Harold Goodman, Sam C. Hart, Joe Lyons, Curt Poulton, Dean Upson}
 
 {start_of_verse: Verse 1}
 [C]There's a lamp shining [F]bright in a [C]cabin

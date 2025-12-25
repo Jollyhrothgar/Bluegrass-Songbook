@@ -1,6 +1,6 @@
 {meta: title Cold And Lonely Lyrics and Chords}
 {meta: artist Kitty Wells}
-{meta: writer Roy Botkin}
+{meta: composer Roy Botkin}
 
 {start_of_verse: Verse 1}
 [G]The winds of [C]loneliness blow [G]strong

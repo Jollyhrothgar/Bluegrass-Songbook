@@ -1,6 +1,6 @@
 {meta: title Funny What A Pair Of Fools Will Do}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew and Van Givens}
+{meta: composer Carl Belew and Van Givens}
 
 {start_of_verse: Verse 1}
 [C]You're so good to me and I'm so bad to [F]you

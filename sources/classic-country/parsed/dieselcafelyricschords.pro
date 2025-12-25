@@ -1,6 +1,6 @@
 {meta: title Diesel Cafe}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]Well the coffee is thirty [F]weight

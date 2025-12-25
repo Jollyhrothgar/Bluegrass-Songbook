@@ -1,6 +1,6 @@
 {meta: title Brown Eyed Handsome Man}
 {meta: artist Waylon Jennings}
-{meta: writer Chuck Berry}
+{meta: composer Chuck Berry}
 
 {start_of_verse: Verse 1}
 [C]Flying across the desert in a TWA

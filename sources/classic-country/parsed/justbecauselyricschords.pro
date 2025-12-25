@@ -1,6 +1,6 @@
 {meta: title Just Because}
 {meta: artist Brenda Lee}
-{meta: writer Bob Shelton, Joe Shelton, Sid Robin}
+{meta: composer Bob Shelton, Joe Shelton, Sid Robin}
 
 {start_of_verse: Verse 1}
 [G]Well now just because you think you're so pretty  

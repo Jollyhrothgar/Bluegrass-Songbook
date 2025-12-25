@@ -1,6 +1,6 @@
 {meta: title Where The Stars And Stripes And The Eagle Fly}
 {meta: artist Charley Pride}
-{meta: writer Kenny Beard, Casey Beathard, Aaron Tippin}
+{meta: composer Kenny Beard, Casey Beathard, Aaron Tippin}
 
 {start_of_verse: Verse 1}
 [C]Well if you ask me where I come from

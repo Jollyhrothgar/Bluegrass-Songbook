@@ -1,6 +1,6 @@
 {meta: title Just Your Conscience}
 {meta: artist George Morgan}
-{meta: writer Marijohn Wilkin}
+{meta: composer Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [C]That voice you [G7]hear inside is just your [C]conscience [C7]

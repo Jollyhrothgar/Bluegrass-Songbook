@@ -1,6 +1,6 @@
 {meta: title Tumbling Tumbleweed}
 {meta: artist Bob Nolan}
-{meta: writer Bob Nolan}
+{meta: composer Bob Nolan}
 
 {start_of_verse: Verse 1}
 [C]I'm a roaming cowboy  [F]riding all day [C]long

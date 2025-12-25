@@ -1,6 +1,6 @@
 {meta: title Between The Lines}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Jim Eanes}
+{meta: composer Jim Eanes}
 
 {start_of_verse: Verse 1}
 [G]I got your letter it came [C]today

@@ -1,6 +1,6 @@
 {meta: title Daughter Of The Vine}
 {meta: artist Vernon Oxford}
-{meta: writer Benny Williams}
+{meta: composer Benny Williams}
 
 {start_of_verse: Verse 1}
 [C]A blind man can see darkness and [F]when the shadows [C]fall

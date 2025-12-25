@@ -1,6 +1,6 @@
 {meta: title I Can't Stand To Be Alone}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew and Clyde Pitts}
+{meta: composer Carl Belew and Clyde Pitts}
 
 {start_of_verse: Verse 1}
 [C]The party's almost over and [F]soon you'll have to [C]go

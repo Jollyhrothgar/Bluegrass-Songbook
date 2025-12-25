@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Put My Love in the Want Ads}
 {meta: artist Mickey Gilley}
-{meta: writer Jay Boyett and Mickey Gilley}
+{meta: composer Jay Boyett and Mickey Gilley}
 
 {start_of_verse: Verse 1}
 [C]Well I'm gonna put my love in the want ads I'm gonna find me someone [G7]new

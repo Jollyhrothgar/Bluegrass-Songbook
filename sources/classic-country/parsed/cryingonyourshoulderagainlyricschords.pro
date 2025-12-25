@@ -1,6 +1,6 @@
 {meta: title Crying On Your Shoulder Again}
 {meta: artist Doug Stone}
-{meta: writer Larry Boone and Paul Nelson}
+{meta: composer Larry Boone and Paul Nelson}
 
 {start_of_verse: Verse 1}
 [C]Turning up my [G7]collar to a [C]cold Kansas morning

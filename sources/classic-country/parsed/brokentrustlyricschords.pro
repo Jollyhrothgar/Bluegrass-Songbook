@@ -1,6 +1,6 @@
 {meta: title Broken Trust}
 {meta: artist Brenda Lee}
-{meta: writer Jimbeau Hinson}
+{meta: composer Jimbeau Hinson}
 
 {start_of_verse: Verse 1}
 Injured [D7]love slowly falls [G]apart

@@ -1,6 +1,6 @@
 {meta: title I Wish I Had Loved Her That Way}
 {meta: artist John Anderson}
-{meta: writer Roger Murrah and Jim McBride}
+{meta: composer Roger Murrah and Jim McBride}
 
 {start_of_verse: Verse 1}
 [C]He brings her flowers for no special [F]reason

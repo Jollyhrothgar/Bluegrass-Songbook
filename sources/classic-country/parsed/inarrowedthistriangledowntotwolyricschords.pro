@@ -1,6 +1,6 @@
 {meta: title I Narrowed This Triangle Down To Two}
 {meta: artist Leona Williams}
-{meta: writer Naomi Martin}
+{meta: composer Naomi Martin}
 
 {start_of_verse: Verse 1}
 [C]You laughed at me each [F]time I said I'd [C]do it

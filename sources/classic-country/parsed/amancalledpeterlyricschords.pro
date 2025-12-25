@@ -1,6 +1,6 @@
 {meta: title A Man Called Peter}
 {meta: artist Ray Price}
-{meta: writer Charles Tobias}
+{meta: composer Charles Tobias}
 
 {start_of_verse: Verse 1}
 [C]I met a man called [F]Peter when my [D7]dreams had gone [C][G7]astray

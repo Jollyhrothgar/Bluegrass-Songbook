@@ -1,6 +1,6 @@
 {meta: title See The Big Man Cry}
 {meta: artist Charlie Louvin}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]The other day I walked out on the [Am]street

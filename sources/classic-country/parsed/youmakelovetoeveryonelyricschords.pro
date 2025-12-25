@@ -1,6 +1,6 @@
 {meta: title You Make Love To Everyone}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Webb Pierce}
+{meta: composer Wayne P. Walker and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]You make love to [C]every[G]one that's what you've [D7]always done

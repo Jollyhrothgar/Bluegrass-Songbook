@@ -1,6 +1,6 @@
 {meta: title New Patches}
 {meta: artist Mel Tillis}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]Now and then an [F]old friend tries to [C]help me

@@ -1,6 +1,6 @@
 {meta: title Restless Heart}
 {meta: artist Slim Whitman}
-{meta: writer Marilyn Keith Bergman and Lew Spencer}
+{meta: composer Marilyn Keith Bergman and Lew Spencer}
 
 {start_of_verse: Verse 1}
 [C]I have a [F]restless heart and it [C]just needs to roam

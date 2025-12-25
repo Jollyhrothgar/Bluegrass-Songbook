@@ -1,6 +1,6 @@
 {meta: title Good Old Fashion Country Christmas Lyrics with Chords}
 {meta: artist Buck Owens}
-{meta: writer Earl Ball and Buck Owens}
+{meta: composer Earl Ball and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]We're packin' up our clothes and we're goin'

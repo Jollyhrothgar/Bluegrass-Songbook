@@ -1,6 +1,6 @@
 {meta: title B.J. The D.J.}
 {meta: artist Stonewall Jackson}
-{meta: writer Hugh X. Lewis}
+{meta: composer Hugh X. Lewis}
 
 {start_of_verse: Verse 1}
 {comment: B.J. THE D.J.}

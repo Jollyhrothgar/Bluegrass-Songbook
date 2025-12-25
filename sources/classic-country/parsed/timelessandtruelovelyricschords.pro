@@ -1,6 +1,6 @@
 {meta: title Timeless And True Love}
 {meta: artist Rhonda Vincent}
-{meta: writer Charlie Black, Buzz Cason, Austin Roberts}
+{meta: composer Charlie Black, Buzz Cason, Austin Roberts}
 
 {start_of_verse: Verse 1}
 [G]Look out on the night sky and [D7]tell me what you see

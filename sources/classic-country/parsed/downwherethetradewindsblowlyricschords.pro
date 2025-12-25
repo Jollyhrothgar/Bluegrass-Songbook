@@ -1,6 +1,6 @@
 {meta: title Down Where The Trade Winds Blow}
 {meta: artist Marty Robbins}
-{meta: writer Harry Owens}
+{meta: composer Harry Owens}
 
 {start_of_verse: Verse 1}
 [C]Down where the [G7]trade winds play down where they [F]lose the [C]day

@@ -1,6 +1,6 @@
 {meta: title I Believe in a Hill Called Mount Calvary}
 {meta: artist The Booth Brothers}
-{meta: writer William J. Gaither, Gloria Gaither, Dale Oldham}
+{meta: composer William J. Gaither, Gloria Gaither, Dale Oldham}
 
 {start_of_verse: Verse 1}
 [G]I [C]believe in a hill [D7]called Mount [G][Am]Calvary

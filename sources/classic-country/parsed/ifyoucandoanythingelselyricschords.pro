@@ -1,6 +1,6 @@
 {meta: title If You Can Do Anything Else}
 {meta: artist George Strait}
-{meta: writer Don Schlitz and Billy Livsey}
+{meta: composer Don Schlitz and Billy Livsey}
 
 {start_of_verse: Verse 1}
 [G7]Would you [F]like to live in [C]Houston where the [G7]cowboys come to [C]town

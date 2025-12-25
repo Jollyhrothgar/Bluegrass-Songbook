@@ -1,6 +1,6 @@
 {meta: title Who Do I Know In Dallas}
 {meta: artist Merle Haggard}
-{meta: writer Hank Cochran and Willie Nelson}
+{meta: composer Hank Cochran and Willie Nelson}
 
 {start_of_verse: Verse 1}
 [F]Who do I [G7]know in [C]Dallas

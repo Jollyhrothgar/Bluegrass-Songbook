@@ -1,6 +1,6 @@
 {meta: title It Rains Just The Same In Missouri}
 {meta: artist Mac Wiseman}
-{meta: writer Ray Griff and Tommy Smith}
+{meta: composer Ray Griff and Tommy Smith}
 
 {start_of_verse: Verse 1}
 [G]Your silent tears are falling on your [C]suitcase in the [A7]hall

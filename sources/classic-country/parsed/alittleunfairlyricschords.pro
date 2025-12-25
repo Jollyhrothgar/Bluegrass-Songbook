@@ -1,6 +1,6 @@
 {meta: title A Little Unfair}
 {meta: artist Lefty Frizzell}
-{meta: writer Hank Cochran and Chuck Howard}
+{meta: composer Hank Cochran and Chuck Howard}
 
 {start_of_verse: Verse 1}
 [C]You want me to love just you while you love your [D7]share

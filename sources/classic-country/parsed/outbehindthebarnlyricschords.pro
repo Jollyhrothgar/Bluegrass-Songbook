@@ -1,6 +1,6 @@
 {meta: title Out Behind The Barn}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [G]My pappy used to tan my hide [D7]out behind the barn

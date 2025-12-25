@@ -1,6 +1,6 @@
 {meta: title I Never Got Over You}
 {meta: artist Johnny Paycheck}
-{meta: writer Tommy Jennings}
+{meta: composer Tommy Jennings}
 
 {start_of_verse: Verse 1}
 [G]I couldn't keep my mind on all the [D7]work I [C]had to do [G]today

@@ -1,6 +1,6 @@
 {meta: title Change Her Mind}
 {meta: artist Gene Watson}
-{meta: writer Danny Mayo, Paul Nelson, Larry Boone}
+{meta: composer Danny Mayo, Paul Nelson, Larry Boone}
 
 {start_of_verse: Verse 1}
 [C]Mornings closing in on me how [F]can I face another [C]dawn 

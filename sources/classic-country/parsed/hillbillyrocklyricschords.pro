@@ -1,6 +1,6 @@
 {meta: title Hillbilly Rock}
 {meta: artist Marty Stuart}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [G]It comes from Mississippi and down in Alabam

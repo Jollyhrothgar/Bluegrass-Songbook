@@ -1,6 +1,6 @@
 {meta: title No Second Chance}
 {meta: artist Carl Smith}
-{meta: writer Jerry Organ, Pete Pyle, Carl Smith}
+{meta: composer Jerry Organ, Pete Pyle, Carl Smith}
 
 {start_of_verse: Verse 1}
 [C]So often she told me if I [F]didn’t [D7]change

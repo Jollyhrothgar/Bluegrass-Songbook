@@ -1,6 +1,6 @@
 {meta: title His Promised Land}
 {meta: artist Rhonda Vincent}
-{meta: writer Lisa Shaffer and Rhonda Vincent}
+{meta: composer Lisa Shaffer and Rhonda Vincent}
 
 {start_of_verse: Verse 1}
 [C]When my way was long and all hope was gone

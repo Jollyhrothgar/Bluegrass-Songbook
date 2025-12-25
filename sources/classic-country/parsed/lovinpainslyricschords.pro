@@ -1,6 +1,6 @@
 {meta: title Lovin' Pains}
 {meta: artist Bill Anderson}
-{meta: writer Ned Miller}
+{meta: composer Ned Miller}
 
 {start_of_verse: Verse 1}
 [C]Lovin' [G7]pains wrapped around me like a [C]chain

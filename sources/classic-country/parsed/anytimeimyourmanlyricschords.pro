@@ -1,6 +1,6 @@
 {meta: title Anytime I'm Your Man}
 {meta: artist Alabama}
-{meta: writer Randy Owen, Teddy Gentry, Greg Fowler, Ronnie Rogers}
+{meta: composer Randy Owen, Teddy Gentry, Greg Fowler, Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [D7]Any[G]time you wanna [Em]love me you can [G]love me any[Em]time

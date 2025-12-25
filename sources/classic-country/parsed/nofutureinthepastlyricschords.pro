@@ -1,6 +1,6 @@
 {meta: title No Future In The Past}
 {meta: artist Vince Gill}
-{meta: writer Carl Jackson and Vince Gill}
+{meta: composer Carl Jackson and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]I lie here tonight in the [D7]darkness

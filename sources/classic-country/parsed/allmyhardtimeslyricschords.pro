@@ -1,6 +1,6 @@
 {meta: title All My Hard Times}
 {meta: artist Roy Drusky}
-{meta: writer Joe South}
+{meta: composer Joe South}
 
 {start_of_verse: Verse 1}
 [C]All of my [F]hard times  [G7]soon will be [C]over 

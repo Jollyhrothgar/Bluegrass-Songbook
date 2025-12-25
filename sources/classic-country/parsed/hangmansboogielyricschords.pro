@@ -1,6 +1,6 @@
 {meta: title Hangman's Boogie}
 {meta: artist Cowboy Copas}
-{meta: writer Larry Cassidy}
+{meta: composer Larry Cassidy}
 
 {start_of_verse: Verse 1}
 [C]I've gotta be a leaving when the moon goes down

@@ -1,6 +1,6 @@
 {meta: title Are My Thoughts With You}
 {meta: artist Kenny Rogers}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna [D7]plant me some [G]seed [Bm]   [Em]    [G]grow me an [C]ocean[Em]

@@ -1,6 +1,6 @@
 {meta: title Where Was I}
 {meta: artist Ricky Van Shelton}
-{meta: writer Gary Burr and Harry Stinso}
+{meta: composer Gary Burr and Harry Stinso}
 
 {start_of_verse: Verse 1}
 [G7]Well I [C]think I [G7]get the [C]message 

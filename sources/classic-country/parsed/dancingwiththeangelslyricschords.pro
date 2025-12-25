@@ -1,6 +1,6 @@
 {meta: title Dancing With The Angels}
 {meta: artist New Grass Revival}
-{meta: writer Peter Rowan}
+{meta: composer Peter Rowan}
 
 {start_of_verse: Verse 1}
 [G]Dancing With The An[Em]gel[D7]s  [Em]

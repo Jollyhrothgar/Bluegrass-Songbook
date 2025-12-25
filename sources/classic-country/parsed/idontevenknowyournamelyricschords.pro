@@ -1,6 +1,6 @@
 {meta: title I Don't Even Know Your Name}
 {meta: artist Alan Jackson}
-{meta: writer Andy Loftin, Ron Jackson, Alan Jackson}
+{meta: composer Andy Loftin, Ron Jackson, Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]I was sitting in a roadhouse down on Highway 41

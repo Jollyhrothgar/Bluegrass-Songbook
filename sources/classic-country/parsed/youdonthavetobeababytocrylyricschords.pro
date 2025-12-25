@@ -1,6 +1,6 @@
 {meta: title You Don't Have To Be A Baby To Cry}
 {meta: artist Ernest Tubb}
-{meta: writer Bob Merrill and Terry Shand}
+{meta: composer Bob Merrill and Terry Shand}
 
 {start_of_verse: Verse 1}
 [G]You don't have to be a baby to [C]cry

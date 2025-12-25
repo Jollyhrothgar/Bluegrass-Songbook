@@ -1,6 +1,6 @@
 {meta: title Lola's Love}
 {meta: artist Ricky Van Shelton}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [C]Look at her move inside of that skintight dress

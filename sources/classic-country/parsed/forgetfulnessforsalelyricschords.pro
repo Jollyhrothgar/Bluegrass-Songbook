@@ -1,6 +1,6 @@
 {meta: title Forgetfulness For Sale}
 {meta: artist Vernon Oxford}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]I saw a neon invitation flashing red and green temptation

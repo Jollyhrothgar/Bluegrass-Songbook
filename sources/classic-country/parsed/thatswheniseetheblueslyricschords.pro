@@ -1,6 +1,6 @@
 {meta: title That's When I See The Blues}
 {meta: artist Jim Reeves}
-{meta: writer Carl Belew, W.S. Stevenson, Tommy Blake}
+{meta: composer Carl Belew, W.S. Stevenson, Tommy Blake}
 
 {start_of_verse: Verse 1}
 [G]You say it's over now but it's easy to [D7]see

@@ -1,6 +1,6 @@
 {meta: title Your Heart Turned Left}
 {meta: artist George Jones}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Your heart turned left and I was on the [F]right

@@ -1,6 +1,6 @@
 {meta: title Words}
 {meta: artist Elvis Presley}
-{meta: writer Barry Gibb, Maurice Gibb, Robin Gibb}
+{meta: composer Barry Gibb, Maurice Gibb, Robin Gibb}
 
 {start_of_verse: Verse 1}
 [G]Smile an everlasting smile

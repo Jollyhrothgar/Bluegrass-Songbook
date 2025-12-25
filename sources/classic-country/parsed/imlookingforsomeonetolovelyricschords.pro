@@ -1,6 +1,6 @@
 {meta: title I'm Looking For Someone To Love}
 {meta: artist Buddy Holly}
-{meta: writer Charles Holley and Norman Petty}
+{meta: composer Charles Holley and Norman Petty}
 
 {start_of_verse: Verse 1}
 [G]Staying at home [C]waiting for you

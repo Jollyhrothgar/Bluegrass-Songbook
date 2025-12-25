@@ -1,6 +1,6 @@
 {meta: title Sad Violins}
 {meta: artist Red Sovine}
-{meta: writer Bun Wilson and Doc Richardson}
+{meta: composer Bun Wilson and Doc Richardson}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm [F]back at [G7]our old [C]table in our [F]favorite [C]hide-a-way

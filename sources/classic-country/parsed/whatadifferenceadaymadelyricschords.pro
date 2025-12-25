@@ -1,6 +1,6 @@
 {meta: title What A Difference A Day Made}
 {meta: artist Willie Nelson}
-{meta: writer María Mendez Grever and Stanley Adams}
+{meta: composer María Mendez Grever and Stanley Adams}
 
 {start_of_verse: Verse 1}
 [F]What a difference [Dm]a day [G7]made

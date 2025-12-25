@@ -1,6 +1,6 @@
 {meta: title The Yellow Rose of Texas}
 {meta: artist Michael Martin Murphey}
-{meta: writer Don George}
+{meta: composer Don George}
 
 {start_of_verse: Verse 1}
 [G]There's a yellow rose in Texas that I am going to see

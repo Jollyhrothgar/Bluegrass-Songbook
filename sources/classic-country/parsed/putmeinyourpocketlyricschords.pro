@@ -1,6 +1,6 @@
 {meta: title Put Me In Your Pocket}
 {meta: artist Wilburn Brothers}
-{meta: writer Waldo LaFayette O'Neal}
+{meta: composer Waldo LaFayette O'Neal}
 
 {start_of_verse: Verse 1}
 [C]A lover [G7]sat one [C]evening [F]in the pale moon[C]light

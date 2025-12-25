@@ -1,6 +1,6 @@
 {meta: title 25 Minutes To Go}
 {meta: artist Johnny Cash}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]Well they're building a gallows outside my cell 

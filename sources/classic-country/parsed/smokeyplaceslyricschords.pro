@@ -1,6 +1,6 @@
 {meta: title Smokey Places}
 {meta: artist Billy Walker}
-{meta: writer Abner Spector}
+{meta: composer Abner Spector}
 
 {start_of_verse: Verse 1}
 [C]Meeting in smoky [G7]places hiding in shadowy [C]corners

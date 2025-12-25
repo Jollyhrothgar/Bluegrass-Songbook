@@ -1,6 +1,6 @@
 {meta: title Right In The Palm Of Your Hand}
 {meta: artist Conway Twitty}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]A willing woman  [G7]a willing man

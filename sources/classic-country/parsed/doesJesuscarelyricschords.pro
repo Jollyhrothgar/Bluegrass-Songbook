@@ -1,6 +1,6 @@
 {meta: title Does Jesus Care}
 {meta: artist Sonny James}
-{meta: writer Eugene L. Clark, F.E. Graeff, Joe L. Hall}
+{meta: composer Eugene L. Clark, F.E. Graeff, Joe L. Hall}
 
 {start_of_verse: Verse 1}
 [C]Does Jesus care when my heart is pained

@@ -1,6 +1,6 @@
 {meta: title Dog House Boogie}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Boothe Woodall and Hawkshaw Hawkins}
+{meta: composer Boothe Woodall and Hawkshaw Hawkins}
 
 {start_of_verse: Verse 1}
 [C]I know a new boogie that can't be beat

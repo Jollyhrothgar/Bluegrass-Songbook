@@ -1,6 +1,6 @@
 {meta: title I Still Sing The Old Songs}
 {meta: artist Tanya Tucker}
-{meta: writer David A. Coe}
+{meta: composer David A. Coe}
 
 {start_of_verse: Verse 1}
 [G]Grandpa I've been [C]thinking bout you [G]lately

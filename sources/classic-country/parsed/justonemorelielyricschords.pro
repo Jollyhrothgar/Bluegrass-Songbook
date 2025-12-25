@@ -1,6 +1,6 @@
 {meta: title Just One More Lie}
 {meta: artist Sonny James}
-{meta: writer Shurl Legate}
+{meta: composer Shurl Legate}
 
 {start_of_verse: Verse 1}
 [G]Oh tell me just one more [C]lie

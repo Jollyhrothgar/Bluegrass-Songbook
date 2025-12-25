@@ -1,6 +1,6 @@
 {meta: title Get In Line Brother}
 {meta: artist Lester Flatt}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]Oh listen to me sinners don't you want to go

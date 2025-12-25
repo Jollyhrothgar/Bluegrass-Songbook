@@ -1,6 +1,6 @@
 {meta: title If You Could Touch Her At All}
 {meta: artist Willie Nelson}
-{meta: writer Lee Clayton}
+{meta: composer Lee Clayton}
 
 {start_of_verse: Verse 1}
 [C]Funny a woman can come on so wild and [F]free

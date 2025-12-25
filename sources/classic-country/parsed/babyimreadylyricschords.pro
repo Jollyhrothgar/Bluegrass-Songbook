@@ -1,6 +1,6 @@
 {meta: title Baby I'm Ready}
 {meta: artist Ricky Van Shelton}
-{meta: writer Floyd Wilson}
+{meta: composer Floyd Wilson}
 
 {start_of_verse: Verse 1}
 [G]Well tonight's my night to really howl

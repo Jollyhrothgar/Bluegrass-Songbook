@@ -1,6 +1,6 @@
 {meta: title That's All It Took}
 {meta: artist Emmylou Harris}
-{meta: writer Darrell Edwards, Charlotte Grier, George Jones}
+{meta: composer Darrell Edwards, Charlotte Grier, George Jones}
 
 {start_of_verse: Verse 1}
 [D7]That's all it [G]took the mention of your [C]name

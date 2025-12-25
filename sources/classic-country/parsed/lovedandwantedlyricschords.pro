@@ -1,6 +1,6 @@
 {meta: title Loved And Wanted}
 {meta: artist Kitty Wells}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [C]Loved and wanted everyone wants to [G7]be

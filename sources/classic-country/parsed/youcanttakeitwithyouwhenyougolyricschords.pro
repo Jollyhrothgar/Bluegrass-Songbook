@@ -1,6 +1,6 @@
 {meta: title You Can't Take It With You When You Go}
 {meta: artist Gene Watson}
-{meta: writer Larry Cordle, Larry Shell, Bert Colwell}
+{meta: composer Larry Cordle, Larry Shell, Bert Colwell}
 
 {start_of_verse: Verse 1}
 [G]I got a friend who's a workaholic he never knows when to quit

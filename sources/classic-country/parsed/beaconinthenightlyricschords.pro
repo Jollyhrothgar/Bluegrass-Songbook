@@ -1,6 +1,6 @@
 {meta: title Beacon In The Night}
 {meta: artist George Jones}
-{meta: writer Darrell Edwards and Herby Treece}
+{meta: composer Darrell Edwards and Herby Treece}
 
 {start_of_verse: Verse 1}
 [G]Many souls are drifting on the [C]troubled sea of [G]sin

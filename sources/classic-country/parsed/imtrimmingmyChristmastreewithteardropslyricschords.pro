@@ -1,6 +1,6 @@
 {meta: title I'm Trimming My Christmas Tree With Teardrops}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb and Frank Team}
+{meta: composer Ernest Tubb and Frank Team}
 
 {start_of_verse: Verse 1}
 [C]I'm trimming my Christmas tree with [G7]teardrops

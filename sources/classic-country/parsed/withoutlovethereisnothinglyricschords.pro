@@ -1,6 +1,6 @@
 {meta: title Without Love (There Is Nothing)}
 {meta: artist Elvis Presley}
-{meta: writer Danny Small}
+{meta: composer Danny Small}
 
 {start_of_verse: Verse 1}
 [C]I awakened this morning I was [F]filled with des[C]pair

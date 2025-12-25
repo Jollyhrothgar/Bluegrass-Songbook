@@ -1,6 +1,6 @@
 {meta: title Don’t Come Crying To Me}
 {meta: artist Vince Gill}
-{meta: writer Reed Nielsen and Vince Gill}
+{meta: composer Reed Nielsen and Vince Gill}
 
 {start_of_verse: Verse 1}
 [G7]Don't come [C]crying to me when it's [F]over

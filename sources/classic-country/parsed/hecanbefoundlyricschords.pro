@@ -1,6 +1,6 @@
 {meta: title He Can Be Found}
 {meta: artist The Louvin Brothers}
-{meta: writer Ella Barrett and Faye Cunningham}
+{meta: composer Ella Barrett and Faye Cunningham}
 
 {start_of_verse: Verse 1}
 [C]He can be found in a mother's [G7]smile

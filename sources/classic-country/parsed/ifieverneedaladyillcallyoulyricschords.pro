@@ -1,6 +1,6 @@
 {meta: title If I Ever Need A Lady I'll Call You}
 {meta: artist Claude Gray}
-{meta: writer Gene Crysler}
+{meta: composer Gene Crysler}
 
 {start_of_verse: Verse 1}
 [C]You don't smoke and you don't swear 

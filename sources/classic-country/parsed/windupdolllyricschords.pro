@@ -1,6 +1,6 @@
 {meta: title Wind Up Doll}
 {meta: artist Jim Reeves}
-{meta: writer Roger Miller and Justin Tubb}
+{meta: composer Roger Miller and Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]Can this be the wind up [F]you don't seem the [C]same

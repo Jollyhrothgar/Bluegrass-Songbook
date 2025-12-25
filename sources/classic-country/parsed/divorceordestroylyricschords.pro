@@ -1,6 +1,6 @@
 {meta: title Divorce Or Destroy}
 {meta: artist Hank Williams Jr.}
-{meta: writer Billy Deaton}
+{meta: composer Billy Deaton}
 
 {start_of_verse: Verse 1}
 [C]We've lived to[F]gether for a [C]long time 

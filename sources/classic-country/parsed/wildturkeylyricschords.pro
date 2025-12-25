@@ -1,6 +1,6 @@
 {meta: title Wild Turkey}
 {meta: artist Lacy J. Dalton}
-{meta: writer Hugh Moffatt and Pebe Sebert}
+{meta: composer Hugh Moffatt and Pebe Sebert}
 
 {start_of_verse: Verse 1}
 [C]I had one lover in all my life [F]he left me [G7]high and [C]dry

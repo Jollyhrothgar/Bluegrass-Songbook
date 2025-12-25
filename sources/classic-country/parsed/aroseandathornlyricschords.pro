@@ -1,6 +1,6 @@
 {meta: title A Rose And A Thorn}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Webb Pierce}
+{meta: composer Wayne P. Walker and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]Well a [C]long time [G]ago a little [C]girl loved a [G]boy

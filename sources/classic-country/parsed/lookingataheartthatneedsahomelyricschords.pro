@@ -1,6 +1,6 @@
 {meta: title Looking At A Heart That Needs A Home}
 {meta: artist Waylon Jennings}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G7]I'm just a stranger in this [C]town

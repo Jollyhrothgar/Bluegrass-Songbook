@@ -1,6 +1,6 @@
 {meta: title Heaven Is Just A Touch Away}
 {meta: artist Cal Smith}
-{meta: writer Carl Knight, Charles Pendleton, Abe Potwein}
+{meta: composer Carl Knight, Charles Pendleton, Abe Potwein}
 
 {start_of_verse: Verse 1}
 [G]I awake and there [D7]you are beside [G]me

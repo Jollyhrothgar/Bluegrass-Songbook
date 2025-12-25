@@ -1,6 +1,6 @@
 {meta: title I Lost The Only Love I Ever Knew}
 {meta: artist Ray Price}
-{meta: writer Don Helms and Hank Williams}
+{meta: composer Don Helms and Hank Williams}
 
 {start_of_verse: Verse 1}
 [G]You ask me why my heart's so [C]sad

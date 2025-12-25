@@ -1,6 +1,6 @@
 {meta: title Kneeling Drunkard's Plea}
 {meta: artist Louvin Brothers}
-{meta: writer Anita Carter, Helen Carter,}
+{meta: composer Anita Carter, Helen Carter,}
 
 {start_of_verse: Verse 1}
 [G]Lord have [D7]mercy on me

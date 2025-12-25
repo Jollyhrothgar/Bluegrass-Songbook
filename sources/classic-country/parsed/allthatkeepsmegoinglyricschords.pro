@@ -1,6 +1,6 @@
 {meta: title All That Keeps Me Going}
 {meta: artist Ray Price}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [C]It’s hard being on the road day after day

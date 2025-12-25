@@ -1,6 +1,6 @@
 {meta: title Making Believe}
 {meta: artist Ernest Tubb}
-{meta: writer Jimmy Work}
+{meta: composer Jimmy Work}
 
 {start_of_verse: Verse 1}
 [G]Making believe that you [C]still love [G]me 

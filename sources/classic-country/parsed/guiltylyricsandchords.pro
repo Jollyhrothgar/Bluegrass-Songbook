@@ -1,6 +1,6 @@
 {meta: title Guilty}
 {meta: artist Kitty Wells}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [G]I've been accused [C]convicted and [G]condemned 

@@ -1,6 +1,6 @@
 {meta: title Sugar Moon}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills and Cindy Walker}
+{meta: composer Bob Wills and Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G7]When it's sugarcane [C]time along around about [D7]June

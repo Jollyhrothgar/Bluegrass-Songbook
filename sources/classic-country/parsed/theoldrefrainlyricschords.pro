@@ -1,6 +1,6 @@
 {meta: title The Old Refrain}
 {meta: artist George Morgan}
-{meta: writer Craig Market}
+{meta: composer Craig Market}
 
 {start_of_verse: Verse 1}
 [C]I often [F]think of [C]home dee-ol-ee-[D7]ay

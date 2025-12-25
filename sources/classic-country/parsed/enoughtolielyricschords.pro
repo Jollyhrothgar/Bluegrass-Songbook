@@ -1,6 +1,6 @@
 {meta: title Enough To Lie}
 {meta: artist Ray Price}
-{meta: writer Jeannie Seely}
+{meta: composer Jeannie Seely}
 
 {start_of_verse: Verse 1}
 [G]You don't listen even when  I beg [G7]you not to [C]leave

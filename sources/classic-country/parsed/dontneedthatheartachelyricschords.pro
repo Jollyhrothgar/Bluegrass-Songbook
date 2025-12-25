@@ -1,6 +1,6 @@
 {meta: title Don't Need That Heartache}
 {meta: artist Tracy Byrd}
-{meta: writer Melba Montgomery and Kostas Lazarides}
+{meta: composer Melba Montgomery and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [G]I hate to say it heart I [D7]told you so 

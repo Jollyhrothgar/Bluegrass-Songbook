@@ -1,6 +1,6 @@
 {meta: title Make A Little Love Each Day}
 {meta: artist Moe Bandy}
-{meta: writer Buck Moore}
+{meta: composer Buck Moore}
 
 {start_of_verse: Verse 1}
 [G]You've got to make a little love each [C]day

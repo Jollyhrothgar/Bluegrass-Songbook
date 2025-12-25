@@ -1,6 +1,6 @@
 {meta: title Fit To Be Tied Down}
 {meta: artist Sammy Kershaw}
-{meta: writer Wynn Varble and Charles Victor}
+{meta: composer Wynn Varble and Charles Victor}
 
 {start_of_verse: Verse 1}
 [C]This ain't hoops this ain't [C][F]hopscotch

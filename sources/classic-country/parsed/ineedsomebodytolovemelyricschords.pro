@@ -1,6 +1,6 @@
 {meta: title I Need Somebody To Love Me}
 {meta: artist Billy Crash Craddock}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [C]Is there someone in the night who can make me feel right

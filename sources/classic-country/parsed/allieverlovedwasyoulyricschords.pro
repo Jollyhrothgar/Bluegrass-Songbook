@@ -1,6 +1,6 @@
 {meta: title All I Ever Loved Was You}
 {meta: artist Ricky Skaggs}
-{meta: writer Dorothy Skaggs}
+{meta: composer Dorothy Skaggs}
 
 {start_of_verse: Verse 1}
 [G]All I ever loved was [C]you

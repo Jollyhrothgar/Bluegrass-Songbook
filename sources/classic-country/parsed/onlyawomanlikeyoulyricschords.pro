@@ -1,6 +1,6 @@
 {meta: title Only A Woman Like You}
 {meta: artist Jack Greene}
-{meta: writer Bill Eldridge and Gary Stewart}
+{meta: composer Bill Eldridge and Gary Stewart}
 
 {start_of_verse: Verse 1}
 [G]Only a [C]woman like [D7]you can [G]make a [F]man of [E7]me

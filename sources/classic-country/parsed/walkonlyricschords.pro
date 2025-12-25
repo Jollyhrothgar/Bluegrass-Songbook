@@ -1,6 +1,6 @@
 {meta: title Walk On}
 {meta: artist Reba McEntire}
-{meta: writer Steve Dean and Lonnie Williams}
+{meta: composer Steve Dean and Lonnie Williams}
 
 {start_of_verse: Verse 1}
 [F]Oh ain't life [C]wonderful [Am]when everything is [Dm]right[G7]

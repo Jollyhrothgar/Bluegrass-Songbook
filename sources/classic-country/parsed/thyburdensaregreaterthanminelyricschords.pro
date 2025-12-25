@@ -1,6 +1,6 @@
 {meta: title Thy Burdens Are Greater Than Mine}
 {meta: artist Hank Williams}
-{meta: writer Pee Wee King and Redd Stewart}
+{meta: composer Pee Wee King and Redd Stewart}
 
 {start_of_verse: Verse 1}
 [C]Traveling [G7]down a lonely high[C]way

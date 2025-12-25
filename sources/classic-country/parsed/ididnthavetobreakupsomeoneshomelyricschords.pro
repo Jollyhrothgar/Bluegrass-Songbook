@@ -1,6 +1,6 @@
 {meta: title I Didn't Have To Break Up Someone's Home}
 {meta: artist Kitty Wells}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [G]You say you're sorry that it happened [C]but you love him [G]so

@@ -1,6 +1,6 @@
 {meta: title Same Old Song}
 {meta: artist Lee Greenwood}
-{meta: writer Jerry Crutchfield and Lee Greenwood}
+{meta: composer Jerry Crutchfield and Lee Greenwood}
 
 {start_of_verse: Verse 1}
 [G7]The [C]devil in disguise and [Am]before your very eyes

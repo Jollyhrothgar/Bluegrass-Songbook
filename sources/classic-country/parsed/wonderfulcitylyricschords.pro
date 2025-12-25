@@ -1,6 +1,6 @@
 {meta: title Wonderful City}
 {meta: artist Ernest Tubb}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]I'm waiting watching and [C7]longing that [F]beautiful sight to [C]behold

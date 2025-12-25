@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Tell Santa Clause On You}
 {meta: artist Faron Young}
-{meta: writer Thelma Blackmon}
+{meta: composer Thelma Blackmon}
 
 {start_of_verse: Verse 1}
 [C]Well I’m gonna tell Santa [F]Claus on you

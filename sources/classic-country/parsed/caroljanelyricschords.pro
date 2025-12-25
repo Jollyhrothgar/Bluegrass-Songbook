@@ -1,6 +1,6 @@
 {meta: title Carol Jane}
 {meta: artist Everly Brothers}
-{meta: writer Dave Rich}
+{meta: composer Dave Rich}
 
 {start_of_verse: Verse 1}
 [C]Carol Carol Carol Jane you're the one I love

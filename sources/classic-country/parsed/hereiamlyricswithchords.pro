@@ -1,6 +1,6 @@
 {meta: title Here I Am}
 {meta: artist Patty Loveless}
-{meta: writer Tony Arata}
+{meta: composer Tony Arata}
 
 {start_of_verse: Verse 1}
 [C]Don't do it darling don't you dare look in [C7]there

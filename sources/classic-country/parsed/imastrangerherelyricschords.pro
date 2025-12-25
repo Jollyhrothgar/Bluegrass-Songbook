@@ -1,6 +1,6 @@
 {meta: title I'm A Stranger Here}
 {meta: artist Mac Wiseman}
-{meta: writer Brownie McGhee, Sonny Terry,}
+{meta: composer Brownie McGhee, Sonny Terry,}
 
 {start_of_verse: Verse 1}
 [C]I'm traveling down life's sorrowful pathway

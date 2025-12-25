@@ -1,6 +1,6 @@
 {meta: title Can't You Love Me Just A Little}
 {meta: artist Billy Walker}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Can’t you love me just a little

@@ -1,6 +1,6 @@
 {meta: title Dear Mary}
 {meta: artist Slim Whitman}
-{meta: writer Dave Bartholomew and Pearl King}
+{meta: composer Dave Bartholomew and Pearl King}
 
 {start_of_verse: Verse 1}
 [F]Dear Mary I'm writing this [C]letter 

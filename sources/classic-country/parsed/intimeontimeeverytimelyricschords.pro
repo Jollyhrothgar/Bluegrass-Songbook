@@ -1,6 +1,6 @@
 {meta: title In Time On Time Every Time}
 {meta: artist Gold City}
-{meta: writer Brenda Lee Smith}
+{meta: composer Brenda Lee Smith}
 
 {start_of_verse: Verse 1}
 [G]Gather round children got a story to tell you 

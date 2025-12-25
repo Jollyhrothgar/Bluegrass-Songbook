@@ -1,6 +1,6 @@
 {meta: title Perfume Powder And Lead}
 {meta: artist Lonesome River Band}
-{meta: writer Tommy Morse}
+{meta: composer Tommy Morse}
 
 {start_of_verse: Verse 1}
 [G]We were married in the spring she didn't want for anything

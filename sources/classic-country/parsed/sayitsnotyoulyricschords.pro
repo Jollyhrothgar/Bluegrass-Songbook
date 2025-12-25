@@ -1,6 +1,6 @@
 {meta: title Say It's Not You}
 {meta: artist George Jones}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Darling there's [D7]talk around [G]town 

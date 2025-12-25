@@ -1,6 +1,6 @@
 {meta: title Too Long Gone}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [G]As I turned in the driveway you [C]turned on the [G]light

@@ -1,6 +1,6 @@
 {meta: title So Sad}
 {meta: artist The Everly Brothers}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [C]We used to [F]have good times to[Dm]gether[G7]

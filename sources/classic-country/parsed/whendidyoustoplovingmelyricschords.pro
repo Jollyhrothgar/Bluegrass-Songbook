@@ -1,6 +1,6 @@
 {meta: title When Did You Stop Loving Me}
 {meta: artist George Jones}
-{meta: writer Donny Kees and Monty Holmes}
+{meta: composer Donny Kees and Monty Holmes}
 
 {start_of_verse: Verse 1}
 [C]When did you [G7]stop loving [C]me

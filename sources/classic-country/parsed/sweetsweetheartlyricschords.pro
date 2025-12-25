@@ -1,6 +1,6 @@
 {meta: title Sweet Sweetheart}
 {meta: artist Jeanne Pruett}
-{meta: writer Carole King and Gerry Goffin}
+{meta: composer Carole King and Gerry Goffin}
 
 {start_of_verse: Verse 1}
 [C]You're a sweet sweetheart you [F]been a real good [C]friend

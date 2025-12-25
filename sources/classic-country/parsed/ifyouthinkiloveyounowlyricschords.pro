@@ -1,6 +1,6 @@
 {meta: title If You Think I Love You Now}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Claude Putman Jr.}
+{meta: composer Billy Sherrill and Claude Putman Jr.}
 
 {start_of_verse: Verse 1}
 [G]It's nothing new for a [A7]woman to love her [D7]man

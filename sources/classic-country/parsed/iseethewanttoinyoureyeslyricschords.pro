@@ -1,6 +1,6 @@
 {meta: title I See The Want To In Your Eyes}
 {meta: artist Conway Twitty}
-{meta: writer Wayne Carson Thompson}
+{meta: composer Wayne Carson Thompson}
 
 {start_of_verse: Verse 1}
 [C]I see the sparkling little [F]diamond on your [C]hand

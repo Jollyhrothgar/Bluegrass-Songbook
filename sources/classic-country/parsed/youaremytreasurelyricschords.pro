@@ -1,6 +1,6 @@
 {meta: title You Are My Treasure}
 {meta: artist Jack Greene}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]You are my treasure and my darling I [G7]possess

@@ -1,6 +1,6 @@
 {meta: title Consider The Children}
 {meta: artist Bonnie Owens}
-{meta: writer Merle Haggard and Dean Holloway}
+{meta: composer Merle Haggard and Dean Holloway}
 
 {start_of_verse: Verse 1}
 [C]Please consider the [F]children don't walk out and [C]leave

@@ -1,6 +1,6 @@
 {meta: title Carpet On The Floor}
 {meta: artist Stonewall Jackson}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [G]There's a path that is worn in the [C]carpet on the [G]floor

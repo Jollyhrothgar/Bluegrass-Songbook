@@ -1,6 +1,6 @@
 {meta: title The Cowboy Rides Away}
 {meta: artist George Strait}
-{meta: writer Casey Kelly and Sonny Throckmorton}
+{meta: composer Casey Kelly and Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [G]I knew the stakes were high right from the [C]start

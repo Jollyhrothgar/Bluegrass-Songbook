@@ -1,6 +1,6 @@
 {meta: title Hoping That You’re Hoping}
 {meta: artist The Louvin Brothers}
-{meta: writer Betty E. Harrison}
+{meta: composer Betty E. Harrison}
 
 {start_of_verse: Verse 1}
 [C]E-[F]very [C]minute of the day I'm [G7]thinking about you

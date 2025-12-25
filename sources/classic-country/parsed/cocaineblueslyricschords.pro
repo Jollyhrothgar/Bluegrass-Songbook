@@ -1,6 +1,6 @@
 {meta: title Cocaine Blues}
 {meta: artist Johnny Cash}
-{meta: writer T.J. Arnall}
+{meta: composer T.J. Arnall}
 
 {start_of_verse: Verse 1}
 [C]Early one morning while making the rounds

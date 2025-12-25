@@ -1,6 +1,6 @@
 {meta: title On Tap In The Can Or In The Bottle}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Dick Hart}
+{meta: composer Hank Thompson and Dick Hart}
 
 {start_of_verse: Verse 1}
 [G]On tap in the can or in the [D7]bottle 

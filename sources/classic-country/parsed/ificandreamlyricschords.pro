@@ -1,6 +1,6 @@
 {meta: title If I Can Dream}
 {meta: artist Elvis Presley}
-{meta: writer Walter Earl Brown}
+{meta: composer Walter Earl Brown}
 
 {start_of_verse: Verse 1}
 [C]There must be lights burn-ing [Am]bright-er [F]somewhere

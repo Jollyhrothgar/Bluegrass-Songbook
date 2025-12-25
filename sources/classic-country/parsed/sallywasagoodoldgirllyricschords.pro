@@ -1,6 +1,6 @@
 {meta: title Sally Was A Good Old Girl}
 {meta: artist Fats Domino}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Sally used to carry my books to school 

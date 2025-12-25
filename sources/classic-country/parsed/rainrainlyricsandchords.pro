@@ -1,6 +1,6 @@
 {meta: title Rain Rain}
 {meta: artist George Jones}
-{meta: writer Roger Miller, George Jones, J.P. Richardson}
+{meta: composer Roger Miller, George Jones, J.P. Richardson}
 
 {start_of_verse: Verse 1}
 [G]Rain rain keeps a falling down

@@ -1,5 +1,5 @@
 {meta: artist Mel Tillis}
-{meta: writer Jim Owen}
+{meta: composer Jim Owen}
 
 {start_of_verse: Verse 1}
 [C]I tried so hard to make you [F]love me

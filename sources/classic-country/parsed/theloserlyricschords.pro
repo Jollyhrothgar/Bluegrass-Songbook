@@ -1,6 +1,6 @@
 {meta: title The Loser}
 {meta: artist Darrell McCall}
-{meta: writer Darrell McCall and Lamar Morris}
+{meta: composer Darrell McCall and Lamar Morris}
 
 {start_of_verse: Verse 1}
 [G]Play that song [C]again about the [G]loser

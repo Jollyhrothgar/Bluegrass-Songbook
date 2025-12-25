@@ -1,6 +1,6 @@
 {meta: title The Chill Of An Early Fall}
 {meta: artist George Strait}
-{meta: writer Gretchen Peters and Green Daniel}
+{meta: composer Gretchen Peters and Green Daniel}
 
 {start_of_verse: Verse 1}
 [G7]Well her [C]old friend [G7]from her [Am]old [C]end of [F]town dropped [C]by [G7]today

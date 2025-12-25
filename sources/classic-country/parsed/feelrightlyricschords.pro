@@ -1,6 +1,6 @@
 {meta: title Feel Right}
 {meta: artist Tanya Tucker}
-{meta: writer Larry Byron}
+{meta: composer Larry Byron}
 
 {start_of_verse: Verse 1}
 [G]You know I want you baby I can't [C]help but feel this [G]way

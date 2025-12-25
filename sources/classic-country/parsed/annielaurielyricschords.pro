@@ -1,6 +1,6 @@
 {meta: title Annie Laurie}
 {meta: artist Slim Whitman}
-{meta: writer Alicia Ann Spottiswoode}
+{meta: composer Alicia Ann Spottiswoode}
 
 {start_of_verse: Verse 1}
 [C]Maxwelton braes are [F]bonnie

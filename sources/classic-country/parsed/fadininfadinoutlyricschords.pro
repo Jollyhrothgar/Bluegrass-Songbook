@@ -1,6 +1,6 @@
 {meta: title Fadin’ In Fadin’ Out}
 {meta: artist Tommy Overstreet}
-{meta: writer Bobby Braddock and Sonny Throckmorton}
+{meta: composer Bobby Braddock and Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]Well I was foolin' round toolin' down Interstate 40

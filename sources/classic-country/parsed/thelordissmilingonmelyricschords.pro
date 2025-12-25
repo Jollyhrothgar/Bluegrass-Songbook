@@ -1,6 +1,6 @@
 {meta: title The Lord Is Smiling On Me}
 {meta: artist Rhonda Vincent}
-{meta: writer Thelma Wilson}
+{meta: composer Thelma Wilson}
 
 {start_of_verse: Verse 1}
 [G]I woke up this morning

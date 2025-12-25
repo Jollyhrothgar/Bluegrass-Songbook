@@ -1,6 +1,6 @@
 {meta: title Now She's Anybody's Song}
 {meta: artist Mel Street}
-{meta: writer Mel Street and Razzy Bailey}
+{meta: composer Mel Street and Razzy Bailey}
 
 {start_of_verse: Verse 1}
 [C]She came into my [F]life like a [C]song

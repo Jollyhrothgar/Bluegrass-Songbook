@@ -1,6 +1,6 @@
 {meta: title I Was Just Walking Out The Door}
 {meta: artist Jim Reeves}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]I was just [G7]walking out the [C]door 

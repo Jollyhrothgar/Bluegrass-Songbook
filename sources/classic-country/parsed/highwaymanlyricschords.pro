@@ -1,6 +1,6 @@
 {meta: title Highway Man}
 {meta: artist Billy Walker}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]Headed down on the [Am]open highway 

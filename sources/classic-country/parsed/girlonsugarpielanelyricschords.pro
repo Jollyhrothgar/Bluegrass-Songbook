@@ -1,6 +1,6 @@
 {meta: title Girl On Sugar Pie Lane}
 {meta: artist Buck Owens}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]There's a girl in the house on the street called Sugar Pie [D7]Lane

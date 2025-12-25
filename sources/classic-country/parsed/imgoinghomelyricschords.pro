@@ -1,6 +1,6 @@
 {meta: title I'm Going Home}
 {meta: artist Hank Williams}
-{meta: writer Hank Williams}
+{meta: composer Hank Williams}
 
 {start_of_verse: Verse 1}
 [C]When my work here is o'er

@@ -1,6 +1,6 @@
 {meta: title Christmas In The Mountains}
 {meta: artist Faron Young}
-{meta: writer Bill Emerson and Jody Emerson}
+{meta: composer Bill Emerson and Jody Emerson}
 
 {start_of_verse: Verse 1}
 [G]Mama's busy making her own deco[C]rations

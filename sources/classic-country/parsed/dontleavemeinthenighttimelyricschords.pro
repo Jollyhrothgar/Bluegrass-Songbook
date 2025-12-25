@@ -1,6 +1,6 @@
 {meta: title Don't Leave Me In The Nighttime}
 {meta: artist Moe Bandy}
-{meta: writer Don Schlitz and Paul Overstreet}
+{meta: composer Don Schlitz and Paul Overstreet}
 
 {start_of_verse: Verse 1}
 [C]Oh baby don't leave me in the [C][F]nighttime

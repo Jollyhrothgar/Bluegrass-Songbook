@@ -1,6 +1,6 @@
 {meta: title If Anything Ever Happened To You}
 {meta: artist Bill Anderson}
-{meta: writer Jon Randall and Bill Anderson}
+{meta: composer Jon Randall and Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]He was sitting on the front porch [Am]  with his [G7]wife of [C]fifty [F]years

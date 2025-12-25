@@ -1,6 +1,6 @@
 {meta: title Peace In My Soul}
 {meta: artist Sonny James}
-{meta: writer Milo Legate}
+{meta: composer Milo Legate}
 
 {start_of_verse: Verse 1}
 [C]Peace in my [C7]soul [F]peace in my [C]soul

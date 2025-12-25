@@ -1,6 +1,6 @@
 {meta: title In The Ashes Of An Old Love Affair}
 {meta: artist Marty Robbins}
-{meta: writer Leon Douglas}
+{meta: composer Leon Douglas}
 
 {start_of_verse: Verse 1}
 [C]In the ashes of an old love I found the spark burning [G7]yet

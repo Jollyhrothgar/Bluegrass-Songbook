@@ -1,6 +1,6 @@
 {meta: title Workin' Man's Hands}
 {meta: artist Patty Loveless}
-{meta: writer Johnny Pierce, Joanne Christy, Paul Marshall}
+{meta: composer Johnny Pierce, Joanne Christy, Paul Marshall}
 
 {start_of_verse: Verse 1}
 [C]I love the hands of the [F]workin' [C]man

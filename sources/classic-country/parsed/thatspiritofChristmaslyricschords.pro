@@ -1,6 +1,6 @@
 {meta: title That Spirit of Christmas}
 {meta: artist Ray Charles}
-{meta: writer Joel D. Webster, Mable John}
+{meta: composer Joel D. Webster, Mable John}
 
 {start_of_verse: Verse 1}
 [C]Christmas is the time of year[F]  [C]

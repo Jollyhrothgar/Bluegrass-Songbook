@@ -1,6 +1,6 @@
 {meta: title In Case You Ever Change Your Mind}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]I'll be waiting till the end of [G]time

@@ -1,6 +1,6 @@
 {meta: title Greasy Grit Gravy}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]Momma momma me oh [G7]my

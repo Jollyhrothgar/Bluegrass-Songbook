@@ -1,6 +1,6 @@
 {meta: title Things That Lovers Do}
 {meta: artist Stonewall Jackson}
-{meta: writer Hugh X. Lewis}
+{meta: composer Hugh X. Lewis}
 
 {start_of_verse: Verse 1}
 [C]She takes one day a week to call her own

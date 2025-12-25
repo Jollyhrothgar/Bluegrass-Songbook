@@ -1,6 +1,6 @@
 {meta: title Oney}
 {meta: artist Johnny Cash}
-{meta: writer Jerry Chestnut}
+{meta: composer Jerry Chestnut}
 
 {start_of_verse: Verse 1}
 spoken:

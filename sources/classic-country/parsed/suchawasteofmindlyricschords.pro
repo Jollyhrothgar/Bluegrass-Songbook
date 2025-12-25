@@ -1,6 +1,6 @@
 {meta: title Such A Waste Of Mind}
 {meta: artist Faron Young}
-{meta: writer Clyde Pitts, Len Pitts, Cile Davis}
+{meta: composer Clyde Pitts, Len Pitts, Cile Davis}
 
 {start_of_verse: Verse 1}
 [C]Living on dreams really [F]isn’t so [C]bad

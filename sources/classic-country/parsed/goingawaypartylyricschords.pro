@@ -1,6 +1,6 @@
 {meta: title Going Away Party}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]I'm throwing a going away [F]party

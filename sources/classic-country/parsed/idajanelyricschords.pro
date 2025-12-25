@@ -1,6 +1,6 @@
 {meta: title Ida Jane}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino and Dave Bartholomew}
+{meta: composer Antonio Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [G]Whoa yes it's me 

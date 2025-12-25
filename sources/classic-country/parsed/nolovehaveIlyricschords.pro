@@ -1,6 +1,6 @@
 {meta: title No Love Have I}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]Honey bee loves the honey chickadee loves the sky

@@ -1,6 +1,6 @@
 {meta: title Just What I've Been Looking For}
 {meta: artist Dottie West}
-{meta: writer Kenny O'Dell}
+{meta: composer Kenny O'Dell}
 
 {start_of_verse: Verse 1}
 [C]You're just what I've been looking [F]for

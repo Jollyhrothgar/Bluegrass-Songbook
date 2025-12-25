@@ -1,6 +1,6 @@
 {meta: title I Die Ten Thousand Times A Day}
 {meta: artist Merle Haggard}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [C]I come home and I [G7]sat down by the [C]door

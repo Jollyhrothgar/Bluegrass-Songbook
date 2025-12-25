@@ -1,6 +1,6 @@
 {meta: title You Made Me Live Love And Die}
 {meta: artist Willie Nelson}
-{meta: writer Floyd Tillman}
+{meta: composer Floyd Tillman}
 
 {start_of_verse: Verse 1}
 [G]I cried and cried my heart out but what good does it [A7]do

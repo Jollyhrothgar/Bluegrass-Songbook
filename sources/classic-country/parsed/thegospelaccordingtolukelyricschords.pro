@@ -1,6 +1,6 @@
 {meta: title The Gospel According To Luke}
 {meta: artist Skip Ewing}
-{meta: writer Skip Ewing and Don Sampson}
+{meta: composer Skip Ewing and Don Sampson}
 
 {start_of_verse: Verse 1}
 [C]He was an old hand at living and [G7]making his [C]way

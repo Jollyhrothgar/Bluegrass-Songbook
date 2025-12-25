@@ -1,6 +1,6 @@
 {meta: title He Went To The Cross Loving You}
 {meta: artist Statler Brother}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [G]He came in this [C]world loving [G]you

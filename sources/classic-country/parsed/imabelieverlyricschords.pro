@@ -1,6 +1,6 @@
 {meta: title I'm A Believer}
 {meta: artist Tommy Overstreet}
-{meta: writer Ricci Mareno and Tommy Rocco}
+{meta: composer Ricci Mareno and Tommy Rocco}
 
 {start_of_verse: Verse 1}
 [C]I'm a believer I'm a believer [F]I'm a believer

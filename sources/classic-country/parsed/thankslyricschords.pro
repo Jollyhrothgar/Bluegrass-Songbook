@@ -1,6 +1,6 @@
 {meta: title Thanks}
 {meta: artist Waylon Jennings}
-{meta: writer Bill Martin and Phil Coulter}
+{meta: composer Bill Martin and Phil Coulter}
 
 {start_of_verse: Verse 1}
 [G7]Sunday morning in the [C]valley

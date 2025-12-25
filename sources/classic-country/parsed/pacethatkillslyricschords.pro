@@ -1,6 +1,6 @@
 {meta: title Pace That Kills}
 {meta: artist Kitty Wells}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [G]Too many parties and too much [D7]drinking

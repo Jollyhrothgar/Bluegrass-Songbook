@@ -1,6 +1,6 @@
 {meta: title Abilene}
 {meta: artist Buck Owens}
-{meta: writer Lester Brown, John D. Loudermilk, Bob Gibson}
+{meta: composer Lester Brown, John D. Loudermilk, Bob Gibson}
 
 {start_of_verse: Verse 1}
 [C]Abilene  [E7]Abilene  prettiest [F]town I've ever [C]seen

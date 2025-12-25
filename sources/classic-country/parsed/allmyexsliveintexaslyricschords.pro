@@ -1,6 +1,6 @@
 {meta: title All My Ex's Live In Texas}
 {meta: artist George Strait}
-{meta: writer Sanger D. Shafer and Linda J. Shafer}
+{meta: composer Sanger D. Shafer and Linda J. Shafer}
 
 {start_of_verse: Verse 1}
 [G]All my Ex's live in [D7]Texas

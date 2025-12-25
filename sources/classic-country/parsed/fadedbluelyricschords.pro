@@ -1,6 +1,6 @@
 {meta: title Faded Blue}
 {meta: artist Mel Tillis}
-{meta: writer Donny Lowery and Lyman McAnally}
+{meta: composer Donny Lowery and Lyman McAnally}
 
 {start_of_verse: Verse 1}
 [G7]It hurts to [C]find that love's grown [F]cold

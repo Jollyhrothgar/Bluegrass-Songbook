@@ -1,6 +1,6 @@
 {meta: title I Can Tell By the Way You Dance}
 {meta: artist Vern Gosdin}
-{meta: writer Sandy Pinkard and Rob Strandlund}
+{meta: composer Sandy Pinkard and Rob Strandlund}
 
 {start_of_verse: Verse 1}
 [G7]I can [C]see [F]every time I [G7]look into your [C]eyes

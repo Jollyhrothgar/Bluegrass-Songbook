@@ -1,6 +1,6 @@
 {meta: title You Asked Me To}
 {meta: artist Waylon Jennings}
-{meta: writer Billy Joe Shaver and Waylon Jennings}
+{meta: composer Billy Joe Shaver and Waylon Jennings}
 
 {start_of_verse: Verse 1}
 [C]Long ago and far [F]away

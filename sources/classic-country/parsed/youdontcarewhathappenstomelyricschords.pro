@@ -1,6 +1,6 @@
 {meta: title You Don't Care What Happens To Me}
 {meta: artist Ray Price}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]Darling I love you so and it's kind of hard to [C]know

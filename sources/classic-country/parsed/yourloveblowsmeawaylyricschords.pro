@@ -1,6 +1,6 @@
 {meta: title Your Love Blows Me Away}
 {meta: artist Bill Anderson}
-{meta: writer Curly Putman and Sterling Whipple}
+{meta: composer Curly Putman and Sterling Whipple}
 
 {start_of_verse: Verse 1}
 [C]Your love blows me [F]away

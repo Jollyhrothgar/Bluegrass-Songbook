@@ -1,6 +1,6 @@
 {meta: title Too Many Rivers}
 {meta: artist The Statler Brothers}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 I [E7]wish I could come back to you [A7]love

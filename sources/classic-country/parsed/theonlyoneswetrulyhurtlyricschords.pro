@@ -1,6 +1,6 @@
 {meta: title The Only Ones We Truly Hurt}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Carole Smith}
+{meta: composer Sonny James and Carole Smith}
 
 {start_of_verse: Verse 1}
 [C]The only [Em]ones we [G7]truly [Dm]hurt 

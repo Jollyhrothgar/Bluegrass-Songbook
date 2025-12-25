@@ -1,6 +1,6 @@
 {meta: title House Without Windows}
 {meta: artist Roy Orbison}
-{meta: writer Charles Tobias and Lee Pockriss}
+{meta: composer Charles Tobias and Lee Pockriss}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna [G7]move into a house without [C]windows 

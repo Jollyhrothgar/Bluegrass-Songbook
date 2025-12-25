@@ -1,6 +1,6 @@
 {meta: title Life's Too Long (To Live Like This)}
 {meta: artist Ricky Skaggs}
-{meta: writer Don Cook, John Jarvis, Dan Wilson}
+{meta: composer Don Cook, John Jarvis, Dan Wilson}
 
 {start_of_verse: Verse 1}
 [G]Drive time [F]traffic in the [C]pouring [G]rain

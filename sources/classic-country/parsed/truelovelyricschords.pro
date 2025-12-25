@@ -1,6 +1,6 @@
 {meta: title True Love}
 {meta: artist Patsy Cline}
-{meta: writer Cole Porter}
+{meta: composer Cole Porter}
 
 {start_of_verse: Verse 1}
 [G7]While I [C]give [F]to you  and [C]you give to [G7]me

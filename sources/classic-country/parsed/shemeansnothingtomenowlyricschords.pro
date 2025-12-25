@@ -1,6 +1,6 @@
 {meta: title She Means Nothing To Me Now}
 {meta: artist Marty Robbins}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]Go ahead and call her if you want [G7]to

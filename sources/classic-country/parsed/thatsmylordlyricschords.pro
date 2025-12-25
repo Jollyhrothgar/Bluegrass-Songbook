@@ -1,6 +1,6 @@
 {meta: title That's My Lord}
 {meta: artist Ray Price}
-{meta: writer Lee Dresser}
+{meta: composer Lee Dresser}
 
 {start_of_verse: Verse 1}
 [C]I hear a voice but there's no sound

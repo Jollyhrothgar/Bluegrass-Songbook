@@ -1,6 +1,6 @@
 {meta: title Between Lust and Watching TV}
 {meta: artist Cal Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]The life that I'm seeking

@@ -1,6 +1,6 @@
 {meta: title You Beat All I’ve Ever Seen}
 {meta: artist Rhonda Vincent}
-{meta: writer Kathy Louvin, Kostas, Melba Montgomery}
+{meta: composer Kathy Louvin, Kostas, Melba Montgomery}
 
 {start_of_verse: Verse 1}
 [G]I’ve looked the world [C]over in [G]search of a dream

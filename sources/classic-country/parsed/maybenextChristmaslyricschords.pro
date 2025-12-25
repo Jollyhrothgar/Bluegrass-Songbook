@@ -1,6 +1,6 @@
 {meta: title Maybe Next Christmas}
 {meta: artist George Jones}
-{meta: writer George Jones and Lester Blackwell}
+{meta: composer George Jones and Lester Blackwell}
 
 {start_of_verse: Verse 1}
 [G]I'm thinking [D7]now of [C]Christmas

@@ -1,6 +1,6 @@
 {meta: title Next Go Round}
 {meta: artist Old Crow Medicine Show}
-{meta: writer Ketch Secor And Willie Watson}
+{meta: composer Ketch Secor And Willie Watson}
 
 {start_of_verse: Verse 1}
 [C]When the summer is come and gone

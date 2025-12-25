@@ -1,6 +1,6 @@
 {meta: title Falling Back to You Lyrics and Chords}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Bill Phillips}
+{meta: composer Webb Pierce and Bill Phillips}
 
 {start_of_verse: Verse 1}
 [C]Yes I keep [F]falling back to you what else can I [C]do

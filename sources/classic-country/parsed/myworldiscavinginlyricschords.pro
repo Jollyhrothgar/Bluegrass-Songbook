@@ -1,6 +1,6 @@
 {meta: title My World Is Caving In}
 {meta: artist Leroy Van Dyke}
-{meta: writer Red Kirk}
+{meta: composer Red Kirk}
 
 {start_of_verse: Verse 1}
 [G]The car's not in its place outback

@@ -1,6 +1,6 @@
 {meta: title After the Fire is Gone Lyrics chords}
 {meta: artist Free Song Lyrics and Chords}
-{meta: writer L.E. White}
+{meta: composer L.E. White}
 
 {start_of_verse: Verse 1}
 [C]Love is where you find it  

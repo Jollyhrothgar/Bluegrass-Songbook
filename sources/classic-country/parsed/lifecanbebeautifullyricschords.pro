@@ -1,5 +1,5 @@
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]Every day I say good [G7]morning to love

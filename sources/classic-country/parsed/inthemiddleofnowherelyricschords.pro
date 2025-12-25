@@ -1,6 +1,6 @@
 {meta: title In The Middle Of Nowhere}
 {meta: artist Charley Pride}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]They had meant for me [F]one last time to see my [C]hometown again

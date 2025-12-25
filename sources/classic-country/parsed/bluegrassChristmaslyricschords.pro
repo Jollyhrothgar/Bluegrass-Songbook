@@ -1,6 +1,6 @@
 {meta: title Bluegrass Christmas}
 {meta: artist The Lewis Family}
-{meta: writer Del McCoury}
+{meta: composer Del McCoury}
 
 {start_of_verse: Verse 1}
 [C]The cold wind is blowing through the [Am]tall Georgia pines

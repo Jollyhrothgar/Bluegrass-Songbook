@@ -1,6 +1,6 @@
 {meta: title I've Got Time On My Hands}
 {meta: artist Don Williams}
-{meta: writer Laying Martine}
+{meta: composer Laying Martine}
 
 {start_of_verse: Verse 1}
 [C]Everyday of my life  [F]until forever 

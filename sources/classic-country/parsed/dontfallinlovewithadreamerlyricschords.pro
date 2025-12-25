@@ -1,6 +1,6 @@
 {meta: title Don't Fall In Love With A Dreamer}
 {meta: artist Kenny Rogers}
-{meta: writer David Ellingson and Kim Carnes}
+{meta: composer David Ellingson and Kim Carnes}
 
 {start_of_verse: Verse 1}
 [G]Just [D7]look at [Em]you  [G]sitting [C]there

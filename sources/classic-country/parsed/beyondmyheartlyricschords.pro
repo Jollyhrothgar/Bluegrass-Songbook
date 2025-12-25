@@ -1,6 +1,6 @@
 {meta: title Beyond My Heart}
 {meta: artist George Morgan}
-{meta: writer Manning Twomey}
+{meta: composer Manning Twomey}
 
 {start_of_verse: Verse 1}
 [G]I couldn’t see [G7]beyond my [C]heart

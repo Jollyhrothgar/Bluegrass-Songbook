@@ -1,6 +1,6 @@
 {meta: title Giving Up Getting Over You}
 {meta: artist Mickey Gilley}
-{meta: writer Gary Nicholson, Chick Rains, Robb Strandlund}
+{meta: composer Gary Nicholson, Chick Rains, Robb Strandlund}
 
 {start_of_verse: Verse 1}
 [C]Well I tried so hard to forget you [F]every way I know

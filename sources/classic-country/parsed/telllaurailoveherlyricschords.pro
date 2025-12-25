@@ -1,6 +1,6 @@
 {meta: title Tell Laura I Love Her}
 {meta: artist the Everly Brothers}
-{meta: writer Ray Peterson}
+{meta: composer Ray Peterson}
 
 {start_of_verse: Verse 1}
 [G]Tommy and Laura were [C]lovers    

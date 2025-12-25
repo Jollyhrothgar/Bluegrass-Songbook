@@ -1,6 +1,6 @@
 {meta: title I'll Never Let Go Of You}
 {meta: artist George Jones}
-{meta: writer George Jones and George Riddle}
+{meta: composer George Jones and George Riddle}
 
 {start_of_verse: Verse 1}
 [C]I'll never let [F]go of you not your sweet loving [C]touch

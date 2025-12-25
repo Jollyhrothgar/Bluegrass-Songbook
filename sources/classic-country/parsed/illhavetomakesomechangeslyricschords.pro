@@ -1,6 +1,6 @@
 {meta: title I'll Have to Make Some Changes}
 {meta: artist Marty Robbins}
-{meta: writer Bill D. Johnson}
+{meta: composer Bill D. Johnson}
 
 {start_of_verse: Verse 1}
 [G]Well I've got to forget you if [C]I'm going to sur[G]vive

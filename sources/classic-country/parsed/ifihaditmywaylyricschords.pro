@@ -1,6 +1,6 @@
 {meta: title If I Had It My Way}
 {meta: artist Reba McEntire}
-{meta: writer Robert Jones and Jerry Tayler}
+{meta: composer Robert Jones and Jerry Tayler}
 
 {start_of_verse: Verse 1}
 [C]We wouldn't have to meet here in this 

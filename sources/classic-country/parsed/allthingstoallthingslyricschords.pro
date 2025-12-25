@@ -1,6 +1,6 @@
 {meta: title All Things To All Things}
 {meta: artist John Anderson}
-{meta: writer John Anderson and Fred Carter}
+{meta: composer John Anderson and Fred Carter}
 
 {start_of_verse: Verse 1}
 [C]You give us the [F]sands on the [C]desert

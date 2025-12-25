@@ -1,6 +1,6 @@
 {meta: title You Can't Go Home}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]Roy taught me how to play baseball 

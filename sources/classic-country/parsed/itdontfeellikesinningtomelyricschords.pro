@@ -1,6 +1,6 @@
 {meta: title It Don’t Feel Like Sinning To Me}
 {meta: artist The Kendalls}
-{meta: writer Curly Putman and Michael Kosser}
+{meta: composer Curly Putman and Michael Kosser}
 
 {start_of_verse: Verse 1}
 [C]When we're holding each other in the [F]dark hours of the [C]night

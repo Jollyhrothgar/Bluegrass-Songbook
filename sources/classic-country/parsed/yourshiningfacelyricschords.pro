@@ -1,6 +1,6 @@
 {meta: title Your Shining Face}
 {meta: artist George Jones}
-{meta: writer Joe Allen and Buddy Killen}
+{meta: composer Joe Allen and Buddy Killen}
 
 {start_of_verse: Verse 1}
 [C]I fell awake this morning and [Em]thought 

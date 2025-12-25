@@ -1,6 +1,6 @@
 {meta: title Jackson}
 {meta: artist Johnny Cash}
-{meta: writer Billy Ed Wheeler and Gaby Rogers}
+{meta: composer Billy Ed Wheeler and Gaby Rogers}
 
 {start_of_verse: Verse 1}
 [C]We got married in a fever hotter than a pepper sprout

@@ -1,6 +1,6 @@
 {meta: title The Man Who Picked The Wildwood Flower}
 {meta: artist Merle Haggard}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]I only saw five [G7]people when they buried Jack [C]Dupree

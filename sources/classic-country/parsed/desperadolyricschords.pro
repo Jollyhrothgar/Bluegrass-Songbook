@@ -1,6 +1,6 @@
 {meta: title Desperado}
 {meta: artist Kenny Rogers}
-{meta: writer Don Henley and Glen Frey}
+{meta: composer Don Henley and Glen Frey}
 
 {start_of_verse: Verse 1}
 [C]Desperado  [C7]why don't you [F]come to your [Fm]senses

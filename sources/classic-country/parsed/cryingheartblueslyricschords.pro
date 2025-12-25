@@ -1,5 +1,5 @@
 {meta: artist Johnny And Jack}
-{meta: writer J. Brown}
+{meta: composer J. Brown}
 
 {start_of_verse: Verse 1}
 [C]Crying heart blues I'm crying because I have [G7]lost you

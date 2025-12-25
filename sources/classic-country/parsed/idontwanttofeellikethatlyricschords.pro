@@ -1,6 +1,6 @@
 {meta: title I Don't Want To Feel Like That}
 {meta: artist Patty Loveless}
-{meta: writer Don Schlitz and Terry Radigan}
+{meta: composer Don Schlitz and Terry Radigan}
 
 {start_of_verse: Verse 1}
 [G]Cried myself to sleep last night 

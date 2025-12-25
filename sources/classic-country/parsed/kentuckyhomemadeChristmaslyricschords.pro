@@ -1,6 +1,6 @@
 {meta: title Kentucky Homemade Christmas}
 {meta: artist Kenny Rogers}
-{meta: writer Bill Caswell and Kin Vassy}
+{meta: composer Bill Caswell and Kin Vassy}
 
 {start_of_verse: Verse 1}
 [C]They shut down the mine last summer we're [F]gettin' by on [C]welfare

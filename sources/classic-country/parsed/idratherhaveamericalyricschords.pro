@@ -1,6 +1,6 @@
 {meta: title I'd Rather Have America}
 {meta: artist Wynn Stewart}
-{meta: writer Penny Jay}
+{meta: composer Penny Jay}
 
 {start_of_verse: Verse 1}
 [G]From the icy cliffs of Iceland I've [D7]traveled o'er the [G]land

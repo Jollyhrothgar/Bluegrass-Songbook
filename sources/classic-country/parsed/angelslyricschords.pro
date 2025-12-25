@@ -1,6 +1,6 @@
 {meta: title Angels}
 {meta: artist Randy Travis}
-{meta: writer Harvey Harold McNalley, Barclay Anthony Moore}
+{meta: composer Harvey Harold McNalley, Barclay Anthony Moore}
 
 {start_of_verse: Verse 1}
 [C]Me and some of the boys were sitting around the other night

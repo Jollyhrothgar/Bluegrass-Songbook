@@ -1,6 +1,6 @@
 {meta: title You Look Like Someone That Used To Love Me}
 {meta: artist Tony Booth}
-{meta: writer Glenn Sutton and Billy Troy}
+{meta: composer Glenn Sutton and Billy Troy}
 
 {start_of_verse: Verse 1}
 [G]Today when I saw you it brought back [D7]memories

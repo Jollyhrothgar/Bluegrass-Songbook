@@ -1,6 +1,6 @@
 {meta: title That Old Wheel}
 {meta: artist Johnny Cash}
-{meta: writer Jennifer Pierce}
+{meta: composer Jennifer Pierce}
 
 {start_of_verse: Verse 1}
 [C]That old wheel is gonna [F]roll around once [C]more 

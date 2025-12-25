@@ -1,6 +1,6 @@
 {meta: title Any Minute Now}
 {meta: artist Tracy Lawrence}
-{meta: writer Thom McHugh and J.B. Rudd}
+{meta: composer Thom McHugh and J.B. Rudd}
 
 {start_of_verse: Verse 1}
 [G]I always pride myself on being [C]strong 

@@ -1,6 +1,6 @@
 {meta: title Dance The Night Away}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo}
+{meta: composer Raul Malo}
 
 {start_of_verse: Verse 1}
 [C]Here comes my [G7]happiness [C]again[G7]

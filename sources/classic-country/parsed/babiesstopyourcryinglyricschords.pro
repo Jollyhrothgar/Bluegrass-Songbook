@@ -1,6 +1,6 @@
 {meta: title Babies Stop Your Crying}
 {meta: artist Vernon Oxford}
-{meta: writer Tommy Dee}
+{meta: composer Tommy Dee}
 
 {start_of_verse: Verse 1}
 [F]Babies stop you crying [C]please stop your crying

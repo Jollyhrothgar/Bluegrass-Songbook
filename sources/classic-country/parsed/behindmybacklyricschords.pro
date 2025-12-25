@@ -1,6 +1,6 @@
 {meta: title Behind My Back}
 {meta: artist Hank Locklin}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]I feel I'm safe in saying you don't [F]love me

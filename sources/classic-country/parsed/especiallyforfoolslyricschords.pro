@@ -1,6 +1,6 @@
 {meta: title Especially For Fools}
 {meta: artist Billy Walker}
-{meta: writer Jerry Organ and Wayne Walker}
+{meta: composer Jerry Organ and Wayne Walker}
 
 {start_of_verse: Verse 1}
 [C]I can feel the blues around me everyday that we’re apart [C7]

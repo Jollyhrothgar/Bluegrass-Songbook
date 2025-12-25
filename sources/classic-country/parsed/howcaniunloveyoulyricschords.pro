@@ -1,6 +1,6 @@
 {meta: title How Can I Unlove You}
 {meta: artist Lynn Anderson}
-{meta: writer Joe South}
+{meta: composer Joe South}
 
 {start_of_verse: Verse 1}
 [C]How can I unsay [F]the things I said to [C]you

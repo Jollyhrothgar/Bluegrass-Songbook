@@ -1,6 +1,6 @@
 {meta: title If I Was A Drinkin' Man}
 {meta: artist Neal McCoy}
-{meta: writer Byron Hill and J.B. Rudd}
+{meta: composer Byron Hill and J.B. Rudd}
 
 {start_of_verse: Verse 1}
 [C]If I was a drinkin’ man like I used to [Am]be

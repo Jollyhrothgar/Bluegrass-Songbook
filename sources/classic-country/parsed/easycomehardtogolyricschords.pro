@@ -1,6 +1,6 @@
 {meta: title Easy Come Hard To Go}
 {meta: artist Mickey Gilley}
-{meta: writer Pat Alger and Rick Beresford}
+{meta: composer Pat Alger and Rick Beresford}
 
 {start_of_verse: Verse 1}
 [C]Easy[Em]   [F] loving he[G7]r was alwa[C]ys ea[Em]sy

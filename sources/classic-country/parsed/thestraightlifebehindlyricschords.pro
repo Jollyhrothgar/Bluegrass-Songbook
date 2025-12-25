@@ -1,6 +1,6 @@
 {meta: title The Straight Life Behind}
 {meta: artist Glen Campbell}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I i[Em]magine my[F]self as a [C]drifter

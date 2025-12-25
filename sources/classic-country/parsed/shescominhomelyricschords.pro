@@ -1,6 +1,6 @@
 {meta: title She's Comin' Home}
 {meta: artist Sonny James}
-{meta: writer Harland Powell and Irvin Russ}
+{meta: composer Harland Powell and Irvin Russ}
 
 {start_of_verse: Verse 1}
 [C]She’s coming ho-[F]o-[C]me she’s coming [F]home

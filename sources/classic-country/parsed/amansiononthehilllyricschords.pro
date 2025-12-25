@@ -1,6 +1,6 @@
 {meta: title A Mansion on the Hill}
 {meta: artist Hank Williams}
-{meta: writer Fred Rose and Hank Williams}
+{meta: composer Fred Rose and Hank Williams}
 
 {start_of_verse: Verse 1}
 [C]Tonight down [G7]here in the [C]valley

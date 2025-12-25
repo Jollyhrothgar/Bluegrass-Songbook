@@ -1,6 +1,6 @@
 {meta: title Odds And Ends (Bits And Pieces)}
 {meta: artist Curtis Potter}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]A photograph that's [F]signed with love

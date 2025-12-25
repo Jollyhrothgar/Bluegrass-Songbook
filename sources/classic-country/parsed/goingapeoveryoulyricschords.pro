@@ -1,6 +1,6 @@
 {meta: title Going Ape Over You}
 {meta: artist Jimmy Martin}
-{meta: writer Abe Mulkey and Bruce Delaney}
+{meta: composer Abe Mulkey and Bruce Delaney}
 
 {start_of_verse: Verse 1}
 [G]Stand on my head if you want me to

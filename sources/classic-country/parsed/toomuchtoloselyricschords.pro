@@ -1,6 +1,6 @@
 {meta: title Too Much To Lose}
 {meta: artist Carl Belew}
-{meta: writer Tommy Blake, Lester Vanadore, Carl Belew}
+{meta: composer Tommy Blake, Lester Vanadore, Carl Belew}
 
 {start_of_verse: Verse 1}
 [C]I'll love you forever [C7]and if you must [F]go

@@ -1,6 +1,6 @@
 {meta: title Is It Already Time}
 {meta: artist George Strait}
-{meta: writer Aaron Baker}
+{meta: composer Aaron Baker}
 
 {start_of_verse: Verse 1}
 [G7]The [F]years have [C]been

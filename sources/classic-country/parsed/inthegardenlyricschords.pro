@@ -1,6 +1,6 @@
 {meta: title In the Garden}
 {meta: artist Loretta Lynn}
-{meta: writer Austin C. Miles and Robert Hebble}
+{meta: composer Austin C. Miles and Robert Hebble}
 
 {start_of_verse: Verse 1}
 [C]I come to the garden alone

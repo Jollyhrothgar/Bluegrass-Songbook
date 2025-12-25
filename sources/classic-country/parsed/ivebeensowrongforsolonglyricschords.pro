@@ -1,6 +1,6 @@
 {meta: title I've Been So Wrong For So Long}
 {meta: artist Jeanne Pruett}
-{meta: writer Bud Reneau and Hal Bynum}
+{meta: composer Bud Reneau and Hal Bynum}
 
 {start_of_verse: Verse 1}
 [C]I've been so wrong for [F]so long

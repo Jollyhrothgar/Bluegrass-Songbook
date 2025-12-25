@@ -1,6 +1,6 @@
 {meta: title Excuse Me For Living}
 {meta: artist Freddie Hart}
-{meta: writer Hugh X. Lewis}
+{meta: composer Hugh X. Lewis}
 
 {start_of_verse: Verse 1}
 [C]I quit going to the places you and I used to [G7]go

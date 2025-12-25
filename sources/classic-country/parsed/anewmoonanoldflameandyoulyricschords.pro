@@ -1,6 +1,6 @@
 {meta: title A New Moon An Old Flame And You}
 {meta: artist Anne Murray}
-{meta: writer Barry Joseph Brown, Eric Edward Emerson}
+{meta: composer Barry Joseph Brown, Eric Edward Emerson}
 
 {start_of_verse: Verse 1}
 [G]The moon was a [D7]thin slice of [G]silver

@@ -1,6 +1,6 @@
 {meta: title It Only Takes One Bar (To Make A Prison)}
 {meta: artist Tracy Lawrence}
-{meta: writer Paul Nelson, Kenny Beard, Tracy Lawrence}
+{meta: composer Paul Nelson, Kenny Beard, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [G]Last night she wasn't [Bm]sleeping when [C]I came slipping [G]in

@@ -1,6 +1,6 @@
 {meta: title Foolish Kind Of Man}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Kenneth Lovelace and Linda Gail Lewis}
+{meta: composer Kenneth Lovelace and Linda Gail Lewis}
 
 {start_of_verse: Verse 1}
 [C]Can I cast the shadow of your memory [F]from the past

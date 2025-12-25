@@ -1,6 +1,6 @@
 {meta: title She Don't Know That She's Perfect}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy and Howard Bellamy}
+{meta: composer David Bellamy and Howard Bellamy}
 
 {start_of_verse: Verse 1}
 [G]Your broken heart’s been fading fast

@@ -1,6 +1,6 @@
 {meta: title That's How It's Got To Be}
 {meta: artist Mickey Gilley}
-{meta: writer Otis Blackwell and Mort Dixon}
+{meta: composer Otis Blackwell and Mort Dixon}
 
 {start_of_verse: Verse 1}
 [G]You're going away you're going to stay

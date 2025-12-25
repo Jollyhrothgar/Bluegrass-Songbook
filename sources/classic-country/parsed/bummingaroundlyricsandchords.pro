@@ -1,6 +1,6 @@
 {meta: title Bumming Around Lyrics and Chords}
 {meta: artist Hank Thompson}
-{meta: writer Pete Graves}
+{meta: composer Pete Graves}
 
 {start_of_verse: Verse 1}
 [G]I GOT AN OLD SLOUCH HAT GOT MY ROLL ON MY [D7]SHOULDER

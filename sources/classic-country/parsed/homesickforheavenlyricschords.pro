@@ -1,6 +1,6 @@
 {meta: title Homesick For Heaven}
 {meta: artist Ricky Skaggs}
-{meta: writer Kelly Willard}
+{meta: composer Kelly Willard}
 
 {start_of_verse: Verse 1}
 [G]Lately I've been [D7]longing for [G]heaven

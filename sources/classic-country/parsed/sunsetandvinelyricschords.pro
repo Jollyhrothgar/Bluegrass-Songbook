@@ -1,6 +1,6 @@
 {meta: title Sunset And Vine}
 {meta: artist Waylon Jennings}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I left the old farm down in [G7]Texas

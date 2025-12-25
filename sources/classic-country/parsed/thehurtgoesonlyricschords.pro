@@ -1,6 +1,6 @@
 {meta: title The Hurt Goes On}
 {meta: artist Connie Smith}
-{meta: writer Sheb Wooley}
+{meta: composer Sheb Wooley}
 
 {start_of_verse: Verse 1}
 [C]I suppose I'll get [G7]over [C]you in [F]time

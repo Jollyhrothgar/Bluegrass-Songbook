@@ -1,6 +1,6 @@
 {meta: title Love Can't Ever Get Better Than This}
 {meta: artist Ricky Skaggs}
-{meta: writer Nancy Montgomery and Irene Kelly}
+{meta: composer Nancy Montgomery and Irene Kelly}
 
 {start_of_verse: Verse 1}
 [C]Looking at you I can see what I [F]missed

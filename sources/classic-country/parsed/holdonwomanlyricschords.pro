@@ -1,6 +1,6 @@
 {meta: title Hold On Woman}
 {meta: artist Jeanne Pruett}
-{meta: writer Sharon R. Higgins}
+{meta: composer Sharon R. Higgins}
 
 {start_of_verse: Verse 1}
 [C]Hold on woman hold on to your man

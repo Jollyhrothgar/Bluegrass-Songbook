@@ -1,6 +1,6 @@
 {meta: title No Man's Land}
 {meta: artist Tanya Tucker}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [G]Many years ago [D7]in Brushcreek [G]Georgia

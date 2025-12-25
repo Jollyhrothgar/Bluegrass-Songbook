@@ -1,6 +1,6 @@
 {meta: title How Fast Them Trucks Will Go}
 {meta: artist Boxcar Willie}
-{meta: writer C.J. Anderson}
+{meta: composer C.J. Anderson}
 
 {start_of_verse: Verse 1}
 [C]You know a lot of folk stop at truck stops

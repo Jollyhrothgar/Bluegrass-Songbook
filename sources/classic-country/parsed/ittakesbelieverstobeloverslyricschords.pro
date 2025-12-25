@@ -1,6 +1,6 @@
 {meta: title It Takes Believers To Be Lovers}
 {meta: artist Mickey Gilley}
-{meta: writer Mark Wright, Bill Kenner, Warren Peterson}
+{meta: composer Mark Wright, Bill Kenner, Warren Peterson}
 
 {start_of_verse: Verse 1}
 [C]Somebody said it would [G7]never [C]work

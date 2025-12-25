@@ -1,6 +1,6 @@
 {meta: title Moonlight And Skies}
 {meta: artist Hank Snow}
-{meta: writer Jimmie Rodgers and R.E. Hill}
+{meta: composer Jimmie Rodgers and R.E. Hill}
 
 {start_of_verse: Verse 1}
 [G]Oh come hear my story of [C]heartaches and [G]sighs

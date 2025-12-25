@@ -1,6 +1,6 @@
 {meta: title Answer To The Last Letter}
 {meta: artist Ray Price}
-{meta: writer Rex Griffin}
+{meta: composer Rex Griffin}
 
 {start_of_verse: Verse 1}
 [C]I just received your last letter and I feel so [G7]blue

@@ -1,6 +1,6 @@
 {meta: title On Christmas Morning}
 {meta: artist Steve Wariner}
-{meta: writer Lisa Silver and Steve Wariner}
+{meta: composer Lisa Silver and Steve Wariner}
 
 {start_of_verse: Verse 1}
 [C]Two more days of Christmas shopping

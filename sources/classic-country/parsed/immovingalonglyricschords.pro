@@ -1,6 +1,6 @@
 {meta: title I'm Moving Along}
 {meta: artist Patsy Cline}
-{meta: writer Johnny Starr}
+{meta: composer Johnny Starr}
 
 {start_of_verse: Verse 1}
 [G]Well I'm chasing the blues right out of my mind

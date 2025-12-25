@@ -1,6 +1,6 @@
 {meta: title Jeannie Marie You Were A Lady}
 {meta: artist Tommy Overstreet}
-{meta: writer Ricci Mareno and Charlie Black}
+{meta: composer Ricci Mareno and Charlie Black}
 
 {start_of_verse: Verse 1}
 [G]Jeannie there's a [F]story they're [C]tellin' about [G]you

@@ -1,6 +1,6 @@
 {meta: title Moody Blue}
 {meta: artist Elvis Presley}
-{meta: writer Mark James}
+{meta: composer Mark James}
 
 {start_of_verse: Verse 1}
 [G]Well it's hard to be a gambler betting on the number

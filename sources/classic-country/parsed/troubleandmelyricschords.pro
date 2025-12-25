@@ -1,6 +1,6 @@
 {meta: title Trouble and Me}
 {meta: artist Buck Owens}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Trouble and me we're old buddies you [C]see 

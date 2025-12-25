@@ -1,6 +1,6 @@
 {meta: title I Do My Cryin' At Night}
 {meta: artist Rhonda Vincent}
-{meta: writer Sanger Shafer, Lefty Frizzell, Arthur Owens Sr.}
+{meta: composer Sanger Shafer, Lefty Frizzell, Arthur Owens Sr.}
 
 {start_of_verse: Verse 1}
 [C]Darlin' I've got all our friends be[D7]lievin'

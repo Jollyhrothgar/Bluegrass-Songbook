@@ -1,6 +1,6 @@
 {meta: title Ten Thousand Teardrops}
 {meta: artist Slim Whitman}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [C]Ten thousand teardrops one broken [G7]heart

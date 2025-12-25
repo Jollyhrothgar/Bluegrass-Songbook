@@ -1,6 +1,6 @@
 {meta: title Soulful Woman}
 {meta: artist Johnny Duncan}
-{meta: writer Kenny O'Dell}
+{meta: composer Kenny O'Dell}
 
 {start_of_verse: Verse 1}
 [G]You lay out [D7]you fool around [C]finally you [G]lose her

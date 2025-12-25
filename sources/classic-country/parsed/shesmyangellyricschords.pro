@@ -1,6 +1,6 @@
 {meta: title She's My Angel}
 {meta: artist Billy Crash Craddock}
-{meta: writer Ron Chancey and Jim Sahnger}
+{meta: composer Ron Chancey and Jim Sahnger}
 
 {start_of_verse: Verse 1}
 [G]I am luckier than most I must [A7]agree

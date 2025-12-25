@@ -1,6 +1,6 @@
 {meta: title I Can't Remember To Forget}
 {meta: artist Bob Luman}
-{meta: writer Billy Graham}
+{meta: composer Billy Graham}
 
 {start_of_verse: Verse 1}
 [D7]We [G]said [Em]goodbye in a [C]soft spring [Am]rain

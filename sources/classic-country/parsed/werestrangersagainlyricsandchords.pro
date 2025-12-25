@@ -1,6 +1,6 @@
 {meta: title We're Strangers Again}
 {meta: artist Randy Travis}
-{meta: writer Merle Haggard and Leona Williams}
+{meta: composer Merle Haggard and Leona Williams}
 
 {start_of_verse: Verse 1}
 [C]First we were [Em]strangers [F]down on our [C]luck

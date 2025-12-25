@@ -1,6 +1,6 @@
 {meta: title Blue Christmas}
 {meta: artist Elvis Presley}
-{meta: writer Bill Hayes and Jay Johnson}
+{meta: composer Bill Hayes and Jay Johnson}
 
 {start_of_verse: Verse 1}
 [C]I'll have a blue Christmas without [G7]you

@@ -1,6 +1,6 @@
 {meta: title No Memories Hanging Around}
 {meta: artist Bobby Bare & Roseanne Cash}
-{meta: writer Rodney Crowell}
+{meta: composer Rodney Crowell}
 
 {start_of_verse: Verse 1}
 [G]You don't want no more [D7]heartaches

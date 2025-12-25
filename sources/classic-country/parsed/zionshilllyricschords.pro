@@ -1,6 +1,6 @@
 {meta: title Zion's Hill}
 {meta: artist Keith Whitley}
-{meta: writer Keith Whitley}
+{meta: composer Keith Whitley}
 
 {start_of_verse: Verse 1}
 [C]There awaits for [F]me a glad to[C]morrow

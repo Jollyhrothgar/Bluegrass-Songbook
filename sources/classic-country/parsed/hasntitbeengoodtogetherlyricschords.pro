@@ -1,6 +1,6 @@
 {meta: title Hasn't It Been Good Together}
 {meta: artist Hank Snow}
-{meta: writer Linda Kaufman and Gloria Shayne}
+{meta: composer Linda Kaufman and Gloria Shayne}
 
 {start_of_verse: Verse 1}
 [G]The books are packed the photographs [B7]the old [C]magazines

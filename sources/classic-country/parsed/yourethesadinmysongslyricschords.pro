@@ -1,6 +1,6 @@
 {meta: title You're The Sad In My Songs}
 {meta: artist Stonewall Jackson}
-{meta: writer Larry Lee}
+{meta: composer Larry Lee}
 
 {start_of_verse: Verse 1}
 [C]You're the hand that waved goodbye you're the thought that makes me [F]cry

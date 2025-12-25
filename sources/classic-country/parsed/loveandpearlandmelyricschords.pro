@@ -1,6 +1,6 @@
 {meta: title Love And Pearl And Me}
 {meta: artist Vernon Oxford}
-{meta: writer Doodle Owens and Warren Robb}
+{meta: composer Doodle Owens and Warren Robb}
 
 {start_of_verse: Verse 1}
 [C]Love  and [G7]Pearl and [C]Me

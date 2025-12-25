@@ -1,6 +1,6 @@
 {meta: title For The Love Of A Woman Like You}
 {meta: artist Faron Young}
-{meta: writer Jack Rhodes and Gertrude Cox}
+{meta: composer Jack Rhodes and Gertrude Cox}
 
 {start_of_verse: Verse 1}
 [C]If I had a kingdom I would give [F]up my [C]throne

@@ -1,6 +1,6 @@
 {meta: title The Steal Of The Night}
 {meta: artist George Strait}
-{meta: writer Blake Mevis, Bill Shore, David Wills}
+{meta: composer Blake Mevis, Bill Shore, David Wills}
 
 {start_of_verse: Verse 1}
 [C]The band had just started when they [G7]walked in the door

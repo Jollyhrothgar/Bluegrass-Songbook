@@ -1,6 +1,6 @@
 {meta: title Give Me A Sweetheart}
 {meta: artist The Everly Brothers}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [C]Grow me a [F]heart that won't [C]cheat

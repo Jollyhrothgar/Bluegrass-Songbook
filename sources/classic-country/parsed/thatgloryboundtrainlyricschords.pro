@@ -1,6 +1,6 @@
 {meta: title That Glory Bound Train}
 {meta: artist Kitty Wells}
-{meta: writer Roy Acuff and Odell McLeod}
+{meta: composer Roy Acuff and Odell McLeod}
 
 {start_of_verse: Verse 1}
 [C]Come and listen won't you brother 

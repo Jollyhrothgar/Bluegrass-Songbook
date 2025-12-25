@@ -1,6 +1,6 @@
 {meta: title Write Me In Care Of The Blues}
 {meta: artist Patsy Cline}
-{meta: writer Eddie Miller and W.S. Stevenson}
+{meta: composer Eddie Miller and W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [C]Now baby if you're needing me

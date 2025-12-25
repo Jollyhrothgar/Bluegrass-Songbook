@@ -1,6 +1,6 @@
 {meta: title Devil's Disciple}
 {meta: artist Johnny Bush}
-{meta: writer Wynn Preston}
+{meta: composer Wynn Preston}
 
 {start_of_verse: Verse 1}
 [C]When love [G7]goes out the [C]window

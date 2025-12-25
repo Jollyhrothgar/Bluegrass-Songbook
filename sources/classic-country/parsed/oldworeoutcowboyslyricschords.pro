@@ -1,6 +1,6 @@
 {meta: title Old Wore Out Cowboys}
 {meta: artist Johnny Rodriguez}
-{meta: writer Patsy Bruce and Ronald Robert Peterson}
+{meta: composer Patsy Bruce and Ronald Robert Peterson}
 
 {start_of_verse: Verse 1}
 [C]There must be someplace for [F]old wore out [C]cowboys

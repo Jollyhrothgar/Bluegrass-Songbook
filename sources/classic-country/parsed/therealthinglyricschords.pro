@@ -1,6 +1,6 @@
 {meta: title The Real Thing}
 {meta: artist Jean Shepard}
-{meta: writer Ronnie McDowell}
+{meta: composer Ronnie McDowell}
 
 {start_of_verse: Verse 1}
 [G]I know you want to set my soul on fire

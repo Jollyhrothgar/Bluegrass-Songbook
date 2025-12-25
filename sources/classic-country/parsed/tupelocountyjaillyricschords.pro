@@ -1,6 +1,6 @@
 {meta: title Tupelo County Jail Lyrics Chords}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis and Webb Pierce}
+{meta: composer Mel Tillis and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]Send my letters in [D7]care of the [C]Tupelo County [G]jail

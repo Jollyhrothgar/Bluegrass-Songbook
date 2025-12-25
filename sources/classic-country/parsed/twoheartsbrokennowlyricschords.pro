@@ -1,6 +1,6 @@
 {meta: title Two Hearts Broken Now}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Herman P. Willis}
+{meta: composer Lefty Frizzell and Herman P. Willis}
 
 {start_of_verse: Verse 1}
 [C]Oh I know that her heart is broken

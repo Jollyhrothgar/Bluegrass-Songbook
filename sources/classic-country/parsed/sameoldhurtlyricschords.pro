@@ -1,6 +1,6 @@
 {meta: title Same Old Hurt}
 {meta: artist Burl Ives}
-{meta: writer Hank Cockran}
+{meta: composer Hank Cockran}
 
 {start_of_verse: Verse 1}
 [C]Got a new house with new lumber

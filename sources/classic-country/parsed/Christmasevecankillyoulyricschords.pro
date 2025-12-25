@@ -1,6 +1,6 @@
 {meta: title Christmas Eve Can Kill You}
 {meta: artist Everly Brothers}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [C]The winter's flaking [F]snow is brushin' [G7]through the wiry [C]trees

@@ -1,6 +1,6 @@
 {meta: title Four Letter Fool}
 {meta: artist Moe Bandy}
-{meta: writer Kallie Jean}
+{meta: composer Kallie Jean}
 
 {start_of_verse: Verse 1}
 [C]I had everything in my favor  under God's blue [G7]sky

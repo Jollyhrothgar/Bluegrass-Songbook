@@ -1,6 +1,6 @@
 {meta: title Broken Promise Land}
 {meta: artist Waylon Jennings}
-{meta: writer Bill Rice and Mary Sharon Rice}
+{meta: composer Bill Rice and Mary Sharon Rice}
 
 {start_of_verse: Verse 1}
 [G]There's a Bible on the [Dm]dresser and a [G]sign hung on the [C]door

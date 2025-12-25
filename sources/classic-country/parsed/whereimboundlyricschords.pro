@@ -1,6 +1,6 @@
 {meta: title Where I'm Bound}
 {meta: artist Patty Loveless}
-{meta: writer Daryl Burgess and Tom Britt}
+{meta: composer Daryl Burgess and Tom Britt}
 
 {start_of_verse: Verse 1}
 [G]Can you [C]hear it cross the [G]valley 

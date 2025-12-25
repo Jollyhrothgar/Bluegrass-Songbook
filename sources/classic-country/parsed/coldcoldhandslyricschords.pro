@@ -1,6 +1,6 @@
 {meta: title Cold Cold Hands}
 {meta: artist Johnny Bush}
-{meta: writer Lawton Williams}
+{meta: composer Lawton Williams}
 
 {start_of_verse: Verse 1}
 [C]There they lay in the wreckage 

@@ -1,6 +1,6 @@
 {meta: title Blame It On Your Heart}
 {meta: artist Patty Loveless}
-{meta: writer Harlan Howard and Kostas}
+{meta: composer Harlan Howard and Kostas}
 
 {start_of_verse: Verse 1}
 [G]You've got a thing or two to learn about me baby

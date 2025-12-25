@@ -1,6 +1,6 @@
 {meta: title Tips of My Fingers}
 {meta: artist Eddy Arnold}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]I reached out my arms and [C]I touched [G]you  

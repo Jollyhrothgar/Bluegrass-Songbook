@@ -1,6 +1,6 @@
 {meta: title You Love The Ground I Walk On}
 {meta: artist Waylon Jennings}
-{meta: writer Harlan Howard and Don McHan}
+{meta: composer Harlan Howard and Don McHan}
 
 {start_of_verse: Verse 1}
 [C]I work so hard to win myself a [G7]place in life

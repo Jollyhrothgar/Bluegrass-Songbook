@@ -1,6 +1,6 @@
 {meta: title If I Had My Life To Live Over}
 {meta: artist Cal Smith}
-{meta: writer Harry Tobias, Larry Vincent, Moe Jaffe}
+{meta: composer Harry Tobias, Larry Vincent, Moe Jaffe}
 
 {start_of_verse: Verse 1}
 [G](If I had [C]my life to live [G]over

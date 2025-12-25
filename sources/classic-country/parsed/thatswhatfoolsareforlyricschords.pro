@@ -1,6 +1,6 @@
 {meta: title That's What Fools Are For}
 {meta: artist Jerry Wallace}
-{meta: writer Joe Coffey and Genetta Brown}
+{meta: composer Joe Coffey and Genetta Brown}
 
 {start_of_verse: Verse 1}
 That's What Fools Are For

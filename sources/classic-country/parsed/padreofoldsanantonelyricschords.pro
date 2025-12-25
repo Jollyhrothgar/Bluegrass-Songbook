@@ -1,6 +1,6 @@
 {meta: title Padre Of Old San Antone}
 {meta: artist Jim Reeve}
-{meta: writer Tim Spencer}
+{meta: composer Tim Spencer}
 
 {start_of_verse: Verse 1}
 [C]I strolled to an old [G7]mission [C]garden

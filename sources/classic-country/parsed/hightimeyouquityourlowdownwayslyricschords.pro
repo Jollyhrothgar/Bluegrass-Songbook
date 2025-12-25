@@ -1,6 +1,6 @@
 {meta: title High Time You Quit Your Lowdown Ways}
 {meta: artist Waylon Jennings}
-{meta: writer Billy Ray Reynolds}
+{meta: composer Billy Ray Reynolds}
 
 {start_of_verse: Verse 1}
 [G]Well I'm sick and tired of [D7]waking up sick and [G]tired

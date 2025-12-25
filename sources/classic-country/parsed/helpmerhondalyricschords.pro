@@ -1,6 +1,6 @@
 {meta: title Help Me Rhonda}
 {meta: artist Roy Orbison}
-{meta: writer Mike E. Love and Brian Wilson}
+{meta: composer Mike E. Love and Brian Wilson}
 
 {start_of_verse: Verse 1}
 [C]Well since she put me down

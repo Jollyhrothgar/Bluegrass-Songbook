@@ -1,6 +1,6 @@
 {meta: title Take It From Me}
 {meta: artist Gene Watson}
-{meta: writer Joel Shapiro}
+{meta: composer Joel Shapiro}
 
 {start_of_verse: Verse 1}
 [C]I'm not a [F]wise man but [G7]I've learned a [C]lot

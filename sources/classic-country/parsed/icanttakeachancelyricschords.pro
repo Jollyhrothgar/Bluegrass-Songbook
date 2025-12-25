@@ -1,6 +1,6 @@
 {meta: title I Can't Take A Chance}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew, Johnny Mathis, Tommy Blake}
+{meta: composer Carl Belew, Johnny Mathis, Tommy Blake}
 
 {start_of_verse: Verse 1}
 [G7]You don't [C]know how much I'm still in [F]love with you

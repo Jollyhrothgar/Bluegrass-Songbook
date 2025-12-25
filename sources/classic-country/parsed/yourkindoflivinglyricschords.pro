@@ -1,6 +1,6 @@
 {meta: title Your Kind Of Living}
 {meta: artist Mel Tillis}
-{meta: writer Billy Large}
+{meta: composer Billy Large}
 
 {start_of_verse: Verse 1}
 [C]Your kind of livin' has [C7]got me to [F]wishin'

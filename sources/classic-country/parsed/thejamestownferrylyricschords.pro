@@ -1,6 +1,6 @@
 {meta: title The Jamestown Ferry}
 {meta: artist Tanya Tucker}
-{meta: writer Mack Vickery and Bobby Borchers}
+{meta: composer Mack Vickery and Bobby Borchers}
 
 {start_of_verse: Verse 1}
 [G]He just caught the Jamestown Ferry it's not a hot day in [Em]January

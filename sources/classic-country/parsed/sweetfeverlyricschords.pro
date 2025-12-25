@@ -1,6 +1,6 @@
 {meta: title Sweet Fever}
 {meta: artist Don Williams}
-{meta: writer Bob McDill and Dickey Lee}
+{meta: composer Bob McDill and Dickey Lee}
 
 {start_of_verse: Verse 1}
 [C]I've been feelin' funny [F]shakin' like a [C]leaf

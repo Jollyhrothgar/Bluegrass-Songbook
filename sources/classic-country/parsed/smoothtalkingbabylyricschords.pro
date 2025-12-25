@@ -1,6 +1,6 @@
 {meta: title Smooth Talking Baby}
 {meta: artist Don Williams}
-{meta: writer Red Lane and Dave Kirby}
+{meta: composer Red Lane and Dave Kirby}
 
 {start_of_verse: Verse 1}
 [C]Smooth talking baby 

@@ -1,6 +1,6 @@
 {meta: title Neon Cowboy}
 {meta: artist The Bellamy Brothers}
-{meta: writer Ralph Siegel, David Bellamy, T.T. Kermit}
+{meta: composer Ralph Siegel, David Bellamy, T.T. Kermit}
 
 {start_of_verse: Verse 1}
 [C]Driving along on that endless road

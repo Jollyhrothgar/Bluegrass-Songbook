@@ -1,6 +1,6 @@
 {meta: title Well Here We Are Again}
 {meta: artist The Statler Brothers}
-{meta: writer Richard Rodgers and Stephen Sondheim}
+{meta: composer Richard Rodgers and Stephen Sondheim}
 
 {start_of_verse: Verse 1}
 [C]Well here we are again

@@ -1,6 +1,6 @@
 {meta: title Someone I Can Turn To}
 {meta: artist Vern Gosdin}
-{meta: writer Equen Gosdin, Kathy Gosdin, Vern Gosdin}
+{meta: composer Equen Gosdin, Kathy Gosdin, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [G]There must be [C]someone I can turn [G]to

@@ -1,6 +1,6 @@
 {meta: title Steppin' Out}
 {meta: artist Ernest Tubb}
-{meta: writer Billy Starr}
+{meta: composer Billy Starr}
 
 {start_of_verse: Verse 1}
 [G]Yes I [D7]know that my baby's been steppin' out used to be my [G]darlin'

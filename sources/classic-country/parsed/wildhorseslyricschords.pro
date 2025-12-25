@@ -1,6 +1,6 @@
 {meta: title Wild Horses}
 {meta: artist Garth Brooks}
-{meta: writer Bill Shore and Bud Lee}
+{meta: composer Bill Shore and Bud Lee}
 
 {start_of_verse: Verse 1}
 [G7]From a [C]phone booth in Cheyenne 

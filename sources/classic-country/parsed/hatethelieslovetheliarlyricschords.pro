@@ -1,6 +1,6 @@
 {meta: title Hate The Lies Love The Liar}
 {meta: artist Ronnie Milsap}
-{meta: writer Steve Dorff and Mack David}
+{meta: composer Steve Dorff and Mack David}
 
 {start_of_verse: Verse 1}
 [F]If a [C]star fell from the sky for every time you told a [F]lie

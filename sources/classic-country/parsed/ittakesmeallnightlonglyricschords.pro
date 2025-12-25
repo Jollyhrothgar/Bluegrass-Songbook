@@ -1,6 +1,6 @@
 {meta: title It Takes Me All Night Long}
 {meta: artist Cal Smith}
-{meta: writer Bozo Darnell and Dave Pittman}
+{meta: composer Bozo Darnell and Dave Pittman}
 
 {start_of_verse: Verse 1}
 [C]I used to get more women than I could put my hands [F]on

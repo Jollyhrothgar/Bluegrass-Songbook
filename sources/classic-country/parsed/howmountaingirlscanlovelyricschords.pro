@@ -1,6 +1,6 @@
 {meta: title How Mountain Girls Can Love}
 {meta: artist Ricky Skaggs}
-{meta: writer Ruby Rakes}
+{meta: composer Ruby Rakes}
 
 {start_of_verse: Verse 1}
 [C]Get down boys go back [G]home 

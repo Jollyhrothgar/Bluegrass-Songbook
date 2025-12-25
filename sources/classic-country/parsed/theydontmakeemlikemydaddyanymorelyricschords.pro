@@ -1,6 +1,6 @@
 {meta: title They Don't Make'em Like My Daddy Anymore}
 {meta: artist Loretta Lynn}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [G]I wasn't much more than a baby I thought he was a bear

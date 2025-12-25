@@ -1,6 +1,6 @@
 {meta: title Do You Remember These}
 {meta: artist Statler Brothers}
-{meta: writer Don and Harold Reid and Larry Lee}
+{meta: composer Don and Harold Reid and Larry Lee}
 
 {start_of_verse: Verse 1}
 [C]Saturday morning [A7]serials chapters [D7]1 through 15

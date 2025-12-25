@@ -1,6 +1,6 @@
 {meta: title Living Every Man's Dream Lyrics and Chords}
 {meta: artist Ray Price}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [G7]In the [C]morning when I wake a lovely [F]lady's always lying next [F][C]to [G7]me

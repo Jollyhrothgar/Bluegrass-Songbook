@@ -1,6 +1,6 @@
 {meta: title Allegheny Moon}
 {meta: artist Anne Murray}
-{meta: writer Al Hoffman and Dick Manning}
+{meta: composer Al Hoffman and Dick Manning}
 
 {start_of_verse: Verse 1}
 Allegheny Moon

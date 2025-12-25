@@ -1,6 +1,6 @@
 {meta: title Talk To Me}
 {meta: artist Mickey Gilley}
-{meta: writer Ace Frehley, Patsy Montana, Joe Seneca}
+{meta: composer Ace Frehley, Patsy Montana, Joe Seneca}
 
 {start_of_verse: Verse 1}
 [G]Talk to me [C]talk to me

@@ -1,6 +1,6 @@
 {meta: title Tucson Too Soon}
 {meta: artist Tracy Byrd}
-{meta: writer Mark Nesler and Tracy Byrd}
+{meta: composer Mark Nesler and Tracy Byrd}
 
 {start_of_verse: Verse 1}
 [G]Tonight on a plane bound for [Em]Dallas [G]

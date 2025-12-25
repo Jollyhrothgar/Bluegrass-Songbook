@@ -1,6 +1,6 @@
 {meta: title I Told You So}
 {meta: artist Randy Travis}
-{meta: writer Randy Bruce Traywick}
+{meta: composer Randy Bruce Traywick}
 
 {start_of_verse: Verse 1}
 [C]Suppose I called you up tonight and told you that I loved [Em]you

@@ -1,6 +1,6 @@
 {meta: title I Gotta Get to You}
 {meta: artist George Strait}
-{meta: writer Jim Lauderdale, Jimmy Ritchey, Blaine Larsen}
+{meta: composer Jim Lauderdale, Jimmy Ritchey, Blaine Larsen}
 
 {start_of_verse: Verse 1}
 [G]I gotta get to you cause you're sure been getting to [Am]me [D7]

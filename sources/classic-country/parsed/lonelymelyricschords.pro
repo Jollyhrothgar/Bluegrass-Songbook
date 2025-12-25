@@ -1,6 +1,6 @@
 {meta: title Lonely Me}
 {meta: artist Gene Watson}
-{meta: writer Larry Booth}
+{meta: composer Larry Booth}
 
 {start_of_verse: Verse 1}
 [C]Everything was [F]beautiful [G7]everything was [C]fine

@@ -1,6 +1,6 @@
 {meta: title Let Me Be The One}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Jimbeau Hinson}
+{meta: composer Jimbeau Hinson}
 
 {start_of_verse: Verse 1}
 [G]Let me be the one you come [C]to

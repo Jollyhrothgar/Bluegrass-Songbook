@@ -1,6 +1,6 @@
 {meta: title Body And Mind}
 {meta: artist Norma Jean}
-{meta: writer Bob Wilkins}
+{meta: composer Bob Wilkins}
 
 {start_of_verse: Verse 1}
 [C]Oh my body's with you but my mind is on [F]him

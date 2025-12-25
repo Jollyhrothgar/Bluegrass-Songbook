@@ -1,6 +1,6 @@
 {meta: title Only Love}
 {meta: artist Don Williams}
-{meta: writer Roger Cook, John Prine, Sandy Mason}
+{meta: composer Roger Cook, John Prine, Sandy Mason}
 
 {start_of_verse: Verse 1}
 [C]You may live alone and close your [F]eyes  some folks [C]do 

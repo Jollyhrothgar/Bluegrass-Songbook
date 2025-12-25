@@ -1,6 +1,6 @@
 {meta: title My Rambling Heart}
 {meta: artist Jim Reeves}
-{meta: writer Don Grashey and Jim Amadeo}
+{meta: composer Don Grashey and Jim Amadeo}
 
 {start_of_verse: Verse 1}
 [C]I may be a drifter who wandered from the start

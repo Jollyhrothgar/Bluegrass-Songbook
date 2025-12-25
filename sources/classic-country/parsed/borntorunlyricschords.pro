@@ -1,6 +1,6 @@
 {meta: title Born To Run}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [G]Well I never did crawl and I [C]never did toe that [G]line

@@ -1,6 +1,6 @@
 {meta: title Don't Sell Daddy Anymore Whiskey}
 {meta: artist Johnny Cash}
-{meta: writer Martha Jo Emerson and Ronal Elmer McCown}
+{meta: composer Martha Jo Emerson and Ronal Elmer McCown}
 
 {start_of_verse: Verse 1}
 [G]Don't sell daddy [C]anymore [G]whiskey

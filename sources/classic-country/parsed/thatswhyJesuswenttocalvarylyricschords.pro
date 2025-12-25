@@ -1,6 +1,6 @@
 {meta: title That's Why Jesus Went To Calvary}
 {meta: artist Jimmie Davis}
-{meta: writer Jimmie Davis and Gene Taylor}
+{meta: composer Jimmie Davis and Gene Taylor}
 
 {start_of_verse: Verse 1}
 [C]Many tears have [F]fallen on the [C]altar 

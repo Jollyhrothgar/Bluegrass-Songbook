@@ -1,6 +1,6 @@
 {meta: title Crazy Over You}
 {meta: artist Hank Locklin}
-{meta: writer William J. Townsel and Walter King}
+{meta: composer William J. Townsel and Walter King}
 
 {start_of_verse: Verse 1}
 [C]While I'm down in Texas I [F]thought I wouldn't [C]stay

@@ -1,6 +1,6 @@
 {meta: title When I Sing About You}
 {meta: artist Clint Eastwood}
-{meta: writer DeWayne Blackwell}
+{meta: composer DeWayne Blackwell}
 
 {start_of_verse: Verse 1}
 [G]Telephone but I can't dial it

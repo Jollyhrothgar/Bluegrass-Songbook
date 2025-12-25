@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Hearts}
 {meta: artist John Anderson}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]I see you across the dance floor 

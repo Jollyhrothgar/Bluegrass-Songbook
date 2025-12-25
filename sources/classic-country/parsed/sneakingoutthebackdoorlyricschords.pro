@@ -1,6 +1,6 @@
 {meta: title Sneaking Out The Backdoor}
 {meta: artist Crystal Gayle}
-{meta: writer James Valentini and Frank Saulino}
+{meta: composer James Valentini and Frank Saulino}
 
 {start_of_verse: Verse 1}
 [G7]I heard voices in the kitchen late last [F]night

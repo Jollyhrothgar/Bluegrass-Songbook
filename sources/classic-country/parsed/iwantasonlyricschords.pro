@@ -1,6 +1,6 @@
 {meta: title I Want A Son}
 {meta: artist Kenny Rogers}
-{meta: writer Marty Panzer and Steve Dorff}
+{meta: composer Marty Panzer and Steve Dorff}
 
 {start_of_verse: Verse 1}
 [C]I want a [F]son

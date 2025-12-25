@@ -1,6 +1,6 @@
 {meta: title Every Time They Play Our Song}
 {meta: artist Wanda Jackson}
-{meta: writer Frank Thomas and Rachel Lane}
+{meta: composer Frank Thomas and Rachel Lane}
 
 {start_of_verse: Verse 1}
 [D7]I  [G]try to live without you and [C]hold my head up [A7]high

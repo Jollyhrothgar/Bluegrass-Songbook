@@ -1,6 +1,6 @@
 {meta: title Beyond The Reef}
 {meta: artist Marty Robbins}
-{meta: writer Jack Pitman}
+{meta: composer Jack Pitman}
 
 {start_of_verse: Verse 1}
 [C]Beyond the reef  [Dm]where [G7]the sea is dark and [C]cold

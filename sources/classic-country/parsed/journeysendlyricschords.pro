@@ -1,6 +1,6 @@
 {meta: title Journey's End}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb and Henry Stewart}
+{meta: composer Ernest Tubb and Henry Stewart}
 
 {start_of_verse: Verse 1}
 [C]Each night brings back  my dreams of [F]you 

@@ -1,6 +1,6 @@
 {meta: title I Lived A Lifetime In A Day}
 {meta: artist Marty Robbins}
-{meta: writer Marion Worth}
+{meta: composer Marion Worth}
 
 {start_of_verse: Verse 1}
 [C]When I met you I knew I couldn't [F]keep you

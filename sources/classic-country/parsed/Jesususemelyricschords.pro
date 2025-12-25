@@ -1,6 +1,6 @@
 {meta: title Jesus Use Me}
 {meta: artist The Faith Tones}
-{meta: writer Jack Campbell and Billy Campbell}
+{meta: composer Jack Campbell and Billy Campbell}
 
 {start_of_verse: Verse 1}
 [C]Dear Lord I'll [G7]be a [C]witness if [F]you will help my [C]weakness

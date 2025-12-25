@@ -1,6 +1,6 @@
 {meta: title A Mile And A Quarter}
 {meta: artist Sonny James}
-{meta: writer Carol Smith and Sonny James}
+{meta: composer Carol Smith and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]A [F]mile and a quarter of [C]treacherous water [G7]keeps men in [C]Alcatraz

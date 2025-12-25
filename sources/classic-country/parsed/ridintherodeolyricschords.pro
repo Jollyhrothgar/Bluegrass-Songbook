@@ -1,6 +1,6 @@
 {meta: title Ridin' The Rodeo}
 {meta: artist Vince Gill}
-{meta: writer Vince Gill and Kostas Lazarides}
+{meta: composer Vince Gill and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [C]Drivin' all night too many miles to [F]go

@@ -1,6 +1,6 @@
 {meta: title Fool Number One}
 {meta: artist Brenda Lee}
-{meta: writer Kathryn R. Fulton}
+{meta: composer Kathryn R. Fulton}
 
 {start_of_verse: Verse 1}
 [C]Am I [G7]Fool #1 or am I Fool [C]#2

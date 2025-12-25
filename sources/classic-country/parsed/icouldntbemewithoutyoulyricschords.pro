@@ -1,6 +1,6 @@
 {meta: title I Couldn't Be Me Without You}
 {meta: artist Johnny Rodriguez}
-{meta: writer Billy Joe}
+{meta: composer Billy Joe}
 
 {start_of_verse: Verse 1}
 [C]While putting some new strings on [F]my old [C]guitar

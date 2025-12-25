@@ -1,6 +1,6 @@
 {meta: title You're Not Mine Anymore}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Teddy Wilburn}
+{meta: composer Webb Pierce and Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]You're not mine [E7]anymore  but I'm [F]still praying [C]for

@@ -1,6 +1,6 @@
 {meta: title Beauty Lies In The Eyes Of The Beholder}
 {meta: artist Moe Bandy}
-{meta: writer Ronnie Rogers}
+{meta: composer Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [G]She may not be a beauty pageant [C]winner

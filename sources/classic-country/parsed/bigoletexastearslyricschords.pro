@@ -1,6 +1,6 @@
 {meta: title Big Ole Texas Tears}
 {meta: artist Mickey Gilley}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [C]Midnight stars and [C7]all night bars [F]are all I ever [C]see

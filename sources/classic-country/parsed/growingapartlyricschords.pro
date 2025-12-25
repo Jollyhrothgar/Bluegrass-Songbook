@@ -1,6 +1,6 @@
 {meta: title Growing Apart}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby and Warren Robb}
+{meta: composer Dave Kirby and Warren Robb}
 
 {start_of_verse: Verse 1}
 [G]When we first started on our way through love

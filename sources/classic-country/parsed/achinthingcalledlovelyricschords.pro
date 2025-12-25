@@ -1,6 +1,6 @@
 {meta: title Achin' Thing Called Love}
 {meta: artist Sonny James}
-{meta: writer Jim Jones}
+{meta: composer Jim Jones}
 
 {start_of_verse: Verse 1}
 [C]Whenever your lips are near [G7]me

@@ -1,6 +1,6 @@
 {meta: title Living My Lifetime For You}
 {meta: artist Wilburn Brothers}
-{meta: writer Glen Johnson}
+{meta: composer Glen Johnson}
 
 {start_of_verse: Verse 1}
 [C]Many heartaches have passed since we met[G7]

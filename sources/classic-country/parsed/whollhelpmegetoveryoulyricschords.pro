@@ -1,6 +1,6 @@
 {meta: title Who'll Help Me Get Over You}
 {meta: artist Loretta Lynn}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [C]I helped you get over your [G]old love

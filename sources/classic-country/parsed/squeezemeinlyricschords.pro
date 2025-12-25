@@ -1,6 +1,6 @@
 {meta: title Squeeze Me In}
 {meta: artist Garth Brooks}
-{meta: writer Gary Nicholson and Delbert McClinton}
+{meta: composer Gary Nicholson and Delbert McClinton}
 
 {start_of_verse: Verse 1}
 [C]Honey I know you got a good job

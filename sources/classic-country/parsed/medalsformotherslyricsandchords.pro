@@ -1,6 +1,6 @@
 {meta: title Medals For Mothers}
 {meta: artist The Osborne Brothers}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [C]If there's medals for [F]mothers

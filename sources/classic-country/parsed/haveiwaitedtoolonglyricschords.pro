@@ -1,6 +1,6 @@
 {meta: title Have I Waited Too Long}
 {meta: artist Faron Young}
-{meta: writer Webb Pierce, Linda Baggett, Bill Nettles}
+{meta: composer Webb Pierce, Linda Baggett, Bill Nettles}
 
 {start_of_verse: Verse 1}
 [G]Have I waited to long  to [G7]say that I love [C]you

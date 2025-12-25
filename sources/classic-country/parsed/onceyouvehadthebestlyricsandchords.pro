@@ -1,6 +1,6 @@
 {meta: title Once You've Had The Best}
 {meta: artist George Jones}
-{meta: writer Johnny Paycheck}
+{meta: composer Johnny Paycheck}
 
 {start_of_verse: Verse 1}
 [G]I'm so glad to have you back [C]within these arms of [G]mine 

@@ -1,6 +1,6 @@
 {meta: title Going Through Hell For An Angel}
 {meta: artist Jack Greene}
-{meta: writer Jerry Max Lane and Glenn Martin}
+{meta: composer Jerry Max Lane and Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]My so called friends I [F]used to spend my [C]time with

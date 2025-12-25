@@ -1,6 +1,6 @@
 {meta: title Don't Come Back Knocking}
 {meta: artist Buddy Holly}
-{meta: writer Buddy Holly and Sue Parrish}
+{meta: composer Buddy Holly and Sue Parrish}
 
 {start_of_verse: Verse 1}
 [C]Well I found you're a rover and it's made me blue

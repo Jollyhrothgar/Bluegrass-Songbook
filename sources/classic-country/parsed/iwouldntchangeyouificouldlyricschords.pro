@@ -1,6 +1,6 @@
 {meta: title I Wouldn't Change You If I Could}
 {meta: artist Ricky Skaggs}
-{meta: writer Jim Eanes}
+{meta: composer Jim Eanes}
 
 {start_of_verse: Verse 1}
 [G]I wouldn't change a single thing about you if I [D7]could

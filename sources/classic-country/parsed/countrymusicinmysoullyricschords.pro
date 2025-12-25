@@ -1,6 +1,6 @@
 {meta: title Country Music In My Soul}
 {meta: artist Leona Williams}
-{meta: writer Bobby Bond}
+{meta: composer Bobby Bond}
 
 {start_of_verse: Verse 1}
 [C]I've been travelin' the highways 

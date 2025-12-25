@@ -1,6 +1,6 @@
 {meta: title When Tomorrow Starts Without Me}
 {meta: artist Tony Booth}
-{meta: writer Eric Horner}
+{meta: composer Eric Horner}
 
 {start_of_verse: Verse 1}
 [C]Everyone has their appointed [A#7]time

@@ -1,6 +1,6 @@
 {meta: title Back In The Doo Wah Days}
 {meta: artist Mickey Gilley}
-{meta: writer Mickey Gilley, Doug Gilmore, Ed Hunnicutt}
+{meta: composer Mickey Gilley, Doug Gilmore, Ed Hunnicutt}
 
 {start_of_verse: Verse 1}
 [G7]Back in the [Am]doo wah days [F]we had a [G7]ball

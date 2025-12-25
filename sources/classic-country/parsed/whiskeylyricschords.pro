@@ -1,6 +1,6 @@
 {meta: title Whiskey}
 {meta: artist Tom T. Hall}
-{meta: writer Jerry Vann}
+{meta: composer Jerry Vann}
 
 {start_of_verse: Verse 1}
 [C]You always made me [Dm]fly  [G7]far above the world so [C]high

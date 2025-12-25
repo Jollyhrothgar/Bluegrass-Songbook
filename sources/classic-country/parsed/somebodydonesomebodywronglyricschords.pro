@@ -1,6 +1,6 @@
 {meta: title Somebody Done Somebody Wrong}
 {meta: artist B J Thomas}
-{meta: writer Chips Moman and Larry Butler}
+{meta: composer Chips Moman and Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]It's lonely out [F]tonight

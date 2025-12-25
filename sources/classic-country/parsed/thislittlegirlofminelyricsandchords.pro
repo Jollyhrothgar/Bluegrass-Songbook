@@ -1,6 +1,6 @@
 {meta: title This Little Girl Of Mine}
 {meta: artist Faron Young}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [Dm]In a while she'll come to [G7]wake me just like [Am][C]always

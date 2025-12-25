@@ -1,6 +1,6 @@
 {meta: title They Stood In Silent Prayer}
 {meta: artist Charley Pride}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [C]The little lambs were standing [G7]there [Em]beside the [C]holy [Am]babe

@@ -1,6 +1,6 @@
 {meta: title When You Fall As Hard As I Did}
 {meta: artist Billy Walker}
-{meta: writer Ricci Mareno and Gordon Galbraith}
+{meta: composer Ricci Mareno and Gordon Galbraith}
 
 {start_of_verse: Verse 1}
 [C]I just sit and count the [Dm]pieces 

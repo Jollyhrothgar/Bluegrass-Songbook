@@ -1,6 +1,6 @@
 {meta: title Heart Of A Fool}
 {meta: artist Carl Smith}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G7]Heart of a poor fool cry [C]on

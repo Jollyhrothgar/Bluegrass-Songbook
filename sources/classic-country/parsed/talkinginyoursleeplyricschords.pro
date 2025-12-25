@@ -1,6 +1,6 @@
 {meta: title Talking In Your Sleep}
 {meta: artist Crystal Gayle}
-{meta: writer Roger F. Cook and Bobby R. Woods}
+{meta: composer Roger F. Cook and Bobby R. Woods}
 
 {start_of_verse: Verse 1}
 [C]Three o'clock in the morning

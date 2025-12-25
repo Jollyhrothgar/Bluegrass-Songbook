@@ -1,6 +1,6 @@
 {meta: title Ophelia}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Jaime Robertson}
+{meta: composer Jaime Robertson}
 
 {start_of_verse: Verse 1}
 [C]Boards on the windows

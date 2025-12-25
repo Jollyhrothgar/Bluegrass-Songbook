@@ -1,6 +1,6 @@
 {meta: title Hummingbird}
 {meta: artist Les Paul and Mary Ford}
-{meta: writer Don Robertson}
+{meta: composer Don Robertson}
 
 {start_of_verse: Verse 1}
 [G]Hummingbird hummingbird [D7]should be your [G]name

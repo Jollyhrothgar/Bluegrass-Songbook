@@ -1,6 +1,6 @@
 {meta: title Got A Letter From My Kid Today}
 {meta: artist Bob Wills}
-{meta: writer Alex Kramer, Hy Zaret, Joan Whitney}
+{meta: composer Alex Kramer, Hy Zaret, Joan Whitney}
 
 {start_of_verse: Verse 1}
 [G]Got a letter from my kid [E7]today

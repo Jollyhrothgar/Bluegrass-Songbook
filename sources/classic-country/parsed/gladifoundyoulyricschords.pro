@@ -1,6 +1,6 @@
 {meta: title Glad I Found You}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Joe E. Johnson}
+{meta: composer Lefty Frizzell and Joe E. Johnson}
 
 {start_of_verse: Verse 1}
 [G]There ain’t no dark clouds in my sky any [D7]more

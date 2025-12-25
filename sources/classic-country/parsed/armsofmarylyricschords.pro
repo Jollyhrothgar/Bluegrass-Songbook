@@ -1,6 +1,6 @@
 {meta: title Arms Of Mary}
 {meta: artist the Everly Brothers}
-{meta: writer Ian Sutherland}
+{meta: composer Ian Sutherland}
 
 {start_of_verse: Verse 1}
 [C]The lights shine down the [G7]valley

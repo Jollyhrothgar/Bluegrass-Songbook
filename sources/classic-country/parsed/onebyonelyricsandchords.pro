@@ -1,6 +1,6 @@
 {meta: title One by One}
 {meta: artist Kitty Wells/Red Foley}
-{meta: writer Johnny Wright and Jack Anglin}
+{meta: composer Johnny Wright and Jack Anglin}
 
 {start_of_verse: Verse 1}
 [C]One by one we've [F]broke each vow we [C]made

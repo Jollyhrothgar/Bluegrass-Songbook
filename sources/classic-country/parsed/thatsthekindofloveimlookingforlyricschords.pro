@@ -1,6 +1,6 @@
 {meta: title That's The Kind Of Love I'm Looking For}
 {meta: artist Carl Smith}
-{meta: writer Johnnie Masters}
+{meta: composer Johnnie Masters}
 
 {start_of_verse: Verse 1}
 [G]Now I wanna gal not the fickle kind to hold me [C]like a clinging [G]vine

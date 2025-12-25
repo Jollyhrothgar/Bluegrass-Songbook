@@ -1,6 +1,6 @@
 {meta: title He Looked Beyond My Faults}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [Fm]He looked be[C]yond [Fm]my [C]fault and [F]saw [G7]my [C]need [F]  [C]

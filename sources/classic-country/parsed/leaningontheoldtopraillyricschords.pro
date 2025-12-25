@@ -1,6 +1,6 @@
 {meta: title Leaning On The Old Top Rail}
 {meta: artist Eddy Arnold}
-{meta: writer Nick Kenny and Charles Kenny}
+{meta: composer Nick Kenny and Charles Kenny}
 
 {start_of_verse: Verse 1}
 [C]Leaning on the [F]old top [C]rail 

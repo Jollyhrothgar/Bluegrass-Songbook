@@ -1,6 +1,6 @@
 {meta: title I'll Meet You In The Morning}
 {meta: artist Hee Haw Quartet}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [C]I will meet you in the morning by the [F]bright [C]riverside

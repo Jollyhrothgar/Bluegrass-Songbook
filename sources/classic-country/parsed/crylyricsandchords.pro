@@ -1,6 +1,6 @@
 {meta: title Cry}
 {meta: artist Willie Nelson}
-{meta: writer Churchill Koleman}
+{meta: composer Churchill Koleman}
 
 {start_of_verse: Verse 1}
 [F]If your [C]sweetheart sends a letter of good[E7]bye

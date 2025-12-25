@@ -1,6 +1,6 @@
 {meta: title I Wouldn't Want To Live}
 {meta: artist Don Williams}
-{meta: writer Al Turney}
+{meta: composer Al Turney}
 
 {start_of_verse: Verse 1}
 [C]Sometimes you may think I take you for granted

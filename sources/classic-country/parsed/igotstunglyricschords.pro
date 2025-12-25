@@ -1,6 +1,6 @@
 {meta: title I Got Stung}
 {meta: artist Elvis Presley}
-{meta: writer Aaron Schroeder and David Hess}
+{meta: composer Aaron Schroeder and David Hess}
 
 {start_of_verse: Verse 1}
 [C]Holy smoke a land sakes alive

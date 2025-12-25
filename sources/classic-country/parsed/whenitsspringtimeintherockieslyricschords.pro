@@ -1,6 +1,6 @@
 {meta: title When It's Springtime In The Rockies}
 {meta: artist Gene Autry}
-{meta: writer Mary H. Woolsey and Robert Sauer}
+{meta: composer Mary H. Woolsey and Robert Sauer}
 
 {start_of_verse: Verse 1}
 [C]When it's Springtime in [G7]the [C]Rockies

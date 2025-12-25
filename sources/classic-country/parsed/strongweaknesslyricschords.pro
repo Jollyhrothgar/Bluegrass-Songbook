@@ -1,6 +1,6 @@
 {meta: title Strong Weakness}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]I got a strong weakness baby I'm gone on your [F]sweet[C]ness

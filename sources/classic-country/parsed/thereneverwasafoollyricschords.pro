@@ -1,6 +1,6 @@
 {meta: title There Never Was A Fool}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Red Simpson}
+{meta: composer Buck Owens and Red Simpson}
 
 {start_of_verse: Verse 1}
 [G]Well a baby goes for candy a [D7]horse he goes for [G]hay 

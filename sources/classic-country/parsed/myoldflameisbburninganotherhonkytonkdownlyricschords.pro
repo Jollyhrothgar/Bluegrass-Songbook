@@ -1,6 +1,6 @@
 {meta: title My Old Flame Is burning Another Honky Tonk Down}
 {meta: artist Mickey Gilley}
-{meta: writer Wayne Kemp, Mack Vickery, Bobby Borchers}
+{meta: composer Wayne Kemp, Mack Vickery, Bobby Borchers}
 
 {start_of_verse: Verse 1}
 [F]My old flame's out [C]burning another [G7]honky tonk [C]down

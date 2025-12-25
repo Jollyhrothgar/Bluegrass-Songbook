@@ -1,6 +1,6 @@
 {meta: title It Don't Get Any Better Than This}
 {meta: artist George Jones}
-{meta: writer Max D. Barnes, Buddy Cannon, Norris Wilson}
+{meta: composer Max D. Barnes, Buddy Cannon, Norris Wilson}
 
 {start_of_verse: Verse 1}
 [C]I could honky-tonk in Texas on Saturday night 

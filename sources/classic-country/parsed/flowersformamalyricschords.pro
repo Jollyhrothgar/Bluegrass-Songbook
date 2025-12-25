@@ -1,6 +1,6 @@
 {meta: title Flowers For Mama}
 {meta: artist George Jones}
-{meta: writer Eddie Noack, Cindy Walker, Al Rumley}
+{meta: composer Eddie Noack, Cindy Walker, Al Rumley}
 
 {start_of_verse: Verse 1}
 [C]Papa brought flowers [F]for mama to[C]day

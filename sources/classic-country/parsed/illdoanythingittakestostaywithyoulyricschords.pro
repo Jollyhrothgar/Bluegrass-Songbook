@@ -1,6 +1,6 @@
 {meta: title I'll Do Anything It Takes To Stay With You}
 {meta: artist Jean Shepard}
-{meta: writer Curly Putman, Larry Butler, Jan Crutchfield}
+{meta: composer Curly Putman, Larry Butler, Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]If I talk too much just tell [G7]me I'll be [C]silent

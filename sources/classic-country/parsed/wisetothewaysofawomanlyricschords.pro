@@ -1,6 +1,6 @@
 {meta: title Wise To The Ways Of A Woman}
 {meta: artist Johnny Horton}
-{meta: writer Richard Nash}
+{meta: composer Richard Nash}
 
 {start_of_verse: Verse 1}
 [C]When you gaze into her eyes 

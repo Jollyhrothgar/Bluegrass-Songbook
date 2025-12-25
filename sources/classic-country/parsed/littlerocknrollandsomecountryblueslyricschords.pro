@@ -1,6 +1,6 @@
 {meta: title Little Rock'n Roll And Some Country Blues}
 {meta: artist John Anderson}
-{meta: writer Troy Seals and Mike Reid}
+{meta: composer Troy Seals and Mike Reid}
 
 {start_of_verse: Verse 1}
 [C]I guess I went crazy at about fifteen

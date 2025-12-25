@@ -1,6 +1,6 @@
 {meta: title A Rose Is A Rose Is A Rose}
 {meta: artist Jimmy Dean}
-{meta: writer Ricci Mareno and Gordon Galbraith}
+{meta: composer Ricci Mareno and Gordon Galbraith}
 
 {start_of_verse: Verse 1}
 [G]Though they say she's not your [C]kind 

@@ -1,6 +1,6 @@
 {meta: title I'm Not Strong Enough}
 {meta: artist Gene Watson}
-{meta: writer John Pickering}
+{meta: composer John Pickering}
 
 {start_of_verse: Verse 1}
 [C]I had always been [G7]an independent [C]man

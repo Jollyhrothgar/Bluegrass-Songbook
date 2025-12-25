@@ -1,6 +1,6 @@
 {meta: title A broken Heart And A Glass Of Beer}
 {meta: artist Hank Thompson}
-{meta: writer Alan Flatt}
+{meta: composer Alan Flatt}
 
 {start_of_verse: Verse 1}
 [C]A broken heart  [F]and a glass of [C]beer

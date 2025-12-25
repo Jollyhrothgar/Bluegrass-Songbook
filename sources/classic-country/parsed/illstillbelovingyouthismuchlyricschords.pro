@@ -1,6 +1,6 @@
 {meta: title I'll Still Be Loving You This Much}
 {meta: artist Tammy Wynette}
-{meta: writer Curly Putman and Bobby Borchers}
+{meta: composer Curly Putman and Bobby Borchers}
 
 {start_of_verse: Verse 1}
 [G]The ring you proudly [C]wear on your left [G]hand

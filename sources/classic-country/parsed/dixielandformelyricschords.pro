@@ -1,6 +1,6 @@
 {meta: title Dixieland For Me}
 {meta: artist The Country Gentlemen}
-{meta: writer Curtis McPeake}
+{meta: composer Curtis McPeake}
 
 {start_of_verse: Verse 1}
 [C]I’m dreaming tonight of Dixie

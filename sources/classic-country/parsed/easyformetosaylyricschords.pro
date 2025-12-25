@@ -1,6 +1,6 @@
 {meta: title Easy For Me To Say}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [C]Some won't [F]find the [C]words  [F]more won't find a [C]way

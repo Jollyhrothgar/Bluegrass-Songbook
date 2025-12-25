@@ -1,6 +1,6 @@
 {meta: title Should've Asked Her Faster}
 {meta: artist Ty England}
-{meta: writer Bob DePiero and Al Anderson}
+{meta: composer Bob DePiero and Al Anderson}
 
 {start_of_verse: Verse 1}
 [C]In a little dance hall [F]just outside of [C]Dallas

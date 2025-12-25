@@ -1,6 +1,6 @@
 {meta: title Am I Ready}
 {meta: artist Elvis Presley}
-{meta: writer Sid Tepper and Roy C. Bennett}
+{meta: composer Sid Tepper and Roy C. Bennett}
 
 {start_of_verse: Verse 1}
 [G7]Am [C]I [G7]ready [Am]can my heart be [D7]true

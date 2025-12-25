@@ -1,6 +1,6 @@
 {meta: title Rodeo Romeo}
 {meta: artist Moe Bandy}
-{meta: writer Dan Mitchell}
+{meta: composer Dan Mitchell}
 
 {start_of_verse: Verse 1}
 [C]He’ll dust off his hat clean out his old pickup [F]truck

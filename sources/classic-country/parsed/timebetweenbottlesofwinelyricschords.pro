@@ -1,6 +1,6 @@
 {meta: title Time Between Bottles Of Wine}
 {meta: artist Waylon Jennings}
-{meta: writer Jimmie Lee Morris}
+{meta: composer Jimmie Lee Morris}
 
 {start_of_verse: Verse 1}
 [C]With fire in my veins I [A]laid down to rest

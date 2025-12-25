@@ -1,6 +1,6 @@
 {meta: title If Teardrops Were Diamonds}
 {meta: artist Willie Nelson}
-{meta: writer Dwight Yoakam}
+{meta: composer Dwight Yoakam}
 
 {start_of_verse: Verse 1}
 [C]If tear[G7]drops were [C]diamonds and only mine were [C7]used

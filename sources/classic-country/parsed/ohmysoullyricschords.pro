@@ -1,6 +1,6 @@
 {meta: title Oh My Soul}
 {meta: artist Crystal Gayle}
-{meta: writer Marcia Routh}
+{meta: composer Marcia Routh}
 
 {start_of_verse: Verse 1}
 [C]Oh my soul oh my soul oh my soul

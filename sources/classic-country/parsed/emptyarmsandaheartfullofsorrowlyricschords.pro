@@ -1,6 +1,6 @@
 {meta: title Empty Arms And A Heart Full Of Sorrow}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Wally Fowler and Graydon Hall}
+{meta: composer Wally Fowler and Graydon Hall}
 
 {start_of_verse: Verse 1}
 [C]With empty arms a [F]heart full of [C]sorrow

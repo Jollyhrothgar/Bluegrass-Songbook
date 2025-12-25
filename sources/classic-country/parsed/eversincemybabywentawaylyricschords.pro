@@ -1,6 +1,6 @@
 {meta: title Ever Since My Baby Went Away}
 {meta: artist Jack Greene}
-{meta: writer Marty Robbins}
+{meta: composer Marty Robbins}
 
 {start_of_verse: Verse 1}
 [G7]Ever since my baby went [C]away

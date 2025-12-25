@@ -1,6 +1,6 @@
 {meta: title In Loving Memories}
 {meta: artist Conway Twitty}
-{meta: writer Cecil Harrelson}
+{meta: composer Cecil Harrelson}
 
 {start_of_verse: Verse 1}
 [C]I stand here so solemn  with a blank look on my [F]face

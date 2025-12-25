@@ -1,6 +1,6 @@
 {meta: title One Less Heartache}
 {meta: artist Jean Shepard}
-{meta: writer Demetriss Tapp and Robert Tubert}
+{meta: composer Demetriss Tapp and Robert Tubert}
 
 {start_of_verse: Verse 1}
 [G]My friends tell me I'm losing you

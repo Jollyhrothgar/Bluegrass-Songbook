@@ -1,6 +1,6 @@
 {meta: title Lucky Old Colorado}
 {meta: artist Merle Haggard}
-{meta: writer Red Simpson}
+{meta: composer Red Simpson}
 
 {start_of_verse: Verse 1}
 [G]I met her [Bm]here in [Am]California

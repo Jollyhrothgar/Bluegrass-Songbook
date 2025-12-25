@@ -1,6 +1,6 @@
 {meta: title An Eye For An Eye}
 {meta: artist Ray Price}
-{meta: writer Johnny Bush}
+{meta: composer Johnny Bush}
 
 {start_of_verse: Verse 1}
 [G]Just because you lost your heart did you lose your [C]conscience [G]too

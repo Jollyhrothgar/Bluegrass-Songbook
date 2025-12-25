@@ -1,6 +1,6 @@
 {meta: title Under These Conditions}
 {meta: artist George Strait}
-{meta: writer Troy Seals, Ronnie McDowell, Joe Meador}
+{meta: composer Troy Seals, Ronnie McDowell, Joe Meador}
 
 {start_of_verse: Verse 1}
 [G]Oh how I [D7]wish  [C]you could read my [G]mind

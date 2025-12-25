@@ -1,6 +1,6 @@
 {meta: title Good Old Fashioned Cry}
 {meta: artist George Jones}
-{meta: writer George Jones, Johnny Mathis, Virginia Franks}
+{meta: composer George Jones, Johnny Mathis, Virginia Franks}
 
 {start_of_verse: Verse 1}
 [G]When I feel so lonesome [C]and I think that [G]I

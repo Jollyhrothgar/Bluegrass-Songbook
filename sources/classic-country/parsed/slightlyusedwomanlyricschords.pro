@@ -1,6 +1,6 @@
 {meta: title Slightly Used Woman}
 {meta: artist Tammy Wynette}
-{meta: writer Tommy Boyce, Melvin Powers, Tammy Wynette}
+{meta: composer Tommy Boyce, Melvin Powers, Tammy Wynette}
 
 {start_of_verse: Verse 1}
 [G]Down the street on the right there's a [C]house painted [G]white

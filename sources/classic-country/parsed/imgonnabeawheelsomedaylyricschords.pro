@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Be A Wheel Someday}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew, Antoine Domino, Roy Hayes}
+{meta: composer Dave Bartholomew, Antoine Domino, Roy Hayes}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna be a wheel someday 

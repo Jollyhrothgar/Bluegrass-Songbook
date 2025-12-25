@@ -1,6 +1,6 @@
 {meta: title Moonlight and Roses}
 {meta: artist Jim Reeves}
-{meta: writer Ben Black, Neil Moret aka (Chas. N. Daniels)}
+{meta: composer Ben Black, Neil Moret aka (Chas. N. Daniels)}
 
 {start_of_verse: Verse 1}
 Recorded by Jim Reeves

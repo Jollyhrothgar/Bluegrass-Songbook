@@ -1,6 +1,6 @@
 {meta: title When Something Is Wrong With My Baby}
 {meta: artist Sonny James}
-{meta: writer David Porter and Isaac Hayes}
+{meta: composer David Porter and Isaac Hayes}
 
 {start_of_verse: Verse 1}
 [C]Something is wrong with my [Dm]baby

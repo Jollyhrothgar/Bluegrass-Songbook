@@ -1,6 +1,6 @@
 {meta: title Mailman Bring Me No More Blues}
 {meta: artist Buddy Holly}
-{meta: writer Stanley Clayton, Ruth Roberts, Bill Katz}
+{meta: composer Stanley Clayton, Ruth Roberts, Bill Katz}
 
 {start_of_verse: Verse 1}
 [G]Mailman bring me no more [G7]bl-u-es

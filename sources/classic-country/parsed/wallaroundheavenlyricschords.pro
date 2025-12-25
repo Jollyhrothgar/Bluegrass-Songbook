@@ -1,6 +1,6 @@
 {meta: title Wall Around Heaven}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Cecil Harrelson and Carmon Holland}
+{meta: composer Cecil Harrelson and Carmon Holland}
 
 {start_of_verse: Verse 1}
 [C](Momma can't [G7]see me down [C]here)

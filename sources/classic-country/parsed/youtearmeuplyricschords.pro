@@ -1,6 +1,6 @@
 {meta: title You Tear Me Up}
 {meta: artist Ricky Nelson}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [G]You just tear me up when you smile at me

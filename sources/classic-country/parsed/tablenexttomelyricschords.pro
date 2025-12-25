@@ -1,6 +1,6 @@
 {meta: title Table Next To Me}
 {meta: artist Jim Ed Brown}
-{meta: writer Jim Ed Brown, Maxine Brown, Harold Jenkins}
+{meta: composer Jim Ed Brown, Maxine Brown, Harold Jenkins}
 
 {start_of_verse: Verse 1}
 [G]A small cafe [D7]an empty [G]room

@@ -1,6 +1,6 @@
 {meta: title I'll Never Get Over You}
 {meta: artist Sonny James}
-{meta: writer Floyd Tillman}
+{meta: composer Floyd Tillman}
 
 {start_of_verse: Verse 1}
 [C]I got over Marie I got [F]over Sherrie

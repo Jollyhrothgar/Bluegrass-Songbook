@@ -1,6 +1,6 @@
 {meta: title Take Me}
 {meta: artist George Jones}
-{meta: writer Leon Payne and George Jones}
+{meta: composer Leon Payne and George Jones}
 
 {start_of_verse: Verse 1}
 [C]Take me take me to your darkest room

@@ -1,6 +1,6 @@
 {meta: title The Ballad Of Paladin}
 {meta: artist Faron Young}
-{meta: writer Johnny Western, Richard Boone and Sam Rolfe}
+{meta: composer Johnny Western, Richard Boone and Sam Rolfe}
 
 {start_of_verse: Verse 1}
 [G]Have gun will travel reads the [D7]card of a [G]man

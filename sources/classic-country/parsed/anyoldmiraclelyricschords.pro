@@ -1,6 +1,6 @@
 {meta: title Any Old Miracle}
 {meta: artist Vern Gosdin}
-{meta: writer James Walton Aldridge Jr., Donald Ray Fritts, Gary Nicholson}
+{meta: composer James Walton Aldridge Jr., Donald Ray Fritts, Gary Nicholson}
 
 {start_of_verse: Verse 1}
 [C]It [D7]may be [G]late and I [C]sure do hate to bother [G]You

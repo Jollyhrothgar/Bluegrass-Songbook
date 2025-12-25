@@ -1,6 +1,6 @@
 {meta: title A Devil Like Me Needs An Angel Like You}
 {meta: artist Buck Owens}
-{meta: writer Red Simpson and Don Rich}
+{meta: composer Red Simpson and Don Rich}
 
 {start_of_verse: Verse 1}
 [G]Well a devil like me needs an angel like you 

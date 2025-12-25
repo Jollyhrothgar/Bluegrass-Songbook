@@ -1,6 +1,6 @@
 {meta: title Belshazzar}
 {meta: artist Johnny Cash}
-{meta: writer the mystic hand}
+{meta: composer the mystic hand}
 
 {start_of_verse: Verse 1}
 [G]Well the bible tells us about a man 

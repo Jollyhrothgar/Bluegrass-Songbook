@@ -1,6 +1,6 @@
 {meta: title Within My Memories}
 {meta: artist Glen Campbell}
-{meta: writer Mac Davis and Freddy Weller}
+{meta: composer Mac Davis and Freddy Weller}
 
 {start_of_verse: Verse 1}
 [C]Many miles have come between us 

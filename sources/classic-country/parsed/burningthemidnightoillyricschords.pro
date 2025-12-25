@@ -1,6 +1,6 @@
 {meta: title Burning The Midnight Oil}
 {meta: artist Porter Wagoner}
-{meta: writer Porter Wagoner}
+{meta: composer Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]Here we sit looking at each [G7]other 

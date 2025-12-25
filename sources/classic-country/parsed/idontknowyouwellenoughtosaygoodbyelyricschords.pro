@@ -1,6 +1,6 @@
 {meta: title I Don't Know You Well Enough to Say Goodbye}
 {meta: artist Keith Whitley}
-{meta: writer Kix Brooks and Fred Koller}
+{meta: composer Kix Brooks and Fred Koller}
 
 {start_of_verse: Verse 1}
 [C]I know the [Em]way you [F]touch me in the [Dm]night

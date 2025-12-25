@@ -1,6 +1,6 @@
 {meta: title Get Set For A Heartache}
 {meta: artist Loretta Lynn}
-{meta: writer Billy Deaton and Red Landers}
+{meta: composer Billy Deaton and Red Landers}
 
 {start_of_verse: Verse 1}
 [C]It wasn't very long ago that he [F]held me so close

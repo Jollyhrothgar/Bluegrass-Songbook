@@ -1,6 +1,6 @@
 {meta: title My Blue Eyed Jane}
 {meta: artist Hank Snow}
-{meta: writer Jimmie Rodgers and Lullu Belle White}
+{meta: composer Jimmie Rodgers and Lullu Belle White}
 
 {start_of_verse: Verse 1}
 [G]Now the sweetest girl [C]in the world [G]is my [D7]blue eyed [G]Jane

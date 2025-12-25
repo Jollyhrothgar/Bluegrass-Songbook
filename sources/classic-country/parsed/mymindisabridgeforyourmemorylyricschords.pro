@@ -1,6 +1,6 @@
 {meta: title My Mind Is A Bridge For Your Memory}
 {meta: artist Johnny Bush}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Each dawn brings a [G7]new day of [C]dying

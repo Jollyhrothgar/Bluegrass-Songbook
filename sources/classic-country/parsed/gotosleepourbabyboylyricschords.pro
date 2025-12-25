@@ -1,6 +1,6 @@
 {meta: title Go To Sleep Our Baby Boy}
 {meta: artist Bob Wills}
-{meta: writer N.D. Allender}
+{meta: composer N.D. Allender}
 
 {start_of_verse: Verse 1}
 [G]Go to sleep our baby boy

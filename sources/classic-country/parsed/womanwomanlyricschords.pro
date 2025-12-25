@@ -1,6 +1,6 @@
 {meta: title Woman Woman}
 {meta: artist Jim Glaser}
-{meta: writer Jim Glaser and Jimmy Payne}
+{meta: composer Jim Glaser and Jimmy Payne}
 
 {start_of_verse: Verse 1}
 [C]Something's wrong be[Em]tween us that your [F]laughter cannot [G7]hide

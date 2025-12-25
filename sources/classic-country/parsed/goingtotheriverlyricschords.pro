@@ -1,6 +1,6 @@
 {meta: title Going To The River}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Antoine Domino}
+{meta: composer Dave Bartholomew and Antoine Domino}
 
 {start_of_verse: Verse 1}
 [G]I'm goin' to the river gonna [D7]jump overboard and [G]drown

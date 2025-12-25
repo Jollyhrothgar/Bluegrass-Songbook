@@ -1,6 +1,6 @@
 {meta: title I'll Remember You}
 {meta: artist Elvis Presley}
-{meta: writer Kui Lee}
+{meta: composer Kui Lee}
 
 {start_of_verse: Verse 1}
 [C]I'll remember [Em]you

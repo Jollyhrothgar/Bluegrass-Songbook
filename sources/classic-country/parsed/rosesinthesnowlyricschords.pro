@@ -1,6 +1,6 @@
 {meta: title Roses In The Snow}
 {meta: artist Emmylou Harris}
-{meta: writer Ruth Franks}
+{meta: composer Ruth Franks}
 
 {start_of_verse: Verse 1}
 [C]I met my darling in the [F]springtime

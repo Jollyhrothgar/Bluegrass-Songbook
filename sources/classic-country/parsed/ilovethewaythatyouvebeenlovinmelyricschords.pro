@@ -1,6 +1,6 @@
 {meta: title I Love The Way That You've Been Lovin' Me}
 {meta: artist Roy Drusky}
-{meta: writer Ricci Mareno and Gordon Galbraith}
+{meta: composer Ricci Mareno and Gordon Galbraith}
 
 {start_of_verse: Verse 1}
 ([D7]I love the way that [G7]you've been lovin' [C]me)

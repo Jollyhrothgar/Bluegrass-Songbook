@@ -1,6 +1,6 @@
 {meta: title I Wish I Had a Nickel}
 {meta: artist Hank Williams}
-{meta: writer W.S. Barnhart and Tommy Sutton}
+{meta: composer W.S. Barnhart and Tommy Sutton}
 
 {start_of_verse: Verse 1}
 [G]They tell me little darling

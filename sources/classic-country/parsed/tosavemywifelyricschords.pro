@@ -1,6 +1,6 @@
 {meta: title To Save My Wife}
 {meta: artist Cal Smith}
-{meta: writer Jim Owens}
+{meta: composer Jim Owens}
 
 {start_of_verse: Verse 1}
 [C]I live on the brink of my [G7]world caving in

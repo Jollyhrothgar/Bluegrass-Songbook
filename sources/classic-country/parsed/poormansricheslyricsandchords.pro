@@ -1,6 +1,6 @@
 {meta: title Poor Man's Riches}
 {meta: artist George Jones}
-{meta: writer Benny Barnes and Dee Marais}
+{meta: composer Benny Barnes and Dee Marais}
 
 {start_of_verse: Verse 1}
 [C]Oh I've traveled to the ends of the [G7]rainbow

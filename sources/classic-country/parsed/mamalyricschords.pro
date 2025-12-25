@@ -1,6 +1,6 @@
 {meta: title Mama Company}
 {meta: artist Porter Wagoner}
-{meta: writer Charlie Aldridge}
+{meta: composer Charlie Aldridge}
 
 {start_of_verse: Verse 1}
 [C](Mama [Am]mama [D7]it's gettin' [G7]close to the [C]end

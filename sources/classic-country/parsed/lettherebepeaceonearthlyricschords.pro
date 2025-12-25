@@ -1,6 +1,6 @@
 {meta: title Let There Be Peace On Earth}
 {meta: artist Vince Gill}
-{meta: writer Sy Miller and Jill Jackson}
+{meta: composer Sy Miller and Jill Jackson}
 
 {start_of_verse: Verse 1}
 [C]Let there be [F]peace on earth and [C]let it [Am]begin with [Dm]me  [G7]

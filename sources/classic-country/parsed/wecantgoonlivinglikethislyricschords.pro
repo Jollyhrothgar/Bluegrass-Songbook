@@ -1,6 +1,6 @@
 {meta: title We Can’t Go On Living Like This}
 {meta: artist Elvis Presley}
-{meta: writer Eddie Rabbitt}
+{meta: composer Eddie Rabbitt}
 
 {start_of_verse: Verse 1}
 [C]When we [Dm]look at each other [G7]now

@@ -1,6 +1,6 @@
 {meta: title I've Been To Calvary}
 {meta: artist The Booth Brothers}
-{meta: writer William J. Gaither}
+{meta: composer William J. Gaither}
 
 {start_of_verse: Verse 1}
 [C]I've never [G]traveled [D7]far around the [G]world

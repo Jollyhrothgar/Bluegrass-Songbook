@@ -1,6 +1,6 @@
 {meta: title Raindrops}
 {meta: artist Roy Orbison}
-{meta: writer Joe Melson}
+{meta: composer Joe Melson}
 
 {start_of_verse: Verse 1}
 ([D7]Rain[G]drops [D7]rain[G]drops)

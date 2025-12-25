@@ -1,6 +1,6 @@
 {meta: title I Was There When It Happened}
 {meta: artist Johnny Cash}
-{meta: writer Jimmie Davis and Fern Jones}
+{meta: composer Jimmie Davis and Fern Jones}
 
 {start_of_verse: Verse 1}
 [C]There are some people [F]who say we cannot [C]tell 

@@ -1,6 +1,6 @@
 {meta: title Crazy What A Lonely Heart Will Do}
 {meta: artist Rhonda Vincent}
-{meta: writer Jimbeau Hinson and Paulette Carlson}
+{meta: composer Jimbeau Hinson and Paulette Carlson}
 
 {start_of_verse: Verse 1}
 [G7]Take the blame [C]off of me put it on my lonely [G7]heart

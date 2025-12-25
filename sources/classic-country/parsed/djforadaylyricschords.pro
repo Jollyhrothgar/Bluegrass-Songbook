@@ -1,6 +1,6 @@
 {meta: title D.J. For A Day}
 {meta: artist Jimmy C. Newman}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]You won't answer when I call you

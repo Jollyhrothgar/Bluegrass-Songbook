@@ -1,6 +1,6 @@
 {meta: title D-I-V-O-R-C-E}
 {meta: artist Tammy Wynette}
-{meta: writer Bobby Braddock and Curly Putman}
+{meta: composer Bobby Braddock and Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]Our little boy is four years old and [C]quite a little [G]man

@@ -1,6 +1,6 @@
 {meta: title You Should Have Been Gone By Now}
 {meta: artist Eddy Raven}
-{meta: writer Don Pfrimmer, Eddy Raven, Frank J. Myers}
+{meta: composer Don Pfrimmer, Eddy Raven, Frank J. Myers}
 
 {start_of_verse: Verse 1}
 [C]I can still see you walking out the [Em]door

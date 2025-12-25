@@ -1,6 +1,6 @@
 {meta: title A Long Vacation}
 {meta: artist Ricky Nelson}
-{meta: writer Dorsey Burnette}
+{meta: composer Dorsey Burnette}
 
 {start_of_verse: Verse 1}
 [C]Summertime's here [F]but it's been so [C]long[F]  [G7]   [C]

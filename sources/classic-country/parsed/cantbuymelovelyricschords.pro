@@ -1,6 +1,6 @@
 {meta: title Can't Buy Me Love}
 {meta: artist Brenda Lee}
-{meta: writer John Lennon and Paul McCartney}
+{meta: composer John Lennon and Paul McCartney}
 
 {start_of_verse: Verse 1}
 [C]Can't buy me lo[Am]ve  [Em]lov[Am]e can't buy me [D7]lov[G]e

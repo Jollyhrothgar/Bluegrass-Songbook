@@ -1,6 +1,6 @@
 {meta: title Sometimes You Just Can't Win}
 {meta: artist George Jones}
-{meta: writer Smokey Stover}
+{meta: composer Smokey Stover}
 
 {start_of_verse: Verse 1}
  [C]Just  when the sun [F]shines the [C]brightest

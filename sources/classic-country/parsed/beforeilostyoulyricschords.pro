@@ -1,6 +1,6 @@
 {meta: title Before I Lost You}
 {meta: artist Roy Drusky}
-{meta: writer Jack Green and Clay Allen}
+{meta: composer Jack Green and Clay Allen}
 
 {start_of_verse: Verse 1}
 [C]I hear your new love sends you [F]pretty 

@@ -1,6 +1,6 @@
 {meta: title High Heel Sneakers}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Robbert Higginbotham}
+{meta: composer Robbert Higginbotham}
 
 {start_of_verse: Verse 1}
 [G]Put on your high heel sneakers 

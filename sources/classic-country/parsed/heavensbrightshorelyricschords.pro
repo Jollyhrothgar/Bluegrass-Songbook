@@ -1,6 +1,6 @@
 {meta: title Heaven's Bright Shore}
 {meta: artist Alison Krauss}
-{meta: writer A. Kennedy}
+{meta: composer A. Kennedy}
 
 {start_of_verse: Verse 1}
 [C]Out on the hills of glory land

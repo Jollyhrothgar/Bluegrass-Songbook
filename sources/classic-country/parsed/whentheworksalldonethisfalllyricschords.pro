@@ -1,6 +1,6 @@
 {meta: title When The Works All Done This Fall}
 {meta: artist Marty Robbins}
-{meta: writer D.J. O'Malley}
+{meta: composer D.J. O'Malley}
 
 {start_of_verse: Verse 1}
 [C]A group of jolly cowboys discussing plans at [F]ease

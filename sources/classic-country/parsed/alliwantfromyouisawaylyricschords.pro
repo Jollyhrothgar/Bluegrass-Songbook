@@ -1,6 +1,6 @@
 {meta: title All I Want From You Is Away}
 {meta: artist Loretta Lynn}
-{meta: writer Bobby Harden}
+{meta: composer Bobby Harden}
 
 {start_of_verse: Verse 1}
 [C]At first I kinda liked it being here with [F]you

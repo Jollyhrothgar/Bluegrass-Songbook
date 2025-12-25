@@ -1,6 +1,6 @@
 {meta: title Drinking Again}
 {meta: artist Jim Ed Brown}
-{meta: writer Jack Schneider and Claude Southall}
+{meta: composer Jack Schneider and Claude Southall}
 
 {start_of_verse: Verse 1}
 [G]The piano is lonely the crowd [G7]left with the [C]band

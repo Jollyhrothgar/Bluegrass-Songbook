@@ -1,6 +1,6 @@
 {meta: title They Never Made It To Memphis}
 {meta: artist Mickey Gilley}
-{meta: writer Jan Buckingham and Karen Staley}
+{meta: composer Jan Buckingham and Karen Staley}
 
 {start_of_verse: Verse 1}
 [C]Well she left St. Louis in a Pontiac Tempest

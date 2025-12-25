@@ -1,6 +1,6 @@
 {meta: title Grace And Gratitude}
 {meta: artist Lester Flatt and Earl Scruggs}
-{meta: writer Amy Sky and Olivia Newton John}
+{meta: composer Amy Sky and Olivia Newton John}
 
 {start_of_verse: Verse 1}
 [C]All I [G7]have and all [Dm]I [F]feel 

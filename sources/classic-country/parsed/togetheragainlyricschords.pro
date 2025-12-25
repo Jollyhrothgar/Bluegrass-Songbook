@@ -1,6 +1,6 @@
 {meta: title Together Again}
 {meta: artist Ray Price}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [G7]Together a[C]gain my tears have stopped [F]falling

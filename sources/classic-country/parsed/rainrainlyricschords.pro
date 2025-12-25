@@ -1,6 +1,6 @@
 {meta: title Rain Rain}
 {meta: artist Wynn Stewart}
-{meta: writer Bobby Miller}
+{meta: composer Bobby Miller}
 
 {start_of_verse: Verse 1}
 [G]Rain rain it keeps a falling down

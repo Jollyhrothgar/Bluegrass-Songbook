@@ -1,6 +1,6 @@
 {meta: title Only Love Can Save Us Now}
 {meta: artist Johnny Paycheck}
-{meta: writer Billy Sherrill and Buddy Killen}
+{meta: composer Billy Sherrill and Buddy Killen}
 
 {start_of_verse: Verse 1}
 [G]Here we are [C]me and [G]you nothing [C]left to hold on [G]to

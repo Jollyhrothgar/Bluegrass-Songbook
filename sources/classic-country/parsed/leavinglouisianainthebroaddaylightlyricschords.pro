@@ -1,6 +1,6 @@
 {meta: title Leaving Louisiana In The Broad Daylight}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Rodney Crowell and Donavan Cowart}
+{meta: composer Rodney Crowell and Donavan Cowart}
 
 {start_of_verse: Verse 1}
 [C]Mary took to running with a traveling man

@@ -1,6 +1,6 @@
 {meta: title Just Long Enough To Say Goodbye}
 {meta: artist Mickey Gilley}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]Could you [D7]spare me just a [Em]moment

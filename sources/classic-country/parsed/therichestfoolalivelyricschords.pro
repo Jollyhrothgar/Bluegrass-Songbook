@@ -1,6 +1,6 @@
 {meta: title The Richest Fool Alive}
 {meta: artist Patty Loveless}
-{meta: writer Bobby Boyd, Kostas Lazarides, Don Mealer}
+{meta: composer Bobby Boyd, Kostas Lazarides, Don Mealer}
 
 {start_of_verse: Verse 1}
 [G]There's just no way of goin' back to [C]change what's come and gone

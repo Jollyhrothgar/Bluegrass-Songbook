@@ -1,6 +1,6 @@
 {meta: title Rocking Alone in an Old Rocking Chair}
 {meta: artist Everly Brothers}
-{meta: writer Allen L. Carvell}
+{meta: composer Allen L. Carvell}
 
 {start_of_verse: Verse 1}
 [C]Sitting alone in an [G7]old rocking chair 

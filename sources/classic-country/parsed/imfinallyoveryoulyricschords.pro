@@ -1,6 +1,6 @@
 {meta: title I'm Finally Over You}
 {meta: artist George Jones}
-{meta: writer Dallas Frazier and Sanger D. Shafer}
+{meta: composer Dallas Frazier and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Sweetheart it's [G7]been several days [C]now

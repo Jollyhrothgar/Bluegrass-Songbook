@@ -1,6 +1,6 @@
 {meta: title Beggin' For Trouble}
 {meta: artist Billy Walker}
-{meta: writer Jerry Reed Hubbard}
+{meta: composer Jerry Reed Hubbard}
 
 {start_of_verse: Verse 1}
 [G7]You're just beggin' for trouble cause she [F]never gives in [C]return

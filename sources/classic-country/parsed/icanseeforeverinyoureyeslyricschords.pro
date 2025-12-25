@@ -1,6 +1,6 @@
 {meta: title I Can See Forever In Your Eyes}
 {meta: artist Reba McEntire}
-{meta: writer Bob DiPiero}
+{meta: composer Bob DiPiero}
 
 {start_of_verse: Verse 1}
 [C]Touch me and I [Em]feel your fire

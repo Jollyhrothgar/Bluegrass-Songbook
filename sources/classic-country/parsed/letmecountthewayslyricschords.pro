@@ -1,6 +1,6 @@
 {meta: title Let Me Count The Ways}
 {meta: artist Tanya Tucker}
-{meta: writer Jerry Crutchfield and Claire Cloninger}
+{meta: composer Jerry Crutchfield and Claire Cloninger}
 
 {start_of_verse: Verse 1}
 [C]Here goes one more [G7]empty night [C]lonely lady [F]foolish pride

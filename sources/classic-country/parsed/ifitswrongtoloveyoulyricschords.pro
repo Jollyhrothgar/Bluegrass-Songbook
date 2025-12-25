@@ -1,6 +1,6 @@
 {meta: title If It's Wrong to Love You}
 {meta: artist Hank Snow}
-{meta: writer Bonnie Dodd and Charles Mitchell}
+{meta: composer Bonnie Dodd and Charles Mitchell}
 
 {start_of_verse: Verse 1}
 [C]If it's wrong to love you  [C7]wrong I'll always [F]be

@@ -1,6 +1,6 @@
 {meta: title Hank Williams You Wrote My Life}
 {meta: artist Moe Bandy}
-{meta: writer Paul Craft}
+{meta: composer Paul Craft}
 
 {start_of_verse: Verse 1}
 [C]You [F]wrote Your Cheating Heart [C]about

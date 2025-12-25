@@ -1,6 +1,6 @@
 {meta: title Pursuing Happiness}
 {meta: artist Norma Jean}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [C]I know that my surroundings aren't the [Dm]very best

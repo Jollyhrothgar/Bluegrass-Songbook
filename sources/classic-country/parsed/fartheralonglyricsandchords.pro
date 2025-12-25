@@ -1,6 +1,6 @@
 {meta: title Farther Along Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer W.B. Stevens and Jesse R. Baxter}
+{meta: composer W.B. Stevens and Jesse R. Baxter}
 
 {start_of_verse: Verse 1}
 [C]Tempted and tried we're [F]oft made to [C]wonder 

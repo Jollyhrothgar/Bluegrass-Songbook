@@ -1,6 +1,6 @@
 {meta: title Miles In Memories}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb and Carl Story}
+{meta: composer Ernest Tubb and Carl Story}
 
 {start_of_verse: Verse 1}
 [G]Yes I've got lots of [D7]miles but lots of [G]memories

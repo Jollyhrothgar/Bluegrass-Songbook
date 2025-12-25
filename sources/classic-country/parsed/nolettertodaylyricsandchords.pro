@@ -1,6 +1,6 @@
 {meta: title No Letter Today}
 {meta: artist Hank Snow}
-{meta: writer Frankie Brown}
+{meta: composer Frankie Brown}
 
 {start_of_verse: Verse 1}
 [G7]No letter [C]today I [C7]have waited since [F]dawn

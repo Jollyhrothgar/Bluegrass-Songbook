@@ -1,6 +1,6 @@
 {meta: title How She Could Sing The Wildwood Flower}
 {meta: artist Emmylou Harris}
-{meta: writer Anna McGarrigle, Emmylou Harris, Kate McGarrigle}
+{meta: composer Anna McGarrigle, Emmylou Harris, Kate McGarrigle}
 
 {start_of_verse: Verse 1}
 [C]How she could sing the Wildwood [F]Flower

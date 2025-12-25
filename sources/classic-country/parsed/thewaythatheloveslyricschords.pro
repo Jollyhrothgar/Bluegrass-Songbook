@@ -1,6 +1,6 @@
 {meta: title The Way That He Loves}
 {meta: artist The Heritage Singers}
-{meta: writer Elmo W. Mercer}
+{meta: composer Elmo W. Mercer}
 
 {start_of_verse: Verse 1}
 [G7]The [C]way that He [Em]loves is as [Am]fair as the [Dm]day

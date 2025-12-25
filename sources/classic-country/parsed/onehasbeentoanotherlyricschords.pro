@@ -1,6 +1,6 @@
 {meta: title One Has Been To Another}
 {meta: artist Lefty Frizzell}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Now he's gone and you're a has been just like [F]me

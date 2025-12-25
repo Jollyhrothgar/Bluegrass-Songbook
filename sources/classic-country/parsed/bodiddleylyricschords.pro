@@ -1,6 +1,6 @@
 {meta: title Bo Diddley}
 {meta: artist Buddy Holly}
-{meta: writer Ellas McDaniel}
+{meta: composer Ellas McDaniel}
 
 {start_of_verse: Verse 1}
 [G]Bo Diddley buy baby a diamond ring[C]   [G]

@@ -1,6 +1,6 @@
 {meta: title How Important Can It Be}
 {meta: artist Wanda Jackson}
-{meta: writer Bennie Benjamin and George Weiss}
+{meta: composer Bennie Benjamin and George Weiss}
 
 {start_of_verse: Verse 1}
 [C]How important can it [G7]be

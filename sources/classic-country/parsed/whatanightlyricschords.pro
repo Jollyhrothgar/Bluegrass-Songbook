@@ -1,6 +1,6 @@
 {meta: title What A Night}
 {meta: artist David Houston}
-{meta: writer Norro Wilson and Carmol Taylor}
+{meta: composer Norro Wilson and Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [G]Walking down a rainy street

@@ -1,6 +1,6 @@
 {meta: title Tear By Tear}
 {meta: artist Lynn Anderson}
-{meta: writer Jerry Lane}
+{meta: composer Jerry Lane}
 
 {start_of_verse: Verse 1}
 [G]Kiss by kiss I [C]fell in love with [G]you

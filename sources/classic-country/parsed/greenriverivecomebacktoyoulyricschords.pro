@@ -1,6 +1,6 @@
 {meta: title Green River I've Come Back To You}
 {meta: artist Waylon Jennings}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [C]Green River I've come back to you

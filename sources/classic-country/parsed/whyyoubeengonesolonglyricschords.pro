@@ -1,6 +1,6 @@
 {meta: title Why You Been Gone So Long}
 {meta: artist Joe Sun}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [C]Every time it rains I [F]run to my [C]window

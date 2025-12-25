@@ -1,6 +1,6 @@
 {meta: title Better Me}
 {meta: artist Tommy Overstreet}
-{meta: writer Sterling Whipple}
+{meta: composer Sterling Whipple}
 
 {start_of_verse: Verse 1}
 [C]She sat down near the bar

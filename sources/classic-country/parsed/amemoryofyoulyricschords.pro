@@ -1,6 +1,6 @@
 {meta: title A Memory Of You}
 {meta: artist Jim and Jesse}
-{meta: writer Larry Roll}
+{meta: composer Larry Roll}
 
 {start_of_verse: Verse 1}
 [G]I turned the key in the [C]lock tonight 

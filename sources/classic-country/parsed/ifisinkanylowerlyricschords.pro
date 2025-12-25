@@ -1,6 +1,6 @@
 {meta: title If I Sink Any Lower}
 {meta: artist Big Country Bluegrass}
-{meta: writer Bob Richardson}
+{meta: composer Bob Richardson}
 
 {start_of_verse: Verse 1}
 [G]I woke up this morning with pounding in my head

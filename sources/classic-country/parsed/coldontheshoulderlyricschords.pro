@@ -1,6 +1,6 @@
 {meta: title Cold On The Shoulder}
 {meta: artist Tony Rice}
-{meta: writer Gordon Lightfoot}
+{meta: composer Gordon Lightfoot}
 
 {start_of_verse: Verse 1}
 [G]All you need is [C]time

@@ -1,6 +1,6 @@
 {meta: title Nobody Told Me}
 {meta: artist David Ball}
-{meta: writer Gary Cotton and John Wiggins}
+{meta: composer Gary Cotton and John Wiggins}
 
 {start_of_verse: Verse 1}
 [G]I bumped my knee [D7]hit a chair 

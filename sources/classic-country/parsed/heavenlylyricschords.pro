@@ -1,6 +1,6 @@
 {meta: title Heavenly}
 {meta: artist Conway Twitty}
-{meta: writer Conway Twitty and Jack Nance}
+{meta: composer Conway Twitty and Jack Nance}
 
 {start_of_verse: Verse 1}
 [C]Heavenly heavenly [G7]that's what you [F]are to [C]me

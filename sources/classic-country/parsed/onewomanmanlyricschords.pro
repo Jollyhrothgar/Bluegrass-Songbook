@@ -1,6 +1,6 @@
 {meta: title One Woman Man}
 {meta: artist George Morgan}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]Darling many times I’ve had the chance to be un[G7]true

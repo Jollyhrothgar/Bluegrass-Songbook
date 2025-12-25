@@ -1,6 +1,6 @@
 {meta: title I've Come Awful Close}
 {meta: artist Hank Thompson}
-{meta: writer Ann J. Morton}
+{meta: composer Ann J. Morton}
 
 {start_of_verse: Verse 1}
 [C]Well never once have I cheated on my [F]baby

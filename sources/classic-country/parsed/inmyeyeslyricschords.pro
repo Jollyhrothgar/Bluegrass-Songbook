@@ -1,6 +1,6 @@
 {meta: title In My Eyes}
 {meta: artist John Conlee}
-{meta: writer Barbara Wyrick}
+{meta: composer Barbara Wyrick}
 
 {start_of_verse: Verse 1}
 [C]She's just a [G]woman  a [C]hundred pounds of flesh and blood

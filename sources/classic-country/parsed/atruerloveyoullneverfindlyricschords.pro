@@ -1,6 +1,6 @@
 {meta: title A Truer Love You'll Never Find}
 {meta: artist Bill Anderson}
-{meta: writer Red Lane}
+{meta: composer Red Lane}
 
 {start_of_verse: Verse 1}
 [C]You emptied all my [F]pockets

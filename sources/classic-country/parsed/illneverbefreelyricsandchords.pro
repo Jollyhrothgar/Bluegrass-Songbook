@@ -1,6 +1,6 @@
 {meta: title I’ll Never Be Free}
 {meta: artist Jim Ed Brown}
-{meta: writer Bennie Benjamin and George David Weiss}
+{meta: composer Bennie Benjamin and George David Weiss}
 
 {start_of_verse: Verse 1}
 [G7]Each time I [C]hold somebody [C7]new

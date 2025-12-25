@@ -1,6 +1,6 @@
 {meta: title I Get The Picture}
 {meta: artist Keith Whitley}
-{meta: writer Don Cook and Fred Koller}
+{meta: composer Don Cook and Fred Koller}
 
 {start_of_verse: Verse 1}
 [C]The moving van is waitin' for the rain to stop

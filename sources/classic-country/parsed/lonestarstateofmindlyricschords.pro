@@ -1,6 +1,6 @@
 {meta: title Lone Star State Of Mind}
 {meta: artist Rhonda Vincent}
-{meta: writer Pat Alger, Fred Koller, Eugene Albert Levine}
+{meta: composer Pat Alger, Fred Koller, Eugene Albert Levine}
 
 {start_of_verse: Verse 1}
 [C]Your phone call took me by [Dm]surprise

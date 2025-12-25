@@ -1,6 +1,6 @@
 {meta: title There's A Fire In The Night}
 {meta: artist Alabama}
-{meta: writer Bob Corbin}
+{meta: composer Bob Corbin}
 
 {start_of_verse: Verse 1}
 [G]Runnin' scared wonderin' what I'm doin' so [Em]far from home

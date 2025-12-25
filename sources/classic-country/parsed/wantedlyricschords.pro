@@ -1,6 +1,6 @@
 {meta: title Wanted}
 {meta: artist Alan Jackson}
-{meta: writer Charlie Craig and Alan Jackson}
+{meta: composer Charlie Craig and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G]Excuse me [C]ma'am can you [G]help me

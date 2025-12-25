@@ -1,6 +1,6 @@
 {meta: title Will You Be Here Tomorrow}
 {meta: artist Norma Jean}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [G]These things that you promised for [C]certain

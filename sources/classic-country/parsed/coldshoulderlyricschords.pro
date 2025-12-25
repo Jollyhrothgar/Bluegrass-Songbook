@@ -1,6 +1,6 @@
 {meta: title Cold Shoulder}
 {meta: artist Johnny Cash}
-{meta: writer Helene Hudgins}
+{meta: composer Helene Hudgins}
 
 {start_of_verse: Verse 1}
 [G]Well it's plain to see you're giving me a cold [D7]shoulder

@@ -1,6 +1,6 @@
 {meta: title If I'd Left It Up To You}
 {meta: artist Johnny Rodriguez}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 [G]You made plans to leave a [C]thousand time I [G]know

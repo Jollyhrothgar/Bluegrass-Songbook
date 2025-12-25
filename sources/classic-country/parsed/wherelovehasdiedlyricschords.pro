@@ -1,6 +1,6 @@
 {meta: title Where Love Has Died}
 {meta: artist Waylon Jennings}
-{meta: writer Jim Owen}
+{meta: composer Jim Owen}
 
 {start_of_verse: Verse 1}
 [G]If my years were less if my shoes were [D7]new

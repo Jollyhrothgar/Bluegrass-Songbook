@@ -1,6 +1,6 @@
 {meta: title I Fought The Law}
 {meta: artist Johnny Rodriguez}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [C]Breakin' rocks in the [F]hot [C]sun 

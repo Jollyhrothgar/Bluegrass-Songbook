@@ -1,6 +1,6 @@
 {meta: title So Long}
 {meta: artist David Ball}
-{meta: writer Russell Brown and David Ball}
+{meta: composer Russell Brown and David Ball}
 
 {start_of_verse: Verse 1}
 [C]If you believe what I believe is true

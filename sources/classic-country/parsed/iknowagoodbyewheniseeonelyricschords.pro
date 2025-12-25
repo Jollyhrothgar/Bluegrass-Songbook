@@ -1,6 +1,6 @@
 {meta: title I Know A Goodbye When I See One}
 {meta: artist Wilburn Brothers}
-{meta: writer Glenn A. Worf}
+{meta: composer Glenn A. Worf}
 
 {start_of_verse: Verse 1}
 [G]There at first we seemed so right for each [D7]other

@@ -1,6 +1,6 @@
 {meta: title Round And Round The Bottle}
 {meta: artist Tanya Tucker}
-{meta: writer Susan Taylor}
+{meta: composer Susan Taylor}
 
 {start_of_verse: Verse 1}
 [G]Grandma was a pretty thing when [C]she was just six[G]teen

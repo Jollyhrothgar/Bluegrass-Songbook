@@ -1,6 +1,6 @@
 {meta: title The Traveling Kind}
 {meta: artist Emmylou Harris}
-{meta: writer Rodney Crowell, Emmylou Harris, Cory Chisel}
+{meta: composer Rodney Crowell, Emmylou Harris, Cory Chisel}
 
 {start_of_verse: Verse 1}
 [C]We don't [Am]all die [G7]young to [F]save [G7]our [C]spark

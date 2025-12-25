@@ -1,6 +1,6 @@
 {meta: title D.O.A. (Drunk On Arrival)}
 {meta: artist Johnny Paycheck}
-{meta: writer Larry Lee, Ed Hudson, Michael Heeney}
+{meta: composer Larry Lee, Ed Hudson, Michael Heeney}
 
 {start_of_verse: Verse 1}
 [C]Lord don't I know whiskey [F]ain't a good [C]chaser

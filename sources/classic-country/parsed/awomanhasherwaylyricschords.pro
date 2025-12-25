@@ -1,6 +1,6 @@
 {meta: title A Woman Has Her Way}
 {meta: artist Clint Black}
-{meta: writer Clint Black, Jerry Williams, David Bellamy}
+{meta: composer Clint Black, Jerry Williams, David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]In a world of confusion I [F]followed my [C]heart 

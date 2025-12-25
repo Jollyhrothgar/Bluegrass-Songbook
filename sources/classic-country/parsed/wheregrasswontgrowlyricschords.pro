@@ -1,6 +1,6 @@
 {meta: title Where Grass Won't Grow}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery}
+{meta: composer Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]The dirt was clay and was [F]color of the blood in [C]me

@@ -1,6 +1,6 @@
 {meta: title Time Stood Still}
 {meta: artist Vern Gosdin}
-{meta: writer Melvin Ragin & Robert Bryant}
+{meta: composer Melvin Ragin & Robert Bryant}
 
 {start_of_verse: Verse 1}
 [C]You made my world go [F]round

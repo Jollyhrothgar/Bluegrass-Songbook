@@ -1,6 +1,6 @@
 {meta: title Courage To Go Home}
 {meta: artist Tony Booth}
-{meta: writer Jack Lebsock}
+{meta: composer Jack Lebsock}
 
 {start_of_verse: Verse 1}
 [C]Here I sit all alone in this [F]barroom

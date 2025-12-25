@@ -1,6 +1,6 @@
 {meta: title Tennessee Saturday Night}
 {meta: artist Red Foley}
-{meta: writer Billy Hughes}
+{meta: composer Billy Hughes}
 
 {start_of_verse: Verse 1}
 [G]Now listen while I tell you 'bout a place I know

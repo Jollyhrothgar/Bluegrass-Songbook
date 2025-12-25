@@ -1,6 +1,6 @@
 {meta: title Heart Of The Matter}
 {meta: artist Cal Smith}
-{meta: writer Don Schlitz and Jim Rushing}
+{meta: composer Don Schlitz and Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]I won't [G7]ask you what's the [C]matter

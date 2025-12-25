@@ -1,6 +1,6 @@
 {meta: title Hillbilly Highway}
 {meta: artist Ricky Skaggs}
-{meta: writer Jimbeau Hinson and Steve Earle}
+{meta: composer Jimbeau Hinson and Steve Earle}
 
 {start_of_verse: Verse 1}
 [G]My granddaddy was a miner but he finally [C]saw the [G]light

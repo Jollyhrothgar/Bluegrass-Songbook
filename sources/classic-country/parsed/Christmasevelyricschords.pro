@@ -1,6 +1,6 @@
 {meta: title Christmas Eve}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [G]If [D7]dreams came [G]true on Christmas [C]Eve

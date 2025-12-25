@@ -1,6 +1,6 @@
 {meta: title The Tears That I Cry}
 {meta: artist John Anderson}
-{meta: writer Paul Kennerley and John Anderson}
+{meta: composer Paul Kennerley and John Anderson}
 
 {start_of_verse: Verse 1}
 [C]Darling I love you [G7] you know that I [C]do

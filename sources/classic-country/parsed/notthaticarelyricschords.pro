@@ -1,6 +1,6 @@
 {meta: title Not That I Care}
 {meta: artist Wilburn Brothers}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]So you saw her last [D7]night with her new [G]love 

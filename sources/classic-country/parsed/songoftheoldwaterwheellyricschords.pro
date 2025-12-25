@@ -1,6 +1,6 @@
 {meta: title Song Of The Old Water Wheel}
 {meta: artist Slim Whitman}
-{meta: writer Buddy Starcher}
+{meta: composer Buddy Starcher}
 
 {start_of_verse: Verse 1}
 [G]By the valley road the lilacs are [C]growin'

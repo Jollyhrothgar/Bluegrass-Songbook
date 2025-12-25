@@ -1,6 +1,6 @@
 {meta: title Some Gave All}
 {meta: artist Billy Ray Cyrus}
-{meta: writer Billy Ray Cyrus and Cindy Cyrus}
+{meta: composer Billy Ray Cyrus and Cindy Cyrus}
 
 {start_of_verse: Verse 1}
 [G]I knew a man called him Sam the Cane

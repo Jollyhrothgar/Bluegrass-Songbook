@@ -1,6 +1,6 @@
 {meta: title Don't Make Me Go To School}
 {meta: artist Tammy Wynette}
-{meta: writer Gene Crysler}
+{meta: composer Gene Crysler}
 
 {start_of_verse: Verse 1}
 [C]My little girl said mommy the school room breaks my heart

@@ -1,6 +1,6 @@
 {meta: title Rainbow Valley}
 {meta: artist Roger Miller}
-{meta: writer Robert Wells and Dave Grusin}
+{meta: composer Robert Wells and Dave Grusin}
 
 {start_of_verse: Verse 1}
 [C]I'm going [Dm]home [G7]to Rainbow [C]Valley

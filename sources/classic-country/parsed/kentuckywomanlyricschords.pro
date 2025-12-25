@@ -1,6 +1,6 @@
 {meta: title Kentucky Woman}
 {meta: artist Waylon Jennings}
-{meta: writer Neil Diamond}
+{meta: composer Neil Diamond}
 
 {start_of_verse: Verse 1}
 [G]Kentucky [C]woman she shines with her own [G]kind of light [C]  [D7]   [G]

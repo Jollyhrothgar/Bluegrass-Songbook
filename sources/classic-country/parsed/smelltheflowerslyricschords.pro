@@ -1,6 +1,6 @@
 {meta: title Smell The Flowers}
 {meta: artist Tanya Tucker}
-{meta: writer Jerry Reed Hubbard}
+{meta: composer Jerry Reed Hubbard}
 
 {start_of_verse: Verse 1}
 [F]Yester[C]day oh how [F]many do you [D7]wish you could re[C]live

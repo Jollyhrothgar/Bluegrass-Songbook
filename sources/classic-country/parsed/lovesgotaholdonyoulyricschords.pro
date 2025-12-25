@@ -1,6 +1,6 @@
 {meta: title Love's Got A Hold On You}
 {meta: artist Alan Jackson}
-{meta: writer Keith Stegall and Carson Chamberlain}
+{meta: composer Keith Stegall and Carson Chamberlain}
 
 {start_of_verse: Verse 1}
 [C]I called my [G7]doctor on the [C]telephone

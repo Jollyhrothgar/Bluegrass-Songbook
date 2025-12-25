@@ -1,6 +1,6 @@
 {meta: title A Lonesome Heart}
 {meta: artist Slim Whitman}
-{meta: writer Johnny Rotella}
+{meta: composer Johnny Rotella}
 
 {start_of_verse: Verse 1}
 [C]A lonesome heart is not for [G7]me

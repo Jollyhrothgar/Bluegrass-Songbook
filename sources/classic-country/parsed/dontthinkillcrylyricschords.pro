@@ -1,6 +1,6 @@
 {meta: title Don't Think I'll Cry}
 {meta: artist Ricky Skaggs}
-{meta: writer Wayland Patton}
+{meta: composer Wayland Patton}
 
 {start_of_verse: Verse 1}
 [G]My tears would fall each time you'd leave [C]me

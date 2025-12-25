@@ -1,6 +1,6 @@
 {meta: title But I Do}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Troy Seals and Dave Parkinson}
+{meta: composer Troy Seals and Dave Parkinson}
 
 {start_of_verse: Verse 1}
 [C]I've been so alone without you

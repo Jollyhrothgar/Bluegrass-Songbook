@@ -1,6 +1,6 @@
 {meta: title Down And Out This Way Again}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [C]My life is not the [F]life you were [G7]accustomed to

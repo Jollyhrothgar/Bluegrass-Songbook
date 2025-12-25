@@ -1,6 +1,6 @@
 {meta: title Highway Patrol}
 {meta: artist Junior Brown}
-{meta: writer Red Simpson, Dennis Payne, Ray Rush}
+{meta: composer Red Simpson, Dennis Payne, Ray Rush}
 
 {start_of_verse: Verse 1}
 [G]I got a star on my car and one on my chest

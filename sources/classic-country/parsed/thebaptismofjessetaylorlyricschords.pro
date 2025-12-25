@@ -1,6 +1,6 @@
 {meta: title The Baptism Of Jesse Taylor}
 {meta: artist Johnny Russell}
-{meta: writer Dallas Frazier and Sanger D. Shafer}
+{meta: composer Dallas Frazier and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]They baptized Jesse Taylor in [F]Cedar Creek last [C]Sunday

@@ -1,6 +1,6 @@
 {meta: title It's Too Late}
 {meta: artist Buddy Holly}
-{meta: writer Chuck Willis}
+{meta: composer Chuck Willis}
 
 {start_of_verse: Verse 1}
 [G7]It's too late  she's [C]gone [F]  [C]

@@ -1,6 +1,6 @@
 {meta: title Somebody's Always Saying Goodbye}
 {meta: artist Anne Murray}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]Railroad station [G7]midnight trains [C]lonely airports in the [Am]rain

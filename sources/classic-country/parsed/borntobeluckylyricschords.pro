@@ -1,6 +1,6 @@
 {meta: title Born To Be Lucky}
 {meta: artist Jim Reeves}
-{meta: writer Taffey Kikillus}
+{meta: composer Taffey Kikillus}
 
 {start_of_verse: Verse 1}
 [G]Just born to be lucky as the gamblin' man must be

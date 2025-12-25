@@ -1,6 +1,6 @@
 {meta: title And You Wonder Why}
 {meta: artist George Hamilton IV}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]I mailed you a post card 

@@ -1,6 +1,6 @@
 {meta: title Drinking And Dreaming}
 {meta: artist Waylon Jennings}
-{meta: writer Troy Seals and Max D. Barnes}
+{meta: composer Troy Seals and Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]Everybody's looking for some way in

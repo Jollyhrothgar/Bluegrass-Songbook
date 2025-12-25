@@ -1,6 +1,6 @@
 {meta: title The Funeral}
 {meta: artist Hank Williams}
-{meta: writer Eddie Brackett, Hank Williams, Fred Rose}
+{meta: composer Eddie Brackett, Hank Williams, Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]I was walking in Savannah [D7]past a [G]church decayed and dim[C]

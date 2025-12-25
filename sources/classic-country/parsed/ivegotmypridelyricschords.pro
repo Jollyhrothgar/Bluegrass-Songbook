@@ -1,6 +1,6 @@
 {meta: title I've Got My Pride}
 {meta: artist Jean Shepard}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [F]I've got my [C]pride [G7]I've got my [C]pride

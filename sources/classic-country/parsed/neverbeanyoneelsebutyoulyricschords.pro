@@ -1,6 +1,6 @@
 {meta: title Never Be Anyone Else But You}
 {meta: artist Ricky Nelson}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [C]There'll never be [F]anyone else but [G7]you for [C]me

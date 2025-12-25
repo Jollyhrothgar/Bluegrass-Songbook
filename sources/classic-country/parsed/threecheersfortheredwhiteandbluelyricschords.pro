@@ -1,6 +1,6 @@
 {meta: title Three Cheers For The Red White And Blue}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew and Dave Burgess}
+{meta: composer Carl Belew and Dave Burgess}
 
 {start_of_verse: Verse 1}
 [C]Three cheers for the red white and [F]blue

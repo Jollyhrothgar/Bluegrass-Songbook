@@ -1,6 +1,6 @@
 {meta: title Second Chances}
 {meta: artist George Strait}
-{meta: writer Sanger D. Shafer and Tommy Collins}
+{meta: composer Sanger D. Shafer and Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]Man don't you know this [C]woman you want

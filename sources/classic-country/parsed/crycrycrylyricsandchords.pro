@@ -1,6 +1,6 @@
 {meta: title Cry Cry Cry Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Shirley Wood}
+{meta: composer Shirley Wood}
 
 {start_of_verse: Verse 1}
 [G]At last I found the way to free m[C]yself from you

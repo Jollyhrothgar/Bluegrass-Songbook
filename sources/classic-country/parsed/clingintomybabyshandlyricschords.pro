@@ -1,6 +1,6 @@
 {meta: title Clingin' To My Baby's Hand}
 {meta: artist Dottie West}
-{meta: writer Red Lane and Dottie West}
+{meta: composer Red Lane and Dottie West}
 
 {start_of_verse: Verse 1}
 [C]I won't say he won't ever [C][F]stumble

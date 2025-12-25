@@ -1,6 +1,6 @@
 {meta: title Christmas To Christmas}
 {meta: artist Lee Greenwood}
-{meta: writer Alan Rhody}
+{meta: composer Alan Rhody}
 
 {start_of_verse: Verse 1}
 [G]Seems like only yesterday

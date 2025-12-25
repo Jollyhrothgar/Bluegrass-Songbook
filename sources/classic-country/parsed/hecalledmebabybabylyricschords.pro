@@ -1,6 +1,6 @@
 {meta: title He Called Me Baby Baby}
 {meta: artist Patsy Cline}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [D7]He called me [G]baby  [G7]baby  all night [C]long

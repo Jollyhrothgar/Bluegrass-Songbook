@@ -1,6 +1,6 @@
 {meta: title Battle Of Bull Run}
 {meta: artist Johnny Horton}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [C]The sun shown bright and clear that day [F]we all left Washing[C]ton

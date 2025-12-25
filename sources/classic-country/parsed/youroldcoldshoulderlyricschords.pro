@@ -1,6 +1,6 @@
 {meta: title Your Old Cold Shoulder}
 {meta: artist Crystal Gayle}
-{meta: writer Richard C. Leigh}
+{meta: composer Richard C. Leigh}
 
 {start_of_verse: Verse 1}
 [G]There [D7]ain’t nothing [G]colder than [C]your old cold [G]shoulder

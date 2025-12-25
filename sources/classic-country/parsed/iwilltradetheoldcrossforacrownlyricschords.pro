@@ -1,6 +1,6 @@
 {meta: title I Will Trade the Old Cross for a Crown}
 {meta: artist Doyle Lawson}
-{meta: writer Johnson Oatman Jr. and John M. Henson}
+{meta: composer Johnson Oatman Jr. and John M. Henson}
 
 {start_of_verse: Verse 1}
 [G]I shall not bear the [D7]cross through yon [G]city

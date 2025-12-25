@@ -1,6 +1,6 @@
 {meta: title By The Way (I Still Love You)}
 {meta: artist George Morgan}
-{meta: writer T. Texas Tyler}
+{meta: composer T. Texas Tyler}
 
 {start_of_verse: Verse 1}
 [G]All the suffering is almost over

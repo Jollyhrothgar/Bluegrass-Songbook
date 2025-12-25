@@ -1,6 +1,6 @@
 {meta: title My Last Chance With You}
 {meta: artist Buck Owens}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]Since you told me yesterday everything [C]you had to [G]say

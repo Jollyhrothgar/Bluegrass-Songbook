@@ -1,6 +1,6 @@
 {meta: title Pleasin' My Woman}
 {meta: artist Billy Parker}
-{meta: writer Don Devaney}
+{meta: composer Don Devaney}
 
 {start_of_verse: Verse 1}
 [C]She's here in the morning when the sun comes up

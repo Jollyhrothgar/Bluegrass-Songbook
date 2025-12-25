@@ -1,6 +1,6 @@
 {meta: title Lotta Lovin'}
 {meta: artist Mickey Gilley}
-{meta: writer Bernice Bedwell}
+{meta: composer Bernice Bedwell}
 
 {start_of_verse: Verse 1}
 [G]Well I wanna wanna lotta lotta lovin’

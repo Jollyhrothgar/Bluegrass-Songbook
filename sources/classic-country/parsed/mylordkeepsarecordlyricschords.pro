@@ -1,6 +1,6 @@
 {meta: title My Lord Keeps A Record}
 {meta: artist Jimmy Martin}
-{meta: writer Carl Story and}
+{meta: composer Carl Story and}
 
 {start_of_verse: Verse 1}
 [C]What a wonderful beautiful [F]picture I [C]have 

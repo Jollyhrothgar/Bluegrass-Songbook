@@ -1,6 +1,6 @@
 {meta: title Slowly But Surely}
 {meta: artist Wynn Stewart}
-{meta: writer Harlan Howard, Beverly Stewart, Wynn Stewart}
+{meta: composer Harlan Howard, Beverly Stewart, Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [C]Slowly but [F]surely [C]though I love you [F]dearly

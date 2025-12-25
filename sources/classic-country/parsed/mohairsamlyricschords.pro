@@ -1,6 +1,6 @@
 {meta: title Mohair Sam}
 {meta: artist Charlie Rich}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Who is the hippie that's [G7]happening all over our [C]town

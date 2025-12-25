@@ -1,6 +1,6 @@
 {meta: title Millionaire}
 {meta: artist Doug Stone}
-{meta: writer Jimmy Devine}
+{meta: composer Jimmy Devine}
 
 {start_of_verse: Verse 1}
 Millionaire

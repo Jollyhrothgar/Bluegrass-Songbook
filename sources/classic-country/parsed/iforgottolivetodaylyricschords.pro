@@ -1,6 +1,6 @@
 {meta: title I Forgot To Live Today}
 {meta: artist Hank Locklin}
-{meta: writer Dickey Lee and Allen Reynolds}
+{meta: composer Dickey Lee and Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [C]My key turns in the lock and I [Em]open my front door

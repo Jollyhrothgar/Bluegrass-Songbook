@@ -1,6 +1,6 @@
 {meta: title Who’s That Knocking At My Door}
 {meta: artist The Dreadful Snakes}
-{meta: writer Pat Enright}
+{meta: composer Pat Enright}
 
 {start_of_verse: Verse 1}
 [C]Who’s that knocking at my door have I heard that knock before

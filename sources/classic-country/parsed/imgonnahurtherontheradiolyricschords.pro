@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Hurt Her On The Radio}
 {meta: artist The Bellamy Brothers}
-{meta: writer Tom Brasfield and Lyman McAnally}
+{meta: composer Tom Brasfield and Lyman McAnally}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna hurt her on the radio

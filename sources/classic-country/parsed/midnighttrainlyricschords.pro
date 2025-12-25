@@ -1,6 +1,6 @@
 {meta: title Midnight Train}
 {meta: artist Eric Wurst and David Wurst}
-{meta: writer Eric Wurst and David Wurst}
+{meta: composer Eric Wurst and David Wurst}
 
 {start_of_verse: Verse 1}
 [C]I crossed the county line bout half an hour ago

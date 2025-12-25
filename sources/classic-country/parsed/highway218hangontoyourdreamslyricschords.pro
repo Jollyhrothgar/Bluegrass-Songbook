@@ -1,6 +1,6 @@
 {meta: title Highway 2-18 (Hang On To Your Dreams)}
 {meta: artist The Bellamy Brothers}
-{meta: writer Howard Bellamy and David Bellamy}
+{meta: composer Howard Bellamy and David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]Turn the radio up cause it's [F]time to get down  

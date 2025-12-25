@@ -1,6 +1,6 @@
 {meta: title Ellie}
 {meta: artist Charley Pride}
-{meta: writer Blake Mevis, Bill Shore, Byron Gallimore}
+{meta: composer Blake Mevis, Bill Shore, Byron Gallimore}
 
 {start_of_verse: Verse 1}
 [C]Ellie may and Ellie may not

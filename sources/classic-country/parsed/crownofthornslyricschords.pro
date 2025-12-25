@@ -1,6 +1,6 @@
 {meta: title Crown Of Thorns}
 {meta: artist Jimmie Davis}
-{meta: writer Jimmie Davis and Jack Mainard}
+{meta: composer Jimmie Davis and Jack Mainard}
 
 {start_of_verse: Verse 1}
 [C]There have been kings with [G7]riches untold

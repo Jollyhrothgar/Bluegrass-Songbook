@@ -1,6 +1,6 @@
 {meta: title It's Too Late To Stop Us Now}
 {meta: artist Mel Street}
-{meta: writer Bob McDill and Wayland Holyfield}
+{meta: composer Bob McDill and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]Let the phone just keep on [G7]ringing [F]

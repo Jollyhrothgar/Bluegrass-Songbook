@@ -1,6 +1,6 @@
 {meta: title The Door}
 {meta: artist George Jones}
-{meta: writer Billy Sherrill}
+{meta: composer Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [G]I've heard the sound of my dear old [Am]mama [C]cry-ing 

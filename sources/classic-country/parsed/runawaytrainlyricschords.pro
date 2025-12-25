@@ -1,6 +1,6 @@
 {meta: title Runaway Train}
 {meta: artist Randy Travis}
-{meta: writer Doug Eldridge, Thomas Flowers, Ric Ivanisevich}
+{meta: composer Doug Eldridge, Thomas Flowers, Ric Ivanisevich}
 
 {start_of_verse: Verse 1}
 [C]Baby our love is our love is like a runaway train

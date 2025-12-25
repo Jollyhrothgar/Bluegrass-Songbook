@@ -1,6 +1,6 @@
 {meta: title The Almighty Power Of A Good Woman's Love}
 {meta: artist Conway Twitty}
-{meta: writer L.E. White}
+{meta: composer L.E. White}
 
 {start_of_verse: Verse 1}
 [C]When you feel like you've come to the [F]end of your [C]way you need [G7]love

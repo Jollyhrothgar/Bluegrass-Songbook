@@ -1,6 +1,6 @@
 {meta: title Every Day I Have To Cry Some}
 {meta: artist Bob Luman}
-{meta: writer Arthur Alexander}
+{meta: composer Arthur Alexander}
 
 {start_of_verse: Verse 1}
 [G]There was a little girl I'd [Am]planned to marry

@@ -1,6 +1,6 @@
 {meta: title American Made}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Bob Dipiero and Pat Mcmanus}
+{meta: composer Bob Dipiero and Pat Mcmanus}
 
 {start_of_verse: Verse 1}
 [G]Seems everything I [C]buy these days has got a foreign [G]name

@@ -1,6 +1,6 @@
 {meta: title Trouble Keeps Hanging Around My Door}
 {meta: artist Tex Ritter}
-{meta: writer Ted Daffan}
+{meta: composer Ted Daffan}
 
 {start_of_verse: Verse 1}
 [C]My troubles never seem to end

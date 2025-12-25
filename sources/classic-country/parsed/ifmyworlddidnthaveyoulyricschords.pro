@@ -1,6 +1,6 @@
 {meta: title If My World Didn't Have You}
 {meta: artist Willie Nelson}
-{meta: writer Beth N. Chapman}
+{meta: composer Beth N. Chapman}
 
 {start_of_verse: Verse 1}
 [C]My world has midnight and [G7]daylight and [C]sunsets and dawn

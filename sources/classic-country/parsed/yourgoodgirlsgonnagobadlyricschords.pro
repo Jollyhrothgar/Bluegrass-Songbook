@@ -1,6 +1,6 @@
 {meta: title Your Good Girl's Gonna Go Bad}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]I've never seen the inside of a [G7]bar-room

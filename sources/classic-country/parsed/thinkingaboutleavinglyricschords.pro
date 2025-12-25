@@ -1,6 +1,6 @@
 {meta: title Thinking About Leaving}
 {meta: artist Dwight Yoakam}
-{meta: writer Rodney Crowell}
+{meta: composer Rodney Crowell}
 
 {start_of_verse: Verse 1}
 [C]I used to think love was the [G7]soft rope meant to tie me [C]down

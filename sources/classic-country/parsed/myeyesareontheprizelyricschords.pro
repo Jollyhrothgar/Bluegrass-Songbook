@@ -1,6 +1,6 @@
 {meta: title My Eyes Are On The Prize}
 {meta: artist Gene Watson}
-{meta: writer Bobbie Bost}
+{meta: composer Bobbie Bost}
 
 {start_of_verse: Verse 1}
 [C]Satan came to me this morning spoke to me without a warning

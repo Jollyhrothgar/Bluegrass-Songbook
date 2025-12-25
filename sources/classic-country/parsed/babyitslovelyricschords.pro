@@ -1,6 +1,6 @@
 {meta: title Baby It's Love}
 {meta: artist Buddy Holly}
-{meta: writer Bobby Montgomery and Ella Holley}
+{meta: composer Bobby Montgomery and Ella Holley}
 
 {start_of_verse: Verse 1}
 [C]Sixty seconds of heavenly bliss

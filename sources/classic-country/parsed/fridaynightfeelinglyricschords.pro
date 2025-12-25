@@ -1,6 +1,6 @@
 {meta: title Friday Night Feeling}
 {meta: artist Vern Gosdin}
-{meta: writer Jake Landers}
+{meta: composer Jake Landers}
 
 {start_of_verse: Verse 1}
 [G]I watched her pack her worn out [C]suitcase

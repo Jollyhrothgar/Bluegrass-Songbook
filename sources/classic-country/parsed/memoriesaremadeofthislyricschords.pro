@@ -1,6 +1,6 @@
 {meta: title Memories Are Made Of This}
 {meta: artist Dean Martin}
-{meta: writer Terry Gilkyson, Rich Dehr and Frank Miller}
+{meta: composer Terry Gilkyson, Rich Dehr and Frank Miller}
 
 {start_of_verse: Verse 1}
 [C]Take one [G7]fresh and tender [C]kiss[G7]

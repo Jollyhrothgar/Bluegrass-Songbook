@@ -1,6 +1,6 @@
 {meta: title A Swimming Pool Full Of Beer}
 {meta: artist Charlie Walker}
-{meta: writer Earl Montgomery}
+{meta: composer Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]When I got up this morning I [F]found I was [C]alone

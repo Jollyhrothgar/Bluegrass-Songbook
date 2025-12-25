@@ -1,6 +1,6 @@
 {meta: title Treasures Untold}
 {meta: artist Lefty Frizzell}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [G]Dreaming of you and your eyes of blue 

@@ -1,6 +1,6 @@
 {meta: title Memory Killer}
 {meta: artist Charlie Walker}
-{meta: writer Glenn D. Tubb}
+{meta: composer Glenn D. Tubb}
 
 {start_of_verse: Verse 1}
 [G]Give me another glass of [C]memory killer [G]make it a [D7]double please

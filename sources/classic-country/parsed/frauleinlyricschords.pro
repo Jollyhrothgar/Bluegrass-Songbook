@@ -1,6 +1,6 @@
 {meta: title Fraulein}
 {meta: artist Bobby Helms}
-{meta: writer Lawton Williams}
+{meta: composer Lawton Williams}
 
 {start_of_verse: Verse 1}
 [C]Far across deep blue waters  lives an old German's [F]daughter

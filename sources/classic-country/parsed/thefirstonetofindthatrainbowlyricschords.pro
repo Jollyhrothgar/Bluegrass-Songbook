@@ -1,6 +1,6 @@
 {meta: title The First One To Find That Rainbow}
 {meta: artist Slim Whitman}
-{meta: writer Bob Hilliard and Philip Springer}
+{meta: composer Bob Hilliard and Philip Springer}
 
 {start_of_verse: Verse 1}
 [C]You're the first one to find the rainbow

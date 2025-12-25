@@ -1,6 +1,6 @@
 {meta: title Make Me Wonderful In Her Eyes}
 {meta: artist Jim Reeves}
-{meta: writer Leona R. Butrum, Nellie Smith, Jim Reeves}
+{meta: composer Leona R. Butrum, Nellie Smith, Jim Reeves}
 
 {start_of_verse: Verse 1}
 [C]As I lay me [G7]down to sleep

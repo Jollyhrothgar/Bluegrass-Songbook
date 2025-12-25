@@ -1,6 +1,6 @@
 {meta: title Back To Back}
 {meta: artist Tracy Lawrence}
-{meta: writer Elbert West and Tracy Lawrence}
+{meta: composer Elbert West and Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [C]It's a crying shame what [F]fools we have [C]been

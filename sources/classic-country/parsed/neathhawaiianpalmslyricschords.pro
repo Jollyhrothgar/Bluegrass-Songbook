@@ -1,6 +1,6 @@
 {meta: title Neath Hawaiian Palms}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills and Cecil Campbell}
+{meta: composer Bob Wills and Cecil Campbell}
 
 {start_of_verse: Verse 1}
 [G]Beneath Hawaiian palms inside the gloom my love is true  

@@ -1,6 +1,6 @@
 {meta: title Love Comes From The Other Side Of Town}
 {meta: artist George Strait}
-{meta: writer Fred Freiling}
+{meta: composer Fred Freiling}
 
 {start_of_verse: Verse 1}
 [G]When things get bad at [C]home you don't [G]feel like bein' alone

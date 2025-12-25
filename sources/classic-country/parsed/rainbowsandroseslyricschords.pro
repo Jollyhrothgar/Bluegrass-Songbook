@@ -1,6 +1,6 @@
 {meta: title Rainbows And Roses}
 {meta: artist Roy Drusky}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [C]A rainbow always shows up [G7]when a storm is through

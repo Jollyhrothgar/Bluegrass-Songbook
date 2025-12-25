@@ -1,6 +1,6 @@
 {meta: title The Girl With Gardenias In Her Hair}
 {meta: artist Marty Robbins}
-{meta: writer Bob Tubert and Joy Byers}
+{meta: composer Bob Tubert and Joy Byers}
 
 {start_of_verse: Verse 1}
 [Am]One starry night in a little town in [E7]old Mexico

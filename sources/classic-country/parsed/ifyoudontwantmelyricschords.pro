@@ -1,6 +1,6 @@
 {meta: title If You Don't Want Me}
 {meta: artist Patty Loveless}
-{meta: writer Emory Gordy and Monte Warden}
+{meta: composer Emory Gordy and Monte Warden}
 
 {start_of_verse: Verse 1}
 [C]Never really felt like I be[Am]longed 

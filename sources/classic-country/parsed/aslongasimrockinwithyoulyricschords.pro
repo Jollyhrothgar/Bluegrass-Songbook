@@ -1,6 +1,6 @@
 {meta: title As Long As I'm Rockin' With You}
 {meta: artist John Conlee}
-{meta: writer Bruce Channel and Kieran Kan}
+{meta: composer Bruce Channel and Kieran Kan}
 
 {start_of_verse: Verse 1}
 [G]Wherever I'm going wherever I'm staying it doesn't matter 

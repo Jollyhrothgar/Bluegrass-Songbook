@@ -1,6 +1,6 @@
 {meta: title Somebody Touched Me}
 {meta: artist The Stanley Brothers}
-{meta: writer Leon Bowles and Tim Frye}
+{meta: composer Leon Bowles and Tim Frye}
 
 {start_of_verse: Verse 1}
 [G]While I was praying (somebody touched me)

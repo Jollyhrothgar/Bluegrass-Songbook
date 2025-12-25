@@ -1,6 +1,6 @@
 {meta: title It's The World Gone Crazy}
 {meta: artist Glen Campbell}
-{meta: writer Waylon Jennings and Shel Silverstein}
+{meta: composer Waylon Jennings and Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]It's the world's gone crazy cotillion

@@ -1,6 +1,6 @@
 {meta: title Come Kiss Me Love}
 {meta: artist Bobby Bare}
-{meta: writer Ian Campbell}
+{meta: composer Ian Campbell}
 
 {start_of_verse: Verse 1}
 [C]Come [G7]kiss me [C]love [F]before you [C]leave [G7]me

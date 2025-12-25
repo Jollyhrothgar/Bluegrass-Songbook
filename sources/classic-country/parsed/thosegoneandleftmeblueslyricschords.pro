@@ -1,6 +1,6 @@
 {meta: title Those Gone And Left Me Blues}
 {meta: artist Cowboy Copas}
-{meta: writer Johnny Bond and Jimmy Wakely}
+{meta: composer Johnny Bond and Jimmy Wakely}
 
 {start_of_verse: Verse 1}
 [G]My weary heart for you is [C]crying

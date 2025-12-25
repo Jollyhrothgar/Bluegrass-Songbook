@@ -1,6 +1,6 @@
 {meta: title Try Again}
 {meta: artist Patsy Cline}
-{meta: writer Chris Bell, Alex Chilton, Jerry Le Fors and Bob Summers}
+{meta: composer Chris Bell, Alex Chilton, Jerry Le Fors and Bob Summers}
 
 {start_of_verse: Verse 1}
 [G]Try [D7]again don't feel blue  try [C]again

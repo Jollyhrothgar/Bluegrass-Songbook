@@ -1,6 +1,6 @@
 {meta: title After All}
 {meta: artist Patty Loveless}
-{meta: writer Jimbeau Hinson and Harry Stinson}
+{meta: composer Jimbeau Hinson and Harry Stinson}
 
 {start_of_verse: Verse 1}
 [Em]Now she knows [G]all a[A7]bout me

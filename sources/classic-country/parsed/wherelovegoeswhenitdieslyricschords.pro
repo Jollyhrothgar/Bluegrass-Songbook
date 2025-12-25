@@ -1,6 +1,6 @@
 {meta: title Where Love Goes When It Dies}
 {meta: artist Ronnie Milsap}
-{meta: writer Dale Tallman}
+{meta: composer Dale Tallman}
 
 {start_of_verse: Verse 1}
 [G7]She only [C]wanted the love [F]that she never [C]had

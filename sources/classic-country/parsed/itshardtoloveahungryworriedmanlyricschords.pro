@@ -1,6 +1,6 @@
 {meta: title It's Hard To Love A Hungry Worried Man}
 {meta: artist Billy Crash Craddock}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [C]There'll be new dresses that you wear now

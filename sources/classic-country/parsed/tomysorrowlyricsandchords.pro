@@ -1,6 +1,6 @@
 {meta: title To My Sorrow}
 {meta: artist Nat Stuckey}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 ([G]To my sorrow [D7]you're in my [G]heart)[C]  [G]  [D7]

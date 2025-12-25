@@ -1,6 +1,6 @@
 {meta: title Speed Of A Fool}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone and Paul Nelson}
+{meta: composer Larry Boone and Paul Nelson}
 
 {start_of_verse: Verse 1}
 [C]Couldn't tell me nothing had to [F]learn it on my own

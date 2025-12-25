@@ -1,6 +1,6 @@
 {meta: title Christmas At The Jersey Lilly Lounge}
 {meta: artist Moe Bandy}
-{meta: writer Charlie Williams and Theresa Beaty}
+{meta: composer Charlie Williams and Theresa Beaty}
 
 {start_of_verse: Verse 1}
 [C]Not too many people sittin’ at the bar [D7]today

@@ -1,6 +1,6 @@
 {meta: title Good As Gone}
 {meta: artist Tony Booth}
-{meta: writer Dennis Knutson and Jim Shaw}
+{meta: composer Dennis Knutson and Jim Shaw}
 
 {start_of_verse: Verse 1}
 Good As Gone

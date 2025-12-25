@@ -1,6 +1,6 @@
 {meta: title Wichita Lineman}
 {meta: artist Glen Campbell}
-{meta: writer Jimmy Webb}
+{meta: composer Jimmy Webb}
 
 {start_of_verse: Verse 1}
 [G7]I am a lineman for the [F]county

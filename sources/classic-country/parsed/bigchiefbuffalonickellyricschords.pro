@@ -1,6 +1,6 @@
 {meta: title Big Chief Buffalo Nickel}
 {meta: artist Ricky Nelson}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]A way out on the wind swept desert where nature favors no [G7]man

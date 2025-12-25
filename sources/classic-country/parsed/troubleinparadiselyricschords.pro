@@ -1,6 +1,6 @@
 {meta: title Trouble In Paradise}
 {meta: artist Conway Twitty}
-{meta: writer Kenny O'Dell}
+{meta: composer Kenny O'Dell}
 
 {start_of_verse: Verse 1}
 [C]There's trouble in paradise

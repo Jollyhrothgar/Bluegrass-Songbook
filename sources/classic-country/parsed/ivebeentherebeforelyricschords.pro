@@ -1,6 +1,6 @@
 {meta: title I've Been There Before}
 {meta: artist Ray Price}
-{meta: writer Bobby Gosh and T.H. Kidd}
+{meta: composer Bobby Gosh and T.H. Kidd}
 
 {start_of_verse: Verse 1}
 [G]Yes I [C]know [G]her very [C]well

@@ -1,6 +1,6 @@
 {meta: title Temporarily Yours}
 {meta: artist Jeanne Pruett}
-{meta: writer Bobby Fischer, James F. Throckmorton, Jimmy Work}
+{meta: composer Bobby Fischer, James F. Throckmorton, Jimmy Work}
 
 {start_of_verse: Verse 1}
 [C]Temporarily you[F]rs love for the [C]moment

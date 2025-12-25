@@ -1,6 +1,6 @@
 {meta: title Rambling Man}
 {meta: artist Norma Jean}
-{meta: writer Johnny Cash}
+{meta: composer Johnny Cash}
 
 {start_of_verse: Verse 1}
 [G]I love my rambling man

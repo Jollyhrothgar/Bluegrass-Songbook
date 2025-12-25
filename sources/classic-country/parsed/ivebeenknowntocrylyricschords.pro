@@ -1,6 +1,6 @@
 {meta: title I've Been Known To Cry}
 {meta: artist George Jones}
-{meta: writer Eddie Hallowell}
+{meta: composer Eddie Hallowell}
 
 {start_of_verse: Verse 1}
 [C]Oh I've been [F]known to cry for kisses that you [C]gave me

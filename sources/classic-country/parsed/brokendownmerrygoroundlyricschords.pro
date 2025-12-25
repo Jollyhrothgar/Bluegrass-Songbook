@@ -1,6 +1,6 @@
 {meta: title Broken Down Merry Go Round}
 {meta: artist Jimmy Wakely}
-{meta: writer Arthur Herbert and Fred Stryker}
+{meta: composer Arthur Herbert and Fred Stryker}
 
 {start_of_verse: Verse 1}
 [C]You said that you loved me

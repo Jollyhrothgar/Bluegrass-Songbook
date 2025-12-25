@@ -1,6 +1,6 @@
 {meta: title Little White Washed Chimney}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Bill Clifton}
+{meta: composer Bill Clifton}
 
 {start_of_verse: Verse 1}
 [C]Where the Mississippi flowing by the [F]sunny southern shores

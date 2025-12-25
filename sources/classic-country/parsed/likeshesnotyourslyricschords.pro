@@ -1,6 +1,6 @@
 {meta: title Like She's Not Yours}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]You're love's not burning with that [G7]same old glow

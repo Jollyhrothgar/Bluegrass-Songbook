@@ -1,6 +1,6 @@
 {meta: title What About You}
 {meta: artist Kitty Wells}
-{meta: writer Johnny Wright and Jack Anglin}
+{meta: composer Johnny Wright and Jack Anglin}
 
 {start_of_verse: Verse 1}
 [C]The days have been long [F]and I have been [C]lonesome

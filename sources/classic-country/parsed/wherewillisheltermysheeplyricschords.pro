@@ -1,6 +1,6 @@
 {meta: title Where Will I Shelter My Sheep}
 {meta: artist Lester Flatt}
-{meta: writer Irene Stier and Joe Grieshop}
+{meta: composer Irene Stier and Joe Grieshop}
 
 {start_of_verse: Verse 1}
 [G]Where will I shelter my [C]sheep to[G]night

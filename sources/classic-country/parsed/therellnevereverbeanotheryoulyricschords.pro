@@ -1,6 +1,6 @@
 {meta: title There Will Never Ever Be Another You}
 {meta: artist Connie Smith}
-{meta: writer Jimmy Holder}
+{meta: composer Jimmy Holder}
 
 {start_of_verse: Verse 1}
 [C]There’ll always be [C7]another tear 

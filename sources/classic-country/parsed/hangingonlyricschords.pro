@@ -1,6 +1,6 @@
 {meta: title Hanging On}
 {meta: artist Jean Shepard}
-{meta: writer Ira Allen and Buddy Mize}
+{meta: composer Ira Allen and Buddy Mize}
 
 {start_of_verse: Verse 1}
 [G]It's true you have me twisted around your [C]finger

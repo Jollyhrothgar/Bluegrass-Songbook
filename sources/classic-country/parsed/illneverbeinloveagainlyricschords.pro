@@ -1,6 +1,6 @@
 {meta: title I'll Never Be In Love Again}
 {meta: artist Don Williams}
-{meta: writer Bob Corbin}
+{meta: composer Bob Corbin}
 
 {start_of_verse: Verse 1}
 [G]You can write your own ticket now

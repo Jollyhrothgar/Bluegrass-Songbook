@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Sleep With One Eye Open}
 {meta: artist Dolly Parton}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]I just found out today the little game you play 

@@ -1,6 +1,6 @@
 {meta: title Georgia Waltz}
 {meta: artist Mac Wiseman}
-{meta: writer George Krise}
+{meta: composer George Krise}
 
 {start_of_verse: Verse 1}
 [C]The moon shown [G7]down in [C]Georgia

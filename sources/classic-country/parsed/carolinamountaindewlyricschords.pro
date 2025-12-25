@@ -1,6 +1,6 @@
 {meta: title Carolina Mountain Dew}
 {meta: artist Alabama}
-{meta: writer Randy Owen}
+{meta: composer Randy Owen}
 
 {start_of_verse: Verse 1}
 [G]Somewhere in the mountains in [C]northern [G]Alabama

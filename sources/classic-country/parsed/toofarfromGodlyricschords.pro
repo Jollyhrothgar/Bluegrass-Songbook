@@ -1,6 +1,6 @@
 {meta: title Too Far From God}
 {meta: artist Kitty Wells}
-{meta: writer Johnny Wright, Jack Anglin, Clyde Baum}
+{meta: composer Johnny Wright, Jack Anglin, Clyde Baum}
 
 {start_of_verse: Verse 1}
 [C]Do you live from [F]day to [C]day 

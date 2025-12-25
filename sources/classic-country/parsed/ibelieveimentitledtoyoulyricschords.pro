@@ -1,6 +1,6 @@
 {meta: title I Believe I’m Entitled To You}
 {meta: artist Ernest Tubb}
-{meta: writer Mel Foree, Cliff Carlisle, Chester Rice}
+{meta: composer Mel Foree, Cliff Carlisle, Chester Rice}
 
 {start_of_verse: Verse 1}
 [G]Through the years I've prepared feeling [C]sure that you [G]cared

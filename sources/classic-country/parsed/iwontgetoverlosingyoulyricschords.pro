@@ -1,6 +1,6 @@
 {meta: title I Won't Get Over Losing You}
 {meta: artist Ray Price}
-{meta: writer Cam Mullins}
+{meta: composer Cam Mullins}
 
 {start_of_verse: Verse 1}
 [C]Each day my mind begins to [G7]hurt a little [C]more[G7]

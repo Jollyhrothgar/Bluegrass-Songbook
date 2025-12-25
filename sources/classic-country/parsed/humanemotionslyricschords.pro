@@ -1,6 +1,6 @@
 {meta: title Human Emotions}
 {meta: artist David Allan Coe}
-{meta: writer and recorded by David Allan Coe}
+{meta: composer and recorded by David Allan Coe}
 
 {start_of_verse: Verse 1}
 [C]Lone[F]some crying heartaches that's human [C]emotions

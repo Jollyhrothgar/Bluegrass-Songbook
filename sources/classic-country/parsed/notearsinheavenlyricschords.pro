@@ -1,6 +1,6 @@
 {meta: title No Tears In Heaven}
 {meta: artist Skeeter Davis}
-{meta: writer Robert S. Arnold}
+{meta: composer Robert S. Arnold}
 
 {start_of_verse: Verse 1}
 [C]No tears in heaven no sorrows given

@@ -1,6 +1,6 @@
 {meta: title A Whole Lot Of You}
 {meta: artist Ray Price}
-{meta: writer Ray Holt}
+{meta: composer Ray Holt}
 
 {start_of_verse: Verse 1}
 [C]There's a whole lot of you still left [F]in my [C]heart

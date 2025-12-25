@@ -1,6 +1,6 @@
 {meta: title Talk To Me Lonesome Heart}
 {meta: artist George Jones}
-{meta: writer James O`Gwynn}
+{meta: composer James O`Gwynn}
 
 {start_of_verse: Verse 1}
 [C]Talk to me oh lonesome heart help me through this lonely [F]night

@@ -1,6 +1,6 @@
 {meta: title The King Of Oak Street}
 {meta: artist Kenny Rogers}
-{meta: writer Alex Harvey}
+{meta: composer Alex Harvey}
 
 {start_of_verse: Verse 1}
 [C]Like a leaf caught in [F]the wind he drifted a [C]while

@@ -1,6 +1,6 @@
 {meta: title We Could}
 {meta: artist Charlie Pride}
-{meta: writer Felice Bryant}
+{meta: composer Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]If anyone could find the [C7]joy

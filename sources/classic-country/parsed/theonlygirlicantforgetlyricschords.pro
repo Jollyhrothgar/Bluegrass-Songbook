@@ -1,6 +1,6 @@
 {meta: title The Only Girl I Can’t Forget}
 {meta: artist Carl Smith}
-{meta: writer Del & Ellen Reeves}
+{meta: composer Del & Ellen Reeves}
 
 {start_of_verse: Verse 1}
 [G]Oh I saw her yesterday just [C]for a little [G]while 

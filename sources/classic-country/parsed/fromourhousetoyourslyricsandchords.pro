@@ -1,6 +1,6 @@
 {meta: title From Our House To Yours}
 {meta: artist Barbara Mandrell}
-{meta: writer Lisa Angelle and John Schweers}
+{meta: composer Lisa Angelle and John Schweers}
 
 {start_of_verse: Verse 1}
 [G]A Christmas [Em]tree  [G]with lights turned [Em]low

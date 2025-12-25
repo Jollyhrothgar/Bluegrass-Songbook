@@ -1,6 +1,6 @@
 {meta: title How Much More Can She Stand}
 {meta: artist Conway Twitty}
-{meta: writer Harry Compton}
+{meta: composer Harry Compton}
 
 {start_of_verse: Verse 1}
 [G]There’s a [D7]devil in my [G]body that I just can’t satis[D7]fy 

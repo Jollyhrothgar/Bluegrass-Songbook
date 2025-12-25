@@ -1,6 +1,6 @@
 {meta: title You're Nobody Till Somebody Loves You}
 {meta: artist Jimmy Dean}
-{meta: writer Russ Morgan, James Cavanaugh, Larry Stock}
+{meta: composer Russ Morgan, James Cavanaugh, Larry Stock}
 
 {start_of_verse: Verse 1}
 [C]You're nobody till [E7]somebody loves [A7]you

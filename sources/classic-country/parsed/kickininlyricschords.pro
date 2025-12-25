@@ -1,6 +1,6 @@
 {meta: title Kickin' In}
 {meta: artist Buck Owens}
-{meta: writer Roger Allan Murrah and Keith Stegall}
+{meta: composer Roger Allan Murrah and Keith Stegall}
 
 {start_of_verse: Verse 1}
 [C]There goes her [G7]memory kickin' in

@@ -1,6 +1,6 @@
 {meta: title Yours And His}
 {meta: artist Hank Williams Jr.}
-{meta: writer Danny Overby}
+{meta: composer Danny Overby}
 
 {start_of_verse: Verse 1}
 [C]The hour is late and so I try to [C7]walk in [F]silence

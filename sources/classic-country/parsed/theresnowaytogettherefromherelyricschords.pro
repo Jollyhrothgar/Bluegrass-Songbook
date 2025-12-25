@@ -1,6 +1,6 @@
 {meta: title There's No Way To Get There From Here}
 {meta: artist Sonny James}
-{meta: writer Carole Smith and Sonny James}
+{meta: composer Carole Smith and Sonny James}
 
 {start_of_verse: Verse 1}
 [G]Lips that once were thrilling [C]that once were [G]paradise

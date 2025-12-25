@@ -1,6 +1,6 @@
 {meta: title An Old Love Affair Now Showing}
 {meta: artist Leroy Van Dyke}
-{meta: writer David Ingles}
+{meta: composer David Ingles}
 
 {start_of_verse: Verse 1}
 [G]An old love affair now [Am]showing

@@ -1,6 +1,6 @@
 {meta: title Sunday String Band}
 {meta: artist Mel Tillis}
-{meta: writer Ken McDuffie}
+{meta: composer Ken McDuffie}
 
 {start_of_verse: Verse 1}
 [C]The sun found me walking the [F]city this [C]morning

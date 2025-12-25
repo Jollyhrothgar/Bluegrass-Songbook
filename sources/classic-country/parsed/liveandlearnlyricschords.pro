@@ -1,6 +1,6 @@
 {meta: title Live And Learn}
 {meta: artist Ricky Nelson}
-{meta: writer Clyde Pitts}
+{meta: composer Clyde Pitts}
 
 {start_of_verse: Verse 1}
 [G]Your baby said goodbye like I knew she would

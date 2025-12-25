@@ -1,6 +1,6 @@
 {meta: title Don’t Fight The Feelings Of Love}
 {meta: artist Charley Pride}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [G]Don'tcha don'tcha don'tcha fight the feelings of [D7]love

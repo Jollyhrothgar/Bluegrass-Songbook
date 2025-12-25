@@ -1,6 +1,6 @@
 {meta: title I Just Want To Thanks You Lord}
 {meta: artist Larry Sparks}
-{meta: writer Judy Marshall}
+{meta: composer Judy Marshall}
 
 {start_of_verse: Verse 1}
 [C]I just want to thank you Lord for every [F]time you heard me [Dm]pray

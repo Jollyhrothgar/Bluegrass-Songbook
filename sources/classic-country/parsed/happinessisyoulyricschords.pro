@@ -1,6 +1,6 @@
 {meta: title Happiness Is You}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash and June Carter Cash}
+{meta: composer Johnny Cash and June Carter Cash}
 
 {start_of_verse: Verse 1}
 [C]Way down the mountain I chased a moonbeam 

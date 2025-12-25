@@ -1,6 +1,6 @@
 {meta: title Too Deep For Tears}
 {meta: artist Crystal Gayle}
-{meta: writer Richard Leigh}
+{meta: composer Richard Leigh}
 
 {start_of_verse: Verse 1}
 [D7]Now ever [G]since you went away I've overheard some people say

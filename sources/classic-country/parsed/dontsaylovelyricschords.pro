@@ -1,6 +1,6 @@
 {meta: title Don't Say Love}
 {meta: artist Connie Smith}
-{meta: writer Jim Glaser and Jimmy Payne}
+{meta: composer Jim Glaser and Jimmy Payne}
 
 {start_of_verse: Verse 1}
 [C]Don't say love if you don't mean what you say

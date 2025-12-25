@@ -1,6 +1,6 @@
 {meta: title You've Got A Loving Coming}
 {meta: artist Moe Bandy}
-{meta: writer Roger Bowling}
+{meta: composer Roger Bowling}
 
 {start_of_verse: Verse 1}
 [C]Darling I finally got myself together

@@ -1,6 +1,6 @@
 {meta: title You Can't Housebreak A Tom Cat}
 {meta: artist Cal Smith}
-{meta: writer Gary Stewart}
+{meta: composer Gary Stewart}
 
 {start_of_verse: Verse 1}
 [G]Baby you tried chaining me down from getting my kicks

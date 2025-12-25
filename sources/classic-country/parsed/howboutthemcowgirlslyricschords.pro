@@ -1,6 +1,6 @@
 {meta: title How Bout Them Cowgirls}
 {meta: artist George Strait}
-{meta: writer Casey Beathard and Ed Hill}
+{meta: composer Casey Beathard and Ed Hill}
 
 {start_of_verse: Verse 1}
 [C]I felt the rush of the Rio Grande into Yellowstone

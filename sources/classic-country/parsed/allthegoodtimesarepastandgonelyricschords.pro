@@ -1,6 +1,6 @@
 {meta: title All The Good Times Are Past And Gone}
 {meta: artist Ralph Stanley}
-{meta: writer Jerry Walter}
+{meta: composer Jerry Walter}
 
 {start_of_verse: Verse 1}
 [G]See that east bound [C]passenger [G]train

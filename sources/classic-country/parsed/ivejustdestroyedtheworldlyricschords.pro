@@ -1,6 +1,6 @@
 {meta: title I've Just Destroyed The World}
 {meta: artist Ray Price}
-{meta: writer Willie Nelson and Ray Price}
+{meta: composer Willie Nelson and Ray Price}
 
 {start_of_verse: Verse 1}
 [C]The Sun just went behind a cloud

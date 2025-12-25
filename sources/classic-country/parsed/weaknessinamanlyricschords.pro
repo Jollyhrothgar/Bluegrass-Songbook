@@ -1,6 +1,6 @@
 {meta: title Weakness In A Man}
 {meta: artist Roy Drusky}
-{meta: writer Jerry A Chesnut}
+{meta: composer Jerry A Chesnut}
 
 {start_of_verse: Verse 1}
 [G]Honey how you've changed it makes me wonder

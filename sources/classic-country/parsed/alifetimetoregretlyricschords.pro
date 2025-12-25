@@ -1,6 +1,6 @@
 {meta: title A Lifetime To Regret}
 {meta: artist George Jones}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm all alone and broken [F]hearted

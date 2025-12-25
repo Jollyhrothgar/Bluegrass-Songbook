@@ -1,6 +1,6 @@
 {meta: title Clear Across America Tonight}
 {meta: artist Alabama}
-{meta: writer Randy Owen, Teddy Gentry, Greg Fowler}
+{meta: composer Randy Owen, Teddy Gentry, Greg Fowler}
 
 {start_of_verse: Verse 1}
 [D7]Just outside of Austin I [C]turned on my radio

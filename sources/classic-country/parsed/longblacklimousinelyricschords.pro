@@ -1,6 +1,6 @@
 {meta: title Long Black Limousine}
 {meta: artist Merle Haggard}
-{meta: writer Bobby George and Vern Stovall}
+{meta: composer Bobby George and Vern Stovall}
 
 {start_of_verse: Verse 1}
 [G]There's a long line of mourners [C]headed down our [G]street

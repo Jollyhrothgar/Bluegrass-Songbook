@@ -1,6 +1,6 @@
 {meta: title Hanging In}
 {meta: artist Tanya Tucker}
-{meta: writer Steve Bogard and Rick Giles}
+{meta: composer Steve Bogard and Rick Giles}
 
 {start_of_verse: Verse 1}
 [Em]You said goodbye on Tuesday

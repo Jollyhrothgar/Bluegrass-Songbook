@@ -1,6 +1,6 @@
 {meta: title Backtrack}
 {meta: artist Faron Young}
-{meta: writer Alex Zanetis and Faron Young}
+{meta: composer Alex Zanetis and Faron Young}
 
 {start_of_verse: Verse 1}
 [C]Well I've never been so [G7]lonely and I've never been so [C]blue

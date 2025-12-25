@@ -1,6 +1,6 @@
 {meta: title Merry Texas Christmas You All}
 {meta: artist Gene Autry}
-{meta: writer Leon Harris and Bob Miller}
+{meta: composer Leon Harris and Bob Miller}
 
 {start_of_verse: Verse 1}
 [C]We have no jingle [G7]bells or sleigh

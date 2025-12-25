@@ -1,6 +1,6 @@
 {meta: title Playboy}
 {meta: artist Buck Owens}
-{meta: writer Eddie Miller and Bob Morris}
+{meta: composer Eddie Miller and Bob Morris}
 
 {start_of_verse: Verse 1}
 [C]They call me a [F]playboy well I'm making my [C]rounds

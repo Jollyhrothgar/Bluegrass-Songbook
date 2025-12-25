@@ -1,6 +1,6 @@
 {meta: title That's All She Wrote}
 {meta: artist Ricky Nelson}
-{meta: writer Keith Colley and Nance Mantz}
+{meta: composer Keith Colley and Nance Mantz}
 
 {start_of_verse: Verse 1}
 [C]Hello Mr. [Am]mailman [F]thank you for the [G7]letter

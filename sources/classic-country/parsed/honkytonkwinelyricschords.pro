@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Wine}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [C]Sweet honky tonk wine [G7]keeps me out of my [C]mind

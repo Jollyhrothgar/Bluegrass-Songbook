@@ -1,6 +1,6 @@
 {meta: title Blue Moon of Kentucky}
 {meta: artist Patsy Cline}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [C]Blue moon of Kentucky keep on [F]shining

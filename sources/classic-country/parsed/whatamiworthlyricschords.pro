@@ -1,6 +1,6 @@
 {meta: title What Am I Worth}
 {meta: artist George Jones}
-{meta: writer George Jones and Darrell Edwards}
+{meta: composer George Jones and Darrell Edwards}
 
 {start_of_verse: Verse 1}
 [G]I know momma loved me I reckoned that [C]dad

@@ -1,6 +1,6 @@
 {meta: title Hurt Lyrics chords}
 {meta: artist Marty Robbins}
-{meta: writer Jamie Crane and Al Jacobs}
+{meta: composer Jamie Crane and Al Jacobs}
 
 {start_of_verse: Verse 1}
 [G7]I'm  [C]hurt to think that you [Em]lied to me 

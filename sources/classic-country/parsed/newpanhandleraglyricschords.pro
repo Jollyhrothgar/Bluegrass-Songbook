@@ -1,6 +1,6 @@
 {meta: title New Panhandle Rag Lyrics Chords}
 {meta: artist Webb Pierce}
-{meta: writer Leon McAuliffe and Webb Pierce}
+{meta: composer Leon McAuliffe and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]I was rambling through  a [F]Texas border [C]town

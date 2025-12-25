@@ -1,6 +1,6 @@
 {meta: title Oh What A Time To Be Me}
 {meta: artist Randy Travis}
-{meta: writer Don Schlitz and Randy Travis}
+{meta: composer Don Schlitz and Randy Travis}
 
 {start_of_verse: Verse 1}
 [G7]I'm [C]sorry you're [G7]feeling so [A7]lonely I [D7]know how hard it can [G7]be

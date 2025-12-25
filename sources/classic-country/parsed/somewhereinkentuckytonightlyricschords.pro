@@ -1,6 +1,6 @@
 {meta: title Somewhere In Kentucky Tonight}
 {meta: artist Tom T. Hall}
-{meta: writer Tom T. Hall and Dixie Hall}
+{meta: composer Tom T. Hall and Dixie Hall}
 
 {start_of_verse: Verse 1}
 [C]Somewhere in Kentucky there's [F]a weather-beaten house

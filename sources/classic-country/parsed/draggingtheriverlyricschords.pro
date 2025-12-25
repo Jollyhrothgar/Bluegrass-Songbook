@@ -1,6 +1,6 @@
 {meta: title Dragging The River}
 {meta: artist Ferlin Husky}
-{meta: writer Vic McAlpine}
+{meta: composer Vic McAlpine}
 
 {start_of_verse: Verse 1}
 [C]Well I’m just a post of which you [F]lean

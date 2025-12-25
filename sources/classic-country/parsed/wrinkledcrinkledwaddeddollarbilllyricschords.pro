@@ -1,6 +1,6 @@
 {meta: title Wrinkled Crinkled Wadded Dollar Bill}
 {meta: artist Johnny Cash}
-{meta: writer Vincent Matthews}
+{meta: composer Vincent Matthews}
 
 {start_of_verse: Verse 1}
 [G]I've got a lot of [C]blues on my [G]mind 

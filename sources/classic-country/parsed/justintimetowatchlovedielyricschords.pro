@@ -1,6 +1,6 @@
 {meta: title Just In Time (To Watch Love Die)}
 {meta: artist David Allan Coe}
-{meta: writer David A. Coe and Jimmy Townsend}
+{meta: composer David A. Coe and Jimmy Townsend}
 
 {start_of_verse: Verse 1}
 [C]There's a stack of daily papers at her doorstep

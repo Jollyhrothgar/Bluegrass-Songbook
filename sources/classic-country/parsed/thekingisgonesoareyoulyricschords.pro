@@ -1,6 +1,6 @@
 {meta: title The King Is Gone So Are You}
 {meta: artist George Jones}
-{meta: writer Roger Ferris}
+{meta: composer Roger Ferris}
 
 {start_of_verse: Verse 1}
 [G]Last night I broke the seal on a Jim Beam decanter that looks like [D7]Elvis

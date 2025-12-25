@@ -1,6 +1,6 @@
 {meta: title Take My Breath Away}
 {meta: artist Margo Smith}
-{meta: writer Norro Wilson and Margo Smith}
+{meta: composer Norro Wilson and Margo Smith}
 
 {start_of_verse: Verse 1}
 [C]I've been waitin' waitin' so [C7]long

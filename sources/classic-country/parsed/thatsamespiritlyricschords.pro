@@ -1,6 +1,6 @@
 {meta: title That Same Spirit}
 {meta: artist The New Coon Creek Girls}
-{meta: writer Mike Payne}
+{meta: composer Mike Payne}
 
 {start_of_verse: Verse 1}
 [C]Jesus said it is expedient 

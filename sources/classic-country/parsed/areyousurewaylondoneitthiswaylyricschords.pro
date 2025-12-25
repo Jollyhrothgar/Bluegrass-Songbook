@@ -1,6 +1,6 @@
 {meta: title Are You Sure Waylon Done It This Way}
 {meta: artist Clint Black}
-{meta: writer Waylon Jennings}
+{meta: composer Waylon Jennings}
 
 {start_of_verse: Verse 1}
 [C]Lord it's the [G7]same old thing [C]fiddle and guitar 

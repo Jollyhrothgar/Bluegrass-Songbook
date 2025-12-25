@@ -1,6 +1,6 @@
 {meta: title Poor Little Rich Boy}
 {meta: artist George Jones}
-{meta: writer Don Carter}
+{meta: composer Don Carter}
 
 {start_of_verse: Verse 1}
 ([C]Poor little rich boy poor little rich boy)

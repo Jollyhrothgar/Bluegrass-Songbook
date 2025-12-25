@@ -1,6 +1,6 @@
 {meta: title All That I Am}
 {meta: artist Elvis Presley}
-{meta: writer Sid Tepper and Roy C. Bennett}
+{meta: composer Sid Tepper and Roy C. Bennett}
 
 {start_of_verse: Verse 1}
 [C]All that I [Gm]am or ever hope to [F]be

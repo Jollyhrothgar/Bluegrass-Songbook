@@ -1,6 +1,6 @@
 {meta: title Playin' Around With Love}
 {meta: artist Barbara Mandrell}
-{meta: writer Billy Sherrill}
+{meta: composer Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [C]Not too long [F]ago you said to [C]me 

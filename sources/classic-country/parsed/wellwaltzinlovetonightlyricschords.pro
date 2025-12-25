@@ -1,6 +1,6 @@
 {meta: title We'll Waltz In Love Tonight}
 {meta: artist Reba McEntire}
-{meta: writer Bob Morrison, Johnny McRae, Tom Davey}
+{meta: composer Bob Morrison, Johnny McRae, Tom Davey}
 
 {start_of_verse: Verse 1}
 [C]I saw you [G7]softly [F]smiling and the [Dm]band [G7]began to [C]play [G7]

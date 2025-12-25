@@ -1,6 +1,6 @@
 {meta: title Long Legged Guitar Picking Man}
 {meta: artist Johnny Cash}
-{meta: writer Marshall Grant}
+{meta: composer Marshall Grant}
 
 {start_of_verse: Verse 1}
 [G]Well I'm gonna start out walkin' just you wait and see

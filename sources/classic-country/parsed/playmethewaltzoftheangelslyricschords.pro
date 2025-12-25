@@ -1,6 +1,6 @@
 {meta: title Play Me The Waltz Of The Angels}
 {meta: artist The Derailers}
-{meta: writer Dennis Knutson and Rory Lee Feek}
+{meta: composer Dennis Knutson and Rory Lee Feek}
 
 {start_of_verse: Verse 1}
 [C]Played a party last [G7]night for some [C]old folks

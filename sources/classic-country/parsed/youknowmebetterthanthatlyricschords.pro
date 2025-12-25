@@ -1,6 +1,6 @@
 {meta: title You Know Me Better Than That}
 {meta: artist George Strait}
-{meta: writer Tony Haselden and Anna Graham}
+{meta: composer Tony Haselden and Anna Graham}
 
 {start_of_verse: Verse 1}
 [C]Baby since you left me there's [F]somebody [G7]new

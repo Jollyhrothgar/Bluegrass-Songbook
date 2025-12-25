@@ -1,6 +1,6 @@
 {meta: title I Done Done It}
 {meta: artist Wynn Stewart}
-{meta: writer Billy Barton}
+{meta: composer Billy Barton}
 
 {start_of_verse: Verse 1}
 [G]I done [C]done it  I done [G]done it  I done done [C]it

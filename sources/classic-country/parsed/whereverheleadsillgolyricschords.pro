@@ -1,6 +1,6 @@
 {meta: title Wherever He Leads I'll Go}
 {meta: artist Alan Jackson}
-{meta: writer Lloyd Cowboy Copas}
+{meta: composer Lloyd Cowboy Copas}
 
 {start_of_verse: Verse 1}
 [C]Take up thy [G7]cross and [C]follow [F]Me

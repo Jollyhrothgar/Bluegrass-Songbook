@@ -1,6 +1,6 @@
 {meta: title One Rose (Is All It Takes To Say I Love You)}
 {meta: artist George Morgan}
-{meta: writer Hugh X. Lewis}
+{meta: composer Hugh X. Lewis}
 
 {start_of_verse: Verse 1}
 [C]One rose is all it takes to say I [G]love you

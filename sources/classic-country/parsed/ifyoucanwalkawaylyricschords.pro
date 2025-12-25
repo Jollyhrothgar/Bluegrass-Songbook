@@ -1,6 +1,6 @@
 {meta: title If You Can Walk Away}
 {meta: artist Jean Shepard}
-{meta: writer Gertrude Cox and Jack Rhodes}
+{meta: composer Gertrude Cox and Jack Rhodes}
 
 {start_of_verse: Verse 1}
 [C]If you can walk away from me and [F]all my love for [C]you

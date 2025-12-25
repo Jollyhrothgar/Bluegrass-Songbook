@@ -1,6 +1,6 @@
 {meta: title We Could Have Been}
 {meta: artist Vince Gill}
-{meta: writer Don Cook and John Jarvis}
+{meta: composer Don Cook and John Jarvis}
 
 {start_of_verse: Verse 1}
 [C]Today at [F]work I [G7]overheard a [C]name

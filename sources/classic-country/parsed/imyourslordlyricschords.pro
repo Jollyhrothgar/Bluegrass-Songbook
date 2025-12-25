@@ -1,6 +1,6 @@
 {meta: title I'm Yours Lord}
 {meta: artist Barbara Mandrell}
-{meta: writer Gary Chapman}
+{meta: composer Gary Chapman}
 
 {start_of_verse: Verse 1}
 [C]I'm yours Lord [F]everything I've [C]got

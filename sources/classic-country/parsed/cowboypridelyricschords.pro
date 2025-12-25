@@ -1,6 +1,6 @@
 {meta: title Cowboy Pride}
 {meta: artist Michael Martin Murphey}
-{meta: writer Ian Tyson}
+{meta: composer Ian Tyson}
 
 {start_of_verse: Verse 1}
 [G]Friend I'm writing you this [C]letter

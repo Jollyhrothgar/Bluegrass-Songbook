@@ -1,6 +1,6 @@
 {meta: title Forever Yours}
 {meta: artist Buck Owens}
-{meta: writer Kent Westberry and Eddie Burton}
+{meta: composer Kent Westberry and Eddie Burton}
 
 {start_of_verse: Verse 1}
 [G]Forever yours I’ll always [C]be

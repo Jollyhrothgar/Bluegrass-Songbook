@@ -1,6 +1,6 @@
 {meta: title The Bridge I'm Still Building On}
 {meta: artist Vern Gosdin}
-{meta: writer Buddy Cannon, Vern Gosdin, John Northrup}
+{meta: composer Buddy Cannon, Vern Gosdin, John Northrup}
 
 {start_of_verse: Verse 1}
 [G]Settin’ alone by the telephone [Am]wishing you would call

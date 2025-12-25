@@ -1,6 +1,6 @@
 {meta: title Timber I'm Falling In Love}
 {meta: artist Patty Loveless}
-{meta: writer Kostas Lazarides}
+{meta: composer Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [C]The right time [F]the right place 

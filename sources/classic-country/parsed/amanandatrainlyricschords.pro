@@ -1,6 +1,6 @@
 {meta: title A Man And A Train}
 {meta: artist Marty Robbins}
-{meta: writer Hal David and Frank DeVol}
+{meta: composer Hal David and Frank DeVol}
 
 {start_of_verse: Verse 1}
 [G]A man and a train a train and a man

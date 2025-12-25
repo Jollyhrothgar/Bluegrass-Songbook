@@ -1,6 +1,6 @@
 {meta: title Morning}
 {meta: artist Jim Ed Brown}
-{meta: writer Willis Graham}
+{meta: composer Willis Graham}
 
 {start_of_verse: Verse 1}
 [G]Here in this room this narrow room where life began 

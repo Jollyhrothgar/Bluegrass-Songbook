@@ -1,6 +1,6 @@
 {meta: title Hold That Thought}
 {meta: artist Gene Watson}
-{meta: writer Ray Griff and Tommy Rocco}
+{meta: composer Ray Griff and Tommy Rocco}
 
 {start_of_verse: Verse 1}
 [G]Picture this  a small cafe a table set for [C]two

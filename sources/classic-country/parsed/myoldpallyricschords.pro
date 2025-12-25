@@ -1,6 +1,6 @@
 {meta: title My Old Pal}
 {meta: artist Merle Haggard}
-{meta: writer Elsie McWilliams and Jimmie Rodgers}
+{meta: composer Elsie McWilliams and Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]I'm thinking of you tonight old [G7]pal

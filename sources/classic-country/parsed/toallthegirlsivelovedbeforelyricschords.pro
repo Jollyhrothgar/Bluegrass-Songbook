@@ -1,6 +1,6 @@
 {meta: title To All The Girls I've Loved Before}
 {meta: artist Willie Nelson}
-{meta: writer Albert Hammond and Hal David}
+{meta: composer Albert Hammond and Hal David}
 
 {start_of_verse: Verse 1}
 [C]To all the girls I've loved before

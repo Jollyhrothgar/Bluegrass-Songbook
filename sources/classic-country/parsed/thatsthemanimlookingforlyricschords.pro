@@ -1,6 +1,6 @@
 {meta: title That's The Man I'm Looking For}
 {meta: artist Roy Acuff}
-{meta: writer Dickey Lee}
+{meta: composer Dickey Lee}
 
 {start_of_verse: Verse 1}
 [G]If you see a man in sandals [C]please send Him down my [G]way

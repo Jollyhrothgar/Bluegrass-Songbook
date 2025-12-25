@@ -1,6 +1,6 @@
 {meta: title I’m Always On A Mountain When I Fall}
 {meta: artist Merle Haggard}
-{meta: writer D. Kerran and C. Howard}
+{meta: composer D. Kerran and C. Howard}
 
 {start_of_verse: Verse 1}
 [C]Most of my life I've almost been a [Dm]winner 

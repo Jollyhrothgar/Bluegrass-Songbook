@@ -1,6 +1,6 @@
 {meta: title That's How Much I Love You}
 {meta: artist Eddy Arnold}
-{meta: writer Eddy Arnold, Wally Fowler, Graydon Hall}
+{meta: composer Eddy Arnold, Wally Fowler, Graydon Hall}
 
 {start_of_verse: Verse 1}
 [C]Well if I had a nickel I know what I would do

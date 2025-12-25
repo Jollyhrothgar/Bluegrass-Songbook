@@ -1,6 +1,6 @@
 {meta: title Born Again Fool}
 {meta: artist Patty Loveless}
-{meta: writer Roger Brown}
+{meta: composer Roger Brown}
 
 {start_of_verse: Verse 1}
 [C]He sits on a [F]park bench and [C]stares into [G7]space

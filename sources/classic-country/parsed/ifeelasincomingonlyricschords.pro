@@ -1,6 +1,6 @@
 {meta: title I Feel A Sin Coming On}
 {meta: artist Gene Watson}
-{meta: writer Orville Couch and Eddie McDuff}
+{meta: composer Orville Couch and Eddie McDuff}
 
 {start_of_verse: Verse 1}
 [C]I feel a [F]sin coming [C]on

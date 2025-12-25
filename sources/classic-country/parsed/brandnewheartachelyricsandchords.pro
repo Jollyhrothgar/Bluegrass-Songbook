@@ -1,6 +1,6 @@
 {meta: title Brand New Heartache}
 {meta: artist Everly Brothers}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]A new boy came to town

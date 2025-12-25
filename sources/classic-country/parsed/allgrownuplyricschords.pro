@@ -1,6 +1,6 @@
 {meta: title All Grownup}
 {meta: artist Johnny Horton}
-{meta: writer Howard Hausey}
+{meta: composer Howard Hausey}
 
 {start_of_verse: Verse 1}
 [G]Standing at your door

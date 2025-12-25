@@ -1,6 +1,6 @@
 {meta: title We Couldn't Tell A Child}
 {meta: artist Roy Drusky}
-{meta: writer Ralph Davis and Pete Drake}
+{meta: composer Ralph Davis and Pete Drake}
 
 {start_of_verse: Verse 1}
 [C]We weren't [G7]afraid to face the world 

@@ -1,6 +1,6 @@
 {meta: title Don't Come Home A Drinkin'}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Peggy Sue Wells}
+{meta: composer Loretta Lynn and Peggy Sue Wells}
 
 {start_of_verse: Verse 1}
 [C]Well you thought I'd be waitin' up when you [G7]came home last [C]night

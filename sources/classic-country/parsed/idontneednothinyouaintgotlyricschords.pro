@@ -1,6 +1,6 @@
 {meta: title I Don't Need Nothin' You Ain't Got}
 {meta: artist Reba McEntire}
-{meta: writer Michael Heeney and David Scarlett}
+{meta: composer Michael Heeney and David Scarlett}
 
 {start_of_verse: Verse 1}
 [G]Well I don't need a caddy [C]to make me happy

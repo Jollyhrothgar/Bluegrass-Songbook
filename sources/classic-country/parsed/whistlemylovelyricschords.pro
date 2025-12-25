@@ -1,6 +1,6 @@
 {meta: title Whistle My Love}
 {meta: artist George Morgan}
-{meta: writer Eddie Pola and George Wyle}
+{meta: composer Eddie Pola and George Wyle}
 
 {start_of_verse: Verse 1}
 [C]Whistle my love [F]and I will come to [C]you

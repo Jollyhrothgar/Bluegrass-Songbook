@@ -1,6 +1,6 @@
 {meta: title Bandera}
 {meta: artist Mona McCall}
-{meta: writer Guyanne McCall and Justin Trevino}
+{meta: composer Guyanne McCall and Justin Trevino}
 
 {start_of_verse: Verse 1}
 [C]I guess Bandera was too far to ask you to [F]come

@@ -1,6 +1,6 @@
 {meta: title I've Loved You All Over the World}
 {meta: artist Cal Smith}
-{meta: writer Glenn Johnson}
+{meta: composer Glenn Johnson}
 
 {start_of_verse: Verse 1}
 [C]I've loved you all over [F]the [C]world

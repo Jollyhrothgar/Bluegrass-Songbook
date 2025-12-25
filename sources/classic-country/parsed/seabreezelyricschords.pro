@@ -1,6 +1,6 @@
 {meta: title Sea Breeze}
 {meta: artist Jim Reeves}
-{meta: writer James Joiner}
+{meta: composer James Joiner}
 
 {start_of_verse: Verse 1}
 [C]I saw a [F]ship a [C]sailing

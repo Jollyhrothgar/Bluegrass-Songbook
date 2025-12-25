@@ -1,6 +1,6 @@
 {meta: title I Don't Think I'd Believe You}
 {meta: artist Faron Young}
-{meta: writer Kent Westberry and Hal Harbour}
+{meta: composer Kent Westberry and Hal Harbour}
 
 {start_of_verse: Verse 1}
 [C]Once you could'a [A#7]told me black was [C]white

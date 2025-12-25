@@ -1,6 +1,6 @@
 {meta: title Tanqueray}
 {meta: artist Vern Gosdin}
-{meta: writer Jim Vest, Vern Gosdin, Mac Vicory, Hank Cochran}
+{meta: composer Jim Vest, Vern Gosdin, Mac Vicory, Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]Once again I slip back in the gin and [G7]settle in

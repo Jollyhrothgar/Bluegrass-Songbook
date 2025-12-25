@@ -1,6 +1,6 @@
 {meta: title Born For Trouble}
 {meta: artist Willie Nelson}
-{meta: writer Fred Carter}
+{meta: composer Fred Carter}
 
 {start_of_verse: Verse 1}
 [C]I was born when the moon was full and [E7]bright

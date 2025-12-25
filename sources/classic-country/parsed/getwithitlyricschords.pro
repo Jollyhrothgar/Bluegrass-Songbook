@@ -1,6 +1,6 @@
 {meta: title Get With It}
 {meta: artist Bob Wills}
-{meta: writer Tommy Duncan and Bob Wills}
+{meta: composer Tommy Duncan and Bob Wills}
 
 {start_of_verse: Verse 1}
 [G]Rhythm here rhythm there rhythm floatin' [B7]everywhere

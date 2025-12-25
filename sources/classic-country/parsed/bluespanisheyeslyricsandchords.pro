@@ -1,6 +1,6 @@
 {meta: title Blue Spanish Eyes Lyrics and Chords}
 {meta: artist Charlie Rich}
-{meta: writer Charles Singleton, Bert Kaempfert, Eddie Snyder}
+{meta: composer Charles Singleton, Bert Kaempfert, Eddie Snyder}
 
 {start_of_verse: Verse 1}
 [C]Blue Spanish Eyes

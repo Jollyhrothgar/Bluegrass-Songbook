@@ -1,6 +1,6 @@
 {meta: title Who Did They Think He Was}
 {meta: artist Conway Twitty}
-{meta: writer Richard Leigh and Pat McManus}
+{meta: composer Richard Leigh and Pat McManus}
 
 {start_of_verse: Verse 1}
 [C]A child was born in Tupelo in [F]193[C]5

@@ -1,6 +1,6 @@
 {meta: title I Can't Live With You (I Can't Live Without You)}
 {meta: artist Porter Wagoner}
-{meta: writer Dale Parker}
+{meta: composer Dale Parker}
 
 {start_of_verse: Verse 1}
 [C]I can't live with you and I can't [F]live without [C]you

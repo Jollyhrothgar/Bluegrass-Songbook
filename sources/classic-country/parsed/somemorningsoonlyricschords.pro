@@ -1,6 +1,6 @@
 {meta: title Some Morning Soon}
 {meta: artist Patty Loveless}
-{meta: writer Claire Lynch and Larry Lynch}
+{meta: composer Claire Lynch and Larry Lynch}
 
 {start_of_verse: Verse 1}
 [G]The wind is cold I walk alone 

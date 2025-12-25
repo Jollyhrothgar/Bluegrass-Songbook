@@ -1,5 +1,5 @@
 {meta: artist Tex Ritter}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Old Glory [F]Old Glory when I [C]see her waving [G7]high

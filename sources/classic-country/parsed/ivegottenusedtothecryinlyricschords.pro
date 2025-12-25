@@ -1,6 +1,6 @@
 {meta: title I've Gotten Used To The Cryin'}
 {meta: artist Roger Miller}
-{meta: writer Roger Miller and Michael Smotherman}
+{meta: composer Roger Miller and Michael Smotherman}
 
 {start_of_verse: Verse 1}
 [C]I've gotten used to the [F]cryin'

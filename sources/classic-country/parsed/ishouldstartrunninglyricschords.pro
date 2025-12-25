@@ -1,6 +1,6 @@
 {meta: title I Should Start Running}
 {meta: artist Red Sovine}
-{meta: writer Paul Belvins}
+{meta: composer Paul Belvins}
 
 {start_of_verse: Verse 1}
 [C]Here you [Dm]are in my [G7]arms again 

@@ -1,6 +1,6 @@
 {meta: title Size Seven Round}
 {meta: artist George Jones and Lacy J. Dalton}
-{meta: writer Monroe Fields and Gary N. Lumpkin}
+{meta: composer Monroe Fields and Gary N. Lumpkin}
 
 {start_of_verse: Verse 1}
 [C]With all my love my [G7]dreams and [C]plans

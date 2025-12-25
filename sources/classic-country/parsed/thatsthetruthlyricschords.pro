@@ -1,6 +1,6 @@
 {meta: title That's The Truth}
 {meta: artist George Strait}
-{meta: writer Melba Montgomery and Steve Leslie}
+{meta: composer Melba Montgomery and Steve Leslie}
 
 {start_of_verse: Verse 1}
 [G]I said I don't love you and I ain't [C]never been your fool

@@ -1,6 +1,6 @@
 {meta: title Famous Last Words}
 {meta: artist Wanda Jackson}
-{meta: writer Yvonne Devaney}
+{meta: composer Yvonne Devaney}
 
 {start_of_verse: Verse 1}
 [G]Now I'm the girl who says that [G7]love was not for [C]me

@@ -1,6 +1,6 @@
 {meta: title I've Got A Winner In You}
 {meta: artist Don Williams}
-{meta: writer Don Williams and Wayland Holyfield}
+{meta: composer Don Williams and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]I oughta know  [G7]what it’s like to loose at [C]love

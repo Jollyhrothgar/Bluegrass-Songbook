@@ -1,6 +1,6 @@
 {meta: title Always Loving You}
 {meta: artist Hank Williams Jr.}
-{meta: writer Steve Young}
+{meta: composer Steve Young}
 
 {start_of_verse: Verse 1}
 [C]The even--[F]ing is [C]lone-some babe 

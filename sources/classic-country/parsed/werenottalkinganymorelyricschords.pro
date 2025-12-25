@@ -1,6 +1,6 @@
 {meta: title We're Not Talking Anymore}
 {meta: artist Curtis Potter}
-{meta: writer Mel Holt}
+{meta: composer Mel Holt}
 
 {start_of_verse: Verse 1}
 [C]Who seems to never miss a chance to make the other one feel [D7]small

@@ -1,6 +1,6 @@
 {meta: title You're The Only One For Me}
 {meta: artist George Morgan}
-{meta: writer Vic McAlpin and Jack Toombs}
+{meta: composer Vic McAlpin and Jack Toombs}
 
 {start_of_verse: Verse 1}
 [G]I like Bill and I [D7]like Joe I hear Tom has [G]lots of dough

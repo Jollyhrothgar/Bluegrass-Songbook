@@ -1,6 +1,6 @@
 {meta: title I'll Meet You By The River}
 {meta: artist Chuck Wagon Gang}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [G7]Over on the bright Elysian [C]shore

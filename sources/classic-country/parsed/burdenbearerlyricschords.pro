@@ -1,6 +1,6 @@
 {meta: title Burden Bearer}
 {meta: artist Doyle Lawson}
-{meta: writer Tammy Jones Robinette}
+{meta: composer Tammy Jones Robinette}
 
 {start_of_verse: Verse 1}
 [G]I'll take these burdens and lay them at His feet

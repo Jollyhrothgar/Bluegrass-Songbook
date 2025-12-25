@@ -1,6 +1,6 @@
 {meta: title I'll Catch You When You Fall}
 {meta: artist Buck Owens}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]It seems like years and a million tears

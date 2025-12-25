@@ -1,6 +1,6 @@
 {meta: title In the Highways}
 {meta: artist Anita Carter}
-{meta: writer Maybelle Carter}
+{meta: composer Maybelle Carter}
 
 {start_of_verse: Verse 1}
 [C]In the highways in the hedges

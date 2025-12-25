@@ -1,6 +1,6 @@
 {meta: title Forever In Blue Jeans}
 {meta: artist Tommy Overstreet}
-{meta: writer Neil Diamond and Richard Bennett}
+{meta: composer Neil Diamond and Richard Bennett}
 
 {start_of_verse: Verse 1}
 [G]Money talks

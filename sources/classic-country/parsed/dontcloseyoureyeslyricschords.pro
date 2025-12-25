@@ -1,6 +1,6 @@
 {meta: title Don't Close Your Eyes}
 {meta: artist Keith Whitley}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]I know you loved [C]him  [D7]a long [G]time [Em]ago

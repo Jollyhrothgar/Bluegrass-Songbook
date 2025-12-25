@@ -1,6 +1,6 @@
 {meta: title If You Can Touch Her At All}
 {meta: artist Waylon Jennings}
-{meta: writer Lee Clayton}
+{meta: composer Lee Clayton}
 
 {start_of_verse: Verse 1}
 [C]Funny a woman can come home so wild and [F]free

@@ -1,6 +1,6 @@
 {meta: title Goodbye Lonesome Hello Baby Doll}
 {meta: artist Johnny Horton}
-{meta: writer Lee Emerson}
+{meta: composer Lee Emerson}
 
 {start_of_verse: Verse 1}
 [C]I've been here for a long long time waitin' all [G7]alone

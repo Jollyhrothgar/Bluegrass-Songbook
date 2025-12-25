@@ -1,6 +1,6 @@
 {meta: title Darktown Strutter's Ball}
 {meta: artist Fats Domino}
-{meta: writer Shelton Brooks}
+{meta: composer Shelton Brooks}
 
 {start_of_verse: Verse 1}
 [C]I'll be there to getcha a taxi honey

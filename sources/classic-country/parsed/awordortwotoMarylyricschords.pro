@@ -1,6 +1,6 @@
 {meta: title A Word Or Two To Mary}
 {meta: artist Charley Pride}
-{meta: writer Vance Bulla and Peter Cotton}
+{meta: composer Vance Bulla and Peter Cotton}
 
 {start_of_verse: Verse 1}
 [C]A word or two to Mary please [F]write a letter for [C]me

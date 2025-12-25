@@ -1,6 +1,6 @@
 {meta: title Flat River Mo}
 {meta: artist Ferlin Husky}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Flat River [G7]Mo [C] Flat River Mo

@@ -1,6 +1,6 @@
 {meta: title I Can't Make It Without You}
 {meta: artist Curtis Potter}
-{meta: writer Daryl W. Hall and Ray Sanders}
+{meta: composer Daryl W. Hall and Ray Sanders}
 
 {start_of_verse: Verse 1}
 [C]What a good for nothing way to [G7]start the [C]day

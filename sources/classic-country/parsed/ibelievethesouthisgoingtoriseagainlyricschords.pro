@@ -1,6 +1,6 @@
 {meta: title I Believe The South Is Going To Rise Again}
 {meta: artist Tanya Tucker}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]Mama never had a flower [F]garden 

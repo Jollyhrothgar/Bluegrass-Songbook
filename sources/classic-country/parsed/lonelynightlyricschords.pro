@@ -1,6 +1,6 @@
 {meta: title Lonely Night}
 {meta: artist Merle Haggard}
-{meta: writer M.L. Powers}
+{meta: composer M.L. Powers}
 
 {start_of_verse: Verse 1}
 [C]Silent night lonely night

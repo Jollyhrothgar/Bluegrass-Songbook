@@ -1,6 +1,6 @@
 {meta: title All Those Yesterdays}
 {meta: artist Ernest Tubb}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [G]What will I do with [C]all those [G]yesterdays

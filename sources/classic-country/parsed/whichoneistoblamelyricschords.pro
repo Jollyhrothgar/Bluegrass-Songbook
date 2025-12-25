@@ -1,6 +1,6 @@
 {meta: title Which One is to Blame}
 {meta: artist Norma Jean}
-{meta: writer Robert Charlebois, Sunny Dull, Redd Stewart}
+{meta: composer Robert Charlebois, Sunny Dull, Redd Stewart}
 
 {start_of_verse: Verse 1}
 [C]The nicest thing that's come my way is [G7]you 

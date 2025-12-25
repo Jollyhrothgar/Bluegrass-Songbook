@@ -1,6 +1,6 @@
 {meta: title Out There Is Your World}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart and Vern Stovall}
+{meta: composer Wynn Stewart and Vern Stovall}
 
 {start_of_verse: Verse 1}
 [C]Out there is your world and it's [C7]waiting for [F]you

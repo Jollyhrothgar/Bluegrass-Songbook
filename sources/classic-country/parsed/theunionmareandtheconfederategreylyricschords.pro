@@ -1,6 +1,6 @@
 {meta: title The Union Mare And The Confederate Grey}
 {meta: artist Waylon Jennings}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [C]Two horses were trottin'  they pranced and they [F]ran

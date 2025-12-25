@@ -1,6 +1,6 @@
 {meta: title If You're Looking For A Fool}
 {meta: artist Tommy Overstreet}
-{meta: writer Cliff Thomas, Ed Thomas, Robert McRee}
+{meta: composer Cliff Thomas, Ed Thomas, Robert McRee}
 
 {start_of_verse: Verse 1}
 [C]If you're [G]looking for a [D7]fool here I [Em]am here I [G]am

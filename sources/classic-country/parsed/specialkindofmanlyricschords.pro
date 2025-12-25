@@ -1,6 +1,6 @@
 {meta: title Special Kind Of Man}
 {meta: artist Ray Price}
-{meta: writer Ray Hildebrand}
+{meta: composer Ray Hildebrand}
 
 {start_of_verse: Verse 1}
 [G7]If you're [C]looking for a way to spend the day

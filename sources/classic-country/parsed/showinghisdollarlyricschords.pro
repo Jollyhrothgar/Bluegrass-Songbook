@@ -1,6 +1,6 @@
 {meta: title Showing His Dollar}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Rusty Adams}
+{meta: composer Webb Pierce and Rusty Adams}
 
 {start_of_verse: Verse 1}
 [G]Well this country boy he's headed for home

@@ -1,6 +1,6 @@
 {meta: title Ghost In This House}
 {meta: artist Shenandoah}
-{meta: writer Hugh Prestwood}
+{meta: composer Hugh Prestwood}
 
 {start_of_verse: Verse 1}
 [C]I don't pick up the [G7]mail I don't pick up the [C]phone

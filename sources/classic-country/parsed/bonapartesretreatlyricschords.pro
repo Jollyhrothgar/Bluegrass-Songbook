@@ -1,6 +1,6 @@
 {meta: title Bonaparte's Retreat}
 {meta: artist Willie Nelson}
-{meta: writer Redd Stewart &amp; Pee Wee King}
+{meta: composer Redd Stewart &amp; Pee Wee King}
 
 {start_of_verse: Verse 1}
 [D7]I met a girl I loved in a town way down in [G]Texas

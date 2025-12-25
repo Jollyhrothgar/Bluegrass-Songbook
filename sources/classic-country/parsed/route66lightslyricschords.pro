@@ -1,6 +1,6 @@
 {meta: title Route 66}
 {meta: artist Asleep at the Wheel}
-{meta: writer Bobby Troup}
+{meta: composer Bobby Troup}
 
 {start_of_verse: Verse 1}
 [G]If you ever [C]plan to motor [G]west

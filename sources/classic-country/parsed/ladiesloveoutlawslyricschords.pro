@@ -1,6 +1,6 @@
 {meta: title Ladies Love Outlaws}
 {meta: artist Waylon Jennings}
-{meta: writer Lee Clayton}
+{meta: composer Lee Clayton}
 
 {start_of_verse: Verse 1}
 [C]Bessie was a lovely child from [F]west Tennessee

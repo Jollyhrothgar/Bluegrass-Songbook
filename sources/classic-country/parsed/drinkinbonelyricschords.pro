@@ -1,6 +1,6 @@
 {meta: title Drinkin' Bone}
 {meta: artist Tracy Byrd}
-{meta: writer Kerry Phillips and Casey Beathard}
+{meta: composer Kerry Phillips and Casey Beathard}
 
 {start_of_verse: Verse 1}
 [C]Well it's Friday evenin' six o'clock 

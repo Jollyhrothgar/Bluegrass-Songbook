@@ -1,6 +1,6 @@
 {meta: title K-S-O-S}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley and Emmylou Harris}
+{meta: composer Paul Kennerley and Emmylou Harris}
 
 {start_of_verse: Verse 1}
 [C]Come gather round me boys and lend an [F]ear

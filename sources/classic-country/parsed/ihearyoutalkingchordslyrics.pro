@@ -1,6 +1,6 @@
 {meta: title I Hear You Talking}
 {meta: artist Faron Young}
-{meta: writer Cindy Walker and Faron Young}
+{meta: composer Cindy Walker and Faron Young}
 
 {start_of_verse: Verse 1}
 I Hear You Talking

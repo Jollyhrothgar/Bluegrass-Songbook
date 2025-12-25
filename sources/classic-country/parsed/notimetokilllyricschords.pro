@@ -1,6 +1,6 @@
 {meta: title No Time To Kill}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [C]There's no time to kill between the cradle and the grave

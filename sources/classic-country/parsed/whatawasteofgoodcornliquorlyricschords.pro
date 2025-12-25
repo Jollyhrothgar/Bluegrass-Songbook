@@ -1,6 +1,6 @@
 {meta: title What A Waste Of Good Corn Liquor}
 {meta: artist Mac Wiseman}
-{meta: writer Slim Gordon and Bill Long}
+{meta: composer Slim Gordon and Bill Long}
 
 {start_of_verse: Verse 1}
 [C]I have lost my blue-eyed darling

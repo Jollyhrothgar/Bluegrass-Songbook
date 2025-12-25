@@ -1,6 +1,6 @@
 {meta: title Highway Junkie}
 {meta: artist Randy Travis}
-{meta: writer Chris Knight, Annie Tate, Sam Tate}
+{meta: composer Chris Knight, Annie Tate, Sam Tate}
 
 {start_of_verse: Verse 1}
 [C]A hundred cups of coffee five hundred cigarettes

@@ -1,6 +1,6 @@
 {meta: title China Doll Lyrics Chords}
 {meta: artist Slim Whitman}
-{meta: writer Gerald Cannan and Jane Cannan}
+{meta: composer Gerald Cannan and Jane Cannan}
 
 {start_of_verse: Verse 1}
 [C]I'm tired of crying  and [C7]all your [F]lying

@@ -1,6 +1,6 @@
 {meta: title These Lips Don't Know How To Say Goodbye}
 {meta: artist Doug Stone}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Once I promised I'd do anything to please [F]you

@@ -1,6 +1,6 @@
 {meta: title Chicken Hearted}
 {meta: artist Jim Reeves}
-{meta: writer Jim Reeves, Al Courtney &amp; Macy Lela Henry}
+{meta: composer Jim Reeves, Al Courtney &amp; Macy Lela Henry}
 
 {start_of_verse: Verse 1}
 [G]It seems you're always wondering [D7]why

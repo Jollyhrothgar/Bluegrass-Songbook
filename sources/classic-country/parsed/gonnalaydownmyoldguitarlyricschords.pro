@@ -1,6 +1,6 @@
 {meta: title Gonna Lay Down My Old Guitar}
 {meta: artist Louvin Brothers}
-{meta: writer Alton Delmore}
+{meta: composer Alton Delmore}
 
 {start_of_verse: Verse 1}
 [C]Gonna lay down my [G7]old [C]guitar

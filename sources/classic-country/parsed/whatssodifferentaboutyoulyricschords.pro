@@ -1,6 +1,6 @@
 {meta: title What's So Different About You}
 {meta: artist John Anderson}
-{meta: writer Fred F. Carter Jr. and John David Anderson}
+{meta: composer Fred F. Carter Jr. and John David Anderson}
 
 {start_of_verse: Verse 1}
 [G]Tell me what it is you do to me whenever you're around

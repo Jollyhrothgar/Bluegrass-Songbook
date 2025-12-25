@@ -1,6 +1,6 @@
 {meta: title These Are My Mountains}
 {meta: artist Slim Whitman}
-{meta: writer James Copeland}
+{meta: composer James Copeland}
 
 {start_of_verse: Verse 1}
 [F]For these are my [C]mountains [G7]and I’m going [C]home

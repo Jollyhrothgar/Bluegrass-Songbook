@@ -1,6 +1,6 @@
 {meta: title The Man Who Had Everything}
 {meta: artist Billy Walker}
-{meta: writer Mark Barkan and Miriam Lewis}
+{meta: composer Mark Barkan and Miriam Lewis}
 
 {start_of_verse: Verse 1}
 [G]I thought I needed things

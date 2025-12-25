@@ -1,6 +1,6 @@
 {meta: title Once}
 {meta: artist Ferlin Husky}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [G]I was foolish  [C]once

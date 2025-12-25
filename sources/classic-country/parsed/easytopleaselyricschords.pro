@@ -1,6 +1,6 @@
 {meta: title Easy To Please}
 {meta: artist Carl Smith}
-{meta: writer Red Foley and Betty Wade}
+{meta: composer Red Foley and Betty Wade}
 
 {start_of_verse: Verse 1}
 [G]Feeling kinda crazy feeling kinda wild

@@ -1,6 +1,6 @@
 {meta: title I'm Completely Satisfied With You}
 {meta: artist George Morgan}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [C]I've been awake all morning just [G7]lying by his side

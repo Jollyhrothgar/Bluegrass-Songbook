@@ -1,6 +1,6 @@
 {meta: title Without You There's A Sadness In My Song}
 {meta: artist Vern Gosdin}
-{meta: writer Cathy Gosdin}
+{meta: composer Cathy Gosdin}
 
 {start_of_verse: Verse 1}
 [C]At times I feel I can [F]call you my [C]own

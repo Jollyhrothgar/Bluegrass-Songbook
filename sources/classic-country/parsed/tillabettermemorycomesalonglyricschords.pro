@@ -1,6 +1,6 @@
 {meta: title Till A Better Memory Comes Along}
 {meta: artist Gene Watson}
-{meta: writer Timothy Ray Menzies, Gene Dobbins, Glenn Ray}
+{meta: composer Timothy Ray Menzies, Gene Dobbins, Glenn Ray}
 
 {start_of_verse: Verse 1}
 [C]See these tears on my [G7]face [C]I’ve cried every [C7]day

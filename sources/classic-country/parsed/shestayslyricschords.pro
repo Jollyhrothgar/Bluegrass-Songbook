@@ -1,6 +1,6 @@
 {meta: title She Stays}
 {meta: artist Ricky Van Shelton}
-{meta: writer Andy Landis and Allen Shamblin}
+{meta: composer Andy Landis and Allen Shamblin}
 
 {start_of_verse: Verse 1}
 [G]She'd give anything to hear him say he loves her

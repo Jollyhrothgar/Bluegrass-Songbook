@@ -1,6 +1,6 @@
 {meta: title You Can't Be True Dear}
 {meta: artist Eddy Arnold}
-{meta: writer Gerhard Ebeler, Hans Otten, Hal Cotton}
+{meta: composer Gerhard Ebeler, Hans Otten, Hal Cotton}
 
 {start_of_verse: Verse 1}
 [G]You can't be true dear 

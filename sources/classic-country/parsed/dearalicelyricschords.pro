@@ -1,6 +1,6 @@
 {meta: title Dear Alice}
 {meta: artist Johnny Lee}
-{meta: writer Lewis Anderson}
+{meta: composer Lewis Anderson}
 
 {start_of_verse: Verse 1}
 [C]Dear Alice [F]I got your [C]letter yesterday

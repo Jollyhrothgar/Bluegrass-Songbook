@@ -1,6 +1,6 @@
 {meta: title Working Girl}
 {meta: artist Conway Twitty}
-{meta: writer Wes Buchanan}
+{meta: composer Wes Buchanan}
 
 {start_of_verse: Verse 1}
 [G]Working girl working [F]girl I love [G]you

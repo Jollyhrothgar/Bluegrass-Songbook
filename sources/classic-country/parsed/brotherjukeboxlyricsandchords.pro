@@ -1,6 +1,6 @@
 {meta: title Brother Jukebox}
 {meta: artist Keith Whitley}
-{meta: writer Paul Craft}
+{meta: composer Paul Craft}
 
 {start_of_verse: Verse 1}
 [C]Brother jukebox [F]sister [C]wine

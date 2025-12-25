@@ -1,6 +1,6 @@
 {meta: title Last Guard}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Richard O'Brien}
+{meta: composer Red Steagall and Richard O'Brien}
 
 {start_of_verse: Verse 1}
 [C]I like the last guard cause it's [F]usually [G7]quite

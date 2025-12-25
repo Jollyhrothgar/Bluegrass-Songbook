@@ -1,6 +1,6 @@
 {meta: title Don Juan}
 {meta: artist Billy Crash Craddock}
-{meta: writer Laying Martine}
+{meta: composer Laying Martine}
 
 {start_of_verse: Verse 1}
 [C]Well I was dancin' with my baby on a Saturday night

@@ -1,6 +1,6 @@
 {meta: title Real Love}
 {meta: artist Dolly Parton}
-{meta: writer David Malloy, Randy McCormick, Spady Brannan}
+{meta: composer David Malloy, Randy McCormick, Spady Brannan}
 
 {start_of_verse: Verse 1}
 [G]They say that it's a matter of [C]trusting

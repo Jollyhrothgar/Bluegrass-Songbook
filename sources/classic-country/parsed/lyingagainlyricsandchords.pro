@@ -1,6 +1,6 @@
 {meta: title Lying Again}
 {meta: artist Kenny Rogers}
-{meta: writer Larry Butler and Chips Moman}
+{meta: composer Larry Butler and Chips Moman}
 
 {start_of_verse: Verse 1}
 [C]The morning sun [F]woke me

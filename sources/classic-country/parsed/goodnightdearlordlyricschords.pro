@@ -1,6 +1,6 @@
 {meta: title Good Night Dear Lord}
 {meta: artist Red Foley}
-{meta: writer Paul Tripp and Maurice Krumbein}
+{meta: composer Paul Tripp and Maurice Krumbein}
 
 {start_of_verse: Verse 1}
 [C]The setting [F]sun has [C]gone [F]away

@@ -1,6 +1,6 @@
 {meta: title Another Shot Of Toddy}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Bill Penix}
+{meta: composer Hank Thompson and Bill Penix}
 
 {start_of_verse: Verse 1}
 [C]Well I had an old hen and she had a [G7]wooden leg

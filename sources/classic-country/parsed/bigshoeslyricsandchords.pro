@@ -1,6 +1,6 @@
 {meta: title Big Shoes Lyrics and chords}
 {meta: artist Faron Young}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]And so I finally get the chance to love [G7]you

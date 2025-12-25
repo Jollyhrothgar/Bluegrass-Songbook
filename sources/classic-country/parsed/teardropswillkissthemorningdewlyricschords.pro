@@ -1,6 +1,6 @@
 {meta: title Teardrops Will Kiss the Morning Dew}
 {meta: artist Alison Krauss}
-{meta: writer Paul Craft}
+{meta: composer Paul Craft}
 
 {start_of_verse: Verse 1}
 [G]When time was young we [C]walked the road [G]together

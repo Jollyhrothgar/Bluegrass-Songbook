@@ -1,6 +1,6 @@
 {meta: title Everybody’s Darling Plus Mine}
 {meta: artist Marty Robbins}
-{meta: writer Frances Hur}
+{meta: composer Frances Hur}
 
 {start_of_verse: Verse 1}
 [C]Someone's gotta hold you so tight

@@ -1,6 +1,6 @@
 {meta: title What's Wrong With Me}
 {meta: artist Charlie Walker}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]What’s wrong with me [D7]how could I hurt you

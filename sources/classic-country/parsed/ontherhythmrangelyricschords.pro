@@ -1,6 +1,6 @@
 {meta: title On The Rhythm Range}
 {meta: artist Hank Snow}
-{meta: writer Bob Nolan}
+{meta: composer Bob Nolan}
 
 {start_of_verse: Verse 1}
 [G]I was born a rover on the rhythmic [G7]range

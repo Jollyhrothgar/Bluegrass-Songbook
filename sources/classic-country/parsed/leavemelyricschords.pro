@@ -1,6 +1,6 @@
 {meta: title Leave Me}
 {meta: artist Ernest Tubb}
-{meta: writer Ruby Glasgow}
+{meta: composer Ruby Glasgow}
 
 {start_of_verse: Verse 1}
 [C]You [G7]should be satisfied you broke my [C]heart

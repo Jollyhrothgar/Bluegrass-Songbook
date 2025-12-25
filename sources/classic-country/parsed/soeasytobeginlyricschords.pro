@@ -1,6 +1,6 @@
 {meta: title So Easy To Begin}
 {meta: artist Mickey Gilley}
-{meta: writer Jules Shear}
+{meta: composer Jules Shear}
 
 {start_of_verse: Verse 1}
 [C]I’ve been so far [Em]away from you [F]while standing by your [G7]side

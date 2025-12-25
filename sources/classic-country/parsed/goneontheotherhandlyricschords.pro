@@ -1,6 +1,6 @@
 {meta: title Gone On The Other Hand}
 {meta: artist Charley Pride}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [G]Someday I think I'll take [C]up [G]thinking 

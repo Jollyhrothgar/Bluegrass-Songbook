@@ -1,6 +1,6 @@
 {meta: title A Thief In The Night}
 {meta: artist Jean Shepard}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [C]This is our last kiss our last moment of [G7]bliss

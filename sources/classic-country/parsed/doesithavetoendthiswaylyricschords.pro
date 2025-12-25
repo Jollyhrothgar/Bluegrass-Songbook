@@ -1,6 +1,6 @@
 {meta: title Does It Have To End This Way}
 {meta: artist Bob Paisley and The Southern Grass}
-{meta: writer Mac Martin}
+{meta: composer Mac Martin}
 
 {start_of_verse: Verse 1}
 [G]Oh the cold wind blows [C]outside my [G]window

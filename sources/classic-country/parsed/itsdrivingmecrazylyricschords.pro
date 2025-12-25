@@ -1,6 +1,6 @@
 {meta: title It's Driving Me Crazy}
 {meta: artist Marty Robbins}
-{meta: writer Ray Edenton}
+{meta: composer Ray Edenton}
 
 {start_of_verse: Verse 1}
 [G]Well [D7]I don't like this roamin' around

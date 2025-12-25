@@ -1,6 +1,6 @@
 {meta: title Johnny One Time}
 {meta: artist Brenda Lee}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G]So he told you that you're the dream

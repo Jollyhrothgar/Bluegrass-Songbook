@@ -1,6 +1,6 @@
 {meta: title It's A Long Way Down From Riches To Rags}
 {meta: artist Billy Walker}
-{meta: writer Billy Walker, Mary Ann Meier, Edna Henderson}
+{meta: composer Billy Walker, Mary Ann Meier, Edna Henderson}
 
 {start_of_verse: Verse 1}
 [G]It's a long way [C]down from riches to [G]rags

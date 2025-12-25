@@ -1,6 +1,6 @@
 {meta: title Dreams Of A Dreamer}
 {meta: artist Gene Watson}
-{meta: writer David H. "Jug" Brown}
+{meta: composer David H. "Jug" Brown}
 
 {start_of_verse: Verse 1}
 [C]Lost my pickup in a card game in New [F]Orleans

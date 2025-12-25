@@ -1,6 +1,6 @@
 {meta: title Another By My Side}
 {meta: artist The Lonesome River Band}
-{meta: writer Ronnie Bowman and Darryl Webb}
+{meta: composer Ronnie Bowman and Darryl Webb}
 
 {start_of_verse: Verse 1}
 [C]I sit and wonder why you ever left me

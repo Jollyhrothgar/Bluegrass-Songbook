@@ -1,6 +1,6 @@
 {meta: title Thank God For Kids}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]If it weren't for kids have you ever [F]thought

@@ -1,6 +1,6 @@
 {meta: title Heaven Is Missing An Angel}
 {meta: artist George Strait}
-{meta: writer Doug Powell and Jerome Earnest}
+{meta: composer Doug Powell and Jerome Earnest}
 
 {start_of_verse: Verse 1}
 Heaven Is Missing An Angel

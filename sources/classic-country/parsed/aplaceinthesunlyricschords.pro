@@ -1,6 +1,6 @@
 {meta: title A Place In The Sun}
 {meta: artist Eddy Arnold}
-{meta: writer Ronald Miller and Bryan Wells}
+{meta: composer Ronald Miller and Bryan Wells}
 
 {start_of_verse: Verse 1}
 [G]Movin' [Am]on  [D7]movin' [G]on

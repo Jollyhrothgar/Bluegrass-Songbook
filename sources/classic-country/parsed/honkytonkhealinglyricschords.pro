@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Healing}
 {meta: artist David Ball}
-{meta: writer David Ball and Tommy Polk}
+{meta: composer David Ball and Tommy Polk}
 
 {start_of_verse: Verse 1}
 [G]I did some honky tonk healing to get me over [C]you

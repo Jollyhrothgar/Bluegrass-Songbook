@@ -1,6 +1,6 @@
 {meta: title You Will}
 {meta: artist Patty Loveless}
-{meta: writer Mary Ann Kennedy, Pam Rose, Randy Sharp}
+{meta: composer Mary Ann Kennedy, Pam Rose, Randy Sharp}
 
 {start_of_verse: Verse 1}
 [C]When you know and you will [F]it wasn't meant to be[C]

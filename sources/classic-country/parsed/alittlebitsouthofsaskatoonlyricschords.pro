@@ -1,6 +1,6 @@
 {meta: title A Little Bit South Of Saskatoon}
 {meta: artist Sonny James}
-{meta: writer Sonny James Loden and Carole F Smith}
+{meta: composer Sonny James Loden and Carole F Smith}
 
 {start_of_verse: Verse 1}
 [D7]Just a little bit south of [G7]Saskatoon

@@ -1,6 +1,6 @@
 {meta: title We Found It In Each Other's Arms}
 {meta: artist Jack Greene}
-{meta: writer Hank Cochran and Red Lane}
+{meta: composer Hank Cochran and Red Lane}
 
 {start_of_verse: Verse 1}
 [F]We found it [G7]in each other's [C]arms [G7]

@@ -1,6 +1,6 @@
 {meta: title Old Glory}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jerry Lee Lewis, Paul Roberts, Shelby Darnell}
+{meta: composer Jerry Lee Lewis, Paul Roberts, Shelby Darnell}
 
 {start_of_verse: Verse 1}
 [G]There's a star spangled banner waving [C]somewhere

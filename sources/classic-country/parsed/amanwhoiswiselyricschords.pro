@@ -1,6 +1,6 @@
 {meta: title A Man Who Is Wise}
 {meta: artist Hank Snow}
-{meta: writer Buford Abner}
+{meta: composer Buford Abner}
 
 {start_of_verse: Verse 1}
 [C](If he's [Dm]wise in the [G7]eyes of the [G7][C]Lord)

@@ -1,6 +1,6 @@
 {meta: title Greener Pastures}
 {meta: artist Stonewall Jackson}
-{meta: writer Marijohn Wilkin}
+{meta: composer Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [C]You'll be [F]leaving me to look for greener [C]pastures

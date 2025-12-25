@@ -1,6 +1,6 @@
 {meta: title Happy Holidays}
 {meta: artist Alabama}
-{meta: writer Ronnie Rogers and Swain Shafer}
+{meta: composer Ronnie Rogers and Swain Shafer}
 
 {start_of_verse: Verse 1}
 [G]Smiling faces on city streets

@@ -1,6 +1,6 @@
 {meta: title I'm Not Living With Your Memory Anymore}
 {meta: artist Johnny Rodriguez}
-{meta: writer Tom T. Hall and Johnny Rodriguez}
+{meta: composer Tom T. Hall and Johnny Rodriguez}
 
 {start_of_verse: Verse 1}
 [C]I'm not living with your memory any[F]more

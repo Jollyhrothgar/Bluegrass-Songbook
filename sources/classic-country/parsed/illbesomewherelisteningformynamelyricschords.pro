@@ -1,6 +1,6 @@
 {meta: title I’ll Be Somewhere Listening For My Name}
 {meta: artist Bill Anderson}
-{meta: writer V.O. Stamps - J.B. Coats}
+{meta: composer V.O. Stamps - J.B. Coats}
 
 {start_of_verse: Verse 1}
 [G]When my Savior calls I will answer

@@ -1,6 +1,6 @@
 {meta: title You Took My Happy Away}
 {meta: artist Ray Price}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]When I was with you I was [G7]happy 

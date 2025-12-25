@@ -1,6 +1,6 @@
 {meta: title Cowboy Carry Me Home}
 {meta: artist Mel Tillis}
-{meta: writer Sid Wayne and Roger Howell}
+{meta: composer Sid Wayne and Roger Howell}
 
 {start_of_verse: Verse 1}
 [C]Hey I was [F]playing guitar in a [Am]west Texas bar

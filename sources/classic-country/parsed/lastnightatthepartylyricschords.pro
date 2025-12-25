@@ -1,6 +1,6 @@
 {meta: title Last Night At The Party}
 {meta: artist Faron Young}
-{meta: writer Roger Miller and Faron Young}
+{meta: composer Roger Miller and Faron Young}
 
 {start_of_verse: Verse 1}
 [C]Hey I had a very good [F]time at a [C]party

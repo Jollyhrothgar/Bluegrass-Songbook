@@ -1,6 +1,6 @@
 {meta: title All His Children}
 {meta: artist Charlie Pride}
-{meta: writer Alan Bergman, Marvin Bergman, Henry Mancini}
+{meta: composer Alan Bergman, Marvin Bergman, Henry Mancini}
 
 {start_of_verse: Verse 1}
 [C]When you're standing alone  with [F]the mountains and the [C]sea

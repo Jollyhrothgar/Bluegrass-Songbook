@@ -1,6 +1,6 @@
 {meta: title He Still Hears}
 {meta: artist Flatt Lonesome}
-{meta: writer Dolton Robertson}
+{meta: composer Dolton Robertson}
 
 {start_of_verse: Verse 1}
 [C]When the days can seem so long [F]and the nights are [C]longer still

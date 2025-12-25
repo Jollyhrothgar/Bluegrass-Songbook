@@ -1,6 +1,6 @@
 {meta: title I'm Waiting Just For You}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Henry Glover, Carolyn Leigh, Lucky Millinder}
+{meta: composer Henry Glover, Carolyn Leigh, Lucky Millinder}
 
 {start_of_verse: Verse 1}
 [G]You have to leave me all by myself [G7]dear

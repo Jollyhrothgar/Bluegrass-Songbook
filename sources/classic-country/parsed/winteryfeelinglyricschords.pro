@@ -1,6 +1,6 @@
 {meta: title Wintery Feeling}
 {meta: artist Anne Murray}
-{meta: writer Jesse Winchester}
+{meta: composer Jesse Winchester}
 
 {start_of_verse: Verse 1}
 [G]Look how the sky's all silver beautiful Montreal

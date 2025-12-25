@@ -1,6 +1,6 @@
 {meta: title Working Without A Net}
 {meta: artist Waylon Jennings}
-{meta: writer Don Cook, John B. Jarvis, Gary Nicholson}
+{meta: composer Don Cook, John B. Jarvis, Gary Nicholson}
 
 {start_of_verse: Verse 1}
 [G]The road can be a circus a death defyin' act

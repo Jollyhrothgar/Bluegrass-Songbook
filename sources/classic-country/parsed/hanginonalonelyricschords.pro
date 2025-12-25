@@ -1,6 +1,6 @@
 {meta: title Hangin' On Alone}
 {meta: artist Jeannie Seely}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 [C]You hurt me so [F]many times [C]before

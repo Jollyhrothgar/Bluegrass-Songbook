@@ -1,6 +1,6 @@
 {meta: title Give A Little Take A Little}
 {meta: artist Wilburn Brothers}
-{meta: writer Hank Thompson}
+{meta: composer Hank Thompson}
 
 {start_of_verse: Verse 1}
 [C]Give a little take a little take a little kiss from [G7]me

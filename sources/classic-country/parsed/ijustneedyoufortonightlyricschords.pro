@@ -1,6 +1,6 @@
 {meta: title I Just Need You For Tonight}
 {meta: artist Billy Crash Craddock}
-{meta: writer Jerry Wallace, Terry Skinner, Ken Bell}
+{meta: composer Jerry Wallace, Terry Skinner, Ken Bell}
 
 {start_of_verse: Verse 1}
 [G]Oh she looked just like an angel  

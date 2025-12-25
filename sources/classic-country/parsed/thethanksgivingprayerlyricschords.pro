@@ -1,6 +1,6 @@
 {meta: title The Thanksgiving Prayer}
 {meta: artist Johnny Cash}
-{meta: writer Josef Anderson}
+{meta: composer Josef Anderson}
 
 {start_of_verse: Verse 1}
 [G]We've come to the [D7]time in the [Em]season

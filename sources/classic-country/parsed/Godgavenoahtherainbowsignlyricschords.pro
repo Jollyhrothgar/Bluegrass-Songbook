@@ -1,6 +1,6 @@
 {meta: title God Gave Noah the Rainbow Sign}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]I've got a home in that [G7]rock don't you [C]see  

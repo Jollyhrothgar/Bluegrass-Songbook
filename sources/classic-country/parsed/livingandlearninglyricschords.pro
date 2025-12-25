@@ -1,6 +1,6 @@
 {meta: title Living And Learning}
 {meta: artist Mel Tillis}
-{meta: writer Terry Skinner}
+{meta: composer Terry Skinner}
 
 {start_of_verse: Verse 1}
 [C]Now life is filled with ups and downs and [F]we both had our share

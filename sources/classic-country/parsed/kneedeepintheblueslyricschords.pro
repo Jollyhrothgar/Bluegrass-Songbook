@@ -1,6 +1,6 @@
 {meta: title Knee Deep in the Blues}
 {meta: artist Marty Robbins}
-{meta: writer Melvin Endsley}
+{meta: composer Melvin Endsley}
 
 {start_of_verse: Verse 1}
 [G]Well I've just been [G7]thinkin' things [C]over

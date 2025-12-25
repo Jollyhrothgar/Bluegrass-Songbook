@@ -1,6 +1,6 @@
 {meta: title Happy Birthday}
 {meta: artist Loretta Lynn}
-{meta: writer Ron Kitson}
+{meta: composer Ron Kitson}
 
 {start_of_verse: Verse 1}
 [C]Well I know [G7]where you're [C]going and who's gonna meet [G7]you [C]there

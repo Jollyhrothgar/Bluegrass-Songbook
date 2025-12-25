@@ -1,6 +1,6 @@
 {meta: title A Rose And A Baby Ruth}
 {meta: artist George Hamilton IV}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G]Doo doo doo [C]doo doo [G]doo doo doo [C]doo doo

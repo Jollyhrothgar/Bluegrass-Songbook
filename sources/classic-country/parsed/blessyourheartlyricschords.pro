@@ -1,6 +1,6 @@
 {meta: title Bless Your Heart}
 {meta: artist Freddie Hart}
-{meta: writer Jack Lebsock and Freddie Hart}
+{meta: composer Jack Lebsock and Freddie Hart}
 
 {start_of_verse: Verse 1}
 [C]Bless your hea-[C7]rt for [F]loving me

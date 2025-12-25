@@ -1,6 +1,6 @@
 {meta: title Drinking Them Beers}
 {meta: artist Tompall Glaser}
-{meta: writer Bill Chappell}
+{meta: composer Bill Chappell}
 
 {start_of_verse: Verse 1}
 [G]Last night I had a little talk with myself

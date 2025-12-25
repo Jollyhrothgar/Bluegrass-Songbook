@@ -1,6 +1,6 @@
 {meta: title My Name Is Lazarus}
 {meta: artist Greater Vision}
-{meta: writer Rodney Griffin}
+{meta: composer Rodney Griffin}
 
 {start_of_verse: Verse 1}
 [C]One day four men brought a crippled man to Jesus

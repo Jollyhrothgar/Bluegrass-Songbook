@@ -1,6 +1,6 @@
 {meta: title Hard Luck Joe}
 {meta: artist Johnny Duncan}
-{meta: writer Bobby Goldsboro}
+{meta: composer Bobby Goldsboro}
 
 {start_of_verse: Verse 1}
 [C]I'm an empty pocket I'm a worn out [F]shoe[Fm]

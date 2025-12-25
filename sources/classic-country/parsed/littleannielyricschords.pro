@@ -1,6 +1,6 @@
 {meta: title Little Annie}
 {meta: artist The Lilly Brothers}
-{meta: writer Stephen Foster}
+{meta: composer Stephen Foster}
 
 {start_of_verse: Verse 1}
 [C]Once more Little Annie I must [F]leave you 

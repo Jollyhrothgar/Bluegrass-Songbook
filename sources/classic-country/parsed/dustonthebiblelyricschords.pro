@@ -1,6 +1,6 @@
 {meta: title Dust on the Bible}
 {meta: artist Hank Williams}
-{meta: writer Johnny and Walter Bailes}
+{meta: composer Johnny and Walter Bailes}
 
 {start_of_verse: Verse 1}
 [C]I went into a home one day to see some friends of mine

@@ -1,6 +1,6 @@
 {meta: title Pearl}
 {meta: artist Cedar Hill}
-{meta: writer Darren Clay Haverstick}
+{meta: composer Darren Clay Haverstick}
 
 {start_of_verse: Verse 1}
 [G]He sees her sittin’ by the gate [D7]post

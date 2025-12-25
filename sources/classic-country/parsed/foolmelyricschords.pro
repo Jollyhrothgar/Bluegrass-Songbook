@@ -1,6 +1,6 @@
 {meta: title Fool Me}
 {meta: artist Lynn Anderson}
-{meta: writer Joe South}
+{meta: composer Joe South}
 
 {start_of_verse: Verse 1}
 [C]Ain't it kinda funny [F]they say a fool never [C]learns

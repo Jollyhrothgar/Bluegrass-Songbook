@@ -1,6 +1,6 @@
 {meta: title Remind Me Dear Lord}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [C]The things that I love and hold dear to my heart

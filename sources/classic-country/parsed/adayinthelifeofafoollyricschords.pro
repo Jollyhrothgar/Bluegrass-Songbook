@@ -1,6 +1,6 @@
 {meta: title A Day In The Life Of A Fool}
 {meta: artist George Jones}
-{meta: writer Eddie Noack}
+{meta: composer Eddie Noack}
 
 {start_of_verse: Verse 1}
 [D7]Off to [G]work with no [Em]kiss [C]of [A7]goodbye

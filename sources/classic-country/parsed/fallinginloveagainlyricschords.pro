@@ -1,6 +1,6 @@
 {meta: title Falling In Love Again}
 {meta: artist Don Williams}
-{meta: writer Bob McDill and Don Williams}
+{meta: composer Bob McDill and Don Williams}
 
 {start_of_verse: Verse 1}
 [G]Love be gentle  love be kind

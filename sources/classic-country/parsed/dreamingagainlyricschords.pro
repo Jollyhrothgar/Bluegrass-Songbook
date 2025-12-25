@@ -1,6 +1,6 @@
 {meta: title Dreaming Again}
 {meta: artist Carl Smith}
-{meta: writer Wesley Rose}
+{meta: composer Wesley Rose}
 
 {start_of_verse: Verse 1}
 [C]Dream dream dream dream dream dream

@@ -1,6 +1,6 @@
 {meta: title Midnight}
 {meta: artist Red Foley}
-{meta: writer Boudleaux Bryant and Chet Atkins}
+{meta: composer Boudleaux Bryant and Chet Atkins}
 
 {start_of_verse: Verse 1}
 [C]Midnight I've spent another lonely night thinking of [C7]you

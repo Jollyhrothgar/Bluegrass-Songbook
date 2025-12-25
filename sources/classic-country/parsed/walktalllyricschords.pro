@@ -1,6 +1,6 @@
 {meta: title Walk Tall}
 {meta: artist Faron Young}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]Walk tall walk straight and look the [G7]world right in the [C]eye

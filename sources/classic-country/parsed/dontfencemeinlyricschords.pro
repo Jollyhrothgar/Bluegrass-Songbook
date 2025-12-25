@@ -1,6 +1,6 @@
 {meta: title Don't Fence Me In}
 {meta: artist Dave Dudley}
-{meta: writer Cole Porter}
+{meta: composer Cole Porter}
 
 {start_of_verse: Verse 1}
 [G]Oh give me land lots of land  

@@ -1,6 +1,6 @@
 {meta: title Danny's Song}
 {meta: artist Anne Murray}
-{meta: writer Kenny Loggins}
+{meta: composer Kenny Loggins}
 
 {start_of_verse: Verse 1}
 [C]People smile and tell me I’m the lucky [Am]one

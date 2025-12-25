@@ -1,6 +1,6 @@
 {meta: title Halfway Down}
 {meta: artist Patty Loveless}
-{meta: writer Jim Lauderdale}
+{meta: composer Jim Lauderdale}
 
 {start_of_verse: Verse 1}
 [C]Raindrops on the treetops 

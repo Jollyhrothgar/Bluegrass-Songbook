@@ -1,6 +1,6 @@
 {meta: title Three Ways To Love You}
 {meta: artist Kitty Wells}
-{meta: writer Eve Jay and Julius Dixon}
+{meta: composer Eve Jay and Julius Dixon}
 
 {start_of_verse: Verse 1}
 [C]There are three ways three ways

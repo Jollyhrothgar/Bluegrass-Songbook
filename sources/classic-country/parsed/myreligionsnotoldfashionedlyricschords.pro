@@ -1,6 +1,6 @@
 {meta: title My Religion's Not Old Fashioned}
 {meta: artist Hank Snow}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [C]My [F]religion's not old-fashioned but it's real [C]genuine

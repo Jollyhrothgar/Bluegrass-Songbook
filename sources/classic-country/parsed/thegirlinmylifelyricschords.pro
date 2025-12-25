@@ -1,6 +1,6 @@
 {meta: title The Girl In My Life}
 {meta: artist Bob Luman}
-{meta: writer Steve Davis, Sammy Lyons, Mark Sherrill}
+{meta: composer Steve Davis, Sammy Lyons, Mark Sherrill}
 
 {start_of_verse: Verse 1}
 [G7]She was [C]there to [E7]pick me up when [A7]I was down

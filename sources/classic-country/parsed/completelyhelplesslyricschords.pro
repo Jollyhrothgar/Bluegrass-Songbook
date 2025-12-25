@@ -1,6 +1,6 @@
 {meta: title Completely Helpless}
 {meta: artist Charley Pride}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]Completely [F]helpless I'm standing [C]alone

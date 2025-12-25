@@ -1,6 +1,6 @@
 {meta: title Then For Them}
 {meta: artist Ricky Van Shelton}
-{meta: writer Larry Boone and Will Robinson}
+{meta: composer Larry Boone and Will Robinson}
 
 {start_of_verse: Verse 1}
 [G]Got a ticket in my hand and one [C]foot out the door

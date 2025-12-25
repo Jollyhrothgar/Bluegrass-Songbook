@@ -1,6 +1,6 @@
 {meta: title These Days I Barely Get By}
 {meta: artist George Jones}
-{meta: writer Tammy Wynette and George Jones}
+{meta: composer Tammy Wynette and George Jones}
 
 {start_of_verse: Verse 1}
 [C]I woke up this morning [F]aching with [C]pain

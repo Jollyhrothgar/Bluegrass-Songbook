@@ -1,6 +1,6 @@
 {meta: title You're Calling Me Sweetheart Again}
 {meta: artist Jean Shepard}
-{meta: writer Jack Rhodes and Gertrude Cox}
+{meta: composer Jack Rhodes and Gertrude Cox}
 
 {start_of_verse: Verse 1}
 [G]There's nothing so precious as [C]something you've [G]lost

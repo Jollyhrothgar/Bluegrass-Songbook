@@ -1,6 +1,6 @@
 {meta: title After The Love Is Gone}
 {meta: artist Hank Snow}
-{meta: writer Lee Morris}
+{meta: composer Lee Morris}
 
 {start_of_verse: Verse 1}
 [G]I'm leaving you he said well so long was her [C]reply

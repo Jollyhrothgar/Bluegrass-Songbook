@@ -1,6 +1,6 @@
 {meta: title There He Goes}
 {meta: artist Patsy Cline}
-{meta: writer Eddie Miller, Durwood Haddock, W.S. Stevenson}
+{meta: composer Eddie Miller, Durwood Haddock, W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [C]There he goes he's walking [F]away

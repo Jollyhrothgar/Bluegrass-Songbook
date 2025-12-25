@@ -1,6 +1,6 @@
 {meta: title Falling In Love}
 {meta: artist Boxcar Willie}
-{meta: writer Lecil Travis Martin}
+{meta: composer Lecil Travis Martin}
 
 {start_of_verse: Verse 1}
 [C]Falling in love can be [F]so [C]easy

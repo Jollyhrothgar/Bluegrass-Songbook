@@ -1,6 +1,6 @@
 {meta: title Real Lady's Man}
 {meta: artist Vince Gill}
-{meta: writer Carl Jackson and Vince Gill}
+{meta: composer Carl Jackson and Vince Gill}
 
 {start_of_verse: Verse 1}
 [G]Oh the taste of [C]wine and [G]liquor 

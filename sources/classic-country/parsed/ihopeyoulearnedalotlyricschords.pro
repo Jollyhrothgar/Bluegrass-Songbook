@@ -1,6 +1,6 @@
 {meta: title I Hope You Learned A Lot}
 {meta: artist Marty Robbins}
-{meta: writer Bobby Sykes}
+{meta: composer Bobby Sykes}
 
 {start_of_verse: Verse 1}
 [G]You treat me like the ground you walk around [C]on

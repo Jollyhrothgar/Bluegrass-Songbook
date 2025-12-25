@@ -1,6 +1,6 @@
 {meta: title Heaven's Just A Prayer Away}
 {meta: artist Dolly Parton}
-{meta: writer Tommy Tomlinson}
+{meta: composer Tommy Tomlinson}
 
 {start_of_verse: Verse 1}
 [G]If you're trying to reach [G7]Heaven

@@ -1,6 +1,6 @@
 {meta: title Except The Lord}
 {meta: artist Red Sovine}
-{meta: writer Mildred A. Burk, Ross Burk, Red Sovine}
+{meta: composer Mildred A. Burk, Ross Burk, Red Sovine}
 
 {start_of_verse: Verse 1}
 [G]Except the Lord build the house except the [C]Lord build the house

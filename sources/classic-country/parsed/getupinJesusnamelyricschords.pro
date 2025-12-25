@@ -1,6 +1,6 @@
 {meta: title Get Up In Jesus' Name}
 {meta: artist Lee Ann Womack}
-{meta: writer Michael Curtis and Marty Raybon}
+{meta: composer Michael Curtis and Marty Raybon}
 
 {start_of_verse: Verse 1}
 [C]Get up get up get up in Jesus' [A#7]name

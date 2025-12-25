@@ -1,6 +1,6 @@
 {meta: title A Good Year For The Roses}
 {meta: artist George Jones}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]I can hardly bare the sight of lipstick

@@ -1,6 +1,6 @@
 {meta: title The Beginning Of The End}
 {meta: artist Barbara Mandrell}
-{meta: writer Kent M. Robbins}
+{meta: composer Kent M. Robbins}
 
 {start_of_verse: Verse 1}
 [C]In the beginning there was love

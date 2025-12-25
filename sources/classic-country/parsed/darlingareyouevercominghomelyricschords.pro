@@ -1,6 +1,6 @@
 {meta: title Darling Are You Ever Coming Home}
 {meta: artist Connie Smith}
-{meta: writer Hank Cochran - Willie Nelson}
+{meta: composer Hank Cochran - Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]Once again it's twelve o'clock  you're still [C]gone

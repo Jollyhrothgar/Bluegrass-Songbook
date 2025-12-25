@@ -1,6 +1,6 @@
 {meta: title Untamed Heart}
 {meta: artist Billy Walker}
-{meta: writer Howard Hausey}
+{meta: composer Howard Hausey}
 
 {start_of_verse: Verse 1}
 [G]My untamed heart [C]can’t ever be [G]free

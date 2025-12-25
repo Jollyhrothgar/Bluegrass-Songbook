@@ -1,6 +1,6 @@
 {meta: title If You Really Want Me To I'll Go (I Don’t Want To Get Over You)}
 {meta: artist Waylon Jennings}
-{meta: writer Delbert McClinton}
+{meta: composer Delbert McClinton}
 
 {start_of_verse: Verse 1}
 [G]If you really want me to I'll [D7]go

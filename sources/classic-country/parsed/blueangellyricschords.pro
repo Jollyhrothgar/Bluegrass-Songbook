@@ -1,6 +1,6 @@
 {meta: title Blue Angel}
 {meta: artist Roy Orbison}
-{meta: writer Joe}
+{meta: composer Joe}
 
 {start_of_verse: Verse 1}
 [Em]Sha... la... la dooby wah [Dm]dum dum dum yip [G7]yip

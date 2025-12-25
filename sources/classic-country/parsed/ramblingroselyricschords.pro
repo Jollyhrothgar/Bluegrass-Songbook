@@ -1,6 +1,6 @@
 {meta: title Rambling Rose}
 {meta: artist Nat King Cole}
-{meta: writer Noel Sherman and Joe Sherman}
+{meta: composer Noel Sherman and Joe Sherman}
 
 {start_of_verse: Verse 1}
 [G]Rambling [D7]rose rambling [G]rose

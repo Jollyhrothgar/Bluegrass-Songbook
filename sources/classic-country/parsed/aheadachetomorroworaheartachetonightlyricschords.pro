@@ -1,6 +1,6 @@
 {meta: title A Headache Tomorrow Or A Heartache Tonight}
 {meta: artist Mickey Gilley}
-{meta: writer Chick Rains}
+{meta: composer Chick Rains}
 
 {start_of_verse: Verse 1}
 [C]Well if the whiskey doesn’t get me I know the [C7]memories [F]will

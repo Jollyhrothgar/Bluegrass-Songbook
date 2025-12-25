@@ -1,6 +1,6 @@
 {meta: title My Heart Is Bleeding}
 {meta: artist Fats Domino}
-{meta: writer Pearl King and Dave Bartholomew}
+{meta: composer Pearl King and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [C]It was you [F]darlin' not [C]I

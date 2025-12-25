@@ -1,6 +1,6 @@
 {meta: title Dear Little Boy Of Mine}
 {meta: artist George Morgan}
-{meta: writer Keirn Brennan and Ernest Ball}
+{meta: composer Keirn Brennan and Ernest Ball}
 
 {start_of_verse: Verse 1}
 [G]Boy [Em]of [G]mine [Bm]joy of mine

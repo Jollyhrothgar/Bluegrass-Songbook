@@ -1,6 +1,6 @@
 {meta: title Amy's Eyes}
 {meta: artist Charley Pride}
-{meta: writer Terry Brown and Jaima Prater Hunt}
+{meta: composer Terry Brown and Jaima Prater Hunt}
 
 {start_of_verse: Verse 1}
 [C]Amy left her [F]crayons on the [Dm]table yester[Am]day

@@ -1,6 +1,6 @@
 {meta: title From Seven To Ten}
 {meta: artist Conway Twitty}
-{meta: writer Troy Seals and Max D. Barnes}
+{meta: composer Troy Seals and Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]Wait here for me I'll get the key

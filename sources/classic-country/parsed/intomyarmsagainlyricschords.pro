@@ -1,6 +1,6 @@
 {meta: title Into My Arms Again}
 {meta: artist George Jones}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]The music from the honky tonks

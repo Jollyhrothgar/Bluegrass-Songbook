@@ -1,6 +1,6 @@
 {meta: title Blue River}
 {meta: artist Slim Whitman}
-{meta: writer Ernest Allee}
+{meta: composer Ernest Allee}
 
 {start_of_verse: Verse 1}
 [C]Blue river like you I’m blue

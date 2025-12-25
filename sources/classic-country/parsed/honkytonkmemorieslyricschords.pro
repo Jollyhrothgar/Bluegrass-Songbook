@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Memories}
 {meta: artist Mickey Gilley}
-{meta: writer Rory Michael Buorke, Eugene D. Dobbins, Johnny A. Wilson}
+{meta: composer Rory Michael Buorke, Eugene D. Dobbins, Johnny A. Wilson}
 
 {start_of_verse: Verse 1}
 [G]Honky tonk memories a cheating song [D7]melody

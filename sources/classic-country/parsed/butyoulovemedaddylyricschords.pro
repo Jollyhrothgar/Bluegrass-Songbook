@@ -1,6 +1,6 @@
 {meta: title But You Love Me Daddy}
 {meta: artist Jim Reeves}
-{meta: writer Pat Kathyrn Twitty}
+{meta: composer Pat Kathyrn Twitty}
 
 {start_of_verse: Verse 1}
 [G]Your five year old face is a dirty disgrace

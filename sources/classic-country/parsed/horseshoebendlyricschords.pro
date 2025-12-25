@@ -1,6 +1,6 @@
 {meta: title Horseshoe Bend}
 {meta: artist Tanya Tucker}
-{meta: writer Bobby Borchers and Mack Vickery}
+{meta: composer Bobby Borchers and Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G7]It's been a [C]Saturday everyday

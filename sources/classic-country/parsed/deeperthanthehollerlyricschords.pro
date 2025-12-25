@@ -1,6 +1,6 @@
 {meta: title Deeper Than The Holler}
 {meta: artist Randy Travis}
-{meta: writer Don Schlitz and Paul Overstreet}
+{meta: composer Don Schlitz and Paul Overstreet}
 
 {start_of_verse: Verse 1}
 [F]Well I [C]heard those city [F]singers singing [C]bout how they can [F]love

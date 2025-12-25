@@ -1,6 +1,6 @@
 {meta: title The Cold Grey Light of Dawn}
 {meta: artist Johnny Bush}
-{meta: writer Ivory Joe Hunter}
+{meta: composer Ivory Joe Hunter}
 
 {start_of_verse: Verse 1}
 [C]The light of dawn screams a yell starting [F]another day of [C]hell 

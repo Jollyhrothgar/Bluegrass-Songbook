@@ -1,6 +1,6 @@
 {meta: title Truck Drivin' Woman}
 {meta: artist Norma Jean}
-{meta: writer Roland Pike and Johnny Wilson}
+{meta: composer Roland Pike and Johnny Wilson}
 
 {start_of_verse: Verse 1}
 [G]A little boy is [C]what my daddy [D7]wanted

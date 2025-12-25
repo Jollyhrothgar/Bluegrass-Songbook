@@ -1,6 +1,6 @@
 {meta: title In The Misty Moonlight}
 {meta: artist Eddy Arnold}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]In the misty [C]moonlight by the flickering [G]firelight

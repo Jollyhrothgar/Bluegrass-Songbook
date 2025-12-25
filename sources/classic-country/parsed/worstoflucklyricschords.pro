@@ -1,6 +1,6 @@
 {meta: title Worst Of Luck}
 {meta: artist Cal Smith}
-{meta: writer Joe Poovey}
+{meta: composer Joe Poovey}
 
 {start_of_verse: Verse 1}
 [C]I just got the news I [F]understand you're [C]married

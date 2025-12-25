@@ -1,6 +1,6 @@
 {meta: title Ring On Her Finger Time On Her Hands}
 {meta: artist Lee Greenwood}
-{meta: writer Don Goodman, Mary Ann Kennedy, Pamela Rose}
+{meta: composer Don Goodman, Mary Ann Kennedy, Pamela Rose}
 
 {start_of_verse: Verse 1}
 [C]She stood before God [F]her family [C]and [F]friends

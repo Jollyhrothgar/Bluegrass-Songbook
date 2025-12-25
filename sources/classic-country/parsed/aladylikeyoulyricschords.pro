@@ -1,6 +1,6 @@
 {meta: title A Lady Like You}
 {meta: artist Glen Campbell}
-{meta: writer Keith R. Stegall and James D. Weatherly}
+{meta: composer Keith R. Stegall and James D. Weatherly}
 
 {start_of_verse: Verse 1}
 [C]Here I [F]am [C]just an [F]ordinary [C]man

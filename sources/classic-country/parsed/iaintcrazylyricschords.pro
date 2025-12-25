@@ -1,6 +1,6 @@
 {meta: title I Ain't Crazy}
 {meta: artist Earl Thomas Conley}
-{meta: writer Earl T. Conley, Rick Farrell, Bat McGrath}
+{meta: composer Earl T. Conley, Rick Farrell, Bat McGrath}
 
 {start_of_verse: Verse 1}
 [C]I've been working all [G7]week oh but I got it [C]done

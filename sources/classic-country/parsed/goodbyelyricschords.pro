@@ -1,6 +1,6 @@
 {meta: title Goodbye}
 {meta: artist Eddy Arnold}
-{meta: writer Larry Butler and Buddy Killen}
+{meta: composer Larry Butler and Buddy Killen}
 
 {start_of_verse: Verse 1}
 [G]It takes an awful lot to get me down

@@ -1,6 +1,6 @@
 {meta: title You'll Think Of Me}
 {meta: artist Waylon Jennings}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]You have her now and she's your life

@@ -1,6 +1,6 @@
 {meta: title I Saw You Today}
 {meta: artist Sammy Kershaw}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [G]Despite all the [C]distance and [G]time

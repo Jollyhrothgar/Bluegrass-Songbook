@@ -1,6 +1,6 @@
 {meta: title Let's Make Memories Tonight}
 {meta: artist Billy Walker}
-{meta: writer Floyd Tillman}
+{meta: composer Floyd Tillman}
 
 {start_of_verse: Verse 1}
 [G]This is our last night [D7]together

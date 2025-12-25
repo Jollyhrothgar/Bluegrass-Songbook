@@ -1,6 +1,6 @@
 {meta: title All I’ve Got Left}
 {meta: artist Norma Jean}
-{meta: writer Sharon Hoggins}
+{meta: composer Sharon Hoggins}
 
 {start_of_verse: Verse 1}
 [G]You have taken all the love I gave 

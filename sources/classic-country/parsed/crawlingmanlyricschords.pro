@@ -1,6 +1,6 @@
 {meta: title Crawling Man Lyrics Chords}
 {meta: artist Loretta Lynn}
-{meta: writer David Wilkins}
+{meta: composer David Wilkins}
 
 {start_of_verse: Verse 1}
 [C]Walk on out the [F]door I left it [C]open

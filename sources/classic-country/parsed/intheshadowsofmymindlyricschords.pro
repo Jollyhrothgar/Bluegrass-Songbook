@@ -1,6 +1,6 @@
 {meta: title In The Shadows of My Mind}
 {meta: artist Vernon Oxford}
-{meta: writer E. E. Collins}
+{meta: composer E. E. Collins}
 
 {start_of_verse: Verse 1}
 [C]In the shadows of my [F]mind

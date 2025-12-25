@@ -1,6 +1,6 @@
 {meta: title Ding A Ling The Christmas Bell}
 {meta: artist Lynn Anderson}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]Gather round and I will tell the story of a Christmas [D7]bell

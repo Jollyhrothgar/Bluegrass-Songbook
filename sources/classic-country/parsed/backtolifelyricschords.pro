@@ -1,6 +1,6 @@
 {meta: title Back To Life}
 {meta: artist Mel Tillis}
-{meta: writer Joyce McCord}
+{meta: composer Joyce McCord}
 
 {start_of_verse: Verse 1}
 [C]When the years show in our faces

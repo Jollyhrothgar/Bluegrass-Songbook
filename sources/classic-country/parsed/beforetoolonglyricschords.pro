@@ -1,6 +1,6 @@
 {meta: title Before Too Long}
 {meta: artist Red Sovine}
-{meta: writer Joe Hayes}
+{meta: composer Joe Hayes}
 
 {start_of_verse: Verse 1}
 [G7](Before too long will be too [C]late)

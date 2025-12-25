@@ -1,6 +1,6 @@
 {meta: title If You Only Knew}
 {meta: artist Reba McEntire}
-{meta: writer Jane Mariash and Diana Rae}
+{meta: composer Jane Mariash and Diana Rae}
 
 {start_of_verse: Verse 1}
 [C]So here you [F]are again [G7]standing at my [C]door

@@ -1,6 +1,6 @@
 {meta: title Sailing Home For Christmas}
 {meta: artist Doug Stone}
-{meta: writer Lewis Anderson}
+{meta: composer Lewis Anderson}
 
 {start_of_verse: Verse 1}
 [G]They looked out their [Em]windows at the [C]ocean that [G]surrounds them

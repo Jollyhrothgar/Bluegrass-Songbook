@@ -1,6 +1,6 @@
 {meta: title Am I Locking Someone In}
 {meta: artist Mel Tillis}
-{meta: writer Joe Hayes and Fatima Atchley}
+{meta: composer Joe Hayes and Fatima Atchley}
 
 {start_of_verse: Verse 1}
 [G]When you left I changed the locks on all the [C]doors

@@ -1,6 +1,6 @@
 {meta: title I Got Stripes}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash and Charlie Williams}
+{meta: composer Johnny Cash and Charlie Williams}
 
 {start_of_verse: Verse 1}
 [G]On A Monday I Was arrested (Uh [D7]Huh)

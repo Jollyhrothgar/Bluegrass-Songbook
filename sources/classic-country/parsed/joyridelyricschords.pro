@@ -1,6 +1,6 @@
 {meta: title Joyride}
 {meta: artist Jack Greene}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 Joyride

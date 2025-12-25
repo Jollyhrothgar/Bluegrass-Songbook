@@ -1,6 +1,6 @@
 {meta: title I Can't Forget You}
 {meta: artist Patsy Cline}
-{meta: writer W.S. Stevenson and Carl Belew}
+{meta: composer W.S. Stevenson and Carl Belew}
 
 {start_of_verse: Verse 1}
 [G]I can't [C]forget you  I've got these memories of [G]you

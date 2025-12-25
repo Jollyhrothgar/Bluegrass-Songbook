@@ -1,6 +1,6 @@
 {meta: title Somebody Save Me}
 {meta: artist Ferlin Husky}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [C]Throw me a [F]life line I'm caught in the [C]sea 

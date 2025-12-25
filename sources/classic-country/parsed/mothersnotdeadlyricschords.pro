@@ -1,6 +1,6 @@
 {meta: title Mother's Not Dead}
 {meta: artist Bill Monroe}
-{meta: writer Ralph Edmond Stanley}
+{meta: composer Ralph Edmond Stanley}
 
 {start_of_verse: Verse 1}
 [G]Mothers not dead she's only a [D7]sleeping

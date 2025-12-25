@@ -1,6 +1,6 @@
 {meta: title Southern California}
 {meta: artist George Jones}
-{meta: writer George Richey, Billy Sherrill, Roger Dale Bowling}
+{meta: composer George Richey, Billy Sherrill, Roger Dale Bowling}
 
 {start_of_verse: Verse 1}
 [G]You always said someday you'd go to live

@@ -1,6 +1,6 @@
 {meta: title I'm in the Middle of a Heartache}
 {meta: artist Wanda Jackson}
-{meta: writer Wanda Jackson, Pat Franzese, Laurie Christenson}
+{meta: composer Wanda Jackson, Pat Franzese, Laurie Christenson}
 
 {start_of_verse: Verse 1}
 [G]I'm in the middle of a heartache   half [C]out   half [A7]in

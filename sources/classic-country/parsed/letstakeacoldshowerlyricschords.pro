@@ -1,6 +1,6 @@
 {meta: title Let's Take A Cold Shower}
 {meta: artist Vernon Oxford}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [C]Someone told someone and [F]someone told [C]you

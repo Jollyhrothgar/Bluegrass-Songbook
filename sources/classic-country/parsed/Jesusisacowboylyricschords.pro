@@ -1,6 +1,6 @@
 {meta: title Jesus Is a Cowboy}
 {meta: artist Norma Jean}
-{meta: writer Vera Lakey}
+{meta: composer Vera Lakey}
 
 {start_of_verse: Verse 1}
 [C]They say a cowboy’s place is on the prairie

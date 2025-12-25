@@ -1,6 +1,6 @@
 {meta: title Drinking Thing}
 {meta: artist Gary Stewart}
-{meta: writer Wayne Carson}
+{meta: composer Wayne Carson}
 
 {start_of_verse: Verse 1}
 [C]Everyday I tell [F]myself it's tempo[G7]rary

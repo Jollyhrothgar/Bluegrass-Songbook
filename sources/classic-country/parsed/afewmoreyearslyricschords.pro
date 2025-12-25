@@ -1,6 +1,6 @@
 {meta: title A Few More Years}
 {meta: artist White River Bluegrass}
-{meta: writer Ralph Stanley}
+{meta: composer Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [C]A few more years shall [G7]roll

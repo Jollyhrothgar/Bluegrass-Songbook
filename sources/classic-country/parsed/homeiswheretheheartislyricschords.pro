@@ -1,6 +1,6 @@
 {meta: title Home Is Where The Heart Is}
 {meta: artist Elvis Presley}
-{meta: writer Hal David and Sherman Edwards}
+{meta: composer Hal David and Sherman Edwards}
 
 {start_of_verse: Verse 1}
 [C]Home is where the [Am]heart is

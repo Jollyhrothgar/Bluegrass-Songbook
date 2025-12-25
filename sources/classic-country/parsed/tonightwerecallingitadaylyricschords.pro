@@ -1,6 +1,6 @@
 {meta: title Tonight We're Calling It A Day}
 {meta: artist Charlie Walker}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Just for tonight pretend you haven't [C]told me

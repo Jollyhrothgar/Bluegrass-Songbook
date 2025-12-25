@@ -1,6 +1,6 @@
 {meta: title Blues Plus Booze}
 {meta: artist Stonewall Jackson}
-{meta: writer Earl Brown}
+{meta: composer Earl Brown}
 
 {start_of_verse: Verse 1}
 [C]Just last night my love [G7]said she was [C]leaving

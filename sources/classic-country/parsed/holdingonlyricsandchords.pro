@@ -1,6 +1,6 @@
 {meta: title Holding On}
 {meta: artist Tanya Tucker}
-{meta: writer Rafe VanHoy}
+{meta: composer Rafe VanHoy}
 
 {start_of_verse: Verse 1}
 [C]Here we go so [F]hold my hand a little [C]tighter

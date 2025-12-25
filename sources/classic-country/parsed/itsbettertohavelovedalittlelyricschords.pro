@@ -1,6 +1,6 @@
 {meta: title It's Better To Have Loved A Little}
 {meta: artist Hank Thompson}
-{meta: writer Joe South}
+{meta: composer Joe South}
 
 {start_of_verse: Verse 1}
 [G]I hate to see it end so sudden

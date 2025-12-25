@@ -1,6 +1,6 @@
 {meta: title I’ll Never Pass This Way Again}
 {meta: artist Slim Whitman}
-{meta: writer Dale Parker}
+{meta: composer Dale Parker}
 
 {start_of_verse: Verse 1}
 [C]When traveling down the road of [G7]time

@@ -1,6 +1,6 @@
 {meta: title Don't Keep It A Secret}
 {meta: artist Bob Wills}
-{meta: writer Don Larkin and Joe Simpson}
+{meta: composer Don Larkin and Joe Simpson}
 
 {start_of_verse: Verse 1}
 [G]If your love for me has [B7]died

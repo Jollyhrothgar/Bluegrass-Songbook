@@ -1,6 +1,6 @@
 {meta: title How Do You Think I Feel}
 {meta: artist Elvis Presley}
-{meta: writer Wayne Walker and Webb Pierce}
+{meta: composer Wayne Walker and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]How do you think I feel

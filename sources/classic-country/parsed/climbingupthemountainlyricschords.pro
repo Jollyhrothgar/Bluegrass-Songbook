@@ -1,6 +1,6 @@
 {meta: title Climbing Up The Mountain}
 {meta: artist Don Gibson}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [G](I'm climbin' up the mountain I'm climbin' up the mountain)

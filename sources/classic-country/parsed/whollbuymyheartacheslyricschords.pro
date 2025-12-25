@@ -1,6 +1,6 @@
 {meta: title Who'll Buy My Heartaches}
 {meta: artist Carl Smith}
-{meta: writer Frances Kane, Kay Twomey}
+{meta: composer Frances Kane, Kay Twomey}
 
 {start_of_verse: Verse 1}
 [C]A sign in the window said cottage for [F]sale

@@ -1,6 +1,6 @@
 {meta: title Away Out There}
 {meta: artist Bob Wills}
-{meta: writer Bob Nolan}
+{meta: composer Bob Nolan}
 
 {start_of_verse: Verse 1}
 [C]A lonely spot I know where no man will [G7]go 

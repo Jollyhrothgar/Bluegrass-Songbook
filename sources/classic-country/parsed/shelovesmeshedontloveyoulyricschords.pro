@@ -1,6 +1,6 @@
 {meta: title She Loves Me She Don't Love You}
 {meta: artist George Strait}
-{meta: writer Conway Twitty}
+{meta: composer Conway Twitty}
 
 {start_of_verse: Verse 1}
 [C]Well now I can see you're dancin' every dance with her

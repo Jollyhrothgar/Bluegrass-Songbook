@@ -1,6 +1,6 @@
 {meta: title Here's Lookin' At You}
 {meta: artist Mel Tillis}
-{meta: writer Sandy Pinkard, John Durrill, Sam Atchley}
+{meta: composer Sandy Pinkard, John Durrill, Sam Atchley}
 
 {start_of_verse: Verse 1}
 [C]When the light from the beer sign [G7]shines on your face

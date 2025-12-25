@@ -1,6 +1,6 @@
 {meta: title Don't Forget I Still Love You}
 {meta: artist Connie Smith}
-{meta: writer Guy Louis}
+{meta: composer Guy Louis}
 
 {start_of_verse: Verse 1}
 [G]Don't forget I still [C]love [G]you

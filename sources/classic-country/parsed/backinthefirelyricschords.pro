@@ -1,6 +1,6 @@
 {meta: title Back In The Fire}
 {meta: artist Gene Watson}
-{meta: writer Rory Michael Bourke and Mike Reid}
+{meta: composer Rory Michael Bourke and Mike Reid}
 
 {start_of_verse: Verse 1}
 [G]My mind knows full well I should leave [C]here

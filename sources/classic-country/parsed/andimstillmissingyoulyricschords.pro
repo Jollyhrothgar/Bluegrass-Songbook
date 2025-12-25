@@ -1,6 +1,6 @@
 {meta: title And I'm Still Missing You}
 {meta: artist Dottie West}
-{meta: writer Chuck Glaser and James Payne}
+{meta: composer Chuck Glaser and James Payne}
 
 {start_of_verse: Verse 1}
 [G]People laugh and [C]love and cry and [G]I'm still [D7]missing [G]you

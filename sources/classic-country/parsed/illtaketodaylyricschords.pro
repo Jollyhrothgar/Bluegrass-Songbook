@@ -1,6 +1,6 @@
 {meta: title I'll Take Today}
 {meta: artist Tanya Tucker}
-{meta: writer Kent M. Robbins and Will Robinson}
+{meta: composer Kent M. Robbins and Will Robinson}
 
 {start_of_verse: Verse 1}
 [G]Yeah he's the [D7]one the [G]one I told you all [C]about [G]

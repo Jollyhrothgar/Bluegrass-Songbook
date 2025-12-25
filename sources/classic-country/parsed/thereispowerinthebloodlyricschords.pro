@@ -1,6 +1,6 @@
 {meta: title There is Power in the Blood}
 {meta: artist Marty Robbins}
-{meta: writer Allen Hall, Lewis Jones, Todd Smith, Nicol Sponberg}
+{meta: composer Allen Hall, Lewis Jones, Todd Smith, Nicol Sponberg}
 
 {start_of_verse: Verse 1}
 [G]Would you be free from your [C]burden of [G]sin

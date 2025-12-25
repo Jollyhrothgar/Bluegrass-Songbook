@@ -1,6 +1,6 @@
 {meta: title What God Has Done}
 {meta: artist Marty Robbins}
-{meta: writer Martin Robbinson and Ronny Robbinson}
+{meta: composer Martin Robbinson and Ronny Robbinson}
 
 {start_of_verse: Verse 1}
 [C]What God has done is not a hidden [F][C7]secret

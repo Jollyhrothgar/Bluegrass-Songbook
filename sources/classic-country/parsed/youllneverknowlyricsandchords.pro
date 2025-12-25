@@ -1,6 +1,6 @@
 {meta: title You'll Never Know}
 {meta: artist Jim Reeves}
-{meta: writer Mack Gordon and Harry Warren}
+{meta: composer Mack Gordon and Harry Warren}
 
 {start_of_verse: Verse 1}
 [C]You'll never know just how much   I love [Dm]you

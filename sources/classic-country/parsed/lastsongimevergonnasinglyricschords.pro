@@ -1,6 +1,6 @@
 {meta: title Last Song I'm Ever Gonna Sing}
 {meta: artist The Everly Brothers}
-{meta: writer Jerry Allison and Sonny Curtis}
+{meta: composer Jerry Allison and Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [C]This is [F]the last song I'm ever gonna [C]sing

@@ -1,6 +1,6 @@
 {meta: title Feliz Navidad}
 {meta: artist Clay Walker}
-{meta: writer José Feliciano}
+{meta: composer José Feliciano}
 
 {start_of_verse: Verse 1}
 [G]Feliz Navidad  [D7][C]Feliz [G]Navidad

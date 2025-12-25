@@ -1,6 +1,6 @@
 {meta: title I Can't Get Used To Being Lonely}
 {meta: artist Connie Smith}
-{meta: writer Melba Montgomery}
+{meta: composer Melba Montgomery}
 
 {start_of_verse: Verse 1}
 [C]I've got to get [F]used to bein' [C]lonely

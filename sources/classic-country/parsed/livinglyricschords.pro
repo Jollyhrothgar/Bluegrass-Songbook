@@ -1,6 +1,6 @@
 {meta: title Living}
 {meta: artist George Morgan}
-{meta: writer George Morgan and Tommy Hill}
+{meta: composer George Morgan and Tommy Hill}
 
 {start_of_verse: Verse 1}
 [G]Living isn't [C]crying in the [G]darkness

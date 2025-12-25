@@ -1,6 +1,6 @@
 {meta: title The Town That Broke My Heart}
 {meta: artist Bobby Bare}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [G]Mister I want a room at the top of your [C]hotel

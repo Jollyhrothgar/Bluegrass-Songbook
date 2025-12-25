@@ -1,6 +1,6 @@
 {meta: title Cradle Of Love}
 {meta: artist Johnny Preston}
-{meta: writer Jackie L. Fautheree and Wayne Gray}
+{meta: composer Jackie L. Fautheree and Wayne Gray}
 
 {start_of_verse: Verse 1}
 [G]Well rock-a-bye baby in the [Em]treetop

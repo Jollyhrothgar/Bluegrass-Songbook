@@ -1,6 +1,6 @@
 {meta: title Let Me Hear You Say I Love You}
 {meta: artist Faron Young}
-{meta: writer Charles Underwood}
+{meta: composer Charles Underwood}
 
 {start_of_verse: Verse 1}
 [G]Let me [D7]hear you say I love you one more [G]time [D7]

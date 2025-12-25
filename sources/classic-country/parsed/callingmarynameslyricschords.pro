@@ -1,6 +1,6 @@
 {meta: title Calling Mary Names}
 {meta: artist Eddy Arnold}
-{meta: writer Wayne Carson Thompson}
+{meta: composer Wayne Carson Thompson}
 
 {start_of_verse: Verse 1}
 [C]I used to get in trouble with my momma and daddy

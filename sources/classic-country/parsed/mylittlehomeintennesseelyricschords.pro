@@ -1,6 +1,6 @@
 {meta: title My Little Home In Tennessee}
 {meta: artist Mac Wiseman}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]I am always dreaming [C]of my little [Am]home

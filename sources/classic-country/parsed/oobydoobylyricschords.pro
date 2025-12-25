@@ -1,6 +1,6 @@
 {meta: title Ooby Dooby}
 {meta: artist Roy Orbison}
-{meta: writer Wade Moore and Dick Penner}
+{meta: composer Wade Moore and Dick Penner}
 
 {start_of_verse: Verse 1}
 [C]Hey baby jump over here

@@ -1,6 +1,6 @@
 {meta: title I'll Repossess My Heart}
 {meta: artist Kitty Wells}
-{meta: writer Paul Yandell}
+{meta: composer Paul Yandell}
 
 {start_of_verse: Verse 1}
 [G]I'm walking in to repossess my [C]heart

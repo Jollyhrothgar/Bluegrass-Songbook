@@ -1,6 +1,6 @@
 {meta: title St. Louis Blues}
 {meta: artist Merle Haggard}
-{meta: writer William Handy}
+{meta: composer William Handy}
 
 {start_of_verse: Verse 1}
 [C]Lord I hate to see [F]that evening sun go [C]down

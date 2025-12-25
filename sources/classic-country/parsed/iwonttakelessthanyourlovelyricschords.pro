@@ -1,6 +1,6 @@
 {meta: title I Won’t Take Less Than Your Love}
 {meta: artist Tanya Tucker}
-{meta: writer P. Overstreet and D. Schitz}
+{meta: composer P. Overstreet and D. Schitz}
 
 {start_of_verse: Verse 1}
 [C]How much do I owe you said the husband to the wife

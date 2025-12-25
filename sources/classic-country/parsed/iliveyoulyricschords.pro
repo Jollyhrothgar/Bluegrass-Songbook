@@ -1,6 +1,6 @@
 {meta: title I Live You}
 {meta: artist Charley Pride}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]I don't just love you I live [F]you

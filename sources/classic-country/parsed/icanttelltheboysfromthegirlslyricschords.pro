@@ -1,6 +1,6 @@
 {meta: title I Can’t Tell The Boys From The Girls}
 {meta: artist Earl Scruggs}
-{meta: writer Bob Leftridge and Lester Flatt}
+{meta: composer Bob Leftridge and Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]Well I've been a [C]bachelor all my [G]life

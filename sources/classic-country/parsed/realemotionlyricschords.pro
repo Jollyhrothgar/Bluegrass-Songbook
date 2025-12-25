@@ -1,6 +1,6 @@
 {meta: title Real Emotion}
 {meta: artist Anne Murray}
-{meta: writer Alan O'Day}
+{meta: composer Alan O'Day}
 
 {start_of_verse: Verse 1}
 [C]Nothing much happens to me

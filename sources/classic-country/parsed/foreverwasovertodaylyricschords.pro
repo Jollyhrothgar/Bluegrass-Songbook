@@ -1,6 +1,6 @@
 {meta: title Forever Was Over Today}
 {meta: artist Billy Walker}
-{meta: writer Arthur Leo Owens}
+{meta: composer Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G7]With [C]you on my [G7]mind and my [C]hands full of [F]time

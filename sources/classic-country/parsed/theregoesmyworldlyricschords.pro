@@ -1,6 +1,6 @@
 {meta: title There Goes My World}
 {meta: artist George Morgan}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]There goes my world a smile on her [G7]face

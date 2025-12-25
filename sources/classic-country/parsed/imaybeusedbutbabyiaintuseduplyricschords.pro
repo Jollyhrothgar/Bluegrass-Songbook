@@ -1,6 +1,6 @@
 {meta: title I May Be Used (But Baby I Ain't Used Up)}
 {meta: artist Waylon Jennings}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]Well now baby you're a looker and I know what you're looking [C]for

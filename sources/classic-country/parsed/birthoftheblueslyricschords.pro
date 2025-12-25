@@ -1,6 +1,6 @@
 {meta: title Birth Of The Blues}
 {meta: artist McGuire Sisters}
-{meta: writer B.G. DeSylva, Ray Henderson. Lew Brown}
+{meta: composer B.G. DeSylva, Ray Henderson. Lew Brown}
 
 {start_of_verse: Verse 1}
 [G]They heard the breeze in the [D7]trees

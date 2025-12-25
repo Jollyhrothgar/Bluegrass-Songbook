@@ -1,6 +1,6 @@
 {meta: title I've Been Around Enough To Know}
 {meta: artist Conway Twitty}
-{meta: writer Bob Mc Dill and Dickey Lee}
+{meta: composer Bob Mc Dill and Dickey Lee}
 
 {start_of_verse: Verse 1}
 [G]Hush don't talk now

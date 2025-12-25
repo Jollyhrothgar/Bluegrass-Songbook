@@ -1,6 +1,6 @@
 {meta: title One On The Right Was On The Left}
 {meta: artist Johnny Cash}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [G]There once was a musical troop [G7]a pickin' [C]singin' folk [G]group

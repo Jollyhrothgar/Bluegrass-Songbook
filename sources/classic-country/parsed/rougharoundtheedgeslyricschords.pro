@@ -1,6 +1,6 @@
 {meta: title Rough Around The Edges}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]It’ll be rough around the [F]edges

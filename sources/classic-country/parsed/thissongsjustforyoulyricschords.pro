@@ -1,6 +1,6 @@
 {meta: title This Song's Just For You}
 {meta: artist Gene Watson}
-{meta: writer Cecil R. Harris and Perk Williams}
+{meta: composer Cecil R. Harris and Perk Williams}
 
 {start_of_verse: Verse 1}
 [C]Of all the songs the world is [G7]singing

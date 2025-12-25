@@ -1,6 +1,6 @@
 {meta: title Sorrowful Angels}
 {meta: artist Patty Loveless}
-{meta: writer Tommy Conners and Leslie Satcher}
+{meta: composer Tommy Conners and Leslie Satcher}
 
 {start_of_verse: Verse 1}
 [C]She loved him most when his eyes were gray 

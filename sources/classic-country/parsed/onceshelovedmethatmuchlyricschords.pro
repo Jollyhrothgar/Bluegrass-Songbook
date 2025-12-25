@@ -1,6 +1,6 @@
 {meta: title Once She Loved Me That Much}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]It only [F]changed her [C]touch to turn your world [C][F]around

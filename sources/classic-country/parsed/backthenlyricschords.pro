@@ -1,6 +1,6 @@
 {meta: title Back Then}
 {meta: artist Wanda Jackson}
-{meta: writer Jerry Crutchfield}
+{meta: composer Jerry Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]I've loved you for so [G7]long that it's [C]hard for me to change

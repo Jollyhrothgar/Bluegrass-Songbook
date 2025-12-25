@@ -1,6 +1,6 @@
 {meta: title The Roving Gambler}
 {meta: artist Eddy Arnold}
-{meta: writer Elie Seigmeister}
+{meta: composer Elie Seigmeister}
 
 {start_of_verse: Verse 1}
 [C]I am a roving gambler I've [Em]gambled all [C]around

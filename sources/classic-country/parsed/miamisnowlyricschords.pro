@@ -1,6 +1,6 @@
 {meta: title Miami Snow}
 {meta: artist Hank Snow}
-{meta: writer Cindy Walker and Chet Atkins}
+{meta: composer Cindy Walker and Chet Atkins}
 
 {start_of_verse: Verse 1}
 [C]When there's icicles hangin' on the green palm trees

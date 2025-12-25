@@ -1,6 +1,6 @@
 {meta: title I Run For My Life}
 {meta: artist Jim Ed Brown}
-{meta: writer Bob Tubert and Margie Bowes}
+{meta: composer Bob Tubert and Margie Bowes}
 
 {start_of_verse: Verse 1}
 [C]I've seen the travel folders where to go and what to [C7]do

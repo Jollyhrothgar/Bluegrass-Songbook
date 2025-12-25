@@ -1,6 +1,6 @@
 {meta: title Next In Line}
 {meta: artist Conway Twitty}
-{meta: writer Wayne Kemp and Curtis Wayne}
+{meta: composer Wayne Kemp and Curtis Wayne}
 
 {start_of_verse: Verse 1}
 [C]See her there at the table  watch her tear at the label

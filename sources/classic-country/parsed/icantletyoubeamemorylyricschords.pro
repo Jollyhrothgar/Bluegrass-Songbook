@@ -1,6 +1,6 @@
 {meta: title I Can't Let You Be A Memory}
 {meta: artist David Allan Coe}
-{meta: writer Warren Haynes}
+{meta: composer Warren Haynes}
 
 {start_of_verse: Verse 1}
 [E7]Spent a lot of [D7]time playing the [G]field

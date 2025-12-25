@@ -1,6 +1,6 @@
 {meta: title Big Jack}
 {meta: artist Charlie Rich}
-{meta: writer Wallace Rich}
+{meta: composer Wallace Rich}
 
 {start_of_verse: Verse 1}
 [C]Big Jack you done me wrong

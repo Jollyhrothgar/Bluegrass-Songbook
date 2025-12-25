@@ -1,6 +1,6 @@
 {meta: title I Cried All The Way To The Altar}
 {meta: artist Patsy Cline}
-{meta: writer Bobbie Flournoy}
+{meta: composer Bobbie Flournoy}
 
 {start_of_verse: Verse 1}
 [G]I cried all the way [G7]to the [C]altar

@@ -1,6 +1,6 @@
 {meta: title Saturday Satan Sunday Saint}
 {meta: artist Ernest Tubb}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]Saturday satan Sunday [Am]saint

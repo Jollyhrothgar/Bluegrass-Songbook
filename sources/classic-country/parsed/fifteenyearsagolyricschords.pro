@@ -1,6 +1,6 @@
 {meta: title Fifteen Years Ago}
 {meta: artist Conway Twitty}
-{meta: writer Raymond A. Smith}
+{meta: composer Raymond A. Smith}
 
 {start_of_verse: Verse 1}
 [C]I saw a man today who [G7]said he talked to [C]you

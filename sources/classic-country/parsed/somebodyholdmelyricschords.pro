@@ -1,6 +1,6 @@
 {meta: title Somebody Hold Me}
 {meta: artist Narvel Felts}
-{meta: writer Sue Richards and Ava Aldridge}
+{meta: composer Sue Richards and Ava Aldridge}
 
 {start_of_verse: Verse 1}
 [C]Here she comes and just look at the way she's [F]smiling

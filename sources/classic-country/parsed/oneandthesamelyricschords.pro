@@ -1,6 +1,6 @@
 {meta: title One And The Same}
 {meta: artist George Morgan}
-{meta: writer George Morgan}
+{meta: composer George Morgan}
 
 {start_of_verse: Verse 1}
 [C]There's something about the way she skips [Em]across the room

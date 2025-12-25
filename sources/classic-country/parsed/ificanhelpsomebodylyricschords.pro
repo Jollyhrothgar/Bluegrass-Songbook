@@ -1,6 +1,6 @@
 {meta: title If I Can Help Somebody}
 {meta: artist Don Gibson}
-{meta: writer Alma Bazel Androzzo}
+{meta: composer Alma Bazel Androzzo}
 
 {start_of_verse: Verse 1}
 [C]If I can help some[Am]body as [F]I pass [C]along

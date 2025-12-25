@@ -1,6 +1,6 @@
 {meta: title I Still Care}
 {meta: artist Mickey Gilley}
-{meta: writer Jack Jessup}
+{meta: composer Jack Jessup}
 
 {start_of_verse: Verse 1}
 [G]Some old love [C]letters [G]read one or two

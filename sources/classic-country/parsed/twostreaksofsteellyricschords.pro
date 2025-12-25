@@ -1,6 +1,6 @@
 {meta: title Two Streaks Of Steel}
 {meta: artist Waylon Jennings}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]Two streaks of steel [C]stretching [D7]cross the [G]land

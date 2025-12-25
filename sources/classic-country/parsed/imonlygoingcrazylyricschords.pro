@@ -1,6 +1,6 @@
 {meta: title I'm Only Going Crazy}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes and Vern Gosdin}
+{meta: composer Max D. Barnes and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [G7]Take the [C]house take [F]our [C]dreams

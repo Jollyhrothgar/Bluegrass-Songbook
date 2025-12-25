@@ -1,6 +1,6 @@
 {meta: title Rose Knows}
 {meta: artist David Allan Coe}
-{meta: writer Don Goodman, Mary Ann Kennedy, Pam Rose}
+{meta: composer Don Goodman, Mary Ann Kennedy, Pam Rose}
 
 {start_of_verse: Verse 1}
 [G]I told you from the start I couldn't give you my heart

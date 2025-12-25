@@ -1,6 +1,6 @@
 {meta: title Crying In The Rain}
 {meta: artist Everly Brothers}
-{meta: writer Howard Greenfield and Carole King}
+{meta: composer Howard Greenfield and Carole King}
 
 {start_of_verse: Verse 1}
 [C]I'll [F]never [G7]let you [C]see

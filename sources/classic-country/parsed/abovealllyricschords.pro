@@ -1,6 +1,6 @@
 {meta: title Above All}
 {meta: artist Randy Travis}
-{meta: writer Paul Baloche and Lenny LeBlanc}
+{meta: composer Paul Baloche and Lenny LeBlanc}
 
 {start_of_verse: Verse 1}
 [C]Above all [F]powers [G7]above all [C]kings

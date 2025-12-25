@@ -1,6 +1,6 @@
 {meta: title Happy Birthday Darlin'}
 {meta: artist Conway Twitty}
-{meta: writer Chuck Howard}
+{meta: composer Chuck Howard}
 
 {start_of_verse: Verse 1}
 [Em]    [Am]     Hello darlin' [F]    [C]happy birthday

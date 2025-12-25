@@ -1,6 +1,6 @@
 {meta: title Ain't It Good}
 {meta: artist Barbara Mandrell}
-{meta: writer Freddy Weller}
+{meta: composer Freddy Weller}
 
 {start_of_verse: Verse 1}
 [F]Na na na na [G7]na na na na [C]na na na na [F]na na na

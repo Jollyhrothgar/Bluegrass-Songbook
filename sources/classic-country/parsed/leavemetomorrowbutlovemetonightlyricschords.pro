@@ -1,6 +1,6 @@
 {meta: title Leave Me Tomorrow But Love Me Tonight}
 {meta: artist Johnny Rodriguez}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [C]Yes it’s all over [G7]there’s no reason to stay

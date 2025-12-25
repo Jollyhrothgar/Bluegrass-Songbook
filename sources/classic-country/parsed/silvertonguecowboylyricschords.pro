@@ -1,6 +1,6 @@
 {meta: title Silver Tongue Cowboy}
 {meta: artist Carl Smith}
-{meta: writer Glenn E. Ashworth and Dana Sigmon}
+{meta: composer Glenn E. Ashworth and Dana Sigmon}
 
 {start_of_verse: Verse 1}
 [C]In any saloon in any town Texas

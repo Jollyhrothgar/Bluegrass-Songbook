@@ -1,6 +1,6 @@
 {meta: title I Still Dream About You}
 {meta: artist Tammy Wynette}
-{meta: writer Agnes Wilburn}
+{meta: composer Agnes Wilburn}
 
 {start_of_verse: Verse 1}
 [C]I wonder if you [F]wonder

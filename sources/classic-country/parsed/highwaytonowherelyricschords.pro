@@ -1,6 +1,6 @@
 {meta: title Highway To Nowhere}
 {meta: artist Jim Reeves}
-{meta: writer Jim Hess}
+{meta: composer Jim Hess}
 
 {start_of_verse: Verse 1}
 [G]I'm traveling the highway to [C]nowhere 

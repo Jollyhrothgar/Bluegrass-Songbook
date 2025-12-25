@@ -1,6 +1,6 @@
 {meta: title Whiskey Chasin'}
 {meta: artist Joe Stampley}
-{meta: writer Buddy Cannon}
+{meta: composer Buddy Cannon}
 
 {start_of_verse: Verse 1}
 [G]Looks like this [Am]bad rainy weather [D7]kept every one else [G]in

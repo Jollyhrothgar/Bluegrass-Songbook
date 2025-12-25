@@ -1,6 +1,6 @@
 {meta: title I Don't Want You To Go}
 {meta: artist Tanya Tucker}
-{meta: writer Bruce Roberts and Allee Willis}
+{meta: composer Bruce Roberts and Allee Willis}
 
 {start_of_verse: Verse 1}
 [G]Here I am alone and I don't [C]understand 

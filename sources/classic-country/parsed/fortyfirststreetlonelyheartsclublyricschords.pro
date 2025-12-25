@@ -1,6 +1,6 @@
 {meta: title Forty First Street Lonely Heart's Club}
 {meta: artist Buck Owens}
-{meta: writer Dennis J. Knutson and James Brian Shaw}
+{meta: composer Dennis J. Knutson and James Brian Shaw}
 
 {start_of_verse: Verse 1}
 [G]They're gonna make me a lifetime [D7]member

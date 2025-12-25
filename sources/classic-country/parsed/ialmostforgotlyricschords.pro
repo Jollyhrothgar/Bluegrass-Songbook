@@ -1,6 +1,6 @@
 {meta: title I Almost Forgot}
 {meta: artist Tammy Wynette}
-{meta: writer Karen Ruth Staley}
+{meta: composer Karen Ruth Staley}
 
 {start_of_verse: Verse 1}
 [G]So we meet again  [G7]how long has it [C]been

@@ -1,6 +1,6 @@
 {meta: title Dallas}
 {meta: artist Connie Smith}
-{meta: writer Leona Williams}
+{meta: composer Leona Williams}
 
 {start_of_verse: Verse 1}
 [C]Dallas I'll be coming home it [F]won't be very [C]long

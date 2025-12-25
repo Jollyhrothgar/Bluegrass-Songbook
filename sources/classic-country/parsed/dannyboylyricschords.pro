@@ -1,6 +1,6 @@
 {meta: title Danny Boy}
 {meta: artist Ray Price}
-{meta: writer Fred Weatherly}
+{meta: composer Fred Weatherly}
 
 {start_of_verse: Verse 1}
 [C]Oh Danny boy the pipes the pipes are [F]calling

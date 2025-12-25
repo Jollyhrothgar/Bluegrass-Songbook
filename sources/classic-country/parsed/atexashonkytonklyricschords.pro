@@ -1,6 +1,6 @@
 {meta: title A Texas Honky Tonk}
 {meta: artist Darrell McCall}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]Tonight she's with him and [C]they're drinking cham[Am]pagne

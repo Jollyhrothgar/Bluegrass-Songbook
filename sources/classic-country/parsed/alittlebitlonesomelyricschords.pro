@@ -1,6 +1,6 @@
 {meta: title A Little Bit Lonesome}
 {meta: artist Hank Locklin}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]A little bit lonesome a little bit [C]blue 

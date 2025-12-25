@@ -1,6 +1,6 @@
 {meta: title Kathy On My Mind}
 {meta: artist Billy Walker}
-{meta: writer Orville Couch and Eddie McDuff}
+{meta: composer Orville Couch and Eddie McDuff}
 
 {start_of_verse: Verse 1}
 [G]I'm walking [D7]down the same [G]old [Em]street

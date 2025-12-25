@@ -1,6 +1,6 @@
 {meta: title God Bless America Again}
 {meta: artist Bobby Bare}
-{meta: writer Bobby Bare and Boice Hawkins}
+{meta: composer Bobby Bare and Boice Hawkins}
 
 {start_of_verse: Verse 1}
 [C]God bless [F]America [G7]again

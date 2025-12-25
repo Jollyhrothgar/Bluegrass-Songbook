@@ -1,6 +1,6 @@
 {meta: title The Answer Is Love}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton and Buck Trent}
+{meta: composer Dolly Parton and Buck Trent}
 
 {start_of_verse: Verse 1}
 [G]Things seem to worsen as time goes along 

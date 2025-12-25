@@ -1,6 +1,6 @@
 {meta: title Be There For Me Baby}
 {meta: artist Johnny Lee}
-{meta: writer Tommy Rocco and Charlie Black}
+{meta: composer Tommy Rocco and Charlie Black}
 
 {start_of_verse: Verse 1}
 [C]Every morning I go scratch for the [G7]almighty buck

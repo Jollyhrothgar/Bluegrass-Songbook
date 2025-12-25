@@ -1,6 +1,6 @@
 {meta: title Till You Can Make It On Your Own}
 {meta: artist Gene Watson}
-{meta: writer Arthur Leo Owens and Johnny McRae}
+{meta: composer Arthur Leo Owens and Johnny McRae}
 
 {start_of_verse: Verse 1}
 [C]I don't [G7]wanna know who's [C]loved you 

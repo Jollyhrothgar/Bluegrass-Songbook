@@ -1,6 +1,6 @@
 {meta: title Frankie And Johnny}
 {meta: artist Hank Snow}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [G]Now Frankie and Johnny were sweethearts

@@ -1,6 +1,6 @@
 {meta: title Texas Is Calling Me Home}
 {meta: artist Ray Price}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]The city lights gave me that rambling [Dm]fever

@@ -1,6 +1,6 @@
 {meta: title America's Sweetheart}
 {meta: artist Mel Tillis}
-{meta: writer Bob Corbin}
+{meta: composer Bob Corbin}
 
 {start_of_verse: Verse 1}
 [C]Kenworths and Peterbilts parked in the [F]lot

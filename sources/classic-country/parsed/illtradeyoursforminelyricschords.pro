@@ -1,6 +1,6 @@
 {meta: title I’ll Trade Yours For Mine}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [G]I’ve got some love and you’ve got some love 

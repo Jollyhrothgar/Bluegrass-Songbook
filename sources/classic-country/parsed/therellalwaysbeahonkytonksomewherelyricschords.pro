@@ -1,6 +1,6 @@
 {meta: title There'll Always Be A Honky Tonk Somewhere}
 {meta: artist Randy Travis}
-{meta: writer Johnny McRae and Steve Clark}
+{meta: composer Johnny McRae and Steve Clark}
 
 {start_of_verse: Verse 1}
 [C]There may not be a Super Bowl in [F]208[C]3

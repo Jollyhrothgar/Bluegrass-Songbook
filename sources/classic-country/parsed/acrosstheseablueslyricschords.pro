@@ -1,6 +1,6 @@
 {meta: title Across the Sea Blues}
 {meta: artist Longview}
-{meta: writer Jimmy Martin}
+{meta: composer Jimmy Martin}
 
 {start_of_verse: Verse 1}
 [G]I’m going across the deep blue [C]sea

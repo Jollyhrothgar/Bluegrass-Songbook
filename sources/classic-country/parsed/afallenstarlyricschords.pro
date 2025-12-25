@@ -1,6 +1,6 @@
 {meta: title A Fallen Star}
 {meta: artist Jim Reeves}
-{meta: writer James Joiner}
+{meta: composer James Joiner}
 
 {start_of_verse: Verse 1}
 [C]A star fell from [C7]heaven  [F]right [A7]into my [D7]arms

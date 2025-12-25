@@ -1,6 +1,6 @@
 {meta: title I've Got A Picture Of Us On My Mind}
 {meta: artist Loretta Lynn}
-{meta: writer Bobby L. Harden}
+{meta: composer Bobby L. Harden}
 
 {start_of_verse: Verse 1}
 [G]In a hot dusty bar room in [C]town

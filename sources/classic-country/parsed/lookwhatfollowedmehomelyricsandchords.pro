@@ -1,6 +1,6 @@
 {meta: title Look What Followed Me Home}
 {meta: artist Ray Price}
-{meta: writer Roger Brown and Rick Peoples}
+{meta: composer Roger Brown and Rick Peoples}
 
 {start_of_verse: Verse 1}
 [G7]I went [C]out with some [Dm]old friends and I [G7]had a good [Am]time

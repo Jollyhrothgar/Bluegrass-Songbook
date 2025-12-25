@@ -1,6 +1,6 @@
 {meta: title Don't Think It Ain't Been Fun Dear}
 {meta: artist Lefty Frizzel}
-{meta: writer Elizabeth Jane Cozza, Jimmy Beck, Lefty Frizzell}
+{meta: composer Elizabeth Jane Cozza, Jimmy Beck, Lefty Frizzell}
 
 {start_of_verse: Verse 1}
 [G]Don't think it ain't been fun dear cause it ain't

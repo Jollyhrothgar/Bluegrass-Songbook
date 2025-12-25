@@ -1,6 +1,6 @@
 {meta: title Everything That I Own (Has Got A Dent)}
 {meta: artist Randy Travis}
-{meta: writer Mark Nesler and Tony Martin}
+{meta: composer Mark Nesler and Tony Martin}
 
 {start_of_verse: Verse 1}
 [C]I'll drive around with the trunk tied down with a [F]bungee cord

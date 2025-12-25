@@ -1,6 +1,6 @@
 {meta: title I Was Wrong}
 {meta: artist Kitty Wells}
-{meta: writer Sonny James}
+{meta: composer Sonny James}
 
 {start_of_verse: Verse 1}
 [G]I was wrong I dreamed [C]about you all through the [G]night

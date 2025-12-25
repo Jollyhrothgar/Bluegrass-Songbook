@@ -1,6 +1,6 @@
 {meta: title Don't You Want To Be My Girl}
 {meta: artist Jim Reeves}
-{meta: writer Nellie Smith and Leona Butrum}
+{meta: composer Nellie Smith and Leona Butrum}
 
 {start_of_verse: Verse 1}
 [G]Poor little doll you're too young for tears

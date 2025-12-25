@@ -1,6 +1,6 @@
 {meta: title I Know What I Want For Christmas}
 {meta: artist George Strait}
-{meta: writer Charlie Black and Dana Hunt}
+{meta: composer Charlie Black and Dana Hunt}
 
 {start_of_verse: Verse 1}
 [Em]Tis the season [C]for gene[F]rosity a [C]time to [G7]give and to [C]receive

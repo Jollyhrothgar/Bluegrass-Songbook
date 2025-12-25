@@ -1,6 +1,6 @@
 {meta: title I'll Get Along Somehow}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Gerald Marks and Buddy Fields}
+{meta: composer Gerald Marks and Buddy Fields}
 
 {start_of_verse: Verse 1}
 [C]Many months has come and gone 

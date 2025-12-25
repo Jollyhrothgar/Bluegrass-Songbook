@@ -1,6 +1,6 @@
 {meta: title Corn Liquor}
 {meta: artist Buck Owens}
-{meta: writer Buddy Alan}
+{meta: composer Buddy Alan}
 
 {start_of_verse: Verse 1}
 [G]Well when I was a little bitty boy 

@@ -1,6 +1,6 @@
 {meta: title One Way To Go}
 {meta: artist Wynn Stewart}
-{meta: writer Bobby Austin and Wynn Stewart}
+{meta: composer Bobby Austin and Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [C]It’s a long long way to the [G7]top of the [C]stairs

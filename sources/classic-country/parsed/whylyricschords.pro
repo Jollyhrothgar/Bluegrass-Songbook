@@ -1,6 +1,6 @@
 {meta: title Why}
 {meta: artist Norma Jean}
-{meta: writer Dave Burgess}
+{meta: composer Dave Burgess}
 
 {start_of_verse: Verse 1}
 [G]Why why why can't you u[C]nderstand

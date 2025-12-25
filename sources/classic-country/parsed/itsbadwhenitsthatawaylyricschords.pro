@@ -1,6 +1,6 @@
 {meta: title It's Bad When It's That A Way}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Abe Mulkey}
+{meta: composer Lefty Frizzell and Abe Mulkey}
 
 {start_of_verse: Verse 1}
 [C]Well you can't grow a crop when it's [F]dew at the plow

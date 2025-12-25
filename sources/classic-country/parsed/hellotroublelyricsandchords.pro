@@ -1,6 +1,6 @@
 {meta: title Hello Trouble}
 {meta: artist Ernest Tubb}
-{meta: writer Orville Couch and Eddie McDuff}
+{meta: composer Orville Couch and Eddie McDuff}
 
 {start_of_verse: Verse 1}
 [C]Woke up this morning  [F]happy as could [C]be 

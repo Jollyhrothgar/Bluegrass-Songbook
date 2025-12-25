@@ -1,6 +1,6 @@
 {meta: title Anymore}
 {meta: artist Travis Tritt}
-{meta: writer Travis Tritt and Jill Colucci}
+{meta: composer Travis Tritt and Jill Colucci}
 
 {start_of_verse: Verse 1}
 [C]I can't [G]hide the way I feel 

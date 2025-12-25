@@ -1,6 +1,6 @@
 {meta: title Just For Old Time Sake}
 {meta: artist Jim Ed Brown}
-{meta: writer Hank Hunter and Jack Keller}
+{meta: composer Hank Hunter and Jack Keller}
 
 {start_of_verse: Verse 1}
 [C]Oh [G7]darling just [C]for old time [F]sake

@@ -1,6 +1,6 @@
 {meta: title Joe's Been A Gettin' There}
 {meta: artist Johnny Horton}
-{meta: writer Marijohn Wilkin and Grady Martin}
+{meta: composer Marijohn Wilkin and Grady Martin}
 
 {start_of_verse: Verse 1}
 [C]There was a Yankee [F]Colonel in 186[C]2

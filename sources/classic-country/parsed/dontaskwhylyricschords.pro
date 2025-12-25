@@ -1,6 +1,6 @@
 {meta: title Don't Ask Why}
 {meta: artist Alan Jackson}
-{meta: writer Bill LaBounty and Roy Freeland}
+{meta: composer Bill LaBounty and Roy Freeland}
 
 {start_of_verse: Verse 1}
 [C]Ask me any [F]kind of question 

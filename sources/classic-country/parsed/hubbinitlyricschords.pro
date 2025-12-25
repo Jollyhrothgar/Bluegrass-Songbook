@@ -1,6 +1,6 @@
 {meta: title Hubbin' It}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Wagon load trouble

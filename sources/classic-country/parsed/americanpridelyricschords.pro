@@ -1,6 +1,6 @@
 {meta: title American Pride}
 {meta: artist Alabama}
-{meta: writer Randy Owen}
+{meta: composer Randy Owen}
 
 {start_of_verse: Verse 1}
 Intro:

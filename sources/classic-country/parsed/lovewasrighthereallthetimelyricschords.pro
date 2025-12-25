@@ -1,6 +1,6 @@
 {meta: title Love Was Right Here All The Time}
 {meta: artist Loretta Lynn}
-{meta: writer Billy Henson and Charles Snoddy}
+{meta: composer Billy Henson and Charles Snoddy}
 
 {start_of_verse: Verse 1}
 [C]I overlooked a love I couldn't [F]see

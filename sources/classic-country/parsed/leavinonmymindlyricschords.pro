@@ -1,6 +1,6 @@
 {meta: title Leavin' On My Mind}
 {meta: artist Billy Walker}
-{meta: writer Lee Emerson}
+{meta: composer Lee Emerson}
 
 {start_of_verse: Verse 1}
 [C]You're wrong oh so wrong if you think I'm gonna [F]stay

@@ -1,6 +1,6 @@
 {meta: title Could I Have This Dance}
 {meta: artist Anne Murray}
-{meta: writer Wayland Holyfield and Bob House}
+{meta: composer Wayland Holyfield and Bob House}
 
 {start_of_verse: Verse 1}
 [G]I'll always [G7]remember the [C]song they were [D7]playing 

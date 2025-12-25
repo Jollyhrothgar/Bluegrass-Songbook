@@ -1,6 +1,6 @@
 {meta: title Just One More Soul}
 {meta: artist Greater Vision}
-{meta: writer Rodney Griffin}
+{meta: composer Rodney Griffin}
 
 {start_of_verse: Verse 1}
 [G7]The preachers are [C]weary the [G7]singers are [C]tired

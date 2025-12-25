@@ -1,6 +1,6 @@
 {meta: title Old Kind Of Love}
 {meta: artist Ricky Skaggs}
-{meta: writer Paul Overstreet}
+{meta: composer Paul Overstreet}
 
 {start_of_verse: Verse 1}
 [C]It's the [Bb7]newest [F]craze in [G7]town

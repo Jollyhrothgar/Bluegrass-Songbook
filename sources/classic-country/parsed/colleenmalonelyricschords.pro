@@ -1,6 +1,6 @@
 {meta: title Colleen Malone}
 {meta: artist Larry Sparks}
-{meta: writer Leroy Maxey Drumm and Johnny Goble}
+{meta: composer Leroy Maxey Drumm and Johnny Goble}
 
 {start_of_verse: Verse 1}
 [C]It’s been ten years and [F]three since I [C]first went to sea

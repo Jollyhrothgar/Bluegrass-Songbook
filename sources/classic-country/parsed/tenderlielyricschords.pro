@@ -1,6 +1,6 @@
 {meta: title Tender Lie}
 {meta: artist Dolly Parton}
-{meta: writer Randy L. Sharp}
+{meta: composer Randy L. Sharp}
 
 {start_of_verse: Verse 1}
 [G]As you walk [C]away   as [D7]we say [G]goodbye

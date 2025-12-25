@@ -1,6 +1,6 @@
 {meta: title When My World Left Town}
 {meta: artist Gene Watson}
-{meta: writer Tom Ghent and Ralph Paul}
+{meta: composer Tom Ghent and Ralph Paul}
 
 {start_of_verse: Verse 1}
 [G]The sun rose up this morning [Am]but it didn't shine

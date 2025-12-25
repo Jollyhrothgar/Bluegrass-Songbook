@@ -1,6 +1,6 @@
 {meta: title A Package Of Lies Tied In Blue}
 {meta: artist Cowboy Copas}
-{meta: writer Jack Rivers and Eddie Hazlewood}
+{meta: composer Jack Rivers and Eddie Hazlewood}
 
 {start_of_verse: Verse 1}
 [C]The postman delivered your [G7]letter

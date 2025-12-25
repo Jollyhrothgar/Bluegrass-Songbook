@@ -1,6 +1,6 @@
 {meta: title I Can't Tell My Broken Heart A Lie}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Bill Rowley}
+{meta: composer Bill Rowley}
 
 {start_of_verse: Verse 1}
 [C]You left me here alone to face the [F]music

@@ -1,6 +1,6 @@
 {meta: title Hello Mr. Happiness}
 {meta: artist Ricky Nelson}
-{meta: writer Dave Burgess}
+{meta: composer Dave Burgess}
 
 {start_of_verse: Verse 1}
 [C]Hello mister happiness goodbye [F]misery

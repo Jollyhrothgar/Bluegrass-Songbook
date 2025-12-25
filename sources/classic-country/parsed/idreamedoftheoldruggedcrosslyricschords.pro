@@ -1,6 +1,6 @@
 {meta: title I Dreamed Of The Old Rugged Cross}
 {meta: artist Carl Smith}
-{meta: writer Marijohn Wilkin and Carl Smith}
+{meta: composer Marijohn Wilkin and Carl Smith}
 
 {start_of_verse: Verse 1}
 [G]I dreamed I stood at the portal of [C]heaven one [G]day

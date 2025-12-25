@@ -1,6 +1,6 @@
 {meta: title O'Brien Has No Place To Go}
 {meta: artist Foster and Allen}
-{meta: writer Stanley Murphy and George Evans}
+{meta: composer Stanley Murphy and George Evans}
 
 {start_of_verse: Verse 1}
 [C]Now Dennis O'Brien has three daughters fine

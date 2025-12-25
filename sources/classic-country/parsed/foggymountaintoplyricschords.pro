@@ -1,6 +1,6 @@
 {meta: title Foggy Mountain Top}
 {meta: artist Lester Flatt and Earl Scruggs}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]If I was on some [C]foggy mountain [G]top 

@@ -1,6 +1,6 @@
 {meta: title In The Good Old Summertime}
 {meta: artist Connie Francis}
-{meta: writer Harry Shields}
+{meta: composer Harry Shields}
 
 {start_of_verse: Verse 1}
 [C]In the good old summertime  

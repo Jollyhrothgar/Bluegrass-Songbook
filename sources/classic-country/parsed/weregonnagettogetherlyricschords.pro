@@ -1,6 +1,6 @@
 {meta: title We're Gonna Get Together}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]We're gonna get together [F]we're gonna get together

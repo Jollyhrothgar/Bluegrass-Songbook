@@ -1,6 +1,6 @@
 {meta: title Here Am I Broken Hearted}
 {meta: artist Ferlin Husky}
-{meta: writer Buddy DeSylva, Lew Brown, Ray Henderson}
+{meta: composer Buddy DeSylva, Lew Brown, Ray Henderson}
 
 {start_of_verse: Verse 1}
 [G]There she is [C]my old gal 

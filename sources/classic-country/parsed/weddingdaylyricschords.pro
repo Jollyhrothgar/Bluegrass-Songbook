@@ -1,6 +1,6 @@
 {meta: title Wedding Day}
 {meta: artist Roy Orbison}
-{meta: writer Joe Melton and Roy Orbison}
+{meta: composer Joe Melton and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [C]Wonder how long it will [F]take 

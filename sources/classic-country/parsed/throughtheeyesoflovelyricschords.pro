@@ -1,6 +1,6 @@
 {meta: title Through The Eyes Of Love}
 {meta: artist Gene Watson with Rhonda Vincent}
-{meta: writer Jack Clement and Mitt Addington}
+{meta: composer Jack Clement and Mitt Addington}
 
 {start_of_verse: Verse 1}
 [G]This heart of mine [D7]be-[G]longs to you

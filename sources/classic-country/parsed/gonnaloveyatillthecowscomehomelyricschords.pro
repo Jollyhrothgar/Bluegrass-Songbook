@@ -1,6 +1,6 @@
 {meta: title Gonna Love Ya (Till The Cows Come Home)}
 {meta: artist Reba McEntire}
-{meta: writer Rick Carnes and Susan Drake}
+{meta: composer Rick Carnes and Susan Drake}
 
 {start_of_verse: Verse 1}
 [G]Gonna love you till the [Em]cows come home

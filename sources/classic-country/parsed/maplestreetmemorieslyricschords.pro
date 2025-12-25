@@ -1,6 +1,6 @@
 {meta: title Maple Street Memories}
 {meta: artist The Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]We were both nine years old when you came to [C7]town

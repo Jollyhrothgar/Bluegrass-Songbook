@@ -1,6 +1,6 @@
 {meta: title You Made Me Love You}
 {meta: artist Patsy Cline}
-{meta: writer Joe McCarthy and James Monaco}
+{meta: composer Joe McCarthy and James Monaco}
 
 {start_of_verse: Verse 1}
 [C]You made me [Em]love you I [Dm]didn't want to [G7]do it 

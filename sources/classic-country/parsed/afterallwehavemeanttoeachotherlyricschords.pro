@@ -1,6 +1,6 @@
 {meta: title After All (We Have Meant To Each Other)}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Wesley Tuttle and Lou Wayne}
+{meta: composer Wesley Tuttle and Lou Wayne}
 
 {start_of_verse: Verse 1}
 [G]After all we have meant to each [A7][C]other

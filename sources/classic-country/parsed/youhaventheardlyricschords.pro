@@ -1,6 +1,6 @@
 {meta: title You Haven't Heard}
 {meta: artist Stonewall Jackson}
-{meta: writer Stonewall Jackson and Juanita Jackson}
+{meta: composer Stonewall Jackson and Juanita Jackson}
 
 {start_of_verse: Verse 1}
 [C]That last time I [G7]called you on the [C]phone

@@ -1,6 +1,6 @@
 {meta: title God Had A Son In Service}
 {meta: artist Carl Story}
-{meta: writer Carl Story and Lowell Blanchard}
+{meta: composer Carl Story and Lowell Blanchard}
 
 {start_of_verse: Verse 1}
 [C]Many years ago we [F]know the story [C]true

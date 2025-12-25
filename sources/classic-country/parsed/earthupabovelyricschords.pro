@@ -1,6 +1,6 @@
 {meta: title Earth Up Above}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Donald Murray}
+{meta: composer Donald Murray}
 
 {start_of_verse: Verse 1}
 [C]From the Houston Astrodome to the [F]blue skies over Rome

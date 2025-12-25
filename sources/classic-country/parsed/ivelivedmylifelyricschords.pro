@@ -1,6 +1,6 @@
 {meta: title I've Lived My Life}
 {meta: artist Dolly Parton}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [G7]I've lived my [C]life and I'm [G7]only eigh[C]teen

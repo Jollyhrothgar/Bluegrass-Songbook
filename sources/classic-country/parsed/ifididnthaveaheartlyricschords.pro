@@ -1,6 +1,6 @@
 {meta: title If I Didn't Have A Heart}
 {meta: artist Tammy Wynette}
-{meta: writer Jerry Taylor, Dennis Knutson, Linda Grundy}
+{meta: composer Jerry Taylor, Dennis Knutson, Linda Grundy}
 
 {start_of_verse: Verse 1}
 [G]I could stand out in the rain

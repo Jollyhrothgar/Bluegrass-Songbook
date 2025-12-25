@@ -1,6 +1,6 @@
 {meta: title Sweet Promises}
 {meta: artist Charlie Pride}
-{meta: writer Duane Valentry}
+{meta: composer Duane Valentry}
 
 {start_of_verse: Verse 1}
 [G](Promises sweet [D7]promises [G]promises sweet [D7]promises)

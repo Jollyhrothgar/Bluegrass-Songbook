@@ -1,6 +1,6 @@
 {meta: title Buttons And Bows}
 {meta: artist Jim Ed Brown}
-{meta: writer Jay Livingston and Ray Evans}
+{meta: composer Jay Livingston and Ray Evans}
 
 {start_of_verse: Verse 1}
 [C]East is east and west is west

@@ -1,6 +1,6 @@
 {meta: title Backbone Job}
 {meta: artist Keith Whitley}
-{meta: writer Karen Brooks and Keith Whitley}
+{meta: composer Karen Brooks and Keith Whitley}
 
 {start_of_verse: Verse 1}
 [G]Well I'm not lookin' for an occupation [C]I just wanna go [G]home

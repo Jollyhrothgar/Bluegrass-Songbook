@@ -1,6 +1,6 @@
 {meta: title How Many Times}
 {meta: artist George Morgan}
-{meta: writer T.A. Dorsey}
+{meta: composer T.A. Dorsey}
 
 {start_of_verse: Verse 1}
 [D7]How many [G]times have I wounded His heart

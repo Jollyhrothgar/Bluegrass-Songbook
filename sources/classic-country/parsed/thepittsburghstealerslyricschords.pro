@@ -1,6 +1,6 @@
 {meta: title The Pittsburgh Stealers}
 {meta: artist The Kendalls}
-{meta: writer Larry Kingston and Jim Rushing}
+{meta: composer Larry Kingston and Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]Found myself in Pittsburgh [F]working in a [C]steel mill

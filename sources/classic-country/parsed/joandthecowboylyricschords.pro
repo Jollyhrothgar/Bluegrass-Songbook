@@ -1,6 +1,6 @@
 {meta: title Jo And The Cowboy}
 {meta: artist Johnny Duncan and Janie Fricke}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [C]Life can be great on the interstate when [F]you’re riding across [C]Arkansas

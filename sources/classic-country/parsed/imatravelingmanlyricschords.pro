@@ -1,6 +1,6 @@
 {meta: title I'm A Traveling Man}
 {meta: artist Ricky Nelson}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]I'm a traveling man made a [Am]lot of stops all over the [C]world

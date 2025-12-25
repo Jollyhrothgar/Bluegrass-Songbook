@@ -1,6 +1,6 @@
 {meta: title Heaven Came Down}
 {meta: artist Jimmie Davis}
-{meta: writer John Peterson}
+{meta: composer John Peterson}
 
 {start_of_verse: Verse 1}
 [C]Oh what a wonderful wonderful day

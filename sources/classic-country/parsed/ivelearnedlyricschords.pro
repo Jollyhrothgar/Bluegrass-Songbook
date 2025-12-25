@@ -1,6 +1,6 @@
 {meta: title I've Learned}
 {meta: artist Tammy Wynette}
-{meta: writer Nathan Russell and Jot Nelson}
+{meta: composer Nathan Russell and Jot Nelson}
 
 {start_of_verse: Verse 1}
 [D7]Darling I've [G]learned 

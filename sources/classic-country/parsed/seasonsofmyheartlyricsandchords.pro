@@ -1,6 +1,6 @@
 {meta: title Seasons Of My Heart}
 {meta: artist Willie Nelson}
-{meta: writer George Jones and Darrell Edwards}
+{meta: composer George Jones and Darrell Edwards}
 
 {start_of_verse: Verse 1}
 [G]The seasons come the seasons go 

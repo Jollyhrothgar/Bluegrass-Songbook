@@ -1,6 +1,6 @@
 {meta: title You've Got The Ways Of A Woman In Love}
 {meta: artist Johnny Cash}
-{meta: writer Charlie Rich and Bill Justis}
+{meta: composer Charlie Rich and Bill Justis}
 
 {start_of_verse: Verse 1}
 [G]You've cut out your dancing

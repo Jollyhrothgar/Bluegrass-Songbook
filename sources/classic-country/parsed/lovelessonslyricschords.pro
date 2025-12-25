@@ -1,6 +1,6 @@
 {meta: title Love Lessons}
 {meta: artist Tracy Byrd}
-{meta: writer Jerry Kilgore, Ted Hewitt,}
+{meta: composer Jerry Kilgore, Ted Hewitt,}
 
 {start_of_verse: Verse 1}
 [C]Don't [C7]be a[F]fraid dar[G7]ling you can [C]tell me 

@@ -1,6 +1,6 @@
 {meta: title Storms Of Troubled Times ( aka Happy Anniversary)}
 {meta: artist Ray Price}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [G]If you ever follow [C]old troubled [G]times

@@ -1,6 +1,6 @@
 {meta: title Where No One Stands Alone}
 {meta: artist Loretta Lynn}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [C]Once I stood in the night [G7]with my head bowed [C]low

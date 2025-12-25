@@ -1,6 +1,6 @@
 {meta: title Heaven Came Down And Glory Filled My Soul}
 {meta: artist The Speer Family}
-{meta: writer John Peterson}
+{meta: composer John Peterson}
 
 {start_of_verse: Verse 1}
 [G]O what a wonderful wonderful day

@@ -1,6 +1,6 @@
 {meta: title Till Each Tear Becomes A Rose}
 {meta: artist Keith Whitley/Lorrie Morgan}
-{meta: writer Bill and}
+{meta: composer Bill and}
 
 {start_of_verse: Verse 1}
 [G]Darling I can see the clouds around [C]you

@@ -1,6 +1,6 @@
 {meta: title Who Will Sing For Me}
 {meta: artist Lester Flatt}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [G]Often I sing (oft I sing) for my friends (for my friends)

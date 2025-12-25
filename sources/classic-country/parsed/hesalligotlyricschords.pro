@@ -1,6 +1,6 @@
 {meta: title He's All I Got}
 {meta: artist Tanya Tucker}
-{meta: writer Gary Bonds and Jerry Williams}
+{meta: composer Gary Bonds and Jerry Williams}
 
 {start_of_verse: Verse 1}
 [C]Well I said friend don't take him he's [Dm]all I've got

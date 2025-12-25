@@ -1,6 +1,6 @@
 {meta: title My Christmas Dream}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Carole Smith}
+{meta: composer Sonny James and Carole Smith}
 
 {start_of_verse: Verse 1}
 [C]Christmas [Em]carols [F]frozen [G7]toes 

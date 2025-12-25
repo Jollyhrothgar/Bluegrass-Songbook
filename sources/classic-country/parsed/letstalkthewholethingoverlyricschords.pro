@@ -1,6 +1,6 @@
 {meta: title Let's Talk The Whole Thing Over}
 {meta: artist Ricky Nelson}
-{meta: writer Mike McCaffery}
+{meta: composer Mike McCaffery}
 
 {start_of_verse: Verse 1}
 [C]You said that when we parted 

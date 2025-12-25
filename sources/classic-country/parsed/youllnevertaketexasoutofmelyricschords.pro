@@ -1,6 +1,6 @@
 {meta: title You'll Never Take Texas Out of Me}
 {meta: artist Waylon Jennings}
-{meta: writer Waylon Jennings and Roger Murrah}
+{meta: composer Waylon Jennings and Roger Murrah}
 
 {start_of_verse: Verse 1}
 [G]I love to hear them old twin fiddles

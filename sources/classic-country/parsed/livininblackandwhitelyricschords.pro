@@ -1,6 +1,6 @@
 {meta: title Livin' In Black And White}
 {meta: artist Tracy Lawrence}
-{meta: writer Gary Baker, Frank Myers, Tracy Lawrence}
+{meta: composer Gary Baker, Frank Myers, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [C]This makin' a livin' is [F]killing me 

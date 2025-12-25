@@ -1,6 +1,6 @@
 {meta: title Thinkin' Again}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [C]The trouble I found could've [Em]never found me

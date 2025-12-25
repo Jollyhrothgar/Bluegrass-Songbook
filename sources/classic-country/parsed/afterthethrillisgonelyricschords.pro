@@ -1,6 +1,6 @@
 {meta: title After The Thrill Is Gone}
 {meta: artist Cal Smith}
-{meta: writer Don Henley and Glenn Frey}
+{meta: composer Don Henley and Glenn Frey}
 
 {start_of_verse: Verse 1}
 [G]Same dancers in the same old [C]shoes

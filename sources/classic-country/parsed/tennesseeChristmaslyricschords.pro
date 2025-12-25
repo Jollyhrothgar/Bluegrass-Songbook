@@ -1,6 +1,6 @@
 {meta: title Tennessee Christmas}
 {meta: artist Lee Greenwood}
-{meta: writer Amy Grant and Gary Chapman}
+{meta: composer Amy Grant and Gary Chapman}
 
 {start_of_verse: Verse 1}
 [G]Come on weather[Em]man give us a [F]forecast snowy [D7]white

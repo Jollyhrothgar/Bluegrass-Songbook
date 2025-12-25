@@ -1,6 +1,6 @@
 {meta: title Senorita Rosalita}
 {meta: artist Hank Snow}
-{meta: writer Jim McBride}
+{meta: composer Jim McBride}
 
 {start_of_verse: Verse 1}
 [G]Rosa[C]lita my Rosa[G]lita

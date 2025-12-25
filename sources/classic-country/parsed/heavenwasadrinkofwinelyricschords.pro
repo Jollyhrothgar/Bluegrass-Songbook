@@ -1,6 +1,6 @@
 {meta: title Heaven Was A Drink Of Wine}
 {meta: artist Merle Haggard}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]That psychoed-out psychologist [F]asked me about my drinking [C]ways

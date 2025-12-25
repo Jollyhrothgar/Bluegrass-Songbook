@@ -1,6 +1,6 @@
 {meta: title Close Enough To Love}
 {meta: artist Conway Twitty}
-{meta: writer Johnny Mandel and Paul Williams}
+{meta: composer Johnny Mandel and Paul Williams}
 
 {start_of_verse: Verse 1}
 [C]Your eyes reflect the [Am]sadness

@@ -1,6 +1,6 @@
 {meta: title Faded Coat Of Blue}
 {meta: artist The Waller Brothers}
-{meta: writer J.H. McNaughton}
+{meta: composer J.H. McNaughton}
 
 {start_of_verse: Verse 1}
 [C]My brave man sleeps in his faded coat of [F]blue

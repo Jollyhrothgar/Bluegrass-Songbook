@@ -1,6 +1,6 @@
 {meta: title Mary Ann}
 {meta: artist Jimmy Martin}
-{meta: writer Johnny Stills and Lonnie Treat}
+{meta: composer Johnny Stills and Lonnie Treat}
 
 {start_of_verse: Verse 1}
 [G]There's a girl on my [C]mind I can't get [G]over

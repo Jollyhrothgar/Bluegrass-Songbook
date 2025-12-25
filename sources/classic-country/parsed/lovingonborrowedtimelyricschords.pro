@@ -1,6 +1,6 @@
 {meta: title Loving On Borrowed Time}
 {meta: artist Mel Street}
-{meta: writer Eddie Rabbitt, Dick Heard, Mel Street}
+{meta: composer Eddie Rabbitt, Dick Heard, Mel Street}
 
 {start_of_verse: Verse 1}
 [G]We're taking chances meeting [C]here like [G]this

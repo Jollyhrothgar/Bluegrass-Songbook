@@ -1,6 +1,6 @@
 {meta: title Roll Tennessee River}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Dave Loggins and Russell Smith}
+{meta: composer Dave Loggins and Russell Smith}
 
 {start_of_verse: Verse 1}
 [G]Well I might have a big ol' catfish cookin' on the stove

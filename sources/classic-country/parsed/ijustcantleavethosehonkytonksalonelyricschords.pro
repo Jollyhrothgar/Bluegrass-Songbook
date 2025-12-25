@@ -1,6 +1,6 @@
 {meta: title I Just Can't Leave Those Honky Tonks Alone}
 {meta: artist Moe Bandy}
-{meta: writer Virgil Warner and Ernie Rowell}
+{meta: composer Virgil Warner and Ernie Rowell}
 
 {start_of_verse: Verse 1}
 [G]When the music's playin' loud I can blend in with the [C]crowd

@@ -1,6 +1,6 @@
 {meta: title That's The Way I Feel}
 {meta: artist George Jones}
-{meta: writer Roger Miller and George Jones}
+{meta: composer Roger Miller and George Jones}
 
 {start_of_verse: Verse 1}
 [G]If you ever feel unwanted kicked around so much you're taunted

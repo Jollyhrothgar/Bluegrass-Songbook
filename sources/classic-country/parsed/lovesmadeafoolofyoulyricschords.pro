@@ -1,6 +1,6 @@
 {meta: title Love’s Made A Fool Of You}
 {meta: artist Buddy Holly}
-{meta: writer Buddy Holly and Bob Montgomery}
+{meta: composer Buddy Holly and Bob Montgomery}
 
 {start_of_verse: Verse 1}
 [G]Love can make a [C]fool of [G]you

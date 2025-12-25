@@ -1,6 +1,6 @@
 {meta: title Dear Mama I'm A Cowboy}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Richard O'Brien}
+{meta: composer Red Steagall and Richard O'Brien}
 
 {start_of_verse: Verse 1}
 [C]There's nothin' [G7]left but [C]ashes the [Dm]fire is gone for good

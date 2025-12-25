@@ -1,6 +1,6 @@
 {meta: title Burn Georgia Burn}
 {meta: artist Alabama}
-{meta: writer Roger Murrah and Tim Lewis}
+{meta: composer Roger Murrah and Tim Lewis}
 
 {start_of_verse: Verse 1}
 [C]Atlanta was on fire and so was [Am]she the [Dm]night he [Fm]left her

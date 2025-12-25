@@ -1,6 +1,6 @@
 {meta: title Walking Dream}
 {meta: artist Patsy Cline}
-{meta: writer Ginny Willis and Hal Willis}
+{meta: composer Ginny Willis and Hal Willis}
 
 {start_of_verse: Verse 1}
 [G]Walking dream  I dreamed about [D7]you 

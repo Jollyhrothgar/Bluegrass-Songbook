@@ -1,6 +1,6 @@
 {meta: title Feeling Single Seeing Double}
 {meta: artist Emmylou Harris}
-{meta: writer Wayne Kemp}
+{meta: composer Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [G7]Well I really had a ball last [C]night

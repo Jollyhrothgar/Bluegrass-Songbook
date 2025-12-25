@@ -1,6 +1,6 @@
 {meta: title Don't Hang Around He's Married To Me}
 {meta: artist Kitty Wells}
-{meta: writer Ernie Keller, Bill Carrigan, Elmer Alley}
+{meta: composer Ernie Keller, Bill Carrigan, Elmer Alley}
 
 {start_of_verse: Verse 1}
 [G]Now that I have him [C]you want him [G]too

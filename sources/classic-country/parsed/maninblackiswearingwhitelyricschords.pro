@@ -1,6 +1,6 @@
 {meta: title Man In Black Is Wearing White}
 {meta: artist The Malpass Brothers}
-{meta: writer Chris Malpass}
+{meta: composer Chris Malpass}
 
 {start_of_verse: Verse 1}
 [C]On September 12th [F]God must have felt

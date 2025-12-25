@@ -1,6 +1,6 @@
 {meta: title I'm Crying Inside}
 {meta: artist Don Gibson}
-{meta: writer Charles McCormick and George W. McCormick}
+{meta: composer Charles McCormick and George W. McCormick}
 
 {start_of_verse: Verse 1}
 [G]Well I may laugh when you [C]say things [G]honey

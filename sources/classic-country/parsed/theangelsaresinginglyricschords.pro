@@ -1,6 +1,6 @@
 {meta: title The Angels Are Singing}
 {meta: artist The Stanley Brothers}
-{meta: writer Carter Stanley and Ralph Stanley}
+{meta: composer Carter Stanley and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [C]Sweetheart I recall the day I first [G7]met you

@@ -1,6 +1,6 @@
 {meta: title Ain't It Good To Be In Love Again}
 {meta: artist Connie Smith}
-{meta: writer Dewayne Orender}
+{meta: composer Dewayne Orender}
 
 {start_of_verse: Verse 1}
 [C]Ain't it good to be in [F]love again [G7]don't it make you wanna [C]smile

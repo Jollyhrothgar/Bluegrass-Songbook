@@ -1,6 +1,6 @@
 {meta: title They Made Me Fall In Love With You}
 {meta: artist Faron Young}
-{meta: writer Ted Edlin and Frank Duke}
+{meta: composer Ted Edlin and Frank Duke}
 
 {start_of_verse: Verse 1}
 [C]Who put the gold in your hair and the smile on your face

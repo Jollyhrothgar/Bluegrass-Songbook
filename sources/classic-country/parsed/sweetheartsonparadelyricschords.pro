@@ -1,6 +1,6 @@
 {meta: title Sweethearts On Parade}
 {meta: artist Brenda Lee}
-{meta: writer Bob Newman and Carmen Lambardo}
+{meta: composer Bob Newman and Carmen Lambardo}
 
 {start_of_verse: Verse 1}
 [G]Two by two they go [D7]marchin' through 

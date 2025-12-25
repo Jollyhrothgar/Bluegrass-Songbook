@@ -1,6 +1,6 @@
 {meta: title Thank God I've Got You}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]I've got union dues and taxes and a [Em]mortgage due this month

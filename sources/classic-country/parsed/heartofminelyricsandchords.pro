@@ -1,6 +1,6 @@
 {meta: title Heart Of Mine}
 {meta: artist Ricky Van Shelton}
-{meta: writer Allen Shamblin and Bernie Nelson}
+{meta: composer Allen Shamblin and Bernie Nelson}
 
 {start_of_verse: Verse 1}
 [G]Heart of mine [C]heart of [G]mine

@@ -1,6 +1,6 @@
 {meta: title Heaven's Almost As Big As Texas}
 {meta: artist Johnny Paycheck}
-{meta: writer Robert Lee Floyd}
+{meta: composer Robert Lee Floyd}
 
 {start_of_verse: Verse 1}
 [G]Well he walked into the bar room ragged [C]pants and an over[G]coat 

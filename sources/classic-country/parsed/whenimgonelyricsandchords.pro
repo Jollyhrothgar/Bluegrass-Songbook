@@ -1,6 +1,6 @@
 {meta: title When I'm Gone}
 {meta: artist Sonny James}
-{meta: writer Sonny James and John Skye}
+{meta: composer Sonny James and John Skye}
 
 {start_of_verse: Verse 1}
 [C]Oh who will take my place in your [F]heart when I'm [D7]gone

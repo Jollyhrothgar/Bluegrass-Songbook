@@ -1,6 +1,6 @@
 {meta: title For the Good Times}
 {meta: artist Ray Price}
-{meta: writer Kris Krisofferson}
+{meta: composer Kris Krisofferson}
 
 {start_of_verse: Verse 1}
 [C]Don't look so [Dm]s-ad I know it's [C]over

@@ -1,6 +1,6 @@
 {meta: title Let's Walk Away Strangers}
 {meta: artist Carl Smith}
-{meta: writer Mel Tillis and Benny Joy}
+{meta: composer Mel Tillis and Benny Joy}
 
 {start_of_verse: Verse 1}
 [C]Let's walk away strangers pretend we've never met

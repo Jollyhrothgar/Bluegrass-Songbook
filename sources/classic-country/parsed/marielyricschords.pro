@@ -1,6 +1,6 @@
 {meta: title Marie}
 {meta: artist Jim Reeves}
-{meta: writer Irving Berlin}
+{meta: composer Irving Berlin}
 
 {start_of_verse: Verse 1}
 [C]Ma[F]rie the dawn is breaking [C]Marie

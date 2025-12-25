@@ -1,6 +1,6 @@
 {meta: title Put A Light In The Window}
 {meta: artist Jim Reeves}
-{meta: writer Rhoda Roberts and Kenny Jacobson}
+{meta: composer Rhoda Roberts and Kenny Jacobson}
 
 {start_of_verse: Verse 1}
 [G]There's a house on the corner

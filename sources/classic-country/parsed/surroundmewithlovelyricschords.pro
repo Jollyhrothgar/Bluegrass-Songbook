@@ -1,6 +1,6 @@
 {meta: title Surround Me With Love}
 {meta: artist Charly McClain}
-{meta: writer Norris D. Wilson &amp; Wayland Holyfield}
+{meta: composer Norris D. Wilson &amp; Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]Sometimes when life's poison arrows [Dm]shoot me to the ground 

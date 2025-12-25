@@ -1,6 +1,6 @@
 {meta: title When Love Is Gone}
 {meta: artist Bobby Bare}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]Spring could come you'd never show it 

@@ -1,6 +1,6 @@
 {meta: title Be-Bop-A-Lula}
 {meta: artist Everly Brothers}
-{meta: writer Tex Davis and Gene Vincent}
+{meta: composer Tex Davis and Gene Vincent}
 
 {start_of_verse: Verse 1}
 Recorde[A]d by the Everly Brothers

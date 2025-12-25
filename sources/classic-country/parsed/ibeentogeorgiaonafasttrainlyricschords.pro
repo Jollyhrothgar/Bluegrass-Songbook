@@ -1,6 +1,6 @@
 {meta: title I Been To Georgia On A Fast Train}
 {meta: artist Willie Nelson}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [G]On a rainy windy morning on the day that I was born [C]in

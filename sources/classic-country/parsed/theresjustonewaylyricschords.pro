@@ -1,6 +1,6 @@
 {meta: title There's Just One Way}
 {meta: artist Merle Haggard}
-{meta: writer Marty Haggard, Dana Haggard, Kenny Seratt}
+{meta: composer Marty Haggard, Dana Haggard, Kenny Seratt}
 
 {start_of_verse: Verse 1}
 [C]There's just one way to make that trip to glory

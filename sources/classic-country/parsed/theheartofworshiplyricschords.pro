@@ -1,6 +1,6 @@
 {meta: title The Heart of Worship}
 {meta: artist Randy Travis}
-{meta: writer Matt Redman}
+{meta: composer Matt Redman}
 
 {start_of_verse: Verse 1}
 [G]When the music [D7]fades and all is stripped [Am]away

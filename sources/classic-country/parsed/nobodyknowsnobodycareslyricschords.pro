@@ -1,6 +1,6 @@
 {meta: title Nobody Knows Nobody Cares}
 {meta: artist Randy Travis}
-{meta: writer Rosetta Tharpe}
+{meta: composer Rosetta Tharpe}
 
 {start_of_verse: Verse 1}
 [G]Nobody knows how lonely my road

@@ -1,6 +1,6 @@
 {meta: title Before I Share Your Love}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew, Tommy Blake, W.S. Stevenson}
+{meta: composer Carl Belew, Tommy Blake, W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [C]I learned before we met that love was [G7]blind

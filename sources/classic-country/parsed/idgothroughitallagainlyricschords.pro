@@ -1,6 +1,6 @@
 {meta: title I'd Go Through It All Again}
 {meta: artist Carl Smith}
-{meta: writer Marijohn Wilkin and Wayne P. Walker}
+{meta: composer Marijohn Wilkin and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]As I sit here [C]alone just thinking [G]of you

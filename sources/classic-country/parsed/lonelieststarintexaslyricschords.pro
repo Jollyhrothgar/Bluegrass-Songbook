@@ -1,6 +1,6 @@
 {meta: title Loneliest Star In Texas}
 {meta: artist Norma Jean}
-{meta: writer Dale A. Crockett and Robert C. Landes}
+{meta: composer Dale A. Crockett and Robert C. Landes}
 
 {start_of_verse: Verse 1}
 [C]Last night down in Austin [D7]I sang western swing

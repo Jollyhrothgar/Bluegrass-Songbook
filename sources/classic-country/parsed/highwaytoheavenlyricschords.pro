@@ -1,6 +1,6 @@
 {meta: title Highway To Heaven}
 {meta: artist Jimmie Davis}
-{meta: writer Thomas A Dorsey}
+{meta: composer Thomas A Dorsey}
 
 {start_of_verse: Verse 1}
 [C]It’s a [F]highway to [C]heaven

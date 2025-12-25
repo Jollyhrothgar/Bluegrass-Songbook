@@ -1,6 +1,6 @@
 {meta: title Lost Along The Way}
 {meta: artist Faron Young}
-{meta: writer Bobby Harden}
+{meta: composer Bobby Harden}
 
 {start_of_verse: Verse 1}
 [G]Love has been a lonely [C]road for you to [G]travel

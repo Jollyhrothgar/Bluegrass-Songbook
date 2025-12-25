@@ -1,5 +1,5 @@
 {meta: artist John Denver}
-{meta: writer Adolphe Adam}
+{meta: composer Adolphe Adam}
 
 {start_of_verse: Verse 1}
 [C]O holy night the [F]stars are brightly [C]shining

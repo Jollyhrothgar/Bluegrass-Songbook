@@ -1,6 +1,6 @@
 {meta: title Christmas Time}
 {meta: artist John Anderson}
-{meta: writer John Anderson and Lionel Delmore}
+{meta: composer John Anderson and Lionel Delmore}
 
 {start_of_verse: Verse 1}
 [F]Standin' with the one you love neath the [C]mistletoe

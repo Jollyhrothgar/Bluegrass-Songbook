@@ -1,6 +1,6 @@
 {meta: title One Thing Leads To Another}
 {meta: artist Carl Smith}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [G]I guess if I'd admit it [C]we'd all know who was [G]wrong

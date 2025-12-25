@@ -1,6 +1,6 @@
 {meta: title Messin' With My Mind}
 {meta: artist Randy Travis}
-{meta: writer Joe Allen and Charlie Williams}
+{meta: composer Joe Allen and Charlie Williams}
 
 {start_of_verse: Verse 1}
 [C]I said one thing I'd [G7]never do was [C]care

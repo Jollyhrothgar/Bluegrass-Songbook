@@ -1,6 +1,6 @@
 {meta: title A Bad Goodbye}
 {meta: artist Clint Black}
-{meta: writer Clint Black}
+{meta: composer Clint Black}
 
 {start_of_verse: Verse 1}
 [G]I've been bound [C]to leave you we've [D7]known that for [C]awhile

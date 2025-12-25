@@ -1,6 +1,6 @@
 {meta: title We've Got Something In Common}
 {meta: artist Faron Young}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]We've got something in common oh Mr. [G7]Carpet on the floor

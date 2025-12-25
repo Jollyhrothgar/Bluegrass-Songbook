@@ -1,6 +1,6 @@
 {meta: title As Long As I'll Forgive}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Max Powell}
+{meta: composer Wayne P. Walker and Max Powell}
 
 {start_of_verse: Verse 1}
 [C]The first time I passed it off as [F]just a big mistake

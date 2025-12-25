@@ -1,6 +1,6 @@
 {meta: title Beautiful Garden Of Prayer}
 {meta: artist Faron Young}
-{meta: writer James H. Fillmore, Eleanor A. Schroll}
+{meta: composer James H. Fillmore, Eleanor A. Schroll}
 
 {start_of_verse: Verse 1}
 [C]There's a garden where Jesus [F]is [C]waiting

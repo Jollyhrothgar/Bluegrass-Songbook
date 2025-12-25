@@ -1,6 +1,6 @@
 {meta: title I Believe In Santa Claus}
 {meta: artist Dolly Parton and Kenny Rogers}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]I believe in Santa [D7]Claus  I [G7]believe in Santa [C]Claus

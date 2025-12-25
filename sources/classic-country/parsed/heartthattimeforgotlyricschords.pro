@@ -1,6 +1,6 @@
 {meta: title Heart That Time Forgot}
 {meta: artist Sammy Kershaw}
-{meta: writer Sterling Whipple and Tony Martin}
+{meta: composer Sterling Whipple and Tony Martin}
 
 {start_of_verse: Verse 1}
 [G7]Just [C]when I feel like a night on the [G7]town

@@ -1,6 +1,6 @@
 {meta: title Gonna Have A Party}
 {meta: artist Alabama}
-{meta: writer Bruce Channel, Kieran Kane, Cliff Cochran}
+{meta: composer Bruce Channel, Kieran Kane, Cliff Cochran}
 
 {start_of_verse: Verse 1}
 [C]Gonna have a party a [F]good time jambo[C]ree

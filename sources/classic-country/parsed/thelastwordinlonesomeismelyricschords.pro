@@ -1,6 +1,6 @@
 {meta: title The Last Word in Lonesome Is Me}
 {meta: artist Eddy Arnold}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]The last word [D7]in lonesome is me

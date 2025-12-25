@@ -1,6 +1,6 @@
 {meta: title It's Got You All Over It}
 {meta: artist Tracy Lawrence}
-{meta: writer Jerry Salley, J.B. Rudd, Lance Miller}
+{meta: composer Jerry Salley, J.B. Rudd, Lance Miller}
 
 {start_of_verse: Verse 1}
 [G]Today my radio played a [Em]new love song 

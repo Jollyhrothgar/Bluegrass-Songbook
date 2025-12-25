@@ -1,6 +1,6 @@
 {meta: title Happy You Lonely Me}
 {meta: artist Norma Jean}
-{meta: writer Melba Montgomery}
+{meta: composer Melba Montgomery}
 
 {start_of_verse: Verse 1}
 [C]Happy you [C7]sad and [F]lonely me

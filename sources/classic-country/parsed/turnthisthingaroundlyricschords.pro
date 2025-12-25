@@ -1,6 +1,6 @@
 {meta: title Turn This Thing Around}
 {meta: artist Keith Whitley}
-{meta: writer Gary Harrison and Gene Nelson}
+{meta: composer Gary Harrison and Gene Nelson}
 
 {start_of_verse: Verse 1}
 [G]Well one thing led to another that led to your taxi cab

@@ -1,6 +1,6 @@
 {meta: title Wall To Wall Heartache}
 {meta: artist Wynn Stewart}
-{meta: writer Eddie Miller}
+{meta: composer Eddie Miller}
 
 {start_of_verse: Verse 1}
 [G]In this day and time love don't [C]last too long

@@ -1,6 +1,6 @@
 {meta: title You've Still Got A Way With My Heart}
 {meta: artist Mickey Gilley}
-{meta: writer Ron Moore and Robert Parker}
+{meta: composer Ron Moore and Robert Parker}
 
 {start_of_verse: Verse 1}
 [C]Well I [F]remember it [C]all [F]like it was [Am]yester[A#7]day   [A7]

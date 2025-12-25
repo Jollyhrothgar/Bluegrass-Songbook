@@ -1,6 +1,6 @@
 {meta: title Bandit}
 {meta: artist Jim Ed Brown}
-{meta: writer Zeb Turner, Michael Carr, Milton Nascimeto}
+{meta: composer Zeb Turner, Michael Carr, Milton Nascimeto}
 
 {start_of_verse: Verse 1}
 [C]Ole La Comanchero [F]the bandit of [C]Brazil

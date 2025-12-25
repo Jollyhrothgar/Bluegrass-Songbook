@@ -1,6 +1,6 @@
 {meta: title I'm Stepping Out Tonight}
 {meta: artist Porter Wagoner}
-{meta: writer Gene Mooney}
+{meta: composer Gene Mooney}
 
 {start_of_verse: Verse 1}
 [C]All week long I've had the blues

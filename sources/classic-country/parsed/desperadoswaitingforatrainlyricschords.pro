@@ -1,6 +1,6 @@
 {meta: title Desperados Waiting for a Train}
 {meta: artist The Highwaymen}
-{meta: writer Guy Clark}
+{meta: composer Guy Clark}
 
 {start_of_verse: Verse 1}
 [C]I'd play the Red River Valley[A#7]    [Am]

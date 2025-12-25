@@ -1,6 +1,6 @@
 {meta: title Morning Paper}
 {meta: artist Billy Walker}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [C]Heart oh heart I know it's [F]ended

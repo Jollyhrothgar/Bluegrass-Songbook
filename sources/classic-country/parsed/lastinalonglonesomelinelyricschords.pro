@@ -1,6 +1,6 @@
 {meta: title Last In A Long Lonesome Line}
 {meta: artist Patty Loveless}
-{meta: writer Bob DiPiero and Jeffrey Steele}
+{meta: composer Bob DiPiero and Jeffrey Steele}
 
 {start_of_verse: Verse 1}
 [G]If I appear to be [D7]holdin' on [G]tight

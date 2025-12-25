@@ -1,6 +1,6 @@
 {meta: title Silver Spurs Upon The Golden Stairs}
 {meta: artist Gene Autry}
-{meta: writer Cindy Walker and Gene Autry}
+{meta: composer Cindy Walker and Gene Autry}
 
 {start_of_verse: Verse 1}
 [C]If you wanna clink your silver spurs upon [F]the golden [C]stairs

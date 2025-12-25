@@ -1,6 +1,6 @@
 {meta: title True}
 {meta: artist Jim Reeves}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]It's true I know it's true I'm losing [C]you

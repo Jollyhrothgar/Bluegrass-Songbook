@@ -1,6 +1,6 @@
 {meta: title Glass Of Smile}
 {meta: artist Faron Young}
-{meta: writer Ernest Reed, Jade Mangino, Billy Graves}
+{meta: composer Ernest Reed, Jade Mangino, Billy Graves}
 
 {start_of_verse: Verse 1}
 [C]By closin' time I won't remember [F]her

@@ -1,6 +1,6 @@
 {meta: title Penny Candy}
 {meta: artist Jim Reeves}
-{meta: writer Danny Dill}
+{meta: composer Danny Dill}
 
 {start_of_verse: Verse 1}
 [Em](Ohoo Parters)

@@ -1,6 +1,6 @@
 {meta: title Anger and Tears}
 {meta: artist Mel McDaniel}
-{meta: writer Carol W. Chase and Howard Russell Smith}
+{meta: composer Carol W. Chase and Howard Russell Smith}
 
 {start_of_verse: Verse 1}
 [C]I left home this morning didn't say a [F]word

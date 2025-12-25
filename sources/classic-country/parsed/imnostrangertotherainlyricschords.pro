@@ -1,6 +1,6 @@
 {meta: title I'm No Stranger To The Rain}
 {meta: artist Keith Whitley}
-{meta: writer Sonny Curtis and Ron Hellard}
+{meta: composer Sonny Curtis and Ron Hellard}
 
 {start_of_verse: Verse 1}
 [C]I'm no stranger to the rain [F]I'm a friend of thunder

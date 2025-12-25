@@ -1,6 +1,6 @@
 {meta: title Am I Blue}
 {meta: artist Ricky Nelson}
-{meta: writer Harry Akst and Grant Clarke}
+{meta: composer Harry Akst and Grant Clarke}
 
 {start_of_verse: Verse 1}
 [C]Oh am I blue am I [G7]blue 

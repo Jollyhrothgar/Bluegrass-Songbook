@@ -1,6 +1,6 @@
 {meta: title A Prayer On Your Lips}
 {meta: artist Lefty Frizzell}
-{meta: writer Arthur Leo Owens}
+{meta: composer Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C](A [F]prayer on your [C]lips is like [G7]freedom in your [F]hand[C]s)

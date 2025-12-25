@@ -1,6 +1,6 @@
 {meta: title Sweetheart Of The Town}
 {meta: artist Stonewall Jackson}
-{meta: writer Billy Morgan and Juanita Jackson}
+{meta: composer Billy Morgan and Juanita Jackson}
 
 {start_of_verse: Verse 1}
 [C]Your secret love is known to [F]everybody in this [C]town

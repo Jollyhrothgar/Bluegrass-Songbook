@@ -1,6 +1,6 @@
 {meta: title Bet Your Heart On Me}
 {meta: artist Jack Greene}
-{meta: writer Jim McBride}
+{meta: composer Jim McBride}
 
 {start_of_verse: Verse 1}
 [C]You took a [G7]chance on [C]him

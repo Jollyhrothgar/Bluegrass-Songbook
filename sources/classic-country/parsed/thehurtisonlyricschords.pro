@@ -1,6 +1,6 @@
 {meta: title The Hurt Is On}
 {meta: artist Freddie Hart}
-{meta: writer Louise Worsham}
+{meta: composer Louise Worsham}
 
 {start_of_verse: Verse 1}
 [C]You say that you won't be [G7]around

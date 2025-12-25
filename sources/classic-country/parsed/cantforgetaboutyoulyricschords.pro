@@ -1,6 +1,6 @@
 {meta: title Can't Forget About You}
 {meta: artist Alabama}
-{meta: writer Teddy Gentry}
+{meta: composer Teddy Gentry}
 
 {start_of_verse: Verse 1}
 [G]The walls of my mind  [G7]are closin' [C]in

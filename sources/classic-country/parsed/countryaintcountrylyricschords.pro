@@ -1,6 +1,6 @@
 {meta: title Country Ain't Country}
 {meta: artist Travis Tritt}
-{meta: writer Casey Beathard and Carson Chamberlain}
+{meta: composer Casey Beathard and Carson Chamberlain}
 
 {start_of_verse: Verse 1}
 [C]He was raised on a tractor in [F]overalls and [C]boots

@@ -1,6 +1,6 @@
 {meta: title WWW.Memory}
 {meta: artist Alan Jackson}
-{meta: writer and recorded by Alan Jackson}
+{meta: composer and recorded by Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]I know you're [F]leaving [G7]I see the [C]signs 

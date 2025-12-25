@@ -1,6 +1,6 @@
 {meta: title I'll Be Gone}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Billy Smith, Alicia Smith, Evelyn Smith}
+{meta: composer Billy Smith, Alicia Smith, Evelyn Smith}
 
 {start_of_verse: Verse 1}
 [G]I'm packing my bags and [C]sailing to [G]Bombay

@@ -1,6 +1,6 @@
 {meta: title I'm The Boy}
 {meta: artist The Statler Brothers}
-{meta: writer Lew DeWitt}
+{meta: composer Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [G]Johnny gave her [E7]money [A7]Harry bought her [D7]clothes

@@ -1,6 +1,6 @@
 {meta: title Shoes}
 {meta: artist Patsy Cline}
-{meta: writer Hank Cochran and Velma Smith}
+{meta: composer Hank Cochran and Velma Smith}
 
 {start_of_verse: Verse 1}
 [C]Everything you told me I [F]believed

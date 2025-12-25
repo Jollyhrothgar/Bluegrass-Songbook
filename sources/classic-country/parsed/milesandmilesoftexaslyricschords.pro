@@ -1,6 +1,6 @@
 {meta: title Miles and Miles of Texas}
 {meta: artist Bob Wills}
-{meta: writer Tommy Camfield and Diane Johnson}
+{meta: composer Tommy Camfield and Diane Johnson}
 
 {start_of_verse: Verse 1}
 [G]I was born in Louisiana [C]down on the old [G]bayou

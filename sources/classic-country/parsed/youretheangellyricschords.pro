@@ -1,6 +1,6 @@
 {meta: title You're The Angel}
 {meta: artist Faron Young}
-{meta: writer George Riddle}
+{meta: composer George Riddle}
 
 {start_of_verse: Verse 1}
 [D7]You're the [G]angel but I'm the one that's living in [C]heaven

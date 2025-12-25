@@ -1,6 +1,6 @@
 {meta: title Open Up Your Heart}
 {meta: artist Prairie Oyster}
-{meta: writer Russell de Carle and Keith Glass}
+{meta: composer Russell de Carle and Keith Glass}
 
 {start_of_verse: Verse 1}
 [C]Burned by an [G7]old flame now you’re out for a [C]fling

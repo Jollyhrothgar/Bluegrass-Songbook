@@ -1,6 +1,6 @@
 {meta: title The Girl Behind The Bar}
 {meta: artist The Country Gentlemen}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]As I walked in the Wayside Tavern

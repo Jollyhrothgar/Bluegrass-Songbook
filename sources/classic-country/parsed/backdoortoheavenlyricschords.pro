@@ -1,6 +1,6 @@
 {meta: title Back Door To Heaven}
 {meta: artist Sonny James}
-{meta: writer Carole Smith and Sonny James}
+{meta: composer Carole Smith and Sonny James}
 
 {start_of_verse: Verse 1}
 [D7]We took the back door to [G]heaven

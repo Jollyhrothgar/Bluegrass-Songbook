@@ -1,6 +1,6 @@
 {meta: title Turn Around}
 {meta: artist Mickey Gilley}
-{meta: writer Carl Perkins}
+{meta: composer Carl Perkins}
 
 {start_of_verse: Verse 1}
 [D7]When your [G]all [D7]alone and [G]blue 

@@ -1,6 +1,6 @@
 {meta: title Let Them Talk}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Sonny Thompson}
+{meta: composer Sonny Thompson}
 
 {start_of_verse: Verse 1}
 [G]Let’em talk [B7]  if they [Em]want to [G]

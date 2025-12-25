@@ -1,6 +1,6 @@
 {meta: title Oh What A Love}
 {meta: artist Tanya Tucker}
-{meta: writer Hank Cochran and Jerry Laseter}
+{meta: composer Hank Cochran and Jerry Laseter}
 
 {start_of_verse: Verse 1}
 [C]What a love we could [G7]have

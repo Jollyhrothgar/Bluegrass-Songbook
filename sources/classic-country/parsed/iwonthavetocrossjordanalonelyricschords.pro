@@ -1,6 +1,6 @@
 {meta: title I Won't Have to Cross Jordan Alone}
 {meta: artist Faron Young}
-{meta: writer Thomas Ramsey and Charles E. Durham}
+{meta: composer Thomas Ramsey and Charles E. Durham}
 
 {start_of_verse: Verse 1}
 [C]When I come to the river at the ending of day 

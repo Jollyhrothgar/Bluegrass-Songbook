@@ -1,6 +1,6 @@
 {meta: title I Need You So}
 {meta: artist Elvis Presley}
-{meta: writer Ivory Joe Hunter}
+{meta: composer Ivory Joe Hunter}
 
 {start_of_verse: Verse 1}
 [G7]I need you [C]so 

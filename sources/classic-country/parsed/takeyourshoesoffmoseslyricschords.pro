@@ -1,6 +1,6 @@
 {meta: title Take Your Shoes Off Moses}
 {meta: artist The Stanley Brothers}
-{meta: writer J.D. Jarvis}
+{meta: composer J.D. Jarvis}
 
 {start_of_verse: Verse 1}
 [G]Well God spoke to Moses at the burning bush

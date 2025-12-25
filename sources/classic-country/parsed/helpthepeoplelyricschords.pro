@@ -1,6 +1,6 @@
 {meta: title Help The People}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery and George Jones}
+{meta: composer Earl Montgomery and George Jones}
 
 {start_of_verse: Verse 1}
 [D7]Won't some[G]body help the [C]people who ain't [G]loving

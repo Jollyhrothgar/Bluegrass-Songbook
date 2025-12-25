@@ -1,6 +1,6 @@
 {meta: title Blue Melodies}
 {meta: artist George Strait}
-{meta: writer Keith Gattis and Wyatt Earp}
+{meta: composer Keith Gattis and Wyatt Earp}
 
 {start_of_verse: Verse 1}
 [D7]I don't know [G]how [G7] to write you a [C]song

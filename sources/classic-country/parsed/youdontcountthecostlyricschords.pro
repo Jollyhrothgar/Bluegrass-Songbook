@@ -1,6 +1,6 @@
 {meta: title You Don't Count the Cost}
 {meta: artist Billy Dean}
-{meta: writer Bucky Jones, Chris Waters, Tom Curtis Shapiro}
+{meta: composer Bucky Jones, Chris Waters, Tom Curtis Shapiro}
 
 {start_of_verse: Verse 1}
 [C]It happens to a mother when [F]she is giving birth

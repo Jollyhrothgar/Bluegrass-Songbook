@@ -1,6 +1,6 @@
 {meta: title My Songbird}
 {meta: artist Emmylou Harris}
-{meta: writer Jesse Winchester}
+{meta: composer Jesse Winchester}
 
 {start_of_verse: Verse 1}
 [C]Songbird in a [F]golden [C]cage she'd [G7]prefer the [C]blue

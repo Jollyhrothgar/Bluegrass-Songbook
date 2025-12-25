@@ -1,6 +1,6 @@
 {meta: title Young Hearts}
 {meta: artist Jim Reeves}
-{meta: writer Sid Tepper and Roy C. Bennett}
+{meta: composer Sid Tepper and Roy C. Bennett}
 
 {start_of_verse: Verse 1}
 [G]Young hearts can be foolish  [C]and make a [D7]mistake

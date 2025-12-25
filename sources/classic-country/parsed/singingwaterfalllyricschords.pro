@@ -1,6 +1,6 @@
 {meta: title Singing Waterfall}
 {meta: artist Hank Williams Sr.}
-{meta: writer Fred Rose and Hank Williams}
+{meta: composer Fred Rose and Hank Williams}
 
 {start_of_verse: Verse 1}
 [C]There's a singing waterfall in the [F]mountains far [C]away    

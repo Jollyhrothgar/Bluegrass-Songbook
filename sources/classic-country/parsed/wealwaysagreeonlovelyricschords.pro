@@ -1,6 +1,6 @@
 {meta: title We Always Agree On Love}
 {meta: artist Doug Stone}
-{meta: writer Doug Johnson}
+{meta: composer Doug Johnson}
 
 {start_of_verse: Verse 1}
 [G]Now I like my music country 

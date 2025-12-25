@@ -1,5 +1,5 @@
 {meta: artist Hank Thompson}
-{meta: writer Merle Travis and Cliffie Stone}
+{meta: composer Merle Travis and Cliffie Stone}
 
 {start_of_verse: Verse 1}
 [C]I'm three times seven baby I [D7]do as I doggone please

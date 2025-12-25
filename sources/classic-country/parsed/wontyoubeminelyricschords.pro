@@ -1,6 +1,6 @@
 {meta: title Won't You Be Mine}
 {meta: artist Blue Highway}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [G]Can't you hear the night birds crying

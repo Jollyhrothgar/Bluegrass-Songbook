@@ -1,6 +1,6 @@
 {meta: title Long Ago There Was Born}
 {meta: artist Slim Whitman}
-{meta: writer Scott Turner and Slim Whitman}
+{meta: composer Scott Turner and Slim Whitman}
 
 {start_of_verse: Verse 1}
 [C]Long ago there was born in the City of [G7]David 

@@ -1,6 +1,6 @@
 {meta: title Heartbreak Hotel}
 {meta: artist Elvis Presley}
-{meta: writer Mae Axton, Tommy Burden, Elvis Presley}
+{meta: composer Mae Axton, Tommy Burden, Elvis Presley}
 
 {start_of_verse: Verse 1}
 [C]Well since my baby left me I found a new place to dwell

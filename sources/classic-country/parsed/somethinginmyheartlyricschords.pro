@@ -1,6 +1,6 @@
 {meta: title Something In My Heart}
 {meta: artist Ricky Skaggs}
-{meta: writer Wayland Patton}
+{meta: composer Wayland Patton}
 
 {start_of_verse: Verse 1}
 [C]Well I thought I was over you and [G7]that my heart was free

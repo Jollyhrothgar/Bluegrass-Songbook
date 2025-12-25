@@ -1,6 +1,6 @@
 {meta: title Don't Sweetheart Me}
 {meta: artist Wilburn Brothers}
-{meta: writer Cliff Friend and Charles Tobias}
+{meta: composer Cliff Friend and Charles Tobias}
 
 {start_of_verse: Verse 1}
 [C]Don't sweetheart me if you don't [D7]mean it

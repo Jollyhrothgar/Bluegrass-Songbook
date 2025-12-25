@@ -1,6 +1,6 @@
 {meta: title Field Of Flowers}
 {meta: artist Vernon Oxford}
-{meta: writer Paul Evans and Paul Parnes}
+{meta: composer Paul Evans and Paul Parnes}
 
 {start_of_verse: Verse 1}
 [G]We met in a field of flowers

@@ -1,6 +1,6 @@
 {meta: title Bed Of Roses}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]She was called a scarlet [F]woman by the [C]people

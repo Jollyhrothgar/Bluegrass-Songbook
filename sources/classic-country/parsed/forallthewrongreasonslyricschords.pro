@@ -1,6 +1,6 @@
 {meta: title For All The Wrong Reasons}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G]I love you [C]for all the wrong [G]reasons [C]  [G]

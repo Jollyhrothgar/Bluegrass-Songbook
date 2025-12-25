@@ -1,6 +1,6 @@
 {meta: title Gold And Silver}
 {meta: artist Sonny James}
-{meta: writer Shirley Legate}
+{meta: composer Shirley Legate}
 
 {start_of_verse: Verse 1}
 [C]Gold and silver [F]have I none [G7]I can give you [C]mo-[F]r-e

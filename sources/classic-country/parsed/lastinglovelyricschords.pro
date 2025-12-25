@@ -1,6 +1,6 @@
 {meta: title Lasting Love}
 {meta: artist Ferlin Husky}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]I want a [F]lasting love that's [G7]guarantee to [C]stay

@@ -1,6 +1,6 @@
 {meta: title God Gave Me A Heart To Forgive}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Barbara Cummings}
+{meta: composer Loretta Lynn and Barbara Cummings}
 
 {start_of_verse: Verse 1}
 [C]It's midnight now and I'm still all alone

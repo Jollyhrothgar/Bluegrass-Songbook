@@ -1,6 +1,6 @@
 {meta: title Runnin' Behind}
 {meta: artist Tracy Lawrence}
-{meta: writer Mark D. Sanders and Ed Hill}
+{meta: composer Mark D. Sanders and Ed Hill}
 
 {start_of_verse: Verse 1}
 [G]Work work work day after day

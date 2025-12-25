@@ -1,6 +1,6 @@
 {meta: title Doesn't Anybody Know My Name}
 {meta: artist Waylon Jennings}
-{meta: writer Rod McKuen}
+{meta: composer Rod McKuen}
 
 {start_of_verse: Verse 1}
 [C]I've been away [F]for so [C]long

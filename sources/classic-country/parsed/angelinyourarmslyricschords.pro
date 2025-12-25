@@ -1,6 +1,6 @@
 {meta: title Angel In Your Arms}
 {meta: artist Reba McEntire}
-{meta: writer Tom Brasfield, Terry Woodford, Clayton Ivey}
+{meta: composer Tom Brasfield, Terry Woodford, Clayton Ivey}
 
 {start_of_verse: Verse 1}
 [G]Do you think I'm such a fool to believe 

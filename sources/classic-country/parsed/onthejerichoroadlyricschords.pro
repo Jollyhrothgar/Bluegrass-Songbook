@@ -1,6 +1,6 @@
 {meta: title On The Jericho Road}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Don S. McCrossan}
+{meta: composer Don S. McCrossan}
 
 {start_of_verse: Verse 1}
 [G]As you travel along on the Jericho [D7]Road

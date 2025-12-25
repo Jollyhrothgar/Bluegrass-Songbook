@@ -1,6 +1,6 @@
 {meta: title Tell Me Something Bad About Tulsa}
 {meta: artist George Strait}
-{meta: writer Red Lane}
+{meta: composer Red Lane}
 
 {start_of_verse: Verse 1}
 [C]Love is so [Em]beautiful when [Am]every[C]thing is [Em]fine

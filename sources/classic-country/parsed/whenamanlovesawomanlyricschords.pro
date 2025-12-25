@@ -1,6 +1,6 @@
 {meta: title When A Man Loves A Woman}
 {meta: artist Billy Walker}
-{meta: writer Bill Eldridge and Gary Stewart}
+{meta: composer Bill Eldridge and Gary Stewart}
 
 {start_of_verse: Verse 1}
 [G]When a man loves a [C]woman 

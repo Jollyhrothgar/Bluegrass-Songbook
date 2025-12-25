@@ -1,6 +1,6 @@
 {meta: title I'd Settle For Just Crossing Her Mind}
 {meta: artist Gene Watson}
-{meta: writer Jollie Hollie}
+{meta: composer Jollie Hollie}
 
 {start_of_verse: Verse 1}
 [C]To feel her arms around me would be like [G7]heaven

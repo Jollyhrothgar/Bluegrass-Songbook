@@ -1,6 +1,6 @@
 {meta: title Will You Remember Mine}
 {meta: artist Willie Nelson}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]Sweet is a [Em]song when the [Bm]song is [G]love

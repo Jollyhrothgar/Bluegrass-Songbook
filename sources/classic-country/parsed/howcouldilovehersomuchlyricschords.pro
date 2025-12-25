@@ -1,6 +1,6 @@
 {meta: title How Could I Love Her So Much}
 {meta: artist Johnny Rodriguez}
-{meta: writer Hugh Moffatt}
+{meta: composer Hugh Moffatt}
 
 {start_of_verse: Verse 1}
 [C]As I walked through the door and my eyes fit the darkness

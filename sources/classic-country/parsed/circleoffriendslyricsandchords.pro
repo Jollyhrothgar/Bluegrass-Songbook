@@ -1,6 +1,6 @@
 {meta: title Circle of Friends}
 {meta: artist David Ball}
-{meta: writer William C. Spencer and David Ball}
+{meta: composer William C. Spencer and David Ball}
 
 {start_of_verse: Verse 1}
 [C]She lives in a world of [F]grace and class

@@ -1,6 +1,6 @@
 {meta: title Set Me Free}
 {meta: artist Tammy Wynette}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]If you think you've [C]had enough 

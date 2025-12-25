@@ -1,6 +1,6 @@
 {meta: title I Love To Do What I Love To}
 {meta: artist Billy Crash Craddock}
-{meta: writer Bobby Fisher and Chris Blake}
+{meta: composer Bobby Fisher and Chris Blake}
 
 {start_of_verse: Verse 1}
 [C]Down in old Mexico  

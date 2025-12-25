@@ -1,6 +1,6 @@
 {meta: title The Man Upstairs}
 {meta: artist Patsy Cline}
-{meta: writer Gerry Manners, Dorinda Morgan, Harold Stanley}
+{meta: composer Gerry Manners, Dorinda Morgan, Harold Stanley}
 
 {start_of_verse: Verse 1}
 [G]Have you talked to the Man upstairs

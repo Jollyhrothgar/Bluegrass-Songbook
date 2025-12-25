@@ -1,6 +1,6 @@
 {meta: title As Usual}
 {meta: artist Brenda Lee}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [C]The sun comes up and brings the dawn  [G7]as usual

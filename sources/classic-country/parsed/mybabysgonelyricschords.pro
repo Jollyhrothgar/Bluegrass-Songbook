@@ -1,6 +1,6 @@
 {meta: title My Baby's Gone}
 {meta: artist Jim Ed Brown}
-{meta: writer Hazel Houser}
+{meta: composer Hazel Houser}
 
 {start_of_verse: Verse 1}
 [G7](My world has ended) my baby's [C]gone

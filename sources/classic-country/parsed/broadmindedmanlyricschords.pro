@@ -1,6 +1,6 @@
 {meta: title Broad Minded Man}
 {meta: artist Jim Ed Brown}
-{meta: writer Jim Owen}
+{meta: composer Jim Owen}
 
 {start_of_verse: Verse 1}
 [C]I’ve been a rascal since the day I was [Am]born

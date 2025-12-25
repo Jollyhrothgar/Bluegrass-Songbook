@@ -1,6 +1,6 @@
 {meta: title All American Dream}
 {meta: artist Moe Bandy}
-{meta: writer Dan Mitchell and Kent Blazy}
+{meta: composer Dan Mitchell and Kent Blazy}
 
 {start_of_verse: Verse 1}
 [C]I drink Kentucky whiskey I [F]love California [C]wine

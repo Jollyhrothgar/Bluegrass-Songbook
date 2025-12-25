@@ -1,6 +1,6 @@
 {meta: title Fever}
 {meta: artist Elvis Presley}
-{meta: writer Eddie J. Cooley and John Davenport}
+{meta: composer Eddie J. Cooley and John Davenport}
 
 {start_of_verse: Verse 1}
 [Am]Never know how much I [C]love you  [Dm]never know how much I [Am]care

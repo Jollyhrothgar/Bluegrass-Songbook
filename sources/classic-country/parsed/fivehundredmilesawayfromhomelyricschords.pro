@@ -1,6 +1,6 @@
 {meta: title Five Hundred Miles Away From Home}
 {meta: artist Bobby Bare}
-{meta: writer Bobby Bare and Charlie Williams}
+{meta: composer Bobby Bare and Charlie Williams}
 
 {start_of_verse: Verse 1}
 [G]Teardrops fell on mama's note

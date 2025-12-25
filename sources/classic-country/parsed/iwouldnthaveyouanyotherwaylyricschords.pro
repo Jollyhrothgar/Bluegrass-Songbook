@@ -1,6 +1,6 @@
 {meta: title I Wouldn't Have You Any Other Way}
 {meta: artist George Morgan}
-{meta: writer Chuck Howard}
+{meta: composer Chuck Howard}
 
 {start_of_verse: Verse 1}
 [C]You're so [G7]different from anyone [F]I've ever [C]known

@@ -1,6 +1,6 @@
 {meta: title If I'd Only Met You First}
 {meta: artist Carl Butler}
-{meta: writer Hank Cochran and Carl Butler}
+{meta: composer Hank Cochran and Carl Butler}
 
 {start_of_verse: Verse 1}
 [C]Just like so many other men we [F]hear about in song

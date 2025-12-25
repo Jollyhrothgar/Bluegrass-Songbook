@@ -1,6 +1,6 @@
 {meta: title Don’t Wake Me I’m Dreaming}
 {meta: artist Jack Greene}
-{meta: writer Warner McPherson}
+{meta: composer Warner McPherson}
 
 {start_of_verse: Verse 1}
 [C]It sure is good to [C7]be back in [F]your arms again

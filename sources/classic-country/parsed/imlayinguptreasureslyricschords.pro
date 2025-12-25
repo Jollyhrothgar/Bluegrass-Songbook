@@ -1,6 +1,6 @@
 {meta: title I’m Laying Up Treasures}
 {meta: artist Kevin Spencer}
-{meta: writer Karen Sims}
+{meta: composer Karen Sims}
 
 {start_of_verse: Verse 1}
 [C]I’m not investing my money on [C7]unstable [F]things

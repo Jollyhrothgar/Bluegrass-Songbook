@@ -1,6 +1,6 @@
 {meta: title Cincinnati Lou}
 {meta: artist Hank Thompson}
-{meta: writer Merle Travis and Shug Fisher}
+{meta: composer Merle Travis and Shug Fisher}
 
 {start_of_verse: Verse 1}
 [G]Well I got a little gal called Cincinnati Lou

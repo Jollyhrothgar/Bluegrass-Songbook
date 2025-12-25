@@ -1,6 +1,6 @@
 {meta: title Angel In An Apron}
 {meta: artist Jimmy Dean}
-{meta: writer Gary S. Paxton and Ronald W. Hellard}
+{meta: composer Gary S. Paxton and Ronald W. Hellard}
 
 {start_of_verse: Verse 1}
 [G7]She’s my angel in an [C]apron

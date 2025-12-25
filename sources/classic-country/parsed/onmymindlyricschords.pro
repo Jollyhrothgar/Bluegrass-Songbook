@@ -1,6 +1,6 @@
 {meta: title On My Mind}
 {meta: artist Lester Flatt}
-{meta: writer Jerry Organ and Tom James}
+{meta: composer Jerry Organ and Tom James}
 
 {start_of_verse: Verse 1}
 [C]I can't eat and I can't sleep all I [G7]do is sit and cry

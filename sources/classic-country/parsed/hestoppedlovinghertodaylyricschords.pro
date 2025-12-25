@@ -1,6 +1,6 @@
 {meta: title He Stopped Loving Her Today}
 {meta: artist George Jones}
-{meta: writer Bobby Braddock and Curly Putman}
+{meta: composer Bobby Braddock and Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]He said I'll love you 'til I die

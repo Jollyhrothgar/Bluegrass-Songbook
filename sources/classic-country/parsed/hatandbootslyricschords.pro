@@ -1,6 +1,6 @@
 {meta: title Hat And Boots}
 {meta: artist The Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]If that old hat I [G7]wore could only [C]talk

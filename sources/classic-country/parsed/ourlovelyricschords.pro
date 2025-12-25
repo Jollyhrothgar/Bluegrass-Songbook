@@ -1,6 +1,6 @@
 {meta: title Our Love}
 {meta: artist George Morgan}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]I believe that our love is a [G7]true love

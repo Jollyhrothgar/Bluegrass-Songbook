@@ -1,6 +1,6 @@
 {meta: title It Wasn't God Who Made Honky Tonk Angels}
 {meta: artist Kitty Wells}
-{meta: writer Jay D. Miller}
+{meta: composer Jay D. Miller}
 
 {start_of_verse: Verse 1}
 [G]As I sit here tonight the jukebox's [C]playing

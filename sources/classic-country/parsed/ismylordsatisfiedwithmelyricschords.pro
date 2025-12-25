@@ -1,6 +1,6 @@
 {meta: title Is My Lord Satisfied With Me}
 {meta: artist The Oak Ridge Boys}
-{meta: writer E.W. Suggs}
+{meta: composer E.W. Suggs}
 
 {start_of_verse: Verse 1}
 [G]One glorious day Jesus [C]came and He made me [G]whole

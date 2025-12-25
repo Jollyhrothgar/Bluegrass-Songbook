@@ -1,6 +1,6 @@
 {meta: title St. Louis Blues}
 {meta: artist Roy Drusky}
-{meta: writer William Handy}
+{meta: composer William Handy}
 
 {start_of_verse: Verse 1}
 [G7]I hate to [C]see that evenin' sun go down

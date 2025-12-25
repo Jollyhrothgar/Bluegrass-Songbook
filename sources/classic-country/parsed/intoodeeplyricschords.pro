@@ -1,6 +1,6 @@
 {meta: title In Too Deep}
 {meta: artist George Strait}
-{meta: writer Jerry Lane and Erv Woolsey}
+{meta: composer Jerry Lane and Erv Woolsey}
 
 {start_of_verse: Verse 1}
 [C]Ain't love a strain ain't it a pain in your heart

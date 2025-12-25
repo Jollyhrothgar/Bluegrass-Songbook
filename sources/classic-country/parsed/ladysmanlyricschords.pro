@@ -1,6 +1,6 @@
 {meta: title Lady’s Man}
 {meta: artist Hank Snow}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]I'm a lady's man oh yes-sir-ee

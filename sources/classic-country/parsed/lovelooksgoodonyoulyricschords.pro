@@ -1,6 +1,6 @@
 {meta: title Love Looks Good On You}
 {meta: artist Jimmy Dean}
-{meta: writer Chips Moman and Paul Richy}
+{meta: composer Chips Moman and Paul Richy}
 
 {start_of_verse: Verse 1}
 [C]It's good to see you you're looking [G7]fine

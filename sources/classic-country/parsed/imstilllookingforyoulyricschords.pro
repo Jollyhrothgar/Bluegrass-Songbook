@@ -1,6 +1,6 @@
 {meta: title I'm Still Looking For You}
 {meta: artist Don Williams}
-{meta: writer Bob Mcdill}
+{meta: composer Bob Mcdill}
 
 {start_of_verse: Verse 1}
 [C]Love comes [G7]once they [Am]say

@@ -1,6 +1,6 @@
 {meta: title There Is No God But God}
 {meta: artist Elvis Presley}
-{meta: writer Bill Kenny}
+{meta: composer Bill Kenny}
 
 {start_of_verse: Verse 1}
 [G]There [D7]is no [G]God but God I [Em]know this is [G]true

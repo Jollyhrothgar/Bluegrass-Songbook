@@ -1,6 +1,6 @@
 {meta: title Gypsy Heart}
 {meta: artist Jim Reeves}
-{meta: writer Mitchell Torok and Jim Reeves}
+{meta: composer Mitchell Torok and Jim Reeves}
 
 {start_of_verse: Verse 1}
 [C]Oh Gypsy heart when you hear the whistle of a train

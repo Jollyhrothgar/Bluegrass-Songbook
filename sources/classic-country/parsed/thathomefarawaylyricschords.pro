@@ -1,6 +1,6 @@
 {meta: title That Home Far Away}
 {meta: artist Doyle Lawson}
-{meta: writer Ruby Rakes}
+{meta: composer Ruby Rakes}
 
 {start_of_verse: Verse 1}
 [G]Oh Lord have mercy on this [C]weary soul of [G]mine

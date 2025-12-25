@@ -1,6 +1,6 @@
 {meta: title I Wanna Come Back To You}
 {meta: artist Crystal Gayle}
-{meta: writer Johnny Christopher and Sam Hogin}
+{meta: composer Johnny Christopher and Sam Hogin}
 
 {start_of_verse: Verse 1}
 [C]I've known about love for a [G7]long long [C]time 

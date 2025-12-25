@@ -1,6 +1,6 @@
 {meta: title Hey Little Girl}
 {meta: artist Elvis Presley}
-{meta: writer Bill Giant, Bernie Baum, Florenece Kaye}
+{meta: composer Bill Giant, Bernie Baum, Florenece Kaye}
 
 {start_of_verse: Verse 1}
 [C]Hey [F]little girl you [C]sure are cute [F]to [C]me

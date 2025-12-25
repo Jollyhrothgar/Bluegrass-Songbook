@@ -1,6 +1,6 @@
 {meta: title Sick Sober And Sorry}
 {meta: artist Lefty Frizzell}
-{meta: writer Tex Atchinson and Eddie Hazlewood}
+{meta: composer Tex Atchinson and Eddie Hazlewood}
 
 {start_of_verse: Verse 1}
 [C]Oh sick sober and [F]sorry

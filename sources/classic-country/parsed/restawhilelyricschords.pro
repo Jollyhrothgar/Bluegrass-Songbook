@@ -1,6 +1,6 @@
 {meta: title Rest Awhile}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]Does anyone know of a girl who might [F]like

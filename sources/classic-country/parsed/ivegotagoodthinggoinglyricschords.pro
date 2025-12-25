@@ -1,6 +1,6 @@
 {meta: title I've Got A Good Thing Going}
 {meta: artist Garth Brooks}
-{meta: writer Larry Bastian, Sandy Mahl, Garth Brooks}
+{meta: composer Larry Bastian, Sandy Mahl, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]She [G7]swears there's nothing wrong but something's [C]missin'

@@ -1,6 +1,6 @@
 {meta: title Matthew Twenty Four}
 {meta: artist Kitty Wells}
-{meta: writer Lonnie Glosson}
+{meta: composer Lonnie Glosson}
 
 {start_of_verse: Verse 1}
 [C]I believe the time is coming

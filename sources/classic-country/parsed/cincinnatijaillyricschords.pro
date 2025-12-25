@@ -1,6 +1,6 @@
 {meta: title Cincinnati Jail}
 {meta: artist Bobby Bare}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]It's [Am]cold as a [G7]well in [C]Cincinnati [D7]jail

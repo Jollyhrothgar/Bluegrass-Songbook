@@ -1,6 +1,6 @@
 {meta: title I Just Want You to Know}
 {meta: artist Hank Snow}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [G]I want you to know if things should go wrong

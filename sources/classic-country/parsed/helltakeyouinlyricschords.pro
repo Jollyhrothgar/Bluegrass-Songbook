@@ -1,6 +1,6 @@
 {meta: title He'll Take You In}
 {meta: artist Russell Moore and IIIrd Tyme Out}
-{meta: writer Billy Smith and Steffan Baker}
+{meta: composer Billy Smith and Steffan Baker}
 
 {start_of_verse: Verse 1}
 [C]Let not your heart be troubled [F]for He will take you [C]in

@@ -1,6 +1,6 @@
 {meta: title Ultimately Fine}
 {meta: artist Ricky Van Shelton}
-{meta: writer Sam Llanas and Kurt Neumann}
+{meta: composer Sam Llanas and Kurt Neumann}
 
 {start_of_verse: Verse 1}
 [C]I see you walkin' and I hear you talkin'

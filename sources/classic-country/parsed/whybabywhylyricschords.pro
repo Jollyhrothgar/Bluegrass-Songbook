@@ -1,6 +1,6 @@
 {meta: title Why Baby Why}
 {meta: artist George Jones}
-{meta: writer Darrell Edwards & George Jones}
+{meta: composer Darrell Edwards & George Jones}
 
 {start_of_verse: Verse 1}
 [G]Tell me why baby  why baby  why baby [C]why

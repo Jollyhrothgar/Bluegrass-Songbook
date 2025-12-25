@@ -1,6 +1,6 @@
 {meta: title Candyland}
 {meta: artist Faron Young}
-{meta: writer Bill Emerson and Jody Emerson}
+{meta: composer Bill Emerson and Jody Emerson}
 
 {start_of_verse: Verse 1}
 [C]Well you wouldn’t be[F]lieve the [C]things that I’ve [C7]seen 

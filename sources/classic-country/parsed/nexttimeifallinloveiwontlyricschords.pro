@@ -1,6 +1,6 @@
 {meta: title Next Time I Fall In Love I Won't}
 {meta: artist Hank Thompson}
-{meta: writer Ned Miller}
+{meta: composer Ned Miller}
 
 {start_of_verse: Verse 1}
 [C]Next time I [F]fall in love [C]I won’t

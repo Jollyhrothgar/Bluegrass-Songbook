@@ -1,6 +1,6 @@
 {meta: title Who Can I Count On}
 {meta: artist Patsy Cline}
-{meta: writer Sammy Masters}
+{meta: composer Sammy Masters}
 
 {start_of_verse: Verse 1}
 [G]Who can I count on if I [D7]can't count on you

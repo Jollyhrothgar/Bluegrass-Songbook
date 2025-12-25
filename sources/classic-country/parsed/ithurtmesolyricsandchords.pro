@@ -1,6 +1,6 @@
 {meta: title It Hurt Me So}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Charlie Rich and Bill Justis}
+{meta: composer Charlie Rich and Bill Justis}
 
 {start_of_verse: Verse 1}
 [G7]It hurt me [C]so (it hurt me so)

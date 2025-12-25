@@ -1,6 +1,6 @@
 {meta: title My Day Won't Be Complete}
 {meta: artist The Wilburn Brothers}
-{meta: writer Johnny Russell}
+{meta: composer Johnny Russell}
 
 {start_of_verse: Verse 1}
 [C]All the town is sleeping by [G7]now you're day is [C]through

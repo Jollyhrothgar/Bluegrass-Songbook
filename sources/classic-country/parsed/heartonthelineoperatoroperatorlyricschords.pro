@@ -1,6 +1,6 @@
 {meta: title Heart on the Line (Operator Operator)}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Larry C. Willoughby and Janet K. Willoughby}
+{meta: composer Larry C. Willoughby and Janet K. Willoughby}
 
 {start_of_verse: Verse 1}
 [C]Now I thought it over how it's come to this

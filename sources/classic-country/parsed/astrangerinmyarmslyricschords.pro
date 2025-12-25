@@ -1,6 +1,6 @@
 {meta: title A Stranger In My Arms}
 {meta: artist Patsy Cline}
-{meta: writer Charlotte White, Virginia Hensley and Mary Lu Jeans}
+{meta: composer Charlotte White, Virginia Hensley and Mary Lu Jeans}
 
 {start_of_verse: Verse 1}
 [C]Though you try you can't conceal it

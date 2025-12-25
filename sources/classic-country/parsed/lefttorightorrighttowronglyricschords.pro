@@ -1,6 +1,6 @@
 {meta: title Left To Right Or Right To Wrong}
 {meta: artist Faron Young}
-{meta: writer William Paul Rigsby and Faron Young}
+{meta: composer William Paul Rigsby and Faron Young}
 
 {start_of_verse: Verse 1}
 [C]I close the office right on time 

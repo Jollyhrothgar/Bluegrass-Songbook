@@ -1,6 +1,6 @@
 {meta: title One Shot Deal}
 {meta: artist John Anderson}
-{meta: writer Bob DiPiero and John S. Sherrill}
+{meta: composer Bob DiPiero and John S. Sherrill}
 
 {start_of_verse: Verse 1}
 [G]The way you talked you know I thought

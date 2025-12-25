@@ -1,6 +1,6 @@
 {meta: title I Wish I Was Eighteen Again}
 {meta: artist Ray Price}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [D7]At a bar [G]down in Dallas an [Em]old man chimed [Am]in

@@ -1,6 +1,6 @@
 {meta: title Don't Think I Don't Love You}
 {meta: artist George Jones}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Your old cheatin' heart has finally caught [C]you

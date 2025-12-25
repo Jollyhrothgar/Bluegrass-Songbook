@@ -1,6 +1,6 @@
 {meta: title We Found It}
 {meta: artist Porter Wagoner}
-{meta: writer Porter Wagoner}
+{meta: composer Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]We've been a searching for the love that lost its [G7]feeling

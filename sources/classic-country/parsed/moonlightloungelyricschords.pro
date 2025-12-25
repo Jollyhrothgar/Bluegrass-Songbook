@@ -1,6 +1,6 @@
 {meta: title Moonlight Lounge}
 {meta: artist Alabama}
-{meta: writer Ronnie Rogers}
+{meta: composer Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [G]Flattop guitar down around the campfire

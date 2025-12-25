@@ -1,6 +1,6 @@
 {meta: title Eyes That See In The Dark}
 {meta: artist Kenny Rogers}
-{meta: writer Barry Gibb and Maurice Gibb}
+{meta: composer Barry Gibb and Maurice Gibb}
 
 {start_of_verse: Verse 1}
 [C]You're not meant to be [F]alone I'll share your [Dm]dream

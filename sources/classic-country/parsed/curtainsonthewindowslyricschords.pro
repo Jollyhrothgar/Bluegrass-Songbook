@@ -1,6 +1,6 @@
 {meta: title Curtains On The Windows}
 {meta: artist Billy Walker}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]I came home kind [F]of [C]unexpected

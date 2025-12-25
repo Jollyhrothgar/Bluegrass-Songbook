@@ -1,6 +1,6 @@
 {meta: title Circle Driveway}
 {meta: artist Don Williams}
-{meta: writer Joseph Paul Allen}
+{meta: composer Joseph Paul Allen}
 
 {start_of_verse: Verse 1}
 [G]I wish I had a circle driveway

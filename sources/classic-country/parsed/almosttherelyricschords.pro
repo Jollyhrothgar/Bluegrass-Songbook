@@ -1,6 +1,6 @@
 {meta: title Almost There}
 {meta: artist Brenda Lee}
-{meta: writer Gloria Shayne and Jerry Keller}
+{meta: composer Gloria Shayne and Jerry Keller}
 
 {start_of_verse: Verse 1}
 [C]Almost there we're almost [G7]there

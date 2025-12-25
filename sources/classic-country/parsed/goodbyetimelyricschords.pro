@@ -1,6 +1,6 @@
 {meta: title Goodbye Time}
 {meta: artist Conway Twitty}
-{meta: writer Roger Murrah and James D. Hicks}
+{meta: composer Roger Murrah and James D. Hicks}
 
 {start_of_verse: Verse 1}
 [C]It's your life  [F]you say you need a [C]change

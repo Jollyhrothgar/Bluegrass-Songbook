@@ -1,6 +1,6 @@
 {meta: title Right In The Wrong Direction}
 {meta: artist Vern Gosdin}
-{meta: writer Hank Cochran, Mack Vickery, Vern Gosdin}
+{meta: composer Hank Cochran, Mack Vickery, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]Well your office called to [G7]say you wouldn't be [C]long

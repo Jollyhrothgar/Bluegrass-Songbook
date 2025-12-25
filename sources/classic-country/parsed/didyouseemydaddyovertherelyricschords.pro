@@ -1,6 +1,6 @@
 {meta: title Did You See My Daddy Over There Lyrics and Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Bill Showmet}
+{meta: composer Bill Showmet}
 
 {start_of_verse: Verse 1}
 [C]A little boy tugged gently 

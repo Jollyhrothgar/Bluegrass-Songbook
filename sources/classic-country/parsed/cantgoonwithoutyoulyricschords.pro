@@ -1,6 +1,6 @@
 {meta: title Can't Go On Without You}
 {meta: artist Fats Domino}
-{meta: writer Dorothy Randazzo and Antoine Domino}
+{meta: composer Dorothy Randazzo and Antoine Domino}
 
 {start_of_verse: Verse 1}
 [G](Can't go on without [C]you oh [G]no)

@@ -1,6 +1,6 @@
 {meta: title Goin' And Comin'}
 {meta: artist Wilburn Brothers}
-{meta: writer Jean Cole and Leon Scudder}
+{meta: composer Jean Cole and Leon Scudder}
 
 {start_of_verse: Verse 1}
 [C]You've got me goin' and comin' [F]back and forth you got me runnin’

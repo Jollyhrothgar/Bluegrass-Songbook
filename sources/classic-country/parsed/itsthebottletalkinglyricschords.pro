@@ -1,6 +1,6 @@
 {meta: title It's The Bottle Talking}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]It’s the bottle talking when you say you’re mine

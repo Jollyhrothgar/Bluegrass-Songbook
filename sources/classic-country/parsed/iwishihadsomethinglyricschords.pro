@@ -1,6 +1,6 @@
 {meta: title I Wish I Had Something}
 {meta: artist Vern Gosdin}
-{meta: writer Rex Gosdin}
+{meta: composer Rex Gosdin}
 
 {start_of_verse: Verse 1}
 [C]I borrowed this ol' overcoat 

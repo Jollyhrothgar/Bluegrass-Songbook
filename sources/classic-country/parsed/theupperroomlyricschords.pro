@@ -1,6 +1,6 @@
 {meta: title The Upper Room}
 {meta: artist Hank Locklin}
-{meta: writer Hank Locklin and Frank Peterson}
+{meta: composer Hank Locklin and Frank Peterson}
 
 {start_of_verse: Verse 1}
 [G]It was getting dark in the evening [D7]gloom

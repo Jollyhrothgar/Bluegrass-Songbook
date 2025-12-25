@@ -1,6 +1,6 @@
 {meta: title It's Me That Hurts The Most}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Kent Westberry}
+{meta: composer Kent Westberry}
 
 {start_of_verse: Verse 1}
 [G]The cup on the table was the [G7]last to feel your [G]lips

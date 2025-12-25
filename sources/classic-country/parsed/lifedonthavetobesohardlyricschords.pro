@@ -1,6 +1,6 @@
 {meta: title Life Don't Have To Be So Hard}
 {meta: artist Tracy Lawrence}
-{meta: writer Casey Beathard and Kenny West}
+{meta: composer Casey Beathard and Kenny West}
 
 {start_of_verse: Verse 1}
 [C]Don't want to read the paper or turn on the news

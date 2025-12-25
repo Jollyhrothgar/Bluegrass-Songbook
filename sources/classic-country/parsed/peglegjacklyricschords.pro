@@ -1,6 +1,6 @@
 {meta: title Peg Leg Jack}
 {meta: artist Tex Morton}
-{meta: writer Carson Robinson}
+{meta: composer Carson Robinson}
 
 {start_of_verse: Verse 1}
 [C]Ol' Peg Leg Jack went out one night to get a little [F]gin

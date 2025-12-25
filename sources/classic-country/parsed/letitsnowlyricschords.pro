@@ -1,6 +1,6 @@
 {meta: title Let It Snow}
 {meta: artist Christmas song lyrics}
-{meta: writer Sammy Cahn and Jule Styne}
+{meta: composer Sammy Cahn and Jule Styne}
 
 {start_of_verse: Verse 1}
 [C]Oh the weather outside [G7]is [C]frightful

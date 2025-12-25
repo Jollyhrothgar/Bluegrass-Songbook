@@ -1,6 +1,6 @@
 {meta: title You've Got A Good Love Coming}
 {meta: artist Conway Twitty}
-{meta: writer Danny Morrison, Jeff Silbar, Van Stephenson}
+{meta: composer Danny Morrison, Jeff Silbar, Van Stephenson}
 
 {start_of_verse: Verse 1}
 [C]Look out there's a [Dm]sunny day [G7]

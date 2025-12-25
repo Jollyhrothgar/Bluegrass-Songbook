@@ -1,6 +1,6 @@
 {meta: title Unbreakable Heart}
 {meta: artist Eddy Arnold}
-{meta: writer Joe Allison, Audrey Allison, Paul Wyatt}
+{meta: composer Joe Allison, Audrey Allison, Paul Wyatt}
 
 {start_of_verse: Verse 1}
 Unbreakable Heart

@@ -1,6 +1,6 @@
 {meta: title Hello To Him Goodbye To Me}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Abe Mulkey}
+{meta: composer Lefty Frizzell and Abe Mulkey}
 
 {start_of_verse: Verse 1}
 And gave him a chance to dance with [G7]her

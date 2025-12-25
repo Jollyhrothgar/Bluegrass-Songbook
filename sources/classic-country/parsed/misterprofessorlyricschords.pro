@@ -1,6 +1,6 @@
 {meta: title Mister Professor}
 {meta: artist Leroy Van Dyke}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Mister professor you're well educated I [Am]know

@@ -1,6 +1,6 @@
 {meta: title You Don't Need Me Now}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Shake Russell}
+{meta: composer Clint Black and Shake Russell}
 
 {start_of_verse: Verse 1}
 [C]Holdin' on safe[Em]ly to fall 

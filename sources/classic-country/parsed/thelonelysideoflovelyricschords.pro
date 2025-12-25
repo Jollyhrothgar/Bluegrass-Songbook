@@ -1,6 +1,6 @@
 {meta: title The Lonely Side Of Love}
 {meta: artist Patty Loveless}
-{meta: writer Kostas Lazarides}
+{meta: composer Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [C]I can't make these heartaches go away [F]he's always [G7]on my [C]mind

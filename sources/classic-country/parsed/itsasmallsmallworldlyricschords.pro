@@ -1,6 +1,6 @@
 {meta: title It's A Small Small World}
 {meta: artist The Statler Brothers}
-{meta: writer Gary Eugene Scruggs and Thomas James Schuyler}
+{meta: composer Gary Eugene Scruggs and Thomas James Schuyler}
 
 {start_of_verse: Verse 1}
 [C]It's a small small world [F]fancy meetin' [C]you

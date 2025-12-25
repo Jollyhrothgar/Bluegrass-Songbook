@@ -1,6 +1,6 @@
 {meta: title Coffee Brown Eyes}
 {meta: artist Billy Walker}
-{meta: writer Sonny Flaharty and Kent Westberry}
+{meta: composer Sonny Flaharty and Kent Westberry}
 
 {start_of_verse: Verse 1}
 [C]In Romaris [G7]cantina I [C]loved her the first [G7]time I saw [C]her

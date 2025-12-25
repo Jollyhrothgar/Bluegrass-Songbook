@@ -1,6 +1,6 @@
 {meta: title Just Get Up And Close The Door}
 {meta: artist Johnny Rodriguez}
-{meta: writer Linda Hargrove Bartholomew}
+{meta: composer Linda Hargrove Bartholomew}
 
 {start_of_verse: Verse 1}
 [C]How can I be sure [G7]you're being honest with [Am]me

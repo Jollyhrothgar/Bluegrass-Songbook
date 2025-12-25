@@ -1,6 +1,6 @@
 {meta: title Rosalee}
 {meta: artist Bobby Bare}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [G7]As I [F]lay here all [G7]alone I feel the [C]darkness coming on

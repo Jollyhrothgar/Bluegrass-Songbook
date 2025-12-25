@@ -1,6 +1,6 @@
 {meta: title Meanest Jukebox In Town}
 {meta: artist Johnny Paycheck}
-{meta: writer Johnny Paycheck and Aubrey Mayhew}
+{meta: composer Johnny Paycheck and Aubrey Mayhew}
 
 {start_of_verse: Verse 1}
 [C]Each dime that goes into that [F]jukebox

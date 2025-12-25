@@ -1,6 +1,6 @@
 {meta: title Whither Thou Goest I Will Go}
 {meta: artist George Morgan}
-{meta: writer Guy Singer}
+{meta: composer Guy Singer}
 
 {start_of_verse: Verse 1}
 [C]Whither [G7]Thou goest I will [C]go

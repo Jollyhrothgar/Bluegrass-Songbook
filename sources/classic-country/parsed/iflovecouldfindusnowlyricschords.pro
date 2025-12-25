@@ -1,6 +1,6 @@
 {meta: title If Love Could Find Us Now}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [C]The only thing that holds me at this distance from the [G7]door

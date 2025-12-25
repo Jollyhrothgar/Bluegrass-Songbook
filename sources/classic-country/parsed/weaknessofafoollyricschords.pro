@@ -1,6 +1,6 @@
 {meta: title Weakness Of A Fool}
 {meta: artist Faron Young}
-{meta: writer Samuel Manning}
+{meta: composer Samuel Manning}
 
 {start_of_verse: Verse 1}
 [C]Well I'll admit that [F]from the start [C]there was this [G7]certain [C]doubt

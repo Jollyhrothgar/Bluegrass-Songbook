@@ -1,6 +1,6 @@
 {meta: title Hot Rod Boogie}
 {meta: artist Faron Young}
-{meta: writer Tillman Franks}
+{meta: composer Tillman Franks}
 
 {start_of_verse: Verse 1}
 [C]Well I had an old Ford and it took a chill

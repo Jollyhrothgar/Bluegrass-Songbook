@@ -1,6 +1,6 @@
 {meta: title Battle Hymn Of The Republic}
 {meta: artist Tammy Wynette}
-{meta: writer Julia Ward Howe}
+{meta: composer Julia Ward Howe}
 
 {start_of_verse: Verse 1}
 [C]Mine eyes have seen the glory of the coming of the Lord

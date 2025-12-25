@@ -1,6 +1,6 @@
 {meta: title Harold's Super Service}
 {meta: artist Merle Haggard}
-{meta: writer Robert Wayne Edrington}
+{meta: composer Robert Wayne Edrington}
 
 {start_of_verse: Verse 1}
 [G]Now me I work at Harold's Super Service

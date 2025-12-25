@@ -1,6 +1,6 @@
 {meta: title All I Can Be Is A Sweet Memory}
 {meta: artist Johnny Rodriguez Lyrics with Chords}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]All I can be is a sweet memory

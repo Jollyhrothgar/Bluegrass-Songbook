@@ -1,6 +1,6 @@
 {meta: title Your Eyes Don’t Lie To Me}
 {meta: artist Bill Anderson}
-{meta: writer Terry Carisse and Bruce Rawlins}
+{meta: composer Terry Carisse and Bruce Rawlins}
 
 {start_of_verse: Verse 1}
 [G]Your eyes tell me [C]all the things I need to [G]know

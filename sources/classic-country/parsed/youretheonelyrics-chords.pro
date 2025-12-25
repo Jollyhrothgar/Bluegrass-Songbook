@@ -1,6 +1,6 @@
 {meta: title You're The One}
 {meta: artist Buddy Holly}
-{meta: writer Slim Corbin, Buddy Holly, Waylon Jennings}
+{meta: composer Slim Corbin, Buddy Holly, Waylon Jennings}
 
 {start_of_verse: Verse 1}
 [D7]You're the [G]one that's a-[C]causing my [G]blues

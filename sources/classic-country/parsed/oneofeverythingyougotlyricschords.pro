@@ -1,6 +1,6 @@
 {meta: title One Of Everything You Got Lyrics with Chords}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Bob Morris}
+{meta: composer Buck Owens and Bob Morris}
 
 {start_of_verse: Verse 1}
 [C]My little boy is a [F]barrel of [C]fun 

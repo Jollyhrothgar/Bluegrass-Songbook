@@ -1,6 +1,6 @@
 {meta: title Only Love Can Break A Heart}
 {meta: artist Gene Pitney}
-{meta: writer Hal David and Burt Bacharach}
+{meta: composer Hal David and Burt Bacharach}
 
 {start_of_verse: Verse 1}
 [C]Only love can [D7]break a heart [C]only love can [D7]mend it [G7]again

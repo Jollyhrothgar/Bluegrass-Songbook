@@ -1,6 +1,6 @@
 {meta: title Clementine}
 {meta: artist Johnny Cash}
-{meta: writer Billy Mize and Buddy Mize}
+{meta: composer Billy Mize and Buddy Mize}
 
 {start_of_verse: Verse 1}
 [C](Oh my [G7]darling [C]Clementine)

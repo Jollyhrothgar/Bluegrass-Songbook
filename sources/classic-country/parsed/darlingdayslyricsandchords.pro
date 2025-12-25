@@ -1,6 +1,6 @@
 {meta: title Darling Days}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier and Sanger D. Shafer}
+{meta: composer Dallas Frazier and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G]If I never love [C]again I won't feel [G]cheated

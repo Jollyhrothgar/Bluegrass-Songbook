@@ -1,6 +1,6 @@
 {meta: title It Gets Late So Early}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Lee Hayes}
+{meta: composer Lefty Frizzell and Lee Hayes}
 
 {start_of_verse: Verse 1}
 [C]Here am I dear with you you know [G7]how much I love 

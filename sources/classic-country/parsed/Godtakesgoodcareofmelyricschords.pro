@@ -1,6 +1,6 @@
 {meta: title God Takes Good Care Of Me}
 {meta: artist Debra Talley}
-{meta: writer Henry Slaughter}
+{meta: composer Henry Slaughter}
 
 {start_of_verse: Verse 1}
 [C]God takes real good [D7]care of me

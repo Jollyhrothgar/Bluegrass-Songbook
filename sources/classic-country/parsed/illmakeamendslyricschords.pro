@@ -1,6 +1,6 @@
 {meta: title I'll Make Amends}
 {meta: artist Roy Drusky}
-{meta: writer Bud Moore}
+{meta: composer Bud Moore}
 
 {start_of_verse: Verse 1}
 [C]Sweet[G]heart [D7]I'll [G]m-a-[D7]k-e a[G]mends[C]  [G]  [D7]

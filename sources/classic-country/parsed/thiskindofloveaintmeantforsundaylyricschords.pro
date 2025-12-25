@@ -1,6 +1,6 @@
 {meta: title This Kind Of Love Ain't Meant For Sunday}
 {meta: artist Carl Smith}
-{meta: writer Jimmy Walker}
+{meta: composer Jimmy Walker}
 
 {start_of_verse: Verse 1}
 [G]Folks are on their way to church

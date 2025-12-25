@@ -1,6 +1,6 @@
 {meta: title True Love Ways}
 {meta: artist Buddy Holly}
-{meta: writer Buddy Holly and Norman Petty}
+{meta: composer Buddy Holly and Norman Petty}
 
 {start_of_verse: Verse 1}
 Just you know [G]why[C]  why [D7]you and [G]I  [C]

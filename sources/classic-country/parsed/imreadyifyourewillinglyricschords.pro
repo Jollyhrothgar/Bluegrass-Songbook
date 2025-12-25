@@ -1,6 +1,6 @@
 {meta: title I'm Ready If You're Willing}
 {meta: artist Johnny Horton}
-{meta: writer Jerry Organ and Vernon Cloud}
+{meta: composer Jerry Organ and Vernon Cloud}
 
 {start_of_verse: Verse 1}
 [G]There's a big bright moon above and the night's just made for love

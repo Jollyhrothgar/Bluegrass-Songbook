@@ -1,6 +1,6 @@
 {meta: title Thank You For Being You}
 {meta: artist Mel Tillis}
-{meta: writer Kent Westberry and Hal Harbour}
+{meta: composer Kent Westberry and Hal Harbour}
 
 {start_of_verse: Verse 1}
 [G]I thank you for the sunshine that you put into my [C]skies

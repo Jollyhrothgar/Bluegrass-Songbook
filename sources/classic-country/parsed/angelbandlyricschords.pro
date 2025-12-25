@@ -1,6 +1,6 @@
 {meta: title Angel Band}
 {meta: artist Emmylou Harris}
-{meta: writer Pearl D. Jones}
+{meta: composer Pearl D. Jones}
 
 {start_of_verse: Verse 1}
 [C]My latest sun is [F]sinking [C]fast my race is [G7]nearly [C]run

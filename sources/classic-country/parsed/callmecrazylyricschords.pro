@@ -1,6 +1,6 @@
 {meta: title Call Me Crazy}
 {meta: artist Ricky Van Shelton}
-{meta: writer Wendell Mobley and Brett Jones}
+{meta: composer Wendell Mobley and Brett Jones}
 
 {start_of_verse: Verse 1}
 [G]Got my heart broke in the second grade

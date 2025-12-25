@@ -1,6 +1,6 @@
 {meta: title Pretty House For Sale}
 {meta: artist Charley Pride}
-{meta: writer Harold Dorman and Wiley Gann}
+{meta: composer Harold Dorman and Wiley Gann}
 
 {start_of_verse: Verse 1}
 [C]Well hello there [F]come on [C]in I've been expecting [F]you my [C]friend

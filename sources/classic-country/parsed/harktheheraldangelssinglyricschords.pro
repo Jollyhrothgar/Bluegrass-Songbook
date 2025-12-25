@@ -1,4 +1,4 @@
-{meta: writer Charles Wesley and Felix Mendelssohn}
+{meta: composer Charles Wesley and Felix Mendelssohn}
 
 {start_of_verse: Verse 1}
 [C]Hark the herald angels [G7]sing 

@@ -1,6 +1,6 @@
 {meta: title Children}
 {meta: artist Johnny Cash}
-{meta: writer Joe South}
+{meta: composer Joe South}
 
 {start_of_verse: Verse 1}
 [C]Children children children run and jump and [G7]play

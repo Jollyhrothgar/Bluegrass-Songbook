@@ -1,6 +1,6 @@
 {meta: title How Can I Write On Paper What I Feel In My Heart}
 {meta: artist Jim Reeves}
-{meta: writer Don Carter, Danny Harrison, George Kent, Jim Reeves}
+{meta: composer Don Carter, Danny Harrison, George Kent, Jim Reeves}
 
 {start_of_verse: Verse 1}
 [C]With pen in hand I try to write this note to [G7]you

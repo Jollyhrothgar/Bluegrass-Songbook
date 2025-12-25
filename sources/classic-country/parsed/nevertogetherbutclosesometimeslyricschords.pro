@@ -1,6 +1,6 @@
 {meta: title Never Together But Close Sometimes}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Rodney Crowell}
+{meta: composer Rodney Crowell}
 
 {start_of_verse: Verse 1}
 [G]There’s a song in [D7]your eye as [G]blue as the [C]sky

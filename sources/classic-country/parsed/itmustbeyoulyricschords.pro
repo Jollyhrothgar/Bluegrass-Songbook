@@ -1,6 +1,6 @@
 {meta: title It Must Be You}
 {meta: artist Dolly Parton}
-{meta: writer Blaise Tosti}
+{meta: composer Blaise Tosti}
 
 {start_of_verse: Verse 1}
 [C]Just like the tide goes with the [G7]sea

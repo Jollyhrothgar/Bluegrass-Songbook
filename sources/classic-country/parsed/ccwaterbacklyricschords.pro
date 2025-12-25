@@ -1,6 +1,6 @@
 {meta: title C C Waterback}
 {meta: artist George Jones}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 {comment: C C Waterback}

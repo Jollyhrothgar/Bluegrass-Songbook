@@ -1,6 +1,6 @@
 {meta: title Sky Full Of Angels}
 {meta: artist Reba McEntire}
-{meta: writer Burton Collins, Clay Mills, Lisa Stewart}
+{meta: composer Burton Collins, Clay Mills, Lisa Stewart}
 
 {start_of_verse: Verse 1}
 [C]Preacher man talking about the end of time

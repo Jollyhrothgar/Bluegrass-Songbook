@@ -1,6 +1,6 @@
 {meta: title Knew All Along}
 {meta: artist Alan Jackson}
-{meta: writer Adam Wright and Shannon Wright}
+{meta: composer Adam Wright and Shannon Wright}
 
 {start_of_verse: Verse 1}
 [F]The things you [C]taught me [G7]just a little [Am]while

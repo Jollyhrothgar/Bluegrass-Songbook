@@ -1,6 +1,6 @@
 {meta: title I Love You I Love You}
 {meta: artist Barbara Mandrell}
-{meta: writer Norro Wilson and Danny Walls}
+{meta: composer Norro Wilson and Danny Walls}
 
 {start_of_verse: Verse 1}
 [G]If you only [C]knew how much [G]I love you

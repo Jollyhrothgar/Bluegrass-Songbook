@@ -1,6 +1,6 @@
 {meta: title Hard Times}
 {meta: artist Lacy J. Dalton}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]Same old bills on the dresser

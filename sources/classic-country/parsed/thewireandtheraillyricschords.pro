@@ -1,6 +1,6 @@
 {meta: title The Wire And The Rail}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Dale Burson}
+{meta: composer Red Steagall and Dale Burson}
 
 {start_of_verse: Verse 1}
 [G]The call came for young fearless [C]riders

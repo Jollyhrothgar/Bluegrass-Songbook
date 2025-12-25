@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Paint Me A Bed Of Roses}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Bobby Whitson}
+{meta: composer Merle Haggard and Bobby Whitson}
 
 {start_of_verse: Verse 1}
 [C]In our bedroom there's a portrait

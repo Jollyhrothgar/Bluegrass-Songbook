@@ -1,6 +1,6 @@
 {meta: title Handle With Care}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Kent Westberry and Jimmy Dickens}
+{meta: composer Kent Westberry and Jimmy Dickens}
 
 {start_of_verse: Verse 1}
 [C]Handle with care please treat her [G7]gently

@@ -1,6 +1,6 @@
 {meta: title Whoever's Watchin'}
 {meta: artist Reba McEntire}
-{meta: writer Kevin Welch and Gary Morris}
+{meta: composer Kevin Welch and Gary Morris}
 
 {start_of_verse: Verse 1}
 [G]I'm not wastin' my [C]time on earthly [G]longin' 

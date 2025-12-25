@@ -1,6 +1,6 @@
 {meta: title Country Music All Around The World}
 {meta: artist Roy Drusky}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [C]Country music's all [G7]around the world

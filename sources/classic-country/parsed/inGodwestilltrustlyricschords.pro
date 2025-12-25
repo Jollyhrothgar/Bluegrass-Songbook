@@ -1,6 +1,6 @@
 {meta: title In God We Still Trust}
 {meta: artist Diamond Rio}
-{meta: writer Bill Nash and Robert LeClair}
+{meta: composer Bill Nash and Robert LeClair}
 
 {start_of_verse: Verse 1}
 [G]You place your [C]hand on His [G]Bible when you [C]swear to tell the [G]truth

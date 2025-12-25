@@ -1,6 +1,6 @@
 {meta: title Living Alone}
 {meta: artist Hank Locklin}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]I may be wealthy with more than my share 

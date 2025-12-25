@@ -1,6 +1,6 @@
 {meta: title Burn That Candle}
 {meta: artist Charline Arthur}
-{meta: writer Winfield Scott}
+{meta: composer Winfield Scott}
 
 {start_of_verse: Verse 1}
 [G]Burn that candle night and day

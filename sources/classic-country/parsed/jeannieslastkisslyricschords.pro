@@ -1,6 +1,6 @@
 {meta: title Jeannie’s Last Kiss}
 {meta: artist Bobby Bare}
-{meta: writer Bobby Bare and Charlie Williams}
+{meta: composer Bobby Bare and Charlie Williams}
 
 {start_of_verse: Verse 1}
 [F](Come give Jeannie one last [C]kiss)

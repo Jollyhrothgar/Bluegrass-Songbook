@@ -1,6 +1,6 @@
 {meta: title Leave Me Alone With The Blues}
 {meta: artist Hank Williams}
-{meta: writer Joe Pope}
+{meta: composer Joe Pope}
 
 {start_of_verse: Verse 1}
 [C]Better pack up your suitcase and [F]leave in a [C]hurry

@@ -1,6 +1,6 @@
 {meta: title Luckenback Texas}
 {meta: artist Waylon Jennings}
-{meta: writer Chips Moman and Bobby Emmons}
+{meta: composer Chips Moman and Bobby Emmons}
 
 {start_of_verse: Verse 1}
 [G]There're only two things in life [D7]that make it worth [G]living

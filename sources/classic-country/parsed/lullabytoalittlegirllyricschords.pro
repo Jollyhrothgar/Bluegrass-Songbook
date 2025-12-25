@@ -1,6 +1,6 @@
 {meta: title Lullaby To A Little Girl}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G7]Hush a [C]bye don't you cry 

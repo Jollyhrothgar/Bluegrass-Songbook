@@ -1,6 +1,6 @@
 {meta: title She Stays In The Name Of Love}
 {meta: artist Moe Bandy}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]I've been everything that a man shouldn't be

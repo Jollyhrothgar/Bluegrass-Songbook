@@ -1,6 +1,6 @@
 {meta: title I'll Never Leave My God Alone}
 {meta: artist Wilburn Brothers}
-{meta: writer Lorene Mann}
+{meta: composer Lorene Mann}
 
 {start_of_verse: Verse 1}
 [C]Not for love and [Em]not for [C]money

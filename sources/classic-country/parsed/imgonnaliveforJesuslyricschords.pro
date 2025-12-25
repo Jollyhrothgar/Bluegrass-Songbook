@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Live For Jesus}
 {meta: artist Allen Frizzell}
-{meta: writer Allen D. Frizzell, Gayle L. Frizzell, John E. McCollum}
+{meta: composer Allen D. Frizzell, Gayle L. Frizzell, John E. McCollum}
 
 {start_of_verse: Verse 1}
 [G]Saw the light in a country church [C]when I was seven[G]teen

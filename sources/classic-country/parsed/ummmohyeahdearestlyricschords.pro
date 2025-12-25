@@ -1,6 +1,6 @@
 {meta: title Ummm Oh Yeah (Dearest)}
 {meta: artist Buddy Holly}
-{meta: writer Mickey Baker and Ellas McDaniel}
+{meta: composer Mickey Baker and Ellas McDaniel}
 
 {start_of_verse: Verse 1}
 [C]Dearest  [F]though you're the [G7]nearest to my [C]heart[F]

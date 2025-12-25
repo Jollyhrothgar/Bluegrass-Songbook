@@ -1,6 +1,6 @@
 {meta: title This Circus That You Call A Rodeo}
 {meta: artist Gene Watson}
-{meta: writer Eddy G. Futch, Monty H. Holmes}
+{meta: composer Eddy G. Futch, Monty H. Holmes}
 
 {start_of_verse: Verse 1}
 [C]You pulled up in that limousine 

@@ -1,6 +1,6 @@
 {meta: title A Loser Never Had A Better Friend}
 {meta: artist Darrell McCall}
-{meta: writer Arthur Leo Owens and Sanger Shafer}
+{meta: composer Arthur Leo Owens and Sanger Shafer}
 
 {start_of_verse: Verse 1}
 [C]If you think I made her up to make you [F]jealous

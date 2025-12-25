@@ -1,6 +1,6 @@
 {meta: title First Date First Kiss First Love}
 {meta: artist Sonny James}
-{meta: writer Dan Welch and Mary Stovall}
+{meta: composer Dan Welch and Mary Stovall}
 
 {start_of_verse: Verse 1}
 [C]First date

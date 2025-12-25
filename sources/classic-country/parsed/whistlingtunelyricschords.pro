@@ -1,6 +1,6 @@
 {meta: title Whistling Tune}
 {meta: artist Elvis Presley}
-{meta: writer Sherman Edwards and Hal David}
+{meta: composer Sherman Edwards and Hal David}
 
 {start_of_verse: Verse 1}
 Whistling Tune

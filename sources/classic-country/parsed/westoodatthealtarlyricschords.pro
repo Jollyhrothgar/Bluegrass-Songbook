@@ -1,6 +1,6 @@
 {meta: title We Stood At The Altar}
 {meta: artist Slim Whitman}
-{meta: writer Jessie Mae Robinson}
+{meta: composer Jessie Mae Robinson}
 
 {start_of_verse: Verse 1}
 [C]We stood at the altar a [G7]groom and a bride

@@ -1,6 +1,6 @@
 {meta: title That Something In My Life}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Kostas}
+{meta: composer Clint Black and Kostas}
 
 {start_of_verse: Verse 1}
 [G]The older you get the more [C]you stand to lose

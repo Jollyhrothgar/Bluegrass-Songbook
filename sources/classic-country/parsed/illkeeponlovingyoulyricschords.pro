@@ -1,6 +1,6 @@
 {meta: title I'll Keep On Loving You}
 {meta: artist Ray Price}
-{meta: writer Floyd Tillman}
+{meta: composer Floyd Tillman}
 
 {start_of_verse: Verse 1}
 [C]If the world keeps on turning 

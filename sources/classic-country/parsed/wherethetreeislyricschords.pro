@@ -1,6 +1,6 @@
 {meta: title Where The Tree Is}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Carole Smith}
+{meta: composer Sonny James and Carole Smith}
 
 {start_of_verse: Verse 1}
 [C]Each time I see a [F]Christmas [G7]tree 

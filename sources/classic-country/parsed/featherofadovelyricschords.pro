@@ -1,6 +1,6 @@
 {meta: title Feather Of A Dove}
 {meta: artist Sonny James}
-{meta: writer Carole Smith and Sonny James}
+{meta: composer Carole Smith and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]Tumbling down from up [F]above

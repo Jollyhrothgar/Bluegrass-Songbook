@@ -1,6 +1,6 @@
 {meta: title A Not So Merry Christmas}
 {meta: artist Bobby Vee}
-{meta: writer Dick Glasser}
+{meta: composer Dick Glasser}
 
 {start_of_verse: Verse 1}
 [C]A not [Am]so Merry [C]Christmas I’m [D7]gonna spend this [G7]year

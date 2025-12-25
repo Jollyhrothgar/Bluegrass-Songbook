@@ -1,6 +1,6 @@
 {meta: title Melva's Wine}
 {meta: artist Johnny Cash}
-{meta: writer Vincent Matthews}
+{meta: composer Vincent Matthews}
 
 {start_of_verse: Verse 1}
 [G]Every year about this time

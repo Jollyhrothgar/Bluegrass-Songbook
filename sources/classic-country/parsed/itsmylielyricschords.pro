@@ -1,6 +1,6 @@
 {meta: title It's My Lie}
 {meta: artist Gene Watson}
-{meta: writer Timothy Menzies and Monty Criswell}
+{meta: composer Timothy Menzies and Monty Criswell}
 
 {start_of_verse: Verse 1}
 [C]She [G7]accidentally dropped those dishes on the [C]floor

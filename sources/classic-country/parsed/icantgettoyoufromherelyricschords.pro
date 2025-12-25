@@ -1,6 +1,6 @@
 {meta: title I Can't Get To You From Here}
 {meta: artist Don Williams}
-{meta: writer Frank Knipe and Stephen Chandler}
+{meta: composer Frank Knipe and Stephen Chandler}
 
 {start_of_verse: Verse 1}
 [G]I'm glad you called me I [Em]still feel your [G]voice

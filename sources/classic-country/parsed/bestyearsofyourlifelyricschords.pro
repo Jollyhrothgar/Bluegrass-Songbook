@@ -1,6 +1,6 @@
 {meta: title Best Years Of Your Life}
 {meta: artist Carl Smith}
-{meta: writer Keith Lloyd}
+{meta: composer Keith Lloyd}
 
 {start_of_verse: Verse 1}
 [G]And [C]these will be the [G]best years of [D7]your [G]life

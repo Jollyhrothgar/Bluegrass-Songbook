@@ -1,6 +1,6 @@
 {meta: title Ride Away}
 {meta: artist Slim Whitman}
-{meta: writer Ben Gadus}
+{meta: composer Ben Gadus}
 
 {start_of_verse: Verse 1}
 [C]Ride away ride away with a [G7]song in your [C]heart

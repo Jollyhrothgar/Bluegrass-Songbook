@@ -1,6 +1,6 @@
 {meta: title Daddy What If}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]Daddy what if the [Am]sun stop shining

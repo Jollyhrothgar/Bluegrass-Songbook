@@ -1,6 +1,6 @@
 {meta: title Calling All Angels}
 {meta: artist Alabama}
-{meta: writer Jeff Jones}
+{meta: composer Jeff Jones}
 
 {start_of_verse: Verse 1}
 [C]Calling [G]calling all [C]angels    oh I'm [G]calling calling all [C]angels

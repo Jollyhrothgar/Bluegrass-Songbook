@@ -1,6 +1,6 @@
 {meta: title Do You Expect A Reward From God}
 {meta: artist Kitty Wells}
-{meta: writer Johnnie Bailes and Walter Bailes}
+{meta: composer Johnnie Bailes and Walter Bailes}
 
 {start_of_verse: Verse 1}
 [G]If through this world of sin you travel

@@ -1,6 +1,6 @@
 {meta: title One More Shot}
 {meta: artist Johnny Lee}
-{meta: writer Ron Moore and Doug Hauseman}
+{meta: composer Ron Moore and Doug Hauseman}
 
 {start_of_verse: Verse 1}
 [G]Everybody's talking all over town

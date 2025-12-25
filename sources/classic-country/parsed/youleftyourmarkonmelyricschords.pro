@@ -1,6 +1,6 @@
 {meta: title You Left Your Mark On Me}
 {meta: artist KItty Wells}
-{meta: writer Johnny Wright, Jack Anglin, Jim Anglin}
+{meta: composer Johnny Wright, Jack Anglin, Jim Anglin}
 
 {start_of_verse: Verse 1}
 [G]You left your mark on me beggin' [C]all my heart to stay

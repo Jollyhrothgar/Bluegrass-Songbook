@@ -1,6 +1,6 @@
 {meta: title Over Forty (Not Over The Hill)}
 {meta: artist Johnny Duncan}
-{meta: writer Bucky Jones}
+{meta: composer Bucky Jones}
 
 {start_of_verse: Verse 1}
 [C]She woke up this morning and fixed him his breakfast

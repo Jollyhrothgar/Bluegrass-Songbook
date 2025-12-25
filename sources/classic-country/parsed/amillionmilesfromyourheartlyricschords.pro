@@ -1,6 +1,6 @@
 {meta: title A Million Miles From Your Heart}
 {meta: artist Eddy Arnold}
-{meta: writer Jenny Lou Carson}
+{meta: composer Jenny Lou Carson}
 
 {start_of_verse: Verse 1}
 [C]You’re in my [A7]arms it’s true my [D7]darling

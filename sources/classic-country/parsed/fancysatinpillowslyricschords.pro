@@ -1,6 +1,6 @@
 {meta: title Fancy Satin Pillows}
 {meta: artist Wanda Jackson}
-{meta: writer Jerry Crutchfield and Dee Moeller}
+{meta: composer Jerry Crutchfield and Dee Moeller}
 
 {start_of_verse: Verse 1}
 [G]Fancy satin pillows that you bought

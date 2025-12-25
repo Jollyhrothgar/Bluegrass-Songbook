@@ -1,6 +1,6 @@
 {meta: title Mary's Christmas}
 {meta: artist Doyle Lawson}
-{meta: writer Randall Hylton and Doyle Lawson}
+{meta: composer Randall Hylton and Doyle Lawson}
 
 {start_of_verse: Verse 1}
 [C]Mary's Christmas the first Christmas [G7]morn

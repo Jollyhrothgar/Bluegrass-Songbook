@@ -1,6 +1,6 @@
 {meta: title Clock On The Wall}
 {meta: artist Crystal Gayle}
-{meta: writer Donald Webb}
+{meta: composer Donald Webb}
 
 {start_of_verse: Verse 1}
 [G]Clock on the wall

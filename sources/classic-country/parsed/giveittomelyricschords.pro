@@ -1,6 +1,6 @@
 {meta: title Give It To Me}
 {meta: artist Don Williams}
-{meta: writer Bob McDill and Wayland Holyfield}
+{meta: composer Bob McDill and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]You can't live without [F]lovin'

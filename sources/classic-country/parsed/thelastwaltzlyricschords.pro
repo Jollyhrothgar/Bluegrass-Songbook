@@ -1,6 +1,6 @@
 {meta: title The Last Waltz Lyrics Chords}
 {meta: artist Webb Pierce}
-{meta: writer Myra Freeman and Webb Pierce}
+{meta: composer Myra Freeman and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]The ballroom was empty the hour [C7]was [F]three

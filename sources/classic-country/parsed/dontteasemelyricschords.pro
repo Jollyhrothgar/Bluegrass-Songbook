@@ -1,6 +1,6 @@
 {meta: title Don't Tease Me}
 {meta: artist Carl Smith}
-{meta: writer Carl Smith, Jack Bradshaw, Harry Glenn}
+{meta: composer Carl Smith, Jack Bradshaw, Harry Glenn}
 
 {start_of_verse: Verse 1}
 [G]Don't tease me don't tease [C]me

@@ -1,6 +1,6 @@
 {meta: title Once In A Lifetime}
 {meta: artist Patty Loveless}
-{meta: writer Eric Kaz and Marcia Zwilling}
+{meta: composer Eric Kaz and Marcia Zwilling}
 
 {start_of_verse: Verse 1}
 [F]All my [C]life I [Em]tried to [Am]find 

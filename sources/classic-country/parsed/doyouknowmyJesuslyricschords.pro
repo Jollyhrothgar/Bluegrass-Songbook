@@ -1,6 +1,6 @@
 {meta: title Do You Know My Jesus}
 {meta: artist Skeeter Davis}
-{meta: writer W.F. Lakey and V.B. Ellis}
+{meta: composer W.F. Lakey and V.B. Ellis}
 
 {start_of_verse: Verse 1}
 [G]Have you a heart that's [C]weary

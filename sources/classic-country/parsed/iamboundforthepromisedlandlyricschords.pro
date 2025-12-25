@@ -1,6 +1,6 @@
 {meta: title I Am Bound For The Promised Land}
 {meta: artist Hank Williams}
-{meta: writer M. Durham and Samuel Stennett}
+{meta: composer M. Durham and Samuel Stennett}
 
 {start_of_verse: Verse 1}
 [C]On Jordan's stormy [G7]banks I [C]stand

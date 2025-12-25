@@ -1,6 +1,6 @@
 {meta: title She Once Lived Here}
 {meta: artist George Jones}
-{meta: writer Autry Inman}
+{meta: composer Autry Inman}
 
 {start_of_verse: Verse 1}
 [C]A mayor gave me the [F]key to the [C]city

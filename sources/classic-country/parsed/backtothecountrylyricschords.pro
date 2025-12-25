@@ -1,6 +1,6 @@
 {meta: title Back To The Country Lyrics Chords}
 {meta: artist Loretta Lynn}
-{meta: writer Tracey Lee}
+{meta: composer Tracey Lee}
 
 {start_of_verse: Verse 1}
 [C]Apple blossoms in the air rabbit hunters everywhere

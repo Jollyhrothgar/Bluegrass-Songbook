@@ -1,6 +1,6 @@
 {meta: title The Loneliest Sound}
 {meta: artist Ricky Nelson}
-{meta: writer Dave Burgess and James Best}
+{meta: composer Dave Burgess and James Best}
 
 {start_of_verse: Verse 1}
 [G7]The [C]saddest sounds are the words [G7]goodbye

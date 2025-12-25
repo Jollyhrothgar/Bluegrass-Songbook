@@ -1,6 +1,6 @@
 {meta: title Wild Irish Rose}
 {meta: artist George Jones}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [G]They sent him to Asia to [C]fight in a [G]war

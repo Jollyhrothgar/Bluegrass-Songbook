@@ -1,6 +1,6 @@
 {meta: title Rock Me My Baby}
 {meta: artist Buddy Holly}
-{meta: writer Shorty Long and Susan Heather}
+{meta: composer Shorty Long and Susan Heather}
 
 {start_of_verse: Verse 1}
 [C]Well put your arms around me now

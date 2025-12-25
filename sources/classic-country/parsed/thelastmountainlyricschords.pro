@@ -1,6 +1,6 @@
 {meta: title The Last Mountain}
 {meta: artist Jimmie Davis}
-{meta: writer Bob Wills and Jimmie Davis}
+{meta: composer Bob Wills and Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [C]I've climbed a lot of hills

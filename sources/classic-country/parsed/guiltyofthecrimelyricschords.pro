@@ -1,6 +1,6 @@
 {meta: title Guilty Of The Crime}
 {meta: artist The Bellamy Brothers}
-{meta: writer Frankie Miller and Jerry Williams, Jr.}
+{meta: composer Frankie Miller and Jerry Williams, Jr.}
 
 {start_of_verse: Verse 1}
 [G7]You're the only one who’s ever hurt my [C]soul

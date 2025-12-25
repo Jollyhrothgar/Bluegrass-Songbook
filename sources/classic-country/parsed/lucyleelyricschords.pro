@@ -1,6 +1,6 @@
 {meta: title Lucy Lee}
 {meta: artist Webb Pierce}
-{meta: writer Sleepy Jeffers}
+{meta: composer Sleepy Jeffers}
 
 {start_of_verse: Verse 1}
 [C]I saddled up my pony here I am [G7]Texas bound

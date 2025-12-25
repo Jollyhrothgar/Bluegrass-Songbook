@@ -1,6 +1,6 @@
 {meta: title Is Goodbye That Easy To Say}
 {meta: artist Charlie Rich}
-{meta: writer Marijohn Wilkin and Benny Joy}
+{meta: composer Marijohn Wilkin and Benny Joy}
 
 {start_of_verse: Verse 1}
 [G](Good[Em]bye good[Am]bye[D7])

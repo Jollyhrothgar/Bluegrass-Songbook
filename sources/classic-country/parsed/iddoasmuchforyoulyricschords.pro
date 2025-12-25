@@ -1,6 +1,6 @@
 {meta: title I'd Do As Much For You}
 {meta: artist Jeannie Seely}
-{meta: writer Cliff Cochran and Barbara Cochran}
+{meta: composer Cliff Cochran and Barbara Cochran}
 
 {start_of_verse: Verse 1}
 [C]Stay with me a little [G7]longer [C]

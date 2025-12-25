@@ -1,6 +1,6 @@
 {meta: title I'm Coming Home}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Horton and Tillman Franks}
+{meta: composer Johnny Horton and Tillman Franks}
 
 {start_of_verse: Verse 1}
 [C]Get your face all pretty and your hair done right

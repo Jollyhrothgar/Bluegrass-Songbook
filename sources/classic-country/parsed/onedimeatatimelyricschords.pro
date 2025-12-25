@@ -1,6 +1,6 @@
 {meta: title One Dime At A Time}
 {meta: artist Ernest Tubb}
-{meta: writer Jerry Chesnut and Dottie Bruce}
+{meta: composer Jerry Chesnut and Dottie Bruce}
 
 {start_of_verse: Verse 1}
 [G]My whole life saving's a two [C]dollar [G]bill 

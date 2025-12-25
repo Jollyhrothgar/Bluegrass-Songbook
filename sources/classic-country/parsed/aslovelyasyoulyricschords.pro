@@ -1,6 +1,6 @@
 {meta: title As Lovely As You}
 {meta: artist Alan Jackson}
-{meta: writer John Pennell}
+{meta: composer John Pennell}
 
 {start_of_verse: Verse 1}
 [G]A big moon is risin' so [C]bright in the [G]sky

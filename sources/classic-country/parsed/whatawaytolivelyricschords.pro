@@ -1,6 +1,6 @@
 {meta: title What A Way To Live}
 {meta: artist Willie Nelson}
-{meta: writer Willie Nelson and Hank Craig}
+{meta: composer Willie Nelson and Hank Craig}
 
 {start_of_verse: Verse 1}
 [C]Each night I make the rounds

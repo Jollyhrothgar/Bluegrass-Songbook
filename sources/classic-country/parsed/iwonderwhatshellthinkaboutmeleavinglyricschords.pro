@@ -1,6 +1,6 @@
 {meta: title I Wonder What She’ll Think About Me Leaving}
 {meta: artist Conway Twitty}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]I wonder what she'll [G7]think about me [C]leaving 

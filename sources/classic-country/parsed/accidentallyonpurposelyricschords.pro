@@ -1,6 +1,6 @@
 {meta: title Accidentally On Purpose}
 {meta: artist George Jones}
-{meta: writer George Jones and Darrell Edwards}
+{meta: composer George Jones and Darrell Edwards}
 
 {start_of_verse: Verse 1}
 [C]In the papers I [F]saw you this [C]morning

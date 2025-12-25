@@ -1,6 +1,6 @@
 {meta: title Do The Right Thing}
 {meta: artist George Strait}
-{meta: writer Gary Nicholson and Jim Lauderdale}
+{meta: composer Gary Nicholson and Jim Lauderdale}
 
 {start_of_verse: Verse 1}
 [G]Once you [C]told me [D7]you were gonna [G]love me

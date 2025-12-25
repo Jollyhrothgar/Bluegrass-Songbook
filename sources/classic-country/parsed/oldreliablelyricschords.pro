@@ -1,6 +1,6 @@
 {meta: title Old Reliable}
 {meta: artist Tammy Wynette}
-{meta: writer Wayland Holyfield}
+{meta: composer Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [G]Easily you said goodbye to me so [Em]easily 

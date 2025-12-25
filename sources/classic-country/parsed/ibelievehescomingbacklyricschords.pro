@@ -1,6 +1,6 @@
 {meta: title I Believe He's Coming Back}
 {meta: artist Goodman Family}
-{meta: writer Rusty Goodman}
+{meta: composer Rusty Goodman}
 
 {start_of_verse: Verse 1}
 [C]High upon a [F]moun[C]tain on transfiguration 

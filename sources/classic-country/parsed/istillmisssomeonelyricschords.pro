@@ -1,6 +1,6 @@
 {meta: title I Still Miss Someone}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash and Ray Cash Jr.}
+{meta: composer Johnny Cash and Ray Cash Jr.}
 
 {start_of_verse: Verse 1}
 [C]At my door the [F]leaves are [G7]falling

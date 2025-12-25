@@ -1,6 +1,6 @@
 {meta: title Loving Only Me}
 {meta: artist Ricky Skaggs}
-{meta: writer Even Stevens and Hillard Kanter}
+{meta: composer Even Stevens and Hillard Kanter}
 
 {start_of_verse: Verse 1}
 [C]They say you're cold as ice [F]I don't believe them

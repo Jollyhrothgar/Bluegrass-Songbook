@@ -1,6 +1,6 @@
 {meta: title Ten Little Fingers}
 {meta: artist Carol Baker}
-{meta: writer Don Grashey}
+{meta: composer Don Grashey}
 
 {start_of_verse: Verse 1}
 [F]Ten little [C]fingers reach [G7]out to rescue [C]me

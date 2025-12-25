@@ -1,6 +1,6 @@
 {meta: title Down Hearted Blues}
 {meta: artist Bob Wills}
-{meta: writer A.K. Hunter and Lovie Austin}
+{meta: composer A.K. Hunter and Lovie Austin}
 
 {start_of_verse: Verse 1}
 [C]Gee but it's hard to love [D7][A7]someone

@@ -1,6 +1,6 @@
 {meta: title Who's Gonna Take The Garbage Out}
 {meta: artist Loretta Lynn}
-{meta: writer Johnny Tillotson and Teddy Wilburn}
+{meta: composer Johnny Tillotson and Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [G]I take too much abuse from you 

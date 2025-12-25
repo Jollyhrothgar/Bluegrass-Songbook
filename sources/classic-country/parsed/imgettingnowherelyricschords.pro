@@ -1,6 +1,6 @@
 {meta: title I'm Getting Nowhere}
 {meta: artist Faron Young}
-{meta: writer Ray Pennington, Ron Pennington, Ronnie Pennington}
+{meta: composer Ray Pennington, Ron Pennington, Ronnie Pennington}
 
 {start_of_verse: Verse 1}
 [G]Today is no different  than [C]yesterday

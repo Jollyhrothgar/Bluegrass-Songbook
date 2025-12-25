@@ -1,6 +1,6 @@
 {meta: title A Mansion For Me}
 {meta: artist Ricky Skaggs}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [C]There's folks building homes as [F]sweet as can [C]be

@@ -1,6 +1,6 @@
 {meta: title Sing Me A Love Song To Baby}
 {meta: artist Billy Walker}
-{meta: writer Gene Dobbins, Benny Whitehead}
+{meta: composer Gene Dobbins, Benny Whitehead}
 
 {start_of_verse: Verse 1}
 [C]Sing me a love song to [F]baby

@@ -1,6 +1,6 @@
 {meta: title Thinking Of A Rendezvous}
 {meta: artist Johnny Duncan and Janie Fricke}
-{meta: writer Sonny Throckmorton and Bobby Braddock}
+{meta: composer Sonny Throckmorton and Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]I said hello my it's been such a long time

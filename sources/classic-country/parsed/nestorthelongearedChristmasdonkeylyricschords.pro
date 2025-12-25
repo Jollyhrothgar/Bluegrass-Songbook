@@ -1,6 +1,6 @@
 {meta: title Nestor The Long Eared Christmas Donkey}
 {meta: artist Marty Robbins}
-{meta: writer Dave Burgess, Gene Autry, Don Pfrimmer}
+{meta: composer Dave Burgess, Gene Autry, Don Pfrimmer}
 
 {start_of_verse: Verse 1}
 [C]Everyone [G7]knows about [C]Rudolph

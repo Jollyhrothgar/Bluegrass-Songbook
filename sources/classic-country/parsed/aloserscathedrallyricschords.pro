@@ -1,6 +1,6 @@
 {meta: title A Loser's Cathedral}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]There's a place you can go [D7]when you're [G]lonely 

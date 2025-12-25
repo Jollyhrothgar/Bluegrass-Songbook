@@ -1,6 +1,6 @@
 {meta: title Tom Dooley}
 {meta: artist the Kingston Trio}
-{meta: writer Alan Lomax and Frank M. Warner}
+{meta: composer Alan Lomax and Frank M. Warner}
 
 {start_of_verse: Verse 1}
 [C]Hang down your head Tom Dooley

@@ -1,6 +1,6 @@
 {meta: title Please Don’t Leave Me Darling}
 {meta: artist Bob Wills}
-{meta: writer Jesse Ashlock}
+{meta: composer Jesse Ashlock}
 
 {start_of_verse: Verse 1}
 [G]Please don’t leave anymore [D7]darling

@@ -1,6 +1,6 @@
 {meta: title You'll Think Of Me}
 {meta: artist Elvis Presley}
-{meta: writer Mort Shuman}
+{meta: composer Mort Shuman}
 
 {start_of_verse: Verse 1}
 [C]I'm sorry now girl but I must leave [F]you

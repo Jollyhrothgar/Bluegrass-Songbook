@@ -1,6 +1,6 @@
 {meta: title Another Chance At Love}
 {meta: artist Tony Booth}
-{meta: writer Allen Shamblin and Brent Maher}
+{meta: composer Allen Shamblin and Brent Maher}
 
 {start_of_verse: Verse 1}
 [G]I won't let my jealous [C]heart [G]tear my world [C]apart

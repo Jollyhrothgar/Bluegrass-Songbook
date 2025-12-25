@@ -1,6 +1,6 @@
 {meta: title Blue Ridge Cabin Home}
 {meta: artist Lester Flatt}
-{meta: writer Gladys Stacey and Louise Certain}
+{meta: composer Gladys Stacey and Louise Certain}
 
 {start_of_verse: Verse 1}
 [G]There's a well beaten path in the old [C]mountainside

@@ -1,6 +1,6 @@
 {meta: title Cowboy Beat}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy and John Beland}
+{meta: composer David Bellamy and John Beland}
 
 {start_of_verse: Verse 1}
 [G]Well it could be anywhere in the U.S.A.

@@ -1,6 +1,6 @@
 {meta: title Untouched}
 {meta: artist Mel Tillis}
-{meta: writer Carl Knight, Charles Pendleton, Abe Rotwein}
+{meta: composer Carl Knight, Charles Pendleton, Abe Rotwein}
 
 {start_of_verse: Verse 1}
 [F]I love you so please [C]go on home [G7]untouched the way you [C]came

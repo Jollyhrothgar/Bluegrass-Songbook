@@ -1,6 +1,6 @@
 {meta: title I'd Fight The World}
 {meta: artist Jim Reeves}
-{meta: writer Hank Cochran and Joe Allison}
+{meta: composer Hank Cochran and Joe Allison}
 
 {start_of_verse: Verse 1}
 [D7]I don't care what anybody thinks of [G]me

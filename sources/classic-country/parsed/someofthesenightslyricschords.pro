@@ -1,6 +1,6 @@
 {meta: title Some Of These Nights}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Hawkshaw Hawkins and Dolores Williams}
+{meta: composer Hawkshaw Hawkins and Dolores Williams}
 
 {start_of_verse: Verse 1}
 [C]Some of these nights honey you gonna be so [G7]sad

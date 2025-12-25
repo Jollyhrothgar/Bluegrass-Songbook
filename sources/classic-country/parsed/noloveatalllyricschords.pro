@@ -1,6 +1,6 @@
 {meta: title No Love At All}
 {meta: artist Waylon Jennings}
-{meta: writer Wayne C. Thompson and Johnny Christopher}
+{meta: composer Wayne C. Thompson and Johnny Christopher}
 
 {start_of_verse: Verse 1}
 [C]Read in the paper nearly everyday 

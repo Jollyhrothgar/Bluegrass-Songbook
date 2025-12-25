@@ -1,6 +1,6 @@
 {meta: title Gone Gone Gone}
 {meta: artist Charlie Pride}
-{meta: writer Jerry Crutchfield and Buck Maxwell}
+{meta: composer Jerry Crutchfield and Buck Maxwell}
 
 {start_of_verse: Verse 1}
 [G]The day you walked [C]away you left the [G]hurt behind

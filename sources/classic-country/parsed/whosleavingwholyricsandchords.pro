@@ -1,6 +1,6 @@
 {meta: title Who's Leaving Who and Chords}
 {meta: artist Faron Young}
-{meta: writer Glen Sherley}
+{meta: composer Glen Sherley}
 
 {start_of_verse: Verse 1}
 [C]You've been telling me [G7]for a long [C]time

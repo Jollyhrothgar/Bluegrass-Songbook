@@ -1,6 +1,6 @@
 {meta: title Daddy And Home}
 {meta: artist Tanya Tucker}
-{meta: writer Jimmie Rodgers and Elsie McWilliams}
+{meta: composer Jimmie Rodgers and Elsie McWilliams}
 
 {start_of_verse: Verse 1}
 [G]I am dreaming tonight of [D7]an old southern town

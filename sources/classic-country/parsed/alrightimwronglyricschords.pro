@@ -1,6 +1,6 @@
 {meta: title Alright I'm Wrong}
 {meta: artist Dwight Yoakam}
-{meta: writer Pete Anderson and Craig Cisco}
+{meta: composer Pete Anderson and Craig Cisco}
 
 {start_of_verse: Verse 1}
 [G]Well alright alright alright alright girl I'm [D7]wrong

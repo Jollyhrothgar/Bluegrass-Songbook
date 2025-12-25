@@ -1,6 +1,6 @@
 {meta: title Got You On My Mind}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Joe Thomas and Howard Biggs}
+{meta: composer Joe Thomas and Howard Biggs}
 
 {start_of_verse: Verse 1}
 [C]Got you on my mind [F]feeling kinda sad and [C]low

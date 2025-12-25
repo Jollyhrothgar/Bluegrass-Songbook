@@ -1,6 +1,6 @@
 {meta: title You Fool}
 {meta: artist Eddy Arnold}
-{meta: writer Martha Sharp}
+{meta: composer Martha Sharp}
 
 {start_of_verse: Verse 1}
 [C]Your walls are lined with pictures 

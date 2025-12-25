@@ -1,6 +1,6 @@
 {meta: title You'll Always Have Someone}
 {meta: artist Willie Nelson}
-{meta: writer Hank Cochran and Willie Nelson}
+{meta: composer Hank Cochran and Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]Discontent you must [F]be  [C]leaving love leaving [F]me

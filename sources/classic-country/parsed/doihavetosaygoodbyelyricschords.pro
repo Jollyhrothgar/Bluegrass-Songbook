@@ -1,6 +1,6 @@
 {meta: title Do I Have To Say Goodbye}
 {meta: artist Crystal Gayle}
-{meta: writer Jim McBride and Peter McCann}
+{meta: composer Jim McBride and Peter McCann}
 
 {start_of_verse: Verse 1}
 [C]I’ve tried [D7]talking to [Em]you

@@ -1,6 +1,6 @@
 {meta: title Peaches And Cream}
 {meta: artist Cowboy Copas}
-{meta: writer Vic McAlpin, Lloyd Copas, Alicia Evelyn}
+{meta: composer Vic McAlpin, Lloyd Copas, Alicia Evelyn}
 
 {start_of_verse: Verse 1}
 [C]Everything about [A7]my little ole gal 

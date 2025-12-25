@@ -1,6 +1,6 @@
 {meta: title I'll Kiss The Baby}
 {meta: artist Tammy Wynette}
-{meta: writer Carmol Taylor and Quinton Claunch}
+{meta: composer Carmol Taylor and Quinton Claunch}
 
 {start_of_verse: Verse 1}
 [C]This time you'll never stop me

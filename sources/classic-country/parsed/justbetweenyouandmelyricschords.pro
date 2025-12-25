@@ -1,6 +1,6 @@
 {meta: title Just Between You and Me}
 {meta: artist Charlie Pride}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]So I feel so blue sometimes I wanna [F]die 

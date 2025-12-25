@@ -1,6 +1,6 @@
 {meta: title A Nickel For The Fiddler}
 {meta: artist The Everly Brothers}
-{meta: writer Guy Clark}
+{meta: composer Guy Clark}
 
 {start_of_verse: Verse 1}
 [C]It's a [F]nickel for the [G7]fiddler

@@ -1,6 +1,6 @@
 {meta: title I Pray My Way Out Of Trouble}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Teddy Wilburn}
+{meta: composer Loretta Lynn and Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]Many times my mind is wrapped up in trouble

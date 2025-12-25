@@ -1,6 +1,6 @@
 {meta: title Mississippi River Raft}
 {meta: artist J.D. Crowe}
-{meta: writer Johnson, Harrington, Teague}
+{meta: composer Johnson, Harrington, Teague}
 
 {start_of_verse: Verse 1}
 [G]I'm away down [C]river from the [G]past

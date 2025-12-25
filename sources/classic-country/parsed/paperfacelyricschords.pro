@@ -1,6 +1,6 @@
 {meta: title Paper Face}
 {meta: artist Hank Locklin}
-{meta: writer Slim Williams and Hank Locklin}
+{meta: composer Slim Williams and Hank Locklin}
 
 {start_of_verse: Verse 1}
 [C]I still have the [G7]photograph that you [C]gave me

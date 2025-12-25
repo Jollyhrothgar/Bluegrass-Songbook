@@ -1,6 +1,6 @@
 {meta: title Windows Have Pains}
 {meta: artist Marty Robbins}
-{meta: writer Wes Buchanan}
+{meta: composer Wes Buchanan}
 
 {start_of_verse: Verse 1}
 [D7]It's [G]raining and my win[G7]dows are [C]crying

@@ -1,6 +1,6 @@
 {meta: title I Hate Goodbyes}
 {meta: artist Bobby Bare}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [D7]Softly close the door behind [G]you

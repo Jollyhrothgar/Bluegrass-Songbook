@@ -1,6 +1,6 @@
 {meta: title Ain't She Something Else}
 {meta: artist Conway Twitty}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]Don't you like the way she [Am]talks to [G]you

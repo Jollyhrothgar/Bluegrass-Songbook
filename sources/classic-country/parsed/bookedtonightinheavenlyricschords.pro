@@ -1,6 +1,6 @@
 {meta: title Booked Tonight In Heaven}
 {meta: artist Gene Watson}
-{meta: writer Gary Josey}
+{meta: composer Gary Josey}
 
 {start_of_verse: Verse 1}
 [C]I walked upon the front porch momma met me at the [G7]door

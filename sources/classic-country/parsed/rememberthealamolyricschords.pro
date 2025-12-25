@@ -1,6 +1,6 @@
 {meta: title Remember The Alamo}
 {meta: artist Johnny Cash}
-{meta: writer Jane Bowers}
+{meta: composer Jane Bowers}
 
 {start_of_verse: Verse 1}
 [C]And a hundred and eighty were challenged by [G7]Travis to [C]die

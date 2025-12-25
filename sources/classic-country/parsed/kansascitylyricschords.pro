@@ -1,6 +1,6 @@
 {meta: title Kansas City}
 {meta: artist Fats Domino}
-{meta: writer Jerry Leiber and Mike Stoller}
+{meta: composer Jerry Leiber and Mike Stoller}
 
 {start_of_verse: Verse 1}
 [G]I'm going to Kansas City  Kansas City here I come

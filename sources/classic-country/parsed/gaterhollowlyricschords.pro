@@ -1,6 +1,6 @@
 {meta: title Gater Hollow}
 {meta: artist Lefty Frizzell}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]Well I had me a girl in Moccasin Valley

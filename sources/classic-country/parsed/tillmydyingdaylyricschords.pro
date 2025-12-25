@@ -1,6 +1,6 @@
 {meta: title Till My Dying Day}
 {meta: artist J.D. Crowe}
-{meta: writer Richard Bennett}
+{meta: composer Richard Bennett}
 
 {start_of_verse: Verse 1}
 [C]I can feel the heartache coming on [F]darling

@@ -1,6 +1,6 @@
 {meta: title When Ole Goin' Gets A Goin'}
 {meta: artist Ernest Tubb}
-{meta: writer Eddie Miller}
+{meta: composer Eddie Miller}
 
 {start_of_verse: Verse 1}
 [C]My hand holds a bottle of [F]wine in [C]Oklahoma

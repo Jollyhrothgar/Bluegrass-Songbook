@@ -1,6 +1,6 @@
 {meta: title There's No Justice}
 {meta: artist George Jones}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [G]Oh I told you if you walked out on me [D7]we were through

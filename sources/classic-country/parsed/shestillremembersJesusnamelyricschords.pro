@@ -1,6 +1,6 @@
 {meta: title She Still Remembers Jesus' Name}
 {meta: artist The Booth Brothers}
-{meta: writer Melody Goodman}
+{meta: composer Melody Goodman}
 
 {start_of_verse: Verse 1}
 [G]Time has cast a [C]shadow on her [F][G]memory

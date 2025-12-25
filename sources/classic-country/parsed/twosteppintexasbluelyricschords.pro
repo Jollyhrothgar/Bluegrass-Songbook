@@ -1,6 +1,6 @@
 {meta: title Two Steppin' Texas Blue}
 {meta: artist Joni Harms}
-{meta: writer Pat McManus and Joni Harms}
+{meta: composer Pat McManus and Joni Harms}
 
 {start_of_verse: Verse 1}
 [C]I'm two steppin' Texas [F]blue

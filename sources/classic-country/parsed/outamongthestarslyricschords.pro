@@ -1,6 +1,6 @@
 {meta: title Out Among The Stars}
 {meta: artist Waylon Jennings}
-{meta: writer Adam Mitchell}
+{meta: composer Adam Mitchell}
 
 {start_of_verse: Verse 1}
 [C]Midnight at a liquor store in [F]Texas

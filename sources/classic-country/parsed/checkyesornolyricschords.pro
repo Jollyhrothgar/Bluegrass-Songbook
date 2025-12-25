@@ -1,6 +1,6 @@
 {meta: title Check Yes Or No}
 {meta: artist George Strait}
-{meta: writer Danny M. Wells and Dana H. Oglesby}
+{meta: composer Danny M. Wells and Dana H. Oglesby}
 
 {start_of_verse: Verse 1}
 [C]It started way [G7]back in third [F]grade

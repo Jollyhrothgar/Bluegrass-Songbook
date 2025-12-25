@@ -1,6 +1,6 @@
 {meta: title Find Out What's Happening}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Crutchfield}
+{meta: composer Jerry Crutchfield}
 
 {start_of_verse: Verse 1}
 [G]Baby you know me well you know I mean what I say

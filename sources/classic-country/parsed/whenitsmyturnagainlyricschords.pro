@@ -1,6 +1,6 @@
 {meta: title When It's My Turn Again}
 {meta: artist Ferlin Husky}
-{meta: writer Tompall Glaser}
+{meta: composer Tompall Glaser}
 
 {start_of_verse: Verse 1}
 [G]When it's my [C]turn [D7]again I'll take you [C]back [G]again

@@ -1,6 +1,6 @@
 {meta: title Lips Speak Up}
 {meta: artist Vern Gosdin}
-{meta: writer Jollie Hollie}
+{meta: composer Jollie Hollie}
 
 {start_of_verse: Verse 1}
 [C]So many times I [F]felt my body [C]tremble

@@ -1,6 +1,6 @@
 {meta: title Modern Day Don Juan}
 {meta: artist Buddy Holly}
-{meta: writer Don Guess and Jack Neal}
+{meta: composer Don Guess and Jack Neal}
 
 {start_of_verse: Verse 1}
 [G]Well I ain't nothing [C]but a man in [G]love

@@ -1,6 +1,6 @@
 {meta: title The Sea Between Our Hearts}
 {meta: artist George Jones}
-{meta: writer Darrell Edwards and Merle Moore}
+{meta: composer Darrell Edwards and Merle Moore}
 
 {start_of_verse: Verse 1}
 [C]There's a sea between our hearts 

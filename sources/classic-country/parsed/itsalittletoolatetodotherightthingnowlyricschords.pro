@@ -1,6 +1,6 @@
 {meta: title It’s A Little Too Late To Do The Right Thing Now}
 {meta: artist Tanya Tucker}
-{meta: writer Roger Murrahand- Pat Terry}
+{meta: composer Roger Murrahand- Pat Terry}
 
 {start_of_verse: Verse 1}
 [C]Well I was up all night a wondering what to do

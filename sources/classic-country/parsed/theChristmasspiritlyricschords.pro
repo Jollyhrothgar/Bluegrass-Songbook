@@ -1,6 +1,6 @@
 {meta: title The Christmas Spirit}
 {meta: artist Alabama}
-{meta: writer Randy Owen, Teddy Gentry, Ronnie Rogers}
+{meta: composer Randy Owen, Teddy Gentry, Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [C]I see the [Em]lights of the [F]city to[C]night

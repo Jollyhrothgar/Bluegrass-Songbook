@@ -1,6 +1,6 @@
 {meta: title If I Lose}
 {meta: artist Ricky Skaggs}
-{meta: writer Ralph Stanley}
+{meta: composer Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [C]I never thought I'd need you but now I find I'm [F]wrong

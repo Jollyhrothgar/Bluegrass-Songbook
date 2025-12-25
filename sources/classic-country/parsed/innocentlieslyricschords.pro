@@ -1,6 +1,6 @@
 {meta: title Innocent Lies}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Carol Smith}
+{meta: composer Sonny James and Carol Smith}
 
 {start_of_verse: Verse 1}
 [C]Behind those lies in your blue [F]eyes

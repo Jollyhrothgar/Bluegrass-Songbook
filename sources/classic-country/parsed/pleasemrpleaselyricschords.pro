@@ -1,6 +1,6 @@
 {meta: title Please Mr. Please (B-17)}
 {meta: artist By Olivia Newton-John}
-{meta: writer John Rostill and Bruce Welch}
+{meta: composer John Rostill and Bruce Welch}
 
 {start_of_verse: Verse 1}
 [C]In the corner of the bar there stands a jukebox

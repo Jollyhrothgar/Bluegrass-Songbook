@@ -1,6 +1,6 @@
 {meta: title Whiskey If You Were A Woman}
 {meta: artist Highway 101}
-{meta: writer Mary W. Francis, Johnny MacRae, Bob Morrison}
+{meta: composer Mary W. Francis, Johnny MacRae, Bob Morrison}
 
 {start_of_verse: Verse 1}
 [C]He's told me a [F]million times he's sor[G7]ry

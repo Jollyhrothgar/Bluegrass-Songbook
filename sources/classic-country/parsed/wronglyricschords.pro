@@ -1,6 +1,6 @@
 {meta: title Wrong}
 {meta: artist Waylon Jennings}
-{meta: writer Steve Seskin & Andre Pessis}
+{meta: composer Steve Seskin & Andre Pessis}
 
 {start_of_verse: Verse 1}
 [G]It was a picture perfect [D7]wedding

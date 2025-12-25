@@ -1,6 +1,6 @@
 {meta: title My Cup Runneth Over}
 {meta: artist Johnny Bush}
-{meta: writer Tom Jones and Harvey Schmidt}
+{meta: composer Tom Jones and Harvey Schmidt}
 
 {start_of_verse: Verse 1}
 [G]Sometimes in the [Em]morning [C]when shadows are [D7]deep

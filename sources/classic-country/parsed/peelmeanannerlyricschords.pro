@@ -1,6 +1,6 @@
 {meta: title Peel Me A Nanner}
 {meta: artist Roy Drusky}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]There I was in all [F]of my [C]innocence

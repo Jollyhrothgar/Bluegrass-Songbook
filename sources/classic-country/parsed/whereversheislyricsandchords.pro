@@ -1,6 +1,6 @@
 {meta: title Wherever She Is}
 {meta: artist Ricky Van Shelton}
-{meta: writer James House and John Jarrard}
+{meta: composer James House and John Jarrard}
 
 {start_of_verse: Verse 1}
 [F]I don't know how she [G]stole it [F]I don't [C]even know [G]when[F]

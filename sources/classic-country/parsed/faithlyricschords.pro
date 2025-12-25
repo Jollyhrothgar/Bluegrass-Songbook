@@ -1,6 +1,6 @@
 {meta: title Faith}
 {meta: artist Ray Price}
-{meta: writer Dick Glasser and Jay Johnson}
+{meta: composer Dick Glasser and Jay Johnson}
 
 {start_of_verse: Verse 1}
 [C]You must have [Am]faith in [F]everything [G7]you [C]do

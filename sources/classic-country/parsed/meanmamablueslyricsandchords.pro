@@ -1,6 +1,6 @@
 {meta: title Mean Mama Blues}
 {meta: artist Bob Wills}
-{meta: writer Waldo O'Neal, Jimmie Rodgers, Bob Sawyer}
+{meta: composer Waldo O'Neal, Jimmie Rodgers, Bob Sawyer}
 
 {start_of_verse: Verse 1}
 [C]For weary weeks I've waited hoping for the best

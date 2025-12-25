@@ -1,6 +1,6 @@
 {meta: title Pennies From Heaven}
 {meta: artist Randy Travis}
-{meta: writer Arthur Johnston and Johnny Burke}
+{meta: composer Arthur Johnston and Johnny Burke}
 
 {start_of_verse: Verse 1}
 [G]Every time it [Am]rains it rains

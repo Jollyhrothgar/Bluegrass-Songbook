@@ -1,6 +1,6 @@
 {meta: title Happy Hour}
 {meta: artist Ted Hawkins}
-{meta: writer Steve Gillette and David MacKechnie}
+{meta: composer Steve Gillette and David MacKechnie}
 
 {start_of_verse: Verse 1}
 [G]Welcome to happy hour blinking on the neon [C]sign

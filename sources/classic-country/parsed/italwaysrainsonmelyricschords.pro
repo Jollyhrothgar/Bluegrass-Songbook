@@ -1,6 +1,6 @@
 {meta: title It Always Rains On Me}
 {meta: artist Wynn Stewart}
-{meta: writer Dave Kirby and Sonny Throckmorton}
+{meta: composer Dave Kirby and Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]I don't think you've looked back once since you said [D7]goodbye

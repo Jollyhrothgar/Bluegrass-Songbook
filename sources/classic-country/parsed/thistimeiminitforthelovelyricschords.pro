@@ -1,6 +1,6 @@
 {meta: title This Time I'm In It For The Love}
 {meta: artist Tommy Overstreet}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]Well you could say I've had my share of [Am]lovers

@@ -1,6 +1,6 @@
 {meta: title Your Tears Are Telling On You}
 {meta: artist Melba Montgomery}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]I hear that she [D7]gave you a [G]mansion

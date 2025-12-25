@@ -1,6 +1,6 @@
 {meta: title Low Dog Blues}
 {meta: artist John Anderson}
-{meta: writer Lionel Alton Delmore and John David Anderson}
+{meta: composer Lionel Alton Delmore and John David Anderson}
 
 {start_of_verse: Verse 1}
 [C]Lonesome low dog blu[C7]es  [F]holes in both my [C]shoes

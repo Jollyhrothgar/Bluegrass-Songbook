@@ -1,6 +1,6 @@
 {meta: title It Could Have Been So Good}
 {meta: artist Tammy Wynette}
-{meta: writer Chris Waters and Lonnie Wilson}
+{meta: composer Chris Waters and Lonnie Wilson}
 
 {start_of_verse: Verse 1}
 [G]When I think about you leaving and being here [C]alone

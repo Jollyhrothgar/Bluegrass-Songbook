@@ -1,6 +1,6 @@
 {meta: title If I Could Just Get Over You}
 {meta: artist Connie Smith}
-{meta: writer Kay Arnold}
+{meta: composer Kay Arnold}
 
 {start_of_verse: Verse 1}
 [C]See the sun how [F]bright it is this [C]mornin'

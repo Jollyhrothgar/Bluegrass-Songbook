@@ -1,6 +1,6 @@
 {meta: title No Sign Of Living}
 {meta: artist Dottie West}
-{meta: writer Jessi Colter}
+{meta: composer Jessi Colter}
 
 {start_of_verse: Verse 1}
 [G]No [D7]sign of [G]living 

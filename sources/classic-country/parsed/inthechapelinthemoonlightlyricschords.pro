@@ -1,6 +1,6 @@
 {meta: title In The Chapel In The Moonlight}
 {meta: artist Faron Young}
-{meta: writer Billy Hill}
+{meta: composer Billy Hill}
 
 {start_of_verse: Verse 1}
 [C]How I'd love to hear the organ 

@@ -1,6 +1,6 @@
 {meta: title I'll Be There}
 {meta: artist Elvis Presley}
-{meta: writer Bobby Darin}
+{meta: composer Bobby Darin}
 
 {start_of_verse: Verse 1}
 [C]I'll be there when [F]all your dreams are [C]broken

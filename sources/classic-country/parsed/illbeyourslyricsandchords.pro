@@ -1,6 +1,6 @@
 {meta: title I'll Be Yours}
 {meta: artist Faron Young}
-{meta: writer Jim Odom}
+{meta: composer Jim Odom}
 
 {start_of_verse: Verse 1}
 [C]When he stopped sending roses 

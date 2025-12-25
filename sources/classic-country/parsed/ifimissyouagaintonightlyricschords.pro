@@ -1,6 +1,6 @@
 {meta: title If I Miss You Again Tonight}
 {meta: artist Tommy Overstreet}
-{meta: writer Ricci Mareno, Charlie Black, Marianne Mareno}
+{meta: composer Ricci Mareno, Charlie Black, Marianne Mareno}
 
 {start_of_verse: Verse 1}
 [G7]If I [C]miss you again tonight[G7]

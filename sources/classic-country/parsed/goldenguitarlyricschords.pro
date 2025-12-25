@@ -1,6 +1,6 @@
 {meta: title Golden Guitar}
 {meta: artist Bill Anderson}
-{meta: writer Curtis Leach and Billy Gray}
+{meta: composer Curtis Leach and Billy Gray}
 
 {start_of_verse: Verse 1}
 [C]I happened to walk into a honky tonk one night down in New [F]Orleans

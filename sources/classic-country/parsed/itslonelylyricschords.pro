@@ -1,6 +1,6 @@
 {meta: title It's Lonely}
 {meta: artist Roy Orbison}
-{meta: writer Joe Melson and Roy Orbison}
+{meta: composer Joe Melson and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [C]Every sleepy dawn wakes to find [Em]you 

@@ -1,6 +1,6 @@
 {meta: title That Reminds Me Of Me}
 {meta: artist Lefty Frizzell}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]See that man a-walking down life's lonely [G7]street 

@@ -1,6 +1,6 @@
 {meta: title I've Convinced Everybody But Myself}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Billy Gray}
+{meta: composer Hank Thompson and Billy Gray}
 
 {start_of_verse: Verse 1}
 [G]I've convinced everybody I've forgotten you at [D7]last

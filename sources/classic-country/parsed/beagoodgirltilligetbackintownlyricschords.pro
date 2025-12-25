@@ -1,6 +1,6 @@
 {meta: title Be A Good Girl (Till I Get Back In Town)}
 {meta: artist Leroy Van Dyke}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [C]When those other guys start 

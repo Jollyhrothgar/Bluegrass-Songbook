@@ -1,6 +1,6 @@
 {meta: title Lay Some Happiness On Me}
 {meta: artist Wilburn Brothers}
-{meta: writer Jean Chapel and Bob Jennings}
+{meta: composer Jean Chapel and Bob Jennings}
 
 {start_of_verse: Verse 1}
 [G]Lay some happiness [C]on [G]me 

@@ -1,6 +1,6 @@
 {meta: title The Gun The Gold And The Girl}
 {meta: artist Billy Walker}
-{meta: writer Harlan Howard and Buddy Mize}
+{meta: composer Harlan Howard and Buddy Mize}
 
 {start_of_verse: Verse 1}
 [G]I had to have the [D7]gun to get the [G]gold

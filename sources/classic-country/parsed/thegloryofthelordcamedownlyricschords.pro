@@ -1,6 +1,6 @@
 {meta: title The Glory Of The Lord Came Down}
 {meta: artist Betty Jean Robinson}
-{meta: writer Brenda Lipsey}
+{meta: composer Brenda Lipsey}
 
 {start_of_verse: Verse 1}
 [C]I was down at the alter [Am]talking to the father

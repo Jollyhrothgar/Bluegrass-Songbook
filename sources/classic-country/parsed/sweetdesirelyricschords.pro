@@ -1,6 +1,6 @@
 {meta: title Sweet Desire}
 {meta: artist The Kendalls}
-{meta: writer Jeannie Kendall}
+{meta: composer Jeannie Kendall}
 
 {start_of_verse: Verse 1}
 [C]Sweet desire gave me [C][F]away

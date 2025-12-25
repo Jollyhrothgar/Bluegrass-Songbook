@@ -1,6 +1,6 @@
 {meta: title California Dreams}
 {meta: artist Bobby Bare}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]Let me carry [F]that old suitcase [C]hon

@@ -1,6 +1,6 @@
 {meta: title Is It Asking Too Much}
 {meta: artist Kitty Wells}
-{meta: writer Marty Robbins}
+{meta: composer Marty Robbins}
 
 {start_of_verse: Verse 1}
 [G]Just a year ago you [C]promised me we'd [G]marry

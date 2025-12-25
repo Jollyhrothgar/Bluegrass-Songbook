@@ -1,6 +1,6 @@
 {meta: title It's Midnight Cinderella}
 {meta: artist Garth Brooks}
-{meta: writer Kent Blazy, Kim Williams, Garth Brooks}
+{meta: composer Kent Blazy, Kim Williams, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [F]It's midnight Cinderella 

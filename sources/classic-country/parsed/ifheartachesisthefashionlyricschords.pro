@@ -1,6 +1,6 @@
 {meta: title If Heartaches Is The Fashion}
 {meta: artist Jim Reeves}
-{meta: writer Roger Miller and Jim Reeves}
+{meta: composer Roger Miller and Jim Reeves}
 
 {start_of_verse: Verse 1}
 [C]My hands reach out to touch someone

@@ -1,6 +1,6 @@
 {meta: title You Better Move On}
 {meta: artist Johnny Paycheck}
-{meta: writer Arthur Alexander}
+{meta: composer Arthur Alexander}
 
 {start_of_verse: Verse 1}
 [C]You ask me to give up the hand of the girl I [G7]love 

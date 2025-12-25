@@ -1,6 +1,6 @@
 {meta: title Soul Deep}
 {meta: artist Eddy Arnold}
-{meta: writer Wayne C. Thompson}
+{meta: composer Wayne C. Thompson}
 
 {start_of_verse: Verse 1}
 [C]Darling I don't [F]know much [C]I know I love you [F]so much

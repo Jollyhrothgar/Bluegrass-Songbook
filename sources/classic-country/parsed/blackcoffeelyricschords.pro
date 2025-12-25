@@ -1,6 +1,6 @@
 {meta: title Black Coffee}
 {meta: artist Lacy J. Dalton}
-{meta: writer Hillary A. Kanter and Even Stevens}
+{meta: composer Hillary A. Kanter and Even Stevens}
 
 {start_of_verse: Verse 1}
 [G]Black Coffee blue morning

@@ -1,6 +1,6 @@
 {meta: title I See Jesus}
 {meta: artist Hank Snow}
-{meta: writer Charles Wycuff}
+{meta: composer Charles Wycuff}
 
 {start_of_verse: Verse 1}
 ([C]I see [G]Jesus [A7]standing [D7]waiting for [G]me)

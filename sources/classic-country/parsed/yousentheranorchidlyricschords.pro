@@ -1,6 +1,6 @@
 {meta: title You Sent Her An Orchid}
 {meta: artist Jean Shepard}
-{meta: writer Jerry Jerico and Kenneth Grant}
+{meta: composer Jerry Jerico and Kenneth Grant}
 
 {start_of_verse: Verse 1}
 [G]You said you'd forget her you tried I [C]suppose

@@ -1,6 +1,6 @@
 {meta: title I'm Not Mad Just Hurt}
 {meta: artist Hank Thompson}
-{meta: writer Lila Derushe and Hank Thompson}
+{meta: composer Lila Derushe and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]Hey my little be-bop can't you [C]see

@@ -1,6 +1,6 @@
 {meta: title Christmas And Love}
 {meta: artist Charley Pride}
-{meta: writer Lassaye Holmes}
+{meta: composer Lassaye Holmes}
 
 {start_of_verse: Verse 1}
 [G]I live [D7]in a [G]three-room shack [C]it's not much to [G]see

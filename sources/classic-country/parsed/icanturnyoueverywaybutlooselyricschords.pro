@@ -1,6 +1,6 @@
 {meta: title I Can Turn You Every Way But Loose}
 {meta: artist Dottie West}
-{meta: writer Dottie West and Bill West}
+{meta: composer Dottie West and Bill West}
 
 {start_of_verse: Verse 1}
 [C]You lived it up turned me down

@@ -1,6 +1,6 @@
 {meta: title Mental Journey}
 {meta: artist David Houston}
-{meta: writer Margie Singleton and Leon Ashley}
+{meta: composer Margie Singleton and Leon Ashley}
 
 {start_of_verse: Verse 1}
 [C]If I've ever planted flowers in your [Am]garden

@@ -1,6 +1,6 @@
 {meta: title What A Memory}
 {meta: artist Tracy Lawrence}
-{meta: writer Kenny Beard and Jeff Bates}
+{meta: composer Kenny Beard and Jeff Bates}
 
 {start_of_verse: Verse 1}
 [G]On the day momma died  

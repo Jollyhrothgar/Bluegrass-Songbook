@@ -1,6 +1,6 @@
 {meta: title Closest Thing To Perfect}
 {meta: artist Jean Shepard}
-{meta: writer Jerry Chesnut and Walter Woodward}
+{meta: composer Jerry Chesnut and Walter Woodward}
 
 {start_of_verse: Verse 1}
 [C]He's better than any other man [F]I've ever seen [C]before

@@ -1,6 +1,6 @@
 {meta: title Roses}
 {meta: artist Jim Reeves}
-{meta: writer Tim Spencer and Glenn Spencer}
+{meta: composer Tim Spencer and Glenn Spencer}
 
 {start_of_verse: Verse 1}
 [C](Roses [Am]roses [F]ah ah [G7]ooh)

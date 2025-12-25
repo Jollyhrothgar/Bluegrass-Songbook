@@ -1,6 +1,6 @@
 {meta: title Like A Fool}
 {meta: artist Dottie West}
-{meta: writer Yvonne Devaney}
+{meta: composer Yvonne Devaney}
 
 {start_of_verse: Verse 1}
 [C]I know it won't be long until I [F]hear from you

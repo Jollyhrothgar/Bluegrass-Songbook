@@ -1,6 +1,6 @@
 {meta: title Wrapped Up In You}
 {meta: artist Garth Brooks}
-{meta: writer Wayne Kirkpatrick}
+{meta: composer Wayne Kirkpatrick}
 
 {start_of_verse: Verse 1}
 [G]How do I love you well let me [B7]see

@@ -1,6 +1,6 @@
 {meta: title There Shall Be Showers Of Blessing}
 {meta: artist Jimmy Dean}
-{meta: writer Daniel W. Whittle and James McGranahan}
+{meta: composer Daniel W. Whittle and James McGranahan}
 
 {start_of_verse: Verse 1}
 [G]There shall be showers of blessing [D7]this is the promise of [G]love

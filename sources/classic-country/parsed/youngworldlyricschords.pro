@@ -1,6 +1,6 @@
 {meta: title Young World}
 {meta: artist Ricky Nelson}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]It's a young world

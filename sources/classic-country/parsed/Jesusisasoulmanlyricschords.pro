@@ -1,6 +1,6 @@
 {meta: title Jesus Is A Soul Man}
 {meta: artist Conway Twitty}
-{meta: writer Lawrence Reynolds and Jack Cardwell}
+{meta: composer Lawrence Reynolds and Jack Cardwell}
 
 {start_of_verse: Verse 1}
 [G]Jesus is a soul man

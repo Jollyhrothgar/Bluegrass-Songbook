@@ -1,6 +1,6 @@
 {meta: title You're Why God Made Me}
 {meta: artist Tracy Lawrence}
-{meta: writer Will Nance and Billy Yates}
+{meta: composer Will Nance and Billy Yates}
 
 {start_of_verse: Verse 1}
 [C]On my first day in this world nobody really knew

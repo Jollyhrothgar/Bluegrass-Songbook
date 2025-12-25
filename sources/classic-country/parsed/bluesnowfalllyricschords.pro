@@ -1,6 +1,6 @@
 {meta: title Blue Snowfall}
 {meta: artist George Morgan}
-{meta: writer Dave Coleman}
+{meta: composer Dave Coleman}
 
 {start_of_verse: Verse 1}
 [C]It's a [Am]blue  [Em]snowfall [Am]for you're not here with [C]me

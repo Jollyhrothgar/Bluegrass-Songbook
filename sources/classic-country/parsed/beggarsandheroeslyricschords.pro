@@ -1,6 +1,6 @@
 {meta: title Beggars and Heroes}
 {meta: artist The Bellamy Brothers}
-{meta: writer Ralph Siegel}
+{meta: composer Ralph Siegel}
 
 {start_of_verse: Verse 1}
 [G]Sitten' in a bar talking to my friends

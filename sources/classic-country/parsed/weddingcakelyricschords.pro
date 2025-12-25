@@ -1,6 +1,6 @@
 {meta: title Wedding Cake}
 {meta: artist Connie Smith}
-{meta: writer Myra Smith and Margaret Lewis}
+{meta: composer Myra Smith and Margaret Lewis}
 
 {start_of_verse: Verse 1}
 [C]Don't be troubled bout me cause I'm tired

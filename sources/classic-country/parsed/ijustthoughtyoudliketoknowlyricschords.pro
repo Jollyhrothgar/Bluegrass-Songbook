@@ -1,6 +1,6 @@
 {meta: title I Just Thought You'd Like To Know}
 {meta: artist Johnny Cash}
-{meta: writer Charlie Rich}
+{meta: composer Charlie Rich}
 
 {start_of_verse: Verse 1}
 [C]I just thought you'd like to [G7]know 

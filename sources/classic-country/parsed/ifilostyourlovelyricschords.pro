@@ -1,6 +1,6 @@
 {meta: title If I Lost Your Love}
 {meta: artist Mel Tillis}
-{meta: writer Mel Tillis and Wayne P. Walker}
+{meta: composer Mel Tillis and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]If I lost your love oh how I'd [F]cry

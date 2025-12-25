@@ -1,6 +1,6 @@
 {meta: title Love Coming Down}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]I remember how your eyes used to light [C7]up

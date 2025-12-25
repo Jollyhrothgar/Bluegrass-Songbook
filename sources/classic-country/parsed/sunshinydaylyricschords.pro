@@ -1,6 +1,6 @@
 {meta: title Sunshiny Day}
 {meta: artist Charlie Pride}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]If I wake up [C]in the mornin' [G]when I look [C]outside it's stormin'

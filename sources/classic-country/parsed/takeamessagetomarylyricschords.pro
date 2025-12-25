@@ -1,6 +1,6 @@
 {meta: title Take A Message To Mary}
 {meta: artist Everly Brothers}
-{meta: writer Boudleaux and Felice Boudleaux}
+{meta: composer Boudleaux and Felice Boudleaux}
 
 {start_of_verse: Verse 1}
 [C]These are the words of a frontier lad

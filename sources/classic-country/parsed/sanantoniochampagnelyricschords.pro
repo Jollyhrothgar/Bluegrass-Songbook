@@ -1,6 +1,6 @@
 {meta: title San Antonio Champagne}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]She was queen of the social world [F]in San An[D7]tone

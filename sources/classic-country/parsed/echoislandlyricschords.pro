@@ -1,6 +1,6 @@
 {meta: title Echo Island}
 {meta: artist Marty Robbins}
-{meta: writer Charley Robinson}
+{meta: composer Charley Robinson}
 
 {start_of_verse: Verse 1}
 [G]Love is lost on [C]Echo [G]Island

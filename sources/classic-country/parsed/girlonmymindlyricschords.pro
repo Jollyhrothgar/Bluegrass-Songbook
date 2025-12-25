@@ -1,6 +1,6 @@
 {meta: title Girl On My Mind}
 {meta: artist Buddy Holly}
-{meta: writer Don Guess}
+{meta: composer Don Guess}
 
 {start_of_verse: Verse 1}
 [C]Oh girl on my [Am]mind

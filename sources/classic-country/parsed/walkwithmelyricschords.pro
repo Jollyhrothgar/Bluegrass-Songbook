@@ -1,6 +1,6 @@
 {meta: title Walk With Me}
 {meta: artist Eddy Arnold}
-{meta: writer Don Robertson}
+{meta: composer Don Robertson}
 
 {start_of_verse: Verse 1}
 [C]Walk with me put your faith in [F]love and [G7]walk with me

@@ -1,6 +1,6 @@
 {meta: title A Million Tears From Now}
 {meta: artist Jimmy Dean}
-{meta: writer Rodgers}
+{meta: composer Rodgers}
 
 {start_of_verse: Verse 1}
 [C]Although you [F]said good[C]bye and [G7]left me hear to cry

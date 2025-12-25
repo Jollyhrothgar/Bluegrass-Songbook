@@ -1,6 +1,6 @@
 {meta: title I Don't Know Why I Keep Loving You}
 {meta: artist Ray Price}
-{meta: writer Fred Carter}
+{meta: composer Fred Carter}
 
 {start_of_verse: Verse 1}
 [C]I know the sun will rise tomorrow [D7]morning

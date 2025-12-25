@@ -1,6 +1,6 @@
 {meta: title There's Room At The Cross For You}
 {meta: artist Randy Travis}
-{meta: writer Ira Stanphill}
+{meta: composer Ira Stanphill}
 
 {start_of_verse: Verse 1}
 [G]There’s room at the [A7]cross for [D7]you

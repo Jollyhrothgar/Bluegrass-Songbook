@@ -1,6 +1,6 @@
 {meta: title Touch Me With Your Eyes}
 {meta: artist Wayne Kemp}
-{meta: writer Clarence Wayne Kemp and Willard Mack Vickery}
+{meta: composer Clarence Wayne Kemp and Willard Mack Vickery}
 
 {start_of_verse: Verse 1}
 [C]This old crowed room was empty [G7]until you walked [C]in

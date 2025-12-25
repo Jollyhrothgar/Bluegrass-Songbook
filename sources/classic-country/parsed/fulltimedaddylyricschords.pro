@@ -1,6 +1,6 @@
 {meta: title Full Time Daddy}
 {meta: artist Tony Booth}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]Well I'm gonna be your [A7]full time daddy 

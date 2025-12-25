@@ -1,6 +1,6 @@
 {meta: title When The Roll Is Called Up Yonder}
 {meta: artist The Hee Haw Gospel Quartet}
-{meta: writer James M. Black}
+{meta: composer James M. Black}
 
 {start_of_verse: Verse 1}
 [G]When the trumpet of the Lord shall sound and [C]time shall be no [G]more

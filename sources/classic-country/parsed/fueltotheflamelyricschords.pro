@@ -1,6 +1,6 @@
 {meta: title Fuel To The Flame}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton and Bill Owens}
+{meta: composer Dolly Parton and Bill Owens}
 
 {start_of_verse: Verse 1}
 ([Dm]Fuel to the [G7]flame)

@@ -1,6 +1,6 @@
 {meta: title You'll Never Fall In Love Again}
 {meta: artist Ricky Nelson}
-{meta: writer Charles Bene}
+{meta: composer Charles Bene}
 
 {start_of_verse: Verse 1}
 [C]When you walk through the [E7]rain to[A7]gether

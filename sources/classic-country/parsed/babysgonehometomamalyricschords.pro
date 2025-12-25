@@ -1,6 +1,6 @@
 {meta: title Baby's Gone Home To Mama}
 {meta: artist John Anderson}
-{meta: writer Shawn Camp and Herb McCullough}
+{meta: composer Shawn Camp and Herb McCullough}
 
 {start_of_verse: Verse 1}
 [G]Rains comin' down on the roof of my trailer house

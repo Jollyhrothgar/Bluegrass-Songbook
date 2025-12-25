@@ -1,6 +1,6 @@
 {meta: title Letter Edged In Black}
 {meta: artist Hank Snow}
-{meta: writer Roy Carter}
+{meta: composer Roy Carter}
 
 {start_of_verse: Verse 1}
 [G]I was standing by my window yesterday [D7]morning

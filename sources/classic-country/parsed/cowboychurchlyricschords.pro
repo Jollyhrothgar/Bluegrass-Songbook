@@ -1,6 +1,6 @@
 {meta: title Cowboy Church}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Luke Reed}
+{meta: composer Red Steagall and Luke Reed}
 
 {start_of_verse: Verse 1}
 [C]Lord I'm just a cowboy [F]and you know cowboy ways 

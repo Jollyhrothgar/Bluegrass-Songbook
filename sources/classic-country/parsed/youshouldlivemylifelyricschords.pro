@@ -1,6 +1,6 @@
 {meta: title You Should Live My Life}
 {meta: artist Ferlin Husky}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [C]I wish I [Em]could live [Am]long e[C]nough 

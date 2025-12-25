@@ -1,6 +1,6 @@
 {meta: title Trouble On The Line}
 {meta: artist Ernest Tubb and Loretta Lynn}
-{meta: writer Loretta Lynn and Oliver Lynn}
+{meta: composer Loretta Lynn and Oliver Lynn}
 
 {start_of_verse: Verse 1}
 [G]I can't understand [D7]a word your [G]saying

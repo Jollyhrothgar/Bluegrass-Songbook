@@ -1,6 +1,6 @@
 {meta: title Developing My Pictures}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery}
+{meta: composer Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]I'm developing my [F]pictures my mind's a dark [C]room

@@ -1,6 +1,6 @@
 {meta: title The Eyes Of The World}
 {meta: artist George Morgan}
-{meta: writer Joe Allison and Marion Worth}
+{meta: composer Joe Allison and Marion Worth}
 
 {start_of_verse: Verse 1}
 [C]We know this [C7]love that we're [F]stealing 

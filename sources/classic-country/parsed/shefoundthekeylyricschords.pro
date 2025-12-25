@@ -1,6 +1,6 @@
 {meta: title She Found The Key Song}
 {meta: artist Gene Watson}
-{meta: writer Lefty Frizzell and Sanger D. Shafer}
+{meta: composer Lefty Frizzell and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G]I like the way that [C]she unlocks my [G]door

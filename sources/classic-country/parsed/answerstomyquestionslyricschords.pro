@@ -1,6 +1,6 @@
 {meta: title Answers To My Questions}
 {meta: artist Vern Gosdin}
-{meta: writer Wayne Bradford}
+{meta: composer Wayne Bradford}
 
 {start_of_verse: Verse 1}
 [C]You tell me you stay out late [F]cause you need time alone

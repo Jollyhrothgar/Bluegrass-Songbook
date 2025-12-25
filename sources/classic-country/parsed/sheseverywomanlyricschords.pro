@@ -1,6 +1,6 @@
 {meta: title She's Every Woman}
 {meta: artist Garth Brooks}
-{meta: writer Victoria Shaw and Garth Brooks}
+{meta: composer Victoria Shaw and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G7]She's sun and [C]rain she's fire and [F]ice 

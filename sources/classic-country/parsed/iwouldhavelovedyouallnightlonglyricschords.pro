@@ -1,6 +1,6 @@
 {meta: title I Would Have Loved You All Night Long}
 {meta: artist Keith Whitley}
-{meta: writer Glenn Martin}
+{meta: composer Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]I know she thinks we're different

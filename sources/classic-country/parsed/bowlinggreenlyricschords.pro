@@ -1,6 +1,6 @@
 {meta: title Bowling Green}
 {meta: artist Everly Brothers}
-{meta: writer Jacqueline Ertel and Terry Slater}
+{meta: composer Jacqueline Ertel and Terry Slater}
 
 {start_of_verse: Verse 1}
 [G]Way down in [C]Bowling [G]Green prettiest [C]girls I've ever [G]seen

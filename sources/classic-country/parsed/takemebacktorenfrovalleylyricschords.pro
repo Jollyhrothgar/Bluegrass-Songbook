@@ -1,6 +1,6 @@
 {meta: title Take Me Back To Renfro Valley}
 {meta: artist Mac Wiseman}
-{meta: writer John Lair}
+{meta: composer John Lair}
 
 {start_of_verse: Verse 1}
 [C]I was born in Renfro Valley

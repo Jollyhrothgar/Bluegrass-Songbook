@@ -1,6 +1,6 @@
 {meta: title Release Me From Sin}
 {meta: artist George Jones}
-{meta: writer Eddie Miller and William McCall}
+{meta: composer Eddie Miller and William McCall}
 
 {start_of_verse: Verse 1}
 [C]Please re[F]lease me [C]from my [F]sin

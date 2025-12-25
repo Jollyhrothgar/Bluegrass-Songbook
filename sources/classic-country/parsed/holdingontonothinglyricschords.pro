@@ -1,6 +1,6 @@
 {meta: title Holding On To Nothing}
 {meta: artist Porter Wagoner}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]We're holding on with [F]nothing [C]left to [G7]hold on [C]to

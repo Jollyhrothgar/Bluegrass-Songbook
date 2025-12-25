@@ -1,6 +1,6 @@
 {meta: title Just A Girl I Used To Know}
 {meta: artist Charley Pride}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]There's a [F]picture that I [C]carry 

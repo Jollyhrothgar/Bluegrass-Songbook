@@ -1,6 +1,6 @@
 {meta: title A Lonely Woman}
 {meta: artist Connie Smith}
-{meta: writer Jean Chapel and Alda Calongne}
+{meta: composer Jean Chapel and Alda Calongne}
 
 {start_of_verse: Verse 1}
 [G]No one can [C]cry like a [D7]woman [C]can

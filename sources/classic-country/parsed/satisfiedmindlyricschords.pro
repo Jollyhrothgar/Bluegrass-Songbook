@@ -1,6 +1,6 @@
 {meta: title Satisfied Mind}
 {meta: artist Porter Wagoner}
-{meta: writer Red Hayes and Jack Rhodes}
+{meta: composer Red Hayes and Jack Rhodes}
 
 {start_of_verse: Verse 1}
 [G]How many [C]ti-mes [D7]have you heard someone [G]say

@@ -1,6 +1,6 @@
 {meta: title How Big A Fire}
 {meta: artist Jeannie Seely}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]How big a fire must I [Em]build to [A7]melt your heart

@@ -1,6 +1,6 @@
 {meta: title Just In Case}
 {meta: artist The Everly Brothers}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]You say that you'll give me all your love someday

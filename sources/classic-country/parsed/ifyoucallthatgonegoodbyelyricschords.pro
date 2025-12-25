@@ -1,6 +1,6 @@
 {meta: title If You Call That Gone Goodbye}
 {meta: artist Ernest Tubb}
-{meta: writer Rex Griffin}
+{meta: composer Rex Griffin}
 
 {start_of_verse: Verse 1}
 [C]If you call that gone goodbye ain't nobody gonna [D7]cry

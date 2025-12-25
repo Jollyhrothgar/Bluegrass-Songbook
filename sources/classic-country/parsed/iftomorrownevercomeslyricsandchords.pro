@@ -1,6 +1,6 @@
 {meta: title If Tomorrow Never Comes}
 {meta: artist Garth Brooks}
-{meta: writer Kent Blazy and Garth Brooks}
+{meta: composer Kent Blazy and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G]Sometimes late at [Am]night 

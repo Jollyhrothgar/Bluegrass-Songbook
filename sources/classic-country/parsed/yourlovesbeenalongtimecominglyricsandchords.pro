@@ -1,6 +1,6 @@
 {meta: title Your Love's Been A Long Time Coming}
 {meta: artist Tammy Wynette}
-{meta: writer Norro Wilson and Carmol Taylor}
+{meta: composer Norro Wilson and Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [C]Darling let me spend a moment [D7]with you

@@ -1,6 +1,6 @@
 {meta: title Jesus Cares What Happens To Me}
 {meta: artist The Osborne Brothers}
-{meta: writer Bobby Osborne}
+{meta: composer Bobby Osborne}
 
 {start_of_verse: Verse 1}
 [G]Once I thought no one cared if I lived or died

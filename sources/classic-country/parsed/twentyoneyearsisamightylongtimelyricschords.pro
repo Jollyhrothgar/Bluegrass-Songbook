@@ -1,6 +1,6 @@
 {meta: title Twenty One Years Is A Mighty Long Time}
 {meta: artist The Gibson Brothers}
-{meta: writer Paul Clayton Worthington}
+{meta: composer Paul Clayton Worthington}
 
 {start_of_verse: Verse 1}
 [C]The judge said stand up lad and dry up your [G7]tears

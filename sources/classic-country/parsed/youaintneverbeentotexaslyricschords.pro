@@ -1,6 +1,6 @@
 {meta: title You Ain't Never Been to Texas}
 {meta: artist Johnny Lee}
-{meta: writer Roger Springer, Tony Raymee, Jerry Lane}
+{meta: composer Roger Springer, Tony Raymee, Jerry Lane}
 
 {start_of_verse: Verse 1}
 [G]Saw a man on the TV [Am]he's out in California

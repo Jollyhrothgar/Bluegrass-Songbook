@@ -1,6 +1,6 @@
 {meta: title If The World Don't End Tomorrow}
 {meta: artist Carl Smith}
-{meta: writer Billy Sherrill}
+{meta: composer Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [G]Since you've been gone I [D7]don't sleep no [G]more

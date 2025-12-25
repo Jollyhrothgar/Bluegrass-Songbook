@@ -1,6 +1,6 @@
 {meta: title Lord I’m Coming Home}
 {meta: artist Kitty Wells}
-{meta: writer William J. Kirkpatrick}
+{meta: composer William J. Kirkpatrick}
 
 {start_of_verse: Verse 1}
 [G]I’ve wandered far [C]away from [G]God

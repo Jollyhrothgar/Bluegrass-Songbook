@@ -1,6 +1,6 @@
 {meta: title Is Her Love Any Better Than Mine}
 {meta: artist Jeanne Pruett}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]Is her [G]love any [D7]better than [G]mine

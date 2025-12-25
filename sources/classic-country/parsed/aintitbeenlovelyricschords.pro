@@ -1,6 +1,6 @@
 {meta: title Ain't It Been Love}
 {meta: artist Vern Gosdin}
-{meta: writer Fred Koller and Jack Fisher}
+{meta: composer Fred Koller and Jack Fisher}
 
 {start_of_verse: Verse 1}
 [C]Ain't it been good [F]what we had [C]together

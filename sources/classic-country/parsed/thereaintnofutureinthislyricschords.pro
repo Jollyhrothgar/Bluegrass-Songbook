@@ -1,6 +1,6 @@
 {meta: title There Ain't No Future In This}
 {meta: artist Reba McEntire}
-{meta: writer Sharon Vaughn and Bill Rice}
+{meta: composer Sharon Vaughn and Bill Rice}
 
 {start_of_verse: Verse 1}
 [D7]Honey [G]I know you [D7]tried when you [G]loved me tonight

@@ -1,6 +1,6 @@
 {meta: title Twang}
 {meta: artist George Strait}
-{meta: writer Jim Lauderdale, Kendell Wayne Marvel, Jimmy Ritchey}
+{meta: composer Jim Lauderdale, Kendell Wayne Marvel, Jimmy Ritchey}
 
 {start_of_verse: Verse 1}
 [G]When I get off of work on [C]Friday 

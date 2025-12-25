@@ -1,6 +1,6 @@
 {meta: title That's What You Get For Loving Me}
 {meta: artist Waylon Jennings}
-{meta: writer Gordon Lightfoot}
+{meta: composer Gordon Lightfoot}
 
 {start_of_verse: Verse 1}
 [C]That's what you get for loving [F]me

@@ -1,6 +1,6 @@
 {meta: title Avenue Of Prayer}
 {meta: artist Pat Boone}
-{meta: writer Tharon Guffey and Murl Guffey}
+{meta: composer Tharon Guffey and Murl Guffey}
 
 {start_of_verse: Verse 1}
 [G]Oh dear friend this sinful [C]world is lost and [G]dying

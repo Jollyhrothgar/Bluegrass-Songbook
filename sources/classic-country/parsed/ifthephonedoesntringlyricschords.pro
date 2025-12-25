@@ -1,6 +1,6 @@
 {meta: title If The Phone Doesn't Ring}
 {meta: artist Jimmy Buffett}
-{meta: writer Jimmy Buffett, Will Jennings, Michael Utley}
+{meta: composer Jimmy Buffett, Will Jennings, Michael Utley}
 
 {start_of_verse: Verse 1}
 [C]There are oceans of [Em]feelings [F]between [C]us

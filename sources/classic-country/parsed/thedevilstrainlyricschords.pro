@@ -1,6 +1,6 @@
 {meta: title The Devil’s Train}
 {meta: artist Hank Williams}
-{meta: writer Mel Foree and Cliff Carlisle}
+{meta: composer Mel Foree and Cliff Carlisle}
 
 {start_of_verse: Verse 1}
 [C]The devil's train is long and black 

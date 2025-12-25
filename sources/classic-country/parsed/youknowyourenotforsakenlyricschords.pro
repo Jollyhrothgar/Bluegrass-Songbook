@@ -1,6 +1,6 @@
 {meta: title You Know You're Not Forsaken}
 {meta: artist Connie Francis}
-{meta: writer Tom Everett}
+{meta: composer Tom Everett}
 
 {start_of_verse: Verse 1}
 [F]You know there's [C]somethin' on my [G]mind

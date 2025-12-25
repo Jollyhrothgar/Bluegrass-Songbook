@@ -1,6 +1,6 @@
 {meta: title I Don't See Me In Your Eyes Anymore}
 {meta: artist Charlie Rich}
-{meta: writer Bennie Benjamin and George Weiss}
+{meta: composer Bennie Benjamin and George Weiss}
 
 {start_of_verse: Verse 1}
 [G7]I don't see [C]me   in your eyes anymore

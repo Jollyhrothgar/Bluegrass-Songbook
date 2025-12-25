@@ -1,6 +1,6 @@
 {meta: title Child Of The Fifties}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]I grew up a [C]child of the [G]fifties

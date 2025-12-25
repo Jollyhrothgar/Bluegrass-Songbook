@@ -1,6 +1,6 @@
 {meta: title Praise The Lord And Send Me The Money}
 {meta: artist Bobby Bare}
-{meta: writer Hugh Moffatt}
+{meta: composer Hugh Moffatt}
 
 {start_of_verse: Verse 1}
 [G]Praise the Lord and [C]send me the [G]money

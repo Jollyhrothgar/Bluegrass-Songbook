@@ -1,6 +1,6 @@
 {meta: title I've Turned You To Stone}
 {meta: artist Don Williams}
-{meta: writer Jim Rushing}
+{meta: composer Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]I wish there was some way to [F]tell you I'm [C]sorry

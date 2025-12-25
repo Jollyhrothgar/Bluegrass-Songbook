@@ -1,6 +1,6 @@
 {meta: title At Mail Call Today}
 {meta: artist Gene Autry}
-{meta: writer Gene Autry and Fred Rose}
+{meta: composer Gene Autry and Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]At mail call today dear your last letter [D7]came

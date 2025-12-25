@@ -1,6 +1,6 @@
 {meta: title Girl At The Crossroads Bar}
 {meta: artist Larry Sparks}
-{meta: writer Bill Bryson}
+{meta: composer Bill Bryson}
 
 {start_of_verse: Verse 1}
 [C]I walked out tonight for a ramble round

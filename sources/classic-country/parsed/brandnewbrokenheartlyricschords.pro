@@ -1,6 +1,6 @@
 {meta: title Brand New Broken Heart}
 {meta: artist Jimmy Martin}
-{meta: writer Larry Sparks and H. Smith}
+{meta: composer Larry Sparks and H. Smith}
 
 {start_of_verse: Verse 1}
 [G]Life to me is just a [D7]heartache

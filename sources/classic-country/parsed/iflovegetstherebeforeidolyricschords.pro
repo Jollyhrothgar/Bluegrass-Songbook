@@ -1,6 +1,6 @@
 {meta: title If Love Gets There Before I Do}
 {meta: artist Don Williams}
-{meta: writer Dickey Lee and Kerry Chater}
+{meta: composer Dickey Lee and Kerry Chater}
 
 {start_of_verse: Verse 1}
 [C]Another twenty miles and I'm [F]halfway [C]there

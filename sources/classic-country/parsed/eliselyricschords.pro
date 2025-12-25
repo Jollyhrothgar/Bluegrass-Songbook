@@ -1,6 +1,6 @@
 {meta: title Elise}
 {meta: artist Don Williams}
-{meta: writer Graham Lyle and Tom McGuiness}
+{meta: composer Graham Lyle and Tom McGuiness}
 
 {start_of_verse: Verse 1}
 [C]Sitting in the barroom [F]ordering [G7]another [C]beer

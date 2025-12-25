@@ -1,6 +1,6 @@
 {meta: title Over The Hill}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ted Daffan}
+{meta: composer Ted Daffan}
 
 {start_of_verse: Verse 1}
 [C]Over the hill and [F]far [Dm]away

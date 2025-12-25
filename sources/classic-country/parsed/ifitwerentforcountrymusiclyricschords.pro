@@ -1,6 +1,6 @@
 {meta: title If It Weren't For Country Music}
 {meta: artist Clinton Gregory}
-{meta: writer Alan Syms}
+{meta: composer Alan Syms}
 
 {start_of_verse: Verse 1}
 [C]I sit here by the jukebox in this country bar

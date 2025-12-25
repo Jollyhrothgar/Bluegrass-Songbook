@@ -1,6 +1,6 @@
 {meta: title Me And Jimmie Rodgers}
 {meta: artist Ray Price}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]Me and Jimmie [C]Rodgers used to [D7]ride 

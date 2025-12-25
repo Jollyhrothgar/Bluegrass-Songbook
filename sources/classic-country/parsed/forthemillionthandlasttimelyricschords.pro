@@ -1,6 +1,6 @@
 {meta: title For The Millionth And Last Time}
 {meta: artist Elvis Presley}
-{meta: writer Sid Tepper and Roy C. Bennett}
+{meta: composer Sid Tepper and Roy C. Bennett}
 
 {start_of_verse: Verse 1}
 [G]For the millionth and the [Am]last time [D7]darling let me hold you [G]tight

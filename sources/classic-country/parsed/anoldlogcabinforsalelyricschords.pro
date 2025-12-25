@@ -1,6 +1,6 @@
 {meta: title An Old Log Cabin For Sale}
 {meta: artist Porter Wagoner}
-{meta: writer J. W. Payte [3/4 time]}
+{meta: composer J. W. Payte [3/4 time]}
 
 {start_of_verse: Verse 1}
 [G]While strolling a long [C]in the [G]country

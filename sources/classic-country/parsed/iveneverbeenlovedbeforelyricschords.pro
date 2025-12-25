@@ -1,6 +1,6 @@
 {meta: title I've Never Been Loved Before}
 {meta: artist Leroy Van Dyke}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 ([D7]I never [G]loved and I've [D7]never been loved till [G]you)[C]   [G]

@@ -1,6 +1,6 @@
 {meta: title Fools Rush In}
 {meta: artist Ricky Nelson}
-{meta: writer Johnny Mercer and Ruby Bloom}
+{meta: composer Johnny Mercer and Ruby Bloom}
 
 {start_of_verse: Verse 1}
 Fools Rush In

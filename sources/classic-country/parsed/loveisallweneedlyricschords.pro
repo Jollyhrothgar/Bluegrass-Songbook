@@ -1,6 +1,6 @@
 {meta: title Love Is All We Need}
 {meta: artist Tammy Wynette}
-{meta: writer Mark Sherrill and Duke Goff}
+{meta: composer Mark Sherrill and Duke Goff}
 
 {start_of_verse: Verse 1}
 [C]Well just across the street from our [F]little three room [C]shack

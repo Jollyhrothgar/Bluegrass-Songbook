@@ -1,6 +1,6 @@
 {meta: title Mention My Name In Sheboygan}
 {meta: artist The Everly Brothers}
-{meta: writer Bob Hilliard, Dick Sanfor, Sammy Mysels}
+{meta: composer Bob Hilliard, Dick Sanfor, Sammy Mysels}
 
 {start_of_verse: Verse 1}
 [C]Mention my name in Sheboygan

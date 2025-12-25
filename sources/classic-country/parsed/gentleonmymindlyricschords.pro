@@ -1,6 +1,6 @@
 {meta: title Gentle On My Mind}
 {meta: artist Glen Campbell}
-{meta: writer John Hartford}
+{meta: composer John Hartford}
 
 {start_of_verse: Verse 1}
 [C]It's knowing that your door is always open

@@ -1,6 +1,6 @@
 {meta: title When Did Right Become Wrong}
 {meta: artist Merle Haggard}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]It used to be [D7]right that you [G]love me

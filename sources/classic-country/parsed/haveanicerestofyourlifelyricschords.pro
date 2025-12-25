@@ -1,6 +1,6 @@
 {meta: title Have A Nice Rest Of Your Life}
 {meta: artist Randy Travis}
-{meta: writer Verlon Thompson and Mark D. Sanders}
+{meta: composer Verlon Thompson and Mark D. Sanders}
 
 {start_of_verse: Verse 1}
 [C]There's not a mean bone in my body [D7]I never [G7]could be [C]unkind

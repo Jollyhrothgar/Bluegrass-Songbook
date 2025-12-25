@@ -1,6 +1,6 @@
 {meta: title Your Old Standby}
 {meta: artist George Jones}
-{meta: writer Jim Eanes and Wade Perry}
+{meta: composer Jim Eanes and Wade Perry}
 
 {start_of_verse: Verse 1}
 [G]A shoulder to cry on is [C]all you want from [G]me

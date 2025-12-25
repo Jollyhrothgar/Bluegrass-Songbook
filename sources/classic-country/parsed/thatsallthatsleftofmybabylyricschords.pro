@@ -1,6 +1,6 @@
 {meta: title That's All That's Left Of My Baby}
 {meta: artist Cal Smith}
-{meta: writer Lorene Allen and Walter Haynes}
+{meta: composer Lorene Allen and Walter Haynes}
 
 {start_of_verse: Verse 1}
 [C]That faint sweet smell [E7]of her perfume [F]a powder box that [C]plays a tune

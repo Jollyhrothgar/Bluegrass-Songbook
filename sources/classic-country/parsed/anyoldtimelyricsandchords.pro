@@ -1,6 +1,6 @@
 {meta: title Any Old Time}
 {meta: artist George Strait}
-{meta: writer Jeff Dayton and Katheryn Nicoll}
+{meta: composer Jeff Dayton and Katheryn Nicoll}
 
 {start_of_verse: Verse 1}
 [G]Any old time when you get lonely

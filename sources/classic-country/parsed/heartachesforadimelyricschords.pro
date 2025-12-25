@@ -1,6 +1,6 @@
 {meta: title Heartaches For a Dime}
 {meta: artist Wynn Stewart}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I called you on the phone to say I love [F]you

@@ -1,6 +1,6 @@
 {meta: title Are You Waiting Just For Me}
 {meta: artist The Osborne Brothers}
-{meta: writer Ernest Tubb}
+{meta: composer Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [G]While I'm writing you tonight my [C]darlin'

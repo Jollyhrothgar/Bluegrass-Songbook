@@ -1,6 +1,6 @@
 {meta: title Perfect Mountain}
 {meta: artist Don Gibson}
-{meta: writer Gene Thomas}
+{meta: composer Gene Thomas}
 
 {start_of_verse: Verse 1}
 [C]Gonna find a perfect [F]mountain  [G7]gonna stay until I [C]die

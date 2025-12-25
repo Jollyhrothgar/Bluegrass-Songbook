@@ -1,6 +1,6 @@
 {meta: title Never Knew Lonely}
 {meta: artist Vince Gill}
-{meta: writer Vince Gill and Amy Grant}
+{meta: composer Vince Gill and Amy Grant}
 
 {start_of_verse: Verse 1}
 [C]No other lover never [F]really cared

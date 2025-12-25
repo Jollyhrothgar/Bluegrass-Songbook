@@ -1,6 +1,6 @@
 {meta: title She's All I Got}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Williams Jr. and Gary Bonds}
+{meta: composer Jerry Williams Jr. and Gary Bonds}
 
 {start_of_verse: Verse 1}
 [C]Well I said friend don't take her she's [Dm]all I’ve got  

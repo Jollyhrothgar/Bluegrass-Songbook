@@ -1,6 +1,6 @@
 {meta: title I Must Be Doin' Something Right}
 {meta: artist Roy Drusky}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [D7]I can't give [G]her all the things that I [G7]wish that I could [C]give

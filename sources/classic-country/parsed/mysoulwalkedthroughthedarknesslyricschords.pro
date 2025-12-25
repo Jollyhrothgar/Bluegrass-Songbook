@@ -1,6 +1,6 @@
 {meta: title My Soul Walked Through The Darkness}
 {meta: artist Red Foley}
-{meta: writer Fred Mathews}
+{meta: composer Fred Mathews}
 
 {start_of_verse: Verse 1}
 [C]My soul was bowed in sorrow

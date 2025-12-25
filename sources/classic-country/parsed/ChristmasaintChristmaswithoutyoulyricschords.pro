@@ -1,6 +1,6 @@
 {meta: title Christmas Ain't Christmas Without You}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Red Simpson}
+{meta: composer Buck Owens and Red Simpson}
 
 {start_of_verse: Verse 1}
 [G]I heard no Christmas [C]carols as I [A7]walked down the [D7]street

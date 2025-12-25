@@ -1,6 +1,6 @@
 {meta: title Don't Stop Gypsy}
 {meta: artist Ricky Skaggs}
-{meta: writer Larry Cordle}
+{meta: composer Larry Cordle}
 
 {start_of_verse: Verse 1}
 [G7]Don't stop [C][F][C]Gypsy

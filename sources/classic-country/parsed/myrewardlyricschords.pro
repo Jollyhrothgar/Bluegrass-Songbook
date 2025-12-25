@@ -1,6 +1,6 @@
 {meta: title My Reward}
 {meta: artist Statler Brothers}
-{meta: writer Allan Roberts}
+{meta: composer Allan Roberts}
 
 {start_of_verse: Verse 1}
 [C]Heart[G7]aches and [Am]tears [C]so many [B7]wasted [C]years

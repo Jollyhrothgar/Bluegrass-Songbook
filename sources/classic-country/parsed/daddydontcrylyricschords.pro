@@ -1,6 +1,6 @@
 {meta: title Daddy Don't Cry}
 {meta: artist Elvis Presley}
-{meta: writer Mac Davis}
+{meta: composer Mac Davis}
 
 {start_of_verse: Verse 1}
 [C]Today I stumbled from my bed

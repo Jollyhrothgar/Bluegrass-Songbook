@@ -1,6 +1,6 @@
 {meta: title Streets Of Gold}
 {meta: artist Vern Gosdin}
-{meta: writer Jody Emerson, William M. Emerson, Vern Gosdin}
+{meta: composer Jody Emerson, William M. Emerson, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]Lions will lay down by the lambs everyone will get [F]along

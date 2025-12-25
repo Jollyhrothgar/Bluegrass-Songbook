@@ -1,6 +1,6 @@
 {meta: title Don't Make Me Come Over There And Love You}
 {meta: artist George Strait}
-{meta: writer Jim Lauderdale and Carter Wood}
+{meta: composer Jim Lauderdale and Carter Wood}
 
 {start_of_verse: Verse 1}
 [G]Don't make me come over there and [D7]love you

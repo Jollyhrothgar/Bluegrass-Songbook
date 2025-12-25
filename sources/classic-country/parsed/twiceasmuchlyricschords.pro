@@ -1,6 +1,6 @@
 {meta: title Twice As Much}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray, Bob Blanchard and Hank Thompson}
+{meta: composer Billy Gray, Bob Blanchard and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]I wish the days were twice as long it’s hours forty-[D7]eight

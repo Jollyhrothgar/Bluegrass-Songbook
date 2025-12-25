@@ -1,6 +1,6 @@
 {meta: title Leona}
 {meta: artist Mel Tillis}
-{meta: writer Ken McDuffie}
+{meta: composer Ken McDuffie}
 
 {start_of_verse: Verse 1}
 [C]Leona was a woman that [F]lived in our [C]town

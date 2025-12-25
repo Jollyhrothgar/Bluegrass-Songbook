@@ -1,6 +1,6 @@
 {meta: title At the Bottom Of The Bottle}
 {meta: artist Porter Wagoner}
-{meta: writer Anne Young}
+{meta: composer Anne Young}
 
 {start_of_verse: Verse 1}
 [C]At the bottom of the bottle is where a man can [F]hide

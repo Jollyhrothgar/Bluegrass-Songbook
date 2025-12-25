@@ -1,6 +1,6 @@
 {meta: title House That Love Built}
 {meta: artist Carl Smith}
-{meta: writer Vic McAlpin and Nellie Smith}
+{meta: composer Vic McAlpin and Nellie Smith}
 
 {start_of_verse: Verse 1}
 [C]This is the boy that lived in the house that [G7]love built

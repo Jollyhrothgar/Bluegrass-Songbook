@@ -1,6 +1,6 @@
 {meta: title What Does The Deep Sea Say}
 {meta: artist Doc Watson}
-{meta: writer J.E. Mainer}
+{meta: composer J.E. Mainer}
 
 {start_of_verse: Verse 1}
 [C]She stood on the [G7]beach a[C]lone

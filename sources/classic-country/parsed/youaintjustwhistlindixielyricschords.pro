@@ -1,6 +1,6 @@
 {meta: title You Ain't Just Whistlin' Dixie}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G]Pines trees grow so [C]tall in the [G]bright sun[D7]shine

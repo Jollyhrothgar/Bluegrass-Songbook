@@ -1,6 +1,6 @@
 {meta: title Lillie's White Lies}
 {meta: artist Johnny Bush}
-{meta: writer Wood Newton and Billy Ray Reynolds}
+{meta: composer Wood Newton and Billy Ray Reynolds}
 
 {start_of_verse: Verse 1}
 [G]Well I know I’m not the best looking guy in the world

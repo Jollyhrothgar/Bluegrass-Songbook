@@ -1,6 +1,6 @@
 {meta: title Senses}
 {meta: artist Ray Price}
-{meta: writer Larry Bastian and Eugene Ellsworth}
+{meta: composer Larry Bastian and Eugene Ellsworth}
 
 {start_of_verse: Verse 1}
 [C]One chance taken from the [G7]hands of [C]time

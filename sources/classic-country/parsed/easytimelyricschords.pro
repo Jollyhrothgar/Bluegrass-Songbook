@@ -1,6 +1,6 @@
 {meta: title Easy Time}
 {meta: artist Eddy Raven}
-{meta: writer Eddy Raven and David Powelson}
+{meta: composer Eddy Raven and David Powelson}
 
 {start_of_verse: Verse 1}
 [G]I realize that we don't talk [Dm]enough

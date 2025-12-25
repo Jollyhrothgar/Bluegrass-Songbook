@@ -1,6 +1,6 @@
 {meta: title Who's Counting}
 {meta: artist Ronnie Milsap}
-{meta: writer Kye Fleming and Dennis Morgan}
+{meta: composer Kye Fleming and Dennis Morgan}
 
 {start_of_verse: Verse 1}
 [G]I guess you [Am]wonder what's become of me well I'm [G]doing fine

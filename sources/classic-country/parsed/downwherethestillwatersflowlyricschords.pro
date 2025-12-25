@@ -1,6 +1,6 @@
 {meta: title Down Where The Still Waters Flow}
 {meta: artist J.D. Crowe}
-{meta: writer Pete Roberts}
+{meta: composer Pete Roberts}
 
 {start_of_verse: Verse 1}
 [C]Dark shadows always were with [G7]me

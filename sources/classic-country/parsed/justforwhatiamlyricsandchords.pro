@@ -1,6 +1,6 @@
 {meta: title Just For What I Am}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G]Blue ain't just a word [C]it's a [G]feeling 

@@ -1,6 +1,6 @@
 {meta: title New Cut Road}
 {meta: artist Bobby Bare}
-{meta: writer Guy Clark}
+{meta: composer Guy Clark}
 
 {start_of_verse: Verse 1}
 [G]Coalman Bonner was a fiddle playing fool

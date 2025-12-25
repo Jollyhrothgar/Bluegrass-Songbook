@@ -1,6 +1,6 @@
 {meta: title If The World Ran Out Of Love Tonight}
 {meta: artist Jim Ed Brown and Helen Cornelius}
-{meta: writer Michael Garvin, Blake Mevis, Steve Wilson, Kelly Wilson}
+{meta: composer Michael Garvin, Blake Mevis, Steve Wilson, Kelly Wilson}
 
 {start_of_verse: Verse 1}
 [G]If the world ran out [D7]of love [G]tonight

@@ -1,6 +1,6 @@
 {meta: title Four Poster Bed}
 {meta: artist Brenda Lee}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]It was just some boards of rough cut pine 

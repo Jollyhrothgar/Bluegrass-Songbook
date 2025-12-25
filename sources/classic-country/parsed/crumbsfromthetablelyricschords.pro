@@ -1,6 +1,6 @@
 {meta: title Crumbs From The Table}
 {meta: artist Connie Smith}
-{meta: writer Barbara Miller}
+{meta: composer Barbara Miller}
 
 {start_of_verse: Verse 1}
 [G]Lord bless your [D7]children who walk [G]in [C]perfection

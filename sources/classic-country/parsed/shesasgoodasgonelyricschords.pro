@@ -1,6 +1,6 @@
 {meta: title She's As Good As Gone}
 {meta: artist Charlie Pride}
-{meta: writer David Wills and Charles Quillen}
+{meta: composer David Wills and Charles Quillen}
 
 {start_of_verse: Verse 1}
 [C]She's so close that I could touch her but she's a [F]million miles [C]away

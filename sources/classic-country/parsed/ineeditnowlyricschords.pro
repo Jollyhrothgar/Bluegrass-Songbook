@@ -1,6 +1,6 @@
 {meta: title I Need It Now}
 {meta: artist Johnny Rodriguez}
-{meta: writer Curly Putman and Glenn Martin}
+{meta: composer Curly Putman and Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]Oh it feels so good [F]here with you

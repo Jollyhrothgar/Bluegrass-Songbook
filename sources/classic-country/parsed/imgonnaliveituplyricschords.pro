@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Live It Up}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Don Rich}
+{meta: composer Buck Owens and Don Rich}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna live it up so you can live it [A7]down

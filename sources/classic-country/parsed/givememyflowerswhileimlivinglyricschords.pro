@@ -1,6 +1,6 @@
 {meta: title Give Me My Flowers While I'm Living}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Louise Certain, Gladys Stacey, Elvin Bigger}
+{meta: composer Louise Certain, Gladys Stacey, Elvin Bigger}
 
 {start_of_verse: Verse 1}
 [C]In this world today while we're [G7]living

@@ -1,6 +1,6 @@
 {meta: title The Sermon On The Mount}
 {meta: artist Merle Haggard}
-{meta: writer Hank Williams and Merle Haggard}
+{meta: composer Hank Williams and Merle Haggard}
 
 {start_of_verse: Verse 1}
 [G]A man sat on a mountainside a [C]carpenter by trade

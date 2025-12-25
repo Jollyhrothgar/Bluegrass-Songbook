@@ -1,6 +1,6 @@
 {meta: title Can't Get Too Much Of A Good Thing}
 {meta: artist Lee Greenwood}
-{meta: writer Dennis Morgan and J.D. Martin}
+{meta: composer Dennis Morgan and J.D. Martin}
 
 {start_of_verse: Verse 1}
 [C]Mornings like [F]this were [Dm]made for [C]holding you clos[F]er [Dm]   [G7]

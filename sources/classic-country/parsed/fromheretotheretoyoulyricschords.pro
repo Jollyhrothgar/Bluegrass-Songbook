@@ -1,6 +1,6 @@
 {meta: title From Here to There to You}
 {meta: artist Hank Locklin}
-{meta: writer Pete McKinley and Larry Lee Smith}
+{meta: composer Pete McKinley and Larry Lee Smith}
 
 {start_of_verse: Verse 1}
 [G]From here to [D7]there to [G]you  my [C]letter is on its [G]way

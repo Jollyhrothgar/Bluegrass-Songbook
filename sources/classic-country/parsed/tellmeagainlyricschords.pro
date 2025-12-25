@@ -1,6 +1,6 @@
 {meta: title Tell Me Again}
 {meta: artist Billy Walker}
-{meta: writer Jerry Crutchfield}
+{meta: composer Jerry Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]Tell me [A#7]again how [A7]I'll soon forget you

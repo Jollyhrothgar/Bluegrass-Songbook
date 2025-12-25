@@ -1,6 +1,6 @@
 {meta: title Dark Moon}
 {meta: artist Jim Reeves}
-{meta: writer Ned Miller}
+{meta: composer Ned Miller}
 
 {start_of_verse: Verse 1}
 [G]Dark moon a way up high up in the sky

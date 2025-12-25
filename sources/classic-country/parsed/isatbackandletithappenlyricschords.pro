@@ -1,6 +1,6 @@
 {meta: title I Sat Back And Let It Happen}
 {meta: artist Don Gibson}
-{meta: writer Paul Hampton}
+{meta: composer Paul Hampton}
 
 {start_of_verse: Verse 1}
 [C]Well he took my woman [F]away from [C]me

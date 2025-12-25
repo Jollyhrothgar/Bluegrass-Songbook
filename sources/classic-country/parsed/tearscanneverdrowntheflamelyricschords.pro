@@ -1,6 +1,6 @@
 {meta: title Tears Can Never Drown The Flame}
 {meta: artist Slim Whitman}
-{meta: writer Steve Nelson and Gene Douglas}
+{meta: composer Steve Nelson and Gene Douglas}
 
 {start_of_verse: Verse 1}
 [C]Oh a million tears can never drown the flame that's in my [D7]heart

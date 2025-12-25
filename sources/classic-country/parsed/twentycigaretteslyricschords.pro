@@ -1,6 +1,6 @@
 {meta: title Twenty Cigarettes}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Mel Tillis and Buck Peddy}
+{meta: composer Mel Tillis and Buck Peddy}
 
 {start_of_verse: Verse 1}
 [G]Now when I was a young boy I remember [D7]back

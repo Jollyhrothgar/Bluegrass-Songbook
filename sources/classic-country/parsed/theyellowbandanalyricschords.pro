@@ -1,6 +1,6 @@
 {meta: title The Yellow Bandana}
 {meta: artist Faron Young}
-{meta: writer Steve Karliski, Larry Kolber, Al Gordoni}
+{meta: composer Steve Karliski, Larry Kolber, Al Gordoni}
 
 {start_of_verse: Verse 1}
 This is [C]the story [G7]of a Yellow [C]Bandana

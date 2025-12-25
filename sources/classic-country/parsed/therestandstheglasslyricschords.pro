@@ -1,6 +1,6 @@
 {meta: title There Stands The Glass}
 {meta: artist Webb Pierce}
-{meta: writer Russ Hull, Mary Jean Shurtz, Audrey Grisham}
+{meta: composer Russ Hull, Mary Jean Shurtz, Audrey Grisham}
 
 {start_of_verse: Verse 1}
 [C]There stands the glass 

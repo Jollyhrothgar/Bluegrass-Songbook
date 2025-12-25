@@ -1,6 +1,6 @@
 {meta: title She's No Lady}
 {meta: artist Gene Watson}
-{meta: writer Paul Weber}
+{meta: composer Paul Weber}
 
 {start_of_verse: Verse 1}
 [C]Tonight I hold the one I love far [F]from the one at [C]home

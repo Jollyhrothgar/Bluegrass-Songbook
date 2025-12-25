@@ -1,6 +1,6 @@
 {meta: title From Here to Forever}
 {meta: artist Kris Kristofferson}
-{meta: writer Billy Swan, Glen Clark, Kris Kristofferson}
+{meta: composer Billy Swan, Glen Clark, Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [C]Cool shadows fall through the [F]moonlight

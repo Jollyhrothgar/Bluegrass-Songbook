@@ -1,6 +1,6 @@
 {meta: title Hands On The Wheel}
 {meta: artist Willie Nelson}
-{meta: writer Bill Callery}
+{meta: composer Bill Callery}
 
 {start_of_verse: Verse 1}
 [G]At a time when the world seems to be [C]spinning 

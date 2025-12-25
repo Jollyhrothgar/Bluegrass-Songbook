@@ -1,6 +1,6 @@
 {meta: title Could I Be Falling In Love}
 {meta: artist Jim Reeves}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [G]I feel very strange there's evidence of  [Em]a [C]radical [D7]change

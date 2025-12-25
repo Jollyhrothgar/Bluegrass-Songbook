@@ -1,6 +1,6 @@
 {meta: title I'm Remembering}
 {meta: artist Johnny Paycheck}
-{meta: writer Aubrey Mayhew}
+{meta: composer Aubrey Mayhew}
 
 {start_of_verse: Verse 1}
 [C]I'm remembering when I smiled like [G7]this

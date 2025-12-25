@@ -1,6 +1,6 @@
 {meta: title The Kind Of Woman I’ve Got}
 {meta: artist Hank Williams Jr.}
-{meta: writer Danny Walls}
+{meta: composer Danny Walls}
 
 {start_of_verse: Verse 1}
 [G]Well the very first thing I hear in the morning is get up

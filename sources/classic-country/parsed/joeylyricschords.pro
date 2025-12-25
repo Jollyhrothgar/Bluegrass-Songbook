@@ -1,6 +1,6 @@
 {meta: title Joey}
 {meta: artist Tammy Wynette}
-{meta: writer Don Chapel}
+{meta: composer Don Chapel}
 
 {start_of_verse: Verse 1}
 [C]Outside the sun is shining it's such a [G7]pretty [C]day

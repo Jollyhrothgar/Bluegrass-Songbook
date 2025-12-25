@@ -1,6 +1,6 @@
 {meta: title These Arms Of Mine}
 {meta: artist Billy Walker}
-{meta: writer Jerry Crutchfield}
+{meta: composer Jerry Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]Still [G7]reaching for [C]you

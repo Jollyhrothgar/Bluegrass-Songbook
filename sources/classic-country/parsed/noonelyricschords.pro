@@ -1,6 +1,6 @@
 {meta: title No One}
 {meta: artist Brenda Lee}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [C]No one ever kissed me the way that you [E7]do  [F]

@@ -1,6 +1,6 @@
 {meta: title Somebody's Gonna Lose}
 {meta: artist Ricky Van Shelton}
-{meta: writer Larry Butler and Mark Sherrill}
+{meta: composer Larry Butler and Mark Sherrill}
 
 {start_of_verse: Verse 1}
 [C]Somebody's staying out much longer than they [Am]should

@@ -1,6 +1,6 @@
 {meta: title Oh Christmas Candle}
 {meta: artist Doyle Lawson}
-{meta: writer Tom T. Hall and Dixie Hall}
+{meta: composer Tom T. Hall and Dixie Hall}
 
 {start_of_verse: Verse 1}
 [G]Oh Christmas candle please light up the way

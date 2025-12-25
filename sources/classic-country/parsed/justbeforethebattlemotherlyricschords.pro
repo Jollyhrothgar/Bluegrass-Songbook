@@ -1,6 +1,6 @@
 {meta: title Just Before The Battle Mother}
 {meta: artist Marty Robbins}
-{meta: writer George F. Root}
+{meta: composer George F. Root}
 
 {start_of_verse: Verse 1}
 [G]Just before the battle [C]mother

@@ -1,6 +1,6 @@
 {meta: title I Wouldn't Want You Any Other Way}
 {meta: artist Wanda Jackson}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]I can't put my [F]finger on this [C]love of ours[G7]

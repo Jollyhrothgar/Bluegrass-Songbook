@@ -1,6 +1,6 @@
 {meta: title Don't Forget To Thank The Lord}
 {meta: artist John Anderson}
-{meta: writer John Anderson and John Rich}
+{meta: composer John Anderson and John Rich}
 
 {start_of_verse: Verse 1}
 [C]I see sad sad face in [A#7]faraway places [F]scattered all around the [C]world

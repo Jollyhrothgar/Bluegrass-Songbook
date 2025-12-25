@@ -1,6 +1,6 @@
 {meta: title Hard Times}
 {meta: artist Moe Bandy}
-{meta: writer Ed Penney, Tom Benjamin, Hugh Moffatt}
+{meta: composer Ed Penney, Tom Benjamin, Hugh Moffatt}
 
 {start_of_verse: Verse 1}
 [C]She reads all the ads in the paper each [G7]day

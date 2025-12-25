@@ -1,6 +1,6 @@
 {meta: title You Never Want To Love Me}
 {meta: artist Hank Locklin}
-{meta: writer Carl Belew}
+{meta: composer Carl Belew}
 
 {start_of_verse: Verse 1}
 [F]You never wanna kiss me you never wanna love [C]me

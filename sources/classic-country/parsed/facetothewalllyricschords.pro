@@ -1,6 +1,6 @@
 {meta: title Face To The Wall}
 {meta: artist Faron Young}
-{meta: writer Bill Anderson and Faron Young}
+{meta: composer Bill Anderson and Faron Young}
 
 {start_of_verse: Verse 1}
 [G]Was I [D7]farther from your conscience standing face to the [G]wall

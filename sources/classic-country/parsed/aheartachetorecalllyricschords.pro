@@ -1,6 +1,6 @@
 {meta: title A Heartache To Recall}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Kit Carson and Hawkshaw Hawkins}
+{meta: composer Kit Carson and Hawkshaw Hawkins}
 
 {start_of_verse: Verse 1}
 [C]The love I gave you you [E7]didn’t want at [A7]all

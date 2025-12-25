@@ -1,6 +1,6 @@
 {meta: title Big Hair}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G]My baby's got [C]big hair

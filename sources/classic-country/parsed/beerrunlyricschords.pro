@@ -1,6 +1,6 @@
 {meta: title Beer Run}
 {meta: artist Garth Brooks with George Jones}
-{meta: writer Kim Williams, Kent Blazy, Keith Anderson}
+{meta: composer Kim Williams, Kent Blazy, Keith Anderson}
 
 {start_of_verse: Verse 1}
 [G]Twenty-five minutes past quitting time

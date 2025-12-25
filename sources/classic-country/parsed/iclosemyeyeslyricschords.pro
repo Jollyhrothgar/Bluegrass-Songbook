@@ -1,6 +1,6 @@
 {meta: title I Close My Eyes}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Wayne Walker}
+{meta: composer Webb Pierce and Wayne Walker}
 
 {start_of_verse: Verse 1}
 [C]I saw you in another's arms last [G7]night

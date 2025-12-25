@@ -1,6 +1,6 @@
 {meta: title Christmas Time Back Home}
 {meta: artist The Country Gentlemen}
-{meta: writer John Duffey and Ann Streeter}
+{meta: composer John Duffey and Ann Streeter}
 
 {start_of_verse: Verse 1}
 [G]Back up in the mountains in the old home town of [C]mine

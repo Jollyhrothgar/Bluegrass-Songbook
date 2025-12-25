@@ -1,6 +1,6 @@
 {meta: title Dream On (She'll Break Your Heart)}
 {meta: artist Jim Ed Brown with Maxine and Bonnie}
-{meta: writer Billy Sherrill and Kelso Herston}
+{meta: composer Billy Sherrill and Kelso Herston}
 
 {start_of_verse: Verse 1}
 [G]I met a girl and her eyes were blue 

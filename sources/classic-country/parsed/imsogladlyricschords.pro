@@ -1,6 +1,6 @@
 {meta: title I’m So Glad}
 {meta: artist Doyle Lawson}
-{meta: writer Lester Williams and W.A. McKinney}
+{meta: composer Lester Williams and W.A. McKinney}
 
 {start_of_verse: Verse 1}
 [C]I’m so glad my Savior came 

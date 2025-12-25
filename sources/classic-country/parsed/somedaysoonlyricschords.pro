@@ -1,6 +1,6 @@
 {meta: title Someday Soon}
 {meta: artist Suzy Bogguss}
-{meta: writer Ian Tyson}
+{meta: composer Ian Tyson}
 
 {start_of_verse: Verse 1}
 [C]There's a young man [Am]that I know whose [F]age is twenty-[C]one

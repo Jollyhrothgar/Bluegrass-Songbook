@@ -1,6 +1,6 @@
 {meta: title You've Never Been In Love With You}
 {meta: artist Vern Gosdin}
-{meta: writer Tim Russell, Tony Russell, Vern Gosdin, Johnny Conn}
+{meta: composer Tim Russell, Tony Russell, Vern Gosdin, Johnny Conn}
 
 {start_of_verse: Verse 1}
 [C]You’re telling me that I’ll [F]make it just fine

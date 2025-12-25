@@ -1,6 +1,6 @@
 {meta: title I Wouldn't Know Where To Begin}
 {meta: artist Jeannie Seely}
-{meta: writer Bobby Bare and Charlie Williams}
+{meta: composer Bobby Bare and Charlie Williams}
 
 {start_of_verse: Verse 1}
 [G]There's someone else 

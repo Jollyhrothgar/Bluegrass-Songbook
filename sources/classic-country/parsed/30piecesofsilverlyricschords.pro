@@ -1,6 +1,6 @@
 {meta: title 30 Pieces of Silver}
 {meta: artist Hank Williams Sr.}
-{meta: writer Odell McLeod}
+{meta: composer Odell McLeod}
 
 {start_of_verse: Verse 1}
 [C]Tis a sad but true [F]story  from the bible it [C]came

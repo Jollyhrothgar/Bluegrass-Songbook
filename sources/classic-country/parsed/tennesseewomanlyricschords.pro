@@ -1,6 +1,6 @@
 {meta: title Tennessee Woman}
 {meta: artist Tanya Tucker}
-{meta: writer Jim Webb}
+{meta: composer Jim Webb}
 
 {start_of_verse: Verse 1}
 [C]Lay me down on a porch at midnight

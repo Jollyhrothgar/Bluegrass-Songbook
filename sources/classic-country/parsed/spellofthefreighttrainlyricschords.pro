@@ -1,6 +1,6 @@
 {meta: title Spell Of The Freight Train}
 {meta: artist Charlie Pride}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]The wild birds are [G7]flyin' [F]high wide and [C]free

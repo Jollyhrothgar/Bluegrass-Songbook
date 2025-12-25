@@ -1,6 +1,6 @@
 {meta: title You Can't Make A Heel Toe The Mark}
 {meta: artist Wanda Jackson}
-{meta: writer Ray Pennington and Don Reno}
+{meta: composer Ray Pennington and Don Reno}
 
 {start_of_verse: Verse 1}
 [G]They warned me not to fall in love [C]with you 

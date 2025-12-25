@@ -1,6 +1,6 @@
 {meta: title Wabash Cannonball}
 {meta: artist Hank Thompson}
-{meta: writer W.M. Kindt}
+{meta: composer W.M. Kindt}
 
 {start_of_verse: Verse 1}
 [C]From the great Atlantic ocean 

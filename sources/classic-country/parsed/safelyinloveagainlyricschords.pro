@@ -1,6 +1,6 @@
 {meta: title Safely In Love Again}
 {meta: artist Faron Young}
-{meta: writer Ned Miller and Susan Miller}
+{meta: composer Ned Miller and Susan Miller}
 
 {start_of_verse: Verse 1}
 [C]I thought I’d remember 

@@ -1,6 +1,6 @@
 {meta: title Waiting In School}
 {meta: artist Ricky Nelson}
-{meta: writer Johnny Burnette and Dorsey Burnette}
+{meta: composer Johnny Burnette and Dorsey Burnette}
 
 {start_of_verse: Verse 1}
 [C]I've been a-waiting in school all day long

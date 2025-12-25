@@ -1,6 +1,6 @@
 {meta: title There'll Be No Other}
 {meta: artist Buck Owens}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]There'll be no [F]ot[C]her to make me [G7]cry 

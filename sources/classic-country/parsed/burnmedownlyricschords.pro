@@ -1,6 +1,6 @@
 {meta: title Burn Me Down}
 {meta: artist Marty Stuart}
-{meta: writer Don Sessions and Eddie Miller}
+{meta: composer Don Sessions and Eddie Miller}
 
 {start_of_verse: Verse 1}
 [C]Your lips hold a wild [Am]desire

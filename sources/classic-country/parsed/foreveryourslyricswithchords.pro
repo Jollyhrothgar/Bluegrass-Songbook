@@ -1,6 +1,6 @@
 {meta: title Forever Yours}
 {meta: artist Marty Robbins}
-{meta: writer Don Winters}
+{meta: composer Don Winters}
 
 {start_of_verse: Verse 1}
 [C]You are so [Em]wonderful just to [Am]be with and to [C]talk to

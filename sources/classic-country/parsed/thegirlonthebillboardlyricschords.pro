@@ -1,6 +1,6 @@
 {meta: title The Girl on the Billboard}
 {meta: artist Del Reeves}
-{meta: writer Hank Mills}
+{meta: composer Hank Mills}
 
 {start_of_verse: Verse 1}
 [C]Doo da doo doo doo  a doo da doo doo doo

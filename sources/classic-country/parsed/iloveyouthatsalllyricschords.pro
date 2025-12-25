@@ -1,6 +1,6 @@
 {meta: title I Love You That's All}
 {meta: artist Tracy Byrd}
-{meta: writer Chris Crawford and Tom Kimmel}
+{meta: composer Chris Crawford and Tom Kimmel}
 
 {start_of_verse: Verse 1}
 [C]I don't need to [G7]go on pre[Am]tending[G7] 

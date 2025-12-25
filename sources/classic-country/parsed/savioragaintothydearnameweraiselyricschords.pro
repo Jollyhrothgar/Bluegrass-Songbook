@@ -1,6 +1,6 @@
 {meta: title Savior Again To Thy Dear Name We Raise}
 {meta: artist Dottie West}
-{meta: writer John Ellerton and Edward Hopkins}
+{meta: composer John Ellerton and Edward Hopkins}
 
 {start_of_verse: Verse 1}
 [C]Savior again to [G7]Thy dear [C]name [G7]we [C]raise

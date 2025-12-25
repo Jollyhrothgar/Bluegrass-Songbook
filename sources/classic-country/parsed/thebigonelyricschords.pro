@@ -1,6 +1,6 @@
 {meta: title The Big One}
 {meta: artist George Strait}
-{meta: writer Gerry House and Devon O'Day}
+{meta: composer Gerry House and Devon O'Day}
 
 {start_of_verse: Verse 1}
 [C]Without a warning you're [G7]outta control

@@ -1,6 +1,6 @@
 {meta: title Kentucky}
 {meta: artist The Everly Brothers}
-{meta: writer Karl Davis}
+{meta: composer Karl Davis}
 
 {start_of_verse: Verse 1}
 [G]Kentucky  you are the dearest land outside of heaven to [D7]me

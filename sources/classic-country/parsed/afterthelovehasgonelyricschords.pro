@@ -1,6 +1,6 @@
 {meta: title After The Love Has Gone}
 {meta: artist Roy Orbison}
-{meta: writer David Foster, Jay Graydon, William B. Champlin}
+{meta: composer David Foster, Jay Graydon, William B. Champlin}
 
 {start_of_verse: Verse 1}
 [G]When love's light [C]slowly starts to [G]fade 

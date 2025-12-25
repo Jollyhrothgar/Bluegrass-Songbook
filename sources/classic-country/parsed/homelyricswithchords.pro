@@ -1,6 +1,6 @@
 {meta: title Home}
 {meta: artist Joe Diffie}
-{meta: writer Fred Lehner and Andy Spooner}
+{meta: composer Fred Lehner and Andy Spooner}
 
 {start_of_verse: Verse 1}
 [C]The only the thing I see ahead 

@@ -1,6 +1,6 @@
 {meta: title If I Could Come Back}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis and A. R. Peddy}
+{meta: composer Mel Tillis and A. R. Peddy}
 
 {start_of_verse: Verse 1}
 [C]If I could come back  when I'll leave this [F]world

@@ -1,6 +1,6 @@
 {meta: title Cruisin'}
 {meta: artist Alabama}
-{meta: writer Jeff Cook, Vern Dant, Ted Hewitt}
+{meta: composer Jeff Cook, Vern Dant, Ted Hewitt}
 
 {start_of_verse: Verse 1}
 [G]Hello baby I'll be by to pick you up at [C]eight

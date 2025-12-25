@@ -1,6 +1,6 @@
 {meta: title Big Spike Hammer}
 {meta: artist The Bluegrass Album Band}
-{meta: writer Bobby Osborne and Pete Goble}
+{meta: composer Bobby Osborne and Pete Goble}
 
 {start_of_verse: Verse 1}
 [G]Can't you hear the ripple of my [Em]big spike hammer

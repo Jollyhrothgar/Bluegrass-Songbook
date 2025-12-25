@@ -1,6 +1,6 @@
 {meta: title She's No Angel}
 {meta: artist Kitty Wells}
-{meta: writer Wanda Ballman and J.W. Arnold}
+{meta: composer Wanda Ballman and J.W. Arnold}
 
 {start_of_verse: Verse 1}
 [G]You'll see here there at the bar across the [D7]room

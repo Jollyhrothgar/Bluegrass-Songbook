@@ -1,6 +1,6 @@
 {meta: title Don't Ever Sell Your Saddle}
 {meta: artist Randy Travis}
-{meta: writer Tim Kribble and Brian Whiteside}
+{meta: composer Tim Kribble and Brian Whiteside}
 
 {start_of_verse: Verse 1}
 [C]Daddy [F]should've been a [C]preacher man cause [F]everybody loved to hear him speak

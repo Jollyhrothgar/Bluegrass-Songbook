@@ -1,6 +1,6 @@
 {meta: title Let's Get Drunk And Be Somebody}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Chuck Hall}
+{meta: composer Hank Thompson and Chuck Hall}
 
 {start_of_verse: Verse 1}
 [G]Let's get drunk and be somebody 

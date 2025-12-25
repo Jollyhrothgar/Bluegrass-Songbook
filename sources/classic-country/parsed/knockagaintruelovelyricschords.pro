@@ -1,6 +1,6 @@
 {meta: title Knock Again True Love}
 {meta: artist Lefty Frizzell}
-{meta: writer Jerry Jeff Walker}
+{meta: composer Jerry Jeff Walker}
 
 {start_of_verse: Verse 1}
 [C]To every boy and every girl 

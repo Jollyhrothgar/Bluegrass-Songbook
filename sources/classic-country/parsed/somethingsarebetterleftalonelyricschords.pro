@@ -1,6 +1,6 @@
 {meta: title Some Things Are Better Left Alone}
 {meta: artist Ricky Van Shelton}
-{meta: writer Roger Murrah and Larry Shell}
+{meta: composer Roger Murrah and Larry Shell}
 
 {start_of_verse: Verse 1}
 [G7]Every [C]time I stir the [C7]ashes

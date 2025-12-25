@@ -1,6 +1,6 @@
 {meta: title Happy Trails}
 {meta: artist Randy Travis}
-{meta: writer Dale Evans}
+{meta: composer Dale Evans}
 
 {start_of_verse: Verse 1}
 [C]Some trails are [A7]happy ones

@@ -1,6 +1,6 @@
 {meta: title One More Time}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]I wonder what the power is that you hold over [F]me

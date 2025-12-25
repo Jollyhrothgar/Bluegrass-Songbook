@@ -1,6 +1,6 @@
 {meta: title I Wish It Had Been A Dream}
 {meta: artist Don Gibson}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]We were [G7]alone last [C]night pretending wrong [G7]is [C]right

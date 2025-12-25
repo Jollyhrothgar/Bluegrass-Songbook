@@ -1,6 +1,6 @@
 {meta: title I Got Home Just In Time To Say Goodbye}
 {meta: artist Ronnie Milsap}
-{meta: writer Wayne Kemp and Bill Emerson}
+{meta: composer Wayne Kemp and Bill Emerson}
 
 {start_of_verse: Verse 1}
 [C]I woke up a thousand [F]miles from home this [C]morning

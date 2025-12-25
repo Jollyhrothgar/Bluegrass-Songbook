@@ -1,6 +1,6 @@
 {meta: title It's Just My Luck}
 {meta: artist Connie Smith}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [G]It's just my [D7]luck to live when I'd much [G]rather die

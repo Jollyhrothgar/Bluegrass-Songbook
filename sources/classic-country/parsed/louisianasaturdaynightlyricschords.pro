@@ -1,6 +1,6 @@
 {meta: title Louisiana Saturday Night}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]Waiting in the front yard sitting on a [G7]log

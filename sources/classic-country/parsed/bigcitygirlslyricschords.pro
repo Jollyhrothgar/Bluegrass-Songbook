@@ -1,6 +1,6 @@
 {meta: title Big City Girls}
 {meta: artist Carl Belew}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [C]Now big city girls drive big fine cars 

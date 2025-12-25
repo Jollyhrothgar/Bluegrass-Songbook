@@ -1,6 +1,6 @@
 {meta: title A Gift Of Love}
 {meta: artist The Bluegrass Cardinals}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [C]Whip-poor-wills and daffodils are [F]pretty things

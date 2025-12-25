@@ -1,6 +1,6 @@
 {meta: title He Knows What I’m Crying About}
 {meta: artist Jeannie Seely}
-{meta: writer George Jones}
+{meta: composer George Jones}
 
 {start_of_verse: Verse 1}
 [G]You think I’m not going through

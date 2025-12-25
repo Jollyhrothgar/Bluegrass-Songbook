@@ -1,6 +1,6 @@
 {meta: title If You Believe}
 {meta: artist George Jones}
-{meta: writer Darrell Edwards}
+{meta: composer Darrell Edwards}
 
 {start_of_verse: Verse 1}
 [G]Oh the promise of tomorrow will banish all your sorrow

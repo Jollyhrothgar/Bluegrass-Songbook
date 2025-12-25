@@ -1,6 +1,6 @@
 {meta: title Too Late To Worry To Blue To Cry}
 {meta: artist Ronnie Milsap}
-{meta: writer Al Dexter}
+{meta: composer Al Dexter}
 
 {start_of_verse: Verse 1}
 [G]I broke your heart dear I was [C]untrue

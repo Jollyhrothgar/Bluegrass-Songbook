@@ -1,6 +1,6 @@
 {meta: title Telling My Troubles}
 {meta: artist Wilburn Brothers}
-{meta: writer Gene McCown}
+{meta: composer Gene McCown}
 
 {start_of_verse: Verse 1}
 [C]When the sun goes away [C7]and the street lights come [F]on

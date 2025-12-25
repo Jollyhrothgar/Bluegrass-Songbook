@@ -1,6 +1,6 @@
 {meta: title Gone Crazy}
 {meta: artist Merle Haggard}
-{meta: writer Bonnie Owens and Merly Haggard}
+{meta: composer Bonnie Owens and Merly Haggard}
 
 {start_of_verse: Verse 1}
 [G]Well you took my love for [C]granted

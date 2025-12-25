@@ -1,6 +1,6 @@
 {meta: title One Word Song}
 {meta: artist Randy Travis}
-{meta: writer Max T. Barnes and John Jarrard}
+{meta: composer Max T. Barnes and John Jarrard}
 
 {start_of_verse: Verse 1}
 [G]When I'm feelin' [D7]lonely and I'm [Em]far [D7]away from [C]home

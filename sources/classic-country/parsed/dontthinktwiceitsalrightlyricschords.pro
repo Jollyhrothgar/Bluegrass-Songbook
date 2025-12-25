@@ -1,6 +1,6 @@
 {meta: title Don't Think Twice It's Alright}
 {meta: artist Bobby Bare}
-{meta: writer Bob Dylan}
+{meta: composer Bob Dylan}
 
 {start_of_verse: Verse 1}
 [C]There ain't no use to sit [G7]and wonder why [Am]babe 

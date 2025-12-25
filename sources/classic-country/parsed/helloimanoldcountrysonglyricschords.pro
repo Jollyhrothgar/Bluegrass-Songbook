@@ -1,6 +1,6 @@
 {meta: title Hello I'm an Old Country Song}
 {meta: artist Dale Watson}
-{meta: writer Chris Wall and Dale Watson}
+{meta: composer Chris Wall and Dale Watson}
 
 {start_of_verse: Verse 1}
 Hello I'm an Old Country Song

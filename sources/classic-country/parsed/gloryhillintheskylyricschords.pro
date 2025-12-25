@@ -1,6 +1,6 @@
 {meta: title Glory Hill In The Sky}
 {meta: artist Jimmie Davis}
-{meta: writer Jimmie Davis and Billy Joe Norris}
+{meta: composer Jimmie Davis and Billy Joe Norris}
 
 {start_of_verse: Verse 1}
 [G]Lord I'm just a pilgrim [C]wondering down here [G]below

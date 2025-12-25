@@ -1,6 +1,6 @@
 {meta: title Someone's Gotta Cry}
 {meta: artist Jean Shepard}
-{meta: writer Don Bowman}
+{meta: composer Don Bowman}
 
 {start_of_verse: Verse 1}
 [C]Someone's gotta [F]cry when love is [C]over 

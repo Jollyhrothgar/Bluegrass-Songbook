@@ -1,6 +1,6 @@
 {meta: title Jesus Help Me To Stand}
 {meta: artist Alison Krauss}
-{meta: writer Ron Block}
+{meta: composer Ron Block}
 
 {start_of_verse: Verse 1}
 [C]Through trials [F]troubles and [C]care

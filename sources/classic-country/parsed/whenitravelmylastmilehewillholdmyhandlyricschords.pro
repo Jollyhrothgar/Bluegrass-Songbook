@@ -1,6 +1,6 @@
 {meta: title When I Travel My Last Mile (He Will Hold My Hand)}
 {meta: artist Rhonda Vincent}
-{meta: writer Henry J. Donohue}
+{meta: composer Henry J. Donohue}
 
 {start_of_verse: Verse 1}
 [G]Some day when I travel my last [C]mile [G]here 

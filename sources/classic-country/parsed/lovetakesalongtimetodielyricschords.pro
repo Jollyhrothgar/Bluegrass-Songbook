@@ -1,6 +1,6 @@
 {meta: title Love Takes A Long Time To Die}
 {meta: artist Ronnie Milsap}
-{meta: writer Geoff Morgan}
+{meta: composer Geoff Morgan}
 
 {start_of_verse: Verse 1}
 [C]It's not [Em]over when you [Am]stop crying[C]

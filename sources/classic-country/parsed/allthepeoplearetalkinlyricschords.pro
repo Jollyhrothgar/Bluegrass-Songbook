@@ -1,6 +1,6 @@
 {meta: title All The People Are Talkin'}
 {meta: artist John Anderson}
-{meta: writer Fred Carter Jr.}
+{meta: composer Fred Carter Jr.}
 
 {start_of_verse: Verse 1}
 [C]All of the people are talkin'

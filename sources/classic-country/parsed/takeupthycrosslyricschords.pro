@@ -1,6 +1,6 @@
 {meta: title Take Up Thy Cross}
 {meta: artist The Traditional Grass}
-{meta: writer Alfred Ackley}
+{meta: composer Alfred Ackley}
 
 {start_of_verse: Verse 1}
 [G]I walked one day along a country [D7]road 

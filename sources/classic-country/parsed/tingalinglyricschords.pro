@@ -1,6 +1,6 @@
 {meta: title Ting-A-Ling}
 {meta: artist Buddy Holly}
-{meta: writer Ahmet Ertegun}
+{meta: composer Ahmet Ertegun}
 
 {start_of_verse: Verse 1}
 Recor[A]ded by Buddy Holly

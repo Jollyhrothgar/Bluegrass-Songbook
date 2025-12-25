@@ -1,6 +1,6 @@
 {meta: title You Can't Take It With You When You Go}
 {meta: artist Rhonda Vincent}
-{meta: writer Curtis Wright and T.J. Knight}
+{meta: composer Curtis Wright and T.J. Knight}
 
 {start_of_verse: Verse 1}
 [G]Watch where you're standing  [C]when you close that [G]door [C]

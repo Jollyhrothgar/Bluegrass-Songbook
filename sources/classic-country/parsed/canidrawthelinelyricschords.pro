@@ -1,6 +1,6 @@
 {meta: title Can I Draw The Line}
 {meta: artist Carl Butler}
-{meta: writer Carl Butler and Mildred Burk}
+{meta: composer Carl Butler and Mildred Burk}
 
 {start_of_verse: Verse 1}
 [C]We meet here in secret on the dark side of [F]town

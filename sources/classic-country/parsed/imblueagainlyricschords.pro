@@ -1,6 +1,6 @@
 {meta: title I’m Blue Again}
 {meta: artist Patsy Cline}
-{meta: writer W.S. Stevenson, Clyde C. Beam, Charles L. Jiles}
+{meta: composer W.S. Stevenson, Clyde C. Beam, Charles L. Jiles}
 
 {start_of_verse: Verse 1}
 [C]I'm blue again my friends [C7]all said I'd [F]be

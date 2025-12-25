@@ -1,6 +1,6 @@
 {meta: title As Long As The Winds Blow}
 {meta: artist Jim and Jesse}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]No one can ever hold the wind

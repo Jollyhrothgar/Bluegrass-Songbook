@@ -1,6 +1,6 @@
 {meta: title Down In The Boondocks}
 {meta: artist Billy Joe Royal}
-{meta: writer Joe South}
+{meta: composer Joe South}
 
 {start_of_verse: Verse 1}
 [G]Down in the boondocks [C]down in the boondocks

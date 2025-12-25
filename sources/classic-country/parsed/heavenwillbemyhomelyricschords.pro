@@ -1,6 +1,6 @@
 {meta: title Heaven Will Be My Home}
 {meta: artist Kitty Wells}
-{meta: writer A.B. Phillips}
+{meta: composer A.B. Phillips}
 
 {start_of_verse: Verse 1}
 [F]Heaven will be my home some sweet [C]day

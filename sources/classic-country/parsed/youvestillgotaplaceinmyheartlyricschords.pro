@@ -1,6 +1,6 @@
 {meta: title You've Still Got A Place In My Heart}
 {meta: artist Merle Haggard}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [C]If the one you'd think is true 

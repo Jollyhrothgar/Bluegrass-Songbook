@@ -1,6 +1,6 @@
 {meta: title You'll Never Walk Alone}
 {meta: artist Elvis Presley}
-{meta: writer Oscar Hammerstein II and Richard Rodgers}
+{meta: composer Oscar Hammerstein II and Richard Rodgers}
 
 {start_of_verse: Verse 1}
 [C]When you walk through a [Am]storm hold your [G7]head up high

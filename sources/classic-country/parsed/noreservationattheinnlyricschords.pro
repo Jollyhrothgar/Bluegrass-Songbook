@@ -1,6 +1,6 @@
 {meta: title No Reservation At The Inn}
 {meta: artist Statler Brothers}
-{meta: writer Harold Reid and Don Reid}
+{meta: composer Harold Reid and Don Reid}
 
 {start_of_verse: Verse 1}
 [G]No reservation at the [C]inn

@@ -1,6 +1,6 @@
 {meta: title Heartbreak Highway}
 {meta: artist Keith Whitley}
-{meta: writer Don Pfrimmer, Lonnie Wilson, Brent Mason}
+{meta: composer Don Pfrimmer, Lonnie Wilson, Brent Mason}
 
 {start_of_verse: Verse 1}
 [C]Arms were hot and sweaty hope my heart is ready

@@ -1,6 +1,6 @@
 {meta: title Softly And Tenderly}
 {meta: artist Jim Reeves}
-{meta: writer Will L. Thompson}
+{meta: composer Will L. Thompson}
 
 {start_of_verse: Verse 1}
 [G]Softly and tenderly [C]Jesus is [G]calling

@@ -1,6 +1,6 @@
 {meta: title Heaven Bound (I'm Ready)}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [G]Now I know just where I'm going

@@ -1,6 +1,6 @@
 {meta: title High On A Mountain}
 {meta: artist Bill Monroe}
-{meta: writer Alex Campbell and Ola Belle Reed}
+{meta: composer Alex Campbell and Ola Belle Reed}
 
 {start_of_verse: Verse 1}
 [G]As I looked at the [D7]valleys down be[G]low 

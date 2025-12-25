@@ -1,6 +1,6 @@
 {meta: title I Don't Go Back Anymore}
 {meta: artist George Jones}
-{meta: writer Mike Reid and Troy Harold Seals}
+{meta: composer Mike Reid and Troy Harold Seals}
 
 {start_of_verse: Verse 1}
 [G]I'm over my anger but that's about all

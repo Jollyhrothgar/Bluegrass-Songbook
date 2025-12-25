@@ -1,6 +1,6 @@
 {meta: title Carry Me Back To The Lone Prairie}
 {meta: artist Sons of the Pioneers}
-{meta: writer Carson J. Robison}
+{meta: composer Carson J. Robison}
 
 {start_of_verse: Verse 1}
 [C]I'm a roving [Dm]cowboy  [G7]far away from [C]home

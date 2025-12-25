@@ -1,6 +1,6 @@
 {meta: title Which Side’s The Wrong Side}
 {meta: artist The Wilburn Brothers}
-{meta: writer Loretta Lynn and Lorene Allen}
+{meta: composer Loretta Lynn and Lorene Allen}
 
 {start_of_verse: Verse 1}
 [C]I've heard you've been saying things [G7]about my part of [C]town

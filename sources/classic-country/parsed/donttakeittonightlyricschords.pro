@@ -1,6 +1,6 @@
 {meta: title Don't Take It Tonight}
 {meta: artist Ronnie Milsap}
-{meta: writer Troy Seals and Mike Reid}
+{meta: composer Troy Seals and Mike Reid}
 
 {start_of_verse: Verse 1}
 [F]There's no easy way to ask [C]you

@@ -1,6 +1,6 @@
 {meta: title Reserve Me A Table}
 {meta: artist Wendell Roach}
-{meta: writer Ron McMunn}
+{meta: composer Ron McMunn}
 
 {start_of_verse: Verse 1}
 [G]Reserve me a [G7]table  for two  for [C]tonight

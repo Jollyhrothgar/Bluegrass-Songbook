@@ -1,6 +1,6 @@
 {meta: title Christmas Day At My House}
 {meta: artist Patty Loveless}
-{meta: writer Emory Gordy and Patty Loveless}
+{meta: composer Emory Gordy and Patty Loveless}
 
 {start_of_verse: Verse 1}
 [C]It's Christmas day at my house

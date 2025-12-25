@@ -1,6 +1,6 @@
 {meta: title Gloryland Way}
 {meta: artist Carl Smith}
-{meta: writer J.S. Torbelt}
+{meta: composer J.S. Torbelt}
 
 {start_of_verse: Verse 1}
 [C]I'm in the way the [F]bright and shining [C]way 

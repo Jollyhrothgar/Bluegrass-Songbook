@@ -1,6 +1,6 @@
 {meta: title Hank And Lefty Raised My Country Soul}
 {meta: artist Moe Bandy}
-{meta: writer Dallas Frazier and A.L. Owens}
+{meta: composer Dallas Frazier and A.L. Owens}
 
 {start_of_verse: Verse 1}
 [C]Daddy had a 1941 Ford I was just bout [F]ten years [C]old

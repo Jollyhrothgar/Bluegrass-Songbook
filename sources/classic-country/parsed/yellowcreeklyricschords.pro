@@ -1,6 +1,6 @@
 {meta: title Yellow Creek}
 {meta: artist John Anderson}
-{meta: writer Ken McDuffie}
+{meta: composer Ken McDuffie}
 
 {start_of_verse: Verse 1}
 [Am]Oh those [C]Yellow Creek waters bathed the sons and daughters

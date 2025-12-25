@@ -1,6 +1,6 @@
 {meta: title I'll Be True To You}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Alan Rhody}
+{meta: composer Alan Rhody}
 
 {start_of_verse: Verse 1}
 [C]They met [G7]upon a blue [F]moon

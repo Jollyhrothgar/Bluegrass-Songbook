@@ -1,6 +1,6 @@
 {meta: title Lying Time Again chords}
 {meta: artist Mel Tillis}
-{meta: writer Chance Walker}
+{meta: composer Chance Walker}
 
 {start_of_verse: Verse 1}
 [G]Well it’s lying time [C]again 

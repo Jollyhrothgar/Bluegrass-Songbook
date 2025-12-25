@@ -1,6 +1,6 @@
 {meta: title The Lonely Know My Secret}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery}
+{meta: composer Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [G]There's a secret behind the [D7]smile you see

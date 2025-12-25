@@ -1,6 +1,6 @@
 {meta: title I Guess I'll Live}
 {meta: artist David Houston}
-{meta: writer Glenn Sutton and Tillman Franks}
+{meta: composer Glenn Sutton and Tillman Franks}
 
 {start_of_verse: Verse 1}
 [C]I always thought if [G7]I lost you I'd [C]die

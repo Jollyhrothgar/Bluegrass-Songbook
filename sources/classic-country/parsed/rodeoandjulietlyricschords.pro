@@ -1,6 +1,6 @@
 {meta: title Rodeo And Juliet}
 {meta: artist Garth Brooks}
-{meta: writer Bryan Kennedy and Garth Brooks}
+{meta: composer Bryan Kennedy and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G]Rod[C]eo and Juli[G]et

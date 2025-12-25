@@ -1,6 +1,6 @@
 {meta: title Under Your Spell Again}
 {meta: artist Buck Owens}
-{meta: writer Dusty Rhodes and Buck Owens}
+{meta: composer Dusty Rhodes and Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]You've got me under your spell again saying those things [F]again

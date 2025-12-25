@@ -1,6 +1,6 @@
 {meta: title Cheap Whiskey}
 {meta: artist Patty Loveless}
-{meta: writer Jim Rushing and Emory Gordy}
+{meta: composer Jim Rushing and Emory Gordy}
 
 {start_of_verse: Verse 1}
 [G]He sits all alone in his [Em]easy chair 

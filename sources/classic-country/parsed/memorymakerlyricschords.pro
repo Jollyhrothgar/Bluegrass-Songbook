@@ -1,6 +1,6 @@
 {meta: title Memory Maker}
 {meta: artist Mel Tillis}
-{meta: writer Mel Tillis and Ken Westberry}
+{meta: composer Mel Tillis and Ken Westberry}
 
 {start_of_verse: Verse 1}
 [G]She's a [Am]heart breaker she's a love [G]taker

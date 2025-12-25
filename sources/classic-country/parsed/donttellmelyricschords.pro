@@ -1,6 +1,6 @@
 {meta: title Don't Tell Me}
 {meta: artist Jim Reeves}
-{meta: writer Jim Reeves, Vernon Dee, Ginger Willis, Hal Willis}
+{meta: composer Jim Reeves, Vernon Dee, Ginger Willis, Hal Willis}
 
 {start_of_verse: Verse 1}
 [C]Don't tell me her eyes are bright as [G7]diamonds

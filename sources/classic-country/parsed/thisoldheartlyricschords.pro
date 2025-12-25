@@ -1,6 +1,6 @@
 {meta: title This Old Heart}
 {meta: artist Buck Owens}
-{meta: writer Eddie Miller and Bob Morris}
+{meta: composer Eddie Miller and Bob Morris}
 
 {start_of_verse: Verse 1}
 [G]This old heart has been [D7]around 

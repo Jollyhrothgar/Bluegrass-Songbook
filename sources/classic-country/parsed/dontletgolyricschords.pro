@@ -1,6 +1,6 @@
 {meta: title Don't Let Go}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jesse Stone}
+{meta: composer Jesse Stone}
 
 {start_of_verse: Verse 1}
 [C]Hear that whistle it's ten o'clock 

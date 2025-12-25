@@ -1,6 +1,6 @@
 {meta: title The Whole World Comes To Me}
 {meta: artist Jack Greene}
-{meta: writer Betty Walker}
+{meta: composer Betty Walker}
 
 {start_of_verse: Verse 1}
 [C]The pages of the past are filled

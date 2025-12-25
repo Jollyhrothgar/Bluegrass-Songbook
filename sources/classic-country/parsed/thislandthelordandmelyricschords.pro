@@ -1,6 +1,6 @@
 {meta: title This Land The Lord And Me}
 {meta: artist Bill Anderson}
-{meta: writer Jerry Chesnutt}
+{meta: composer Jerry Chesnutt}
 
 {start_of_verse: Verse 1}
 [G]I never knew my mother and the closest that I came

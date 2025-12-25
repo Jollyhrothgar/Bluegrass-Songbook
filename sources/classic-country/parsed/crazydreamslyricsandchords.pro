@@ -1,6 +1,6 @@
 {meta: title Crazy Dreams}
 {meta: artist Johnny Bush}
-{meta: writer Sanger D. Shafer, Donny Kees, Aaron Barker}
+{meta: composer Sanger D. Shafer, Donny Kees, Aaron Barker}
 
 {start_of_verse: Verse 1}
 [F]Cra[G7]zy [C]dreams I still [A#7]believe [F]in

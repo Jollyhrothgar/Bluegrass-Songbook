@@ -1,6 +1,6 @@
 {meta: title What I Didn’t Do}
 {meta: artist George Jones}
-{meta: writer Wood Arnold Newton and Michael Noble}
+{meta: composer Wood Arnold Newton and Michael Noble}
 
 {start_of_verse: Verse 1}
 [G]I didn't cheat and [D7]I didn't lie 

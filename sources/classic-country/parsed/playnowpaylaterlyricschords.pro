@@ -1,6 +1,6 @@
 {meta: title Play Now Pay Later}
 {meta: artist Faron Young}
-{meta: writer Clyde Pitts, Len Pitts, Cile Davis}
+{meta: composer Clyde Pitts, Len Pitts, Cile Davis}
 
 {start_of_verse: Verse 1}
 [C]Another night has found me on the [G7]road to wrong again

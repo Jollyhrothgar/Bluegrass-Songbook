@@ -1,6 +1,6 @@
 {meta: title Georgia Mules And Country Boys}
 {meta: artist The Osborne Brothers}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]Georgia mules and [G]country boys are [D7]fading fast [G]away

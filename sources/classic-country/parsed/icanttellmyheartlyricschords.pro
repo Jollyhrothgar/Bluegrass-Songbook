@@ -1,6 +1,6 @@
 {meta: title I Can't Tell My Heart}
 {meta: artist Faron Young}
-{meta: writer Marvin McCullough}
+{meta: composer Marvin McCullough}
 
 {start_of_verse: Verse 1}
 [C]I can't tell my heart that you don't love [G7]me 

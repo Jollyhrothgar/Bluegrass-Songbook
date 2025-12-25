@@ -1,6 +1,6 @@
 {meta: title Everytime I See You Smiling}
 {meta: artist Ricky Nelson}
-{meta: writer Dorsey Burnette and Joe Osborn}
+{meta: composer Dorsey Burnette and Joe Osborn}
 
 {start_of_verse: Verse 1}
 [F]Everytime I [G7]see you [C]smiling

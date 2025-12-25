@@ -1,6 +1,6 @@
 {meta: title The Show's Almost Over}
 {meta: artist Cal Smith}
-{meta: writer Chuck Howard}
+{meta: composer Chuck Howard}
 
 {start_of_verse: Verse 1}
 [G7]He walked up to the bandstand 

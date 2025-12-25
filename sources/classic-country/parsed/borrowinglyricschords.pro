@@ -1,6 +1,6 @@
 {meta: title Borrowing}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Eddie Nesbitt}
+{meta: composer Eddie Nesbitt}
 
 {start_of_verse: Verse 1}
 [C]Tonight I’m only borrowing a [F]heart that isn’t [C]mine

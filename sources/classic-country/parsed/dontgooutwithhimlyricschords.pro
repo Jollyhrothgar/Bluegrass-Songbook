@@ -1,6 +1,6 @@
 {meta: title Don't Go Out With Him}
 {meta: artist Tanya Tucker}
-{meta: writer Radney M. Foster and Bill Lloyd}
+{meta: composer Radney M. Foster and Bill Lloyd}
 
 {start_of_verse: Verse 1}
 [G]Baby your heart is in serious danger

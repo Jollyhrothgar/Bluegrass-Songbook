@@ -1,6 +1,6 @@
 {meta: title If I Stay}
 {meta: artist Tracy Byrd}
-{meta: writer Dean Dillon and Larry Bastian}
+{meta: composer Dean Dillon and Larry Bastian}
 
 {start_of_verse: Verse 1}
 [C]Lately the ties that bind [F]feel like a [G7]noose around my [C]neck [F]   [G7]

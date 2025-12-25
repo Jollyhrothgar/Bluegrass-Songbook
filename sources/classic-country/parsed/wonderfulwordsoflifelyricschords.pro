@@ -1,6 +1,6 @@
 {meta: title Wonderful Words Of Life}
 {meta: artist Statler Brothers}
-{meta: writer Philip Paul Bliss}
+{meta: composer Philip Paul Bliss}
 
 {start_of_verse: Verse 1}
 [C]Sing them over [G7]again to me wonderful words of [C]life

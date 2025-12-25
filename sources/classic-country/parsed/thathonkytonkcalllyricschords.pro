@@ -1,6 +1,6 @@
 {meta: title That Honky Tonk Call}
 {meta: artist Leroy Van Dyke}
-{meta: writer Bob House and Billy Stone}
+{meta: composer Bob House and Billy Stone}
 
 {start_of_verse: Verse 1}
 [C]I love that neon flashing and [D7]Lord I love a crowd

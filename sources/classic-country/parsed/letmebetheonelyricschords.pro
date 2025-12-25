@@ -1,6 +1,6 @@
 {meta: title Let Me Be The One}
 {meta: artist Hank Locklin}
-{meta: writer W.S. Stevenson, Paul Blevins, Joseph Hobson}
+{meta: composer W.S. Stevenson, Paul Blevins, Joseph Hobson}
 
 {start_of_verse: Verse 1}
 [C]Let Me Be The One to walk with you

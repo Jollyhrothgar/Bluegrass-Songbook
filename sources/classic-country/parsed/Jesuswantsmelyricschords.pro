@@ -1,6 +1,6 @@
 {meta: title Jesus Wants Me}
 {meta: artist George Jones}
-{meta: writer George Jones and Eddie Noack}
+{meta: composer George Jones and Eddie Noack}
 
 {start_of_verse: Verse 1}
 [G]I was alone in the darkness 

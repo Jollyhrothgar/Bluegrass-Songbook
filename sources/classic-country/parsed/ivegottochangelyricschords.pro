@@ -1,6 +1,6 @@
 {meta: title I've Got To Change}
 {meta: artist Stonewall Jackson}
-{meta: writer Stonewall Jackson and Benny Joy}
+{meta: composer Stonewall Jackson and Benny Joy}
 
 {start_of_verse: Verse 1}
 [C]I've got to change and to stop my running [G7]round

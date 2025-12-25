@@ -1,6 +1,6 @@
 {meta: title Known Only To Him}
 {meta: artist Elvis Presley}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [G]Known only to Him are the [C]great hidden [G]secrets

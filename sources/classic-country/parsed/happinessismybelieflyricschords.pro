@@ -1,6 +1,6 @@
 {meta: title Happiness Is My Belief}
 {meta: artist Bob Luman}
-{meta: writer Jean Chapel}
+{meta: composer Jean Chapel}
 
 {start_of_verse: Verse 1}
 [C]Happiness happiness [F]is my belief

@@ -1,6 +1,6 @@
 {meta: title All Her Little Loving Ways}
 {meta: artist Ferlin Husky}
-{meta: writer Milton Blackford and Dan Wilson}
+{meta: composer Milton Blackford and Dan Wilson}
 
 {start_of_verse: Verse 1}
 [G]I wonder if she [D]thinks of me or [Am]ever needs someone

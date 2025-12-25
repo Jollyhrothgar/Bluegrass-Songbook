@@ -1,6 +1,6 @@
 {meta: title I'm Long Gone}
 {meta: artist Wilburn Brothers}
-{meta: writer Buddy Ring}
+{meta: composer Buddy Ring}
 
 {start_of_verse: Verse 1}
 [C]I'm a long [Am]gone that's what I'll [C]be

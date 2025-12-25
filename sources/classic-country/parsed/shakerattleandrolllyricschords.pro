@@ -1,6 +1,6 @@
 {meta: title Shake Rattle And Roll}
 {meta: artist Patsy Cline}
-{meta: writer Charles Calhoun}
+{meta: composer Charles Calhoun}
 
 {start_of_verse: Verse 1}
 [C]Get out that kitchen and rattle those pots and pans

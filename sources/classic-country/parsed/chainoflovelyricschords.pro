@@ -1,6 +1,6 @@
 {meta: title Chain Of Love}
 {meta: artist Charley Pride}
-{meta: writer Jonnie Barnett and Rory Feek}
+{meta: composer Jonnie Barnett and Rory Feek}
 
 {start_of_verse: Verse 1}
 [C]He was driving home one evening in his beat up Pontiac

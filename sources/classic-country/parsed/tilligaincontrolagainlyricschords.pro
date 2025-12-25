@@ -1,6 +1,6 @@
 {meta: title Till I Gain Control Again}
 {meta: artist Emmylou Harris}
-{meta: writer Rodney Crowell}
+{meta: composer Rodney Crowell}
 
 {start_of_verse: Verse 1}
 [G]Just like the sun [D7]over the mountain [G]top

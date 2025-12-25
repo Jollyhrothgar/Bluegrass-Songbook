@@ -1,6 +1,6 @@
 {meta: title Rock And Roll Time}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson, Roger McGuinn, Bob Neuwirth}
+{meta: composer Kris Kristofferson, Roger McGuinn, Bob Neuwirth}
 
 {start_of_verse: Verse 1}
 [G]Do I look like a loser do I stand in your [C]way

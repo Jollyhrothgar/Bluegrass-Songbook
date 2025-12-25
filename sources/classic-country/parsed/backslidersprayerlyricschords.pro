@@ -1,6 +1,6 @@
 {meta: title Backslider's Prayer}
 {meta: artist Ty England}
-{meta: writer Bob Regan and Mark D. Sanders}
+{meta: composer Bob Regan and Mark D. Sanders}
 
 {start_of_verse: Verse 1}
 [G]He said I know this ain't the time or place but [Am]Lord I need to [A7]talk

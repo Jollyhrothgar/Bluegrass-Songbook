@@ -1,6 +1,6 @@
 {meta: title I've Waited All My Life For You}
 {meta: artist Reba McEntire}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [D7]Don't you [G]know that you're the one 

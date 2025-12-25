@@ -1,6 +1,6 @@
 {meta: title You Can't Make Old Friends}
 {meta: artist Kenny Rogers}
-{meta: writer Ryan Hanna King, Don Schlitz, Caitlyn Smith}
+{meta: composer Ryan Hanna King, Don Schlitz, Caitlyn Smith}
 
 {start_of_verse: Verse 1}
 [C]What will I [G]do when you are [Am]gone [F]who's gonna [G]tell me [C]the truth

@@ -1,6 +1,6 @@
 {meta: title Santa's Gonna Come In A Stagecoach}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Red Simpson}
+{meta: composer Buck Owens and Red Simpson}
 
 {start_of_verse: Verse 1}
 [G]Well I've been sorta worried about [C]Santa Claus this [G]year

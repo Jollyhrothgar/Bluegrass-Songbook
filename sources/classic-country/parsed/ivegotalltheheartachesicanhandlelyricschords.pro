@@ -1,6 +1,6 @@
 {meta: title I've Got All The Heartaches I Can Handle}
 {meta: artist Ernest Tubb}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]I just come into this bar to have a [G7]quick one

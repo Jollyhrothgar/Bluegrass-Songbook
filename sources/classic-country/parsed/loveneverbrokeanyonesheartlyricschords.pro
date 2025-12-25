@@ -1,6 +1,6 @@
 {meta: title Love Never Broke Anyone's Heart}
 {meta: artist Vince Gill}
-{meta: writer Jim Weatherly and Vince Gill}
+{meta: composer Jim Weatherly and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]You say your [F]heart has been [C]broken

@@ -1,6 +1,6 @@
 {meta: title Just In Case}
 {meta: artist The Forester Sisters}
-{meta: writer J.P. Pennington and Sonny LeMaire}
+{meta: composer J.P. Pennington and Sonny LeMaire}
 
 {start_of_verse: Verse 1}
 [G]I saw you walking down the street just the other day

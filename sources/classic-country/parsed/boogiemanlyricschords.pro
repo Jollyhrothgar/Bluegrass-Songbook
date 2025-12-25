@@ -1,6 +1,6 @@
 {meta: title Boogie Man}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Will Jennings}
+{meta: composer Clint Black and Will Jennings}
 
 {start_of_verse: Verse 1}
 [C]Next to Louisiana on the Texas side

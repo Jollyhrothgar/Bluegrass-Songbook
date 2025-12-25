@@ -1,6 +1,6 @@
 {meta: title Ode To Chet}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [C]When I bought this guitar it had [F]brand new strings

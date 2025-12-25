@@ -1,6 +1,6 @@
 {meta: title If I Never See Ireland Again}
 {meta: artist Red Steagall}
-{meta: writer Steve Spurgin}
+{meta: composer Steve Spurgin}
 
 {start_of_verse: Verse 1}
 [C]Molly stood crying her [G7]tears falling down 

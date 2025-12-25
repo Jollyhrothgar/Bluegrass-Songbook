@@ -1,6 +1,6 @@
 {meta: title Young Dreams}
 {meta: artist Elvis Presley}
-{meta: writer Aaron Schroeder and Martin Kalmanoff}
+{meta: composer Aaron Schroeder and Martin Kalmanoff}
 
 {start_of_verse: Verse 1}
 [G](Young dreams of [G]love young dreams of [D7]love)

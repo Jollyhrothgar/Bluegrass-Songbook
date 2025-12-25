@@ -1,6 +1,6 @@
 {meta: title Go Away}
 {meta: artist Lorrie Morgan}
-{meta: writer Stephony Smith, Cathy Majeski, Sunny Russ}
+{meta: composer Stephony Smith, Cathy Majeski, Sunny Russ}
 
 {start_of_verse: Verse 1}
 [C]Touche [F]touche

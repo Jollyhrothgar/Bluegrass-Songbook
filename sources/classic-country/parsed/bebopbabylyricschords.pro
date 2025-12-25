@@ -1,6 +1,6 @@
 {meta: title Be-bop Baby}
 {meta: artist Ricky Nelson}
-{meta: writer Pearl Lendhurst}
+{meta: composer Pearl Lendhurst}
 
 {start_of_verse: Verse 1}
 [F][C]Be-bop [G7]ba--by [C]be-bop baby [F]be-bop [F][C]ba--by

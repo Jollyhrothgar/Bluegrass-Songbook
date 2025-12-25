@@ -1,6 +1,6 @@
 {meta: title Pop A Top Again}
 {meta: artist Jim Ed Brown}
-{meta: writer Nat Stuckey}
+{meta: composer Nat Stuckey}
 
 {start_of_verse: Verse 1}
 [C]Pop A Top [F]Again  

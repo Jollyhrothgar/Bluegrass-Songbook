@@ -1,6 +1,6 @@
 {meta: title I Wouldn't Take Her To A Dog Fight}
 {meta: artist Charlie Walker}
-{meta: writer Larry Kingston and Troy Snow}
+{meta: composer Larry Kingston and Troy Snow}
 
 {start_of_verse: Verse 1}
 [C]My friend he fixed me up with a [D7]girl he said he knew

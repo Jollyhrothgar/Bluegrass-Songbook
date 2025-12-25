@@ -1,6 +1,6 @@
 {meta: title Shoes Of A Fool}
 {meta: artist Charlie Walker}
-{meta: writer Jim Coleman and Jimmy Day}
+{meta: composer Jim Coleman and Jimmy Day}
 
 {start_of_verse: Verse 1}
 [C]See them walking down the street

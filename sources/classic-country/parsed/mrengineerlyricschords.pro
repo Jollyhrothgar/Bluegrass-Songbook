@@ -1,6 +1,6 @@
 {meta: title Mr. Engineer}
 {meta: artist J.D. Crowe}
-{meta: writer Jimmy Martin and Paul Williams}
+{meta: composer Jimmy Martin and Paul Williams}
 
 {start_of_verse: Verse 1}
 [G]Engi[C]neer reach [D7]up and pull the [G]whistle

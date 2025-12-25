@@ -1,6 +1,6 @@
 {meta: title Misty Memories}
 {meta: artist Brenda Lee}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]Misty [F]memories  linger [C]on 

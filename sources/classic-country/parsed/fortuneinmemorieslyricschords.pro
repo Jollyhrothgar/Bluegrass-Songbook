@@ -1,6 +1,6 @@
 {meta: title Fortune In Memories}
 {meta: artist Ernest Tubb}
-{meta: writer Cindy Walker and Lou Wayne}
+{meta: composer Cindy Walker and Lou Wayne}
 
 {start_of_verse: Verse 1}
 [G]I've got fortunes in memories 

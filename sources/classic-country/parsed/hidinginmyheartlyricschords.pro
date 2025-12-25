@@ -1,6 +1,6 @@
 {meta: title Hiding In My Heart}
 {meta: artist Hank Locklin}
-{meta: writer Ken Hodges}
+{meta: composer Ken Hodges}
 
 {start_of_verse: Verse 1}
 [C]You were hiding in my heart 

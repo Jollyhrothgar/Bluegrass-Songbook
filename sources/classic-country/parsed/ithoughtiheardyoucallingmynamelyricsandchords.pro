@@ -1,6 +1,6 @@
 {meta: title I Thought I Heard You Calling My Name}
 {meta: artist George Strait}
-{meta: writer Lee Emerson}
+{meta: composer Lee Emerson}
 
 {start_of_verse: Verse 1}
 [C]I said goodbye to [C7]you this [F]mornin'

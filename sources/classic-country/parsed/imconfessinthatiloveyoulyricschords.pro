@@ -1,6 +1,6 @@
 {meta: title I’m Confessin’ (That I love you)}
 {meta: artist Frank Ifield}
-{meta: writer Doc Daugherty, Al J. Neiburg, Ellis Reynolds}
+{meta: composer Doc Daugherty, Al J. Neiburg, Ellis Reynolds}
 
 {start_of_verse: Verse 1}
 [G]I'm confessin' that I love [F]you

@@ -1,6 +1,6 @@
 {meta: title All I Can Handle At Home}
 {meta: artist Moe Bandy}
-{meta: writer Jim Owen}
+{meta: composer Jim Owen}
 
 {start_of_verse: Verse 1}
 [C]Came in here to do some drinkin' [F]not what you're thinkin'

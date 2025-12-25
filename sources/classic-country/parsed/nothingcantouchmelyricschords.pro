@@ -1,6 +1,6 @@
 {meta: title Nothing Can Touch Me}
 {meta: artist Doyle Lawson}
-{meta: writer Lois Begly Dow}
+{meta: composer Lois Begly Dow}
 
 {start_of_verse: Verse 1}
 [C]Many times burdens drive me to my [C7]knees

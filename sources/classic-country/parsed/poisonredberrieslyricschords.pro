@@ -1,6 +1,6 @@
 {meta: title Poison Red Berries}
 {meta: artist Johnny Rodriguez}
-{meta: writer Mickey Newberry}
+{meta: composer Mickey Newberry}
 
 {start_of_verse: Verse 1}
 Poison Red Berries 

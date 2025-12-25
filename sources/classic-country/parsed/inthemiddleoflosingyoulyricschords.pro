@@ -1,6 +1,6 @@
 {meta: title In The Middle Of Losing You}
 {meta: artist Moe Bandy}
-{meta: writer Glenn Martin and Terry Henry}
+{meta: composer Glenn Martin and Terry Henry}
 
 {start_of_verse: Verse 1}
 [G]You no longer turn to me when [C]you need turnin' on

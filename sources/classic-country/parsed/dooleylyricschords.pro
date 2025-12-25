@@ -1,6 +1,6 @@
 {meta: title Dooley}
 {meta: artist Porter Wagoner}
-{meta: writer Mitch Jayne and Rodney Dillard}
+{meta: composer Mitch Jayne and Rodney Dillard}
 
 {start_of_verse: Verse 1}
 [G]Dooley was a [C]good old man [G]he lived below the [D7]mill

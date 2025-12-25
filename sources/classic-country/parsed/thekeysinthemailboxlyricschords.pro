@@ -1,6 +1,6 @@
 {meta: title The Key's in the Mailbox}
 {meta: artist Buck Owens}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Oh jealous me and careless you the odds were just too [G7]great

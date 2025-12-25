@@ -1,6 +1,6 @@
 {meta: title Your Angel Steps Out Of Heaven}
 {meta: artist George Jones}
-{meta: writer Jack Ripley}
+{meta: composer Jack Ripley}
 
 {start_of_verse: Verse 1}
 [G]You tell me you [D7]have married an [G]angel

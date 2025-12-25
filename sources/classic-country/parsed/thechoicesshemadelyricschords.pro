@@ -1,6 +1,6 @@
 {meta: title The Choices She Made Now}
 {meta: artist Charlie Pride}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [G]She didn't have to marry down so [C]far

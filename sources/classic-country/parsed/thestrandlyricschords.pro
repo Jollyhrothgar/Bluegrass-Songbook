@@ -1,6 +1,6 @@
 {meta: title The Strand}
 {meta: artist Statler Brothers}
-{meta: writer Lew DeWitt}
+{meta: composer Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [G]To every silver [B7]cowboy who [C]rode the silver [G]screen

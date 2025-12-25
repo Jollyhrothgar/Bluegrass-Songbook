@@ -1,6 +1,6 @@
 {meta: title Midnight Till Dawn}
 {meta: artist Kitty Wells}
-{meta: writer Sylvia Fricker Tyson}
+{meta: composer Sylvia Fricker Tyson}
 
 {start_of_verse: Verse 1}
 [C]I work every[G7]day in a [C]trucker's [F]cafe 

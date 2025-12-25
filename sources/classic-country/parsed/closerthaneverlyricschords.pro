@@ -1,6 +1,6 @@
 {meta: title Closer Than Ever}
 {meta: artist Tammy Wynette}
-{meta: writer Norro Wilson, Carmol Taylor, George Jones}
+{meta: composer Norro Wilson, Carmol Taylor, George Jones}
 
 {start_of_verse: Verse 1}
 [G7]Honey I'm home and at [C]last the day is [G7]over

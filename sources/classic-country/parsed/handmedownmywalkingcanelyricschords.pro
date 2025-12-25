@@ -1,6 +1,6 @@
 {meta: title Hand Me Down My Walking Cane}
 {meta: artist Jerry Lee Lewis}
-{meta: writer James Bland}
+{meta: composer James Bland}
 
 {start_of_verse: Verse 1}
 [G]Hand me down my walking cane

@@ -1,6 +1,6 @@
 {meta: title Got My Heart Set On You}
 {meta: artist John Conlee}
-{meta: writer Bud Reneau and Dobie Gray}
+{meta: composer Bud Reneau and Dobie Gray}
 
 {start_of_verse: Verse 1}
 [C]Ever since the day I met you 

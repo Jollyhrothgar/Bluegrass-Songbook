@@ -1,6 +1,6 @@
 {meta: title I Couldn't See}
 {meta: artist George Morgan}
-{meta: writer Tommy Hill and George Morgan}
+{meta: composer Tommy Hill and George Morgan}
 
 {start_of_verse: Verse 1}
 [C]I couldn’t see why everyone kept telling me

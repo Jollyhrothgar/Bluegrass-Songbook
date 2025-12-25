@@ -1,6 +1,6 @@
 {meta: title The model church}
 {meta: artist J.D. Crowe}
-{meta: writer Edwin O. Excell and John Yates}
+{meta: composer Edwin O. Excell and John Yates}
 
 {start_of_verse: Verse 1}
 [C]Well wife I've found a [F]model [C]church and worshiped there to[G7]day

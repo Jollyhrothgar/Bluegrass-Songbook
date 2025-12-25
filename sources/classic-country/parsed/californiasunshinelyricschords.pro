@@ -1,6 +1,6 @@
 {meta: title California Sunshine}
 {meta: artist Carl Smith}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Go West Young Man the signs all seem to say

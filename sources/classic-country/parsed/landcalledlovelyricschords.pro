@@ -1,6 +1,6 @@
 {meta: title Land Called Love}
 {meta: artist Faron Young}
-{meta: writer Billy Deaton, Len Pitts, Hilda Young}
+{meta: composer Billy Deaton, Len Pitts, Hilda Young}
 
 {start_of_verse: Verse 1}
 [C]There's a place where I've always [F]wanted to [C]go

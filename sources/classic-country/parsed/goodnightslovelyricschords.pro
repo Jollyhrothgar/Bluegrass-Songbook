@@ -1,6 +1,6 @@
 {meta: title Good Night's Love}
 {meta: artist Tammy Wynette}
-{meta: writer Chester Lester and Tim Dubois}
+{meta: composer Chester Lester and Tim Dubois}
 
 {start_of_verse: Verse 1}
 [C]What you need is a good night's [F]love

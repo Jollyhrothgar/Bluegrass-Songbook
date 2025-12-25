@@ -1,6 +1,6 @@
 {meta: title Yesterday}
 {meta: artist Roy Drusky}
-{meta: writer Carl Belew and Clyde Pitts}
+{meta: composer Carl Belew and Clyde Pitts}
 
 {start_of_verse: Verse 1}
 [F](Yester[C]day)

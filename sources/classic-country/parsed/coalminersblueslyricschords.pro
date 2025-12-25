@@ -1,6 +1,6 @@
 {meta: title Coal Miner’s Blues}
 {meta: artist Flatt and Scruggs}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]Some blues are just blues mine are the miner’s [C7]blues

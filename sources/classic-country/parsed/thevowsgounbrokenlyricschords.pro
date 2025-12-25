@@ -1,6 +1,6 @@
 {meta: title The Vows Go Unbroken}
 {meta: artist Kenny Rogers}
-{meta: writer Eric Kaz and Gary Burr}
+{meta: composer Eric Kaz and Gary Burr}
 
 {start_of_verse: Verse 1}
 [C]From the mo-[F]ment I [C]met you  [F]you made[G7] my life [C]complete

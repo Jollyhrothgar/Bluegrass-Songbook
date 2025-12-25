@@ -1,6 +1,6 @@
 {meta: title Home Away From Home}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew and Van Givens}
+{meta: composer Carl Belew and Van Givens}
 
 {start_of_verse: Verse 1}
 [C]I spent too many sleepless nights alone

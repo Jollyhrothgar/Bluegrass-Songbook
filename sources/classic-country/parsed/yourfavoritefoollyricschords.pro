@@ -1,6 +1,6 @@
 {meta: title Your Favorite Fool}
 {meta: artist Jack Greene}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Tell me [C]l-ies [G] and hurting things 

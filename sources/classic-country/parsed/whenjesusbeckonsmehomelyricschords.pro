@@ -1,6 +1,6 @@
 {meta: title When Jesus Beckons Me Home}
 {meta: artist Eddy Arnold}
-{meta: writer Gene Arnold[3/4 time]}
+{meta: composer Gene Arnold[3/4 time]}
 
 {start_of_verse: Verse 1}
 [G]What will my answer be what can I [C]say

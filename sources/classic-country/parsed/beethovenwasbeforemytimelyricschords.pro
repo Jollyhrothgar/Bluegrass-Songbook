@@ -1,6 +1,6 @@
 {meta: title Beethoven Was Before My Time}
 {meta: artist Moe Bandy}
-{meta: writer Jerry Dycke}
+{meta: composer Jerry Dycke}
 
 {start_of_verse: Verse 1}
 [G]One night while I was playin' at place [C]called The Big [G]Still

@@ -1,6 +1,6 @@
 {meta: title Down To My Last Teardrop}
 {meta: artist Tanya Tucker}
-{meta: writer Paul Davis}
+{meta: composer Paul Davis}
 
 {start_of_verse: Verse 1}
 [C]They said your love life's in trouble in a magazine I [E7]read

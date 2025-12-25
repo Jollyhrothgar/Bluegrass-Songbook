@@ -1,6 +1,6 @@
 {meta: title What Am I Gonna Do About You}
 {meta: artist Reba McEntire}
-{meta: writer Doug Gilmore, Bob Simon, Jim Allison}
+{meta: composer Doug Gilmore, Bob Simon, Jim Allison}
 
 {start_of_verse: Verse 1}
 [G]The kid down the street mows the grass every week

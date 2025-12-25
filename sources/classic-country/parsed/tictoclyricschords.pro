@@ -1,6 +1,6 @@
 {meta: title Tic Toc}
 {meta: artist Ricky Van Shelton}
-{meta: writer Troy Johnson and Brett Beavers}
+{meta: composer Troy Johnson and Brett Beavers}
 
 {start_of_verse: Verse 1}
 [G7]Lately we've been sleeping a little [C]farther apart

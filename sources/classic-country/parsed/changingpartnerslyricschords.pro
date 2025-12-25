@@ -1,6 +1,6 @@
 {meta: title Changing Partners}
 {meta: artist Patti Page}
-{meta: writer Larry Coleman [3/4 time]}
+{meta: composer Larry Coleman [3/4 time]}
 
 {start_of_verse: Verse 1}
 [G7]We were [C]waltzing together to a dreamy melo[F]dy

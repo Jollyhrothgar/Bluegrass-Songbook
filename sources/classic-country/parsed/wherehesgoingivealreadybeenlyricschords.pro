@@ -1,6 +1,6 @@
 {meta: title Where He's Going I've Already Been}
 {meta: artist Hank Williams Jr.}
-{meta: writer Earl Montgomery, Hank Williams Jr, Daryl Cartee}
+{meta: composer Earl Montgomery, Hank Williams Jr, Daryl Cartee}
 
 {start_of_verse: Verse 1}
 [G]Well I don't envy him at [C]all when I [D7]see him by your [G]side

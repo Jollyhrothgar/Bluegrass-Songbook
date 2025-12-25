@@ -1,6 +1,6 @@
 {meta: title What I Threw Away}
 {meta: artist Vern Gosdin}
-{meta: writer Doodle Owens, Dennis Knutson, Vern Gosdin}
+{meta: composer Doodle Owens, Dennis Knutson, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]She was so [F]innocent [C]she didn't know where to [G7]start

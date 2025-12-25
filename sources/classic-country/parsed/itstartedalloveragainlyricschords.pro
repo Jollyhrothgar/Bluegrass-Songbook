@@ -1,6 +1,6 @@
 {meta: title It Started All Over Again}
 {meta: artist Vern Gosdin}
-{meta: writer Jim Lusk, Shirl Milete, Gary S. Paxton}
+{meta: composer Jim Lusk, Shirl Milete, Gary S. Paxton}
 
 {start_of_verse: Verse 1}
 [C]We agreed it was over we'd both find [F]another

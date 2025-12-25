@@ -1,6 +1,6 @@
 {meta: title I'd Rather Fall In Love With You}
 {meta: artist Charly McClain}
-{meta: writer Jerry Hayes}
+{meta: composer Jerry Hayes}
 
 {start_of_verse: Verse 1}
 [C]I love the things you [Am]are

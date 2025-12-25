@@ -1,6 +1,6 @@
 {meta: title Stranger}
 {meta: artist Lefty Frizzell}
-{meta: writer Wayne P. Walker and Irene Stanton}
+{meta: composer Wayne P. Walker and Irene Stanton}
 
 {start_of_verse: Verse 1}
 [C]You were no stranger when he [G7]introduced you to me

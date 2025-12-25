@@ -1,6 +1,6 @@
 {meta: title The Conversion Of Ronnie Jones}
 {meta: artist Merle Haggard}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]Ronnie Jones decided to settle down 

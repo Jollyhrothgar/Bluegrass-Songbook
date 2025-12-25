@@ -1,6 +1,6 @@
 {meta: title It's Lonesome}
 {meta: artist Billy Walker}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]I've walked a million miles across this [C]floor

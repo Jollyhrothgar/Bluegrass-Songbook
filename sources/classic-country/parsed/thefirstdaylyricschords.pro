@@ -1,6 +1,6 @@
 {meta: title The First Day}
 {meta: artist Jack Greene}
-{meta: writer Roy Baham}
+{meta: composer Roy Baham}
 
 {start_of_verse: Verse 1}
 [C]This is the [F]first [G7]day of the rest of our [C]lives

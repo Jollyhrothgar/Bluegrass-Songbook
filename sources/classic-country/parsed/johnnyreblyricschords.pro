@@ -1,6 +1,6 @@
 {meta: title Johnny Reb}
 {meta: artist Johnny Horton}
-{meta: writer Merle Kilgore}
+{meta: composer Merle Kilgore}
 
 {start_of_verse: Verse 1}
 [C]You fought all the way Johnny Reb Johnny Reb

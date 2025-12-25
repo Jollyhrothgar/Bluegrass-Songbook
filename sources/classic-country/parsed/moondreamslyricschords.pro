@@ -1,6 +1,6 @@
 {meta: title Moondreams}
 {meta: artist Buddy Holly}
-{meta: writer Norman Petty}
+{meta: composer Norman Petty}
 
 {start_of_verse: Verse 1}
 [G]Strange things take place in my [B7]moondreams

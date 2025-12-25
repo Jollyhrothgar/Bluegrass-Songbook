@@ -1,6 +1,6 @@
 {meta: title Close To Linda}
 {meta: artist Billy Walker}
-{meta: writer Fred Foster}
+{meta: composer Fred Foster}
 
 {start_of_verse: Verse 1}
 [C]I don't mind the [F]winter rain [G7]when I'm hurting I can't [C]stand the pain

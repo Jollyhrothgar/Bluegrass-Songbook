@@ -1,6 +1,6 @@
 {meta: title Going Home}
 {meta: artist Keith Whitley}
-{meta: writer Troy Seals and John Schneider}
+{meta: composer Troy Seals and John Schneider}
 
 {start_of_verse: Verse 1}
 [G]Well I got a lot of friends on the west coast

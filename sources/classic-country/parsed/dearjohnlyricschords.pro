@@ -1,6 +1,6 @@
 {meta: title Dear John}
 {meta: artist Hank Williams}
-{meta: writer Aubrey Gass and Tex Ritter}
+{meta: composer Aubrey Gass and Tex Ritter}
 
 {start_of_verse: Verse 1}
 [C]Well when I woke up this mornin'

@@ -1,6 +1,6 @@
 {meta: title You Were Never Mine To Lose}
 {meta: artist Doug Stone}
-{meta: writer Kim Williams, Ron Harbin, Doug Stone}
+{meta: composer Kim Williams, Ron Harbin, Doug Stone}
 
 {start_of_verse: Verse 1}
 [C]I saw an old friend on my new job and he [D7]asked me about [Dm]you 

@@ -1,6 +1,6 @@
 {meta: title How Long Does It Take A Memory To Drown}
 {meta: artist Jim Ed Brown}
-{meta: writer Swany Cornette and Armenta Cornette}
+{meta: composer Swany Cornette and Armenta Cornette}
 
 {start_of_verse: Verse 1}
 [C]Say it's still snowing and the [G7]lines are [Dm]down

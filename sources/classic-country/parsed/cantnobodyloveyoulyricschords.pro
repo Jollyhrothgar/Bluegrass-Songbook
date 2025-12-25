@@ -1,6 +1,6 @@
 {meta: title Can’t Nobody Love You}
 {meta: artist Mickey Gilley}
-{meta: writer J. Lee}
+{meta: composer J. Lee}
 
 {start_of_verse: Verse 1}
 [C]Well can’t nobody [A7]love you if they [D7]don’t know [G7]who you [C]are

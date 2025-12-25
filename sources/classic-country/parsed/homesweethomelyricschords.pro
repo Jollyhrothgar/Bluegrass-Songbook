@@ -1,6 +1,6 @@
 {meta: title Home Sweet Home}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill and Larry Butler}
+{meta: composer Billy Sherrill and Larry Butler}
 
 {start_of_verse: Verse 1}
 [G]Woke up this morning with a [D7]smile

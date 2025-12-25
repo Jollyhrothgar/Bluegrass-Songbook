@@ -1,6 +1,6 @@
 {meta: title Something Unseen}
 {meta: artist Jack Greene}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]Before I [Em]go there's [Am]something [C]I must [F]know 

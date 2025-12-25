@@ -1,6 +1,6 @@
 {meta: title Dear Lord}
 {meta: artist Tracy Lawrence}
-{meta: writer Flip Anderson and Tracy Lawrence}
+{meta: composer Flip Anderson and Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [C]Lord You know that I'm no saint

@@ -1,6 +1,6 @@
 {meta: title Ain't Love A Hurting Thing}
 {meta: artist Carl Smith}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]Many times I find [F]myself [C]pretending

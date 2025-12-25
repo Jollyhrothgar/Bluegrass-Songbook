@@ -1,6 +1,6 @@
 {meta: title Everything I Used To Do}
 {meta: artist Gene Watson}
-{meta: writer Ernie Rowell}
+{meta: composer Ernie Rowell}
 
 {start_of_verse: Verse 1}
 [C]Smoked my first cigarette  [F]after being quit for [C]years

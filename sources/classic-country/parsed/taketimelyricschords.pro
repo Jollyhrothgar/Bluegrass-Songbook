@@ -1,6 +1,6 @@
 {meta: title Take Time}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis and Marijohn Wilkin}
+{meta: composer Mel Tillis and Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [C]Well if you haven’t found time to tell your girl

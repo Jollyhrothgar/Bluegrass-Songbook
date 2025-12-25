@@ -1,6 +1,6 @@
 {meta: title Heartbeat}
 {meta: artist Buddy Holly}
-{meta: writer Buddy Holly, Norman Petty, Bob Montgomery}
+{meta: composer Buddy Holly, Norman Petty, Bob Montgomery}
 
 {start_of_verse: Verse 1}
 [G]Heartbeat why do you [C]miss when my [D7]baby kisses [G]me

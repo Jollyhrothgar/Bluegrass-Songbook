@@ -1,6 +1,6 @@
 {meta: title Seven Years With The Wrong Woman}
 {meta: artist Eddy Arnold}
-{meta: writer Bob Miller}
+{meta: composer Bob Miller}
 
 {start_of_verse: Verse 1}
 [C]Seven years with the [F]wrong [C]woman

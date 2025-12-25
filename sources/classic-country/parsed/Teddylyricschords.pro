@@ -1,6 +1,6 @@
 {meta: title Teddy}
 {meta: artist Connie Francis}
-{meta: writer Paul Anka}
+{meta: composer Paul Anka}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]guy I want you to [E7]know

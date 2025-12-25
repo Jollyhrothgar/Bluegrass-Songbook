@@ -1,6 +1,6 @@
 {meta: title High Cotton}
 {meta: artist Alabama}
-{meta: writer Scott Anders &amp; Roger Murrah}
+{meta: composer Scott Anders &amp; Roger Murrah}
 
 {start_of_verse: Verse 1}
 High Cotton

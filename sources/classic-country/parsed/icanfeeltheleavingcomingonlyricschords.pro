@@ -1,6 +1,6 @@
 {meta: title I Can Feel The Leaving Coming On}
 {meta: artist Cal Smith}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]I didn’t sleep to good last night 

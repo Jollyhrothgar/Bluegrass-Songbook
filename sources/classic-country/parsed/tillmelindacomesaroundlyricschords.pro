@@ -1,6 +1,6 @@
 {meta: title Till Melinda Comes Around}
 {meta: artist Gene Watson}
-{meta: writer Glenn Ray}
+{meta: composer Glenn Ray}
 
 {start_of_verse: Verse 1}
 [C]When I think my [G7]world is all to[C]gether

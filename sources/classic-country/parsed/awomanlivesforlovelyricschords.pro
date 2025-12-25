@@ -1,6 +1,6 @@
 {meta: title A Woman Lives For Love}
 {meta: artist Wanda Jackson}
-{meta: writer George Richey, Glenn Sutton, Norro Wilson}
+{meta: composer George Richey, Glenn Sutton, Norro Wilson}
 
 {start_of_verse: Verse 1}
 [C]I don't mind waiting up [G7]for you late [C]hours

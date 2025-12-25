@@ -1,6 +1,6 @@
 {meta: title Hot Burning Flames}
 {meta: artist George Strait}
-{meta: writer Hank Cochran, Wayne Kemp, Mack Vickery}
+{meta: composer Hank Cochran, Wayne Kemp, Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]She left me almost burned out [C]I couldn't feel a [G]thing

@@ -1,6 +1,6 @@
 {meta: title I Don't Regret A Mile}
 {meta: artist Larry Sparks Brothers}
-{meta: writer Rusty Goodman}
+{meta: composer Rusty Goodman}
 
 {start_of_verse: Verse 1}
 [C]I don't regret a mile I've [F]traveled for the [C]Lord

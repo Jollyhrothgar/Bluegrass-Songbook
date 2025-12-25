@@ -1,6 +1,6 @@
 {meta: title I'll Never Shed Another Tear}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]I used to sit alone at night and worry [C]little [G]darling

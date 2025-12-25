@@ -1,6 +1,6 @@
 {meta: title You Got Gold}
 {meta: artist John Prine}
-{meta: writer Keith Sykes and John Prine}
+{meta: composer Keith Sykes and John Prine}
 
 {start_of_verse: Verse 1}
 [G]Is there ever enough space between us 

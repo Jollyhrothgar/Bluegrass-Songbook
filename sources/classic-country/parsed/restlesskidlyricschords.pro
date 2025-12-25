@@ -1,6 +1,6 @@
 {meta: title Restless Kid}
 {meta: artist Ricky Nelson}
-{meta: writer Johnny Cash}
+{meta: composer Johnny Cash}
 
 {start_of_verse: Verse 1}
 [G]I came in like a restless wind on a wagon train 

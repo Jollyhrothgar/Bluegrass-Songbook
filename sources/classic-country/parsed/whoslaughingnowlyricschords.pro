@@ -1,6 +1,6 @@
 {meta: title Who's Laughing Now}
 {meta: artist Ricky Van Shelton}
-{meta: writer Tom Littlefield, Rick Rowell, Mel Tillis Jr.}
+{meta: composer Tom Littlefield, Rick Rowell, Mel Tillis Jr.}
 
 {start_of_verse: Verse 1}
 [C]Who's [F]laughin' now who's havin' a [C]ball

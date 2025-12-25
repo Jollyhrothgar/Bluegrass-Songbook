@@ -1,6 +1,6 @@
 {meta: title Worth Watching}
 {meta: artist Johnny Lee}
-{meta: writer Trey Matthews and Tony Raymee}
+{meta: composer Trey Matthews and Tony Raymee}
 
 {start_of_verse: Verse 1}
 [Am]Fishing that old Frio River

@@ -1,6 +1,6 @@
 {meta: title She Didn't Say Why}
 {meta: artist Ricky Skaggs}
-{meta: writer Wayland Patton}
+{meta: composer Wayland Patton}
 
 {start_of_verse: Verse 1}
 [G7]Well I [C]don't believe I've ever felt so [F]lonely

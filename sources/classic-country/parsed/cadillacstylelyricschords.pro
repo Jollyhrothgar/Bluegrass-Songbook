@@ -1,6 +1,6 @@
 {meta: title Cadillac Style}
 {meta: artist Sammy Kershaw}
-{meta: writer Mark Petersen}
+{meta: composer Mark Petersen}
 
 {start_of_verse: Verse 1}
 [C]Well I ain't Burt Reynolds and I ain't Tom Selleck

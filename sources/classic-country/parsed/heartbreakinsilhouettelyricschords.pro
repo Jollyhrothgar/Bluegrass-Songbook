@@ -1,6 +1,6 @@
 {meta: title Heartbreak in Silhouette}
 {meta: artist Jim Reeves}
-{meta: writer Peggy Ann Manson, Allen McCoy, Carey Fraley}
+{meta: composer Peggy Ann Manson, Allen McCoy, Carey Fraley}
 
 {start_of_verse: Verse 1}
 [C]I listened to an old [G7]friend [F]describe the girl he'd [C]met

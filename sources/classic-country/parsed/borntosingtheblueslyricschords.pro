@@ -1,6 +1,6 @@
 {meta: title Born To Sing The Blues}
 {meta: artist Conway Twitty}
-{meta: writer recorded by Conway Twitty}
+{meta: composer recorded by Conway Twitty}
 
 {start_of_verse: Verse 1}
 [C]Born  [F]to [G7]sing the [F][C]blues

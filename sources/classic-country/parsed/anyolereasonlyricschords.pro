@@ -1,6 +1,6 @@
 {meta: title Any Ole Reason}
 {meta: artist Mark Chesnutt}
-{meta: writer Roger Springer, Slugger Morrissette, Mark Chesnutt}
+{meta: composer Roger Springer, Slugger Morrissette, Mark Chesnutt}
 
 {start_of_verse: Verse 1}
 [C]I used to come in here maybe once or twice a [C7]year

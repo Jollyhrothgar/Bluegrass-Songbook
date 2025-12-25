@@ -1,6 +1,6 @@
 {meta: title Neon Blue}
 {meta: artist The Mavericks}
-{meta: writer Pete Anderson and Kostas Lazarides}
+{meta: composer Pete Anderson and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [G]And when the [C]sun goes down [D7]your memory [C]still hanging [G]round[C]

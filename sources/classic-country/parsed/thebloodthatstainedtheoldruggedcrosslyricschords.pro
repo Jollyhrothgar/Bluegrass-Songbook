@@ -1,6 +1,6 @@
 {meta: title The Blood That Stained The Old Rugged Cross}
 {meta: artist Carl Smith}
-{meta: writer Albert Brumley}
+{meta: composer Albert Brumley}
 
 {start_of_verse: Verse 1}
 [C]On the cross of Calvary our blessed [F]Savior [C]died

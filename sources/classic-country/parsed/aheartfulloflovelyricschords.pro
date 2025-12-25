@@ -1,6 +1,6 @@
 {meta: title A Heart Full Of Love}
 {meta: artist Eddy Arnold}
-{meta: writer Eddy Arnold, Steve Nelson, Roy Soehnel}
+{meta: composer Eddy Arnold, Steve Nelson, Roy Soehnel}
 
 {start_of_verse: Verse 1}
 [D7]I traded a heart [G]full of love for a handful of [C]kisses

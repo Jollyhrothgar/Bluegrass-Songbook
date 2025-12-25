@@ -1,6 +1,6 @@
 {meta: title I'll Have To Live And Learn}
 {meta: artist Eddy Arnold}
-{meta: writer Zeke Clements}
+{meta: composer Zeke Clements}
 
 {start_of_verse: Verse 1}
 [C]To day the storms clouds gathered all about [F]me

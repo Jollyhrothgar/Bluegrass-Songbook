@@ -1,6 +1,6 @@
 {meta: title Now I Have Everything}
 {meta: artist Wanda Jackson}
-{meta: writer Charlie Yandell and Gerald Ingles}
+{meta: composer Charlie Yandell and Gerald Ingles}
 
 {start_of_verse: Verse 1}
 [F]Now I have [G7]every[C]thing

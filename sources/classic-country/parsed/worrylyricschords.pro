@@ -1,6 +1,6 @@
 {meta: title Worry}
 {meta: artist Johnny Tillotson}
-{meta: writer Chip Taylor}
+{meta: composer Chip Taylor}
 
 {start_of_verse: Verse 1}
 [C]Worry the nights away [F]worry all through the day

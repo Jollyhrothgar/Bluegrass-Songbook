@@ -1,6 +1,6 @@
 {meta: title Boxcar Blues}
 {meta: artist Boxcar Willie}
-{meta: writer Lecil T. Martin}
+{meta: composer Lecil T. Martin}
 
 {start_of_verse: Verse 1}
 [C]I lost all my money in a crooked poker game

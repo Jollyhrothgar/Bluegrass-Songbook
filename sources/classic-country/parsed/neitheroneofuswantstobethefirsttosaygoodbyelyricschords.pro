@@ -1,6 +1,6 @@
 {meta: title Neither One Of Us (Wants To Be The First To Say Goodbye)}
 {meta: artist Bob Luman}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 Neither One Of Us 

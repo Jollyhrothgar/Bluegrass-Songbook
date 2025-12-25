@@ -1,6 +1,6 @@
 {meta: title Falling}
 {meta: artist Lefty Frizzell}
-{meta: writer A.L. Owens and Darlene Shafer}
+{meta: composer A.L. Owens and Darlene Shafer}
 
 {start_of_verse: Verse 1}
 [C]Falling for you just like raindrops from an April [G7]sky

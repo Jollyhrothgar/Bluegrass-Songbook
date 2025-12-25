@@ -1,6 +1,6 @@
 {meta: title You Can Feel Bad}
 {meta: artist Patty Loveless}
-{meta: writer Matraca Berg and Tim Krekel}
+{meta: composer Matraca Berg and Tim Krekel}
 
 {start_of_verse: Verse 1}
 [G7]The car is runnin' and your [C]bags are packed 

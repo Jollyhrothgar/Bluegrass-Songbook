@@ -1,6 +1,6 @@
 {meta: title Sleeping At The Foot Of The Bed}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Eugene Wilson and Luther Patrick}
+{meta: composer Eugene Wilson and Luther Patrick}
 
 {start_of_verse: Verse 1}
 [C]Did you ever sleep at the foot of the bed

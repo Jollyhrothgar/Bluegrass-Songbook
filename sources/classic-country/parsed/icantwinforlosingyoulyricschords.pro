@@ -1,6 +1,6 @@
 {meta: title I Can't Win For Losing You}
 {meta: artist Earl Thomas Conley}
-{meta: writer Robert Byrne and Rick Bowles}
+{meta: composer Robert Byrne and Rick Bowles}
 
 {start_of_verse: Verse 1}
 [G]Hey how you been it's good to see you again[G7]

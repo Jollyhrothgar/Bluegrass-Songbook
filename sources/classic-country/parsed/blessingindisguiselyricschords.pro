@@ -1,6 +1,6 @@
 {meta: title Blessing in Disguise}
 {meta: artist Kris Kristofferson}
-{meta: writer Arlie A. Carter and William Warren)}
+{meta: composer Arlie A. Carter and William Warren)}
 
 {start_of_verse: Verse 1}
 [C]You wouldn't read my [C7]letter if I [F]wrote you

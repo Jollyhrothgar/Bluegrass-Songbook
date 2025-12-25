@@ -1,6 +1,6 @@
 {meta: title The Power Of Positive Drinking}
 {meta: artist Mickey Gilley}
-{meta: writer Rick Klang and Don Pfrimmer}
+{meta: composer Rick Klang and Don Pfrimmer}
 
 {start_of_verse: Verse 1}
 [C]Only come here once a day at [F]hurtin' time 

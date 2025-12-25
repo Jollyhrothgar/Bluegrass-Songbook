@@ -1,6 +1,6 @@
 {meta: title Shoulder To Shoulder}
 {meta: artist Tanya Tucker}
-{meta: writer Henry Gaffney}
+{meta: composer Henry Gaffney}
 
 {start_of_verse: Verse 1}
 [C]Picture you and [Am]I twenty years gone [Dm]by 

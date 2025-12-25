@@ -1,6 +1,6 @@
 {meta: title No Place To Go But Home}
 {meta: artist Wanda Jackson}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]They turned out the [C7]lights 

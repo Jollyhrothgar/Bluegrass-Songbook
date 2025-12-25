@@ -1,6 +1,6 @@
 {meta: title Drinking Wine Spo-dee-o-dee}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Granville McGhee and Mayo Williams}
+{meta: composer Granville McGhee and Mayo Williams}
 
 {start_of_verse: Verse 1}
 [G]Down in New Orleans where everything's fine

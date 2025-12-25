@@ -1,6 +1,6 @@
 {meta: title Hit Parade of Love}
 {meta: artist Jimmy Martin}
-{meta: writer Jimmy Martin and Wade Birchfield}
+{meta: composer Jimmy Martin and Wade Birchfield}
 
 {start_of_verse: Verse 1}
 [C]From what I've been a hearing dear you've really got it [F]made

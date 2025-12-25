@@ -1,6 +1,6 @@
 {meta: title Abraham Martin And John}
 {meta: artist Kenny Rogers}
-{meta: writer Dick Holler}
+{meta: composer Dick Holler}
 
 {start_of_verse: Verse 1}
 [C]Has anybody [Em]here seen my [F]old friend Abra[C]ham

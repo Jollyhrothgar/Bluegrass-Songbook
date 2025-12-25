@@ -1,6 +1,6 @@
 {meta: title She Came Here For The Change}
 {meta: artist Ronnie Milsap}
-{meta: writer Bobby Barker and Charles Quillen}
+{meta: composer Bobby Barker and Charles Quillen}
 
 {start_of_verse: Verse 1}
 [C]To her those quarter [G7]tips ain't worth a [C]nickel

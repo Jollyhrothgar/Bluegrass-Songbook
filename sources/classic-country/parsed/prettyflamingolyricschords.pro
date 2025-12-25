@@ -1,6 +1,6 @@
 {meta: title Pretty Flamingo}
 {meta: artist The Everly Brothers}
-{meta: writer Mark Barkan}
+{meta: composer Mark Barkan}
 
 {start_of_verse: Verse 1}
 [C]On our [G]block [C]all of the [G]guys

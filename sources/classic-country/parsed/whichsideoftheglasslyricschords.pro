@@ -1,6 +1,6 @@
 {meta: title Which Side Of The Glass}
 {meta: artist George Strait}
-{meta: writer Fred Knobloch and Dana Hunt}
+{meta: composer Fred Knobloch and Dana Hunt}
 
 {start_of_verse: Verse 1}
 [G7]In a [F]second story [C]window [F]framed in [C]lace

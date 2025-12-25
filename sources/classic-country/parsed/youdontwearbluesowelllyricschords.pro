@@ -1,6 +1,6 @@
 {meta: title You Don't Wear Blue So Well}
 {meta: artist Statler Brothers}
-{meta: writer Kim Reid, Karmen Reid and Kodi Reid}
+{meta: composer Kim Reid, Karmen Reid and Kodi Reid}
 
 {start_of_verse: Verse 1}
 [C]You don't wear [G7]blue so [C]well

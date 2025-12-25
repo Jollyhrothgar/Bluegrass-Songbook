@@ -1,6 +1,6 @@
 {meta: title Gettin' Me Over Mountains}
 {meta: artist Tracy Byrd}
-{meta: writer Larry Boone, Paul Nelson, Tracy Byrd}
+{meta: composer Larry Boone, Paul Nelson, Tracy Byrd}
 
 {start_of_verse: Verse 1}
 [G]It's an everyday [Am]battle [D7]just to try to break [G]even

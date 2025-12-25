@@ -1,6 +1,6 @@
 {meta: title Amber Tresses}
 {meta: artist Doyle Lawson}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]Far away in some deep [F]valley [C]where the merry sunbeams [G7]play

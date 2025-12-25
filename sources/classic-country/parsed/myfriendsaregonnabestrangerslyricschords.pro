@@ -1,6 +1,6 @@
 {meta: title My Friends Are Gonna Be Strangers}
 {meta: artist Merle Haggard}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]Oh the love you promised would be mine [F]forever

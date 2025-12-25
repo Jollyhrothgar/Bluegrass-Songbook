@@ -1,6 +1,6 @@
 {meta: title Threshold}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]Many shoes have taken [F]steps across the [C]threshold

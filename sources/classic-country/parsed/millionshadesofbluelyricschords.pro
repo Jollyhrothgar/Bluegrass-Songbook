@@ -1,6 +1,6 @@
 {meta: title Million Shades Of Blue}
 {meta: artist Lynn Anderson}
-{meta: writer Gene Hood}
+{meta: composer Gene Hood}
 
 {start_of_verse: Verse 1}
 [C]The dying flames of love [F]are slowly [C]flickering

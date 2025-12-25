@@ -1,6 +1,6 @@
 {meta: title 35 mph Town}
 {meta: artist Toby Keith}
-{meta: writer Toby Keith and Bobby Pinson}
+{meta: composer Toby Keith and Bobby Pinson}
 
 {start_of_verse: Verse 1}
 [C]Mama locked the door last night for the first time in all of her [F]years 

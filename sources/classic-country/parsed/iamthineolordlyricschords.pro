@@ -1,6 +1,6 @@
 {meta: title I Am Thine O Lord}
 {meta: artist Jimmy Dean}
-{meta: writer Fanny Crosby and William Doane}
+{meta: composer Fanny Crosby and William Doane}
 
 {start_of_verse: Verse 1}
 [C]I am [G7]Thine O Lord I have [C]heard Thy voice

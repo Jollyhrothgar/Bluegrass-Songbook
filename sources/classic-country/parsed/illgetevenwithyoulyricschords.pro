@@ -1,6 +1,6 @@
 {meta: title I'll Get Even With You}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [G]Every time I get this feeling

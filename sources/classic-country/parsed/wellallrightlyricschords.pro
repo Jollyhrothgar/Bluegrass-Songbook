@@ -1,6 +1,6 @@
 {meta: title Well All Right}
 {meta: artist Buddy Holly}
-{meta: writer Buddy Holly, Norman Petty, Jerry Allison, Joe Mauldin}
+{meta: composer Buddy Holly, Norman Petty, Jerry Allison, Joe Mauldin}
 
 {start_of_verse: Verse 1}
 [G]Well all right so I'm [F]being [G]foolish

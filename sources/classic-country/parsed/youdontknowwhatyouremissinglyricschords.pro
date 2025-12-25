@@ -1,6 +1,6 @@
 {meta: title You Don't Know What You're Missing}
 {meta: artist George Strait}
-{meta: writer Christopher Stapleton and Al Anderson}
+{meta: composer Christopher Stapleton and Al Anderson}
 
 {start_of_verse: Verse 1}
 [C]Sittin' at the bar I overheard a couple guys

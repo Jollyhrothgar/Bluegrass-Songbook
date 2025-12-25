@@ -1,6 +1,6 @@
 {meta: title Somebody's Always Leaving}
 {meta: artist Stonewall Jackson}
-{meta: writer Jack Schneider and Claude Southall}
+{meta: composer Jack Schneider and Claude Southall}
 
 {start_of_verse: Verse 1}
 [C]Momma died when [A#7]I was borned that [C]July

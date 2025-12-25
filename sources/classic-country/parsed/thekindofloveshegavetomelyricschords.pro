@@ -1,6 +1,6 @@
 {meta: title The Kind Of Love She Gave To Me}
 {meta: artist Ernest Tubb}
-{meta: writer Mae Boren Axton and Glenn Reeves}
+{meta: composer Mae Boren Axton and Glenn Reeves}
 
 {start_of_verse: Verse 1}
 [G]A lonely town a lonely street a lonely [C]room where I can't [G]sleep

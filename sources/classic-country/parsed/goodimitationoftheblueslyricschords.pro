@@ -1,6 +1,6 @@
 {meta: title Good Imitation Of The Blues}
 {meta: artist Larry Sparks}
-{meta: writer Patrick Brayer}
+{meta: composer Patrick Brayer}
 
 {start_of_verse: Verse 1}
 [C]You called it quits  hung [A]up the [F]phone

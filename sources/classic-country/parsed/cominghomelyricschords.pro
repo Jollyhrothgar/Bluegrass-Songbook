@@ -1,6 +1,6 @@
 {meta: title Coming Home}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison, Will Jennings, J.D. Souther}
+{meta: composer Roy Orbison, Will Jennings, J.D. Souther}
 
 {start_of_verse: Verse 1}
 [C]It's a long and lonely highway

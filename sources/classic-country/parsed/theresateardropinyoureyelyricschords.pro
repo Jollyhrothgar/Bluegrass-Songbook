@@ -1,6 +1,6 @@
 {meta: title There's A Teardrop In Your Eye}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer William Grishaw}
+{meta: composer William Grishaw}
 
 {start_of_verse: Verse 1}
 [C]There’s a teardrop in your eye my [F]dearie please don’t [C]cry

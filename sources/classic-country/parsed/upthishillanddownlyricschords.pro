@@ -1,6 +1,6 @@
 {meta: title Up This Hill And Down}
 {meta: artist The Wilburn Brothers}
-{meta: writer Richard D. Staedtler}
+{meta: composer Richard D. Staedtler}
 
 {start_of_verse: Verse 1}
 [G]Well it's up this hill and down and up this hill [G7]again

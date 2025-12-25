@@ -1,6 +1,6 @@
 {meta: title Hand Me Down My Silver Trumpet}
 {meta: artist Toni Lorenzo}
-{meta: writer Jimmie O'Neal and Dallas Turner}
+{meta: composer Jimmie O'Neal and Dallas Turner}
 
 {start_of_verse: Verse 1}
 [G]Hand me down (hand me down)

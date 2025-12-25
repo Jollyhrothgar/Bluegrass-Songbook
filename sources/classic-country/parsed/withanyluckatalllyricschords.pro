@@ -1,6 +1,6 @@
 {meta: title With Any Luck At All}
 {meta: artist Gene Watson}
-{meta: writer Dave Lindsey}
+{meta: composer Dave Lindsey}
 
 {start_of_verse: Verse 1}
 [G]You may wonder why I [C]never do stay [G]sober

@@ -1,6 +1,6 @@
 {meta: title The Right Place}
 {meta: artist The Derailers}
-{meta: writer Bill Carter-Ruth Ellsworth-Tony Villanueva}
+{meta: composer Bill Carter-Ruth Ellsworth-Tony Villanueva}
 
 {start_of_verse: Verse 1}
 [G]If you're looking for a life of [D7]luxury

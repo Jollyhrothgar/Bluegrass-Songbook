@@ -1,6 +1,6 @@
 {meta: title Poor Red Georgia Dirt}
 {meta: artist Stonewall Jackson}
-{meta: writer Fred Burch and Gary Stewart}
+{meta: composer Fred Burch and Gary Stewart}
 
 {start_of_verse: Verse 1}
 [C]Had a little [Dm]gal way [F]down in Ala[C]bamy

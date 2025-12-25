@@ -1,6 +1,6 @@
 {meta: title How Bout Never}
 {meta: artist Tony Booth}
-{meta: writer Dave Lindsey and Brent Ronen}
+{meta: composer Dave Lindsey and Brent Ronen}
 
 {start_of_verse: Verse 1}
 [G]Well hello there was a big surprise

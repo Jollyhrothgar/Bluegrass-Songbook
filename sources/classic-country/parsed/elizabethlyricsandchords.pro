@@ -1,6 +1,6 @@
 {meta: title Elizabeth Lyrics with Chords}
 {meta: artist Statler Brothers}
-{meta: writer Jimmy Fortune}
+{meta: composer Jimmy Fortune}
 
 {start_of_verse: Verse 1}
 [C]Oh Elizabeth    [Am]I long to [F]see your [G7]pretty [C]face

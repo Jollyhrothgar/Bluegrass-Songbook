@@ -1,6 +1,6 @@
 {meta: title Bubblegum Bandit}
 {meta: artist Jim Ed Brown}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [D7](He's the bubblegum [G]bandit)

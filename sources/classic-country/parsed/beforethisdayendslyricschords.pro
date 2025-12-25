@@ -1,6 +1,6 @@
 {meta: title Before This Day Ends Lyrics Chords}
 {meta: artist Kitty Wells}
-{meta: writer Vic McAlpin, Roy Drusky, Marie Wilson}
+{meta: composer Vic McAlpin, Roy Drusky, Marie Wilson}
 
 {start_of_verse: Verse 1}
 [G]They say that my kind of love is [D7]blind

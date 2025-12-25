@@ -1,6 +1,6 @@
 {meta: title Sundown In Nashville}
 {meta: artist Marty Stuart}
-{meta: writer Dwayne Warwick}
+{meta: composer Dwayne Warwick}
 
 {start_of_verse: Verse 1}
 [G]The sign says welcome [C]to [G]Nashville

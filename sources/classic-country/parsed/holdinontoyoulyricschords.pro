@@ -1,6 +1,6 @@
 {meta: title Holdin' on to You}
 {meta: artist Marty Robbins}
-{meta: writer L. Buchanan}
+{meta: composer L. Buchanan}
 
 {start_of_verse: Verse 1}
 [G]I shouldn't think about you and [C]forget we ever met

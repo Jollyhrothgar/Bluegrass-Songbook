@@ -1,6 +1,6 @@
 {meta: title In Each Love Some Pain Must Fall}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [G]Darling it's not really over [D7]it just seems to [G]be

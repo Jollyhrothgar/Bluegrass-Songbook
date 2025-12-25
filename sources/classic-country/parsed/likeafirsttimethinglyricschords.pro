@@ -1,6 +1,6 @@
 {meta: title Like A First Time Thing}
 {meta: artist Ray Price}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [C]Softly as a gentle summer [G7]rain

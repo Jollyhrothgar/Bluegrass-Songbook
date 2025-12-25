@@ -1,6 +1,6 @@
 {meta: title Young And Beautiful}
 {meta: artist Elvis Presley}
-{meta: writer Abner Silver and Aaron Schroeder}
+{meta: composer Abner Silver and Aaron Schroeder}
 
 {start_of_verse: Verse 1}
 [C]You're so [Am]young  [Dm]and beauti[G7]ful

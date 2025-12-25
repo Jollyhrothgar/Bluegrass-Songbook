@@ -1,6 +1,6 @@
 {meta: title I Wish I Knew}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Hazel Pitts}
+{meta: composer Sonny James and Hazel Pitts}
 
 {start_of_verse: Verse 1}
 [C]I wish I knew why I love you like I do

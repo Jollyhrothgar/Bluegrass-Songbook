@@ -1,6 +1,6 @@
 {meta: title Time Out For The Blues}
 {meta: artist Lefty Frizzell}
-{meta: writer Dan Hart and Buddy Starcher}
+{meta: composer Dan Hart and Buddy Starcher}
 
 {start_of_verse: Verse 1}
 [G]Well the mail don't come  and the phone don't [D7]ring

@@ -1,6 +1,6 @@
 {meta: title That’s How I Got To Memphis}
 {meta: artist Bobby Bare}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]If you love somebody [F]enough 

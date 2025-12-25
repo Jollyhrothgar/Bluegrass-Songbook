@@ -1,6 +1,6 @@
 {meta: title Butter Beans}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Charles D. Colvin}
+{meta: composer Charles D. Colvin}
 
 {start_of_verse: Verse 1}
 [C]Just a bowl of butter [G7]beans

@@ -1,6 +1,6 @@
 {meta: title Fool Me Again}
 {meta: artist Buck Owens}
-{meta: writer Dusty Rhodes and Rolly Weber}
+{meta: composer Dusty Rhodes and Rolly Weber}
 
 {start_of_verse: Verse 1}
 [G]You find the thrill each time you let me [D7]down

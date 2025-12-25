@@ -1,6 +1,6 @@
 {meta: title Heart Of Hearts}
 {meta: artist Randy Travis}
-{meta: writer Kevin Welch and Mike Henderson}
+{meta: composer Kevin Welch and Mike Henderson}
 
 {start_of_verse: Verse 1}
 [C]I found myself in a [F]cross [C]condition

@@ -1,6 +1,6 @@
 {meta: title Missing You Just Started Hittin' Home}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby, Warren Robb, Shirl Milete}
+{meta: composer Dave Kirby, Warren Robb, Shirl Milete}
 
 {start_of_verse: Verse 1}
 [C]The happy hour is over and the [G7]crowd is gone

@@ -1,6 +1,6 @@
 {meta: title The Storm Within My Heart}
 {meta: artist Billy Walker}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]Each night the raging [C7]storm clouds take away [F]the moon [C]above

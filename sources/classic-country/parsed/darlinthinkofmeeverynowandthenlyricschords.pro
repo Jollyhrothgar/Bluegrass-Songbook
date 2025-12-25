@@ -1,6 +1,6 @@
 {meta: title Darlin' Think Of Me Every Now And Then}
 {meta: artist Charley Pride}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [G]Tonight here in your arms is where I've [D7]longed to [G]be

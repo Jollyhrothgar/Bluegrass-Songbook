@@ -1,6 +1,6 @@
 {meta: title They Listened While You Said Goodbye}
 {meta: artist Porter Wagoner}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [D7](Listen [G]   [C]listen   [D7]listen they're saying good[G]bye)

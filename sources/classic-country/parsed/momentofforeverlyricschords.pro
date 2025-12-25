@@ -1,6 +1,6 @@
 {meta: title Moment Of Forever}
 {meta: artist Willie Nelson}
-{meta: writer Kris Kristofferson and Danny Timms}
+{meta: composer Kris Kristofferson and Danny Timms}
 
 {start_of_verse: Verse 1}
 [G]Was it wonderful for you 

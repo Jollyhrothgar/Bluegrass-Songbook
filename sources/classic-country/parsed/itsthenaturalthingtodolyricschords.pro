@@ -1,6 +1,6 @@
 {meta: title It's The Natural Thing To Do}
 {meta: artist Larry Sparks}
-{meta: writer Pete Goble and Leroy Drumm}
+{meta: composer Pete Goble and Leroy Drumm}
 
 {start_of_verse: Verse 1}
 [G]Go on and tell me [G7]you don't love me [C]anymore

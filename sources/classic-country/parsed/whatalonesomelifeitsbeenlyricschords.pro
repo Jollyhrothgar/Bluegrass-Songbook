@@ -1,6 +1,6 @@
 {meta: title What A Lonesome Life It's Been}
 {meta: artist Skeets McDonald}
-{meta: writer Cliff Crofford}
+{meta: composer Cliff Crofford}
 
 {start_of_verse: Verse 1}
 [C]With a click on the phone your [F]voice is gone and [C]I'm all alone [G7]again

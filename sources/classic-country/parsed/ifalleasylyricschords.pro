@@ -1,6 +1,6 @@
 {meta: title I Fall Easy}
 {meta: artist Leona Williams}
-{meta: writer Roger Lee Helton, Sharon King, Leona Williams}
+{meta: composer Roger Lee Helton, Sharon King, Leona Williams}
 
 {start_of_verse: Verse 1}
 [C]Don't get too [F]close to me I fall [C]easy

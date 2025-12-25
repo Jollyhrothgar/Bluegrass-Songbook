@@ -1,6 +1,6 @@
 {meta: title Chains Of Love}
 {meta: artist Mickey Gilley}
-{meta: writer Nugetre and Harry Van Walls}
+{meta: composer Nugetre and Harry Van Walls}
 
 {start_of_verse: Verse 1}
 [C]Chains of love [F]have tied my heart to [C]you

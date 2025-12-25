@@ -1,6 +1,6 @@
 {meta: title Little Cabin Home On The Hill}
 {meta: artist Bill Monroe}
-{meta: writer Lester Flatt and Bill Monroe}
+{meta: composer Lester Flatt and Bill Monroe}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm alone [F]without you my [C]dear

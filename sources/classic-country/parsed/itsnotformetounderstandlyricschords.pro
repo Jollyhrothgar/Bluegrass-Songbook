@@ -1,6 +1,6 @@
 {meta: title It's Not For Me To Understand}
 {meta: artist Jack Greene}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]It's not for [Em]y-—[Am]o--[G7]u to under[C]stand

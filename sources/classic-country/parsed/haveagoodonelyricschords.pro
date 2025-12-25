@@ -1,6 +1,6 @@
 {meta: title Have A Good One}
 {meta: artist Tracy Byrd}
-{meta: writer Max D. Barnes, Paul Craft, David Kent}
+{meta: composer Max D. Barnes, Paul Craft, David Kent}
 
 {start_of_verse: Verse 1}
 [G]Have a good one she told me as she walked [C]away

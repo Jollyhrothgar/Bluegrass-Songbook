@@ -1,6 +1,6 @@
 {meta: title Before I'm Fool Enough}
 {meta: artist Crystal Gayle}
-{meta: writer Allen Reynolds}
+{meta: composer Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [G]I'm going away babe [C]I cannot [G]stay

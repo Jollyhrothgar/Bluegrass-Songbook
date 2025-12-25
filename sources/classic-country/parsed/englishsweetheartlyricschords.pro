@@ -1,6 +1,6 @@
 {meta: title English Sweetheart}
 {meta: artist Webb Pierce}
-{meta: writer recorded by Webb Pierce}
+{meta: composer recorded by Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]An American boy met an English girl

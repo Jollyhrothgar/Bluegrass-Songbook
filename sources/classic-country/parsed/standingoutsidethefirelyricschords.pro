@@ -1,6 +1,6 @@
 {meta: title Standing Outside The Fire}
 {meta: artist Garth Brooks}
-{meta: writer Jenny Yates and Garth Brooks}
+{meta: composer Jenny Yates and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G]We call them cool 

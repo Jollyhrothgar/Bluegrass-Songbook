@@ -1,6 +1,6 @@
 {meta: title Shutting Out The Light}
 {meta: artist Waylon Jennings}
-{meta: writer Woody Starr and Claude Brown}
+{meta: composer Woody Starr and Claude Brown}
 
 {start_of_verse: Verse 1}
 [G]I left the light in my [Em]window[C] 

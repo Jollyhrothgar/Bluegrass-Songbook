@@ -1,6 +1,6 @@
 {meta: title They'll Never Break The Chains}
 {meta: artist Mel Tillis}
-{meta: writer Gene Simmons}
+{meta: composer Gene Simmons}
 
 {start_of_verse: Verse 1}
 [G]No [G7]they'll [C]never break the chains of love that bind us

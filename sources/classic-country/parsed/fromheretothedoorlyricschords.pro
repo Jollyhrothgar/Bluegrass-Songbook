@@ -1,6 +1,6 @@
 {meta: title From Here To The Door}
 {meta: artist Johnny Paycheck}
-{meta: writer Don Chapel}
+{meta: composer Don Chapel}
 
 {start_of_verse: Verse 1}
 [G]Well it's only my love [C]you are [G]taking

@@ -1,6 +1,6 @@
 {meta: title I Know What Santa's Getting For Christmas}
 {meta: artist Burl Ives}
-{meta: writer Garth Brooks and Kent Blazy}
+{meta: composer Garth Brooks and Kent Blazy}
 
 {start_of_verse: Verse 1}
 [C]I know what [A7]Santa's gettin' for [D7]Christmas

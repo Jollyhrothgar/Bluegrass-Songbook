@@ -1,6 +1,6 @@
 {meta: title Crazy Heart}
 {meta: artist The Lonesome River Band}
-{meta: writer Sharon Rose Higgins and Billy Smith}
+{meta: composer Sharon Rose Higgins and Billy Smith}
 
 {start_of_verse: Verse 1}
 [G]Like the wild west wind so un[D7]certain

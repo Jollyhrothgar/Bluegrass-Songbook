@@ -1,6 +1,6 @@
 {meta: title That's What Lonesome Is}
 {meta: artist Jean Shepard}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]All night long I stayed away and [D7]stared out into [G]space

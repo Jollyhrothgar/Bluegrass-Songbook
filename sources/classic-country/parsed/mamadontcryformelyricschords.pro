@@ -1,6 +1,6 @@
 {meta: title Mama Don't Cry For Me}
 {meta: artist Charlie Pride}
-{meta: writer Johnny Wilson and Fred Foster}
+{meta: composer Johnny Wilson and Fred Foster}
 
 {start_of_verse: Verse 1}
 [G]I've seen the big fish jumping mama I've heard crickets sing

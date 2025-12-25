@@ -1,6 +1,6 @@
 {meta: title Don’t Forget To Cry}
 {meta: artist Everly Brothers}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [G]You always said you'd shed a million [B7]teardrops

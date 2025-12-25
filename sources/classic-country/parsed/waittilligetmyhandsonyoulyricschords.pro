@@ -1,6 +1,6 @@
 {meta: title Wait Till I Get My Hands On You}
 {meta: artist Wynn Stewart}
-{meta: writer Ronald Elmer McCown}
+{meta: composer Ronald Elmer McCown}
 
 {start_of_verse: Verse 1}
 [C]You called me on the phone  [G7]said you were alone

@@ -1,6 +1,6 @@
 {meta: title Tears Will Never Stain The Streets Of That City}
 {meta: artist The Kingsmen}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [C]If I could count all the [F]tears that have [C]fallen

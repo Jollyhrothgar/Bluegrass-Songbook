@@ -1,6 +1,6 @@
 {meta: title What Are Those Things}
 {meta: artist Roger Miller}
-{meta: writer Dallas Frazier and A.L. Owens}
+{meta: composer Dallas Frazier and A.L. Owens}
 
 {start_of_verse: Verse 1}
 [C]What are those things with [F]big black [C]wings

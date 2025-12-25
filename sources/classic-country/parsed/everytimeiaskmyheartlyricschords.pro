@@ -1,6 +1,6 @@
 {meta: title Every Time I Ask My Heart}
 {meta: artist Leroy Van Dyke}
-{meta: writer Larry Hovis}
+{meta: composer Larry Hovis}
 
 {start_of_verse: Verse 1}
 [D7]Every time I ask my [G]heart

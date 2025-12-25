@@ -1,6 +1,6 @@
 {meta: title I Watched An Angel (Going Through Hell)}
 {meta: artist Johnny Duncan}
-{meta: writer Don Goodman and Mark Sherrill}
+{meta: composer Don Goodman and Mark Sherrill}
 
 {start_of_verse: Verse 1}
 [G]She lit up the room as [Am]she walked through the door

@@ -1,6 +1,6 @@
 {meta: title I Can See Me Loving You Again}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]I can see me [C]loving [D7]you [G]again

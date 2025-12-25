@@ -1,6 +1,6 @@
 {meta: title You Can Lie To Me Tonight}
 {meta: artist Mickey Gilley}
-{meta: writer Kerry Chater and Tom Campbell}
+{meta: composer Kerry Chater and Tom Campbell}
 
 {start_of_verse: Verse 1}
 You Can Lie To Me Tonight

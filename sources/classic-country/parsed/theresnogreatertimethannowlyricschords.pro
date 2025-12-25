@@ -1,6 +1,6 @@
 {meta: title There's No Greater Time Than Now}
 {meta: artist Kitty Wells}
-{meta: writer Roy Botkin}
+{meta: composer Roy Botkin}
 
 {start_of_verse: Verse 1}
 [G]If you're tired of the [D7]life that you're [G]living

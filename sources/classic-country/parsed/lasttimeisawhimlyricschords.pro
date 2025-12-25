@@ -1,6 +1,6 @@
 {meta: title Last Time I Saw Him}
 {meta: artist Dottie West}
-{meta: writer Pam Sawyer and Michael Masser}
+{meta: composer Pam Sawyer and Michael Masser}
 
 {start_of_verse: Verse 1}
 [C]Last time I saw him he sweetly kissed my [D7]lips

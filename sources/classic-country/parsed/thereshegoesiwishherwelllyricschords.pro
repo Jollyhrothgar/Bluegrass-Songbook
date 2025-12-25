@@ -1,6 +1,6 @@
 {meta: title There She Goes I Wish Her Well}
 {meta: artist Don Gibson}
-{meta: writer and recorded by Don Gibson}
+{meta: composer and recorded by Don Gibson}
 
 {start_of_verse: Verse 1}
 [G]Well there she goes  walking [C]away  I wish her [G]well

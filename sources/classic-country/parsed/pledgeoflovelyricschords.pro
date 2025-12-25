@@ -1,6 +1,6 @@
 {meta: title Pledge Of Love}
 {meta: artist Jim Ed Brown}
-{meta: writer Ramona Redd}
+{meta: composer Ramona Redd}
 
 {start_of_verse: Verse 1}
 [C]I love you so [F]I can't let you go

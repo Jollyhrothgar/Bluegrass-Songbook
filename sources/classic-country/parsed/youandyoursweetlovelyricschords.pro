@@ -1,6 +1,6 @@
 {meta: title You And Your Sweet Love}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]I wish you only knew all the days [C]I've made it [G]through

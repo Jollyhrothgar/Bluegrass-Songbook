@@ -1,6 +1,6 @@
 {meta: title Childish Love}
 {meta: artist Jim and Jesse}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]Oh childish [F]love I could not hold

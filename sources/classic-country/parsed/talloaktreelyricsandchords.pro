@@ -1,6 +1,6 @@
 {meta: title Tall Oak Tree}
 {meta: artist Bobby Bare}
-{meta: writer Dorsey Burnette}
+{meta: composer Dorsey Burnette}
 
 {start_of_verse: Verse 1}
 [G]There was a tall oak tree [C]

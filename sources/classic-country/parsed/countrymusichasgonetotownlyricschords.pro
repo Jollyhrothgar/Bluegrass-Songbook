@@ -1,6 +1,6 @@
 {meta: title Country Music Has Gone To Town}
 {meta: artist Norma Jean}
-{meta: writer Jimmie Driftwood}
+{meta: composer Jimmie Driftwood}
 
 {start_of_verse: Verse 1}
 [G]Oh they say that country music's gone to [D7]town

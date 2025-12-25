@@ -1,6 +1,6 @@
 {meta: title Boxcar’s My Home}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene Martin}
+{meta: composer Lloene Martin}
 
 {start_of_verse: Verse 1}
 [C]Boxcar's my home [F]railroad my [C]friend 

@@ -1,6 +1,6 @@
 {meta: title Homestead On The Farm}
 {meta: artist Bobby Bare}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]I wonder how the [C]old folks are at [G]home

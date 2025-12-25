@@ -1,6 +1,6 @@
 {meta: title Have A Little Faith}
 {meta: artist Statler Brother}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]God told Abraham to go to Canaan land

@@ -1,6 +1,6 @@
 {meta: title I Drove All Night}
 {meta: artist Roy Orbison}
-{meta: writer Thomas F. Kelly and William E. Steinberg}
+{meta: composer Thomas F. Kelly and William E. Steinberg}
 
 {start_of_verse: Verse 1}
 [G7]I had to escape

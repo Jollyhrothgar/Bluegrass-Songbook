@@ -1,6 +1,6 @@
 {meta: title Home Made Love}
 {meta: artist Norma Jean}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [C]Meet her on your [F]business trips [G7]hold her tight and [C]kiss her lips

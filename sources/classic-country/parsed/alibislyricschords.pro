@@ -1,6 +1,6 @@
 {meta: title Alibis}
 {meta: artist Johnny Rodriguez Lyrics with Chords}
-{meta: writer Arthur L. Killough, Jr. and Patricia R. Killough}
+{meta: composer Arthur L. Killough, Jr. and Patricia R. Killough}
 
 {start_of_verse: Verse 1}
 [G]Alibis your ali[Em]bis

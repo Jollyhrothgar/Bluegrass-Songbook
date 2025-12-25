@@ -1,6 +1,6 @@
 {meta: title Special Memory}
 {meta: artist Dottie West}
-{meta: writer Red Lane and Dottie West}
+{meta: composer Red Lane and Dottie West}
 
 {start_of_verse: Verse 1}
 [C]Your love was a summer [F]breeze

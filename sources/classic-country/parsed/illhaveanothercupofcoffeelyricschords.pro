@@ -1,6 +1,6 @@
 {meta: title I'll Have Another Cup of Coffee}
 {meta: artist Cal Smith}
-{meta: writer Bill Brock}
+{meta: composer Bill Brock}
 
 {start_of_verse: Verse 1}
 [G]I'll just have a cup of [D7]coffee then I'll [G]go

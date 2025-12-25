@@ -1,6 +1,6 @@
 {meta: title In My Dreams}
 {meta: artist Johnny Lee}
-{meta: writer Don Cook and Rafe Vanhoy}
+{meta: composer Don Cook and Rafe Vanhoy}
 
 {start_of_verse: Verse 1}
 [Dm]I never quite got [G7]over you

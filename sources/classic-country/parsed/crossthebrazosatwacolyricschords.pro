@@ -1,6 +1,6 @@
 {meta: title Cross the Brazos at Waco}
 {meta: artist Billy Walker}
-{meta: writer Kay Arnold}
+{meta: composer Kay Arnold}
 
 {start_of_verse: Verse 1}
 [C]On the Chisolm Trail it was midnight

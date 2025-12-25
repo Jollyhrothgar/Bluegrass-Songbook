@@ -1,6 +1,6 @@
 {meta: title She's A Lady Down On Love}
 {meta: artist Alabama}
-{meta: writer Randy Owen}
+{meta: composer Randy Owen}
 
 {start_of_verse: Verse 1}
 [C]It's her first night on the town  since she was just [Em]18 

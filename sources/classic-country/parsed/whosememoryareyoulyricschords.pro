@@ -1,6 +1,6 @@
 {meta: title Whose Memory Are You}
 {meta: artist George Morgan}
-{meta: writer George Morgan and Curt Gibson}
+{meta: composer George Morgan and Curt Gibson}
 
 {start_of_verse: Verse 1}
 [C]Whose [G7]memory are [C]you  [F]who's all alone and blue

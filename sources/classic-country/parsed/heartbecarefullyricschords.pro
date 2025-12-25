@@ -1,6 +1,6 @@
 {meta: title Heart Be Careful}
 {meta: artist Billy Walker}
-{meta: writer Jay Bovington and Billy Walker}
+{meta: composer Jay Bovington and Billy Walker}
 
 {start_of_verse: Verse 1}
 [C]Eyes be careful how you look at her 

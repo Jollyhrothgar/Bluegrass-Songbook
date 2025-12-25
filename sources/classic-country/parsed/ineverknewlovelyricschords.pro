@@ -1,6 +1,6 @@
 {meta: title I Never Knew Love}
 {meta: artist Doug Stone}
-{meta: writer Larry Boone and William Robinson}
+{meta: composer Larry Boone and William Robinson}
 
 {start_of_verse: Verse 1}
 [C]I never knew the [G7]power of a [Am]song [C]

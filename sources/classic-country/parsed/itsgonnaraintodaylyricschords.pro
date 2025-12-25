@@ -1,6 +1,6 @@
 {meta: title It's Gonna Rain Today}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]There's coldness in the wind the clouds have [F]changed again

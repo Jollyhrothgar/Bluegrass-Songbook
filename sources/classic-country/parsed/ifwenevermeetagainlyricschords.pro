@@ -1,6 +1,6 @@
 {meta: title If We Never Meet Again}
 {meta: artist Johnny Cash}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [G7]Soon we'll [C]come to the end of life's [F]journey

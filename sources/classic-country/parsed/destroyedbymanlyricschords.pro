@@ -1,6 +1,6 @@
 {meta: title Destroyed By Man}
 {meta: artist Mel Tillis}
-{meta: writer Red Hayes}
+{meta: composer Red Hayes}
 
 {start_of_verse: Verse 1}
 [G]There's a girl in a barroom  [C]we all know her [G]well

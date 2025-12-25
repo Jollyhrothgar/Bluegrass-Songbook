@@ -1,6 +1,6 @@
 {meta: title Cheatin' Fire}
 {meta: artist Johnny Bush}
-{meta: writer Johnny Bush}
+{meta: composer Johnny Bush}
 
 {start_of_verse: Verse 1}
 [C]Cheatin' fire [F]it's gonna burn [C]higher

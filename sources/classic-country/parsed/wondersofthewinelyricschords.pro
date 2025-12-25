@@ -1,6 +1,6 @@
 {meta: title Wonders Of The Wine}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill, Norro Wilson, Webber Parrish}
+{meta: composer Billy Sherrill, Norro Wilson, Webber Parrish}
 
 {start_of_verse: Verse 1}
 [G]I found a [C]place that you [D7]won't believe

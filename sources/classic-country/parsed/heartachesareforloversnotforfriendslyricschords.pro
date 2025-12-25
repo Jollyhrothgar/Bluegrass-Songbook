@@ -1,6 +1,6 @@
 {meta: title Heartaches Are For Lovers Not For Friends}
 {meta: artist Webb Pierce}
-{meta: writer Sylvia Dee, Webb Pierce, Max Powell}
+{meta: composer Sylvia Dee, Webb Pierce, Max Powell}
 
 {start_of_verse: Verse 1}
 [C]Heartaches are for [D7]lovers not for [G]friends

@@ -1,6 +1,6 @@
 {meta: title You Were All The Good In Me}
 {meta: artist Charley Pride}
-{meta: writer Shirley Worth}
+{meta: composer Shirley Worth}
 
 {start_of_verse: Verse 1}
 [C]Before there ever [F]came the time that [C]I could [G7]rea[C]lize

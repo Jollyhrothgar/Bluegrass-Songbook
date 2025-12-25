@@ -1,6 +1,6 @@
 {meta: title Rainbow and Roses}
 {meta: artist Billy Walker}
-{meta: writer Barbara Lewis and Don Lewis}
+{meta: composer Barbara Lewis and Don Lewis}
 
 {start_of_verse: Verse 1}
 [G7]There’s [C]nothing quite as [G7]pretty as a [C]rainbow after a summer [Dm]rain [G7]

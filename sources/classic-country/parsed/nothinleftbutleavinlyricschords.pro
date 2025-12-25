@@ -1,6 +1,6 @@
 {meta: title Nothin' Left But Leavin'}
 {meta: artist Charley Pride}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [G]Tonight it's so [C]cold the rain is [D7]fallin'

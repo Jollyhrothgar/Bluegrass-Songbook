@@ -1,6 +1,6 @@
 {meta: title Gold In The Morning Sun}
 {meta: artist Sonny James}
-{meta: writer Edgar Clayton and Sonny James}
+{meta: composer Edgar Clayton and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]Call me a happy [F]boy in [C]love heartaches have I [F]none

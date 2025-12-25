@@ -1,6 +1,6 @@
 {meta: title The World Is Waiting For The Sunrise}
 {meta: artist Les Paul and Mary Ford}
-{meta: writer Eugene Lockhart and Ernest Seitz}
+{meta: composer Eugene Lockhart and Ernest Seitz}
 
 {start_of_verse: Verse 1}
 [C]Dear one the [Am]world is [C]waiting for the [E7]sunrise

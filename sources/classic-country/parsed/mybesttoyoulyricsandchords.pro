@@ -1,6 +1,6 @@
 {meta: title My Best To You}
 {meta: artist Bob Nolan}
-{meta: writer Isham Jones and Gene Willadsen}
+{meta: composer Isham Jones and Gene Willadsen}
 
 {start_of_verse: Verse 1}
 [G7]My [C]best to you may your [F]dreams come [G7]true

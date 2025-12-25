@@ -1,6 +1,6 @@
 {meta: title Nobody's Waiting For Me}
 {meta: artist Moe Bandy}
-{meta: writer Sanger D. Shafer and Warren Robb}
+{meta: composer Sanger D. Shafer and Warren Robb}
 
 {start_of_verse: Verse 1}
 [C]Talk about your good times Lord [F]I've had me [D7]some

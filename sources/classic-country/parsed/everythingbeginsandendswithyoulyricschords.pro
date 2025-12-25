@@ -1,6 +1,6 @@
 {meta: title Everything Begins And Ends With You Lyrics and Chords}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Lorene Allen}
+{meta: composer Sonny James and Lorene Allen}
 
 {start_of_verse: Verse 1}
 [C]My love for you [F]could be [C]no [Am]greater

@@ -1,6 +1,6 @@
 {meta: title Goodbye Sunshine}
 {meta: artist Eddy Arnold}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [D7](Goodbye [G]sunshine)

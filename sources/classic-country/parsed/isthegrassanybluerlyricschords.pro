@@ -1,6 +1,6 @@
 {meta: title Is The Grass Any Bluer}
 {meta: artist Rhonda Vincent}
-{meta: writer Cory Batten, Buck Moore, Troy Seals}
+{meta: composer Cory Batten, Buck Moore, Troy Seals}
 
 {start_of_verse: Verse 1}
 [C]You [G7]rolled out of Rosine a [F]dedicated [C]man

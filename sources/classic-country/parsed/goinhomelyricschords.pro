@@ -1,6 +1,6 @@
 {meta: title Goin’ Home}
 {meta: artist Fats Domino}
-{meta: writer Fats Domino and Al Young}
+{meta: composer Fats Domino and Al Young}
 
 {start_of_verse: Verse 1}
 [C]Goin' home tomorrow can't stand your evil way

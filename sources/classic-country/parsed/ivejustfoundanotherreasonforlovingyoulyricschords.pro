@@ -1,6 +1,6 @@
 {meta: title I've Just Found Another Reason For Loving You}
 {meta: artist Charley Pride}
-{meta: writer Joe Keene and Charles Isbell}
+{meta: composer Joe Keene and Charles Isbell}
 
 {start_of_verse: Verse 1}
 [G]Somehow you know just what it takes to please [C]me

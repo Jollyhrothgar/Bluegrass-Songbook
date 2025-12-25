@@ -1,6 +1,6 @@
 {meta: title Old Coyote Town}
 {meta: artist Don Williams}
-{meta: writer Larry Boone, Paul Nelson, Gene Nelson}
+{meta: composer Larry Boone, Paul Nelson, Gene Nelson}
 
 {start_of_verse: Verse 1}
 [C]He's got a U S flag on his front porch

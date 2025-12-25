@@ -1,6 +1,6 @@
 {meta: title Grain Of Salt}
 {meta: artist David Ball}
-{meta: writer Monty Criswell and David Ball}
+{meta: composer Monty Criswell and David Ball}
 
 {start_of_verse: Verse 1}
 [G7]You caged the [C]wild man [F]that raged in[C]side me

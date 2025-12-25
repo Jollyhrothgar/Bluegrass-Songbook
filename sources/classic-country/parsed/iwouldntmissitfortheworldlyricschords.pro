@@ -1,6 +1,6 @@
 {meta: title I Wouldn't Miss It For The World}
 {meta: artist Hank Thompson}
-{meta: writer Orville Proctor and Preston Sergeant}
+{meta: composer Orville Proctor and Preston Sergeant}
 
 {start_of_verse: Verse 1}
 [C]You really had yourself a fling [F]all night parties everything

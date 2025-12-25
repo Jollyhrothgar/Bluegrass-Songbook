@@ -1,6 +1,6 @@
 {meta: title If It Weren't For Me}
 {meta: artist Ricky Van Shelton}
-{meta: writer Roger Brown and David Stephenson}
+{meta: composer Roger Brown and David Stephenson}
 
 {start_of_verse: Verse 1}
 [G7]If it weren't for [C]me and all the things I [F]did

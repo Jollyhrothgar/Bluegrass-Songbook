@@ -1,6 +1,6 @@
 {meta: title A Toast To The Bride}
 {meta: artist Stonewall Jackson}
-{meta: writer Steve Karliski}
+{meta: composer Steve Karliski}
 
 {start_of_verse: Verse 1}
 [C]Today's the day to laugh and [G7]shout

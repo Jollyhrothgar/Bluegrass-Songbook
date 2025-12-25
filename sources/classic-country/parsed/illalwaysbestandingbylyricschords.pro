@@ -1,6 +1,6 @@
 {meta: title I'll Always Be Standing By}
 {meta: artist Hank Locklin}
-{meta: writer A.M. Lyle and W. Locklin}
+{meta: composer A.M. Lyle and W. Locklin}
 
 {start_of_verse: Verse 1}
 [C]When your friends have turned you down 

@@ -1,6 +1,6 @@
 {meta: title Here Comes That Feeling}
 {meta: artist Brenda Lee}
-{meta: writer Dorsey Burnette and Joe Osborn}
+{meta: composer Dorsey Burnette and Joe Osborn}
 
 {start_of_verse: Verse 1}
 [C]Here comes that [Am]feeling [C]again and it ain't [Am]right

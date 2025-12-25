@@ -1,6 +1,6 @@
 {meta: title Give Me Heaven}
 {meta: artist Jimmy Newman}
-{meta: writer Randy Lee}
+{meta: composer Randy Lee}
 
 {start_of_verse: Verse 1}
 [C]Treat me mean and treat me bad 

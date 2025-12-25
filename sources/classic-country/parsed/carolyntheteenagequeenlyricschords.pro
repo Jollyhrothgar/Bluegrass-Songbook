@@ -1,6 +1,6 @@
 {meta: title Carolyn The Teenage Queen}
 {meta: artist The Lonesome River Band}
-{meta: writer Wendy Smith}
+{meta: composer Wendy Smith}
 
 {start_of_verse: Verse 1}
 [G]When I was pushing thirty [C]she was in her [G]teens

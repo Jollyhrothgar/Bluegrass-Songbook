@@ -1,6 +1,6 @@
 {meta: title Where I Come From}
 {meta: artist John Anderson}
-{meta: writer Kent M. Robbins}
+{meta: composer Kent M. Robbins}
 
 {start_of_verse: Verse 1}
 [Em]Country sun don't set on a big city skyline

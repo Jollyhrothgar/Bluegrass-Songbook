@@ -1,6 +1,6 @@
 {meta: title Glass On The Table}
 {meta: artist Wilburn Brothers}
-{meta: writer Vern Orr and John Newman}
+{meta: composer Vern Orr and John Newman}
 
 {start_of_verse: Verse 1}
 [C]In a tavern on the corner you'll [G7]find me every night

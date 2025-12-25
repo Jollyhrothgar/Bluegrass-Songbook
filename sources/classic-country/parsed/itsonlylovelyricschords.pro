@@ -1,5 +1,5 @@
 {meta: artist Elvis Presley}
-{meta: writer Steve Tyrell and Mark James}
+{meta: composer Steve Tyrell and Mark James}
 
 {start_of_verse: Verse 1}
 [C]I see the sunlight in her [F]hair

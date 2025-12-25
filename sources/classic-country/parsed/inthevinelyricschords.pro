@@ -1,6 +1,6 @@
 {meta: title In The Vine}
 {meta: artist Mel Tillis}
-{meta: writer Bun Wilson and Doc Richardson}
+{meta: composer Bun Wilson and Doc Richardson}
 
 {start_of_verse: Verse 1}
 In The Vine

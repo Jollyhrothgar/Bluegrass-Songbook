@@ -1,6 +1,6 @@
 {meta: title An Angel Sleeps Beside Me Every Night}
 {meta: artist Eddy Arnold}
-{meta: writer Gary S. Paxton}
+{meta: composer Gary S. Paxton}
 
 {start_of_verse: Verse 1}
 [C]An angel sleeps [Em]beside me every [F]night[Dm]   [C]

@@ -1,6 +1,6 @@
 {meta: title Keeper Of My Heart}
 {meta: artist Sonny James}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]Some men try to go on living [C]their lives [G]alone

@@ -1,6 +1,6 @@
 {meta: title Lord Help Me Be the Kind of Person}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G]I try to get up every morning

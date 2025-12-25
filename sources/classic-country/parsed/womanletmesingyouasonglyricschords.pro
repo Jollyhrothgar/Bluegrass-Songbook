@@ -1,6 +1,6 @@
 {meta: title Woman Let Me Sing You A Song}
 {meta: artist Vernon Oxford}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [C]Woman let me [G7]sing you a [C]song

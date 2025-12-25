@@ -1,6 +1,6 @@
 {meta: title Heavenly Love}
 {meta: artist The Blackwood Brothers}
-{meta: writer Dick Glasser and Nick Boldi}
+{meta: composer Dick Glasser and Nick Boldi}
 
 {start_of_verse: Verse 1}
 [G]Heavenly love was all that could help [C]me

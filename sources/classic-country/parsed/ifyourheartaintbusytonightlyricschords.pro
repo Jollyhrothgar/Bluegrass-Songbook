@@ -1,6 +1,6 @@
 {meta: title If Your Heart Ain't Busy Tonight}
 {meta: artist Tanya Tucker}
-{meta: writer Chris Waters and Tom Shapiro}
+{meta: composer Chris Waters and Tom Shapiro}
 
 {start_of_verse: Verse 1}
 [G]If your heart ain't busy tonight

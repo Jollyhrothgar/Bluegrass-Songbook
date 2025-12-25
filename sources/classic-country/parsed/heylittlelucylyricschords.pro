@@ -1,6 +1,6 @@
 {meta: title Hey Little Lucy}
 {meta: artist Conway Twitty}
-{meta: writer Aaron Schroeder, George Weiss, Sharon Silbert}
+{meta: composer Aaron Schroeder, George Weiss, Sharon Silbert}
 
 {start_of_verse: Verse 1}
 [C]Baby when I take you out tonight

@@ -1,6 +1,6 @@
 {meta: title I Cried Myself Awake}
 {meta: artist Norma Jean}
-{meta: writer Leroy Coates and Dale Davis}
+{meta: composer Leroy Coates and Dale Davis}
 
 {start_of_verse: Verse 1}
 [C]Last night I dreamed that [F]you told me good[C]bye

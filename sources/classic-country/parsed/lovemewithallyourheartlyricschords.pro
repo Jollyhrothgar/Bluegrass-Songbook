@@ -1,6 +1,6 @@
 {meta: title Love Me With All Your Heart}
 {meta: artist Johnny Rodriguez}
-{meta: writer Sunny Skylar, Mario Rigual, Carlos Rigual}
+{meta: composer Sunny Skylar, Mario Rigual, Carlos Rigual}
 
 {start_of_verse: Verse 1}
 [G]Cuando calienta el [Em]sol a quien la [Bm]playa

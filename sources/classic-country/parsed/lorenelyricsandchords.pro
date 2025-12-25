@@ -1,6 +1,6 @@
 {meta: title Lorene}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne and Buck Moore}
+{meta: composer Don Wayne and Buck Moore}
 
 {start_of_verse: Verse 1}
 [G]I was just twenty three when Lorene married me

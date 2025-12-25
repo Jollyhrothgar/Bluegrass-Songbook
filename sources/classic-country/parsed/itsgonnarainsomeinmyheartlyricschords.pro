@@ -1,6 +1,6 @@
 {meta: title It's Gonna Rain Some In My Heart}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Dub Murray}
+{meta: composer Sonny James and Dub Murray}
 
 {start_of_verse: Verse 1}
 [C]It's gonna rain some rain [G7]some in my [C]heart 

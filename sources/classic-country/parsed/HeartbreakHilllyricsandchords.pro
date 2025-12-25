@@ -1,6 +1,6 @@
 {meta: title Heartbreak Hill}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino and Al Downing}
+{meta: composer Antonio Domino and Al Downing}
 
 {start_of_verse: Verse 1}
 [C]I've got my suitcase in my hand

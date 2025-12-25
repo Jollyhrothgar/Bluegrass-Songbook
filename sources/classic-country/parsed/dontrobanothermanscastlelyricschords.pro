@@ -1,6 +1,6 @@
 {meta: title Don't Rob Another Man's Castle}
 {meta: artist Eddy Arnold}
-{meta: writer Jenny Lou Carson}
+{meta: composer Jenny Lou Carson}
 
 {start_of_verse: Verse 1}
 [C]They say a man's [G7]home is his [C]castle [C7]

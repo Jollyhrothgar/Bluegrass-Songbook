@@ -1,6 +1,6 @@
 {meta: title Well It's All Right}
 {meta: artist Connie Smith}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Well it's all right it's all right

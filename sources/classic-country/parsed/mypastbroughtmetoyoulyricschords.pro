@@ -1,6 +1,6 @@
 {meta: title My Past Brought Me To You}
 {meta: artist Ernest Tubb}
-{meta: writer Bill Brock}
+{meta: composer Bill Brock}
 
 {start_of_verse: Verse 1}
 [G]My [C]past brought me to [G]you your [D7]past brought you to [G]me

@@ -1,6 +1,6 @@
 {meta: title Wishing It Was You}
 {meta: artist Connie Francis}
-{meta: writer Joy Byers and Clyde Lovern Otis}
+{meta: composer Joy Byers and Clyde Lovern Otis}
 
 {start_of_verse: Verse 1}
 [G7]Tomo[C]rrow when I'm [E7]walking down the [A7]aisle

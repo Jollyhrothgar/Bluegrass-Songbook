@@ -1,6 +1,6 @@
 {meta: title One Christmas Eve Long Ago}
 {meta: artist Eddy Arnold}
-{meta: writer Steve Gibb}
+{meta: composer Steve Gibb}
 
 {start_of_verse: Verse 1}
 [C]No decorations [F]that I could [C]see

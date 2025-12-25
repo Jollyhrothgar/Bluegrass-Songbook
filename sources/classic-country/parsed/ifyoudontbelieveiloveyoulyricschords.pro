@@ -1,6 +1,6 @@
 {meta: title If You Don't Believe I Love You}
 {meta: artist Darrell McCall}
-{meta: writer Gene Sutton and Darrell McCall}
+{meta: composer Gene Sutton and Darrell McCall}
 
 {start_of_verse: Verse 1}
 [C]I’d crawl a million miles on my knees through flames

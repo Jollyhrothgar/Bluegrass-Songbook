@@ -1,6 +1,6 @@
 {meta: title Raindrops Falling In A River}
 {meta: artist Johnny Bush}
-{meta: writer Eddie Novacs}
+{meta: composer Eddie Novacs}
 
 {start_of_verse: Verse 1}
 [G]Raindrops falling in a [C]river

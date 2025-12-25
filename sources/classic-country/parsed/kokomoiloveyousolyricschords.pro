@@ -1,6 +1,6 @@
 {meta: title Ko Ko Mo I Love You So Counting Tears}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Forrest Wilson and Jake Porter}
+{meta: composer Forrest Wilson and Jake Porter}
 
 {start_of_verse: Verse 1}
 [G]Talk to me baby whisper in my ear

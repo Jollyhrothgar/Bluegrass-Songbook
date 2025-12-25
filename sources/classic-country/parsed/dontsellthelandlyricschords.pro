@@ -1,6 +1,6 @@
 {meta: title Don't Sell The Land}
 {meta: artist The Kentucky Gentlemen}
-{meta: writer Harold Macomber and John Morris}
+{meta: composer Harold Macomber and John Morris}
 
 {start_of_verse: Verse 1}
 [C]My daddy was born here here in these hills

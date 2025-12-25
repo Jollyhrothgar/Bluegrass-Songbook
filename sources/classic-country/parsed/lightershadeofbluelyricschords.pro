@@ -1,6 +1,6 @@
 {meta: title Lighter Shade Of Blue}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]You've walked out so many times

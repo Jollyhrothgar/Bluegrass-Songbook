@@ -1,6 +1,6 @@
 {meta: title Drinking My Way Back Home}
 {meta: artist Gene Watson}
-{meta: writer Don J. Scaife, Phil Thomas, Ronny Scaife}
+{meta: composer Don J. Scaife, Phil Thomas, Ronny Scaife}
 
 {start_of_verse: Verse 1}
 [G]I sobered up Houston in the bed of my pickup truck

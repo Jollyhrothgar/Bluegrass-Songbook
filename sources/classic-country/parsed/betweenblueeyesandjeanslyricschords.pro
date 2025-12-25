@@ -1,6 +1,6 @@
 {meta: title Between Blue Eyes And Jeans}
 {meta: artist Conway Twitty}
-{meta: writer Ken McDuffie}
+{meta: composer Ken McDuffie}
 
 {start_of_verse: Verse 1}
 [C]Somewhere between her blue eyes and jeans

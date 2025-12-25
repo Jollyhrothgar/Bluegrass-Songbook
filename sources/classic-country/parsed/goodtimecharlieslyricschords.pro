@@ -1,6 +1,6 @@
 {meta: title Good Time Charlie's}
 {meta: artist George Strait}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [G7]Oh I know a [C]place called Good Time Charley's

@@ -1,6 +1,6 @@
 {meta: title The Winner}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]The hulk of a man with a beer in is hand he [G7]looked like a drunk old fool

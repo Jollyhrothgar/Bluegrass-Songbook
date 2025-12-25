@@ -1,6 +1,6 @@
 {meta: title Everything I Am Loves You}
 {meta: artist Wilburn Brothers}
-{meta: writer Glen Johnson}
+{meta: composer Glen Johnson}
 
 {start_of_verse: Verse 1}
 [C]I'm not so tall I'm kind of [F]small 

@@ -1,6 +1,6 @@
 {meta: title How Can I Get You Out Of My Heart}
 {meta: artist Moe Bandy}
-{meta: writer Arthur Leo Owens}
+{meta: composer Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]It's late [G7]and the crowd is [C]leaving

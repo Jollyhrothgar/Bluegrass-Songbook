@@ -1,6 +1,6 @@
 {meta: title Southern Bound}
 {meta: artist Porter Wagoner}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]I'm a walkin' southern [G7]bound down the [C]highway

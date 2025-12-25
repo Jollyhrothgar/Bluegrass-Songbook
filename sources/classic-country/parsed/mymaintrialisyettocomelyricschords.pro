@@ -1,6 +1,6 @@
 {meta: title My Main Trial Is Yet To Come}
 {meta: artist Hank Williams}
-{meta: writer Pee Wee King and J.L. Franks}
+{meta: composer Pee Wee King and J.L. Franks}
 
 {start_of_verse: Verse 1}
 [C]Sitting alone [F]in my prison [C]cell

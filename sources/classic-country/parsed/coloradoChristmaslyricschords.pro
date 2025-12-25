@@ -1,6 +1,6 @@
 {meta: title Colorado Christmas}
 {meta: artist Nitty Gritty Dirt Band}
-{meta: writer Steve Goodman}
+{meta: composer Steve Goodman}
 
 {start_of_verse: Verse 1}
 [C]Lookin' out the window of this Hollywood [Dm]hotel

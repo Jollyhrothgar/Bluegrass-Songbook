@@ -1,6 +1,6 @@
 {meta: title The Good Lord Must Have Sent You}
 {meta: artist Faron Young}
-{meta: writer Faron Young and Webb Pierce}
+{meta: composer Faron Young and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]Oh the good Lord must have sent [G7]you down from [C]heaven

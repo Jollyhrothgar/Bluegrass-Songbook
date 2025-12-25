@@ -1,6 +1,6 @@
 {meta: title The Battle of Armageddon}
 {meta: artist Hank Williams Sr.}
-{meta: writer Roy Acuff and Odell McLeod}
+{meta: composer Roy Acuff and Odell McLeod}
 
 {start_of_verse: Verse 1}
 [C]There's a mighty battle coming and it's well now on it's way

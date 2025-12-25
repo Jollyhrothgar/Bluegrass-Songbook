@@ -1,6 +1,6 @@
 {meta: title Love Without You}
 {meta: artist Ricky Van Shelton}
-{meta: writer Charles Quillen and Jeff Pearson}
+{meta: composer Charles Quillen and Jeff Pearson}
 
 {start_of_verse: Verse 1}
 [C]You tell me life will go [F]on  

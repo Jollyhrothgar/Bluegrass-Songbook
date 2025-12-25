@@ -1,6 +1,6 @@
 {meta: title Oh Carolina}
 {meta: artist Vince Gill}
-{meta: writer Mark D. Sanders, Jim Elliott, Randy Albright}
+{meta: composer Mark D. Sanders, Jim Elliott, Randy Albright}
 
 {start_of_verse: Verse 1}
 [G]The sunrise through the evergreens [Em]another [G]day is [C]born

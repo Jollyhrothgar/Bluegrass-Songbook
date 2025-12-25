@@ -1,6 +1,6 @@
 {meta: title West Virginia Woman}
 {meta: artist Bobby Bare}
-{meta: writer Bobby Bare and Billy Joe Shaver}
+{meta: composer Bobby Bare and Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [C]I was New York City bound when I left my old [F]hometown

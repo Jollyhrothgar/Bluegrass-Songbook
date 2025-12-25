@@ -1,6 +1,6 @@
 {meta: title As Soon As I Touch Calvary}
 {meta: artist Paul Williams and The Victory Trio}
-{meta: writer Rusty Goodman}
+{meta: composer Rusty Goodman}
 
 {start_of_verse: Verse 1}
 [G]Friend don't worry about this heavy load I [C]carry

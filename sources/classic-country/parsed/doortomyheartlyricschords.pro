@@ -1,6 +1,6 @@
 {meta: title Door To My Heart}
 {meta: artist Buddy Holly}
-{meta: writer Bob Montgomery}
+{meta: composer Bob Montgomery}
 
 {start_of_verse: Verse 1}
 [C]I opened the [G7]door and left it [C]standing

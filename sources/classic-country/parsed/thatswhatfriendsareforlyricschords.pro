@@ -1,6 +1,6 @@
 {meta: title That's What Friends Are For}
 {meta: artist Barbara Mandrell}
-{meta: writer Ed Penney and Rob Parsons}
+{meta: composer Ed Penney and Rob Parsons}
 
 {start_of_verse: Verse 1}
 [D7]She was my [G]friend when I needed a friend

@@ -1,6 +1,6 @@
 {meta: title California Cottonfields}
 {meta: artist Merle Haggard}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]My drifting memory [D7]goes back to the [F]spring of [C]'43

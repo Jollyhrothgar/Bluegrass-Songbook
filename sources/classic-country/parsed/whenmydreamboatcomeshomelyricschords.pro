@@ -1,6 +1,6 @@
 {meta: title When My Dreamboat Comes Home}
 {meta: artist Patsy Cline}
-{meta: writer Cliff Friend and Dave Franklin}
+{meta: composer Cliff Friend and Dave Franklin}
 
 {start_of_verse: Verse 1}
 [C]When my dreamboat comes home

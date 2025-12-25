@@ -1,6 +1,6 @@
 {meta: title Boat Of Love}
 {meta: artist Bill Monroe}
-{meta: writer James B. Smith}
+{meta: composer James B. Smith}
 
 {start_of_verse: Verse 1}
 [G]I can hear the voice (I can hear the voice)

@@ -1,6 +1,6 @@
 {meta: title A Shot In The Dark}
 {meta: artist George Morgan}
-{meta: writer Roy Bennett and Sid Tepper}
+{meta: composer Roy Bennett and Sid Tepper}
 
 {start_of_verse: Verse 1}
 [G]I knew that I [D7]just had to [G]meet you the moment that [D7]you danced [E7]by

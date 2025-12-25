@@ -1,6 +1,6 @@
 {meta: title Memories Made This House}
 {meta: artist Mel Tillis}
-{meta: writer Marie Wilson}
+{meta: composer Marie Wilson}
 
 {start_of_verse: Verse 1}
 [F]Everywhere there's a [C]memory

@@ -1,6 +1,6 @@
 {meta: title I Don't Have a Reason To Go To California Anymore}
 {meta: artist Willie Nelson}
-{meta: writer Billy Don Burns and Hank Cochran}
+{meta: composer Billy Don Burns and Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]I meet her by the ocean  [C]lying in the California [G]sun

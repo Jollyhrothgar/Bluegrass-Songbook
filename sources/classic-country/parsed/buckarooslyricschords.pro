@@ -1,6 +1,6 @@
 {meta: title Buckaroos}
 {meta: artist Kenny Rogers}
-{meta: writer Kim Carnes and Dave Ellingson}
+{meta: composer Kim Carnes and Dave Ellingson}
 
 {start_of_verse: Verse 1}
 [C]I've been riding all night just to get here

@@ -1,6 +1,6 @@
 {meta: title It's My Way}
 {meta: artist Webb Pierce}
-{meta: writer Wayne Walker and Webb Pierce}
+{meta: composer Wayne Walker and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]I live every day [F]for you  I breath [G7]every breath for [C]you

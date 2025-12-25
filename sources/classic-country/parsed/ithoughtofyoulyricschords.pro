@@ -1,6 +1,6 @@
 {meta: title I Thought Of You}
 {meta: artist Connie Smith}
-{meta: writer Jimmy Rollins}
+{meta: composer Jimmy Rollins}
 
 {start_of_verse: Verse 1}
 [C]Last night another held me in his [G7]arms 

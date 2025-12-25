@@ -1,6 +1,6 @@
 {meta: title Rum is the Reason}
 {meta: artist Toby Keith}
-{meta: writer Scotty Emerick and Toby Keith}
+{meta: composer Scotty Emerick and Toby Keith}
 
 {start_of_verse: Verse 1}
 [G]I heard Davey Crockett had a [C]pint in his pocket

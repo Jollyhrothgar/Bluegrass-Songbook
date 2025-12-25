@@ -1,6 +1,6 @@
 {meta: title As Tears Go By}
 {meta: artist J.D. Crowe}
-{meta: writer Andrew Loog Oldham}
+{meta: composer Andrew Loog Oldham}
 
 {start_of_verse: Verse 1}
 [G]It is the [A7]evening of the [C]da-[D7]ay

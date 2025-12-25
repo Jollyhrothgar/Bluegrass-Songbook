@@ -1,6 +1,6 @@
 {meta: title Born To Love Me}
 {meta: artist Roy Orbison}
-{meta: writer Bob Morrison}
+{meta: composer Bob Morrison}
 
 {start_of_verse: Verse 1}
 [G]Not many'd say she's pretty  [C]cause they don't realize 

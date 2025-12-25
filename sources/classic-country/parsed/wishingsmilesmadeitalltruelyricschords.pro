@@ -1,6 +1,6 @@
 {meta: title Wishing Smiles Made It All True}
 {meta: artist Anne Murray}
-{meta: writer Richard Gael}
+{meta: composer Richard Gael}
 
 {start_of_verse: Verse 1}
 [G]How many times have I [C]heard you [G]say

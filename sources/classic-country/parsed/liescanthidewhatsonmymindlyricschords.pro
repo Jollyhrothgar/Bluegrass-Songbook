@@ -1,6 +1,6 @@
 {meta: title Lies Can't Hide What's On My Mind}
 {meta: artist Melba Montgomery}
-{meta: writer Melba Montgomery and Carl Montgomery}
+{meta: composer Melba Montgomery and Carl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]The nights I spend in [F]old familiar [C]places

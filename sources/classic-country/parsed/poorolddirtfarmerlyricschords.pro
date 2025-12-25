@@ -1,6 +1,6 @@
 {meta: title Poor Old Dirt Farmer}
 {meta: artist Levon Helm}
-{meta: writer Tracy Schwarz}
+{meta: composer Tracy Schwarz}
 
 {start_of_verse: Verse 1}
 [C]Oh the poor old dirt farmer he's [G7]lost all his [C]corn

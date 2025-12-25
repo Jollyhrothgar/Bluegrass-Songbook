@@ -1,6 +1,6 @@
 {meta: title Countrified}
 {meta: artist John Anderson}
-{meta: writer Tom Lazaros}
+{meta: composer Tom Lazaros}
 
 {start_of_verse: Verse 1}
 [C]I like pretty lights and city nights

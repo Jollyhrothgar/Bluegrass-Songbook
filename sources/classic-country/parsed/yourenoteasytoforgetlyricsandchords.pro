@@ -1,6 +1,6 @@
 {meta: title You're Not Easy to Forget}
 {meta: artist J.D. Crowe}
-{meta: writer Henry Davis and Cynthia Weil}
+{meta: composer Henry Davis and Cynthia Weil}
 
 {start_of_verse: Verse 1}
 [G]I make all the honky tonks and [C]taverns

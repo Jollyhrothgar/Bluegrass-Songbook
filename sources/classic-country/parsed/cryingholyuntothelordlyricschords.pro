@@ -1,6 +1,6 @@
 {meta: title Crying holy unto the Lord}
 {meta: artist J.D. Crowe}
-{meta: writer Irene Amburgey}
+{meta: composer Irene Amburgey}
 
 {start_of_verse: Verse 1}
 [G]Crying holy unto the Lord

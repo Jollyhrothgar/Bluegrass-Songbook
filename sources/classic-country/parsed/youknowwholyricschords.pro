@@ -1,6 +1,6 @@
 {meta: title You Know Who}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G7]I'm all choked [C]up but let me [F]thank you for the [C]party once again

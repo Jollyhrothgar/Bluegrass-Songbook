@@ -1,6 +1,6 @@
 {meta: title Blue Kentucky Girl}
 {meta: artist Loretta Lynn}
-{meta: writer Johnny Mullins}
+{meta: composer Johnny Mullins}
 
 {start_of_verse: Verse 1}
 [C]You left me for the [F]bright lights of the [C]town

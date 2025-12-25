@@ -1,6 +1,6 @@
 {meta: title Wires And Wood}
 {meta: artist Johnny Staats}
-{meta: writer Timothy C. Bays, Ron G. Sowell}
+{meta: composer Timothy C. Bays, Ron G. Sowell}
 
 {start_of_verse: Verse 1}
 John Middelton Van Meter, Jon Peter Wikstrom

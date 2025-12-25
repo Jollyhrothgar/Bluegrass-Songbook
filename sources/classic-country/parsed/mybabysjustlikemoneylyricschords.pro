@@ -1,6 +1,6 @@
 {meta: title My Baby's Just Like Money}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Jim Beck}
+{meta: composer Lefty Frizzell and Jim Beck}
 
 {start_of_verse: Verse 1}
 [C]Well my baby's just like money true while you hold her tight

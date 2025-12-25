@@ -1,6 +1,6 @@
 {meta: title Let Me Try}
 {meta: artist Randy Travis}
-{meta: writer Buddy Cannon and Allen Shamblin}
+{meta: composer Buddy Cannon and Allen Shamblin}
 
 {start_of_verse: Verse 1}
 [G]You say love  is just a [C]lie

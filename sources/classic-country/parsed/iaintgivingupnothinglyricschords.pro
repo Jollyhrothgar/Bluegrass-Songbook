@@ -1,6 +1,6 @@
 {meta: title I Ain't Giving Up Nothing}
 {meta: artist Mickey Gilley}
-{meta: writer Brook Benton and Clyde Otis}
+{meta: composer Brook Benton and Clyde Otis}
 
 {start_of_verse: Verse 1}
 [C]If you want me to love you you've gotta love me too

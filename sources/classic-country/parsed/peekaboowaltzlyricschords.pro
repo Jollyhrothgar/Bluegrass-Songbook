@@ -1,6 +1,6 @@
 {meta: title Peek A Boo Waltz}
 {meta: artist Redd Stewart}
-{meta: writer Elizabeth Breaux, Pee Wee King, Redd Stewart}
+{meta: composer Elizabeth Breaux, Pee Wee King, Redd Stewart}
 
 {start_of_verse: Verse 1}
 [C]Peek a boo peek a boo oh the fun that we knew

@@ -1,6 +1,6 @@
 {meta: title El Rancho De Rio Lyrics Chords}
 {meta: artist Jim Reeves}
-{meta: writer Tom Perryman}
+{meta: composer Tom Perryman}
 
 {start_of_verse: Verse 1}
 [G]I’m a happy go lucky vaquero from the ran[D7]cho 

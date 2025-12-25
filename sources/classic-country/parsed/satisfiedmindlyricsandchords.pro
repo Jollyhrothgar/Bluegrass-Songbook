@@ -1,6 +1,6 @@
 {meta: title Satisfied Mind}
 {meta: artist Randy Travis}
-{meta: writer Tony Arata}
+{meta: composer Tony Arata}
 
 {start_of_verse: Verse 1}
 [C]Many more miles were behind him than he had left to go

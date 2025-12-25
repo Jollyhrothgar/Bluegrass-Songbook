@@ -1,6 +1,6 @@
 {meta: title Surprise Birthday Party}
 {meta: artist Vernon Oxford}
-{meta: writer Buddy Harris}
+{meta: composer Buddy Harris}
 
 {start_of_verse: Verse 1}
 [C]She's planning me a surprise birthday [F]party

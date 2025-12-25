@@ -1,6 +1,6 @@
 {meta: title Don't Let True Love Slip Away}
 {meta: artist Tony Booth}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]Who's gonna [F]love you after [Em]I've gone [C]away

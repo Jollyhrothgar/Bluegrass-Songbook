@@ -1,6 +1,6 @@
 {meta: title Hands}
 {meta: artist Crystal Gayle}
-{meta: writer Sandy Mason and Bill Backer}
+{meta: composer Sandy Mason and Bill Backer}
 
 {start_of_verse: Verse 1}
 [C]Hands we've got hands 

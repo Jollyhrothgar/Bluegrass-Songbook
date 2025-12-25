@@ -1,6 +1,6 @@
 {meta: title Riding The Range For Jesus}
 {meta: artist Slim Whitman}
-{meta: writer Vep Ellis}
+{meta: composer Vep Ellis}
 
 {start_of_verse: Verse 1}
 [C]We're riding the range for [G7]Jesus

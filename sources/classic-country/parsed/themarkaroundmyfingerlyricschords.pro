@@ -1,6 +1,6 @@
 {meta: title The Mark Around My Finger}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ira Kosloff and Alice Simms}
+{meta: composer Ira Kosloff and Alice Simms}
 
 {start_of_verse: Verse 1}
 [C]There’s a mark around my finger where a [F]ring used to [D7]be

@@ -1,6 +1,6 @@
 {meta: title It Should Have Been Love By Now}
 {meta: artist Barbara Mandrell and Lee Greenwood}
-{meta: writer Jan Crutchfield and Paul Harrison}
+{meta: composer Jan Crutchfield and Paul Harrison}
 
 {start_of_verse: Verse 1}
 [C]It's never gonna [Em]happen [F]together 

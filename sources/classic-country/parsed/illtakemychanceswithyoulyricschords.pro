@@ -1,6 +1,6 @@
 {meta: title I'll Take My Chances With You}
 {meta: artist Tammy Wynette}
-{meta: writer Marge Barton and Freed McRae}
+{meta: composer Marge Barton and Freed McRae}
 
 {start_of_verse: Verse 1}
 [C]I'll take my [D7]chances with [G7]you 

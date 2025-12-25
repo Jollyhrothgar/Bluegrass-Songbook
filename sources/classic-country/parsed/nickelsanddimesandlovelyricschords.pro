@@ -1,6 +1,6 @@
 {meta: title Nickels And Dimes And Love}
 {meta: artist Charlie Pride}
-{meta: writer Steve Clark}
+{meta: composer Steve Clark}
 
 {start_of_verse: Verse 1}
 [C]Remember when pocket change was all we [F]had

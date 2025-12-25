@@ -1,6 +1,6 @@
 {meta: title Swimming Upstream}
 {meta: artist Ricky Van Shelton}
-{meta: writer Gary Nicholson and Bucky Jones}
+{meta: composer Gary Nicholson and Bucky Jones}
 
 {start_of_verse: Verse 1}
 [C]God bless my daddy I learned so much from him

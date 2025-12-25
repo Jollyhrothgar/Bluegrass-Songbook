@@ -1,6 +1,6 @@
 {meta: title I Just Started Hating Cheating Songs Today}
 {meta: artist Moe Bandy}
-{meta: writer Arthur Leo Owens and Sanger D. Shafer}
+{meta: composer Arthur Leo Owens and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Today the midnight oil [F]is all over [C]someone

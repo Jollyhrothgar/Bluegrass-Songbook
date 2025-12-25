@@ -1,6 +1,6 @@
 {meta: title Bayou Boys}
 {meta: artist Eddy Raven}
-{meta: writer Eddy Raven, Troy Seals, Frank Myers}
+{meta: composer Eddy Raven, Troy Seals, Frank Myers}
 
 {start_of_verse: Verse 1}
 [G]Passion in the backseat [D7]parked out in the cane

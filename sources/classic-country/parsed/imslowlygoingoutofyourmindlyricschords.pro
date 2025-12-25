@@ -1,6 +1,6 @@
 {meta: title I'm Slowly Going Out Of Your Mind}
 {meta: artist Hank Locklin}
-{meta: writer Becki Bluefield}
+{meta: composer Becki Bluefield}
 
 {start_of_verse: Verse 1}
 [G]I'm [C]slow[D7]ly a going out of your [G]mind

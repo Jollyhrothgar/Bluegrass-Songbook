@@ -1,6 +1,6 @@
 {meta: title Afraid}
 {meta: artist Willie Nelson}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]Afraid to tell you  [F]how much I [C]care 

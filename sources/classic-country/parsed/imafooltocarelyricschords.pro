@@ -1,6 +1,6 @@
 {meta: title I'm a Fool to Care}
 {meta: artist Jim Reeves}
-{meta: writer Ted Daffan}
+{meta: composer Ted Daffan}
 
 {start_of_verse: Verse 1}
 [G7]I'm a fool to [C]care 

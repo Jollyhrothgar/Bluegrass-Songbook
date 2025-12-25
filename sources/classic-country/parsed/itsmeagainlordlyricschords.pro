@@ -1,6 +1,6 @@
 {meta: title It's Me Again Lord}
 {meta: artist J.D. Crowe}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [G]Troubles come and [C]I can't find an [G]answer

@@ -1,6 +1,6 @@
 {meta: title Don't Be Ashamed Of Your Age}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker and Bob Wills}
+{meta: composer Cindy Walker and Bob Wills}
 
 {start_of_verse: Verse 1}
 [C]Don’t be a[G7]shamed of your [C]age

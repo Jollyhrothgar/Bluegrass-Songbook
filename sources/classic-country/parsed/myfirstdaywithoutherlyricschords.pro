@@ -1,6 +1,6 @@
 {meta: title My First Day Without Her}
 {meta: artist Ray Price}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [A7]Is that the sun that I see [D7]shinning

@@ -1,6 +1,6 @@
 {meta: title Cryin' Loud}
 {meta: artist Porter Wagoner}
-{meta: writer Jimmy Self}
+{meta: composer Jimmy Self}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm all alone in my lonely room

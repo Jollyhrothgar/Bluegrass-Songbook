@@ -1,6 +1,6 @@
 {meta: title Nasty Dan}
 {meta: artist Johnny Cash}
-{meta: writer Jerry Moss}
+{meta: composer Jerry Moss}
 
 {start_of_verse: Verse 1}
 [C]Nasty Dan was the meanest man I [F]ever knew

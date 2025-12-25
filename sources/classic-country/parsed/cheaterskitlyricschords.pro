@@ -1,6 +1,6 @@
 {meta: title Cheater's Kit}
 {meta: artist Tommy Overstreet}
-{meta: writer Rory Bourke, Gene Dobbins, Johnny Wilson}
+{meta: composer Rory Bourke, Gene Dobbins, Johnny Wilson}
 
 {start_of_verse: Verse 1}
 [C]I've been watching you watching [F]Mary [C]at the [Dm]office

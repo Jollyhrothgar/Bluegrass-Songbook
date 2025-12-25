@@ -1,6 +1,6 @@
 {meta: title Goody Goody Gumdrop}
 {meta: artist Wilburn Brothers}
-{meta: writer Shirl Milete}
+{meta: composer Shirl Milete}
 
 {start_of_verse: Verse 1}
 [C]Oh goody goody gumdrop [F]go do a flip flop 

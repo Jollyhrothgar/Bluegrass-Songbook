@@ -1,6 +1,6 @@
 {meta: title What Do They Know}
 {meta: artist Tanya Tucker}
-{meta: writer Richard Ross and Donny Kees}
+{meta: composer Richard Ross and Donny Kees}
 
 {start_of_verse: Verse 1}
 [G]They say life goes [C]on  [D7]I’ll find true love [G]again

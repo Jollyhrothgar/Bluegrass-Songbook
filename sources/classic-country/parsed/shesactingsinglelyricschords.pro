@@ -1,6 +1,6 @@
 {meta: title She's Acting Single}
 {meta: artist Gary Stewart}
-{meta: writer Henry Hey and Stephanie Saraco}
+{meta: composer Henry Hey and Stephanie Saraco}
 
 {start_of_verse: Verse 1}
 [C]I've seen [F]men look at [G7]her be[C]fore

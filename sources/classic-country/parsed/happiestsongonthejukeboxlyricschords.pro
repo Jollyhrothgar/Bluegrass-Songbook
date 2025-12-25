@@ -1,6 +1,6 @@
 {meta: title Happiest Song On The Jukebox}
 {meta: artist Charley Pride}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]Play the happiest [F]song on the [C]jukebox

@@ -1,6 +1,6 @@
 {meta: title It Amazes Me}
 {meta: artist Charley Pride}
-{meta: writer Wayland Holyfield and Allen Reynolds}
+{meta: composer Wayland Holyfield and Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [G]Anytime the [C]world is gettin' to [G]me

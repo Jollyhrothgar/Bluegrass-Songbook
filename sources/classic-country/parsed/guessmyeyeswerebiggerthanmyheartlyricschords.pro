@@ -1,6 +1,6 @@
 {meta: title Guess My Eyes Were Bigger Than My Heart}
 {meta: artist Conway Twitty}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]I saw her and told myself she was my dream come [F]true

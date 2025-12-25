@@ -1,6 +1,6 @@
 {meta: title Little Ole Wine Drinker Me}
 {meta: artist Lefty Frizzell}
-{meta: writer Tommy "Snuff" Garrett, Dick Jennings, Hank Mills}
+{meta: composer Tommy "Snuff" Garrett, Dick Jennings, Hank Mills}
 
 {start_of_verse: Verse 1}
 [G]I'm praying for [C]rain in Cali[G]fornia

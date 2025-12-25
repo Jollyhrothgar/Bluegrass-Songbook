@@ -1,6 +1,6 @@
 {meta: title Mexican Minutes}
 {meta: artist Brooks and Dunn}
-{meta: writer Kent M. Robbins and Jim Messina}
+{meta: composer Kent M. Robbins and Jim Messina}
 
 {start_of_verse: Verse 1}
 [G7]Up in the city it's crazy and [C]concrete cold

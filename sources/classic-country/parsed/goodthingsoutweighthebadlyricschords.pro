@@ -1,6 +1,6 @@
 {meta: title Good Things Outweigh The Bad}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Josh Graves and Jake Lambert}
+{meta: composer Josh Graves and Jake Lambert}
 
 {start_of_verse: Verse 1}
 [G]I've been sitting here thinking  [C]back over my [G]life

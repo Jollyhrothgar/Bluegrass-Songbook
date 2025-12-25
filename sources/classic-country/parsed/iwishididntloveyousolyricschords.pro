@@ -1,6 +1,6 @@
 {meta: title I Wish I Didn’t Love You So}
 {meta: artist Eddy Arnold}
-{meta: writer Frank Loesser}
+{meta: composer Frank Loesser}
 
 {start_of_verse: Verse 1}
 [C]I  [Em]wish I didn't [Dm]love you [C]so

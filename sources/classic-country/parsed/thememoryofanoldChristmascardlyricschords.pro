@@ -1,6 +1,6 @@
 {meta: title The Memory Of An Old Christmas Card}
 {meta: artist Jim Reeves}
-{meta: writer Vaughn Horton}
+{meta: composer Vaughn Horton}
 
 {start_of_verse: Verse 1}
 [G]It’s the [D7]memory of an old Christmas [G]card

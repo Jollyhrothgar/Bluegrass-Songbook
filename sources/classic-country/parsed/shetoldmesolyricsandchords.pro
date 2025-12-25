@@ -1,6 +1,6 @@
 {meta: title She Told Me So}
 {meta: artist Cal Smith}
-{meta: writer Johnny Colmus}
+{meta: composer Johnny Colmus}
 
 {start_of_verse: Verse 1}
 [C]The world is square I know it is she told me [G7]so

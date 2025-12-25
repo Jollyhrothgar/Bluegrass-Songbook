@@ -1,6 +1,6 @@
 {meta: title She Has No Memory Of Me}
 {meta: artist Gene Watson}
-{meta: writer Troy Graves and Randy Scruggs}
+{meta: composer Troy Graves and Randy Scruggs}
 
 {start_of_verse: Verse 1}
 [C]She has the new dress I [A]bought [F]her

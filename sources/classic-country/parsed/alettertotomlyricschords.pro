@@ -1,6 +1,6 @@
 {meta: title A Letter To Tom}
 {meta: artist The Country Gentleman}
-{meta: writer John Duffey}
+{meta: composer John Duffey}
 
 {start_of_verse: Verse 1}
 [G]I wandered [C]by the [G]village Tom I [D7]set beneath the [G]tree

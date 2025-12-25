@@ -1,6 +1,6 @@
 {meta: title By The Light Of the Silvery Moon}
 {meta: artist Burl Ives}
-{meta: writer Gus Edwards and Edward Madden}
+{meta: composer Gus Edwards and Edward Madden}
 
 {start_of_verse: Verse 1}
 [G]By the light [G7]of the Silvery [C]Moon

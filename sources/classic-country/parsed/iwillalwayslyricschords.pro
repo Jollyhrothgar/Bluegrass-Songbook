@@ -1,6 +1,6 @@
 {meta: title I Will Always}
 {meta: artist Jack Greene}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [G]Loving you I will [D7]always 

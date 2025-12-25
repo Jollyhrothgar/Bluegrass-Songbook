@@ -1,6 +1,6 @@
 {meta: title What A Woman Wants To Hear}
 {meta: artist Rhonda Vincent}
-{meta: writer Connie Leigh Sullivan and Rhonda Lea Vincent}
+{meta: composer Connie Leigh Sullivan and Rhonda Lea Vincent}
 
 {start_of_verse: Verse 1}
 [G]You're the man who knows just how to [D7]charm me

@@ -1,6 +1,6 @@
 {meta: title Sea Cruise}
 {meta: artist Billy Crash Craddock}
-{meta: writer Huey Smith and Johnny Vincent}
+{meta: composer Huey Smith and Johnny Vincent}
 
 {start_of_verse: Verse 1}
 [G]Old man rhythm gettin' in my shoes

@@ -1,6 +1,6 @@
 {meta: title Trapped In An Old Country Song}
 {meta: artist Charley Pride}
-{meta: writer Jack Clement and Don Robertson}
+{meta: composer Jack Clement and Don Robertson}
 
 {start_of_verse: Verse 1}
 [G]Did you ever just [C]feel like a [G]movie

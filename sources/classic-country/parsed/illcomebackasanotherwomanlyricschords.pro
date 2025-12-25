@@ -1,6 +1,6 @@
 {meta: title I'll Come Back As Another Woman}
 {meta: artist Tanya Tucker}
-{meta: writer Kent M. Robbins and Richard E. Carpenter}
+{meta: composer Kent M. Robbins and Richard E. Carpenter}
 
 {start_of_verse: Verse 1}
 [Am]You never gave me back the love I gave to [F]you

@@ -1,6 +1,6 @@
 {meta: title You Keep Right On Loving Me}
 {meta: artist Faron Young}
-{meta: writer Don Devaney}
+{meta: composer Don Devaney}
 
 {start_of_verse: Verse 1}
 [G]Putting on your makeup I can see the lines you're trying hard to [D7]hide

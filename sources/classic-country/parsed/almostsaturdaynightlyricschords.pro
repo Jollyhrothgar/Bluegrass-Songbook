@@ -1,6 +1,6 @@
 {meta: title Almost Saturday Night}
 {meta: artist Ricky Nelson}
-{meta: writer John C. Fogerty}
+{meta: composer John C. Fogerty}
 
 {start_of_verse: Verse 1}
 [C]Outside my [F]window [C]I can hear the [Am]radio 

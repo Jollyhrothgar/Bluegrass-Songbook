@@ -1,6 +1,6 @@
 {meta: title This Is Me}
 {meta: artist Randy Travis}
-{meta: writer Tom Shapiro and Thom McHugh}
+{meta: composer Tom Shapiro and Thom McHugh}
 
 {start_of_verse: Verse 1}
 [C]Lately I get the feelin' there's a [F]feelin' that your holdin' [C]in [F]

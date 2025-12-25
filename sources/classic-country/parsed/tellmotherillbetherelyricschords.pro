@@ -1,6 +1,6 @@
 {meta: title Tell Mother I'll Be There}
 {meta: artist Mac Wiseman}
-{meta: writer Charles M. Fillmore}
+{meta: composer Charles M. Fillmore}
 
 {start_of_verse: Verse 1}
 [G]When I was but a little child [C]how well I re[A7]collect

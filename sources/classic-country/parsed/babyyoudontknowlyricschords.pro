@@ -1,6 +1,6 @@
 {meta: title Baby You Don't Know}
 {meta: artist Ricky Nelson}
-{meta: writer Dave Burgess and Jerry Fuller}
+{meta: composer Dave Burgess and Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [G]Baby you don't know what you're doing to [Em]me

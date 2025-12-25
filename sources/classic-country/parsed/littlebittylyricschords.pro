@@ -1,6 +1,6 @@
 {meta: title Little Bitty}
 {meta: artist Alan Jackson}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]You have a little love on a [G7]little honey[C]moon

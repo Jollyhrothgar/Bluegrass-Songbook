@@ -1,6 +1,6 @@
 {meta: title Circumstances}
 {meta: artist Billy Walker}
-{meta: writer Ronnie Self}
+{meta: composer Ronnie Self}
 
 {start_of_verse: Verse 1}
 [C]That lonely night we got carried away with each [G7]other

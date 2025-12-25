@@ -1,6 +1,6 @@
 {meta: title I Was There}
 {meta: artist The Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]When she bought her first heels I was [D7]there

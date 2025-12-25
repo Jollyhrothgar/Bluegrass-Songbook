@@ -1,6 +1,6 @@
 {meta: title One Night Fever}
 {meta: artist Mel Tills}
-{meta: writer Bob Morrison and Johnny McRae}
+{meta: composer Bob Morrison and Johnny McRae}
 
 {start_of_verse: Verse 1}
 [F]One night [C]fever

@@ -1,6 +1,6 @@
 {meta: title Country Music Nightmare}
 {meta: artist Boxcar Willie}
-{meta: writer and recorded by Boxcar Willie}
+{meta: composer and recorded by Boxcar Willie}
 
 {start_of_verse: Verse 1}
 [C]It was a [F]country music nightmare the [C]worst I’d ever seen

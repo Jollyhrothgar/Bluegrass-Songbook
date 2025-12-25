@@ -1,6 +1,6 @@
 {meta: title My Daddy Doll}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill, Carmol Taylor, Tammy Wynette}
+{meta: composer Billy Sherrill, Carmol Taylor, Tammy Wynette}
 
 {start_of_verse: Verse 1}
 [G]My little girl was [G7]playing with her [C]friend from down the [G]street

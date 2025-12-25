@@ -1,6 +1,6 @@
 {meta: title Willie The Wandering Gypsy And Me}
 {meta: artist Waylon Jennings}
-{meta: writer Billy Joe Shavers}
+{meta: composer Billy Joe Shavers}
 
 {start_of_verse: Verse 1}
 [G]Three fingers whiskey [C]pleasures the drinkers

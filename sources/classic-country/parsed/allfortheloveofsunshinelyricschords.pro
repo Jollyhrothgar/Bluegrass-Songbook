@@ -1,6 +1,6 @@
 {meta: title All for the Love of Sunshine}
 {meta: artist Hank Williams Jr.}
-{meta: writer Mike Curb and Lalo Schifrin}
+{meta: composer Mike Curb and Lalo Schifrin}
 
 {start_of_verse: Verse 1}
 [C]The darkness of my world [G7]was all cleared away

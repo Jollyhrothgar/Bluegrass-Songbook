@@ -1,6 +1,6 @@
 {meta: title Chattanooga Shoeshine Boy}
 {meta: artist Red Foley}
-{meta: writer Harry Stone and Jack Stapp}
+{meta: composer Harry Stone and Jack Stapp}
 
 {start_of_verse: Verse 1}
 [C]Have you ever passed the corner of fourth and grand

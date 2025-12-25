@@ -1,6 +1,6 @@
 {meta: title Feeling The Weight Of My Chains}
 {meta: artist Cal Smith}
-{meta: writer Jimmy Payne}
+{meta: composer Jimmy Payne}
 
 {start_of_verse: Verse 1}
 [G]I nearly made it all the way to work this [C]morning

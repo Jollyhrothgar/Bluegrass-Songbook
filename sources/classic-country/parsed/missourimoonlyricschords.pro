@@ -1,6 +1,6 @@
 {meta: title Missouri Moon}
 {meta: artist Rhonda Vincent}
-{meta: writer Jennifer Lynn Strickland}
+{meta: composer Jennifer Lynn Strickland}
 
 {start_of_verse: Verse 1}
 [C]There’s a full moon [F]out to[C]night

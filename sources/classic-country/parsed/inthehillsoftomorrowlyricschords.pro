@@ -1,6 +1,6 @@
 {meta: title In The Hills Of Tomorrow}
 {meta: artist Eddy Arnold}
-{meta: writer Eddy Arnold, Owen Bradley, Fred Rose}
+{meta: composer Eddy Arnold, Owen Bradley, Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]I'll tell you a story an old [F]fashion [C]story

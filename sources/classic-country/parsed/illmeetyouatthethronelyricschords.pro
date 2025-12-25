@@ -1,6 +1,6 @@
 {meta: title I'll Meet You At The Throne}
 {meta: artist Red Steagall}
-{meta: writer Larry McWhorter}
+{meta: composer Larry McWhorter}
 
 {start_of_verse: Verse 1}
 [C]Dear friend we’ve been through many miles and years

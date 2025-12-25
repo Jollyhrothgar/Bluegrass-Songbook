@@ -1,6 +1,6 @@
 {meta: title Blues Country Style}
 {meta: artist Marty Robbins}
-{meta: writer Jerry Livingston and Mack David}
+{meta: composer Jerry Livingston and Mack David}
 
 {start_of_verse: Verse 1}
 [C]The city streets are friendless and cold 

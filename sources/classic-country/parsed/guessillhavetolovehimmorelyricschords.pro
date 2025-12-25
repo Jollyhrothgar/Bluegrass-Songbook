@@ -1,6 +1,6 @@
 {meta: title Guess I'll Have To Love Him More}
 {meta: artist Tanya Tucker}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]She's such a [Am]woman [D7]  and I'm just a [G]girl

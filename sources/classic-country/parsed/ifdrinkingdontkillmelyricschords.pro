@@ -1,6 +1,6 @@
 {meta: title If Drinking Don’t Kill Me}
 {meta: artist George Jones}
-{meta: writer Harlan Sanders and Rick Baresford}
+{meta: composer Harlan Sanders and Rick Baresford}
 
 {start_of_verse: Verse 1}
 [C]The bars are all closed

@@ -1,6 +1,6 @@
 {meta: title Someone Had to Teach You}
 {meta: artist Wade Hayes}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Yes I'll take you back again  you knew I [C]would

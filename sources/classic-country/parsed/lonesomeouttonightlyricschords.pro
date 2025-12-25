@@ -1,6 +1,6 @@
 {meta: title Lonesome Out Tonight}
 {meta: artist Ferlin Husky}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [F]Oh it's [G7]lonesome out [C]tonight

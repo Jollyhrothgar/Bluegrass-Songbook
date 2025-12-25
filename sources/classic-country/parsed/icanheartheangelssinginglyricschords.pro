@@ -1,6 +1,6 @@
 {meta: title I Can Hear The Angels Singing}
 {meta: artist Don Reno and Red Smiley}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [G]I can hear the angels singing

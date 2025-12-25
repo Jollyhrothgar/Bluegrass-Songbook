@@ -1,6 +1,6 @@
 {meta: title Rock of Ages Keep My Soul}
 {meta: artist Doyle Lawson}
-{meta: writer Luther G. Presley}
+{meta: composer Luther G. Presley}
 
 {start_of_verse: Verse 1}
 [G]Oh Rock of Ages (oh Rock Of Ages) [C]cleft for [G]me ([D7]cleft for [G]me)

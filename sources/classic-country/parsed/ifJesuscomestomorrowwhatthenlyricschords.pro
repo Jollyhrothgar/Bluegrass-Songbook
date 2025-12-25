@@ -1,6 +1,6 @@
 {meta: title If Jesus Comes Tomorrow What Then}
 {meta: artist Vern Gosdin}
-{meta: writer Vern Gosdin and Max D. Barnes}
+{meta: composer Vern Gosdin and Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]If Jesus comes tomorrow to [F]spend some time with [C]you 

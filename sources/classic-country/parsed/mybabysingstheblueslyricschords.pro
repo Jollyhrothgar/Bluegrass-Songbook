@@ -1,6 +1,6 @@
 {meta: title My Baby Sings The Blues}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]She could dance and she could sing

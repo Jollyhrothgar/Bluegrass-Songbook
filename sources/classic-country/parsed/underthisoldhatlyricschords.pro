@@ -1,6 +1,6 @@
 {meta: title Under This Old Hat}
 {meta: artist Chris LeDoux}
-{meta: writer Mike Anthony and Larry Cordle}
+{meta: composer Mike Anthony and Larry Cordle}
 
 {start_of_verse: Verse 1}
 [G]I never was the kind to wear my [D7]feelings on my sleeve

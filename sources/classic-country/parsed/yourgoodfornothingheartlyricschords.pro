@@ -1,6 +1,6 @@
 {meta: title Your Good For Nothing Heart}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce, George Williams, Edward Scalzi}
+{meta: composer Webb Pierce, George Williams, Edward Scalzi}
 
 {start_of_verse: Verse 1}
 [C]Your good for nothing heart won't ever let to [G7]start

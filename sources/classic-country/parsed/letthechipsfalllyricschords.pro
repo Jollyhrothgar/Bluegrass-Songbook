@@ -1,6 +1,6 @@
 {meta: title Let The Chips Fall}
 {meta: artist Charley Pride}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]I'm finding that [F]I'm spending [C]most of my [G7]time

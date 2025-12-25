@@ -1,6 +1,6 @@
 {meta: title Bob Away My Blues}
 {meta: artist Clint Black}
-{meta: writer Toy Caldwell}
+{meta: composer Toy Caldwell}
 
 {start_of_verse: Verse 1}
 [C]Well I'm going down to the [A7]river I've got a [D7]cane pole [G7]in my [C]hand

@@ -1,6 +1,6 @@
 {meta: title Tell Me With Your Heart}
 {meta: artist David Ball}
-{meta: writer Chris Carmichael and David Ball}
+{meta: composer Chris Carmichael and David Ball}
 
 {start_of_verse: Verse 1}
 [C]I wanna [Am]know if this [G7]dream is real

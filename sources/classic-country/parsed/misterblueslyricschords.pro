@@ -1,6 +1,6 @@
 {meta: title Mister Blues}
 {meta: artist Ernest Tubb}
-{meta: writer Jack Toombs}
+{meta: composer Jack Toombs}
 
 {start_of_verse: Verse 1}
 [G]When I come home at night [D7]I find him sitting there

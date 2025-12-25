@@ -1,6 +1,6 @@
 {meta: title She Ain't Your Ordinary Girl}
 {meta: artist Alabama}
-{meta: writer Robert Jason}
+{meta: composer Robert Jason}
 
 {start_of_verse: Verse 1}
 [G]She ain't your ordinary [Em]she ain't your ordinary [C]girl [G]

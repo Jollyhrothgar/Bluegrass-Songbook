@@ -1,6 +1,6 @@
 {meta: title Love You Ain't Seen The Last Of Me}
 {meta: artist Tracy Byrd}
-{meta: writer Kendal Franceschi}
+{meta: composer Kendal Franceschi}
 
 {start_of_verse: Verse 1}
 Love You Ain't Seen The Last Of Me

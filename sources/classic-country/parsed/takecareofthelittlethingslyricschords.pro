@@ -1,6 +1,6 @@
 {meta: title Take Care Of The Little Things}
 {meta: artist Charley Pride}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [G]Stranger livin' in my house I'm writing this letter to [G7]you

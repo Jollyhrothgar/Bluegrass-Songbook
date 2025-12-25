@@ -1,6 +1,6 @@
 {meta: title There's No Room in My Heart For the Blues}
 {meta: artist Hank Williams}
-{meta: writer Fred Rose and Zeb Turner}
+{meta: composer Fred Rose and Zeb Turner}
 
 {start_of_verse: Verse 1}
 [C]There's no room in my heart for the [F]blues

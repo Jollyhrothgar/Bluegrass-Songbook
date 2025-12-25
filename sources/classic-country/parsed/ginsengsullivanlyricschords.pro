@@ -1,6 +1,6 @@
 {meta: title Ginseng Sullivan}
 {meta: artist Tony Rice}
-{meta: writer Norman Blake}
+{meta: composer Norman Blake}
 
 {start_of_verse: Verse 1}
 [C]About three miles from the Battelle yard

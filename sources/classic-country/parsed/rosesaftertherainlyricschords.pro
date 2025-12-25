@@ -1,6 +1,6 @@
 {meta: title Roses After The Rain}
 {meta: artist Ricky Van Shelton}
-{meta: writer Billy Burnette and Brian Tabor}
+{meta: composer Billy Burnette and Brian Tabor}
 
 {start_of_verse: Verse 1}
 [G]Dark clouds roll in from the [Em]horizon

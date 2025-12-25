@@ -1,6 +1,6 @@
 {meta: title Every Time You Leave}
 {meta: artist Emmylou Harris}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]E-very [Em]time you [F]leave you [G7]tear the soul from [C]me 

@@ -1,6 +1,6 @@
 {meta: title I Ain't Mad I'm Just Leavin'}
 {meta: artist George Hamilton IV}
-{meta: writer Johnny Russell}
+{meta: composer Johnny Russell}
 
 {start_of_verse: Verse 1}
 [G]Well my old shirt pocket's filled with [D7]everything I own

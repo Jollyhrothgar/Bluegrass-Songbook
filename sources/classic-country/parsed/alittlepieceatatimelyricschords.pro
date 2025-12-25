@@ -1,6 +1,6 @@
 {meta: title A Little Piece At A Time}
 {meta: artist Bill Haley}
-{meta: writer Neal Merritt and Shorty Hall}
+{meta: composer Neal Merritt and Shorty Hall}
 
 {start_of_verse: Verse 1}
 [G7]First the [C]look in your [Em]eyes [F]made me rea[G7]lize

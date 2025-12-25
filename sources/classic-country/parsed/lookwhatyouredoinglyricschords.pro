@@ -1,6 +1,6 @@
 {meta: title Look What You're Doing}
 {meta: artist Dottie West}
-{meta: writer Curly Putman and Dee Moeller}
+{meta: composer Curly Putman and Dee Moeller}
 
 {start_of_verse: Verse 1}
 [G7]I  [C]know you [G7]think you are [C]hurting me

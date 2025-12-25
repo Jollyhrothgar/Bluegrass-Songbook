@@ -1,6 +1,6 @@
 {meta: title Don't Break Me Easy}
 {meta: artist Don Gibson}
-{meta: writer Max Worley}
+{meta: composer Max Worley}
 
 {start_of_verse: Verse 1}
 [C]Don't break me [F]easy [G7]put me down [C]hard

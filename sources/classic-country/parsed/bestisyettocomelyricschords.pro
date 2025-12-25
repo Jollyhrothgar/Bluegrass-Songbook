@@ -1,6 +1,6 @@
 {meta: title Best Is Yet To Come}
 {meta: artist Ricky Van Shelton}
-{meta: writer Colleen Peterson, Nancy Simmonds, Cyril Rawson}
+{meta: composer Colleen Peterson, Nancy Simmonds, Cyril Rawson}
 
 {start_of_verse: Verse 1}
 [C]Life can't get better than [D7]this

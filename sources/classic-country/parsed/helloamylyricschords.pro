@@ -1,6 +1,6 @@
 {meta: title Hello Amy}
 {meta: artist The Everly Brothers}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [C]Hello Amy  it's [G7]funny meeting you this [C]way

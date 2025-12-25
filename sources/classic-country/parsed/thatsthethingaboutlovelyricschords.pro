@@ -1,6 +1,6 @@
 {meta: title That's The Thing About Love}
 {meta: artist Don Williams}
-{meta: writer Richard Leigh and Gary Nicholson}
+{meta: composer Richard Leigh and Gary Nicholson}
 
 {start_of_verse: Verse 1}
 [Em][C]Sometimes [F]you feel lost [G7]and far [C]from [G7][F][Em]home

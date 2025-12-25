@@ -1,6 +1,6 @@
 {meta: title Someone New}
 {meta: artist Keith Whitley}
-{meta: writer Skip Ewing}
+{meta: composer Skip Ewing}
 
 {start_of_verse: Verse 1}
 [G]She ain't wearing tight blue [D7]jeans anymore

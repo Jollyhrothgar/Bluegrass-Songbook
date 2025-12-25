@@ -1,6 +1,6 @@
 {meta: title Remembering}
 {meta: artist Webb Pierce}
-{meta: writer Sylvia Fisher and Leon Miller}
+{meta: composer Sylvia Fisher and Leon Miller}
 
 {start_of_verse: Verse 1}
 [C]I don't regret the years I've spent loving only [G7]you

@@ -1,6 +1,6 @@
 {meta: title Will The Angels Play Their Harps For Me}
 {meta: artist Doyle Lawson}
-{meta: writer Walter Hirsch and Monte Wilhite}
+{meta: composer Walter Hirsch and Monte Wilhite}
 
 {start_of_verse: Verse 1}
 [C]I was passing by a churchyard in the city

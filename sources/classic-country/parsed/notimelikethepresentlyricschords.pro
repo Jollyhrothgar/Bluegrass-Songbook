@@ -1,6 +1,6 @@
 {meta: title No Time Like The Present}
 {meta: artist Wynn Stewart}
-{meta: writer Beverly Stewart and Don Pearce}
+{meta: composer Beverly Stewart and Don Pearce}
 
 {start_of_verse: Verse 1}
 [C]Your eyes [Em]reveal what your [C]lips conceal[F] 

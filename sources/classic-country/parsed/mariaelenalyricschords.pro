@@ -1,6 +1,6 @@
 {meta: title Maria Elena}
 {meta: artist Jim Reeves}
-{meta: writer S.K. Russell and Lorenzo Barcalata}
+{meta: composer S.K. Russell and Lorenzo Barcalata}
 
 {start_of_verse: Verse 1}
 [G7]Maria Elena [C]you're the answer to a [Dm]prayer

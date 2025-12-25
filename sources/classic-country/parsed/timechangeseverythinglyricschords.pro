@@ -1,6 +1,6 @@
 {meta: title Time Changes Everything}
 {meta: artist Bob Wills}
-{meta: writer Tommy Duncan}
+{meta: composer Tommy Duncan}
 
 {start_of_verse: Verse 1}
 [C]There Was a time When I Thought of no [G7]other 

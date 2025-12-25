@@ -1,6 +1,6 @@
 {meta: title Is This The Beginning Of The End}
 {meta: artist Merle Haggard}
-{meta: writer Wynn Stewart, Wally Lewis, Billy Mize}
+{meta: composer Wynn Stewart, Wally Lewis, Billy Mize}
 
 {start_of_verse: Verse 1}
 [C]I just don't seem to know you [F]anymore 

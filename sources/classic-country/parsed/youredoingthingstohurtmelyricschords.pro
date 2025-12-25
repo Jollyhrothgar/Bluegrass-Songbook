@@ -1,6 +1,6 @@
 {meta: title You're Doing Things To Hurt Me}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew, Tommy Blake, W.S. Stevenson}
+{meta: composer Carl Belew, Tommy Blake, W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [G]In the dim lights of the tavern

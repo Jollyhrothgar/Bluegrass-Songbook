@@ -1,6 +1,6 @@
 {meta: title Living Like There's No Tomorrow}
 {meta: artist Keith Whitley}
-{meta: writer Roger Murrah and Jim McBride}
+{meta: composer Roger Murrah and Jim McBride}
 
 {start_of_verse: Verse 1}
 [C]You said I'd live to re[F]gret it

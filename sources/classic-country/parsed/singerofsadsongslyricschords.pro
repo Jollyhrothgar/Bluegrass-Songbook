@@ -1,6 +1,6 @@
 {meta: title Singer Of Sad Songs}
 {meta: artist Waylon Jennings}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [C]Widow Jones couldn't [F]make it on her [C]own

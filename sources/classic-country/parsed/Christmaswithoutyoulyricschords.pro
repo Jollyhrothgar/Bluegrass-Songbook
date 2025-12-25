@@ -1,6 +1,6 @@
 {meta: title Christmas Without You}
 {meta: artist Dolly Parton and Kenny Rogers}
-{meta: writer Dolly Parton and Steve Goldstein}
+{meta: composer Dolly Parton and Steve Goldstein}
 
 {start_of_verse: Verse 1}
 [C]Christmas [F]without you white [G7]Christmas and [C]I'm [Am]blue

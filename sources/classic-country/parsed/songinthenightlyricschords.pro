@@ -1,6 +1,6 @@
 {meta: title Song In The Night}
 {meta: artist Johnny Duncan}
-{meta: writer Bobby Smith}
+{meta: composer Bobby Smith}
 
 {start_of_verse: Verse 1}
 [G]The whole world's asleep  [B7]and it's so quiet here

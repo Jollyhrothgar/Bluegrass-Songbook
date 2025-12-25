@@ -1,6 +1,6 @@
 {meta: title Now The Day Is Over}
 {meta: artist Ray Price}
-{meta: writer Sabine Baring, John E. Gould, J. Barnby}
+{meta: composer Sabine Baring, John E. Gould, J. Barnby}
 
 {start_of_verse: Verse 1}
 [F](Now the [D7]day is [C]over

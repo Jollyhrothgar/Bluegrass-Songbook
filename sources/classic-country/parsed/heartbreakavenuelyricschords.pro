@@ -1,6 +1,6 @@
 {meta: title Heartbreak Avenue}
 {meta: artist Carl Smith}
-{meta: writer Mel Foree}
+{meta: composer Mel Foree}
 
 {start_of_verse: Verse 1}
 [C]I’m alone in a house made of [G7]sorrow 

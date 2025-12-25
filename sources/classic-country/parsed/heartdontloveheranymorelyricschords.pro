@@ -1,6 +1,6 @@
 {meta: title Heart (Don't Love Her Anymore)}
 {meta: artist Lefty Frizzel}
-{meta: writer A.C. Solberg}
+{meta: composer A.C. Solberg}
 
 {start_of_verse: Verse 1}
 [C]Heart [Em]please pay a[F]ttention

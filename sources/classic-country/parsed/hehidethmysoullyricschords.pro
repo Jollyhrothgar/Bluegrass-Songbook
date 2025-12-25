@@ -1,6 +1,6 @@
 {meta: title He Hideth My Soul}
 {meta: artist Eddy Arnold}
-{meta: writer Fanny Crosby and Wm. Kirkpatrick}
+{meta: composer Fanny Crosby and Wm. Kirkpatrick}
 
 {start_of_verse: Verse 1}
 [C]A wonderful Savior is [F]Jesus my [C]Lord

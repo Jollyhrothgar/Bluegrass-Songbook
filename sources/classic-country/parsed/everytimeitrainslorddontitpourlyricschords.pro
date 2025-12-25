@@ -1,6 +1,6 @@
 {meta: title Every Time It Rains (Lord Don't It Pour)}
 {meta: artist George Strait}
-{meta: writer Charlie Craig and Keith Stegall}
+{meta: composer Charlie Craig and Keith Stegall}
 
 {start_of_verse: Verse 1}
 [C]Every time my ship comes in

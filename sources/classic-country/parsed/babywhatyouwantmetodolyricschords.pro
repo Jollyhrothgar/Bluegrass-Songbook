@@ -1,6 +1,6 @@
 {meta: title Baby What You Want Me To Do}
 {meta: artist Everly Brothers}
-{meta: writer Jimmy Reed}
+{meta: composer Jimmy Reed}
 
 {start_of_verse: Verse 1}
 [C]You got me running got me hiding

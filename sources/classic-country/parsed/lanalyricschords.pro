@@ -1,6 +1,6 @@
 {meta: title Lana}
 {meta: artist Roy Orbison}
-{meta: writer Joe Melson and Roy Orbison}
+{meta: composer Joe Melson and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [C]Ling-a ling-a-ling-a ling-a ling-a-ling

@@ -1,6 +1,6 @@
 {meta: title A Sinner's Prayer}
 {meta: artist Eddy Arnold}
-{meta: writer Alberta McEnery and Jimmie Davis}
+{meta: composer Alberta McEnery and Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [C]A sinner's prayer is never [F]answered

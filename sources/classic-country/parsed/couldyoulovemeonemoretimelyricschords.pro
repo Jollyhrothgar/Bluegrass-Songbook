@@ -1,6 +1,6 @@
 {meta: title Could You Love Me One More Time}
 {meta: artist Ricky Skaggs}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]Could you love me one more [F]time

@@ -1,6 +1,6 @@
 {meta: title Jealous Lies}
 {meta: artist Ray Price}
-{meta: writer Chuck Rogers}
+{meta: composer Chuck Rogers}
 
 {start_of_verse: Verse 1}
 [C]Jealous lies are what you're [F]telling

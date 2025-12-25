@@ -1,6 +1,6 @@
 {meta: title Lonely People}
 {meta: artist Eddy Arnold}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Late at night a disc jockey plays a [D7]sad song by request

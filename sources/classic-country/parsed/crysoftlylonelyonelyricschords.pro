@@ -1,6 +1,6 @@
 {meta: title Cry Softly Lonely One}
 {meta: artist Roy Orbison}
-{meta: writer Don Gant and Joe Melson}
+{meta: composer Don Gant and Joe Melson}
 
 {start_of_verse: Verse 1}
 [G]Cry softly lonely one it's over it's said it's [Am]done

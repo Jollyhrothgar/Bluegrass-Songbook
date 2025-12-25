@@ -1,6 +1,6 @@
 {meta: title I'd Like To Have That One Back}
 {meta: artist George Strait}
-{meta: writer Bill Shore, Aaron Barker, Rick West}
+{meta: composer Bill Shore, Aaron Barker, Rick West}
 
 {start_of_verse: Verse 1}
 [C]I heard somebody speak her name 

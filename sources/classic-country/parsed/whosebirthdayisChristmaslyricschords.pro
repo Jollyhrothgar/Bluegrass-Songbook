@@ -1,6 +1,6 @@
 {meta: title Whose Birthday Is Christmas}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 Intro:

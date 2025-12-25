@@ -1,6 +1,6 @@
 {meta: title Five Fingers To Spare}
 {meta: artist Connie Smith}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [G]Love for [D7]you has been so strong like a [G]fool I've gone along

@@ -1,6 +1,6 @@
 {meta: title Here In Love}
 {meta: artist Ronnie Milsap}
-{meta: writer Kent M. Robbins}
+{meta: composer Kent M. Robbins}
 
 {start_of_verse: Verse 1}
 [C]Our neighbors are in Rio and [F]wanted us to know

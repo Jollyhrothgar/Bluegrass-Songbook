@@ -1,6 +1,6 @@
 {meta: title Willie's Guitar}
 {meta: artist John Anderson}
-{meta: writer John Phillips and Ray Stephenson}
+{meta: composer John Phillips and Ray Stephenson}
 
 {start_of_verse: Verse 1}
 [G7]The [C]hole in [F]old Willie [D7]Nelson's [G7]guitar

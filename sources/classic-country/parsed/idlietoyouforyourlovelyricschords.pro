@@ -1,6 +1,6 @@
 {meta: title I'd Lie To You For Your Love}
 {meta: artist The Bellamy Brothers}
-{meta: writer Frankie Miller, Jeff Barry, Howard Bellamy}
+{meta: composer Frankie Miller, Jeff Barry, Howard Bellamy}
 
 {start_of_verse: Verse 1}
 [G]I watched you walk into the room

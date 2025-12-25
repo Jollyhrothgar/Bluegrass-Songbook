@@ -1,6 +1,6 @@
 {meta: title The Hunger}
 {meta: artist Charley Pride}
-{meta: writer Lee Fry}
+{meta: composer Lee Fry}
 
 {start_of_verse: Verse 1}
 [C]They said in her younger [Am]days 

@@ -1,6 +1,6 @@
 {meta: title Lord Is That Me}
 {meta: artist Jack Greene}
-{meta: writer Dallas Frazier and Sanger D. Shafer}
+{meta: composer Dallas Frazier and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]I can see a [G7]long line of [Am]cars with their [G7]headlights [C]on [G7]

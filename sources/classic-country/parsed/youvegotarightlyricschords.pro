@@ -1,6 +1,6 @@
 {meta: title You've Got A Right}
 {meta: artist John Conlee}
-{meta: writer Bruce Channel and Kieran Kane}
+{meta: composer Bruce Channel and Kieran Kane}
 
 {start_of_verse: Verse 1}
 [C]Autumn leaves have started falling time is passing by

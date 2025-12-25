@@ -1,6 +1,6 @@
 {meta: title The Kentuckian Song}
 {meta: artist Anita Carter}
-{meta: writer Irving Gordon}
+{meta: composer Irving Gordon}
 
 {start_of_verse: Verse 1}
 [C]I see my darling in [F]each spray of summer [C]sunlight

@@ -1,6 +1,6 @@
 {meta: title Misery In My Soul}
 {meta: artist Marty Robbins}
-{meta: writer Don Winters and Dennis Winters}
+{meta: composer Don Winters and Dennis Winters}
 
 {start_of_verse: Verse 1}
 [C]I got a misery in my soul

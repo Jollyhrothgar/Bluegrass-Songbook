@@ -1,6 +1,6 @@
 {meta: title For The Memories}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [C]We've gone as far together as [F]love will let us [C]go

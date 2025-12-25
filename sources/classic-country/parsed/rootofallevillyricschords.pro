@@ -1,6 +1,6 @@
 {meta: title Root Of All Evil}
 {meta: artist Jean Shepard}
-{meta: writer Jeri Jones}
+{meta: composer Jeri Jones}
 
 {start_of_verse: Verse 1}
 [G]You've heard that old story ever since time [C]began

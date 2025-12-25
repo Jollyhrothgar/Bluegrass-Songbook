@@ -1,6 +1,6 @@
 {meta: title I Can Sail To China}
 {meta: artist John Conlee}
-{meta: writer John Grazier}
+{meta: composer John Grazier}
 
 {start_of_verse: Verse 1}
 [G]You put me on a cloud with your first kiss

@@ -1,6 +1,6 @@
 {meta: title I'll Always Remember You}
 {meta: artist George Strait}
-{meta: writer Dean Dillon, Bubba Strait, George Strait}
+{meta: composer Dean Dillon, Bubba Strait, George Strait}
 
 {start_of_verse: Verse 1}
 [G]It all started back in 198[Am]1

@@ -1,6 +1,6 @@
 {meta: title Alone}
 {meta: artist Waylon Jennings}
-{meta: writer Dee Moeller}
+{meta: composer Dee Moeller}
 
 {start_of_verse: Verse 1}
 [C]Isn't there anyone who'll take me like I am

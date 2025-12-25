@@ -1,6 +1,6 @@
 {meta: title The Call}
 {meta: artist Anne Murray}
-{meta: writer Gene Maclellan}
+{meta: composer Gene Maclellan}
 
 {start_of_verse: Verse 1}
 [G]It's a long distance phone and I feel so alone here [D7]without him

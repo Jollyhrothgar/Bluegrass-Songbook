@@ -1,6 +1,6 @@
 {meta: title When It's Christmas Time In Texas}
 {meta: artist George Strait}
-{meta: writer Benny McArthur}
+{meta: composer Benny McArthur}
 
 {start_of_verse: Verse 1}
 [C]When it's Christmas [F]time in [C]Texas 

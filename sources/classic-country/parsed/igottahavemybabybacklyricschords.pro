@@ -1,6 +1,6 @@
 {meta: title I Gotta Have My Baby Back}
 {meta: artist Hank Thompson}
-{meta: writer Floyd Tillman}
+{meta: composer Floyd Tillman}
 
 {start_of_verse: Verse 1}
 [C]Baby [E7]baby I [A7]miss you so very much

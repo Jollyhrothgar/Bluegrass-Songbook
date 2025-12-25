@@ -1,6 +1,6 @@
 {meta: title In The Shadows Again}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Lee Emerson}
+{meta: composer Lee Emerson}
 
 {start_of_verse: Verse 1}
 [G]You say you're completely over him

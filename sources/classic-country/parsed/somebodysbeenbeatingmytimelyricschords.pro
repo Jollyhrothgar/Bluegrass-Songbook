@@ -1,6 +1,6 @@
 {meta: title Somebody’s Been Beating My Time}
 {meta: artist Eddy Arnold}
-{meta: writer Zeke Clements}
+{meta: composer Zeke Clements}
 
 {start_of_verse: Verse 1}
 [G]Somebody’s been beating my time

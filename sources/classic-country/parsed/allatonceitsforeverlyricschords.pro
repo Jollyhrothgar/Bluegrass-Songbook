@@ -1,6 +1,6 @@
 {meta: title All At Once It's Forever Lyrics chords}
 {meta: artist Faron Young}
-{meta: writer Billy Deaton, Hilda Young, Cile Davis}
+{meta: composer Billy Deaton, Hilda Young, Cile Davis}
 
 {start_of_verse: Verse 1}
 [G]All at [C]once it's [D7]forever

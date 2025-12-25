@@ -1,6 +1,6 @@
 {meta: title I'm Your Woman}
 {meta: artist Jeanne Pruett}
-{meta: writer Bud Johnson}
+{meta: composer Bud Johnson}
 
 {start_of_verse: Verse 1}
 [C]I'm a ship in a storm

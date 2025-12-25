@@ -1,6 +1,6 @@
 {meta: title Night Is The Longest Time Of Day}
 {meta: artist Mel Tillis}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [D7]When the [G]daylight is gone and you've [Am]got no place to go

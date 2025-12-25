@@ -1,6 +1,6 @@
 {meta: title Same Old Story Same Old Lie}
 {meta: artist Norma Jean}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [G]Oo-[C]ooo-[D7]ohh  [G]same old story [D7]same old l[G]ie

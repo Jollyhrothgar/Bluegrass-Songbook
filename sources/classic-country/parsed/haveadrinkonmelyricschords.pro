@@ -1,6 +1,6 @@
 {meta: title Have A Drink On Me}
 {meta: artist Mac Wiseman}
-{meta: writer Peter Buchanan and Lonnie Donegan}
+{meta: composer Peter Buchanan and Lonnie Donegan}
 
 {start_of_verse: Verse 1}
 [D7]Hey hey everybody drink on [G]me

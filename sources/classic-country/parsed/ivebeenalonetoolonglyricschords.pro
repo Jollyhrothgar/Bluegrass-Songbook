@@ -1,6 +1,6 @@
 {meta: title I've Been Alone Too Long}
 {meta: artist Charly McClain}
-{meta: writer Cynthia Weil and Mark James}
+{meta: composer Cynthia Weil and Mark James}
 
 {start_of_verse: Verse 1}
 [C]Funny how I can [F]go on living

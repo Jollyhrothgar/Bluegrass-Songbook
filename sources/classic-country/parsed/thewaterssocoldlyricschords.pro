@@ -1,6 +1,6 @@
 {meta: title The Water's So Cold}
 {meta: artist Stonewall Jackson}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]The crest of the waves [F]break over my [C]head

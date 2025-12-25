@@ -1,6 +1,6 @@
 {meta: title Behind the Tear}
 {meta: artist Sonny James}
-{meta: writer Ned Miller and Sue Miller}
+{meta: composer Ned Miller and Sue Miller}
 
 {start_of_verse: Verse 1}
 [C]Behind the tear there's [G7]a hurt behind the hurt a broken [C]heart

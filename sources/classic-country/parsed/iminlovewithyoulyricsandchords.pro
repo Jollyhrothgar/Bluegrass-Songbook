@@ -1,6 +1,6 @@
 {meta: title I'm in Love With You}
 {meta: artist Kitty Wells}
-{meta: writer Benny Martin}
+{meta: composer Benny Martin}
 
 {start_of_verse: Verse 1}
 [C]I'm in love with you and I wish I knew

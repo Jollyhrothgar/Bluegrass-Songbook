@@ -1,6 +1,6 @@
 {meta: title Crazy Every Time}
 {meta: artist Tracy Byrd}
-{meta: writer Casey Beathard, Billy Currington, Dan Demay}
+{meta: composer Casey Beathard, Billy Currington, Dan Demay}
 
 {start_of_verse: Verse 1}
 [C]When we heard that train a comin' 

@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Heart}
 {meta: artist Charlie Walker}
-{meta: writer Ralph Smith}
+{meta: composer Ralph Smith}
 
 {start_of_verse: Verse 1}
 [C]Your honky tonk heart would rather be [G7]where

@@ -1,6 +1,6 @@
 {meta: title I'm On My Way}
 {meta: artist Red Steagall}
-{meta: writer Rebb Firman and Laura Powers}
+{meta: composer Rebb Firman and Laura Powers}
 
 {start_of_verse: Verse 1}
 [C]I’m on my way  to [F]Bethle[C]hem  

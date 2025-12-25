@@ -1,6 +1,6 @@
 {meta: title I Don't Know Why I Love You But I Do}
 {meta: artist Fats Domino}
-{meta: writer Paul Gayten and Bobby Charles}
+{meta: composer Paul Gayten and Bobby Charles}
 
 {start_of_verse: Verse 1}
 [G]I don't know why I [E7]love you but I [Am]do

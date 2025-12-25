@@ -1,6 +1,6 @@
 {meta: title Love I Couldn't Give}
 {meta: artist Faron Young}
-{meta: writer Chuck Rogers}
+{meta: composer Chuck Rogers}
 
 {start_of_verse: Verse 1}
 [C]Across the room an empty bed 

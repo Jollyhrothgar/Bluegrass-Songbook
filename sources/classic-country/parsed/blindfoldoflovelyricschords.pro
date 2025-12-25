@@ -1,6 +1,6 @@
 {meta: title Blindfold Of Love}
 {meta: artist George Jones}
-{meta: writer Dallas Frazier and Clarence R. Selman}
+{meta: composer Dallas Frazier and Clarence R. Selman}
 
 {start_of_verse: Verse 1}
 [G]I keep bumping into trees

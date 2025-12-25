@@ -1,6 +1,6 @@
 {meta: title Where Love Begins}
 {meta: artist Gene Watson}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]Come in pretty lady you've just made my [F]night

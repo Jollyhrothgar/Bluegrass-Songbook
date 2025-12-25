@@ -1,6 +1,6 @@
 {meta: title Gotta Lotta Blues To Lose Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Jimmy Gatele}
+{meta: composer Jimmy Gatele}
 
 {start_of_verse: Verse 1}
 [C]Gotta lotta [F]blues to [C]lose guess by now you've [F]heard the [C]news

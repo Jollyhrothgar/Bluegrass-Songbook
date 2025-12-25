@@ -1,6 +1,6 @@
 {meta: title Don't Neglect The Roses}
 {meta: artist Larry Sparks}
-{meta: writer Emma Smith}
+{meta: composer Emma Smith}
 
 {start_of_verse: Verse 1}
 [G]There stands a rose down in your garden

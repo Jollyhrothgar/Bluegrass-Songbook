@@ -1,6 +1,6 @@
 {meta: title Five Minutes More}
 {meta: artist Jim Reeves}
-{meta: writer Sammy Cahn and Jule Styne}
+{meta: composer Sammy Cahn and Jule Styne}
 
 {start_of_verse: Verse 1}
 [G]Give me five minutes more only [C]five minutes [A7]more

@@ -1,6 +1,6 @@
 {meta: title Guilty Of Dreaming}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Hugh Ashley}
+{meta: composer Hugh Ashley}
 
 {start_of_verse: Verse 1}
 [G]I told my friends I had you charmed 

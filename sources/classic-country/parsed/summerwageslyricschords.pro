@@ -1,6 +1,6 @@
 {meta: title Summer Wages}
 {meta: artist Doyle Lawson}
-{meta: writer Ian Tyson}
+{meta: composer Ian Tyson}
 
 {start_of_verse: Verse 1}
 Summer Wages

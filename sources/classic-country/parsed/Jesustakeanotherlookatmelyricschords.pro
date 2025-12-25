@@ -1,6 +1,6 @@
 {meta: title Jesus Take Another Look At Me}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]Jesus take [F]another look at [C]me

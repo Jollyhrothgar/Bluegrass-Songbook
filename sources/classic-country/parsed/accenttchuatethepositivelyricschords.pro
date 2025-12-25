@@ -1,6 +1,6 @@
 {meta: title Ac-Cent-Tchu-Ate The Positive}
 {meta: artist Willie Nelson}
-{meta: writer Johnny Mercer and Harold Arlen}
+{meta: composer Johnny Mercer and Harold Arlen}
 
 {start_of_verse: Verse 1}
 [C]You've got to Ac-Cent-Tchu-Ate the positive [G7]eliminate the negative

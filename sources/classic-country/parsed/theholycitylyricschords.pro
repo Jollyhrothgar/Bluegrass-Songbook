@@ -1,6 +1,6 @@
 {meta: title The Holy City}
 {meta: artist Doyle Lawson}
-{meta: writer Eddie Burns and S. Newkirk}
+{meta: composer Eddie Burns and S. Newkirk}
 
 {start_of_verse: Verse 1}
 [C]There’s a city holy city where the [F]streets are paved with [C]gold

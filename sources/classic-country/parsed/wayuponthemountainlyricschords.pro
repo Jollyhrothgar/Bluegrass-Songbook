@@ -1,6 +1,6 @@
 {meta: title Way Up On The Mountain}
 {meta: artist Connie Smith}
-{meta: writer Ira Louvin and Anne Young}
+{meta: composer Ira Louvin and Anne Young}
 
 {start_of_verse: Verse 1}
 [C]I was down in the valley way down [G7]in the [C]valley

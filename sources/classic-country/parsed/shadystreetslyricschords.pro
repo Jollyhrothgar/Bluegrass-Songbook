@@ -1,6 +1,6 @@
 {meta: title Shady Streets}
 {meta: artist Gary Stewart}
-{meta: writer Billy Ray Reynolds, Dickey Betts, Dan Toler}
+{meta: composer Billy Ray Reynolds, Dickey Betts, Dan Toler}
 
 {start_of_verse: Verse 1}
 [G]Shadows falling  [C]on a Sunday after[G]noon [C]   [G]

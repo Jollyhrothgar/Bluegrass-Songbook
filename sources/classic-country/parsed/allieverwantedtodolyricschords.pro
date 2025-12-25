@@ -1,6 +1,6 @@
 {meta: title All I Ever Wanted To Do}
 {meta: artist Mel Tillis}
-{meta: writer Jim Owen}
+{meta: composer Jim Owen}
 
 {start_of_verse: Verse 1}
 [G]You think you took her from [Bm]me

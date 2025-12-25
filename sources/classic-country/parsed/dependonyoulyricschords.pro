@@ -1,6 +1,6 @@
 {meta: title Depend On You}
 {meta: artist Tanya Tucker}
-{meta: writer Parker McGee}
+{meta: composer Parker McGee}
 
 {start_of_verse: Verse 1}
 [G]Broken glass lies on the [Em]bedroom floor

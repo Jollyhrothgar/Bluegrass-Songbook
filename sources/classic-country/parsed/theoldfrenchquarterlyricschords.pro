@@ -1,6 +1,6 @@
 {meta: title The Old French Quarter}
 {meta: artist Billy Walker}
-{meta: writer Cliff Crofford}
+{meta: composer Cliff Crofford}
 
 {start_of_verse: Verse 1}
 [C]In the old French Quarter in New [G7]Orleans

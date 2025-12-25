@@ -1,6 +1,6 @@
 {meta: title Beyond You}
 {meta: artist Crystal Gayle}
-{meta: writer Bill Gatzimos and Crystal Gayle}
+{meta: composer Bill Gatzimos and Crystal Gayle}
 
 {start_of_verse: Verse 1}
 [G]Nobody [D7]holds me [C]like you [G]can 

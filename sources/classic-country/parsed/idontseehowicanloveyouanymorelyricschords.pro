@@ -1,6 +1,6 @@
 {meta: title I Don't See How I Can Love You Anymore}
 {meta: artist Charley Pride}
-{meta: writer Max D. Barnes and Maria Houston}
+{meta: composer Max D. Barnes and Maria Houston}
 
 {start_of_verse: Verse 1}
 [C]I can feel the warmth of [F]you against my [C]skin

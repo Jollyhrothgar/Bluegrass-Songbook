@@ -1,6 +1,6 @@
 {meta: title Love Me Tonight}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]I been lonesome I been [F]empty 

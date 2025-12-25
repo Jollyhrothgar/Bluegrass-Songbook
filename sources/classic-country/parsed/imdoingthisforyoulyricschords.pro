@@ -1,6 +1,6 @@
 {meta: title I'm Doing This For You}
 {meta: artist Waylon Jennings}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I'm coming back to you one more time

@@ -1,6 +1,6 @@
 {meta: title Another Cup Of Memories}
 {meta: artist Billy Crash Craddock}
-{meta: writer Dale Morris}
+{meta: composer Dale Morris}
 
 {start_of_verse: Verse 1}
 [G]Put one out light one up pour [C]myself another [G]cup

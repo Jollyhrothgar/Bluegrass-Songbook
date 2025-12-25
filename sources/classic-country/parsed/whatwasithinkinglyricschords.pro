@@ -1,6 +1,6 @@
 {meta: title What Was I Thinking}
 {meta: artist Gene Watson}
-{meta: writer Skip Ewing and James Dean Hicks}
+{meta: composer Skip Ewing and James Dean Hicks}
 
 {start_of_verse: Verse 1}
 [C]Hey what was I thinking I wasn't even [F]drinking

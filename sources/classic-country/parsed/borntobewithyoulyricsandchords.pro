@@ -1,6 +1,6 @@
 {meta: title Born to be With You Lyrics and Chords}
 {meta: artist Sonny James}
-{meta: writer Don Robertson}
+{meta: composer Don Robertson}
 
 {start_of_verse: Verse 1}
 [C]B-y your [G7]s-ide [C]sat-isfied

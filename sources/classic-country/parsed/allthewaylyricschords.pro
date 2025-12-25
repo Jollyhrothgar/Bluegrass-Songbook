@@ -1,6 +1,6 @@
 {meta: title All The Way}
 {meta: artist Tanya Tucker}
-{meta: writer Bob Morrison and Jim Zerface}
+{meta: composer Bob Morrison and Jim Zerface}
 
 {start_of_verse: Verse 1}
 [C]I came close to fallin' a time or two before

@@ -1,6 +1,6 @@
 {meta: title How Long Is Forever}
 {meta: artist Ray Price}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]I fell too hard and much too deep in [G7]love with you

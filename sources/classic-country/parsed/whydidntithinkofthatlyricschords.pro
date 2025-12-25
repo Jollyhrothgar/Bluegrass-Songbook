@@ -1,6 +1,6 @@
 {meta: title Why Didn't I Think Of That}
 {meta: artist Charley Pride}
-{meta: writer Jack Greene and Clay Allen}
+{meta: composer Jack Greene and Clay Allen}
 
 {start_of_verse: Verse 1}
 [D7]I hear your [G]new love sends you 

@@ -1,6 +1,6 @@
 {meta: title Wife's Little Pleasures}
 {meta: artist John Anderson}
-{meta: writer Buck Moore, Tony Stampley, Mentor Williams}
+{meta: composer Buck Moore, Tony Stampley, Mentor Williams}
 
 {start_of_verse: Verse 1}
 [C]I've always been a two fisted [F]drinker

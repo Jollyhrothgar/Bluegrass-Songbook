@@ -1,6 +1,6 @@
 {meta: title Hasta Luego (See You Later)}
 {meta: artist Hank Locklin}
-{meta: writer Johnny Hicks}
+{meta: composer Johnny Hicks}
 
 {start_of_verse: Verse 1}
 [G7]Adios ana hasta [C]luego

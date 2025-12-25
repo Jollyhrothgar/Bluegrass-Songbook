@@ -1,6 +1,6 @@
 {meta: title Hobo And The Rose}
 {meta: artist Webb Pierce}
-{meta: writer Vincent Matthews and Don Vinson}
+{meta: composer Vincent Matthews and Don Vinson}
 
 {start_of_verse: Verse 1}
 [C]It happened many [F]years [C]ago not [C7]many people [F]know

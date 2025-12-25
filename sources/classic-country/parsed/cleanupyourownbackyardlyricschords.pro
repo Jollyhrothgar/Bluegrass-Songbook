@@ -1,6 +1,6 @@
 {meta: title Clean Up Your Own Backyard}
 {meta: artist Elvis Presley}
-{meta: writer Billy Strange, Mac Davis, Scott Davis}
+{meta: composer Billy Strange, Mac Davis, Scott Davis}
 
 {start_of_verse: Verse 1}
 [C]Back porch preacher [G7]preaching at [C]me

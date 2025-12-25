@@ -1,6 +1,6 @@
 {meta: title Sweet Summer Lovin'}
 {meta: artist Dolly Parton}
-{meta: writer Blaise Tosti and George Reneau}
+{meta: composer Blaise Tosti and George Reneau}
 
 {start_of_verse: Verse 1}
 [C]Though the sun may be dawning you're the one that lights the morning

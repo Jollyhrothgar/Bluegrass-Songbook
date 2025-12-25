@@ -1,6 +1,6 @@
 {meta: title I'll Give My Heart To You}
 {meta: artist Buck Owens}
-{meta: writer Harlan Howard and Buck Owens}
+{meta: composer Harlan Howard and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]If you'll hold me close and kiss [C]me

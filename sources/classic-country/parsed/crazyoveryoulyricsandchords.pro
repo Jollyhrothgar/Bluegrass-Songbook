@@ -1,6 +1,6 @@
 {meta: title Crazy Over You}
 {meta: artist Ricky Van Shelton}
-{meta: writer Radney Foster and Bill Lloyd}
+{meta: composer Radney Foster and Bill Lloyd}
 
 {start_of_verse: Verse 1}
 [C]Can't you tell by the spell that I'm under

@@ -1,6 +1,6 @@
 {meta: title Farther Than My Eyes Can See}
 {meta: artist Lefty Frizzell}
-{meta: writer Freddie Hart}
+{meta: composer Freddie Hart}
 
 {start_of_verse: Verse 1}
 [C]Last night I saw you [F]standing on the [C]corner of the [G7]street

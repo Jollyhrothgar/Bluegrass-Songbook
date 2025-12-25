@@ -1,6 +1,6 @@
 {meta: title Sadie's Got Her New Dress On}
 {meta: artist Doyle Lawson}
-{meta: writer Connie Leigh}
+{meta: composer Connie Leigh}
 
 {start_of_verse: Verse 1}
 [G]Well Sadie's momma told her you’re nearly 21

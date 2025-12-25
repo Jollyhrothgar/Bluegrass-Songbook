@@ -1,6 +1,6 @@
 {meta: title Have You Seen Her}
 {meta: artist Bill Anderson}
-{meta: writer Eugene Record and Barbara Acklin}
+{meta: composer Eugene Record and Barbara Acklin}
 
 {start_of_verse: Verse 1}
 [C]I see her face everywhere I go

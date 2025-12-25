@@ -1,6 +1,6 @@
 {meta: title It Was Always You}
 {meta: artist Tanya Tucker}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]I've been loved [C]before there's no use [G]pretending[C]

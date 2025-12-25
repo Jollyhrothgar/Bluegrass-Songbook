@@ -1,6 +1,6 @@
 {meta: title Give Me Just A Little Bit More Time}
 {meta: artist Marty Stuart}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [C]I'm busy every day as I travel on my way

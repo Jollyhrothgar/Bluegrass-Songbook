@@ -1,6 +1,6 @@
 {meta: title I'm A Big Hurt Now}
 {meta: artist Freddie Hart}
-{meta: writer Larry Lee}
+{meta: composer Larry Lee}
 
 {start_of_verse: Verse 1}
 [C]I can't lie    as little [Em]tears

@@ -1,6 +1,6 @@
 {meta: title I Got A Hole In My Pocket}
 {meta: artist Ricky Van Shelton}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [G]I got a hole in my pocket and I can't go to the fair

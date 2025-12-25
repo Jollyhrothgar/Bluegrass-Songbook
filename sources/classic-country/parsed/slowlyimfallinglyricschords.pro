@@ -1,6 +1,6 @@
 {meta: title Slowly I'm Falling}
 {meta: artist Web Pierce}
-{meta: writer Webb Pierce adn Tommy Hill}
+{meta: composer Webb Pierce adn Tommy Hill}
 
 {start_of_verse: Verse 1}
 [C]Slowly I'm falling [F]more in love with [C]you

@@ -1,6 +1,6 @@
 {meta: title You'll Never Be Mine Again}
 {meta: artist Jim Reeves}
-{meta: writer Buddy Killen and Jim Reeves}
+{meta: composer Buddy Killen and Jim Reeves}
 
 {start_of_verse: Verse 1}
 [C]You’ll never be mine [F]again 

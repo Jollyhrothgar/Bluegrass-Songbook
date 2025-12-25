@@ -1,6 +1,6 @@
 {meta: title I Don't Want To Love You}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]No no no I don't wanna love [F]you

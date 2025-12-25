@@ -1,6 +1,6 @@
 {meta: title Ain’t Nobody Gonna Miss Me}
 {meta: artist Jimmy Martin}
-{meta: writer Harry McAuliffe and Jake Taylor}
+{meta: composer Harry McAuliffe and Jake Taylor}
 
 {start_of_verse: Verse 1}
 [G]There ain't nobody gonna miss me when I'm [C]gone

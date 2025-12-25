@@ -1,6 +1,6 @@
 {meta: title Pins And Needles}
 {meta: artist Reba McEntire}
-{meta: writer Rick Carnes, Janis Carnes, Chip Hardy}
+{meta: composer Rick Carnes, Janis Carnes, Chip Hardy}
 
 {start_of_verse: Verse 1}
 [G]Pins and needles [C]needles and [G]pins 

@@ -1,6 +1,6 @@
 {meta: title I'm A Ding Dong Daddy From Dumas}
 {meta: artist Bob Wills}
-{meta: writer Phil Baxter}
+{meta: composer Phil Baxter}
 
 {start_of_verse: Verse 1}
 [C]I'm a ding dong daddy from Dumas [D7]babe

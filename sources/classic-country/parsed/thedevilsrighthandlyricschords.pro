@@ -1,6 +1,6 @@
 {meta: title The Devil’s Right Hand}
 {meta: artist The Highwaymen}
-{meta: writer Steve Earle}
+{meta: composer Steve Earle}
 
 {start_of_verse: Verse 1}
 [C]About the time my daddy left to fight the big war

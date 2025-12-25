@@ -1,6 +1,6 @@
 {meta: title I Talk To The Waves Lyrics Chords}
 {meta: artist Slim Whitman}
-{meta: writer Leone Richards}
+{meta: composer Leone Richards}
 
 {start_of_verse: Verse 1}
 [C]Remember the [Am]day when we [D7]walked by the [G7]sea

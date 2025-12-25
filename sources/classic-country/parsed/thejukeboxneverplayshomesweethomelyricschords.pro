@@ -1,6 +1,6 @@
 {meta: title The Jukebox Never Plays Home Sweet Home}
 {meta: artist Jack Greene}
-{meta: writer Danny Joe Mitchell}
+{meta: composer Danny Joe Mitchell}
 
 {start_of_verse: Verse 1}
 [C]I don’t know a single soul [F]here in this old bar

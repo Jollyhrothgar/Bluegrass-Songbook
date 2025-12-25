@@ -1,6 +1,6 @@
 {meta: title Stone Walls And Steel Bars}
 {meta: artist Stanley Brothers}
-{meta: writer Ray Marcum and Ray Pennington}
+{meta: composer Ray Marcum and Ray Pennington}
 
 {start_of_verse: Verse 1}
 [G]Stone walls and steels bars and [C]love on my [G]mind

@@ -1,6 +1,6 @@
 {meta: title Willingly}
 {meta: artist Willie Nelson}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]Willingly I [D7]fell in love with [G]you

@@ -1,6 +1,6 @@
 {meta: title I Should Have Known You Lord}
 {meta: artist Statler Brother}
-{meta: writer Harold Reid and William Reid}
+{meta: composer Harold Reid and William Reid}
 
 {start_of_verse: Verse 1}
 [C]Mary was [G7]weeping that [Am]day at the [F]tomb

@@ -1,6 +1,6 @@
 {meta: title He's Somewhere Between You And Me}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Doyle Wilburn}
+{meta: composer Loretta Lynn and Doyle Wilburn}
 
 {start_of_verse: Verse 1}
 [C]I don't know the location he's [F]using

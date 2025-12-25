@@ -1,6 +1,6 @@
 {meta: title Ace Of Hearts}
 {meta: artist Alan Jackson}
-{meta: writer Lonnie Wilson, Ron Moore, Carson Chamberlain}
+{meta: composer Lonnie Wilson, Ron Moore, Carson Chamberlain}
 
 {start_of_verse: Verse 1}
 [C]Love's a gamble [G7]every heart will [C]take

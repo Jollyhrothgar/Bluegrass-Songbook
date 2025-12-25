@@ -1,6 +1,6 @@
 {meta: title Sweeter Than The Flowers}
 {meta: artist George Jones}
-{meta: writer Ervin T. Rouse and Lois Mann}
+{meta: composer Ervin T. Rouse and Lois Mann}
 
 {start_of_verse: Verse 1}
 [C]Just as far as I can remember

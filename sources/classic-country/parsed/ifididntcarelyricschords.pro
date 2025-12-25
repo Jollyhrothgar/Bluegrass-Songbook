@@ -1,6 +1,6 @@
 {meta: title If I Didn't Care}
 {meta: artist Brenda Lee}
-{meta: writer Jack Lawrence}
+{meta: composer Jack Lawrence}
 
 {start_of_verse: Verse 1}
 [G7]If [Em]I didn't [Am]care[B7]   [C]more than words can [Am]say [B7]

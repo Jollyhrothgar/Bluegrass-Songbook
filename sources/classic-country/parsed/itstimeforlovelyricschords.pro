@@ -1,6 +1,6 @@
 {meta: title It's Time For Love}
 {meta: artist Don Williams}
-{meta: writer Bob McDill and Hunter Moore}
+{meta: composer Bob McDill and Hunter Moore}
 
 {start_of_verse: Verse 1}
 [C]Well tonight she came home early

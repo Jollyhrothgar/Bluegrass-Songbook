@@ -1,6 +1,6 @@
 {meta: title That Ol' Wind}
 {meta: artist Garth Brooks}
-{meta: writer Leigh Reynolds and Garth Brooks}
+{meta: composer Leigh Reynolds and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]She dropped her boy at [G7]school on [C]time 

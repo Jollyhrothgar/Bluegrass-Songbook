@@ -1,6 +1,6 @@
 {meta: title One Year Two Months And Eleven Days}
 {meta: artist Ronnie Reno}
-{meta: writer Ronnie Reno and Wayne Carson}
+{meta: composer Ronnie Reno and Wayne Carson}
 
 {start_of_verse: Verse 1}
 [C]I woke up this [G7]morning thinking about [C]you

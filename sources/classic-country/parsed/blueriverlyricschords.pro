@@ -1,6 +1,6 @@
 {meta: title Blue River}
 {meta: artist Elvis Presley}
-{meta: writer Fred Tobias and Paul Evans}
+{meta: composer Fred Tobias and Paul Evans}
 
 {start_of_verse: Verse 1}
 [G]B-lue [C]River it can't be found on any [G]map that I know

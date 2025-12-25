@@ -1,6 +1,6 @@
 {meta: title Money To Burn}
 {meta: artist George Jones}
-{meta: writer Johnny Nelms}
+{meta: composer Johnny Nelms}
 
 {start_of_verse: Verse 1}
 [C]Memories of an [G]old love the [C]one I left [G]behind

@@ -1,6 +1,6 @@
 {meta: title Loving You Again}
 {meta: artist Freddie Hart}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]Helplessly but willingly [G7]loving you [C]again

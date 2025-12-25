@@ -1,6 +1,6 @@
 {meta: title Girl Like You}
 {meta: artist Tompall and the Glaser Brothers}
-{meta: writer Tompall Glaser}
+{meta: composer Tompall Glaser}
 
 {start_of_verse: Verse 1}
 [C]There's a jukebox [G7]in my [C]ear playing so loud I can [F]hardly [C]hear

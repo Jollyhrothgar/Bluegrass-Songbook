@@ -1,6 +1,6 @@
 {meta: title There Ain't No Grave Deep Enough}
 {meta: artist George Jones}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Even though I know it's over and your [G7]hearts with someone [C]new

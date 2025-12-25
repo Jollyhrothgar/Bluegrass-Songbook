@@ -1,6 +1,6 @@
 {meta: title Let's Pretend We're Kids Again}
 {meta: artist Wynn Stewart}
-{meta: writer Bobby Wayne and Dave Pittman}
+{meta: composer Bobby Wayne and Dave Pittman}
 
 {start_of_verse: Verse 1}
 [C]As we [G7]grew up [C]together 

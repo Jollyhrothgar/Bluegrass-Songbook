@@ -1,6 +1,6 @@
 {meta: title If Kisses Could Talk}
 {meta: artist Vernon Oxford}
-{meta: writer Everett Corbin}
+{meta: composer Everett Corbin}
 
 {start_of_verse: Verse 1}
 [C]If kisses could talk   oh [C7]things they would [F]say

@@ -1,6 +1,6 @@
 {meta: title Nothing Matters But You}
 {meta: artist The Everly Brothers}
-{meta: writer Gary Geld and Peter Udell}
+{meta: composer Gary Geld and Peter Udell}
 
 {start_of_verse: Verse 1}
 [D7]Since we [G]met I [Am]sit around and [Em]want you

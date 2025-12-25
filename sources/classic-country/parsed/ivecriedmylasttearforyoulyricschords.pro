@@ -1,6 +1,6 @@
 {meta: title I’ve Cried My Last Tear For You}
 {meta: artist Ricky Van Shelton}
-{meta: writer Chris Waters and Tony King}
+{meta: composer Chris Waters and Tony King}
 
 {start_of_verse: Verse 1}
 [G]When you left me lonely here I [D7]thought that I would drown in tears

@@ -1,6 +1,6 @@
 {meta: title Jesus Makes House Calls}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin}
+{meta: composer Lloene S. Martin}
 
 {start_of_verse: Verse 1}
 [C]Jesus makes house calls [F]24 hours a [C]day

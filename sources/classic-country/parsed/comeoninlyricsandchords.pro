@@ -1,6 +1,6 @@
 {meta: title Come On In}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]If you’re here cause you love me and not just [F]because

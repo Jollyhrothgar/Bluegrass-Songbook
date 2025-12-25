@@ -1,6 +1,6 @@
 {meta: title It's Not Over If I'm Not Over You}
 {meta: artist Vern Gosdin}
-{meta: writer Larry Kingston & Mark Wright}
+{meta: composer Larry Kingston & Mark Wright}
 
 {start_of_verse: Verse 1}
 [C]You can tell everyone  [G7]love is [F]over and [C]done

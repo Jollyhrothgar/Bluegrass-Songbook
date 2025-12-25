@@ -1,6 +1,6 @@
 {meta: title Yes Ma'am}
 {meta: artist Tommy Overstreet}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]Oh my baby called me on my down at work phone this [D7]morning

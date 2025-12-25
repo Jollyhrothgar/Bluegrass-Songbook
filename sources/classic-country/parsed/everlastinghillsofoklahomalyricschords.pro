@@ -1,6 +1,6 @@
 {meta: title Everlasting Hills Of Oklahoma}
 {meta: artist Hank Thompson}
-{meta: writer Tim Spencer}
+{meta: composer Tim Spencer}
 
 {start_of_verse: Verse 1}
 [D7]The [G]everlasting hills of Okla[C]homa

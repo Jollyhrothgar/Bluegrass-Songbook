@@ -1,6 +1,6 @@
 {meta: title At The Roll Call}
 {meta: artist The Oak Ridge Boys}
-{meta: writer James S. Weatherington}
+{meta: composer James S. Weatherington}
 
 {start_of_verse: Verse 1}
 [C]At the [F]roll call how I would love to clasp your [C]hand

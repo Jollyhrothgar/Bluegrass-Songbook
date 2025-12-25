@@ -1,6 +1,6 @@
 {meta: title Orange Blossom Special}
 {meta: artist Johnny Cash}
-{meta: writer E.T. Rouce}
+{meta: composer E.T. Rouce}
 
 {start_of_verse: Verse 1}
 [C]Look yonder coming a-coming down that railroad [C7]track 

@@ -1,6 +1,6 @@
 {meta: title Take My Hand}
 {meta: artist Mel Tillis}
-{meta: writer Sherley Price, Les Acton, Helen Acton}
+{meta: composer Sherley Price, Les Acton, Helen Acton}
 
 {start_of_verse: Verse 1}
 [G]Take my hand and walk with [C]me 

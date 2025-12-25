@@ -1,6 +1,6 @@
 {meta: title Good Ol' Fashioned Love}
 {meta: artist Tracy Byrd}
-{meta: writer Mark Nesler and Tony Martin}
+{meta: composer Mark Nesler and Tony Martin}
 
 {start_of_verse: Verse 1}
 [C]The kind of love that [F]I've been looking [C]for [F]

@@ -1,6 +1,6 @@
 {meta: title Queen Of Hearts}
 {meta: artist Hank Locklin}
-{meta: writer Maxwell Buckley}
+{meta: composer Maxwell Buckley}
 
 {start_of_verse: Verse 1}
 [C]Queen of [G7]hearts queen of [C]hearts

@@ -1,6 +1,6 @@
 {meta: title Almost In Love}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [C]I can tell by your glance we're [F]about to take the chance

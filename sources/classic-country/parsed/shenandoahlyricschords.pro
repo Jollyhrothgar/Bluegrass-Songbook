@@ -1,6 +1,6 @@
 {meta: title Shenandoah}
 {meta: artist The Statler Brothers}
-{meta: writer Philip E. Balsley, Lewis Calvin DeWitt Jr.,Don S. Reid and Harold Wilson Reid}
+{meta: composer Philip E. Balsley, Lewis Calvin DeWitt Jr.,Don S. Reid and Harold Wilson Reid}
 
 {start_of_verse: Verse 1}
 [C]Oh Shenandoah  I [G7]long to see [C][F]you 

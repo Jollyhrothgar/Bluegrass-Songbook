@@ -1,6 +1,6 @@
 {meta: title I’ll Be Walking The Floor This Christmas}
 {meta: artist Ernest Tubb}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]I'll be walking the floor this [F]Christmas

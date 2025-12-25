@@ -1,6 +1,6 @@
 {meta: title Your Love Is The Way}
 {meta: artist Kitty Wells}
-{meta: writer Bill Owens}
+{meta: composer Bill Owens}
 
 {start_of_verse: Verse 1}
 [C]Your love is the [F]way I always [G7]thought love should be

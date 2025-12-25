@@ -1,6 +1,6 @@
 {meta: title Makin' Promises}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy and Donald Alan Schlitz}
+{meta: composer David Bellamy and Donald Alan Schlitz}
 
 {start_of_verse: Verse 1}
 [D7]I was [G]standing on a corner [C]watching all the [D7]people walk [G]by [C]  [D7]

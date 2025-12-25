@@ -1,6 +1,6 @@
 {meta: title Every Drop Of Water}
 {meta: artist Ricky Skaggs}
-{meta: writer Steve Seskin and Allen Shamblin}
+{meta: composer Steve Seskin and Allen Shamblin}
 
 {start_of_verse: Verse 1}
 [G]Life is kinda like a roller coaster

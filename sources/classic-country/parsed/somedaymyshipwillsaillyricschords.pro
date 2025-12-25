@@ -1,6 +1,6 @@
 {meta: title Someday My Ship Will Sail}
 {meta: artist Johnny Cash}
-{meta: writer Allen Reynolds}
+{meta: composer Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [C]I will walk this [F]road [C]awhile 

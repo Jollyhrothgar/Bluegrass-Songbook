@@ -1,6 +1,6 @@
 {meta: title That's The Way It's Gotta Be}
 {meta: artist Faron Young}
-{meta: writer Roy Drusky}
+{meta: composer Roy Drusky}
 
 {start_of_verse: Verse 1}
 [G]Are there any memories you're keeping in your heart

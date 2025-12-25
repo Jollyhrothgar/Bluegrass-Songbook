@@ -1,6 +1,6 @@
 {meta: title How Long Has It Been}
 {meta: artist Jim Reeves}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [C]Oh how long has it been  since you talked with the [C7]Lord

@@ -1,6 +1,6 @@
 {meta: title Another Man's Fool}
 {meta: artist Waylon Jennings}
-{meta: writer John Ullrich}
+{meta: composer John Ullrich}
 
 {start_of_verse: Verse 1}
 [G]Don't sing them songs about the open road

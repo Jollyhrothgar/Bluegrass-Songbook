@@ -1,6 +1,6 @@
 {meta: title Baby Blue}
 {meta: artist George Strait}
-{meta: writer Aaron Barker}
+{meta: composer Aaron Barker}
 
 {start_of_verse: Verse 1}
 [C]She looked so much like a [Em]lady but she was [F]so much like [G7]a [F]child

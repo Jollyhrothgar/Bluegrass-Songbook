@@ -1,6 +1,6 @@
 {meta: title Didn't It Rain}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Wild Bill Emerson and Jody Emerson}
+{meta: composer Wild Bill Emerson and Jody Emerson}
 
 {start_of_verse: Verse 1}
 [G]The good Lord went to Noah and He [C]told him about the [G]flood

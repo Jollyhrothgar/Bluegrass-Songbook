@@ -1,6 +1,6 @@
 {meta: title Woman Don't You Try to Tie Me Down}
 {meta: artist Everly Brothers}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [D7]The [G]wind it tends to [C]blow a bit back [G]home in Waco [Em]Texas

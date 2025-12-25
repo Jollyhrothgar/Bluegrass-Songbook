@@ -1,6 +1,6 @@
 {meta: title Shopping For Dresses}
 {meta: artist Merle Haggard}
-{meta: writer Jimmie Dickens and Merle Haggard}
+{meta: composer Jimmie Dickens and Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]Down through the ages men have died for their [F]women

@@ -1,6 +1,6 @@
 {meta: title The Fool Strikes Again}
 {meta: artist Johnny Paycheck}
-{meta: writer Mark Sherrill, Steve Davis, Gary Cobb}
+{meta: composer Mark Sherrill, Steve Davis, Gary Cobb}
 
 {start_of_verse: Verse 1}
 [G7]Once again she offers [C]more than I'm [C][F]deserving

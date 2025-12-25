@@ -1,6 +1,6 @@
 {meta: title Tramp On Your Street}
 {meta: artist George Jones}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [C]It was a long time ago no shoes on my [F]feet

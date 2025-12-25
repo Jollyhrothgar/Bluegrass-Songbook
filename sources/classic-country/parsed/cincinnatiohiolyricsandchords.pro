@@ -1,6 +1,6 @@
 {meta: title Cincinnati Ohio Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]One more hour and I'll [G7]be [C]home 

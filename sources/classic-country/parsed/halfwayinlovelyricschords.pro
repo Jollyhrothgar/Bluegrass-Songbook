@@ -1,6 +1,6 @@
 {meta: title Half Way In Love}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart and Curtis Leach}
+{meta: composer Wynn Stewart and Curtis Leach}
 
 {start_of_verse: Verse 1}
 [C]We're half way in [G7]love 

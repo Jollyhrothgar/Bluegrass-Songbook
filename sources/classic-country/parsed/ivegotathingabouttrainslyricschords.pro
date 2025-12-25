@@ -1,6 +1,6 @@
 {meta: title I've Got A Thing About Trains}
 {meta: artist Johnny Cash}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [G]Train [D7]train [G]train I've got a [D7]thing about [G]trains

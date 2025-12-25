@@ -1,6 +1,6 @@
 {meta: title I Hurt For You}
 {meta: artist Conway Twitty}
-{meta: writer Rafe VanHoy and Deborah Allen}
+{meta: composer Rafe VanHoy and Deborah Allen}
 
 {start_of_verse: Verse 1}
 [C]You know it kills me to see you [Am]crying

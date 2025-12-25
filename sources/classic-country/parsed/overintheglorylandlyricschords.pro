@@ -1,6 +1,6 @@
 {meta: title Over In The Glory Land}
 {meta: artist The Stanley Brothers}
-{meta: writer James W. Acuff and Emmett S. Dean}
+{meta: composer James W. Acuff and Emmett S. Dean}
 
 {start_of_verse: Verse 1}
 [G]I've a home prepared where the [C]saints a[G]bide

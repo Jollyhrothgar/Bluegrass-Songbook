@@ -1,6 +1,6 @@
 {meta: title Christmas Letter}
 {meta: artist Keith Whitley}
-{meta: writer John Greenebaum, Gene Nelson, Paul Nelson}
+{meta: composer John Greenebaum, Gene Nelson, Paul Nelson}
 
 {start_of_verse: Verse 1}
 [G]At an antique desk an old man sits [C]alone 

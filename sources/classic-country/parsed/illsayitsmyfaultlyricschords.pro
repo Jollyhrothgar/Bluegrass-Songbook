@@ -1,6 +1,6 @@
 {meta: title I'll Say It's My Fault}
 {meta: artist Roy Orbison}
-{meta: writer Fred Foster and Roy Orbison}
+{meta: composer Fred Foster and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [C]Too many [Em]quarrels so [C]now we [Em]breakup 

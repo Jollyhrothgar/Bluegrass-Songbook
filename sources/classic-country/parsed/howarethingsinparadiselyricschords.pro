@@ -1,6 +1,6 @@
 {meta: title How Are Things In Paradise}
 {meta: artist Roy Orbison}
-{meta: writer Joe Melson and Roy K. Orbison}
+{meta: composer Joe Melson and Roy K. Orbison}
 
 {start_of_verse: Verse 1}
 [G]How are [Em]things in [G]para[Em]dise since [C]you found a [D7]new ro[G]mance[Em]   [C]  [D7]

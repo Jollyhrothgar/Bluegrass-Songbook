@@ -1,6 +1,6 @@
 {meta: title The Worst Of The Hurt Is Over}
 {meta: artist George Morgan}
-{meta: writer Tommy Hill and William Brown Ellis IV}
+{meta: composer Tommy Hill and William Brown Ellis IV}
 
 {start_of_verse: Verse 1}
 [C]The worst of the [G7]hurt is [C]over [G7]

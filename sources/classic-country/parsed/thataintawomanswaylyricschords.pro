@@ -1,6 +1,6 @@
 {meta: title That Ain't A Woman's Way}
 {meta: artist Kitty Wells}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]I sat [F]alone at [G7]home all weekend [C]waitin' for [G7]you to [C]call

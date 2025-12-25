@@ -1,6 +1,6 @@
 {meta: title Anywhere With Jesus}
 {meta: artist Amy Grant}
-{meta: writer Daniel Towner,}
+{meta: composer Daniel Towner,}
 
 {start_of_verse: Verse 1}
 John Hobbs, Vincent Gi, Dp

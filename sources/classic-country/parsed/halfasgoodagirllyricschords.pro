@@ -1,6 +1,6 @@
 {meta: title Half As Good A Girl}
 {meta: artist Wanda Jackson}
-{meta: writer Jack Rhodes}
+{meta: composer Jack Rhodes}
 
 {start_of_verse: Verse 1}
 [G]While walking down the street one day

@@ -1,6 +1,6 @@
 {meta: title As Far as It Goes}
 {meta: artist George Strait}
-{meta: writer Anthony George Chalk and Howard Russell Smith}
+{meta: composer Anthony George Chalk and Howard Russell Smith}
 
 {start_of_verse: Verse 1}
 [C]Lately I've found myself [F]fallin' 

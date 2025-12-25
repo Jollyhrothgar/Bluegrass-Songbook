@@ -1,6 +1,6 @@
 {meta: title She's Takin' Him Back Again}
 {meta: artist Lorrie Morgan}
-{meta: writer Richard Mainegra and Rick Yancey}
+{meta: composer Richard Mainegra and Rick Yancey}
 
 {start_of_verse: Verse 1}
 [G]It takes a special [Em]lady to [F]survive a broken [D7]heart

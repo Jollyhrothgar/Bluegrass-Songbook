@@ -1,6 +1,6 @@
 {meta: title Too Much}
 {meta: artist Red Sovine}
-{meta: writer Tommy Hill, Red Sovine, Buddy Bruce}
+{meta: composer Tommy Hill, Red Sovine, Buddy Bruce}
 
 {start_of_verse: Verse 1}
 [C]I know I cry too much before I met you I [E7]used to laugh a [F]lot

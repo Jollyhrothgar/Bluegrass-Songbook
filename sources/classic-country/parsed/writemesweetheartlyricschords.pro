@@ -1,6 +1,6 @@
 {meta: title Write Me Sweetheart}
 {meta: artist Doyle Lawson}
-{meta: writer Roy C. Acuff}
+{meta: composer Roy C. Acuff}
 
 {start_of_verse: Verse 1}
 [C]Troubling mind here’s how you left me

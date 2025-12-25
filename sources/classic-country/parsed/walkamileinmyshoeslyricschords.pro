@@ -1,6 +1,6 @@
 {meta: title Walk A Mile In My Shoes}
 {meta: artist Elvis Presley}
-{meta: writer Joe South}
+{meta: composer Joe South}
 
 {start_of_verse: Verse 1}
 [G]If I could be you and you could be me for just one [A7]hour

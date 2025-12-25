@@ -1,6 +1,6 @@
 {meta: title That's When I Miss You}
 {meta: artist The Wilburn Brothers}
-{meta: writer Doyle Wilburn and Teddy Wilburn}
+{meta: composer Doyle Wilburn and Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]Well I want to [F]kiss you that's when I [C]miss you

@@ -1,6 +1,6 @@
 {meta: title Bring Back My Peace Of Mind}
 {meta: artist Tony Booth}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]Bring back my [F]peace of mind let me live [C]again

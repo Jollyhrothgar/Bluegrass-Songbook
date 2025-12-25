@@ -1,6 +1,6 @@
 {meta: title Change}
 {meta: artist Garth Brooks}
-{meta: writer Tony Arata and Wayne Tester}
+{meta: composer Tony Arata and Wayne Tester}
 
 {start_of_verse: Verse 1}
 [Bm]One hand reaches out [G]and pulls a [D7]lost soul from [C]harm

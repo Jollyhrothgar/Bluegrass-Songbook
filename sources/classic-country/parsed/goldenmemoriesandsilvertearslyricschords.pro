@@ -1,6 +1,6 @@
 {meta: title Golden Memories and Silver Tears}
 {meta: artist Jim Reeves}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]I dream of a [G7]golden moon and silver [C]stars

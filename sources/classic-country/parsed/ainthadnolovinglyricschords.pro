@@ -1,6 +1,6 @@
 {meta: title Ain’t Had No Loving}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Ain’t done one [E7]single thing this [A7]morning

@@ -1,6 +1,6 @@
 {meta: title If I Ever Fall In Love With A Honky Tonk Girl}
 {meta: artist Faron Young}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]I know that cheating river runs [F]by everybody's [C]door

@@ -1,6 +1,6 @@
 {meta: title Keep My Love With You}
 {meta: artist Ricky Skaggs}
-{meta: writer Ralph Stanley}
+{meta: composer Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [F]Keep my love with [C]you

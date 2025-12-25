@@ -1,6 +1,6 @@
 {meta: title Just For You}
 {meta: artist John Anderson}
-{meta: writer John Anderson and J.R. Anderson}
+{meta: composer John Anderson and J.R. Anderson}
 
 {start_of_verse: Verse 1}
 [C]I would climb to the top of a mountain 

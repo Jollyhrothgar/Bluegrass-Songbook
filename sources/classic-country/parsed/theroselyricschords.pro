@@ -1,6 +1,6 @@
 {meta: title The Rose}
 {meta: artist Conway Twitty}
-{meta: writer Amanda McBroom}
+{meta: composer Amanda McBroom}
 
 {start_of_verse: Verse 1}
 [C]Some say love it is a [G7]river

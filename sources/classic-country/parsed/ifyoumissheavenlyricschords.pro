@@ -1,6 +1,6 @@
 {meta: title If You Miss Heaven (You Miss It All)}
 {meta: artist Loretta Lynn}
-{meta: writer Dale Fox, Dianne Floyd, Tommy Floyd}
+{meta: composer Dale Fox, Dianne Floyd, Tommy Floyd}
 
 {start_of_verse: Verse 1}
 [C]If you're tired of sinning [G7]take your Savior's [C]hand

@@ -1,6 +1,6 @@
 {meta: title Please Let Me Have You}
 {meta: artist Mel Tillis}
-{meta: writer Johnny Gore}
+{meta: composer Johnny Gore}
 
 {start_of_verse: Verse 1}
 [G]You tell me [D7]pretend dear that it's only a [G]game

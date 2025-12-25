@@ -1,6 +1,6 @@
 {meta: title Think Of What You’ve Done}
 {meta: artist Ricky Skaggs}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]Is it [F]true that I've lost [C]you

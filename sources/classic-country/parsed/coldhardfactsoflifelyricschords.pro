@@ -1,6 +1,6 @@
 {meta: title Cold Hard Facts Of Life}
 {meta: artist Porter Wagoner}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]I got back in town a day [G7]before I'd planned [C]to

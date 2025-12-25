@@ -1,6 +1,6 @@
 {meta: title Make A Dream Come True}
 {meta: artist Crystal Gayle}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [C]If I try as hard as I can 

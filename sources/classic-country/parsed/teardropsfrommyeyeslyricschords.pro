@@ -1,6 +1,6 @@
 {meta: title Teardrops From My Eyes}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Rudolph Toombs}
+{meta: composer Rudolph Toombs}
 
 {start_of_verse: Verse 1}
 [G]Every time it rains [D7]I think of [G]you

@@ -1,6 +1,6 @@
 {meta: title Wings of a Dove}
 {meta: artist Charlie Pride}
-{meta: writer Bob Ferguson}
+{meta: composer Bob Ferguson}
 
 {start_of_verse: Verse 1}
 [G]On the wings of a snow white dove 

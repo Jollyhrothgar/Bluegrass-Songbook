@@ -1,6 +1,6 @@
 {meta: title She Loved A Lot In Her Time}
 {meta: artist George Jones}
-{meta: writer Randy Boudreaux, Sam Hogin, Kim Williams}
+{meta: composer Randy Boudreaux, Sam Hogin, Kim Williams}
 
 {start_of_verse: Verse 1}
 [C]I started drinking and [F]acting [C]crazy

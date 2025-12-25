@@ -1,6 +1,6 @@
 {meta: title Drifting Texas Sand Lyrics Chords}
 {meta: artist Webb Pierce}
-{meta: writer Buster Coward}
+{meta: composer Buster Coward}
 
 {start_of_verse: Verse 1}
 [C]Well I went to the river to water [G7]my horse

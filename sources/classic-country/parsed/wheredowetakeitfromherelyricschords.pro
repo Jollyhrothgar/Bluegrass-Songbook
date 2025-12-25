@@ -1,6 +1,6 @@
 {meta: title Where Do We Take It From Here}
 {meta: artist Vern Gosdin}
-{meta: writer Dennis Knutson and Vern Gosdin}
+{meta: composer Dennis Knutson and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]I remember the first time that I [G7]touched you

@@ -1,6 +1,6 @@
 {meta: title Song The Mountain Sings}
 {meta: artist John Anderson}
-{meta: writer John Anderson and Buddy Cannon}
+{meta: composer John Anderson and Buddy Cannon}
 
 {start_of_verse: Verse 1}
 [C]Play fiddle play [Am]play banjo [C]play

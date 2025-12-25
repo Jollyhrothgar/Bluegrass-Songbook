@@ -1,6 +1,6 @@
 {meta: title I’m Gonna Lock My Heart}
 {meta: artist Eddy Arnold}
-{meta: writer Jimmy Eaton and Terry Shand}
+{meta: composer Jimmy Eaton and Terry Shand}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna lock my heart and throw away the key 

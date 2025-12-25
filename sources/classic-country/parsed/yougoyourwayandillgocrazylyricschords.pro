@@ -1,6 +1,6 @@
 {meta: title You Go Your Way (And I'll Go Crazy)}
 {meta: artist Ricky Van Shelton}
-{meta: writer Bucky Jones}
+{meta: composer Bucky Jones}
 
 {start_of_verse: Verse 1}
 [G]Go on if you want to 

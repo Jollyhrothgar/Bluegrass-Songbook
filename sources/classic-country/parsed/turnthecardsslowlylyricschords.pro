@@ -1,6 +1,6 @@
 {meta: title Turn The Cards Slowly}
 {meta: artist Patsy Cline}
-{meta: writer Sammy Masters}
+{meta: composer Sammy Masters}
 
 {start_of_verse: Verse 1}
 [G]Turn the cards slowly while you're dealing darling 

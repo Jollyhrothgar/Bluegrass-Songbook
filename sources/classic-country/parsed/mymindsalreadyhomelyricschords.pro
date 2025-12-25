@@ -1,6 +1,6 @@
 {meta: title My Mind's Already Home}
 {meta: artist T.G.Sheppard}
-{meta: writer Sonny Throckmorton and Chris Dodson}
+{meta: composer Sonny Throckmorton and Chris Dodson}
 
 {start_of_verse: Verse 1}
 [G]I've been [C]screwin' up [G]production

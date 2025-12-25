@@ -1,6 +1,6 @@
 {meta: title Love Unending}
 {meta: artist Charlie Pride}
-{meta: writer Jerry Grindele, Paul Gibbons, Tony Hatch}
+{meta: composer Jerry Grindele, Paul Gibbons, Tony Hatch}
 
 {start_of_verse: Verse 1}
 [C]Love unending [F]love undying

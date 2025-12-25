@@ -1,6 +1,6 @@
 {meta: title Laid Back Country Picker}
 {meta: artist Waylon Jennings}
-{meta: writer Vincent Wesley Matthews and James Casey}
+{meta: composer Vincent Wesley Matthews and James Casey}
 
 {start_of_verse: Verse 1}
 [C]South bound out of Shreveport heading [F]hell bent for his grave

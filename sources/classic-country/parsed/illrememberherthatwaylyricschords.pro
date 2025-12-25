@@ -1,6 +1,6 @@
 {meta: title I'll Remember Her That Way}
 {meta: artist Cal Smith}
-{meta: writer Jim Rushing}
+{meta: composer Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]She was like the morning sun 

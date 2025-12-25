@@ -1,6 +1,6 @@
 {meta: title The Last Suit You Wear}
 {meta: artist Larry Sparks}
-{meta: writer Larry Shell and Kim Williams}
+{meta: composer Larry Shell and Kim Williams}
 
 {start_of_verse: Verse 1}
 [C]Baker Moore's plane went down

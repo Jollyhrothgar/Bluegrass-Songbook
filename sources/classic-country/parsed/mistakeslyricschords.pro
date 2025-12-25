@@ -1,6 +1,6 @@
 {meta: title Mistakes}
 {meta: artist Don Williams}
-{meta: writer Richard Feldman}
+{meta: composer Richard Feldman}
 
 {start_of_verse: Verse 1}
 [C]People [G7]tell me boy [Am]you're [F]crazy 

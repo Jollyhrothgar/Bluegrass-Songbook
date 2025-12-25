@@ -1,6 +1,6 @@
 {meta: title Knock Three Times}
 {meta: artist Billy Crash Craddock}
-{meta: writer Irwin Levine and Russell Brown}
+{meta: composer Irwin Levine and Russell Brown}
 
 {start_of_verse: Verse 1}
 [C]Hey girl watcha doing down there

@@ -1,6 +1,6 @@
 {meta: title Summertime Blues}
 {meta: artist Buck Owens}
-{meta: writer Eddie Cochran and Jerry Neal Capehart}
+{meta: composer Eddie Cochran and Jerry Neal Capehart}
 
 {start_of_verse: Verse 1}
 [C]Well there ain't no [Em]cure for the summertime [C]blues

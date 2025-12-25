@@ -1,6 +1,6 @@
 {meta: title What's He Got (That I Couldn't Offer You)}
 {meta: artist Billy Walker}
-{meta: writer Vern Stovall and Buddy Smith}
+{meta: composer Vern Stovall and Buddy Smith}
 
 {start_of_verse: Verse 1}
 [C]Do his arms hold you tighter than [G7]mine

@@ -1,6 +1,6 @@
 {meta: title Back When}
 {meta: artist Vern Gosdin}
-{meta: writer Hugh Prestwood}
+{meta: composer Hugh Prestwood}
 
 {start_of_verse: Verse 1}
 [G]Lately it seems like we don’t [Em]give much thought

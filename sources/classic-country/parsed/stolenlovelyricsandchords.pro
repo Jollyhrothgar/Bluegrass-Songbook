@@ -1,6 +1,6 @@
 {meta: title Stolen Love}
 {meta: artist Charlie Louvin}
-{meta: writer Johnny Harrison, Nell Harrison, Betty Harrison}
+{meta: composer Johnny Harrison, Nell Harrison, Betty Harrison}
 
 {start_of_verse: Verse 1}
 [G]You stole his [C]love and left be[G]hind dear

@@ -1,6 +1,6 @@
 {meta: title Lonesome Letter Blues}
 {meta: artist Rex Allen}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]L O N E [F]S O M E got the [C]lonesome lonesome letter [G7]blues

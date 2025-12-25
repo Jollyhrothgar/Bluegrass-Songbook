@@ -1,6 +1,6 @@
 {meta: title Troublesome Waters}
 {meta: artist Johnny Cash}
-{meta: writer Maybelle Carter and Dixie Dean}
+{meta: composer Maybelle Carter and Dixie Dean}
 
 {start_of_verse: Verse 1}
 [C]Troublesome waters much [F]blacker than [C]night

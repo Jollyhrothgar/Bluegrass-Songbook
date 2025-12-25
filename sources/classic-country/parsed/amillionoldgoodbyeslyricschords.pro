@@ -1,6 +1,6 @@
 {meta: title A Million Old Goodbyes}
 {meta: artist Mel Tillis}
-{meta: writer Steve Gibb, Bobby Russell, Buzz Cason}
+{meta: composer Steve Gibb, Bobby Russell, Buzz Cason}
 
 {start_of_verse: Verse 1}
 [C]There’s a plane  out to[G7]night

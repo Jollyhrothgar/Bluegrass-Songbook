@@ -1,6 +1,6 @@
 {meta: title Hula Hands}
 {meta: artist Randy Travis}
-{meta: writer William Beasley, Dorothy Beasley, J.T. Adams}
+{meta: composer William Beasley, Dorothy Beasley, J.T. Adams}
 
 {start_of_verse: Verse 1}
 [C]Lovely hula hands graceful as a bird in [Dm][G7]motion

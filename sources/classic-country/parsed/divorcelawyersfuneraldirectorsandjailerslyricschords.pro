@@ -1,6 +1,6 @@
 {meta: title Divorce Lawyers Funeral Directors And Jailers}
 {meta: artist Ferlin Husky}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]In this beautiful world there are all kinds of things I can [D7]be

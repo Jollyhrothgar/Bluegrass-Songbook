@@ -1,6 +1,6 @@
 {meta: title Flash of Fire Lyrics and Chords}
 {meta: artist Hoyt Axton}
-{meta: writer Hoyt Axton and Catherine Smith}
+{meta: composer Hoyt Axton and Catherine Smith}
 
 {start_of_verse: Verse 1}
 [G]I thought you were a friend of mine I thought you were my [D7]buddy

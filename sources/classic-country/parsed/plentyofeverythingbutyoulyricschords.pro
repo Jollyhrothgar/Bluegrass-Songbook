@@ -1,6 +1,6 @@
 {meta: title Plenty Of Everything But You}
 {meta: artist Stonewall Jackson}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]I've got plenty of [G7]everything but [C]you

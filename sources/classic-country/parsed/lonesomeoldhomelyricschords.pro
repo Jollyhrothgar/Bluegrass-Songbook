@@ -1,6 +1,6 @@
 {meta: title Lonesome Old Home}
 {meta: artist Ralph Stanley}
-{meta: writer Ed Hamilton}
+{meta: composer Ed Hamilton}
 
 {start_of_verse: Verse 1}
 [C]Last night I laid down everything was so [G7]fine

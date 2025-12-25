@@ -1,6 +1,6 @@
 {meta: title Make Me Live Again}
 {meta: artist Ferlin Husky}
-{meta: writer Tommy Bland, Jerry Morton, Ferlin Husky}
+{meta: composer Tommy Bland, Jerry Morton, Ferlin Husky}
 
 {start_of_verse: Verse 1}
 [G7]I've [C]died a thousand [C7]times [F]since you went [C]away

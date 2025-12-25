@@ -1,6 +1,6 @@
 {meta: title It Ain't Cool To Be Crazy About You}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Royce Porter}
+{meta: composer Dean Dillon and Royce Porter}
 
 {start_of_verse: Verse 1}
 [F]I thought you and me were [C]somethin' special

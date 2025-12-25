@@ -1,6 +1,6 @@
 {meta: title Best Of All Possible Worlds}
 {meta: artist Roger Miller}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [G]I was [E7]runnin' through the summer rain 

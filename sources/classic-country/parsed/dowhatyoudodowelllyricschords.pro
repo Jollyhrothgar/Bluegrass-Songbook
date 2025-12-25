@@ -1,6 +1,6 @@
 {meta: title Do What You Do Do Well}
 {meta: artist Sonny James}
-{meta: writer Ned Miller}
+{meta: composer Ned Miller}
 
 {start_of_verse: Verse 1}
 [C]He couldn't move a mountain 

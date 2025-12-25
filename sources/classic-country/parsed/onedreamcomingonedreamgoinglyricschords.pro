@@ -1,6 +1,6 @@
 {meta: title One Dream Coming One Dream Going}
 {meta: artist Billy Crash Craddock}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [C]One dream coming [F]one dream going

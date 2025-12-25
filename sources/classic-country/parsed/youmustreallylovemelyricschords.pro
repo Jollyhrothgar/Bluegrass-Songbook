@@ -1,6 +1,6 @@
 {meta: title You Must Really Love Me}
 {meta: artist Reba McEntire}
-{meta: writer Don Schlitz and Reba McEntire}
+{meta: composer Don Schlitz and Reba McEntire}
 
 {start_of_verse: Verse 1}
 [F]Tell me [C]why do you put up with my foolish ways

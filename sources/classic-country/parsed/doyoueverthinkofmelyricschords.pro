@@ -1,6 +1,6 @@
 {meta: title Do You Ever Think Of Me}
 {meta: artist Willie Nelson}
-{meta: writer John Casper, Harry Kerr, Earl Burtrett}
+{meta: composer John Casper, Harry Kerr, Earl Burtrett}
 
 {start_of_verse: Verse 1}
 [G]When you find another's arms around you

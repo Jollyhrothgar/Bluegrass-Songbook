@@ -1,6 +1,6 @@
 {meta: title One Heart}
 {meta: artist Leroy Van Dyke}
-{meta: writer Carl Wells}
+{meta: composer Carl Wells}
 
 {start_of_verse: Verse 1}
 [C](Oh my darling [G7]one heart I give to [C]you)

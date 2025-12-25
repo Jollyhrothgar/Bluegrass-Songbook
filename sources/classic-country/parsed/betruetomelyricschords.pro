@@ -1,6 +1,6 @@
 {meta: title Be True To Me}
 {meta: artist Ricky Nelson}
-{meta: writer James Kirkland and Nat Stuckey}
+{meta: composer James Kirkland and Nat Stuckey}
 
 {start_of_verse: Verse 1}
 [C]Well if I'm a fool for [Em]loving you

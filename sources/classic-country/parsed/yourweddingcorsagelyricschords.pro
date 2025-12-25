@@ -1,6 +1,6 @@
 {meta: title Your Wedding Corsage}
 {meta: artist Ray Price}
-{meta: writer Dick Gregory}
+{meta: composer Dick Gregory}
 
 {start_of_verse: Verse 1}
 [C]Your wedding [C7]corsage is [F]wilting

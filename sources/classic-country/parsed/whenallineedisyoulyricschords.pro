@@ -1,6 +1,6 @@
 {meta: title When All I Need Is You}
 {meta: artist Faron Young}
-{meta: writer Fern Weatherup}
+{meta: composer Fern Weatherup}
 
 {start_of_verse: Verse 1}
 [G]You've turned away [C]too many times [A7]from love I offered [D7]you

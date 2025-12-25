@@ -1,6 +1,6 @@
 {meta: title That's Where I Draw The Line}
 {meta: artist Randy Travis}
-{meta: writer Roger Brown and Trey Bruce}
+{meta: composer Roger Brown and Trey Bruce}
 
 {start_of_verse: Verse 1}
 [G7]Hope you didn't burn too many [C]bridges 

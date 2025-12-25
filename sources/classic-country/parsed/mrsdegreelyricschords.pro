@@ -1,6 +1,6 @@
 {meta: title M.R.S. Degree}
 {meta: artist Crystal Gayle}
-{meta: writer Ann J. Morton and Lavon Lile}
+{meta: composer Ann J. Morton and Lavon Lile}
 
 {start_of_verse: Verse 1}
 [G]Mom and Dad want me to have a college edu[D7]cation

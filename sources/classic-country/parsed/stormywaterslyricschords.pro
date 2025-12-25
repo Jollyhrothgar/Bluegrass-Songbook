@@ -1,6 +1,6 @@
 {meta: title Stormy Waters}
 {meta: artist Doyle Lawson}
-{meta: writer Henry Donohue}
+{meta: composer Henry Donohue}
 
 {start_of_verse: Verse 1}
 [C]Stormy waters all around me waves are rough and rolling high

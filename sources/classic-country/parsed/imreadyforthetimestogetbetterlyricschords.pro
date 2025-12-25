@@ -1,6 +1,6 @@
 {meta: title I'm Ready For The Times To Get Better}
 {meta: artist Crystal Gayle}
-{meta: writer Allen Reynolds}
+{meta: composer Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [C]It's been a too long [G7]time 

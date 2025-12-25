@@ -1,6 +1,6 @@
 {meta: title I Threw Away the Rose}
 {meta: artist Hank Snow}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 [G]Once I lived a [C]life of wine and [G]roses

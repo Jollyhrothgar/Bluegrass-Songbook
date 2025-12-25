@@ -1,6 +1,6 @@
 {meta: title Blue’s My Name}
 {meta: artist Hank Williams Jr.}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]Well you walked in here and took that [G7]stool right next [C]me

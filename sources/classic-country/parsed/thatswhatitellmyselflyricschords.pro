@@ -1,6 +1,6 @@
 {meta: title That's What I Tell Myself}
 {meta: artist Jack Greene}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [C]I don't love you anymore 

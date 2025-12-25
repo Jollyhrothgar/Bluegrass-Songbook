@@ -1,6 +1,6 @@
 {meta: title To Feel That Way At All}
 {meta: artist Patty Loveless}
-{meta: writer Jim Lauderdale and Jack Tempchin}
+{meta: composer Jim Lauderdale and Jack Tempchin}
 
 {start_of_verse: Verse 1}
 [C]He brings her flowers they talk for [Am]hours 

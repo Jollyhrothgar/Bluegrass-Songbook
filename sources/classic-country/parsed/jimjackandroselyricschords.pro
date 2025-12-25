@@ -1,6 +1,6 @@
 {meta: title Jim Jack and Rose}
 {meta: artist Johnny Bush}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [C]These three [G7]close friends and [C]I

@@ -1,6 +1,6 @@
 {meta: title You Never Cross My Mind}
 {meta: artist Mickey Gilley}
-{meta: writer Curly Putman, Rafe Van Hoy, Deborah Allen}
+{meta: composer Curly Putman, Rafe Van Hoy, Deborah Allen}
 
 {start_of_verse: Verse 1}
 [G7]I  [C]lay there every [F]night where you [G7]love me

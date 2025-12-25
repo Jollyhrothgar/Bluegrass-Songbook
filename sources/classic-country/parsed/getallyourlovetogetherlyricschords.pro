@@ -1,6 +1,6 @@
 {meta: title Get All Your Love Together}
 {meta: artist Moe Bandy}
-{meta: writer Glenn Sutton, Arthur Leo Owens, Gene Vowell}
+{meta: composer Glenn Sutton, Arthur Leo Owens, Gene Vowell}
 
 {start_of_verse: Verse 1}
 [C]How many times did we [F]get back [C]together

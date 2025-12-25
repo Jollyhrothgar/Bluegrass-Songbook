@@ -1,6 +1,6 @@
 {meta: title Southern Belle}
 {meta: artist Bobby Helms}
-{meta: writer Bobby Helms and Bob Hall}
+{meta: composer Bobby Helms and Bob Hall}
 
 {start_of_verse: Verse 1}
 [C]Belle Southern [G7]Belle

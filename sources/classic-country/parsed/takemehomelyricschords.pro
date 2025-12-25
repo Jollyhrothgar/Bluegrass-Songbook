@@ -1,6 +1,6 @@
 {meta: title Take Me Home}
 {meta: artist Bobby Bare}
-{meta: writer Jack Clement and Allen Reynolds}
+{meta: composer Jack Clement and Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [G]Well I've been from Boston to LA

@@ -1,6 +1,6 @@
 {meta: title Every Step Of The Way}
 {meta: artist Ferlin Husky}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]Every step of the way every minute of the [C]day

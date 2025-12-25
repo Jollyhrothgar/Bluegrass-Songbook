@@ -1,6 +1,6 @@
 {meta: title Down Here On My Knees}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen and Dave Kirby}
+{meta: composer Joe Allen and Dave Kirby}
 
 {start_of_verse: Verse 1}
 [C]I realize that [G7]I'm not standing [C]tall

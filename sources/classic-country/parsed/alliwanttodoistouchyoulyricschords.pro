@@ -1,6 +1,6 @@
 {meta: title All I Want To Do Is Touch You}
 {meta: artist Hank Snow}
-{meta: writer Paul Dempsey}
+{meta: composer Paul Dempsey}
 
 {start_of_verse: Verse 1}
 [Em]All I wanna do is touch [G]you

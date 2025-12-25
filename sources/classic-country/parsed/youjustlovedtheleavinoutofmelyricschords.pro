@@ -1,6 +1,6 @@
 {meta: title You Just Loved The Leavin' Out Of Me}
 {meta: artist Tanya Tucker}
-{meta: writer Linda Hargrove}
+{meta: composer Linda Hargrove}
 
 {start_of_verse: Verse 1}
 [C]Last night I swore this [F]mornin' I would [C]leave you

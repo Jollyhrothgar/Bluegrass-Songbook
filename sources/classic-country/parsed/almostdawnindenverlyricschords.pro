@@ -1,6 +1,6 @@
 {meta: title Almost Dawn in Denver}
 {meta: artist Faron Young}
-{meta: writer Cile Davis, Billy J. Deaton, Clyde Pitts, Jr.}
+{meta: composer Cile Davis, Billy J. Deaton, Clyde Pitts, Jr.}
 
 {start_of_verse: Verse 1}
 [C]Soon I'll watch the [G7]sun come up in [C]Denver

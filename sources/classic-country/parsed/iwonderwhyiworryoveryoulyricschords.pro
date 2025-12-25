@@ -1,6 +1,6 @@
 {meta: title I Wonder Why I Worry Over You}
 {meta: artist Ernest Tubb}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Dear you're not worth the breath takes to mention your [F]name

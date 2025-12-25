@@ -1,6 +1,6 @@
 {meta: title Wife Of A Hard Working Man}
 {meta: artist Jean Shepard}
-{meta: writer Steve Hale}
+{meta: composer Steve Hale}
 
 {start_of_verse: Verse 1}
 [G]We had less than a good start on the [C]day the rice was [G]thrown

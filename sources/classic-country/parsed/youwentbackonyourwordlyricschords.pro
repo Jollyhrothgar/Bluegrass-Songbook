@@ -1,6 +1,6 @@
 {meta: title You Went Back On Your Word}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Bobby Stevenson and Brook Benton}
+{meta: composer Bobby Stevenson and Brook Benton}
 
 {start_of_verse: Verse 1}
 [G]Said you would be mine and treat me right

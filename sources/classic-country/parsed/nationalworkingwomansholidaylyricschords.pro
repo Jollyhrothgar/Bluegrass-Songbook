@@ -1,6 +1,6 @@
 {meta: title National Working Woman's Holiday}
 {meta: artist Sammy Kershaw}
-{meta: writer Roger Murrah, Pat Terry, James Hicks}
+{meta: composer Roger Murrah, Pat Terry, James Hicks}
 
 {start_of_verse: Verse 1}
 [C]They oughta run your picture in a magazine

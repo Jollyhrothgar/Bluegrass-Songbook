@@ -1,6 +1,6 @@
 {meta: title Kickin' Our Hearts Around}
 {meta: artist Buck Owens}
-{meta: writer Wanda Jackson}
+{meta: composer Wanda Jackson}
 
 {start_of_verse: Verse 1}
 [G]Oh let's stop kickin' each others hearts around it's [C]not the thing to do

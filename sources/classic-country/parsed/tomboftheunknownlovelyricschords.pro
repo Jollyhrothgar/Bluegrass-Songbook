@@ -1,6 +1,6 @@
 {meta: title Tomb Of The Unknown Love}
 {meta: artist Kenny Rogers}
-{meta: writer Michael Smotherman}
+{meta: composer Michael Smotherman}
 
 {start_of_verse: Verse 1}
 [C]One time I drove to see a girl across the country

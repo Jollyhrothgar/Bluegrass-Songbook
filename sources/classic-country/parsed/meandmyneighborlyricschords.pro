@@ -1,6 +1,6 @@
 {meta: title Me And My Neighbor}
 {meta: artist Conway Twitty}
-{meta: writer Wayne Kemp}
+{meta: composer Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [G]I was on my way to church one Sunday

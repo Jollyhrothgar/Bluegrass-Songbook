@@ -1,6 +1,6 @@
 {meta: title A Tear Dropped By}
 {meta: artist Jean Shepard}
-{meta: writer Larry Lee and Rusty Adams}
+{meta: composer Larry Lee and Rusty Adams}
 
 {start_of_verse: Verse 1}
 [D7]A tear drops [G]by

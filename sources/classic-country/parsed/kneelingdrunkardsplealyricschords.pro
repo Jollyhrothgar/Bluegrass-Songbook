@@ -1,6 +1,6 @@
 {meta: title Kneeling Drunkard's Plea}
 {meta: artist Johnny Cash}
-{meta: writer June, Helen and Anita Carter}
+{meta: composer June, Helen and Anita Carter}
 
 {start_of_verse: Verse 1}
 [C]Lord have mercy [G7]on me

@@ -1,6 +1,6 @@
 {meta: title I've Got Precious Memories}
 {meta: artist Faron Young}
-{meta: writer Billy Deaton, Ellen Crandell, Sam Givens}
+{meta: composer Billy Deaton, Ellen Crandell, Sam Givens}
 
 {start_of_verse: Verse 1}
 [G]I was walkin' home from [C]work last night

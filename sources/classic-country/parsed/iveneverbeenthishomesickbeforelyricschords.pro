@@ -1,6 +1,6 @@
 {meta: title I've Never Been This Homesick Before}
 {meta: artist Paul Williams}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 I've Never Been This Homesick Before

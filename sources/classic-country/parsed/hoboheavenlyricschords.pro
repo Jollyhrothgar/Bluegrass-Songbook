@@ -1,6 +1,6 @@
 {meta: title Hobo Heaven}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin, Billy Ray Palmerand Vern Stovall}
+{meta: composer Lloene S. Martin, Billy Ray Palmerand Vern Stovall}
 
 {start_of_verse: Verse 1}
 [C]I am going home to hobo heaven 

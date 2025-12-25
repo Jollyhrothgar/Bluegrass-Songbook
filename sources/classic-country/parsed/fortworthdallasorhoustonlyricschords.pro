@@ -1,6 +1,6 @@
 {meta: title Fort Worth Dallas or Houston}
 {meta: artist George Hamilton IV}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G7]In Fort [C]Worth Dallas or [A7]Houston [D7]or in San Antone

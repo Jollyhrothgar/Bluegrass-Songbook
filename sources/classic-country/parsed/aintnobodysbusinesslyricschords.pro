@@ -1,6 +1,6 @@
 {meta: title Ain't Nobody's Business}
 {meta: artist Hank Williams Jr.}
-{meta: writer Porter Grainger and Everett Robbins}
+{meta: composer Porter Grainger and Everett Robbins}
 
 {start_of_verse: Verse 1}
 [C]One day [Bm]I have ham and [E7]bacon

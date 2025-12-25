@@ -1,6 +1,6 @@
 {meta: title Main Street}
 {meta: artist Garth Brooks}
-{meta: writer Wayne Kirkpatrict, Gordon Kennedy, Trisha Yearwood}
+{meta: composer Wayne Kirkpatrict, Gordon Kennedy, Trisha Yearwood}
 
 {start_of_verse: Verse 1}
 [G]One light [D7]blinking off and [C]on

@@ -1,6 +1,6 @@
 {meta: title Jesus Christ What A Man}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Billy Joe Shaver and Bobby Bare}
+{meta: composer Billy Joe Shaver and Bobby Bare}
 
 {start_of_verse: Verse 1}
 [G]I've heard all the [C]songs you're [G]singing today 

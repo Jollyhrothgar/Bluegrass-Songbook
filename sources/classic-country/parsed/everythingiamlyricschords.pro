@@ -1,6 +1,6 @@
 {meta: title Everything I Am}
 {meta: artist Charlie Pride}
-{meta: writer Kenny O'Dell}
+{meta: composer Kenny O'Dell}
 
 {start_of_verse: Verse 1}
 [C]Everything I am  [F]all [C]that I hope to [F]be

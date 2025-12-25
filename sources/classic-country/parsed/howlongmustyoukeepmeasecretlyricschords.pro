@@ -1,6 +1,6 @@
 {meta: title How Long Must You Keep Me A Secret}
 {meta: artist Leroy Van Dyke}
-{meta: writer Barry Mann and Larry Kolber}
+{meta: composer Barry Mann and Larry Kolber}
 
 {start_of_verse: Verse 1}
 [C]You hold me close you kiss my lips you call me [G7]darlin'

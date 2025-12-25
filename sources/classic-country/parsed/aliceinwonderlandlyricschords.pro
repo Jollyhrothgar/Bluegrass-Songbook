@@ -1,6 +1,6 @@
 {meta: title Alice In Wonderland}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Brenda Barnett, Charles Chalmers, Sandra Rhodes}
+{meta: composer Brenda Barnett, Charles Chalmers, Sandra Rhodes}
 
 {start_of_verse: Verse 1}
 [C]Alice is in [C][G7]wonderland

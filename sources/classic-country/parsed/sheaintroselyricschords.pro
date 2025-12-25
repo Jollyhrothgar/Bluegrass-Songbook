@@ -1,6 +1,6 @@
 {meta: title She Ain't Rose}
 {meta: artist Leon Redbone}
-{meta: writer Gary Vincent and Ken Gray}
+{meta: composer Gary Vincent and Ken Gray}
 
 {start_of_verse: Verse 1}
 [G]She ain't Rose but she ain't [C]bad

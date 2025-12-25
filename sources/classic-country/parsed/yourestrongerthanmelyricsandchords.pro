@@ -1,6 +1,6 @@
 {meta: title You're Stronger Than Me}
 {meta: artist George Strait}
-{meta: writer Hank Cochran and Jimmy Key}
+{meta: composer Hank Cochran and Jimmy Key}
 
 {start_of_verse: Verse 1}
 [C]If you are sincere when [F]you say you don't [G7]care

@@ -1,6 +1,6 @@
 {meta: title Old Flame}
 {meta: artist Alabama}
-{meta: writer Donny Lowery and Mac McAnally}
+{meta: composer Donny Lowery and Mac McAnally}
 
 {start_of_verse: Verse 1}
 [C]I saw you star-ing [F]at each [C]other 

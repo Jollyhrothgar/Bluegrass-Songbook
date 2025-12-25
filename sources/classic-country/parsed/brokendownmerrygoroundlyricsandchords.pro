@@ -1,6 +1,6 @@
 {meta: title Broken Down Merry Go Round}
 {meta: artist Slim Whitman}
-{meta: writer Arthur Herbert and Fred Stryker}
+{meta: composer Arthur Herbert and Fred Stryker}
 
 {start_of_verse: Verse 1}
 [G]You said that you loved me but it wasn't [D7]long till I found

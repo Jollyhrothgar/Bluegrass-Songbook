@@ -1,6 +1,6 @@
 {meta: title His And Hers}
 {meta: artist Vernon Oxford}
-{meta: writer Paul Craft}
+{meta: composer Paul Craft}
 
 {start_of_verse: Verse 1}
 [C]In the carport two cars his and [G7]hers

@@ -1,6 +1,6 @@
 {meta: title You're Too Young To Cry Now}
 {meta: artist Hank Thompson}
-{meta: writer Bud Fisher and Hank Thompson}
+{meta: composer Bud Fisher and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [C]Take your crush from my [A7]heart and bye now

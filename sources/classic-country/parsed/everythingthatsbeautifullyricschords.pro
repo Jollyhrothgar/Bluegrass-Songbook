@@ -1,6 +1,6 @@
 {meta: title Everything That's Beautiful Lyrics and Chords}
 {meta: artist Ray Price}
-{meta: writer Bud Reneau and Hal Bynum}
+{meta: composer Bud Reneau and Hal Bynum}
 
 {start_of_verse: Verse 1}
 [C]Everything that's beautiful reminds me of [Dm]you

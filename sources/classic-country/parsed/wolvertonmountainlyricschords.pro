@@ -1,6 +1,6 @@
 {meta: title Wolverton Mountain Lyrics Chords}
 {meta: artist Web Pierce}
-{meta: writer Merle Kilgore and Claude King}
+{meta: composer Merle Kilgore and Claude King}
 
 {start_of_verse: Verse 1}
 [D7]They say don't go [G]on Wolverton [D7]Mountain

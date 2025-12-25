@@ -1,6 +1,6 @@
 {meta: title Still They Call Me Love}
 {meta: artist Gene Watson}
-{meta: writer John Wayne Wiggins and Harley Lee Allen}
+{meta: composer John Wayne Wiggins and Harley Lee Allen}
 
 {start_of_verse: Verse 1}
 [C]I make people [F]crazy  [G7]make their hearts beat [C]wild

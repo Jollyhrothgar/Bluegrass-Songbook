@@ -1,6 +1,6 @@
 {meta: title Big Sister Little Sister}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Frances Heighton}
+{meta: composer Loretta Lynn and Frances Heighton}
 
 {start_of_verse: Verse 1}
 [F](Give up to the [C]baby that's [G7]what they'd always [C]say)

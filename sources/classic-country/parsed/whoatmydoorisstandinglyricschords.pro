@@ -1,6 +1,6 @@
 {meta: title Who at My Door is Standing}
 {meta: artist Marty Robbins}
-{meta: writer Mary B. Slade and Asa B. Everett}
+{meta: composer Mary B. Slade and Asa B. Everett}
 
 {start_of_verse: Verse 1}
 [G]Who at my door is [C]standing   

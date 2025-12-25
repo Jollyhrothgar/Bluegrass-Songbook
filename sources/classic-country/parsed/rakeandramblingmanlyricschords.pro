@@ -1,6 +1,6 @@
 {meta: title Rake And Rambling Man}
 {meta: artist Don Williams}
-{meta: writer Bob McMill}
+{meta: composer Bob McMill}
 
 {start_of_verse: Verse 1}
 [C]I ran into an old friend of mine the other day

@@ -1,6 +1,6 @@
 {meta: title If Teardrops Were Silver}
 {meta: artist Connie Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [G]If heartache was laughter then I'd be a [D7]clown

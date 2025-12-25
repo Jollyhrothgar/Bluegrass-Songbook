@@ -1,6 +1,6 @@
 {meta: title I'm Waltzing With Tears In My Eyes}
 {meta: artist Cowboy Copas}
-{meta: writer Sydney Nathan, Paul Howard, Lloyd Copas}
+{meta: composer Sydney Nathan, Paul Howard, Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [C]I'm waltzing with tears in my eyes

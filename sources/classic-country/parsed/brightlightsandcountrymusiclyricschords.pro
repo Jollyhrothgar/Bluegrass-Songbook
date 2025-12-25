@@ -1,6 +1,6 @@
 {meta: title Bright Lights and Country Music}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson and Jimmy Gateley}
+{meta: composer Bill Anderson and Jimmy Gateley}
 
 {start_of_verse: Verse 1}
 [G]I love those bright lights  and [D7]country [G]music

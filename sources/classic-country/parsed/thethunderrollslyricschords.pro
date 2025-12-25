@@ -1,6 +1,6 @@
 {meta: title The Thunder Rolls}
 {meta: artist Garth Brooks}
-{meta: writer Pat Alger and Garth Brooks}
+{meta: composer Pat Alger and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [Am]Three thirty [Dm]in the morning not a soul in [F]sight

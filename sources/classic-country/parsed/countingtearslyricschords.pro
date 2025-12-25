@@ -1,6 +1,6 @@
 {meta: title Counting Tears}
 {meta: artist Jimmy Dean}
-{meta: writer Don Crenshaw, Bill Stallard, Everett Cook}
+{meta: composer Don Crenshaw, Bill Stallard, Everett Cook}
 
 {start_of_verse: Verse 1}
 [C]In the blue of the evening [F]when shadows steal 

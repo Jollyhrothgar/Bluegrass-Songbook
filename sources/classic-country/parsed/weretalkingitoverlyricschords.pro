@@ -1,6 +1,6 @@
 {meta: title We're Talking It Over}
 {meta: artist Faron Young}
-{meta: writer Merle Kilgore and Faron Young}
+{meta: composer Merle Kilgore and Faron Young}
 
 {start_of_verse: Verse 1}
 [F]Now that we’ve talked it [C]over I [G7]know it’s still [C]goodbye

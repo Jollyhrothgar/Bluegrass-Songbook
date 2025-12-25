@@ -1,6 +1,6 @@
 {meta: title Torn Between Two Lovers}
 {meta: artist Johnny Rodriguez}
-{meta: writer Peter Yarrow and Phillip Jarrell}
+{meta: composer Peter Yarrow and Phillip Jarrell}
 
 {start_of_verse: Verse 1}
 [C]There are [Dm]times when a man [G7]has to [C]say what's on his mind

@@ -1,6 +1,6 @@
 {meta: title You Can’t Conceal A Broken Heart}
 {meta: artist Kitty Wells}
-{meta: writer Johnny Wright and Wally Fowler}
+{meta: composer Johnny Wright and Wally Fowler}
 
 {start_of_verse: Verse 1}
 [G]You can't conceal a [C]heart that's [G]broken

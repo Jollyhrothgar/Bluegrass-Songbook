@@ -1,6 +1,6 @@
 {meta: title The Night's Too Long}
 {meta: artist Patty Loveless}
-{meta: writer Lucinda Williams}
+{meta: composer Lucinda Williams}
 
 {start_of_verse: Verse 1}
 [G]Sylvia was working as a [C]waitress in Beaumont

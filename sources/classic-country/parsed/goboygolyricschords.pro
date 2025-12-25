@@ -1,6 +1,6 @@
 {meta: title Go Boy Go}
 {meta: artist Carl Smith}
-{meta: writer Floyd Wilson}
+{meta: composer Floyd Wilson}
 
 {start_of_verse: Verse 1}
 [C]Go boy go love is easy made

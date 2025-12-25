@@ -1,6 +1,6 @@
 {meta: title Clear Water Blues}
 {meta: artist Alabama}
-{meta: writer Teddy Gentry, Greg Fowler, Ronnie Rogers}
+{meta: composer Teddy Gentry, Greg Fowler, Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [C]Clear water blues [E7]thinking of [Am]you

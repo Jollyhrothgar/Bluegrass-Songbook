@@ -1,6 +1,6 @@
 {meta: title I've Got My Future On Ice}
 {meta: artist Hank Williams Jr.}
-{meta: writer Jerry Crutchfield and Edria Humphrey}
+{meta: composer Jerry Crutchfield and Edria Humphrey}
 
 {start_of_verse: Verse 1}
 [C]I got a past that'll [F]last me for[C]ever

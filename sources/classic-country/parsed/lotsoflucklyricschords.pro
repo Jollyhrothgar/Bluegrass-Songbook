@@ -1,6 +1,6 @@
 {meta: title Lots Of Luck}
 {meta: artist Ernest Tubb}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]My heart will break as I watch you go

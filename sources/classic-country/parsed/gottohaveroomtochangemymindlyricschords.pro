@@ -1,6 +1,6 @@
 {meta: title Got To Have Room To Change My Mind}
 {meta: artist Bob Luman}
-{meta: writer Steve Wariner}
+{meta: composer Steve Wariner}
 
 {start_of_verse: Verse 1}
 [C]You have heard me say I've [Dm]gotta be free[F]

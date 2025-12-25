@@ -1,6 +1,6 @@
 {meta: title Love Or Spite}
 {meta: artist Hank Locklin}
-{meta: writer Cy Coben and Bill Carver}
+{meta: composer Cy Coben and Bill Carver}
 
 {start_of_verse: Verse 1}
 [C]Once I know you cared for only [G7]me

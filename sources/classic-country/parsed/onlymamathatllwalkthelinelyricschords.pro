@@ -1,6 +1,6 @@
 {meta: title Only Mama That'll Walk The Line}
 {meta: artist Connie Smith}
-{meta: writer Ivy J. Bryant}
+{meta: composer Ivy J. Bryant}
 
 {start_of_verse: Verse 1}
 [G]Won't you tell me if you can what's the matter with a man

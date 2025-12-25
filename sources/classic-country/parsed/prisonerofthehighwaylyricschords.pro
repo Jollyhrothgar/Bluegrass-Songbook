@@ -1,6 +1,6 @@
 {meta: title Prisoner of the Highway}
 {meta: artist Ronnie Milsap}
-{meta: writer Mike Reid}
+{meta: composer Mike Reid}
 
 {start_of_verse: Verse 1}
 [Am]Diesel powers 18 wheels to [C]rolling

@@ -1,6 +1,6 @@
 {meta: title Works Of The Lord}
 {meta: artist The Foggy River Boys}
-{meta: writer Danny Dill}
+{meta: composer Danny Dill}
 
 {start_of_verse: Verse 1}
 [C]A friend of mine came up to me and he said if I could [F]see

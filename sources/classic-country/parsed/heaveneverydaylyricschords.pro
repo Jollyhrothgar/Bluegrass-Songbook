@@ -1,6 +1,6 @@
 {meta: title Heaven Everyday}
 {meta: artist Mel Tillis}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]If an angel wears  a housewife's [F]dress

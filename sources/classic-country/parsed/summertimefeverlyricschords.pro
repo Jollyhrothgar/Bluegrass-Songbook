@@ -1,6 +1,6 @@
 {meta: title Summertime Fever}
 {meta: artist Tracy Byrd}
-{meta: writer Marty Brown and Stan Webb}
+{meta: composer Marty Brown and Stan Webb}
 
 {start_of_verse: Verse 1}
 [G]Well I went to the doctor to tell him the [C]news 

@@ -1,6 +1,6 @@
 {meta: title I'll Follow You}
 {meta: artist Jim Reeves}
-{meta: writer Walter Scott}
+{meta: composer Walter Scott}
 
 {start_of_verse: Verse 1}
 [G]I'll follow you from here to a star [D7]afar

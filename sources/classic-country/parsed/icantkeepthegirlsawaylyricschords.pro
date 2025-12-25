@@ -1,6 +1,6 @@
 {meta: title I Can't Keep The Girls Away}
 {meta: artist Billy Walker}
-{meta: writer L. Butler}
+{meta: composer L. Butler}
 
 {start_of_verse: Verse 1}
 [G]Momma’s gone and I’m alone and I can’t keep the girls [D7]away

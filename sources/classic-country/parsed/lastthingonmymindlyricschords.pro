@@ -1,6 +1,6 @@
 {meta: title Last Thing On My Mind}
 {meta: artist Dolly Parton}
-{meta: writer Tom Paxton}
+{meta: composer Tom Paxton}
 
 {start_of_verse: Verse 1}
 [G]It’s a lesson too late [C]for the [G]learning

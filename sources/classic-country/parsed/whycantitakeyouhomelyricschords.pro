@@ -1,6 +1,6 @@
 {meta: title Why Can't I Take You Home}
 {meta: artist Jim Ed Brown}
-{meta: writer Huey Long}
+{meta: composer Huey Long}
 
 {start_of_verse: Verse 1}
 [C]I can see that want me look that's [F]gleaming in your eyes

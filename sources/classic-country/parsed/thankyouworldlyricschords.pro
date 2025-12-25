@@ -1,6 +1,6 @@
 {meta: title Thank You World}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Lew DeWitt}
+{meta: composer Don Reid and Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [G]I wanna thank you world for letting me belong

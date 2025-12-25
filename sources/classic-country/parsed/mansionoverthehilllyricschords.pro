@@ -1,6 +1,6 @@
 {meta: title Mansion Over the Hilltop}
 {meta: artist Elvis Presley}
-{meta: writer Ira P. Stanphill}
+{meta: composer Ira P. Stanphill}
 
 {start_of_verse: Verse 1}
 [C]I'm satisfied with just a [F]cottage [C]below

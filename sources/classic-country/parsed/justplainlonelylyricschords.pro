@@ -1,6 +1,6 @@
 {meta: title Just Plain Lonely}
 {meta: artist Jean Shepard}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]I go to all our favorite [Dm]places[G7]

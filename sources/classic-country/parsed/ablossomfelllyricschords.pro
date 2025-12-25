@@ -1,6 +1,6 @@
 {meta: title A Blossom Fell}
 {meta: artist Hank Thompson}
-{meta: writer Howard Barnes, Harry Fields, Joseph Roncoroni}
+{meta: composer Howard Barnes, Harry Fields, Joseph Roncoroni}
 
 {start_of_verse: Verse 1}
 [C]A blossom [Am]fell from [C]off a [Dm]tree

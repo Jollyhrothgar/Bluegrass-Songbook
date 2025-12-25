@@ -1,6 +1,6 @@
 {meta: title I'll Set My Teardrops To Music}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Lynn Russwurm}
+{meta: composer Hank Thompson and Lynn Russwurm}
 
 {start_of_verse: Verse 1}
 [G]I'll [Am]set my teardrops to [D7]music

@@ -1,6 +1,6 @@
 {meta: title It's Just Not Christmas}
 {meta: artist Ronnie Milsap}
-{meta: writer Bill Swindell, Tina Swindell,}
+{meta: composer Bill Swindell, Tina Swindell,}
 
 {start_of_verse: Verse 1}
 [C]I won't be [Em]trying out for [F]mistletoe

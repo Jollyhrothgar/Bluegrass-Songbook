@@ -1,6 +1,6 @@
 {meta: title I'm Not That Way Anymore}
 {meta: artist Alabama}
-{meta: writer Randy Owen, Teddy Gentry,}
+{meta: composer Randy Owen, Teddy Gentry,}
 
 {start_of_verse: Verse 1}
 [C]We used to get [F]crazy every [G7]Saturday [C]night 

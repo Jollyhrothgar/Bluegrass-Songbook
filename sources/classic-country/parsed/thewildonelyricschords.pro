@@ -1,6 +1,6 @@
 {meta: title The Wild One}
 {meta: artist Johnny Horton}
-{meta: writer Merle Kilgore and Tillman Franks}
+{meta: composer Merle Kilgore and Tillman Franks}
 
 {start_of_verse: Verse 1}
 [C]Give me my cycle with [G7]star filled sky [C]above

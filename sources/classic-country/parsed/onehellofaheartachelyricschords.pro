@@ -1,6 +1,6 @@
 {meta: title One Hell Of A Heartache}
 {meta: artist Gene Watson}
-{meta: writer Keith Palmer & Janet White Demmans}
+{meta: composer Keith Palmer & Janet White Demmans}
 
 {start_of_verse: Verse 1}
 [G]It’s the first morning after it’s so hard to [Am]face

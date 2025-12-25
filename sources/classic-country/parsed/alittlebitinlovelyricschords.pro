@@ -1,6 +1,6 @@
 {meta: title A Little Bit In Love}
 {meta: artist Patty Loveless}
-{meta: writer Steve Earle}
+{meta: composer Steve Earle}
 
 {start_of_verse: Verse 1}
 [G]I don't fall in love as a rule

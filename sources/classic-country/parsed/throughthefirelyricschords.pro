@@ -1,6 +1,6 @@
 {meta: title Through The Fire}
 {meta: artist Randy Travis}
-{meta: writer Gerald Crabb}
+{meta: composer Gerald Crabb}
 
 {start_of_verse: Verse 1}
 [C]So many times I've [G7]questioned [Am]certain circum[G7]stances

@@ -1,6 +1,6 @@
 {meta: title That Christmasy Feeling}
 {meta: artist Johnny Cash}
-{meta: writer Jimmy Peppers and Tommy Cash}
+{meta: composer Jimmy Peppers and Tommy Cash}
 
 {start_of_verse: Verse 1}
 [C]There's a choir outside of my house singin' Silent [G7]Night 

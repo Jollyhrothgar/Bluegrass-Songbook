@@ -1,6 +1,6 @@
 {meta: title Talk Gobbler Talk}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Horton &amp; Fred Horton}
+{meta: composer Johnny Horton &amp; Fred Horton}
 
 {start_of_verse: Verse 1}
 [C]When the moon comes over old Smokey

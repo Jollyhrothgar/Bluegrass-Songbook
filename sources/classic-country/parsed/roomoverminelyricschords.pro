@@ -1,6 +1,6 @@
 {meta: title Room Over Mine}
 {meta: artist Danny Paisley}
-{meta: writer Eddie Noack}
+{meta: composer Eddie Noack}
 
 {start_of_verse: Verse 1}
 [C]We pass in the hallway [C7]almost every [F]day

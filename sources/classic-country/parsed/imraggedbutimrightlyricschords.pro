@@ -1,6 +1,6 @@
 {meta: title I'm Ragged But I'm Right}
 {meta: artist Johnny Cash}
-{meta: writer George Jones}
+{meta: composer George Jones}
 
 {start_of_verse: Verse 1}
 [C]Well I’ve come here to tell you folks I'm ragged but I'm [G7]right

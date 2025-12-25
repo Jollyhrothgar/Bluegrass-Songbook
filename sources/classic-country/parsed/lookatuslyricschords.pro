@@ -1,6 +1,6 @@
 {meta: title Look At Us}
 {meta: artist Vince Gill}
-{meta: writer Max D. Barnes and Vince Gill}
+{meta: composer Max D. Barnes and Vince Gill}
 
 {start_of_verse: Verse 1}
 [G7]Look at [C]us after [C7]all these years [F]together

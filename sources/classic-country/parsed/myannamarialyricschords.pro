@@ -1,6 +1,6 @@
 {meta: title My Anna Maria}
 {meta: artist Freddie Hart}
-{meta: writer Orville Couch, Sam Coleman, Eddie McDuff}
+{meta: composer Orville Couch, Sam Coleman, Eddie McDuff}
 
 {start_of_verse: Verse 1}
 [G]Anna [D7][C]Maria [C]ooh [D7]ooh [G]ooh

@@ -1,6 +1,6 @@
 {meta: title Too Long}
 {meta: artist Tanya Tucker}
-{meta: writer Mike Donovan}
+{meta: composer Mike Donovan}
 
 {start_of_verse: Verse 1}
 [C]I spend the [G]night in my room in my [C]easy chair

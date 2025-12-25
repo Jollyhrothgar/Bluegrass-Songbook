@@ -1,6 +1,6 @@
 {meta: title That's Where I Want To Be}
 {meta: artist Bobby Bare}
-{meta: writer Bobby Bare and Lance Guynes}
+{meta: composer Bobby Bare and Lance Guynes}
 
 {start_of_verse: Verse 1}
 [C]Well I saw you last night with [F]your new love

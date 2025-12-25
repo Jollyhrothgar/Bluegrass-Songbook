@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Be The Boss From Now On}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills and Jesse Ashlock}
+{meta: composer Bob Wills and Jesse Ashlock}
 
 {start_of_verse: Verse 1}
 [C]The worst thing I [F]did was when I [C]married [G7]you

@@ -1,6 +1,6 @@
 {meta: title She Was Here}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]You see these arms they [C7]look so [F]empty now

@@ -1,6 +1,6 @@
 {meta: title A Love So Beautiful}
 {meta: artist Roy Orbison}
-{meta: writer Jeff Lynne and Roy Orbison}
+{meta: composer Jeff Lynne and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [C]The summer sun looked down on [Em]our love long [F]ago

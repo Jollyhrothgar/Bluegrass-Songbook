@@ -1,6 +1,6 @@
 {meta: title Bobbie Sue}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Dan Tyler, Wood Newton, Adele B. Tyler}
+{meta: composer Dan Tyler, Wood Newton, Adele B. Tyler}
 
 {start_of_verse: Verse 1}
 [G]I heard about her from a friend of mine

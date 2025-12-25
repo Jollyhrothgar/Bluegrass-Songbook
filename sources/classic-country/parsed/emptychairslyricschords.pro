@@ -1,6 +1,6 @@
 {meta: title Empty Chairs}
 {meta: artist Ray Price}
-{meta: writer Don McLean}
+{meta: composer Don McLean}
 
 {start_of_verse: Verse 1}
 [C]I feel a trembling tingle of a [Dm]sleepless night

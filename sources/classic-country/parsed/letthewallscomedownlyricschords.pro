@@ -1,6 +1,6 @@
 {meta: title Let the Walls Come Down}
 {meta: artist Kris Kristofferson}
-{meta: writer Steve Bruton, Glen A. Clark, Danny Timms}
+{meta: composer Steve Bruton, Glen A. Clark, Danny Timms}
 
 {start_of_verse: Verse 1}
 [G]On a [C]cold dark corner in [G]town an [C]old soul standin' his [G]ground

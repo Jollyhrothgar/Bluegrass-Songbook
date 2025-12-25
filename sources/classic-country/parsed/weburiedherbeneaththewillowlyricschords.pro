@@ -1,6 +1,6 @@
 {meta: title We Buried Her Beneath The Willow}
 {meta: artist Kitty Wells}
-{meta: writer C.R. Runners}
+{meta: composer C.R. Runners}
 
 {start_of_verse: Verse 1}
 [G]One day an angel came down from [C]heaven 

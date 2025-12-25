@@ -1,6 +1,6 @@
 {meta: title Colors I'm Gonna Paint The Town}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Buddy Alan}
+{meta: composer Buck Owens and Buddy Alan}
 
 {start_of_verse: Verse 1}
 [G]I left my front door open many times for you to use

@@ -1,6 +1,6 @@
 {meta: title Look Of Lovin' In His Eyes}
 {meta: artist Jean Shepard}
-{meta: writer Jan Crutchfield and Larry Butler}
+{meta: composer Jan Crutchfield and Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]Sometimes he finds me standin' in [Dm]front of my [G7]mirror

@@ -1,6 +1,6 @@
 {meta: title She Keeps the Home Fires Burning}
 {meta: artist Ronnie Milsap}
-{meta: writer Dennis Morgan, Mike Reid, Don Pfrimmer}
+{meta: composer Dennis Morgan, Mike Reid, Don Pfrimmer}
 
 {start_of_verse: Verse 1}
 [G]Crack of dawn I hit the road  set my shoulders for the heavy load

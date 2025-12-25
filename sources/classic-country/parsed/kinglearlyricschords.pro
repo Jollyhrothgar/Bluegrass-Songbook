@@ -1,6 +1,6 @@
 {meta: title King Lear}
 {meta: artist Cal Smith}
-{meta: writer Mel Holt}
+{meta: composer Mel Holt}
 
 {start_of_verse: Verse 1}
 [G]There’s an old man in town named O’Leary but we call him [C]Lear

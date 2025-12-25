@@ -1,6 +1,6 @@
 {meta: title Girl Of Mine}
 {meta: artist Elvis Presley}
-{meta: writer Les Reed and Barry Mason}
+{meta: composer Les Reed and Barry Mason}
 
 {start_of_verse: Verse 1}
 [G]When you're asleep beside me I watch you lying [Am]there

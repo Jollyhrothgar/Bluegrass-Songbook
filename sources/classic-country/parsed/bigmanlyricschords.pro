@@ -1,6 +1,6 @@
 {meta: title Big Man}
 {meta: artist Charlie Rich}
-{meta: writer Dale Fox}
+{meta: composer Dale Fox}
 
 {start_of_verse: Verse 1}
 [G]I went wanderin' way down

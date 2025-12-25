@@ -1,6 +1,6 @@
 {meta: title Satisfied Woman}
 {meta: artist Jean Shepard}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [G]Livin' the good life and lovin' the one who means the [C]world to [G]me

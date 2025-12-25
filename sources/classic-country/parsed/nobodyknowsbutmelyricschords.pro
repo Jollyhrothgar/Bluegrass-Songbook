@@ -1,6 +1,6 @@
 {meta: title Nobody Knows But Me}
 {meta: artist Lefty Frizzell}
-{meta: writer Jimmie Rodgers and Elsie McWilliams}
+{meta: composer Jimmie Rodgers and Elsie McWilliams}
 
 {start_of_verse: Verse 1}
 [C]Nobody knows about the [Am]jailhouse blues [Dm]till you get [G7]within four [C]walls

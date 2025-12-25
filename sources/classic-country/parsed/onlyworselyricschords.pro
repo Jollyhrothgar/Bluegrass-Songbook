@@ -1,6 +1,6 @@
 {meta: title Only Worse}
 {meta: artist Randy Travis}
-{meta: writer Kent M. Robbins and John Jarrard}
+{meta: composer Kent M. Robbins and John Jarrard}
 
 {start_of_verse: Verse 1}
 [C]I just dropped in cause [G7]I could use a friend

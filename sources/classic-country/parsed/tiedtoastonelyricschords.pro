@@ -1,6 +1,6 @@
 {meta: title Tied To A Stone}
 {meta: artist George Jones}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]I woke up this morning and prayed to God oh let this be a [F]dream

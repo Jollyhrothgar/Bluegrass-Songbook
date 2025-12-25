@@ -1,6 +1,6 @@
 {meta: title Down Came The Rain}
 {meta: artist Bill Anderson}
-{meta: writer Eddie Miller}
+{meta: composer Eddie Miller}
 
 {start_of_verse: Verse 1}
 [C]You told me that you'd love me

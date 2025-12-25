@@ -1,6 +1,6 @@
 {meta: title Anything's Better Than Nothing}
 {meta: artist Porter Wagoner}
-{meta: writer Marie Wilson}
+{meta: composer Marie Wilson}
 
 {start_of_verse: Verse 1}
 [C]Friends ask how I'll get along with[F]out you

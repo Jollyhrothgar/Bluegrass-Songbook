@@ -1,6 +1,6 @@
 {meta: title Long Ago Is Gone}
 {meta: artist Norma Jean}
-{meta: writer Glenn Martin, Carl Knight, Charles Pendleton, Abe Rotwein}
+{meta: composer Glenn Martin, Carl Knight, Charles Pendleton, Abe Rotwein}
 
 {start_of_verse: Verse 1}
 [G]I don't have them [C]anymore but the signs [D7]are still [G]around

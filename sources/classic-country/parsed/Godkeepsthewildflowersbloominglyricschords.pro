@@ -1,6 +1,6 @@
 {meta: title God Keeps The Wild Flowers Blooming}
 {meta: artist George Jones}
-{meta: writer Bobby Abshire}
+{meta: composer Bobby Abshire}
 
 {start_of_verse: Verse 1}
 [G]I been working all day long on [C]some old forgotten [G]place

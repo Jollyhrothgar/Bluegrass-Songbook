@@ -1,6 +1,6 @@
 {meta: title Bury Me Deep}
 {meta: artist Hank Snow}
-{meta: writer Ted Daffan}
+{meta: composer Ted Daffan}
 
 {start_of_verse: Verse 1}
 [C]Tired of life all alone and [F]blue

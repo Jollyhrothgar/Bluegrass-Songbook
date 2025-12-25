@@ -1,6 +1,6 @@
 {meta: title Candy Coated Kisses}
 {meta: artist Bobby Bare}
-{meta: writer Barry DeVorzon and Cliff Crawford}
+{meta: composer Barry DeVorzon and Cliff Crawford}
 
 {start_of_verse: Verse 1}
 [C]You speak and the [G7]words flow like [C]honey 

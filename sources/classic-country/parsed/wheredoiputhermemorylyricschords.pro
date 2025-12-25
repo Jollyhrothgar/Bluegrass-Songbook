@@ -1,6 +1,6 @@
 {meta: title Where Do I Put Her Memory}
 {meta: artist Charley Pride}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [C]I’ve taken down all [F]of her [C]pictures

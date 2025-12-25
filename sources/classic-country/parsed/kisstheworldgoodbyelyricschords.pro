@@ -1,6 +1,6 @@
 {meta: title Kiss The World Goodbye}
 {meta: artist Ray Price}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [C]I never had no [F]regrets boys [G7]not for nothing I've [C]done

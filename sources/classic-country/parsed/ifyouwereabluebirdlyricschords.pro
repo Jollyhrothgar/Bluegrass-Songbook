@@ -1,6 +1,6 @@
 {meta: title If You Were A Bluebird}
 {meta: artist Emmylou Harris}
-{meta: writer Butch Hancock}
+{meta: composer Butch Hancock}
 
 {start_of_verse: Verse 1}
 [G]If you were a bluebird you'd be a sad one

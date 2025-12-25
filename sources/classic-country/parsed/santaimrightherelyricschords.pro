@@ -1,6 +1,6 @@
 {meta: title Santa I'm Right Here}
 {meta: artist Toby Keith}
-{meta: writer Ronald Dwaine Reynolds}
+{meta: composer Ronald Dwaine Reynolds}
 
 {start_of_verse: Verse 1}
 [Am]I was downtown Christmas [Em]shopping

@@ -1,6 +1,6 @@
 {meta: title Morals Of A Man}
 {meta: artist Stonewall Jackson}
-{meta: writer John Virgin}
+{meta: composer John Virgin}
 
 {start_of_verse: Verse 1}
 [C]She was a good girl from a family well [Dm]respected[G7]

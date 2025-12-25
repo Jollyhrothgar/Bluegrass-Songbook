@@ -1,6 +1,6 @@
 {meta: title In The Pines}
 {meta: artist Dolly Parton}
-{meta: writer Alan Riggs}
+{meta: composer Alan Riggs}
 
 {start_of_verse: Verse 1}
 [C]In the pines in the pines

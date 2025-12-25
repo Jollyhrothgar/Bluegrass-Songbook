@@ -1,6 +1,6 @@
 {meta: title Baby Blue Eyes}
 {meta: artist Lester Flatt}
-{meta: writer Jim Eanes}
+{meta: composer Jim Eanes}
 
 {start_of_verse: Verse 1}
 [C]I wonder if [G7]I'll ever [C]forget you

@@ -1,6 +1,6 @@
 {meta: title Listen To The Radio}
 {meta: artist Don Williams}
-{meta: writer Fredric O Knipe III}
+{meta: composer Fredric O Knipe III}
 
 {start_of_verse: Verse 1}
 [C]I guess as a [Em]lover I [Am]have a [C]ways to [F]go

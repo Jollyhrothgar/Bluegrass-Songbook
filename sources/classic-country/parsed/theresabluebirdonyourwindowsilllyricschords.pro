@@ -1,6 +1,6 @@
 {meta: title There's A Bluebird On Your Windowsill}
 {meta: artist Wilf Carter}
-{meta: writer Elizabeth Clarke}
+{meta: composer Elizabeth Clarke}
 
 {start_of_verse: Verse 1}
 [C]There's a Bluebird on your windowsill

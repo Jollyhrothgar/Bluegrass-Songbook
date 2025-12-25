@@ -1,6 +1,6 @@
 {meta: title A Place To Hang My Hat}
 {meta: artist Randy Travis}
-{meta: writer Byron Hill, Shawn Camp, Brice Long}
+{meta: composer Byron Hill, Shawn Camp, Brice Long}
 
 {start_of_verse: Verse 1}
 [G]I can see it [C]in your [G]eyes

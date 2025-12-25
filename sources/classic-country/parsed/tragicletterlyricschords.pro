@@ -1,6 +1,6 @@
 {meta: title Tragic Letter}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Herman Willis}
+{meta: composer Lefty Frizzell and Herman Willis}
 
 {start_of_verse: Verse 1}
 [C]Dear I read the letter that you [F]left me

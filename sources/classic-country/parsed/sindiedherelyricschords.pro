@@ -1,6 +1,6 @@
 {meta: title Sin Died Here}
 {meta: artist The Hinsons}
-{meta: writer Ronald A. Hinson}
+{meta: composer Ronald A. Hinson}
 
 {start_of_verse: Verse 1}
 [C]That old alter can really talk oh [F]but it won't [C]reveal

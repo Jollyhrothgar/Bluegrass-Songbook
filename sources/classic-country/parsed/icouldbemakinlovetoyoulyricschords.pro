@@ -1,6 +1,6 @@
 {meta: title I Could Be Makin' Love To You}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]Shag carpet on a [F]hotel floor [G7]black and white [C]TV

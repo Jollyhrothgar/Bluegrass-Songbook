@@ -1,6 +1,6 @@
 {meta: title Carolyn At The Broken Wheel Inn}
 {meta: artist Larry Cordle and Lonesome Standard Time}
-{meta: writer Bob McDill and Jim Rushing}
+{meta: composer Bob McDill and Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]Well a big cardboard suitcase and a [F]four-year old [C]Buick

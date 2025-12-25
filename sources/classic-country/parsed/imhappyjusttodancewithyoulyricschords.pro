@@ -1,6 +1,6 @@
 {meta: title I'm Happy Just To Dance With You}
 {meta: artist Anne Murray}
-{meta: writer John Lennon and Paul McCartney}
+{meta: composer John Lennon and Paul McCartney}
 
 {start_of_verse: Verse 1}
 [G7]I don't [C]wanna kiss or [Em]hold your [G7][Dm]hand

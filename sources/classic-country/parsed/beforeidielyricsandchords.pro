@@ -1,6 +1,6 @@
 {meta: title Before I Die}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Woody Mullis and Trey Matthews}
+{meta: composer Woody Mullis and Trey Matthews}
 
 {start_of_verse: Verse 1}
 [G7]Before I [C]die I wanna [F]hit the Mississippi in a [G7]boat I've yet to [C]buy

@@ -1,6 +1,6 @@
 {meta: title Burn One Down}
 {meta: artist Clint Black}
-{meta: writer Clint Black, Hayden Nicholas, Frankie Miller}
+{meta: composer Clint Black, Hayden Nicholas, Frankie Miller}
 
 {start_of_verse: Verse 1}
 [G]I guess you're off to have your fun 

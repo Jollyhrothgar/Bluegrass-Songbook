@@ -1,6 +1,6 @@
 {meta: title I Grew Up}
 {meta: artist Jim Reeves}
-{meta: writer H.R. Friedman}
+{meta: composer H.R. Friedman}
 
 {start_of_verse: Verse 1}
 [C]When I was but a tiny tot my folks I dis[G7]obeyed

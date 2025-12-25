@@ -1,6 +1,6 @@
 {meta: title Cadillac Lane}
 {meta: artist Buck Owens}
-{meta: writer Red Simpson and Buck Owens}
+{meta: composer Red Simpson and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]I wish I was a rich man a [C]living on Cadillac [G]lane

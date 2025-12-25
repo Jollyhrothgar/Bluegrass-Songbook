@@ -1,6 +1,6 @@
 {meta: title Pete's Music City}
 {meta: artist Alabama}
-{meta: writer Monty Powell}
+{meta: composer Monty Powell}
 
 {start_of_verse: Verse 1}
 [G]Well northern Georgia [C]highway 41

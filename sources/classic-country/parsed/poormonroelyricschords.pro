@@ -1,6 +1,6 @@
 {meta: title Poor Monroe}
 {meta: artist Ricky Skaggs}
-{meta: writer Roy Centers}
+{meta: composer Roy Centers}
 
 {start_of_verse: Verse 1}
 [C]Just because he's lazy sits around with the blues

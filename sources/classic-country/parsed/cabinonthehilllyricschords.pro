@@ -1,6 +1,6 @@
 {meta: title Cabin On The Hill}
 {meta: artist Lester Flatt and Earl Scruggs}
-{meta: writer B.L. Shook}
+{meta: composer B.L. Shook}
 
 {start_of_verse: Verse 1}
 [C]There's a happy child at home (there's a happy child at home)

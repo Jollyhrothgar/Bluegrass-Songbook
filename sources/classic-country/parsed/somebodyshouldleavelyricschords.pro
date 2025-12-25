@@ -1,6 +1,6 @@
 {meta: title Somebody Should Leave}
 {meta: artist Reba McEntire}
-{meta: writer Harlan Howard and Chick Rains}
+{meta: composer Harlan Howard and Chick Rains}
 
 {start_of_verse: Verse 1}
 [C]It sure gets quiet when the [F]kids [D7]go to [Dm]bed

@@ -1,6 +1,6 @@
 {meta: title Plaid and Calico}
 {meta: artist Johnny Horton}
-{meta: writer Bruce Blalock and Wes McWain}
+{meta: composer Bruce Blalock and Wes McWain}
 
 {start_of_verse: Verse 1}
 [G7]Calico calico plaid and cali[C]co

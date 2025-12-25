@@ -1,6 +1,6 @@
 {meta: title Christmas Shopping}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Charles Anderson}
+{meta: composer Buck Owens and Charles Anderson}
 
 {start_of_verse: Verse 1}
 [G]I got ten toy soldiers for Billy Joe 

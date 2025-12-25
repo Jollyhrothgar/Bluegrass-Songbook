@@ -1,6 +1,6 @@
 {meta: title Reconsider Leaving Me}
 {meta: artist Darrell McCall}
-{meta: writer Sam Bardin}
+{meta: composer Sam Bardin}
 
 {start_of_verse: Verse 1}
 [C]Why did you have to take my heart and [G7]leave me with my mind

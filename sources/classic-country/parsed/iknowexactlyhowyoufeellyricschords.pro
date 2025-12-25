@@ -1,6 +1,6 @@
 {meta: title I Know Exactly How You Feel}
 {meta: artist Hank Thompson}
-{meta: writer Lyle Gaston and Hank Thompson}
+{meta: composer Lyle Gaston and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [C]Is your heart sick and heavy are you empty down inside

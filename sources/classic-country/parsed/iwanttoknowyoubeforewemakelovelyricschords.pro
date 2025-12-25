@@ -1,6 +1,6 @@
 {meta: title I Want To Know You Before We Make Love}
 {meta: artist Alabama}
-{meta: writer Becky Hobbs, Candy Parton}
+{meta: composer Becky Hobbs, Candy Parton}
 
 {start_of_verse: Verse 1}
 [C]Sometimes all you need is someone to [F]hold you

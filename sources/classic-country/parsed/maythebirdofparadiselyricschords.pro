@@ -1,6 +1,6 @@
 {meta: title May The Bird Of Paradise}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Neal Merritt}
+{meta: composer Neal Merritt}
 
 {start_of_verse: Verse 1}
 [C]One fine day as I was [G7]walking down the [C]street

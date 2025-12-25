@@ -1,6 +1,6 @@
 {meta: title All I Want For Christmas Is You Lyrics with Chords}
 {meta: artist Lisa Layne}
-{meta: writer Troy Powers and Andy Stone}
+{meta: composer Troy Powers and Andy Stone}
 
 {start_of_verse: Verse 1}
 [C]Take back the holly and [Em]mistletoe [F]

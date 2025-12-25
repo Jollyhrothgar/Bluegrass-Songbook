@@ -1,6 +1,6 @@
 {meta: title Only One Heart To Give}
 {meta: artist Sonny James}
-{meta: writer Ben Hall}
+{meta: composer Ben Hall}
 
 {start_of_verse: Verse 1}
 [C]I've only one heart to [F]give

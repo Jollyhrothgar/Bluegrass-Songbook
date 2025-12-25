@@ -1,6 +1,6 @@
 {meta: title Cause I Love You}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash}
+{meta: composer Johnny Cash}
 
 {start_of_verse: Verse 1}
 [G]I'll sweep out your chimney yes and I will bring you flowers

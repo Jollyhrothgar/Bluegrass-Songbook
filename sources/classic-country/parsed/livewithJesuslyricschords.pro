@@ -1,6 +1,6 @@
 {meta: title Live With Jesus}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Paul Kennerly}
+{meta: composer Paul Kennerly}
 
 {start_of_verse: Verse 1}
 [C]Seen a lot of trouble at my door

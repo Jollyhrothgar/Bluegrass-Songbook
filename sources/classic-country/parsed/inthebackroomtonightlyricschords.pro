@@ -1,6 +1,6 @@
 {meta: title In The Back Room Tonight}
 {meta: artist Carl Smith}
-{meta: writer Ray Bodkin}
+{meta: composer Ray Bodkin}
 
 {start_of_verse: Verse 1}
 [C]Light the [G7]candle pour the wine start the [C]music

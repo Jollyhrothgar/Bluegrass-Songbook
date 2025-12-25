@@ -1,4 +1,4 @@
-{meta: writer Lewis H. Redner and Phillips Brooks}
+{meta: composer Lewis H. Redner and Phillips Brooks}
 
 {start_of_verse: Verse 1}
 [C]O little town of [Dm]Bethlehem

@@ -1,6 +1,6 @@
 {meta: title You Don't Love Me But I'll Always Care}
 {meta: artist Ray Price}
-{meta: writer Lou Wayne}
+{meta: composer Lou Wayne}
 
 {start_of_verse: Verse 1}
 [C]Yesterday brought love as sweet as [D7]clover

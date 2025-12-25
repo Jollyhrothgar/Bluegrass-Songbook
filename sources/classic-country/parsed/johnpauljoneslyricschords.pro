@@ -1,6 +1,6 @@
 {meta: title John Paul Jones}
 {meta: artist Johnny Horton}
-{meta: writer Jimmie Driftwood}
+{meta: composer Jimmie Driftwood}
 
 {start_of_verse: Verse 1}
 [C]When John Paul Jones was a little boy he pointed to the sea

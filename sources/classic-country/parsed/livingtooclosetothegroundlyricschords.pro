@@ -1,6 +1,6 @@
 {meta: title Living Too Close To The Ground}
 {meta: artist Everly Brothers}
-{meta: writer Terry Slater}
+{meta: composer Terry Slater}
 
 {start_of_verse: Verse 1}
 [C]Listen and [G7]hear each word [C]stop

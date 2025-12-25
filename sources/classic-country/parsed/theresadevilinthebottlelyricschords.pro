@@ -1,6 +1,6 @@
 {meta: title There's A Devil In The Bottle}
 {meta: artist Hank Williams Jr.}
-{meta: writer Bobby David}
+{meta: composer Bobby David}
 
 {start_of_verse: Verse 1}
 [C]I come home late at night [F]with my boots in my hands 

@@ -1,6 +1,6 @@
 {meta: title A Cradle In Bethlehem}
 {meta: artist Vince Gill}
-{meta: writer Alfred Bryan and Larry Stock}
+{meta: composer Alfred Bryan and Larry Stock}
 
 {start_of_verse: Verse 1}
 [C]Sing sweet and low a [G7]lulla[C]by

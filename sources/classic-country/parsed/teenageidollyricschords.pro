@@ -1,6 +1,6 @@
 {meta: title Teenage Idol}
 {meta: artist Ricky Nelson}
-{meta: writer Jack Lewis}
+{meta: composer Jack Lewis}
 
 {start_of_verse: Verse 1}
 [G7]Some people [C]call me a teenage [Am]idol

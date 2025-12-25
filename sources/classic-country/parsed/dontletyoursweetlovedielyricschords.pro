@@ -1,6 +1,6 @@
 {meta: title Don't Let Your Sweet Love Die}
 {meta: artist Ricky Skaggs}
-{meta: writer Clarke VanNess and Zeke Clements}
+{meta: composer Clarke VanNess and Zeke Clements}
 
 {start_of_verse: Verse 1}
 [C]Don't let your sweet love die like [C7]flowers in the [F]fall

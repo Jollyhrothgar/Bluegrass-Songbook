@@ -1,6 +1,6 @@
 {meta: title I'll Never Let You Go}
 {meta: artist Hank Snow}
-{meta: writer Jimmy Wakely}
+{meta: composer Jimmy Wakely}
 
 {start_of_verse: Verse 1}
 [G]You say we've reached the hour of [D7]parting

@@ -1,6 +1,6 @@
 {meta: title Why Don't You Leave Me Alone}
 {meta: artist Chet Atkins}
-{meta: writer Bill Stephens}
+{meta: composer Bill Stephens}
 
 {start_of_verse: Verse 1}
 [C]Why don’t you [G7]leave me [C]alone

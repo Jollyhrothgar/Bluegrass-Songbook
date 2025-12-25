@@ -1,6 +1,6 @@
 {meta: title Texas}
 {meta: artist George Strait}
-{meta: writer Steven Jones and Phillip White}
+{meta: composer Steven Jones and Phillip White}
 
 {start_of_verse: Verse 1}
 [F]There wouldn't be [D7]no Ala[C]mo

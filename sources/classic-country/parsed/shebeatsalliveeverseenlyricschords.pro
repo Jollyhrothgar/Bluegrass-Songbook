@@ -1,6 +1,6 @@
 {meta: title She Beats All I've Ever Seen}
 {meta: artist Mickey Gilley}
-{meta: writer Don Singleton}
+{meta: composer Don Singleton}
 
 {start_of_verse: Verse 1}
 [C]Well it's five o'clock I'm punching out

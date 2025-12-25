@@ -1,6 +1,6 @@
 {meta: title They Call You Gigolette}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Joe Melson}
+{meta: composer Roy Orbison and Joe Melson}
 
 {start_of_verse: Verse 1}
 [G]Oh they [C]call you Gigolette

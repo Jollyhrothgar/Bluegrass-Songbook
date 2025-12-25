@@ -1,6 +1,6 @@
 {meta: title Lead Me To That Rock}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Billy Sherrill}
+{meta: composer Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [C]Why don't you [F]lead me to that rock that is [C]higher than I

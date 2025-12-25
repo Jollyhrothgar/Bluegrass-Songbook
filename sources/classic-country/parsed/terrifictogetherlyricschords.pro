@@ -1,6 +1,6 @@
 {meta: title Terrific Together}
 {meta: artist Ferlin Husky}
-{meta: writer David Hill, Bobby Stevenson &amp; D. Williams}
+{meta: composer David Hill, Bobby Stevenson &amp; D. Williams}
 
 {start_of_verse: Verse 1}
 [G]Terrific together it's no lie oh my [C]love oh my [D7]love

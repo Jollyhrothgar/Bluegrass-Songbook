@@ -1,6 +1,6 @@
 {meta: title That Certain One}
 {meta: artist Tommy Cash}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]There'll always be that [C]one 

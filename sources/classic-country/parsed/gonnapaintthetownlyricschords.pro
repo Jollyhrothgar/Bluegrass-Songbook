@@ -1,6 +1,6 @@
 {meta: title Gonna Paint The Town}
 {meta: artist The Stanley Brothers}
-{meta: writer Ralph Stanley}
+{meta: composer Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]She's from the hills of Ken[C]tucky

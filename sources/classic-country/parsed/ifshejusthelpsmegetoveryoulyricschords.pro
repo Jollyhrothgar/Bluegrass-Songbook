@@ -1,6 +1,6 @@
 {meta: title If She Just Helps Me Get Over You}
 {meta: artist Charley Pride}
-{meta: writer Don Williams and Allen Reynolds}
+{meta: composer Don Williams and Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [C]It may not make me [F]tremble the [G7]soft touch of her [C]hand

@@ -1,6 +1,6 @@
 {meta: title I’m Leaving It Up To You}
 {meta: artist Jim Ed Brown and Helen Cornelius}
-{meta: writer Don F. Harris and Dewey Terry}
+{meta: composer Don F. Harris and Dewey Terry}
 
 {start_of_verse: Verse 1}
 [G]I'm leaving it all up to [D7]you

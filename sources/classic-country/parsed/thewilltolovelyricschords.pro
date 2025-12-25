@@ -1,6 +1,6 @@
 {meta: title The Will To Love}
 {meta: artist Lee Greenwood}
-{meta: writer Dave Loggins and Steve Diamond}
+{meta: composer Dave Loggins and Steve Diamond}
 
 {start_of_verse: Verse 1}
 [C]Here we are at the [F]breaking point a[C]gain[F]

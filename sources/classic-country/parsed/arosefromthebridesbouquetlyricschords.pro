@@ -1,6 +1,6 @@
 {meta: title A Rose From The Bride's Bouquet}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Jimmy Dickens, Clarke VanHess, Marty Hale}
+{meta: composer Jimmy Dickens, Clarke VanHess, Marty Hale}
 
 {start_of_verse: Verse 1}
 [C]I went to a wedding one [F]fine summer [C]day

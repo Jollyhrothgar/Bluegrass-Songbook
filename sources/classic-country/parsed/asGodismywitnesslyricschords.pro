@@ -1,6 +1,6 @@
 {meta: title As God Is My Witness}
 {meta: artist Kenny Rogers}
-{meta: writer Kenny Rogers, Steve Glassmeyer}
+{meta: composer Kenny Rogers, Steve Glassmeyer}
 
 {start_of_verse: Verse 1}
 [C]Once in a lifetime the right love comes by

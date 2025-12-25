@@ -1,6 +1,6 @@
 {meta: title Hungry For Love}
 {meta: artist Stonewall Jackson}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [F]How many arms hold the wrong one so [C]tight

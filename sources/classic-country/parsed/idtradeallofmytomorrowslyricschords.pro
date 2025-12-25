@@ -1,6 +1,6 @@
 {meta: title I'd Trade All Of My Tomorrows}
 {meta: artist Eddy Arnold}
-{meta: writer Jenny Lou Carson}
+{meta: composer Jenny Lou Carson}
 
 {start_of_verse: Verse 1}
 [C]I'd trade all of my tomorrows for [C7]just one [F]yesterday

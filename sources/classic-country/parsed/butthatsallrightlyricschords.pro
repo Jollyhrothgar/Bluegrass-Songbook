@@ -1,6 +1,6 @@
 {meta: title But That's All Right}
 {meta: artist Waylon Jennings}
-{meta: writer Autry Inman}
+{meta: composer Autry Inman}
 
 {start_of_verse: Verse 1}
 [C]I gave my heart I gave my all

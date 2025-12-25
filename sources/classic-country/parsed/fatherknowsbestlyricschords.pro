@@ -1,6 +1,6 @@
 {meta: title Father Knows Best}
 {meta: artist Ricky Skaggs}
-{meta: writer Mike Curtis and Lenny LeBlanc}
+{meta: composer Mike Curtis and Lenny LeBlanc}
 
 {start_of_verse: Verse 1}
 [C]Daddy told me not to ride my bike [F]across that rocky [C]creek

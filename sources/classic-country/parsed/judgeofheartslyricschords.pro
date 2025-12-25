@@ -1,6 +1,6 @@
 {meta: title Judge Of Hearts}
 {meta: artist Conway Twitty}
-{meta: writer Conway Twitty and Jack Nance}
+{meta: composer Conway Twitty and Jack Nance}
 
 {start_of_verse: Verse 1}
 [C]Please [G7]please judge of [C]hearts [F]

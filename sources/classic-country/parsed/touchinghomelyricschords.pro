@@ -1,6 +1,6 @@
 {meta: title Touching Home}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Dallas Frazier and Al Owens}
+{meta: composer Dallas Frazier and Al Owens}
 
 {start_of_verse: Verse 1}
 [G]Today [C]I can [G]feel it [D7]touching [G]home 

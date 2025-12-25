@@ -1,6 +1,6 @@
 {meta: title Stupid Cupid}
 {meta: artist Patsy Cline}
-{meta: writer Neil Sedaka and Howie Greenfield}
+{meta: composer Neil Sedaka and Howie Greenfield}
 
 {start_of_verse: Verse 1}
 [C]Stupid Cupid you're a real mean guy

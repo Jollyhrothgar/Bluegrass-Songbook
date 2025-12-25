@@ -1,6 +1,6 @@
 {meta: title I'm Beginning To Believe}
 {meta: artist Wynn Stewart}
-{meta: writer Dale Noe}
+{meta: composer Dale Noe}
 
 {start_of_verse: Verse 1}
 [C]I'm be[F]ginning to be[G7]lieve you're in [C]love

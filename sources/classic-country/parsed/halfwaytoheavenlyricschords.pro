@@ -1,6 +1,6 @@
 {meta: title Halfway To Heaven}
 {meta: artist Jim Ed Brown}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [C]Halfway[Am]   [G7]halfway to [C]heaven [F]

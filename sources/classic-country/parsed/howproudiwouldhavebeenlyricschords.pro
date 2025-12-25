@@ -1,6 +1,6 @@
 {meta: title How Proud I Would Have Been}
 {meta: artist George Jones}
-{meta: writer Joe Poovey}
+{meta: composer Joe Poovey}
 
 {start_of_verse: Verse 1}
 [G]How proud I would have been to share your [C]life of sin

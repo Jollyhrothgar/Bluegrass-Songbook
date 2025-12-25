@@ -1,6 +1,6 @@
 {meta: title Tell Her Lies And Feed Her Candy}
 {meta: artist Charlie Walker}
-{meta: writer Joe McCracken}
+{meta: composer Joe McCracken}
 
 {start_of_verse: Verse 1}
 [G]I met a little gal in the state of Arkansas

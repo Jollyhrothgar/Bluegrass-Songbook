@@ -1,6 +1,6 @@
 {meta: title Yes I Know}
 {meta: artist Guy Penrod}
-{meta: writer Anna W. Waterman}
+{meta: composer Anna W. Waterman}
 
 {start_of_verse: Verse 1}
 [G]Come ye sinners [C]lost and [G]lonely

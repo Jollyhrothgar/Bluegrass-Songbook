@@ -1,6 +1,6 @@
 {meta: title Alabama Woman}
 {meta: artist Red Steagall}
-{meta: writer Donnie Lanier}
+{meta: composer Donnie Lanier}
 
 {start_of_verse: Verse 1}
 [C]As the lights of Tulsa brighten up the partly cloudy Oklahoma [F]skies

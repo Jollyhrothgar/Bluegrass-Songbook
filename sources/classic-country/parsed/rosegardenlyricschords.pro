@@ -1,6 +1,6 @@
 {meta: title Rose Garden}
 {meta: artist Lynn Anderson}
-{meta: writer Joe South}
+{meta: composer Joe South}
 
 {start_of_verse: Verse 1}
 [G]I beg your [Am]pardon 

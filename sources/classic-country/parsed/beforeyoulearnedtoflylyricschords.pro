@@ -1,6 +1,6 @@
 {meta: title Before You Learned To Fly}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Donnie Lanier}
+{meta: composer Red Steagall and Donnie Lanier}
 
 {start_of_verse: Verse 1}
 [G]I remember [D7]days when [G]cotton was the [C]finest dress 

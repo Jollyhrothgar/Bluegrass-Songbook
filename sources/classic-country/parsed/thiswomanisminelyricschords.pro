@@ -1,6 +1,6 @@
 {meta: title This Woman Is Mine}
 {meta: artist Vernon Oxford}
-{meta: writer Danny Walls, Chaw Mank, Don Suiter}
+{meta: composer Danny Walls, Chaw Mank, Don Suiter}
 
 {start_of_verse: Verse 1}
 [G]The tavern was jammed the [D7]jukebox was loud

@@ -1,6 +1,6 @@
 {meta: title A Little Of You}
 {meta: artist Conway Twitty}
-{meta: writer James Walton Aldridge}
+{meta: composer James Walton Aldridge}
 
 {start_of_verse: Verse 1}
 [C]Today I put on your favorite [F]shirt

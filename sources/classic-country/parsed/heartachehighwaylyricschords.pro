@@ -1,6 +1,6 @@
 {meta: title Heartache Highway}
 {meta: artist Clay Walker}
-{meta: writer Kent Blazy, Kim Williams, Clay Walker}
+{meta: composer Kent Blazy, Kim Williams, Clay Walker}
 
 {start_of_verse: Verse 1}
 [C]The sun's reflecting off the city limit [Dm]sign

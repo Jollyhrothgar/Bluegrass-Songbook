@@ -1,6 +1,6 @@
 {meta: title Hand of love}
 {meta: artist Billy Walker}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]She came from the [D7]night looking [G7]lonely

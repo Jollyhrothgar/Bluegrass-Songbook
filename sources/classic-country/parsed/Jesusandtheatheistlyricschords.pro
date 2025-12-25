@@ -1,6 +1,6 @@
 {meta: title Jesus And The Atheist}
 {meta: artist Eddy Arnold}
-{meta: writer Billy Austine and Happy Rhodes}
+{meta: composer Billy Austine and Happy Rhodes}
 
 {start_of_verse: Verse 1}
 [C]One Saturday night in a barroom

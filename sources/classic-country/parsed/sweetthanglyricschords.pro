@@ -1,6 +1,6 @@
 {meta: title Sweet Thang}
 {meta: artist Jimmy Dean}
-{meta: writer Nat Stuckey}
+{meta: composer Nat Stuckey}
 
 {start_of_verse: Verse 1}
 [G]I slipped out of the house about sundown 

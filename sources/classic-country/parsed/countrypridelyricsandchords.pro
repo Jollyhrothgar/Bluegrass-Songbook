@@ -1,6 +1,6 @@
 {meta: title Country Pride}
 {meta: artist Billy Crash Craddock}
-{meta: writer Dale Morris and Jim Sahnger}
+{meta: composer Dale Morris and Jim Sahnger}
 
 {start_of_verse: Verse 1}
 [C]Did you ever see the winter skies through [F]cracks in bedroom [C]walls

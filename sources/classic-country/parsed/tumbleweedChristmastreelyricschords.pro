@@ -1,6 +1,6 @@
 {meta: title Tumbleweed Christmas Tree}
 {meta: artist Red Steagall}
-{meta: writer Andy Wilkinson}
+{meta: composer Andy Wilkinson}
 
 {start_of_verse: Verse 1}
 [C]It was a rough year for a rough neck's children 

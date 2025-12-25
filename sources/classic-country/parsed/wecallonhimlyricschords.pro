@@ -1,6 +1,6 @@
 {meta: title We Call On Him}
 {meta: artist Elvis Presley}
-{meta: writer Ben Weisman, Sid Wayne, Freddie Karger}
+{meta: composer Ben Weisman, Sid Wayne, Freddie Karger}
 
 {start_of_verse: Verse 1}
 [C]We call on [F]Him whenever storm clouds [C]gather

@@ -1,6 +1,6 @@
 {meta: title Whatcha Gonna Do}
 {meta: artist Kris Kristofferson}
-{meta: writer Donnie Fritts and Jon Reid}
+{meta: composer Donnie Fritts and Jon Reid}
 
 {start_of_verse: Verse 1}
 [C]You never known [A7]anyone else but [Dm]me 

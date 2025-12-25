@@ -1,6 +1,6 @@
 {meta: title Nothing Can Hurt You}
 {meta: artist Ricky Skaggs}
-{meta: writer John Salz}
+{meta: composer John Salz}
 
 {start_of_verse: Verse 1}
 [C]There's a time in the [E7]morning when I feel [F]a cold [C]chill

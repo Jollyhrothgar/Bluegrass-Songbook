@@ -1,6 +1,6 @@
 {meta: title Easy Love}
 {meta: artist Anne Murray}
-{meta: writer Kerry Chater and Jerry Lee Chater}
+{meta: composer Kerry Chater and Jerry Lee Chater}
 
 {start_of_verse: Verse 1}
 [C]I have loved you for a long long [A#7]time

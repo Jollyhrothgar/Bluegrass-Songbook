@@ -1,6 +1,6 @@
 {meta: title Think It Over}
 {meta: artist Buddy Holly}
-{meta: writer Petty Norman and Buddy Holly}
+{meta: composer Petty Norman and Buddy Holly}
 
 {start_of_verse: Verse 1}
 [G]Think it over what you just said

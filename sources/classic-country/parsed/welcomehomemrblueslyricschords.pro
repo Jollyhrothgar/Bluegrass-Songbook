@@ -1,6 +1,6 @@
 {meta: title Welcome Home Mr. Blues}
 {meta: artist Hank Locklin}
-{meta: writer Charles R. Phipps}
+{meta: composer Charles R. Phipps}
 
 {start_of_verse: Verse 1}
 [C]There is someone at the door guess [G7]I'd better go see

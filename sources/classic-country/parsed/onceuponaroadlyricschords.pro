@@ -1,6 +1,6 @@
 {meta: title Once Upon A Road}
 {meta: artist Tom T. Hall}
-{meta: writer Tom T. Hall and Dixie Hall}
+{meta: composer Tom T. Hall and Dixie Hall}
 
 {start_of_verse: Verse 1}
 [C]Once upon a [F]road  when I was innocent and [C]free

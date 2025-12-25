@@ -1,6 +1,6 @@
 {meta: title Lovin' Up A Storm}
 {meta: artist Eddy Arnold}
-{meta: writer Eddy Arnold and Thelma Blackmon}
+{meta: composer Eddy Arnold and Thelma Blackmon}
 
 {start_of_verse: Verse 1}
 Lovin' Up A Storm

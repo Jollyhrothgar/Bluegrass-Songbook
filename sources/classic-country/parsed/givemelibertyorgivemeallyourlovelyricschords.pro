@@ -1,6 +1,6 @@
 {meta: title Give Me Liberty (Or Give Me All Your Love)}
 {meta: artist Moe Bandy}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Give me liberty [F]or [C]give me all [G7]your [C]love

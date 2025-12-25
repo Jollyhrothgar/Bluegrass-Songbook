@@ -1,6 +1,6 @@
 {meta: title I'd Rather Be Gone}
 {meta: artist Hank Williams Jr.}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]I feel like a stranger in this [F]home I built for [C]you

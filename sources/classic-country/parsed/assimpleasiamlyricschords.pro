@@ -1,6 +1,6 @@
 {meta: title As Simple As I Am}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]I know that you could have more than a [F]poor hard working [C]man

@@ -1,6 +1,6 @@
 {meta: title I Forgot That I Don't Live Here Anymore}
 {meta: artist Moe Bandy}
-{meta: writer Chris Waters, Michael Garvin, Tom Shapiro}
+{meta: composer Chris Waters, Michael Garvin, Tom Shapiro}
 
 {start_of_verse: Verse 1}
 [C]Four am [C7]and raining I [F]finally found my way back [C]home

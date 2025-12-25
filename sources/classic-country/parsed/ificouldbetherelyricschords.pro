@@ -1,6 +1,6 @@
 {meta: title If I Could Be There}
 {meta: artist Emmylou Harris}
-{meta: writer Kieran Kane and Jamie O'Hara}
+{meta: composer Kieran Kane and Jamie O'Hara}
 
 {start_of_verse: Verse 1}
 [C]If I could be there I'd be there tonight [F]comforting [C]you 

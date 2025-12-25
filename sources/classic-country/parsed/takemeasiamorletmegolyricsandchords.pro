@@ -1,6 +1,6 @@
 {meta: title Take Me As I Am (Or Let Me Go)}
 {meta: artist Dottie West}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [G]Why must you always try to make me [C]over

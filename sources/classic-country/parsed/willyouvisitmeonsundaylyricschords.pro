@@ -1,6 +1,6 @@
 {meta: title Will You Visit Me On Sunday}
 {meta: artist George Jones}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Just outside these prison bars the hanging [F]tree is [C]waiting

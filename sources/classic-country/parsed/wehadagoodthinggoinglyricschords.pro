@@ -1,6 +1,6 @@
 {meta: title We Had A Good Thing Going}
 {meta: artist Brenda Lee}
-{meta: writer Eddie Polo}
+{meta: composer Eddie Polo}
 
 {start_of_verse: Verse 1}
 [C]Oh baby I know that we just [Dm]couldn't go wrong

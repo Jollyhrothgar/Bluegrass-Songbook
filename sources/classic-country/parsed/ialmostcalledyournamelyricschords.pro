@@ -1,6 +1,6 @@
 {meta: title I Almost Called Your Name}
 {meta: artist Freddy Fender}
-{meta: writer Myra Smith and Margaret Lewis}
+{meta: composer Myra Smith and Margaret Lewis}
 
 {start_of_verse: Verse 1}
 [G]We were dancing and she [D7]laughed just like you used [G]to

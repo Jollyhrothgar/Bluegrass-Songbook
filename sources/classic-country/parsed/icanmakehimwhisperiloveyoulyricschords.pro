@@ -1,6 +1,6 @@
 {meta: title I Can Make Him Whisper I Love You}
 {meta: artist Rhonda Vincent}
-{meta: writer Pete Goble}
+{meta: composer Pete Goble}
 
 {start_of_verse: Verse 1}
 [G]Lately I have [C]caught myself still [G]thinking

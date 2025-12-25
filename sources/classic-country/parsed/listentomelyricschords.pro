@@ -1,6 +1,6 @@
 {meta: title Listen To Me}
 {meta: artist Buddy Holly}
-{meta: writer Norman Petty and Buddy Holly}
+{meta: composer Norman Petty and Buddy Holly}
 
 {start_of_verse: Verse 1}
 [G]Listen to me and [C]hold me [D7]tight

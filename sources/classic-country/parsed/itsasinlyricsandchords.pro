@@ -1,6 +1,6 @@
 {meta: title It's A Sin}
 {meta: artist Eddy Arnold}
-{meta: writer Fred Rose and Zeb Turner}
+{meta: composer Fred Rose and Zeb Turner}
 
 {start_of_verse: Verse 1}
 [G7]It's a [C]sin my darling how I love [F]you

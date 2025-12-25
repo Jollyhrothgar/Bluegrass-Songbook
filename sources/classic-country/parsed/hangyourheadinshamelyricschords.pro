@@ -1,6 +1,6 @@
 {meta: title Hang Your Head in Shame}
 {meta: artist Bob Wills}
-{meta: writer Fred Rose, Ed G. Nelson, Steve Nelson}
+{meta: composer Fred Rose, Ed G. Nelson, Steve Nelson}
 
 {start_of_verse: Verse 1}
 [C]DON'T YOUR CONSCIENCE EVER BOTHER [F]YOU

@@ -1,6 +1,6 @@
 {meta: title Lord I Need You Again Today}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Jason Bradford}
+{meta: composer Jason Bradford}
 
 {start_of_verse: Verse 1}
 [G]I don't tell [D7]Him [G]enough [C]I don't [G]pray enough

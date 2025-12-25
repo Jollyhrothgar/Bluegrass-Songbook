@@ -1,6 +1,6 @@
 {meta: title How Do I Wrap My Heart For Christmas}
 {meta: artist Randy Travis}
-{meta: writer Paul Overstreet and Randy Travis}
+{meta: composer Paul Overstreet and Randy Travis}
 
 {start_of_verse: Verse 1}
 [C]Silver bells are ringing [F]carolers are singing

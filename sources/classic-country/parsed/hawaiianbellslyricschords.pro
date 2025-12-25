@@ -1,6 +1,6 @@
 {meta: title Hawaiian Bells}
 {meta: artist Marty Robbins}
-{meta: writer Jerry Byrd}
+{meta: composer Jerry Byrd}
 
 {start_of_verse: Verse 1}
 [C]Hawaiian bells were [F]ringing

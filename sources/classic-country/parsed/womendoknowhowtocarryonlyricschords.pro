@@ -1,6 +1,6 @@
 {meta: title Women Do Know How To Carry On}
 {meta: artist Waylon Jennings}
-{meta: writer Waylon Jennings and Bobby Emmons}
+{meta: composer Waylon Jennings and Bobby Emmons}
 
 {start_of_verse: Verse 1}
 Women Do Know How To Carry On

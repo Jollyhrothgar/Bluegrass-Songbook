@@ -1,6 +1,6 @@
 {meta: title Lola Mae}
 {meta: artist Mel Street}
-{meta: writer Arthur Leo Owens and Bill Shore}
+{meta: composer Arthur Leo Owens and Bill Shore}
 
 {start_of_verse: Verse 1}
 [C]This Texas black land cotton farm

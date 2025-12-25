@@ -1,6 +1,6 @@
 {meta: title All Alone In Austin}
 {meta: artist Jean Shepard}
-{meta: writer Linda Hargrove}
+{meta: composer Linda Hargrove}
 
 {start_of_verse: Verse 1}
 [G]Here comes another mornin' sun

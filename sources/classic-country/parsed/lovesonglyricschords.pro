@@ -1,6 +1,6 @@
 {meta: title Love Song}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Steven W. Runkle}
+{meta: composer Steven W. Runkle}
 
 {start_of_verse: Verse 1}
 [C]Tell you why I called on you

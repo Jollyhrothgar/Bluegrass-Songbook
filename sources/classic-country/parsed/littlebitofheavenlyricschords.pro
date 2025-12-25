@@ -1,6 +1,6 @@
 {meta: title A Little Bit of Heaven}
 {meta: artist The Isaacs}
-{meta: writer Sonya M. Isaacs}
+{meta: composer Sonya M. Isaacs}
 
 {start_of_verse: Verse 1}
 [G]There's a little bit of heaven in every gospel [D7]song

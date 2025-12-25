@@ -1,6 +1,6 @@
 {meta: title Let's Work Together}
 {meta: artist Dwight Yoakam}
-{meta: writer Wilbert Harrison}
+{meta: composer Wilbert Harrison}
 
 {start_of_verse: Verse 1}
 [G]Well together we stand divided we fall

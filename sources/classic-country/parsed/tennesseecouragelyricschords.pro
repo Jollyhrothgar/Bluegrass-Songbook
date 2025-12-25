@@ -1,6 +1,6 @@
 {meta: title Tennessee Courage}
 {meta: artist Vern Gosdin}
-{meta: writer Vern Gosdin, Rex Gosdin, James Brown)}
+{meta: composer Vern Gosdin, Rex Gosdin, James Brown)}
 
 {start_of_verse: Verse 1}
 [G]When they open the bar I'll be [C]there on the [G]stool

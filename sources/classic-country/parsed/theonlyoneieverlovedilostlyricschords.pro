@@ -1,6 +1,6 @@
 {meta: title The Only One I Ever Loved I Lost}
 {meta: artist Kitty Wells}
-{meta: writer Johnny Wright, Jack Anglin, Jim Anglin}
+{meta: composer Johnny Wright, Jack Anglin, Jim Anglin}
 
 {start_of_verse: Verse 1}
 [C]When I lost your love dear I [G]lost my everything

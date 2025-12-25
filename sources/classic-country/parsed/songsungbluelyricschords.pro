@@ -1,6 +1,6 @@
 {meta: title Song Sung Blue}
 {meta: artist Johnny Paycheck}
-{meta: writer Neil Diamond}
+{meta: composer Neil Diamond}
 
 {start_of_verse: Verse 1}
 [C]Song sung blue everybody [G7]knows one

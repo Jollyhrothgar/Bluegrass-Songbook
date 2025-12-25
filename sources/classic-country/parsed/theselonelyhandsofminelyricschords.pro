@@ -1,6 +1,6 @@
 {meta: title These Lonely Hands Of Mine}
 {meta: artist Mel Tillis}
-{meta: writer Lamar Morris and Charles Norrell}
+{meta: composer Lamar Morris and Charles Norrell}
 
 {start_of_verse: Verse 1}
 [C]Any girl who hangs out in a [F]honky [C]tonk

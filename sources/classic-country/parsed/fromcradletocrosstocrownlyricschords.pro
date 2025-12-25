@@ -1,6 +1,6 @@
 {meta: title From Cradle To Cross To Crown}
 {meta: artist The Bluegrass Cardinals}
-{meta: writer Don Parmley}
+{meta: composer Don Parmley}
 
 {start_of_verse: Verse 1}
 [C]He was born in a manger a [F]small tiny [C]stranger

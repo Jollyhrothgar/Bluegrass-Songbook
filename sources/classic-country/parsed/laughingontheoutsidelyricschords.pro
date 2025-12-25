@@ -1,6 +1,6 @@
 {meta: title Laughing On The Outside}
 {meta: artist Eddy Arnold}
-{meta: writer Ben Raleigh and Bernie Wayne}
+{meta: composer Ben Raleigh and Bernie Wayne}
 
 {start_of_verse: Verse 1}
 [C]The crowd sees me out [Am]dancing [Dm]carefree and [G7]romancing

@@ -1,6 +1,6 @@
 {meta: title I Don't Trust Me Around You}
 {meta: artist Dolly Parton}
-{meta: writer Bill Owens}
+{meta: composer Bill Owens}
 
 {start_of_verse: Verse 1}
 [G7]You're standing much too close to me [C]again

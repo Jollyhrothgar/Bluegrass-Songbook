@@ -1,6 +1,6 @@
 {meta: title Half The Way}
 {meta: artist Crystal Gayle}
-{meta: writer Bobby Wood and Ralph Murphy}
+{meta: composer Bobby Wood and Ralph Murphy}
 
 {start_of_verse: Verse 1}
 [C]Half of your [Em]love is just not [Am]what I'm [G7]after 

@@ -1,6 +1,6 @@
 {meta: title I Order One For Me}
 {meta: artist Mel Tillis}
-{meta: writer Barbara Cummings and Jimmy Null}
+{meta: composer Barbara Cummings and Jimmy Null}
 
 {start_of_verse: Verse 1}
 [G]I stumble through the [G7]door and I [C]order one more [Am]round

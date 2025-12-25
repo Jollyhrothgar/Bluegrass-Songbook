@@ -1,6 +1,6 @@
 {meta: title If This Is Love}
 {meta: artist Jack Greene}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]This morning my [G7]mind looked [C]around and couldn't find 

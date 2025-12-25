@@ -1,6 +1,6 @@
 {meta: title Buicks To The Moon}
 {meta: artist Alan Jackson}
-{meta: writer Jim McBride and Alan Jackson}
+{meta: composer Jim McBride and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G]How long will I love you I [C]don't really [G]know

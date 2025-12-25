@@ -1,6 +1,6 @@
 {meta: title I'm Counting on you}
 {meta: artist Elvis Presley}
-{meta: writer Don Robertson}
+{meta: composer Don Robertson}
 
 {start_of_verse: Verse 1}
 [C]All the words that I'll ever know  still could not [G7]say

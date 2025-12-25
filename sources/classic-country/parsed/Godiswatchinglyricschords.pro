@@ -1,6 +1,6 @@
 {meta: title God Is Watching}
 {meta: artist Rhonda Vincent}
-{meta: writer Mickey Harris and Louise Tomberlain}
+{meta: composer Mickey Harris and Louise Tomberlain}
 
 {start_of_verse: Verse 1}
 [C]As you travel onward through this [F]world of [C]sin

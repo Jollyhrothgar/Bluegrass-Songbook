@@ -1,6 +1,6 @@
 {meta: title One Night At A Time}
 {meta: artist George Strait}
-{meta: writer Roger Cook, Eddie Kilgallon, Bud Lee}
+{meta: composer Roger Cook, Eddie Kilgallon, Bud Lee}
 
 {start_of_verse: Verse 1}
 [C]I'm not yours and baby you're not mine 

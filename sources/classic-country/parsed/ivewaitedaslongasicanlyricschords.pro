@@ -1,6 +1,6 @@
 {meta: title I've Waited As Long As I Can}
 {meta: artist Tony Rice}
-{meta: writer Hylo Brown}
+{meta: composer Hylo Brown}
 
 {start_of_verse: Verse 1}
 [G]I've waited for you and I've [C]always been true 

@@ -1,6 +1,6 @@
 {meta: title I Stopped Living Yesterday}
 {meta: artist George Jones}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 Intro: 

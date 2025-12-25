@@ -1,6 +1,6 @@
 {meta: title Enough Of A Woman}
 {meta: artist Tammy Wynette}
-{meta: writer Leon Ashley and Margie Singleton}
+{meta: composer Leon Ashley and Margie Singleton}
 
 {start_of_verse: Verse 1}
 [C]When he needs [F]arms to hold him  mine [G7]are always [C]there

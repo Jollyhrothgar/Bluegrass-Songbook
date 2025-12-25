@@ -1,6 +1,6 @@
 {meta: title All The World And The Seven Seas}
 {meta: artist Jim Ed Brown}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]I am [F]free  [G7]as the [C]breeze  

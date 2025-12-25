@@ -1,6 +1,6 @@
 {meta: title I Wish I Could Fall in Love Again}
 {meta: artist Jan Howard}
-{meta: writer Harlan Howard and Wynn Stewart}
+{meta: composer Harlan Howard and Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [C]I wish I could fall in love [F]again

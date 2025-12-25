@@ -1,6 +1,6 @@
 {meta: title I Ran Out Of Time}
 {meta: artist Billy Crash Craddock}
-{meta: writer Dale Morris}
+{meta: composer Dale Morris}
 
 {start_of_verse: Verse 1}
 [C]I wanted an education just to [F]finish high [C]school

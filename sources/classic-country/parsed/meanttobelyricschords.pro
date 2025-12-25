@@ -1,6 +1,6 @@
 {meta: title Meant To Be}
 {meta: artist Tracy Lawrence}
-{meta: writer Flip Anderson, Rick Huckaby, Tracy Lawrence}
+{meta: composer Flip Anderson, Rick Huckaby, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [C]A crowded room a sudden glance 

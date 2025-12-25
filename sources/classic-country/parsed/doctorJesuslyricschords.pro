@@ -1,6 +1,6 @@
 {meta: title Doctor Jesus}
 {meta: artist Randy Travis}
-{meta: writer Tony Stampley and Justin Bolen}
+{meta: composer Tony Stampley and Justin Bolen}
 
 {start_of_verse: Verse 1}
 [C]You know I've got [F]so many [C]problems

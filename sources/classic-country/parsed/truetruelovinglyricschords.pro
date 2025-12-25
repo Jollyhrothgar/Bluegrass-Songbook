@@ -1,6 +1,6 @@
 {meta: title True True Loving}
 {meta: artist Ferlin Husky}
-{meta: writer Chuck Taylor and Gerald Nelson}
+{meta: composer Chuck Taylor and Gerald Nelson}
 
 {start_of_verse: Verse 1}
 [C]He can give you money he can give you fine [G7]things

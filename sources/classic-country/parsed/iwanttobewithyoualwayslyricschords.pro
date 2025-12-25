@@ -1,6 +1,6 @@
 {meta: title I Want To Be With You Always}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Jim Beck}
+{meta: composer Lefty Frizzell and Jim Beck}
 
 {start_of_verse: Verse 1}
 [G]I lose my [D7]blues honey when I'm with [G]you

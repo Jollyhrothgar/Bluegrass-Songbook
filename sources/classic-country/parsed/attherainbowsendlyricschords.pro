@@ -1,6 +1,6 @@
 {meta: title At The Rainbow's End}
 {meta: artist Hank Thompson}
-{meta: writer Bob Nolan}
+{meta: composer Bob Nolan}
 
 {start_of_verse: Verse 1}
 [G]I've traveled this [D7]whole world [G]over and [G7]now

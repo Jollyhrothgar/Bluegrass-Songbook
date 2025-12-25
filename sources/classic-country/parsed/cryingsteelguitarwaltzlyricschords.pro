@@ -1,6 +1,6 @@
 {meta: title Crying Steel Guitar Waltz}
 {meta: artist Marty Robbins}
-{meta: writer Shorty Long and Dolly Long}
+{meta: composer Shorty Long and Dolly Long}
 
 {start_of_verse: Verse 1}
 [C]The steel guitar played when I met her 

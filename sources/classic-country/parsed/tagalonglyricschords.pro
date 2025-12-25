@@ -1,6 +1,6 @@
 {meta: title Tag Along}
 {meta: artist Wilburn Brothers}
-{meta: writer Ross Burk and Mildred Burk}
+{meta: composer Ross Burk and Mildred Burk}
 
 {start_of_verse: Verse 1}
 [C]There's a little dog named Tag Along He's Santa's pride and [G7]joy

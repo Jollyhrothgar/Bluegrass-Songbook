@@ -1,6 +1,6 @@
 {meta: title People Get Ready}
 {meta: artist The Everly Brothers}
-{meta: writer Curtis Mayfield}
+{meta: composer Curtis Mayfield}
 
 {start_of_verse: Verse 1}
 [G]People get [Em]ready there's a [C]train a [G]coming

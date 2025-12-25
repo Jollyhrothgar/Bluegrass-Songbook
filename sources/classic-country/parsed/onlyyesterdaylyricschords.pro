@@ -1,6 +1,6 @@
 {meta: title Only Yesterday}
 {meta: artist Gene Watson}
-{meta: writer Bob Regan}
+{meta: composer Bob Regan}
 
 {start_of_verse: Verse 1}
 [G]Fancy [D7]meeting you here 

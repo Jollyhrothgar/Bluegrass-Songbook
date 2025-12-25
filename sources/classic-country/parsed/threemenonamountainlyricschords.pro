@@ -1,6 +1,6 @@
 {meta: title Three Men On A Mountain}
 {meta: artist Willow Branch}
-{meta: writer Thomas Harley Campbell}
+{meta: composer Thomas Harley Campbell}
 
 {start_of_verse: Verse 1}
 [G]Three men on a mountain up on Calvary 

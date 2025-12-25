@@ -1,6 +1,6 @@
 {meta: title Me And Mine}
 {meta: artist Mel Tillis}
-{meta: writer Jerry House}
+{meta: composer Jerry House}
 
 {start_of_verse: Verse 1}
 [C]Well hello Mr. Walker could I [F]please talk to your [C]wife

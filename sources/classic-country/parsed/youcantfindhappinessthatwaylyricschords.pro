@@ -1,6 +1,6 @@
 {meta: title You Can't Find Happiness That Way}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Glenn Douglas and Frank Duke}
+{meta: composer Glenn Douglas and Frank Duke}
 
 {start_of_verse: Verse 1}
 [C]You cheat you lie you alibi you [F]haven’t gotta heart

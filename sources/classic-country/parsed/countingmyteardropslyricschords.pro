@@ -1,6 +1,6 @@
 {meta: title Counting My Teardrops}
 {meta: artist Johnny Tillotson}
-{meta: writer Johnny Tillotson and Paul Tannen}
+{meta: composer Johnny Tillotson and Paul Tannen}
 
 {start_of_verse: Verse 1}
 [C]I'll keep [F]counting teardrops [G7]till you’re back [C]again

@@ -1,6 +1,6 @@
 {meta: title I Lost My Love Today}
 {meta: artist Ferlin Husky}
-{meta: writer Betty Westergard and Ferlin Husky}
+{meta: composer Betty Westergard and Ferlin Husky}
 
 {start_of_verse: Verse 1}
 [G]I've seen people [D7]every[G]where who [C]said they didn't [D7]care

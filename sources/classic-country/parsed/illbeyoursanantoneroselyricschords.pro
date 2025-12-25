@@ -1,6 +1,6 @@
 {meta: title I'll Be Your San Antone Rose}
 {meta: artist Emmylou Harris}
-{meta: writer Susanna Clark}
+{meta: composer Susanna Clark}
 
 {start_of_verse: Verse 1}
 [G]If they'll play another love song

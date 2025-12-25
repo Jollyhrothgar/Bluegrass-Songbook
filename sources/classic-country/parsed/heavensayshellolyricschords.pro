@@ -1,6 +1,6 @@
 {meta: title Heaven Says Hello}
 {meta: artist Jim Ed Brown}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Heaven says hello every [D7]morning 

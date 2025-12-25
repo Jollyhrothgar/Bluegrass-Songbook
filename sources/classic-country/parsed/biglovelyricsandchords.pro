@@ -1,6 +1,6 @@
 {meta: title Big Love}
 {meta: artist Tracy Byrd}
-{meta: writer Michael Clark and Jeff Stevens}
+{meta: composer Michael Clark and Jeff Stevens}
 
 {start_of_verse: Verse 1}
 [C]You need a man to get lost in 

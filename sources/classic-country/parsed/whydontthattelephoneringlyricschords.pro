@@ -1,6 +1,6 @@
 {meta: title Why Don't That Telephone Ring}
 {meta: artist Tracy Byrd}
-{meta: writer Ron Hellard and Charles Quillen}
+{meta: composer Ron Hellard and Charles Quillen}
 
 {start_of_verse: Verse 1}
 [G]I had the operator call me back 

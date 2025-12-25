@@ -1,6 +1,6 @@
 {meta: title What Will I Tell My Heart}
 {meta: artist Fats Domino}
-{meta: writer Jack Lawrence, Irving Gordon, Peter Tinturin}
+{meta: composer Jack Lawrence, Irving Gordon, Peter Tinturin}
 
 {start_of_verse: Verse 1}
 [G]I'm trying to explain to friends dear

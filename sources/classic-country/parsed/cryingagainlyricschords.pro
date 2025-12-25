@@ -1,6 +1,6 @@
 {meta: title Crying Again}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Rafe Van Hoy and Don Cook}
+{meta: composer Rafe Van Hoy and Don Cook}
 
 {start_of_verse: Verse 1}
 [F]You told me that our love was [C]forever

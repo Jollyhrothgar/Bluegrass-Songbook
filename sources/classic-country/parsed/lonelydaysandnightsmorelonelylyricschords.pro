@@ -1,6 +1,6 @@
 {meta: title Lonely Days And Nights More Lonely}
 {meta: artist Tammy Wynette}
-{meta: writer Tom Moore and Danny Hurd}
+{meta: composer Tom Moore and Danny Hurd}
 
 {start_of_verse: Verse 1}
 [C]Lonely days and nights more lonely

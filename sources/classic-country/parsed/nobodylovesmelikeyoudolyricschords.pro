@@ -1,6 +1,6 @@
 {meta: title Nobody Loves Me Like You Do}
 {meta: artist Anne Murray}
-{meta: writer James P. Dunne and Pam Phillips}
+{meta: composer James P. Dunne and Pam Phillips}
 
 {start_of_verse: Verse 1}
 [C]Like [G7]a candle [F]burnin' [Dm][D7]bright

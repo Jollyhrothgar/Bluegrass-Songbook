@@ -1,6 +1,6 @@
 {meta: title You Never Said You Loved Me}
 {meta: artist Jim Ed Brown}
-{meta: writer Johnny Russell and Tommy Russell}
+{meta: composer Johnny Russell and Tommy Russell}
 
 {start_of_verse: Verse 1}
 [C]I said I love you in a moment [F]of [C]ecstasy

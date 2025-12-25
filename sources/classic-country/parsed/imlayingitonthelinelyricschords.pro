@@ -1,6 +1,6 @@
 {meta: title I'm Laying It On The Line}
 {meta: artist Buck Owens}
-{meta: writer Don Rich}
+{meta: composer Don Rich}
 
 {start_of_verse: Verse 1}
 [G]I'll lay it on the line and I'm a gonna make you [D7]mine

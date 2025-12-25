@@ -1,6 +1,6 @@
 {meta: title We Shall Meet Someday}
 {meta: artist Carl Smith}
-{meta: writer Tillit Teddie}
+{meta: composer Tillit Teddie}
 
 {start_of_verse: Verse 1}
 [G]How our hearts ache with grief as we say [G][C]goodbye 

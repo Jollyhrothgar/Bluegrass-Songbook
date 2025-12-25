@@ -1,6 +1,6 @@
 {meta: title One Too Many Times}
 {meta: artist Gene Watson}
-{meta: writer Tony Booth}
+{meta: composer Tony Booth}
 
 {start_of_verse: Verse 1}
 [C]Sadness all that's a teardrop [F]fall from your baby's [G7]eyes

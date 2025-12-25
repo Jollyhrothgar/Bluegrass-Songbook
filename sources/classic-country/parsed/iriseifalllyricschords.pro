@@ -1,6 +1,6 @@
 {meta: title I Rise I Fall}
 {meta: artist Johnny Tillotson}
-{meta: writer Paul Hampton}
+{meta: composer Paul Hampton}
 
 {start_of_verse: Verse 1}
 [C]I rise I [Am]fall with [F]each little [G7]thing you [C]do

@@ -1,6 +1,6 @@
 {meta: title Our Honeymoon}
 {meta: artist Carl Smith}
-{meta: writer Boudleaux Bryant, Carl Smith, Bodet Torres}
+{meta: composer Boudleaux Bryant, Carl Smith, Bodet Torres}
 
 {start_of_verse: Verse 1}
 [C]Pretty soon we're gonna be all alone on [F]our honey[C]moon

@@ -1,6 +1,6 @@
 {meta: title God May Forgive You But I Won't}
 {meta: artist Norma Jean}
-{meta: writer Harlan Howard and Bobby Braddock}
+{meta: composer Harlan Howard and Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [G]You say that you're born again

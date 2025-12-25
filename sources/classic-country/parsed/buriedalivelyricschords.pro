@@ -1,6 +1,6 @@
 {meta: title Buried Alive}
 {meta: artist Carl Smith}
-{meta: writer Billy Swan}
+{meta: composer Billy Swan}
 
 {start_of_verse: Verse 1}
 [C]When she left I locked the [G7]door and pulled the [C7][C]shades

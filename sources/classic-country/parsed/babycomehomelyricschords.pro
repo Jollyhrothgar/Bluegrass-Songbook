@@ -1,6 +1,6 @@
 {meta: title Baby Come Home}
 {meta: artist Tammy Wynette}
-{meta: writer Forest Borders}
+{meta: composer Forest Borders}
 
 {start_of_verse: Verse 1}
 [C]Oh baby come home baby come [Am]home

@@ -1,6 +1,6 @@
 {meta: title Day One}
 {meta: artist Randy Travis}
-{meta: writer Max D. Barnes and James Yeary}
+{meta: composer Max D. Barnes and James Yeary}
 
 {start_of_verse: Verse 1}
 [G]Cold house [C]just before [D7]dawn

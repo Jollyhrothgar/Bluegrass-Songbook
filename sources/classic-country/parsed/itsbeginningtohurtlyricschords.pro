@@ -1,6 +1,6 @@
 {meta: title It's Beginning To Hurt}
 {meta: artist Ricky Nelson}
-{meta: writer Dave Burgess}
+{meta: composer Dave Burgess}
 
 {start_of_verse: Verse 1}
 [C]Everybody's been tellin' me that you've been [G7]slippin' around

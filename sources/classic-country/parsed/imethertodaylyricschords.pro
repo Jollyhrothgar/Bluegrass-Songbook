@@ -1,6 +1,6 @@
 {meta: title I Met Her Today}
 {meta: artist Elvis Presley}
-{meta: writer Don Robertson and Hal Blair}
+{meta: composer Don Robertson and Hal Blair}
 
 {start_of_verse: Verse 1}
 [C]I told you that some day

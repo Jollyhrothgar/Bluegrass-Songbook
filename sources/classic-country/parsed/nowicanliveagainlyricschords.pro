@@ -1,6 +1,6 @@
 {meta: title Now I Can Live Again}
 {meta: artist Mickey Gilley}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]When my [F]baby [C]left me she left trouble [F]all [C]around

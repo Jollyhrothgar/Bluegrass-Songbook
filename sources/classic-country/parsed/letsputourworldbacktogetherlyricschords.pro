@@ -1,6 +1,6 @@
 {meta: title Let's Put Our World Back Together}
 {meta: artist Roy Drusky}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [G]Let's put our [C]world [D7]back [G]together

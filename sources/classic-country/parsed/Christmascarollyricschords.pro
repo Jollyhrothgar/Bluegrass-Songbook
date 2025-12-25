@@ -1,6 +1,6 @@
 {meta: title Christmas Carol}
 {meta: artist Skip Ewing}
-{meta: writer Skip Ewing and Donald R. Sampson}
+{meta: composer Skip Ewing and Donald R. Sampson}
 
 {start_of_verse: Verse 1}
 [G]I was playin’ Santa Claus down[C]town on Christmas Eve 

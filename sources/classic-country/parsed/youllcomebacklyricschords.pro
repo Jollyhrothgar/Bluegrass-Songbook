@@ -1,6 +1,6 @@
 {meta: title You'll Come Back}
 {meta: artist Web Pierce}
-{meta: writer Billy Barton}
+{meta: composer Billy Barton}
 
 {start_of_verse: Verse 1}
 [G]Well you'll be back yeah you'll be [C]back

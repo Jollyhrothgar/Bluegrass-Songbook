@@ -1,6 +1,6 @@
 {meta: title He's My Dreamboat}
 {meta: artist Connie Francis}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [C]He's my dreamboat asleep in English class[F]

@@ -1,6 +1,6 @@
 {meta: title I Hardly Knew it was You}
 {meta: artist Faron Young}
-{meta: writer Dan Welch}
+{meta: composer Dan Welch}
 
 {start_of_verse: Verse 1}
 [C]Tinted hair and painted lips

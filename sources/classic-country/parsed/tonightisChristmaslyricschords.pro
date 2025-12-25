@@ -1,6 +1,6 @@
 {meta: title Tonight is Christmas}
 {meta: artist Alabama}
-{meta: writer Stan Munsey, Keith Worsham, Don Matthews}
+{meta: composer Stan Munsey, Keith Worsham, Don Matthews}
 
 {start_of_verse: Verse 1}
 [C]Factories are shut down  [F]shopping malls are all [C]closed

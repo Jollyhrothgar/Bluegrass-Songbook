@@ -1,6 +1,6 @@
 {meta: title Don't Sing Aloha When I Go}
 {meta: artist Marty Robbins}
-{meta: writer Warren Smith and Buddy Black}
+{meta: composer Warren Smith and Buddy Black}
 
 {start_of_verse: Verse 1}
 [G]Don't sing [C]Aloha when I [G]go

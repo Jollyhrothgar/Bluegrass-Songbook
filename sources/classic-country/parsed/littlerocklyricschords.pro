@@ -1,6 +1,6 @@
 {meta: title Little Rock}
 {meta: artist Reba McEntire}
-{meta: writer Bob DiPiero, Pat McManus, Gerry House}
+{meta: composer Bob DiPiero, Pat McManus, Gerry House}
 
 {start_of_verse: Verse 1}
 [C]I [F]married to the good life I said I'd be a good wife 

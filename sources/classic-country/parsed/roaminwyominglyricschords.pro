@@ -1,6 +1,6 @@
 {meta: title Roamin' Wyoming}
 {meta: artist Randy Travis}
-{meta: writer Roger Brown and Luke Reed}
+{meta: composer Roger Brown and Luke Reed}
 
 {start_of_verse: Verse 1}
 [G]I'm [C]roamin' Wy[G]oming 

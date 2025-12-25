@@ -1,6 +1,6 @@
 {meta: title Working My Way Up To The Bottom}
 {meta: artist Roy Drusky}
-{meta: writer Eddie Rabbitt}
+{meta: composer Eddie Rabbitt}
 
 {start_of_verse: Verse 1}
 [C]Oh I'm [F]working my way up to the [C]bottom

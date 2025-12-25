@@ -1,6 +1,6 @@
 {meta: title Walk With Me}
 {meta: artist Randy Travis}
-{meta: writer Les Bohan and Randy Travis}
+{meta: composer Les Bohan and Randy Travis}
 
 {start_of_verse: Verse 1}
 [C]Walk with me through the [F]darkness

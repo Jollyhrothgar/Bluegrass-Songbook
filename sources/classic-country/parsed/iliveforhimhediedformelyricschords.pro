@@ -1,6 +1,6 @@
 {meta: title I Live For Him He Died For Me}
 {meta: artist Doyle Lawson}
-{meta: writer Louis Thomas Botkin, Kevin R. Denny, Mike Rogers}
+{meta: composer Louis Thomas Botkin, Kevin R. Denny, Mike Rogers}
 
 {start_of_verse: Verse 1}
 [C]I have a friend [G7]whose name is [C]Jesus

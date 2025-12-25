@@ -1,6 +1,6 @@
 {meta: title My Wife Won't Leave}
 {meta: artist Boxcar Willie}
-{meta: writer Llone S. Martin}
+{meta: composer Llone S. Martin}
 
 {start_of_verse: Verse 1}
 [G]Now gather around me people

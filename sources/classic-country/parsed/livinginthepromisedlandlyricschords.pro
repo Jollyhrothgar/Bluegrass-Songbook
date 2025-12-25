@@ -1,6 +1,6 @@
 {meta: title Living In The Promiseland}
 {meta: artist Willie Nelson}
-{meta: writer David Lynn Jones}
+{meta: composer David Lynn Jones}
 
 {start_of_verse: Verse 1}
 [G]Give us your tired [C]and weak and we will make them [G]strong

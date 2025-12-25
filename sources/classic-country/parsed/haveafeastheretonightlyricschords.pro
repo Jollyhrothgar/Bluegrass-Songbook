@@ -1,6 +1,6 @@
 {meta: title Have A Feast Here Tonight}
 {meta: artist Bill Monroe}
-{meta: writer Charlie Monroe}
+{meta: composer Charlie Monroe}
 
 {start_of_verse: Verse 1}
 [C]There's a rabbit in the log and I ain't got my dog

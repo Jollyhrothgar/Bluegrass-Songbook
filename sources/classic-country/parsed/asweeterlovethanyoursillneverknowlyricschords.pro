@@ -1,6 +1,6 @@
 {meta: title A Sweeter Love Than Yours I’ll Never Know}
 {meta: artist Smiling Jim Eanes}
-{meta: writer Drusilla Adams and Bill Church}
+{meta: composer Drusilla Adams and Bill Church}
 
 {start_of_verse: Verse 1}
 [C]I’ll never find a sweeter love

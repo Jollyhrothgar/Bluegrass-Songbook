@@ -1,6 +1,6 @@
 {meta: title Change of Heart Lyrics Chords}
 {meta: artist Kitty Wells}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [G]Well I guess you must have had [D7]a change of [G]heart 

@@ -1,6 +1,6 @@
 {meta: title I'm Sending You Red Roses}
 {meta: artist Jimmy Wakely}
-{meta: writer Wally Fowler}
+{meta: composer Wally Fowler}
 
 {start_of_verse: Verse 1}
 [C]I'm sending you red roses to tell you that my love is [F]true

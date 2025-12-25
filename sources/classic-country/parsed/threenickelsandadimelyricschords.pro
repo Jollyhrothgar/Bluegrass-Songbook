@@ -1,6 +1,6 @@
 {meta: title Three Nickels And A Dime}
 {meta: artist Leona Williams}
-{meta: writer Wayne Helton and Leona Williams}
+{meta: composer Wayne Helton and Leona Williams}
 
 {start_of_verse: Verse 1}
 [G]We once were so happy you [C]drove the finest cars

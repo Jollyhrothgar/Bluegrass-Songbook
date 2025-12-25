@@ -1,6 +1,6 @@
 {meta: title The Best I Ever Had}
 {meta: artist Billy Crash Craddock}
-{meta: writer Ron Chancey and Dale Morris}
+{meta: composer Ron Chancey and Dale Morris}
 
 {start_of_verse: Verse 1}
 [C]I thought that I'd known true love in my [G7]lifetime

@@ -1,6 +1,6 @@
 {meta: title You're So Square}
 {meta: artist Buddy Holly}
-{meta: writer Jerry Leiber and Mike Stoller}
+{meta: composer Jerry Leiber and Mike Stoller}
 
 {start_of_verse: Verse 1}
 [G]You don't like [C]crazy [G]music

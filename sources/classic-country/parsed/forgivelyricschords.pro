@@ -1,6 +1,6 @@
 {meta: title Forgive}
 {meta: artist Mickey Gilley}
-{meta: writer R. Bernauer, L. Jacobson, O. Straus, S. Stange}
+{meta: composer R. Bernauer, L. Jacobson, O. Straus, S. Stange}
 
 {start_of_verse: Verse 1}
 [C]Lonely nights  [F]when I go to [C]bed

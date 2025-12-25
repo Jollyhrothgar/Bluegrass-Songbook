@@ -1,6 +1,6 @@
 {meta: title Way Beyond The Blue}
 {meta: artist Alan Jackson}
-{meta: writer Mark D. Sanders, Randy Albright, Lisa Silver}
+{meta: composer Mark D. Sanders, Randy Albright, Lisa Silver}
 
 {start_of_verse: Verse 1}
 [G]I don't know I've been told

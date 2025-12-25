@@ -1,6 +1,6 @@
 {meta: title Anybody's Girl}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray and Hank Thompson}
+{meta: composer Billy Gray and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]Where there's dim lights and there's liquor 

@@ -1,6 +1,6 @@
 {meta: title Without You}
 {meta: artist Mickey Gilley}
-{meta: writer Ahmad Jamal}
+{meta: composer Ahmad Jamal}
 
 {start_of_verse: Verse 1}
 [C]I am building a new life

@@ -1,6 +1,6 @@
 {meta: title My Last Night In Town}
 {meta: artist Johnny Paycheck}
-{meta: writer Red Simpson and Bill Woods}
+{meta: composer Red Simpson and Bill Woods}
 
 {start_of_verse: Verse 1}
 [C]Turn the music up loud let me [F]sit with the crowd

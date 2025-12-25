@@ -1,6 +1,6 @@
 {meta: title No More Songs To Sing}
 {meta: artist Ray Price}
-{meta: writer Robert Ellis Orrall, Roger Springer}
+{meta: composer Robert Ellis Orrall, Roger Springer}
 
 {start_of_verse: Verse 1}
 [G]When I've no more songs to [D7]sing [Em]

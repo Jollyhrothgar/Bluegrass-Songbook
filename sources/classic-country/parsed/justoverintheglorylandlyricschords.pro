@@ -1,6 +1,6 @@
 {meta: title Just Over In The Gloryland}
 {meta: artist Merle Travis}
-{meta: writer James W. Acuff}
+{meta: composer James W. Acuff}
 
 {start_of_verse: Verse 1}
 [G]I am on my way to the [C]mansions [G]fair

@@ -1,6 +1,6 @@
 {meta: title There's More To Love}
 {meta: artist Jack Greene}
-{meta: writer Ken Hunt and Barbara Greene}
+{meta: composer Ken Hunt and Barbara Greene}
 
 {start_of_verse: Verse 1}
 [G]There's more to love than just [C]saying I love you

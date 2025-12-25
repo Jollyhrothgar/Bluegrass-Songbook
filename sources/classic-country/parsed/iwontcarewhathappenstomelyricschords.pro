@@ -1,6 +1,6 @@
 {meta: title I Won't Care What Happens To Me}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew and Van Givens}
+{meta: composer Carl Belew and Van Givens}
 
 {start_of_verse: Verse 1}
 [C]Where will I go if you [F]leave me

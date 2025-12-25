@@ -1,6 +1,6 @@
 {meta: title Don’t Bother To Knock}
 {meta: artist Jim Ed Brown and Helen Cornelius}
-{meta: writer Kye Flemming}
+{meta: composer Kye Flemming}
 
 {start_of_verse: Verse 1}
 [G]Don’t bother to knock just come on [E7]in

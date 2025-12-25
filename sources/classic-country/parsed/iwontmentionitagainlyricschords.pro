@@ -1,6 +1,6 @@
 {meta: title I Won't Mention it Again}
 {meta: artist Ray Price}
-{meta: writer Cam Mullins}
+{meta: composer Cam Mullins}
 
 {start_of_verse: Verse 1}
 [D7]I know you're [G]tired  of being all [F]I ever [C][G7]wanted

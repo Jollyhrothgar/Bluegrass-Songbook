@@ -1,6 +1,6 @@
 {meta: title If You But Care}
 {meta: artist Cowboy Copas}
-{meta: writer Kit Carson}
+{meta: composer Kit Carson}
 
 {start_of_verse: Verse 1}
 [C]There's a dream in my heart

@@ -1,6 +1,6 @@
 {meta: title Don't Get Around Much Anymore}
 {meta: artist Hank Thompson}
-{meta: writer Duke Ellington and Bob Russell}
+{meta: composer Duke Ellington and Bob Russell}
 
 {start_of_verse: Verse 1}
 [G]Missed the Saturday dance

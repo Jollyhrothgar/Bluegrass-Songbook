@@ -1,6 +1,6 @@
 {meta: title Blue Highway}
 {meta: artist John Conlee}
-{meta: writer Don Henry and Bob Simon}
+{meta: composer Don Henry and Bob Simon}
 
 {start_of_verse: Verse 1}
 [C]Another highway another [G7][Dm]heartache

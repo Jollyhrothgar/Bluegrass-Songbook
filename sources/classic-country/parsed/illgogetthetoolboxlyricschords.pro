@@ -1,6 +1,6 @@
 {meta: title I'll Go Get The Tool Box}
 {meta: artist Stonewall Jackson}
-{meta: writer Gene Crysler}
+{meta: composer Gene Crysler}
 
 {start_of_verse: Verse 1}
 [G]I sit there with my teardrops [G7]showing just the way I [C]felt

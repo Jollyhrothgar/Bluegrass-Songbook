@@ -1,6 +1,6 @@
 {meta: title Stand By My Woman Man}
 {meta: artist Ronnie Milsap}
-{meta: writer Kent M. Robbins}
+{meta: composer Kent M. Robbins}
 
 {start_of_verse: Verse 1}
 [C]At five o'clock she [F]knows I’ll soon be [C]home

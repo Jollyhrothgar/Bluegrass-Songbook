@@ -1,6 +1,6 @@
 {meta: title Turning To The Light}
 {meta: artist Joey and Rory}
-{meta: writer Stephanie Davis}
+{meta: composer Stephanie Davis}
 
 {start_of_verse: Verse 1}
 [G]Like a seedling in the clay

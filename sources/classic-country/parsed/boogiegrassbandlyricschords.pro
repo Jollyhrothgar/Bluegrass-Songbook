@@ -1,6 +1,6 @@
 {meta: title Boogie Grass Band}
 {meta: artist Conway Twitty}
-{meta: writer Ronnie Reno}
+{meta: composer Ronnie Reno}
 
 {start_of_verse: Verse 1}
 [G]There's a new kind of music going [F]round

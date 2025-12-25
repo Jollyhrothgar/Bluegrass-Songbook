@@ -1,6 +1,6 @@
 {meta: title Tiny White Circle}
 {meta: artist Leona Williams}
-{meta: writer Vera Lakey}
+{meta: composer Vera Lakey}
 
 {start_of_verse: Verse 1}
 [C]I see your staring [F]at this ring I’m [C]wearing

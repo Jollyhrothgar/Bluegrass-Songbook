@@ -1,6 +1,6 @@
 {meta: title King Of The Mountain}
 {meta: artist George Strait}
-{meta: writer Larry Boone and Paul Nelson}
+{meta: composer Larry Boone and Paul Nelson}
 
 {start_of_verse: Verse 1}
 [G7]I  [C]gave her that [G7]diamond she [C]dreamed of

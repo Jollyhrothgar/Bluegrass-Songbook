@@ -1,6 +1,6 @@
 {meta: title Island}
 {meta: artist Eddy Raven}
-{meta: writer Eddy Raven and Troy Seals}
+{meta: composer Eddy Raven and Troy Seals}
 
 {start_of_verse: Verse 1}
 [C]There was a time there was a place I [F]loved

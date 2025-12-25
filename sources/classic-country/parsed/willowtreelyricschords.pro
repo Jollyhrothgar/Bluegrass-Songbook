@@ -1,6 +1,6 @@
 {meta: title Willow Tree}
 {meta: artist Ferlin Husky}
-{meta: writer Bettie Husky}
+{meta: composer Bettie Husky}
 
 {start_of_verse: Verse 1}
 [G]Willow tree willow [C]tree [D7]you're weeping [G]too

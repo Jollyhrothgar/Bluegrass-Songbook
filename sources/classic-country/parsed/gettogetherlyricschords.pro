@@ -1,6 +1,6 @@
 {meta: title Get Together}
 {meta: artist Anne Murray}
-{meta: writer Chet Powers and David Valentini}
+{meta: composer Chet Powers and David Valentini}
 
 {start_of_verse: Verse 1}
 [G]Love is but a song we sing fear's the way we [Dm]die

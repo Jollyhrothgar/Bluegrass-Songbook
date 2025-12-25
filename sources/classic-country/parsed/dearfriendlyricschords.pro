@@ -1,6 +1,6 @@
 {meta: title Dear Friend}
 {meta: artist Ronnie Milsap}
-{meta: writer Kye Fleming and Dennis Morgan}
+{meta: composer Kye Fleming and Dennis Morgan}
 
 {start_of_verse: Verse 1}
 [G7]Dear friend [C]where do I [G7]begin

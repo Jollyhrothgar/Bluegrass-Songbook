@@ -1,6 +1,6 @@
 {meta: title Dreaming With Tears In My Eyes}
 {meta: artist JImmy Rodgers}
-{meta: writer Waldo O'Neal and Jimmie Rodgers}
+{meta: composer Waldo O'Neal and Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]My heart is [F]longing for [C]you dear

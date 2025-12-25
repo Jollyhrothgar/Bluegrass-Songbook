@@ -1,6 +1,6 @@
 {meta: title How Far Our Love Goes}
 {meta: artist T.G.Sheppard}
-{meta: writer Curly Putman, Jan Crutchfield, Buddy Killen}
+{meta: composer Curly Putman, Jan Crutchfield, Buddy Killen}
 
 {start_of_verse: Verse 1}
 [G]Baby just relax and let my hands under your [E7]head

@@ -1,6 +1,6 @@
 {meta: title It's Written All Over Your Face}
 {meta: artist Ronnie Milsap}
-{meta: writer Tom Brasfield and Robert Byrne}
+{meta: composer Tom Brasfield and Robert Byrne}
 
 {start_of_verse: Verse 1}
 [C]Is there a [Em]tear in that [F]gleam in your eyes

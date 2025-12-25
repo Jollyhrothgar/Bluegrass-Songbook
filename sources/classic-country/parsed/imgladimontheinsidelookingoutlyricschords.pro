@@ -1,6 +1,6 @@
 {meta: title I’m Glad I’m On The Inside Looking Out}
 {meta: artist Hank Snow}
-{meta: writer Rusty Gabbard}
+{meta: composer Rusty Gabbard}
 
 {start_of_verse: Verse 1}
 [C]In the days of Noah [F]just before the [C]flood

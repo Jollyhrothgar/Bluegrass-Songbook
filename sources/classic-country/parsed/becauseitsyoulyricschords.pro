@@ -1,6 +1,6 @@
 {meta: title Because It's You}
 {meta: artist Wanda Jackson}
-{meta: writer Bobby George and Vern Stovall}
+{meta: composer Bobby George and Vern Stovall}
 
 {start_of_verse: Verse 1}
 [G]If this is the life you crave [D7]honky tonks night and day

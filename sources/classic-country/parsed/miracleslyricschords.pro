@@ -1,6 +1,6 @@
 {meta: title Miracles}
 {meta: artist Don Williams}
-{meta: writer Roger Cook}
+{meta: composer Roger Cook}
 
 {start_of_verse: Verse 1}
 [C]Miracles miracles that's what life's [G7]about

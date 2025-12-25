@@ -1,6 +1,6 @@
 {meta: title He's Not The Man I Used To Be}
 {meta: artist Ricky Van Shelton}
-{meta: writer Gary Duffey and Michael Foster}
+{meta: composer Gary Duffey and Michael Foster}
 
 {start_of_verse: Verse 1}
 [G]Today I saw your best friend and I [C]asked her how you've been

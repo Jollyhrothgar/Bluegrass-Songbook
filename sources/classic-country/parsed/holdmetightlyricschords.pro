@@ -1,6 +1,6 @@
 {meta: title Hold Me Tight}
 {meta: artist Anne Murray}
-{meta: writer Johnny Nash}
+{meta: composer Johnny Nash}
 
 {start_of_verse: Verse 1}
 [Am]I don't wanna [D7]hear it no more [Am]fussing

@@ -1,6 +1,6 @@
 {meta: title Just An Old Faded Photograph}
 {meta: artist Hank Thompson}
-{meta: writer Rex Griffin}
+{meta: composer Rex Griffin}
 
 {start_of_verse: Verse 1}
 [G]Just an [D7]old faded photograph of [G]you

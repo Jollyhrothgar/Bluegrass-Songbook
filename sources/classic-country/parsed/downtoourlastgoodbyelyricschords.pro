@@ -1,6 +1,6 @@
 {meta: title Down To Our Last Goodbye}
 {meta: artist Willie Nelson}
-{meta: writer Jan Crutchfield and Wayne Moss}
+{meta: composer Jan Crutchfield and Wayne Moss}
 
 {start_of_verse: Verse 1}
 [G]This was my [C]last mistake 

@@ -1,6 +1,6 @@
 {meta: title Pieces Of My Life}
 {meta: artist Charlie Rich}
-{meta: writer Troy Seals}
+{meta: composer Troy Seals}
 
 {start_of_verse: Verse 1}
 [G]A water glass full of whiskey

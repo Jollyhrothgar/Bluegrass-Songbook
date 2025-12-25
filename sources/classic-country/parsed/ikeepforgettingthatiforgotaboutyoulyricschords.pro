@@ -1,6 +1,6 @@
 {meta: title I Keep Forgetting That I Forgot About You}
 {meta: artist Wynn Stewart}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]I keep forgetting not to remember you to get you out of my [F]mind

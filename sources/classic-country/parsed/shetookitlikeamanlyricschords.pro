@@ -1,6 +1,6 @@
 {meta: title She Took It Like A Man}
 {meta: artist Confederate Railroad}
-{meta: writer Paul Norris Nelson Jr., Danny Bear Mayo, Karen R. Staley}
+{meta: composer Paul Norris Nelson Jr., Danny Bear Mayo, Karen R. Staley}
 
 {start_of_verse: Verse 1}
 [G]I hated like the devil  to [D7]tell her we were through

@@ -1,6 +1,6 @@
 {meta: title Last Kiss}
 {meta: artist Lacy J. Dalton}
-{meta: writer Wayne Cochran}
+{meta: composer Wayne Cochran}
 
 {start_of_verse: Verse 1}
 [C]Well where oh where can [Am]my baby be

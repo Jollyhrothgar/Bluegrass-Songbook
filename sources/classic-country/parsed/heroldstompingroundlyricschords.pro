@@ -1,6 +1,6 @@
 {meta: title Her Old Stompin' Ground}
 {meta: artist Tracy Lawrence}
-{meta: writer Paul Nelson and Kenny Beard}
+{meta: composer Paul Nelson and Kenny Beard}
 
 {start_of_verse: Verse 1}
 [G]I know she'll be back [Em]no matter where she's been

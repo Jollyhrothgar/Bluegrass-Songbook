@@ -1,6 +1,6 @@
 {meta: title When The Blues Are Moving In}
 {meta: artist Doyle Lawson}
-{meta: writer Jamie Dailey and Doyle Lawson}
+{meta: composer Jamie Dailey and Doyle Lawson}
 
 {start_of_verse: Verse 1}
 [G]In the quiet of the evening I sing a mournful [C]song

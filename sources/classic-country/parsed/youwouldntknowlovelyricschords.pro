@@ -1,6 +1,6 @@
 {meta: title You Wouldn't Know Love}
 {meta: artist Ray Price}
-{meta: writer Hank Cockran and Dave Kirby}
+{meta: composer Hank Cockran and Dave Kirby}
 
 {start_of_verse: Verse 1}
 [G]You wouldn't know love if it [D7]looked you in the [G]eye

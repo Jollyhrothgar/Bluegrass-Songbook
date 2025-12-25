@@ -1,6 +1,6 @@
 {meta: title If I Were You I'd Fall In Love With Me}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby and Warren Robb}
+{meta: composer Dave Kirby and Warren Robb}
 
 {start_of_verse: Verse 1}
 [G]You look too good to sit there lookin' [D7]lonely

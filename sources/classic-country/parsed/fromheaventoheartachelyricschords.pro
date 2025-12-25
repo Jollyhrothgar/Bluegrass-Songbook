@@ -1,6 +1,6 @@
 {meta: title From Heaven To Heartache Lyrics Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G7]From heaven to [C]heartache is such a long [G7]way to [F]go

@@ -1,6 +1,6 @@
 {meta: title Baby You've Got What It Takes}
 {meta: artist Johnny Duncan and Janie Fricke}
-{meta: writer Clyde Otis, Brook Benton, Murray Stein}
+{meta: composer Clyde Otis, Brook Benton, Murray Stein}
 
 {start_of_verse: Verse 1}
 [C]Well now it takes more than a robin to make the winter go

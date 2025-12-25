@@ -1,6 +1,6 @@
 {meta: title I'll Never Get Out Of This World Alive}
 {meta: artist Hank Williams}
-{meta: writer Hank Williams and Fred Rose}
+{meta: composer Hank Williams and Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]Now you're looking at a man that's getting kind-a mad

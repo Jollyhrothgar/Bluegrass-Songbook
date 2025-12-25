@@ -1,6 +1,6 @@
 {meta: title I'm Tired Of Living This Lie}
 {meta: artist Bob Wills}
-{meta: writer Laura Lee McBride}
+{meta: composer Laura Lee McBride}
 
 {start_of_verse: Verse 1}
 [C]I want my heart to be free I don’t [G7]want to foresee 

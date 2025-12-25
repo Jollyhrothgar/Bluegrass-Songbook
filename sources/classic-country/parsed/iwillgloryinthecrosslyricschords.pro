@@ -1,6 +1,6 @@
 {meta: title I Will Glory In The Cross}
 {meta: artist Barbara Mandrell}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [C]I boast not of works or [F]tell of good deeds

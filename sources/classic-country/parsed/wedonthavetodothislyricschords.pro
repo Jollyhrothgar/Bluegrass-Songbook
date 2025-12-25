@@ -1,6 +1,6 @@
 {meta: title We Don't Have To Do This}
 {meta: artist Tanya Tucker}
-{meta: writer Gary Burr and Victoria Shaw}
+{meta: composer Gary Burr and Victoria Shaw}
 
 {start_of_verse: Verse 1}
 [G]If [Em]any[D7]one had [G]told me [Em]things would [D7]get this [G]far

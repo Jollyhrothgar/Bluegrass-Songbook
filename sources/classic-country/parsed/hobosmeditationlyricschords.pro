@@ -1,6 +1,6 @@
 {meta: title Hobo’s Meditation}
 {meta: artist Merle Haggard}
-{meta: writer Jimmie Rodgers [3/4 time]}
+{meta: composer Jimmie Rodgers [3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]Tonight as I lay [G7]on a [C]boxcar

@@ -1,6 +1,6 @@
 {meta: title I've Thought Of Leaving You}
 {meta: artist Kitty Wells}
-{meta: writer Lee Emerson}
+{meta: composer Lee Emerson}
 
 {start_of_verse: Verse 1}
 I've Thought Of Leaving You

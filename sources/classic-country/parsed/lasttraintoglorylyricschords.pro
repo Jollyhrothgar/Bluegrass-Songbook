@@ -1,6 +1,6 @@
 {meta: title Last Train To Glory}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Walter Carter}
+{meta: composer Walter Carter}
 
 {start_of_verse: Verse 1}
 [G]It came last [C]night as I was [G]sleeping[C]

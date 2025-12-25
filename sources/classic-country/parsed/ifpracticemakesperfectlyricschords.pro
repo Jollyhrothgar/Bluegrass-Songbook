@@ -1,6 +1,6 @@
 {meta: title If Practice Makes Perfect}
 {meta: artist Johnny Rodriguez}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 [G]How do I look leav[G7]ing

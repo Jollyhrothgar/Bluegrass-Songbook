@@ -1,6 +1,6 @@
 {meta: title Missing Persons}
 {meta: artist Ferlin Husky}
-{meta: writer Jack Rhodes, Dick Reynolds, Ferlin Husky}
+{meta: composer Jack Rhodes, Dick Reynolds, Ferlin Husky}
 
 {start_of_verse: Verse 1}
 [G]Oh I went down to missing [G7]persons [C]told the captain bout [G]you

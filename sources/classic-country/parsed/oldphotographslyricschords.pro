@@ -1,6 +1,6 @@
 {meta: title Old Photographs}
 {meta: artist Charley Pride}
-{meta: writer Al Urban}
+{meta: composer Al Urban}
 
 {start_of_verse: Verse 1}
 [C]Here is one  that we took one Sunday [F]afternoon 

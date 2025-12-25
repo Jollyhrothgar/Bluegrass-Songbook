@@ -1,6 +1,6 @@
 {meta: title From Heaven To A Lonely Dark Hill}
 {meta: artist Carl Story}
-{meta: writer Don McHan and Carl Story}
+{meta: composer Don McHan and Carl Story}
 
 {start_of_verse: Verse 1}
 [C]One day on a [F]bright April [C]morning

@@ -1,6 +1,6 @@
 {meta: title Burning A Hole In My Mind}
 {meta: artist Connie Smith}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [G7]Though it [F]happened long [G7]ago the [F]hurt just won't let [G7]go

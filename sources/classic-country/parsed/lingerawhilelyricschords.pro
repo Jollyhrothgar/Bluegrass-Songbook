@@ -1,6 +1,6 @@
 {meta: title Linger Awhile}
 {meta: artist David Ball}
-{meta: writer Harry Owens and Vincent Rose}
+{meta: composer Harry Owens and Vincent Rose}
 
 {start_of_verse: Verse 1}
 [C]The time is [Dm]coming [F]soon to say [C]goodbye[G7]

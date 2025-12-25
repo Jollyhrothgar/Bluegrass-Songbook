@@ -1,6 +1,6 @@
 {meta: title Funny (But I'm Not Laughing)}
 {meta: artist Conway Twitty}
-{meta: writer Mickey Jaco}
+{meta: composer Mickey Jaco}
 
 {start_of_verse: Verse 1}
 [C]Well I just saw you out [F]with [C]another

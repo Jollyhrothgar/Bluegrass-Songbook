@@ -1,6 +1,6 @@
 {meta: title If The Whole World Stopped Loving}
 {meta: artist Eddy Arnold}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]If the whole world stopped [C]loving

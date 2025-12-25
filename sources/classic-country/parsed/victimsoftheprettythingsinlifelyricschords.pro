@@ -1,6 +1,6 @@
 {meta: title Victims Of The Pretty Things In Life}
 {meta: artist Johnny Lee}
-{meta: writer Mike Tate and Sammy Vaughn}
+{meta: composer Mike Tate and Sammy Vaughn}
 
 {start_of_verse: Verse 1}
 [G]Just like me I can see you're going [D7]crazy

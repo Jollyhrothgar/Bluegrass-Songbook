@@ -1,6 +1,6 @@
 {meta: title When I'm Away From You}
 {meta: artist The Bellamy Brothers}
-{meta: writer Francis John Miller}
+{meta: composer Francis John Miller}
 
 {start_of_verse: Verse 1}
 [G]When I'm away from you well I [C]can't stay still

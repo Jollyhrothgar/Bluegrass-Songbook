@@ -1,6 +1,6 @@
 {meta: title Before The Next Teardrop Falls}
 {meta: artist Freddy Fender}
-{meta: writer Ben Peters and Vivian Keith}
+{meta: composer Ben Peters and Vivian Keith}
 
 {start_of_verse: Verse 1}
 [C]If he brings you happiness then I [F]wish you both the [C]best

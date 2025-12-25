@@ -1,6 +1,6 @@
 {meta: title Love's Old Sweet Song}
 {meta: artist George Hamilton IV}
-{meta: writer James Molloy and Clifton Bingham}
+{meta: composer James Molloy and Clifton Bingham}
 
 {start_of_verse: Verse 1}
 [C]Just a song at [G7]twilight 

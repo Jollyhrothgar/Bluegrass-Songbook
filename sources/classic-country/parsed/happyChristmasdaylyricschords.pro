@@ -1,6 +1,6 @@
 {meta: title Happy Christmas Day}
 {meta: artist Charley Pride}
-{meta: writer Sue Lane and Charley Pride}
+{meta: composer Sue Lane and Charley Pride}
 
 {start_of_verse: Verse 1}
 [G]Snowflakes fallin' softly quietly to the ground

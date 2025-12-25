@@ -1,6 +1,6 @@
 {meta: title Good Morning}
 {meta: artist Norma Jean}
-{meta: writer Leona Williams}
+{meta: composer Leona Williams}
 
 {start_of_verse: Verse 1}
 [G]Good [C]morning good [G]morning to you

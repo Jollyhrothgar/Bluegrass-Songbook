@@ -1,6 +1,6 @@
 {meta: title All The Soft Places To Fall}
 {meta: artist Merle Haggard}
-{meta: writer Leona Williams}
+{meta: composer Leona Williams}
 
 {start_of_verse: Verse 1}
 [G]Most of my life I've been runnin' around 

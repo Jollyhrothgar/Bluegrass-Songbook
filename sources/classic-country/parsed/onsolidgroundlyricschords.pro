@@ -1,6 +1,6 @@
 {meta: title On Solid Ground}
 {meta: artist Rhonda Vincent}
-{meta: writer Terry Herd and Rhonda Vincent}
+{meta: composer Terry Herd and Rhonda Vincent}
 
 {start_of_verse: Verse 1}
 [C]Darlin' we've been through some [G7]hard times and regrets I've [C]had a few

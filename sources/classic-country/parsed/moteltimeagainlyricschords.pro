@@ -1,6 +1,6 @@
 {meta: title Motel Time Again}
 {meta: artist Johnny Paycheck}
-{meta: writer Bobby Bare}
+{meta: composer Bobby Bare}
 
 {start_of_verse: Verse 1}
 [C]Oh I sat here on this stool drank so [F]much I blew my [C]cool

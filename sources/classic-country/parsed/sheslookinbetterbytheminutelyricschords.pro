@@ -1,6 +1,6 @@
 {meta: title She's Lookin' Better By The Minute}
 {meta: artist Ernest Tubb}
-{meta: writer Jimmie Helms and Grant Townsley}
+{meta: composer Jimmie Helms and Grant Townsley}
 
 {start_of_verse: Verse 1}
 [G]She's looking better by the [C]minute

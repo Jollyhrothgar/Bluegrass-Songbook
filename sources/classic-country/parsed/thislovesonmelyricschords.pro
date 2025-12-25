@@ -1,6 +1,6 @@
 {meta: title This Love's On Me}
 {meta: artist Alabama}
-{meta: writer Jeff Cook, John Lawrence, Kenneth Randolph}
+{meta: composer Jeff Cook, John Lawrence, Kenneth Randolph}
 
 {start_of_verse: Verse 1}
 [G]Sittin' alone at a [Em]table for two [D7] when she walked [C]in

@@ -1,6 +1,6 @@
 {meta: title The King Is Coming}
 {meta: artist The Statler Brothers}
-{meta: writer Bill Gaither, Gloria Gaither, Charley Millhoff}
+{meta: composer Bill Gaither, Gloria Gaither, Charley Millhoff}
 
 {start_of_verse: Verse 1}
 [D7]I can [G]hear the chariots rumble I can [C]see the marching [A7]throng

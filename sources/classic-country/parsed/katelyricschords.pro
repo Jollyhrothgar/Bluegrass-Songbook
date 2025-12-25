@@ -1,6 +1,6 @@
 {meta: title Kate}
 {meta: artist Johnny Cash}
-{meta: writer Marty Robbins}
+{meta: composer Marty Robbins}
 
 {start_of_verse: Verse 1}
 [C]Well I saw you with another it made me lose my mind 

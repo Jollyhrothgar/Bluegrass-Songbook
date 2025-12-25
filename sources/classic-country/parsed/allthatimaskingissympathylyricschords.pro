@@ -1,6 +1,6 @@
 {meta: title All That I'm Asking Is Sympathy}
 {meta: artist Slim Whitman}
-{meta: writer Benny Davis and Joe Burke}
+{meta: composer Benny Davis and Joe Burke}
 
 {start_of_verse: Verse 1}
 [C]You were all I had [F]now I feel so bad

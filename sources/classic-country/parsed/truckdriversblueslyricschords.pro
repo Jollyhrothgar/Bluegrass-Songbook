@@ -1,6 +1,6 @@
 {meta: title Truck Driver's Blues}
 {meta: artist Ferlin Husky}
-{meta: writer Ted Daffan}
+{meta: composer Ted Daffan}
 
 {start_of_verse: Verse 1}
 [G]Feeling tired and weary from my head down to my shoes

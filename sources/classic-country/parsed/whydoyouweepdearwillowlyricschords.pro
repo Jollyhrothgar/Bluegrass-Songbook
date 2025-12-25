@@ -1,6 +1,6 @@
 {meta: title Why Do You Weep Dear Willow}
 {meta: artist Carl Story}
-{meta: writer Gona Blankenship and Lynn Davis}
+{meta: composer Gona Blankenship and Lynn Davis}
 
 {start_of_verse: Verse 1}
 [C]I see a weeping [F]willow 

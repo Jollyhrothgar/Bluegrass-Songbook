@@ -1,6 +1,6 @@
 {meta: title It Took A Miracle}
 {meta: artist Eddy Arnold}
-{meta: writer John W. Peterson}
+{meta: composer John W. Peterson}
 
 {start_of_verse: Verse 1}
 [C]My Father is all [G7]powerful

@@ -1,6 +1,6 @@
 {meta: title I Hope We Walk The Last Mile Together}
 {meta: artist Carl and Pearl Butler}
-{meta: writer Margaret Newsom Holley}
+{meta: composer Margaret Newsom Holley}
 
 {start_of_verse: Verse 1}
 [G]I hope we walk the last mile [C]together 

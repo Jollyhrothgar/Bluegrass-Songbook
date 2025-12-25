@@ -1,6 +1,6 @@
 {meta: title She's Everything To Me}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]Her [Dm]name is like a prayer when I'm in [C]need

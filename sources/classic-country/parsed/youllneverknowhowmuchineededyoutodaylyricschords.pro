@@ -1,6 +1,6 @@
 {meta: title You'll Never Know How Much I Needed You Today}
 {meta: artist Conway Twitty}
-{meta: writer James Benton, Janet Vinson, Patricia Linthicum}
+{meta: composer James Benton, Janet Vinson, Patricia Linthicum}
 
 {start_of_verse: Verse 1}
 [C]Half asleep I reached for [F]you at [C]dawn [F]

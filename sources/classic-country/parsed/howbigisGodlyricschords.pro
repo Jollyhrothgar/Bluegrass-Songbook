@@ -1,6 +1,6 @@
 {meta: title How Big Is God}
 {meta: artist Ray Price}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [G]Though men may strife to go beyond the reap of [D7]space

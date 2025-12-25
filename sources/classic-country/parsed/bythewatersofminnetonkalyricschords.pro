@@ -1,6 +1,6 @@
 {meta: title By The Waters Of Minnetonka}
 {meta: artist Slim Whitman}
-{meta: writer J.M. Cavanass and Thurlow Lieurance}
+{meta: composer J.M. Cavanass and Thurlow Lieurance}
 
 {start_of_verse: Verse 1}
 [C]Whoo oooo whoo oooo 

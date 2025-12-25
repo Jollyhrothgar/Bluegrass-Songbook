@@ -1,6 +1,6 @@
 {meta: title There’s A Whole Lot About A Woman A Man Don’t Know}
 {meta: artist Jack Greene}
-{meta: writer Bill Eldridge, Gary Stewart, Walter Haynes}
+{meta: composer Bill Eldridge, Gary Stewart, Walter Haynes}
 
 {start_of_verse: Verse 1}
 [G]There's a whole lot about a [D7]woman a man don't [G]know

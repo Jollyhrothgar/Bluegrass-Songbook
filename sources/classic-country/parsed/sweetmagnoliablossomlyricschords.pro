@@ -1,6 +1,6 @@
 {meta: title Sweet Magnolia Blossom}
 {meta: artist Billy Crash Craddock}
-{meta: writer Rory Bourke and Gayle Barnhill}
+{meta: composer Rory Bourke and Gayle Barnhill}
 
 {start_of_verse: Verse 1}
 [G]Sweet Mag[Em]nolia [G]Blossom [Em]lives here in our town

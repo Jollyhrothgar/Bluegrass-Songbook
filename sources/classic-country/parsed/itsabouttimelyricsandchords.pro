@@ -1,6 +1,6 @@
 {meta: title It's About Time}
 {meta: artist Norma Jean}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [C]I swore last night when I walked out those swinging doors

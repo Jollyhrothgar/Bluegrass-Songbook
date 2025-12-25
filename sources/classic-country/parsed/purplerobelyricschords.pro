@@ -1,6 +1,6 @@
 {meta: title Purple Robe}
 {meta: artist The Stanley Brothers}
-{meta: writer Odell McLeod}
+{meta: composer Odell McLeod}
 
 {start_of_verse: Verse 1}
 [C]There’s a story so unkind in the [F]Holy book we [C]find

@@ -1,6 +1,6 @@
 {meta: title The Greatest Christmas Gift}
 {meta: artist George Jones and Tammy Wynette}
-{meta: writer Dallas Frazier and Earl Montgomery}
+{meta: composer Dallas Frazier and Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [G]A precious part of me climbs upon my knee

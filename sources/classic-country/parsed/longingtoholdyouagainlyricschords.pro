@@ -1,6 +1,6 @@
 {meta: title Longing To Hold You Again}
 {meta: artist Tammy Wynette}
-{meta: writer Don Robertson}
+{meta: composer Don Robertson}
 
 {start_of_verse: Verse 1}
 [G]All alone here am [B7]I so lonely [C]I could cry

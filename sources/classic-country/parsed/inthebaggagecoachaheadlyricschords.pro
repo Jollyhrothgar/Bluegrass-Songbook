@@ -1,6 +1,6 @@
 {meta: title In The Baggage Coach Ahead}
 {meta: artist Mac Wiseman}
-{meta: writer Gussie L. Davis}
+{meta: composer Gussie L. Davis}
 
 {start_of_verse: Verse 1}
 [C]On a dark stormy [Am]night as the [C]train rattled [Am]on

@@ -1,6 +1,6 @@
 {meta: title Driftwood On The River}
 {meta: artist Ernest Tubb}
-{meta: writer John Klenner and Bob Miller}
+{meta: composer John Klenner and Bob Miller}
 
 {start_of_verse: Verse 1}
 [C]I'm just drift-wood on the river floating down the [G7]tide

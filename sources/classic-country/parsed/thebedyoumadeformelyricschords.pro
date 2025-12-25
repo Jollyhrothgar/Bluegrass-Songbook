@@ -1,6 +1,6 @@
 {meta: title The Bed You Made For Me}
 {meta: artist Highway 101}
-{meta: writer Paulette Carlson}
+{meta: composer Paulette Carlson}
 
 {start_of_verse: Verse 1}
 [G]Darling were you listening when I [C]called you late last [G]night

@@ -1,6 +1,6 @@
 {meta: title You Saw Me Off (But Will You See Me In)}
 {meta: artist Stonewall Jackson}
-{meta: writer Hugh X. Lewis and Benny Joy}
+{meta: composer Hugh X. Lewis and Benny Joy}
 
 {start_of_verse: Verse 1}
 [C]Mile after mile I [F]have ridden this ol' [C]bus

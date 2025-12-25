@@ -1,6 +1,6 @@
 {meta: title That Kind Of Fool}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]Look at that fool going [C]home to his [G]wife

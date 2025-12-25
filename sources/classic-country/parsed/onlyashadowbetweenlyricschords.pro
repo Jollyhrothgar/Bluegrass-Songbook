@@ -1,6 +1,6 @@
 {meta: title Only A Shadow Between}
 {meta: artist Sonny James}
-{meta: writer Clay Blaker and Ed Baird}
+{meta: composer Clay Blaker and Ed Baird}
 
 {start_of_verse: Verse 1}
 [C]I have a [F]home in the [C]bright summer [F]land

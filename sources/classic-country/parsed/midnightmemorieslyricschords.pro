@@ -1,6 +1,6 @@
 {meta: title Midnight Memories}
 {meta: artist Vernon Oxford}
-{meta: writer Dewayne Orender and Johnny Young}
+{meta: composer Dewayne Orender and Johnny Young}
 
 {start_of_verse: Verse 1}
 [C]Midnight [F]memories of [C]you

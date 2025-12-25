@@ -1,6 +1,6 @@
 {meta: title I Dreamed About Mama Last Night}
 {meta: artist Hank Williams}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]I've just been to heaven with [C]someone so [G]true

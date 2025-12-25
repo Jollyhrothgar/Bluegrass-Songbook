@@ -1,6 +1,6 @@
 {meta: title These Memories}
 {meta: artist Jeannie Seely}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]Like a storm [D7]your love [G]swept through me

@@ -1,6 +1,6 @@
 {meta: title Anything But Lonesome}
 {meta: artist Bob Luman}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]She doesn't go there [C]just to hear the [G]music

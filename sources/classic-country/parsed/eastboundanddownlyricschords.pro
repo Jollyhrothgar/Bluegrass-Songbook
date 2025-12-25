@@ -1,6 +1,6 @@
 {meta: title Eastbound And Down}
 {meta: artist Jerry Reed}
-{meta: writer Jerry Reed and Dick Feller}
+{meta: composer Jerry Reed and Dick Feller}
 
 {start_of_verse: Verse 1}
 Eastbound And Down

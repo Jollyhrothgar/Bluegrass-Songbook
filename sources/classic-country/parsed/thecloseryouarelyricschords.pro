@@ -1,6 +1,6 @@
 {meta: title The Closer You Are}
 {meta: artist Earl Thomas Conley}
-{meta: writer Earl T. Conley, Clint Daniels, Bat McGrath}
+{meta: composer Earl T. Conley, Clint Daniels, Bat McGrath}
 
 {start_of_verse: Verse 1}
 [C]I can't get you out of [Em]mind

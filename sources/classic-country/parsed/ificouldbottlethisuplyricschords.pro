@@ -1,6 +1,6 @@
 {meta: title If I Could Bottle This Up}
 {meta: artist George Jones}
-{meta: writer Dean Dillon and Paul Overstreet}
+{meta: composer Dean Dillon and Paul Overstreet}
 
 {start_of_verse: Verse 1}
 [C]If I could bottle this up I'd make a [D7]million

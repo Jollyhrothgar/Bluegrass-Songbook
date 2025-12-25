@@ -1,6 +1,6 @@
 {meta: title Going Through The Motions Of Living}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert and Jean Chapel}
+{meta: composer Bob Tubert and Jean Chapel}
 
 {start_of_verse: Verse 1}
 [C]I'm just [G7]going through the motions of [C]living 

@@ -1,6 +1,6 @@
 {meta: title Haven For Angels Unaware}
 {meta: artist Johnny Paycheck}
-{meta: writer Johnny Paycheck and Aubrey Mayhew}
+{meta: composer Johnny Paycheck and Aubrey Mayhew}
 
 {start_of_verse: Verse 1}
 [C]When she comes in it's the [F]first step [C]down

@@ -1,6 +1,6 @@
 {meta: title Box Seat In Heaven}
 {meta: artist The Wildwood Valley Boys}
-{meta: writer Aubrey Holt}
+{meta: composer Aubrey Holt}
 
 {start_of_verse: Verse 1}
 [G]She'd talk about Jesus [C]while down on her [G]knees

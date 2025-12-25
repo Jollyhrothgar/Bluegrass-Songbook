@@ -1,6 +1,6 @@
 {meta: title Be Ready}
 {meta: artist Don Gibson}
-{meta: writer Audrey Allison}
+{meta: composer Audrey Allison}
 
 {start_of_verse: Verse 1}
 [C]Well you think you got plenty [G7]time to get [C]ready to [F]die

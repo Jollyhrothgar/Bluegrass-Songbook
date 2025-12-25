@@ -1,6 +1,6 @@
 {meta: title Mathilda}
 {meta: artist Freddy Fender}
-{meta: writer George Khoury and Huey Thierry}
+{meta: composer George Khoury and Huey Thierry}
 
 {start_of_verse: Verse 1}
 [C]My love for you will always [F]be

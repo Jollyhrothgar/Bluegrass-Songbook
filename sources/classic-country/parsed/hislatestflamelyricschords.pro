@@ -1,6 +1,6 @@
 {meta: title His Latest Flame}
 {meta: artist Elvis Presley}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [G]A very old friend [Em]came by [Em][G]today

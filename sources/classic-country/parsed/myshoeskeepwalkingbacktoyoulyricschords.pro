@@ -1,6 +1,6 @@
 {meta: title My Shoes Keep Walking Back To You}
 {meta: artist Ray Price}
-{meta: writer Bob Wills and Lee Ross}
+{meta: composer Bob Wills and Lee Ross}
 
 {start_of_verse: Verse 1}
 [C]I must say that I don't care

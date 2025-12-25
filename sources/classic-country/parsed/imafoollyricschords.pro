@@ -1,6 +1,6 @@
 {meta: title I’m A Fool}
 {meta: artist Slim Whitman}
-{meta: writer Tommy Smith}
+{meta: composer Tommy Smith}
 
 {start_of_verse: Verse 1}
 [C]I spend many sleepless nights

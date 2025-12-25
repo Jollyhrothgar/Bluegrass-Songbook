@@ -1,6 +1,6 @@
 {meta: title Little Children}
 {meta: artist Hank Snow}
-{meta: writer Paul Mitchell}
+{meta: composer Paul Mitchell}
 
 {start_of_verse: Verse 1}
 [G]We're living in a [B7]worried world a [C]world that's full of [G]fears

@@ -1,6 +1,6 @@
 {meta: title Have You Found It Yet}
 {meta: artist Jeannie Seely}
-{meta: writer Hank Cochran and Red Lane}
+{meta: composer Hank Cochran and Red Lane}
 
 {start_of_verse: Verse 1}
 [G]I can't seem [C]to forget [D7]that look of leaving you [G]wore

@@ -1,6 +1,6 @@
 {meta: title Give This Message To Your Heart}
 {meta: artist The Osborne Brothers}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [G7]Give this message to your [C]heart

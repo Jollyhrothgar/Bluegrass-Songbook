@@ -1,6 +1,6 @@
 {meta: title Fooled Around And Fell In Love}
 {meta: artist Mel Tillis}
-{meta: writer Elvin Bishop}
+{meta: composer Elvin Bishop}
 
 {start_of_verse: Verse 1}
 [C]I thought I could touch you just [F]for a [C]moment

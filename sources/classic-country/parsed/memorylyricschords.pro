@@ -1,6 +1,6 @@
 {meta: title Memory}
 {meta: artist Jean Shepard}
-{meta: writer Gertrude Cox}
+{meta: composer Gertrude Cox}
 
 {start_of_verse: Verse 1}
 [C]Old [G7]memory [C]keep [C7]him rememberin' [F]me

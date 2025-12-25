@@ -1,6 +1,6 @@
 {meta: title You Don't Love Me Anymore}
 {meta: artist Ricky Nelson}
-{meta: writer Nicollet Tady}
+{meta: composer Nicollet Tady}
 
 {start_of_verse: Verse 1}
 [C]The [F]kisses that you [C]used to give 

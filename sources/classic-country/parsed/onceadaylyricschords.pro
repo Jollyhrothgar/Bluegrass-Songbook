@@ -1,6 +1,6 @@
 {meta: title Once a Day}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]When you found somebody new I thought I never [G7]would

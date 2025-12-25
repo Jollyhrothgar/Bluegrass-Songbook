@@ -1,6 +1,6 @@
 {meta: title I Found My Jesus And He Wasn't Even Lost}
 {meta: artist Carl Smith}
-{meta: writer Lytle Moe}
+{meta: composer Lytle Moe}
 
 {start_of_verse: Verse 1}
 [C]I walked away from my Lord [F]many [C]times

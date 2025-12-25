@@ -1,6 +1,6 @@
 {meta: title You're The Only One}
 {meta: artist Slim Whitman}
-{meta: writer Jerry Crist and Claude Taylor}
+{meta: composer Jerry Crist and Claude Taylor}
 
 {start_of_verse: Verse 1}
 [C]I could never learn to love somebody [G7]new

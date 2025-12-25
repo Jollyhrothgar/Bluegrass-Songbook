@@ -1,6 +1,6 @@
 {meta: title I Believe In You}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Frank Brunson}
+{meta: composer Frank Brunson}
 
 {start_of_verse: Verse 1}
 [G]Well I heard the other [D7]day 

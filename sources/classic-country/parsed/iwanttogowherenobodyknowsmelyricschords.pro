@@ -1,6 +1,6 @@
 {meta: title I Want To Go (Where Nobody Knows Me)}
 {meta: artist George Hamilton IV}
-{meta: writer Dick Flood}
+{meta: composer Dick Flood}
 
 {start_of_verse: Verse 1}
 [C]The same old house the [F]same old street 

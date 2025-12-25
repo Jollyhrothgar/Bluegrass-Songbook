@@ -1,6 +1,6 @@
 {meta: title Wasted Years}
 {meta: artist Jack Greene}
-{meta: writer Wally Fowler}
+{meta: composer Wally Fowler}
 
 {start_of_verse: Verse 1}
 [C]Wasted [G7]years wasted years oh how [C]foolish

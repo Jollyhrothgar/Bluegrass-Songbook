@@ -1,6 +1,6 @@
 {meta: title Sometimes A Lady}
 {meta: artist Eddy Raven}
-{meta: writer Eddy Raven and Frank Myers}
+{meta: composer Eddy Raven and Frank Myers}
 
 {start_of_verse: Verse 1}
 [C]I'd learn to waltz if she wanted to [G]dance

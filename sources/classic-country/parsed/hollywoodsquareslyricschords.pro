@@ -1,6 +1,6 @@
 {meta: title Hollywood Squares}
 {meta: artist George Strait}
-{meta: writer Larry Cordle, Wayland Patton, Jeff Tanguay}
+{meta: composer Larry Cordle, Wayland Patton, Jeff Tanguay}
 
 {start_of_verse: Verse 1}
 [C]I've always said I [G7]do too [C]easy and [G7]now I'm payin' the price[D7]

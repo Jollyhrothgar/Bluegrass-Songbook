@@ -1,6 +1,6 @@
 {meta: title I Don't Remember Loving You}
 {meta: artist John Conlee}
-{meta: writer Harlan Howard &amp; Bobby Braddock}
+{meta: composer Harlan Howard &amp; Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]I don't [G7]remember loving [C]you

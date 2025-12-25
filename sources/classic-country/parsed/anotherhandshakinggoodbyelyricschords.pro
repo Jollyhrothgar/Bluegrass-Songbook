@@ -1,6 +1,6 @@
 {meta: title Another Hand Shaking Goodbye}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Dallas Frazier and Sanger D. Shafer}
+{meta: composer Dallas Frazier and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]No matter who I'm dreaming with [F]honey you start walking in my [C]sleep

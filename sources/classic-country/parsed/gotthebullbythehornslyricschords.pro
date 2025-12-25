@@ -1,6 +1,6 @@
 {meta: title Got The Bull By The Horns}
 {meta: artist Johnny Horton}
-{meta: writer Amos Boyd and Billy Jones}
+{meta: composer Amos Boyd and Billy Jones}
 
 {start_of_verse: Verse 1}
 [G]I love the brunets the red heads and blonde haired girls

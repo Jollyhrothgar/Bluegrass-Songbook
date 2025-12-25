@@ -1,6 +1,6 @@
 {meta: title Love Without Mercy}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Don Pfrimmer and Mike Reid}
+{meta: composer Don Pfrimmer and Mike Reid}
 
 {start_of_verse: Verse 1}
 [G]Woke up this [Em]morning and I [C]knew I’d be [D7]late

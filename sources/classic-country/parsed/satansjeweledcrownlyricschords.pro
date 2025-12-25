@@ -1,6 +1,6 @@
 {meta: title Satan's Jeweled Crown}
 {meta: artist Emmylou Harris}
-{meta: writer Edgar Edens}
+{meta: composer Edgar Edens}
 
 {start_of_verse: Verse 1}
 [C]Now if I were a [G7]queen and a ruler of [C]nations

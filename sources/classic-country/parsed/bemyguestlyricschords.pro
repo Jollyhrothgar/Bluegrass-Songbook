@@ -1,6 +1,6 @@
 {meta: title Be My Guest}
 {meta: artist Fats Domino}
-{meta: writer Fats Domino, Tommy Boyce, John S. Marascalco}
+{meta: composer Fats Domino, Tommy Boyce, John S. Marascalco}
 
 {start_of_verse: Verse 1}
 [G]Come on baby and [C]be my guest

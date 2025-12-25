@@ -1,6 +1,6 @@
 {meta: title Have You Ever Loved Somebody}
 {meta: artist The Everly Brothers}
-{meta: writer Graham Nash, Alan Clarke, Tony Hicks}
+{meta: composer Graham Nash, Alan Clarke, Tony Hicks}
 
 {start_of_verse: Verse 1}
 [G]You say that you [C]want me

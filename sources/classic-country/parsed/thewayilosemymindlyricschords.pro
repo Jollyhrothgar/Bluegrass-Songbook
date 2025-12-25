@@ -1,6 +1,6 @@
 {meta: title The Way I Lose My Mind}
 {meta: artist Carl Smith}
-{meta: writer Dallas Fraizer}
+{meta: composer Dallas Fraizer}
 
 {start_of_verse: Verse 1}
 [C]Alone and so [F]afraid  is [C]the way I start each [G7]day 

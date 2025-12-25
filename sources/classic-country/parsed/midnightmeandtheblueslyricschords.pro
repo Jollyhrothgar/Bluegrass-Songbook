@@ -1,6 +1,6 @@
 {meta: title Midnight Me and the Blues}
 {meta: artist Mel Tills}
-{meta: writer Jerry House}
+{meta: composer Jerry House}
 
 {start_of_verse: Verse 1}
 [C]Long train [F]rumbles low  in the [G7]distance hear it [C]blow

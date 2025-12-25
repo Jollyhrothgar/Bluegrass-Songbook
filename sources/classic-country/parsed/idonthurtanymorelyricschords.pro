@@ -1,6 +1,6 @@
 {meta: title I Don't Hurt Anymore}
 {meta: artist Hank Snow}
-{meta: writer Don Robertson and Jack Rollins}
+{meta: composer Don Robertson and Jack Rollins}
 
 {start_of_verse: Verse 1}
 [C]I don't hurt [F]anymore 

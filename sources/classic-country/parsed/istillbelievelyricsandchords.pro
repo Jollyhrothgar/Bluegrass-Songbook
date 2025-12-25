@@ -1,6 +1,6 @@
 {meta: title I Still Believe}
 {meta: artist Lee Greenwood}
-{meta: writer Doug Johnson}
+{meta: composer Doug Johnson}
 
 {start_of_verse: Verse 1}
 [G]Sometimes it's easy and sometimes it's not 

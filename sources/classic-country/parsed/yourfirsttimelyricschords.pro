@@ -1,6 +1,6 @@
 {meta: title Your First Time}
 {meta: artist Mickey Gilley}
-{meta: writer Huey P. Meaux}
+{meta: composer Huey P. Meaux}
 
 {start_of_verse: Verse 1}
 [C]Pretty little [G7]teenage [C]queen 

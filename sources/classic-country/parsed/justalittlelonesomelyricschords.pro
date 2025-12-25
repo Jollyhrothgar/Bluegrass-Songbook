@@ -1,6 +1,6 @@
 {meta: title Just A Little Lonesome}
 {meta: artist Bobby Helms}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Always just a little lonesome[G7]   

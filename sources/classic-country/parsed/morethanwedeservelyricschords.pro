@@ -1,6 +1,6 @@
 {meta: title More Than We Deserve}
 {meta: artist Roy Drusky}
-{meta: writer Harry Pryor}
+{meta: composer Harry Pryor}
 
 {start_of_verse: Verse 1}
 [C]I named my little girl after you 

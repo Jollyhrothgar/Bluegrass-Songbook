@@ -1,6 +1,6 @@
 {meta: title What I Want You To Be}
 {meta: artist Ray Price}
-{meta: writer Dave Hall and Aaron Brown}
+{meta: composer Dave Hall and Aaron Brown}
 
 {start_of_verse: Verse 1}
 [C]Now Lord You know I've traveled many [G7]highways

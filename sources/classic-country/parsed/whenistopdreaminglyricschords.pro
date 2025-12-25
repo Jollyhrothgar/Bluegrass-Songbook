@@ -1,6 +1,6 @@
 {meta: title When I Stop Dreaming}
 {meta: artist Emmylou Harris}
-{meta: writer Ira Louvin and Charlie Louvin}
+{meta: composer Ira Louvin and Charlie Louvin}
 
 {start_of_verse: Verse 1}
 [C]When I   [C7]stop [F]dreaming that's [C]when I'll [G7]stop loving [C]you

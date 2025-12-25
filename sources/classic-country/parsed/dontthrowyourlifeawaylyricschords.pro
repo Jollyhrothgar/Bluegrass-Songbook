@@ -1,6 +1,6 @@
 {meta: title Don't Throw Your Life Away}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Billy Wallace}
+{meta: composer Webb Pierce and Billy Wallace}
 
 {start_of_verse: Verse 1}
 [C]You say you'll never be my [G7]wife caused you've done wrong in [C]life

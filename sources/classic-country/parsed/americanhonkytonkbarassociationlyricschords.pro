@@ -1,6 +1,6 @@
 {meta: title American Honky Tonk Bar Association}
 {meta: artist Garth Brooks}
-{meta: writer Jim Rushing and Bryan Kennedy}
+{meta: composer Jim Rushing and Bryan Kennedy}
 
 {start_of_verse: Verse 1}
 [G]If your paycheck depends on the weather and the clock

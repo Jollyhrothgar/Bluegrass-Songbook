@@ -1,6 +1,6 @@
 {meta: title Daddy Will Santa Claus Ever Have To Die}
 {meta: artist Jimmy Martin}
-{meta: writer Jay Penny and Jimmy Martin}
+{meta: composer Jay Penny and Jimmy Martin}
 
 {start_of_verse: Verse 1}
 [G7]Daddy will Santa Clause ever have to [C]die

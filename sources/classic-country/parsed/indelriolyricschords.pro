@@ -1,6 +1,6 @@
 {meta: title In Del Rio}
 {meta: artist Billy Walker}
-{meta: writer Billy Walker and Ray Wix}
+{meta: composer Billy Walker and Ray Wix}
 
 {start_of_verse: Verse 1}
 [C]In a village not far from [G7]the border of old [C]Mexico

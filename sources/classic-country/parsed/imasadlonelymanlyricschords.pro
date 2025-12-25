@@ -1,6 +1,6 @@
 {meta: title I'm A Sad Lonely Man}
 {meta: artist Cal Smith}
-{meta: writer Glenn Raye and Ralph Davis}
+{meta: composer Glenn Raye and Ralph Davis}
 
 {start_of_verse: Verse 1}
 [G]I'm a sad lonely man who [D7]walks in the night

@@ -1,6 +1,6 @@
 {meta: title Lyin' Eyes}
 {meta: artist Johnny Rodriguez}
-{meta: writer Don Henley and Glenn Frey}
+{meta: composer Don Henley and Glenn Frey}
 
 {start_of_verse: Verse 1}
 [C]City girls just seem to find out [F]early 

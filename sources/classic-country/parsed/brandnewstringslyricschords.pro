@@ -1,6 +1,6 @@
 {meta: title Brand New Strings}
 {meta: artist Ricky Skaggs}
-{meta: writer Steve Leslie and Keith Sewell}
+{meta: composer Steve Leslie and Keith Sewell}
 
 {start_of_verse: Verse 1}
 [G]Daddy came runnin' 'cross the railroad tracks

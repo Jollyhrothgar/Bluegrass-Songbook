@@ -1,6 +1,6 @@
 {meta: title Slow Down Brother}
 {meta: artist Ferlin Husky}
-{meta: writer Mark Pickett}
+{meta: composer Mark Pickett}
 
 {start_of_verse: Verse 1}
 [C]There's a sixty mile limit from a-coast to coast

@@ -1,6 +1,6 @@
 {meta: title He'd Still Love Me}
 {meta: artist Lynn Anderson}
-{meta: writer Glenn Sutton and Hugh X. Lewis}
+{meta: composer Glenn Sutton and Hugh X. Lewis}
 
 {start_of_verse: Verse 1}
 [G]You're here to tell me [C]just how much [G]he loves you

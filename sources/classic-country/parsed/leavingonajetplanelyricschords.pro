@@ -1,6 +1,6 @@
 {meta: title Leaving On A Jet Plane}
 {meta: artist The Kendalls}
-{meta: writer John Denver}
+{meta: composer John Denver}
 
 {start_of_verse: Verse 1}
 [C]All my bags are packed I'm ready to [F]go 

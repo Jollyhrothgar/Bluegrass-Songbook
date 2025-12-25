@@ -1,6 +1,6 @@
 {meta: title Freeborn Man}
 {meta: artist Glen Campbell}
-{meta: writer Keith Allison and Mark Lindsay}
+{meta: composer Keith Allison and Mark Lindsay}
 
 {start_of_verse: Verse 1}
 [C]I was born in southland twenty some odd years ago

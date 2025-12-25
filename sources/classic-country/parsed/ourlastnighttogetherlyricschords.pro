@@ -1,6 +1,6 @@
 {meta: title Our Last Night Together}
 {meta: artist Roy Drusky}
-{meta: writer Dave Rich}
+{meta: composer Dave Rich}
 
 {start_of_verse: Verse 1}
 [C]I know it shouldn't [G7]be like this

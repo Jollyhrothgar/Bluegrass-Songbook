@@ -1,6 +1,6 @@
 {meta: title Sunday Morning}
 {meta: artist Connie Smith}
-{meta: writer Van Trevor and Dick Heard}
+{meta: composer Van Trevor and Dick Heard}
 
 {start_of_verse: Verse 1}
 [G]Sunday Sunday Sunday [G][D7]morning

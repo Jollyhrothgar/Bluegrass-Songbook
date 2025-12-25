@@ -1,6 +1,6 @@
 {meta: title Stepping Out}
 {meta: artist Carl Smith}
-{meta: writer Billy Starr}
+{meta: composer Billy Starr}
 
 {start_of_verse: Verse 1}
 [C]Yes I [G]know that my baby's been stepping out used to be my [C]darling

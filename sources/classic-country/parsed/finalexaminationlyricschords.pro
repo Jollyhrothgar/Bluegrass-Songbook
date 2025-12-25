@@ -1,6 +1,6 @@
 {meta: title Final Examination}
 {meta: artist Don Gibson}
-{meta: writer Red Lane and Dottie West}
+{meta: composer Red Lane and Dottie West}
 
 {start_of_verse: Verse 1}
 [G7]Here we sit with the [C]love

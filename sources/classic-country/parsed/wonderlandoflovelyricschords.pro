@@ -1,6 +1,6 @@
 {meta: title Wonderland Of Love}
 {meta: artist George Strait}
-{meta: writer Curtis Wayne}
+{meta: composer Curtis Wayne}
 
 {start_of_verse: Verse 1}
 [C]What kind of world would it [F]be for [C]you without me

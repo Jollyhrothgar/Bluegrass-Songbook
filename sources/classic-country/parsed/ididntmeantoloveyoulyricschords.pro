@@ -1,6 +1,6 @@
 {meta: title I Didn't Mean To Love You}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Red Lane}
+{meta: composer Merle Haggard and Red Lane}
 
 {start_of_verse: Verse 1}
 [C]I didn't mean to [F]miss you but I [C]do

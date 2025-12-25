@@ -1,6 +1,6 @@
 {meta: title The Beginning Of The End}
 {meta: artist Mickey Gilley}
-{meta: writer Gary Tolbert Nicholson and Charles Victor Rains}
+{meta: composer Gary Tolbert Nicholson and Charles Victor Rains}
 
 {start_of_verse: Verse 1}
 [G]I thought when we [G7]said goodbye [C]you and I were through

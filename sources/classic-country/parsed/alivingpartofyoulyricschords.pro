@@ -1,6 +1,6 @@
 {meta: title A Living Part of You}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]On my k[E7]nees where o[Am]nly You can h[D7]ear

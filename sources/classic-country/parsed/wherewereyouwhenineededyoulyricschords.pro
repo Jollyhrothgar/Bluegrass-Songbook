@@ -1,6 +1,6 @@
 {meta: title Where Were You When I Needed You}
 {meta: artist Jimmy Dean}
-{meta: writer Marvin Moore and Bernie Wayne}
+{meta: composer Marvin Moore and Bernie Wayne}
 
 {start_of_verse: Verse 1}
 [F]Where were you when I needed [C]you

@@ -1,6 +1,6 @@
 {meta: title Some Memories Just Won't Die}
 {meta: artist Marty Robbins}
-{meta: writer Bobby Springfield}
+{meta: composer Bobby Springfield}
 
 {start_of_verse: Verse 1}
 [C]You say it's [F]over  [G7]you say it’s [C]through  

@@ -1,6 +1,6 @@
 {meta: title Street Where The Lonely Walk}
 {meta: artist Connie Smith}
-{meta: writer Gladness Jennings}
+{meta: composer Gladness Jennings}
 
 {start_of_verse: Verse 1}
 [G]The street where the [Em]lonely walk is [C]calling to [G]me

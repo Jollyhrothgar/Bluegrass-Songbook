@@ -1,6 +1,6 @@
 {meta: title My Man}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill, Norro Wilson, Carmol Taylor}
+{meta: composer Billy Sherrill, Norro Wilson, Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [G]My man understands he [Em]holds me in the [G]palm of his hand

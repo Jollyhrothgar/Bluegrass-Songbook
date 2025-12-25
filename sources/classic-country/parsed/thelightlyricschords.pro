@@ -1,6 +1,6 @@
 {meta: title The Light}
 {meta: artist Emmylou Harris}
-{meta: writer Kieran Kane and Emmylou Harris}
+{meta: composer Kieran Kane and Emmylou Harris}
 
 {start_of_verse: Verse 1}
 [Am]I see the light I see the light at the end of the tunnel

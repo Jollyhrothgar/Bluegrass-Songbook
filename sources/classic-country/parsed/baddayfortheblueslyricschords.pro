@@ -1,6 +1,6 @@
 {meta: title Bad Day For The Blues}
 {meta: artist David Ball}
-{meta: writer David Ball and Tommy Polk}
+{meta: composer David Ball and Tommy Polk}
 
 {start_of_verse: Verse 1}
 [G]The sun is comin’ up its a [C]brand new day

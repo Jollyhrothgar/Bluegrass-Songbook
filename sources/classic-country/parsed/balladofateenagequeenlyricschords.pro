@@ -1,6 +1,6 @@
 {meta: title Ballad Of A Teenage Queen}
 {meta: artist Johnny Cash}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]Dream on Dream on [F]teenage [C]queen

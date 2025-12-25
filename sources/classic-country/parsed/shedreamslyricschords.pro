@@ -1,6 +1,6 @@
 {meta: title She Dreams}
 {meta: artist Mark Chesnutt}
-{meta: writer Gary Harrison and Tim Mensy}
+{meta: composer Gary Harrison and Tim Mensy}
 
 {start_of_verse: Verse 1}
 [G]Thirty years [D7]today she's [G]been upon this [D7]earth

@@ -1,6 +1,6 @@
 {meta: title When A Soldier Knocks And Finds Nobody Home}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb, Moon Mullican, Lou Wayne}
+{meta: composer Ernest Tubb, Moon Mullican, Lou Wayne}
 
 {start_of_verse: Verse 1}
 [C]I’m alone with all my sorrow

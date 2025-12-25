@@ -1,6 +1,6 @@
 {meta: title My First Day Without You}
 {meta: artist Wanda Jackson}
-{meta: writer Charlie Williams and Scott Turner}
+{meta: composer Charlie Williams and Scott Turner}
 
 {start_of_verse: Verse 1}
 [G]Getting up was the first mistake I [D7]made today

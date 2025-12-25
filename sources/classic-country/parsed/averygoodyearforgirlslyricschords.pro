@@ -1,6 +1,6 @@
 {meta: title A Very Good Year For Girls}
 {meta: artist Johnny Tillotson}
-{meta: writer Fred Tobias and Clint Ballard}
+{meta: composer Fred Tobias and Clint Ballard}
 
 {start_of_verse: Verse 1}
 [C](It was a very very very good for girls

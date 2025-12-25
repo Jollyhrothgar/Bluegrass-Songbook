@@ -1,6 +1,6 @@
 {meta: title Carolina Dreams}
 {meta: artist Ronnie Milsap}
-{meta: writer Kye Fleming, Dennis Morgan, Marie Tomlinson}
+{meta: composer Kye Fleming, Dennis Morgan, Marie Tomlinson}
 
 {start_of_verse: Verse 1}
 [C]I can smell the pines sweet Carolina's on my [A#7]mind

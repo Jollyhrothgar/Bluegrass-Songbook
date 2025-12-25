@@ -1,6 +1,6 @@
 {meta: title I Turn To You}
 {meta: artist George Jones}
-{meta: writer Max Barnes and Curly Putman}
+{meta: composer Max Barnes and Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]Rivers turn to oceans  and flow on to the [F]sea

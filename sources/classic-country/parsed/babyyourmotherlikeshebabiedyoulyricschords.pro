@@ -1,6 +1,6 @@
 {meta: title Baby Your Mother (Like She Babied You)}
 {meta: artist Ernest Tubb}
-{meta: writer Dolly Morse and Joe Burke}
+{meta: composer Dolly Morse and Joe Burke}
 
 {start_of_verse: Verse 1}
 [C]Baby your mother [G7]like she babied you

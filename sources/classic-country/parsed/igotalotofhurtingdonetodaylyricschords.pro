@@ -1,6 +1,6 @@
 {meta: title I Got A Lot Of Hurting Done Today}
 {meta: artist Connie Smith}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Today I read the phone book and I memorized some [G7]lines

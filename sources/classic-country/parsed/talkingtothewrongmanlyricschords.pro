@@ -1,6 +1,6 @@
 {meta: title Talking To the Wrong Man}
 {meta: artist Michael Martin Murphey}
-{meta: writer Michael Martin Murphey}
+{meta: composer Michael Martin Murphey}
 
 {start_of_verse: Verse 1}
 [C]Hey daddy I've got a [F]problem

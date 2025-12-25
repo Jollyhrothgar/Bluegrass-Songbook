@@ -1,6 +1,6 @@
 {meta: title Call Him Me}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Jimmy Dickens and Skip Graves}
+{meta: composer Jimmy Dickens and Skip Graves}
 
 {start_of_verse: Verse 1}
 [G]If you ever get to feeling that you [G7]want me back again

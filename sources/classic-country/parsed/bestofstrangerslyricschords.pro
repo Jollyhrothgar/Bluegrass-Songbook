@@ -1,6 +1,6 @@
 {meta: title Best Of Strangers}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson and Buddy Killen}
+{meta: composer Bill Anderson and Buddy Killen}
 
 {start_of_verse: Verse 1}
 [G7]Love is full of happiness but love [F]is full of [C]dangers

@@ -1,6 +1,6 @@
 {meta: title Born To Be Happy}
 {meta: artist Hank Snow}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [G]Born to be happy but [G7]always so [C]sad

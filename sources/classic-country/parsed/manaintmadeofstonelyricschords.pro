@@ -1,6 +1,6 @@
 {meta: title Man Ain't Made Of Stone}
 {meta: artist Randy Travis}
-{meta: writer Gary Burr, Robin Lerner, Franne Golde}
+{meta: composer Gary Burr, Robin Lerner, Franne Golde}
 
 {start_of_verse: Verse 1}
 [G]I was supposed to be the rock that you could [Am]stand on

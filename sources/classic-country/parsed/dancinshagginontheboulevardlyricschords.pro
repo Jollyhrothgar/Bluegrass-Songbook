@@ -1,6 +1,6 @@
 {meta: title Dancin' Shaggin' on the Boulevard}
 {meta: artist Alabama}
-{meta: writer Greg Fowler, Theodore Gentry, Randy Owen}
+{meta: composer Greg Fowler, Theodore Gentry, Randy Owen}
 
 {start_of_verse: Verse 1}
 [G]Well the Magic Attic's where the [C]music rolls

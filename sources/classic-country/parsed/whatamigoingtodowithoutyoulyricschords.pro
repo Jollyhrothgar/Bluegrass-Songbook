@@ -1,6 +1,6 @@
 {meta: title What Am I Going To Do Without You}
 {meta: artist Ray Price}
-{meta: writer Larry Bastian}
+{meta: composer Larry Bastian}
 
 {start_of_verse: Verse 1}
 [C]The lawyer spoke our minds today

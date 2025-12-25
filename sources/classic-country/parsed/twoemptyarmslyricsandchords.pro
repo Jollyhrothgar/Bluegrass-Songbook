@@ -1,6 +1,6 @@
 {meta: title Two Empty Arms}
 {meta: artist Charlie Walker}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]The one that I love just [D7]walked right out on me

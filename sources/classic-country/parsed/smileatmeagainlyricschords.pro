@@ -1,6 +1,6 @@
 {meta: title Smile At Me Again}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson and Stephen Bruton}
+{meta: composer Kris Kristofferson and Stephen Bruton}
 
 {start_of_verse: Verse 1}
 [G]Monday caught me [D7]early comin' [C]down by sur[G]prise

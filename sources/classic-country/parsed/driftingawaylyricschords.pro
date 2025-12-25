@@ -1,6 +1,6 @@
 {meta: title Drifting Away}
 {meta: artist Roy Orbison}
-{meta: writer Bill Dees and Roy Orbison}
+{meta: composer Bill Dees and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [F]Sadness slips in[C]to the room

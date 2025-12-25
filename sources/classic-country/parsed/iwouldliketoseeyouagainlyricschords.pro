@@ -1,6 +1,6 @@
 {meta: title I Would Like To See You Again}
 {meta: artist Kenny Rogers}
-{meta: writer Charlie Craig and Larry Atwood}
+{meta: composer Charlie Craig and Larry Atwood}
 
 {start_of_verse: Verse 1}
 [C]I was sitting here thinking [F]about some old [C]times

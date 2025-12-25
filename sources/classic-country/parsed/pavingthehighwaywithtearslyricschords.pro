@@ -1,6 +1,6 @@
 {meta: title Paving The Highway With Tears}
 {meta: artist Hank Snow}
-{meta: writer Ed G. Nelson and Steve Nelson}
+{meta: composer Ed G. Nelson and Steve Nelson}
 
 {start_of_verse: Verse 1}
 [G]I'm travelin' down a [D7]lonesome road of [G]sorrow

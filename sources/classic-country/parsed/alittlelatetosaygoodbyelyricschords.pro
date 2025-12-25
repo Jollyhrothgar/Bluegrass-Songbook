@@ -1,6 +1,6 @@
 {meta: title A Little Late To Say Goodbye}
 {meta: artist The Oak Ridge Boys}
-{meta: writer John Schweers and Roger Alan Murrah}
+{meta: composer John Schweers and Roger Alan Murrah}
 
 {start_of_verse: Verse 1}
 [C]If your mind is set on leaving

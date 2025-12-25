@@ -1,6 +1,6 @@
 {meta: title Call Me The Breeze}
 {meta: artist David Allan Coe}
-{meta: writer John J. Cale}
+{meta: composer John J. Cale}
 
 {start_of_verse: Verse 1}
 [G]They call me the breeze I keep blowin' down the road

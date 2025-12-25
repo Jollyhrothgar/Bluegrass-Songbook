@@ -1,6 +1,6 @@
 {meta: title You're Heavy On My Mind Today}
 {meta: artist Jack Greene}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]You're heavy on my mind today [G7]

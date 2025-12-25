@@ -1,6 +1,6 @@
 {meta: title I need your love Tonight}
 {meta: artist Elvis Presley}
-{meta: writer Sid Wayne and Bix Reichner}
+{meta: composer Sid Wayne and Bix Reichner}
 
 {start_of_verse: Verse 1}
 [C]Oh oh I [G7]love you so uh uh can't let you [C]go

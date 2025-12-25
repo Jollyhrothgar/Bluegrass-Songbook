@@ -1,6 +1,6 @@
 {meta: title She's An Angel}
 {meta: artist Moe Bandy}
-{meta: writer Harlan Howard and Lola Jean Dillon}
+{meta: composer Harlan Howard and Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [C]That's not really her she's not herself [F]tonight

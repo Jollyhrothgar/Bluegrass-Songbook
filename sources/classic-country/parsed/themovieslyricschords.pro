@@ -1,6 +1,6 @@
 {meta: title The Movies}
 {meta: artist Statler Brothers}
-{meta: writer Lew DeWitt}
+{meta: composer Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [C]There's lots of things in this old world [E7]fancy cars and pretty girls

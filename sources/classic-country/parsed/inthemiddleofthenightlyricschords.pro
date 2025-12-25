@@ -1,6 +1,6 @@
 {meta: title In The Middle Of The Night}
 {meta: artist Mel Tillis}
-{meta: writer Bob Corbin}
+{meta: composer Bob Corbin}
 
 {start_of_verse: Verse 1}
 [C]Maybe I’m crazy I don’t know

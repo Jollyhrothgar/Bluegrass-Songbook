@@ -1,6 +1,6 @@
 {meta: title Tonight We Steal Heaven Again}
 {meta: artist Johnny Bush}
-{meta: writer Buzz Rabin and James Johnson}
+{meta: composer Buzz Rabin and James Johnson}
 
 {start_of_verse: Verse 1}
 [C]Tonight we steal [D7]heaven [G]again[C]

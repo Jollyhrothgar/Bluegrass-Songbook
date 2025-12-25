@@ -1,6 +1,6 @@
 {meta: title Darling Days}
 {meta: artist Billy Walker}
-{meta: writer Dallas Frazier/Sanger D. Shafer}
+{meta: composer Dallas Frazier/Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]If I never love [F]again I won't feel [C]cheated

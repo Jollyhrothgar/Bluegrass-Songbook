@@ -1,6 +1,6 @@
 {meta: title Bye Baby Bye Bye}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino}
+{meta: composer Antonio Domino}
 
 {start_of_verse: Verse 1}
 [D7]Bye [G]bye bye [D7]baby baby bye [G]bye

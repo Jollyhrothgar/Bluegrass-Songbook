@@ -1,6 +1,6 @@
 {meta: title I Don't Want Your Money}
 {meta: artist Kitty Wells}
-{meta: writer Lee Washington}
+{meta: composer Lee Washington}
 
 {start_of_verse: Verse 1}
 [C]I don't want your money honey 

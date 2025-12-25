@@ -1,6 +1,6 @@
 {meta: title Teach Me The Words To Your Song}
 {meta: artist Tanya Tucker}
-{meta: writer Rory Bourke and Gayle Barnhill}
+{meta: composer Rory Bourke and Gayle Barnhill}
 
 {start_of_verse: Verse 1}
 [C]I hope it's [Am]all that I'd found

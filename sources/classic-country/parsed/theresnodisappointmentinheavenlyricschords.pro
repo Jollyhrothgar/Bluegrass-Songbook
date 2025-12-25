@@ -1,6 +1,6 @@
 {meta: title There’s No Disappointment In Heaven}
 {meta: artist Bob Wills}
-{meta: writer Frederick M. Lehman}
+{meta: composer Frederick M. Lehman}
 
 {start_of_verse: Verse 1}
 [C]There’s no [G7]disappointment in [C]Heaven

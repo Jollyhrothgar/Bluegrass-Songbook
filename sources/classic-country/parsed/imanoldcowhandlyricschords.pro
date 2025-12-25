@@ -1,6 +1,6 @@
 {meta: title I'm an Old Cowhand}
 {meta: artist Sons Of Pioneers}
-{meta: writer Johnny Mercer}
+{meta: composer Johnny Mercer}
 
 {start_of_verse: Verse 1}
 [C]Yipee-yi-[F]o-kie-[C]yay   yipee-yi-[F]o-kie-[C]yay

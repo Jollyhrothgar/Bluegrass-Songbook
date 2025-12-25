@@ -1,6 +1,6 @@
 {meta: title She's Gone Gone Gone}
 {meta: artist Lefty Frizzel}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]She said if I ever deceived [C]her

@@ -1,6 +1,6 @@
 {meta: title Don't Bury Me Till I'm Ready}
 {meta: artist Johnny Paycheck}
-{meta: writer John Moffat}
+{meta: composer John Moffat}
 
 {start_of_verse: Verse 1}
 [G]Don't bury [D7]me till I'm [G]ready

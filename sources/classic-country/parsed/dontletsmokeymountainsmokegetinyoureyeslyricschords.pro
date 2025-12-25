@@ -1,6 +1,6 @@
 {meta: title Don't Let Smokey Mountain Smoke Get In Your Eyes}
 {meta: artist The Osborne Brothers}
-{meta: writer Cecil Allen Null}
+{meta: composer Cecil Allen Null}
 
 {start_of_verse: Verse 1}
 [C]Don't let Smokey mountain [F]smoke get in your [C]eyes

@@ -1,6 +1,6 @@
 {meta: title Land Of Heaven}
 {meta: artist Wilburn Brothers}
-{meta: writer Jodi Baneino and Eillen Maultsby}
+{meta: composer Jodi Baneino and Eillen Maultsby}
 
 {start_of_verse: Verse 1}
 [C]The land of [F]heaven sweet land of [C]heaven

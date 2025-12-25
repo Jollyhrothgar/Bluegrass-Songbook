@@ -1,6 +1,6 @@
 {meta: title Instant Loneliness}
 {meta: artist Charlie Pride}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [C]My watch says three A.M. I know she's waiting up again

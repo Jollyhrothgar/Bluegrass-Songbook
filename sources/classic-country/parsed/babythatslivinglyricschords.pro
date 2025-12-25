@@ -1,6 +1,6 @@
 {meta: title Baby That's Living}
 {meta: artist Eddy Arnold}
-{meta: writer Jean Chapel}
+{meta: composer Jean Chapel}
 
 {start_of_verse: Verse 1}
 [C]I used to cry and then I forgot how and that's [G7]living

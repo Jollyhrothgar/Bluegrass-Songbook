@@ -1,6 +1,6 @@
 {meta: title Reminiscing}
 {meta: artist Buddy Holly}
-{meta: writer King Curtis}
+{meta: composer King Curtis}
 
 {start_of_verse: Verse 1}
 [C]I'm just sittin' here reminiscin'

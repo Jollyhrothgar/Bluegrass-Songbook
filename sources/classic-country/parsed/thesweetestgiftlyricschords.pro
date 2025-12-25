@@ -1,6 +1,6 @@
 {meta: title The Sweetest Gift}
 {meta: artist Emmylou Harris and Linda Ronstadt}
-{meta: writer James B. Coats}
+{meta: composer James B. Coats}
 
 {start_of_verse: Verse 1}
 [C]One day a mother came to a prison

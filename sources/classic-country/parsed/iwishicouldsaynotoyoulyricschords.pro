@@ -1,6 +1,6 @@
 {meta: title I Wish I Could Say No To You}
 {meta: artist Cal Smith}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [C]I should have known from the start you [C7]would cause me to [F]grieve

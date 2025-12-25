@@ -1,6 +1,6 @@
 {meta: title Kneel At The Cross}
 {meta: artist Stonewall Jackson}
-{meta: writer Charles E. Moody}
+{meta: composer Charles E. Moody}
 
 {start_of_verse: Verse 1}
 [G]Kneel at the cross Christ will meet you there

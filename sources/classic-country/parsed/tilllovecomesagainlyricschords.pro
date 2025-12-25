@@ -1,6 +1,6 @@
 {meta: title Till Love Comes Again}
 {meta: artist Reba McEntire}
-{meta: writer Bob Regan and Ed Hill}
+{meta: composer Bob Regan and Ed Hill}
 
 {start_of_verse: Verse 1}
 [Bm]White [E7]light [A7]shadows [Am]gather [D7]round my [G]door

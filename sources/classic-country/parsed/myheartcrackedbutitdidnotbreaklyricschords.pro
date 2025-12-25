@@ -1,6 +1,6 @@
 {meta: title My Heart Cracked (But It Did Not Break)}
 {meta: artist Randy Travis}
-{meta: writer Ronny Scaife, Phil Thomas, Don Singleton}
+{meta: composer Ronny Scaife, Phil Thomas, Don Singleton}
 
 {start_of_verse: Verse 1}
 [G7]You're spreadin' [C]lies all over [F]town

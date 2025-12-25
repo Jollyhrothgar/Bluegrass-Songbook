@@ -1,6 +1,6 @@
 {meta: title I'm A Nut}
 {meta: artist Roger Miller}
-{meta: writer Leroy Pullins}
+{meta: composer Leroy Pullins}
 
 {start_of_verse: Verse 1}
 [C]Ba ba bi bi ba bi di ba di bom

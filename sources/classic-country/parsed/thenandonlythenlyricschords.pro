@@ -1,6 +1,6 @@
 {meta: title Then And Only Then}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]In your haste you left and said you'd be returning

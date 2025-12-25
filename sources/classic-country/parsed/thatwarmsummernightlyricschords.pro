@@ -1,6 +1,6 @@
 {meta: title That Warm Summer Night}
 {meta: artist Ricky Nelson}
-{meta: writer Jerry Fuller, William Claude Silva}
+{meta: composer Jerry Fuller, William Claude Silva}
 
 {start_of_verse: Verse 1}
 [G7]The April [C]walk through fields and [G7]farms

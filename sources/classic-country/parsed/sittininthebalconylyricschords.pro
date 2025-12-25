@@ -1,6 +1,6 @@
 {meta: title Sittin' In The Balcony}
 {meta: artist Eddie Cochran}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G]I'm just a sittin' in the [D7]balcony just a watching the [G]movie

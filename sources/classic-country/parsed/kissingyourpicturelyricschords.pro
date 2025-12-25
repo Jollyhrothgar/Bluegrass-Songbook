@@ -1,6 +1,6 @@
 {meta: title Kissing Your Picture}
 {meta: artist Ray Price}
-{meta: writer Mel Tillis, Wayne P. Walker, Ray Price}
+{meta: composer Mel Tillis, Wayne P. Walker, Ray Price}
 
 {start_of_verse: Verse 1}
 [G]Kissing your picture is so [D7]cold

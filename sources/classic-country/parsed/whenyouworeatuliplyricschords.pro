@@ -1,6 +1,6 @@
 {meta: title When You Wore A Tulip}
 {meta: artist Slim Whitman}
-{meta: writer Jack Mahoney and Percy Wenrich}
+{meta: composer Jack Mahoney and Percy Wenrich}
 
 {start_of_verse: Verse 1}
 [C]When you wore a tulip

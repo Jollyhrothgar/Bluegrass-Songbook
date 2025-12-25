@@ -1,6 +1,6 @@
 {meta: title You Snap Your Fingers (And I'm Back In Your Hands)}
 {meta: artist Ronnie Milsap}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]I cried a river [F]washing your memory [C]away

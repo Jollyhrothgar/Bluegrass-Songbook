@@ -1,6 +1,6 @@
 {meta: title Forever Is Ending Today}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb, Ike Cargill, Johnny Bond}
+{meta: composer Ernest Tubb, Ike Cargill, Johnny Bond}
 
 {start_of_verse: Verse 1}
 [G]You [D7]said that [G]you would mine dear [D7]forever

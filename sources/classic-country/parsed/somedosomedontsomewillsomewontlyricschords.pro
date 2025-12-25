@@ -1,6 +1,6 @@
 {meta: title Some Do Some Don't Some Will Some Won't}
 {meta: artist Freddie Hart}
-{meta: writer Freddie Hart and Abe Mulkey}
+{meta: composer Freddie Hart and Abe Mulkey}
 
 {start_of_verse: Verse 1}
 [C]There's a lot of different people living in this [F]world

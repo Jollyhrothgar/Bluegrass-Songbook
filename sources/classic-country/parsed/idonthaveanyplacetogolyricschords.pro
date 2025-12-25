@@ -1,6 +1,6 @@
 {meta: title I Don't Have Anyplace To Go}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]You told me late last [F]night you wish I'd [C]leave you

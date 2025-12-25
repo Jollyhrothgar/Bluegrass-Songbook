@@ -1,6 +1,6 @@
 {meta: title Let's Try Again}
 {meta: artist Janie Fricke}
-{meta: writer Danny Steagall}
+{meta: composer Danny Steagall}
 
 {start_of_verse: Verse 1}
 [C]You don't want to be alone [F]you say you're always [Dm]blue

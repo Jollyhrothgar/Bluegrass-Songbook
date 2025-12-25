@@ -1,6 +1,6 @@
 {meta: title Look Behind You}
 {meta: artist Jim Reeves}
-{meta: writer Jim Reeves and Harlan Howard}
+{meta: composer Jim Reeves and Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]If you ever change your [F]mind

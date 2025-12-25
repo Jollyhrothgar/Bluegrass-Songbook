@@ -1,6 +1,6 @@
 {meta: title You And You Alone}
 {meta: artist Randy Travis}
-{meta: writer Tim Ryan, Leslie Satcher, Melba Montgomery}
+{meta: composer Tim Ryan, Leslie Satcher, Melba Montgomery}
 
 {start_of_verse: Verse 1}
 [C]When this old world gets me [F]down

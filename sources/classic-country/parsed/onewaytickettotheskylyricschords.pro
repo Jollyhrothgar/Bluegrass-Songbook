@@ -1,6 +1,6 @@
 {meta: title One Way Ticket To The Sky}
 {meta: artist Kitty Wells}
-{meta: writer Johnnie & Walter Bailes}
+{meta: composer Johnnie & Walter Bailes}
 
 {start_of_verse: Verse 1}
 [G]I've got my one way [D7]ticket to the [G]sky 

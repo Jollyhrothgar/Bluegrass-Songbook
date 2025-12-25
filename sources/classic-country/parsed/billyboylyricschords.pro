@@ -1,6 +1,6 @@
 {meta: title Billy Boy}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Huey Piano Smith and Jerry Lee Lewis}
+{meta: composer Huey Piano Smith and Jerry Lee Lewis}
 
 {start_of_verse: Verse 1}
 [C]Can you really rock and roll Billy Boy Billy Boy

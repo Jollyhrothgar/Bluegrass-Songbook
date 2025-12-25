@@ -1,6 +1,6 @@
 {meta: title Shake Me I Rattle}
 {meta: artist Marion Worth}
-{meta: writer Hal Hackady and Charles Naylor}
+{meta: composer Hal Hackady and Charles Naylor}
 
 {start_of_verse: Verse 1}
 [C]Shake me I [C7]rattle [F]squeeze me I [Dm]cry

@@ -1,6 +1,6 @@
 {meta: title Talk It All Over With Him}
 {meta: artist J.D. Crowe}
-{meta: writer John Neal}
+{meta: composer John Neal}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna sit down and rest gently [C]lean on His [G]breast

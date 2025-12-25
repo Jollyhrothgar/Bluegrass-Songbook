@@ -1,6 +1,6 @@
 {meta: title Good Hearted Woman}
 {meta: artist Waylon Jennings}
-{meta: writer Waylon Jennings and Willie Nelson}
+{meta: composer Waylon Jennings and Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]A long time forgotten are dreams that just [C7]fell by the [F]way

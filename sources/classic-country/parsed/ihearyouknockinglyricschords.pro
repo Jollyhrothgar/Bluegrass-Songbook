@@ -1,6 +1,6 @@
 {meta: title I Hear You Knocking}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Pearl King}
+{meta: composer Dave Bartholomew and Pearl King}
 
 {start_of_verse: Verse 1}
 [C]You went away and left me a long time ago

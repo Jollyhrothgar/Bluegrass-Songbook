@@ -1,6 +1,6 @@
 {meta: title Funny Familiar Forgotten Feelings}
 {meta: artist Don Gibson}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [G]And then those funny [B7]familiar [Em]forgotten [A7]feelings

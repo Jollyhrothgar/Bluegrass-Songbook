@@ -1,6 +1,6 @@
 {meta: title Blossoms In The Springtime}
 {meta: artist Hank Snow}
-{meta: writer Vaughn Horton}
+{meta: composer Vaughn Horton}
 
 {start_of_verse: Verse 1}
 [G]When I see blossoms in the [D7]springtime

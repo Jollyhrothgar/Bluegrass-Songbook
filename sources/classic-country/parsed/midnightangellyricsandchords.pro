@@ -1,6 +1,6 @@
 {meta: title Midnight Angel}
 {meta: artist Barbara Mandrell}
-{meta: writer Bill Anthony and Robert E. Morrison}
+{meta: composer Bill Anthony and Robert E. Morrison}
 
 {start_of_verse: Verse 1}
 [C]There's a place in every bar room

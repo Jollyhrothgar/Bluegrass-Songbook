@@ -1,6 +1,6 @@
 {meta: title What Are We Doin’ Lonesome}
 {meta: artist Gatlin Brothers}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 [C]We both look like grownups to [F]me

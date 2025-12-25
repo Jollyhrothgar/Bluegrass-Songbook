@@ -1,6 +1,6 @@
 {meta: title What Are We Gonna Do About Me}
 {meta: artist Vern Gosdin}
-{meta: writer Vern Gosdin and John Northrup}
+{meta: composer Vern Gosdin and John Northrup}
 
 {start_of_verse: Verse 1}
 [C]There we were  it was a cold and bitter [F]night

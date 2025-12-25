@@ -1,6 +1,6 @@
 {meta: title Gonna Have Love}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Red Simpson}
+{meta: composer Buck Owens and Red Simpson}
 
 {start_of_verse: Verse 1}
 [G]My baby called me  [C]just [G]today 

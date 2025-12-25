@@ -1,6 +1,6 @@
 {meta: title My Heart Keeps Telling Me}
 {meta: artist George Morgan}
-{meta: writer Earl Nunn and Beasley Smith}
+{meta: composer Earl Nunn and Beasley Smith}
 
 {start_of_verse: Verse 1}
 [C]My heart keeps telling me you'll [F]always be the [C]same

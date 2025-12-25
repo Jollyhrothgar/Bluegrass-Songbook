@@ -1,6 +1,6 @@
 {meta: title Baby It's So Hard To Be Good}
 {meta: artist Ernest Tubb}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I make a promise a [F]day to my [C]baby I break the [F]promise a day some[C]how

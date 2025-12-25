@@ -1,6 +1,6 @@
 {meta: title You Gotta Have Love}
 {meta: artist Eddy Arnold}
-{meta: writer Gene Nash and Chet Atkins}
+{meta: composer Gene Nash and Chet Atkins}
 
 {start_of_verse: Verse 1}
 [C]Buy your[G7]self a [C]cottage with a picket [G7]fence [C]around

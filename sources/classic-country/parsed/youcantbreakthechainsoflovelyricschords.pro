@@ -1,6 +1,6 @@
 {meta: title You Can't Break The Chains Of Love}
 {meta: artist Jean Shepard}
-{meta: writer Jimmy Wakely, Lew Porter, Franklin Tableporter}
+{meta: composer Jimmy Wakely, Lew Porter, Franklin Tableporter}
 
 {start_of_verse: Verse 1}
 [C]Though we're apart you'll [F]always have my [C]heart

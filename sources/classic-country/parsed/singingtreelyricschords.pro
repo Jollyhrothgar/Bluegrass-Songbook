@@ -1,6 +1,6 @@
 {meta: title Singing Tree}
 {meta: artist Elvis Presley}
-{meta: writer Arthur Leo Owens and A.C. Solberg}
+{meta: composer Arthur Leo Owens and A.C. Solberg}
 
 {start_of_verse: Verse 1}
 [C]You're the one who beckoned the [G7]wind

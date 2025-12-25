@@ -1,6 +1,6 @@
 {meta: title Gone Gone Gone}
 {meta: artist The Everly Brothers}
-{meta: writer Don Everly and Phil Everly}
+{meta: composer Don Everly and Phil Everly}
 
 {start_of_verse: Verse 1}
 [C]Some sunny day baby when everything seems ok baby

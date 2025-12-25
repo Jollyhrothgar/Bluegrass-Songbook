@@ -1,6 +1,6 @@
 {meta: title To My Mansion In The Sky}
 {meta: artist Ricky Van Shelton}
-{meta: writer Jimmie Davis}
+{meta: composer Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [G]This plane I’m riding they say it’s leaving

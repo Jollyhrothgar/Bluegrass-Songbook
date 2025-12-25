@@ -1,6 +1,6 @@
 {meta: title After Effects From Loving You}
 {meta: artist Ray Price}
-{meta: writer Hank Mills}
+{meta: composer Hank Mills}
 
 {start_of_verse: Verse 1}
 [G]Nights are longer when you're blue and all [C]alone

@@ -1,6 +1,6 @@
 {meta: title Give Me More More More Of Your Kisses}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Ray Price}
+{meta: composer Lefty Frizzell and Ray Price}
 
 {start_of_verse: Verse 1}
 [C]When my gal and I go on a [G7]date

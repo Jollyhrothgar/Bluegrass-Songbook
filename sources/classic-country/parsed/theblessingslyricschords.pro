@@ -1,6 +1,6 @@
 {meta: title The Blessings}
 {meta: artist Alabama}
-{meta: writer Russel G. Fowler, Teddy Gentry,}
+{meta: composer Russel G. Fowler, Teddy Gentry,}
 
 {start_of_verse: Verse 1}
 [D7]I stand here lookin' [G]up at the stars tonight

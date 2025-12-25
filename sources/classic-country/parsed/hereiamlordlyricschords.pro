@@ -1,6 +1,6 @@
 {meta: title Here I Am Lord}
 {meta: artist Daniel O'Donnell}
-{meta: writer Daniel Schutte}
+{meta: composer Daniel Schutte}
 
 {start_of_verse: Verse 1}
 [G]I the Lord of [C]sea and [G]sky

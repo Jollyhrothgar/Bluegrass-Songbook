@@ -1,6 +1,6 @@
 {meta: title I Can’t Unlove You}
 {meta: artist Kenny Rogers}
-{meta: writer Wade Allen Kirby and Will Robinson}
+{meta: composer Wade Allen Kirby and Will Robinson}
 
 {start_of_verse: Verse 1}
 [G]Postcards and [D7]letters

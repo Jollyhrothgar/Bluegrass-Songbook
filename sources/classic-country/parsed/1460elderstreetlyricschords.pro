@@ -1,6 +1,6 @@
 {meta: title 1460 Elder Street}
 {meta: artist Red Sovine}
-{meta: writer Bun Wilson and Doc Richardson}
+{meta: composer Bun Wilson and Doc Richardson}
 
 {start_of_verse: Verse 1}
 [C]I was waiting for a [F]ship to [C]Vietnam

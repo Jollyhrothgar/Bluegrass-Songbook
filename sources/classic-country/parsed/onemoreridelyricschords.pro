@@ -1,6 +1,6 @@
 {meta: title One More Ride}
 {meta: artist Hank Snow}
-{meta: writer Bob Nolan}
+{meta: composer Bob Nolan}
 
 {start_of_verse: Verse 1}
 [G]One  [D7]more  [G]ride

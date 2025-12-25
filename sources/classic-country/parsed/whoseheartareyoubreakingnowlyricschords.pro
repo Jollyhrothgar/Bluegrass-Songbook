@@ -1,6 +1,6 @@
 {meta: title Whose Heart are You Breaking Now}
 {meta: artist Ray Price}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]I was the one that you fooled [D7]yesterday 

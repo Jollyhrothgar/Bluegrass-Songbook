@@ -1,6 +1,6 @@
 {meta: title Wrong Side Of The World}
 {meta: artist Johnny Bush}
-{meta: writer Eddie Rager and Jody Atkins}
+{meta: composer Eddie Rager and Jody Atkins}
 
 {start_of_verse: Verse 1}
 [G]She dances to [C]close to the boys [D7]downtown

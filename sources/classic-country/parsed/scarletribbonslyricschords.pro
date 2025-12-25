@@ -1,6 +1,6 @@
 {meta: title Scarlet Ribbons}
 {meta: artist Jim Ed Brown}
-{meta: writer Jack Segal and Evelyn Danzig}
+{meta: composer Jack Segal and Evelyn Danzig}
 
 {start_of_verse: Verse 1}
 [G]I peeked [C]in to [D7]say good [G]night 

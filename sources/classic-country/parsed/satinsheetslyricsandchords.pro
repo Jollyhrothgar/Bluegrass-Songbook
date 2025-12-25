@@ -1,6 +1,6 @@
 {meta: title Satin Sheets}
 {meta: artist The Bellamy Brothers}
-{meta: writer Willis Allan Ramsey}
+{meta: composer Willis Allan Ramsey}
 
 {start_of_verse: Verse 1}
 [G]I wish I was a millionaire  I'd [D7]play rock music and grow long hair

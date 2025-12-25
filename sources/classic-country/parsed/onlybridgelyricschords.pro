@@ -1,6 +1,6 @@
 {meta: title Only Bridge}
 {meta: artist Ray Price}
-{meta: writer Jeffrey Tweel and Garland Cochran}
+{meta: composer Jeffrey Tweel and Garland Cochran}
 
 {start_of_verse: Verse 1}
 [G]You've always put the torch to every [C]bridge you crossed

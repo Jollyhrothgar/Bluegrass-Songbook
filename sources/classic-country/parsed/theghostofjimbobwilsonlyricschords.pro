@@ -1,6 +1,6 @@
 {meta: title The Ghost Of Jim Bob Wilson}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [G]Jim Bob Wilson passed away in [C]192[G]8

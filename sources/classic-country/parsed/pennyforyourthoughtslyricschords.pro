@@ -1,6 +1,6 @@
 {meta: title Penny For Your Thoughts}
 {meta: artist Jim Reeves}
-{meta: writer Jenny Lou Carson}
+{meta: composer Jenny Lou Carson}
 
 {start_of_verse: Verse 1}
 [G]Memories are haunting you and they're [C]making you feel [G]blue

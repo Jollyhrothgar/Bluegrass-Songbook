@@ -1,6 +1,6 @@
 {meta: title Jesus Hears He Cares He Can}
 {meta: artist Connie Smith}
-{meta: writer Ray Lewis}
+{meta: composer Ray Lewis}
 
 {start_of_verse: Verse 1}
 [G]When angry waves toss your ship on this stormy sea of [D7]life

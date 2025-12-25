@@ -1,6 +1,6 @@
 {meta: title Seasons Come Seasons Go}
 {meta: artist Faron Young}
-{meta: writer Bobby Gentry}
+{meta: composer Bobby Gentry}
 
 {start_of_verse: Verse 1}
 [C]The seasons come the [G7]seasons [C]go

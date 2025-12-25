@@ -1,6 +1,6 @@
 {meta: title Almost Persuaded}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Last night all alone in [C7]a [F]barroom 

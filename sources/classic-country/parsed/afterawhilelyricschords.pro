@@ -1,6 +1,6 @@
 {meta: title After Awhile}
 {meta: artist Jim Reeves}
-{meta: writer Martha High and Bob Montgomery}
+{meta: composer Martha High and Bob Montgomery}
 
 {start_of_verse: Verse 1}
 [G]Af-ter [D7]awhile af-ter a[G]while 

@@ -1,6 +1,6 @@
 {meta: title He Had It On His Mind}
 {meta: artist Roy Drusky}
-{meta: writer Vic McAlpin and Roy Drusky}
+{meta: composer Vic McAlpin and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [G7](All the time he had it on his [C]mind)

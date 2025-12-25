@@ -1,6 +1,6 @@
 {meta: title Who You Think You're Fooling}
 {meta: artist Hank Locklin}
-{meta: writer Polly White and Hank Locklin}
+{meta: composer Polly White and Hank Locklin}
 
 {start_of_verse: Verse 1}
 [C]Who you think you’re fooling with your dog[G7]gone lies

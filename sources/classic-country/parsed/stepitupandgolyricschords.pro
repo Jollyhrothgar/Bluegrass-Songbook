@@ -1,6 +1,6 @@
 {meta: title Step It Up And Go}
 {meta: artist The Everly Brothers}
-{meta: writer Jimmy Howard}
+{meta: composer Jimmy Howard}
 
 {start_of_verse: Verse 1}
 [C]Nickel is a nickel dime is dime

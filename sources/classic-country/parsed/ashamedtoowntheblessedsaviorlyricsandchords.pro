@@ -1,6 +1,6 @@
 {meta: title Ashamed To Own The Blessed Savior}
 {meta: artist Carl and Pearl Butler}
-{meta: writer Johnnie Bailes and Walter Bailes}
+{meta: composer Johnnie Bailes and Walter Bailes}
 
 {start_of_verse: Verse 1}
 [G]Up[C]on the lonely tree of [G]Calvary

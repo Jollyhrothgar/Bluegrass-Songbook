@@ -1,6 +1,6 @@
 {meta: title King Of Kings}
 {meta: artist Jack Greene}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [C](He's the [G7]King of [C]Kings)

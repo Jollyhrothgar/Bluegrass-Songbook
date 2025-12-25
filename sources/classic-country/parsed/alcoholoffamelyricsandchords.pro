@@ -1,6 +1,6 @@
 {meta: title Alcohol Of Fame}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Buzz Rabin}
+{meta: composer Buzz Rabin}
 
 {start_of_verse: Verse 1}
 [C]Here's to you and here's to me 

@@ -1,6 +1,6 @@
 {meta: title Cherokee Boogie}
 {meta: artist Hank Williams}
-{meta: writer Moon Mullican and Chief William Redbird}
+{meta: composer Moon Mullican and Chief William Redbird}
 
 {start_of_verse: Verse 1}
 [C]Oh a Cherokee Chief as he dances along

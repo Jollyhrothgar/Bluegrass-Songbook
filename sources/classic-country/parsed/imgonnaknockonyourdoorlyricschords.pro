@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Knock On Your Door}
 {meta: artist Billy Crash Craddock}
-{meta: writer Aaron Schroeder and Sid Wayne}
+{meta: composer Aaron Schroeder and Sid Wayne}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna knock on your door ring on your bell 

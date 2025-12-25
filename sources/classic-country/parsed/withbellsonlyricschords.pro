@@ -1,6 +1,6 @@
 {meta: title With Bells On}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]I'll be home with [G7]bells on I'll be home with [C]bells on  

@@ -1,6 +1,6 @@
 {meta: title Just Put A Ribbon In Your Hair}
 {meta: artist Doug Stone}
-{meta: writer Robert Burns and Donald Huber}
+{meta: composer Robert Burns and Donald Huber}
 
 {start_of_verse: Verse 1}
 [C]Bobby wants a ten [G7]speed [Am] English [C]racer

@@ -1,6 +1,6 @@
 {meta: title When The Wind Blows In Chicago}
 {meta: artist Eddy Arnold}
-{meta: writer Scott Turner and Audie Murphy}
+{meta: composer Scott Turner and Audie Murphy}
 
 {start_of_verse: Verse 1}
 [G]Well here here I [D7]am in Chi[G]cago 

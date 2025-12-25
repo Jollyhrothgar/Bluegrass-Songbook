@@ -1,6 +1,6 @@
 {meta: title Boat Of Life}
 {meta: artist George Jones}
-{meta: writer George Jones and Burl Stephens}
+{meta: composer George Jones and Burl Stephens}
 
 {start_of_verse: Verse 1}
 [C]My friend is the going rough with [F]troubled seas [C]around

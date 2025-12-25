@@ -1,6 +1,6 @@
 {meta: title My Wonderful Lord}
 {meta: artist Faron Young}
-{meta: writer Haldor Lilienas}
+{meta: composer Haldor Lilienas}
 
 {start_of_verse: Verse 1}
 [C]I have found a deep [C7]peace that [F]I never had known

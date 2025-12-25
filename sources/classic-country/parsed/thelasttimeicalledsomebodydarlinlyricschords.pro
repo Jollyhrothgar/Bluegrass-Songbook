@@ -1,6 +1,6 @@
 {meta: title The Last Time I Called Somebody Darlin'}
 {meta: artist Roy Drusky}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G]Thinkin' of you wonderin' who 

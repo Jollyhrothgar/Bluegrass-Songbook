@@ -1,6 +1,6 @@
 {meta: title Chicken Truck}
 {meta: artist John Anderson}
-{meta: writer John David Anderson, Monroe Fields, Ervan James Parker}
+{meta: composer John David Anderson, Monroe Fields, Ervan James Parker}
 
 {start_of_verse: Verse 1}
 [G]Well it was morning when I left Ala[C]bama

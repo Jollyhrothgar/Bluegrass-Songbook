@@ -1,6 +1,6 @@
 {meta: title You Tell Me}
 {meta: artist Johnny Cash}
-{meta: writer Sam Phillips}
+{meta: composer Sam Phillips}
 
 {start_of_verse: Verse 1}
 [C]Tell me why she left me [G7]I'll tell you why I cry

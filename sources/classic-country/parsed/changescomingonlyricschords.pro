@@ -1,6 +1,6 @@
 {meta: title Changes Coming On}
 {meta: artist Alabama}
-{meta: writer Dean Dillon, Buddy Cannon, Jimmy Darrell}
+{meta: composer Dean Dillon, Buddy Cannon, Jimmy Darrell}
 
 {start_of_verse: Verse 1}
 [C]Long [G7]hair was not in [C]style

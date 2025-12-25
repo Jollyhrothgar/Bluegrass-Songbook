@@ -1,6 +1,6 @@
 {meta: title Too Many Teardrops Too Late}
 {meta: artist Jean Shepard}
-{meta: writer Dave Burgess}
+{meta: composer Dave Burgess}
 
 {start_of_verse: Verse 1}
 [G]You're too many [D7]teardrops too [G7][G]l-a-te

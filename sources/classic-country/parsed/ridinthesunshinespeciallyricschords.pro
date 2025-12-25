@@ -1,6 +1,6 @@
 {meta: title Ridin' The Sunshine Special}
 {meta: artist Johnny Horton}
-{meta: writer Chuck Murphy and Huel Murphy}
+{meta: composer Chuck Murphy and Huel Murphy}
 
 {start_of_verse: Verse 1}
 [G]I’m gonna ride that happy train when it comes rolling

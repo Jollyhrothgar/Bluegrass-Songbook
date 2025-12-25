@@ -1,6 +1,6 @@
 {meta: title I Couldn't Believe it Was True}
 {meta: artist Marty Robbins}
-{meta: writer Wally Fowler and Eddy Arnold}
+{meta: composer Wally Fowler and Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [C]Last night I come home and I [F]knocked on my [C]door

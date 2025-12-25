@@ -1,6 +1,6 @@
 {meta: title You're The Only Song I Sing Today}
 {meta: artist Johnny Paycheck}
-{meta: writer Buzz Rabin and Marvin Brantley}
+{meta: composer Buzz Rabin and Marvin Brantley}
 
 {start_of_verse: Verse 1}
 [C]I was born to say the things I have to say

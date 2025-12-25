@@ -1,6 +1,6 @@
 {meta: title Wrong Way To Find Mr. Right}
 {meta: artist Gene Watson}
-{meta: writer Tim Mensey and Debbie Hupp}
+{meta: composer Tim Mensey and Debbie Hupp}
 
 {start_of_verse: Verse 1}
 [C]She walks through the bar

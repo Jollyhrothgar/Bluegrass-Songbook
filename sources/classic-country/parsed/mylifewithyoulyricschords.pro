@@ -1,6 +1,6 @@
 {meta: title My Life With You}
 {meta: artist Hank Snow}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [G]I'd rather live my life with [C]you 

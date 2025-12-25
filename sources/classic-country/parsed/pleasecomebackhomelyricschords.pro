@@ -1,6 +1,6 @@
 {meta: title Please Come Back Home}
 {meta: artist Carl Smith}
-{meta: writer Autry Inman}
+{meta: composer Autry Inman}
 
 {start_of_verse: Verse 1}
 [C]I'm lonesome deep inside from a love I cannot hide

@@ -1,6 +1,6 @@
 {meta: title Make The Waterwheel Roll}
 {meta: artist Jimmy Dean}
-{meta: writer Mel Tillis and Marijohn Wilkin}
+{meta: composer Mel Tillis and Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [C]Make the waterwheel roll make the waterwheel roll

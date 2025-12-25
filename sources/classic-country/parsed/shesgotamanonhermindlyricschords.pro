@@ -1,6 +1,6 @@
 {meta: title She's Got A Man On Her Mind}
 {meta: artist Conway Twitty}
-{meta: writer Curtis Wright and Billy Spencer}
+{meta: composer Curtis Wright and Billy Spencer}
 
 {start_of_verse: Verse 1}
 [G]See that [D7]far away [C]look on her face

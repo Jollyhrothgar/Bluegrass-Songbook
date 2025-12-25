@@ -1,6 +1,6 @@
 {meta: title I'd Rather Have A Broken Heart}
 {meta: artist Wanda Jackson}
-{meta: writer Thelma Blackmon}
+{meta: composer Thelma Blackmon}
 
 {start_of_verse: Verse 1}
 [G7]I'd rather [C]have a broken heart 

@@ -1,6 +1,6 @@
 {meta: title Homecoming}
 {meta: artist Rhonda Vincent}
-{meta: writer Carl Jackson}
+{meta: composer Carl Jackson}
 
 {start_of_verse: Verse 1}
 [C]There'll be a home[Dm]coming [C]some [F]morning

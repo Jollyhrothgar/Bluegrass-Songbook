@@ -1,6 +1,6 @@
 {meta: title Torn between two lovers}
 {meta: artist Connie Francis}
-{meta: writer Peter Yarrow and Phil Jarrel}
+{meta: composer Peter Yarrow and Phil Jarrel}
 
 {start_of_verse: Verse 1}
 [Am]There are times when a woman has to say what's on her [G]mind 

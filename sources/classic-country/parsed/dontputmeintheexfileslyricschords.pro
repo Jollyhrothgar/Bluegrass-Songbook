@@ -1,6 +1,6 @@
 {meta: title Don't Put Me in the Ex Files}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]Well I stumbled in at four A.M. this [F]morning

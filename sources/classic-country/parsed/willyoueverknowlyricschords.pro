@@ -1,6 +1,6 @@
 {meta: title Will You Ever Know}
 {meta: artist Darrell McCall}
-{meta: writer Guyanne Noel McCall}
+{meta: composer Guyanne Noel McCall}
 
 {start_of_verse: Verse 1}
 [C]Will you ever know my [F]heart belongs to you

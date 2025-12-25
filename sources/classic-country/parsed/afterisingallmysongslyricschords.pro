@@ -1,6 +1,6 @@
 {meta: title After I Sing All My Songs}
 {meta: artist Merle Haggard}
-{meta: writer Leona Williams}
+{meta: composer Leona Williams}
 
 {start_of_verse: Verse 1}
 [G]When the show is over and [D7]every one is [G]gone

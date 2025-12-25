@@ -1,6 +1,6 @@
 {meta: title We've Got Everything But Love}
 {meta: artist Barbara Mandrell}
-{meta: writer Carmol Taylor}
+{meta: composer Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [C]You make sure you never say an unkind word 

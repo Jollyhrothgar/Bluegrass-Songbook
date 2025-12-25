@@ -1,6 +1,6 @@
 {meta: title If You Only Knew}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo and Kostas Lazarides}
+{meta: composer Raul Malo and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [C]You wouldn't walk away so proud and [G7]tall

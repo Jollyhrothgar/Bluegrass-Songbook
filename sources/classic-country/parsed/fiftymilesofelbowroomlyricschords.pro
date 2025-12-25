@@ -1,6 +1,6 @@
 {meta: title Fifty Miles Of Elbow Room}
 {meta: artist Hank Locklin}
-{meta: writer Herbert Buffum}
+{meta: composer Herbert Buffum}
 
 {start_of_verse: Verse 1}
 [C]Twelve hundred miles it's length and breadth that 

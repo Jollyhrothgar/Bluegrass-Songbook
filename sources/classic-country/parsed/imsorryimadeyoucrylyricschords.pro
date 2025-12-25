@@ -1,6 +1,6 @@
 {meta: title I'm Sorry I Made You Cry}
 {meta: artist Connie Francis}
-{meta: writer Nick Clesi}
+{meta: composer Nick Clesi}
 
 {start_of_verse: Verse 1}
 [C]I'm sorry [Am]dear [D7]so sorry dear 

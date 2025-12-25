@@ -1,6 +1,6 @@
 {meta: title For A Minute There}
 {meta: artist Vern Gosdin}
-{meta: writer Beverly Gosdin and Max D. Barnes}
+{meta: composer Beverly Gosdin and Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [G]I thought that you and I [C]were [G]forever

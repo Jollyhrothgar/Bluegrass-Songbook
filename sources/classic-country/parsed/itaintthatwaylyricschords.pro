@@ -1,6 +1,6 @@
 {meta: title It Ain't That Way}
 {meta: artist George Hamilton IV}
-{meta: writer Dale Siegenthaler}
+{meta: composer Dale Siegenthaler}
 
 {start_of_verse: Verse 1}
 [C]I'd like to think the world's a better place

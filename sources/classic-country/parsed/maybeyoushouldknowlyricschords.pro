@@ -1,6 +1,6 @@
 {meta: title Maybe You Should Know}
 {meta: artist Kenny Rogers}
-{meta: writer Peter McCann}
+{meta: composer Peter McCann}
 
 {start_of_verse: Verse 1}
 [C]Seems to me that [E7]we've been friends for[Am]ever

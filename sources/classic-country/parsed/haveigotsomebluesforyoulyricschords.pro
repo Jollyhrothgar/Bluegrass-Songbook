@@ -1,6 +1,6 @@
 {meta: title Have I Got Some Blues For You}
 {meta: artist Charley Pride}
-{meta: writer David Chamberlain}
+{meta: composer David Chamberlain}
 
 {start_of_verse: Verse 1}
 [G]The one you love stopped by to see me [C]today 

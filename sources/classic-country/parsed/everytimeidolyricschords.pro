@@ -1,6 +1,6 @@
 {meta: title Every Time I Do}
 {meta: artist Tracy Byrd}
-{meta: writer Shawn Camp and Taylor Dunn}
+{meta: composer Shawn Camp and Taylor Dunn}
 
 {start_of_verse: Verse 1}
 [G]Whenever I go out anywhere in town

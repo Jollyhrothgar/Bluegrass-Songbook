@@ -1,6 +1,6 @@
 {meta: title Key To Happiness}
 {meta: artist Melba Montgomery}
-{meta: writer Paul Wayne and Estel Spurlock}
+{meta: composer Paul Wayne and Estel Spurlock}
 
 {start_of_verse: Verse 1}
 [G]Will your key to happi[D7]ness fit the gates of [G]heaven

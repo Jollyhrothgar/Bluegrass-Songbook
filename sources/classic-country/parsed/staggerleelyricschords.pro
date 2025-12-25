@@ -1,6 +1,6 @@
 {meta: title Stagger Lee}
 {meta: artist Fats Domino}
-{meta: writer Harold Logan and Lloyd Price}
+{meta: composer Harold Logan and Lloyd Price}
 
 {start_of_verse: Verse 1}
 [C]I was standin' on the corner when I [F]heard my bull dog bark

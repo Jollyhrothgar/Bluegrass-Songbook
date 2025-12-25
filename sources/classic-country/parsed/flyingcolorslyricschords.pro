@@ -1,6 +1,6 @@
 {meta: title Flying Colors}
 {meta: artist Keith Whitley}
-{meta: writer Kim Morrison and Gary Talley}
+{meta: composer Kim Morrison and Gary Talley}
 
 {start_of_verse: Verse 1}
 [C]When you [F]walked out of my life I didn't [C]think that I'd survive

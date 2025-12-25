@@ -1,6 +1,6 @@
 {meta: title Pretty Polly}
 {meta: artist The Stanley Brothers}
-{meta: writer Ralph Stanley}
+{meta: composer Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]Oh Polly Pretty Polly would you take me in time

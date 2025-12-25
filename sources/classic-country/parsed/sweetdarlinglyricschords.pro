@@ -1,6 +1,6 @@
 {meta: title Sweet Darling}
 {meta: artist Jimmy Dean}
-{meta: writer Kay Adelman}
+{meta: composer Kay Adelman}
 
 {start_of_verse: Verse 1}
 [G]My sweet darling I love only you

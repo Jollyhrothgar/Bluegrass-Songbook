@@ -1,6 +1,6 @@
 {meta: title Love Thief}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Mary Lou Powers}
+{meta: composer Hank Thompson and Mary Lou Powers}
 
 {start_of_verse: Verse 1}
 [G]Well you stole my heart and that's a sin

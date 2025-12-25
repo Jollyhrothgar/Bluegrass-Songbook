@@ -1,6 +1,6 @@
 {meta: title Written In Stone}
 {meta: artist Randy Travis}
-{meta: writer Don Schlitz and Mac McAnally}
+{meta: composer Don Schlitz and Mac McAnally}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna take you down to the riverside

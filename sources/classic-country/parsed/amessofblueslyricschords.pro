@@ -1,6 +1,6 @@
 {meta: title A Mess of Blues}
 {meta: artist Elvis Presley}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [C]I just got your letter baby a too bad you can't come home

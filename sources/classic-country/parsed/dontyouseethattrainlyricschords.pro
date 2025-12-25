@@ -1,6 +1,6 @@
 {meta: title Don't You See That Train}
 {meta: artist The Delmore Brothers}
-{meta: writer Alton Delmore}
+{meta: composer Alton Delmore}
 
 {start_of_verse: Verse 1}
 [G]Farewell [C]sweetie mine I [D7]hate to see you [G]go

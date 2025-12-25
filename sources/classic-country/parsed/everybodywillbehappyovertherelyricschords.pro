@@ -1,6 +1,6 @@
 {meta: title Everybody Will Be Happy Over There}
 {meta: artist The Hee Haw Gospel Quartet}
-{meta: writer E.M. Bartlett}
+{meta: composer E.M. Bartlett}
 
 {start_of_verse: Verse 1}
 [G]There’s a happy land of promise over [C]in the great [G]beyond

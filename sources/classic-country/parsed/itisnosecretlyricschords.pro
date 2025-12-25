@@ -1,6 +1,6 @@
 {meta: title It Is No Secret}
 {meta: artist Tennessee Ernie Ford}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [G]It [D7]is [G7]no [C]secret what [D7]God can [G]do

@@ -1,6 +1,6 @@
 {meta: title Play Together Again Again}
 {meta: artist Johnny Bush}
-{meta: writer Buck Owens, Jerry Abbott, Charles Stewart}
+{meta: composer Buck Owens, Jerry Abbott, Charles Stewart}
 
 {start_of_verse: Verse 1}
 [C]Play together again [F]again let me [G7]dance her across my [C]mind

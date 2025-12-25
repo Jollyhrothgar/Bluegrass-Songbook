@@ -1,6 +1,6 @@
 {meta: title Running Out Of Ways To Say I Love You}
 {meta: artist Mark Chesnutt}
-{meta: writer Mark Nesler}
+{meta: composer Mark Nesler}
 
 {start_of_verse: Verse 1}
 [D7]I'm [G]running out of ways to say I love [C]you

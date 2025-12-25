@@ -1,6 +1,6 @@
 {meta: title Standing At The End Of My World}
 {meta: artist Bobby Helms}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [G]I'm standing at the end of my [D7]world

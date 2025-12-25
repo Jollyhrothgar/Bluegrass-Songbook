@@ -1,6 +1,6 @@
 {meta: title Dancing On My Feet}
 {meta: artist Everly Brothers}
-{meta: writer Phil Everly}
+{meta: composer Phil Everly}
 
 {start_of_verse: Verse 1}
 [D7]You're [G]really quite a [Em]beauty

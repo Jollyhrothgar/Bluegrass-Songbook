@@ -1,6 +1,6 @@
 {meta: title You'll Never Know What You're Missin'}
 {meta: artist Ricky Nelson}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [G]Have you ever wanted to steal a kiss have you ever wanted to [G7]try

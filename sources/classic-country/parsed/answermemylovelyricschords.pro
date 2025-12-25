@@ -1,6 +1,6 @@
 {meta: title Answer Me My Love Lyrics and Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Carl Sigman, Gerhard Winkler, Fred Rauch}
+{meta: composer Carl Sigman, Gerhard Winkler, Fred Rauch}
 
 {start_of_verse: Verse 1}
 [C]Answer me [G7]oh my love 

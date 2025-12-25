@@ -1,6 +1,6 @@
 {meta: title Baby Let's Lay Down And Dance}
 {meta: artist Garth Brooks}
-{meta: writer Kent Blazy, Garth Brooks, Steve Dorff,}
+{meta: composer Kent Blazy, Garth Brooks, Steve Dorff,}
 
 {start_of_verse: Verse 1}
 [G]I get this [D7]feeling that I [G]can't explain

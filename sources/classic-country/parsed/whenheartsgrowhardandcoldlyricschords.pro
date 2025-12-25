@@ -1,6 +1,6 @@
 {meta: title When Hearts Grow Hard And Cold}
 {meta: artist Webb Pierce}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [C]Here alone in [G7]my lonely [C]bed 

@@ -1,6 +1,6 @@
 {meta: title Your Sweet Lies}
 {meta: artist Tammy Wynette}
-{meta: writer David Chamberlain and James Vest}
+{meta: composer David Chamberlain and James Vest}
 
 {start_of_verse: Verse 1}
 [G]You know you can have me [C]anytime you [G]want me

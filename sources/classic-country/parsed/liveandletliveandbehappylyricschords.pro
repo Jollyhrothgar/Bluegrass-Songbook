@@ -1,6 +1,6 @@
 {meta: title Live And Let Live And Be Happy}
 {meta: artist George Morgan}
-{meta: writer Dexter Sanger and William Ellis}
+{meta: composer Dexter Sanger and William Ellis}
 
 {start_of_verse: Verse 1}
 [C]Live and let live and be happy

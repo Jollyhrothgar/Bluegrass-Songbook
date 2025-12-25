@@ -1,6 +1,6 @@
 {meta: title Put Yourself In My Shoes}
 {meta: artist Clint Black}
-{meta: writer Clint Black, Hayden Nicholas, Shake Russell}
+{meta: composer Clint Black, Hayden Nicholas, Shake Russell}
 
 {start_of_verse: Verse 1}
 [G]Your mind is made up you won't [A7]even try 

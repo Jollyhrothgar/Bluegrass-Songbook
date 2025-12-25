@@ -1,6 +1,6 @@
 {meta: title Don't Sing A Song About Texas}
 {meta: artist Charlie Walker}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G]Don't sing about a Luckenbach Texas

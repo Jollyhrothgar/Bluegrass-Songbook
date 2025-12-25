@@ -1,6 +1,6 @@
 {meta: title I Loved ‘Em Every One}
 {meta: artist T.G. Sheppard}
-{meta: writer Phil Sampson}
+{meta: composer Phil Sampson}
 
 {start_of_verse: Verse 1}
 [Em]I’ve known some painted ladies 

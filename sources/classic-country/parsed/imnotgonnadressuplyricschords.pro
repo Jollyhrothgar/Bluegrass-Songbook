@@ -1,6 +1,6 @@
 {meta: title I'm Not Gonna Dress Up}
 {meta: artist Wilburn Brothers}
-{meta: writer Earl Montgomery}
+{meta: composer Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]I just don't think I'll dress up this morning

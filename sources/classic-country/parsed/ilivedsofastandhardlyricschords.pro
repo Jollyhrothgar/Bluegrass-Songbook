@@ -1,6 +1,6 @@
 {meta: title I Lived So Fast And Hard}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]I was raised on [G7]cornbread and [C]gravy

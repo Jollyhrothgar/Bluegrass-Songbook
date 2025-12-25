@@ -1,6 +1,6 @@
 {meta: title It's Not The End Of Everything}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]Just because your [G7]love is gone

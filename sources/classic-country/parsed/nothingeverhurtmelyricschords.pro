@@ -1,6 +1,6 @@
 {meta: title Nothing Ever Hurt Me}
 {meta: artist George Jones}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [G]Well I've had a splitting [C]headache from my eyebrows [G]to my [C]backbone

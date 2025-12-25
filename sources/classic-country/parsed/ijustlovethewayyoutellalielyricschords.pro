@@ -1,6 +1,6 @@
 {meta: title I Just Love The Way You Tell A Lie}
 {meta: artist Don Gibson}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]What an awful thing you’ve done dear [G7]just for a little [C]fun

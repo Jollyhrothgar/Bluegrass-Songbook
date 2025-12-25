@@ -1,6 +1,6 @@
 {meta: title A Special Song For Wanda}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [C]Wanda was [F]alone at nights while [C]he was somewhere sailing 

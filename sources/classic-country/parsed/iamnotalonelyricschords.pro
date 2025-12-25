@@ -1,6 +1,6 @@
 {meta: title I Am Not Alone}
 {meta: artist Jack Greene}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]Silently I [F]walk [G7]about [C]in the [F]meadow [C]green

@@ -1,6 +1,6 @@
 {meta: title Rumor Has It}
 {meta: artist Reba McEntire}
-{meta: writer Bruce Burch, Vern Dant, Larry Shell}
+{meta: composer Bruce Burch, Vern Dant, Larry Shell}
 
 {start_of_verse: Verse 1}
 [C]I over[G]heard the [D7]conver[G]sation your [C]name was mentioned [Am]in

@@ -1,6 +1,6 @@
 {meta: title Little Cowboy Lullaby}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills and Cindy Walker}
+{meta: composer Bob Wills and Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Listen to me [Am]cowhand [F]better roll in for the [C]night

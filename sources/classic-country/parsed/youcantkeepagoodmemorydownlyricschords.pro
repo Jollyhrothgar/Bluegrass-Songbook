@@ -1,6 +1,6 @@
 {meta: title You Can't Keep A Good Memory Down}
 {meta: artist John Anderson}
-{meta: writer Roger Murrah and Bruce Burch}
+{meta: composer Roger Murrah and Bruce Burch}
 
 {start_of_verse: Verse 1}
 [C]I sold the house we lived in 

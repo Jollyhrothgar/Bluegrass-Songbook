@@ -1,6 +1,6 @@
 {meta: title Time Changes Things}
 {meta: artist Lefty Frizzell}
-{meta: writer Lessie Lyle and Lefty Frizzell}
+{meta: composer Lessie Lyle and Lefty Frizzell}
 
 {start_of_verse: Verse 1}
 [D7]It was [G]you I loved sent from [C]heaven above

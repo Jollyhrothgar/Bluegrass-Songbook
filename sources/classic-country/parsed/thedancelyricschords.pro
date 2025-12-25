@@ -1,6 +1,6 @@
 {meta: title The Dance}
 {meta: artist Garth Brooks}
-{meta: writer Tony Arata}
+{meta: composer Tony Arata}
 
 {start_of_verse: Verse 1}
 [G]Looking back on the [C]memory of

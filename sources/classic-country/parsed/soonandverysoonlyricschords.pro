@@ -1,6 +1,6 @@
 {meta: title Soon And Very Soon}
 {meta: artist Ronnie Milsap}
-{meta: writer Andrae Crouch}
+{meta: composer Andrae Crouch}
 
 {start_of_verse: Verse 1}
 [C]Soon and very soon [F]we are [C]going to see the King

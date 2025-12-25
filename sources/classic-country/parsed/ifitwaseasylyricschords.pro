@@ -1,6 +1,6 @@
 {meta: title If It Was Easy}
 {meta: artist Ed Bruce}
-{meta: writer Larry Kingston and Harlan Sanders}
+{meta: composer Larry Kingston and Harlan Sanders}
 
 {start_of_verse: Verse 1}
 [C]I wish there was a way to love a [F]lot

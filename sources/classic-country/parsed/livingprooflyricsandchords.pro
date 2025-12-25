@@ -1,6 +1,6 @@
 {meta: title Living Proof}
 {meta: artist Ricky Van Shelton}
-{meta: writer Johnny McRae and Steve Clark}
+{meta: composer Johnny McRae and Steve Clark}
 
 {start_of_verse: Verse 1}
 [C]She hangs up the phone  [F]and her heart starts to [C]pound

@@ -1,6 +1,6 @@
 {meta: title Little Old Heartache Maker Me}
 {meta: artist Charlie Walker}
-{meta: writer Bobby Bond}
+{meta: composer Bobby Bond}
 
 {start_of_verse: Verse 1}
 [C]Well I left a little girl out in Frisco 

@@ -1,6 +1,6 @@
 {meta: title That's Where My Money Goes}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis and Buck Peddy}
+{meta: composer Mel Tillis and Buck Peddy}
 
 {start_of_verse: Verse 1}
 [G7]Oh boy that's where my money [C]goes

@@ -1,6 +1,6 @@
 {meta: title If You See Her}
 {meta: artist Waylon Jennings}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [C]If you see her and she [F]mentions my [C]name

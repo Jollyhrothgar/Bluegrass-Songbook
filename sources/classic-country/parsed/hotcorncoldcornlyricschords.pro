@@ -1,6 +1,6 @@
 {meta: title Hot Corn Cold Corn}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Dave Akeman¸ Lester Flatt, Earl Scruggs}
+{meta: composer Dave Akeman¸ Lester Flatt, Earl Scruggs}
 
 {start_of_verse: Verse 1}
 Hot Corn Cold Corn

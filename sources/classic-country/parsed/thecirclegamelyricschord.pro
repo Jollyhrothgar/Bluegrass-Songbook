@@ -1,6 +1,6 @@
 {meta: title The Circle Game}
 {meta: artist George Hamilton IV}
-{meta: writer Joni Mitchell}
+{meta: composer Joni Mitchell}
 
 {start_of_verse: Verse 1}
 [C]Yesterday a [F]child came out to [C]wonder

@@ -1,6 +1,6 @@
 {meta: title That's All You Gotta Do}
 {meta: artist Brenda Lee}
-{meta: writer Jerry Reed Hubbard}
+{meta: composer Jerry Reed Hubbard}
 
 {start_of_verse: Verse 1}
 [C]Anytime you're feeling low [Am]and you got no place to go

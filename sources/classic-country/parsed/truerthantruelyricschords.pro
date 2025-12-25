@@ -1,6 +1,6 @@
 {meta: title Truer Than True}
 {meta: artist Brenda Lee}
-{meta: writer Bob Tubert and Steve Alamo}
+{meta: composer Bob Tubert and Steve Alamo}
 
 {start_of_verse: Verse 1}
 [C]Truer than [Dm]true  [G7]that's how I [C]love you

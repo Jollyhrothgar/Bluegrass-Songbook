@@ -1,6 +1,6 @@
 {meta: title I Couldn't Stand The Thought Of Losing You}
 {meta: artist Red Sovine}
-{meta: writer Red Hayes and Al Gore}
+{meta: composer Red Hayes and Al Gore}
 
 {start_of_verse: Verse 1}
 [C]There's so many people [F]breaking up their [C]homes

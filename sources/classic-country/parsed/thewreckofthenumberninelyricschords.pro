@@ -1,6 +1,6 @@
 {meta: title The Wreck Of The Number Nine}
 {meta: artist Jim Reeves}
-{meta: writer Carson Robison}
+{meta: composer Carson Robison}
 
 {start_of_verse: Verse 1}
 [G]One dark stormy night not a [C]star was in sight

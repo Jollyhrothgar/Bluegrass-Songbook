@@ -1,6 +1,6 @@
 {meta: title I Just Came To Smell The Flowers}
 {meta: artist Norma Jean}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [C]I just came to smell the flowers

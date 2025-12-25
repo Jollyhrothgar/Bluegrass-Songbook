@@ -1,6 +1,6 @@
 {meta: title Looking Out My Back Door}
 {meta: artist Buddy Alan}
-{meta: writer John Cameron Fogerty}
+{meta: composer John Cameron Fogerty}
 
 {start_of_verse: Verse 1}
 [G]Just got home from Illinois [Em]lock the front door oh boy

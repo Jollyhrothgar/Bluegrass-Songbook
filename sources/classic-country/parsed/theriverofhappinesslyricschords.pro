@@ -1,6 +1,6 @@
 {meta: title The River Of Happiness}
 {meta: artist Josh Turner}
-{meta: writer Jennifer Turner and Hampton Turner}
+{meta: composer Jennifer Turner and Hampton Turner}
 
 {start_of_verse: Verse 1}
 [G]There's a river way out [C]yonder

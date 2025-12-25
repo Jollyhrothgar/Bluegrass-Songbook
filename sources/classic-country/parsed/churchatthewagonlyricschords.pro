@@ -1,6 +1,6 @@
 {meta: title Church At The Wagon}
 {meta: artist Red Steagall}
-{meta: writer Fletcher Jowers}
+{meta: composer Fletcher Jowers}
 
 {start_of_verse: Verse 1}
 [C]We'd gathered up a herd of longhorns [F]bound for Abi[C]lene

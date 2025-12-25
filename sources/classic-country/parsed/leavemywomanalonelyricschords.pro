@@ -1,6 +1,6 @@
 {meta: title Leave My Woman Alone}
 {meta: artist The Everly Brothers}
-{meta: writer Ray Charles}
+{meta: composer Ray Charles}
 
 {start_of_verse: Verse 1}
 [G]If you don't want you don't have to get into trouble

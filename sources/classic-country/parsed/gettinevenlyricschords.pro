@@ -1,6 +1,6 @@
 {meta: title Gettin' Even}
 {meta: artist Carl Smith}
-{meta: writer Wayne P. Walker and Carl Smith}
+{meta: composer Wayne P. Walker and Carl Smith}
 
 {start_of_verse: Verse 1}
 [C]Gettin’ even has got me [G7]nowhere but [C]lonesome

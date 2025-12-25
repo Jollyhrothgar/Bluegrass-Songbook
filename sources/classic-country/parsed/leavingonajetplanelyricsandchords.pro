@@ -1,6 +1,6 @@
 {meta: title Leaving On A Jet Plane}
 {meta: artist Jean Shepard}
-{meta: writer John Denver}
+{meta: composer John Denver}
 
 {start_of_verse: Verse 1}
 [G]My bags are packed I'm [C]ready to [D7]go

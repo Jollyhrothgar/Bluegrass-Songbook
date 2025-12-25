@@ -1,6 +1,6 @@
 {meta: title Whoa Sailor}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Walt McCoy}
+{meta: composer Hank Thompson and Walt McCoy}
 
 {start_of_verse: Verse 1}
 [C]I'll tell you about my night on [G7]shore

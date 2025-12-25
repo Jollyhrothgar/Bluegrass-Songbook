@@ -1,6 +1,6 @@
 {meta: title Changes}
 {meta: artist Billy Walker}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]I feel unhappy I feel so sad

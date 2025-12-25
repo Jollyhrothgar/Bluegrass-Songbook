@@ -1,6 +1,6 @@
 {meta: title We'll Get Married Or Nothing}
 {meta: artist Johnny Duncan}
-{meta: writer Jean Henderson and Vincent Poole}
+{meta: composer Jean Henderson and Vincent Poole}
 
 {start_of_verse: Verse 1}
 [C]We discovered love like Columbus discovered land

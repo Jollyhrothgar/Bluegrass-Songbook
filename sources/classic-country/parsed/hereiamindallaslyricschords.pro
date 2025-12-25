@@ -1,6 +1,6 @@
 {meta: title Here I Am In Dallas}
 {meta: artist Faron Young}
-{meta: writer Lomar Morris, Ronnie Hughes, Terry Isham}
+{meta: composer Lomar Morris, Ronnie Hughes, Terry Isham}
 
 {start_of_verse: Verse 1}
 [C]Here I am in Dallas where in the hell are [F]you

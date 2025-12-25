@@ -1,6 +1,6 @@
 {meta: title Until I Can Make it On My Own}
 {meta: artist Faron Young}
-{meta: writer Arthur Leo Owens and Johnny McRae}
+{meta: composer Arthur Leo Owens and Johnny McRae}
 
 {start_of_verse: Verse 1}
 [C]I don't want to know who's loved you

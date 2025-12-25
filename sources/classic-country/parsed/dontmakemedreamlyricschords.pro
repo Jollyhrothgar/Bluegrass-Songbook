@@ -1,6 +1,6 @@
 {meta: title Don't Make Me Dream}
 {meta: artist Connie Smith}
-{meta: writer Bob Morrison and Wanda Mallette}
+{meta: composer Bob Morrison and Wanda Mallette}
 
 {start_of_verse: Verse 1}
 [C]I can't believe you're at my door [F]again[G7]

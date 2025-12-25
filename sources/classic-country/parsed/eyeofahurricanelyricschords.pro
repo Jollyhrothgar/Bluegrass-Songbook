@@ -1,6 +1,6 @@
 {meta: title Eye Of A Hurricane}
 {meta: artist John Anderson}
-{meta: writer Jerry Fulle}
+{meta: composer Jerry Fulle}
 
 {start_of_verse: Verse 1}
 [C]You're the [G7]eye of a hurricane the calm within a storm

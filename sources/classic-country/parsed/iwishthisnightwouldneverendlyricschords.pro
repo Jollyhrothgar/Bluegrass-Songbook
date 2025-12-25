@@ -1,6 +1,6 @@
 {meta: title I Wish This Night Would Never End}
 {meta: artist Sonny James}
-{meta: writer Dan Welch}
+{meta: composer Dan Welch}
 
 {start_of_verse: Verse 1}
 [C]Oh how [F]short has [G7]been the [C]evening

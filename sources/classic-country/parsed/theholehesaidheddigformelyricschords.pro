@@ -1,6 +1,6 @@
 {meta: title The Hole He Said He'd Dig For Me}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Marian Turner and Z.Z. Zillion}
+{meta: composer Marian Turner and Z.Z. Zillion}
 
 {start_of_verse: Verse 1}
 [C]With this bank book in your hand and [F]your arms around me

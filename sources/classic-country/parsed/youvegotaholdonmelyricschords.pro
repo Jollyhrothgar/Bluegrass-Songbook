@@ -1,6 +1,6 @@
 {meta: title You've Got A Hold On Me}
 {meta: artist Don Williams}
-{meta: writer David Williamson}
+{meta: composer David Williamson}
 
 {start_of_verse: Verse 1}
 [C]Another lonely night 

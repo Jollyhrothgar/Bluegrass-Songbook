@@ -1,6 +1,6 @@
 {meta: title All The Gold in California}
 {meta: artist Gatlin Brothers}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 All The Gold in California 

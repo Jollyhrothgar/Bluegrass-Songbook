@@ -1,6 +1,6 @@
 {meta: title Gotta Find A Way}
 {meta: artist Billy Walker}
-{meta: writer Hank Cochran and Billy Walker}
+{meta: composer Hank Cochran and Billy Walker}
 
 {start_of_verse: Verse 1}
 [G]I [D7]open my eyes and you're [G]on my mind

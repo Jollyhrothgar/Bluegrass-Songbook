@@ -1,6 +1,6 @@
 {meta: title That's A Lie}
 {meta: artist Doug Stone}
-{meta: writer Randy Boudreaux and Doug Stone}
+{meta: composer Randy Boudreaux and Doug Stone}
 
 {start_of_verse: Verse 1}
 [Dm]Just this morning I [G7]passed you on the street

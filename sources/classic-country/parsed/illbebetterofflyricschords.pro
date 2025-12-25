@@ -1,6 +1,6 @@
 {meta: title I'll Be Better Off}
 {meta: artist Jeannie Seely}
-{meta: writer Hank Cochran and Dave Kirby}
+{meta: composer Hank Cochran and Dave Kirby}
 
 {start_of_verse: Verse 1}
 [G]I'll miss you I'll confess 

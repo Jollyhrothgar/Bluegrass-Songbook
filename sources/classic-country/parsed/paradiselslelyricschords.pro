@@ -1,6 +1,6 @@
 {meta: title Paradise Isle}
 {meta: artist Johnny Duncan}
-{meta: writer Sam Koki}
+{meta: composer Sam Koki}
 
 {start_of_verse: Verse 1}
 [G]Stars on the water across the bay

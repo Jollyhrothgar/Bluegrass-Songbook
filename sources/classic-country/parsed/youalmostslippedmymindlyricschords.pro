@@ -1,6 +1,6 @@
 {meta: title You Almost Slipped My Mind}
 {meta: artist Charley Pride}
-{meta: writer Troy Seals, Don Goodman, Tilden Back}
+{meta: composer Troy Seals, Don Goodman, Tilden Back}
 
 {start_of_verse: Verse 1}
 [C]Just for a moment you [F]almost slipped my [C]mind

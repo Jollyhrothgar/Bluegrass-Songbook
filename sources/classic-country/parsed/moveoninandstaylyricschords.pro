@@ -1,6 +1,6 @@
 {meta: title Move On In And Stay}
 {meta: artist Ray Price}
-{meta: writer Carl Smith}
+{meta: composer Carl Smith}
 
 {start_of_verse: Verse 1}
 [C]There's an empty spot inside my heart for [F]someone just like [C]you

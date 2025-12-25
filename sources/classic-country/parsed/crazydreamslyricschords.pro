@@ -1,6 +1,6 @@
 {meta: title Crazy Dreams Lyrics Chords}
 {meta: artist Patsy Cline}
-{meta: writer W.S. Stevenson, Clyde C. Beam, Charley L. Jiles}
+{meta: composer W.S. Stevenson, Clyde C. Beam, Charley L. Jiles}
 
 {start_of_verse: Verse 1}
 [G]I had a dream last night that I held [C]you

@@ -1,6 +1,6 @@
 {meta: title For Me It's You}
 {meta: artist Tracy Byrd}
-{meta: writer Mark Nesler and Tony Martin}
+{meta: composer Mark Nesler and Tony Martin}
 
 {start_of_verse: Verse 1}
 [G]Every[Am]body has a gift that's [D7]given to them 

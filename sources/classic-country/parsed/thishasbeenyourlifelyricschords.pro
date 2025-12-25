@@ -1,6 +1,6 @@
 {meta: title This Has Been Your Life}
 {meta: artist Jean Shepard}
-{meta: writer Ted Edlin}
+{meta: composer Ted Edlin}
 
 {start_of_verse: Verse 1}
 [G]Heartaches and sorrow misery and [D7]shame

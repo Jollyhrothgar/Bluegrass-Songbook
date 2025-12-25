@@ -1,6 +1,6 @@
 {meta: title Honeycomb}
 {meta: artist Jimmy Rodgers}
-{meta: writer Bob Merrill}
+{meta: composer Bob Merrill}
 
 {start_of_verse: Verse 1}
 [C]It's a darn good life and it's kinda funny

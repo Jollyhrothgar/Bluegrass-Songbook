@@ -1,6 +1,6 @@
 {meta: title My Heart Echoes}
 {meta: artist Kitty Wells}
-{meta: writer Johnnie Bailes, Homer Bailes, Zeke Clements}
+{meta: composer Johnnie Bailes, Homer Bailes, Zeke Clements}
 
 {start_of_verse: Verse 1}
 [F](My heart [C]echoes it [G7]back to [C]me)

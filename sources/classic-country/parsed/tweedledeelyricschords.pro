@@ -1,6 +1,6 @@
 {meta: title Tweedle Dee}
 {meta: artist Connie Francis}
-{meta: writer Winfield Scott}
+{meta: composer Winfield Scott}
 
 {start_of_verse: Verse 1}
 [C]Tweedle tweedle tweedle dee

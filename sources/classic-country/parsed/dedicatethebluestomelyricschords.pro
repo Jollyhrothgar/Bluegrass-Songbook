@@ -1,6 +1,6 @@
 {meta: title Dedicate The Blues To Me}
 {meta: artist Ronnie Milsap}
-{meta: writer Charles Singleton - Rose Marie McCoy}
+{meta: composer Charles Singleton - Rose Marie McCoy}
 
 {start_of_verse: Verse 1}
 [C]Love songs are for [G7]those who share [C]love[G7]

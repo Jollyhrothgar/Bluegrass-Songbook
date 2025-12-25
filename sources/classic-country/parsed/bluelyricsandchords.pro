@@ -1,6 +1,6 @@
 {meta: title Blue}
 {meta: artist LeAnn Rimes}
-{meta: writer Bill Mack Smith}
+{meta: composer Bill Mack Smith}
 
 {start_of_verse: Verse 1}
 [G]Blue oo oo oo [B]oo  oh so lonesome for [E7]you

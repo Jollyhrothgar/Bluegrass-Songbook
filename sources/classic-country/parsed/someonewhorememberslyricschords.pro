@@ -1,6 +1,6 @@
 {meta: title Someone Who Remembers}
 {meta: artist Lee Greenwood}
-{meta: writer Rory Bourke, Kerry Chater, Glen Ballard}
+{meta: composer Rory Bourke, Kerry Chater, Glen Ballard}
 
 {start_of_verse: Verse 1}
 [G]You're the last one I [C]thought I'd see

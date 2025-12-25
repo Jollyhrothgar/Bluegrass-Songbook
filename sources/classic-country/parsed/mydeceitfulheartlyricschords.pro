@@ -1,6 +1,6 @@
 {meta: title My Deceitful Heart}
 {meta: artist Ricky Skaggs}
-{meta: writer Shorty Long and John Speca}
+{meta: composer Shorty Long and John Speca}
 
 {start_of_verse: Verse 1}
 [G]My deceitful heart keeps [D7]changin' its [G]mind

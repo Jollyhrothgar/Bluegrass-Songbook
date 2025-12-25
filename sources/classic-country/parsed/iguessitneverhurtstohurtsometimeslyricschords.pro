@@ -1,6 +1,6 @@
 {meta: title I Guess It Never Hurts To Hurt Sometimes}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Randy Van Warmer}
+{meta: composer Randy Van Warmer}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I feel a wave of a past break in my [C]mind 

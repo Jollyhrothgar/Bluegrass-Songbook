@@ -1,6 +1,6 @@
 {meta: title She Won't Have A Thing To Do With Nobody But Me}
 {meta: artist Alabama}
-{meta: writer Dean Dillon, Buzz Rabin, Flash Gordon}
+{meta: composer Dean Dillon, Buzz Rabin, Flash Gordon}
 
 {start_of_verse: Verse 1}
 [G]The way she's walkin'

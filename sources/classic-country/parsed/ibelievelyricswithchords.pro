@@ -1,6 +1,6 @@
 {meta: title I Believe}
 {meta: artist George Strait}
-{meta: writer Bubba Strait, Dean Dillon, George Strait}
+{meta: composer Bubba Strait, Dean Dillon, George Strait}
 
 {start_of_verse: Verse 1}
 [C]The nights as clear as a [Am]big desert [F]sky [G7]

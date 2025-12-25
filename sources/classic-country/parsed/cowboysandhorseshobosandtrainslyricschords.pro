@@ -1,6 +1,6 @@
 {meta: title Cowboys And Horses Hobos And Trains}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene Martin}
+{meta: composer Lloene Martin}
 
 {start_of_verse: Verse 1}
 [C]Cowboys and horses [F]hobos and [C]trains

@@ -1,6 +1,6 @@
 {meta: title Achy Breaky Heart}
 {meta: artist Billy Ray Cyrus}
-{meta: writer Donald L. Von Tress}
+{meta: composer Donald L. Von Tress}
 
 {start_of_verse: Verse 1}
 [G]Well you can tell the world you never was my girl  

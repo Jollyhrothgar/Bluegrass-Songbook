@@ -1,6 +1,6 @@
 {meta: title If You're Waiting on Me}
 {meta: artist The Kendalls}
-{meta: writer Ken Bell, Terry Skinner and J.L. Wallace}
+{meta: composer Ken Bell, Terry Skinner and J.L. Wallace}
 
 {start_of_verse: Verse 1}
 [C]If you're waiting on me you're backing up 

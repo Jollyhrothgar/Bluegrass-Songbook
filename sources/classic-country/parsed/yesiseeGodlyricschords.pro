@@ -1,6 +1,6 @@
 {meta: title Yes I See God}
 {meta: artist Charley Pride}
-{meta: writer Dorothy Jo Hope}
+{meta: composer Dorothy Jo Hope}
 
 {start_of_verse: Verse 1}
 [G]Yes I see God where the mountains reach the sky [G7]

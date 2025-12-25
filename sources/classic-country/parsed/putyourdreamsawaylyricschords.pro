@@ -1,6 +1,6 @@
 {meta: title Put Your Dreams Away}
 {meta: artist Mickey Gilley}
-{meta: writer Wayland Holyfield and Richard Leigh}
+{meta: composer Wayland Holyfield and Richard Leigh}
 
 {start_of_verse: Verse 1}
 [C]Every now and then [G7]someone comes to you

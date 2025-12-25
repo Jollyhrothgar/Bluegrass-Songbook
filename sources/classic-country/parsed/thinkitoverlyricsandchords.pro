@@ -1,6 +1,6 @@
 {meta: title Think It Over}
 {meta: artist Buck Owens}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]When I awoke this morning you were [D7]gone

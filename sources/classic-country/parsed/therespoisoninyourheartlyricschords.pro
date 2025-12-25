@@ -1,6 +1,6 @@
 {meta: title There's Poison In Your Heart Lyrics Chords}
 {meta: artist Kitty Wells}
-{meta: writer Zeke Clements}
+{meta: composer Zeke Clements}
 
 {start_of_verse: Verse 1}
 [C]Once I loved you darling and you [F]thrilled me through and [C]through

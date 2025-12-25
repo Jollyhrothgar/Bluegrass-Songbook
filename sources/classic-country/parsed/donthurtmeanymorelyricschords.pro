@@ -1,6 +1,6 @@
 {meta: title Don't Hurt Me Anymore}
 {meta: artist Ferlin Husky}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [G7](Please don't hurt me any[C]more)

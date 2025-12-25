@@ -1,6 +1,6 @@
 {meta: title Two Less Lonely People In The World}
 {meta: artist Rex Allen Jr.}
-{meta: writer Wayland Holyfield}
+{meta: composer Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [G]There are millions just like [Am]us

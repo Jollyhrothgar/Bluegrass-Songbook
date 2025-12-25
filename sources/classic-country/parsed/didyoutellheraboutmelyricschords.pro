@@ -1,6 +1,6 @@
 {meta: title Did You Tell Her About Me}
 {meta: artist Jean Shepard}
-{meta: writer Dick Reynolds}
+{meta: composer Dick Reynolds}
 
 {start_of_verse: Verse 1}
 [G]Now you have found a new love and you say that we are [D7]through

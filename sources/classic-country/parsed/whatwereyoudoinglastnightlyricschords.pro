@@ -1,6 +1,6 @@
 {meta: title What Were You Doing Last Night}
 {meta: artist Jim Reeves}
-{meta: writer recorded by Jim Reeves}
+{meta: composer recorded by Jim Reeves}
 
 {start_of_verse: Verse 1}
 [C]What were you doing when I saw [F]you last [C]night 

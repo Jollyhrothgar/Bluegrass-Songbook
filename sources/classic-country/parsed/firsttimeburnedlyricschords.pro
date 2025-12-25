@@ -1,6 +1,6 @@
 {meta: title First Time Burned}
 {meta: artist Johnny Rodriguez}
-{meta: writer Jimmy Ray McBride}
+{meta: composer Jimmy Ray McBride}
 
 {start_of_verse: Verse 1}
 [G]I loved you so much the first time [D7]around

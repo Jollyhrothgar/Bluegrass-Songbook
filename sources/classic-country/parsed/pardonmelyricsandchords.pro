@@ -1,6 +1,6 @@
 {meta: title Pardon Me}
 {meta: artist The Cox Family}
-{meta: writer Jesse McReynolds and Jim McReynolds}
+{meta: composer Jesse McReynolds and Jim McReynolds}
 
 {start_of_verse: Verse 1}
 [G]Pardon me but I think you're the [D7]one love

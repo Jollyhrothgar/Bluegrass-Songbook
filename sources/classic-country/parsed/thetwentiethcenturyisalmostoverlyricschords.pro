@@ -1,6 +1,6 @@
 {meta: title The Twentieth Century Is Almost Over}
 {meta: artist The Highwaymen}
-{meta: writer Steve Goodman and John E. Prine}
+{meta: composer Steve Goodman and John E. Prine}
 
 {start_of_verse: Verse 1}
 [C]Back in 1899 everybody sang [F]Auld Lang [C]Syne

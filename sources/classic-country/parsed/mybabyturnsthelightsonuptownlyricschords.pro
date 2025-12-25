@@ -1,6 +1,6 @@
 {meta: title My Baby Turns The Lights On Uptown}
 {meta: artist Porter Wagoner}
-{meta: writer Joyce Allsup}
+{meta: composer Joyce Allsup}
 
 {start_of_verse: Verse 1}
 [G]She has always [G7]turned the lights on for [C]me

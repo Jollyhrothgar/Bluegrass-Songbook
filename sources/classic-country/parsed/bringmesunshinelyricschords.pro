@@ -1,6 +1,6 @@
 {meta: title Bring Me Sunshine}
 {meta: artist Willie Nelson}
-{meta: writer Sylvia Dee and Arthur Kent}
+{meta: composer Sylvia Dee and Arthur Kent}
 
 {start_of_verse: Verse 1}
 [C]Bring me sunshine in your [Dm]smile

@@ -1,6 +1,6 @@
 {meta: title Puppet On A String}
 {meta: artist Elvis Presley}
-{meta: writer Roy C. Bennett, Sid Tepper}
+{meta: composer Roy C. Bennett, Sid Tepper}
 
 {start_of_verse: Verse 1}
 [C]Every time you [F]look at me [G7]I'm as helpless [C]as can be

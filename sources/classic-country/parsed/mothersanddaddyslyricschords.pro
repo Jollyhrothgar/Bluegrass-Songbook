@@ -1,6 +1,6 @@
 {meta: title Mothers And Daddys}
 {meta: artist Mickey Gilley}
-{meta: writer Roger Murrah and Jim McBride}
+{meta: composer Roger Murrah and Jim McBride}
 
 {start_of_verse: Verse 1}
 [C]Whatever happened to [Dm]mother's and daddy's

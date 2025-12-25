@@ -1,6 +1,6 @@
 {meta: title Dear Wastebasket}
 {meta: artist Bobby Bare}
-{meta: writer Bobby Bare and Curtis Leach}
+{meta: composer Bobby Bare and Curtis Leach}
 
 {start_of_verse: Verse 1}
 [C]I've been writin' Mary Lou [F]letters every [G7]day

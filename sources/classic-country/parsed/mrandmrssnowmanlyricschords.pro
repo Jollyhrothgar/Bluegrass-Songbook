@@ -1,6 +1,6 @@
 {meta: title Mr. and Mrs. Snowman}
 {meta: artist Hank Thompson}
-{meta: writer Lyle Gaston and Hank Thompson}
+{meta: composer Lyle Gaston and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]Mr. and [D7]Mrs. [G]Snowman [C]out on my front [G]lawn

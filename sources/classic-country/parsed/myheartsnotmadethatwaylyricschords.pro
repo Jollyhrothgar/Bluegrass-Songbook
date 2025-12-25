@@ -1,6 +1,6 @@
 {meta: title My Heart's Not Made That Way}
 {meta: artist Eddy Arnold}
-{meta: writer Merle Kilgore}
+{meta: composer Merle Kilgore}
 
 {start_of_verse: Verse 1}
 [C]Pretty words that you [Am]told me 

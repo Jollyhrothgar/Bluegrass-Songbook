@@ -1,6 +1,6 @@
 {meta: title Things I Lost In You}
 {meta: artist Conway Twitty}
-{meta: writer Mickey Jaco}
+{meta: composer Mickey Jaco}
 
 {start_of_verse: Verse 1}
 [C]It's over I've known [C7]it for a long [F]time

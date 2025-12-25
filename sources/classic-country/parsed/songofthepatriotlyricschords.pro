@@ -1,6 +1,6 @@
 {meta: title Song Of The Patriot}
 {meta: artist Johnny Cash}
-{meta: writer Marty Robbins and Shirl Melete}
+{meta: composer Marty Robbins and Shirl Melete}
 
 {start_of_verse: Verse 1}
 [C]I’m a flag waving patriotic nephew of my Uncle Sam

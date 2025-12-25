@@ -1,6 +1,6 @@
 {meta: title Don't Stop Being You}
 {meta: artist The Country Gentlemen}
-{meta: writer Randall Hylton}
+{meta: composer Randall Hylton}
 
 {start_of_verse: Verse 1}
 [D7]I love your [G]hair and your [C]pretty [G]eyes

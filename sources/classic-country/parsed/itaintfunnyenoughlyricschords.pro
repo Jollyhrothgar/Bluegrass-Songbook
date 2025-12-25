@@ -1,6 +1,6 @@
 {meta: title It Ain't Funny Enough}
 {meta: artist Ira Louvin}
-{meta: writer Anne Young}
+{meta: composer Anne Young}
 
 {start_of_verse: Verse 1}
 [G]I've heard a lotta talking had a lot of advice 

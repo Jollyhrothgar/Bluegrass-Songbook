@@ -1,6 +1,6 @@
 {meta: title The Other Woman}
 {meta: artist Loretta Lynn}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [G]I'm the other [D7]woman the other woman in your husband's [G]life

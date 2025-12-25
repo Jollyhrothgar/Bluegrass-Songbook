@@ -1,6 +1,6 @@
 {meta: title A Moment Isn’t Very Long}
 {meta: artist Faron Young}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]Yesterday as I talked with a [G7]friend in town 

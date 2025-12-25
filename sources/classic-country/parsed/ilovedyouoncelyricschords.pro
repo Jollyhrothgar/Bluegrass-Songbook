@@ -1,6 +1,6 @@
 {meta: title I Loved You Once}
 {meta: artist Ernest Tubb}
-{meta: writer Rex Griffin and Jimmie Davis}
+{meta: composer Rex Griffin and Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [C]I'll not let you worry me nor [F]will I shed a tear

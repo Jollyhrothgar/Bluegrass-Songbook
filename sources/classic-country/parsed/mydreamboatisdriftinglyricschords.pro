@@ -1,6 +1,6 @@
 {meta: title My Dream Boat Is Drifting}
 {meta: artist Eddy Arnold}
-{meta: writer May Newberry}
+{meta: composer May Newberry}
 
 {start_of_verse: Verse 1}
 [G]My dreamboat is drifting

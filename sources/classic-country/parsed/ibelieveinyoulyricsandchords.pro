@@ -1,6 +1,6 @@
 {meta: title I Believe In You}
 {meta: artist Mel Tillis}
-{meta: writer Buddy Cannon and Gene Dunlap}
+{meta: composer Buddy Cannon and Gene Dunlap}
 
 {start_of_verse: Verse 1}
 [C]I believe [Dm]in you

@@ -1,6 +1,6 @@
 {meta: title Cheap Love Affair}
 {meta: artist The McCoury Brothers}
-{meta: writer Bill Monroe and Chuck Carson}
+{meta: composer Bill Monroe and Chuck Carson}
 
 {start_of_verse: Verse 1}
 [C]Oh I knew we loved each other the night that [F]we first [C]met

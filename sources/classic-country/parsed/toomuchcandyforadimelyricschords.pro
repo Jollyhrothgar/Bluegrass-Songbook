@@ -1,6 +1,6 @@
 {meta: title Too Much Candy For A Dime}
 {meta: artist Eddy Raven}
-{meta: writer David H. Powelson and Edward G. Futch}
+{meta: composer David H. Powelson and Edward G. Futch}
 
 {start_of_verse: Verse 1}
 [G]You look just like somebody that I used to [C]know

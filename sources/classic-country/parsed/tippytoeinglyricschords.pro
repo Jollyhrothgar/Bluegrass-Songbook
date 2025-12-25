@@ -1,6 +1,6 @@
 {meta: title Tippy Toeing}
 {meta: artist Loretta Lynn}
-{meta: writer Bobby Harden}
+{meta: composer Bobby Harden}
 
 {start_of_verse: Verse 1}
 [C]Well momma go a tippy tippy toeing through the house

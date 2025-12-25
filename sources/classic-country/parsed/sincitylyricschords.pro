@@ -1,6 +1,6 @@
 {meta: title Sin City}
 {meta: artist J.D. Crowe}
-{meta: writer Gram Parsons and Chris Hillman}
+{meta: composer Gram Parsons and Chris Hillman}
 
 {start_of_verse: Verse 1}
 [G]This old towns filled with [D7]sin it'll [G]swallow you [C]in

@@ -1,6 +1,6 @@
 {meta: title Fallen Angel Lyrics Chords}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker, Webb Pierce, Marijohn Wilkin}
+{meta: composer Wayne P. Walker, Webb Pierce, Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [C]She's just  a [G7]fallen angel and I'm the fool who made her [C]fall

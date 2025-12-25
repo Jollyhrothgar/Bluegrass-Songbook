@@ -1,6 +1,6 @@
 {meta: title Honeymoon Feeling}
 {meta: artist Roy Clark}
-{meta: writer Ronald Hellard and Gary S. Paxton}
+{meta: composer Ronald Hellard and Gary S. Paxton}
 
 {start_of_verse: Verse 1}
 [C]I still get that [Gm]honeymoon feeling

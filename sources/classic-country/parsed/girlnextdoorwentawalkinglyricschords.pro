@@ -1,6 +1,6 @@
 {meta: title Girl Next Door Went A Walking}
 {meta: artist Elvis Presley}
-{meta: writer Bill Rice and Thomas Wayne}
+{meta: composer Bill Rice and Thomas Wayne}
 
 {start_of_verse: Verse 1}
 [C]The girl next door went a walking she found the boy she likes

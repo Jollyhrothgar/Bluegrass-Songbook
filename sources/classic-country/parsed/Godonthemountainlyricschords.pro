@@ -1,6 +1,6 @@
 {meta: title God On the Mountain}
 {meta: artist Norma Jean}
-{meta: writer Tracy Dartt}
+{meta: composer Tracy Dartt}
 
 {start_of_verse: Verse 1}
 [D7]Life is [G]easy when you're [C]up on the [G]mountain

@@ -1,6 +1,6 @@
 {meta: title Before I'll Set Her Free}
 {meta: artist Conway Twitty}
-{meta: writer Mickey Jaco}
+{meta: composer Mickey Jaco}
 
 {start_of_verse: Verse 1}
 [C]I stood and [F]saw the [C]judge's gavel fall

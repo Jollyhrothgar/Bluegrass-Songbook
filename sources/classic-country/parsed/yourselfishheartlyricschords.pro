@@ -1,6 +1,6 @@
 {meta: title Your Selfish Heart}
 {meta: artist Ricky Skaggs}
-{meta: writer Ruby Rakes and Albert Elliot}
+{meta: composer Ruby Rakes and Albert Elliot}
 
 {start_of_verse: Verse 1}
 [C]I'm going away [F]to stay [C]awhile

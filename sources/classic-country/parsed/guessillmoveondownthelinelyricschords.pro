@@ -1,6 +1,6 @@
 {meta: title Guess I'll Move On Down The Line}
 {meta: artist Bobby Bare}
-{meta: writer Ken Sonenberg and Martin Siegal}
+{meta: composer Ken Sonenberg and Martin Siegal}
 
 {start_of_verse: Verse 1}
 [D7]Stick my thumb out catch a ride

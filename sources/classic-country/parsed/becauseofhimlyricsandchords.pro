@@ -1,6 +1,6 @@
 {meta: title Because Of Him}
 {meta: artist Rhonda Vincent}
-{meta: writer Colbert Croft and Joyce S. Croft}
+{meta: composer Colbert Croft and Joyce S. Croft}
 
 {start_of_verse: Verse 1}
 [C]I know I’ve been saved because of Jesus

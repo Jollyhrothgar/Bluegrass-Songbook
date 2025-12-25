@@ -1,6 +1,6 @@
 {meta: title Let My Love Be Your Pillow}
 {meta: artist Ronnie Milsap}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]When you need a good friend [F]well here I am [C]and

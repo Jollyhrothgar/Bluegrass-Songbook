@@ -1,6 +1,6 @@
 {meta: title Way With Words}
 {meta: artist Carl Smith}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]Seems like I'm always leaving but I can never get gone

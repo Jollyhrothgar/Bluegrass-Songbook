@@ -1,6 +1,6 @@
 {meta: title Say You'll Stay Until Tomorrow}
 {meta: artist Slim Whitman}
-{meta: writer Roger Greenaway and Barry Mason}
+{meta: composer Roger Greenaway and Barry Mason}
 
 {start_of_verse: Verse 1}
 [G]Say you'll stay until [C]tomorrow

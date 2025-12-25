@@ -1,6 +1,6 @@
 {meta: title It Couldn't Have Been Any Better}
 {meta: artist Johnny Duncan with Janie Fricke}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]She just sat there and she [F]brushed her [Dm]hair

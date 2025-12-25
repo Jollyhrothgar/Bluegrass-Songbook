@@ -1,6 +1,6 @@
 {meta: title Down In Caroline}
 {meta: artist Big Country Bluegrass}
-{meta: writer Charlie Monroe}
+{meta: composer Charlie Monroe}
 
 {start_of_verse: Verse 1}
 [G]In the shadow of the pines

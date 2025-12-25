@@ -1,6 +1,6 @@
 {meta: title Jesus Is Coming}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]Well He walked on the [G7]water  and He raised up the [C]dead

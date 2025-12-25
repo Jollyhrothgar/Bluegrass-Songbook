@@ -1,6 +1,6 @@
 {meta: title Hold On Partner}
 {meta: artist Roy Rogers and Clint Black}
-{meta: writer Bobby Paine and Larson Paine}
+{meta: composer Bobby Paine and Larson Paine}
 
 {start_of_verse: Verse 1}
 [G]Well you've been trying to get ahead but you're losing ground

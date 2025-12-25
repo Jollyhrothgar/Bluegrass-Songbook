@@ -1,6 +1,6 @@
 {meta: title Don't Wait On Me}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [G]When the sun wakes up in the [D7]west and lays its [C]head down in the [G]east

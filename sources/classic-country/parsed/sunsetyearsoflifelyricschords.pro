@@ -1,6 +1,6 @@
 {meta: title Sunset Years of Life}
 {meta: artist Slim Dusty and Joy McKean}
-{meta: writer Joe Hayes}
+{meta: composer Joe Hayes}
 
 {start_of_verse: Verse 1}
 [C]Mom and dad's been married [F]50 years [C]today 

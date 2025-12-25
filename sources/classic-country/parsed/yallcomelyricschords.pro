@@ -1,6 +1,6 @@
 {meta: title Y'all Come}
 {meta: artist Porter Wagoner}
-{meta: writer Arleigh E. Duff}
+{meta: composer Arleigh E. Duff}
 
 {start_of_verse: Verse 1}
 [C]When you live in the country

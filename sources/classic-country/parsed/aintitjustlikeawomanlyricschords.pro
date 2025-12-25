@@ -1,6 +1,6 @@
 {meta: title Ain't It Just Like A Woman}
 {meta: artist Tracy Byrd}
-{meta: writer Al Anderson and Jeffrey Steele}
+{meta: composer Al Anderson and Jeffrey Steele}
 
 {start_of_verse: Verse 1}
 [G]When it rains it [C]pours 

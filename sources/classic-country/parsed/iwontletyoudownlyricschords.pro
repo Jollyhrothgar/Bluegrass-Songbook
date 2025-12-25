@@ -1,6 +1,6 @@
 {meta: title I Won’t Let You Down}
 {meta: artist Ricky Skaggs}
-{meta: writer Gary Burr}
+{meta: composer Gary Burr}
 
 {start_of_verse: Verse 1}
 [G]I may not be a [D7]rich man I [G]may not be that [D7]wise

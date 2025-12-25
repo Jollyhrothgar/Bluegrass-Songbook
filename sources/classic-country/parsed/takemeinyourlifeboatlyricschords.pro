@@ -1,6 +1,6 @@
 {meta: title Take Me In Your Lifeboat}
 {meta: artist Del McCoury}
-{meta: writer Chris Hillman}
+{meta: composer Chris Hillman}
 
 {start_of_verse: Verse 1}
 [G]Take me in your lifeboat oh [C]take me in your life[G]boat

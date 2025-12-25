@@ -1,6 +1,6 @@
 {meta: title Now That You Are Gone}
 {meta: artist Lefty Frizzell}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]I never thought that I would be

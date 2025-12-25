@@ -1,6 +1,6 @@
 {meta: title Love’s Gonna Make It Alright}
 {meta: artist George Strait}
-{meta: writer Al Anderson and Chris Stapleton}
+{meta: composer Al Anderson and Chris Stapleton}
 
 {start_of_verse: Verse 1}
 [C]Girl you had [Dm]one of those days

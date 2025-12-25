@@ -1,6 +1,6 @@
 {meta: title Lonesome Old Town}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin}
+{meta: composer Lloene S. Martin}
 
 {start_of_verse: Verse 1}
 [C]In this lonesome lonesome old [G7]town

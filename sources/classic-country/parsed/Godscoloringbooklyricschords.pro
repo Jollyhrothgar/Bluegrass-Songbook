@@ -1,6 +1,6 @@
 {meta: title God's Coloring Book}
 {meta: artist Charley Pride}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [G]To[D7]day as I was walking in the [C]fields just down the [G]way

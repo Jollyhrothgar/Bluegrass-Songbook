@@ -1,6 +1,6 @@
 {meta: title Ninety Miles An Hour Down A Dead End Street}
 {meta: artist Hank Snow}
-{meta: writer Hal Blair and Don Robertson}
+{meta: composer Hal Blair and Don Robertson}
 
 {start_of_verse: Verse 1}
 [G]I took you home from a party and we kissed in fun

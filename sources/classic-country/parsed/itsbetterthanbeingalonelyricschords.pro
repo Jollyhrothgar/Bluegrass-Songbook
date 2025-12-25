@@ -1,6 +1,6 @@
 {meta: title It's Better Than Being Alone}
 {meta: artist Moe Bandy}
-{meta: writer Ed Penney}
+{meta: composer Ed Penney}
 
 {start_of_verse: Verse 1}
 [C]You're a beautiful woman [F]but you look so [C]sad

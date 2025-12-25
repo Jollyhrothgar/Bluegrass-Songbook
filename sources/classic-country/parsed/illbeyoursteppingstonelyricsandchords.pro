@@ -1,6 +1,6 @@
 {meta: title I'll Be Your Stepping Stone}
 {meta: artist J.D. Crowe}
-{meta: writer Bobby Hart, Sonny Thompson, Tommy Boyce}
+{meta: composer Bobby Hart, Sonny Thompson, Tommy Boyce}
 
 {start_of_verse: Verse 1}
 [G]I'll be your [C]stepping stone 

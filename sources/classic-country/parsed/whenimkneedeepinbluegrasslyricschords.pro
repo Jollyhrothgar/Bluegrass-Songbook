@@ -1,6 +1,6 @@
 {meta: title When I'm Knee Deep In Bluegrass}
 {meta: artist Doyle Lawson}
-{meta: writer Pete Goble}
+{meta: composer Pete Goble}
 
 {start_of_verse: Verse 1}
 [C]Everything I own is in my old Ford [F]except what's on my [C]back

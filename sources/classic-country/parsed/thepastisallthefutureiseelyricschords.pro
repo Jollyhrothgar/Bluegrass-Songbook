@@ -1,6 +1,6 @@
 {meta: title The Past Is All The Future I See}
 {meta: artist Stonewall Jackson}
-{meta: writer Benny Williams and Thomas Harris}
+{meta: composer Benny Williams and Thomas Harris}
 
 {start_of_verse: Verse 1}
 [G]When she left me all [C]she left me was [G]lonely

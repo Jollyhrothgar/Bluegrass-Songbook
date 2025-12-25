@@ -1,6 +1,6 @@
 {meta: title I Try To Think About Elvi}
 {meta: artist Patty Loveless}
-{meta: writer Gary Burr}
+{meta: composer Gary Burr}
 
 {start_of_verse: Verse 1}
 [C]I try to think about Elvis 

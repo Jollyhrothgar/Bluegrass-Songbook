@@ -1,6 +1,6 @@
 {meta: title Christmas In The Mountains}
 {meta: artist Larry Sparks}
-{meta: writer Bill Castle}
+{meta: composer Bill Castle}
 
 {start_of_verse: Verse 1}
 [G]The mountains and the meadows

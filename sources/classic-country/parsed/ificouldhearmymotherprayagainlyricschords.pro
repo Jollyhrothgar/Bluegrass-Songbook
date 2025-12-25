@@ -1,6 +1,6 @@
 {meta: title If I Could Hear My Mother Pray Again}
 {meta: artist George Jones}
-{meta: writer James Rowe and James W. Vaughn}
+{meta: composer James Rowe and James W. Vaughn}
 
 {start_of_verse: Verse 1}
 [G]How sweet and happy seemed those [C]days of which I [G]dream

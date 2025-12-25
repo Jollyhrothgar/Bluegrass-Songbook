@@ -1,6 +1,6 @@
 {meta: title If We Never Had}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]If we took just a [F]little more [C]than we should have taken

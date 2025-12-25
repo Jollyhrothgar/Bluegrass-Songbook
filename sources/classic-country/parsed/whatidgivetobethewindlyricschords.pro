@@ -1,6 +1,6 @@
 {meta: title What I'd Give (To Be The Wind)}
 {meta: artist Roger Miller}
-{meta: writer Curly Putman and Red Lane}
+{meta: composer Curly Putman and Red Lane}
 
 {start_of_verse: Verse 1}
 [G]I watch the wind blow [C]brown leaves to the [G]ground

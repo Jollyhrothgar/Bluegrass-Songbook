@@ -1,6 +1,6 @@
 {meta: title Look At The One (Who's Been Looking At You)}
 {meta: artist Reba McEntire}
-{meta: writer Bob Morrison, Johnny McRae, Wanda Mallette}
+{meta: composer Bob Morrison, Johnny McRae, Wanda Mallette}
 
 {start_of_verse: Verse 1}
 Look At The One (Who's Been Looking At You)

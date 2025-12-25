@@ -1,6 +1,6 @@
 {meta: title It's Bad When You're Caught With The Goods}
 {meta: artist Tommy Overstreet}
-{meta: writer Dale Vest and Tommy Overstreet}
+{meta: composer Dale Vest and Tommy Overstreet}
 
 {start_of_verse: Verse 1}
 [C]When your woman has learned you been [F]cheating on her

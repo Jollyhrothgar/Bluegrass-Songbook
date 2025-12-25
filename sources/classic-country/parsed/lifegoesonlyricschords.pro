@@ -1,6 +1,6 @@
 {meta: title Life Goes On}
 {meta: artist Johnny Cash}
-{meta: writer Jack Clement and Johnny Cash}
+{meta: composer Jack Clement and Johnny Cash}
 
 {start_of_verse: Verse 1}
 [G]My baby left me [C]just the other [G]day

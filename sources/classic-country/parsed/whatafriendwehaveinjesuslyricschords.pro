@@ -1,6 +1,6 @@
 {meta: title What A Friend We Have In Jesus}
 {meta: artist Rhonda Vincent}
-{meta: writer Joseph Scrivens and Charles Converse}
+{meta: composer Joseph Scrivens and Charles Converse}
 
 {start_of_verse: Verse 1}
 [G]What a friend we have in [C]Jesus

@@ -1,6 +1,6 @@
 {meta: title Mary Did You Know}
 {meta: artist Kenny Rogers and Wynonna Judd}
-{meta: writer Mark Lowery and Buddy Greene}
+{meta: composer Mark Lowery and Buddy Greene}
 
 {start_of_verse: Verse 1}
 [Am]Mary did you know that your baby [G7]boy

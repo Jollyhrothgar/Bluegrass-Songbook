@@ -1,6 +1,6 @@
 {meta: title God Guide Our Leader's Hand}
 {meta: artist Jimmy Martin}
-{meta: writer Tex Climer, Paul William, Jimmy Martin}
+{meta: composer Tex Climer, Paul William, Jimmy Martin}
 
 {start_of_verse: Verse 1}
 [G]Oh dear [C]God please watch and guide our greatest [G]leaders

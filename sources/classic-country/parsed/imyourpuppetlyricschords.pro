@@ -1,6 +1,6 @@
 {meta: title I'm Your Puppet}
 {meta: artist Mickey Gilley}
-{meta: writer Dan Penn and Spooner Oldham}
+{meta: composer Dan Penn and Spooner Oldham}
 
 {start_of_verse: Verse 1}
 [C]Just pull my [Dm]string 

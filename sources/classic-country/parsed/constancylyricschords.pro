@@ -1,6 +1,6 @@
 {meta: title Constancy}
 {meta: artist Marty Robbins}
-{meta: writer John Avery Noble}
+{meta: composer John Avery Noble}
 
 {start_of_verse: Verse 1}
 [G]When the [D7]dews of the evening are [G]falling

@@ -1,6 +1,6 @@
 {meta: title Second Fiddle To An Old Guitar}
 {meta: artist Jean Shepard}
-{meta: writer Betty Amos and Guy Willis}
+{meta: composer Betty Amos and Guy Willis}
 
 {start_of_verse: Verse 1}
 [C]Once we were so happy you [F]were my very [C]own

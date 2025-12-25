@@ -1,6 +1,6 @@
 {meta: title Wild Rose}
 {meta: artist Jim Reeves}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]A rose should be where the sun shines through 

@@ -1,6 +1,6 @@
 {meta: title Learn From A Fool}
 {meta: artist Ferlin Husky}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [G]You and your [F]new love are gonna [G]make it

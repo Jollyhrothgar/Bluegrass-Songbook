@@ -1,6 +1,6 @@
 {meta: title Didn't She Really Thrill Them}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Allan Chapman}
+{meta: composer Allan Chapman}
 
 {start_of_verse: Verse 1}
 [C]She sits there on her front porch every day at four [Em]o'clock

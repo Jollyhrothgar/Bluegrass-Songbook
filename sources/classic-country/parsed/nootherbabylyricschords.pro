@@ -1,6 +1,6 @@
 {meta: title No Other Baby}
 {meta: artist Bobby Helms}
-{meta: writer Dick Bishop and Bob Watson}
+{meta: composer Dick Bishop and Bob Watson}
 
 {start_of_verse: Verse 1}
 [C]I don't want no [F]other baby but [C]you

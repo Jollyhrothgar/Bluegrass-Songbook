@@ -1,6 +1,6 @@
 {meta: title End Of The World}
 {meta: artist Brenda Lee}
-{meta: writer Arthur Kent and Sylvia Dee}
+{meta: composer Arthur Kent and Sylvia Dee}
 
 {start_of_verse: Verse 1}
 [C]Why does the sun go on [G7]shining

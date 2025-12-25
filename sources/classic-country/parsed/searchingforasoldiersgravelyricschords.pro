@@ -1,6 +1,6 @@
 {meta: title Searching For A Soldier's Grave}
 {meta: artist Hank Williams}
-{meta: writer Roy Acuff}
+{meta: composer Roy Acuff}
 
 {start_of_verse: Verse 1}
 [C]You ask me stranger why I made this [F]journey

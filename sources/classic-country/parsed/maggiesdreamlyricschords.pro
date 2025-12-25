@@ -1,6 +1,6 @@
 {meta: title Maggie's Dream}
 {meta: artist Don Williams}
-{meta: writer Dave Loggins and Lisa Silver}
+{meta: composer Dave Loggins and Lisa Silver}
 
 {start_of_verse: Verse 1}
 [G]Maggie's up each morning at four [C]am

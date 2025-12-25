@@ -1,6 +1,6 @@
 {meta: title I'm Stoned}
 {meta: artist Alabama}
-{meta: writer Randy Owens and Teddy Gentry}
+{meta: composer Randy Owens and Teddy Gentry}
 
 {start_of_verse: Verse 1}
 [C]Sitting here and drinking hey that's my favorite [G7]song

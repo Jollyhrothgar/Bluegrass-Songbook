@@ -1,6 +1,6 @@
 {meta: title Sound Of A Heartache}
 {meta: artist Johnny Bush}
-{meta: writer Johnny Bush}
+{meta: composer Johnny Bush}
 
 {start_of_verse: Verse 1}
 [C]Loneliness surrounds me 

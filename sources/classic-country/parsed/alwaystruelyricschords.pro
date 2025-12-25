@@ -1,6 +1,6 @@
 {meta: title Always True}
 {meta: artist Vernon Oxford}
-{meta: writer David Allen Loggins}
+{meta: composer David Allen Loggins}
 
 {start_of_verse: Verse 1}
 [C]Sometimes a woman will catch my eye

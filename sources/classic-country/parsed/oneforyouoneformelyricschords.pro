@@ -1,6 +1,6 @@
 {meta: title One For You One For Me}
 {meta: artist George Morgan}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]We're breaking up now after all these [D7]years

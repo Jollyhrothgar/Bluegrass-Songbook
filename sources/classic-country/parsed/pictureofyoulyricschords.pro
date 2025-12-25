@@ -1,6 +1,6 @@
 {meta: title Picture Of You}
 {meta: artist Charlie Rich}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [D7]It's [G]only a [E7]face in a [Am]frame 

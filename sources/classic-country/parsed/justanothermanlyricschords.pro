@@ -1,6 +1,6 @@
 {meta: title Just Another Man}
 {meta: artist Glen Campbell}
-{meta: writer Joe Allison and Glen Campbell}
+{meta: composer Joe Allison and Glen Campbell}
 
 {start_of_verse: Verse 1}
 [C]I'd like to [A]stay with you a [F]while  [C]but I have [A]promises to [F]keep

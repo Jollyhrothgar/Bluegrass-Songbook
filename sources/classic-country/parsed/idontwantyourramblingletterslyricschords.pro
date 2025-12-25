@@ -1,6 +1,6 @@
 {meta: title I Don't Want Your Rambling Letters}
 {meta: artist Stanley Brothers}
-{meta: writer N. Nath, Gene C. Redd and Ray Starr}
+{meta: composer N. Nath, Gene C. Redd and Ray Starr}
 
 {start_of_verse: Verse 1}
 [C]I don't want your [G7]rambling [C]letters

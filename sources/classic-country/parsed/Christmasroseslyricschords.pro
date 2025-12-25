@@ -1,6 +1,6 @@
 {meta: title Christmas Roses}
 {meta: artist Hank Snow}
-{meta: writer Paula Frances and Gary Romero}
+{meta: composer Paula Frances and Gary Romero}
 
 {start_of_verse: Verse 1}
 [C]Christmas roses to you I'm sending

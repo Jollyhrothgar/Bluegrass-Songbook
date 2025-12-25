@@ -1,6 +1,6 @@
 {meta: title Arms of a Fool}
 {meta: artist Mel Tillis}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [C]So many times you've told me that you love [G7]me

@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Crazy}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Frank Dycus}
+{meta: composer Dean Dillon and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [C]There's a hundred dollar [G7]bill on the [C]table

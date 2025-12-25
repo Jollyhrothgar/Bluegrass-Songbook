@@ -1,6 +1,6 @@
 {meta: title Hello In There}
 {meta: artist Kris Kristofferson}
-{meta: writer John Prine}
+{meta: composer John Prine}
 
 {start_of_verse: Verse 1}
 [G]We had an a[C]partment in the [D7]city

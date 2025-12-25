@@ -1,6 +1,6 @@
 {meta: title Burnin' the Roadhouse Down}
 {meta: artist Steve Wariner with Garth Brooks}
-{meta: writer Rick Carnes and Steve Wariner}
+{meta: composer Rick Carnes and Steve Wariner}
 
 {start_of_verse: Verse 1}
 [G]Well the crowd is getting restless

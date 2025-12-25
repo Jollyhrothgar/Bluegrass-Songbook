@@ -1,6 +1,6 @@
 {meta: title Hey Mr. Bluebird}
 {meta: artist Ernest Tubb}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Hey Mr. [C]Bluebird come stay with [G]me

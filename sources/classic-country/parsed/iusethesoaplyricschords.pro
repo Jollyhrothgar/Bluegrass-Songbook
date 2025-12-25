@@ -1,6 +1,6 @@
 {meta: title I Use The Soap}
 {meta: artist Tanya Tucker}
-{meta: writer David Gates}
+{meta: composer David Gates}
 
 {start_of_verse: Verse 1}
 [G]I use the soap to wash the [Em]dirt off my face

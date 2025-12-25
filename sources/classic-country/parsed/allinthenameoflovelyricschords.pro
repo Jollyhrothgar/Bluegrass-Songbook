@@ -1,6 +1,6 @@
 {meta: title All In The Name Of Love}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]Take me in the name of [Am]love

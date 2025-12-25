@@ -1,6 +1,6 @@
 {meta: title Heart Of Hearts}
 {meta: artist Don Williams}
-{meta: writer Al Anderson, Sharon Vaughn, Stephen Bruton}
+{meta: composer Al Anderson, Sharon Vaughn, Stephen Bruton}
 
 {start_of_verse: Verse 1}
 [G]In your heart of hearts there is a voice

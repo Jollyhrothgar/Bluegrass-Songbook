@@ -1,6 +1,6 @@
 {meta: title I Still Write Your Name In The Snow}
 {meta: artist Chet Atkins}
-{meta: writer Billy Edd Wheeler and Chet Atkins}
+{meta: composer Billy Edd Wheeler and Chet Atkins}
 
 {start_of_verse: Verse 1}
 [G]Well I'm almost sorry now I [C]caught you messin' [G]round 

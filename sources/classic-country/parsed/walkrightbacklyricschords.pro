@@ -1,6 +1,6 @@
 {meta: title Walk Right Back}
 {meta: artist Nanci Griffith}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [C]I want you to tell me why you walked out on me 

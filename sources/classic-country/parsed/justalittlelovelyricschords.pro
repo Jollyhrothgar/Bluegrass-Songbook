@@ -1,6 +1,6 @@
 {meta: title Just A Little Love}
 {meta: artist Reba McEntire}
-{meta: writer Dennis Morgan and Steve Davis}
+{meta: composer Dennis Morgan and Steve Davis}
 
 {start_of_verse: Verse 1}
 [G7]When our [C]check bounces at the store 

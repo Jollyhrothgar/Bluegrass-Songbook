@@ -1,6 +1,6 @@
 {meta: title When You Are Gone}
 {meta: artist Jim Reeves}
-{meta: writer Dean Manuel and Jim Reeves}
+{meta: composer Dean Manuel and Jim Reeves}
 
 {start_of_verse: Verse 1}
 [G]When you are gone  there's no fun with the [C]crowd

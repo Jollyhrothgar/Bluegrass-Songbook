@@ -1,6 +1,6 @@
 {meta: title Early Morning Rain}
 {meta: artist George Hamilton IV}
-{meta: writer Gordon Lightfoot}
+{meta: composer Gordon Lightfoot}
 
 {start_of_verse: Verse 1}
 [C]In the early morning [Em]rain  [G7]with a dollar in my [C]hand

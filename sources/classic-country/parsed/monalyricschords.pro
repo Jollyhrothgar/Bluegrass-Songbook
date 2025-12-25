@@ -1,6 +1,6 @@
 {meta: title Mona}
 {meta: artist Waylon Jennings}
-{meta: writer Miriam Eddy}
+{meta: composer Miriam Eddy}
 
 {start_of_verse: Verse 1}
 [G]I can give you golden tinkling bells 

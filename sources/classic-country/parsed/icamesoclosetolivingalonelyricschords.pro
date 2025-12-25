@@ -1,6 +1,6 @@
 {meta: title I Came So Close To Living Alone}
 {meta: artist Merle Haggard}
-{meta: writer Jimmie Davis and Ken Hunt}
+{meta: composer Jimmie Davis and Ken Hunt}
 
 {start_of_verse: Verse 1}
 [C]I came close  so close [G7]to [C]failure 

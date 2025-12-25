@@ -1,6 +1,6 @@
 {meta: title Didn't We}
 {meta: artist Lee Greenwood}
-{meta: writer Graham Hamilton Lyle and Troy Harold Seals}
+{meta: composer Graham Hamilton Lyle and Troy Harold Seals}
 
 {start_of_verse: Verse 1}
 [C]I think of all the times I [F]needed you 

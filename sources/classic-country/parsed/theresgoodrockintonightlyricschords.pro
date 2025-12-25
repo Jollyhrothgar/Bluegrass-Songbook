@@ -1,6 +1,6 @@
 {meta: title There's Good Rockin' Tonight}
 {meta: artist Ricky Nelson}
-{meta: writer Roy Brown}
+{meta: composer Roy Brown}
 
 {start_of_verse: Verse 1}
 [C]Well did you hear the news there's good rockin' tonight

@@ -1,6 +1,6 @@
 {meta: title Christmas Can't Be Far Away}
 {meta: artist Eddy Arnold}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]A neighbor tipped his hat [Am]to me this [C]morning

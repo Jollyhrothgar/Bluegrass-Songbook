@@ -1,6 +1,6 @@
 {meta: title It’s That Time Of The Night}
 {meta: artist Jim Ed Brown}
-{meta: writer Billy Graham}
+{meta: composer Billy Graham}
 
 {start_of_verse: Verse 1}
 [G]I know it's after midnight and I'm knocking on your door 

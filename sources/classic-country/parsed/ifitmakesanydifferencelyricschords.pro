@@ -1,6 +1,6 @@
 {meta: title If It Makes Any Difference}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [D7]If it [G]makes any difference 

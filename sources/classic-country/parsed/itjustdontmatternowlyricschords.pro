@@ -1,6 +1,6 @@
 {meta: title It Just Don’t Matter Now}
 {meta: artist Hank Williams}
-{meta: writer Ernest Tubb}
+{meta: composer Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]For years I’ve lived without [F]a meaning

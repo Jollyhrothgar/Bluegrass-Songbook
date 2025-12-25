@@ -1,6 +1,6 @@
 {meta: title Big Boss Man}
 {meta: artist Charlie Rich}
-{meta: writer Al Smith and Luther Dixon}
+{meta: composer Al Smith and Luther Dixon}
 
 {start_of_verse: Verse 1}
 [G]Big boss man won't you hear me when I call

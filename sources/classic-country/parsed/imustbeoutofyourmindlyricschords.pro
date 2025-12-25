@@ -1,6 +1,6 @@
 {meta: title I Must Be Out Of Your Mind}
 {meta: artist Johnny Bush}
-{meta: writer Glenn Sutton and Carl Jackson}
+{meta: composer Glenn Sutton and Carl Jackson}
 
 {start_of_verse: Verse 1}
 [C]I stare at the [G7]phone [Am]pretend that it's [F]ringing

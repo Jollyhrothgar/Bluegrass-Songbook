@@ -1,6 +1,6 @@
 {meta: title My Old Friend}
 {meta: artist Keith Whitley}
-{meta: writer Claude Putman Jr. and Keith Whitley}
+{meta: composer Claude Putman Jr. and Keith Whitley}
 
 {start_of_verse: Verse 1}
 [C]I used to get a lot of [F]pleasure from the [C]bottle

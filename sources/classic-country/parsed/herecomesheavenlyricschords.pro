@@ -1,6 +1,6 @@
 {meta: title Here Comes Heaven}
 {meta: artist Eddy Arnold}
-{meta: writer Bob Tubert and Joe Byers}
+{meta: composer Bob Tubert and Joe Byers}
 
 {start_of_verse: Verse 1}
 [G]Here comes heaven  all [C]satin and [D7]lace

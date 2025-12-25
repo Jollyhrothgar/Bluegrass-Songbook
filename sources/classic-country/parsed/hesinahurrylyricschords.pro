@@ -1,6 +1,6 @@
 {meta: title He's In A Hurry}
 {meta: artist Johnny Paycheck}
-{meta: writer Joe Poovey}
+{meta: composer Joe Poovey}
 
 {start_of_verse: Verse 1}
 [G]I've seen him quit holding a [F]straight flush with [G]aces high

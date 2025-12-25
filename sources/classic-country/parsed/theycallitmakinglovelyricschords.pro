@@ -1,6 +1,6 @@
 {meta: title They Call It Making Love}
 {meta: artist Tammy Wynette}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]A little barroom [F]on his [C]way home

@@ -1,6 +1,6 @@
 {meta: title She Loves Me Right Out Of My Mind}
 {meta: artist George Jones}
-{meta: writer Freddy Weller and Spooner Oldham}
+{meta: composer Freddy Weller and Spooner Oldham}
 
 {start_of_verse: Verse 1}
 [C]She may not be the girl that I'll [F]marry

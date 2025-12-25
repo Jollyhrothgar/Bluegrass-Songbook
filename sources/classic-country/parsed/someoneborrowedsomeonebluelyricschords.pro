@@ -1,6 +1,6 @@
 {meta: title Someone Borrowed Someone Blue}
 {meta: artist Eddy Raven}
-{meta: writer Steve Dean, Frank Myers, David Hungate}
+{meta: composer Steve Dean, Frank Myers, David Hungate}
 
 {start_of_verse: Verse 1}
 [G]You didn't [Em]fall in love to be [Am]alone[D7]

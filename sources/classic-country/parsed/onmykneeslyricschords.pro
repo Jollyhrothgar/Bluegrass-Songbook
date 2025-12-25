@@ -1,6 +1,6 @@
 {meta: title On My Knees}
 {meta: artist Charlie Rich}
-{meta: writer Charlie Rich}
+{meta: composer Charlie Rich}
 
 {start_of_verse: Verse 1}
 [G]On my knees  I [C]ask you [G]please 

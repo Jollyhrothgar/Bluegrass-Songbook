@@ -1,6 +1,6 @@
 {meta: title The Pale Horse And His Rider}
 {meta: artist Hank Williams Sr.}
-{meta: writer Johnny Bailes, Ervin Staggs, Zeke Clements}
+{meta: composer Johnny Bailes, Ervin Staggs, Zeke Clements}
 
 {start_of_verse: Verse 1}
 [G]Listen poor sinner you're drifting away 

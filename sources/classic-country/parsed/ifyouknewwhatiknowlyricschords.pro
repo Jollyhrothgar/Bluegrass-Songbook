@@ -1,6 +1,6 @@
 {meta: title If You Knew What I Know}
 {meta: artist Wanda Jackson}
-{meta: writer Hal Southern and Wayne West}
+{meta: composer Hal Southern and Wayne West}
 
 {start_of_verse: Verse 1}
 [G]Oh [C]if you knew what [G]I know you'd be glad to [D7]let him [G]go

@@ -1,6 +1,6 @@
 {meta: title I'll Make Believe}
 {meta: artist Ricky Nelson}
-{meta: writer Johnny Rivers}
+{meta: composer Johnny Rivers}
 
 {start_of_verse: Verse 1}
 [C]I'll make believe [F]that I don't [C]miss you

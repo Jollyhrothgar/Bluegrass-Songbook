@@ -1,6 +1,6 @@
 {meta: title The Angels Cried}
 {meta: artist Alan Jackson}
-{meta: writer Harley Allen and Deborah Nims}
+{meta: composer Harley Allen and Deborah Nims}
 
 {start_of_verse: Verse 1}
 [D7]They [G7]came from near they [D7]came from far

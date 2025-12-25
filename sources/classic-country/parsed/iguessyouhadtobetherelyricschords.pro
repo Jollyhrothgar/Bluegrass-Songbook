@@ -1,6 +1,6 @@
 {meta: title I Guess You Had To Be There}
 {meta: artist Lorrie Morgan}
-{meta: writer Jon Robbin and Barbara Lloyd}
+{meta: composer Jon Robbin and Barbara Lloyd}
 
 {start_of_verse: Verse 1}
 [C]Hello honey how was [C7]your day well [F]you're sure in a good mood tonight

@@ -1,6 +1,6 @@
 {meta: title God Is Always The Same}
 {meta: artist Jimmy Martin}
-{meta: writer Jimmy Martin and Paul Williams}
+{meta: composer Jimmy Martin and Paul Williams}
 
 {start_of_verse: Verse 1}
 [C]I heard some neighbors talking

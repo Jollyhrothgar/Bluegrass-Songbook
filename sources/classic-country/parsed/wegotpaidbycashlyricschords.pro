@@ -1,6 +1,6 @@
 {meta: title We Got Paid By Cash}
 {meta: artist Statler Brothers}
-{meta: writer Harold Reid and Don Reid}
+{meta: composer Harold Reid and Don Reid}
 
 {start_of_verse: Verse 1}
 [C]It started March of sixty-four [F]many years [C]ago

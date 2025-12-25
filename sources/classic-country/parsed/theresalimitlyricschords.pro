@@ -1,6 +1,6 @@
 {meta: title There's A Limit}
 {meta: artist Stonewall Jackson}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 There's A Limit

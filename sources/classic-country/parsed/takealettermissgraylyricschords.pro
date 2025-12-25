@@ -1,6 +1,6 @@
 {meta: title Take A Letter Miss Gray}
 {meta: artist Faron Young}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]Take a letter Miss [F]Gray 

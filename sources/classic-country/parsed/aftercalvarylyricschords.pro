@@ -1,6 +1,6 @@
 {meta: title After Calvary}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Laverne Tripp}
+{meta: composer Laverne Tripp}
 
 {start_of_verse: Verse 1}
 [C]Take my hand lead me [G7]through  darkest [C]valleys

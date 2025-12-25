@@ -1,6 +1,6 @@
 {meta: title Anymore}
 {meta: artist Porter Wagoner}
-{meta: writer Vic McAlpin, Roy Drusky, Marie Wilson}
+{meta: composer Vic McAlpin, Roy Drusky, Marie Wilson}
 
 {start_of_verse: Verse 1}
 [C]And I [G7]don't believe you love me anymore [C][G7][C]anymore

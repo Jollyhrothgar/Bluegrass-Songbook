@@ -1,6 +1,6 @@
 {meta: title It Ain't My Job To Tote Your Monkey}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson, Rex Schnelle, Rivers Rutherford}
+{meta: composer Bill Anderson, Rex Schnelle, Rivers Rutherford}
 
 {start_of_verse: Verse 1}
 [C]So the government’s crazy and the [F]weather’s all wrong

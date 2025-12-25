@@ -1,6 +1,6 @@
 {meta: title I Don't Know You (Anymore)}
 {meta: artist Tommy Overstreet}
-{meta: writer Ricci Mareno and Charlie Black}
+{meta: composer Ricci Mareno and Charlie Black}
 
 {start_of_verse: Verse 1}
 [C]No I don't [G7]know you any[F]more

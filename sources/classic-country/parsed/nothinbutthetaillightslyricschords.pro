@@ -1,6 +1,6 @@
 {meta: title Nothin' But The Taillights}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Steve Wariner}
+{meta: composer Clint Black and Steve Wariner}
 
 {start_of_verse: Verse 1}
 [G]Blue Kentucky [D7]highway [C]headin' for the [G]line

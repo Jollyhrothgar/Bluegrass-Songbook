@@ -1,6 +1,6 @@
 {meta: title Bring Your Heart Home}
 {meta: artist Ernest Tubb}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [G]Bring your heart [C]home quit your [G]wandering

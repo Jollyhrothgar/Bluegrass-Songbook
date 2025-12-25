@@ -1,6 +1,6 @@
 {meta: title Arms Length From You}
 {meta: artist Wynn Stewart}
-{meta: writer Jim Stewart and Wynn Stewart}
+{meta: composer Jim Stewart and Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [C]I'm just a smile away from crying 

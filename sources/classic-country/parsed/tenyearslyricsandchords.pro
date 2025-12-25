@@ -1,6 +1,6 @@
 {meta: title Ten Years}
 {meta: artist Bob Wills}
-{meta: writer Johnny Bond}
+{meta: composer Johnny Bond}
 
 {start_of_verse: Verse 1}
 [C]Ten years or more [F]I’ve been [C]waiting

@@ -1,6 +1,6 @@
 {meta: title Sail Away}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Rafe Van Hoy}
+{meta: composer Rafe Van Hoy}
 
 {start_of_verse: Verse 1}
 [C]Across the bay a lady waits to hold me [G7]tight

@@ -1,6 +1,6 @@
 {meta: title That's Jesus}
 {meta: artist Randy Travis}
-{meta: writer Michael Curtis and Randy Travis}
+{meta: composer Michael Curtis and Randy Travis}
 
 {start_of_verse: Verse 1}
 [C]When I [D7]wake up in the morning put my [C]feet on the [G]floor

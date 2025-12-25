@@ -1,6 +1,6 @@
 {meta: title I'm Playing For You}
 {meta: artist Ronnie Milsap}
-{meta: writer Keith Stegall and Lewis Anderson}
+{meta: composer Keith Stegall and Lewis Anderson}
 
 {start_of_verse: Verse 1}
 [C]The show is over the [F]footlights are dim

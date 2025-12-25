@@ -1,6 +1,6 @@
 {meta: title Couple More Years}
 {meta: artist Waylon Jennings}
-{meta: writer Shel Silverstein and Dennis Locorriere}
+{meta: composer Shel Silverstein and Dennis Locorriere}
 
 {start_of_verse: Verse 1}
 [G]I've got a couple more years on you baby that's [D7]all

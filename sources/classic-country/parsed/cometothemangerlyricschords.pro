@@ -1,6 +1,6 @@
 {meta: title Come To The Manger}
 {meta: artist Jimmie Davis}
-{meta: writer Jimmie Davis and J.S. Eastman}
+{meta: composer Jimmie Davis and J.S. Eastman}
 
 {start_of_verse: Verse 1}
 [C]In the [G7]fullness of [C]time  we're told long [G7]ago

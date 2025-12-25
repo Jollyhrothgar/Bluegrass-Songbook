@@ -1,6 +1,6 @@
 {meta: title Grandma Sang Off Key}
 {meta: artist Wanda Jackson}
-{meta: writer Vera B. Lakey}
+{meta: composer Vera B. Lakey}
 
 {start_of_verse: Verse 1}
 [G]One of the fondest [C]memories that I have as a [G]child

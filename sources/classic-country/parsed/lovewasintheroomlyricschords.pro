@@ -1,6 +1,6 @@
 {meta: title Love Was In The Room}
 {meta: artist The Booth Brothers}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [C]It was early in the morning

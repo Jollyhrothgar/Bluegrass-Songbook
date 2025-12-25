@@ -1,6 +1,6 @@
 {meta: title Too Tough To Tame}
 {meta: artist John Anderson}
-{meta: writer Max D. Barnes and John Anderson}
+{meta: composer Max D. Barnes and John Anderson}
 
 {start_of_verse: Verse 1}
 [C]My friends all try to tell me she'll only break your heart

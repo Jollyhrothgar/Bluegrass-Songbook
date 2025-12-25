@@ -1,6 +1,6 @@
 {meta: title I’m Casting My Lasso Toward The Sky}
 {meta: artist Jimmy Wakely}
-{meta: writer Jimmy Wakely and Lee White}
+{meta: composer Jimmy Wakely and Lee White}
 
 {start_of_verse: Verse 1}
 [G]I’m casting my lasso [C]way up towards the sky

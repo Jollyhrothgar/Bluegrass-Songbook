@@ -1,6 +1,6 @@
 {meta: title You're Gonna Lose Her Like That}
 {meta: artist Moe Bandy}
-{meta: writer Peggy Forman and Wayne Forman}
+{meta: composer Peggy Forman and Wayne Forman}
 
 {start_of_verse: Verse 1}
 [C]She fixed up her hair bought her a new dress this [G7]morning

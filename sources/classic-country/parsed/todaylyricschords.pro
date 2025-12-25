@@ -1,6 +1,6 @@
 {meta: title Today}
 {meta: artist John Denver}
-{meta: writer Randy Sparks}
+{meta: composer Randy Sparks}
 
 {start_of_verse: Verse 1}
 [C]Today while the [Am]blossoms still [Dm]cling to the [G7]vine

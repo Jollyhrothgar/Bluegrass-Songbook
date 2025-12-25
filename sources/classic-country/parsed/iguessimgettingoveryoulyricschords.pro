@@ -1,6 +1,6 @@
 {meta: title I Guess I'm Getting Over You}
 {meta: artist Hank Thompson}
-{meta: writer Al Blasingame and Hank Thompson}
+{meta: composer Al Blasingame and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [C]I guess I'm getting over you [F]cause less and less I [C]cry

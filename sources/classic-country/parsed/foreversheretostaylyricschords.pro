@@ -1,6 +1,6 @@
 {meta: title Forever's Here To Stay}
 {meta: artist George Jones}
-{meta: writer Buddy Cannon and Larry Bastian}
+{meta: composer Buddy Cannon and Larry Bastian}
 
 {start_of_verse: Verse 1}
 [C]She stepped out of the Taxi with a [F]suitcase in her hand

@@ -1,6 +1,6 @@
 {meta: title Wrong Road Again}
 {meta: artist Cal Smith}
-{meta: writer Allen Reynolds}
+{meta: composer Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [C]I can't seem to [F]learn not to [C]love you

@@ -1,6 +1,6 @@
 {meta: title Your Love's Been A Long Time Coming}
 {meta: artist Elvis Presley}
-{meta: writer Rory Bourke}
+{meta: composer Rory Bourke}
 
 {start_of_verse: Verse 1}
 [C]The first time I saw you I knew I was

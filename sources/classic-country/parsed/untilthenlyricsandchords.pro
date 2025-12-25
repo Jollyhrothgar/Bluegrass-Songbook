@@ -1,6 +1,6 @@
 {meta: title Until Then}
 {meta: artist Ray Price}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [Em](Until the [C]day God [Dm]calls me [G]home)

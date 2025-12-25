@@ -1,6 +1,6 @@
 {meta: title I'll Share My World With You}
 {meta: artist George Jones}
-{meta: writer Ben Wilson}
+{meta: composer Ben Wilson}
 
 {start_of_verse: Verse 1}
 [G]I'll share my world with [D7]you

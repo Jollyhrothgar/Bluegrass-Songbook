@@ -1,6 +1,6 @@
 {meta: title Cowboy Christmas}
 {meta: artist Moe Bandy}
-{meta: writer Kent Blazy, Kim Williams, Clay Walker}
+{meta: composer Kent Blazy, Kim Williams, Clay Walker}
 
 {start_of_verse: Verse 1}
 [C]Riding through the snow [G7]the wind is [C]howling

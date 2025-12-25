@@ -1,6 +1,6 @@
 {meta: title Hillbilly Heart}
 {meta: artist Johnny Rodriguez}
-{meta: writer Johnny Christopher and Dan Penn}
+{meta: composer Johnny Christopher and Dan Penn}
 
 {start_of_verse: Verse 1}
 [C]She's got a [F]hillbilly [C]heart

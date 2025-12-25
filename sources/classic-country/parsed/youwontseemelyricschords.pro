@@ -1,6 +1,6 @@
 {meta: title You Won't See Me}
 {meta: artist Anne Murray}
-{meta: writer John Lennon and Paul McCartney}
+{meta: composer John Lennon and Paul McCartney}
 
 {start_of_verse: Verse 1}
 [G]When I call you [A7]up your [C]line's en[G]gaged

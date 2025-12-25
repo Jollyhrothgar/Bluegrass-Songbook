@@ -1,6 +1,6 @@
 {meta: title Neon Playboy}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Joe Allison}
+{meta: composer Red Steagall and Joe Allison}
 
 {start_of_verse: Verse 1}
 [C]I'm just a [F]neon [G7]playboy [C]living day to [F]day [C]boy

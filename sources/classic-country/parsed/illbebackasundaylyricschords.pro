@@ -1,6 +1,6 @@
 {meta: title I’ll Be Back A-Sunday}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Jimmy Dickens and Gordon Hall}
+{meta: composer Jimmy Dickens and Gordon Hall}
 
 {start_of_verse: Verse 1}
 [C]My little pea-patch sweetheart you're cute as pumpkin [D7]seed

@@ -1,6 +1,6 @@
 {meta: title I'll Never Make It Through This Fall}
 {meta: artist David Ball}
-{meta: writer William Collins Spencer and David Ball}
+{meta: composer William Collins Spencer and David Ball}
 
 {start_of_verse: Verse 1}
 [C]Cold wind a blowing across the river

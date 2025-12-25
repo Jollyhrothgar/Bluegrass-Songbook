@@ -1,6 +1,6 @@
 {meta: title In Your Arms Of Love}
 {meta: artist Wynn Stewart}
-{meta: writer Buck Owens and Gene Price}
+{meta: composer Buck Owens and Gene Price}
 
 {start_of_verse: Verse 1}
 [C]Save me from loneliness [G7]rescue me with your [C]love

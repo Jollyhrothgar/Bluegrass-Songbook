@@ -1,6 +1,6 @@
 {meta: title Only Believe}
 {meta: artist Elvis Presley}
-{meta: writer Paul Rader}
+{meta: composer Paul Rader}
 
 {start_of_verse: Verse 1}
 [C]Only believe  only [F]believe

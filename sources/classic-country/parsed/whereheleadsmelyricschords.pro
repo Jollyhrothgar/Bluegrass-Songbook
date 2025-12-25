@@ -1,6 +1,6 @@
 {meta: title Where He Leads Me}
 {meta: artist Ray Price}
-{meta: writer John Norris and E.W. Blandy}
+{meta: composer John Norris and E.W. Blandy}
 
 {start_of_verse: Verse 1}
 [G]I can hear my [C]Savior [D7]calling

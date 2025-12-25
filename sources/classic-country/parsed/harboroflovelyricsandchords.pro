@@ -1,6 +1,6 @@
 {meta: title Harbor Of Love}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray and Hank Thompson}
+{meta: composer Billy Gray and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [D7]I just [G]sailed from your [B7]harbor [A#7]of [Am]love

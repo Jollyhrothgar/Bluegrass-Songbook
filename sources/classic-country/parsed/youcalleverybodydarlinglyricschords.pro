@@ -1,6 +1,6 @@
 {meta: title You Call Everybody Darling}
 {meta: artist Faron Young}
-{meta: writer Sam Martin, Ben Trace, Albert Trace, Clem Watts}
+{meta: composer Sam Martin, Ben Trace, Albert Trace, Clem Watts}
 
 {start_of_verse: Verse 1}
 [G]You call everybody darling 

@@ -1,6 +1,6 @@
 {meta: title Go On With Your Dancing}
 {meta: artist Jean Shepard}
-{meta: writer Jack Rhodes}
+{meta: composer Jack Rhodes}
 
 {start_of_verse: Verse 1}
 [G]Go on with your dancing go on have your [D7]fun

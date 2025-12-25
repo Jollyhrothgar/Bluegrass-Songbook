@@ -1,6 +1,6 @@
 {meta: title Your Heart Is Too Crowded}
 {meta: artist Ray Price}
-{meta: writer Carl Smith}
+{meta: composer Carl Smith}
 
 {start_of_verse: Verse 1}
 [G]Your heart is too crowded with your [C]new love by your [D7]side

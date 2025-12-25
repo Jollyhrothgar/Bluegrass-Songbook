@@ -1,6 +1,6 @@
 {meta: title Holly Leaves And Christmas Trees}
 {meta: artist Elvis Presley}
-{meta: writer Glen Dale Spreen and Bobby G. West}
+{meta: composer Glen Dale Spreen and Bobby G. West}
 
 {start_of_verse: Verse 1}
 [C]Somewhere in  in the [Dm]distant night

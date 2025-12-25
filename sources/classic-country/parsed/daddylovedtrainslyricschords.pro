@@ -1,6 +1,6 @@
 {meta: title Daddy Loved Trains}
 {meta: artist Keith Whitley}
-{meta: writer Don Cook and Keith Whitley}
+{meta: composer Don Cook and Keith Whitley}
 
 {start_of_verse: Verse 1}
 [C]Daddy didn't [F]see me take my [G7]first steps as a [C]child

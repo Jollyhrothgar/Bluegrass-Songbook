@@ -1,6 +1,6 @@
 {meta: title But For Love Lyrics Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Terry Cashman, Gene Pistilli, T.P. West}
+{meta: composer Terry Cashman, Gene Pistilli, T.P. West}
 
 {start_of_verse: Verse 1}
 [C]So it's raining [F]again  [G7]and the wind's up in a [C]roar

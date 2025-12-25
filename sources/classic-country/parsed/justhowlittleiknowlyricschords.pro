@@ -1,6 +1,6 @@
 {meta: title Just How Little I Know}
 {meta: artist Gene Watson}
-{meta: writer Jim Rushing and Wayland Patton}
+{meta: composer Jim Rushing and Wayland Patton}
 
 {start_of_verse: Verse 1}
 [C]I remember my granddaddy carvin' on a block of pine

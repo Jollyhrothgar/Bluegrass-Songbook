@@ -1,6 +1,6 @@
 {meta: title I've Changed}
 {meta: artist Carl Smith}
-{meta: writer Danny Dill}
+{meta: composer Danny Dill}
 
 {start_of_verse: Verse 1}
 [C]You said you’d make me over but I [F]thought that you loved me

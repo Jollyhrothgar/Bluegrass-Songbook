@@ -1,6 +1,6 @@
 {meta: title I've Got Your Love All Over Me}
 {meta: artist Moe Bandy}
-{meta: writer Merrill Lane}
+{meta: composer Merrill Lane}
 
 {start_of_verse: Verse 1}
 [D7]Like a [G]fool I [C]strayed away from you [G]dear

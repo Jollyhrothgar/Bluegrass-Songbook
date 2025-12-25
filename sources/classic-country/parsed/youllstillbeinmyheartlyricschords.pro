@@ -1,6 +1,6 @@
 {meta: title You'll Still Be In My Heart}
 {meta: artist Ernest Tubb}
-{meta: writer Buddy Starcher and Ted West}
+{meta: composer Buddy Starcher and Ted West}
 
 {start_of_verse: Verse 1}
 [G]There was a time when you were mine and [C]my heart knew no pain

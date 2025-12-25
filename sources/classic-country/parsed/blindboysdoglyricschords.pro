@@ -1,6 +1,6 @@
 {meta: title Blind Boy's Dog}
 {meta: artist Hank Snow}
-{meta: writer Dave McEnery and Red River}
+{meta: composer Dave McEnery and Red River}
 
 {start_of_verse: Verse 1}
 [C]I gave my dog to Uncle Sam [F]in 194[D7]3

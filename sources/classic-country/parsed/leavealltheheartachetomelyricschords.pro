@@ -1,6 +1,6 @@
 {meta: title Leave All The Heartache To Me}
 {meta: artist Kitty Wells}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]If two other lips are what you [G7]long for

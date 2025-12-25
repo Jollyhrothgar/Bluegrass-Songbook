@@ -1,6 +1,6 @@
 {meta: title Where Is My Castle}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]More than once I've [F]cried because [C]impatience let me [F]down 

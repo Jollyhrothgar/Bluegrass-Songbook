@@ -1,6 +1,6 @@
 {meta: title Trouble's Back in Town}
 {meta: artist The Wilburn Brothers}
-{meta: writer Dick Flood}
+{meta: composer Dick Flood}
 
 {start_of_verse: Verse 1}
 [C]Look who's coming down the [G7]street

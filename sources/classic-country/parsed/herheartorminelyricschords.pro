@@ -1,6 +1,6 @@
 {meta: title Her Heart Or Mine}
 {meta: artist Gene Watson}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]She wants so much more than I can give [G]her

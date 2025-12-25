@@ -1,6 +1,6 @@
 {meta: title Card Carryin' Fool}
 {meta: artist Randy Travis}
-{meta: writer Byron Hill and Tim Bays}
+{meta: composer Byron Hill and Tim Bays}
 
 {start_of_verse: Verse 1}
 [C]It takes all kinds to keep this world in place

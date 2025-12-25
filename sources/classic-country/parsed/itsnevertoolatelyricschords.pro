@@ -1,6 +1,6 @@
 {meta: title It's Never Too Late}
 {meta: artist Brenda Lee}
-{meta: writer Jimmy Seals}
+{meta: composer Jimmy Seals}
 
 {start_of_verse: Verse 1}
 [G]Say it now while you can whisper low hold my hand

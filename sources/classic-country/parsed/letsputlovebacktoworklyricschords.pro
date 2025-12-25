@@ -1,6 +1,6 @@
 {meta: title Let's Put Love Back To Work}
 {meta: artist Ricky Skaggs}
-{meta: writer Larry Cordle and Mark Collie}
+{meta: composer Larry Cordle and Mark Collie}
 
 {start_of_verse: Verse 1}
 [C]Let's put love back to work to heal the pain and [G7]hurt

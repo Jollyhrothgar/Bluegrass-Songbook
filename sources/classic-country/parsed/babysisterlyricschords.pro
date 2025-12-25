@@ -1,6 +1,6 @@
 {meta: title Baby Sister}
 {meta: artist Vernon Oxford}
-{meta: writer Shirl Milete}
+{meta: composer Shirl Milete}
 
 {start_of_verse: Verse 1}
 [C]Baby sister what a waste to [D7]see you in this place

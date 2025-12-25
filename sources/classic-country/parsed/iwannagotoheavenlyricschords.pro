@@ -1,6 +1,6 @@
 {meta: title I Wanna Go To Heaven}
 {meta: artist Jerry Wallace}
-{meta: writer Lorene Mann}
+{meta: composer Lorene Mann}
 
 {start_of_verse: Verse 1}
 [F]Yes I wanna go to [C]heaven

@@ -1,6 +1,6 @@
 {meta: title Hand Me Down Heart}
 {meta: artist Clay Walker}
-{meta: writer Lonnie Wilson and Zack Turner}
+{meta: composer Lonnie Wilson and Zack Turner}
 
 {start_of_verse: Verse 1}
 [C]Baby I ain't gonna lie [F]this ain't my first ride

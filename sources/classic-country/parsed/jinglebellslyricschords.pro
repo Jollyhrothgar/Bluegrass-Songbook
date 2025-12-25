@@ -1,6 +1,6 @@
 {meta: title Jingle Bells}
 {meta: artist Ray Price}
-{meta: writer James Pierpont}
+{meta: composer James Pierpont}
 
 {start_of_verse: Verse 1}
 [C]Dashing through the snow in a one horse open [F]sleigh 

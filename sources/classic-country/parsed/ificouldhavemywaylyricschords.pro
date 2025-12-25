@@ -1,6 +1,6 @@
 {meta: title If I Could Have My Way}
 {meta: artist John Anderson}
-{meta: writer Fred F. Carter Jr. and John Anderson}
+{meta: composer Fred F. Carter Jr. and John Anderson}
 
 {start_of_verse: Verse 1}
 [G]If I could have my [C]way  [D7]you wouldn't worry one more [G]day

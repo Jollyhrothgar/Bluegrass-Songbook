@@ -1,6 +1,6 @@
 {meta: title Just Too Tired To Fight It}
 {meta: artist Travis Tritt}
-{meta: writer Stewart Harris and Travis Tritt}
+{meta: composer Stewart Harris and Travis Tritt}
 
 {start_of_verse: Verse 1}
 [C]Here comes [G]that same old memory 

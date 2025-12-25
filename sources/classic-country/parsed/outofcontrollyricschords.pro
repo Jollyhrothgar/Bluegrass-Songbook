@@ -1,6 +1,6 @@
 {meta: title Out Of Control}
 {meta: artist George Jones}
-{meta: writer George Jones, Darrell Edwards, Herby Treece}
+{meta: composer George Jones, Darrell Edwards, Herby Treece}
 
 {start_of_verse: Verse 1}
 [G]What goes wrong with the [G7]mind of a [C]man in a [G]bar

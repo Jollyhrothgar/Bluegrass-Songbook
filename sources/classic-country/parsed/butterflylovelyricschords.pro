@@ -1,6 +1,6 @@
 {meta: title Butterfly Love}
 {meta: artist Jim Reeves}
-{meta: writer Mitchell Torok}
+{meta: composer Mitchell Torok}
 
 {start_of_verse: Verse 1}
 [C]Your butterfly love just flutters around

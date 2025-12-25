@@ -1,6 +1,6 @@
 {meta: title Hundred Proof Memories}
 {meta: artist George Jones}
-{meta: writer Keith Stegall and Zack Turner}
+{meta: composer Keith Stegall and Zack Turner}
 
 {start_of_verse: Verse 1}
 [C]Love on the rocks  [F]that's all he [C]said

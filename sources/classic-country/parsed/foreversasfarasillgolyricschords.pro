@@ -1,6 +1,6 @@
 {meta: title Forever's As Far As I'll Go}
 {meta: artist Alabama}
-{meta: writer Mike Reid}
+{meta: composer Mike Reid}
 
 {start_of_verse: Verse 1}
 [C]I'll admit I could feel it the  first [G7]time that we [C]touched

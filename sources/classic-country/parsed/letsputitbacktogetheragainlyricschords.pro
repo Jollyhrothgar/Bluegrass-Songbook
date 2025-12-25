@@ -1,6 +1,6 @@
 {meta: title Let’s Put It Back Together Again}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]We had it once then [F]watched it go to [C]pieces

@@ -1,6 +1,6 @@
 {meta: title Galaxy Song}
 {meta: artist Clint Black}
-{meta: writer Eric Idle and John Duprez}
+{meta: composer Eric Idle and John Duprez}
 
 {start_of_verse: Verse 1}
 [D7]Just re[G]member that you're [D7]standing on a [G]planet that's evolving

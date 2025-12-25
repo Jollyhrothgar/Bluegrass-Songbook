@@ -1,6 +1,6 @@
 {meta: title Let The Little Girl Dance}
 {meta: artist Ernest Tubb}
-{meta: writer Carl Glover and Carl Spencer}
+{meta: composer Carl Glover and Carl Spencer}
 
 {start_of_verse: Verse 1}
 [G]Little wallflower [C]on the shelf [G]standing by her[C]self

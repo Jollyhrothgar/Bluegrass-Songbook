@@ -1,6 +1,6 @@
 {meta: title Follow That Dream}
 {meta: artist Elvis Presley}
-{meta: writer Fred Wise and Ben Weisman}
+{meta: composer Fred Wise and Ben Weisman}
 
 {start_of_verse: Verse 1}
 [C]Follow that [Em]dream  I [F]gotta [G7]follow that [C]dream

@@ -1,6 +1,6 @@
 {meta: title Can You Forgive}
 {meta: artist Jim Eanes}
-{meta: writer Roy Hall}
+{meta: composer Roy Hall}
 
 {start_of_verse: Verse 1}
 [C]Dear girl I know I broke your [F]heart

@@ -1,6 +1,6 @@
 {meta: title Not My Kind Of People}
 {meta: artist Stonewall Jackson}
-{meta: writer Hugh X. Lewis and Benny Joy}
+{meta: composer Hugh X. Lewis and Benny Joy}
 
 {start_of_verse: Verse 1}
 [C]I called the old crowd over as [C7]soon as you were [F]gone

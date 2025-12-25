@@ -1,6 +1,6 @@
 {meta: title Living In The Shadow Of The Past}
 {meta: artist Bobby Helms}
-{meta: writer Leo Russell, Al Rany, Gary Romero}
+{meta: composer Leo Russell, Al Rany, Gary Romero}
 
 {start_of_verse: Verse 1}
 [C]I feel your lips (oh I feel your lips)

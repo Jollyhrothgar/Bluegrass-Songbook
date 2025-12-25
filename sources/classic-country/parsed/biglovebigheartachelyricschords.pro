@@ -1,6 +1,6 @@
 {meta: title Big Love Big Heartache}
 {meta: artist Elvis Presley}
-{meta: writer Dolores Fuller, Lee Morris, Stanley Barkan}
+{meta: composer Dolores Fuller, Lee Morris, Stanley Barkan}
 
 {start_of_verse: Verse 1}
 [G](Big love [Em]big heartache [G]big love [Em]big heartache [G]big love [Em]big heartache)

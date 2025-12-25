@@ -1,6 +1,6 @@
 {meta: title According to my Heart}
 {meta: artist Faron Young}
-{meta: writer Gary Walker}
+{meta: composer Gary Walker}
 
 {start_of_verse: Verse 1}
 [C]According to my [F]h-e[G7]art you're the one for [C]me

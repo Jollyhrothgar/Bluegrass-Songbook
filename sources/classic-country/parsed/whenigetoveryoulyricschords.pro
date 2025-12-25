@@ -1,6 +1,6 @@
 {meta: title When I Get Over You}
 {meta: artist Billy Crash Craddock}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [C]When I (when I when I) get over you[G7]   [C]

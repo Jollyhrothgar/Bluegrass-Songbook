@@ -1,6 +1,6 @@
 {meta: title Lullabys Legends And Lies}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]Gather round fellows I'll tell you some [C7]tales 

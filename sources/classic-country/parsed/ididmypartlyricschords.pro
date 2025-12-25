@@ -1,6 +1,6 @@
 {meta: title I Did My Part}
 {meta: artist Randy Travis}
-{meta: writer Don Schlitz and Billy Livsey}
+{meta: composer Don Schlitz and Billy Livsey}
 
 {start_of_verse: Verse 1}
 [G7]I did my [C]part I tried my [F]best

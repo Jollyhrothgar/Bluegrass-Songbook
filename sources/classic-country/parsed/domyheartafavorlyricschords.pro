@@ -1,6 +1,6 @@
 {meta: title Do My Heart A Favor}
 {meta: artist Freddie Hart}
-{meta: writer Bobby George and Vern Stovall}
+{meta: composer Bobby George and Vern Stovall}
 
 {start_of_verse: Verse 1}
 [G]Just when I think I'm almost over [C]you

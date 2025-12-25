@@ -1,6 +1,6 @@
 {meta: title Haunted Heart}
 {meta: artist Sammy Kershaw}
-{meta: writer Buddy Brock and Kim Williams}
+{meta: composer Buddy Brock and Kim Williams}
 
 {start_of_verse: Verse 1}
 [C]Go down a road called yesterday 

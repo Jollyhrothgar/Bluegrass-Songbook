@@ -1,6 +1,6 @@
 {meta: title Somebody Loves Me}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [F]Pardon [C]me  [G7]if I [C]seem a little [F]different

@@ -1,6 +1,6 @@
 {meta: title Freedom To Stay}
 {meta: artist Waylon Jennings}
-{meta: writer Bill Hoover}
+{meta: composer Bill Hoover}
 
 {start_of_verse: Verse 1}
 [G]I tied my ban[D7]dana [C]took my pack from the [G]floor

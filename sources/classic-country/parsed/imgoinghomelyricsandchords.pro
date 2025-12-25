@@ -1,6 +1,6 @@
 {meta: title I'm Going Home}
 {meta: artist Buck Owens}
-{meta: writer Terry Clements and John English}
+{meta: composer Terry Clements and John English}
 
 {start_of_verse: Verse 1}
 [G]Sometimes when I am [Am]lonely

@@ -1,6 +1,6 @@
 {meta: title Two Lonely Hearts Out Of Hand}
 {meta: artist Vern Gosdin}
-{meta: writer Buddy Cannon, Robert John Jones, Vern Gosdin}
+{meta: composer Buddy Cannon, Robert John Jones, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [G]I was sittin’ all alone [C]when you came strollin’ in

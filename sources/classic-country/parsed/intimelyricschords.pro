@@ -1,6 +1,6 @@
 {meta: title In Time}
 {meta: artist Eddy Arnold}
-{meta: writer J. O. Bellah, Jr., Barbara Cross}
+{meta: composer J. O. Bellah, Jr., Barbara Cross}
 
 {start_of_verse: Verse 1}
 [G]In time I guess I will return the [C]smile of someone [G]new

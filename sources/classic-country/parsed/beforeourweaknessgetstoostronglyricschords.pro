@@ -1,6 +1,6 @@
 {meta: title Before Our Weakness Gets Too Strong}
 {meta: artist Porter Wagoner}
-{meta: writer Louis Owens}
+{meta: composer Louis Owens}
 
 {start_of_verse: Verse 1}
 [G]What are we doing [D7]in this place [G]alone

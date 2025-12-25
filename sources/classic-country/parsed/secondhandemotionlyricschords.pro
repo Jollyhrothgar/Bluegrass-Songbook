@@ -1,6 +1,6 @@
 {meta: title Second Hand Emotion}
 {meta: artist Faron Young}
-{meta: writer Charlie Black and Rory Bourke}
+{meta: composer Charlie Black and Rory Bourke}
 
 {start_of_verse: Verse 1}
 [G]If passion were a river you would surely [G7]overflow

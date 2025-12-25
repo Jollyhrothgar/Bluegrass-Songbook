@@ -1,6 +1,6 @@
 {meta: title Yes Or No}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert and Sonny James}
+{meta: composer Bob Tubert and Sonny James}
 
 {start_of_verse: Verse 1}
 [G]Yes or no what [D7]will it be is it him [G]or is it me

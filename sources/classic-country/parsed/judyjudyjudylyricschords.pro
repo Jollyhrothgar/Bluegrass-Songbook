@@ -1,6 +1,6 @@
 {meta: title Judy Judy Judy}
 {meta: artist Johnny Tillotson}
-{meta: writer Doc Pomus, Mort Shuman, Johnny Tillotson}
+{meta: composer Doc Pomus, Mort Shuman, Johnny Tillotson}
 
 {start_of_verse: Verse 1}
 [C]Judy's [F]got the [G7]lips I love to [C]kiss [F]   [G7]

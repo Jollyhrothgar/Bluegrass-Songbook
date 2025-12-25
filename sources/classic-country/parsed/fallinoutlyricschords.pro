@@ -1,6 +1,6 @@
 {meta: title Fallin’ Out}
 {meta: artist Waylon Jennings}
-{meta: writer Denny Lile}
+{meta: composer Denny Lile}
 
 {start_of_verse: Verse 1}
 [G]We fell into a fallin’ out

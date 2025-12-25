@@ -1,6 +1,6 @@
 {meta: title Cars}
 {meta: artist John Conlee}
-{meta: writer Bob McDill and Dickey Lee}
+{meta: composer Bob McDill and Dickey Lee}
 
 {start_of_verse: Verse 1}
 [C]She was sittin' on a [G7]car lot [Am]looking like a [G7]dream

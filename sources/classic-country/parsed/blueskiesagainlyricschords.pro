@@ -1,6 +1,6 @@
 {meta: title Blue Skies Again}
 {meta: artist John Anderson}
-{meta: writer Michael Patrick Heeney}
+{meta: composer Michael Patrick Heeney}
 
 {start_of_verse: Verse 1}
 [G]You'd think it's raining for all the [F]teardrops

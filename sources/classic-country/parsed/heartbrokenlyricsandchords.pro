@@ -1,6 +1,6 @@
 {meta: title Heartbroken}
 {meta: artist Cowboy Copas}
-{meta: writer Clyde Pitts}
+{meta: composer Clyde Pitts}
 
 {start_of_verse: Verse 1}
 [C]Heart[Fm]broken [C]because you're [A7]gone

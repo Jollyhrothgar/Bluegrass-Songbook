@@ -1,6 +1,6 @@
 {meta: title See Myself In You}
 {meta: artist Randy Travis}
-{meta: writer Tom Kimmel and Tom Prasada}
+{meta: composer Tom Kimmel and Tom Prasada}
 
 {start_of_verse: Verse 1}
 [C]If I met you on the [Am]corner would I [F]know you as you [C]are[G7]

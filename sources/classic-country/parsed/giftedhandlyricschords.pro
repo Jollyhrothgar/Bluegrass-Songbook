@@ -1,6 +1,6 @@
 {meta: title Gifted Hand}
 {meta: artist Gene Watson}
-{meta: writer Doug Crider and William C. Spencer III}
+{meta: composer Doug Crider and William C. Spencer III}
 
 {start_of_verse: Verse 1}
 [G]The artist draws a [G7]portrait with the [C]likeness [Am]strong and [C]true

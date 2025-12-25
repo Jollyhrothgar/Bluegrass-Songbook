@@ -1,6 +1,6 @@
 {meta: title Daddy When Is Mommy Coming Home}
 {meta: artist Ernest Tubb}
-{meta: writer Troy L. Martin and Ernest Martin}
+{meta: composer Troy L. Martin and Ernest Martin}
 
 {start_of_verse: Verse 1}
 [C]They were separated one [F]year ago that [C]day

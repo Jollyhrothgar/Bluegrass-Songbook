@@ -1,6 +1,6 @@
 {meta: title Anonymous}
 {meta: artist Garth Brooks}
-{meta: writer Tony Arata and Jonathan Shawe}
+{meta: composer Tony Arata and Jonathan Shawe}
 
 {start_of_verse: Verse 1}
 [C]I [F]wrote our [G7]names a [C]thousand times

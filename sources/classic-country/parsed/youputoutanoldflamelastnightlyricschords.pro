@@ -1,6 +1,6 @@
 {meta: title You Put Out An Old Flame Last Night}
 {meta: artist Gene Watson}
-{meta: writer D. Lindsey and E. Rowell}
+{meta: composer D. Lindsey and E. Rowell}
 
 {start_of_verse: Verse 1}
 [C]I just called to thank you for [F]turning me [C]around

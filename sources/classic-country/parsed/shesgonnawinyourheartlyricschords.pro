@@ -1,6 +1,6 @@
 {meta: title She's Gonna Win Your Heart}
 {meta: artist Eddy Raven}
-{meta: writer Mentor Williams}
+{meta: composer Mentor Williams}
 
 {start_of_verse: Verse 1}
 [G]I know just how you feel

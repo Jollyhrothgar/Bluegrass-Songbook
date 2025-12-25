@@ -1,6 +1,6 @@
 {meta: title My Little Red Wagon}
 {meta: artist Hank Thompson}
-{meta: writer Rex Griffin}
+{meta: composer Rex Griffin}
 
 {start_of_verse: Verse 1}
 [C]Won't you [A7]ride in my Little Red [D7]Wagon

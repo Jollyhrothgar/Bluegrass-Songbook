@@ -1,6 +1,6 @@
 {meta: title Blue Mood}
 {meta: artist Webb Pierce}
-{meta: writer Warner McPherson, Stanley Kincaid, Art Demmas}
+{meta: composer Warner McPherson, Stanley Kincaid, Art Demmas}
 
 {start_of_verse: Verse 1}
 [F]I'm in a [G7]blue mood and you've caused it [C]all

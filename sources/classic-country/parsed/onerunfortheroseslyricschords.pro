@@ -1,6 +1,6 @@
 {meta: title One Run for the Roses}
 {meta: artist Cal Smith}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]Talk with me a little while [C7]walk with me one more mile

@@ -1,6 +1,6 @@
 {meta: title Loser Friendly}
 {meta: artist David Ball}
-{meta: writer Paul Craft, Wood Newton, Michael McGrew}
+{meta: composer Paul Craft, Wood Newton, Michael McGrew}
 
 {start_of_verse: Verse 1}
 [C]The [G7]door into the tavern opens [C]easy in my hand

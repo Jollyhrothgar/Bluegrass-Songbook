@@ -1,6 +1,6 @@
 {meta: title Where Do I Go From Here}
 {meta: artist Don Williams}
-{meta: writer Albert Hamilton, James Varner}
+{meta: composer Albert Hamilton, James Varner}
 
 {start_of_verse: Verse 1}
 Eugene Hamilton and Herman Weems

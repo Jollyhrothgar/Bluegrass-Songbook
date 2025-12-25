@@ -1,6 +1,6 @@
 {meta: title If Every Day Was Like Christmas}
 {meta: artist Elvis Presley}
-{meta: writer Red West}
+{meta: composer Red West}
 
 {start_of_verse: Verse 1}
 [G]I hear the [Bm]bells saying [C]Christ[D7]mas is [G]here

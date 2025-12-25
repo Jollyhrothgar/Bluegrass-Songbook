@@ -1,6 +1,6 @@
 {meta: title You'll Never Leave Me Completely}
 {meta: artist Johnny Bush}
-{meta: writer Chuck Howard and David C. Kirby}
+{meta: composer Chuck Howard and David C. Kirby}
 
 {start_of_verse: Verse 1}
 [C]I hope you’re not mad because I’m [F]cry[C]ing

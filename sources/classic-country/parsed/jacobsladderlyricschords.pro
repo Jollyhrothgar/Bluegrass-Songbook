@@ -1,6 +1,6 @@
 {meta: title Jacob's Ladder}
 {meta: artist Mark Wills}
-{meta: writer Tony Martin, Cal Sweat, Brenda Sweat}
+{meta: composer Tony Martin, Cal Sweat, Brenda Sweat}
 
 {start_of_verse: Verse 1}
 [G]Jacob was a dirt poor farm boy

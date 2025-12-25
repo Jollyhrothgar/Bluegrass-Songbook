@@ -1,6 +1,6 @@
 {meta: title Little Old Log Cabin In The Lane}
 {meta: artist Jim and Jesse}
-{meta: writer Will S. Hays}
+{meta: composer Will S. Hays}
 
 {start_of_verse: Verse 1}
 [G]I'm getting old and feeble and I [C]cannot find my [G]way  

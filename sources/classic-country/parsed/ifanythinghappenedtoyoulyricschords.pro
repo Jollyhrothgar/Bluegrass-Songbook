@@ -1,6 +1,6 @@
 {meta: title If Anything Happened To You}
 {meta: artist Mary Duff}
-{meta: writer Charlie McGettigan}
+{meta: composer Charlie McGettigan}
 
 {start_of_verse: Verse 1}
 [D7]If any[G]thing [D7]happened to [G]you [G7]               

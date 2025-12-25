@@ -1,6 +1,6 @@
 {meta: title Ask Me How I Know}
 {meta: artist Garth Brooks}
-{meta: writer Mitch Rossell}
+{meta: composer Mitch Rossell}
 
 {start_of_verse: Verse 1}
 [C]You're stubborn as they come you'll never settle down

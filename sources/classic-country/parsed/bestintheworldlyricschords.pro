@@ -1,6 +1,6 @@
 {meta: title Best In The World}
 {meta: artist Charley Pride}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]I know she's gonna get me back [F]when I get home [C]again

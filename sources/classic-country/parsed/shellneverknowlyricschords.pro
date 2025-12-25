@@ -1,6 +1,6 @@
 {meta: title She'll Never Know}
 {meta: artist Brenda Lee}
-{meta: writer Roe E. "Rick" Hall}
+{meta: composer Roe E. "Rick" Hall}
 
 {start_of_verse: Verse 1}
 [F](Never know [G7]never know she’ll [C]never know)[G7]

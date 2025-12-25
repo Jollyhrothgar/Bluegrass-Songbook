@@ -1,6 +1,6 @@
 {meta: title Redneck Girl}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G]A redneck girl likes to [C]cruise in daddy's [D7]pickup [G]truck[C]

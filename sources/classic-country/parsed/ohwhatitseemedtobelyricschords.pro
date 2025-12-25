@@ -1,6 +1,6 @@
 {meta: title Oh What It Seemed To Be}
 {meta: artist Jim Reeves}
-{meta: writer Bennie Benjamin and George Weiss}
+{meta: composer Bennie Benjamin and George Weiss}
 
 {start_of_verse: Verse 1}
 [G7]It was [C]just a neighborhood dance [Em]that's all that it [C]was

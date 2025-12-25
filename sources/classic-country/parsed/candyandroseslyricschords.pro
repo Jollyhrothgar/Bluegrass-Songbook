@@ -1,6 +1,6 @@
 {meta: title Candy And Roses}
 {meta: artist Carl Smith}
-{meta: writer Jim Mundy}
+{meta: composer Jim Mundy}
 
 {start_of_verse: Verse 1}
 [C]Candy and roses [F]everybody knows [C]is

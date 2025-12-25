@@ -1,6 +1,6 @@
 {meta: title Honky Tonk And Slow Music}
 {meta: artist Johnny Paycheck}
-{meta: writer Johnny Paycheck and Aubrey Mayhew}
+{meta: composer Johnny Paycheck and Aubrey Mayhew}
 
 {start_of_verse: Verse 1}
 [C]I could say that the [F]smoke gets [C]in my eyes

@@ -1,6 +1,6 @@
 {meta: title Big Hurts Came From Little White Lies}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Carole Smith}
+{meta: composer Sonny James and Carole Smith}
 
 {start_of_verse: Verse 1}
 [C]Mighty oaks from [F]little acorns [C]grow

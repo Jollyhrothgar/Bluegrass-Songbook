@@ -1,6 +1,6 @@
 {meta: title Okie Blondie}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray, Dick Reynolds, Hank Thompson}
+{meta: composer Billy Gray, Dick Reynolds, Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]In the dance hall out in the [D7]country

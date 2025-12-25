@@ -1,6 +1,6 @@
 {meta: title Peace Within}
 {meta: artist John Conlee}
-{meta: writer Allen Reynolds, Dickey Lee, Kay Taylor}
+{meta: composer Allen Reynolds, Dickey Lee, Kay Taylor}
 
 {start_of_verse: Verse 1}
 [C]Well the road has been rocky my path has been steep

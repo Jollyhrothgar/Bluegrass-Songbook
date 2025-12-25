@@ -1,6 +1,6 @@
 {meta: title The Cold Hard Truth}
 {meta: artist George Jones}
-{meta: writer James O'hara}
+{meta: composer James O'hara}
 
 {start_of_verse: Verse 1}
 [C]You don't know who I am

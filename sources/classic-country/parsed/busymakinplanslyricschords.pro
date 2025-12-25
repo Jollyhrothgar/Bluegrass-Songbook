@@ -1,6 +1,6 @@
 {meta: title Busy Makin' Plans}
 {meta: artist Ronnie Milsap}
-{meta: writer Benjamin Scott and James Yeary}
+{meta: composer Benjamin Scott and James Yeary}
 
 {start_of_verse: Verse 1}
 [G7]It won't be [C]easy the first nights without [F]you

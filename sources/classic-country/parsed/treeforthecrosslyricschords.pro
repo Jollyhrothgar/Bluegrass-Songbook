@@ -1,6 +1,6 @@
 {meta: title Tree For The Cross}
 {meta: artist Stonewall Jackson}
-{meta: writer N. Barfield and Stonewall Jackson}
+{meta: composer N. Barfield and Stonewall Jackson}
 
 {start_of_verse: Verse 1}
 [C]The tree for the cross was [F]standing

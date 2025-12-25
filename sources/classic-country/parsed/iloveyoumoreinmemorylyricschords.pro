@@ -1,6 +1,6 @@
 {meta: title I Love You More In Memory}
 {meta: artist Charley Pride}
-{meta: writer L.E. White}
+{meta: composer L.E. White}
 
 {start_of_verse: Verse 1}
 [G]Just out[C]side my [G]window there's a [C]sound that I can't [G]stand

@@ -1,6 +1,6 @@
 {meta: title I Hate You}
 {meta: artist Ronnie Milsap}
-{meta: writer Dan Penn and Leroy Daniels}
+{meta: composer Dan Penn and Leroy Daniels}
 
 {start_of_verse: Verse 1}
 [C]I hate you oh how I try [C7]to hate [F]you

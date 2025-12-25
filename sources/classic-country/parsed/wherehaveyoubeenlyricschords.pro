@@ -1,6 +1,6 @@
 {meta: title Where Have You Been}
 {meta: artist Merle Haggard}
-{meta: writer Leona Williams}
+{meta: composer Leona Williams}
 
 {start_of_verse: Verse 1}
 [G]Look around you [D7]look at your [G]friends

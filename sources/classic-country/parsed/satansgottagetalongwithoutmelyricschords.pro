@@ -1,6 +1,6 @@
 {meta: title Satan's Gotta Get Along Without Me}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Red Simpson}
+{meta: composer Buck Owens and Red Simpson}
 
 {start_of_verse: Verse 1}
 [G]Well now since I turned old Satan down

@@ -1,6 +1,6 @@
 {meta: title Carmen}
 {meta: artist Gene Watson}
-{meta: writer Steve Spurgin}
+{meta: composer Steve Spurgin}
 
 {start_of_verse: Verse 1}
 [G]O-h [C]Carmen I've had too much [G]tequila

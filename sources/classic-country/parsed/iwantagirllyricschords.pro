@@ -1,6 +1,6 @@
 {meta: title I Want A Girl}
 {meta: artist George Hamilton IV}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]I want a girl whose [C]heart has been [G]broken

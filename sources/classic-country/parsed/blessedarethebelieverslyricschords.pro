@@ -1,6 +1,6 @@
 {meta: title Blessed Are The Believers}
 {meta: artist Anne Murray}
-{meta: writer Randy Goodrum}
+{meta: composer Randy Goodrum}
 
 {start_of_verse: Verse 1}
 [G]Rain in the sky

@@ -1,6 +1,6 @@
 {meta: title Buy Me A Rose}
 {meta: artist Kenny Rogers}
-{meta: writer Jim Funk and Erik Hickenlooper}
+{meta: composer Jim Funk and Erik Hickenlooper}
 
 {start_of_verse: Verse 1}
 [C]He works hard to [G7]give her all he [F]thinks she wants [G7]

@@ -1,6 +1,6 @@
 {meta: title Hold That Tear}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill and Curly Putman}
+{meta: composer Billy Sherrill and Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]You've got that look of almost cryin' in your [G7]eyes

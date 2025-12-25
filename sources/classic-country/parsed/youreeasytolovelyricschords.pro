@@ -1,6 +1,6 @@
 {meta: title You're Easy To Love}
 {meta: artist Anne Murray}
-{meta: writer Dave Burgess}
+{meta: composer Dave Burgess}
 
 {start_of_verse: Verse 1}
 [C]Well it's easy for me to be true [G7]depend on me

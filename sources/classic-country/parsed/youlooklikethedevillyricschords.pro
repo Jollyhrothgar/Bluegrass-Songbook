@@ -1,6 +1,6 @@
 {meta: title You Look Like The Devil}
 {meta: artist Willie Nelson}
-{meta: writer Leon Russell}
+{meta: composer Leon Russell}
 
 {start_of_verse: Verse 1}
 [C]You look like the devil in the morning

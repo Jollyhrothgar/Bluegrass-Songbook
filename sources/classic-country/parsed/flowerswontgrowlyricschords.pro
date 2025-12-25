@@ -1,6 +1,6 @@
 {meta: title Flowers Won't Grow}
 {meta: artist Don Williams}
-{meta: writer Bob McDill and Bucky Jones}
+{meta: composer Bob McDill and Bucky Jones}
 
 {start_of_verse: Verse 1}
 [G]Could it be our [C]love [D7]wasn't planted [G]deep enough

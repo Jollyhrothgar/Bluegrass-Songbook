@@ -1,6 +1,6 @@
 {meta: title Brand New Low}
 {meta: artist Red Sovine}
-{meta: writer Red Sovine, Delmar Williams, Paul Borst}
+{meta: composer Red Sovine, Delmar Williams, Paul Borst}
 
 {start_of_verse: Verse 1}
 [C]My heart just hit a brand new low I don't know what to [F]say

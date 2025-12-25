@@ -1,6 +1,6 @@
 {meta: title Cotton Eyed Joe}
 {meta: artist Bob Wills}
-{meta: writer Tommy Duncan and Bob Wills}
+{meta: composer Tommy Duncan and Bob Wills}
 
 {start_of_verse: Verse 1}
 [G]Don't you remember [C]don't you know

@@ -1,6 +1,6 @@
 {meta: title Santa's On His Way}
 {meta: artist Bob Wills}
-{meta: writer Bill C. Phillips, Nita Phillips}
+{meta: composer Bill C. Phillips, Nita Phillips}
 
 {start_of_verse: Verse 1}
 [C]Hooray hooray

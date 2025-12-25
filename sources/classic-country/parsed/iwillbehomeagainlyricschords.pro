@@ -1,6 +1,6 @@
 {meta: title I Will Be Home Again}
 {meta: artist Elvis Presley}
-{meta: writer Bennie Benjamin, Raymond Leveen, Lou Singer}
+{meta: composer Bennie Benjamin, Raymond Leveen, Lou Singer}
 
 {start_of_verse: Verse 1}
 [C]I will be home again don't worry dear

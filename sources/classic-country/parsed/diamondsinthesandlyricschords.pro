@@ -1,6 +1,6 @@
 {meta: title Diamonds In The Sand}
 {meta: artist Jim Reeves}
-{meta: writer Steve Gibson and Taffy Kikillus}
+{meta: composer Steve Gibson and Taffy Kikillus}
 
 {start_of_verse: Verse 1}
 [G]Diamond diamonds in the [A#7]sand

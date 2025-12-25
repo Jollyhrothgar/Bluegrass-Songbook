@@ -1,6 +1,6 @@
 {meta: title Sinners or Saints}
 {meta: artist George Jones}
-{meta: writer Vip Vipperman, Darryl Worley, J.B. Rudd}
+{meta: composer Vip Vipperman, Darryl Worley, J.B. Rudd}
 
 {start_of_verse: Verse 1}
 [C]Young ones in the jailhouse [F]sleeping it [C]off

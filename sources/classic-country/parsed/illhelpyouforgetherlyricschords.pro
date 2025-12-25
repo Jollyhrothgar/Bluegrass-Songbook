@@ -1,6 +1,6 @@
 {meta: title I'll Help You Forget Her}
 {meta: artist Dottie West}
-{meta: writer Yvonne Devaney}
+{meta: composer Yvonne Devaney}
 
 {start_of_verse: Verse 1}
 [G]I'll help you forget her if you'll let [D7]me

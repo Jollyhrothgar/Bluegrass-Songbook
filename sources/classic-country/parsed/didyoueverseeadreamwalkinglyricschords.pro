@@ -1,6 +1,6 @@
 {meta: title Did You Ever See A Dream Walking}
 {meta: artist Fats Domino}
-{meta: writer Mack Gordon and Harry Revel}
+{meta: composer Mack Gordon and Harry Revel}
 
 {start_of_verse: Verse 1}
 [G]Did you ever see a dream walking

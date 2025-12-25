@@ -1,6 +1,6 @@
 {meta: title Just A Little While Ago}
 {meta: artist Jack Greene}
-{meta: writer Jerry Edge, Jimmy Dry, Barbara Greene}
+{meta: composer Jerry Edge, Jimmy Dry, Barbara Greene}
 
 {start_of_verse: Verse 1}
 [C]Just a little while ago my heart was [G7]living 

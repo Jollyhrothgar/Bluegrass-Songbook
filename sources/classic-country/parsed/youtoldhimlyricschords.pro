@@ -1,6 +1,6 @@
 {meta: title You Told Him}
 {meta: artist Wynn Stewart}
-{meta: writer Bozo Darnell}
+{meta: composer Bozo Darnell}
 
 {start_of_verse: Verse 1}
 [G7]Not [C]long [G7]ago I [C]opened [C7]up my [F]heart and you walked [C]in

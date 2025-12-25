@@ -1,6 +1,6 @@
 {meta: title Can't Have One Without The Other}
 {meta: artist Tracy Byrd}
-{meta: writer Shawn Camp and Gary Scruggs}
+{meta: composer Shawn Camp and Gary Scruggs}
 
 {start_of_verse: Verse 1}
 [C]Used to think that [F]love would be so [C]simple 

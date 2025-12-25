@@ -1,6 +1,6 @@
 {meta: title I'm Mr. Blue}
 {meta: artist Jerry Wallace}
-{meta: writer Mitchell Torok and Ramona Redd}
+{meta: composer Mitchell Torok and Ramona Redd}
 
 {start_of_verse: Verse 1}
 [C]I'm Mr. Blue

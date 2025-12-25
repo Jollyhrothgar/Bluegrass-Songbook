@@ -1,6 +1,6 @@
 {meta: title I Can Feel Him Touching You All Over Me}
 {meta: artist Johnny Bush}
-{meta: writer Kent Westberry, Max D. Barnes, Harlan Sanders}
+{meta: composer Kent Westberry, Max D. Barnes, Harlan Sanders}
 
 {start_of_verse: Verse 1}
 [C]I can [G]feel him [C]touching [D7]you all over [G]me

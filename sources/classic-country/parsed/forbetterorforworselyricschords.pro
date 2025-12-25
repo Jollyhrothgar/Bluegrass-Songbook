@@ -1,6 +1,6 @@
 {meta: title For Better Or For Worse Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson, Jan Crutchfield, Moneen Carpenter}
+{meta: composer Bill Anderson, Jan Crutchfield, Moneen Carpenter}
 
 {start_of_verse: Verse 1}
 [G]The wedding bells have [D7]barely stopped their [G]ringing

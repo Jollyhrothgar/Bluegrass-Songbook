@@ -1,6 +1,6 @@
 {meta: title You Oughta See Pickles Now}
 {meta: artist Tommy Collins}
-{meta: writer Dick Reynolds}
+{meta: composer Dick Reynolds}
 
 {start_of_verse: Verse 1}
 [G]Now when I was a little boy there lived next door to [D7]me

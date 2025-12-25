@@ -1,6 +1,6 @@
 {meta: title I'm Not Leaving (I'm Just Getting Out of Your Way)}
 {meta: artist Ray Price}
-{meta: writer Hank Cochran, Royce Donald Porter, Dean Rutherford}
+{meta: composer Hank Cochran, Royce Donald Porter, Dean Rutherford}
 
 {start_of_verse: Verse 1}
 [C]I’m not doing what I’m doing [C7]for me I’m [F]doing it for you

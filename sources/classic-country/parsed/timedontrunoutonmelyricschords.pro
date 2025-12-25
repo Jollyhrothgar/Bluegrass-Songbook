@@ -1,6 +1,6 @@
 {meta: title Time Don't Run Out On Me}
 {meta: artist Anne Murray}
-{meta: writer Gerald Goffin and Carole King}
+{meta: composer Gerald Goffin and Carole King}
 
 {start_of_verse: Verse 1}
 [G]Time don't run out on [G7]me

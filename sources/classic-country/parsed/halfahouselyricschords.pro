@@ -1,6 +1,6 @@
 {meta: title Half A House}
 {meta: artist Merle Haggard}
-{meta: writer Floyd Tillman}
+{meta: composer Floyd Tillman}
 
 {start_of_verse: Verse 1}
 [C]They say a house is just half a [C7]house without a [F]woman

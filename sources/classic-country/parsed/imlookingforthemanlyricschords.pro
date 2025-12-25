@@ -1,6 +1,6 @@
 {meta: title I'm Looking For The Man}
 {meta: artist Gene Pitney}
-{meta: writer Melba Montgomery and Earl Montgomery}
+{meta: composer Melba Montgomery and Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [G]I'm looking for the man [C]looking for the man

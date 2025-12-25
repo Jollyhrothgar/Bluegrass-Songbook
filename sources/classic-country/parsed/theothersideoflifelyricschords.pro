@@ -1,6 +1,6 @@
 {meta: title The Other Side Of Life}
 {meta: artist Vern Gosdin}
-{meta: writer Alan O’Bryant}
+{meta: composer Alan O’Bryant}
 
 {start_of_verse: Verse 1}
 [F]Praise [C]God  [G7]I feel like [C]singing

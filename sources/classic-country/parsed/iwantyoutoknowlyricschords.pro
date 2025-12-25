@@ -1,6 +1,6 @@
 {meta: title I Want You To Know}
 {meta: artist the Everly Brothers}
-{meta: writer Antoine Domino and Dave Bartholomew}
+{meta: composer Antoine Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [C]I want you to know I love her so [F]well

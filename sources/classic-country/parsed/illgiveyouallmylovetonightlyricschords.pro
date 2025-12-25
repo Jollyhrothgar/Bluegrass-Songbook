@@ -1,6 +1,6 @@
 {meta: title I'll Give You All My Love Tonight}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy, Billy Crain, Waldemar Dentz}
+{meta: composer David Bellamy, Billy Crain, Waldemar Dentz}
 
 {start_of_verse: Verse 1}
 [Am]A young girls [G]dreams they [F]come of [G]age

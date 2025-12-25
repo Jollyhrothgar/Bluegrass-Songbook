@@ -1,6 +1,6 @@
 {meta: title Maria}
 {meta: artist George Strait}
-{meta: writer Robert Keen}
+{meta: composer Robert Keen}
 
 {start_of_verse: Verse 1}
 [C]There's a soft rain tapping on your window

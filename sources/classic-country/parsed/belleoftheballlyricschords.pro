@@ -1,6 +1,6 @@
 {meta: title Belle Of The Ball}
 {meta: artist Red Steagall}
-{meta: writer Luke Reed and Red Steagall}
+{meta: composer Luke Reed and Red Steagall}
 
 {start_of_verse: Verse 1}
 [C]On a smooth cement [G7]slab by the [C]river

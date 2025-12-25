@@ -1,6 +1,6 @@
 {meta: title Two In The Cold}
 {meta: artist Ernest Tubb}
-{meta: writer Ellen Reeves}
+{meta: composer Ellen Reeves}
 
 {start_of_verse: Verse 1}
 [G]You're just across the [D7]room but we're [G]still a world apart

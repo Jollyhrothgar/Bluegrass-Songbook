@@ -1,6 +1,6 @@
 {meta: title Cover Mama's Flowers}
 {meta: artist Mel Tillis}
-{meta: writer Johnny Gore}
+{meta: composer Johnny Gore}
 
 {start_of_verse: Verse 1}
 [C]It's been many years now since [F]mom passed [C]away

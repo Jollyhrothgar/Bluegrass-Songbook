@@ -1,6 +1,6 @@
 {meta: title We're Over}
 {meta: artist Johnny Rodriguez}
-{meta: writer Barry Mann and Cynthia Weil}
+{meta: composer Barry Mann and Cynthia Weil}
 
 {start_of_verse: Verse 1}
 [C]We're over

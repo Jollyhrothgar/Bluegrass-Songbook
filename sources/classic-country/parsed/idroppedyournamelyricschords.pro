@@ -1,6 +1,6 @@
 {meta: title I Dropped Your Name}
 {meta: artist Leona Williams}
-{meta: writer Terry Skinner and Ken Bell}
+{meta: composer Terry Skinner and Ken Bell}
 
 {start_of_verse: Verse 1}
 [G7]I dropped your [C]name in Chicago

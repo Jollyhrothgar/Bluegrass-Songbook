@@ -1,6 +1,6 @@
 {meta: title Who Will Pray For Me}
 {meta: artist Conway Twitty}
-{meta: writer Darrell Statler and Lorene Allen}
+{meta: composer Darrell Statler and Lorene Allen}
 
 {start_of_verse: Verse 1}
 [C]My rough and [F]rowdy [C]ways have kept me [F]from His [C]grace

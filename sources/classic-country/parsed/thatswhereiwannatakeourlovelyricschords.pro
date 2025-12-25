@@ -1,6 +1,6 @@
 {meta: title That's Where I Wanna Take Our Love}
 {meta: artist George Strait}
-{meta: writer Hank Cochran and Dean Dillon}
+{meta: composer Hank Cochran and Dean Dillon}
 
 {start_of_verse: Verse 1}
 [C]It's a quite little place [F]tucked away in the hills

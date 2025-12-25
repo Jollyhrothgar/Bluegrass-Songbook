@@ -1,6 +1,6 @@
 {meta: title Why Hurt The One Who Loves You}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Bill Dees}
+{meta: composer Roy Orbison and Bill Dees}
 
 {start_of_verse: Verse 1}
 [C]If you really [A7]love me and you [Dm]say that you [G7]do 

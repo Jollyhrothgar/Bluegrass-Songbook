@@ -1,6 +1,6 @@
 {meta: title Just Playin' Possum}
 {meta: artist Alan Jackson}
-{meta: writer Jim McBride, Alan Jackson, Gary Overton}
+{meta: composer Jim McBride, Alan Jackson, Gary Overton}
 
 {start_of_verse: Verse 1}
 [D7]I parked my car round [G]back I've got the shades pulled [C]down

@@ -1,6 +1,6 @@
 {meta: title Look On The Good Side}
 {meta: artist Jimmy Dean}
-{meta: writer Jimmy Dean and Richard Shannon}
+{meta: composer Jimmy Dean and Richard Shannon}
 
 {start_of_verse: Verse 1}
 [E7]You gotta look look look on the good side

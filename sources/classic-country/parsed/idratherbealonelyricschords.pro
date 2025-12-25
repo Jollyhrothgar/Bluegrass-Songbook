@@ -1,6 +1,6 @@
 {meta: title I'd Rather Be Alone}
 {meta: artist Cal Smith}
-{meta: writer Barbara Day and Jimmy Day}
+{meta: composer Barbara Day and Jimmy Day}
 
 {start_of_verse: Verse 1}
 [C]You don't [G7]really [C]love me [C7]I might as well be [F]free

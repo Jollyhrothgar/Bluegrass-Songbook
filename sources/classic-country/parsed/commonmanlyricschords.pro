@@ -1,6 +1,6 @@
 {meta: title Common Man}
 {meta: artist John Conlee}
-{meta: writer Sammy Johns}
+{meta: composer Sammy Johns}
 
 {start_of_verse: Verse 1}
 [G]As the maid poured wine and we began to [C]dine 

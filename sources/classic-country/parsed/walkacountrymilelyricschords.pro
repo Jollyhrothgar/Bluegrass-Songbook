@@ -1,6 +1,6 @@
 {meta: title Walk A Country Mile}
 {meta: artist Slim Dusty}
-{meta: writer Joy McKean}
+{meta: composer Joy McKean}
 
 {start_of_verse: Verse 1}
 [G]Well I've walked a mile or [C]two in my [G]lifetime

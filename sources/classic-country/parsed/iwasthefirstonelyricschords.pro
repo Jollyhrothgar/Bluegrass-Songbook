@@ -1,6 +1,6 @@
 {meta: title I Was The First One}
 {meta: artist Hank Thompson}
-{meta: writer Orville Proctor}
+{meta: composer Orville Proctor}
 
 {start_of_verse: Verse 1}
 [G]I was the first to chose her to [C]make her mine

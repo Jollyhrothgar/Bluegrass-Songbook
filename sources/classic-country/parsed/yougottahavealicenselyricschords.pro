@@ -1,6 +1,6 @@
 {meta: title You Gotta Have A License}
 {meta: artist Buck Owens}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]Me and brother Bill was goin' fishin' down to the river one [D7]day

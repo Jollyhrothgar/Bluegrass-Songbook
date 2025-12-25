@@ -1,6 +1,6 @@
 {meta: title Talkin’ To Myself Again}
 {meta: artist Tammy Wynette}
-{meta: writer James Paul O’Hara}
+{meta: composer James Paul O’Hara}
 
 {start_of_verse: Verse 1}
 [C]Good mornin' darlin' [F]can I bring you some [G7]coffee in [C]bed

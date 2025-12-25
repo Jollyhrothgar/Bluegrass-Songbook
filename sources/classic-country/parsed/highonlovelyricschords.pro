@@ -1,6 +1,6 @@
 {meta: title High On Love}
 {meta: artist Patty Loveless}
-{meta: writer Jeff Hanna and Kostas Lazarides}
+{meta: composer Jeff Hanna and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [C]High on love and I ain't comin' [F]down 

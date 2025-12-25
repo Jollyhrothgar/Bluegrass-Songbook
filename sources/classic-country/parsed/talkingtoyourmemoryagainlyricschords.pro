@@ -1,6 +1,6 @@
 {meta: title Talking To Your Memory Again}
 {meta: artist Cal Smith}
-{meta: writer Charlie Craig and Betty Craig}
+{meta: composer Charlie Craig and Betty Craig}
 
 {start_of_verse: Verse 1}
 [G]Faded is the picture that I got out and looked at [C]today

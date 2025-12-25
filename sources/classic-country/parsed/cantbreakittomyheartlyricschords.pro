@@ -1,6 +1,6 @@
 {meta: title Can't Break It To My Heart}
 {meta: artist Tracy Lawrence}
-{meta: writer Earl Clark, Elbert West, Kirk Roth, Tracy Lawrence}
+{meta: composer Earl Clark, Elbert West, Kirk Roth, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [C]I've never felt as helpless [Dm]as I do today

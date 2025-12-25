@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Keep On Loving Him}
 {meta: artist Tammy Wynette}
-{meta: writer Norro Wilson and Carmol Taylor}
+{meta: composer Norro Wilson and Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [C]He ain't no saint I [F]know he'll never [C]be

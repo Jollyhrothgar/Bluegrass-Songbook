@@ -1,6 +1,6 @@
 {meta: title I'm Knee Deep In Love With You}
 {meta: artist Dave And Sugar}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]Well I'm knee deep in loving [F]you 

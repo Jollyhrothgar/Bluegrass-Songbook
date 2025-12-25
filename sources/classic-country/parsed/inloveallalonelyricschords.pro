@@ -1,6 +1,6 @@
 {meta: title In Love All Alone}
 {meta: artist Gene Watson}
-{meta: writer Randy Hatch and Jesse Shofner}
+{meta: composer Randy Hatch and Jesse Shofner}
 
 {start_of_verse: Verse 1}
 [C]I've learned to wake up each morning all alone

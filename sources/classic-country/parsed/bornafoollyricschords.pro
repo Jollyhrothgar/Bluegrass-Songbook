@@ -1,6 +1,6 @@
 {meta: title Born A Fool}
 {meta: artist Jim Ed Brown}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [G7]Born a [C]fool

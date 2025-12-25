@@ -1,6 +1,6 @@
 {meta: title Christmas Ain't Like Christmas Anymore Lyrics and Chords}
 {meta: artist Kitty Wells}
-{meta: writer Roy Botkin}
+{meta: composer Roy Botkin}
 
 {start_of_verse: Verse 1}
 [G]Holidays are [C]lonely days for [G]me

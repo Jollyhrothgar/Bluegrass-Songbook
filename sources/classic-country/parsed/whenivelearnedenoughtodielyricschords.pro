@@ -1,6 +1,6 @@
 {meta: title When I've Learned Enough To Die}
 {meta: artist Johnny Cash}
-{meta: writer Buddy Killen, Ray Baker, Delbert Wilson}
+{meta: composer Buddy Killen, Ray Baker, Delbert Wilson}
 
 {start_of_verse: Verse 1}
 [C](When I've learned [D7]enough to [G]really [C]live

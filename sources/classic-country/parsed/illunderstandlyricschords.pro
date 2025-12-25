@@ -1,6 +1,6 @@
 {meta: title I’ll Understand}
 {meta: artist Vern Gosdin}
-{meta: writer Dennis Knutson and Vern Gosdin}
+{meta: composer Dennis Knutson and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [G]How can you be too blind to read between the [C]lines

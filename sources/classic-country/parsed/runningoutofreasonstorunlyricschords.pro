@@ -1,6 +1,6 @@
 {meta: title Running Out Of Reasons To Run}
 {meta: artist Don Williams}
-{meta: writer Jim Rushing and J.D. Martin}
+{meta: composer Jim Rushing and J.D. Martin}
 
 {start_of_verse: Verse 1}
 [G]Wounded by love I [C]was too [G]afraid

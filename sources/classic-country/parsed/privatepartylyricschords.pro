@@ -1,6 +1,6 @@
 {meta: title Private Party}
 {meta: artist Billy Mata}
-{meta: writer John R. Lambert}
+{meta: composer John R. Lambert}
 
 {start_of_verse: Verse 1}
 [G]I’ve got a standing reservation at my local drinking [C]spot

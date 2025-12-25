@@ -1,6 +1,6 @@
 {meta: title Oklahoma Waltz}
 {meta: artist Johnny Bond}
-{meta: writer Jimmy Kenton}
+{meta: composer Jimmy Kenton}
 
 {start_of_verse: Verse 1}
 [G]It happened in old Oklahoma

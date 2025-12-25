@@ -1,6 +1,6 @@
 {meta: title Tall Tall Trees}
 {meta: artist Roger Miller}
-{meta: writer George Jones and Roger Miller}
+{meta: composer George Jones and Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]If you wanna drive a big limou[D7]sine

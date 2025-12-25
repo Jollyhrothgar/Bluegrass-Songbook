@@ -1,6 +1,6 @@
 {meta: title Call Me Mr. Lost}
 {meta: artist Carl Smith}
-{meta: writer Roy Baham}
+{meta: composer Roy Baham}
 
 {start_of_verse: Verse 1}
 [G]Well goodbye  true [C]love  hello Mr. [G]Gloom

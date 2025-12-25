@@ -1,6 +1,6 @@
 {meta: title Good Year For The Wine}
 {meta: artist Ernest Tubb}
-{meta: writer Fred Burch and Tandy Rice}
+{meta: composer Fred Burch and Tandy Rice}
 
 {start_of_verse: Verse 1}
 [G]Some people say I [D7]drink because you left [G]me

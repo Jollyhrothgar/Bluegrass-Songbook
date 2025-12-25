@@ -1,6 +1,6 @@
 {meta: title Rider On The Rim}
 {meta: artist Red Steagall}
-{meta: writer R.W. Hampton and Red Steagall}
+{meta: composer R.W. Hampton and Red Steagall}
 
 {start_of_verse: Verse 1}
 [G]On the wagon last October was a [C]kid of seven[G]teen

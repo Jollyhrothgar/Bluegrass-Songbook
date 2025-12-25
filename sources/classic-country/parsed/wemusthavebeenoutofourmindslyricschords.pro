@@ -1,6 +1,6 @@
 {meta: title We Must Have Been Out Of Our Minds}
 {meta: artist Vern Gosdin}
-{meta: writer Melba Montgomery}
+{meta: composer Melba Montgomery}
 
 {start_of_verse: Verse 1}
 [C]We said our goodbye long [F]ago

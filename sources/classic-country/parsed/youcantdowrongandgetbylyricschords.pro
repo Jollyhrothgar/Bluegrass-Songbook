@@ -1,6 +1,6 @@
 {meta: title You Can't Do Wrong And Get By}
 {meta: artist George Jones and Ricky Skaggs}
-{meta: writer Larry Cordle and Jim Rushing}
+{meta: composer Larry Cordle and Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]I remember my [F]grandfather's [C]counsel

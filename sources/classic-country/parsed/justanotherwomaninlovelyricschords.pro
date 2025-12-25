@@ -1,6 +1,6 @@
 {meta: title Just Another Woman In Love}
 {meta: artist Anne Murray}
-{meta: writer Patti Ryan and Wanda Mallett}
+{meta: composer Patti Ryan and Wanda Mallett}
 
 {start_of_verse: Verse 1}
 [G]I'm strong I'm sure I'm in [Em]control a lady with a [Am]plan

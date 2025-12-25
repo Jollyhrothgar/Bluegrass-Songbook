@@ -1,6 +1,6 @@
 {meta: title Stubborn Heart}
 {meta: artist Kitty Wells}
-{meta: writer Johnnie Masters}
+{meta: composer Johnnie Masters}
 
 {start_of_verse: Verse 1}
 [C]Everything that I say seems to upset [G7]you

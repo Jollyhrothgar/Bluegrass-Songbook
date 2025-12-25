@@ -1,6 +1,6 @@
 {meta: title Crazy In Love}
 {meta: artist Conway Twitty}
-{meta: writer Randy McCormick and Even Stevens}
+{meta: composer Randy McCormick and Even Stevens}
 
 {start_of_verse: Verse 1}
 [C]Ain't it [Dm]funny how time

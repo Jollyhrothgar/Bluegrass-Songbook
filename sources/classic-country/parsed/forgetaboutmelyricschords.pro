@@ -1,6 +1,6 @@
 {meta: title Forget About Me}
 {meta: artist The Bellamy Brothers}
-{meta: writer Troy Seals, Eddie Setser, Francis Miller}
+{meta: composer Troy Seals, Eddie Setser, Francis Miller}
 
 {start_of_verse: Verse 1}
 [G]Every time I look into your eyes

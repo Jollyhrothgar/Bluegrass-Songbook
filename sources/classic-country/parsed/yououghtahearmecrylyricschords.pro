@@ -1,6 +1,6 @@
 {meta: title You Oughta Hear Me Cry}
 {meta: artist Carl Smith}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]If you think I laugh louder

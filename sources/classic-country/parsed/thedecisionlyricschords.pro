@@ -1,6 +1,6 @@
 {meta: title The Decision}
 {meta: artist Ricky Van Shelton}
-{meta: writer Jerry Thompson and Ricky Van Shelton}
+{meta: composer Jerry Thompson and Ricky Van Shelton}
 
 {start_of_verse: Verse 1}
 [G]She [C]fell in love with her [D7]heart and [G]showed it physica[Em]lly

@@ -1,6 +1,6 @@
 {meta: title I'm A Lonesome Fugitive}
 {meta: artist Merle Haggard}
-{meta: writer Liz and Casey Anderson}
+{meta: composer Liz and Casey Anderson}
 
 {start_of_verse: Verse 1}
 [C]Down every road there's [F]always one more [G7]city

@@ -1,6 +1,6 @@
 {meta: title Forever Together}
 {meta: artist Randy Travis}
-{meta: writer Randy Travis and Alan Jackson}
+{meta: composer Randy Travis and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G]I took you for [C]granted [D7]so many [G]years

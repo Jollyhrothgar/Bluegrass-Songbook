@@ -1,6 +1,6 @@
 {meta: title Can’t Break The Habit}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Leona Williams}
+{meta: composer Merle Haggard and Leona Williams}
 
 {start_of_verse: Verse 1}
 [G]I can kick any habit  that [C]is if I want [G]to

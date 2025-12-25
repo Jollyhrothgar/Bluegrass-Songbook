@@ -1,6 +1,6 @@
 {meta: title You Won't Have Far To Go}
 {meta: artist Johnny Cash}
-{meta: writer Chuck Glaser}
+{meta: composer Chuck Glaser}
 
 {start_of_verse: Verse 1}
 [G]I can see now that [D7]you've stacked the [G]cards

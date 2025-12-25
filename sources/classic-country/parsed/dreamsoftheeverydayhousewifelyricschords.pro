@@ -1,6 +1,6 @@
 {meta: title Dreams of the Everyday Housewife}
 {meta: artist Glen Campbell}
-{meta: writer Chris Gantry}
+{meta: composer Chris Gantry}
 
 {start_of_verse: Verse 1}
 [C7]She looks in the mirror and stares at [C]the

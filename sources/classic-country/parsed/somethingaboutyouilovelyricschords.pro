@@ -1,6 +1,6 @@
 {meta: title Something About You I Love}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]There's just something about you I love 

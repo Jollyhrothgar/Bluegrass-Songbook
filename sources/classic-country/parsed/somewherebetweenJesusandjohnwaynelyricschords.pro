@@ -1,6 +1,6 @@
 {meta: title Somewhere Between Jesus And John Wayne}
 {meta: artist The Gaithers}
-{meta: writer Benjamin Gaither, Bill Gaither}
+{meta: composer Benjamin Gaither, Bill Gaither}
 
 {start_of_verse: Verse 1}
 [C]Daddy was a cowboy [F]hard as a [C]rock

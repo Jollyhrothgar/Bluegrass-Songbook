@@ -1,6 +1,6 @@
 {meta: title Would You Take Another Chance On Me}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]If I promise you [A7]to straighten up [Dm]and put my life in [G7]order[Dm]

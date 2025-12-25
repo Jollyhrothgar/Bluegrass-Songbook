@@ -1,6 +1,6 @@
 {meta: title The Other Side Of The Cross}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]There were tears in the eyes of [C][F]Je-sus 

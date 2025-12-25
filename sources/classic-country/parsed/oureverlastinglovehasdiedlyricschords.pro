@@ -1,6 +1,6 @@
 {meta: title Our Everlasting Love Has Died}
 {meta: artist Roy Drusky}
-{meta: writer Tom Lee and Roy Drusky}
+{meta: composer Tom Lee and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [C]There's something [G7]wrong now 

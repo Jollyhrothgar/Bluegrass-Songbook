@@ -1,6 +1,6 @@
 {meta: title Crossing Over Jordan}
 {meta: artist Melba Montgomery}
-{meta: writer Melba Montgomery and Carl Montgomery}
+{meta: composer Melba Montgomery and Carl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]Our many long years in bondage has shown how people have been

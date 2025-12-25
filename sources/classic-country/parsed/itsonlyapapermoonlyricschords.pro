@@ -1,6 +1,6 @@
 {meta: title It's Only A Paper Moon}
 {meta: artist Jim Reeves}
-{meta: writer E.Y. Harburg, Harold Arlen, Billy Rose}
+{meta: composer E.Y. Harburg, Harold Arlen, Billy Rose}
 
 {start_of_verse: Verse 1}
 [G]It's only a [Am]paper [D7]moon [Am]sailing [D7]over a cardboard [G]sea

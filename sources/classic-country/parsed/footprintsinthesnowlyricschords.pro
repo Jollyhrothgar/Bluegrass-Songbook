@@ -1,6 +1,6 @@
 {meta: title Footprints in the Snow}
 {meta: artist Bill Monroe}
-{meta: writer Rupert Jones}
+{meta: composer Rupert Jones}
 
 {start_of_verse: Verse 1}
 [C]Some folks like the summer time when they can walk [F]about

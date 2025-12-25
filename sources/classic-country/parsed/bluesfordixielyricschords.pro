@@ -1,6 +1,6 @@
 {meta: title Blues For Dixie}
 {meta: artist Bob Wills}
-{meta: writer O. W. Mayo}
+{meta: composer O. W. Mayo}
 
 {start_of_verse: Verse 1}
 [G]If you've ever seen that ole [G7]Mississippi

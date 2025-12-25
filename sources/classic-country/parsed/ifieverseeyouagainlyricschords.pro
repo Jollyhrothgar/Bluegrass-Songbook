@@ -1,6 +1,6 @@
 {meta: title If I Ever See You Again}
 {meta: artist Anne Murray}
-{meta: writer Bill Rice}
+{meta: composer Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]If I ever [C]see [G]you [D7]again

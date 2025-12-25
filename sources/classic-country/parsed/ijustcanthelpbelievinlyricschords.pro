@@ -1,6 +1,6 @@
 {meta: title I Just Can't Help Believin'}
 {meta: artist Ronnie Milsap}
-{meta: writer Cynthia Weil and Barry Mann}
+{meta: composer Cynthia Weil and Barry Mann}
 
 {start_of_verse: Verse 1}
 [C]I just can't help believin'

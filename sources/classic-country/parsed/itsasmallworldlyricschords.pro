@@ -1,6 +1,6 @@
 {meta: title It’s A Small World}
 {meta: artist Slim Whitman}
-{meta: writer Richard M. Sherman and Robert B. Sherman}
+{meta: composer Richard M. Sherman and Robert B. Sherman}
 
 {start_of_verse: Verse 1}
 [C]It's a world of laughter a [G7]world of tears 

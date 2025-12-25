@@ -1,6 +1,6 @@
 {meta: title Low As A Man Can Go}
 {meta: artist Hank Williams Jr.}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]I’m so low I could sit down on an [C]old newspaper

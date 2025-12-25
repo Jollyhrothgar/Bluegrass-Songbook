@@ -1,6 +1,6 @@
 {meta: title Boys And Lucy Brown}
 {meta: artist Leona Williams}
-{meta: writer Leona Williams and Ron Williams}
+{meta: composer Leona Williams and Ron Williams}
 
 {start_of_verse: Verse 1}
 [C]We've been planning on this [G7]party all year [C]long

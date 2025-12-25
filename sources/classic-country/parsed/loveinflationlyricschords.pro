@@ -1,6 +1,6 @@
 {meta: title Love Inflation}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Love inflation [F]Lord that’s twice as high 

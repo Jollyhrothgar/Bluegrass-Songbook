@@ -1,6 +1,6 @@
 {meta: title Conscience I'm Guilty}
 {meta: artist Hank Snow}
-{meta: writer Jack Rhodes, Dick Reynolds, Jack Rimmings}
+{meta: composer Jack Rhodes, Dick Reynolds, Jack Rimmings}
 
 {start_of_verse: Verse 1}
 [C]Oh conscience I'm [G]guilty I'm [D7]guilty [G]again

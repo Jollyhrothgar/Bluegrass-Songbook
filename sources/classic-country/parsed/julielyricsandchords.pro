@@ -1,6 +1,6 @@
 {meta: title Julie}
 {meta: artist Porter Wagoner}
-{meta: writer Waylon Jennings}
+{meta: composer Waylon Jennings}
 
 {start_of_verse: Verse 1}
 [C]When I married Julie she was just seventeen

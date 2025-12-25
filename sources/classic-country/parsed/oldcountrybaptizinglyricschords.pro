@@ -1,6 +1,6 @@
 {meta: title Old Country Baptizing}
 {meta: artist Emmylou Harris}
-{meta: writer Carl Story}
+{meta: composer Carl Story}
 
 {start_of_verse: Verse 1}
 [C]Traveling down a country road on [F]a Sunday [C]morn

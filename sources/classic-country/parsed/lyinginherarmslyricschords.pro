@@ -1,6 +1,6 @@
 {meta: title Lying In Her Arms}
 {meta: artist John Conlee}
-{meta: writer Paul Kennerley and John Anderson}
+{meta: composer Paul Kennerley and John Anderson}
 
 {start_of_verse: Verse 1}
 [D7]I was [G]lying in her arms not a [D7]word I said was [G]true

@@ -1,6 +1,6 @@
 {meta: title Pray Every Day}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Red Simpson}
+{meta: composer Buck Owens and Red Simpson}
 
 {start_of_verse: Verse 1}
 [G]Oh you must pray every day [C]pray every day

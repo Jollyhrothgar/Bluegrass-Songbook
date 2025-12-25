@@ -1,6 +1,6 @@
 {meta: title My Happiness Goes Off}
 {meta: artist Cal Smith}
-{meta: writer A.L. Owens and Dallas Frazier}
+{meta: composer A.L. Owens and Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]My [C]happiness goes [G]off 

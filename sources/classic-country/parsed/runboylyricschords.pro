@@ -1,6 +1,6 @@
 {meta: title Run Boy}
 {meta: artist Ray Price}
-{meta: writer Hy Heath}
+{meta: composer Hy Heath}
 
 {start_of_verse: Verse 1}
 [G]So you and your true love have [D7]parted 

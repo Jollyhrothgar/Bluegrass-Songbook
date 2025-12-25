@@ -1,6 +1,6 @@
 {meta: title I’ll Find It Where I Can}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Zack Van Arsdale and Michael Clark}
+{meta: composer Zack Van Arsdale and Michael Clark}
 
 {start_of_verse: Verse 1}
 [G]It’s just another wasted [C]morning

@@ -1,6 +1,6 @@
 {meta: title Heart Wrenching Lovesick Memories}
 {meta: artist Rhonda Vincent}
-{meta: writer Tonya Lowman}
+{meta: composer Tonya Lowman}
 
 {start_of_verse: Verse 1}
 [C]The Lord knows I've tried to for[F]get you

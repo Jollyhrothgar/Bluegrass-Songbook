@@ -1,6 +1,6 @@
 {meta: title The Kind Of Needin' I Need}
 {meta: artist Norma Jean}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]The boss needs me to come to [F]work in the morning he [C]told me so

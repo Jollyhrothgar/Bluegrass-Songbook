@@ -1,6 +1,6 @@
 {meta: title Black Rose}
 {meta: artist Waylon Jennings}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [G]Way down in Vir[C]ginia 

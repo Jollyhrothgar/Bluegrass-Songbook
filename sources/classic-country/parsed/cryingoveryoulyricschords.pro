@@ -1,6 +1,6 @@
 {meta: title Crying Over You}
 {meta: artist Webb Pierce}
-{meta: writer Mark Dee}
+{meta: composer Mark Dee}
 
 {start_of_verse: Verse 1}
 [C]Last night I never [C7]closed my eyes to [F]sleep

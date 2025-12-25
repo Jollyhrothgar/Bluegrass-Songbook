@@ -1,6 +1,6 @@
 {meta: title I've Kissed You My Last Time}
 {meta: artist Kitty Wells}
-{meta: writer Bill Carlisle, Virginia Suber, Tommy Cutrer}
+{meta: composer Bill Carlisle, Virginia Suber, Tommy Cutrer}
 
 {start_of_verse: Verse 1}
 [C]Down the road of love I see sign after sign

@@ -1,6 +1,6 @@
 {meta: title Desperation}
 {meta: artist Gene Watson}
-{meta: writer Gene Simmons and Gene Mabry}
+{meta: composer Gene Simmons and Gene Mabry}
 
 {start_of_verse: Verse 1}
 [G]On this lonely bed I'm lying   deep inside my mind just [G7]crying

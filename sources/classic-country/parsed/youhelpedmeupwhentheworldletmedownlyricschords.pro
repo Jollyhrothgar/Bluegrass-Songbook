@@ -1,6 +1,6 @@
 {meta: title You Helped Me Up When The World Let Me Down}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Clyde Pitts Jr., Carmon D. Holland, Davis Cile}
+{meta: composer Clyde Pitts Jr., Carmon D. Holland, Davis Cile}
 
 {start_of_verse: Verse 1}
 [C]Taking in consideration honey all that we've been [F]through

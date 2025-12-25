@@ -1,6 +1,6 @@
 {meta: title How Many}
 {meta: artist Jim Reeves}
-{meta: writer Hal Blair and Howard Barnes}
+{meta: composer Hal Blair and Howard Barnes}
 
 {start_of_verse: Verse 1}
 [C]If all the guys you ever knew

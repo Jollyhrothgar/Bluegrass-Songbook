@@ -1,6 +1,6 @@
 {meta: title Somebody Almost Loved Me}
 {meta: artist Ray Price}
-{meta: writer Roger Bryant Brown and Glenn Ray}
+{meta: composer Roger Bryant Brown and Glenn Ray}
 
 {start_of_verse: Verse 1}
 [C]Somebody almost loved me somebody almost [C7]cared

@@ -1,6 +1,6 @@
 {meta: title There Must Be Something About Me That She Loves}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [G]Oh I know that you're wonderin' [C]what she ever saw in [G]me

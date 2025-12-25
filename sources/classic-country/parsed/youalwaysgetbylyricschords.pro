@@ -1,6 +1,6 @@
 {meta: title You Always Get By}
 {meta: artist Ray Price}
-{meta: writer Don Helms and Ray Price}
+{meta: composer Don Helms and Ray Price}
 
 {start_of_verse: Verse 1}
 [C]I get so doggone tired of hearing you laugh

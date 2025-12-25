@@ -1,6 +1,6 @@
 {meta: title Honkytonk Man}
 {meta: artist Marty Robbins and Clint Eastwood}
-{meta: writer Billie Jean Horton, Tillman Franks}
+{meta: composer Billie Jean Horton, Tillman Franks}
 
 {start_of_verse: Verse 1}
 [C]Well I've never seen you look quite so [Em]sad

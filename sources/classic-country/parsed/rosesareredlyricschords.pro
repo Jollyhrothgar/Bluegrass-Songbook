@@ -1,6 +1,6 @@
 {meta: title Roses Are Red}
 {meta: artist Don Gibson}
-{meta: writer Don Gibson and Hall Houpe}
+{meta: composer Don Gibson and Hall Houpe}
 
 {start_of_verse: Verse 1}
 [C]Roses are red and the [F]violets are [D7]blue

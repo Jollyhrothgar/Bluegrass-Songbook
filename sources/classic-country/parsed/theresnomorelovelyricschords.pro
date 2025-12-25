@@ -1,6 +1,6 @@
 {meta: title There's No More Love}
 {meta: artist Carl Smith}
-{meta: writer Country Johnny Mathis}
+{meta: composer Country Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [G]Heart she’s left this town she’s turned you down 

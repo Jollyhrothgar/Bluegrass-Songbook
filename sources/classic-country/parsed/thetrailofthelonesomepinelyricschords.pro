@@ -1,6 +1,6 @@
 {meta: title The Trail Of The Lonesome Pine}
 {meta: artist Rex Allen}
-{meta: writer Harry Carroll and Ballard Macdonald}
+{meta: composer Harry Carroll and Ballard Macdonald}
 
 {start_of_verse: Verse 1}
 [F]In the Blue Ridge [D7]Mountains of [G7]Virginia

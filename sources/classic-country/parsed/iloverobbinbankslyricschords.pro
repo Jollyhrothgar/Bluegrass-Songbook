@@ -1,6 +1,6 @@
 {meta: title I Love Robbin' Banks}
 {meta: artist David Allan Coe}
-{meta: writer Guy Clark and David Allan Coe}
+{meta: composer Guy Clark and David Allan Coe}
 
 {start_of_verse: Verse 1}
 [C]Just keep the motor runnin' this won't [F]take very long

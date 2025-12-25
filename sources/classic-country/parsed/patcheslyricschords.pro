@@ -1,6 +1,6 @@
 {meta: title Patches}
 {meta: artist Dickey Lee}
-{meta: writer Barry Mann and Larry Kolber}
+{meta: composer Barry Mann and Larry Kolber}
 
 {start_of_verse: Verse 1}
 [C]Down by the river that flows [F]by the coal [C]yards

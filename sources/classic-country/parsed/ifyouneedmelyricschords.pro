@@ -1,6 +1,6 @@
 {meta: title If You Need Me}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Antoine Domino}
+{meta: composer Dave Bartholomew and Antoine Domino}
 
 {start_of_verse: Verse 1}
 [D7]If you need me call my [G]name

@@ -1,6 +1,6 @@
 {meta: title I Got Your Word You Got Mine}
 {meta: artist Jimmy Dean}
-{meta: writer Jimmy Dean and Ruth Roberts}
+{meta: composer Jimmy Dean and Ruth Roberts}
 
 {start_of_verse: Verse 1}
 [F]I got [G7]your word you got [C]mine

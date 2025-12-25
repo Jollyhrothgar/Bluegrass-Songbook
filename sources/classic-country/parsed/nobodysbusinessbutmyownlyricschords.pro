@@ -1,6 +1,6 @@
 {meta: title Nobody's Business But My Own}
 {meta: artist Jean Shepard}
-{meta: writer Irving Taylor}
+{meta: composer Irving Taylor}
 
 {start_of_verse: Verse 1}
 [G]You've got a gal you love on Sunday

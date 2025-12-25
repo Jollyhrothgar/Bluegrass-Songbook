@@ -1,6 +1,6 @@
 {meta: title Just A Foolish Notion}
 {meta: artist Curtis Potter}
-{meta: writer Dallas Frazier and Buddy Mize}
+{meta: composer Dallas Frazier and Buddy Mize}
 
 {start_of_verse: Verse 1}
 [C]Ever since you left me I've been waiting for your [G7]call

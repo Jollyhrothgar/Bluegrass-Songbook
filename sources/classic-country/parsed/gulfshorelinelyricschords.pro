@@ -1,6 +1,6 @@
 {meta: title Gulf Shore Line}
 {meta: artist Don Williams}
-{meta: writer Harley Allen, Mel Besher, Carson Chamberlein}
+{meta: composer Harley Allen, Mel Besher, Carson Chamberlein}
 
 {start_of_verse: Verse 1}
 [C]Waves are rollin' in [G7]lazy summer [C]wind

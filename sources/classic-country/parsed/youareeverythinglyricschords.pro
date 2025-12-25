@@ -1,6 +1,6 @@
 {meta: title You Are Everything}
 {meta: artist Patty Loveless}
-{meta: writer Guy Clark and Keith Sykes}
+{meta: composer Guy Clark and Keith Sykes}
 
 {start_of_verse: Verse 1}
 [G]You are so [D7]good to me 

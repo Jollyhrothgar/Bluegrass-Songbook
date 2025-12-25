@@ -1,6 +1,6 @@
 {meta: title Everything I Own}
 {meta: artist Crystal Gayle}
-{meta: writer David Gates}
+{meta: composer David Gates}
 
 {start_of_verse: Verse 1}
 [C]You sheltered me from [Am]harm kept me [F]warm kept me [C]war-[G7]m

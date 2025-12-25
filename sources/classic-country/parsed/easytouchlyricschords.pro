@@ -1,6 +1,6 @@
 {meta: title Easy Touch}
 {meta: artist Don Williams}
-{meta: writer Rory Bourke, Tommy Rocco, Charlie Black}
+{meta: composer Rory Bourke, Tommy Rocco, Charlie Black}
 
 {start_of_verse: Verse 1}
 [G]I'm an easy touch she knows it everybody [D7]does

@@ -1,6 +1,6 @@
 {meta: title Arthritis Blues}
 {meta: artist Ramblin Jack Elliott}
-{meta: writer Butch Hawes}
+{meta: composer Butch Hawes}
 
 {start_of_verse: Verse 1}
 [C]Went to the the doctor looked sad [F]well he looked in his book

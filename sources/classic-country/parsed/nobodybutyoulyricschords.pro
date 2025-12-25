@@ -1,6 +1,6 @@
 {meta: title Nobody But You}
 {meta: artist Don Williams}
-{meta: writer John Jarrard and J.D. Martin}
+{meta: composer John Jarrard and J.D. Martin}
 
 {start_of_verse: Verse 1}
 [F]Who by touching my [C]hand makes me under[Dm]stand

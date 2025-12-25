@@ -1,6 +1,6 @@
 {meta: title Taking Chances}
 {meta: artist Eddy Arnold}
-{meta: writer Lester Vanadore}
+{meta: composer Lester Vanadore}
 
 {start_of_verse: Verse 1}
 [G]Taking chances with this heart each time I hold [C]you

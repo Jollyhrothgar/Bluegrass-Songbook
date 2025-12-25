@@ -1,6 +1,6 @@
 {meta: title Ain't It Funny The Way Love Can Do Ya}
 {meta: artist David Allan Coe}
-{meta: writer Guy Clark, Susanna Clark, David A. Coe}
+{meta: composer Guy Clark, Susanna Clark, David A. Coe}
 
 {start_of_verse: Verse 1}
 [G]She had good intentions and I had the same

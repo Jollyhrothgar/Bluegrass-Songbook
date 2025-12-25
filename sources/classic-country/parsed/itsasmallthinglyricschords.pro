@@ -1,6 +1,6 @@
 {meta: title It's A Small Thing}
 {meta: artist Wynn Stewart}
-{meta: writer Larry Butler and Tony Moon}
+{meta: composer Larry Butler and Tony Moon}
 
 {start_of_verse: Verse 1}
 [C]I hope you'll like the [G7]rose  I [C]picked [F]for you this [C]morning

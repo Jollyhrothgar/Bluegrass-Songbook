@@ -1,6 +1,6 @@
 {meta: title You're Gonna Love Yourself}
 {meta: artist Brenda Lee}
-{meta: writer Donnie Ray Fritts}
+{meta: composer Donnie Ray Fritts}
 
 {start_of_verse: Verse 1}
 [G]Heaven knows that [B7]some man [Em]has abused [G7][G]you

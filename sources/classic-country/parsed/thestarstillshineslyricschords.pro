@@ -1,6 +1,6 @@
 {meta: title The Star Still Shines}
 {meta: artist Sonny James}
-{meta: writer Gloria Shayne and Noel Regney}
+{meta: composer Gloria Shayne and Noel Regney}
 
 {start_of_verse: Verse 1}
 [D7]If dark [G]clouds [D7]cover your [G]Christmas sky

@@ -1,6 +1,6 @@
 {meta: title Could You}
 {meta: artist Hank Locklin}
-{meta: writer Hank Locklin and Jack Rhodes}
+{meta: composer Hank Locklin and Jack Rhodes}
 
 {start_of_verse: Verse 1}
 [G]Could you ask me darling for this [C]little gold [G]band

@@ -1,6 +1,6 @@
 {meta: title It Is Well With My Soul}
 {meta: artist Joey Feek}
-{meta: writer Horatio G. Spafford, Philip P. Bliss}
+{meta: composer Horatio G. Spafford, Philip P. Bliss}
 
 {start_of_verse: Verse 1}
 [G7]When [C]peace like a [G7]river [F]atten[G7]deth my [C]way

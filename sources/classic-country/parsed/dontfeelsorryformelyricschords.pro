@@ -1,6 +1,6 @@
 {meta: title Don't Feel Sorry For Me}
 {meta: artist Connie Smith}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [C]I've still got my memories of [F]you 

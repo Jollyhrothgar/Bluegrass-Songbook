@@ -1,6 +1,6 @@
 {meta: title What Am I Gonna Do Girl}
 {meta: artist Bobby Bare}
-{meta: writer C. King and T. Stern}
+{meta: composer C. King and T. Stern}
 
 {start_of_verse: Verse 1}
 [C]What am I gonna do girl [F]what am I gonna [G7]do

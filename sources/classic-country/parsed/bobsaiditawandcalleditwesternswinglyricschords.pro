@@ -1,6 +1,6 @@
 {meta: title Bob Said It Aw (And Called It Western Swing)}
 {meta: artist Johnny Bush}
-{meta: writer Jim Halley}
+{meta: composer Jim Halley}
 
 {start_of_verse: Verse 1}
 [G]I was raised on western [C]swing 

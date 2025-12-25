@@ -1,6 +1,6 @@
 {meta: title If I Could Only Start Over}
 {meta: artist Mel Tillis}
-{meta: writer Faye Bradshaw}
+{meta: composer Faye Bradshaw}
 
 {start_of_verse: Verse 1}
 [G]Now if I could only start [C]over

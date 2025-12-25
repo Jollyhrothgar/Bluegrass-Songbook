@@ -1,6 +1,6 @@
 {meta: title All Dressed Up and Lonely}
 {meta: artist Jim Reeves}
-{meta: writer Eddy Shaw}
+{meta: composer Eddy Shaw}
 
 {start_of_verse: Verse 1}
 [G]I put your favorite suit on and the [C]tie that you loved [G]so

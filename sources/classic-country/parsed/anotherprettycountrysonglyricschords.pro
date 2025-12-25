@@ -1,6 +1,6 @@
 {meta: title Another Pretty Country Song}
 {meta: artist David Allan Coe}
-{meta: writer David Allan Coe and Ronald Clark}
+{meta: composer David Allan Coe and Ronald Clark}
 
 {start_of_verse: Verse 1}
 [C]I bought this rhinestone [G7]suit in Cali[C]fornia

@@ -1,6 +1,6 @@
 {meta: title On Your Way Home}
 {meta: artist Patty Loveless}
-{meta: writer Matraca Berg and Ronnie Samoset}
+{meta: composer Matraca Berg and Ronnie Samoset}
 
 {start_of_verse: Verse 1}
 [C]I heard you slipping down the hall

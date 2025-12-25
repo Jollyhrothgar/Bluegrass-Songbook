@@ -1,6 +1,6 @@
 {meta: title I'm Sleepin’ In My Leggin’s Tonight}
 {meta: artist Red Steagall}
-{meta: writer Fletcher Jowers and Red Steagall}
+{meta: composer Fletcher Jowers and Red Steagall}
 
 {start_of_verse: Verse 1}
 [C]There's a big storm rollin' in I can [F]feel it in my bones

@@ -1,6 +1,6 @@
 {meta: title Today's Teardrops}
 {meta: artist Roy Orbison}
-{meta: writer Gene Pitney and Aaron Schroeder}
+{meta: composer Gene Pitney and Aaron Schroeder}
 
 {start_of_verse: Verse 1}
 [G]Today's teardrops are tomorrow's rainbows

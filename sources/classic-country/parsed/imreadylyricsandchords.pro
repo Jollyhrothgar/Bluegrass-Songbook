@@ -1,6 +1,6 @@
 {meta: title I'm Ready}
 {meta: artist Fats Domino}
-{meta: writer Durand King}
+{meta: composer Durand King}
 
 {start_of_verse: Verse 1}
 [C]Well I'm ready I'm willing and I'm able to rock and roll all night

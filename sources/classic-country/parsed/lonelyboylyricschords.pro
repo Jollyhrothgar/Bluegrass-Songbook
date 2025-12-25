@@ -1,6 +1,6 @@
 {meta: title Lonely Boy}
 {meta: artist Billy Crash Craddock}
-{meta: writer Paul Anka}
+{meta: composer Paul Anka}
 
 {start_of_verse: Verse 1}
 [G]I'm just a lonely boy lonely and [D7]blue

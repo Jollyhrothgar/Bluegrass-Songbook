@@ -1,6 +1,6 @@
 {meta: title Hangover Tavern}
 {meta: artist Hank Thompson}
-{meta: writer Johnny Lowe, Mary Lowe, Hank Thompson}
+{meta: composer Johnny Lowe, Mary Lowe, Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]Oh Lordy me [D7]I [C]feel so bad this [G]mornin'

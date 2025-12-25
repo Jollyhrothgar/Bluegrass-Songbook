@@ -1,6 +1,6 @@
 {meta: title Mountain High Valley Low}
 {meta: artist John Anderson}
-{meta: writer John David Anderson and Lionel Alton Delmore}
+{meta: composer John David Anderson and Lionel Alton Delmore}
 
 {start_of_verse: Verse 1}
 [C]Mountain high valley low in what direction [F]will I [C]go

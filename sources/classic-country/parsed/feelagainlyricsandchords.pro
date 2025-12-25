@@ -1,6 +1,6 @@
 {meta: title Feel Again Lyrics and Chords}
 {meta: artist Faron Young}
-{meta: writer John Virgin}
+{meta: composer John Virgin}
 
 {start_of_verse: Verse 1}
 [C]All the [G7]times I can't be with you and you get tired of being left [C]alone

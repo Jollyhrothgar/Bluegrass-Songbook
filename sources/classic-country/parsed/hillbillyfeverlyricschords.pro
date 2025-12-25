@@ -1,6 +1,6 @@
 {meta: title Hillbilly Fever}
 {meta: artist Little Jimmy Dickens}
-{meta: writer George Vaughn}
+{meta: composer George Vaughn}
 
 {start_of_verse: Verse 1}
 [G]When you walk up to a jukebox and you [C]slip that nickel [G]in

@@ -1,6 +1,6 @@
 {meta: title You You You}
 {meta: artist Doyle Lawson}
-{meta: writer Robert Mellin}
+{meta: composer Robert Mellin}
 
 {start_of_verse: Verse 1}
 [C]You you you [F]I'm in love with [C]you you you

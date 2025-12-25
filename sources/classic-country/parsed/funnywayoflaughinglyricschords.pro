@@ -1,6 +1,6 @@
 {meta: title Funny way of Laughing}
 {meta: artist Burl Ives}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]It's just my funny way of [F]laughing

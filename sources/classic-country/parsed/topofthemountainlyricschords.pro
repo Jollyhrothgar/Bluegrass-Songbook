@@ -1,6 +1,6 @@
 {meta: title Top Of The Mountain}
 {meta: artist Ray Price}
-{meta: writer Walter Mills}
+{meta: composer Walter Mills}
 
 {start_of_verse: Verse 1}
 [C]I've been traveling this [Am]low road for you[F]

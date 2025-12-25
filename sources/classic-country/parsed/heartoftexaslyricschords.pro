@@ -1,5 +1,5 @@
 {meta: artist Billy Joe Shaver}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [G]The heart of Texas is where I was born

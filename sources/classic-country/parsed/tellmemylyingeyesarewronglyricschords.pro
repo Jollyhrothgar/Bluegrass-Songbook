@@ -1,6 +1,6 @@
 {meta: title Tell Me My Lying Eyes Are Wrong}
 {meta: artist George Jones}
-{meta: writer Dallas Frazier and Sanger Shafer}
+{meta: composer Dallas Frazier and Sanger Shafer}
 
 {start_of_verse: Verse 1}
 [G]The night shift got off [C]early because of major [G]repairs

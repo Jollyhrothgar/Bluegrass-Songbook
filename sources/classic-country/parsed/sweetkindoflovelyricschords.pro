@@ -1,6 +1,6 @@
 {meta: title Sweet Kind of Love}
 {meta: artist Bob Wills}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]You do something to me I can’t understand

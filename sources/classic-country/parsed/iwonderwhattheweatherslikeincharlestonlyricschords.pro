@@ -1,6 +1,6 @@
 {meta: title I Wonder What The Weather's Like In Charleston}
 {meta: artist Bill Anderson}
-{meta: writer Moneen Carpenter}
+{meta: composer Moneen Carpenter}
 
 {start_of_verse: Verse 1}
 [G]Though you never talked of always you were [D7]gentle

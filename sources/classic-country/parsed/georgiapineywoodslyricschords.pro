@@ -1,6 +1,6 @@
 {meta: title Georgia Pineywoods}
 {meta: artist The Osborne Brothers}
-{meta: writer Boudleaux and Felice Bryant}
+{meta: composer Boudleaux and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [G]Miss [D7]those [C]Georgia [G]Pineywoods

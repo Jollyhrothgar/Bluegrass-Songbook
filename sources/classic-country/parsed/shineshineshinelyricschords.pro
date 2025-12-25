@@ -1,6 +1,6 @@
 {meta: title Shine Shine Shine}
 {meta: artist Eddy Raven}
-{meta: writer Bud Mcguire and Ken Bell}
+{meta: composer Bud Mcguire and Ken Bell}
 
 {start_of_verse: Verse 1}
 [G7]Go ahead with what you're doing

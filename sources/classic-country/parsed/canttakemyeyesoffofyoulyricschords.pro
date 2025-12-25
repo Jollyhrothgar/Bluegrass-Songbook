@@ -1,6 +1,6 @@
 {meta: title Can't Take My Eyes Off Of You}
 {meta: artist Brenda Lee}
-{meta: writer Bob Crewe and Bob Gaudio}
+{meta: composer Bob Crewe and Bob Gaudio}
 
 {start_of_verse: Verse 1}
 [C]You're just too good to be true

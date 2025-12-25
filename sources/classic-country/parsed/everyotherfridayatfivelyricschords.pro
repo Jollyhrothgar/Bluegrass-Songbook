@@ -1,6 +1,6 @@
 {meta: title Every Other Friday At Five}
 {meta: artist Doug Stone}
-{meta: writer Steven Dale Jones}
+{meta: composer Steven Dale Jones}
 
 {start_of_verse: Verse 1}
 [C]One out of [G7]two ain't gonna make [Am]it

@@ -1,6 +1,6 @@
 {meta: title The Farther I Go}
 {meta: artist Kenny Rogers}
-{meta: writer Kin Vassy and David McKechnie}
+{meta: composer Kin Vassy and David McKechnie}
 
 {start_of_verse: Verse 1}
 [G]I took a boat [D7]I took a [G]plane

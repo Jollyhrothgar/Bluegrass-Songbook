@@ -1,6 +1,6 @@
 {meta: title If I'm Dreaming Just Let Me Dream}
 {meta: artist Brenda Lee}
-{meta: writer Charlie Singleton}
+{meta: composer Charlie Singleton}
 
 {start_of_verse: Verse 1}
 [G]Please don't tell me if you're not [C]real

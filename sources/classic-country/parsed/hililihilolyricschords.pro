@@ -1,6 +1,6 @@
 {meta: title Hi-Lili Hi-Lo}
 {meta: artist The Everly Brothers}
-{meta: writer Bronislaw Kaper and Helen Deustch}
+{meta: composer Bronislaw Kaper and Helen Deustch}
 
 {start_of_verse: Verse 1}
 [G]A song of love is sad [G][C]song

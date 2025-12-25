@@ -1,6 +1,6 @@
 {meta: title He Did It All For Me}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Powell Sager and Duane Allen}
+{meta: composer Powell Sager and Duane Allen}
 
 {start_of_verse: Verse 1}
 [C]Once a man whom we know as the [G7]Son of [Am]God

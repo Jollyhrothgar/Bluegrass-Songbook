@@ -1,6 +1,6 @@
 {meta: title They'll Never Take His Love From Me}
 {meta: artist Leona Williams}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [C]If today the sun should set on all my [F]hopes and cares

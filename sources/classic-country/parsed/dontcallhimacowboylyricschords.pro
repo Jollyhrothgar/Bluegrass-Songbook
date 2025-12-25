@@ -1,6 +1,6 @@
 {meta: title Don't Call Him a Cowboy}
 {meta: artist Conway Twitty}
-{meta: writer Debbie Hupp, Johnny MacRae, and Bob Morrison}
+{meta: composer Debbie Hupp, Johnny MacRae, and Bob Morrison}
 
 {start_of_verse: Verse 1}
 [C]So you came from New York city

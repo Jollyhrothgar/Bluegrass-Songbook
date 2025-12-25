@@ -1,6 +1,6 @@
 {meta: title I Ain't Built That Way}
 {meta: artist Bob Luman}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G7]You're a sweet little thing and I hate to put you down

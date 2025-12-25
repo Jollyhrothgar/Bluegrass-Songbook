@@ -1,6 +1,6 @@
 {meta: title White Silver Sands}
 {meta: artist Sonny James}
-{meta: writer Charles G. Matthews and Gladys Reinhardt}
+{meta: composer Charles G. Matthews and Gladys Reinhardt}
 
 {start_of_verse: Verse 1}
 [C]Where the deep  blue pearly [F]waters  

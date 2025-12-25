@@ -1,6 +1,6 @@
 {meta: title Hold Whatcha Got}
 {meta: artist Ricky Skaggs}
-{meta: writer Jimmy Martin}
+{meta: composer Jimmy Martin}
 
 {start_of_verse: Verse 1}
 [C]Hold whatcha got I'm a coming home baby

@@ -1,6 +1,6 @@
 {meta: title Sail Away}
 {meta: artist Charlie Rich}
-{meta: writer Charlie Rich}
+{meta: composer Charlie Rich}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna sail away from sorrow

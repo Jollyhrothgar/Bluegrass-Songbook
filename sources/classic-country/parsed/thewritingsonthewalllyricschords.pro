@@ -1,6 +1,6 @@
 {meta: title The Writing's On The Wall}
 {meta: artist Jim Reeves}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [G]The writing's on the wall

@@ -1,6 +1,6 @@
 {meta: title Down In Tennessee}
 {meta: artist John Anderson}
-{meta: writer Wayland Holyfield}
+{meta: composer Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]I talked to your sister last night on the [F]telephone[Fm]

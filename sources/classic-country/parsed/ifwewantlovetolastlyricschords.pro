@@ -1,6 +1,6 @@
 {meta: title If We Want Love To Last}
 {meta: artist Conway Twitty}
-{meta: writer L.E. White}
+{meta: composer L.E. White}
 
 {start_of_verse: Verse 1}
 [C]Everybody I know is a [F]looking for [C]love

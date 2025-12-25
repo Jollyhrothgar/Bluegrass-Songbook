@@ -1,6 +1,6 @@
 {meta: title Are You Lost In Sin}
 {meta: artist J.D. Crowe}
-{meta: writer Jesse McReynolds and Jim McReynolds}
+{meta: composer Jesse McReynolds and Jim McReynolds}
 
 {start_of_verse: Verse 1}
 [G]Are you lost in sin my brother 

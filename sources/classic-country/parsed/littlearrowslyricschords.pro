@@ -1,6 +1,6 @@
 {meta: title Little Arrows Lyrics Chords}
 {meta: artist Slim Whitman}
-{meta: writer Albert Hammond and Mike Hazlewood}
+{meta: composer Albert Hammond and Mike Hazlewood}
 
 {start_of_verse: Verse 1}
 [G]There's a boy a little boy shooting arrows in the [D7]blue

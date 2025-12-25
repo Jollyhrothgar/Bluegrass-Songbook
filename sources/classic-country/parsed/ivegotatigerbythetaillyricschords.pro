@@ -1,6 +1,6 @@
 {meta: title I've Got a Tiger by the Tail}
 {meta: artist Buck Owens}
-{meta: writer Harlan Howard and Buck Owens}
+{meta: composer Harlan Howard and Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]I've got a tiger by the tail [C7]it's plain to [F]see

@@ -1,6 +1,6 @@
 {meta: title Amateur In Love}
 {meta: artist Slim Whitman}
-{meta: writer Lou Wayne and Jerry Christ}
+{meta: composer Lou Wayne and Jerry Christ}
 
 {start_of_verse: Verse 1}
 [G]Not some other guy can [C]look into your eyes

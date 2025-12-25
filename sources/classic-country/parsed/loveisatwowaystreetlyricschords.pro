@@ -1,6 +1,6 @@
 {meta: title Love Is A Two Way Street}
 {meta: artist Mel Tillis}
-{meta: writer Sterling Whipple}
+{meta: composer Sterling Whipple}
 
 {start_of_verse: Verse 1}
 [C]Ah you saw it in her eyes when she spoke about some stranger

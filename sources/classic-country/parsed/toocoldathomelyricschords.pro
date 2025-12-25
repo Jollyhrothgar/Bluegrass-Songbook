@@ -1,6 +1,6 @@
 {meta: title Too Cold At Home}
 {meta: artist George Jones}
-{meta: writer Bobby Lamoyne Harden}
+{meta: composer Bobby Lamoyne Harden}
 
 {start_of_verse: Verse 1}
 [C]Well it sure feels good to come in here

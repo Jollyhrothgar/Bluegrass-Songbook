@@ -1,6 +1,6 @@
 {meta: title Are You Ready For The Country}
 {meta: artist Waylon Jennings}
-{meta: writer Neil Young}
+{meta: composer Neil Young}
 
 {start_of_verse: Verse 1}
 [F]Slipping and a sliding playing [C]dominos

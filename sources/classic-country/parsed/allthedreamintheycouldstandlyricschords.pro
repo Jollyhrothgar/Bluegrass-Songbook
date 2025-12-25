@@ -1,6 +1,6 @@
 {meta: title All The Dreamin' They Could Stand}
 {meta: artist Buck Owens}
-{meta: writer Homer Joy}
+{meta: composer Homer Joy}
 
 {start_of_verse: Verse 1}
 [G]Chased our dreams endlessly [C]through it all she stood by me

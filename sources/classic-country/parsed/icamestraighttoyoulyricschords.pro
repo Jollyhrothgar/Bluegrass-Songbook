@@ -1,6 +1,6 @@
 {meta: title I Came Straight To You}
 {meta: artist Charlie Pride}
-{meta: writer Kevin Welch and John B. Jarvis}
+{meta: composer Kevin Welch and John B. Jarvis}
 
 {start_of_verse: Verse 1}
 [C]Well all I've got is [G7]what I've [C]got 

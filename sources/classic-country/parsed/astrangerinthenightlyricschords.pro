@@ -1,6 +1,6 @@
 {meta: title A Stranger in The Night}
 {meta: artist Hank Williams}
-{meta: writer Hank Williams and Bill Morgan}
+{meta: composer Hank Williams and Bill Morgan}
 
 {start_of_verse: Verse 1}
 [C]I'm lonesome for someone to kiss [F]me [C]goodnight

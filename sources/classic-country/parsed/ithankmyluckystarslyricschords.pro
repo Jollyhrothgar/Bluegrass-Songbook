@@ -1,6 +1,6 @@
 {meta: title I Thank My Lucky Stars}
 {meta: artist Eddy Arnold}
-{meta: writer Wayne Walker}
+{meta: composer Wayne Walker}
 
 {start_of_verse: Verse 1}
 [C]I thank my lucky stars for every[G7]day I spent with you

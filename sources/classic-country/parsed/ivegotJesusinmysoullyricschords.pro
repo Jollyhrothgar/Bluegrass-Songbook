@@ -1,6 +1,6 @@
 {meta: title I've Got Jesus In My Soul}
 {meta: artist Johnny Cash}
-{meta: writer Tom Ross and Joel Sonnier}
+{meta: composer Tom Ross and Joel Sonnier}
 
 {start_of_verse: Verse 1}
 [C]I’ve got Jesus in my [C7]soul

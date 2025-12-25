@@ -1,6 +1,6 @@
 {meta: title I Can't Even Walk (Without You Holding My Hand)}
 {meta: artist Marty Stuart}
-{meta: writer Colbert Croft and Joyce Croft}
+{meta: composer Colbert Croft and Joyce Croft}
 
 {start_of_verse: Verse 1}
 [G]I thought that number one would always be [G7]me

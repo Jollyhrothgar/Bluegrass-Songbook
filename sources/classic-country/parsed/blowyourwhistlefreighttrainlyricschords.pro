@@ -1,6 +1,6 @@
 {meta: title Blow Your Whistle Freight Train}
 {meta: artist Hank Snow}
-{meta: writer Alton Delmore and Rabon Delmore}
+{meta: composer Alton Delmore and Rabon Delmore}
 
 {start_of_verse: Verse 1}
 [C]This old freight train she’s [G7]moving along to [C]Nashville

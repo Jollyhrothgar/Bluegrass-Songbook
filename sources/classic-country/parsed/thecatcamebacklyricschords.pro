@@ -1,6 +1,6 @@
 {meta: title The Cat Came Back}
 {meta: artist Sonny James}
-{meta: writer Harry S. Miller}
+{meta: composer Harry S. Miller}
 
 {start_of_verse: Verse 1}
 [G]The cat came back the cat came back

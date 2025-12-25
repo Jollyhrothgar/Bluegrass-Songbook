@@ -1,6 +1,6 @@
 {meta: title I'll Sail My Ship Alone}
 {meta: artist Patsy Cline}
-{meta: writer Lois Mann, Henry Bernard, Murray Burns}
+{meta: composer Lois Mann, Henry Bernard, Murray Burns}
 
 {start_of_verse: Verse 1}
 [G]We've been sweethearts for so long

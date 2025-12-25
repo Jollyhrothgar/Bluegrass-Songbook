@@ -1,6 +1,6 @@
 {meta: title Then I'll Come Back To You}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Guidry Tassin}
+{meta: composer Lefty Frizzell and Guidry Tassin}
 
 {start_of_verse: Verse 1}
 [C]If there ever is a sand storm out on the [C7]deep blue [F]sea

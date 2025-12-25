@@ -1,6 +1,6 @@
 {meta: title Don't Ever Take The Ribbons From Your Hair}
 {meta: artist Eddy Arnold}
-{meta: writer Helen Hudgins}
+{meta: composer Helen Hudgins}
 
 {start_of_verse: Verse 1}
 [C]Don't ever take the [G7]ribbons from your [C]hair

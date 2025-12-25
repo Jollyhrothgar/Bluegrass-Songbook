@@ -1,6 +1,6 @@
 {meta: title Freight Train}
 {meta: artist Canadian Sweethearts}
-{meta: writer Elizabeth Cotton, Paul James, Frederick Williams}
+{meta: composer Elizabeth Cotton, Paul James, Frederick Williams}
 
 {start_of_verse: Verse 1}
 [C]Freight train freight train [G7]going so fast

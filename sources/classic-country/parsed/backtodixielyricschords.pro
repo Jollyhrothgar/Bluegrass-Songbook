@@ -1,6 +1,6 @@
 {meta: title Back To Dixie}
 {meta: artist Tony Rice}
-{meta: writer Doyle Lawson, Johnny Goble, Leroy Drumm}
+{meta: composer Doyle Lawson, Johnny Goble, Leroy Drumm}
 
 {start_of_verse: Verse 1}
 [G]I’m goin’ down to the Cumberland River

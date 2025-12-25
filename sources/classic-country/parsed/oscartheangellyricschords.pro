@@ -1,6 +1,6 @@
 {meta: title Oscar The Angel}
 {meta: artist Randy Travis}
-{meta: writer Don Schlitz}
+{meta: composer Don Schlitz}
 
 {start_of_verse: Verse 1}
 [G]Oscar was an angel and he [C]used to [G]walk the [C]streets

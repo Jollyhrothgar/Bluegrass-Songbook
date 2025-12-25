@@ -1,6 +1,6 @@
 {meta: title Must You Throw Dirt In My Face}
 {meta: artist Waylon Jennings}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]What is it that brings you to this part of town 

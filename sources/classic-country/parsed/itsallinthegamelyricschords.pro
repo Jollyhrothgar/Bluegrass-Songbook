@@ -1,6 +1,6 @@
 {meta: title It’s All In The Game}
 {meta: artist Merle Haggard}
-{meta: writer Carl Sigman}
+{meta: composer Carl Sigman}
 
 {start_of_verse: Verse 1}
 [C]Many a [G7]tear has to [C]fall

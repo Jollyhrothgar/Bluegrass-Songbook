@@ -1,6 +1,6 @@
 {meta: title Overtime}
 {meta: artist Patty Loveless}
-{meta: writer Kostas Lazarides}
+{meta: composer Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [C]Score is tied between us in this loving game

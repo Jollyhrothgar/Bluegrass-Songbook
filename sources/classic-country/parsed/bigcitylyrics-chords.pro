@@ -1,6 +1,6 @@
 {meta: title Big City}
 {meta: artist Ernest Tubb}
-{meta: writer Paul Williams and Sam Humphrey}
+{meta: composer Paul Williams and Sam Humphrey}
 
 {start_of_verse: Verse 1}
 [C]I'm walking your streets again big city

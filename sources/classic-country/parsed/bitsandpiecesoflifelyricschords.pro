@@ -1,6 +1,6 @@
 {meta: title Bits And Pieces Of Life}
 {meta: artist Cal Smith}
-{meta: writer Charlie Williams}
+{meta: composer Charlie Williams}
 
 {start_of_verse: Verse 1}
 [F]No one knows the old man’s name 

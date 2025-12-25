@@ -1,6 +1,6 @@
 {meta: title Can You Build Your House (On Another Man’s Grave)}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Joyce Allsup}
+{meta: composer Joyce Allsup}
 
 {start_of_verse: Verse 1}
 [G]I know you can take her if you want [C]her

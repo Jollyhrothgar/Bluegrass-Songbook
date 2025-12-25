@@ -1,6 +1,6 @@
 {meta: title Does He Love You Like I Do}
 {meta: artist Wynn Stewart}
-{meta: writer Charlie Williams and Scott Turner}
+{meta: composer Charlie Williams and Scott Turner}
 
 {start_of_verse: Verse 1}
 [C]Every day he sends you flowers 

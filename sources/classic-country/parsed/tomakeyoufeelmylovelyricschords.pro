@@ -1,6 +1,6 @@
 {meta: title To Make You Feel My Love}
 {meta: artist Garth Brooks}
-{meta: writer Bob Dylan}
+{meta: composer Bob Dylan}
 
 {start_of_verse: Verse 1}
 [C]When the rain is [G7]blowing in your face

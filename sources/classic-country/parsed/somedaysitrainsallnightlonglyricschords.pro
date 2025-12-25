@@ -1,6 +1,6 @@
 {meta: title Some Days It Rains All Night Long}
 {meta: artist Anne Murray}
-{meta: writer Ed Penney}
+{meta: composer Ed Penney}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I know how the melody goes

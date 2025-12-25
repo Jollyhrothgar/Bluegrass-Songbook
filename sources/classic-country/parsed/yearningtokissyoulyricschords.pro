@@ -1,6 +1,6 @@
 {meta: title Yearning To Kiss You}
 {meta: artist Tammy Wynette}
-{meta: writer George Jones and Eddie Eddings}
+{meta: composer George Jones and Eddie Eddings}
 
 {start_of_verse: Verse 1}
 [G]Yearning to be with the [C]one I can't [G]agree with

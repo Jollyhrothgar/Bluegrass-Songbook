@@ -1,6 +1,6 @@
 {meta: title I Can't Get Over You}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]I try to find some way to ease [F]my [Fm]mind

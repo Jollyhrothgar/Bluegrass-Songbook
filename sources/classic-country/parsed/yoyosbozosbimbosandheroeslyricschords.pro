@@ -1,6 +1,6 @@
 {meta: title Yoyos Bozos Bimbos And Heroes}
 {meta: artist Waylon Jennings}
-{meta: writer Roger Murrah and Waylon Jennings}
+{meta: composer Roger Murrah and Waylon Jennings}
 
 {start_of_verse: Verse 1}
 [G7]In a [C]world full of [G7]sadness and [C]laughter [G7]

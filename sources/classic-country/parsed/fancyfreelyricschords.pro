@@ -1,6 +1,6 @@
 {meta: title Fancy Free}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Roy August and Jimmy Hinson}
+{meta: composer Roy August and Jimmy Hinson}
 
 {start_of_verse: Verse 1}
 [C]I'm setting fancy free be cause she wants to [G7]go

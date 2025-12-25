@@ -1,6 +1,6 @@
 {meta: title A Little More Like Me}
 {meta: artist Kenny Rogers}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [G]It was an April night and I was right been out on the [G7]town

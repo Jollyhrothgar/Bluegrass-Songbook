@@ -1,6 +1,6 @@
 {meta: title When My Sugar Walks Down The Street}
 {meta: artist Ferlin Husky}
-{meta: writer Irving Mills, Jimmy McHugh, Gene Austin}
+{meta: composer Irving Mills, Jimmy McHugh, Gene Austin}
 
 {start_of_verse: Verse 1}
 [G](Su[Em]gar [D7]sugar is sweet) sure is ([G]sug[Em]ar [D7]sugar is sweet)

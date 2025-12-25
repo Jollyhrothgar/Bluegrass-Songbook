@@ -1,6 +1,6 @@
 {meta: title Down By The Riverside}
 {meta: artist Patsy Cline}
-{meta: writer Billy Sherrill and Charlie Rich}
+{meta: composer Billy Sherrill and Charlie Rich}
 
 {start_of_verse: Verse 1}
 [C]Well I met my little blue eyed doll

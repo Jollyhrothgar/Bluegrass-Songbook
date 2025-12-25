@@ -1,6 +1,6 @@
 {meta: title I Gotta Know}
 {meta: artist Elvis Presley}
-{meta: writer Paul Evans and Matt Williams}
+{meta: composer Paul Evans and Matt Williams}
 
 {start_of_verse: Verse 1}
 [G]Get up in the mornin' feelin' mighty weak

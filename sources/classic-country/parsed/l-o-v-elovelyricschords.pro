@@ -1,6 +1,6 @@
 {meta: title L-o-v-e Love Lyrics Chords}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Maggie Vaughn}
+{meta: composer Loretta Lynn and Maggie Vaughn}
 
 {start_of_verse: Verse 1}
 [C]L-o-v-e [D7]l-o-v-e [G]love

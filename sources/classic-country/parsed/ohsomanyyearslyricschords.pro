@@ -1,6 +1,6 @@
 {meta: title Oh So Many Years}
 {meta: artist the Everly Brothers}
-{meta: writer Frankie Bailes}
+{meta: composer Frankie Bailes}
 
 {start_of_verse: Verse 1}
 [C]All these many years I've loved you no one has ever [F]known

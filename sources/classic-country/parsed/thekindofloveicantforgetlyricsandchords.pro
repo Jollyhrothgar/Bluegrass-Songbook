@@ -1,6 +1,6 @@
 {meta: title The Kind Of Love I Can’t Forget}
 {meta: artist Bob Wills}
-{meta: writer Jesse Ashlock}
+{meta: composer Jesse Ashlock}
 
 {start_of_verse: Verse 1}
 [G]The kind of love I can't forget dear

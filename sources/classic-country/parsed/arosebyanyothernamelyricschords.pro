@@ -1,6 +1,6 @@
 {meta: title A Rose By Any Other Name}
 {meta: artist Ronnie Milsap}
-{meta: writer Irwin Levine and Toni Wine}
+{meta: composer Irwin Levine and Toni Wine}
 
 {start_of_verse: Verse 1}
 [G]In a garden of city streets I watched her [C]growing there[Am]

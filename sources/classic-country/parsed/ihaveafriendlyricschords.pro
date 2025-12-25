@@ -1,6 +1,6 @@
 {meta: title I Have A Friend}
 {meta: artist Cowboy Copas}
-{meta: writer Tommy Hill and Lloyd Copas}
+{meta: composer Tommy Hill and Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [C]I have a friend a wonderful friend

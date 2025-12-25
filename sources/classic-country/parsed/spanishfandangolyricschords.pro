@@ -1,6 +1,6 @@
 {meta: title Spanish Fandango}
 {meta: artist Bob Wills}
-{meta: writer Smokey Rodgers and Bob Wills}
+{meta: composer Smokey Rodgers and Bob Wills}
 
 {start_of_verse: Verse 1}
 [F]My Sweet senorita my own sweet [C]Chiquita 

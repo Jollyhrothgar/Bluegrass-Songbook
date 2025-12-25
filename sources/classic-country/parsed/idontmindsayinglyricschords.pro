@@ -1,6 +1,6 @@
 {meta: title I Don't Mind Saying}
 {meta: artist Charlie Walker}
-{meta: writer Raymond Page}
+{meta: composer Raymond Page}
 
 {start_of_verse: Verse 1}
 [C]I don't mind [F]saying I've been lonesome 

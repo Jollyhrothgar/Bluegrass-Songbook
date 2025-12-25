@@ -1,6 +1,6 @@
 {meta: title Fourth Man}
 {meta: artist Statler Brother}
-{meta: writer Arthur Smith}
+{meta: composer Arthur Smith}
 
 {start_of_verse: Verse 1}
 [G]Here is [D7]a story from the Good Book we [G]know

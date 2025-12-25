@@ -1,6 +1,6 @@
 {meta: title Before Believing}
 {meta: artist Emmylou Harris}
-{meta: writer Danny Flowers}
+{meta: composer Danny Flowers}
 
 {start_of_verse: Verse 1}
 [C]Winter [F]summer seasons is taken over its quiet like [C]new fallen [G7]snow

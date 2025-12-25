@@ -1,6 +1,6 @@
 {meta: title Dear Heart}
 {meta: artist Jimmy Dean}
-{meta: writer Jay Livingston, Ray Evans, Henry Mancini}
+{meta: composer Jay Livingston, Ray Evans, Henry Mancini}
 
 {start_of_verse: Verse 1}
 [C]Dear heart wish you were [F]here to [C]warm [D7]this [G7]night

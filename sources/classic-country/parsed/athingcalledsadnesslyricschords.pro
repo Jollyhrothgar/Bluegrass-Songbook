@@ -1,6 +1,6 @@
 {meta: title A Thing Called Saddness}
 {meta: artist Ray Price}
-{meta: writer Chuck Howard}
+{meta: composer Chuck Howard}
 
 {start_of_verse: Verse 1}
 [C]It's been here since you've been gone

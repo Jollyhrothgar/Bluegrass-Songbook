@@ -1,6 +1,6 @@
 {meta: title And Then}
 {meta: artist Hank Locklin}
-{meta: writer Gloria Shayne}
+{meta: composer Gloria Shayne}
 
 {start_of_verse: Verse 1}
 [G]And then I slowly took you in my arms and held [D7]you

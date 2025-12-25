@@ -1,6 +1,6 @@
 {meta: title I Gotta Find Someone}
 {meta: artist Porter Wagoner}
-{meta: writer Vic McAlpin, Roy Drusky, Jean Elroad}
+{meta: composer Vic McAlpin, Roy Drusky, Jean Elroad}
 
 {start_of_verse: Verse 1}
 [C]I can't [G7]stand the [C]thoughts of 

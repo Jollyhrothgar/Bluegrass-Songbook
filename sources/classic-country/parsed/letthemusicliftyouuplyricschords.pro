@@ -1,6 +1,6 @@
 {meta: title Let The Music Lift You Up}
 {meta: artist Reba McEntire}
-{meta: writer Troy Seals and Eddie Setser}
+{meta: composer Troy Seals and Eddie Setser}
 
 {start_of_verse: Verse 1}
 [C]You say you're from the city Chicago is your home

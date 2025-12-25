@@ -1,6 +1,6 @@
 {meta: title Brother To The Blues}
 {meta: artist George Jones}
-{meta: writer Edwin Rowell}
+{meta: composer Edwin Rowell}
 
 {start_of_verse: Verse 1}
 [C]You and I don't need an [F]introduction

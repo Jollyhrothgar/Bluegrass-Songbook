@@ -1,6 +1,6 @@
 {meta: title The One That Got Away}
 {meta: artist Jim Reeves}
-{meta: writer Jim Reeves and Buddy Killen}
+{meta: composer Jim Reeves and Buddy Killen}
 
 {start_of_verse: Verse 1}
 [G]Out with someone new almost every day

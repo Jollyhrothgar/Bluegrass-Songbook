@@ -1,6 +1,6 @@
 {meta: title A Far Cry From You}
 {meta: artist Connie Smith}
-{meta: writer Stephen F. Earle and Jimbeau Hinson}
+{meta: composer Stephen F. Earle and Jimbeau Hinson}
 
 {start_of_verse: Verse 1}
 [C]Blinded by the tears the [F]day you [C]left

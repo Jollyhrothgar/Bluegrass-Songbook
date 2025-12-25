@@ -1,6 +1,6 @@
 {meta: title You Are To Me}
 {meta: artist Conway Twitty}
-{meta: writer Don Schlitz and Billy Livsey}
+{meta: composer Don Schlitz and Billy Livsey}
 
 {start_of_verse: Verse 1}
 [C]Last Friday night [F]down at the [C]diner

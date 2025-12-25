@@ -1,6 +1,6 @@
 {meta: title Famous Last Words Of A Fool}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Rex Houston}
+{meta: composer Dean Dillon and Rex Houston}
 
 {start_of_verse: Verse 1}
 [C]I told her I wouldn't miss her at all as she [C7]walked to the [F]door[Dm]

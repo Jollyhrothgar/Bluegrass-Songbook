@@ -1,6 +1,6 @@
 {meta: title Kaw-Liga}
 {meta: artist Boxcar Willie}
-{meta: writer Hank Williams and Fred Rose}
+{meta: composer Hank Williams and Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]Kaw-Liga was a wooden Indian standin' by the door

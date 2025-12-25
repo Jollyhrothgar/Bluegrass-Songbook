@@ -1,6 +1,6 @@
 {meta: title Happy Birthday Dear Heartache}
 {meta: artist Barbara Mandrell}
-{meta: writer Archie Jordan and Mack David}
+{meta: composer Archie Jordan and Mack David}
 
 {start_of_verse: Verse 1}
 [C]It's just a [Am]year to[Dm]day [G7]

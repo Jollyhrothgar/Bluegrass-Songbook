@@ -1,6 +1,6 @@
 {meta: title Tell Me Something I Don't Know}
 {meta: artist George Jones}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [G7]Tell me something I don't [C]know

@@ -1,6 +1,6 @@
 {meta: title The Stairs}
 {meta: artist Reba McEntire}
-{meta: writer Pamela Brown and Dalton Roberts}
+{meta: composer Pamela Brown and Dalton Roberts}
 
 {start_of_verse: Verse 1}
 [C]She looks at the clock it's a [G7]quarter past nine

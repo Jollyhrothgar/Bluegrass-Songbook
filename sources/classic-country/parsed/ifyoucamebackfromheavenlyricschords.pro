@@ -1,6 +1,6 @@
 {meta: title If You Came Back From Heaven}
 {meta: artist Lorrie Morgan}
-{meta: writer Richard Landis and Lorrie Morgan}
+{meta: composer Richard Landis and Lorrie Morgan}
 
 {start_of_verse: Verse 1}
 [C]I wouldn't know what to say I wouldn't know [F]what to do

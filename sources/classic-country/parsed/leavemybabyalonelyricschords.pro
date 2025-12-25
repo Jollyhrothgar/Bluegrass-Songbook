@@ -1,6 +1,6 @@
 {meta: title Leave My Baby Alone}
 {meta: artist Wanda Jackson}
-{meta: writer Harlan Howard and Bobby Bare}
+{meta: composer Harlan Howard and Bobby Bare}
 
 {start_of_verse: Verse 1}
 [G]Don't you be a tellin' my [C]baby [G]lies

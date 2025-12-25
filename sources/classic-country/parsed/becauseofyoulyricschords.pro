@@ -1,6 +1,6 @@
 {meta: title Because Of You}
 {meta: artist Sonny James}
-{meta: writer Arthur Hammerstein and Dudley Wilkinson}
+{meta: composer Arthur Hammerstein and Dudley Wilkinson}
 
 {start_of_verse: Verse 1}
 [C]Because of [G7]you there's a song in my [C]heart

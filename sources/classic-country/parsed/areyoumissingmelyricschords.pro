@@ -1,6 +1,6 @@
 {meta: title Are You Missing Me}
 {meta: artist Jim and Jesse}
-{meta: writer Ira Louvin}
+{meta: composer Ira Louvin}
 
 {start_of_verse: Verse 1}
 [G]The day that I [C]kissed you and [G]told you goodbye

@@ -1,6 +1,6 @@
 {meta: title It's Only You That I Love}
 {meta: artist Hank Snow}
-{meta: writer Jim Leisy}
+{meta: composer Jim Leisy}
 
 {start_of_verse: Verse 1}
 [G]We met in the garden of [D7]roses 

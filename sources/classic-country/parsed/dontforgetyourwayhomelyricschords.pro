@@ -1,6 +1,6 @@
 {meta: title Don't Forget Your Way Home}
 {meta: artist Reba McEntire}
-{meta: writer Ed Hunnicut and John Brannen}
+{meta: composer Ed Hunnicut and John Brannen}
 
 {start_of_verse: Verse 1}
 [C]Now you spread your wings to [F]fly 

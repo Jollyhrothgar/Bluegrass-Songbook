@@ -1,6 +1,6 @@
 {meta: title I'll Fly Away}
 {meta: artist Johnny Cash}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [C]Some glad morning when this life is [C7]over

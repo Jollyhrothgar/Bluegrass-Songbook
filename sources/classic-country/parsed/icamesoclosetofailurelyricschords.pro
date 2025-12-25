@@ -1,6 +1,6 @@
 {meta: title I Came So Close To Failure}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Kenneth E. Hunt and Jimmy Dickens}
+{meta: composer Kenneth E. Hunt and Jimmy Dickens}
 
 {start_of_verse: Verse 1}
 [C]I came close [G7]so close to [C]failure

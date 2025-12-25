@@ -1,6 +1,6 @@
 {meta: title I Always Get Lucky With You}
 {meta: artist George Jones}
-{meta: writer Merle Haggard, Freddy Powers, Gary Church}
+{meta: composer Merle Haggard, Freddy Powers, Gary Church}
 
 {start_of_verse: Verse 1}
 [C]I've had good luck     and bad luck   and [F]no luck  it's true

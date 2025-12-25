@@ -1,6 +1,6 @@
 {meta: title How To Lose A Good Woman}
 {meta: artist Jim Ed Brown}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Forget about her [C]birthday

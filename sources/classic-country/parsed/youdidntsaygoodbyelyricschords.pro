@@ -1,6 +1,6 @@
 {meta: title You Didn't Say Goodbye}
 {meta: artist J.D. Crowe}
-{meta: writer Rebe Gosdin}
+{meta: composer Rebe Gosdin}
 
 {start_of_verse: Verse 1}
 [G]Last night while sitting by my [D7]window

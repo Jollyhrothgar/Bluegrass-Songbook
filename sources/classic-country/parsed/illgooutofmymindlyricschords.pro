@@ -1,6 +1,6 @@
 {meta: title I'll go out of my mind}
 {meta: artist Don Rich}
-{meta: writer Don Rich}
+{meta: composer Don Rich}
 
 {start_of_verse: Verse 1}
 [C]I wait for you to call me but you don't 

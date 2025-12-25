@@ -1,6 +1,6 @@
 {meta: title Baby I'm In Love With You}
 {meta: artist Ricky Skaggs}
-{meta: writer Cliff Massey and Arbie Gibson}
+{meta: composer Cliff Massey and Arbie Gibson}
 
 {start_of_verse: Verse 1}
 [G]Baby I'm in love with you drowning in your eyes so [A7]blue

@@ -1,6 +1,6 @@
 {meta: title I'd Just As Soon Go}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Aaron Baker}
+{meta: composer Dean Dillon and Aaron Baker}
 
 {start_of_verse: Verse 1}
 [C]You say you want to talk it over [Am]want to try again

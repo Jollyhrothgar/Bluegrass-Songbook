@@ -1,6 +1,6 @@
 {meta: title Plant Your Fields}
 {meta: artist Dan Seals}
-{meta: writer Donny Lowery and Wendy Waldman}
+{meta: composer Donny Lowery and Wendy Waldman}
 
 {start_of_verse: Verse 1}
 [G]My father said [D7]some things you [Em]learn

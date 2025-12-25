@@ -1,6 +1,6 @@
 {meta: title Is My Ring On Your Finger}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Webb Pierce}
+{meta: composer Wayne P. Walker and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G7]When [C]you're out with [Em]him where the [F]lights are [G7]dim

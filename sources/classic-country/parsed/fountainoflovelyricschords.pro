@@ -1,6 +1,6 @@
 {meta: title Fountain Of Love}
 {meta: artist Elvis Presley}
-{meta: writer Bill Giant and Geoff Lewis}
+{meta: composer Bill Giant and Geoff Lewis}
 
 {start_of_verse: Verse 1}
 [C]One thought of you my heart begins churning

@@ -1,6 +1,6 @@
 {meta: title Fallin' Again}
 {meta: artist Alabama}
-{meta: writer Russell Fowler, Teddy Gentry, Randy Owen}
+{meta: composer Russell Fowler, Teddy Gentry, Randy Owen}
 
 {start_of_verse: Verse 1}
 [G]Thinkin' of the faces I've seen

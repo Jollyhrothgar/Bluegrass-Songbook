@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Song}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis and Buck Peddy}
+{meta: composer Mel Tillis and Buck Peddy}
 
 {start_of_verse: Verse 1}
 [C]I got me a room in a cheap hotel

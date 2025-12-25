@@ -1,6 +1,6 @@
 {meta: title My Mom And Santa Claus}
 {meta: artist George Jones}
-{meta: writer Clyde W. Beavers}
+{meta: composer Clyde W. Beavers}
 
 {start_of_verse: Verse 1}
 [G]Well I saw mommy in her night gown she was jumpin' all around

@@ -1,6 +1,6 @@
 {meta: title Tears Are Only Rain}
 {meta: artist Hank Thompson}
-{meta: writer Johnny Hatchcock and Weldon Allard}
+{meta: composer Johnny Hatchcock and Weldon Allard}
 
 {start_of_verse: Verse 1}
 [G]When your lover cries hold her [C]close and whisper [G]low

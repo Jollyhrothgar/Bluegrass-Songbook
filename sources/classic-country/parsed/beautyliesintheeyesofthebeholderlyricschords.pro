@@ -1,6 +1,6 @@
 {meta: title Beauty Lies in the Eyes of the Beholder}
 {meta: artist Ray Price}
-{meta: writer Clarence Richard Grissom and Jon Gray}
+{meta: composer Clarence Richard Grissom and Jon Gray}
 
 {start_of_verse: Verse 1}
 [G]Mountain tops rain drops snowflakes when they [Am]fall

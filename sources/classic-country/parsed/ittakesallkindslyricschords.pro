@@ -1,6 +1,6 @@
 {meta: title It Takes All Kinds}
 {meta: artist George Strait}
-{meta: writer George Strait, Bubba Strait,}
+{meta: composer George Strait, Bubba Strait,}
 
 {start_of_verse: Verse 1}
 [G]Some got a boat they like to float

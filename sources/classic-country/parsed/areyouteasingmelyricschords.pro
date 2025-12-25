@@ -1,6 +1,6 @@
 {meta: title Are You Teasing Me}
 {meta: artist Carl Smith}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]When we're all alone dear and I'm in your [G7]arms

@@ -1,6 +1,6 @@
 {meta: title White Christmas Blue}
 {meta: artist Loretta Lynn}
-{meta: writer Shawn Camp and Loretta Lynn}
+{meta: composer Shawn Camp and Loretta Lynn}
 
 {start_of_verse: Verse 1}
 [G]It's Christmas Eve and I'm still all alone

@@ -1,6 +1,6 @@
 {meta: title I'm Only Losin' Everything I Threw Away}
 {meta: artist Charlie Pride}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]Mornin' lonely mornin'

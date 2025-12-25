@@ -1,6 +1,6 @@
 {meta: title Ribbon Of Darkness}
 {meta: artist Marty Robbins}
-{meta: writer Gordon Lightfoot}
+{meta: composer Gordon Lightfoot}
 
 {start_of_verse: Verse 1}
 [G]Ribbon of darkness over [D7]me since my true love walked out the [G]door

@@ -1,6 +1,6 @@
 {meta: title Happy Birthday To You Our Lord}
 {meta: artist Ray Price}
-{meta: writer Philip Zeller and Eleanor Zeller}
+{meta: composer Philip Zeller and Eleanor Zeller}
 
 {start_of_verse: Verse 1}
 [G]Happy birthday to [D7]You our [G]Lord

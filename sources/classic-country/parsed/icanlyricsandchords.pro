@@ -1,6 +1,6 @@
 {meta: title I Can}
 {meta: artist Cowboy Copas}
-{meta: writer Lee Fykes}
+{meta: composer Lee Fykes}
 
 {start_of_verse: Verse 1}
 [C]If anyone can tell a sad sad story [F]I can

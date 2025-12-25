@@ -1,6 +1,6 @@
 {meta: title Stay On His Mind}
 {meta: artist Jeanne Pruett}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]A man always [F]looks at a [G7]woman

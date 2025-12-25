@@ -1,6 +1,6 @@
 {meta: title Bend It Till It Breaks}
 {meta: artist John Anderson}
-{meta: writer Lionel A. Delmore and John David Anderson}
+{meta: composer Lionel A. Delmore and John David Anderson}
 
 {start_of_verse: Verse 1}
 [Am]I'm tired of having all these [C]troubles

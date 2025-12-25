@@ -1,6 +1,6 @@
 {meta: title So Was He}
 {meta: artist Jeannie Seely}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]In the [C]days of the [D7]leaf dust 

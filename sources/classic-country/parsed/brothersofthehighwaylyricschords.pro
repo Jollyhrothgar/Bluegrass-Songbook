@@ -1,6 +1,6 @@
 {meta: title Brothers Of The Highway}
 {meta: artist George Strait}
-{meta: writer Doug Johnson, Kim Williams, Nicole Witt}
+{meta: composer Doug Johnson, Kim Williams, Nicole Witt}
 
 {start_of_verse: Verse 1}
 [G]Diamonds on the windshield as heaven starts to cry

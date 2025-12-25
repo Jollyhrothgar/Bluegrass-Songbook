@@ -1,6 +1,6 @@
 {meta: title She's That Kind}
 {meta: artist Charlie Pride}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]She can take the [C]morning rain [D7]falling on my [G]window pane

@@ -1,6 +1,6 @@
 {meta: title You Never Will Be True}
 {meta: artist Ray Price}
-{meta: writer Ray Price}
+{meta: composer Ray Price}
 
 {start_of_verse: Verse 1}
 [C]I've waited up to tell you dear

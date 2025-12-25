@@ -1,6 +1,6 @@
 {meta: title I Can't Get Over You To Save My Life}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Sanger D. Shafer}
+{meta: composer Lefty Frizzell and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Last night my best friend drove me home

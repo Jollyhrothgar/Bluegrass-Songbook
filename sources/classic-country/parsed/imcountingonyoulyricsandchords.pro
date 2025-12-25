@@ -1,6 +1,6 @@
 {meta: title I'm Counting On You}
 {meta: artist Kitty Wells}
-{meta: writer Don Robertson}
+{meta: composer Don Robertson}
 
 {start_of_verse: Verse 1}
 [G]All the words that I'll ever known still could not [D7]say

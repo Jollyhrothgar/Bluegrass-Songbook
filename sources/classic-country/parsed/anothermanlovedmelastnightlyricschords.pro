@@ -1,6 +1,6 @@
 {meta: title Another Man Loved Me Last Night}
 {meta: artist Norma Jean}
-{meta: writer Peggy Sue Wells and Lorene Allen}
+{meta: composer Peggy Sue Wells and Lorene Allen}
 
 {start_of_verse: Verse 1}
 [C]He doesn't know that I can't look him in the [F]eyes

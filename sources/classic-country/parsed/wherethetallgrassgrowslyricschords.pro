@@ -1,6 +1,6 @@
 {meta: title Where The Tall Grass Grows}
 {meta: artist George Jones}
-{meta: writer Kerry Kurt Phillips, Andy Spooner, Randy Boudreaux}
+{meta: composer Kerry Kurt Phillips, Andy Spooner, Randy Boudreaux}
 
 {start_of_verse: Verse 1}
 [G]There's three bedrooms hardwood floors and the kitchen's [D7]new

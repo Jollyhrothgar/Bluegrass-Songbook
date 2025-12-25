@@ -1,6 +1,6 @@
 {meta: title He's Gathering His Sheep}
 {meta: artist Billy Parker}
-{meta: writer Thomas C. Smith}
+{meta: composer Thomas C. Smith}
 
 {start_of_verse: Verse 1}
 [C]Brothers please listen to the [F]words of my [C]song

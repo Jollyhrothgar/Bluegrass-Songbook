@@ -1,6 +1,6 @@
 {meta: title The Whole World Seems Different}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Jimmy Dickens and Donald Trobridge}
+{meta: composer Jimmy Dickens and Donald Trobridge}
 
 {start_of_verse: Verse 1}
 [C]It's the same old street in the same old town

@@ -1,6 +1,6 @@
 {meta: title It Wouldn't Hurt To Have Wings}
 {meta: artist Mark Chesnutt}
-{meta: writer Jerry Foster, Ronny LaVoie, Johnny Morris}
+{meta: composer Jerry Foster, Ronny LaVoie, Johnny Morris}
 
 {start_of_verse: Verse 1}
 [D7]Don't get me wrong I'm doin' [G7]alright

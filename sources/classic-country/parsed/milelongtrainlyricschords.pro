@@ -1,6 +1,6 @@
 {meta: title Mile Long Train}
 {meta: artist Jimmy Dean}
-{meta: writer Gerald Nelson and Chuck Taylor}
+{meta: composer Gerald Nelson and Chuck Taylor}
 
 {start_of_verse: Verse 1}
 [C]Wagon [F]t-rain mile long [C]train

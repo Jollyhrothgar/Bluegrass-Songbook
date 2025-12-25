@@ -1,6 +1,6 @@
 {meta: title That's What I Get For Loving You}
 {meta: artist Eddy Arnold}
-{meta: writer Bobby Lee Springfield}
+{meta: composer Bobby Lee Springfield}
 
 {start_of_verse: Verse 1}
 [G]Now I've got melodies that never leave they linger on my [D7]mind

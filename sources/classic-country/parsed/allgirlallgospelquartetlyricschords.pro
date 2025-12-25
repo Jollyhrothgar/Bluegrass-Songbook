@@ -1,6 +1,6 @@
 {meta: title All Girl All Gospel Quartet}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]Maybe the [G7]first time I [C]saw them I was nine going [G7]on ten years [C]old

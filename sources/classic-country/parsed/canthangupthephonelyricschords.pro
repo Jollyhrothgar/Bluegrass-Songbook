@@ -1,6 +1,6 @@
 {meta: title Can't Hang Up The Phone}
 {meta: artist Stonewall Jackson}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [C]You just called up to say it's [G7]over as of today

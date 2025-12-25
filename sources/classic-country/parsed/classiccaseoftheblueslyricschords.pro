@@ -1,6 +1,6 @@
 {meta: title Classic Case Of The Blues}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G7]Well my [C]truck broke down this morning on the [F]freeway

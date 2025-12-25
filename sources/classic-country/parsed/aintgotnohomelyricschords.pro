@@ -1,6 +1,6 @@
 {meta: title Ain't Got No Home}
 {meta: artist Buddy Holly}
-{meta: writer Clarence Henry}
+{meta: composer Clarence Henry}
 
 {start_of_verse: Verse 1}
 [C]I ain't got no home no place to roam

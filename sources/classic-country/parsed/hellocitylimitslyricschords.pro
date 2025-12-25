@@ -1,6 +1,6 @@
 {meta: title Hello City Limits}
 {meta: artist Red Allen}
-{meta: writer Benny Martin and Johnny Elgin}
+{meta: composer Benny Martin and Johnny Elgin}
 
 {start_of_verse: Verse 1}
 [G]Hello city limits I see your sign

@@ -1,6 +1,6 @@
 {meta: title Herman Schwartz}
 {meta: artist Stonewall Jackson}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]I don't believe you Herman [G7]Schwartz

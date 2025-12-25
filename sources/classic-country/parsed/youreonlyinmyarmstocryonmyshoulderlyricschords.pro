@@ -1,6 +1,6 @@
 {meta: title You're Only In My Arms (To Cry On My Shoulder)}
 {meta: artist Willie Nelson}
-{meta: writer Ed G. Nelson, Steve Nelson, Milton Leeds}
+{meta: composer Ed G. Nelson, Steve Nelson, Milton Leeds}
 
 {start_of_verse: Verse 1}
 [C]You're only in my arms to cry on my [D7]shoulder

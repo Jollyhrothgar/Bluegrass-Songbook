@@ -1,6 +1,6 @@
 {meta: title Spirits Of St. Louis}
 {meta: artist Johnny Paycheck}
-{meta: writer Roger Bowling and Robert Jones}
+{meta: composer Roger Bowling and Robert Jones}
 
 {start_of_verse: Verse 1}
 [C]Well the barrooms close at two A.M.  in St. [F]Louis

@@ -1,6 +1,6 @@
 {meta: title I'll Go To My Grave Loving You}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]I'll go (I'll go) to my grave (to my [C]grave)

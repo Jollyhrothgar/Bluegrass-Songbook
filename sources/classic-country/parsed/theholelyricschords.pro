@@ -1,6 +1,6 @@
 {meta: title The Hole}
 {meta: artist Randy Travis}
-{meta: writer James Hicks and Skip Ewing}
+{meta: composer James Hicks and Skip Ewing}
 
 {start_of_verse: Verse 1}
 [C]A friend of mine bought himself a shovel said I'm gonna tunnel me a [G7]mine

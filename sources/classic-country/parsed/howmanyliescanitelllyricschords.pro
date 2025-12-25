@@ -1,6 +1,6 @@
 {meta: title How Many Lies Can I Tell}
 {meta: artist Stonewall Jackson}
-{meta: writer Stonewall Jackson and Bill D. Johnson}
+{meta: composer Stonewall Jackson and Bill D. Johnson}
 
 {start_of_verse: Verse 1}
 [C]Oh I've just been downtown I've [F]spread the talk [C]around

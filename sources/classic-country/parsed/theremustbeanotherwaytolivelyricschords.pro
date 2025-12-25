@@ -1,6 +1,6 @@
 {meta: title There Must Be Another Way To live}
 {meta: artist Kitty Wells}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]The streets of the city is your [F]kingdom

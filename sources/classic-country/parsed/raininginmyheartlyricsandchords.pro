@@ -1,6 +1,6 @@
 {meta: title Raining in My Heart}
 {meta: artist Buddy Holly}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [G]The sun is out the sky is [G7]blue

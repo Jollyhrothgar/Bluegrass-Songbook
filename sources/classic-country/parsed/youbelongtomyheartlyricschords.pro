@@ -1,6 +1,6 @@
 {meta: title You Belong To My Heart}
 {meta: artist Marty Robbins}
-{meta: writer Ray Gilbert, Aguirre Agustin Lara}
+{meta: composer Ray Gilbert, Aguirre Agustin Lara}
 
 {start_of_verse: Verse 1}
 [G]You belong to my heart

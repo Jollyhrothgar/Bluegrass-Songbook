@@ -1,6 +1,6 @@
 {meta: title Don't Just Stand There}
 {meta: artist Carl Smith}
-{meta: writer Cherokee Jack Mealey and Ernest Tubb}
+{meta: composer Cherokee Jack Mealey and Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]When you feel like you’re in love [G7]don't just stand [C]there

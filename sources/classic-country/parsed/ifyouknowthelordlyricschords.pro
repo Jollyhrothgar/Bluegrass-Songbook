@@ -1,6 +1,6 @@
 {meta: title If You Know The Lord}
 {meta: artist The King's Heralds}
-{meta: writer Bickley Reichner}
+{meta: composer Bickley Reichner}
 
 {start_of_verse: Verse 1}
 [D7]If you know the [G]Lord[Am]   [G]

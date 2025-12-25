@@ -1,6 +1,6 @@
 {meta: title Guilty Footsteps}
 {meta: artist David Allan Coe}
-{meta: writer David A. Coe, Margaret Smith, Nova Fitzgerald}
+{meta: composer David A. Coe, Margaret Smith, Nova Fitzgerald}
 
 {start_of_verse: Verse 1}
 [C]The key turns [G7]in the [C]door the boards [G7]squeak on the [C]floor

@@ -1,6 +1,6 @@
 {meta: title Your Credit Card Won't Get You Into Heaven}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]Your credit card won't [G7]get you into [C]heaven

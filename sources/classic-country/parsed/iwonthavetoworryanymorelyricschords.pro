@@ -1,6 +1,6 @@
 {meta: title I Won't Have To Worry Anymore}
 {meta: artist Doyle Lawson}
-{meta: writer James Goss and Jimmy Jones}
+{meta: composer James Goss and Jimmy Jones}
 
 {start_of_verse: Verse 1}
 [C]Down here my [F]burden's [C]heavy and the road is [F]rough and [C]long

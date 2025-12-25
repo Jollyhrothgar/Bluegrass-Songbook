@@ -1,6 +1,6 @@
 {meta: title Watermelon Crawl}
 {meta: artist Tracy Byrd}
-{meta: writer Buddy Brock and Zack Turner}
+{meta: composer Buddy Brock and Zack Turner}
 
 {start_of_verse: Verse 1}
 [G]I was driving through Georgia in late July

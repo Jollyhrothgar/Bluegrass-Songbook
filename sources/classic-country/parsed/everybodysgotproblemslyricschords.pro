@@ -1,6 +1,6 @@
 {meta: title Everybody’s Got Problems}
 {meta: artist Faron Young}
-{meta: writer Wanda Alley}
+{meta: composer Wanda Alley}
 
 {start_of_verse: Verse 1}
 [C]I ran into an old [F]girl the other day

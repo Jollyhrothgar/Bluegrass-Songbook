@@ -1,6 +1,6 @@
 {meta: title Somebody Bigger Than You And I}
 {meta: artist Elvis Presley}
-{meta: writer Hy Heath, Johnny Lange, Francis J. Burke}
+{meta: composer Hy Heath, Johnny Lange, Francis J. Burke}
 
 {start_of_verse: Verse 1}
 [G]Who made the mountains [Em]who made the [Bm]trees

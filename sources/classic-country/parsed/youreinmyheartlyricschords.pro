@@ -1,6 +1,6 @@
 {meta: title You're In My Heart}
 {meta: artist Rhonda Vincent}
-{meta: writer Ron Block}
+{meta: composer Ron Block}
 
 {start_of_verse: Verse 1}
 [C]First time I saw you not long [F]ago

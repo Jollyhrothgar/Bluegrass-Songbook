@@ -1,6 +1,6 @@
 {meta: title Memory Number One}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Max Powell}
+{meta: composer Wayne P. Walker and Max Powell}
 
 {start_of_verse: Verse 1}
 [C]I've got lots of golden [F]mem'-ries

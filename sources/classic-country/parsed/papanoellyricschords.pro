@@ -1,6 +1,6 @@
 {meta: title Papa Noel}
 {meta: artist Brenda Lee}
-{meta: writer Roy Bodkin}
+{meta: composer Roy Bodkin}
 
 {start_of_verse: Verse 1}
 [C]Hey Beau let's go and get pirogue and push-pole down the bayou

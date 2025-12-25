@@ -1,6 +1,6 @@
 {meta: title God Is My Santa Claus}
 {meta: artist Hank Snow}
-{meta: writer W.K. Shewmake}
+{meta: composer W.K. Shewmake}
 
 {start_of_verse: Verse 1}
 [G]In a classroom at the grade school just before the [C]holidays

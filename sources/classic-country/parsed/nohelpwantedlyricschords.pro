@@ -1,6 +1,6 @@
 {meta: title No Help Wanted}
 {meta: artist Boxcar Willie}
-{meta: writer Bill Carlisle}
+{meta: composer Bill Carlisle}
 
 {start_of_verse: Verse 1}
 [G]Well I got a gal from New Orleans

@@ -1,6 +1,6 @@
 {meta: title What Good Will It Do}
 {meta: artist Ernest Tubb}
-{meta: writer Tommy Duncan and Duane Howard}
+{meta: composer Tommy Duncan and Duane Howard}
 
 {start_of_verse: Verse 1}
 [C]I'll forgive you but what good will it [F]do

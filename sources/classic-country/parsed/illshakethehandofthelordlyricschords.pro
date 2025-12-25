@@ -1,6 +1,6 @@
 {meta: title I'll Shake The Hand Of The Lord}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Eldridge L. Fox}
+{meta: composer Eldridge L. Fox}
 
 {start_of_verse: Verse 1}
 [C]I’ll shake the hand of the Lord someday 

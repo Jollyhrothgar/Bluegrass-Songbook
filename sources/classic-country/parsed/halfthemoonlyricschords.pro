@@ -1,6 +1,6 @@
 {meta: title Half The Moon}
 {meta: artist Tanya Tucker}
-{meta: writer Hugh Prestwood}
+{meta: composer Hugh Prestwood}
 
 {start_of_verse: Verse 1}
 [C]Half the [Dm]moon is [C]shining [F]tonight [G7]half the moon is pitch [C]black

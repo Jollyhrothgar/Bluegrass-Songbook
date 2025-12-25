@@ -1,6 +1,6 @@
 {meta: title I've Been Needing Someone Like You}
 {meta: artist Waylon Jennings}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]I just came in to drown some sorrow

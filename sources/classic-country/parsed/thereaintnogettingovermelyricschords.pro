@@ -1,6 +1,6 @@
 {meta: title There Ain't No Getting Over Me}
 {meta: artist Ronnie Milsap}
-{meta: writer Tom Brasfield &amp; Walt Aldridge}
+{meta: composer Tom Brasfield &amp; Walt Aldridge}
 
 {start_of_verse: Verse 1}
 [C]Well you can walk out on me [Am]tonight

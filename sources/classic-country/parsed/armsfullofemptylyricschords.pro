@@ -1,6 +1,6 @@
 {meta: title Arms Full Of Empty}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]Jump aboard that silver plane

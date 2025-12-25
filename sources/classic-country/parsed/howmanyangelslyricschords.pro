@@ -1,6 +1,6 @@
 {meta: title How Many Angels}
 {meta: artist Charley Pride}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [Dm]I did not mean to hurt your [C]feelings

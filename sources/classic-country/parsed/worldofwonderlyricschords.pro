@@ -1,6 +1,6 @@
 {meta: title World Of Wonder}
 {meta: artist Ronnie Milsap}
-{meta: writer James Darrell Scott}
+{meta: composer James Darrell Scott}
 
 {start_of_verse: Verse 1}
 [C]Oh many is the [C7]day I have [F]squandered [C]away

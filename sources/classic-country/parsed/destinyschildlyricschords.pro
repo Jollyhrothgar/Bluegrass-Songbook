@@ -1,6 +1,6 @@
 {meta: title Destiny's Child}
 {meta: artist Waylon Jennings}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [G]Surely you know by now my heart is [D7]wild

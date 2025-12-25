@@ -1,6 +1,6 @@
 {meta: title That's When You Know It's Over}
 {meta: artist Gene Watson}
-{meta: writer Troy Graves and Bob O'Donnell}
+{meta: composer Troy Graves and Bob O'Donnell}
 
 {start_of_verse: Verse 1}
 [G]When the morning is breaking

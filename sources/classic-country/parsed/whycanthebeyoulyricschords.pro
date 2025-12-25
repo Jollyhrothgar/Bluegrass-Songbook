@@ -1,6 +1,6 @@
 {meta: title Why Can't He Be You}
 {meta: artist Patsy Cline}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]He takes me to the places you and [Am]I used to [D7]go

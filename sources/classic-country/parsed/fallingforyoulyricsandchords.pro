@@ -1,6 +1,6 @@
 {meta: title Falling For You}
 {meta: artist Wynn Stewart}
-{meta: writer Ralph Mooney}
+{meta: composer Ralph Mooney}
 
 {start_of_verse: Verse 1}
 [C]You bring me happiness then leave me [G7]loneliness

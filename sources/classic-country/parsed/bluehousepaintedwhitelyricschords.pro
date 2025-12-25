@@ -1,6 +1,6 @@
 {meta: title Blue House Painted White}
 {meta: artist Porter Wagoner}
-{meta: writer Sonny Burns, Buddy Word, Walt Breeland}
+{meta: composer Sonny Burns, Buddy Word, Walt Breeland}
 
 {start_of_verse: Verse 1}
 [G]The party’s all over they’re dimming the [C]lights

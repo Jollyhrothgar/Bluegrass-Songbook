@@ -1,6 +1,6 @@
 {meta: title Watching The Fire Go Down}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Our love didn't [G7]end in a [C]hurry

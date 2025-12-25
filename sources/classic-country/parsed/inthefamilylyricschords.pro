@@ -1,6 +1,6 @@
 {meta: title In The Family}
 {meta: artist Don Williams}
-{meta: writer Dobie Gray, Eddie Sester, John Greenbaum}
+{meta: composer Dobie Gray, Eddie Sester, John Greenbaum}
 
 {start_of_verse: Verse 1}
 [C]Well I was raised up by the [F]golden [C]rule

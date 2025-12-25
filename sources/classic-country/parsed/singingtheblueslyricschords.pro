@@ -1,6 +1,6 @@
 {meta: title Singing the Blues}
 {meta: artist Marty Robbins}
-{meta: writer Melvin Endsley}
+{meta: composer Melvin Endsley}
 
 {start_of_verse: Verse 1}
 [C]Well I never felt more like [F]singin' the blues

@@ -1,6 +1,6 @@
 {meta: title Fire That Keeps You Warm}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]Let me walk in the sunshine of your [F]smile

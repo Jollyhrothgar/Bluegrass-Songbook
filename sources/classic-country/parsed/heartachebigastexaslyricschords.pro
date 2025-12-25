@@ -1,6 +1,6 @@
 {meta: title Heartache Big As Texas}
 {meta: artist Ricky Van Shelton}
-{meta: writer Royce Porter and David Lewis}
+{meta: composer Royce Porter and David Lewis}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]heartache big as [D7]Texas 

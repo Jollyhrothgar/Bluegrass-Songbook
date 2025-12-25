@@ -1,6 +1,6 @@
 {meta: title The Angels Rejoiced Last Night}
 {meta: artist Emmylou Harris}
-{meta: writer Ira Louvin}
+{meta: composer Ira Louvin}
 
 {start_of_verse: Verse 1}
 [G]A house not a home was a picture satan painted

@@ -1,6 +1,6 @@
 {meta: title Born To Love You}
 {meta: artist Waylong Jennings}
-{meta: writer Woody Starr}
+{meta: composer Woody Starr}
 
 {start_of_verse: Verse 1}
 [G]Born to love [C]only [G]you

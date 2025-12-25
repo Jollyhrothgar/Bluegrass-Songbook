@@ -1,6 +1,6 @@
 {meta: title Carefree Moments}
 {meta: artist the Wilburn Brothers}
-{meta: writer Doyle Wilburn and Teddy Wilburn}
+{meta: composer Doyle Wilburn and Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]Just for a [F]few  [C]carefree [G7]moments

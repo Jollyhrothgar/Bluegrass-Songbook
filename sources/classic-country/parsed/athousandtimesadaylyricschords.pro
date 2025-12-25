@@ -1,6 +1,6 @@
 {meta: title A Thousand Times A Day}
 {meta: artist George Jones}
-{meta: writer Garry Burr and Gary Nicholson}
+{meta: composer Garry Burr and Gary Nicholson}
 
 {start_of_verse: Verse 1}
 [G]I gave up cigarettes haven't had to light one yet

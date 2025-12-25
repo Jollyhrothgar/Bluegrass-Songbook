@@ -1,6 +1,6 @@
 {meta: title Make Sure You've Got It All}
 {meta: artist Gene Watson}
-{meta: writer Bill Anderson and Steve Wariner}
+{meta: composer Bill Anderson and Steve Wariner}
 
 {start_of_verse: Verse 1}
 [C]I'm watching you go from room to room

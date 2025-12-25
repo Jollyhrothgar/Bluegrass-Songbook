@@ -1,6 +1,6 @@
 {meta: title Sweet Bird Of Paradise}
 {meta: artist Marty Robbins}
-{meta: writer Lee Samich}
+{meta: composer Lee Samich}
 
 {start_of_verse: Verse 1}
 [G]Love with its [C]wings flies [D7]far be[C]yond my [D7]reach

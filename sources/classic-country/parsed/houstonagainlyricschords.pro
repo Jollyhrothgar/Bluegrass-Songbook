@@ -1,6 +1,6 @@
 {meta: title Houston Again}
 {meta: artist David Ball}
-{meta: writer Russell Brown and David Ball}
+{meta: composer Russell Brown and David Ball}
 
 {start_of_verse: Verse 1}
 [C]I don't wanna go to Houston again

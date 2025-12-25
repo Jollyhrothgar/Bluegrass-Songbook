@@ -1,6 +1,6 @@
 {meta: title When The Ship Hit The Sand}
 {meta: artist Little Jimmy Dickens}
-{meta: writer L. Kingston}
+{meta: composer L. Kingston}
 
 {start_of_verse: Verse 1}
 [C]Oh my wife and I went [G7]on an ocean [C]cruise

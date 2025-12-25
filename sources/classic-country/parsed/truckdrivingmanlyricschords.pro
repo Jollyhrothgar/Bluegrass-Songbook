@@ -1,6 +1,6 @@
 {meta: title Truck Driving Man}
 {meta: artist Buck Owens}
-{meta: writer Terry Fell}
+{meta: composer Terry Fell}
 
 {start_of_verse: Verse 1}
 [G]I stopped at a roadhouse in [C]Texas

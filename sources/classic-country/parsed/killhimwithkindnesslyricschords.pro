@@ -1,6 +1,6 @@
 {meta: title Kill Him With Kindness}
 {meta: artist Kitty Wells}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [G]Kill him with [D7]kindness spoil him with [G]love

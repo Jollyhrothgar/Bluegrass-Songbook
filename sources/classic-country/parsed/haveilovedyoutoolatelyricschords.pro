@@ -1,6 +1,6 @@
 {meta: title Have I Loved You Too Late}
 {meta: artist Rhonda Vincent}
-{meta: writer Randall Hilton}
+{meta: composer Randall Hilton}
 
 {start_of_verse: Verse 1}
 [D7]You were [G]somebody [Bm]special in this [C]heart of [G]mine

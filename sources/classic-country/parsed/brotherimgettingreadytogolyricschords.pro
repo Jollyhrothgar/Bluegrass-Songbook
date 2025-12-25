@@ -1,6 +1,6 @@
 {meta: title Brother I'm Getting Ready To Go}
 {meta: artist Lester Flatt}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]The Lord has saved me I [C]want the world to [G]know

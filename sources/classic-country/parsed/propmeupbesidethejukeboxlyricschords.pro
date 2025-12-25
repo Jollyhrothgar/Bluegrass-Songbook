@@ -1,6 +1,6 @@
 {meta: title Prop Me Up Beside The Jukebox}
 {meta: artist Joe Diffie}
-{meta: writer Rick Blaylock, Kerry Kurt Phillips, Howard Pedrew}
+{meta: composer Rick Blaylock, Kerry Kurt Phillips, Howard Pedrew}
 
 {start_of_verse: Verse 1}
 [G]Well I ain't afraid of dying [C]it’s the thought of being dead

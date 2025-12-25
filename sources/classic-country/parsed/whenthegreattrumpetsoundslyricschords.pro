@@ -1,6 +1,6 @@
 {meta: title When The Great Trumpet Sounds}
 {meta: artist The Oak Ridge Boys}
-{meta: writer James L. Hendrix}
+{meta: composer James L. Hendrix}
 
 {start_of_verse: Verse 1}
 [G]When the great trumpet sounds when the great trumpet sounds

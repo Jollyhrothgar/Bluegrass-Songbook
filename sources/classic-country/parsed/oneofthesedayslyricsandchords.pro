@@ -1,6 +1,6 @@
 {meta: title One Of These Days}
 {meta: artist Jeanne Pruett}
-{meta: writer Jeanne Pruett and Walter Haynes}
+{meta: composer Jeanne Pruett and Walter Haynes}
 
 {start_of_verse: Verse 1}
 [C]One of these days I'm gonna leave you

@@ -1,6 +1,6 @@
 {meta: title I Call Him}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash and Ray Cash}
+{meta: composer Johnny Cash and Ray Cash}
 
 {start_of_verse: Verse 1}
 [C]Well the blue's still in the water and the blue's still in the [G7]sky

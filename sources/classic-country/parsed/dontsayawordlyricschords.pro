@@ -1,6 +1,6 @@
 {meta: title Don't Say A Word}
 {meta: artist Dottie West}
-{meta: writer Geoff Stephens and Les Reed}
+{meta: composer Geoff Stephens and Les Reed}
 
 {start_of_verse: Verse 1}
 [C]Don't say a word [E7]just kiss [F]me

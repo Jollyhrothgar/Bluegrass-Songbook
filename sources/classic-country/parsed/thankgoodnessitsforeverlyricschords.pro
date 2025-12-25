@@ -1,6 +1,6 @@
 {meta: title Thank Goodness It's Forever}
 {meta: artist Jean Shepard}
-{meta: writer Larry Butler}
+{meta: composer Larry Butler}
 
 {start_of_verse: Verse 1}
 [G]I've had my share of loneliness and many times I've been [C]awake

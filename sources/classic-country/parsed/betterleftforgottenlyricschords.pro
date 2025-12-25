@@ -1,6 +1,6 @@
 {meta: title Better Left Forgotten}
 {meta: artist Willie Nelson}
-{meta: writer Chip Young}
+{meta: composer Chip Young}
 
 {start_of_verse: Verse 1}
 [C]Sometimes when the night calls it a [C7]day

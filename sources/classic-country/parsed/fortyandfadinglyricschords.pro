@@ -1,6 +1,6 @@
 {meta: title Forty And Fading}
 {meta: artist Ray Price}
-{meta: writer Buck A. Moore, Jim Mundy, Donald G. Tucker and}
+{meta: composer Buck A. Moore, Jim Mundy, Donald G. Tucker and}
 
 {start_of_verse: Verse 1}
 [G]He looked in the mirror while he was shaving this [D7]morning

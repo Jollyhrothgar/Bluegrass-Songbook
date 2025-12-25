@@ -1,6 +1,6 @@
 {meta: title I Shall Be At Home With Jesus}
 {meta: artist J.D. Crowe}
-{meta: writer Jennie Wilson and James David Vaughan}
+{meta: composer Jennie Wilson and James David Vaughan}
 
 {start_of_verse: Verse 1}
 [C]Years of time are swiftly passing

@@ -1,6 +1,6 @@
 {meta: title A Kiss And The Keys}
 {meta: artist Red Sovine}
-{meta: writer Bernard Spurlock}
+{meta: composer Bernard Spurlock}
 
 {start_of_verse: Verse 1}
 [C]Give me a kiss and the [G7]keys that's what ole Johnny [C]said

@@ -1,6 +1,6 @@
 {meta: title The Life Of The Party}
 {meta: artist Porter Wagoner}
-{meta: writer Dave Kirby and Hal Bynum}
+{meta: composer Dave Kirby and Hal Bynum}
 
 {start_of_verse: Verse 1}
 [C]The neighbors keep calling all the [C7]time since you’ve [F]gone

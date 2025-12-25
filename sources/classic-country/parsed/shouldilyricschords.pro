@@ -1,6 +1,6 @@
 {meta: title Should I}
 {meta: artist Daniel O'Donnell}
-{meta: writer John Hegarty and Daniel O'Donnell}
+{meta: composer John Hegarty and Daniel O'Donnell}
 
 {start_of_verse: Verse 1}
 [G7]Should I [C]tell you I love you with flowers

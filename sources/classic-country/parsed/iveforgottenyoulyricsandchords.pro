@@ -1,6 +1,6 @@
 {meta: title I've Forgotten You}
 {meta: artist Rhonda Vincent}
-{meta: writer Angelo Petraglia, Brett James, Hillary Lindsey, Troy Verges}
+{meta: composer Angelo Petraglia, Brett James, Hillary Lindsey, Troy Verges}
 
 {start_of_verse: Verse 1}
 [C]Well it's snowing in Miami and it's [Dm]hailing in L.A.

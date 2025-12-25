@@ -1,6 +1,6 @@
 {meta: title Walkin' A Broken Heart}
 {meta: artist Don Williams}
-{meta: writer Dennis Linde and Alan Rush}
+{meta: composer Dennis Linde and Alan Rush}
 
 {start_of_verse: Verse 1}
 [C]Walkin' [Am]down this [C]midnight [Am]street

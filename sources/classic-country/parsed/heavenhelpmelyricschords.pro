@@ -1,6 +1,6 @@
 {meta: title Heaven Help Me}
 {meta: artist Porter Wagoner}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Heaven help me for my heart has gone [D7]astray

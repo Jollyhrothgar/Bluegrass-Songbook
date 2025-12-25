@@ -1,6 +1,6 @@
 {meta: title Far Above The Starry Sky}
 {meta: artist Doyle Lawson}
-{meta: writer J.T. Sisk}
+{meta: composer J.T. Sisk}
 
 {start_of_verse: Verse 1}
 [C]Far [G7]above the starry [C]sky

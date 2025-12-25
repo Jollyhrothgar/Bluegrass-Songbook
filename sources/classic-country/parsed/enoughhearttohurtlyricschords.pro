@@ -1,6 +1,6 @@
 {meta: title Enough Heart To Hurt}
 {meta: artist Jean Shepard}
-{meta: writer Ernest Reed and Jade Mangino}
+{meta: composer Ernest Reed and Jade Mangino}
 
 {start_of_verse: Verse 1}
 [C]You've gone away and [F]left me here to [C]cry

@@ -1,6 +1,6 @@
 {meta: title Set Me Free}
 {meta: artist Don Gibson}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]Well if you think [F]you've had enough 

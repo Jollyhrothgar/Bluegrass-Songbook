@@ -1,6 +1,6 @@
 {meta: title Since Jesus Came Into My Heart}
 {meta: artist Statler Brother}
-{meta: writer Rufus H. McDaniel and Charles H. Gabriel}
+{meta: composer Rufus H. McDaniel and Charles H. Gabriel}
 
 {start_of_verse: Verse 1}
 [G]What a wonderful change in my life has been wrought

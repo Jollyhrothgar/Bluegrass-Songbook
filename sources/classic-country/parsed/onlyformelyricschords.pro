@@ -1,6 +1,6 @@
 {meta: title Only For Me}
 {meta: artist Connie Smith}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 Intro:

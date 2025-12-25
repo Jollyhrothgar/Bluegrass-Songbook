@@ -1,6 +1,6 @@
 {meta: title Nobody's Baby But Mine}
 {meta: artist Jeanne Pruett}
-{meta: writer Jimmie Davis and Jeanne Pruett}
+{meta: composer Jimmie Davis and Jeanne Pruett}
 
 {start_of_verse: Verse 1}
 [C]Be nobody's baby but [F]mine love

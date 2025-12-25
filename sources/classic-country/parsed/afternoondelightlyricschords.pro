@@ -1,6 +1,6 @@
 {meta: title Afternoon Delight}
 {meta: artist Charlie Rich}
-{meta: writer Bill Danoff}
+{meta: composer Bill Danoff}
 
 {start_of_verse: Verse 1}
 [C]Gonna find my baby gonna hold her tight

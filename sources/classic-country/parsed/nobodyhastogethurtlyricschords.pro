@@ -1,6 +1,6 @@
 {meta: title Nobody Has To Get Hurt}
 {meta: artist George Strait}
-{meta: writer Jim Lauderdale and Terry McBride}
+{meta: composer Jim Lauderdale and Terry McBride}
 
 {start_of_verse: Verse 1}
 [C]As the sun sets [F]and you [C]let go 

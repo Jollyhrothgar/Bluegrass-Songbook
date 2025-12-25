@@ -1,6 +1,6 @@
 {meta: title Satisfied}
 {meta: artist Gene Watson}
-{meta: writer Martha Carson}
+{meta: composer Martha Carson}
 
 {start_of_verse: Verse 1}
 [G]Well you may ask me if I'm happy

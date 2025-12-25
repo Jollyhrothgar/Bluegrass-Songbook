@@ -1,6 +1,6 @@
 {meta: title Painting This Old Town Blue}
 {meta: artist Crystal Gayle}
-{meta: writer William Davidson}
+{meta: composer William Davidson}
 
 {start_of_verse: Verse 1}
 [C]I've been [Am]sittin' here [D7]all night [G7]long

@@ -1,6 +1,6 @@
 {meta: title 'Til I Was A Daddy Too}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [D7]Do you re[G]call [C]  when I was six

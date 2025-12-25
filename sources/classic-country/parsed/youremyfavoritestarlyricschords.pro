@@ -1,6 +1,6 @@
 {meta: title You're My Favorite Star}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G]Well I go to the movies I [D7]watch TV and I [C]listen to the rad[G]io

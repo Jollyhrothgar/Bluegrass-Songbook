@@ -1,6 +1,6 @@
 {meta: title I'm Tied Around Your Finger}
 {meta: artist Jean Shepard}
-{meta: writer John Jones and Patsy Jones}
+{meta: composer John Jones and Patsy Jones}
 
 {start_of_verse: Verse 1}
 [C]Put me [G7]where you [C]want me I'll stay [F]until you [C]call

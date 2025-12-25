@@ -1,6 +1,6 @@
 {meta: title I'll be Somewhere}
 {meta: artist Bill Anderson}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C](I'll be [G7]somewhere  [F]somewhere  [C]ooh  ooh  [C][F]ooh)

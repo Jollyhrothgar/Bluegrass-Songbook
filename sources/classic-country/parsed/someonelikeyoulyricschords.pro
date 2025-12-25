@@ -1,6 +1,6 @@
 {meta: title Someone Like You}
 {meta: artist Emmylou Harris}
-{meta: writer Bob McDill and Dickey Lee}
+{meta: composer Bob McDill and Dickey Lee}
 
 {start_of_verse: Verse 1}
 [G]Others have [D7]touched me [C]soft in the [D7]night

@@ -1,6 +1,6 @@
 {meta: title Always Never The Same}
 {meta: artist George Strait}
-{meta: writer Marv Green and Terry McBride}
+{meta: composer Marv Green and Terry McBride}
 
 {start_of_verse: Verse 1}
 [G7]I know why I'm intri[C]gued

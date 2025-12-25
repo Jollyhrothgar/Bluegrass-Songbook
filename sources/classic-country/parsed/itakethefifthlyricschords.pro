@@ -1,6 +1,6 @@
 {meta: title I Take The Fifth}
 {meta: artist Tony Booth}
-{meta: writer Dave Lindsey, Leo Taylor, Lee Bach}
+{meta: composer Dave Lindsey, Leo Taylor, Lee Bach}
 
 {start_of_verse: Verse 1}
 [G7]Your [C]leaving's made [F]quite a change in [C]me 

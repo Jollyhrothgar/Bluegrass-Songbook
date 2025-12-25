@@ -1,6 +1,6 @@
 {meta: title Just Keep A Moving}
 {meta: artist Hank Snow}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Just keep a-moving wherever you were [D7]moving

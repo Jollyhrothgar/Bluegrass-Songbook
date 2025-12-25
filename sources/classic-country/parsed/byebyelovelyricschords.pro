@@ -1,6 +1,6 @@
 {meta: title Bye Bye Love}
 {meta: artist The Everly Brothers}
-{meta: writer Felice and Boudieaux Bryant}
+{meta: composer Felice and Boudieaux Bryant}
 
 {start_of_verse: Verse 1}
 [F]Bye bye [C]love  bye [F]bye [C]happiness

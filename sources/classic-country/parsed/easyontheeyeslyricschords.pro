@@ -1,6 +1,6 @@
 {meta: title Easy On The Eyes Lyrics Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Cy Coben and Eddy Arnold}
+{meta: composer Cy Coben and Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [C]You’re my loving honey

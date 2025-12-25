@@ -1,6 +1,6 @@
 {meta: title Till The Season Comes Round Again}
 {meta: artist Dolly Parton and Kenny Rogers}
-{meta: writer Randy Goodrum and John B. Jarvis}
+{meta: composer Randy Goodrum and John B. Jarvis}
 
 {start_of_verse: Verse 1}
 [C]Come and gather around at the [F]table

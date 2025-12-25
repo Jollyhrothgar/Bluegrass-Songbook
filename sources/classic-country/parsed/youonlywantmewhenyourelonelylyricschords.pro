@@ -1,6 +1,6 @@
 {meta: title You Only Want Me When You're Lonely}
 {meta: artist Marty Robbins}
-{meta: writer Gene Autry and Steve Nelson}
+{meta: composer Gene Autry and Steve Nelson}
 
 {start_of_verse: Verse 1}
 [C]You only want me when you're [F]lonely

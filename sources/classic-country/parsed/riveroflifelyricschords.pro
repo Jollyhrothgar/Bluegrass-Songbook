@@ -1,6 +1,6 @@
 {meta: title River Of Life}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Adger M. Pace and Marvin Dalton}
+{meta: composer Adger M. Pace and Marvin Dalton}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I cry like a [G7]little lost [C]child

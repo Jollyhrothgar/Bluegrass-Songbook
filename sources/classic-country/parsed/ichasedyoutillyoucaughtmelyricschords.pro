@@ -1,6 +1,6 @@
 {meta: title I Chased You Till You Caught Me}
 {meta: artist Ernest Tubb and Loretta Lynn}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]I chased you till you caught me you had plans of your own 

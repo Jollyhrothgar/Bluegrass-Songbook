@@ -1,6 +1,6 @@
 {meta: title I Sleep Just Like A Baby}
 {meta: artist George Jones}
-{meta: writer J. Chambers, B. Sherrill, L. Jenkins}
+{meta: composer J. Chambers, B. Sherrill, L. Jenkins}
 
 {start_of_verse: Verse 1}
 [C]By now I bet she's wondering how I'm [F]doing

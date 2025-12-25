@@ -1,6 +1,6 @@
 {meta: title The Taker}
 {meta: artist Waylon Jennings}
-{meta: writer Kris Kristofferson and Shel Silverstein}
+{meta: composer Kris Kristofferson and Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [D7]He's a giver he'll give [G]her 

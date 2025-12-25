@@ -1,6 +1,6 @@
 {meta: title A Broken Hearted Me}
 {meta: artist Anne Murray}
-{meta: writer Randy Goodrum}
+{meta: composer Randy Goodrum}
 
 {start_of_verse: Verse 1}
 [C]Every now and then I cry

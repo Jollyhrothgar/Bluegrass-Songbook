@@ -1,6 +1,6 @@
 {meta: title Yesterday Once More}
 {meta: artist Moe Bandy}
-{meta: writer Jim Mundy and Peggy White}
+{meta: composer Jim Mundy and Peggy White}
 
 {start_of_verse: Verse 1}
 [C]Lord I love to [F]hear Hank Williams [C]sing

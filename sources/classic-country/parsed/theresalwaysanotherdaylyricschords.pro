@@ -1,6 +1,6 @@
 {meta: title There's Always Another Day}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert and Sonny James}
+{meta: composer Bob Tubert and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]There's always [F]another [C]day to hope you'll come [Dm]home

@@ -1,5 +1,5 @@
 {meta: artist Johnny Horton}
-{meta: writer Tex Atchinson}
+{meta: composer Tex Atchinson}
 
 {start_of_verse: Verse 1}
 [C]Well away down yonder on the Candy Creek 

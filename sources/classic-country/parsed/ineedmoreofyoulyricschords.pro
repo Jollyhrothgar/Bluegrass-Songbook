@@ -1,6 +1,6 @@
 {meta: title I Need More Of You}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G]Hearts burning like they were on [D7]fire 

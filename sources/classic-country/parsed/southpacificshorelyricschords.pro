@@ -1,6 +1,6 @@
 {meta: title South Pacific Shore}
 {meta: artist Cowboy Copas}
-{meta: writer Ken Clark}
+{meta: composer Ken Clark}
 
 {start_of_verse: Verse 1}
 [G]Back in nineteen hundred and forty two

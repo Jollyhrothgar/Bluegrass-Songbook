@@ -1,6 +1,6 @@
 {meta: title Sin City}
 {meta: artist Dwight Yoakam}
-{meta: writer Chris Hillman and Gram Parsons}
+{meta: composer Chris Hillman and Gram Parsons}
 
 {start_of_verse: Verse 1}
 [G]This old town is [D7]filled with sin 

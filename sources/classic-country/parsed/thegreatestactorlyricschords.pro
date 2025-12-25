@@ -1,6 +1,6 @@
 {meta: title The Greatest Actor}
 {meta: artist Wanda Jackson}
-{meta: writer Charlie Williams}
+{meta: composer Charlie Williams}
 
 {start_of_verse: Verse 1}
 [G]I'm always right at ringside    

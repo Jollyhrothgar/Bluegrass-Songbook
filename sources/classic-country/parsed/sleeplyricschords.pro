@@ -1,6 +1,6 @@
 {meta: title Sleep}
 {meta: artist Porter Wagoner}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [G]Sleep [C]sweet and [G]deep

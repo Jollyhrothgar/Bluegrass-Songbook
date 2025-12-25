@@ -1,6 +1,6 @@
 {meta: title Other Side Of Lonely Lyrics Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Cindy Walker and Lee Fykes}
+{meta: composer Cindy Walker and Lee Fykes}
 
 {start_of_verse: Verse 1}
 [C]On the other side of [F]lone-ly [G7]is where I wanna [C]be

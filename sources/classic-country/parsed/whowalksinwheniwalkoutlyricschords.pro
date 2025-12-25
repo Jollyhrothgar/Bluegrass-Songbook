@@ -1,6 +1,6 @@
 {meta: title Who Walks In When I Walk Out}
 {meta: artist Bob Wills}
-{meta: writer Ralph Freed, Al Goodhart, Al Hoffman}
+{meta: composer Ralph Freed, Al Goodhart, Al Hoffman}
 
 {start_of_verse: Verse 1}
 [G]Who walks in when I walk out

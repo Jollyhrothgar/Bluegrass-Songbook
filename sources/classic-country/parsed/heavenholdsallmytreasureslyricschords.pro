@@ -1,6 +1,6 @@
 {meta: title Heaven Holds All My Treasures}
 {meta: artist Hank Williams}
-{meta: writer Hank Williams [3/4 time]}
+{meta: composer Hank Williams [3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]Some people [G7]struggle for [C]riches

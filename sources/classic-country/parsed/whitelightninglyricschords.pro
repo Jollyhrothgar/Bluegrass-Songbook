@@ -1,6 +1,6 @@
 {meta: title White Lightning Lyrics Chords}
 {meta: artist George Jones}
-{meta: writer J.P. Richardson}
+{meta: composer J.P. Richardson}
 
 {start_of_verse: Verse 1}
 [G]Well in North Carolina way back in the hills

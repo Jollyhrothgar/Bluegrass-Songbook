@@ -1,6 +1,6 @@
 {meta: title That Just About Does it Don't it}
 {meta: artist Vern Gosdin}
-{meta: writer Vern}
+{meta: composer Vern}
 
 {start_of_verse: Verse 1}
 [C]Every night you go to bed [G7]crying

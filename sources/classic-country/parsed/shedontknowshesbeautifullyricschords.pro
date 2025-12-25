@@ -1,6 +1,6 @@
 {meta: title She Don't Know She's Beautiful}
 {meta: artist Sammy Kershaw}
-{meta: writer Bob McDill and Paul Harrison}
+{meta: composer Bob McDill and Paul Harrison}
 
 {start_of_verse: Verse 1}
 [G]We go out to a [C]party [G]somewhere

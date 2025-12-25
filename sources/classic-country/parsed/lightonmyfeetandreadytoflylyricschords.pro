@@ -1,6 +1,6 @@
 {meta: title Light On My Feet And Ready To Fly}
 {meta: artist Doyle Lawson}
-{meta: writer Corey Hensley}
+{meta: composer Corey Hensley}
 
 {start_of_verse: Verse 1}
 [C]Traveling down this road I've [F]wandered for so [C]long 

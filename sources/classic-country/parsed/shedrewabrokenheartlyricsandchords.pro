@@ -1,6 +1,6 @@
 {meta: title She Drew A Broken Heart}
 {meta: artist Patty Loveless}
-{meta: writer Jon McElroy and Ned McElroy}
+{meta: composer Jon McElroy and Ned McElroy}
 
 {start_of_verse: Verse 1}
 [C]You should have seen it coming now [F]it's too [C]late

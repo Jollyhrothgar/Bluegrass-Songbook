@@ -1,6 +1,6 @@
 {meta: title Where Have All The Seasons Gone}
 {meta: artist Bobby Bare}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]Dear mom and dad [F]I'm writing you to [C]say I found a job

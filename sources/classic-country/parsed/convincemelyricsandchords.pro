@@ -1,6 +1,6 @@
 {meta: title Convince Me}
 {meta: artist Red Steagall}
-{meta: writer Donald G. Miller and Russell Don Steagall}
+{meta: composer Donald G. Miller and Russell Don Steagall}
 
 {start_of_verse: Verse 1}
 [C]She smiles as she [Am]passes a [C]cold round of glasses 

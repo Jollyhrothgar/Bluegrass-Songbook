@@ -1,6 +1,6 @@
 {meta: title Stranger Things Have Happened}
 {meta: artist George Strait}
-{meta: writer David Chamberlain}
+{meta: composer David Chamberlain}
 
 {start_of_verse: Verse 1}
 [C]I hate to admit it but somebody else

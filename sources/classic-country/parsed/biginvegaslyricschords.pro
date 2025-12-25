@@ -1,6 +1,6 @@
 {meta: title Big In Vegas}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Terry Stafford}
+{meta: composer Buck Owens and Terry Stafford}
 
 {start_of_verse: Verse 1}
 [C]When I was young I left the home and went [F]away  to [C]Vegas

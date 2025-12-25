@@ -1,6 +1,6 @@
 {meta: title Windsurfer}
 {meta: artist Roy Orbison}
-{meta: writer Bill Dees and Roy Orbison}
+{meta: composer Bill Dees and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [G]Wind-surfer [C][G][C]Wind-surfer

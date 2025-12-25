@@ -1,6 +1,6 @@
 {meta: title Woman You Have Been A Friend To Me}
 {meta: artist Bobby Bare}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]I appreciate the [F]coffee that you [C]made

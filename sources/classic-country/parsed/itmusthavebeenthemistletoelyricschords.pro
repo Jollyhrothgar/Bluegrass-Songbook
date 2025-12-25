@@ -1,6 +1,6 @@
 {meta: title It Must Have Been The Mistletoe}
 {meta: artist Barbara Mandrell}
-{meta: writer Justin Wilde and Douglas Konecky}
+{meta: composer Justin Wilde and Douglas Konecky}
 
 {start_of_verse: Verse 1}
 [G]It must have been the mistletoe the lazy fire the falling snow

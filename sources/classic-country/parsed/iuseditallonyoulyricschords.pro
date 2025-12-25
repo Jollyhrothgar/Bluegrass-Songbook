@@ -1,6 +1,6 @@
 {meta: title I Used It All On You}
 {meta: artist Nat Stuckey}
-{meta: writer Tom Crum}
+{meta: composer Tom Crum}
 
 {start_of_verse: Verse 1}
 [C]Lord there's [F]just no love to [G7]give her [F]I used it [G7]all on [C]you

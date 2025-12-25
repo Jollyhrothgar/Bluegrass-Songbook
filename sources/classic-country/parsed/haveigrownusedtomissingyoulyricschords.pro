@@ -1,6 +1,6 @@
 {meta: title Have I Grown Used To Missing You}
 {meta: artist Wanda Jackson}
-{meta: writer Ned Miller}
+{meta: composer Ned Miller}
 
 {start_of_verse: Verse 1}
 [C]I haven't cried a tear all day and the hurting is gone [F]away

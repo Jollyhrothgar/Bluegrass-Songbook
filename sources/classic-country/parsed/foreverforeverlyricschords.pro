@@ -1,6 +1,6 @@
 {meta: title Forever Forever}
 {meta: artist Fats Domino}
-{meta: writer J. Smith}
+{meta: composer J. Smith}
 
 {start_of_verse: Verse 1}
 [G]Let me be the one you love [D7]forever

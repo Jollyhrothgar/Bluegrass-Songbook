@@ -1,6 +1,6 @@
 {meta: title Am I That Easy to Forget Lyrics chords}
 {meta: artist Jim Reeves}
-{meta: writer Carl Belew and W.S. Stevenson}
+{meta: composer Carl Belew and W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [G]You say you found somebody new

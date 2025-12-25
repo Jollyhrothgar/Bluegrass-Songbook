@@ -1,6 +1,6 @@
 {meta: title Grass Won't Grow On A Busy Street}
 {meta: artist Jeannie Seely}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [G]The wind and I have a lot in common

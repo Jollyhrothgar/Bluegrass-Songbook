@@ -1,6 +1,6 @@
 {meta: title Baby Made It Good}
 {meta: artist Bob Luman}
-{meta: writer Buddy Cannon and Steve Smith}
+{meta: composer Buddy Cannon and Steve Smith}
 
 {start_of_verse: Verse 1}
 [C]The last time I saw [F]baby she was [C]standing at the window

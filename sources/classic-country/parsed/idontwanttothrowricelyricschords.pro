@@ -1,6 +1,6 @@
 {meta: title I Don't Want To Throw Rice}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton and Bill Owens}
+{meta: composer Dolly Parton and Bill Owens}
 
 {start_of_verse: Verse 1}
 [C]She married the [G7]one I love [C]today

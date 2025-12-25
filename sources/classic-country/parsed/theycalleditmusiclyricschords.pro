@@ -1,6 +1,6 @@
 {meta: title They Called It Music}
 {meta: artist The Gibson Brothers}
-{meta: writer Eric Gibson and Joe Newberry}
+{meta: composer Eric Gibson and Joe Newberry}
 
 {start_of_verse: Verse 1}
 [C]We went upon the mountain to hear the old man [F]pray

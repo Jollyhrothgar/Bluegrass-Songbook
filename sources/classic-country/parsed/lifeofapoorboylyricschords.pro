@@ -1,6 +1,6 @@
 {meta: title Life Of A Poor Boy}
 {meta: artist Stonewall Jackson}
-{meta: writer E. C. (Mac) McCarty}
+{meta: composer E. C. (Mac) McCarty}
 
 {start_of_verse: Verse 1}
 [G]When I was just a [C]youngster and [G]hardly in my [D7]teens

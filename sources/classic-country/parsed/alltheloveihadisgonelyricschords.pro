@@ -1,6 +1,6 @@
 {meta: title All The Love I Had Is Gone}
 {meta: artist Ralph Stanley}
-{meta: writer Roy Lee Centers and Archie E. Jones}
+{meta: composer Roy Lee Centers and Archie E. Jones}
 
 {start_of_verse: Verse 1}
 [C]I [F]even loved the ground that [C]you walked on

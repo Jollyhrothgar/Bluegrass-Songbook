@@ -1,6 +1,6 @@
 {meta: title Broken Lady}
 {meta: artist Gatlin Brothers}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 [G]She's a broken [C]lady [G]waiting to be [C]mended

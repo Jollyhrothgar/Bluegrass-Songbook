@@ -1,6 +1,6 @@
 {meta: title Your Lonely Nights Are Over}
 {meta: artist George Morgan}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Your lonely nights are over for there's someone [G7]new

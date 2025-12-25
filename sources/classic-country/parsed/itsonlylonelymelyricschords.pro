@@ -1,6 +1,6 @@
 {meta: title It's Only Lonely Me}
 {meta: artist Lynn Anderson}
-{meta: writer Liz Anderson and Clarence S. Anderson}
+{meta: composer Liz Anderson and Clarence S. Anderson}
 
 {start_of_verse: Verse 1}
 [C]If you hear some footsteps [F]walking close [C]behind you in the night

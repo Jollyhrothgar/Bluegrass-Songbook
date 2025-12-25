@@ -1,6 +1,6 @@
 {meta: title You're The Only One}
 {meta: artist Dolly Parton}
-{meta: writer Carole Sager and Bruce Roberts}
+{meta: composer Carole Sager and Bruce Roberts}
 
 {start_of_verse: Verse 1}
 [C]I found [Em]out the hard [Dm]way 

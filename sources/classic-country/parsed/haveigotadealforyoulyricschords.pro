@@ -1,6 +1,6 @@
 {meta: title Have I Got A Deal For You}
 {meta: artist Reba McEntire}
-{meta: writer Michael Heeney and Jackson Leap}
+{meta: composer Michael Heeney and Jackson Leap}
 
 {start_of_verse: Verse 1}
 [G]Well you look like the kind who's got an [C]eye for a bargain

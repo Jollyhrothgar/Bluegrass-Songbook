@@ -1,6 +1,6 @@
 {meta: title Rosalita}
 {meta: artist Hank Locklin}
-{meta: writer Al Dexter}
+{meta: composer Al Dexter}
 
 {start_of_verse: Verse 1}
 [C]Rosalita my little rose of the [G7]rancho

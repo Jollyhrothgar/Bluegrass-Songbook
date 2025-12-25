@@ -1,6 +1,6 @@
 {meta: title Like Strangers}
 {meta: artist The Everly Brothers}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]Like strangers [F]that's what we [C]are

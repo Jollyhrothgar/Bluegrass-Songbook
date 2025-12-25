@@ -1,6 +1,6 @@
 {meta: title I Won't Cheat On You Again}
 {meta: artist Ernest Tubb and Loretta Lynn}
-{meta: writer Milton Brown}
+{meta: composer Milton Brown}
 
 {start_of_verse: Verse 1}
 [G]You love to put me down each time you're out with your [D7]girlfriends

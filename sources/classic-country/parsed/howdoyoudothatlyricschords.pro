@@ -1,6 +1,6 @@
 {meta: title How Do You Do That}
 {meta: artist Ed Bruce}
-{meta: writer Ed Bruce and Donnie Blanz}
+{meta: composer Ed Bruce and Donnie Blanz}
 
 {start_of_verse: Verse 1}
 [C]At the door at five a.m.

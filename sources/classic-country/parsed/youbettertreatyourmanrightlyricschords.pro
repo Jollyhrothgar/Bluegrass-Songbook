@@ -1,6 +1,6 @@
 {meta: title You Better Treat Your Man Right}
 {meta: artist George Jones}
-{meta: writer Wayne Raney}
+{meta: composer Wayne Raney}
 
 {start_of_verse: Verse 1}
 [C]You better start to treatin' your man a little bit better

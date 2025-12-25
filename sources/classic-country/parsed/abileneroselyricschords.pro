@@ -1,6 +1,6 @@
 {meta: title Abilene Rose}
 {meta: artist Marty Robbins}
-{meta: writer James B. Hosale}
+{meta: composer James B. Hosale}
 
 {start_of_verse: Verse 1}
 [C]All you young cowboys come gather around

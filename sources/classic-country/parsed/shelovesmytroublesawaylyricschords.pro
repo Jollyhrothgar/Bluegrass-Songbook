@@ -1,6 +1,6 @@
 {meta: title She Loves My Troubles Away}
 {meta: artist John Conlee}
-{meta: writer Max D. Barnes and Rayburn Anthony}
+{meta: composer Max D. Barnes and Rayburn Anthony}
 
 {start_of_verse: Verse 1}
 [C]I lost my job down at the docks

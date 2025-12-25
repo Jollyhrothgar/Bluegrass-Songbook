@@ -1,6 +1,6 @@
 {meta: title The Birds And The Bees}
 {meta: artist Jewel Akens}
-{meta: writer Barry Stuart}
+{meta: composer Barry Stuart}
 
 {start_of_verse: Verse 1}
 [G]Let me tell ya bout the birds and the bees

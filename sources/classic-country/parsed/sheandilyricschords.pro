@@ -1,6 +1,6 @@
 {meta: title She And I}
 {meta: artist Alabama}
-{meta: writer Dave Loggins}
+{meta: composer Dave Loggins}
 
 {start_of_verse: Verse 1}
 [G]She and [D7]I live in our own little world

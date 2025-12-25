@@ -1,6 +1,6 @@
 {meta: title Wild Wild Wind chord}
 {meta: artist Stonewall Jackson}
-{meta: writer Roy Botkin and Wade Jackson}
+{meta: composer Roy Botkin and Wade Jackson}
 
 {start_of_verse: Verse 1}
 [C]The sun goes [G7]down  and the lights turn [C]on 

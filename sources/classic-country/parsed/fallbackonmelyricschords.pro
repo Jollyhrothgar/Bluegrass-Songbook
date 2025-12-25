@@ -1,6 +1,6 @@
 {meta: title Fall Back On Me}
 {meta: artist Charley Pride}
-{meta: writer Danny Dunn and Richard Root}
+{meta: composer Danny Dunn and Richard Root}
 
 {start_of_verse: Verse 1}
 [F]You're goin' searchin' for [C]somethin' that I [F]hope someday [G7]you'll [C]find

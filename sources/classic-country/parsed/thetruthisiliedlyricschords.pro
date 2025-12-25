@@ -1,6 +1,6 @@
 {meta: title The Truth Is I Lied}
 {meta: artist Gene Watson}
-{meta: writer Bill Anderson and Skip Ewing}
+{meta: composer Bill Anderson and Skip Ewing}
 
 {start_of_verse: Verse 1}
 [C]I said it was over [F]I said we were [C]through

@@ -1,6 +1,6 @@
 {meta: title Lady}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]Lady I promise you I'll [G]write you a song

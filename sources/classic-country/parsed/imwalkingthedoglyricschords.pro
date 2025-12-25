@@ -1,6 +1,6 @@
 {meta: title I’m Walking The Dog}
 {meta: artist Webb Pierce}
-{meta: writer Cliff Grimsley and Tex Grimsley}
+{meta: composer Cliff Grimsley and Tex Grimsley}
 
 {start_of_verse: Verse 1}
 [G]I'm walking the dog and I'm never [C]blue

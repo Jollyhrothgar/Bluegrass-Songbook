@@ -1,6 +1,6 @@
 {meta: title This Ain't No Way To Be}
 {meta: artist Earl Thomas Conley}
-{meta: writer Earl Thomas Conley and Randy Scruggs}
+{meta: composer Earl Thomas Conley and Randy Scruggs}
 
 {start_of_verse: Verse 1}
 [G]Maybe I was too [C]lonely back then

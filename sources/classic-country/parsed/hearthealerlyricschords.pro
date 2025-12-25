@@ -1,6 +1,6 @@
 {meta: title Heart Healer}
 {meta: artist Mel Tillis}
-{meta: writer Thomas Gmeiner and John Greenebaum}
+{meta: composer Thomas Gmeiner and John Greenebaum}
 
 {start_of_verse: Verse 1}
 [G]Well I fell to sweet temptation

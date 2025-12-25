@@ -1,6 +1,6 @@
 {meta: title She Never Got Me Over You}
 {meta: artist Keith Whitley}
-{meta: writer Hank Cochran, Dean Dillon, Keith Whitley}
+{meta: composer Hank Cochran, Dean Dillon, Keith Whitley}
 
 {start_of_verse: Verse 1}
 [C]She got me to stop drinking 

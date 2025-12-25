@@ -1,6 +1,6 @@
 {meta: title No More}
 {meta: artist Elvis Presley}
-{meta: writer Don Robertson and Hal Blair}
+{meta: composer Don Robertson and Hal Blair}
 
 {start_of_verse: Verse 1}
 [G]No more do I see the starlight caress your [D7]hair

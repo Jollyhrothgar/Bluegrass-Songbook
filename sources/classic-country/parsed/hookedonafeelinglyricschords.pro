@@ -1,6 +1,6 @@
 {meta: title Hooked On A Feeling}
 {meta: artist B J Thomas}
-{meta: writer Mark James}
+{meta: composer Mark James}
 
 {start_of_verse: Verse 1}
 [G]I can't stop this feeling [G7]deep inside of [C]me 

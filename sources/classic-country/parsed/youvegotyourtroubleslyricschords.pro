@@ -1,6 +1,6 @@
 {meta: title You've Got Your Troubles}
 {meta: artist Brenda Lee}
-{meta: writer Roger Cook and Roger Greenaway}
+{meta: composer Roger Cook and Roger Greenaway}
 
 {start_of_verse: Verse 1}
 [C]I see that worried look upon your [D7]face

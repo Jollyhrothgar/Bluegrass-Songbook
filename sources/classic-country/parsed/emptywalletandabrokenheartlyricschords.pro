@@ -1,6 +1,6 @@
 {meta: title Empty Wallet And A Broken Heart}
 {meta: artist Ira Louvin}
-{meta: writer Anne Young}
+{meta: composer Anne Young}
 
 {start_of_verse: Verse 1}
 [G]You couldn’t keep your [C]hand off my [G]wallet

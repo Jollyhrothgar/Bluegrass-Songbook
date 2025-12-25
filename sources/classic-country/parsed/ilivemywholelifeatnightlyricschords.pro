@@ -1,6 +1,6 @@
 {meta: title I Live My Whole Life at Night}
 {meta: artist Ronnie Milsap}
-{meta: writer John Schweers and Charles Quillen}
+{meta: composer John Schweers and Charles Quillen}
 
 {start_of_verse: Verse 1}
 [C]Well that old song just went down

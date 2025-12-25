@@ -1,6 +1,6 @@
 {meta: title Barroom Habits}
 {meta: artist Conway Twitty}
-{meta: writer Wayne Kemp}
+{meta: composer Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [C]Well the kids came out to play last Sunday morning

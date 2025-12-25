@@ -1,6 +1,6 @@
 {meta: title You May Feel Me Crying}
 {meta: artist Roy Orbison}
-{meta: writer Will Jennings and Richard B. Kerr}
+{meta: composer Will Jennings and Richard B. Kerr}
 
 {start_of_verse: Verse 1}
 [C]When we make love you know we're making love

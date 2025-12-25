@@ -1,6 +1,6 @@
 {meta: title Writing On The Wall}
 {meta: artist George Jones}
-{meta: writer Freddy Weller and Bobby Fischer}
+{meta: composer Freddy Weller and Bobby Fischer}
 
 {start_of_verse: Verse 1}
 [G]She was holding back the tears

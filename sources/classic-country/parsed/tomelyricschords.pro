@@ -1,6 +1,6 @@
 {meta: title To Me}
 {meta: artist Lee Greenwood}
-{meta: writer Mike Reid and Mack David}
+{meta: composer Mike Reid and Mack David}
 
 {start_of_verse: Verse 1}
 [G]To me you are the [C]hand that I reach for

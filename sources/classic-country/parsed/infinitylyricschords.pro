@@ -1,6 +1,6 @@
 {meta: title Infinity}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [D7]With [G]wings of freedom [G7]flying in your [C]eyes 

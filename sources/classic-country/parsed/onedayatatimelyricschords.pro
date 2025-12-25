@@ -1,6 +1,6 @@
 {meta: title One Day at a Time}
 {meta: artist Don Gibson}
-{meta: writer Gary S. Paxton}
+{meta: composer Gary S. Paxton}
 
 {start_of_verse: Verse 1}
 [G]One day at a [C]time is all I can [G]make it

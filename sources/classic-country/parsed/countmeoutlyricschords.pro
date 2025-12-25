@@ -1,6 +1,6 @@
 {meta: title Count Me Out}
 {meta: artist Marty Robbins}
-{meta: writer Jack Pruet}
+{meta: composer Jack Pruet}
 
 {start_of_verse: Verse 1}
 [G]Taking me for granted was your first [C]mistake

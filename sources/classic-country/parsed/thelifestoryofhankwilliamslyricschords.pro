@@ -1,6 +1,6 @@
 {meta: title The Life Story Of Hank Williams}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Louis Innis and Hawkshaw Hawkins}
+{meta: composer Louis Innis and Hawkshaw Hawkins}
 
 {start_of_verse: Verse 1}
 [C]The life of Hank Williams on [F]earth it was [C]brief

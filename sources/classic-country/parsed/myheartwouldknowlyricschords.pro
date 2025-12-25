@@ -1,6 +1,6 @@
 {meta: title My Heart Would Know}
 {meta: artist Merle Haggard}
-{meta: writer Hank Williams}
+{meta: composer Hank Williams}
 
 {start_of_verse: Verse 1}
 [C]I could [G7]say it's over [C]now that [F]I was glad to see you [C]go

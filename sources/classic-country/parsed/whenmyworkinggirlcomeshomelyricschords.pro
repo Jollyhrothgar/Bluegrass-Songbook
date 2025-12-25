@@ -1,6 +1,6 @@
 {meta: title When My Working Girl Comes Home}
 {meta: artist Moe Bandy}
-{meta: writer Carl Belew and Van Givens}
+{meta: composer Carl Belew and Van Givens}
 
 {start_of_verse: Verse 1}
 [C]I don't have to tell you it's not [F]easy

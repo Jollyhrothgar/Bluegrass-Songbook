@@ -1,6 +1,6 @@
 {meta: title You Slip Into My Mind}
 {meta: artist Cal Smith}
-{meta: writer Curly Putman and Walter Haynes}
+{meta: composer Curly Putman and Walter Haynes}
 
 {start_of_verse: Verse 1}
 [C]You slip into my mind so easy [F]baby

@@ -1,6 +1,6 @@
 {meta: title When I Looked Up And He Looked Down}
 {meta: artist Chuck Wagon Gang}
-{meta: writer Albert E. Brumley Sr.}
+{meta: composer Albert E. Brumley Sr.}
 
 {start_of_verse: Verse 1}
 [G]I was wandering far from Jesus in the [C]paths of sin and [G]shame

@@ -1,6 +1,6 @@
 {meta: title A Little Heaven's Rubbing Off On Me}
 {meta: artist George Strait}
-{meta: writer Gene Dobbins and Mark Sherrill}
+{meta: composer Gene Dobbins and Mark Sherrill}
 
 {start_of_verse: Verse 1}
 [G]I used to like makin' love and then gettin' up 

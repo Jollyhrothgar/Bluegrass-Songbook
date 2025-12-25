@@ -1,6 +1,6 @@
 {meta: title Rambler's Blues}
 {meta: artist Del McCoury}
-{meta: writer Darrell "Pee Wee" Lambert}
+{meta: composer Darrell "Pee Wee" Lambert}
 
 {start_of_verse: Verse 1}
 [G]I’m just a rovin’ rambler

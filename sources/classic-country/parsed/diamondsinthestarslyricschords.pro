@@ -1,6 +1,6 @@
 {meta: title Diamonds in the Stars}
 {meta: artist Ray Price}
-{meta: writer Jesses Shofner}
+{meta: composer Jesses Shofner}
 
 {start_of_verse: Verse 1}
 [C]Years ago I used to think 

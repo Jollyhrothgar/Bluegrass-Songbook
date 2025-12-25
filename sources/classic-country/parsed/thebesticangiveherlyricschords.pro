@@ -1,6 +1,6 @@
 {meta: title The Best I Can Give Her}
 {meta: artist Willie Nelson}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]In the midst of a crowd where the music is [D7]loud

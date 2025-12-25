@@ -1,5 +1,5 @@
 {meta: artist Mel Tillis}
-{meta: writer Ronald Elmer McCown}
+{meta: composer Ronald Elmer McCown}
 
 {start_of_verse: Verse 1}
 [C]Now time and time again I know I’ve [G7]hurt you

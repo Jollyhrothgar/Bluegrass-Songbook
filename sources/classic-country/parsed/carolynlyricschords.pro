@@ -1,6 +1,6 @@
 {meta: title Carolyn}
 {meta: artist Merle Haggard}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]Carolyn let [Dm]me tell you what I've heard about a man [Em]today

@@ -1,6 +1,6 @@
 {meta: title I'll Think Of Something}
 {meta: artist Hank Williams Jr.}
-{meta: writer Bill Rick and Jerry Foster}
+{meta: composer Bill Rick and Jerry Foster}
 
 {start_of_verse: Verse 1}
 [C]I don't know how I'll get her off my [Am]mind

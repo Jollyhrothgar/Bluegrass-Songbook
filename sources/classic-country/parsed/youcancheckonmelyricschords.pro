@@ -1,6 +1,6 @@
 {meta: title You Can Check On Me}
 {meta: artist Stonewall Jackson}
-{meta: writer Gene Crysler}
+{meta: composer Gene Crysler}
 
 {start_of_verse: Verse 1}
 [C]My show signs on the air at six and I get off at [G7]nine

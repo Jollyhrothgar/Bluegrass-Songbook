@@ -1,6 +1,6 @@
 {meta: title More Than I Can Say}
 {meta: artist Sammy Kershaw}
-{meta: writer Sonny Curtis and Jerry Allison}
+{meta: composer Sonny Curtis and Jerry Allison}
 
 {start_of_verse: Verse 1}
 [C]Oh oh yeah yeah I love you more than I can [Am]say

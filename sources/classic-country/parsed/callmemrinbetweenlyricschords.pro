@@ -1,6 +1,6 @@
 {meta: title Call Me Mr. In Between}
 {meta: artist Burl Ives}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [C]Well I'm [F]too old for girls and I'm too young for women

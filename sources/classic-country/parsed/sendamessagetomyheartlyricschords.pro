@@ -1,6 +1,6 @@
 {meta: title Send A Message To My Heart}
 {meta: artist Dwight Yoakam}
-{meta: writer Kathy Louvin and Kostas}
+{meta: composer Kathy Louvin and Kostas}
 
 {start_of_verse: Verse 1}
 [G]Send a message to my heart on the [D7]wings of the wind

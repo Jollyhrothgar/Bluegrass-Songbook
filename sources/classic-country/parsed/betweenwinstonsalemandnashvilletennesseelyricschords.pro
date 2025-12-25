@@ -1,6 +1,6 @@
 {meta: title Between Winston Salem and Nashville Tennessee}
 {meta: artist Billy Walker}
-{meta: writer Curry Kusik and Eddie Snyder}
+{meta: composer Curry Kusik and Eddie Snyder}
 
 {start_of_verse: Verse 1}
 [C]Between Winston Salem and [F]Nashville [C]Tennessee

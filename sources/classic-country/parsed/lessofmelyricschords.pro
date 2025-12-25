@@ -1,6 +1,6 @@
 {meta: title Less Of Me}
 {meta: artist The Statler Brothers}
-{meta: writer Glen Campbell}
+{meta: composer Glen Campbell}
 
 {start_of_verse: Verse 1}
 [C]Let me be a little [F]kinder let me [C]be a little [G7]blinder

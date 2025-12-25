@@ -1,6 +1,6 @@
 {meta: title You Know How Talk Gets Around}
 {meta: artist Eddy Arnold}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]I'm hearing funny stories and they're far from being [F]true

@@ -1,6 +1,6 @@
 {meta: title Every Little Thing Rolled Into One}
 {meta: artist George Morgan}
-{meta: writer Fred Segrest}
+{meta: composer Fred Segrest}
 
 {start_of_verse: Verse 1}
 [C]I know a little gal who lives [G7]down the street

@@ -1,6 +1,6 @@
 {meta: title Speed Of Flight}
 {meta: artist Tracy Lawrence}
-{meta: writer Samuel Davis}
+{meta: composer Samuel Davis}
 
 {start_of_verse: Verse 1}
 [G7]We [C]said our goodbyes I watched her board the plane

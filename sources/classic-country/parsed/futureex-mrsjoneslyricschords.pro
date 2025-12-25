@@ -1,6 +1,6 @@
 {meta: title Future Ex-Mrs. Jones}
 {meta: artist Norma Jean}
-{meta: writer Dolores Tolbert}
+{meta: composer Dolores Tolbert}
 
 {start_of_verse: Verse 1}
 [C]The next time you come home with lipstick [F]fresh from that blonde

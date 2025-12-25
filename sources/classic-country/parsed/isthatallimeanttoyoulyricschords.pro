@@ -1,6 +1,6 @@
 {meta: title Is That All I Meant To You}
 {meta: artist Johnny Paycheck}
-{meta: writer Gene Guthrie}
+{meta: composer Gene Guthrie}
 
 {start_of_verse: Verse 1}
 [C]Is that all I meant to you

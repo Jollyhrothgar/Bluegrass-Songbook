@@ -1,6 +1,6 @@
 {meta: title Hero For A Day}
 {meta: artist Conway Twitty}
-{meta: writer Wayne C. Thompson and Ronnie Reno}
+{meta: composer Wayne C. Thompson and Ronnie Reno}
 
 {start_of_verse: Verse 1}
 [G]Lady    [G][C]you need a lover   [C]someone [D7]to take [G]you

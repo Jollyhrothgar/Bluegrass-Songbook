@@ -1,6 +1,6 @@
 {meta: title It's Been a Long Long Time}
 {meta: artist Jimmy Dean}
-{meta: writer Jule Styne and Sammy Cahn}
+{meta: composer Jule Styne and Sammy Cahn}
 
 {start_of_verse: Verse 1}
 [C]Kiss me once [Em]then kiss me [Am]twice

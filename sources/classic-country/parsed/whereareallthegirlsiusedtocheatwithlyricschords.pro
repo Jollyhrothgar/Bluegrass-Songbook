@@ -1,6 +1,6 @@
 {meta: title Where Are All The Girls I Used To Cheat With}
 {meta: artist Keith Whitley}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G]Shirley’s [D7]changed her [G]number [G7]at least I [C]know she’s [G]moved

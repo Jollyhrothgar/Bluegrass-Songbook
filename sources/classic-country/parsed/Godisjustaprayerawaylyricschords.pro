@@ -1,6 +1,6 @@
 {meta: title God Is Just A Prayer Away}
 {meta: artist The Blackwood Brothers}
-{meta: writer G. Paulson}
+{meta: composer G. Paulson}
 
 {start_of_verse: Verse 1}
 [C]When your burden seems so heavy

@@ -1,6 +1,6 @@
 {meta: title Don't Lay Your Head On My Shoulder}
 {meta: artist Wynn Stewart}
-{meta: writer Dale Noe}
+{meta: composer Dale Noe}
 
 {start_of_verse: Verse 1}
 [C]Don't lay your head [G7]on my [C]shoulder

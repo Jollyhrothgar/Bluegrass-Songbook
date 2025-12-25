@@ -1,6 +1,6 @@
 {meta: title Hypnotize The Moon}
 {meta: artist Clay Walker}
-{meta: writer Eric Kaz and Steve Dorff}
+{meta: composer Eric Kaz and Steve Dorff}
 
 {start_of_verse: Verse 1}
 [G]She knew she caught my eye and [C]that was all it took

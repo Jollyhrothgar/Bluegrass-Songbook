@@ -1,6 +1,6 @@
 {meta: title Cowboys Like Us}
 {meta: artist George Strait}
-{meta: writer Written by Bob Dipiero, Anthony Smith}
+{meta: composer Written by Bob Dipiero, Anthony Smith}
 
 {start_of_verse: Verse 1}
 [G]I take [D7]off time to [G]time with those [D7]crazy friends of [G]mine

@@ -1,6 +1,6 @@
 {meta: title Forgive Me Dear}
 {meta: artist Faron Young}
-{meta: writer George Jones and Faron Young}
+{meta: composer George Jones and Faron Young}
 
 {start_of_verse: Verse 1}
 [C]I lost your love and started drinking

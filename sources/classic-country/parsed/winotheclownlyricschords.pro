@@ -1,6 +1,6 @@
 {meta: title Wino The Clown}
 {meta: artist George Jones}
-{meta: writer Curly Putman, Ron Hellard, Bucky Jones}
+{meta: composer Curly Putman, Ron Hellard, Bucky Jones}
 
 {start_of_verse: Verse 1}
 [C]He's got a funny [F]red nose old baggy [C]pants

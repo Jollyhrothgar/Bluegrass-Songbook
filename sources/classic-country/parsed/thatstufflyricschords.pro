@@ -1,6 +1,6 @@
 {meta: title That Stuff}
 {meta: artist Keith Whitley}
-{meta: writer Sonny Curtis and Ron Hellard}
+{meta: composer Sonny Curtis and Ron Hellard}
 
 {start_of_verse: Verse 1}
 [G]Well if the sun comes up in the morning

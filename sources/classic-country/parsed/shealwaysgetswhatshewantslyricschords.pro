@@ -1,6 +1,6 @@
 {meta: title She Always Gets What She Wants}
 {meta: artist Doug Stone}
-{meta: writer Jeff Jones, Rusty Van Sickle, Terry Clayton}
+{meta: composer Jeff Jones, Rusty Van Sickle, Terry Clayton}
 
 {start_of_verse: Verse 1}
 [C]She always gets what she wants and makes it look [Am]easy

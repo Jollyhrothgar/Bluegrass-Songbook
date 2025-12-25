@@ -1,6 +1,6 @@
 {meta: title Homecoming in Heaven}
 {meta: artist George Jones}
-{meta: writer Willie Nelson, Paul Buskirk, Walt Breeland, Claude Gray}
+{meta: composer Willie Nelson, Paul Buskirk, Walt Breeland, Claude Gray}
 
 {start_of_verse: Verse 1}
 [C]My years have been many my [F]loved ones are [C]gone

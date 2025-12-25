@@ -1,6 +1,6 @@
 {meta: title Why Don't They Understand}
 {meta: artist George Hamilton IV}
-{meta: writer Jimmy Henderson and Jack Fishman}
+{meta: composer Jimmy Henderson and Jack Fishman}
 
 {start_of_verse: Verse 1}
 [C]Why why don't they under[E7]stand

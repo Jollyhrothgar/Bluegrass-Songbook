@@ -1,6 +1,6 @@
 {meta: title Twenty Years Ago}
 {meta: artist Kenny Rogers}
-{meta: writer Dan Tyler, Michael Noble, Michael Spriggs, Wood Newton}
+{meta: composer Dan Tyler, Michael Noble, Michael Spriggs, Wood Newton}
 
 {start_of_verse: Verse 1}
 [G]It's been a [C]long time since I've [G]walked through this old [F]town [C]

@@ -1,6 +1,6 @@
 {meta: title Lord If I Make It To Heaven}
 {meta: artist Billy Parker}
-{meta: writer Thomas C. Overstreet and Dale G. Vest}
+{meta: composer Thomas C. Overstreet and Dale G. Vest}
 
 {start_of_verse: Verse 1}
 [C]Lord prepare [G7]me no [C]mansion

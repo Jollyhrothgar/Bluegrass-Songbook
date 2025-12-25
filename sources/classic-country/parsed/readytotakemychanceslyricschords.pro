@@ -1,6 +1,6 @@
 {meta: title Ready To Take My Chances}
 {meta: artist Jim Ed Brown and Helen Cornelius}
-{meta: writer Dewayne Orender and Helen Cornelius}
+{meta: composer Dewayne Orender and Helen Cornelius}
 
 {start_of_verse: Verse 1}
 [G]Walking down the [D7]road of life so many [C]times it scare[G]s me

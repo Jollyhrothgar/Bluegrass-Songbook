@@ -1,6 +1,6 @@
 {meta: title The Number He Gave Me Was Mine}
 {meta: artist Vern Gosdin}
-{meta: writer Dennis Knutson and Vern Gosdin}
+{meta: composer Dennis Knutson and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [G]I was pouring my heart out to a stranger at the bar

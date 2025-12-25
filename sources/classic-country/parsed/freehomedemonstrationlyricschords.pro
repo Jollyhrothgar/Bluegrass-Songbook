@@ -1,6 +1,6 @@
 {meta: title Free Home Demonstration Lyrics Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Charles Grean and Cy Coben}
+{meta: composer Charles Grean and Cy Coben}
 
 {start_of_verse: Verse 1}
 [F]Now you like me and I [C]like you but there’s just [F]one thing [C]wrong

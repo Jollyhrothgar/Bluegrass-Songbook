@@ -1,6 +1,6 @@
 {meta: title The Shoe Goes On The Other Foot Tonight}
 {meta: artist Marty Robbins}
-{meta: writer Buddy Mize}
+{meta: composer Buddy Mize}
 
 {start_of_verse: Verse 1}
 [G]How [C]long did you think you could go on hurting [G]me

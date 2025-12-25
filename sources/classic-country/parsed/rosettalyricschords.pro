@@ -1,6 +1,6 @@
 {meta: title Rosetta and chord}
 {meta: artist Bob Wills}
-{meta: writer Hines and Woods}
+{meta: composer Hines and Woods}
 
 {start_of_verse: Verse 1}
 [G]Rosetta [F]  m—y Ro[G]setta[E7] 

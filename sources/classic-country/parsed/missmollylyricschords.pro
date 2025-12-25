@@ -1,6 +1,6 @@
 {meta: title Miss Molly}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Oh have you seen Miss [D7]Molly her [G]cheeks are rosy [D7]red

@@ -1,6 +1,6 @@
 {meta: title Number One Heel}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Bonnie Owens}
+{meta: composer Buck Owens and Bonnie Owens}
 
 {start_of_verse: Verse 1}
 [G]Oh I’m the number one heel in the [C]country

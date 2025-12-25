@@ -1,6 +1,6 @@
 {meta: title Lord She Sure Is Good At Lovin' Me}
 {meta: artist Ricky Skaggs}
-{meta: writer Paul Overstreet and Randy Travis}
+{meta: composer Paul Overstreet and Randy Travis}
 
 {start_of_verse: Verse 1}
 [F]Lord she sure is [C]good [G7]at lovin' [G7][C]me

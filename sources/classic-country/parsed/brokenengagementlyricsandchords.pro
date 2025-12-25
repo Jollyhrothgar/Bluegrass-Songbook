@@ -1,6 +1,6 @@
 {meta: title Broken Engagement}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker, Max Powell, Mary Rhodes}
+{meta: composer Wayne P. Walker, Max Powell, Mary Rhodes}
 
 {start_of_verse: Verse 1}
 [C]They were standing in the [G7]moonlight

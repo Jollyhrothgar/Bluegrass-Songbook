@@ -1,6 +1,6 @@
 {meta: title Slow Rolling Low}
 {meta: artist Waylon Jennings}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [G]I got a slow rollin' low

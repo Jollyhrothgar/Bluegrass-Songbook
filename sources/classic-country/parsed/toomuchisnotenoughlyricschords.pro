@@ -1,6 +1,6 @@
 {meta: title Too Much Is Not Enough}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy and Ron Taylor}
+{meta: composer David Bellamy and Ron Taylor}
 
 {start_of_verse: Verse 1}
 [D7]My friends all [G]say that I'm losing touch

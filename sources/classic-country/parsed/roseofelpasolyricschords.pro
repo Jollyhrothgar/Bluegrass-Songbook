@@ -1,6 +1,6 @@
 {meta: title Rose Of El Paso}
 {meta: artist Mel Tillis}
-{meta: writer Sam Weedman}
+{meta: composer Sam Weedman}
 
 {start_of_verse: Verse 1}
 [G]Dear Clementine the weather’s fine 

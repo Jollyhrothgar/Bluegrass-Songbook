@@ -1,6 +1,6 @@
 {meta: title Be Sure There's No Mistake}
 {meta: artist Eddy Arnold}
-{meta: writer Eddy Arnold And Alton "Cook" Watson}
+{meta: composer Eddy Arnold And Alton "Cook" Watson}
 
 {start_of_verse: Verse 1}
 [C]Be sure there’s no [C][G7]mistake

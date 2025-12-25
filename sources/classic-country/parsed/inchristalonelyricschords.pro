@@ -1,6 +1,6 @@
 {meta: title In Christ Alone}
 {meta: artist The Booth Brothers}
-{meta: writer Keith Getty and Stuart Townend}
+{meta: composer Keith Getty and Stuart Townend}
 
 {start_of_verse: Verse 1}
 [G7]In Christ [C]alone my [F]hope is [G7]found

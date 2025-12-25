@@ -1,6 +1,6 @@
 {meta: title Blue Christmas Lights}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Red Simpson}
+{meta: composer Buck Owens and Red Simpson}
 
 {start_of_verse: Verse 1}
 Excuse me Miss but do [C]you have any..

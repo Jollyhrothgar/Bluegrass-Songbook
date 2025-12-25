@@ -1,6 +1,6 @@
 {meta: title Hallelujah I'm Ready To Go}
 {meta: artist Ricky Skaggs}
-{meta: writer William York}
+{meta: composer William York}
 
 {start_of_verse: Verse 1}
 [C]Hallelujah I'm [G]ready

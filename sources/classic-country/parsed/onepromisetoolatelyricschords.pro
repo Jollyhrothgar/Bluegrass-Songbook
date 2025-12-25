@@ -1,6 +1,6 @@
 {meta: title One Promise Too Late}
 {meta: artist Reba McEntire}
-{meta: writer Don Schlitz, Dave Loggins, Lisa Silver}
+{meta: composer Don Schlitz, Dave Loggins, Lisa Silver}
 
 {start_of_verse: Verse 1}
 [C]I would have [G7]waited for[F]ever 

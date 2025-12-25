@@ -1,6 +1,6 @@
 {meta: title I Know}
 {meta: artist Tammy Wynette}
-{meta: writer George Jones and Tammy Wynette}
+{meta: composer George Jones and Tammy Wynette}
 
 {start_of_verse: Verse 1}
 [G]Every day when you come home I [D7]meet you at the [G]door

@@ -1,6 +1,6 @@
 {meta: title Goodbye Mr. Brown}
 {meta: artist Kitty Wells}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [G]Hello Mrs. Johnson [C]good morning Mr. Brown

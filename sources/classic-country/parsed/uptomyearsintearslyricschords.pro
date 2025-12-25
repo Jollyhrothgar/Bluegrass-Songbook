@@ -1,6 +1,6 @@
 {meta: title Up To My Ears In Tears}
 {meta: artist Alan Jackson}
-{meta: writer Don Sampson and Alan Jackson}
+{meta: composer Don Sampson and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G]You told me you don't love me you walked out the [C]door

@@ -1,6 +1,6 @@
 {meta: title One More Time}
 {meta: artist Crystal Gayle}
-{meta: writer Bryan Blackburn, Joachim Heider, Christian Heilberg}
+{meta: composer Bryan Blackburn, Joachim Heider, Christian Heilberg}
 
 {start_of_verse: Verse 1}
 [C]It's early in the morning [E7]down in the small [Am]cafe

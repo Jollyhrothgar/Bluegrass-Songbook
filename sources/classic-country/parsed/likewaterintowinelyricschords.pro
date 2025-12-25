@@ -1,6 +1,6 @@
 {meta: title Like Water Into Wine}
 {meta: artist Patty Loveless}
-{meta: writer Gretchen Peters}
+{meta: composer Gretchen Peters}
 
 {start_of_verse: Verse 1}
 [C]Baby open up that bottle  [Am]   come and lay down by my [F]side

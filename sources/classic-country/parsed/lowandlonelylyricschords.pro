@@ -1,6 +1,6 @@
 {meta: title Low And Lonely}
 {meta: artist Hank Williams}
-{meta: writer Floyd Jenkins}
+{meta: composer Floyd Jenkins}
 
 {start_of_verse: Verse 1}
 [C]Low and lonely [F]sad and [C]blue

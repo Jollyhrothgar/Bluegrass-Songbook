@@ -1,6 +1,6 @@
 {meta: title I've Had You}
 {meta: artist Cal Smith}
-{meta: writer Troy Seals and Will Jennings}
+{meta: composer Troy Seals and Will Jennings}
 
 {start_of_verse: Verse 1}
 [C]If I'm never [F]loved again [G7]that's al[C]right

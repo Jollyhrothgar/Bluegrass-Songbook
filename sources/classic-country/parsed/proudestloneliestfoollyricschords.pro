@@ -1,6 +1,6 @@
 {meta: title Proudest Loneliest Fool}
 {meta: artist Charlie Rich}
-{meta: writer Ricci Mareno and Jerry Gillespie}
+{meta: composer Ricci Mareno and Jerry Gillespie}
 
 {start_of_verse: Verse 1}
 [G]She didn't see things [F]my way

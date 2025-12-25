@@ -1,6 +1,6 @@
 {meta: title I'm Tired Of Bumming Around}
 {meta: artist Hank Locklin}
-{meta: writer W.S. Stevenson and Pete Graves}
+{meta: composer W.S. Stevenson and Pete Graves}
 
 {start_of_verse: Verse 1}
 [C]I'm tired of bumming around 

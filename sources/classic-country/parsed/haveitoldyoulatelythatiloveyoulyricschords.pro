@@ -1,6 +1,6 @@
 {meta: title Have I Told You Lately That I Love You}
 {meta: artist Jim Reeves}
-{meta: writer Scott Wiseman}
+{meta: composer Scott Wiseman}
 
 {start_of_verse: Verse 1}
 [C]Have I told you lately that I love [G7]you

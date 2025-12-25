@@ -1,6 +1,6 @@
 {meta: title Not In Front Of The Kids}
 {meta: artist Carl Smith}
-{meta: writer Mel Tillis and Billy Swan}
+{meta: composer Mel Tillis and Billy Swan}
 
 {start_of_verse: Verse 1}
 [C]Call me names if it [F]makes you feel [C]better

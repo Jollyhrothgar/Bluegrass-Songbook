@@ -1,6 +1,6 @@
 {meta: title She's Not Crying Anymore}
 {meta: artist Billy Ray Cyrus}
-{meta: writer Buddy Cannon, Terry Chelton, Billy Ray Cyrus}
+{meta: composer Buddy Cannon, Terry Chelton, Billy Ray Cyrus}
 
 {start_of_verse: Verse 1}
 [C]She used to cry when I'd come home late

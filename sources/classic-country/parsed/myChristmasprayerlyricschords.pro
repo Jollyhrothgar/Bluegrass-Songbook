@@ -1,6 +1,6 @@
 {meta: title My Christmas Prayer}
 {meta: artist Bobby Vinton}
-{meta: writer Jerry Bresler and Lyn Duddy}
+{meta: composer Jerry Bresler and Lyn Duddy}
 
 {start_of_verse: Verse 1}
 [C]No Christmas gift could I [G7][Dm]bestow

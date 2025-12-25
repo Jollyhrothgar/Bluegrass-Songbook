@@ -1,6 +1,6 @@
 {meta: title Something Special}
 {meta: artist Mel Tillis}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]I've been a lot of places and I've seen a lot of [F]faces

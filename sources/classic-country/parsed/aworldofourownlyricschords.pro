@@ -1,6 +1,6 @@
 {meta: title A World Of Our Own}
 {meta: artist Sonny James}
-{meta: writer Tom Springfield}
+{meta: composer Tom Springfield}
 
 {start_of_verse: Verse 1}
 [C]Close the door light the light we're staying [F]home [C]tonight

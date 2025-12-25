@@ -1,6 +1,6 @@
 {meta: title Ain't It Easy}
 {meta: artist Johnny Bush}
-{meta: writer Charlie Craig and Moe Lytle}
+{meta: composer Charlie Craig and Moe Lytle}
 
 {start_of_verse: Verse 1}
 [C]She swears she don't but I [Em]know she does

@@ -1,6 +1,6 @@
 {meta: title Paying For That Back Street Affair}
 {meta: artist Kitty Wells}
-{meta: writer Billy Wallace and Jimmy Rule}
+{meta: composer Billy Wallace and Jimmy Rule}
 
 {start_of_verse: Verse 1}
 [G]Yes I thought that you were true when I [C]fell in love with [G]you

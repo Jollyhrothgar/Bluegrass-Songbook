@@ -1,6 +1,6 @@
 {meta: title Automatic Mama}
 {meta: artist Don Gibson}
-{meta: writer Fred Stryker, Margery Claire}
+{meta: composer Fred Stryker, Margery Claire}
 
 {start_of_verse: Verse 1}
 [G]I filled the house with gadgets so you’d never have to [D7]slave

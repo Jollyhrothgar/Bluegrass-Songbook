@@ -1,6 +1,6 @@
 {meta: title Sweet Misery}
 {meta: artist Jimmy Dean}
-{meta: writer Jan Cruthfield and Wayne P. Walker}
+{meta: composer Jan Cruthfield and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]When I'm lonely I think about [Am]someone 

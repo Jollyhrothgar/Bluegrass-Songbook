@@ -1,6 +1,6 @@
 {meta: title Bouquet of Roses Lyrics Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Steve Nelson and Bob Hillard}
+{meta: composer Steve Nelson and Bob Hillard}
 
 {start_of_verse: Verse 1}
 [C]I'm sending you a big [G7]bouquet of [C]roses

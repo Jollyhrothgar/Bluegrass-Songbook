@@ -1,6 +1,6 @@
 {meta: title Hey Miss Ruby}
 {meta: artist Conway Twitty}
-{meta: writer Conway Twitty and Jack Nance}
+{meta: composer Conway Twitty and Jack Nance}
 
 {start_of_verse: Verse 1}
 [G]I got a gal Miss Ruby is her name (Ruby Ruby hey Miss Ruby)

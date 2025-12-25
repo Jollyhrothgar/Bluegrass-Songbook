@@ -1,6 +1,6 @@
 {meta: title The Great Speckled Bird}
 {meta: artist Johnny Cash}
-{meta: writer Roy Acuff}
+{meta: composer Roy Acuff}
 
 {start_of_verse: Verse 1}
 [G]What a beautiful [G7]thought I am [C]thinking

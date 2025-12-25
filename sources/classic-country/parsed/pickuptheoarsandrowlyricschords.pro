@@ -1,6 +1,6 @@
 {meta: title Pick Up The Oars And Row}
 {meta: artist Randy Travis}
-{meta: writer Jamie O'Hara}
+{meta: composer Jamie O'Hara}
 
 {start_of_verse: Verse 1}
 [C]What good does it do to hold onto 

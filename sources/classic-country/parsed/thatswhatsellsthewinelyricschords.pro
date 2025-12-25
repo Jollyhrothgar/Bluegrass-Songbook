@@ -1,6 +1,6 @@
 {meta: title That's What Sells The Wine}
 {meta: artist Hank Thompson}
-{meta: writer Marshall T. Massy and Gabe Tucker}
+{meta: composer Marshall T. Massy and Gabe Tucker}
 
 {start_of_verse: Verse 1}
 [G]She sits alone at a [D7]table  stares into a glass of [G]wine

@@ -1,6 +1,6 @@
 {meta: title Faults And All}
 {meta: artist George Strait}
-{meta: writer Carl Perkins}
+{meta: composer Carl Perkins}
 
 {start_of_verse: Verse 1}
 [C]Not so very long from now she'll be known all over town

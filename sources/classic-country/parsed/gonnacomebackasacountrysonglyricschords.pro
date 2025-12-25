@@ -1,6 +1,6 @@
 {meta: title Gonna Come Back As A Country Song}
 {meta: artist Alan Jackson}
-{meta: writer Terry McBride and Chris Stapleton}
+{meta: composer Terry McBride and Chris Stapleton}
 
 {start_of_verse: Verse 1}
 [G]Let me just say for the sake of conversation [D7]

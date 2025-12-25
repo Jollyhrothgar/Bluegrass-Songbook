@@ -1,6 +1,6 @@
 {meta: title Dream Of Me}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Buddy Cannon, Jimmy D Null, Raleigh J Squires}
+{meta: composer Buddy Cannon, Jimmy D Null, Raleigh J Squires}
 
 {start_of_verse: Verse 1}
 [G]My life on the road girl has [C]always been hard on me and [G]you

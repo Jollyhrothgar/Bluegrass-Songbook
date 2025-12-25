@@ -1,6 +1,6 @@
 {meta: title Ladies Love}
 {meta: artist Lee Greenwood}
-{meta: writer Pat Mcmanus and Wilson Bomar}
+{meta: composer Pat Mcmanus and Wilson Bomar}
 
 {start_of_verse: Verse 1}
 [G]I was coming of age old enough to under[D7]stand

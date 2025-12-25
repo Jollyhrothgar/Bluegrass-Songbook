@@ -1,6 +1,6 @@
 {meta: title Teenage Wedding}
 {meta: artist Mel Tillis}
-{meta: writer Wayne P. Walker and Mel Tillis}
+{meta: composer Wayne P. Walker and Mel Tillis}
 
 {start_of_verse: Verse 1}
 [G]Rosalie's gonna get married [C]papa's gonna be sur[G]prised

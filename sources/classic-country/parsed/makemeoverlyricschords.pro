@@ -1,6 +1,6 @@
 {meta: title Make Me Over}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G]Change of our [C]plans put my [G]life in your [D7]hands I’m a [G]cake you can bake

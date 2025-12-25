@@ -1,6 +1,6 @@
 {meta: title Sparkling Brown Eyes}
 {meta: artist Wilburn Brothers}
-{meta: writer Billy Cox [3/4 time]}
+{meta: composer Billy Cox [3/4 time]}
 
 {start_of_verse: Verse 1}
 [G]There's a ramshackle shack in old [C]Caroline             

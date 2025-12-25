@@ -1,6 +1,6 @@
 {meta: title Just Two Strangers Passing In The Night}
 {meta: artist Mel Tillis}
-{meta: writer Kent Westberry and Hal Harbour}
+{meta: composer Kent Westberry and Hal Harbour}
 
 {start_of_verse: Verse 1}
 [G7]Here we [C]are for [G7]one night [C]only 

@@ -1,6 +1,6 @@
 {meta: title Suspicion}
 {meta: artist Terry Stafford}
-{meta: writer Doc Pomus, Jerome Doc Pomus, Mort Shuman}
+{meta: composer Doc Pomus, Jerome Doc Pomus, Mort Shuman}
 
 {start_of_verse: Verse 1}
 [C]Every time you kiss me I’m still not certain that you love [Dm]me

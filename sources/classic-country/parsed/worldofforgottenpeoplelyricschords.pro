@@ -1,6 +1,6 @@
 {meta: title World Of Forgotten People}
 {meta: artist George Jones}
-{meta: writer Loretta Lynn}
+{meta: composer Loretta Lynn}
 
 {start_of_verse: Verse 1}
 [G]I live in a world [C]world of [G]forgotten [C]people

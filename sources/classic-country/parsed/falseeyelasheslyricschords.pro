@@ -1,6 +1,6 @@
 {meta: title False Eyelashes}
 {meta: artist Dolly Parton}
-{meta: writer Bob Tubert and Demetriss Tapp}
+{meta: composer Bob Tubert and Demetriss Tapp}
 
 {start_of_verse: Verse 1}
 [C]Folks back home think I'm a star now 

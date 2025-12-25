@@ -1,6 +1,6 @@
 {meta: title Imagine That}
 {meta: artist Patsy Cline}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]Imagine me still loving [C7]you

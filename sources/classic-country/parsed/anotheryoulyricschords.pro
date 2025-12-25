@@ -1,6 +1,6 @@
 {meta: title Another You}
 {meta: artist Johnny Tillotson}
-{meta: writer Johnny Tillotson and Lucille Cosenza}
+{meta: composer Johnny Tillotson and Lucille Cosenza}
 
 {start_of_verse: Verse 1}
 [G]I know there'll never ever [D7]be another [G]you

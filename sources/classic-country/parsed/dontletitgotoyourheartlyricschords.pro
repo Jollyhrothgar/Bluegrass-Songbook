@@ -1,6 +1,6 @@
 {meta: title Don't Let It Go To Your Heart}
 {meta: artist Conway Twitty}
-{meta: writer Conway Twitty and Joe Lewis}
+{meta: composer Conway Twitty and Joe Lewis}
 
 {start_of_verse: Verse 1}
 [C]So she smiled at you when you saw her today

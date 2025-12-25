@@ -1,6 +1,6 @@
 {meta: title Carried Away}
 {meta: artist Statler Brothers}
-{meta: writer Lew DeWitt}
+{meta: composer Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [C]When I first met [G7]Becky at the home of a mutual friend

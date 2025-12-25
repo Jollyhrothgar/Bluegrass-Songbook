@@ -1,6 +1,6 @@
 {meta: title Christmas In My Smokey Mountain Home}
 {meta: artist Bobby Bare}
-{meta: writer Brein Fisher and Andra Hamlin}
+{meta: composer Brein Fisher and Andra Hamlin}
 
 {start_of_verse: Verse 1}
 [C]Snow [F]covered cabin on the [C]hillside

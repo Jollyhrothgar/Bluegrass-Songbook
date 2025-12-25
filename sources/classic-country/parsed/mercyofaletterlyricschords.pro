@@ -1,6 +1,6 @@
 {meta: title Mercy Of A Letter}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]This house is filled with [A7]memories 

@@ -1,6 +1,6 @@
 {meta: title Little Glass Of Wine}
 {meta: artist The Stanley Brothers}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]Come little girl let's go get married

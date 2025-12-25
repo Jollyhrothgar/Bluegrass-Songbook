@@ -1,6 +1,6 @@
 {meta: title He Walked On Water}
 {meta: artist Randy Travis}
-{meta: writer Allen Shamblin}
+{meta: composer Allen Shamblin}
 
 {start_of_verse: Verse 1}
 [C]He wore starched white shirts buttoned at the [F]neck

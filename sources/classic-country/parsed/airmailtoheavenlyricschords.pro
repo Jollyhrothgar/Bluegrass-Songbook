@@ -1,6 +1,6 @@
 {meta: title Airmail to Heaven}
 {meta: artist Carl Smith}
-{meta: writer Kent Westberry}
+{meta: composer Kent Westberry}
 
 {start_of_verse: Verse 1}
 {comment: C}

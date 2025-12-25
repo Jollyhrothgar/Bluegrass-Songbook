@@ -1,6 +1,6 @@
 {meta: title It Only Hurts When I Cry ,}
 {meta: artist Dwight Yoakam}
-{meta: writer Dwight Yoakam and Roger Miller}
+{meta: composer Dwight Yoakam and Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]The only time I feel the [C]pain

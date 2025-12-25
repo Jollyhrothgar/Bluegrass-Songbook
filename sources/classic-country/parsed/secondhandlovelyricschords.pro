@@ -1,6 +1,6 @@
 {meta: title Second Hand Love}
 {meta: artist Connie Francis}
-{meta: writer Phil Spector and Hank Hunter}
+{meta: composer Phil Spector and Hank Hunter}
 
 {start_of_verse: Verse 1}
 [C]They tell me that there's someone else [G7]you really truly love

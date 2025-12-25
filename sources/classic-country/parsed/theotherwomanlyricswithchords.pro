@@ -1,6 +1,6 @@
 {meta: title The Other Woman}
 {meta: artist Jean Shepard}
-{meta: writer Beverly Small}
+{meta: composer Beverly Small}
 
 {start_of_verse: Verse 1}
 [G]I'm the other woman you've heard [D7]about

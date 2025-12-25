@@ -1,6 +1,6 @@
 {meta: title If You Were Mine}
 {meta: artist Wilburn Brothers}
-{meta: writer Damon Black}
+{meta: composer Damon Black}
 
 {start_of_verse: Verse 1}
 [G]I can't keep from [C]saying so [G]you of all the [C]girls I know

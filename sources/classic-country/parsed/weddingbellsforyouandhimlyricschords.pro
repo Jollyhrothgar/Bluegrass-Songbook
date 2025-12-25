@@ -1,6 +1,6 @@
 {meta: title Wedding Bells For You And Him}
 {meta: artist Stonewall Jackson}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]If you’ve really found another

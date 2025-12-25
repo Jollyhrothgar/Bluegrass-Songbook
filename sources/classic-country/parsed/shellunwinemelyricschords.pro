@@ -1,6 +1,6 @@
 {meta: title She'll Unwine Me}
 {meta: artist Johnny Paycheck}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [C]I swore I'd leave the [F]world of wine [C]behind me

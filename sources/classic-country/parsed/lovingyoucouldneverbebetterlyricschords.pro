@@ -1,6 +1,6 @@
 {meta: title Loving You Could Never Be Better}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery, Betty Tate, Charlene Montgomery}
+{meta: composer Earl Montgomery, Betty Tate, Charlene Montgomery}
 
 {start_of_verse: Verse 1}
 [C]Well here we are [Em]again tonight a[F]lone just us [C]two

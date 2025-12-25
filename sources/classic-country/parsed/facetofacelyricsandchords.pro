@@ -1,6 +1,6 @@
 {meta: title Face To Face}
 {meta: artist Alabama}
-{meta: writer Randy Owen}
+{meta: composer Randy Owen}
 
 {start_of_verse: Verse 1}
 [C]Run your fingers [G]through my hair and [C]softly kiss my [G]lips

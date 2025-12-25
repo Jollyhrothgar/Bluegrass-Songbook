@@ -1,6 +1,6 @@
 {meta: title My Dear Companion}
 {meta: artist Emmylou Harris}
-{meta: writer Jean Ritchie}
+{meta: composer Jean Ritchie}
 
 {start_of_verse: Verse 1}
 [C]Oh have you seen my dear [F]companion

@@ -1,6 +1,6 @@
 {meta: title I'd Rather Loan You Out}
 {meta: artist Roy Drusky}
-{meta: writer Vic McAlpin, Roy Drusky, Lester Vanadore}
+{meta: composer Vic McAlpin, Roy Drusky, Lester Vanadore}
 
 {start_of_verse: Verse 1}
 [G]I'm alone while you're somewhere

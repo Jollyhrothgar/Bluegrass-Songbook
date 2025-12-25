@@ -1,6 +1,6 @@
 {meta: title Rose Of Old Pawnee and chord}
 {meta: artist Marty Robbins}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]My rose of ol' Pawnee  a [F]flower of the [C]dawn

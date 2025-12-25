@@ -1,6 +1,6 @@
 {meta: title Love Makes The World Go Round}
 {meta: artist The Everly Brothers}
-{meta: writer Bob Merrill}
+{meta: composer Bob Merrill}
 
 {start_of_verse: Verse 1}
 [C]Love makes the world go round

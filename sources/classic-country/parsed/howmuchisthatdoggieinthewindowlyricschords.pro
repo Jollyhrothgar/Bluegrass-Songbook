@@ -1,6 +1,6 @@
 {meta: title How Much Is That Doggie In The Window}
 {meta: artist Patti Page}
-{meta: writer Bob Merrill}
+{meta: composer Bob Merrill}
 
 {start_of_verse: Verse 1}
 [C]How much is that doggie in the [G7]window

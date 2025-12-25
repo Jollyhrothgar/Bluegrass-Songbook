@@ -1,6 +1,6 @@
 {meta: title More And More}
 {meta: artist Webb Pierce}
-{meta: writer Merle Kilgore}
+{meta: composer Merle Kilgore}
 
 {start_of_verse: Verse 1}
 [C]More And More I'm forgettin' the [F]past

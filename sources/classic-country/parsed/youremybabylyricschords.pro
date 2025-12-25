@@ -1,6 +1,6 @@
 {meta: title You're My Baby}
 {meta: artist Johnny Horton}
-{meta: writer Claude King}
+{meta: composer Claude King}
 
 {start_of_verse: Verse 1}
 [F]You’re my baby [C]hold me close

@@ -1,6 +1,6 @@
 {meta: title Over The Sunset Mountains By and By}
 {meta: artist The Statler Brothers}
-{meta: writer John W. Peterson}
+{meta: composer John W. Peterson}
 
 {start_of_verse: Verse 1}
 Over The Sunset Mountains

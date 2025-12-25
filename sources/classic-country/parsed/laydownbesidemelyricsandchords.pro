@@ -1,6 +1,6 @@
 {meta: title Lay Down Beside Me}
 {meta: artist Kenny Rogers}
-{meta: writer Don Williams}
+{meta: composer Don Williams}
 
 {start_of_verse: Verse 1}
 [G]I've spent my [C]life  [D7]looking for [G]you

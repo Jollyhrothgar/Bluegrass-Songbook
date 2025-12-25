@@ -1,6 +1,6 @@
 {meta: title Back Home Again In Indiana}
 {meta: artist Bob Wills}
-{meta: writer James F. Hanley and Ballard MacDonald}
+{meta: composer James F. Hanley and Ballard MacDonald}
 
 {start_of_verse: Verse 1}
 [C]Back home [A7]again in Indiana [D7]and it [G7]seems that I can [C]see

@@ -1,6 +1,6 @@
 {meta: title Do Not Disturb}
 {meta: artist Elvis Presley}
-{meta: writer Bill Giant, Bernie Baum, Florence Kaye}
+{meta: composer Bill Giant, Bernie Baum, Florence Kaye}
 
 {start_of_verse: Verse 1}
 [G]Let's take the [C]phone off the [D]hook[G] 

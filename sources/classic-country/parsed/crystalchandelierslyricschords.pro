@@ -1,6 +1,6 @@
 {meta: title Crystal Chandeliers}
 {meta: artist Charlie Pride}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [C]All the crystal chandeliers light up the paintings on your [G7]wall

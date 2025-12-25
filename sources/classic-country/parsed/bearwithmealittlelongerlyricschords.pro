@@ -1,6 +1,6 @@
 {meta: title Bear With Me A Little Longer}
 {meta: artist Billy Walker}
-{meta: writer Darrell Glenn}
+{meta: composer Darrell Glenn}
 
 {start_of_verse: Verse 1}
 [C]You say you're tired of struggling along 

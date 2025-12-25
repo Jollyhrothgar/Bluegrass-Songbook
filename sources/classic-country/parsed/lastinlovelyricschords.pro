@@ -1,6 +1,6 @@
 {meta: title Last In Love}
 {meta: artist George Strait}
-{meta: writer John D. Souther and Glenn Frey}
+{meta: composer John D. Souther and Glenn Frey}
 
 {start_of_verse: Verse 1}
 [C]Blues out[D7]side my [Em]door [E7]

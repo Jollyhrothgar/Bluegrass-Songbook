@@ -1,6 +1,6 @@
 {meta: title I Believe In Love}
 {meta: artist Stonewall Jackson}
-{meta: writer Stonewall Jackson and Juanita Jackson}
+{meta: composer Stonewall Jackson and Juanita Jackson}
 
 {start_of_verse: Verse 1}
 [C]I believe in love oh I believe in [G]love

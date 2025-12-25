@@ -1,6 +1,6 @@
 {meta: title Remembered By Someone}
 {meta: artist Carl Smith}
-{meta: writer Gene Thomas}
+{meta: composer Gene Thomas}
 
 {start_of_verse: Verse 1}
 [G]I hope you have good times to [D7]help see you through

@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Stay Awake Tonight}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew, Tommy Blake, Charles Jiles, W.S. Stevenson}
+{meta: composer Carl Belew, Tommy Blake, Charles Jiles, W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [C]Tonight I called you on the phone 

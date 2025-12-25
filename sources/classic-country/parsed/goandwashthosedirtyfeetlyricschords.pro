@@ -1,6 +1,6 @@
 {meta: title Go And Wash Those Dirty Feet}
 {meta: artist Johnny Horton}
-{meta: writer Fred Horton and Johnny Horton}
+{meta: composer Fred Horton and Johnny Horton}
 
 {start_of_verse: Verse 1}
 [C]When I was a little boy [G7]bare-footed I'd like to [C]go

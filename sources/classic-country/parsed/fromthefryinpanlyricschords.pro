@@ -1,6 +1,6 @@
 {meta: title From The Fryin' Pan}
 {meta: artist Ricky Van Shelton}
-{meta: writer Monty Criswell and Sam Gay}
+{meta: composer Monty Criswell and Sam Gay}
 
 {start_of_verse: Verse 1}
 [C]Front porch a-swingin' cusin' the mosquitos

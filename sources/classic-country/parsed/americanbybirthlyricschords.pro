@@ -1,6 +1,6 @@
 {meta: title American By Birth}
 {meta: artist Waylon Jennings}
-{meta: writer Roger Wade}
+{meta: composer Roger Wade}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna go down on the creek bank gather all my people

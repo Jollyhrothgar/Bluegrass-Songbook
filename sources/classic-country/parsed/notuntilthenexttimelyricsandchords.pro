@@ -1,6 +1,6 @@
 {meta: title Not Until the Next Time}
 {meta: artist Jim Reeves}
-{meta: writer Gail Talley}
+{meta: composer Gail Talley}
 
 {start_of_verse: Verse 1}
 [C]Not until the next time will I [G]cry all night for you

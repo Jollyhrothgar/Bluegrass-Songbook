@@ -1,6 +1,6 @@
 {meta: title Chattanooga Choo Choo}
 {meta: artist Hank Snow}
-{meta: writer Mack Gordon &amp; Harry Warren}
+{meta: composer Mack Gordon &amp; Harry Warren}
 
 {start_of_verse: Verse 1}
 [G]Pardon me boy is [D7]this the [C]Chattanooga [G]Choo Choo

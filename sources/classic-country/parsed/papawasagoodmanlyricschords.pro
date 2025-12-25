@@ -1,6 +1,6 @@
 {meta: title Papa Was A Good Man}
 {meta: artist Charlie Rich}
-{meta: writer Hal Bynum}
+{meta: composer Hal Bynum}
 
 {start_of_verse: Verse 1}
 [C]It rained all the way to Cinci[G7]nnati

@@ -1,6 +1,6 @@
 {meta: title From Saturday Night To Sunday Quiet}
 {meta: artist Barbara Mandrell}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]We worked all week long

@@ -1,6 +1,6 @@
 {meta: title 21 Miles To Lake Charles Prison}
 {meta: artist Johnny Paycheck}
-{meta: writer Aubrey Mayhew}
+{meta: composer Aubrey Mayhew}
 
 {start_of_verse: Verse 1}
 [C]Oh momma I’m [F]so thankful you [C]came

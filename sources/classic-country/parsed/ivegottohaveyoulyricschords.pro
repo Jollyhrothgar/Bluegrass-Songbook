@@ -1,6 +1,6 @@
 {meta: title I've Got To Have You}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [G]You came smilin' softly and you [F]moved in easy as a dreamer into [G]my world

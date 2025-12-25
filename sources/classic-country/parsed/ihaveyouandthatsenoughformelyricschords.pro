@@ -1,6 +1,6 @@
 {meta: title I Have You And That's Enough For Me}
 {meta: artist Hank Snow}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [G]When lights are low and we're together

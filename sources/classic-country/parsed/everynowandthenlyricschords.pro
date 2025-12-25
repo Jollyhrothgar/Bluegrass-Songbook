@@ -1,6 +1,6 @@
 {meta: title Every Now And Then}
 {meta: artist Mel Tillis}
-{meta: writer Buddy Cannon}
+{meta: composer Buddy Cannon}
 
 {start_of_verse: Verse 1}
 [C]A list of things that I would do to [D7]get you back again

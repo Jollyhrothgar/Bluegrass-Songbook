@@ -1,6 +1,6 @@
 {meta: title Rainbows And Roses}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes and Rayburn Anthony}
+{meta: composer Max D. Barnes and Rayburn Anthony}
 
 {start_of_verse: Verse 1}
 [C]You’re as warm as you are [G7]pretty

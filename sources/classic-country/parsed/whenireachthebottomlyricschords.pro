@@ -1,6 +1,6 @@
 {meta: title When I Reach The Bottom}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Lorene Allen}
+{meta: composer Loretta Lynn and Lorene Allen}
 
 {start_of_verse: Verse 1}
 [C]You want me to come down to your level 

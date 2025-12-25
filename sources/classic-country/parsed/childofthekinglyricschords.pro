@@ -1,6 +1,6 @@
 {meta: title Child Of The King}
 {meta: artist Skeeter Davis}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Once I was clothed in the rags of my sin

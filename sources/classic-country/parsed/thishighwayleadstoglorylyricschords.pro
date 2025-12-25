@@ -1,6 +1,6 @@
 {meta: title This Highway Leads To Glory}
 {meta: artist Charley Pride}
-{meta: writer Lassaye Holmes}
+{meta: composer Lassaye Holmes}
 
 {start_of_verse: Verse 1}
 [G]I remember when I  [C]was a little [G]boy

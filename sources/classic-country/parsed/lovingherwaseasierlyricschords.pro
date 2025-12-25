@@ -1,6 +1,6 @@
 {meta: title Loving Her Was Easier}
 {meta: artist Bobby Bare}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [C]I have seen the morning burning [F]golden on the mountain in the [C]sky

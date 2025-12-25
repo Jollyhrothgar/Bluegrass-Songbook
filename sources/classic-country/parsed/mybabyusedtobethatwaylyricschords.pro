@@ -1,6 +1,6 @@
 {meta: title My Baby Used To Be That Way}
 {meta: artist Charlie Walker}
-{meta: writer Johnny Carver}
+{meta: composer Johnny Carver}
 
 {start_of_verse: Verse 1}
 [G]See that woman [C]sitting [G]there bright light shining in [C]her [G]hair

@@ -1,6 +1,6 @@
 {meta: title Carroll County Accident}
 {meta: artist Porter Wagoner}
-{meta: writer Bob Ferguson}
+{meta: composer Bob Ferguson}
 
 {start_of_verse: Verse 1}
 [C]Carroll County's pointed out as [G7]kind of square

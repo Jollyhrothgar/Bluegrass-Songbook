@@ -1,6 +1,6 @@
 {meta: title Night Train To Memphis}
 {meta: artist Jimmy Dean}
-{meta: writer Marvin Hughes/Beasley Smith/Owen Bradley}
+{meta: composer Marvin Hughes/Beasley Smith/Owen Bradley}
 
 {start_of_verse: Verse 1}
 [C]Take that Night Train To Memphis 

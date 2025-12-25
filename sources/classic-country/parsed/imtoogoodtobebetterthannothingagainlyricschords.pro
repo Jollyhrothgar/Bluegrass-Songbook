@@ -1,6 +1,6 @@
 {meta: title I'm Too Good To Be Better Than Nothing Again}
 {meta: artist Leona Williams}
-{meta: writer Julie Jones, Eddie London, Leona Williams}
+{meta: composer Julie Jones, Eddie London, Leona Williams}
 
 {start_of_verse: Verse 1}
 [G]She turned you down again tonight that’s why you’re [F]call[C]ing

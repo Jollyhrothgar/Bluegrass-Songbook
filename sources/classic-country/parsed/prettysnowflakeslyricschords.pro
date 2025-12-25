@@ -1,6 +1,6 @@
 {meta: title Pretty Snowflakes}
 {meta: artist Patti Page}
-{meta: writer Herbert Plattner, Luigi Creatore, Hugo Peretti}
+{meta: composer Herbert Plattner, Luigi Creatore, Hugo Peretti}
 
 {start_of_verse: Verse 1}
 [G]It's winter it's winter the [Am]snow fell last [D7]night

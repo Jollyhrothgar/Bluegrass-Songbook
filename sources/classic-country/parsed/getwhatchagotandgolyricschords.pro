@@ -1,6 +1,6 @@
 {meta: title Get What'cha Got And Go}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn, Ron Williams, Leona Williams}
+{meta: composer Loretta Lynn, Ron Williams, Leona Williams}
 
 {start_of_verse: Verse 1}
 [C]A pretty boy Charlie's the name that you've been a given

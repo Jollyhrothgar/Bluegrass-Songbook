@@ -1,6 +1,6 @@
 {meta: title You Don't Have To Be Present To Win}
 {meta: artist Lefty Frizzell}
-{meta: writer Joyce Allsup}
+{meta: composer Joyce Allsup}
 
 {start_of_verse: Verse 1}
 [G]My chances are [D7]greater I [G]thought with him gone

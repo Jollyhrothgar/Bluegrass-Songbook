@@ -1,6 +1,6 @@
 {meta: title I Keep Putting Off Getting Over You}
 {meta: artist Don Williams}
-{meta: writer Wayland Holyfield}
+{meta: composer Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [Am]I keep your [C]picture on my [Am]dresser

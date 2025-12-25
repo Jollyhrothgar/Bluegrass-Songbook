@@ -1,6 +1,6 @@
 {meta: title Cotton Jenny}
 {meta: artist Anne Murray}
-{meta: writer Gordon Lightfoot}
+{meta: composer Gordon Lightfoot}
 
 {start_of_verse: Verse 1}
 [C]There's a house on a hill by a [F]worn down weathered old [C]mill

@@ -1,6 +1,6 @@
 {meta: title Neon Row}
 {meta: artist George Strait}
-{meta: writer Donny Kees and Jimmy Jay}
+{meta: composer Donny Kees and Jimmy Jay}
 
 {start_of_verse: Verse 1}
 [G7]You've been [C]out again tonight [G7]with the girls out on the [C]town

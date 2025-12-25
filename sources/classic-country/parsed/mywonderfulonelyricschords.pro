@@ -1,6 +1,6 @@
 {meta: title My Wonderful One}
 {meta: artist Marty Robbins}
-{meta: writer Jimmy Sweeney}
+{meta: composer Jimmy Sweeney}
 
 {start_of_verse: Verse 1}
 [C]All the Islands are sad cause you're [G7]leaving me

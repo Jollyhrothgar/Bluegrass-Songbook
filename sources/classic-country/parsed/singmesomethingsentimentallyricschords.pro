@@ -1,6 +1,6 @@
 {meta: title Sing Me Something Sentimental}
 {meta: artist Hank Thompson}
-{meta: writer Martin D. Robinson}
+{meta: composer Martin D. Robinson}
 
 {start_of_verse: Verse 1}
 [G]Sing me something sentimental  make it [C]anything that’s [G]blue

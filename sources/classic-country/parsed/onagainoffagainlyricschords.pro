@@ -1,6 +1,6 @@
 {meta: title On Again Off Again}
 {meta: artist Tracy Byrd}
-{meta: writer Austin Cunningham and Gil Grand}
+{meta: composer Austin Cunningham and Gil Grand}
 
 {start_of_verse: Verse 1}
 [F]She locks him out but [G7]leaves the key 

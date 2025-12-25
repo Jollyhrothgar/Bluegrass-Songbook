@@ -1,6 +1,6 @@
 {meta: title Who's Sorry Now}
 {meta: artist Connie Francis}
-{meta: writer Ted Snyder, Bert Kalmar, Harry Ruby}
+{meta: composer Ted Snyder, Bert Kalmar, Harry Ruby}
 
 {start_of_verse: Verse 1}
 [C]Who's sorry now  Who's sorry [E7]now

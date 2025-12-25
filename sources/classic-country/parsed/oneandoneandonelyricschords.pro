@@ -1,6 +1,6 @@
 {meta: title One And One And One}
 {meta: artist Gene Watson}
-{meta: writer Buddy Cannon and John Northrup}
+{meta: composer Buddy Cannon and John Northrup}
 
 {start_of_verse: Verse 1}
 [G]The first time I laid eyes on you it was [C]love for me

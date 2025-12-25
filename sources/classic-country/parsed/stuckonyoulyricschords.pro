@@ -1,6 +1,6 @@
 {meta: title Stuck On You}
 {meta: artist Elvis Presley}
-{meta: writer Aaron Schroeder and Leslie McFarland}
+{meta: composer Aaron Schroeder and Leslie McFarland}
 
 {start_of_verse: Verse 1}
 [G]You can shake an apple off an apple tree

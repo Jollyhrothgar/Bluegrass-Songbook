@@ -1,6 +1,6 @@
 {meta: title God's Hands}
 {meta: artist The Oak Ridge Boys}
-{meta: writer David Reece}
+{meta: composer David Reece}
 
 {start_of_verse: Verse 1}
 [C]God's hands made the earth [G7]and [C]everything

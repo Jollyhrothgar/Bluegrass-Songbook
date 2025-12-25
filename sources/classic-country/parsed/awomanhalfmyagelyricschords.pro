@@ -1,6 +1,6 @@
 {meta: title A Woman Half My Age}
 {meta: artist Kitty Wells}
-{meta: writer Virginia Kennedy}
+{meta: composer Virginia Kennedy}
 
 {start_of_verse: Verse 1}
 [G]You say I've lost you to a woman half my age

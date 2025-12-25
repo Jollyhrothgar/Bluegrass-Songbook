@@ -1,6 +1,6 @@
 {meta: title Can't Say Goodbye}
 {meta: artist Russell Moore and IIIrd Tyme Out}
-{meta: writer Greg Luck}
+{meta: composer Greg Luck}
 
 {start_of_verse: Verse 1}
 [G]I just read your [C]letter of good[G]bye

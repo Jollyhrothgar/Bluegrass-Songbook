@@ -1,6 +1,6 @@
 {meta: title Walking And Humming}
 {meta: artist Ferlin Husky}
-{meta: writer Clyde Wilson}
+{meta: composer Clyde Wilson}
 
 {start_of_verse: Verse 1}
 [C]I feel so alone as I [F]walk from my [C]home

@@ -1,6 +1,6 @@
 {meta: title Workin' Class Hero}
 {meta: artist Alan Jackson}
-{meta: writer Don Sampson and Alan Jackson}
+{meta: composer Don Sampson and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]A callused right hand holds a [F]shiny gold [C]watch

@@ -1,6 +1,6 @@
 {meta: title The Middle Of Nowhere}
 {meta: artist George Strait}
-{meta: writer Shawn Camp and John S. Sherrill}
+{meta: composer Shawn Camp and John S. Sherrill}
 
 {start_of_verse: Verse 1}
 [C]Way out here you can see for [G7]miles

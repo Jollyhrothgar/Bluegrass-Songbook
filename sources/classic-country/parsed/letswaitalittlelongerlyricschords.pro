@@ -1,6 +1,6 @@
 {meta: title Let's Wait A Little Longer}
 {meta: artist Ernest Tubb}
-{meta: writer Billy Sherrill and Curly Putman}
+{meta: composer Billy Sherrill and Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]I can see you're not happy the way you've been actin'

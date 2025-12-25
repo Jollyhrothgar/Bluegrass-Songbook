@@ -1,6 +1,6 @@
 {meta: title You Don't Seem To Miss Me}
 {meta: artist Patty Loveless}
-{meta: writer Jim Lauderdale}
+{meta: composer Jim Lauderdale}
 
 {start_of_verse: Verse 1}
 [C]It's a long way off from [F]where I should be [C]going

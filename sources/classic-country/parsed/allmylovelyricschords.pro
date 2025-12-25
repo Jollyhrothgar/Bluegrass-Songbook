@@ -1,6 +1,6 @@
 {meta: title All My Love}
 {meta: artist Mel Tillis}
-{meta: writer Ruth Durand, Henri Contet, Mitchell Parish}
+{meta: composer Ruth Durand, Henri Contet, Mitchell Parish}
 
 {start_of_verse: Verse 1}
 [C]I can’t give you [G7]silver  I [F]can’t give you [C]gold

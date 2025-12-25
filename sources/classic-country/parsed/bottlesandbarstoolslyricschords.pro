@@ -1,6 +1,6 @@
 {meta: title Bottles And Barstools}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Goodbye was a very easy [F]word for you to [D7]say

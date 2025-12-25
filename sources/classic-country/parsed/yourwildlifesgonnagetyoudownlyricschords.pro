@@ -1,6 +1,6 @@
 {meta: title Your Wild Life's Gonna Get You Down}
 {meta: artist Kitty Wells}
-{meta: writer Bob Gallion}
+{meta: composer Bob Gallion}
 
 {start_of_verse: Verse 1}
 [C]You don't care what kind of life you [G7]live

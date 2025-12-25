@@ -1,6 +1,6 @@
 {meta: title Wait Till The Sun Shines Nellie}
 {meta: artist Buddy Holly}
-{meta: writer Andrew B. Sterling and Von Tilzer}
+{meta: composer Andrew B. Sterling and Von Tilzer}
 
 {start_of_verse: Verse 1}
 [G]Wait till the [C]sun shines [G]Nellie

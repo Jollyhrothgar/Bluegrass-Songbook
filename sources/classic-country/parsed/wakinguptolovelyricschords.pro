@@ -1,6 +1,6 @@
 {meta: title Waking Up To Love}
 {meta: artist Jimmy Dean}
-{meta: writer Bob Crewe and Kenny Nolan}
+{meta: composer Bob Crewe and Kenny Nolan}
 
 {start_of_verse: Verse 1}
 [G7]I wanna [C]be waking up to love with [F]you

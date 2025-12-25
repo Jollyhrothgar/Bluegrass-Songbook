@@ -1,6 +1,6 @@
 {meta: title It's About Time}
 {meta: artist Tracy Byrd}
-{meta: writer Curtis Wright and Jim Collins}
+{meta: composer Curtis Wright and Jim Collins}
 
 {start_of_verse: Verse 1}
 [C]Another fourteen hour day crisis solved deadline made

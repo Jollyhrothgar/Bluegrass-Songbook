@@ -1,6 +1,6 @@
 {meta: title I’ll Love You Till The Day I Die}
 {meta: artist Kitty Wells}
-{meta: writer Marty Robbins}
+{meta: composer Marty Robbins}
 
 {start_of_verse: Verse 1}
 [C]Alone here at home while you're [F]free to run and roam

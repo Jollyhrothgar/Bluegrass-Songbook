@@ -1,6 +1,6 @@
 {meta: title Another Lonesome Morning}
 {meta: artist Emmylou Harris}
-{meta: writer Clinton Codack and Wendy Special}
+{meta: composer Clinton Codack and Wendy Special}
 
 {start_of_verse: Verse 1}
 [G]Another [D7]lonesome [G]morning

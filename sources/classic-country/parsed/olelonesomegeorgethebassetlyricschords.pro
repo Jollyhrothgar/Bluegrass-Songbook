@@ -1,6 +1,6 @@
 {meta: title Ole Lonesome George The Basset}
 {meta: artist Tom T. Hall}
-{meta: writer Dixie Hall}
+{meta: composer Dixie Hall}
 
 {start_of_verse: Verse 1}
 [G]Ole lonesome George the basset lived in [C]Brentwood Tenne[G]ssee

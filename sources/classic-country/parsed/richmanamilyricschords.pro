@@ -1,6 +1,6 @@
 {meta: title Rich Man Am I}
 {meta: artist Hank Snow}
-{meta: writer Lowell Lundstrom}
+{meta: composer Lowell Lundstrom}
 
 {start_of_verse: Verse 1}
 [G]I found something that [D7]money can't [G]buy

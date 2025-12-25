@@ -1,6 +1,6 @@
 {meta: title Lorena}
 {meta: artist Johnny Cash}
-{meta: writer Charlie Williams}
+{meta: composer Charlie Williams}
 
 {start_of_verse: Verse 1}
 [G]The years creep slowly by [C]Lorena 

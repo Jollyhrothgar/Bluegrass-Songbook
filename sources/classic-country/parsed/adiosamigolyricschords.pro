@@ -1,6 +1,6 @@
 {meta: title Adios Amigo}
 {meta: artist Jim Reeves}
-{meta: writer Jerry Livingston and Ralph Freed}
+{meta: composer Jerry Livingston and Ralph Freed}
 
 {start_of_verse: Verse 1}
 [G]Adios amigo adios my [D7]friend

@@ -1,6 +1,6 @@
 {meta: title Nothing From Nothing}
 {meta: artist Brenda Lee}
-{meta: writer Billy Preston and Bruce Fisher}
+{meta: composer Billy Preston and Bruce Fisher}
 
 {start_of_verse: Verse 1}
 [C]Nothing from [E7]nothing leaves [Am]nothing

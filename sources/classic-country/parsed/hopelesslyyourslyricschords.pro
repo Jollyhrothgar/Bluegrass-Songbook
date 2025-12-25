@@ -1,6 +1,6 @@
 {meta: title Hopelessly Yours}
 {meta: artist George Jones}
-{meta: writer Don Cook, Curly Putman, Keith Whitley}
+{meta: composer Don Cook, Curly Putman, Keith Whitley}
 
 {start_of_verse: Verse 1}
 [G]I love you I hate [D7]you forget you [C]but I'm afraid [D7]to

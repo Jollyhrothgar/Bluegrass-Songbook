@@ -1,6 +1,6 @@
 {meta: title Stranger In My Mirror}
 {meta: artist Randy Travis}
-{meta: writer Kim Williams and Skip Ewing}
+{meta: composer Kim Williams and Skip Ewing}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]stranger in my mirror 

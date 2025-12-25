@@ -1,6 +1,6 @@
 {meta: title Memories Of Mother And Dad}
 {meta: artist Ricky Skaggs}
-{meta: writer Albert Price}
+{meta: composer Albert Price}
 
 {start_of_verse: Verse 1}
 [C]Mother left this world of [F]sor[C]row

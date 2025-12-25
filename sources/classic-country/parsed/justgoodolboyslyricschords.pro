@@ -1,6 +1,6 @@
 {meta: title Just Good Ol' Boys}
 {meta: artist Moe Bandy}
-{meta: writer Ansley Fleetwood}
+{meta: composer Ansley Fleetwood}
 
 {start_of_verse: Verse 1}
 [G]Well I've been kicked out might near every bar around

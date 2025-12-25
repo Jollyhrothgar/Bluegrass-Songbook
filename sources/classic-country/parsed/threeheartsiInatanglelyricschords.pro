@@ -1,6 +1,6 @@
 {meta: title Three Hearts In A Tangle}
 {meta: artist Roy Drusky}
-{meta: writer Ray Pennington, Sonny Thompson, Ray Starr}
+{meta: composer Ray Pennington, Sonny Thompson, Ray Starr}
 
 {start_of_verse: Verse 1}
 [C]Three hearts in a [F]tangle

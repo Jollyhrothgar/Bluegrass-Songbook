@@ -1,6 +1,6 @@
 {meta: title When Mama Sang}
 {meta: artist George Jones}
-{meta: writer Bob Warren and Danny Walls}
+{meta: composer Bob Warren and Danny Walls}
 
 {start_of_verse: Verse 1}
 [G]Mama didn't [C]have special [G]trainin'

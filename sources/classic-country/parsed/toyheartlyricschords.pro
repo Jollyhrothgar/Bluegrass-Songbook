@@ -1,6 +1,6 @@
 {meta: title Toy Heart}
 {meta: artist Ricky Skaggs}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [C]Darling you toyed with toy heart

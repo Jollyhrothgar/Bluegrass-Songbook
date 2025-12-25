@@ -1,6 +1,6 @@
 {meta: title I Find Jesus}
 {meta: artist the Nitty Gritty Dirt Band}
-{meta: writer Jimmy Ibbotson}
+{meta: composer Jimmy Ibbotson}
 
 {start_of_verse: Verse 1}
 [G]I walk in silence when [C]He [G]comes

@@ -1,6 +1,6 @@
 {meta: title The Morning After}
 {meta: artist Jerry Wallace}
-{meta: writer Jean Chapel}
+{meta: composer Jean Chapel}
 
 {start_of_verse: Verse 1}
 [C]Distant echoes of sounds of laugh[G7]ter

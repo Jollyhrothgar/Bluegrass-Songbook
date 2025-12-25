@@ -1,6 +1,6 @@
 {meta: title Take Me Back To My Boots And Saddle}
 {meta: artist Gene Autry}
-{meta: writer Walter Samuels, Teddy Powell, Leonard Whitcup}
+{meta: composer Walter Samuels, Teddy Powell, Leonard Whitcup}
 
 {start_of_verse: Verse 1}
 [C]Take me back to my [G7]boots and [C]saddle

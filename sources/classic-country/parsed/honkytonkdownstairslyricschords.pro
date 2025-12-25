@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Downstairs}
 {meta: artist George Strait}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Well it won't be long now un[C]til that ol' sun goes [G]down

@@ -1,6 +1,6 @@
 {meta: title I Don't Mind Goin' Under}
 {meta: artist Charlie Walker}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]I guess you heard about my fling with [G7]Ruby by now

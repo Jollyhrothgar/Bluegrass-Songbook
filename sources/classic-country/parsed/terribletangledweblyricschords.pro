@@ -1,6 +1,6 @@
 {meta: title Terrible Tangled Web}
 {meta: artist Ray Price}
-{meta: writer Billy Mize}
+{meta: composer Billy Mize}
 
 {start_of_verse: Verse 1}
 [C]You've got a way of makin' me blue 

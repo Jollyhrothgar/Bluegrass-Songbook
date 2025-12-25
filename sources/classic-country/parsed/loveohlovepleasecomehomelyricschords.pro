@@ -1,6 +1,6 @@
 {meta: title Love Oh Love Please Come Home}
 {meta: artist Bill Monroe}
-{meta: writer Leon Jackson}
+{meta: composer Leon Jackson}
 
 {start_of_verse: Verse 1}
 [G]As you read this letter that I write to [F]you

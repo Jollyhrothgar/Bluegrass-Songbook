@@ -1,6 +1,6 @@
 {meta: title Not Like It Was With You}
 {meta: artist Red Sovine}
-{meta: writer Mel Tillis and Wayne P. Walker}
+{meta: composer Mel Tillis and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [F]You may see me [G7]and think that I'm [C]happy

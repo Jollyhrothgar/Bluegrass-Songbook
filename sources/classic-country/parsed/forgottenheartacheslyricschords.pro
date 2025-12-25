@@ -1,6 +1,6 @@
 {meta: title Forgotten Heartaches}
 {meta: artist Ferlin Husky}
-{meta: writer Terry Preston}
+{meta: composer Terry Preston}
 
 {start_of_verse: Verse 1}
 [C]Forgotten heartaches our [F]love could never [C]be

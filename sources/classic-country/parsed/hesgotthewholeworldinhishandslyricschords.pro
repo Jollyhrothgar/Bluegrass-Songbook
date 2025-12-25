@@ -1,6 +1,6 @@
 {meta: title He's Got The Whole World in His Hands}
 {meta: artist The Statler Brothers}
-{meta: writer Forrest Hamilton and Ross Stephens}
+{meta: composer Forrest Hamilton and Ross Stephens}
 
 {start_of_verse: Verse 1}
 [G]He's got the whole world in His hands 

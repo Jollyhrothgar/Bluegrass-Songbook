@@ -1,6 +1,6 @@
 {meta: title Until It Happens To You}
 {meta: artist Alabama}
-{meta: writer Jeff Cook, Teddy Gentry, Ronnie Rogers}
+{meta: composer Jeff Cook, Teddy Gentry, Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [C]I [G7]worry all day and I [F]can't go to sleep at [C]night

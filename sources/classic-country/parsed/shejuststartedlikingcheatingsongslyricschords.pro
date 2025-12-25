@@ -1,6 +1,6 @@
 {meta: title She Just Started Liking Cheating Songs}
 {meta: artist John Anderson}
-{meta: writer Kent Robbins}
+{meta: composer Kent Robbins}
 
 {start_of_verse: Verse 1}
 [C]She just started liking cheating [F]songs 

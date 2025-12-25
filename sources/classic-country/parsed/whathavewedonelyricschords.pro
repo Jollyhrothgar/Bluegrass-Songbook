@@ -1,6 +1,6 @@
 {meta: title What Have We Done}
 {meta: artist Wanda Jackson}
-{meta: writer Wendell Goodman and Wanda Jackson}
+{meta: composer Wendell Goodman and Wanda Jackson}
 
 {start_of_verse: Verse 1}
 [G]What have I done to you what [C]turned you against me

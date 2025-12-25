@@ -1,6 +1,6 @@
 {meta: title I Can}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]I can lose [F]myself in the [C]beauty of a [G7]song

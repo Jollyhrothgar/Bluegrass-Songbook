@@ -1,6 +1,6 @@
 {meta: title Broken Man}
 {meta: artist Mel Tillis}
-{meta: writer Dave Hanner}
+{meta: composer Dave Hanner}
 
 {start_of_verse: Verse 1}
 [G]It’s been a month since she’s been [Am]gone

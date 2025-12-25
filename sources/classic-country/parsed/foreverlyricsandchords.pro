@@ -1,6 +1,6 @@
 {meta: title Forever}
 {meta: artist Statler Brothers}
-{meta: writer Jimmy Fortune}
+{meta: composer Jimmy Fortune}
 
 {start_of_verse: Verse 1}
 [C]I'm trying to get over [F]you

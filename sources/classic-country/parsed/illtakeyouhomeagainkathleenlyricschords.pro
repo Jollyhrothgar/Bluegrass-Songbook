@@ -1,6 +1,6 @@
 {meta: title I'll Take You Home Again Kathleen}
 {meta: artist Slim Whitman}
-{meta: writer Thomas P. Westendorf}
+{meta: composer Thomas P. Westendorf}
 
 {start_of_verse: Verse 1}
 [C]I'll take you [G7]home again Kath[C]leen

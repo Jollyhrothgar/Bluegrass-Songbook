@@ -1,6 +1,6 @@
 {meta: title Blue Virginia Blues}
 {meta: artist Larry Sparks}
-{meta: writer Pete Gobel and Larry Drumm}
+{meta: composer Pete Gobel and Larry Drumm}
 
 {start_of_verse: Verse 1}
 [C]Have you ever been to Richmond in November

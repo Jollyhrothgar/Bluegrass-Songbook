@@ -1,6 +1,6 @@
 {meta: title Please Don't Let Me Love You Chords}
 {meta: artist Hank Williams}
-{meta: writer Ralph Jones}
+{meta: composer Ralph Jones}
 
 {start_of_verse: Verse 1}
 [C]Oh plea-ease  don't let me love [F]you

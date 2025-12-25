@@ -1,6 +1,6 @@
 {meta: title Blues Stay Away From Me}
 {meta: artist Jean Sheppard}
-{meta: writer Alton Delmore, Wayne Raney, Henry Glover}
+{meta: composer Alton Delmore, Wayne Raney, Henry Glover}
 
 {start_of_verse: Verse 1}
 [C]B-lues [F]stay away from [C7][C]me

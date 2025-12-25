@@ -1,6 +1,6 @@
 {meta: title Back To The Barrooms Again}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Dave Kirby}
+{meta: composer Merle Haggard and Dave Kirby}
 
 {start_of_verse: Verse 1}
 [G]Now it's back to the [C]barrooms  [G]right back to drinking [D7]again

@@ -1,6 +1,6 @@
 {meta: title I Can't Wait To Dream That Dream Again}
 {meta: artist Cal Smith}
-{meta: writer Wayne Kemp and Mack Vickery}
+{meta: composer Wayne Kemp and Mack Vickery}
 
 {start_of_verse: Verse 1}
 [C]Last night our [F]home seemed so much [C]warmer

@@ -1,6 +1,6 @@
 {meta: title Two Hearts}
 {meta: artist Vince Gill}
-{meta: writer Leslie Satcher and Vince Gill}
+{meta: composer Leslie Satcher and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]There's a man drinkin' [F]whiskey in a [C]barroom

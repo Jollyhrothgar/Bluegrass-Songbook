@@ -1,6 +1,6 @@
 {meta: title That Same Ol' Look Of Love}
 {meta: artist David Houston}
-{meta: writer Norro Wilson, Carmol Taylor, George Richey}
+{meta: composer Norro Wilson, Carmol Taylor, George Richey}
 
 {start_of_verse: Verse 1}
 [D7]To see you [G]once again just tears me all to [C][F]pieces

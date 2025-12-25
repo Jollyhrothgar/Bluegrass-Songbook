@@ -1,6 +1,6 @@
 {meta: title Moonlight Mountain Lyrics chords}
 {meta: artist Faron Young}
-{meta: writer Bud Freeman and Leon Pober}
+{meta: composer Bud Freeman and Leon Pober}
 
 {start_of_verse: Verse 1}
 [C]I'm all [Dm]alone [G7]on moonlight [C]mountain

@@ -1,6 +1,6 @@
 {meta: title The Will}
 {meta: artist Mark Chesnutt}
-{meta: writer Jackson Leap}
+{meta: composer Jackson Leap}
 
 {start_of_verse: Verse 1}
 [C]We gathered with the lawyer for the [F]reading of the [C]will

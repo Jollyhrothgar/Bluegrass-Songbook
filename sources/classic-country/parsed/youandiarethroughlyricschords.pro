@@ -1,6 +1,6 @@
 {meta: title You And I Are Through}
 {meta: artist Buddy Holly}
-{meta: writer Bob Montgomery}
+{meta: composer Bob Montgomery}
 
 {start_of_verse: Verse 1}
 [G]You said that you were [B7]leaving me

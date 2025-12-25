@@ -1,6 +1,6 @@
 {meta: title Tear Stained Guitar}
 {meta: artist Red Sovine}
-{meta: writer Russ Garner}
+{meta: composer Russ Garner}
 
 {start_of_verse: Verse 1}
 [C]The greatest of love songs are the ones you never [F]hear

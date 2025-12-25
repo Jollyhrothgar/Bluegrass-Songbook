@@ -1,6 +1,6 @@
 {meta: title I Saw God Today}
 {meta: artist George Strait}
-{meta: writer Rodney Clawson, Monty Criswell, Wade Allen Kirby}
+{meta: composer Rodney Clawson, Monty Criswell, Wade Allen Kirby}
 
 {start_of_verse: Verse 1}
 [C]Just walked down the street to the [Dm]coffee shop

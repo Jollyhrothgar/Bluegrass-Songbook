@@ -1,6 +1,6 @@
 {meta: title Light Up The Candles}
 {meta: artist The Bellamy Brothers}
-{meta: writer Ralph Siegel}
+{meta: composer Ralph Siegel}
 
 {start_of_verse: Verse 1}
 [C]Light up the [G7]candles to [Am]make the whole world [C]see

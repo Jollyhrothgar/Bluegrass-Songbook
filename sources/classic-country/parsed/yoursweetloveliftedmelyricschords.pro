@@ -1,6 +1,6 @@
 {meta: title Your Sweet Love Lifted Me}
 {meta: artist Ferlin Husky}
-{meta: writer Glenn Sutton and George Richey}
+{meta: composer Glenn Sutton and George Richey}
 
 {start_of_verse: Verse 1}
 [C]I've [D7]thought the world for [G7]me had ended [F]when she [C]left

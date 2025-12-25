@@ -1,6 +1,6 @@
 {meta: title Stepping Stone}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Smokey Stover}
+{meta: composer Smokey Stover}
 
 {start_of_verse: Verse 1}
 [C]So you think this is the end

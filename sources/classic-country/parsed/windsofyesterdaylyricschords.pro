@@ -1,6 +1,6 @@
 {meta: title Winds Of Yesterday}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin}
+{meta: composer Lloene S. Martin}
 
 {start_of_verse: Verse 1}
 [C]Sometimes at night [F]when I'm all [C]alone 

@@ -1,6 +1,6 @@
 {meta: title World Of Make Believe}
 {meta: artist Bill Anderson}
-{meta: writer Pee Wee Maddux, Marion Carpenter, Pete McCord}
+{meta: composer Pee Wee Maddux, Marion Carpenter, Pete McCord}
 
 {start_of_verse: Verse 1}
 [C]I make be[F]lieve

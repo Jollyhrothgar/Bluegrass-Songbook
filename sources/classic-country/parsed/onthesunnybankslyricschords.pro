@@ -1,6 +1,6 @@
 {meta: title On The Sunny Banks}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [G]There's a land where death can [C]never [G]enter

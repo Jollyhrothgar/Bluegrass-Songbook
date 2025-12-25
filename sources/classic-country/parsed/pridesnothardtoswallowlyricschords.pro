@@ -1,6 +1,6 @@
 {meta: title Pride's Not Hard To Swallow}
 {meta: artist Hank Williams Jr.}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]I wish you'd look who's [F]crawling back to [C]you

@@ -1,6 +1,6 @@
 {meta: title A Teenager In Love}
 {meta: artist Ricky Nelson}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [C]Each time we have [Am]a quarrel it almost [F]breaks my [G7]heart

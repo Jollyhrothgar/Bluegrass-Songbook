@@ -1,6 +1,6 @@
 {meta: title Baby's Gone}
 {meta: artist Cal Smith}
-{meta: writer Conway Twitty and Bill Parks}
+{meta: composer Conway Twitty and Bill Parks}
 
 {start_of_verse: Verse 1}
 [G]My hand is trembling as the key [C]unlocks the [G]door

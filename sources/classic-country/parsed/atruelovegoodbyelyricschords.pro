@@ -1,6 +1,6 @@
 {meta: title A True Love Goodbye}
 {meta: artist Roy Orbison}
-{meta: writer Norman Petty and Roy K. Orbison}
+{meta: composer Norman Petty and Roy K. Orbison}
 
 {start_of_verse: Verse 1}
 Intro:

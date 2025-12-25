@@ -1,6 +1,6 @@
 {meta: title Wearing A Label}
 {meta: artist The Metheny Brothers}
-{meta: writer Mike Tate}
+{meta: composer Mike Tate}
 
 {start_of_verse: Verse 1}
 [C]Last night I tied one on down at [D7]Joe's

@@ -1,6 +1,6 @@
 {meta: title The Great Atomic Power}
 {meta: artist The Louvin Brothers}
-{meta: writer Buddy Bain, Charles Louvin, Ira Louvin}
+{meta: composer Buddy Bain, Charles Louvin, Ira Louvin}
 
 {start_of_verse: Verse 1}
 [G]Do you fear this man's invention that they call [C]atomic [G]power

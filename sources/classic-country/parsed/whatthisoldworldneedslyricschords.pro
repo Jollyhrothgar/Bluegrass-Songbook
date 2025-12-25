@@ -1,6 +1,6 @@
 {meta: title What This Old World Needs}
 {meta: artist Jimmy Dean}
-{meta: writer Shannon Dick and Jimmy Dean}
+{meta: composer Shannon Dick and Jimmy Dean}
 
 {start_of_verse: Verse 1}
 [C]What this whole world needs is a lot [E7]more [A7]lovin'

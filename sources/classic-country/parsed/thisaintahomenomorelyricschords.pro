@@ -1,6 +1,6 @@
 {meta: title This Ain't A Home No More}
 {meta: artist Leona Williams}
-{meta: writer Redd Stewart}
+{meta: composer Redd Stewart}
 
 {start_of_verse: Verse 1}
 [C]You made a solemn promise to [Am]change the things you [F]do

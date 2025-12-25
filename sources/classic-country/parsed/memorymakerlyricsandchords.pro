@@ -1,6 +1,6 @@
 {meta: title Memory Maker}
 {meta: artist Wanda Jackson}
-{meta: writer Dave Burgess and Janet Thomas}
+{meta: composer Dave Burgess and Janet Thomas}
 
 {start_of_verse: Verse 1}
 [G]You're just a memory maker I'm the giver and you're the [C]taker

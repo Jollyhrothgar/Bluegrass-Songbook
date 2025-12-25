@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Troubles}
 {meta: artist Vernon Oxford}
-{meta: writer Wayne P. Walker and Irene Stanton}
+{meta: composer Wayne P. Walker and Irene Stanton}
 
 {start_of_verse: Verse 1}
 [C]I've got honky tonk troubles every pay day

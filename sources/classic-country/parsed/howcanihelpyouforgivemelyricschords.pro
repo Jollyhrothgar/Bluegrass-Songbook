@@ -1,6 +1,6 @@
 {meta: title How Can I (Help You Forgive Me)}
 {meta: artist Dolly Parton and Porter Wagoner}
-{meta: writer Porter Wagoner and Tom Pick}
+{meta: composer Porter Wagoner and Tom Pick}
 
 {start_of_verse: Verse 1}
 [C]As morning breaks and I awake [G7]my eyes open wide

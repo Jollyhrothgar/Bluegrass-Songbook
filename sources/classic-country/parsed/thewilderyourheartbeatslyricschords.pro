@@ -1,6 +1,6 @@
 {meta: title The Wilder Your Heart Beats}
 {meta: artist Jim Reeves}
-{meta: writer John Meredith}
+{meta: composer John Meredith}
 
 {start_of_verse: Verse 1}
 [C]I found out since we've been datin'

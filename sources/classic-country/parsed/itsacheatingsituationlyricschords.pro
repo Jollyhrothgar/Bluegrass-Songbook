@@ -1,6 +1,6 @@
 {meta: title It's A Cheating Situation}
 {meta: artist Moe Bandy}
-{meta: writer Curly Putman and Sonny Throckmorton}
+{meta: composer Curly Putman and Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [G]It's a cheating [C][F]situation

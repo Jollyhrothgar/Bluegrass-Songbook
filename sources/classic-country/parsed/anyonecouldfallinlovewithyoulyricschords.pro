@@ -1,6 +1,6 @@
 {meta: title Anyone Could Fall In Love With You}
 {meta: artist Elvis Presley}
-{meta: writer Bennie Benjamin, Sol Marcus, Luchi DeJesus}
+{meta: composer Bennie Benjamin, Sol Marcus, Luchi DeJesus}
 
 {start_of_verse: Verse 1}
 [G]Any[Em]one could [C]fall in love with [E7]you  [Am]

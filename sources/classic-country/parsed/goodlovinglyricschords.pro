@@ -1,6 +1,6 @@
 {meta: title Good Loving}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill}
+{meta: composer Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [Dm]Good loving [G]keeps a home [C][F]to-geth-er

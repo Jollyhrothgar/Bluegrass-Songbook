@@ -1,6 +1,6 @@
 {meta: title Bad Things I Do}
 {meta: artist Charlie Walker}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]It's hours past midnight [G7]I'm on my way home

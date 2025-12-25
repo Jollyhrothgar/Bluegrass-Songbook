@@ -1,6 +1,6 @@
 {meta: title Are You Coming Back To Me}
 {meta: artist Mac Wiseman}
-{meta: writer Mac Wiseman}
+{meta: composer Mac Wiseman}
 
 {start_of_verse: Verse 1}
 [G]My days and nights are lonely 

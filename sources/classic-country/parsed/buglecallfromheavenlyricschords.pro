@@ -1,6 +1,6 @@
 {meta: title Bugle Call From Heaven}
 {meta: artist Wilburn Brothers}
-{meta: writer S. L. Shook}
+{meta: composer S. L. Shook}
 
 {start_of_verse: Verse 1}
 [C]When that bugle calls from heaven

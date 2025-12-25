@@ -1,6 +1,6 @@
 {meta: title Too Many Places}
 {meta: artist Marty Robbins}
-{meta: writer Dennis Winters}
+{meta: composer Dennis Winters}
 
 {start_of_verse: Verse 1}
 [G]Now there's [D7]too many places too many faces

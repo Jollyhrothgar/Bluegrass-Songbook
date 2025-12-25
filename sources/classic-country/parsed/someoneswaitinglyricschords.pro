@@ -1,6 +1,6 @@
 {meta: title Someone's Waiting}
 {meta: artist Jeannie Seely}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]Don't say no more some[C]one's waiting

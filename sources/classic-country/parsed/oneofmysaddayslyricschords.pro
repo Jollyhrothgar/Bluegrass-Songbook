@@ -1,5 +1,5 @@
 {meta: artist Faron Young}
-{meta: writer Cile Davis}
+{meta: composer Cile Davis}
 
 {start_of_verse: Verse 1}
 [C]If you miss a smile on my face today pay no [D7]attention

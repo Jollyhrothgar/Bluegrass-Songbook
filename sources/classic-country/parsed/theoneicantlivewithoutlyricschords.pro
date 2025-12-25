@@ -1,6 +1,6 @@
 {meta: title The One I Can't Live Without}
 {meta: artist Conway Twitty}
-{meta: writer Frances Rhodes and James Pulliam}
+{meta: composer Frances Rhodes and James Pulliam}
 
 {start_of_verse: Verse 1}
 [G]You say I shouldn't be here 

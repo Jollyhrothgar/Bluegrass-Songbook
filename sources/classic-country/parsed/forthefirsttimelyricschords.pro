@@ -1,6 +1,6 @@
 {meta: title For The First Time}
 {meta: artist Gene Watson}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]For the first time in a [C7]long [F]time

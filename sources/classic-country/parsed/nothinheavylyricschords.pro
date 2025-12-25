@@ -1,6 +1,6 @@
 {meta: title Nothin' Heavy}
 {meta: artist The Bellamy Brothers}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]We were sixteen at the [G7]most Mc[Am]Cartney was our [F]holy ghost

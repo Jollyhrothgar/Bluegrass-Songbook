@@ -1,6 +1,6 @@
 {meta: title The More I Do}
 {meta: artist Charley Pride}
-{meta: writer Byron Gallimore}
+{meta: composer Byron Gallimore}
 
 {start_of_verse: Verse 1}
 [G]Time and time again you [D7]told me you [G]love me through and through

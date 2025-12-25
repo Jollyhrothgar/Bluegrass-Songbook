@@ -1,6 +1,6 @@
 {meta: title Out Of A Clear Blue Sky}
 {meta: artist Ferlin Husky}
-{meta: writer Ferlin Husky and Buck Peddy}
+{meta: composer Ferlin Husky and Buck Peddy}
 
 {start_of_verse: Verse 1}
 [C]Just like an angel you came to [F]me 

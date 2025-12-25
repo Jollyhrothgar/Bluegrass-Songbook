@@ -1,6 +1,6 @@
 {meta: title Beautiful Wings}
 {meta: artist Carl Smith}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [G]Beautiful wings [D7]mother must [G]wear

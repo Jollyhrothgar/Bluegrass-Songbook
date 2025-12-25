@@ -1,6 +1,6 @@
 {meta: title But I Do}
 {meta: artist Buck Owens}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]I didn't think that I'd miss you but I do

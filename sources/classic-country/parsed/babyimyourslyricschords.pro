@@ -1,6 +1,6 @@
 {meta: title Baby I'm Yours}
 {meta: artist Tanya Tucker}
-{meta: writer Van McCoy}
+{meta: composer Van McCoy}
 
 {start_of_verse: Verse 1}
 [C]Baby I'm [F]yours [D7] and I'll be [G7]yours 

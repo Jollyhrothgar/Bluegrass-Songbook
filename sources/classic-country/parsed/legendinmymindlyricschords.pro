@@ -1,6 +1,6 @@
 {meta: title Legend in My Mind}
 {meta: artist Mel Tillis}
-{meta: writer Jerry House}
+{meta: composer Jerry House}
 
 {start_of_verse: Verse 1}
 [G]Don't know where love goes but it's [C]gone

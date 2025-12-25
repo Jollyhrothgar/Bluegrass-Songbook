@@ -1,6 +1,6 @@
 {meta: title Whispering Scandal}
 {meta: artist Hank Locklin}
-{meta: writer Willa Locklin}
+{meta: composer Willa Locklin}
 
 {start_of_verse: Verse 1}
 [G]The honeymoon is over the [C]lovely weeks have has passed

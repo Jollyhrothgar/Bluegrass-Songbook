@@ -1,6 +1,6 @@
 {meta: title His Marvelous Grace}
 {meta: artist Jimmie Davis}
-{meta: writer C.E. Todd}
+{meta: composer C.E. Todd}
 
 {start_of_verse: Verse 1}
 [G]I have read in the Bible that [C]God so loves [G]sinners

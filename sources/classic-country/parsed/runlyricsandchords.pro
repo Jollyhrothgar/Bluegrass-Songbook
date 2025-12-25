@@ -1,6 +1,6 @@
 {meta: title Run}
 {meta: artist George Strait}
-{meta: writer Tony Lane and Anthony Smith}
+{meta: composer Tony Lane and Anthony Smith}
 
 {start_of_verse: Verse 1}
 [Am]If there's a [C]plane or a [D7]bus leavin' [Em]Dallas [D7]

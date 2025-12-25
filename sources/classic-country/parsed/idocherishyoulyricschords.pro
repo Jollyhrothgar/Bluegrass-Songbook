@@ -1,6 +1,6 @@
 {meta: title I Do Cherish You}
 {meta: artist Mark Wills}
-{meta: writer Dan Hill and Keith Stegall}
+{meta: composer Dan Hill and Keith Stegall}
 
 {start_of_verse: Verse 1}
 [C]All I am all I'll [Dm]be

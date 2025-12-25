@@ -1,6 +1,6 @@
 {meta: title San Francisco Is A Lonely Town}
 {meta: artist Charlie Rich}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [F]Two happy [C]people [F]  on a [C]Greyhound bus

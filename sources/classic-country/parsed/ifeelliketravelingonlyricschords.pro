@@ -1,6 +1,6 @@
 {meta: title I Feel Like Traveling On}
 {meta: artist Loretta Lynn}
-{meta: writer James D. Vaughn}
+{meta: composer James D. Vaughn}
 
 {start_of_verse: Verse 1}
 [G]My heavenly home is bright and fair

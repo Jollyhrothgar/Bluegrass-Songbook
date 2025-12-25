@@ -1,6 +1,6 @@
 {meta: title From An Angel To A Devil}
 {meta: artist Lefty Frizzell}
-{meta: writer Rusty Nail}
+{meta: composer Rusty Nail}
 
 {start_of_verse: Verse 1}
 [G]I’m in love with you now it’s no wonder why

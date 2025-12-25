@@ -1,6 +1,6 @@
 {meta: title Aunt Dinah's Quilting Party}
 {meta: artist The Country Gentlemen}
-{meta: writer Francis Kyle and John Fletcher}
+{meta: composer Francis Kyle and John Fletcher}
 
 {start_of_verse: Verse 1}
 Aunt Dinah's Quilting Party

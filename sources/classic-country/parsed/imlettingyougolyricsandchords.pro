@@ -1,6 +1,6 @@
 {meta: title I'm Letting You Go}
 {meta: artist Eddy Arnold}
-{meta: writer Billy Grammer}
+{meta: composer Billy Grammer}
 
 {start_of_verse: Verse 1}
 [C]I'm trying my [G7]best to [C]convince my[G7]self

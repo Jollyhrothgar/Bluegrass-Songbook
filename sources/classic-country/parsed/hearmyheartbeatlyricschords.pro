@@ -1,6 +1,6 @@
 {meta: title Hear My Heart Beat}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Jim Casey and Danny Mayo}
+{meta: composer Jim Casey and Danny Mayo}
 
 {start_of_verse: Verse 1}
 [G]Hoping baby that you’ve got a notion 

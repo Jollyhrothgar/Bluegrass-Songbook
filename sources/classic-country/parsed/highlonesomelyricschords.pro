@@ -1,6 +1,6 @@
 {meta: title High Lonesome}
 {meta: artist Randy Travis}
-{meta: writer Gretchen Peters}
+{meta: composer Gretchen Peters}
 
 {start_of_verse: Verse 1}
 [C]High in a tree on [F]top of the [C]hill

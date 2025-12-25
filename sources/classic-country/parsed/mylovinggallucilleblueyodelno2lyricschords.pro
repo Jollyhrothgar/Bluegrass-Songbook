@@ -1,6 +1,6 @@
 {meta: title My Loving Gal Lucille (Blue Yodel No.2)}
 {meta: artist Lefty Frizzell}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]If you ever had the blues you know just how I feel[C7]

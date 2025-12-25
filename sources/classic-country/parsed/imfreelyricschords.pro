@@ -1,6 +1,6 @@
 {meta: title I'm Free}
 {meta: artist Merle Haggard}
-{meta: writer Leon Copeland}
+{meta: composer Leon Copeland}
 
 {start_of_verse: Verse 1}
 [C]Though I haven't got a penny to my [Dm]name

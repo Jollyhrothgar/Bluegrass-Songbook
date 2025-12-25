@@ -1,6 +1,6 @@
 {meta: title Somewhere To Come When It Rains}
 {meta: artist Merle Haggard}
-{meta: writer Red Lane}
+{meta: composer Red Lane}
 
 {start_of_verse: Verse 1}
 [C]Mhm mhm mhm mhm

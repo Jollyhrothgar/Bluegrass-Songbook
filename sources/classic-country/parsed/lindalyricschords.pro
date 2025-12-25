@@ -1,6 +1,6 @@
 {meta: title Linda}
 {meta: artist Jim Reeves}
-{meta: writer Jack Lawrence}
+{meta: composer Jack Lawrence}
 
 {start_of_verse: Verse 1}
 [G7](Linda Linda wish you were mine)

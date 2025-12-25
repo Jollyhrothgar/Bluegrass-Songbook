@@ -1,6 +1,6 @@
 {meta: title The Okie From Muskogee Is Coming Home}
 {meta: artist Merle Haggard}
-{meta: writer Freddy Powers and Merle Haggard}
+{meta: composer Freddy Powers and Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]Well me and Roy Nichols 

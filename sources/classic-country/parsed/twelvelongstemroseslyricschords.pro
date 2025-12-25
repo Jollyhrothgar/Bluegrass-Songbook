@@ -1,6 +1,6 @@
 {meta: title Twelve Long Stem Roses}
 {meta: artist Mel Tillis}
-{meta: writer Cody Bearpaw}
+{meta: composer Cody Bearpaw}
 
 {start_of_verse: Verse 1}
 [C]As I walked through my [F]garden [C]today

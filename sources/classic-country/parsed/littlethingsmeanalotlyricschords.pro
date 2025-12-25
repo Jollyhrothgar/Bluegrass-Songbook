@@ -1,6 +1,6 @@
 {meta: title Little Things Mean A Lot}
 {meta: artist Wanda Jackson}
-{meta: writer Edith Linderman and Carl Stutz}
+{meta: composer Edith Linderman and Carl Stutz}
 
 {start_of_verse: Verse 1}
 [G]Blow me a [Em]kiss from [Am]across the [D7]room

@@ -1,6 +1,6 @@
 {meta: title I've Loved I've Laughed I've Cried}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Hal Harris}
+{meta: composer Webb Pierce and Hal Harris}
 
 {start_of_verse: Verse 1}
 [C]I've loved I've laughed and I've cried

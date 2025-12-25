@@ -1,6 +1,6 @@
 {meta: title I Betcha My Heart I Love You}
 {meta: artist Wanda Jackson}
-{meta: writer Bob Miller and Esther VanSciver}
+{meta: composer Bob Miller and Esther VanSciver}
 
 {start_of_verse: Verse 1}
 [G]I betcha my heart I [D7]love you I betcha my dreams are of [G]you

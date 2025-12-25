@@ -1,6 +1,6 @@
 {meta: title I Believe He's The Son Of God}
 {meta: artist Melba Montgomery}
-{meta: writer Melba Montgomery and Carl Montgomery}
+{meta: composer Melba Montgomery and Carl Montgomery}
 
 {start_of_verse: Verse 1}
 I Believe He's The Son Of God

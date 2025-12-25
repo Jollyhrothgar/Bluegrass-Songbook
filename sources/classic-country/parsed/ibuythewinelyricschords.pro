@@ -1,6 +1,6 @@
 {meta: title I Buy The Wine}
 {meta: artist Lefty Frizzell}
-{meta: writer Rory Bourke and Gayle Barnhill}
+{meta: composer Rory Bourke and Gayle Barnhill}
 
 {start_of_verse: Verse 1}
 [G]Her hands are burned from the [C]torch that she [Am]carries

@@ -1,6 +1,6 @@
 {meta: title I Wish I Was Wrong}
 {meta: artist Travis Tritt}
-{meta: writer Tommy Conners and Monte Warden}
+{meta: composer Tommy Conners and Monte Warden}
 
 {start_of_verse: Verse 1}
 [G]I [C]never saw it [G]coming 

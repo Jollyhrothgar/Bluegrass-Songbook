@@ -1,6 +1,6 @@
 {meta: title That Was Us}
 {meta: artist Randy Travis}
-{meta: writer Craig Wiseman and Tony Lane}
+{meta: composer Craig Wiseman and Tony Lane}
 
 {start_of_verse: Verse 1}
 [D7]Twenty [G]dollars out of momma's [C]purse bought us a [G]tank of gas

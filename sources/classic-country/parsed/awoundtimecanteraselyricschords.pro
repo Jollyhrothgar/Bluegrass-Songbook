@@ -1,6 +1,6 @@
 {meta: title A Wound Time Can't Erase}
 {meta: artist Stonewall Jackson}
-{meta: writer Bill D. Johnson}
+{meta: composer Bill D. Johnson}
 
 {start_of_verse: Verse 1}
 [G]Have you found since you turned me [D7]down

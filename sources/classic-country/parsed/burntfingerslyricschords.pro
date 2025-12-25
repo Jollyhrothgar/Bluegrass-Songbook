@@ -1,6 +1,6 @@
 {meta: title Burnt Fingers}
 {meta: artist Ray Price}
-{meta: writer Robert Wright and George Forrest}
+{meta: composer Robert Wright and George Forrest}
 
 {start_of_verse: Verse 1}
 [C]When a man [G7]plays with fire he gets burnt [C]fingers

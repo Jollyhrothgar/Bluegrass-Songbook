@@ -1,6 +1,6 @@
 {meta: title Kiss Me Quick}
 {meta: artist Elvis Presley}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [G]Kiss me quick while we still have this [D7]feeling

@@ -1,6 +1,6 @@
 {meta: title I Made The Prison Band}
 {meta: artist Merle Haggard}
-{meta: writer Tommy Collins, Jimmy Bryant, Ernest Ball}
+{meta: composer Tommy Collins, Jimmy Bryant, Ernest Ball}
 
 {start_of_verse: Verse 1}
 [G]Deep inside this lonely prison 

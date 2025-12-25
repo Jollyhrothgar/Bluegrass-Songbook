@@ -1,6 +1,6 @@
 {meta: title Ring On Your Finger}
 {meta: artist George Morgan}
-{meta: writer Donald D. Davis}
+{meta: composer Donald D. Davis}
 
 {start_of_verse: Verse 1}
 [C]Somebody [C7]else put a [F]ring on your [D7]finger

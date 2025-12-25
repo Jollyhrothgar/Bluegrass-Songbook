@@ -1,6 +1,6 @@
 {meta: title My Life's Been A Pleasure}
 {meta: artist Willie Nelson}
-{meta: writer Jesse Ashlock}
+{meta: composer Jesse Ashlock}
 
 {start_of_verse: Verse 1}
 [G]I still love you as I did in yesterday

@@ -1,6 +1,6 @@
 {meta: title Let There Be Woman}
 {meta: artist George Jones}
-{meta: writer Jacqueline Wellman}
+{meta: composer Jacqueline Wellman}
 
 {start_of_verse: Verse 1}
 [C]Adam was lonely and [G7]God sent him [C]Eve

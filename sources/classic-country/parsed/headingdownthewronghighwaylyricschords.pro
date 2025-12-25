@@ -1,6 +1,6 @@
 {meta: title Heading Down the Wrong Highway}
 {meta: artist Hank Thompson}
-{meta: writer Ted Daffan}
+{meta: composer Ted Daffan}
 
 {start_of_verse: Verse 1}
 [C]Too many sweethearts and none of them [G7]true

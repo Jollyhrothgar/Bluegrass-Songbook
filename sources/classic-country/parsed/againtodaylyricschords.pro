@@ -1,6 +1,6 @@
 {meta: title Again Today}
 {meta: artist Faron Young}
-{meta: writer Ernie Reed}
+{meta: composer Ernie Reed}
 
 {start_of_verse: Verse 1}
 [G7]Again [C]today I [F]almost [G7]lost my [C]mind

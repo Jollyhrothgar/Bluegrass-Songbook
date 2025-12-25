@@ -1,6 +1,6 @@
 {meta: title Heaven In My Woman's Eyes}
 {meta: artist Tracy Byrd}
-{meta: writer Mark Nesler}
+{meta: composer Mark Nesler}
 
 {start_of_verse: Verse 1}
 [G]It's cold this time of year 

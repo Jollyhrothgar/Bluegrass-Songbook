@@ -1,6 +1,6 @@
 {meta: title Yesterday's Kisses}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Wayne Wood}
+{meta: composer Wayne Wood}
 
 {start_of_verse: Verse 1}
 [C]Yesterday’s kisses are teardrops [G7]today

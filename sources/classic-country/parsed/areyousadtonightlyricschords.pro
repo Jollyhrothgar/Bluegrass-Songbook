@@ -1,6 +1,6 @@
 {meta: title Are You Sad Tonight}
 {meta: artist J.D. Crowe}
-{meta: writer Glenn R. Lawson}
+{meta: composer Glenn R. Lawson}
 
 {start_of_verse: Verse 1}
 [C]Are you sad tonight do you [G7]sleep all alone

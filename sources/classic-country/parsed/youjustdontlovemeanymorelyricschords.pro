@@ -1,6 +1,6 @@
 {meta: title You Just Don't Love Me Anymore}
 {meta: artist Ray Price}
-{meta: writer Jan Crutchfield and Joseph Allen}
+{meta: composer Jan Crutchfield and Joseph Allen}
 
 {start_of_verse: Verse 1}
 [C]After all the good times after all the things that we’ve gone [F]through

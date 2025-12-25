@@ -1,6 +1,6 @@
 {meta: title Mine All Mine}
 {meta: artist Bob Wills}
-{meta: writer Eddie Van Halen, Lee White,}
+{meta: composer Eddie Van Halen, Lee White,}
 
 {start_of_verse: Verse 1}
 [G]When you see my baby walking down the street

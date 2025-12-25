@@ -1,6 +1,6 @@
 {meta: title Wildflowers}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [G]The hills were alive with wild [C]flowers and [G]I

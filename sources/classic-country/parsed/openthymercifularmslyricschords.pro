@@ -1,6 +1,6 @@
 {meta: title Open Thy Merciful Arms}
 {meta: artist Eddy Arnold}
-{meta: writer Don Whiston}
+{meta: composer Don Whiston}
 
 {start_of_verse: Verse 1}
 [C]One of Thy [C7]children is [F]coming [C]home 

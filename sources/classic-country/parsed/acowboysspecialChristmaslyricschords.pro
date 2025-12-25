@@ -1,6 +1,6 @@
 {meta: title A Cowboy's Special Christmas}
 {meta: artist Red Steagall}
-{meta: writer Dan Roberts, Roy Robinson, Bobby Wood}
+{meta: composer Dan Roberts, Roy Robinson, Bobby Wood}
 
 {start_of_verse: Verse 1}
 [C]Sittin’ in the bunkhouse feelin’ [Dm]sorry for myself

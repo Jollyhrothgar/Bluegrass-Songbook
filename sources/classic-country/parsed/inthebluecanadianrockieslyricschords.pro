@@ -1,6 +1,6 @@
 {meta: title In The Blue Canadian Rockies}
 {meta: artist Jim Reeves}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]In the [D7]blue Canadian [G]Rockies

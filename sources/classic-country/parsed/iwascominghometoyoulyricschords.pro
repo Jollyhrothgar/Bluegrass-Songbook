@@ -1,6 +1,6 @@
 {meta: title I Was Coming Home To You}
 {meta: artist Hank Locklin}
-{meta: writer Kendall Hayes and Jimmy Rule}
+{meta: composer Kendall Hayes and Jimmy Rule}
 
 {start_of_verse: Verse 1}
 [G7]I stopped [C]by at the [F]party of an [C]old friend[Am]

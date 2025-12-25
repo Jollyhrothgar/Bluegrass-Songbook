@@ -1,6 +1,6 @@
 {meta: title If You Can't Find Love}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Pete McCann}
+{meta: composer Pete McCann}
 
 {start_of_verse: Verse 1}
 [C]I don't expect you to [F]remember

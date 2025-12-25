@@ -1,6 +1,6 @@
 {meta: title More To Love Than This}
 {meta: artist Jean Shepard}
-{meta: writer Hank Mills}
+{meta: composer Hank Mills}
 
 {start_of_verse: Verse 1}
 [C]He's home with me [F]one hour of the [C]day

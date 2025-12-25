@@ -1,6 +1,6 @@
 {meta: title It's Only Make Believe}
 {meta: artist Conway Twitty}
-{meta: writer Conway Twitty and Jack Nance}
+{meta: composer Conway Twitty and Jack Nance}
 
 {start_of_verse: Verse 1}
 [G]People see us everywhere

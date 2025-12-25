@@ -1,6 +1,6 @@
 {meta: title If God Can Forgive You So Can I}
 {meta: artist Jack Greene}
-{meta: writer Charlie Gore and Bulford Abner}
+{meta: composer Charlie Gore and Bulford Abner}
 
 {start_of_verse: Verse 1}
 [C]I went to church this morning  and heard [F]you say a [C]prayer

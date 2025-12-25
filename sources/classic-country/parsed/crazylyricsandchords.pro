@@ -1,6 +1,6 @@
 {meta: title Crazy}
 {meta: artist Patsy Cline}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]Crazy   I'm [E7]crazy for feeling so [Am]lonely

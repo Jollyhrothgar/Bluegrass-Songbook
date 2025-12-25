@@ -1,6 +1,6 @@
 {meta: title Girl in the Night}
 {meta: artist Ray Price}
-{meta: writer Hank Thompson}
+{meta: composer Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]She lives her life in honky tonks and the crowded backstreet [C]bars

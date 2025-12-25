@@ -1,6 +1,6 @@
 {meta: title Ever Changing Woman}
 {meta: artist Randy Travis}
-{meta: writer Curly Putman and Dave Kirby}
+{meta: composer Curly Putman and Dave Kirby}
 
 {start_of_verse: Verse 1}
 [G]She can sparkle like the [D7]moonlight on the [G]river

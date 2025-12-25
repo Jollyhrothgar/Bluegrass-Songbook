@@ -1,6 +1,6 @@
 {meta: title Down The Street To 301}
 {meta: artist Johnny Cash}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]There's a boy [F]across the [C]street lately he's looked very [G7]neat

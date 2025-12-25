@@ -1,6 +1,6 @@
 {meta: title I'm A Lonely Wanderer}
 {meta: artist Slim Whitman}
-{meta: writer Margie Singleton and Jerry Kennedy}
+{meta: composer Margie Singleton and Jerry Kennedy}
 
 {start_of_verse: Verse 1}
 [G7]I'm a [C]wanderer a [G7]restless soul

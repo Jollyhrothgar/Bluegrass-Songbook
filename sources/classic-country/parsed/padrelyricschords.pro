@@ -1,6 +1,6 @@
 {meta: title Padre}
 {meta: artist Marty Robbins}
-{meta: writer Alain Romans}
+{meta: composer Alain Romans}
 
 {start_of_verse: Verse 1}
 [C]The day that we wed you blessed us [G7]and [C]said

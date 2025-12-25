@@ -1,6 +1,6 @@
 {meta: title Happiness Means You}
 {meta: artist Kitty Wells}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [C]Happiness means [F]you dear our life's [C]complete

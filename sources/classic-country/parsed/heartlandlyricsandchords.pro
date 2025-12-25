@@ -1,6 +1,6 @@
 {meta: title Heartland}
 {meta: artist George Strait}
-{meta: writer Steve Dorff and John Bettis}
+{meta: composer Steve Dorff and John Bettis}
 
 {start_of_verse: Verse 1}
 [C]When you hear twin fiddles and a steel guitar

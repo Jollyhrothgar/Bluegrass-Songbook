@@ -1,6 +1,6 @@
 {meta: title What Became Of That Beautiful Picture}
 {meta: artist Charlie Waller}
-{meta: writer Shep Sessoms and Mel Butler}
+{meta: composer Shep Sessoms and Mel Butler}
 
 {start_of_verse: Verse 1}
 [G]I vision the garden of [D7]roses

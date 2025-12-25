@@ -1,6 +1,6 @@
 {meta: title They Shined Up Rudolph's Nose}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Marks and Johnny Horton}
+{meta: composer Johnny Marks and Johnny Horton}
 
 {start_of_verse: Verse 1}
 [C]Rudolph's nose was frosty and it didn't get much [G7]light

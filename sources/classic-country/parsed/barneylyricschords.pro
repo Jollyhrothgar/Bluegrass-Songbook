@@ -1,6 +1,6 @@
 {meta: title Barney}
 {meta: artist Loretta Lynn}
-{meta: writer Frances Rhodes}
+{meta: composer Frances Rhodes}
 
 {start_of_verse: Verse 1}
 [G]You can take Barney out of the barroom

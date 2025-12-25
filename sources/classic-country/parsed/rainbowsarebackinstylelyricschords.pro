@@ -1,6 +1,6 @@
 {meta: title Rainbows Are Back In Style}
 {meta: artist Slim Whitman}
-{meta: writer Dave Burgess}
+{meta: composer Dave Burgess}
 
 {start_of_verse: Verse 1}
 [G]Rainbows are getting back in [D7]style

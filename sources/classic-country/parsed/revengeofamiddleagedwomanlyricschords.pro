@@ -1,6 +1,6 @@
 {meta: title Revenge Of A Middle Aged Woman}
 {meta: artist Tracy Byrd}
-{meta: writer Dave Berg, Annie Tate, Sam Tate}
+{meta: composer Dave Berg, Annie Tate, Sam Tate}
 
 {start_of_verse: Verse 1}
 [C]I was lookin' for a cheap car in the Sunday classifieds

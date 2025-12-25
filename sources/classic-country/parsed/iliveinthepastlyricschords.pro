@@ -1,6 +1,6 @@
 {meta: title I Live in the Past}
 {meta: artist Bill Monroe}
-{meta: writer Virginia Stauffer}
+{meta: composer Virginia Stauffer}
 
 {start_of_verse: Verse 1}
 [C]The days are so lonely [C7]the nights are so [F]long

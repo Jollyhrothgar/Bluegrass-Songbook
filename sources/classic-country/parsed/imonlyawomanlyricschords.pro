@@ -1,6 +1,6 @@
 {meta: title I'm Only A Woman}
 {meta: artist Tammy Wynette}
-{meta: writer Dottie West}
+{meta: composer Dottie West}
 
 {start_of_verse: Verse 1}
 [G7]When you [C]look at me [Em]as if to say you [Am]need me

@@ -1,6 +1,6 @@
 {meta: title How Green Was The Grazin' Back Then}
 {meta: artist Red Steagall}
-{meta: writer Richard Eldon O'Brien and Russell D. Steagall}
+{meta: composer Richard Eldon O'Brien and Russell D. Steagall}
 
 {start_of_verse: Verse 1}
 [C]The norther came quickly the [Em]clouds filled the [Am]sky

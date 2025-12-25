@@ -1,6 +1,6 @@
 {meta: title She Don’t Cry Like She Used To}
 {meta: artist Johnny Rodriguez}
-{meta: writer Frank J. Saulino and James J. Valentini}
+{meta: composer Frank J. Saulino and James J. Valentini}
 
 {start_of_verse: Verse 1}
 [C]She's got a new look [Em]  on her face

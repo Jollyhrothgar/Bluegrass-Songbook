@@ -1,6 +1,6 @@
 {meta: title Where I Wrote Your Name}
 {meta: artist Jack Greene}
-{meta: writer Beau Garrett}
+{meta: composer Beau Garrett}
 
 {start_of_verse: Verse 1}
 [C]Looking back on [G7]yesteryears 

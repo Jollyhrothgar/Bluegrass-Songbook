@@ -1,6 +1,6 @@
 {meta: title Are You Sure}
 {meta: artist Ray Price}
-{meta: writer Willie Nelson and Bobby Emmons}
+{meta: composer Willie Nelson and Bobby Emmons}
 
 {start_of_verse: Verse 1}
 [C]Oh look around you look down the bar from you

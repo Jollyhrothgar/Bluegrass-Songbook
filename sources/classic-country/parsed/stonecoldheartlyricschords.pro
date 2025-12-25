@@ -1,6 +1,6 @@
 {meta: title Stone Cold Heart}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]It’s over this time it’s the end of the line

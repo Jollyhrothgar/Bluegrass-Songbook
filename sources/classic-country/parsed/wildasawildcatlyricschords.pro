@@ -1,6 +1,6 @@
 {meta: title Wild As A Wildcat}
 {meta: artist Charlie Walker}
-{meta: writer Carmol Taylor}
+{meta: composer Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [G]You're just as wild as a wildcat and you’ve got your claws in [C]me

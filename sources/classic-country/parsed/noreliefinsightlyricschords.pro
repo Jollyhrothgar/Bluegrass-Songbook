@@ -1,6 +1,6 @@
 {meta: title No Relief In Sight}
 {meta: artist Conway Twitty}
-{meta: writer Johnny Wilson,Gene Dobbins,Rory Bourke}
+{meta: composer Johnny Wilson,Gene Dobbins,Rory Bourke}
 
 {start_of_verse: Verse 1}
 [G]My mind goes all to pieces

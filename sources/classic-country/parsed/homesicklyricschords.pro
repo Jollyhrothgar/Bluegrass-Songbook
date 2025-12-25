@@ -1,6 +1,6 @@
 {meta: title Homesick}
 {meta: artist Norma Jean}
-{meta: writer Billy Cole}
+{meta: composer Billy Cole}
 
 {start_of_verse: Verse 1}
 [G]Oh [C]I'm so [G]homesick

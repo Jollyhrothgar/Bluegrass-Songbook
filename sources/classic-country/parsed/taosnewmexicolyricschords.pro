@@ -1,6 +1,6 @@
 {meta: title Taos New Mexico}
 {meta: artist Waylon Jennings}
-{meta: writer Bob Ferguson}
+{meta: composer Bob Ferguson}
 
 {start_of_verse: Verse 1}
 [C]To Taos  Pueblo  out in New [G7]Mexico

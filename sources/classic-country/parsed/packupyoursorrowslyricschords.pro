@@ -1,6 +1,6 @@
 {meta: title Pack Up Your Sorrows}
 {meta: artist Johnny Cash}
-{meta: writer Richard Farina and Pauline Marden}
+{meta: composer Richard Farina and Pauline Marden}
 
 {start_of_verse: Verse 1}
 [G]Oh but if somehow you could pack up your [C]sorrows

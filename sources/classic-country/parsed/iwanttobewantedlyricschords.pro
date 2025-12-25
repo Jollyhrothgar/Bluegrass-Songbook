@@ -1,6 +1,6 @@
 {meta: title I Want To Be Wanted}
 {meta: artist Brenda Lee}
-{meta: writer Kim Gannon, Giuseppe Spotti, Alberto Testa}
+{meta: composer Kim Gannon, Giuseppe Spotti, Alberto Testa}
 
 {start_of_verse: Verse 1}
 [G](Wanted [Em]wanted) [Am]   [D7]

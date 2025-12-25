@@ -1,6 +1,6 @@
 {meta: title Be Nice To Everybody}
 {meta: artist Jean Sheppard}
-{meta: writer Charlie Williams and Scott Turner}
+{meta: composer Charlie Williams and Scott Turner}
 
 {start_of_verse: Verse 1}
 [C]There you go drivin' in your [G]big long car

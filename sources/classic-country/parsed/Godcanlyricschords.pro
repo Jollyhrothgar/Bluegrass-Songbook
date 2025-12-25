@@ -1,6 +1,6 @@
 {meta: title God Can}
 {meta: artist Doyle Lawson}
-{meta: writer Randy Swift}
+{meta: composer Randy Swift}
 
 {start_of_verse: Verse 1}
 [G]Who can take the beggar man off the streets 

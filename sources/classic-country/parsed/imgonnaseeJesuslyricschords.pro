@@ -1,6 +1,6 @@
 {meta: title I'm Gonna See Jesus}
 {meta: artist B.J. Thomas}
-{meta: writer Archie Jordan}
+{meta: composer Archie Jordan}
 
 {start_of_verse: Verse 1}
 [C]I've never seen the Eiffel [F]Tower

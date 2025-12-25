@@ -1,6 +1,6 @@
 {meta: title Runaway Heart}
 {meta: artist Reba McEntire}
-{meta: writer Paul Harrison}
+{meta: composer Paul Harrison}
 
 {start_of_verse: Verse 1}
 [F]I'm [C]rolling I'm tumb[Dm]ling I'm [C]falling [F]apart

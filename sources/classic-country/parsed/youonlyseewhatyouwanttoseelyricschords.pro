@@ -1,6 +1,6 @@
 {meta: title You Only See What You Want To See}
 {meta: artist Jack Scott}
-{meta: writer Hal David and Paul Hampton}
+{meta: composer Hal David and Paul Hampton}
 
 {start_of_verse: Verse 1}
 [C]No matter what I do I never [Am]satisfy you

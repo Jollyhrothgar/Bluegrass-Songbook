@@ -1,6 +1,6 @@
 {meta: title Thorns Of Life}
 {meta: artist Charley Pride}
-{meta: writer Bucky Jones, Joane Keller, Paul Huffman}
+{meta: composer Bucky Jones, Joane Keller, Paul Huffman}
 
 {start_of_verse: Verse 1}
 [C]I wear her love and [F]wedding ring [C]for all the world to see

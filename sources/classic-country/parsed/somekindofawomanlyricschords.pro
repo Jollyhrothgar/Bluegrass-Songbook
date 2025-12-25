@@ -1,6 +1,6 @@
 {meta: title Some Kind Of A Woman}
 {meta: artist Cal Smith}
-{meta: writer Jimmy Peppers and Tommy Cash}
+{meta: composer Jimmy Peppers and Tommy Cash}
 
 {start_of_verse: Verse 1}
 [G]Tempted by the devil to give up the love

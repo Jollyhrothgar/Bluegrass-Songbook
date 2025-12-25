@@ -1,6 +1,6 @@
 {meta: title The Object Of My Affection}
 {meta: artist Faron Young}
-{meta: writer Pinky Tomlin, Coy Poe, Jimmie Grier}
+{meta: composer Pinky Tomlin, Coy Poe, Jimmie Grier}
 
 {start_of_verse: Verse 1}
 [C]The object of my [G7]affection can [C]change my com[G7]plexion 

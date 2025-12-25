@@ -1,6 +1,6 @@
 {meta: title Countin' The Hours Countin' The Days}
 {meta: artist Bobby Bare}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G]Coutin' the hours countin' the days

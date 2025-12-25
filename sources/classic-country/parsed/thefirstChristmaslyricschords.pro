@@ -1,6 +1,6 @@
 {meta: title The First Christmas}
 {meta: artist Doug Stone}
-{meta: writer Phyllis Bennett, Lonnie Williams, Doug Stone}
+{meta: composer Phyllis Bennett, Lonnie Williams, Doug Stone}
 
 {start_of_verse: Verse 1}
 [G]He was [D7]just a [G]baby the [C]only Son of [G]man

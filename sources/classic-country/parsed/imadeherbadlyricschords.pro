@@ -1,6 +1,6 @@
 {meta: title I Made Her Bad}
 {meta: artist Bobby Helms}
-{meta: writer Harold Lowry}
+{meta: composer Harold Lowry}
 
 {start_of_verse: Verse 1}
 [C]Tonight in a barroom she's [F]sitting

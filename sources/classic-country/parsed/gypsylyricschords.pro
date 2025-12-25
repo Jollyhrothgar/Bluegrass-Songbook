@@ -1,6 +1,6 @@
 {meta: title Gypsy Lyrics Chords}
 {meta: artist Hank Thompson}
-{meta: writer Billy Reid}
+{meta: composer Billy Reid}
 
 {start_of_verse: Verse 1}
 [G]In a quaint caravan there's a lady they [Em]call the [Am]Gypsy

@@ -1,6 +1,6 @@
 {meta: title I’m Wasting Good Paper}
 {meta: artist George Jones}
-{meta: writer George Jones and Earl Montgomery}
+{meta: composer George Jones and Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]I know I shouldn't do this but I will [G7]anyway

@@ -1,6 +1,6 @@
 {meta: title Avery County}
 {meta: artist Charlie Moore}
-{meta: writer recorded by Charlie Moore}
+{meta: composer recorded by Charlie Moore}
 
 {start_of_verse: Verse 1}
 [C]Tonight I’m dreaming of [G7]Avery [C]County

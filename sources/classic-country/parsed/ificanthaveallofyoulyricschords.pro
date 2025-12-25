@@ -1,6 +1,6 @@
 {meta: title If I Can’t Have All Of You}
 {meta: artist Wilburn Brothers}
-{meta: writer Jeff Tweel, Vernon Reed, Rex Gosdin}
+{meta: composer Jeff Tweel, Vernon Reed, Rex Gosdin}
 
 {start_of_verse: Verse 1}
 [G]I love it when you're with me

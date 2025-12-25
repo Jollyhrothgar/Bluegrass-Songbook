@@ -1,6 +1,6 @@
 {meta: title When I Fall In Love}
 {meta: artist Brenda Lee}
-{meta: writer Edward Heyman and Victor Young}
+{meta: composer Edward Heyman and Victor Young}
 
 {start_of_verse: Verse 1}
 [G]When [D7]I fall in [G]love it will be [Am]for[D7]ever 

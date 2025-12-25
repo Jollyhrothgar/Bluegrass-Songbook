@@ -1,6 +1,6 @@
 {meta: title Sailing Toward Home}
 {meta: artist The Kingsmen}
-{meta: writer Dottie Rambo and Donnie Howard Sumner}
+{meta: composer Dottie Rambo and Donnie Howard Sumner}
 
 {start_of_verse: Verse 1}
 [G]I stood upon the [C]sandy bank looking [D7]out across the [G]ocean

@@ -1,6 +1,6 @@
 {meta: title She Sure Got Away With My Heart}
 {meta: artist John Anderson}
-{meta: writer Walt Aldridge and Tom Brasfield}
+{meta: composer Walt Aldridge and Tom Brasfield}
 
 {start_of_verse: Verse 1}
 [Am]She's got a [G]way with walkin'[Em]    [Am]she's got a [G]way with talkin' [Em]

@@ -1,6 +1,6 @@
 {meta: title Anyway You Want Me}
 {meta: artist Elvis Presley}
-{meta: writer Aaron Schroeder and Cliff Owens}
+{meta: composer Aaron Schroeder and Cliff Owens}
 
 {start_of_verse: Verse 1}
 [G]I'll be as strong as [Em]a mountain

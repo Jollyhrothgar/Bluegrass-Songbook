@@ -1,6 +1,6 @@
 {meta: title You Just Can't Be True Lyrics Chords}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Teddy Wilburn}
+{meta: composer Webb Pierce and Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]Now honey you just can't be true 

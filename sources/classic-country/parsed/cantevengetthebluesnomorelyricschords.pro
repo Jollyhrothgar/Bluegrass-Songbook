@@ -1,6 +1,6 @@
 {meta: title Can't Even Get The Blues No More}
 {meta: artist Reba McEntire}
-{meta: writer Thomas Damphier and Kerry Chater}
+{meta: composer Thomas Damphier and Kerry Chater}
 
 {start_of_verse: Verse 1}
 [C]I walk into the kitchen the silver ware is gone

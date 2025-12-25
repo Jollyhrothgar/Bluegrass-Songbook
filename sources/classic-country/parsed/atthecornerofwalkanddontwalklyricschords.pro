@@ -1,6 +1,6 @@
 {meta: title At The Corner Of Walk And Don't Walk}
 {meta: artist Rhonda Vincent}
-{meta: writer Kenny Beard and John Jarrard}
+{meta: composer Kenny Beard and John Jarrard}
 
 {start_of_verse: Verse 1}
 [C]I'm callin' from a pay phone I was headin' out of [F]town

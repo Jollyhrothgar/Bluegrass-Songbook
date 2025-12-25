@@ -1,6 +1,6 @@
 {meta: title Remember The Ride}
 {meta: artist Doug Stone}
-{meta: writer Kim Williams and Mike Harrell}
+{meta: composer Kim Williams and Mike Harrell}
 
 {start_of_verse: Verse 1}
 [C]He spent his days with horses and his [Dm]nights with Rosa Lee

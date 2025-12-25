@@ -1,6 +1,6 @@
 {meta: title You Go To Your Church}
 {meta: artist J.D. Crowe}
-{meta: writer Cowboy Copas}
+{meta: composer Cowboy Copas}
 
 {start_of_verse: Verse 1}
 [G]You go to your church and [C]I'll go to [G]mine

@@ -1,6 +1,6 @@
 {meta: title Is That A Tear}
 {meta: artist Tracy Lawrence}
-{meta: writer John Jarrard and Kenny Beard}
+{meta: composer John Jarrard and Kenny Beard}
 
 {start_of_verse: Verse 1}
 [C]The last thing I expected was to [F]get her call [C]tonight

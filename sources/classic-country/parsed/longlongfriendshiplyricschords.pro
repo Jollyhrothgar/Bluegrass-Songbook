@@ -1,6 +1,6 @@
 {meta: title Long Long Friendship}
 {meta: artist Eddy Arnold}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]I want to have a long long [G7]friendship with you

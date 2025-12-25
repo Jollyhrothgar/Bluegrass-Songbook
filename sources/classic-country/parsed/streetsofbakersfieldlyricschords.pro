@@ -1,6 +1,6 @@
 {meta: title Streets Of Bakersfield}
 {meta: artist Buck Owens}
-{meta: writer Homer Joy}
+{meta: composer Homer Joy}
 
 {start_of_verse: Verse 1}
 [G]I came here in looking for [C]something

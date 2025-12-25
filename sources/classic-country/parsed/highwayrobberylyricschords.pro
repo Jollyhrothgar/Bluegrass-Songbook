@@ -1,6 +1,6 @@
 {meta: title Highway Robbery}
 {meta: artist Tanya Tucker}
-{meta: writer Chuck Jones, Michael Garvin, Tom Shapiro}
+{meta: composer Chuck Jones, Michael Garvin, Tom Shapiro}
 
 {start_of_verse: Verse 1}
 [G]Okay officer I admit it I was [C]speedin'

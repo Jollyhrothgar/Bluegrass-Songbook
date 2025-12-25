@@ -1,6 +1,6 @@
 {meta: title Please Don't Go Away}
 {meta: artist Johnny Tillotson}
-{meta: writer Johnny Tillotson and Lucille Cosenza}
+{meta: composer Johnny Tillotson and Lucille Cosenza}
 
 {start_of_verse: Verse 1}
 [G7]Please don't go [C]away [F]let me [G7]hold you in my [C]arms

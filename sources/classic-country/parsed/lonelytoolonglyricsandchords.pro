@@ -1,6 +1,6 @@
 {meta: title Lonely Too Long}
 {meta: artist Patty Loveless}
-{meta: writer Sharon Vaughn, Bill Rice, Mike Lawler}
+{meta: composer Sharon Vaughn, Bill Rice, Mike Lawler}
 
 {start_of_verse: Verse 1}
 [G7]Well good [C]morning tell me [Am]how'd you sleep last [Dm]night[F]

@@ -1,6 +1,6 @@
 {meta: title I've Gotta Walk Alone}
 {meta: artist Bob Wills}
-{meta: writer John Hathcock and Weldon Allard}
+{meta: composer John Hathcock and Weldon Allard}
 
 {start_of_verse: Verse 1}
 [C]I've gotta walk alone my sweetheart's gone

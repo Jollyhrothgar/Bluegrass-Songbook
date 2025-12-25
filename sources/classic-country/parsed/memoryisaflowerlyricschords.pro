@@ -1,6 +1,6 @@
 {meta: title Memory Is A Flower}
 {meta: artist George Jones}
-{meta: writer George Jones and Jimmy Day}
+{meta: composer George Jones and Jimmy Day}
 
 {start_of_verse: Verse 1}
 [G]Memory is a flower you [C]once wore in your [G]hair

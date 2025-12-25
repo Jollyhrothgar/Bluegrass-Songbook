@@ -1,6 +1,6 @@
 {meta: title Lonely Christmas Call}
 {meta: artist George Jones}
-{meta: writer George Riddle and George Jones}
+{meta: composer George Riddle and George Jones}
 
 {start_of_verse: Verse 1}
 [C]Won't you beckon [F]to our [C]lonely [G7]Christmas [C]call

@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Merry Go Round}
 {meta: artist Moe Bandy}
-{meta: writer Pat Bunch and Pearly Mitchell}
+{meta: composer Pat Bunch and Pearly Mitchell}
 
 {start_of_verse: Verse 1}
 [C]She stood there with tears in [F]her beautiful eyes

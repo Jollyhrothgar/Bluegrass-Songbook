@@ -1,6 +1,6 @@
 {meta: title Lying Again}
 {meta: artist Freddie Hart}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]She's out there somewhere but I don't really [C]care

@@ -1,6 +1,6 @@
 {meta: title Drive Me To Drink}
 {meta: artist George Jones}
-{meta: writer Mike Huffman and Gene Dobbins}
+{meta: composer Mike Huffman and Gene Dobbins}
 
 {start_of_verse: Verse 1}
 [C]Tonight do me a favor

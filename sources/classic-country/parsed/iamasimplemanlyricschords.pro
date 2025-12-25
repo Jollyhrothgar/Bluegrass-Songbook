@@ -1,6 +1,6 @@
 {meta: title I Am A Simple Man}
 {meta: artist Ricky Van Shelton}
-{meta: writer Walt Aldridge}
+{meta: composer Walt Aldridge}
 
 {start_of_verse: Verse 1}
 [C]I don't know why you want to start with me

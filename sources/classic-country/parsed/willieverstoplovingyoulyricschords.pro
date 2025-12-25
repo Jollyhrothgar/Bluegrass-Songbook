@@ -1,6 +1,6 @@
 {meta: title Will I Ever Stop Loving You}
 {meta: artist Jim Ed Brown}
-{meta: writer Jean Chapel and Alda Calongne}
+{meta: composer Jean Chapel and Alda Calongne}
 
 {start_of_verse: Verse 1}
 [G]Will I ever [D7]stop loving [C]you[D7]

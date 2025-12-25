@@ -1,6 +1,6 @@
 {meta: title Oakie Boogie}
 {meta: artist The Baylor Brothers}
-{meta: writer Johnny Tyler}
+{meta: composer Johnny Tyler}
 
 {start_of_verse: Verse 1}
 [C]Now listen here friends and I gotta tell you

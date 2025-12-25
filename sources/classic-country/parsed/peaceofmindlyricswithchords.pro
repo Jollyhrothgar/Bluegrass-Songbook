@@ -1,6 +1,6 @@
 {meta: title Peace Of Mind}
 {meta: artist Red Sovine}
-{meta: writer Art Bishop}
+{meta: composer Art Bishop}
 
 {start_of_verse: Verse 1}
 [D7](Peace of mind [G]will I find [D7]peace of mind [A7]will I [D7]find)

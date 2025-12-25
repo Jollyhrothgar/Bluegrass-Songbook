@@ -1,6 +1,6 @@
 {meta: title Money Tree}
 {meta: artist Merle Haggard}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]Silver and gold made [C]you say [G]goodbye

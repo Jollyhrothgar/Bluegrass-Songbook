@@ -1,6 +1,6 @@
 {meta: title What's New With You}
 {meta: artist Con Hunley}
-{meta: writer Dean Dillon and Charles Quillen}
+{meta: composer Dean Dillon and Charles Quillen}
 
 {start_of_verse: Verse 1}
 [C]Well hello how've you been  [F]you're a sight to see

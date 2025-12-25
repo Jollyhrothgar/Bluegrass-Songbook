@@ -1,6 +1,6 @@
 {meta: title When I Get Lonely}
 {meta: artist David Ball}
-{meta: writer James House and David Ball}
+{meta: composer James House and David Ball}
 
 {start_of_verse: Verse 1}
 [F]Your daddy called you down to the farm

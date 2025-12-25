@@ -1,6 +1,6 @@
 {meta: title Hungry For Love}
 {meta: artist Patsy Cline}
-{meta: writer Eddie Miller & W.S. Stevenson}
+{meta: composer Eddie Miller & W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [C]I'm hungry for love

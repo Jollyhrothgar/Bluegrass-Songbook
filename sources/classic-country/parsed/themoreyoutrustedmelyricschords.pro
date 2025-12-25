@@ -1,6 +1,6 @@
 {meta: title The More You Trusted Me}
 {meta: artist Tommy Overstreet}
-{meta: writer Dale Vest and Tommy Overstreet}
+{meta: composer Dale Vest and Tommy Overstreet}
 
 {start_of_verse: Verse 1}
 [G7]Your nights are [C]empty  [G7] with promises [C]again

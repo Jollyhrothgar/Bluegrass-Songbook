@@ -1,6 +1,6 @@
 {meta: title Takin' Chances}
 {meta: artist Porter Wagoner}
-{meta: writer Woody Hill, Ina Hill, Kenny Roberts}
+{meta: composer Woody Hill, Ina Hill, Kenny Roberts}
 
 {start_of_verse: Verse 1}
 [G]Takin' chances must be your trade 

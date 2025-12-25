@@ -1,6 +1,6 @@
 {meta: title Little Georgia Rose}
 {meta: artist The Seldom Scene}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [G]Way [C]down in the blue ridge [G]mountain

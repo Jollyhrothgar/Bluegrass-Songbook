@@ -1,6 +1,6 @@
 {meta: title Bitterweeds}
 {meta: artist Larry Sparks}
-{meta: writer Sonya Wood and Barbara Wilkinson}
+{meta: composer Sonya Wood and Barbara Wilkinson}
 
 {start_of_verse: Verse 1}
 [Em]Wild flowers grew out her [D7]backdoor

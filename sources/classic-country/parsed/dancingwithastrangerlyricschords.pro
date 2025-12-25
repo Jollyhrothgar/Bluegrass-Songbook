@@ -1,6 +1,6 @@
 {meta: title Dancing With A Stranger}
 {meta: artist Kitty Wells}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]While you're dancing with a [D7]stranger

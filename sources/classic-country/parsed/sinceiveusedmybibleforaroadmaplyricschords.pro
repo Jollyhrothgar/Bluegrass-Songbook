@@ -1,6 +1,6 @@
 {meta: title Since I've Used My Bible For A Road Map}
 {meta: artist Reno and Smiley}
-{meta: writer Don Reno and Charles Schroeder}
+{meta: composer Don Reno and Charles Schroeder}
 
 {start_of_verse: Verse 1}
 [G]Since I've used my bible for a [C]road map

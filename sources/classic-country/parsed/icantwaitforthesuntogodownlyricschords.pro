@@ -1,6 +1,6 @@
 {meta: title I Can't Wait For The Sun To Go Down}
 {meta: artist Faron Young}
-{meta: writer Martha Carson, Chet Atkins, Sid Kessel}
+{meta: composer Martha Carson, Chet Atkins, Sid Kessel}
 
 {start_of_verse: Verse 1}
 [C]I can't wait for the sun to go down to get you under the [G7]moon

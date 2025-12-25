@@ -1,6 +1,6 @@
 {meta: title You Raise Me Up}
 {meta: artist Daniel O'Donnell}
-{meta: writer Brendan Graham and Rolf Lovland}
+{meta: composer Brendan Graham and Rolf Lovland}
 
 {start_of_verse: Verse 1}
 [C]When I am down and [F]oh my soul so [C]weary

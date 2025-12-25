@@ -1,6 +1,6 @@
 {meta: title Run For The Border}
 {meta: artist Johnny Rodriguez}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]A hundred dollars over the border

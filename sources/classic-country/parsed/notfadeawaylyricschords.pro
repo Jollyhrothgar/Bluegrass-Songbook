@@ -1,6 +1,6 @@
 {meta: title Not Fade Away}
 {meta: artist Buddy Holly}
-{meta: writer Charles Hardin, Buddy Holly, Norman Petty}
+{meta: composer Charles Hardin, Buddy Holly, Norman Petty}
 
 {start_of_verse: Verse 1}
 [C]I'm a-gonna tell you how it's gonna [F]be

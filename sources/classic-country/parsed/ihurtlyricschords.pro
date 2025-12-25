@@ -1,6 +1,6 @@
 {meta: title I Hurt}
 {meta: artist Johnny Lee}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]Darkness falls the [F]night has come [C]I have no place to hide[Em]

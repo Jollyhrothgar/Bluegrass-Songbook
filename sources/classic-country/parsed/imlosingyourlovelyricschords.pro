@@ -1,6 +1,6 @@
 {meta: title I’m Losing Your Love}
 {meta: artist Anne Murray}
-{meta: writer Kye Fleming, Hank DeVito, Vince Gill}
+{meta: composer Kye Fleming, Hank DeVito, Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]Stars are falling from your [Am]eyes

@@ -1,6 +1,6 @@
 {meta: title Faded Lights And Lonesome People}
 {meta: artist Billy Walker}
-{meta: writer Wynn Stewart and Wally Lewis}
+{meta: composer Wynn Stewart and Wally Lewis}
 
 {start_of_verse: Verse 1}
 [G]There’s a place I always go where every night’s the same

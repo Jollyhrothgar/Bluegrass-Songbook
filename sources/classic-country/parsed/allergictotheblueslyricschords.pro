@@ -1,6 +1,6 @@
 {meta: title Allergic To The Blues}
 {meta: artist Randy Travis}
-{meta: writer Alan Jackson and Jim McBride}
+{meta: composer Alan Jackson and Jim McBride}
 
 {start_of_verse: Verse 1}
 [G]Yes I hid your car keys honey [C]yes I hid your suitcase

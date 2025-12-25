@@ -1,6 +1,6 @@
 {meta: title Tell Me The Story Of Jesus}
 {meta: artist Rick Wingerter}
-{meta: writer Fanny Crosby and John Sweeney}
+{meta: composer Fanny Crosby and John Sweeney}
 
 {start_of_verse: Verse 1}
 [C]Tell me the story of Jesus

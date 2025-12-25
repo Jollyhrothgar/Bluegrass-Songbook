@@ -1,6 +1,6 @@
 {meta: title So Long}
 {meta: artist Ricky Nelson}
-{meta: writer Donald R. Nelson}
+{meta: composer Donald R. Nelson}
 
 {start_of_verse: Verse 1}
 [C]It's been so long so very [E7]long

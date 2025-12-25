@@ -1,6 +1,6 @@
 {meta: title I Need To Talk To You}
 {meta: artist Reba McEntire}
-{meta: writer Linda Davis, Marcus Franklin Johnson, Tim Owens}
+{meta: composer Linda Davis, Marcus Franklin Johnson, Tim Owens}
 
 {start_of_verse: Verse 1}
 [Am]The whole [G7]town would be [F]talking[C]

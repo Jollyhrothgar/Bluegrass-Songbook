@@ -1,6 +1,6 @@
 {meta: title You Said You Love Me}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino and Dave Bartholomew}
+{meta: composer Antonio Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [C]You said you love me 

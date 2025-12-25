@@ -1,6 +1,6 @@
 {meta: title Two Hearts Deep In The Blues}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Lyle Gaston}
+{meta: composer Hank Thompson and Lyle Gaston}
 
 {start_of_verse: Verse 1}
 [G]I found you sitting there [D7]about to cry

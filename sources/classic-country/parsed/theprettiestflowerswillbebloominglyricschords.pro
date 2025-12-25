@@ -1,6 +1,6 @@
 {meta: title The Prettiest Flowers Will Be Blooming}
 {meta: artist The Forbes Family}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [C]I know there is a land of beautiful [F]flowers

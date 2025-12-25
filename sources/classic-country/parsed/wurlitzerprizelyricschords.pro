@@ -1,6 +1,6 @@
 {meta: title Wurlitzer Prize (I Don’t Want To Get Over You)}
 {meta: artist Waylon Jennings}
-{meta: writer Chips Moman and Bobby Emmons}
+{meta: composer Chips Moman and Bobby Emmons}
 
 {start_of_verse: Verse 1}
 [G]I'm not here to forget you I'm here to recall

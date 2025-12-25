@@ -1,6 +1,6 @@
 {meta: title Going Back To Gloria}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Bill Dees}
+{meta: composer Roy Orbison and Bill Dees}
 
 {start_of_verse: Verse 1}
 [G]Going back to Gloria the girl I'm dreaming [D7]of

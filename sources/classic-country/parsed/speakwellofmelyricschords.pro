@@ -1,6 +1,6 @@
 {meta: title Speak Well of Me}
 {meta: artist George Morgan}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I’m saying goodbye [D7]like I have to do

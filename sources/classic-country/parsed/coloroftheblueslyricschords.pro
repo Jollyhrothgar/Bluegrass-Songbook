@@ -1,6 +1,6 @@
 {meta: title Color Of The Blues}
 {meta: artist George Jones}
-{meta: writer Lawton Williams and George Jones}
+{meta: composer Lawton Williams and George Jones}
 
 {start_of_verse: Verse 1}
 [C]Up above me are the skies

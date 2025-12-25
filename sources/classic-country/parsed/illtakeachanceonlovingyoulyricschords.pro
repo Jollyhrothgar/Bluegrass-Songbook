@@ -1,6 +1,6 @@
 {meta: title I'll Take A Chance On Loving You}
 {meta: artist Buck Owens}
-{meta: writer Chuck Jackson and Marvin Yancy}
+{meta: composer Chuck Jackson and Marvin Yancy}
 
 {start_of_verse: Verse 1}
 [C]If you don't want to run [F]around

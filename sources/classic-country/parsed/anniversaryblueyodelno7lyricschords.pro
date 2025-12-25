@@ -1,6 +1,6 @@
 {meta: title Anniversary Blue Yodel No. 7}
 {meta: artist Hank Snow}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [G]I was a stranger passing through your town

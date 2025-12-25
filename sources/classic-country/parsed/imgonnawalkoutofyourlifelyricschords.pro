@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Walk Out Of Your Life}
 {meta: artist Wanda Jackson}
-{meta: writer Wanda Jackson}
+{meta: composer Wanda Jackson}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna [G7]walk out of your life just like you walked into [C]mine

@@ -1,6 +1,6 @@
 {meta: title I'm Grateful}
 {meta: artist Dottie West}
-{meta: writer Ervin Drake and Jimmy Shirl}
+{meta: composer Ervin Drake and Jimmy Shirl}
 
 {start_of_verse: Verse 1}
 [C]When I look up at the [F]heavens when [G7]day is [C]through

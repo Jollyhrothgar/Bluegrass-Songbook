@@ -1,6 +1,6 @@
 {meta: title Christmas To Me}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [G]Christ[D7]mas to [G]me is [C]wherever [D7]she might [G]be

@@ -1,6 +1,6 @@
 {meta: title We're On Our Way}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert and Sonny James}
+{meta: composer Bob Tubert and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]We're on our [Em]way and [F]life is so [C]wonderful 

@@ -1,6 +1,6 @@
 {meta: title Good Christian Soldier}
 {meta: artist Kris Kristofferson}
-{meta: writer Bobby Bare and Billy Joe Shaver}
+{meta: composer Bobby Bare and Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [C]Not so long [G7]ago in Okla[C]homa

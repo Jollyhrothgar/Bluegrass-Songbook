@@ -1,6 +1,6 @@
 {meta: title How Can I Be Sure}
 {meta: artist Ernest Tubb}
-{meta: writer Rex Griffin and Ernest Tubb}
+{meta: composer Rex Griffin and Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [G]You only want to break my heart once [A7]more

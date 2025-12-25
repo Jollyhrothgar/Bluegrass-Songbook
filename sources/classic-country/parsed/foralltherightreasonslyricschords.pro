@@ -1,6 +1,6 @@
 {meta: title For All the Right Reasons}
 {meta: artist Conway Twitty}
-{meta: writer Billy Ray Reynolds and Marie Barrett Hartford}
+{meta: composer Billy Ray Reynolds and Marie Barrett Hartford}
 
 {start_of_verse: Verse 1}
 [C]When warm feelings

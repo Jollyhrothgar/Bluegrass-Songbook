@@ -1,6 +1,6 @@
 {meta: title He made A Rainbow Of My Tears}
 {meta: artist The Cathedrals}
-{meta: writer George Younce}
+{meta: composer George Younce}
 
 {start_of_verse: Verse 1}
 [G]He made A [D7]Rainbow Of My [G]Tears

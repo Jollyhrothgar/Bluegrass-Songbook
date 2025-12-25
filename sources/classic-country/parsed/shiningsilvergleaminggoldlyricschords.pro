@@ -1,6 +1,6 @@
 {meta: title Shining Silver Gleaming Gold}
 {meta: artist Rose Maddox}
-{meta: writer Billy Hodges, Black Jack Wayne, Rose Maddox}
+{meta: composer Billy Hodges, Black Jack Wayne, Rose Maddox}
 
 {start_of_verse: Verse 1}
 [G]Shining silver gleaming gold love is [C]trouble love is [G]cold

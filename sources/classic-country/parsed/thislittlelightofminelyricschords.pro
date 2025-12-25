@@ -1,6 +1,6 @@
 {meta: title This Little Light Of Mine}
 {meta: artist Brenda Lee}
-{meta: writer Harry Dixon Loes}
+{meta: composer Harry Dixon Loes}
 
 {start_of_verse: Verse 1}
 [G]This little light of mine 

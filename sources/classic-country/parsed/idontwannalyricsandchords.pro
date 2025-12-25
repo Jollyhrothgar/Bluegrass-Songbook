@@ -1,6 +1,6 @@
 {meta: title I Don't Wanna}
 {meta: artist Patsy Cline}
-{meta: writer Eddie Miller, W.S. Stevenson, Durwood Haddock}
+{meta: composer Eddie Miller, W.S. Stevenson, Durwood Haddock}
 
 {start_of_verse: Verse 1}
 [G]Don't wanta walk unless I'm walkin' with [D7]you

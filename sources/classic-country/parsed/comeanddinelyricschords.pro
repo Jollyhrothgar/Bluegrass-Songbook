@@ -1,6 +1,6 @@
 {meta: title Come And Dine}
 {meta: artist Paul Williams}
-{meta: writer Charles B. Widmeyer}
+{meta: composer Charles B. Widmeyer}
 
 {start_of_verse: Verse 1}
 [G]Jesus has a table spread

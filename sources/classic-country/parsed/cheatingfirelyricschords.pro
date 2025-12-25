@@ -1,6 +1,6 @@
 {meta: title Cheating Fire}
 {meta: artist Conway Twitty}
-{meta: writer Russ Allison, Donald Miller, Dave Hall}
+{meta: composer Russ Allison, Donald Miller, Dave Hall}
 
 {start_of_verse: Verse 1}
 [C]Cheating fire  [F]gonna burn [C]higher

@@ -1,6 +1,6 @@
 {meta: title Deep In The Heart Of Texas}
 {meta: artist Hank Thompson}
-{meta: writer Don Swander and June Hershey}
+{meta: composer Don Swander and June Hershey}
 
 {start_of_verse: Verse 1}
 [C]The stars at night are big and bright

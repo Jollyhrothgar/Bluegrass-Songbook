@@ -1,6 +1,6 @@
 {meta: title If The World Had A Front Porch}
 {meta: artist Tracy Lawrence}
-{meta: writer Kenny Beard, Paul Nelson, Tracy Lawrence}
+{meta: composer Kenny Beard, Paul Nelson, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [C]It was where my momma sat on that old [G7]swing with her [C]crochet

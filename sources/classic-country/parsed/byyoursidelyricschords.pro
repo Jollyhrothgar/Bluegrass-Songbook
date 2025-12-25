@@ -1,6 +1,6 @@
 {meta: title By Your Side}
 {meta: artist Dottie West}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]If it's wrong to feel this [C]way about you [G]baby

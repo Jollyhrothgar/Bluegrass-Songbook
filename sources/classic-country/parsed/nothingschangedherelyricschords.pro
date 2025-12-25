@@ -1,6 +1,6 @@
 {meta: title Nothing's Changed Here}
 {meta: artist Dwight Yoakam}
-{meta: writer Dwight Yoakam and Kostas}
+{meta: composer Dwight Yoakam and Kostas}
 
 {start_of_verse: Verse 1}
 [C]I hear you walking [F]  across the [C]floor

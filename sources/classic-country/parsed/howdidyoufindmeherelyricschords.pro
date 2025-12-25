@@ -1,6 +1,6 @@
 {meta: title How Did You Find Me Here}
 {meta: artist Merle Haggard}
-{meta: writer Merle and Theresa Haggard}
+{meta: composer Merle and Theresa Haggard}
 
 {start_of_verse: Verse 1}
 [C]How did you find me how did you know

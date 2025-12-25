@@ -1,6 +1,6 @@
 {meta: title I'm Tired Of Being Something That Means Nothing To You}
 {meta: artist Ron Williams}
-{meta: writer LaDonna Brewer and Davis Capps}
+{meta: composer LaDonna Brewer and Davis Capps}
 
 {start_of_verse: Verse 1}
 [C]Everybody tells me I'd be [F]better off  [G7]without [C]you

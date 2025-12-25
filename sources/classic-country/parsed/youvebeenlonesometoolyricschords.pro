@@ -1,6 +1,6 @@
 {meta: title You've Been Lonesome Too}
 {meta: artist Alan Jackson}
-{meta: writer Hank Williams and Alan Jackson}
+{meta: composer Hank Williams and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]If your heart has known such pain

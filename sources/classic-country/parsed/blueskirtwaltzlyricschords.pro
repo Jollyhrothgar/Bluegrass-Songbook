@@ -1,6 +1,6 @@
 {meta: title Blue Skirt Waltz}
 {meta: artist Hank Thompson}
-{meta: writer Mitchell Parish - Music by Vaclav Blaha}
+{meta: composer Mitchell Parish - Music by Vaclav Blaha}
 {meta: music Vaclav Blaha}
 
 {start_of_verse: Verse 1}

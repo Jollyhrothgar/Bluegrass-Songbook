@@ -1,6 +1,6 @@
 {meta: title Lonely Christmas Again}
 {meta: artist Dave Dudley}
-{meta: writer Dave Dudley and Jimmy Key}
+{meta: composer Dave Dudley and Jimmy Key}
 
 {start_of_verse: Verse 1}
 [F](Lonely [G7]Christmas [C]again)

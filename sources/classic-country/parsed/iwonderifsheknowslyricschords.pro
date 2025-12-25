@@ -1,6 +1,6 @@
 {meta: title I Wonder If She Knows}
 {meta: artist Wanda Jackson}
-{meta: writer Yvonne Devaney}
+{meta: composer Yvonne Devaney}
 
 {start_of_verse: Verse 1}
 [C]I wonder if she knows [F]how much she hurt [C]you

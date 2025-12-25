@@ -1,6 +1,6 @@
 {meta: title Wasted Way Of Life}
 {meta: artist Lefty Frizzell}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [C]Don't tempt me if I should pass your [F]door

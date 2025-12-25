@@ -1,6 +1,6 @@
 {meta: title It's Gonna Be One Of Those Days}
 {meta: artist Carl Smith}
-{meta: writer Tim Cantin}
+{meta: composer Tim Cantin}
 
 {start_of_verse: Verse 1}
 [C]I got up this morning old man [F]sunshine smiled at [C]me

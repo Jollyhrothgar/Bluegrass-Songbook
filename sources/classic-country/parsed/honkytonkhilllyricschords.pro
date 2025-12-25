@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Hill}
 {meta: artist Lefty Frizzell}
-{meta: writer A.L. Owens and Sanger D. Schafer}
+{meta: composer A.L. Owens and Sanger D. Schafer}
 
 {start_of_verse: Verse 1}
 [G]Just outside the [F]law [G]around some where’s [D7]Arkansas

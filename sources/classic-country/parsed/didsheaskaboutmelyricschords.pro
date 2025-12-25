@@ -1,6 +1,6 @@
 {meta: title Did She Ask About Me}
 {meta: artist Cal Smith}
-{meta: writer Carmol Taylor}
+{meta: composer Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [C](Did she [G7]ask about [F]m-[C]e)

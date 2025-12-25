@@ -1,6 +1,6 @@
 {meta: title I Don't Love You Anymore}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]I don't love you [F]any-more [C]not the way [F]I did [C]before

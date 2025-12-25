@@ -1,6 +1,6 @@
 {meta: title For My Baby}
 {meta: artist Cal Smith}
-{meta: writer Clyde Otis and Brook Benton}
+{meta: composer Clyde Otis and Brook Benton}
 
 {start_of_verse: Verse 1}
 [C]When you see me smile I'm smiling for my baby

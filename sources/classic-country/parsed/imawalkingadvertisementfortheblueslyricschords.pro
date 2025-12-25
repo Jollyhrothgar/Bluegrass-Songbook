@@ -1,6 +1,6 @@
 {meta: title I'm A Walking Advertisement For The Blues}
 {meta: artist Norma Jean}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]I've got eyes that don't stop crying lips that smile no [F]more

@@ -1,6 +1,6 @@
 {meta: title Right On The Money}
 {meta: artist Alan Jackson}
-{meta: writer Charlie Black and Phil Vassar}
+{meta: composer Charlie Black and Phil Vassar}
 
 {start_of_verse: Verse 1}
 [C]Let's begin with the [D7]day I [G7]met her

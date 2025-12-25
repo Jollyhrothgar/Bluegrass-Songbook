@@ -1,6 +1,6 @@
 {meta: title It's Too Much Like Lonesome}
 {meta: artist Wynn Stewart}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]My mailbox still stands  [G7]but I don't [C]need it

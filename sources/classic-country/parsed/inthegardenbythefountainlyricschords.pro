@@ -1,6 +1,6 @@
 {meta: title In The Garden By The Fountain}
 {meta: artist Rhonda Vincent}
-{meta: writer Roger Brown}
+{meta: composer Roger Brown}
 
 {start_of_verse: Verse 1}
 [G]Everything I [C]ever wanted

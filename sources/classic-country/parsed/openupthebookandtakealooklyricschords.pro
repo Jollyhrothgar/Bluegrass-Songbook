@@ -1,6 +1,6 @@
 {meta: title Open Up The Book And Take A Look}
 {meta: artist Ferlin Husky}
-{meta: writer Ferlin Husky, Lester Vanadore,}
+{meta: composer Ferlin Husky, Lester Vanadore,}
 
 {start_of_verse: Verse 1}
 [C]It's all [F]written [C]there

@@ -1,6 +1,6 @@
 {meta: title You Can't Stop The Wild Wind From Blowing}
 {meta: artist Bobby Bare}
-{meta: writer Curly Putman and Red Lane}
+{meta: composer Curly Putman and Red Lane}
 
 {start_of_verse: Verse 1}
 Intro:

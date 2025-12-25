@@ -1,6 +1,6 @@
 {meta: title Across The Wide Missouri}
 {meta: artist Ray Price}
-{meta: writer Ervin Drake and Jimmy Shirl}
+{meta: composer Ervin Drake and Jimmy Shirl}
 
 {start_of_verse: Verse 1}
 [C]My true love stands [G7]across the [C]river 

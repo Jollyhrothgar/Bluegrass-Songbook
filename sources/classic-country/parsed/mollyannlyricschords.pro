@@ -1,6 +1,6 @@
 {meta: title Molly Ann}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [G]I'd like to take a piece of chalk

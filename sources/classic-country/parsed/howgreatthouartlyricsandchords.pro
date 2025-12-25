@@ -1,6 +1,6 @@
 {meta: title How Great Thou Art}
 {meta: artist Elvis Presley}
-{meta: writer Stuart Hine}
+{meta: composer Stuart Hine}
 
 {start_of_verse: Verse 1}
 [G]Oh [D7]Lord my God [G]when I in awesome [C]wonder

@@ -1,6 +1,6 @@
 {meta: title Every Time That It Rains}
 {meta: artist Garth Brooks}
-{meta: writer Garth Brooks and Ty England}
+{meta: composer Garth Brooks and Ty England}
 
 {start_of_verse: Verse 1}
 [C]Stuck in an [G7]airport in [C]Austin

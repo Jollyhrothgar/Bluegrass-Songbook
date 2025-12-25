@@ -1,6 +1,6 @@
 {meta: title Blue Velvet}
 {meta: artist Bobby Vinton}
-{meta: writer Bernie Wayne/Lee Morris}
+{meta: composer Bernie Wayne/Lee Morris}
 
 {start_of_verse: Verse 1}
 [G7]She wore [C]bl-ue [Em]velvet

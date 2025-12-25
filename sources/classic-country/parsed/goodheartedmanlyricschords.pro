@@ -1,6 +1,6 @@
 {meta: title Good Hearted Man}
 {meta: artist Fats Domino}
-{meta: writer Antoine Domino and Dave Bartholomew}
+{meta: composer Antoine Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [G]You got me walkin' the floor

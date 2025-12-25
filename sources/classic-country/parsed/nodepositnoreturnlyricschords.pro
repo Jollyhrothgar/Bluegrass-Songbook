@@ -1,6 +1,6 @@
 {meta: title No Deposit No Return}
 {meta: artist Billy Crash Craddock}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [C]Gypsy woman [F]bring your crystal ball and sit with [C]me awhile

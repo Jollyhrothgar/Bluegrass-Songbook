@@ -1,6 +1,6 @@
 {meta: title Broken Pieces of My Heart}
 {meta: artist Lee Greenwood}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]It's a shame we didn't make it

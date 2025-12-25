@@ -1,6 +1,6 @@
 {meta: title Lonesome On'ry And Mean}
 {meta: artist Waylon Jennings}
-{meta: writer Steve Young}
+{meta: composer Steve Young}
 
 {start_of_verse: Verse 1}
 [C]On a Greyhound bus Lord I'm [F]traveling this [C]morning

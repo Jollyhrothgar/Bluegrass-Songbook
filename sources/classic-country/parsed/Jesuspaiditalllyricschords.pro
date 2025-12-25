@@ -1,6 +1,6 @@
 {meta: title Jesus Paid It All}
 {meta: artist Joey and Rory}
-{meta: writer Elvina Hall and John Grape}
+{meta: composer Elvina Hall and John Grape}
 
 {start_of_verse: Verse 1}
 [C]I hear the Savior [Am]say

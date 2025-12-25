@@ -1,6 +1,6 @@
 {meta: title If I Ever Get Lucky}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Lou Bradley}
+{meta: composer Merle Haggard and Lou Bradley}
 
 {start_of_verse: Verse 1}
 [G]If I ever get lucky [C]I'll find the right woman for [G]me

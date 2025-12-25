@@ -1,6 +1,6 @@
 {meta: title Imagine That}
 {meta: artist Don Williams}
-{meta: writer Kieran Kane and Jamie O'Hara}
+{meta: composer Kieran Kane and Jamie O'Hara}
 
 {start_of_verse: Verse 1}
 [C]No more nights sleeping alone 

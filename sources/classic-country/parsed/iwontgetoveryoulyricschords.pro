@@ -1,6 +1,6 @@
 {meta: title I Won't Get Over You}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene Martin}
+{meta: composer Lloene Martin}
 
 {start_of_verse: Verse 1}
 [C]When you told [G7]me good[C]bye you [G7]said don’t you cry

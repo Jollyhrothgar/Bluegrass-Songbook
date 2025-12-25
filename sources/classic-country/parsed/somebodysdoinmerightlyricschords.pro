@@ -1,6 +1,6 @@
 {meta: title Somebody's Doin' Me Right}
 {meta: artist Keith Whitley}
-{meta: writer J. Fred Knobloch, Paul Overstreet, Dan Tyler}
+{meta: composer J. Fred Knobloch, Paul Overstreet, Dan Tyler}
 
 {start_of_verse: Verse 1}
 [F]Runnin' around I've spent my whole life [C]runnin' around 

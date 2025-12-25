@@ -1,6 +1,6 @@
 {meta: title The Shepherd's Call}
 {meta: artist Crabb Family}
-{meta: writer Gerald Crabb}
+{meta: composer Gerald Crabb}
 
 {start_of_verse: Verse 1}
 [G]I wandered far from the fold where I was [C]safe

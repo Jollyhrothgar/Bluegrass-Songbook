@@ -1,6 +1,6 @@
 {meta: title Sunshine}
 {meta: artist Don Gibson}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [C]Sunshine you may find my window but you can't find [F]me

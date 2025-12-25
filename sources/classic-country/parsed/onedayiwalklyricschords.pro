@@ -1,6 +1,6 @@
 {meta: title One Day I Walk}
 {meta: artist Anne Murray}
-{meta: writer Bruce Cockburn}
+{meta: composer Bruce Cockburn}
 
 {start_of_verse: Verse 1}
 [C]Oh I have been a [Am]beggar and [D7]shall be one [C]again

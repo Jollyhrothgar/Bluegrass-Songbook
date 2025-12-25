@@ -1,6 +1,6 @@
 {meta: title Rainbow Colored Words}
 {meta: artist Johnny Bush}
-{meta: writer Johnny Bush and David Green}
+{meta: composer Johnny Bush and David Green}
 
 {start_of_verse: Verse 1}
 [C]When I fall in love I'll love forever [G7]

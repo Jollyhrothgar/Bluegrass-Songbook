@@ -1,6 +1,6 @@
 {meta: title It Never Will Be Over For Me}
 {meta: artist Tony Booth}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]You're standing there ex[F]plaining that it's [C]over

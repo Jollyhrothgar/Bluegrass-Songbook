@@ -1,6 +1,6 @@
 {meta: title It’s Not The Miles You Traveled}
 {meta: artist Faron Young}
-{meta: writer David Hall and Louis Redding}
+{meta: composer David Hall and Louis Redding}
 
 {start_of_verse: Verse 1}
 [G]I see that you're well traveled probably [C]been around the [D7]world

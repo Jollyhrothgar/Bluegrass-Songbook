@@ -1,6 +1,6 @@
 {meta: title Lone Star Love}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton and Larry Cheshier}
+{meta: composer Glenn Sutton and Larry Cheshier}
 
 {start_of_verse: Verse 1}
 [C]Dallas Ft Worth San Antone

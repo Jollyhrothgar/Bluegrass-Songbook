@@ -1,6 +1,6 @@
 {meta: title I Hope You're Crying Too}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Cathy Annadale}
+{meta: composer Cathy Annadale}
 
 {start_of_verse: Verse 1}
 [G]I walk the lonely streets at night I always search for [C]you

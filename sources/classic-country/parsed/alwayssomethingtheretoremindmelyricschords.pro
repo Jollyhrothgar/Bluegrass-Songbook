@@ -1,6 +1,6 @@
 {meta: title Always Something There To Remind Me}
 {meta: artist Brenda Lee}
-{meta: writer Hal David and Burt Bacharach}
+{meta: composer Hal David and Burt Bacharach}
 
 {start_of_verse: Verse 1}
 [C]I walk along the city [C7]streets you used to [F]walk along with [Fm]me

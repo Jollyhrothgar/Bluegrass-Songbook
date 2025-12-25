@@ -1,6 +1,6 @@
 {meta: title Gettin' Soft On You}
 {meta: artist Faron Young}
-{meta: writer Eddie Pleasant and Hank Williams Jr.}
+{meta: composer Eddie Pleasant and Hank Williams Jr.}
 
 {start_of_verse: Verse 1}
 [G]I'm well aware [C]she's your best [G]friend

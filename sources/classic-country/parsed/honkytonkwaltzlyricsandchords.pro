@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Waltz}
 {meta: artist Ray Stevens}
-{meta: writer Paul Craft}
+{meta: composer Paul Craft}
 
 {start_of_verse: Verse 1}
 [C]A honky tonk waltz [F]the juke box was [C]playin'

@@ -1,6 +1,6 @@
 {meta: title Down At Ginny's}
 {meta: artist Tony Booth}
-{meta: writer Guyanne McCall and Justin Trevino}
+{meta: composer Guyanne McCall and Justin Trevino}
 
 {start_of_verse: Verse 1}
 [C]Ginny's ain't no place to be when you're [F]lonely

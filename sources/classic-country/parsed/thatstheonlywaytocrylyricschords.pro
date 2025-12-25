@@ -1,6 +1,6 @@
 {meta: title That's The Only Way To Cry}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart and Cliff Massey}
+{meta: composer Wynn Stewart and Cliff Massey}
 
 {start_of_verse: Verse 1}
 [C]That's the only way to [F]cry  [G7]that's the only way to [C]cry

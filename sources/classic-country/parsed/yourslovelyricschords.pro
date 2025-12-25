@@ -1,6 +1,6 @@
 {meta: title Yours Love}
 {meta: artist Dolly Parton}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]May the fruit of my toil  be yours [D7]love

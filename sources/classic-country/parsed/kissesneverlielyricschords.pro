@@ -1,6 +1,6 @@
 {meta: title Kisses Never Lie}
 {meta: artist Carl Smith}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]Don’t hold me close and say you love [Bm]me

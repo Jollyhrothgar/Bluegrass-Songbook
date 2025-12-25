@@ -1,6 +1,6 @@
 {meta: title If You Only Knew}
 {meta: artist Randy Travis}
-{meta: writer Rob Mathes and Phil Naish}
+{meta: composer Rob Mathes and Phil Naish}
 
 {start_of_verse: Verse 1}
 [C]By my [F]grandfather's [F][C]bed

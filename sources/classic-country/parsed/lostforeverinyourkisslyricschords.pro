@@ -1,6 +1,6 @@
 {meta: title Lost Forever In Your Kiss}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]This is not at all like me I [F]never thought that I could [C]be

@@ -1,6 +1,6 @@
 {meta: title Merry Christmas We Must Be Having One}
 {meta: artist Tammy Wynette}
-{meta: writer Norris Wilson and Danny Walls}
+{meta: composer Norris Wilson and Danny Walls}
 
 {start_of_verse: Verse 1}
 [C]Silent Night has [F]never sounded any [C]sweeter

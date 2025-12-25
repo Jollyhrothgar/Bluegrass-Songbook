@@ -1,6 +1,6 @@
 {meta: title Just Another Lie}
 {meta: artist Brenda Lee}
-{meta: writer Ernest Suarez}
+{meta: composer Ernest Suarez}
 
 {start_of_verse: Verse 1}
 [D7]Why do I [G]cry why do I [G7]sigh 

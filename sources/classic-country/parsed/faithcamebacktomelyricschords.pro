@@ -1,6 +1,6 @@
 {meta: title Faith Came Back To Me}
 {meta: artist The Bellamy Brothers}
-{meta: writer Howard Bellamy}
+{meta: composer Howard Bellamy}
 
 {start_of_verse: Verse 1}
 [C]I was raised on the good book 

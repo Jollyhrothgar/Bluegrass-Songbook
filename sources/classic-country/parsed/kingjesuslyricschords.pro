@@ -1,6 +1,6 @@
 {meta: title King Jesus}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Maurice Delamont}
+{meta: composer Maurice Delamont}
 
 {start_of_verse: Verse 1}
 [G]All the armies of the [C]world will someday [G]gather

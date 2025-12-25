@@ -1,6 +1,6 @@
 {meta: title Love You Like It's Our Last Time}
 {meta: artist Dailey and Vincent}
-{meta: writer Jamie S. Dailey and Jeffery J. East}
+{meta: composer Jamie S. Dailey and Jeffery J. East}
 
 {start_of_verse: Verse 1}
 [G]If I was a [D7]king I would [C]give you a [G]castle

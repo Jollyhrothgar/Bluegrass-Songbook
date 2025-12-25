@@ -1,6 +1,6 @@
 {meta: title Forty Miles From Popular Bluff}
 {meta: artist Porter Wagoner}
-{meta: writer Frank Dycus and Larry Kingston}
+{meta: composer Frank Dycus and Larry Kingston}
 
 {start_of_verse: Verse 1}
 [G]I never had a pair of shoes that weren't old hand me [C]downs

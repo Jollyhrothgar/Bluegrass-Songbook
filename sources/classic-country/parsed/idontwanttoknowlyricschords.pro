@@ -1,6 +1,6 @@
 {meta: title I Don't Want to Know}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Don Clay}
+{meta: composer Hank Thompson and Don Clay}
 
 {start_of_verse: Verse 1}
 [G]They say what you don't know will never hurt [C]you

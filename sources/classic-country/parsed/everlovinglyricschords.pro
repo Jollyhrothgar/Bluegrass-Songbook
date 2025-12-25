@@ -1,6 +1,6 @@
 {meta: title Everloving}
 {meta: artist Ricky Nelson}
-{meta: writer D. Burgess}
+{meta: composer D. Burgess}
 
 {start_of_verse: Verse 1}
 [C]Everloving [F]oooh ever[G7]loving

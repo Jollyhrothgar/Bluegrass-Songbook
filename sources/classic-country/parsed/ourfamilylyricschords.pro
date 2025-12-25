@@ -1,6 +1,6 @@
 {meta: title Our Family}
 {meta: artist The Bellamy Brothers}
-{meta: writer Bobby Braddock and David Bellamy}
+{meta: composer Bobby Braddock and David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]They let Bubba out of prison he [D7]paid for his crime

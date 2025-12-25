@@ -1,6 +1,6 @@
 {meta: title It Hurt Me So}
 {meta: artist Charlie Rich}
-{meta: writer Charlie Rich and William E. Justis Jr.}
+{meta: composer Charlie Rich and William E. Justis Jr.}
 
 {start_of_verse: Verse 1}
 [C]It hurt me so you'll never [G7]know how much it [C]hurt me [C7]

@@ -1,6 +1,6 @@
 {meta: title If This House Could Talk}
 {meta: artist Stonewall Jackson}
-{meta: writer Hugh X. Lewis}
+{meta: composer Hugh X. Lewis}
 
 {start_of_verse: Verse 1}
 [F]If this house could talk oh what a [C]story 

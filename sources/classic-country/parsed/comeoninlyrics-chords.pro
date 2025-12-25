@@ -1,6 +1,6 @@
 {meta: title Come On In}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Rick Giles and George Green}
+{meta: composer Rick Giles and George Green}
 
 {start_of_verse: Verse 1}
 [G]When I get tired and a little lonely 

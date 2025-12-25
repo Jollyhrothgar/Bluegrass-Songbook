@@ -1,6 +1,6 @@
 {meta: title I’ll Be Waiting}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson and Moneen Carpenter}
+{meta: composer Bill Anderson and Moneen Carpenter}
 
 {start_of_verse: Verse 1}
 [C]Packed my things and [G7]went [C]away a thousand years [F]ago [C]today

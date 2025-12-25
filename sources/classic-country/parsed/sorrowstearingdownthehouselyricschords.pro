@@ -1,6 +1,6 @@
 {meta: title Sorrow’s Tearing Down The House}
 {meta: artist Porter Wagoner}
-{meta: writer Mel Tillis and Kent Westberry}
+{meta: composer Mel Tillis and Kent Westberry}
 
 {start_of_verse: Verse 1}
 [C]I met you [G7]and we [C]married we [F]planned our future [C]well

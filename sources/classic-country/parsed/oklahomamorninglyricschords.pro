@@ -1,6 +1,6 @@
 {meta: title Oklahoma Morning}
 {meta: artist Charlie Pride}
-{meta: writer Jim Chesnut}
+{meta: composer Jim Chesnut}
 
 {start_of_verse: Verse 1}
 [C]On an early autumn day

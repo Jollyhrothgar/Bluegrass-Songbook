@@ -1,6 +1,6 @@
 {meta: title I'll Wake You Up When I Get Home Lyrics and Chords}
 {meta: artist Charlie Rich}
-{meta: writer Steve Dorff and Milton Brown}
+{meta: composer Steve Dorff and Milton Brown}
 
 {start_of_verse: Verse 1}
 [G]Spent the day just missing you [C]remembering your touch

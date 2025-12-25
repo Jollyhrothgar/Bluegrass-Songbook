@@ -1,6 +1,6 @@
 {meta: title You'd Better Go}
 {meta: artist Jean Shepard}
-{meta: writer Harlan Howard and Wynn Stewart}
+{meta: composer Harlan Howard and Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [C]You'd better go [G7]each moment that you [C]linger

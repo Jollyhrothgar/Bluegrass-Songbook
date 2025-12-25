@@ -1,6 +1,6 @@
 {meta: title The Guns Of Johnny Rondo}
 {meta: artist Faron Young}
-{meta: writer Joe Lubin, Gerald Day, Harry Surman}
+{meta: composer Joe Lubin, Gerald Day, Harry Surman}
 
 {start_of_verse: Verse 1}
 [C]Sixteen [F]tried sixteen died at the hands of Johnny [C]Rondo

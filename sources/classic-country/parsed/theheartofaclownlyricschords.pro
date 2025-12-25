@@ -1,6 +1,6 @@
 {meta: title The Heart of a Clown}
 {meta: artist Gene Watson}
-{meta: writer Steve Nelson, Jack Rollins and}
+{meta: composer Steve Nelson, Jack Rollins and}
 
 {start_of_verse: Verse 1}
 [G]If I  had the [C]heart of a [G]clown

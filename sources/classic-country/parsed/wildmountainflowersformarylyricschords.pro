@@ -1,6 +1,6 @@
 {meta: title Wild Mountain Flowers For Mary}
 {meta: artist Lost and Found}
-{meta: writer Allen Mills}
+{meta: composer Allen Mills}
 
 {start_of_verse: Verse 1}
 [C]We grew up living close to each [G7]other

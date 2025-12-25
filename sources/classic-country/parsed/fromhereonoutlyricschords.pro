@@ -1,6 +1,6 @@
 {meta: title From Here On Out}
 {meta: artist Jack Greene}
-{meta: writer Hank Cochran and Buddy Killen}
+{meta: composer Hank Cochran and Buddy Killen}
 
 {start_of_verse: Verse 1}
 [G]From [D7]here on [G]out I'm gonna love you like I should

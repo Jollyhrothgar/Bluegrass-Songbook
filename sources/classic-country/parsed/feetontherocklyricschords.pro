@@ -1,6 +1,6 @@
 {meta: title Feet On The Rock}
 {meta: artist Randy Travis}
-{meta: writer Troy Seals and Buck Moore}
+{meta: composer Troy Seals and Buck Moore}
 
 {start_of_verse: Verse 1}
 [C]Well I wanna talk to you for a minute [G]about an old man I met

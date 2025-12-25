@@ -1,6 +1,6 @@
 {meta: title Someday We'll Be Together}
 {meta: artist Bill Anderson}
-{meta: writer Jackey Beavers, Johnny Bristol, Harvey Fuqua}
+{meta: composer Jackey Beavers, Johnny Bristol, Harvey Fuqua}
 
 {start_of_verse: Verse 1}
 [G]Someday  [D7]we'll be [C]toge[G]ther say it say it say it again

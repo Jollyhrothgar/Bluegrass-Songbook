@@ -1,6 +1,6 @@
 {meta: title All I Ever Give Is In}
 {meta: artist Kitty Wells}
-{meta: writer Eddie Pleasant}
+{meta: composer Eddie Pleasant}
 
 {start_of_verse: Verse 1}
 [G7]You [C]give me the devil when my [F]hair's not fixed [D7]right

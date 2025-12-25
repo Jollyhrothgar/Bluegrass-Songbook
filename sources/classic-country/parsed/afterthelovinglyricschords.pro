@@ -1,6 +1,6 @@
 {meta: title After The Loving}
 {meta: artist Faron Young}
-{meta: writer Richie Adams and Alan Bernstein}
+{meta: composer Richie Adams and Alan Bernstein}
 
 {start_of_verse: Verse 1}
 [C]So I will sing to sleep after the loving

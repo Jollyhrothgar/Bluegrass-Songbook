@@ -1,6 +1,6 @@
 {meta: title After Texas}
 {meta: artist Darrell McCall}
-{meta: writer Bucky Jones and James Martin Johnson}
+{meta: composer Bucky Jones and James Martin Johnson}
 
 {start_of_verse: Verse 1}
 [G]Where do you go after [D7]Texas 

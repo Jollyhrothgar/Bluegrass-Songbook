@@ -1,6 +1,6 @@
 {meta: title You Haven't Heard The Last Of Me}
 {meta: artist Anne Murray}
-{meta: writer Tom Snow and Eric Kaz}
+{meta: composer Tom Snow and Eric Kaz}
 
 {start_of_verse: Verse 1}
 [C]You  [G7]haven't heard the last of [C]me

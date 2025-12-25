@@ -1,6 +1,6 @@
 {meta: title You Don't Love Me Anymore}
 {meta: artist Merle Haggard}
-{meta: writer Freddy Powers}
+{meta: composer Freddy Powers}
 
 {start_of_verse: Verse 1}
 [C]You used to get so uptight

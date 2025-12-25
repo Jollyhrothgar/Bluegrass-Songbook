@@ -1,6 +1,6 @@
 {meta: title Don't Give Up On Me}
 {meta: artist Faron Young}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]I think of all the things [F]I promised [Dm]you

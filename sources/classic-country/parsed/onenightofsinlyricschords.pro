@@ -1,6 +1,6 @@
 {meta: title One Night Of Sin}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew, Pearl King, Anita Steiman}
+{meta: composer Dave Bartholomew, Pearl King, Anita Steiman}
 
 {start_of_verse: Verse 1}
 [C]One [G7]night of [C]sin  is what I'm [G7]now payin' for

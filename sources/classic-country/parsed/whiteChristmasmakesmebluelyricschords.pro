@@ -1,6 +1,6 @@
 {meta: title White Christmas Makes Me Blue}
 {meta: artist Randy Travis}
-{meta: writer Rich Grissom and Neil Patton Rogers}
+{meta: composer Rich Grissom and Neil Patton Rogers}
 
 {start_of_verse: Verse 1}
 [C]I sent out seasons [F]greetings [G7]to all our same old [C]friends

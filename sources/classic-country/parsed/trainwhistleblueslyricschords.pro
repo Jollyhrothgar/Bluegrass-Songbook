@@ -1,6 +1,6 @@
 {meta: title Train Whistle Blues}
 {meta: artist Merle Haggard}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]When a woman gets the blues she hangs her little head and cries

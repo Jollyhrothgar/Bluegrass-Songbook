@@ -1,6 +1,6 @@
 {meta: title Donna On My Mind}
 {meta: artist Wynn Stewart}
-{meta: writer Billy Barton}
+{meta: composer Billy Barton}
 
 {start_of_verse: Verse 1}
 [G]Donna on my mind when I get up  in the [D7]morning

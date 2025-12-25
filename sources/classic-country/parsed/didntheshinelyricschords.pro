@@ -1,6 +1,6 @@
 {meta: title Didn't He Shine}
 {meta: artist Wanda Jackson}
-{meta: writer Bob McDill and Allen Reynolds}
+{meta: composer Bob McDill and Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [G]To a world of [D7]fear and [Em]darkness 

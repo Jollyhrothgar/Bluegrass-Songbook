@@ -1,6 +1,6 @@
 {meta: title I Can’t Fly}
 {meta: artist Jim Reeves}
-{meta: writer Tommy Hill}
+{meta: composer Tommy Hill}
 
 {start_of_verse: Verse 1}
 [G]I've [D7]tried my very best to meet [C]all of your [G]demands

@@ -1,6 +1,6 @@
 {meta: title Passing Love Affair}
 {meta: artist Jean Shepard}
-{meta: writer Jack Rhodes and Jack Rollins}
+{meta: composer Jack Rhodes and Jack Rollins}
 
 {start_of_verse: Verse 1}
 [G]Be sure before you say I love [C]you

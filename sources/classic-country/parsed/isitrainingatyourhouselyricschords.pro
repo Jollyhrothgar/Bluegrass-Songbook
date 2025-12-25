@@ -1,6 +1,6 @@
 {meta: title Is It Raining At Your House}
 {meta: artist Vern Gosdin}
-{meta: writer Hank Cochran and Vern Gosdin}
+{meta: composer Hank Cochran and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]Is it raining  at your [Em]house

@@ -1,6 +1,6 @@
 {meta: title I'll Be Your Stepping Stone}
 {meta: artist George Jones}
-{meta: writer Bozo Darnell and Major Luper}
+{meta: composer Bozo Darnell and Major Luper}
 
 {start_of_verse: Verse 1}
 [G]I'll be your [C]stepping stone while you keep [G]stepping on

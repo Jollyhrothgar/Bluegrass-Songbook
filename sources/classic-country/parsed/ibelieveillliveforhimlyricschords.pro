@@ -1,6 +1,6 @@
 {meta: title I Believe I'll Live For Him}
 {meta: artist Statler Brother}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [C]I believe He died for me so I [F]believe I'll live for [C]Him

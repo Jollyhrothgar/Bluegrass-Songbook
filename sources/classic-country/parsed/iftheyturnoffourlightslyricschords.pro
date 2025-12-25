@@ -1,6 +1,6 @@
 {meta: title If They Turn Off Our Lights}
 {meta: artist Ricky Van Shelton}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]Last night [Em]I lay [C]tossing [Dm]in the [Em]bed

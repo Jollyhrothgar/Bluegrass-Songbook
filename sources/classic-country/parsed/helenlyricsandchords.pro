@@ -1,6 +1,6 @@
 {meta: title Helen}
 {meta: artist Cal Smith}
-{meta: writer Jim Mundy}
+{meta: composer Jim Mundy}
 
 {start_of_verse: Verse 1}
 [C]Helen’s got a good job down at [D7]Kroger’s

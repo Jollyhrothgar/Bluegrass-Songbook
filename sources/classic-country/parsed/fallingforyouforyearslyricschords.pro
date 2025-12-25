@@ -1,6 +1,6 @@
 {meta: title Falling For You For Years}
 {meta: artist Conway Twitty}
-{meta: writer Michael Barry Reid and Troy Harold Seals}
+{meta: composer Michael Barry Reid and Troy Harold Seals}
 
 {start_of_verse: Verse 1}
 [C]Lookin' at us you'd think that we just [Em]met

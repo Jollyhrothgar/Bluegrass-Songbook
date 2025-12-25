@@ -1,6 +1,6 @@
 {meta: title I Wanna Feel That Way Again}
 {meta: artist Tracy Byrd}
-{meta: writer Steve Bogard, Jeff Stevens, Danni Leigh}
+{meta: composer Steve Bogard, Jeff Stevens, Danni Leigh}
 
 {start_of_verse: Verse 1}
 [C]At the [G]time [C]it seemed like the right thing 

@@ -1,6 +1,6 @@
 {meta: title Blaze Of Glory}
 {meta: artist Kenny Rogers}
-{meta: writer Danny Morrison, Johnny Slate, Larry Keith}
+{meta: composer Danny Morrison, Johnny Slate, Larry Keith}
 
 {start_of_verse: Verse 1}
 [G]Let's go out in a blaze of glory

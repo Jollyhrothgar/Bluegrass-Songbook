@@ -1,6 +1,6 @@
 {meta: title Midnight Turning Day Blues}
 {meta: artist Wanda Jackson}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [G]He left me this morning midnight was turning day [G7]

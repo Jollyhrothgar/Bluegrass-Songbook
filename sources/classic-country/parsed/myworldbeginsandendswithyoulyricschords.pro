@@ -1,6 +1,6 @@
 {meta: title My World Begins And Ends With You}
 {meta: artist Kenny Rogers}
-{meta: writer Steve Pippin and Larry Keith}
+{meta: composer Steve Pippin and Larry Keith}
 
 {start_of_verse: Verse 1}
 [G]My world was [F#m]no more than a [B7]dream

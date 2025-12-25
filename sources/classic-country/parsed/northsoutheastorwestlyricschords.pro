@@ -1,6 +1,6 @@
 {meta: title North South East Or West}
 {meta: artist Jimmy Dean}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]North south [F]east or west [G7]where can I [C]forget her best

@@ -1,6 +1,6 @@
 {meta: title House Divided}
 {meta: artist Connie Smith}
-{meta: writer Bobby Bare}
+{meta: composer Bobby Bare}
 
 {start_of_verse: Verse 1}
 [C]We had planned our [C7]house of love [F]together

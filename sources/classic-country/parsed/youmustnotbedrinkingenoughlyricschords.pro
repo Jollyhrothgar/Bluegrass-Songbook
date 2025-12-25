@@ -1,6 +1,6 @@
 {meta: title You Must Not Be Drinking Enough}
 {meta: artist Earl Thomas Conley}
-{meta: writer Daniel Kortchmar}
+{meta: composer Daniel Kortchmar}
 
 {start_of_verse: Verse 1}
 [C]I can [F]see that you haven't [G7]recovered 

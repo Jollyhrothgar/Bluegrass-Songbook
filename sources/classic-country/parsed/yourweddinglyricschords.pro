@@ -1,6 +1,6 @@
 {meta: title Your Wedding}
 {meta: artist Jim Reeves}
-{meta: writer Ray Winkler and Jim Reeves}
+{meta: composer Ray Winkler and Jim Reeves}
 
 {start_of_verse: Verse 1}
 [C]I'm on my [G7]way to your [C]wedding how I hate [G7]to go [C]there

@@ -1,6 +1,6 @@
 {meta: title Look What Thoughts Will Do}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell, Jim Beck & Dub Dickerson}
+{meta: composer Lefty Frizzell, Jim Beck & Dub Dickerson}
 
 {start_of_verse: Verse 1}
 [G]Once I thought I loved just you

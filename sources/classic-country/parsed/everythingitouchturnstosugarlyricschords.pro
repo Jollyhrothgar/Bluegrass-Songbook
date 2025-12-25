@@ -1,6 +1,6 @@
 {meta: title Everything I Touch Turns To Sugar}
 {meta: artist Carl Smith}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]Everything I touch turns to [G7]sugar

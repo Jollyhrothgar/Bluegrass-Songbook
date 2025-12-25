@@ -1,6 +1,6 @@
 {meta: title I've Never Loved Anyone More}
 {meta: artist Johnny Rodriguez}
-{meta: writer Linda Hargrove and Michael Nesmith}
+{meta: composer Linda Hargrove and Michael Nesmith}
 
 {start_of_verse: Verse 1}
 [C]Seems that I don't think about you too much

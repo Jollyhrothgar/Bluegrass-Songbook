@@ -1,6 +1,6 @@
 {meta: title Ain't She Sweet}
 {meta: artist Ferlin Husky}
-{meta: writer Jack Yellen and Milton Ager}
+{meta: composer Jack Yellen and Milton Ager}
 
 {start_of_verse: Verse 1}
 [C]Oh ain't she [G7]sweet see her [Am]comin' down the [G7]street

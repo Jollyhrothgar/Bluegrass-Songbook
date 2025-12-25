@@ -1,6 +1,6 @@
 {meta: title Teach Me To Forget}
 {meta: artist Merle Haggard}
-{meta: writer Leon}
+{meta: composer Leon}
 
 {start_of_verse: Verse 1}
 [G]You taught me how to love with all my [D7]heart

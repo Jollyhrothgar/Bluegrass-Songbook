@@ -1,6 +1,6 @@
 {meta: title Sleep Baby Sleep}
 {meta: artist Lefty Frizzell}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]Sleep [F]baby [C]sleep 

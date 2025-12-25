@@ -1,6 +1,6 @@
 {meta: title The Beaches Of Cheyenne}
 {meta: artist Garth Brooks}
-{meta: writer Bryan Kennedy, Don Roberts, Garth Brooks}
+{meta: composer Bryan Kennedy, Don Roberts, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G]They packed up all his [D7]buckles 

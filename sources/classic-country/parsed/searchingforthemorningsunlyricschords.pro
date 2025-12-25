@@ -1,6 +1,6 @@
 {meta: title Searching For The Morning Sun}
 {meta: artist Charlie Pride}
-{meta: writer Jerry Grindele, Paul Gibbons, Tony Hatch}
+{meta: composer Jerry Grindele, Paul Gibbons, Tony Hatch}
 
 {start_of_verse: Verse 1}
 [C]Standin' in a pourin' rain on a cold Chicago day

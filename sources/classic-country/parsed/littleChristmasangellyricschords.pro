@@ -1,6 +1,6 @@
 {meta: title Little Christmas Angel}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson, Johnny Hatchcock, Weldon Allard}
+{meta: composer Hank Thompson, Johnny Hatchcock, Weldon Allard}
 
 {start_of_verse: Verse 1}
 [C]Please little [D7]angel [G]hop to the [D7]floor 

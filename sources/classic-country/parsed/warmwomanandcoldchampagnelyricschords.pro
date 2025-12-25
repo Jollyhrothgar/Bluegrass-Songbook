@@ -1,6 +1,6 @@
 {meta: title Warm Woman And Cold Champagne}
 {meta: artist Johnny Duncan}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]I spent a lot of lonely nights when [C]she walked out the door

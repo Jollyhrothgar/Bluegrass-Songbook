@@ -1,6 +1,6 @@
 {meta: title High Tech Redneck}
 {meta: artist George Jones}
-{meta: writer Byron Hill and Zack Turner}
+{meta: composer Byron Hill and Zack Turner}
 
 {start_of_verse: Verse 1}
 [G]He got 13 channels of wrestling

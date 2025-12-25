@@ -1,6 +1,6 @@
 {meta: title In The Valley Of The Moon}
 {meta: artist Hank Thompson}
-{meta: writer Charles Tobias and Joe Burke}
+{meta: composer Charles Tobias and Joe Burke}
 
 {start_of_verse: Verse 1}
 [C](In the [G7]valley of the [C]moon)

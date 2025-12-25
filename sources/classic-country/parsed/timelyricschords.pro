@@ -1,6 +1,6 @@
 {meta: title Time}
 {meta: artist Don Williams}
-{meta: writer Michael Merchant}
+{meta: composer Michael Merchant}
 
 {start_of_verse: Verse 1}
 [G]Some people [D7]run some people [G]crawl

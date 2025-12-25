@@ -1,6 +1,6 @@
 {meta: title It's A Matter of Time}
 {meta: artist Elvis Presley}
-{meta: writer Clive Westlake}
+{meta: composer Clive Westlake}
 
 {start_of_verse: Verse 1}
 [G]It's a matter of [C]time before I go back [G]there

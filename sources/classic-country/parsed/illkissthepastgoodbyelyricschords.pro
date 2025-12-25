@@ -1,6 +1,6 @@
 {meta: title I'll Kiss The Past Goodbye}
 {meta: artist Carl Smith}
-{meta: writer Wayne Walker and Mel Tillis}
+{meta: composer Wayne Walker and Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]You told me that you loved me  [F]life was like a [C]song

@@ -1,6 +1,6 @@
 {meta: title Something He'll Have To Learn}
 {meta: artist Johnny Paycheck}
-{meta: writer Johnny Paycheck, Aubrey Mayhew, Gary Adams}
+{meta: composer Johnny Paycheck, Aubrey Mayhew, Gary Adams}
 
 {start_of_verse: Verse 1}
 [G]You seem to [C]take great [G]pride 

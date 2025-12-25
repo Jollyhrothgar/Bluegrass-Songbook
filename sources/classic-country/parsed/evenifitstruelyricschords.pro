@@ -1,6 +1,6 @@
 {meta: title Even If It's True}
 {meta: artist Ferlin Husky}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]I refuse to hear the [G7]things they say a[C]bout you

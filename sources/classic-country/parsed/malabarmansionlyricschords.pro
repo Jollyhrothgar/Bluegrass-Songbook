@@ -1,6 +1,6 @@
 {meta: title Malabar Mansion}
 {meta: artist Gordon Parsons}
-{meta: writer Dave Duncan}
+{meta: composer Dave Duncan}
 
 {start_of_verse: Verse 1}
 [G]I was in a sad and sorry state 

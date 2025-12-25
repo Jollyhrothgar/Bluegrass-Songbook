@@ -1,6 +1,6 @@
 {meta: title When It Come To You}
 {meta: artist Connie Smith}
-{meta: writer Marty Stuart and Connie Smith}
+{meta: composer Marty Stuart and Connie Smith}
 
 {start_of_verse: Verse 1}
 [C]I’ve got a [F]chain [G7]wrapped around my [C]heart

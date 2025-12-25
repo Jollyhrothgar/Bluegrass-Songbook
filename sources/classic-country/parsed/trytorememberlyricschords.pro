@@ -1,6 +1,6 @@
 {meta: title Try To Remember}
 {meta: artist Ricky Nelson}
-{meta: writer Harvey Schmidt and Tom Jones}
+{meta: composer Harvey Schmidt and Tom Jones}
 
 {start_of_verse: Verse 1}
 [C]Try to re[Am]member the [F]kind of Sep[G7]tember

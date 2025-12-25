@@ -1,6 +1,6 @@
 {meta: title That Little Kid Sister Of Mine}
 {meta: artist Eddy Arnold}
-{meta: writer Fred Rose and Gene Autry}
+{meta: composer Fred Rose and Gene Autry}
 
 {start_of_verse: Verse 1}
 [C]She was only seven

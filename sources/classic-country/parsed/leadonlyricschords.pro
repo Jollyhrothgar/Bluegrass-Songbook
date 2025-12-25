@@ -1,6 +1,6 @@
 {meta: title Lead On}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Teddy Gentry}
+{meta: composer Dean Dillon and Teddy Gentry}
 
 {start_of_verse: Verse 1}
 [G]She [D7]said I [G]don't recall [C]seeing you around here

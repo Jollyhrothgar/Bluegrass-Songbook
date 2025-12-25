@@ -1,6 +1,6 @@
 {meta: title Too Gone Too Long}
 {meta: artist Randy Travis}
-{meta: writer Gene Pistilli}
+{meta: composer Gene Pistilli}
 
 {start_of_verse: Verse 1}
 [C]You've been [A7]too gone for too long

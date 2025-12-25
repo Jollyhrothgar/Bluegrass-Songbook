@@ -1,6 +1,6 @@
 {meta: title I'm Living In Sunshine}
 {meta: artist Wynn Stewart}
-{meta: writer William Rodgers}
+{meta: composer William Rodgers}
 
 {start_of_verse: Verse 1}
 [C]You bring me [F]sunshine beautiful [C]sunshine

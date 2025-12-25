@@ -1,6 +1,6 @@
 {meta: title Best Of Company}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]What makes a [G7]woman leave a [C]man the way that you left [G7]me

@@ -1,6 +1,6 @@
 {meta: title Especially You}
 {meta: artist Don Williams}
-{meta: writer Rick Baresdorf}
+{meta: composer Rick Baresdorf}
 
 {start_of_verse: Verse 1}
 [C]I see the [G7]rainbow in [F]your [C]eyes

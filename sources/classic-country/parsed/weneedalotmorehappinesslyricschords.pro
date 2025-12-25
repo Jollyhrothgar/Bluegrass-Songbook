@@ -1,6 +1,6 @@
 {meta: title We Need A Lot More Happiness}
 {meta: artist Wilburn Brothers}
-{meta: writer Joe Keene}
+{meta: composer Joe Keene}
 
 {start_of_verse: Verse 1}
 [G]We need a lot more [C]happiness

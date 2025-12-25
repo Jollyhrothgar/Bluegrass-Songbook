@@ -1,6 +1,6 @@
 {meta: title Blue Winter}
 {meta: artist Connie Francis}
-{meta: writer Ben Raleigh and John Gluck}
+{meta: composer Ben Raleigh and John Gluck}
 
 {start_of_verse: Verse 1}
 [G]It's gonna be a [D7]blue winter with[G]out you

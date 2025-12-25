@@ -1,6 +1,6 @@
 {meta: title I'll Love Him Right Out Of Your Mind}
 {meta: artist Tommy Overstreet}
-{meta: writer Joe Barnhill and Pat Burch}
+{meta: composer Joe Barnhill and Pat Burch}
 
 {start_of_verse: Verse 1}
 [C]I mention his [Em]name and you [Am]drew [C]away

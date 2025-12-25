@@ -1,6 +1,6 @@
 {meta: title Not What I Had In Mind}
 {meta: artist George Jones}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [G]Just thought I'd have a little [C]fun and paint the [G]town

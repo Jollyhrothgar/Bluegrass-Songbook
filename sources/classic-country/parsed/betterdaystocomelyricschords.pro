@@ -1,6 +1,6 @@
 {meta: title Better Days To Come}
 {meta: artist The Lonesome River Band}
-{meta: writer Craig Market}
+{meta: composer Craig Market}
 
 {start_of_verse: Verse 1}
 [G]Don't remind me of [D7]things in my [G]past

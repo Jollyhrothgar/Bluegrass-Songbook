@@ -1,6 +1,6 @@
 {meta: title They'd Have To Carry Me Away}
 {meta: artist Buck Owens}
-{meta: writer Dennis Knutson, A.L. "Doodle" Owens}
+{meta: composer Dennis Knutson, A.L. "Doodle" Owens}
 
 {start_of_verse: Verse 1}
 Intro: 

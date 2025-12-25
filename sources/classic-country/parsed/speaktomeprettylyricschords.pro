@@ -1,6 +1,6 @@
 {meta: title Speak To Me Pretty}
 {meta: artist Brenda Lee}
-{meta: writer B. Dunham and H. Vars}
+{meta: composer B. Dunham and H. Vars}
 
 {start_of_verse: Verse 1}
 [G]Speak to me pretty ah [C]speak to me nice

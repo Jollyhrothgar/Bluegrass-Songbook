@@ -1,6 +1,6 @@
 {meta: title Getting Used To Being Loved Again}
 {meta: artist Gene Watson}
-{meta: writer Gene Dobbins and Glenn Ray}
+{meta: composer Gene Dobbins and Glenn Ray}
 
 {start_of_verse: Verse 1}
 [C]I'll get reacquainted with some [D7]feelings I once knew

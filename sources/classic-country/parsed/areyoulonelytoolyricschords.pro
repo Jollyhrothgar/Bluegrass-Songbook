@@ -1,6 +1,6 @@
 {meta: title Are You Lonely Too}
 {meta: artist Wilburn Brothers}
-{meta: writer Teddy Wilburn}
+{meta: composer Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]Are you lonely do you [F]ever think of [C]me

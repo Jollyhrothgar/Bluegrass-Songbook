@@ -1,6 +1,6 @@
 {meta: title All Alone Am I}
 {meta: artist Brenda Lee}
-{meta: writer Arthur Altman, Manos Hadjidakis, Ioann Idis}
+{meta: composer Arthur Altman, Manos Hadjidakis, Ioann Idis}
 
 {start_of_verse: Verse 1}
 [Am]All alone am I ever since your [G7]goodbye

@@ -1,6 +1,6 @@
 {meta: title I Misunderstood}
 {meta: artist Wanda Jackson}
-{meta: writer Wanda Jackson and Wendell Goodman}
+{meta: composer Wanda Jackson and Wendell Goodman}
 
 {start_of_verse: Verse 1}
 [G]I [D7][C]misunderstood

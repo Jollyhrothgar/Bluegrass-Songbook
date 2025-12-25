@@ -1,6 +1,6 @@
 {meta: title Diamonds And Horseshoes}
 {meta: artist Jerry Wallace}
-{meta: writer Bert Pellish and Mitchell Tableporter}
+{meta: composer Bert Pellish and Mitchell Tableporter}
 
 {start_of_verse: Verse 1}
 [F](Diamonds and horseshoes [C]diamonds and [Am]horseshoes)

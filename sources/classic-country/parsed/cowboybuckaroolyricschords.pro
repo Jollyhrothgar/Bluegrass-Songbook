@@ -1,6 +1,6 @@
 {meta: title Cowboy Buckaroo}
 {meta: artist Statler Brothers}
-{meta: writer Mason Williams}
+{meta: composer Mason Williams}
 
 {start_of_verse: Verse 1}
 [G]I was raised on matinees on [C]Saturday after[G]noons

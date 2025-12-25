@@ -1,6 +1,6 @@
 {meta: title All My Love All My Life Lyrics and Chords}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Al Matson}
+{meta: composer Sonny James and Al Matson}
 
 {start_of_verse: Verse 1}
 [C]All my love all my [Am]life

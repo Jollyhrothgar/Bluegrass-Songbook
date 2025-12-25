@@ -1,6 +1,6 @@
 {meta: title I Can't Change Overnight}
 {meta: artist George Jones}
-{meta: writer George Jones and Johnny Mathis}
+{meta: composer George Jones and Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [G]I can't [C]change over[D7]night from loving [G]you

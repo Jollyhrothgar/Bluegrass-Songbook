@@ -1,6 +1,6 @@
 {meta: title Don't Cheat In Our Home Town}
 {meta: artist Ricky Skaggs}
-{meta: writer Ray Pennington and Roy Marcum}
+{meta: composer Ray Pennington and Roy Marcum}
 
 {start_of_verse: Verse 1}
 [C]Tonight my heart is beating low and [C7]my head is [F]bowed

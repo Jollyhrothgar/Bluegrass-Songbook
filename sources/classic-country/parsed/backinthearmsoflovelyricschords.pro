@@ -1,6 +1,6 @@
 {meta: title Back in the Arms of Love}
 {meta: artist Jack Greene}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [D7]Back in the arms [G]of love forever home to [D7]stay

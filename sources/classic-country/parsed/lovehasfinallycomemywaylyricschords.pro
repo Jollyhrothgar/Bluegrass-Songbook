@@ -1,6 +1,6 @@
 {meta: title Love Has Finally Come My Way}
 {meta: artist Faron Young}
-{meta: writer Lee Pockriss and Paul Vance}
+{meta: composer Lee Pockriss and Paul Vance}
 
 {start_of_verse: Verse 1}
 [C]It's a thrill of your kiss that started [F]all this

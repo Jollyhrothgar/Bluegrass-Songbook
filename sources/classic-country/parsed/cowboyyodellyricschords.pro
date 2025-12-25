@@ -1,6 +1,6 @@
 {meta: title Cowboy Yodel}
 {meta: artist Wanda Jackson}
-{meta: writer Carson J. Robison}
+{meta: composer Carson J. Robison}
 
 {start_of_verse: Verse 1}
 [G]There's a [C]cowboy that I know riding in the [G]rodeo

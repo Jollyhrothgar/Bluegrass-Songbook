@@ -1,6 +1,6 @@
 {meta: title Unbelievable Love}
 {meta: artist Jim Ed Brown}
-{meta: writer Curly Putman and Ben Peters}
+{meta: composer Curly Putman and Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]Unbelievable [F]love

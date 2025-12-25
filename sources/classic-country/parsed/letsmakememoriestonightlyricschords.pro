@@ -1,6 +1,6 @@
 {meta: title Let’s Make Memories Tonight}
 {meta: artist Eddy Arnold}
-{meta: writer Johnny Nash}
+{meta: composer Johnny Nash}
 
 {start_of_verse: Verse 1}
 [C]Let's make memories [C7]tonight [F]for this is a night to [G7]remember

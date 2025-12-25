@@ -1,6 +1,6 @@
 {meta: title It Ain’t Gonna Worry My Mind}
 {meta: artist Mickey Gilley}
-{meta: writer Richard C. Leigh}
+{meta: composer Richard C. Leigh}
 
 {start_of_verse: Verse 1}
 [C]It’s the same old [Am]story [F]they all [G7]hand me

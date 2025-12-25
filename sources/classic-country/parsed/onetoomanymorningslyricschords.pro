@@ -1,6 +1,6 @@
 {meta: title One Too Many Mornings}
 {meta: artist Bill Anderson}
-{meta: writer Mike Settle}
+{meta: composer Mike Settle}
 
 {start_of_verse: Verse 1}
 [C]Well I [F]woke up one too many [C]mornings

@@ -1,6 +1,6 @@
 {meta: title Hurt Me Again}
 {meta: artist Hank Locklin}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [F]Hurt me again [G7]the way you always [C]do

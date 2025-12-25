@@ -1,6 +1,6 @@
 {meta: title That's What I Do Best}
 {meta: artist Curtis Potter}
-{meta: writer Little Jimmy Dickens, Bobby Green and Robbie Wittkowski}
+{meta: composer Little Jimmy Dickens, Bobby Green and Robbie Wittkowski}
 
 {start_of_verse: Verse 1}
 [G]I stand at the window and I stare down at the [C]drive

@@ -1,6 +1,6 @@
 {meta: title Let Me Live A Little}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Webb Pierce}
+{meta: composer Wayne P. Walker and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]Don't you think I've [Dm]cried enough [G7]swallowed all my [C]pride enough

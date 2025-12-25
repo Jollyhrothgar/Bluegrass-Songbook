@@ -1,6 +1,6 @@
 {meta: title Left Over Feelings}
 {meta: artist Jack Greene}
-{meta: writer Brian L. Robinson, Keith Palmer, Tom Pick}
+{meta: composer Brian L. Robinson, Keith Palmer, Tom Pick}
 
 {start_of_verse: Verse 1}
 [G]Slowly very slowly you're fading away

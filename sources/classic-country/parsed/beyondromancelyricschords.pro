@@ -1,6 +1,6 @@
 {meta: title Beyond Romance}
 {meta: artist Statler Brothers}
-{meta: writer Jimmy Fortune and John Rimel}
+{meta: composer Jimmy Fortune and John Rimel}
 
 {start_of_verse: Verse 1}
 [C]Beyond romance there's [F]always a [C]chance

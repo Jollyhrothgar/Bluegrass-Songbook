@@ -1,6 +1,6 @@
 {meta: title The Bridge Of Love}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]Jesus touch my sinful [F]soul

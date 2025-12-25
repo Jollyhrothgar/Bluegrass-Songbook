@@ -1,6 +1,6 @@
 {meta: title Love Is Where You Find It}
 {meta: artist Hank Thompson}
-{meta: writer Alvin Stanley, Red Mansel and Hank Thompson}
+{meta: composer Alvin Stanley, Red Mansel and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]Well there ain’t no cure for a broken heart

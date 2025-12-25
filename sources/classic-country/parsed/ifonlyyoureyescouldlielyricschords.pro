@@ -1,6 +1,6 @@
 {meta: title If Only Your Eyes Could Lie}
 {meta: artist George Jones}
-{meta: writer John Charles Jarrard and Robert Lee McDill}
+{meta: composer John Charles Jarrard and Robert Lee McDill}
 
 {start_of_verse: Verse 1}
 [C]Girl I can tell that you're thinking of [F]leaving

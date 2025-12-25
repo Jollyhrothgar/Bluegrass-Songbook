@@ -1,6 +1,6 @@
 {meta: title Don't Fall In Love With A Married Man}
 {meta: artist Jean Shepard}
-{meta: writer Joe Penny and Red Fortner}
+{meta: composer Joe Penny and Red Fortner}
 
 {start_of_verse: Verse 1}
 [G]Oh single girls don't be mislead 

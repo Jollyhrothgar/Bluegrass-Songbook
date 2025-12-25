@@ -1,6 +1,6 @@
 {meta: title The Wall}
 {meta: artist Freddie Hart}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]lot of strange men in cell Block 10

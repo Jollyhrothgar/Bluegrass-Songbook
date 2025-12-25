@@ -1,6 +1,6 @@
 {meta: title Walkin' In}
 {meta: artist Tracy Byrd}
-{meta: writer Byron Hill and Zack Turner}
+{meta: composer Byron Hill and Zack Turner}
 
 {start_of_verse: Verse 1}
 [C]I've done my [G7]share of walkin' [C]out 

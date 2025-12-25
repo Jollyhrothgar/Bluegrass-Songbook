@@ -1,6 +1,6 @@
 {meta: title I'm All Through With You}
 {meta: artist Ricky Nelson}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [D7]You know you [G]won my heart baby right at the start

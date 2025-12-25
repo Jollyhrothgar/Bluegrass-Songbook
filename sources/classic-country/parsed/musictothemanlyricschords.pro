@@ -1,6 +1,6 @@
 {meta: title Music To The Man}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Tony Colton}
+{meta: composer Tony Colton}
 
 {start_of_verse: Verse 1}
 [C]I keep takin' my [F]music to the [C]man

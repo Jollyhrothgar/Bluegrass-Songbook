@@ -1,6 +1,6 @@
 {meta: title Gonna Lay Me Down Beside My Memories}
 {meta: artist Crystal Gayle}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]I wish I could wakeup feeling the way I used to

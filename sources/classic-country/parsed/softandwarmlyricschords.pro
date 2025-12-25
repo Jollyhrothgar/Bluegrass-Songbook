@@ -1,6 +1,6 @@
 {meta: title Soft And Warm}
 {meta: artist Vernon Oxford}
-{meta: writer Durwood Haddock}
+{meta: composer Durwood Haddock}
 
 {start_of_verse: Verse 1}
 [C]I need your sweet love [G7]soft and [C]warm

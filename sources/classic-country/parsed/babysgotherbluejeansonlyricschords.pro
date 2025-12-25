@@ -1,6 +1,6 @@
 {meta: title Baby's Got Her Blue Jeans On}
 {meta: artist Mel McDaniel}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]Down on the [C]corner [G]by the traffic [C]light

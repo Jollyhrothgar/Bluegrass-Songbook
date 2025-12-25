@@ -1,6 +1,6 @@
 {meta: title Cry Of The Whippoorwill}
 {meta: artist Rhonda Vincent}
-{meta: writer Terry Herd and Rhonda Vincent}
+{meta: composer Terry Herd and Rhonda Vincent}
 
 {start_of_verse: Verse 1}
 [G]Now listen [C]close and you can [G]hear

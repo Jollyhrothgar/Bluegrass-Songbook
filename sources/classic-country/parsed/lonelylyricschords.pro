@@ -1,6 +1,6 @@
 {meta: title Lonely}
 {meta: artist Hank Snow}
-{meta: writer Lynne Cowan}
+{meta: composer Lynne Cowan}
 
 {start_of_verse: Verse 1}
 [C]Though you're far far away are you lonely today

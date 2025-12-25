@@ -1,6 +1,6 @@
 {meta: title In Some Room Above The Street}
 {meta: artist Gary Stewart}
-{meta: writer Sterling Whipple}
+{meta: composer Sterling Whipple}
 
 {start_of_verse: Verse 1}
 [G]There's no place for us to [C]hide

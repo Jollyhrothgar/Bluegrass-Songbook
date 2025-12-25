@@ -1,6 +1,6 @@
 {meta: title From the Window Up Above}
 {meta: artist Red Sovine}
-{meta: writer George Jones}
+{meta: composer George Jones}
 
 {start_of_verse: Verse 1}
 [G]Let me be among that number who will go to live with [G7]him

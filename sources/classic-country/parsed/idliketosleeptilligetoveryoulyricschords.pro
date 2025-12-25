@@ -1,6 +1,6 @@
 {meta: title I'd Like To Sleep Till I Get Over You}
 {meta: artist Freddie Hart}
-{meta: writer Roger Bowling}
+{meta: composer Roger Bowling}
 
 {start_of_verse: Verse 1}
 [F]I'd like to [C]sleep till [G7]I get [C]over [G7]you

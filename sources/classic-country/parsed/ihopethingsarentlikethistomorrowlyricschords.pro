@@ -1,6 +1,6 @@
 {meta: title I Hope Things Aren't Like This Tomorrow}
 {meta: artist John Anderson}
-{meta: writer John Anderson and Lionel Delmore}
+{meta: composer John Anderson and Lionel Delmore}
 
 {start_of_verse: Verse 1}
 [C]It's a [F]fact I know that love is strange

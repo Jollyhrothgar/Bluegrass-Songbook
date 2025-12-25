@@ -1,6 +1,6 @@
 {meta: title Salty Dog Blues}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Zeke Morris and Wiley Morris}
+{meta: composer Zeke Morris and Wiley Morris}
 
 {start_of_verse: Verse 1}
 [C]Standing on the corner with the low down blues

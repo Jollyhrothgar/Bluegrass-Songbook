@@ -1,6 +1,6 @@
 {meta: title Can I Trust You With My Heart}
 {meta: artist Travis Tritt}
-{meta: writer Stewart Harris and Travis Tritt}
+{meta: composer Stewart Harris and Travis Tritt}
 
 {start_of_verse: Verse 1}
 [C]When you meet that certain someone 

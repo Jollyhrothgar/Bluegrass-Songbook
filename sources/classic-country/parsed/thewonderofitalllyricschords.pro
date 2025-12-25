@@ -1,6 +1,6 @@
 {meta: title The Wonder Of It All}
 {meta: artist Ray Price}
-{meta: writer Lee Dresser}
+{meta: composer Lee Dresser}
 
 {start_of_verse: Verse 1}
 [C]When I see the sunshine come shining through the trees

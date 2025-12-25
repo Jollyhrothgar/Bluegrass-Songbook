@@ -1,6 +1,6 @@
 {meta: title I'm So Tired Of Going Home All By Myself}
 {meta: artist Hank Locklin}
-{meta: writer Pete Hunter}
+{meta: composer Pete Hunter}
 
 {start_of_verse: Verse 1}
 [C]I'm so tired of going [G7]home all by [C]myself

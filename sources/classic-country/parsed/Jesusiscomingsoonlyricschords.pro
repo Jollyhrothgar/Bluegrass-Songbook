@@ -1,6 +1,6 @@
 {meta: title Jesus Is Coming Soon}
 {meta: artist Kitty Wells}
-{meta: writer Bill Phillips}
+{meta: composer Bill Phillips}
 
 {start_of_verse: Verse 1}
 [C]Jesus is coming soon [F]Jesus is coming soon

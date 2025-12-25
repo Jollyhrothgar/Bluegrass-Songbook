@@ -1,6 +1,6 @@
 {meta: title Christmas Memories}
 {meta: artist Mac Wiseman}
-{meta: writer Becky Hobbs, John Greenebaum,}
+{meta: composer Becky Hobbs, John Greenebaum,}
 
 {start_of_verse: Verse 1}
 [C]In my dreams I’ll go home again for [F]Christmas

@@ -1,6 +1,6 @@
 {meta: title Primrose Lane}
 {meta: artist Jerry Wallace}
-{meta: writer Wayne Shanklin and George Calender}
+{meta: composer Wayne Shanklin and George Calender}
 
 {start_of_verse: Verse 1}
 [G]Primrose Lane life's a holiday on Primrose Lane

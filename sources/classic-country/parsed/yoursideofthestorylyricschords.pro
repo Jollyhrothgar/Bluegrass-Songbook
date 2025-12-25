@@ -1,6 +1,6 @@
 {meta: title Your Side Of The Story}
 {meta: artist Ernest Tubb}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [G]I cheated on you dear and it's no [C]secret 

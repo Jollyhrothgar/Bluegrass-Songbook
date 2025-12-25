@@ -1,6 +1,6 @@
 {meta: title All American Girl}
 {meta: artist Statler Brothers}
-{meta: writer Don and Harold Reid}
+{meta: composer Don and Harold Reid}
 
 {start_of_verse: Verse 1}
 [G7]She’s got a [C]Texas smile you can see for a mile and a [D7]Georgia tan

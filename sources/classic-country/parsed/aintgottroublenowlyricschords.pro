@@ -1,6 +1,6 @@
 {meta: title Ain't Got Trouble Now}
 {meta: artist Alan Jackson}
-{meta: writer Adam Wright}
+{meta: composer Adam Wright}
 
 {start_of_verse: Verse 1}
 [C]The girl I loved [F]she sure was [C]pretty

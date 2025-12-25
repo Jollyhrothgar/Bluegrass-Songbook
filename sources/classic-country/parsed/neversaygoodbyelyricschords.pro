@@ -1,6 +1,6 @@
 {meta: title Never Say Goodbye}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Larry Kolber and Jack Keller}
+{meta: composer Larry Kolber and Jack Keller}
 
 {start_of_verse: Verse 1}
 [G]Lift your head and dry your tears

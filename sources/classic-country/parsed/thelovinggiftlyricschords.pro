@@ -1,6 +1,6 @@
 {meta: title The Loving Gift}
 {meta: artist Kenny Rogers}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [G]You gave me a [D7]blanket to [C]keep me from the [G]cold

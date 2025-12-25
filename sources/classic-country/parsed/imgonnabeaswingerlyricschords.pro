@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Be A Swinger}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Eugene Ward}
+{meta: composer Webb Pierce and Eugene Ward}
 
 {start_of_verse: Verse 1}
 [G]Have you ever had a feeling

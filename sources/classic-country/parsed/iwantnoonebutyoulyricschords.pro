@@ -1,6 +1,6 @@
 {meta: title I Want No One But You}
 {meta: artist Buck Owens}
-{meta: writer Red Simpson and Buck Owens}
+{meta: composer Red Simpson and Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]I don't want to be a movie star with riches and [G7]things

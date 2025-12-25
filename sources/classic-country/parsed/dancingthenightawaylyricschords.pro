@@ -1,6 +1,6 @@
 {meta: title Dancing The Night Away}
 {meta: artist Tanya Tucker}
-{meta: writer Russell Smith and James H. Brown}
+{meta: composer Russell Smith and James H. Brown}
 
 {start_of_verse: Verse 1}
 [C]Standing beside the ocean looking across the water

@@ -1,6 +1,6 @@
 {meta: title Warmth of the Wine}
 {meta: artist Johnny Bush}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [C]I'll open the [Em]bottle that [F]closes the [G7]past

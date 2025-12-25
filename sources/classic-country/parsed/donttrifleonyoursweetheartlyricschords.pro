@@ -1,6 +1,6 @@
 {meta: title Don't Trifle On Your Sweetheart}
 {meta: artist Ernest Tubb}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [G]Don't trifle on your sweetheart the one who wears your wedding [D7]ring

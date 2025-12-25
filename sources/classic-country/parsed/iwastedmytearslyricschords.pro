@@ -1,6 +1,6 @@
 {meta: title I Wasted My Tears}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton and Bill Owens}
+{meta: composer Dolly Parton and Bill Owens}
 
 {start_of_verse: Verse 1}
 [C](I wasted my te-[Am]a-r-[C]s  [F]when I cried over [C]you)[F]  [C]

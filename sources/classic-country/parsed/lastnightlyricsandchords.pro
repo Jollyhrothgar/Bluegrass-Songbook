@@ -1,6 +1,6 @@
 {meta: title Last night}
 {meta: artist Buddy Holly}
-{meta: writer Norman Petty and Joe Mauldin}
+{meta: composer Norman Petty and Joe Mauldin}
 
 {start_of_verse: Verse 1}
 [D7]Last [G]night as I [Em]watched the [C]stars from my [D7]window

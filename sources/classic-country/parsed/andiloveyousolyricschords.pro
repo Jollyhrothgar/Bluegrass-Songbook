@@ -1,6 +1,6 @@
 {meta: title And I Love You So}
 {meta: artist Elvis Presley}
-{meta: writer Don McLean}
+{meta: composer Don McLean}
 
 {start_of_verse: Verse 1}
 [G]And I Love you [Am]so  [D7]the people ask me [G]how

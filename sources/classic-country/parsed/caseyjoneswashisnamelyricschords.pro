@@ -1,6 +1,6 @@
 {meta: title Casey Jones Was His Name}
 {meta: artist Hank Snow}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [G]A long time ago in a town in Tennessee

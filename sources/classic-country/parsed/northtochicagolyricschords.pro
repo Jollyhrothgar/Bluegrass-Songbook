@@ -1,6 +1,6 @@
 {meta: title North To Chicago}
 {meta: artist Hank Snow}
-{meta: writer Les Pouliot}
+{meta: composer Les Pouliot}
 
 {start_of_verse: Verse 1}
 [C]I filled my ol' car up with [F]gas 

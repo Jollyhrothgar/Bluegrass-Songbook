@@ -1,6 +1,6 @@
 {meta: title Driving Nails In My Coffin}
 {meta: artist Ernest Tubb}
-{meta: writer Jerry Irby}
+{meta: composer Jerry Irby}
 
 {start_of_verse: Verse 1}
 [C]My sweetheart is gone and I'm so lonesome

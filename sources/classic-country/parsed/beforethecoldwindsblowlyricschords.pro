@@ -1,6 +1,6 @@
 {meta: title Before The Cold Winds Blow}
 {meta: artist Blue Highway}
-{meta: writer Wayne Taylor}
+{meta: composer Wayne Taylor}
 
 {start_of_verse: Verse 1}
 [C]The weather finally broke in the middle of [F]Apr[C]il

@@ -1,6 +1,6 @@
 {meta: title I'm Getting Good At Missing You}
 {meta: artist Don Williams}
-{meta: writer Waylon Holyfield}
+{meta: composer Waylon Holyfield}
 
 {start_of_verse: Verse 1}
 [C]Solitaire  I’m getting good at solitaire

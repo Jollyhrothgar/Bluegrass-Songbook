@@ -1,6 +1,6 @@
 {meta: title New Faces in the Field}
 {meta: artist Russell Moore and IIIrd Tyme Out}
-{meta: writer Denise Draper, Harley Allen, Steve Hood}
+{meta: composer Denise Draper, Harley Allen, Steve Hood}
 
 {start_of_verse: Verse 1}
 [C]The Highway sun said the [Em]Georgia Line [F]was twenty miles [Dm]away 

@@ -1,6 +1,6 @@
 {meta: title Your Time Hasn't Come Yet Baby}
 {meta: artist Elvis Presley}
-{meta: writer Jeol Hirschhorn and Al Kasha}
+{meta: composer Jeol Hirschhorn and Al Kasha}
 
 {start_of_verse: Verse 1}
 [C]Your time hasn't [Dm]come yet [F]baby 

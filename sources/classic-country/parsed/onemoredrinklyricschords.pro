@@ -1,6 +1,6 @@
 {meta: title One More Drink}
 {meta: artist Mel Tills}
-{meta: writer Jim Owen}
+{meta: composer Jim Owen}
 
 {start_of_verse: Verse 1}
 [G]See that house across the [G7]street from this [C]barroom bottle

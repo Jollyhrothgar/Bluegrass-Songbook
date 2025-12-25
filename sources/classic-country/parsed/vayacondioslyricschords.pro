@@ -1,6 +1,6 @@
 {meta: title Vaya Con Dios}
 {meta: artist Slim Whitman}
-{meta: writer Larry Russell, Buddy Pepper, Inez James}
+{meta: composer Larry Russell, Buddy Pepper, Inez James}
 
 {start_of_verse: Verse 1}
 [C]Now the hacienda's dark the town is [G7]sleeping

@@ -1,6 +1,6 @@
 {meta: title Wait For the Light to Shine}
 {meta: artist Hank Williams Sr.}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]When the road is rocky 

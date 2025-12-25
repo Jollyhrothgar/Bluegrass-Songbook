@@ -1,6 +1,6 @@
 {meta: title Hole In The Wall}
 {meta: artist Alan Jackson}
-{meta: writer Jim McBride and Alan Jackson}
+{meta: composer Jim McBride and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [D7]There's a [G]hole [D7]in the [G]wall where a nail used to [C]be

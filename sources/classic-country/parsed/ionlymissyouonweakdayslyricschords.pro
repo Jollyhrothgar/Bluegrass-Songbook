@@ -1,6 +1,6 @@
 {meta: title I Only Miss You On Weak Days}
 {meta: artist Charley Pride}
-{meta: writer John Schweers and Mack David}
+{meta: composer John Schweers and Mack David}
 
 {start_of_verse: Verse 1}
 [C]I tell my friends I'm doing fine

@@ -1,6 +1,6 @@
 {meta: title It’s No Sin}
 {meta: artist Jim Reeves}
-{meta: writer Chester R. Schull and George Hoven}
+{meta: composer Chester R. Schull and George Hoven}
 
 {start_of_verse: Verse 1}
 [G]Take away the breath of [D7]flowers 

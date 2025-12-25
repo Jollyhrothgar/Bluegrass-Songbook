@@ -1,6 +1,6 @@
 {meta: title You Tell Me Your Troubles}
 {meta: artist Johnny Paycheck}
-{meta: writer Dale Morris and Clyde Mattocks}
+{meta: composer Dale Morris and Clyde Mattocks}
 
 {start_of_verse: Verse 1}
 [G]The barroom is closing its time to go [D7]home

@@ -1,6 +1,6 @@
 {meta: title I Gotta Get Over This}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Dan White}
+{meta: composer Dan White}
 
 {start_of_verse: Verse 1}
 [C]I gotta get [Dm]over this [F]this hurt is [G7]lasting much too [C]long

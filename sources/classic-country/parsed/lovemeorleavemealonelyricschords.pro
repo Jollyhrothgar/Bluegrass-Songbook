@@ -1,6 +1,6 @@
 {meta: title Love Me Or Leave Me Alone}
 {meta: artist Marty Robbins}
-{meta: writer Kent Marshall Robbins}
+{meta: composer Kent Marshall Robbins}
 
 {start_of_verse: Verse 1}
 [C]A lonely wife had written a letter one sad [F]day

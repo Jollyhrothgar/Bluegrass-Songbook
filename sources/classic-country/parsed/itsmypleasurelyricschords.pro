@@ -1,6 +1,6 @@
 {meta: title It's My Pleasure}
 {meta: artist Eddy Arnold}
-{meta: writer Ollie Jones}
+{meta: composer Ollie Jones}
 
 {start_of_verse: Verse 1}
 [G7]It's my [C]pleasure just to please [C7]you

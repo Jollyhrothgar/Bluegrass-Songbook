@@ -1,6 +1,6 @@
 {meta: title My Woman Here At Home}
 {meta: artist George Morgan}
-{meta: writer Max T. Powell}
+{meta: composer Max T. Powell}
 
 {start_of_verse: Verse 1}
 [C]Well hello mister [G7]sun

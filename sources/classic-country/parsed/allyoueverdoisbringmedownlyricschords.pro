@@ -1,6 +1,6 @@
 {meta: title All You Ever Do Is Bring Me Down}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo and Al Anderson}
+{meta: composer Raul Malo and Al Anderson}
 
 {start_of_verse: Verse 1}
 [G]I can't sleep a wink any[D7]more

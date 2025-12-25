@@ -1,6 +1,6 @@
 {meta: title This Time}
 {meta: artist Dwight Yoakam}
-{meta: writer Dwight Yoakam and Kostas}
+{meta: composer Dwight Yoakam and Kostas}
 
 {start_of_verse: Verse 1}
 [G]This time is the last time that I'll ever call her name

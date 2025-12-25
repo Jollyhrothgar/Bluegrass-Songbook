@@ -1,6 +1,6 @@
 {meta: title I Beg of You}
 {meta: artist Elvis Presley}
-{meta: writer Rose Marie McCoy and Kelly Owens}
+{meta: composer Rose Marie McCoy and Kelly Owens}
 
 {start_of_verse: Verse 1}
 [C]I don't want my heart to be broken cause it's the only one I've got

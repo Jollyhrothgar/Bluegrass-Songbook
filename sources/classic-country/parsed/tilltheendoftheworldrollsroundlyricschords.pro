@@ -1,6 +1,6 @@
 {meta: title Till The End Of The World Rolls Round}
 {meta: artist Ricky Skaggs}
-{meta: writer Newton S. Thomas Jr.}
+{meta: composer Newton S. Thomas Jr.}
 
 {start_of_verse: Verse 1}
 [C]Till the end of the world rolls round I'll [F]keep on loving you

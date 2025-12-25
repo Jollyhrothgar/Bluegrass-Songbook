@@ -1,6 +1,6 @@
 {meta: title I Feel Like Flying Away}
 {meta: artist Tom T. Hall}
-{meta: writer Tom T. Hall and Alan Pace}
+{meta: composer Tom T. Hall and Alan Pace}
 
 {start_of_verse: Verse 1}
 [C]I woke up this [Em]mornin' [A#7]feelin' so [A7]good

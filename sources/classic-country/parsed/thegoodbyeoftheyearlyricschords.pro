@@ -1,6 +1,6 @@
 {meta: title The Goodbye Of The Year}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G]I can't feel the [C]world be[G]tween us 

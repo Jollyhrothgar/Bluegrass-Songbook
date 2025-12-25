@@ -1,6 +1,6 @@
 {meta: title I Just Can't Let You Say Goodbye}
 {meta: artist Roy Drusky}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]I had not planned  on [D7]seeing [G]you 

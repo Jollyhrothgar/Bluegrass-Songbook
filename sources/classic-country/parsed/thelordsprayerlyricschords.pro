@@ -1,6 +1,6 @@
 {meta: title The Lord's Prayer}
 {meta: artist Johnny Mathis}
-{meta: writer Albert Hay Malotte}
+{meta: composer Albert Hay Malotte}
 
 {start_of_verse: Verse 1}
 [C]Our [G7]Father  [C]which art in [G7][Dm]hea-ven

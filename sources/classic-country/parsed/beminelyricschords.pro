@@ -1,6 +1,6 @@
 {meta: title Be Mine}
 {meta: artist Waylon Jennings}
-{meta: writer Kimmie Rhodes}
+{meta: composer Kimmie Rhodes}
 
 {start_of_verse: Verse 1}
 [G7]When the [C]green green spring is waiting for the [F]sun to shine

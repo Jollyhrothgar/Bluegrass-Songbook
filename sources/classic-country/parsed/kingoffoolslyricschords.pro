@@ -1,6 +1,6 @@
 {meta: title King Of Fools}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens, Red Simpson, Dusty Rhodes}
+{meta: composer Buck Owens, Red Simpson, Dusty Rhodes}
 
 {start_of_verse: Verse 1}
 [C]I believe every lying word you told to [G7]me

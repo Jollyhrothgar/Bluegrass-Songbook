@@ -1,6 +1,6 @@
 {meta: title Too Big To Fight}
 {meta: artist Ray Price}
-{meta: writer Lobo Loggins and Johnny McCollum}
+{meta: composer Lobo Loggins and Johnny McCollum}
 
 {start_of_verse: Verse 1}
 [C]Would you look at what walked through the door

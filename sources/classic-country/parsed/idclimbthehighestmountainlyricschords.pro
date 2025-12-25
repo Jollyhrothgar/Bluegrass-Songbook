@@ -1,6 +1,6 @@
 {meta: title I'd Climb The Highest Mountain}
 {meta: artist Ricky Nelson}
-{meta: writer Lew Brown and Sidney Clare}
+{meta: composer Lew Brown and Sidney Clare}
 
 {start_of_verse: Verse 1}
 [G]I'd climb the highest mountain

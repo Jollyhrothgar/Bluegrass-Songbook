@@ -1,6 +1,6 @@
 {meta: title In The Park After Dark}
 {meta: artist Norma Jean}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [C]In the [F]park after dark [G7]we'll be [C]together 

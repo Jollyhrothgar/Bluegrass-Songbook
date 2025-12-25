@@ -1,6 +1,6 @@
 {meta: title Mom}
 {meta: artist Garth Brooks}
-{meta: writer Don Sampson and Wynn Varble}
+{meta: composer Don Sampson and Wynn Varble}
 
 {start_of_verse: Verse 1}
 [C]A little baby told God hey I'm [G7]kinda scared

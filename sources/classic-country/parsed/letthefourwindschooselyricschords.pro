@@ -1,6 +1,6 @@
 {meta: title Let The Four Winds Choose}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Presley Lewis}
+{meta: composer Hank Thompson and Presley Lewis}
 
 {start_of_verse: Verse 1}
 [C]North south [F]east or west

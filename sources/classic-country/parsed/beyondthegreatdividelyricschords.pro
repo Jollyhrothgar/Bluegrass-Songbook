@@ -1,6 +1,6 @@
 {meta: title Beyond The Great Divide}
 {meta: artist Emmylou Harris}
-{meta: writer Jack W. Routh and J.C. Crowley}
+{meta: composer Jack W. Routh and J.C. Crowley}
 
 {start_of_verse: Verse 1}
 [C]There'll be [F]greener [C]pastures

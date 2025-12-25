@@ -1,6 +1,6 @@
 {meta: title Those Memories Of You}
 {meta: artist Emmylou Harris}
-{meta: writer Alan O'Bryant}
+{meta: composer Alan O'Bryant}
 
 {start_of_verse: Verse 1}
 [G]Those memories of you [F]still haunt [G]me

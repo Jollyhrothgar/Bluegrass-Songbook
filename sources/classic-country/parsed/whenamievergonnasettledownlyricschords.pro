@@ -1,6 +1,6 @@
 {meta: title When Am I Ever Gonna Settle Down}
 {meta: artist Bobby Bare}
-{meta: writer John Lomax and Artie Large}
+{meta: composer John Lomax and Artie Large}
 
 {start_of_verse: Verse 1}
 [C]I've walked the streets of [F]small Texas [C]towns

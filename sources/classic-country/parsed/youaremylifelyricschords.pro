@@ -1,6 +1,6 @@
 {meta: title You Are My Life}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Louis Blackburn}
+{meta: composer Webb Pierce and Louis Blackburn}
 
 {start_of_verse: Verse 1}
 {comment: C}

@@ -1,6 +1,6 @@
 {meta: title Old Roman Soldier}
 {meta: artist Gene Watson}
-{meta: writer David Cooper}
+{meta: composer David Cooper}
 
 {start_of_verse: Verse 1}
 [G]They trade for thirty pieces of silver

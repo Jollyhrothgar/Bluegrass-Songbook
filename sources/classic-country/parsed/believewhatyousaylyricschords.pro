@@ -1,6 +1,6 @@
 {meta: title Believe What You Say}
 {meta: artist Ricky Nelson}
-{meta: writer Johnny and Dorsey Burnette}
+{meta: composer Johnny and Dorsey Burnette}
 
 {start_of_verse: Verse 1}
 [G]I believe what you say when you say you're going steady

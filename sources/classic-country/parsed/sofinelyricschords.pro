@@ -1,6 +1,6 @@
 {meta: title So Fine}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Johnny Otis}
+{meta: composer Johnny Otis}
 
 {start_of_verse: Verse 1}
 [C]So fine so fine so fine yeah

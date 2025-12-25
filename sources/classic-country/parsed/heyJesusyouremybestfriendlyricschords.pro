@@ -1,6 +1,6 @@
 {meta: title Hey Jesus You're My Best Friend}
 {meta: artist B J Thomas}
-{meta: writer Don Goodman and Mary Ann Kennedy}
+{meta: composer Don Goodman and Mary Ann Kennedy}
 
 {start_of_verse: Verse 1}
 [C]You almost have to [G7]lose your mind[F]

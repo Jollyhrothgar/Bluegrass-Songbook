@@ -1,6 +1,6 @@
 {meta: title See You Around On Your Way Down}
 {meta: artist Waylon Jennings}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]He offers you [Em]so many things that [F]I can't give

@@ -1,6 +1,6 @@
 {meta: title Cowboys And Angels}
 {meta: artist Garth Brooks}
-{meta: writer Kent Blazy, Kim Williams, Garth Brooks}
+{meta: composer Kent Blazy, Kim Williams, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G7]On the [C]eighth day God [G7]noticed a [C]problem 

@@ -1,6 +1,6 @@
 {meta: title Silence Is Golden}
 {meta: artist Bobby Bare}
-{meta: writer Jackson Brown}
+{meta: composer Jackson Brown}
 
 {start_of_verse: Verse 1}
 [C]Silence is [G7]golden my [C]love 

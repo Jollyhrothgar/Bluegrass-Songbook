@@ -1,6 +1,6 @@
 {meta: title Because You're Mine}
 {meta: artist Ferlin Husky}
-{meta: writer Henry Dorrough and Ferlin Husky}
+{meta: composer Henry Dorrough and Ferlin Husky}
 
 {start_of_verse: Verse 1}
 [C]Today my life is so much brighter 

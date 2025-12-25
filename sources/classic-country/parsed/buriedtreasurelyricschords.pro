@@ -1,6 +1,6 @@
 {meta: title Buried Treasure}
 {meta: artist Kenny Rogers}
-{meta: writer Barry Gibb, Maurice Gibb, Robin Gibb}
+{meta: composer Barry Gibb, Maurice Gibb, Robin Gibb}
 
 {start_of_verse: Verse 1}
 [C]As I'm walkin' behind this plow I keep turnin' over memories

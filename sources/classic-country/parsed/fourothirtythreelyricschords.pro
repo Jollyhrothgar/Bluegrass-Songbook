@@ -1,6 +1,6 @@
 {meta: title Four O Thirty Three}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery}
+{meta: composer Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]Well the two new people that's moved to the middle of the block 

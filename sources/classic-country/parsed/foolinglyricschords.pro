@@ -1,6 +1,6 @@
 {meta: title Fooling}
 {meta: artist Johnny Rodriguez}
-{meta: writer Ralph Mooney}
+{meta: composer Ralph Mooney}
 
 {start_of_verse: Verse 1}
 [C]I was fooling

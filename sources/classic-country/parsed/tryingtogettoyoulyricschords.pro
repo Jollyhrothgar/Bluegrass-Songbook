@@ -1,6 +1,6 @@
 {meta: title Trying To Get To You}
 {meta: artist Roy Orbison}
-{meta: writer Rose Marie McCoy and Charlie Singleton}
+{meta: composer Rose Marie McCoy and Charlie Singleton}
 
 {start_of_verse: Verse 1}
 [C]I've been traveling over mountains 

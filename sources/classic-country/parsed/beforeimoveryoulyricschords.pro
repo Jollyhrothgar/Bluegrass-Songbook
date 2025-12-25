@@ -1,6 +1,6 @@
 {meta: title Before I'm Over You Lyrics Chords}
 {meta: artist Loretta Lynn}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [C]I just can't get it through my head

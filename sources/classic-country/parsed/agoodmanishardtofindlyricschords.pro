@@ -1,6 +1,6 @@
 {meta: title A Good Man Is Hard To Find}
 {meta: artist Brenda Lee}
-{meta: writer Eddie Green}
+{meta: composer Eddie Green}
 
 {start_of_verse: Verse 1}
 [G7]A good [A7]man is hard to find you always [D7]get the other kind

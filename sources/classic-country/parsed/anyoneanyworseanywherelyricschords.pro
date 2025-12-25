@@ -1,6 +1,6 @@
 {meta: title Any One Any Worse Any Where}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Lorene Allen}
+{meta: composer Loretta Lynn and Lorene Allen}
 
 {start_of_verse: Verse 1}
 [G]You're tellin' me how [D7]bad I am for lovin' [G]him

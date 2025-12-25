@@ -1,6 +1,6 @@
 {meta: title Are We Making Love Or Just Making Friends}
 {meta: artist Moe Bandy}
-{meta: writer Steve Collom}
+{meta: composer Steve Collom}
 
 {start_of_verse: Verse 1}
 [C]It's not working the way [F]that I planned [G7]it

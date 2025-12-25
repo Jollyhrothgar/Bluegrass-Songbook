@@ -1,6 +1,6 @@
 {meta: title Christmas Is The Warmest Time Of The Year}
 {meta: artist Aaron Tippin}
-{meta: writer Henry Beard, Aaron Tippin, Thea Tippin}
+{meta: composer Henry Beard, Aaron Tippin, Thea Tippin}
 
 {start_of_verse: Verse 1}
 [G]Candy canes and popcorn strings and [Am]lights upon the [D7]tree

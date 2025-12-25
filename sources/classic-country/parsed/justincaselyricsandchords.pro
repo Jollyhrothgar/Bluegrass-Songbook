@@ -1,6 +1,6 @@
 {meta: title Just In Case}
 {meta: artist Ronnie Milsap}
-{meta: writer Hugh Moffatt}
+{meta: composer Hugh Moffatt}
 
 {start_of_verse: Verse 1}
 [C]It's [F]over [G7]I know you're [C]going away

@@ -1,6 +1,6 @@
 {meta: title Angel On Paper Lyrics and Chords}
 {meta: artist Dottie West}
-{meta: writer Delmar Williams and Paul Borst}
+{meta: composer Delmar Williams and Paul Borst}
 
 {start_of_verse: Verse 1}
 [C]An angel on [G]paper that's [D7]all that's left for [G]me

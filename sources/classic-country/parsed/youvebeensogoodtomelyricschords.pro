@@ -1,6 +1,6 @@
 {meta: title You've Been So Good To Me}
 {meta: artist Van Trevor}
-{meta: writer Dick Heard and Van Trevor}
+{meta: composer Dick Heard and Van Trevor}
 
 {start_of_verse: Verse 1}
 [D7]You've been so [G]good to me [C]all the kind things you [G]do

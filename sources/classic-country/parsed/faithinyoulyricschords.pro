@@ -1,6 +1,6 @@
 {meta: title Faith In You}
 {meta: artist Randy Travis}
-{meta: writer Tom Douglas, Joe Henry, Matt Rollins}
+{meta: composer Tom Douglas, Joe Henry, Matt Rollins}
 
 {start_of_verse: Verse 1}
 [G]I don't have faith in technology [Em]

@@ -1,6 +1,6 @@
 {meta: title I Sure Need Her Now}
 {meta: artist Vernon Oxford}
-{meta: writer Clarence Wayne Kemp and Claude Putman Jr.}
+{meta: composer Clarence Wayne Kemp and Claude Putman Jr.}
 
 {start_of_verse: Verse 1}
 [C]I want her now but it's too late her love is [F]turning to [C]hate

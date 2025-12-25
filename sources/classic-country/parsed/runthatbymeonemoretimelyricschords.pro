@@ -1,6 +1,6 @@
 {meta: title Run That By Me One More Time}
 {meta: artist Ray Price}
-{meta: writer Fred Foster, Arthur Hancock and Jimmy Lambert}
+{meta: composer Fred Foster, Arthur Hancock and Jimmy Lambert}
 
 {start_of_verse: Verse 1}
 [G]Run that by me one more [D7]time 

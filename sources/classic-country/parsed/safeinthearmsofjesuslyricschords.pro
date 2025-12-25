@@ -1,6 +1,6 @@
 {meta: title Safe In The Arms Of Jesus}
 {meta: artist Eddy Arnold}
-{meta: writer Fanny J. Crosby and William Howard Doane}
+{meta: composer Fanny J. Crosby and William Howard Doane}
 
 {start_of_verse: Verse 1}
 [C]Safe in the arms of Jesus safe on his gentle [G7]breast

@@ -1,6 +1,6 @@
 {meta: title Spanish Eyes}
 {meta: artist Ray Price}
-{meta: writer Charles Singleton, Eddie Snyder, Bert Kaempfert}
+{meta: composer Charles Singleton, Eddie Snyder, Bert Kaempfert}
 
 {start_of_verse: Verse 1}
 [G]Blue Spanish eyes teardrops are falling 

@@ -1,6 +1,6 @@
 {meta: title That's When It's Coming Home To You}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ernest Tubb and Lois Snapp}
+{meta: composer Ernest Tubb and Lois Snapp}
 
 {start_of_verse: Verse 1}
 [G]For a million of [C]lies that you [G]told me

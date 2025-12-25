@@ -1,6 +1,6 @@
 {meta: title One Teardrop and One Step Away}
 {meta: artist Don Reno and Red Smiley}
-{meta: writer Hender Saul}
+{meta: composer Hender Saul}
 
 {start_of_verse: Verse 1}
 [G7]I was one teardrop and one step [C]away

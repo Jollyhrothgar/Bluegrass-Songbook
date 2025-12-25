@@ -1,6 +1,6 @@
 {meta: title You Were Only Teasing Me}
 {meta: artist Ernest Tubb}
-{meta: writer T. Texas Tyler and Ernest Tubb}
+{meta: composer T. Texas Tyler and Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]Once I held you in my arms

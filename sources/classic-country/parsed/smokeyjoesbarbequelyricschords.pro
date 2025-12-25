@@ -1,6 +1,6 @@
 {meta: title Smokey Joe’s Barbeque}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Horton and Fred Horton}
+{meta: composer Johnny Horton and Fred Horton}
 
 {start_of_verse: Verse 1}
 [C]Way down south where the whippoorwills call

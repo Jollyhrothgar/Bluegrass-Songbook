@@ -1,6 +1,6 @@
 {meta: title I Was The One}
 {meta: artist Elvis Presley}
-{meta: writer Wm. Andrew Peppers, Aaron Schroeder,}
+{meta: composer Wm. Andrew Peppers, Aaron Schroeder,}
 
 {start_of_verse: Verse 1}
 [C]I was the [Am]one who [Dm]taught her to [G7]kiss

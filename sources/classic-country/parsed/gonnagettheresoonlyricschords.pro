@@ -1,6 +1,6 @@
 {meta: title Gonna Get There Soon}
 {meta: artist The Country Gentlemen}
-{meta: writer Martha Adcock}
+{meta: composer Martha Adcock}
 
 {start_of_verse: Verse 1}
 [G]In the shelter of the mountain I will rest my weary burdens

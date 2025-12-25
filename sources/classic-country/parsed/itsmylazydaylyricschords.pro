@@ -1,6 +1,6 @@
 {meta: title It's My Lazy Day}
 {meta: artist Bob Wills}
-{meta: writer Smiley Burnette}
+{meta: composer Smiley Burnette}
 
 {start_of_verse: Verse 1}
 [G]I might have gone fishing I got to thinking it [C]over

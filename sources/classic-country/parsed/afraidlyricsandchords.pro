@@ -1,6 +1,6 @@
 {meta: title Afraid}
 {meta: artist Eddy Arnold}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G7]Afraid [C]to tell you [F]how much I [C]care

@@ -1,6 +1,6 @@
 {meta: title Where Your Love Won't Go}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Steve Wariner}
+{meta: composer Clint Black and Steve Wariner}
 
 {start_of_verse: Verse 1}
 [C]It's a lonesome avenue I'm barely [Dm]living on [C]

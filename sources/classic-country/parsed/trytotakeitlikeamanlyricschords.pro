@@ -1,6 +1,6 @@
 {meta: title Try To Take It Like A Man}
 {meta: artist Carl Smith}
-{meta: writer Wayne P. Walker and George Sherry}
+{meta: composer Wayne P. Walker and George Sherry}
 
 {start_of_verse: Verse 1}
 [G]She’s gone she’s [G7]gone she [C]loves someone [G]else

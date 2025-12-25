@@ -1,6 +1,6 @@
 {meta: title Old King Cole}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin}
+{meta: composer Lloene S. Martin}
 
 {start_of_verse: Verse 1}
 [G]Well old King Cole was a merry old sole

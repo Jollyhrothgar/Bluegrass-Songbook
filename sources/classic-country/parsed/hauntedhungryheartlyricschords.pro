@@ -1,6 +1,6 @@
 {meta: title Haunted Hungry Heart}
 {meta: artist Slim Whitman}
-{meta: writer Cecil Harris, Arlie Carter, Jimmy Heap}
+{meta: composer Cecil Harris, Arlie Carter, Jimmy Heap}
 
 {start_of_verse: Verse 1}
 [G]I'm starving for your love but [C]I'm so [G]afraid

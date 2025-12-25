@@ -1,6 +1,6 @@
 {meta: title Sitting On The Dock Of The Bay}
 {meta: artist Glen Campbell}
-{meta: writer Otis Redding and Steve Cropper}
+{meta: composer Otis Redding and Steve Cropper}
 
 {start_of_verse: Verse 1}
 [G]Sitting in the morning [B7]sun I'll be [C]sitting when the evening [A7]comes

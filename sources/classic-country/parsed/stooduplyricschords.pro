@@ -1,6 +1,6 @@
 {meta: title Stood Up}
 {meta: artist Ricky Nelson}
-{meta: writer Willis Dickerson and Erma Herrold}
+{meta: composer Willis Dickerson and Erma Herrold}
 
 {start_of_verse: Verse 1}
 [C]Well I've been waiting ever since eight

@@ -1,6 +1,6 @@
 {meta: title Philadelphia Lawyer}
 {meta: artist Merle Haggard}
-{meta: writer Woody Guthrie [3/4 time]}
+{meta: composer Woody Guthrie [3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]Way out in Reno [G7]Neva-da

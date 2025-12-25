@@ -1,6 +1,6 @@
 {meta: title Icicles Hanging From Your Heart}
 {meta: artist Kitty Wells}
-{meta: writer Mary Drummond and Autry Inman}
+{meta: composer Mary Drummond and Autry Inman}
 
 {start_of_verse: Verse 1}
 [G]You've got a heart of gold but [C]it's so [G]cold

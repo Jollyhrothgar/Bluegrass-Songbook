@@ -1,6 +1,6 @@
 {meta: title Unchained Melody}
 {meta: artist The Righteous Brothers}
-{meta: writer Hy Zaret and Alex North}
+{meta: composer Hy Zaret and Alex North}
 
 {start_of_verse: Verse 1}
 [C]Oh my [Am]love my [F]darling 

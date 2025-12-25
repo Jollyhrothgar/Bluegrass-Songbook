@@ -1,6 +1,6 @@
 {meta: title This World Is Not My Home}
 {meta: artist Merle Haggard}
-{meta: writer Albert Edward Brumley}
+{meta: composer Albert Edward Brumley}
 
 {start_of_verse: Verse 1}
 [C]This world is not my home [F]I'm just a-passin' [C]through

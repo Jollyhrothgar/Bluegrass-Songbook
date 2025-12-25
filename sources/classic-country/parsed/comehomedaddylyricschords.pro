@@ -1,6 +1,6 @@
 {meta: title Come Home Daddy}
 {meta: artist Crystal Gayle}
-{meta: writer Terrye Newkirk}
+{meta: composer Terrye Newkirk}
 
 {start_of_verse: Verse 1}
 [C]I've been pining away I guess you could say I'm a [F]fool for your [D7]love

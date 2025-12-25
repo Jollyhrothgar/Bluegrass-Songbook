@@ -1,6 +1,6 @@
 {meta: title You Can't Never Tell}
 {meta: artist Hank Locklin}
-{meta: writer Luke McDaniel}
+{meta: composer Luke McDaniel}
 
 {start_of_verse: Verse 1}
 [G]Well the other night I had a dream

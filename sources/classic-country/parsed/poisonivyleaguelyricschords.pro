@@ -1,6 +1,6 @@
 {meta: title Poison Ivy League}
 {meta: artist Elvis Presley}
-{meta: writer Bill Giant, Bernie Baum, Florenece Kaye}
+{meta: composer Bill Giant, Bernie Baum, Florenece Kaye}
 
 {start_of_verse: Verse 1}
 [C]Hail to Thee old [F]Ivy [C]Lea-[G7]gue poison Ivy [C]League

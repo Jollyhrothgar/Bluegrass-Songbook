@@ -1,6 +1,6 @@
 {meta: title Camptown Races}
 {meta: artist Don Gibson}
-{meta: writer Stephen Foster}
+{meta: composer Stephen Foster}
 
 {start_of_verse: Verse 1}
 [C]The camptown ladies sing this song [G7]doo-dah

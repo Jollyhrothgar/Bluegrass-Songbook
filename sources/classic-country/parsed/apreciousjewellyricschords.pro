@@ -1,6 +1,6 @@
 {meta: title A Precious Jewel}
 {meta: artist Hank Locklin}
-{meta: writer Roy Acuff}
+{meta: composer Roy Acuff}
 
 {start_of_verse: Verse 1}
 [G]Way back in the hills

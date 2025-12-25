@@ -1,6 +1,6 @@
 {meta: title He Will Set Your Fields On Fire}
 {meta: artist Kitty Wells}
-{meta: writer Veona Braskett and C.M. Ballew}
+{meta: composer Veona Braskett and C.M. Ballew}
 
 {start_of_verse: Verse 1}
 [C]There's a call that rings for the one who sings

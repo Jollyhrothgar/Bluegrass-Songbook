@@ -1,6 +1,6 @@
 {meta: title When Did You Leave Heaven}
 {meta: artist Jim Reeves}
-{meta: writer Richard A. Whiting and Walter Bullock}
+{meta: composer Richard A. Whiting and Walter Bullock}
 
 {start_of_verse: Verse 1}
 [C]When did you leave heaven

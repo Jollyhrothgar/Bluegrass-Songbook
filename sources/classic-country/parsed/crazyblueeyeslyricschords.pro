@@ -1,6 +1,6 @@
 {meta: title Crazy Blue Eyes}
 {meta: artist Lacy J. Dalton}
-{meta: writer Jill Croston and Mary McFadden}
+{meta: composer Jill Croston and Mary McFadden}
 
 {start_of_verse: Verse 1}
 [G]Momma I always love losers

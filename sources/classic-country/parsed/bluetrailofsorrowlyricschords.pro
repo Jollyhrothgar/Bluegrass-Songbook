@@ -1,6 +1,6 @@
 {meta: title Blue Trail Of Sorrow}
 {meta: artist Dan Tyminski}
-{meta: writer Jeff White}
+{meta: composer Jeff White}
 
 {start_of_verse: Verse 1}
 [G]Blue [C]trail of [G]sorrow lies [C]upon the [G]ground

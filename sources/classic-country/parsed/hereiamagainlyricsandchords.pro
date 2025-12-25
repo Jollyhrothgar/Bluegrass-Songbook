@@ -1,6 +1,6 @@
 {meta: title Here I Am Again}
 {meta: artist Johnny Rodriguez}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]I told you that I’d never [F]come around [C]again

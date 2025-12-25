@@ -1,6 +1,6 @@
 {meta: title Don't Go Home Tonight Unsaved}
 {meta: artist Wilburn Brothers}
-{meta: writer Garry D. Rector, John F. Gleen Jr.}
+{meta: composer Garry D. Rector, John F. Gleen Jr.}
 
 {start_of_verse: Verse 1}
 [C]Upon my heart I have a [F]burden

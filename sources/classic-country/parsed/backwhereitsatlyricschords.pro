@@ -1,6 +1,6 @@
 {meta: title Back Where It's At}
 {meta: artist George Hamilton IV}
-{meta: writer Bobby Bond}
+{meta: composer Bobby Bond}
 
 {start_of_verse: Verse 1}
 [C]Lately it seems [Em]everything I see

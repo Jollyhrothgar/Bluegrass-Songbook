@@ -1,6 +1,6 @@
 {meta: title Your Forever Don't Last Very Long}
 {meta: artist Jean Shepard}
-{meta: writer Scott Turner, Steve Stone, Wes Buchanan}
+{meta: composer Scott Turner, Steve Stone, Wes Buchanan}
 
 {start_of_verse: Verse 1}
 [C]Each time you say you'll love me for[F]ever

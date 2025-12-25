@@ -1,6 +1,6 @@
 {meta: title Wishing Well}
 {meta: artist Wanda Jackson}
-{meta: writer Billy Graham}
+{meta: composer Billy Graham}
 
 {start_of_verse: Verse 1}
 [G]I'm goin' fishing in the [D7]wishing well 

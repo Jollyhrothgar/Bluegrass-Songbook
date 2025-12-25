@@ -1,6 +1,6 @@
 {meta: title Helping Her Get Over Him}
 {meta: artist Jim Ed Brown}
-{meta: writer Charles Rogers and Jim Ed Brown}
+{meta: composer Charles Rogers and Jim Ed Brown}
 
 {start_of_verse: Verse 1}
 [G]She was more than any woman I had [C]dreamed of

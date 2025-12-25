@@ -1,6 +1,6 @@
 {meta: title I'm Never Gonna Be The Same}
 {meta: artist Melba Montgomery}
-{meta: writer Melba Montgomery and Carl Montgomery}
+{meta: composer Melba Montgomery and Carl Montgomery}
 
 {start_of_verse: Verse 1}
 [G]Take a look at me [C]tell me what do you [G]see

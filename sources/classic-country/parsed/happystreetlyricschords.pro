@@ -1,6 +1,6 @@
 {meta: title Happy Street}
 {meta: artist Charlie Pride}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]I was blue till I found [G7]you

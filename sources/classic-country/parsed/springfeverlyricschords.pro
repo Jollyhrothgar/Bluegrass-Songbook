@@ -1,6 +1,6 @@
 {meta: title Spring Fever}
 {meta: artist Loretta Lynn}
-{meta: writer Dorothy Fields and Shirl Milete}
+{meta: composer Dorothy Fields and Shirl Milete}
 
 {start_of_verse: Verse 1}
 [G]Last night he took me in his arms and [D7]held me tenderly

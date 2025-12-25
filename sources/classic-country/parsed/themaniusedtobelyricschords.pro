@@ -1,6 +1,6 @@
 {meta: title The Man I Used To Be}
 {meta: artist Boxcar Willie}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [C]I’m no hero [F]I'm no [C]saint

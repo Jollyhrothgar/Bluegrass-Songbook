@@ -1,6 +1,6 @@
 {meta: title Because Of Love}
 {meta: artist Elvis Presley}
-{meta: writer Ruth Batchelor and Bob Roberts}
+{meta: composer Ruth Batchelor and Bob Roberts}
 
 {start_of_verse: Verse 1}
 [C]Because of [G7]love I'm a hundred feet [C]tall

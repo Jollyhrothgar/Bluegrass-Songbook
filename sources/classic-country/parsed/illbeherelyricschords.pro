@@ -1,6 +1,6 @@
 {meta: title I'll Be Here}
 {meta: artist Statler Brothers}
-{meta: writer Don S. Reid}
+{meta: composer Don S. Reid}
 
 {start_of_verse: Verse 1}
 [D7]I’ll be [G]here when [Em]things don’t [C]seem to fall in [G]place

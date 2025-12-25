@@ -1,6 +1,6 @@
 {meta: title Five O'Clock 500}
 {meta: artist Alabama}
-{meta: writer Randy Owen, Ron Rogers, Theodore Gentry}
+{meta: composer Randy Owen, Ron Rogers, Theodore Gentry}
 
 {start_of_verse: Verse 1}
 [G]Just [F]punched the clock and boy [C]am I [G]ready

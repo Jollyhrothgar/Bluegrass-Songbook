@@ -1,6 +1,6 @@
 {meta: title There I Go Dreamin'}
 {meta: artist Roger Miller}
-{meta: writer Dorsey Burnette}
+{meta: composer Dorsey Burnette}
 
 {start_of_verse: Verse 1}
 [G]Well I guess I better go and sit [C]down by the phone

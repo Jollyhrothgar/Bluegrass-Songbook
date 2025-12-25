@@ -1,6 +1,6 @@
 {meta: title No Hard Times}
 {meta: artist Merle Haggard}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]I got a barrel of flour Lord I got a bucket of lard [C7]

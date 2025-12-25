@@ -1,6 +1,6 @@
 {meta: title Believe}
 {meta: artist Brooks And Dunn}
-{meta: writer Craig Wiseman and Ronnie Dunn}
+{meta: composer Craig Wiseman and Ronnie Dunn}
 
 {start_of_verse: Verse 1}
 [G]Old man Wrigley lived in that white house, 

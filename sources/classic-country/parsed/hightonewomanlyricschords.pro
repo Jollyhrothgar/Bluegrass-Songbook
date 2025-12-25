@@ -1,6 +1,6 @@
 {meta: title High Tone Woman}
 {meta: artist George Strait}
-{meta: writer Leslie Satcher and Tim Rouillier}
+{meta: composer Leslie Satcher and Tim Rouillier}
 
 {start_of_verse: Verse 1}
 [C]I been watchin' you watchin' her 

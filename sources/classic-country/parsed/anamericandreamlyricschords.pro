@@ -1,6 +1,6 @@
 {meta: title An American Dream}
 {meta: artist Nitty Gritty Dirt Band}
-{meta: writer Rodney J. Crowell}
+{meta: composer Rodney J. Crowell}
 
 {start_of_verse: Verse 1}
 [C]I beg your pardon momma what did you [F]say

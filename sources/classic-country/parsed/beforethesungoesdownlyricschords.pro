@@ -1,6 +1,6 @@
 {meta: title Before The Sun Goes Down}
 {meta: artist Jimmy Martin}
-{meta: writer Jerry Organ}
+{meta: composer Jerry Organ}
 
 {start_of_verse: Verse 1}
 [G]Well pack up your car go on and leave

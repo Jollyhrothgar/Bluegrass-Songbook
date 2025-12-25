@@ -1,6 +1,6 @@
 {meta: title At The Cross}
 {meta: artist Hank Williams}
-{meta: writer Isaac Watts and Ralph C Hudson}
+{meta: composer Isaac Watts and Ralph C Hudson}
 
 {start_of_verse: Verse 1}
 [C]Was it for crimes that I have done

@@ -1,6 +1,6 @@
 {meta: title When The Fire Comes Down From Heaven}
 {meta: artist Hank Williams Sr.}
-{meta: writer Milton Estes, John W. Fowler, Tommy Harrell, Paul M. Kinsey}
+{meta: composer Milton Estes, John W. Fowler, Tommy Harrell, Paul M. Kinsey}
 
 {start_of_verse: Verse 1}
 [G]Way back in the days of Noah

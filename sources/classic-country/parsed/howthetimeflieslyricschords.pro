@@ -1,6 +1,6 @@
 {meta: title How The Time Flies}
 {meta: artist Jerry Wallace}
-{meta: writer Thomas J. Coe}
+{meta: composer Thomas J. Coe}
 
 {start_of_verse: Verse 1}
 [G](Dickey-doo [Em]dickey-[C]doo

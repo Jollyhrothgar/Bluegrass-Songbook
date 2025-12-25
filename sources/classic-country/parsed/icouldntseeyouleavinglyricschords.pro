@@ -1,6 +1,6 @@
 {meta: title I Couldn't See You Leaving}
 {meta: artist Conway Twitty}
-{meta: writer Ronny Scaife and Rory Michael Bourke}
+{meta: composer Ronny Scaife and Rory Michael Bourke}
 
 {start_of_verse: Verse 1}
 [C]Lying all alone in this midnight [G7]blue

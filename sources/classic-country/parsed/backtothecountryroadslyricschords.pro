@@ -1,6 +1,6 @@
 {meta: title Back To The Country Roads}
 {meta: artist Charley Pride}
-{meta: writer Richard Jarvis}
+{meta: composer Richard Jarvis}
 
 {start_of_verse: Verse 1}
 [G]I can see the [C]sadness in your [G]eyes

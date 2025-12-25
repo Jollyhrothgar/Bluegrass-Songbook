@@ -1,6 +1,6 @@
 {meta: title War Is Hell On The Homefront Too}
 {meta: artist T.G. Sheppard}
-{meta: writer Curly Putman, Bucky Jones, Dan Wilson}
+{meta: composer Curly Putman, Bucky Jones, Dan Wilson}
 
 {start_of_verse: Verse 1}
 [C]It was July hot in Georgia in 1942   

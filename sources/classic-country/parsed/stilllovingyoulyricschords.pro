@@ -1,6 +1,6 @@
 {meta: title Still Loving You}
 {meta: artist Bob Luman}
-{meta: writer Troy Schondell}
+{meta: composer Troy Schondell}
 
 {start_of_verse: Verse 1}
 [C]Still loving you just like before [C7]

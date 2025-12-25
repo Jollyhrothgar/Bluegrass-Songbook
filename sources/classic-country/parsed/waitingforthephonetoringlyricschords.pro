@@ -1,6 +1,6 @@
 {meta: title Waiting For The Phone To Ring}
 {meta: artist Patty Loveless}
-{meta: writer Joe Tassi and Bob Tassi}
+{meta: composer Joe Tassi and Bob Tassi}
 
 {start_of_verse: Verse 1}
 [C]How many nights you cried so sad and lonely

@@ -1,6 +1,6 @@
 {meta: title Show Me Thy Way O Lord}
 {meta: artist Elvis Presley}
-{meta: writer Hazel Shade}
+{meta: composer Hazel Shade}
 
 {start_of_verse: Verse 1}
 [G]Show me thy [D7]ways O [G]Lord

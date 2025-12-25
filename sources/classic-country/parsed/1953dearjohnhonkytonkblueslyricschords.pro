@@ -1,6 +1,6 @@
 {meta: title 1953 Dear John Honky Tonk Blues}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [G]I keep the radio on most all night long and listen to the songs they play

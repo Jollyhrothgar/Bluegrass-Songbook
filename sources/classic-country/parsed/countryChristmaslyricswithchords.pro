@@ -1,6 +1,6 @@
 {meta: title Country Christmas}
 {meta: artist Faron Young}
-{meta: writer Bill Emerson and Jody Emerson}
+{meta: composer Bill Emerson and Jody Emerson}
 
 {start_of_verse: Verse 1}
 [G]In our little country settlement there's [C]harmony a-[G]ringing

@@ -1,6 +1,6 @@
 {meta: title I’m Not That Lonely Yet}
 {meta: artist Rhonda Vincent}
-{meta: writer Bill Rice, Mary Rice, Mary Sharon Rice}
+{meta: composer Bill Rice, Mary Rice, Mary Sharon Rice}
 
 {start_of_verse: Verse 1}
 [G]I don't wanna [C]give you a [D7]slow dance or [G]two 

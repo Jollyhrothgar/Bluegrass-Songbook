@@ -1,6 +1,6 @@
 {meta: title You Might Want To Use Me Again}
 {meta: artist Johnny Rodriguez}
-{meta: writer Bobby P. Barker and Keith Palmer}
+{meta: composer Bobby P. Barker and Keith Palmer}
 
 {start_of_verse: Verse 1}
 [G]Your love is like the [C]seasons always [D7]changing

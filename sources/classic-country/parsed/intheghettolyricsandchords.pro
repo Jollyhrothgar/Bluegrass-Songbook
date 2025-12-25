@@ -1,6 +1,6 @@
 {meta: title In The Ghetto}
 {meta: artist Dolly Parton}
-{meta: writer Mac Davis}
+{meta: composer Mac Davis}
 
 {start_of_verse: Verse 1}
 [C]As the snow flies  

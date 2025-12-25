@@ -1,6 +1,6 @@
 {meta: title I Keep Dreaming Of You}
 {meta: artist Hank Snow}
-{meta: writer Marvin Thompson and Rene Moody}
+{meta: composer Marvin Thompson and Rene Moody}
 
 {start_of_verse: Verse 1}
 [G]In my dreams an [C]old friend came to [G]see you

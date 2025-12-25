@@ -1,6 +1,6 @@
 {meta: title Rusty Guitar Strings}
 {meta: artist Boxcar Willie}
-{meta: writer Travis Martin}
+{meta: composer Travis Martin}
 
 {start_of_verse: Verse 1}
 [C]I’ve got [F]rusty guitar strings from [C]crying salty tears

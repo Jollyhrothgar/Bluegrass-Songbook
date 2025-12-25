@@ -1,6 +1,6 @@
 {meta: title Coward of the County}
 {meta: artist Kenny Rogers}
-{meta: writer Roger Bowling and Billy Ed Wheeler}
+{meta: composer Roger Bowling and Billy Ed Wheeler}
 
 {start_of_verse: Verse 1}
 [C]Everyone considered him the [F]coward of the [C]county

@@ -1,6 +1,6 @@
 {meta: title Thank God For A Mother Like Mine}
 {meta: artist Kitty Wells}
-{meta: writer Johnnie Bailes}
+{meta: composer Johnnie Bailes}
 
 {start_of_verse: Verse 1}
 [G]My dear precious mother means [C]so much to [G]me 

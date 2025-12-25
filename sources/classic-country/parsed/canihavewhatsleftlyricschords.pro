@@ -1,6 +1,6 @@
 {meta: title Can I Have What's Left}
 {meta: artist Billy Parker}
-{meta: writer Jimmie Helms}
+{meta: composer Jimmie Helms}
 
 {start_of_verse: Verse 1}
 [C]Can I have what’s left when he’s [G7]through with you

@@ -1,6 +1,6 @@
 {meta: title In A Mansion Stands My Love}
 {meta: artist Jim Reeves}
-{meta: writer Johnny Russel}
+{meta: composer Johnny Russel}
 
 {start_of_verse: Verse 1}
 [C]On a mountain stands a [G7]mansion so [C]fine 

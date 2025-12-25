@@ -1,6 +1,6 @@
 {meta: title Icy Blue Heart}
 {meta: artist Emmylou Harris}
-{meta: writer John Hiatt}
+{meta: composer John Hiatt}
 
 {start_of_verse: Verse 1}
 [G]She came on to him like a [C]slow moving [G]cold front

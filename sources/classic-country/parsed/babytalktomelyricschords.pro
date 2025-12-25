@@ -1,6 +1,6 @@
 {meta: title Baby Talk To Me}
 {meta: artist Marty Robbins}
-{meta: writer Fred Rose and Hy Heath}
+{meta: composer Fred Rose and Hy Heath}
 
 {start_of_verse: Verse 1}
 [C]Baby don't just sit there [C7]staring into space

@@ -1,6 +1,6 @@
 {meta: title Somewhere Beyond Somewhere}
 {meta: artist Gene Watson}
-{meta: writer Mel Holt}
+{meta: composer Mel Holt}
 
 {start_of_verse: Verse 1}
 [C]As daylight was dawning I woke up this morning

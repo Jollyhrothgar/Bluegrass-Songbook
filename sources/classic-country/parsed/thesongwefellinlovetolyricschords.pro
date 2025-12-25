@@ -1,6 +1,6 @@
 {meta: title The Song We Fell In Love To}
 {meta: artist Connie Smith}
-{meta: writer Ray Baker and Tupper Suassy}
+{meta: composer Ray Baker and Tupper Suassy}
 
 {start_of_verse: Verse 1}
 [C]I just [G7]heard the song we fell in love [F]to

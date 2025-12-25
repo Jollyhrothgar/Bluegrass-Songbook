@@ -1,6 +1,6 @@
 {meta: title Marshmallow World}
 {meta: artist Brenda Lee}
-{meta: writer Carl Sigman and Peter DeRose}
+{meta: composer Carl Sigman and Peter DeRose}
 
 {start_of_verse: Verse 1}
 [D7]It's a [G]marshmallow world in the winter

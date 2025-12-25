@@ -1,6 +1,6 @@
 {meta: title Yes Sir That's My Baby}
 {meta: artist Ricky Nelson}
-{meta: writer Walter Donaldson and Gus Kahn}
+{meta: composer Walter Donaldson and Gus Kahn}
 
 {start_of_verse: Verse 1}
 [G]Yes sir that's my baby 

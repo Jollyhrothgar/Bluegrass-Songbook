@@ -1,6 +1,6 @@
 {meta: title I See Heaven In You}
 {meta: artist Mel Tillis}
-{meta: writer Jim Rister}
+{meta: composer Jim Rister}
 
 {start_of_verse: Verse 1}
 [C]I wake up every morning and I hear good morning darlin'

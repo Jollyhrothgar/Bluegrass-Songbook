@@ -1,6 +1,6 @@
 {meta: title I'm The One}
 {meta: artist Ricky Van Shelton}
-{meta: writer Gary Nicholson and Terry McBride}
+{meta: composer Gary Nicholson and Terry McBride}
 
 {start_of_verse: Verse 1}
 [G]I know you're so [C]unsure of what to [G]do

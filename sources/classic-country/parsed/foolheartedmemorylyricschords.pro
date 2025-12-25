@@ -1,6 +1,6 @@
 {meta: title Fool Hearted Memory}
 {meta: artist George Strait}
-{meta: writer Byron Hill and Alan R. Mevis}
+{meta: composer Byron Hill and Alan R. Mevis}
 
 {start_of_verse: Verse 1}
 [G]Nickels and dimes  [G7]memories and [Em]wine

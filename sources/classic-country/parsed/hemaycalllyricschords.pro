@@ -1,6 +1,6 @@
 {meta: title He May Call}
 {meta: artist Anne Murray}
-{meta: writer Michael Brown and Steve Martin}
+{meta: composer Michael Brown and Steve Martin}
 
 {start_of_verse: Verse 1}
 [F]I've been telling lies I never [G7]knew[Am]

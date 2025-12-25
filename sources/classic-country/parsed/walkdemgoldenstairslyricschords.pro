@@ -1,6 +1,6 @@
 {meta: title Walk Dem Golden Stairs}
 {meta: artist Elvis Presley}
-{meta: writer Cully Holt}
+{meta: composer Cully Holt}
 
 {start_of_verse: Verse 1}
 [F]I’m gonna walk walk dem golden [C]stairs

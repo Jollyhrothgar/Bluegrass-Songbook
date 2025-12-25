@@ -1,6 +1,6 @@
 {meta: title Kiss Your Man Good Bye}
 {meta: artist The Everly Brothers}
-{meta: writer Phil Everly and Don Everly}
+{meta: composer Phil Everly and Don Everly}
 
 {start_of_verse: Verse 1}
 Kiss Your Man Good Bye

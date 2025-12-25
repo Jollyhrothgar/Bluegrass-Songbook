@@ -1,6 +1,6 @@
 {meta: title West Texas Waltz}
 {meta: artist Emmylou Harris}
-{meta: writer Butch Hancock}
+{meta: composer Butch Hancock}
 
 {start_of_verse: Verse 1}
 [D7]When you're [G]ready for steady to go dancin' romancin'

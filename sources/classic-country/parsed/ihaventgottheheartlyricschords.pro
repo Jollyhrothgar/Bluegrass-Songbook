@@ -1,6 +1,6 @@
 {meta: title I Haven't Got The Heart}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Happy Wilson}
+{meta: composer Webb Pierce and Happy Wilson}
 
 {start_of_verse: Verse 1}
 [C]If I was free from you my darling I would start my life anew

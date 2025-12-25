@@ -1,6 +1,6 @@
 {meta: title Cold Gray Light Of Gone}
 {meta: artist Vince Gill}
-{meta: writer Otto Kitsinger}
+{meta: composer Otto Kitsinger}
 
 {start_of_verse: Verse 1}
 [C]Oh I woke up this morning [F]long before the [C]dawn 

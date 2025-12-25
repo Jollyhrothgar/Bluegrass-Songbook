@@ -1,6 +1,6 @@
 {meta: title I'm Tired}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis, Webb Pierce, Buck Peddy}
+{meta: composer Mel Tillis, Webb Pierce, Buck Peddy}
 
 {start_of_verse: Verse 1}
 [C]Oh Lord I'm [F]tired   [G7]tired of living this old [C]way

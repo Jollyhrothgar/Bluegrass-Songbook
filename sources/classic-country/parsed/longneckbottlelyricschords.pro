@@ -1,6 +1,6 @@
 {meta: title Longneck Bottle}
 {meta: artist Garth Brooks}
-{meta: writer Rick Carnes, Steve Wariner, Garth Brooks}
+{meta: composer Rick Carnes, Steve Wariner, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]Long neck bottle [F]let go of my [C]hand

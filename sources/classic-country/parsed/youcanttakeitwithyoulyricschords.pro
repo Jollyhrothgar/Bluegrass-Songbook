@@ -1,6 +1,6 @@
 {meta: title You Can't Take It With You}
 {meta: artist Ray Price}
-{meta: writer Hal Bynum and Jim Kandy}
+{meta: composer Hal Bynum and Jim Kandy}
 
 {start_of_verse: Verse 1}
 [G]You can take the [G7]lips that [C]once kissed me

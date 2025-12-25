@@ -1,6 +1,6 @@
 {meta: title Ain't Nobody Gonna Miss Me When I'm Gone}
 {meta: artist George Jones}
-{meta: writer George Glenn Jones and Earl Montgomery}
+{meta: composer George Glenn Jones and Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [G]Well I remember back in my younger [C]days of high [G]school

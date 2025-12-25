@@ -1,6 +1,6 @@
 {meta: title I Leaned Over Backwards For You}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I've [G7]turned the other cheek so [C]often

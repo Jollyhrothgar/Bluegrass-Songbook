@@ -1,6 +1,6 @@
 {meta: title If I Had Yesterday Over Again}
 {meta: artist Wilburn Brothers}
-{meta: writer Johnny Russell and Don Devaney}
+{meta: composer Johnny Russell and Don Devaney}
 
 {start_of_verse: Verse 1}
 [G]Today I know just [C]what I would say

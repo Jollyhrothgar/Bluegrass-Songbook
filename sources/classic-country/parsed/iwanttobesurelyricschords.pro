@@ -1,6 +1,6 @@
 {meta: title I Want To Be Sure}
 {meta: artist Eddy Arnold}
-{meta: writer Gene Autry and Merle Travis}
+{meta: composer Gene Autry and Merle Travis}
 
 {start_of_verse: Verse 1}
 [C]I want to be sure when I tell you I [F]care

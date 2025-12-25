@@ -1,6 +1,6 @@
 {meta: title As Any Fool Can See}
 {meta: artist Tracy Lawrence}
-{meta: writer Paul Nelson and Kenny Beard}
+{meta: composer Paul Nelson and Kenny Beard}
 
 {start_of_verse: Verse 1}
 [G]Lately she's been [C]picking fights 

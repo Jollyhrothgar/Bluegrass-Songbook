@@ -1,6 +1,6 @@
 {meta: title Before The Last Teardrop Dries}
 {meta: artist Norma Jean}
-{meta: writer Debra Johnson}
+{meta: composer Debra Johnson}
 
 {start_of_verse: Verse 1}
 [G]Before the last teardrop dries before the day turns into [C]night

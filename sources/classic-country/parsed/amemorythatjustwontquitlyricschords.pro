@@ -1,6 +1,6 @@
 {meta: title A Memory That Just Won't Quit}
 {meta: artist Sammy Kershaw}
-{meta: writer Walt Aldridge and Susan Longacre}
+{meta: composer Walt Aldridge and Susan Longacre}
 
 {start_of_verse: Verse 1}
 [C]I saw your car today it looked like it anyway

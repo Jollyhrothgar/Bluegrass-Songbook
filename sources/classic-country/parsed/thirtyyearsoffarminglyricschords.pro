@@ -1,6 +1,6 @@
 {meta: title Thirty Years of Farming}
 {meta: artist James King}
-{meta: writer Fred Eaglesmith}
+{meta: composer Fred Eaglesmith}
 
 {start_of_verse: Verse 1}
 [G]There's a little white note on a gate by the road

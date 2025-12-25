@@ -1,6 +1,6 @@
 {meta: title If Houses Had Hearts}
 {meta: artist Wynn Stewart}
-{meta: writer Charlie Williams and Joe Nixon}
+{meta: composer Charlie Williams and Joe Nixon}
 
 {start_of_verse: Verse 1}
 [G]If houses had hearts and feelings like people [D7]do

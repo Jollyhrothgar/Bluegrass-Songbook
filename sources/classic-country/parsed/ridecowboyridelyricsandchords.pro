@@ -1,6 +1,6 @@
 {meta: title Ride Cowboy Ride}
 {meta: artist Marty Robbins}
-{meta: writer Lee Emerson}
+{meta: composer Lee Emerson}
 
 {start_of_verse: Verse 1}
 [F]Ride cowboy ride don't ride too [C]slow

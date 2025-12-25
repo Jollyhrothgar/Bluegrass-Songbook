@@ -1,6 +1,6 @@
 {meta: title Love Is The Answer}
 {meta: artist Kitty Wells}
-{meta: writer Bill Phillips and Wayne Manning}
+{meta: composer Bill Phillips and Wayne Manning}
 
 {start_of_verse: Verse 1}
 [C]Love love love is the [F]answer

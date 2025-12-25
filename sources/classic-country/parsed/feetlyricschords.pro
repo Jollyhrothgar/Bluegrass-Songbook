@@ -1,6 +1,6 @@
 {meta: title Feet}
 {meta: artist Ray Price}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]Feet walk me down to memory [Dm]street

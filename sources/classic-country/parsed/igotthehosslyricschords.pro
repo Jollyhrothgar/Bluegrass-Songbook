@@ -1,6 +1,6 @@
 {meta: title I Got The Hoss}
 {meta: artist Mel Tillis}
-{meta: writer Jerry House}
+{meta: composer Jerry House}
 
 {start_of_verse: Verse 1}
 [G]Hey baby let me see your brand new saddle

@@ -1,6 +1,6 @@
 {meta: title Hanging Over Me}
 {meta: artist Jack Greene}
-{meta: writer Hank Cochran and Red Lane}
+{meta: composer Hank Cochran and Red Lane}
 
 {start_of_verse: Verse 1}
 [C]If only I could [F]walk out in the [C]sunshine

@@ -1,6 +1,6 @@
 {meta: title Fall Softly Snow}
 {meta: artist Jim Ed Brown and Helen Cornelius}
-{meta: writer Jean Surrey}
+{meta: composer Jean Surrey}
 
 {start_of_verse: Verse 1}
 [G]Fall softly snow 

@@ -1,6 +1,6 @@
 {meta: title Trying To Forget}
 {meta: artist Jim Reeves}
-{meta: writer Sonny Burnett and Gene Martin}
+{meta: composer Sonny Burnett and Gene Martin}
 
 {start_of_verse: Verse 1}
 [G]Trying to forget the [C]thrill of holding [D7]you

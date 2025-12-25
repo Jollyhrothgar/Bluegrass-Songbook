@@ -1,6 +1,6 @@
 {meta: title If It Ain't Broke Don't Fix It}
 {meta: artist John Anderson}
-{meta: writer John Anderson and Tony Stampley}
+{meta: composer John Anderson and Tony Stampley}
 
 {start_of_verse: Verse 1}
 [C]If it ain't broke don't fix it

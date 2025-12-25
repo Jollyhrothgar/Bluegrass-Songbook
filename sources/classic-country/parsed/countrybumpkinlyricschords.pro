@@ -1,6 +1,6 @@
 {meta: title Country Bumpkin}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]He walked up to the bar and parked his 

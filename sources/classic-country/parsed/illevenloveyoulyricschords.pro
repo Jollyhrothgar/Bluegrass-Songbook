@@ -1,6 +1,6 @@
 {meta: title I'll Even Love You}
 {meta: artist Statler Brothers}
-{meta: writer Phil Coulter and Bill Martin}
+{meta: composer Phil Coulter and Bill Martin}
 
 {start_of_verse: Verse 1}
 [G]When you're lying there in bed late at night and all [C]alone

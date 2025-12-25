@@ -1,6 +1,6 @@
 {meta: title I Forgot To Care}
 {meta: artist Jean Shepard}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]You forgot to call [F]me up you left [C]me sittin' [G7]there

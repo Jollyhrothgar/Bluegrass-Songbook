@@ -1,6 +1,6 @@
 {meta: title Drive Another Nail}
 {meta: artist Randy Travis}
-{meta: writer Mike Curtis and Marlon Raybon}
+{meta: composer Mike Curtis and Marlon Raybon}
 
 {start_of_verse: Verse 1}
 [G]Sam was a carpenter fifty years[D7]

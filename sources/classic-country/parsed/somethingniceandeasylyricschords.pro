@@ -1,6 +1,6 @@
 {meta: title Something Nice And Easy}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Joe Allison}
+{meta: composer Red Steagall and Joe Allison}
 
 {start_of_verse: Verse 1}
 [G]Play me something nice and easy

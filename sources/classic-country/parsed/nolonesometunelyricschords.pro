@@ -1,6 +1,6 @@
 {meta: title No Lonesome Tune}
 {meta: artist Jimmie Dale Gilmore}
-{meta: writer Townes Van Zandt}
+{meta: composer Townes Van Zandt}
 
 {start_of_verse: Verse 1}
 [G]Well I ain't gonna sing no lonesome tune

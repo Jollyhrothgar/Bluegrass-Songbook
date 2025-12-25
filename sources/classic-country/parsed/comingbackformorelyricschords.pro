@@ -1,6 +1,6 @@
 {meta: title Coming Back For More}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G7]I keep on [C]coming back for more [A7]every single time you hurt [D7]me

@@ -1,6 +1,6 @@
 {meta: title Don't Break The Heart That Loves You}
 {meta: artist Connie Francis}
-{meta: writer Benny Davis and Murray Mencher}
+{meta: composer Benny Davis and Murray Mencher}
 
 {start_of_verse: Verse 1}
 [G]Don't break the [D7]heart that loves you handle it with care

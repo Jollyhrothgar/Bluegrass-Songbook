@@ -1,6 +1,6 @@
 {meta: title The Fireman}
 {meta: artist George Strait}
-{meta: writer Wayne Kemp and Mack Vickery}
+{meta: composer Wayne Kemp and Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]Well they call me the fireman [C]that's my [G]name

@@ -1,6 +1,6 @@
 {meta: title But I Dropped It}
 {meta: artist Conway Twitty}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I was a man with a world in his hand [F]but I dropped it

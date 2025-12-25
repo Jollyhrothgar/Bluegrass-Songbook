@@ -1,6 +1,6 @@
 {meta: title Woman Don't Try To Sing My Song}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [G]Your eyes ain't a-[C]glowing now 

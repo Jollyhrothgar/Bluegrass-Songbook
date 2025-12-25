@@ -1,6 +1,6 @@
 {meta: title Run}
 {meta: artist Stonewall Jackson}
-{meta: writer Buddy Johnson}
+{meta: composer Buddy Johnson}
 
 {start_of_verse: Verse 1}
 [C]A bluebird a wingin' his lonely way south

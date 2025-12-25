@@ -1,6 +1,6 @@
 {meta: title Big Girls Don't Cry}
 {meta: artist Lynn Anderson}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [G]Oh [C]mama mama who told you that lie

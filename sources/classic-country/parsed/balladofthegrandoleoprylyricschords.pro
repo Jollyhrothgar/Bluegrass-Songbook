@@ -1,6 +1,6 @@
 {meta: title Ballad Of The Grand Ole Opry}
 {meta: artist George Morgan}
-{meta: writer George Morgan and Tommy Hill}
+{meta: composer George Morgan and Tommy Hill}
 
 {start_of_verse: Verse 1}
 [C]As the lights were turned off and the curtain was [F]closed

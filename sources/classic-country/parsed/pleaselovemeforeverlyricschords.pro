@@ -1,6 +1,6 @@
 {meta: title Please Love Me Forever}
 {meta: artist Wanda Jackson}
-{meta: writer Ollie Blanchard and Johnny Malone}
+{meta: composer Ollie Blanchard and Johnny Malone}
 
 {start_of_verse: Verse 1}
 [C]Please love me for[Em]ever [F]don't forget me [C]ever

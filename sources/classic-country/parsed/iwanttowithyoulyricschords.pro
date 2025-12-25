@@ -1,6 +1,6 @@
 {meta: title I Want To With You}
 {meta: artist David Ball}
-{meta: writer Steve Bogard and Jeff Stevens}
+{meta: composer Steve Bogard and Jeff Stevens}
 
 {start_of_verse: Verse 1}
 [C]Well I [G]guess I've been traveling [C]light my whole life [G]through

@@ -1,6 +1,6 @@
 {meta: title Singing My Song}
 {meta: artist Tammy Wynette}
-{meta: writer Glenn Sutton and Billy Sherrill}
+{meta: composer Glenn Sutton and Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [C]Here's a song I love to [D7]sing 

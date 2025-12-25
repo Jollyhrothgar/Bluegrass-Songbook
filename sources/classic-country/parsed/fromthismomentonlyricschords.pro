@@ -1,6 +1,6 @@
 {meta: title From This Moment On}
 {meta: artist George Morgan}
-{meta: writer Bonnie Guitar}
+{meta: composer Bonnie Guitar}
 
 {start_of_verse: Verse 1}
 [C]Suddenly you [F]touched me  [G7]and my heart could [C]see

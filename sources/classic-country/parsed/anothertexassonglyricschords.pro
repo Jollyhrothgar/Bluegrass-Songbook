@@ -1,6 +1,6 @@
 {meta: title Another Texas Song}
 {meta: artist Eddy Raven}
-{meta: writer Edward Garvin Futch}
+{meta: composer Edward Garvin Futch}
 
 {start_of_verse: Verse 1}
 [G]I've been in [D7]this [G]corner

@@ -1,6 +1,6 @@
 {meta: title Who's Who}
 {meta: artist John Anderson}
-{meta: writer Michael White and Wesley Dennis}
+{meta: composer Michael White and Wesley Dennis}
 
 {start_of_verse: Verse 1}
 [G7]Am I a [C]lover [F]    [G7]am I a [C]friend  think it [Am]over is it [Em]me or [F]him

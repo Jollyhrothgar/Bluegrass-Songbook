@@ -1,6 +1,6 @@
 {meta: title I Wish I May I Wish I Might}
 {meta: artist George Morgan}
-{meta: writer Joe Allison}
+{meta: composer Joe Allison}
 
 {start_of_verse: Verse 1}
 [C]I wish I may I wish I [G7]might

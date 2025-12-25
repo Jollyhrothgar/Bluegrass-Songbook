@@ -1,6 +1,6 @@
 {meta: title I'll Never Get Over You}
 {meta: artist The Everly Brothers}
-{meta: writer Don Everly and Phil Everly}
+{meta: composer Don Everly and Phil Everly}
 
 {start_of_verse: Verse 1}
 [C]I'll [G7]never get [C]over [Am]you [G7]no matter how I [C]try

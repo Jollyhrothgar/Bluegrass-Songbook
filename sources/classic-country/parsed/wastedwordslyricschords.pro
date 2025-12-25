@@ -1,6 +1,6 @@
 {meta: title Wasted Words}
 {meta: artist Ray Price}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [C]Wasted words about an old love [F]affair

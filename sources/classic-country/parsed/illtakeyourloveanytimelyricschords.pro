@@ -1,6 +1,6 @@
 {meta: title I'll Take Your Love Anytime}
 {meta: artist Don Williams}
-{meta: writer Tommy Rocco, Charlie Black, Austin Roberts}
+{meta: composer Tommy Rocco, Charlie Black, Austin Roberts}
 
 {start_of_verse: Verse 1}
 [C]I have seen this old cold world go gold [G7]and silver [C]crazy

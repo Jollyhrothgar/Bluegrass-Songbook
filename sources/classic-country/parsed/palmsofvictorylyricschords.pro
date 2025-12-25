@@ -1,6 +1,6 @@
 {meta: title Palms of Victory}
 {meta: artist The Country Gentlemen}
-{meta: writer Dwight Brock and John B. Matthias}
+{meta: composer Dwight Brock and John B. Matthias}
 
 {start_of_verse: Verse 1}
 [G]I saw a wayward traveler in [D7]tattered garments [G]clad

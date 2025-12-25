@@ -1,6 +1,6 @@
 {meta: title Heart Of Stone}
 {meta: artist Dwight Yoakam}
-{meta: writer Dwight Yoakam and Kostas}
+{meta: composer Dwight Yoakam and Kostas}
 
 {start_of_verse: Verse 1}
 [C]This heart of [F]stone sure is [C]missing you

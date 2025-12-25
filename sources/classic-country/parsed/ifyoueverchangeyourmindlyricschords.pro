@@ -1,6 +1,6 @@
 {meta: title If You Ever Change Your Mind}
 {meta: artist Ray Price}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [C]Girl it [F]can’t go on like [C]this [F] 

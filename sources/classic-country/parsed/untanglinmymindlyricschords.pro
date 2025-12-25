@@ -1,6 +1,6 @@
 {meta: title Untanglin' My Mind}
 {meta: artist Clint Black}
-{meta: writer Merle Haggard and Clint Black}
+{meta: composer Merle Haggard and Clint Black}
 
 {start_of_verse: Verse 1}
 [C]I guess you're glad to [G7]see I'm finally [C]leaving

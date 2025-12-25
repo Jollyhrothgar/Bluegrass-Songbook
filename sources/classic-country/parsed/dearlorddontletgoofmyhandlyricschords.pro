@@ -1,6 +1,6 @@
 {meta: title Dear Lord Don't Let Go Of My Hand}
 {meta: artist Jimmie Davis}
-{meta: writer Marshall Pack and Jimmie Davis}
+{meta: composer Marshall Pack and Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [C]When my soul is dark with grief

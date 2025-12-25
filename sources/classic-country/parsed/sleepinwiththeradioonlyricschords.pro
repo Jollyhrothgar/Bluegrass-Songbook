@@ -1,6 +1,6 @@
 {meta: title Sleepin' With The Radio On}
 {meta: artist Charly McClain}
-{meta: writer Steve Davis}
+{meta: composer Steve Davis}
 
 {start_of_verse: Verse 1}
 [C]My heart [G7]beats with the [C]lonely rain

@@ -1,6 +1,6 @@
 {meta: title Yellow Moon}
 {meta: artist Don Williams}
-{meta: writer Richard Brannan}
+{meta: composer Richard Brannan}
 
 {start_of_verse: Verse 1}
 [C]The moon [F]is on the rise it stares at me [C]tonight

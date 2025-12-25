@@ -1,6 +1,6 @@
 {meta: title Riding On That Midnight Train}
 {meta: artist Ricky Skaggs}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [G]No matter what I say or do you're [C]never satis[G]fied

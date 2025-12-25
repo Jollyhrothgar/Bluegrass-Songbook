@@ -1,6 +1,6 @@
 {meta: title I Guess I Had A Real Good Time Last Night}
 {meta: artist Moe Bandy}
-{meta: writer Carl Belew and Van Givens}
+{meta: composer Carl Belew and Van Givens}
 
 {start_of_verse: Verse 1}
 [C]I woke up this morning feeling like I never felt [F]before

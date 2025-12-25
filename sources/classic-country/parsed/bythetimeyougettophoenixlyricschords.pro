@@ -1,6 +1,6 @@
 {meta: title By The Time You Get To Phoenix}
 {meta: artist Wanda Jackson}
-{meta: writer Jim Webb}
+{meta: composer Jim Webb}
 
 {start_of_verse: Verse 1}
 [Am]By the time you [D7]got to Phoenix I was [G]rising

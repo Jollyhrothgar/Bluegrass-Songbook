@@ -1,6 +1,6 @@
 {meta: title The Trouble With The Truth}
 {meta: artist Patty Loveless}
-{meta: writer Gary Nicholson}
+{meta: composer Gary Nicholson}
 
 {start_of_verse: Verse 1}
 [C]Oh the [G7]trouble with the truth is [F]always the same ol' [C]thing

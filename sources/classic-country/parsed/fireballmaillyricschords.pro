@@ -1,6 +1,6 @@
 {meta: title Fireball Mail}
 {meta: artist Roy Acuff}
-{meta: writer Floyd Jenkins}
+{meta: composer Floyd Jenkins}
 
 {start_of_verse: Verse 1}
 [C]Here she comes look at her roll

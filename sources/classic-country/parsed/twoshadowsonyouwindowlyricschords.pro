@@ -1,6 +1,6 @@
 {meta: title Two Shadows On Your Window}
 {meta: artist Jim Reeves}
-{meta: writer Steve Gibson and R. Taylor}
+{meta: composer Steve Gibson and R. Taylor}
 
 {start_of_verse: Verse 1}
 [C]Two shadows [G7]on your [C]window they make me [G7]realize

@@ -1,6 +1,6 @@
 {meta: title Little Boy Blue}
 {meta: artist Lacy J. Dalton}
-{meta: writer Lance Gray}
+{meta: composer Lance Gray}
 
 {start_of_verse: Verse 1}
 [G]Hey little boy I’m so proud of you

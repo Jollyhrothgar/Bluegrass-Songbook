@@ -1,6 +1,6 @@
 {meta: title How Can I Believe In You When You'll Be Leaving Me}
 {meta: artist Vern Gosdin}
-{meta: writer Buddy Cannon and Vern Gosdin}
+{meta: composer Buddy Cannon and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [G]Lying hear with my [C]head on my shoulders

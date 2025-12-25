@@ -1,6 +1,6 @@
 {meta: title Where Do We Go From Here}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert and Sonny James}
+{meta: composer Bob Tubert and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]All the [F]sad songs all the [C]bad words all the [F]hurts and all the [A#7]tears

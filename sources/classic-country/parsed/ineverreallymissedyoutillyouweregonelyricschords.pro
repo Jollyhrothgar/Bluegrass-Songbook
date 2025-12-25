@@ -1,6 +1,6 @@
 {meta: title I Never Really Missed You (Till You Were Gone)}
 {meta: artist Tommy Overstreet}
-{meta: writer Johnny Cunningham and Chris Dodson}
+{meta: composer Johnny Cunningham and Chris Dodson}
 
 {start_of_verse: Verse 1}
 [C]Each morning when I'd wake up

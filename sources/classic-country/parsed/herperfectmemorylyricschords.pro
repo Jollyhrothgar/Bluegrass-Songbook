@@ -1,6 +1,6 @@
 {meta: title Her Perfect Memory}
 {meta: artist Don Williams}
-{meta: writer Doug Johnson and Pat Bunch}
+{meta: composer Doug Johnson and Pat Bunch}
 
 {start_of_verse: Verse 1}
 [G]I remember how we struggled when we first [D7]started [G]out

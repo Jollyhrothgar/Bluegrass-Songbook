@@ -1,6 +1,6 @@
 {meta: title Elijah}
 {meta: artist Johnny Paycheck}
-{meta: writer Ken Mcduffie}
+{meta: composer Ken Mcduffie}
 
 {start_of_verse: Verse 1}
 [G]Well Elijah went to heaven in a chariot of fire

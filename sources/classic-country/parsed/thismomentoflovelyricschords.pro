@@ -1,6 +1,6 @@
 {meta: title This Moment Of Love}
 {meta: artist Ferlin Husky}
-{meta: writer Gene Flocca}
+{meta: composer Gene Flocca}
 
 {start_of_verse: Verse 1}
 [C]This moment of love is tender and [G7]true

@@ -1,6 +1,6 @@
 {meta: title Across the Alley From the Alamo}
 {meta: artist Bob Wills}
-{meta: writer Joe Greene}
+{meta: composer Joe Greene}
 
 {start_of_verse: Verse 1}
 Across the alley [C]from the Alamo

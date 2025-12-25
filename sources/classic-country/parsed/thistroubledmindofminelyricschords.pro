@@ -1,6 +1,6 @@
 {meta: title This Troubled Mind Of Mine}
 {meta: artist Ernest Tubb}
-{meta: writer Billy Hughes and Johnny Tyler}
+{meta: composer Billy Hughes and Johnny Tyler}
 
 {start_of_verse: Verse 1}
 [C]There's gonna be some changin' round 

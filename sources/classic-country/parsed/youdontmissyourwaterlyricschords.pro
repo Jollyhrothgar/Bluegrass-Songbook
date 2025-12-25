@@ -1,6 +1,6 @@
 {meta: title You Don't Miss Your Water}
 {meta: artist Jerry Lee Lewis}
-{meta: writer William Bell}
+{meta: composer William Bell}
 
 {start_of_verse: Verse 1}
 [C]In the beginning honey you really loved me

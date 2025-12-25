@@ -1,6 +1,6 @@
 {meta: title My God And I}
 {meta: artist Sonny James}
-{meta: writer Sonny James and John Skye}
+{meta: composer Sonny James and John Skye}
 
 {start_of_verse: Verse 1}
 [C]My God and I walked [F]hand and hand [C]together

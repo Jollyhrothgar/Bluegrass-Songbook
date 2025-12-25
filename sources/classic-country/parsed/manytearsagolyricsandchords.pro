@@ -1,6 +1,6 @@
 {meta: title Many Tears Ago}
 {meta: artist Connie Francis}
-{meta: writer Winfield Scott}
+{meta: composer Winfield Scott}
 
 {start_of_verse: Verse 1}
 [G]They said your cheating heart [B7]will make me cry

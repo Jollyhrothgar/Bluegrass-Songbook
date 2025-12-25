@@ -1,6 +1,6 @@
 {meta: title He Knows}
 {meta: artist Eddy Arnold}
-{meta: writer Ace Nash and Eddy Arnold}
+{meta: composer Ace Nash and Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [C]He knows when you know you're [F]doing [C]wrong

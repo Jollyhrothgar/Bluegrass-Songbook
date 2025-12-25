@@ -1,6 +1,6 @@
 {meta: title Don't It Make My Brown Eyes Blue}
 {meta: artist Crystal Gayle}
-{meta: writer Richard Leigh}
+{meta: composer Richard Leigh}
 
 {start_of_verse: Verse 1}
 [C]Don't know [Am]when  [Dm]I've been so [G7]blue

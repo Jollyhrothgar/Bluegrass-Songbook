@@ -1,6 +1,6 @@
 {meta: title You Lied To Me}
 {meta: artist Charlie Walker}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]You looked at me as [G7]only you can [C]look at me

@@ -1,6 +1,6 @@
 {meta: title I'll Be There When You Get Lonely}
 {meta: artist Ray Price}
-{meta: writer Dave Burgess}
+{meta: composer Dave Burgess}
 
 {start_of_verse: Verse 1}
 [G]When you get lonely [Bm]at the close of day

@@ -1,6 +1,6 @@
 {meta: title We're Makin' Up For Lost Time}
 {meta: artist Vern Gosdin}
-{meta: writer Rex Gosdin and Les Reed}
+{meta: composer Rex Gosdin and Les Reed}
 
 {start_of_verse: Verse 1}
 [Dm]It's good to [G]hold you [C]again

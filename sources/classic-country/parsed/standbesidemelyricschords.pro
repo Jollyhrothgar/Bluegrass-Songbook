@@ -1,6 +1,6 @@
 {meta: title Stand Beside Me}
 {meta: artist Jimmy Dean}
-{meta: writer Tompall Glaser}
+{meta: composer Tompall Glaser}
 
 {start_of_verse: Verse 1}
 [C]Stand be[F]side me stand be[C]side me 

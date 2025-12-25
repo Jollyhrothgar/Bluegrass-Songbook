@@ -1,6 +1,6 @@
 {meta: title Angels Don't Lie}
 {meta: artist Jim Reeves}
-{meta: writer Dale E. Noe}
+{meta: composer Dale E. Noe}
 
 {start_of_verse: Verse 1}
 [G]Someone told a [C]story when  [D7]they said they saw you [G]out [C]again

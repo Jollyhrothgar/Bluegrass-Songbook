@@ -1,6 +1,6 @@
 {meta: title If Teardrops Were Pennies}
 {meta: artist Carl Smith}
-{meta: writer Carl Butler}
+{meta: composer Carl Butler}
 
 {start_of_verse: Verse 1}
 [C]If teardrops were pennies and [F]heartaches were [C]gold

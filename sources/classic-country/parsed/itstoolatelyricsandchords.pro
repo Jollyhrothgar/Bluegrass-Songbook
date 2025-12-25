@@ -1,6 +1,6 @@
 {meta: title It’s Too Late}
 {meta: artist Jeanne Pruett}
-{meta: writer Bobby Goldsboro}
+{meta: composer Bobby Goldsboro}
 
 {start_of_verse: Verse 1}
 [G7]It’s [C]too late [F]to say you [G7]want me but it’s [C]too late

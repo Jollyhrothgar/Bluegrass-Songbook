@@ -1,6 +1,6 @@
 {meta: title Somebody Robbed My Beehive}
 {meta: artist George Morgan}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [C]Somebody robbed my bee[A7]hive and [D7]now daddy’s [G7]honey is [C]gone

@@ -1,6 +1,6 @@
 {meta: title Missing Her Blues}
 {meta: artist David Ball}
-{meta: writer David Ball and Luke Reed}
+{meta: composer David Ball and Luke Reed}
 
 {start_of_verse: Verse 1}
 [G]I got the missing her all day heading for a heartache [D7]blues

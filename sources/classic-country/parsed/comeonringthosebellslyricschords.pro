@@ -1,6 +1,6 @@
 {meta: title Come On Ring Those Bells}
 {meta: artist Dixie Melody Boys}
-{meta: writer Andrew Culverwell}
+{meta: composer Andrew Culverwell}
 
 {start_of_verse: Verse 1}
 [G]Everybody likes to take a [Am]holiday

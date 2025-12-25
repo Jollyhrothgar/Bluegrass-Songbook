@@ -1,6 +1,6 @@
 {meta: title Where In The World}
 {meta: artist Johnny Paycheck}
-{meta: writer H. Sims, J. Perry, M. Weiss}
+{meta: composer H. Sims, J. Perry, M. Weiss}
 
 {start_of_verse: Verse 1}
 [G7]Where is the smile that made my life worth living

@@ -1,6 +1,6 @@
 {meta: title Cowboys And Clowns}
 {meta: artist Ronnie Milsap}
-{meta: writer Stephen H. Dorff, Snuff Garrett,}
+{meta: composer Stephen H. Dorff, Snuff Garrett,}
 
 {start_of_verse: Verse 1}
 [G]Ladies take to cowboys like kids [F]take to [E7]clowns

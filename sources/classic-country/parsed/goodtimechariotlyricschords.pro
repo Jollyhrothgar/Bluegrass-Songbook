@@ -1,6 +1,6 @@
 {meta: title Good Time Chariot}
 {meta: artist Jack Greene}
-{meta: writer Joe Barnhill}
+{meta: composer Joe Barnhill}
 
 {start_of_verse: Verse 1}
 [C]One by one we fall by the [F]wayside

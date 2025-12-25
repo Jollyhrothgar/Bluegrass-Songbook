@@ -1,6 +1,6 @@
 {meta: title Call Me Your Sweetheart}
 {meta: artist Webb Pierce}
-{meta: writer recorded by Webb Pierce [3/4 time]}
+{meta: composer recorded by Webb Pierce [3/4 time]}
 
 {start_of_verse: Verse 1}
 [F]Call me your sweetheart just one more [C]time

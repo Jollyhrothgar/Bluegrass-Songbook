@@ -1,6 +1,6 @@
 {meta: title Cowboy's Toughest Ride}
 {meta: artist Clay Walker}
-{meta: writer Kim Williams, Randy Boudreaux, Clay Walker}
+{meta: composer Kim Williams, Randy Boudreaux, Clay Walker}
 
 {start_of_verse: Verse 1}
 [D7]See that [G]cowboy at the bar 

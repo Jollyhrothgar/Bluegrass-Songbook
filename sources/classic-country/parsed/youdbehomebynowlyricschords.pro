@@ -1,6 +1,6 @@
 {meta: title You'd Be Home By Now}
 {meta: artist Leona Williams}
-{meta: writer Ron Williams, Terry Collins, Leona Williams}
+{meta: composer Ron Williams, Terry Collins, Leona Williams}
 
 {start_of_verse: Verse 1}
 [C]When you stopped off again tonight downtown at [F]Frankie’s

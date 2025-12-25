@@ -1,6 +1,6 @@
 {meta: title Many Tears Ago}
 {meta: artist Marty Robbins}
-{meta: writer Jenny Lou Carson}
+{meta: composer Jenny Lou Carson}
 
 {start_of_verse: Verse 1}
 [C]Many tears ago you said [G7]you loved me

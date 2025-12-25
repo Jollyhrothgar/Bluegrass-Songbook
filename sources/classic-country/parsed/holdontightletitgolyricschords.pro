@@ -1,6 +1,6 @@
 {meta: title Hold On Tight (Let It Go)}
 {meta: artist Ricky Skaggs}
-{meta: writer Don Schlitz and Paul Overstreet}
+{meta: composer Don Schlitz and Paul Overstreet}
 
 {start_of_verse: Verse 1}
 [G]Well I know that I'm in trouble when I [D7]think I know it [G]all

@@ -1,6 +1,6 @@
 {meta: title Because You Live To Love Me}
 {meta: artist Jerry Wallace}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Because you live to [C]love me [D7]I love to [G]live

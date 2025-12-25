@@ -1,6 +1,6 @@
 {meta: title One Dozen Roses}
 {meta: artist George Morgan}
-{meta: writer Benny Joy}
+{meta: composer Benny Joy}
 
 {start_of_verse: Verse 1}
 [F]One dozen roses and our [C]love

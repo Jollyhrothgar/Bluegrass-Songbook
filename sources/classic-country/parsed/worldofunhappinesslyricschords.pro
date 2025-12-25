@@ -1,6 +1,6 @@
 {meta: title World Of Unhappiness}
 {meta: artist Bob Luman}
-{meta: writer Rita Welty}
+{meta: composer Rita Welty}
 
 {start_of_verse: Verse 1}
 [C]Woman I'm tired of [F]bendin' like a branch

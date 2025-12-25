@@ -1,6 +1,6 @@
 {meta: title Fast Company}
 {meta: artist Bobby Flores}
-{meta: writer Eddie Miller and Skeets McDonald}
+{meta: composer Eddie Miller and Skeets McDonald}
 
 {start_of_verse: Verse 1}
 [C]I wish you knew what I go through

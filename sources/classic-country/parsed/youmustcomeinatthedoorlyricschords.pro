@@ -1,6 +1,6 @@
 {meta: title You Must Come In At The Door}
 {meta: artist Doc Watson}
-{meta: writer Sunny Skylar and Doc Watson}
+{meta: composer Sunny Skylar and Doc Watson}
 
 {start_of_verse: Verse 1}
 [C]Oh the Baptists go by water

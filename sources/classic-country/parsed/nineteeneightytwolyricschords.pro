@@ -1,6 +1,6 @@
 {meta: title Nineteen Eighty Two}
 {meta: artist Randy Travis}
-{meta: writer Buddy Blackmon and Carl Jackson}
+{meta: composer Buddy Blackmon and Carl Jackson}
 
 {start_of_verse: Verse 1}
 [G]Operator please connect me with [C]nineteen eighty two

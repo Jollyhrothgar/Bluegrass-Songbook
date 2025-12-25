@@ -1,6 +1,6 @@
 {meta: title In Crowd}
 {meta: artist Cal Smith}
-{meta: writer Jerry McBee and Fred Lehner}
+{meta: composer Jerry McBee and Fred Lehner}
 
 {start_of_verse: Verse 1}
 [G]It's five o'clock and one more working [C]day is finally at [G]an end 

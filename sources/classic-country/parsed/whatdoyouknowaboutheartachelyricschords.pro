@@ -1,6 +1,6 @@
 {meta: title What Do You Know About Heartache}
 {meta: artist Reba McEntire}
-{meta: writer Bob Morrison, Johnny McRae, Mary Welch}
+{meta: composer Bob Morrison, Johnny McRae, Mary Welch}
 
 {start_of_verse: Verse 1}
 [C]You come to [G7]me just [Am]as a [G7]friend

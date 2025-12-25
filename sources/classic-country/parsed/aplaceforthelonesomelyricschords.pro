@@ -1,6 +1,6 @@
 {meta: title A Place For The Lonesome}
 {meta: artist Charley Pride}
-{meta: writer James Bullington}
+{meta: composer James Bullington}
 
 {start_of_verse: Verse 1}
 [C]There's a place just down the street for the lonesome

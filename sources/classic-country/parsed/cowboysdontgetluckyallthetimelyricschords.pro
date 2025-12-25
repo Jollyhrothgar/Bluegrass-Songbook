@@ -1,6 +1,6 @@
 {meta: title Cowboys Don't Get Lucky All The Time}
 {meta: artist Gene Watson}
-{meta: writer Dallas Harms}
+{meta: composer Dallas Harms}
 
 {start_of_verse: Verse 1}
 [C]He met her in a honky tonk

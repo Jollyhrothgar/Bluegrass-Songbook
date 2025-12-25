@@ -1,6 +1,6 @@
 {meta: title I Don't Believe You've Met My Baby}
 {meta: artist The Louvin Brothers}
-{meta: writer Autry Inman}
+{meta: composer Autry Inman}
 
 {start_of_verse: Verse 1}
 [C]Last night my dear the rain was [G7]falling

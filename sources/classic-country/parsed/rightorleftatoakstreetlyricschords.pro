@@ -1,6 +1,6 @@
 {meta: title Right or Left at Oak Street}
 {meta: artist Roy Clark}
-{meta: writer Charlie Williams and Joe Nixon}
+{meta: composer Charlie Williams and Joe Nixon}
 
 {start_of_verse: Verse 1}
 [C]The alarm rang at [G7]seven this [C]morning

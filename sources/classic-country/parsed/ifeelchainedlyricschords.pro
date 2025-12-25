@@ -1,6 +1,6 @@
 {meta: title I Feel Chained}
 {meta: artist Vernon Oxford}
-{meta: writer Bob McDill and Wayland Holyfield}
+{meta: composer Bob McDill and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]Rain beats on the window as we [F]sat by the [C]fire

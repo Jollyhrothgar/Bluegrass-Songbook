@@ -1,6 +1,6 @@
 {meta: title Till I Found You}
 {meta: artist Marty Stuart}
-{meta: writer Paul Kennerly and Hank DeVito}
+{meta: composer Paul Kennerly and Hank DeVito}
 
 {start_of_verse: Verse 1}
 [C]When I was a young man I thought I knew everything

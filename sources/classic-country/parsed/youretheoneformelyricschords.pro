@@ -1,6 +1,6 @@
 {meta: title You're The One For Me}
 {meta: artist Wanda Jackson}
-{meta: writer Steve Rowland}
+{meta: composer Steve Rowland}
 
 {start_of_verse: Verse 1}
 [G]Hey little baby [C]you're the one I [D7]love so much

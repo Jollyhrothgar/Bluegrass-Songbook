@@ -1,6 +1,6 @@
 {meta: title A Loveless Marriage}
 {meta: artist Red Sovine}
-{meta: writer Red Sovine and Jewell House}
+{meta: composer Red Sovine and Jewell House}
 
 {start_of_verse: Verse 1}
 [C]The vows you spoke before the [G7]altar

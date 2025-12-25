@@ -1,6 +1,6 @@
 {meta: title If You Ain’t Loving Then You Ain’t Living}
 {meta: artist Faron Young}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]If you got a Cadil[D7]lac boy and a forty room [G]shack boy

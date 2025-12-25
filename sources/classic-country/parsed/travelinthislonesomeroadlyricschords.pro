@@ -1,6 +1,6 @@
 {meta: title Travelin' This Lonesome Road}
 {meta: artist Mac Wiseman}
-{meta: writer Clara Hauenschild and James Thornton}
+{meta: composer Clara Hauenschild and James Thornton}
 
 {start_of_verse: Verse 1}
 [C]I'm traveling down this lonesome road oh [G7]how I hate to [C]go

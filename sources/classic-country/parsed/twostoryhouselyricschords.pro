@@ -1,6 +1,6 @@
 {meta: title Two Story House}
 {meta: artist Tammy Wynette}
-{meta: writer Glenn D. Tubb, Dave Lindsey, Tammy Wynette}
+{meta: composer Glenn D. Tubb, Dave Lindsey, Tammy Wynette}
 
 {start_of_verse: Verse 1}
 [C]We always wanted a [G7]big two story [C]house

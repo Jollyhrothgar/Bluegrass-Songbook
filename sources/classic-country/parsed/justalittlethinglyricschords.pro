@@ -1,6 +1,6 @@
 {meta: title Just A Little Thing}
 {meta: artist Billy Crash Craddock}
-{meta: writer Marijohn Wilkin and Grady Martin}
+{meta: composer Marijohn Wilkin and Grady Martin}
 
 {start_of_verse: Verse 1}
 [G]Gotta a little somethin' for you in my pocket

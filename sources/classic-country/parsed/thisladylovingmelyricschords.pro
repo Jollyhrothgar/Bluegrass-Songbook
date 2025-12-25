@@ -1,6 +1,6 @@
 {meta: title This Lady Loving Me}
 {meta: artist Carl Smith}
-{meta: writer Eddie Raven}
+{meta: composer Eddie Raven}
 
 {start_of_verse: Verse 1}
 [C]This lady loving me don’t ask for [F]much

@@ -1,6 +1,6 @@
 {meta: title Don’t Anyone Make Love At Home Anymore}
 {meta: artist Moe Bandy}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Of all the love affairs to die I [F]wagered yours and [C]mine

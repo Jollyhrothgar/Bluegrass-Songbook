@@ -1,6 +1,6 @@
 {meta: title I Feel That I've Known You Forever}
 {meta: artist Elvis Presley}
-{meta: writer Doc Pomus and Alan Jeffrys}
+{meta: composer Doc Pomus and Alan Jeffrys}
 
 {start_of_verse: Verse 1}
 [C]Your lips  your [F]eyes  your [C]soft  sweet [F]sights

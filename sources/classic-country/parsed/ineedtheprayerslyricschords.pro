@@ -1,6 +1,6 @@
 {meta: title I Need The Prayers}
 {meta: artist Kitty Wells}
-{meta: writer James D. Vaughn}
+{meta: composer James D. Vaughn}
 
 {start_of_verse: Verse 1}
 [G]I need the prayers of those I love 

@@ -1,6 +1,6 @@
 {meta: title Sweet Allis Chalmers}
 {meta: artist The Country Gazette}
-{meta: writer Bill Caswell}
+{meta: composer Bill Caswell}
 
 {start_of_verse: Verse 1}
 [F]Sweet Allis [D]Chalmers I’ve [A#7]rode you so [A7]long

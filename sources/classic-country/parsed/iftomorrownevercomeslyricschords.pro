@@ -1,6 +1,6 @@
 {meta: title If Tomorrow Never Comes}
 {meta: artist Charley Pride}
-{meta: writer Garth Brooks and Kent Biazy}
+{meta: composer Garth Brooks and Kent Biazy}
 
 {start_of_verse: Verse 1}
 [C]Sometimes late at [Dm]night

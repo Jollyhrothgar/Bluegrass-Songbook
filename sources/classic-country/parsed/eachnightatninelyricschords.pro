@@ -1,6 +1,6 @@
 {meta: title Each Night At Nine}
 {meta: artist Marty Robbins}
-{meta: writer Floyd Tillman}
+{meta: composer Floyd Tillman}
 
 {start_of_verse: Verse 1}
 [C]A thousand miles dear a thousand [G7]more 

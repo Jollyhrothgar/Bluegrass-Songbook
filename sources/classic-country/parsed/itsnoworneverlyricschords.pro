@@ -1,6 +1,6 @@
 {meta: title It’s Now or Never}
 {meta: artist Elvis Presley}
-{meta: writer Aaron Schroeder, Wally Gold, Edoardo DiCapua}
+{meta: composer Aaron Schroeder, Wally Gold, Edoardo DiCapua}
 
 {start_of_verse: Verse 1}
 [C]It's now or never  come hold me [G7]tight 

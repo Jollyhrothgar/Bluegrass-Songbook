@@ -1,6 +1,6 @@
 {meta: title White Line Fever}
 {meta: artist Boxcar Willie}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]Wh-ite [F]line [C]fever 

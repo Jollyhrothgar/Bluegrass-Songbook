@@ -1,6 +1,6 @@
 {meta: title Blue Without My Baby}
 {meta: artist Jim Reeves}
-{meta: writer Rhoda Roberts and Kenny Jacobson}
+{meta: composer Rhoda Roberts and Kenny Jacobson}
 
 {start_of_verse: Verse 1}
 [G]Oh I'm blue [D7]without my [G]baby and it's [C]hurting more each [G]day

@@ -1,6 +1,6 @@
 {meta: title I Tried}
 {meta: artist Ricky Nelson}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]I [Am]tried [C] I [Am]tried

@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Keep On Loving You}
 {meta: artist Billy Walker}
-{meta: writer Gene Dobbins, Rayburn Anthony, Benny Whitehead}
+{meta: composer Gene Dobbins, Rayburn Anthony, Benny Whitehead}
 
 {start_of_verse: Verse 1}
 [C]Na na na na na na na [F]na na na na na na na na na [G7]na 

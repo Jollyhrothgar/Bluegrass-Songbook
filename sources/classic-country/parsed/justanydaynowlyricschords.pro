@@ -1,6 +1,6 @@
 {meta: title Just Any Day Now}
 {meta: artist Doyle Lawson}
-{meta: writer Aaron Wilburn and Eddie Crook}
+{meta: composer Aaron Wilburn and Eddie Crook}
 
 {start_of_verse: Verse 1}
 [C]Just any [G]day now His [D7]face I'll [G]see

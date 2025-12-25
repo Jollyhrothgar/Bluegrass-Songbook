@@ -1,6 +1,6 @@
 {meta: title Southern Rains}
 {meta: artist Mel Tillis}
-{meta: writer Roger Alan Murrah}
+{meta: composer Roger Alan Murrah}
 
 {start_of_verse: Verse 1}
 [G]Sometimes my soul gets weary and my [C]mind begins to [G]wonder

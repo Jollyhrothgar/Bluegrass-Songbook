@@ -1,6 +1,6 @@
 {meta: title I Don't Care}
 {meta: artist Ricky Skaggs}
-{meta: writer Cindy Walker and Webb Pierce}
+{meta: composer Cindy Walker and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]Now [C]I don't [G]care if [C]I'm not the [G]first love you've [D7]known

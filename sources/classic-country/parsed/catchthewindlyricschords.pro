@@ -1,6 +1,6 @@
 {meta: title Catch The Wind}
 {meta: artist Glen Campbell}
-{meta: writer Donovan Phillips Leitch}
+{meta: composer Donovan Phillips Leitch}
 
 {start_of_verse: Verse 1}
 [G7]In the [C]chilly hours and minutes [F]of uncertainty [C]I want to [F]be

@@ -1,6 +1,6 @@
 {meta: title Why Don't We Go Somewhere And Love}
 {meta: artist Charlie Rich}
-{meta: writer Kenny O'Dell and Larry Henley}
+{meta: composer Kenny O'Dell and Larry Henley}
 
 {start_of_verse: Verse 1}
 [G]I don't want to read the paper this morning

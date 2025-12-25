@@ -1,6 +1,6 @@
 {meta: title Same Old Story}
 {meta: artist Garth Brooks}
-{meta: writer Tony Arata}
+{meta: composer Tony Arata}
 
 {start_of_verse: Verse 1}
 [C]While they dance how she [G7]holds him 

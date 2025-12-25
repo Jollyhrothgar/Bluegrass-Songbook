@@ -1,6 +1,6 @@
 {meta: title As long As I'm Dreaming}
 {meta: artist Tanya Tucker}
-{meta: writer Don Cook, Gary Nicholson, John Jarrard}
+{meta: composer Don Cook, Gary Nicholson, John Jarrard}
 
 {start_of_verse: Verse 1}
 [Em]I haven't even let myself [C]remember  

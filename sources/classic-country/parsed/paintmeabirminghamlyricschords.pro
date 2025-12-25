@@ -1,6 +1,6 @@
 {meta: title Paint Me A Birmingham}
 {meta: artist Tracy Lawrence}
-{meta: writer Buck Moore and Gary Duffy}
+{meta: composer Buck Moore and Gary Duffy}
 
 {start_of_verse: Verse 1}
 [C]He was sittin' there his [Dm]brush in hand

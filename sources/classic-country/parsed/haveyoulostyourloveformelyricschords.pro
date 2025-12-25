@@ -1,6 +1,6 @@
 {meta: title Have You Lost Your Love For Me}
 {meta: artist Jim and Jesse}
-{meta: writer F. Giddens, Junior Giddens, Leroy Giddens}
+{meta: composer F. Giddens, Junior Giddens, Leroy Giddens}
 
 {start_of_verse: Verse 1}
 [G]Have you lost all the [D7]love you had for [G]me

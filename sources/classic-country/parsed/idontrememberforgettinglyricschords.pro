@@ -1,6 +1,6 @@
 {meta: title I Don't Remember Forgetting}
 {meta: artist Ricky Skaggs}
-{meta: writer Billy Foster, Jason Sellers, Lee Ann Womack}
+{meta: composer Billy Foster, Jason Sellers, Lee Ann Womack}
 
 {start_of_verse: Verse 1}
 [G]I don't remember [A7]forgetting 

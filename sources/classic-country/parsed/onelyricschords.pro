@@ -1,6 +1,6 @@
 {meta: title One}
 {meta: artist George Jones}
-{meta: writer Ed Bruce, Ron Peterson, Judith Bruce}
+{meta: composer Ed Bruce, Ron Peterson, Judith Bruce}
 
 {start_of_verse: Verse 1}
 [G7]If you [C]want to hear a love song [F] I could sing one

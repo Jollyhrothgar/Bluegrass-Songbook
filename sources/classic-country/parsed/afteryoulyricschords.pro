@@ -1,6 +1,6 @@
 {meta: title After You}
 {meta: artist Hank Williams Jr.}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]So September follows August I don't [C7]mind

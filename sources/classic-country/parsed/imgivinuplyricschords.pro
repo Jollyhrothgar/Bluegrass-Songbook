@@ -1,6 +1,6 @@
 {meta: title I'm Givin' Up}
 {meta: artist Norma Jean}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]I'm givin' up and givin' out from givin' in

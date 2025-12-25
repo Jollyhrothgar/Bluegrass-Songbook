@@ -1,6 +1,6 @@
 {meta: title Alibis}
 {meta: artist Tracy Lawrence}
-{meta: writer Randy Boudreaux and Tom Snow}
+{meta: composer Randy Boudreaux and Tom Snow}
 
 {start_of_verse: Verse 1}
 [C]She knows every [Am]move that a [F]man could make[G7]

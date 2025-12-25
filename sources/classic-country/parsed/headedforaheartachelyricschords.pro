@@ -1,6 +1,6 @@
 {meta: title Headed For A Heartache}
 {meta: artist Gary Morris}
-{meta: writer Kent Blazy}
+{meta: composer Kent Blazy}
 
 {start_of_verse: Verse 1}
 [Em]I'm headed for a [G]heartache better stop before it's [Em]too late

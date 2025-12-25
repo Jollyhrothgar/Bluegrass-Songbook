@@ -1,6 +1,6 @@
 {meta: title In My World You Don't Belong}
 {meta: artist Charley Pride}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [C]Yesterday you [G7]smiled and my [F]world stopped its [C]turnin'

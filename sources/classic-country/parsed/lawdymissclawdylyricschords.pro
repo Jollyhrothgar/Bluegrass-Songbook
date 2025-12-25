@@ -1,6 +1,6 @@
 {meta: title Lawdy Miss Clawdy}
 {meta: artist Elvis Presley}
-{meta: writer Lloyd Price}
+{meta: composer Lloyd Price}
 
 {start_of_verse: Verse 1}
 [G]Well lawdy lawdy lawdy Miss Clawdy

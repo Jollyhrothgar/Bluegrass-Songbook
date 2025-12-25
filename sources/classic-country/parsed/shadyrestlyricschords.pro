@@ -1,6 +1,6 @@
 {meta: title Shady Rest}
 {meta: artist Mel Street}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]Oh she was twenty-one she [F]liked to have her [G7]fun and she was [C]restless [F]  [G7]

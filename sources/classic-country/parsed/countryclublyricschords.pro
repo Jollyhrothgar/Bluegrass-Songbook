@@ -1,6 +1,6 @@
 {meta: title Country Club}
 {meta: artist Travis Tritt}
-{meta: writer Catesby Jones and Dennis Lord}
+{meta: composer Catesby Jones and Dennis Lord}
 
 {start_of_verse: Verse 1}
 [C]I took a double take out on the interstate 

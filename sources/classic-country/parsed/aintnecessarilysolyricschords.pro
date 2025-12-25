@@ -1,6 +1,6 @@
 {meta: title Ain't Necessarily So}
 {meta: artist Willie Nelson}
-{meta: writer Beth N. Chapman}
+{meta: composer Beth N. Chapman}
 
 {start_of_verse: Verse 1}
 [C]You can break your eggs to count your [F]chickens

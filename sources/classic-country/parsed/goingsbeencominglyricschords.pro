@@ -1,6 +1,6 @@
 {meta: title Going's Been Coming}
 {meta: artist Loretta Lynn}
-{meta: writer Theresa Beaty}
+{meta: composer Theresa Beaty}
 
 {start_of_verse: Verse 1}
 [G]You stop right now [C]wondering how I could [G]leave

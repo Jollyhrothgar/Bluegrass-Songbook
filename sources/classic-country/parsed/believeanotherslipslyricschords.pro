@@ -1,6 +1,6 @@
 {meta: title Believe Another's Lips}
 {meta: artist Sonny James}
-{meta: writer Jimmie Loden}
+{meta: composer Jimmie Loden}
 
 {start_of_verse: Verse 1}
 [C]If you believe another’s [C7]lips 

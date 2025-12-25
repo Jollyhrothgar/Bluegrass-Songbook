@@ -1,6 +1,6 @@
 {meta: title In The Middle Of A Teardrop}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens, Don Rich, Doyle Holly}
+{meta: composer Buck Owens, Don Rich, Doyle Holly}
 
 {start_of_verse: Verse 1}
 [C]I'm in the middle of a [F]teardrop

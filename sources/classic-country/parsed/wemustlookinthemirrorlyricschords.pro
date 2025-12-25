@@ -1,6 +1,6 @@
 {meta: title We Must Look In The Mirror}
 {meta: artist Roy Drusky}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]It's like [C]heaven for me to [D7]be near [G]you

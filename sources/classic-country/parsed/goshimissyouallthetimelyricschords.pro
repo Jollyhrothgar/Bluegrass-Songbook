@@ -1,6 +1,6 @@
 {meta: title Gosh I Miss You All The Time}
 {meta: artist Jim and Jesse}
-{meta: writer Jimmy Long}
+{meta: composer Jimmy Long}
 
 {start_of_verse: Verse 1}
 [G]When whippoorwill are calling

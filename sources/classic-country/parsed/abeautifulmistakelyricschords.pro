@@ -1,6 +1,6 @@
 {meta: title A Beautiful Mistake}
 {meta: artist Eddy Raven}
-{meta: writer Eddy Raven and Troy Seals}
+{meta: composer Eddy Raven and Troy Seals}
 
 {start_of_verse: Verse 1}
 [C]As a woman [F]you were [G7]warm and full of [F][C]wonder

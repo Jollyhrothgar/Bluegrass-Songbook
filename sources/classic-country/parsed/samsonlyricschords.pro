@@ -1,6 +1,6 @@
 {meta: title Samson}
 {meta: artist The Statler Brothers}
-{meta: writer Lew DeWitt}
+{meta: composer Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [G7]Oh Samson it's [C]been said you were a mighty man

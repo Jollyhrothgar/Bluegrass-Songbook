@@ -1,6 +1,6 @@
 {meta: title Empty Arms}
 {meta: artist Wanda Jackson}
-{meta: writer Ivory Joe Hunter}
+{meta: composer Ivory Joe Hunter}
 
 {start_of_verse: Verse 1}
 [G]Empty arms that long for [D7]you 

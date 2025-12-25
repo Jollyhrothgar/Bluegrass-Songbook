@@ -1,6 +1,6 @@
 {meta: title Dancin' All Around It}
 {meta: artist Alan Jackson}
-{meta: writer Carson Chamberlain, Brian Tabor, Michael White}
+{meta: composer Carson Chamberlain, Brian Tabor, Michael White}
 
 {start_of_verse: Verse 1}
 [G7]She said [C]I don't usually dance [Em]this close to [F]strangers

@@ -1,6 +1,6 @@
 {meta: title Diggy Liggy Lo}
 {meta: artist Buck Owens}
-{meta: writer Jimmy D. Miller}
+{meta: composer Jimmy D. Miller}
 
 {start_of_verse: Verse 1}
 [G]Diggy Liggy Li and Diggy Liggy Lo

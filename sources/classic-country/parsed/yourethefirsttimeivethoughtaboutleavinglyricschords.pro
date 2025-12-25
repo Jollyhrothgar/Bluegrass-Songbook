@@ -1,6 +1,6 @@
 {meta: title You're The First Time I've Thought About Leaving}
 {meta: artist Reba McEntire}
-{meta: writer Dickey Lee and Kerry Chater}
+{meta: composer Dickey Lee and Kerry Chater}
 
 {start_of_verse: Verse 1}
 [G]I've seen you smile more than I thought you [Am]would

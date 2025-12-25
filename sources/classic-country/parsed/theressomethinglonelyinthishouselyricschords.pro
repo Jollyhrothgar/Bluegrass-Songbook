@@ -1,6 +1,6 @@
 {meta: title There's Something Lonely In This House}
 {meta: artist Connie Smith}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [C]That sad song on the radio [G7]didn't help at all

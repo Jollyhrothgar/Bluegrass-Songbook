@@ -1,6 +1,6 @@
 {meta: title You And Me}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and George Richey}
+{meta: composer Billy Sherrill and George Richey}
 
 {start_of_verse: Verse 1}
 [G]I can hear the [D7]rain it's falling [G]softly

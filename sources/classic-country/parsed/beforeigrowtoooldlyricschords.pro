@@ -1,6 +1,6 @@
 {meta: title Before I Grow Too Old}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew, Fats Domino, Robert Charles Guidry}
+{meta: composer Dave Bartholomew, Fats Domino, Robert Charles Guidry}
 
 {start_of_verse: Verse 1}
 [C]I'm goin' to go out dancin'  [F]every night

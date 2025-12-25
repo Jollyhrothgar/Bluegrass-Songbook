@@ -1,6 +1,6 @@
 {meta: title I've Got It Again}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Mildred Burk and Rose Burk}
+{meta: composer Mildred Burk and Rose Burk}
 
 {start_of_verse: Verse 1}
 [C]Ever once in a while I get this way

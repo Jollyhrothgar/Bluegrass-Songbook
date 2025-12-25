@@ -1,6 +1,6 @@
 {meta: title There's Another Place I Can't Go}
 {meta: artist Charlie Rich}
-{meta: writer Charles Tobias and Lee Pockriss}
+{meta: composer Charles Tobias and Lee Pockriss}
 
 {start_of_verse: Verse 1}
 [D7]Can't go down to the [C]river where we [G]meet

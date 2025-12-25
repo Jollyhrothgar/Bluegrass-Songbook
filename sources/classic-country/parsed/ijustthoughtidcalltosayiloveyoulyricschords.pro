@@ -1,6 +1,6 @@
 {meta: title I Just Thought I'd Call To Say I Love You}
 {meta: artist Slim Whitman}
-{meta: writer Dave Burgess and Biff Collie}
+{meta: composer Dave Burgess and Biff Collie}
 
 {start_of_verse: Verse 1}
 [C]When I left this morning [G7]you were sleeping

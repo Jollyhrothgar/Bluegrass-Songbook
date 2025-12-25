@@ -1,6 +1,6 @@
 {meta: title Come A Little Closer To The Lord}
 {meta: artist Jimmie Davis}
-{meta: writer Charles Goodman and Jimmie Davis}
+{meta: composer Charles Goodman and Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [C]Come a little closer [F]just a little closer

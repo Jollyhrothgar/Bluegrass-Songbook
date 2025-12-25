@@ -1,6 +1,6 @@
 {meta: title I Don't Want You Around Me Anymore}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton and Bill Owens}
+{meta: composer Dolly Parton and Bill Owens}
 
 {start_of_verse: Verse 1}
 [C]You think you're so smart you [F]think I should throw my heart 

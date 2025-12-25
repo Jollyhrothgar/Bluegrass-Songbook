@@ -1,6 +1,6 @@
 {meta: title In the Sweet By and By}
 {meta: artist The Statler Brothers}
-{meta: writer Joseph Webster and Fillmore Bennett}
+{meta: composer Joseph Webster and Fillmore Bennett}
 
 {start_of_verse: Verse 1}
 [G]There's a land that is [C]fairer than [G]day

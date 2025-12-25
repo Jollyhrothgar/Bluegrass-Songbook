@@ -1,6 +1,6 @@
 {meta: title Oh My Papa}
 {meta: artist the Everly Brothers}
-{meta: writer Paul Burkhard, Geoffrey Parson, John Turner}
+{meta: composer Paul Burkhard, Geoffrey Parson, John Turner}
 
 {start_of_verse: Verse 1}
 [C]Oh my papa to me he was so [G7]wonderful

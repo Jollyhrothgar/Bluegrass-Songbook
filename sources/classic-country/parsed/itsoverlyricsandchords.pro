@@ -1,6 +1,6 @@
 {meta: title It's Over}
 {meta: artist Rex Allen Jr.}
-{meta: writer Denny E. DeMarco, Joe Holcomb, Rex Allen Jr.}
+{meta: composer Denny E. DeMarco, Joe Holcomb, Rex Allen Jr.}
 
 {start_of_verse: Verse 1}
 [C]My trembling hand reaches for the [F]phone

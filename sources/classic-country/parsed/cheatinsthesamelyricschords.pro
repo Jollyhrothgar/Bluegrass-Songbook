@@ -1,6 +1,6 @@
 {meta: title Cheatin's The Same}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton and Larry Cheshier}
+{meta: composer Glenn Sutton and Larry Cheshier}
 
 {start_of_verse: Verse 1}
 [C]In a suit at Caesars Palace or a [F]honky tonk in Dallas

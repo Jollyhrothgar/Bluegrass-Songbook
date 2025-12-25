@@ -1,6 +1,6 @@
 {meta: title She's Not Just Another Pretty Face}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Sam Lorber and J.D. Martin}
+{meta: composer Sam Lorber and J.D. Martin}
 
 {start_of_verse: Verse 1}
 [D7]I was [G]just looking her [C]over

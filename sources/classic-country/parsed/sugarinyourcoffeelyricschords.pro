@@ -1,6 +1,6 @@
 {meta: title Sugar In Your Coffee}
 {meta: artist Bill Anderson}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]I came downstairs and found the mornin' [D7]paper by my plate

@@ -1,6 +1,6 @@
 {meta: title You Better Keep It On Your Mind}
 {meta: artist Hank Williams}
-{meta: writer Vic Mcalpin and Hank Williams}
+{meta: composer Vic Mcalpin and Hank Williams}
 
 {start_of_verse: Verse 1}
 [C]Now if you go out and start a playing around 

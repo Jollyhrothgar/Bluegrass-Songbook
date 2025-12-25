@@ -1,6 +1,6 @@
 {meta: title But I Was Lying}
 {meta: artist Wanda Jackson}
-{meta: writer Joe Allison and Audrey Allison}
+{meta: composer Joe Allison and Audrey Allison}
 
 {start_of_verse: Verse 1}
 [G]I said congratulations and I [G7]hope you're happy

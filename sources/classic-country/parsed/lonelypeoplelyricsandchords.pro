@@ -1,6 +1,6 @@
 {meta: title Lonely People}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Dee Moeller}
+{meta: composer Dee Moeller}
 
 {start_of_verse: Verse 1}
 [C]I could see it in [F]your eyes 

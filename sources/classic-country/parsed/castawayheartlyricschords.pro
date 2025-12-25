@@ -1,6 +1,6 @@
 {meta: title Castaway Heart}
 {meta: artist Wynn Stewart}
-{meta: writer Kirk Patrick and Joe Hulsey}
+{meta: composer Kirk Patrick and Joe Hulsey}
 
 {start_of_verse: Verse 1}
 [C]Just a castaway heart on a river of [F]dreams 

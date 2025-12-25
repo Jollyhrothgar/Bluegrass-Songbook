@@ -1,6 +1,6 @@
 {meta: title My Real World of Make Believe}
 {meta: artist Doyle Lawson}
-{meta: writer Buddy Cannon and Michael Wayne Smotherman}
+{meta: composer Buddy Cannon and Michael Wayne Smotherman}
 
 {start_of_verse: Verse 1}
 [C]I love the way the sunrise [C7]catches in your [F]eyes

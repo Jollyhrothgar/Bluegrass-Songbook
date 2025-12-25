@@ -1,6 +1,6 @@
 {meta: title Your Place Or Mine}
 {meta: artist Gary Stewart}
-{meta: writer Rory Burke, Carol Anderson, Mary Beth Anderson}
+{meta: composer Rory Burke, Carol Anderson, Mary Beth Anderson}
 
 {start_of_verse: Verse 1}
 [C]The band just stopped playing they're [C7]sweeping the [F]floor

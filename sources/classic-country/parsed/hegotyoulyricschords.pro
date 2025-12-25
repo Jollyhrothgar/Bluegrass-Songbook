@@ -1,6 +1,6 @@
 {meta: title He Got You}
 {meta: artist Ronnie Milsap}
-{meta: writer Ralph Murphy and Bobby Wood}
+{meta: composer Ralph Murphy and Bobby Wood}
 
 {start_of_verse: Verse 1}
 [C]He got the sunshine [Am]I got the rain

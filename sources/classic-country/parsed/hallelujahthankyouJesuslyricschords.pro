@@ -1,6 +1,6 @@
 {meta: title Hallelujah Thank You Jesus}
 {meta: artist B.J. Thomas}
-{meta: writer Paul Davis}
+{meta: composer Paul Davis}
 
 {start_of_verse: Verse 1}
 [C]Ha-[F]lle-[G7]luj-[C]ah

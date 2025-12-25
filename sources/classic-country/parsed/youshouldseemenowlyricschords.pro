@@ -1,6 +1,6 @@
 {meta: title You Should See Me Now}
 {meta: artist Cal Smith}
-{meta: writer Chuck Howard and Darrell Thomas Puckett}
+{meta: composer Chuck Howard and Darrell Thomas Puckett}
 
 {start_of_verse: Verse 1}
 [G]I re[D7]member [G]loving you and [D7]how you felt so good

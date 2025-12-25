@@ -1,6 +1,6 @@
 {meta: title Going Going Gone}
 {meta: artist Lee Greenwood}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]It's over  [F]I left the door [C]unlocked again

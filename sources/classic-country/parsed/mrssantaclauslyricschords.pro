@@ -1,6 +1,6 @@
 {meta: title Mrs. Santa Claus}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Skip Ewing}
+{meta: composer Skip Ewing}
 
 {start_of_verse: Verse 1}
 [C]Now everybody's heard of Mrs. [G7]Santa Claus

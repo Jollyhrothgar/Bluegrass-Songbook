@@ -1,6 +1,6 @@
 {meta: title I Am Slowly Dying Of A Broken Heart}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Sydney Nathan}
+{meta: composer Sydney Nathan}
 
 {start_of_verse: Verse 1}
 [C]I am slowly dying of a broken [D7]heart

@@ -1,6 +1,6 @@
 {meta: title Heads I Go Hearts I Stay}
 {meta: artist Mickey Gilley}
-{meta: writer Wayland Holyfield}
+{meta: composer Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]We both know I ought to leave

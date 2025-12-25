@@ -1,6 +1,6 @@
 {meta: title Who'll Turn Out The Lights In Your World Tonight}
 {meta: artist Ronnie Milsap}
-{meta: writer Wayne Kemp and Mack Vickery}
+{meta: composer Wayne Kemp and Mack Vickery}
 
 {start_of_verse: Verse 1}
 [C]I wonder [F]who'll turn out the [C]lights in [G7]your world [C]tonight

@@ -1,6 +1,6 @@
 {meta: title Book Of Memories}
 {meta: artist George Jones}
-{meta: writer Bobby Austin}
+{meta: composer Bobby Austin}
 
 {start_of_verse: Verse 1}
 [C]You've stolen my [G7]world from [F]under [C]me

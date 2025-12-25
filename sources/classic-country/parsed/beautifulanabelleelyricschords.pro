@@ -1,6 +1,6 @@
 {meta: title Beautiful Anabel Lee}
 {meta: artist Waylon Jennings}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I was a child and [F]she was a child

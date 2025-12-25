@@ -1,6 +1,6 @@
 {meta: title Bless You}
 {meta: artist Billy Walker}
-{meta: writer Bob Tubert}
+{meta: composer Bob Tubert}
 
 {start_of_verse: Verse 1}
 [C]Bless [Am]you [C]bless you [G7]my [C]love

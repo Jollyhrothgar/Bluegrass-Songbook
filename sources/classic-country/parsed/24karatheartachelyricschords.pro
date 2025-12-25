@@ -1,6 +1,6 @@
 {meta: title 24 Karat Heartache}
 {meta: artist Vern Gosdin}
-{meta: writer V. Gosdin, D. Knudsen, D. Owens}
+{meta: composer V. Gosdin, D. Knudsen, D. Owens}
 
 {start_of_verse: Verse 1}
 [G]She’s got a [D7]24 karat 24 hour never ending heartache on her [G]hand

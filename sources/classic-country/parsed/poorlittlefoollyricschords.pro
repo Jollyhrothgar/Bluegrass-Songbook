@@ -1,6 +1,6 @@
 {meta: title Poor Little Fool}
 {meta: artist Ricky Nelson}
-{meta: writer Sharon Sheeley}
+{meta: composer Sharon Sheeley}
 
 {start_of_verse: Verse 1}
 [C]I used to play [Am]around with hearts that [F]hastened at my [G7]call

@@ -1,6 +1,6 @@
 {meta: title A Prison Without Walls}
 {meta: artist Eddy Arnold}
-{meta: writer Steve Nelson, Jack Rollins, Eddy Arnold}
+{meta: composer Steve Nelson, Jack Rollins, Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [C]I don't need chains or iron bars to [F]tell me I'm not [C]free

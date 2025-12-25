@@ -1,6 +1,6 @@
 {meta: title In My Way}
 {meta: artist Elvis Presley}
-{meta: writer Fred Wise and Ben Weisman}
+{meta: composer Fred Wise and Ben Weisman}
 
 {start_of_verse: Verse 1}
 [C]I may not [Em]be here to[Am]morrow

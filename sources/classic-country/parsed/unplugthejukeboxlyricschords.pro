@@ -1,6 +1,6 @@
 {meta: title Unplug the Jukebox}
 {meta: artist Billy Walker}
-{meta: writer Ken Holloway and Bruce Haynes}
+{meta: composer Ken Holloway and Bruce Haynes}
 
 {start_of_verse: Verse 1}
 [C]Unplug the [F]jukebox  I don't need it [C]anymore

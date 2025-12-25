@@ -1,6 +1,6 @@
 {meta: title What's The Reason I'm Not Pleasing You}
 {meta: artist Fats Domino}
-{meta: writer Coy Poe, Earl Hatch, Jimmie Grier, Pinky Tomlin}
+{meta: composer Coy Poe, Earl Hatch, Jimmie Grier, Pinky Tomlin}
 
 {start_of_verse: Verse 1}
 [D7]Why don't [G]we get along

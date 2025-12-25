@@ -1,6 +1,6 @@
 {meta: title Beggar To A King}
 {meta: artist Hank Snow}
-{meta: writer J.P. Richardson}
+{meta: composer J.P. Richardson}
 
 {start_of_verse: Verse 1}
 [G]I Had Sunk As [C]Low As A [G]Man Could [C]Go

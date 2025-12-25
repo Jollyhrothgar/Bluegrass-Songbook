@@ -1,6 +1,6 @@
 {meta: title Mama You'd Have Been Proud Of Me Lyrics and Chords}
 {meta: artist Dottie West}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]The one I love so much told me [D7]goodbye

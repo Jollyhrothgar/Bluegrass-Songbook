@@ -1,6 +1,6 @@
 {meta: title God Saw My Need}
 {meta: artist Statler Brother}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]I grew up reciting bible [D7]verses

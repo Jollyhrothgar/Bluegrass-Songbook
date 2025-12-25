@@ -1,6 +1,6 @@
 {meta: title Julie Ann Come On Home}
 {meta: artist Doyle Lawson}
-{meta: writer Leroy Drumm and Pete Goble}
+{meta: composer Leroy Drumm and Pete Goble}
 
 {start_of_verse: Verse 1}
 [G]Julie Anne what are you doing

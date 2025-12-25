@@ -1,6 +1,6 @@
 {meta: title You Can't Have Your Kate And Edith Too}
 {meta: artist Statler Brothers}
-{meta: writer Bobby Braddock and Curly Putman}
+{meta: composer Bobby Braddock and Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]Well we went out on a double [F]date

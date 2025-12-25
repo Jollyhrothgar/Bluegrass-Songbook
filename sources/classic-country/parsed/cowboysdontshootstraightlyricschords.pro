@@ -1,6 +1,6 @@
 {meta: title Cowboys Don't Shoot Straight}
 {meta: artist Tammy Wynette}
-{meta: writer Chips Moman and Bobby Emmons}
+{meta: composer Chips Moman and Bobby Emmons}
 
 {start_of_verse: Verse 1}
 [G]Big silver buckles and pre-faded jeans

@@ -1,6 +1,6 @@
 {meta: title Roll On Eighteen Wheeler}
 {meta: artist Alabama}
-{meta: writer Dave Loggins}
+{meta: composer Dave Loggins}
 
 {start_of_verse: Verse 1}
 [C]Roll On highway Roll On a[F]long

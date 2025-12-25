@@ -1,6 +1,6 @@
 {meta: title Beach Boy Blues}
 {meta: artist Elvis Presley}
-{meta: writer Roy Bennett and Sid Tepper}
+{meta: composer Roy Bennett and Sid Tepper}
 
 {start_of_verse: Verse 1}
 [C]I'm a poor Hawaiian [G7]beach boy a [C]long way from the [G7]beach

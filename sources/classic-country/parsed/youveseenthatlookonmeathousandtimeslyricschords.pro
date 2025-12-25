@@ -1,6 +1,6 @@
 {meta: title You've Seen That Look On Me A Thousand Times}
 {meta: artist Jim Ed Brown}
-{meta: writer Harlan Howard and Shirl Milete}
+{meta: composer Harlan Howard and Shirl Milete}
 
 {start_of_verse: Verse 1}
 [C]It's four a.m. and [E7]you're just getting [F]in

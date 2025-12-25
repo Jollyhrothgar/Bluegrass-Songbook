@@ -1,6 +1,6 @@
 {meta: title The First Time}
 {meta: artist Freddie Hart}
-{meta: writer Jack Grayson}
+{meta: composer Jack Grayson}
 
 {start_of_verse: Verse 1}
 [C]I remember when I saw you the [F]first time 

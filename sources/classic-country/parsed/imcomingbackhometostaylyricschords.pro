@@ -1,6 +1,6 @@
 {meta: title I'm Coming Back Home To Stay}
 {meta: artist Buck Owens}
-{meta: writer Don Rich}
+{meta: composer Don Rich}
 
 {start_of_verse: Verse 1}
 [C]Well we just passed county [G7]line be home about a half past [C]nine

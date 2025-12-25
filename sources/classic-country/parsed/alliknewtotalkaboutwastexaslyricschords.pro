@@ -1,6 +1,6 @@
 {meta: title All I Knew To Talk About Was Texas}
 {meta: artist Red Steagall}
-{meta: writer Jerry Allison and Joe Osborn}
+{meta: composer Jerry Allison and Joe Osborn}
 
 {start_of_verse: Verse 1}
 [C]All I knew to talk about was [G7]Texas

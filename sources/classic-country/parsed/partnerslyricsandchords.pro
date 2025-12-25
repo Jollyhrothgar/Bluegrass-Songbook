@@ -1,6 +1,6 @@
 {meta: title Partners}
 {meta: artist Barbara Mandrell}
-{meta: writer Kent M. Robbins}
+{meta: composer Kent M. Robbins}
 
 {start_of_verse: Verse 1}
 [G]We used to ride the trail together

@@ -1,6 +1,6 @@
 {meta: title Poor Boy Like Me}
 {meta: artist Charley Pride}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [G]She grew up in the back-wood country

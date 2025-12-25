@@ -1,6 +1,6 @@
 {meta: title One Good Well}
 {meta: artist Don Williams}
-{meta: writer Kent M. Robbins and Mike Reid}
+{meta: composer Kent M. Robbins and Mike Reid}
 
 {start_of_verse: Verse 1}
 [C]There’s a million oil rigs [G7]pumping

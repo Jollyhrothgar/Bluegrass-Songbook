@@ -1,6 +1,6 @@
 {meta: title I Can’t Find The Time}
 {meta: artist Faron Young}
-{meta: writer Hank Cochran and Willie Nelson}
+{meta: composer Hank Cochran and Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]I've searched through each [G7]moment of [C]each passing [F]hour

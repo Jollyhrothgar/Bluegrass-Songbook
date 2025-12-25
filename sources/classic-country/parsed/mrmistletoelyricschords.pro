@@ -1,6 +1,6 @@
 {meta: title Mr. Mistletoe}
 {meta: artist Lynn Anderson}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]Mr. Mistletoe every[F]where you go 

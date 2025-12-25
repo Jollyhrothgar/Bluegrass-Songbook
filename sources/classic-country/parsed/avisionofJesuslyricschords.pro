@@ -1,6 +1,6 @@
 {meta: title A Vision Of Jesus}
 {meta: artist Doyle Lawson}
-{meta: writer Johnnie Masters and Don Shaw}
+{meta: composer Johnnie Masters and Don Shaw}
 
 {start_of_verse: Verse 1}
 [C]While kneeling by my [G7]bed one night to say a sinner’s [C]prayer

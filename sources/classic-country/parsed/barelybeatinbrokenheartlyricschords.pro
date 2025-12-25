@@ -1,6 +1,6 @@
 {meta: title Barely Beatin' Broken Heart}
 {meta: artist Highway 101}
-{meta: writer Roger Miller and Justin Tubb}
+{meta: composer Roger Miller and Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]If you see me in some corner looking like all hope is gone

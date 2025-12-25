@@ -1,6 +1,6 @@
 {meta: title Such A Fool}
 {meta: artist Roy Drusky}
-{meta: writer Roy Drusky, Lester Vanadore, Marvin Moore}
+{meta: composer Roy Drusky, Lester Vanadore, Marvin Moore}
 
 {start_of_verse: Verse 1}
 [G]I'm a f[C]oo[G]oo[C]oo[G]oo[C]oo[G]l [C]such a [G]fool 

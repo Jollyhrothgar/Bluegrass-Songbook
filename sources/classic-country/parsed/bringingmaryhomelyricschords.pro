@@ -1,6 +1,6 @@
 {meta: title Bringing Mary Home}
 {meta: artist Red Sovine}
-{meta: writer Joe Kingston and Chaw Monk}
+{meta: composer Joe Kingston and Chaw Monk}
 
 {start_of_verse: Verse 1}
 [D7]I was driving down a lonely road on a [C]dark and stormy [G]night

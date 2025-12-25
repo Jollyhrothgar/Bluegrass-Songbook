@@ -1,6 +1,6 @@
 {meta: title I'm Learning To Love Her}
 {meta: artist Charlie Pride}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [C]Last night I walked down that [F]little country [C]lane

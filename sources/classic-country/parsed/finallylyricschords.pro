@@ -1,6 +1,6 @@
 {meta: title Finally}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis and Wayne P. Walker}
+{meta: composer Mel Tillis and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [F]Finally yes darling [C]finally

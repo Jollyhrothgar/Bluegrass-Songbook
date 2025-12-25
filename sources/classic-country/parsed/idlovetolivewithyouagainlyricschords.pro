@@ -1,6 +1,6 @@
 {meta: title I'd Love To Live With You Again}
 {meta: artist Gene Watson}
-{meta: writer Dick Overbey}
+{meta: composer Dick Overbey}
 
 {start_of_verse: Verse 1}
 [C]Loneliness has made me weak enough to meet you [G7]here

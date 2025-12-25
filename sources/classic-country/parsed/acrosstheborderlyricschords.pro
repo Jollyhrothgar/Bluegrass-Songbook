@@ -1,6 +1,6 @@
 {meta: title Across The Border}
 {meta: artist Linda Ronstadt and Emmylou Harris}
-{meta: writer Bruce Springsteen}
+{meta: composer Bruce Springsteen}
 
 {start_of_verse: Verse 1}
 [G]Tonight my bag is packed

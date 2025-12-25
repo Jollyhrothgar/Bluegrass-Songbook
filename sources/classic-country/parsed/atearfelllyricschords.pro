@@ -1,6 +1,6 @@
 {meta: title A Tear Fell}
 {meta: artist Billy Crash Craddock}
-{meta: writer Eugene Randolph and Dorian Burton}
+{meta: composer Eugene Randolph and Dorian Burton}
 
 {start_of_verse: Verse 1}
 [C]A fool am I a [Dm]fool am I [G7]in [C]love

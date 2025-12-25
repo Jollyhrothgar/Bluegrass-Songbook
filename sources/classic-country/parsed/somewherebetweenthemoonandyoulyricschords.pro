@@ -1,6 +1,6 @@
 {meta: title Somewhere Between The Moon And You}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [C]Sittin' here in [G7]Fort Worth and [Am]for what it's worth

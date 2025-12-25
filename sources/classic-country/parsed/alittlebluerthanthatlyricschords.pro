@@ -1,6 +1,6 @@
 {meta: title A Little Bluer Than That}
 {meta: artist Alan Jackson}
-{meta: writer Mark Irwin and Irene Kelley}
+{meta: composer Mark Irwin and Irene Kelley}
 
 {start_of_verse: Verse 1}
 [C]Well tonight if you turn your radio on

@@ -1,6 +1,6 @@
 {meta: title I'm Troubled}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Doc Watson}
+{meta: composer Doc Watson}
 
 {start_of_verse: Verse 1}
 [C]Our meeting is a pleasure and [F]partying is [C]grief 

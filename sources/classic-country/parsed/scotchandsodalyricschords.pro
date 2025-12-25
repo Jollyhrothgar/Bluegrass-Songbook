@@ -1,6 +1,6 @@
 {meta: title Scotch And Soda}
 {meta: artist Hank Thompson}
-{meta: writer Dave Guard}
+{meta: composer Dave Guard}
 
 {start_of_verse: Verse 1}
 [F]Scotch and soda mud in your eye

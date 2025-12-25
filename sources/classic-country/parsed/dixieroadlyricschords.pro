@@ -1,6 +1,6 @@
 {meta: title Dixie Road}
 {meta: artist Lee Greenwood}
-{meta: writer Don Goodman, Mary Ann Kennedy, Pamela Rose}
+{meta: composer Don Goodman, Mary Ann Kennedy, Pamela Rose}
 
 {start_of_verse: Verse 1}
 [G]I would pick and we would sing

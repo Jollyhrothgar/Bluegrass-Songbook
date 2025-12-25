@@ -1,6 +1,6 @@
 {meta: title I Ain't Never}
 {meta: artist Mel Tillis}
-{meta: writer Webb Pierce and Mel Tillis}
+{meta: composer Webb Pierce and Mel Tillis}
 
 {start_of_verse: Verse 1}
 [G]W-ell I ain't never  I ain't never

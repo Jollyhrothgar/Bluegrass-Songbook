@@ -1,6 +1,6 @@
 {meta: title Streets Of San Francisco}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]From Tampa Florida's pride and joy to California shame

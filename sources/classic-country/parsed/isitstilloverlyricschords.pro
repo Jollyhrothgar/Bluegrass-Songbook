@@ -1,6 +1,6 @@
 {meta: title Is It Still Over}
 {meta: artist Randy Travis}
-{meta: writer Larry Henley and Ken Bell}
+{meta: composer Larry Henley and Ken Bell}
 
 {start_of_verse: Verse 1}
 [D7]Being without you has turned

@@ -1,6 +1,6 @@
 {meta: title Miss Emily’s Picture}
 {meta: artist John Conlee}
-{meta: writer Red Lane}
+{meta: composer Red Lane}
 
 {start_of_verse: Verse 1}
 [C]I wake up in the morning in a state of fright

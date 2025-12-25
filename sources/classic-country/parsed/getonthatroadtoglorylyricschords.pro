@@ -1,6 +1,6 @@
 {meta: title Get On That Road To Glory}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Gladys Stacey, Louise Certain, Benny Martin}
+{meta: composer Gladys Stacey, Louise Certain, Benny Martin}
 
 {start_of_verse: Verse 1}
 [G]Get on the road to glory where there'll [C]be no stop [G]signs

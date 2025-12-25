@@ -1,6 +1,6 @@
 {meta: title But Only In My Dreams}
 {meta: artist Marty Robbins}
-{meta: writer Joe Babcock}
+{meta: composer Joe Babcock}
 
 {start_of_verse: Verse 1}
 [G]I have [C]held you in my [G]arms  I have [C]known your sweetest [Em]charms

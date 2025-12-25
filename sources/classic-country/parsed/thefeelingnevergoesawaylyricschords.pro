@@ -1,6 +1,6 @@
 {meta: title The Feeling Never Goes Away}
 {meta: artist Doug Stone}
-{meta: writer Kim Williams, Phyllis Bennett, Doug Stone}
+{meta: composer Kim Williams, Phyllis Bennett, Doug Stone}
 
 {start_of_verse: Verse 1}
 [G]Our eyes meet in the mirror  

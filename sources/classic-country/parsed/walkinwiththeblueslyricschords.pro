@@ -1,6 +1,6 @@
 {meta: title Walkin' With The Blues}
 {meta: artist Sonny James}
-{meta: writer Carole Smith and Sonny James}
+{meta: composer Carole Smith and Sonny James}
 
 {start_of_verse: Verse 1}
 [G]Walkin' with the [C]blues  

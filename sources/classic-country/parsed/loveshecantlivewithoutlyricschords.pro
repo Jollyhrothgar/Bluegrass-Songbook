@@ -1,6 +1,6 @@
 {meta: title Love She Can't Live Without}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Skip Ewing}
+{meta: composer Clint Black and Skip Ewing}
 
 {start_of_verse: Verse 1}
 [C]He gives her attention [Dm]

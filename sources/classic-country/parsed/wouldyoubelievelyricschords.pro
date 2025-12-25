@@ -1,6 +1,6 @@
 {meta: title Would You Believe}
 {meta: artist George Morgan}
-{meta: writer Wayne P. Walker and Jay Coleman}
+{meta: composer Wayne P. Walker and Jay Coleman}
 
 {start_of_verse: Verse 1}
 [C]Would you believe that [G7]it was only [C]yesterday

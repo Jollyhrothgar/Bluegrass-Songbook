@@ -1,6 +1,6 @@
 {meta: title If It's Love (Then Bet It All)}
 {meta: artist Ray Price}
-{meta: writer J.R. Cochran}
+{meta: composer J.R. Cochran}
 
 {start_of_verse: Verse 1}
 [C]You could build a wall around you now

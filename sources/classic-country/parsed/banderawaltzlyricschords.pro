@@ -1,6 +1,6 @@
 {meta: title Bandera Waltz}
 {meta: artist Slim Whitman}
-{meta: writer Ollie Marie Adams}
+{meta: composer Ollie Marie Adams}
 
 {start_of_verse: Verse 1}
 [C]I Danced With An [F]An - [C]gel

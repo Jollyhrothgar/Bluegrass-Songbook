@@ -1,6 +1,6 @@
 {meta: title You Don't Know My Mind Today}
 {meta: artist Harland Howard}
-{meta: writer Jimmie Skinner}
+{meta: composer Jimmie Skinner}
 
 {start_of_verse: Verse 1}
 [C]Honey you don't know my mind I'm lonesome all the [F]time

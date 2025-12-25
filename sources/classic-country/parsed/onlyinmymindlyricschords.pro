@@ -1,6 +1,6 @@
 {meta: title Only In My Mind}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin}
+{meta: composer Lloene S. Martin}
 
 {start_of_verse: Verse 1}
 [C]The sound of your footsteps get [F]louder every[C]day

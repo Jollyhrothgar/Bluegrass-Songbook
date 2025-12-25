@@ -1,6 +1,6 @@
 {meta: title Strong Enough}
 {meta: artist Alan Jackson}
-{meta: writer Adam Wright}
+{meta: composer Adam Wright}
 
 {start_of_verse: Verse 1}
 [C]I just took your [G7]picture off the [C]table

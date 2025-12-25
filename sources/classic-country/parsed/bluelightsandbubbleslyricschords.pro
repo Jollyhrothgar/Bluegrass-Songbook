@@ -1,6 +1,6 @@
 {meta: title Blue Lights And Bubbles}
 {meta: artist John Anderson}
-{meta: writer Ken McDuffie}
+{meta: composer Ken McDuffie}
 
 {start_of_verse: Verse 1}
 [C]Blue lights and bubbles will help me with my troubles

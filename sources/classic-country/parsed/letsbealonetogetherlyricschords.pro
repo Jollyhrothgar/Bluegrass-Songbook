@@ -1,6 +1,6 @@
 {meta: title Let's Be Alone Together}
 {meta: artist Faron Young}
-{meta: writer Dewayne Orender}
+{meta: composer Dewayne Orender}
 
 {start_of_verse: Verse 1}
 [G]I've never been the kind of guy to [C]take advantage of a woman 

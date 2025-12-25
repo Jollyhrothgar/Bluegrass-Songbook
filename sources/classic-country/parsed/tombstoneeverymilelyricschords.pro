@@ -1,6 +1,6 @@
 {meta: title Tombstone Every Mile}
 {meta: artist Dick Curless}
-{meta: writer Dan Fulkerson}
+{meta: composer Dan Fulkerson}
 
 {start_of_verse: Verse 1}
 [G]All you big and burly men who roll the trucks along

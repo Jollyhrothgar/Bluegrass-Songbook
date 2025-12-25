@@ -1,6 +1,6 @@
 {meta: title There's A Big Rock In The Road}
 {meta: artist Bob Wills}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]There’s a big [G7]rock in the [C]road 

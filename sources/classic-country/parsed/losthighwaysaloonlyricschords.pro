@@ -1,6 +1,6 @@
 {meta: title Lost Highway Saloon}
 {meta: artist Johnny Bush}
-{meta: writer Brian Burns}
+{meta: composer Brian Burns}
 
 {start_of_verse: Verse 1}
 [C]On a dark deserted highway in [Em]the southwest Texas hills

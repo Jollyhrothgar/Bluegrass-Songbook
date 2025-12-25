@@ -1,6 +1,6 @@
 {meta: title I've Got The Heart For You}
 {meta: artist Keith Whitley}
-{meta: writer Larry Boone and John Greenebaum}
+{meta: composer Larry Boone and John Greenebaum}
 
 {start_of_verse: Verse 1}
 [C]Now I [G]ain't got the money 

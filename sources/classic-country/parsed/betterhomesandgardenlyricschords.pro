@@ -1,6 +1,6 @@
 {meta: title Better Homes And Garden}
 {meta: artist Billy Walker}
-{meta: writer Bobby Russel}
+{meta: composer Bobby Russel}
 
 {start_of_verse: Verse 1}
 [C]You say you're [A7]tired of her and you [D7]found a faster [G7]life

@@ -1,6 +1,6 @@
 {meta: title I've Never Stopped Dreaming Of You}
 {meta: artist Reba McEntire}
-{meta: writer Jerry Wallace, Terry Skinner, Lonnie Ledford}
+{meta: composer Jerry Wallace, Terry Skinner, Lonnie Ledford}
 
 {start_of_verse: Verse 1}
 [D7]I've for[G]gotten your number I hadn't [C]called in a while

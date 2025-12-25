@@ -1,6 +1,6 @@
 {meta: title Leaving and Saying Goodbye}
 {meta: artist Faron Young}
-{meta: writer Jeannie Seely}
+{meta: composer Jeannie Seely}
 
 {start_of_verse: Verse 1}
 [G]So many times I've told I was [D7]leavin'

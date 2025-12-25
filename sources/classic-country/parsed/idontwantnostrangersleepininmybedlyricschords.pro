@@ -1,6 +1,6 @@
 {meta: title I Don't Want No Stranger Sleepin' In My Bed}
 {meta: artist George Jones}
-{meta: writer Bill Emerson and George Jones}
+{meta: composer Bill Emerson and George Jones}
 
 {start_of_verse: Verse 1}
 [C]I don't want no stranger's [F]footsteps in my [C]bedroom

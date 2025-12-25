@@ -1,6 +1,6 @@
 {meta: title Mr. Lonely}
 {meta: artist Bobby Vinton}
-{meta: writer Gene Allan and Bobby Vinton}
+{meta: composer Gene Allan and Bobby Vinton}
 
 {start_of_verse: Verse 1}
 [C]Lonely I'm Mr. [Em]Lonely

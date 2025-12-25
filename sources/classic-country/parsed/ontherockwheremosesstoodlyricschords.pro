@@ -1,6 +1,6 @@
 {meta: title On The Rock Where Moses Stood}
 {meta: artist Norma Jean}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]I am standing on the rock where Moses stood

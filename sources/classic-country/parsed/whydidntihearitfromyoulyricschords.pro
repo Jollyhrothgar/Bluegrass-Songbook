@@ -1,6 +1,6 @@
 {meta: title Why Didn't I Hear It From You}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Shorty Long and Dick Wentzel}
+{meta: composer Shorty Long and Dick Wentzel}
 
 {start_of_verse: Verse 1}
 [C]The [F]wedding was [D7]set dear I [G7]talked to your dad

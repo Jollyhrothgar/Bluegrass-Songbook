@@ -1,6 +1,6 @@
 {meta: title Here's To The Girls}
 {meta: artist Faron Young}
-{meta: writer Carl Belew and Van Givens}
+{meta: composer Carl Belew and Van Givens}
 
 {start_of_verse: Verse 1}
 [C]Here's to the girls who serve the drinks in all the [G7]bars

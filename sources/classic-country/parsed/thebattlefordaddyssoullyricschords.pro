@@ -1,6 +1,6 @@
 {meta: title The Battle For Daddy's Soul}
 {meta: artist George Jones}
-{meta: writer Mel Howard and Janice Wolverton}
+{meta: composer Mel Howard and Janice Wolverton}
 
 {start_of_verse: Verse 1}
 [G]It's the bible against the bottle

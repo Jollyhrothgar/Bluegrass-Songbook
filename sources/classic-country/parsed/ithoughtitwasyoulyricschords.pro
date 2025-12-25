@@ -1,6 +1,6 @@
 {meta: title I Thought It Was You}
 {meta: artist Doug Stone}
-{meta: writer Gary Harrison and Tim Mensy}
+{meta: composer Gary Harrison and Tim Mensy}
 
 {start_of_verse: Verse 1}
 [C]I called your name out [G7]loud to a [F]stranger yes[C]terday[G7]

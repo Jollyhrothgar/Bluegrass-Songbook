@@ -1,6 +1,6 @@
 {meta: title Ghost Of Another Man}
 {meta: artist George Jones}
-{meta: writer Roger Bowling, George Richey, Frank Dycus}
+{meta: composer Roger Bowling, George Richey, Frank Dycus}
 
 {start_of_verse: Verse 1}
 [G]He’s living in that big old [D7]house that he [C]knows was built by [G]me

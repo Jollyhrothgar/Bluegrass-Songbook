@@ -1,6 +1,6 @@
 {meta: title I Honestly Love You}
 {meta: artist Ronnie Milsap}
-{meta: writer Peter Allen and Jeff Barry}
+{meta: composer Peter Allen and Jeff Barry}
 
 {start_of_verse: Verse 1}
 [C]Maybe I hang around here a little more than I should

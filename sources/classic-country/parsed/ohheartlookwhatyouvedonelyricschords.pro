@@ -1,6 +1,6 @@
 {meta: title Oh Heart Look What You've Done}
 {meta: artist Doyle Lawson}
-{meta: writer Carl Jackson and Russ Roberts}
+{meta: composer Carl Jackson and Russ Roberts}
 
 {start_of_verse: Verse 1}
 [C]My heart spoke to m--e at the moment you left

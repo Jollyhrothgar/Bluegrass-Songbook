@@ -1,6 +1,6 @@
 {meta: title The River}
 {meta: artist Garth Brooks}
-{meta: writer Victoria Shaw and Garth Brooks}
+{meta: composer Victoria Shaw and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]You know a dream is like a river 

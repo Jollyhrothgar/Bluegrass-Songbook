@@ -1,6 +1,6 @@
 {meta: title That's My Desire}
 {meta: artist Patsy Cline}
-{meta: writer Carroll Loveday and Helmy Kresa}
+{meta: composer Carroll Loveday and Helmy Kresa}
 
 {start_of_verse: Verse 1}
 [G]To spend one night with you

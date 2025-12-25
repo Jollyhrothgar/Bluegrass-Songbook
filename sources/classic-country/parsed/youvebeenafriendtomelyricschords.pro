@@ -1,6 +1,6 @@
 {meta: title You've Been A Friend To Me}
 {meta: artist The Price Sisters}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]My bark of life was [C]tossing [G]down

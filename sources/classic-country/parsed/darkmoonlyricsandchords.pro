@@ -1,6 +1,6 @@
 {meta: title Dark Moon}
 {meta: artist Gale Storm}
-{meta: writer Ned Miller}
+{meta: composer Ned Miller}
 
 {start_of_verse: Verse 1}
 ([G]Dark moon dark [D7]moon) 

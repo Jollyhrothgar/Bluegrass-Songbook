@@ -1,6 +1,6 @@
 {meta: title If I Know Me}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Pamela Belford}
+{meta: composer Dean Dillon and Pamela Belford}
 
 {start_of_verse: Verse 1}
 [C]We both said some things I [Am]know we never mea[F]nt

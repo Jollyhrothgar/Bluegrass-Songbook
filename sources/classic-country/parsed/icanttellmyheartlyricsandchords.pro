@@ -1,6 +1,6 @@
 {meta: title I Can't Tell My Heart}
 {meta: artist Hank Williams}
-{meta: writer Johnny Wright, Jim Anglin, Jack Anglin}
+{meta: composer Johnny Wright, Jim Anglin, Jack Anglin}
 
 {start_of_verse: Verse 1}
 [C]Oh foolish heart why won’t you [G7]believe

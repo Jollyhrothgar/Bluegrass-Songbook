@@ -1,6 +1,6 @@
 {meta: title Hard Rock Bottom Of Your Heart}
 {meta: artist Randy Travis}
-{meta: writer Hugh Prestwood}
+{meta: composer Hugh Prestwood}
 
 {start_of_verse: Verse 1}
 [C]Since the day I was led to [F][G7]temptation

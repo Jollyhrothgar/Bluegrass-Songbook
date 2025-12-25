@@ -1,6 +1,6 @@
 {meta: title All The Way Together}
 {meta: artist Sonny James}
-{meta: writer Carl Perkins}
+{meta: composer Carl Perkins}
 
 {start_of_verse: Verse 1}
 [C]All the [Em]way [C]together we’ll go [F]all [C]the [D7]way

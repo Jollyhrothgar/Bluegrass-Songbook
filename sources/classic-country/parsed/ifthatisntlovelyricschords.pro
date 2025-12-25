@@ -1,6 +1,6 @@
 {meta: title If That Isn't Love}
 {meta: artist Elvis Presley}
-{meta: writer Joyce Reba Rambo}
+{meta: composer Joyce Reba Rambo}
 
 {start_of_verse: Verse 1}
 [G]He left the [D7]splendor of [G]heaven

@@ -1,6 +1,6 @@
 {meta: title Home On The Range}
 {meta: artist Gene Autry}
-{meta: writer Gene Autry, Dan Kelley, Brewster Highley}
+{meta: composer Gene Autry, Dan Kelley, Brewster Highley}
 
 {start_of_verse: Verse 1}
 [G]Oh give me a home where the [C]buffalo roam

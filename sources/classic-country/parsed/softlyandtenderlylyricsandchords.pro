@@ -1,6 +1,6 @@
 {meta: title Softly And Tenderly}
 {meta: artist Anne Murray}
-{meta: writer Will L. Thompson}
+{meta: composer Will L. Thompson}
 
 {start_of_verse: Verse 1}
 [C]Softly and tenderly [F]Jesus is [C]calling 

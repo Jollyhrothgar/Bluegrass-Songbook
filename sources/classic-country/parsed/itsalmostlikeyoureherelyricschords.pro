@@ -1,6 +1,6 @@
 {meta: title It's Almost Like You're Here}
 {meta: artist Mark Chesnutt}
-{meta: writer Charles Quillen, John Priestley, Jonathan Cliff}
+{meta: composer Charles Quillen, John Priestley, Jonathan Cliff}
 
 {start_of_verse: Verse 1}
 [C]At night the [G7]wind blows in the [Am]rain

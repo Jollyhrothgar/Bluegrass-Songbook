@@ -1,6 +1,6 @@
 {meta: title He Knocked Me Right Out Of The Box}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]He knocked me right out of the [F]box

@@ -1,6 +1,6 @@
 {meta: title Sack Full Of Stones}
 {meta: artist Travis Tritt}
-{meta: writer Travis Tritt and Marty Stuart}
+{meta: composer Travis Tritt and Marty Stuart}
 
 {start_of_verse: Verse 1}
 [C]I used to be the kind of guy I could laugh as well as [F]cry

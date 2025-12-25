@@ -1,6 +1,6 @@
 {meta: title What I've Got In Mind}
 {meta: artist Billie Jo Spears}
-{meta: writer Kenny O'dell}
+{meta: composer Kenny O'dell}
 
 {start_of_verse: Verse 1}
 [C]There's a million things that [F]we could do this [G7]evenin'

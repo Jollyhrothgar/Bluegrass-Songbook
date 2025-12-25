@@ -1,6 +1,6 @@
 {meta: title Santa Fe}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy and Ron Taylor}
+{meta: composer David Bellamy and Ron Taylor}
 
 {start_of_verse: Verse 1}
 [G7]Her [C]turquoise lips [F]kiss me like a [C]lover

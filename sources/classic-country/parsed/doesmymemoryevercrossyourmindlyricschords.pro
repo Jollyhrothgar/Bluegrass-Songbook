@@ -1,6 +1,6 @@
 {meta: title Does My Memory Ever Cross Your Mind}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Webb Pierce}
+{meta: composer Wayne P. Walker and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]When you're out with [Em]him where the [F]lights are [G7]dim

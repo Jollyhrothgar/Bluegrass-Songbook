@@ -1,6 +1,6 @@
 {meta: title Two Perfect People}
 {meta: artist Freddie Hart}
-{meta: writer Freddie Hart}
+{meta: composer Freddie Hart}
 
 {start_of_verse: Verse 1}
 [C]We were born two people of [G7]perfection

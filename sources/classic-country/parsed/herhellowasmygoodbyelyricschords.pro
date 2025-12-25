@@ -1,6 +1,6 @@
 {meta: title Her Hello Was My Goodbye}
 {meta: artist Dottie West}
-{meta: writer Quinn Garton}
+{meta: composer Quinn Garton}
 
 {start_of_verse: Verse 1}
 [G7]She only smiled and said [C]hello

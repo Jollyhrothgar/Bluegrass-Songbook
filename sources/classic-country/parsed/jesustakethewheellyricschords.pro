@@ -1,6 +1,6 @@
 {meta: title Jesus Take The Wheel}
 {meta: artist Carrie Underwood}
-{meta: writer Brett James, Hillary Lindsey, Gordie Sampson}
+{meta: composer Brett James, Hillary Lindsey, Gordie Sampson}
 
 {start_of_verse: Verse 1}
 [G7]She was driving last [C]Friday on her way to [G7]Cincinnati

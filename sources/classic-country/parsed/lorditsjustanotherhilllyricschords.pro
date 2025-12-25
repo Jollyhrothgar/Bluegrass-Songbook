@@ -1,6 +1,6 @@
 {meta: title Lord It's Just Another Hill}
 {meta: artist Doyle Lawson}
-{meta: writer Edward F Easter, James Easter, Russell Lee Easter}
+{meta: composer Edward F Easter, James Easter, Russell Lee Easter}
 
 {start_of_verse: Verse 1}
 [G]Lord it’s just another hill that I’m [Em]climbing

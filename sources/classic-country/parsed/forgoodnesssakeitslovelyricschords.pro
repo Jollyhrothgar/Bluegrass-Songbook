@@ -1,6 +1,6 @@
 {meta: title For Goodness Sake It's Love Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Well [G7]I'll [C]declare [F]of all the [C]things[F] 

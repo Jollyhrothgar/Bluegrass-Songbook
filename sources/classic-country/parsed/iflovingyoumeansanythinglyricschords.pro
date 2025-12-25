@@ -1,6 +1,6 @@
 {meta: title If Loving You Means Anything}
 {meta: artist Billy Walker}
-{meta: writer Jerry Chesnut and Dale Ward}
+{meta: composer Jerry Chesnut and Dale Ward}
 
 {start_of_verse: Verse 1}
 [C]Yes I [G]love you if just [D7]loving you means [G][C]any-thing

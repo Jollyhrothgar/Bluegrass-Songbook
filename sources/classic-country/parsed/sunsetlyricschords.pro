@@ -1,6 +1,6 @@
 {meta: title Sunset}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Joe Melson}
+{meta: composer Roy Orbison and Joe Melson}
 
 {start_of_verse: Verse 1}
 [C]I see her when the sun is high 

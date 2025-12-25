@@ -1,6 +1,6 @@
 {meta: title Ramblin’ Man}
 {meta: artist The Allman Brothers}
-{meta: writer Forrest Richard Betts}
+{meta: composer Forrest Richard Betts}
 
 {start_of_verse: Verse 1}
 [G]Lord I was [F]born a [C]ramblin' [G]man

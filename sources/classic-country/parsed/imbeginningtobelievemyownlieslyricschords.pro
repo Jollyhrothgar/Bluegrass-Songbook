@@ -1,6 +1,6 @@
 {meta: title I'm Beginning To Believe My Own Lies}
 {meta: artist Charley Pride}
-{meta: writer Al Urban}
+{meta: composer Al Urban}
 
 {start_of_verse: Verse 1}
 [C]I don't make the same old [F]places that I used [C]to

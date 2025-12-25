@@ -1,6 +1,6 @@
 {meta: title Blessed Be}
 {meta: artist Statler Brother}
-{meta: writer Kim L. Reid}
+{meta: composer Kim L. Reid}
 
 {start_of_verse: Verse 1}
 [G]Blessed [C]be the [Am]children who are [C]free

@@ -1,6 +1,6 @@
 {meta: title Once In A Blue Moon}
 {meta: artist Earl Thomas Conley}
-{meta: writer Tommy Brasfield and Robert Byrne}
+{meta: composer Tommy Brasfield and Robert Byrne}
 
 {start_of_verse: Verse 1}
 [C]Nine times out of [Em]ten she's [Am]right when I am [C]wrong

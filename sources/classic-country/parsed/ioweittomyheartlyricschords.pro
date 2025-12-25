@@ -1,6 +1,6 @@
 {meta: title I Owe It To My Heart}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Johnny Mathis}
+{meta: composer Webb Pierce and Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [C]I wonder if you'll be the type

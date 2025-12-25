@@ -1,6 +1,6 @@
 {meta: title Alexis From Texas}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Just outside of Gainsville Texas

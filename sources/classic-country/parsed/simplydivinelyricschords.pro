@@ -1,6 +1,6 @@
 {meta: title Simply Divine}
 {meta: artist George Jones}
-{meta: writer Melba Montgomery}
+{meta: composer Melba Montgomery}
 
 {start_of_verse: Verse 1}
 [C]When your arms enfold me [G7]I thrill through and through

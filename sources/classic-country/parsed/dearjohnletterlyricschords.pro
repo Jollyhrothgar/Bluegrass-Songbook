@@ -1,6 +1,6 @@
 {meta: title Dear John Letter}
 {meta: artist Jean Shepard}
-{meta: writer Lewis Talley, Fuzzy Owen, Billy Barton}
+{meta: composer Lewis Talley, Fuzzy Owen, Billy Barton}
 
 {start_of_verse: Verse 1}
 [C]Dear John oh how I hate to [G7]write

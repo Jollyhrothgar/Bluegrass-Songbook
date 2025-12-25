@@ -1,6 +1,6 @@
 {meta: title Just A Little Too Much}
 {meta: artist Ricky Nelson}
-{meta: writer Johnny Burnette}
+{meta: composer Johnny Burnette}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I think I love you ah just a little too [C]much

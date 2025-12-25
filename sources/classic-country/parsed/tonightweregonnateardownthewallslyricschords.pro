@@ -1,6 +1,6 @@
 {meta: title Tonight We're Gonna Tear Down The Walls}
 {meta: artist Randy Travis}
-{meta: writer Randy Travis and Jim Sales}
+{meta: composer Randy Travis and Jim Sales}
 
 {start_of_verse: Verse 1}
 [C]Tonight we're gonna tear down the walls

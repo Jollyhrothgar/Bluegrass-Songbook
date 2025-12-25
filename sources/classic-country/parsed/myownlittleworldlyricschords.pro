@@ -1,6 +1,6 @@
 {meta: title My Own Little World}
 {meta: artist Wynn Stewart}
-{meta: writer Bob Morris and Larry Farmer}
+{meta: composer Bob Morris and Larry Farmer}
 
 {start_of_verse: Verse 1}
 [C]Some folks are happy [Dm]  others are sad

@@ -1,6 +1,6 @@
 {meta: title Bottle's Holdin' Me}
 {meta: artist Moe Bandy}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Now I live across town from [F]the only one I [C]love

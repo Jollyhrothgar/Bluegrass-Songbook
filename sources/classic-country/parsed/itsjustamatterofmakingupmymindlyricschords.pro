@@ -1,6 +1,6 @@
 {meta: title It's Just A Matter Of Making Up My Mind}
 {meta: artist Mickey Gilley}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]Oh the sun's gonna [G7]come up [C]tomorrow

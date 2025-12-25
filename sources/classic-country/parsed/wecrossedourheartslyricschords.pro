@@ -1,6 +1,6 @@
 {meta: title We Crossed Our Hearts}
 {meta: artist Ray Price}
-{meta: writer Helen Kaye}
+{meta: composer Helen Kaye}
 
 {start_of_verse: Verse 1}
 [C]I thought that a love that was [F]true would never [C]die

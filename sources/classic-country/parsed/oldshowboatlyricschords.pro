@@ -1,6 +1,6 @@
 {meta: title Old Showboat}
 {meta: artist Stonewall Jackson}
-{meta: writer Marijohn Wilkin and Fred Burch}
+{meta: composer Marijohn Wilkin and Fred Burch}
 
 {start_of_verse: Verse 1}
 [C]I blew into Dallas feelin' kinda low

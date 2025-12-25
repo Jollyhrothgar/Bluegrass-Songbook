@@ -1,6 +1,6 @@
 {meta: title Waiting For The Sun To Shine}
 {meta: artist Ricky Skaggs}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]Oh I've been standing underneath this old dark cloud now

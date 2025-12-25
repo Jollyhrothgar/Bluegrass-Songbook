@@ -1,6 +1,6 @@
 {meta: title Blue Side Of Town}
 {meta: artist Patty Loveless}
-{meta: writer Paul Kennerley and Hank DeVito}
+{meta: composer Paul Kennerley and Hank DeVito}
 
 {start_of_verse: Verse 1}
 [C]Rain on my [G]window [C]tears in my [G]eyes

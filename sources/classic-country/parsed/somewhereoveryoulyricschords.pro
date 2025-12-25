@@ -1,6 +1,6 @@
 {meta: title Somewhere Over You}
 {meta: artist Gene Watson}
-{meta: writer David H. Lindsey, Jim Rushing, Gene Watson}
+{meta: composer David H. Lindsey, Jim Rushing, Gene Watson}
 
 {start_of_verse: Verse 1}
 [C]I rolled out of bed with [Am]my eyes on you

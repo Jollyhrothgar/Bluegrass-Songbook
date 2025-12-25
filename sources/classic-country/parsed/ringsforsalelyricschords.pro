@@ -1,6 +1,6 @@
 {meta: title Rings For Sale}
 {meta: artist Roger Miller}
-{meta: writer John Hadley}
+{meta: composer John Hadley}
 
 {start_of_verse: Verse 1}
 [C]I've got rings for sale and they're all made out of nails

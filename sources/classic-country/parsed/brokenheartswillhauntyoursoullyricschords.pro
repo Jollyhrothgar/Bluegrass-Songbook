@@ -1,6 +1,6 @@
 {meta: title Broken Hearts Will Haunt Your Soul}
 {meta: artist Ray Price}
-{meta: writer Jelly Sanders}
+{meta: composer Jelly Sanders}
 
 {start_of_verse: Verse 1}
 [G]Each time you think a man loves you 

@@ -1,6 +1,6 @@
 {meta: title Every Step Of The Way Lyrics and Chords}
 {meta: artist Sonny James}
-{meta: writer Robert Allen and Al Stillman}
+{meta: composer Robert Allen and Al Stillman}
 
 {start_of_verse: Verse 1}
 [C]We'll walk the road of life together day by [F]day

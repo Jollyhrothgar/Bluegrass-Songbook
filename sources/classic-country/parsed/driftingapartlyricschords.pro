@@ -1,6 +1,6 @@
 {meta: title Drifting Apart}
 {meta: artist Wilburn Brothers}
-{meta: writer Hal Gurnee}
+{meta: composer Hal Gurnee}
 
 {start_of_verse: Verse 1}
 [F]Drifting apart  [C]drifting apart 

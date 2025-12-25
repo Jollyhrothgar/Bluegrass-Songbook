@@ -1,6 +1,6 @@
 {meta: title Time's A Gettin' Hard Lyrics and Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Red Hayes}
+{meta: composer Red Hayes}
 
 {start_of_verse: Verse 1}
 [C]Time's a gettin' [F]hard boys [G7]money's gettin' [C]scarce

@@ -1,6 +1,6 @@
 {meta: title Right Back Missing You Again}
 {meta: artist Charley Pride}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [C]I had you neatly tucked away way in the back of my mind

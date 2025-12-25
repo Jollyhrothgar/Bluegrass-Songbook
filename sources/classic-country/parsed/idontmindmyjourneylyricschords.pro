@@ -1,6 +1,6 @@
 {meta: title I Don't Mind My Journey}
 {meta: artist The Oak Ridge Boys}
-{meta: writer William York}
+{meta: composer William York}
 
 {start_of_verse: Verse 1}
 [C]Oh I know I have a [G7]river to [C]cross

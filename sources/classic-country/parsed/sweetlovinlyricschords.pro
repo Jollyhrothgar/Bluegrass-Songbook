@@ -1,6 +1,6 @@
 {meta: title Sweet Lovin'}
 {meta: artist David Houston}
-{meta: writer Tillman Franks and Clyde Baum}
+{meta: composer Tillman Franks and Clyde Baum}
 
 {start_of_verse: Verse 1}
 [G]Sweet lovin' sweet lovin' can't you hear me [C]pleadin'

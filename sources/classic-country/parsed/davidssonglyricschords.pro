@@ -1,6 +1,6 @@
 {meta: title David's Song}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]As I sit here in this Loser's [F]Cathedral

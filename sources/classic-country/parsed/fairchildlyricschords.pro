@@ -1,6 +1,6 @@
 {meta: title Fairchild}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [G]Your eyes are soft and gentle but your [D7]heart is hard and [G]cold

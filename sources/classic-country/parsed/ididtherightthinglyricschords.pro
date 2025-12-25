@@ -1,6 +1,6 @@
 {meta: title I Did The Right Thing}
 {meta: artist Johnny Paycheck}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [G]I pull into my driveway while the [C]day is slowly dying in the [G]west

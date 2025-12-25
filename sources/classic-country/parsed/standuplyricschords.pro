@@ -1,6 +1,6 @@
 {meta: title Stand Up}
 {meta: artist Ferlin Husky}
-{meta: writer Cliff Crofford}
+{meta: composer Cliff Crofford}
 
 {start_of_verse: Verse 1}
 [G]Stand up if you've ever had the feelin'

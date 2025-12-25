@@ -1,6 +1,6 @@
 {meta: title Tie A Yellow Ribbon Round The Old Oak Tree}
 {meta: artist Dolly Parton}
-{meta: writer Russell Brown and Irwin Levine}
+{meta: composer Russell Brown and Irwin Levine}
 
 {start_of_verse: Verse 1}
 [C]I'm coming home I've done my [Em]time 

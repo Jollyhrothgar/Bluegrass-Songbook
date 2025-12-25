@@ -1,6 +1,6 @@
 {meta: title I Called His Name He Took My Hand}
 {meta: artist Ray Price}
-{meta: writer Lee Dresser}
+{meta: composer Lee Dresser}
 
 {start_of_verse: Verse 1}
 [C]He took my hand [F]and led me out of [F][C]sin

@@ -1,6 +1,6 @@
 {meta: title Wherever You Are}
 {meta: artist Jean Shepard}
-{meta: writer Richard Johnson and Jan Howard}
+{meta: composer Richard Johnson and Jan Howard}
 
 {start_of_verse: Verse 1}
 [G]I don't have to live in a [C]mansion

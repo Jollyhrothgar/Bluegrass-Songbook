@@ -1,6 +1,6 @@
 {meta: title Ain’t Gonna Do It}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew}
+{meta: composer Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [C]I'm goin' home yes goin' home

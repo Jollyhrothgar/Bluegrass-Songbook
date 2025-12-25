@@ -1,6 +1,6 @@
 {meta: title I'd Still Be There}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash and Johnny Horton}
+{meta: composer Johnny Cash and Johnny Horton}
 
 {start_of_verse: Verse 1}
 [G]I overlooked a lot of things I knew I should've [D7]done

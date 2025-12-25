@@ -1,6 +1,6 @@
 {meta: title Confidence And Common Sense}
 {meta: artist Billy Crash Craddock}
-{meta: writer Durwood Haddock}
+{meta: composer Durwood Haddock}
 
 {start_of_verse: Verse 1}
 [C]Well daddy had [F]confidence and common sense

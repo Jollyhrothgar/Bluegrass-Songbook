@@ -1,6 +1,6 @@
 {meta: title Doorstep To Heaven}
 {meta: artist Carl Smith}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [G]I met her we fell in love [G7]and we [C]parted

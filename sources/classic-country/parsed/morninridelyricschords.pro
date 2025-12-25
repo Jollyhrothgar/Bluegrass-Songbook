@@ -1,6 +1,6 @@
 {meta: title Mornin' Ride}
 {meta: artist Lee Greenwood}
-{meta: writer Jeffrey M. Tweel and Steve Bogard}
+{meta: composer Jeffrey M. Tweel and Steve Bogard}
 
 {start_of_verse: Verse 1}
 [G]There's a quiet time in the early dawn

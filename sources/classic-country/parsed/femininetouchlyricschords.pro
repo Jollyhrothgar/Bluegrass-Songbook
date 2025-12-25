@@ -1,6 +1,6 @@
 {meta: title Feminine Touch}
 {meta: artist Johnny Paycheck}
-{meta: writer Larry Kingston and Frank Dycus}
+{meta: composer Larry Kingston and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [C]I delivered the [G7]orders from [C]your last Stanley [F]Party

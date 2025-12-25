@@ -1,6 +1,6 @@
 {meta: title I Know You're Not An Angel}
 {meta: artist Red Sovine}
-{meta: writer Red Sovine and Elmo Linn}
+{meta: composer Red Sovine and Elmo Linn}
 
 {start_of_verse: Verse 1}
 [C]You take in all the nightspots 

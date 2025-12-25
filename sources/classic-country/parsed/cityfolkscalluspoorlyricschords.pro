@@ -1,6 +1,6 @@
 {meta: title City Folks Call Us Poor}
 {meta: artist Larry Sparks}
-{meta: writer Marshall Warwick}
+{meta: composer Marshall Warwick}
 
 {start_of_verse: Verse 1}
 [G]Moonlight shining [B7]on the grassy [C]meadow

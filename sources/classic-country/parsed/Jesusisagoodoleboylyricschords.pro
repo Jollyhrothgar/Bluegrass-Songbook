@@ -1,6 +1,6 @@
 {meta: title Jesus Is A Good Ole Boy}
 {meta: artist Cal Smith}
-{meta: writer Hank Cochran and Hollis Rudolph DeLaughter}
+{meta: composer Hank Cochran and Hollis Rudolph DeLaughter}
 
 {start_of_verse: Verse 1}
 [C]To old folks Jesus is a [F]place to [C]go

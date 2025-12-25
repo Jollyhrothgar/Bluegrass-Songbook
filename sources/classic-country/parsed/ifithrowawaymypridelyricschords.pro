@@ -1,6 +1,6 @@
 {meta: title If I Throw Away My Pride}
 {meta: artist Mel Tillis}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]If I'm sorry for the [G7]things you think I've [C]done

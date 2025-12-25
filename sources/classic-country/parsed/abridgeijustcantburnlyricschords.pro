@@ -1,6 +1,6 @@
 {meta: title A Bridge I Just Can't Burn}
 {meta: artist Kitty Wells}
-{meta: writer Wayne Manning}
+{meta: composer Wayne Manning}
 
 {start_of_verse: Verse 1}
 [G7]My [C]lawyer turned and [G7]said congratu[C]lations

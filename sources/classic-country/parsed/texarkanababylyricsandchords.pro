@@ -1,6 +1,6 @@
 {meta: title Texarkana Baby}
 {meta: artist Eddy Arnold}
-{meta: writer Cottonseed Clark and Fred Rose}
+{meta: composer Cottonseed Clark and Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]She's my Texarkana baby do I love her lowdy law

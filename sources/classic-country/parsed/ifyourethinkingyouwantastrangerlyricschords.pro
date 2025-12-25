@@ -1,6 +1,6 @@
 {meta: title If You're Thinking You Want A Stranger}
 {meta: artist George Strait}
-{meta: writer Blake Mevis and David Wills}
+{meta: composer Blake Mevis and David Wills}
 
 {start_of_verse: Verse 1}
 [Am]Lately you've been [C]showing all the [G]signs

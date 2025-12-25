@@ -1,6 +1,6 @@
 {meta: title Careless Hands}
 {meta: artist Slim Whitman}
-{meta: writer Bob Hillard and Carl Sigman}
+{meta: composer Bob Hillard and Carl Sigman}
 
 {start_of_verse: Verse 1}
 [G]I let my heart fall [C]into careless [G]hands

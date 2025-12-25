@@ -1,6 +1,6 @@
 {meta: title Carry Me Back}
 {meta: artist Statler Brothers}
-{meta: writer Harold and Don Reid}
+{meta: composer Harold and Don Reid}
 
 {start_of_verse: Verse 1}
 [C]Carry me back Lord while [G7]I still got the [C]time

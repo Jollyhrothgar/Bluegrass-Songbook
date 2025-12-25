@@ -1,6 +1,6 @@
 {meta: title I Just Lost My Favorite Girl}
 {meta: artist Darrell McCall}
-{meta: writer Don Adams}
+{meta: composer Don Adams}
 
 {start_of_verse: Verse 1}
 [G]In a barroom I'm standin' with a [C]drink in my [G]hand

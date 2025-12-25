@@ -1,6 +1,6 @@
 {meta: title I'll Be Going To Heaven Sometime}
 {meta: artist Doyle Lawson}
-{meta: writer Howard Watts}
+{meta: composer Howard Watts}
 
 {start_of_verse: Verse 1}
 [G]Are you going to be a [C]saint on that [G]shore

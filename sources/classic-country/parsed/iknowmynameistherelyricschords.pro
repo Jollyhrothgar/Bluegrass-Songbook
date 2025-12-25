@@ -1,6 +1,6 @@
 {meta: title I Know My Name Is There}
 {meta: artist Heaven's Mountain Band}
-{meta: writer Ernest Stoneman}
+{meta: composer Ernest Stoneman}
 
 {start_of_verse: Verse 1}
 [C]My name is [F]in the [C]book of Life

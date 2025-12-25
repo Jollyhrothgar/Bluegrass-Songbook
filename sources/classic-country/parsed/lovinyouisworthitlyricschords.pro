@@ -1,6 +1,6 @@
 {meta: title Lovin' You Is Worth It}
 {meta: artist Barbara Mandrell}
-{meta: writer Carmol Taylor and Quinton Claunch}
+{meta: composer Carmol Taylor and Quinton Claunch}
 
 {start_of_verse: Verse 1}
 [C]I work hard and I work [F]over time and [C]I'm still deep in debt

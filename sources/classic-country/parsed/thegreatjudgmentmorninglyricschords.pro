@@ -1,6 +1,6 @@
 {meta: title The Great Judgment Morning}
 {meta: artist Roy Acuff}
-{meta: writer Leander L. Pickett}
+{meta: composer Leander L. Pickett}
 
 {start_of_verse: Verse 1}
 [G]I dreamed that the great judgment [C]morning 

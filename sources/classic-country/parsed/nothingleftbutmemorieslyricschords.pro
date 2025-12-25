@@ -1,6 +1,6 @@
 {meta: title Nothing Left But Memories}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin}
+{meta: composer Lloene S. Martin}
 
 {start_of_verse: Verse 1}
 [C]There’s [F]nothing left but [Em]memories 

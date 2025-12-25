@@ -1,6 +1,6 @@
 {meta: title Without Him}
 {meta: artist Elvis Presley}
-{meta: writer Mylon R. LeFevre}
+{meta: composer Mylon R. LeFevre}
 
 {start_of_verse: Verse 1}
 [C]Without Him I could do [G7]nothing

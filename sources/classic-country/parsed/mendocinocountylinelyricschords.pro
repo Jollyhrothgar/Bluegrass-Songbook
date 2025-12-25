@@ -1,6 +1,6 @@
 {meta: title Mendocino County Line}
 {meta: artist Willie Nelson}
-{meta: writer Matt Serletic and Bernie Taupin}
+{meta: composer Matt Serletic and Bernie Taupin}
 
 {start_of_verse: Verse 1}
 [C]We counted the stars on the fourth of [Am]July

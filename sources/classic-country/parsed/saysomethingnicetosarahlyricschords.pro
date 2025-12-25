@@ -1,6 +1,6 @@
 {meta: title Say Something Nice To Sarah}
 {meta: artist Ernest Tubb}
-{meta: writer Johnny Cash and Winafred Kelley}
+{meta: composer Johnny Cash and Winafred Kelley}
 
 {start_of_verse: Verse 1}
 [C]I really do love Sarah and she [F]really does love me

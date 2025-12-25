@@ -1,6 +1,6 @@
 {meta: title When He Walks On You}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Dallas Frazier and A.L. Owens}
+{meta: composer Dallas Frazier and A.L. Owens}
 
 {start_of_verse: Verse 1}
 [G]Someday you'll feel a [C]trembling in your [G]knees

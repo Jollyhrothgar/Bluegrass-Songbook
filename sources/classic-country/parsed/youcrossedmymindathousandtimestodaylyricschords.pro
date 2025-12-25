@@ -1,6 +1,6 @@
 {meta: title You Crossed My Mind A Thousand Times Today Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Dewayne Orender and Phyllis Powell}
+{meta: composer Dewayne Orender and Phyllis Powell}
 
 {start_of_verse: Verse 1}
 [C]You've been gone a long long [F]time

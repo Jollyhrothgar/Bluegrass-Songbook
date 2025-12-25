@@ -1,6 +1,6 @@
 {meta: title Everything I Love}
 {meta: artist Alan Jackson}
-{meta: writer Harley Allen and Carson Chamberlain}
+{meta: composer Harley Allen and Carson Chamberlain}
 
 {start_of_verse: Verse 1}
 [C]Coffee keeps me up and I can't [F]sleep

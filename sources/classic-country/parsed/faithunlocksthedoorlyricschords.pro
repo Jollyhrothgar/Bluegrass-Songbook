@@ -1,6 +1,6 @@
 {meta: title Faith Unlocks The Door}
 {meta: artist Don Gibson}
-{meta: writer Samuel T Scott and Robert L Sande}
+{meta: composer Samuel T Scott and Robert L Sande}
 
 {start_of_verse: Verse 1}
 [C]Prayer is the key to [E7][E]heaven

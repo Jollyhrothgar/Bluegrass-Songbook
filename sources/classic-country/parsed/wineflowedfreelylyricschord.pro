@@ -1,6 +1,6 @@
 {meta: title Wine Flowed Freely chord}
 {meta: artist Stonewall Jackson}
-{meta: writer Joe Babcock}
+{meta: composer Joe Babcock}
 
 {start_of_verse: Verse 1}
 [C]All the [G7]days of my youth I [C]remember so well

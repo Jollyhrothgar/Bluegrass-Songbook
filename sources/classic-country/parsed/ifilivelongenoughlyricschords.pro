@@ -1,6 +1,6 @@
 {meta: title If I Live Long Enough}
 {meta: artist Norma Jean}
-{meta: writer Helen Carter and Anita Carter}
+{meta: composer Helen Carter and Anita Carter}
 
 {start_of_verse: Verse 1}
 [G]If I try [C]hard enough If I cry [D7]long enough 

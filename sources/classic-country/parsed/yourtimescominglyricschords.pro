@@ -1,6 +1,6 @@
 {meta: title Your Time’s Coming}
 {meta: artist Faron Young}
-{meta: writer Kris Kristofferson and Shel Silverstein}
+{meta: composer Kris Kristofferson and Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]Well I knew she belonged to someone else at the time

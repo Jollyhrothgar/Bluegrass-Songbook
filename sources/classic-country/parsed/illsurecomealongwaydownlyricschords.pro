@@ -1,5 +1,5 @@
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Maggie Vaughn}
+{meta: composer Loretta Lynn and Maggie Vaughn}
 
 {start_of_verse: Verse 1}
 [G]Think I’ll dye my hair blonde today to [C]change my own re[G]touch

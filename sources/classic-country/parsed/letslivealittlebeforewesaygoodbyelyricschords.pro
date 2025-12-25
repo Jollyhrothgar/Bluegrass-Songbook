@@ -1,6 +1,6 @@
 {meta: title Let's Live A Little Before We Say Goodbye}
 {meta: artist Carl Smith}
-{meta: writer Ruth Coletharp}
+{meta: composer Ruth Coletharp}
 
 {start_of_verse: Verse 1}
 [C]Take your little lips and kiss me

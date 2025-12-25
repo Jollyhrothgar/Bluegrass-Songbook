@@ -1,6 +1,6 @@
 {meta: title Where No One Stands Alone}
 {meta: artist Elvis Presley}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [C]Once I stood in the [G7]night with my [C]head [F]bowed [C]low

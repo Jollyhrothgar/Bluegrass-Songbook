@@ -1,6 +1,6 @@
 {meta: title Just Beyond The Moon}
 {meta: artist Tex Ritter}
-{meta: writer Jeremy Slate}
+{meta: composer Jeremy Slate}
 
 {start_of_verse: Verse 1}
 [C](I'll walk [G]just beyond the [D7]moon then I'll stop and wait for [G][C][G]you)     

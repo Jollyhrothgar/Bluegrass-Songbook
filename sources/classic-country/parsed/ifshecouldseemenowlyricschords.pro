@@ -1,6 +1,6 @@
 {meta: title If She Could See Me Now}
 {meta: artist Ray Price}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]I saw the one I loved and lost last night [C]again

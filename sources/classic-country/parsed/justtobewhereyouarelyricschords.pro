@@ -1,6 +1,6 @@
 {meta: title Just To Be Where You Are}
 {meta: artist Wilburn Brothers}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Just to be where you are that's enough for [G7]me

@@ -1,6 +1,6 @@
 {meta: title Lonely Days Lonely Nights}
 {meta: artist Patty Loveless}
-{meta: writer Karen Staley}
+{meta: composer Karen Staley}
 
 {start_of_verse: Verse 1}
 [G]Lonely days [C]lonely [G]nights

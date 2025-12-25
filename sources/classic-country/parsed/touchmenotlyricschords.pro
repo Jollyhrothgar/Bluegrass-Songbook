@@ -1,6 +1,6 @@
 {meta: title Touch Me Not}
 {meta: artist Stonewall Jackson}
-{meta: writer Joyce Allsup}
+{meta: composer Joyce Allsup}
 
 {start_of_verse: Verse 1}
 [G]You're gonna break my heart beyond repair

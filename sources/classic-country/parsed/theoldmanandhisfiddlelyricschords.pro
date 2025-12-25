@@ -1,6 +1,6 @@
 {meta: title The Old Man And His Fiddle}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Richard O'Brien}
+{meta: composer Red Steagall and Richard O'Brien}
 
 {start_of_verse: Verse 1}
 [C]In a trunk in the [G7]attic in [F]Grandmother’s [C]house

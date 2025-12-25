@@ -1,6 +1,6 @@
 {meta: title Don't Sing Me No Songs About Texas}
 {meta: artist Leona Williams}
-{meta: writer Merle R. Haggard and Leona Williams}
+{meta: composer Merle R. Haggard and Leona Williams}
 
 {start_of_verse: Verse 1}
 [G]Don’t sing about a Luckenbach Texas 

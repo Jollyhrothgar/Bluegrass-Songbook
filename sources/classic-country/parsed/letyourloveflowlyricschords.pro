@@ -1,6 +1,6 @@
 {meta: title Let your love flow}
 {meta: artist The Bellamy Brothers}
-{meta: writer Larry E. Williams}
+{meta: composer Larry E. Williams}
 
 {start_of_verse: Verse 1}
 [C]There's a reason for the sunshiny sky

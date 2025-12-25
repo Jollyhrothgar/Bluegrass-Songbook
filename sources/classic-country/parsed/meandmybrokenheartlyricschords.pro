@@ -1,6 +1,6 @@
 {meta: title Me And My Broken Heart}
 {meta: artist Carl Smith}
-{meta: writer Hank Williams}
+{meta: composer Hank Williams}
 
 {start_of_verse: Verse 1}
 [F]We were waiting at the [C]church 

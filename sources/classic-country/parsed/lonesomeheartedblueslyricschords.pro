@@ -1,6 +1,6 @@
 {meta: title Lonesome Hearted Blues}
 {meta: artist Reno Brothers}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [G]Blu--[F]es [G]lonesome hearted blues

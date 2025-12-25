@@ -1,6 +1,6 @@
 {meta: title Just When I Needed You}
 {meta: artist George Jones}
-{meta: writer Johnny Wright, Jack Anglin, Clyde Baum}
+{meta: composer Johnny Wright, Jack Anglin, Clyde Baum}
 
 {start_of_verse: Verse 1}
 [C]JUST WHEN I NEEDED YOU  YOU LEFT AND WENT [F]AWAY

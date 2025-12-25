@@ -1,6 +1,6 @@
 {meta: title Pen And Paper}
 {meta: artist Faron Young}
-{meta: writer Eddie Kilroy and Dianne Kilroy}
+{meta: composer Eddie Kilroy and Dianne Kilroy}
 
 {start_of_verse: Verse 1}
 [G7]Pen and [F]paper won't you [G7]tell me what to [C]write

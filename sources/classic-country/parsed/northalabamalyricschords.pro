@@ -1,6 +1,6 @@
 {meta: title North Alabama}
 {meta: artist Cal Smith}
-{meta: writer Dave Kirby and Joe Allen}
+{meta: composer Dave Kirby and Joe Allen}
 
 {start_of_verse: Verse 1}
 [C]It's colder than nine kinds of [F]hell in Montana

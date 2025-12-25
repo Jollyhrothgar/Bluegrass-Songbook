@@ -1,6 +1,6 @@
 {meta: title I've Been Calling}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino, Pee Wee Maddux, Jimmy Donley}
+{meta: composer Antonio Domino, Pee Wee Maddux, Jimmy Donley}
 
 {start_of_verse: Verse 1}
 [C]I've been a [F]calling 

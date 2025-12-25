@@ -1,6 +1,6 @@
 {meta: title A Very Special Love Song}
 {meta: artist Charlie Rich}
-{meta: writer Billy Sherrill and Norro Wilson}
+{meta: composer Billy Sherrill and Norro Wilson}
 
 {start_of_verse: Verse 1}
 [C]Babe somewhere I know I'm gonna find it babe

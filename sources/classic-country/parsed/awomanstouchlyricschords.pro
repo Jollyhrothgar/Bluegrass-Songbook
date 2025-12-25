@@ -1,6 +1,6 @@
 {meta: title A Woman's Touch}
 {meta: artist Glen Campbell}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]Right from the [F]first day  one [G7]man stood [C]alone

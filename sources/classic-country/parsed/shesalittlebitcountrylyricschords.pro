@@ -1,6 +1,6 @@
 {meta: title She's A Little Bit Country}
 {meta: artist Ernest Tubb}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]She's a big city girl in so many ways

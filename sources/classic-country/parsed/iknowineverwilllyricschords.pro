@@ -1,6 +1,6 @@
 {meta: title I Know I Never Will}
 {meta: artist Johnny Paycheck}
-{meta: writer Johnny Mathis}
+{meta: composer Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [C]I may get tired of lots of [F]things from day to [C]day

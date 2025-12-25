@@ -1,6 +1,6 @@
 {meta: title Every Time I Itch I Wind Up Scratching You}
 {meta: artist Glen Campbell}
-{meta: writer Jeremy Slate and Glen Campbell}
+{meta: composer Jeremy Slate and Glen Campbell}
 
 {start_of_verse: Verse 1}
 [C]You know my love my [Em]only wish is [C]happiness for [F]you

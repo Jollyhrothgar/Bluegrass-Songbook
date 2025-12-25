@@ -1,6 +1,6 @@
 {meta: title The Great Divide}
 {meta: artist Reba McEntire}
-{meta: writer Michael Heeney and Jackson Leap}
+{meta: composer Michael Heeney and Jackson Leap}
 
 {start_of_verse: Verse 1}
 [C]Well I could [G7]swear this king size bed keeps gettin' [C]wider

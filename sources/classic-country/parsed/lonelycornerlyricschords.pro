@@ -1,6 +1,6 @@
 {meta: title Lonely Corner}
 {meta: artist Ricky Nelson}
-{meta: writer Betty Murdoch and Johnny Burnett}
+{meta: composer Betty Murdoch and Johnny Burnett}
 
 {start_of_verse: Verse 1}
 [C]If you think you got troubles buddy listen to me

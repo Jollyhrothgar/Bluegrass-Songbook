@@ -1,6 +1,6 @@
 {meta: title First Romance}
 {meta: artist Conway Twitty}
-{meta: writer Conway Twitty and Vincent Matthews}
+{meta: composer Conway Twitty and Vincent Matthews}
 
 {start_of_verse: Verse 1}
 [C](First romance ooh [F]ooh [G7]ooh first [C]romance ooh [F]ooh [G7]ooh)

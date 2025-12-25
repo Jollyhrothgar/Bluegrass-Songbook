@@ -1,6 +1,6 @@
 {meta: title Don't Put Her Down You Helped Put Her There}
 {meta: artist Courtney Granger}
-{meta: writer Hazel Dickens}
+{meta: composer Hazel Dickens}
 
 {start_of_verse: Verse 1}
 [C]Don't put her down you [G7]helped put her [C]there

@@ -1,6 +1,6 @@
 {meta: title Love Me Love Me Honey Do}
 {meta: artist Patsy Cline}
-{meta: writer W.S. Stevenson, Clyde Beam, Charles Jiles}
+{meta: composer W.S. Stevenson, Clyde Beam, Charles Jiles}
 
 {start_of_verse: Verse 1}
 [C]My love is deeper than the world's deepest [G7]sea

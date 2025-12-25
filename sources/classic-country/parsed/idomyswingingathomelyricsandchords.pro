@@ -1,6 +1,6 @@
 {meta: title I Do My Swinging At Home}
 {meta: artist Charlie Rich}
-{meta: writer Billy Sherrill}
+{meta: composer Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [C]Nobody loves a [F]drink any more than [C]me

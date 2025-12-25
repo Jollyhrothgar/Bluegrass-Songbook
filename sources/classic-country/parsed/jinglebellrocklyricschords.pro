@@ -1,6 +1,6 @@
 {meta: title Jingle Bell Rock}
 {meta: artist Brenda Lee}
-{meta: writer Joe Beal and Jim Boothe}
+{meta: composer Joe Beal and Jim Boothe}
 
 {start_of_verse: Verse 1}
 [G]Jingle-bell jingle-bell jingle-bell rock

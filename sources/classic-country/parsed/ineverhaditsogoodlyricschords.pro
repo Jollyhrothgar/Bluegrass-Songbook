@@ -1,6 +1,6 @@
 {meta: title I Never Had It So Good}
 {meta: artist Kris Kristofferson}
-{meta: writer Paul Williams and Roger Nichols}
+{meta: composer Paul Williams and Roger Nichols}
 
 {start_of_verse: Verse 1}
 [G]I never had much mon[C]ey [D7]  I [G]never won a race

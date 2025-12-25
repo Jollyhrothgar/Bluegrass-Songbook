@@ -1,6 +1,6 @@
 {meta: title Don't Touch Me There}
 {meta: artist Reba McEntire}
-{meta: writer Michael Heeney}
+{meta: composer Michael Heeney}
 
 {start_of_verse: Verse 1}
 [F]These [C]hands you can hold 'em [F]all night if you [C]want to

@@ -1,6 +1,6 @@
 {meta: title Rosie (Do You Wanna Talk It Over)}
 {meta: artist Red Steagall}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]I know I'm not the first man 

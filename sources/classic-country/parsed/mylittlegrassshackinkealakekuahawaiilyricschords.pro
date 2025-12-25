@@ -1,6 +1,6 @@
 {meta: title My Little Grass Shack In Kealakekua Hawaii}
 {meta: artist Hank Snow}
-{meta: writer Bill Cogswell, Tommy Harrison, Johnny Noble}
+{meta: composer Bill Cogswell, Tommy Harrison, Johnny Noble}
 
 {start_of_verse: Verse 1}
 [C]I wanna go back to the little grass shack in Kealakekua [D7]Hawaii

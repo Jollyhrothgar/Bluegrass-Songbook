@@ -1,6 +1,6 @@
 {meta: title Don't Make It Easy For Me}
 {meta: artist Earl Thomas Conley}
-{meta: writer Earl Thomas Conley and Randy Scruggs}
+{meta: composer Earl Thomas Conley and Randy Scruggs}
 
 {start_of_verse: Verse 1}
 [C]You're on my mind I'm in the dark

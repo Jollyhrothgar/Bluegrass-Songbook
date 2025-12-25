@@ -1,6 +1,6 @@
 {meta: title I Guess I'm Crazy}
 {meta: artist Jim Reeves}
-{meta: writer Werly Fairburn}
+{meta: composer Werly Fairburn}
 
 {start_of_verse: Verse 1}
 [G]I guess I'm crazy   for [G7]loving [C]you 

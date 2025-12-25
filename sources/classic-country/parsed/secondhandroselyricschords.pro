@@ -1,6 +1,6 @@
 {meta: title Second Hand Rose}
 {meta: artist Roy Drusky}
-{meta: writer Grant Clarke, James Hanley & Harlan Howard}
+{meta: composer Grant Clarke, James Hanley & Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Second hand shoes Second hand clothes

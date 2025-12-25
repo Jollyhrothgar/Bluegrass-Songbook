@@ -1,6 +1,6 @@
 {meta: title Brother Jack}
 {meta: artist Cal Smith}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [C]Brother Jack did we [F]ride them Okla[G7]homa roads [C]together

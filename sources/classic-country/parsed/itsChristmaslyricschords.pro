@@ -1,6 +1,6 @@
 {meta: title It’s Christmas}
 {meta: artist Ronnie Milsap}
-{meta: writer Thomas Cain and Joe Nelson}
+{meta: composer Thomas Cain and Joe Nelson}
 
 {start_of_verse: Verse 1}
 [C]The snow is on the ground

@@ -1,6 +1,6 @@
 {meta: title The Rock}
 {meta: artist Tracy Lawrence}
-{meta: writer Thom Shepherd}
+{meta: composer Thom Shepherd}
 
 {start_of_verse: Verse 1}
 [C]Outside Sa[F]vanna spring of [G7]184[C]4

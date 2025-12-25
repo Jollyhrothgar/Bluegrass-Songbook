@@ -1,6 +1,6 @@
 {meta: title Where Is Tomorrow}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Bill Dees}
+{meta: composer Roy Orbison and Bill Dees}
 
 {start_of_verse: Verse 1}
 [C]Where [F]is [G]tomorrow an [C]island of [G]dreams

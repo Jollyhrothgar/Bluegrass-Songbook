@@ -1,6 +1,6 @@
 {meta: title There Ain't Nothing Wrong}
 {meta: artist Vern Gosdin}
-{meta: writer Hank Cochran, Dean Dillon, Vern Gosdin}
+{meta: composer Hank Cochran, Dean Dillon, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]We still share the same old bed  we still lay there side by [G7]side

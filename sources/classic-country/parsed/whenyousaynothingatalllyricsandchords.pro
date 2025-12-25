@@ -1,6 +1,6 @@
 {meta: title When You Say Nothing At All}
 {meta: artist Keith Whitley}
-{meta: writer Don Schlitz and Paul Overstreet}
+{meta: composer Don Schlitz and Paul Overstreet}
 
 {start_of_verse: Verse 1}
 [C]It's amazing how [F]you can speak [G7]right to my [C]heart [G7]   [F]  [G7]

@@ -1,6 +1,6 @@
 {meta: title Out Of You}
 {meta: artist Lefty Frizzell}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Out of places filled with laughter

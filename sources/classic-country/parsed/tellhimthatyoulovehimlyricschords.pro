@@ -1,6 +1,6 @@
 {meta: title Tell Him That You Love Him}
 {meta: artist Webb Pierce}
-{meta: writer Pat Benson}
+{meta: composer Pat Benson}
 
 {start_of_verse: Verse 1}
 [C](You say he doesn't kiss you anymore when he comes [G7]home

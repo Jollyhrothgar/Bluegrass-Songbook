@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Heart}
 {meta: artist Keith Whitley}
-{meta: writer Joanna Neel and Lonnie Wilson}
+{meta: composer Joanna Neel and Lonnie Wilson}
 
 {start_of_verse: Verse 1}
 [C]Hey I still got a honky tonk [F]heart

@@ -1,6 +1,6 @@
 {meta: title Stars Fell On Alabama}
 {meta: artist Ricky Nelson}
-{meta: writer Mitchell Parish and Frank Perkins}
+{meta: composer Mitchell Parish and Frank Perkins}
 
 {start_of_verse: Verse 1}
 [Am](Ala[D7]bama[Bm]    [Am]Ala[D7]bama)

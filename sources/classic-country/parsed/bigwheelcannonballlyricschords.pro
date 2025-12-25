@@ -1,6 +1,6 @@
 {meta: title Big Wheel Cannonball}
 {meta: artist Dick Curless}
-{meta: writer Vaughn Horton}
+{meta: composer Vaughn Horton}
 
 {start_of_verse: Verse 1}
 [C]This great and mighty nation will sing forever [F]more

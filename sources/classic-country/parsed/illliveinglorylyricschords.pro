@@ -1,6 +1,6 @@
 {meta: title I'll Live in Glory}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Tamika Farris}
+{meta: composer Tamika Farris}
 
 {start_of_verse: Verse 1}
 [G]I'd like to stay here longer then man's allotted days

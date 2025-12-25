@@ -1,6 +1,6 @@
 {meta: title Careless Hands Lyrics and Chords}
 {meta: artist Dottie West}
-{meta: writer Bob Hillard and Carl Sigman}
+{meta: composer Bob Hillard and Carl Sigman}
 
 {start_of_verse: Verse 1}
 [C]I let my heart fall into [F]careless [C]hands 

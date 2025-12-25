@@ -1,6 +1,6 @@
 {meta: title All Night Long}
 {meta: artist Tammy Wynette}
-{meta: writer Don Chapel}
+{meta: composer Don Chapel}
 
 {start_of_verse: Verse 1}
 [G]Move closer to me don't slip out of my [C]arms 

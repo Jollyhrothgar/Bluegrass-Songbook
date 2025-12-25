@@ -1,6 +1,6 @@
 {meta: title This Kind Of Love}
 {meta: artist Roy Orbison}
-{meta: writer Sam Phillips}
+{meta: composer Sam Phillips}
 
 {start_of_verse: Verse 1}
 [C]Our love our love won't [F]die can't die

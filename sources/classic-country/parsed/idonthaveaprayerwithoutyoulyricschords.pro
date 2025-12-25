@@ -1,6 +1,6 @@
 {meta: title I Don’t Have A Prayer Without You}
 {meta: artist Jeff and Sheri Easter}
-{meta: writer Bruce Haymes}
+{meta: composer Bruce Haymes}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I feel [Bm]like there’s no way [Em]out

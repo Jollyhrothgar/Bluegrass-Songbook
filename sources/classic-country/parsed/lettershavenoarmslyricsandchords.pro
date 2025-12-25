@@ -1,6 +1,6 @@
 {meta: title Letters Have no Arms}
 {meta: artist Faron Young}
-{meta: writer Ernest Tubb and Arbie Gibson}
+{meta: composer Ernest Tubb and Arbie Gibson}
 
 {start_of_verse: Verse 1}
 [C]I just got your letter dear [G7]sweetheart 

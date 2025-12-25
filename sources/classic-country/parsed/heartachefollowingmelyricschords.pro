@@ -1,6 +1,6 @@
 {meta: title There's A Heartache Following Me}
 {meta: artist Jim Reeves}
-{meta: writer Jim Reeves and James O'Gynn}
+{meta: composer Jim Reeves and James O'Gynn}
 
 {start_of_verse: Verse 1}
 [G]Sometimes they ask me  [D7]if I'm really happy [G]now

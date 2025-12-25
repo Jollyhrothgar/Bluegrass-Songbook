@@ -1,6 +1,6 @@
 {meta: title What You’ll Do When I’m Gone}
 {meta: artist Waylon Jennings}
-{meta: writer Larry Butler}
+{meta: composer Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]Staring at the door every night I'm thinking more and [F]more

@@ -1,6 +1,6 @@
 {meta: title She's Already Gone}
 {meta: artist Ernest Tubb}
-{meta: writer Jim Mundy}
+{meta: composer Jim Mundy}
 
 {start_of_verse: Verse 1}
 [C]I don't worry anymore like I did [F]before 

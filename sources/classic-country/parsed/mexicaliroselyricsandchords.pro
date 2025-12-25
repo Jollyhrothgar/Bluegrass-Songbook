@@ -1,6 +1,6 @@
 {meta: title Mexicali Rose}
 {meta: artist Jim Reeves}
-{meta: writer Helen Stone and Jack B. Tenney}
+{meta: composer Helen Stone and Jack B. Tenney}
 
 {start_of_verse: Verse 1}
 [C]Mexicali Rose stop crying 

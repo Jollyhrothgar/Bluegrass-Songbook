@@ -1,6 +1,6 @@
 {meta: title Paper Roses}
 {meta: artist Marie Osmond}
-{meta: writer Janice Torre and Frd Spielman}
+{meta: composer Janice Torre and Frd Spielman}
 
 {start_of_verse: Verse 1}
 [G]I realized the way your eyes deceived [D7]me

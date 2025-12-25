@@ -1,6 +1,6 @@
 {meta: title Song I'd Like To Sing}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [C]La la la la la [G7]la   la la la la la [C]la

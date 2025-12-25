@@ -1,6 +1,6 @@
 {meta: title If Heartaches Were Wine}
 {meta: artist Stonewall Jackson}
-{meta: writer Kent Westberry and Stonewall Jackson}
+{meta: composer Kent Westberry and Stonewall Jackson}
 
 {start_of_verse: Verse 1}
 [C]If hurt was a tavern [C7]then I'd have a [F]home

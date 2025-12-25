@@ -1,6 +1,6 @@
 {meta: title Cowgirl}
 {meta: artist Tracy Byrd}
-{meta: writer Shawn Camp and Harley Allen}
+{meta: composer Shawn Camp and Harley Allen}
 
 {start_of_verse: Verse 1}
 [G]Well my car broke down outside of town 

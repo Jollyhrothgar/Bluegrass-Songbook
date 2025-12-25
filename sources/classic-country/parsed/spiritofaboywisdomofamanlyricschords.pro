@@ -1,6 +1,6 @@
 {meta: title Spirit Of A Boy Wisdom Of A Man}
 {meta: artist Randy Travis}
-{meta: writer Trey Bruce and Glen Burtnick}
+{meta: composer Trey Bruce and Glen Burtnick}
 
 {start_of_verse: Verse 1}
 [C]He was six[F]teen tender and [C]tough

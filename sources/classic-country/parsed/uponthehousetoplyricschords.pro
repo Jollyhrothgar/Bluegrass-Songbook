@@ -1,6 +1,6 @@
 {meta: title Upon The Housetop}
 {meta: artist Gene Autry}
-{meta: writer Jane Whitman}
+{meta: composer Jane Whitman}
 
 {start_of_verse: Verse 1}
 [C]Up on the housetop reindeer paws

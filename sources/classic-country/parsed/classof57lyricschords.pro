@@ -1,6 +1,6 @@
 {meta: title Class Of '57}
 {meta: artist Statler Brothers}
-{meta: writer Harold and Don Reid}
+{meta: composer Harold and Don Reid}
 
 {start_of_verse: Verse 1}
 [C]Tommy's selling [Em]used cars [Am]Nancy's fixing [C]hair

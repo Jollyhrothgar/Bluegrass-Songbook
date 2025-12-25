@@ -1,6 +1,6 @@
 {meta: title I've Learned To Live With You And Be Alone}
 {meta: artist Jean Shepard}
-{meta: writer Ira Louvin and Charlie Louvin}
+{meta: composer Ira Louvin and Charlie Louvin}
 
 {start_of_verse: Verse 1}
 [G]I have learned to live with you [C]and be [G]alone

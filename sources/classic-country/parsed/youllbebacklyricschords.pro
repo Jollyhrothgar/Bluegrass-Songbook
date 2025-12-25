@@ -1,6 +1,6 @@
 {meta: title You’ll Be Back}
 {meta: artist The Statler Brothers}
-{meta: writer Wayland Holyfield and Johnny Russell}
+{meta: composer Wayland Holyfield and Johnny Russell}
 
 {start_of_verse: Verse 1}
 [C]All my friends ask what they can do 

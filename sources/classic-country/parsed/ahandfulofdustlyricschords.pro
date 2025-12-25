@@ -1,6 +1,6 @@
 {meta: title A Handful Of Dust}
 {meta: artist Don Williams}
-{meta: writer Tony Arata}
+{meta: composer Tony Arata}
 
 {start_of_verse: Verse 1}
 Intro:

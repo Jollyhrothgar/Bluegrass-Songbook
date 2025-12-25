@@ -1,6 +1,6 @@
 {meta: title Rodeo Or Mexico}
 {meta: artist Garth Brooks}
-{meta: writer Paul Kennerley, Bryan Kennedy, Garth Brooks}
+{meta: composer Paul Kennerley, Bryan Kennedy, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]For a change I headed [F]south [A#7]across the [C]border

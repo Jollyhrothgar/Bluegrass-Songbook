@@ -1,6 +1,6 @@
 {meta: title Counterfeit Love}
 {meta: artist Johnny Horton}
-{meta: writer Howard Hausey}
+{meta: composer Howard Hausey}
 
 {start_of_verse: Verse 1}
 [C]Your [F]counterfeit [C]love  that you [C][F]falsi-fied

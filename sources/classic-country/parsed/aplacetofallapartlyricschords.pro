@@ -1,6 +1,6 @@
 {meta: title A Place To Fall Apart}
 {meta: artist Merle Haggard}
-{meta: writer Willie Nelson, Merle Haggard, Freddy Powers}
+{meta: composer Willie Nelson, Merle Haggard, Freddy Powers}
 
 {start_of_verse: Verse 1}
 [G]I'll Probably [C]Never See You [G]Eye To Eye [D7]Again

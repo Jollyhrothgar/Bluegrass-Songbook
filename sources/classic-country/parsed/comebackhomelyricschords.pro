@@ -1,6 +1,6 @@
 {meta: title Come Back Home}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen, Dave Kirby, Robb Warren}
+{meta: composer Joe Allen, Dave Kirby, Robb Warren}
 
 {start_of_verse: Verse 1}
 [C]You sure know how to make somebody [F]nothing

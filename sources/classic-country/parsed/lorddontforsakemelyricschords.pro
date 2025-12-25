@@ -1,6 +1,6 @@
 {meta: title Lord Don't Forsake Me}
 {meta: artist Alison Krauss}
-{meta: writer Todd Rakestraw}
+{meta: composer Todd Rakestraw}
 
 {start_of_verse: Verse 1}
 [C]Oh my Lord please don't for[G7]sake me

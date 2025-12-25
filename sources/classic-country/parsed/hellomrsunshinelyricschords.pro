@@ -1,6 +1,6 @@
 {meta: title Hello Mr. Sunshine}
 {meta: artist Tanya Tucker}
-{meta: writer mick stewart and Veto Galati Jr.}
+{meta: composer mick stewart and Veto Galati Jr.}
 
 {start_of_verse: Verse 1}
 [G]Hello Mr. [C]Sunshine so [B7]glad you came my [Em]way

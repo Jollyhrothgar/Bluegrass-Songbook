@@ -1,6 +1,6 @@
 {meta: title Tender Feeling}
 {meta: artist Elvis Presley}
-{meta: writer Bill Giant, Bernie Baum, Florenece Kaye}
+{meta: composer Bill Giant, Bernie Baum, Florenece Kaye}
 
 {start_of_verse: Verse 1}
 [C]I can't conceal  [Am]a tender [C]feeling 

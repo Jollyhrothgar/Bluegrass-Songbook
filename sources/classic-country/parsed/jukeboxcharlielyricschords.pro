@@ -1,6 +1,6 @@
 {meta: title Jukebox Charlie}
 {meta: artist Johnny Paycheck}
-{meta: writer Aubrey Mayhew}
+{meta: composer Aubrey Mayhew}
 
 {start_of_verse: Verse 1}
 [G]Hello Joe  same [C]as [G]usual 

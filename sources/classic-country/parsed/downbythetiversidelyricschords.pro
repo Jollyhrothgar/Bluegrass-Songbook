@@ -1,6 +1,6 @@
 {meta: title Down By The Riverside}
 {meta: artist Clay Walker}
-{meta: writer Kent Blazy, Kim Williams, Clay Walker}
+{meta: composer Kent Blazy, Kim Williams, Clay Walker}
 
 {start_of_verse: Verse 1}
 [G]The wind was [D7]blowing through your [Am]hair 

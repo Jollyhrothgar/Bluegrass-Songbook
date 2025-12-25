@@ -1,6 +1,6 @@
 {meta: title Wherever You Are}
 {meta: artist Mark Chestnut}
-{meta: writer Anthony Jerome Martin, Reese Wilsonand Roger Springer}
+{meta: composer Anthony Jerome Martin, Reese Wilsonand Roger Springer}
 
 {start_of_verse: Verse 1}
 [G]Once in a life time love comes [Am]along

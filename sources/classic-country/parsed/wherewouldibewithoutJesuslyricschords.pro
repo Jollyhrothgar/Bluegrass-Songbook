@@ -1,6 +1,6 @@
 {meta: title Where Would I Be Without Jesus}
 {meta: artist Buck Owens}
-{meta: writer Don Sessions}
+{meta: composer Don Sessions}
 
 {start_of_verse: Verse 1}
 [G]When my burdens get heavy I just [C]kneel down and pray

@@ -1,6 +1,6 @@
 {meta: title Empty Saddles}
 {meta: artist Sons of the Pioneers}
-{meta: writer Billy Hill}
+{meta: composer Billy Hill}
 
 {start_of_verse: Verse 1}
 [Em]There's a something [A7]strange in the old [Em]corral

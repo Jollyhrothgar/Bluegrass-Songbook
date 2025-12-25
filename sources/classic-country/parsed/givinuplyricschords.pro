@@ -1,6 +1,6 @@
 {meta: title Givin' Up}
 {meta: artist Wilburn Brothers}
-{meta: writer Johnny Russell and Vince Finneran}
+{meta: composer Johnny Russell and Vince Finneran}
 
 {start_of_verse: Verse 1}
 [G]At least a thousand times I've tried leavin' 

@@ -1,6 +1,6 @@
 {meta: title Bring It On Home To Me}
 {meta: artist Mickey Gilley}
-{meta: writer Sam Cooke}
+{meta: composer Sam Cooke}
 
 {start_of_verse: Verse 1}
 [G7]If you [C]ever change your [G7]mind

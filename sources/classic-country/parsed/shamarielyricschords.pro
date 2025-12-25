@@ -1,6 +1,6 @@
 {meta: title Sha-Marie}
 {meta: artist Wynn Stewart}
-{meta: writer Bozo Darnell and Ben Hall}
+{meta: composer Bozo Darnell and Ben Hall}
 
 {start_of_verse: Verse 1}
 [C]There are stories about a lady always waiting for her man

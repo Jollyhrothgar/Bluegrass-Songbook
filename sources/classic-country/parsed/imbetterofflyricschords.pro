@@ -1,6 +1,6 @@
 {meta: title I'm Better Off}
 {meta: artist Johnny Paycheck}
-{meta: writer Wendy Bagwell}
+{meta: composer Wendy Bagwell}
 
 {start_of_verse: Verse 1}
 [C]When I was a [F]little boy my [G7]mother used to [C]say

@@ -1,6 +1,6 @@
 {meta: title I'm Dying For Someone To Live For}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Shawn Camp}
+{meta: composer Loretta Lynn and Shawn Camp}
 
 {start_of_verse: Verse 1}
 [C]Loneliness [F]falls all [C]around

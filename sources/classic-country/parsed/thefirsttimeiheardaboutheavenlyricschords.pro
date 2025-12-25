@@ -1,6 +1,6 @@
 {meta: title The First Time I Heard About Heaven}
 {meta: artist The Bluegrass Cardinals}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [D7]The [G]first time I [D7]heard about [G]heaven

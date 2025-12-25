@@ -1,6 +1,6 @@
 {meta: title Journey to My Savior's Side}
 {meta: artist The Bluegrass Cardinals}
-{meta: writer Tom Lee and Randy Graham}
+{meta: composer Tom Lee and Randy Graham}
 
 {start_of_verse: Verse 1}
 [G]Life is so short the way is rough

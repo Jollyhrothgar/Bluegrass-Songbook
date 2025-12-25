@@ -1,6 +1,6 @@
 {meta: title Feed It A Memory}
 {meta: artist Willie Nelson}
-{meta: writer Hank Cochran and Justin Tubb}
+{meta: composer Hank Cochran and Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]They said that my [F]heart wouldn't [C]have long to live

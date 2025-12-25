@@ -1,6 +1,6 @@
 {meta: title Another Tear}
 {meta: artist Rhonda Vincent}
-{meta: writer Irl Hees}
+{meta: composer Irl Hees}
 
 {start_of_verse: Verse 1}
 [C]Another tear somewhere there is [F]falling

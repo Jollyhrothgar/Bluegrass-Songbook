@@ -1,6 +1,6 @@
 {meta: title Honey Won’t You Please Come Home}
 {meta: artist Jim Reeves}
-{meta: writer Jim Reeves and Luke McDaniel}
+{meta: composer Jim Reeves and Luke McDaniel}
 
 {start_of_verse: Verse 1}
 [G]My friends all say [D7]what a [G]pity 

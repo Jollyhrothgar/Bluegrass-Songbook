@@ -1,6 +1,6 @@
 {meta: title Jesus Will Save Your Soul}
 {meta: artist Don Reno}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [G]As I go along I'm [C]singing this [G]song

@@ -1,6 +1,6 @@
 {meta: title If Anyone Ought To Know}
 {meta: artist Merle Haggard}
-{meta: writer Bonnie Owens and Merle Haggard}
+{meta: composer Bonnie Owens and Merle Haggard}
 
 {start_of_verse: Verse 1}
 [G]Sittin’ in a road side tavern 

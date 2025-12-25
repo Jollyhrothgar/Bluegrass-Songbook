@@ -1,6 +1,6 @@
 {meta: title From The Manger To The Cross}
 {meta: artist Mac Wiseman}
-{meta: writer Odell McLeod}
+{meta: composer Odell McLeod}
 
 {start_of_verse: Verse 1}
 [G]From the manger [C]to the cross rugged cross of [G]Calvary

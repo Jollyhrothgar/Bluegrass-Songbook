@@ -1,6 +1,6 @@
 {meta: title Don't Squeeze My Sharmon}
 {meta: artist Charlie Walker}
-{meta: writer Carl Belew and Van Givens}
+{meta: composer Carl Belew and Van Givens}
 
 {start_of_verse: Verse 1}
 [C]Did you hear what happened  [C7]last Saturday [F]night

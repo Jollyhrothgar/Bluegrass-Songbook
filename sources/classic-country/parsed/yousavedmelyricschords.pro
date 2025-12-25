@@ -1,6 +1,6 @@
 {meta: title You Saved Me}
 {meta: artist Patty Loveless}
-{meta: writer Curtis Wright}
+{meta: composer Curtis Wright}
 
 {start_of_verse: Verse 1}
 [G]For so long I've [C]been on my [G]own

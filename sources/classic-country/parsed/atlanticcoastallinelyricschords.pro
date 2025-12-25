@@ -1,6 +1,6 @@
 {meta: title Atlantic Coastal Line}
 {meta: artist Charley Pride}
-{meta: writer Mel Tillis and Fred Burch}
+{meta: composer Mel Tillis and Fred Burch}
 
 {start_of_verse: Verse 1}
 [C]Everybody calls [G7]me Bo

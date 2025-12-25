@@ -1,5 +1,5 @@
 {meta: artist Tim McGraw}
-{meta: writer Aaron M. Sain and Jimmy F. Highland}
+{meta: composer Aaron M. Sain and Jimmy F. Highland}
 
 {start_of_verse: Verse 1}
 [C]Dear Santa I'm a grown man now

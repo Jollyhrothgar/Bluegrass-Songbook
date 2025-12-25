@@ -1,6 +1,6 @@
 {meta: title I've Got It Made}
 {meta: artist John Anderson}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]A high dollar woman in a [F]low cut dress

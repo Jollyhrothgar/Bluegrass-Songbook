@@ -1,6 +1,6 @@
 {meta: title 19 Years And 1800 Miles}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [G]Hello Faye I'm [C]glad you called I [D7]know it's been a [G]long while

@@ -1,6 +1,6 @@
 {meta: title One Sided Conversations}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [G]If I must live alone I'd [C]rather do it by my[G]self [C]  [G]  [C]

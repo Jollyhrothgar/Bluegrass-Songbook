@@ -1,6 +1,6 @@
 {meta: title Over And Over Again}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]Over and over I've [C]said that we’re all through

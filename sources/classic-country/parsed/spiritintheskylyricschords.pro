@@ -1,6 +1,6 @@
 {meta: title Spirit In The Sky}
 {meta: artist The Bellamy Brothers}
-{meta: writer Norman Greenbaum}
+{meta: composer Norman Greenbaum}
 
 {start_of_verse: Verse 1}
 [G]When I die and they lay me to rest

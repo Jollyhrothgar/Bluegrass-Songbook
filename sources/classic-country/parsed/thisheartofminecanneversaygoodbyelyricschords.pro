@@ -1,6 +1,6 @@
 {meta: title This Heart Of Mine Can Never Say Goodbye}
 {meta: artist The Osborne Brothers}
-{meta: writer Sonny Osborne and Pete Goble}
+{meta: composer Sonny Osborne and Pete Goble}
 
 {start_of_verse: Verse 1}
 [G]My lips will say goodbye to you tomorrow

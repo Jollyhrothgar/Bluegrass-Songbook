@@ -1,6 +1,6 @@
 {meta: title Fools Hall Of Fame}
 {meta: artist Johnny Cash}
-{meta: writer Danny Wolfe}
+{meta: composer Danny Wolfe}
 
 {start_of_verse: Verse 1}
 [C]Well if I live to be a hundred

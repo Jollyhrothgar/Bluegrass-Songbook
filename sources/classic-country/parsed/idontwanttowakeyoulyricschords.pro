@@ -1,6 +1,6 @@
 {meta: title I Don't Want to Wake You}
 {meta: artist Lee Greenwood}
-{meta: writer Peter McCann and Wayland Holyfield}
+{meta: composer Peter McCann and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [G]While you're lying asleep you're painting a picture

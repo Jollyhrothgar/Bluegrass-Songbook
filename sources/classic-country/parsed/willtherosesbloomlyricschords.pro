@@ -1,6 +1,6 @@
 {meta: title Will The Roses Bloom}
 {meta: artist Ricky Skaggs}
-{meta: writer J. and I. Bevins}
+{meta: composer J. and I. Bevins}
 
 {start_of_verse: Verse 1}
 [C]Will the roses bloom where she lies [F]sleeping

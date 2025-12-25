@@ -1,6 +1,6 @@
 {meta: title All Of A Sudden}
 {meta: artist Wynn Stewart}
-{meta: writer Gene Price}
+{meta: composer Gene Price}
 
 {start_of_verse: Verse 1}
 [C]For a while I was happy for a while I had you

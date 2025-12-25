@@ -1,6 +1,6 @@
 {meta: title Mistakes}
 {meta: artist Billy Walker}
-{meta: writer Kay Arnold and Kendall Hayes}
+{meta: composer Kay Arnold and Kendall Hayes}
 
 {start_of_verse: Verse 1}
 [C]I remember when I was the [F]world's richest [C]man

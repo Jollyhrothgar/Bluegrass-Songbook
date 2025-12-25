@@ -1,6 +1,6 @@
 {meta: title Brother Do You Take Time To Pray}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Truman A. Keeney, Rusty Harp, Jimmy Dickens}
+{meta: composer Truman A. Keeney, Rusty Harp, Jimmy Dickens}
 
 {start_of_verse: Verse 1}
 [G]There's a land in the east there's a [C]land in the west

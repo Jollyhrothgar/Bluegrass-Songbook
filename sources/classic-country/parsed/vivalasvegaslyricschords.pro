@@ -1,6 +1,6 @@
 {meta: title Viva Las Vegas}
 {meta: artist Elvis Presley}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [G]Bright light city gonna set my soul

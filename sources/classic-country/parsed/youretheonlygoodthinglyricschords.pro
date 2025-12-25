@@ -1,6 +1,6 @@
 {meta: title You're the Only Good Thing}
 {meta: artist Jim Reeves}
-{meta: writer Jack Toombs and Chuck Gregory}
+{meta: composer Jack Toombs and Chuck Gregory}
 
 {start_of_verse: Verse 1}
 [G]Are you thinking that I wasn't meant for [D7]you

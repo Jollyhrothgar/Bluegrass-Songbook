@@ -1,6 +1,6 @@
 {meta: title Mr. Heartache}
 {meta: artist Billy Walker}
-{meta: writer James Van Heusen}
+{meta: composer James Van Heusen}
 
 {start_of_verse: Verse 1}
 [C]I don’t know why I love you or [F]why I feel this way

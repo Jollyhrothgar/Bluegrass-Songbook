@@ -1,6 +1,6 @@
 {meta: title Old Time Rock and Roll}
 {meta: artist Bob Seger}
-{meta: writer George Jackson and Tom Jones}
+{meta: composer George Jackson and Tom Jones}
 
 {start_of_verse: Verse 1}
 [C]Just take those old records off the shelf

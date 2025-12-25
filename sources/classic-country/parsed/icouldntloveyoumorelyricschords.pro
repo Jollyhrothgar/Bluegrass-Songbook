@@ -1,6 +1,6 @@
 {meta: title I Couldn't Love You More}
 {meta: artist Vern Gosdin}
-{meta: writer Rex Gosdin}
+{meta: composer Rex Gosdin}
 
 {start_of_verse: Verse 1}
 [C]If you would always love me the [F]way you love me now

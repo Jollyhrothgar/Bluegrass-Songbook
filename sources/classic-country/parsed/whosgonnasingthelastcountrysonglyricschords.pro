@@ -1,6 +1,6 @@
 {meta: title Who's Gonna Sing The Last Country Song}
 {meta: artist Billy Parker}
-{meta: writer William Calhoun Brock Jr.}
+{meta: composer William Calhoun Brock Jr.}
 
 {start_of_verse: Verse 1}
 [C]When the final dive and [F]smokey bar goes [C]home

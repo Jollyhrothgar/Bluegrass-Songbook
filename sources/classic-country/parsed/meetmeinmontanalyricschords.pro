@@ -1,6 +1,6 @@
 {meta: title Meet Me In Montana}
 {meta: artist Dan Seals}
-{meta: writer Paul Davis}
+{meta: composer Paul Davis}
 
 {start_of_verse: Verse 1}
 [C]Wrote my whole life down in a notebook songs about you and me

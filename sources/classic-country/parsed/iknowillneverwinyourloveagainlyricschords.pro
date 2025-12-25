@@ -1,6 +1,6 @@
 {meta: title I Know I'll Never Win Your Love Again}
 {meta: artist Ray Price}
-{meta: writer Bobby Helms and Ray Price}
+{meta: composer Bobby Helms and Ray Price}
 
 {start_of_verse: Verse 1}
 [C]Day and night I [C7]worry over [F]you

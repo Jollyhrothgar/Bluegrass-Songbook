@@ -1,6 +1,6 @@
 {meta: title Memories Of Us}
 {meta: artist George Jones}
-{meta: writer Dave Kirby and Glenn Martin}
+{meta: composer Dave Kirby and Glenn Martin}
 
 {start_of_verse: Verse 1}
 [G]The old man [D7]who sold his [G]apples [C]isn't there [A7]anymore

@@ -1,6 +1,6 @@
 {meta: title Did I Turn Down A Better Deal}
 {meta: artist Jean Shepard}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]When I met you long ago there were [C]things I didn't [G]know

@@ -1,6 +1,6 @@
 {meta: title Barstool Mountain}
 {meta: artist Moe Bandy}
-{meta: writer Wayne Carson, Donn Tankersley}
+{meta: composer Wayne Carson, Donn Tankersley}
 
 {start_of_verse: Verse 1}
 [G]I've finally found a place where I can take [Am]it

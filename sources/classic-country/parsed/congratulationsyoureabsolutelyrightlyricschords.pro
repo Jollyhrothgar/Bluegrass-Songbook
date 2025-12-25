@@ -1,6 +1,6 @@
 {meta: title Congratulations (You're Absolutely Right)}
 {meta: artist Tony Booth}
-{meta: writer Buck Owens and Don Rich}
+{meta: composer Buck Owens and Don Rich}
 
 {start_of_verse: Verse 1}
 [C]If you see me walking round in circles

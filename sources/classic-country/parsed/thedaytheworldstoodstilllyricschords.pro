@@ -1,6 +1,6 @@
 {meta: title The Day The World Stood Still}
 {meta: artist Jack Greene}
-{meta: writer Bill Rice and Jerry Foster}
+{meta: composer Bill Rice and Jerry Foster}
 
 {start_of_verse: Verse 1}
 [C]One day you [F]came along and [C]spoke so [G7]tenderly

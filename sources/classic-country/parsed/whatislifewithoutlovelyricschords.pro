@@ -1,6 +1,6 @@
 {meta: title What Is Life Without Love}
 {meta: artist Eddy Arnold}
-{meta: writer Eddy Arnold, Vic McAlpin, Owen Bradley}
+{meta: composer Eddy Arnold, Vic McAlpin, Owen Bradley}
 
 {start_of_verse: Verse 1}
 [C]What is life without love

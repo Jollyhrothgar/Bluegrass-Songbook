@@ -1,6 +1,6 @@
 {meta: title When He Reached Down His Hand For Me}
 {meta: artist Johnny Cash}
-{meta: writer G.E. Wright[3/4 time]}
+{meta: composer G.E. Wright[3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]Once my soul was astray from the [G7]heavenly [C]way 

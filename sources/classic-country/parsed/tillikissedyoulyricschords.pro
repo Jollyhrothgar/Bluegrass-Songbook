@@ -1,6 +1,6 @@
 {meta: title Till I Kissed You}
 {meta: artist Everly Brothers}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [G]Never [Em]felt like this until I kissed [G]ya 

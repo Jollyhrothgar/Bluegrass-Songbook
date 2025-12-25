@@ -1,6 +1,6 @@
 {meta: title Christmas Time On Rocky Top}
 {meta: artist The Osborne Brothers}
-{meta: writer Ronny Scaife and Scott Rouse}
+{meta: composer Ronny Scaife and Scott Rouse}
 
 {start_of_verse: Verse 1}
 [G]When it's Christmas time way [C]down on [G]Rocky Top

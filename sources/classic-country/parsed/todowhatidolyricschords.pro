@@ -1,6 +1,6 @@
 {meta: title To Do What I Do}
 {meta: artist Alan Jackson}
-{meta: writer Tim Johnson}
+{meta: composer Tim Johnson}
 
 {start_of_verse: Verse 1}
 [G]I've been a waiter a [C]roofer a clerk

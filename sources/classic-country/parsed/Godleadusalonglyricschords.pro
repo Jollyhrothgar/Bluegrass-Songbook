@@ -1,6 +1,6 @@
 {meta: title God Lead Us Along}
 {meta: artist The Forbes Family}
-{meta: writer George A. Young}
+{meta: composer George A. Young}
 
 {start_of_verse: Verse 1}
 [C]In shady green [G7]pastures so [Am]rich and so [C]sweet

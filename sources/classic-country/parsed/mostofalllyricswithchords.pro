@@ -1,6 +1,6 @@
 {meta: title Most Of All}
 {meta: artist George Morgan}
-{meta: writer Red Taylor}
+{meta: composer Red Taylor}
 
 {start_of_verse: Verse 1}
 [C]Most [G7]of [C]all I wanna [G7]love [C]you

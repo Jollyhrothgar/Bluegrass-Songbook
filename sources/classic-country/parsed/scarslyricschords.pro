@@ -1,6 +1,6 @@
 {meta: title Scars}
 {meta: artist Sonny James}
-{meta: writer Jim Jones and Sonny James}
+{meta: composer Jim Jones and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]The tears I cry each [Dm]night 

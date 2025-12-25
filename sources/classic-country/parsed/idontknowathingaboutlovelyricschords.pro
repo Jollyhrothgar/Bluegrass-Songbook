@@ -1,6 +1,6 @@
 {meta: title I Don't Know A Thing About Love}
 {meta: artist Conway Twitty}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]I talked to the man in the [Am]moon

@@ -1,6 +1,6 @@
 {meta: title If I'm A Fool For Leaving}
 {meta: artist Gene Watson}
-{meta: writer Little Jimmy Dickens & Skip Graves}
+{meta: composer Little Jimmy Dickens & Skip Graves}
 
 {start_of_verse: Verse 1}
 [C]This morning I am leaving  I've [F]been up all night [C]long

@@ -1,6 +1,6 @@
 {meta: title Put Your Arms Around Her}
 {meta: artist Norma Jean}
-{meta: writer Bob Morris}
+{meta: composer Bob Morris}
 
 {start_of_verse: Verse 1}
 [G]Put your arms [C]around her [D7]that's where your [G]love is

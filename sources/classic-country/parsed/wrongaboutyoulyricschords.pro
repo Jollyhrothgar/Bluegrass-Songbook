@@ -1,6 +1,6 @@
 {meta: title Wrong About You}
 {meta: artist Garth Brooks}
-{meta: writer Bill Shore and Bud Lee}
+{meta: composer Bill Shore and Bud Lee}
 
 {start_of_verse: Verse 1}
 [C]You were [G7]right about me being [Am]lonely without you

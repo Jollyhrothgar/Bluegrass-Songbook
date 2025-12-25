@@ -1,6 +1,6 @@
 {meta: title My Greatest Weakness}
 {meta: artist Bobby Helms}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [C]You're my [F]weakness my greatest [C]weakness

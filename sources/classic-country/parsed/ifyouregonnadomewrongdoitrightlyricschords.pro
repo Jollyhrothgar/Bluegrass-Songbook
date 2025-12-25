@@ -1,6 +1,6 @@
 {meta: title If You're Gonna Do Me Wrong Do It Right}
 {meta: artist Vern Gosdin}
-{meta: writer Vern Gosdin Max D. Barnes}
+{meta: composer Vern Gosdin Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [G]There's a closet full of dresses that I bought [Am]you

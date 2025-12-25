@@ -1,6 +1,6 @@
 {meta: title Your Wanting Me Is Gone}
 {meta: artist Vernon Oxford}
-{meta: writer J.R. Cochran}
+{meta: composer J.R. Cochran}
 
 {start_of_verse: Verse 1}
 [G]You used to say you [C]loved me every [G]morning

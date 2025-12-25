@@ -1,6 +1,6 @@
 {meta: title I Walk Alone}
 {meta: artist Marty Robbins}
-{meta: writer Herbert W. Wilson}
+{meta: composer Herbert W. Wilson}
 
 {start_of_verse: Verse 1}
 [C]I walk alone  where once we [F]wandered

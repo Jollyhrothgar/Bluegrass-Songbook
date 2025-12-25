@@ -1,6 +1,6 @@
 {meta: title All Aboard}
 {meta: artist Del McCoury}
-{meta: writer Eugene Patrick Ellsworth,}
+{meta: composer Eugene Patrick Ellsworth,}
 
 {start_of_verse: Verse 1}
 [Em]I can feel the wheels turning underneath my [Dm]feet

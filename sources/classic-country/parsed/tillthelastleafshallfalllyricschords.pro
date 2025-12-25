@@ -1,6 +1,6 @@
 {meta: title Till The Last Leaf Shall Fall}
 {meta: artist Sonny James}
-{meta: writer Jack Rhodes and Sonny James}
+{meta: composer Jack Rhodes and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]Well my life is in Thy [G7]hands oh [C]Lord 

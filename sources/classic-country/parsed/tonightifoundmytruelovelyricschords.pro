@@ -1,6 +1,6 @@
 {meta: title Tonight I Found My True Love}
 {meta: artist Sonny James}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]Tonight I found my true love

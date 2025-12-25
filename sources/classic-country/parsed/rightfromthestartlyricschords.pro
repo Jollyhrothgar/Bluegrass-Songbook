@@ -1,6 +1,6 @@
 {meta: title Right From The Start}
 {meta: artist Earl Thomas Conley}
-{meta: writer Billy Herzig and Randy Watkins}
+{meta: composer Billy Herzig and Randy Watkins}
 
 {start_of_verse: Verse 1}
 [G]The first time that I [Am]met you I was [G]sure as sure it could [Am]be

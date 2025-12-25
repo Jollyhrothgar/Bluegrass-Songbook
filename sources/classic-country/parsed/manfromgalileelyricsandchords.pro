@@ -1,6 +1,6 @@
 {meta: title Man From Galilee}
 {meta: artist Connie Smith}
-{meta: writer Chris Holloway}
+{meta: composer Chris Holloway}
 
 {start_of_verse: Verse 1}
 [G]It was Christmas Eve in a [C]little Texas [G]town

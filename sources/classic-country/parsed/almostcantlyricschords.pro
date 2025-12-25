@@ -1,6 +1,6 @@
 {meta: title Almost Can't}
 {meta: artist Roy Drusky}
-{meta: writer Vic McAlpin and Roy Drusky}
+{meta: composer Vic McAlpin and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [G]I keep hopin' in another I'll find [C]you again

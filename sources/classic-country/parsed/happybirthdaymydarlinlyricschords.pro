@@ -1,6 +1,6 @@
 {meta: title Happy Birthday My Darlin'}
 {meta: artist Carl Smith}
-{meta: writer Bob Gallion and Curtis Gordon}
+{meta: composer Bob Gallion and Curtis Gordon}
 
 {start_of_verse: Verse 1}
 [G]Happy birthday my darling and many many [D7]more

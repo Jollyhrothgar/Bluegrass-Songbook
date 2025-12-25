@@ -1,6 +1,6 @@
 {meta: title So Round So Firm So Fully Packed}
 {meta: artist Ernest Tubb}
-{meta: writer Merle Travis, Cliffie Stone, Eddie Kirk}
+{meta: composer Merle Travis, Cliffie Stone, Eddie Kirk}
 
 {start_of_verse: Verse 1}
 [C]So round so firm so fully packed [D7]that's my gal

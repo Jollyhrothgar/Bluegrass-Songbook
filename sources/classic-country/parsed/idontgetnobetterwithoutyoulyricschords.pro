@@ -1,6 +1,6 @@
 {meta: title I Don't Get No Better Without You}
 {meta: artist Cal Smith}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I just don't understand why things keep hanging on

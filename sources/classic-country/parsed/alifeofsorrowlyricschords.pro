@@ -1,6 +1,6 @@
 {meta: title A Life Of Sorrow}
 {meta: artist Ralph Stanley}
-{meta: writer Carter Stanley and Ralph Stanley}
+{meta: composer Carter Stanley and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [C]After traveling through this world of [F]sorrow

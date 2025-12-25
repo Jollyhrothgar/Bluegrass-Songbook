@@ -1,6 +1,6 @@
 {meta: title You're Welcome Anytime}
 {meta: artist Buck Owens}
-{meta: writer Buddy Mize and Ray Sanders}
+{meta: composer Buddy Mize and Ray Sanders}
 
 {start_of_verse: Verse 1}
 [G]Back in my arms again back in my dreams [C]again

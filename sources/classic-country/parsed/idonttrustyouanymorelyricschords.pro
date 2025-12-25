@@ -1,6 +1,6 @@
 {meta: title I Don't Trust You Anymore}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Abe Mulkey}
+{meta: composer Lefty Frizzell and Abe Mulkey}
 
 {start_of_verse: Verse 1}
 [C]I don't [G7]trust you any[C]more

@@ -1,6 +1,6 @@
 {meta: title Every Day Will Be Sunday Bye And Bye}
 {meta: artist Statler Brother}
-{meta: writer Bob Miller}
+{meta: composer Bob Miller}
 
 {start_of_verse: Verse 1}
 [C]Oh bye and bye (bye and bye) bye and bye (bye and bye) 

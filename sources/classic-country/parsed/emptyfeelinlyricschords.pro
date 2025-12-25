@@ -1,6 +1,6 @@
 {meta: title Empty Feelin'}
 {meta: artist Johnny Tillotson}
-{meta: writer Paul Tannen and Paul Hart}
+{meta: composer Paul Tannen and Paul Hart}
 
 {start_of_verse: Verse 1}
 [C]Dom dom [F]doo doowa [C]dom dom [G7]doo doowa 

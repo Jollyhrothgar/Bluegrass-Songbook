@@ -1,6 +1,6 @@
 {meta: title Unfaithful One}
 {meta: artist Ernest Tubb}
-{meta: writer J.M. Lyne}
+{meta: composer J.M. Lyne}
 
 {start_of_verse: Verse 1}
 [C]Unfaithful one  your tears [F]are [C]falling

@@ -1,6 +1,6 @@
 {meta: title Another Tomorrow}
 {meta: artist Slim Whitman}
-{meta: writer Biff Collie}
+{meta: composer Biff Collie}
 
 {start_of_verse: Verse 1}
 [C]Another to[F]mor[C]row I know I must [G7]face

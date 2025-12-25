@@ -1,6 +1,6 @@
 {meta: title Wishing}
 {meta: artist Buddy Holly}
-{meta: writer Bob Montgomery and Buddy Holly}
+{meta: composer Bob Montgomery and Buddy Holly}
 
 {start_of_verse: Verse 1}
 [F]Wish[C]ing  [Am]that I could see you [F]every [G7]day

@@ -1,6 +1,6 @@
 {meta: title What We Used To Hang On To Is Gone}
 {meta: artist Hank Williams Jr.}
-{meta: writer Kent Westberry and Scott Turner}
+{meta: composer Kent Westberry and Scott Turner}
 
 {start_of_verse: Verse 1}
 [C]We might as well [G7]throw in the towel [C]and call it quits

@@ -1,6 +1,6 @@
 {meta: title I See It Now}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone, Paul Nelson, Woody Lee}
+{meta: composer Larry Boone, Paul Nelson, Woody Lee}
 
 {start_of_verse: Verse 1}
 [C]It's good to see your [Em]face again it's [F]been a while

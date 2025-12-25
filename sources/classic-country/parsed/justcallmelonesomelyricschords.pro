@@ -1,6 +1,6 @@
 {meta: title Just Call Me Lonesome}
 {meta: artist Jim Reeves}
-{meta: writer Rex Griffin}
+{meta: composer Rex Griffin}
 
 {start_of_verse: Verse 1}
 [C]I climb the stairs up to my [F]room 

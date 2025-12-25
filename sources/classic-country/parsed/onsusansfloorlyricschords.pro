@@ -1,6 +1,6 @@
 {meta: title On Susan’s Floor}
 {meta: artist Hank Williams Jr.}
-{meta: writer Shel Silverstein and Vincent Matthews}
+{meta: composer Shel Silverstein and Vincent Matthews}
 
 {start_of_verse: Verse 1}
 [C]Like [F]crippled ships that [G7]made it

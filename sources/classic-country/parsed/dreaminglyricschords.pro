@@ -1,6 +1,6 @@
 {meta: title Dreaming}
 {meta: artist Cowboy Copas}
-{meta: writer Lloyd Copas}
+{meta: composer Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [C]Dreaming of the arms that held me oh so [F]tight

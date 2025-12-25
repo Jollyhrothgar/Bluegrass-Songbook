@@ -1,6 +1,6 @@
 {meta: title Now Is The Hour}
 {meta: artist Marty Robbins}
-{meta: writer Maewa Kaihan, Clement Scott, Dorothy Stewart}
+{meta: composer Maewa Kaihan, Clement Scott, Dorothy Stewart}
 
 {start_of_verse: Verse 1}
 [G]N-ow [C]is the [G]hour

@@ -1,6 +1,6 @@
 {meta: title He Keeps Me Singing}
 {meta: artist Slim Whitman}
-{meta: writer Luther B. Bridgers}
+{meta: composer Luther B. Bridgers}
 
 {start_of_verse: Verse 1}
 [G]There's within my heart a [Am]melody

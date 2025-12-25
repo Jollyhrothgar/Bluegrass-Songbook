@@ -1,6 +1,6 @@
 {meta: title I'll Go To A Stranger}
 {meta: artist Ray Price}
-{meta: writer Ray Pennington and Dave Kirby}
+{meta: composer Ray Pennington and Dave Kirby}
 
 {start_of_verse: Verse 1}
 [G7]With someone else perhaps in time

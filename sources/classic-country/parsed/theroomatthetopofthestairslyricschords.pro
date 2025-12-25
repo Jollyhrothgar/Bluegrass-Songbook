@@ -1,6 +1,6 @@
 {meta: title The Room At The Top Of The Stairs}
 {meta: artist Cal Smith}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [C]In the [G]room at the top [D7]of the [G]stairs

@@ -1,6 +1,6 @@
 {meta: title When Life Hits Hard}
 {meta: artist Ricky Skaggs}
-{meta: writer Mark D. Sanders and Steve Seskin}
+{meta: composer Mark D. Sanders and Steve Seskin}
 
 {start_of_verse: Verse 1}
 [C]Life is a [G]mountain of [D7]a [G]journey

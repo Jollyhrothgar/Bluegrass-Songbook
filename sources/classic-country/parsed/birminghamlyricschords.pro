@@ -1,6 +1,6 @@
 {meta: title Birmingham}
 {meta: artist Jack Greene}
-{meta: writer Gary Stewart and Bill Eldridge}
+{meta: composer Gary Stewart and Bill Eldridge}
 
 {start_of_verse: Verse 1}
 [G]Don't let things be the [C]way they were in Birming[G]ham

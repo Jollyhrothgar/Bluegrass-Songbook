@@ -1,6 +1,6 @@
 {meta: title I'm A Long Way From Home}
 {meta: artist Waylon Jennings}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I'm a [F]l-ong way [G7]from home and so [F]all [G7]alone 

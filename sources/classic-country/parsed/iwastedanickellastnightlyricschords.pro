@@ -1,6 +1,6 @@
 {meta: title I Wasted A Nickel Last Night}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Shorty Long and Bob Newman}
+{meta: composer Shorty Long and Bob Newman}
 
 {start_of_verse: Verse 1}
 [G]I put a nickel in the telephone

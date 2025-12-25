@@ -1,6 +1,6 @@
 {meta: title Because Of Him}
 {meta: artist The Oak Ridge Boys}
-{meta: writer J.D. Sumner}
+{meta: composer J.D. Sumner}
 
 {start_of_verse: Verse 1}
 [C]All through this world ([C7]sadly I [F]roam)

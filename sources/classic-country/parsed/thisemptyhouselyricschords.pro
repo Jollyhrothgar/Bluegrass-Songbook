@@ -1,6 +1,6 @@
 {meta: title This Empty House}
 {meta: artist Doug Stone}
-{meta: writer Kim Williams, Ron Harbin, Doug Stone}
+{meta: composer Kim Williams, Ron Harbin, Doug Stone}
 
 {start_of_verse: Verse 1}
 [C]Memories oh memories how they gather around

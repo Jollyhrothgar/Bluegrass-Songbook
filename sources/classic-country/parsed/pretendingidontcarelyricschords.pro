@@ -1,6 +1,6 @@
 {meta: title Pretending I Don’t Care}
 {meta: artist Rhonda Vincent}
-{meta: writer Jimmy Martin and Paul M. Williams}
+{meta: composer Jimmy Martin and Paul M. Williams}
 
 {start_of_verse: Verse 1}
 [G]My days are so [C]lonely my nights are so [G]blue

@@ -1,6 +1,6 @@
 {meta: title Yes I Understand}
 {meta: artist Patsy Cline}
-{meta: writer C.C. Beam, C.L. Jiles, W.S. Stevenson}
+{meta: composer C.C. Beam, C.L. Jiles, W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [G]Yes I understand that [D7]I'm to set you [G]free

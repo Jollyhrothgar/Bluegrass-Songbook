@@ -1,6 +1,6 @@
 {meta: title You Can Never Stop Me Loving You}
 {meta: artist The Wilburn Brothers}
-{meta: writer Ian Samwell and Jean Slate}
+{meta: composer Ian Samwell and Jean Slate}
 
 {start_of_verse: Verse 1}
 [C]You can never stop me [G7]loving you

@@ -1,6 +1,6 @@
 {meta: title If You Still Want A Fool Around}
 {meta: artist Charley Pride}
-{meta: writer Kent M. Robbins}
+{meta: composer Kent M. Robbins}
 
 {start_of_verse: Verse 1}
 [C]There's a fool moon out tonight I could be with you

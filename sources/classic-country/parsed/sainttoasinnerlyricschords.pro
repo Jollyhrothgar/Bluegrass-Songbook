@@ -1,6 +1,6 @@
 {meta: title Saint To A Sinner}
 {meta: artist Loretta Lynn}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [C]You put a halo and [F]wings around [C]me

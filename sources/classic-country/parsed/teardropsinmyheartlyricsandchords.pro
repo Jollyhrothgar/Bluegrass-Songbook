@@ -1,6 +1,6 @@
 {meta: title Teardrops in My Heart}
 {meta: artist Sons of the Pioneers}
-{meta: writer Vaughn Horton}
+{meta: composer Vaughn Horton}
 
 {start_of_verse: Verse 1}
 [C]You'll never know [F]I cried  [C]when I found out you'd [G7]lied

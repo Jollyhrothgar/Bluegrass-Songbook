@@ -1,6 +1,6 @@
 {meta: title I Just Had A Bar Of Soap}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Larry Kingston and Pete Drake}
+{meta: composer Larry Kingston and Pete Drake}
 
 {start_of_verse: Verse 1}
 Intro: 

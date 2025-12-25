@@ -1,6 +1,6 @@
 {meta: title It's Just Not That Easy}
 {meta: artist Mel Tillis}
-{meta: writer Buddy Cannon, Gene Dunlap, Billy Williams}
+{meta: composer Buddy Cannon, Gene Dunlap, Billy Williams}
 
 {start_of_verse: Verse 1}
 [C]I thought about leaving and [F]calling long distance

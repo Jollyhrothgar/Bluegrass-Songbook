@@ -1,6 +1,6 @@
 {meta: title I'll Be With You}
 {meta: artist Doyle Lawson}
-{meta: writer Jeff Hooker}
+{meta: composer Jeff Hooker}
 
 {start_of_verse: Verse 1}
 [G7]Far [C]across these high mountains where the [Am]wild geese do fly

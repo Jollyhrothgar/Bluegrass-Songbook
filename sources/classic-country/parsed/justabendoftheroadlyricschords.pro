@@ -1,6 +1,6 @@
 {meta: title Just A Bend Of The Road}
 {meta: artist Ferlin Husky}
-{meta: writer Judy West}
+{meta: composer Judy West}
 
 {start_of_verse: Verse 1}
 [G7](It's just a bend of the [C]road)[G7]

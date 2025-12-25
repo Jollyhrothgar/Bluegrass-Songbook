@@ -1,6 +1,6 @@
 {meta: title Money Can't Buy Happiness}
 {meta: artist Hank Williams Jr.}
-{meta: writer Steve Karliski}
+{meta: composer Steve Karliski}
 
 {start_of_verse: Verse 1}
 [C]Money can't help you to find real happiness you say

@@ -1,6 +1,6 @@
 {meta: title Womanhood}
 {meta: artist Tammy Wynette}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]He said hold on Patricia I only tried to kiss ya 

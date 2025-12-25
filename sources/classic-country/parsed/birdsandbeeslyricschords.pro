@@ -1,6 +1,6 @@
 {meta: title Birds and Bees}
 {meta: artist Fats Domino}
-{meta: writer Antoine Domino and Dave Bartholomew}
+{meta: composer Antoine Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [C]A little bird said to a honeybee

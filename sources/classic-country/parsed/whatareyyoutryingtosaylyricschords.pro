@@ -1,6 +1,6 @@
 {meta: title What Are You Trying To Say}
 {meta: artist Delmore Brothers}
-{meta: writer Johnny Williams, Tom T. Hall, Dixie Hall}
+{meta: composer Johnny Williams, Tom T. Hall, Dixie Hall}
 
 {start_of_verse: Verse 1}
 [G]You tell me you don't like my friends

@@ -1,6 +1,6 @@
 {meta: title I'm Your Private Santa Claus}
 {meta: artist Eddy Arnold}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [G]I’m [D7]your private Santa [G]Claus

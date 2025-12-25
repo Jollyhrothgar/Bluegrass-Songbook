@@ -1,6 +1,6 @@
 {meta: title Jesus Is A Soul Saving Man}
 {meta: artist Jimmie Davis}
-{meta: writer Jimmie Davis and Gordon Terry}
+{meta: composer Jimmie Davis and Gordon Terry}
 
 {start_of_verse: Verse 1}
 [C]Yes my Jesus is a soul saving [F]man

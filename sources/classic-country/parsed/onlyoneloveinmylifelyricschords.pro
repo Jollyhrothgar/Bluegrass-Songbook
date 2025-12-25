@@ -1,6 +1,6 @@
 {meta: title Only One Love In My Life}
 {meta: artist Ronnie Milsap}
-{meta: writer John Bettis and Royal C. Bannon}
+{meta: composer John Bettis and Royal C. Bannon}
 
 {start_of_verse: Verse 1}
 [G7]So many times these few dreams of mine

@@ -1,6 +1,6 @@
 {meta: title You're The Reason God Made Oklahoma}
 {meta: artist David Frizzell & Shelly West}
-{meta: writer Sandy Pinkard, Larry Collins, Boudleaux Bryant and Felice Bryant}
+{meta: composer Sandy Pinkard, Larry Collins, Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]There's a full moon [F]over [C]Tulsa 

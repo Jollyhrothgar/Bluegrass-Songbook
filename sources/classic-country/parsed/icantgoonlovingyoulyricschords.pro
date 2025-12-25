@@ -1,6 +1,6 @@
 {meta: title I Can't Go On Loving You}
 {meta: artist Roy Drusky}
-{meta: writer Hank Mills}
+{meta: composer Hank Mills}
 
 {start_of_verse: Verse 1}
 [G]I thought I could but [C]I can't go on [G]lovin' you

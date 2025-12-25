@@ -1,6 +1,6 @@
 {meta: title Heaven Ain't A Honky Tonk}
 {meta: artist Mickey Gilley}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]Well I was just a boy the first time that [C]I saw Birming[G]ham

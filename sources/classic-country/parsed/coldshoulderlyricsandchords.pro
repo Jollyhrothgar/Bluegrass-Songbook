@@ -1,6 +1,6 @@
 {meta: title Cold Shoulder}
 {meta: artist Garth Brooks}
-{meta: writer Kim Williams, Kent Blazy, Garth Brook}
+{meta: composer Kim Williams, Kent Blazy, Garth Brook}
 
 {start_of_verse: Verse 1}
 [C]There's a fire burning [Am]bright[F] 

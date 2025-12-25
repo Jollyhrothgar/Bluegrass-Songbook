@@ -1,6 +1,6 @@
 {meta: title You'll Always Live Inside Of Me}
 {meta: artist David Allan Coe}
-{meta: writer David A. Coe and Bobby Charles}
+{meta: composer David A. Coe and Bobby Charles}
 
 {start_of_verse: Verse 1}
 [C]You could sail across the [F]water

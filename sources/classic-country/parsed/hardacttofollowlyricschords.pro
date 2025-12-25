@@ -1,6 +1,6 @@
 {meta: title Hard Act To Follow}
 {meta: artist Keith Whitley}
-{meta: writer Gary Nicholson and David Chamberlain}
+{meta: composer Gary Nicholson and David Chamberlain}
 
 {start_of_verse: Verse 1}
 [C]My leading lady is gone 

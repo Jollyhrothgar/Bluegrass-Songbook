@@ -1,6 +1,6 @@
 {meta: title Ozark Mountain Jubilee}
 {meta: artist The Oak Ridge Boys}
-{meta: writer S. Anders and R. Murrah}
+{meta: composer S. Anders and R. Murrah}
 
 {start_of_verse: Verse 1}
 [G]I hear the rooster crowing it's [Em]a frosty [C]morning 

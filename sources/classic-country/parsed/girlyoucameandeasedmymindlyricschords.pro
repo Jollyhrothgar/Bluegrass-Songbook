@@ -1,6 +1,6 @@
 {meta: title Girl You Came And Eased My Mind}
 {meta: artist Tommy Overstreet}
-{meta: writer Charlie Black}
+{meta: composer Charlie Black}
 
 {start_of_verse: Verse 1}
 [C]Girl you came and eased my [D7]mind

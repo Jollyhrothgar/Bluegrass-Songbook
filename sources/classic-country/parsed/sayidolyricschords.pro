@@ -1,6 +1,6 @@
 {meta: title Say I Do}
 {meta: artist Ray Price}
-{meta: writer Ray Hildebrand}
+{meta: composer Ray Hildebrand}
 
 {start_of_verse: Verse 1}
 [C]Many years have come and [Dm]gone

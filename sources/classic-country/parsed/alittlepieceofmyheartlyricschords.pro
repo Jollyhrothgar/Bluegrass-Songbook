@@ -1,6 +1,6 @@
 {meta: title A Little Piece Of My Heart}
 {meta: artist Conway Twitty}
-{meta: writer Otis Blackwell and Winfield Scott}
+{meta: composer Otis Blackwell and Winfield Scott}
 
 {start_of_verse: Verse 1}
 [G]Eve[C]ry [G]time you make me cry 

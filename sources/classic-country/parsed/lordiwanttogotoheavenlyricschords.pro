@@ -1,6 +1,6 @@
 {meta: title Lord I Want To Go To Heaven}
 {meta: artist Doyle Lawson}
-{meta: writer James S. Wetherington}
+{meta: composer James S. Wetherington}
 
 {start_of_verse: Verse 1}
 [C]I've been on [G7]my [C]knees

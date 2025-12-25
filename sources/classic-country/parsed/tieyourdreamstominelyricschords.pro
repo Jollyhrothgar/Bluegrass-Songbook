@@ -1,6 +1,6 @@
 {meta: title Tie Your Dreams to Mine}
 {meta: artist Marty Robbins}
-{meta: writer Tim DuBois, Sam Lorber,}
+{meta: composer Tim DuBois, Sam Lorber,}
 
 {start_of_verse: Verse 1}
 [C]Tie your dreams to mine  see how high [F]we can [C]climb

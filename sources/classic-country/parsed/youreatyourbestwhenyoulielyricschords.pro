@@ -1,6 +1,6 @@
 {meta: title You're At Your Best When You Lie}
 {meta: artist Norma Jean}
-{meta: writer Glenn Martin}
+{meta: composer Glenn Martin}
 
 {start_of_verse: Verse 1}
 [G]Hurt me as [D7]much as you [G]want to

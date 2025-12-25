@@ -1,6 +1,6 @@
 {meta: title Just Across The Rio Grande}
 {meta: artist Reba McEntire}
-{meta: writer Don Cook and Chick Rains}
+{meta: composer Don Cook and Chick Rains}
 
 {start_of_verse: Verse 1}
 [C]The lights of Laredo [Em]dance on the [C]water 

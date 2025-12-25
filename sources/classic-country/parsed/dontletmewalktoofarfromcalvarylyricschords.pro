@@ -1,6 +1,6 @@
 {meta: title Don't Let Me Walk Too Far From Calvary}
 {meta: artist The Rambos}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [G]As long as I can see Him [C]hangin' on a distant [A7]cross

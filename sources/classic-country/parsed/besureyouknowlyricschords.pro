@@ -1,6 +1,6 @@
 {meta: title Be Sure You Know}
 {meta: artist George Morgan}
-{meta: writer Vic Alpin and Jack Toombs}
+{meta: composer Vic Alpin and Jack Toombs}
 
 {start_of_verse: Verse 1}
 [C]Be sure you know your love for me has [G7]died

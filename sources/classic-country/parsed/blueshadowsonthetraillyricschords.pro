@@ -1,6 +1,6 @@
 {meta: title Blue Shadows On The Trail}
 {meta: artist Sons Of Pioneers}
-{meta: writer Eliot Daniel and Johnny Lange}
+{meta: composer Eliot Daniel and Johnny Lange}
 
 {start_of_verse: Verse 1}
 [C]Shades of night are [G7]falling

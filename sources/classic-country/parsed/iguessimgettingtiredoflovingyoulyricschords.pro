@@ -1,6 +1,6 @@
 {meta: title I Guess I'm Getting Tired Of Loving You}
 {meta: artist Darrell McCall}
-{meta: writer Gary Adams}
+{meta: composer Gary Adams}
 
 {start_of_verse: Verse 1}
 [C]My eyes don’t see you any[G7]more

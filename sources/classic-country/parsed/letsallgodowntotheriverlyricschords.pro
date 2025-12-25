@@ -1,6 +1,6 @@
 {meta: title Let's All Go Down to the River}
 {meta: artist Tammy Wynette}
-{meta: writer Earl Montgomery and Sue Richards}
+{meta: composer Earl Montgomery and Sue Richards}
 
 {start_of_verse: Verse 1}
 [C]Let's all go down to the river 

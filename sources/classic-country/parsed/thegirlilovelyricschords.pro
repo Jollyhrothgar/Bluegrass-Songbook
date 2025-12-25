@@ -1,6 +1,6 @@
 {meta: title The Girl I Love}
 {meta: artist Carl Smith}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]The girl I love wears faded [F]cotton [C]dresses

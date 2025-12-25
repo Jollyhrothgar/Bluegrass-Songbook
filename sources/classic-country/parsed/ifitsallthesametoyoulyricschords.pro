@@ -1,6 +1,6 @@
 {meta: title If It's All The Same To You}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]If it's all the same  to [F]you 

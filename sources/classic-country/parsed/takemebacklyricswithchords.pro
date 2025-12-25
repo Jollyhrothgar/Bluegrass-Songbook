@@ -1,6 +1,6 @@
 {meta: title Take Me Back}
 {meta: artist Charly McClain}
-{meta: writer Larry Rogers, Red Williams, Charly McClain}
+{meta: composer Larry Rogers, Red Williams, Charly McClain}
 
 {start_of_verse: Verse 1}
 [C]Lord I'm feeling down 

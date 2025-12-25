@@ -1,6 +1,6 @@
 {meta: title Kin To The Wind}
 {meta: artist Marty Robbins}
-{meta: writer Rita Robbins}
+{meta: composer Rita Robbins}
 
 {start_of_verse: Verse 1}
 [C]Wherever the trail [F]may wind wherever [G7]the mountains [C]climb

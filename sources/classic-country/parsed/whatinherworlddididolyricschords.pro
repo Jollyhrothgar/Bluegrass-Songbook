@@ -1,6 +1,6 @@
 {meta: title What in Her World Did I Do}
 {meta: artist Eddy Arnold}
-{meta: writer Don Wayne and Bobby Fischer}
+{meta: composer Don Wayne and Bobby Fischer}
 
 {start_of_verse: Verse 1}
 [G]Morning sunlight falling softly on her [D7]face

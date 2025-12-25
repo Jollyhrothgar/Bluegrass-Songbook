@@ -1,6 +1,6 @@
 {meta: title Footprints In The Snow}
 {meta: artist Marty Robbins}
-{meta: writer Rupert Jones}
+{meta: composer Rupert Jones}
 
 {start_of_verse: Verse 1}
 [C]Some folks like the summertime when they can walk [F]about

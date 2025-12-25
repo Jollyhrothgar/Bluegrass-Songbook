@@ -1,6 +1,6 @@
 {meta: title The Happiness Of Having You}
 {meta: artist Charley Pride}
-{meta: writer Theodore Clifford Harris}
+{meta: composer Theodore Clifford Harris}
 
 {start_of_verse: Verse 1}
 [C]The sun comes up and throws it's light 

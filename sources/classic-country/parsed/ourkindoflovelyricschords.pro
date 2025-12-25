@@ -1,6 +1,6 @@
 {meta: title Our Kind Of Love}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Shake Russell}
+{meta: composer Clint Black and Shake Russell}
 
 {start_of_verse: Verse 1}
 [C]Long ago with a younger [F]partner 

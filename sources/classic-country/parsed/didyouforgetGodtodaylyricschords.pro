@@ -1,6 +1,6 @@
 {meta: title Did You Forget God Today}
 {meta: artist The Grascals}
-{meta: writer Aubrey Holt}
+{meta: composer Aubrey Holt}
 
 {start_of_verse: Verse 1}
 [C]This morning as [G7]you a[C]woke

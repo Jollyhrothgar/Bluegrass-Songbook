@@ -1,6 +1,6 @@
 {meta: title Walk Softly On This Heart Of Mine}
 {meta: artist Kentucky Headhunters}
-{meta: writer Jake}
+{meta: composer Jake}
 
 {start_of_verse: Verse 1}
 [C]You say your sorry once again dear

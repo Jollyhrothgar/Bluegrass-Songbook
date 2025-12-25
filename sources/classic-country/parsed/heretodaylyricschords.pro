@@ -1,6 +1,6 @@
 {meta: title Here Today}
 {meta: artist Jim Ed Brown}
-{meta: writer Jim Ed Brown, Maxine Brown, Wally Fowler}
+{meta: composer Jim Ed Brown, Maxine Brown, Wally Fowler}
 
 {start_of_verse: Verse 1}
 [C]Here today and gone [F]tomorrow

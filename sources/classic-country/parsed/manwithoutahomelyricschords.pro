@@ -1,6 +1,6 @@
 {meta: title Man Without A Home}
 {meta: artist Stonewall Jackson}
-{meta: writer Carl Perkins and Stonewall Jackson}
+{meta: composer Carl Perkins and Stonewall Jackson}
 
 {start_of_verse: Verse 1}
 [G]I got back in this town today 

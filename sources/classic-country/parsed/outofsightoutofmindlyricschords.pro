@@ -1,6 +1,6 @@
 {meta: title Out Of Sight Out Of Mind}
 {meta: artist Sonny James}
-{meta: writer Marijohn Wilkin and Mary Ingraham}
+{meta: composer Marijohn Wilkin and Mary Ingraham}
 
 {start_of_verse: Verse 1}
 [C]Out of sight out of mind  so the story [G7]goes

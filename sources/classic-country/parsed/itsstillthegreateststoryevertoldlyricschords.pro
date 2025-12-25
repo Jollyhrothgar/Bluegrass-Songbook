@@ -1,6 +1,6 @@
 {meta: title It's Still The Greatest Story Ever Told}
 {meta: artist The Gaithers}
-{meta: writer Gloria Gaither, William Gaither, Jackie Miller}
+{meta: composer Gloria Gaither, William Gaither, Jackie Miller}
 
 {start_of_verse: Verse 1}
 [C]A [G]woman and an [C]angel a [G]promise [D7]and a [G]song

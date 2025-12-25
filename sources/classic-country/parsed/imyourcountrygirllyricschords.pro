@@ -1,6 +1,6 @@
 {meta: title I'm Your Country Girl}
 {meta: artist Dottie West}
-{meta: writer Dottie West and Bill West}
+{meta: composer Dottie West and Bill West}
 
 {start_of_verse: Verse 1}
 [G]You say you find it easy pleasin' your country [D7]girl

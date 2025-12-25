@@ -1,6 +1,6 @@
 {meta: title The Man That Turned My Mama On}
 {meta: artist Tanya Tucker}
-{meta: writer Ed Bruce}
+{meta: composer Ed Bruce}
 
 {start_of_verse: Verse 1}
 [C]I wish I'd known the man a little better that [F]turned my mama [C]on

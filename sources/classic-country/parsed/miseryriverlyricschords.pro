@@ -1,6 +1,6 @@
 {meta: title Misery River}
 {meta: artist Doyle Lawson}
-{meta: writer Glenn Worf}
+{meta: composer Glenn Worf}
 
 {start_of_verse: Verse 1}
 [F]Oh Misery [C]River  [F]won't you take me [C]along

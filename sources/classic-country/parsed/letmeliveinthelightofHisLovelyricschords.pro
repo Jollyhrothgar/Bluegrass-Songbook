@@ -1,6 +1,6 @@
 {meta: title Let Me Live In The Light Of His Love}
 {meta: artist Charley Pride}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]Let Him always walk beside me 

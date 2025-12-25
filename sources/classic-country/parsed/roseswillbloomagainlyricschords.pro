@@ -1,6 +1,6 @@
 {meta: title Roses Will Bloom Again}
 {meta: artist Jeff and Sheri Easter}
-{meta: writer Marcia B. Henry}
+{meta: composer Marcia B. Henry}
 
 {start_of_verse: Verse 1}
 [C]I planted a little [F]rose bush I [G7]tended it with [C]care

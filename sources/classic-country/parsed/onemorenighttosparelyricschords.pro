@@ -1,6 +1,6 @@
 {meta: title One More Night To Spare}
 {meta: artist Vernon Oxford}
-{meta: writer Bob Ferguson}
+{meta: composer Bob Ferguson}
 
 {start_of_verse: Verse 1}
 [G]It's my fault maybe [C]anyhow [G]baby

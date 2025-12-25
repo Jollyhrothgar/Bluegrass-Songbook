@@ -1,6 +1,6 @@
 {meta: title He Will Break Your Heart}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Butler, Curtis Mayfield, Calvin Carter}
+{meta: composer Jerry Butler, Curtis Mayfield, Calvin Carter}
 
 {start_of_verse: Verse 1}
 [G]He don't [Em]love you [G]like I [Em]love you

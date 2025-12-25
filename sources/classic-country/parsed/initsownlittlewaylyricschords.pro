@@ -1,6 +1,6 @@
 {meta: title In Its Own Little Way}
 {meta: artist Dottie West}
-{meta: writer Dottie West and Bill West}
+{meta: composer Dottie West and Bill West}
 
 {start_of_verse: Verse 1}
 [C]In its own little way my heart keeps missing [G7]you

@@ -1,6 +1,6 @@
 {meta: title You Comb Her Hair}
 {meta: artist George Jones}
-{meta: writer Harlan Howard and Hank Cochran}
+{meta: composer Harlan Howard and Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]I know that you're wondering who I dream [C]about

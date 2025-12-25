@@ -1,6 +1,6 @@
 {meta: title All That Keeps Me Goin'}
 {meta: artist Bill Anderson}
-{meta: writer and recorded by Bill Anderson}
+{meta: composer and recorded by Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]A---ll [A#7]that keeps me [C]goin'

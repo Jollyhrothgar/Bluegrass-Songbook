@@ -1,6 +1,6 @@
 {meta: title I'll Just Pretend}
 {meta: artist J.D. Crowe}
-{meta: writer Jessie Mae Martin}
+{meta: composer Jessie Mae Martin}
 
 {start_of_verse: Verse 1}
 [C]You spurned the love I gave you [F]darling

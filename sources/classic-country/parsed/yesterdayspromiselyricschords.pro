@@ -1,6 +1,6 @@
 {meta: title Yesterday's Promise}
 {meta: artist Kitty Wells}
-{meta: writer Wayne Manning}
+{meta: composer Wayne Manning}
 
 {start_of_verse: Verse 1}
 [G]Yesterday's promise got you [C]everything I had

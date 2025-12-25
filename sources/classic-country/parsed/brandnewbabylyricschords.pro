@@ -1,6 +1,6 @@
 {meta: title Brand New Baby}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew}
+{meta: composer Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [G7]I've gotta brand new [C]baby

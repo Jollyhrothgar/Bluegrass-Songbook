@@ -1,6 +1,6 @@
 {meta: title Let Your Love Fall Back On Me}
 {meta: artist John Conlee}
-{meta: writer Howard Lee}
+{meta: composer Howard Lee}
 
 {start_of_verse: Verse 1}
 [G]I hear you've put your happiness

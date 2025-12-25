@@ -1,6 +1,6 @@
 {meta: title Dark As A Dungeon}
 {meta: artist Johnny Cash}
-{meta: writer Merle Travis}
+{meta: composer Merle Travis}
 
 {start_of_verse: Verse 1}
 [C]Come listen you fellows so [F]young and so [G7]fine

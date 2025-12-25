@@ -1,6 +1,6 @@
 {meta: title On The Other Side}
 {meta: artist Johnny Rodriguez}
-{meta: writer Linda Hardgrove}
+{meta: composer Linda Hardgrove}
 
 {start_of_verse: Verse 1}
 [G]Yesterday is gone [C]tomorrow has come

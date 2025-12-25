@@ -1,6 +1,6 @@
 {meta: title Don't Leave Without Taking Your Silver}
 {meta: artist George Jones}
-{meta: writer D. Black}
+{meta: composer D. Black}
 
 {start_of_verse: Verse 1}
 [G]You said I'm taking everything [C]that is [G]mine

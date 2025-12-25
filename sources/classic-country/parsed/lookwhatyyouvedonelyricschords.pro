@@ -1,6 +1,6 @@
 {meta: title Look What You’ve Done}
 {meta: artist Marty Robbins}
-{meta: writer Frank Edward Wilson, Terri Mcfadden, John L. Footman}
+{meta: composer Frank Edward Wilson, Terri Mcfadden, John L. Footman}
 
 {start_of_verse: Verse 1}
 [C]Her eyes are [G7]blue the words are [C]true

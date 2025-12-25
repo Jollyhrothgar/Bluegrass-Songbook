@@ -1,6 +1,6 @@
 {meta: title All My Tears}
 {meta: artist Emmylou Harris}
-{meta: writer Julie Miller}
+{meta: composer Julie Miller}
 
 {start_of_verse: Verse 1}
 [Am]When I go don't cry for me

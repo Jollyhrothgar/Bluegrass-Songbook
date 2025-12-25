@@ -1,6 +1,6 @@
 {meta: title Christmas Angel}
 {meta: artist Bobby Vinton}
-{meta: writer Jack Lloyd and Bobby Vinton}
+{meta: composer Jack Lloyd and Bobby Vinton}
 
 {start_of_verse: Verse 1}
 [C]Angel angel you're my [F]Christmas [G7]angel

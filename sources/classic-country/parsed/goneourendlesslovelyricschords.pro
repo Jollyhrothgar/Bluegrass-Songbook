@@ -1,6 +1,6 @@
 {meta: title Gone Our Endless Love}
 {meta: artist Billy Walker}
-{meta: writer Billy Walker and Darrell Glenn}
+{meta: composer Billy Walker and Darrell Glenn}
 
 {start_of_verse: Verse 1}
 [C]Gone our endless [Am]love ending in [F]tears

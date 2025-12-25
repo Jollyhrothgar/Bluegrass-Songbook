@@ -1,6 +1,6 @@
 {meta: title Gone At Last}
 {meta: artist Johnny Paycheck}
-{meta: writer Paul Simon}
+{meta: composer Paul Simon}
 
 {start_of_verse: Verse 1}
 [G]The night was black the roads were icy snow was [C]fallin' drifts were [G]high

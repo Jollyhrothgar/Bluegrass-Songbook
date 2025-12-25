@@ -1,6 +1,6 @@
 {meta: title All That's Worth Remembering Is You}
 {meta: artist Ronnie Reno}
-{meta: writer Wayne Carson and Ronnie Reno}
+{meta: composer Wayne Carson and Ronnie Reno}
 
 {start_of_verse: Verse 1}
 [G]All that's worth [B7]remembering [C]life and [D7]my memories of [G]you

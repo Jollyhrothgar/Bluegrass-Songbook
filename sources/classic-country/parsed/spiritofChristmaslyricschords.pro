@@ -1,6 +1,6 @@
 {meta: title Spirit Of Christmas}
 {meta: artist Lynn Anderson}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]Oh hear the chimes ringing it's [F]Christmas [Dm]again

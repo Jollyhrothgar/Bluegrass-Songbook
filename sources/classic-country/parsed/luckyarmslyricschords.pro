@@ -1,6 +1,6 @@
 {meta: title Lucky Arms}
 {meta: artist Lefty Frizzell}
-{meta: writer Sanger D. Shafer and Lefty Frizzell}
+{meta: composer Sanger D. Shafer and Lefty Frizzell}
 
 {start_of_verse: Verse 1}
 [G]I can't get no [C]money for my [G]pockets 

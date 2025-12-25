@@ -1,6 +1,6 @@
 {meta: title Where Did We Go Right}
 {meta: artist Johnny Cash}
-{meta: writer Don Schlitz and Dave Loggins}
+{meta: composer Don Schlitz and Dave Loggins}
 
 {start_of_verse: Verse 1}
 [G]In a world where everybody's fallin' apart

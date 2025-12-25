@@ -1,6 +1,6 @@
 {meta: title And So It Goes}
 {meta: artist Don Williams}
-{meta: writer Mike Noble, Don Williams, Tim Williams}
+{meta: composer Mike Noble, Don Williams, Tim Williams}
 
 {start_of_verse: Verse 1}
 [F]I thought we'd [G7]always be [C]together

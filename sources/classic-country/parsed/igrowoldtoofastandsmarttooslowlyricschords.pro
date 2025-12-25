@@ -1,6 +1,6 @@
 {meta: title I Grow Old Too Fast And Smart Too Slow}
 {meta: artist Johnny Paycheck}
-{meta: writer John Raymond Long}
+{meta: composer John Raymond Long}
 
 {start_of_verse: Verse 1}
 [C]Well I grew old too fast and [F]smart way too [C]slow

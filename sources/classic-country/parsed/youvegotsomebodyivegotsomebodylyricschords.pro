@@ -1,6 +1,6 @@
 {meta: title You've Got Somebody I've Got Somebody}
 {meta: artist Vern Gosdin}
-{meta: writer Michael Johnson}
+{meta: composer Michael Johnson}
 
 {start_of_verse: Verse 1}
 [C]Friday night [Am]after the [C]show [F]hotel rooms are [G7]gettin’ [C]small

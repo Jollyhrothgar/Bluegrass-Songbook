@@ -1,6 +1,6 @@
 {meta: title Cowboys Are Common As Sin}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]Just to damn pretty to be [F]in this barroom [C]alone

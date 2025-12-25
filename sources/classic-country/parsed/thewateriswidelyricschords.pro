@@ -1,6 +1,6 @@
 {meta: title The Water Is Wide}
 {meta: artist Rhonda Vincent}
-{meta: writer Jean Paul Cabrieres}
+{meta: composer Jean Paul Cabrieres}
 
 {start_of_verse: Verse 1}
 [C]The water is wide [F]I can't cross [C]o'er

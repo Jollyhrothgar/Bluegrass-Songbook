@@ -1,6 +1,6 @@
 {meta: title Moonland}
 {meta: artist Marty Robbins}
-{meta: writer Jerry Byrd}
+{meta: composer Jerry Byrd}
 
 {start_of_verse: Verse 1}
 [C]Moonland [F]a summer's evening [C]June land

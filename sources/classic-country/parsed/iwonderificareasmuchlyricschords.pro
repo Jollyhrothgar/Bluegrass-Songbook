@@ -1,6 +1,6 @@
 {meta: title I Wonder If I Care As Much}
 {meta: artist the Everly Brothers}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [G]I wonder [D7]if I [G]care as [D7]much

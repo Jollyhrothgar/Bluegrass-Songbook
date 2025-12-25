@@ -1,6 +1,6 @@
 {meta: title Cold Feet}
 {meta: artist Lefty Frizzell}
-{meta: writer Jimmy Dickens and Thelma Blackmon}
+{meta: composer Jimmy Dickens and Thelma Blackmon}
 
 {start_of_verse: Verse 1}
 [C]I met a gal when I was young and yes she won my [G7]heart

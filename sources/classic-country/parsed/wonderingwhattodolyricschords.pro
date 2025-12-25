@@ -1,6 +1,6 @@
 {meta: title Wondering What To Do}
 {meta: artist Eddy Arnold}
-{meta: writer Snooks Homesley and Eddy Arnold}
+{meta: composer Snooks Homesley and Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [C]All I did last night was walk the [F]floor

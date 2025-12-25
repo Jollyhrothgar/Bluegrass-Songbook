@@ -1,6 +1,6 @@
 {meta: title When December Comes Around}
 {meta: artist Doug Stone}
-{meta: writer Randy Boudreaux and Stacey Slate}
+{meta: composer Randy Boudreaux and Stacey Slate}
 
 {start_of_verse: Verse 1}
 [C]The weather man this morning said a [Am]cold front's moving in

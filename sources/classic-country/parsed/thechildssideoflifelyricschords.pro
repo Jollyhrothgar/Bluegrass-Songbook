@@ -1,6 +1,6 @@
 {meta: title The Child's Side Of Life}
 {meta: artist Johnny Horton}
-{meta: writer Joe Nixon and Tommy Thomas}
+{meta: composer Joe Nixon and Tommy Thomas}
 
 {start_of_verse: Verse 1}
 [C]A little boy stood crying in a [F]courtroom

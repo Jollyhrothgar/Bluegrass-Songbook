@@ -1,6 +1,6 @@
 {meta: title Love Please Come Home}
 {meta: artist Don Reno and Red Smiley}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [G]As you read this letter that I write to [F]you

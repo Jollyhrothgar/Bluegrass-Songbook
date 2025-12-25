@@ -1,6 +1,6 @@
 {meta: title A Million Miles From Nowhere}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
-{meta: writer Daryl Pety}
+{meta: composer Daryl Pety}
 
 {start_of_verse: Verse 1}
 [G]A million miles from [Em]nowhere 

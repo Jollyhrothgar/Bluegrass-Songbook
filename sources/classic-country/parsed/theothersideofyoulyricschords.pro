@@ -1,6 +1,6 @@
 {meta: title The Other Side Of You}
 {meta: artist Webb Pierce}
-{meta: writer Audrey Grisham and Leon Miller}
+{meta: composer Audrey Grisham and Leon Miller}
 
 {start_of_verse: Verse 1}
 [C]You used to call me your darling

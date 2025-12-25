@@ -1,6 +1,6 @@
 {meta: title This Bottle In My Hand}
 {meta: artist George Jones}
-{meta: writer David Allen Coe}
+{meta: composer David Allen Coe}
 
 {start_of_verse: Verse 1}
 [G]Last week he spent his whole paycheck on [C]whiskey

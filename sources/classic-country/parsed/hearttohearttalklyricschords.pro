@@ -1,6 +1,6 @@
 {meta: title Heart to Heart Talk}
 {meta: artist Merle Haggard}
-{meta: writer Lee Ross}
+{meta: composer Lee Ross}
 
 {start_of_verse: Verse 1}
 [G]How foolish can you be to be ruled by [C]jealousy

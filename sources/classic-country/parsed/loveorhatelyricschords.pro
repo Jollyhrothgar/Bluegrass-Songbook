@@ -1,6 +1,6 @@
 {meta: title Love Or Hate}
 {meta: artist Kitty Wells}
-{meta: writer Jack Anglin, Jim Anglin, Johnny Wright}
+{meta: composer Jack Anglin, Jim Anglin, Johnny Wright}
 
 {start_of_verse: Verse 1}
 [C]It's no surprise [F]that we are [C]parting

@@ -1,6 +1,6 @@
 {meta: title He Ain't Gone For Good}
 {meta: artist Gene Watson}
-{meta: writer Dirk Johnson and David S. Kraft}
+{meta: composer Dirk Johnson and David S. Kraft}
 
 {start_of_verse: Verse 1}
 [G]Jesus virgin our salvation from the borrowed grave

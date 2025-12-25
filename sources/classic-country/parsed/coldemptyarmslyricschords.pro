@@ -1,6 +1,6 @@
 {meta: title Cold Empty Arms Lyrics Chords}
 {meta: artist Slim Whitman}
-{meta: writer Jerry Crist}
+{meta: composer Jerry Crist}
 
 {start_of_verse: Verse 1}
 [G]I dream each night that you are here

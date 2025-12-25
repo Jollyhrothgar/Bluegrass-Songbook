@@ -1,6 +1,6 @@
 {meta: title Carrying Your Love With Me}
 {meta: artist George Strait}
-{meta: writer Steve Bogard and Jeff Stevens}
+{meta: composer Steve Bogard and Jeff Stevens}
 
 {start_of_verse: Verse 1}
 [D7]Baby all I got is this beat up leather [G]bag

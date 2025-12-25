@@ -1,6 +1,6 @@
 {meta: title Fountain Of Glory}
 {meta: artist Billy Parker}
-{meta: writer Jess R. Hudson}
+{meta: composer Jess R. Hudson}
 
 {start_of_verse: Verse 1}
 [C]Take a [F]drink from the fountain of [C]Glory [F]

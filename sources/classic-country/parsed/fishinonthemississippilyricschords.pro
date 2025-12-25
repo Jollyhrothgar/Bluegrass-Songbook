@@ -1,6 +1,6 @@
 {meta: title Fishin' On The Mississippi}
 {meta: artist Tony Booth}
-{meta: writer Bob Morris}
+{meta: composer Bob Morris}
 
 {start_of_verse: Verse 1}
 [C]Well I'm [F]fishin' in the middle of the [C]Mississippi river

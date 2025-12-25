@@ -1,6 +1,6 @@
 {meta: title From Jerusalem To Jericho}
 {meta: artist Hank Williams Sr.}
-{meta: writer Anna Simpson}
+{meta: composer Anna Simpson}
 
 {start_of_verse: Verse 1}
 [C]From Jerusalem to Jericho along that lonely road

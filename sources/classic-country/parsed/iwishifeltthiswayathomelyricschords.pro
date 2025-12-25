@@ -1,6 +1,6 @@
 {meta: title I Wish I Felt This Way At Home}
 {meta: artist Dolly Parton}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]If I could be with you [C]forever

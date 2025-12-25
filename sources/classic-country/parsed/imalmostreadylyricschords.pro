@@ -1,6 +1,6 @@
 {meta: title I'm Almost Ready}
 {meta: artist Leona Williams}
-{meta: writer Vince Gill}
+{meta: composer Vince Gill}
 
 {start_of_verse: Verse 1}
 [G]I'm [C]almost [G]ready 

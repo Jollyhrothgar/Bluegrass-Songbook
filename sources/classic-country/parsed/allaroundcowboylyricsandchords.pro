@@ -1,6 +1,6 @@
 {meta: title All Around Cowboy}
 {meta: artist Johnny Cash}
-{meta: writer Jack W. Routh and Len Pollard}
+{meta: composer Jack W. Routh and Len Pollard}
 
 {start_of_verse: Verse 1}
 [C]Just a broken down cowboy all [F]down on his [C]luck

@@ -1,6 +1,6 @@
 {meta: title Life Of The Party}
 {meta: artist Cal Smith}
-{meta: writer Jim Owen}
+{meta: composer Jim Owen}
 
 {start_of_verse: Verse 1}
 [C]Here comes old life of the party Charlie he's a [G7]funny funny man

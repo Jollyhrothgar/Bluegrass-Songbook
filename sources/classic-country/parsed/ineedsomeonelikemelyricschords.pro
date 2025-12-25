@@ -1,6 +1,6 @@
 {meta: title I Need Someone Like Me}
 {meta: artist George Strait}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]You're out there somewhere and you're [F]crying

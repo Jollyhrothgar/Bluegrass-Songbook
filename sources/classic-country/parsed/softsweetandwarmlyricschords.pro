@@ -1,6 +1,6 @@
 {meta: title Soft Sweet and Warm}
 {meta: artist David Houston}
-{meta: writer Norro Wilson and Carmol Taylor}
+{meta: composer Norro Wilson and Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [C]Soft are the lips that wake me up in the [G7]mornin'

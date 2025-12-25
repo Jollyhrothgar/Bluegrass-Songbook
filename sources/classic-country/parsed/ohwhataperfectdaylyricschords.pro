@@ -1,6 +1,6 @@
 {meta: title Oh What A Perfect Day}
 {meta: artist George Strait}
-{meta: writer Buddy Brock, Monty Holmes, Jeff Silvey}
+{meta: composer Buddy Brock, Monty Holmes, Jeff Silvey}
 
 {start_of_verse: Verse 1}
 [C]I woke up this [Em]mornin’  [Am]peeked out my [C]door

@@ -1,6 +1,6 @@
 {meta: title 1929}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Freddy Powers}
+{meta: composer Merle Haggard and Freddy Powers}
 
 {start_of_verse: Verse 1}
 [C]All my life I've [F]heard about [C]hard [F]depression [C]days

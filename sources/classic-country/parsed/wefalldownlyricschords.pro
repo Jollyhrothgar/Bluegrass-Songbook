@@ -1,6 +1,6 @@
 {meta: title We Fall Down}
 {meta: artist Randy Travis}
-{meta: writer Chris Tomlin}
+{meta: composer Chris Tomlin}
 
 {start_of_verse: Verse 1}
 [C]We fall down we [G7]lay our [Am]crown 

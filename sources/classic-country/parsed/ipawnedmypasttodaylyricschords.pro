@@ -1,6 +1,6 @@
 {meta: title I Pawned My Past Today}
 {meta: artist Stonewall Jackson}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]Ten dollars for my wedding band that's all the man would pay

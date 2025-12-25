@@ -1,6 +1,6 @@
 {meta: title Throw Your Hat In First}
 {meta: artist Norma Jean}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [G]Yeah baby I got your letter I knew you're right

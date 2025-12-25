@@ -1,6 +1,6 @@
 {meta: title I’ll Need Someone To Hold Me}
 {meta: artist Don Williams}
-{meta: writer Bob McDill and Wayland Holyfield}
+{meta: composer Bob McDill and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]Your bags are packed and waiting  by  [F]the  [G7][C]door 

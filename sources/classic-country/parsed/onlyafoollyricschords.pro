@@ -1,6 +1,6 @@
 {meta: title Only A Fool}
 {meta: artist Dottie West}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]Only a [G]fool could [D7]keep on loving [G]you

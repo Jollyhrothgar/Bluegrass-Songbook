@@ -1,6 +1,6 @@
 {meta: title Texas Fiddle Song}
 {meta: artist Leona Williams}
-{meta: writer Leona Williams and Ron Williams}
+{meta: composer Leona Williams and Ron Williams}
 
 {start_of_verse: Verse 1}
 [G]I get this goin' fever every [C]time I hear a [G]tune

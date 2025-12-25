@@ -1,6 +1,6 @@
 {meta: title The Woman I Need (Honky Tonk Mind)}
 {meta: artist Johnny Horton}
-{meta: writer Eddie Hall, Van Givens, T. Blake, Carl Adams}
+{meta: composer Eddie Hall, Van Givens, T. Blake, Carl Adams}
 
 {start_of_verse: Verse 1}
 [G]Oh the woman I got is [C]sweet [G]indeed

@@ -1,6 +1,6 @@
 {meta: title Getting Back Up}
 {meta: artist Tracy Lawrence}
-{meta: writer Bobby Pinson and Marla Cannon}
+{meta: composer Bobby Pinson and Marla Cannon}
 
 {start_of_verse: Verse 1}
 [G]My heart is spent my pride bent[C] 

@@ -1,6 +1,6 @@
 {meta: title Everything's Found A Home With Me But You}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Your memory knocked up[D7]on my door this [G]morning

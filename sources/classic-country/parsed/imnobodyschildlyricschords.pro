@@ -1,6 +1,6 @@
 {meta: title I’m Nobody’s Child}
 {meta: artist Hank Snow}
-{meta: writer Mel Foree and Cy Coben}
+{meta: composer Mel Foree and Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]I was slowly passing an orphan's home one [F]day

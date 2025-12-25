@@ -1,6 +1,6 @@
 {meta: title Suspicious Minds}
 {meta: artist Elvis Presley}
-{meta: writer Mark James}
+{meta: composer Mark James}
 
 {start_of_verse: Verse 1}
 [G]We’re caught in a trap I can't walk [C]out

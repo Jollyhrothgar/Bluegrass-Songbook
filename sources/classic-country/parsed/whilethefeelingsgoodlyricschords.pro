@@ -1,6 +1,6 @@
 {meta: title While The Feelings Good}
 {meta: artist Kenny Rogers}
-{meta: writer Freddie Hart and Roger Bowling}
+{meta: composer Freddie Hart and Roger Bowling}
 
 {start_of_verse: Verse 1}
 [G]Take your gown out of the closet

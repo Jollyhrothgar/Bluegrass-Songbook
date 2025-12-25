@@ -1,6 +1,6 @@
 {meta: title This Land Is Your Land}
 {meta: artist Wanda Jackson}
-{meta: writer Woody Guthrie}
+{meta: composer Woody Guthrie}
 
 {start_of_verse: Verse 1}
 [C]This land is [F]your land this land is my [C]land

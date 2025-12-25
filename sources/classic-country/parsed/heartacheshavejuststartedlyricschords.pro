@@ -1,6 +1,6 @@
 {meta: title Heartaches Have Just Started}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Don Rich}
+{meta: composer Buck Owens and Don Rich}
 
 {start_of_verse: Verse 1}
 [C]Like a [F]baby goes for candy 

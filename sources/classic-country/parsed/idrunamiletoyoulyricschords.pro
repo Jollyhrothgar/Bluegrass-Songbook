@@ -1,6 +1,6 @@
 {meta: title I'd Run A Mile To You}
 {meta: artist Lynn Anderson}
-{meta: writer Glenn Sutton and Mac Curtis}
+{meta: composer Glenn Sutton and Mac Curtis}
 
 {start_of_verse: Verse 1}
 [C]I don't know exactly [G7]where our love went [C]wrong

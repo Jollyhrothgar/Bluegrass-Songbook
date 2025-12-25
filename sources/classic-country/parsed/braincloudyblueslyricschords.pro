@@ -1,6 +1,6 @@
 {meta: title Brain Cloudy Blues}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills and Tommy Duncan}
+{meta: composer Bob Wills and Tommy Duncan}
 
 {start_of_verse: Verse 1}
 [G]My brain is cloudy my [C]soul is upside [G]down

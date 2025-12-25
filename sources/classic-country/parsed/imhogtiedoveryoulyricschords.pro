@@ -1,6 +1,6 @@
 {meta: title I'm Hogtied Over You}
 {meta: artist Patsy Cline}
-{meta: writer Tennessee Ernie Ford}
+{meta: composer Tennessee Ernie Ford}
 
 {start_of_verse: Verse 1}
 [C]I'm [F]hogtied over you 

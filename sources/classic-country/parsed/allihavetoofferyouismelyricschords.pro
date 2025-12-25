@@ -1,6 +1,6 @@
 {meta: title All I Have to Offer You is Me}
 {meta: artist Charlie Pride}
-{meta: writer Dallas Frazier - Arthur Leo Owens}
+{meta: composer Dallas Frazier - Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G]Before you take another [C]step

@@ -1,6 +1,6 @@
 {meta: title Thirty Links Of Chain}
 {meta: artist Stonewall Jackson}
-{meta: writer Jimmy Lowe and Art Wolpert}
+{meta: composer Jimmy Lowe and Art Wolpert}
 
 {start_of_verse: Verse 1}
 [C]Thirty links of [Am]chain thirty links of [C]chain

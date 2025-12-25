@@ -1,6 +1,6 @@
 {meta: title Billy The Kid}
 {meta: artist Billy Dean}
-{meta: writer Paul Nelson and Billy Dean}
+{meta: composer Paul Nelson and Billy Dean}
 
 {start_of_verse: Verse 1}
 [C]Strapped on my holster low across my hips

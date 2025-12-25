@@ -1,6 +1,6 @@
 {meta: title When I'm Through Fallin' Apart}
 {meta: artist Rhonda Vincent}
-{meta: writer Bob Morrison, Gene Dobbins, Michael Huffman}
+{meta: composer Bob Morrison, Gene Dobbins, Michael Huffman}
 
 {start_of_verse: Verse 1}
 [C]What I need [F]tonight is a [G7]shoulder to [C]cry on

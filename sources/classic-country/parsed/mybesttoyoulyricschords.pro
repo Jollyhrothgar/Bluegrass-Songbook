@@ -1,6 +1,6 @@
 {meta: title My Best To You}
 {meta: artist Slim Whitman}
-{meta: writer Gene Willadsen and Isham Jones}
+{meta: composer Gene Willadsen and Isham Jones}
 
 {start_of_verse: Verse 1}
 [G]My best to you may your [Am]dreams come [D7]true

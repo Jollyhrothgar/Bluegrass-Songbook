@@ -1,6 +1,6 @@
 {meta: title Three Little Pennies}
 {meta: artist Doug Stone}
-{meta: writer Kim Tribble and Tim Bays}
+{meta: composer Kim Tribble and Tim Bays}
 
 {start_of_verse: Verse 1}
 [G]There was an old blind man who [C]stood on the [G]corner down[C]town[G]  [Am]   [D7]

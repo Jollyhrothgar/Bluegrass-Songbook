@@ -1,6 +1,6 @@
 {meta: title Without You To Love}
 {meta: artist Marty Robbins}
-{meta: writer Don Winters}
+{meta: composer Don Winters}
 
 {start_of_verse: Verse 1}
 [C]Without you to [F]love   

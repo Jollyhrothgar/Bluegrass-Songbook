@@ -1,6 +1,6 @@
 {meta: title I Won't Give Up On You}
 {meta: artist Don Williams}
-{meta: writer Britton Joseph Cameron, Jordyn Shellhart, Stacy Jack Sizemore}
+{meta: composer Britton Joseph Cameron, Jordyn Shellhart, Stacy Jack Sizemore}
 
 {start_of_verse: Verse 1}
 [G]I'll be your spring when it [C]feels like [D7]winter

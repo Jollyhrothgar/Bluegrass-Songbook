@@ -1,6 +1,6 @@
 {meta: title I've Given Bout All I Can Take}
 {meta: artist Charly McClain}
-{meta: writer Susanna Clark and Jon Reid}
+{meta: composer Susanna Clark and Jon Reid}
 
 {start_of_verse: Verse 1}
 [G]I burned all the letters that you never wrote

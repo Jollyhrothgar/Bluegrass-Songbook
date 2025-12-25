@@ -1,6 +1,6 @@
 {meta: title I'll Die Trying}
 {meta: artist Wynn Stewart}
-{meta: writer Dale Noe}
+{meta: composer Dale Noe}
 
 {start_of_verse: Verse 1}
 [G]The job that stands before me won't be [D7]easy

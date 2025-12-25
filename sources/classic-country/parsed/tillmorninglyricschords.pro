@@ -1,6 +1,6 @@
 {meta: title Till Morning}
 {meta: artist Billy Crash Craddock}
-{meta: writer Cathy Carroll and Larry Kusik}
+{meta: composer Cathy Carroll and Larry Kusik}
 
 {start_of_verse: Verse 1}
 [C]Till morning till [F]morning till [C]morning

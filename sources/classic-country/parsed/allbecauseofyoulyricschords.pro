@@ -1,6 +1,6 @@
 {meta: title All Because Of You}
 {meta: artist Carl Belew}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [C]I have what many seek and [D7]fail to find

@@ -1,6 +1,6 @@
 {meta: title It's Raining All Over The World}
 {meta: artist Lefty Frizzell}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]It’s raining all [C7]over the [F]world

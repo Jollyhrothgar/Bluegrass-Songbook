@@ -1,6 +1,6 @@
 {meta: title Come What May}
 {meta: artist Elvis Presley}
-{meta: writer Frank Tableporter}
+{meta: composer Frank Tableporter}
 
 {start_of_verse: Verse 1}
 [G]I am yours and you are mine come what [D7]may

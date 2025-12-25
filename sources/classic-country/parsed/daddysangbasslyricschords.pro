@@ -1,6 +1,6 @@
 {meta: title Daddy Sang Bass}
 {meta: artist Johnny Cash}
-{meta: writer Carl Perkins}
+{meta: composer Carl Perkins}
 
 {start_of_verse: Verse 1}
 [C]I remember when I was a [C7]lad

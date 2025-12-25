@@ -1,6 +1,6 @@
 {meta: title I Always Come Back To Loving You}
 {meta: artist Mel Tillis}
-{meta: writer Jerry House and Billy Burns}
+{meta: composer Jerry House and Billy Burns}
 
 {start_of_verse: Verse 1}
 [G]Ties between us are [C]broken

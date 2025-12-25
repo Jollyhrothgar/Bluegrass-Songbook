@@ -1,6 +1,6 @@
 {meta: title Safe In The Love Of My Man}
 {meta: artist Jean Shepard}
-{meta: writer Martha Sharp}
+{meta: composer Martha Sharp}
 
 {start_of_verse: Verse 1}
 [C]I know a girl who has [G7]a nice [C]apartment

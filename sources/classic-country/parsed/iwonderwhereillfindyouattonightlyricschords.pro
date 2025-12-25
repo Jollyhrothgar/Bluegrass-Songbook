@@ -1,6 +1,6 @@
 {meta: title I Wonder Where I'll Find You At Tonight}
 {meta: artist Leona Williams}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 [G]I wonder if I'll [D7]find you in some [C]honky tonkin' [G]bar

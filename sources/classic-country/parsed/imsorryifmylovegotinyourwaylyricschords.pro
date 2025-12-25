@@ -1,6 +1,6 @@
 {meta: title I’m Sorry If My Love Got In Your Way}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier & Sanger D. Shafer}
+{meta: composer Dallas Frazier & Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]The kindness in your heart is all that kept us [G7]together

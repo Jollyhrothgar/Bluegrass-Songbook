@@ -1,6 +1,6 @@
 {meta: title I Believe In The Man In The Sky}
 {meta: artist Elvis Presley}
-{meta: writer Richard Howard}
+{meta: composer Richard Howard}
 
 {start_of_verse: Verse 1}
 [C]The steps that lead [F]to any church form a [C]stairway to a [G7]star

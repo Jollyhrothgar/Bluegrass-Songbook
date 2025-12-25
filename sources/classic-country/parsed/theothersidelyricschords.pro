@@ -1,6 +1,6 @@
 {meta: title The Other Side}
 {meta: artist Anne Murray}
-{meta: writer Joie Scott and Richard Wold}
+{meta: composer Joie Scott and Richard Wold}
 
 {start_of_verse: Verse 1}
 [C]Through [G]each life time [D7]run rivers to [G]cross[C]

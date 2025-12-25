@@ -1,6 +1,6 @@
 {meta: title Watching A New Love Grow}
 {meta: artist Boxcar Willie}
-{meta: writer Bobby Dwight Caraway and Boxcar Willie}
+{meta: composer Bobby Dwight Caraway and Boxcar Willie}
 
 {start_of_verse: Verse 1}
 [C]Come lay down [F]beside me and [C]help [G7]ease my [C]mind

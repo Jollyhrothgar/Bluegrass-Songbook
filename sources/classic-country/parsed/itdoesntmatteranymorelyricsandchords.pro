@@ -1,6 +1,6 @@
 {meta: title It Doesn't Matter Anymore}
 {meta: artist Buddy Holly}
-{meta: writer Paul Anka}
+{meta: composer Paul Anka}
 
 {start_of_verse: Verse 1}
 [G]There you go and baby here am I

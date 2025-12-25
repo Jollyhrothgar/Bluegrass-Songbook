@@ -1,6 +1,6 @@
 {meta: title I'd Dance Every Dance With You}
 {meta: artist The Kendalls}
-{meta: writer Kevin Stephen Welch and Mark T. Paden}
+{meta: composer Kevin Stephen Welch and Mark T. Paden}
 
 {start_of_verse: Verse 1}
 [C]I’ve been high [F]stepping side stepping two stepping [C]too

@@ -1,6 +1,6 @@
 {meta: title Flowers Speak Louder Than Words}
 {meta: artist Ferlin Husky}
-{meta: writer Terry Preston and Jack Perkins}
+{meta: composer Terry Preston and Jack Perkins}
 
 {start_of_verse: Verse 1}
 [G]Flowers speak [C]louder than [G]words they say

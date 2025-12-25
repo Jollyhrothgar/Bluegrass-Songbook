@@ -1,6 +1,6 @@
 {meta: title Gonna Take A Lot Of River}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Mark Henley and John Kurhajetz}
+{meta: composer Mark Henley and John Kurhajetz}
 
 {start_of_verse: Verse 1}
 [C]I ain't gonna ride no rail or hitchhike down no [G7]highway

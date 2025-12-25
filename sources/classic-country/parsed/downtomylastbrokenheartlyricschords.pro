@@ -1,6 +1,6 @@
 {meta: title Down To My Last Broken Heart}
 {meta: artist Janie Fricke}
-{meta: writer Chick Rains}
+{meta: composer Chick Rains}
 
 {start_of_verse: Verse 1}
 [C]Well I've been down to my [F]last dime down to my last [C]dance    

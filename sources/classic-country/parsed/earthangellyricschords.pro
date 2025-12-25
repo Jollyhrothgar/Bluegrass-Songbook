@@ -1,6 +1,6 @@
 {meta: title Earth Angel}
 {meta: artist Buddy Holly}
-{meta: writer Jessie Belvin and Charlie Williams}
+{meta: composer Jessie Belvin and Charlie Williams}
 
 {start_of_verse: Verse 1}
 [C]Earth angel earth [Am]angel [F]will you [G7]be [C]mine

@@ -1,6 +1,6 @@
 {meta: title Dum Dum}
 {meta: artist Brenda Lee}
-{meta: writer Jackie DeShannon and Sharon Sheeley}
+{meta: composer Jackie DeShannon and Sharon Sheeley}
 
 {start_of_verse: Verse 1}
 [C]A dum dum a [F]diddly dum uh huh [C]huh

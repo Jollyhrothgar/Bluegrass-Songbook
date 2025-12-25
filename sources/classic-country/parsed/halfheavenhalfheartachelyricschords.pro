@@ -1,6 +1,6 @@
 {meta: title Half Heaven Half Heartache}
 {meta: artist Gene Pitney}
-{meta: writer Aaron Schroeder, Wally Gold, George Goehring}
+{meta: composer Aaron Schroeder, Wally Gold, George Goehring}
 
 {start_of_verse: Verse 1}
 [C]My arms reach out for you I kiss you tenderly

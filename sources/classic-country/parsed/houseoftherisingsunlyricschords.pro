@@ -1,6 +1,6 @@
 {meta: title House Of The Rising Sun}
 {meta: artist Conway Twitty}
-{meta: writer Alan Price}
+{meta: composer Alan Price}
 
 {start_of_verse: Verse 1}
 [G]There [Em]is a [G]house in [A7]New [C]Orleans

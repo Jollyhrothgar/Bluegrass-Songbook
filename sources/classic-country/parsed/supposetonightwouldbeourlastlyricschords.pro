@@ -1,6 +1,6 @@
 {meta: title Suppose Tonight Would Be Our Last}
 {meta: artist Melba Montgomery}
-{meta: writer Melba Montgomery and George Jones}
+{meta: composer Melba Montgomery and George Jones}
 
 {start_of_verse: Verse 1}
 [C]Suppose tonight would be our [C7]last night t[F]ogether

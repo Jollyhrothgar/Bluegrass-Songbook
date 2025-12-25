@@ -1,6 +1,6 @@
 {meta: title Stranger In My Arms}
 {meta: artist George Strait}
-{meta: writer Curtis Wayne}
+{meta: composer Curtis Wayne}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]stranger in my [G7]arms tonight

@@ -1,6 +1,6 @@
 {meta: title One Step At A Time}
 {meta: artist George Strait}
-{meta: writer Earl Clark and Luke Reed}
+{meta: composer Earl Clark and Luke Reed}
 
 {start_of_verse: Verse 1}
 [G]I couldn’t help but over hear your conver[C]sation

@@ -1,6 +1,6 @@
 {meta: title I'm Alone Because I Love You}
 {meta: artist Jim Reeves}
-{meta: writer Ira Schuster and Joe Young}
+{meta: composer Ira Schuster and Joe Young}
 
 {start_of_verse: Verse 1}
 [C]I'm alone [F]because I love [D7]you

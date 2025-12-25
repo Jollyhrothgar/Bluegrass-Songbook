@@ -1,6 +1,6 @@
 {meta: title A Far Cry From You}
 {meta: artist Tracy Lawrence}
-{meta: writer Jess Brown, Tony Lane, Robin English}
+{meta: composer Jess Brown, Tony Lane, Robin English}
 
 {start_of_verse: Verse 1}
 [C]I'm on a white line runnin' down the interstate

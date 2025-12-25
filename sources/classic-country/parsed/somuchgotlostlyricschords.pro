@@ -1,6 +1,6 @@
 {meta: title So Much Got Lost}
 {meta: artist Roy Drusky}
-{meta: writer Del Reeves and Elen Reeves}
+{meta: composer Del Reeves and Elen Reeves}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I get to thinking of another [G7]time

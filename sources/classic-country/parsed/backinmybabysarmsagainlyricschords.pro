@@ -1,6 +1,6 @@
 {meta: title Back In My Baby's Arms Again}
 {meta: artist Charlie Walker}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]Honey bees are gonna be hummin' 

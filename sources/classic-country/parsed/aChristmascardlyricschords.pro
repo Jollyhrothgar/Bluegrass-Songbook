@@ -1,6 +1,6 @@
 {meta: title A Christmas Card}
 {meta: artist Doug Stone}
-{meta: writer Mike Dyche}
+{meta: composer Mike Dyche}
 
 {start_of_verse: Verse 1}
 [C]Close your [G7]eyes and [F]listen

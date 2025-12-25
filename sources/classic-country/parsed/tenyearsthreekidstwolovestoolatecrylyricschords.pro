@@ -1,6 +1,6 @@
 {meta: title Ten Years Three Kids Two Loves Too Late}
 {meta: artist Charlie Louvin}
-{meta: writer Roger Murrah and Jim McBride}
+{meta: composer Roger Murrah and Jim McBride}
 
 {start_of_verse: Verse 1}
 [C]You sure have two pretty girls [F]they look a lot like [C]you

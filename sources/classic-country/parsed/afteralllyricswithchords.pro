@@ -1,6 +1,6 @@
 {meta: title After All}
 {meta: artist Wynn Stewart}
-{meta: writer Joe Hulsey}
+{meta: composer Joe Hulsey}
 
 {start_of_verse: Verse 1}
 [C]You’ve got that sweet temptation [G7]in your [C]talk

@@ -1,6 +1,6 @@
 {meta: title What Kind Of A Girl Do You Think I Am}
 {meta: artist Loretta Lynn}
-{meta: writer Teddy Wilburn and Loretta Lynn}
+{meta: composer Teddy Wilburn and Loretta Lynn}
 
 {start_of_verse: Verse 1}
 [G]You want me to prove my love for you

@@ -1,5 +1,5 @@
 {meta: artist John Denver}
-{meta: writer John Denver and Joe Henry}
+{meta: composer John Denver and Joe Henry}
 
 {start_of_verse: Verse 1}
 [C]The season [G7]is up[F]on us [C]now [F]time for [G7]gifts and [C]giving

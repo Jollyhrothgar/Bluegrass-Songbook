@@ -1,6 +1,6 @@
 {meta: title I Sure Hate To See Me Go}
 {meta: artist Cal Smith}
-{meta: writer Conway Twitty and L.E. White}
+{meta: composer Conway Twitty and L.E. White}
 
 {start_of_verse: Verse 1}
 [C]You took my picture [F]off the [C]wall threw my clothes out in [F]the [C]hall

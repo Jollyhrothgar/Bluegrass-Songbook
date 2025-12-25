@@ -1,6 +1,6 @@
 {meta: title Fire In Our Bedroom}
 {meta: artist Vern Gosdin}
-{meta: writer Kenneth Watts, Jody Emerson, Wild Bill Emerson}
+{meta: composer Kenneth Watts, Jody Emerson, Wild Bill Emerson}
 
 {start_of_verse: Verse 1}
 [C]Seems like everybody’s slipping [F]around with someone [C]else

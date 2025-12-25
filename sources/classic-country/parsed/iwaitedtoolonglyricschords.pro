@@ -1,6 +1,6 @@
 {meta: title I Waited Too Long}
 {meta: artist Sonny James}
-{meta: writer Howard Greenfield and Neil Sedaka}
+{meta: composer Howard Greenfield and Neil Sedaka}
 
 {start_of_verse: Verse 1}
 [G7]I waited too long and now we're [C]apart

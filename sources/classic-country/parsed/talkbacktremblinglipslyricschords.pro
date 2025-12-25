@@ -1,6 +1,6 @@
 {meta: title Talk Back Trembling Lips}
 {meta: artist George Jones}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [C]Talk back trembling lips shaky legs don't just stand [G]there

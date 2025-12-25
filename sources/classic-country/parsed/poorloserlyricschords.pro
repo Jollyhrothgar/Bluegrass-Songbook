@@ -1,6 +1,6 @@
 {meta: title Poor Loser}
 {meta: artist Ricky Nelson}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]Why did you have to [G7]take my heart and [C]break it

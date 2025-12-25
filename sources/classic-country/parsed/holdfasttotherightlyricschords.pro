@@ -1,6 +1,6 @@
 {meta: title Hold Fast To The Right}
 {meta: artist The Nashville Bluegrass Band}
-{meta: writer James Vaughan}
+{meta: composer James Vaughan}
 
 {start_of_verse: Verse 1}
 [C]Kneel down by the [F]side of your [C]mother my boy

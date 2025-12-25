@@ -1,6 +1,6 @@
 {meta: title Long As We’re Dreaming}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery}
+{meta: composer Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]Long as we're dreaming life is wonderful

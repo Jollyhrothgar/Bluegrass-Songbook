@@ -1,6 +1,6 @@
 {meta: title No I Don't Believe I Will}
 {meta: artist Carl Smith}
-{meta: writer Jim Denny and Jean Crowe}
+{meta: composer Jim Denny and Jean Crowe}
 
 {start_of_verse: Verse 1}
 [C]Well you cheat me every time I turn my face

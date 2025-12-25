@@ -1,6 +1,6 @@
 {meta: title Georgia Town Blues}
 {meta: artist Mel Tillis}
-{meta: writer Mel Tillis and A. R. Peddy}
+{meta: composer Mel Tillis and A. R. Peddy}
 
 {start_of_verse: Verse 1}
 [G]I got the Georgia town blues I got to thinking of [C]you

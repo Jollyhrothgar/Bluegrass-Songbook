@@ -1,6 +1,6 @@
 {meta: title The Pillow That Whispers}
 {meta: artist Carl Smith}
-{meta: writer Cal Veale}
+{meta: composer Cal Veale}
 
 {start_of_verse: Verse 1}
 [C]The dawn melts the darkness a [F]lonely night [C]ends 

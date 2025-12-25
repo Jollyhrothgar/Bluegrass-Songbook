@@ -1,6 +1,6 @@
 {meta: title Yesterday's Letters}
 {meta: artist Jack Greene}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [C]Fiery kisses linger on two [A7]lips that miss you so

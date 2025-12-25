@@ -1,6 +1,6 @@
 {meta: title Artificial Heart}
 {meta: artist Ricky Skaggs}
-{meta: writer John Hall and Johanna Hall}
+{meta: composer John Hall and Johanna Hall}
 
 {start_of_verse: Verse 1}
 [G]I can see it coming signs appear to me

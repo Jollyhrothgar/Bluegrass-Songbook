@@ -1,6 +1,6 @@
 {meta: title For a Minute There}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]You brushed by me  and [G7]oh you came so near

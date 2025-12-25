@@ -1,6 +1,6 @@
 {meta: title Sing Along}
 {meta: artist Jimmy Dean}
-{meta: writer Robert Allen}
+{meta: composer Robert Allen}
 
 {start_of_verse: Verse 1}
 [G]Da da [Eb]da da da [G]da [D7]da [G]da [D7]

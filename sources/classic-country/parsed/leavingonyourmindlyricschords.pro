@@ -1,6 +1,6 @@
 {meta: title Leaving on Your Mind}
 {meta: artist Patsy Cline}
-{meta: writer Wayne Walker &amp; Webb Pierce}
+{meta: composer Wayne Walker &amp; Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]If you've got leavin' on your [F]mind

@@ -1,6 +1,6 @@
 {meta: title Ground Hawg}
 {meta: artist The Everly Brothers}
-{meta: writer Ike Everly}
+{meta: composer Ike Everly}
 
 {start_of_verse: Verse 1}
 [G]Whet up your knife and whistle up the dog

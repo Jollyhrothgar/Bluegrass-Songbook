@@ -1,6 +1,6 @@
 {meta: title Lonely Christmas Eve}
 {meta: artist Ernest Tubb}
-{meta: writer Bobby Thornton}
+{meta: composer Bobby Thornton}
 
 {start_of_verse: Verse 1}
 [G]Christmas trees white [D7]snow

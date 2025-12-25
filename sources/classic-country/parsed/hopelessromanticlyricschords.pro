@@ -1,6 +1,6 @@
 {meta: title Hopeless Romantic}
 {meta: artist Crystal Gayle}
-{meta: writer Billy Vera}
+{meta: composer Billy Vera}
 
 {start_of_verse: Verse 1}
 [G]Sometimes on Sundays I sit by the TV

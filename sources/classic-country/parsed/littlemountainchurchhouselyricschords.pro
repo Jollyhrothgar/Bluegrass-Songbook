@@ -1,6 +1,6 @@
 {meta: title Little Mountain Church House}
 {meta: artist Ricky Skaggs}
-{meta: writer Carl Jackson}
+{meta: composer Carl Jackson}
 
 {start_of_verse: Verse 1}
 [C]There's a little mountain church in my thoughts of [F]yesterday

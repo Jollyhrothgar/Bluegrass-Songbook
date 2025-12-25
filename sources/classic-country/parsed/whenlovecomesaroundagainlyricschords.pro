@@ -1,6 +1,6 @@
 {meta: title When Love Comes Around Again}
 {meta: artist George Strait}
-{meta: writer Donnie Kees, Jeff Silvey, Monty Holmes}
+{meta: composer Donnie Kees, Jeff Silvey, Monty Holmes}
 
 {start_of_verse: Verse 1}
 [F]There's [C]things you don't know 'til you know

@@ -1,6 +1,6 @@
 {meta: title Santa Don't Pass Me By}
 {meta: artist Freddy Fender}
-{meta: writer Murphy M. Maddux Jr. and Huey Meaux}
+{meta: composer Murphy M. Maddux Jr. and Huey Meaux}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna hitch a ride with old Saint Nick

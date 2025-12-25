@@ -1,6 +1,6 @@
 {meta: title Just Partners}
 {meta: artist Ernest Tubb}
-{meta: writer Rex Griffin}
+{meta: composer Rex Griffin}
 
 {start_of_verse: Verse 1}
 [C]Why not be just partners for a while

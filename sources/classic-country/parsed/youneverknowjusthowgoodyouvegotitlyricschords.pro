@@ -1,6 +1,6 @@
 {meta: title You Never Know Just How Good You've Got It}
 {meta: artist George Jones}
-{meta: writer Mark Nesler}
+{meta: composer Mark Nesler}
 
 {start_of_verse: Verse 1}
 [C]Hey once I was the honky-tonking talk of the town

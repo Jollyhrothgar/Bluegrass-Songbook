@@ -1,6 +1,6 @@
 {meta: title Heavenly}
 {meta: artist Wynn Stewart}
-{meta: writer Chris Roberts, Earl Ball, Steve Stone}
+{meta: composer Chris Roberts, Earl Ball, Steve Stone}
 
 {start_of_verse: Verse 1}
 [C]I didn't think you [F]were [G7]but now I know you [C]are

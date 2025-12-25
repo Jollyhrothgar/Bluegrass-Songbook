@@ -1,6 +1,6 @@
 {meta: title Just Ask Your Heart}
 {meta: artist Sonny James}
-{meta: writer Sonny James and John Skye}
+{meta: composer Sonny James and John Skye}
 
 {start_of_verse: Verse 1}
 [G]Just ask your [D7]heart (darling ask your heart) 

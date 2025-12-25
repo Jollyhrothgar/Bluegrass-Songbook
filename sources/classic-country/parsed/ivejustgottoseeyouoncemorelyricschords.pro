@@ -1,6 +1,6 @@
 {meta: title I've Just Got to See You Once More}
 {meta: artist George Jones}
-{meta: writer Little Jimmy Dickens, Billy Wallace}
+{meta: composer Little Jimmy Dickens, Billy Wallace}
 
 {start_of_verse: Verse 1}
 [G]In the morning paper [C]there's a picture of [G]you

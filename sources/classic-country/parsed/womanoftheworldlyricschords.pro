@@ -1,6 +1,6 @@
 {meta: title Woman Of The World}
 {meta: artist Loretta Lynn}
-{meta: writer Sharon Higgins}
+{meta: composer Sharon Higgins}
 
 {start_of_verse: Verse 1}
 [C]You came from the city streets to my little country [G7]town

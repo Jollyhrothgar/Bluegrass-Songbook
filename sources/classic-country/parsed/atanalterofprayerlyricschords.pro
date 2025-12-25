@@ -1,6 +1,6 @@
 {meta: title At An Altar Of Prayer}
 {meta: artist Jimmie Davis}
-{meta: writer Ike Davis and Ray Heady}
+{meta: composer Ike Davis and Ray Heady}
 
 {start_of_verse: Verse 1}
 [C]Many long years [C7]ago from [F]heaven

@@ -1,6 +1,6 @@
 {meta: title If God Is Dead (Who's This Living In My Soul)}
 {meta: artist Loretta Lynn}
-{meta: writer Lawrence Reynolds}
+{meta: composer Lawrence Reynolds}
 
 {start_of_verse: Verse 1}
 [C]He puts flowers on the hills [F]your cup He gladly fills

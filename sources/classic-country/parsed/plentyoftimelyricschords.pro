@@ -1,6 +1,6 @@
 {meta: title Plenty Of Time}
 {meta: artist Connie Smith}
-{meta: writer Clay McLean}
+{meta: composer Clay McLean}
 
 {start_of_verse: Verse 1}
 [G]I got up on [E7]Sunday morning went [Am]to the church at ten

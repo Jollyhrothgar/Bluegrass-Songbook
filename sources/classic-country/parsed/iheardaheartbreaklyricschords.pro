@@ -1,6 +1,6 @@
 {meta: title I Heard A Heart Break}
 {meta: artist Jim Reeves}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [G]I heard the pitter patter  of a slow winter rain

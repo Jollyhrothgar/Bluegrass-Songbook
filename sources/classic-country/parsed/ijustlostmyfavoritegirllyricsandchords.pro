@@ -1,6 +1,6 @@
 {meta: title I Just Lost My Favorite Girl}
 {meta: artist George Jones}
-{meta: writer Don Adams}
+{meta: composer Don Adams}
 
 {start_of_verse: Verse 1}
 [C]In a barroom I'm [C7]standing with a [F]drink in my [C]hand

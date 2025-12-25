@@ -1,6 +1,6 @@
 {meta: title Stop And Drink}
 {meta: artist George Strait}
-{meta: writer Dale Dodson and Troy Jones}
+{meta: composer Dale Dodson and Troy Jones}
 
 {start_of_verse: Verse 1}
 [G]Weatherman said it's 105

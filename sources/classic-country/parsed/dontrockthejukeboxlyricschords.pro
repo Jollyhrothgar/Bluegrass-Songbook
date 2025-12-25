@@ -1,6 +1,6 @@
 {meta: title Don't Rock The Jukebox}
 {meta: artist Alan Jackson}
-{meta: writer Roger Murrah, Keith Stegall, Alan Jackson}
+{meta: composer Roger Murrah, Keith Stegall, Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]Don't rock the [G]jukebox [C]I wanna hear some [G]Jones

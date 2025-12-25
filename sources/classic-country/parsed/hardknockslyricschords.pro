@@ -1,6 +1,6 @@
 {meta: title Hard Knocks}
 {meta: artist Elvis Presley}
-{meta: writer Joy Byers}
+{meta: composer Joy Byers}
 
 {start_of_verse: Verse 1}
 [C]Some kids born with a silver spoon

@@ -1,6 +1,6 @@
 {meta: title Cry Not For Me}
 {meta: artist Patsy Cline}
-{meta: writer Donn Hecht and Jack Moon}
+{meta: composer Donn Hecht and Jack Moon}
 
 {start_of_verse: Verse 1}
 [D7]Cry not for [Am]me my love [D7]when I am [G]far away[Em]

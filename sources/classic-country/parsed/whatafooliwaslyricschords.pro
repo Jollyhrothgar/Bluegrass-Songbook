@@ -1,6 +1,6 @@
 {meta: title What A Fool I Was}
 {meta: artist Eddy Arnold}
-{meta: writer Stu Davis}
+{meta: composer Stu Davis}
 
 {start_of_verse: Verse 1}
 [C]What a fool I was to [G7]ever let you [C]go

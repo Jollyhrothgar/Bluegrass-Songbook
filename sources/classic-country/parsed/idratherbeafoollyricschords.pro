@@ -1,6 +1,6 @@
 {meta: title I'd Rather Be A Fool}
 {meta: artist Connie Smith}
-{meta: writer Joe Williams}
+{meta: composer Joe Williams}
 
 {start_of_verse: Verse 1}
 [C]I guess I'm just the [G7]fool they [C]call me

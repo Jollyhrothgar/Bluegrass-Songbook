@@ -1,6 +1,6 @@
 {meta: title Song Of The Coo Coo}
 {meta: artist Eddy Arnold}
-{meta: writer Bill Faier}
+{meta: composer Bill Faier}
 
 {start_of_verse: Verse 1}
 [C]Who will get a [G7]song of the [C]coo coo 

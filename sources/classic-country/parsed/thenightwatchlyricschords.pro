@@ -1,6 +1,6 @@
 {meta: title The Night Watch}
 {meta: artist Jim Reeves}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [F]Bright stars are watching the world as it [C]sleeps

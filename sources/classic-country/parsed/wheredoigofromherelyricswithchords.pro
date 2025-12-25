@@ -1,6 +1,6 @@
 {meta: title Where Do I Go From Here}
 {meta: artist Elvis Presley}
-{meta: writer Paul Williams}
+{meta: composer Paul Williams}
 
 {start_of_verse: Verse 1}
 [G]If I knew the way I'd go back [Am]home

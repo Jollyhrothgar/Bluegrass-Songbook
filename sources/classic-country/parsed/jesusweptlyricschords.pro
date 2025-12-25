@@ -1,6 +1,6 @@
 {meta: title Jesus Wept}
 {meta: artist Hank Snow}
-{meta: writer Hank Snow and Blanche Snow}
+{meta: composer Hank Snow and Blanche Snow}
 
 {start_of_verse: Verse 1}
 [G]All alone in  this cruel world of [C]sin

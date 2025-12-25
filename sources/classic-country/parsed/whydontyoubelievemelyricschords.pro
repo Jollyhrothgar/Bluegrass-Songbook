@@ -1,6 +1,6 @@
 {meta: title Why Don't You Believe Me}
 {meta: artist Brenda Lee}
-{meta: writer Lew Douglas, Kim Laney, Roy Rodde}
+{meta: composer Lew Douglas, Kim Laney, Roy Rodde}
 
 {start_of_verse: Verse 1}
 Intro:

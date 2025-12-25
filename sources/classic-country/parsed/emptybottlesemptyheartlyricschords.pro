@@ -1,6 +1,6 @@
 {meta: title Empty Bottles Empty Heart}
 {meta: artist Hank Locklin}
-{meta: writer Billy Hughes}
+{meta: composer Billy Hughes}
 
 {start_of_verse: Verse 1}
 [C]An empty bottle and an empty [G7]heart

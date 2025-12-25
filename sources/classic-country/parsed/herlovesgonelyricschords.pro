@@ -1,6 +1,6 @@
 {meta: title Her L-O-V-E'S Gone}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton and Larry Cheshier}
+{meta: composer Glenn Sutton and Larry Cheshier}
 
 {start_of_verse: Verse 1}
 [C]Here I stand in front of an [F]old familiar sight

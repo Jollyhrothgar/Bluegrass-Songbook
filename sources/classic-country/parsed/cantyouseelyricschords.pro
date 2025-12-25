@@ -1,6 +1,6 @@
 {meta: title Can't You See}
 {meta: artist Waylon Jennings}
-{meta: writer Toy T. Caldwell}
+{meta: composer Toy T. Caldwell}
 
 {start_of_verse: Verse 1}
 [G]Gonna catch a freight train as far as I can [F]Lord

@@ -1,6 +1,6 @@
 {meta: title The Pain of it All}
 {meta: artist Wanda Jackson}
-{meta: writer Jerry Veneable}
+{meta: composer Jerry Veneable}
 
 {start_of_verse: Verse 1}
 [C]I've got your letter [F]received [C]today 

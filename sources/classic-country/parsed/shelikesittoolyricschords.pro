@@ -1,6 +1,6 @@
 {meta: title She Likes It Too}
 {meta: artist Alan Jackson}
-{meta: writer Zack Turner and Tim Nichols}
+{meta: composer Zack Turner and Tim Nichols}
 
 {start_of_verse: Verse 1}
 [C]I got my first motorcycle when [F]I turned six[C]teen

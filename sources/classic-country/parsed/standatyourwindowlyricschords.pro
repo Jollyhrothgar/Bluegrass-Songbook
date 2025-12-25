@@ -1,6 +1,6 @@
 {meta: title Stand At Your Window}
 {meta: artist Jim Reeves}
-{meta: writer Jim Carroll}
+{meta: composer Jim Carroll}
 
 {start_of_verse: Verse 1}
 [C]Stand at your window some [D7]night

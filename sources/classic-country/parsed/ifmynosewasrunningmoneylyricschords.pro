@@ -1,6 +1,6 @@
 {meta: title If My Nose Was Running Money}
 {meta: artist Mike Snider}
-{meta: writer Mike Carr and Mike Hammonds}
+{meta: composer Mike Carr and Mike Hammonds}
 
 {start_of_verse: Verse 1}
 [C]You say that I don't love you you say [F]my love is [C]untrue

@@ -1,6 +1,6 @@
 {meta: title You Are My Love}
 {meta: artist Jim Reeves}
-{meta: writer Cissie Cooper, Willie Cooper and Jim Reeves}
+{meta: composer Cissie Cooper, Willie Cooper and Jim Reeves}
 
 {start_of_verse: Verse 1}
 [C]You are my darling [F]there's no one but [C]you

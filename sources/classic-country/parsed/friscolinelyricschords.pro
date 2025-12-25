@@ -1,6 +1,6 @@
 {meta: title Frisco Line}
 {meta: artist George Morgan}
-{meta: writer Dexter Shaffer and Robert Davis}
+{meta: composer Dexter Shaffer and Robert Davis}
 
 {start_of_verse: Verse 1}
 [C]I boarded that [F]big dog out in [C]Dallas

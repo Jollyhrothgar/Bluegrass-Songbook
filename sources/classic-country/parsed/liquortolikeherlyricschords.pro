@@ -1,6 +1,6 @@
 {meta: title Liquor To Like Her}
 {meta: artist Hank Williams Jr.}
-{meta: writer Paul Overstreet and Tommy Hemby}
+{meta: composer Paul Overstreet and Tommy Hemby}
 
 {start_of_verse: Verse 1}
 [G]It takes a whole lot of liquor to like her

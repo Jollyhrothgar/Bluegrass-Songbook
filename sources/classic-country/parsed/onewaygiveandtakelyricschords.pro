@@ -1,6 +1,6 @@
 {meta: title One Way Give And Take}
 {meta: artist Billy Walker}
-{meta: writer Tompall Glaser}
+{meta: composer Tompall Glaser}
 
 {start_of_verse: Verse 1}
 [C]Too long I've tried to do the things 

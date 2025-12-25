@@ -1,6 +1,6 @@
 {meta: title Loneliness}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Joe Melson}
+{meta: composer Roy Orbison and Joe Melson}
 
 {start_of_verse: Verse 1}
 [G]Loneli[Am]ness is the [D7]worst thing in the [G]world

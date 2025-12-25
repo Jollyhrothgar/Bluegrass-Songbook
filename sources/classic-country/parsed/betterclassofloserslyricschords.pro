@@ -1,6 +1,6 @@
 {meta: title Better Class Of Losers}
 {meta: artist Ray Price}
-{meta: writer Harlan Howard and Ron Peterson}
+{meta: composer Harlan Howard and Ron Peterson}
 
 {start_of_verse: Verse 1}
 [G]I said I'm through with honky tonks they only bring me [C]down

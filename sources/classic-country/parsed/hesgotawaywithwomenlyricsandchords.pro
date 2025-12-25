@@ -1,6 +1,6 @@
 {meta: title He's Got A Way With Women}
 {meta: artist Bob Luman}
-{meta: writer Steve Wariner}
+{meta: composer Steve Wariner}
 
 {start_of_verse: Verse 1}
 [C]I'm not known to be a [F]talker

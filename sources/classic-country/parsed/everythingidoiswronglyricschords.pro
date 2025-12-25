@@ -1,6 +1,6 @@
 {meta: title Everything I Do is Wrong}
 {meta: artist Charlie Rich}
-{meta: writer Joe Josea, B.B. King, Charlie Rich}
+{meta: composer Joe Josea, B.B. King, Charlie Rich}
 
 {start_of_verse: Verse 1}
 [G]I see a great big [C]sign on a [G]one way [C]street

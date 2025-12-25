@@ -1,6 +1,6 @@
 {meta: title Is It Any Wonder That I Love You}
 {meta: artist Bob Luman}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]There's been times when [F]life's been rough

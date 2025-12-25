@@ -1,6 +1,6 @@
 {meta: title Heartbreak U.S.A.}
 {meta: artist Kitty Wells}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]The harbor's empty my love has [C]gone

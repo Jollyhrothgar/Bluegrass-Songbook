@@ -1,6 +1,6 @@
 {meta: title Rapid City South Dakota}
 {meta: artist Dwight Yoakum}
-{meta: writer Richard Friedman}
+{meta: composer Richard Friedman}
 
 {start_of_verse: Verse 1}
 [C]Just a ragged kid in [F]overalls he [G7]thumbed a ride one [C]day

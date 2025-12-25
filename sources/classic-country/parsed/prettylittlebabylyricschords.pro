@@ -1,6 +1,6 @@
 {meta: title Pretty Little Baby}
 {meta: artist Connie Francis}
-{meta: writer Don Stirling and Bill Nauman}
+{meta: composer Don Stirling and Bill Nauman}
 
 {start_of_verse: Verse 1}
 [C]Pretty little [Am]baby ([Dm]yah [G7]yah)

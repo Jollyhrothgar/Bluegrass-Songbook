@@ -1,6 +1,6 @@
 {meta: title The Only Real Peace}
 {meta: artist The Hemphills}
-{meta: writer Joel Hemphill}
+{meta: composer Joel Hemphill}
 
 {start_of_verse: Verse 1}
 [C]Life is a few days of trouble a wise man once [Dm]said

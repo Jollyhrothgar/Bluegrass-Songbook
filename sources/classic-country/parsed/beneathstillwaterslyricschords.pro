@@ -1,6 +1,6 @@
 {meta: title Beneath Still Waters}
 {meta: artist Emmylou Harris}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Beneath still [F]waters  [G7]there's a strong und[C]ertow

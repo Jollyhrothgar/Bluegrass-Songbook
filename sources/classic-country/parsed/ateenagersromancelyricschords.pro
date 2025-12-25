@@ -1,6 +1,6 @@
 {meta: title A Teenager's Romance}
 {meta: artist Ricky Nelson}
-{meta: writer David Gillam}
+{meta: composer David Gillam}
 
 {start_of_verse: Verse 1}
 [G]Bah bah bah bup bah bah bah [Em]dup

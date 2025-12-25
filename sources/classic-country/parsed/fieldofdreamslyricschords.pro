@@ -1,6 +1,6 @@
 {meta: title Field Of Dreams}
 {meta: artist Charley Pride}
-{meta: writer Dickey Lee and Jim Casey}
+{meta: composer Dickey Lee and Jim Casey}
 
 {start_of_verse: Verse 1}
 [C]Daddy was a dreamer Hannah was his [Am]dream

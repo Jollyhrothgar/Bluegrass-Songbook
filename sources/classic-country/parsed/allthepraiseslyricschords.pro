@@ -1,6 +1,6 @@
 {meta: title All The Praises}
 {meta: artist George Jones}
-{meta: writer Carmol Taylor and Jenny Strickland}
+{meta: composer Carmol Taylor and Jenny Strickland}
 
 {start_of_verse: Verse 1}
 [F]All the praises should be given to my [C]woman

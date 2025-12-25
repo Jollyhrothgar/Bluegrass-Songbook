@@ -1,6 +1,6 @@
 {meta: title You And Me And Time}
 {meta: artist George Jones & Georgette Jones}
-{meta: writer Georgette Jones, Mark McGuinn, Don Pfrimmer}
+{meta: composer Georgette Jones, Mark McGuinn, Don Pfrimmer}
 
 {start_of_verse: Verse 1}
 [C]You were just a [F]picture on my baby [C]grand

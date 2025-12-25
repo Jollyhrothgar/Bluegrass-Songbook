@@ -1,6 +1,6 @@
 {meta: title Just Like Walkin' In The Sunshine}
 {meta: artist Jean Shepard}
-{meta: writer Neal Merritt and Ann Woodward}
+{meta: composer Neal Merritt and Ann Woodward}
 
 {start_of_verse: Verse 1}
 [C]Lovin' you is just like walkin' in the [F]sunshine

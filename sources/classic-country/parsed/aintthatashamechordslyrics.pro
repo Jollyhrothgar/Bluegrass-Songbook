@@ -1,6 +1,6 @@
 {meta: title Ain't That a Shame}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino and Dave Bartholomew}
+{meta: composer Antonio Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [G]You made me cry when you said goodbye

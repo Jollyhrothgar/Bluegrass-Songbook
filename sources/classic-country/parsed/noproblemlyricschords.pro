@@ -1,6 +1,6 @@
 {meta: title No Problem}
 {meta: artist Don Williams}
-{meta: writer Don Schlitz and Billy Livsey}
+{meta: composer Don Schlitz and Billy Livsey}
 
 {start_of_verse: Verse 1}
 [C]Nobody's [Am]life is perfect [F]nobody [G7]wins' em all

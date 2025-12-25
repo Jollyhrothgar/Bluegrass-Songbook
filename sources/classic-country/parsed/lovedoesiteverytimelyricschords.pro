@@ -1,6 +1,6 @@
 {meta: title Love Does It Every Time}
 {meta: artist Ricky Skaggs}
-{meta: writer Tony Mullins and Robert Terry}
+{meta: composer Tony Mullins and Robert Terry}
 
 {start_of_verse: Verse 1}
 [F]After [C]eight years of drinking

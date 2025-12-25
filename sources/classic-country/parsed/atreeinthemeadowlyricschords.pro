@@ -1,6 +1,6 @@
 {meta: title A Tree In The Meadow}
 {meta: artist Marty Robbins}
-{meta: writer Billy Reid}
+{meta: composer Billy Reid}
 
 {start_of_verse: Verse 1}
 [C]There's a tree in the meadow

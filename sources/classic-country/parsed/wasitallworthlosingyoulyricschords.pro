@@ -1,5 +1,5 @@
 {meta: artist Charlie Pride}
-{meta: writer Audie Murphy and Terri Eddlemon}
+{meta: composer Audie Murphy and Terri Eddlemon}
 
 {start_of_verse: Verse 1}
 [C]Well I finally got the one I thought I [G7]wanted

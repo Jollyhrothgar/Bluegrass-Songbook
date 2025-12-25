@@ -1,6 +1,6 @@
 {meta: title Because It's Christmas Time Lyrics with Chords}
 {meta: artist Buck Owens}
-{meta: writer Red Simpson and Buck Owens}
+{meta: composer Red Simpson and Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]Now is the time for [G7]sleigh bells to ring 

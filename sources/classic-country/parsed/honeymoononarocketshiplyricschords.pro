@@ -1,6 +1,6 @@
 {meta: title Honeymoon On A Rocket Ship}
 {meta: artist Hank Snow}
-{meta: writer Johnny Masters}
+{meta: composer Johnny Masters}
 
 {start_of_verse: Verse 1}
 [C]I know somewhere out in the world there is a gal for [F]me

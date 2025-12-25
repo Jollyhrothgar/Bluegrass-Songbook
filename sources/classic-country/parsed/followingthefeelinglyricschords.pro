@@ -1,6 +1,6 @@
 {meta: title Following the Feeling}
 {meta: artist Moe Bandy}
-{meta: writer Charlie Craig}
+{meta: composer Charlie Craig}
 
 {start_of_verse: Verse 1}
 [C]Your eyes are not the eyes I should be seen [F]in

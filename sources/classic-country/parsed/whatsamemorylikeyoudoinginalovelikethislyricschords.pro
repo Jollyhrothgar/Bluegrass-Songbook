@@ -1,6 +1,6 @@
 {meta: title What's A Memory Like You Doing In A Love Like This}
 {meta: artist John Schneider}
-{meta: writer Charles Quillen and John Charles Jarrard}
+{meta: composer Charles Quillen and John Charles Jarrard}
 
 {start_of_verse: Verse 1}
 [G]You know you shouldn't [Am]be here  [D7]what am I supposed to [G]do

@@ -1,6 +1,6 @@
 {meta: title Starting All Over Again}
 {meta: artist Don Gibson}
-{meta: writer Paul Mitchell}
+{meta: composer Paul Mitchell}
 
 {start_of_verse: Verse 1}
 [C]Starting all over again is gonna be [G7]rough

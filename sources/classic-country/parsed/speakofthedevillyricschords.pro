@@ -1,6 +1,6 @@
 {meta: title Speak Of The Devil}
 {meta: artist Gene Watson}
-{meta: writer J. Ewtah}
+{meta: composer J. Ewtah}
 
 {start_of_verse: Verse 1}
 [C]The beer ain't no [F]colder here [G7]than other taverns where I've [C]been

@@ -1,6 +1,6 @@
 {meta: title You Can Share My Blanket}
 {meta: artist J.D. Crowe}
-{meta: writer Steven F. Brines and James B. Smoak}
+{meta: composer Steven F. Brines and James B. Smoak}
 
 {start_of_verse: Verse 1}
 [C]When you say you love me I don’t [F]know what you mean

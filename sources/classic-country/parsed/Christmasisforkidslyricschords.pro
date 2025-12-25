@@ -1,6 +1,6 @@
 {meta: title Christmas Is For Kids}
 {meta: artist Marty Robbins}
-{meta: writer Jack Pruett}
+{meta: composer Jack Pruett}
 
 {start_of_verse: Verse 1}
 [G]May the children of the world every boy and every [C]girl

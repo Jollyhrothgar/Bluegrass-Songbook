@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Leave You Tomorrow}
 {meta: artist John Schneider}
-{meta: writer Tim Daniels, Gene Dobbins, Johnny Wilson}
+{meta: composer Tim Daniels, Gene Dobbins, Johnny Wilson}
 
 {start_of_verse: Verse 1}
 [G]Maybe I’ve been [G7]wrong to [C]stop and think it [G]over

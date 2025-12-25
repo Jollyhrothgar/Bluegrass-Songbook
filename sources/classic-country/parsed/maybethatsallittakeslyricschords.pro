@@ -1,6 +1,6 @@
 {meta: title Maybe That's All It Takes}
 {meta: artist Don Williams}
-{meta: writer Beth Nielsen Chapman}
+{meta: composer Beth Nielsen Chapman}
 
 {start_of_verse: Verse 1}
 [C]I love you [F]forever and a [G7]day

@@ -1,6 +1,6 @@
 {meta: title A Little Bitty Tear}
 {meta: artist Wanda Jackson}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]When you said you were leaving [G7]tomorrow 

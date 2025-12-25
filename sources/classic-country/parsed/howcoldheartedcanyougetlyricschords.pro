@@ -1,6 +1,6 @@
 {meta: title How Cold Hearted Can You Get}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson &amp; Billy Gray}
+{meta: composer Hank Thompson &amp; Billy Gray}
 
 {start_of_verse: Verse 1}
 [G]While you're honky tonking around all you [C]do is run me down

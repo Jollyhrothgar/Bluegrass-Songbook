@@ -1,6 +1,6 @@
 {meta: title Man That You Once Knew}
 {meta: artist Moe Bandy}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]If you see a man in [C7]clothes that's old and [F]ragged

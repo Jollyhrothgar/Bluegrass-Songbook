@@ -1,6 +1,6 @@
 {meta: title Where No Cabins Fall}
 {meta: artist Rhonda Vincent}
-{meta: writer Nolan Jeffress}
+{meta: composer Nolan Jeffress}
 
 {start_of_verse: Verse 1}
 [C]As my mind wanders back to the quaint little shack

@@ -1,6 +1,6 @@
 {meta: title You're A Part Of Me}
 {meta: artist Charly McClain}
-{meta: writer Kim Carnes}
+{meta: composer Kim Carnes}
 
 {start_of_verse: Verse 1}
 [C]I'd like to [G7]live out all my [Am]dreams

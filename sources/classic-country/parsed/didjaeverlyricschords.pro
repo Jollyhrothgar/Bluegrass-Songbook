@@ -1,6 +1,6 @@
 {meta: title Didja' Ever}
 {meta: artist Elvis Presley}
-{meta: writer Sherman Edwards and Sid Wayne}
+{meta: composer Sherman Edwards and Sid Wayne}
 
 {start_of_verse: Verse 1}
 [C]Didja' ever (didja' ever) didja' ever get

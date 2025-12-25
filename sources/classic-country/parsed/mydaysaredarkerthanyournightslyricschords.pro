@@ -1,6 +1,6 @@
 {meta: title My Days Are Darker Than Your Nights}
 {meta: artist Wanda Jackson}
-{meta: writer Wanda Jackson}
+{meta: composer Wanda Jackson}
 
 {start_of_verse: Verse 1}
 [G]You never [D7]knew how much I [G]loved you

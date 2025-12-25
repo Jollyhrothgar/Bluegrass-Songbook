@@ -1,6 +1,6 @@
 {meta: title A Little Bit Later On Down The Line}
 {meta: artist Bobby Bare}
-{meta: writer Chip Taylor}
+{meta: composer Chip Taylor}
 
 {start_of_verse: Verse 1}
 [C]I remember the [F]time  [C]she used to be [F]mine

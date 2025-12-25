@@ -1,6 +1,6 @@
 {meta: title Yesterday Just Passed My Way Again}
 {meta: artist Lefty Frizzell}
-{meta: writer Sanger D. Schafer, Darlene Shafer}
+{meta: composer Sanger D. Schafer, Darlene Shafer}
 
 {start_of_verse: Verse 1}
 [G]I can't believe your lips are touching [C]mine

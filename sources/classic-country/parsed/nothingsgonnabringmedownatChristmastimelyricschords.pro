@@ -1,6 +1,6 @@
 {meta: title Nothing's Gonna Bring Me Down At Christmas Time}
 {meta: artist Randy Travis}
-{meta: writer Pat Alger}
+{meta: composer Pat Alger}
 
 {start_of_verse: Verse 1}
 [C]Oh the wind can blow and [F]the snow can [G7]fall

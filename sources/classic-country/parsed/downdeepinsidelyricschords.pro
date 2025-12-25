@@ -1,6 +1,6 @@
 {meta: title Down Deep Inside}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Jimbeau Hinson and Michael Foster}
+{meta: composer Jimbeau Hinson and Michael Foster}
 
 {start_of_verse: Verse 1}
 [G]I know you're [Em]scared

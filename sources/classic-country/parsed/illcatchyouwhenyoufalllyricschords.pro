@@ -1,6 +1,6 @@
 {meta: title I’ll Catch You When You Fall}
 {meta: artist Charlie Walker}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [C]It seems like years and a million tears 

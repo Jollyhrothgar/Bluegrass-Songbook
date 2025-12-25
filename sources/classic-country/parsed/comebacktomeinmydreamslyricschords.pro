@@ -1,6 +1,6 @@
 {meta: title Come Back To Me In My Dreams}
 {meta: artist Doyle Lawson}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [C]When the bright moon shines up in [F]heaven

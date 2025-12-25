@@ -1,6 +1,6 @@
 {meta: title Help Me Make It Through The Night}
 {meta: artist Charley Pride}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 {comment: C}

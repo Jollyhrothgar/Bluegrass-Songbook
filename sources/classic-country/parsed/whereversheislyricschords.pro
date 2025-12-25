@@ -1,6 +1,6 @@
 {meta: title Wherever She Is}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson, Jim Martin, Bobby Tomberlin}
+{meta: composer Bill Anderson, Jim Martin, Bobby Tomberlin}
 
 {start_of_verse: Verse 1}
 [C]She [Dm]always spoke of [G7]going back to [C]Texas 

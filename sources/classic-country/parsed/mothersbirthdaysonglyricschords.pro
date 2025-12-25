@@ -1,6 +1,6 @@
 {meta: title Mother's Birthday Song}
 {meta: artist Daniel O'Donnell}
-{meta: writer John Farry}
+{meta: composer John Farry}
 
 {start_of_verse: Verse 1}
 [C]She sits there in the corner in that [F]old easy chair

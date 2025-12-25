@@ -1,6 +1,6 @@
 {meta: title When I Hear The Wind Blow}
 {meta: artist Cal Smith}
-{meta: writer Curly Putman and Don Wayne}
+{meta: composer Curly Putman and Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]Cozy lairs and easy chairs ain't hard to bear 

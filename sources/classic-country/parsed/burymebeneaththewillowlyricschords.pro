@@ -1,6 +1,6 @@
 {meta: title Bury Me Beneath The Willow}
 {meta: artist Ricky Skaggs}
-{meta: writer Bradley Kincaid}
+{meta: composer Bradley Kincaid}
 
 {start_of_verse: Verse 1}
 [C]My heart is sad and I’m [F]lonely

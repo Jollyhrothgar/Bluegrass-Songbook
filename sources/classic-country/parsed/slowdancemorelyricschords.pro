@@ -1,6 +1,6 @@
 {meta: title Slow Dance More}
 {meta: artist Kenny Rogers}
-{meta: writer Doug Johnson and Pat Bunch}
+{meta: composer Doug Johnson and Pat Bunch}
 
 {start_of_verse: Verse 1}
 [G]Grady Johnson was a [C]common [G]man [Em]

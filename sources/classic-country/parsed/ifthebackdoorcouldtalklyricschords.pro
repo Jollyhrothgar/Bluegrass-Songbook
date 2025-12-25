@@ -1,6 +1,6 @@
 {meta: title If The Back Door Could Talk}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Grady Martin}
+{meta: composer Webb Pierce and Grady Martin}
 
 {start_of_verse: Verse 1}
 [C]If the b-ack door could talk  just [F]long enough to tell [C]me

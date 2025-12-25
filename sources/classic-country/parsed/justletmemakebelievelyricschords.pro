@@ -1,6 +1,6 @@
 {meta: title Just Let Me Make Believe}
 {meta: artist Roy Orbison}
-{meta: writer Ronald Blackwell}
+{meta: composer Ronald Blackwell}
 
 {start_of_verse: Verse 1}
 [D7]If your [G]love for me is [B7]just temporary

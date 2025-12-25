@@ -1,6 +1,6 @@
 {meta: title Jesus Don't Turn Me Away}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]I took the wrong turn a [F]long time [C]ago

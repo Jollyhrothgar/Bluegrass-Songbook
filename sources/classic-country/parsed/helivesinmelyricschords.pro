@@ -1,6 +1,6 @@
 {meta: title He Lives In Me}
 {meta: artist Doyle Lawson}
-{meta: writer Frances P. Simpson}
+{meta: composer Frances P. Simpson}
 
 {start_of_verse: Verse 1}
 [C]Oh I’m just not myself although I look the same

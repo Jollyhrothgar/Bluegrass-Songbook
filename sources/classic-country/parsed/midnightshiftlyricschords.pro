@@ -1,6 +1,6 @@
 {meta: title Midnight Shift}
 {meta: artist Buddy Holly}
-{meta: writer Earl Lee and Jimmie Rogers Ainsworth}
+{meta: composer Earl Lee and Jimmie Rogers Ainsworth}
 
 {start_of_verse: Verse 1}
 [D7]Well if you see old Annie better [C]give her a lift

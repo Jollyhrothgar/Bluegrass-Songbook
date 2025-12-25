@@ -1,6 +1,6 @@
 {meta: title Before You Travel On}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G7]A look [C]down look down [F]that lonesome [Fm]road

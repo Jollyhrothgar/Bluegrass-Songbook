@@ -1,6 +1,6 @@
 {meta: title One More Last Chance}
 {meta: artist Tom T. Hall}
-{meta: writer Tom T. Hall Dixie Hall}
+{meta: composer Tom T. Hall Dixie Hall}
 
 {start_of_verse: Verse 1}
 [C]One more last chance one more slow [F]dance

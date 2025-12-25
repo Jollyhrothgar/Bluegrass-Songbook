@@ -1,6 +1,6 @@
 {meta: title Cause I Have You}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart and Don Sessions}
+{meta: composer Wynn Stewart and Don Sessions}
 
 {start_of_verse: Verse 1}
 [G]A flower needs the earth to make it [C]grow

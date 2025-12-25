@@ -1,6 +1,6 @@
 {meta: title I Just Want To Be Alone}
 {meta: artist Bobby Helms}
-{meta: writer Bill Irwin}
+{meta: composer Bill Irwin}
 
 {start_of_verse: Verse 1}
 [G]So if [D7]I'm [C]not in your [G]arms not kissing your [D7]lips

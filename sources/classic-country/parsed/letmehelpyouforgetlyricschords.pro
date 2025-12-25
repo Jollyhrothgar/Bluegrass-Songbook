@@ -1,6 +1,6 @@
 {meta: title Let Me Help You Forget}
 {meta: artist Kitty Wells}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [C]Let me help you forget one who forgot [F]you

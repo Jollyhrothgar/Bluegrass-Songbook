@@ -1,6 +1,6 @@
 {meta: title I Still Belong To You}
 {meta: artist Lynn Anderson}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]I've thought of [G7]leaving [Am]you a [G7]note [F]but every time I [C]start

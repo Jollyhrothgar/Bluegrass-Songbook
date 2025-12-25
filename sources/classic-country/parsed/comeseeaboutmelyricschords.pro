@@ -1,6 +1,6 @@
 {meta: title Come See About Me}
 {meta: artist Cal Smith}
-{meta: writer Conway Twitty}
+{meta: composer Conway Twitty}
 
 {start_of_verse: Verse 1}
 [C]Somebody listen I'm a voice in the distance crying

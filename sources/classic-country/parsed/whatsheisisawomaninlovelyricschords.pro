@@ -1,6 +1,6 @@
 {meta: title What She Is (Is A Woman In Love)}
 {meta: artist Earl Thomas Conley}
-{meta: writer Bob McDill and Paul Harrison}
+{meta: composer Bob McDill and Paul Harrison}
 
 {start_of_verse: Verse 1}
 [G]There's a lot of [D7]nice things [C]that he never [D7]told her

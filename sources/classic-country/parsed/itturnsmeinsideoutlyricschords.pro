@@ -1,6 +1,6 @@
 {meta: title It Turns Me Inside Out}
 {meta: artist Willie Nelson}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]In a way I'm glad it's over

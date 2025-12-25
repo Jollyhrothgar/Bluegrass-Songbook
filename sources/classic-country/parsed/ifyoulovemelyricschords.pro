@@ -1,6 +1,6 @@
 {meta: title If You Love Me}
 {meta: artist Wilburn Brothers}
-{meta: writer Geoff Parsons and Marguerite Mannot}
+{meta: composer Geoff Parsons and Marguerite Mannot}
 
 {start_of_verse: Verse 1}
 [G]If you love me really [C]love me

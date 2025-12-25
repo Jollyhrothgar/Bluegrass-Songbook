@@ -1,6 +1,6 @@
 {meta: title Cherokee Maiden}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [Am]One night when the moon was bright and the moonlight glade

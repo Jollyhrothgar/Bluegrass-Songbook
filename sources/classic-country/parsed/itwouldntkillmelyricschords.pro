@@ -1,6 +1,6 @@
 {meta: title It Wouldn't Kill Me}
 {meta: artist Ricky Van Shelton}
-{meta: writer Larry Boone, Paul Nelson, Tom Shapiro}
+{meta: composer Larry Boone, Paul Nelson, Tom Shapiro}
 
 {start_of_verse: Verse 1}
 [C]Last night after [G7]dinner as I [F]read the evening [C]paper

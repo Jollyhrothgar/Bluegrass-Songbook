@@ -1,6 +1,6 @@
 {meta: title It Makes no Difference Now}
 {meta: artist Ernest Tubb}
-{meta: writer Floyd Tillman &amp; Jimmie Davis}
+{meta: composer Floyd Tillman &amp; Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [C]Makes no difference now what kind of life fate [F]hands me

@@ -1,6 +1,6 @@
 {meta: title Best Banjo Picker}
 {meta: artist Charley Pride}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]I didn't think too much about [G7]books and [C]schoolin'

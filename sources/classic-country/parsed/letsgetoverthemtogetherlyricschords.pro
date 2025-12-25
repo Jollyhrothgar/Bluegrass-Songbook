@@ -1,6 +1,6 @@
 {meta: title Let's Get Over Them Together}
 {meta: artist Moe Bandy}
-{meta: writer Charlie Craig and Keith Stegall}
+{meta: composer Charlie Craig and Keith Stegall}
 
 {start_of_verse: Verse 1}
 [C]I don't know if we can make it

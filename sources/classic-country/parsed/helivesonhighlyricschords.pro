@@ -1,6 +1,6 @@
 {meta: title He Lives On High}
 {meta: artist Slim Whitman}
-{meta: writer Baylus B. Mc Kin ney}
+{meta: composer Baylus B. Mc Kin ney}
 {meta: music Queen Liliuokalani}
 
 {start_of_verse: Verse 1}

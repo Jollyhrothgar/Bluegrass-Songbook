@@ -1,6 +1,6 @@
 {meta: title Brown Paper Bag}
 {meta: artist Tammy Wynette}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 [G]She cleans off the table throws the dishes in the [G7]sink

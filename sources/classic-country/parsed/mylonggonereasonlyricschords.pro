@@ -1,6 +1,6 @@
 {meta: title My Long Gone Reason}
 {meta: artist Jack Greene}
-{meta: writer Glenn Johnson}
+{meta: composer Glenn Johnson}
 
 {start_of_verse: Verse 1}
 [C]I pick up the picture of the one that once loved me [F]so

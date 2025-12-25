@@ -1,6 +1,6 @@
 {meta: title My Broken Heart Belongs To You}
 {meta: artist Willie Nelson}
-{meta: writer David Anderson and Willie Nelson}
+{meta: composer David Anderson and Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]I lost my mind so long [Dm]ago

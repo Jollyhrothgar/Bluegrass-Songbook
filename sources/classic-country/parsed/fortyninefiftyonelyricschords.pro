@@ -1,6 +1,6 @@
 {meta: title Forty Nine Fifty One}
 {meta: artist Hank Locklin}
-{meta: writer Jack Barlow and Moneen Carpenter}
+{meta: composer Jack Barlow and Moneen Carpenter}
 
 {start_of_verse: Verse 1}
 [G]If you'll admit that you've been wrong

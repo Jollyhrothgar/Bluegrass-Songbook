@@ -1,6 +1,6 @@
 {meta: title A Way To Free Myself}
 {meta: artist Ray Price}
-{meta: writer Joe Hayes}
+{meta: composer Joe Hayes}
 
 {start_of_verse: Verse 1}
 [C]What strange power do you have that rules this heart of [F]mine

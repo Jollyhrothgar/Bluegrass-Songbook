@@ -1,6 +1,6 @@
 {meta: title Shine Shave Shower It's Saturday Night}
 {meta: artist Lefty Frizzell}
-{meta: writer Jim Beck and Lefty Frizzell}
+{meta: composer Jim Beck and Lefty Frizzell}
 
 {start_of_verse: Verse 1}
 [C]Yes it’s Saturday

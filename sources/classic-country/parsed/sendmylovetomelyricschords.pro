@@ -1,6 +1,6 @@
 {meta: title Send My Love To Me}
 {meta: artist Webb Pierce}
-{meta: writer Audrey Grisham}
+{meta: composer Audrey Grisham}
 
 {start_of_verse: Verse 1}
 [G]Tonight I hear Hawaiian [D7]echoes calling [G]me

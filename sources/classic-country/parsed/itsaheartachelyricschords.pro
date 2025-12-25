@@ -1,6 +1,6 @@
 {meta: title It's A Heartache}
 {meta: artist Juice Newton}
-{meta: writer Ronnie Scott and Steve Wolfe}
+{meta: composer Ronnie Scott and Steve Wolfe}
 
 {start_of_verse: Verse 1}
 [G7]It's a [C]Heartache nothing but a [Em]heartache

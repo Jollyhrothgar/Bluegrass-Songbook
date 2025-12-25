@@ -1,6 +1,6 @@
 {meta: title If I Had A Cheating Heart}
 {meta: artist Mel Street}
-{meta: writer Wayland Holyfield and Al Turney}
+{meta: composer Wayland Holyfield and Al Turney}
 
 {start_of_verse: Verse 1}
 [C]Your ruby lips  [F]girl they [C]tempt

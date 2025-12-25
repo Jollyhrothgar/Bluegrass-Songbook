@@ -1,6 +1,6 @@
 {meta: title We Owe God For Everything}
 {meta: artist Kitty Wells}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [F]God created the [C]flowers and trees

@@ -1,6 +1,6 @@
 {meta: title Perfect Mountain}
 {meta: artist Dean Martin}
-{meta: writer Gene Thomas}
+{meta: composer Gene Thomas}
 
 {start_of_verse: Verse 1}
 [C]Gonna find a perfect [F]mountain 

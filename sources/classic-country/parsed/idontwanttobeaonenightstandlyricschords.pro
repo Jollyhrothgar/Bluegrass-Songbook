@@ -1,6 +1,6 @@
 {meta: title I Don't Want To Be A One Night Stand}
 {meta: artist Reba McEntire}
-{meta: writer Laying Martine}
+{meta: composer Laying Martine}
 
 {start_of_verse: Verse 1}
 [C]Now you ask me if [G7]I will go with [C]you

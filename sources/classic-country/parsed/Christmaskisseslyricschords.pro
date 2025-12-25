@@ -1,6 +1,6 @@
 {meta: title Christmas Kisses}
 {meta: artist Marty Robbins}
-{meta: writer Bill D. Johnson}
+{meta: composer Bill D. Johnson}
 
 {start_of_verse: Verse 1}
 [C]Christmas time is almost here [G7]and you're not here with [C]me

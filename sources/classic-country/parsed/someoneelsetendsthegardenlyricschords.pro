@@ -1,6 +1,6 @@
 {meta: title Someone Else Tends The Garden}
 {meta: artist Mel Tillis}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]She’s the mother of my [C]children

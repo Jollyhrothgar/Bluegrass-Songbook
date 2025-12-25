@@ -1,6 +1,6 @@
 {meta: title Put Another Log On The Fire}
 {meta: artist Tom Paul Glaser}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]Put another log on the fire

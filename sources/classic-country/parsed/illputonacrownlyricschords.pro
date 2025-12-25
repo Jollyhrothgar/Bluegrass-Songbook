@@ -1,6 +1,6 @@
 {meta: title I’ll Put On A Crown}
 {meta: artist Del McCoury}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [G]I am on a journey to that city [C]four [G]square

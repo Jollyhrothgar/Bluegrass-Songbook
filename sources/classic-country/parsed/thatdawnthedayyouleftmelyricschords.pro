@@ -1,6 +1,6 @@
 {meta: title That Dawn The Day You Left Me}
 {meta: artist High Country}
-{meta: writer Mintum}
+{meta: composer Mintum}
 
 {start_of_verse: Verse 1}
 [G]So early [C]on that [G]morning the moon still [C]way up [G]high

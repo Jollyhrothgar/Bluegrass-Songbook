@@ -1,6 +1,6 @@
 {meta: title Do You Know You Are My Sunshine}
 {meta: artist Statler Brothers}
-{meta: writer Harold Reid and Don Reid}
+{meta: composer Harold Reid and Don Reid}
 
 {start_of_verse: Verse 1}
 [G]She was standing in the crowd all alone and looking pretty

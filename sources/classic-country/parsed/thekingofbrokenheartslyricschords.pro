@@ -1,6 +1,6 @@
 {meta: title The King Of Broken Hearts}
 {meta: artist George Strait}
-{meta: writer Jim Lauderdale}
+{meta: composer Jim Lauderdale}
 
 {start_of_verse: Verse 1}
 [C]The king of broken hearts doesn't [F]ask much from his friends

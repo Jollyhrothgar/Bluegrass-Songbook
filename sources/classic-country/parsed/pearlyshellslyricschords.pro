@@ -1,6 +1,6 @@
 {meta: title Pearly Shells}
 {meta: artist Burl Ives}
-{meta: writer John Kalapana-Leonpobar}
+{meta: composer John Kalapana-Leonpobar}
 
 {start_of_verse: Verse 1}
 Pearly Shells

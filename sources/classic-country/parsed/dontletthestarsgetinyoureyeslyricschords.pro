@@ -1,6 +1,6 @@
 {meta: title Don't Let The Stars Get In Your Eyes}
 {meta: artist Ray Price}
-{meta: writer Slim Willet}
+{meta: composer Slim Willet}
 
 {start_of_verse: Verse 1}
 [G]Don't Let The Stars Get In Your Eyes

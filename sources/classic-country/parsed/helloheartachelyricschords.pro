@@ -1,6 +1,6 @@
 {meta: title Hello Heartache}
 {meta: artist Hank Locklin}
-{meta: writer Ben Raleigh}
+{meta: composer Ben Raleigh}
 
 {start_of_verse: Verse 1}
 [G]Last night we met she loved me warm and [C]tender

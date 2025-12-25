@@ -1,6 +1,6 @@
 {meta: title Drifting With The Tide}
 {meta: artist Del McCoury}
-{meta: writer Don Reno and Red Smiley}
+{meta: composer Don Reno and Red Smiley}
 
 {start_of_verse: Verse 1}
 [G]As my boat draws near the harbor

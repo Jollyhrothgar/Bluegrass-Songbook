@@ -1,6 +1,6 @@
 {meta: title No Man Should Hurt As Bad As I Do}
 {meta: artist George Morgan}
-{meta: writer Jan Crutchfield and Wayne P. Walker}
+{meta: composer Jan Crutchfield and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]No man should hurt as bad as I do

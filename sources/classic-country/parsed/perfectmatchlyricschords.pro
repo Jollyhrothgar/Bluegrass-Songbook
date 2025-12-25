@@ -1,6 +1,6 @@
 {meta: title Perfect Match}
 {meta: artist Barbara Mandrell}
-{meta: writer Glenn Sutton and Ben Peters}
+{meta: composer Glenn Sutton and Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]Well I look across my morning cup of [Dm]coffee

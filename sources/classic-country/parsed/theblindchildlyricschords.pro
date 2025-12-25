@@ -1,6 +1,6 @@
 {meta: title The Blind Child}
 {meta: artist Hank Williams}
-{meta: writer Ida B. Mercer}
+{meta: composer Ida B. Mercer}
 
 {start_of_verse: Verse 1}
 [C]Oh father tonight they say you are

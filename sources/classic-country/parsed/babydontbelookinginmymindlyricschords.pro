@@ -1,6 +1,6 @@
 {meta: title Baby Don't Be Looking In My Mind}
 {meta: artist Waylon Jennings}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [C]Baby don't be [G7]looking in [C]my mind 

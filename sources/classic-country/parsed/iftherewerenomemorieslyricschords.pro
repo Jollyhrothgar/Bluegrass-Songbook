@@ -1,6 +1,6 @@
 {meta: title If There Were No Memories}
 {meta: artist John Anderson}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [C]If there were no wishes  [F]perhaps I wouldn't [C]want

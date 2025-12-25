@@ -1,6 +1,6 @@
 {meta: title Nice And Easy}
 {meta: artist Charlie Rich}
-{meta: writer Alan Bergman, Marilyn Keith, Lew Spence}
+{meta: composer Alan Bergman, Marilyn Keith, Lew Spence}
 
 {start_of_verse: Verse 1}
 [C]Let's take it nice and easy it's gonna be so [Dm]easy

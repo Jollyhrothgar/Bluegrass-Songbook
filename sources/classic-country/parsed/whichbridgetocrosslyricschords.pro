@@ -1,6 +1,6 @@
 {meta: title Which Bridge To Cross}
 {meta: artist Vince Gill}
-{meta: writer Al Anderson and Vince Gill}
+{meta: composer Al Anderson and Vince Gill}
 
 {start_of_verse: Verse 1}
 [G]I've got two [C]loves in my [G]life now

@@ -1,6 +1,6 @@
 {meta: title One Love At A Time}
 {meta: artist Tanya Tucker}
-{meta: writer Paul Overstreet and Paul Davis}
+{meta: composer Paul Overstreet and Paul Davis}
 
 {start_of_verse: Verse 1}
 [G]It makes me weak  and in a [D7]hurry 

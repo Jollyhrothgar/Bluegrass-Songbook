@@ -1,6 +1,6 @@
 {meta: title She Never Stopped Loving Him}
 {meta: artist Patty Loveless}
-{meta: writer Wally Wilson and Danny Orton}
+{meta: composer Wally Wilson and Danny Orton}
 
 {start_of_verse: Verse 1}
 [C]She [G]used to sit and stare

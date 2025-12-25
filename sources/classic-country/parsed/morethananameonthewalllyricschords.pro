@@ -1,6 +1,6 @@
 {meta: title More Than A Name On The Wall}
 {meta: artist Statler Brothers}
-{meta: writer John Rimel and Jimmy Fortune}
+{meta: composer John Rimel and Jimmy Fortune}
 
 {start_of_verse: Verse 1}
 [C]I saw her from a distance  as she [F]walked up to the [C]wall

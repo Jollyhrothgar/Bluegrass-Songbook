@@ -1,6 +1,6 @@
 {meta: title Kiss A Me Love A Me}
 {meta: artist Wynn Stewart}
-{meta: writer Dale Noe}
+{meta: composer Dale Noe}
 
 {start_of_verse: Verse 1}
 [C]Kiss-a me when I'm feeling [G7]blue 

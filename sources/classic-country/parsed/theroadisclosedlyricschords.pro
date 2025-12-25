@@ -1,6 +1,6 @@
 {meta: title The Road Is Closed}
 {meta: artist Ernest Tubb}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]Since that unfaithful day I let you [C]down

@@ -1,6 +1,6 @@
 {meta: title I'm Walking Behind You}
 {meta: artist Eddy Arnold}
-{meta: writer Billy Reid}
+{meta: composer Billy Reid}
 
 {start_of_verse: Verse 1}
 [C]Look over your shoulder I'm [G7]walking [C]behind

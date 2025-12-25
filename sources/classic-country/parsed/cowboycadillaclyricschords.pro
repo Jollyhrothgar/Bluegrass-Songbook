@@ -1,6 +1,6 @@
 {meta: title Cowboy Cadillac}
 {meta: artist Garth Brooks}
-{meta: writer Bryan Kennedy and Garth Brooks}
+{meta: composer Bryan Kennedy and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G]I've never known one better she's a real go getter

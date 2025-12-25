@@ -1,6 +1,6 @@
 {meta: title Why'd You Go And Break My Heart}
 {meta: artist George Strait}
-{meta: writer David Anthony}
+{meta: composer David Anthony}
 
 {start_of_verse: Verse 1}
 [C]Seems you came along at the [F]right time

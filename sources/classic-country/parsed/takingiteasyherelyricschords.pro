@@ -1,6 +1,6 @@
 {meta: title Taking It Easy Here}
 {meta: artist Ernest Tubb}
-{meta: writer Ernie Lee}
+{meta: composer Ernie Lee}
 
 {start_of_verse: Verse 1}
 [G]Now some folks think I'm lazy 

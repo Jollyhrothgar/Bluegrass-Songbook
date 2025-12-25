@@ -1,6 +1,6 @@
 {meta: title Play Born To Lose Again}
 {meta: artist Ronnie Milsap}
-{meta: writer Kent M. Robbins}
+{meta: composer Kent M. Robbins}
 
 {start_of_verse: Verse 1}
 [C]Pardon me I'm just another lonely [G7]fool

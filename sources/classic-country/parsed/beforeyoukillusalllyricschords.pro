@@ -1,6 +1,6 @@
 {meta: title Before You Kill Us All}
 {meta: artist Randy Travis}
-{meta: writer Max T. Barnes and Keith Follese}
+{meta: composer Max T. Barnes and Keith Follese}
 
 {start_of_verse: Verse 1}
 [C]Must be doing something wrong baby [F]I don't [C]know[F]

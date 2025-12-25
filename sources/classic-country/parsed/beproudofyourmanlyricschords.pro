@@ -1,6 +1,6 @@
 {meta: title Be Proud Of Your Man Lyrics Chords}
 {meta: artist Loretta Lynn}
-{meta: writer L.E. White and Betty Jo White}
+{meta: composer L.E. White and Betty Jo White}
 
 {start_of_verse: Verse 1}
 [C]Woman he loves you can't you see

@@ -1,6 +1,6 @@
 {meta: title You Gotta Be Tired}
 {meta: artist Kenny Rogers}
-{meta: writer Ed Bruce and Larry Butler}
+{meta: composer Ed Bruce and Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]As a child momma told me all [G7]about You[C] 

@@ -1,6 +1,6 @@
 {meta: title Baby Please}
 {meta: artist Fats Domino}
-{meta: writer Pearl King and Dave Bartholomew}
+{meta: composer Pearl King and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [D7]Baby please don't [G]go

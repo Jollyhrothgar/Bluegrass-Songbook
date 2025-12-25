@@ -1,6 +1,6 @@
 {meta: title I Heard My Mother Praying For Me}
 {meta: artist Hank Williams}
-{meta: writer Audrey Williams}
+{meta: composer Audrey Williams}
 
 {start_of_verse: Verse 1}
 [G]Last night as I lay down to sleep

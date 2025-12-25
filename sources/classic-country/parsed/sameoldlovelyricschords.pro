@@ -1,6 +1,6 @@
 {meta: title Same Old Love}
 {meta: artist Ricky Skaggs}
-{meta: writer Chris Austin and Greg Barnhill}
+{meta: composer Chris Austin and Greg Barnhill}
 
 {start_of_verse: Verse 1}
 [G]I pretend it was over

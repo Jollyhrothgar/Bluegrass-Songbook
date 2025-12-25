@@ -1,6 +1,6 @@
 {meta: title I Never See Maggie Alone Lyrics Chords}
 {meta: artist Slim Whitman}
-{meta: writer Everett Lynton and Harry Tilsley}
+{meta: composer Everett Lynton and Harry Tilsley}
 
 {start_of_verse: Verse 1}
 [C]Maggie dear just won't [G7]go out alone

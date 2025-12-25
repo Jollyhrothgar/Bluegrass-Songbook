@@ -1,6 +1,6 @@
 {meta: title Little Girl}
 {meta: artist Reba McEntire}
-{meta: writer Kendal Franceschi and Quentin Powers}
+{meta: composer Kendal Franceschi and Quentin Powers}
 
 {start_of_verse: Verse 1}
 [G]Daddy used to tell me if I [D7]ran too fast 

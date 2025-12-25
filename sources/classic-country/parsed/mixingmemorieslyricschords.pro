@@ -1,6 +1,6 @@
 {meta: title Mixing Memories}
 {meta: artist Darrell McCall}
-{meta: writer Sanger D. Shafer and Warren Robb}
+{meta: composer Sanger D. Shafer and Warren Robb}
 
 {start_of_verse: Verse 1}
 [G]Forgive me darlin’ [C]I just had to [D7]call you

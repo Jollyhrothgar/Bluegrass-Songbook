@@ -1,6 +1,6 @@
 {meta: title My House}
 {meta: artist Randy Travis}
-{meta: writer Paul Overstreet and Al Gore}
+{meta: composer Paul Overstreet and Al Gore}
 
 {start_of_verse: Verse 1}
 [C]My house is no mansion but it [F]still holds my treasures

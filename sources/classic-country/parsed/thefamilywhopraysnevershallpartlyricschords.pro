@@ -1,6 +1,6 @@
 {meta: title The Family Who Prays Never Shall Part}
 {meta: artist The Louvin Brothers}
-{meta: writer Ira and Charlie Louvin}
+{meta: composer Ira and Charlie Louvin}
 
 {start_of_verse: Verse 1}
 [G]The Family who prays will [C]never be [G]parted

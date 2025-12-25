@@ -1,6 +1,6 @@
 {meta: title Ain't Love A Good Thing}
 {meta: artist Loretta Lynn}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Blues go ahead and knock upon my door

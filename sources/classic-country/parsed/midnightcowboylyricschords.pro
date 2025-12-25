@@ -1,6 +1,6 @@
 {meta: title Midnight Cowboy}
 {meta: artist Norma Jean}
-{meta: writer Dave Kirby and Glenn Martin}
+{meta: composer Dave Kirby and Glenn Martin}
 
 {start_of_verse: Verse 1}
 [G]He don't ride a horse and he don't wear a hat or cowboy [D7]boots

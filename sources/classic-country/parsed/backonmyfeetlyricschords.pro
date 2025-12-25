@@ -1,6 +1,6 @@
 {meta: title Back On My Feet}
 {meta: artist Tanya Tucker}
-{meta: writer Troy Seals and Max D. Barnes}
+{meta: composer Troy Seals and Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]I should've said no  no  no  I should've [G7]taken [C]it [F]slow

@@ -1,6 +1,6 @@
 {meta: title Ninety Nine Years Is Almost Life}
 {meta: artist Lester Flatt and Earl Scruggs}
-{meta: writer Louise Cirtain and Gladys Stacey}
+{meta: composer Louise Cirtain and Gladys Stacey}
 
 {start_of_verse: Verse 1}
 [G]The courtroom was crowded the judge waited [D7]there

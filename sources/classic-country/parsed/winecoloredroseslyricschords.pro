@@ -1,6 +1,6 @@
 {meta: title Wine Colored Roses}
 {meta: artist George Jones}
-{meta: writer Dennis J. Knutson and Arthur Leo Owens}
+{meta: composer Dennis J. Knutson and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [D7][G]Today I got a long [G]letter

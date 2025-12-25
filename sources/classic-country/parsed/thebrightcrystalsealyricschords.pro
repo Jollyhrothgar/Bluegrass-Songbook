@@ -1,6 +1,6 @@
 {meta: title The Bright Crystal Sea}
 {meta: artist The Blue Creek Boys}
-{meta: writer Ivy Sheppard}
+{meta: composer Ivy Sheppard}
 
 {start_of_verse: Verse 1}
 [C]I'm [F]smilin' as [C]I go [F]home to meet [C]mother

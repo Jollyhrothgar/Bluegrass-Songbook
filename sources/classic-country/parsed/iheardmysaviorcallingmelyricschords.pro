@@ -1,6 +1,6 @@
 {meta: title I Heard My Savior Calling Me}
 {meta: artist Kitty Wells}
-{meta: writer Johnnie Bailes}
+{meta: composer Johnnie Bailes}
 
 {start_of_verse: Verse 1}
 [C]I heard my Savior calling me

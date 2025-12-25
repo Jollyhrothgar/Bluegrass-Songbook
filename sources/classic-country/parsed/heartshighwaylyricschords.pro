@@ -1,6 +1,6 @@
 {meta: title Heart's Highway}
 {meta: artist Lefty Frizzel}
-{meta: writer Eddie Miller and Alice Harper}
+{meta: composer Eddie Miller and Alice Harper}
 
 {start_of_verse: Verse 1}
 [C]Through your heart there runs a highway

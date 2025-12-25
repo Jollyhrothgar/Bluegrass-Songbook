@@ -1,6 +1,6 @@
 {meta: title Whiskey Trip}
 {meta: artist Johnny Rodriguez}
-{meta: writer Donn Tankersley and Wayne Carson}
+{meta: composer Donn Tankersley and Wayne Carson}
 
 {start_of_verse: Verse 1}
 [C]I can almost see me [F]now in [C]Acapulco 

@@ -1,6 +1,6 @@
 {meta: title I Talk To Jesus Every Day}
 {meta: artist Johnny Cash}
-{meta: writer Glenn D. Tubb}
+{meta: composer Glenn D. Tubb}
 
 {start_of_verse: Verse 1}
 [G]Well you talk about [C]important people [D7]that you say you [G]know

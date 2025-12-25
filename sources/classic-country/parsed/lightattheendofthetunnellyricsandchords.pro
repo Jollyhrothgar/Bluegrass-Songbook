@@ -1,6 +1,6 @@
 {meta: title Light At The End Of The Tunnel}
 {meta: artist Keith Whitley}
-{meta: writer Don Cook and Keith Whitley}
+{meta: composer Don Cook and Keith Whitley}
 
 {start_of_verse: Verse 1}
 [G]There's a light at the [C]end of the [G]tunnel

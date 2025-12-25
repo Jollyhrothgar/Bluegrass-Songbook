@@ -1,6 +1,6 @@
 {meta: title Doctor's Orders}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Rory Bourke, Bruce Channel, Kieran Kane}
+{meta: composer Rory Bourke, Bruce Channel, Kieran Kane}
 
 {start_of_verse: Verse 1}
 [C]Doctor told me sleepin' alone 

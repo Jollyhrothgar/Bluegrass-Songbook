@@ -1,6 +1,6 @@
 {meta: title Looks Like This Is Gonna Be My Day}
 {meta: artist Jimmy Dean}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [G]You've heard me sigh you've seen me cry

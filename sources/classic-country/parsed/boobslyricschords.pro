@@ -1,6 +1,6 @@
 {meta: title Boobs}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G]People at this honky tonk they're about to drive me [C]insane

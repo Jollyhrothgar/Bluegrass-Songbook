@@ -1,6 +1,6 @@
 {meta: title Just How Bad Do You Wanna Feel Good}
 {meta: artist Keith Whitley}
-{meta: writer Bill Caswell and Keith Whitley}
+{meta: composer Bill Caswell and Keith Whitley}
 
 {start_of_verse: Verse 1}
 [C]You're looking for a [F]love life 

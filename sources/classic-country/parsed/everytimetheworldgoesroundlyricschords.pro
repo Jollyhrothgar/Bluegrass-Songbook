@@ -1,6 +1,6 @@
 {meta: title Every Time The World Goes Round}
 {meta: artist Bob Luman}
-{meta: writer Bob Montgomery and Earl Sinks}
+{meta: composer Bob Montgomery and Earl Sinks}
 
 {start_of_verse: Verse 1}
 [C]Every time the [F]world goes round 

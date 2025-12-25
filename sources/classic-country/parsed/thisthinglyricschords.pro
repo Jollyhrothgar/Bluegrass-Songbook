@@ -1,6 +1,6 @@
 {meta: title This Thing}
 {meta: artist Webb Pierce}
-{meta: writer Audrey Grisham and Sylvia Fisher}
+{meta: composer Audrey Grisham and Sylvia Fisher}
 
 {start_of_verse: Verse 1}
 [C]Love [G7]love [C]love [F]yeah [C]love's got a [G7]hold on [C]me

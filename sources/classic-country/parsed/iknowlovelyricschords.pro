@@ -1,6 +1,6 @@
 {meta: title I Know Love}
 {meta: artist The Everly Brothers}
-{meta: writer Jim Photoglo and Brian Neary}
+{meta: composer Jim Photoglo and Brian Neary}
 
 {start_of_verse: Verse 1}
 [G]I know [C]love  I [G]know [C]love

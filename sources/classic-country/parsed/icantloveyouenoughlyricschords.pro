@@ -1,6 +1,6 @@
 {meta: title I Can't Love You Enough}
 {meta: artist Conway Twitty}
-{meta: writer Max D. Barnes and Troy Seals}
+{meta: composer Max D. Barnes and Troy Seals}
 
 {start_of_verse: Verse 1}
 [C]I'd crawl through the desert on my hands and knees without a drink of water

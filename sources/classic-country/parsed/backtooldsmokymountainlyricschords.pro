@@ -1,6 +1,6 @@
 {meta: title Back To Old Smoky Mountain}
 {meta: artist Gene Autry}
-{meta: writer Hugh Cross}
+{meta: composer Hugh Cross}
 
 {start_of_verse: Verse 1}
 [G]There's a place I love [D7]so

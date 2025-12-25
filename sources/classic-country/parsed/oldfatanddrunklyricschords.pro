@@ -1,6 +1,6 @@
 {meta: title Old Fat and Drunk}
 {meta: artist The Austin Lounge Lizards}
-{meta: writer Conrad Deisler}
+{meta: composer Conrad Deisler}
 
 {start_of_verse: Verse 1}
 [G]Are you wearing a pinkish tan sweat[C]shirt my old friend

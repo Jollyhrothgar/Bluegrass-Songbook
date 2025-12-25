@@ -1,6 +1,6 @@
 {meta: title Nothing Takes The Place Of Loving You}
 {meta: artist Stonewall Jackson}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]I've tried everything that I could think of

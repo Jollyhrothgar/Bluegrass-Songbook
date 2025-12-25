@@ -1,6 +1,6 @@
 {meta: title Tennessee River}
 {meta: artist Alabama}
-{meta: writer Randy Owen}
+{meta: composer Randy Owen}
 
 {start_of_verse: Verse 1}
 [G]I was born across the [D7]river

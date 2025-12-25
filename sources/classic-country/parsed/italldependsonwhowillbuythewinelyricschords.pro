@@ -1,6 +1,6 @@
 {meta: title It All Depends On Who Will Buy The Wine}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Billy B. Mize}
+{meta: composer Billy B. Mize}
 
 {start_of_verse: Verse 1}
 [C]The kind of life you’re living since you left [F]me

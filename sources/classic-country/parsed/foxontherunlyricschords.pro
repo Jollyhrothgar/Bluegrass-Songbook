@@ -1,6 +1,6 @@
 {meta: title Fox on the Run}
 {meta: artist George Jones}
-{meta: writer Tony Hazzard}
+{meta: composer Tony Hazzard}
 
 {start_of_verse: Verse 1}
 [G]She walks through the [D7]corn leading down [Am]to the [C]river

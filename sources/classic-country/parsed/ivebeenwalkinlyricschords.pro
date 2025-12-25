@@ -1,6 +1,6 @@
 {meta: title I've Been Walkin'}
 {meta: artist Ernest Tubb}
-{meta: writer Gladys Flatt and Josh Graves}
+{meta: composer Gladys Flatt and Josh Graves}
 
 {start_of_verse: Verse 1}
 [G]Well I couldn't sleep last night and started [C]walkin'

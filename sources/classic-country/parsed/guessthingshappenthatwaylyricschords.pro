@@ -1,6 +1,6 @@
 {meta: title Guess Things Happen That Way}
 {meta: artist Johnny Cash}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]Well you ask me if I'll forget my [F]baby

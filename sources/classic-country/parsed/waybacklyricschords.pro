@@ -1,6 +1,6 @@
 {meta: title Way Back}
 {meta: artist John Conlee}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [G7]Way [C]back when we were [F]lovers

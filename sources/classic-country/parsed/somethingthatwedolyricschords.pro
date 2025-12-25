@@ -1,6 +1,6 @@
 {meta: title Something That We Do}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Skip Ewing}
+{meta: composer Clint Black and Skip Ewing}
 
 {start_of_verse: Verse 1}
 [G]I remember well the day we wed I can see that [C]picture in my [G]head

@@ -1,6 +1,6 @@
 {meta: title You'd Better Stop Tellin' Lies About Me}
 {meta: artist Eddy Arnold}
-{meta: writer Vaughn Horton}
+{meta: composer Vaughn Horton}
 
 {start_of_verse: Verse 1}
 [G7]You'd better [C]stop tellin' lies about [G7]me

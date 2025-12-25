@@ -1,6 +1,6 @@
 {meta: title Just Between the Two of Us}
 {meta: artist Merle Haggard}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [G]Just between the [D7]two of us we know our love is [G]gone

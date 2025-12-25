@@ -1,6 +1,6 @@
 {meta: title If You Don't Know Your Roses}
 {meta: artist Darrell McCall}
-{meta: writer Royce Glenn Sutton and A.L. Owens}
+{meta: composer Royce Glenn Sutton and A.L. Owens}
 
 {start_of_verse: Verse 1}
 [C]I see the pretty [G7]roses that he sent [C]you

@@ -1,6 +1,6 @@
 {meta: title The Reverend Mr. Black}
 {meta: artist Johnny Cash}
-{meta: writer Billy Edd & Jed Peters}
+{meta: composer Billy Edd & Jed Peters}
 
 {start_of_verse: Verse 1}
 [C]He was a mountain of a man and I want you to [F]know 

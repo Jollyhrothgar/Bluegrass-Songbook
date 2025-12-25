@@ -1,6 +1,6 @@
 {meta: title My Heart}
 {meta: artist Ronnie Milsap}
-{meta: writer Don Pfrimmer and Charles Quillen}
+{meta: composer Don Pfrimmer and Charles Quillen}
 
 {start_of_verse: Verse 1}
 [G]I’ll take a long va[Am]cation 

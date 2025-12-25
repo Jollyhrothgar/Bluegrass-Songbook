@@ -1,6 +1,6 @@
 {meta: title Build My Mansion}
 {meta: artist Gene Watson}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [C]Oh build my [F]mansion next door to [C]Jesus

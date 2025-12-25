@@ -1,6 +1,6 @@
 {meta: title Fools Like Me}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jack Clement and Murphy Maddux}
+{meta: composer Jack Clement and Murphy Maddux}
 
 {start_of_verse: Verse 1}
 [C]Everybody tells me love is [G7]blind

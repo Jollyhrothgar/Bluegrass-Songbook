@@ -1,6 +1,6 @@
 {meta: title Oh How I Love Jesus}
 {meta: artist Randy Travis}
-{meta: writer Thomas Anthony Whitfield}
+{meta: composer Thomas Anthony Whitfield}
 
 {start_of_verse: Verse 1}
 [G]There is a name I love to hear

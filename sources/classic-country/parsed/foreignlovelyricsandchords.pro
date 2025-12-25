@@ -1,6 +1,6 @@
 {meta: title Foreign Love}
 {meta: artist Webb Pierce}
-{meta: writer Lawton Williams}
+{meta: composer Lawton Williams}
 
 {start_of_verse: Verse 1}
 [C]Harbor lights [F]ahead are brightly [C]shining 

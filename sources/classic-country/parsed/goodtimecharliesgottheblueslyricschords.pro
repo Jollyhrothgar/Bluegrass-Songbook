@@ -1,6 +1,6 @@
 {meta: title Good Time Charlie's Got The Blues}
 {meta: artist Cal Smith}
-{meta: writer Danny O'Keefe}
+{meta: composer Danny O'Keefe}
 
 {start_of_verse: Verse 1}
 [C]Everybody's gone away

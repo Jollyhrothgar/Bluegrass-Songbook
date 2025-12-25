@@ -1,6 +1,6 @@
 {meta: title Eyes}
 {meta: artist Marty Robbins}
-{meta: writer Marty Robbins and Karen Russell}
+{meta: composer Marty Robbins and Karen Russell}
 
 {start_of_verse: Verse 1}
 [G]She always laughs the [F]loudest and she [C]seems so satis[G]fied

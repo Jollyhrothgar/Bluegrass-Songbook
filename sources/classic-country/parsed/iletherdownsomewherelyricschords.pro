@@ -1,6 +1,6 @@
 {meta: title I Let Her Down Somewhere}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert and Sonny James}
+{meta: composer Bob Tubert and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]Please forgive her when you see her acting [F]like she doesn't [Dm]care

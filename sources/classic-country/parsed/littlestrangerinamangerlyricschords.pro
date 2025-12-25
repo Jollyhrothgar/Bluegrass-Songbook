@@ -1,6 +1,6 @@
 {meta: title Little Stranger (In A Manger)}
 {meta: artist Marty Robbins}
-{meta: writer Tommie Connor}
+{meta: composer Tommie Connor}
 
 {start_of_verse: Verse 1}
 [C]Praise and glory to the [G]highest little [C]stranger here on [G][D7]earth

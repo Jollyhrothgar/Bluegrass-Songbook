@@ -1,6 +1,6 @@
 {meta: title Anything Your Heart Desires}
 {meta: artist Faron Young}
-{meta: writer Billy Walker}
+{meta: composer Billy Walker}
 
 {start_of_verse: Verse 1}
 [C]Anything your heart [G7]desires 

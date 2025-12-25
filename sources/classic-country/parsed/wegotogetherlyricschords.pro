@@ -1,6 +1,6 @@
 {meta: title We Go Together}
 {meta: artist George Jones}
-{meta: writer Norro Wilson, Danny Walls, Sammy Lyons}
+{meta: composer Norro Wilson, Danny Walls, Sammy Lyons}
 
 {start_of_verse: Verse 1}
 [G]The places where we used to meet we go [D7]together

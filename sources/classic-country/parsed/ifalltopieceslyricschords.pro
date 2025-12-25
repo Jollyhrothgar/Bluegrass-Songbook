@@ -1,6 +1,6 @@
 {meta: title I Fall to Pieces}
 {meta: artist Patsy Cline}
-{meta: writer Harlan Howard and Hank Cochran}
+{meta: composer Harlan Howard and Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]I  [C]Fall To [D7]Pieces  

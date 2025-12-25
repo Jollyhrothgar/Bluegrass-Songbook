@@ -1,6 +1,6 @@
 {meta: title Your Long Journey}
 {meta: artist Emmylou Harris}
-{meta: writer Doc Watson and Rosa Lee Watson}
+{meta: composer Doc Watson and Rosa Lee Watson}
 
 {start_of_verse: Verse 1}
 [C]God's given us years of [G7]happiness [C]here

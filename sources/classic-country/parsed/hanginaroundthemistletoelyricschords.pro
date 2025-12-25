@@ -1,6 +1,6 @@
 {meta: title Hangin' Around The Mistletoe}
 {meta: artist Alabama}
-{meta: writer Kostas}
+{meta: composer Kostas}
 
 {start_of_verse: Verse 1}
 [G]Snowy days and frosty nights

@@ -1,6 +1,6 @@
 {meta: title Forgive Me}
 {meta: artist Webb Pierce}
-{meta: writer Wiley Walker and Gene Sullivan}
+{meta: composer Wiley Walker and Gene Sullivan}
 
 {start_of_verse: Verse 1}
 [C]I left you and left you broken [C7]hearted

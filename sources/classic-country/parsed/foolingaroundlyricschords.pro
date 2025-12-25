@@ -1,6 +1,6 @@
 {meta: title Fooling Around}
 {meta: artist Patsy Cline}
-{meta: writer Harlan Howard and Buck Owens}
+{meta: composer Harlan Howard and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G7]I know that [C]you've been foolin around on me right from the [G7]start

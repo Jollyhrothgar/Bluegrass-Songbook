@@ -1,6 +1,6 @@
 {meta: title Poor Little Jimmy}
 {meta: artist Hank Snow}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]Well poor little Jimmy was a real cool [F]kid

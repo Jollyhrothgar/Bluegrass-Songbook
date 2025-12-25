@@ -1,6 +1,6 @@
 {meta: title At The End Of Nowhere}
 {meta: artist Slim Whitman}
-{meta: writer Zeke Clements}
+{meta: composer Zeke Clements}
 
 {start_of_verse: Verse 1}
 [C]At the end of [A#7]no-w[F]here there will I [C]be 

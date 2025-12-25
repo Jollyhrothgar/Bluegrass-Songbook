@@ -1,6 +1,6 @@
 {meta: title She Always Talked About Mexico}
 {meta: artist David Ball}
-{meta: writer Wood Newton and David Ball}
+{meta: composer Wood Newton and David Ball}
 
 {start_of_verse: Verse 1}
 [C]She blew [Em]into this old [F]one horse town

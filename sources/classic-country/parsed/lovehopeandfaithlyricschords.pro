@@ -1,6 +1,6 @@
 {meta: title Love Hope and Faith}
 {meta: artist Daniel O'Donnell}
-{meta: writer Stephen Taylor and Heather Taylor}
+{meta: composer Stephen Taylor and Heather Taylor}
 
 {start_of_verse: Verse 1}
 [D7]We all [G]need a path of [Em]life to walk [D7]along

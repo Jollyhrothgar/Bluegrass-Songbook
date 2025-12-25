@@ -1,6 +1,6 @@
 {meta: title Deepening Snow}
 {meta: artist Connie Smith}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]It's snowing out there in the gloaming

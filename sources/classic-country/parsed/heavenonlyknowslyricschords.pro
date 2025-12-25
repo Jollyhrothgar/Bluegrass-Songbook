@@ -1,6 +1,6 @@
 {meta: title Heaven Only Knows}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [C]Every night it's the same

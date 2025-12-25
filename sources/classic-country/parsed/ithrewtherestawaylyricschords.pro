@@ -1,6 +1,6 @@
 {meta: title I Threw The Rest Away}
 {meta: artist Tracy Lawrence}
-{meta: writer Paul Nelson and Gene Nelson}
+{meta: composer Paul Nelson and Gene Nelson}
 
 {start_of_verse: Verse 1}
 [C]Met him in a dive down in New Orleans 

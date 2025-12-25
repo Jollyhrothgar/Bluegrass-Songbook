@@ -1,6 +1,6 @@
 {meta: title Be My Love Again}
 {meta: artist Brenda Lee}
-{meta: writer Chuck Taylor}
+{meta: composer Chuck Taylor}
 
 {start_of_verse: Verse 1}
 [C]Please come and walk with me please come and talk with me

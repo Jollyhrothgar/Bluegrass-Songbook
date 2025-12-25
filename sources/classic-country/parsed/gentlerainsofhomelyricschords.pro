@@ -1,6 +1,6 @@
 {meta: title Gentle Rains Of Home}
 {meta: artist George Morgan}
-{meta: writer Jean Chapel}
+{meta: composer Jean Chapel}
 
 {start_of_verse: Verse 1}
 [C]When I let these restless feet start [F]walking

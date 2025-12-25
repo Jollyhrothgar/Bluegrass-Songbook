@@ -1,6 +1,6 @@
 {meta: title Dancin' On Glass}
 {meta: artist Doug Stone}
-{meta: writer Charles Robinson and Jeff Lysyczyn}
+{meta: composer Charles Robinson and Jeff Lysyczyn}
 
 {start_of_verse: Verse 1}
 [C]Don't [G]talk about it  [C]not even your [D7]best [G]friend 

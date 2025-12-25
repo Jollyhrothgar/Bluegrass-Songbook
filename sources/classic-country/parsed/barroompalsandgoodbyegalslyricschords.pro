@@ -1,6 +1,6 @@
 {meta: title Barroom Pals And Goodbye Gals}
 {meta: artist Jim Ed Brown}
-{meta: writer Bucky Jones and Royce Porter}
+{meta: composer Bucky Jones and Royce Porter}
 
 {start_of_verse: Verse 1}
 [G]Fancy lace on fancy ladies

@@ -1,6 +1,6 @@
 {meta: title I Wasn't Man Enough}
 {meta: artist Kenny Rogers}
-{meta: writer Roger Bowling and Larry Butler}
+{meta: composer Roger Bowling and Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]Words [G7]couldn't [C]hold her

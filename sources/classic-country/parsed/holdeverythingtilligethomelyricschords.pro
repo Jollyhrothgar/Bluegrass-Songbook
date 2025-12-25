@@ -1,6 +1,6 @@
 {meta: title Hold Everything Till I Get Home}
 {meta: artist Red Sovine}
-{meta: writer Red Hayes and Buddy Dee}
+{meta: composer Red Hayes and Buddy Dee}
 
 {start_of_verse: Verse 1}
 [C]Hold everything till I come [F]home

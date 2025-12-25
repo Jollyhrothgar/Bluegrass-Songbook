@@ -1,6 +1,6 @@
 {meta: title Barrooms To Bedrooms}
 {meta: artist David Wills}
-{meta: writer Seymour S. Rosenberg and David Wills}
+{meta: composer Seymour S. Rosenberg and David Wills}
 
 {start_of_verse: Verse 1}
 [C]Take a minute and [F]think what you're [C]doing

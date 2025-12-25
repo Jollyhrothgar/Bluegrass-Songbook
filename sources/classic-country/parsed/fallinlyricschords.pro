@@ -1,6 +1,6 @@
 {meta: title Fallin'}
 {meta: artist Wanda Jackson}
-{meta: writer Howard Greenfield and Neil Sedaka}
+{meta: composer Howard Greenfield and Neil Sedaka}
 
 {start_of_verse: Verse 1}
 [C]I got the feelin' I'm fallin' like a star up in the blue

@@ -1,6 +1,6 @@
 {meta: title Revive Us Again}
 {meta: artist Willie Nelson}
-{meta: writer William P. Mackay and John J. Husband}
+{meta: composer William P. Mackay and John J. Husband}
 
 {start_of_verse: Verse 1}
 [C]We praise Thee O God for the Son of Thy love

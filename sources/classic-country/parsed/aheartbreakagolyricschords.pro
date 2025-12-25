@@ -1,6 +1,6 @@
 {meta: title A Heartbreak Ago}
 {meta: artist Cowboy Copas}
-{meta: writer Johnny Grimes}
+{meta: composer Johnny Grimes}
 
 {start_of_verse: Verse 1}
 [C]Heartbreaking daddy they [G7]call me

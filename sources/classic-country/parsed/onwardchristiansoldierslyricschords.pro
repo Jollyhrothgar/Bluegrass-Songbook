@@ -1,6 +1,6 @@
 {meta: title Onward Christian Soldiers}
 {meta: artist Tommy Overstreet}
-{meta: writer Sabine Baring-Gould and Arthur S. Sullivan}
+{meta: composer Sabine Baring-Gould and Arthur S. Sullivan}
 
 {start_of_verse: Verse 1}
 [C]Onward Christian [G7]soldiers marching as to [C]war

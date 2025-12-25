@@ -1,6 +1,6 @@
 {meta: title What Do You Want With His Love}
 {meta: artist David Ball}
-{meta: writer David Ball and Larry Jefferies}
+{meta: composer David Ball and Larry Jefferies}
 
 {start_of_verse: Verse 1}
 [G]Don't tell me it's all over don't [C]break my heart in two

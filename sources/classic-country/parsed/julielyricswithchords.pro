@@ -1,6 +1,6 @@
 {meta: title Julie}
 {meta: artist Cal Smith}
-{meta: writer Eddie Setser}
+{meta: composer Eddie Setser}
 
 {start_of_verse: Verse 1}
 [G]Julie was the [C]life of my [G]soul

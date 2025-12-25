@@ -1,6 +1,6 @@
 {meta: title Foreign Love Affair}
 {meta: artist Hank Locklin}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]I wonder how many poor boys like [D7]me

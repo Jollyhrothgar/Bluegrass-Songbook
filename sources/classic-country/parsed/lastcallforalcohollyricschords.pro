@@ -1,6 +1,6 @@
 {meta: title Last Call For Alcohol}
 {meta: artist Charlie Walker}
-{meta: writer Don Rollins}
+{meta: composer Don Rollins}
 
 {start_of_verse: Verse 1}
 [C]There's no blonde at the [C7]bar making [F]eyes at me

@@ -1,6 +1,6 @@
 {meta: title Blue As I Do}
 {meta: artist Kris Kristofferson}
-{meta: writer Stephen Bruton}
+{meta: composer Stephen Bruton}
 
 {start_of_verse: Verse 1}
 [D7]Day drinkin' just thinkin' out [G]loud

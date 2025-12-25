@@ -1,6 +1,6 @@
 {meta: title Way Back In The Mountains}
 {meta: artist Merle Haggard}
-{meta: writer Max D. Barnes and Merle Haggard}
+{meta: composer Max D. Barnes and Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]How far can a [G7]man stretch a [C]dollar

@@ -1,6 +1,6 @@
 {meta: title I'm Working on a Building}
 {meta: artist Bill Monroe}
-{meta: writer A.P. Carter and Reverend Louis Overstreet}
+{meta: composer A.P. Carter and Reverend Louis Overstreet}
 
 {start_of_verse: Verse 1}
 [G]I'm a working on building I'm a working on building

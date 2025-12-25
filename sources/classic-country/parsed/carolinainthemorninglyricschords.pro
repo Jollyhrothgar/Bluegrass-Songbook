@@ -1,6 +1,6 @@
 {meta: title Carolina In The Morning}
 {meta: artist Dean Martin}
-{meta: writer Gus Kahn and Walter Donaldson}
+{meta: composer Gus Kahn and Walter Donaldson}
 
 {start_of_verse: Verse 1}
 [C]Nothing could be finer

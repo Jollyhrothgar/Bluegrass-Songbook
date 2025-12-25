@@ -1,6 +1,6 @@
 {meta: title Road To Surrender}
 {meta: artist Randy Travis}
-{meta: writer Angela Russell, Buffy Lawson, Gary Duffey}
+{meta: composer Angela Russell, Buffy Lawson, Gary Duffey}
 
 {start_of_verse: Verse 1}
 [G]Dear Lord I've heard you know  

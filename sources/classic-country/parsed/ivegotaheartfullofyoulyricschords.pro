@@ -1,6 +1,6 @@
 {meta: title I've Got A Heart Full Of You}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes and Vern Gosdin}
+{meta: composer Max D. Barnes and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]I'm down to my last cent can't even pay the rent

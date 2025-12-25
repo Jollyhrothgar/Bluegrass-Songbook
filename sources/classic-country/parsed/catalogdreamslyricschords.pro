@@ -1,6 +1,6 @@
 {meta: title Catalog Dreams}
 {meta: artist Joni Harms}
-{meta: writer Joni Harms and Jim Varsos}
+{meta: composer Joni Harms and Jim Varsos}
 
 {start_of_verse: Verse 1}
 [C]She could see herself a-sewin' on that brand new machine

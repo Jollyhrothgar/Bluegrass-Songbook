@@ -1,6 +1,6 @@
 {meta: title Tunnel Of Your Mind}
 {meta: artist The Osborne Brothers}
-{meta: writer Bobby Osborne}
+{meta: composer Bobby Osborne}
 
 {start_of_verse: Verse 1}
 [G]Somewhere [B7]deep in a [C]tunnel of your [D7]mind

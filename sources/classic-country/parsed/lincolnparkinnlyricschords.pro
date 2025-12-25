@@ -1,6 +1,6 @@
 {meta: title Lincoln Park Inn}
 {meta: artist Bobby Bare}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [G]My name's in the paper where I took the boy scouts to [C]hike [Am]

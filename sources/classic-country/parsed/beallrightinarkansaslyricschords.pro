@@ -1,6 +1,6 @@
 {meta: title Be All Right In Arkansas}
 {meta: artist Connie Smith}
-{meta: writer Gery House and Billy Burns}
+{meta: composer Gery House and Billy Burns}
 
 {start_of_verse: Verse 1}
 [C]Born in Arkansas Mississippi [F]river at my [C]backdoor

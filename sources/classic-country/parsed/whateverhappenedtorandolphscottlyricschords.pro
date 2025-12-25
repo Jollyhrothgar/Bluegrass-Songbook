@@ -1,6 +1,6 @@
 {meta: title Whatever Happened To Randolph Scott}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [G]Everybody knows when you go to the show

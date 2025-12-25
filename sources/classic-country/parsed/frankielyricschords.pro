@@ -1,6 +1,6 @@
 {meta: title Frankie}
 {meta: artist Connie Francis}
-{meta: writer Howard Greenfield and Neil Sedaka}
+{meta: composer Howard Greenfield and Neil Sedaka}
 
 {start_of_verse: Verse 1}
 [C]Though you've found a new [Am]love [Dm]I still miss you [G7]so

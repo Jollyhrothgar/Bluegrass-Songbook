@@ -1,6 +1,6 @@
 {meta: title That New Old Fashioned Love}
 {meta: artist Jimmy Dean}
-{meta: writer Gary Sanford Paxton}
+{meta: composer Gary Sanford Paxton}
 
 {start_of_verse: Verse 1}
 [C]I love that [D7]new old fashioned [G7]love you give to [C]me

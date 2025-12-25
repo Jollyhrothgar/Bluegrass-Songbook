@@ -1,6 +1,6 @@
 {meta: title A Heart Like You}
 {meta: artist Connie Smith}
-{meta: writer Dallas Fraizer}
+{meta: composer Dallas Fraizer}
 
 {start_of_verse: Verse 1}
 [G7]A million [C]times you [F]softly said don’t [C]let him [G7]slip a[C]way

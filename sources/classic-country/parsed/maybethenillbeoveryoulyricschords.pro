@@ -1,6 +1,6 @@
 {meta: title Maybe Then I'll Be Over You}
 {meta: artist Vern Gosdin}
-{meta: writer Bobby K. Boyd}
+{meta: composer Bobby K. Boyd}
 
 {start_of_verse: Verse 1}
 [C]I still love you though I should [G7]hate you

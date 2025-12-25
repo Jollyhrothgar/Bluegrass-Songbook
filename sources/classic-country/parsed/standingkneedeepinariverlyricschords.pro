@@ -1,6 +1,6 @@
 {meta: title Standing Knee Deep In A River}
 {meta: artist Don Williams}
-{meta: writer Bob McDill, Dickey Lee, Bucky Jones}
+{meta: composer Bob McDill, Dickey Lee, Bucky Jones}
 
 {start_of_verse: Verse 1}
 [C]Friends I could [Em]count on [F]I can count on one [C]hand 

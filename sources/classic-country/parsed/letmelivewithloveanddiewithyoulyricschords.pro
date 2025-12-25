@@ -1,6 +1,6 @@
 {meta: title Let Me Live With Love And Die With You}
 {meta: artist Ricky Van Shelton}
-{meta: writer Red Lane and Skip Ewing}
+{meta: composer Red Lane and Skip Ewing}
 
 {start_of_verse: Verse 1}
 [G]Honey sit down let me [C]tell you what I'm [G]thinking

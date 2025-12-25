@@ -1,6 +1,6 @@
 {meta: title Going Like Wildfire}
 {meta: artist Mac Wiseman}
-{meta: writer George E. Krise}
+{meta: composer George E. Krise}
 
 {start_of_verse: Verse 1}
 [G]Your charms are closing in on my just like a prairie [D7]fire

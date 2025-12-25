@@ -1,6 +1,6 @@
 {meta: title Live In My Heart}
 {meta: artist Mel Tillis}
-{meta: writer Jerry House}
+{meta: composer Jerry House}
 
 {start_of_verse: Verse 1}
 [C]Live in my [F]heart [C]pay me [G7]no [C]rent

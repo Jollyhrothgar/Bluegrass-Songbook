@@ -1,6 +1,6 @@
 {meta: title The Mark Of A Heel}
 {meta: artist Hank Thompson}
-{meta: writer Neal Merritt and Happy Wilson}
+{meta: composer Neal Merritt and Happy Wilson}
 
 {start_of_verse: Verse 1}
 [C]Every man must leave his footprints

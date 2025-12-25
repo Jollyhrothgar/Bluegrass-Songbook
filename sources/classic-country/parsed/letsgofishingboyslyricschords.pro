@@ -1,6 +1,6 @@
 {meta: title Let's Go Fishing Boys}
 {meta: artist Charlie Walker}
-{meta: writer Billy Arr}
+{meta: composer Billy Arr}
 
 {start_of_verse: Verse 1}
 [G]Well let's go fishing boys the girls are biting

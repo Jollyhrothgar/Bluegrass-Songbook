@@ -1,6 +1,6 @@
 {meta: title Blind And Afraid Of The Dark}
 {meta: artist Keith Whitley}
-{meta: writer Max D. Barnes and Keith Whitley}
+{meta: composer Max D. Barnes and Keith Whitley}
 
 {start_of_verse: Verse 1}
 [C]For [G7]you the light is shining [C]bright

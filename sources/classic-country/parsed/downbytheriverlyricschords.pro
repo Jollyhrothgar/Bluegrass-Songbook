@@ -1,6 +1,6 @@
 {meta: title Down by the River}
 {meta: artist Faron Young}
-{meta: writer Jan Crutchfield and Teddy Wilburn}
+{meta: composer Jan Crutchfield and Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]Down by the river   [F]there's a [C]tree

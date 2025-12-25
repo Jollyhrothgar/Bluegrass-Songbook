@@ -1,6 +1,6 @@
 {meta: title Peter Cottontail}
 {meta: artist Gene Autry}
-{meta: writer Walter E. Rollins and Steve Nelon}
+{meta: composer Walter E. Rollins and Steve Nelon}
 
 {start_of_verse: Verse 1}
 [G]Here comes Peter Cottontail [C]hoppin' down the bunny trail

@@ -1,6 +1,6 @@
 {meta: title Rainy Windy Sunshine (Rodeo Road)}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy and Howard Bellamy}
+{meta: composer David Bellamy and Howard Bellamy}
 
 {start_of_verse: Verse 1}
 [G]Little Rainy I know [D7]you've been low on [C]money

@@ -1,6 +1,6 @@
 {meta: title The Song We Made Love To}
 {meta: artist Mickey Gilley}
-{meta: writer Kenneth Wahle}
+{meta: composer Kenneth Wahle}
 
 {start_of_verse: Verse 1}
 [C]Too hard to think about too [A7]sad to talk about

@@ -1,6 +1,6 @@
 {meta: title If You'd Have Only Taken The Time}
 {meta: artist Charley Pride}
-{meta: writer Kent Westberry and Merv Shiner}
+{meta: composer Kent Westberry and Merv Shiner}
 
 {start_of_verse: Verse 1}
 [C]If you had only [F]taken the [C]time to [F]tell me you're [C]mine

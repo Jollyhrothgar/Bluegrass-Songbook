@@ -1,6 +1,6 @@
 {meta: title An Occasional Rose}
 {meta: artist Marty Robbins}
-{meta: writer Dave Burgess}
+{meta: composer Dave Burgess}
 
 {start_of_verse: Verse 1}
 [C]It's so hard to fight a memory

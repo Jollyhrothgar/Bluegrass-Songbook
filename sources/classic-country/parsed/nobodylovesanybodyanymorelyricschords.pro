@@ -1,6 +1,6 @@
 {meta: title Nobody Loves Anybody Anymore}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson and Billy Lance Swan}
+{meta: composer Kris Kristofferson and Billy Lance Swan}
 
 {start_of_verse: Verse 1}
 [C]Nobody loves [G7]anybody anymore [C]dear nobody loves anybody [C][G7]anymore

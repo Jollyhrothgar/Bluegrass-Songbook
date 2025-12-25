@@ -1,6 +1,6 @@
 {meta: title I've Got To Stop Loving You}
 {meta: artist Patty Loveless}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [G]The bright lights don't thrill me like they used to [C]do

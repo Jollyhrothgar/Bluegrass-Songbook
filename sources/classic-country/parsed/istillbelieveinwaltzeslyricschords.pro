@@ -1,6 +1,6 @@
 {meta: title I Still Believe In Waltzes}
 {meta: artist Conway Twitty}
-{meta: writer Bob Morrison, Jim McBride, Michael D. Hughes}
+{meta: composer Bob Morrison, Jim McBride, Michael D. Hughes}
 
 {start_of_verse: Verse 1}
 [C]I pushed him away and tearfully said

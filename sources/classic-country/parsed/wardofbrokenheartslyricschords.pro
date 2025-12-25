@@ -1,6 +1,6 @@
 {meta: title Ward Of Broken Hearts}
 {meta: artist Stonewall Jackson}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [C]Since our love broke down and fell 

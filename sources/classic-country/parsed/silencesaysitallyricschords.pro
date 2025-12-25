@@ -1,6 +1,6 @@
 {meta: title Silence Says It All}
 {meta: artist Martin Delray}
-{meta: writer James A. Rushing}
+{meta: composer James A. Rushing}
 
 {start_of_verse: Verse 1}
 [C]He closed the door to his old truck and [G7]slowly crossed the [C]lawn

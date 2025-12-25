@@ -1,6 +1,6 @@
 {meta: title There's Always Me}
 {meta: artist Elvis Presley}
-{meta: writer Don Robertson}
+{meta: composer Don Robertson}
 
 {start_of_verse: Verse 1}
 [C]When the evening shadows fall 

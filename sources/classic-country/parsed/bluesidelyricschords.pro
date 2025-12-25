@@ -1,6 +1,6 @@
 {meta: title Blue Side}
 {meta: artist Crystal Gayle}
-{meta: writer David Lasley and Allee Willis}
+{meta: composer David Lasley and Allee Willis}
 
 {start_of_verse: Verse 1}
 [G]It's the same old [Em]me in the [Am]same old [D7]clothes

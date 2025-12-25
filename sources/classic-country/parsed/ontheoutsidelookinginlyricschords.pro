@@ -1,6 +1,6 @@
 {meta: title On The Outside Looking In}
 {meta: artist Connie Francis}
-{meta: writer Neil Sedaka and Howard Greenfield}
+{meta: composer Neil Sedaka and Howard Greenfield}
 
 {start_of_verse: Verse 1}
 [G]I pass your [C]win-dow [G]and through the candle [D7]glow

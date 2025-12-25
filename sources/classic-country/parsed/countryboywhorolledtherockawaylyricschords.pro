@@ -1,6 +1,6 @@
 {meta: title Country Boy Who Rolled The Rock Away}
 {meta: artist David Allan Coe}
-{meta: writer Dean Dillon, Buddy Cannon, Jimmy Darrell}
+{meta: composer Dean Dillon, Buddy Cannon, Jimmy Darrell}
 
 {start_of_verse: Verse 1}
 [C]Hank rode in from Alabam to be a [D7]star 

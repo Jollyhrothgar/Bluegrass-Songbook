@@ -1,6 +1,6 @@
 {meta: title Hula Rock}
 {meta: artist Hank Snow}
-{meta: writer Dusty Rose and Betty Rose}
+{meta: composer Dusty Rose and Betty Rose}
 
 {start_of_verse: Verse 1}
 [C]Hawa-ii's [C][F]calling

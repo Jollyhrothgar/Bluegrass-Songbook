@@ -1,6 +1,6 @@
 {meta: title Normally Norma Loves Me}
 {meta: artist Red Sovine}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]Normally Norma's kissin' [E7]me

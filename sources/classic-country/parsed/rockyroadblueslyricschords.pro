@@ -1,6 +1,6 @@
 {meta: title Rocky Road Blues}
 {meta: artist Dwight Yoakum}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [C]Lord the road is rocky but it won't be rocky long

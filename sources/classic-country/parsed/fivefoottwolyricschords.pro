@@ -1,6 +1,6 @@
 {meta: title Five Foot Two}
 {meta: artist Dean Martin}
-{meta: writer Ray Henderson, Samuel Lewis, Joseph Young}
+{meta: composer Ray Henderson, Samuel Lewis, Joseph Young}
 
 {start_of_verse: Verse 1}
 [C]Five foot two eyes of [E7]blue

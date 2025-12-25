@@ -1,6 +1,6 @@
 {meta: title You Never Did Give Up On Me}
 {meta: artist Charley Pride}
-{meta: writer Allen Reynolds}
+{meta: composer Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [C]Through the years with you [F]I have often [C]fallen

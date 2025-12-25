@@ -1,6 +1,6 @@
 {meta: title Mother Of A Honky Tonk Girl}
 {meta: artist Jim Reeves}
-{meta: writer Bob Newman}
+{meta: composer Bob Newman}
 
 {start_of_verse: Verse 1}
 [C]I'm the [F]mother of a honky tonk [C]girl

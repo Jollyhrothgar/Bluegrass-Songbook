@@ -1,6 +1,6 @@
 {meta: title Rockin' Bicycle}
 {meta: artist Fats Domino}
-{meta: writer Antoine Domino, Jack Jessup, Pee Wee Maddux}
+{meta: composer Antoine Domino, Jack Jessup, Pee Wee Maddux}
 
 {start_of_verse: Verse 1}
 [C]Ain't got a Cadillac or [F]big Oldsmobile 

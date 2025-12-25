@@ -1,6 +1,6 @@
 {meta: title Girls Women and Ladies}
 {meta: artist Ed Bruce}
-{meta: writer Ed Bruce, Patsy Bruce, Ron Peterson}
+{meta: composer Ed Bruce, Patsy Bruce, Ron Peterson}
 
 {start_of_verse: Verse 1}
 [C]There was only [F]me and her and [C]him

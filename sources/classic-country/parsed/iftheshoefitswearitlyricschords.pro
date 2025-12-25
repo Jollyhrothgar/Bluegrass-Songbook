@@ -1,6 +1,6 @@
 {meta: title If The Shoe Fits Wear It}
 {meta: artist Gene Watson}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]You brush off the truth as if it was a salt on the [F]table

@@ -1,6 +1,6 @@
 {meta: title Prize Possession}
 {meta: artist Ferlin Husky}
-{meta: writer Aaron Schroeder, David Hill, Bobby Stevenson}
+{meta: composer Aaron Schroeder, David Hill, Bobby Stevenson}
 
 {start_of_verse: Verse 1}
 [G]Well if I own the world and [D7]all its [G]treasures

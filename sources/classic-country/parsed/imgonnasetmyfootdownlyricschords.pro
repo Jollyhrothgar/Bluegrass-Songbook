@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Set My Foot Down}
 {meta: artist Buddy Holly}
-{meta: writer Charles Holley}
+{meta: composer Charles Holley}
 
 {start_of_verse: Verse 1}
 [C]Well you say you're mine but baby you don't show it

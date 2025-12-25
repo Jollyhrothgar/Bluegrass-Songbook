@@ -1,6 +1,6 @@
 {meta: title I Can't Be Satisfied}
 {meta: artist Bob Wills}
-{meta: writer William Lee Conley Broonzy}
+{meta: composer William Lee Conley Broonzy}
 
 {start_of_verse: Verse 1}
 [C]Listen here my baby what I want you to do

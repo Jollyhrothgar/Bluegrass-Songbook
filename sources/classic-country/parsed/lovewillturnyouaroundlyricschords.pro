@@ -1,6 +1,6 @@
 {meta: title Love Will Turn You Around}
 {meta: artist Kenny Rogers}
-{meta: writer David Malloy, Thom Schuyler, Kenny Rogers, Even Stevens}
+{meta: composer David Malloy, Thom Schuyler, Kenny Rogers, Even Stevens}
 
 {start_of_verse: Verse 1}
 [C]You can run you can hide never let it inside

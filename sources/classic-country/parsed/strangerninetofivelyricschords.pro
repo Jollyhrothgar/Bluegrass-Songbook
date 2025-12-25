@@ -1,6 +1,6 @@
 {meta: title Stranger Nine To Five}
 {meta: artist Jean Shepard}
-{meta: writer Charlie Williams, Scott Turner, Chris Roberts}
+{meta: composer Charlie Williams, Scott Turner, Chris Roberts}
 
 {start_of_verse: Verse 1}
 [C]Well there she goes again and the [F]hurt [C]begins

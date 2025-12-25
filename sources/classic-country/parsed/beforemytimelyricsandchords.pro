@@ -1,6 +1,6 @@
 {meta: title Before My Time}
 {meta: artist Carl Smith}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]He lied he [Em]cheated till he [Am]broke your [F]heart

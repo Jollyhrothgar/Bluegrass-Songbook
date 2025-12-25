@@ -1,6 +1,6 @@
 {meta: title Ten Shades Of Green}
 {meta: artist Bobby Mackey}
-{meta: writer Joe Fitzpatrick and Darrell Wayne Perry}
+{meta: composer Joe Fitzpatrick and Darrell Wayne Perry}
 
 {start_of_verse: Verse 1}
 [C]I was so young I [G7]barely re[C]member

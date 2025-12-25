@@ -1,6 +1,6 @@
 {meta: title April Fool}
 {meta: artist Bobby Helms}
-{meta: writer John Lilly}
+{meta: composer John Lilly}
 
 {start_of_verse: Verse 1}
 [G]April fool I'm just an [B7]April fool

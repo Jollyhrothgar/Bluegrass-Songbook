@@ -1,6 +1,6 @@
 {meta: title Pocketful Of Rainbows}
 {meta: artist Elvis Presley}
-{meta: writer Ben Weisman and Fred Wise}
+{meta: composer Ben Weisman and Fred Wise}
 
 {start_of_verse: Verse 1}
 [Am]I don't [C]worry whenever skies are grey [Dm]above

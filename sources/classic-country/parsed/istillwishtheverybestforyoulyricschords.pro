@@ -1,6 +1,6 @@
 {meta: title I Still Wish The Very Best For You}
 {meta: artist Anne Murray}
-{meta: writer Brent Titcomb}
+{meta: composer Brent Titcomb}
 
 {start_of_verse: Verse 1}
 [G]Well you know I'm really [C]bad at writing [G]letters

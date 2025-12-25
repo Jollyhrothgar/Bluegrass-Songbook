@@ -1,6 +1,6 @@
 {meta: title I'm Left You're Right She's Gone}
 {meta: artist Elvis Presley}
-{meta: writer Stan Kesler and Bill Taylor}
+{meta: composer Stan Kesler and Bill Taylor}
 
 {start_of_verse: Verse 1}
 [C]Well you're right I'm [G7]left she's [C]gone

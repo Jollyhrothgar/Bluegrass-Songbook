@@ -1,6 +1,6 @@
 {meta: title Too Much To Gain To Lose}
 {meta: artist Doyle Lawson}
-{meta: writer Reba Joyce (Dottie) Rambo}
+{meta: composer Reba Joyce (Dottie) Rambo}
 
 {start_of_verse: Verse 1}
 [G]Too many [D7]miles be[G]hind me 

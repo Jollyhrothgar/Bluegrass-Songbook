@@ -1,6 +1,6 @@
 {meta: title Long On Lonely (Short On Pride)}
 {meta: artist Randy Travis}
-{meta: writer Bob McDill, Dickey Lee, Bucky Jones}
+{meta: composer Bob McDill, Dickey Lee, Bucky Jones}
 
 {start_of_verse: Verse 1}
 [G]I'll bet that [D7]you're surprised to [C]see me

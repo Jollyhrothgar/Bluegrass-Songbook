@@ -1,6 +1,6 @@
 {meta: title Here I Go Again}
 {meta: artist Ricky Nelson}
-{meta: writer J. Berry and D. Covlay}
+{meta: composer J. Berry and D. Covlay}
 
 {start_of_verse: Verse 1}
 [C]Here I go again in a great big whirly [F]spin

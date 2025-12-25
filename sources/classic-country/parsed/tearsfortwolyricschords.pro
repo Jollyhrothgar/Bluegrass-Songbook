@@ -1,6 +1,6 @@
 {meta: title Tears For Two}
 {meta: artist Dwight Yoakam}
-{meta: writer Dwight Yoakam and Holly Lamar}
+{meta: composer Dwight Yoakam and Holly Lamar}
 
 {start_of_verse: Verse 1}
 [C]Luck found me too [D7]late to [F]be what I could [C]use

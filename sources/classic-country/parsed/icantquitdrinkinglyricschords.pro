@@ -1,6 +1,6 @@
 {meta: title I Can't Quit Drinking}
 {meta: artist Johnny Paycheck}
-{meta: writer Harlan Sanders and Larry Kingston}
+{meta: composer Harlan Sanders and Larry Kingston}
 
 {start_of_verse: Verse 1}
 [C]They could quit making [F]whiskey

@@ -1,6 +1,6 @@
 {meta: title Try A Little Kindness}
 {meta: artist Glen Campbell}
-{meta: writer Bobby Austin and Curt Sapaugh}
+{meta: composer Bobby Austin and Curt Sapaugh}
 
 {start_of_verse: Verse 1}
 [C]If you see your brother [F]standing by the [C]road

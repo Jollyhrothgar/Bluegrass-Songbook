@@ -1,6 +1,6 @@
 {meta: title Will Santy Come To Shanty Town}
 {meta: artist Eddy Arnold}
-{meta: writer Steve Nelson, Ed G. Nelson, Eddy Arnold}
+{meta: composer Steve Nelson, Ed G. Nelson, Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [G7]Will [C]Santy come to Shanty town to a poor little boy like [D7]me

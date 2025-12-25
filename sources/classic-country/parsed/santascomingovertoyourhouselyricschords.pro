@@ -1,6 +1,6 @@
 {meta: title Santa's Coming Over to Your House}
 {meta: artist Brooks and Dunn}
-{meta: writer Don Cook and Kix Brooks}
+{meta: composer Don Cook and Kix Brooks}
 
 {start_of_verse: Verse 1}
 [G]It seemed like just another Christmas Eve

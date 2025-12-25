@@ -1,6 +1,6 @@
 {meta: title You Know I Miss You}
 {meta: artist Fats Domino}
-{meta: writer Al Young and Fats Domino}
+{meta: composer Al Young and Fats Domino}
 
 {start_of_verse: Verse 1}
 [G]The rain is falling   I can hear my baby calling

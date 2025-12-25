@@ -1,6 +1,6 @@
 {meta: title If I Give My Soul}
 {meta: artist Johnny Cash}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [G]Down a dangerous road I have come [C]to where I'm [G]standing

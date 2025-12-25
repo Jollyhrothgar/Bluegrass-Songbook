@@ -1,6 +1,6 @@
 {meta: title Another Chance}
 {meta: artist Tammy Wynette}
-{meta: writer Dennis Knutson, Jerry Taylor, Bobby Drawdy}
+{meta: composer Dennis Knutson, Jerry Taylor, Bobby Drawdy}
 
 {start_of_verse: Verse 1}
 [G]When you left you said you was doing me a favor

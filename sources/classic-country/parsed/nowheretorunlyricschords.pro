@@ -1,6 +1,6 @@
 {meta: title Nowhere To Run}
 {meta: artist Johnny Paycheck}
-{meta: writer F. Myers}
+{meta: composer F. Myers}
 
 {start_of_verse: Verse 1}
 [C]All around is the [Am]sound of tender [F]hearts [G7]breaking

@@ -1,6 +1,6 @@
 {meta: title I'm Not Afraid}
 {meta: artist Ricky Nelson}
-{meta: writer Felice Bryant}
+{meta: composer Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]Love they [Am]say is [F]serious

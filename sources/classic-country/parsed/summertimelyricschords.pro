@@ -1,6 +1,6 @@
 {meta: title Summertime}
 {meta: artist Willie Nelson}
-{meta: writer Du Bose Heywood, Ira Gershwin, George Gershwin}
+{meta: composer Du Bose Heywood, Ira Gershwin, George Gershwin}
 
 {start_of_verse: Verse 1}
 [C]Summer[Am]time  and the [E7]livin' is [Am]easy 

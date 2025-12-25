@@ -1,6 +1,6 @@
 {meta: title That's What It's Like To Be Lonesome}
 {meta: artist Cal Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]The streets are dark and empty as you [C]walk them all [G]alone

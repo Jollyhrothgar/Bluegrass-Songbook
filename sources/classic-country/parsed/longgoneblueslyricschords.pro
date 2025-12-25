@@ -1,6 +1,6 @@
 {meta: title Long Gone Blues}
 {meta: artist Mel Tillis}
-{meta: writer Dave Hanner}
+{meta: composer Dave Hanner}
 
 {start_of_verse: Verse 1}
 [G]You're the woman [Am]  you're the girl

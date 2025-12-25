@@ -1,6 +1,6 @@
 {meta: title I Can't Run Away From Myself}
 {meta: artist Ray Price}
-{meta: writer Hank Cochran and Ray Price}
+{meta: composer Hank Cochran and Ray Price}
 
 {start_of_verse: Verse 1}
 [C]The day you left me I left town that [F]night

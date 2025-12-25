@@ -1,6 +1,6 @@
 {meta: title Jealousy}
 {meta: artist Kitty Wells}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [G]Jealousy [C]is there no [D7]cure 

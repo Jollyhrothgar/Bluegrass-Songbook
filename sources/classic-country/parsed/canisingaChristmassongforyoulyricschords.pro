@@ -1,6 +1,6 @@
 {meta: title Can I Sing A Christmas Song For You}
 {meta: artist Dave Dudley}
-{meta: writer Dave Dudley and Diane Lincoln}
+{meta: composer Dave Dudley and Diane Lincoln}
 
 {start_of_verse: Verse 1}
 [G]Can I hear the jingle jangle jingle 

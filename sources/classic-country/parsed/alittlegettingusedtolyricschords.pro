@@ -1,6 +1,6 @@
 {meta: title A Little Getting Used To}
 {meta: artist Mickey Gilley}
-{meta: writer Jerry Taylor}
+{meta: composer Jerry Taylor}
 
 {start_of_verse: Verse 1}
 [G]Though it wasn't easy [C]

@@ -1,6 +1,6 @@
 {meta: title Nevertheless}
 {meta: artist Anne Murray}
-{meta: writer Bert Kalmar and Harry Ruby}
+{meta: composer Bert Kalmar and Harry Ruby}
 
 {start_of_verse: Verse 1}
 [C]Maybe I'm right [Em]and maybe I'm [D#m]wrong

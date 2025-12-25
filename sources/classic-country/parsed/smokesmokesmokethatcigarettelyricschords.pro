@@ -1,6 +1,6 @@
 {meta: title Smoke Smoke Smoke That Cigarette Lyrics Chords}
 {meta: artist Hank Thompson}
-{meta: writer Merle Travis}
+{meta: composer Merle Travis}
 
 {start_of_verse: Verse 1}
 [G]Now I'm a fellar with a heart of gold

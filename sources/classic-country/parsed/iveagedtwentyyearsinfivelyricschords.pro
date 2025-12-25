@@ -1,6 +1,6 @@
 {meta: title I've Aged Twenty Years In Five}
 {meta: artist George Jones}
-{meta: writer Bob Parrish and Curtis Gordon}
+{meta: composer Bob Parrish and Curtis Gordon}
 
 {start_of_verse: Verse 1}
 [C]As I look in the [G7]mirror this [C]morning

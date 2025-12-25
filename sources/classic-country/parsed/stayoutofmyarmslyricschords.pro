@@ -1,6 +1,6 @@
 {meta: title Stay Out Of My Arms}
 {meta: artist George Strait}
-{meta: writer Jim Lauderdale}
+{meta: composer Jim Lauderdale}
 
 {start_of_verse: Verse 1}
 [C]Many times temp[C7]tation grows so [F]strong

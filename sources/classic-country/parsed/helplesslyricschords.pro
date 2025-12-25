@@ -1,6 +1,6 @@
 {meta: title Helpless}
 {meta: artist Darrell McCall}
-{meta: writer Bob Morris}
+{meta: composer Bob Morris}
 
 {start_of_verse: Verse 1}
 [C]Helpless [F]that's what I'd be without your [C]lips

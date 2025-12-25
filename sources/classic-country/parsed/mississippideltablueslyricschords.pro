@@ -1,6 +1,6 @@
 {meta: title Mississippi Delta Blues}
 {meta: artist Bob Wills}
-{meta: writer Jimmie Rodgers and Jack Neville}
+{meta: composer Jimmie Rodgers and Jack Neville}
 
 {start_of_verse: Verse 1}
 [C]With friends around and even pals that I know are [G7]true

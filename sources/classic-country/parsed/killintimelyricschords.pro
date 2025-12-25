@@ -1,6 +1,6 @@
 {meta: title Killin' Time}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [G]You were the first thing that I thought of 

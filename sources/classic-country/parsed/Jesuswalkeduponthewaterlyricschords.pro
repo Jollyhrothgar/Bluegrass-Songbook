@@ -1,6 +1,6 @@
 {meta: title Jesus Walked Upon The Water}
 {meta: artist Junior Sisk and Rambler’s Choice}
-{meta: writer George Steve Watts}
+{meta: composer George Steve Watts}
 
 {start_of_verse: Verse 1}
 [C]Stormy waters 'round me rise lightening flashes 'cross the sky

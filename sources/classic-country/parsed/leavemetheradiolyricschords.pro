@@ -1,6 +1,6 @@
 {meta: title Leave Me the Radio}
 {meta: artist Doug Stone}
-{meta: writer Billy Kirsch, Tim Nichols, Zack Turner}
+{meta: composer Billy Kirsch, Tim Nichols, Zack Turner}
 
 {start_of_verse: Verse 1}
 [G]Stand by your man's waiting

@@ -1,6 +1,6 @@
 {meta: title Don't Tell Mama}
 {meta: artist Gary Allan}
-{meta: writer Kim Williams, Jerry Laseter, Buddy Brock}
+{meta: composer Kim Williams, Jerry Laseter, Buddy Brock}
 
 {start_of_verse: Verse 1}
 [C]I was headed north on Highway Five 

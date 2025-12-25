@@ -1,6 +1,6 @@
 {meta: title Tell Your Children}
 {meta: artist Porter Wagoner}
-{meta: writer E.J. Carter and Maybelle Carter}
+{meta: composer E.J. Carter and Maybelle Carter}
 
 {start_of_verse: Verse 1}
 ([C]Tell your children and your children's [F]children

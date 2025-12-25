@@ -1,6 +1,6 @@
 {meta: title Love Is Like An Echo}
 {meta: artist Vern Gosdin}
-{meta: writer Rayburn Anthony, Patsy Littrell, Stan Plumlee}
+{meta: composer Rayburn Anthony, Patsy Littrell, Stan Plumlee}
 
 {start_of_verse: Verse 1}
 [C]Honey you been sayin'

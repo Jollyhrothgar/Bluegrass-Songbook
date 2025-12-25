@@ -1,6 +1,6 @@
 {meta: title Wicked Lies}
 {meta: artist Carl Smith}
-{meta: writer Joe H. Brewster, Pearl D. Jones, Carl Smith}
+{meta: composer Joe H. Brewster, Pearl D. Jones, Carl Smith}
 
 {start_of_verse: Verse 1}
 [C]I don't care what you've been it's just what [F]you are [C]today

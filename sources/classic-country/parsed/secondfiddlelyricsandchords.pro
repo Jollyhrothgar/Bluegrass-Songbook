@@ -1,6 +1,6 @@
 {meta: title Second Fiddle}
 {meta: artist Hank Locklin}
-{meta: writer Roy Drusky}
+{meta: composer Roy Drusky}
 
 {start_of_verse: Verse 1}
 [C]Seems I'm always right behind [G7]never first in line

@@ -1,6 +1,6 @@
 {meta: title Bluebirds Are Singing For Me}
 {meta: artist Mac Wiseman}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [C]There was a girl I loved so [F]dearly

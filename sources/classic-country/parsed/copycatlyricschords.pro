@@ -1,6 +1,6 @@
 {meta: title Copy Cat}
 {meta: artist Cowboy Copas}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [G]When I say I love you

@@ -1,6 +1,6 @@
 {meta: title At The Sight Of You}
 {meta: artist Mel Tillis}
-{meta: writer Bozo Darnell, Dave Pittman, Jim Johnson}
+{meta: composer Bozo Darnell, Dave Pittman, Jim Johnson}
 
 {start_of_verse: Verse 1}
 [G]I go [C]all to [D7]pieces at the sight of [G]you

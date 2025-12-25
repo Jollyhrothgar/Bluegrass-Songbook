@@ -1,6 +1,6 @@
 {meta: title She's Playing Hard To Forget}
 {meta: artist Moe Bandy}
-{meta: writer Dan Mitchell}
+{meta: composer Dan Mitchell}
 
 {start_of_verse: Verse 1}
 [C]I wish someone else [C7]had her [F]memory

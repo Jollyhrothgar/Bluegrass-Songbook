@@ -1,6 +1,6 @@
 {meta: title I'm The Wreck Of Number Two}
 {meta: artist Kitty Wells}
-{meta: writer Wayne Manning}
+{meta: composer Wayne Manning}
 
 {start_of_verse: Verse 1}
 [F]As you leave to meet the girl who's [C]now your number [F]one

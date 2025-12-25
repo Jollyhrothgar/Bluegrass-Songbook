@@ -1,6 +1,6 @@
 {meta: title Darlin’ Brown Eyes}
 {meta: artist Ralph Stanley}
-{meta: writer Osburn Thorpe and Ralph Stanley}
+{meta: composer Osburn Thorpe and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [C]The moon was shining last night

@@ -1,6 +1,6 @@
 {meta: title Tell Me Pretty Words}
 {meta: artist Slim Whitman}
-{meta: writer Ronald Mansfield}
+{meta: composer Ronald Mansfield}
 
 {start_of_verse: Verse 1}
 [G]Hold me close and tell me pretty [C]words

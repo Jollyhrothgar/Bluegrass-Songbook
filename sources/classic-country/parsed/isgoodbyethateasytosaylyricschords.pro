@@ -1,6 +1,6 @@
 {meta: title Is Goodbye That Easy To Say}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Marijohn Wilkin and Benny Joy}
+{meta: composer Marijohn Wilkin and Benny Joy}
 
 {start_of_verse: Verse 1}
 [C]It hurts me so to see you go my [G7]darling

@@ -1,6 +1,6 @@
 {meta: title You Don't Need to Move a Mountain}
 {meta: artist Jeanne Pruett}
-{meta: writer Waylon Holyfield and Jim Rushing}
+{meta: composer Waylon Holyfield and Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]You would bring me [F]silver and [C]gold

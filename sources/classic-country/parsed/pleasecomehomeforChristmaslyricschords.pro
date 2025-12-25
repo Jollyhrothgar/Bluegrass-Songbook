@@ -1,6 +1,6 @@
 {meta: title Please Come Home For Christmas}
 {meta: artist Fats Domino}
-{meta: writer Charles Brown and Gene Redd}
+{meta: composer Charles Brown and Gene Redd}
 
 {start_of_verse: Verse 1}
 [C]Bells will be ringing the glad glad news[C7]

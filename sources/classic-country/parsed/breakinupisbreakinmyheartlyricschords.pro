@@ -1,6 +1,6 @@
 {meta: title Breakin’ Up Is Breakin' My Heart}
 {meta: artist Roy Orbison}
-{meta: writer Bill Dees and Roy Orbison}
+{meta: composer Bill Dees and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [C]I wonder why you threw your diary [Dm]away 

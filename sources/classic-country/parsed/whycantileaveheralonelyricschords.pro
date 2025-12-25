@@ -1,6 +1,6 @@
 {meta: title Why Can't I Leave Her Alone}
 {meta: artist George Strait}
-{meta: writer Ashe Underwood, Danny Wells, Mark Kerr}
+{meta: composer Ashe Underwood, Danny Wells, Mark Kerr}
 
 {start_of_verse: Verse 1}
 [C]I know I don't want her I swear that's a fact

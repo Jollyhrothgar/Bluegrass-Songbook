@@ -1,6 +1,6 @@
 {meta: title How's My Ex Treating You}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [C]How's my ex my ex treating [F]you

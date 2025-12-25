@@ -1,6 +1,6 @@
 {meta: title You Won't Ever Forget Me Me}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb and Lois Snapp}
+{meta: composer Ernest Tubb and Lois Snapp}
 
 {start_of_verse: Verse 1}
 [C]You tell me [G7]tonight that we're [C]parting  [C7]

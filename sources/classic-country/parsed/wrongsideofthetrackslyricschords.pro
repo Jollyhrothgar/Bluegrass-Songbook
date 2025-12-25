@@ -1,6 +1,6 @@
 {meta: title Wrong Side (Of The Tracks)}
 {meta: artist The Wilburn Brothers}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [C]They used to let me [F]play with her [C]awhile

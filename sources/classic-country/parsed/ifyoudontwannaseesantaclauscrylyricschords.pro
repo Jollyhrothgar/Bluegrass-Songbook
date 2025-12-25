@@ -1,6 +1,6 @@
 {meta: title If You Don't Wanna See Santa Claus Cry}
 {meta: artist Alan Jackson}
-{meta: writer Keith Stegall}
+{meta: composer Keith Stegall}
 
 {start_of_verse: Verse 1}
 [G7]Well I'm [C]makin' out my list for ole St Nick [F]tonight

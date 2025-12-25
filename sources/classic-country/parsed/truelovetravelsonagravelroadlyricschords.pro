@@ -1,6 +1,6 @@
 {meta: title True Love Travels On A Gravel Road}
 {meta: artist Elvis Presley}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]How many girls choose cotton dress [Em]worlds

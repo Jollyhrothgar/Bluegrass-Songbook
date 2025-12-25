@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Find You}
 {meta: artist Stonewall Jackson}
-{meta: writer Marijohn Wilkin}
+{meta: composer Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna find you I'm gonna find you 

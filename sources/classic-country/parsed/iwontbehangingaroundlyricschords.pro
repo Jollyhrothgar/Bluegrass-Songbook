@@ -1,6 +1,6 @@
 {meta: title I Won't Be Hanging Around}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Marijohn Wilkin, Wayne P. Walker, Louise Certain}
+{meta: composer Marijohn Wilkin, Wayne P. Walker, Louise Certain}
 
 {start_of_verse: Verse 1}
 [C]From now on I won't be hanging [G7]around

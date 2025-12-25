@@ -1,6 +1,6 @@
 {meta: title All Together Now Let's Fall Apart}
 {meta: artist Ronnie Milsap}
-{meta: writer Johnny Koonse}
+{meta: composer Johnny Koonse}
 
 {start_of_verse: Verse 1}
 [C]All together now [G7]let's fall [C]apart[F]  [C]

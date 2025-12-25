@@ -1,6 +1,6 @@
 {meta: title The Girl in the Blue Velvet Band}
 {meta: artist Mac Wiseman}
-{meta: writer Mel Foree and Cliff Carlisle}
+{meta: composer Mel Foree and Cliff Carlisle}
 
 {start_of_verse: Verse 1}
 [C]One evening while out [G7]for a [C]ramble 

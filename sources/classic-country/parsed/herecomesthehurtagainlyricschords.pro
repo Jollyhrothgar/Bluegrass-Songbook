@@ -1,6 +1,6 @@
 {meta: title Here Comes The Hurt Again}
 {meta: artist Mickey Gilley}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]Here comes the [C]hurt again [D7]you'd think I'd [G]learn

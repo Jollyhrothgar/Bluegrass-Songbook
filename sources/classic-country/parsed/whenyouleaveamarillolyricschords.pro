@@ -1,6 +1,6 @@
 {meta: title When You Leave Amarillo}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]You say that you’re leaving

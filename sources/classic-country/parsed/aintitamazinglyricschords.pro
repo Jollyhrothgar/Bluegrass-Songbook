@@ -1,6 +1,6 @@
 {meta: title Ain't It Amazing}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]I never had a [F]face you'd [C]notice

@@ -1,6 +1,6 @@
 {meta: title Bright Lights and Blonde Haired Women}
 {meta: artist Ray Price}
-{meta: writer Eddie Kirk}
+{meta: composer Eddie Kirk}
 
 {start_of_verse: Verse 1}
 [C]I'm getting tired [A7]of roaming [D7]around

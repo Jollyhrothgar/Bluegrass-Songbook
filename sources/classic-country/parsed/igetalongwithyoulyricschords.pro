@@ -1,6 +1,6 @@
 {meta: title I Get Along With You}
 {meta: artist George Strait}
-{meta: writer Dean Dillon, Frank Dycus, Buddy Cannon}
+{meta: composer Dean Dillon, Frank Dycus, Buddy Cannon}
 
 {start_of_verse: Verse 1}
 [C]I don't get [Dm]along  with [G7]people who aren't [C]kind

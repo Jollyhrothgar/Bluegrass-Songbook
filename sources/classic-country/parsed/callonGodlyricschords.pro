@@ -1,6 +1,6 @@
 {meta: title Call On God}
 {meta: artist Melba Montgomery}
-{meta: writer Melba Montgomery and Carl Montgomery}
+{meta: composer Melba Montgomery and Carl Montgomery}
 
 {start_of_verse: Verse 1}
 [G]When you fall by the wayside of [C]life's long road

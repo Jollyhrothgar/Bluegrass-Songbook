@@ -1,6 +1,6 @@
 {meta: title Maiden's Prayer}
 {meta: artist Willie Nelson}
-{meta: writer Bob Wills}
+{meta: composer Bob Wills}
 
 {start_of_verse: Verse 1}
 [C]Twilight falls evening shadows [F]find

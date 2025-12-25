@@ -1,6 +1,6 @@
 {meta: title Ace In The Hole}
 {meta: artist George Strait}
-{meta: writer Dennis R. Adkins}
+{meta: composer Dennis R. Adkins}
 
 {start_of_verse: Verse 1}
 [G]You've got to have an ace in the hole

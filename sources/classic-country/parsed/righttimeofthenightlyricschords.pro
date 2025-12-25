@@ -1,6 +1,6 @@
 {meta: title Right Time Of The Night}
 {meta: artist Reba McEntire}
-{meta: writer Peter McCann}
+{meta: composer Peter McCann}
 
 {start_of_verse: Verse 1}
 [C]Sun goes [F]down on a [C]silky [F]day

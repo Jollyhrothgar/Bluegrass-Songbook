@@ -1,6 +1,6 @@
 {meta: title The Man Who Owes Everyone}
 {meta: artist Willie Nelson}
-{meta: writer Dave Anderson and Willie Nelson}
+{meta: composer Dave Anderson and Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]He's the man who owes everyone something [G7]from a long time [C]ago

@@ -1,6 +1,6 @@
 {meta: title Live And Let Live}
 {meta: artist Marty Robbins}
-{meta: writer W. Walker and G. Sullivan}
+{meta: composer W. Walker and G. Sullivan}
 
 {start_of_verse: Verse 1}
 [G]Stayed awake last night and [C]I walked the [G]floor

@@ -1,6 +1,6 @@
 {meta: title Baby Is Gone}
 {meta: artist Charley Pride}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [G]The world goes [C]around and the [G]young men get [D7]old

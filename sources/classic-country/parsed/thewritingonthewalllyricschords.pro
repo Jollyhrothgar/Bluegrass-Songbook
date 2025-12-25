@@ -1,6 +1,6 @@
 {meta: title The Writing On The Wall}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo and Al Anderson}
+{meta: composer Raul Malo and Al Anderson}
 
 {start_of_verse: Verse 1}
 [C]I know there's [F]someone there be[C]side [F]you

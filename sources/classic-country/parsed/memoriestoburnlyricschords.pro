@@ -1,6 +1,6 @@
 {meta: title Memories to Burn}
 {meta: artist Gene Watson}
-{meta: writer Warren Robb & Dave Kirby}
+{meta: composer Warren Robb & Dave Kirby}
 
 {start_of_verse: Verse 1}
 [C]Lady Lately You've Been Getting  Under My [Dm]Skin

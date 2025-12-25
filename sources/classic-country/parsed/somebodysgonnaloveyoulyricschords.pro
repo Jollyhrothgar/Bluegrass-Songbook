@@ -1,6 +1,6 @@
 {meta: title Somebody's Gonna Love You}
 {meta: artist Lee Greenwood}
-{meta: writer Don Cook and Rafe VanHoy}
+{meta: composer Don Cook and Rafe VanHoy}
 
 {start_of_verse: Verse 1}
 [G]Lonely lady living [Em]down the hall

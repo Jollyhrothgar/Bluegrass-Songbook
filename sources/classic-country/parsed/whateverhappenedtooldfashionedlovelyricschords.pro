@@ -1,6 +1,6 @@
 {meta: title Whatever Happened To Old Fashioned Love}
 {meta: artist B.J. Thomas}
-{meta: writer Lewis Anderson}
+{meta: composer Lewis Anderson}
 
 {start_of_verse: Verse 1}
 [C]We live in the modern [G7]age

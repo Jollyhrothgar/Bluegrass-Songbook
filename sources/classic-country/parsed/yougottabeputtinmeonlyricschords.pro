@@ -1,6 +1,6 @@
 {meta: title You Gotta Be Puttin' Me On}
 {meta: artist Lefty Frizzell}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [C]Just like a hound dog when the [A7]food ran out 

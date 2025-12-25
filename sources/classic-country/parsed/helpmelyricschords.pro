@@ -1,6 +1,6 @@
 {meta: title Help Me}
 {meta: artist Kris Kristofferson}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 [C]Lord help me walk another [G7]mile just one more mile

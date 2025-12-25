@@ -1,6 +1,6 @@
 {meta: title I Don't Want To Mention Any Names}
 {meta: artist Reba McEntire}
-{meta: writer Larry Cordle and Lisa Palas}
+{meta: composer Larry Cordle and Lisa Palas}
 
 {start_of_verse: Verse 1}
 [C]I've got a story to tell would you mind listenin'

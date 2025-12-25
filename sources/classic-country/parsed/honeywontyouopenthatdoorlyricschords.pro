@@ -1,6 +1,6 @@
 {meta: title Honey Won't You Open That Door}
 {meta: artist Ricky Skaggs}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]Honey  honey  honey won't you open that [G7]door

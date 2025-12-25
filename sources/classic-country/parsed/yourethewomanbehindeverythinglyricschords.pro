@@ -1,6 +1,6 @@
 {meta: title You're The Woman Behind Everything}
 {meta: artist Charlie Pride}
-{meta: writer Gary Stewart}
+{meta: composer Gary Stewart}
 
 {start_of_verse: Verse 1}
 [G]I was a [D7]man without [C]reason

@@ -1,5 +1,5 @@
 {meta: artist Emmylou Harris}
-{meta: writer Lucinda Williams}
+{meta: composer Lucinda Williams}
 
 {start_of_verse: Verse 1}
 [G]Everybody's [C]had a few  

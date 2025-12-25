@@ -1,6 +1,6 @@
 {meta: title Go Cat Go}
 {meta: artist Norma Jean}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]You don't want a home and a [F]family

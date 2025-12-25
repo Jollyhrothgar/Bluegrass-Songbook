@@ -1,6 +1,6 @@
 {meta: title Southern Loving}
 {meta: artist Jim Ed Brown}
-{meta: writer Jim Owen}
+{meta: composer Jim Owen}
 
 {start_of_verse: Verse 1}
 [C]I've been loved in Cincinnati Evansville and St Paul 

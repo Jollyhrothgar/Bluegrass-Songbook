@@ -1,6 +1,6 @@
 {meta: title Silver Haired Daddy Of Mine}
 {meta: artist Gene Autry}
-{meta: writer Jimmy Long and Gene Autry}
+{meta: composer Jimmy Long and Gene Autry}
 
 {start_of_verse: Verse 1}
 [C]In a vine covered [G7]shack in the [C]mountains

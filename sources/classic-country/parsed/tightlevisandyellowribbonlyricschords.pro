@@ -1,6 +1,6 @@
 {meta: title Tight Levis and Yellow Ribbon}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton and Red Steagall}
+{meta: composer Glenn Sutton and Red Steagall}
 
 {start_of_verse: Verse 1}
 [C]I was born and raised in the Red Clay Hills of [G7]Texas

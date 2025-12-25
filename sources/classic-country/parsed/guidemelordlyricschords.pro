@@ -1,6 +1,6 @@
 {meta: title Guide Me Lord}
 {meta: artist Merle Haggard}
-{meta: writer Johnny Gimble}
+{meta: composer Johnny Gimble}
 
 {start_of_verse: Verse 1}
 [C]I was born in sin and lost but Jesus paid the [F]cost

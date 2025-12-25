@@ -1,6 +1,6 @@
 {meta: title Ease The Fever}
 {meta: artist Reba McEntire}
-{meta: writer Bob Morrison, Jim Zerface, Bill Zerface}
+{meta: composer Bob Morrison, Jim Zerface, Bill Zerface}
 
 {start_of_verse: Verse 1}
 [C]No need [F]talking I can [C]see it 

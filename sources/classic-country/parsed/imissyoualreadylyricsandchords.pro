@@ -1,6 +1,6 @@
 {meta: title I Miss You Already}
 {meta: artist Faron Young}
-{meta: writer Marvin Rainwater and Faron Young}
+{meta: composer Marvin Rainwater and Faron Young}
 
 {start_of_verse: Verse 1}
 [C]I [G7]miss you already and you're [F]n-ot [G7]e-ven [C]gone

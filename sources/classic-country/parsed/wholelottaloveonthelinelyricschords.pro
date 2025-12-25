@@ -1,6 +1,6 @@
 {meta: title Whole Lotta Love On The Line}
 {meta: artist Charley Pride}
-{meta: writer Aaron Tippin and Donni Kees}
+{meta: composer Aaron Tippin and Donni Kees}
 
 {start_of_verse: Verse 1}
 [C]I've called from every run [F]down phone booth in Atlanta [C]Georgia

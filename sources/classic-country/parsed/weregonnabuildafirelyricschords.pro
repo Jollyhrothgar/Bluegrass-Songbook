@@ -1,6 +1,6 @@
 {meta: title We're Gonna Build A Fire}
 {meta: artist Buck Owens}
-{meta: writer Dennis J. Knutson and Buck Owens}
+{meta: composer Dennis J. Knutson and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]We’re gonna build a fire and we’re gonna [C]let it [G]burn

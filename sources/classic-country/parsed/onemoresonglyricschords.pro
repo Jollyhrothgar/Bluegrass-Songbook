@@ -1,6 +1,6 @@
 {meta: title One More Song}
 {meta: artist Jim Ed Brown}
-{meta: writer Jack Tempchin}
+{meta: composer Jack Tempchin}
 
 {start_of_verse: Verse 1}
 [C]I was singing in a bar in San [F]Diego

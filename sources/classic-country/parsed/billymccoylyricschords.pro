@@ -1,6 +1,6 @@
 {meta: title Billy McCoy}
 {meta: artist Jim Ed Brown}
-{meta: writer Melvin Schmidt[3/4 time]}
+{meta: composer Melvin Schmidt[3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]Where is my Billy my Billy [G]McCoy

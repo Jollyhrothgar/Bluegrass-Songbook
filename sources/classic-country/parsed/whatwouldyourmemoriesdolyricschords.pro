@@ -1,6 +1,6 @@
 {meta: title What Would Your Memories Do}
 {meta: artist Vern Gosdin}
-{meta: writer Hank Cochran and Dean Dillon}
+{meta: composer Hank Cochran and Dean Dillon}
 
 {start_of_verse: Verse 1}
 [C]What would your [F]memories [G7]do

@@ -1,6 +1,6 @@
 {meta: title Rock And A Soft Place}
 {meta: artist Tracy Lawrence}
-{meta: writer Cleo Anderson, Rick Huckaby, Michael Brown}
+{meta: composer Cleo Anderson, Rick Huckaby, Michael Brown}
 
 {start_of_verse: Verse 1}
 [C]Her Mercedes Benz is parked right outside

@@ -1,6 +1,6 @@
 {meta: title Big Wheels}
 {meta: artist Hank Snow}
-{meta: writer Clovis Yarnall}
+{meta: composer Clovis Yarnall}
 
 {start_of_verse: Verse 1}
 [G]Oh them [C]big wheels are turnin' goin' [D7]somewhere

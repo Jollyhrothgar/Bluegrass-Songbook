@@ -1,6 +1,6 @@
 {meta: title Close All The Honky Tonks}
 {meta: artist Johnny Paycheck}
-{meta: writer Red Simpson}
+{meta: composer Red Simpson}
 
 {start_of_verse: Verse 1}
 [G]She's in some honky tonk tonight I [C]know

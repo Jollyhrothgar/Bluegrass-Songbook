@@ -1,6 +1,6 @@
 {meta: title Gentleman Jim}
 {meta: artist Charlie Rich}
-{meta: writer Lowell Foster and Don McMillan}
+{meta: composer Lowell Foster and Don McMillan}
 
 {start_of_verse: Verse 1}
 [C](Adios amigo [G7]Gentleman [C]Jim)

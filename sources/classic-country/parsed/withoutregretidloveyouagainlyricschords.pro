@@ -1,6 +1,6 @@
 {meta: title Without Regreat I'd Love You Again and Chords}
 {meta: artist Faron Young}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]If I had known the day I met you

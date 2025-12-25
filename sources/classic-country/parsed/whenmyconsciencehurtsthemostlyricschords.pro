@@ -1,6 +1,6 @@
 {meta: title When My Conscience Hurts The Most}
 {meta: artist Charlie Walker}
-{meta: writer Vic McAlpin and Lester Vanadore}
+{meta: composer Vic McAlpin and Lester Vanadore}
 
 {start_of_verse: Verse 1}
 [C]In a place where no one knows us we [C7]hold secret [F]rendezvous

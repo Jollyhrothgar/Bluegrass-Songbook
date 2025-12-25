@@ -1,6 +1,6 @@
 {meta: title At Christmas}
 {meta: artist Sara Evans}
-{meta: writer Toby Lightman and Shane Stevens}
+{meta: composer Toby Lightman and Shane Stevens}
 
 {start_of_verse: Verse 1}
 [C]It's my favorite time of year

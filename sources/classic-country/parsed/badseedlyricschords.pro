@@ -1,6 +1,6 @@
 {meta: title Bad Seed}
 {meta: artist Glen Campbell}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]Ain't been in Little [F]Rock but two weeks [C]and here I am [F]now

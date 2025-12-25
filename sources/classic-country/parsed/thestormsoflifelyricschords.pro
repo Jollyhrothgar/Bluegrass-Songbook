@@ -1,6 +1,6 @@
 {meta: title The Storms of Life}
 {meta: artist Randy Travis}
-{meta: writer Max D. Barnes and Troy Seals}
+{meta: composer Max D. Barnes and Troy Seals}
 
 {start_of_verse: Verse 1}
 [C]There's a dirty piece of cardboard that [F]reads Montgomery Ward

@@ -1,6 +1,6 @@
 {meta: title A New Way To Live}
 {meta: artist Mickey Gilley}
-{meta: writer Wilburn S. Rice}
+{meta: composer Wilburn S. Rice}
 
 {start_of_verse: Verse 1}
 [C]I'm growing ti[G7]-r-[C]ed [G7]of your walking [C]on me

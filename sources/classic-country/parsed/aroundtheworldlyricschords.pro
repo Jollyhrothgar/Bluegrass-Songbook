@@ -1,6 +1,6 @@
 {meta: title Around The World}
 {meta: artist Jim Reeves}
-{meta: writer Harold Adamson, Victor Young, Stella Unger}
+{meta: composer Harold Adamson, Victor Young, Stella Unger}
 
 {start_of_verse: Verse 1}
 [C]Around the world I've [Am]searched for [C]you

@@ -1,6 +1,6 @@
 {meta: title Time And Time Again}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash and Maybelle Carter}
+{meta: composer Johnny Cash and Maybelle Carter}
 
 {start_of_verse: Verse 1}
 [C]I wish my heart was stone cause you're hard on flesh and bone

@@ -1,6 +1,6 @@
 {meta: title She Knows When You're On My Mind}
 {meta: artist George Strait}
-{meta: writer Wayne Kemp and Mack Vickery}
+{meta: composer Wayne Kemp and Mack Vickery}
 
 {start_of_verse: Verse 1}
 [C]She knows she's holdin' someone who don't [F]love her

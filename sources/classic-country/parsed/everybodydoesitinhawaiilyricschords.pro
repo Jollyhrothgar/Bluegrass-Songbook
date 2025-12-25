@@ -1,6 +1,6 @@
 {meta: title Everybody Does It in Hawaii}
 {meta: artist Hank Snow}
-{meta: writer Elsie McWilliams and Jimmie Rodgers}
+{meta: composer Elsie McWilliams and Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]Now talk about Hawaii I didn't know it was so [D7]grand

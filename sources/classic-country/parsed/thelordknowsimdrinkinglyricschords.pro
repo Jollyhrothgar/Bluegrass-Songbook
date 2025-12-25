@@ -1,6 +1,6 @@
 {meta: title The Lord Knows I'm Drinking}
 {meta: artist Cal Smith}
-{meta: writer Bill Anderson [3/4 time]}
+{meta: composer Bill Anderson [3/4 time]}
 
 {start_of_verse: Verse 1}
 [G]Hello Mrs. Johnson you self-righteous woman

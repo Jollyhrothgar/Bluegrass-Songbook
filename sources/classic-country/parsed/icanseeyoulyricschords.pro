@@ -1,6 +1,6 @@
 {meta: title I Can See You}
 {meta: artist Ray Price}
-{meta: writer Larry Bastian}
+{meta: composer Larry Bastian}
 
 {start_of_verse: Verse 1}
 [G]I can see your laughing eyes 

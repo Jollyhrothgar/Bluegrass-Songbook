@@ -1,6 +1,6 @@
 {meta: title Children Go Where I Send Thee}
 {meta: artist Johnny Cash}
-{meta: writer Marc Harris and Michael McDonald}
+{meta: composer Marc Harris and Michael McDonald}
 
 {start_of_verse: Verse 1}
 [C]Children go where I send thee

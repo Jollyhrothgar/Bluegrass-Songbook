@@ -1,6 +1,6 @@
 {meta: title Drunk And Crazy}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]Well hello everybody I've come to say

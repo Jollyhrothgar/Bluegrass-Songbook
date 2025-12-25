@@ -1,6 +1,6 @@
 {meta: title Don’t Get Married}
 {meta: artist Merle Haggard}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]Julie they've taken me to [G7]prison

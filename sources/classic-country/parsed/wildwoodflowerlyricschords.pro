@@ -1,6 +1,6 @@
 {meta: title Wildwood Flower}
 {meta: artist Johnny Cash}
-{meta: writer A. P. Carter}
+{meta: composer A. P. Carter}
 
 {start_of_verse: Verse 1}
 [C]Oh I'll twine with my mingles and [G7]waving black [C]hair

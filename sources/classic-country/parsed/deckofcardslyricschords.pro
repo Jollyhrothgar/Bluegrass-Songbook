@@ -1,6 +1,6 @@
 {meta: title Deck of Card}
 {meta: artist Tex Ritter}
-{meta: writer Richard F Beckham Spoken: Strum softly}
+{meta: composer Richard F Beckham Spoken: Strum softly}
 
 {start_of_verse: Verse 1}
 [G7]During the North African campaign a bunch of soldier [C]boys

@@ -1,6 +1,6 @@
 {meta: title I'll Drink To That}
 {meta: artist Billy Parker}
-{meta: writer Alice Joy Merritt}
+{meta: composer Alice Joy Merritt}
 
 {start_of_verse: Verse 1}
 [C]I had a wife who couldn’t [F]take it any[C]more

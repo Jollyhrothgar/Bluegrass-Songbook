@@ -1,6 +1,6 @@
 {meta: title Only The Strong Survive}
 {meta: artist Tammy Wynette}
-{meta: writer Jerry Butler, Kenneth Gamble, Leon Huff}
+{meta: composer Jerry Butler, Kenneth Gamble, Leon Huff}
 
 {start_of_verse: Verse 1}
 [C]Never seen [G7]anything as strange as [Am]love [C]

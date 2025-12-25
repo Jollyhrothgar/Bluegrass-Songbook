@@ -1,6 +1,6 @@
 {meta: title Something's Wrong}
 {meta: artist Tony Booth}
-{meta: writer Gene Price}
+{meta: composer Gene Price}
 
 {start_of_verse: Verse 1}
 [F]When there's [C]no peace of [G7]mind something's [C]wrong

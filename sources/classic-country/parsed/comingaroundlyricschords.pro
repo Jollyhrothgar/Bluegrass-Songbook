@@ -1,6 +1,6 @@
 {meta: title Coming Around Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Red Lane}
+{meta: composer Red Lane}
 
 {start_of_verse: Verse 1}
 [G]Coming around

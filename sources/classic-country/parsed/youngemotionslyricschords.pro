@@ -1,6 +1,6 @@
 {meta: title Young Emotions}
 {meta: artist Ricky Nelson}
-{meta: writer Jerry Livingston and Mack David}
+{meta: composer Jerry Livingston and Mack David}
 
 {start_of_verse: Verse 1}
 [G]You[Em]ng e[Am]motio[D7]ns [G]are [Em]mixed [Am]emot[D7]ions 

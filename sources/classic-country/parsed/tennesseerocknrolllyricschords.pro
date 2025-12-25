@@ -1,6 +1,6 @@
 {meta: title Tennessee Rock'n Roll}
 {meta: artist Bobby Helms}
-{meta: writer Lonnie Coleman and Irving Reid}
+{meta: composer Lonnie Coleman and Irving Reid}
 
 {start_of_verse: Verse 1}
 [C]Oh I went down to Tenne[C7]ssee

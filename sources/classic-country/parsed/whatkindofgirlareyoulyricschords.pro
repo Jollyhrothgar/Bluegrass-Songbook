@@ -1,6 +1,6 @@
 {meta: title What Kind Of Girl Are You}
 {meta: artist The Everly Brothers}
-{meta: writer Ray Charles}
+{meta: composer Ray Charles}
 
 {start_of_verse: Verse 1}
 [G]What kind of girl are you [C]yeah

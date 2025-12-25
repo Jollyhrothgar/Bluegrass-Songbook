@@ -1,6 +1,6 @@
 {meta: title Glory To His Name}
 {meta: artist The Yeomans}
-{meta: writer Elisha A. Hoffman and John H. Stockton}
+{meta: composer Elisha A. Hoffman and John H. Stockton}
 
 {start_of_verse: Verse 1}
 [G]Down at the cross where my [C]Savior [G]died 

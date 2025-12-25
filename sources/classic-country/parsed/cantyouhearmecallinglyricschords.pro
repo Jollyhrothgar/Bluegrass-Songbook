@@ -1,6 +1,6 @@
 {meta: title Can't You Hear Me Calling}
 {meta: artist Ricky Skaggs}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [G]Oh the days are dark and the nights are lonely

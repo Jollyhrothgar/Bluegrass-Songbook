@@ -1,6 +1,6 @@
 {meta: title I Just Think I'll Go Away}
 {meta: artist Keith Whitley}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]It makes no difference where I [G7]wander

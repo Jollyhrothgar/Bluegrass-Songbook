@@ -1,6 +1,6 @@
 {meta: title Big Texas Moon}
 {meta: artist Red Steagall}
-{meta: writer Bob Campbell}
+{meta: composer Bob Campbell}
 
 {start_of_verse: Verse 1}
 [C]Banjos are ringin' on Saturday [Am]night

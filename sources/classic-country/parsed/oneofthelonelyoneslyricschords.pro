@@ -1,6 +1,6 @@
 {meta: title One Of The Lonely Ones}
 {meta: artist Roy Orbison}
-{meta: writer William Dees and Roy K. Orbison}
+{meta: composer William Dees and Roy K. Orbison}
 
 {start_of_verse: Verse 1}
 [C]I'm cold inside the [F]day just died

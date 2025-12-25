@@ -1,6 +1,6 @@
 {meta: title I'm Glad I Got To See You}
 {meta: artist Hank Snow}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [G]I'm glad I got to see you once again

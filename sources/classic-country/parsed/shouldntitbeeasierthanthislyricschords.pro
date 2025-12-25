@@ -1,6 +1,6 @@
 {meta: title Shouldn't It Be Easier Than This}
 {meta: artist Charley Pride}
-{meta: writer Rick Giles and John Jarrad}
+{meta: composer Rick Giles and John Jarrad}
 
 {start_of_verse: Verse 1}
 [C]A month ago I [F]walked out your [C]door

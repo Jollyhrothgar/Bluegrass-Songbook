@@ -1,6 +1,6 @@
 {meta: title I Don't Believe You Love Me Anymore}
 {meta: artist Connie Smith}
-{meta: writer Vic McAlpin, Roy Drusky, Marie Wilson}
+{meta: composer Vic McAlpin, Roy Drusky, Marie Wilson}
 
 {start_of_verse: Verse 1}
 [G]Lately you've been acting strange to [C]me 

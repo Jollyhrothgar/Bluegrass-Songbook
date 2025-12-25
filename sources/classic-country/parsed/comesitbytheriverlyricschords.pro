@@ -1,6 +1,6 @@
 {meta: title Come Sit By The River}
 {meta: artist Bluegrass Martins}
-{meta: writer Charles Roehrig}
+{meta: composer Charles Roehrig}
 
 {start_of_verse: Verse 1}
 [C]I can see that you're [G7]ready to go [C]home

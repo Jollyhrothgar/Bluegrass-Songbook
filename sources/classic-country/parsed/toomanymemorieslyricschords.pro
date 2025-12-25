@@ -1,6 +1,6 @@
 {meta: title Too Many Memories}
 {meta: artist Billy Walker}
-{meta: writer Rory Bourke and Gayle Barnhill}
+{meta: composer Rory Bourke and Gayle Barnhill}
 
 {start_of_verse: Verse 1}
 [G]Too many [C]memories [D7]clouding my [G]eyes

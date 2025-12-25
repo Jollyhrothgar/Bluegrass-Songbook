@@ -1,6 +1,6 @@
 {meta: title It's Better Than Going Home Alone}
 {meta: artist Moe Bandy}
-{meta: writer Guy Coleman and Truman Stearbes}
+{meta: composer Guy Coleman and Truman Stearbes}
 
 {start_of_verse: Verse 1}
 [C]The smoke in this [G7]barroom burns my [C]eyes

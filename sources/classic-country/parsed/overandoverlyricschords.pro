@@ -1,6 +1,6 @@
 {meta: title Over And Over}
 {meta: artist Jean Shepard}
-{meta: writer Dan Welch and Mary McDaniel}
+{meta: composer Dan Welch and Mary McDaniel}
 
 {start_of_verse: Verse 1}
 [G]Over and over you held me in your [D7]arms

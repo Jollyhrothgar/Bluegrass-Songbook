@@ -1,6 +1,6 @@
 {meta: title Pass Me Not O Gentle Savior}
 {meta: artist Statler Brother}
-{meta: writer Francis J. Crosby and William H. Doane}
+{meta: composer Francis J. Crosby and William H. Doane}
 
 {start_of_verse: Verse 1}
 [G]Savior [C]Savior 

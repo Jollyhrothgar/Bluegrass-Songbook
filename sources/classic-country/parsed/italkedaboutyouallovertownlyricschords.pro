@@ -1,6 +1,6 @@
 {meta: title I Talked About You All Over Town}
 {meta: artist Mel Tillis}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [F]Yes [G7]I  [C]talked about you [G7]all over [F]tow[G7]n

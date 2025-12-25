@@ -1,6 +1,6 @@
 {meta: title I've Been A Long Time Leaving}
 {meta: artist Waylon Jennings}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]I've been a fool I've been a fool-hoo-ooool

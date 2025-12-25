@@ -1,6 +1,6 @@
 {meta: title Blue Eyes Crying in the Rain}
 {meta: artist Willie Nelson}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]In the twilight glow I see her

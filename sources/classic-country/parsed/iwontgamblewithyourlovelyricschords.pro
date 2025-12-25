@@ -1,6 +1,6 @@
 {meta: title I Won't Gamble With Your Love}
 {meta: artist Patty Loveless}
-{meta: writer Kevin Welch and Gary Scruggs}
+{meta: composer Kevin Welch and Gary Scruggs}
 
 {start_of_verse: Verse 1}
 [G]I've taken a [C]lot of [G]chances 

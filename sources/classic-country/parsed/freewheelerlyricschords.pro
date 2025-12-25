@@ -1,6 +1,6 @@
 {meta: title Freewheeler}
 {meta: artist David Ball}
-{meta: writer Jesse Winchester}
+{meta: composer Jesse Winchester}
 
 {start_of_verse: Verse 1}
 [Am]I got [C]nothing and [Am]nobody 

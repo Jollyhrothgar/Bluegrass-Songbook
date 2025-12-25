@@ -1,6 +1,6 @@
 {meta: title Blue Railroad Train}
 {meta: artist Delmore Brothers}
-{meta: writer Lionel Alton Delmore and Rabon Delmore}
+{meta: composer Lionel Alton Delmore and Rabon Delmore}
 
 {start_of_verse: Verse 1}
 [C]Blue railroad train going down the railroad tracks

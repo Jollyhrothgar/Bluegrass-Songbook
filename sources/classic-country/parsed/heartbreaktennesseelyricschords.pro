@@ -1,6 +1,6 @@
 {meta: title Heartbreak Tennessee}
 {meta: artist Johnny Paycheck}
-{meta: writer Jack H. Clement}
+{meta: composer Jack H. Clement}
 
 {start_of_verse: Verse 1}
 [G]There are things to do in Knoxville 

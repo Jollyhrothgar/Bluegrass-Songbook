@@ -1,6 +1,6 @@
 {meta: title Forbidden Angel}
 {meta: artist Mel Street}
-{meta: writer John Riggs and Mel Street}
+{meta: composer John Riggs and Mel Street}
 
 {start_of_verse: Verse 1}
 [C]Girl you kiss me like a woman though you're [F]barely seven[C]teen

@@ -1,6 +1,6 @@
 {meta: title The Day’s Not Over Yet}
 {meta: artist Sonny James}
-{meta: writer Carol Smith and Sonny James}
+{meta: composer Carol Smith and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]The day’s not [G7]over yet no the day’s not over [C]yet

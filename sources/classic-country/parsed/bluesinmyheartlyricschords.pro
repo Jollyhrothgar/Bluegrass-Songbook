@@ -1,6 +1,6 @@
 {meta: title Blues in My Heart}
 {meta: artist Jim Reeves}
-{meta: writer Jenny Lou Carson and Red Foley}
+{meta: composer Jenny Lou Carson and Red Foley}
 
 {start_of_verse: Verse 1}
 Intro:

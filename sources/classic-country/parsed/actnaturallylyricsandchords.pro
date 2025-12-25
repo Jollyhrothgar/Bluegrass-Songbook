@@ -1,6 +1,6 @@
 {meta: title Act Naturally Lyrics with Chords}
 {meta: artist Buck Owens}
-{meta: writer Johnny Russell and Voni Morrison}
+{meta: composer Johnny Russell and Voni Morrison}
 
 {start_of_verse: Verse 1}
 [C]They're gonna put me in the [F]movies

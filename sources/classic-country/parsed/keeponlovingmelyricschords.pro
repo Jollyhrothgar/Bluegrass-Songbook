@@ -1,6 +1,6 @@
 {meta: title Keep On Loving Me}
 {meta: artist Johnny Paycheck}
-{meta: writer Troy Seals and Will Jennings}
+{meta: composer Troy Seals and Will Jennings}
 
 {start_of_verse: Verse 1}
 [C]When she needs someone to hold her  in the [F]night

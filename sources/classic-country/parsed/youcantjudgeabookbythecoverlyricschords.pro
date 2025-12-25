@@ -1,6 +1,6 @@
 {meta: title You Can't Judge A Book By The Cover}
 {meta: artist John Anderson}
-{meta: writer Willie Dixon}
+{meta: composer Willie Dixon}
 
 {start_of_verse: Verse 1}
 [G]You can't judge an apple by lookin' at the tree

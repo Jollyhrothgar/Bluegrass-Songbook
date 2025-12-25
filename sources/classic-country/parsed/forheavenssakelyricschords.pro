@@ -1,6 +1,6 @@
 {meta: title For Heaven's Sake}
 {meta: artist Conway Twitty}
-{meta: writer Lorene Allen, Maggie Vaughn, Frankie Fuller}
+{meta: composer Lorene Allen, Maggie Vaughn, Frankie Fuller}
 
 {start_of_verse: Verse 1}
 [C]We thought the baby was the answer

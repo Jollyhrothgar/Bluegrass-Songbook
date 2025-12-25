@@ -1,6 +1,6 @@
 {meta: title Far Side Of The Bed}
 {meta: artist Lorrie Morgan}
-{meta: writer Susie McCoy}
+{meta: composer Susie McCoy}
 
 {start_of_verse: Verse 1}
 [D7]All the feeling lived and [G]died [C]in the miles that lay [G]between us

@@ -1,6 +1,6 @@
 {meta: title If You're Not Gone Too Long}
 {meta: artist Loretta Lynn}
-{meta: writer Wanda Ballman}
+{meta: composer Wanda Ballman}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna wipe these teardrops from my eyes

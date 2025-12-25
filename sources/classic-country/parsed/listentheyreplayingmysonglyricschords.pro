@@ -1,6 +1,6 @@
 {meta: title Listen They're Playing My Song}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Charlie Williams and Glen Garrison}
+{meta: composer Charlie Williams and Glen Garrison}
 
 {start_of_verse: Verse 1}
 [C]Down the street a [F]baby just [C]cried when he woke up all [G7]alone

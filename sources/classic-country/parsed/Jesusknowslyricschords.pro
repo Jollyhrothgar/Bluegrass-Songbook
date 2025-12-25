@@ -1,6 +1,6 @@
 {meta: title Jesus Knows}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Carole Smith}
+{meta: composer Sonny James and Carole Smith}
 
 {start_of_verse: Verse 1}
 [C]Jesus [D7]knows (yes He knows) [G7]everybody’s lonely (He [C]knows)

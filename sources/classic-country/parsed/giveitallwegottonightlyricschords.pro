@@ -1,6 +1,6 @@
 {meta: title Give It All We Got Tonight}
 {meta: artist George Strait}
-{meta: writer Tim James, Mark D. Bright, Philip Eugene O'Donnell}
+{meta: composer Tim James, Mark D. Bright, Philip Eugene O'Donnell}
 
 {start_of_verse: Verse 1}
 [G]July moonlight [D7]shines

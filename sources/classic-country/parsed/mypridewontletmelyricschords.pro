@@ -1,6 +1,6 @@
 {meta: title My Pride Won't Let Me}
 {meta: artist Carl Belew}
-{meta: writer Bob Morris}
+{meta: composer Bob Morris}
 
 {start_of_verse: Verse 1}
 [G7]If my [C]pride would let me [Am]do the things I [Dm]wanna do

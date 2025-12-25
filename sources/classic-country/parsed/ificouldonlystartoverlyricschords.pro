@@ -1,6 +1,6 @@
 {meta: title If I Could Only Start Over}
 {meta: artist Porter Wagoner}
-{meta: writer Faye Bradshaw}
+{meta: composer Faye Bradshaw}
 
 {start_of_verse: Verse 1}
 [C]Now if I could only start [F]over

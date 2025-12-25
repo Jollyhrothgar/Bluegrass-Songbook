@@ -1,6 +1,6 @@
 {meta: title Ain't A Woman Somebody When She's Gone}
 {meta: artist Doyle Lawson}
-{meta: writer Buddy Cannon and Tommy Collins}
+{meta: composer Buddy Cannon and Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]I ran into her today [F]not quite by [C]accident

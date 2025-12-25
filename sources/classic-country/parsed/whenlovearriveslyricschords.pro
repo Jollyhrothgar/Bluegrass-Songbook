@@ -1,6 +1,6 @@
 {meta: title When Love Arrives}
 {meta: artist Rhonda Vincent}
-{meta: writer Harley Allen}
+{meta: composer Harley Allen}
 
 {start_of_verse: Verse 1}
 [G]When memo[D7]ries do [C]dances a[A7]round you [D7]in the [C]dark

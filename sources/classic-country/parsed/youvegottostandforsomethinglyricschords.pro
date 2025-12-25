@@ -1,6 +1,6 @@
 {meta: title You've Got To Stand For Something}
 {meta: artist Charley Pride}
-{meta: writer Buddy Brock and Aaron Tippin}
+{meta: composer Buddy Brock and Aaron Tippin}
 
 {start_of_verse: Verse 1}
 [C]Now daddy didn't like trouble if [G7]it came [C]along

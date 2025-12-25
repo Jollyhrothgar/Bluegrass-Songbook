@@ -1,6 +1,6 @@
 {meta: title Anybody But Me}
 {meta: artist Brenda Lee}
-{meta: writer Ronnie Self and Dud Albritten}
+{meta: composer Ronnie Self and Dud Albritten}
 
 {start_of_verse: Verse 1}
 [G]I wish I could be[C]   [G]anybody but me [C]   [G]

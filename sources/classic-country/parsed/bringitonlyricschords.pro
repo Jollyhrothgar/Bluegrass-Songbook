@@ -1,6 +1,6 @@
 {meta: title Bring It On}
 {meta: artist Willie Nelson}
-{meta: writer Willie Nelson and Buddy Cannon}
+{meta: composer Willie Nelson and Buddy Cannon}
 
 {start_of_verse: Verse 1}
 [C]They say there is no gain without pain

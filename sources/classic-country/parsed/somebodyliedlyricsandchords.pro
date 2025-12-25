@@ -1,6 +1,6 @@
 {meta: title Somebody Lied}
 {meta: artist Ricky Van Shelton}
-{meta: writer Joe Chambers and Larry Jenkins}
+{meta: composer Joe Chambers and Larry Jenkins}
 
 {start_of_verse: Verse 1}
 [C]Hello  [G7]yeah this is [C]me

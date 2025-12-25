@@ -1,6 +1,6 @@
 {meta: title My Lonely Heart's Runnin' Wild}
 {meta: artist Carl Smith}
-{meta: writer E.C. McCarty}
+{meta: composer E.C. McCarty}
 
 {start_of_verse: Verse 1}
 [C]I knew my lonely heart was sad and [F]blue

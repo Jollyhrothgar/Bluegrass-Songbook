@@ -1,6 +1,6 @@
 {meta: title If That's the Fashion}
 {meta: artist Faron Young}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]Each day there's someone who pays for another's [G7]mistakes

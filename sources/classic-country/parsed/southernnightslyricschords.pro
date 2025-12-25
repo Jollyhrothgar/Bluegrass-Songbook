@@ -1,6 +1,6 @@
 {meta: title Southern Nights}
 {meta: artist Glen Campbell}
-{meta: writer Allen Toussaint}
+{meta: composer Allen Toussaint}
 
 {start_of_verse: Verse 1}
 [C]Southern nights  have [A7]you ever felt a southern [D7]night

@@ -1,6 +1,6 @@
 {meta: title Houston}
 {meta: artist Gatlin Brothers}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 [G]Houston Houston means that 

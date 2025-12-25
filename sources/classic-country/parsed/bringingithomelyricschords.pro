@@ -1,6 +1,6 @@
 {meta: title Bringing It Home}
 {meta: artist George Jones}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Well I'm tired of traveling down this rocky old road

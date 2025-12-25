@@ -1,6 +1,6 @@
 {meta: title When She Runs Out Of Fools}
 {meta: artist Mickey Gilley}
-{meta: writer Steve Pippin and Steve Jobe}
+{meta: composer Steve Pippin and Steve Jobe}
 
 {start_of_verse: Verse 1}
 [C]I know you [Am]know and I [F]know she knows it [C]too

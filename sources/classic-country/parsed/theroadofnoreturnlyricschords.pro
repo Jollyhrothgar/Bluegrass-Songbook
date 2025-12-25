@@ -1,6 +1,6 @@
 {meta: title The Road Of No Return}
 {meta: artist Ray Price}
-{meta: writer C.M. Bradley}
+{meta: composer C.M. Bradley}
 
 {start_of_verse: Verse 1}
 [G]There were tears in her eyes as [C]she told me [G]goodbye

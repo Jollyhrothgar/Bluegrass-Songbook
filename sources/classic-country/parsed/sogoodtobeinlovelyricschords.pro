@@ -1,6 +1,6 @@
 {meta: title So Good To Be In Love}
 {meta: artist Patty Loveless}
-{meta: writer Karen Staley}
+{meta: composer Karen Staley}
 
 {start_of_verse: Verse 1}
 [C]Well it's been a long time since I [G7]thought about a man

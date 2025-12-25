@@ -1,6 +1,6 @@
 {meta: title We're Watching Our Steps}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery and Melba Montgomery}
+{meta: composer Earl Montgomery and Melba Montgomery}
 
 {start_of_verse: Verse 1}
 [C]Our love is a secret [G7]we’re watching our [C]steps [F]   [C]

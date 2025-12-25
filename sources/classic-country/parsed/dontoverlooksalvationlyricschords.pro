@@ -1,6 +1,6 @@
 {meta: title Don't Overlook Salvation}
 {meta: artist Ricky Van Shelton}
-{meta: writer John Bava}
+{meta: composer John Bava}
 
 {start_of_verse: Verse 1}
 [G]Heaven is a city [C]built by jewels [G]rare

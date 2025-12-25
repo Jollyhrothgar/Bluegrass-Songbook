@@ -1,6 +1,6 @@
 {meta: title All Over My Mind}
 {meta: artist Roy Drusky}
-{meta: writer Vic McAlpin and Roy Drusky}
+{meta: composer Vic McAlpin and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [G7]You're still all over my [C]mind

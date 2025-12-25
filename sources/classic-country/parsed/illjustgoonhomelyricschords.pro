@@ -1,6 +1,6 @@
 {meta: title I'll Just Go On Home}
 {meta: artist Cal Smith}
-{meta: writer Randall J. Colemus}
+{meta: composer Randall J. Colemus}
 
 {start_of_verse: Verse 1}
 [G]I know your bar is closing your [C]flashing sign's are [Am]dim

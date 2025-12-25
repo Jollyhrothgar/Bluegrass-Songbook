@@ -1,6 +1,6 @@
 {meta: title Jukebox Argument}
 {meta: artist Mickey Gilley}
-{meta: writer Gary Nicholson}
+{meta: composer Gary Nicholson}
 
 {start_of_verse: Verse 1}
 [C]Well my best friend and his woman

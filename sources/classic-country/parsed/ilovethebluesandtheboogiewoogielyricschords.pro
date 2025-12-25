@@ -1,6 +1,6 @@
 {meta: title I Love The Blues And The Boogie Woogie}
 {meta: artist Billy Crash Craddock}
-{meta: writer Darrell Statler}
+{meta: composer Darrell Statler}
 
 {start_of_verse: Verse 1}
 [C]Hot dang I love the [F]blues and the boogie [C]woogie

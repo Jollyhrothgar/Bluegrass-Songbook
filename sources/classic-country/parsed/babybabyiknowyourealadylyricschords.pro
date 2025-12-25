@@ -1,6 +1,6 @@
 {meta: title Baby Baby (I Know You're A Lady)}
 {meta: artist Ferlin Husky}
-{meta: writer Norro Wilson and Alex Harvey}
+{meta: composer Norro Wilson and Alex Harvey}
 
 {start_of_verse: Verse 1}
 [C]Baby hear me callin' baby

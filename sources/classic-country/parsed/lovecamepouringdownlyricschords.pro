@@ -1,6 +1,6 @@
 {meta: title Love Came Pouring Down}
 {meta: artist Jean Shepard}
-{meta: writer Curly Putman and Larry Butler}
+{meta: composer Curly Putman and Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]It's been so long since I've seen [Dm]sunshine

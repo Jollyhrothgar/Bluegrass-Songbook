@@ -1,6 +1,6 @@
 {meta: title Breaking Bread}
 {meta: artist Johnny Cash}
-{meta: writer Randy L George}
+{meta: composer Randy L George}
 
 {start_of_verse: Verse 1}
 [G]Breaking bread  breaking [Em]bread

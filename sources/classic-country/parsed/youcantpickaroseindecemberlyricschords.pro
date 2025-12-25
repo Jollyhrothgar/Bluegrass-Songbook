@@ -1,6 +1,6 @@
 {meta: title You Can't Pick A Rose In December}
 {meta: artist Don Gibson}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [G]You can't pick a [D7]rose in [G]December [G7]

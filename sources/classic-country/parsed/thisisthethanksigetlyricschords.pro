@@ -1,6 +1,6 @@
 {meta: title This Is The Thanks I Get}
 {meta: artist Eddy Arnold}
-{meta: writer Tommy Dilbeck}
+{meta: composer Tommy Dilbeck}
 
 {start_of_verse: Verse 1}
 [C]Once we were happy [C][F]together 

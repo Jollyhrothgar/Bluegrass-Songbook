@@ -1,6 +1,6 @@
 {meta: title I'm No Longer In Your Heart}
 {meta: artist Norma Jean}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [G]How can two [C]people be in love so com[G]pletely [C]   [G]

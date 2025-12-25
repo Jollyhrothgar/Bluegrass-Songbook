@@ -1,6 +1,6 @@
 {meta: title Another Bridge to Burn}
 {meta: artist Ray Price}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I've had to burn most every bridge [C7]I've [F]crossed

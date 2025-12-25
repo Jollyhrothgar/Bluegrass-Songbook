@@ -1,6 +1,6 @@
 {meta: title It’s Time To Cross That Bridge}
 {meta: artist Faron Young}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]It's time to cross that [G7]bridge that we talked [C]about

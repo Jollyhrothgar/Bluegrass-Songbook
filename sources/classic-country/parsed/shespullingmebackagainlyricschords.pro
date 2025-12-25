@@ -1,6 +1,6 @@
 {meta: title She's Pulling Me Back Again}
 {meta: artist Mickey Gilley}
-{meta: writer Jerry Foster & Jerry Rice}
+{meta: composer Jerry Foster & Jerry Rice}
 
 {start_of_verse: Verse 1}
 [C]She's pulling me back again

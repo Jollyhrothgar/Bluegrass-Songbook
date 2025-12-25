@@ -1,6 +1,6 @@
 {meta: title Richest Man In The World}
 {meta: artist Eddy Arnold}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]I got a [F]humpback mule a [C]plow and a tater patch

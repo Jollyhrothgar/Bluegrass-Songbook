@@ -1,6 +1,6 @@
 {meta: title Should I Do It}
 {meta: artist Tanya Tucker}
-{meta: writer Laying Martine}
+{meta: composer Laying Martine}
 
 {start_of_verse: Verse 1}
 [G]I swore when he hurt me so 

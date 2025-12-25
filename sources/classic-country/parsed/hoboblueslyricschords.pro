@@ -1,6 +1,6 @@
 {meta: title Hobo Blues}
 {meta: artist The Lonesome River Band}
-{meta: writer Billy Smith}
+{meta: composer Billy Smith}
 
 {start_of_verse: Verse 1}
 [G]Got a hole in my pocket done packed my ole nap-sack

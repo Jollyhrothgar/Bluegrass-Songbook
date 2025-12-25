@@ -1,6 +1,6 @@
 {meta: title No One But You}
 {meta: artist Kitty Wells and Red Foley}
-{meta: writer Eddie Smith}
+{meta: composer Eddie Smith}
 
 {start_of_verse: Verse 1}
 [C]Now when I'm by myself dear [F]who do I want near

@@ -1,6 +1,6 @@
 {meta: title One More Mountain To Climb}
 {meta: artist Freddie Hart}
-{meta: writer Freddie Hart and David Ingles}
+{meta: composer Freddie Hart and David Ingles}
 
 {start_of_verse: Verse 1}
 [G]For every woman there is a man

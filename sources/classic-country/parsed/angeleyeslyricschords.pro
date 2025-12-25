@@ -1,6 +1,6 @@
 {meta: title Angel Eyes}
 {meta: artist Waylon Jennings}
-{meta: writer Rodney Crowell}
+{meta: composer Rodney Crowell}
 
 {start_of_verse: Verse 1}
 [G]Angel eyes  [C]angel eyes

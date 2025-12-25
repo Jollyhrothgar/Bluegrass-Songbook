@@ -1,6 +1,6 @@
 {meta: title Further On Up the Road}
 {meta: artist Johnny Cash}
-{meta: writer Bruce Sringsteen}
+{meta: composer Bruce Sringsteen}
 
 {start_of_verse: Verse 1}
 [Am]Where the road is dark and the seed is [C]sown

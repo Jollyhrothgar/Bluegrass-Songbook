@@ -1,6 +1,6 @@
 {meta: title There's Nobody Home To Go Home To}
 {meta: artist Charley Pride}
-{meta: writer Dickey Lee, Allen Reynolds, Mitt Addington}
+{meta: composer Dickey Lee, Allen Reynolds, Mitt Addington}
 
 {start_of_verse: Verse 1}
 [C]The neon lights are going out the barmaid's half [G7]asleep

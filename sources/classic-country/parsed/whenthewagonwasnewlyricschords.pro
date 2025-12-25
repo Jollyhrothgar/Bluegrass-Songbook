@@ -1,6 +1,6 @@
 {meta: title When The Wagon Was New}
 {meta: artist Jim and Jesse}
-{meta: writer Sam McGee}
+{meta: composer Sam McGee}
 
 {start_of_verse: Verse 1}
 [G]There's an old rusty wagon that's [C]left to rot [G]away

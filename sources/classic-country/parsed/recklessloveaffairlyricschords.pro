@@ -1,6 +1,6 @@
 {meta: title Reckless Love Affair}
 {meta: artist Wanda Jackson}
-{meta: writer Rolley Baird}
+{meta: composer Rolley Baird}
 
 {start_of_verse: Verse 1}
 [G]Now we're the [D7]victims of a reckless love [G]affair

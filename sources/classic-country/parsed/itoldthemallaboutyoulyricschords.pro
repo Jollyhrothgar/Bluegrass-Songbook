@@ -1,6 +1,6 @@
 {meta: title I Told Them All About You}
 {meta: artist David Houston}
-{meta: writer Cliff Friend}
+{meta: composer Cliff Friend}
 
 {start_of_verse: Verse 1}
 [C]I told the whippoorwill told the daffodil

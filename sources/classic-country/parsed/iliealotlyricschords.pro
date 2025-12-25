@@ -1,6 +1,6 @@
 {meta: title I Lie a Lot}
 {meta: artist Ray Price}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I say that I don’t miss you [F]when they ask me if I [D7]do

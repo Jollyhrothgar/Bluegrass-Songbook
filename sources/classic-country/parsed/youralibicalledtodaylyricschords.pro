@@ -1,6 +1,6 @@
 {meta: title Your Alibi Called Today}
 {meta: artist Norma Jean}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G7]Your alibi called [C]today

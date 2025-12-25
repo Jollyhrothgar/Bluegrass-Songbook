@@ -1,6 +1,6 @@
 {meta: title What In The World Has Gone Wrong With Our Love}
 {meta: artist Jack Greene and Jeannie Seely}
-{meta: writer Hank Cochran and Johnny Slate}
+{meta: composer Hank Cochran and Johnny Slate}
 
 {start_of_verse: Verse 1}
 [C]What in the [F]world has gone [G7]wrong with our [C]love

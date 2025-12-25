@@ -1,6 +1,6 @@
 {meta: title The Air Conditioner Song}
 {meta: artist Bobby Bare}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]Oh the sound of the thing is not a ring

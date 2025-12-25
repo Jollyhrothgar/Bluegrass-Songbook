@@ -1,6 +1,6 @@
 {meta: title At The Club Alibi}
 {meta: artist Mel Street}
-{meta: writer Eddie Rabbitt and Even Stevens}
+{meta: composer Eddie Rabbitt and Even Stevens}
 
 {start_of_verse: Verse 1}
 [C]Meet me tonight just across the state [G7]line

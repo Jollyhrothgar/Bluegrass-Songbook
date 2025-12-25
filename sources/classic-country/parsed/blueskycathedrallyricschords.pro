@@ -1,6 +1,6 @@
 {meta: title Blue Sky Cathedral}
 {meta: artist Rhonda Vincent}
-{meta: writer Chuck Jones and Michael Lunn}
+{meta: composer Chuck Jones and Michael Lunn}
 
 {start_of_verse: Verse 1}
 [G]My granddaddy never went to church

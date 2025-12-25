@@ -1,6 +1,6 @@
 {meta: title So Used To Loving You}
 {meta: artist Webb Pierce}
-{meta: writer Tommy Hill and Webb Pierce}
+{meta: composer Tommy Hill and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]So used to loving you 

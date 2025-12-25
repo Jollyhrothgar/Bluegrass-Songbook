@@ -1,6 +1,6 @@
 {meta: title Mining For Coal}
 {meta: artist Randy Travis}
-{meta: writer Matraca Berg and Ronnie Samoset}
+{meta: composer Matraca Berg and Ronnie Samoset}
 
 {start_of_verse: Verse 1}
 [C]I've searched the world over all of my life

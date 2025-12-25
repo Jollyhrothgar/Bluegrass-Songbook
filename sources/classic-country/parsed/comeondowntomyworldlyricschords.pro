@@ -1,6 +1,6 @@
 {meta: title Come on Down To My World}
 {meta: artist J.D. Crowe & the New South}
-{meta: writer Larry Rice}
+{meta: composer Larry Rice}
 
 {start_of_verse: Verse 1}
 [C]Yesterday I finally found out [F]where you are

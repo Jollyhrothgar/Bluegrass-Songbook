@@ -1,6 +1,6 @@
 {meta: title Got A Heartsick Feeling}
 {meta: artist Bobby Helms}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]I got a heartsick feeling and I'm telling you no [C]lie

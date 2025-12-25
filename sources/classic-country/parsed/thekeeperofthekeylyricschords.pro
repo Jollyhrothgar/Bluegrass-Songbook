@@ -1,6 +1,6 @@
 {meta: title The Keeper of the Key}
 {meta: artist Wanda Jackson}
-{meta: writer Wynn Stewart and Harlan Howard}
+{meta: composer Wynn Stewart and Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]You have gone and yet  [F]I'm still your [C]prisoner

@@ -1,6 +1,6 @@
 {meta: title Already Gone}
 {meta: artist Tanya Tucker}
-{meta: writer Jack Tempchin and Robb Strandlund}
+{meta: composer Jack Tempchin and Robb Strandlund}
 
 {start_of_verse: Verse 1}
 [C]Well I heard some people [G7]talking just the [F]other day

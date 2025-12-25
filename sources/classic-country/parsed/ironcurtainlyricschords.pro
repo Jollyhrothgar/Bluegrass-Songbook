@@ -1,6 +1,6 @@
 {meta: title Iron Curtain}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]There's an iron curtain darling that's [C]between your heart and mine

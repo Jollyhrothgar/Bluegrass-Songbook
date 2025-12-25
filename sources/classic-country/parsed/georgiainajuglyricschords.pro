@@ -1,6 +1,6 @@
 {meta: title Georgia In A Jug}
 {meta: artist Johnny Paycheck}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]Mason jars on the dresser filled with [F]dollars  and [D7]quarters

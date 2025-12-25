@@ -1,6 +1,6 @@
 {meta: title Mr. Songman}
 {meta: artist Elvis Presley}
-{meta: writer Donnie Summer}
+{meta: composer Donnie Summer}
 
 {start_of_verse: Verse 1}
 [C]Here’s another dime for [C7]you Mr. [F]Songman

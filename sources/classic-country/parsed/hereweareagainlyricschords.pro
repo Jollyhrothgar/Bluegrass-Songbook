@@ -1,6 +1,6 @@
 {meta: title Here We Are Again}
 {meta: artist Wanda Jackson}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [G7]Just when I think I've forgotten you

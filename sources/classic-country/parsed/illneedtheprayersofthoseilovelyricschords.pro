@@ -1,6 +1,6 @@
 {meta: title I'll Need The Prayers Of Those I Love}
 {meta: artist The Larry Stephenson Band}
-{meta: writer Carl Story and William York}
+{meta: composer Carl Story and William York}
 
 {start_of_verse: Verse 1}
 [C]I [G]need the prayers of [D7]those I [G]love

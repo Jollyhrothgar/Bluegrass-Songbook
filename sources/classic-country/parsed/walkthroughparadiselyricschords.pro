@@ -1,6 +1,6 @@
 {meta: title Walk Through Paradise}
 {meta: artist Jimmie Davis}
-{meta: writer John K. Almeida, Pua Almeida,}
+{meta: composer John K. Almeida, Pua Almeida,}
 
 {start_of_verse: Verse 1}
 [C]Let me Lord [G]let me Lord

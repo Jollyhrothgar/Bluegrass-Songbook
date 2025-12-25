@@ -1,6 +1,6 @@
 {meta: title It's A Long Lonely Highway}
 {meta: artist Elvis Presley}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [C]It's a long lonely highway when you're travelling all [C7]alone

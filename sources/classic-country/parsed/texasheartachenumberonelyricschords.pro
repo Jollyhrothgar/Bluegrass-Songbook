@@ -1,6 +1,6 @@
 {meta: title Texas Heartache Number One}
 {meta: artist Mickey Gilley}
-{meta: writer Paul Hotchkiss and Mike Terry}
+{meta: composer Paul Hotchkiss and Mike Terry}
 
 {start_of_verse: Verse 1}
 [G]Tonight I made myself a promise[D7]

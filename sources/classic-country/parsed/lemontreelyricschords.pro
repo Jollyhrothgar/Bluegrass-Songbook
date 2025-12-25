@@ -1,6 +1,6 @@
 {meta: title Lemon Tree}
 {meta: artist Bobby Bare}
-{meta: writer Will Holt}
+{meta: composer Will Holt}
 
 {start_of_verse: Verse 1}
 [C]When I was [G7]just a lad of [C]ten my father [G7]said to [C]me

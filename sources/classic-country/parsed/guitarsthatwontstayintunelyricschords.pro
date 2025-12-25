@@ -1,6 +1,6 @@
 {meta: title Guitars That Won't Stay In Tune}
 {meta: artist John Anderson}
-{meta: writer Troy Seals and Eddie Setser}
+{meta: composer Troy Seals and Eddie Setser}
 
 {start_of_verse: Verse 1}
 [C]Well I grew up lean and hungry I worked hard for my money

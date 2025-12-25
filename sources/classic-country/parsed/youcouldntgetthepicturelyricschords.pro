@@ -1,6 +1,6 @@
 {meta: title You Couldn't Get The Picture}
 {meta: artist George Jones}
-{meta: writer Chuck Harter}
+{meta: composer Chuck Harter}
 
 {start_of_verse: Verse 1}
 [C]I walked in the front door turned the light on [F]in the [C]hall

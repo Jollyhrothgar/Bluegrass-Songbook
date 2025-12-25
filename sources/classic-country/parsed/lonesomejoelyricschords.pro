@@ -1,6 +1,6 @@
 {meta: title Lonesome Joe}
 {meta: artist Boxcar Willie}
-{meta: writer Roy Acuff}
+{meta: composer Roy Acuff}
 
 {start_of_verse: Verse 1}
 [C]There once lived a man he came from Mexico

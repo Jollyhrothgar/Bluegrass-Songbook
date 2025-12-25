@@ -1,6 +1,6 @@
 {meta: title My Florida Sunshine}
 {meta: artist Claire Lynch}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [C]Way down in the state of Florida [F]Florida

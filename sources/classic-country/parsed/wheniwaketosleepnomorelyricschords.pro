@@ -1,6 +1,6 @@
 {meta: title When I Wake To Sleep No More}
 {meta: artist Ralph Stanley}
-{meta: writer Marion Easterling}
+{meta: composer Marion Easterling}
 
 {start_of_verse: Verse 1}
 [G]What a glad thought some wonderful morning 

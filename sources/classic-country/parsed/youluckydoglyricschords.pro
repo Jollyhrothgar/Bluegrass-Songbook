@@ -1,6 +1,6 @@
 {meta: title You Lucky Dog}
 {meta: artist Billy Walker}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Yes you took her off my hands you lucky [G7]dog

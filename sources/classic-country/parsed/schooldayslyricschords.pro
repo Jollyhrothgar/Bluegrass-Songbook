@@ -1,6 +1,6 @@
 {meta: title School Days}
 {meta: artist Charlie Rich}
-{meta: writer Gus Edwards and Will Cobb}
+{meta: composer Gus Edwards and Will Cobb}
 
 {start_of_verse: Verse 1}
 [G]School days [D7]school days 

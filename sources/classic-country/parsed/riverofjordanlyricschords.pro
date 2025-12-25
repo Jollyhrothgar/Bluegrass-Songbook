@@ -1,6 +1,6 @@
 {meta: title River of Jordan}
 {meta: artist Ricky Skaggs}
-{meta: writer Hazel HouserC}
+{meta: composer Hazel HouserC}
 
 {start_of_verse: Verse 1}
 And we read that John the [G7]Baptist met him [C]there

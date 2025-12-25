@@ -1,6 +1,6 @@
 {meta: title Thunderstorms}
 {meta: artist Cal Smith}
-{meta: writer Sterling Whipple}
+{meta: composer Sterling Whipple}
 
 {start_of_verse: Verse 1}
 [G]A thunderstorm a [C]screen door and a [G]little boy

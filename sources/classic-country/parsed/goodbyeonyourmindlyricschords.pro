@@ -1,6 +1,6 @@
 {meta: title Goodbye On Your Mind}
 {meta: artist Moe Bandy}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]That far away [G7]look in your [C]eye

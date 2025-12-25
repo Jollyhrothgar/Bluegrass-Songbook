@@ -1,6 +1,6 @@
 {meta: title Hang My Picture In Your Heart Dear}
 {meta: artist Hank Locklin}
-{meta: writer Mel Tillis and Wayne P. Walker}
+{meta: composer Mel Tillis and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]Hang my picture in your heart [C]dear

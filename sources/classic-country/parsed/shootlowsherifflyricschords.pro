@@ -1,6 +1,6 @@
 {meta: title Shoot Low Sheriff}
 {meta: artist John Anderson}
-{meta: writer Monroe Fields and Carmol Taylor}
+{meta: composer Monroe Fields and Carmol Taylor}
 
 {start_of_verse: Verse 1}
 Shoot Low Sheriff

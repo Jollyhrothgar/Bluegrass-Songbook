@@ -1,6 +1,6 @@
 {meta: title Lord I Hope This Day Is Good}
 {meta: artist Don Williams}
-{meta: writer Dave Hanner}
+{meta: composer Dave Hanner}
 
 {start_of_verse: Verse 1}
 [C]Lord I hope this day is good 

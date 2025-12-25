@@ -1,6 +1,6 @@
 {meta: title Long Line Of Love}
 {meta: artist Paul Overstreet}
-{meta: writer Paul Overstreet and Thom Schuyler}
+{meta: composer Paul Overstreet and Thom Schuyler}
 
 {start_of_verse: Verse 1}
 [C]I bought a beautiful diamond ring 

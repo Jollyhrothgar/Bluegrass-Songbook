@@ -1,6 +1,6 @@
 {meta: title Everybody's Talkin'}
 {meta: artist Roger Miller}
-{meta: writer Fred Neil}
+{meta: composer Fred Neil}
 
 {start_of_verse: Verse 1}
 [C]Everybody's talkin' at me

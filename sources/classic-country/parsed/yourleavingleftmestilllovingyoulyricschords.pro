@@ -1,6 +1,6 @@
 {meta: title Your Leaving Left Me Still Loving You}
 {meta: artist Conway Twitty}
-{meta: writer Michael White}
+{meta: composer Michael White}
 
 {start_of_verse: Verse 1}
 [C]Last night was our last [F]night [C]together

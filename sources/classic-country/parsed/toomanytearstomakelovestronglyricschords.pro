@@ -1,6 +1,6 @@
 {meta: title Too Many Tears To Make Love Strong}
 {meta: artist Don Williams}
-{meta: writer Jim Rushing}
+{meta: composer Jim Rushing}
 
 {start_of_verse: Verse 1}
 [G]It's comin' all apart babe [C]   [D7]with every tearin' [G]word

@@ -1,6 +1,6 @@
 {meta: title Somebody Loves You}
 {meta: artist Crystal Gayle}
-{meta: writer Allen Reynolds}
+{meta: composer Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [C]It's been a long time since you [F]went away

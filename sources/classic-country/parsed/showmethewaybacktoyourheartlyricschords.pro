@@ -1,6 +1,6 @@
 {meta: title Show Me The Way Back To Your Heart}
 {meta: artist Eddy Arnold}
-{meta: writer Steve Nelson, Eddy Arnold, Zel Soehnel, Ed Nelson, Jr.}
+{meta: composer Steve Nelson, Eddy Arnold, Zel Soehnel, Ed Nelson, Jr.}
 
 {start_of_verse: Verse 1}
 [C]Every road that I take [A7]proves I made a big [D7]mistake

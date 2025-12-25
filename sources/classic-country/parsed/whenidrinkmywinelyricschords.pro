@@ -1,6 +1,6 @@
 {meta: title When I Drink My Wine}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]Sweet relief awaits me [F]forgetfulness is [C]mine

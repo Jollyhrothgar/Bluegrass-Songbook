@@ -1,6 +1,6 @@
 {meta: title When Will I Be Loved}
 {meta: artist Everly Brothers}
-{meta: writer Phil Everly}
+{meta: composer Phil Everly}
 
 {start_of_verse: Verse 1}
 [G]I’ve been [C]made blue  I’ve [G]been lied [C]to 

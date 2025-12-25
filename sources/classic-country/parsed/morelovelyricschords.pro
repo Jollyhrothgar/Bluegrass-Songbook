@@ -1,6 +1,6 @@
 {meta: title More Love}
 {meta: artist Doug Stone}
-{meta: writer Gary Scott Burr and Doug Stone}
+{meta: composer Gary Scott Burr and Doug Stone}
 
 {start_of_verse: Verse 1}
 [G7]When we [C]met I [G7]told her I'd [C]give her the [F]moon

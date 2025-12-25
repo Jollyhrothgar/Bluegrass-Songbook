@@ -1,6 +1,6 @@
 {meta: title Johnny My Love (Grandma's Diary)}
 {meta: artist Hank Locklin}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [G]Johnny my love  Johnny [D7]my love  Johnny [G]my love  Johnny my [D7]love

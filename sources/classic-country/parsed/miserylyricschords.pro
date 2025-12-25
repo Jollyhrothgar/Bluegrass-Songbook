@@ -1,6 +1,6 @@
 {meta: title Misery}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills, Tommy Duncan, Billie Tiny Moore}
+{meta: composer Bob Wills, Tommy Duncan, Billie Tiny Moore}
 
 {start_of_verse: Verse 1}
 [C]Went to bed last [G7]night I wasn't [C]sleepy

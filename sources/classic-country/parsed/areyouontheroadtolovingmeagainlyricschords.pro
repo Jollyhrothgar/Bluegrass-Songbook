@@ -1,6 +1,6 @@
 {meta: title Are You On The Road To Loving Me Again}
 {meta: artist Debbie Boone}
-{meta: writer Debbie Hupp and Bob Morrison}
+{meta: composer Debbie Hupp and Bob Morrison}
 
 {start_of_verse: Verse 1}
 [C]Are you here just to [F]pass the time of [C]day

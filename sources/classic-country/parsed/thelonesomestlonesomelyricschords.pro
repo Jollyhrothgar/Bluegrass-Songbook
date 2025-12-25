@@ -1,6 +1,6 @@
 {meta: title The Lonesomest Lonesome}
 {meta: artist Ray Price}
-{meta: writer Mac Davis}
+{meta: composer Mac Davis}
 
 {start_of_verse: Verse 1}
 [C]Well I [G7]scorched your favorite pan this morning

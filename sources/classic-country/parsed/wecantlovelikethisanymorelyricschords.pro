@@ -1,6 +1,6 @@
 {meta: title We Can't Love Like This Anymore}
 {meta: artist Alabama}
-{meta: writer John Jarrard and Wendell Mobley}
+{meta: composer John Jarrard and Wendell Mobley}
 
 {start_of_verse: Verse 1}
 [C]You're laying right beside me but you're a million miles [F]away

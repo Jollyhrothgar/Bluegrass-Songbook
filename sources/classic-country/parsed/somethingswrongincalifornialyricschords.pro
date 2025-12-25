@@ -1,6 +1,6 @@
 {meta: title Something's Wrong In California}
 {meta: artist Waylon Jennings}
-{meta: writer Wayne C. Thompson and Rodney Lay}
+{meta: composer Wayne C. Thompson and Rodney Lay}
 
 {start_of_verse: Verse 1}
 [C]Something's wrong in [F]Californ[G7]ia I [C]can tell by the [F]letter she don't [G7]write 

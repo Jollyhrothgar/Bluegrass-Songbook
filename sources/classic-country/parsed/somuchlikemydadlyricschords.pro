@@ -1,6 +1,6 @@
 {meta: title So Much Like My Dad}
 {meta: artist George Strait}
-{meta: writer Chips Moman and Bobby Emmons}
+{meta: composer Chips Moman and Bobby Emmons}
 
 {start_of_verse: Verse 1}
 [G]I know that I surprised you coming hom[Dm]e

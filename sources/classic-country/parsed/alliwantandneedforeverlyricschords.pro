@@ -1,6 +1,6 @@
 {meta: title All I Want And Need Forever}
 {meta: artist Vern Gosdin}
-{meta: writer Dennis Payne}
+{meta: composer Dennis Payne}
 
 {start_of_verse: Verse 1}
 [G]All I want and need forever 

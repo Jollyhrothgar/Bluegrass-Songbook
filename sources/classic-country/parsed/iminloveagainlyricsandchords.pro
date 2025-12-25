@@ -1,6 +1,6 @@
 {meta: title I'm In Love Again}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino - Dave Bartholomew}
+{meta: composer Antonio Domino - Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [C]Yes it's me and I'm in love again

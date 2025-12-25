@@ -1,6 +1,6 @@
 {meta: title What A Merry Christmas This Could Be}
 {meta: artist Willie Nelson}
-{meta: writer Harlan Perry Howard and Hank Cochran}
+{meta: composer Harlan Perry Howard and Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]What a merry [G7]Christmas this could [C]be

@@ -1,6 +1,6 @@
 {meta: title Best Worst Thing}
 {meta: artist Curtis Potter}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]Look at me and tell me that [D7]you love me

@@ -1,6 +1,6 @@
 {meta: title You Want Everything But Me}
 {meta: artist Lefty Frizzell}
-{meta: writer Aubrey}
+{meta: composer Aubrey}
 
 {start_of_verse: Verse 1}
 [G]You want this you want that 

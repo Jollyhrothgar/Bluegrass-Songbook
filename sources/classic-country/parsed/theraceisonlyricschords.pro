@@ -1,6 +1,6 @@
 {meta: title The Race Is On}
 {meta: artist George Jones}
-{meta: writer Don Rollins}
+{meta: composer Don Rollins}
 
 {start_of_verse: Verse 1}
 [G]I feel tears welling up cold and deep inside

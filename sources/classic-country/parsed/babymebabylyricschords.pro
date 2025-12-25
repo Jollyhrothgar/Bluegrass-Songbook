@@ -1,6 +1,6 @@
 {meta: title Baby Me Baby}
 {meta: artist Gene Watson}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [C]Baby me [G7]baby you know I've had a bad [C]day

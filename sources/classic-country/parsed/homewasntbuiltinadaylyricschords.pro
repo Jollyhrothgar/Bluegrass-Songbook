@@ -1,6 +1,6 @@
 {meta: title Home Wasn't Built In A Day}
 {meta: artist Cal Smith}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [G]I close the [D7]office at [G]five

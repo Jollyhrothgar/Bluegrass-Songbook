@@ -1,6 +1,6 @@
 {meta: title Hello Heartache}
 {meta: artist Marty Robbins}
-{meta: writer Mabel Cordle and Janice Beard}
+{meta: composer Mabel Cordle and Janice Beard}
 
 {start_of_verse: Verse 1}
 [C]Hello heartache I should have known you'd come my [G7]way

@@ -1,6 +1,6 @@
 {meta: title Try Being Lonely}
 {meta: artist Porter Wagoner}
-{meta: writer Buck Trent and George McCormick}
+{meta: composer Buck Trent and George McCormick}
 
 {start_of_verse: Verse 1}
 [G]Just [C]try being [G]lonely and you'll [D7]know just how I [G]feel

@@ -1,6 +1,6 @@
 {meta: title Living Like A Fool}
 {meta: artist Jimmy Martin}
-{meta: writer Buckley Maxwell and Jerry Crutchfield}
+{meta: composer Buckley Maxwell and Jerry Crutchfield}
 
 {start_of_verse: Verse 1}
 [G]I wake up every morning and I [C]love to find you [G]there

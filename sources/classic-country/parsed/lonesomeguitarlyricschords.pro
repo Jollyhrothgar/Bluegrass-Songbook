@@ -1,6 +1,6 @@
 {meta: title Lonesome Guitar}
 {meta: artist Big Tom And The Travelers}
-{meta: writer J. McCauley}
+{meta: composer J. McCauley}
 
 {start_of_verse: Verse 1}
 [C]Alana tonight as I lay in this dark prison [G7]cell

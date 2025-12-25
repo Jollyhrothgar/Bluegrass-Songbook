@@ -1,6 +1,6 @@
 {meta: title We Loved It Away}
 {meta: artist George Jones}
-{meta: writer George Richey and Carmol Taylor}
+{meta: composer George Richey and Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [G]All my friends told me [C]we’d never make [G]it

@@ -1,6 +1,6 @@
 {meta: title Legend Of The Robin's Red Breast}
 {meta: artist Cowboy Copas}
-{meta: writer Preston Blanche and Bradley Kincaid}
+{meta: composer Preston Blanche and Bradley Kincaid}
 
 {start_of_verse: Verse 1}
 [G]Oh have you heard this story it [C]happened long [G]ago

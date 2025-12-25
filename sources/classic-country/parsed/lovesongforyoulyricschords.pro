@@ -1,6 +1,6 @@
 {meta: title Love Song For You}
 {meta: artist Hank Locklin}
-{meta: writer Neal Merritt}
+{meta: composer Neal Merritt}
 
 {start_of_verse: Verse 1}
 [C]I am writing this [E7]song for [A7]you 

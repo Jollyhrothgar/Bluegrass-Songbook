@@ -1,6 +1,6 @@
 {meta: title Fool Fool Heart}
 {meta: artist Tanya Tucker}
-{meta: writer Rick Peoples and Roger Brown}
+{meta: composer Rick Peoples and Roger Brown}
 
 {start_of_verse: Verse 1}
 [C]Fool  [Am]fool  [G7]heart  look at you all [B7]broken [G7][C]apart

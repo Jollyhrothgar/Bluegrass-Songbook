@@ -1,6 +1,6 @@
 {meta: title Not Really Living At All}
 {meta: artist Bill Anderson}
-{meta: writer Carl Watson and Del Trolinder}
+{meta: composer Carl Watson and Del Trolinder}
 
 {start_of_verse: Verse 1}
 [C]What is my reason for [F]goin' on [C]livin' 

@@ -1,6 +1,6 @@
 {meta: title Run Away}
 {meta: artist Wynn Stewart}
-{meta: writer Bobby George}
+{meta: composer Bobby George}
 
 {start_of_verse: Verse 1}
 [G]One of these days I'm a gonna run away

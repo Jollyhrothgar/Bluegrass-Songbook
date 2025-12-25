@@ -1,6 +1,6 @@
 {meta: title With Tears in My Eyes}
 {meta: artist Hank Williams}
-{meta: writer Paul Howard}
+{meta: composer Paul Howard}
 
 {start_of_verse: Verse 1}
 [C]With tears in my eyes dear  I begged you to [F]stay

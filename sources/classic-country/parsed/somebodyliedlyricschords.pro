@@ -1,6 +1,6 @@
 {meta: title Somebody Lied}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Arthur Smith}
+{meta: composer Arthur Smith}
 
 {start_of_verse: Verse 1}
 [G]I don't claim to be so smart I'm [C]dumb as can [G]be

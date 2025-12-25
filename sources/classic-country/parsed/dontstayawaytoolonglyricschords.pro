@@ -1,6 +1,6 @@
 {meta: title Don’t Stay Away Too Long}
 {meta: artist Ernest Tubb}
-{meta: writer Don Whitney and Ernest Tubb}
+{meta: composer Don Whitney and Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]Don’t stay too long cause I’m too [F]lonesome

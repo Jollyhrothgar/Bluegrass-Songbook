@@ -1,6 +1,6 @@
 {meta: title Things God Gave Me}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]The breeze through the [Am]window the [C]light out at [G7]sea

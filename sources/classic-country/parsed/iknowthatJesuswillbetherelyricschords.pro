@@ -1,6 +1,6 @@
 {meta: title I Know That Jesus Will Be There}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Cecil Harrelson and Linda G. Lewis}
+{meta: composer Cecil Harrelson and Linda G. Lewis}
 
 {start_of_verse: Verse 1}
 [C]When my body [F]breathes its [C]last breath

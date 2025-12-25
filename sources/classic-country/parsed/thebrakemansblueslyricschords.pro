@@ -1,6 +1,6 @@
 {meta: title The Brakeman's Blues}
 {meta: artist Lefty Frizzell}
-{meta: writer Jimmie Rogers}
+{meta: composer Jimmie Rogers}
 
 {start_of_verse: Verse 1}
 [G]Portland Maine is just the same as sunny Tenne[G7]ssee

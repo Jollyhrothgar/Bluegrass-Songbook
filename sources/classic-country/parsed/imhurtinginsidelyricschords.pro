@@ -1,6 +1,6 @@
 {meta: title I'm Hurting Inside}
 {meta: artist Jim Reeves}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]I'm hurting inside where it doesn't [G7]show 

@@ -1,6 +1,6 @@
 {meta: title I Never Miss A Day Missing You}
 {meta: artist Moe Bandy}
-{meta: writer Carl Belew and Moe Bandy}
+{meta: composer Carl Belew and Moe Bandy}
 
 {start_of_verse: Verse 1}
 [G]I never take a drink or go out [C]dancin'

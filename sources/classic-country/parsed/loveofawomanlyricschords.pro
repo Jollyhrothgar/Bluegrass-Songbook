@@ -1,6 +1,6 @@
 {meta: title Love Of A Woman}
 {meta: artist Travis Tritt}
-{meta: writer Kevin Brandt}
+{meta: composer Kevin Brandt}
 
 {start_of_verse: Verse 1}
 [G]My baby [Em]knows me [C]better than [G]I do

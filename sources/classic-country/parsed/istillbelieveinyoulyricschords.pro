@@ -1,6 +1,6 @@
 {meta: title I Still Believe In You}
 {meta: artist Vince Gill}
-{meta: writer John Jarvis and Vince Gill}
+{meta: composer John Jarvis and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]Everybody wants a little [G7]piece of my time

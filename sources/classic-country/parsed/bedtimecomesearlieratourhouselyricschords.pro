@@ -1,6 +1,6 @@
 {meta: title Bedtime Comes Earlier At Our House}
 {meta: artist Charly McClain}
-{meta: writer Danny Hogan and Butch Carter}
+{meta: composer Danny Hogan and Butch Carter}
 
 {start_of_verse: Verse 1}
 [C]Every time every time you lay your body next to [G7]mine

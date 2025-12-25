@@ -1,6 +1,6 @@
 {meta: title You Touched My Life}
 {meta: artist Charley Pride}
-{meta: writer Theodore Clifford Harris}
+{meta: composer Theodore Clifford Harris}
 
 {start_of_verse: Verse 1}
 [C]You touched my life and made my heart [F]awaken

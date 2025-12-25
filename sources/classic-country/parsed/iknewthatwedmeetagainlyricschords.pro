@@ -1,6 +1,6 @@
 {meta: title I Knew That We'd Meet Again}
 {meta: artist Hank Snow}
-{meta: writer Allan Flynn, Bert Douglas, Ernest Brewer}
+{meta: composer Allan Flynn, Bert Douglas, Ernest Brewer}
 
 {start_of_verse: Verse 1}
 [C]Though we said [F]goodbye and [C]drifted far [G7]apart

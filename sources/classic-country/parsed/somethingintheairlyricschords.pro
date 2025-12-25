@@ -1,6 +1,6 @@
 {meta: title Something In The Air}
 {meta: artist Tracy Lawrence}
-{meta: writer Phyllis Fishleder and Georgie McKearly}
+{meta: composer Phyllis Fishleder and Georgie McKearly}
 
 {start_of_verse: Verse 1}
 [G7]There is [C]something in the [Cm]air at [Dm]Christmas [G7]time

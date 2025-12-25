@@ -1,6 +1,6 @@
 {meta: title I'm Sorry I'm Not Sorry}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Wanda Ballman}
+{meta: composer Wanda Ballman}
 
 {start_of_verse: Verse 1}
 [G]I'm sorry I'm not sorry that [D7]you have said [G]goodbye

@@ -1,6 +1,6 @@
 {meta: title How Did We Stay Together}
 {meta: artist The Everly Brothers}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [G]I know they call you foolish

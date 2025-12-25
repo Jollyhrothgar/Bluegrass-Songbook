@@ -1,6 +1,6 @@
 {meta: title Snowflake}
 {meta: artist Jim Reeves}
-{meta: writer Ned Miller}
+{meta: composer Ned Miller}
 
 {start_of_verse: Verse 1}
 [G7]Hey hey hey [C]snowflake

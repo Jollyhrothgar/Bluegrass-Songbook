@@ -1,6 +1,6 @@
 {meta: title Gone Out Of My Mind}
 {meta: artist Doug Stone}
-{meta: writer Bob Morrison, Gene Dobbins, Michael Huffman}
+{meta: composer Bob Morrison, Gene Dobbins, Michael Huffman}
 
 {start_of_verse: Verse 1}
 [C]Your love just came to visit  [F]your memory came to stay

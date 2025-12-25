@@ -1,6 +1,6 @@
 {meta: title Haunted House}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Robert L. Geddins}
+{meta: composer Robert L. Geddins}
 
 {start_of_verse: Verse 1}
 [G]I just moved in my new house today

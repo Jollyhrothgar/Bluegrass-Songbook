@@ -1,6 +1,6 @@
 {meta: title Give Me The Roses While I Live}
 {meta: artist Jimmy Martin}
-{meta: writer R.H. Cornelius and James Rowe}
+{meta: composer R.H. Cornelius and James Rowe}
 
 {start_of_verse: Verse 1}
 [G]Wonderful things of folks are said

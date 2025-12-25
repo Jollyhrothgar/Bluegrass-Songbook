@@ -1,6 +1,6 @@
 {meta: title April Fools Day}
 {meta: artist Marty Robbins}
-{meta: writer Donald L. Winters Sr. and Mark Webb}
+{meta: composer Donald L. Winters Sr. and Mark Webb}
 
 {start_of_verse: Verse 1}
 [C]It should be April Fools Day cause you've been fooling [F]me

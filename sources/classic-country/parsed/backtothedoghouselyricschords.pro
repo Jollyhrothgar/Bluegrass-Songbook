@@ -1,6 +1,6 @@
 {meta: title Back To The Doghouse}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Hawkshaw Hawkins, Lois Mann, Henry Bernard}
+{meta: composer Hawkshaw Hawkins, Lois Mann, Henry Bernard}
 
 {start_of_verse: Verse 1}
 [G]I'd rather wear a muzzle a chain around my neck

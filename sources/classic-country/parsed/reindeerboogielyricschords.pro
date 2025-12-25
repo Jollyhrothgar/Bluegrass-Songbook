@@ -1,6 +1,6 @@
 {meta: title Reindeer Boogie}
 {meta: artist Hank Snow}
-{meta: writer Hank Snow, Peanut Faircloth, Cordia Volkmar}
+{meta: composer Hank Snow, Peanut Faircloth, Cordia Volkmar}
 
 {start_of_verse: Verse 1}
 [C]Santa had a cup of coffee and he ate a little snack

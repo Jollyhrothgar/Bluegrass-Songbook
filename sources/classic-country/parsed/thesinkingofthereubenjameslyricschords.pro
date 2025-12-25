@@ -1,6 +1,6 @@
 {meta: title The Sinking Of The Reuben James}
 {meta: artist Johnny Horton}
-{meta: writer Woody Guthrie, Pete Seeger, Almanac Singers}
+{meta: composer Woody Guthrie, Pete Seeger, Almanac Singers}
 
 {start_of_verse: Verse 1}
 [C]What were their names tell me [F]what were their [D7]names

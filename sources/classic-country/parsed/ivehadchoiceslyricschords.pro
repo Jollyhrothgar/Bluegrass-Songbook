@@ -1,6 +1,6 @@
 {meta: title I've Had Choices}
 {meta: artist George Jones}
-{meta: writer Billy Yates and Mike Curtis}
+{meta: composer Billy Yates and Mike Curtis}
 
 {start_of_verse: Verse 1}
 [G]I've had choices  since the [C]day that I was [G]born

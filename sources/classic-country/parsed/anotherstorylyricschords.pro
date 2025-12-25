@@ -1,6 +1,6 @@
 {meta: title Another Story}
 {meta: artist Ernest Tubb}
-{meta: writer Arlie Duff}
+{meta: composer Arlie Duff}
 
 {start_of_verse: Verse 1}
 [G]No Regrets No Hard Feelings its [C]over

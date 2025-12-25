@@ -1,6 +1,6 @@
 {meta: title Eat Drink And Be Merry}
 {meta: artist Porter Wagoner}
-{meta: writer Celia Ferguson and Sandra Ferguson}
+{meta: composer Celia Ferguson and Sandra Ferguson}
 
 {start_of_verse: Verse 1}
 [C]Little heart you've been broken many times [G7]before

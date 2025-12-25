@@ -1,6 +1,6 @@
 {meta: title Let Me Stay In Your Arms}
 {meta: artist Don Gibson}
-{meta: writer J.D. Miller and Jimmy C. Newman}
+{meta: composer J.D. Miller and Jimmy C. Newman}
 
 {start_of_verse: Verse 1}
 [C]Hold me close hold me tight let me stay in your [G7]arms

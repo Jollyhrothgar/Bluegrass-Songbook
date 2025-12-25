@@ -1,6 +1,6 @@
 {meta: title Wrong Company}
 {meta: artist Wynn Stewart/Jan Howard}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I've lost the only love I've ever [F]known

@@ -1,6 +1,6 @@
 {meta: title The Masquerade Party}
 {meta: artist Carl Belew}
-{meta: writer Fred Burch and Benny Joy}
+{meta: composer Fred Burch and Benny Joy}
 
 {start_of_verse: Verse 1}
 [G]I was going to a [C]masquerade [G]party

@@ -1,6 +1,6 @@
 {meta: title Slippin' Away}
 {meta: artist The Bellamy Brothers}
-{meta: writer Frank Savlino and Jim Valentini}
+{meta: composer Frank Savlino and Jim Valentini}
 
 {start_of_verse: Verse 1}
 [C]We're becoming strangers to each [F]other

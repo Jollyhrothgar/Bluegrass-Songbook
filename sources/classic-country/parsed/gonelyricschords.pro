@@ -1,6 +1,6 @@
 {meta: title Gone}
 {meta: artist Ferlin Husky}
-{meta: writer Smokey Rogers}
+{meta: composer Smokey Rogers}
 
 {start_of_verse: Verse 1}
 [C]Since you've gone the [F]moon the [C]sun

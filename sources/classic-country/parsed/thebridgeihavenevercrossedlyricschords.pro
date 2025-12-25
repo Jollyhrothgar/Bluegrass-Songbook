@@ -1,6 +1,6 @@
 {meta: title The Bridge I Have Never Crossed}
 {meta: artist Ferlin Husky}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [G]All my life I've [C]traveled o'er the [G]country

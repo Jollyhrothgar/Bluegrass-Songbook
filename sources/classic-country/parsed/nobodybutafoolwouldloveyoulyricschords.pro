@@ -1,6 +1,6 @@
 {meta: title Nobody But A Fool Would Love You}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [F]Nobody but a fool would love you after the way you've done [C]me

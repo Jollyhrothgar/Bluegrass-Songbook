@@ -1,6 +1,6 @@
 {meta: title Too Much Of Me Loving You}
 {meta: artist Dottie West}
-{meta: writer Jan Crutchfield and Johnny Slate}
+{meta: composer Jan Crutchfield and Johnny Slate}
 
 {start_of_verse: Verse 1}
 [C]Last night [Em]I almost [C][G7]told someone [A7][F]a [Dm]lie

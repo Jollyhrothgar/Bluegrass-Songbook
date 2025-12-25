@@ -1,6 +1,6 @@
 {meta: title I Sure Don’t Need That Memory Tonight}
 {meta: artist Moe Bandy}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]I need a great big bottle of [G7]VOS to [C]go

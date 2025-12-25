@@ -1,6 +1,6 @@
 {meta: title When You Say Nothing At All}
 {meta: artist Alison Krauss}
-{meta: writer Don Schlitz & Paul Overstreet}
+{meta: composer Don Schlitz & Paul Overstreet}
 
 {start_of_verse: Verse 1}
 [C]It's [G7]amazing how [F]you can speak [G7]right to my [C]heart

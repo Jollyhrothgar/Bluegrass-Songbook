@@ -1,6 +1,6 @@
 {meta: title If You Ever Have Forever In Mind}
 {meta: artist Vince Gill}
-{meta: writer Troy Seals and Vince Gill}
+{meta: composer Troy Seals and Vince Gill}
 
 {start_of_verse: Verse 1}
 [G7]You're climbing [C]mountains  I'm on a [F]hill

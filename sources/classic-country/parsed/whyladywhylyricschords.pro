@@ -1,6 +1,6 @@
 {meta: title Why Lady Why}
 {meta: artist Alabama}
-{meta: writer Teddy Gentry and Richard Scott}
+{meta: composer Teddy Gentry and Richard Scott}
 
 {start_of_verse: Verse 1}
 [C]Why lady [Em][Am]w—h--y  [Am]can't I leave you [C]alone

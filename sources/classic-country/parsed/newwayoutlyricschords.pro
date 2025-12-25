@@ -1,6 +1,6 @@
 {meta: title New Way Out}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Randy Sharp}
+{meta: composer Randy Sharp}
 
 {start_of_verse: Verse 1}
 [G]I know [D7]how hard she'll take it [Am]

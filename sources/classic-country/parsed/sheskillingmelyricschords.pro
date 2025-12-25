@@ -1,5 +1,5 @@
 {meta: artist Bob Wills}
-{meta: writer Claude Nichols}
+{meta: composer Claude Nichols}
 
 {start_of_verse: Verse 1}
 [C]I went to see my sweetie last night

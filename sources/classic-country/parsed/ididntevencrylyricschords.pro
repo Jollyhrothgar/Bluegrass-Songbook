@@ -1,6 +1,6 @@
 {meta: title I Didn't Even Cry}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]The moment that I [G7]saw the doctor’s [C]face

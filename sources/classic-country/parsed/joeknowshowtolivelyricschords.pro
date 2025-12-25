@@ -1,6 +1,6 @@
 {meta: title Joe Knows How To Live}
 {meta: artist Eddy Raven}
-{meta: writer Graham Hamilton, Seals Troy, Harold Barnes and Max Duane}
+{meta: composer Graham Hamilton, Seals Troy, Harold Barnes and Max Duane}
 
 {start_of_verse: Verse 1}
 [G7]Blue Monday morning at the [C]factory gate

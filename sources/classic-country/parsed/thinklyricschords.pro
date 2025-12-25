@@ -1,6 +1,6 @@
 {meta: title Think}
 {meta: artist Brenda Lee}
-{meta: writer Peggy Whittington}
+{meta: composer Peggy Whittington}
 
 {start_of_verse: Verse 1}
 [C]Think before you leave me [E7]  for somebody new

@@ -1,6 +1,6 @@
 {meta: title In The Name Of Love}
 {meta: artist Barbara Mandrell}
-{meta: writer Carmol Taylor, Earl Montgomery, George Richey}
+{meta: composer Carmol Taylor, Earl Montgomery, George Richey}
 
 {start_of_verse: Verse 1}
 [G]Guess who called me [Dm]yesterday [G]apologized for [C]going away

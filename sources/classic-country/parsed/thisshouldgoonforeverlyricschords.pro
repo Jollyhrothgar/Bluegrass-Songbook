@@ -1,5 +1,5 @@
 {meta: artist Wanda Jackson}
-{meta: writer J.D. Miller}
+{meta: composer J.D. Miller}
 
 {start_of_verse: Verse 1}
 [C]This should go on [F]forever it should never ever [C]end

@@ -1,6 +1,6 @@
 {meta: title When The Feeling Goes Away}
 {meta: artist Ricky Van Shelton}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]Love is just a feeling in a [F]fool’s state of [C]mind

@@ -1,6 +1,6 @@
 {meta: title Leah}
 {meta: artist Roy Orbison}
-{meta: writer Joe Melson AND Roy Orbison}
+{meta: composer Joe Melson AND Roy Orbison}
 
 {start_of_verse: Verse 1}
 [C]Le-[F]ah Le[C]ah  Le-[F]ah Le[C]ah 

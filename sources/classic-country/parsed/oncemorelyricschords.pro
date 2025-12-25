@@ -1,6 +1,6 @@
 {meta: title Once More}
 {meta: artist The Osborne Brothers}
-{meta: writer Dusty Owens}
+{meta: composer Dusty Owens}
 
 {start_of_verse: Verse 1}
 [C]Once more to be with you dear

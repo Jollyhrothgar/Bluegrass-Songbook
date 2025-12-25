@@ -1,6 +1,6 @@
 {meta: title New Game Now}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson and Danny Timms}
+{meta: composer Kris Kristofferson and Danny Timms}
 
 {start_of_verse: Verse 1}
 [C]The moment I entered the [F]world of your vision

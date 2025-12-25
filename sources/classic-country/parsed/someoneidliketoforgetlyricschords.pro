@@ -1,6 +1,6 @@
 {meta: title Someone I'd Like To Forget}
 {meta: artist Skeeter Davis}
-{meta: writer Marie Wilson and Skeeter Davis}
+{meta: composer Marie Wilson and Skeeter Davis}
 
 {start_of_verse: Verse 1}
 [D7]I  [G]know I'll [D7]keep a [G]memory in[C]side of me

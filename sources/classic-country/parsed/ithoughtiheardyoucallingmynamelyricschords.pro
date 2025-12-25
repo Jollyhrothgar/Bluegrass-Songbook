@@ -1,6 +1,6 @@
 {meta: title I Thought I Heard You Calling My Name}
 {meta: artist Porter Wagoner}
-{meta: writer Lee Emerson}
+{meta: composer Lee Emerson}
 
 {start_of_verse: Verse 1}
 [C]You said goodbye to me [C7]this [F]morning

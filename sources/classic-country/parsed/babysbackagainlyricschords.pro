@@ -1,6 +1,6 @@
 {meta: title Baby's Back Again}
 {meta: artist Connie Smith}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [C]A this must be my lucky day [G7]baby's back again

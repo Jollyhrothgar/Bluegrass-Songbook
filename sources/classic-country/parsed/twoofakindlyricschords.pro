@@ -1,6 +1,6 @@
 {meta: title Two Of A Kind}
 {meta: artist Roy Orbison}
-{meta: writer Bob Montgomery and Earl Sinks}
+{meta: composer Bob Montgomery and Earl Sinks}
 
 {start_of_verse: Verse 1}
 [C]They say we're [Dm]searching for [G7]love we'll never [C]find 

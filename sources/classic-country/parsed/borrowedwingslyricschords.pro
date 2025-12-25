@@ -1,6 +1,6 @@
 {meta: title Borrowed Wings}
 {meta: artist Tanya Tucker}
-{meta: writer Pat Terry and Roger Murrah}
+{meta: composer Pat Terry and Roger Murrah}
 
 {start_of_verse: Verse 1}
 [C]The saddest song I've ever [F]heard

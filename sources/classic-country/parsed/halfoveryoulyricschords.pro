@@ -1,6 +1,6 @@
 {meta: title Half Over You}
 {meta: artist George Jones}
-{meta: writer K. Staley}
+{meta: composer K. Staley}
 
 {start_of_verse: Verse 1}
 [C]I've seen rock bottom and [F]I've sailed to the [C]top

@@ -1,6 +1,6 @@
 {meta: title I Woke Up From Dreaming}
 {meta: artist George Jones}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]We both have a [C]morning cup of [G]coffee

@@ -1,6 +1,6 @@
 {meta: title What's One More Time}
 {meta: artist Ronnie Milsap}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [G7]What's one more [C]time

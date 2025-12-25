@@ -1,6 +1,6 @@
 {meta: title I Love Charlie Brown}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]They tell me Homer Jones [G7]was out a hunting [C]bear

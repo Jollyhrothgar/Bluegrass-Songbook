@@ -1,6 +1,6 @@
 {meta: title Shanghaied}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis and Marijohn Wilkin}
+{meta: composer Mel Tillis and Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [C]I've played around in China town [F]passing the time [C]away

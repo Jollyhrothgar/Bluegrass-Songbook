@@ -1,6 +1,6 @@
 {meta: title I've Just Seen The Rock Of Ages}
 {meta: artist Larry Sparks Brothers}
-{meta: writer John Brenton Preston}
+{meta: composer John Brenton Preston}
 
 {start_of_verse: Verse 1}
 [C]I was standing by the [A]bed[C]side

@@ -1,6 +1,6 @@
 {meta: title Bad Bad Leroy Brown}
 {meta: artist Mel Street}
-{meta: writer Jim Croce}
+{meta: composer Jim Croce}
 
 {start_of_verse: Verse 1}
 [G]Along the south side of Chicago is the [A7]baddest part of town

@@ -1,6 +1,6 @@
 {meta: title What Might Have Been}
 {meta: artist Sammy Kershaw}
-{meta: writer Dean Dillon and Donny Kees}
+{meta: composer Dean Dillon and Donny Kees}
 
 {start_of_verse: Verse 1}
 [C]You were the [G7]only [C]woman [F]for the [C]longest [Dm][Em][F]time

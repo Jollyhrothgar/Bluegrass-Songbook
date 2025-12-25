@@ -1,6 +1,6 @@
 {meta: title Are You Happy}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Though you’re with somebody [E7]new I’ll [F]not worry over [C]you

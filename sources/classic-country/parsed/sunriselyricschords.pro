@@ -1,6 +1,6 @@
 {meta: title Sunrise}
 {meta: artist Slim Whitman}
-{meta: writer C.W. Poole and B.D. Ackley}
+{meta: composer C.W. Poole and B.D. Ackley}
 
 {start_of_verse: Verse 1}
 [G]When I shall come to the [D7]end of my [G]way

@@ -1,6 +1,6 @@
 {meta: title Wrong Ideas}
 {meta: artist Brenda Lee}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]Well alright you can sit down [D7]but just for a minute

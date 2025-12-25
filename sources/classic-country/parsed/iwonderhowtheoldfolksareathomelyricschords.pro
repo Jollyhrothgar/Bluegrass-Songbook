@@ -1,6 +1,6 @@
 {meta: title I Wonder How The Old Folks Are At Home}
 {meta: artist Anne Murray}
-{meta: writer Herbert S. Lambert and F.W. Vandersloot}
+{meta: composer Herbert S. Lambert and F.W. Vandersloot}
 
 {start_of_verse: Verse 1}
 [C]Well I wonder how the [F]old folks are at [C]home

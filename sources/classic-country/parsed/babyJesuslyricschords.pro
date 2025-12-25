@@ -1,6 +1,6 @@
 {meta: title Baby Jesus}
 {meta: artist Faron Young}
-{meta: writer Bill Emerson, Jody Emerson, Lionel Delmore}
+{meta: composer Bill Emerson, Jody Emerson, Lionel Delmore}
 
 {start_of_verse: Verse 1}
 [C]Joseph led the donkey that Mary rode 

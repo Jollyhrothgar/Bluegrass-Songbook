@@ -1,6 +1,6 @@
 {meta: title Say Forever You'll Be Mine}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [D7]Say forever you'll be [G]mine

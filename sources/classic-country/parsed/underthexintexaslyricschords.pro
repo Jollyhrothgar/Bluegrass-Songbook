@@ -1,6 +1,6 @@
 {meta: title Under The X In Texas}
 {meta: artist Red Steagall}
-{meta: writer Johnny Gimble}
+{meta: composer Johnny Gimble}
 
 {start_of_verse: Verse 1}
 [C]I'm sitting with a map  laid [A7]out on my [D7]lap

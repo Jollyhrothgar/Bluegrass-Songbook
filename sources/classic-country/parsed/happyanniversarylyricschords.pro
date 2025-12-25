@@ -1,6 +1,6 @@
 {meta: title Happy Anniversary}
 {meta: artist Slim Whitman}
-{meta: writer Gary S. Paxton}
+{meta: composer Gary S. Paxton}
 
 {start_of_verse: Verse 1}
 [C]Darling happy [C][G7]anniversary

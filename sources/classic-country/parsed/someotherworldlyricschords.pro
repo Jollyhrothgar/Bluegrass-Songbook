@@ -1,6 +1,6 @@
 {meta: title Some Other World}
 {meta: artist Willie Nelson}
-{meta: writer Floyd Tillman}
+{meta: composer Floyd Tillman}
 
 {start_of_verse: Verse 1}
 [C]Some other world  has [F]all the [C]sunshine 

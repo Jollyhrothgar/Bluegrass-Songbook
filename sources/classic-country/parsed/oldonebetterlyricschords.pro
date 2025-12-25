@@ -1,6 +1,6 @@
 {meta: title Old One Better}
 {meta: artist Tracy Byrd}
-{meta: writer Mark Nesler and Tony Martin}
+{meta: composer Mark Nesler and Tony Martin}
 
 {start_of_verse: Verse 1}
 [C]Well she said when she left that a [F]change might do me [C]good

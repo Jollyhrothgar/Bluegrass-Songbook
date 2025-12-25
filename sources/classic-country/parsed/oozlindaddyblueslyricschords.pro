@@ -1,6 +1,6 @@
 {meta: title Oozlin' Daddy Blues}
 {meta: artist Bob Wills}
-{meta: writer Marc Griffiths}
+{meta: composer Marc Griffiths}
 
 {start_of_verse: Verse 1}
 [C]I went to get my fortune told

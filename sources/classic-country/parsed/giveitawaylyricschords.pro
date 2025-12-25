@@ -1,6 +1,6 @@
 {meta: title Give It Away}
 {meta: artist George Strait}
-{meta: writer Written by Bill Anderson, Buddy Cannon, Jamey Johnson}
+{meta: composer Written by Bill Anderson, Buddy Cannon, Jamey Johnson}
 
 {start_of_verse: Verse 1}
 [C]She was stormin' through the house that day

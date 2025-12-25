@@ -1,6 +1,6 @@
 {meta: title Stranger}
 {meta: artist Johnny Duncan and Janie Fricke}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [C]Maybe she was smiling in the [F]mirror

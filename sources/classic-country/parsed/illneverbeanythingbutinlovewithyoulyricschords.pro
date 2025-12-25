@@ -1,6 +1,6 @@
 {meta: title I'll Never Be Anything But In Love With You}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert and Sonny James}
+{meta: composer Bob Tubert and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]I'll never be [F]anything  [G7]but in [C]love with [C7]you

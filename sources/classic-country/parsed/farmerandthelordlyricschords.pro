@@ -1,6 +1,6 @@
 {meta: title Farmer And The Lord}
 {meta: artist Jimmy Dean}
-{meta: writer Jim Wilson}
+{meta: composer Jim Wilson}
 
 {start_of_verse: Verse 1}
 [C]While restin' the other evening by the side of the road

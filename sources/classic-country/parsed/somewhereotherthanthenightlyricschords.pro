@@ -1,6 +1,6 @@
 {meta: title Somewhere Other Than The Night}
 {meta: artist Garth Brooks}
-{meta: writer Kent Blazy and Garth Brooks}
+{meta: composer Kent Blazy and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [Am]He could see the storm clouds [F]rollin' across the [C]hill

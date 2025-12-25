@@ -1,6 +1,6 @@
 {meta: title Darling Will You Marry Me Again}
 {meta: artist Moe Bandy}
-{meta: writer Sanger D. Shafer and Warren Robb}
+{meta: composer Sanger D. Shafer and Warren Robb}
 
 {start_of_verse: Verse 1}
 [G]It was mom and [C]daddy's [D7]anniversary

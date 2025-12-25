@@ -1,6 +1,6 @@
 {meta: title I Know You're Going Away Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]I know the heartaches are [F]com[C]ing 

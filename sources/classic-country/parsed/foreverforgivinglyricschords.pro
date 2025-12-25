@@ -1,6 +1,6 @@
 {meta: title Forever Forgiving}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]Forever [D7]forgiving  honey that’s [G]you

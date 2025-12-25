@@ -1,6 +1,6 @@
 {meta: title Small Two Bedroom Starter}
 {meta: artist Reba McEntire}
-{meta: writer Harry Shannon and Mitch Johnson}
+{meta: composer Harry Shannon and Mitch Johnson}
 
 {start_of_verse: Verse 1}
 [G]The house stood empty [C]on a [G]corner 

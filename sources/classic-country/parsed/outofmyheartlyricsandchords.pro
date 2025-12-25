@@ -1,6 +1,6 @@
 {meta: title Out of My Heart}
 {meta: artist Faron Young}
-{meta: writer Buddy Killen and Faron Young}
+{meta: composer Buddy Killen and Faron Young}
 
 {start_of_verse: Verse 1}
 [G]You tell me you're leaving [C]well why don't you [G]go

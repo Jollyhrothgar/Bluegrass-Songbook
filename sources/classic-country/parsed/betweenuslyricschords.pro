@@ -1,6 +1,6 @@
 {meta: title Between Us}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [G]Let's start by stopping long enough to [C]talk things [G]over

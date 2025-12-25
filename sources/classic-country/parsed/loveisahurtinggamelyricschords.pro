@@ -1,6 +1,6 @@
 {meta: title Love Is A Hurting Game}
 {meta: artist Marty Robbins}
-{meta: writer Jeff Clay}
+{meta: composer Jeff Clay}
 
 {start_of_verse: Verse 1}
 [C]Hung around too [F]long  [G7]why I can't [C]explain

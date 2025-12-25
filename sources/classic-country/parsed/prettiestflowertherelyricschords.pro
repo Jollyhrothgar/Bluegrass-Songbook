@@ -1,6 +1,6 @@
 {meta: title Prettiest Flower There}
 {meta: artist Rhonda Vincent}
-{meta: writer Val Johnson}
+{meta: composer Val Johnson}
 
 {start_of_verse: Verse 1}
 [G]I came into the parlor a precious [C]soul had gone home

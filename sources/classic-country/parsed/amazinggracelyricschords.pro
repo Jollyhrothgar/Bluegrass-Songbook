@@ -1,6 +1,6 @@
 {meta: title Amazing Grace}
 {meta: artist Brenda Lee}
-{meta: writer John Newton, Bill Walker, William J. Gaither}
+{meta: composer John Newton, Bill Walker, William J. Gaither}
 
 {start_of_verse: Verse 1}
 [C]Amazing grace how [F]sweet the [C]sound

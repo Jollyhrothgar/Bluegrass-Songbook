@@ -1,6 +1,6 @@
 {meta: title Ain't You Ashamed}
 {meta: artist Jean Shepard}
-{meta: writer Ricky Riddle and Mac Donald}
+{meta: composer Ricky Riddle and Mac Donald}
 
 {start_of_verse: Verse 1}
 [G]Oh you sit there and smile and [C]you hold him by the [G]hand

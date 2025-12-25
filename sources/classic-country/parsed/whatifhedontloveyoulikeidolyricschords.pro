@@ -1,6 +1,6 @@
 {meta: title What If He Don’t Love You Like I Do}
 {meta: artist Ray Price}
-{meta: writer Don Helms and Rusty Gabbard}
+{meta: composer Don Helms and Rusty Gabbard}
 
 {start_of_verse: Verse 1}
 [C]I felt so helpless when you walked [F]away from me that night

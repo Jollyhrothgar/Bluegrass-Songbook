@@ -1,6 +1,6 @@
 {meta: title I Wish I Could Fall In Love Today}
 {meta: artist Ray Price}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I wished that I could fall in love [F]today

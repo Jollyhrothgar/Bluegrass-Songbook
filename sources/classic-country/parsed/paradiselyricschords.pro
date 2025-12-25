@@ -1,6 +1,6 @@
 {meta: title Paradise (aka) Mr. Peabody's Coal Train}
 {meta: artist Everly Brothers}
-{meta: writer John Prine}
+{meta: composer John Prine}
 
 {start_of_verse: Verse 1}
 [C]When I was a child my family [F]would [C]travel 

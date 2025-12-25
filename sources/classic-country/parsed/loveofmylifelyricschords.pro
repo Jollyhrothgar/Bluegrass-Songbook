@@ -1,6 +1,6 @@
 {meta: title Love Of My Life}
 {meta: artist The Everly Brothers}
-{meta: writer Boudleaux}
+{meta: composer Boudleaux}
 
 {start_of_verse: Verse 1}
 [C]Love of my [Am]life [C]come close to [Am]me

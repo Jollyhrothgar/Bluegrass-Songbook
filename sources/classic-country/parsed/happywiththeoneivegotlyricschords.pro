@@ -1,6 +1,6 @@
 {meta: title Happy With The One I've Got}
 {meta: artist David Ball}
-{meta: writer Wood Newton and Rand Bishop}
+{meta: composer Wood Newton and Rand Bishop}
 
 {start_of_verse: Verse 1}
 [C]We landed in St. Louis on a wing and a prayer

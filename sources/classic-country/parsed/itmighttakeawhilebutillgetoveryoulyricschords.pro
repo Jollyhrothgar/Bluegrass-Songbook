@@ -1,6 +1,6 @@
 {meta: title It Might Take a While But I'll Get over You}
 {meta: artist Johnny Rodriguez}
-{meta: writer Frank Dycus and Shawn Camp}
+{meta: composer Frank Dycus and Shawn Camp}
 
 {start_of_verse: Verse 1}
 [C]It might take a [F]while but I’ll [G7]get over you

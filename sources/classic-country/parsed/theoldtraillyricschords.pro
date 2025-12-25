@@ -1,6 +1,6 @@
 {meta: title The Old Trail}
 {meta: artist Don Williams}
-{meta: writer Steve Gillette and Charles Quatro}
+{meta: composer Steve Gillette and Charles Quatro}
 
 {start_of_verse: Verse 1}
 [Dm]There's a new ridge [F]road that cuts the [G7]mountain to the [C]bone

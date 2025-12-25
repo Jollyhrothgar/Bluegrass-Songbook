@@ -1,6 +1,6 @@
 {meta: title Address Unknown}
 {meta: artist Marty Robbins}
-{meta: writer Vaughn Horton, Gene Autry, Denver Darling}
+{meta: composer Vaughn Horton, Gene Autry, Denver Darling}
 
 {start_of_verse: Verse 1}
 [C]Well I waited each day for your letter

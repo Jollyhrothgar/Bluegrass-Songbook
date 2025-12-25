@@ -1,6 +1,6 @@
 {meta: title How Would You Like To Be}
 {meta: artist Elvis Presley}
-{meta: writer Ben Raleigh and Mark Barkan}
+{meta: composer Ben Raleigh and Mark Barkan}
 
 {start_of_verse: Verse 1}
 [C]How would you like to be a little [G7]circus clown

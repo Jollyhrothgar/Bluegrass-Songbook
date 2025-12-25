@@ -1,6 +1,6 @@
 {meta: title Angel Like You}
 {meta: artist Doug Stone}
-{meta: writer Angela Kaset and Pamela Belford}
+{meta: composer Angela Kaset and Pamela Belford}
 
 {start_of_verse: Verse 1}
 [G]Deep in my [Em]Christmas [C]memor[D7]ies

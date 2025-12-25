@@ -1,6 +1,6 @@
 {meta: title Send Me to Glory in a Glad Bag}
 {meta: artist John Biggs}
-{meta: writer Don J. Carson, Mim Carson, Steve Mason}
+{meta: composer Don J. Carson, Mim Carson, Steve Mason}
 
 {start_of_verse: Verse 1}
 [G]People tell me I ought to save my [C]money  

@@ -1,6 +1,6 @@
 {meta: title Ain't Gonna Be Your Day}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene Martin}
+{meta: composer Lloene Martin}
 
 {start_of_verse: Verse 1}
 [G]Well I woke up this morning stumbled across the [D7]floor

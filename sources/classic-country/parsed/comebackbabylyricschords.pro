@@ -1,6 +1,6 @@
 {meta: title Come Back Baby}
 {meta: artist Buddy Holly}
-{meta: writer Norman Petty}
+{meta: composer Norman Petty}
 
 {start_of_verse: Verse 1}
 [G]Come back baby [C]baby won't you come back

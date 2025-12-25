@@ -1,6 +1,6 @@
 {meta: title Your Worries And Troubles Are Mine}
 {meta: artist Ralph Stanley}
-{meta: writer Candace K. Randolph and Ralph Stanley}
+{meta: composer Candace K. Randolph and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]People keep asking and [C]wondering [G]why

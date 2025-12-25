@@ -1,6 +1,6 @@
 {meta: title Award To An Angel}
 {meta: artist Johnny Paycheck}
-{meta: writer Wayne Kemp and Mack Vickery}
+{meta: composer Wayne Kemp and Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]If they gave a[G7]wards for best [C]angel

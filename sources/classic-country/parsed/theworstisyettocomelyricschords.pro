@@ -1,6 +1,6 @@
 {meta: title The Worst Is Yet To Come}
 {meta: artist Merle Haggard}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]Such a little time has passed [F]since you went [C]away

@@ -1,6 +1,6 @@
 {meta: title Heaven Ain't Ready For You Yet}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [G]When they carried you into the parlor

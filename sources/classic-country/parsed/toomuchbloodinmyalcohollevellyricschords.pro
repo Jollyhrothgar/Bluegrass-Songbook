@@ -1,6 +1,6 @@
 {meta: title Too Much Blood in My Alcohol Level}
 {meta: artist David Ball}
-{meta: writer Marc-Alan Barnette and Wood Newton}
+{meta: composer Marc-Alan Barnette and Wood Newton}
 
 {start_of_verse: Verse 1}
 [G]Well it ain’t like me to hang out [C]here

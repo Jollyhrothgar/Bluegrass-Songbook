@@ -1,6 +1,6 @@
 {meta: title When I Stop Leaving I’ll Be Gone}
 {meta: artist Charley Pride}
-{meta: writer Kent M. Robbins}
+{meta: composer Kent M. Robbins}
 
 {start_of_verse: Verse 1}
 [G]How do some folks [C]stay in [G]love 

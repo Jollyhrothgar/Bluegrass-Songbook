@@ -1,6 +1,6 @@
 {meta: title Who's Lovin' My Baby}
 {meta: artist John Anderson}
-{meta: writer Curtis Wright}
+{meta: composer Curtis Wright}
 
 {start_of_verse: Verse 1}
 [G]Who's lovin' my [C]baby and who's a-kissin' my [G]gal

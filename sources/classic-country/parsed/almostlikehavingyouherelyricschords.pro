@@ -1,6 +1,6 @@
 {meta: title Almost Like Having You Here}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby and Warren Robb}
+{meta: composer Dave Kirby and Warren Robb}
 
 {start_of_verse: Verse 1}
 [C]We're getting ready for the Friday night [F]fights

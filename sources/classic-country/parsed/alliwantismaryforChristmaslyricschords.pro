@@ -1,6 +1,6 @@
 {meta: title All I Want Is Mary For Christmas Lyrics with Chords}
 {meta: artist The Lonesome River Band}
-{meta: writer Ronnie Bowman}
+{meta: composer Ronnie Bowman}
 
 {start_of_verse: Verse 1}
 [G]Anticipation's growing with each [D7]passing day

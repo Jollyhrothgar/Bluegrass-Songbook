@@ -1,6 +1,6 @@
 {meta: title I Hear You Knockin'}
 {meta: artist Dwight Yoakam}
-{meta: writer Jay D. Miller}
+{meta: composer Jay D. Miller}
 
 {start_of_verse: Verse 1}
 [C]I hear you knockin' I hear you callin'

@@ -1,6 +1,6 @@
 {meta: title Gwen}
 {meta: artist Tommy Overstreet}
-{meta: writer Ricci Mareno and Jerry Gillespie}
+{meta: composer Ricci Mareno and Jerry Gillespie}
 
 {start_of_verse: Verse 1}
 [C]Gwen  [C][F][G7]congrat-ula-tions

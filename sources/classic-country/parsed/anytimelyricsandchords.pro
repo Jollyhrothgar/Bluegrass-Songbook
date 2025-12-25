@@ -1,6 +1,6 @@
 {meta: title Anytime Lyrics and Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Herbert Lawson}
+{meta: composer Herbert Lawson}
 
 {start_of_verse: Verse 1}
 [C]Anyt[A7]ime you're feeling [D7]lonely

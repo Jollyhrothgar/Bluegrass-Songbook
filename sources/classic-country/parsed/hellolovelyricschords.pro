@@ -1,6 +1,6 @@
 {meta: title Hello Love}
 {meta: artist Hank Snow}
-{meta: writer Betty Jean Robinson and Aileen Mnich}
+{meta: composer Betty Jean Robinson and Aileen Mnich}
 
 {start_of_verse: Verse 1}
 [G]Well look who's coming through the door

@@ -1,6 +1,6 @@
 {meta: title I Know The Way By Broken Heart}
 {meta: artist Ricky Van Shelton}
-{meta: writer Craig Wiseman and Ronnie Samoset}
+{meta: composer Craig Wiseman and Ronnie Samoset}
 
 {start_of_verse: Verse 1}
 [D7]Baby left me like a [G]hurricane

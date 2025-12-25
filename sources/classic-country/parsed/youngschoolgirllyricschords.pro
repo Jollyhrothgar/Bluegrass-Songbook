@@ -1,6 +1,6 @@
 {meta: title Young School Girl}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Antoine Domino}
+{meta: composer Dave Bartholomew and Antoine Domino}
 
 {start_of_verse: Verse 1}
 [G7]Hey little school [C]girl

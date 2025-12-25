@@ -1,6 +1,6 @@
 {meta: title Mercury Blues}
 {meta: artist Alan Jackson}
-{meta: writer Robert Geddins and K.C. Douglas}
+{meta: composer Robert Geddins and K.C. Douglas}
 
 {start_of_verse: Verse 1}
 [C]Well if I had money I tell you what I'd do

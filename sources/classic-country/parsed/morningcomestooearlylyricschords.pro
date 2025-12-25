@@ -1,6 +1,6 @@
 {meta: title Morning Comes Too Early}
 {meta: artist Jim Ed Brown and Helen Cornelius}
-{meta: writer Dennis Morgan and Kye Fleming}
+{meta: composer Dennis Morgan and Kye Fleming}
 
 {start_of_verse: Verse 1}
 [G]The night falls around [D7]us 

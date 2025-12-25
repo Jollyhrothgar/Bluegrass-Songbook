@@ -1,6 +1,6 @@
 {meta: title I Already Know}
 {meta: artist Wanda Jackson}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]I already [F]know what I'm [G7]getting for my [C]birthday

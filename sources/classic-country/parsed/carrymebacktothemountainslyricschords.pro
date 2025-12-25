@@ -1,6 +1,6 @@
 {meta: title Carry Me Back To The Mountains}
 {meta: artist Mac Wiseman}
-{meta: writer Carson Robison}
+{meta: composer Carson Robison}
 
 {start_of_verse: Verse 1}
 [C]I was a [G7]wild careless [C]youngster

@@ -1,6 +1,6 @@
 {meta: title Fool's Thin Air}
 {meta: artist Emmylou Harris}
-{meta: writer Rodney Crowell and Guy Clark}
+{meta: composer Rodney Crowell and Guy Clark}
 
 {start_of_verse: Verse 1}
 [C]There's a sweet [F]dream on your [C]pillow

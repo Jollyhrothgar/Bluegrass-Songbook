@@ -1,6 +1,6 @@
 {meta: title Band Of Gold}
 {meta: artist Charly McClain}
-{meta: writer Ronald Dunbar and Edith Wayne}
+{meta: composer Ronald Dunbar and Edith Wayne}
 
 {start_of_verse: Verse 1}
 [C]Now that you're gone all that's left is a [G7]band of gold

@@ -1,6 +1,6 @@
 {meta: title It Meant Goodbye To Me When You Said Hello To Him}
 {meta: artist Merle Haggard}
-{meta: writer Lefty Frizzell and Abe Mulkey}
+{meta: composer Lefty Frizzell and Abe Mulkey}
 
 {start_of_verse: Verse 1}
 [C]Hmm hmm [G7]hmm   hmm hmm hmm  hmm hmm hmm  hmm hmm [C]hmm

@@ -1,6 +1,6 @@
 {meta: title Hesitation Blues}
 {meta: artist Willie Nelson}
-{meta: writer Billy Smythe and Scott Middleton}
+{meta: composer Billy Smythe and Scott Middleton}
 
 {start_of_verse: Verse 1}
 [C]Woke up this morning looking for my shoes

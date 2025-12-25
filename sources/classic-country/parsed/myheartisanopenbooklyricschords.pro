@@ -1,6 +1,6 @@
 {meta: title My Heart Is An Open Book}
 {meta: artist Jimmy Dean}
-{meta: writer Mack Gordon}
+{meta: composer Mack Gordon}
 
 {start_of_verse: Verse 1}
 [G7]Don't believe all those lies

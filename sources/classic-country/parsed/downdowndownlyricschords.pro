@@ -1,6 +1,6 @@
 {meta: title Down Down Down}
 {meta: artist Buck Owens}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]I'm goin' down down down goin' [C]down down down

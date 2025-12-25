@@ -1,6 +1,6 @@
 {meta: title Where Do I Go From Here}
 {meta: artist Jim Reeves}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]Where do I go from here what fate is drawing [G7]near

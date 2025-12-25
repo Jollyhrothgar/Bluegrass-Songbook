@@ -1,6 +1,6 @@
 {meta: title Blame It On Texas}
 {meta: artist Mark Chesnutt}
-{meta: writer Ronnie Rogers and Mark Wright}
+{meta: composer Ronnie Rogers and Mark Wright}
 
 {start_of_verse: Verse 1}
 [G]Been havin' a ball since I was a boy in [C]Beaumont

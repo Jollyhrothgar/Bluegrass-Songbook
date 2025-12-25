@@ -1,6 +1,6 @@
 {meta: title Independence Day}
 {meta: artist Gene Watson}
-{meta: writer Dave Lindsey and Ernie Rowell}
+{meta: composer Dave Lindsey and Ernie Rowell}
 
 {start_of_verse: Verse 1}
 [C]You've always told me that I couldn't make it without [F]you

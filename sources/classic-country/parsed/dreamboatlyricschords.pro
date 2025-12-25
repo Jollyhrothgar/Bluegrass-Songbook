@@ -1,6 +1,6 @@
 {meta: title Dreamboat}
 {meta: artist Doyle Lawson}
-{meta: writer Eugene Wright}
+{meta: composer Eugene Wright}
 
 {start_of_verse: Verse 1}
 [C]When the day has ended with its trials

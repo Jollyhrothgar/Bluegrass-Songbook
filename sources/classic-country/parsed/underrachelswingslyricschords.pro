@@ -1,6 +1,6 @@
 {meta: title Under Rachel's Wings}
 {meta: artist David Allan Coe}
-{meta: writer David Allan Coe, Fred Spears, Stephen Loggans}
+{meta: composer David Allan Coe, Fred Spears, Stephen Loggans}
 
 {start_of_verse: Verse 1}
 [G]Will [C]you hurt [D7]me more [G]than the pain of sharing [C]her

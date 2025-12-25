@@ -1,6 +1,6 @@
 {meta: title The Woman in Me}
 {meta: artist Crystal Gayle}
-{meta: writer Susan Thomas}
+{meta: composer Susan Thomas}
 
 {start_of_verse: Verse 1}
 [G]Seems to me no matter [D7]what I do

@@ -1,6 +1,6 @@
 {meta: title Everything Has Changed}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ray Starr Pennington}
+{meta: composer Ray Starr Pennington}
 
 {start_of_verse: Verse 1}
 [D7]I  [G]walked to the [D7]park where we [G]used to go

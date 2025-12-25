@@ -1,6 +1,6 @@
 {meta: title Big Big World}
 {meta: artist Bob Luman}
-{meta: writer Fred Burch, Gerald Nelson, Red West}
+{meta: composer Fred Burch, Gerald Nelson, Red West}
 
 {start_of_verse: Verse 1}
 [G]9-1-27 Avenue

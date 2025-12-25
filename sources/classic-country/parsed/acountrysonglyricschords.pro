@@ -1,6 +1,6 @@
 {meta: title A Country Song}
 {meta: artist Bill Anderson}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]I didn't know that losing her [G7]would be so hard to [C]take

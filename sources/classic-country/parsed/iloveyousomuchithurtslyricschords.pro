@@ -1,6 +1,6 @@
 {meta: title I Love You So Much It Hurts}
 {meta: artist Patsy Cline}
-{meta: writer Floyd Tillman}
+{meta: composer Floyd Tillman}
 
 {start_of_verse: Verse 1}
 [C]I love you so much it hurts me

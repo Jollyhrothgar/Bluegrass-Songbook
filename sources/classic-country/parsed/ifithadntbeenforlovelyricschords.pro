@@ -1,6 +1,6 @@
 {meta: title If It Hadn't Been For Love}
 {meta: artist The Steeldrivers}
-{meta: writer Michael James Henderson and Chris Stapleton}
+{meta: composer Michael James Henderson and Chris Stapleton}
 
 {start_of_verse: Verse 1}
 [Am]Never woulda hitch hiked to Birmingham

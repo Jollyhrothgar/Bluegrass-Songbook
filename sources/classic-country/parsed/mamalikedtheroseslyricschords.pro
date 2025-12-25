@@ -1,6 +1,6 @@
 {meta: title Mama Liked The Roses}
 {meta: artist Elvis Presley}
-{meta: writer Johnny Christopher}
+{meta: composer Johnny Christopher}
 
 {start_of_verse: Verse 1}
 [C]Oh mama liked the [Dm]roses  [G7]she grew them in the [C]yard  [A7]

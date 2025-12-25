@@ -1,6 +1,6 @@
 {meta: title Bluegrass Lady}
 {meta: artist Billy Walker}
-{meta: writer John F. Riggs and Billy M. Walker}
+{meta: composer John F. Riggs and Billy M. Walker}
 
 {start_of_verse: Verse 1}
 [G]Baby don’t get to friendly I’m just [D7]passing [G]through 

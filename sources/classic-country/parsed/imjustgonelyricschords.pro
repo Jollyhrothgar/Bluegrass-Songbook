@@ -1,6 +1,6 @@
 {meta: title I'm Just Gone}
 {meta: artist Bill Anderson}
-{meta: writer Buzz Rabin}
+{meta: composer Buzz Rabin}
 
 {start_of_verse: Verse 1}
 [G]I could count the miles be[C]tween us now and [G]say

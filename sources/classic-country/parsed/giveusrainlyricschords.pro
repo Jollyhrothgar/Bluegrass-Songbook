@@ -1,6 +1,6 @@
 {meta: title Give Us Rain}
 {meta: artist Ricky Skaggs}
-{meta: writer Bill Joe Foster}
+{meta: composer Bill Joe Foster}
 
 {start_of_verse: Verse 1}
 [C]Grandpa raised a [F]family on a [G7]worn out cotton [C]farm

@@ -1,6 +1,6 @@
 {meta: title I Always Lose}
 {meta: artist Hank Locklin}
-{meta: writer Zeke Clements and Hank Locklin}
+{meta: composer Zeke Clements and Hank Locklin}
 
 {start_of_verse: Verse 1}
 [C]I’ve had my share of tears and [F]sorrow

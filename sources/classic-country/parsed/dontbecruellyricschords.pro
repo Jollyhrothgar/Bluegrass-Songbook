@@ -1,6 +1,6 @@
 {meta: title Don't Be Cruel}
 {meta: artist Elvis Presley}
-{meta: writer by Otis Blackwell}
+{meta: composer by Otis Blackwell}
 
 {start_of_verse: Verse 1}
 [G]You know I can be found sitting home all alone

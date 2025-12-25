@@ -1,6 +1,6 @@
 {meta: title Don't Pretend}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene Martin}
+{meta: composer Lloene Martin}
 
 {start_of_verse: Verse 1}
 [G]Don't pretend if you don't mean it

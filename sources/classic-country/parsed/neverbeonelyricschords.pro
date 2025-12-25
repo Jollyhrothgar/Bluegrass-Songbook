@@ -1,6 +1,6 @@
 {meta: title Never Be One}
 {meta: artist Alabama}
-{meta: writer Teddy Gentry}
+{meta: composer Teddy Gentry}
 
 {start_of_verse: Verse 1}
 [G]Drift off and [D7]dream in your [C]paper doll [G]world

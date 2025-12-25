@@ -1,6 +1,6 @@
 {meta: title Guilty Conscience}
 {meta: artist Carl Smith}
-{meta: writer Carl Butler}
+{meta: composer Carl Butler}
 
 {start_of_verse: Verse 1}
 [C]Oh does a guilty conscience [F]make you rule the [C]day

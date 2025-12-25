@@ -1,6 +1,6 @@
 {meta: title Sweet Betsy From Pike}
 {meta: artist Johnny Cash}
-{meta: writer Jimmie Driftwood}
+{meta: composer Jimmie Driftwood}
 
 {start_of_verse: Verse 1}
 [G]Now don't you remember Sweet [D7]Betsy from [G]Pike

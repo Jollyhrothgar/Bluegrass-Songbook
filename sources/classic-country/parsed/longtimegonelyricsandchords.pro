@@ -1,6 +1,6 @@
 {meta: title Long Time Gone}
 {meta: artist Wilburn Brothers}
-{meta: writer Dave Dudley and Danny Morrison}
+{meta: composer Dave Dudley and Danny Morrison}
 
 {start_of_verse: Verse 1}
 [C]I guess you think you broke my heart

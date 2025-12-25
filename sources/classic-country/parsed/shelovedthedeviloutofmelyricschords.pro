@@ -1,6 +1,6 @@
 {meta: title She Loved The Devil Out Of Me}
 {meta: artist Tracy Lawrence}
-{meta: writer Earl Clark, Rick Huckaby, Tracy Lawrence}
+{meta: composer Earl Clark, Rick Huckaby, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [C]You can't see a freight train coming 

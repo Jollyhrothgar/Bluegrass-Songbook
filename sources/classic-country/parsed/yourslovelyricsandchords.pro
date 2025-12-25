@@ -1,6 +1,6 @@
 {meta: title Yours Love}
 {meta: artist Waylon Jennings}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]May the fruit of my toil [D7]be yours love

@@ -1,6 +1,6 @@
 {meta: title Twenty Miles From Shore}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Bob Graves}
+{meta: composer Bob Graves}
 
 {start_of_verse: Verse 1}
 [C]On a drilling rig twenty miles at [F]sea

@@ -1,6 +1,6 @@
 {meta: title With Your Love On My Mind}
 {meta: artist Don Gibson}
-{meta: writer Robert Ford}
+{meta: composer Robert Ford}
 
 {start_of_verse: Verse 1}
 [G]Here I sit with your love [D7]on my [G]mind 

@@ -1,6 +1,6 @@
 {meta: title Drowning My Troubles}
 {meta: artist Johnny Bush}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]Two eyes in a mirror [F]staring back at [C]me

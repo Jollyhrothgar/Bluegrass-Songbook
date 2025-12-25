@@ -1,6 +1,6 @@
 {meta: title Sunday Morning We'll Be Singing}
 {meta: artist Jim Ed Brown}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]Widow [F]Johnson took a [C]night job

@@ -1,6 +1,6 @@
 {meta: title Do You Hear What I Hear}
 {meta: artist Sonny James}
-{meta: writer Gloria Shayne and Noel Regney}
+{meta: composer Gloria Shayne and Noel Regney}
 
 {start_of_verse: Verse 1}
 [C](Do you hear [G7]what I [C]hear)

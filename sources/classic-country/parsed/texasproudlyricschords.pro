@@ -1,6 +1,6 @@
 {meta: title Texas Proud}
 {meta: artist Curtis Potter}
-{meta: writer Shirley Ann Worth}
+{meta: composer Shirley Ann Worth}
 
 {start_of_verse: Verse 1}
 [C]It’s good to be back to a real honky [G7]tonk

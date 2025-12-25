@@ -1,6 +1,6 @@
 {meta: title Should We Tell Him}
 {meta: artist Everly Brothers}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [C]Mmm mmm [F]should we tell him

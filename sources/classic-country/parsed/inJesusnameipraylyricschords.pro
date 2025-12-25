@@ -1,6 +1,6 @@
 {meta: title In Jesus Name I Pray}
 {meta: artist Charley Pride}
-{meta: writer Jerry Grindele, Paul Gibbons, Tony Hatch}
+{meta: composer Jerry Grindele, Paul Gibbons, Tony Hatch}
 
 {start_of_verse: Verse 1}
 [C]Father give me [G7]strength to [F]do what I must [C]do

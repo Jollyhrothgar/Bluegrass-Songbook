@@ -1,6 +1,6 @@
 {meta: title What's New In Old Mexico}
 {meta: artist Johnny Rodriguez}
-{meta: writer Tony Stampley, Ken Bell, Johnny Rodriguez}
+{meta: composer Tony Stampley, Ken Bell, Johnny Rodriguez}
 
 {start_of_verse: Verse 1}
 [C]Well it's cold and it's raining where I am tonight

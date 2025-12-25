@@ -1,6 +1,6 @@
 {meta: title Time Out for Jesus}
 {meta: artist Charley Pride}
-{meta: writer Ann J. Morton}
+{meta: composer Ann J. Morton}
 
 {start_of_verse: Verse 1}
 [G]Take time out for Jesus [D7]He took time for [G]you

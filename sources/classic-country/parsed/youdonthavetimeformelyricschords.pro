@@ -1,6 +1,6 @@
 {meta: title You Don't Have Time For Me}
 {meta: artist Jeannie Seely}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]You have time for the gay affairs

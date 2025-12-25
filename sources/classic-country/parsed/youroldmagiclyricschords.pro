@@ -1,6 +1,6 @@
 {meta: title Your Old Magic}
 {meta: artist Tanya Tucker}
-{meta: writer Tony Martin and Troy Martin}
+{meta: composer Tony Martin and Troy Martin}
 
 {start_of_verse: Verse 1}
 [G]There was a time [Em]I would have fallen for that [D7]line

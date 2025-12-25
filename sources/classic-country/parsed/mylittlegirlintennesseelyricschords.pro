@@ -1,6 +1,6 @@
 {meta: title My Little Girl In Tennessee}
 {meta: artist The Osborne Brothers}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]Oh that [C]little girl of mine in [G]Tennessee

@@ -1,5 +1,5 @@
 {meta: artist Ernest Tubb}
-{meta: writer George Vaughn}
+{meta: composer George Vaughn}
 
 {start_of_verse: Verse 1}
 [G]Irene  Good[D7]night

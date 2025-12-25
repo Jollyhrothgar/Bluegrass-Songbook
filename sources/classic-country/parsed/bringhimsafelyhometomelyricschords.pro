@@ -1,6 +1,6 @@
 {meta: title Bring Him Safely Home To Me}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Larry Butler}
+{meta: composer Billy Sherrill and Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]There goes the alarm  well it's time to get [C7]up

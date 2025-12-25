@@ -1,6 +1,6 @@
 {meta: title Everybody's Got A Girl But Me}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Lou Bedell and Ethel Gould}
+{meta: composer Lou Bedell and Ethel Gould}
 
 {start_of_verse: Verse 1}
 [G]Everybody's got a girl but [D7]me

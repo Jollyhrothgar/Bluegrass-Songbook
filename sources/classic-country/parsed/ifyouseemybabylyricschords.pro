@@ -1,6 +1,6 @@
 {meta: title If You See My Baby}
 {meta: artist Merle Haggard}
-{meta: writer Eddie Miller and Bob Morris}
+{meta: composer Eddie Miller and Bob Morris}
 
 {start_of_verse: Verse 1}
 [C]If you see my baby  while making your [F]rounds

@@ -1,6 +1,6 @@
 {meta: title Designated Drinker}
 {meta: artist Alan Jackson}
-{meta: writer Alan Jackson}
+{meta: composer Alan Jackson}
 
 {start_of_verse: Verse 1}
 [D7]Here's my [G]keys I want you to [Am]take 'em

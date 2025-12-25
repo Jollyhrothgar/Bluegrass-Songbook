@@ -1,6 +1,6 @@
 {meta: title Texas Up Here Tennessee}
 {meta: artist Johnny Rodriguez}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [G]I come up here from Waco on a [C]U-haul-it [Am]freight

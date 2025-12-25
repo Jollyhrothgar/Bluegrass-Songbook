@@ -1,6 +1,6 @@
 {meta: title I Can't Forget You}
 {meta: artist Johnny Horton}
-{meta: writer Bobby Bobo}
+{meta: composer Bobby Bobo}
 
 {start_of_verse: Verse 1}
 [C]I'm thinking of our [G7]love of the [C]past

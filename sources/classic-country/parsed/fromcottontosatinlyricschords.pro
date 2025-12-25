@@ -1,6 +1,6 @@
 {meta: title From Cotton To Satin}
 {meta: artist Gene Watson}
-{meta: writer David Chamberlain and Jim Vest}
+{meta: composer David Chamberlain and Jim Vest}
 
 {start_of_verse: Verse 1}
 [C]From cotton to satin from Birmingham to [F]Manhattan

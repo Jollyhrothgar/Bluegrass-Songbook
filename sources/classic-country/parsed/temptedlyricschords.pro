@@ -1,6 +1,6 @@
 {meta: title Tempted}
 {meta: artist Tammy Wynette}
-{meta: writer Al Turney}
+{meta: composer Al Turney}
 
 {start_of_verse: Verse 1}
 [G]Sometimes love [D7]can hurt you [G]bad

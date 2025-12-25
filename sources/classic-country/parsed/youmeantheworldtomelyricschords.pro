@@ -1,6 +1,6 @@
 {meta: title You Mean the World to Me}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Daylight comes and bluebirds [F]sing 

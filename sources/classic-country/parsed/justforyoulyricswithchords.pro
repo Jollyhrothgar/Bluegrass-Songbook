@@ -1,6 +1,6 @@
 {meta: title Just For You}
 {meta: artist Waylon Jennings}
-{meta: writer Waylon Jennings, Don Bowman, Jerry Williams}
+{meta: composer Waylon Jennings, Don Bowman, Jerry Williams}
 
 {start_of_verse: Verse 1}
 [G]Do you ever think about [F]the one who thinks about [G]you

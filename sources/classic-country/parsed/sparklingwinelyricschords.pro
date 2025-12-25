@@ -1,6 +1,6 @@
 {meta: title Sparkling Wine}
 {meta: artist Red Sovine}
-{meta: writer Tommy Hill and Red Sovine}
+{meta: composer Tommy Hill and Red Sovine}
 
 {start_of_verse: Verse 1}
 [G]Give me a big glass I said a big glass let it sparkle with [D7]wine

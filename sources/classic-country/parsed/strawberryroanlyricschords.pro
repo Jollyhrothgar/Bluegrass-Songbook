@@ -1,6 +1,6 @@
 {meta: title Strawberry Roan}
 {meta: artist Marty Robbins}
-{meta: writer Curley Flectcher, Fred Howard, Nat Vincent}
+{meta: composer Curley Flectcher, Fred Howard, Nat Vincent}
 
 {start_of_verse: Verse 1}
 [C]I was hanging around town just spending my [G7]time

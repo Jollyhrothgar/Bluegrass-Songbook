@@ -1,6 +1,6 @@
 {meta: title Wild And Wicked World}
 {meta: artist Ray Price}
-{meta: writer J.D. Miller}
+{meta: composer J.D. Miller}
 
 {start_of_verse: Verse 1}
 [C]It’s a wild and wicked world you live [F]in

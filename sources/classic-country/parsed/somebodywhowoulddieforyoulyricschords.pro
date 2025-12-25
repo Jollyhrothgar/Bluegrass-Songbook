@@ -1,6 +1,6 @@
 {meta: title Somebody Who Would Die For You}
 {meta: artist Tracy Lawrence}
-{meta: writer Adam Wheeler and Mark Narmore}
+{meta: composer Adam Wheeler and Mark Narmore}
 
 {start_of_verse: Verse 1}
 [C]He was begging at the mini mart

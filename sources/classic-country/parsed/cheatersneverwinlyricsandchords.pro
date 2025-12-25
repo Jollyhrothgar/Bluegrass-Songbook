@@ -1,6 +1,6 @@
 {meta: title Cheaters Never Win}
 {meta: artist Hank Thompson}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [G]Sweetheart you say that you could make my [C]dreams come true

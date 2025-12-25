@@ -1,6 +1,6 @@
 {meta: title Years Ago}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]I didn't come to kiss the bride so [F]don't seat me on either side

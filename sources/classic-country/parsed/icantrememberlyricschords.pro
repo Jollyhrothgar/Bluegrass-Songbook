@@ -1,6 +1,6 @@
 {meta: title I Can't Remember}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson and Becki Anderson}
+{meta: composer Bill Anderson and Becki Anderson}
 
 {start_of_verse: Verse 1}
 [C]It was late and [F]I was [C]sleepin' when he called

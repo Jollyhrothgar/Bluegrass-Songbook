@@ -1,6 +1,6 @@
 {meta: title That Wonderful Someone}
 {meta: artist Patsy Cline}
-{meta: writer Gertrude Burg}
+{meta: composer Gertrude Burg}
 
 {start_of_verse: Verse 1}
 [G7]That wonderful [C]someone  [Am]who makes the [Dm]stars all shine

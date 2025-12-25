@@ -1,6 +1,6 @@
 {meta: title Mama Kiss The Hurt Away}
 {meta: artist Dottie West}
-{meta: writer Dottie West and Bill West}
+{meta: composer Dottie West and Bill West}
 
 {start_of_verse: Verse 1}
 [G]Mama kiss the [D7]hurt a[C]way 

@@ -1,6 +1,6 @@
 {meta: title My Infinite Love}
 {meta: artist George Strait}
-{meta: writer Annette Grossberg, Billy Wayne Yates, Byron Hill}
+{meta: composer Annette Grossberg, Billy Wayne Yates, Byron Hill}
 
 {start_of_verse: Verse 1}
 [C]When you [G7]see a [D7]shooting [C]star [D7]in the [G7]night [D7]    [C]

@@ -1,6 +1,6 @@
 {meta: title I'll Go Marching Into Glory}
 {meta: artist Hank Snow}
-{meta: writer Kirk Hansard, William Denny, Lois Johnson}
+{meta: composer Kirk Hansard, William Denny, Lois Johnson}
 
 {start_of_verse: Verse 1}
 [C](Singing praises to [G7]the [C]land)

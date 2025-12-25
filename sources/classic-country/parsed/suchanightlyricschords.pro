@@ -1,6 +1,6 @@
 {meta: title Such a Night}
 {meta: artist Elvis Presley}
-{meta: writer Lincoln Chase}
+{meta: composer Lincoln Chase}
 
 {start_of_verse: Verse 1}
 [C]It was a night oo oo what a night

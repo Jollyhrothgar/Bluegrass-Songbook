@@ -1,6 +1,6 @@
 {meta: title Oh Anita}
 {meta: artist Charlie Waller and Randall Hylton}
-{meta: writer Randall Hylton}
+{meta: composer Randall Hylton}
 
 {start_of_verse: Verse 1}
 [G]Oh Anita it's so good to [C]see you

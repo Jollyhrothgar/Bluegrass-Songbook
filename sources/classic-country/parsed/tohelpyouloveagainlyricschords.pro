@@ -1,6 +1,6 @@
 {meta: title To Help You Love Again}
 {meta: artist David Allan Coe}
-{meta: writer Shel Silverstein and David Allan Coe}
+{meta: composer Shel Silverstein and David Allan Coe}
 
 {start_of_verse: Verse 1}
 [C]If you need [G7]someone to [Am]listen to [F]

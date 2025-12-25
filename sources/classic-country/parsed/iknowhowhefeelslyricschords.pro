@@ -1,6 +1,6 @@
 {meta: title I Know How He Feels}
 {meta: artist Reba McEntire}
-{meta: writer Rick Bowles and William Robinson}
+{meta: composer Rick Bowles and William Robinson}
 
 {start_of_verse: Verse 1}
 [G]When I heard that fa[C]miliar voice my heart stopped dead in its [G]tracks

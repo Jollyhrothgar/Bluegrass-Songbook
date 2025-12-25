@@ -1,6 +1,6 @@
 {meta: title I Almost Lost My Mind}
 {meta: artist Hank Snow}
-{meta: writer Ivory Joe Hunter}
+{meta: composer Ivory Joe Hunter}
 
 {start_of_verse: Verse 1}
 [C]When I lost my baby  I almost lost my mind

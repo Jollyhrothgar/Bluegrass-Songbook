@@ -1,6 +1,6 @@
 {meta: title Hearts Aren't Made To Break}
 {meta: artist Lee Greenwood}
-{meta: writer Roger Murrah and Steve Dean}
+{meta: composer Roger Murrah and Steve Dean}
 
 {start_of_verse: Verse 1}
 [G7]Oh it [C]tears me up when [G7]you go all to [F]pieces

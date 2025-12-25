@@ -1,6 +1,6 @@
 {meta: title Three Men On A Mountain}
 {meta: artist The Perrys}
-{meta: writer Wayne Haun and Joel Lindsey}
+{meta: composer Wayne Haun and Joel Lindsey}
 
 {start_of_verse: Verse 1}
 [G]Three men on the [C]mountain

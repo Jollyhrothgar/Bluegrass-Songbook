@@ -1,6 +1,6 @@
 {meta: title It Sure Is Monday}
 {meta: artist Mark Chesnutt}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [C]With the alarm clock ting-a-ling ringin' in my head

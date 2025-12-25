@@ -1,6 +1,6 @@
 {meta: title Why Don't You Leave This Town}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Lee Roberts}
+{meta: composer Lee Roberts}
 
 {start_of_verse: Verse 1}
 [C]Why don’t you leave this [A7]town

@@ -1,6 +1,6 @@
 {meta: title Big Wind}
 {meta: artist Porter Wagoner}
-{meta: writer Wayne P. Walker, Alex Zanetis, George McCormick}
+{meta: composer Wayne P. Walker, Alex Zanetis, George McCormick}
 
 {start_of_verse: Verse 1}
 [C]From daylight till dusk we've been a working in the dust

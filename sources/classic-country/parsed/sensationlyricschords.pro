@@ -1,6 +1,6 @@
 {meta: title Sensation}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]Sensation  sensation  I’ve gotta sen[F]sation new to [C]me

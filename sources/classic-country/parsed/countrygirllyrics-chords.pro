@@ -1,6 +1,6 @@
 {meta: title Country Girl Lyrics and Chords}
 {meta: artist Kitty Wells}
-{meta: writer Myra Smith and Margaret Lewis}
+{meta: composer Myra Smith and Margaret Lewis}
 
 {start_of_verse: Verse 1}
 [C]New York is a [F]long way from [C]Texas

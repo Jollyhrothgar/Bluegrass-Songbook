@@ -1,6 +1,6 @@
 {meta: title Taking The Place Of My Man}
 {meta: artist Loretta Lynn}
-{meta: writer Teddy Wilburn}
+{meta: composer Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [G]You ask why I'm [D7]wastin' myself on the [G]wine

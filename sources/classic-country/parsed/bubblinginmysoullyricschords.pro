@@ -1,6 +1,6 @@
 {meta: title Bubbling In My Soul}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Tommy James and Jerry Organ}
+{meta: composer Tommy James and Jerry Organ}
 
 {start_of_verse: Verse 1}
 [C]Well it's bubblin' bubblin' 

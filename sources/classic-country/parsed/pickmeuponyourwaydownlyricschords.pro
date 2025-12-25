@@ -1,6 +1,6 @@
 {meta: title Pick Me Up On Your Way Down}
 {meta: artist Charlie Walker}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]You were mine for just a while 

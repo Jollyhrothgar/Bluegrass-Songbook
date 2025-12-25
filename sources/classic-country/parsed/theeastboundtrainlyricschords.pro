@@ -1,6 +1,6 @@
 {meta: title The East Bound Train}
 {meta: artist Mac Wiseman}
-{meta: writer Mark Knopfler}
+{meta: composer Mark Knopfler}
 
 {start_of_verse: Verse 1}
 [C]The east bound [G7]train was [C]crowded 

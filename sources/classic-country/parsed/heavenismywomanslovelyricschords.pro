@@ -1,6 +1,6 @@
 {meta: title Heaven Is My Woman's Love}
 {meta: artist Tommy Overstreet}
-{meta: writer S. K. Dobbins}
+{meta: composer S. K. Dobbins}
 
 {start_of_verse: Verse 1}
 [G]Heaven is my woman's [D7]love

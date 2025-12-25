@@ -1,6 +1,6 @@
 {meta: title Yours}
 {meta: artist Jim Reeves}
-{meta: writer Daly Aubert, Augustin Rodriguez, Gonzalo Roig}
+{meta: composer Daly Aubert, Augustin Rodriguez, Gonzalo Roig}
 
 {start_of_verse: Verse 1}
 [G]Yours till the stars have no glory

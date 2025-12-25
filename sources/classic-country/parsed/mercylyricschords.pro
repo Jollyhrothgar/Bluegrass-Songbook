@@ -1,6 +1,6 @@
 {meta: title Mercy}
 {meta: artist Jean Shepard}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]Your pillow don't get wet when [C]I go to bed and [G]weep

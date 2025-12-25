@@ -1,6 +1,6 @@
 {meta: title A King Without A Queen}
 {meta: artist Merle Haggard}
-{meta: writer Bob Wills, John Wills, Martha Dean Moore}
+{meta: composer Bob Wills, John Wills, Martha Dean Moore}
 
 {start_of_verse: Verse 1}
 [C]Riches do not come in silver and in [F]gold

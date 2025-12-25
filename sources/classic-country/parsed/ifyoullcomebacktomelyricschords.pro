@@ -1,6 +1,6 @@
 {meta: title If You’ll Come Back To Me}
 {meta: artist Bob Wills}
-{meta: writer Johnny Gimble and Robert James Wills}
+{meta: composer Johnny Gimble and Robert James Wills}
 
 {start_of_verse: Verse 1}
 [C]There’s a place in my heart that’s been in here so [G7]long

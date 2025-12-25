@@ -1,6 +1,6 @@
 {meta: title For A Minute There}
 {meta: artist Garth Brooks}
-{meta: writer Kent Blazy and Garth Brooks}
+{meta: composer Kent Blazy and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [Am]We were walking along the ocean [F]together hand in hand

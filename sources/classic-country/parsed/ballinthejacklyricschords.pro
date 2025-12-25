@@ -1,6 +1,6 @@
 {meta: title Ballin' The Jack}
 {meta: artist Brenda Lee}
-{meta: writer Jim Burris and Chris Smith}
+{meta: composer Jim Burris and Chris Smith}
 
 {start_of_verse: Verse 1}
 [C]Well put your two knees close [A7]up tight

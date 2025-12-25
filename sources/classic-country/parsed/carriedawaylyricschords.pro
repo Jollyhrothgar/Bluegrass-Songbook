@@ -1,6 +1,6 @@
 {meta: title Carried Away}
 {meta: artist George Strait}
-{meta: writer Steve Bogard and Jeff Stevens}
+{meta: composer Steve Bogard and Jeff Stevens}
 
 {start_of_verse: Verse 1}
 [G]I don't take my [D7]whiskey to [C]extremes

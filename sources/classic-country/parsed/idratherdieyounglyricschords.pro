@@ -1,6 +1,6 @@
 {meta: title I'd Rather Die Young}
 {meta: artist Johnny Cash}
-{meta: writer Beasley Smith, Billy Vaughn, Randy Wood}
+{meta: composer Beasley Smith, Billy Vaughn, Randy Wood}
 
 {start_of_verse: Verse 1}
 [C]I'd rather die young than [F]grow old without [C]you 

@@ -1,6 +1,6 @@
 {meta: title It'll Be Me}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [G]Well if you hear somebody knocking on your door

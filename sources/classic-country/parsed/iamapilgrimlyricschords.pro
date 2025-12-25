@@ -1,6 +1,6 @@
 {meta: title I Am A Pilgrim}
 {meta: artist Alabama}
-{meta: writer Merle Travis}
+{meta: composer Merle Travis}
 
 {start_of_verse: Verse 1}
 [G]I am a pilgrim [D7]and a [G]stranger 

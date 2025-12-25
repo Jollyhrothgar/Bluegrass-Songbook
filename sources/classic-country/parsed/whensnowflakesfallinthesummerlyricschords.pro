@@ -1,6 +1,6 @@
 {meta: title When Snowflakes Fall In The Summer}
 {meta: artist Everly Brothers}
-{meta: writer Barry Mann and Cynthia Weil}
+{meta: composer Barry Mann and Cynthia Weil}
 
 {start_of_verse: Verse 1}
 [C]When roses bloom in [G7]December

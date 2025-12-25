@@ -1,6 +1,6 @@
 {meta: title Tennessee Church Bells}
 {meta: artist Jimmy Wakely}
-{meta: writer Dorothea Hahn and Wes McWain}
+{meta: composer Dorothea Hahn and Wes McWain}
 
 {start_of_verse: Verse 1}
 [C]The Tennessee church bells [F]are calling to [C]me

@@ -1,6 +1,6 @@
 {meta: title Baby's Blue Again}
 {meta: artist Bill Anderson}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [C]Lord you know [F]she's packing up her [C]clothes

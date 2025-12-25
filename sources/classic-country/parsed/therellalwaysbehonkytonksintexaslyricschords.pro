@@ -1,6 +1,6 @@
 {meta: title There'll Always Be Honky Tonks In Texas}
 {meta: artist Johnny Rodriguez}
-{meta: writer Bobby Bond and Conrad Pierce}
+{meta: composer Bobby Bond and Conrad Pierce}
 
 {start_of_verse: Verse 1}
 [C]Yes there'll always be [C7]honky tonks in [F]Texas

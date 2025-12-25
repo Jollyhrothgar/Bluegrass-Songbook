@@ -1,6 +1,6 @@
 {meta: title Rita Ballou}
 {meta: artist Vince Gill}
-{meta: writer Guy Clark}
+{meta: composer Guy Clark}
 
 {start_of_verse: Verse 1}
 [C]She could dance that slow Uvalde [F]shuffle to some cowboy hustle

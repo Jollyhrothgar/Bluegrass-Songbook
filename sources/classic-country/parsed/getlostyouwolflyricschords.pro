@@ -1,6 +1,6 @@
 {meta: title Get Lost You Wolf}
 {meta: artist Hylo Brown and The Timberliners}
-{meta: writer Frank Brown Jr.}
+{meta: composer Frank Brown Jr.}
 
 {start_of_verse: Verse 1}
 [C]I've been around this world a lot I've [F]had a lot of [C]fun

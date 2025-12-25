@@ -1,6 +1,6 @@
 {meta: title Ghost Riders In The Sky}
 {meta: artist Johnny Cash}
-{meta: writer Stan Jones}
+{meta: composer Stan Jones}
 
 {start_of_verse: Verse 1}
 [Am]An old cowboy went riding out one dark and windy [C]day

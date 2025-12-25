@@ -1,6 +1,6 @@
 {meta: title Roll On Mississippi}
 {meta: artist Charley Pride}
-{meta: writer Dennis W. Morgan and Rhonda Kye Fleming}
+{meta: composer Dennis W. Morgan and Rhonda Kye Fleming}
 
 {start_of_verse: Verse 1}
 [C]Walking along whistling a [Am]song bare foot and [F]fancy [C]free

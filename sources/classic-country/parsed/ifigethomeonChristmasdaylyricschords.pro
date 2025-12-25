@@ -1,6 +1,6 @@
 {meta: title If I Get Home On Christmas Day}
 {meta: artist Elvis Presley}
-{meta: writer Tony McAulay}
+{meta: composer Tony McAulay}
 
 {start_of_verse: Verse 1}
 [C]If I get [Em]home on [F]Christmas [Dm]day [Em]

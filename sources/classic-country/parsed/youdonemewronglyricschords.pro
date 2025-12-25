@@ -1,6 +1,6 @@
 {meta: title You Done Me Wrong}
 {meta: artist Ray Price}
-{meta: writer Stan Jones and Ray Price}
+{meta: composer Stan Jones and Ray Price}
 
 {start_of_verse: Verse 1}
 [C]Well you tell me that you [F]care

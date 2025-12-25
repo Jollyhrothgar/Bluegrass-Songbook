@@ -1,6 +1,6 @@
 {meta: title I Hear You Talking}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]I hear you talking [C]yes I do

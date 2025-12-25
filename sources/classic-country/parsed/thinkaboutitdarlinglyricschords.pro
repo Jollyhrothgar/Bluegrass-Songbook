@@ -1,6 +1,6 @@
 {meta: title Think About It Darling}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Bill Rice and Jerry Foster}
+{meta: composer Bill Rice and Jerry Foster}
 
 {start_of_verse: Verse 1}
 [C]Search the corners of your precious heart 

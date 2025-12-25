@@ -1,6 +1,6 @@
 {meta: title Devil's Den}
 {meta: artist Jack Greene}
-{meta: writer R. A Jenkins}
+{meta: composer R. A Jenkins}
 
 {start_of_verse: Verse 1}
 [C]I put a dollar in the [F]jukebox and played the [C]blues

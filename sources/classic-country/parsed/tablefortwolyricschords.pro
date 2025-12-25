@@ -1,6 +1,6 @@
 {meta: title Table For Two}
 {meta: artist Loretta Lynn}
-{meta: writer Vincent Grant Gill and Max Troy Barnes}
+{meta: composer Vincent Grant Gill and Max Troy Barnes}
 
 {start_of_verse: Verse 1}
 [G]I come here each night [C]and take out your [G]picture

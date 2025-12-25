@@ -1,6 +1,6 @@
 {meta: title Memories Can't Kiss Me Goodnight}
 {meta: artist Billy Walker}
-{meta: writer Jess Hudson and Mary Ann Meier}
+{meta: composer Jess Hudson and Mary Ann Meier}
 
 {start_of_verse: Verse 1}
 [G]Each night I crawl in [C]to my lonely [G]bed

@@ -1,6 +1,6 @@
 {meta: title I Saw My Castles Fall Today}
 {meta: artist Ray Price}
-{meta: writer Rex Griffin and Ray Price}
+{meta: composer Rex Griffin and Ray Price}
 
 {start_of_verse: Verse 1}
 [C]I saw my castles fall [G7]today

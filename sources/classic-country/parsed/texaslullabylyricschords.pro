@@ -1,6 +1,6 @@
 {meta: title Texas Lullaby}
 {meta: artist David Allan Coe}
-{meta: writer David A. Coe and Ann McGowan}
+{meta: composer David A. Coe and Ann McGowan}
 
 {start_of_verse: Verse 1}
 [G]See those tumbleweeds a blowin' Lord it [D7]makes me wanna [G]cry

@@ -1,6 +1,6 @@
 {meta: title Things In Life}
 {meta: artist Ricky Skaggs}
-{meta: writer Don Stover}
+{meta: composer Don Stover}
 
 {start_of_verse: Verse 1}
 [C]Look up look down this lonesome [F]road

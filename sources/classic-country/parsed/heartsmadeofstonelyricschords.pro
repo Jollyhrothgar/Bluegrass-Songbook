@@ -1,6 +1,6 @@
 {meta: title Hearts Made of Stone}
 {meta: artist Red Foley}
-{meta: writer Rudy Jackson and Eddie Ray}
+{meta: composer Rudy Jackson and Eddie Ray}
 
 {start_of_verse: Verse 1}
 [G]Hearts made of [C]s-tone will never [G]break

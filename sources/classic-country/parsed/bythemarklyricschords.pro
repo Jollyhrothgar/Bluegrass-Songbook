@@ -1,6 +1,6 @@
 {meta: title By The Mark}
 {meta: artist Jamie Dailey and Darrin Vincent}
-{meta: writer David Todd Rawlings and Gillian Howard Welch}
+{meta: composer David Todd Rawlings and Gillian Howard Welch}
 
 {start_of_verse: Verse 1}
 [C]When I cross over I will [G7]shou[C]t and [G7]sing

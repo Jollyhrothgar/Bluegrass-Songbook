@@ -1,6 +1,6 @@
 {meta: title Blue Grass Skirt}
 {meta: artist Hank Locklin}
-{meta: writer Lawton Williams}
+{meta: composer Lawton Williams}
 
 {start_of_verse: Verse 1}
 [G]I learned to [C]hula in Hono[G]lulu

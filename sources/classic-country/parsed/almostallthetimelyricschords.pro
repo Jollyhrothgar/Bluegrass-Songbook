@@ -1,6 +1,6 @@
 {meta: title Almost All The Time}
 {meta: artist George Morgan}
-{meta: writer Eddie Miller}
+{meta: composer Eddie Miller}
 
 {start_of_verse: Verse 1}
 [C]Ever since the day he took [G7]your love from me

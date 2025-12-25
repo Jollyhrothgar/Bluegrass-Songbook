@@ -1,6 +1,6 @@
 {meta: title It's Another World}
 {meta: artist Loretta Lynn}
-{meta: writer Richard D. Staedtler}
+{meta: composer Richard D. Staedtler}
 
 {start_of_verse: Verse 1}
 [C]It's another world when I'm with you

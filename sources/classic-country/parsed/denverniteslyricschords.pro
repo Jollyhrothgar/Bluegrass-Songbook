@@ -1,6 +1,6 @@
 {meta: title Denver Nites}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Ray Stafford}
+{meta: composer Red Steagall and Ray Stafford}
 
 {start_of_verse: Verse 1}
 [C]Denver [Dm]is a [Em]mile high [A7]city

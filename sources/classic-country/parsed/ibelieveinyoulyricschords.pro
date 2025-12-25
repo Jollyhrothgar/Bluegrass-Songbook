@@ -1,6 +1,6 @@
 {meta: title I Believe In You}
 {meta: artist Don Williams}
-{meta: writer Roger Cook and Sam Hogin}
+{meta: composer Roger Cook and Sam Hogin}
 
 {start_of_verse: Verse 1}
 [G]I don't believe in superstars  

@@ -1,6 +1,6 @@
 {meta: title Her Name Is}
 {meta: artist George Jones}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [G]Oh I love her and just can't live without [C]her

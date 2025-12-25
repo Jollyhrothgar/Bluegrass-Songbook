@@ -1,6 +1,6 @@
 {meta: title His Boundless Love}
 {meta: artist The Hee Haw Gospel Quartet}
-{meta: writer Luther G. Presley}
+{meta: composer Luther G. Presley}
 
 {start_of_verse: Verse 1}
 [G]There's something in (there's something in)

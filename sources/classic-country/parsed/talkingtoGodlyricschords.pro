@@ -1,6 +1,6 @@
 {meta: title Talking To God}
 {meta: artist Ricky Van Shelton}
-{meta: writer Lewis J. Anderson and Layng Martine}
+{meta: composer Lewis J. Anderson and Layng Martine}
 
 {start_of_verse: Verse 1}
 [G]School let out at [D7]3:00 and [C]I picked Jackson [D7]up

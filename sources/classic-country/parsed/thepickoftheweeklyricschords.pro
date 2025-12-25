@@ -1,6 +1,6 @@
 {meta: title The Pick Of The Week}
 {meta: artist Roy Drusky}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [G]You only say hello so you can say [C]goodbye

@@ -1,6 +1,6 @@
 {meta: title Bow Down Your Head And Cry}
 {meta: artist Charlie Walker}
-{meta: writer Aaron Allan}
+{meta: composer Aaron Allan}
 
 {start_of_verse: Verse 1}
 [G]As I went [D7]down to the [G]river poor boy to [C]watch the ships go [G]by

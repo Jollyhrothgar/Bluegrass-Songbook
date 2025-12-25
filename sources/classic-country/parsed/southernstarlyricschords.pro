@@ -1,6 +1,6 @@
 {meta: title Southern Star}
 {meta: artist Alabama}
-{meta: writer Rich Alves, Steve Dean, Roger Murrah}
+{meta: composer Rich Alves, Steve Dean, Roger Murrah}
 
 {start_of_verse: Verse 1}
 Intro:

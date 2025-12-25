@@ -1,6 +1,6 @@
 {meta: title Good Morning Self}
 {meta: artist Jim Reeves}
-{meta: writer Jimmy Key}
+{meta: composer Jimmy Key}
 
 {start_of_verse: Verse 1}
 [G]Good morning self  how do you [D7]feel this [G]morning

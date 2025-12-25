@@ -1,6 +1,6 @@
 {meta: title Before I Die}
 {meta: artist Jim Reeves}
-{meta: writer Jim Carroll}
+{meta: composer Jim Carroll}
 
 {start_of_verse: Verse 1}
 [G]No need to [D7]say you're [G]sorry no need to feel [C]ashamed

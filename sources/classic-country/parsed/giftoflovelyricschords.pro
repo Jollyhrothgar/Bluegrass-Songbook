@@ -1,6 +1,6 @@
 {meta: title Gift Of Love}
 {meta: artist David Ball}
-{meta: writer Frank Dycus and David Ball}
+{meta: composer Frank Dycus and David Ball}
 
 {start_of_verse: Verse 1}
 [G]I heard that nothing in life is free

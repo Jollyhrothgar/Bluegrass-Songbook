@@ -1,6 +1,6 @@
 {meta: title That Ol' Train}
 {meta: artist Del McCoury}
-{meta: writer Ronny Scaife and Alan Rhody}
+{meta: composer Ronny Scaife and Alan Rhody}
 
 {start_of_verse: Verse 1}
 [C]I just heard that city [F]of New [C]Orleans

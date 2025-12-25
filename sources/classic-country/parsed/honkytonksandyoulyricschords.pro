@@ -1,6 +1,6 @@
 {meta: title Honky Tonks and You}
 {meta: artist Cal Smith}
-{meta: writer Billy Hughes}
+{meta: composer Billy Hughes}
 
 {start_of_verse: Verse 1}
 [G]I told you that I found a girl who’d [C]always treat me [G]right

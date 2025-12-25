@@ -1,6 +1,6 @@
 {meta: title Before I Met You}
 {meta: artist Carl Smith}
-{meta: writer Charles L. Seitz, Joe Lewis, Elmar Rader}
+{meta: composer Charles L. Seitz, Joe Lewis, Elmar Rader}
 
 {start_of_verse: Verse 1}
 [C]I thought I had seen pretty [F]girls in my [C]time 

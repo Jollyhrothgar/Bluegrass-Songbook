@@ -1,6 +1,6 @@
 {meta: title Noah And The Ark}
 {meta: artist George Jones}
-{meta: writer Carmol Taylor and Jerry Strickland}
+{meta: composer Carmol Taylor and Jerry Strickland}
 
 {start_of_verse: Verse 1}
 [C]Well old Noah picked up a hammer 

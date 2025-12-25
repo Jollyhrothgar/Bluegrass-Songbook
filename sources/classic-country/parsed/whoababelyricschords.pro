@@ -1,6 +1,6 @@
 {meta: title Whoa Babe}
 {meta: artist Bob Wills}
-{meta: writer Larry Clinton}
+{meta: composer Larry Clinton}
 
 {start_of_verse: Verse 1}
 [G]Whoa Babe

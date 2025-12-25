@@ -1,6 +1,6 @@
 {meta: title Blue Avenue}
 {meta: artist Roy Orbison}
-{meta: writer Joe}
+{meta: composer Joe}
 
 {start_of_verse: Verse 1}
 [G]Blue Avenue where I spend my lonely days without [C]you

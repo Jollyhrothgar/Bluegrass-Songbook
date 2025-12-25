@@ -1,6 +1,6 @@
 {meta: title The Big Heartbreak}
 {meta: artist The Wilburn Brothers}
-{meta: writer Teddy Wilburn}
+{meta: composer Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [G]You walked away and said it was good[D7]bye

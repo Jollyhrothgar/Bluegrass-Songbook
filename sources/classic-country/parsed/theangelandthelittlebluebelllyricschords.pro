@@ -1,6 +1,6 @@
 {meta: title The Angel And The Little Blue Bell}
 {meta: artist Brenda Lee}
-{meta: writer Fred A. McCrae}
+{meta: composer Fred A. McCrae}
 
 {start_of_verse: Verse 1}
 [G]At Christmas [D7]time in the [G]steeple [C]high

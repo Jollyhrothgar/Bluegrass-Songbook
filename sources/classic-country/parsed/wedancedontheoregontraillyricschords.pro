@@ -1,6 +1,6 @@
 {meta: title We Danced On The Oregon Trail}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Richard O'Brien}
+{meta: composer Red Steagall and Richard O'Brien}
 
 {start_of_verse: Verse 1}
 [C]We crossed the Plat River the [F]wagons were [C]full

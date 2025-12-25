@@ -1,6 +1,6 @@
 {meta: title Lucky Ol' Me You}
 {meta: artist Carl Belew}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [C]I woke up this mornin' [F]happy as I could be

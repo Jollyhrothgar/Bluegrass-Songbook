@@ -1,6 +1,6 @@
 {meta: title Lovin’ On}
 {meta: artist The Bellamy Brothers}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]Let the morning [D7]find you in my [G]arms

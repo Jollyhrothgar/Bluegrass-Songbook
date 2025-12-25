@@ -1,6 +1,6 @@
 {meta: title The Love You Steal}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ted Edlin}
+{meta: composer Ted Edlin}
 
 {start_of_verse: Verse 1}
 [C]There’s a girl at the [A7]door please [D7]go answer it dear

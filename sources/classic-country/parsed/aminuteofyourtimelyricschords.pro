@@ -1,6 +1,6 @@
 {meta: title A Minute Of Your Time}
 {meta: artist Roy Drusky}
-{meta: writer Gerald Westlake}
+{meta: composer Gerald Westlake}
 
 {start_of_verse: Verse 1}
 [G]For you to [A7]think of me 

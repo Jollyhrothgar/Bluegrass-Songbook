@@ -1,6 +1,6 @@
 {meta: title The Best Dressed Beggar In Town}
 {meta: artist Carl Smith}
-{meta: writer Houston Turner}
+{meta: composer Houston Turner}
 
 {start_of_verse: Verse 1}
 [C]Well I got [F]on my watch and my big diamond [C]ring

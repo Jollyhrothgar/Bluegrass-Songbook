@@ -1,6 +1,6 @@
 {meta: title Back In The Saddle Again}
 {meta: artist Gene Autry}
-{meta: writer Ray Whitley and Gene Autry}
+{meta: composer Ray Whitley and Gene Autry}
 
 {start_of_verse: Verse 1}
 [C]I'm back in the [G7]saddle [C]again

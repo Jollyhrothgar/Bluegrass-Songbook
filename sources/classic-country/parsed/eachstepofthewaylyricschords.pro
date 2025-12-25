@@ -1,6 +1,6 @@
 {meta: title Each Step Of The Way}
 {meta: artist Jimmy Swaggart}
-{meta: writer Redd Harper}
+{meta: composer Redd Harper}
 
 {start_of_verse: Verse 1}
 [C]The pathway seems narrow

@@ -1,6 +1,6 @@
 {meta: title Inside}
 {meta: artist Ronnie Milsap}
-{meta: writer Mike Reid}
+{meta: composer Mike Reid}
 
 {start_of_verse: Verse 1}
 [C]She tries for the [G7]honesty [C]but the [Am]truth gets in the [G7]way

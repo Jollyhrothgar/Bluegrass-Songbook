@@ -1,6 +1,6 @@
 {meta: title Here We Go Again}
 {meta: artist Norma Jean}
-{meta: writer Dusty Rose}
+{meta: composer Dusty Rose}
 
 {start_of_verse: Verse 1}
 [G]Oh well [D7]here we go [G]again

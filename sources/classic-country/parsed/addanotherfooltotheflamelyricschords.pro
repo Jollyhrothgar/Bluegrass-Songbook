@@ -1,6 +1,6 @@
 {meta: title Add Another Fool To The Flame}
 {meta: artist Jody Nix}
-{meta: writer Carl Jackson and Glenn Sutton}
+{meta: composer Carl Jackson and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]I know you’ve burned some [C]bridges in this [D7]town

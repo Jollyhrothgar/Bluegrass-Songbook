@@ -1,6 +1,6 @@
 {meta: title Let The Little Bird Fly}
 {meta: artist T.G.Sheppard}
-{meta: writer Curly Putman and Buddy Killen}
+{meta: composer Curly Putman and Buddy Killen}
 
 {start_of_verse: Verse 1}
 [C]She came into my life one [Dm]spring

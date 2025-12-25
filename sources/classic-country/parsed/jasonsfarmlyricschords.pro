@@ -1,6 +1,6 @@
 {meta: title Jason's Farm}
 {meta: artist Cal Smith}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [C]He bought three hundred acres ten miles south of town

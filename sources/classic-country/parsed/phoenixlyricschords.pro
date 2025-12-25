@@ -1,6 +1,6 @@
 {meta: title Phoenix}
 {meta: artist Garth Brooks}
-{meta: writer Dan Fogelberg}
+{meta: composer Dan Fogelberg}
 
 {start_of_verse: Verse 1}
 [F]Like a Phoenix I have risen from the [C]flames

@@ -1,6 +1,6 @@
 {meta: title Love Ain’t Gonna Die}
 {meta: artist Mel Tillis}
-{meta: writer Sharon Higgins}
+{meta: composer Sharon Higgins}
 
 {start_of_verse: Verse 1}
 [F]Love ain't [C]gonna die I'm [G7]gonna have to [C]kill it

@@ -1,6 +1,6 @@
 {meta: title Waitin' For The Deal To Go Down}
 {meta: artist Reba McEntire}
-{meta: writer Bobby Fisher, Charlie Black, Austin Roberts}
+{meta: composer Bobby Fisher, Charlie Black, Austin Roberts}
 
 {start_of_verse: Verse 1}
 [C]Oh you've sold me you bold me you've told me 

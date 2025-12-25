@@ -1,6 +1,6 @@
 {meta: title Your Love}
 {meta: artist Tammy Wynette}
-{meta: writer Tommy Rocco and Becky Foster}
+{meta: composer Tommy Rocco and Becky Foster}
 
 {start_of_verse: Verse 1}
 [G]Well I been washed in the rain an dried in the [C]sun

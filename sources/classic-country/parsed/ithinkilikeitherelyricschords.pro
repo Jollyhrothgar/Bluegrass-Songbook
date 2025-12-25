@@ -1,6 +1,6 @@
 {meta: title I Think I Like It Here}
 {meta: artist Ricky Van Shelton}
-{meta: writer Chris Waters, Tom Shapiro, James Yeary}
+{meta: composer Chris Waters, Tom Shapiro, James Yeary}
 
 {start_of_verse: Verse 1}
 [C]This town in an old gray rock

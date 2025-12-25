@@ -1,6 +1,6 @@
 {meta: title Ain't You Even Gonna Cry}
 {meta: artist Connie Smith}
-{meta: writer Johnny Russell}
+{meta: composer Johnny Russell}
 
 {start_of_verse: Verse 1}
 [C]Ain't you even gonna [F]cry

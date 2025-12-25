@@ -1,6 +1,6 @@
 {meta: title I've Been Everywhere}
 {meta: artist Hank Snow}
-{meta: writer Geoff Mack}
+{meta: composer Geoff Mack}
 
 {start_of_verse: Verse 1}
 [C]I was totin' my pack

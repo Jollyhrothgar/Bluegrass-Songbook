@@ -1,6 +1,6 @@
 {meta: title The Fragrance Of Her Perfume}
 {meta: artist Boxcar Willie}
-{meta: writer Lecil Travis Martin}
+{meta: composer Lecil Travis Martin}
 
 {start_of_verse: Verse 1}
 [G]There she goes [G7]she slowly walks [C]away

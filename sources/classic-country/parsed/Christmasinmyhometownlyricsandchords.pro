@@ -1,6 +1,6 @@
 {meta: title Christmas In My Home Town}
 {meta: artist Sonny James}
-{meta: writer Sonny James and John Skye}
+{meta: composer Sonny James and John Skye}
 
 {start_of_verse: Verse 1}
 [C]I'd love to spend this Christmas with the [F]folks in my hometown

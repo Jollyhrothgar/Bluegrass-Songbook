@@ -1,6 +1,6 @@
 {meta: title He Never Got The Picture}
 {meta: artist George Jones}
-{meta: writer Allan Phillips and Bobby Reed}
+{meta: composer Allan Phillips and Bobby Reed}
 
 {start_of_verse: Verse 1}
 [G7]He lays her [C]picture on the table then he'll [F]reach and pick it up

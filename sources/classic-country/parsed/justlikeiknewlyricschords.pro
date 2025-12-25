@@ -1,6 +1,6 @@
 {meta: title Just Like I Knew}
 {meta: artist Norma Jean}
-{meta: writer Mel Tillis and Marijohn Wilkin}
+{meta: composer Mel Tillis and Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [F]Never have ever in [C]all my life [G7]never have I felt like [C]this

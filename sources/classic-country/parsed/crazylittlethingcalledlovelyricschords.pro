@@ -1,6 +1,6 @@
 {meta: title Crazy Little Thing Called Love}
 {meta: artist Dwight Yoakam}
-{meta: writer Freddie Mercury}
+{meta: composer Freddie Mercury}
 
 {start_of_verse: Verse 1}
 [C]Oh this thing called love I [F]just can't [A#7]handle [F]it

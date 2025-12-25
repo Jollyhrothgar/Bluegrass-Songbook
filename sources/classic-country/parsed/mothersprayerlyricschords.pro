@@ -1,6 +1,6 @@
 {meta: title Mother's Prayer}
 {meta: artist Eddy Arnold}
-{meta: writer Wally Fowler}
+{meta: composer Wally Fowler}
 
 {start_of_verse: Verse 1}
 [G]The postman came and brought a letter

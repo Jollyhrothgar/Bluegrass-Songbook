@@ -1,6 +1,6 @@
 {meta: title Charleston Railroad}
 {meta: artist Bobby Bare}
-{meta: writer Jerry Dean Smith}
+{meta: composer Jerry Dean Smith}
 
 {start_of_verse: Verse 1}
 [C]Charleston Railroad [G7]Tavern

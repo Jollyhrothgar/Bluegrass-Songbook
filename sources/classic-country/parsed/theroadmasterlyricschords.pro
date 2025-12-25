@@ -1,6 +1,6 @@
 {meta: title The Roadmaster}
 {meta: artist Freddy Weller}
-{meta: writer Dewey Lindon Oldham Jr. and Freddy Weller}
+{meta: composer Dewey Lindon Oldham Jr. and Freddy Weller}
 
 {start_of_verse: Verse 1}
 [G]I'm a roadmaster baby I [D7]spend my life on the [G]road 

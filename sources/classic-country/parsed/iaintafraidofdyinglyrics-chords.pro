@@ -1,6 +1,6 @@
 {meta: title I Ain't Afraid Of Dying}
 {meta: artist John Anderson}
-{meta: writer Dean Dillon and John Anderson}
+{meta: composer Dean Dillon and John Anderson}
 
 {start_of_verse: Verse 1}
 [C]In the name of [Am]progress

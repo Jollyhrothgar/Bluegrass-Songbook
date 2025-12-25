@@ -1,6 +1,6 @@
 {meta: title How Does It Feel To Be Free}
 {meta: artist Reba McEntire}
-{meta: writer Keith Stegall and Stewart Harris}
+{meta: composer Keith Stegall and Stewart Harris}
 
 {start_of_verse: Verse 1}
 [C]How did it [E7]happen [A#7]when did we [C]lose it 

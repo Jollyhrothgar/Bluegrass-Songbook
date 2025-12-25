@@ -1,6 +1,6 @@
 {meta: title Sawmill}
 {meta: artist Mel Tillis}
-{meta: writer Horace Whatley and Mel Tillis}
+{meta: composer Horace Whatley and Mel Tillis}
 
 {start_of_verse: Verse 1}
 [G]Well once I was a slave at the [C]sawmill

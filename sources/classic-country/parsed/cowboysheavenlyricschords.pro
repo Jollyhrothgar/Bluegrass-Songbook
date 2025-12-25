@@ -1,6 +1,6 @@
 {meta: title Cowboys Heaven}
 {meta: artist Slim Whitman}
-{meta: writer Gene Autry and Johnny Marvin}
+{meta: composer Gene Autry and Johnny Marvin}
 
 {start_of_verse: Verse 1}
 [G]Tonight I'm a tired weary [C]cowboy

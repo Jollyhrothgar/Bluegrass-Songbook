@@ -1,6 +1,6 @@
 {meta: title A Dark Road Is A Hard Road To Travel}
 {meta: artist Tommy Brown and the County Line Grass}
-{meta: writer G.B. Grayson}
+{meta: composer G.B. Grayson}
 
 {start_of_verse: Verse 1}
 [G]A dark road is a hard road to travel

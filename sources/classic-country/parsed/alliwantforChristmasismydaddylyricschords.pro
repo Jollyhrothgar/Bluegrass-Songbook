@@ -1,6 +1,6 @@
 {meta: title All I Want For Christmas Is My Daddy}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Jimmy Snyder}
+{meta: composer Buck Owens and Jimmy Snyder}
 
 {start_of_verse: Verse 1}
 [G]A little boy with [C]tear dimmed [G]eyes 

@@ -1,6 +1,6 @@
 {meta: title Save A Little Place For Me}
 {meta: artist Stonewall Jackson}
-{meta: writer Stonewall Jackson}
+{meta: composer Stonewall Jackson}
 
 {start_of_verse: Verse 1}
 [G]Oh Lord I'm just a [C]poor man but [G]I've worked like a [D7]slave

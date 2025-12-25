@@ -1,6 +1,6 @@
 {meta: title His Grace Reaches Me}
 {meta: artist The Blackwood Brothers}
-{meta: writer Jewell M. Gleason}
+{meta: composer Jewell M. Gleason}
 
 {start_of_verse: Verse 1}
 [C]Deeper than the [Em]ocean and [F]wider than the [C]sea

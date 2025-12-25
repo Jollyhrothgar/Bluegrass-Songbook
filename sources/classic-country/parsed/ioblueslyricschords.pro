@@ -1,6 +1,6 @@
 {meta: title I.O. Blues}
 {meta: artist Johnny Paycheck}
-{meta: writer Jesse Shofner and Wade Kirby}
+{meta: composer Jesse Shofner and Wade Kirby}
 
 {start_of_verse: Verse 1}
 [G]I got a '57 Ford and a pocket full of I.O.[D7]U.'s

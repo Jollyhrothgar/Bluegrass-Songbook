@@ -1,6 +1,6 @@
 {meta: title The Palm Of Your Hand}
 {meta: artist Jean Shepard}
-{meta: writer Pete Drake}
+{meta: composer Pete Drake}
 
 {start_of_verse: Verse 1}
 [G]I swore I'd never [G7]let another man get [C]inside my [G]mind

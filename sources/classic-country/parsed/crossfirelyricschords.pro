@@ -1,6 +1,6 @@
 {meta: title Crossfire}
 {meta: artist The Bellamy Brothers}
-{meta: writer Richard Holler and Jerry Careaga}
+{meta: composer Richard Holler and Jerry Careaga}
 
 {start_of_verse: Verse 1}
 [C]Sleep some nights it just don't [G7]show

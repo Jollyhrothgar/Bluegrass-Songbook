@@ -1,6 +1,6 @@
 {meta: title Bedroom Ballad}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [G]Somehow two people brought their lives [C]together

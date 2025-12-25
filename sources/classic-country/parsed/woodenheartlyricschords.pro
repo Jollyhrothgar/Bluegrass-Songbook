@@ -1,6 +1,6 @@
 {meta: title Wooden Heart}
 {meta: artist Eddy Arnold}
-{meta: writer Fred Wise, Ben Weisman, Kay Twomey, Berthold Kaempfert}
+{meta: composer Fred Wise, Ben Weisman, Kay Twomey, Berthold Kaempfert}
 
 {start_of_verse: Verse 1}
 [G]Can't you see I [D7]love you please don't [G]break my heart [D7]in  [G]two

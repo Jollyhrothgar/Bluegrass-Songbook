@@ -1,6 +1,6 @@
 {meta: title Angel Angelina}
 {meta: artist George Strait}
-{meta: writer David Lewis}
+{meta: composer David Lewis}
 
 {start_of_verse: Verse 1}
 [G]Angel oh my angel Ange[Em]lina

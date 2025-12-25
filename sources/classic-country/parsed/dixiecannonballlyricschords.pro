@@ -1,6 +1,6 @@
 {meta: title Dixie Cannonball}
 {meta: artist Hank Williams}
-{meta: writer Vaughn Horton}
+{meta: composer Vaughn Horton}
 
 {start_of_verse: Verse 1}
 [C]I'm a heading back to Dixie

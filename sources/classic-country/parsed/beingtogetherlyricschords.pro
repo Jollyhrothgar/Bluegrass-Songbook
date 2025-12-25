@@ -1,6 +1,6 @@
 {meta: title Being Together}
 {meta: artist Gene Pitney}
-{meta: writer Melba Montgomery and Earl Montgomery}
+{meta: composer Melba Montgomery and Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]Being [F]together as two [C]friends

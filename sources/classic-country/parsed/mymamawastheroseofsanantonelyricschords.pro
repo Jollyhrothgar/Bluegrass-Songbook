@@ -1,6 +1,6 @@
 {meta: title My Mama Was The Rose Of San Antone}
 {meta: artist Curtis Potter}
-{meta: writer Joe Bob Barnhill}
+{meta: composer Joe Bob Barnhill}
 
 {start_of_verse: Verse 1}
 [C]I learned how to sing [F]before I learned to [C]crawl

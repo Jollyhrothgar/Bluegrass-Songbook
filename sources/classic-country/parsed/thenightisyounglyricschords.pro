@@ -1,6 +1,6 @@
 {meta: title The Night Is Young}
 {meta: artist George Strait}
-{meta: writer Dean Dillon, Bubba Strait, George Strait}
+{meta: composer Dean Dillon, Bubba Strait, George Strait}
 
 {start_of_verse: Verse 1}
 [C]There's a little place I know

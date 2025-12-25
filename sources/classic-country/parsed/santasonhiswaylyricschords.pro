@@ -1,6 +1,6 @@
 {meta: title Santa's On His Way}
 {meta: artist Kitty Wells}
-{meta: writer Bill Phillips and Nita Phillips}
+{meta: composer Bill Phillips and Nita Phillips}
 
 {start_of_verse: Verse 1}
 [G]Snowflakes are falling Santa's on his [D7]way

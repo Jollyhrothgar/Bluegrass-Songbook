@@ -1,6 +1,6 @@
 {meta: title When You're Tired of Breaking Other Hearts}
 {meta: artist Hank Williams}
-{meta: writer Hank Williams and Curley Williams}
+{meta: composer Hank Williams and Curley Williams}
 
 {start_of_verse: Verse 1}
 [G]When you're tired of breaking [E7]other [A7]hearts

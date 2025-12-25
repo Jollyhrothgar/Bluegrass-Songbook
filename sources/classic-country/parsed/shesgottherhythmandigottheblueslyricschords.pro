@@ -1,6 +1,6 @@
 {meta: title She's Got The Rhythm (And I Got The Blues)}
 {meta: artist Alan Jackson}
-{meta: writer Randy Travis and Alan Jackson}
+{meta: composer Randy Travis and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G]The old bar stool's feelin' higher 

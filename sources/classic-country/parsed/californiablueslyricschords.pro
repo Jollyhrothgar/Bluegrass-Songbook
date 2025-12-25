@@ -1,6 +1,6 @@
 {meta: title California Blues (Blue Yodel No. 4)}
 {meta: artist Webb Pierce}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]Well I'm going to California

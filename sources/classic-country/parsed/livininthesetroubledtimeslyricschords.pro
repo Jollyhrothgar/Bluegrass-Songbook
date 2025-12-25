@@ -1,6 +1,6 @@
 {meta: title Livin' In These Troubled Times}
 {meta: artist Crystal Gayle}
-{meta: writer Roger Cook, Sam Hogin, Philip Donnelly}
+{meta: composer Roger Cook, Sam Hogin, Philip Donnelly}
 
 {start_of_verse: Verse 1}
 [G]It takes all the [C]faith within you

@@ -1,6 +1,6 @@
 {meta: title One Dime For Wine}
 {meta: artist Porter Wagoner}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]From a small country town to a [F]big and lonely [C]city

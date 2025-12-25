@@ -1,6 +1,6 @@
 {meta: title I'll Be Satisfied With Her Love}
 {meta: artist Faron Young}
-{meta: writer Wayne P. Walker and Gary Bryant}
+{meta: composer Wayne P. Walker and Gary Bryant}
 
 {start_of_verse: Verse 1}
 [C]Just let me love you as long as I live

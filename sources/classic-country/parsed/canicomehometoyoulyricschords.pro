@@ -1,6 +1,6 @@
 {meta: title Can I Come Home To You}
 {meta: artist Bill Anderson}
-{meta: writer Jan Crutchfield and Buddy Killen}
+{meta: composer Jan Crutchfield and Buddy Killen}
 
 {start_of_verse: Verse 1}
 [C]Honey if I'll [Em]be a good boy

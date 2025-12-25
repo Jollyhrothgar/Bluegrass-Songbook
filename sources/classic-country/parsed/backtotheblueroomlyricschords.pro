@@ -1,6 +1,6 @@
 {meta: title Back To The Blue Room}
 {meta: artist Wynn Stewart}
-{meta: writer Dale Noe}
+{meta: composer Dale Noe}
 
 {start_of_verse: Verse 1}
 [D7]Back to the blue room [C]where I can [D7]cry [G]alone

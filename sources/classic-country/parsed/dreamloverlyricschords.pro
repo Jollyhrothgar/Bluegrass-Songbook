@@ -1,6 +1,6 @@
 {meta: title Dream Lover}
 {meta: artist Tanya Tucker}
-{meta: writer Bobby Darin}
+{meta: composer Bobby Darin}
 
 {start_of_verse: Verse 1}
 [G]Every night I hope and pray  a dream lover will come my [Em]way

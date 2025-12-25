@@ -1,6 +1,6 @@
 {meta: title Till The End Of The World}
 {meta: artist Jim Reeves}
-{meta: writer Vaughn Horton}
+{meta: composer Vaughn Horton}
 
 {start_of_verse: Verse 1}
 [G]Till the stars in the sky cease [D7]to shine

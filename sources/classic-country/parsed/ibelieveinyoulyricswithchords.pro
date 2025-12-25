@@ -1,6 +1,6 @@
 {meta: title I Believe in You}
 {meta: artist Norma Jean}
-{meta: writer Dick Overbey}
+{meta: composer Dick Overbey}
 
 {start_of_verse: Verse 1}
 [C]Sitting here in the [C7]quite of the [F]day

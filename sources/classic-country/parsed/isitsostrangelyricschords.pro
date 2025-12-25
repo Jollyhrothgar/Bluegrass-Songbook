@@ -1,6 +1,6 @@
 {meta: title Is It So Strange}
 {meta: artist Elvis Presley}
-{meta: writer Faron Young}
+{meta: composer Faron Young}
 
 {start_of_verse: Verse 1}
 [C]Oh if you tell a [Am]lie

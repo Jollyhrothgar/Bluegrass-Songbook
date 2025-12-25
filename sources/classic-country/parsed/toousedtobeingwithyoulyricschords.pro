@@ -1,6 +1,6 @@
 {meta: title Too Used To Being With You}
 {meta: artist Merle Haggard}
-{meta: writer Don Carter and Jack Rhodes}
+{meta: composer Don Carter and Jack Rhodes}
 
 {start_of_verse: Verse 1}
 [G]Too used to that certain [G][C]someone 

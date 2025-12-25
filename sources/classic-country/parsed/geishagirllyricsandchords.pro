@@ -1,6 +1,6 @@
 {meta: title Geisha Girl}
 {meta: artist Hank Locklin}
-{meta: writer Lawton Williams}
+{meta: composer Lawton Williams}
 
 {start_of_verse: Verse 1}
 [G]Have you ever heard a love song that you [G7]didn't [C]understand

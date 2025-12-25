@@ -1,6 +1,6 @@
 {meta: title That Girl Who Waits On Tables}
 {meta: artist Ronnie Milsap}
-{meta: writer Bob Parker}
+{meta: composer Bob Parker}
 
 {start_of_verse: Verse 1}
 [C]I watch her picking up [F]their tips off the [C]tables

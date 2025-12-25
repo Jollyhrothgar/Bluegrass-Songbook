@@ -1,6 +1,6 @@
 {meta: title Yesterday When I Was Young}
 {meta: artist Roy Clark}
-{meta: writer Herbert Kretzmer and Charles Aznavour}
+{meta: composer Herbert Kretzmer and Charles Aznavour}
 
 {start_of_verse: Verse 1}
 [Am]Yesterday when I was [D7]young

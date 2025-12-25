@@ -1,6 +1,6 @@
 {meta: title You're Right I Need You Real Bad}
 {meta: artist Stonewall Jackson}
-{meta: writer George Jones}
+{meta: composer George Jones}
 
 {start_of_verse: Verse 1}
 [G]If you think I want to please you

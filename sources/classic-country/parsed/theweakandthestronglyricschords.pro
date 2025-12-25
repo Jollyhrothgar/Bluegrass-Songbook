@@ -1,6 +1,6 @@
 {meta: title The Weak And The Strong}
 {meta: artist Jean Shepard}
-{meta: writer Red Hayes}
+{meta: composer Red Hayes}
 
 {start_of_verse: Verse 1}
 [C]This just couldn't [G7]last the way some things [C]do

@@ -1,6 +1,6 @@
 {meta: title That Feeling}
 {meta: artist Alabama}
-{meta: writer Teddy Gentry, Greg Fowler, Ronnie Rogers}
+{meta: composer Teddy Gentry, Greg Fowler, Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [G]I've made some [Am]decisions [F]that were not the [G]best

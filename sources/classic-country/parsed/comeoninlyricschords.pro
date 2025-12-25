@@ -1,6 +1,6 @@
 {meta: title Come On In}
 {meta: artist Patsy Cline}
-{meta: writer V.F. Stewart}
+{meta: composer V.F. Stewart}
 
 {start_of_verse: Verse 1}
 [G]Come on in and sit [C]right down and [D7]make yourself at [G]home

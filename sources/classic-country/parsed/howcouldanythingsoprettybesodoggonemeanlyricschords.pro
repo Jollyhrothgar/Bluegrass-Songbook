@@ -1,6 +1,6 @@
 {meta: title How Could Anything So Pretty Be So Doggone Mean}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Jackson King and Jimmy Rule}
+{meta: composer Jackson King and Jimmy Rule}
 
 {start_of_verse: Verse 1}
 [C]Yes baby you are beautiful I’ve [F]got to hand you [C]that

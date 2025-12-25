@@ -1,6 +1,6 @@
 {meta: title Where The Blue And Lonely Go}
 {meta: artist Roy Drusky}
-{meta: writer Jimmy Warren, Alvaro Verissimo,}
+{meta: composer Jimmy Warren, Alvaro Verissimo,}
 
 {start_of_verse: Verse 1}
 [G7]Where the blue and lonely go

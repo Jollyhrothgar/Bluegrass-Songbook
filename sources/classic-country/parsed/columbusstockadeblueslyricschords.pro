@@ -1,6 +1,6 @@
 {meta: title Columbus Stockade Blues}
 {meta: artist Johnny Paycheck}
-{meta: writer Jimmie Davis and Eva Sargent}
+{meta: composer Jimmie Davis and Eva Sargent}
 
 {start_of_verse: Verse 1}
 [G]Way down in Columbus Georgia

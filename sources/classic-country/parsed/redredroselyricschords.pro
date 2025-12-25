@@ -1,6 +1,6 @@
 {meta: title Red Red Rose}
 {meta: artist Emmylou Harris}
-{meta: writer David Mallett}
+{meta: composer David Mallett}
 
 {start_of_verse: Verse 1}
 [G]You may [D7]wonder [C]if you [G]know me

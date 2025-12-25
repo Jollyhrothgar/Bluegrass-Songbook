@@ -1,6 +1,6 @@
 {meta: title Devil Doll}
 {meta: artist Roy Orbison}
-{meta: writer Sam Phillips}
+{meta: composer Sam Phillips}
 
 {start_of_verse: Verse 1}
 [D7]Devil [G]doll (devil doll) devil doll ([D7]devil doll)

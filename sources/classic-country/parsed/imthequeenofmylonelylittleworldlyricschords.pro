@@ -1,6 +1,6 @@
 {meta: title I'm The Queen Of My Lonely Little World}
 {meta: artist Wanda Jackson}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 I'm The Queen Of My Lonely Little World

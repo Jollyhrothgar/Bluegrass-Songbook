@@ -1,6 +1,6 @@
 {meta: title A Real Close Friend}
 {meta: artist George Jones}
-{meta: writer George Jones and George Riddle}
+{meta: composer George Jones and George Riddle}
 
 {start_of_verse: Verse 1}
 [D7]I think you know a real close friend of [G]mine

@@ -1,6 +1,6 @@
 {meta: title A Blanket Of Stars}
 {meta: artist Vernon Oxford}
-{meta: writer Jimmy Everett Corbin[3/4 time]}
+{meta: composer Jimmy Everett Corbin[3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]A blanket of stars covers her shoulders

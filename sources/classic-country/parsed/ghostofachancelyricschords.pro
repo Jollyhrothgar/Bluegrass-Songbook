@@ -1,6 +1,6 @@
 {meta: title Ghost Of A Chance}
 {meta: artist Rhonda Vincent}
-{meta: writer Jim Rushing and Carl Jackson}
+{meta: composer Jim Rushing and Carl Jackson}
 
 {start_of_verse: Verse 1}
 [C]He lies all alone in his bed he [F]thinks of the weekend they met

@@ -1,6 +1,6 @@
 {meta: title Far Side Banks Of Jordan}
 {meta: artist Johnny Cash}
-{meta: writer Terry Smith}
+{meta: composer Terry Smith}
 
 {start_of_verse: Verse 1}
 [G]I believe my steps are growing wearier each [D7]day

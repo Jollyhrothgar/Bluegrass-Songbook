@@ -1,6 +1,6 @@
 {meta: title Look Around You}
 {meta: artist Don Williams}
-{meta: writer Buck Lindsey and Bill Joor}
+{meta: composer Buck Lindsey and Bill Joor}
 
 {start_of_verse: Verse 1}
 [C]How do you like it bein' [F]lonely

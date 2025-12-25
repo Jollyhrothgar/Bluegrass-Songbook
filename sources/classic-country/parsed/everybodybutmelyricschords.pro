@@ -1,6 +1,6 @@
 {meta: title Everybody But Me}
 {meta: artist Ernest Ashworth}
-{meta: writer Dave Burgess}
+{meta: composer Dave Burgess}
 
 {start_of_verse: Verse 1}
 [F]Everybody [G7]everybody [C]everybody but [G7]me

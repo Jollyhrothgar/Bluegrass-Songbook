@@ -1,6 +1,6 @@
 {meta: title For The Life Of Me}
 {meta: artist Dick Curless}
-{meta: writer Joe Allison and Joyce Harris}
+{meta: composer Joe Allison and Joyce Harris}
 
 {start_of_verse: Verse 1}
 [C]How can there be a [F]song without the [C]music

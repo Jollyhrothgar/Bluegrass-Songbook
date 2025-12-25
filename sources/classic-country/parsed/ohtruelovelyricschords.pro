@@ -1,6 +1,6 @@
 {meta: title Oh True Love}
 {meta: artist the Everly Brothers}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [G]Oh oh true love I'm glad that I found [Em]you

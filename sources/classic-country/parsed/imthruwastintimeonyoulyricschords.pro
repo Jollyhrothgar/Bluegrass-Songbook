@@ -1,6 +1,6 @@
 {meta: title I'm Thru Wastin' Time On You}
 {meta: artist Bob Wills}
-{meta: writer Tommy Duncan and Ekko Whelan}
+{meta: composer Tommy Duncan and Ekko Whelan}
 
 {start_of_verse: Verse 1}
 [G]You fooled me again so I'm [C]sorry my [A7]friend

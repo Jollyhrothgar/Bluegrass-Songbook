@@ -1,6 +1,6 @@
 {meta: title I Was The First One To Know}
 {meta: artist Wynn Stewart}
-{meta: writer Beverly Stewart and Cliff Massey}
+{meta: composer Beverly Stewart and Cliff Massey}
 
 {start_of_verse: Verse 1}
 [C]It's no news to me you [Dm]don't love [G7]me

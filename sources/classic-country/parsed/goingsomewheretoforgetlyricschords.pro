@@ -1,6 +1,6 @@
 {meta: title Going Somewhere To Forget}
 {meta: artist David Ball}
-{meta: writer Jim Weatherly and David Ball}
+{meta: composer Jim Weatherly and David Ball}
 
 {start_of_verse: Verse 1}
 [G]Hello  yes I'm calling to [G7]arrange a little [C]trip

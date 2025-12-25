@@ -1,6 +1,6 @@
 {meta: title Someday}
 {meta: artist Patsy Cline}
-{meta: writer Jimmy Hodges}
+{meta: composer Jimmy Hodges}
 
 {start_of_verse: Verse 1}
 [G]I know that someday you'll want me to want [D7]you

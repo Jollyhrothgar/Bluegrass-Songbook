@@ -1,6 +1,6 @@
 {meta: title Still Losing You}
 {meta: artist Ronnie Milsap}
-{meta: writer Mike Reid}
+{meta: composer Mike Reid}
 
 {start_of_verse: Verse 1}
 [C]It came to me [F]again to[C]night

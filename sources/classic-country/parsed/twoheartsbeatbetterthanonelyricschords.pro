@@ -1,6 +1,6 @@
 {meta: title Two Hearts Beat Better Than One}
 {meta: artist Eddy Arnold}
-{meta: writer Mary Ann Kennedy, June Page, Dan Hoffman}
+{meta: composer Mary Ann Kennedy, June Page, Dan Hoffman}
 
 {start_of_verse: Verse 1}
 [C]It’s so nice to discover you have found a perfect lover

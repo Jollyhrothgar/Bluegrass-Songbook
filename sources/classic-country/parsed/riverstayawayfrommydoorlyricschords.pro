@@ -1,6 +1,6 @@
 {meta: title River Stay Away From My Door}
 {meta: artist Charlie Rich}
-{meta: writer Harry Woods and Mort Dixon}
+{meta: composer Harry Woods and Mort Dixon}
 
 {start_of_verse: Verse 1}
 [C]River [F]stay [C]away [D7]from my [C]door

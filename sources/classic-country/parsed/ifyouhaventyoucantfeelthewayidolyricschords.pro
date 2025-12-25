@@ -1,6 +1,6 @@
 {meta: title If You Haven't You Can't Feel The Way I Do}
 {meta: artist Jean Shepard}
-{meta: writer Bill Carver}
+{meta: composer Bill Carver}
 
 {start_of_verse: Verse 1}
 [G]Have you ever lost someone [G7]just like I lost [C]you

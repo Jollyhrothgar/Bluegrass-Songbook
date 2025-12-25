@@ -1,6 +1,6 @@
 {meta: title Burdens Are Lifted At Calvary}
 {meta: artist Bill and Gloria Gaither}
-{meta: writer John M. Moore}
+{meta: composer John M. Moore}
 
 {start_of_verse: Verse 1}
 [C]Days are filled with sorrow and [G7]care

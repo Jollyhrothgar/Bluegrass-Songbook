@@ -1,6 +1,6 @@
 {meta: title You Don't Really Know}
 {meta: artist Marty Robbins}
-{meta: writer Jim Easterling}
+{meta: composer Jim Easterling}
 
 {start_of_verse: Verse 1}
 [C]I told myself there's no harm in just bein' [G7]friends

@@ -1,6 +1,6 @@
 {meta: title Always Think Of You}
 {meta: artist Billy Walker}
-{meta: writer Kurt Baumann, Ray Pulley, Billy Walker}
+{meta: composer Kurt Baumann, Ray Pulley, Billy Walker}
 
 {start_of_verse: Verse 1}
 [C]The breeze of [E7]summer the [F]stars in the [C]blue

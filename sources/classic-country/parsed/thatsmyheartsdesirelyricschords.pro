@@ -1,6 +1,6 @@
 {meta: title That's My Heart's Desire}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Webb Pierce}
+{meta: composer Wayne P. Walker and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]To feel your [D7]lips when [G]they touch [C]mine

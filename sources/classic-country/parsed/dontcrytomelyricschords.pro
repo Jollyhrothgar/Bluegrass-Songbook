@@ -1,6 +1,6 @@
 {meta: title Don’t Cry to Me}
 {meta: artist Jimmy Martin}
-{meta: writer Jimmy Martin and Paul Williams}
+{meta: composer Jimmy Martin and Paul Williams}
 
 {start_of_verse: Verse 1}
 [C]Just [G7]cry now lonesome heart 

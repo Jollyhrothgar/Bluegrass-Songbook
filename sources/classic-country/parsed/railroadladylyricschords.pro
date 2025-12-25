@@ -1,6 +1,6 @@
 {meta: title Railroad Lady}
 {meta: artist Lefty Frizzell}
-{meta: writer Jimmy Buffett and Jerry Jeff Walker}
+{meta: composer Jimmy Buffett and Jerry Jeff Walker}
 
 {start_of_verse: Verse 1}
 [C]She's a [F]railroad lady just a [C]little bit shady

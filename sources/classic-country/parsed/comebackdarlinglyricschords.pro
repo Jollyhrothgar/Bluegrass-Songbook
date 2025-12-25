@@ -1,6 +1,6 @@
 {meta: title Come Back Darling}
 {meta: artist Lester Flatt and Earl Scruggs}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]Tonight as I sit by my [C]window

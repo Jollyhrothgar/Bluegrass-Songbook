@@ -1,6 +1,6 @@
 {meta: title Sittin' In An All Nite Cafe}
 {meta: artist Red Steagall}
-{meta: writer Jim Glaser}
+{meta: composer Jim Glaser}
 
 {start_of_verse: Verse 1}
 [C]Sittin' in an all nite cafe in a [F]booth back in the corner

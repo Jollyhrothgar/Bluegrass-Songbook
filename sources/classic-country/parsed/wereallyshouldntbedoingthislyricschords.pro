@@ -1,6 +1,6 @@
 {meta: title We Really Shouldn't Be Doing This}
 {meta: artist George Strait}
-{meta: writer Jim Lauderdale}
+{meta: composer Jim Lauderdale}
 
 {start_of_verse: Verse 1}
 [G]We really shouldn't be a [D7]doing this 

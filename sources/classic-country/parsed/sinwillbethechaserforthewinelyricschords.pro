@@ -1,6 +1,6 @@
 {meta: title Sin Will Be The Chaser For The Wine}
 {meta: artist Lefty Frizzell}
-{meta: writer Eddie Miller and Lefty Frizzell}
+{meta: composer Eddie Miller and Lefty Frizzell}
 
 {start_of_verse: Verse 1}
 [C]Well I just stopped in to see if you had changed [G7]dear

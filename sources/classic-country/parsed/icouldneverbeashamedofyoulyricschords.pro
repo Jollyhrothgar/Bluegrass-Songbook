@@ -1,6 +1,6 @@
 {meta: title I Could Never Be Ashamed Of You}
 {meta: artist Faron Young}
-{meta: writer Hank Williams}
+{meta: composer Hank Williams}
 
 {start_of_verse: Verse 1}
 [C]Everybody said you'll let me [G7]down

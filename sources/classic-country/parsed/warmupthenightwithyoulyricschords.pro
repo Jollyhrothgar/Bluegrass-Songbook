@@ -1,6 +1,6 @@
 {meta: title Warm Up The Night With You}
 {meta: artist Johnny Duncan}
-{meta: writer David Chamberlain and James Vest}
+{meta: composer David Chamberlain and James Vest}
 
 {start_of_verse: Verse 1}
 [C]Hello baby I'm coming over [G7]there

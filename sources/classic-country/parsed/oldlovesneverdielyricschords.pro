@@ -1,6 +1,6 @@
 {meta: title Old Loves Never Die}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby RIP & Warren Robb}
+{meta: composer Dave Kirby RIP & Warren Robb}
 
 {start_of_verse: Verse 1}
 [G]Don't you think we've come much [C]too far [G]together

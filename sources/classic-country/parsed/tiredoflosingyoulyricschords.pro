@@ -1,6 +1,6 @@
 {meta: title Tired of Losing You}
 {meta: artist Rhonda Vincent}
-{meta: writer Tom T. Hall and Dixie Hall}
+{meta: composer Tom T. Hall and Dixie Hall}
 
 {start_of_verse: Verse 1}
 [C]I have this dream to dream I [C7]dream most [F]every night

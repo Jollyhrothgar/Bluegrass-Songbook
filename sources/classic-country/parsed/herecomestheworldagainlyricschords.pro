@@ -1,6 +1,6 @@
 {meta: title Here Comes The World Again}
 {meta: artist Johnny Bush}
-{meta: writer Steve Karliski, Larry Kolber}
+{meta: composer Steve Karliski, Larry Kolber}
 
 {start_of_verse: Verse 1}
 [G]I feel the morning sun come creeping [G7]through the [C]blinds

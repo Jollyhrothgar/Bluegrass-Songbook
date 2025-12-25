@@ -1,6 +1,6 @@
 {meta: title Here Comes Santa Claus Again}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Red Simpson}
+{meta: composer Buck Owens and Red Simpson}
 
 {start_of_verse: Verse 1}
 [C]He's got a fuzzy white beard neath a [F]great big smile

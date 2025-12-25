@@ -1,6 +1,6 @@
 {meta: title I'm Still Not Over You}
 {meta: artist Ray Price}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]Today I made a point to go somewhere I knew you'd [G7]be

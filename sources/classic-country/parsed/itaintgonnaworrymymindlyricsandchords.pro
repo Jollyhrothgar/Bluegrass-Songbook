@@ -1,6 +1,6 @@
 {meta: title It Ain't Gonna Worry My Mind}
 {meta: artist George Jones}
-{meta: writer Richard Leigh}
+{meta: composer Richard Leigh}
 
 {start_of_verse: Verse 1}
 [C]Same old [Am]story [F]they all [G7]hand me 

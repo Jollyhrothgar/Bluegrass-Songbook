@@ -1,6 +1,6 @@
 {meta: title The Picture}
 {meta: artist Ricky Van Shelton}
-{meta: writer Troy Seals, Steve Buckingham, Ricky Van Shelton}
+{meta: composer Troy Seals, Steve Buckingham, Ricky Van Shelton}
 
 {start_of_verse: Verse 1}
 The Picture

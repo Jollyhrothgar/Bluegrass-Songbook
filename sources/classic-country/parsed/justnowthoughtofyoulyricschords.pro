@@ -1,6 +1,6 @@
 {meta: title Just Now Thought Of You}
 {meta: artist Wynn Stewart}
-{meta: writer Bessie George}
+{meta: composer Bessie George}
 
 {start_of_verse: Verse 1}
 [D7]Just now [G]thought of you [C] for no [G]reason

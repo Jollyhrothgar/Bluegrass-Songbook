@@ -1,6 +1,6 @@
 {meta: title I Believe In Music}
 {meta: artist The Statler Brothers}
-{meta: writer Mac Davis}
+{meta: composer Mac Davis}
 
 {start_of_verse: Verse 1}
 [C]I believe in [Dm]music [F]I [G7]  believe in [C]love

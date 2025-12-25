@@ -1,6 +1,6 @@
 {meta: title Chains}
 {meta: artist Patty Loveless}
-{meta: writer Bud Reneau and Hal Bynum}
+{meta: composer Bud Reneau and Hal Bynum}
 
 {start_of_verse: Verse 1}
 [C]Bought a ticket to Seattle but I [F]can't get to the plane

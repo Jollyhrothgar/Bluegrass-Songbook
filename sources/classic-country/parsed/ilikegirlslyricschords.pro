@@ -1,6 +1,6 @@
 {meta: title I Like Girls}
 {meta: artist Porter Wagoner}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]I like girls I like girls

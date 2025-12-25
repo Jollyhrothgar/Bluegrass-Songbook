@@ -1,6 +1,6 @@
 {meta: title Lullaby In The Cradle}
 {meta: artist Rex Allen Jr.}
-{meta: writer Clifton Crofford, John Rurrill, Snuff Garrett}
+{meta: composer Clifton Crofford, John Rurrill, Snuff Garrett}
 
 {start_of_verse: Verse 1}
 [G7]He can [C]ride [G7]rope and [Am]shoot and stands [F]tall in his [G7]boots

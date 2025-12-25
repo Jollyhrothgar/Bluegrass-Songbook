@@ -1,6 +1,6 @@
 {meta: title Another}
 {meta: artist Roy Drusky}
-{meta: writer Vic McAlpin and Roy Drusky}
+{meta: composer Vic McAlpin and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [C]You didn't love me long [F]until the thrill was gone

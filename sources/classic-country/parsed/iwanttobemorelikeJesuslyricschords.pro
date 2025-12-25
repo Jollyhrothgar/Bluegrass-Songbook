@@ -1,6 +1,6 @@
 {meta: title I Want To Be More Like Jesus}
 {meta: artist B.J. Thomas}
-{meta: writer Archie Jordan}
+{meta: composer Archie Jordan}
 
 {start_of_verse: Verse 1}
 [G]What kind of man would [C]wash men's feet

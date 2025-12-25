@@ -1,6 +1,6 @@
 {meta: title Ballad Of Sally Rose}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley and Emmylou Harris}
+{meta: composer Paul Kennerley and Emmylou Harris}
 
 {start_of_verse: Verse 1}
 [G]Her momma picked him up in [C]south [G]Minnesota

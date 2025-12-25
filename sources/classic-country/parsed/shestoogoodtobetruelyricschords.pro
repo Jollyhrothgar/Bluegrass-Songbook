@@ -1,6 +1,6 @@
 {meta: title She's Too Good to be True}
 {meta: artist Charlie Pride}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [C]Sometimes late at night [F]I wake up [C]dreaming

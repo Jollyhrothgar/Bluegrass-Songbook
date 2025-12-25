@@ -1,6 +1,6 @@
 {meta: title The Very Best Is You}
 {meta: artist Charly McClain}
-{meta: writer Frank Stephens and Larry Shell}
+{meta: composer Frank Stephens and Larry Shell}
 
 {start_of_verse: Verse 1}
 [F]Why would I want [C]another when the [G7]very best is [C]you

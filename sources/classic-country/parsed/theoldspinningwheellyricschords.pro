@@ -1,6 +1,6 @@
 {meta: title The Old Spinning Wheel}
 {meta: artist Slim Whitman}
-{meta: writer W.T. Hill}
+{meta: composer W.T. Hill}
 
 {start_of_verse: Verse 1}
 [G]There's an old spinning wheel in the [D7]parlor

@@ -1,6 +1,6 @@
 {meta: title Two Glasses Joe}
 {meta: artist Ernest Tubb}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Set up two glasses Joe

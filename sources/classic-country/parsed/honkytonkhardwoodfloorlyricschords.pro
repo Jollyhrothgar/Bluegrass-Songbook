@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Hardwood Floor}
 {meta: artist Johnny Horton}
-{meta: writer Tex Atchinson, Eddie Hazlewood, Harrell}
+{meta: composer Tex Atchinson, Eddie Hazlewood, Harrell}
 
 {start_of_verse: Verse 1}
 [G]Well the fiddles are squeakin' the guitars are speaking

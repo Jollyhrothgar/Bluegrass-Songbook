@@ -1,6 +1,6 @@
 {meta: title Hard Times}
 {meta: artist Johnny Rodriguez}
-{meta: writer Arlo Guthrie, Darryl McDaniels, Joseph Simmons,}
+{meta: composer Arlo Guthrie, Darryl McDaniels, Joseph Simmons,}
 
 {start_of_verse: Verse 1}
 [G]Hard times ain't half as bad as bad [C]times

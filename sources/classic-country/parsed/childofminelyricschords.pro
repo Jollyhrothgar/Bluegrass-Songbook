@@ -1,6 +1,6 @@
 {meta: title Child Of Mine}
 {meta: artist Anne Murray}
-{meta: writer Gerry Goffin and Carole King}
+{meta: composer Gerry Goffin and Carole King}
 
 {start_of_verse: Verse 1}
 [G][C]Although you see the world different than [D7]me

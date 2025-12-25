@@ -1,6 +1,6 @@
 {meta: title Smokin’ The Hive}
 {meta: artist Randy Travis}
-{meta: writer Byron Hill and J. Remington Wilde}
+{meta: composer Byron Hill and J. Remington Wilde}
 
 {start_of_verse: Verse 1}
 [G]I was ten years old on my grandpa's farm when it happened

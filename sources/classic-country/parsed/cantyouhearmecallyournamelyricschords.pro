@@ -1,6 +1,6 @@
 {meta: title Can't You Hear Me Call Your Name}
 {meta: artist Carl Belew}
-{meta: writer Clyde Beam, Charles Jiles, W.S. Stevenson}
+{meta: composer Clyde Beam, Charles Jiles, W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [C]I walk [G7]along this [C]lonesome street

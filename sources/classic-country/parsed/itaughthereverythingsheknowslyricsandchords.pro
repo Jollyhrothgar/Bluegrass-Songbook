@@ -1,6 +1,6 @@
 {meta: title I Taught Her Everything She Knows}
 {meta: artist Alabama}
-{meta: writer Teddy Gentry, Greg Fowler, John Jarrard}
+{meta: composer Teddy Gentry, Greg Fowler, John Jarrard}
 
 {start_of_verse: Verse 1}
 [G7]Uhm don't she look [D7]good on the [C]floor movin' so [G7]slow [D7]   [C] uhm

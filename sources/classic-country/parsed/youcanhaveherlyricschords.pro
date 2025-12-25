@@ -1,6 +1,6 @@
 {meta: title You Can Have Her}
 {meta: artist Charlie Rich}
-{meta: writer William S. Cook}
+{meta: composer William S. Cook}
 
 {start_of_verse: Verse 1}
 [C]You can have her I don't want [F]her 

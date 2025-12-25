@@ -1,6 +1,6 @@
 {meta: title I'd Rather Have You}
 {meta: artist Wanda Jackson}
-{meta: writer Thelma Blackman}
+{meta: composer Thelma Blackman}
 
 {start_of_verse: Verse 1}
 [C]I wanted big diamonds and [C7]rubies [F]too

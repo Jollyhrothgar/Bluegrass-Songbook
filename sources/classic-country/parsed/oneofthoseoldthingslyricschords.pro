@@ -1,6 +1,6 @@
 {meta: title One Of Those Old Things}
 {meta: artist John Anderson}
-{meta: writer Joel Sonier and Hoy Lindsey}
+{meta: composer Joel Sonier and Hoy Lindsey}
 
 {start_of_verse: Verse 1}
 [C]I'm just callin' my folks from [F]Mississippi

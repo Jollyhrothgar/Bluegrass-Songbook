@@ -1,6 +1,6 @@
 {meta: title You Can Always Give Her Back To Me}
 {meta: artist Wynn Stewart}
-{meta: writer Bobby Wayne and Sonny Ferguson}
+{meta: composer Bobby Wayne and Sonny Ferguson}
 
 {start_of_verse: Verse 1}
 [F]You've got a [C]problem cause you [F]now have my old [C]used-to-be

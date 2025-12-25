@@ -1,6 +1,6 @@
 {meta: title Jukebox In My Mind}
 {meta: artist Alabama}
-{meta: writer Dave Gibson and Ronnie Rogers}
+{meta: composer Dave Gibson and Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [G]In the corner of my mind stands a [D7]jukebox

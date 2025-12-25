@@ -1,6 +1,6 @@
 {meta: title That's Why I Cry}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill, Tillman Franks, David Houston}
+{meta: composer Billy Sherrill, Tillman Franks, David Houston}
 
 {start_of_verse: Verse 1}
 [F]Why are there tears [A7]in my eyes all the [D7]time

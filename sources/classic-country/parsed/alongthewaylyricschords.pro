@@ -1,6 +1,6 @@
 {meta: title Along The Way}
 {meta: artist The Country Gentlemen}
-{meta: writer John Duffey}
+{meta: composer John Duffey}
 
 {start_of_verse: Verse 1}
 [G]What memories come [D7]back to [G]me

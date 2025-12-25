@@ -1,6 +1,6 @@
 {meta: title That's What He Said}
 {meta: artist Reba McEntire}
-{meta: writer Rick Carnes and Janis Carnes}
+{meta: composer Rick Carnes and Janis Carnes}
 
 {start_of_verse: Verse 1}
 [C]You tell me that you're always gonna [F]love me

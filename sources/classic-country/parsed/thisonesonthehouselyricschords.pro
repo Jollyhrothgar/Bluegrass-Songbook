@@ -1,6 +1,6 @@
 {meta: title This One's On The House}
 {meta: artist Jerry Wallace}
-{meta: writer Mitchell Torok and Ramona Redd}
+{meta: composer Mitchell Torok and Ramona Redd}
 
 {start_of_verse: Verse 1}
 [D7]This one's on the house you don't owe me a [G]thing

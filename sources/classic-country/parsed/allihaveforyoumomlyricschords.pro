@@ -1,6 +1,6 @@
 {meta: title All I Have For You Mom}
 {meta: artist Wilburn Brothers}
-{meta: writer Don Davis}
+{meta: composer Don Davis}
 
 {start_of_verse: Verse 1}
 [C]We've been looking through a window at an [F]orchid mother [C]dear

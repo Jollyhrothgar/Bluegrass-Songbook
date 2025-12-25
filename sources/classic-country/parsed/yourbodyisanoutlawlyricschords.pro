@@ -1,6 +1,6 @@
 {meta: title Your Body Is An Outlaw}
 {meta: artist Mel Tillis}
-{meta: writer Buzz Rabin}
+{meta: composer Buzz Rabin}
 
 {start_of_verse: Verse 1}
 [C]I can't help it if I'm crazy

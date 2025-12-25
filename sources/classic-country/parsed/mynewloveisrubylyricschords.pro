@@ -1,6 +1,6 @@
 {meta: title My New Love Is Ruby}
 {meta: artist George Morgan}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]I don't know the [G7]name of [C]your new love

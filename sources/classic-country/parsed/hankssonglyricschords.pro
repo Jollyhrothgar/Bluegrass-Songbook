@@ -1,6 +1,6 @@
 {meta: title Hank's Song}
 {meta: artist Ferlin Husky}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]I just don't like this kind of [F]living 

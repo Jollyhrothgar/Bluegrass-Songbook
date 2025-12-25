@@ -1,6 +1,6 @@
 {meta: title Waltzing On Top Of The World}
 {meta: artist Jim Reeves}
-{meta: writer Jim Reeves and Al Courtney}
+{meta: composer Jim Reeves and Al Courtney}
 
 {start_of_verse: Verse 1}
 [G]If all of the stars were a [C]million [G]guitars

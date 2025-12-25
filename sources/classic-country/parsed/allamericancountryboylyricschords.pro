@@ -1,6 +1,6 @@
 {meta: title All American Country Boy}
 {meta: artist Alan Jackson}
-{meta: writer Charlie Craig and Keith Stegall}
+{meta: composer Charlie Craig and Keith Stegall}
 
 {start_of_verse: Verse 1}
 [G]I work a forty hour week and I earn my keep 

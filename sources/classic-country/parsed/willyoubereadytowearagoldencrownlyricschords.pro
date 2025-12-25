@@ -1,6 +1,6 @@
 {meta: title Will You Be Ready (To Wear A Golden Crown)}
 {meta: artist Wilburn Brothers}
-{meta: writer Teddy Wilburn}
+{meta: composer Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]Will you be ready when God [F]comes back for the ones He [C]loves

@@ -1,6 +1,6 @@
 {meta: title A Living Prayer}
 {meta: artist Alison Krauss}
-{meta: writer Ron Block}
+{meta: composer Ron Block}
 
 {start_of_verse: Verse 1}
 [G]In this world I walk a[D7]lone 

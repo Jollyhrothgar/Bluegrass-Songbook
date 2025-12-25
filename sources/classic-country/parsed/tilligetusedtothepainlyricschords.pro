@@ -1,6 +1,6 @@
 {meta: title Till I Get Used To The Pain}
 {meta: artist John Anderson}
-{meta: writer Kent M. Robbins and Todd Cerney}
+{meta: composer Kent M. Robbins and Todd Cerney}
 
 {start_of_verse: Verse 1}
 [C]Some days I have to [Em]cry  [F]some nights I have to [C]drink myself to [G7]sleep

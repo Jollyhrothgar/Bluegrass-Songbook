@@ -1,6 +1,6 @@
 {meta: title Too Damned Old}
 {meta: artist Johnny Lee}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [G]Well you got it right I got it wrong

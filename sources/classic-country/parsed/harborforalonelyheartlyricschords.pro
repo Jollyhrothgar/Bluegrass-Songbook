@@ -1,6 +1,6 @@
 {meta: title Harbor For A Lonely Heart}
 {meta: artist Sammy Kershaw}
-{meta: writer Jenny Yates and Kostas Lazarides}
+{meta: composer Jenny Yates and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [G]One day she [C]saw with eyes wide [G]open 

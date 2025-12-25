@@ -1,6 +1,6 @@
 {meta: title I'm Beside Myself}
 {meta: artist Ricky Skaggs}
-{meta: writer Carl Jackson and Ethan Reilly}
+{meta: composer Carl Jackson and Ethan Reilly}
 
 {start_of_verse: Verse 1}
 [C]I'd grown so used to you I took for [F]granted

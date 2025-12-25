@@ -1,6 +1,6 @@
 {meta: title Full Moon Empty Pockets}
 {meta: artist Stonewall Jackson}
-{meta: writer R. J. Jones and M. Kosser}
+{meta: composer R. J. Jones and M. Kosser}
 
 {start_of_verse: Verse 1}
 [C]Full moon empty [C][F]pockets

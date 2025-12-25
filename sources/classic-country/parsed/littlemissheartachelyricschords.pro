@@ -1,6 +1,6 @@
 {meta: title Little Miss Heartache}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew and Tommy Blake}
+{meta: composer Carl Belew and Tommy Blake}
 
 {start_of_verse: Verse 1}
 [C]You got a reputation goin' [F]all over town

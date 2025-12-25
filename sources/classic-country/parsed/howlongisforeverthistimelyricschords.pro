@@ -1,6 +1,6 @@
 {meta: title How Long Is Forever This Time}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew, Tommy Blake, Art Bishop}
+{meta: composer Carl Belew, Tommy Blake, Art Bishop}
 
 {start_of_verse: Verse 1}
 [F](Oh how [C]long is [G7]forever this [C]time)

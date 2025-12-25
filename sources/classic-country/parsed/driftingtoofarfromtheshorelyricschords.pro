@@ -1,6 +1,6 @@
 {meta: title Drifting Too Far From the Shore}
 {meta: artist Hank Williams}
-{meta: writer Charles Moody}
+{meta: composer Charles Moody}
 
 {start_of_verse: Verse 1}
 [C]Out on the perilous sea

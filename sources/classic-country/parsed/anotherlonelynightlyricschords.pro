@@ -1,6 +1,6 @@
 {meta: title Another Lonely Night}
 {meta: artist Jean Shepard}
-{meta: writer Jan Crutchfield and Larry Butler}
+{meta: composer Jan Crutchfield and Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]Cryin' in the darkness

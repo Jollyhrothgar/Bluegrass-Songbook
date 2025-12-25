@@ -1,6 +1,6 @@
 {meta: title Gotta Keep Moving}
 {meta: artist Bill Anderson}
-{meta: writer Steve Karliski}
+{meta: composer Steve Karliski}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I get [Dm]restless [G7]Lord I hate to go [C]home

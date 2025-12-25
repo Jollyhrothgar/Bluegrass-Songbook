@@ -1,6 +1,6 @@
 {meta: title He's Coming Back To Earth Again}
 {meta: artist Reno and Smiley}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [G]I walked into a [C]church one [G]day

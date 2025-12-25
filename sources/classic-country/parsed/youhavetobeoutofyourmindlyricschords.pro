@@ -1,6 +1,6 @@
 {meta: title You Have To Be Out Of Your Mind}
 {meta: artist Norma Jean}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]They say love is the thing makes the [F]world go around

@@ -1,6 +1,6 @@
 {meta: title Bluebird}
 {meta: artist Alan Jackson}
-{meta: writer Leon Russell}
+{meta: composer Leon Russell}
 
 {start_of_verse: Verse 1}
 [G]I'm lost in the night[Em]

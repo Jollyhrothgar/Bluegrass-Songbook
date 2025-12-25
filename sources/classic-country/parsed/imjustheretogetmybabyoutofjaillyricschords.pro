@@ -1,6 +1,6 @@
 {meta: title I'm Just Here to Get My Baby Out of Jail}
 {meta: artist Everly Brothers}
-{meta: writer Karl Davis and Harty Taylor}
+{meta: composer Karl Davis and Harty Taylor}
 
 {start_of_verse: Verse 1}
 [C]I'm not in your town to stay

@@ -1,6 +1,6 @@
 {meta: title Lost In The Feeling}
 {meta: artist Conway Twitty}
-{meta: writer Lewis Anderson}
+{meta: composer Lewis Anderson}
 
 {start_of_verse: Verse 1}
 [G]We [F]stepped out on the [A7]dance floor 

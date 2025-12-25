@@ -1,6 +1,6 @@
 {meta: title I'll Baby Sit With You}
 {meta: artist Ferlin Husky}
-{meta: writer Clyde Wilson}
+{meta: composer Clyde Wilson}
 
 {start_of_verse: Verse 1}
 [C]If you’ll be my baby [F]let me stay with [C]you 

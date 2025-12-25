@@ -1,6 +1,6 @@
 {meta: title It's Enough To Make A Woman Lose Her Mind}
 {meta: artist Jean Shepard}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]I've almost read the [C]ink right [G]off the paper

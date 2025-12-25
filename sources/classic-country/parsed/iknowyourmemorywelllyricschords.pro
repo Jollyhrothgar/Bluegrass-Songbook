@@ -1,6 +1,6 @@
 {meta: title I Know Your Memory Well}
 {meta: artist Johnny Bush}
-{meta: writer Larry Randal Kingston and Harlan A. Sanders}
+{meta: composer Larry Randal Kingston and Harlan A. Sanders}
 
 {start_of_verse: Verse 1}
 [C]My eyes no longer [F]look for new [C]horizons

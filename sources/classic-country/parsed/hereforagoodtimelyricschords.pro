@@ -1,6 +1,6 @@
 {meta: title Here For A Good Time}
 {meta: artist George Strait}
-{meta: writer Dean Dillon, Bubba Strait, George Strait}
+{meta: composer Dean Dillon, Bubba Strait, George Strait}
 
 {start_of_verse: Verse 1}
 [C]I'm not gonna lay around and whine and moan

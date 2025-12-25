@@ -1,6 +1,6 @@
 {meta: title Dream On}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Dennis Lambert and Brian Potter}
+{meta: composer Dennis Lambert and Brian Potter}
 
 {start_of_verse: Verse 1}
 [C]Lay your head down on my [G7]shoulder 

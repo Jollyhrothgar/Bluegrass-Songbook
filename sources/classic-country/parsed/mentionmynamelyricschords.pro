@@ -1,6 +1,6 @@
 {meta: title Mention My Name}
 {meta: artist Billy Crash Craddock}
-{meta: writer Ron Chancey}
+{meta: composer Ron Chancey}
 
 {start_of_verse: Verse 1}
 [G]You are her best friend and I know she [A7]trusts you

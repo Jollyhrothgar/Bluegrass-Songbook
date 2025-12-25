@@ -1,6 +1,6 @@
 {meta: title Great White Horse}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Larry Scott}
+{meta: composer Buck Owens and Larry Scott}
 
 {start_of_verse: Verse 1}
 [G]When I was a young girl I used to dream of a [Am]lover

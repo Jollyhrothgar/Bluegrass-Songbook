@@ -1,6 +1,6 @@
 {meta: title The Deal's Still On}
 {meta: artist Jack Greene}
-{meta: writer Michael Keith Manuel}
+{meta: composer Michael Keith Manuel}
 
 {start_of_verse: Verse 1}
 [C]On a mountain outside Jerusalem 

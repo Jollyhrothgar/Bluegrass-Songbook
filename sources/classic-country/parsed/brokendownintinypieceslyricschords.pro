@@ -1,6 +1,6 @@
 {meta: title Broken Down In Tiny Pieces}
 {meta: artist Billy Crash Craddock}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [C]Broken down in [Em]tiny pieces [C7]love ain't [F]really all that [Am]much

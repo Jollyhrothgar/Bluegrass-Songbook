@@ -1,6 +1,6 @@
 {meta: title Shouting On The Hills Of Glory}
 {meta: artist Ricky Skaggs}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [G]There'll be shouting on the hills of glory

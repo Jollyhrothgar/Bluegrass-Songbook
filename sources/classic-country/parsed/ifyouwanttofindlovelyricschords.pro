@@ -1,6 +1,6 @@
 {meta: title If You Want To Find Love}
 {meta: artist Kenny Rogers}
-{meta: writer Skip Ewing and Max Duane Barnes}
+{meta: composer Skip Ewing and Max Duane Barnes}
 
 {start_of_verse: Verse 1}
 [C]He was sitting [F]on a bar [C]stool

@@ -1,6 +1,6 @@
 {meta: title When I Need You}
 {meta: artist Vern Gosdin}
-{meta: writer Carole Sager and Albert Hammond}
+{meta: composer Carole Sager and Albert Hammond}
 
 {start_of_verse: Verse 1}
 [C]When I need you

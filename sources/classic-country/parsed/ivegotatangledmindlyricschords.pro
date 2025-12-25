@@ -1,6 +1,6 @@
 {meta: title I've Got a Tangled Mind}
 {meta: artist Hank Snow}
-{meta: writer Ted Daffan and Herman Shoss}
+{meta: composer Ted Daffan and Herman Shoss}
 
 {start_of_verse: Verse 1}
 [G]I've got a tangled mind I've got a [G7]broken [C]heart

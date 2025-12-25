@@ -1,6 +1,6 @@
 {meta: title Paper Mansions}
 {meta: artist Dottie West}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [C]Don't build for me no [F]paper [G7][C]man-sions 

@@ -1,6 +1,6 @@
 {meta: title Don't You Ever Get Tired}
 {meta: artist Ray Price}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]You make my eyes run over all the [C]time

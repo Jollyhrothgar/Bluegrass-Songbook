@@ -1,6 +1,6 @@
 {meta: title Mean Woman Blues}
 {meta: artist Roy Orbison}
-{meta: writer Claude Demetrius}
+{meta: composer Claude Demetrius}
 
 {start_of_verse: Verse 1}
 [C]Hmm well I got a woman mean as she can be

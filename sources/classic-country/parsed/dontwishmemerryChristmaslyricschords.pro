@@ -1,6 +1,6 @@
 {meta: title Don't Wish Me Merry Christmas}
 {meta: artist Lynn Anderson}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]Children are [Em]singing just [C]outside my [D7]door

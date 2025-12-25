@@ -1,6 +1,6 @@
 {meta: title Last Cheater's Waltz}
 {meta: artist T.G.Sheppard}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]She was going to pieces when he walked in the door

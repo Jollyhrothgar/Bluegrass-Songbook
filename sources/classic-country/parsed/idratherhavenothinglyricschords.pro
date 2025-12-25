@@ -1,6 +1,6 @@
 {meta: title I'd Rather Have Nothing}
 {meta: artist Garth Brooks}
-{meta: writer Mike McClure}
+{meta: composer Mike McClure}
 
 {start_of_verse: Verse 1}
 [G]I jumped in the truck and headed for Kansas

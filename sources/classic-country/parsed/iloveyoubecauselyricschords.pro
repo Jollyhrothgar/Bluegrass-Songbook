@@ -1,6 +1,6 @@
 {meta: title I Love You Because}
 {meta: artist Willie Nelson}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [C]I love you because you understand [F][C7]dear 

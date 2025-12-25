@@ -1,6 +1,6 @@
 {meta: title I Treat Her Like A Baby}
 {meta: artist Billy Walker}
-{meta: writer Kay Arnold and Kendall Hayes}
+{meta: composer Kay Arnold and Kendall Hayes}
 
 {start_of_verse: Verse 1}
 [C]I can't stand to see my baby want for [D7]anything

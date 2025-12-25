@@ -1,6 +1,6 @@
 {meta: title Between The Devil And Me}
 {meta: artist Alan Jackson}
-{meta: writer Harley Allen and Carson Chamberlain}
+{meta: composer Harley Allen and Carson Chamberlain}
 
 {start_of_verse: Verse 1}
 [C]This world can take you by the hand and tempt the [F]soul of any man

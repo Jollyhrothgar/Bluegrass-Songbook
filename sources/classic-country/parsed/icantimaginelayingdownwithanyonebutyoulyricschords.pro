@@ -1,6 +1,6 @@
 {meta: title I Can't Imagine Laying Down With Anyone But You}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Don Schlitz}
+{meta: composer Don Schlitz}
 
 {start_of_verse: Verse 1}
 [C]It's all that I can [F]do to make [G7]it through another [C]day

@@ -1,6 +1,6 @@
 {meta: title Midnight In Heaven}
 {meta: artist George Morgan}
-{meta: writer Lloyd Copas}
+{meta: composer Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [G]It was midnight in [B7]heaven last [C]night in your [G]arms

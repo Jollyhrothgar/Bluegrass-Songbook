@@ -1,6 +1,6 @@
 {meta: title You Ought To Try It Sometime}
 {meta: artist Conway Twitty}
-{meta: writer Troy Seals, Eddie Setser, Billy Spencer}
+{meta: composer Troy Seals, Eddie Setser, Billy Spencer}
 
 {start_of_verse: Verse 1}
 [D7]I want a honky tonk [G]girl I want a honky tonk [D7]song

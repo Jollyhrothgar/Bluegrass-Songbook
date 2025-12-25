@@ -1,6 +1,6 @@
 {meta: title Tis So Sweet to Trust in Jesus}
 {meta: artist Glen Campbell}
-{meta: writer William J. Kirkpatrick and Louisa Stead}
+{meta: composer William J. Kirkpatrick and Louisa Stead}
 
 {start_of_verse: Verse 1}
 [C]Tis so sweet to [F]trust in [C]Jesus

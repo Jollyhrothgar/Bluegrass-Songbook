@@ -1,6 +1,6 @@
 {meta: title I'll Still Love You}
 {meta: artist Ray Price}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [C]Run through life's meadows the rich green fields

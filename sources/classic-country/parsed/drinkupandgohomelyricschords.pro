@@ -1,6 +1,6 @@
 {meta: title Drink Up And Go Home}
 {meta: artist Carl Perkins}
-{meta: writer Johnny Bond and Joe Maphis}
+{meta: composer Johnny Bond and Joe Maphis}
 
 {start_of_verse: Verse 1}
 [G]You sat there a crying  crying in your beer

@@ -1,6 +1,6 @@
 {meta: title Loving You Feeling Again}
 {meta: artist Emmylou Harris}
-{meta: writer Roy Orbison and Chris Price}
+{meta: composer Roy Orbison and Chris Price}
 
 {start_of_verse: Verse 1}
 [C]When I saw you standing there on the street

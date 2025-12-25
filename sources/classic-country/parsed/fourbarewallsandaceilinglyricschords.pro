@@ -1,6 +1,6 @@
 {meta: title Four Bare Walls And A Ceiling}
 {meta: artist Cowboy Copas}
-{meta: writer Louis Mann and Lloyd Copas}
+{meta: composer Louis Mann and Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [C]Four bare walls and a [F]ceiling

@@ -1,6 +1,6 @@
 {meta: title I Hope You're Feeling Me}
 {meta: artist Charley Pride}
-{meta: writer Jim Rushing - Bobby David}
+{meta: composer Jim Rushing - Bobby David}
 
 {start_of_verse: Verse 1}
 [C]No one could hold me no one could control [F]me

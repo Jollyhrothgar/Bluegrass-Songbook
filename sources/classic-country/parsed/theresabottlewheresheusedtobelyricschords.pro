@@ -1,6 +1,6 @@
 {meta: title There’s A Bottle Where She Used To Be}
 {meta: artist Carl Smith}
-{meta: writer Billy Worth & Carl Smith}
+{meta: composer Billy Worth & Carl Smith}
 
 {start_of_verse: Verse 1}
 [C]I’m at the end [G7]of my [C]journey

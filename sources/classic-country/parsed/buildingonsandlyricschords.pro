@@ -1,6 +1,6 @@
 {meta: title Building On Sand}
 {meta: artist Lester Flatt}
-{meta: writer Carl Butler}
+{meta: composer Carl Butler}
 
 {start_of_verse: Verse 1}
 [C]They're building great mansions

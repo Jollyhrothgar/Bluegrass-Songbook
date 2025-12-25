@@ -1,6 +1,6 @@
 {meta: title I Wanna Play House With You}
 {meta: artist Eddy Arnold}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]Come here to me my little chickadee 

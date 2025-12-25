@@ -1,6 +1,6 @@
 {meta: title You're My Perfect Reason}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson and Clint Daniels}
+{meta: composer Bill Anderson and Clint Daniels}
 
 {start_of_verse: Verse 1}
 [C]Baby did you know [F]you’re my perfect [C]reason

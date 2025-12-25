@@ -1,6 +1,6 @@
 {meta: title Do You Miss Me}
 {meta: artist Eddy Arnold}
-{meta: writer Cy Coben and Charles Grean}
+{meta: composer Cy Coben and Charles Grean}
 
 {start_of_verse: Verse 1}
 [C]When the evening shadows fall do you miss [G7]me

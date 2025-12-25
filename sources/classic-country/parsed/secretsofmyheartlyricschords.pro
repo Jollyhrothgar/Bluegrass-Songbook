@@ -1,6 +1,6 @@
 {meta: title Secrets Of My Heart}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Harry McAuliffe and Bobby Gregory}
+{meta: composer Harry McAuliffe and Bobby Gregory}
 
 {start_of_verse: Verse 1}
 [C]In days gone by I remember dear

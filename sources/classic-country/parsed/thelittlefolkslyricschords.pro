@@ -1,6 +1,6 @@
 {meta: title The Little Folks}
 {meta: artist Charley Pride}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [G]We've decided we [D7]can't work it out

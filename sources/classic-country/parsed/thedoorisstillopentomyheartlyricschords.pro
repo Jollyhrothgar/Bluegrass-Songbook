@@ -1,6 +1,6 @@
 {meta: title The Door Is Still Open To My Heart}
 {meta: artist Dean Martin}
-{meta: writer Chuck Willis}
+{meta: composer Chuck Willis}
 
 {start_of_verse: Verse 1}
 [Fm]And the [C]door is still [G7]open to my [C]h---[F]e—[C]a—[G7]rt

@@ -1,6 +1,6 @@
 {meta: title If The Whole World Was A Honky Tonk}
 {meta: artist George Strait}
-{meta: writer Bryan Simpson, Ashley Gorley, Wade Kirby}
+{meta: composer Bryan Simpson, Ashley Gorley, Wade Kirby}
 
 {start_of_verse: Verse 1}
 [C]If the whole world was a honky-tonk

@@ -1,6 +1,6 @@
 {meta: title You Can't Hide Redneck}
 {meta: artist Tracy Lawrence}
-{meta: writer Casey Beathard and Daniel Demay}
+{meta: composer Casey Beathard and Daniel Demay}
 
 {start_of_verse: Verse 1}
 [C]Well [G]Billy Joe McAllister [C]junior showed [G]up at the reunion[C]

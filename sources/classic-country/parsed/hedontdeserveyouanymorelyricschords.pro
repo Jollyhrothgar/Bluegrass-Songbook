@@ -1,6 +1,6 @@
 {meta: title He Don't Deserve You Anymore}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Artie Large}
+{meta: composer Buck Owens and Artie Large}
 
 {start_of_verse: Verse 1}
 [C]When I found you darling then he saw his big [F]mistake

@@ -1,6 +1,6 @@
 {meta: title Like Someone In Love}
 {meta: artist Charlie Rich}
-{meta: writer Johnny Burke and James Van Heusen}
+{meta: composer Johnny Burke and James Van Heusen}
 
 {start_of_verse: Verse 1}
 [C]Lately I find myself out [Dm]gazing at [C]stars[Dm]

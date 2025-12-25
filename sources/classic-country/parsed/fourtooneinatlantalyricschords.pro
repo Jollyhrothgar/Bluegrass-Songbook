@@ -1,6 +1,6 @@
 {meta: title Four To One In Atlanta}
 {meta: artist Tracy Byrd}
-{meta: writer Bill Kenner and Russell Brown}
+{meta: composer Bill Kenner and Russell Brown}
 
 {start_of_verse: Verse 1}
 [C]Oh wild Billy [G]told me even [C]I would have to [G]chance

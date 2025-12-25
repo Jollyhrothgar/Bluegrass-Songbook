@@ -1,6 +1,6 @@
 {meta: title Act 1 Act 2 Act 3}
 {meta: artist Hank Snow}
-{meta: writer Charles Tebbetts}
+{meta: composer Charles Tebbetts}
 
 {start_of_verse: Verse 1}
 [G]The world's a stage they say and we're all [C]part of the [G]play

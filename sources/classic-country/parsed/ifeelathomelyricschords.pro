@@ -1,6 +1,6 @@
 {meta: title I Feel At Home}
 {meta: artist Red Steagall}
-{meta: writer Ben Peters and Red Steagall}
+{meta: composer Ben Peters and Red Steagall}
 
 {start_of_verse: Verse 1}
 [C]For the first time in my [G]life I [D7]feel at [C]home

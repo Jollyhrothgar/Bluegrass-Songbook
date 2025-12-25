@@ -1,6 +1,6 @@
 {meta: title It's My Time}
 {meta: artist Dolly Parton}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G]Gather round girls you [D7]I grew up [G]with

@@ -1,6 +1,6 @@
 {meta: title A Woman's Hand}
 {meta: artist Jean Shepard}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna stay right here [D7]beside him

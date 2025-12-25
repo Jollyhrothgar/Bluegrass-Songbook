@@ -1,6 +1,6 @@
 {meta: title If It Only Took a Baby}
 {meta: artist Statler Brothers}
-{meta: writer Kim Reid}
+{meta: composer Kim Reid}
 
 {start_of_verse: Verse 1}
 [C]If it only took a [F]baby

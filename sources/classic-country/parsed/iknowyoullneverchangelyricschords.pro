@@ -1,6 +1,6 @@
 {meta: title I Know You'll Never Change}
 {meta: artist George Morgan}
-{meta: writer Victor Willis}
+{meta: composer Victor Willis}
 
 {start_of_verse: Verse 1}
 [C]I know you’ll never change dear [F]you’ll always be the [C]same

@@ -1,6 +1,6 @@
 {meta: title Sarah's Eyes}
 {meta: artist Vern Gosdin}
-{meta: writer Shirl Milete and Vern Gosdin}
+{meta: composer Shirl Milete and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]I found her in the morning sunshine [F]standing by the [Dm]road

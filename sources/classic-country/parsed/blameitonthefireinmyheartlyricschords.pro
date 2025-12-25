@@ -1,6 +1,6 @@
 {meta: title Blame It On The Fire In My Heart}
 {meta: artist The Bellamy Brothers}
-{meta: writer Ralph Siegel}
+{meta: composer Ralph Siegel}
 
 {start_of_verse: Verse 1}
 [C]Blame it on the sundown [F]far beyond the [C]highway

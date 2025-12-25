@@ -1,6 +1,6 @@
 {meta: title My Poor Old Heart}
 {meta: artist Randy Travis}
-{meta: writer Gary Harrison and Shawn Camp}
+{meta: composer Gary Harrison and Shawn Camp}
 
 {start_of_verse: Verse 1}
 [D7]I've been a [G]fool for love ever since I was a [D7]baby

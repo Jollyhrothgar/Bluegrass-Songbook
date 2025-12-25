@@ -1,6 +1,6 @@
 {meta: title Take A Look At Me}
 {meta: artist Mel Tillis}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [C]Goodnight all you [G7]angel band [Am]Lord let sleep hold [Em]to my hand

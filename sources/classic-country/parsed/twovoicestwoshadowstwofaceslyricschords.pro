@@ -1,6 +1,6 @@
 {meta: title Two Voices Two Shadows Two Faces}
 {meta: artist Jean Shepard}
-{meta: writer Ned Miller, Sue Miller, Kurt Hertha}
+{meta: composer Ned Miller, Sue Miller, Kurt Hertha}
 
 {start_of_verse: Verse 1}
 [G]You say you don't love her my [D7]darling

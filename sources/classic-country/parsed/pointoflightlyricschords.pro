@@ -1,6 +1,6 @@
 {meta: title Point Of Light}
 {meta: artist Randy Travis}
-{meta: writer Don Schlitz and Thom Schuyler}
+{meta: composer Don Schlitz and Thom Schuyler}
 
 {start_of_verse: Verse 1}
 [C]There's a point when you [F]cannot walk [C]away

@@ -1,6 +1,6 @@
 {meta: title Song For The Mira}
 {meta: artist Anne Murray}
-{meta: writer Allister MacGillivray}
+{meta: composer Allister MacGillivray}
 
 {start_of_verse: Verse 1}
 [G]Out on the Mira [C]one warm [G]afternoon

@@ -1,6 +1,6 @@
 {meta: title Today All Over Again}
 {meta: artist Reba McEntire}
-{meta: writer Bobby Harden and Lola Jean Dillon}
+{meta: composer Bobby Harden and Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [C]Is this how it is when it's [F]over 

@@ -1,6 +1,6 @@
 {meta: title We Need One More Chance}
 {meta: artist Kitty Wells With Red Foley}
-{meta: writer Bill Phillips}
+{meta: composer Bill Phillips}
 
 {start_of_verse: Verse 1}
 [G]We drifted far apart from each [C]other

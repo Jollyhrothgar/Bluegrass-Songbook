@@ -1,6 +1,6 @@
 {meta: title If I Could Put Them All Together}
 {meta: artist George Jones}
-{meta: writer Even Stevens}
+{meta: composer Even Stevens}
 
 {start_of_verse: Verse 1}
 [G]I guess I ran to Rhonda for her [C]sympathy

@@ -1,6 +1,6 @@
 {meta: title Bottle In The Hand Is Much Stronger Than The Man}
 {meta: artist Conway Twitty}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [C]Will I ask my old buddy to call her on the phone

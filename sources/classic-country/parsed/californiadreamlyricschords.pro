@@ -1,6 +1,6 @@
 {meta: title California Dream}
 {meta: artist Johnny Paycheck}
-{meta: writer Aubrey Mayhew}
+{meta: composer Aubrey Mayhew}
 
 {start_of_verse: Verse 1}
 [G]It's been fifteen years now since the wine took hold of me

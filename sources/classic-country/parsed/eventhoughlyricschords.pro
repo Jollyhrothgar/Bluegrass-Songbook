@@ -1,6 +1,6 @@
 {meta: title Even Though Lyrics chords}
 {meta: artist Webb Pierce}
-{meta: writer Curt Peeples and Webb Pierce}
+{meta: composer Curt Peeples and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]Even though you took the sunshine out of [F]my heaven

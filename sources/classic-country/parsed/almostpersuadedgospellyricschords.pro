@@ -1,6 +1,6 @@
 {meta: title Almost Persuaded (Gospel)}
 {meta: artist Johnny Paycheck}
-{meta: writer Philip P. Bliss}
+{meta: composer Philip P. Bliss}
 
 {start_of_verse: Verse 1}
 [F][C]Almost [C]persuaded now [Am]to [C][G7]believe

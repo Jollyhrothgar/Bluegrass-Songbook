@@ -1,6 +1,6 @@
 {meta: title Country Kind Of Feeling}
 {meta: artist Wilburn Brothers}
-{meta: writer Eugene D. Dobbins and Johnny A. Wilson}
+{meta: composer Eugene D. Dobbins and Johnny A. Wilson}
 
 {start_of_verse: Verse 1}
 [C]Here I am in Boston in a [F]ratty motel [C]room

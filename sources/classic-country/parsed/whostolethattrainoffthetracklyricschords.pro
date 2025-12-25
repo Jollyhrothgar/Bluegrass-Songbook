@@ -1,6 +1,6 @@
 {meta: title Who Stole That Train Off The Track}
 {meta: artist Ray Price}
-{meta: writer Hy Heath}
+{meta: composer Hy Heath}
 
 {start_of_verse: Verse 1}
 [C]Who stole that train off the track

@@ -1,6 +1,6 @@
 {meta: title Listen}
 {meta: artist Mel Street}
-{meta: writer Jimmy Peppers and Tommy Cash}
+{meta: composer Jimmy Peppers and Tommy Cash}
 
 {start_of_verse: Verse 1}
 [C]Listen as I tell you what you [Dm]are to me

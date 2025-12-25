@@ -1,6 +1,6 @@
 {meta: title Wild Eyed Dream}
 {meta: artist Ricky Van Shelton}
-{meta: writer Alan Rhody}
+{meta: composer Alan Rhody}
 
 {start_of_verse: Verse 1}
 [G]Chattanooga down in Chattanooga

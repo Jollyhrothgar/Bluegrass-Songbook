@@ -1,6 +1,6 @@
 {meta: title What Does Your Conscience Say To You}
 {meta: artist Ferlin Husky}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [F]What does your [C]conscience [G7]say to [C]you [F]  [C]

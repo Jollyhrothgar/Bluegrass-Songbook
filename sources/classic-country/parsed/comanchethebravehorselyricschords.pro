@@ -1,6 +1,6 @@
 {meta: title Comanche (The Brave Horse)}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Horton and Frances Bandy}
+{meta: composer Johnny Horton and Frances Bandy}
 
 {start_of_verse: Verse 1}
 [C]The battle was over at [G7]Custer's last [C]stand

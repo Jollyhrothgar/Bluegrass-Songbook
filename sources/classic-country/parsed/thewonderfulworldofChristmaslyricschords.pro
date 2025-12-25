@@ -1,6 +1,6 @@
 {meta: title The Wonderful World Of Christmas}
 {meta: artist Elvis Presley}
-{meta: writer Charles Tobias and Al Frisch}
+{meta: composer Charles Tobias and Al Frisch}
 
 {start_of_verse: Verse 1}
 [G]The wonderful world of [D7]Christmas

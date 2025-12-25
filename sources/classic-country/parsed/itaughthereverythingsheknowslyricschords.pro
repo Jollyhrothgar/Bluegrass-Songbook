@@ -1,6 +1,6 @@
 {meta: title I Taught Her Everything She Knows}
 {meta: artist Billy Walker}
-{meta: writer Arthur Kent and Sylvia Dee}
+{meta: composer Arthur Kent and Sylvia Dee}
 
 {start_of_verse: Verse 1}
 [C]I taught her everything she knows and [F]then what did she do

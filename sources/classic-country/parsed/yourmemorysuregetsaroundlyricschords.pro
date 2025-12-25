@@ -1,6 +1,6 @@
 {meta: title Your Memory Sure Gets Around}
 {meta: artist Merle Haggard}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [G]I've been down in the valley and on the highest hill

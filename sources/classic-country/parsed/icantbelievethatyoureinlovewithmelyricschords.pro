@@ -1,6 +1,6 @@
 {meta: title I Can’t Believe That You’re In Love With Me}
 {meta: artist Faron Young}
-{meta: writer Jimmy McHugh and Clarence Gaskill}
+{meta: composer Jimmy McHugh and Clarence Gaskill}
 
 {start_of_verse: Verse 1}
 [G]Your [C]eyes are blue your kisses too 

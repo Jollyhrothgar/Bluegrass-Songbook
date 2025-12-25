@@ -1,6 +1,6 @@
 {meta: title Sooner or Later}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis and Webb Pierce}
+{meta: composer Mel Tillis and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]Your cheating past [D7]I knew  [G]when I fell in love with you

@@ -1,6 +1,6 @@
 {meta: title After You Turn Out Your Light}
 {meta: artist Roy Drusky}
-{meta: writer Roy Drusky and Bill Brock}
+{meta: composer Roy Drusky and Bill Brock}
 
 {start_of_verse: Verse 1}
 [C]After you're alone at night 

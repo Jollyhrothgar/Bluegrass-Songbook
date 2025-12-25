@@ -1,6 +1,6 @@
 {meta: title You've Really Got A Hold On Me}
 {meta: artist Mickey Gilley}
-{meta: writer Will Robinson}
+{meta: composer Will Robinson}
 
 {start_of_verse: Verse 1}
 [G]I don't like you but I love you

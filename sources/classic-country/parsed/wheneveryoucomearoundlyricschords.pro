@@ -1,6 +1,6 @@
 {meta: title Whenever You Come Around}
 {meta: artist Vince Gill}
-{meta: writer Vince Gill and Pete Wasner}
+{meta: composer Vince Gill and Pete Wasner}
 
 {start_of_verse: Verse 1}
 [G]Face of an angel [C]pretty eyes that shine

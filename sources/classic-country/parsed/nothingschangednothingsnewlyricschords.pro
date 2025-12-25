@@ -1,6 +1,6 @@
 {meta: title Nothing's Changed Nothing's New}
 {meta: artist Willie Nelson}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]Nothing's [E7]changed nothing's [A7]new 

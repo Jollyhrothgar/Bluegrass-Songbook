@@ -1,6 +1,6 @@
 {meta: title Tell My Baby I Love Her}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Horton and Tillman Franks}
+{meta: composer Johnny Horton and Tillman Franks}
 
 {start_of_verse: Verse 1}
 [C]Well I said my baby was a-doin' me wrong

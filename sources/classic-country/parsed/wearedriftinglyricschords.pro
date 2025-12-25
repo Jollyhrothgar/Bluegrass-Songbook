@@ -1,6 +1,6 @@
 {meta: title We Are Drifting}
 {meta: artist Webb Pierce}
-{meta: writer Warner McPherson and Webb Pierce}
+{meta: composer Warner McPherson and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]We are drifting yes we're drifting 

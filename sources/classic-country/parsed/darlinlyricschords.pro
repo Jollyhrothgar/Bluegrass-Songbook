@@ -1,6 +1,6 @@
 {meta: title Darlin'}
 {meta: artist Jeanne Pruett}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]Darlin' dearest darlin'

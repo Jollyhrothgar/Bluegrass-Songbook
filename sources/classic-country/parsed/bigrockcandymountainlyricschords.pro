@@ -1,6 +1,6 @@
 {meta: title Big Rock Candy Mountain}
 {meta: artist Burl Ives}
-{meta: writer Dave Fisher}
+{meta: composer Dave Fisher}
 
 {start_of_verse: Verse 1}
 [C]Oh the buzzing of the bees at the cigarette trees

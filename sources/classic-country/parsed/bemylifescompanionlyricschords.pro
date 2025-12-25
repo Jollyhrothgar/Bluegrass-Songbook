@@ -1,6 +1,6 @@
 {meta: title Be My Life's Companion}
 {meta: artist Hank Thompson}
-{meta: writer Milton DeLugg and Bob Hilliard}
+{meta: composer Milton DeLugg and Bob Hilliard}
 
 {start_of_verse: Verse 1}
 [C]Want no silver threads [F]among the [C]gold

@@ -1,6 +1,6 @@
 {meta: title An Old Fashioned Christmas}
 {meta: artist Statler Brothers}
-{meta: writer John Rimel}
+{meta: composer John Rimel}
 
 {start_of_verse: Verse 1}
 [C]These city streets [F]seem cold and hard to [C]me

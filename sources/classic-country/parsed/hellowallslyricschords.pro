@@ -1,6 +1,6 @@
 {meta: title Hello Walls}
 {meta: artist Faron Young}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]Hello walls how'd things [F]go for you [C]today

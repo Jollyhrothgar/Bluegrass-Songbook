@@ -1,6 +1,6 @@
 {meta: title Bordertown Woman}
 {meta: artist Mel McDaniel}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]Hell couldn't be any hotter 

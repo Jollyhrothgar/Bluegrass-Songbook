@@ -1,6 +1,6 @@
 {meta: title I'm Forty Now}
 {meta: artist Cal Smith}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]There were barefoot dreams of catching [F]outlaws

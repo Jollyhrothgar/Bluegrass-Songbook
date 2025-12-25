@@ -1,6 +1,6 @@
 {meta: title Dead From The Heart On Down}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes and Vern Gosdin}
+{meta: composer Max D. Barnes and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]My friends all came around to say goodbye

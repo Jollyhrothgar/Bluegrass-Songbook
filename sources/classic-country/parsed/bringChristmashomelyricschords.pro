@@ -1,6 +1,6 @@
 {meta: title Bring Christmas Home}
 {meta: artist Lee Greenwood}
-{meta: writer Greg James and Susan Longacre}
+{meta: composer Greg James and Susan Longacre}
 
 {start_of_verse: Verse 1}
 [G]A candle's in the [C]window a [D7]wreath is on the [G]door

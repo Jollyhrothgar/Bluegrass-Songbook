@@ -1,6 +1,6 @@
 {meta: title Sundown and Sorrow}
 {meta: artist Hank Williams}
-{meta: writer J. L. Frank and Pee Wee King}
+{meta: composer J. L. Frank and Pee Wee King}
 
 {start_of_verse: Verse 1}
 [C]Sundown and sorrow have found [F]me

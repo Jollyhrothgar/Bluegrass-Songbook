@@ -1,6 +1,6 @@
 {meta: title Preachin' Prayin' Singin'}
 {meta: artist The Country Gentlmen}
-{meta: writer E.C. McCarty}
+{meta: composer E.C. McCarty}
 
 {start_of_verse: Verse 1}
 [G]Preachin' prayin' [C]singin' everywhere 

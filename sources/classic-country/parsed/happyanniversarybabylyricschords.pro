@@ -1,6 +1,6 @@
 {meta: title Happy Anniversary Baby}
 {meta: artist Leona Williams}
-{meta: writer Rory Bourke}
+{meta: composer Rory Bourke}
 
 {start_of_verse: Verse 1}
 [G]I [D7]wake up in the morning and I tiptoe down the hall

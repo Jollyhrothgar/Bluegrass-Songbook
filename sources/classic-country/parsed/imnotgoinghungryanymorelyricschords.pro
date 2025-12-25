@@ -1,6 +1,6 @@
 {meta: title I'm Not Going Hungry Anymore Lyrics and Chords}
 {meta: artist Charlie Rich}
-{meta: writer Freddie Hart}
+{meta: composer Freddie Hart}
 
 {start_of_verse: Verse 1}
 [G]I'm not goin' [D7]hungry any[G]more

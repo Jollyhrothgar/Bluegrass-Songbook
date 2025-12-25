@@ -1,6 +1,6 @@
 {meta: title Cause I Love You So Lyrics and Chords}
 {meta: artist Webb Pierce}
-{meta: writer Denny Hill and Webb Pierce}
+{meta: composer Denny Hill and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]I’ve had my fun a [C]running round 

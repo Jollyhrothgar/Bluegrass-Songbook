@@ -1,6 +1,6 @@
 {meta: title Artificial Tears}
 {meta: artist Rhonda Vincent}
-{meta: writer Bob Morrison and Ron Hellard}
+{meta: composer Bob Morrison and Ron Hellard}
 
 {start_of_verse: Verse 1}
 [C]Don't come to me with you're [F]sorry

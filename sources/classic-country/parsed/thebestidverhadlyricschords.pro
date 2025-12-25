@@ -1,6 +1,6 @@
 {meta: title The Best I Ever Had}
 {meta: artist Faron Young}
-{meta: writer Danny Hies and Ruby Hies}
+{meta: composer Danny Hies and Ruby Hies}
 
 {start_of_verse: Verse 1}
 [C]I try to break the habit 

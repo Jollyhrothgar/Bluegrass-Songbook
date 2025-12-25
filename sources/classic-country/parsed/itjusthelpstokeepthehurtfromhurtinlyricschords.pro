@@ -1,6 +1,6 @@
 {meta: title It Just Helps To Keep The Hurt From Hurtin'}
 {meta: artist Moe Bandy}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]The barroom atmosphere really brings my heart no [G7]cheer

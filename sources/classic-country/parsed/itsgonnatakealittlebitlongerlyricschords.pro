@@ -1,6 +1,6 @@
 {meta: title It's Gonna Take A Little Bit Longer}
 {meta: artist Charlie Pride}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]Baby it's gonna take [C]a little bit [G]longer 

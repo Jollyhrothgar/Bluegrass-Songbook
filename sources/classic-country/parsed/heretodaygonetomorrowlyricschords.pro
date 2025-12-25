@@ -1,6 +1,6 @@
 {meta: title Here Today Gone Tomorrow}
 {meta: artist Rhonda Vincent}
-{meta: writer The Easter Brothers}
+{meta: composer The Easter Brothers}
 
 {start_of_verse: Verse 1}
 [G]I keep watching for the dawn of [C]tomorrow

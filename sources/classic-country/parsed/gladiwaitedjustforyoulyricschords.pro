@@ -1,6 +1,6 @@
 {meta: title Glad I Waited Just For You}
 {meta: artist Reba McEntire}
-{meta: writer Royce Porter and Bucky Jones}
+{meta: composer Royce Porter and Bucky Jones}
 
 {start_of_verse: Verse 1}
 [G]Use to be use to be love was [Bm]mean to m[E7]e

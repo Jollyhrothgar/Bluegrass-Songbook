@@ -1,6 +1,6 @@
 {meta: title Bouquet In Heaven}
 {meta: artist J.D. Crowe}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [C]When it's [F]decoration day up in [C]Heaven

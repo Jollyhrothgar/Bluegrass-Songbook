@@ -1,6 +1,6 @@
 {meta: title It's Christmas Time In The Valley}
 {meta: artist Freddie Fender}
-{meta: writer Charles Preston}
+{meta: composer Charles Preston}
 
 {start_of_verse: Verse 1}
 [G]Well it's Christmas time  [C]in the [G]valley

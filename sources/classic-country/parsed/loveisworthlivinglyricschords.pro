@@ -1,6 +1,6 @@
 {meta: title Love Is Worth Living}
 {meta: artist Dolly Parton and Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]I know what you're [D7]thinkin' when [G7]you look at me

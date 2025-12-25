@@ -1,6 +1,6 @@
 {meta: title She Needs Me}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery and Jodie Emerson}
+{meta: composer Earl Montgomery and Jodie Emerson}
 
 {start_of_verse: Verse 1}
 [C]No I don't know the girl at the bar in the short [F]red [C]dress

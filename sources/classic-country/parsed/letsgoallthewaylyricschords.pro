@@ -1,6 +1,6 @@
 {meta: title Let's Go All The Way}
 {meta: artist Norma Jean}
-{meta: writer Dusty Rose}
+{meta: composer Dusty Rose}
 
 {start_of_verse: Verse 1}
 Intro:

@@ -1,6 +1,6 @@
 {meta: title Rip It Up}
 {meta: artist Elvis Presley}
-{meta: writer Robert Alexander Blackwell and John S. Marascalco}
+{meta: composer Robert Alexander Blackwell and John S. Marascalco}
 
 {start_of_verse: Verse 1}
 [G]Well it's Saturday night and I just got paid

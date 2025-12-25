@@ -1,6 +1,6 @@
 {meta: title Mary In The Morning}
 {meta: artist Glen Campbell}
-{meta: writer Johnny Cymball and Mike Lendell}
+{meta: composer Johnny Cymball and Mike Lendell}
 
 {start_of_verse: Verse 1}
 [C]Nothing's quite as pretty  [F]as Mary [C]in the [G7]morning

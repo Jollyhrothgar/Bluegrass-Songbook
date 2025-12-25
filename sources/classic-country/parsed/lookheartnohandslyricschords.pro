@@ -1,6 +1,6 @@
 {meta: title Look Heart No Hands}
 {meta: artist Randy Travis}
-{meta: writer Trey Bruce and Russell Smith}
+{meta: composer Trey Bruce and Russell Smith}
 
 {start_of_verse: Verse 1}
 [C]I remember how it used to feel

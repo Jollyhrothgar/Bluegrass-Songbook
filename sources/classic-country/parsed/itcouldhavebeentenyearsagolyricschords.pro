@@ -1,6 +1,6 @@
 {meta: title It Could Have Been Ten Years Ago}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Dennis Wilson}
+{meta: composer Dennis Wilson}
 
 {start_of_verse: Verse 1}
 [G]When the candle at my table cast its [C]light upon your face

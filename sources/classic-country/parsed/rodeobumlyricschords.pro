@@ -1,6 +1,6 @@
 {meta: title Rodeo Bum}
 {meta: artist Mel Street}
-{meta: writer Dick Heard and Sammy Vaughn}
+{meta: composer Dick Heard and Sammy Vaughn}
 
 {start_of_verse: Verse 1}
 [C]Some call it living 

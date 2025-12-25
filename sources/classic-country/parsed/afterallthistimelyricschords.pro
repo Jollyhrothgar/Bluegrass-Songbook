@@ -1,6 +1,6 @@
 {meta: title After All This Time}
 {meta: artist Mel Tillis}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]After all this time I should [G7]be over you I [C]know

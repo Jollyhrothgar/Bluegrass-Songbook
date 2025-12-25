@@ -1,6 +1,6 @@
 {meta: title Angels Don't Fly They Just Walk Out On You}
 {meta: artist George Jones}
-{meta: writer John Fountain and William J. Webb}
+{meta: composer John Fountain and William J. Webb}
 
 {start_of_verse: Verse 1}
 [C]Deep into midnight far [F]from the warm [C]light

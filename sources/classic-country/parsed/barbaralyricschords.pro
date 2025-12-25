@@ -1,6 +1,6 @@
 {meta: title Barbara}
 {meta: artist George Morgan}
-{meta: writer A.L. Owens}
+{meta: composer A.L. Owens}
 
 {start_of_verse: Verse 1}
 [C]I had walked through a [Am]forest of [Em]redwood [Dm]trees

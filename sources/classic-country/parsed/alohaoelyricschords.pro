@@ -1,6 +1,6 @@
 {meta: title Aloha Oe}
 {meta: artist Elvis Presley}
-{meta: writer Queen Liliuokalani and Ian T. Whitcomb}
+{meta: composer Queen Liliuokalani and Ian T. Whitcomb}
 
 {start_of_verse: Verse 1}
 [C][G]A-loha-oe [G]aloha-oe

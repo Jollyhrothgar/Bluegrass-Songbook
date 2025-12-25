@@ -1,6 +1,6 @@
 {meta: title Each Time You Leave Lyrics Chords}
 {meta: artist Jim Reeves}
-{meta: writer Scott Wiseman}
+{meta: composer Scott Wiseman}
 
 {start_of_verse: Verse 1}
 [C]Each time you leave I die a [G7]little  

@@ -1,6 +1,6 @@
 {meta: title Even After Forever}
 {meta: artist David Allan Coe}
-{meta: writer Rick Underwood}
+{meta: composer Rick Underwood}
 
 {start_of_verse: Verse 1}
 [C]Yeah the [F]snapshot must have been [C]taken back in [G7]192[Am]2

@@ -1,6 +1,6 @@
 {meta: title Galway Bay}
 {meta: artist Johnny Paycheck}
-{meta: writer Arthur Colaham}
+{meta: composer Arthur Colaham}
 
 {start_of_verse: Verse 1}
 [G]If you ever go across the sea to [D7]Ireland

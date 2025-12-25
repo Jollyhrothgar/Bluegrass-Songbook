@@ -1,6 +1,6 @@
 {meta: title Thou Shall Not Steal}
 {meta: artist Kitty Wells}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [C]In the bible it [F]says thou shall not steal

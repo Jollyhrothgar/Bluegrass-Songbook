@@ -1,6 +1,6 @@
 {meta: title Blind In Love}
 {meta: artist Mel Tillis}
-{meta: writer Bob Corbin}
+{meta: composer Bob Corbin}
 
 {start_of_verse: Verse 1}
 [C]You [F]tell me come [Em]over but I [Dm]can’t stay [C]late

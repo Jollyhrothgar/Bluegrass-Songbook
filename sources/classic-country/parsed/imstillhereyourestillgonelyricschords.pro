@@ -1,6 +1,6 @@
 {meta: title I'm Still Here You're Still Gone}
 {meta: artist Randy Travis}
-{meta: writer Kevin Brandt and Ralph Murthy}
+{meta: composer Kevin Brandt and Ralph Murthy}
 
 {start_of_verse: Verse 1}
 [C]The sun comes up [G7]you're still [C]gone

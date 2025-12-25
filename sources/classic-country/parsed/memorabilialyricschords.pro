@@ -1,6 +1,6 @@
 {meta: title Memorabilia}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G]I remember when I was just a kid 

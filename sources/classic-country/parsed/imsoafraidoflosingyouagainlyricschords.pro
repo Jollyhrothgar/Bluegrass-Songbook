@@ -1,6 +1,6 @@
 {meta: title I'm So Afraid of Losing You Again}
 {meta: artist Charlie Pride}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I want to throw my arms around [F]you

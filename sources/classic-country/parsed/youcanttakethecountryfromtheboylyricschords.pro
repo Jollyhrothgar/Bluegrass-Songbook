@@ -1,6 +1,6 @@
 {meta: title You Can't Take The Country From The Boy}
 {meta: artist Bob Luman}
-{meta: writer Fred F. Carter, Jr. and Anna Carter}
+{meta: composer Fred F. Carter, Jr. and Anna Carter}
 
 {start_of_verse: Verse 1}
 [C]Yeah you can take the boy from the country

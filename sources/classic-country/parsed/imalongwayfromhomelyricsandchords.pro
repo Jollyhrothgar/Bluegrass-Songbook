@@ -1,6 +1,6 @@
 {meta: title I'm A Long Way From Home}
 {meta: artist Porter Wagoner}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I'm a l-ong [F]way from [G7]home

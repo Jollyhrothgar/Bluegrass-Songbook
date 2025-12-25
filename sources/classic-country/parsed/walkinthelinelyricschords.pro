@@ -1,6 +1,6 @@
 {meta: title Walkin' The Line}
 {meta: artist Tracy Byrd}
-{meta: writer Wynn Varble, Shawn Camp, Randy Hardison}
+{meta: composer Wynn Varble, Shawn Camp, Randy Hardison}
 
 {start_of_verse: Verse 1}
 [D7]Girl I swear you dang near took my [G]breath

@@ -1,6 +1,6 @@
 {meta: title Whippoorwill Lane}
 {meta: artist Hank Thompson}
-{meta: writer Weldon Allard and Johnny Hathcock}
+{meta: composer Weldon Allard and Johnny Hathcock}
 
 {start_of_verse: Verse 1}
 [G]We were walking down Whippoorwill [D7]Lane

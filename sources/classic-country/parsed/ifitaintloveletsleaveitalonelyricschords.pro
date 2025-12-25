@@ -1,6 +1,6 @@
 {meta: title If It Ain't Love Let's Leave It Alone}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]If it ain't love then let's don't even let it [A]start

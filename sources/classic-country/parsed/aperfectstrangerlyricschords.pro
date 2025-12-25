@@ -1,6 +1,6 @@
 {meta: title A Perfect Stranger}
 {meta: artist Faron Young}
-{meta: writer Lorene Allen and Kenny Starr}
+{meta: composer Lorene Allen and Kenny Starr}
 
 {start_of_verse: Verse 1}
 [G]From the start I took the sweet love that she [C]gave me

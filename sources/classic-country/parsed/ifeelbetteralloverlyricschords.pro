@@ -1,6 +1,6 @@
 {meta: title I Feel Better All Over}
 {meta: artist Ferlin Husky}
-{meta: writer Kenny Rogers and Leon Smith}
+{meta: composer Kenny Rogers and Leon Smith}
 
 {start_of_verse: Verse 1}
 [G]Well I feel better all over more than anywhere else 

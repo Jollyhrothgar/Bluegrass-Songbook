@@ -1,6 +1,6 @@
 {meta: title All I Need Is Some More Lovin'}
 {meta: artist George Morgan}
-{meta: writer John Julias Daume}
+{meta: composer John Julias Daume}
 
 {start_of_verse: Verse 1}
 [C]All I need is some more lovin' from a [F]pretty girl like [D7]you

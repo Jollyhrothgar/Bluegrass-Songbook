@@ -1,6 +1,6 @@
 {meta: title Loving You Too Well}
 {meta: artist Ricky Skaggs}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [G]I've held you close ten [G7]thousand times

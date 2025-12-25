@@ -1,6 +1,6 @@
 {meta: title Conscience Where Were You}
 {meta: artist Moe Bandy}
-{meta: writer Sanger D. Shafer and Warren Robb}
+{meta: composer Sanger D. Shafer and Warren Robb}
 
 {start_of_verse: Verse 1}
 [G]You came to [C]me this [G]mornin' [C]several hours [G]late

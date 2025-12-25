@@ -1,6 +1,6 @@
 {meta: title We Had It All}
 {meta: artist Waylon Jennings}
-{meta: writer Troy Seals and Donnie Fritts}
+{meta: composer Troy Seals and Donnie Fritts}
 
 {start_of_verse: Verse 1}
 [C]I can hear the wind [G7]blowin' in my [Am]mind

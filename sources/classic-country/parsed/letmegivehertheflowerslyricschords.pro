@@ -1,6 +1,6 @@
 {meta: title Let Me Give Her The Flowers}
 {meta: artist Lefty Frizzell}
-{meta: writer Gordon Terry}
+{meta: composer Gordon Terry}
 
 {start_of_verse: Verse 1}
 [G]Let me have some pretty flowers for a [D7]lady

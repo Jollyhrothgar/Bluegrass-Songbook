@@ -1,6 +1,6 @@
 {meta: title Bartender}
 {meta: artist Ernest Tubb}
-{meta: writer Loretta Lynn and Maggie Vaughn}
+{meta: composer Loretta Lynn and Maggie Vaughn}
 
 {start_of_verse: Verse 1}
 [C]Please listen to me bartender I've got [F]somethin' on my [C]mind

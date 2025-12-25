@@ -1,6 +1,6 @@
 {meta: title Angel On My Shoulder}
 {meta: artist Jerry Wallace}
-{meta: writer Chip Taylor}
+{meta: composer Chip Taylor}
 
 {start_of_verse: Verse 1}
 [C]Got an angel [G7]on my shoulder [C]got a [Am]penny in my [C]pocket

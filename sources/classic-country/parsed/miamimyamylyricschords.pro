@@ -1,6 +1,6 @@
 {meta: title Miami My Amy}
 {meta: artist Keith Whitley}
-{meta: writer Hank Cochran, Dean Dillon, Royce Porter}
+{meta: composer Hank Cochran, Dean Dillon, Royce Porter}
 
 {start_of_verse: Verse 1}
 [C]Well everybody talks about the California quakes

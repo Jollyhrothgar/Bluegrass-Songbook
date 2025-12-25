@@ -1,6 +1,6 @@
 {meta: title Don't Cry Blue}
 {meta: artist Lonesome River Band}
-{meta: writer Malcolm McKinney}
+{meta: composer Malcolm McKinney}
 
 {start_of_verse: Verse 1}
 [G]I heard them engines runnin' on the [Em]road away from [C]home

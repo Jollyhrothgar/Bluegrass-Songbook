@@ -1,6 +1,6 @@
 {meta: title Little By Little}
 {meta: artist Gene Watson}
-{meta: writer Danny Morrison and Larry Keith}
+{meta: composer Danny Morrison and Larry Keith}
 
 {start_of_verse: Verse 1}
 [C]Little by little round by [F]round

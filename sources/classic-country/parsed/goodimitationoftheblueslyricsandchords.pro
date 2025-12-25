@@ -1,6 +1,6 @@
 {meta: title Good Imitation Of The Blues}
 {meta: artist Alan Jackson}
-{meta: writer Patrick Brayer}
+{meta: composer Patrick Brayer}
 
 {start_of_verse: Verse 1}
 [C]You [G]called it [F]quits and [C]hung up the phone

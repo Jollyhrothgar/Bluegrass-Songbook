@@ -1,6 +1,6 @@
 {meta: title Dance Time In Texas}
 {meta: artist George Strait}
-{meta: writer Peter Rowan}
+{meta: composer Peter Rowan}
 
 {start_of_verse: Verse 1}
 [C]Its dance time in Texas and we're [F]striking up the [G7]band

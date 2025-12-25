@@ -1,6 +1,6 @@
 {meta: title Thrill of Your Love}
 {meta: artist Elvis Presley}
-{meta: writer Stanley Kesler}
+{meta: composer Stanley Kesler}
 
 {start_of_verse: Verse 1}
 [G]I have wished for the wealth[G7]

@@ -1,6 +1,6 @@
 {meta: title Ain’t That Just Like A Woman}
 {meta: artist Fats Domino}
-{meta: writer Claude Demetrius and Fleecy Moore}
+{meta: composer Claude Demetrius and Fleecy Moore}
 
 {start_of_verse: Verse 1}
 [G]Yes Adam was happy as a man could be

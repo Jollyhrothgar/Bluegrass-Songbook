@@ -1,6 +1,6 @@
 {meta: title Lonesome Dove}
 {meta: artist Ricky Skaggs}
-{meta: writer Larry Cordle and Carl Jackson}
+{meta: composer Larry Cordle and Carl Jackson}
 
 {start_of_verse: Verse 1}
 [G]I hear a lonesome dove off in the distance

@@ -1,6 +1,6 @@
 {meta: title It's Teardrop Time}
 {meta: artist Dottie West}
-{meta: writer Dallas Frazier and Buddy Mize}
+{meta: composer Dallas Frazier and Buddy Mize}
 
 {start_of_verse: Verse 1}
 [C]It's teardrop time I'm all alone [G7]again

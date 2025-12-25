@@ -1,6 +1,6 @@
 {meta: title Born To Sing}
 {meta: artist Connie Smith}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [F]You were born to [C]sing

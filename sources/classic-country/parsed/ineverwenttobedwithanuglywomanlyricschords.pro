@@ -1,6 +1,6 @@
 {meta: title I Never Went To Bed With An Ugly Woman}
 {meta: artist Bobby Bare}
-{meta: writer Royal C. Bannon}
+{meta: composer Royal C. Bannon}
 
 {start_of_verse: Verse 1}
 [C]I serve my time loosing track of the [F]wine

@@ -1,6 +1,6 @@
 {meta: title Bluebird}
 {meta: artist Anne Murray}
-{meta: writer Ron Irving}
+{meta: composer Ron Irving}
 
 {start_of_verse: Verse 1}
 [C]I can be high as a bluebird flies if you'd love [G7]me

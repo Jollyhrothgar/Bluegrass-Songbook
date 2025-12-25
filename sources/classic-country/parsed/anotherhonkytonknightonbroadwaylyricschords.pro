@@ -1,6 +1,6 @@
 {meta: title Another Honky Tonk Night On Broadway}
 {meta: artist David Frizzell and Shelly West}
-{meta: writer Milton Brown, Snuff Garrett, Stephen H. Dorff}
+{meta: composer Milton Brown, Snuff Garrett, Stephen H. Dorff}
 
 {start_of_verse: Verse 1}
 [C]I sold my horse and [Am]saddle rode the [C]Greydog to New [G7]York

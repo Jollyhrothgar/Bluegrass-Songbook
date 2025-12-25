@@ -1,6 +1,6 @@
 {meta: title She's Not You}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Leiber, Mike Stoller, Doc Pomus}
+{meta: composer Jerry Leiber, Mike Stoller, Doc Pomus}
 
 {start_of_verse: Verse 1}
 [G7]Her hair is [C]soft and her eyes are oh so [G7]blue

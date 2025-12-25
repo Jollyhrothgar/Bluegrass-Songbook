@@ -1,6 +1,6 @@
 {meta: title Losing You Just Dawned On Me Today}
 {meta: artist Tony Booth}
-{meta: writer Kent Westberry}
+{meta: composer Kent Westberry}
 
 {start_of_verse: Verse 1}
 [G]Today the sun refused to [C]shine

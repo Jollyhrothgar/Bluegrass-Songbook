@@ -1,6 +1,6 @@
 {meta: title She's Not Forgotten Yet}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Del Reeves and Ellen Reeves}
+{meta: composer Del Reeves and Ellen Reeves}
 
 {start_of_verse: Verse 1}
 [C]You'll forget her in a [F]little while you'll [C]see

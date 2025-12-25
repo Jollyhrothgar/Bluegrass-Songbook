@@ -1,6 +1,6 @@
 {meta: title Bird Dog}
 {meta: artist Everly Brothers}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [G]Johnny he's a joker (he's a bird)

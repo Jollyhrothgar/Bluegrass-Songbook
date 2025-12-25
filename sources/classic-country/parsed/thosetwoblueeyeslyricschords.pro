@@ -1,6 +1,6 @@
 {meta: title Those Two Blue Eyes}
 {meta: artist Ricky Skaggs}
-{meta: writer Lonnie Nipper and John Sloas}
+{meta: composer Lonnie Nipper and John Sloas}
 
 {start_of_verse: Verse 1}
 [C]On the day that I first saw you

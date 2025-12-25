@@ -1,6 +1,6 @@
 {meta: title Think About the Good Times}
 {meta: artist Lee Greenwood}
-{meta: writer Sidney Barnes and Jerome Jackson}
+{meta: composer Sidney Barnes and Jerome Jackson}
 
 {start_of_verse: Verse 1}
 [G]Hey now I know that you're leaving [D7]today

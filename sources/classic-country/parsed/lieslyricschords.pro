@@ -1,6 +1,6 @@
 {meta: title Lies}
 {meta: artist Charlie Waller}
-{meta: writer Randall Hylton}
+{meta: composer Randall Hylton}
 
 {start_of_verse: Verse 1}
 [G]When we got together you had a lover

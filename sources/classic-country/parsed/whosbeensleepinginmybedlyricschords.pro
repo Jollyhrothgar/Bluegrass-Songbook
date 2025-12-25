@@ -1,6 +1,6 @@
 {meta: title Who's Been Sleeping In My Bed}
 {meta: artist Johnny Duncan}
-{meta: writer Danny Hogan and Frank Newberry}
+{meta: composer Danny Hogan and Frank Newberry}
 
 {start_of_verse: Verse 1}
 [C]Bright city lights [F]night after [C]night

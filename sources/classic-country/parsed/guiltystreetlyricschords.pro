@@ -1,6 +1,6 @@
 {meta: title Guilty Street}
 {meta: artist Kitty Wells}
-{meta: writer Cecil Null}
+{meta: composer Cecil Null}
 
 {start_of_verse: Verse 1}
 [C]Tonight I lost my way and I found [F]Guilty Street

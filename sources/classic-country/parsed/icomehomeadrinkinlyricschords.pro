@@ -1,6 +1,6 @@
 {meta: title I Come Home A Drinkin'}
 {meta: artist Cal Smith}
-{meta: writer Loretta Lynn and Peggy Sue Wells}
+{meta: composer Loretta Lynn and Peggy Sue Wells}
 
 {start_of_verse: Verse 1}
 [C]I knew that you'd be sleeping [G7]when I got home last [C]night

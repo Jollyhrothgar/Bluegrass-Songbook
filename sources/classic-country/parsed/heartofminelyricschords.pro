@@ -1,6 +1,6 @@
 {meta: title Heart Of Mine}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Michael Foster}
+{meta: composer Michael Foster}
 
 {start_of_verse: Verse 1}
 [C]There wasn’t much love on the day you [F]came[G7]

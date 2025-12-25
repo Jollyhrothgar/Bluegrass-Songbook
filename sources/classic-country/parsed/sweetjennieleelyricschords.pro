@@ -1,6 +1,6 @@
 {meta: title Sweet Jennie Lee}
 {meta: artist Bob Wills}
-{meta: writer Walter Donaldson}
+{meta: composer Walter Donaldson}
 
 {start_of_verse: Verse 1}
 [G]Sweet Jennie Lee from sunny [D7]Tennessee

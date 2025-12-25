@@ -1,6 +1,6 @@
 {meta: title Jesus Keep Me Near The Cross}
 {meta: artist Jim Reeves}
-{meta: writer Fanny J. Crosby and William H. Doane}
+{meta: composer Fanny J. Crosby and William H. Doane}
 
 {start_of_verse: Verse 1}
 [C]Jesus keep me [F]near the cross  

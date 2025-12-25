@@ -1,6 +1,6 @@
 {meta: title What Was I Supposed To Do}
 {meta: artist Paul Williams and The Victory Trio}
-{meta: writer Sam Humphrey and Paul Williams}
+{meta: composer Sam Humphrey and Paul Williams}
 
 {start_of_verse: Verse 1}
 [G]You were my heart's desire you set the flame of love on fire

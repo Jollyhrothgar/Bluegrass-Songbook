@@ -1,6 +1,6 @@
 {meta: title Bottle Of Tears}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen, Jim Pasquale, Deoin Lay}
+{meta: composer Joe Allen, Jim Pasquale, Deoin Lay}
 
 {start_of_verse: Verse 1}
 [C]Tricks  [F]I've pulled [G7]some good ones [C]in [F]my [F][C]time

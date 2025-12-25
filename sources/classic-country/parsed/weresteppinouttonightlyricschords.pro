@@ -1,6 +1,6 @@
 {meta: title We're Steppin' Out Tonight}
 {meta: artist David Ball}
-{meta: writer Billy Wallace}
+{meta: composer Billy Wallace}
 
 {start_of_verse: Verse 1}
 [C]Get all dolled up in your Sunday best

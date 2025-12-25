@@ -1,6 +1,6 @@
 {meta: title Shelly}
 {meta: artist Roy Drusky}
-{meta: writer Jeff Barry}
+{meta: composer Jeff Barry}
 
 {start_of_verse: Verse 1}
 [C]I still think about my Shelly

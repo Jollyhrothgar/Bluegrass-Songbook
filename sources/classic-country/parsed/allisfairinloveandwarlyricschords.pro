@@ -1,6 +1,6 @@
 {meta: title All Is Fair In Love And War}
 {meta: artist Ronnie Milsap}
-{meta: writer Robert B. Byrne and Tim J. Nichols}
+{meta: composer Robert B. Byrne and Tim J. Nichols}
 
 {start_of_verse: Verse 1}
 [C]Now the first rule is there ain't no rules

@@ -1,6 +1,6 @@
 {meta: title Drinking And Driving}
 {meta: artist Johnny Paycheck}
-{meta: writer Gary Gentry}
+{meta: composer Gary Gentry}
 
 {start_of_verse: Verse 1}
 [G]Five dollars worth of regular three dollars worth of wine

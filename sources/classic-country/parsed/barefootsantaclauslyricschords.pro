@@ -1,6 +1,6 @@
 {meta: title Barefoot Santa Claus}
 {meta: artist Sonny James}
-{meta: writer Robert F. Tubert and Sonny James}
+{meta: composer Robert F. Tubert and Sonny James}
 
 {start_of_verse: Verse 1}
 [G]Barefoot barefoot Santa Claus

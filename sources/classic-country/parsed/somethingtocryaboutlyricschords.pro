@@ -1,6 +1,6 @@
 {meta: title Something To Cry About}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [C]You say your heart is in [G]ruins 

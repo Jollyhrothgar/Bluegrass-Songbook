@@ -1,6 +1,6 @@
 {meta: title Forgive Me}
 {meta: artist Sonny James}
-{meta: writer Milton Ager and Jack Kellen}
+{meta: composer Milton Ager and Jack Kellen}
 
 {start_of_verse: Verse 1}
 [C]Forgive me please [F]forgive [C]me

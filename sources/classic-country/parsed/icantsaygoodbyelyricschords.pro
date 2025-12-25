@@ -1,6 +1,6 @@
 {meta: title I Can't Say Goodbye}
 {meta: artist Marty Robbins}
-{meta: writer Joe Byers and Rink Hardin}
+{meta: composer Joe Byers and Rink Hardin}
 
 {start_of_verse: Verse 1}
 [C]Cause I'm with you again [G7]and I can't say [F]good-bye

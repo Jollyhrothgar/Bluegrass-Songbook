@@ -1,6 +1,6 @@
 {meta: title It's Not Me}
 {meta: artist Stonewall Jackson}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [G]It's not me [D7]that you speak to when you're talking in your [G]sleep

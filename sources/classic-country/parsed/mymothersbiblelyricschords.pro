@@ -1,6 +1,6 @@
 {meta: title My Mother's Bible}
 {meta: artist Don Reno and Bill Harrell}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [G]There's a book that mother left me 

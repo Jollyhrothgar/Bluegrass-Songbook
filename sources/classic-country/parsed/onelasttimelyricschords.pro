@@ -1,6 +1,6 @@
 {meta: title One Last Time}
 {meta: artist Jimmy Dean}
-{meta: writer Gary Oakes}
+{meta: composer Gary Oakes}
 
 {start_of_verse: Verse 1}
 [G]One last time  one last [C]time  let me [G]kiss you 

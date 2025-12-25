@@ -1,6 +1,6 @@
 {meta: title Down And Out}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Frank Dycus}
+{meta: composer Dean Dillon and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [C]Well I'm out on a tear cause she's [F]tearing me [C]apart

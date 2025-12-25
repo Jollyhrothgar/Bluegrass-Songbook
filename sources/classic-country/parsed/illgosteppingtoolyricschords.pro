@@ -1,6 +1,6 @@
 {meta: title I'll Go Stepping Too}
 {meta: artist Emmylou Harris}
-{meta: writer Jerry Organ and Tommy James}
+{meta: composer Jerry Organ and Tommy James}
 
 {start_of_verse: Verse 1}
 [G]Don't think that I'll be hanging around

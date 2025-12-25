@@ -1,6 +1,6 @@
 {meta: title She Ain't Hooked On Me}
 {meta: artist Merle Haggard}
-{meta: writer Toby Keith and Scotty Emerick}
+{meta: composer Toby Keith and Scotty Emerick}
 
 {start_of_verse: Verse 1}
 [C]I gave up on cigarettes to the day I ain't touched one [C7]yet

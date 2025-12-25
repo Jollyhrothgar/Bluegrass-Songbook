@@ -1,6 +1,6 @@
 {meta: title God Is Good}
 {meta: artist Paul Overstreet}
-{meta: writer Paul Overstreet and Don Moen}
+{meta: composer Paul Overstreet and Don Moen}
 
 {start_of_verse: Verse 1}
 [G7]God is [C]good all the [Am]time 

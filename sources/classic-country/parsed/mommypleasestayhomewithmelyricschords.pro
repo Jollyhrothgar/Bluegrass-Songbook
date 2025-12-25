@@ -1,6 +1,6 @@
 {meta: title Mommy Please Stay Home With Me}
 {meta: artist Eddy Arnold}
-{meta: writer Eddy Arnold, Wally Fowler &amp; J. Graydon Hall}
+{meta: composer Eddy Arnold, Wally Fowler &amp; J. Graydon Hall}
 
 {start_of_verse: Verse 1}
 [C]A mother went out on [F]a [C]party

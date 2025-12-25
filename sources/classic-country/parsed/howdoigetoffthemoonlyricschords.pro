@@ -1,6 +1,6 @@
 {meta: title How Do I Get Off The Moon}
 {meta: artist Doug Stone}
-{meta: writer Donny Kees, Randy Boudreaux, Kerry Phillips}
+{meta: composer Donny Kees, Randy Boudreaux, Kerry Phillips}
 
 {start_of_verse: Verse 1}
 [G]We took [Em]off like a rocket [G]ship

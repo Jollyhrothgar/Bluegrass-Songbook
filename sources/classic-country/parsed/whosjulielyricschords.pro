@@ -1,6 +1,6 @@
 {meta: title Who's Julie}
 {meta: artist Mel Tillis}
-{meta: writer Wayne C. Thompson}
+{meta: composer Wayne C. Thompson}
 
 {start_of_verse: Verse 1}
 [G7]Cross the [C]table over coffee just this [F]morning

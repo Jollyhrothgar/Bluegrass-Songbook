@@ -1,6 +1,6 @@
 {meta: title Is It Over}
 {meta: artist Ronnie Milsap}
-{meta: writer Charles W. Quillen and Michael Barry Reid}
+{meta: composer Charles W. Quillen and Michael Barry Reid}
 
 {start_of_verse: Verse 1}
 [C]Is it over are [Am]really over him

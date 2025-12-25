@@ -1,6 +1,6 @@
 {meta: title My Love}
 {meta: artist Sonny James}
-{meta: writer Tony Hatch}
+{meta: composer Tony Hatch}
 
 {start_of_verse: Verse 1}
 [C]My love is warmer [F]than the warmest sunshine softer [G7]than a [C]sigh

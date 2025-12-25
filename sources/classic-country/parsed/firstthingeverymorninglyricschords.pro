@@ -1,6 +1,6 @@
 {meta: title First Thing Every Morning}
 {meta: artist Jimmy Dean}
-{meta: writer Ruth Roberts and Jimmy Dean}
+{meta: composer Ruth Roberts and Jimmy Dean}
 
 {start_of_verse: Verse 1}
 [G7]The  [C]first th-ing every [E7]morn-ing 

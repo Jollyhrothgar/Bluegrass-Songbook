@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Moon}
 {meta: artist Leona Williams}
-{meta: writer Pat Gallagher and Rosie Flores}
+{meta: composer Pat Gallagher and Rosie Flores}
 
 {start_of_verse: Verse 1}
 [C]I came here a [E7]little bit [Am]lonel[C]y

@@ -1,6 +1,6 @@
 {meta: title Fifteen Hugs Past Midnight}
 {meta: artist Billy Walker}
-{meta: writer Ray Price and Billy Walker}
+{meta: composer Ray Price and Billy Walker}
 
 {start_of_verse: Verse 1}
 [C]Its fifteen hugs past [D7]midnight [G7]20 kisses till [C]one

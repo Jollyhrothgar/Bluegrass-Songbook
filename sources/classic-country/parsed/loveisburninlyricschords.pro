@@ -1,6 +1,6 @@
 {meta: title Love Is Burnin'}
 {meta: artist Brenda Lee}
-{meta: writer Donny Kees and Frank Myers}
+{meta: composer Donny Kees and Frank Myers}
 
 {start_of_verse: Verse 1}
 [C]Well the morning that I met you baby I could feel the heat

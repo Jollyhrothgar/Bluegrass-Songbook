@@ -1,6 +1,6 @@
 {meta: title Franklin County Moonshine}
 {meta: artist Jean Sheppard}
-{meta: writer Betty Amos}
+{meta: composer Betty Amos}
 
 {start_of_verse: Verse 1}
 [G]Franklin County moonshine is [C]all you care [G]about

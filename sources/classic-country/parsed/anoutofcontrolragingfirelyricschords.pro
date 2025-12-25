@@ -1,6 +1,6 @@
 {meta: title An Out Of Control Raging Fire}
 {meta: artist Tracy Byrd}
-{meta: writer Melba Montgomery and Kostas Lazarides}
+{meta: composer Melba Montgomery and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [C]Today an old [F]heartache came [C]calling[G7]

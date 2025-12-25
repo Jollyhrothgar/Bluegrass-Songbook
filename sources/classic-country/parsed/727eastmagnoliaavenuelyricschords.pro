@@ -1,6 +1,6 @@
 {meta: title 727 East Magnolia Avenue}
 {meta: artist Kenny Rogers}
-{meta: writer Steven Jones and Bobby Tomberlin}
+{meta: composer Steven Jones and Bobby Tomberlin}
 
 {start_of_verse: Verse 1}
 [G]You [C]won't [G]believe where I [Am]was today

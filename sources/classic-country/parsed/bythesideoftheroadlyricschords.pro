@@ -1,6 +1,6 @@
 {meta: title By The Side Of The Road}
 {meta: artist Doyle Lawson}
-{meta: writer Roscoe S. Reed}
+{meta: composer Roscoe S. Reed}
 
 {start_of_verse: Verse 1}
 [G]I've been traveling for Jesus the [C]most of my [G]life

@@ -1,6 +1,6 @@
 {meta: title True Love's a Blessing}
 {meta: artist Sonny James}
-{meta: writer Carol Smith and Sonny James}
+{meta: composer Carol Smith and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]True love's a blessing  true love's a wonderful [F]blessing

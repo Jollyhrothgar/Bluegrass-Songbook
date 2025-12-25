@@ -1,6 +1,6 @@
 {meta: title Don’t Believe My Heart Can Stand Another You}
 {meta: artist Tanya Tucker}
-{meta: writer Billy Ray Reynolds}
+{meta: composer Billy Ray Reynolds}
 
 {start_of_verse: Verse 1}
 [C]Don't believe my heart can stand another you

@@ -1,6 +1,6 @@
 {meta: title Send Me No Roses}
 {meta: artist Tammy Wynette}
-{meta: writer Hank Mills}
+{meta: composer Hank Mills}
 
 {start_of_verse: Verse 1}
 [G]Send me [C]no ros[G]es [C]please no more ros[G]es

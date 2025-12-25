@@ -1,6 +1,6 @@
 {meta: title Here We Are}
 {meta: artist Emmylou Harris}
-{meta: writer Rodney Crowell}
+{meta: composer Rodney Crowell}
 
 {start_of_verse: Verse 1}
 [G]Did you say that you've been searching for a place you've never been

@@ -1,6 +1,6 @@
 {meta: title A Woman In Love}
 {meta: artist Norma Jean}
-{meta: writer Charles Anderson}
+{meta: composer Charles Anderson}
 
 {start_of_verse: Verse 1}
 [C]A little bit of tenderness a [D7]little bit of lovin' care

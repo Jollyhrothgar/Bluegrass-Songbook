@@ -1,6 +1,6 @@
 {meta: title She}
 {meta: artist Billy Walker}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]She cooks my breakfast every [G]morning

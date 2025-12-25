@@ -1,6 +1,6 @@
 {meta: title Don't Give Your Heart To A Rambler}
 {meta: artist J.D. Crowe & the New South}
-{meta: writer Jimmie Skinner}
+{meta: composer Jimmie Skinner}
 
 {start_of_verse: Verse 1}
 [G]Don't fall in love with me darling I'm a [C]rambler

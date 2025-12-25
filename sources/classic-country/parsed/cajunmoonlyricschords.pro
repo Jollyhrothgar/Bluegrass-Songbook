@@ -1,6 +1,6 @@
 {meta: title Cajun Moon}
 {meta: artist Ricky Skaggs}
-{meta: writer Jim Rushing}
+{meta: composer Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]The moon is full and my heart is high

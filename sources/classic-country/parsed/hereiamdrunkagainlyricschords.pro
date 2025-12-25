@@ -1,6 +1,6 @@
 {meta: title Here I Am Drunk Again}
 {meta: artist Moe Bandy}
-{meta: writer Robert Warden and Clyde Beavers}
+{meta: composer Robert Warden and Clyde Beavers}
 
 {start_of_verse: Verse 1}
 [G]I said I'd [C]never do it [G]again

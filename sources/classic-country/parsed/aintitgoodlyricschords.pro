@@ -1,6 +1,6 @@
 {meta: title Ain't It Good}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino and Dave Bartholomew}
+{meta: composer Antonio Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [C]It's been a long time [F]since I held you in my [C]arms

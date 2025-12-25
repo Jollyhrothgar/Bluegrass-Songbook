@@ -1,6 +1,6 @@
 {meta: title He Spoke Not A Word}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Johnny Masters}
+{meta: composer Johnny Masters}
 
 {start_of_verse: Verse 1}
 [G]Like a sheep He was led to the [D7]slaughter

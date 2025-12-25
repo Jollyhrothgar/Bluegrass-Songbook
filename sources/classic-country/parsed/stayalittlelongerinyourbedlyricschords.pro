@@ -1,6 +1,6 @@
 {meta: title Stay A Little Longer In Your Bed}
 {meta: artist Billy Crash Craddock}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [C]If I could step back into time for just a [Em]moment

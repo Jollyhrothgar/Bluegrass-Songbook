@@ -1,6 +1,6 @@
 {meta: title Did You Stop To Pray This Morning}
 {meta: artist Mac Wiseman}
-{meta: writer Ray Westmoreland, Mark Hurley, Fred Dexter}
+{meta: composer Ray Westmoreland, Mark Hurley, Fred Dexter}
 
 {start_of_verse: Verse 1}
 [C]Did you stop to [F]pray this [C]morning

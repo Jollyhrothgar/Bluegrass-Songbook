@@ -1,6 +1,6 @@
 {meta: title Love Is Strange}
 {meta: artist Buddy Holly}
-{meta: writer Ethel Smith and Mickey Baker}
+{meta: composer Ethel Smith and Mickey Baker}
 
 {start_of_verse: Verse 1}
 Love hmhmm  love is strange hmhmm

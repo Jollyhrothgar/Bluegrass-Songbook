@@ -1,6 +1,6 @@
 {meta: title An Empty Cup A Broken Date}
 {meta: artist Buddy Holly}
-{meta: writer Norman Petty and Roy Orbison}
+{meta: composer Norman Petty and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [G7]One lonely [C]night (one lonely [F]night) 

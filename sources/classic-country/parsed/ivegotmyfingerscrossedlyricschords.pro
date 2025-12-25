@@ -1,6 +1,6 @@
 {meta: title I've Got My Fingers Crossed}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and George McCormick}
+{meta: composer Wayne P. Walker and George McCormick}
 
 {start_of_verse: Verse 1}
 [C]I've got my [Em]fingers crossed [F]I pray our love isn't [C]lost

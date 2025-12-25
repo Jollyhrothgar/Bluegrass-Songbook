@@ -1,6 +1,6 @@
 {meta: title You Can't Wynn Stewart}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart and William Miller}
+{meta: composer Wynn Stewart and William Miller}
 
 {start_of_verse: Verse 1}
 [G]She's all mine she don't belong to [C]you

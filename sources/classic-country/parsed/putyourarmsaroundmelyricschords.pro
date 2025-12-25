@@ -1,6 +1,6 @@
 {meta: title Put Your Arms Around Me}
 {meta: artist Hank Snow}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Put your arms around me [G7]    [C]

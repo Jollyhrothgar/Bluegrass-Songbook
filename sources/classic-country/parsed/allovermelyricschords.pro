@@ -1,6 +1,6 @@
 {meta: title All Over Me}
 {meta: artist Charlie Rich}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]My lips  brush across  your [C7]skin in my mind

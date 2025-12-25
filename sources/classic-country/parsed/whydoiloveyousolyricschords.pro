@@ -1,6 +1,6 @@
 {meta: title Why Do I Love You So}
 {meta: artist Johnny Tillotson}
-{meta: writer Clifford Rhodes}
+{meta: composer Clifford Rhodes}
 
 {start_of_verse: Verse 1}
 [G]Ooo ooo ooo ooo [Em]ooo  [C]ooo ooo ooo ooo [D7]ooo

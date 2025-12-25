@@ -1,6 +1,6 @@
 {meta: title Somebody Else's Heartache}
 {meta: artist Sonny James}
-{meta: writer Jimmy H. Loden}
+{meta: composer Jimmy H. Loden}
 
 {start_of_verse: Verse 1}
 [C]You’re somebody else’s heartache but I [G7]wanna call you mine

@@ -1,6 +1,6 @@
 {meta: title I Saved Your Place}
 {meta: artist Gene Watson}
-{meta: writer Steve Spurgin}
+{meta: composer Steve Spurgin}
 
 {start_of_verse: Verse 1}
 [C]Each night I fluff your pillow [G7]up beside [C]me

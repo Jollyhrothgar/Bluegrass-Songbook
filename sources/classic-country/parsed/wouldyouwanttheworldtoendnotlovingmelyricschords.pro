@@ -1,6 +1,6 @@
 {meta: title Would You Want The World To End Not Loving Me chords}
 {meta: artist Wynn Stewart}
-{meta: writer Ronal McCown and Wynn Stewart}
+{meta: composer Ronal McCown and Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [G]All the angry words we've spoken to each [C]other

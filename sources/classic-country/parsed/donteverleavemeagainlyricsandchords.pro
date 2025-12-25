@@ -1,6 +1,6 @@
 {meta: title Don't Ever Leave Me Again}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [G]I searched high and low all the [C]places you [G]go

@@ -1,6 +1,6 @@
 {meta: title Pancho and Lefty}
 {meta: artist Willie Nelson and Merle Haggard}
-{meta: writer Townes Van Zandt}
+{meta: composer Townes Van Zandt}
 
 {start_of_verse: Verse 1}
 [C]Living on the road my friend

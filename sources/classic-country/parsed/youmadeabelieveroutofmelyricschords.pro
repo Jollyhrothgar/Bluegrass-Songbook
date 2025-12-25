@@ -1,6 +1,6 @@
 {meta: title You Made A Believer Out Of Me}
 {meta: artist Bobby Bare}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]Lovers [D7]   [C]  yes I guess I've [G]had a few [D7]    [C]

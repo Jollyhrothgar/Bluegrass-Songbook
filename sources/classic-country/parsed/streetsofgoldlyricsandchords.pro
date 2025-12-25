@@ -1,6 +1,6 @@
 {meta: title Streets Of Gold}
 {meta: artist Ronnie Milsap}
-{meta: writer Jim Lunsford}
+{meta: composer Jim Lunsford}
 
 {start_of_verse: Verse 1}
 [C]I'm a western North Carolinian [F]made of [C]stone [G7]and red clay [C]soil

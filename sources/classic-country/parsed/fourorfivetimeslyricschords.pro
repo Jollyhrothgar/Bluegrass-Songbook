@@ -1,6 +1,6 @@
 {meta: title Four Or Five Times}
 {meta: artist Bob Wills}
-{meta: writer Byron Gay and Marco H. Hellman}
+{meta: composer Byron Gay and Marco H. Hellman}
 
 {start_of_verse: Verse 1}
 [C]Ah four five times (ah four five times)

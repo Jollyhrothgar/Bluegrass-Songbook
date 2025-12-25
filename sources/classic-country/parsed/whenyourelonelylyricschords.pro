@@ -1,6 +1,6 @@
 {meta: title When You're Lonely}
 {meta: artist Ricky Skaggs}
-{meta: writer Lester Flatt and Bill Monroe}
+{meta: composer Lester Flatt and Bill Monroe}
 
 {start_of_verse: Verse 1}
 [G]Oh I'm thinking of you little darling

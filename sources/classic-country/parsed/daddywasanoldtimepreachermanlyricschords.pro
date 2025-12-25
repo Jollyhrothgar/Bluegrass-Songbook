@@ -1,6 +1,6 @@
 {meta: title Daddy Was An Old Time Preacher Man}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton and Dorothy Jo Hope}
+{meta: composer Dolly Parton and Dorothy Jo Hope}
 
 {start_of_verse: Verse 1}
 [G]Daddy was an [D7]old time preacher [G]man

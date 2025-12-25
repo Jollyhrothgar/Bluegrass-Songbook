@@ -1,6 +1,6 @@
 {meta: title Pull My String and Wind Me Up}
 {meta: artist Carl Smith}
-{meta: writer Jim White}
+{meta: composer Jim White}
 
 {start_of_verse: Verse 1}
 [C]Like a puppet in your hands 

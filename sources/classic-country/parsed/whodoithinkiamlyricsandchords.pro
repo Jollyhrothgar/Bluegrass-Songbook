@@ -1,6 +1,6 @@
 {meta: title Who Do I Think I Am}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce, Max Powell, Jerry Lane}
+{meta: composer Webb Pierce, Max Powell, Jerry Lane}
 
 {start_of_verse: Verse 1}
 [F]W-ho do I [G7]th-ink I [C]am

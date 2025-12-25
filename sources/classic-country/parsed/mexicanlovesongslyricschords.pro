@@ -1,6 +1,6 @@
 {meta: title Mexican Love Songs}
 {meta: artist Linda Hargrove}
-{meta: writer Linda Hargrove and Pete Drake}
+{meta: composer Linda Hargrove and Pete Drake}
 
 {start_of_verse: Verse 1}
 [C]One night down in San [G7]Antone

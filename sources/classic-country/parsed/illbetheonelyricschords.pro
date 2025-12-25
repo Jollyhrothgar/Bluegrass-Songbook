@@ -1,6 +1,6 @@
 {meta: title I'll Be The One}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid, Harold Reid, Debo Reid}
+{meta: composer Don Reid, Harold Reid, Debo Reid}
 
 {start_of_verse: Verse 1}
 [C]I'll be the one the one [E7]standing in the [Am]shadows

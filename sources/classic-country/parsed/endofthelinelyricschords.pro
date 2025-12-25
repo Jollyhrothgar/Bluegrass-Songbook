@@ -1,6 +1,6 @@
 {meta: title End of the Line}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills, Johnny Gimble}
+{meta: composer Bob Wills, Johnny Gimble}
 
 {start_of_verse: Verse 1}
 [C]True love it has been until now dear

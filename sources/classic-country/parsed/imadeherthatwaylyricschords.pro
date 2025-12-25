@@ -1,6 +1,6 @@
 {meta: title I Made Her That Way}
 {meta: artist George Jones}
-{meta: writer George Jones and Dale Ward}
+{meta: composer George Jones and Dale Ward}
 
 {start_of_verse: Verse 1}
 [G]See that girl over [D7]there by the [G]jukebox

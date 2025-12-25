@@ -1,6 +1,6 @@
 {meta: title Castle Of Shame}
 {meta: artist Jean Shepard}
-{meta: writer Dexter Shaffer and William Ellis}
+{meta: composer Dexter Shaffer and William Ellis}
 
 {start_of_verse: Verse 1}
 [C]Our home is becoming a [G7]castle of [C]shame

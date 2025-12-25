@@ -1,6 +1,6 @@
 {meta: title I'm In Love With You}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert and Sonny James}
+{meta: composer Bob Tubert and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]I'm in love  [Am]with  [Dm]you  in [C][G7]love with all [Am]my [G7]heart

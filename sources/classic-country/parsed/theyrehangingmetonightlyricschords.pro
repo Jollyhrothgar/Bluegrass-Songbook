@@ -1,6 +1,6 @@
 {meta: title They're Hanging Me Tonight}
 {meta: artist Marty Robbins}
-{meta: writer Jimmy Lowe and Art Wolpert}
+{meta: composer Jimmy Lowe and Art Wolpert}
 
 {start_of_verse: Verse 1}
 [C]When I hear the rain a coming [Am]down

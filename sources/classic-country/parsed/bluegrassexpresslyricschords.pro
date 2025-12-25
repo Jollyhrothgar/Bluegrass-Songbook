@@ -1,6 +1,6 @@
 {meta: title Bluegrass Express}
 {meta: artist Rhonda Vincent}
-{meta: writer Bobby Osborne}
+{meta: composer Bobby Osborne}
 
 {start_of_verse: Verse 1}
 [C]Ridin' the Bluegrass Express

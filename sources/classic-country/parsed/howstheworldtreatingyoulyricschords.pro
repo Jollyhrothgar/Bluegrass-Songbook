@@ -1,6 +1,6 @@
 {meta: title How's the World Treating You}
 {meta: artist Louvin Brothers}
-{meta: writer Boudleaux Bryant and Chet Atkins}
+{meta: composer Boudleaux Bryant and Chet Atkins}
 
 {start_of_verse: Verse 1}
 [C]I've had nothing but sorrow 

@@ -1,6 +1,6 @@
 {meta: title Tragedy}
 {meta: artist Johnny Tillotson}
-{meta: writer Fred Burch and Gerald Nelson}
+{meta: composer Fred Burch and Gerald Nelson}
 
 {start_of_verse: Verse 1}
 [C]Wind and storm [F]blocks the sun

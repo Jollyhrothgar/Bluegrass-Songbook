@@ -1,6 +1,6 @@
 {meta: title A Better Time To Say Goodbye}
 {meta: artist Vern Gosdin}
-{meta: writer Dean Dillon, Buddy Cannon, Vern Gosdin}
+{meta: composer Dean Dillon, Buddy Cannon, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]Clouds in the sky never looked so [G7]gray

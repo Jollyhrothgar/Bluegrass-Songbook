@@ -1,6 +1,6 @@
 {meta: title Darling Am I The One}
 {meta: artist Carl Smith}
-{meta: writer Floyd Wilson}
+{meta: composer Floyd Wilson}
 
 {start_of_verse: Verse 1}
 [C]Am I the one who'll always hold you

@@ -1,6 +1,6 @@
 {meta: title Cowboys And Playboys}
 {meta: artist Moe Bandy}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]I came down from Detroit in my new Cadillac love [G7]coupe

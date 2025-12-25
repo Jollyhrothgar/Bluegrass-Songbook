@@ -1,6 +1,6 @@
 {meta: title When I Get To The End Of The Way}
 {meta: artist Granpa Jones}
-{meta: writer Charles D. Tillman}
+{meta: composer Charles D. Tillman}
 
 {start_of_verse: Verse 1}
 [C]The sands have been washed in the [F]footprints

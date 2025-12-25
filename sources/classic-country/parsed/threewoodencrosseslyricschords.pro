@@ -1,6 +1,6 @@
 {meta: title Three Wooden Crosses}
 {meta: artist Randy Travis}
-{meta: writer Kim Williams and Doug Johnson}
+{meta: composer Kim Williams and Doug Johnson}
 
 {start_of_verse: Verse 1}
 [C]A farmer and a teacher a [Am]hooker and a preacher

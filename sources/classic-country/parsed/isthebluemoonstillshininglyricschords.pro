@@ -1,6 +1,6 @@
 {meta: title Is The Blue Moon Still Shining}
 {meta: artist Bill Monroe}
-{meta: writer Melissa Kathleen Monroe}
+{meta: composer Melissa Kathleen Monroe}
 
 {start_of_verse: Verse 1}
 [C]Is the blue moon still [F]shinin'

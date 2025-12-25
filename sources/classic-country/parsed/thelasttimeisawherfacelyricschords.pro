@@ -1,6 +1,6 @@
 {meta: title The Last Time I Saw Her Face}
 {meta: artist Glen Campbell}
-{meta: writer Gordon Lightfoot}
+{meta: composer Gordon Lightfoot}
 
 {start_of_verse: Verse 1}
 [C]The last time I saw her [Dm]face

@@ -1,6 +1,6 @@
 {meta: title When There's No One Around}
 {meta: artist Garth Brooks}
-{meta: writer Tim O'Brien and Darrell Scott}
+{meta: composer Tim O'Brien and Darrell Scott}
 
 {start_of_verse: Verse 1}
 [G]This is a song that nobody knows 

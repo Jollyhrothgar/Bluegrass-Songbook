@@ -1,6 +1,6 @@
 {meta: title Dirty Old Egg Sucking Dog}
 {meta: artist Johnny Cash}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [G]Well he's not very [E7]handsome to look [A7]at  

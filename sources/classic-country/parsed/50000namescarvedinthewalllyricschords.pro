@@ -1,6 +1,6 @@
 {meta: title 50,000 Names Carved In The Wall}
 {meta: artist George Jones}
-{meta: writer Jamie O'Hara}
+{meta: composer Jamie O'Hara}
 
 {start_of_verse: Verse 1}
 [G]There's teddy bears and high school rings

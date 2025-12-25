@@ -1,6 +1,6 @@
 {meta: title Four Walls}
 {meta: artist Jim Reeves}
-{meta: writer George Campbell and Marvin Moore}
+{meta: composer George Campbell and Marvin Moore}
 
 {start_of_verse: Verse 1}
 [G]Out where the bright lights are [Am]glowing

@@ -1,6 +1,6 @@
 {meta: title Even A Fool Would Let Go}
 {meta: artist John Anderson}
-{meta: writer Kerry Chater and Tom Snow}
+{meta: composer Kerry Chater and Tom Snow}
 
 {start_of_verse: Verse 1}
 Even A Fool Would Let Go

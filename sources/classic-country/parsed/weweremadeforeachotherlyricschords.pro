@@ -1,6 +1,6 @@
 {meta: title We Were Made For Each Other}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]We were made for each [C]other 

@@ -1,6 +1,6 @@
 {meta: title On The Sea Of Galilee}
 {meta: artist Emmylou Harris}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]Am I a soldier of the [F]cross

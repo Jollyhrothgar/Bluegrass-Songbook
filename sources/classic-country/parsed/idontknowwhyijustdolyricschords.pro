@@ -1,6 +1,6 @@
 {meta: title I Don’t Know Why I Just Do}
 {meta: artist Marty Robbins}
-{meta: writer Roy Turk and Fred Ahlert}
+{meta: composer Roy Turk and Fred Ahlert}
 
 {start_of_verse: Verse 1}
 [C]I don't know why [Am]I love you like I do[Em]

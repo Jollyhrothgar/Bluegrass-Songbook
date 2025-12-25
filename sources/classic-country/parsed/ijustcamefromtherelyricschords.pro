@@ -1,6 +1,6 @@
 {meta: title I Just Came From There}
 {meta: artist Jim Ed Brown}
-{meta: writer Melvin Endsley}
+{meta: composer Melvin Endsley}
 
 {start_of_verse: Verse 1}
 [G]There’s heartaches like [C]you've never [G]known

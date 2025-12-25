@@ -1,6 +1,6 @@
 {meta: title I Got A Hole In My Pirogue}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Horton and Tillman Franks}
+{meta: composer Johnny Horton and Tillman Franks}
 
 {start_of_verse: Verse 1}
 [C]Well I went outta fishin' to [G7]make a little [C]mon

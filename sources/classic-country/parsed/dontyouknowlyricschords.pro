@@ -1,6 +1,6 @@
 {meta: title Don't You Know}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Antoine Domino}
+{meta: composer Dave Bartholomew and Antoine Domino}
 
 {start_of_verse: Verse 1}
 [G]You were right I was wrong

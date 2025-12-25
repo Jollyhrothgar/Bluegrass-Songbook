@@ -1,6 +1,6 @@
 {meta: title You're Wanting Me To Stop Loving You}
 {meta: artist Charley Pride}
-{meta: writer Al Urban}
+{meta: composer Al Urban}
 
 {start_of_verse: Verse 1}
 [C]I have done everything [F]I can to please [C]you

@@ -1,6 +1,6 @@
 {meta: title The Great Judgment Morning}
 {meta: artist Hank Williams}
-{meta: writer Leander L. Pickett}
+{meta: composer Leander L. Pickett}
 
 {start_of_verse: Verse 1}
 [C]I dreamed that the great judgment [F]morning 

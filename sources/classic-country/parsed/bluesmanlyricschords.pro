@@ -1,6 +1,6 @@
 {meta: title Blues Man}
 {meta: artist Mel Tillis}
-{meta: writer Joe Smart}
+{meta: composer Joe Smart}
 
 {start_of_verse: Verse 1}
 [C]With a copy of the Myth commercial appeal

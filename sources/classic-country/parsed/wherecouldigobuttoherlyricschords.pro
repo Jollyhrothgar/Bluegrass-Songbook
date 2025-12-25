@@ -1,6 +1,6 @@
 {meta: title Where Could I Go (But To Her)}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Why will a [G7]man go out and [C]cheat

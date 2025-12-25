@@ -1,6 +1,6 @@
 {meta: title What I Don't Know}
 {meta: artist Johnny Duncan}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C](What I don't [G7]know won't [C]hurt me)

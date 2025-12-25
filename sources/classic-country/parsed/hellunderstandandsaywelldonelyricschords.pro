@@ -1,6 +1,6 @@
 {meta: title He'll Understand and Say Well Done}
 {meta: artist Johnny Cash}
-{meta: writer Roger Wilson}
+{meta: composer Roger Wilson}
 
 {start_of_verse: Verse 1}
 [D7]Give when you give him best of your [G]service 

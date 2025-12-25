@@ -1,6 +1,6 @@
 {meta: title Is Anything Too Hard For God}
 {meta: artist The Whisnants}
-{meta: writer Marcia B. Henry and Niles Borop}
+{meta: composer Marcia B. Henry and Niles Borop}
 
 {start_of_verse: Verse 1}
 [G7]It's [C]out of your hands you've [F]done all you [C]can do

@@ -1,6 +1,6 @@
 {meta: title We Missed You}
 {meta: artist Doyle Lawson}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]The nights were [D7]never so [G]lonely  

@@ -1,6 +1,6 @@
 {meta: title God Sent An Angel}
 {meta: artist Doyle Lawson}
-{meta: writer Doyle Lawson, Leroy Drumm, Pete Goble}
+{meta: composer Doyle Lawson, Leroy Drumm, Pete Goble}
 
 {start_of_verse: Verse 1}
 [C]I was troubled in my mind and had [C7]reached my darkest time 

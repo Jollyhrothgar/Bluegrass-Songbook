@@ -1,6 +1,6 @@
 {meta: title Shame On You Shame On Me}
 {meta: artist Mel Tillis}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]Another lie and we’re lying here [F]together

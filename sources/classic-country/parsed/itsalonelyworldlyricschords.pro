@@ -1,6 +1,6 @@
 {meta: title It's A Lonely World}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb and Redd Stewart}
+{meta: composer Ernest Tubb and Redd Stewart}
 
 {start_of_verse: Verse 1}
 [C]It's a lonely world when you're all [F]alone

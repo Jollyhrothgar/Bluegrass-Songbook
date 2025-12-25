@@ -1,6 +1,6 @@
 {meta: title Blue Heartaches}
 {meta: artist Connie Smith}
-{meta: writer Connie June Smith and Marty John Stuart}
+{meta: composer Connie June Smith and Marty John Stuart}
 
 {start_of_verse: Verse 1}
 [C]I never knew a [G7]heart could break in so many [C]pieces

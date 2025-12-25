@@ -1,6 +1,6 @@
 {meta: title Lover Doll}
 {meta: artist Elvis Presley}
-{meta: writer Sid Wayne and Abner Silver}
+{meta: composer Sid Wayne and Abner Silver}
 
 {start_of_verse: Verse 1}
 [C]Lover [Am]doll  [C]lover [Am]doll

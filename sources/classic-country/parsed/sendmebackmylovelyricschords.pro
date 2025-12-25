@@ -1,6 +1,6 @@
 {meta: title Send Me Back My Love}
 {meta: artist Jim Reeves}
-{meta: writer Leo Jackson}
+{meta: composer Leo Jackson}
 
 {start_of_verse: Verse 1}
 [C]You say to send your letters back 

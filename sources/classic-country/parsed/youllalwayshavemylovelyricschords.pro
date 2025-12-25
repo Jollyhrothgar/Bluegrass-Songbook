@@ -1,6 +1,6 @@
 {meta: title You'll Always Have My Love}
 {meta: artist Wanda Jackson}
-{meta: writer Yvonne Devaney}
+{meta: composer Yvonne Devaney}
 
 {start_of_verse: Verse 1}
 [C]I'll be right I'll be [F]wrong I'll be [G7]weak I'll be [C]strong

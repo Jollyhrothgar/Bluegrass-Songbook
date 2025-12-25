@@ -1,6 +1,6 @@
 {meta: title Mr. Santa}
 {meta: artist Suzy Bogguss}
-{meta: writer Pat Ballard}
+{meta: composer Pat Ballard}
 
 {start_of_verse: Verse 1}
 [C]Mr. Santa [F]bring me some [E7]toys

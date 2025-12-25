@@ -1,6 +1,6 @@
 {meta: title Waitin' Down The Road}
 {meta: artist Don Gibson}
-{meta: writer E.C. McCarthy}
+{meta: composer E.C. McCarthy}
 
 {start_of_verse: Verse 1}
 [C]Dear this lonely heart of mine is [F]skipping beats of time

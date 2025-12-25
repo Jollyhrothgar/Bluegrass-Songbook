@@ -1,6 +1,6 @@
 {meta: title If You Touch Me}
 {meta: artist Tanya Tucker}
-{meta: writer Norro Wilson, Carmol Taylor, Joe Stampley}
+{meta: composer Norro Wilson, Carmol Taylor, Joe Stampley}
 
 {start_of_verse: Verse 1}
 [G]Well I packed his bags I kicked him out we were havin' bad times

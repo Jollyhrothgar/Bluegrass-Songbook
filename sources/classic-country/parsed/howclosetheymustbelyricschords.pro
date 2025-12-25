@@ -1,6 +1,6 @@
 {meta: title How Close They Must Be}
 {meta: artist Porter Wagoner}
-{meta: writer Porter Wagoner}
+{meta: composer Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]On a park [G7]bench one sunny after[C]noon 

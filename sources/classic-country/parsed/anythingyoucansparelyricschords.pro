@@ -1,6 +1,6 @@
 {meta: title Anything You Can Spare}
 {meta: artist Lefty Frizzel}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]If you have any [A7]left-over [D7]kisses 

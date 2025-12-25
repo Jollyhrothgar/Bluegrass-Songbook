@@ -1,6 +1,6 @@
 {meta: title Brother Jukebox}
 {meta: artist Vernon Oxford}
-{meta: writer Paul Craft}
+{meta: composer Paul Craft}
 
 {start_of_verse: Verse 1}
 [G7]Brother [C]jukebox [F]sister [C]wine

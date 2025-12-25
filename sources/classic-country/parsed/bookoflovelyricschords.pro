@@ -1,6 +1,6 @@
 {meta: title Book Of Love}
 {meta: artist Bobby Bare}
-{meta: writer Bobby Bare and Lance Guyness}
+{meta: composer Bobby Bare and Lance Guyness}
 
 {start_of_verse: Verse 1}
 [C]They say for every [F]boy there's a [C]girl

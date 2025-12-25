@@ -1,6 +1,6 @@
 {meta: title Give Her My Best}
 {meta: artist Gene Watson}
-{meta: writer Debbie Hullett}
+{meta: composer Debbie Hullett}
 
 {start_of_verse: Verse 1}
 [C]Exclusive invitations were sent to those endear

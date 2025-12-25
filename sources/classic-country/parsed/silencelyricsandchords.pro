@@ -1,6 +1,6 @@
 {meta: title Silence}
 {meta: artist Charlie Pride}
-{meta: writer Leon Ashley and Margie Singleton}
+{meta: composer Leon Ashley and Margie Singleton}
 
 {start_of_verse: Verse 1}
 [C]Silence is four walls that hold no [G7]laughter

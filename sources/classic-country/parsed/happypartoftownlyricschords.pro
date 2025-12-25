@@ -1,6 +1,6 @@
 {meta: title Happy Part Of Town}
 {meta: artist Wynn Stewart}
-{meta: writer Danny Dill}
+{meta: composer Danny Dill}
 
 {start_of_verse: Verse 1}
 [C]Well which way is it can I get there from [C7]here

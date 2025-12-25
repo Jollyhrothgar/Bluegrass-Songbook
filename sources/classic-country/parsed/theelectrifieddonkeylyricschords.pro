@@ -1,6 +1,6 @@
 {meta: title The Electrified Donkey}
 {meta: artist Johnny Horton}
-{meta: writer Chris Eaton and Ferlin Husky}
+{meta: composer Chris Eaton and Ferlin Husky}
 
 {start_of_verse: Verse 1}
 [C]Well I bought me a donkey about four foot tall

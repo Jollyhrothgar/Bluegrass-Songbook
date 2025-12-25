@@ -1,6 +1,6 @@
 {meta: title The Man And Me And You}
 {meta: artist Gene Watson}
-{meta: writer Jeff Bates &amp; Kenny Beard}
+{meta: composer Jeff Bates &amp; Kenny Beard}
 
 {start_of_verse: Verse 1}
 [C]Wake up darling I've gotta [G7]go 

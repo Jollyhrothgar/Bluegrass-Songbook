@@ -1,6 +1,6 @@
 {meta: title One More Payment}
 {meta: artist Clint Black}
-{meta: writer Clint Black, Hayden Nicholas, Shake Russell}
+{meta: composer Clint Black, Hayden Nicholas, Shake Russell}
 
 {start_of_verse: Verse 1}
 [C]Ain't that the way the luck goes 

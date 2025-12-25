@@ -1,6 +1,6 @@
 {meta: title How Much I Must Have Loved You}
 {meta: artist Faron Young}
-{meta: writer Danny Dill}
+{meta: composer Danny Dill}
 
 {start_of_verse: Verse 1}
 [C]How much I must have loved you once upon a [F]time

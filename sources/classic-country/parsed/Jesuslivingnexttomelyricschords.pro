@@ -1,6 +1,6 @@
 {meta: title Jesus Living Next To Me}
 {meta: artist Statler Brothers}
-{meta: writer Langdon Reid}
+{meta: composer Langdon Reid}
 
 {start_of_verse: Verse 1}
 [G]I will [D7]live [G]all my life in this [C]small house in [D7]every likeli[G]hood 

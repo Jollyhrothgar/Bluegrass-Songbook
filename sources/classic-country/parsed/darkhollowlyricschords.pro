@@ -1,6 +1,6 @@
 {meta: title Dark Hollow}
 {meta: artist Mac Wiseman}
-{meta: writer Bill Browning}
+{meta: composer Bill Browning}
 
 {start_of_verse: Verse 1}
 [C]I'd rather be in [G7]some dark [C]hollow

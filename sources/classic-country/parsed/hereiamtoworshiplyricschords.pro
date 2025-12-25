@@ -1,6 +1,6 @@
 {meta: title Here I Am To Worship}
 {meta: artist Randy Travis}
-{meta: writer Tim Hughes}
+{meta: composer Tim Hughes}
 
 {start_of_verse: Verse 1}
 [G]Light of the [D7]world You stepped [Am]down into darkness

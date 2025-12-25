@@ -1,6 +1,6 @@
 {meta: title Loves Been Good To Me}
 {meta: artist Tom T. Hall}
-{meta: writer Rod Mckuen}
+{meta: composer Rod Mckuen}
 
 {start_of_verse: Verse 1}
 [G]I have been a [Am]rover  [D7]I have walked [G]alone

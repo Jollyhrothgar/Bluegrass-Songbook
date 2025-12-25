@@ -1,6 +1,6 @@
 {meta: title Homecoming Christmas}
 {meta: artist Alabama}
-{meta: writer Ronnie Rogers}
+{meta: composer Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [C]A glowing fire and falling snow they [Em]spark a memory

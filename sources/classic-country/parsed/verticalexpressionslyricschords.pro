@@ -1,6 +1,6 @@
 {meta: title Vertical Expressions}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G7]When she [C]asked me to dance I said no no I have two left [G7]feet

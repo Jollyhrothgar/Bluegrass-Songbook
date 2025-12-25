@@ -1,6 +1,6 @@
 {meta: title Blue Days Black Nights}
 {meta: artist Buddy Holly}
-{meta: writer Ben Hall}
+{meta: composer Ben Hall}
 
 {start_of_verse: Verse 1}
 [G]Blue days black [D7]nights

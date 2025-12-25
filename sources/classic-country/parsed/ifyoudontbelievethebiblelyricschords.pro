@@ -1,6 +1,6 @@
 {meta: title If You Don't Believe The Bible}
 {meta: artist Ricky Skaggs}
-{meta: writer Carl Jackson and Glenn Sutton}
+{meta: composer Carl Jackson and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]You trust your family doctor and a [C]drug is for your [G]fears

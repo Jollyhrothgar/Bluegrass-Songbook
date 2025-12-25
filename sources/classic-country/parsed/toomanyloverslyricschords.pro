@@ -1,6 +1,6 @@
 {meta: title Too Many Lovers}
 {meta: artist Crystal Gayle}
-{meta: writer Sam Hogin, Ted Lindsay and Mark True}
+{meta: composer Sam Hogin, Ted Lindsay and Mark True}
 
 {start_of_verse: Verse 1}
 [G]You gotta be [Em]rough you gotta be [G]tough 

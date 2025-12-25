@@ -1,6 +1,6 @@
 {meta: title You're No Secret Of Mine}
 {meta: artist Wynn Stewart}
-{meta: writer L.D. Allen[3/4 time]}
+{meta: composer L.D. Allen[3/4 time]}
 
 {start_of_verse: Verse 1}
 [G]The gossip has started [C]like I knew it [G]would

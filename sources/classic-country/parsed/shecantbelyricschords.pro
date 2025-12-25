@@ -1,6 +1,6 @@
 {meta: title She Can't Be}
 {meta: artist Faron Young}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]Isn't she pretty don't she look sweet

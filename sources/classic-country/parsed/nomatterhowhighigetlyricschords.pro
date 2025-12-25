@@ -1,6 +1,6 @@
 {meta: title No Matter How High I Get}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Joey Scarbury and Even Stevens}
+{meta: composer Joey Scarbury and Even Stevens}
 
 {start_of_verse: Verse 1}
 [G]When I was a young boy I [C]would dream about [G]life 

@@ -1,6 +1,6 @@
 {meta: title 5:01 Blues}
 {meta: artist Merle Haggard}
-{meta: writer Michael Garvin and Jeff Tweel}
+{meta: composer Michael Garvin and Jeff Tweel}
 
 {start_of_verse: Verse 1}
 [G7]I got those [C]5:01 blues [F]another work day is over

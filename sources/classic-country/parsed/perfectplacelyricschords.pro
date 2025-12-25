@@ -1,6 +1,6 @@
 {meta: title Perfect Place}
 {meta: artist Tony Booth}
-{meta: writer Glenn Sutton and Billy Troy}
+{meta: composer Glenn Sutton and Billy Troy}
 
 {start_of_verse: Verse 1}
 [C]Just a room a[G7]bove the [C]bar a [F]couch and one old [C]chair 

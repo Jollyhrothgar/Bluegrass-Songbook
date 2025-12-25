@@ -1,6 +1,6 @@
 {meta: title Love Out Loud}
 {meta: artist Earl Thomas Conley}
-{meta: writer Thom Schuyler}
+{meta: composer Thom Schuyler}
 
 {start_of_verse: Verse 1}
 [G]I don't brag about you to [C]everyone I [D7]meet

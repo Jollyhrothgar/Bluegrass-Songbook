@@ -1,6 +1,6 @@
 {meta: title Santa Bring My Baby Back To Me}
 {meta: artist Elvis Presley}
-{meta: writer Aaron Schroeder and Claude Demetrius}
+{meta: composer Aaron Schroeder and Claude Demetrius}
 
 {start_of_verse: Verse 1}
 [C]I don't need a lot of presents to make [F]my Christmas [C]bright

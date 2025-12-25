@@ -1,6 +1,6 @@
 {meta: title She's Not Yours Anymore}
 {meta: artist Ferlin Husky}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]The fact that she's [C]gone has become very [A7]real

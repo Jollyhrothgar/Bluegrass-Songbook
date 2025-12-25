@@ -1,6 +1,6 @@
 {meta: title Country Boy}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Felice and Boudleaux Bryant}
+{meta: composer Felice and Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]Now I'm just a simple guy

@@ -1,6 +1,6 @@
 {meta: title The Andy Griffith Show}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G]That old [C]evening news is sure [G]depressing

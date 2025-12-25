@@ -1,6 +1,6 @@
 {meta: title Back From The Wine}
 {meta: artist Johnny Bush}
-{meta: writer Larry Kingston and Frank Dycus}
+{meta: composer Larry Kingston and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [G]When life gets to [C]rough you [D7]reach for the [G]crutch

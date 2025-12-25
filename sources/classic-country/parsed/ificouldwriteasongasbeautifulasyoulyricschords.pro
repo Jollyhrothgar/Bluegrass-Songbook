@@ -1,6 +1,6 @@
 {meta: title If I Could Write A Song As Beautiful As You}
 {meta: artist Billy Crash Craddock}
-{meta: writer John Adrian}
+{meta: composer John Adrian}
 
 {start_of_verse: Verse 1}
 [C]If I could write [Em]a [F]song

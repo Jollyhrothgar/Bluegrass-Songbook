@@ -1,6 +1,6 @@
 {meta: title Why Did I Wait So Long}
 {meta: artist Ricky Skaggs}
-{meta: writer Shawn Lane}
+{meta: composer Shawn Lane}
 
 {start_of_verse: Verse 1}
 [C]God spoke to me a [G7]hundred [C]times

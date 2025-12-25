@@ -1,6 +1,6 @@
 {meta: title Game Of Triangles}
 {meta: artist Bobby Bare}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]Every triangle has three sides it's [G]true

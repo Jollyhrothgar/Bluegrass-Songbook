@@ -1,6 +1,6 @@
 {meta: title I'm Missing You}
 {meta: artist Billy Crash Craddock}
-{meta: writer Michael Buckins and Randy McCormick}
+{meta: composer Michael Buckins and Randy McCormick}
 
 {start_of_verse: Verse 1}
 [G]Baby when I come home at night [D7]and you're not here

@@ -1,6 +1,6 @@
 {meta: title Red White And Blue Christmas}
 {meta: artist Jack Greene & Jeannie Seely}
-{meta: writer Jimmy Bilbrey, Candi Carpenter, Mark H. Houser}
+{meta: composer Jimmy Bilbrey, Candi Carpenter, Mark H. Houser}
 
 {start_of_verse: Verse 1}
 [C]Eighteen years old and six feet [F]tall

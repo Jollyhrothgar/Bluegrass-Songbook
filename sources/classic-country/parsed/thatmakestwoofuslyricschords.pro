@@ -1,6 +1,6 @@
 {meta: title That Makes Two Of Us}
 {meta: artist Merle Haggard}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [G]For two cents you'd up and leave [C]that's what you [G]say

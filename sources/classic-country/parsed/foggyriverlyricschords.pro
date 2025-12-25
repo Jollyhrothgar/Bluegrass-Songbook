@@ -1,6 +1,6 @@
 {meta: title Foggy River}
 {meta: artist Jean Sheppard}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]Your love is colder than a foggy river

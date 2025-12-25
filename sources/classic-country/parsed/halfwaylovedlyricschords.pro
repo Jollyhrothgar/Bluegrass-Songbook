@@ -1,6 +1,6 @@
 {meta: title Halfway Loved}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Wayne P. Walker and Max Powell}
+{meta: composer Wayne P. Walker and Max Powell}
 
 {start_of_verse: Verse 1}
 [C]I'd rather be [G7]loved by [C]many

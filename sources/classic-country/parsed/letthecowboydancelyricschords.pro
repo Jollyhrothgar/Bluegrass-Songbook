@@ -1,6 +1,6 @@
 {meta: title Let The Cowboy Dance}
 {meta: artist Michael Martin Murphey}
-{meta: writer Don Cook, Chick Rains, Michael Martin Murphey}
+{meta: composer Don Cook, Chick Rains, Michael Martin Murphey}
 
 {start_of_verse: Verse 1}
 [C]He ain't been right since she's been [G7]gone

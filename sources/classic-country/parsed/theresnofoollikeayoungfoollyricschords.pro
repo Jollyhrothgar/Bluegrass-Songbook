@@ -1,6 +1,6 @@
 {meta: title There's No Fool Like A Young Fool}
 {meta: artist Ray Price}
-{meta: writer Bette Thomasson}
+{meta: composer Bette Thomasson}
 
 {start_of_verse: Verse 1}
 [C]There's no fool like a young fool with wild and careless [G7]ways

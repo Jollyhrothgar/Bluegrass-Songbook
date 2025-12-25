@@ -1,6 +1,6 @@
 {meta: title Blue Prairie}
 {meta: artist Rex Allen Jr.}
-{meta: writer Bob Nolan and Tim Spencer}
+{meta: composer Bob Nolan and Tim Spencer}
 
 {start_of_verse: Verse 1}
 [Am]Blue prairie [F]blue are the [Em]skies

@@ -1,6 +1,6 @@
 {meta: title Take My Ring Off of Your Finger}
 {meta: artist Carl Smith}
-{meta: writer Benny Joy and Hugh X. Lewis}
+{meta: composer Benny Joy and Hugh X. Lewis}
 
 {start_of_verse: Verse 1}
 [C]Just take my ring off of your [F]finger

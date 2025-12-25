@@ -1,6 +1,6 @@
 {meta: title I Fell In Love Again Last Night}
 {meta: artist The Forester Sisters}
-{meta: writer Paul Overstreet and Thom Schuyler}
+{meta: composer Paul Overstreet and Thom Schuyler}
 
 {start_of_verse: Verse 1}
 [C]I fell in love again last [G7][F]night 

@@ -1,6 +1,6 @@
 {meta: title Doing My Time}
 {meta: artist Johnny Cash}
-{meta: writer Jimmie Skinner}
+{meta: composer Jimmie Skinner}
 
 {start_of_verse: Verse 1}
 [C]On this old rock pile with a ball and chain 

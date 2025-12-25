@@ -1,6 +1,6 @@
 {meta: title Borrowed Angel}
 {meta: artist Mel Tillis}
-{meta: writer Mel Street}
+{meta: composer Mel Street}
 
 {start_of_verse: Verse 1}
 [G]Her fingers feel so gentle   [C]with her hand in [G]mine

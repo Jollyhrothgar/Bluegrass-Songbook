@@ -1,6 +1,6 @@
 {meta: title In The Early Morning Rain}
 {meta: artist Elvis Presley}
-{meta: writer Gordon Lightfoot}
+{meta: composer Gordon Lightfoot}
 
 {start_of_verse: Verse 1}
 [C]In the early morning [G7]rain  [Dm]with a [G7]dollar in my [C]hand

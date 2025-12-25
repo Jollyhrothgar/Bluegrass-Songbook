@@ -1,6 +1,6 @@
 {meta: title Tangled Web}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]With heavy heart I [F]hurry home 

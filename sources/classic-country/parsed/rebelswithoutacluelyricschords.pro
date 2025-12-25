@@ -1,6 +1,6 @@
 {meta: title Rebels Without A Clue}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]We were [G]there in the back seat cause we [C]couldn't go home 

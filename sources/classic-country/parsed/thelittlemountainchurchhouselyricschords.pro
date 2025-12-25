@@ -1,6 +1,6 @@
 {meta: title The Little Mountain Church House}
 {meta: artist Doyle Lawson}
-{meta: writer Carl E. Jackson and Jim Rushing}
+{meta: composer Carl E. Jackson and Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]There's a little mountain church in my [F]thoughts of yesterday

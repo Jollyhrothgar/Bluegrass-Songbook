@@ -1,6 +1,6 @@
 {meta: title Prayer Bells Of Heaven}
 {meta: artist J.D. Crowe}
-{meta: writer Paul Williams and Jimmy Martin}
+{meta: composer Paul Williams and Jimmy Martin}
 
 {start_of_verse: Verse 1}
 [C]While we are living in this world of care

@@ -1,6 +1,6 @@
 {meta: title Love Was What We Had}
 {meta: artist Jim Ed Brown and Helen Cornelius}
-{meta: writer Willis Graham}
+{meta: composer Willis Graham}
 
 {start_of_verse: Verse 1}
 [C]What we had [G7]were country walls

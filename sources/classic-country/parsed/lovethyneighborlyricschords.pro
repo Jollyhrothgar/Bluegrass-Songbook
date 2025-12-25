@@ -1,6 +1,6 @@
 {meta: title Love Thy Neighbor}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Tommy Atwood}
+{meta: composer Tommy Atwood}
 
 {start_of_verse: Verse 1}
 [C]In this world in which we're livin'

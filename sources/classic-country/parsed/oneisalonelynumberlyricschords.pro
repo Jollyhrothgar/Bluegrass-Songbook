@@ -1,6 +1,6 @@
 {meta: title One Is A Lonely Number}
 {meta: artist Red Sovine}
-{meta: writer George Jones}
+{meta: composer George Jones}
 
 {start_of_verse: Verse 1}
 [C]One is a [F]lonely [C]number [G7]one can never have [C]fun

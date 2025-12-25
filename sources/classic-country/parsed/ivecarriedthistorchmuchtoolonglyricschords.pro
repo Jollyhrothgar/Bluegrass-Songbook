@@ -1,6 +1,6 @@
 {meta: title I’ve Carried This Torch Much Too Long}
 {meta: artist Tony Booth}
-{meta: writer Buck Owens and Gene Price}
+{meta: composer Buck Owens and Gene Price}
 
 {start_of_verse: Verse 1}
 [G]I've carried this torch much too [Am]long

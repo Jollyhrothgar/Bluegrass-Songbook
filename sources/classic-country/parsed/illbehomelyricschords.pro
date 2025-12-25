@@ -1,6 +1,6 @@
 {meta: title I'll Be Home}
 {meta: artist Anne Murray}
-{meta: writer Randy Newman}
+{meta: composer Randy Newman}
 
 {start_of_verse: Verse 1}
 [G]I'll be home  [D7]I'll be home

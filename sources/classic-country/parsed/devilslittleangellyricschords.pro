@@ -1,6 +1,6 @@
 {meta: title Devil's Little Angel}
 {meta: artist Ralph Stanley}
-{meta: writer Don Kelley}
+{meta: composer Don Kelley}
 
 {start_of_verse: Verse 1}
 [C]Devil's little Angel please leave me [G7]alone

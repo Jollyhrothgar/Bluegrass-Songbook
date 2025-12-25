@@ -1,6 +1,6 @@
 {meta: title Two Good Reasons}
 {meta: artist Norma Jean}
-{meta: writer Hank Cochran and Charlie Williams}
+{meta: composer Hank Cochran and Charlie Williams}
 
 {start_of_verse: Verse 1}
 [D7]Willie asked this morning if I was [C]mad at [G]him

@@ -1,6 +1,6 @@
 {meta: title Tomorrow Night}
 {meta: artist Charlie Rich}
-{meta: writer Sam Coslow and Will Grosz}
+{meta: composer Sam Coslow and Will Grosz}
 
 {start_of_verse: Verse 1}
 [G7]Tomorrow [C]night  [G7]    [C]

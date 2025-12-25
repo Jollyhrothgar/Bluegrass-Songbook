@@ -1,6 +1,6 @@
 {meta: title Crying For The Moon}
 {meta: artist Slim Whitman}
-{meta: writer Richards}
+{meta: composer Richards}
 
 {start_of_verse: Verse 1}
 [C]You’ll waste a lifetime [F]crying for the [C]moon

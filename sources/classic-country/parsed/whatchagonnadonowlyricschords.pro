@@ -1,6 +1,6 @@
 {meta: title Whatcha Gonna Do Now}
 {meta: artist Buck Owens}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]Back in the country a [C]few years [G]ago

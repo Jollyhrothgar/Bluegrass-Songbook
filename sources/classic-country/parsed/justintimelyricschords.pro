@@ -1,6 +1,6 @@
 {meta: title Just In Time}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Leon Ashley and Margie Singleton}
+{meta: composer Leon Ashley and Margie Singleton}
 
 {start_of_verse: Verse 1}
 [C]If you fail to see me in the barroom [F]tonight

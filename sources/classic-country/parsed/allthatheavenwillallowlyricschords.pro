@@ -1,6 +1,6 @@
 {meta: title All That Heaven Will Allow}
 {meta: artist The Mavericks}
-{meta: writer Bruce Springsteen}
+{meta: composer Bruce Springsteen}
 
 {start_of_verse: Verse 1}
 [D7]I got a dollar in my [G]pocket [C]there ain't a cloud up a[G]bove [D7]

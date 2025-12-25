@@ -1,6 +1,6 @@
 {meta: title When I Call On You}
 {meta: artist Slim Whitman}
-{meta: writer Dee Clark}
+{meta: composer Dee Clark}
 
 {start_of_verse: Verse 1}
 [C]When the stars [G7]shine at [C]night

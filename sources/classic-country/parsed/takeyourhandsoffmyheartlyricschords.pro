@@ -1,6 +1,6 @@
 {meta: title Take Your Hands Off My Heart}
 {meta: artist Ray Pillow}
-{meta: writer Fred Carter}
+{meta: composer Fred Carter}
 
 {start_of_verse: Verse 1}
 [G]You reach out for every[G7]thing [C]that comes close to you

@@ -1,6 +1,6 @@
 {meta: title I Just Said Goodbye To My Dreams}
 {meta: artist Don Gibson}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [C]I gambled with [C7]love and [F]I lost 

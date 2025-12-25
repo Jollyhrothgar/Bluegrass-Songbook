@@ -1,6 +1,6 @@
 {meta: title My Soul Is Strong}
 {meta: artist Hank Locklin}
-{meta: writer Hank Locklin and Raymond C. Davis Jr.}
+{meta: composer Hank Locklin and Raymond C. Davis Jr.}
 
 {start_of_verse: Verse 1}
 [G]I praise the Lord  my [C]Jesus [G]came

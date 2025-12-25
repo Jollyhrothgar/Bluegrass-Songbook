@@ -1,6 +1,6 @@
 {meta: title I'll Always Be Your Fraulein}
 {meta: artist Kitty Wells}
-{meta: writer Lawton Williams}
+{meta: composer Lawton Williams}
 
 {start_of_verse: Verse 1}
 [C]I'm that old German's daughter 

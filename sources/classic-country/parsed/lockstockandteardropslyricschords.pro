@@ -1,6 +1,6 @@
 {meta: title Lock Stock And Teardrops}
 {meta: artist Don Gibson}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]Someday I won't come runnin' when you [G7]call

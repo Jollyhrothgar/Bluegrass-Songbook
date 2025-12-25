@@ -1,6 +1,6 @@
 {meta: title Be Not Afraid}
 {meta: artist Daniel O'Donnell}
-{meta: writer Felix Mendelssohn}
+{meta: composer Felix Mendelssohn}
 
 {start_of_verse: Verse 1}
 [D7]You shall [G]cross the barren [D7]desert

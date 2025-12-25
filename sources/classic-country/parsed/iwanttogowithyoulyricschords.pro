@@ -1,6 +1,6 @@
 {meta: title I Want To Go With You}
 {meta: artist Eddy Arnold}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I want to go with [F]you

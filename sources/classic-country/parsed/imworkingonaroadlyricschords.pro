@@ -1,6 +1,6 @@
 {meta: title I'm Working On A Road}
 {meta: artist The Bluegrass Band}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]Each day I get so lonely while [C]living here [G]below

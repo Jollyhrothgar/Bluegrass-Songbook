@@ -1,6 +1,6 @@
 {meta: title Fly Little Bluebird}
 {meta: artist The Goins Brothers}
-{meta: writer M. Goins, M. Paxton, R. Goins}
+{meta: composer M. Goins, M. Paxton, R. Goins}
 
 {start_of_verse: Verse 1}
 [C]Poor little bluebird in a pink cherry [G7]tree

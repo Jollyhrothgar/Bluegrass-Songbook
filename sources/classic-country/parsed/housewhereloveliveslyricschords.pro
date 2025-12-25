@@ -1,6 +1,6 @@
 {meta: title House Where Love Lives}
 {meta: artist Dolly Parton and Porter Wagoner}
-{meta: writer Leona Reese}
+{meta: composer Leona Reese}
 
 {start_of_verse: Verse 1}
 [G]A squeaky gate a welcome [C]mat

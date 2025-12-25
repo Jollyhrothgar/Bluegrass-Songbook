@@ -1,6 +1,6 @@
 {meta: title You're From Texas}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Pardon me stranger I hope there's no [E7]danger

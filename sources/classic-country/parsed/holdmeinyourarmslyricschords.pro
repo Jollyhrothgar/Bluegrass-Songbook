@@ -1,6 +1,6 @@
 {meta: title Hold Me In Your Arms}
 {meta: artist Gena Roberts}
-{meta: writer Chuck Cusimano}
+{meta: composer Chuck Cusimano}
 
 {start_of_verse: Verse 1}
 [C]You told me you were leaving you were only passing [C7]through

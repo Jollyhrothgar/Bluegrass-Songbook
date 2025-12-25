@@ -1,5 +1,5 @@
 {meta: artist Johnny And Jack}
-{meta: writer Ella Barrett}
+{meta: composer Ella Barrett}
 
 {start_of_verse: Verse 1}
 [G]It was just by chance she came my [C]way

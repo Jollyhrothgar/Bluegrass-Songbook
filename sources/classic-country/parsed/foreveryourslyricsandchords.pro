@@ -1,6 +1,6 @@
 {meta: title Forever Yours}
 {meta: artist Dottie West}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [C]Forever [F]y-ours [G7]I'll always [C]be 

@@ -1,6 +1,6 @@
 {meta: title I'd Be Talkin' All The Time}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Larry Kingston and Chuck Howard}
+{meta: composer Larry Kingston and Chuck Howard}
 
 {start_of_verse: Verse 1}
 [G]If I talked about the [C]good times 

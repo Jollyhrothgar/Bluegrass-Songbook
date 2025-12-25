@@ -1,6 +1,6 @@
 {meta: title How Could I Dream Such A Dream}
 {meta: artist Ralph Stanley}
-{meta: writer Candace Randolph and Ralph Stanley}
+{meta: composer Candace Randolph and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]I dreamed you were lying close beside me

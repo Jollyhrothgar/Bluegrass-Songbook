@@ -1,6 +1,6 @@
 {meta: title Do You Think}
 {meta: artist Don Gibson}
-{meta: writer Lee Emerson}
+{meta: composer Lee Emerson}
 
 {start_of_verse: Verse 1}
 [G7]Do you [C]think the [G7]raindrops will [C]ever stop [F]falling

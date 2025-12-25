@@ -1,6 +1,6 @@
 {meta: title Her Only Bad Habit Is Me}
 {meta: artist George Strait}
-{meta: writer Harlan Howard and Don Cook}
+{meta: composer Harlan Howard and Don Cook}
 
 {start_of_verse: Verse 1}
 [C]She's an angel and I ain't

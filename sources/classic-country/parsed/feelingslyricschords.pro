@@ -1,6 +1,6 @@
 {meta: title Feelings}
 {meta: artist Conway Twitty}
-{meta: writer Troy Seals, Don Goodman, Will Jennings}
+{meta: composer Troy Seals, Don Goodman, Will Jennings}
 
 {start_of_verse: Verse 1}
 [C][G]Fee-lings just lead us [G]on till we [D7]know where we're [F]go-ing  [G][C]mmm

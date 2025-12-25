@@ -1,6 +1,6 @@
 {meta: title She}
 {meta: artist Emmylou Harris}
-{meta: writer Gram Parsons and Chris Ethridge}
+{meta: composer Gram Parsons and Chris Ethridge}
 
 {start_of_verse: Verse 1}
 [C]She [Em]she came from the land of a cotton[Am]

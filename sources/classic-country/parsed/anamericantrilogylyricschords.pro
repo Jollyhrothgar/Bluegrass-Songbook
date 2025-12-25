@@ -1,6 +1,6 @@
 {meta: title An American Trilogy}
 {meta: artist aka Dixie}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [C]Oh I wish I was in the land of cotton 

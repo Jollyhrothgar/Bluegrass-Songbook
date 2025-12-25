@@ -1,6 +1,6 @@
 {meta: title I'd Build A Bridge}
 {meta: artist Johnny Rodriguez}
-{meta: writer Mike Settle}
+{meta: composer Mike Settle}
 
 {start_of_verse: Verse 1}
 [C]As I [Em]search through the [F]ashes [G7]

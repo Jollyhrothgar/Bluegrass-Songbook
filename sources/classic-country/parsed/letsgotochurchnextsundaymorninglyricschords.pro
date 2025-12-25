@@ -1,6 +1,6 @@
 {meta: title Let's Go To Church Next Sunday Morning}
 {meta: artist Slim Whitman}
-{meta: writer Steve Allen}
+{meta: composer Steve Allen}
 
 {start_of_verse: Verse 1}
 [G]Let's go to church next Sunday morning

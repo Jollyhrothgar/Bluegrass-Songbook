@@ -1,6 +1,6 @@
 {meta: title One Kiss Too Many}
 {meta: artist Eddy Arnold}
-{meta: writer Steve Nelson, Eddy Arnold, Ed Nelson, Jr.}
+{meta: composer Steve Nelson, Eddy Arnold, Ed Nelson, Jr.}
 
 {start_of_verse: Verse 1}
 [G]I had one kiss too many and it [G7]went right to my [C]heart

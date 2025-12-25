@@ -1,6 +1,6 @@
 {meta: title I Had One Too Many}
 {meta: artist Wilburn Brothers}
-{meta: writer Lee McAlpin}
+{meta: composer Lee McAlpin}
 
 {start_of_verse: Verse 1}
 [C]Stayed out all night last night my head is [G7]achin'

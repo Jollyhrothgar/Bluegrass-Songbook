@@ -1,6 +1,6 @@
 {meta: title Beside You Lyrics Chords}
 {meta: artist Kitty Wells}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [G]Beside you [C]forever I'm thankful each [D7]day 

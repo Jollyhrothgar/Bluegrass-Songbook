@@ -1,6 +1,6 @@
 {meta: title Three's A Crowd}
 {meta: artist Mickey Gilley}
-{meta: writer Bob Montgomery}
+{meta: composer Bob Montgomery}
 
 {start_of_verse: Verse 1}
 [C]I love your company but [G7]three's a [C]crowd

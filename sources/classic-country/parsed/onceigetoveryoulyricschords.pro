@@ -1,6 +1,6 @@
 {meta: title Once I Get Over You}
 {meta: artist Ronnie Milsap}
-{meta: writer John Betis and Archie Jordan}
+{meta: composer John Betis and Archie Jordan}
 
 {start_of_verse: Verse 1}
 [C]My friends call day after [F]day

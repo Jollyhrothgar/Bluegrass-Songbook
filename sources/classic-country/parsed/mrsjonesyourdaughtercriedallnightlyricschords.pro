@@ -1,6 +1,6 @@
 {meta: title Mrs. Jones Your Daughter Cried All Night}
 {meta: artist Bobby Bare}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [G]I bought a ring and [B7]gave it to your [C]daughter Mrs. [G]Jones

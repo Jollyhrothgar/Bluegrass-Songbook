@@ -1,6 +1,6 @@
 {meta: title I Am Always Waiting}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]From the start I [G7]promised you [C]that I would always [F]be

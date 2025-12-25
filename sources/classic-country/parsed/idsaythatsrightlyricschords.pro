@@ -1,6 +1,6 @@
 {meta: title I'd Say That's Right}
 {meta: artist Clay Walker}
-{meta: writer Mark D. Sanders and Tim Nichols}
+{meta: composer Mark D. Sanders and Tim Nichols}
 
 {start_of_verse: Verse 1}
 [G]Was I nervous the night [D7]I first I met you 

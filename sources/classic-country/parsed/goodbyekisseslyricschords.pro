@@ -1,6 +1,6 @@
 {meta: title Goodbye Kisses}
 {meta: artist Cowboy Copas}
-{meta: writer Lefty Frizzell and Lloyd Copas}
+{meta: composer Lefty Frizzell and Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [C]Goodbye kisses goodbye love [G7]affair

@@ -1,6 +1,6 @@
 {meta: title Only You}
 {meta: artist The Platters}
-{meta: writer Buck Ram and Andre Rand}
+{meta: composer Buck Ram and Andre Rand}
 
 {start_of_verse: Verse 1}
 [C]Only you can make oh this [E7]world seem right

@@ -1,6 +1,6 @@
 {meta: title You Are My Christmas Carol}
 {meta: artist Dottie West}
-{meta: writer Red Lane}
+{meta: composer Red Lane}
 
 {start_of_verse: Verse 1}
 [G]You are my [C]Christmas Carol [D7]please don’t [G]cry

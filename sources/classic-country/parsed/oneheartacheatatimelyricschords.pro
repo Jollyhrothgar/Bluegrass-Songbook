@@ -1,6 +1,6 @@
 {meta: title One Heartache At A Time}
 {meta: artist Doug Stone}
-{meta: writer Gary Burr and Cynthia Weil}
+{meta: composer Gary Burr and Cynthia Weil}
 
 {start_of_verse: Verse 1}
 [C]She knows who I am she [Am]knows what I do 

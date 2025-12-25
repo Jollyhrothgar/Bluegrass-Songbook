@@ -1,6 +1,6 @@
 {meta: title I’m Just A Redneck In A Rock And Roll Bar}
 {meta: artist Mel Street}
-{meta: writer Bob Morrison and Bill Anthony}
+{meta: composer Bob Morrison and Bill Anthony}
 
 {start_of_verse: Verse 1}
 [D7]Hello Boogie Palace I'm [G]sittin' here [D7]alone

@@ -1,6 +1,6 @@
 {meta: title Hurts On Me}
 {meta: artist Jack Greene}
-{meta: writer Don Bowman}
+{meta: composer Don Bowman}
 
 {start_of_verse: Verse 1}
 [C]Well have a little drink on me my friend 

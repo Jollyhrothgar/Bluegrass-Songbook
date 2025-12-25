@@ -1,6 +1,6 @@
 {meta: title I'll Thank You All My Life}
 {meta: artist Jean Shepard}
-{meta: writer Dick Reynolds and Lucille Dean}
+{meta: composer Dick Reynolds and Lucille Dean}
 
 {start_of_verse: Verse 1}
 [G]For overlooking what I've been and [C]saying you love [G]me

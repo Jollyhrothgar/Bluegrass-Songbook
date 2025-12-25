@@ -1,6 +1,6 @@
 {meta: title Day Drinker}
 {meta: artist Johnny Duncan}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [C]Day drinker habitual [G7]no-count drunk 

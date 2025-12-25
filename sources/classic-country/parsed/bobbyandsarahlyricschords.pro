@@ -1,6 +1,6 @@
 {meta: title Bobby And Sarah}
 {meta: artist Rhonda Vincent}
-{meta: writer Irl Hees}
+{meta: composer Irl Hees}
 
 {start_of_verse: Verse 1}
 [C]It started out a dream young Bobby 17

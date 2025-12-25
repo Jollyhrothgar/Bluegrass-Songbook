@@ -1,6 +1,6 @@
 {meta: title Apologize}
 {meta: artist Bill Anderson}
-{meta: writer Michael Gordon and James Griffin}
+{meta: composer Michael Gordon and James Griffin}
 
 {start_of_verse: Verse 1}
 [C]In the fury of the moment when the words of wrath rang out

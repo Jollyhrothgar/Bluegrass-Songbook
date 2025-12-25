@@ -1,6 +1,6 @@
 {meta: title Pictures}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Lewis DeWitt}
+{meta: composer Don Reid and Lewis DeWitt}
 
 {start_of_verse: Verse 1}
 [C]Here's the picture that we took in [G7]Cincinnati

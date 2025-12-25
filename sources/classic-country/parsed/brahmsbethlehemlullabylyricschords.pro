@@ -1,6 +1,6 @@
 {meta: title Brahms Bethlehem Lullaby}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid, Harold Reid, Jimmy Fortune}
+{meta: composer Don Reid, Harold Reid, Jimmy Fortune}
 
 {start_of_verse: Verse 1}
 [G]Long ago there was born In the City of [D7]David 

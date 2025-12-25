@@ -1,6 +1,6 @@
 {meta: title Today Will Be The First Day Of The Rest Of My Life}
 {meta: artist LaWanda Lindsey}
-{meta: writer Buddy Alan and Jim Shaw}
+{meta: composer Buddy Alan and Jim Shaw}
 
 {start_of_verse: Verse 1}
 [G]I'm walkin' in fields of clover watchin' clouds go driftin' over

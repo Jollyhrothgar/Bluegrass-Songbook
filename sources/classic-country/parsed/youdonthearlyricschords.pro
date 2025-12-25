@@ -1,6 +1,6 @@
 {meta: title You Don't Hear}
 {meta: artist Kitty Wells}
-{meta: writer Tommy Cash and Jerry Huffman}
+{meta: composer Tommy Cash and Jerry Huffman}
 
 {start_of_verse: Verse 1}
 [G]Lately you spend a [D7]lot of time at [C]parties

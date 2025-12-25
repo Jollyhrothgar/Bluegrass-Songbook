@@ -1,6 +1,6 @@
 {meta: title Haven't You Heard}
 {meta: artist Porter Wagoner}
-{meta: writer Dale Siegenthaler}
+{meta: composer Dale Siegenthaler}
 
 {start_of_verse: Verse 1}
 [C]Haven't you [F]heard there's a new love for [C]me

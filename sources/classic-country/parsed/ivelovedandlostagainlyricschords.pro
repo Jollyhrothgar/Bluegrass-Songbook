@@ -1,6 +1,6 @@
 {meta: title I've Loved and Lost Again}
 {meta: artist Patsy Cline}
-{meta: writer Eddie Miller}
+{meta: composer Eddie Miller}
 
 {start_of_verse: Verse 1}
 [G]I've loved and lost [C]again

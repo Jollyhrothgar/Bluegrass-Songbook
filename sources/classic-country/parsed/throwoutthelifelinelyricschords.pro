@@ -1,6 +1,6 @@
 {meta: title Throw Out the Lifeline}
 {meta: artist Wilburn Brothers}
-{meta: writer Edward S. Ufford}
+{meta: composer Edward S. Ufford}
 
 {start_of_verse: Verse 1}
 [G]Throw out the lifeline  

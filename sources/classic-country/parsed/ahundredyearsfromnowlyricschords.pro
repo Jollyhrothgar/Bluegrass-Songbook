@@ -1,6 +1,6 @@
 {meta: title A Hundred Years From Now}
 {meta: artist Tommy Collins}
-{meta: writer Tommy Collins, Jack Rhodes, Dick Reynolds}
+{meta: composer Tommy Collins, Jack Rhodes, Dick Reynolds}
 
 {start_of_verse: Verse 1}
 [C]What difference will it make a [G7]hundred years from [C]now

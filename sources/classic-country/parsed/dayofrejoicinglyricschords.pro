@@ -1,6 +1,6 @@
 {meta: title Day Of Rejoicing}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Henkle Little and Powell Sager}
+{meta: composer Henkle Little and Powell Sager}
 
 {start_of_verse: Verse 1}
 [G]In this world I have [D7]known many [G]loved ones

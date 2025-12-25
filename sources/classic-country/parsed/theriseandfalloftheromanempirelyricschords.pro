@@ -1,6 +1,6 @@
 {meta: title The Rise And Fall Of The Roman Empire}
 {meta: artist Cal Smith}
-{meta: writer Bobby Fischer and Don Wayne}
+{meta: composer Bobby Fischer and Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]Russell Roman took his brand new [F]bride

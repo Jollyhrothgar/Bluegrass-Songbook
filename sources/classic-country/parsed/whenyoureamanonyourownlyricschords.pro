@@ -1,6 +1,6 @@
 {meta: title When You're A Man On Your Own}
 {meta: artist George Strait}
-{meta: writer Carl Perkins}
+{meta: composer Carl Perkins}
 
 {start_of_verse: Verse 1}
 [C]They don't have words to [G7]say how blue I'm [C]feelin'

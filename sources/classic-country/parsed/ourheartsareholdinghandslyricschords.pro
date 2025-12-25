@@ -1,6 +1,6 @@
 {meta: title Our Hearts Are Holding Hands}
 {meta: artist Merle Haggard - Bonnie Owens}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]We're far apart but our [G7]hearts are holding [C]hands

@@ -1,6 +1,6 @@
 {meta: title If A Woman Answers}
 {meta: artist Leroy Van Dyke}
-{meta: writer Barry Mann and Cynthia Weil}
+{meta: composer Barry Mann and Cynthia Weil}
 
 {start_of_verse: Verse 1}
 [G]Her arms are cold but still she holds [C]me to that vow

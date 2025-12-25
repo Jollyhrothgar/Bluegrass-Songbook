@@ -1,6 +1,6 @@
 {meta: title Farther Down The Line}
 {meta: artist Willie Nelson}
-{meta: writer Lyle Lovett}
+{meta: composer Lyle Lovett}
 
 {start_of_verse: Verse 1}
 [G]Let's have a hand for that young [C]cowboy 

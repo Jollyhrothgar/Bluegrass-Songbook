@@ -1,6 +1,6 @@
 {meta: title Penny Candy}
 {meta: artist Jim Reeves}
-{meta: writer Cal Veale}
+{meta: composer Cal Veale}
 
 {start_of_verse: Verse 1}
 [G]There's a little girl lives on our street she's awful sweet and [D7]pretty

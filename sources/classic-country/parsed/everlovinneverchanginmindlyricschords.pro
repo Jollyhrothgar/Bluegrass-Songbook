@@ -1,6 +1,6 @@
 {meta: title Everlovin' Never Changin' Mind}
 {meta: artist Don Gibson}
-{meta: writer Melvin Endsley}
+{meta: composer Melvin Endsley}
 
 {start_of_verse: Verse 1}
 [G]I wish I had another life to [C]live

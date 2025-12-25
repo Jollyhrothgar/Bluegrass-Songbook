@@ -1,6 +1,6 @@
 {meta: title They're Holding Up The Ladder}
 {meta: artist The Easter Brothers}
-{meta: writer Edd F. Easter, James M. Easter,}
+{meta: composer Edd F. Easter, James M. Easter,}
 
 {start_of_verse: Verse 1}
 [G]They're holding up the ladder that I'm climbing on

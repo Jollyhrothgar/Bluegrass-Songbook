@@ -1,6 +1,6 @@
 {meta: title Some Of Your Memories}
 {meta: artist Wilburn Brothers}
-{meta: writer Johnny Russell and Vince Finneran}
+{meta: composer Johnny Russell and Vince Finneran}
 
 {start_of_verse: Verse 1}
 [C]I can never remember the joy we once [G7]knew

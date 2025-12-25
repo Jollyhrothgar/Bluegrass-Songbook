@@ -1,6 +1,6 @@
 {meta: title Pick Me Up Lord}
 {meta: artist Wanda Jackson}
-{meta: writer Don McHan}
+{meta: composer Don McHan}
 
 {start_of_verse: Verse 1}
 [C]Pick me up Lord wash the [D7]dirt off my face

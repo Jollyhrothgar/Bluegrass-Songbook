@@ -1,6 +1,6 @@
 {meta: title Miss The Mississippi And You}
 {meta: artist Merle Haggard}
-{meta: writer Bill Halley and Jimmie Rodgers}
+{meta: composer Bill Halley and Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]I'm growing [Am]tired of the [F]big city [D7]lights

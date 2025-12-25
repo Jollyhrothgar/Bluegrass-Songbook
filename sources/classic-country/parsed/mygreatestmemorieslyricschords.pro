@@ -1,6 +1,6 @@
 {meta: title My Greatest Memories}
 {meta: artist Marty Robbins}
-{meta: writer Misty Capps, Buck Moore, Bill Taylor}
+{meta: composer Misty Capps, Buck Moore, Bill Taylor}
 
 {start_of_verse: Verse 1}
 [C]Oh I built so many [F]temporary [C]bridges

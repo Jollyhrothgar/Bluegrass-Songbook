@@ -1,6 +1,6 @@
 {meta: title Because You Care}
 {meta: artist Wilburn Brothers}
-{meta: writer Teddy Wilburn}
+{meta: composer Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]Because you care my life means more to [F]me

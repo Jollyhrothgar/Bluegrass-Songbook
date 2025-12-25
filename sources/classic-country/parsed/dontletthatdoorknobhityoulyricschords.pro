@@ -1,6 +1,6 @@
 {meta: title Don't Let That Doorknob Hit You}
 {meta: artist Norma Jean}
-{meta: writer Vic Alpin}
+{meta: composer Vic Alpin}
 
 {start_of_verse: Verse 1}
 [G]For a long long time now just about every [C]night

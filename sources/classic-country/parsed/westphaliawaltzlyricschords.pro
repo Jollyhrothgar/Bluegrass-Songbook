@@ -1,6 +1,6 @@
 {meta: title Westphalia Waltz}
 {meta: artist Hank Thompson}
-{meta: writer Cotton Collins}
+{meta: composer Cotton Collins}
 
 {start_of_verse: Verse 1}
 [G]He said to her my little darlin'

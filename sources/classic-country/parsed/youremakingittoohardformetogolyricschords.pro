@@ -1,6 +1,6 @@
 {meta: title You're Making It Too Hard For Me To Go}
 {meta: artist Bob Luman}
-{meta: writer Neal Merritt and Shorty Hall}
+{meta: composer Neal Merritt and Shorty Hall}
 
 {start_of_verse: Verse 1}
 [C]Do I see a [F]teardrop starting in your [C]eye

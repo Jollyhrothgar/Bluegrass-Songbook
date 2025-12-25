@@ -1,6 +1,6 @@
 {meta: title Tulsa County}
 {meta: artist Anita Carter}
-{meta: writer Pamela Polland}
+{meta: composer Pamela Polland}
 
 {start_of_verse: Verse 1}
 [C]My nights have been lonely since I've been [F]in Tulsa [G7]County

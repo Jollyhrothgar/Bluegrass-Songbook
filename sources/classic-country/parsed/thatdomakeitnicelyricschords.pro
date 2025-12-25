@@ -1,6 +1,6 @@
 {meta: title That Do Make It Nice}
 {meta: artist Eddy Arnold}
-{meta: writer Fred Ebb, Paul Klein, Eddy Arnold}
+{meta: composer Fred Ebb, Paul Klein, Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [C]When you're sitting with your [F]honey [C]just as cozy as can [F]be

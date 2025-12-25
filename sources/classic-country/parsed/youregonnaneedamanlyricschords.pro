@@ -1,6 +1,6 @@
 {meta: title You're Gonna Need a Man}
 {meta: artist Johnny Duncan}
-{meta: writer Bobby Goldsboro}
+{meta: composer Bobby Goldsboro}
 
 {start_of_verse: Verse 1}
 [D7]So you [G]say your [Em]love has [Am]gone and [D7]you'll [G]forget him[Am]   [D7]

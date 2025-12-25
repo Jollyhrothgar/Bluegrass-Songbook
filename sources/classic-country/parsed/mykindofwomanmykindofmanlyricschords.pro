@@ -1,6 +1,6 @@
 {meta: title My Kind Of Woman My Kind Of Man}
 {meta: artist Vince Gill with Patty Loveless}
-{meta: writer Vince Gill}
+{meta: composer Vince Gill}
 
 {start_of_verse: Verse 1}
 [G]You don't need diamonds or [C]big fancy [G]cars

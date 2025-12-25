@@ -1,6 +1,6 @@
 {meta: title Voice Of My Savior}
 {meta: artist Jimmy Martin}
-{meta: writer Raymond Long and Jimmy Martin}
+{meta: composer Raymond Long and Jimmy Martin}
 
 {start_of_verse: Verse 1}
 [C]I heard a sweet voice [F]so tenderly [C]calling

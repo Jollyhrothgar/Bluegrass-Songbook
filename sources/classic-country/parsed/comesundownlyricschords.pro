@@ -1,6 +1,6 @@
 {meta: title Come Sundown}
 {meta: artist Bobby Bare}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [G]I heard the front door  [C]closing [G]softly

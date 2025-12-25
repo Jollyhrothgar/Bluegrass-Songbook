@@ -1,6 +1,6 @@
 {meta: title True And Lasting Kind}
 {meta: artist Kitty Wells}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [G]I walk the line because he makes me [Am]want to

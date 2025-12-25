@@ -1,6 +1,6 @@
 {meta: title Dance With Me Molly}
 {meta: artist Keith Whitley}
-{meta: writer Roger Bowling and Steve Tutsie}
+{meta: composer Roger Bowling and Steve Tutsie}
 
 {start_of_verse: Verse 1}
 [C]They say he's crazy pay him no [G]mind 

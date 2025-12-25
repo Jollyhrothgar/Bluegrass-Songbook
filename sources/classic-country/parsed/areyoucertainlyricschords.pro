@@ -1,6 +1,6 @@
 {meta: title Are You Certain}
 {meta: artist Jean Shepard}
-{meta: writer Bennie Benjamin and Sol Marcus}
+{meta: composer Bennie Benjamin and Sol Marcus}
 
 {start_of_verse: Verse 1}
 [G]Are you certain [D7]when you say you [G]care

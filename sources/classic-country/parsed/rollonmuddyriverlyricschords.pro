@@ -1,6 +1,6 @@
 {meta: title Roll On Muddy River}
 {meta: artist Wilburn Brothers}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 Roll muddy river roll on muddy river roll [G7]on

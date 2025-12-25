@@ -1,6 +1,6 @@
 {meta: title The Human Race}
 {meta: artist Randy Travis}
-{meta: writer James Dawson Phillips}
+{meta: composer James Dawson Phillips}
 
 {start_of_verse: Verse 1}
 [C]We've flown to the moon

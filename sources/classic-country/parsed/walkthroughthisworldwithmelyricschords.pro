@@ -1,6 +1,6 @@
 {meta: title Walk Through This World With Me}
 {meta: artist George Jones}
-{meta: writer Sandy Seamons and Kaye Savage}
+{meta: composer Sandy Seamons and Kaye Savage}
 
 {start_of_verse: Verse 1}
 Walk Through This World With Me

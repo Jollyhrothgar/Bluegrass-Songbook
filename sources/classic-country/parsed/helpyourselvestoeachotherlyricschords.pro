@@ -1,6 +1,6 @@
 {meta: title Help Yourselves To Each Other}
 {meta: artist Don Williams}
-{meta: writer Bob McDill and Allen Reynolds}
+{meta: composer Bob McDill and Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [G]What a time to [C]turn your back on someone

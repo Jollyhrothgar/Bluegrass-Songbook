@@ -1,6 +1,6 @@
 {meta: title Oklahoma Home Brew}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Bill Penix}
+{meta: composer Hank Thompson and Bill Penix}
 
 {start_of_verse: Verse 1}
 [C]Gimme champagne I [A7]won't complain if [D7]that's the best you can do

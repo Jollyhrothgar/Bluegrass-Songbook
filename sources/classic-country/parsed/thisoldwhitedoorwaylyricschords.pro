@@ -1,6 +1,6 @@
 {meta: title This Old White Doorway}
 {meta: artist The Forester Sisters}
-{meta: writer Jim Rushing and Susan Longacre}
+{meta: composer Jim Rushing and Susan Longacre}
 
 {start_of_verse: Verse 1}
 [C]It's the [F]midnight [G7]before [C]Christmas

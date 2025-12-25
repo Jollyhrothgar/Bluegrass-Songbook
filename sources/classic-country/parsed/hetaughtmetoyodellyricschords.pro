@@ -1,6 +1,6 @@
 {meta: title He Taught Me To Yodel}
 {meta: artist Margo Smith}
-{meta: writer Tom Emerson, Paul Roberts, Esther Van Sciver}
+{meta: composer Tom Emerson, Paul Roberts, Esther Van Sciver}
 
 {start_of_verse: Verse 1}
 [G]I went across to Switzerland 

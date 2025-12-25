@@ -1,6 +1,6 @@
 {meta: title Ain't Makin' No Headlines}
 {meta: artist Hank Williams Jr.}
-{meta: writer Jessi Colter and Basil McDavid}
+{meta: composer Jessi Colter and Basil McDavid}
 
 {start_of_verse: Verse 1}
 [C]Ain't makin' no headlines here without [G7]you

@@ -1,6 +1,6 @@
 {meta: title Wonderful Soup Stone}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]I [C]swear you could taste the [G]chicken and tomatoes

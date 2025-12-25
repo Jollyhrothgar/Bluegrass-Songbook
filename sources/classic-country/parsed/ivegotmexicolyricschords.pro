@@ -1,6 +1,6 @@
 {meta: title I've Got Mexico}
 {meta: artist Eddy Raven}
-{meta: writer Edward Futch and Frank Myers}
+{meta: composer Edward Futch and Frank Myers}
 
 {start_of_verse: Verse 1}
 [G]I just got tired of that [Am]same old job

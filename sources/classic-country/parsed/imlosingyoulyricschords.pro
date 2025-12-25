@@ -1,6 +1,6 @@
 {meta: title I'm Losing You}
 {meta: artist Doug Stone}
-{meta: writer Monty Criswell and Tim Schoepf}
+{meta: composer Monty Criswell and Tim Schoepf}
 
 {start_of_verse: Verse 1}
 [C]I'm losing you [G7]a little at a time

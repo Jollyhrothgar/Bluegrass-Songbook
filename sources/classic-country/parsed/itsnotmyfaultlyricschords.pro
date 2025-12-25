@@ -1,6 +1,6 @@
 {meta: title It's Not My Fault}
 {meta: artist Buddy Holly}
-{meta: writer Benny Hall Jr. and Weldon Myrick}
+{meta: composer Benny Hall Jr. and Weldon Myrick}
 
 {start_of_verse: Verse 1}
 [C]It's not my [G7]fault if you're not [F]falling in love with [C]me

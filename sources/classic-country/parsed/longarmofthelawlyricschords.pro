@@ -1,6 +1,6 @@
 {meta: title Long Arm Of The Law}
 {meta: artist Kenny Rogers}
-{meta: writer Roger Bowling and Billy Ed Wheeler}
+{meta: composer Roger Bowling and Billy Ed Wheeler}
 
 {start_of_verse: Verse 1}
 [C]In Cumberland Kentucky on a cool autumn [Am]evening

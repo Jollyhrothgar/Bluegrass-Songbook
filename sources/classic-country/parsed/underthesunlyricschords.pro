@@ -1,6 +1,6 @@
 {meta: title Under The Sun}
 {meta: artist Jimmy Dean}
-{meta: writer Joe Shapiro and Lou Stallman}
+{meta: composer Joe Shapiro and Lou Stallman}
 
 {start_of_verse: Verse 1}
 [C]Under the sun more than just the sun is shinin'

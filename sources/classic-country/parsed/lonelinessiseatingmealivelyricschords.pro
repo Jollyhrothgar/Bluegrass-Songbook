@@ -1,6 +1,6 @@
 {meta: title Loneliness Is Eating Me Alive}
 {meta: artist Merle Haggard}
-{meta: writer Hank Cockran}
+{meta: composer Hank Cockran}
 
 {start_of_verse: Verse 1}
 [C]There hasn't been one bit of laughter in [F]this house in so [Ab]long

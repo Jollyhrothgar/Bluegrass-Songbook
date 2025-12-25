@@ -1,6 +1,6 @@
 {meta: title Play It Again Sam}
 {meta: artist Mel Tillis}
-{meta: writer Charles Wadley}
+{meta: composer Charles Wadley}
 
 {start_of_verse: Verse 1}
 [G]I was born and raised in the south

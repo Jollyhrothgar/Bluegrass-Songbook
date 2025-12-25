@@ -1,6 +1,6 @@
 {meta: title I Wonder Who's Missing You Now}
 {meta: artist Johnny Duncan}
-{meta: writer Sonny Throckmorton, Craig Dillingham, Mark Sherrill}
+{meta: composer Sonny Throckmorton, Craig Dillingham, Mark Sherrill}
 
 {start_of_verse: Verse 1}
 [C]Last night I saw you out doing the town

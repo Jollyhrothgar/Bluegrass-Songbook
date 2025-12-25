@@ -1,6 +1,6 @@
 {meta: title Darlin' That's What Your Love Does}
 {meta: artist Don Williams}
-{meta: writer Hugh Prestwood}
+{meta: composer Hugh Prestwood}
 
 {start_of_verse: Verse 1}
 [G]Early this morning [C]before you [G]awoke

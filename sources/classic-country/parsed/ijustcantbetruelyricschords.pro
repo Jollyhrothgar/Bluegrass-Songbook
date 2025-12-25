@@ -1,6 +1,6 @@
 {meta: title I Just Can't Be True}
 {meta: artist Webb Pierce}
-{meta: writer Teddy Wilburn}
+{meta: composer Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]Now honey I just can't be true 

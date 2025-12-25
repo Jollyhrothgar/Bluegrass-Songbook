@@ -1,6 +1,6 @@
 {meta: title Make Me Feel Like A Woman Wants To Feel}
 {meta: artist Reba McEntire}
-{meta: writer Dana Collins}
+{meta: composer Dana Collins}
 
 {start_of_verse: Verse 1}
 [Am]Open up your [D7]arms to me [G]come and hold me [Em]tenderly[C]

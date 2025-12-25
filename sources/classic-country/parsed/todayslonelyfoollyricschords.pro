@@ -1,6 +1,6 @@
 {meta: title Today's Lonely Fool}
 {meta: artist Tracy Lawrence}
-{meta: writer Kenny Beard and Stan Davis}
+{meta: composer Kenny Beard and Stan Davis}
 
 {start_of_verse: Verse 1}
 [C]What would you say if I [F]told you I was [C]sorry[F]

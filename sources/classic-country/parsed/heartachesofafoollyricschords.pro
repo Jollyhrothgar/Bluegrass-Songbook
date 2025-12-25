@@ -1,6 +1,6 @@
 {meta: title Heartaches Of A Fool}
 {meta: artist Willie Nelson}
-{meta: writer Walt Breeland, Paul Buskirk, Willie Nelson}
+{meta: composer Walt Breeland, Paul Buskirk, Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]Started out with the [G7]dreams

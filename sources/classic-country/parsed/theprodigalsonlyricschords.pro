@@ -1,6 +1,6 @@
 {meta: title The Prodigal Son}
 {meta: artist Hank Williams Sr.}
-{meta: writer Floyd Jenkins}
+{meta: composer Floyd Jenkins}
 
 {start_of_verse: Verse 1}
 [G]A Prodigal son once [C]strayed from his [G]father

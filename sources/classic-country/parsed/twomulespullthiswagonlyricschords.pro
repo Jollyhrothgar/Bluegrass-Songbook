@@ -1,6 +1,6 @@
 {meta: title Two Mules Pull This Wagon}
 {meta: artist Loretta Lynn}
-{meta: writer Johnny Russell}
+{meta: composer Johnny Russell}
 
 {start_of_verse: Verse 1}
 [G]Well you come home most every night as [C]grouchy as can [G]be

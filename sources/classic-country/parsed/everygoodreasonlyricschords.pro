@@ -1,6 +1,6 @@
 {meta: title Every Good Reason}
 {meta: artist Charlie Walker}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]I have every good reason to [G7]leave you 

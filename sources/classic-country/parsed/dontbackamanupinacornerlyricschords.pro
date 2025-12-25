@@ -1,6 +1,6 @@
 {meta: title Don't Back A Man Up In A Corner}
 {meta: artist Ernest Tubb}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]She never was quite satisfied with [F]me

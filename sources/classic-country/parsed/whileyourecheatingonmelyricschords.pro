@@ -1,6 +1,6 @@
 {meta: title While You're Cheating On Me}
 {meta: artist The Louvin Brothers}
-{meta: writer Charlie and Ira Louvin}
+{meta: composer Charlie and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]While you're cheating on [G7]me I'm praying for [C]you

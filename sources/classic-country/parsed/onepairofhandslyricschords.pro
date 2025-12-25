@@ -1,6 +1,6 @@
 {meta: title One Pair Of Hands}
 {meta: artist Carroll Roberson}
-{meta: writer Billie Campbell and Mann Kurtz}
+{meta: composer Billie Campbell and Mann Kurtz}
 
 {start_of_verse: Verse 1}
 [C]One pair of hands formed the [Am]mountains

@@ -1,6 +1,6 @@
 {meta: title The Carpenter}
 {meta: artist Randy Travis}
-{meta: writer Randy Travis, Ron Avis, Chip Taylor}
+{meta: composer Randy Travis, Ron Avis, Chip Taylor}
 
 {start_of_verse: Verse 1}
 [G]He was just a [D7]carpenter by [Em]trade

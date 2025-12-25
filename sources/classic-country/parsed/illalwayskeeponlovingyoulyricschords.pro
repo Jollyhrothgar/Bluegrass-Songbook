@@ -1,6 +1,6 @@
 {meta: title I'll Always Keep On Loving You}
 {meta: artist Melba Montgomery}
-{meta: writer Johnny Mathis}
+{meta: composer Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [G]I say tomorrow I'll forget [C]you

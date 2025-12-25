@@ -1,6 +1,6 @@
 {meta: title Magic Carpet}
 {meta: artist Don Williams}
-{meta: writer Larry Kingston and Frank Dycus}
+{meta: composer Larry Kingston and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [C]Wish I had a [F]magic carpet

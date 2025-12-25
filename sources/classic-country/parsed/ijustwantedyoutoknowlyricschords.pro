@@ -1,6 +1,6 @@
 {meta: title I Just Wanted You To Know}
 {meta: artist Conway Twitty}
-{meta: writer L.E.White}
+{meta: composer L.E.White}
 
 {start_of_verse: Verse 1}
 [G]Things work out for the [D7]best some [G]people say

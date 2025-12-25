@@ -1,6 +1,6 @@
 {meta: title I Made You A Woman}
 {meta: artist Conway Twitty}
-{meta: writer Mike Huffman}
+{meta: composer Mike Huffman}
 
 {start_of_verse: Verse 1}
 [C]I came to your wedding like you asked me [Am]to

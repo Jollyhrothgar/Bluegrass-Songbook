@@ -1,6 +1,6 @@
 {meta: title One Man Band}
 {meta: artist Moe Bandy}
-{meta: writer Ken Bell, Bud McGuire, Linda Epstein}
+{meta: composer Ken Bell, Bud McGuire, Linda Epstein}
 
 {start_of_verse: Verse 1}
 [C]She don’t need bright lights or [G]dancing past midnight

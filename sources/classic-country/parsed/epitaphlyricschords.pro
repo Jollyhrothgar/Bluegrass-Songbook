@@ -1,6 +1,6 @@
 {meta: title Epitaph (Black And Blue)}
 {meta: artist Kris Kristofferson}
-{meta: writer Jessi Colter}
+{meta: composer Jessi Colter}
 
 {start_of_verse: Verse 1}
 [D7]Her close friends have [G]gathered 

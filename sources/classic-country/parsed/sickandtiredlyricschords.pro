@@ -1,6 +1,6 @@
 {meta: title Sick And Tired}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew, Christopher Kenner, Fats Domino}
+{meta: composer Dave Bartholomew, Christopher Kenner, Fats Domino}
 
 {start_of_verse: Verse 1}
 [G]Oh baby whatcha gonna do

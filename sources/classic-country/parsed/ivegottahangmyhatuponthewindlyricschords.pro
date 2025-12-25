@@ -1,6 +1,6 @@
 {meta: title I've Gotta Hang My Hat Upon The Wind}
 {meta: artist Wilburn Brothers}
-{meta: writer Andrew Eddings}
+{meta: composer Andrew Eddings}
 
 {start_of_verse: Verse 1}
 [C]I set down my [F]coffee cup and [G7]slowly start to [C]gettin' up

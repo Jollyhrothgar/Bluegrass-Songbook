@@ -1,6 +1,6 @@
 {meta: title Harper Valley P.T.A.}
 {meta: artist Jeannie C. Riley}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [G]I wanna tell you all a story 'bout a Harper Valley widowed wife

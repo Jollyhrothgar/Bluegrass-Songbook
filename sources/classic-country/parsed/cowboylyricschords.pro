@@ -1,6 +1,6 @@
 {meta: title Cowboy}
 {meta: artist Eddy Arnold}
-{meta: writer Harry Shannon and Ron Fraser}
+{meta: composer Harry Shannon and Ron Fraser}
 
 {start_of_verse: Verse 1}
 [C]The skies are dark and gray

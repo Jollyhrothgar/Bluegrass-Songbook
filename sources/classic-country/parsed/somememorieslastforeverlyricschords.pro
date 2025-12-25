@@ -1,6 +1,6 @@
 {meta: title Some Memories Last Forever}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]Won't you look [D7]standing [G]there just an old souve[G7]nir 

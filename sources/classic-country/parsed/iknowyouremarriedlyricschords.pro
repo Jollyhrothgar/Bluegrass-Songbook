@@ -1,6 +1,6 @@
 {meta: title I Know You’re Married}
 {meta: artist Dolly Parton}
-{meta: writer Don Reno and Mack Magaha}
+{meta: composer Don Reno and Mack Magaha}
 
 {start_of_verse: Verse 1}
 [C]You know I love you and I always will

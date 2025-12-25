@@ -1,6 +1,6 @@
 {meta: title Don't Look Back}
 {meta: artist Wynn Stewart}
-{meta: writer Dave Burgess and James Best}
+{meta: composer Dave Burgess and James Best}
 
 {start_of_verse: Verse 1}
 [C]I stand along the shadows and here's the reason [G7]why

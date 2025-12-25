@@ -1,6 +1,6 @@
 {meta: title Share Your Love With Me}
 {meta: artist Charlie Rich}
-{meta: writer Don Robey, Al Braggs, Deadric Malone}
+{meta: composer Don Robey, Al Braggs, Deadric Malone}
 
 {start_of_verse: Verse 1}
 [G7]It's an [C]ill wind [F] that blows no [C]good[F]

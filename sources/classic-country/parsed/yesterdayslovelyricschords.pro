@@ -1,6 +1,6 @@
 {meta: title Yesterday's Love}
 {meta: artist Ricky Nelson}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [D7]When I get to [G]thinking [D7]about the [G]past

@@ -1,6 +1,6 @@
 {meta: title Sentimental Me}
 {meta: artist Elvis Presley}
-{meta: writer Jimmy Cassin and Jim Morehead}
+{meta: composer Jimmy Cassin and Jim Morehead}
 
 {start_of_verse: Verse 1}
 [C]Sentimental [G7]me  guess I’ll always will [C]be

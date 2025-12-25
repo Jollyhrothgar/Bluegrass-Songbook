@@ -1,6 +1,6 @@
 {meta: title Never Is A Long Long Day}
 {meta: artist Jimmy Dean}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]Love's gone away so [F]now you say you'll [C]never love [G7]again

@@ -1,6 +1,6 @@
 {meta: title When I Reach That Home Up There}
 {meta: artist Jamie Dailey and Darrin Vincent}
-{meta: writer Jamie Dailey}
+{meta: composer Jamie Dailey}
 
 {start_of_verse: Verse 1}
 [C]When the Lord calls me home and time shall be no more

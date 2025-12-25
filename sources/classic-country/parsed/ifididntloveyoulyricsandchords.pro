@@ -1,6 +1,6 @@
 {meta: title If I Didn't Love You}
 {meta: artist Tanya Tucker}
-{meta: writer Rafe VanHoy and Deborah Allen}
+{meta: composer Rafe VanHoy and Deborah Allen}
 
 {start_of_verse: Verse 1}
 [G]I can't believe it's really me telling you goodbye

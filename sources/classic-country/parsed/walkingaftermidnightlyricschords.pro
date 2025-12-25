@@ -1,6 +1,6 @@
 {meta: title Walking After Midnight}
 {meta: artist Patsy Cline}
-{meta: writer Don Hecht and Alan Block}
+{meta: composer Don Hecht and Alan Block}
 
 {start_of_verse: Verse 1}
 [C]I go out walking after [C7]midnight 

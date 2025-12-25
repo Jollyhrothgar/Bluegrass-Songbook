@@ -1,6 +1,6 @@
 {meta: title Chain Gang}
 {meta: artist Freddie Hart}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C](Chain [C]gang chain [C]gang)

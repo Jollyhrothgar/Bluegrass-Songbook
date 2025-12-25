@@ -1,6 +1,6 @@
 {meta: title Down The Line}
 {meta: artist Buddy Holly}
-{meta: writer Buddy Holly, Bob Montgomery, Norman Petty}
+{meta: composer Buddy Holly, Bob Montgomery, Norman Petty}
 
 {start_of_verse: Verse 1}
 [C]Well my old car's a-rollin' down the line

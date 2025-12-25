@@ -1,6 +1,6 @@
 {meta: title Everyday}
 {meta: artist Buddy Holly}
-{meta: writer Buddy Holly and Norman Petty}
+{meta: composer Buddy Holly and Norman Petty}
 
 {start_of_verse: Verse 1}
 [C]Everyday [F]it's a getting [G7]closer

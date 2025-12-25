@@ -1,6 +1,6 @@
 {meta: title Where Is Your Heart Tonight}
 {meta: artist Don Gibson}
-{meta: writer Boudleaux Bryant, Benny Martin, Robert Castellow}
+{meta: composer Boudleaux Bryant, Benny Martin, Robert Castellow}
 
 {start_of_verse: Verse 1}
 [C]Where [E7]is your [Am]heart to[D7]night

@@ -1,6 +1,6 @@
 {meta: title These Foolish Things}
 {meta: artist Ray Price}
-{meta: writer Harry Link, Holt Marvell, Jack Strachey}
+{meta: composer Harry Link, Holt Marvell, Jack Strachey}
 
 {start_of_verse: Verse 1}
 [C]A ciga[Am]rette that bears [Dm]a lipstick's [G7]traces[C]

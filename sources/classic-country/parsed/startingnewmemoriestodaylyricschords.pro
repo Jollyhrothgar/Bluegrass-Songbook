@@ -1,6 +1,6 @@
 {meta: title Starting New Memories Today}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby and Warren Robb}
+{meta: composer Dave Kirby and Warren Robb}
 
 {start_of_verse: Verse 1}
 [G]I'm building your own special [C]place in my [G]heart

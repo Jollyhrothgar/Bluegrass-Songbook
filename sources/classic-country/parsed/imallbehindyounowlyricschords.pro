@@ -1,6 +1,6 @@
 {meta: title I'm All Behind You Now}
 {meta: artist George Strait}
-{meta: writer Dean Dillon}
+{meta: composer Dean Dillon}
 
 {start_of_verse: Verse 1}
 [G]Leavin' me [C]behind is all [G]behind you now

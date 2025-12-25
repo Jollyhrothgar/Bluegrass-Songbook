@@ -1,6 +1,6 @@
 {meta: title When I Had A Home To Go To}
 {meta: artist Johnny Paycheck}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 She loved me [C]more than life its self

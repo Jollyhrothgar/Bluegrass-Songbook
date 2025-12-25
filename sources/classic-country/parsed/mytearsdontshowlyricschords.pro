@@ -1,6 +1,6 @@
 {meta: title My Tears Don't Show}
 {meta: artist Jack Greene and Jeannie Seely}
-{meta: writer Carl Butler}
+{meta: composer Carl Butler}
 
 {start_of_verse: Verse 1}
 [G]I've learned to hide my greed with[C]in my heart

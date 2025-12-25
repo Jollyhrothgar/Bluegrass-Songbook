@@ -1,6 +1,6 @@
 {meta: title I Just Steal Away And Pray}
 {meta: artist The Osborne Brothers}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [G]I just steal away [D7]somewhere and [G]pray

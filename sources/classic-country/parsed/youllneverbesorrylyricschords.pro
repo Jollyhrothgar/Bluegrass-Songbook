@@ -1,6 +1,6 @@
 {meta: title You'll Never Be Sorry}
 {meta: artist The Bellamy Brothers}
-{meta: writer Don Schlitz, David Bellamy, Howard Bellamy}
+{meta: composer Don Schlitz, David Bellamy, Howard Bellamy}
 
 {start_of_verse: Verse 1}
 [C]You'll never be [G7]sorry if you let me [C]love you

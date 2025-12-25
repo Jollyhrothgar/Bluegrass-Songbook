@@ -1,6 +1,6 @@
 {meta: title Gonna Get A Life}
 {meta: artist Mark Chesnutt}
-{meta: writer Frank Dycus and Jim Lauderdale}
+{meta: composer Frank Dycus and Jim Lauderdale}
 
 {start_of_verse: Verse 1}
 [G]Gotta find something to ease my [D7]mind

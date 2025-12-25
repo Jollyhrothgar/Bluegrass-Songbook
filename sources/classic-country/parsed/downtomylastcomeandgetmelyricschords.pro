@@ -1,6 +1,6 @@
 {meta: title Down To My Last Come And Get Me}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]Here I sit in this ginmill an [G7]empty in my hand

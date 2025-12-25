@@ -1,6 +1,6 @@
 {meta: title Christmas All Year Long}
 {meta: artist Sawyer Brown}
-{meta: writer Mac McAnally}
+{meta: composer Mac McAnally}
 
 {start_of_verse: Verse 1}
 [C]You can tell by the [F]way [G7]the kids are [C]all [G7][F]grinning

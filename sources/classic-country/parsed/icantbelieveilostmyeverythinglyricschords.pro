@@ -1,6 +1,6 @@
 {meta: title I Can't Believe I Lost My Everything}
 {meta: artist Red Sovine}
-{meta: writer Bun Wilson and Doc Richardson}
+{meta: composer Bun Wilson and Doc Richardson}
 
 {start_of_verse: Verse 1}
 [C]We had love much more than I had ever [F]dreamed of

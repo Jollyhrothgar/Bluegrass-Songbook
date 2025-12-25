@@ -1,6 +1,6 @@
 {meta: title My First Reaction}
 {meta: artist Ricky Van Shelton}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]I've found a note you [F]left there on the [C]table

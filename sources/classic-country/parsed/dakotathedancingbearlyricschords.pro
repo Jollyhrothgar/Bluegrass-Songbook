@@ -1,6 +1,6 @@
 {meta: title Dakota (The Dancing Bear)}
 {meta: artist Kris Kristofferson}
-{meta: writer Larry Murray}
+{meta: composer Larry Murray}
 
 {start_of_verse: Verse 1}
 [C]Midnight touch the black hills [F]westward on the [C]run

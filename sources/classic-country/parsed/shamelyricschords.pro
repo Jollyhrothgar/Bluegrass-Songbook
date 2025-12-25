@@ -1,6 +1,6 @@
 {meta: title Shame}
 {meta: artist John Conlee}
-{meta: writer Jim McBride}
+{meta: composer Jim McBride}
 
 {start_of_verse: Verse 1}
 [G]We could lie and say that our love [C]died without a [G]reason

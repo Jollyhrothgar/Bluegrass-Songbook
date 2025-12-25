@@ -1,6 +1,6 @@
 {meta: title Hootenanny Express}
 {meta: artist Canadian Sweethearts}
-{meta: writer Bob Reagan}
+{meta: composer Bob Reagan}
 
 {start_of_verse: Verse 1}
 [F]Climb aboard the Hootenanny [C]ride aboard the Hootenanny 

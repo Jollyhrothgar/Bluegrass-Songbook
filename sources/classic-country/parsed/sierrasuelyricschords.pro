@@ -1,6 +1,6 @@
 {meta: title Sierra Sue}
 {meta: artist Gene Autry}
-{meta: writer Joseph B. Carey}
+{meta: composer Joseph B. Carey}
 
 {start_of_verse: Verse 1}
 [G7]Sierra [C]Sue I'm sad and lonely

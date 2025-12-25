@@ -1,6 +1,6 @@
 {meta: title Freight Train Boogie}
 {meta: artist Willie Nelson}
-{meta: writer Doc Watson}
+{meta: composer Doc Watson}
 
 {start_of_verse: Verse 1}
 [C]Casey Jones he was a mighty man

@@ -1,6 +1,6 @@
 {meta: title Sweeter Than You}
 {meta: artist Ricky Nelson}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [G]I could never be [Em]loved by any[C]one [D7]sweeter than [G]you 

@@ -1,6 +1,6 @@
 {meta: title With His Hand In Mine}
 {meta: artist Jean Shepard}
-{meta: writer Larry Butler, Ruth Butler, Lorene Allen}
+{meta: composer Larry Butler, Ruth Butler, Lorene Allen}
 
 {start_of_verse: Verse 1}
 [G]There are times for no reason I [G7]feel so [C]alone

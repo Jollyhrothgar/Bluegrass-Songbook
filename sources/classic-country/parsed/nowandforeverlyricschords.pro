@@ -1,6 +1,6 @@
 {meta: title Now And Forever}
 {meta: artist Anne Murray}
-{meta: writer David Foster, Jim Vallance, Randy Goodrum}
+{meta: composer David Foster, Jim Vallance, Randy Goodrum}
 
 {start_of_verse: Verse 1}
 [G]Up until now [C]I've learned to live without [D7]love

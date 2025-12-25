@@ -1,6 +1,6 @@
 {meta: title Dixie Lullaby}
 {meta: artist Clint Black}
-{meta: writer Claude Bridges and Chris Stainton}
+{meta: composer Claude Bridges and Chris Stainton}
 
 {start_of_verse: Verse 1}
 [C]Why don't you [F]gather round me people 

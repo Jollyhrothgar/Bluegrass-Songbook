@@ -1,6 +1,6 @@
 {meta: title The Darker The Night The Better I See}
 {meta: artist The Gibson Brothers}
-{meta: writer Joe Newberry}
+{meta: composer Joe Newberry}
 
 {start_of_verse: Verse 1}
 [C]I’ve [G7]honky [C]tonked most [G7]all my [C]life

@@ -1,6 +1,6 @@
 {meta: title Before You}
 {meta: artist George Morgan}
-{meta: writer Lorene Mann}
+{meta: composer Lorene Mann}
 
 {start_of_verse: Verse 1}
 [G]Before you what did I [Am]do

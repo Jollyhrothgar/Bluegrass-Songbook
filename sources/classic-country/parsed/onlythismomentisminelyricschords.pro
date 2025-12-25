@@ -1,6 +1,6 @@
 {meta: title Only This Moment Is Mine}
 {meta: artist Daniel O'Donnell}
-{meta: writer Teresa Mary O'Donnell}
+{meta: composer Teresa Mary O'Donnell}
 
 {start_of_verse: Verse 1}
 [G7]There're so [C]many things we'd change

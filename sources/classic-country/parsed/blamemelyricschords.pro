@@ -1,6 +1,6 @@
 {meta: title Blame Me}
 {meta: artist Darrell McCall}
-{meta: writer Darrell McCall and Donny Young}
+{meta: composer Darrell McCall and Donny Young}
 
 {start_of_verse: Verse 1}
 [C]Blame me if you [G]want to

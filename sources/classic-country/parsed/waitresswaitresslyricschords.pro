@@ -1,6 +1,6 @@
 {meta: title Waitress Waitress}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [G]Waitress waitress pretty little waitress [C]get my order [G]right

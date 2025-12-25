@@ -1,6 +1,6 @@
 {meta: title Bury Me}
 {meta: artist Dwight Yoakam}
-{meta: writer Dwight Yoakam}
+{meta: composer Dwight Yoakam}
 
 {start_of_verse: Verse 1}
 [G]Bury me [C]along the big [G]sandy 

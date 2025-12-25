@@ -1,6 +1,6 @@
 {meta: title The Best Game In Town}
 {meta: artist David Allan Coe}
-{meta: writer Shel Silverstein, David A. Coe, Karen Brooks}
+{meta: composer Shel Silverstein, David A. Coe, Karen Brooks}
 
 {start_of_verse: Verse 1}
 [G]I was just warming up to this [C]long legged girl with [G]intentions to please

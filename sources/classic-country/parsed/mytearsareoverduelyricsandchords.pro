@@ -1,6 +1,6 @@
 {meta: title My Tears Are Overdue}
 {meta: artist George Jones}
-{meta: writer Freddie Hart}
+{meta: composer Freddie Hart}
 
 {start_of_verse: Verse 1}
 [C](Just hang around my [F]tears are [C]overdue)

@@ -1,6 +1,6 @@
 {meta: title Wasted}
 {meta: artist Wanda Jackson}
-{meta: writer Wanda Jackson and Tommy Jackson}
+{meta: composer Wanda Jackson and Tommy Jackson}
 
 {start_of_verse: Verse 1}
 [C]Wasted lonely [F]nights was[G7]ted times I致e c[C]ried

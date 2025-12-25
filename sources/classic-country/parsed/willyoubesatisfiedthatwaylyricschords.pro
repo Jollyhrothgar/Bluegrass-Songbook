@@ -1,6 +1,6 @@
 {meta: title Will You Be Satisfied That Way}
 {meta: artist Carl Smith}
-{meta: writer Jimmie Skinner}
+{meta: composer Jimmie Skinner}
 
 {start_of_verse: Verse 1}
 [G]We've been together for so [D7]long

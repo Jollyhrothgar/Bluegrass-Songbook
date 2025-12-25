@@ -1,6 +1,6 @@
 {meta: title You're The Best Of All Leading Brands}
 {meta: artist Lester Flatt}
-{meta: writer Tony Slater}
+{meta: composer Tony Slater}
 
 {start_of_verse: Verse 1}
 [C]Now you're the best of [C7]all the leading [F]brands

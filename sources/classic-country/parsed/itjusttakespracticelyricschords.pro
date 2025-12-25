@@ -1,6 +1,6 @@
 {meta: title It Just Takes Practice}
 {meta: artist Jeannie Seely}
-{meta: writer Jeannie Seely and Gail Talley}
+{meta: composer Jeannie Seely and Gail Talley}
 
 {start_of_verse: Verse 1}
 [G]I'll get over you before too long 

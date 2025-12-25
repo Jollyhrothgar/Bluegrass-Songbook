@@ -1,6 +1,6 @@
 {meta: title We Belong Together}
 {meta: artist Rhonda Vincent}
-{meta: writer Ken Wesley}
+{meta: composer Ken Wesley}
 
 {start_of_verse: Verse 1}
 [C]We belong together you and [G]me

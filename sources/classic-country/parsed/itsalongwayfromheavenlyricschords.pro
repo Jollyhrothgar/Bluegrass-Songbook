@@ -1,6 +1,6 @@
 {meta: title It's A Long Way From Heaven}
 {meta: artist Norma Jean}
-{meta: writer Sharon Higgins and Jimmie Helms}
+{meta: composer Sharon Higgins and Jimmie Helms}
 
 {start_of_verse: Verse 1}
 [G]Word got back to me you said it’s heaven to be [D7]free

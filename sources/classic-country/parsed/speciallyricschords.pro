@@ -1,6 +1,6 @@
 {meta: title Special}
 {meta: artist Charlie Pride}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]The only thing I really own is what you see me wearin' on my [G7]back

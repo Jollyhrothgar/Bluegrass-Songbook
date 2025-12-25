@@ -1,6 +1,6 @@
 {meta: title I’ll Be Lucky Someday}
 {meta: artist Bob Wills}
-{meta: writer Lee Martin, Dick McBride, Bob Wills}
+{meta: composer Lee Martin, Dick McBride, Bob Wills}
 
 {start_of_verse: Verse 1}
 [C]Feeling low feeling [G7]blue

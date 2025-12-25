@@ -1,6 +1,6 @@
 {meta: title Crazy}
 {meta: artist Kenny Rogers}
-{meta: writer Richard Marx; Kenneth R. Ii. Rogers}
+{meta: composer Richard Marx; Kenneth R. Ii. Rogers}
 
 {start_of_verse: Verse 1}
 [C]Girl there are no words [Em]to [Am]say

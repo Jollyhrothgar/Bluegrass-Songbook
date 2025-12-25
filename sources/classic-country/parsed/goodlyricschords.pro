@@ -1,6 +1,6 @@
 {meta: title Good}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]I was a waitress in a barroom [G7]no future in [C]sight

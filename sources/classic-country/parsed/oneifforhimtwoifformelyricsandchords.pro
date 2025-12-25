@@ -1,6 +1,6 @@
 {meta: title One If For Him Two If For Me}
 {meta: artist David Houston}
-{meta: writer Gene Davis}
+{meta: composer Gene Davis}
 
 {start_of_verse: Verse 1}
 [G7]I'll [C]drive by your house [G7]sometime [C]tonight

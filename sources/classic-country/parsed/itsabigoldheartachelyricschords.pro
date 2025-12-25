@@ -1,6 +1,6 @@
 {meta: title It's A Big Old Heartache}
 {meta: artist Wilburn Brothers}
-{meta: writer John Chenault and Bobby Overman}
+{meta: composer John Chenault and Bobby Overman}
 
 {start_of_verse: Verse 1}
 Intro:

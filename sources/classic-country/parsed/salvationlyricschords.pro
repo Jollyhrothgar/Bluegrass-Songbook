@@ -1,6 +1,6 @@
 {meta: title Salvation}
 {meta: artist John Berry}
-{meta: writer Gary Burr}
+{meta: composer Gary Burr}
 
 {start_of_verse: Verse 1}
 [C]One day when I was a little [G7]down on my luck

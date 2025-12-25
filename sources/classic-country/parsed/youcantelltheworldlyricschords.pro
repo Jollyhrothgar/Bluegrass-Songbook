@@ -1,6 +1,6 @@
 {meta: title You Can Tell The World}
 {meta: artist Charley Pride}
-{meta: writer Country Johnny Mathis}
+{meta: composer Country Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm farther from your arms than [F]ever

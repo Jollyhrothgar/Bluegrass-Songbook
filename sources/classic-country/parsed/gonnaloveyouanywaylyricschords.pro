@@ -1,6 +1,6 @@
 {meta: title Gonna Love You Anyway}
 {meta: artist Tanya Tucker}
-{meta: writer Laying Martine}
+{meta: composer Laying Martine}
 
 {start_of_verse: Verse 1}
 [G]You say you've been untrue I tell you what I'm gonna do

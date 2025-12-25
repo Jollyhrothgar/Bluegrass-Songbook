@@ -1,6 +1,6 @@
 {meta: title Without Me Around}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and John Northrup}
+{meta: composer Dean Dillon and John Northrup}
 
 {start_of_verse: Verse 1}
 [C]You said she [F]asked if you knew where she could [C]get some old [G7]boxes

@@ -1,6 +1,6 @@
 {meta: title I Won't Be Crying Anymore}
 {meta: artist Webb Pierce}
-{meta: writer Wynn Blackbourn}
+{meta: composer Wynn Blackbourn}
 
 {start_of_verse: Verse 1}
 [C]You cheated and you lied

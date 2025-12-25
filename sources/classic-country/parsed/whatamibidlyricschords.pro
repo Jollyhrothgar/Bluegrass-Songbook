@@ -1,6 +1,6 @@
 {meta: title What Am I Bid}
 {meta: artist Leroy Van Dyke}
-{meta: writer Gene Nash}
+{meta: composer Gene Nash}
 
 {start_of_verse: Verse 1}
 [G]What am I [C]bid for a sky with[Em]out a [Dm]star in [G]sight

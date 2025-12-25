@@ -1,6 +1,6 @@
 {meta: title Always}
 {meta: artist Patsy Cline}
-{meta: writer Irving Berlin}
+{meta: composer Irving Berlin}
 
 {start_of_verse: Verse 1}
 [G]I'll be loving you always

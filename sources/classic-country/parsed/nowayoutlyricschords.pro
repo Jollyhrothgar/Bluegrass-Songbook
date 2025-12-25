@@ -1,6 +1,6 @@
 {meta: title No Way Out}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Steve Bogard and Rick Giles}
+{meta: composer Steve Bogard and Rick Giles}
 
 {start_of_verse: Verse 1}
 [C]Yes I really [Gm]saw [G7]her [F]what was I supposed to [C]do

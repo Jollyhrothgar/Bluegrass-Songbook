@@ -1,6 +1,6 @@
 {meta: title Along the Navajo Trail}
 {meta: artist Bob Wills}
-{meta: writer Larry Marks, Dick Charles, Eddie Lange}
+{meta: composer Larry Marks, Dick Charles, Eddie Lange}
 
 {start_of_verse: Verse 1}
 [G7]Every [C]day a[G7]long about [C]evening

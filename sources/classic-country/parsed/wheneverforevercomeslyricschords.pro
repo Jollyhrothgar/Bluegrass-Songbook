@@ -1,6 +1,6 @@
 {meta: title Whenever Forever Comes}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]Whenever [G7]forever [C]comes when [E7]darkness shall hide the [F]sun

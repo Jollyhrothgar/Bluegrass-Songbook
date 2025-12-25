@@ -1,6 +1,6 @@
 {meta: title Lonely Rain}
 {meta: artist Wynn Stewart}
-{meta: writer Don Earl}
+{meta: composer Don Earl}
 
 {start_of_verse: Verse 1}
 [G]I can hear you outside a-knockin' [Am]lonely rain

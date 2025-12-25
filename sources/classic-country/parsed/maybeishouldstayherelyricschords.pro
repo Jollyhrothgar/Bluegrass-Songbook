@@ -1,6 +1,6 @@
 {meta: title Maybe I Should Stay Here}
 {meta: artist Alan Jackson}
-{meta: writer Robert Castleman and Melanie Castleman}
+{meta: composer Robert Castleman and Melanie Castleman}
 
 {start_of_verse: Verse 1}
 [C]Maybe I should [D7]stay here [G7]for the rest of my [C]life

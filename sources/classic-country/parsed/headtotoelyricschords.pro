@@ -1,6 +1,6 @@
 {meta: title Head To Toe}
 {meta: artist Bill Anderson}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]Your hair is soft  [F]your eyes are bright

@@ -1,6 +1,6 @@
 {meta: title Haven't I Always}
 {meta: artist Johnny Bush}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]Who will take you back again [F]   [G7]

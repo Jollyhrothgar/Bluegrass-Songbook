@@ -1,6 +1,6 @@
 {meta: title I Don't Need It Done}
 {meta: artist Dwight Yoakam}
-{meta: writer John Sieger}
+{meta: composer John Sieger}
 
 {start_of_verse: Verse 1}
 [G]Honey you sure do it well but [C]I don't need it [D7]done

@@ -1,6 +1,6 @@
 {meta: title Christmas In Killarney}
 {meta: artist Anne Murray}
-{meta: writer Frank Weldon, James Cavanaugh, John Redmond}
+{meta: composer Frank Weldon, James Cavanaugh, John Redmond}
 
 {start_of_verse: Verse 1}
 [G]The holly green the ivy green

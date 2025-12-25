@@ -1,6 +1,6 @@
 {meta: title It Ain’t Easy Being Me}
 {meta: artist John Anderson}
-{meta: writer Chris Knight and Craig Wiseman}
+{meta: composer Chris Knight and Craig Wiseman}
 
 {start_of_verse: Verse 1}
 [G]There oughta be a town somewhere [Em]named [D7]for how I [C]feel

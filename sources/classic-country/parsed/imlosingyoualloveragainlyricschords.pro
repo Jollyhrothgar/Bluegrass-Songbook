@@ -1,6 +1,6 @@
 {meta: title I'm Losing You All Over Again}
 {meta: artist Keith Whitley}
-{meta: writer Bill Caswell and Keith Whitley}
+{meta: composer Bill Caswell and Keith Whitley}
 
 {start_of_verse: Verse 1}
 [C]Everywhere I turn someone [Am]reminds me of you

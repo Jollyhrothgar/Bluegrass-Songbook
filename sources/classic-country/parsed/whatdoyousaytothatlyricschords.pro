@@ -1,6 +1,6 @@
 {meta: title What Do You Say To That}
 {meta: artist George Strait}
-{meta: writer Melba Montgomery and Jim Lauderdale}
+{meta: composer Melba Montgomery and Jim Lauderdale}
 
 {start_of_verse: Verse 1}
 [G]You're like the [C]warm sun[D7]shine I [G]think of you [C]all the [D7]time

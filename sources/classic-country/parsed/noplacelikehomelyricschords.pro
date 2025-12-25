@@ -1,6 +1,6 @@
 {meta: title No Place Like Home}
 {meta: artist Randy Travis}
-{meta: writer Paul Overstreet}
+{meta: composer Paul Overstreet}
 
 {start_of_verse: Verse 1}
 [C]There's my easy chair just sittin' there [F]I've spent a lot of [C]time[F]

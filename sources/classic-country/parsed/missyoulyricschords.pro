@@ -1,6 +1,6 @@
 {meta: title Miss You}
 {meta: artist Webb Pierce}
-{meta: writer Audrey Grisham and Sylvia Fisher}
+{meta: composer Audrey Grisham and Sylvia Fisher}
 
 {start_of_verse: Verse 1}
 [G]Miss you miss you I [D7]need you so

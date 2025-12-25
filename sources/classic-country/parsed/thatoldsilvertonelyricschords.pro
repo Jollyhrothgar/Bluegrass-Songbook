@@ -1,6 +1,6 @@
 {meta: title That Old Silvertone}
 {meta: artist Vern Gosdin}
-{meta: writer David Wayne Hearne}
+{meta: composer David Wayne Hearne}
 
 {start_of_verse: Verse 1}
 [C]He used to play the Opry [F]when he was on a roll

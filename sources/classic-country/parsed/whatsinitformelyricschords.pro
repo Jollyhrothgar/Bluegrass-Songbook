@@ -1,6 +1,6 @@
 {meta: title What's In It For Me}
 {meta: artist Jim Reeves}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]I know that I'm [F]a fool to keep [G7]on loving you so [C]hopelessly

@@ -1,6 +1,6 @@
 {meta: title Every Now And Then}
 {meta: artist Garth Brooks}
-{meta: writer Buddy Mondlock and Garth Brooks}
+{meta: composer Buddy Mondlock and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]I walked [F]down to the [G7]park last night 

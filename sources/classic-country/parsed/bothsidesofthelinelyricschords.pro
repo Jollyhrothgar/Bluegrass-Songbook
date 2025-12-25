@@ -1,6 +1,6 @@
 {meta: title Both Sides Of The Line}
 {meta: artist Wanda Jackson}
-{meta: writer Marian Francis}
+{meta: composer Marian Francis}
 
 {start_of_verse: Verse 1}
 [G]You just gotta walk on both [C]sides of the [G]line

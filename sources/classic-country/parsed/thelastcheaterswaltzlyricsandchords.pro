@@ -1,6 +1,6 @@
 {meta: title The Last Cheater's Waltz}
 {meta: artist Emmylou Harris}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [G]She's going to pieces when he walked in the door

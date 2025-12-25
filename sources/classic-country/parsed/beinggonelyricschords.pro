@@ -1,6 +1,6 @@
 {meta: title Being Gone}
 {meta: artist Tammy Wynette}
-{meta: writer Bill Taylor, Bobby Keel, Judi Tigert}
+{meta: composer Bill Taylor, Bobby Keel, Judi Tigert}
 
 {start_of_verse: Verse 1}
 [D7]Never [G]thought that you'd be leavin' 

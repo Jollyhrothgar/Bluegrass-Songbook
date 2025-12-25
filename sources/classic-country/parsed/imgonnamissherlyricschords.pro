@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Miss Her}
 {meta: artist Brad Paisley}
-{meta: writer Frank Rogers and Brad Paisley}
+{meta: composer Frank Rogers and Brad Paisley}
 
 {start_of_verse: Verse 1}
 [G7]Well I [C]love her [Em]    [F]but I love to fish

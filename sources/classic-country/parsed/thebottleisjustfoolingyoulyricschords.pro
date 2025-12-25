@@ -1,6 +1,6 @@
 {meta: title The Bottle Is Just Fooling You}
 {meta: artist Carl Smith}
-{meta: writer Wayne P. Walker and Max Powell}
+{meta: composer Wayne P. Walker and Max Powell}
 
 {start_of_verse: Verse 1}
 [C]Now just as fast as that bottle is [F]passed

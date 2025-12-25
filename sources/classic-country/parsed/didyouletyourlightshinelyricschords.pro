@@ -1,6 +1,6 @@
 {meta: title Did You Let Your Light Shine}
 {meta: artist Connie Smith}
-{meta: writer Barbara Miller}
+{meta: composer Barbara Miller}
 
 {start_of_verse: Verse 1}
 [C]When you told that man about Jesus and his precious love

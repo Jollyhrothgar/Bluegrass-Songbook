@@ -1,6 +1,6 @@
 {meta: title Willy The Wandering Gypsy And Me}
 {meta: artist Tom T. Hall}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [C]Three fingers whiskey [F]pleasures the drinker

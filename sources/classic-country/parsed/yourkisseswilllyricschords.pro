@@ -1,6 +1,6 @@
 {meta: title Your Kisses Will}
 {meta: artist Crystal Gayle}
-{meta: writer Van Stephenson}
+{meta: composer Van Stephenson}
 
 {start_of_verse: Verse 1}
 [G]Sometimes when I get in this [C]mood

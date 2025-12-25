@@ -1,6 +1,6 @@
 {meta: title Well Of His Mercy}
 {meta: artist Connie Smith}
-{meta: writer Wayne Manning}
+{meta: composer Wayne Manning}
 
 {start_of_verse: Verse 1}
 [G]Most [C]of my [G]life had been filled [C]with de[G]spair

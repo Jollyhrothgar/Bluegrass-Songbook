@@ -1,6 +1,6 @@
 {meta: title Why Don't You Tell Me}
 {meta: artist J.D. Crowe & the New South}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]I can tell by the look in your eyes

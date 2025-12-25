@@ -1,6 +1,6 @@
 {meta: title Heartaches by the Number}
 {meta: artist Ray Price}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Heartache number one was when you left [F]me

@@ -1,6 +1,6 @@
 {meta: title So Afraid}
 {meta: artist Faron Young}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [G]Looking in your eyes and finding only a reflection there of [D7]me

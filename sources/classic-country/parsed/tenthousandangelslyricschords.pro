@@ -1,6 +1,6 @@
 {meta: title Ten Thousand Angels}
 {meta: artist Loretta Lynn}
-{meta: writer Ray Overholt}
+{meta: composer Ray Overholt}
 
 {start_of_verse: Verse 1}
 [G]He could have [C]called ten thousand [G]angels

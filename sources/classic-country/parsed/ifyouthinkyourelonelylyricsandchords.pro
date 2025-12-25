@@ -1,6 +1,6 @@
 {meta: title If You Think You're Lonely}
 {meta: artist Johnny Paycheck}
-{meta: writer Linda Buell, Carl Rupp, Larry Johnson}
+{meta: composer Linda Buell, Carl Rupp, Larry Johnson}
 
 {start_of_verse: Verse 1}
 [G]Yes it's me tonight alone and [G7]I'm sure missing [C]you

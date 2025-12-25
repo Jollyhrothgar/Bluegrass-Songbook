@@ -1,6 +1,6 @@
 {meta: title Heart Aching Blues}
 {meta: artist Ray Price}
-{meta: writer Jimmy Fields, Ray Pulley, Ray Price}
+{meta: composer Jimmy Fields, Ray Pulley, Ray Price}
 
 {start_of_verse: Verse 1}
 [G]I tried so [D7]hard to lose these heart aching [G]blues

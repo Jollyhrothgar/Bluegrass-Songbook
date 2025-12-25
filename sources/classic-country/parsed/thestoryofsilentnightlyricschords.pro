@@ -1,6 +1,6 @@
 {meta: title The Story Of Silent Night}
 {meta: artist Faron Young}
-{meta: writer Bill Emerson and Jody Emerson}
+{meta: composer Bill Emerson and Jody Emerson}
 
 {start_of_verse: Verse 1}
 [G]One Christmas Eve a great song was written

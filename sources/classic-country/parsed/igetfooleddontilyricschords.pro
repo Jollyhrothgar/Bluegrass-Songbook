@@ -1,6 +1,6 @@
 {meta: title I Get Fooled Don't I}
 {meta: artist Sonny James}
-{meta: writer Carole Smith and Sonny James}
+{meta: composer Carole Smith and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]Each time you promise you'll be [Dm]true 

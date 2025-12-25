@@ -1,6 +1,6 @@
 {meta: title Christmas With You}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash}
+{meta: composer Johnny Cash}
 
 {start_of_verse: Verse 1}
 [G]It's so nice to spend [D7]Christmas with [G]you

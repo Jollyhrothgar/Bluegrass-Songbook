@@ -1,6 +1,6 @@
 {meta: title Shed Me No Tears}
 {meta: artist Jeannie C. Riley}
-{meta: writer Steve Singleton}
+{meta: composer Steve Singleton}
 
 {start_of_verse: Verse 1}
 [G]When I am [C]gone sing for me no sad [D7]songs

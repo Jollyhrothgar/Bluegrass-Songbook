@@ -1,6 +1,6 @@
 {meta: title I Told My World To Go Away}
 {meta: artist Conway Twitty}
-{meta: writer Mickey Jaco}
+{meta: composer Mickey Jaco}
 
 {start_of_verse: Verse 1}
 [G]I grew tired of the [C]world that I was [G]living in

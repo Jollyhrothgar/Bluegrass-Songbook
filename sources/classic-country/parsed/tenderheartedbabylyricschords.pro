@@ -1,6 +1,6 @@
 {meta: title Tender Hearted Baby}
 {meta: artist George Hamilton IV}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 Tender Hearted Baby

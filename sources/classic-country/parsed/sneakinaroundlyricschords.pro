@@ -1,6 +1,6 @@
 {meta: title Sneakin' Around}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]Saturday [F]evenin' your [C]honey and [F]you

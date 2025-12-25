@@ -1,6 +1,6 @@
 {meta: title Go Back You Fool}
 {meta: artist Faron Young}
-{meta: writer Donald Robertson and Hal Blair}
+{meta: composer Donald Robertson and Hal Blair}
 
 {start_of_verse: Verse 1}
 [C]You’re heading down a lonely road that [F]someday you’ll [C]regret

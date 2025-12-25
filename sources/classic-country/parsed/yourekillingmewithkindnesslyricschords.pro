@@ -1,6 +1,6 @@
 {meta: title You're Killing Me With Kindness}
 {meta: artist Freddie Hart}
-{meta: writer Freddie Hart and Mary Bourget}
+{meta: composer Freddie Hart and Mary Bourget}
 
 {start_of_verse: Verse 1}
 [F]You're killing me with [C]kindness

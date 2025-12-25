@@ -1,6 +1,6 @@
 {meta: title It's Best You Know}
 {meta: artist George Morgan}
-{meta: writer Danny Dill}
+{meta: composer Danny Dill}
 
 {start_of_verse: Verse 1}
 [C]You might never find that [C7]I have been [F]unfaithful to [C]you

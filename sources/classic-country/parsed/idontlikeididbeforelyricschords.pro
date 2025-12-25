@@ -1,6 +1,6 @@
 {meta: title I Don't Like I Did Before}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Horton and Claud King}
+{meta: composer Johnny Horton and Claud King}
 
 {start_of_verse: Verse 1}
 [C]Well you can't thrill me no more

@@ -1,6 +1,6 @@
 {meta: title She Cheats On Me}
 {meta: artist Ferlin Husky}
-{meta: writer Glenn Barber}
+{meta: composer Glenn Barber}
 
 {start_of_verse: Verse 1}
 [G]She wakes me every [Em]morning with a touch of her hand

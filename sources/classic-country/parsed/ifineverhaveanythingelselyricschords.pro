@@ -1,6 +1,6 @@
 {meta: title If I Never Have Anything Else}
 {meta: artist Ernest Tubb}
-{meta: writer Vic McAlpin and Ernest Tubb}
+{meta: composer Vic McAlpin and Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [G]It would be nice if I could buy you almost [D7]anything

@@ -1,6 +1,6 @@
 {meta: title Close The Door Lightly}
 {meta: artist The Dillards}
-{meta: writer Eric Andersen}
+{meta: composer Eric Andersen}
 
 {start_of_verse: Verse 1}
 [G]Turn [D7]around don’t whisper out my [G]name

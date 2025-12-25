@@ -1,6 +1,6 @@
 {meta: title Are We In Trouble Now}
 {meta: artist Randy Travis}
-{meta: writer Mark Knopfler}
+{meta: composer Mark Knopfler}
 
 {start_of_verse: Verse 1}
 [G7]Wasn't just the [C]music [F]wasn't just the [C]wine

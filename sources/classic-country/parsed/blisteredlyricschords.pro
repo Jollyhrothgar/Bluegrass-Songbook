@@ -1,6 +1,6 @@
 {meta: title Blistered}
 {meta: artist Johnny Cash}
-{meta: writer Billy Edd Wheeler}
+{meta: composer Billy Edd Wheeler}
 
 {start_of_verse: Verse 1}
 [G]I got great big blisters on my bloodshot eyes from lookin'

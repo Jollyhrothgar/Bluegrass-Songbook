@@ -1,6 +1,6 @@
 {meta: title Unchained Melody}
 {meta: artist Mel Tillis}
-{meta: writer Hy Zaret and Alex North}
+{meta: composer Hy Zaret and Alex North}
 
 {start_of_verse: Verse 1}
 [G]Oh my [Em]love my [C]darling

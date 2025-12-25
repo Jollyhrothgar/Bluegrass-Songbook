@@ -1,6 +1,6 @@
 {meta: title Where I'm Concerned}
 {meta: artist Gene Watson}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [D7]Well [G]I appreciate your call [A7]no I hardly miss her at all

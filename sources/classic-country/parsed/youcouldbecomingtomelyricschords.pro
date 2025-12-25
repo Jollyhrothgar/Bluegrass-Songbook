@@ -1,6 +1,6 @@
 {meta: title You Could Be Coming To Me}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [C]I hear stories and rumors going [F]round about [Dm]you

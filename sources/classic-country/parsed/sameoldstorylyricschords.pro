@@ -1,6 +1,6 @@
 {meta: title Same Old Story}
 {meta: artist Hank Williams Jr.}
-{meta: writer Lamar Morris, Warren Keith, Hank Williams Jr.}
+{meta: composer Lamar Morris, Warren Keith, Hank Williams Jr.}
 
 {start_of_verse: Verse 1}
 [G]Hey there lonely girl can I [Am]sit with you

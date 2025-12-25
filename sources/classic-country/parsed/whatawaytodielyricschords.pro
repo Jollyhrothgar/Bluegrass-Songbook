@@ -1,6 +1,6 @@
 {meta: title What A Way To Die}
 {meta: artist Eddy Arnold}
-{meta: writer Marvin Moore and Danny Wolfe}
+{meta: composer Marvin Moore and Danny Wolfe}
 
 {start_of_verse: Verse 1}
 [G]When my baby holds me  [G7]I feel so [C]good

@@ -1,6 +1,6 @@
 {meta: title Just A Drink Away}
 {meta: artist Ernest Tubb}
-{meta: writer Bobby Lewis and Billy Parker}
+{meta: composer Bobby Lewis and Billy Parker}
 
 {start_of_verse: Verse 1}
 [C]See that girl at the bar

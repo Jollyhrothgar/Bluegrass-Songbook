@@ -1,6 +1,6 @@
 {meta: title Twice The Fool}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Jimmy Dickens and Skip Graves}
+{meta: composer Jimmy Dickens and Skip Graves}
 
 {start_of_verse: Verse 1}
 [G]This morning I’m leavin’ I've [C]been up all night [G]long

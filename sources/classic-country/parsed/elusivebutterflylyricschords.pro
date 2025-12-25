@@ -1,6 +1,6 @@
 {meta: title Elusive Butterfly}
 {meta: artist Glen Campbell}
-{meta: writer Bob Lind}
+{meta: composer Bob Lind}
 
 {start_of_verse: Verse 1}
 [C]You might wake up some [Dm]morning

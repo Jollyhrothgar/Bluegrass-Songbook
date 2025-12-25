@@ -1,6 +1,6 @@
 {meta: title Heart To Heart And Fool To Fool}
 {meta: artist Jean Shepard}
-{meta: writer Billy Smith and Jim House}
+{meta: composer Billy Smith and Jim House}
 
 {start_of_verse: Verse 1}
 [C]If you could look through the eyes [F]that have been [C]there

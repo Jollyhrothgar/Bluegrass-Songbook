@@ -1,6 +1,6 @@
 {meta: title Stand On My Own Two Knees}
 {meta: artist George Jones}
-{meta: writer Roger Dale Bowling and Jan Crutchfield}
+{meta: composer Roger Dale Bowling and Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]I've tried everything I [F]know to make you [C]happy

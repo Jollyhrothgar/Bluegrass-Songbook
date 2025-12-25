@@ -1,6 +1,6 @@
 {meta: title Sometimes Out Of Touch}
 {meta: artist Alabama}
-{meta: writer Teddy Gentry, Greg Fowler, Ronnie Rogers}
+{meta: composer Teddy Gentry, Greg Fowler, Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [G7]There were times I stood my [C]ground 

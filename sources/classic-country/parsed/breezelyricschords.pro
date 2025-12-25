@@ -1,6 +1,6 @@
 {meta: title Breeze}
 {meta: artist Mickey Gilley}
-{meta: writer Ted Daffan and Bernard Landes}
+{meta: composer Ted Daffan and Bernard Landes}
 
 {start_of_verse: Verse 1}
 [C]When you blew my gal [G7]away

@@ -1,6 +1,6 @@
 {meta: title If The Devil Danced In Empty Pockets}
 {meta: artist Joe Diffie}
-{meta: writer Kim Williams and Ken Spooner}
+{meta: composer Kim Williams and Ken Spooner}
 
 {start_of_verse: Verse 1}
 [G]Diab[C]lo motors had a hell of a sale downtown yester[G]day

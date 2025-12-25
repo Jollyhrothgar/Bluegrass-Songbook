@@ -1,6 +1,6 @@
 {meta: title Love And Wealth}
 {meta: artist Charlie Louvin}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [G]Darling I am all alone in our [C]little mountain [G]home

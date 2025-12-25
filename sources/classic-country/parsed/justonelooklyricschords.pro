@@ -1,6 +1,6 @@
 {meta: title Just One Look}
 {meta: artist Anne Murray}
-{meta: writer Gergory Carroll and Doris Payne}
+{meta: composer Gergory Carroll and Doris Payne}
 
 {start_of_verse: Verse 1}
 [C]Just one look and I fell so hard hard [Am]hard

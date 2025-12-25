@@ -1,6 +1,6 @@
 {meta: title You Can't Say No In Acapulco}
 {meta: artist Elvis Presley}
-{meta: writer Dolores Fuller, Sid Fuller, Lee Morris}
+{meta: composer Dolores Fuller, Sid Fuller, Lee Morris}
 
 {start_of_verse: Verse 1}
 [C]You can't [D7]say [G]no in [C]Acapul[Am]co 

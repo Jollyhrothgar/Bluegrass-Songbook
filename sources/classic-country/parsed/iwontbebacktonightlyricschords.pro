@@ -1,6 +1,6 @@
 {meta: title I Won't Be Back Tonight}
 {meta: artist Jody Nix}
-{meta: writer Artie Glenn}
+{meta: composer Artie Glenn}
 
 {start_of_verse: Verse 1}
 [G]I won’t be back tonight or [C]ever

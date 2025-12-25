@@ -1,6 +1,6 @@
 {meta: title Honky Tonkitis}
 {meta: artist Billy Walker}
-{meta: writer Tex Atchison}
+{meta: composer Tex Atchison}
 
 {start_of_verse: Verse 1}
 [C]I've got a strong suspicion that my [F]baby's coming down

@@ -1,6 +1,6 @@
 {meta: title Action}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Johny Hicks}
+{meta: composer Johny Hicks}
 
 {start_of_verse: Verse 1}
 [G]I had enough of walking enough of talking enough of holding hands

@@ -1,6 +1,6 @@
 {meta: title C'mon Sixty Five}
 {meta: artist Merle Haggard}
-{meta: writer Jackson Lee Leap}
+{meta: composer Jackson Lee Leap}
 
 {start_of_verse: Verse 1}
 [C]Somewhere on the old Kern River [F]there's an old cane [C]pole 

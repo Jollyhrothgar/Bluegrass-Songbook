@@ -1,6 +1,6 @@
 {meta: title Rise and Shine}
 {meta: artist Tommy Cash}
-{meta: writer Carl Perkins}
+{meta: composer Carl Perkins}
 
 {start_of_verse: Verse 1}
 [C]Little children do not worry cause you still got lots of [Dm]time

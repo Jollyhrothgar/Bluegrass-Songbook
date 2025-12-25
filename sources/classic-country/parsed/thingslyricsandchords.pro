@@ -1,6 +1,6 @@
 {meta: title Things}
 {meta: artist The Wilburn Brothers}
-{meta: writer Bobby Darin}
+{meta: composer Bobby Darin}
 
 {start_of_verse: Verse 1}
 [C]Every night I sit here by my window

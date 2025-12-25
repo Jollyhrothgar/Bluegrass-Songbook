@@ -1,6 +1,6 @@
 {meta: title Going Going Gone}
 {meta: artist Billy Walker}
-{meta: writer Alex Kramer and Joan Whitney}
+{meta: composer Alex Kramer and Joan Whitney}
 
 {start_of_verse: Verse 1}
 [C]What am I bid for an [F]old guit[C]ar

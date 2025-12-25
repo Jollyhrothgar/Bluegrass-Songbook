@@ -1,6 +1,6 @@
 {meta: title Bayou Bum}
 {meta: artist Johnny Paycheck}
-{meta: writer Donny Young, Aubrey Mayhew, Arnie Adams}
+{meta: composer Donny Young, Aubrey Mayhew, Arnie Adams}
 
 {start_of_verse: Verse 1}
 [G]Well I fish all day from my boat that’s the way I make my living

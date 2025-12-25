@@ -1,6 +1,6 @@
 {meta: title Shadows On The Wall}
 {meta: artist Gene Watson}
-{meta: writer Thomas Becket}
+{meta: composer Thomas Becket}
 
 {start_of_verse: Verse 1}
 [C]I was walking past your window late last [D7]night

@@ -1,6 +1,6 @@
 {meta: title Angel Of The Morning}
 {meta: artist Juice Newton}
-{meta: writer Chip Taylor}
+{meta: composer Chip Taylor}
 
 {start_of_verse: Verse 1}
 [G]There'll be no [C]strings to bind your [D7]hands

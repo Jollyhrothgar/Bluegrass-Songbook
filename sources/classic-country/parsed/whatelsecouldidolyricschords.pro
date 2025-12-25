@@ -1,6 +1,6 @@
 {meta: title What Else Could I Do}
 {meta: artist Rhonda Vincent}
-{meta: writer Curtis Wright and Robert E. Orrall}
+{meta: composer Curtis Wright and Robert E. Orrall}
 
 {start_of_verse: Verse 1}
 [F]Lately I've been [C]living with my [G7]heart on the [C]mend

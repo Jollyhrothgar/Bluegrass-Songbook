@@ -1,6 +1,6 @@
 {meta: title Lover In Disguise}
 {meta: artist George Strait}
-{meta: writer Blake Mevis and Jim Dowell}
+{meta: composer Blake Mevis and Jim Dowell}
 
 {start_of_verse: Verse 1}
 [Am]There's a [C]secret that I know bout [Em]the lady I love so

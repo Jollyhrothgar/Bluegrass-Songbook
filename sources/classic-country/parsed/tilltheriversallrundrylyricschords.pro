@@ -1,6 +1,6 @@
 {meta: title Till the Rivers All Run Dry}
 {meta: artist Don Williams}
-{meta: writer Wayon Holyfield and Don Williams}
+{meta: composer Wayon Holyfield and Don Williams}
 
 {start_of_verse: Verse 1}
 [G]Till the rivers [C]all run [G]dry 

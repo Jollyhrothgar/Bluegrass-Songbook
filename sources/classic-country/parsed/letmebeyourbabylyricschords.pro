@@ -1,6 +1,6 @@
 {meta: title Let Me Be Your Baby}
 {meta: artist Charly McClain}
-{meta: writer Bob Morrison and Johnny McRae}
+{meta: composer Bob Morrison and Johnny McRae}
 
 {start_of_verse: Verse 1}
 [G]Let me be your baby hold me close [C]tonight

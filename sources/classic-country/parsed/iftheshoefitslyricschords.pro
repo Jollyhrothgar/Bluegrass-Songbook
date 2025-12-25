@@ -1,6 +1,6 @@
 {meta: title If The Shoe Fits}
 {meta: artist Waylon Jennings}
-{meta: writer Harlan Howard and Freddie Hart}
+{meta: composer Harlan Howard and Freddie Hart}
 
 {start_of_verse: Verse 1}
 [C]My friends all say that you're deceiving [F]me

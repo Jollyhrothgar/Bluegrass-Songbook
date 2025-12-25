@@ -1,6 +1,6 @@
 {meta: title My Loved Ones Are Waiting For Me}
 {meta: artist Kitty Wells}
-{meta: writer James D. Vaughn}
+{meta: composer James D. Vaughn}
 
 {start_of_verse: Verse 1}
 [C]When I shall cross over the [F]dark rolling [C]tide

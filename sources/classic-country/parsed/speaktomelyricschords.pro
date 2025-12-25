@@ -1,6 +1,6 @@
 {meta: title Speak To Me}
 {meta: artist Carl Belew}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [C](Is there anybody here) as lonely as [G7]I am

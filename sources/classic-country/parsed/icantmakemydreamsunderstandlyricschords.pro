@@ -1,6 +1,6 @@
 {meta: title I Can't Make My Dreams Understand}
 {meta: artist Wanda Jackson}
-{meta: writer Buck Bryant and James West}
+{meta: composer Buck Bryant and James West}
 
 {start_of_verse: Verse 1}
 [G]I kiss him good[C]night and tell him I [G]love him 

@@ -1,6 +1,6 @@
 {meta: title Gonna Wrap My Heart In Ribbons}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson, Johnny Hatchcock, Weldon Allard}
+{meta: composer Hank Thompson, Johnny Hatchcock, Weldon Allard}
 
 {start_of_verse: Verse 1}
 [G]I’m gonna wrap my heart in ribbons and [G7]hang it on your Christmas [C]tree

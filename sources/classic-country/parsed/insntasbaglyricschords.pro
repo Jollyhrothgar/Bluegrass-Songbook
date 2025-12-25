@@ -1,6 +1,6 @@
 {meta: title In Santa's Bag}
 {meta: artist Ferlin Husky}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [D7]In Santa's [G]bag there's lots of toys for [C]little girls and little boys

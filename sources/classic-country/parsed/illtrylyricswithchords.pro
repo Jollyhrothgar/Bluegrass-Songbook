@@ -1,6 +1,6 @@
 {meta: title I'll Try}
 {meta: artist Vern Gosdin}
-{meta: writer Wayne Bradford}
+{meta: composer Wayne Bradford}
 
 {start_of_verse: Verse 1}
 [G]If you need a helping [Bm]hand

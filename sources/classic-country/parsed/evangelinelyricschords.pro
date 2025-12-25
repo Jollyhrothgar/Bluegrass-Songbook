@@ -1,6 +1,6 @@
 {meta: title Evangeline}
 {meta: artist Emmylou Harris}
-{meta: writer Robbie Robertson}
+{meta: composer Robbie Robertson}
 
 {start_of_verse: Verse 1}
 [C]She stands on the banks of the mighty Mississippi

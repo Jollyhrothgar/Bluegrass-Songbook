@@ -1,6 +1,6 @@
 {meta: title Bye Bye Blackbird}
 {meta: artist The Everly Brothers}
-{meta: writer Ray Henderson and Mort Dixon}
+{meta: composer Ray Henderson and Mort Dixon}
 
 {start_of_verse: Verse 1}
 [G]Pack up all my [C]care and [G]woe

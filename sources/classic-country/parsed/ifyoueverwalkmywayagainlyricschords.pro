@@ -1,6 +1,6 @@
 {meta: title If You Ever Walk My Way Again}
 {meta: artist Faron Young}
-{meta: writer Annie Laurie Fowler}
+{meta: composer Annie Laurie Fowler}
 
 {start_of_verse: Verse 1}
 [C]Will you stop by if you ever walk my [G7]way again

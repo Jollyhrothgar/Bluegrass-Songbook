@@ -1,6 +1,6 @@
 {meta: title One More Day}
 {meta: artist Ernest Tubb}
-{meta: writer Pete Drake}
+{meta: composer Pete Drake}
 
 {start_of_verse: Verse 1}
 [G]I’m not here to [C]talk about [G]bygones 

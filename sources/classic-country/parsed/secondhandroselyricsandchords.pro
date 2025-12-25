@@ -1,6 +1,6 @@
 {meta: title Second Hand Rose}
 {meta: artist Ferlin Husky}
-{meta: writer Harlan Howard, Grant Clarke, James Hanley}
+{meta: composer Harlan Howard, Grant Clarke, James Hanley}
 
 {start_of_verse: Verse 1}
 [C]Second hand shoes second hand clothes 

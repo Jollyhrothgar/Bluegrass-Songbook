@@ -1,6 +1,6 @@
 {meta: title God Will Take Care of You}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Civilla D. Martin and W. Stillman Martin}
+{meta: composer Civilla D. Martin and W. Stillman Martin}
 
 {start_of_verse: Verse 1}
 [C]Be not dismayed whatever betide

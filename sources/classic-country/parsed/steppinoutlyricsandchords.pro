@@ -1,6 +1,6 @@
 {meta: title Steppin' Out}
 {meta: artist Lefty Frizzell}
-{meta: writer Billy Starr}
+{meta: composer Billy Starr}
 
 {start_of_verse: Verse 1}
 [C]When me and my baby go steppin' out

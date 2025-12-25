@@ -1,6 +1,6 @@
 {meta: title He's Still My Man}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill}
+{meta: composer Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [G]My man can [D7]make my heart feel [G]sad

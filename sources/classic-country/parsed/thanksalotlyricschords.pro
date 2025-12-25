@@ -1,6 +1,6 @@
 {meta: title Thanks A Lot}
 {meta: artist Johnny Cash}
-{meta: writer Charlie Rich}
+{meta: composer Charlie Rich}
 
 {start_of_verse: Verse 1}
 [G]You're tellin' every[C]one in town that [D7]I don't treat you [G]right

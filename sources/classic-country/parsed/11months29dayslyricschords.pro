@@ -1,6 +1,6 @@
 {meta: title 11 Months 29 Days}
 {meta: artist Johnny Paycheck}
-{meta: writer Billy Sherrill and Johnny Paycheck}
+{meta: composer Billy Sherrill and Johnny Paycheck}
 
 {start_of_verse: Verse 1}
 [G]Busted in Austin walking around in a daze 

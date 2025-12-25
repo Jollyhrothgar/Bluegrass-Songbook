@@ -1,6 +1,6 @@
 {meta: title Can You Match That Kind Of Love}
 {meta: artist Johnny Duncan}
-{meta: writer Don Devaney}
+{meta: composer Don Devaney}
 
 {start_of_verse: Verse 1}
 [C]My love for you is [F]like old [C]wine

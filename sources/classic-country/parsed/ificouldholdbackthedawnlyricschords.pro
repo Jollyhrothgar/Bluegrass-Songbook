@@ -1,6 +1,6 @@
 {meta: title If I Could Hold Back The Dawn}
 {meta: artist Carl Smith}
-{meta: writer Carl Butler}
+{meta: composer Carl Butler}
 
 {start_of_verse: Verse 1}
 [G]When you [C]called me and said you had to see [G]me

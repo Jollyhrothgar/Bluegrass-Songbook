@@ -1,6 +1,6 @@
 {meta: title Let's Make A Nice Memory}
 {meta: artist Ray Price}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]Let's make a nice memory [F]today

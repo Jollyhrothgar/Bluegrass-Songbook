@@ -1,6 +1,6 @@
 {meta: title Mama's Rockin' Chair}
 {meta: artist John Conlee}
-{meta: writer Johnny McRae and Tim Mensy}
+{meta: composer Johnny McRae and Tim Mensy}
 
 {start_of_verse: Verse 1}
 [G]When I think of my childhood [C]days

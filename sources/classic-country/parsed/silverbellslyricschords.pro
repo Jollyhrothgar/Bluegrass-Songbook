@@ -1,6 +1,6 @@
 {meta: title Silver Bells}
 {meta: artist Brenda Lee}
-{meta: writer J. Livingston and Ray Evans}
+{meta: composer J. Livingston and Ray Evans}
 
 {start_of_verse: Verse 1}
 [C]City sidewalks busy [Em]sidewalks  

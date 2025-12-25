@@ -1,6 +1,6 @@
 {meta: title Blue Night}
 {meta: artist Ricky Skaggs}
-{meta: writer Kirk McGee}
+{meta: composer Kirk McGee}
 
 {start_of_verse: Verse 1}
 [G]Blue night I got you on my mind

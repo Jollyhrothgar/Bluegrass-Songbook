@@ -1,6 +1,6 @@
 {meta: title When The Roses Bloom Again}
 {meta: artist Johnny Cash}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]In the rattle of the battle came a whisper soft and low

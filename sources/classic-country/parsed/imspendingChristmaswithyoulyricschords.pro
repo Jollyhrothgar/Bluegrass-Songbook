@@ -1,6 +1,6 @@
 {meta: title I'm Spending Christmas With You}
 {meta: artist Mickey Gilley}
-{meta: writer Tom Occhipint}
+{meta: composer Tom Occhipint}
 
 {start_of_verse: Verse 1}
 [C]The snow is gently [Am]falling [F]the night is so [Fm]cold

@@ -1,6 +1,6 @@
 {meta: title Jesus Is Knocking at the Door}
 {meta: artist Lifebreakthrough}
-{meta: writer Hubert Aniban Dapliyan}
+{meta: composer Hubert Aniban Dapliyan}
 
 {start_of_verse: Verse 1}
 [C]You may be feeling empty

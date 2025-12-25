@@ -1,6 +1,6 @@
 {meta: title Just Someone I Used to Know}
 {meta: artist Rhonda Vincent}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [G]There's a [C]picture that I [G]carry

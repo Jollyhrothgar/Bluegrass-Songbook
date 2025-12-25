@@ -1,6 +1,6 @@
 {meta: title An Evening Prayer}
 {meta: artist Mel Tillis}
-{meta: writer Charles H. Gabriel and C.M. Battersby}
+{meta: composer Charles H. Gabriel and C.M. Battersby}
 
 {start_of_verse: Verse 1}
 [C]If I have wounded some poor [G7]soul [F]today

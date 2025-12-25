@@ -1,6 +1,6 @@
 {meta: title Without You}
 {meta: artist Johnny Tillotson}
-{meta: writer Faye Bradshaw}
+{meta: composer Faye Bradshaw}
 
 {start_of_verse: Verse 1}
 [C]You made me happy you made me sing

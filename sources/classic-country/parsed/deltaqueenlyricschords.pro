@@ -1,6 +1,6 @@
 {meta: title Delta Queen}
 {meta: artist Ronnie Milsap}
-{meta: writer Kye Fleming and Dennis Morgan}
+{meta: composer Kye Fleming and Dennis Morgan}
 
 {start_of_verse: Verse 1}
 [C]I see her comin' '[D7]round the bend

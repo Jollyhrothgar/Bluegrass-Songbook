@@ -1,6 +1,6 @@
 {meta: title That Makes Two of Us}
 {meta: artist Connie Smith}
-{meta: writer Emory Gordy, Jr., Kostas, Patty Loveless}
+{meta: composer Emory Gordy, Jr., Kostas, Patty Loveless}
 
 {start_of_verse: Verse 1}
 [C]Are you lonely just like [F]me

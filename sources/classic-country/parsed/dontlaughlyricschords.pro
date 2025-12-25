@@ -1,6 +1,6 @@
 {meta: title Don't Laugh}
 {meta: artist Doyle Lawson}
-{meta: writer Rebe Gosdin}
+{meta: composer Rebe Gosdin}
 
 {start_of_verse: Verse 1}
 [G]If I cry when I kiss you or [C]when we say good[G]bye

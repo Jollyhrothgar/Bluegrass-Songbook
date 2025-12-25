@@ -1,6 +1,6 @@
 {meta: title An Occasional Eagle}
 {meta: artist John Anderson}
-{meta: writer Fred Carter}
+{meta: composer Fred Carter}
 
 {start_of_verse: Verse 1}
 [C]High o'er the coast of [F]Alaska he [Dm]flies

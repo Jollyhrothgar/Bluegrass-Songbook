@@ -1,6 +1,6 @@
 {meta: title I Have a Dream}
 {meta: artist Cristy Lane}
-{meta: writer Benny S. Andersson and Bjoern K. Ulvaeus}
+{meta: composer Benny S. Andersson and Bjoern K. Ulvaeus}
 
 {start_of_verse: Verse 1}
 [C]I have a [G7]dream a song to [C]sing

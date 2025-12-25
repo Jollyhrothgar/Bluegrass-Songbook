@@ -1,6 +1,6 @@
 {meta: title Jesus Cares For Me}
 {meta: artist Vince Gill}
-{meta: writer Bart Millard and Thad Cockrell}
+{meta: composer Bart Millard and Thad Cockrell}
 
 {start_of_verse: Verse 1}
 [G]Jesus [D7]cares for [G]me  it [C]seems too good to [G]be

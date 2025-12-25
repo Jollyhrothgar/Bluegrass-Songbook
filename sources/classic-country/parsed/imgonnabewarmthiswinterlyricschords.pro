@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Be Warm This Winter}
 {meta: artist Connie Francis}
-{meta: writer Hank Hunter and Mark Barkan}
+{meta: composer Hank Hunter and Mark Barkan}
 
 {start_of_verse: Verse 1}
 [C]We met in a ski lodge [Dm]and we fell in [G7]love

@@ -1,6 +1,6 @@
 {meta: title Yesterday's Champagne}
 {meta: artist Bobby Helms}
-{meta: writer Sonny James and Carole Smith}
+{meta: composer Sonny James and Carole Smith}
 
 {start_of_verse: Verse 1}
 [G]You look the same you’re just as [D7]sweet as [G]ever

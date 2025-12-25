@@ -1,6 +1,6 @@
 {meta: title Where Do I Go}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew and Bob Jennings}
+{meta: composer Carl Belew and Bob Jennings}
 
 {start_of_verse: Verse 1}
 [C]I'd like to say that I'm okay 

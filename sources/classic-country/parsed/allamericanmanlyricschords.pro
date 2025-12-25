@@ -1,6 +1,6 @@
 {meta: title All American Man}
 {meta: artist Johnny Paycheck}
-{meta: writer Gary Adams and Johnny Paycheck}
+{meta: composer Gary Adams and Johnny Paycheck}
 
 {start_of_verse: Verse 1}
 [G]Well God made man from a [C]piece of [G]clay and [C]told him [G]in his [C]dying day

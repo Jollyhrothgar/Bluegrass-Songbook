@@ -1,6 +1,6 @@
 {meta: title Ain’t Life A Crying Shame}
 {meta: artist Marty Robbins}
-{meta: writer Tony Senn and Harry McDowell}
+{meta: composer Tony Senn and Harry McDowell}
 
 {start_of_verse: Verse 1}
 [G]I'm tied to someone that's true

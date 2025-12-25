@@ -1,6 +1,6 @@
 {meta: title Tabernacle Tom}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [G]The Youngstown tabernacle stood [C]amongst some giant oak [G]trees

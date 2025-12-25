@@ -1,6 +1,6 @@
 {meta: title I've Been Around Love Long Enough}
 {meta: artist Tony Booth}
-{meta: writer Glenn Sutton and Katie Brooks}
+{meta: composer Glenn Sutton and Katie Brooks}
 
 {start_of_verse: Verse 1}
 [G]It's in your eyes it's in your touch [G7]in everything you [C]do 

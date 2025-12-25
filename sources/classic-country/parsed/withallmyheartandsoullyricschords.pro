@@ -1,6 +1,6 @@
 {meta: title With All My Heart And Soul}
 {meta: artist Dottie West}
-{meta: writer Dottie West and Bill West}
+{meta: composer Dottie West and Bill West}
 
 {start_of_verse: Verse 1}
 [C]With all my [F]heart and [C]soul 

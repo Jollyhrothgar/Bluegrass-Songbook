@@ -1,6 +1,6 @@
 {meta: title Crying Over You}
 {meta: artist Norma Jean}
-{meta: writer James Intveld}
+{meta: composer James Intveld}
 
 {start_of_verse: Verse 1}
 [G]Crying cry cry over you

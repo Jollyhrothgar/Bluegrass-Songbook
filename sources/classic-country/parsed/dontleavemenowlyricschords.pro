@@ -1,6 +1,6 @@
 {meta: title Don't Leave Me Now}
 {meta: artist Elvis Presley}
-{meta: writer Aaron Schroeder and Ben Weisman}
+{meta: composer Aaron Schroeder and Ben Weisman}
 
 {start_of_verse: Verse 1}
 [C]Don't leave me now now that [C7]I need [F]you

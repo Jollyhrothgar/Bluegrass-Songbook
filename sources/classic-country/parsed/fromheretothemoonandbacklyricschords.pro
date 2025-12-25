@@ -1,6 +1,6 @@
 {meta: title From Here To The Moon And Back}
 {meta: artist Willie Nelson}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]I could hold out my arms say I [F]love you this much 

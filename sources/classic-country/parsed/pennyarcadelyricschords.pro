@@ -1,6 +1,6 @@
 {meta: title Penny Arcade}
 {meta: artist Roy Orbison}
-{meta: writer Sammy King}
+{meta: composer Sammy King}
 
 {start_of_verse: Verse 1}
 [C]A light shone in the night somewhere [F]ahead 

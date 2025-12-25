@@ -1,6 +1,6 @@
 {meta: title Don’t Put Off Till Tomorrow}
 {meta: artist The Shady Grove Band}
-{meta: writer Bill Monroe and Pete Pyle}
+{meta: composer Bill Monroe and Pete Pyle}
 
 {start_of_verse: Verse 1}
 [G]You have no doubt in your mind

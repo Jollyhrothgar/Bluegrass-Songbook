@@ -1,6 +1,6 @@
 {meta: title Don’t It Make You Wanna Go Home}
 {meta: artist Bobby Bare}
-{meta: writer Joe South}
+{meta: composer Joe South}
 
 {start_of_verse: Verse 1}
 [G]Don't it make you want to go home [Am]now

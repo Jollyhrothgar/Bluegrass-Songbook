@@ -1,6 +1,6 @@
 {meta: title Canadian Sunset}
 {meta: artist Anne Murray}
-{meta: writer Norman Gimbel and Eddie Heywood}
+{meta: composer Norman Gimbel and Eddie Heywood}
 
 {start_of_verse: Verse 1}
 [G]Once I was alone

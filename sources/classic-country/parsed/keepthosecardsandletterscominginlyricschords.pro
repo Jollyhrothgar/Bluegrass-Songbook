@@ -1,6 +1,6 @@
 {meta: title Keep Those Cards And Letters Coming In}
 {meta: artist Ernest Tubb}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Didn't wanna be no soldier [D7]didn't want to leave your side

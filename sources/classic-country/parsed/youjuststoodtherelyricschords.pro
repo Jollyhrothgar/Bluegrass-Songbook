@@ -1,6 +1,6 @@
 {meta: title You Just Stood There}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Douglas Glenn Tubb}
+{meta: composer Douglas Glenn Tubb}
 
 {start_of_verse: Verse 1}
 [C]Now you just stood there like a cow in clover

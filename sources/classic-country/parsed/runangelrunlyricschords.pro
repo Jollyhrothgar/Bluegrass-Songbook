@@ -1,6 +1,6 @@
 {meta: title Run Angel Run}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Stuart Phillips}
+{meta: composer Billy Sherrill and Stuart Phillips}
 
 {start_of_verse: Verse 1}
 [G]I follow angel [C]but angels follows the [G]sun

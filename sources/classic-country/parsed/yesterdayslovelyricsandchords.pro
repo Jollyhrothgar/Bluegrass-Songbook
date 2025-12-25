@@ -1,6 +1,6 @@
 {meta: title Yesterday's Love}
 {meta: artist Slim Whitman}
-{meta: writer Tompall Glaser}
+{meta: composer Tompall Glaser}
 
 {start_of_verse: Verse 1}
 [C]You promised to love me [C7]with a love that's [F]sweet

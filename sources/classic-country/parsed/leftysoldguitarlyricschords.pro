@@ -1,6 +1,6 @@
 {meta: title Lefty's Old Guitar}
 {meta: artist J.D. Crowe & the New South}
-{meta: writer Dave Maggard}
+{meta: composer Dave Maggard}
 
 {start_of_verse: Verse 1}
 [G]I don't make much [D7]music these [G]days

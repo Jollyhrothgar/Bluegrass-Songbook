@@ -1,6 +1,6 @@
 {meta: title I Want You With Me}
 {meta: artist Elvis Presley}
-{meta: writer Woody Harris}
+{meta: composer Woody Harris}
 
 {start_of_verse: Verse 1}
 [C]When I was little my mama said to me

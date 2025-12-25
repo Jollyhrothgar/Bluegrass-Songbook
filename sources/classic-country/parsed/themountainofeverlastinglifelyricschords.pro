@@ -1,6 +1,6 @@
 {meta: title The Mountain Of Everlasting Life}
 {meta: artist Ferlin Husky}
-{meta: writer Dallas Frazier and Al Owens}
+{meta: composer Dallas Frazier and Al Owens}
 
 {start_of_verse: Verse 1}
 [C]Somebody lost it go ahead and keep [G7]it

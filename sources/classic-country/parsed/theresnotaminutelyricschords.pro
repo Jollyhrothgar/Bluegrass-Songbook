@@ -1,6 +1,6 @@
 {meta: title There's Not A Minute}
 {meta: artist Ricky Nelson}
-{meta: writer Clint Ballard and Fred Tobias}
+{meta: composer Clint Ballard and Fred Tobias}
 
 {start_of_verse: Verse 1}
 [C]In the morning when I wake and see your [G7]picture

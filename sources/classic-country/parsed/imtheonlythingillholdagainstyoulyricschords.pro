@@ -1,6 +1,6 @@
 {meta: title I'm The Only Thing I'll Hold Against You}
 {meta: artist Conway Twitty}
-{meta: writer William Lon Wilson, Kim Edwin Williams, Joe Diffie}
+{meta: composer William Lon Wilson, Kim Edwin Williams, Joe Diffie}
 
 {start_of_verse: Verse 1}
 [C]Yesterday you [Am]walked away and left [F]me

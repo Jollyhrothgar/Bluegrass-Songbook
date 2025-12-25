@@ -1,6 +1,6 @@
 {meta: title Queen For a Day}
 {meta: artist Wanda Jackson}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Hold me my darling  make me [C]believe

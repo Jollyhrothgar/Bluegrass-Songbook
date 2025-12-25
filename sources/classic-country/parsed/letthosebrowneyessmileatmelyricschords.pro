@@ -1,6 +1,6 @@
 {meta: title Let Those Brown Eyes Smile At Me}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Rusty Nail}
+{meta: composer Rusty Nail}
 
 {start_of_verse: Verse 1}
 [C]Today I feel so sad and weary

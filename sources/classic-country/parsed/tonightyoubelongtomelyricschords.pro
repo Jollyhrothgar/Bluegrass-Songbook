@@ -1,6 +1,6 @@
 {meta: title Tonight You Belong To Me}
 {meta: artist Dottie West}
-{meta: writer Billy Rose and Lee David}
+{meta: composer Billy Rose and Lee David}
 
 {start_of_verse: Verse 1}
 [C]I know (I know)

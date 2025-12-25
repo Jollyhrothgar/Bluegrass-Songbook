@@ -1,6 +1,6 @@
 {meta: title Are We Dreamin' The Same Dream}
 {meta: artist Charlie Rich}
-{meta: writer Johnny Christopher and Billy Burnette}
+{meta: composer Johnny Christopher and Billy Burnette}
 
 {start_of_verse: Verse 1}
 [G]Are you feelin’ the [C]same way 

@@ -1,6 +1,6 @@
 {meta: title I Hang My Head And Cry}
 {meta: artist Marty Robbins}
-{meta: writer Ray Whitley, Gene Autry, Fred Rose}
+{meta: composer Ray Whitley, Gene Autry, Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]Every time I see her passing [F]by

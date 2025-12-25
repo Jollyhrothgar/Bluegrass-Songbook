@@ -1,6 +1,6 @@
 {meta: title Till The Pain Outwears The Shame}
 {meta: artist Loretta Lynn}
-{meta: writer Wiley Smith}
+{meta: composer Wiley Smith}
 
 {start_of_verse: Verse 1}
 [G]It's common knowledge every[C]body knows I [G]love you

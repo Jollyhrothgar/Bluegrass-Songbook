@@ -1,6 +1,6 @@
 {meta: title Is The Magic Still There}
 {meta: artist Alabama}
-{meta: writer Randy Owen, Teddy Gentry, Ronnie Rogers}
+{meta: composer Randy Owen, Teddy Gentry, Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [G7]Is the magic still [C]there  whenever I hold [Dm]you

@@ -1,6 +1,6 @@
 {meta: title You Don't Even Know Who I Am}
 {meta: artist Patty Loveless}
-{meta: writer Gretchen Peters}
+{meta: composer Gretchen Peters}
 
 {start_of_verse: Verse 1}
 [F]She left the [C]car in the driveway 

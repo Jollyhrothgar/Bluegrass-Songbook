@@ -1,6 +1,6 @@
 {meta: title Mr. Coachman}
 {meta: artist Ronnie Reno}
-{meta: writer Ronnie Reno and Wayne Carson Thompson}
+{meta: composer Ronnie Reno and Wayne Carson Thompson}
 
 {start_of_verse: Verse 1}
 [C]Mr. Coachman [F]  I'm a railroad [C]rider[F]

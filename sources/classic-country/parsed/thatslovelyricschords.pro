@@ -1,6 +1,6 @@
 {meta: title That's Love}
 {meta: artist Johnny Tillotson}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G]Love is cattle [Em]in the clover [C]sun shining [D7]overhead 

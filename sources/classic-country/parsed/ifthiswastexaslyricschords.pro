@@ -1,6 +1,6 @@
 {meta: title If This Was Texas}
 {meta: artist Billy Mata}
-{meta: writer Jesse Shofner}
+{meta: composer Jesse Shofner}
 
 {start_of_verse: Verse 1}
 [G]What happened to the [C]boy from El [G]Paso [D7]

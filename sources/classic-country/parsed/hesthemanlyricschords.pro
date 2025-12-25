@@ -1,6 +1,6 @@
 {meta: title He's The Man}
 {meta: artist Wanda Jackson}
-{meta: writer Wendell Goodman and Walter Schutz}
+{meta: composer Wendell Goodman and Walter Schutz}
 
 {start_of_verse: Verse 1}
 ([G]He's the Man who can [D7]set you [G]free)

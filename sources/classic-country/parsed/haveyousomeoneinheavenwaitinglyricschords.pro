@@ -1,6 +1,6 @@
 {meta: title Have You Someone In Heaven Waiting}
 {meta: artist Ricky Skaggs}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]Have you someone in [F]heaven [C]awaiting

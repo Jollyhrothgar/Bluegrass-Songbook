@@ -1,6 +1,6 @@
 {meta: title Look Who I'm Cheating On Tonight}
 {meta: artist Bobby Bare}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]In the shadows of our bedroom 

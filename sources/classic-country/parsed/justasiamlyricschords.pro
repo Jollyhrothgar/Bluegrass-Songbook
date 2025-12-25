@@ -1,6 +1,6 @@
 {meta: title Just As I Am}
 {meta: artist Ricky Van Shelton}
-{meta: writer Larry Boone and Paul Nelson}
+{meta: composer Larry Boone and Paul Nelson}
 
 {start_of_verse: Verse 1}
 [G]I was lost and [D7]aimlessly [G]searching

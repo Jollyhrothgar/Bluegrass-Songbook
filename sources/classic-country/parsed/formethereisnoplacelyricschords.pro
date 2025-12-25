@@ -1,6 +1,6 @@
 {meta: title For Me There Is No Place}
 {meta: artist Hank Williams Jr.}
-{meta: writer Hank Williams Sr. and Hank Williams Jr.}
+{meta: composer Hank Williams Sr. and Hank Williams Jr.}
 
 {start_of_verse: Verse 1}
 [C]You have always wanted the [G7]finest things in life

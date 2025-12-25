@@ -1,6 +1,6 @@
 {meta: title I'd Like To Help You Out}
 {meta: artist Wanda Jackson}
-{meta: writer Larry Lee}
+{meta: composer Larry Lee}
 
 {start_of_verse: Verse 1}
 [C]Just as I expected here you are back at my door

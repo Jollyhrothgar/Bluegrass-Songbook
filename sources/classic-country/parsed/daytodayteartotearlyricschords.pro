@@ -1,6 +1,6 @@
 {meta: title Day To Day (Tear To Tear)}
 {meta: artist Jean Shepard}
-{meta: writer Johnny Russell and Teddy Wilburn}
+{meta: composer Johnny Russell and Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]All my friends told me someday [F]you'd leave [C]me

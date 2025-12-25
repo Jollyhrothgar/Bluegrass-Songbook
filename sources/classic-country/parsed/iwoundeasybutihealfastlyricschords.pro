@@ -1,6 +1,6 @@
 {meta: title I Wound Easy (But I Heal Fast)}
 {meta: artist Tammy Wynette}
-{meta: writer Bill Owens}
+{meta: composer Bill Owens}
 
 {start_of_verse: Verse 1}
 [C]You're late again tonight and I [D7]know the reason [G7]why

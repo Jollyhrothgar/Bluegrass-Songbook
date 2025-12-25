@@ -1,6 +1,6 @@
 {meta: title Back To Bein' Me}
 {meta: artist George Strait}
-{meta: writer Hank Cochran and Dean Dillon}
+{meta: composer Hank Cochran and Dean Dillon}
 
 {start_of_verse: Verse 1}
 [C]I'm back to bein' me

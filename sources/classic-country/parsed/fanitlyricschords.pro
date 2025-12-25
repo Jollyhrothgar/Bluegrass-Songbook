@@ -1,6 +1,6 @@
 {meta: title Fan It}
 {meta: artist Bob Wills}
-{meta: writer Frankie Jaxon}
+{meta: composer Frankie Jaxon}
 
 {start_of_verse: Verse 1}
 [C]If the sun’s too hot cool it if you can

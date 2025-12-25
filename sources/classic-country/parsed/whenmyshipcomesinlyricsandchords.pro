@@ -1,6 +1,6 @@
 {meta: title When My Ship Comes In}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [D7]No sun on the [G]Rockies [D7]not even the [C]light of [G]day

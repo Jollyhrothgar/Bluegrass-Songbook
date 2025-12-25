@@ -1,6 +1,6 @@
 {meta: title Let’s Just Praise The Lord}
 {meta: artist Wanda Jackson}
-{meta: writer William Gaither and Gloria Gaither}
+{meta: composer William Gaither and Gloria Gaither}
 
 {start_of_verse: Verse 1}
 [G]Let's just praise the Lord [C]praise the Lord

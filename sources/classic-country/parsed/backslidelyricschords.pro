@@ -1,6 +1,6 @@
 {meta: title Backslide}
 {meta: artist Mickey Gilley}
-{meta: writer Vic McAlpin}
+{meta: composer Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [C]I'm walking the [G7]straight and the [C]narrow [C7]

@@ -1,6 +1,6 @@
 {meta: title You're Right I'm Wrong}
 {meta: artist George Strait}
-{meta: writer Marty Stuart and Wayne Perry}
+{meta: composer Marty Stuart and Wayne Perry}
 
 {start_of_verse: Verse 1}
 [C]You're right I'm wrong I'm here you're [C7]gone

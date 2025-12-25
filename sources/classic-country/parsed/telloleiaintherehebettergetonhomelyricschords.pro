@@ -1,6 +1,6 @@
 {meta: title Tell Ole I Ain't Here He Better Get On Home}
 {meta: artist Moe Bandy}
-{meta: writer Wayne Kemp}
+{meta: composer Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [C]Well I was playing the pinball praying for a ten ball

@@ -1,6 +1,6 @@
 {meta: title Breaking Down}
 {meta: artist Waylon Jennings}
-{meta: writer Joe Rainey}
+{meta: composer Joe Rainey}
 
 {start_of_verse: Verse 1}
 [C]I've been a fool [A]fool   [F]such a [C]fool

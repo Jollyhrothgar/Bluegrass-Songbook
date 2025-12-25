@@ -1,6 +1,6 @@
 {meta: title Simple Simon Simple Heart}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson, Billy Gray, Bud Auge}
+{meta: composer Hank Thompson, Billy Gray, Bud Auge}
 
 {start_of_verse: Verse 1}
 [D7]Simple [G]simon simple heart you met a [C]girlie [D7]at the fair

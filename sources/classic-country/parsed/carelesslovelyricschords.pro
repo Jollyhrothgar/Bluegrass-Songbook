@@ -1,6 +1,6 @@
 {meta: title Careless Love}
 {meta: artist Fats Domino}
-{meta: writer Spencer Williams, Bill Handy, Martha Koening and Charles Grean}
+{meta: composer Spencer Williams, Bill Handy, Martha Koening and Charles Grean}
 
 {start_of_verse: Verse 1}
 [G]Love oh [D7]love oh careless [G]love

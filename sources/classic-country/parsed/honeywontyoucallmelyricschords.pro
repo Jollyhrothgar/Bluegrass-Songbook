@@ -1,6 +1,6 @@
 {meta: title Honey Won’t You Call Me}
 {meta: artist Hank Williams Jr.}
-{meta: writer Edmund Willareal and Wanda Watkins}
+{meta: composer Edmund Willareal and Wanda Watkins}
 
 {start_of_verse: Verse 1}
 [G]I can see the home fire burning and the [C]kids playing [D7]in the [G]yard

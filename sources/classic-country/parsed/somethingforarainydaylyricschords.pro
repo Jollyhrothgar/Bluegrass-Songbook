@@ -1,6 +1,6 @@
 {meta: title Something For A Rainy Day}
 {meta: artist Brenda Lee}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [D7]I'm just a [G]penny that fell [F] from a [C]hole in your pocket

@@ -1,6 +1,6 @@
 {meta: title A Song Holy Angels Cannot Sing}
 {meta: artist Jimmy Swaggart}
-{meta: writer Gordon Jensen}
+{meta: composer Gordon Jensen}
 
 {start_of_verse: Verse 1}
 [C]Amazing [G7]Grace [F]how sweet the [C]sound[F]  [C]

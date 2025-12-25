@@ -1,6 +1,6 @@
 {meta: title Rockin' In The Arms Of Your Memory}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Norro Wilson}
+{meta: composer Dean Dillon and Norro Wilson}
 
 {start_of_verse: Verse 1}
 [Dm]The first time I [G7]saw you [Dm]you were waitin' [G7]tables at the corner [C]diner

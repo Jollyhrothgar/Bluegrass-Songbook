@@ -1,6 +1,6 @@
 {meta: title Christmas Long Ago}
 {meta: artist Ricky Van Shelton}
-{meta: writer Don Schlitz and Ricky Van Shelton}
+{meta: composer Don Schlitz and Ricky Van Shelton}
 
 {start_of_verse: Verse 1}
 [G]There used to be a Christmas tree in the center of the [C]square

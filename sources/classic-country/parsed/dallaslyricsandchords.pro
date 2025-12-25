@@ -1,6 +1,6 @@
 {meta: title Dallas}
 {meta: artist Willie Nelson}
-{meta: writer Dan Stovall and Dewey Groom}
+{meta: composer Dan Stovall and Dewey Groom}
 
 {start_of_verse: Verse 1}
 [G]She's like a [D7]beautiful lady with a Mona Lisa smile [G]Dallas

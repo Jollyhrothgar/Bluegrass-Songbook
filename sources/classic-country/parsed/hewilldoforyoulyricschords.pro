@@ -1,6 +1,6 @@
 {meta: title He Will Do For You}
 {meta: artist Patsy Cline}
-{meta: writer V. F. Stewart}
+{meta: composer V. F. Stewart}
 
 {start_of_verse: Verse 1}
 [G]Once my soul was in sin 

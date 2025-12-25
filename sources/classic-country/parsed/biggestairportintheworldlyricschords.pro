@@ -1,6 +1,6 @@
 {meta: title Biggest Airport In The World}
 {meta: artist Moe Bandy}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]I've never seen so many faces

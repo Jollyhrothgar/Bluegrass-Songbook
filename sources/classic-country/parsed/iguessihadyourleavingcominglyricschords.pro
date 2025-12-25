@@ -1,6 +1,6 @@
 {meta: title I Guess I Had Your Leaving Coming}
 {meta: artist Vern Gosdin}
-{meta: writer Buddy Cannon}
+{meta: composer Buddy Cannon}
 
 {start_of_verse: Verse 1}
 [Dm]I broke your [C]heart I [Dm]made you [C]cry

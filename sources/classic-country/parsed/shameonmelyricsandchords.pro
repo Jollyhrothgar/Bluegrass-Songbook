@@ -1,6 +1,6 @@
 {meta: title Shame On Me}
 {meta: artist George Strait}
-{meta: writer Bubba Strait / George Strait}
+{meta: composer Bubba Strait / George Strait}
 
 {start_of_verse: Verse 1}
 [C]You played me for a [F]fool

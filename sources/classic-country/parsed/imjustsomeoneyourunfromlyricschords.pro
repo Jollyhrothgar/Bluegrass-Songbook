@@ -1,6 +1,6 @@
 {meta: title I'm Just Someone You Run From}
 {meta: artist Eddy Raven}
-{meta: writer Eddy Raven and Arthur Leo Owens}
+{meta: composer Eddy Raven and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]I wish you would [G7]stay here for[C]ever

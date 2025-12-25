@@ -1,6 +1,6 @@
 {meta: title Cyclone of Rye Cove}
 {meta: artist Doc Watson}
-{meta: writer A.P. Carter and Doc Watson}
+{meta: composer A.P. Carter and Doc Watson}
 
 {start_of_verse: Verse 1}
 [C]Oh listen today to the [F]story I [C]tell

@@ -1,6 +1,6 @@
 {meta: title Kiss The Hurt Away}
 {meta: artist Barbara Mandrell}
-{meta: writer Chuck Reed and Finley Duncan}
+{meta: composer Chuck Reed and Finley Duncan}
 
 {start_of_verse: Verse 1}
 [G]If my lonely [C]tears could talk 

@@ -1,6 +1,6 @@
 {meta: title At The Moonlight}
 {meta: artist Brenda Lee}
-{meta: writer Don Cook and Rafe VanHoy}
+{meta: composer Don Cook and Rafe VanHoy}
 
 {start_of_verse: Verse 1}
 [C]Ah backseat back road drive-in movie shows

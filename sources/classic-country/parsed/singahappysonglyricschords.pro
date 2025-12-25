@@ -1,6 +1,6 @@
 {meta: title Sing A Happy Song}
 {meta: artist Buck Owens}
-{meta: writer Charlie Williams and Billy Graham}
+{meta: composer Charlie Williams and Billy Graham}
 
 {start_of_verse: Verse 1}
 [C]Everybody oughta [G7]sing a happy song 

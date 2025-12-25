@@ -1,6 +1,6 @@
 {meta: title I Wanna Waltz}
 {meta: artist Wanda Jackson}
-{meta: writer Thelma Blackmon}
+{meta: composer Thelma Blackmon}
 
 {start_of_verse: Verse 1}
 [C]Well we used to waltz that go out dancin' 

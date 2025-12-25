@@ -1,6 +1,6 @@
 {meta: title Easy To Fall In Love}
 {meta: artist Conway Twitty}
-{meta: writer Conway Twitty and Jack Nance}
+{meta: composer Conway Twitty and Jack Nance}
 
 {start_of_verse: Verse 1}
 [C]First you meet her on the street

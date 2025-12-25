@@ -1,6 +1,6 @@
 {meta: title A Maiden's Prayer}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills}
+{meta: composer Bob Wills}
 
 {start_of_verse: Verse 1}
 [G]Twilight falls evening [G7]shadows [C]find

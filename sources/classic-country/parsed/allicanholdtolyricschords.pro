@@ -1,6 +1,6 @@
 {meta: title All I Can Hold To}
 {meta: artist Hank Snow}
-{meta: writer Ruby Moody and Marvin Thompson}
+{meta: composer Ruby Moody and Marvin Thompson}
 
 {start_of_verse: Verse 1}
 [G]Another crying night will soon be over [D7]now

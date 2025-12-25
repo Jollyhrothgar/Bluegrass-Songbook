@@ -1,6 +1,6 @@
 {meta: title Let's Put Christ Back Into Christmas}
 {meta: artist Tammy Wynette}
-{meta: writer Carmol Taylor and Agnes Wilson}
+{meta: composer Carmol Taylor and Agnes Wilson}
 
 {start_of_verse: Verse 1}
 [G]Unto you is [Dm]born this day a [G]Savior

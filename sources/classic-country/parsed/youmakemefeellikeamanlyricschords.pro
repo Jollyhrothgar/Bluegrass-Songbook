@@ -1,6 +1,6 @@
 {meta: title You Make Me Feel Like a Man}
 {meta: artist Ricky Skaggs}
-{meta: writer Peter Rowan}
+{meta: composer Peter Rowan}
 
 {start_of_verse: Verse 1}
 [C]Well it’s so good to see your face [G7]again

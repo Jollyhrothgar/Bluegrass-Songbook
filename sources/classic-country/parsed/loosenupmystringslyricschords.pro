@@ -1,6 +1,6 @@
 {meta: title Loosen Up My Strings}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [C]No one's [G7]gonna [C]jerk me around once I [G7]get my [C]feet on the ground

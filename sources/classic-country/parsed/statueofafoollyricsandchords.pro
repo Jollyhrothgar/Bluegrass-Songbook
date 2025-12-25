@@ -1,6 +1,6 @@
 {meta: title Statue Of A Fool}
 {meta: artist Ricky Van Shelton}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]Somewhere there should [Am]be 

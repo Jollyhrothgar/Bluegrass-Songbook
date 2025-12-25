@@ -1,6 +1,6 @@
 {meta: title First Step To Heaven}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Emory Gordy and Jim Rushing}
+{meta: composer Emory Gordy and Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]Wake up oh sinner you're [G7]facing the darkness of [C]death

@@ -1,6 +1,6 @@
 {meta: title Throw Your Love My Way}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb and Loys Southerland}
+{meta: composer Ernest Tubb and Loys Southerland}
 
 {start_of_verse: Verse 1}
 [G]To me your just as pretty as a speckled pup

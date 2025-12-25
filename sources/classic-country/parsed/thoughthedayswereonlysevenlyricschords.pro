@@ -1,6 +1,6 @@
 {meta: title Though The Days Were Only Seven}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb and Ruth Smith}
+{meta: composer Ernest Tubb and Ruth Smith}
 
 {start_of_verse: Verse 1}
 [C]Angels sing sweet songs of love dear 

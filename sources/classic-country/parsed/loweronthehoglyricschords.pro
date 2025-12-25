@@ -1,6 +1,6 @@
 {meta: title Lower On The Hog}
 {meta: artist John Anderson}
-{meta: writer Lionel Delmore and Larry Cordle}
+{meta: composer Lionel Delmore and Larry Cordle}
 
 {start_of_verse: Verse 1}
 [G]I've been workin' at a sawmill earnin' every dime I make

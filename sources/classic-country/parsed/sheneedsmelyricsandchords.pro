@@ -1,6 +1,6 @@
 {meta: title She Needs Me}
 {meta: artist Ricky Van Shelton}
-{meta: writer Chuck Cannon and Jimmy Stewart}
+{meta: composer Chuck Cannon and Jimmy Stewart}
 
 {start_of_verse: Verse 1}
 [C]She’s inde[G]pendent she knows [C]what she wants

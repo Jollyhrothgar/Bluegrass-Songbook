@@ -1,6 +1,6 @@
 {meta: title Till I'm Over Gettin' Over You}
 {meta: artist Vern Gosdin}
-{meta: writer Gary S. Paxton, Shirl Milete, Vern Gosdin}
+{meta: composer Gary S. Paxton, Shirl Milete, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]Wish I could tell you that everything's [B7]all [C]right

@@ -1,6 +1,6 @@
 {meta: title Red Hot Gal Of Mine and chord}
 {meta: artist Bob Wills}
-{meta: writer Strickland and Mayo}
+{meta: composer Strickland and Mayo}
 
 {start_of_verse: Verse 1}
 [G]Look north or south [C]east or west [G]I pretend I [C]have the best

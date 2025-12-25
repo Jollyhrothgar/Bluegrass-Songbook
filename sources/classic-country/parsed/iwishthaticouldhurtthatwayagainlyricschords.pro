@@ -1,6 +1,6 @@
 {meta: title I Wish That I Could Hurt That Way Again}
 {meta: artist Kenny Rogers}
-{meta: writer Curly Putman, Don Cook, Rafe VanHoy}
+{meta: composer Curly Putman, Don Cook, Rafe VanHoy}
 
 {start_of_verse: Verse 1}
 [C]Oh I wish that I could [G7]hurt that way [C]again

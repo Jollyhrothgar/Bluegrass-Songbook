@@ -1,6 +1,6 @@
 {meta: title Thank You For Calling}
 {meta: artist Billy Walker}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Who can it be hello hello 

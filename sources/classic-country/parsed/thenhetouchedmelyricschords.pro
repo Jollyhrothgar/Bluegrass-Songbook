@@ -1,6 +1,6 @@
 {meta: title Then He Touched Me}
 {meta: artist Jean Shepard}
-{meta: writer Norro Wilson and George Richey}
+{meta: composer Norro Wilson and George Richey}
 
 {start_of_verse: Verse 1}
 [C]There was a time when I felt I'd never love [F]again 

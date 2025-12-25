@@ -1,6 +1,6 @@
 {meta: title We're Only Here For A Little While}
 {meta: artist Billy Dean}
-{meta: writer Wayland Holyfield and Richard Leigh}
+{meta: composer Wayland Holyfield and Richard Leigh}
 
 {start_of_verse: Verse 1}
 [C]Gonna hold who needs holding

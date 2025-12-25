@@ -1,6 +1,6 @@
 {meta: title I'm Not Ready Yet}
 {meta: artist George Jones}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [G]I've always said that someday [C]I was gonna leave [G]you

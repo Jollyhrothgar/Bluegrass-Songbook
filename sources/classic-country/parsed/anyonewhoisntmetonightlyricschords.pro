@@ -1,6 +1,6 @@
 {meta: title Anyone Who Isn't Me Tonight}
 {meta: artist Kenny Rogers}
-{meta: writer Casey Kelly and Julie Didier}
+{meta: composer Casey Kelly and Julie Didier}
 
 {start_of_verse: Verse 1}
 [C]When you made love to me tonight 

@@ -1,6 +1,6 @@
 {meta: title Thirty Nine And Holding}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Bill Rice and Jerry Foster}
+{meta: composer Bill Rice and Jerry Foster}
 
 {start_of_verse: Verse 1}
 [G]He's out there somewhere every night 

@@ -1,6 +1,6 @@
 {meta: title Yearning}
 {meta: artist George Jones}
-{meta: writer Eddie Eddings}
+{meta: composer Eddie Eddings}
 
 {start_of_verse: Verse 1}
 [C]Yearning to be with the [F]one I can't [C]agree with

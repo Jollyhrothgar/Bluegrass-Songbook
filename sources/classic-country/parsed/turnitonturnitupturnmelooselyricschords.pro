@@ -1,6 +1,6 @@
 {meta: title Turn It On Turn It Up Turn Me Loose}
 {meta: artist Dwight Yoakam}
-{meta: writer Wayland Patton and Kostas}
+{meta: composer Wayland Patton and Kostas}
 
 {start_of_verse: Verse 1}
 [C]Well I'm back again for [G7]another night

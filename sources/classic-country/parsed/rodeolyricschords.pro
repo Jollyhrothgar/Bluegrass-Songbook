@@ -1,6 +1,6 @@
 {meta: title Rodeo}
 {meta: artist Garth Brooks}
-{meta: writer Larry Bastian}
+{meta: composer Larry Bastian}
 
 {start_of_verse: Verse 1}
 [C]His eyes are cold and restless his [F]wounds have almost [C]healed

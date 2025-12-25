@@ -1,6 +1,6 @@
 {meta: title I Dreamed My Baby Came Home}
 {meta: artist George Jones}
-{meta: writer George Jones and Johnny Mathis}
+{meta: composer George Jones and Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [G]I went to sleep last night [D7]lonely and blue

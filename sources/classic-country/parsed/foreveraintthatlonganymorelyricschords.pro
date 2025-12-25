@@ -1,6 +1,6 @@
 {meta: title Forever Ain't That Long Anymore}
 {meta: artist Rhonda Vincent}
-{meta: writer Wayne Southards and William Blake}
+{meta: composer Wayne Southards and William Blake}
 
 {start_of_verse: Verse 1}
 [G7][C]Somewhere tonight a woman cries [C]alone

@@ -1,6 +1,6 @@
 {meta: title Heartbreaker}
 {meta: artist Dolly Parton}
-{meta: writer Carlo Bayer Sager and David Wolfert}
+{meta: composer Carlo Bayer Sager and David Wolfert}
 
 {start_of_verse: Verse 1}
 [C]Here I sit all [F]alone [G7]thinking about what I should have [C]known 

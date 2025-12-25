@@ -1,6 +1,6 @@
 {meta: title You’ve Been Fooling Me Baby}
 {meta: artist Flatt and Scruggs}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]I don’t want you mean momma

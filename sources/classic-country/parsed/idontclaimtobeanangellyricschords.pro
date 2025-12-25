@@ -1,6 +1,6 @@
 {meta: title I Don't Claim to be an Angel}
 {meta: artist Kitty Wells}
-{meta: writer Johnny Wright and Jack Anglin}
+{meta: composer Johnny Wright and Jack Anglin}
 
 {start_of_verse: Verse 1}
 [G]You'll hear talk around town  of [C]things I used to [G]do

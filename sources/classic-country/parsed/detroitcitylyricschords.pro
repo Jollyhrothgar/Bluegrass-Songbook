@@ -1,6 +1,6 @@
 {meta: title Detroit City}
 {meta: artist Mel Tillis}
-{meta: writer Danny Dill and Mel Tillis}
+{meta: composer Danny Dill and Mel Tillis}
 
 {start_of_verse: Verse 1}
 [G]Last night I went to [D7]sleep in Detroit [G]City

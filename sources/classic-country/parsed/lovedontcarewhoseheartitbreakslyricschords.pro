@@ -1,6 +1,6 @@
 {meta: title Love Don't Care (Whose Heart It Breaks)}
 {meta: artist Earl Thomas Conley}
-{meta: writer Randy Scruggs and Earl T. Conley}
+{meta: composer Randy Scruggs and Earl T. Conley}
 
 {start_of_verse: Verse 1}
 [C]I'm a lonely rider

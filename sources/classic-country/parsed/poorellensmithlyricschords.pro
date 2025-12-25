@@ -1,6 +1,6 @@
 {meta: title Poor Ellen Smith}
 {meta: artist Jimmy Martin}
-{meta: writer Harold Donnyand Jimmy Martin}
+{meta: composer Harold Donnyand Jimmy Martin}
 
 {start_of_verse: Verse 1}
 [G]Poor Ellen Smith how she was found

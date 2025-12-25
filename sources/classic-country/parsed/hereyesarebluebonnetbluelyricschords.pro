@@ -1,6 +1,6 @@
 {meta: title Her Eyes Are Bluebonnet Blue}
 {meta: artist Red Steagall}
-{meta: writer Russell D. Steagall and Luke Reed}
+{meta: composer Russell D. Steagall and Luke Reed}
 
 {start_of_verse: Verse 1}
 [C]I was standing in the Long Branch he [F]came through the swinging doors

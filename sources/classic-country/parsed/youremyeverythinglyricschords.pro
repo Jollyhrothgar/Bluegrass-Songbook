@@ -1,6 +1,6 @@
 {meta: title You're My Everything}
 {meta: artist Eddy Arnold}
-{meta: writer Jim Wilson and Marvin LacyD7 G G7}
+{meta: composer Jim Wilson and Marvin LacyD7 G G7}
 
 {start_of_verse: Verse 1}
 You're the twinkling of my [C]eye

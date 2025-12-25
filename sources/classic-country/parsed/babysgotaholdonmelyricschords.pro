@@ -1,6 +1,6 @@
 {meta: title Baby's Got A Hold On Me}
 {meta: artist Nitty Gritty Dirt Band}
-{meta: writer Jeffrey Hanna, Robert Carpenter, Josh Leo}
+{meta: composer Jeffrey Hanna, Robert Carpenter, Josh Leo}
 
 {start_of_verse: Verse 1}
 [C]Sitting on the front porch trying to keep still

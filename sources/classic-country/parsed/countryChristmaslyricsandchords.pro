@@ -1,6 +1,6 @@
 {meta: title Country Christmas}
 {meta: artist Ricky Van Shelton}
-{meta: writer Don Schlitz and Ricky Van Shelton}
+{meta: composer Don Schlitz and Ricky Van Shelton}
 
 {start_of_verse: Verse 1}
 [G7]Snow will cover the ground in early [C]winter

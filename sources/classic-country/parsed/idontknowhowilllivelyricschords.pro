@@ -1,6 +1,6 @@
 {meta: title I Don't Know How I'll Live}
 {meta: artist Carl Belew}
-{meta: writer Vic McAlpin and Roy Drusky}
+{meta: composer Vic McAlpin and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [C]Yesterday our love was young and [F]gay

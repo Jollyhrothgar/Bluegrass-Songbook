@@ -1,6 +1,6 @@
 {meta: title Keep Your Lure In The Water}
 {meta: artist Randy Travis}
-{meta: writer Michael Curtis and Randy Travis}
+{meta: composer Michael Curtis and Randy Travis}
 
 {start_of_verse: Verse 1}
 [C]Keep your lure in the water don't just [Em]sit by the [E7]shore

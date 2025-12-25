@@ -1,6 +1,6 @@
 {meta: title Dolly With The Dimple Knees}
 {meta: artist Jim Reeves}
-{meta: writer Gilbert Gibson and Taffy Kikillus}
+{meta: composer Gilbert Gibson and Taffy Kikillus}
 
 {start_of_verse: Verse 1}
 [G]This puro Macy she drives me c[D7]razy

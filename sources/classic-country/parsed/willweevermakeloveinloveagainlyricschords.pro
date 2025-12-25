@@ -1,6 +1,6 @@
 {meta: title Will We Ever Make Love In Love Again}
 {meta: artist Barbara Mandrell}
-{meta: writer Bud Reneau and Sarah Johns}
+{meta: composer Bud Reneau and Sarah Johns}
 
 {start_of_verse: Verse 1}
 [G]Once again we loved [C]and you didn't say you [G]love me

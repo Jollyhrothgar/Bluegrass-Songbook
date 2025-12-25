@@ -1,6 +1,6 @@
 {meta: title Corpus Christie Bay}
 {meta: artist Johnny Rodriguez}
-{meta: writer Robert Earl Keen Jr.}
+{meta: composer Robert Earl Keen Jr.}
 
 {start_of_verse: Verse 1}
 [C]I worked the rigs from three to midnight

@@ -1,6 +1,6 @@
 {meta: title Tis Sweet To Be Remembered}
 {meta: artist Mac Wiseman}
-{meta: writer Malcolm B. Wiseman}
+{meta: composer Malcolm B. Wiseman}
 
 {start_of_verse: Verse 1}
 [G]As I travel all this world

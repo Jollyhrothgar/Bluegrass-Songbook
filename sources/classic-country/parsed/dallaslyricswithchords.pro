@@ -1,6 +1,6 @@
 {meta: title Dallas}
 {meta: artist Alan Jackson}
-{meta: writer Keith Stegall and Alan Jackson}
+{meta: composer Keith Stegall and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G]Dallas packed her suitcase and [C]drove off 

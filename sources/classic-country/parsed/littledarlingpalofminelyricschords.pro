@@ -1,6 +1,6 @@
 {meta: title Little Darling Pal Of Mine}
 {meta: artist Lucinda Williams}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]My little [F]darling oh how I love [C]you

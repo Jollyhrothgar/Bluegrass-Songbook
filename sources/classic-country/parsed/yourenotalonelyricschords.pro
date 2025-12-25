@@ -1,6 +1,6 @@
 {meta: title You're Not Alone}
 {meta: artist The Kingsmen}
-{meta: writer Squire Parsons}
+{meta: composer Squire Parsons}
 
 {start_of_verse: Verse 1}
 [C]When your heart breaks  [C7]from earthly [F]sorrow

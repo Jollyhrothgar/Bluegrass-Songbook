@@ -1,6 +1,6 @@
 {meta: title One Happy Christmas}
 {meta: artist Tammy Wynette}
-{meta: writer Carmol Taylor}
+{meta: composer Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [C]I heard the doorbell [F]ringing as the [G7]clock was striking [C]three

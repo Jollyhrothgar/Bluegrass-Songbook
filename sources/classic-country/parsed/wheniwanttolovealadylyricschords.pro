@@ -1,6 +1,6 @@
 {meta: title When I Want To Love A Lady}
 {meta: artist Bobby Bare}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]I hate to leave your party and these friendly people [G7]here

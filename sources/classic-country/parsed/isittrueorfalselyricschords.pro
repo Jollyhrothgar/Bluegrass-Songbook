@@ -1,6 +1,6 @@
 {meta: title Is It True Or False}
 {meta: artist Billy Crash Craddock}
-{meta: writer Henry Morgan, Alan Grey, Ginger Grey}
+{meta: composer Henry Morgan, Alan Grey, Ginger Grey}
 
 {start_of_verse: Verse 1}
 [Dm]Is it [G]true or false I’m in [Bm]love with you

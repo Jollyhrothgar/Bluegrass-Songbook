@@ -1,6 +1,6 @@
 {meta: title Nashville Rebel}
 {meta: artist Waylon Jennings}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [Em]They call me the Nashville Rebel 

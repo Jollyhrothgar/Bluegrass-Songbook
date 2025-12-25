@@ -1,6 +1,6 @@
 {meta: title Beautiful Woman}
 {meta: artist Don Williams}
-{meta: writer Graham Lyle}
+{meta: composer Graham Lyle}
 
 {start_of_verse: Verse 1}
 [C]I've been talking to a beautiful woman  [F]all night long

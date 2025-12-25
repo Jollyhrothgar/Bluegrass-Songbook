@@ -1,6 +1,6 @@
 {meta: title I Really Got The Feeling}
 {meta: artist Dolly Parton}
-{meta: writer Billy Vera and William McCord}
+{meta: composer Billy Vera and William McCord}
 
 {start_of_verse: Verse 1}
 [C]I really got the feeling that I'll love you for a long long time

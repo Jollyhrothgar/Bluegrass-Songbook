@@ -1,5 +1,5 @@
 {meta: artist Johnny Horton}
-{meta: writer Tillman Franks and Johnny Horton}
+{meta: composer Tillman Franks and Johnny Horton}
 
 {start_of_verse: Verse 1}
 [G]In May of 1941 the [D7]war had just [G]begun

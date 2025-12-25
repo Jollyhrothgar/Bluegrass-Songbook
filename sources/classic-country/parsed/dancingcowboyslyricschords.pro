@@ -1,6 +1,6 @@
 {meta: title Dancing Cowboys}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [F]We like boots and [C]saddles  [G7]we love girls and [C]guitars

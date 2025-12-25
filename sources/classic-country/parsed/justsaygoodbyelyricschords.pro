@@ -1,6 +1,6 @@
 {meta: title Just Say Goodbye}
 {meta: artist Ricky Van Shelton}
-{meta: writer Byron Hill and Joe Chambers}
+{meta: composer Byron Hill and Joe Chambers}
 
 {start_of_verse: Verse 1}
 [C]Well you won't see me on my knees

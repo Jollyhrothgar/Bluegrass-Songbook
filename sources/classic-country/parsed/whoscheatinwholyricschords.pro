@@ -1,6 +1,6 @@
 {meta: title Who's Cheatin' Who}
 {meta: artist Alan Jackson}
-{meta: writer Jerry Hayes}
+{meta: composer Jerry Hayes}
 
 {start_of_verse: Verse 1}
 [G]Everywhere you look [C]you can write a book

@@ -1,6 +1,6 @@
 {meta: title Rivers of Babylon}
 {meta: artist Daniel O'Donnell}
-{meta: writer John James Ryan}
+{meta: composer John James Ryan}
 
 {start_of_verse: Verse 1}
 [G]By the rivers of Babylon there we sat down

@@ -1,6 +1,6 @@
 {meta: title You Kiss Me Like You're Waving Goodbye}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart and Buddy Cagle}
+{meta: composer Wynn Stewart and Buddy Cagle}
 
 {start_of_verse: Verse 1}
 [C]I was a fool to ever [F]think that you

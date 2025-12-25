@@ -1,6 +1,6 @@
 {meta: title Cold Cheater’s Heart}
 {meta: artist Del McCoury}
-{meta: writer Mike Reilly}
+{meta: composer Mike Reilly}
 
 {start_of_verse: Verse 1}
 [C]It’s an old familiar [E7]story of a boy [F]and a [C]girl

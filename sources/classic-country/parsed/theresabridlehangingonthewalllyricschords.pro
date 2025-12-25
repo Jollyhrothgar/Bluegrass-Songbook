@@ -1,6 +1,6 @@
 {meta: title There's A Bridle Hanging On The Wall}
 {meta: artist Noel Parlane}
-{meta: writer Carson Robison}
+{meta: composer Carson Robison}
 
 {start_of_verse: Verse 1}
 [C]There's a bridle [G7]hanging on the [C]wall

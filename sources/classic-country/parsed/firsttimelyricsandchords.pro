@@ -1,6 +1,6 @@
 {meta: title First Time}
 {meta: artist Hank Locklin}
-{meta: writer Ewan McColl}
+{meta: composer Ewan McColl}
 
 {start_of_verse: Verse 1}
 [C]You opened the [E7]door to [F]heaven 

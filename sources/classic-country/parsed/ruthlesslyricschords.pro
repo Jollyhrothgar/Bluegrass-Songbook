@@ -1,6 +1,6 @@
 {meta: title Ruthless}
 {meta: artist Statler Brothers}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]Who always cooked my [A7]steaks and cooked 'em [Dm]rare  Ruth

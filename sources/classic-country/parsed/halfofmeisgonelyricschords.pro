@@ -1,6 +1,6 @@
 {meta: title Half of Me is Gone}
 {meta: artist George Jones}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]I walked a thousand miles last night and never left my [D7]room

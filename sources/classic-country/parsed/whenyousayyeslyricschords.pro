@@ -1,6 +1,6 @@
 {meta: title When You Say Yes}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]When you say yes I'm gonna fall [G7]over in a faint

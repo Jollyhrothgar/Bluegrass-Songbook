@@ -1,6 +1,6 @@
 {meta: title You Can Be a Millionaire With Me}
 {meta: artist J.D. Crowe}
-{meta: writer Grady Cole and Hazel Cole}
+{meta: composer Grady Cole and Hazel Cole}
 
 {start_of_verse: Verse 1}
 [G]There's a bright and shining city 

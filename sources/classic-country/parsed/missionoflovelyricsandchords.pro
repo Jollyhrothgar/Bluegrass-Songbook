@@ -1,6 +1,6 @@
 {meta: title Mission Of Love}
 {meta: artist Travis Tritt}
-{meta: writer Larry Cordle and Leslie Satcher}
+{meta: composer Larry Cordle and Leslie Satcher}
 
 {start_of_verse: Verse 1}
 [G]I know you're wonderin' just what I'm doing 

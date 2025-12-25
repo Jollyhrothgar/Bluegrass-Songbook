@@ -1,6 +1,6 @@
 {meta: title Trucker’s Prayer}
 {meta: artist Boxcar Willie}
-{meta: writer Red Sovine}
+{meta: composer Red Sovine}
 
 {start_of_verse: Verse 1}
 [G]Thank you Lord for all the miles without an [D7]accident

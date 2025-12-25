@@ -1,6 +1,6 @@
 {meta: title Honky Tonk In Dallas}
 {meta: artist Charlie Walker}
-{meta: writer Mel Tillis and Wayne P. Walker}
+{meta: composer Mel Tillis and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]I met her at a honky tonk in [F]Dallas

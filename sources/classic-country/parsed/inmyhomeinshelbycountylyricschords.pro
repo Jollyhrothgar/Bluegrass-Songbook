@@ -1,6 +1,6 @@
 {meta: title In My Home In Shelby County}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Horton and Fred Horton}
+{meta: composer Johnny Horton and Fred Horton}
 
 {start_of_verse: Verse 1}
 [C]In my home in Shelby County down near Memphis Tennessee

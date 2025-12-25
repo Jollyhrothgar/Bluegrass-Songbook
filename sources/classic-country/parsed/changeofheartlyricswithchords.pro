@@ -1,6 +1,6 @@
 {meta: title Change Of Heart}
 {meta: artist Marty Robbins}
-{meta: writer Randy Sharp}
+{meta: composer Randy Sharp}
 
 {start_of_verse: Verse 1}
 [C]Some will [F]say we [G7]have no [Dm]call

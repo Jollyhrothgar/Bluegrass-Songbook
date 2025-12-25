@@ -1,6 +1,6 @@
 {meta: title Listenin' To The Rain}
 {meta: artist The Osborne Brothers}
-{meta: writer Don Devane}
+{meta: composer Don Devane}
 
 {start_of_verse: Verse 1}
 [G]I'm looking out the window at the rain 

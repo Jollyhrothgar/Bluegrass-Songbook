@@ -1,6 +1,6 @@
 {meta: title Don't Liberate Me}
 {meta: artist Tammy Wynette}
-{meta: writer Clyde Pitts and Van Givens}
+{meta: composer Clyde Pitts and Van Givens}
 
 {start_of_verse: Verse 1}
 [D7]To-[G]day a group of [A7]women came to [D7]see me

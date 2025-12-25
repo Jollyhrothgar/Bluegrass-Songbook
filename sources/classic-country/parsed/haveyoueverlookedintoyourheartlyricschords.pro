@@ -1,6 +1,6 @@
 {meta: title Have You Ever Looked Into Your Heart}
 {meta: artist Jerry Vale}
-{meta: writer Billy Barberis, Bobby Weinstein, Teddy Randazzo}
+{meta: composer Billy Barberis, Bobby Weinstein, Teddy Randazzo}
 
 {start_of_verse: Verse 1}
 [G]Have you [C]looked into your [G]heart

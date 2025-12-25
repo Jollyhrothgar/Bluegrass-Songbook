@@ -1,6 +1,6 @@
 {meta: title Beyond The Sunset}
 {meta: artist Slim Whitman}
-{meta: writer Virgil P. Brock and Blanche K. Brock}
+{meta: composer Virgil P. Brock and Blanche K. Brock}
 
 {start_of_verse: Verse 1}
 [C]Beyond the [F]sun-set [C]O blissful [G7]morning

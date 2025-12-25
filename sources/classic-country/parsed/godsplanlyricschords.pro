@@ -1,6 +1,6 @@
 {meta: title God’s Plan}
 {meta: artist Daniel O’Donnell}
-{meta: writer Derek Andrew Ryan}
+{meta: composer Derek Andrew Ryan}
 
 {start_of_verse: Verse 1}
 [G]We all set out to [C]find true [G]love

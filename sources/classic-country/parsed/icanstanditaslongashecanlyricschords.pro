@@ -1,6 +1,6 @@
 {meta: title I Can Stand It (As Long As He Can)}
 {meta: artist Connie Smith}
-{meta: writer Mitchell Torok and Ramona Redd}
+{meta: composer Mitchell Torok and Ramona Redd}
 
 {start_of_verse: Verse 1}
 [F]I can [C]stand it as [F]long as [C]he can

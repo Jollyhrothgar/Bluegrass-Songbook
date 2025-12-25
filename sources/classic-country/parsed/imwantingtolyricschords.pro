@@ -1,6 +1,6 @@
 {meta: title I'm Wanting To}
 {meta: artist Marty Robbins}
-{meta: writer Ronny Robbins and Karen Russel}
+{meta: composer Ronny Robbins and Karen Russel}
 
 {start_of_verse: Verse 1}
 [C]There'll be times when I can't [F]get away to be with [G7]you

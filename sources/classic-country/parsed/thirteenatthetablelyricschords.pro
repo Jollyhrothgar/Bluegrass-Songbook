@@ -1,6 +1,6 @@
 {meta: title Thirteen At The Table}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Blake Emmons}
+{meta: composer Blake Emmons}
 
 {start_of_verse: Verse 1}
 [F]Thirteen at the [C]table to [F]honor of the [C]Man

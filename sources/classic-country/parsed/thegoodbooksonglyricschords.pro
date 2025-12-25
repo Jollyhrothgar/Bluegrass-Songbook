@@ -1,6 +1,6 @@
 {meta: title The Good Book Song}
 {meta: artist Hank Locklin}
-{meta: writer Karl Davis}
+{meta: composer Karl Davis}
 
 {start_of_verse: Verse 1}
 [C]Won't you let the good book make you good [D7]give it a try today

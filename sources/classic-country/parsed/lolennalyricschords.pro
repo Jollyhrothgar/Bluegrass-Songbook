@@ -1,6 +1,6 @@
 {meta: title Lo Lenna}
 {meta: artist Webb Pierce}
-{meta: writer Audrey Grisham}
+{meta: composer Audrey Grisham}
 
 {start_of_verse: Verse 1}
 [C]When the cool wind blows across the water

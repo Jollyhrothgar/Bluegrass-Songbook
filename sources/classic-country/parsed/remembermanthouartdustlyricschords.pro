@@ -1,6 +1,6 @@
 {meta: title Remember Man Thou Art Dust}
 {meta: artist Cowboy Copas}
-{meta: writer Ken McRae and Harvey Boileau}
+{meta: composer Ken McRae and Harvey Boileau}
 
 {start_of_verse: Verse 1}
 [C]Long years [G7]ago but [C]when a child my [F]mother said to [C]me

@@ -1,6 +1,6 @@
 {meta: title It's All My Fault}
 {meta: artist Terry Baucom}
-{meta: writer Doyle Lawson and Paul Humphries}
+{meta: composer Doyle Lawson and Paul Humphries}
 
 {start_of_verse: Verse 1}
 [C]I left Minnesota on a cold December day

@@ -1,6 +1,6 @@
 {meta: title I Don't Think I'm Ready For You}
 {meta: artist Anne Murray}
-{meta: writer Jim Ed Norman}
+{meta: composer Jim Ed Norman}
 
 {start_of_verse: Verse 1}
 [C]I’ve never been scared of [Dm]love before [G7]now

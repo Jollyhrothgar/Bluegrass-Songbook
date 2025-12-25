@@ -1,6 +1,6 @@
 {meta: title I Gambled My Heart}
 {meta: artist Buddy Holly}
-{meta: writer Bob Montgomery}
+{meta: composer Bob Montgomery}
 
 {start_of_verse: Verse 1}
 [C]When you've loved someone and then found you've [G7]lost

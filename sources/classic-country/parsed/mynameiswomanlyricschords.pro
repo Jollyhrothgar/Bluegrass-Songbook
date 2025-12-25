@@ -1,6 +1,6 @@
 {meta: title My Name Is Woman}
 {meta: artist Jean Shepard}
-{meta: writer Dan Hoffman and David Kershenbaum}
+{meta: composer Dan Hoffman and David Kershenbaum}
 
 {start_of_verse: Verse 1}
 [G]It started at the apple tree

@@ -1,6 +1,6 @@
 {meta: title There's A Light Lit Up In Galilee}
 {meta: artist The Stoneman Family}
-{meta: writer Ernest Stoneman}
+{meta: composer Ernest Stoneman}
 
 {start_of_verse: Verse 1}
 [G]Must Jesus bear the cross [C]alone all alone

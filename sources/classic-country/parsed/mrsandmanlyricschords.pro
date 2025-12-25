@@ -1,6 +1,6 @@
 {meta: title Mr. Sandman}
 {meta: artist Emmylou Harris}
-{meta: writer Pat Ballard}
+{meta: composer Pat Ballard}
 
 {start_of_verse: Verse 1}
 [C]Mr. Sandman bring me a [B7]dream

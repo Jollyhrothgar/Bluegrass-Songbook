@@ -1,6 +1,6 @@
 {meta: title Divorce Sale}
 {meta: artist Tammy Wynette}
-{meta: writer Curly Putman and Greg Putman}
+{meta: composer Curly Putman and Greg Putman}
 
 {start_of_verse: Verse 1}
 [G]Who’ll buy the table and who’ll buy the [D7]bed

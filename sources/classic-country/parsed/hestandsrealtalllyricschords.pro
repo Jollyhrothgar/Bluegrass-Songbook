@@ -1,6 +1,6 @@
 {meta: title He Stands Real Tall}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Cal Veale}
+{meta: composer Cal Veale}
 
 {start_of_verse: Verse 1}
 [G]Folks know I'm a [C]poor boy [G]poor as I can be

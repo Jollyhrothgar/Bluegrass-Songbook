@@ -1,6 +1,6 @@
 {meta: title Lay Back Lover}
 {meta: artist Dottie West}
-{meta: writer Rafe Van Hoy and Steve Pippin}
+{meta: composer Rafe Van Hoy and Steve Pippin}
 
 {start_of_verse: Verse 1}
 [G7]Why don't we [C]lay back lover 

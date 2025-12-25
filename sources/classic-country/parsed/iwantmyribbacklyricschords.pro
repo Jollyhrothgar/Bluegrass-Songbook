@@ -1,6 +1,6 @@
 {meta: title I Want My Rib Back}
 {meta: artist Keith Whitley}
-{meta: writer Fred Koller and Keith Whitley}
+{meta: composer Fred Koller and Keith Whitley}
 
 {start_of_verse: Verse 1}
 [G]Now the bible tells the story about Adam's rib

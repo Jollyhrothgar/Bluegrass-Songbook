@@ -1,6 +1,6 @@
 {meta: title Together Always}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]You and I have [F]been together [C]for a long long [F]time

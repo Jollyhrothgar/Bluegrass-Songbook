@@ -1,6 +1,6 @@
 {meta: title Country In My Genes Lyrics Chords}
 {meta: artist Loretta Lynn}
-{meta: writer Larry Cordle, Betty Key, Larry Shell}
+{meta: composer Larry Cordle, Betty Key, Larry Shell}
 
 {start_of_verse: Verse 1}
 [G]Well they say that I'm too country the way I look and sound

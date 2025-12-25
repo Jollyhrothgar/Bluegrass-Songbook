@@ -1,6 +1,6 @@
 {meta: title You Took The Easy Way Out}
 {meta: artist Dottie West}
-{meta: writer Dottie West, Bill West, Stonewall Jackson}
+{meta: composer Dottie West, Bill West, Stonewall Jackson}
 
 {start_of_verse: Verse 1}
 [C]You said our love was not the same

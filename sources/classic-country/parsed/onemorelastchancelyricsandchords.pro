@@ -1,6 +1,6 @@
 {meta: title One More Last Chance}
 {meta: artist Vince Gill}
-{meta: writer Gary Nicholson and Vince Gill}
+{meta: composer Gary Nicholson and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]She was standing at the front door 

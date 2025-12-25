@@ -1,6 +1,6 @@
 {meta: title Write Me A Picture}
 {meta: artist George Hamilton IV}
-{meta: writer Vance Bulla}
+{meta: composer Vance Bulla}
 
 {start_of_verse: Verse 1}
 [G]Write me a picture of the things we used to do

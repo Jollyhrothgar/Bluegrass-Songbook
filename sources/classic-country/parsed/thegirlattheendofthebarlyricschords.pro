@@ -1,6 +1,6 @@
 {meta: title The Girl At The End Of The Bar}
 {meta: artist John Anderson}
-{meta: writer John Anderson and Lionel Delmore}
+{meta: composer John Anderson and Lionel Delmore}
 
 {start_of_verse: Verse 1}
 [G7]If you'd [C]ever been [Em]drinkin' I [Am]know that you'd seen [Em]her

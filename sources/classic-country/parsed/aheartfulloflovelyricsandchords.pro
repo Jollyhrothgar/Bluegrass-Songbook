@@ -1,6 +1,6 @@
 {meta: title A Heart Full Of Love}
 {meta: artist Slim Whitman}
-{meta: writer Roy Soehnel and Willie Nelson}
+{meta: composer Roy Soehnel and Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]A heart full of love and arms full of [C]you

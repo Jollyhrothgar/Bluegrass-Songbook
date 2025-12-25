@@ -1,6 +1,6 @@
 {meta: title Tell Me What I Want To Hear}
 {meta: artist Jean Shepard}
-{meta: writer Jack Rhodes and Gertrude Cox}
+{meta: composer Jack Rhodes and Gertrude Cox}
 
 {start_of_verse: Verse 1}
 [C]Darling please don't make [F]me [C]wonder

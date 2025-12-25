@@ -1,6 +1,6 @@
 {meta: title Victim Or A Fool}
 {meta: artist Johnny Rodriguez}
-{meta: writer Rodney Crowell}
+{meta: composer Rodney Crowell}
 
 {start_of_verse: Verse 1}
 [C]Two words you're gone  

@@ -1,6 +1,6 @@
 {meta: title The Lord's Way Of Saying Goodnight}
 {meta: artist Hank Snow}
-{meta: writer Walter Rollins}
+{meta: composer Walter Rollins}
 
 {start_of_verse: Verse 1}
 [G](It's the Lord's way of [D7]saying [G]goodnight)

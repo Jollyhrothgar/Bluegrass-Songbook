@@ -1,6 +1,6 @@
 {meta: title Old Man}
 {meta: artist Alabama}
-{meta: writer Donny Lowery}
+{meta: composer Donny Lowery}
 
 {start_of_verse: Verse 1}
 [C]I had my rent-a-car flying down a two lane road

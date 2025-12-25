@@ -1,6 +1,6 @@
 {meta: title Stop The World and Let Me Off}
 {meta: artist Merle Haggard}
-{meta: writer Carl}
+{meta: composer Carl}
 
 {start_of_verse: Verse 1}
 [C]Stop the world and let [G7]me off

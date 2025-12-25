@@ -1,6 +1,6 @@
 {meta: title Easy Ride From Good Times To The Blues}
 {meta: artist Seldom Scene}
-{meta: writer Herb Pederson}
+{meta: composer Herb Pederson}
 
 {start_of_verse: Verse 1}
 [G7]It's an [C]easy ride from [G7]good times to the [C]blues

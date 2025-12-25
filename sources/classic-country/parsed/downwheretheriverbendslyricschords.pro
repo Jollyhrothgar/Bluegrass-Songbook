@@ -1,6 +1,6 @@
 {meta: title Down Where The River Bends}
 {meta: artist J.D. Crowe}
-{meta: writer Jack Anglin, Johnny Wright, George Peck}
+{meta: composer Jack Anglin, Johnny Wright, George Peck}
 
 {start_of_verse: Verse 1}
 [C]It's hard to keep tears out of my [F]eyes

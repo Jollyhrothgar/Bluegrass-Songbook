@@ -1,6 +1,6 @@
 {meta: title Then I'll Stop Loving You}
 {meta: artist Jim Ed Brown}
-{meta: writer Jim Reeves}
+{meta: composer Jim Reeves}
 
 {start_of_verse: Verse 1}
 [G]If there's water in the desert sand out in the sea

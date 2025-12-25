@@ -1,6 +1,6 @@
 {meta: title It's Nice To Be With You}
 {meta: artist Anne Murray}
-{meta: writer Jerry Goldstein}
+{meta: composer Jerry Goldstein}
 
 {start_of_verse: Verse 1}
 [C]Hey [B7]look what you have [C]done 

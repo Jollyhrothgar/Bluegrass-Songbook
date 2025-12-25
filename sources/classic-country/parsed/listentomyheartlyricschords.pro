@@ -1,6 +1,6 @@
 {meta: title Listen To My Heart}
 {meta: artist David Ball}
-{meta: writer Allen Shamblin and David Ball}
+{meta: composer Allen Shamblin and David Ball}
 
 {start_of_verse: Verse 1}
 [C]If only words could make you mine

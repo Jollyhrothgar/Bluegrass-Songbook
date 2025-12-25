@@ -1,6 +1,6 @@
 {meta: title Through The Years}
 {meta: artist Charley Pride}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]Seems like only yester[F]day we fell in [C]love

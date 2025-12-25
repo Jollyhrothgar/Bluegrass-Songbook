@@ -1,6 +1,6 @@
 {meta: title What Will You Tell Them}
 {meta: artist Ernest Tubb}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]Now someday they'll wonder where [F]daddy can [C]be

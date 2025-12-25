@@ -1,6 +1,6 @@
 {meta: title I've Loved Him Much Longer Than You}
 {meta: artist Jean Shepard}
-{meta: writer Rory Bourke and Gayle Barnhill}
+{meta: composer Rory Bourke and Gayle Barnhill}
 
 {start_of_verse: Verse 1}
 [C]My husband doesn't know [F]I'm making [G7]this phone [C]call

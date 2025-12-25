@@ -1,6 +1,6 @@
 {meta: title I've Been Loved By The Best}
 {meta: artist Don Williams}
-{meta: writer Bob McDill and Paul Harrison}
+{meta: composer Bob McDill and Paul Harrison}
 
 {start_of_verse: Verse 1}
 [C]Darling if [G7]you ever leave [F]me 

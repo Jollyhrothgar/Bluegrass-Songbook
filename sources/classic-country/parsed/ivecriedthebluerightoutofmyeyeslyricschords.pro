@@ -1,6 +1,6 @@
 {meta: title I've Cried The Blue Right Out Of My Eyes}
 {meta: artist Crystal Gayle}
-{meta: writer Loretta Lynn}
+{meta: composer Loretta Lynn}
 
 {start_of_verse: Verse 1}
 [D7]Oh I've hurt enough for the both of [G]us 

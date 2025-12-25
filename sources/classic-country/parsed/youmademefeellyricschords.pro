@@ -1,6 +1,6 @@
 {meta: title You Made Me Feel}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Michael McDonald}
+{meta: composer Clint Black and Michael McDonald}
 
 {start_of_verse: Verse 1}
 [G]Almost a [Am]lifetime a [D7]going nowhere 

@@ -1,6 +1,6 @@
 {meta: title Love Of The Mountains}
 {meta: artist Jimmy Martin}
-{meta: writer Allen H. Mills}
+{meta: composer Allen H. Mills}
 
 {start_of_verse: Verse 1}
 [G]Two trees on the [C]hillside of the [G]mountain

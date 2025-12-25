@@ -1,6 +1,6 @@
 {meta: title Mother Pal And Sweetheart}
 {meta: artist The Trailblazers}
-{meta: writer Red Lowery}
+{meta: composer Red Lowery}
 
 {start_of_verse: Verse 1}
 [C]Mother [G7]pal and [C]sweetheart 

@@ -1,6 +1,6 @@
 {meta: title Pressure Makes Diamonds}
 {meta: artist Don Williams}
-{meta: writer Bob McDill and John Schweers}
+{meta: composer Bob McDill and John Schweers}
 
 {start_of_verse: Verse 1}
 [C]Well we've had our [G7]troubles [F]we've had our hard [C]times

@@ -1,6 +1,6 @@
 {meta: title Dial L.O.V.E. For Me Lyrics chords}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray and Hank Thompson}
+{meta: composer Billy Gray and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [C]Dial L.O.V.E. for me

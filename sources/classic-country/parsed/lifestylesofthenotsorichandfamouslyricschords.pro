@@ -1,6 +1,6 @@
 {meta: title Lifestyles Of The Not So Rich And Famous}
 {meta: artist Tracy Byrd}
-{meta: writer Byron Hill and Wayne Tester}
+{meta: composer Byron Hill and Wayne Tester}
 
 {start_of_verse: Verse 1}
 [C]Honey they're bringin' out a TV crew 

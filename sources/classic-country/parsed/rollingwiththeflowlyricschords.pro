@@ -1,6 +1,6 @@
 {meta: title Rolling With The Flow}
 {meta: artist Charlie Rich}
-{meta: writer Jerry Hayes}
+{meta: composer Jerry Hayes}
 
 {start_of_verse: Verse 1}
 [C]Once was a thought inside my head

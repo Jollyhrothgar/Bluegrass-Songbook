@@ -1,6 +1,6 @@
 {meta: title For No Reason at All}
 {meta: artist Anne Murray}
-{meta: writer Barry Mann}
+{meta: composer Barry Mann}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I almost stop [G7]my [Dm]breathing

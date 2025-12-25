@@ -1,6 +1,6 @@
 {meta: title Till Then}
 {meta: artist Hank Thompson}
-{meta: writer Eddie Seiler, Guy Wood, Sol Marcus}
+{meta: composer Eddie Seiler, Guy Wood, Sol Marcus}
 
 {start_of_verse: Verse 1}
 [D7]Till [G]then [Em]oh darling [Am]please wait for [D7]me

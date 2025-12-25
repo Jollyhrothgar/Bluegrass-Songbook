@@ -1,6 +1,6 @@
 {meta: title Enough For You Lyrics and Chords}
 {meta: artist Ray Price}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [G]I've lived enough to know that love's not everything you [C]need

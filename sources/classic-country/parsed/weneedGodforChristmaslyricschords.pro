@@ -1,6 +1,6 @@
 {meta: title We Need God For Christmas}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb and Alma Donaldson}
+{meta: composer Ernest Tubb and Alma Donaldson}
 
 {start_of_verse: Verse 1}
 [G]Though Christmas is the [B7]time of year to be [C]happy and [G]gay

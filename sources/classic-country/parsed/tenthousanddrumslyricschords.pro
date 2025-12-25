@@ -1,6 +1,6 @@
 {meta: title Ten Thousand Drums}
 {meta: artist Johnny Horton}
-{meta: writer Mel Tillis &amp; Carl Smith}
+{meta: composer Mel Tillis &amp; Carl Smith}
 
 {start_of_verse: Verse 1}
 [C]Waiting waiting for the [F]redcoats to [C]come

@@ -1,6 +1,6 @@
 {meta: title Angry Words}
 {meta: artist Stonewall Jackson}
-{meta: writer Hugh X. Lewis}
+{meta: composer Hugh X. Lewis}
 
 {start_of_verse: Verse 1}
 [C]It hurts down deep when [F]angry words are [C]spoken

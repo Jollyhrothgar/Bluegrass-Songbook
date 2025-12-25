@@ -1,6 +1,6 @@
 {meta: title This Has Got To Last}
 {meta: artist Johnny Duncan}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]I know she never [F]promised she would [C]stay

@@ -1,6 +1,6 @@
 {meta: title Nine Pound Hammer}
 {meta: artist Jimmy Dean}
-{meta: writer Merle Travis}
+{meta: composer Merle Travis}
 
 {start_of_verse: Verse 1}
 [C]Little to [F]heavy  for my [C]size

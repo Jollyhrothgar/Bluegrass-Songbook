@@ -1,6 +1,6 @@
 {meta: title Heavenly Sunshine}
 {meta: artist Ferlin Husky}
-{meta: writer Glenn Sutton and George Richey}
+{meta: composer Glenn Sutton and George Richey}
 
 {start_of_verse: Verse 1}
 [G7]I've [C]searched for words of sweet description [F]too best de[D7]scribed

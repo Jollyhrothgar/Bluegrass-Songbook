@@ -1,6 +1,6 @@
 {meta: title A Hundred and Sixty Acres}
 {meta: artist Marty Robbins}
-{meta: writer David Kapp}
+{meta: composer David Kapp}
 
 {start_of_verse: Verse 1}
 [G]I got a hundred and sixty acres in the valley

@@ -1,6 +1,6 @@
 {meta: title Goodnight Sweetheart}
 {meta: artist The Statler Brothers}
-{meta: writer Calvin Carter and James "Pookie" Hudson}
+{meta: composer Calvin Carter and James "Pookie" Hudson}
 
 {start_of_verse: Verse 1}
 [C]Goodnight sweetheart goodnight sweet[Am]heart well it's [Dm]time to [G7]go

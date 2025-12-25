@@ -1,6 +1,6 @@
 {meta: title What Does A Loser Say}
 {meta: artist Billy Crash Craddock}
-{meta: writer Ron Chancey}
+{meta: composer Ron Chancey}
 
 {start_of_verse: Verse 1}
 [C]I've been telling everybody 

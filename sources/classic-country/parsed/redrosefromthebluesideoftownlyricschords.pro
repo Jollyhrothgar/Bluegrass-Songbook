@@ -1,6 +1,6 @@
 {meta: title Red Rose From The Blue Side Of Town}
 {meta: artist George Morgan}
-{meta: writer Betty Jean Robinson and Hank Snow}
+{meta: composer Betty Jean Robinson and Hank Snow}
 
 {start_of_verse: Verse 1}
 [C]When the man from the flower shop rings your [F]doorbell [D7]today

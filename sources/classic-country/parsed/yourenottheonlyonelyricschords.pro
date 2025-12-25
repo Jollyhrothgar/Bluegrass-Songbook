@@ -1,6 +1,6 @@
 {meta: title You're Not The Only One}
 {meta: artist Marty Robbins}
-{meta: writer Phoebe Binkley and Bob Binkley}
+{meta: composer Phoebe Binkley and Bob Binkley}
 
 {start_of_verse: Verse 1}
 [G]Has the [C]wondering started [D7]is she bein' un[G]true

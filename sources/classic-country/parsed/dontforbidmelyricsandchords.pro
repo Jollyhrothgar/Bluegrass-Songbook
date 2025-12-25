@@ -1,6 +1,6 @@
 {meta: title Don't Forbid Me}
 {meta: artist Ernest Tubb}
-{meta: writer Charles Singleton}
+{meta: composer Charles Singleton}
 
 {start_of_verse: Verse 1}
 [C]Now don't forbid me to hold you tight

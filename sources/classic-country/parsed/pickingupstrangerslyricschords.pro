@@ -1,6 +1,6 @@
 {meta: title Picking Up Strangers}
 {meta: artist Johnny Lee}
-{meta: writer Byron Hill}
+{meta: composer Byron Hill}
 
 {start_of_verse: Verse 1}
 [C]Picking up strangers let me [Am]tell you about the dangers  

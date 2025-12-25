@@ -1,6 +1,6 @@
 {meta: title Joe and Mabel's 12th Street Bar And Grill}
 {meta: artist Nat Stuckey}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [G]The kids say daddy where did you meet mother

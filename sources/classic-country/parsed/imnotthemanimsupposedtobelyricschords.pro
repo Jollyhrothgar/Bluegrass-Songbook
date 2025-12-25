@@ -1,6 +1,6 @@
 {meta: title I'm Not The Man I'm Supposed To Be}
 {meta: artist Lefty Frizzell}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]I'm supposed to shake his [C7]hand and walk off [F]smiling

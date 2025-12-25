@@ -1,6 +1,6 @@
 {meta: title Wonderful World Of Women}
 {meta: artist Carl Smith}
-{meta: writer Wayne P. Walker, Eddie Miller, Bobby Sykes}
+{meta: composer Wayne P. Walker, Eddie Miller, Bobby Sykes}
 
 {start_of_verse: Verse 1}
 [C]I'm livin' in the wonderful world of [F]women

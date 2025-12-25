@@ -1,6 +1,6 @@
 {meta: title Sorrow On The Rocks}
 {meta: artist Porter Wagoner}
-{meta: writer Tony Moon}
+{meta: composer Tony Moon}
 
 {start_of_verse: Verse 1}
 [C]Just pour me sorrow on the rocks [G7]bartender 

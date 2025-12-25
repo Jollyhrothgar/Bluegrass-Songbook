@@ -1,6 +1,6 @@
 {meta: title It's Only Lonely Me}
 {meta: artist Stonewall Jackson}
-{meta: writer Liz Anderson and Casey Anderson}
+{meta: composer Liz Anderson and Casey Anderson}
 
 {start_of_verse: Verse 1}
 [G]If you hear some footsteps [C]walking close [G]behind you in the night

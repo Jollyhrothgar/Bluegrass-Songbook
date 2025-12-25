@@ -1,6 +1,6 @@
 {meta: title Smokey Blue Eyes}
 {meta: artist David Houston}
-{meta: writer Fay Kirkland, Ann Horton, Morgan Reese}
+{meta: composer Fay Kirkland, Ann Horton, Morgan Reese}
 
 {start_of_verse: Verse 1}
 [G7](Smokey blue [C]eyes)

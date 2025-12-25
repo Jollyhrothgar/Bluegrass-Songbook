@@ -1,6 +1,6 @@
 {meta: title Mama He's Crazy}
 {meta: artist The Judds}
-{meta: writer Kenny O'Dell}
+{meta: composer Kenny O'Dell}
 
 {start_of_verse: Verse 1}
 [G]Mama I found someone like you said would come [C]along

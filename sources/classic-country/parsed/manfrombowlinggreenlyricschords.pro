@@ -1,6 +1,6 @@
 {meta: title Man From Bowling Green}
 {meta: artist Johnny Paycheck}
-{meta: writer Troy Seals and Max D. Barnes}
+{meta: composer Troy Seals and Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]She road a slow train to the city she was young and she was [F]pretty

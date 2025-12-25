@@ -1,6 +1,6 @@
 {meta: title Go Cry Your Heart Out}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray and Hank Thompson}
+{meta: composer Billy Gray and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]Well there ain’t no use to try cause we said our last [D7]goodbye

@@ -1,6 +1,6 @@
 {meta: title I'll Never Always Love You Anymore}
 {meta: artist Curtis Potter}
-{meta: writer Mel Holt}
+{meta: composer Mel Holt}
 
 {start_of_verse: Verse 1}
 [C]Your heart strayed off but now it's back [F]knocking at my hearts door

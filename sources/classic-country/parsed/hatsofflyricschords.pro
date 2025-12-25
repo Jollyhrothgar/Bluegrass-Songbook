@@ -1,6 +1,6 @@
 {meta: title Hats Off}
 {meta: artist Alabama}
-{meta: writer Randy Owen, Ronnie Rogers, Teddy Gentryand Greg Fowler}
+{meta: composer Randy Owen, Ronnie Rogers, Teddy Gentryand Greg Fowler}
 
 {start_of_verse: Verse 1}
 [G]The stage is set tonight [C]down in [D7]Nashville     

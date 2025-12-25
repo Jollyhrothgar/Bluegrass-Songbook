@@ -1,6 +1,6 @@
 {meta: title Let Trouble Be You}
 {meta: artist Wanda Jackson}
-{meta: writer Yvonne Devaney}
+{meta: composer Yvonne Devaney}
 
 {start_of_verse: Verse 1}
 [C]You said I was looking for trouble when I fell in love with [C7]you

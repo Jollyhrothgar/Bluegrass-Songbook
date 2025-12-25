@@ -1,6 +1,6 @@
 {meta: title Precious Memories}
 {meta: artist Merle Haggard}
-{meta: writer J.B. Wright}
+{meta: composer J.B. Wright}
 
 {start_of_verse: Verse 1}
 [C]Precious memories [F]unseen [C]angels

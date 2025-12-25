@@ -1,6 +1,6 @@
 {meta: title Break My Chain}
 {meta: artist Ricky Nelson}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]Oh won't you break my chain a don't [F]turn me [C]down

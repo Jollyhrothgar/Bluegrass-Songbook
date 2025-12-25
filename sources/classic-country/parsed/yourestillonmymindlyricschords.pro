@@ -1,6 +1,6 @@
 {meta: title You're Still On My Mind}
 {meta: artist Amber Digby}
-{meta: writer Luke McDaniel}
+{meta: composer Luke McDaniel}
 
 {start_of_verse: Verse 1}
 [C]The juke box is playing a [C7]honky tonk [F]song

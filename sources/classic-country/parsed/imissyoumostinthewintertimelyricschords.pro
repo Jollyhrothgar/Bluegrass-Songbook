@@ -1,6 +1,6 @@
 {meta: title I Miss You Most In The Winter Time}
 {meta: artist Stonewall Jackson}
-{meta: writer John Virgin}
+{meta: composer John Virgin}
 
 {start_of_verse: Verse 1}
 [C]Funny how the [A#7]spring brings back your [C]memory

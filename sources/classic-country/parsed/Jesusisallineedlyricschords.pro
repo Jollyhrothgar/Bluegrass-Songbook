@@ -1,6 +1,6 @@
 {meta: title Jesus Is All I Need}
 {meta: artist Gene Watson}
-{meta: writer Bobbie Bost}
+{meta: composer Bobbie Bost}
 
 {start_of_verse: Verse 1}
 [C]I was alone so [F]afraid

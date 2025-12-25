@@ -1,6 +1,6 @@
 {meta: title You Make Me Live Again}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Ray Price}
+{meta: composer Wayne P. Walker and Ray Price}
 
 {start_of_verse: Verse 1}
 [C]I once lost my heart and I swore

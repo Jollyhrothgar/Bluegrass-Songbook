@@ -1,6 +1,6 @@
 {meta: title Now That I Have Accepted Your Love}
 {meta: artist Red Steagall}
-{meta: writer Richard O'Brien and Red Steagall}
+{meta: composer Richard O'Brien and Red Steagall}
 
 {start_of_verse: Verse 1}
 [G]I know that I haven’t been living 

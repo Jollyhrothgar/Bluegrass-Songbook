@@ -1,6 +1,6 @@
 {meta: title Seeing My Father In Me}
 {meta: artist Paul Overstreet}
-{meta: writer Paul Overstreet and Taylor Dunn}
+{meta: composer Paul Overstreet and Taylor Dunn}
 
 {start_of_verse: Verse 1}
 [C]Last night we brought the children by to [G7]visit their [C]grandpa 

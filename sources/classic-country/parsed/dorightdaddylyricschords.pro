@@ -1,6 +1,6 @@
 {meta: title Do Right Daddy}
 {meta: artist Hank Snow}
-{meta: writer Bill Nettles}
+{meta: composer Bill Nettles}
 
 {start_of_verse: Verse 1}
 [G]Well I just came down from up across [E7]the zoo

@@ -1,6 +1,6 @@
 {meta: title No One Is Listening}
 {meta: artist Vernon Oxford}
-{meta: writer Everett Corbin}
+{meta: composer Everett Corbin}
 
 {start_of_verse: Verse 1}
 [C]No one is listening to the [F]cry of the [C]young

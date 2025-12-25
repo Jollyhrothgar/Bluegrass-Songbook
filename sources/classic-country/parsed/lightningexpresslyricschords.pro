@@ -1,6 +1,6 @@
 {meta: title Lightning Express}
 {meta: artist Everly Brothers}
-{meta: writer Bradly Kincaid}
+{meta: composer Bradly Kincaid}
 
 {start_of_verse: Verse 1}
 [C]The lightning express from the depot so grand

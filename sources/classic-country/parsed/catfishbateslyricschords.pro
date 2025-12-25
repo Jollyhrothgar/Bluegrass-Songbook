@@ -1,6 +1,6 @@
 {meta: title Catfish Bates}
 {meta: artist Don Williams}
-{meta: writer Alex Harvey}
+{meta: composer Alex Harvey}
 
 {start_of_verse: Verse 1}
 [C]They call me Catfish [F]Bates

@@ -1,6 +1,6 @@
 {meta: title Closer}
 {meta: artist Faron Young}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]Well closer than the knob is to the [G7]door

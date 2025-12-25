@@ -1,6 +1,6 @@
 {meta: title When The Sun Goes Down}
 {meta: artist Marty Stuart}
-{meta: writer Marty Stuart and Mark Collie}
+{meta: composer Marty Stuart and Mark Collie}
 
 {start_of_verse: Verse 1}
 [G]I do alright in the [D7]daylight

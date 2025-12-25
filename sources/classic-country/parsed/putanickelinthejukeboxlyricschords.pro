@@ -1,6 +1,6 @@
 {meta: title Put A Nickel In The Jukebox}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ruth Wallis}
+{meta: composer Ruth Wallis}
 
 {start_of_verse: Verse 1}
 [C]Put a nickel in the [G]jukebox and [C]let that [D7]record [G]spin

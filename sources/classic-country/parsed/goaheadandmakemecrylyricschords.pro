@@ -1,6 +1,6 @@
 {meta: title Go Ahead And Make Me Cry Lyrics and Chords}
 {meta: artist Connie Smith}
-{meta: writer Leslie Lyle}
+{meta: composer Leslie Lyle}
 
 {start_of_verse: Verse 1}
 [G]Go ahead and make me cry go ahead and make me [D7]blue

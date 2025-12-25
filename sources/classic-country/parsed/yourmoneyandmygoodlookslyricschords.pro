@@ -1,6 +1,6 @@
 {meta: title Your Money And My Good Looks}
 {meta: artist Gene Watson with Rhonda Vincent}
-{meta: writer Terry Herd and Rhonda Vincent}
+{meta: composer Terry Herd and Rhonda Vincent}
 
 {start_of_verse: Verse 1}
 [G7]He's not what you'd call the social type

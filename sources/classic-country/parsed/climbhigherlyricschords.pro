@@ -1,6 +1,6 @@
 {meta: title Climb Higher}
 {meta: artist Gene Watson}
-{meta: writer Bobbie Bost}
+{meta: composer Bobbie Bost}
 
 {start_of_verse: Verse 1}
 [C]I've been low  [G7]and I've been high

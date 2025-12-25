@@ -1,6 +1,6 @@
 {meta: title The Luckiest Guy In The World}
 {meta: artist Vince Gill}
-{meta: writer Michael Omartian and Vince Gill}
+{meta: composer Michael Omartian and Vince Gill}
 
 {start_of_verse: Verse 1}
 [G]I've got a secret I [D7]keep in my heart 

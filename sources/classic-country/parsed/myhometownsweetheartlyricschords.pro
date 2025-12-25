@@ -1,6 +1,6 @@
 {meta: title My Hometown Sweetheart}
 {meta: artist Eddy Arnold}
-{meta: writer Sylvia Dee and Arthur Kent}
+{meta: composer Sylvia Dee and Arthur Kent}
 
 {start_of_verse: Verse 1}
 [G7](He's going [C]home yes he's going back)

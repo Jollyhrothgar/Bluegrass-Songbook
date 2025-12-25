@@ -1,6 +1,6 @@
 {meta: title Hemlock And Primroses}
 {meta: artist Ralph Stanley}
-{meta: writer Landon Messer, Albert Parsley, Ralph Stanley}
+{meta: composer Landon Messer, Albert Parsley, Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]Thinking of you while out for a ramble

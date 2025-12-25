@@ -1,6 +1,6 @@
 {meta: title She Lays It All On The Line}
 {meta: artist George Strait}
-{meta: writer Clay Blaker}
+{meta: composer Clay Blaker}
 
 {start_of_verse: Verse 1}
 [C]Her hair is red and her [F]eyes are green 

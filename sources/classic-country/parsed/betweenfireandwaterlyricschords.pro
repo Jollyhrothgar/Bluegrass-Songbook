@@ -1,6 +1,6 @@
 {meta: title Between Fire And Water}
 {meta: artist Hank Snow}
-{meta: writer Sol Marcus, Eddie Seller, Ralph Care}
+{meta: composer Sol Marcus, Eddie Seller, Ralph Care}
 
 {start_of_verse: Verse 1}
 [C]You're mine for awhile till a new [F]face [D7]appears

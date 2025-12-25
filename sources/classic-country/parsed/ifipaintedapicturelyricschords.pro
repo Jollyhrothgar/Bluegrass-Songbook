@@ -1,6 +1,6 @@
 {meta: title If I Painted A Picture}
 {meta: artist Gene Watson}
-{meta: writer Leona Williams and Charles R. Browder}
+{meta: composer Leona Williams and Charles R. Browder}
 
 {start_of_verse: Verse 1}
 [G]If I painted a picture [D7]of all that I've [G]seen

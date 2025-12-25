@@ -1,6 +1,6 @@
 {meta: title Baby Baby Bye Bye}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jerry Lee Lewis and Hughie Piano Smith}
+{meta: composer Jerry Lee Lewis and Hughie Piano Smith}
 
 {start_of_verse: Verse 1}
 [G]Everything I say is wrong

@@ -1,6 +1,6 @@
 {meta: title Are They Gonna Make Us Outlaws Again}
 {meta: artist Vernon Oxford}
-{meta: writer James A. Talley}
+{meta: composer James A. Talley}
 
 {start_of_verse: Verse 1}
 [C]You never picked no peaches [F]never rode no boxcar [C]train

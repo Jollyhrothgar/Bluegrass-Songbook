@@ -1,6 +1,6 @@
 {meta: title I Can't Help Myself}
 {meta: artist Eddie Rabbitt}
-{meta: writer Even (Bruce) Stevens and Eddie Rabbitt}
+{meta: composer Even (Bruce) Stevens and Eddie Rabbitt}
 
 {start_of_verse: Verse 1}
 [C]Thought I was over you  thought I could [Em]start a new

@@ -1,6 +1,6 @@
 {meta: title I Need You Now}
 {meta: artist Hank Locklin}
-{meta: writer Jamie Crane and Al Jacobs}
+{meta: composer Jamie Crane and Al Jacobs}
 
 {start_of_verse: Verse 1}
 [C]If I ever needed you  I [C7]need you [F]now

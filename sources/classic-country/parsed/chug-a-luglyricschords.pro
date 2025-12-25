@@ -1,6 +1,6 @@
 {meta: title Chug-a-lug}
 {meta: artist Roger Miller}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]Chug-a-lug Chug-a-lug

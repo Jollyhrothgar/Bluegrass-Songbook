@@ -1,6 +1,6 @@
 {meta: title It Makes Me Want To Cry}
 {meta: artist Charlie Rich}
-{meta: writer Eddie Rabbitt, Dick Heard, Van Trevor}
+{meta: composer Eddie Rabbitt, Dick Heard, Van Trevor}
 
 {start_of_verse: Verse 1}
 [G7]I wake up in the [Dm]morning and I [G7]watch you [C]sleeping there

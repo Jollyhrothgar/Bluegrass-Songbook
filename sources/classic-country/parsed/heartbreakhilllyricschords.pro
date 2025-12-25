@@ -1,6 +1,6 @@
 {meta: title Heartbreak Hill}
 {meta: artist Slim Whitman}
-{meta: writer Ben Weisman and Fred Wise}
+{meta: composer Ben Weisman and Fred Wise}
 
 {start_of_verse: Verse 1}
 [C]There’s a place in the mountains where the moon never [G7]shines

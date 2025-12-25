@@ -1,6 +1,6 @@
 {meta: title Could I Fall In Love}
 {meta: artist Elvis Presley}
-{meta: writer Randy Starr}
+{meta: composer Randy Starr}
 
 {start_of_verse: Verse 1}
 [G]Could I fall in [Bm]love for the [C]very first [G]time

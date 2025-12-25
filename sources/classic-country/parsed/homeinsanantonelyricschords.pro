@@ -1,6 +1,6 @@
 {meta: title Home in San Antone}
 {meta: artist Bob Wills}
-{meta: writer Floyd Jenkins}
+{meta: composer Floyd Jenkins}
 
 {start_of_verse: Verse 1}
 [C]Haven't got a worry haven't got [F]a care

@@ -1,6 +1,6 @@
 {meta: title One Window Four Walls}
 {meta: artist Marty Robbins}
-{meta: writer Melissa Cordell and Ann Russell}
+{meta: composer Melissa Cordell and Ann Russell}
 
 {start_of_verse: Verse 1}
 [C]I once had my [F]freedom and my [G7]life before [C]me

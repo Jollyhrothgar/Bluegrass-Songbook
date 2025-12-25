@@ -1,6 +1,6 @@
 {meta: title What A Wonderful World}
 {meta: artist Ray Price}
-{meta: writer George Weiss, George Douglas, Bob Thiele}
+{meta: composer George Weiss, George Douglas, Bob Thiele}
 
 {start_of_verse: Verse 1}
 [C]I see trees of [Em]green [F]red roses [Em]too

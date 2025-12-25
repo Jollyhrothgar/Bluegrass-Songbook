@@ -1,6 +1,6 @@
 {meta: title Gonna Ease My Worried Mind}
 {meta: artist Vernon Oxford}
-{meta: writer Owen W. Priester, Jr.}
+{meta: composer Owen W. Priester, Jr.}
 
 {start_of_verse: Verse 1}
 [C]I'm going downtown and get a jug of wine

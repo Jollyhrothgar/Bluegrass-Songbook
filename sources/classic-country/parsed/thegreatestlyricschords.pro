@@ -1,6 +1,6 @@
 {meta: title The Greatest}
 {meta: artist Kenny Rogers}
-{meta: writer Don Schlitz}
+{meta: composer Don Schlitz}
 
 {start_of_verse: Verse 1}
 [C]Little boy in a baseball hat 

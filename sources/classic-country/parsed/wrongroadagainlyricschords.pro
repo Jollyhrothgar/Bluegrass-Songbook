@@ -1,6 +1,6 @@
 {meta: title Wrong Road Again}
 {meta: artist Crystal Gayle}
-{meta: writer Allen Reynolds}
+{meta: composer Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [G]I can't seem to [C]learn not to [G]love you

@@ -1,6 +1,6 @@
 {meta: title Put My Little Shoes Away}
 {meta: artist Hank Snow}
-{meta: writer Samuel Mitchell and Charles E. Pratt}
+{meta: composer Samuel Mitchell and Charles E. Pratt}
 
 {start_of_verse: Verse 1}
 [C]Mother dear come [F]bathe my [C]forehead

@@ -1,6 +1,6 @@
 {meta: title Hey What About Me}
 {meta: artist Anne Murray}
-{meta: writer Scott Mackenzie}
+{meta: composer Scott Mackenzie}
 
 {start_of_verse: Verse 1}
 [C]Hey [G7]hey hey [F]hey what about [C]me

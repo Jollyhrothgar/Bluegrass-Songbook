@@ -1,6 +1,6 @@
 {meta: title 80 Proof Bottle Of Tear Stopper}
 {meta: artist George Strait}
-{meta: writer Darrell Statler}
+{meta: composer Darrell Statler}
 
 {start_of_verse: Verse 1}
 [C]You ain't never [Am]fell as [C]far as [F]when you [G7]fall in [C]love

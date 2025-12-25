@@ -1,6 +1,6 @@
 {meta: title I'm A Born Believer}
 {meta: artist Jim Ed Brown}
-{meta: writer Gary Hurju}
+{meta: composer Gary Hurju}
 
 {start_of_verse: Verse 1}
 [C]Midnight tears [F]about the dream

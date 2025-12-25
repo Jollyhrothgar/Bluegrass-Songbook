@@ -1,6 +1,6 @@
 {meta: title This Morning At Nine}
 {meta: artist The Seldom Scene}
-{meta: writer Sid Campbell}
+{meta: composer Sid Campbell}
 
 {start_of_verse: Verse 1}
 [G]I awoke this morning [C]from a lovely dream

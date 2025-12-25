@@ -1,6 +1,6 @@
 {meta: title Good Woman Blues}
 {meta: artist Mel Tillis}
-{meta: writer Ken McDuffie}
+{meta: composer Ken McDuffie}
 
 {start_of_verse: Verse 1}
 [G]My name you will find on the tail of my shirt

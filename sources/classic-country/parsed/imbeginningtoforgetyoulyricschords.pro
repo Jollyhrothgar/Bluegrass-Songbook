@@ -1,6 +1,6 @@
 {meta: title I'm Beginning to Forget You}
 {meta: artist Jim Reeves}
-{meta: writer Willie Phelps}
+{meta: composer Willie Phelps}
 
 {start_of_verse: Verse 1}
 [C]I'm beginning to forget you

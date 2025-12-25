@@ -1,6 +1,6 @@
 {meta: title Tennessee Homesick Blues}
 {meta: artist Dolly Parton}
-{meta: writer recorded by Dolly Parton}
+{meta: composer recorded by Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]New York City ain't no kind of place 

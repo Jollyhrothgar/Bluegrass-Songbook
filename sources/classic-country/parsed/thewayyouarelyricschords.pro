@@ -1,6 +1,6 @@
 {meta: title The Way You Are}
 {meta: artist Johnny Duncan}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [Am]I've [G]seen you check the [Em]mirror 

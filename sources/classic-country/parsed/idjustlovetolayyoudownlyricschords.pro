@@ -1,6 +1,6 @@
 {meta: title I'd Just Love To Lay You Down}
 {meta: artist Conway Twitty}
-{meta: writer Johnny Mac Rae}
+{meta: composer Johnny Mac Rae}
 
 {start_of_verse: Verse 1}
 [C]There's a lot of ways of saying 

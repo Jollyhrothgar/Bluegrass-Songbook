@@ -1,6 +1,6 @@
 {meta: title Over Lonely Under Kissed}
 {meta: artist Faron Young}
-{meta: writer Johnny Durham and Faron Young}
+{meta: composer Johnny Durham and Faron Young}
 
 {start_of_verse: Verse 1}
 I'm over lonely   [C]under kissed

@@ -1,6 +1,6 @@
 {meta: title Without Love}
 {meta: artist Johnny Cash}
-{meta: writer Nick Lowe}
+{meta: composer Nick Lowe}
 
 {start_of_verse: Verse 1}
 [G]Without love  I [C]am half [G]human 

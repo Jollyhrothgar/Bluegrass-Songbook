@@ -1,6 +1,6 @@
 {meta: title Never Been So Loved}
 {meta: artist Charlie Pride}
-{meta: writer Wayland}
+{meta: composer Wayland}
 
 {start_of_verse: Verse 1}
 [Am]I’m no stranger to loving arms

@@ -1,6 +1,6 @@
 {meta: title Tie Me To Your Apron Strings Again Lyrics and Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Larry Shay and Joe Goodwin}
+{meta: composer Larry Shay and Joe Goodwin}
 
 {start_of_verse: Verse 1}
 [C]Tie me to your [F]apron strings [C]again

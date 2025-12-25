@@ -1,6 +1,6 @@
 {meta: title Shallow Water}
 {meta: artist Randy Travis}
-{meta: writer Tom Kimmel}
+{meta: composer Tom Kimmel}
 
 {start_of_verse: Verse 1}
 [G]I will not drown in shallow water

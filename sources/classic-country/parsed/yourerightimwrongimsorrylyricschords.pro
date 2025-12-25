@@ -1,6 +1,6 @@
 {meta: title You're Right I'm Wrong I'm Sorry}
 {meta: artist John Anderson}
-{meta: writer John Anderson, Betty Gallup, Ervan Parker}
+{meta: composer John Anderson, Betty Gallup, Ervan Parker}
 
 {start_of_verse: Verse 1}
 [C]You're right I'm [G7]wrong I'm [C]sorry

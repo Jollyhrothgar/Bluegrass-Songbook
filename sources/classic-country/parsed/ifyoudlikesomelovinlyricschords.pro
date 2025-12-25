@@ -1,6 +1,6 @@
 {meta: title If You'd Like Some Lovin'}
 {meta: artist David Ball}
-{meta: writer Tommy Polk and David Ball}
+{meta: composer Tommy Polk and David Ball}
 
 {start_of_verse: Verse 1}
 [C]If you'd like some [F]lovin' [G7]I've got all you'll ever [C]need

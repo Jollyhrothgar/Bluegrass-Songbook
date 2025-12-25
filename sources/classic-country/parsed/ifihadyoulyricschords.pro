@@ -1,6 +1,6 @@
 {meta: title If I Had You}
 {meta: artist Alabama}
-{meta: writer Danny Bear Mayo and Kerry Chater}
+{meta: composer Danny Bear Mayo and Kerry Chater}
 
 {start_of_verse: Verse 1}
 [C]If I had you  we'd [F]run like gypsies in the [C]wind

@@ -1,6 +1,6 @@
 {meta: title Heaven Must Be Wondering Where You Are}
 {meta: artist George Strait}
-{meta: writer David L. Chamberlain and Lemuel David Lewis}
+{meta: composer David L. Chamberlain and Lemuel David Lewis}
 
 {start_of_verse: Verse 1}
 [G]Somewhere up there [D7]beyond the [Am]blue

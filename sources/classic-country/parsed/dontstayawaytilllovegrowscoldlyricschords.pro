@@ -1,6 +1,6 @@
 {meta: title Don't Stay Away (till love grows cold)}
 {meta: artist Lefty Fizzell}
-{meta: writer Lefty Frizzell and Loys Sutherland}
+{meta: composer Lefty Frizzell and Loys Sutherland}
 
 {start_of_verse: Verse 1}
 [C]Please don't stay away so long [G7]darling 

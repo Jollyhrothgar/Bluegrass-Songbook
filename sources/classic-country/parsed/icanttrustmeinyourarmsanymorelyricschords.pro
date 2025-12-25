@@ -1,6 +1,6 @@
 {meta: title I Can't Trust Me In Your Arms Anymore}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Vic McAlpin and Tommy Certain}
+{meta: composer Vic McAlpin and Tommy Certain}
 
 {start_of_verse: Verse 1}
 [C]It started in fun I [F]needed some[C]one

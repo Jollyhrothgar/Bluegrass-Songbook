@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Walk And Talk With My Lord}
 {meta: artist Norma Jean}
-{meta: writer Martha Carson}
+{meta: composer Martha Carson}
 
 {start_of_verse: Verse 1}
 [C]Oh I heard a voice from heaven

@@ -1,6 +1,6 @@
 {meta: title Beautiful Morning Glory}
 {meta: artist Buck Owens}
-{meta: writer Texas Tyler}
+{meta: composer Texas Tyler}
 
 {start_of_verse: Verse 1}
 [C]Beautiful morning [G7]glory

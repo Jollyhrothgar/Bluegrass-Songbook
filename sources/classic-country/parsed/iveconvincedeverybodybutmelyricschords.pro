@@ -1,6 +1,6 @@
 {meta: title I've Convinced Everybody But Me}
 {meta: artist George Strait}
-{meta: writer Kim Williams, Buddy Cannon, David Lewis}
+{meta: composer Kim Williams, Buddy Cannon, David Lewis}
 
 {start_of_verse: Verse 1}
 [C]The guys down at the job all wanna [F]know

@@ -1,6 +1,6 @@
 {meta: title If You'll Hold The Ladder}
 {meta: artist David Allan Coe}
-{meta: writer Buzz Rabin and Sara Rabin}
+{meta: composer Buzz Rabin and Sara Rabin}
 
 {start_of_verse: Verse 1}
 [C]Baby you're the only dream I've [F]ever had come true

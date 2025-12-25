@@ -1,6 +1,6 @@
 {meta: title Am I The Only Thing You've Done Wrong}
 {meta: artist Lee Ann Womack}
-{meta: writer Billy Foster, Jason Seller, Lee Ann Womack}
+{meta: composer Billy Foster, Jason Seller, Lee Ann Womack}
 
 {start_of_verse: Verse 1}
 [G]You're the life of the party you [C]stand out in a [G]crowd

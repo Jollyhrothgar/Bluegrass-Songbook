@@ -1,6 +1,6 @@
 {meta: title I Don't Mind}
 {meta: artist Waylon Jennings}
-{meta: writer Harlan Howard and Richard Johnson}
+{meta: composer Harlan Howard and Richard Johnson}
 
 {start_of_verse: Verse 1}
 [C]I don't mind I don't [F]mind

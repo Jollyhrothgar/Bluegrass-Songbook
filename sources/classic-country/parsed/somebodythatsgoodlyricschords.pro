@@ -1,6 +1,6 @@
 {meta: title Somebody That's Good}
 {meta: artist Moe Bandy}
-{meta: writer Eddy Raven and Ray Baker}
+{meta: composer Eddy Raven and Ray Baker}
 
 {start_of_verse: Verse 1}
 [C]By now the [F]sun's at your [C]window

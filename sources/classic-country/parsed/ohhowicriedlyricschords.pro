@@ -1,6 +1,6 @@
 {meta: title Oh How I Cried}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [C]Blind I could not see oh what a fool a [C7]fool you made of me

@@ -1,6 +1,6 @@
 {meta: title Across This Town And Gone Lyrics with Chords}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Gene Price}
+{meta: composer Buck Owens and Gene Price}
 
 {start_of_verse: Verse 1}
 [G]It's time to leave so let me go [C]I've just been wasting [G]time

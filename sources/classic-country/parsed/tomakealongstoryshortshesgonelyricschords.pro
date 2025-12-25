@@ -1,6 +1,6 @@
 {meta: title To Make A Long Story Short (She's Gone)}
 {meta: artist Willie Nelson}
-{meta: writer Willie Nelson and Fred Foster}
+{meta: composer Willie Nelson and Fred Foster}
 
 {start_of_verse: Verse 1}
 [G]I see nothing to be [D7]gained by ex[G]planations

@@ -1,6 +1,6 @@
 {meta: title Faded Love}
 {meta: artist Bob Wills}
-{meta: writer John Wills and Bob Wills}
+{meta: composer John Wills and Bob Wills}
 
 {start_of_verse: Verse 1}
 [D7]As I [G]look at the [G7]letters that [C]you wrote to me

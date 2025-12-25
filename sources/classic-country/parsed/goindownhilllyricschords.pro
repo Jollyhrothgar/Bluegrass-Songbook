@@ -1,6 +1,6 @@
 {meta: title Goin' Down Hill}
 {meta: artist John Anderson}
-{meta: writer John Anderson and Aries Lincoln}
+{meta: composer John Anderson and Aries Lincoln}
 
 {start_of_verse: Verse 1}
 [C]It all started at a corner table [F]sippin' on a Jack and Coke

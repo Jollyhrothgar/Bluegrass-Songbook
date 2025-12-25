@@ -1,6 +1,6 @@
 {meta: title Losing You}
 {meta: artist Roy Orbison}
-{meta: writer Roy Kelton Orbison, Bill Dees, William Dees}
+{meta: composer Roy Kelton Orbison, Bill Dees, William Dees}
 
 {start_of_verse: Verse 1}
 [C]Teardrops tell me that I'm losing [Dm]you 

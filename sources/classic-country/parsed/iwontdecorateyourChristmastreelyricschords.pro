@@ -1,6 +1,6 @@
 {meta: title I Won't Decorate Your Christmas Tree}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Barbara Cummings}
+{meta: composer Loretta Lynn and Barbara Cummings}
 
 {start_of_verse: Verse 1}
 [G]Well I wrote to Santa just today I told him I don't plan to [C]stay

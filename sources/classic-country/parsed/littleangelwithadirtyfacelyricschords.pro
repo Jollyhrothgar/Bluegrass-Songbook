@@ -1,6 +1,6 @@
 {meta: title Little Angel With A Dirty Face}
 {meta: artist Eddy Arnold}
-{meta: writer Dale Parker}
+{meta: composer Dale Parker}
 
 {start_of_verse: Verse 1}
 [G7]When your [C]mother [G7]went a[C]way on the [F]day that you were [C]born

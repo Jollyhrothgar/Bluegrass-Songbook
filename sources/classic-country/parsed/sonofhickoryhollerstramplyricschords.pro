@@ -1,6 +1,6 @@
 {meta: title Son Of Hickory Hollers Tramp}
 {meta: artist Kenny Rogers}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]The corn was dry the weeds were high [F]when Daddy took to [C]drinking          

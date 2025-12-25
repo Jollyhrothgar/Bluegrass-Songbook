@@ -1,6 +1,6 @@
 {meta: title Don't Tell Me What To Do}
 {meta: artist Pam Tillis}
-{meta: writer Harlan Howard and Max D. Barnes}
+{meta: composer Harlan Howard and Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [G]We tried and we [C]tried but it's [D7]over

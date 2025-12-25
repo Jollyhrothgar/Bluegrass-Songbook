@@ -1,6 +1,6 @@
 {meta: title Knee Deep In Loving You}
 {meta: artist Tanya Tucker}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]Well I'm knee deep in loving [F]you

@@ -1,6 +1,6 @@
 {meta: title Out Of My Bones}
 {meta: artist Randy Travis}
-{meta: writer Gary Burr, Robin Lerner, Sharon Vaughn}
+{meta: composer Gary Burr, Robin Lerner, Sharon Vaughn}
 
 {start_of_verse: Verse 1}
 [C]I'm in need of a [F]remedy 

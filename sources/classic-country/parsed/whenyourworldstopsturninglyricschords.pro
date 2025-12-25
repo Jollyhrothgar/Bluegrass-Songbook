@@ -1,6 +1,6 @@
 {meta: title When Your World Stops Turning}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert, Gene Strasser, George Winters}
+{meta: composer Bob Tubert, Gene Strasser, George Winters}
 
 {start_of_verse: Verse 1}
 [C]Oh oh [F]what do you do when your [C]world stops turning

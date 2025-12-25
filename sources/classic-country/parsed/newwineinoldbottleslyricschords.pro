@@ -1,6 +1,6 @@
 {meta: title New Wine In Old Bottles}
 {meta: artist Hank Thompson}
-{meta: writer Ann Tygart and Hank Thompson}
+{meta: composer Ann Tygart and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]They’re at the table wishing holding hands and reminiscing 

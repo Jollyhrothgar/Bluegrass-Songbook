@@ -1,6 +1,6 @@
 {meta: title After The Hurt Is Gone}
 {meta: artist Hank Locklin}
-{meta: writer Marijohn Wilkin}
+{meta: composer Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [C]After the [G7]party is [C]over

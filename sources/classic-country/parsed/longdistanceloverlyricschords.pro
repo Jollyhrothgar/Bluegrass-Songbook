@@ -1,6 +1,6 @@
 {meta: title Long Distance Lover}
 {meta: artist Reba McEntire}
-{meta: writer Robert Rosenberg and Pauline Lee}
+{meta: composer Robert Rosenberg and Pauline Lee}
 
 {start_of_verse: Verse 1}
 [G7]Then you [C]call me long [F]distance from [C]Memphis

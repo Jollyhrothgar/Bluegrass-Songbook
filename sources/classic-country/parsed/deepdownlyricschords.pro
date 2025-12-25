@@ -1,6 +1,6 @@
 {meta: title Deep Down}
 {meta: artist Crystal Gayle}
-{meta: writer Gary Nicholson and Kevin Welch}
+{meta: composer Gary Nicholson and Kevin Welch}
 
 {start_of_verse: Verse 1}
 [C]Silver tears fall on my [G7]pillow case

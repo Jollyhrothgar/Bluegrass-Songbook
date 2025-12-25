@@ -1,6 +1,6 @@
 {meta: title Champagne Ladies And Blue Ribbon Babies}
 {meta: artist Ferlin Husky}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]Champagne ladies and blue ribbon [F]babies

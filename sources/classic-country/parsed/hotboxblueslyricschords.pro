@@ -1,6 +1,6 @@
 {meta: title Hot Box Blues}
 {meta: artist Boxcar Willie}
-{meta: writer Randy Leiner}
+{meta: composer Randy Leiner}
 
 {start_of_verse: Verse 1}
 [G]Just riding along by the mighty Mississippi

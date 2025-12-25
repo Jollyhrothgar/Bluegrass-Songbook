@@ -1,6 +1,6 @@
 {meta: title Our Past Is In My Way}
 {meta: artist Jean Shepard}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [G]Our past is always present [C]where my future is [G]concerned

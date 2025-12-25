@@ -1,6 +1,6 @@
 {meta: title Are You Afraid To Speak Our Savior's Name}
 {meta: artist The Osborne Brothers}
-{meta: writer Bobby Osborne}
+{meta: composer Bobby Osborne}
 
 {start_of_verse: Verse 1}
 [G]Today there's so much talk about the [D7]old [C]fashioned [G]ways

@@ -1,6 +1,6 @@
 {meta: title My Forever Friend}
 {meta: artist Daniel O'Donnell}
-{meta: writer Charles Alexander Landsborough}
+{meta: composer Charles Alexander Landsborough}
 
 {start_of_verse: Verse 1}
 [C]Everybody needs a little [F]help [C]sometimes

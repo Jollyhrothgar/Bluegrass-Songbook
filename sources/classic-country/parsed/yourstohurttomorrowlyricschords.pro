@@ -1,6 +1,6 @@
 {meta: title Yours To Hurt Tomorrow}
 {meta: artist Conway Twitty}
-{meta: writer Peggy Forman}
+{meta: composer Peggy Forman}
 
 {start_of_verse: Verse 1}
 [G]I hold her close and try to do the [C]things you never [G]did

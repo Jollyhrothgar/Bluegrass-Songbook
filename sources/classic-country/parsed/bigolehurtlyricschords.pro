@@ -1,6 +1,6 @@
 {meta: title Big Ole Hurt}
 {meta: artist Cal Smith}
-{meta: writer Loretta Lynn}
+{meta: composer Loretta Lynn}
 
 {start_of_verse: Verse 1}
 [G]Well you've been a bouncin' me just [C]like a rubber [G]ball

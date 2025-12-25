@@ -1,6 +1,6 @@
 {meta: title True Love Is A Golden Ring}
 {meta: artist Alan Jackson}
-{meta: writer Roger Murrah and Alan Jackson}
+{meta: composer Roger Murrah and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]True love [F]is a golden [C]ring

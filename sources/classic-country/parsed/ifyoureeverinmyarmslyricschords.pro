@@ -1,6 +1,6 @@
 {meta: title If You're Ever In My Arms}
 {meta: artist Ricky Van Shelton}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]Oh I wish that you could [F]see 

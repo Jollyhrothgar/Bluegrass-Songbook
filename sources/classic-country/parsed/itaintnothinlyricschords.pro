@@ -1,6 +1,6 @@
 {meta: title It Ain't Nothin'}
 {meta: artist Keith Whitley}
-{meta: writer Tony Haselden}
+{meta: composer Tony Haselden}
 
 {start_of_verse: Verse 1}
 [C]My boss is the boss's son 

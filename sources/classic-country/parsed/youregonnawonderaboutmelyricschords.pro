@@ -1,6 +1,6 @@
 {meta: title You’re Gonna Wonder About Me}
 {meta: artist Waylon Jennings}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]Pretty soon this old [G7]town I'll be [C]leavin’

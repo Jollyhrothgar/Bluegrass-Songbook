@@ -1,6 +1,6 @@
 {meta: title Green Rolling Hills}
 {meta: artist Emmylou Harris}
-{meta: writer Utah Phillips, Alice Gerrard, Hazel Dickens}
+{meta: composer Utah Phillips, Alice Gerrard, Hazel Dickens}
 
 {start_of_verse: Verse 1}
 [C]The green rolling hills [G7]of West [C]Virginia

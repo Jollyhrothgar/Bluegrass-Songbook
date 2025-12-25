@@ -1,6 +1,6 @@
 {meta: title Wear Away}
 {meta: artist Dottie West}
-{meta: writer Dottie West and Bill West}
+{meta: composer Dottie West and Bill West}
 
 {start_of_verse: Verse 1}
 [G]Wear away wear away I'm so [C]afraid

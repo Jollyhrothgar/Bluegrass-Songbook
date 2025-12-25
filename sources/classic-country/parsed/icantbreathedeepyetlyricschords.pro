@@ -1,6 +1,6 @@
 {meta: title I Can’t Breathe Deep Yet}
 {meta: artist The Gibson Brothers}
-{meta: writer Leigh Joseph Gibson}
+{meta: composer Leigh Joseph Gibson}
 
 {start_of_verse: Verse 1}
 [G]I got a beauty here she's got my back

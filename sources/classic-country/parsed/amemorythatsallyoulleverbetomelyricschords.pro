@@ -1,6 +1,6 @@
 {meta: title A Memory That’s All You’ll Ever Be To Me}
 {meta: artist Ernest Tubb}
-{meta: writer Norman Owens and Lance Guynes}
+{meta: composer Norman Owens and Lance Guynes}
 
 {start_of_verse: Verse 1}
 [C]You’re the shadow that haunts me every [F]moment

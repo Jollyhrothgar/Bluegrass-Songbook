@@ -1,6 +1,6 @@
 {meta: title Burning Bridges Lyrics Chords}
 {meta: artist Ray Price}
-{meta: writer Walter Scott}
+{meta: composer Walter Scott}
 
 {start_of_verse: Verse 1}
 [C]Found some letters you wrote me this [D7]morning

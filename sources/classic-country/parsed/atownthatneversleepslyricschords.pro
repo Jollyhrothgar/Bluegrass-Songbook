@@ -1,6 +1,6 @@
 {meta: title A Town That Never Sleeps}
 {meta: artist Wilburn Brothers}
-{meta: writer Teddy Wilburn, Doyle Wilburn, Don Helms}
+{meta: composer Teddy Wilburn, Doyle Wilburn, Don Helms}
 
 {start_of_verse: Verse 1}
 [C]The townhall clock is striking two as [F]I stand all [C]alone

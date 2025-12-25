@@ -1,6 +1,6 @@
 {meta: title You Can't Take My Memories Of You}
 {meta: artist Hank Williams Jr.}
-{meta: writer Hank Williams and Hank Williams Jr.}
+{meta: composer Hank Williams and Hank Williams Jr.}
 
 {start_of_verse: Verse 1}
 [C]Today you tell me you are leavin'

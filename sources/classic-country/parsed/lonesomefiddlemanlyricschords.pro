@@ -1,6 +1,6 @@
 {meta: title Lonesome Fiddle Man}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Dallas Frazier and Sanger D. Shafer}
+{meta: composer Dallas Frazier and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G]The one that I took dancing the [C]one that I called a baby

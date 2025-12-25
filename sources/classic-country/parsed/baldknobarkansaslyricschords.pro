@@ -1,6 +1,6 @@
 {meta: title Bald Knob Arkansas}
 {meta: artist Vern Williams}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [G]I hear that train a comin’

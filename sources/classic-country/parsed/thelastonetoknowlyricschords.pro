@@ -1,6 +1,6 @@
 {meta: title The Last One To Know}
 {meta: artist Reba McEntire}
-{meta: writer Matraca Berg and Jane Mariash}
+{meta: composer Matraca Berg and Jane Mariash}
 
 {start_of_verse: Verse 1}
 [C]I didn't see the fire burn to [F]ashes

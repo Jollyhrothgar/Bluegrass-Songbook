@@ -1,6 +1,6 @@
 {meta: title Deeper Than That}
 {meta: artist Doug Stone}
-{meta: writer Tim Mensy and Brenda Anderson}
+{meta: composer Tim Mensy and Brenda Anderson}
 
 {start_of_verse: Verse 1}
 [C]With a closet full of [Em]clothes she's got [F]nothing to wear[G7]

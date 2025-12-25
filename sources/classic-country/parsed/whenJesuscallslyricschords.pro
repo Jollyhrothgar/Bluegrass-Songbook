@@ -1,6 +1,6 @@
 {meta: title When Jesus Calls}
 {meta: artist Ernest Tubb}
-{meta: writer Willie Phelps}
+{meta: composer Willie Phelps}
 
 {start_of_verse: Verse 1}
 [C]When Jesus calls I wanna be [C7]ready

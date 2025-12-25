@@ -1,6 +1,6 @@
 {meta: title Led Out Of Bondage}
 {meta: artist The Statler Brothers}
-{meta: writer R.L. Prather}
+{meta: composer R.L. Prather}
 
 {start_of_verse: Verse 1}
 [G]God promised to [C]lead His children out of [G]bondage

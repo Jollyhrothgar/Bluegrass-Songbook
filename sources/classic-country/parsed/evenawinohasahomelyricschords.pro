@@ -1,6 +1,6 @@
 {meta: title Even A Wino Has A Home}
 {meta: artist Cal Smith}
-{meta: writer Dave Kirby}
+{meta: composer Dave Kirby}
 
 {start_of_verse: Verse 1}
 [C]Momma your [F]long lost son is [C]hungry

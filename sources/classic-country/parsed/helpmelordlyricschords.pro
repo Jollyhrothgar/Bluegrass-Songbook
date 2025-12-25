@@ -1,6 +1,6 @@
 {meta: title Help Me Lord}
 {meta: artist Doyle Lawson}
-{meta: writer Brian Faust}
+{meta: composer Brian Faust}
 
 {start_of_verse: Verse 1}
 [G]I have a friend who [C]walks beside [G]me

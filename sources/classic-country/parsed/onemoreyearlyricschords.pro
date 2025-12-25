@@ -1,6 +1,6 @@
 {meta: title One More Year}
 {meta: artist Charley Pride}
-{meta: writer Arthur Leo Owens and Hal Bynum}
+{meta: composer Arthur Leo Owens and Hal Bynum}
 
 {start_of_verse: Verse 1}
 [C]Every night you [G7]fall [C]asleep 

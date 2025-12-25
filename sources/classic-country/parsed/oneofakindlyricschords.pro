@@ -1,6 +1,6 @@
 {meta: title One Of A Kind}
 {meta: artist Ray Price}
-{meta: writer Lee Dresser}
+{meta: composer Lee Dresser}
 
 {start_of_verse: Verse 1}
 [C]I've met a great many men in [Dm]my life time [G7]

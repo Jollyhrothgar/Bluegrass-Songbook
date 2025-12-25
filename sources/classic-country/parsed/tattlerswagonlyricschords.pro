@@ -1,6 +1,6 @@
 {meta: title Tattlers Wagon}
 {meta: artist Chuck Wagon Gang}
-{meta: writer Helen Beavers, Troy Beavers, W. S. Stevenson}
+{meta: composer Helen Beavers, Troy Beavers, W. S. Stevenson}
 
 {start_of_verse: Verse 1}
 [C]Once I had a tattlers wagon which behind me I did [D7]pull

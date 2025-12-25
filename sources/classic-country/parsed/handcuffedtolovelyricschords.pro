@@ -1,6 +1,6 @@
 {meta: title Handcuffed To Love}
 {meta: artist Hank Snow}
-{meta: writer Jerry Williams and Hope Harlow}
+{meta: composer Jerry Williams and Hope Harlow}
 
 {start_of_verse: Verse 1}
 [G]I'm handcuffed to the [D7]only love I [G]knew

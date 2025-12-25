@@ -1,6 +1,6 @@
 {meta: title Stranger In My Place}
 {meta: artist Anne Murray}
-{meta: writer Kenny Rogers and Kin Vassy}
+{meta: composer Kenny Rogers and Kin Vassy}
 
 {start_of_verse: Verse 1}
 [C]I see the town where we were [C7]born 

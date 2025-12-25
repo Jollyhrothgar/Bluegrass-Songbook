@@ -1,6 +1,6 @@
 {meta: title Blue Blooded Woman}
 {meta: artist Alan Jackson}
-{meta: writer Roger Murrah, Keith Stegall, Alan Jackson}
+{meta: composer Roger Murrah, Keith Stegall, Alan Jackson}
 
 {start_of_verse: Verse 1}
 [F]She loves the violin [C]I love the fiddle

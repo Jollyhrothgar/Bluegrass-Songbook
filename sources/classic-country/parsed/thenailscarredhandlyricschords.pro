@@ -1,6 +1,6 @@
 {meta: title The Nail Scarred Hand}
 {meta: artist Carl Smith}
-{meta: writer B.B. McKinney}
+{meta: composer B.B. McKinney}
 
 {start_of_verse: Verse 1}
 [C]Have you failed in your plan of your storm caused life

@@ -1,6 +1,6 @@
 {meta: title Why Not Now}
 {meta: artist George Strait}
-{meta: writer Steve Bogard and Jeff Stevens}
+{meta: composer Steve Bogard and Jeff Stevens}
 
 {start_of_verse: Verse 1}
 [G]You take it nice and easy

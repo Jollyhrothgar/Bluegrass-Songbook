@@ -1,6 +1,6 @@
 {meta: title My Blue Heaven}
 {meta: artist Fats Domino}
-{meta: writer George Whiting and Walter Donaldson}
+{meta: composer George Whiting and Walter Donaldson}
 
 {start_of_verse: Verse 1}
 [C]When whippoorwills call and evening is nigh

@@ -1,6 +1,6 @@
 {meta: title I'm In Love With Molly}
 {meta: artist Ernest Tubb}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]Now I'm in love with [G7]Molly and I love Molly [C]too

@@ -1,6 +1,6 @@
 {meta: title This Time}
 {meta: artist Johnny Lee}
-{meta: writer Jon Lisner}
+{meta: composer Jon Lisner}
 
 {start_of_verse: Verse 1}
 [G]This time we're [C]really breaking up

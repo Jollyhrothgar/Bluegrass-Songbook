@@ -1,6 +1,6 @@
 {meta: title He's Got Her}
 {meta: artist Moe Bandy}
-{meta: writer Blake Mevis, John Greenbaum, Becky Hobbs}
+{meta: composer Blake Mevis, John Greenbaum, Becky Hobbs}
 
 {start_of_verse: Verse 1}
 [C]In a room across [G7]town with the [Am]lights and sheets turned [F]down

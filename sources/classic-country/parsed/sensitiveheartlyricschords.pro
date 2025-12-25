@@ -1,6 +1,6 @@
 {meta: title Sensitive Heart}
 {meta: artist Conway Twitty}
-{meta: writer Billy Swan}
+{meta: composer Billy Swan}
 
 {start_of_verse: Verse 1}
 [G]Don't tell me you don't love me 

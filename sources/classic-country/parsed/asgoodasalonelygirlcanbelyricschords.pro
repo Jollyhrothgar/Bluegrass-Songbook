@@ -1,6 +1,6 @@
 {meta: title As Good As A Lonely Girl Can Be}
 {meta: artist Ernest Tubb and Loretta Lynn}
-{meta: writer Bobby Harden}
+{meta: composer Bobby Harden}
 
 {start_of_verse: Verse 1}
 [C]Tell me darling have I been away too [G7]long

@@ -1,6 +1,6 @@
 {meta: title Sweet Summertime}
 {meta: artist Rhonda Vincent}
-{meta: writer Donna Webster}
+{meta: composer Donna Webster}
 
 {start_of_verse: Verse 1}
 [C]Can you remember [F]back when you were [G7]younger

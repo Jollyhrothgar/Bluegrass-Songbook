@@ -1,6 +1,6 @@
 {meta: title How Can We Plan The Future}
 {meta: artist George Morgan}
-{meta: writer Larry Lee and Tony Moon}
+{meta: composer Larry Lee and Tony Moon}
 
 {start_of_verse: Verse 1}
 [C]We both remember someone a love that we once [D7]knew

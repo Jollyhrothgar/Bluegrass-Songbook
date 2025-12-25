@@ -1,6 +1,6 @@
 {meta: title What Child Is This}
 {meta: artist John Denver}
-{meta: writer William Dix}
+{meta: composer William Dix}
 
 {start_of_verse: Verse 1}
 [Em]What child is this who laid to [D7]rest

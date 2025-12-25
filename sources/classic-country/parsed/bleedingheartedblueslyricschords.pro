@@ -1,6 +1,6 @@
 {meta: title Bleeding Hearted Blues}
 {meta: artist Bob Wills}
-{meta: writer Lovie Austin}
+{meta: composer Lovie Austin}
 
 {start_of_verse: Verse 1}
 [C]When I’m sad and lonely thinking about you only

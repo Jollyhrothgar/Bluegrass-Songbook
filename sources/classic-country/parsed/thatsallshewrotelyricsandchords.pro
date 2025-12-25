@@ -1,6 +1,6 @@
 {meta: title That's All She Wrote}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ernest Worley}
+{meta: composer Ernest Worley}
 
 {start_of_verse: Verse 1}
 [C]I'm so [G7]alone tonight and [C]blue

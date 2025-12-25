@@ -1,6 +1,6 @@
 {meta: title Blue Must Be The Color Of The Blues}
 {meta: artist Willie Nelson}
-{meta: writer Lawton Williams and George Jones}
+{meta: composer Lawton Williams and George Jones}
 
 {start_of_verse: Verse 1}
 [G]Up above me are the skies

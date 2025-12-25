@@ -1,6 +1,6 @@
 {meta: title My True Confession}
 {meta: artist Cowboy Copas}
-{meta: writer Sydney Nathan and Lloyd Copas}
+{meta: composer Sydney Nathan and Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [C]This is my [F]true con[C]fession

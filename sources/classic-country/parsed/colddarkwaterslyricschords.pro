@@ -1,6 +1,6 @@
 {meta: title Cold Dark Waters}
 {meta: artist Porter Wagoner}
-{meta: writer Don Owens}
+{meta: composer Don Owens}
 
 {start_of_verse: Verse 1}
 [C]In tomorrow's newspaper you'll [G7]read about [C]me 

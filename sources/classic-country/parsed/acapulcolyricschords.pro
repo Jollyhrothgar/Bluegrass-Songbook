@@ -1,6 +1,6 @@
 {meta: title Acapulco}
 {meta: artist Johnny Duncan}
-{meta: writer Larry Collins and Mary Leath}
+{meta: composer Larry Collins and Mary Leath}
 
 {start_of_verse: Verse 1}
 [C]It's raining on the west coast snowing in Topeka

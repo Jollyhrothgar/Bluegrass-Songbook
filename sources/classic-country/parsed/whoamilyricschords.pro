@@ -1,6 +1,6 @@
 {meta: title Who Am I}
 {meta: artist Elvis Presley}
-{meta: writer Charles Goodman}
+{meta: composer Charles Goodman}
 
 {start_of_verse: Verse 1}
 [C]When I think of how He [G7]came so far from [C]glory

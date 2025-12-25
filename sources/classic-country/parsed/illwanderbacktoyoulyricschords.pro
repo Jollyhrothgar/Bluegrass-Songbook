@@ -1,6 +1,6 @@
 {meta: title I'll Wander Back To You}
 {meta: artist Charlie Pride}
-{meta: writer Mel Tillis, Danny Dill, Fred B. Burch}
+{meta: composer Mel Tillis, Danny Dill, Fred B. Burch}
 
 {start_of_verse: Verse 1}
 [C]They say I’m like my [F]daddy  [C]always on the [G7]roam

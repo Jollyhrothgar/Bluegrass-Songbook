@@ -1,6 +1,6 @@
 {meta: title You Went Out Of Your Way (To Walk On Me)}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Paul Craft}
+{meta: composer Paul Craft}
 
 {start_of_verse: Verse 1}
 [G]You set your sights on someone who belonged to [C]someone [G]else

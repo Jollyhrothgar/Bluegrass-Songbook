@@ -1,6 +1,6 @@
 {meta: title I Found Jesus On The Jailhouse Floor}
 {meta: artist George Strait}
-{meta: writer Earl Clark and Greg Hudik}
+{meta: composer Earl Clark and Greg Hudik}
 
 {start_of_verse: Verse 1}
 [G]There was once a time when I was dead in[D7]side

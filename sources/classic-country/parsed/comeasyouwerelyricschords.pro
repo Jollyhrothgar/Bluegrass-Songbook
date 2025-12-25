@@ -1,6 +1,6 @@
 {meta: title Come As You Were}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Paul Charles Craft}
+{meta: composer Paul Charles Craft}
 
 {start_of_verse: Verse 1}
 [C]I'm giving a [G7]party to[C]night 

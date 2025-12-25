@@ -1,6 +1,6 @@
 {meta: title How Can I Help You Say Goodbye}
 {meta: artist Patty Loveless}
-{meta: writer Burton Collins and Karen Taylor}
+{meta: composer Burton Collins and Karen Taylor}
 
 {start_of_verse: Verse 1}
 [G]Through the back [D7]window of our '[C]59 wagon

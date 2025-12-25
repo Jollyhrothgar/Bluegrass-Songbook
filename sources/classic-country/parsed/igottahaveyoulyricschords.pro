@@ -1,6 +1,6 @@
 {meta: title I Gotta Have You}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Jimmy Selph}
+{meta: composer Jimmy Selph}
 
 {start_of_verse: Verse 1}
 [G7]You won't [C]write you won't [F]call

@@ -1,6 +1,6 @@
 {meta: title New Star Shining}
 {meta: artist Ricky Skaggs}
-{meta: writer John Hall and Johanna Hall}
+{meta: composer John Hall and Johanna Hall}
 
 {start_of_verse: Verse 1}
 [C]They didn't own a [Em]house no [F]crib no toys were [C]waiti[G7]ng

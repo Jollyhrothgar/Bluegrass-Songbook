@@ -1,6 +1,6 @@
 {meta: title One Teardrop At A Time}
 {meta: artist Wanda Jackson}
-{meta: writer Eddie Miller and Betty West}
+{meta: composer Eddie Miller and Betty West}
 
 {start_of_verse: Verse 1}
 [G]I know that I've cried a lot [D7]today

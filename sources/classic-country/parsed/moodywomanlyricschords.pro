@@ -1,6 +1,6 @@
 {meta: title Moody Woman}
 {meta: artist Charley Pride}
-{meta: writer Theresa Bell, Jerry Butler, Kenneth Gamble}
+{meta: composer Theresa Bell, Jerry Butler, Kenneth Gamble}
 
 {start_of_verse: Verse 1}
 [G]Hey it's Saturday night and I'm ready to go

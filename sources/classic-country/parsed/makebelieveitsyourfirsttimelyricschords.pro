@@ -1,6 +1,6 @@
 {meta: title Make Believe It's Your First Time}
 {meta: artist Charly McClain}
-{meta: writer Bob Morrison and Johnny Wilson}
+{meta: composer Bob Morrison and Johnny Wilson}
 
 {start_of_verse: Verse 1}
 [D7]We've tried our [Am]hand [D7]at love [G]before [Em]

@@ -1,6 +1,6 @@
 {meta: title Wildfire}
 {meta: artist Tracy Byrd}
-{meta: writer Larry Cansler and Michael Murphey}
+{meta: composer Larry Cansler and Michael Murphey}
 
 {start_of_verse: Verse 1}
 [F]She comes [C]down from Yellow [F]Mountain 

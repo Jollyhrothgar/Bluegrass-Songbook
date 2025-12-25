@@ -1,6 +1,6 @@
 {meta: title Memories From The Past}
 {meta: artist Norma Jean}
-{meta: writer George McCormick and Charles McCormick}
+{meta: composer George McCormick and Charles McCormick}
 
 {start_of_verse: Verse 1}
 [C]All these lonely lonely [G7]memories from the [C]past

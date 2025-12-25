@@ -1,6 +1,6 @@
 {meta: title I Don’t Want To Have To Marry You}
 {meta: artist Jim Ed Brown and Helen Cornelius}
-{meta: writer Fred Imus and Phillip H. Sweet}
+{meta: composer Fred Imus and Phillip H. Sweet}
 
 {start_of_verse: Verse 1}
 [G]I don’t want to have marry [C]you

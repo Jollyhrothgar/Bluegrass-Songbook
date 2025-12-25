@@ -1,6 +1,6 @@
 {meta: title Casey Jones}
 {meta: artist Johnny Cash}
-{meta: writer Lawrence Seibert and Ernie Newton}
+{meta: composer Lawrence Seibert and Ernie Newton}
 
 {start_of_verse: Verse 1}
 [G]Come all you rounders if you wanna hear

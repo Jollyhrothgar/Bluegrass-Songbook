@@ -1,6 +1,6 @@
 {meta: title I'll Take The Memories}
 {meta: artist Tanya Tucker}
-{meta: writer Charlie Craig and Keith Stegall}
+{meta: composer Charlie Craig and Keith Stegall}
 
 {start_of_verse: Verse 1}
 [G]There's van out in the drive it's time to divide [C]everything up

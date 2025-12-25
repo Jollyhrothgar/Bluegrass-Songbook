@@ -1,6 +1,6 @@
 {meta: title Baby Face}
 {meta: artist Brenda Lee}
-{meta: writer Harry Akst and Benny Davis}
+{meta: composer Harry Akst and Benny Davis}
 
 {start_of_verse: Verse 1}
 [G]Baby face you've got the cutest little baby [D7]face

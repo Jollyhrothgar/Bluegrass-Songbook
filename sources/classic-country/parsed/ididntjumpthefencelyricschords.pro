@@ -1,6 +1,6 @@
 {meta: title I Didn't Jump The Fence}
 {meta: artist Cal Smith}
-{meta: writer Gene Crysler}
+{meta: composer Gene Crysler}
 
 {start_of_verse: Verse 1}
 [C]Mr. angry neighbor yes I [G7]know just how you [C]feel

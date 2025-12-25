@@ -1,6 +1,6 @@
 {meta: title Daydreams of You}
 {meta: artist Russell Moore and IIIrd Tyme Out}
-{meta: writer Russell Moore}
+{meta: composer Russell Moore}
 
 {start_of_verse: Verse 1}
 [G]I still [D7]see your [C]face

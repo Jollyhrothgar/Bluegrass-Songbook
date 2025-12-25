@@ -1,6 +1,6 @@
 {meta: title Going Through The Big D}
 {meta: artist Mark Chesnutt}
-{meta: writer Ronnie Rogers, Mark Wright, Jon Wright}
+{meta: composer Ronnie Rogers, Mark Wright, Jon Wright}
 
 {start_of_verse: Verse 1}
 [G]Six short months we went together decided [D7]it should be [G]forever

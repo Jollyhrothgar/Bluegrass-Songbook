@@ -1,6 +1,6 @@
 {meta: title Carolina Star}
 {meta: artist Tony Rice}
-{meta: writer Hugh Moffatt}
+{meta: composer Hugh Moffatt}
 
 {start_of_verse: Verse 1}
 [C]Back in the hills those [F]slow rollin’ hills

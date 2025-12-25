@@ -1,6 +1,6 @@
 {meta: title Someone's Walkin' Around Upstairs}
 {meta: artist George Strait}
-{meta: writer David Anthony and Paul Maloy}
+{meta: composer David Anthony and Paul Maloy}
 
 {start_of_verse: Verse 1}
 [C]Someone's walkin' round upstairs I can [F]hear him

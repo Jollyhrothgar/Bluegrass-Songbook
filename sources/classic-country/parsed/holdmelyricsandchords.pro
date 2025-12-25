@@ -1,6 +1,6 @@
 {meta: title Hold me}
 {meta: artist Barbara Mandrell}
-{meta: writer G. Ray}
+{meta: composer G. Ray}
 
 {start_of_verse: Verse 1}
 [C]Hold me  [F]let me be a little [C]girl again

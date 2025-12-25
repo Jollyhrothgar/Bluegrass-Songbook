@@ -1,6 +1,6 @@
 {meta: title Go Away Little Girl}
 {meta: artist Leroy Van Dyke}
-{meta: writer Carole King and Gerry Goffin}
+{meta: composer Carole King and Gerry Goffin}
 
 {start_of_verse: Verse 1}
 [C]Go away little girl

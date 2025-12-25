@@ -1,6 +1,6 @@
 {meta: title Final Touches}
 {meta: artist Conway Twitty}
-{meta: writer Tony Colton and Gordon Bradberry}
+{meta: composer Tony Colton and Gordon Bradberry}
 
 {start_of_verse: Verse 1}
 [G]I never felt the way I feel tonight

@@ -1,6 +1,6 @@
 {meta: title You Can't Judge A Good Book By Its Cover}
 {meta: artist Statler Brothers}
-{meta: writer Claude Boone}
+{meta: composer Claude Boone}
 
 {start_of_verse: Verse 1}
 [G]You can’t judge a book by its [C]cover

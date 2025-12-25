@@ -1,6 +1,6 @@
 {meta: title Tomorrow Never Comes}
 {meta: artist Loretta Lynn}
-{meta: writer Ernest Tubb and Johnny Bond}
+{meta: composer Ernest Tubb and Johnny Bond}
 
 {start_of_verse: Verse 1}
 [C]Now you tell me that you love me yes you [F]tell me that you [C]care

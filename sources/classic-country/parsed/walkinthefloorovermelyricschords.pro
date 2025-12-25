@@ -1,6 +1,6 @@
 {meta: title Walkin' The Floor Over Me}
 {meta: artist Alan Jackson}
-{meta: writer Don Sampson and Alan Jackson}
+{meta: composer Don Sampson and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]There's a lady living right [F]above me

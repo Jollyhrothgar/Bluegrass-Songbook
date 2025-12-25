@@ -1,6 +1,6 @@
 {meta: title Suffer Time}
 {meta: artist Dottie West}
-{meta: writer Dottie West and Bill West}
+{meta: composer Dottie West and Bill West}
 
 {start_of_verse: Verse 1}
 [C]After sundown comes suffer time [D7]for me

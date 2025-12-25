@@ -1,6 +1,6 @@
 {meta: title I Can't Tell My Heart That}
 {meta: artist Don Gibson}
-{meta: writer Johnny Wright, Jack Anglin, Jim Anglin}
+{meta: composer Johnny Wright, Jack Anglin, Jim Anglin}
 
 {start_of_verse: Verse 1}
 [G]I can't tell my heart

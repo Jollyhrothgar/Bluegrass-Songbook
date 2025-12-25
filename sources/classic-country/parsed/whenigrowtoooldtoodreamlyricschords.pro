@@ -1,6 +1,6 @@
 {meta: title When I Grow Too Old Too Dream}
 {meta: artist Hank Locklin}
-{meta: writer Oscar Hammerstein and Sigmund Romberg}
+{meta: composer Oscar Hammerstein and Sigmund Romberg}
 
 {start_of_verse: Verse 1}
 [C]When I grow too old to dream

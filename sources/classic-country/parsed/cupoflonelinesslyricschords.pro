@@ -1,6 +1,6 @@
 {meta: title Cup Of Loneliness}
 {meta: artist George Jones}
-{meta: writer George Jones and Burl Stephens}
+{meta: composer George Jones and Burl Stephens}
 
 {start_of_verse: Verse 1}
 [G]I see Christian pilgrims so redeemed from sin

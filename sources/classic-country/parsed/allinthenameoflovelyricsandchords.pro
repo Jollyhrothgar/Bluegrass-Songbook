@@ -1,6 +1,6 @@
 {meta: title All In The Name Of Love}
 {meta: artist The Bellamy Brothers}
-{meta: writer Jerry Williams}
+{meta: composer Jerry Williams}
 
 {start_of_verse: Verse 1}
 [G]Well the [C]things you say and the [D7]things you do

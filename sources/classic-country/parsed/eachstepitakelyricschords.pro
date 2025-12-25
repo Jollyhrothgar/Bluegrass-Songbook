@@ -1,6 +1,6 @@
 {meta: title Each Step I Take}
 {meta: artist Slim Whitman}
-{meta: writer W. Elmo Mercer}
+{meta: composer W. Elmo Mercer}
 
 {start_of_verse: Verse 1}
 [C]Each step I take my [F]Savior goes before [C]me

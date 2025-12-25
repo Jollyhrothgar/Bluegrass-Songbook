@@ -1,6 +1,6 @@
 {meta: title If I Had A Hammer}
 {meta: artist Wanda Jackson}
-{meta: writer Lee Hayes and Pete Seeger}
+{meta: composer Lee Hayes and Pete Seeger}
 
 {start_of_verse: Verse 1}
 [C]If I had a hammer [G7]I'd hammer in the [C]morning

@@ -1,6 +1,6 @@
 {meta: title Gone For Good}
 {meta: artist Gene Watson}
-{meta: writer Jimmy Melton}
+{meta: composer Jimmy Melton}
 
 {start_of_verse: Verse 1}
 [G]You used to kiss me every [D7]afternoon

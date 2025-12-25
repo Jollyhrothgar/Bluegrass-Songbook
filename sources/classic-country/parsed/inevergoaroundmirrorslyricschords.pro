@@ -1,6 +1,6 @@
 {meta: title I Never Go Around Mirrors}
 {meta: artist Gene Watson}
-{meta: writer Sanger D. Shafer &amp; Lefty Frizzell}
+{meta: composer Sanger D. Shafer &amp; Lefty Frizzell}
 
 {start_of_verse: Verse 1}
 [C]I can't stand to see a good man go to [F]waste

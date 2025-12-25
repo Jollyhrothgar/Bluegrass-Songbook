@@ -1,6 +1,6 @@
 {meta: title Free of the Blues}
 {meta: artist Webb Pierce}
-{meta: writer D. C. Mullins and Webb Pierce}
+{meta: composer D. C. Mullins and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]Gone are all my [D7]miseries that were caused by [G]memories

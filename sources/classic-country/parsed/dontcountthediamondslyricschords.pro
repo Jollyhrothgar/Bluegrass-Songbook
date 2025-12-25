@@ -1,6 +1,6 @@
 {meta: title Don't Count The Diamonds}
 {meta: artist Ferlin Husky}
-{meta: writer Ferlin Husky and Dalton Timbur}
+{meta: composer Ferlin Husky and Dalton Timbur}
 
 {start_of_verse: Verse 1}
 [F]Don't count the [G7]diamonds in her [C]wedding band

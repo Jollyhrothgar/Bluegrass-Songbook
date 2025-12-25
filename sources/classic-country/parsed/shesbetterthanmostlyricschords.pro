@@ -1,6 +1,6 @@
 {meta: title She's Better Than Most}
 {meta: artist Hank Locklin}
-{meta: writer Shorty Long and Dick Wentzel}
+{meta: composer Shorty Long and Dick Wentzel}
 
 {start_of_verse: Verse 1}
 [C]Don't whisper gossip [F]about her 

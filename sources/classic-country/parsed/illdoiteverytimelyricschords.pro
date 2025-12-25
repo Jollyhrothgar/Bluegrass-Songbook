@@ -1,6 +1,6 @@
 {meta: title I'll Do It Every Time}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Mathis, Johnny Horton, Tillman Franks}
+{meta: composer Johnny Mathis, Johnny Horton, Tillman Franks}
 
 {start_of_verse: Verse 1}
 [G]Well I called you on the phone to tell you who I [C]love
