@@ -1,0 +1,82 @@
+name: Process Song Correction
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  process-correction:
+    # Only run when 'approved' label is added to an issue with 'song-correction' label
+    if: github.event.label.name == 'approved' && contains(github.event.issue.labels.*.name, 'song-correction')
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml beautifulsoup4
+
+      - name: Process correction
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: |
+          python scripts/lib/process_correction.py
+
+      - name: Rebuild search index
+        run: |
+          python scripts/lib/build_index.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sources/classic-country/parsed/
+          git add sources/classic-country/protected.txt
+          git add docs/data/index.json
+          git diff --staged --quiet || git commit -m "Apply song correction from #${{ github.event.issue.number }}
+
+          ${{ github.event.issue.title }}
+
+          🤖 Generated with [Claude Code](https://claude.ai/claude-code)"
+          git push
+
+      - name: Close issue with comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Read the song ID that was corrected
+            let songId = 'unknown';
+            try {
+              songId = fs.readFileSync('/tmp/corrected_song_id.txt', 'utf8').trim();
+            } catch (e) {
+              console.log('Could not read song ID');
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `✅ **Song correction applied!**\n\nFile: \`sources/classic-country/parsed/${songId}.pro\`\n\nThe song has been updated and added to the protected list to prevent parser overwrites.\n\nThank you for your contribution!`
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });

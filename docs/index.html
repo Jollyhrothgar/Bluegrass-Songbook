@@ -68,6 +68,10 @@
                             <label for="editor-writer">Writer:</label>
                             <input type="text" id="editor-writer" placeholder="Songwriter(s)">
                         </div>
+                        <div id="edit-comment-row" class="field-row hidden">
+                            <label for="editor-comment">Edit Comment:</label>
+                            <input type="text" id="editor-comment" placeholder="Describe your changes (e.g., fixed chord alignment, added missing verse)">
+                        </div>
                     </div>
 
                     <div class="song-input-container">
@@ -126,6 +130,7 @@ Blank lines separate verses."></textarea>
                         <span class="heart-empty">&#9825;</span>
                         <span class="heart-full">&#9829;</span>
                     </button>
+                    <button id="edit-song-btn" class="action-btn">Edit</button>
                     <button id="bug-btn" class="bug-btn">Report Bug</button>
                 </div>
             </div>

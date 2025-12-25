@@ -1237,9 +1237,14 @@ const editorSaveBtn = document.getElementById('editor-save');
 const editorSubmitBtn = document.getElementById('editor-submit');
 const editorStatus = document.getElementById('editor-status');
 const editorNashville = document.getElementById('editor-nashville');
+const editorComment = document.getElementById('editor-comment');
+const editCommentRow = document.getElementById('edit-comment-row');
+const editSongBtn = document.getElementById('edit-song-btn');
 
 let editorNashvilleMode = false;
 let editorDetectedKey = null;
+let editMode = false;        // true when editing existing song, false for new song
+let editingSongId = null;    // song ID being edited
 
 // Tab switching
 if (tabSearch && tabEditor) {
@@ -1259,6 +1264,55 @@ if (tabSearch && tabEditor) {
         resultsDiv.classList.add('hidden');
         songView.classList.add('hidden');
         editorPanel.classList.remove('hidden');
+        // Reset edit mode when manually switching to editor tab
+        exitEditMode();
+    });
+}
+
+// Edit mode management
+function enterEditMode(song) {
+    editMode = true;
+    editingSongId = song.id;
+
+    // Populate editor with song data
+    editorTitle.value = song.title || '';
+    editorArtist.value = song.artist || '';
+    editorWriter.value = song.composer || '';
+    editorContent.value = song.content || '';
+    editorComment.value = '';
+
+    // Show comment field
+    editCommentRow.classList.remove('hidden');
+
+    // Update submit button text
+    editorSubmitBtn.textContent = 'Submit Correction';
+
+    // Switch to editor tab
+    tabEditor.classList.add('active');
+    tabSearch.classList.remove('active');
+    searchContainer.classList.add('hidden');
+    resultsDiv.classList.add('hidden');
+    songView.classList.add('hidden');
+    editorPanel.classList.remove('hidden');
+
+    // Trigger preview update
+    updateEditorPreview();
+}
+
+function exitEditMode() {
+    editMode = false;
+    editingSongId = null;
+    editCommentRow.classList.add('hidden');
+    editorComment.value = '';
+    editorSubmitBtn.textContent = 'Submit to Songbook';
+}
+
+// Edit song button handler
+if (editSongBtn) {
+    editSongBtn.addEventListener('click', () => {
+        if (currentSong) {
+            enterEditMode(currentSong);
+        }
     });
 }
 
@@ -1760,13 +1814,44 @@ if (editorSubmitBtn) {
             return;
         }
 
-        // Build issue title
-        const issueTitle = artist
-            ? `Song: ${title} by ${artist}`
-            : `Song: ${title}`;
+        let issueTitle, issueBody, labels;
 
-        // Build issue body with metadata and ChordPro content
-        const issueBody = `## Song Submission
+        if (editMode && editingSongId) {
+            // Song correction mode
+            const comment = editorComment?.value.trim();
+            if (!comment) {
+                editorStatus.textContent = 'Please describe your changes';
+                editorStatus.className = 'save-status error';
+                return;
+            }
+
+            issueTitle = `Correction: ${title}`;
+            labels = 'song-correction';
+            issueBody = `## Song Correction
+
+**Song ID:** ${editingSongId}
+**Title:** ${title}
+**Artist:** ${artist || 'Unknown'}
+
+### Changes Made
+${comment}
+
+### Updated ChordPro Content
+
+\`\`\`chordpro
+${chordpro}
+\`\`\`
+
+---
+*Please review this correction. Add the \`approved\` label to process it automatically.*`;
+
+        } else {
+            // New song submission mode
+            issueTitle = artist
+                ? `Song: ${title} by ${artist}`
+                : `Song: ${title}`;
+            labels = 'song-submission';
+            issueBody = `## Song Submission
 
 **Title:** ${title}
 **Artist:** ${artist || 'Unknown'}
@@ -1780,12 +1865,13 @@ ${chordpro}
 
 ---
 *Please review this submission. Add the \`approved\` label to process it automatically.*`;
+        }
 
         // Create GitHub issue URL
         const params = new URLSearchParams({
             title: issueTitle,
             body: issueBody,
-            labels: 'song-submission'
+            labels: labels
         });
 
         const issueUrl = `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
@@ -1796,5 +1882,10 @@ ${chordpro}
         editorStatus.textContent = 'Opening GitHub...';
         editorStatus.className = 'save-status success';
         setTimeout(() => { editorStatus.textContent = ''; }, 3000);
+
+        // Exit edit mode after submission
+        if (editMode) {
+            exitEditMode();
+        }
     });
 }
