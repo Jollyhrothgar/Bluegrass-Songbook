@@ -82,4 +82,11 @@ uv run pytest                       # Run tests
 
 ## License
 
-Song lyrics and chords are sourced from publicly available websites. This project provides tools for searching and organizing the content.
+**Source Available, Not Open Source.** See [LICENSE](LICENSE) for full terms.
+
+- **Permitted**: Personal use (<20 people), local self-hosting, educational use, contributing via PR
+- **Prohibited**: Public hosting, monetization, commercial use, redistribution, enabling Pages on forks
+
+The copyright holder reserves all rights to public hosting and monetization. By contributing, you assign all rights to the copyright holder.
+
+Song content copyright remains with original songwriters and publishers.
