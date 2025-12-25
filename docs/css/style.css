@@ -1108,3 +1108,50 @@ mark {
         min-height: 250px;
     }
 }
+
+/* Source view (side-by-side ChordPro and rendered) */
+.source-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.source-pane,
+.rendered-pane {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.source-header {
+    background: var(--bg-secondary);
+    padding: 0.5rem 0.75rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.chordpro-source {
+    padding: 0.75rem;
+    margin: 0;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.rendered-pane .song-body {
+    padding: 0.75rem;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+@media (max-width: 800px) {
+    .source-view {
+        grid-template-columns: 1fr;
+    }
+}

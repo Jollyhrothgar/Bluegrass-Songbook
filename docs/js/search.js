@@ -9,6 +9,8 @@ let showingFavorites = false;
 let nashvilleMode = false;
 let twoColumnMode = false;
 let showChords = true;
+let showSectionLabels = true;
+let showChordProSource = false;
 let fontSizeLevel = 0;              // -2 to +2, 0 is default
 let currentDetectedKey = null;      // User's chosen key (or detected if not changed)
 let originalDetectedKey = null;     // The auto-detected key for current song
@@ -847,10 +849,11 @@ function renderSection(section, isRepeatedSection = false) {
     const lines = section.lines.map(line => renderLine(line)).join('');
     const shouldIndent = section.type === 'chorus' || isRepeatedSection;
     const indentClass = shouldIndent ? 'section-indent' : '';
+    const labelHtml = showSectionLabels ? `<div class="section-label">${escapeHtml(section.label)}</div>` : '';
 
     return `
         <div class="song-section ${indentClass}">
-            <div class="section-label">${escapeHtml(section.label)}</div>
+            ${labelHtml}
             <div class="section-content">${lines}</div>
         </div>
     `;
@@ -987,8 +990,29 @@ function renderSong(song, chordpro, isInitialRender = false) {
                 <input type="checkbox" id="twocol-checkbox" ${twoColumnMode ? 'checked' : ''}>
                 <span>2-Col</span>
             </label>
+            <label class="compact-toggle">
+                <input type="checkbox" id="labels-checkbox" ${showSectionLabels ? 'checked' : ''}>
+                <span>Labels</span>
+            </label>
+            <label class="compact-toggle">
+                <input type="checkbox" id="source-checkbox" ${showChordProSource ? 'checked' : ''}>
+                <span>Source</span>
+            </label>
         </div>
+        ${showChordProSource ? `
+        <div class="source-view">
+            <div class="source-pane">
+                <div class="source-header">ChordPro Source</div>
+                <pre class="chordpro-source">${escapeHtml(chordpro)}</pre>
+            </div>
+            <div class="rendered-pane">
+                <div class="source-header">Rendered</div>
+                <div class="song-body" style="font-size: ${FONT_SIZES[fontSizeLevel]}em">${sectionsHtml}</div>
+            </div>
+        </div>
+        ` : `
         <div class="song-body ${twoColumnMode ? 'two-column' : ''}" style="font-size: ${FONT_SIZES[fontSizeLevel]}em">${sectionsHtml}</div>
+        `}
     `;
 
     const keySelect = document.getElementById('key-select');
@@ -1003,6 +1027,7 @@ function renderSong(song, chordpro, isInitialRender = false) {
     if (chordsCheckbox) {
         chordsCheckbox.addEventListener('change', (e) => {
             showChords = e.target.checked;
+            if (!showChords) showChordProSource = false;  // Mutually exclusive with Source
             renderSong(song, chordpro);
         });
     }
@@ -1011,6 +1036,7 @@ function renderSong(song, chordpro, isInitialRender = false) {
     if (compactCheckbox) {
         compactCheckbox.addEventListener('change', (e) => {
             compactMode = e.target.checked;
+            if (compactMode) showChordProSource = false;  // Mutually exclusive with Source
             renderSong(song, chordpro);
         });
     }
@@ -1019,6 +1045,7 @@ function renderSong(song, chordpro, isInitialRender = false) {
     if (nashvilleCheckbox) {
         nashvilleCheckbox.addEventListener('change', (e) => {
             nashvilleMode = e.target.checked;
+            if (nashvilleMode) showChordProSource = false;  // Mutually exclusive with Source
             renderSong(song, chordpro);
         });
     }
@@ -1027,6 +1054,32 @@ function renderSong(song, chordpro, isInitialRender = false) {
     if (twocolCheckbox) {
         twocolCheckbox.addEventListener('change', (e) => {
             twoColumnMode = e.target.checked;
+            if (twoColumnMode) showChordProSource = false;  // Mutually exclusive with Source
+            renderSong(song, chordpro);
+        });
+    }
+
+    const labelsCheckbox = document.getElementById('labels-checkbox');
+    if (labelsCheckbox) {
+        labelsCheckbox.addEventListener('change', (e) => {
+            showSectionLabels = e.target.checked;
+            if (!showSectionLabels) showChordProSource = false;  // Mutually exclusive with Source
+            renderSong(song, chordpro);
+        });
+    }
+
+    const sourceCheckbox = document.getElementById('source-checkbox');
+    if (sourceCheckbox) {
+        sourceCheckbox.addEventListener('change', (e) => {
+            showChordProSource = e.target.checked;
+            // Source view shows pure render - reset all view options to defaults
+            if (showChordProSource) {
+                showChords = true;
+                showSectionLabels = true;
+                compactMode = false;
+                nashvilleMode = false;
+                twoColumnMode = false;
+            }
             renderSong(song, chordpro);
         });
     }
