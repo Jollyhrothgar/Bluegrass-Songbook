@@ -1,0 +1,82 @@
+name: Process Song Submission
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  process-submission:
+    # Only run when 'approved' label is added to an issue with 'song-submission' label
+    if: github.event.label.name == 'approved' && contains(github.event.issue.labels.*.name, 'song-submission')
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml
+
+      - name: Process submission
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: |
+          python scripts/lib/process_submission.py
+
+      - name: Rebuild search index
+        run: |
+          pip install beautifulsoup4
+          python scripts/lib/build_index.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sources/manual/parsed/
+          git add docs/data/index.json
+          git diff --staged --quiet || git commit -m "Add song from submission #${{ github.event.issue.number }}
+
+          ${{ github.event.issue.title }}
+
+          🤖 Generated with [Claude Code](https://claude.ai/claude-code)"
+          git push
+
+      - name: Close issue with comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Read the filename that was created
+            let filename = 'unknown';
+            try {
+              filename = fs.readFileSync('/tmp/song_filename.txt', 'utf8').trim();
+            } catch (e) {
+              console.log('Could not read filename');
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `✅ **Song added to the songbook!**\n\nFile: \`sources/manual/parsed/${filename}\`\n\nThe search index has been rebuilt. The song should appear in search shortly.\n\nThank you for your contribution!`
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });

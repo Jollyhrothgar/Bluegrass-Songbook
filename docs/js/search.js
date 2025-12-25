@@ -1189,8 +1189,12 @@ const editorContent = document.getElementById('editor-content');
 const editorPreviewContent = document.getElementById('editor-preview-content');
 const editorCopyBtn = document.getElementById('editor-copy');
 const editorSaveBtn = document.getElementById('editor-save');
+const editorSubmitBtn = document.getElementById('editor-submit');
 const editorStatus = document.getElementById('editor-status');
 const editorNashville = document.getElementById('editor-nashville');
+
+// GitHub repo for song submissions
+const GITHUB_REPO = 'Jollyhrothgar/Bluegrass-Songbook';
 
 let editorNashvilleMode = false;
 let editorDetectedKey = null;
@@ -1321,6 +1325,100 @@ function editorConvertToChordPro(text) {
     }
 
     return result.join('\n');
+}
+
+// Detect and clean Ultimate Guitar paste format
+function cleanUltimateGuitarPaste(text) {
+    // Check if this looks like a UG paste (has their characteristic markers)
+    const isUG = text.includes('ultimate-guitar') ||
+                 text.includes('Ultimate-Guitar') ||
+                 (text.includes('Chords by') && text.includes('views') && text.includes('saves')) ||
+                 (text.includes('Tuning:') && text.includes('Key:') && text.includes('Capo:'));
+
+    if (!isUG) {
+        return { text, title: null, artist: null, cleaned: false };
+    }
+
+    const lines = text.split('\n');
+    let title = null;
+    let artist = null;
+    let songStartIndex = -1;
+    let songEndIndex = lines.length;
+
+    // Find title and artist from "Title Chords by Artist" line
+    for (let i = 0; i < Math.min(lines.length, 30); i++) {
+        const line = lines[i];
+        const match = line.match(/^(.+?)\s+(?:Chords|Tab|Tabs)\s+by\s+(.+)$/i);
+        if (match) {
+            title = match[1].trim();
+            artist = match[2].trim();
+            break;
+        }
+    }
+
+    // Find where the actual song content starts
+    // Look for first section marker [Verse], [Chorus], [Intro], etc. or first chord line
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+        // Section markers
+        if (/^\[(Verse|Chorus|Intro|Bridge|Outro|Instrumental|Pre-Chorus|Hook|Interlude)/i.test(line)) {
+            songStartIndex = i;
+            break;
+        }
+        // Or a line that looks like chords followed by lyrics
+        if (editorIsChordLine(line) && i + 1 < lines.length && lines[i + 1].trim() && !editorIsChordLine(lines[i + 1])) {
+            songStartIndex = i;
+            break;
+        }
+    }
+
+    // Find where song content ends
+    // Look for "Last update:", rating sections, "Welcome Offer", footer content
+    for (let i = songStartIndex; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (line.startsWith('Last update:') ||
+            line === 'Rating' ||
+            line === 'Welcome Offer' ||
+            line.startsWith('© ') ||
+            line === 'Chords' ||
+            (line === 'X' && i > songStartIndex + 10) ||
+            line.includes('Please, rate this tab') ||
+            line.match(/^\d+\.\d+$/) ||  // Rating like "4.8"
+            line.match(/^\d+ rates$/)) {
+            songEndIndex = i;
+            break;
+        }
+    }
+
+    if (songStartIndex === -1) {
+        return { text, title, artist, cleaned: false };
+    }
+
+    // Extract just the song content
+    const songLines = lines.slice(songStartIndex, songEndIndex);
+
+    // Clean up the song content
+    const cleanedLines = songLines
+        .map(line => {
+            // Remove any remaining UG artifacts
+            return line;
+        })
+        .filter(line => {
+            const trimmed = line.trim();
+            // Filter out stray UG elements that might have snuck in
+            if (trimmed === 'X') return false;
+            if (trimmed.match(/^\d+\.\d+$/)) return false;  // Ratings
+            if (trimmed.match(/^\(\d+,?\d*\)$/)) return false;  // (2,130)
+            if (trimmed === 'Chords' || trimmed === 'Guitar' || trimmed === 'Ukulele' || trimmed === 'Piano') return false;
+            return true;
+        });
+
+    return {
+        text: cleanedLines.join('\n'),
+        title,
+        artist,
+        cleaned: true
+    };
 }
 
 function editorDetectAndConvert(text) {
@@ -1511,12 +1609,31 @@ function editorGenerateFilename(title) {
 if (editorContent) {
     editorContent.addEventListener('paste', () => {
         setTimeout(() => {
-            const converted = editorDetectAndConvert(editorContent.value);
-            if (converted !== editorContent.value) {
+            let text = editorContent.value;
+            let statusMessage = '';
+
+            // First, try to clean Ultimate Guitar format
+            const ugResult = cleanUltimateGuitarPaste(text);
+            if (ugResult.cleaned) {
+                text = ugResult.text;
+                statusMessage = 'Imported from Ultimate Guitar';
+
+                // Auto-fill title and artist if extracted and fields are empty
+                if (ugResult.title && editorTitle && !editorTitle.value.trim()) {
+                    editorTitle.value = ugResult.title;
+                }
+                if (ugResult.artist && editorArtist && !editorArtist.value.trim()) {
+                    editorArtist.value = ugResult.artist;
+                }
+            }
+
+            // Then convert chord sheet format to ChordPro
+            const converted = editorDetectAndConvert(text);
+            if (converted !== text || ugResult.cleaned) {
                 editorContent.value = converted;
                 updateEditorPreview();
                 if (editorStatus) {
-                    editorStatus.textContent = 'Converted from chord sheet format';
+                    editorStatus.textContent = statusMessage || 'Converted from chord sheet format';
                     editorStatus.className = 'save-status success';
                     setTimeout(() => { editorStatus.textContent = ''; }, 3000);
                 }
@@ -1576,6 +1693,65 @@ if (editorSaveBtn) {
         URL.revokeObjectURL(url);
 
         editorStatus.textContent = `Downloaded: ${filename}`;
+        editorStatus.className = 'save-status success';
+        setTimeout(() => { editorStatus.textContent = ''; }, 3000);
+    });
+}
+
+if (editorSubmitBtn) {
+    editorSubmitBtn.addEventListener('click', () => {
+        const title = editorTitle?.value.trim();
+        const artist = editorArtist?.value.trim();
+
+        if (!title) {
+            editorStatus.textContent = 'Title required';
+            editorStatus.className = 'save-status error';
+            return;
+        }
+
+        const chordpro = editorGenerateChordPro();
+        const content = editorContent?.value.trim();
+
+        if (!content) {
+            editorStatus.textContent = 'Song content required';
+            editorStatus.className = 'save-status error';
+            return;
+        }
+
+        // Build issue title
+        const issueTitle = artist
+            ? `Song: ${title} by ${artist}`
+            : `Song: ${title}`;
+
+        // Build issue body with metadata and ChordPro content
+        const issueBody = `## Song Submission
+
+**Title:** ${title}
+**Artist:** ${artist || 'Unknown'}
+**Submitted via:** Bluegrass Songbook Editor
+
+### ChordPro Content
+
+\`\`\`chordpro
+${chordpro}
+\`\`\`
+
+---
+*Please review this submission. Add the \`approved\` label to process it automatically.*`;
+
+        // Create GitHub issue URL
+        const params = new URLSearchParams({
+            title: issueTitle,
+            body: issueBody,
+            labels: 'song-submission'
+        });
+
+        const issueUrl = `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
+
+        // Open in new tab
+        window.open(issueUrl, '_blank');
+
+        editorStatus.textContent = 'Opening GitHub...';
         editorStatus.className = 'save-status success';
         setTimeout(() => { editorStatus.textContent = ''; }, 3000);
     });

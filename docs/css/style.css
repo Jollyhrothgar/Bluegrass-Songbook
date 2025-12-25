@@ -50,6 +50,22 @@ body {
     padding: 1rem;
 }
 
+/* Use more width on larger screens for song view and editor */
+@media (min-width: 1000px) {
+    .container:has(.song-view:not(.hidden)),
+    .container:has(.editor-panel:not(.hidden)) {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container:has(.song-view:not(.hidden)),
+    .container:has(.editor-panel:not(.hidden)) {
+        max-width: 1400px;
+        padding: 1rem 2rem;
+    }
+}
+
 /* Header */
 header {
     text-align: center;
@@ -433,10 +449,18 @@ h1 {
 .song-body.two-column {
     column-count: 2;
     column-gap: 2rem;
+    font-size: 0.85em;
 }
 
 .song-body.two-column .song-section {
     break-inside: avoid;
+    overflow: hidden;
+}
+
+.song-body.two-column .chord-line,
+.song-body.two-column .lyrics-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .song-section {
@@ -727,6 +751,19 @@ mark {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     min-height: 500px;
+}
+
+@media (min-width: 1000px) {
+    .editor-main {
+        min-height: 600px;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .editor-main {
+        min-height: 700px;
+    }
 }
 
 .editor-input {
