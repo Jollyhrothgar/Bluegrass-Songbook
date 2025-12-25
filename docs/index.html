@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bluegrass Songbook</title>
+    <link rel="icon" type="image/png" href="images/banjo.png">
+    <link rel="apple-touch-icon" href="images/banjo.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,9 +29,13 @@
             <input
                 type="text"
                 id="search-input"
-                placeholder="Search by title, artist, or lyrics..."
+                placeholder="Search songs, or try: chord:VII prog:I-IV-V"
                 autocomplete="off"
             >
+            <div class="search-help">
+                <span class="search-hint">chord:VII,II</span>
+                <span class="search-hint">prog:ii-V-I</span>
+            </div>
             <div id="search-stats" class="search-stats"></div>
         </div>
 

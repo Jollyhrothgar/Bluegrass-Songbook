@@ -6,6 +6,10 @@ let currentSong = null;
 let currentChordpro = null;
 let compactMode = false;
 let showingFavorites = false;
+let nashvilleMode = false;
+let currentDetectedKey = null;      // User's chosen key (or detected if not changed)
+let originalDetectedKey = null;     // The auto-detected key for current song
+let originalDetectedMode = null;    // The auto-detected mode for current song
 
 // Favorites stored in localStorage
 let favorites = new Set(JSON.parse(localStorage.getItem('songbook-favorites') || '[]'));
@@ -124,6 +128,82 @@ function showRandomSongs() {
     renderResults(sample, '');
 }
 
+// Parse search query for special modifiers
+function parseSearchQuery(query) {
+    const result = {
+        textTerms: [],
+        chordFilters: [],      // e.g., ['VII', 'II']
+        progressionFilter: null // e.g., ['ii', 'V', 'I']
+    };
+
+    const tokens = query.split(/\s+/);
+
+    for (const token of tokens) {
+        if (token.startsWith('chord:') || token.startsWith('c:')) {
+            const chords = token.replace(/^(chord:|c:)/, '').split(',');
+            result.chordFilters.push(...chords.filter(c => c));
+        } else if (token.startsWith('prog:') || token.startsWith('p:')) {
+            const prog = token.replace(/^(prog:|p:)/, '').split('-');
+            result.progressionFilter = prog.filter(c => c);
+        } else if (token) {
+            result.textTerms.push(token.toLowerCase());
+        }
+    }
+
+    return result;
+}
+
+// Get Nashville chord sequence for a song
+function getSongNashvilleChords(song) {
+    if (!song.content) return { chords: [], sequence: [] };
+
+    const rawChords = extractChords(song.content);
+    const { key } = detectKey(rawChords);
+
+    if (!key) return { chords: [], sequence: [] };
+
+    const nashvilleSequence = rawChords.map(c => toNashville(c, key));
+    const uniqueChords = [...new Set(nashvilleSequence)];
+
+    return { chords: uniqueChords, sequence: nashvilleSequence, key };
+}
+
+// Check if song contains all required chords
+function songHasChords(song, requiredChords) {
+    if (!requiredChords.length) return true;
+
+    const { chords } = getSongNashvilleChords(song);
+    return requiredChords.every(req =>
+        chords.some(c => c.toLowerCase() === req.toLowerCase())
+    );
+}
+
+// Check if song contains progression
+function songHasProgression(song, progression) {
+    if (!progression || !progression.length) return true;
+
+    const { sequence } = getSongNashvilleChords(song);
+    if (!sequence.length) return false;
+
+    // Normalize for comparison
+    const normalizedSeq = sequence.map(c => c.toLowerCase());
+    const normalizedProg = progression.map(c => c.toLowerCase());
+
+    // Look for progression anywhere in sequence
+    for (let i = 0; i <= normalizedSeq.length - normalizedProg.length; i++) {
+        let match = true;
+        for (let j = 0; j < normalizedProg.length; j++) {
+            if (normalizedSeq[i + j] !== normalizedProg[j]) {
+                match = false;
+                break;
+            }
+        }
+        if (match) return true;
+    }
+
+    return false;
+}
+
 // Search songs
 function search(query) {
     showingFavorites = false;
@@ -134,42 +214,68 @@ function search(query) {
         return;
     }
 
-    const terms = query.toLowerCase().split(/\s+/);
+    const { textTerms, chordFilters, progressionFilter } = parseSearchQuery(query);
+    const hasChordSearch = chordFilters.length > 0 || (progressionFilter && progressionFilter.length > 0);
 
     const results = allSongs.filter(song => {
-        const searchText = [
-            song.title || '',
-            song.artist || '',
-            song.composer || '',
-            song.lyrics || '',
-            song.first_line || ''
-        ].join(' ').toLowerCase();
+        // Text search
+        if (textTerms.length > 0) {
+            const searchText = [
+                song.title || '',
+                song.artist || '',
+                song.composer || '',
+                song.lyrics || '',
+                song.first_line || ''
+            ].join(' ').toLowerCase();
 
-        return terms.every(term => searchText.includes(term));
+            if (!textTerms.every(term => searchText.includes(term))) {
+                return false;
+            }
+        }
+
+        // Chord search
+        if (chordFilters.length > 0) {
+            if (!songHasChords(song, chordFilters)) return false;
+        }
+
+        // Progression search
+        if (progressionFilter && progressionFilter.length > 0) {
+            if (!songHasProgression(song, progressionFilter)) return false;
+        }
+
+        return true;
     });
 
-    // Sort by relevance
+    // Sort by relevance (for text searches)
+    const textQuery = textTerms.join(' ');
     results.sort((a, b) => {
         const aTitle = (a.title || '').toLowerCase();
         const bTitle = (b.title || '').toLowerCase();
         const aArtist = (a.artist || '').toLowerCase();
         const bArtist = (b.artist || '').toLowerCase();
-        const q = query.toLowerCase();
 
-        if (aTitle === q && bTitle !== q) return -1;
-        if (bTitle === q && aTitle !== q) return 1;
-        if (aTitle.startsWith(q) && !bTitle.startsWith(q)) return -1;
-        if (bTitle.startsWith(q) && !aTitle.startsWith(q)) return 1;
-        if (aTitle.includes(q) && !bTitle.includes(q)) return -1;
-        if (bTitle.includes(q) && !aTitle.includes(q)) return 1;
-        if (aArtist.includes(q) && !bArtist.includes(q)) return -1;
-        if (bArtist.includes(q) && !aArtist.includes(q)) return 1;
+        if (textQuery) {
+            if (aTitle === textQuery && bTitle !== textQuery) return -1;
+            if (bTitle === textQuery && aTitle !== textQuery) return 1;
+            if (aTitle.startsWith(textQuery) && !bTitle.startsWith(textQuery)) return -1;
+            if (bTitle.startsWith(textQuery) && !aTitle.startsWith(textQuery)) return 1;
+            if (aTitle.includes(textQuery) && !bTitle.includes(textQuery)) return -1;
+            if (bTitle.includes(textQuery) && !aTitle.includes(textQuery)) return 1;
+            if (aArtist.includes(textQuery) && !bArtist.includes(textQuery)) return -1;
+            if (bArtist.includes(textQuery) && !aArtist.includes(textQuery)) return 1;
+        }
 
         return 0;
     });
 
-    searchStats.textContent = `${results.length.toLocaleString()} results`;
-    renderResults(results.slice(0, 50), query);
+    // Update stats with search info
+    let statsText = `${results.length.toLocaleString()} results`;
+    if (hasChordSearch && results.length > 0) {
+        statsText += ' (chord search may be slow)';
+    }
+    searchStats.textContent = statsText;
+
+    renderResults(results.slice(0, 50), textQuery);
 }
 
 // Render search results
@@ -219,13 +325,18 @@ async function openSong(songId) {
     resultsDiv.classList.add('hidden');
     document.querySelector('.search-container').classList.add('hidden');
 
+    // Reset key tracking for new song
+    originalDetectedKey = null;
+    originalDetectedMode = null;
+    currentDetectedKey = null;
+
     const song = allSongs.find(s => s.id === songId);
     currentSong = song;
     updateFavoriteButton();
 
     if (song && song.content) {
         currentChordpro = song.content;
-        renderSong(song, song.content);
+        renderSong(song, song.content, true);
         return;
     }
 
@@ -238,7 +349,7 @@ async function openSong(songId) {
         }
         const chordpro = await response.text();
         currentChordpro = chordpro;
-        renderSong(song, chordpro);
+        renderSong(song, chordpro, true);
     } catch (error) {
         songContent.innerHTML = `<div class="loading">Error loading song: ${error.message}</div>`;
     }
@@ -288,6 +399,273 @@ function parseChordPro(chordpro) {
     return { metadata, sections };
 }
 
+// Key detection using diatonic chord analysis
+// Major keys: I, ii, iii, IV, V, vi, vii°
+// Minor keys (natural): i, ii°, III, iv, v, VI, VII
+const KEYS = {
+    // Major keys
+    'C':  { scale: ['C', 'Dm', 'Em', 'F', 'G', 'Am', 'Bdim'], tonic: 'C', mode: 'major', relative: 'Am' },
+    'G':  { scale: ['G', 'Am', 'Bm', 'C', 'D', 'Em', 'F#dim'], tonic: 'G', mode: 'major', relative: 'Em' },
+    'D':  { scale: ['D', 'Em', 'F#m', 'G', 'A', 'Bm', 'C#dim'], tonic: 'D', mode: 'major', relative: 'Bm' },
+    'A':  { scale: ['A', 'Bm', 'C#m', 'D', 'E', 'F#m', 'G#dim'], tonic: 'A', mode: 'major', relative: 'F#m' },
+    'E':  { scale: ['E', 'F#m', 'G#m', 'A', 'B', 'C#m', 'D#dim'], tonic: 'E', mode: 'major', relative: 'C#m' },
+    'B':  { scale: ['B', 'C#m', 'D#m', 'E', 'F#', 'G#m', 'A#dim'], tonic: 'B', mode: 'major', relative: 'G#m' },
+    'F#': { scale: ['F#', 'G#m', 'A#m', 'B', 'C#', 'D#m', 'E#dim'], tonic: 'F#', mode: 'major', relative: 'D#m' },
+    'F':  { scale: ['F', 'Gm', 'Am', 'Bb', 'C', 'Dm', 'Edim'], tonic: 'F', mode: 'major', relative: 'Dm' },
+    'Bb': { scale: ['Bb', 'Cm', 'Dm', 'Eb', 'F', 'Gm', 'Adim'], tonic: 'Bb', mode: 'major', relative: 'Gm' },
+    'Eb': { scale: ['Eb', 'Fm', 'Gm', 'Ab', 'Bb', 'Cm', 'Ddim'], tonic: 'Eb', mode: 'major', relative: 'Cm' },
+    'Ab': { scale: ['Ab', 'Bbm', 'Cm', 'Db', 'Eb', 'Fm', 'Gdim'], tonic: 'Ab', mode: 'major', relative: 'Fm' },
+    'Db': { scale: ['Db', 'Ebm', 'Fm', 'Gb', 'Ab', 'Bbm', 'Cdim'], tonic: 'Db', mode: 'major', relative: 'Bbm' },
+    // Minor keys (natural minor - same chords as relative major, different tonic)
+    'Am':  { scale: ['Am', 'Bdim', 'C', 'Dm', 'Em', 'F', 'G'], tonic: 'Am', mode: 'minor', relative: 'C' },
+    'Em':  { scale: ['Em', 'F#dim', 'G', 'Am', 'Bm', 'C', 'D'], tonic: 'Em', mode: 'minor', relative: 'G' },
+    'Bm':  { scale: ['Bm', 'C#dim', 'D', 'Em', 'F#m', 'G', 'A'], tonic: 'Bm', mode: 'minor', relative: 'D' },
+    'F#m': { scale: ['F#m', 'G#dim', 'A', 'Bm', 'C#m', 'D', 'E'], tonic: 'F#m', mode: 'minor', relative: 'A' },
+    'C#m': { scale: ['C#m', 'D#dim', 'E', 'F#m', 'G#m', 'A', 'B'], tonic: 'C#m', mode: 'minor', relative: 'E' },
+    'G#m': { scale: ['G#m', 'A#dim', 'B', 'C#m', 'D#m', 'E', 'F#'], tonic: 'G#m', mode: 'minor', relative: 'B' },
+    'D#m': { scale: ['D#m', 'E#dim', 'F#', 'G#m', 'A#m', 'B', 'C#'], tonic: 'D#m', mode: 'minor', relative: 'F#' },
+    'Dm':  { scale: ['Dm', 'Edim', 'F', 'Gm', 'Am', 'Bb', 'C'], tonic: 'Dm', mode: 'minor', relative: 'F' },
+    'Gm':  { scale: ['Gm', 'Adim', 'Bb', 'Cm', 'Dm', 'Eb', 'F'], tonic: 'Gm', mode: 'minor', relative: 'Bb' },
+    'Cm':  { scale: ['Cm', 'Ddim', 'Eb', 'Fm', 'Gm', 'Ab', 'Bb'], tonic: 'Cm', mode: 'minor', relative: 'Eb' },
+    'Fm':  { scale: ['Fm', 'Gdim', 'Ab', 'Bbm', 'Cm', 'Db', 'Eb'], tonic: 'Fm', mode: 'minor', relative: 'Ab' },
+    'Bbm': { scale: ['Bbm', 'Cdim', 'Db', 'Ebm', 'Fm', 'Gb', 'Ab'], tonic: 'Bbm', mode: 'minor', relative: 'Db' },
+};
+
+// Nashville numbers for major keys (I, ii, iii, IV, V, vi, vii°)
+const NASHVILLE_MAJOR = ['I', 'ii', 'iii', 'IV', 'V', 'vi', 'vii°'];
+// Nashville numbers for minor keys (i, ii°, III, iv, v, VI, VII)
+const NASHVILLE_MINOR = ['i', 'ii°', 'III', 'iv', 'v', 'VI', 'VII'];
+
+// Chromatic scale for interval calculation
+const CHROMATIC = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
+
+// Normalize enharmonic equivalents
+const ENHARMONIC = {
+    'C#': 'Db', 'D#': 'Eb', 'E#': 'F', 'Fb': 'E',
+    'G#': 'Ab', 'A#': 'Bb', 'B#': 'C', 'Cb': 'B',
+    'F#': 'Gb', // For chromatic lookup
+};
+
+// Normalize a chord to root + basic quality (major, minor, dim)
+function normalizeChord(chord) {
+    if (!chord) return null;
+
+    const rootMatch = chord.match(/^([A-G][#b]?)/);
+    if (!rootMatch) return null;
+
+    let root = rootMatch[1];
+    const rest = chord.slice(root.length).toLowerCase();
+
+    // Normalize enharmonics (except F# which we keep for key names)
+    if (ENHARMONIC[root] && root !== 'F#') {
+        root = ENHARMONIC[root];
+    }
+
+    let quality = '';
+    if (rest.startsWith('m') && !rest.startsWith('maj')) {
+        quality = 'm';
+    } else if (rest.includes('dim') || rest === 'o' || rest.startsWith('o7')) {
+        quality = 'dim';
+    }
+
+    return root + quality;
+}
+
+// Get just the root of a chord
+function getChordRoot(chord) {
+    if (!chord) return null;
+    const match = chord.match(/^([A-G][#b]?)/);
+    if (!match) return null;
+    let root = match[1];
+    if (ENHARMONIC[root] && root !== 'F#') {
+        root = ENHARMONIC[root];
+    }
+    return root;
+}
+
+// Get chord quality (major, minor, dim)
+function getChordQuality(chord) {
+    if (!chord) return 'major';
+    const root = chord.match(/^[A-G][#b]?/);
+    if (!root) return 'major';
+    const rest = chord.slice(root[0].length);
+    if (rest === 'm' || rest.startsWith('m')) return 'minor';
+    if (rest === 'dim' || rest.includes('dim')) return 'dim';
+    return 'major';
+}
+
+// Extract all chords from chordpro content
+function extractChords(chordpro) {
+    const chordRegex = /\[([^\]]+)\]/g;
+    const chords = [];
+    let match;
+
+    while ((match = chordRegex.exec(chordpro)) !== null) {
+        chords.push(match[1]); // Keep original for Nashville conversion
+    }
+
+    return chords;
+}
+
+// Detect key from chord list
+function detectKey(chords) {
+    if (!chords || chords.length === 0) {
+        return { key: null, mode: null, confidence: 0 };
+    }
+
+    // Normalize and count chords
+    const chordCounts = {};
+    for (const chord of chords) {
+        const normalized = normalizeChord(chord);
+        if (normalized) {
+            chordCounts[normalized] = (chordCounts[normalized] || 0) + 1;
+        }
+    }
+
+    const totalChords = chords.length;
+
+    // Score each possible key
+    const scores = {};
+
+    for (const [keyName, keyInfo] of Object.entries(KEYS)) {
+        const normalizedScale = new Set(keyInfo.scale.map(c => normalizeChord(c)));
+        const normalizedTonic = normalizeChord(keyInfo.tonic);
+
+        let matchWeight = 0;
+        let tonicWeight = 0;
+
+        for (const [chord, count] of Object.entries(chordCounts)) {
+            if (normalizedScale.has(chord)) {
+                matchWeight += count;
+                // Extra weight for tonic chord
+                if (chord === normalizedTonic) {
+                    tonicWeight += count * 0.5; // 50% bonus for tonic
+                }
+            }
+        }
+
+        scores[keyName] = (matchWeight + tonicWeight) / totalChords;
+    }
+
+    // Find best key
+    let bestKey = null;
+    let bestScore = 0;
+
+    for (const [key, score] of Object.entries(scores)) {
+        if (score > bestScore) {
+            bestScore = score;
+            bestKey = key;
+        }
+    }
+
+    // For relative major/minor pairs with similar scores, check tonic frequency
+    if (bestKey && KEYS[bestKey]) {
+        const relative = KEYS[bestKey].relative;
+        if (relative && scores[relative]) {
+            const scoreDiff = Math.abs(scores[bestKey] - scores[relative]);
+            // If scores are close, prefer the one with more tonic occurrences
+            if (scoreDiff < 0.1) {
+                const bestTonic = normalizeChord(KEYS[bestKey].tonic);
+                const relativeTonic = normalizeChord(KEYS[relative].tonic);
+                const bestTonicCount = chordCounts[bestTonic] || 0;
+                const relativeTonicCount = chordCounts[relativeTonic] || 0;
+
+                if (relativeTonicCount > bestTonicCount) {
+                    bestKey = relative;
+                    bestScore = scores[relative];
+                }
+            }
+        }
+    }
+
+    // Prefer common keys when scores are very close
+    const preferredOrder = ['G', 'C', 'D', 'A', 'E', 'Am', 'Em', 'Dm', 'F', 'Bm', 'Bb', 'Eb'];
+    for (const key of preferredOrder) {
+        if (scores[key] && scores[key] >= bestScore - 0.03) {
+            bestKey = key;
+            bestScore = scores[key];
+            break;
+        }
+    }
+
+    return {
+        key: bestKey,
+        mode: bestKey ? KEYS[bestKey].mode : null,
+        confidence: Math.round((bestScore / 1.5) * 100) // Normalize since we added tonic bonus
+    };
+}
+
+// Convert a chord to Nashville number given a key
+function toNashville(chord, keyName) {
+    if (!chord || !keyName || !KEYS[keyName]) return chord;
+
+    const keyInfo = KEYS[keyName];
+    const chordRoot = getChordRoot(chord);
+    const chordQuality = getChordQuality(chord);
+
+    if (!chordRoot) return chord;
+
+    // Get the key's tonic root
+    const tonicRoot = getChordRoot(keyInfo.tonic);
+    if (!tonicRoot) return chord;
+
+    // Find interval (semitones from tonic)
+    let tonicIndex = CHROMATIC.indexOf(tonicRoot);
+    let chordIndex = CHROMATIC.indexOf(chordRoot);
+
+    // Handle F# specially
+    if (tonicRoot === 'F#' || tonicRoot === 'Gb') tonicIndex = 6;
+    if (chordRoot === 'F#' || chordRoot === 'Gb') chordIndex = 6;
+
+    if (tonicIndex === -1 || chordIndex === -1) return chord;
+
+    const interval = (chordIndex - tonicIndex + 12) % 12;
+
+    // Map interval to scale degree
+    const intervalToScaleDegree = {
+        0: 0,   // I/i
+        2: 1,   // ii/ii°
+        3: 2,   // iii (minor) or bIII (from minor key)
+        4: 2,   // iii (major)
+        5: 3,   // IV/iv
+        7: 4,   // V/v
+        8: 5,   // vi (minor) or bVI
+        9: 5,   // vi (major)
+        10: 6,  // bVII
+        11: 6,  // vii°
+    };
+
+    const scaleDegree = intervalToScaleDegree[interval];
+    if (scaleDegree === undefined) {
+        // Non-diatonic - just show the interval
+        const symbols = ['I', 'bII', 'II', 'bIII', 'III', 'IV', 'bV', 'V', 'bVI', 'VI', 'bVII', 'VII'];
+        let num = symbols[interval];
+        if (chordQuality === 'minor') num = num.toLowerCase();
+        if (chordQuality === 'dim') num = num.toLowerCase() + '°';
+        return num;
+    }
+
+    // Get the Nashville number based on key mode
+    const nashville = keyInfo.mode === 'minor' ? NASHVILLE_MINOR : NASHVILLE_MAJOR;
+    let num = nashville[scaleDegree];
+
+    // Adjust for actual chord quality vs expected
+    const expectedQuality = num === num.toLowerCase() ? 'minor' : 'major';
+    if (num.includes('°')) {
+        // Expected diminished
+        if (chordQuality === 'major') num = num.replace('°', '').toUpperCase();
+        if (chordQuality === 'minor') num = num.replace('°', '');
+    } else if (chordQuality === 'dim') {
+        num = num.toLowerCase() + '°';
+    } else if (chordQuality === 'minor' && expectedQuality === 'major') {
+        num = num.toLowerCase();
+    } else if (chordQuality === 'major' && expectedQuality === 'minor') {
+        num = num.toUpperCase();
+    }
+
+    return num;
+}
+
 // Parse a line with chords into chord positions and lyrics
 function parseLineWithChords(line) {
     const chords = [];
@@ -322,9 +700,13 @@ function renderLine(line) {
     let lastPos = 0;
 
     for (const { chord, position } of chords) {
+        // Convert to Nashville if enabled
+        const displayChord = nashvilleMode && currentDetectedKey
+            ? toNashville(chord, currentDetectedKey)
+            : chord;
         const spaces = Math.max(0, position - lastPos);
-        chordLine += ' '.repeat(spaces) + chord;
-        lastPos = position + chord.length;
+        chordLine += ' '.repeat(spaces) + displayChord;
+        lastPos = position + displayChord.length;
     }
 
     return `
@@ -357,8 +739,20 @@ function renderRepeatIndicator(label, count, shouldIndent) {
 }
 
 // Render song with chords above lyrics
-function renderSong(song, chordpro) {
+function renderSong(song, chordpro, isInitialRender = false) {
     const { metadata, sections } = parseChordPro(chordpro);
+
+    // Detect key FIRST so Nashville mode works during rendering
+    const chords = extractChords(chordpro);
+    const { key: detectedKey, mode: detectedMode } = detectKey(chords);
+
+    // On initial render, set both original and current to detected
+    // On re-render (e.g., after toggling Nashville), preserve user's key choice
+    if (isInitialRender || originalDetectedKey === null) {
+        originalDetectedKey = detectedKey;
+        originalDetectedMode = detectedMode;
+        currentDetectedKey = detectedKey;
+    }
 
     const totalCounts = {};
     for (const section of sections) {
@@ -371,21 +765,21 @@ function renderSong(song, chordpro) {
 
     while (i < sections.length) {
         const section = sections[i];
-        const key = section.label;
-        const isRepeatedSection = totalCounts[key] > 1;
+        const sectionKey = section.label;
+        const isRepeatedSection = totalCounts[sectionKey] > 1;
         const shouldIndent = section.type === 'chorus' || isRepeatedSection;
 
-        if (!seenSections.has(key)) {
-            seenSections.add(key);
+        if (!seenSections.has(sectionKey)) {
+            seenSections.add(sectionKey);
             sectionsHtml += renderSection(section, isRepeatedSection);
             i++;
         } else if (compactMode) {
             let consecutiveCount = 0;
-            while (i < sections.length && sections[i].label === key) {
+            while (i < sections.length && sections[i].label === sectionKey) {
                 consecutiveCount++;
                 i++;
             }
-            sectionsHtml += renderRepeatIndicator(key, consecutiveCount, shouldIndent);
+            sectionsHtml += renderRepeatIndicator(sectionKey, consecutiveCount, shouldIndent);
         } else {
             sectionsHtml += renderSection(section, isRepeatedSection);
             i++;
@@ -396,6 +790,20 @@ function renderSong(song, chordpro) {
     const artist = metadata.artist || song?.artist || '';
     const composer = metadata.writer || metadata.composer || song?.composer || '';
     const sourceUrl = song?.id ? `https://www.classic-country-song-lyrics.com/${song.id}.html` : null;
+
+    // Build key dropdown options
+    const majorKeys = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'F', 'Bb', 'Eb', 'Ab', 'Db'];
+    const minorKeys = ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'D#m', 'Dm', 'Gm', 'Cm', 'Fm', 'Bbm'];
+
+    // Filter keys based on detected mode (only show same mode keys)
+    const availableKeys = originalDetectedMode === 'minor' ? minorKeys : majorKeys;
+
+    const keyOptions = availableKeys.map(k => {
+        const isDetected = k === originalDetectedKey;
+        const label = isDetected ? `${k} (detected)` : k;
+        const selected = k === currentDetectedKey ? 'selected' : '';
+        return `<option value="${k}" ${selected}>${label}</option>`;
+    }).join('');
 
     let metaHtml = '';
     if (artist) {
@@ -414,18 +822,42 @@ function renderSong(song, chordpro) {
             <div class="song-meta">${metaHtml}</div>
         </div>
         <div class="render-options">
+            <div class="key-selector">
+                <label for="key-select">Key:</label>
+                <select id="key-select" class="key-select">${keyOptions}</select>
+            </div>
             <label class="compact-toggle">
                 <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
-                <span>Compact (show repeats once)</span>
+                <span>Compact</span>
+            </label>
+            <label class="compact-toggle">
+                <input type="checkbox" id="nashville-checkbox" ${nashvilleMode ? 'checked' : ''}>
+                <span>Nashville</span>
             </label>
         </div>
         <div class="song-body">${sectionsHtml}</div>
     `;
 
-    const checkbox = document.getElementById('compact-checkbox');
-    if (checkbox) {
-        checkbox.addEventListener('change', (e) => {
+    const keySelect = document.getElementById('key-select');
+    if (keySelect) {
+        keySelect.addEventListener('change', (e) => {
+            currentDetectedKey = e.target.value;
+            renderSong(song, chordpro);
+        });
+    }
+
+    const compactCheckbox = document.getElementById('compact-checkbox');
+    if (compactCheckbox) {
+        compactCheckbox.addEventListener('change', (e) => {
             compactMode = e.target.checked;
+            renderSong(song, chordpro);
+        });
+    }
+
+    const nashvilleCheckbox = document.getElementById('nashville-checkbox');
+    if (nashvilleCheckbox) {
+        nashvilleCheckbox.addEventListener('change', (e) => {
+            nashvilleMode = e.target.checked;
             renderSong(song, chordpro);
         });
     }
@@ -453,6 +885,17 @@ function escapeRegex(string) {
 // Event listeners
 searchInput.addEventListener('input', (e) => {
     search(e.target.value);
+});
+
+// Search hints click to populate
+document.querySelectorAll('.search-hint').forEach(hint => {
+    hint.addEventListener('click', () => {
+        const current = searchInput.value.trim();
+        const hintText = hint.textContent;
+        searchInput.value = current ? `${current} ${hintText}` : hintText;
+        searchInput.focus();
+        search(searchInput.value);
+    });
 });
 
 backBtn.addEventListener('click', goBack);
