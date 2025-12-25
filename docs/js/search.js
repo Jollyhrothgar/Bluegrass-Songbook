@@ -36,9 +36,18 @@ const songView = document.getElementById('song-view');
 const songContent = document.getElementById('song-content');
 const backBtn = document.getElementById('back-btn');
 const themeToggle = document.getElementById('theme-toggle');
-const favoritesToggle = document.getElementById('favorites-toggle');
-const favoritesCount = document.getElementById('favorites-count');
 const favoriteBtn = document.getElementById('favorite-btn');
+
+// Sidebar elements
+const sidebar = document.getElementById('sidebar');
+const sidebarBackdrop = document.getElementById('sidebar-backdrop');
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const sidebarClose = document.getElementById('sidebar-close');
+const navSearch = document.getElementById('nav-search');
+const navAddSong = document.getElementById('nav-add-song');
+const navFavorites = document.getElementById('nav-favorites');
+const navFavoritesCount = document.getElementById('nav-favorites-count');
+const navContact = document.getElementById('nav-contact');
 
 // Theme management
 function initTheme() {
@@ -65,11 +74,14 @@ function saveFavorites() {
 }
 
 function updateFavoritesCount() {
-    if (favorites.size > 0) {
-        favoritesCount.textContent = favorites.size;
-        favoritesCount.classList.remove('hidden');
-    } else {
-        favoritesCount.classList.add('hidden');
+    // Update sidebar favorites count
+    if (navFavoritesCount) {
+        if (favorites.size > 0) {
+            navFavoritesCount.textContent = favorites.size;
+            navFavoritesCount.classList.remove('hidden');
+        } else {
+            navFavoritesCount.classList.add('hidden');
+        }
     }
 }
 
@@ -102,7 +114,8 @@ function updateFavoriteButton() {
 
 function showFavorites() {
     showingFavorites = true;
-    favoritesToggle.classList.add('is-favorite');
+    if (navFavorites) navFavorites.classList.add('active');
+    if (navSearch) navSearch.classList.remove('active');
     const favSongs = allSongs.filter(s => favorites.has(s.id));
     searchStats.textContent = `${favSongs.length} favorite${favSongs.length !== 1 ? 's' : ''}`;
     searchInput.value = '';
@@ -111,7 +124,8 @@ function showFavorites() {
 
 function hideFavorites() {
     showingFavorites = false;
-    favoritesToggle.classList.remove('is-favorite');
+    if (navFavorites) navFavorites.classList.remove('active');
+    if (navSearch) navSearch.classList.add('active');
     showRandomSongs();
 }
 
@@ -206,7 +220,8 @@ function songHasProgression(song, progression) {
 // Search songs
 function search(query) {
     showingFavorites = false;
-    favoritesToggle.classList.remove('is-favorite');
+    if (navFavorites) navFavorites.classList.remove('active');
+    if (navSearch) navSearch.classList.add('active');
 
     if (!query.trim()) {
         showRandomSongs();
@@ -1063,19 +1078,102 @@ backBtn.addEventListener('click', goBack);
 
 themeToggle.addEventListener('click', toggleTheme);
 
-favoritesToggle.addEventListener('click', () => {
-    if (showingFavorites) {
-        hideFavorites();
-    } else {
-        showFavorites();
-    }
-});
-
 favoriteBtn.addEventListener('click', () => {
     if (currentSong) {
         toggleFavorite(currentSong.id);
     }
 });
+
+// ============================================
+// SIDEBAR NAVIGATION
+// ============================================
+
+function openSidebar() {
+    if (sidebar) {
+        sidebar.classList.add('open');
+        sidebarBackdrop.classList.remove('hidden');
+        sidebarBackdrop.classList.add('visible');
+    }
+}
+
+function closeSidebar() {
+    if (sidebar) {
+        sidebar.classList.remove('open');
+        sidebarBackdrop.classList.remove('visible');
+        setTimeout(() => {
+            sidebarBackdrop.classList.add('hidden');
+        }, 300); // Match transition duration
+    }
+}
+
+function navigateTo(mode) {
+    closeSidebar();
+
+    // Update active nav item
+    [navSearch, navAddSong, navFavorites].forEach(btn => {
+        if (btn) btn.classList.remove('active');
+    });
+
+    const searchContainer = document.querySelector('.search-container');
+    const editorPanel = document.getElementById('editor-panel');
+
+    switch (mode) {
+        case 'search':
+            if (navSearch) navSearch.classList.add('active');
+            showingFavorites = false;
+            searchContainer.classList.remove('hidden');
+            resultsDiv.classList.remove('hidden');
+            if (editorPanel) editorPanel.classList.add('hidden');
+            songView.classList.add('hidden');
+            exitEditMode();
+            showRandomSongs();
+            searchInput.focus();
+            break;
+
+        case 'add-song':
+            if (navAddSong) navAddSong.classList.add('active');
+            searchContainer.classList.add('hidden');
+            resultsDiv.classList.add('hidden');
+            songView.classList.add('hidden');
+            if (editorPanel) editorPanel.classList.remove('hidden');
+            exitEditMode();
+            break;
+
+        case 'favorites':
+            if (navFavorites) navFavorites.classList.add('active');
+            searchContainer.classList.remove('hidden');
+            resultsDiv.classList.remove('hidden');
+            if (editorPanel) editorPanel.classList.add('hidden');
+            songView.classList.add('hidden');
+            showFavorites();
+            break;
+    }
+}
+
+// Sidebar event listeners
+if (hamburgerBtn) {
+    hamburgerBtn.addEventListener('click', openSidebar);
+}
+
+if (sidebarClose) {
+    sidebarClose.addEventListener('click', closeSidebar);
+}
+
+if (sidebarBackdrop) {
+    sidebarBackdrop.addEventListener('click', closeSidebar);
+}
+
+if (navSearch) {
+    navSearch.addEventListener('click', () => navigateTo('search'));
+}
+
+if (navAddSong) {
+    navAddSong.addEventListener('click', () => navigateTo('add-song'));
+}
+
+if (navFavorites) {
+    navFavorites.addEventListener('click', () => navigateTo('favorites'));
+}
 
 // Bug report modal elements
 const bugBtn = document.getElementById('bug-btn');
@@ -1152,7 +1250,6 @@ function formatBugReport(feedback) {
 }
 
 // Contact modal elements
-const contactBtn = document.getElementById('contact-btn');
 const contactModal = document.getElementById('contact-modal');
 const contactModalClose = document.getElementById('contact-modal-close');
 const contactFeedback = document.getElementById('contact-feedback');
@@ -1163,12 +1260,17 @@ function closeContactModal() {
     contactModal.classList.add('hidden');
 }
 
-contactBtn.addEventListener('click', () => {
+function openContactModal() {
+    closeSidebar();
     contactModal.classList.remove('hidden');
     contactFeedback.value = '';
     contactStatus.textContent = '';
     contactFeedback.focus();
-});
+}
+
+if (navContact) {
+    navContact.addEventListener('click', openContactModal);
+}
 
 contactModalClose.addEventListener('click', closeContactModal);
 
@@ -1200,10 +1302,12 @@ submitContactBtn.addEventListener('click', () => {
     closeContactModal();
 });
 
-// Global Escape key handler for all modals
+// Global Escape key handler for all modals and sidebar
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-        if (!contactModal.classList.contains('hidden')) {
+        if (sidebar && sidebar.classList.contains('open')) {
+            closeSidebar();
+        } else if (!contactModal.classList.contains('hidden')) {
             closeContactModal();
         } else if (!bugModal.classList.contains('hidden')) {
             closeBugModal();
@@ -1223,10 +1327,7 @@ loadIndex();
 // ============================================
 
 // Editor DOM elements
-const tabSearch = document.getElementById('tab-search');
-const tabEditor = document.getElementById('tab-editor');
 const editorPanel = document.getElementById('editor-panel');
-const searchContainer = document.querySelector('.search-container');
 const editorTitle = document.getElementById('editor-title');
 const editorArtist = document.getElementById('editor-artist');
 const editorWriter = document.getElementById('editor-writer');
@@ -1246,29 +1347,6 @@ let editorDetectedKey = null;
 let editMode = false;        // true when editing existing song, false for new song
 let editingSongId = null;    // song ID being edited
 
-// Tab switching
-if (tabSearch && tabEditor) {
-    tabSearch.addEventListener('click', () => {
-        tabSearch.classList.add('active');
-        tabEditor.classList.remove('active');
-        searchContainer.classList.remove('hidden');
-        resultsDiv.classList.remove('hidden');
-        editorPanel.classList.add('hidden');
-        songView.classList.add('hidden');
-    });
-
-    tabEditor.addEventListener('click', () => {
-        tabEditor.classList.add('active');
-        tabSearch.classList.remove('active');
-        searchContainer.classList.add('hidden');
-        resultsDiv.classList.add('hidden');
-        songView.classList.add('hidden');
-        editorPanel.classList.remove('hidden');
-        // Reset edit mode when manually switching to editor tab
-        exitEditMode();
-    });
-}
-
 // Edit mode management
 function enterEditMode(song) {
     editMode = true;
@@ -1287,9 +1365,13 @@ function enterEditMode(song) {
     // Update submit button text
     editorSubmitBtn.textContent = 'Submit Correction';
 
-    // Switch to editor tab
-    tabEditor.classList.add('active');
-    tabSearch.classList.remove('active');
+    // Switch to editor panel (update nav state)
+    [navSearch, navAddSong, navFavorites].forEach(btn => {
+        if (btn) btn.classList.remove('active');
+    });
+    if (navAddSong) navAddSong.classList.add('active');
+
+    const searchContainer = document.querySelector('.search-container');
     searchContainer.classList.add('hidden');
     resultsDiv.classList.add('hidden');
     songView.classList.add('hidden');

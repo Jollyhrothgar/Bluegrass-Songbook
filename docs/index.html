@@ -9,30 +9,52 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Sidebar Navigation -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-title">Menu</span>
+            <button id="sidebar-close" class="sidebar-close">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <button id="nav-search" class="nav-item active">
+                <span class="nav-icon">&#128269;</span>
+                <span class="nav-label">Search</span>
+            </button>
+            <button id="nav-add-song" class="nav-item">
+                <span class="nav-icon">&#43;</span>
+                <span class="nav-label">Add Song</span>
+            </button>
+            <button id="nav-favorites" class="nav-item">
+                <span class="nav-icon">&#9825;</span>
+                <span class="nav-label">Favorites</span>
+                <span id="nav-favorites-count" class="nav-badge hidden">0</span>
+            </button>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="https://buymeacoffee.com/michaelbeav" target="_blank" rel="noopener" class="sidebar-link">
+                <span>&#9749;</span> Buy me a coffee
+            </a>
+            <button id="nav-contact" class="sidebar-link">
+                <span>&#9993;</span> Contact / Feedback
+            </button>
+        </div>
+    </div>
+    <div id="sidebar-backdrop" class="sidebar-backdrop hidden"></div>
+
     <div class="container">
         <header>
             <div class="header-top">
-                <a href="https://buymeacoffee.com/michaelbeav" target="_blank" rel="noopener" class="icon-btn" title="Buy me a coffee">
-                    <span>&#9749;</span>
-                </a>
-                <button id="contact-btn" class="icon-btn" title="Contact / Feature Request">
-                    <span>&#9993;</span>
+                <button id="hamburger-btn" class="hamburger-btn" title="Menu">
+                    <span class="hamburger-icon">&#9776;</span>
                 </button>
+                <div class="header-spacer"></div>
                 <button id="theme-toggle" class="icon-btn" title="Toggle theme">
                     <span class="icon-sun">&#9728;</span>
                     <span class="icon-moon">&#9790;</span>
                 </button>
-                <button id="favorites-toggle" class="icon-btn" title="Show favorites">
-                    <span class="icon-heart">&#9825;</span>
-                    <span id="favorites-count" class="favorites-count hidden">0</span>
-                </button>
             </div>
             <h1>Bluegrass Songbook</h1>
             <p class="subtitle">17,000+ songs with chords</p>
-            <div class="tab-bar">
-                <button id="tab-search" class="tab-btn active">Search</button>
-                <button id="tab-editor" class="tab-btn">Add Song</button>
-            </div>
         </header>
 
         <div class="search-container">
