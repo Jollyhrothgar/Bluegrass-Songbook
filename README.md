@@ -14,10 +14,10 @@ A searchable collection of 17,000+ bluegrass and country songs in ChordPro forma
 
 ### Browse the Collection
 
-Songs are in `songs/classic-country/parsed/` as `.pro` files:
+Songs are in `sources/classic-country/parsed/` as `.pro` files:
 
 ```
-songs/classic-country/parsed/
+sources/classic-country/parsed/
 ├── abeautifullife.pro
 ├── abillionairesong.pro
 ├── abornloser.pro
@@ -84,7 +84,7 @@ uv run pytest
 │   ├── parser/             # HTML → ChordPro conversion
 │   ├── analysis/           # Key detection, chord normalization
 │   └── search/             # Search index building
-├── songs/                  # Song data by source
+├── sources/                  # Song data by source
 │   └── classic-country/
 │       ├── raw/            # Original HTML
 │       └── parsed/         # ChordPro output
@@ -94,7 +94,7 @@ uv run pytest
 
 ### Adding Songs from New Sources
 
-1. Add HTML files to `songs/<source>/raw/`
+1. Add HTML files to `sources/<source>/raw/`
 2. Create or adapt a parser for the HTML structure
 3. Run batch processing
 4. Validate with the viewer UI

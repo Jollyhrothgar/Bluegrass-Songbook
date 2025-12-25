@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+#
+# bootstrap - First-time setup and build
+#
+# Usage:
+#   ./scripts/bootstrap           # Full setup: install deps + build index
+#   ./scripts/bootstrap --quick   # Skip dependency install, just build index
+#
+
+set -e
+
+REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$REPO_ROOT"
+
+QUICK=false
+for arg in "$@"; do
+    case $arg in
+        --quick)
+            QUICK=true
+            shift
+            ;;
+    esac
+done
+
+echo "=== Bluegrass Songbook Bootstrap ==="
+echo ""
+
+# Install dependencies (unless --quick)
+if [ "$QUICK" = false ]; then
+    echo "Installing dependencies..."
+    uv sync
+    echo ""
+fi
+
+# Build search index
+echo "Building search index..."
+uv run python3 scripts/lib/build_index.py
+
+echo ""
+echo "Bootstrap complete!"
+echo "  - Run './scripts/server' to start the frontend"
+echo "  - Visit http://localhost:8080"

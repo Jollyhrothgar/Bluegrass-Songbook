@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChordPro Parser Validator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .file-info {
+            font-size: 0.9rem;
+            color: #ecf0f1;
+        }
+
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        button.success {
+            background: #27ae60;
+        }
+
+        button.success:hover {
+            background: #229954;
+        }
+
+        button.error {
+            background: #e74c3c;
+        }
+
+        button.error:hover {
+            background: #c0392b;
+        }
+
+        button.warning {
+            background: #f39c12;
+        }
+
+        button.warning:hover {
+            background: #e67e22;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border-right: 2px solid #34495e;
+        }
+
+        .panel:last-child {
+            border-right: none;
+        }
+
+        .panel-header {
+            background: #34495e;
+            color: white;
+            padding: 0.75rem;
+            font-weight: 600;
+        }
+
+        .panel-content {
+            flex: 1;
+            overflow: auto;
+            padding: 1rem;
+            background: #ecf0f1;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: white;
+        }
+
+        #chordproOutput {
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            background: white;
+            padding: 1rem;
+            line-height: 1.6;
+        }
+
+        .chord {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        .directive {
+            color: #8e44ad;
+            font-style: italic;
+        }
+
+        .footer {
+            background: #34495e;
+            color: white;
+            padding: 0.5rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .notes-section {
+            margin-top: 0.5rem;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-family: inherit;
+            resize: vertical;
+        }
+
+        .pattern-info {
+            background: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+        }
+
+        .stats {
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ChordPro Parser Validator</h1>
+        <div class="controls">
+            <span class="file-info" id="fileInfo">No file loaded</span>
+            <button onclick="prevFile()">← Previous</button>
+            <button onclick="nextFile()">Next →</button>
+        </div>
+    </div>
+
+    <div class="pattern-info" id="patternInfo">
+        Pattern: Loading...
+    </div>
+
+    <div class="main-container">
+        <div class="panel">
+            <div class="panel-header">Original HTML</div>
+            <div class="panel-content">
+                <iframe id="htmlFrame"></iframe>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-header">Generated ChordPro</div>
+            <div class="panel-content">
+                <div id="chordproOutput">Loading...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="stats" id="stats">Files: 0/0</div>
+        <div class="controls">
+            <button class="success" onclick="markFile('correct')">✓ Correct</button>
+            <button class="warning" onclick="markFile('minor')">⚠ Minor Issues</button>
+            <button class="error" onclick="markFile('wrong')">✗ Wrong</button>
+        </div>
+    </div>
+
+    <div style="padding: 1rem; background: #ecf0f1;">
+        <div class="notes-section">
+            <label for="notes">Notes (what's wrong?):</label>
+            <textarea id="notes" rows="3" placeholder="Describe any issues..."></textarea>
+        </div>
+    </div>
+
+    <script>
+        let files = [];
+        let currentIndex = 0;
+        let feedback = {};
+
+        async function loadFiles() {
+            try {
+                const response = await fetch('http://localhost:8000/api/files');
+                const data = await response.json();
+                files = data.files;
+                updateStats();
+                if (files.length > 0) {
+                    loadFile(0);
+                }
+            } catch (error) {
+                console.error('Error loading files:', error);
+                document.getElementById('fileInfo').textContent = 'Error loading files';
+            }
+        }
+
+        async function loadFile(index) {
+            if (index < 0 || index >= files.length) return;
+
+            currentIndex = index;
+            const file = files[currentIndex];
+
+            // Update UI
+            document.getElementById('fileInfo').textContent = `${file.name}`;
+            document.getElementById('patternInfo').textContent = `Pattern: ${file.pattern} | Has Chords: ${file.has_chords ? 'Yes' : 'No'}`;
+
+            // Load HTML
+            const htmlFrame = document.getElementById('htmlFrame');
+            htmlFrame.src = `http://localhost:8000/html/${file.name}`;
+
+            // Load ChordPro
+            try {
+                const response = await fetch(`http://localhost:8000/api/chordpro/${file.name}`);
+                const data = await response.json();
+
+                if (data.success) {
+                    displayChordPro(data.chordpro);
+                } else {
+                    document.getElementById('chordproOutput').textContent = `Error: ${data.error}`;
+                }
+            } catch (error) {
+                document.getElementById('chordproOutput').textContent = `Error loading ChordPro: ${error}`;
+            }
+
+            // Load any existing notes
+            document.getElementById('notes').value = feedback[file.name]?.notes || '';
+
+            updateStats();
+        }
+
+        function displayChordPro(text) {
+            const output = document.getElementById('chordproOutput');
+
+            // Simple syntax highlighting - show raw ChordPro with color coding
+            let highlighted = escapeHtml(text)
+                .replace(/\[([^\]]+)\]/g, '<span style="color: #e74c3c; font-weight: 600;">[$1]</span>')
+                .replace(/\{([^}]+)\}/g, '<span style="color: #8e44ad; font-style: italic;">{$1}</span>');
+
+            output.innerHTML = `<pre style="font-family: monospace; white-space: pre-wrap; margin: 0; line-height: 1.6;">${highlighted}</pre>`;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function nextFile() {
+            if (currentIndex < files.length - 1) {
+                loadFile(currentIndex + 1);
+            }
+        }
+
+        function prevFile() {
+            if (currentIndex > 0) {
+                loadFile(currentIndex - 1);
+            }
+        }
+
+        async function markFile(status) {
+            const file = files[currentIndex];
+            const notes = document.getElementById('notes').value;
+
+            feedback[file.name] = {
+                status: status,
+                notes: notes,
+                timestamp: new Date().toISOString()
+            };
+
+            // Save feedback
+            try {
+                await fetch('http://localhost:8000/api/feedback', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        file: file.name,
+                        status: status,
+                        notes: notes
+                    })
+                });
+            } catch (error) {
+                console.error('Error saving feedback:', error);
+            }
+
+            // Move to next file
+            nextFile();
+        }
+
+        function updateStats() {
+            const correct = Object.values(feedback).filter(f => f.status === 'correct').length;
+            const wrong = Object.values(feedback).filter(f => f.status === 'wrong').length;
+            const minor = Object.values(feedback).filter(f => f.status === 'minor').length;
+
+            document.getElementById('stats').innerHTML = `
+                Files: ${currentIndex + 1}/${files.length} |
+                ✓ ${correct} | ⚠ ${minor} | ✗ ${wrong}
+            `;
+        }
+
+        // Keyboard shortcuts (only when not typing in textarea)
+        document.addEventListener('keydown', (e) => {
+            // Don't trigger shortcuts when typing in textarea
+            if (e.target.tagName === 'TEXTAREA') return;
+
+            if (e.key === 'ArrowRight') nextFile();
+            if (e.key === 'ArrowLeft') prevFile();
+            if (e.key === '1') markFile('correct');
+            if (e.key === '2') markFile('minor');
+            if (e.key === '3') markFile('wrong');
+        });
+
+        // Load files on start
+        loadFiles();
+    </script>
+</body>
+</html>

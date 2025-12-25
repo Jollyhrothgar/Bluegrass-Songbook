@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+#
+# utility - Utility commands for classic-country source
+#
+# Usage:
+#   ./sources/classic-country/scripts/utility batch_parse      # Parse all HTML files
+#   ./sources/classic-country/scripts/utility create_spot_check # Create viewer sample
+#
+
+set -e
+
+REPO_ROOT="$(cd "$(dirname "$0")/../../.." && pwd)"
+SOURCE_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$REPO_ROOT"
+
+COMMAND="${1:-}"
+shift 2>/dev/null || true
+
+show_help() {
+    echo "Usage: ./sources/classic-country/scripts/utility <command>"
+    echo ""
+    echo "Commands:"
+    echo "  batch_parse         Parse all HTML files in raw/ to parsed/"
+    echo "  create_spot_check   Create a stratified sample for viewer validation"
+    echo ""
+}
+
+case "$COMMAND" in
+    batch_parse|batch-parse|parse)
+        echo "Running batch parse..."
+        uv run python3 "$SOURCE_ROOT/src/batch_process.py" "$@"
+        ;;
+    create_spot_check|spot_check|spot-check)
+        echo "Creating spot check sample..."
+        uv run python3 "$SOURCE_ROOT/src/create_spot_check.py" "$@"
+        ;;
+    help|--help|-h|"")
+        show_help
+        ;;
+    *)
+        echo "Unknown command: $COMMAND"
+        echo ""
+        show_help
+        exit 1
+        ;;
+esac

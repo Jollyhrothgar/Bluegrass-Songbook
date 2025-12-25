@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+#
+# bootstrap - Setup and batch parse for classic-country source
+#
+# Usage:
+#   ./sources/classic-country/scripts/bootstrap           # Full batch parse
+#   ./sources/classic-country/scripts/bootstrap --quick   # Skip if parsed/ exists
+#
+
+set -e
+
+REPO_ROOT="$(cd "$(dirname "$0")/../../.." && pwd)"
+SOURCE_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$REPO_ROOT"
+
+QUICK=false
+for arg in "$@"; do
+    case $arg in
+        --quick)
+            QUICK=true
+            shift
+            ;;
+    esac
+done
+
+echo "=== Classic Country Source Bootstrap ==="
+echo ""
+
+# Check if parsed directory has content
+PARSED_COUNT=$(find "$SOURCE_ROOT/parsed" -name "*.pro" 2>/dev/null | wc -l | tr -d ' ')
+
+if [ "$QUICK" = true ] && [ "$PARSED_COUNT" -gt 0 ]; then
+    echo "Skipping batch parse (--quick mode, $PARSED_COUNT files already exist)"
+    exit 0
+fi
+
+echo "Running batch parse..."
+echo "  Raw files: $SOURCE_ROOT/raw/"
+echo "  Output: $SOURCE_ROOT/parsed/"
+echo ""
+
+"$SOURCE_ROOT/scripts/utility" batch_parse
+
+echo ""
+echo "Bootstrap complete!"
+echo "  - Parsed files in: $SOURCE_ROOT/parsed/"
+echo "  - Run './scripts/bootstrap' to rebuild search index"

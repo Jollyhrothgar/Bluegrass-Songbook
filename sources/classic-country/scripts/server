@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+#
+# server - Start development servers for classic-country source
+#
+# Usage:
+#   ./sources/classic-country/scripts/server debug_viewer    # Validation UI
+#
+
+set -e
+
+REPO_ROOT="$(cd "$(dirname "$0")/../../.." && pwd)"
+SOURCE_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$REPO_ROOT"
+
+COMMAND="${1:-}"
+
+show_help() {
+    echo "Usage: ./sources/classic-country/scripts/server <command>"
+    echo ""
+    echo "Commands:"
+    echo "  debug_viewer    Start the validation UI for debugging parser output"
+    echo "                  Shows side-by-side HTML vs parsed ChordPro"
+    echo "                  Visit: http://localhost:8000"
+    echo ""
+}
+
+case "$COMMAND" in
+    debug_viewer|debug-viewer|viewer)
+        echo "Starting debug viewer for classic-country source..."
+        echo "Visit: http://localhost:8000"
+        echo ""
+        uv run python3 "$SOURCE_ROOT/viewer/server.py"
+        ;;
+    help|--help|-h|"")
+        show_help
+        ;;
+    *)
+        echo "Unknown command: $COMMAND"
+        echo ""
+        show_help
+        exit 1
+        ;;
+esac

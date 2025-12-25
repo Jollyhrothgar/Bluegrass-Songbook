@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+#
+# test - Testing commands for classic-country source
+#
+# Usage:
+#   ./sources/classic-country/scripts/test regression --name fix_xyz
+#   ./sources/classic-country/scripts/test validate
+#   ./sources/classic-country/scripts/test reparse <songname>
+#   ./sources/classic-country/scripts/test outliers [--metric chord_count]
+#
+
+set -e
+
+REPO_ROOT="$(cd "$(dirname "$0")/../../.." && pwd)"
+SOURCE_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$REPO_ROOT"
+
+COMMAND="${1:-}"
+shift 2>/dev/null || true
+
+show_help() {
+    echo "Usage: ./sources/classic-country/scripts/test <command> [options]"
+    echo ""
+    echo "Commands:"
+    echo "  regression --name <name>    Full regression test for parser changes"
+    echo "  validate                    Run statistical validator on parsed output"
+    echo "  reparse <songname>          Quick single-song reparse and diff"
+    echo "  outliers [--metric M]       Select outlier files for review"
+    echo ""
+}
+
+case "$COMMAND" in
+    regression)
+        uv run python3 "$SOURCE_ROOT/src/regression_test.py" "$@"
+        ;;
+    validate)
+        uv run python3 "$SOURCE_ROOT/src/validator_cli.py" "$@"
+        ;;
+    reparse)
+        uv run python3 "$SOURCE_ROOT/src/quick_fix.py" --song "$@"
+        ;;
+    outliers)
+        uv run python3 "$SOURCE_ROOT/src/select_outliers.py" "$@"
+        ;;
+    help|--help|-h|"")
+        show_help
+        ;;
+    *)
+        echo "Unknown command: $COMMAND"
+        echo ""
+        show_help
+        exit 1
+        ;;
+esac

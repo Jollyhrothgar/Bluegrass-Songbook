@@ -35,7 +35,7 @@ Bluegrass-Songbook/
 │   └── [other-sources]/
 │
 ├── songbook/                      # Final aggregated collection
-│   ├── songs/                    # All .pro files (deduplicated)
+│   ├── sources/                    # All .pro files (deduplicated)
 │   ├── metadata.db               # SQLite database for search
 │   └── index.json                # Song catalog
 │
@@ -75,9 +75,9 @@ Bluegrass-Songbook/
 **Goal:** Build the aggregation layer that combines sources into a single songbook
 
 **Tasks:**
-- [ ] Create `songbook/songs/` directory
+- [ ] Create `songbook/sources/` directory
 - [ ] Build `tools/aggregator.py`:
-  - [ ] Copy all `sources/*/parsed/*.pro` → `songbook/songs/`
+  - [ ] Copy all `sources/*/parsed/*.pro` → `songbook/sources/`
   - [ ] Normalize filenames: `artist_-_song_title.pro`
   - [ ] Add source metadata to each file: `{meta: source classic-country}`
   - [ ] Handle filename conflicts
@@ -311,7 +311,7 @@ CREATE VIRTUAL TABLE lyrics_fts USING fts5(content);
 - Clear documentation for contributors
 
 ### 5. Data Portability
-- `songbook/songs/` is just .pro files (standard format)
+- `songbook/sources/` is just .pro files (standard format)
 - SQLite database is easily exported
 - Can rebuild index from .pro files anytime
 

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#
+# server - Start the frontend development server
+#
+# Usage:
+#   ./scripts/server              # Start frontend server on port 8080
+#
+# For source-specific servers (like debug viewers), use:
+#   ./sources/classic-country/scripts/server debug_viewer
+#
+
+set -e
+
+REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$REPO_ROOT"
+
+echo "Starting frontend server..."
+echo "Visit: http://localhost:8080"
+python3 -m http.server 8080 --directory docs

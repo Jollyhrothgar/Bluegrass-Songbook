@@ -5,34 +5,30 @@
 A two-phase project to build a searchable bluegrass/country songbook:
 
 1. **Parser** (production-ready): Converts scraped HTML song files to ChordPro format
-2. **Search Application** (in development): Serverless semantic search on GitHub Pages
+2. **Search Application** (working): Serverless search on GitHub Pages with key detection & transposition
 
 **Current Status:**
 - 17,053 songs parsed from classic-country-song-lyrics.com (98.5% success rate)
 - Parser handles three HTML structure patterns with accurate chord alignment
-- Search UI working locally (keyword search, song viewing)
-- Next: semantic search with embeddings, chord progression search, key detection
+- Search UI working with keyword search, chord/progression search, key detection, transposition
+- Song editor with smart paste (auto-converts chord-above-lyrics format)
+- Next: semantic search with embeddings
 
 ## Quick Start
 
 ```bash
-# Install dependencies
-uv sync
+# First-time setup (install deps + build index)
+./scripts/bootstrap
 
-# Run batch conversion (parser)
-uv run python3 batch_process.py
+# Start frontend server
+./scripts/server
+# Visit: http://localhost:8080
 
-# Start validation UI
-python3 viewer/server.py
-# Visit: http://localhost:8000
+# Add a song you created
+./scripts/utility add-song /path/to/song.pro
 
 # Run tests
 uv run pytest
-
-# Build search index and start search UI
-uv run python3 scripts/build_index.py
-python3 -m http.server 8080 --directory docs
-# Visit: http://localhost:8080
 ```
 
 ## Repository Structure
@@ -44,43 +40,66 @@ Bluegrass-Songbook/
 ├── ROADMAP.md                   # Future development phases
 ├── RESULTS.md                   # Parser performance metrics
 │
-├── src/songbook/                # Main Python package
-│   ├── parser/                  # HTML → ChordPro conversion
-│   │   ├── parser.py            # Main parser (StructureDetector, ContentExtractor, ChordProGenerator)
-│   │   ├── batch.py             # Batch processing
-│   │   └── validator.py         # Quality validation
-│   ├── analysis/                # Chord analysis (placeholder)
-│   │   └── __init__.py          # Key detection, Nashville numbers (TODO)
-│   └── search/                  # Search index building (placeholder)
-│       └── __init__.py          # Embeddings (TODO)
+├── scripts/                     # Global app scripts
+│   ├── bootstrap                # Setup + build search index
+│   ├── server                   # Start dev servers
+│   ├── utility                  # User utilities (add-song, etc.)
+│   └── lib/                     # Python implementations
+│       ├── build_index.py       # Build docs/data/index.json
+│       ├── add_song.py          # Add song to manual collection
+│       └── chord_counter.py     # Chord statistics
 │
-├── docs/                        # GitHub Pages static site (WORKING)
-│   ├── index.html               # Search UI
+├── sources/                       # Song sources (self-contained)
+│   ├── classic-country/
+│   │   ├── raw/                 # Original HTML files (17,381)
+│   │   ├── parsed/              # ChordPro .pro files (17,122)
+│   │   ├── src/                 # Parser + testing code
+│   │   │   ├── parser.py        # HTML → ChordPro conversion
+│   │   │   ├── batch_process.py # Batch processing
+│   │   │   └── regression_test.py
+│   │   ├── viewer/              # Debug UI (HTML vs parsed comparison)
+│   │   │   └── server.py
+│   │   ├── docs/                # Source-specific documentation
+│   │   │   └── QUALITY_VALIDATION.md
+│   │   └── scripts/
+│   │       ├── bootstrap        # Batch parse HTML files
+│   │       ├── server           # Start debug_viewer
+│   │       ├── test             # Regression, validate, etc.
+│   │       └── utility          # batch_parse, create_spot_check
+│   └── manual/
+│       └── parsed/              # Hand-created .pro files
+│
+├── docs/                        # GitHub Pages static site
+│   ├── index.html               # Search UI + Editor
 │   ├── css/style.css            # Dark theme styles
-│   ├── js/search.js             # Search + song display logic
-│   └── data/index.json          # Song index (33MB, 17K songs)
-│
-├── scripts/                     # Build & dev tools
-│   ├── build_index.py           # Build docs/data/index.json from .pro files
-│   ├── regression_test.py       # Before/after comparison for parser changes
-│   └── validator.py             # Statistical analysis of parsed output
+│   ├── js/search.js             # Search, display, editor logic
+│   └── data/index.json          # Song index (~33MB, 17K songs)
 │
 ├── tests/                       # Test suite (pytest)
 │   ├── parser/                  # Parser unit + integration tests
-│   ├── analysis/                # Key detection tests (placeholder)
 │   └── fixtures/                # Test HTML/pro files
-│
-├── viewer/                      # Manual validation web UI (for parser dev)
-│   ├── server.py                # Flask server
-│   └── templates/               # HTML templates
-│
-├── songs/                       # Song data organized by source
-│   └── classic-country/
-│       ├── raw/                 # Original HTML files (17,381)
-│       └── parsed/              # ChordPro .pro files (17,122)
 │
 ├── pyproject.toml               # Package config + dependencies
 └── pytest.ini                   # Test configuration
+```
+
+## Script Hierarchy
+
+```bash
+# Global scripts (app-level)
+./scripts/bootstrap              # Setup: uv sync + build index
+./scripts/bootstrap --quick      # Just rebuild index
+./scripts/server                 # Start frontend (port 8080)
+./scripts/utility add-song FILE  # Add song + rebuild index
+./scripts/utility count-chords   # Chord statistics
+
+# Source-specific scripts (classic-country)
+./sources/classic-country/scripts/bootstrap           # Batch parse HTML
+./sources/classic-country/scripts/server debug_viewer # Debug UI (HTML vs parsed)
+./sources/classic-country/scripts/test regression     # Regression test
+./sources/classic-country/scripts/test validate       # Statistical validation
+./sources/classic-country/scripts/test reparse NAME   # Quick single-file test
+./sources/classic-country/scripts/test outliers       # Find outlier files
 ```
 
 ## Data Model
@@ -107,25 +126,34 @@ Your cheatin' [C]heart will make you [F]weep
 {eov}
 ```
 
-### Directory Structure by Source
+### Source-Specific Structure
+
+Each source is self-contained with its own parser, tests, and scripts:
 
 ```
-songs/
-├── classic-country/
-│   ├── raw/                 # Original HTML files
-│   └── parsed/              # .pro files with x_source metadata
-├── ultimate-guitar/         # Future source
-│   ├── raw/
-│   └── parsed/
-└── index.json               # Aggregated catalog (build-time generated)
+sources/
+├── classic-country/             # Source from classic-country-song-lyrics.com
+│   ├── raw/                     # Original HTML files
+│   ├── parsed/                  # Generated .pro files
+│   ├── src/                     # Parser code specific to this source
+│   │   ├── parser.py            # HTML patterns: pre_plain, pre_tag, span_br
+│   │   ├── batch.py             # Batch processing
+│   │   └── regression_test.py   # Testing tools
+│   └── scripts/
+│       ├── bootstrap            # Batch parse
+│       └── test                 # Test commands
+│
+├── manual/                      # Hand-created songs
+│   └── parsed/                  # Just .pro files, no parsing needed
+│
+└── [future-source]/             # New source would follow same pattern
+    ├── raw/
+    ├── parsed/
+    ├── src/                     # Source-specific parser
+    └── scripts/
 ```
 
-This structure:
-- Preserves provenance (which source each file came from)
-- Supports multiple sources without filename conflicts
-- Enables deduplication across sources at search-build time
-
-## Parser Architecture
+## Parser Architecture (classic-country)
 
 ### Three-Stage Pipeline
 
@@ -166,84 +194,68 @@ HTML → StructureDetector → ContentExtractor → ChordProGenerator → .pro
 ### Build Pipeline (Python, runs locally)
 
 ```
-songs/*/parsed/*.pro → Indexer → Key Detector → Normalizer → Embedder → docs/data/
+sources/*/parsed/*.pro → build_index.py → docs/data/index.json
 ```
 
-| Component | Purpose |
-|-----------|---------|
-| `indexer.py` | Parse .pro files, extract metadata + lyrics + chords |
-| `key_detector.py` | Infer song key using diatonic heuristics |
-| `normalizer.py` | Convert chords to Nashville numbers (1, 4, 5, etc.) |
-| `embedder.py` | Generate lyrics embeddings with `all-MiniLM-L6-v2` |
-| `export.py` | Create compressed JSON database for frontend |
-
-**Key Detection Algorithm:**
-```python
-DIATONIC = {
-    'G': ['G', 'Am', 'Bm', 'C', 'D', 'Em', 'F#dim'],
-    'C': ['C', 'Dm', 'Em', 'F', 'G', 'Am', 'Bdim'],
-    # ... all 12 keys
-}
-
-def detect_key(chords: list[str]) -> tuple[str, float]:
-    """Returns (key, confidence) based on diatonic fit."""
-    roots = [normalize_to_triad(c) for c in chords]
-    scores = {key: sum(1 for c in roots if c in scale) / len(roots)
-              for key, scale in DIATONIC.items()}
-    best = max(scores, key=scores.get)
-    return best, scores[best]
-```
+The build script (`scripts/lib/build_index.py`):
+- Parses all .pro files from all sources
+- Extracts metadata, lyrics, chords
+- Detects key using diatonic heuristics
+- Converts chords to Nashville numbers
+- Outputs unified JSON index
 
 ### Frontend (Static, GitHub Pages)
 
-| Feature | Implementation |
-|---------|----------------|
-| Semantic "vibe" search | Transformers.js + pre-computed embeddings |
-| Lyric keyword search | Client-side string matching |
-| Progression search | Match normalized chord sequences |
-
-**Output files in `docs/data/`:**
-- `index.json`: Song metadata, lyrics snippets, normalized progressions
-- `embeddings.bin`: Pre-computed vectors (compressed)
+| Feature | Status |
+|---------|--------|
+| Keyword search (title, artist, lyrics) | ✅ Working |
+| Chord search (Nashville numbers) | ✅ Working |
+| Progression search | ✅ Working |
+| Key detection & display | ✅ Working |
+| Transposition | ✅ Working |
+| Song editor with smart paste | ✅ Working |
+| Favorites | ✅ Working |
+| Semantic "vibe" search | 🔜 Planned |
 
 ## Development Workflow
 
-### Parser Changes (Requires Regression Testing)
+### Parser Changes (classic-country)
 
 ```bash
 # 1. Make changes to parser
+vim sources/classic-country/src/parser.py
+
 # 2. Run regression test
-python3 scripts/regression_test.py --name <change_description>
+./sources/classic-country/scripts/test regression --name my_fix
 
 # 3. Review comparison report for regressions
-# 4. If clean, validate with spot-check
-uv run python3 create_new_spot_check.py
-python3 viewer/server.py
+
+# 4. If clean, validate with debug viewer
+./sources/classic-country/scripts/server debug_viewer
 
 # 5. Rollback if needed
-git checkout HEAD -- songs/classic-country/parsed/
+git checkout HEAD -- sources/classic-country/parsed/
 ```
 
-### Running Tests
+### Adding a New Song (Manual)
 
 ```bash
-# All tests
-uv run pytest
+# Create your .pro file, then:
+./scripts/utility add-song ~/Downloads/my_song.pro
 
-# Parser tests only
-uv run pytest tests/parser/
-
-# With coverage
-uv run pytest --cov=src/songbook
+# Or skip index rebuild if adding multiple:
+./scripts/utility add-song song1.pro --skip-index-rebuild
+./scripts/utility add-song song2.pro --skip-index-rebuild
+./scripts/bootstrap --quick  # Rebuild once at the end
 ```
 
 ### Adding a New Source
 
-1. Create `songs/<source-name>/raw/` and add HTML files
-2. Create parser for new HTML structure (or reuse existing)
-3. Run batch processing with `--source <source-name>`
-4. Validate with viewer
-5. Rebuild search index
+1. Create `sources/<source-name>/` with `raw/`, `parsed/`, `src/`, `scripts/` dirs
+2. Implement parser in `src/parser.py` for the source's HTML structure
+3. Create `scripts/bootstrap` and `scripts/test` following classic-country pattern
+4. Run batch processing
+5. Run `./scripts/bootstrap --quick` to rebuild global index
 
 ## Quality Metrics
 
@@ -270,7 +282,7 @@ uv run pytest --cov=src/songbook
 - `beautifulsoup4` - HTML parsing
 - `flask` - Validation UI server
 
-**Search Build (new):**
+**Search Build (planned):**
 - `sentence-transformers` - Embedding generation
 - `numpy` - Vector operations
 
@@ -282,25 +294,26 @@ uv run pytest --cov=src/songbook
 
 | I want to... | Go to... |
 |--------------|----------|
-| Understand the parser | `src/songbook/parser/parser.py` |
-| Build search index | `scripts/build_index.py` |
+| Understand the classic-country parser | `sources/classic-country/src/parser.py` |
+| Build search index | `scripts/lib/build_index.py` |
 | Modify search UI | `docs/js/search.js` |
-| Add key detection | `src/songbook/analysis/` (TODO) |
-| Run regression tests | `scripts/regression_test.py` |
-| Validate parser output | `viewer/server.py` |
+| Run regression tests | `./sources/classic-country/scripts/test regression` |
+| Debug parser output | `./sources/classic-country/scripts/server debug_viewer` |
+| Add a manual song | `./scripts/utility add-song` |
 | See performance results | `RESULTS.md` |
 | See future roadmap | `ROADMAP.md` |
 
-## Next Steps (Search Application)
+## Next Steps
 
 **Working:**
-- Basic keyword search (title, artist, lyrics)
-- Song display with chord highlighting
+- Keyword search (title, artist, lyrics)
+- Chord/progression search with Nashville numbers
+- Key detection and transposition
+- Song editor with smart paste
 - Dark theme, mobile-friendly UI
 
 **TODO:**
-1. **Compress index.json** - Currently 33MB, should gzip to ~5MB
-2. **Key detection** - Implement `src/songbook/analysis/key_detector.py` using diatonic heuristics
-3. **Nashville numbers** - Implement chord normalization for key-agnostic progression search
-4. **Semantic search** - Add embeddings with `all-MiniLM-L6-v2` and transformers.js
-5. **Deploy to GitHub Pages** - Configure repo settings
+1. **Compress index.json** - Currently 33MB, could gzip to ~5MB
+2. **Semantic search** - Add embeddings with `all-MiniLM-L6-v2` and transformers.js
+3. **Deploy to GitHub Pages** - Configure repo settings
+4. **Metrics infrastructure** - RESULTS.md contains parser metrics but needs rethinking now that parsed files are checked in. Consider git-diff based validation: compare parsed output against committed baseline, run heuristics on changes.

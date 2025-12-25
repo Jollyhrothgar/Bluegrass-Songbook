@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+#
+# utility - User-facing utility commands
+#
+# Usage:
+#   ./scripts/utility add-song /path/to/song.pro [--skip-index-rebuild]
+#   ./scripts/utility count-chords [path]
+#
+
+set -e
+
+REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$REPO_ROOT"
+
+COMMAND="${1:-}"
+shift 2>/dev/null || true
+
+show_help() {
+    echo "Usage: ./scripts/utility <command> [options]"
+    echo ""
+    echo "Commands:"
+    echo "  add-song <file.pro> [--skip-index-rebuild]"
+    echo "      Add a song to the manual collection and rebuild the index"
+    echo ""
+    echo "  count-chords [path]"
+    echo "      Count chord usage in .pro files"
+    echo ""
+}
+
+case "$COMMAND" in
+    add-song)
+        uv run python3 scripts/lib/add_song.py "$@"
+        ;;
+    count-chords)
+        uv run python3 scripts/lib/chord_counter.py "$@"
+        ;;
+    help|--help|-h|"")
+        show_help
+        ;;
+    *)
+        echo "Unknown command: $COMMAND"
+        echo ""
+        show_help
+        exit 1
+        ;;
+esac

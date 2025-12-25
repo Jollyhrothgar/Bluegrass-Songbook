@@ -330,9 +330,9 @@ async function openSong(songId) {
     songContent.innerHTML = '<div class="loading">Loading song...</div>';
 
     try {
-        let response = await fetch(`data/songs/${songId}.pro`);
+        let response = await fetch(`data/sources/${songId}.pro`);
         if (!response.ok) {
-            response = await fetch(`../songs/classic-country/parsed/${songId}.pro`);
+            response = await fetch(`../sources/classic-country/parsed/${songId}.pro`);
         }
         const chordpro = await response.text();
         currentChordpro = chordpro;
@@ -1075,8 +1075,8 @@ function formatBugReport(feedback) {
         '',
         `**Song ID:** ${songId}`,
         `**Artist:** ${song.artist || 'Unknown'}`,
-        `**Parsed File:** songs/classic-country/parsed/${songId}.pro`,
-        `**Raw HTML:** songs/classic-country/raw/${songId}.html`,
+        `**Parsed File:** sources/classic-country/parsed/${songId}.pro`,
+        `**Raw HTML:** sources/classic-country/raw/${songId}.html`,
         '',
         `### Issue`,
         feedback,

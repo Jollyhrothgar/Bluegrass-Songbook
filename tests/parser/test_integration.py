@@ -31,7 +31,7 @@ class TestParsingPipeline:
     @pytest.mark.skip(reason="Requires real HTML from scraped site")
     def test_chord_alignment(self):
         """Should align chords correctly with lyrics"""
-        # This test would need real HTML from songs/classic-country/raw/
+        # This test would need real HTML from sources/classic-country/raw/
         pass
 
 
