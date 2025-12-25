@@ -15,6 +15,9 @@
                 <a href="https://buymeacoffee.com/michaelbeav" target="_blank" rel="noopener" class="icon-btn" title="Buy me a coffee">
                     <span>&#9749;</span>
                 </a>
+                <button id="contact-btn" class="icon-btn" title="Contact / Feature Request">
+                    <span>&#9993;</span>
+                </button>
                 <button id="theme-toggle" class="icon-btn" title="Toggle theme">
                     <span class="icon-sun">&#9728;</span>
                     <span class="icon-moon">&#9790;</span>
@@ -141,8 +144,26 @@ Blank lines separate verses."></textarea>
                     <textarea id="bug-feedback" placeholder="e.g., Chord alignment is off in verse 2, missing repeat section, wrong artist name..."></textarea>
                 </div>
                 <div class="modal-footer">
-                    <button id="copy-bug-btn" class="copy-btn">Copy Bug Report</button>
-                    <span id="copy-status" class="copy-status"></span>
+                    <button id="submit-bug-btn" class="action-btn primary">Submit Bug Report</button>
+                    <span id="bug-status" class="copy-status"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Modal -->
+        <div id="contact-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Contact / Feature Request</h2>
+                    <button id="contact-modal-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <label for="contact-feedback">What would you like to share?</label>
+                    <textarea id="contact-feedback" placeholder="Request a song, suggest a feature, report an issue, or just say hi!"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button id="submit-contact-btn" class="action-btn primary">Submit</button>
+                    <span id="contact-status" class="copy-status"></span>
                 </div>
             </div>
         </div>

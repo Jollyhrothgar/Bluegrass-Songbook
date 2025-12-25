@@ -26,13 +26,27 @@ class BatchProcessor:
         self.input_dir = Path(input_dir)
         self.output_dir = Path(output_dir)
         self.max_workers = max_workers
+        self.protected_songs = self._load_protected_songs()
         self.results = {
             'success': [],
             'failed': [],
+            'skipped': [],
             'total': 0,
             'start_time': None,
             'end_time': None
         }
+
+    def _load_protected_songs(self) -> set:
+        """Load list of protected song IDs that shouldn't be overwritten"""
+        protected_file = self.input_dir.parent / 'protected.txt'
+        protected = set()
+        if protected_file.exists():
+            with open(protected_file, 'r') as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#'):
+                        protected.add(line)
+        return protected
 
     def process_file(self, html_file: Path) -> Tuple[bool, str, str, Dict]:
         """
@@ -124,12 +138,26 @@ class BatchProcessor:
         self.output_dir.mkdir(exist_ok=True)
 
         # Get all HTML files
-        html_files = list(self.input_dir.glob(pattern))
-        self.results['total'] = len(html_files)
+        all_html_files = list(self.input_dir.glob(pattern))
+
+        # Filter out protected files
+        html_files = []
+        for f in all_html_files:
+            if f.stem in self.protected_songs:
+                self.results['skipped'].append({
+                    'file': f.name,
+                    'reason': 'manually corrected (in protected.txt)'
+                })
+            else:
+                html_files.append(f)
+
+        self.results['total'] = len(all_html_files)
         self.results['start_time'] = time.time()
 
-        print(f"Found {len(html_files)} HTML files to process")
-        print(f"Using {self.max_workers} worker threads")
+        print(f"Found {len(all_html_files)} HTML files")
+        if self.protected_songs:
+            print(f"Skipping {len(self.results['skipped'])} protected files")
+        print(f"Processing {len(html_files)} files with {self.max_workers} worker threads")
         print(f"Output directory: {self.output_dir}")
         print("-" * 60)
 
@@ -173,18 +201,23 @@ class BatchProcessor:
         duration = self.results['end_time'] - self.results['start_time']
         success_count = len(self.results['success'])
         failed_count = len(self.results['failed'])
+        skipped_count = len(self.results['skipped'])
         total = self.results['total']
-        success_rate = (success_count / total * 100) if total > 0 else 0
+        processed = total - skipped_count
+        success_rate = (success_count / processed * 100) if processed > 0 else 0
 
         report = []
         report.append("=" * 60)
         report.append("BATCH PROCESSING REPORT")
         report.append("=" * 60)
         report.append(f"Total files:     {total}")
+        if skipped_count > 0:
+            report.append(f"Skipped:         {skipped_count} (protected)")
+        report.append(f"Processed:       {processed}")
         report.append(f"Successful:      {success_count} ({success_rate:.1f}%)")
         report.append(f"Failed:          {failed_count} ({100-success_rate:.1f}%)")
         report.append(f"Duration:        {duration:.1f} seconds")
-        report.append(f"Speed:           {total/duration:.1f} files/second")
+        report.append(f"Speed:           {processed/duration:.1f} files/second")
         report.append("")
 
         # Structure type breakdown

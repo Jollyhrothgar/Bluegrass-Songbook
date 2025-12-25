@@ -1,0 +1,5 @@
+# Songs that have been manually corrected and should not be overwritten by the parser
+# One song ID per line (without .pro extension)
+# Comments start with #
+
+longblackveillyricschords

@@ -22,6 +22,9 @@ const FONT_SIZES = {
     '2': 1.5
 };
 
+// GitHub repo for issue submissions
+const GITHUB_REPO = 'Jollyhrothgar/Bluegrass-Songbook';
+
 // Favorites stored in localStorage
 let favorites = new Set(JSON.parse(localStorage.getItem('songbook-favorites') || '[]'));
 
@@ -1079,27 +1082,19 @@ const bugBtn = document.getElementById('bug-btn');
 const bugModal = document.getElementById('bug-modal');
 const modalClose = document.getElementById('modal-close');
 const bugFeedback = document.getElementById('bug-feedback');
-const copyBugBtn = document.getElementById('copy-bug-btn');
-const copyStatus = document.getElementById('copy-status');
+const submitBugBtn = document.getElementById('submit-bug-btn');
+const bugStatus = document.getElementById('bug-status');
 
 function closeBugModal() {
     bugModal.classList.add('hidden');
 }
 
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-        if (!bugModal.classList.contains('hidden')) {
-            closeBugModal();
-        } else if (!songView.classList.contains('hidden')) {
-            goBack();
-        }
-    }
-});
+// Escape key handler is defined after contact modal setup
 
 bugBtn.addEventListener('click', () => {
     bugModal.classList.remove('hidden');
     bugFeedback.value = '';
-    copyStatus.textContent = '';
+    bugStatus.textContent = '';
     bugFeedback.focus();
 });
 
@@ -1111,62 +1106,112 @@ bugModal.addEventListener('click', (e) => {
     }
 });
 
-copyBugBtn.addEventListener('click', async () => {
+submitBugBtn.addEventListener('click', () => {
     const feedback = bugFeedback.value.trim();
     if (!feedback) {
-        copyStatus.textContent = 'Please describe the issue first';
-        copyStatus.style.color = 'var(--danger)';
+        bugStatus.textContent = 'Please describe the issue first';
+        bugStatus.style.color = 'var(--danger)';
         return;
     }
 
-    const report = formatBugReport(feedback);
+    const song = currentSong || {};
+    const songId = song.id || 'unknown';
+    const title = `Bug: ${song.title || 'Unknown Song'}`;
+    const body = formatBugReport(feedback);
 
-    try {
-        await navigator.clipboard.writeText(report);
-        copyStatus.textContent = 'Copied!';
-        copyStatus.style.color = 'var(--success)';
-    } catch (error) {
-        const textarea = document.createElement('textarea');
-        textarea.value = report;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
-        copyStatus.textContent = 'Copied!';
-        copyStatus.style.color = 'var(--success)';
-    }
+    const params = new URLSearchParams({
+        title: title,
+        body: body,
+        labels: 'bug'
+    });
+
+    const issueUrl = `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
+    window.open(issueUrl, '_blank');
+    closeBugModal();
 });
 
 function formatBugReport(feedback) {
     const song = currentSong || {};
     const songId = song.id || 'unknown';
     const lines = [
-        `## Bug Report: ${song.title || 'Unknown Song'}`,
-        '',
         `**Song ID:** ${songId}`,
         `**Artist:** ${song.artist || 'Unknown'}`,
         `**Parsed File:** sources/classic-country/parsed/${songId}.pro`,
         `**Raw HTML:** sources/classic-country/raw/${songId}.html`,
         '',
-        `### Issue`,
+        '## Issue',
         feedback,
         '',
-        `### Current ChordPro Output`,
+        '## Current ChordPro Output',
         '```chordpro',
         currentChordpro || '(content not available)',
         '```',
-        '',
-        `### Fix Workflow`,
-        '1. Read the raw HTML file to understand the source',
-        '2. Make parser changes if needed',
-        '3. Re-parse and verify: `python3 scripts/quick_fix.py --song ' + songId + '`',
-        '4. Check for regressions: `python3 scripts/quick_fix.py --song ' + songId + ' --check-sample`',
-        '5. If good, run full batch: `python3 scripts/quick_fix.py --batch`',
-        '6. If bad, rollback: `python3 scripts/quick_fix.py --rollback`',
     ];
 
     return lines.join('\n');
 }
+
+// Contact modal elements
+const contactBtn = document.getElementById('contact-btn');
+const contactModal = document.getElementById('contact-modal');
+const contactModalClose = document.getElementById('contact-modal-close');
+const contactFeedback = document.getElementById('contact-feedback');
+const submitContactBtn = document.getElementById('submit-contact-btn');
+const contactStatus = document.getElementById('contact-status');
+
+function closeContactModal() {
+    contactModal.classList.add('hidden');
+}
+
+contactBtn.addEventListener('click', () => {
+    contactModal.classList.remove('hidden');
+    contactFeedback.value = '';
+    contactStatus.textContent = '';
+    contactFeedback.focus();
+});
+
+contactModalClose.addEventListener('click', closeContactModal);
+
+contactModal.addEventListener('click', (e) => {
+    if (e.target === contactModal) {
+        closeContactModal();
+    }
+});
+
+submitContactBtn.addEventListener('click', () => {
+    const feedback = contactFeedback.value.trim();
+    if (!feedback) {
+        contactStatus.textContent = 'Please enter a message';
+        contactStatus.style.color = 'var(--danger)';
+        return;
+    }
+
+    const title = feedback.length > 50 ? feedback.substring(0, 50) + '...' : feedback;
+    const body = feedback;
+
+    const params = new URLSearchParams({
+        title: title,
+        body: body,
+        labels: 'feature-request'
+    });
+
+    const issueUrl = `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
+    window.open(issueUrl, '_blank');
+    closeContactModal();
+});
+
+// Global Escape key handler for all modals
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        if (!contactModal.classList.contains('hidden')) {
+            closeContactModal();
+        } else if (!bugModal.classList.contains('hidden')) {
+            closeBugModal();
+        } else if (!songView.classList.contains('hidden')) {
+            goBack();
+        }
+    }
+});
 
 // Initialize
 initTheme();
@@ -1192,9 +1237,6 @@ const editorSaveBtn = document.getElementById('editor-save');
 const editorSubmitBtn = document.getElementById('editor-submit');
 const editorStatus = document.getElementById('editor-status');
 const editorNashville = document.getElementById('editor-nashville');
-
-// GitHub repo for song submissions
-const GITHUB_REPO = 'Jollyhrothgar/Bluegrass-Songbook';
 
 let editorNashvilleMode = false;
 let editorDetectedKey = null;
