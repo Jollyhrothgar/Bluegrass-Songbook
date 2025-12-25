@@ -28,6 +28,163 @@ const FONT_SIZES = {
 // GitHub repo for issue submissions
 const GITHUB_REPO = 'Jollyhrothgar/Bluegrass-Songbook';
 
+// Browser history management
+let historyInitialized = false;
+
+function pushHistoryState(view, data = {}) {
+    if (!historyInitialized) return;
+
+    let hash = '';
+    const state = { view, ...data };
+
+    switch (view) {
+        case 'song':
+            hash = `#song/${data.songId}`;
+            break;
+        case 'add-song':
+            hash = '#add';
+            break;
+        case 'favorites':
+            hash = '#favorites';
+            break;
+        case 'search':
+        default:
+            hash = data.query ? `#search/${encodeURIComponent(data.query)}` : '';
+            break;
+    }
+
+    history.pushState(state, '', hash || window.location.pathname);
+}
+
+function handleHistoryNavigation(state) {
+    if (!state) {
+        // No state = initial page or cleared hash, go to search
+        showView('search');
+        return;
+    }
+
+    switch (state.view) {
+        case 'song':
+            if (state.songId) {
+                openSongFromHistory(state.songId);
+            }
+            break;
+        case 'add-song':
+            showView('add-song');
+            break;
+        case 'favorites':
+            showView('favorites');
+            break;
+        case 'search':
+        default:
+            showView('search');
+            if (state.query) {
+                searchInput.value = state.query;
+                search(state.query);
+            }
+            break;
+    }
+}
+
+// Show a view without pushing to history (used by popstate handler)
+function showView(mode) {
+    closeSidebar();
+
+    const searchContainer = document.querySelector('.search-container');
+    const editorPanel = document.getElementById('editor-panel');
+
+    // Clear active states
+    if (navSearch) navSearch.classList.remove('active');
+    if (navAddSong) navAddSong.classList.remove('active');
+    if (navFavorites) navFavorites.classList.remove('active');
+
+    switch (mode) {
+        case 'search':
+            if (navSearch) navSearch.classList.add('active');
+            showingFavorites = false;
+            searchContainer.classList.remove('hidden');
+            resultsDiv.classList.remove('hidden');
+            if (editorPanel) editorPanel.classList.add('hidden');
+            songView.classList.add('hidden');
+            exitEditMode();
+            break;
+
+        case 'add-song':
+            if (navAddSong) navAddSong.classList.add('active');
+            searchContainer.classList.add('hidden');
+            resultsDiv.classList.add('hidden');
+            songView.classList.add('hidden');
+            if (editorPanel) editorPanel.classList.remove('hidden');
+            exitEditMode();
+            break;
+
+        case 'favorites':
+            if (navFavorites) navFavorites.classList.add('active');
+            searchContainer.classList.remove('hidden');
+            resultsDiv.classList.remove('hidden');
+            if (editorPanel) editorPanel.classList.add('hidden');
+            songView.classList.add('hidden');
+            showFavorites();
+            break;
+    }
+}
+
+// Open song without pushing to history (used by popstate handler)
+async function openSongFromHistory(songId) {
+    const song = allSongs.find(s => s.id === songId);
+    if (!song) {
+        showView('search');
+        return;
+    }
+
+    songView.classList.remove('hidden');
+    resultsDiv.classList.add('hidden');
+    document.querySelector('.search-container').classList.add('hidden');
+
+    currentSong = song;
+    currentChordpro = song.content;
+    originalDetectedKey = song.key || null;
+    originalDetectedMode = song.mode || 'major';
+    currentDetectedKey = originalDetectedKey;
+
+    renderSong(song, song.content, true);
+    updateFavoriteButton();
+}
+
+// Handle deep links on page load
+function handleDeepLink() {
+    const hash = window.location.hash;
+    if (!hash) return false;
+
+    if (hash.startsWith('#song/')) {
+        const songId = hash.slice(6);
+        if (songId) {
+            openSongFromHistory(songId);
+            return true;
+        }
+    } else if (hash === '#add') {
+        showView('add-song');
+        return true;
+    } else if (hash === '#favorites') {
+        showView('favorites');
+        return true;
+    } else if (hash.startsWith('#search/')) {
+        const query = decodeURIComponent(hash.slice(8));
+        if (query) {
+            searchInput.value = query;
+            search(query);
+            return true;
+        }
+    }
+
+    return false;
+}
+
+// Listen for back/forward navigation
+window.addEventListener('popstate', (event) => {
+    handleHistoryNavigation(event.state);
+});
+
 // Favorites stored in localStorage
 let favorites = new Set(JSON.parse(localStorage.getItem('songbook-favorites') || '[]'));
 
@@ -143,9 +300,17 @@ async function loadIndex() {
 
         resultsDiv.innerHTML = '';
         searchStats.textContent = `${allSongs.length.toLocaleString()} songs loaded`;
-        searchInput.focus();
 
-        showRandomSongs();
+        // Enable browser history navigation
+        historyInitialized = true;
+
+        // Handle deep links or show default view
+        if (!handleDeepLink()) {
+            showRandomSongs();
+            searchInput.focus();
+            // Set initial history state
+            history.replaceState({ view: 'search' }, '', window.location.pathname);
+        }
     } catch (error) {
         resultsDiv.innerHTML = `<div class="loading">Error loading songbook: ${error.message}</div>`;
     }
@@ -340,6 +505,8 @@ function highlightMatch(text, query) {
 
 // Open a song
 async function openSong(songId) {
+    pushHistoryState('song', { songId });
+
     songView.classList.remove('hidden');
     resultsDiv.classList.add('hidden');
     document.querySelector('.search-container').classList.add('hidden');
@@ -1107,10 +1274,13 @@ function renderSong(song, chordpro, isInitialRender = false) {
 
 // Go back to results
 function goBack() {
-    songView.classList.add('hidden');
-    resultsDiv.classList.remove('hidden');
-    document.querySelector('.search-container').classList.remove('hidden');
-    searchInput.focus();
+    if (historyInitialized && history.state) {
+        history.back();
+    } else {
+        // Fallback for when there's no history
+        showView('search');
+        pushHistoryState('search');
+    }
 }
 
 // Utility functions
@@ -1174,6 +1344,7 @@ function closeSidebar() {
 
 function navigateTo(mode) {
     closeSidebar();
+    pushHistoryState(mode);
 
     // Update active nav item
     [navSearch, navAddSong, navFavorites].forEach(btn => {
