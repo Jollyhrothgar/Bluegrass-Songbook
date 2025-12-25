@@ -1,369 +1,185 @@
-# ChordPro Parser - Core Implementation
+# Classic Country Parser
 
-This directory contains the core HTML-to-ChordPro parsing logic that handles 17,381 HTML files with 98.5% success rate.
+Converts HTML song files from classic-country-song-lyrics.com to ChordPro format.
 
-## Files in This Directory
+**Stats**: 17,122 successful / 17,381 total (98.5% success rate)
+
+## Files
 
 ```
-src/chordpro_parser/
-├── CLAUDE.md       # This file - parser architecture documentation
-├── parser.py       # Main parser implementation (1000+ lines)
-└── __init__.py     # Package exports
+src/
+├── parser.py           # Main parser (all logic here)
+├── batch_process.py    # Batch processing with threading
+└── regression_test.py  # Before/after comparison testing
 ```
 
-## Architecture: Three-Stage Pipeline
+## Quick Commands
 
-### 1. Structure Detection (`StructureDetector`)
+```bash
+# Debug a single file
+./scripts/test reparse songname
 
-**Purpose**: Identify which of three HTML patterns the file uses
+# Run debug viewer (live parsing)
+./scripts/server debug_viewer
+# → http://localhost:8000
 
-**Method**: `detect_structure_type(soup) → str | None`
+# Run regression test
+./scripts/test regression --name my_fix
 
-**Returns**:
-- `'pre_plain'` (59.7%) - Plain `<pre>` tag with `<br>` line breaks
-- `'pre_tag'` (31.8%) - `<pre>` containing `<font>` with spans/text nodes
-- `'span_br'` (8.4%) - Courier New `<span>` elements with `<br>` separators
-- `None` - Unparseable (causes failure)
+# Batch re-parse all files
+./scripts/utility batch_parse
+```
 
-**Detection Logic** (lines 95-114):
+## Parser Architecture
+
+### Three-Stage Pipeline
+
+```
+HTML → StructureDetector → ContentExtractor → ChordProGenerator → .pro
+```
+
+### 1. StructureDetector
+
+Identifies HTML pattern type:
+
+| Type | % | Pattern |
+|------|---|---------|
+| `pre_plain` | 59.7% | Plain text in `<pre>` tags |
+| `pre_tag` | 31.8% | `<pre>` with `<font>` tags for chords |
+| `span_br` | 8.4% | Courier New `<span>` elements with `<br>` |
+
+**Key method**: `detect_structure_type(soup) → str | None`
+
+### 2. ContentExtractor
+
+Pattern-specific parsing. Three methods:
+- `parse_pre_plain_structure(soup)`
+- `parse_pre_tag_structure(soup)`
+- `parse_span_br_structure(soup)`
+
+**Verse boundary detection** (critical logic):
 ```python
-# Look for <pre> tag
-pre_tag = soup.find('pre')
-if pre_tag:
-    if pre_tag.find('font'):
-        return 'pre_tag'      # Has nested font element
-    return 'pre_plain'        # Plain pre
+# 2+ consecutive blank lines = always verse boundary
+if blank_count >= 2:
+    start_new_paragraph()
 
-# Look for multiple Courier New spans
-courier_spans = soup.find_all('span', style=re.compile(r'font-family:\s*Courier New'))
-if len(courier_spans) > 5:
-    return 'span_br'
+# Single blank + chord line = verse boundary
+elif ChordDetector.is_chord_line(next_line):
+    start_new_paragraph()
 
-return None  # No recognized pattern
+# Single blank + lyrics = internal spacing (NOT boundary)
 ```
 
-### 2. Content Extraction (`ContentExtractor`)
+**Chord detection**: `ChordDetector.is_chord_line(line) → bool`
+- Checks if line is primarily chord symbols
+- Pattern: `[A-G][#b]?(?:maj|min|m|sus|dim|aug)?\d*(?:/[A-G][#b]?)?`
 
-**Purpose**: Parse HTML into structured `Song` object
+**Repeat handling**: Parses `"Repeat #3"` or `"Repeat #4,5"` → creates `REPEAT_VERSE_N` markers
 
-**Method**: `parse(soup, structure_type, filename) → Song`
+### 3. ChordProGenerator
 
-**Three Pattern-Specific Parsers**:
-- `parse_span_br_structure(soup)` → `List[Paragraph]` (lines 290-482)
-- `parse_pre_tag_structure(soup)` → `List[Paragraph]` (lines 483-650)
-- `parse_pre_plain_structure(soup)` → `List[Paragraph]` (lines 651-1080)
+Converts `Song` object to ChordPro string.
 
-#### Common Parsing Flow
+**Key method**: `song_to_chordpro(song) → str`
 
-Each parser follows this pattern:
-1. **Metadata extraction** (title, artist, composer)
-2. **Line-by-line parsing** (detect chords, lyrics, repeat directives)
-3. **Verse boundary detection** (segment into paragraphs)
-4. **Chord alignment** (map chord positions to lyric offsets)
+**Two-pass algorithm for repeats**:
+1. First pass: identify actual verses (skip repeat markers)
+2. Second pass: output verses, expanding `REPEAT_VERSE_N` markers
 
-#### Critical: Verse Boundary Detection
-
-**pre_plain parser** (lines 690-710) - Most sophisticated rules:
-
-```python
-# Count consecutive blank lines
-if not line.strip():
-    blank_count = 1
-    while next line is also blank:
-        blank_count += 1
-
-    # Verse boundary rules (priority order):
-    # 1. Two or more consecutive blank lines = ALWAYS verse boundary
-    if blank_count >= 2:
-        start_new_paragraph()
-
-    # 2. Single blank + chord line = verse boundary
-    elif ChordDetector.is_chord_line(next_line):
-        start_new_paragraph()
-
-    # 3. Single blank + lyrics = internal spacing (NOT boundary)
-    else:
-        continue  # Don't start new paragraph
-```
-
-**Why this matters**: The 2+ blank line rule fixed the "Blue Suede Shoes" bug where all verses were merged into one. Some songs don't have chord lines starting verses, only lyrics.
-
-**span_br parser** (lines 290-482):
-- **Song content detection**: Finds the actual song start by locating "recorded by" span followed by chord lines, skipping early boilerplate
-- **Direct span iteration**: Iterates through Courier New spans in document order (lines 323-396)
-- **Improved boilerplate filtering**: More lenient filtering that allows short "recorded by" metadata lines while filtering long boilerplate
-- **Paragraph breaks**: Detected by two consecutive `<br>` tags (lines 422-435)
-- **Br tag detection**: Robust detection between spans, handling both sibling and non-sibling cases (lines 377-395)
-
-**pre_tag parser** (similar to span_br but handles both `<span>` and text nodes)
-
-#### Repeat Directive Handling
-
-**Pattern**: `"Repeat #4,5"` or `"Repeat #3"` (case-insensitive)
-
-**Regex**: `r'repeat\s+#?([\d,\s]+)'`
-
-**Implementation** (same in all three parsers, e.g., lines 357-368 for span_br):
-```python
-repeat_match = re.search(r'repeat\s+#?([\d,\s]+)', text, re.I)
-if repeat_match:
-    # Parse comma-separated verse numbers
-    verse_nums_str = repeat_match.group(1).replace(' ', '')
-    verse_nums = [int(n) for n in verse_nums_str.split(',') if n.strip()]
-
-    # Add repeat marker for each verse number
-    for verse_num in verse_nums:
-        items.append({'type': 'repeat', 'verse_num': verse_num})
-```
-
-**Output**: Creates special paragraphs with `lyrics="REPEAT_VERSE_4"` markers
-
-**Multi-verse support**: "Repeat #4,5" creates TWO markers: `REPEAT_VERSE_4` and `REPEAT_VERSE_5`
-
-#### Chord Detection (`ChordDetector`)
-
-**Purpose**: Identify if a line contains chords vs lyrics
-
-**Method**: `is_chord_line(line) → bool` (lines 25-58)
-
-**Logic**:
-1. Ignore short lines or lines with lots of words
-2. Extract potential chord tokens (uppercase sequences)
-3. Check if tokens match chord patterns: `C`, `Am7`, `G/B`, `F#m`, etc.
-4. Require high ratio of chord tokens to total tokens
-
-**Chord Patterns Recognized**:
-- Basic: `C`, `D`, `E`, `F`, `G`, `A`, `B`
-- Sharps/flats: `C#`, `Db`
-- Qualities: `Cm`, `Cmaj7`, `C7`, `Cdim`, `Caug`
-- Slash chords: `C/G`, `Am/E`
-
-#### Chord Alignment (`ChordAligner`)
-
-**Purpose**: Map chord horizontal positions to lyric character offsets
-
-**Method**: `align_chords_to_lyrics(chord_line, lyric_line) → List[ChordPosition]` (lines 60-84)
-
-**How it works**:
-```python
-# Extract chords with their positions
-chords_with_pos = []
-for match in re.finditer(r'([A-G][#b]?(?:maj|min|m|dim|aug|sus)?\d*(?:/[A-G][#b]?)?)', chord_line):
-    chord = match.group(0)
-    position = match.start()  # Character offset in chord_line
-    chords_with_pos.append(ChordPosition(chord=chord, position=position))
-```
-
-**Critical**: Position is character offset in the *chord line*, which corresponds to the *lyric line* position in fixed-width rendering.
-
-### 3. ChordPro Generation (`ChordProGenerator`)
-
-**Purpose**: Convert `Song` object to ChordPro format string
-
-**Method**: `song_to_chordpro(song) → str` (lines 794-889)
-
-#### Metadata Output (lines 800-810)
-```python
-output.append(f"{{title: {song.title}}}")
-output.append(f"{{artist: {song.artist}}}")  # From "Recorded by"
-if song.composer:
-    output.append(f"{{composer: {song.composer}}}")  # From "Written by"
-```
-
-#### Repeat Directive Handling (lines 813-889)
-
-**Two-pass algorithm**:
-
-**Pass 1**: Identify actual verses (skip repeat markers)
-```python
-actual_verses = []
-for para_idx in song.song_content.playback_sequence:
-    paragraph = song.song_content.paragraphs[para_idx]
-
-    if not paragraph.lines[0].lyrics.startswith("REPEAT_VERSE_"):
-        actual_verses.append((para_idx, paragraph))
-```
-
-**Pass 2**: Output verses, expanding repeat markers
-```python
-for para_idx in playback_sequence:
-    paragraph = paragraphs[para_idx]
-
-    if paragraph.lines[0].lyrics.startswith("REPEAT_VERSE_"):
-        # Extract verse number (1-indexed)
-        verse_num = int(lyrics.replace("REPEAT_VERSE_", ""))
-
-        # Find verse to repeat from actual_verses list
-        if 0 < verse_num <= len(actual_verses):
-            repeat_paragraph = actual_verses[verse_num - 1][1]
-            output_paragraph(repeat_paragraph)  # Duplicate the verse
-    else:
-        output_paragraph(paragraph)  # Normal verse
-```
-
-**Why two-pass?**: Repeat markers reference verses by their *logical* position (1, 2, 3...), not their *array* position (which includes repeat markers).
-
-#### Chord Insertion (lines 854-868)
-
-```python
-for line in paragraph.lines:
-    if line.chords:
-        # Build lyric line with inline chords
-        result = ""
-        last_pos = 0
-
-        for chord_pos in sorted(line.chords, key=lambda c: c.position):
-            # Add lyrics up to chord position
-            result += line.lyrics[last_pos:chord_pos.position]
-            # Insert chord
-            result += f"[{chord_pos.chord}]"
-            last_pos = chord_pos.position
-
-        # Add remaining lyrics
-        result += line.lyrics[last_pos:]
-        output.append(result)
-```
-
-**Output**: `"[G]Hello [C]world"` (chord immediately before the syllable)
+**Chord insertion**: `_insert_chords_inline(lyrics, chords)`
+- Inserts `[chord]` at exact character positions
+- Sorts by position descending (insert right-to-left)
 
 ## Data Structures
 
-### Song (lines 758-774)
 ```python
 @dataclass
 class Song:
     title: str
     artist: str
     composer: str
-    source_file: str
+    source_html_file: str
     song_content: SongContent
-```
 
-### SongContent (lines 776-780)
-```python
 @dataclass
 class SongContent:
     paragraphs: List[Paragraph]
-    playback_sequence: List[int]  # Indices into paragraphs array
-```
+    playback_sequence: List[int]
 
-### Paragraph (lines 782-785)
-```python
 @dataclass
 class Paragraph:
     lines: List[SongLine]
-```
+    section_type: Optional[str]  # 'verse', 'chorus', 'bridge'
 
-### SongLine (lines 787-791)
-```python
 @dataclass
 class SongLine:
     lyrics: str
-    chords: List[ChordPosition]  # Chord objects with positions
-```
+    chords: List[ChordPosition]
+    chords_line: Optional[str]  # For chord-only lines
 
-### ChordPosition (lines 19-23)
-```python
 @dataclass
 class ChordPosition:
-    chord: str       # e.g., "G7"
-    position: int    # Character offset in lyric line
+    chord: str      # e.g., "G7"
+    position: int   # Character offset in lyric line
 ```
 
-## Key Implementation Details
+## Output Format
 
-### NavigableString vs Tag (pre_tag parser, line 468)
+```chordpro
+{meta: title Your Cheatin Heart}
+{meta: artist Hank Williams}
+{meta: writer Hank Williams}        # BUG: should be "composer" (issue #4)
 
-**Problem**: BeautifulSoup's `NavigableString` (text nodes) have a `name` attribute set to `None`
-
-**Bug**: Original code used `if hasattr(child, 'name'):` which caught BOTH tags AND text nodes
-
-**Fix**:
-```python
-if hasattr(child, 'name') and child.name:  # Must be non-None
-    # Handle Tag elements (<br>, <span>)
-else:
-    # Handle NavigableString (text nodes)
+{start_of_verse: Verse 1}
+[G7]Your cheating [C]heart [C7]will make you [F]weep
+{end_of_verse}
 ```
 
-**Impact**: Fixed files like "allieverwantedtodolyricschords.html" that had text content directly in `<font>` (not in `<span>`)
+## Known Issues
 
-### End Anchor Detection (lines 651-654, 537-540, etc.)
+| Issue | Status | Notes |
+|-------|--------|-------|
+| `{meta: writer}` should be `{meta: composer}` | GitHub #4 | Wrong field name |
+| 259 files fail to parse | Won't fix | HTML doesn't match any pattern |
+| "Tag:" directive | Low priority | Treated as lyrics |
+| End anchor edge cases | Mostly fixed | Sometimes captures footer |
 
-**Purpose**: Stop parsing at footer boilerplate
+## Development Workflow
 
-**Pattern**: `"If you want to change the "Key" on any song"`
+1. **Make changes** to `parser.py`
+2. **Test immediately** with debug viewer (no rebuild needed):
+   ```bash
+   ./scripts/server debug_viewer
+   # Refresh browser to see changes
+   ```
+3. **Run regression test** before committing:
+   ```bash
+   ./scripts/test regression --name my_fix
+   ```
+4. **If clean**, batch re-parse:
+   ```bash
+   ./scripts/utility batch_parse
+   ```
 
-**Implementation**:
-```python
-if 'key' in line.lower() and 'on any song' in line.lower():
-    break  # Stop processing
-```
+## Common Pitfalls
 
-**Note**: Some edge cases still capture this text (known limitation)
+1. **Don't break chord alignment** - Position mapping is critical
+2. **Test all three parsers** - Changes often need to apply to all patterns
+3. **Watch NavigableString vs Tag** - BeautifulSoup text nodes have `name=None`
+4. **Repeat directives are 1-indexed** - "Repeat #1" means first verse
 
-### Metadata Extraction (lines 596-613, 405-415, etc.)
+## Debugging Tips
 
-**Skip metadata lines during paragraph parsing**:
-```python
-if ('recorded by' in line.lower() or
-    'written by' in line.lower() or
-    len(line) > 150):  # Likely boilerplate
-    continue
-```
+**Parser not detecting structure?**
+- Check if HTML has `<pre>` tags or Courier New spans
+- Look for chord patterns in the HTML
 
-**Extract at parse time** (lines 587-594):
-```python
-# Extract title from <pre> content first line
-first_line = clean_lines[0] if clean_lines else ""
-title = first_line.strip()
+**Verses merged incorrectly?**
+- Check blank line count between verses
+- Verify verse boundary detection rules
 
-# Look for "Recorded by" and "Written by"
-for line in clean_lines[:20]:  # Check first 20 lines
-    if 'recorded by' in line.lower():
-        artist = extract_after_keyword(line, 'recorded by')
-    if 'written by' in line.lower():
-        composer = extract_after_keyword(line, 'written by')
-```
+**Chords misaligned?**
+- Check character positions in `ChordPosition` objects
+- Verify fixed-width assumption holds
 
-## Performance Characteristics
-
-**Structure Distribution**:
-- pre_plain: 10,227 files (59.7%)
-- pre_tag: 5,450 files (31.8%)
-- span_br: 1,445 files (8.4%)
-
-**Processing Speed**: 45.4 files/second (16 threads, ThreadPoolExecutor in batch_process.py)
-
-**Success Rate**: 98.5% (17,122/17,381 files)
-
-**Failure Mode**: All 259 failures are "Could not determine structure type"
-
-## Testing & Validation
-
-**Validation approach**: See `viewer/CLAUDE.md` for details on the web-based validation UI
-
-**Quality evolution**:
-- First sample: 50% correct (5/10)
-- Second sample: 70% correct (7/10)
-- Third sample: 100% correct (10/10)
-
-**Key fixes that improved quality**:
-1. 2+ blank line verse boundary rule
-2. NavigableString detection fix
-3. Multi-verse repeat syntax support
-
-## Common Pitfalls When Modifying
-
-1. **Don't break chord alignment** - Position mapping is critical for musical accuracy
-2. **Test all three parsers** - Changes to one pattern often need to apply to all three
-3. **Validate with spot-checks** - Use `create_new_spot_check.py` and viewer
-4. **Watch for edge cases** - "Tag:", end anchor, multi-verse repeats
-5. **Remember 1-indexing** - Repeat directives use 1-indexed verse numbers, not 0-indexed array positions
-
-## Future Improvements
-
-1. **Handle "Tag:" directive** - Detect and treat as special marker (not lyrics)
-2. **Better end anchor detection** - More sophisticated pattern to avoid false positives
-3. **Bridge/Instrumental directives** - Detect and use `{start_of_bridge}`, etc.
-4. **Failed file patterns** - Analyze 259 failures for additional HTML structures
+**Use debug viewer** at http://localhost:8000 for side-by-side HTML vs ChordPro comparison.

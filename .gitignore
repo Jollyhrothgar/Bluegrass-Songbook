@@ -31,9 +31,9 @@ examples/
 
 # IDE
 GEMINI.md
+AGENTS.md
 .vscode/
 .idea/
-.claude/
 
 # OS
 .DS_Store
