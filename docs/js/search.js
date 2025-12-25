@@ -153,47 +153,32 @@ function parseSearchQuery(query) {
     return result;
 }
 
-// Get Nashville chord sequence for a song
-function getSongNashvilleChords(song) {
-    if (!song.content) return { chords: [], sequence: [] };
-
-    const rawChords = extractChords(song.content);
-    const { key } = detectKey(rawChords);
-
-    if (!key) return { chords: [], sequence: [] };
-
-    const nashvilleSequence = rawChords.map(c => toNashville(c, key));
-    const uniqueChords = [...new Set(nashvilleSequence)];
-
-    return { chords: uniqueChords, sequence: nashvilleSequence, key };
-}
-
-// Check if song contains all required chords
+// Check if song contains all required Nashville chords (uses precomputed data)
+// Case-sensitive: ii (minor) != II (major)
 function songHasChords(song, requiredChords) {
     if (!requiredChords.length) return true;
 
-    const { chords } = getSongNashvilleChords(song);
-    return requiredChords.every(req =>
-        chords.some(c => c.toLowerCase() === req.toLowerCase())
-    );
+    // Use precomputed nashville array from index
+    const chords = song.nashville || [];
+    if (!chords.length) return false;
+
+    return requiredChords.every(req => chords.includes(req));
 }
 
-// Check if song contains progression
+// Check if song contains progression (uses precomputed data)
+// Case-sensitive: ii-V-I != II-v-i
 function songHasProgression(song, progression) {
     if (!progression || !progression.length) return true;
 
-    const { sequence } = getSongNashvilleChords(song);
+    // Use precomputed progression array from index
+    const sequence = song.progression || [];
     if (!sequence.length) return false;
 
-    // Normalize for comparison
-    const normalizedSeq = sequence.map(c => c.toLowerCase());
-    const normalizedProg = progression.map(c => c.toLowerCase());
-
-    // Look for progression anywhere in sequence
-    for (let i = 0; i <= normalizedSeq.length - normalizedProg.length; i++) {
+    // Look for exact progression anywhere in sequence
+    for (let i = 0; i <= sequence.length - progression.length; i++) {
         let match = true;
-        for (let j = 0; j < normalizedProg.length; j++) {
-            if (normalizedSeq[i + j] !== normalizedProg[j]) {
+        for (let j = 0; j < progression.length; j++) {
+            if (sequence[i + j] !== progression[j]) {
                 match = false;
                 break;
             }
@@ -215,7 +200,6 @@ function search(query) {
     }
 
     const { textTerms, chordFilters, progressionFilter } = parseSearchQuery(query);
-    const hasChordSearch = chordFilters.length > 0 || (progressionFilter && progressionFilter.length > 0);
 
     const results = allSongs.filter(song => {
         // Text search
@@ -269,9 +253,12 @@ function search(query) {
     });
 
     // Update stats with search info
-    let statsText = `${results.length.toLocaleString()} results`;
-    if (hasChordSearch && results.length > 0) {
-        statsText += ' (chord search may be slow)';
+    let statsText = `${results.length.toLocaleString()} songs`;
+    if (chordFilters.length > 0) {
+        statsText += ` with ${chordFilters.join(', ')}`;
+    }
+    if (progressionFilter && progressionFilter.length > 0) {
+        statsText += ` with ${progressionFilter.join('-')} progression`;
     }
     searchStats.textContent = statsText;
 
@@ -742,9 +729,17 @@ function renderRepeatIndicator(label, count, shouldIndent) {
 function renderSong(song, chordpro, isInitialRender = false) {
     const { metadata, sections } = parseChordPro(chordpro);
 
-    // Detect key FIRST so Nashville mode works during rendering
-    const chords = extractChords(chordpro);
-    const { key: detectedKey, mode: detectedMode } = detectKey(chords);
+    // Use precomputed key from index if available, otherwise detect
+    let detectedKey, detectedMode;
+    if (song && song.key) {
+        detectedKey = song.key;
+        detectedMode = song.mode;
+    } else {
+        const chords = extractChords(chordpro);
+        const detected = detectKey(chords);
+        detectedKey = detected.key;
+        detectedMode = detected.mode;
+    }
 
     // On initial render, set both original and current to detected
     // On re-render (e.g., after toggling Nashville), preserve user's key choice
