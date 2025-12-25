@@ -23,6 +23,10 @@
             </div>
             <h1>Bluegrass Songbook</h1>
             <p class="subtitle">17,000+ songs with chords</p>
+            <div class="tab-bar">
+                <button id="tab-search" class="tab-btn active">Search</button>
+                <button id="tab-editor" class="tab-btn">Add Song</button>
+            </div>
         </header>
 
         <div class="search-container">
@@ -40,6 +44,72 @@
         </div>
 
         <div id="results" class="results"></div>
+
+        <!-- Editor Panel -->
+        <div id="editor-panel" class="editor-panel hidden">
+            <div class="editor-main">
+                <div class="editor-input">
+                    <div class="metadata-fields">
+                        <div class="field-row">
+                            <label for="editor-title">Title:</label>
+                            <input type="text" id="editor-title" placeholder="Song title">
+                        </div>
+                        <div class="field-row">
+                            <label for="editor-artist">Artist:</label>
+                            <input type="text" id="editor-artist" placeholder="Artist name">
+                        </div>
+                        <div class="field-row">
+                            <label for="editor-writer">Writer:</label>
+                            <input type="text" id="editor-writer" placeholder="Songwriter(s)">
+                        </div>
+                    </div>
+
+                    <div class="song-input-container">
+                        <label for="editor-content">Song Content (paste chord sheets here):</label>
+                        <textarea id="editor-content" placeholder="Paste a song with chords above lyrics, or type in ChordPro format:
+
+G                    C              G
+Amazing grace how sweet the sound
+
+Or use inline chords:
+[G]Amazing [C]grace how [G]sweet the sound
+
+Blank lines separate verses."></textarea>
+                    </div>
+
+                    <div class="format-help">
+                        <details>
+                            <summary>Format Help</summary>
+                            <ul>
+                                <li><strong>Paste chord sheets</strong> - Chords above lyrics are auto-converted</li>
+                                <li><code>[G]</code> - Inline chord before syllable</li>
+                                <li><code>[Verse 1]</code> or <code>[Chorus]</code> - Section markers (in pasted text)</li>
+                                <li>Blank line = new verse/section</li>
+                            </ul>
+                        </details>
+                    </div>
+
+                    <div class="editor-actions">
+                        <button id="editor-copy" class="action-btn">Copy ChordPro</button>
+                        <button id="editor-save" class="action-btn primary">Download .pro</button>
+                        <span id="editor-status" class="save-status"></span>
+                    </div>
+                </div>
+
+                <div class="editor-preview">
+                    <div class="preview-header">
+                        <h3>Preview</h3>
+                        <label class="preview-option">
+                            <input type="checkbox" id="editor-nashville">
+                            Nashville
+                        </label>
+                    </div>
+                    <div id="editor-preview-content" class="preview-content">
+                        <p class="preview-placeholder">Enter a song to see preview...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div id="song-view" class="song-view hidden">
             <div class="song-view-header">

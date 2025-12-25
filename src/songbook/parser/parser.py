@@ -239,6 +239,13 @@ class ChordDetector:
         if not words:
             return False
 
+        # Special case: if line has many hyphens and few spaces, it's likely a
+        # hyphenated title (e.g., "C-H-R-I-S-T-M-A-S") not a chord line.
+        # The chord regex uses \b which matches hyphens as word boundaries,
+        # causing single letters like C and A to match as chords.
+        if line.count('-') > 3 and len(words) <= 2:
+            return False
+
         # If most words are chords, it's a chord line
         chord_ratio = len(chords) / len(words)
         return chord_ratio > 0.5

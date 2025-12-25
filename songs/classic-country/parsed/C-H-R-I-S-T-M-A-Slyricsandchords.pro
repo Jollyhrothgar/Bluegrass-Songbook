@@ -3,10 +3,6 @@
 {meta: writer Scott Turner and Slim Whitman}
 
 {start_of_verse: Verse 1}
-[C]Recorded by Sl[A]im Whitman
-{end_of_verse}
-
-{start_of_verse: Verse 2}
 [C]C is for the Christ Child who [Am]died for us
 [Dm]H is for the heavens [G7]above
 [C]R is for the [G7]righteousness He [A7]teaches us
@@ -19,7 +15,7 @@
 At [C]Christmas (at Christmas) and for[G7]ever [C]more
 {end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Verse 2}
 S is for the [E7]Savior we [Am]all a[Fm]dore
 At [C]Christmas (at Christmas) and for[G7]ever [G]more[C]
 {end_of_verse}

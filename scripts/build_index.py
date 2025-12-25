@@ -324,11 +324,18 @@ def get_first_line(lyrics: str) -> str:
     return ''
 
 
-def build_index(parsed_dir: Path, output_file: Path):
-    """Build search index from all .pro files."""
+def build_index(parsed_dirs: list[Path], output_file: Path):
+    """Build search index from all .pro files in multiple directories."""
     songs = []
 
-    pro_files = sorted(parsed_dir.glob('*.pro'))
+    # Collect files from all directories
+    pro_files = []
+    for parsed_dir in parsed_dirs:
+        if parsed_dir.exists():
+            dir_files = sorted(parsed_dir.glob('*.pro'))
+            pro_files.extend(dir_files)
+            print(f"Found {len(dir_files)} files in {parsed_dir}")
+
     print(f"Processing {len(pro_files)} files...")
 
     for i, pro_file in enumerate(pro_files):
@@ -378,10 +385,14 @@ def build_index(parsed_dir: Path, output_file: Path):
 
 
 def main():
-    parsed_dir = Path('songs/classic-country/parsed')
+    # All song sources
+    parsed_dirs = [
+        Path('songs/classic-country/parsed'),
+        Path('songs/manual/parsed'),
+    ]
     output_file = Path('docs/data/index.json')
 
-    build_index(parsed_dir, output_file)
+    build_index(parsed_dirs, output_file)
 
 
 if __name__ == '__main__':

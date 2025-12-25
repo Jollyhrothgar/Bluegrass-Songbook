@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Editor - Bluegrass Songbook</title>
+    <link rel="icon" type="image/png" href="images/banjo.png">
+    <link rel="apple-touch-icon" href="images/banjo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+    <div class="editor-container">
+        <header class="editor-header">
+            <div class="header-left">
+                <a href="index.html" class="back-link">&larr; Back to Songbook</a>
+            </div>
+            <h1>Song Editor</h1>
+            <div class="header-right">
+                <button id="theme-toggle" class="icon-btn" title="Toggle theme">
+                    <span class="icon-sun">&#9728;</span>
+                    <span class="icon-moon">&#9790;</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="editor-main">
+            <!-- Input Panel -->
+            <div class="editor-input">
+                <div class="metadata-fields">
+                    <div class="field-row">
+                        <label for="song-title">Title:</label>
+                        <input type="text" id="song-title" placeholder="Song title">
+                    </div>
+                    <div class="field-row">
+                        <label for="song-artist">Artist:</label>
+                        <input type="text" id="song-artist" placeholder="Artist name">
+                    </div>
+                    <div class="field-row">
+                        <label for="song-writer">Writer:</label>
+                        <input type="text" id="song-writer" placeholder="Songwriter(s)">
+                    </div>
+                </div>
+
+                <div class="song-input-container">
+                    <label for="song-content">Song Content:</label>
+                    <textarea id="song-content" placeholder="Enter song with chords in brackets, e.g.:
+
+[G]Amazing [G7]grace how [C]sweet the [G]sound
+That [G]saved a [Em]wretch like [D]me
+
+Leave a blank line between verses."></textarea>
+                </div>
+
+                <div class="format-help">
+                    <details>
+                        <summary>Format Help</summary>
+                        <ul>
+                            <li><code>[G]</code> - Place chord before the syllable</li>
+                            <li><code>[Am7]</code> - Any chord notation works</li>
+                            <li><code>[G/B]</code> - Slash chords supported</li>
+                            <li>Blank line = new verse/section</li>
+                            <li><code>{sov}</code> / <code>{eov}</code> - Explicit verse markers</li>
+                            <li><code>{soc}</code> / <code>{eoc}</code> - Chorus markers</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="editor-actions">
+                    <button id="copy-btn" class="action-btn">Copy ChordPro</button>
+                    <button id="save-btn" class="action-btn primary">Save Song</button>
+                    <span id="save-status" class="save-status"></span>
+                </div>
+            </div>
+
+            <!-- Preview Panel -->
+            <div class="editor-preview">
+                <div class="preview-header">
+                    <h2>Preview</h2>
+                    <div class="preview-options">
+                        <label>
+                            <input type="checkbox" id="preview-nashville">
+                            Nashville
+                        </label>
+                    </div>
+                </div>
+                <div id="preview-content" class="preview-content">
+                    <p class="preview-placeholder">Enter a song to see preview...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/editor.js"></script>
+</body>
+</html>

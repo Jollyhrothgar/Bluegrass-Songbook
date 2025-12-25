@@ -1,0 +1,296 @@
+/* Editor-specific styles */
+
+.editor-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.editor-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1rem;
+}
+
+.editor-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.header-left, .header-right {
+    min-width: 120px;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.back-link {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.editor-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    flex: 1;
+    min-height: 0;
+}
+
+/* Input Panel */
+.editor-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.metadata-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.field-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.field-row label {
+    min-width: 60px;
+    font-weight: 500;
+}
+
+.field-row input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.field-row input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.song-input-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 300px;
+}
+
+.song-input-container label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+#song-content {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    resize: none;
+}
+
+#song-content:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+#song-content::placeholder {
+    color: var(--text-secondary);
+}
+
+.format-help {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.format-help summary {
+    cursor: pointer;
+    color: var(--accent);
+}
+
+.format-help ul {
+    margin: 0.5rem 0 0 1rem;
+    padding: 0;
+}
+
+.format-help li {
+    margin: 0.25rem 0;
+}
+
+.format-help code {
+    background: var(--bg-secondary);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.editor-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.action-btn {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg-secondary);
+    color: var(--text);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    border-color: var(--accent);
+}
+
+.action-btn.primary {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.action-btn.primary:hover {
+    opacity: 0.9;
+}
+
+.save-status {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.save-status.success {
+    color: #22c55e;
+}
+
+.save-status.error {
+    color: #ef4444;
+}
+
+/* Preview Panel */
+.editor-preview {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+}
+
+.preview-header h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.preview-options {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.preview-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.preview-content {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    font-family: 'Courier New', monospace;
+}
+
+.preview-placeholder {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Preview song rendering (reuse from main styles) */
+.preview-content .song-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.preview-content .song-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0 0 0.25rem 0;
+}
+
+.preview-content .song-meta {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.preview-content .song-section {
+    margin-bottom: 1rem;
+}
+
+.preview-content .section-label {
+    font-weight: bold;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.preview-content .song-line {
+    margin-bottom: 0.25rem;
+}
+
+.preview-content .chord-line {
+    color: var(--chord);
+    font-weight: bold;
+    white-space: pre;
+    min-height: 1.2em;
+}
+
+.preview-content .lyrics-line {
+    white-space: pre-wrap;
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+    .editor-main {
+        grid-template-columns: 1fr;
+    }
+
+    .editor-preview {
+        min-height: 300px;
+    }
+}
