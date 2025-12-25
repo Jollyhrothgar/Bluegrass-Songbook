@@ -8,6 +8,7 @@ let compactMode = false;
 let showingFavorites = false;
 let nashvilleMode = false;
 let twoColumnMode = false;
+let showChords = true;
 let fontSizeLevel = 0;              // -2 to +2, 0 is default
 let currentDetectedKey = null;      // User's chosen key (or detected if not changed)
 let originalDetectedKey = null;     // The auto-detected key for current song
@@ -809,7 +810,7 @@ function parseLineWithChords(line) {
 function renderLine(line) {
     const { chords, lyrics } = parseLineWithChords(line);
 
-    if (chords.length === 0) {
+    if (chords.length === 0 || !showChords) {
         return `<div class="song-line"><div class="lyrics-line">${escapeHtml(lyrics)}</div></div>`;
     }
 
@@ -971,6 +972,10 @@ function renderSong(song, chordpro, isInitialRender = false) {
                 <button id="font-increase" class="font-btn" ${fontSizeLevel >= 2 ? 'disabled' : ''}>+</button>
             </div>
             <label class="compact-toggle">
+                <input type="checkbox" id="chords-checkbox" ${showChords ? 'checked' : ''}>
+                <span>Chords</span>
+            </label>
+            <label class="compact-toggle">
                 <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
                 <span>Compact</span>
             </label>
@@ -990,6 +995,14 @@ function renderSong(song, chordpro, isInitialRender = false) {
     if (keySelect) {
         keySelect.addEventListener('change', (e) => {
             currentDetectedKey = e.target.value;
+            renderSong(song, chordpro);
+        });
+    }
+
+    const chordsCheckbox = document.getElementById('chords-checkbox');
+    if (chordsCheckbox) {
+        chordsCheckbox.addEventListener('change', (e) => {
+            showChords = e.target.checked;
             renderSong(song, chordpro);
         });
     }
