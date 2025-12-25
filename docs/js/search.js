@@ -7,9 +7,20 @@ let currentChordpro = null;
 let compactMode = false;
 let showingFavorites = false;
 let nashvilleMode = false;
+let twoColumnMode = false;
+let fontSizeLevel = 0;              // -2 to +2, 0 is default
 let currentDetectedKey = null;      // User's chosen key (or detected if not changed)
 let originalDetectedKey = null;     // The auto-detected key for current song
 let originalDetectedMode = null;    // The auto-detected mode for current song
+
+// Font size multipliers for each level
+const FONT_SIZES = {
+    '-2': 0.7,
+    '-1': 0.85,
+    '0': 1,
+    '1': 1.2,
+    '2': 1.5
+};
 
 // Favorites stored in localStorage
 let favorites = new Set(JSON.parse(localStorage.getItem('songbook-favorites') || '[]'));
@@ -592,6 +603,21 @@ function toNashville(chord, keyName) {
 
     if (!chordRoot) return chord;
 
+    // Extract extension (7, maj7, sus4, etc.) to preserve it
+    const rootMatch = chord.match(/^[A-G][#b]?/);
+    const afterRoot = rootMatch ? chord.slice(rootMatch[0].length) : '';
+    // Get extension after quality indicator (m, dim, etc.)
+    let extension = '';
+    if (afterRoot.startsWith('m') && !afterRoot.startsWith('maj')) {
+        extension = afterRoot.slice(1); // After 'm'
+    } else if (afterRoot.includes('dim')) {
+        extension = afterRoot.replace(/dim/, '');
+    } else {
+        extension = afterRoot; // No quality prefix, rest is extension
+    }
+    // Clean up extension - remove leading quality markers that might remain
+    extension = extension.replace(/^(aj|in)/, '');
+
     // Get the key's tonic root
     const tonicRoot = getChordRoot(keyInfo.tonic);
     if (!tonicRoot) return chord;
@@ -629,7 +655,7 @@ function toNashville(chord, keyName) {
         let num = symbols[interval];
         if (chordQuality === 'minor') num = num.toLowerCase();
         if (chordQuality === 'dim') num = num.toLowerCase() + '°';
-        return num;
+        return num + extension;
     }
 
     // Get the Nashville number based on key mode
@@ -650,7 +676,7 @@ function toNashville(chord, keyName) {
         num = num.toUpperCase();
     }
 
-    return num;
+    return num + extension;
 }
 
 // Transpose a chord by a number of semitones
@@ -834,12 +860,26 @@ function renderSong(song, chordpro, isInitialRender = false) {
         detectedMode = detected.mode;
     }
 
+    // Determine mode - default to major if not set
+    if (!detectedMode) {
+        detectedMode = detectedKey && detectedKey.endsWith('m') ? 'minor' : 'major';
+    }
+
     // On initial render, set both original and current to detected
     // On re-render (e.g., after toggling Nashville), preserve user's key choice
     if (isInitialRender || originalDetectedKey === null) {
         originalDetectedKey = detectedKey;
         originalDetectedMode = detectedMode;
         currentDetectedKey = detectedKey;
+    }
+
+    // Ensure currentDetectedKey is valid for the available keys
+    const majorKeys = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'F', 'Bb', 'Eb', 'Ab', 'Db'];
+    const minorKeys = ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'D#m', 'Dm', 'Gm', 'Cm', 'Fm', 'Bbm'];
+    const availableKeys = originalDetectedMode === 'minor' ? minorKeys : majorKeys;
+
+    if (!availableKeys.includes(currentDetectedKey)) {
+        currentDetectedKey = originalDetectedKey || detectedKey || availableKeys[0];
     }
 
     const totalCounts = {};
@@ -879,13 +919,7 @@ function renderSong(song, chordpro, isInitialRender = false) {
     const composer = metadata.writer || metadata.composer || song?.composer || '';
     const sourceUrl = song?.id ? `https://www.classic-country-song-lyrics.com/${song.id}.html` : null;
 
-    // Build key dropdown options
-    const majorKeys = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'F', 'Bb', 'Eb', 'Ab', 'Db'];
-    const minorKeys = ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'D#m', 'Dm', 'Gm', 'Cm', 'Fm', 'Bbm'];
-
-    // Filter keys based on detected mode (only show same mode keys)
-    const availableKeys = originalDetectedMode === 'minor' ? minorKeys : majorKeys;
-
+    // Build key dropdown options (availableKeys already defined above)
     const keyOptions = availableKeys.map(k => {
         const isDetected = k === originalDetectedKey;
         const label = isDetected ? `${k} (detected)` : k;
@@ -914,6 +948,10 @@ function renderSong(song, chordpro, isInitialRender = false) {
                 <label for="key-select">Key:</label>
                 <select id="key-select" class="key-select">${keyOptions}</select>
             </div>
+            <div class="font-size-controls">
+                <button id="font-decrease" class="font-btn" ${fontSizeLevel <= -2 ? 'disabled' : ''}>−</button>
+                <button id="font-increase" class="font-btn" ${fontSizeLevel >= 2 ? 'disabled' : ''}>+</button>
+            </div>
             <label class="compact-toggle">
                 <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
                 <span>Compact</span>
@@ -922,8 +960,12 @@ function renderSong(song, chordpro, isInitialRender = false) {
                 <input type="checkbox" id="nashville-checkbox" ${nashvilleMode ? 'checked' : ''}>
                 <span>Nashville</span>
             </label>
+            <label class="compact-toggle">
+                <input type="checkbox" id="twocol-checkbox" ${twoColumnMode ? 'checked' : ''}>
+                <span>2-Col</span>
+            </label>
         </div>
-        <div class="song-body">${sectionsHtml}</div>
+        <div class="song-body ${twoColumnMode ? 'two-column' : ''}" style="font-size: ${FONT_SIZES[fontSizeLevel]}em">${sectionsHtml}</div>
     `;
 
     const keySelect = document.getElementById('key-select');
@@ -947,6 +989,34 @@ function renderSong(song, chordpro, isInitialRender = false) {
         nashvilleCheckbox.addEventListener('change', (e) => {
             nashvilleMode = e.target.checked;
             renderSong(song, chordpro);
+        });
+    }
+
+    const twocolCheckbox = document.getElementById('twocol-checkbox');
+    if (twocolCheckbox) {
+        twocolCheckbox.addEventListener('change', (e) => {
+            twoColumnMode = e.target.checked;
+            renderSong(song, chordpro);
+        });
+    }
+
+    const fontDecrease = document.getElementById('font-decrease');
+    if (fontDecrease) {
+        fontDecrease.addEventListener('click', () => {
+            if (fontSizeLevel > -2) {
+                fontSizeLevel--;
+                renderSong(song, chordpro);
+            }
+        });
+    }
+
+    const fontIncrease = document.getElementById('font-increase');
+    if (fontIncrease) {
+        fontIncrease.addEventListener('click', () => {
+            if (fontSizeLevel < 2) {
+                fontSizeLevel++;
+                renderSong(song, chordpro);
+            }
         });
     }
 }

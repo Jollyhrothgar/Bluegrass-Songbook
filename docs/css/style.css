@@ -385,11 +385,58 @@ h1 {
     color: var(--text);
 }
 
+/* Font size controls */
+.font-size-controls {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.font-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, border-color 0.2s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.font-btn:hover:not(:disabled) {
+    background: var(--bg-secondary);
+    border-color: var(--accent);
+}
+
+.font-btn:active:not(:disabled) {
+    background: var(--border);
+}
+
+.font-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
 /* Song body and sections */
 .song-body {
     font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
     font-size: 0.9rem;
     line-height: 1.4;
+}
+
+.song-body.two-column {
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.song-body.two-column .song-section {
+    break-inside: avoid;
 }
 
 .song-section {
@@ -600,14 +647,22 @@ h1 {
 
     .song-body {
         font-size: 0.8rem;
+        overflow-x: auto;
+    }
+
+    /* Disable two-column on mobile */
+    .song-body.two-column {
+        column-count: 1;
     }
 
     .section-indent {
         margin-left: 1rem;
     }
 
-    .chord-line, .lyrics-line {
-        overflow-x: auto;
+    /* Ensure touch-friendly button size on mobile */
+    .font-btn {
+        width: 2.75rem;
+        height: 2.75rem;
     }
 
     .modal-content {
