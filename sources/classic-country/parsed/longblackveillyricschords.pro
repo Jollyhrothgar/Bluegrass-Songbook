@@ -1,51 +1,37 @@
-{title: Long Black Veil}
-{artist: Johnny Cash}
-{composer: Marijohn Wilkin and Danny Dill}
+{meta: title Long Black Veil}
+{meta: writer Marijohn Wilkin and Danny Dill}
 
 {start_of_verse: Verse 1}
-[C]Ten years ago on a cold dark night
-[G7]Someone was killed beneath the town [F]hall [C]light
-There were few at the scene but they all agreed
-That the [G7]slayer who ran looked a [F]lot like [C]me
-{end_of_verse}
-
-{start_of_verse: Chorus}
-She [F]walks these [C]hills
-In a [F]long black [C]veil
-She [F]visits my [C]grave
-When the [F]night winds [C]wail
-Nobody [F]knows nobody [C]sees
-[F]Nobody [G7]knows but [C]me
+[G]Ten years ago on a cool dark night
+There was [D]someone killed beneath the [C]town hall [G]light
+There were [G]few at the scene and they all did agree
+That the [D]man who ran looked a [C]lot like [G]me
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-The judge said son what is your alibi
-If you [G7]were somewhere else then [F]you won't have to [C]die
-I spoke not a word though it meant my life
-For I had [G7]been in the arms of my best [F]friend's [C]wife
+The [G]judge said, "Son, what is your alibi?
+If you were [D]somewhere else then [C]you won't have to [G]die"
+I [G]spoke not a word although it meant my life
+I had [D]been in the arms of my [C]best friend's [G]wife
 {end_of_verse}
 
-{start_of_verse: Chorus}
-She [F]walks these [C]hills
-In a [F]long black [C]veil
-She [F]visits my [C]grave
-When the [F]night winds [C]wail
-Nobody [F]knows nobody [C]sees
-[F]Nobody [G7]knows but [C]me
-{end_of_verse}
+{start_of_chorus}
+She [C]walks these [G]hills in a [C]long black [G]veil
+She [C]visits my [G]grave where the [C]night winds [G]wail
+[G]  Nobody knows, no, and [C]  nobody [G]sees
+[C]  Nobody [D]knows but [C]me[G]
+{end_of_chorus}
 
 {start_of_verse: Verse 3}
-The scaffold's high and eternity near
-She [G7]stood in the crowd and shed [F]not a [C]tear
-But sometimes at night when the cold wind blows
-In a [G7]long black veil she cries [F]over my [C]bones
+The [G]scaffold was high and eternity neared
+She [D]stood in the crowd and [C]shed not a [G]tear
+But [G]sometimes at night when the cold wind moans
+In a [D]long black veil she [C]cries over my [G]bones
 {end_of_verse}
 
-{start_of_verse: Chorus}
-She [F]walks these [C]hills
-In a [F]long black [C]veil
-She [F]visits my [C]grave
-When the [F]night winds [C]wail
-Nobody [F]knows nobody [C]sees
-[F]Nobody [G7]knows but [C]me
-{end_of_verse}
+{start_of_chorus}
+She [C]walks these [G]hills in a [C]long black [G]veil
+She [C]visits my [G]grave where the [C]night winds [G]wail
+[G]  Nobody knows, no, and [C]  nobody [G]sees
+[C]  Nobody [D]knows [C]but [G]me
+{end_of_chorus}
