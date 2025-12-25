@@ -1,6 +1,6 @@
 {meta: title It Just Doesn't Seem To Matter}
 {meta: artist Jack Greene}
-{meta: writer Jeannie Seely}
+{meta: composer Jeannie Seely}
 
 {start_of_verse: Verse 1}
 [C]We both know how we're hurting [F]another

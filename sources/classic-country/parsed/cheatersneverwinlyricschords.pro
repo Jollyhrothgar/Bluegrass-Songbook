@@ -1,6 +1,6 @@
 {meta: title Cheaters Never Win}
 {meta: artist Moe Bandy}
-{meta: writer Arthur Leo Owens and Sanger D. Shafer}
+{meta: composer Arthur Leo Owens and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]I don't know how long you left me here [F]alone

@@ -1,6 +1,6 @@
 {meta: title A Little Guy Called Joe}
 {meta: artist Stonewall Jackson}
-{meta: writer Marijohn Wilkin and Wayne P. Walker}
+{meta: composer Marijohn Wilkin and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]In a war torn land of poverty some [F]where across the [C]sea

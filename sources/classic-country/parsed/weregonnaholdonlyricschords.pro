@@ -1,6 +1,6 @@
 {meta: title We're Gonna Hold On}
 {meta: artist George Jones and Tammy Wynette}
-{meta: writer Earl Montgomery and George Jones}
+{meta: composer Earl Montgomery and George Jones}
 
 {start_of_verse: Verse 1}
 [G]We're gonna h-old on we're gonna h-old on

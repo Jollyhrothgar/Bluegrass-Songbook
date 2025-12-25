@@ -1,6 +1,6 @@
 {meta: title House Of Love}
 {meta: artist Dottie West}
-{meta: writer Kenny O'Dell}
+{meta: composer Kenny O'Dell}
 
 {start_of_verse: Verse 1}
 [G7]Why don't you [C]and I build a house of [A7]love

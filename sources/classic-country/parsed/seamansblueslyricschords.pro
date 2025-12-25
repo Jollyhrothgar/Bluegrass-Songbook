@@ -1,6 +1,6 @@
 {meta: title Seaman's Blues}
 {meta: artist Hank Williams}
-{meta: writer Ernest Tubb and Talmadge Tubb}
+{meta: composer Ernest Tubb and Talmadge Tubb}
 
 {start_of_verse: Verse 1}
 [C]I'm on my way to Italy from the gulf of [G7]Mexico 

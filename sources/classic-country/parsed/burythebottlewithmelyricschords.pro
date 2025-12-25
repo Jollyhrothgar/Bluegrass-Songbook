@@ -1,6 +1,6 @@
 {meta: title Bury The Bottle With Me}
 {meta: artist Dick Curless}
-{meta: writer Hank Cochran and Darrell McCall}
+{meta: composer Hank Cochran and Darrell McCall}
 
 {start_of_verse: Verse 1}
 [Em]There's a [G]stone in yonder [Em]graveyard

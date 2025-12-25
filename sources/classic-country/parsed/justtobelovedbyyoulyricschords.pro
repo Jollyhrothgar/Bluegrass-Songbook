@@ -1,6 +1,6 @@
 {meta: title Just To Be Loved By You}
 {meta: artist Charley Pride}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]Yes it's true that I've known others

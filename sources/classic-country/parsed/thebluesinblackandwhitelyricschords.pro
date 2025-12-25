@@ -1,6 +1,6 @@
 {meta: title The Blues In Black And White}
 {meta: artist Randy Travis}
-{meta: writer Wayland Holyfield and Verlon Thomas}
+{meta: composer Wayland Holyfield and Verlon Thomas}
 
 {start_of_verse: Verse 1}
 [C]The writing was [A#7]on the [A7]wall baby 

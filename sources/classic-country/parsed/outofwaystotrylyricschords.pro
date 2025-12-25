@@ -1,6 +1,6 @@
 {meta: title Out Of Ways To Try}
 {meta: artist Tony Booth}
-{meta: writer Bob Morris and Gene Price}
+{meta: composer Bob Morris and Gene Price}
 
 {start_of_verse: Verse 1}
 [G]It's hard to say I love you when I [C]don't

@@ -1,6 +1,6 @@
 {meta: title I Can Almost Hear Her Wings}
 {meta: artist Randy Travis}
-{meta: writer Buck Moore, Eddie Lee, Randy Travis}
+{meta: composer Buck Moore, Eddie Lee, Randy Travis}
 
 {start_of_verse: Verse 1}
 [G]Many nights I've [D7]stood here by [C]this [G]window

@@ -1,6 +1,6 @@
 {meta: title Let’s Have A Party}
 {meta: artist Elvis Presley}
-{meta: writer Jessie Mae Robinson}
+{meta: composer Jessie Mae Robinson}
 
 {start_of_verse: Verse 1}
 [C]Some people like to rock some people like to roll

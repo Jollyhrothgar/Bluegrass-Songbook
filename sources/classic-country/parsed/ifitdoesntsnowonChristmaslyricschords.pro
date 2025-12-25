@@ -1,6 +1,6 @@
 {meta: title If It Doesn't Snow on Christmas}
 {meta: artist Gene Autry}
-{meta: writer Milton Pascal and Gerald Marks}
+{meta: composer Milton Pascal and Gerald Marks}
 
 {start_of_verse: Verse 1}
 [C]Santa [G7]works all [Am]day in his [G7]workshop

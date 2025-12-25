@@ -1,6 +1,6 @@
 {meta: title Easy To Love You}
 {meta: artist Randy Travis}
-{meta: writer Danny Orton and Deanna Bryant}
+{meta: composer Danny Orton and Deanna Bryant}
 
 {start_of_verse: Verse 1}
 [G7]You were [C]pure to me as [C7]fresh un[F]traveled snow

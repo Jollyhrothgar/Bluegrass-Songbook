@@ -1,6 +1,6 @@
 {meta: title Head Over Heels In Love With You}
 {meta: artist Porter Wagoner}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]I think I'll go across the ocean

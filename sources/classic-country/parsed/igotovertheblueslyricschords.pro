@@ -1,6 +1,6 @@
 {meta: title I Got Over The Blues}
 {meta: artist Wilburn Brothers}
-{meta: writer Teddy Wilburn, Doyle Wilburn, Mary Cox}
+{meta: composer Teddy Wilburn, Doyle Wilburn, Mary Cox}
 
 {start_of_verse: Verse 1}
 [C]I got over the blues [F]I got over [C]you

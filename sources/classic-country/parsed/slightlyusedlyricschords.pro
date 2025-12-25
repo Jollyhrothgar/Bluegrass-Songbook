@@ -1,6 +1,6 @@
 {meta: title Slightly Used}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart, Curtis Leach, Bobby George}
+{meta: composer Wynn Stewart, Curtis Leach, Bobby George}
 
 {start_of_verse: Verse 1}
 [C]Before we slip and fall in love I'd better caution [G7]you

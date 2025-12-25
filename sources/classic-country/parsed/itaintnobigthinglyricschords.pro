@@ -1,6 +1,6 @@
 {meta: title It Ain't No Big Thing}
 {meta: artist Elvis Presley}
-{meta: writer Shorty Hall, Alice Joy Merritt, Neal Merritt}
+{meta: composer Shorty Hall, Alice Joy Merritt, Neal Merritt}
 
 {start_of_verse: Verse 1}
 [C]Your losing interest in me [F]and it's [C]showin'

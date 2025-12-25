@@ -1,6 +1,6 @@
 {meta: title Look What Thoughts Done To Me}
 {meta: artist Carl Smith}
-{meta: writer Buddy Bain}
+{meta: composer Buddy Bain}
 
 {start_of_verse: Verse 1}
 [G]I thought I knew [C]every[G]thing I [D7]thought you'd wear my weddin' [G]ring

@@ -1,6 +1,6 @@
 {meta: title I'm Not The Boy I Used To Be}
 {meta: artist Charlie Pride}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]Dear mama I'm coming home tomorrow

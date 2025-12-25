@@ -1,6 +1,6 @@
 {meta: title Keeper Of The Flame}
 {meta: artist Eddy Raven}
-{meta: writer Steve Harris and Jerry McBee}
+{meta: composer Steve Harris and Jerry McBee}
 
 {start_of_verse: Verse 1}
 [C]I ran into an [G7]old friend the other [C]night

@@ -1,6 +1,6 @@
 {meta: title Too Many Times}
 {meta: artist Jimmy Dean}
-{meta: writer Joel Herron}
+{meta: composer Joel Herron}
 
 {start_of_verse: Verse 1}
 [G]Too many times [Am]you've broken my [D7]heart

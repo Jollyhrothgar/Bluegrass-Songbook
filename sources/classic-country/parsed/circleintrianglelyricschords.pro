@@ -1,6 +1,6 @@
 {meta: title Circle In Triangle}
 {meta: artist Bill Anderson}
-{meta: writer Orville Couch and Bobbie Carroll}
+{meta: composer Orville Couch and Bobbie Carroll}
 
 {start_of_verse: Verse 1}
 [C]There's a circle in a triangle

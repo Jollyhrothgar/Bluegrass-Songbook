@@ -1,6 +1,6 @@
 {meta: title If I Cried Every Time You Hurt Me}
 {meta: artist Wanda Jackson}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]If I'd cried   every time  [C7]you hurt [F]me 

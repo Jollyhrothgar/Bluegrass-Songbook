@@ -1,6 +1,6 @@
 {meta: title Better Class Of Losers}
 {meta: artist Randy Travis}
-{meta: writer Randy Travis and Alan Jackson}
+{meta: composer Randy Travis and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G]I'm gettin' out of this high rise [C]penthouse [G]suite

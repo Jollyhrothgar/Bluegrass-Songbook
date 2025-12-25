@@ -1,6 +1,6 @@
 {meta: title All That You Have Is Your Soul}
 {meta: artist Emmylou Harris}
-{meta: writer Tracy Chapman}
+{meta: composer Tracy Chapman}
 
 {start_of_verse: Verse 1}
 [G]Oh my momma told [C]me

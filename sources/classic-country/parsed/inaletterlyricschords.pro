@@ -1,6 +1,6 @@
 {meta: title In A Letter}
 {meta: artist Eddy Raven}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [C]I tore my letter up I couldn't even start

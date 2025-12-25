@@ -1,6 +1,6 @@
 {meta: title Angry}
 {meta: artist Eddy Arnold}
-{meta: writer Dudley Mecum, Henry Brunies, Jules Cassard}
+{meta: composer Dudley Mecum, Henry Brunies, Jules Cassard}
 
 {start_of_verse: Verse 1}
 [G]Angry please don't be [A7]angry cause I was [G]only [D7]teasing [G]you

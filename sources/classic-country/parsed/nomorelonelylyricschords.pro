@@ -1,6 +1,6 @@
 {meta: title No More Lonely}
 {meta: artist David Ball}
-{meta: writer Tommy Polk and David Ball}
+{meta: composer Tommy Polk and David Ball}
 
 {start_of_verse: Verse 1}
 [G]No more lonely no more [C]blue

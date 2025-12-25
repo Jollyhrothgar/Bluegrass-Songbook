@@ -1,6 +1,6 @@
 {meta: title A Million Years In Glory}
 {meta: artist Carl Story}
-{meta: writer Tommy James, Tracey Lee, James West}
+{meta: composer Tommy James, Tracey Lee, James West}
 
 {start_of_verse: Verse 1}
 [G]When I cross the great divide and reach [C]Heaven's open [G]door

@@ -1,6 +1,6 @@
 {meta: title How Much Can A Lonely Heart Stand}
 {meta: artist Skeeter Davis}
-{meta: writer Sandra Rhodes}
+{meta: composer Sandra Rhodes}
 
 {start_of_verse: Verse 1}
 [F]Just how much can a lonely heart [C]stand

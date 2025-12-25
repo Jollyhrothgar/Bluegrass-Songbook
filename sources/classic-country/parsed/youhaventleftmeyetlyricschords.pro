@@ -1,6 +1,6 @@
 {meta: title You Haven't Left Me Yet}
 {meta: artist George Strait}
-{meta: writer Kent M. Robbins and Dana Hunt}
+{meta: composer Kent M. Robbins and Dana Hunt}
 
 {start_of_verse: Verse 1}
 [C]The laughter is gone the crying is over

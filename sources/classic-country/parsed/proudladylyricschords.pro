@@ -1,6 +1,6 @@
 {meta: title Proud Lady}
 {meta: artist Bob Luman}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]They do their Sunday driving [F]out in the ritzy section

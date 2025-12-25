@@ -1,6 +1,6 @@
 {meta: title Helping Hand}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino and Dave Bartholomew}
+{meta: composer Antonio Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [C]I'm a thousand miles away [G7]from [C]home

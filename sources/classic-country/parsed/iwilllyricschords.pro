@@ -1,6 +1,6 @@
 {meta: title I Will}
 {meta: artist Ferlin Husky}
-{meta: writer Roy Drusky and Lester Vanadore}
+{meta: composer Roy Drusky and Lester Vanadore}
 
 {start_of_verse: Verse 1}
 [C]Well you think I'll be [F]lonely [C]you think I'll be [F]blue

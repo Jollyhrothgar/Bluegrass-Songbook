@@ -1,6 +1,6 @@
 {meta: title The Birthday Of Our King}
 {meta: artist Larry Sparks}
-{meta: writer Bill Castle}
+{meta: composer Bill Castle}
 
 {start_of_verse: Verse 1}
 [C]On this wondrous holy night

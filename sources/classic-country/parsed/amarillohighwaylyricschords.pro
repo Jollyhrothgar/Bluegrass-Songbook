@@ -1,6 +1,6 @@
 {meta: title Amarillo Highway}
 {meta: artist Bobby Bare}
-{meta: writer Terry Allen}
+{meta: composer Terry Allen}
 
 {start_of_verse: Verse 1}
 [C]Well I'm a high straight in Plainview side bet in Idalou

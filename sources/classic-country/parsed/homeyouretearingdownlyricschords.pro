@@ -1,6 +1,6 @@
 {meta: title Home You're Tearing Down Lyrics Chords}
 {meta: artist Loretta Lynn}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [C]I don't know your name I wouldn't know your [G7]face

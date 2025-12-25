@@ -1,6 +1,6 @@
 {meta: title What Am I Waiting For}
 {meta: artist George Strait}
-{meta: writer Jim Lauderdale}
+{meta: composer Jim Lauderdale}
 
 {start_of_verse: Verse 1}
 [C]Its [G7]six minutes [F]until [C]eleven

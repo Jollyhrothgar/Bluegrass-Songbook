@@ -1,6 +1,6 @@
 {meta: title Marriage Vows}
 {meta: artist Hank Snow}
-{meta: writer Jenny Lou Carson}
+{meta: composer Jenny Lou Carson}
 
 {start_of_verse: Verse 1}
 [G]Do you take this woman to be your dear [D7]wife

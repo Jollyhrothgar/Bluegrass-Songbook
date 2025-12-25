@@ -1,6 +1,6 @@
 {meta: title Baby My Heart}
 {meta: artist Faron Young}
-{meta: writer Eddie Hill}
+{meta: composer Eddie Hill}
 
 {start_of_verse: Verse 1}
 [C]You have to baby a heart [F]that is [C]lonesome

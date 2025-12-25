@@ -1,6 +1,6 @@
 {meta: title One Step At A Time}
 {meta: artist Brenda Lee}
-{meta: writer H. Ashley}
+{meta: composer H. Ashley}
 
 {start_of_verse: Verse 1}
 [C]Word by word take it page by page

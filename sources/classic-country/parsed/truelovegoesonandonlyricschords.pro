@@ -1,6 +1,6 @@
 {meta: title True Love Goes On And On}
 {meta: artist Burl Ives}
-{meta: writer Richard Adler and Jerry Ross}
+{meta: composer Richard Adler and Jerry Ross}
 
 {start_of_verse: Verse 1}
 [C]True love goes on and on

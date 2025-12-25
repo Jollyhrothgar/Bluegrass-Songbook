@@ -1,6 +1,6 @@
 {meta: title D-18}
 {meta: artist Norman Blake}
-{meta: writer Jerry Faires}
+{meta: composer Jerry Faires}
 
 {start_of_verse: Verse 1}
 [D]Recorded by Norman Blake

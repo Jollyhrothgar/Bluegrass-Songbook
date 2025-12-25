@@ -1,6 +1,6 @@
 {meta: title I Just Don't Understand}
 {meta: artist Willie Nelson}
-{meta: writer Willie Nelson, Kent Westberry, Marijohn Wilkin}
+{meta: composer Willie Nelson, Kent Westberry, Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [C]I'd be the last one to tell you that you shouldn't [G7]go

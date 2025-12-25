@@ -1,6 +1,6 @@
 {meta: title The Pay Phone}
 {meta: artist Bob Luman}
-{meta: writer Glenn Martin}
+{meta: composer Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]Money drops into a payphone at the airport in LA

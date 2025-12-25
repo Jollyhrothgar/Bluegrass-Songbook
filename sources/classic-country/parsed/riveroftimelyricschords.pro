@@ -1,6 +1,6 @@
 {meta: title River Of Time}
 {meta: artist Dailey and Vincent}
-{meta: writer Robert Gateley}
+{meta: composer Robert Gateley}
 
 {start_of_verse: Verse 1}
 [G]Like a shot through the [D7]heart 

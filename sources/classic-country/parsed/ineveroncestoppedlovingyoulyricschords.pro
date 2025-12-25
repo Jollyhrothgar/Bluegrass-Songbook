@@ -1,6 +1,6 @@
 {meta: title I Never Once Stopped Loving You}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson and Jan Howard}
+{meta: composer Bill Anderson and Jan Howard}
 
 {start_of_verse: Verse 1}
 [G]The nights were [C]dark and [G]long  I spent a million all [G][C]alone

@@ -1,6 +1,6 @@
 {meta: title If You're With Me}
 {meta: artist Ferlin Husky}
-{meta: writer Lorene Allen and Richard D. Staedtler}
+{meta: composer Lorene Allen and Richard D. Staedtler}
 
 {start_of_verse: Verse 1}
 [G]I will ask for nothing more  [D7]if you're with me

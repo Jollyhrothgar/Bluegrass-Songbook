@@ -1,6 +1,6 @@
 {meta: title Stars and Stripes on Iwo Jima}
 {meta: artist Hank Thompson}
-{meta: writer Bob Wills and Cliff Johnson}
+{meta: composer Bob Wills and Cliff Johnson}
 
 {start_of_verse: Verse 1}
 [G]When the Yanks raised

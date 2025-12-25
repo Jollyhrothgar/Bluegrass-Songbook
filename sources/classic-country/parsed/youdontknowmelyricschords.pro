@@ -1,6 +1,6 @@
 {meta: title You Don't Know Me}
 {meta: artist Eddy Arnold}
-{meta: writer Cindy Walker and Eddy Arnold}
+{meta: composer Cindy Walker and Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [G7]You give your hand to me and then you say [C]hello

@@ -1,6 +1,6 @@
 {meta: title Round About Way}
 {meta: artist George Strait}
-{meta: writer Steve Dean and Billy Nance}
+{meta: composer Steve Dean and Billy Nance}
 
 {start_of_verse: Verse 1}
 [G]As far as [D7]all my friends can tell 

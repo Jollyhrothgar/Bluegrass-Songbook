@@ -1,6 +1,6 @@
 {meta: title It's The Goodbye That Blows Me Away}
 {meta: artist Tammy Wynette}
-{meta: writer Arthur Leo Owens and George Richey}
+{meta: composer Arthur Leo Owens and George Richey}
 
 {start_of_verse: Verse 1}
 [G7]Some[C]body has [G7]ended for[C]ever for us

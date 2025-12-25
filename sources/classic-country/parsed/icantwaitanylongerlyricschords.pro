@@ -1,6 +1,6 @@
 {meta: title I Can't Wait Any Longer}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson and Buddy Killen}
+{meta: composer Bill Anderson and Buddy Killen}
 
 {start_of_verse: Verse 1}
 [F]I can't wait any longer [C]baby I mean I can't wait any longer

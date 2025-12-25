@@ -1,6 +1,6 @@
 {meta: title If I Don't Love You}
 {meta: artist George Jones}
-{meta: writer Eddie Burton and John Dennis Knutson}
+{meta: composer Eddie Burton and John Dennis Knutson}
 
 {start_of_verse: Verse 1}
 [G]Well you got my heart a-feeling used and junky 

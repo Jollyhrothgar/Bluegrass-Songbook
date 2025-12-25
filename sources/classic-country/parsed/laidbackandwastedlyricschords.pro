@@ -1,6 +1,6 @@
 {meta: title Laid Back And Wasted}
 {meta: artist David Allan Coe}
-{meta: writer Dale Murphy}
+{meta: composer Dale Murphy}
 
 {start_of_verse: Verse 1}
 [G]Laid back and wasted driven to drinking 

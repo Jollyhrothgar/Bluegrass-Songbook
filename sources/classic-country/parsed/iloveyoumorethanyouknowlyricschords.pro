@@ -1,6 +1,6 @@
 {meta: title I Love You More Than You Know}
 {meta: artist Ricky Nelson}
-{meta: writer Dave Burgess}
+{meta: composer Dave Burgess}
 
 {start_of_verse: Verse 1}
 [C]I love you more more than you know

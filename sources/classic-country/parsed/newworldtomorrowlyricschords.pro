@@ -1,5 +1,5 @@
 {meta: artist Faron Young}
-{meta: writer Wayne Cargile}
+{meta: composer Wayne Cargile}
 
 {start_of_verse: Verse 1}
 [C]I'm makin' plans for the new [G7]world [C]tomorrow

@@ -1,6 +1,6 @@
 {meta: title I Passed By Your Window}
 {meta: artist George Morgan}
-{meta: writer Jack Lawrence and Paul Weston}
+{meta: composer Jack Lawrence and Paul Weston}
 
 {start_of_verse: Verse 1}
 [C]I passed by your window and what did I see

@@ -1,6 +1,6 @@
 {meta: title Two Lonely People}
 {meta: artist Moe Bandy}
-{meta: writer Ed Penney and Tom Benjamin}
+{meta: composer Ed Penney and Tom Benjamin}
 
 {start_of_verse: Verse 1}
 [C]It was dark it was lonely it was late it was [F]Monday

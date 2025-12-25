@@ -1,6 +1,6 @@
 {meta: title Lonely Nights}
 {meta: artist Mickey Gilley}
-{meta: writer Stewart Harris and Keith Stegall}
+{meta: composer Stewart Harris and Keith Stegall}
 
 {start_of_verse: Verse 1}
 [C]Pardon me

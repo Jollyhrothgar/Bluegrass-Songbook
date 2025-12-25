@@ -1,6 +1,6 @@
 {meta: title Pretty Rainbow}
 {meta: artist Don Gibson}
-{meta: writer Vaughn Horton}
+{meta: composer Vaughn Horton}
 
 {start_of_verse: Verse 1}
 [G]Oh pretty [D7]rainbow a pretty [G]rainbow

@@ -1,6 +1,6 @@
 {meta: title Rio Grande Waltz}
 {meta: artist Hank Locklin}
-{meta: writer Elmer Laird}
+{meta: composer Elmer Laird}
 
 {start_of_verse: Verse 1}
 [C]Near the Rio Grande mother nature’s hand 

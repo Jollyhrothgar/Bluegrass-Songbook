@@ -1,6 +1,6 @@
 {meta: title I Start Losing You All Over Again}
 {meta: artist Charlie Walker}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G]When the neon signs stop [C]flashing through my [G]window

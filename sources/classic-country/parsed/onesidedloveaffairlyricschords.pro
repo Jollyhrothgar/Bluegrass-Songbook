@@ -1,6 +1,6 @@
 {meta: title One Sided Love Affair}
 {meta: artist Elvis Presley}
-{meta: writer Bill Campbell}
+{meta: composer Bill Campbell}
 
 {start_of_verse: Verse 1}
 [G]If you wanna be loved you got to love me too

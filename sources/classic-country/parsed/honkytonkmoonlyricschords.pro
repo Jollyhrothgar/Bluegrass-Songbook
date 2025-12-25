@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Moon}
 {meta: artist Randy Travis}
-{meta: writer Dennis O'Rourke}
+{meta: composer Dennis O'Rourke}
 
 {start_of_verse: Verse 1}
 [C]Dirt road in the twilight woods so cool and dark

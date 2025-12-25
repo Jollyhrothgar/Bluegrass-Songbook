@@ -1,6 +1,6 @@
 {meta: title Fools For Each Other}
 {meta: artist Johnny Rodriguez}
-{meta: writer Johnny Rodriguez and Bill Boling}
+{meta: composer Johnny Rodriguez and Bill Boling}
 
 {start_of_verse: Verse 1}
 [G]I don't want to [C]tell you that it's [G]over

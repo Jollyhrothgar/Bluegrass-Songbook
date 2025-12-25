@@ -1,6 +1,6 @@
 {meta: title Have Yourself A Merry Little Christmas}
 {meta: artist Suzy Bogguss}
-{meta: writer Hugh Martin and Ralph Blane}
+{meta: composer Hugh Martin and Ralph Blane}
 
 {start_of_verse: Verse 1}
 [C]Have your[Am]self a [Dm]merry little [G7]Christmas

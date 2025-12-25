@@ -1,6 +1,6 @@
 {meta: title Beyond The Blue Neon}
 {meta: artist George Strait}
-{meta: writer Larry Boone and Paul Nelson}
+{meta: composer Larry Boone and Paul Nelson}
 
 {start_of_verse: Verse 1}
 [C]Swingin' doors sawdust [B7]floors

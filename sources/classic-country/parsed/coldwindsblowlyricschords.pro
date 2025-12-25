@@ -1,6 +1,6 @@
 {meta: title Cold Winds Blow}
 {meta: artist Bobby Helms}
-{meta: writer Harold Lowry}
+{meta: composer Harold Lowry}
 
 {start_of_verse: Verse 1}
 [C]Big and little towns are [A#7]all the same to [C]me

@@ -1,6 +1,6 @@
 {meta: title I Care No More}
 {meta: artist Webb Pierce}
-{meta: writer Jesse Ashlock}
+{meta: composer Jesse Ashlock}
 
 {start_of_verse: Verse 1}
 [C]My love is gone my pride has gone I care no [G7]more

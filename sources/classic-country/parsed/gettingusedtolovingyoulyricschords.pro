@@ -1,6 +1,6 @@
 {meta: title Getting Used To Loving You}
 {meta: artist Buck Owens}
-{meta: writer Don Rich and Buck Owens}
+{meta: composer Don Rich and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]Getting used to [C]loving [G]you won't be [D7]easy 

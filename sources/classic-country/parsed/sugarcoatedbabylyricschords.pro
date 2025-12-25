@@ -1,6 +1,6 @@
 {meta: title Sugar Coated Baby}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Horton and Howard Hausey}
+{meta: composer Johnny Horton and Howard Hausey}
 
 {start_of_verse: Verse 1}
 [C]When the last sole flicker of the sun goes down

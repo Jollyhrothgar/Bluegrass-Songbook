@@ -1,6 +1,6 @@
 {meta: title You Can Hear A Teardrop}
 {meta: artist Johnny Paycheck}
-{meta: writer Mack Vickery and John Wiggins}
+{meta: composer Mack Vickery and John Wiggins}
 
 {start_of_verse: Verse 1}
 [C]Your kisses have been tasting like goodbye

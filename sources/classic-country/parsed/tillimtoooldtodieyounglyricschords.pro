@@ -1,6 +1,6 @@
 {meta: title Till I’m Too Old To Die Young}
 {meta: artist Moe Bandy}
-{meta: writer Kevin Stephen Welch, John R. Hadley, Scott Dooley}
+{meta: composer Kevin Stephen Welch, John R. Hadley, Scott Dooley}
 
 {start_of_verse: Verse 1}
 [C]If life is like a candle bright

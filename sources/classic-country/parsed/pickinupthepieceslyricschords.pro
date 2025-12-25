@@ -1,6 +1,6 @@
 {meta: title Pickin' Up The Pieces}
 {meta: artist Ferlin Husky}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [D7]Pickin' up the pieces of my [G]heart

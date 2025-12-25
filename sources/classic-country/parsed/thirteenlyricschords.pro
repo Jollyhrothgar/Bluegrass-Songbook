@@ -1,6 +1,6 @@
 {meta: title Thirteen}
 {meta: artist Johnny Cash}
-{meta: writer written by Glenn Danzig}
+{meta: composer written by Glenn Danzig}
 
 {start_of_verse: Verse 1}
 [Am]Bad luck wind been [D7]blowing at my [Am]back

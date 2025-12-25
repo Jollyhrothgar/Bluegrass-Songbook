@@ -1,6 +1,6 @@
 {meta: title How Long}
 {meta: artist Connie Smith}
-{meta: writer Harlan Howard, Connie Smith, Marty Stuart}
+{meta: composer Harlan Howard, Connie Smith, Marty Stuart}
 
 {start_of_verse: Verse 1}
 [C]I’m still hurtin’ I’ve tried [C7]everything I [F]know

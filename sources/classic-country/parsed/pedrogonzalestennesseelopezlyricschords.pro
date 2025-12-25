@@ -1,6 +1,6 @@
 {meta: title Pedro Gonzales Tennessee Lopez}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer J. King and Jimmy Rule}
+{meta: composer J. King and Jimmy Rule}
 
 {start_of_verse: Verse 1}
 [C]A hillbilly boy from [G7]Mexico

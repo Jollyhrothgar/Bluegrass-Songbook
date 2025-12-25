@@ -1,6 +1,6 @@
 {meta: title We're Putting It Back Together}
 {meta: artist George Jones}
-{meta: writer Danny Walls and Sammy Lyons}
+{meta: composer Danny Walls and Sammy Lyons}
 
 {start_of_verse: Verse 1}
 [C]Our world was falling apart 

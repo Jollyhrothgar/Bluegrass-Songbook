@@ -1,6 +1,6 @@
 {meta: title Two Empty Glasses}
 {meta: artist Lee Harmon}
-{meta: writer Jack Greene, Kenneth Campbell, L.M. Bryant}
+{meta: composer Jack Greene, Kenneth Campbell, L.M. Bryant}
 
 {start_of_verse: Verse 1}
 [G]The dance floor is empty the people have all gone

@@ -1,6 +1,6 @@
 {meta: title Carols Those Kids Used To Sing}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [C]About three nights [G7]before every [C]Christmas

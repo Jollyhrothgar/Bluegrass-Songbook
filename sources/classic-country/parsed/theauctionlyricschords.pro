@@ -1,6 +1,6 @@
 {meta: title The Auction}
 {meta: artist John Schneider}
-{meta: writer Don Goodman, Mark Sherrill, Claude Hendrick}
+{meta: composer Don Goodman, Mark Sherrill, Claude Hendrick}
 
 {start_of_verse: Verse 1}
 [C]I watched an auction take place today

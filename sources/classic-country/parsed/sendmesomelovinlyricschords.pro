@@ -1,6 +1,6 @@
 {meta: title Send Me Some Lovin'}
 {meta: artist Buddy Holly}
-{meta: writer Price Marascalco}
+{meta: composer Price Marascalco}
 
 {start_of_verse: Verse 1}
 [C]Send me some lovin' oh send it I [G7]pray

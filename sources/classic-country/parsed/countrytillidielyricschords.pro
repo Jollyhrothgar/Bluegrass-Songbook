@@ -1,6 +1,6 @@
 {meta: title Country Till I Die}
 {meta: artist John Anderson}
-{meta: writer Troy Seals, Eddie Setser, John Anderson}
+{meta: composer Troy Seals, Eddie Setser, John Anderson}
 
 {start_of_verse: Verse 1}
 [C]I got an invite to a Saturday night [F]shindig way up [C]town

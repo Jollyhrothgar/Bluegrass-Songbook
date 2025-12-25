@@ -1,6 +1,6 @@
 {meta: title The Old Stuff}
 {meta: artist Garth Brooks}
-{meta: writer Bryan Kennedy, Don Roberts, Garth Brooks}
+{meta: composer Bryan Kennedy, Don Roberts, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G]Oh I said a little prayer [C]tonight fore I [D7]came on [G]stage[C]   [G]

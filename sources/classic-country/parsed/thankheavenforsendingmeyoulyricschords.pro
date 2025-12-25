@@ -1,6 +1,6 @@
 {meta: title Thank Heaven For Sending Me You}
 {meta: artist Wanda Jackson}
-{meta: writer Yvonne Devaney}
+{meta: composer Yvonne Devaney}
 
 {start_of_verse: Verse 1}
 [C]When heaven made you darling

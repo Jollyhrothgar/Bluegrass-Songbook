@@ -1,6 +1,6 @@
 {meta: title Crazy Heart}
 {meta: artist Hank Williams Sr.}
-{meta: writer Maurice Murray and Fred Rose}
+{meta: composer Maurice Murray and Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]You thought she'd care for you and so [C7]you acted [F]smart

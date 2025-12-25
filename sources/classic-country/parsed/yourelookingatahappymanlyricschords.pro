@@ -1,6 +1,6 @@
 {meta: title You're Looking At A Happy Man}
 {meta: artist George Jones}
-{meta: writer Carmol Taylor and George Jones}
+{meta: composer Carmol Taylor and George Jones}
 
 {start_of_verse: Verse 1}
 [G]Well I jumped outta bed and I hollered hallelujah

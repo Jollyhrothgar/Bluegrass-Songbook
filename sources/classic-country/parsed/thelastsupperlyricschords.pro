@@ -1,6 +1,6 @@
 {meta: title The Last Supper}
 {meta: artist Jimmie Davis}
-{meta: writer Jimmie Davis and Bill Harmon}
+{meta: composer Jimmie Davis and Bill Harmon}
 
 {start_of_verse: Verse 1}
 [G]Hosanna Hosanna[C]  [D7]

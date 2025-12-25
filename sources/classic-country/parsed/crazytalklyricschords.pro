@@ -1,6 +1,6 @@
 {meta: title Crazy Talk}
 {meta: artist Brenda Lee}
-{meta: writer Mel Tillis and Wayne P. Walker}
+{meta: composer Mel Tillis and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]Every time I see you comin'  a [F]walkin' down the [C]street

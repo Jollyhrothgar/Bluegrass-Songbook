@@ -1,6 +1,6 @@
 {meta: title A Mother's Way}
 {meta: artist Foster and Allen}
-{meta: writer Reg Keating}
+{meta: composer Reg Keating}
 
 {start_of_verse: Verse 1}
 [C]It's just a mother's [F]way  [G7]to worry through the [C]day

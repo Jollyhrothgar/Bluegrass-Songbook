@@ -1,6 +1,6 @@
 {meta: title Keep A Memory}
 {meta: artist Ricky Skaggs}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [F]Keep a memory of our love [C]dear

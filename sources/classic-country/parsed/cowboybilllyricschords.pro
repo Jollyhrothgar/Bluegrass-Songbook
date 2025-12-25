@@ -1,6 +1,6 @@
 {meta: title Cowboy Bill}
 {meta: artist Garth Brooks}
-{meta: writer Larry Bastian and Ed Berghoff}
+{meta: composer Larry Bastian and Ed Berghoff}
 
 {start_of_verse: Verse 1}
 [C]He told a good story and all of us [F]kids [C]listened

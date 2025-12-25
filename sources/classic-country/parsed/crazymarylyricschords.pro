@@ -1,6 +1,6 @@
 {meta: title Crazy Mary}
 {meta: artist David Allan Coe}
-{meta: writer Michael Smith}
+{meta: composer Michael Smith}
 
 {start_of_verse: Verse 1}
 [C]Crazy Mary from Londonderry

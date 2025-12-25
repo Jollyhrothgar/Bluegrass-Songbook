@@ -1,6 +1,6 @@
 {meta: title Pinball Machine}
 {meta: artist Carl Smith}
-{meta: writer Lonnie Ervin}
+{meta: composer Lonnie Ervin}
 
 {start_of_verse: Verse 1}
 [C]Well one day you're up and the next day you're down

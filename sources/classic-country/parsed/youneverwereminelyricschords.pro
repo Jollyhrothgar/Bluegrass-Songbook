@@ -1,6 +1,6 @@
 {meta: title You Never Were Mine}
 {meta: artist Loretta Lynn}
-{meta: writer Jay Lee Webb}
+{meta: composer Jay Lee Webb}
 
 {start_of_verse: Verse 1}
 [C]It's late almost mornin' you just [F]walked in the [C]door

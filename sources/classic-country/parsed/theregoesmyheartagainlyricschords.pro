@@ -1,6 +1,6 @@
 {meta: title There Goes My Heart Again}
 {meta: artist Holly Dunn}
-{meta: writer William Lon Wilson, Joe Diffie, Darrell Wayne Perry}
+{meta: composer William Lon Wilson, Joe Diffie, Darrell Wayne Perry}
 
 {start_of_verse: Verse 1}
 [C]There [G7]goes my heart [C]again here [C7]comes the hurt back [F]in

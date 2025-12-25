@@ -1,6 +1,6 @@
 {meta: title Take Me Back}
 {meta: artist Johnny Rodriguez}
-{meta: writer Teddy Randazzo}
+{meta: composer Teddy Randazzo}
 
 {start_of_verse: Verse 1}
 [G]Take me back I'm [D7]begging please

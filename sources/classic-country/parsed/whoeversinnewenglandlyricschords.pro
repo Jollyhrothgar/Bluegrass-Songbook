@@ -1,6 +1,6 @@
 {meta: title Whoever's In New England}
 {meta: artist Reba McEntire}
-{meta: writer Kendal Franceschi and Quentin Powers}
+{meta: composer Kendal Franceschi and Quentin Powers}
 
 {start_of_verse: Verse 1}
 [C]You spend an awful lot of time in Massa[Dm]chusetts

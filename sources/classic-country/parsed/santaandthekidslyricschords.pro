@@ -1,6 +1,6 @@
 {meta: title Santa And The Kids}
 {meta: artist Charley Pride}
-{meta: writer Sue Lane and Charley Pride}
+{meta: composer Sue Lane and Charley Pride}
 
 {start_of_verse: Verse 1}
 [G]Christmas time is here again like every year [D7]before

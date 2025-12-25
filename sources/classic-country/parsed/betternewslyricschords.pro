@@ -1,6 +1,6 @@
 {meta: title Better News}
 {meta: artist John Anderson}
-{meta: writer John D. Anderson and Dean Dillon}
+{meta: composer John D. Anderson and Dean Dillon}
 
 {start_of_verse: Verse 1}
 [Am]I wish I [Em]had better [Am]news that she was [E7]still in love with [Am]you

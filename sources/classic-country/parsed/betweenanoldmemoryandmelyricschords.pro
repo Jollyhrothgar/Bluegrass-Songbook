@@ -1,6 +1,6 @@
 {meta: title Between An Old Memory And Me}
 {meta: artist Keith Whitley}
-{meta: writer Charlie Craig and Keith Stegall}
+{meta: composer Charlie Craig and Keith Stegall}
 
 {start_of_verse: Verse 1}
 [C]I was sittin' at a table [A]at a [F]little club [C]downtown

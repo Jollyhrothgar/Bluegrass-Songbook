@@ -1,6 +1,6 @@
 {meta: title Bed Of Roses}
 {meta: artist Kenny Rogers}
-{meta: writer Rex Benson and Steve Gillette}
+{meta: composer Rex Benson and Steve Gillette}
 
 {start_of_verse: Verse 1}
 [G]You're that one special [C]woman

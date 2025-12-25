@@ -1,6 +1,6 @@
 {meta: title Children Of My Mind}
 {meta: artist Anne Murray}
-{meta: writer Gary Osborne}
+{meta: composer Gary Osborne}
 
 {start_of_verse: Verse 1}
 [G]The painter who's been [C]painting all his [G]life

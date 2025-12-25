@@ -1,6 +1,6 @@
 {meta: title It's A Cowboy Loving Night}
 {meta: artist Tanya Tucker}
-{meta: writer Randall Roger}
+{meta: composer Randall Roger}
 
 {start_of_verse: Verse 1}
 [G]Their tuning those twin Texas fiddles

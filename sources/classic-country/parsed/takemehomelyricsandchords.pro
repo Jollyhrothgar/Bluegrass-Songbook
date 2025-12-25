@@ -1,6 +1,6 @@
 {meta: title Take Me Home}
 {meta: artist Wanda Jackson}
-{meta: writer Vaughn Horton}
+{meta: composer Vaughn Horton}
 
 {start_of_verse: Verse 1}
 [G]I was wrong in blaming [G7]you and the f[C]ool for leaving t[G]oo

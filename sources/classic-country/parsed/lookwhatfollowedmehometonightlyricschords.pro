@@ -1,6 +1,6 @@
 {meta: title Look What Followed Me Home Tonight}
 {meta: artist George Morgan}
-{meta: writer Gary Walker and Porter Wagoner}
+{meta: composer Gary Walker and Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]Look what followed me home tonight momma can't I [G7]keep it

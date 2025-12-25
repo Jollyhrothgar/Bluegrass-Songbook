@@ -1,6 +1,6 @@
 {meta: title Whistle Ain't Made Of Gold}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene Martin}
+{meta: composer Lloene Martin}
 
 {start_of_verse: Verse 1}
 [G]Well my train don't run on silver rails

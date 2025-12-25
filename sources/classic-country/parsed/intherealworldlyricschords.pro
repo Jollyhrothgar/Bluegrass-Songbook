@@ -1,6 +1,6 @@
 {meta: title In The Real World}
 {meta: artist Roy Orbison}
-{meta: writer Richard Kerr and Will Jennings}
+{meta: composer Richard Kerr and Will Jennings}
 
 {start_of_verse: Verse 1}
 [Am]In dreams we do so many things

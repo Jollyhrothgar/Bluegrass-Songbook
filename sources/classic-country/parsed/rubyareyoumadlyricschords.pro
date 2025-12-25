@@ -1,6 +1,6 @@
 {meta: title Ruby Are You Mad}
 {meta: artist Buck Owens}
-{meta: writer Cousin Emmy}
+{meta: composer Cousin Emmy}
 
 {start_of_verse: Verse 1}
 [G]Ruby  Ruby  honey are you [D7]mad at your [G]man

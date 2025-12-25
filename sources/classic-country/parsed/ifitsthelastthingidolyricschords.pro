@@ -1,6 +1,6 @@
 {meta: title If It's The Last Thing I Do}
 {meta: artist Patty Loveless}
-{meta: writer Doug Gill and Phyllis Austin}
+{meta: composer Doug Gill and Phyllis Austin}
 
 {start_of_verse: Verse 1}
 [C]Pain falls around me like a shadow in the night[F]

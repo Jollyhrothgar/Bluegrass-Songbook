@@ -1,6 +1,6 @@
 {meta: title Yesterday's Gone}
 {meta: artist Vern Gosdin}
-{meta: writer Wayne Bradford}
+{meta: composer Wayne Bradford}
 
 {start_of_verse: Verse 1}
 [C]Once upon a time there [F]was [C]tomorrow

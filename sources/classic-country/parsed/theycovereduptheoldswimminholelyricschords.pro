@@ -1,6 +1,6 @@
 {meta: title They Covered Up The Old Swimmin' Hole}
 {meta: artist Bobby Bare}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]Boring through the mountains by-[F]passing the [C]towns

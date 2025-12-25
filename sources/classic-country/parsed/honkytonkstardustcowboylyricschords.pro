@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Stardust Cowboy}
 {meta: artist Lefty Frizzell}
-{meta: writer Darrell Statler}
+{meta: composer Darrell Statler}
 
 {start_of_verse: Verse 1}
 [C]In his cowboy boots [F]rhinestone suits [C]and flashy guitars

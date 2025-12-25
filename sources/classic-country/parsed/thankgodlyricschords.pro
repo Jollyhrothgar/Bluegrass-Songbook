@@ -1,6 +1,6 @@
 {meta: title Thank God}
 {meta: artist Hank Williams Sr}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]There's a road that's straight and narrow

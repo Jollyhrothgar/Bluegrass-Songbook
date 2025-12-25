@@ -1,6 +1,6 @@
 {meta: title Hillbilly Music}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Vaughn Horton}
+{meta: composer Vaughn Horton}
 
 {start_of_verse: Verse 1}
 [C]Hillbilly [F]fever goin' [C]round

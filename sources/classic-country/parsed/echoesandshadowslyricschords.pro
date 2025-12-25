@@ -1,6 +1,6 @@
 {meta: title Echoes And Shadows}
 {meta: artist Bobby Helms}
-{meta: writer Merrill St John}
+{meta: composer Merrill St John}
 
 {start_of_verse: Verse 1}
 [C]There comes a time everyday

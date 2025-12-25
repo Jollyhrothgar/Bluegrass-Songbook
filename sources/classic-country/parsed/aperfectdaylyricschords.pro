@@ -1,6 +1,6 @@
 {meta: title A Perfect Day}
 {meta: artist Slim Whitman}
-{meta: writer Carrie Jacobs-Bond}
+{meta: composer Carrie Jacobs-Bond}
 
 {start_of_verse: Verse 1}
 [G]When you come to the [C]end of a [D7]perfect [G]day

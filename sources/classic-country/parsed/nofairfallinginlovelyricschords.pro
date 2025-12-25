@@ -1,6 +1,6 @@
 {meta: title No Fair Falling In Love}
 {meta: artist Bill Anderson}
-{meta: writer Gary Tolbert Nicholson and Bill Anderson}
+{meta: composer Gary Tolbert Nicholson and Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]Saturday night and the lights are bright

@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Change Everything}
 {meta: artist Jim Reeves}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [G]Yeah I'm gonna change everything 

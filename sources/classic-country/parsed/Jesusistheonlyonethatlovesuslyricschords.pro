@@ -1,6 +1,6 @@
 {meta: title Jesus Is The Only One That Loves Us}
 {meta: artist Bobby Bare}
-{meta: writer Bobby Bare and Billy Joe Shaver}
+{meta: composer Bobby Bare and Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [G]See the [D7]Sunday morning [C]wino slowly [G]shufflin' down the street

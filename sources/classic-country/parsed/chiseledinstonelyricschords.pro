@@ -1,6 +1,6 @@
 {meta: title Chiseled In Stone}
 {meta: artist Vern Gosdin}
-{meta: writer Vernon Gosdin and Max Duane Barnes}
+{meta: composer Vernon Gosdin and Max Duane Barnes}
 
 {start_of_verse: Verse 1}
 [C]You ran crying to the bedroom

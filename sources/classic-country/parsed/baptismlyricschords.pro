@@ -1,6 +1,6 @@
 {meta: title Baptism}
 {meta: artist Randy Travis}
-{meta: writer Mickey Cates}
+{meta: composer Mickey Cates}
 
 {start_of_verse: Verse 1}
 [C]The summer [Am]breeze made [F]ripples on the [G7]pond

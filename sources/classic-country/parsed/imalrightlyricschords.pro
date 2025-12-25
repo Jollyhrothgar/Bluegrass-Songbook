@@ -1,6 +1,6 @@
 {meta: title I'm Alright}
 {meta: artist Jean Shepard}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]I'm alright (I'm alright) I'm alright (I'm [F]alright)

@@ -1,6 +1,6 @@
 {meta: title Relief Is Just A Swallow Away}
 {meta: artist George Jones}
-{meta: writer Eddie Noack}
+{meta: composer Eddie Noack}
 
 {start_of_verse: Verse 1}
 [G]Well I’m a-standin' in the tavern a-[D7]feelin' blue

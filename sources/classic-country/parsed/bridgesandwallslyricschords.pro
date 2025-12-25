@@ -1,6 +1,6 @@
 {meta: title Bridges And Walls}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Roger Alan Murrah and Randall Edwin Van Warmer}
+{meta: composer Roger Alan Murrah and Randall Edwin Van Warmer}
 
 {start_of_verse: Verse 1}
 [C]Some friends you'd cry for [G7]but you I would [C]die for 

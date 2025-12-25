@@ -1,6 +1,6 @@
 {meta: title I Wanna Be Hugged To Death By You}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Earl Butts}
+{meta: composer Earl Butts}
 
 {start_of_verse: Verse 1}
 [G]Now some folks use a motor car to end it all you see

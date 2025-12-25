@@ -1,6 +1,6 @@
 {meta: title A Memory Like I'm Gonna Be}
 {meta: artist Tanya Tucker}
-{meta: writer Jerry Laseter and Roger Murrah}
+{meta: composer Jerry Laseter and Roger Murrah}
 
 {start_of_verse: Verse 1}
 [C]I can hear you smiling on the [Em]phone 

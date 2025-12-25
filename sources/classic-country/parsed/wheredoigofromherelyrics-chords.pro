@@ -1,6 +1,6 @@
 {meta: title Where Do I Go From Here}
 {meta: artist Hank Williams Jr.}
-{meta: writer Hank Williams and Hank Williams Jr.}
+{meta: composer Hank Williams and Hank Williams Jr.}
 
 {start_of_verse: Verse 1}
 [C]Slowly but [F]surely I've [C]watched your love die

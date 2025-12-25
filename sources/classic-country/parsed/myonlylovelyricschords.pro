@@ -1,6 +1,6 @@
 {meta: title My Only Love}
 {meta: artist Statler Brothers}
-{meta: writer Jimmy Fortune}
+{meta: composer Jimmy Fortune}
 
 {start_of_verse: Verse 1}
 [C]You and I were [F]meant for one [C]another

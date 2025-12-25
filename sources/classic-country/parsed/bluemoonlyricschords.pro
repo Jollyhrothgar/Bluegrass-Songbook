@@ -1,6 +1,6 @@
 {meta: title Blue Moon}
 {meta: artist Elvis Presley}
-{meta: writer Lorenz Hart and Richard Rodgers}
+{meta: composer Lorenz Hart and Richard Rodgers}
 
 {start_of_verse: Verse 1}
 [G7]Blue [Dm][Am][C]moon 

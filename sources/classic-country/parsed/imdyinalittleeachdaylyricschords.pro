@@ -1,6 +1,6 @@
 {meta: title I'm Dyin' A Little Each Day}
 {meta: artist Statler Brothers}
-{meta: writer Harold Reid}
+{meta: composer Harold Reid}
 
 {start_of_verse: Verse 1}
 [G7]Just [C]another cold day and a [F]warm can of [C]beans

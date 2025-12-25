@@ -1,6 +1,6 @@
 {meta: title I'll Take A Chance With You}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Artie Glenn and Ray Coates}
+{meta: composer Artie Glenn and Ray Coates}
 
 {start_of_verse: Verse 1}
 [C]I’ll take a chance with [G7]you dear

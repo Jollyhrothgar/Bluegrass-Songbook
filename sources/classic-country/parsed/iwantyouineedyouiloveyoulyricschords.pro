@@ -1,6 +1,6 @@
 {meta: title I Want You I Need You I Love You}
 {meta: artist Elvis Presley}
-{meta: writer Maurice Myself and Ira Kosloff}
+{meta: composer Maurice Myself and Ira Kosloff}
 
 {start_of_verse: Verse 1}
 [C]Hold me close hold me [Am]tight

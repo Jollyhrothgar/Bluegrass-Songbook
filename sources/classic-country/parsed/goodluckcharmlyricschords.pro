@@ -1,6 +1,6 @@
 {meta: title Good Luck Charm}
 {meta: artist Elvis Presley}
-{meta: writer Aaron Schroeder and Wally Gold}
+{meta: composer Aaron Schroeder and Wally Gold}
 
 {start_of_verse: Verse 1}
 [A7]Uh huh  un [D7]huh  un [G]huh  oh yeah

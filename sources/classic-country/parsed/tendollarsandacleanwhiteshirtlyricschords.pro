@@ -1,6 +1,6 @@
 {meta: title Ten Dollars And A Clean White Shirt}
 {meta: artist Charlie Rich}
-{meta: writer Paul Vance and Eddie Snyder}
+{meta: composer Paul Vance and Eddie Snyder}
 
 {start_of_verse: Verse 1}
 [C]If you should see [F]Jenny [C]please tell her for [G7]me

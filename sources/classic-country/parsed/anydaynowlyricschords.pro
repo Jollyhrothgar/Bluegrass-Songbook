@@ -1,6 +1,6 @@
 {meta: title Any Day Now}
 {meta: artist Ronnie Milsap}
-{meta: writer Bob Hillard and Burt Bacharach}
+{meta: composer Bob Hillard and Burt Bacharach}
 
 {start_of_verse: Verse 1}
 [C]Any day now I [Em]will hear you say [F]goodbye

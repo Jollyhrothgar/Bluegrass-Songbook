@@ -1,6 +1,6 @@
 {meta: title Happy Blues}
 {meta: artist Wynn Stewart}
-{meta: writer Dale Noe}
+{meta: composer Dale Noe}
 
 {start_of_verse: Verse 1}
 [G]I woke up this morning not a cloud in the [C]sky

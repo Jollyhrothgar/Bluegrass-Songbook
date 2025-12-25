@@ -1,6 +1,6 @@
 {meta: title It Scares Me Half To Death}
 {meta: artist Jean Shepard}
-{meta: writer Audrey Allison and Joe Allison}
+{meta: composer Audrey Allison and Joe Allison}
 
 {start_of_verse: Verse 1}
 [G]It scares me half to death to think I almost [D7]lost you

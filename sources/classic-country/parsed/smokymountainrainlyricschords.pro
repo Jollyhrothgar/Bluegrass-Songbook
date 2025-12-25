@@ -1,6 +1,6 @@
 {meta: title Smoky Mountain Rain}
 {meta: artist Ronnie Milsap}
-{meta: writer Rhonda Kye Fleming and Dennis Morgan}
+{meta: composer Rhonda Kye Fleming and Dennis Morgan}
 
 {start_of_verse: Verse 1}
 [Em]I thumbed my way from L.A. back to [C]Knoxville

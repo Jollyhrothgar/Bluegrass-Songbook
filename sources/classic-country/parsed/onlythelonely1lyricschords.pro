@@ -1,6 +1,6 @@
 {meta: title Only The Lonely}
 {meta: artist Jim Ed Brown}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [C]Only the lonely [F]will under[C]stand 

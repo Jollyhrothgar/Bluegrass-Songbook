@@ -1,6 +1,6 @@
 {meta: title Dying A Sinner’s Death}
 {meta: artist The Stanley Brothers}
-{meta: writer Roy Acuff}
+{meta: composer Roy Acuff}
 
 {start_of_verse: Verse 1}
 [C]Here I lay upon my dying [G7]pillow

@@ -1,6 +1,6 @@
 {meta: title On The Sunny Side Of The Rockies}
 {meta: artist Slim Whitman}
-{meta: writer Roy Ingraham and Harry Tobias}
+{meta: composer Roy Ingraham and Harry Tobias}
 
 {start_of_verse: Verse 1}
 [G]On the sunny [G7]side of the [C]Rockies

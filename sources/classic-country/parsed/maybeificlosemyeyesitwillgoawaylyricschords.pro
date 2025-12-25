@@ -1,6 +1,6 @@
 {meta: title Maybe If I Close My Eyes (It Will Go Away)}
 {meta: artist Susan Raye}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]Maybe if I [F]close my eyes it [G7]will go [C]away

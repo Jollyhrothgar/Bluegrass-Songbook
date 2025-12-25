@@ -1,6 +1,6 @@
 {meta: title Santa Claus Is Back In Town}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Leiber and Mike Stoller}
+{meta: composer Jerry Leiber and Mike Stoller}
 
 {start_of_verse: Verse 1}
 [G]Christmas [C]Christmas [G]Christmas

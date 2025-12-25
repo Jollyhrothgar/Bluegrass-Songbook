@@ -1,6 +1,6 @@
 {meta: title All Night Long}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Don Chapel}
+{meta: composer Don Chapel}
 
 {start_of_verse: Verse 1}
 [C]Move closer to me don't [F]slip out of my arms

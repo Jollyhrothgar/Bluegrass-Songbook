@@ -1,6 +1,6 @@
 {meta: title I've Got That Old Time Religion In My Heart}
 {meta: artist Wilburn Brothers}
-{meta: writer Hurdis Milsap}
+{meta: composer Hurdis Milsap}
 
 {start_of_verse: Verse 1}
 [C]I'm glad Jesus came glory to His [F]name

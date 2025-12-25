@@ -1,6 +1,6 @@
 {meta: title Build My Mansion}
 {meta: artist The Kingsmen}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [C]I have no castles no [F]earthly [C]kingdom

@@ -1,6 +1,6 @@
 {meta: title Never Again Again}
 {meta: artist Lee Ann Womack}
-{meta: writer Monty Holmes and Barbie Isham}
+{meta: composer Monty Holmes and Barbie Isham}
 
 {start_of_verse: Verse 1}
 [C]Never again again

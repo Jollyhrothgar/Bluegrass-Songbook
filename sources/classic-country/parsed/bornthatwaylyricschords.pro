@@ -1,6 +1,6 @@
 {meta: title Born That Way}
 {meta: artist Stonewall Jackson}
-{meta: writer Glenn Sutton and Hugh X. Lewis}
+{meta: composer Glenn Sutton and Hugh X. Lewis}
 
 {start_of_verse: Verse 1}
 [C]I don't know why I [F]drink so much [G7]can't even stand the [C]taste

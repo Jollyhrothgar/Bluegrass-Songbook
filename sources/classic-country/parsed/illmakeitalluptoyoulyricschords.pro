@@ -1,6 +1,6 @@
 {meta: title I'll Make It All Up To You}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Charlie Rich}
+{meta: composer Charlie Rich}
 
 {start_of_verse: Verse 1}
 [C]Well it's true so true  I didn't [F]do right by [C]you

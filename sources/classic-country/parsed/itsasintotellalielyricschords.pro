@@ -1,6 +1,6 @@
 {meta: title It's a Sin to Tell a Lie}
 {meta: artist Slim Whitman}
-{meta: writer Billy Mayhew}
+{meta: composer Billy Mayhew}
 
 {start_of_verse: Verse 1}
 [C]Be sure it's true when you say I love you

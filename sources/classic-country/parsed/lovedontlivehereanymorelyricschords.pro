@@ -1,6 +1,6 @@
 {meta: title Love Don't Live Here Anymore}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [C]Perfect strangers sittin' [D7]down face to face

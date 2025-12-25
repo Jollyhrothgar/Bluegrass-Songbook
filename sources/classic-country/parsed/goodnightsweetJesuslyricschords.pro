@@ -1,6 +1,6 @@
 {meta: title Goodnight Sweet Jesus}
 {meta: artist Perry Como}
-{meta: writer James Curry}
+{meta: composer James Curry}
 
 {start_of_verse: Verse 1}
 [G]Good[D7]night Sweet [G]Jesus

@@ -1,6 +1,6 @@
 {meta: title Cowboy's A Kitten At Home}
 {meta: artist Moe Bandy}
-{meta: writer Jim Mundy and Peggy White}
+{meta: composer Jim Mundy and Peggy White}
 
 {start_of_verse: Verse 1}
 [C]He's a bramer bull rider a lover [F]and a [C]fighter

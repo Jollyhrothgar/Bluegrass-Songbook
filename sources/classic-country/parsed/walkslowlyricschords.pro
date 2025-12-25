@@ -1,6 +1,6 @@
 {meta: title Walk Slow}
 {meta: artist Heather Berry}
-{meta: writer Dixie Hall and Tom T. Hall}
+{meta: composer Dixie Hall and Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]Walk slow count the butterflies you pass

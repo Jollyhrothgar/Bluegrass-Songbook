@@ -1,6 +1,6 @@
 {meta: title I'm In Love With Everything}
 {meta: artist Faron Young}
-{meta: writer Billy Deaton, Clyde Pitts, Virginia King}
+{meta: composer Billy Deaton, Clyde Pitts, Virginia King}
 
 {start_of_verse: Verse 1}
 [C]Every day with you is a new day 

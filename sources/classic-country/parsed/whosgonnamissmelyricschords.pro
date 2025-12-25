@@ -1,6 +1,6 @@
 {meta: title Who's Gonna Miss Me}
 {meta: artist Loretta Lynn}
-{meta: writer Lola Jean Dillon and Loretta Lynn}
+{meta: composer Lola Jean Dillon and Loretta Lynn}
 
 {start_of_verse: Verse 1}
 [G]Is there one troubled soul

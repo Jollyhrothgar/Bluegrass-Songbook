@@ -1,6 +1,6 @@
 {meta: title Each Day}
 {meta: artist Kitty Wells}
-{meta: writer Benny Martin and Jim Denny}
+{meta: composer Benny Martin and Jim Denny}
 
 {start_of_verse: Verse 1}
 [G]Each day I cry a little each day I die a [C]little

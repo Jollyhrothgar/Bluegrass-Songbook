@@ -1,6 +1,6 @@
 {meta: title Your Love Had Taken Me That High}
 {meta: artist Conway Twitty}
-{meta: writer Jack Dunham and Galen Raye}
+{meta: composer Jack Dunham and Galen Raye}
 
 {start_of_verse: Verse 1}
 [G]There's no need in goin' over all the [C]things that took me under

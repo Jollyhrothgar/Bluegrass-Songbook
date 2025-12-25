@@ -1,6 +1,6 @@
 {meta: title If She Keeps Loving Me}
 {meta: artist Moe Bandy}
-{meta: writer Glenn Martin}
+{meta: composer Glenn Martin}
 
 {start_of_verse: Verse 1}
 [G]She'd like to give me [C]things that you've stopped [G]giving

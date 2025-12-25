@@ -1,6 +1,6 @@
 {meta: title A Night To Remember}
 {meta: artist Wynn Stewart}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [D7]Let this be a night to remember [G](remember)

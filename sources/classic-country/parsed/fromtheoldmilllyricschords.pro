@@ -1,6 +1,6 @@
 {meta: title From The Old Mill}
 {meta: artist Red Steagall}
-{meta: writer Dale Burson and Russell D. Steagall}
+{meta: composer Dale Burson and Russell D. Steagall}
 
 {start_of_verse: Verse 1}
 [G7]As I [C]change out the [G7]head on the [F]old mill [C]today

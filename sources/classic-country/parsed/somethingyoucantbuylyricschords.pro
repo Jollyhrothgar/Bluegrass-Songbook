@@ -1,6 +1,6 @@
 {meta: title Something You Can't Buy}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [F]The greatest [B7]Christmas [C]present is [F]something [G7]you can't [C]buy

@@ -1,6 +1,6 @@
 {meta: title His Love Takes Care Of Me}
 {meta: artist Connie Smith}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [C]Yes His love [F]takes good care of [C]me 

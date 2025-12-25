@@ -1,6 +1,6 @@
 {meta: title It's Finally Friday}
 {meta: artist George Jones}
-{meta: writer Dennis Robbins, Dewayne Mize, Bobby Boyd, Warren Haynes}
+{meta: composer Dennis Robbins, Dewayne Mize, Bobby Boyd, Warren Haynes}
 
 {start_of_verse: Verse 1}
 [C]I got a hundred dollars smoking in my billfold

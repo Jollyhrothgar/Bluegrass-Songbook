@@ -1,6 +1,6 @@
 {meta: title Letting Go}
 {meta: artist Connie Smith}
-{meta: writer Dave Kirby and Glenn Martin}
+{meta: composer Dave Kirby and Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]Sometimes love will [F]die without a [C]reason

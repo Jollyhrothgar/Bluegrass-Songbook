@@ -1,6 +1,6 @@
 {meta: title Feeling Like A Woman}
 {meta: artist Barbara Mandrell}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]When you put me down the [F]word got around 

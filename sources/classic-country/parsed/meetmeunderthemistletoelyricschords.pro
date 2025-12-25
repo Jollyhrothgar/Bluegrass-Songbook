@@ -1,6 +1,6 @@
 {meta: title Meet Me Under The Mistletoe}
 {meta: artist Randy Travis}
-{meta: writer Joe Collins and Mark Irwin}
+{meta: composer Joe Collins and Mark Irwin}
 
 {start_of_verse: Verse 1}
 [G]Meet me under the mistletoe midnight Christmas [D7]Eve

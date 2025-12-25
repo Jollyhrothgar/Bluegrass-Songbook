@@ -1,6 +1,6 @@
 {meta: title You Took Him Off My Hands}
 {meta: artist Patsy Cline}
-{meta: writer Harlan Howard, Wynn Stewart, Skeets McDonald}
+{meta: composer Harlan Howard, Wynn Stewart, Skeets McDonald}
 
 {start_of_verse: Verse 1}
 [G]You took him off my [G7]hands when you stepped [C]in

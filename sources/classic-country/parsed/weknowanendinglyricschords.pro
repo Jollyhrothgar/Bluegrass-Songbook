@@ -1,6 +1,6 @@
 {meta: title We Know An Ending}
 {meta: artist Jack Greene}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I never thought that you'd be leaving me [C7]

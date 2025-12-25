@@ -1,6 +1,6 @@
 {meta: title Blowin' In The Wind}
 {meta: artist Eddy Arnold}
-{meta: writer Bob Dylan}
+{meta: composer Bob Dylan}
 
 {start_of_verse: Verse 1}
 [C]How many roads [F]must a man walk [C]down 

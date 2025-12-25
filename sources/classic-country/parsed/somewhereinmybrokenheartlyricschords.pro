@@ -1,6 +1,6 @@
 {meta: title Somewhere In My Broken Heart}
 {meta: artist Randy Travis}
-{meta: writer Richard Leigh and Billy Dean}
+{meta: composer Richard Leigh and Billy Dean}
 
 {start_of_verse: Verse 1}
 [G]You've made up your [Bm]mind it was [C]time it was [D7]over 

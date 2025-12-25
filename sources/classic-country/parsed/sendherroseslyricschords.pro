@@ -1,6 +1,6 @@
 {meta: title Send Her Roses}
 {meta: artist Don Williams}
-{meta: writer Pat McLaughlin}
+{meta: composer Pat McLaughlin}
 
 {start_of_verse: Verse 1}
 [C]They got a road out in Alaska now I [G7]hear that you can go there

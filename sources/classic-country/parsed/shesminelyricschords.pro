@@ -1,6 +1,6 @@
 {meta: title She’s Mine}
 {meta: artist George Jones}
-{meta: writer George Jones and Jack Ripley}
+{meta: composer George Jones and Jack Ripley}
 
 {start_of_verse: Verse 1}
 [G]I won't say that I'm the only one who loves [D7]her

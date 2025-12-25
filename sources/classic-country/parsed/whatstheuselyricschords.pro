@@ -1,6 +1,6 @@
 {meta: title What's The Use}
 {meta: artist Jack Greene}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]What's the use to try and start [F]all [C]over

@@ -1,6 +1,6 @@
 {meta: title Born Country}
 {meta: artist Alabama}
-{meta: writer John Schweers and Byron Hill}
+{meta: composer John Schweers and Byron Hill}
 
 {start_of_verse: Verse 1}
 [C]Clear creeks and cool mountain mornings

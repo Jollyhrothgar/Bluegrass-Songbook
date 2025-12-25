@@ -1,6 +1,6 @@
 {meta: title When I Dream}
 {meta: artist Crystal Gayle}
-{meta: writer Sandy Mason}
+{meta: composer Sandy Mason}
 
 {start_of_verse: Verse 1}
 [C]I could have a [G7]mansion  that is [Am]higher  than the [F]trees

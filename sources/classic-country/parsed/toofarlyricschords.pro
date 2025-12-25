@@ -1,6 +1,6 @@
 {meta: title Too Far}
 {meta: artist Loretta Lynn}
-{meta: writer Marty Robbins}
+{meta: composer Marty Robbins}
 
 {start_of_verse: Verse 1}
 [G7]I gave you [C]everything I thought 

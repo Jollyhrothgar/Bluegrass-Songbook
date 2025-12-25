@@ -1,6 +1,6 @@
 {meta: title Yellowstone Valley}
 {meta: artist Red Steagall}
-{meta: writer Robert Boatman and Luke Reed}
+{meta: composer Robert Boatman and Luke Reed}
 
 {start_of_verse: Verse 1}
 [G]We’d heard of the ranges of the [C]Yellowstone [G]Valley

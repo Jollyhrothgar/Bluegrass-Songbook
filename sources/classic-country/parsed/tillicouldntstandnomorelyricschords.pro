@@ -1,6 +1,6 @@
 {meta: title Till I Couldn't Stand No More}
 {meta: artist Carl Perkins}
-{meta: writer Pamela Patton}
+{meta: composer Pamela Patton}
 
 {start_of_verse: Verse 1}
 [G]I just woke up and eighteen [G7]years are [A7]gone

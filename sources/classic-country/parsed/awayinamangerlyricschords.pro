@@ -1,4 +1,4 @@
-{meta: writer Martin Luther, Eugene Clark, Carl Mueller}
+{meta: composer Martin Luther, Eugene Clark, Carl Mueller}
 
 {start_of_verse: Verse 1}
 [C]Away in a manger no [F]crib for a [C]bed 

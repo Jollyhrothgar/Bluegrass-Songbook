@@ -1,6 +1,6 @@
 {meta: title Bury Me Under The Pines}
 {meta: artist Ralph Stanley}
-{meta: writer Rena Archuleta and Ralph Stanley}
+{meta: composer Rena Archuleta and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [C]So bury me under the lonesome pine tree

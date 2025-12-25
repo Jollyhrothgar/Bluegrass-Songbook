@@ -1,6 +1,6 @@
 {meta: title Anniversary Waltz}
 {meta: artist Connie Francis}
-{meta: writer Dave Franklin and Al Dubin}
+{meta: composer Dave Franklin and Al Dubin}
 
 {start_of_verse: Verse 1}
 [E7](The [A7]Anniversary [D7]Waltz with [D7][G]you)

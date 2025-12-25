@@ -1,6 +1,6 @@
 {meta: title Make My Heart Die Away}
 {meta: artist Wilburn Brothers}
-{meta: writer Glen Johnson}
+{meta: composer Glen Johnson}
 
 {start_of_verse: Verse 1}
 [C]I slowly turned crazy when I lost your love yester[G7]day

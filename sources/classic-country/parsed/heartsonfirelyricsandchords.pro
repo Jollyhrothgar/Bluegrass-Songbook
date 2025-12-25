@@ -1,6 +1,6 @@
 {meta: title Hearts On Fire}
 {meta: artist Eddie Rabbitt}
-{meta: writer Eddie Rabbitt, Even Stevens, Dan Tyler}
+{meta: composer Eddie Rabbitt, Even Stevens, Dan Tyler}
 
 {start_of_verse: Verse 1}
 [C]We shouldn't be together tonight but here we [Dm]are 

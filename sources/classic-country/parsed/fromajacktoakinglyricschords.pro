@@ -1,6 +1,6 @@
 {meta: title From a Jack to a King}
 {meta: artist David Houston}
-{meta: writer Ned Miller}
+{meta: composer Ned Miller}
 
 {start_of_verse: Verse 1}
 [D7]From a jack to a [G]king 

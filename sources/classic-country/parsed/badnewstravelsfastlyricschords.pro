@@ -1,6 +1,6 @@
 {meta: title Bad News Travels Fast}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Bobby Bare}
+{meta: composer Bobby Bare}
 
 {start_of_verse: Verse 1}
 [C]The house you [G7]live in now is [C]quite

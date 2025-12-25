@@ -1,6 +1,6 @@
 {meta: title Wouldn't I}
 {meta: artist Tammy Wynette}
-{meta: writer Bobby Braddock and Curly Putman}
+{meta: composer Bobby Braddock and Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]I don't suppose you'd like to come [F]with me and slip [C]away

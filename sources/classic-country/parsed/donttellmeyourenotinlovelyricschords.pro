@@ -1,6 +1,6 @@
 {meta: title Don't Tell Me You're Not In Love}
 {meta: artist George Strait}
-{meta: writer Kim Williams, Tony Colton, Bobby Wood}
+{meta: composer Kim Williams, Tony Colton, Bobby Wood}
 
 {start_of_verse: Verse 1}
 [C]I know you're ready you show all the signs

@@ -1,6 +1,6 @@
 {meta: title It's Not Over (If I'm Not Over You)}
 {meta: artist Reba McEntire}
-{meta: writer Larry Kingston and Mark Wright}
+{meta: composer Larry Kingston and Mark Wright}
 
 {start_of_verse: Verse 1}
 [G7]You can [C]tell every[G7]one love is [F]over and [C]done

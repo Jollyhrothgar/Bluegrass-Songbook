@@ -1,6 +1,6 @@
 {meta: title Meet Me At The Altar}
 {meta: artist Eddy Arnold}
-{meta: writer Don Deal and Chuck Deal}
+{meta: composer Don Deal and Chuck Deal}
 
 {start_of_verse: Verse 1}
 [G]Meet me at the [C]altar 

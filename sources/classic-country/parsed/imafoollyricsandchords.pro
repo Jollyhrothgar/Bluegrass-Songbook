@@ -1,6 +1,6 @@
 {meta: title I'm A Fool}
 {meta: artist Hank Locklin}
-{meta: writer Tom LeMay, Charles Hagaman, Jack Comer}
+{meta: composer Tom LeMay, Charles Hagaman, Jack Comer}
 
 {start_of_verse: Verse 1}
 [C]I'm a fool I gave my [F]heart away

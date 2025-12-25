@@ -1,6 +1,6 @@
 {meta: title Be With Me Lord}
 {meta: artist Sonny James}
-{meta: writer Thomas Chrisholm and L.O. Sanderson}
+{meta: composer Thomas Chrisholm and L.O. Sanderson}
 
 {start_of_verse: Verse 1}
 [C]Be with me Lord [Am]I cannot [F]live without [C]Thee

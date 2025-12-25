@@ -1,6 +1,6 @@
 {meta: title Gone In A Heartbeat}
 {meta: artist Vern Gosdin}
-{meta: writer James Hooker and Russell Smith}
+{meta: composer James Hooker and Russell Smith}
 
 {start_of_verse: Verse 1}
 [C]I've lived with [G7]love

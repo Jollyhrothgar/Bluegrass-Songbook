@@ -1,6 +1,6 @@
 {meta: title Did You Think To Pray}
 {meta: artist Charlie Pride}
-{meta: writer Mary Kidder, William Perkins}
+{meta: composer Mary Kidder, William Perkins}
 
 {start_of_verse: Verse 1}
 [C]Ere you left your room this morning

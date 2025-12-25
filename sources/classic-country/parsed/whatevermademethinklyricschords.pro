@@ -1,6 +1,6 @@
 {meta: title Whatever Made Me Think}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton and Red Steagall}
+{meta: composer Glenn Sutton and Red Steagall}
 
 {start_of_verse: Verse 1}
 [G]Seeing you again today sure [C]took me back in time

@@ -1,6 +1,6 @@
 {meta: title A Mighty Good God}
 {meta: artist Aaron Tippin}
-{meta: writer Aaron Tippin and Thea Tippin}
+{meta: composer Aaron Tippin and Thea Tippin}
 
 {start_of_verse: Verse 1}
 [C]I say Lord He’s a mighty good God

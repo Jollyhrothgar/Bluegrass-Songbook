@@ -1,6 +1,6 @@
 {meta: title Dig That Crazy Moon}
 {meta: artist Porter Wagoner}
-{meta: writer Bob Tubert, Porter Wagoner, Si Siman}
+{meta: composer Bob Tubert, Porter Wagoner, Si Siman}
 
 {start_of_verse: Verse 1}
 [G]I met a gal one night in town 

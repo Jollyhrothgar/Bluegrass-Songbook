@@ -1,6 +1,6 @@
 {meta: title Don't}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Leiber and Mike Stoller}
+{meta: composer Jerry Leiber and Mike Stoller}
 
 {start_of_verse: Verse 1}
 [C]Don't  [G7]don't  [C]that's [C7]what you [F]say

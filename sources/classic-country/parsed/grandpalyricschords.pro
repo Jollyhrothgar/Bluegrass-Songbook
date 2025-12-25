@@ -1,6 +1,6 @@
 {meta: title Grandpa}
 {meta: artist The Judds}
-{meta: writer Jamie O'hara}
+{meta: composer Jamie O'hara}
 
 {start_of_verse: Verse 1}
 [C]Grandpa  tell me about the good old [F]days

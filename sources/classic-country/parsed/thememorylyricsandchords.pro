@@ -1,6 +1,6 @@
 {meta: title The Memory}
 {meta: artist Faron Young}
-{meta: writer Charolotte Pennington and Ray Pennington}
+{meta: composer Charolotte Pennington and Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]There are times I don't know where I'm [F]going

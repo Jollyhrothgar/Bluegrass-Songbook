@@ -1,6 +1,6 @@
 {meta: title Let's Meet By The River}
 {meta: artist The Spencers}
-{meta: writer Kevin Layne Spencer}
+{meta: composer Kevin Layne Spencer}
 
 {start_of_verse: Verse 1}
 [C]I've read of the [G]city John saw coming [C]down from God out of [G]Heaven

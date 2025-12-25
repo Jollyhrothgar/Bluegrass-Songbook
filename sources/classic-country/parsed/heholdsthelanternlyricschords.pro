@@ -1,6 +1,6 @@
 {meta: title He Holds The Lantern}
 {meta: artist Tex Morton}
-{meta: writer Alan L. Grey, Arthur Terker, Roy Jordan}
+{meta: composer Alan L. Grey, Arthur Terker, Roy Jordan}
 
 {start_of_verse: Verse 1}
 [G]I know the best hearted [C]fellow 

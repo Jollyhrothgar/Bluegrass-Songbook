@@ -1,6 +1,6 @@
 {meta: title Lovely Place To Cry}
 {meta: artist Tammy Wynette}
-{meta: writer Earl Montgomery and Tammy Wynette}
+{meta: composer Earl Montgomery and Tammy Wynette}
 
 {start_of_verse: Verse 1}
 [C]I know this house is the [F]finest one [C]around

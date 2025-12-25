@@ -1,6 +1,6 @@
 {meta: title I Can't Get Over Me (Not Getting Over You)}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Wayne P. Walker and Chuck Reed}
+{meta: composer Wayne P. Walker and Chuck Reed}
 
 {start_of_verse: Verse 1}
 [G]I can't get over me [G7]not getting over [C]you

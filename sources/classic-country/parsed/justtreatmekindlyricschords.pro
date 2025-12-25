@@ -1,6 +1,6 @@
 {meta: title Just Treat Me Kind}
 {meta: artist Norma Jean}
-{meta: writer Wayne Kemp}
+{meta: composer Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [C]You think you've got it made cause you're [F]with me [C]tonight

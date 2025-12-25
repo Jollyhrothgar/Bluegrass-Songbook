@@ -1,6 +1,6 @@
 {meta: title City of New Orleans}
 {meta: artist Willie Nelson}
-{meta: writer Steve Goodman}
+{meta: composer Steve Goodman}
 
 {start_of_verse: Verse 1}
 [C]Riding on the [G7]city of New [C]Orleans

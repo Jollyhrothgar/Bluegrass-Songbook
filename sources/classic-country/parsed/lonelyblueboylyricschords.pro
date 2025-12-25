@@ -1,6 +1,6 @@
 {meta: title Lonely Blue Boy}
 {meta: artist Conway Twitty}
-{meta: writer Fred Wise and Ben Wiseman}
+{meta: composer Fred Wise and Ben Wiseman}
 
 {start_of_verse: Verse 1}
 [C]My name should be trouble  [E7]my name should be [Am]woo

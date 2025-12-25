@@ -1,6 +1,6 @@
 {meta: title Dixieland Delight}
 {meta: artist Alabama}
-{meta: writer Ronnie Rogers}
+{meta: composer Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [C]Rolling down-a backwoods Tennessee [G7]byway

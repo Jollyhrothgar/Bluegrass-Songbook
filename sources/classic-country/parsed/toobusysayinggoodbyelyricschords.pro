@@ -1,6 +1,6 @@
 {meta: title Too Busy Saying Goodbye}
 {meta: artist George Morgan}
-{meta: writer Johnny Colmus}
+{meta: composer Johnny Colmus}
 
 {start_of_verse: Verse 1}
 [G]Well I walk in and I walk out [C]we're never [G]together

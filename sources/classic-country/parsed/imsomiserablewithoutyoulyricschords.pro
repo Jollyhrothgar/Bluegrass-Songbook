@@ -1,6 +1,6 @@
 {meta: title I'm So Miserable Without You}
 {meta: artist Billy Walker}
-{meta: writer Eugene Strasser and George Winters}
+{meta: composer Eugene Strasser and George Winters}
 
 {start_of_verse: Verse 1}
 [C]When I thought that I could trust you I would find you let me [G7]down

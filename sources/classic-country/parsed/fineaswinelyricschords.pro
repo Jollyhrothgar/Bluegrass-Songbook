@@ -1,6 +1,6 @@
 {meta: title Fine As Wine}
 {meta: artist Billy Walker}
-{meta: writer Eddie Rabbitt and Even Stevens}
+{meta: composer Eddie Rabbitt and Even Stevens}
 
 {start_of_verse: Verse 1}
 [G]She loves her rodeo man turns him [C]every way but [G]loose

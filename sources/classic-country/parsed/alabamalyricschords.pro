@@ -1,6 +1,6 @@
 {meta: title Alabama}
 {meta: artist The Louvin Brothers}
-{meta: writer Charlie Louvin, Ira Louvin, Eddie Hill}
+{meta: composer Charlie Louvin, Ira Louvin, Eddie Hill}
 
 {start_of_verse: Verse 1}
 [C]Alabama  your [F]beautiful [C]sunlight

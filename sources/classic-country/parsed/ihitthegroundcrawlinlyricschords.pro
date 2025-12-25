@@ -1,6 +1,6 @@
 {meta: title I Hit The Ground Crawlin'}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [G]It's true I lied I cheated and [Am]the truth is that ain't all

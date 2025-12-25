@@ -1,6 +1,6 @@
 {meta: title Cobblestone Mountain}
 {meta: artist The Ozark Mountain Daredevils}
-{meta: writer Steve Cash}
+{meta: composer Steve Cash}
 
 {start_of_verse: Verse 1}
 [G]Cobblestone mountain it was [C]made by [G]hand

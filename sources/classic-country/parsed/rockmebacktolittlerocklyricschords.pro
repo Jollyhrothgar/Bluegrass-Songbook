@@ -1,6 +1,6 @@
 {meta: title Rock Me Back To Little Rock}
 {meta: artist Norma Jean}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [C]Well I was young when I left you [G7]and [C]daddy

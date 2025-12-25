@@ -1,6 +1,6 @@
 {meta: title Everything She Touches Gets The Blues}
 {meta: artist Porter Wagoner}
-{meta: writer Whitney Bower and Eugene Kinsey}
+{meta: composer Whitney Bower and Eugene Kinsey}
 
 {start_of_verse: Verse 1}
 [C]My b-aby [F]left me this [C]morning

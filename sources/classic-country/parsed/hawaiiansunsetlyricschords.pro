@@ -1,6 +1,6 @@
 {meta: title Hawaiian Sunset}
 {meta: artist Elvis Presley}
-{meta: writer Sid Tepper and Roy C. Bennett}
+{meta: composer Sid Tepper and Roy C. Bennett}
 
 {start_of_verse: Verse 1}
 [C]Hawaiian sunset peeping [F]from the [C]sea

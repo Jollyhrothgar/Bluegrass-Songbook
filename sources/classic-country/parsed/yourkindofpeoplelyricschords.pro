@@ -1,6 +1,6 @@
 {meta: title Your Kind Of People}
 {meta: artist Porter Wagoner}
-{meta: writer Ned Miller}
+{meta: composer Ned Miller}
 
 {start_of_verse: Verse 1}
 [C]So the [G7]boy in the mansion on the [C]hill 

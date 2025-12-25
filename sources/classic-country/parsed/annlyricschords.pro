@@ -1,6 +1,6 @@
 {meta: title Ann}
 {meta: artist Glen Campbell}
-{meta: writer Billy Ed Wheeler}
+{meta: composer Billy Ed Wheeler}
 
 {start_of_verse: Verse 1}
 [G]I know I'll never meet another hunk of woman like my [D7]Ann

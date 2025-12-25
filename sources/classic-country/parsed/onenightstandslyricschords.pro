@@ -1,6 +1,6 @@
 {meta: title One Night Stands}
 {meta: artist Hank Williams Jr.}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [C]The night life has its glamor when you're [F]lonely

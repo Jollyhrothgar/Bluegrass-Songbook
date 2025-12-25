@@ -1,6 +1,6 @@
 {meta: title If I Were A Carpenter}
 {meta: artist Don Williams}
-{meta: writer Tim Hardin}
+{meta: composer Tim Hardin}
 
 {start_of_verse: Verse 1}
 [G]If I were a [F]carpenter [C]and you were a [G]lady

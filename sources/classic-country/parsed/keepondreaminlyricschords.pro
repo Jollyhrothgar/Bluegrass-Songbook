@@ -1,6 +1,6 @@
 {meta: title Keep On Dreamin'}
 {meta: artist Alabama}
-{meta: writer Jeff Cook and Richard Scott}
+{meta: composer Jeff Cook and Richard Scott}
 
 {start_of_verse: Verse 1}
 [G]I am so happy [D7]with you in my [Am]arms

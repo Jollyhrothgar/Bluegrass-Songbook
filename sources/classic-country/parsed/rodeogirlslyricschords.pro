@@ -1,6 +1,6 @@
 {meta: title Rodeo Girls}
 {meta: artist Tanya Tucker}
-{meta: writer Joe Rainey and Tanya Tucker}
+{meta: composer Joe Rainey and Tanya Tucker}
 
 {start_of_verse: Verse 1}
 [G]On the side of the highway [C]trying to [G]sleep

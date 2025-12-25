@@ -1,6 +1,6 @@
 {meta: title I Can Turn Your World Around}
 {meta: artist Connie Smith}
-{meta: writer Jack Rhodes, Billie Jo Spears, Henry Ebner}
+{meta: composer Jack Rhodes, Billie Jo Spears, Henry Ebner}
 
 {start_of_verse: Verse 1}
 [G]Every time our worlds meet I start [C]crying

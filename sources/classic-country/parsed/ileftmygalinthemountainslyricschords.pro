@@ -1,6 +1,6 @@
 {meta: title I Left My Gal In The Mountains}
 {meta: artist Hank Thompson}
-{meta: writer Carson J. Robison}
+{meta: composer Carson J. Robison}
 
 {start_of_verse: Verse 1}
 [C]I left my gal in the mountains I left her standing in the [G7]rain

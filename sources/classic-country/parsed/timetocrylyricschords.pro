@@ -1,6 +1,6 @@
 {meta: title Time To Cry}
 {meta: artist Roy Orbison}
-{meta: writer Bill Dees and Roy Orbison}
+{meta: composer Bill Dees and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [C]I see through [F]teardrops that old clock on the [C]wall 

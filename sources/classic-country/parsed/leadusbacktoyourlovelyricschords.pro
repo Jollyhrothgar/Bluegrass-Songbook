@@ -1,6 +1,6 @@
 {meta: title Lead Us Back To Your Love}
 {meta: artist Conway Twitty}
-{meta: writer Jack Dunham}
+{meta: composer Jack Dunham}
 
 {start_of_verse: Verse 1}
 [C]Lord Jesus You gotta get us all back [F]together

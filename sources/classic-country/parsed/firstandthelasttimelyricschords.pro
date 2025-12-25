@@ -1,6 +1,6 @@
 {meta: title First And The Last Time}
 {meta: artist Jana Kramer}
-{meta: writer Skip Black, Jana Kramer, Jon Mark Nite}
+{meta: composer Skip Black, Jana Kramer, Jon Mark Nite}
 
 {start_of_verse: Verse 1}
 [G7]I've always had [C]one foot in and [F]one foot out [G7]door

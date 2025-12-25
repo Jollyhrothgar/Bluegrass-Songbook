@@ -1,6 +1,6 @@
 {meta: title You Plant Your Fields}
 {meta: artist New Grass Revival}
-{meta: writer Donny Lowery and Wendy Waldman}
+{meta: composer Donny Lowery and Wendy Waldman}
 
 {start_of_verse: Verse 1}
 [Em]My father [G]said some things you [Em]learn

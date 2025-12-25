@@ -1,6 +1,6 @@
 {meta: title Where The Old Red River Flows}
 {meta: artist Hank Williams}
-{meta: writer Jimmie Davis}
+{meta: composer Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [C]I'm dreaming tonight of Dixie [F]cotton fields and Whippoo[C]rwills 

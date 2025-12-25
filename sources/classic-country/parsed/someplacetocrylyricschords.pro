@@ -1,6 +1,6 @@
 {meta: title Someplace To Cry}
 {meta: artist Norma Jean}
-{meta: writer Vic McAlpin and Roy Drusky}
+{meta: composer Vic McAlpin and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [G]When you're out with [D7]somebody new 

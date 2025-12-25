@@ -1,6 +1,6 @@
 {meta: title Alabama Sky}
 {meta: artist Alabama}
-{meta: writer Larry Shell}
+{meta: composer Larry Shell}
 
 {start_of_verse: Verse 1}
 [C]I've seen him plow a field of corn all day that's reali[Dm]ty  [G7]

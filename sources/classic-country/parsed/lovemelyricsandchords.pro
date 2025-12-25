@@ -1,6 +1,6 @@
 {meta: title Love me}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Leiber and Mike Stoller}
+{meta: composer Jerry Leiber and Mike Stoller}
 
 {start_of_verse: Verse 1}
 [C]Treat me like a fool treat me mean and cruel but [F]love me

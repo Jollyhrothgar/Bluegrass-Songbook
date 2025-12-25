@@ -1,6 +1,6 @@
 {meta: title Hat Trick}
 {meta: artist Tracy Byrd}
-{meta: writer Glenn Sutton and Jim Weatherly}
+{meta: composer Glenn Sutton and Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [C]You packed up [G7]all my [C]clothes [F]and put 'em by the [C]door

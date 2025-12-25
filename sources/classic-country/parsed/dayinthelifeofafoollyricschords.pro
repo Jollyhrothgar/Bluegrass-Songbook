@@ -1,6 +1,6 @@
 {meta: title Day In The Life Of A Fool}
 {meta: artist Keith Whitley}
-{meta: writer Mike Dekle and Byron Hill}
+{meta: composer Mike Dekle and Byron Hill}
 
 {start_of_verse: Verse 1}
 [G]Morning comes and [C]I'm a[G]lone it's been a year [C]since you've been [G]gone

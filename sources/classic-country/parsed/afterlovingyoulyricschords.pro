@@ -1,6 +1,6 @@
 {meta: title After Loving You Lyrics Chords}
 {meta: artist Jim Reeves}
-{meta: writer Eddie Miller and John Lantz}
+{meta: composer Eddie Miller and John Lantz}
 
 {start_of_verse: Verse 1}
 [C]Darling after loving [F]you what else is there to [C]do

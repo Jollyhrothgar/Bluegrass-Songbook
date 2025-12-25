@@ -1,6 +1,6 @@
 {meta: title How The Other Half Lives}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart and Fuzzy Owen}
+{meta: composer Wynn Stewart and Fuzzy Owen}
 
 {start_of_verse: Verse 1}
 [G]I'll just sit [C]back and watch you [G]leave

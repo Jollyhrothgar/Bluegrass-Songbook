@@ -1,6 +1,6 @@
 {meta: title Take The World But Give Me Jesus}
 {meta: artist George Jones}
-{meta: writer Todd Wilson Agnew and Frances Jane Crosby}
+{meta: composer Todd Wilson Agnew and Frances Jane Crosby}
 
 {start_of_verse: Verse 1}
 [G]Take the world but give me Jesus

@@ -1,6 +1,6 @@
 {meta: title No Goodbyes}
 {meta: artist Gene Watson}
-{meta: writer Ray Pennington and David Smith}
+{meta: composer Ray Pennington and David Smith}
 
 {start_of_verse: Verse 1}
 [G7]Come and [C]sit down here beside me 

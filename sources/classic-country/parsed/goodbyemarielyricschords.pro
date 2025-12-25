@@ -1,6 +1,6 @@
 {meta: title Goodbye Marie}
 {meta: artist Johnny Rodriguez}
-{meta: writer Dennis Linde and Mel McDaniel}
+{meta: composer Dennis Linde and Mel McDaniel}
 
 {start_of_verse: Verse 1}
 [C]I woke up this mornin' all cotton mouthed from drinkin'

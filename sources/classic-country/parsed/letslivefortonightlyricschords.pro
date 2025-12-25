@@ -1,6 +1,6 @@
 {meta: title Let's Live For Tonight}
 {meta: artist Porter Wagoner}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [C]Let's live for tonight dear it's [F]better that [C]way

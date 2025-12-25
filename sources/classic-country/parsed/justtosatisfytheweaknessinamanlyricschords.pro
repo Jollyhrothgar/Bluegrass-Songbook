@@ -1,6 +1,6 @@
 {meta: title Just To Satisfy The Weakness In A Man}
 {meta: artist Loretta Lynn}
-{meta: writer Carol Jones}
+{meta: composer Carol Jones}
 
 {start_of_verse: Verse 1}
 [C]I realize how difficult it is for you to take me as I [Dm]am

@@ -1,6 +1,6 @@
 {meta: title Ways To Love A Man}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]There are so many [C]ways to love a [G]man 

@@ -1,6 +1,6 @@
 {meta: title Married But Not To Each Other}
 {meta: artist Barbara Mandrell}
-{meta: writer Denise Ora Craig and Frances H. Miller}
+{meta: composer Denise Ora Craig and Frances H. Miller}
 
 {start_of_verse: Verse 1}
 [C]You know some[Em]times in your life you [F]may find it hurts to be in [G7]love

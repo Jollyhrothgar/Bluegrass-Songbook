@@ -1,6 +1,6 @@
 {meta: title I Feel Like Crying}
 {meta: artist Carl Smith}
-{meta: writer Werly Fairburn}
+{meta: composer Werly Fairburn}
 
 {start_of_verse: Verse 1}
 [C]I feel like [F]cryin' my heart is [C]breakin' 

@@ -1,6 +1,6 @@
 {meta: title Hangin' In And Hangin' On}
 {meta: artist David Ball}
-{meta: writer Gary Nicholson, Terry McBride,}
+{meta: composer Gary Nicholson, Terry McBride,}
 
 {start_of_verse: Verse 1}
 [C]Hangin’ in and hangin’ [F]on

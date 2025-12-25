@@ -1,6 +1,6 @@
 {meta: title Meanwhile Down At Joe's}
 {meta: artist Kitty Wells}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I iron and I sew as I [F]watch the late show

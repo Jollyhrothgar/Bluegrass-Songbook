@@ -1,6 +1,6 @@
 {meta: title Cold Gray Tomb of Stone}
 {meta: artist Hank Williams}
-{meta: writer Mel Foree and Hank Williams}
+{meta: composer Mel Foree and Hank Williams}
 
 {start_of_verse: Verse 1}
 [G]Standing by a lonesome graveside 

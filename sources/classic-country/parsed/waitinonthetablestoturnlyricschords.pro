@@ -1,6 +1,6 @@
 {meta: title Waitin' On The Tables To Turn}
 {meta: artist Mickey Gilley}
-{meta: writer Wayne Kemp and Mack Vickery}
+{meta: composer Wayne Kemp and Mack Vickery}
 
 {start_of_verse: Verse 1}
 [C]She's waitin' on the tables  a-[G7]waitin' for the tables to [C]turn

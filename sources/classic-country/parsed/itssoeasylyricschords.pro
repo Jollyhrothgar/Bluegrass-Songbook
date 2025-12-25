@@ -1,6 +1,6 @@
 {meta: title It's So Easy}
 {meta: artist Buddy Holly}
-{meta: writer Buddy Holly and Norman Petty}
+{meta: composer Buddy Holly and Norman Petty}
 
 {start_of_verse: Verse 1}
 [G]It's so [D7]easy to [C]fall in [D7]love

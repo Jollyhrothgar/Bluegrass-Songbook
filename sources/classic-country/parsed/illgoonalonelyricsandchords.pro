@@ -1,6 +1,6 @@
 {meta: title I'll Go On Alone}
 {meta: artist Webb Pierce}
-{meta: writer Marty Robbins}
+{meta: composer Marty Robbins}
 
 {start_of_verse: Verse 1}
 [C]We're traveling down two different roads in [F]world so far [G7]apart

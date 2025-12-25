@@ -1,6 +1,6 @@
 {meta: title Send the Light}
 {meta: artist Holly Dunn}
-{meta: writer Danny Zaloudik, Mike Speck, Goss Lari}
+{meta: composer Danny Zaloudik, Mike Speck, Goss Lari}
 
 {start_of_verse: Verse 1}
 [C]There’s a call comes ringing o’er the restless wave

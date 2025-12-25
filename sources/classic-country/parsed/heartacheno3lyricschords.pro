@@ -1,6 +1,6 @@
 {meta: title Heartache No.3}
 {meta: artist Tanya Tucker}
-{meta: writer Joe Rainey}
+{meta: composer Joe Rainey}
 
 {start_of_verse: Verse 1}
 [C]What's an angel like you doin' [G7]way down [C]here

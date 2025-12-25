@@ -1,6 +1,6 @@
 {meta: title Alabama Rose}
 {meta: artist Bobby Bare}
-{meta: writer Wanda Alley}
+{meta: composer Wanda Alley}
 
 {start_of_verse: Verse 1}
 [D7]One [G]night I went to [F]town and met a [C]girl from [G]Alabama

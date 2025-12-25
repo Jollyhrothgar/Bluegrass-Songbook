@@ -1,6 +1,6 @@
 {meta: title Comeback Kid}
 {meta: artist Keith Whitley Conley}
-{meta: writer Hank Cochran, Dean Dillon, Keith Whitley}
+{meta: composer Hank Cochran, Dean Dillon, Keith Whitley}
 
 {start_of_verse: Verse 1}
 [C]You call me the come[G7]back [C]kid 

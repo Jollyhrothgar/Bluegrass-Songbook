@@ -1,6 +1,6 @@
 {meta: title Oh What A Silent Night}
 {meta: artist Randy Travis}
-{meta: writer Kathy Louvin and Mark Collie}
+{meta: composer Kathy Louvin and Mark Collie}
 
 {start_of_verse: Verse 1}
 [G]The night before Christmas alone in the [D7]dark

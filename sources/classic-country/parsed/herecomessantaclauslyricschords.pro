@@ -1,6 +1,6 @@
 {meta: title Here Comes Santa Claus}
 {meta: artist Gene Autry}
-{meta: writer O. Haldeman}
+{meta: composer O. Haldeman}
 
 {start_of_verse: Verse 1}
 [C]Here comes Santa Claus here comes Santa Claus

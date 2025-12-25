@@ -1,6 +1,6 @@
 {meta: title Too Old To Cut The Mustard}
 {meta: artist Ernest Tubb}
-{meta: writer Bill Carlisle}
+{meta: composer Bill Carlisle}
 
 {start_of_verse: Verse 1}
 [C]Too  old [F]too  old he's too old [C]to cut the mustard [G7]anymore

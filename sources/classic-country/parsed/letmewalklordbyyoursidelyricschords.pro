@@ -1,6 +1,6 @@
 {meta: title Let Me Walk Lord By Your Side}
 {meta: artist Ralph Stanley}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [G]In a church on Sunday morning

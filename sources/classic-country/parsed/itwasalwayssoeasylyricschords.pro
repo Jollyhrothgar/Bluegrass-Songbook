@@ -1,6 +1,6 @@
 {meta: title It Was Always So Easy}
 {meta: artist Moe Bandy}
-{meta: writer Arthur Leo Owens and Sanger D. Shafer}
+{meta: composer Arthur Leo Owens and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]I drove through the park and I [F]searched all the bars

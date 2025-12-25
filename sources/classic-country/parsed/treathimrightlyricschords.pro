@@ -1,6 +1,6 @@
 {meta: title Treat Him Right}
 {meta: artist Barbara Mandrell}
-{meta: writer Roy Head and Gene Kurtz}
+{meta: composer Roy Head and Gene Kurtz}
 
 {start_of_verse: Verse 1}
 [C]I wanna tell you a story every girl oughta know

@@ -1,6 +1,6 @@
 {meta: title Too Hard To Say I’m Sorry}
 {meta: artist Charley Pride}
-{meta: writer Jack Clement and Jack D. Johnson}
+{meta: composer Jack Clement and Jack D. Johnson}
 
 {start_of_verse: Verse 1}
 [G]Just two words [C]were all that she would [G]ask of me

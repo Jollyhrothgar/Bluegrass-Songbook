@@ -1,6 +1,6 @@
 {meta: title If You're Gonna Play In Texas}
 {meta: artist Alabama}
-{meta: writer Dan Mitchell and Murray Kellum}
+{meta: composer Dan Mitchell and Murray Kellum}
 
 {start_of_verse: Verse 1}
 [G]If you're gonna play in [D7]Texas you [C]gotta have a fiddle in the [G]band

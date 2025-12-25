@@ -1,6 +1,6 @@
 {meta: title Red Roses (Won't Work Now)}
 {meta: artist Reba McEntire}
-{meta: writer Jimbeau Hinson and Dori Murphy}
+{meta: composer Jimbeau Hinson and Dori Murphy}
 
 {start_of_verse: Verse 1}
 [C]Red roses [G7]just won't work [C]now

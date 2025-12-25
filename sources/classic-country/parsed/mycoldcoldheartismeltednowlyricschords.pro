@@ -1,6 +1,6 @@
 {meta: title My Cold Cold Heart Is Melted Now}
 {meta: artist Kitty Wells}
-{meta: writer Hank Williams and Johnny Masters}
+{meta: composer Hank Williams and Johnny Masters}
 
 {start_of_verse: Verse 1}
 [G]My cold cold heart  [G7]is melted [C]now

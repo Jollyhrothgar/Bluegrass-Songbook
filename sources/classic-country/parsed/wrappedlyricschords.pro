@@ -1,6 +1,6 @@
 {meta: title Wrapped}
 {meta: artist George Strait}
-{meta: writer Bruce Robison}
+{meta: composer Bruce Robison}
 
 {start_of_verse: Verse 1}
 [C]I didn't have to turn my head when[Am]ever you walked in

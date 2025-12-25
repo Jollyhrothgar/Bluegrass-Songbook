@@ -1,6 +1,6 @@
 {meta: title I Love You More}
 {meta: artist Jim Reeves}
-{meta: writer Martin Greene and Jim Reeves}
+{meta: composer Martin Greene and Jim Reeves}
 
 {start_of_verse: Verse 1}
 [G]I love you more than every [C]wave that breaks [D7]upon

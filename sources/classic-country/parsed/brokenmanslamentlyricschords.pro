@@ -1,5 +1,5 @@
 {meta: artist Emmylou Harris}
-{meta: writer Mark Germino}
+{meta: composer Mark Germino}
 
 {start_of_verse: Verse 1}
 [G]I was once a broken man I [C]was once a broken [G]fool

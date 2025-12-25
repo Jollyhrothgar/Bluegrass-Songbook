@@ -1,6 +1,6 @@
 {meta: title Every Minute I Want Jesus By My Side}
 {meta: artist Johnny Paycheck}
-{meta: writer Country Johnny Mathis}
+{meta: composer Country Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [G]I want to be a help to Jesus every[D7]day

@@ -1,6 +1,6 @@
 {meta: title Singing His Praise}
 {meta: artist Kitty Wells}
-{meta: writer J.R. Owens}
+{meta: composer J.R. Owens}
 
 {start_of_verse: Verse 1}
 [C]Since my soul has been redeemed and from [F]sin I am made [C]clean

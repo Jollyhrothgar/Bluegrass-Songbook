@@ -1,6 +1,6 @@
 {meta: title Woman Let Me Sing You A Song}
 {meta: artist Lefty Frizzel}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [G]Woman let me [D7]sing you a [G]song

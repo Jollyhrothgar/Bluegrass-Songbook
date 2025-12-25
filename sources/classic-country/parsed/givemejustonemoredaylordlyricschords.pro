@@ -1,6 +1,6 @@
 {meta: title Give Me Just One More Day Lord}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery and Melba Montgomery}
+{meta: composer Earl Montgomery and Melba Montgomery}
 
 {start_of_verse: Verse 1}
 [G]In thy holy name won't you give me just another day

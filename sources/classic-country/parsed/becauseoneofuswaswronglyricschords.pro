@@ -1,6 +1,6 @@
 {meta: title Because One Of Us Was Wrong}
 {meta: artist Porter Wagoner}
-{meta: writer Tom Paxton and Bill Owens}
+{meta: composer Tom Paxton and Bill Owens}
 
 {start_of_verse: Verse 1}
 [C]I'm sorry I was [G7]weak enough to step out on [C]you

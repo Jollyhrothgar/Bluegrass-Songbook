@@ -1,6 +1,6 @@
 {meta: title Last Of The Silver Screen Cowboys}
 {meta: artist Rex Allen Jr.}
-{meta: writer Steve Dorff, Milton Brown, Snuff Garrett}
+{meta: composer Steve Dorff, Milton Brown, Snuff Garrett}
 
 {start_of_verse: Verse 1}
 [C]The last of the [E7]silver screen [Am]cowboys[G7]

@@ -1,6 +1,6 @@
 {meta: title The Winner Of Your Heart}
 {meta: artist Kitty Wells}
-{meta: writer Johnnie Masters}
+{meta: composer Johnnie Masters}
 
 {start_of_verse: Verse 1}
 [C]If you could read my mind you [G7]wouldn't be so blind

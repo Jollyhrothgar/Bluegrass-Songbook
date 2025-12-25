@@ -1,6 +1,6 @@
 {meta: title Home}
 {meta: artist Roger Miller}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]I've been a traveler the most of my life

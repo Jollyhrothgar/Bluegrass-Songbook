@@ -1,6 +1,6 @@
 {meta: title Fly Trouble}
 {meta: artist Hank Williams}
-{meta: writer Fred Rose, Bunny Biggs, Honey Wilds}
+{meta: composer Fred Rose, Bunny Biggs, Honey Wilds}
 
 {start_of_verse: Verse 1}
 [C]Did you ever sit straight up in bed

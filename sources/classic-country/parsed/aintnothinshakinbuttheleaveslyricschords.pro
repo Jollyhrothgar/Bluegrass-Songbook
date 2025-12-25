@@ -1,6 +1,6 @@
 {meta: title Ain't Nothin' Shakin' (But The Leaves)}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G]Well ever since the day that you left me 

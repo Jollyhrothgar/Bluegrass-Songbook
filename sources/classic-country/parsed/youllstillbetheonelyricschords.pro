@@ -1,6 +1,6 @@
 {meta: title You'll Still Be The One}
 {meta: artist Charley Pride}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [C]When other arms [F]have held me close 

@@ -1,6 +1,6 @@
 {meta: title When I Said I Do}
 {meta: artist Clint Black with Lisa Hartman Black}
-{meta: writer Clint Black}
+{meta: composer Clint Black}
 
 {start_of_verse: Verse 1}
 [G]These times are troubled and [D7]these times are good

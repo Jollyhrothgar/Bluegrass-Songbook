@@ -1,6 +1,6 @@
 {meta: title In A Moment Of Weakness}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone and Paul Nelson}
+{meta: composer Larry Boone and Paul Nelson}
 
 {start_of_verse: Verse 1}
 [G7]I knew she was [C]lonely and I was [Am]alone

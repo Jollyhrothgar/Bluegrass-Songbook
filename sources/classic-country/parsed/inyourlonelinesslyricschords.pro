@@ -1,6 +1,6 @@
 {meta: title In Your Loneliness}
 {meta: artist Rhonda Vincent}
-{meta: writer Harley Allen}
+{meta: composer Harley Allen}
 
 {start_of_verse: Verse 1}
 [C]You try and you try but [G7]each day goes by

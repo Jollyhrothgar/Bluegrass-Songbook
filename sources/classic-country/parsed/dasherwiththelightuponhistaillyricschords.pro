@@ -1,6 +1,6 @@
 {meta: title Dasher With The Light Upon His Tail}
 {meta: artist Kitty Wells}
-{meta: writer Warner H. McPherson}
+{meta: composer Warner H. McPherson}
 
 {start_of_verse: Verse 1}
 [G]Did you ever wonder how Santa gets his light to [D7]see

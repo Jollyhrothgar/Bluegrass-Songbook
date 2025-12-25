@@ -1,6 +1,6 @@
 {meta: title All I Have To Offer You Is Love}
 {meta: artist Tanya Tucker}
-{meta: writer Craig Wiseman}
+{meta: composer Craig Wiseman}
 
 {start_of_verse: Verse 1}
 [G]If all you want's a [D7]good time baby [Em]there's a party down the [C]street

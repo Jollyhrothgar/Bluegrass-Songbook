@@ -1,6 +1,6 @@
 {meta: title I Don't Need A Thing At All}
 {meta: artist Gene Watson}
-{meta: writer Joseph Allen}
+{meta: composer Joseph Allen}
 
 {start_of_verse: Verse 1}
 [C]Some folks go out dancing  [F]it seems to be their thing

@@ -1,6 +1,6 @@
 {meta: title Learning To Live Again}
 {meta: artist Garth Brooks}
-{meta: writer Don Schlitz and Stephanie Davis}
+{meta: composer Don Schlitz and Stephanie Davis}
 
 {start_of_verse: Verse 1}
 [F]I burned my [C]hand and I cut my face 

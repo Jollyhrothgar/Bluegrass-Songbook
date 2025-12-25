@@ -1,6 +1,6 @@
 {meta: title Baby's Gotten Good At Goodbye}
 {meta: artist George Strait}
-{meta: writer Tony Martin and Troy Martin}
+{meta: composer Tony Martin and Troy Martin}
 
 {start_of_verse: Verse 1}
 [C]What a rotten day [F]this turned out to [C]be

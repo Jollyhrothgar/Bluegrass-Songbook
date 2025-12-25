@@ -1,6 +1,6 @@
 {meta: title Say You Lied}
 {meta: artist J.D. Crowe}
-{meta: writer Howard Russell Smith}
+{meta: composer Howard Russell Smith}
 
 {start_of_verse: Verse 1}
 [G]I was a fool to say I didn’t love you

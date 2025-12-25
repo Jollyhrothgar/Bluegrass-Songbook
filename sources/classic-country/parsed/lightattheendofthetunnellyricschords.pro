@@ -1,6 +1,6 @@
 {meta: title Light At The End Of The Tunnel}
 {meta: artist B.B. Watson}
-{meta: writer Richard William Fagan, Kim E. Williams, M. Williams}
+{meta: composer Richard William Fagan, Kim E. Williams, M. Williams}
 
 {start_of_verse: Verse 1}
 [C]I’m in financial quicksand sinkin’ deep in debt

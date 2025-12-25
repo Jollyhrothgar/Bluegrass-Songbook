@@ -1,6 +1,6 @@
 {meta: title In The Shadows Of The Wine}
 {meta: artist Porter Wagoner}
-{meta: writer Dusty Rose}
+{meta: composer Dusty Rose}
 
 {start_of_verse: Verse 1}
 [C]In the shadows of the wine

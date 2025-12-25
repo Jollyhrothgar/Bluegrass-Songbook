@@ -1,6 +1,6 @@
 {meta: title Something Old Something New}
 {meta: artist Eddy Arnold}
-{meta: writer Cy Coben and Charles Grean}
+{meta: composer Cy Coben and Charles Grean}
 
 {start_of_verse: Verse 1}
 Something [C]old something [C7]new 

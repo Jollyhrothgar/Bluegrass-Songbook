@@ -1,6 +1,6 @@
 {meta: title Send Me Down To Tucson}
 {meta: artist Mel Tillis}
-{meta: writer Cliff Crofford and Snuff Garrett}
+{meta: composer Cliff Crofford and Snuff Garrett}
 
 {start_of_verse: Verse 1}
 [C]No one wants to [Em]go down to [Am]Tucson in the [Em]summer 

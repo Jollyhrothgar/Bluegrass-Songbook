@@ -1,6 +1,6 @@
 {meta: title God Made Her Special}
 {meta: artist Wayne Kemp}
-{meta: writer Wayne Kemp and Danny Walls}
+{meta: composer Wayne Kemp and Danny Walls}
 
 {start_of_verse: Verse 1}
 [G7](God made her special especially for [C]me)

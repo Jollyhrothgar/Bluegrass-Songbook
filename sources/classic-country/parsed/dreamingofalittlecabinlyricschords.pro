@@ -1,6 +1,6 @@
 {meta: title Dreaming Of A Little Cabin}
 {meta: artist Mac Wiseman}
-{meta: writer Wade Mainer}
+{meta: composer Wade Mainer}
 
 {start_of_verse: Verse 1}
 [G]In dreams of yesterday I wander back [C]to my little cabin [G]door

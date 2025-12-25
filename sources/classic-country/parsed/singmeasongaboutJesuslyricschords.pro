@@ -1,6 +1,6 @@
 {meta: title Sing Me A Song About Jesus}
 {meta: artist Doyle Lawson}
-{meta: writer Corey Hensley, Doyle Lawson, Michael Rogers}
+{meta: composer Corey Hensley, Doyle Lawson, Michael Rogers}
 
 {start_of_verse: Verse 1}
 [G]Sing me a [C]song about [G]Jesus 

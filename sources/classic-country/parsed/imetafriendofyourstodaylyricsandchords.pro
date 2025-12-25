@@ -1,6 +1,6 @@
 {meta: title I Met A Friend Of Yours Today}
 {meta: artist George Strait}
-{meta: writer Bob McDill and Wayland Holyfield}
+{meta: composer Bob McDill and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]Yes I know I'm late gettin' home [F]tonight

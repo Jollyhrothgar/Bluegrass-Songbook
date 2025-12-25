@@ -1,6 +1,6 @@
 {meta: title Broken Heartsville}
 {meta: artist Johnny Rodriguez}
-{meta: writer Clint Daniels and Donny Keys}
+{meta: composer Clint Daniels and Donny Keys}
 
 {start_of_verse: Verse 1}
 [C]He wore that cowboy [G7]hat to cover up his [Am]horns

@@ -1,6 +1,6 @@
 {meta: title My Juanita}
 {meta: artist Jim Reeves}
-{meta: writer Jim Reeves and Caroline Norton}
+{meta: composer Jim Reeves and Caroline Norton}
 
 {start_of_verse: Verse 1}
 [G]Nita Jua[C]nita [D7]ask Thy soul if we [G]should part

@@ -1,6 +1,6 @@
 {meta: title Amigo's Guitar}
 {meta: artist Kitty Wells}
-{meta: writer John D. Loudermilk, Roy Botkin, Kitty Wells}
+{meta: composer John D. Loudermilk, Roy Botkin, Kitty Wells}
 
 {start_of_verse: Verse 1}
 Amigo's guitar

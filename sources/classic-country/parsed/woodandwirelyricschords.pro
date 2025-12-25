@@ -1,6 +1,6 @@
 {meta: title Wood And Wire}
 {meta: artist George Jones}
-{meta: writer Kenny Beard and Michael Mahler}
+{meta: composer Kenny Beard and Michael Mahler}
 
 {start_of_verse: Verse 1}
 [C]Find a dream  put off for the families needs 

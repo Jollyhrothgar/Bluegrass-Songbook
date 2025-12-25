@@ -1,6 +1,6 @@
 {meta: title Cotton Mill Man}
 {meta: artist Jim and Jesse}
-{meta: writer Joe Langston}
+{meta: composer Joe Langston}
 
 {start_of_verse: Verse 1}
 [C]I was born in the shadow of a cotton mill smokestack

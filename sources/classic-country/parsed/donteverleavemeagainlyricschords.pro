@@ -1,6 +1,6 @@
 {meta: title Don't Ever Leave Me Again}
 {meta: artist Patsy Cline}
-{meta: writer Lillian Claiborne, Virginia Hensley, James Crawford}
+{meta: composer Lillian Claiborne, Virginia Hensley, James Crawford}
 
 {start_of_verse: Verse 1}
 [C]Wake up every morning heart's full of [E7]pain 

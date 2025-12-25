@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Crowd}
 {meta: artist John Anderson}
-{meta: writer Larry Cordle and Lionel Delmore}
+{meta: composer Larry Cordle and Lionel Delmore}
 
 {start_of_verse: Verse 1}
 Honky Tonk Crowd

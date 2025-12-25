@@ -1,6 +1,6 @@
 {meta: title Slippin' And Slidin'}
 {meta: artist Buddy Holly}
-{meta: writer Eddie Bocage, Albert Collins,}
+{meta: composer Eddie Bocage, Albert Collins,}
 
 {start_of_verse: Verse 1}
 [C]Slippin' and a-slidin' peepin' and a-hidin'

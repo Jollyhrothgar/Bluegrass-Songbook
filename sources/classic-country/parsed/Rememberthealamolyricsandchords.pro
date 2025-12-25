@@ -1,6 +1,6 @@
 {meta: title Remember The Alamo}
 {meta: artist George Strait}
-{meta: writer Wayne Kirkpatrick and Gordon Kennedy}
+{meta: composer Wayne Kirkpatrick and Gordon Kennedy}
 
 {start_of_verse: Verse 1}
 [C]Girl you were always [F]my yellow rose 

@@ -1,6 +1,6 @@
 {meta: title Oklahoma Sunshine}
 {meta: artist Waylon Jennings}
-{meta: writer Hal Bynum and Bud Reneau}
+{meta: composer Hal Bynum and Bud Reneau}
 
 {start_of_verse: Verse 1}
 [G]New York woman trying to make me love her

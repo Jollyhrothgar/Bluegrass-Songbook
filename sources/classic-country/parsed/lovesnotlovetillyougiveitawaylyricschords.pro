@@ -1,6 +1,6 @@
 {meta: title Love's Not Love (Till You Give It Away)}
 {meta: artist Bill Anderson}
-{meta: writer Glenn Martin and Ronnie Sessions}
+{meta: composer Glenn Martin and Ronnie Sessions}
 
 {start_of_verse: Verse 1}
 [G]A bell's not a bell till you [D7]ring it

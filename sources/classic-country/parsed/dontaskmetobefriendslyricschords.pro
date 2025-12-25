@@ -1,6 +1,6 @@
 {meta: title Don't Ask Me to be Friends}
 {meta: artist Everly Brothers}
-{meta: writer Gerald Goffin and Jack Keller}
+{meta: composer Gerald Goffin and Jack Keller}
 
 {start_of_verse: Verse 1}
 [G]After all we've [C]been  to [G]one [D7]another

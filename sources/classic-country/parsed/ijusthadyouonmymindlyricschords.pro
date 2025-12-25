@@ -1,6 +1,6 @@
 {meta: title I Just Had You On My Mind}
 {meta: artist Jean Shepard}
-{meta: writer Sue Richards}
+{meta: composer Sue Richards}
 
 {start_of_verse: Verse 1}
 [G]Don't let this call bother you in any [C]way

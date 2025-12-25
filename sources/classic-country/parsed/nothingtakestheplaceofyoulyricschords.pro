@@ -1,6 +1,6 @@
 {meta: title Nothing Takes The Place Of You}
 {meta: artist Asleep at the Wheel}
-{meta: writer Toussaint McCall and Pat Robinson}
+{meta: composer Toussaint McCall and Pat Robinson}
 
 {start_of_verse: Verse 1}
 [C]I moved your pictures [Am]from my walls

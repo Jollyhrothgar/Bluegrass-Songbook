@@ -1,6 +1,6 @@
 {meta: title When Mama Ain't Happy}
 {meta: artist Tracy Byrd}
-{meta: writer Rick Giles, Tim Nichols, Gilles Godard}
+{meta: composer Rick Giles, Tim Nichols, Gilles Godard}
 
 {start_of_verse: Verse 1}
 [C]Ever since [F]Monday [G7]I've seen it [C]comin'

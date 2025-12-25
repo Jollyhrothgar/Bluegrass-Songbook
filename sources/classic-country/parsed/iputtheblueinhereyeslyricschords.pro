@@ -1,5 +1,5 @@
 {meta: artist Carl Smith lyrics and chords}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [C]Her skin is as [G7]soft as a [C]baby

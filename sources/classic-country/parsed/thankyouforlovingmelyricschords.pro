@@ -1,6 +1,6 @@
 {meta: title Thank You For Loving Me}
 {meta: artist Norma Jean}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G7]Thank you for loving me thank you sweet[C]heart [F]

@@ -1,6 +1,6 @@
 {meta: title Life In The Old Farm Town}
 {meta: artist Bill Emerson}
-{meta: writer Vince Gill}
+{meta: composer Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]The sun's burning [C7]down on [F]this cold hard [C]ground

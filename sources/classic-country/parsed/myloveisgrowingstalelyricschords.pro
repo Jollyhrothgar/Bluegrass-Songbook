@@ -1,6 +1,6 @@
 {meta: title My Love Is Growing Stale}
 {meta: artist Slim Whitman}
-{meta: writer Marvin Lacy}
+{meta: composer Marvin Lacy}
 
 {start_of_verse: Verse 1}
 [G]It's been so long since I've [C]had a little loving

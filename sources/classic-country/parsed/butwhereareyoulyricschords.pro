@@ -1,6 +1,6 @@
 {meta: title But Where Are You}
 {meta: artist Ferlin Husky}
-{meta: writer Irving Berlin}
+{meta: composer Irving Berlin}
 
 {start_of_verse: Verse 1}
 [G]The moon is high the sky is blue

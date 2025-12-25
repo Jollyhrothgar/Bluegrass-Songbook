@@ -1,6 +1,6 @@
 {meta: title Queen Of The House}
 {meta: artist Jody Miller}
-{meta: writer Roger Miller and Mary Taylor}
+{meta: composer Roger Miller and Mary Taylor}
 
 {start_of_verse: Verse 1}
 [C]Up every [F]day at six  [G7]bacon and [C]eggs to fix

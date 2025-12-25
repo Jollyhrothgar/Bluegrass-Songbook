@@ -1,6 +1,6 @@
 {meta: title Hello Heart}
 {meta: artist George Jones}
-{meta: writer Melba Montgomery and Billy Yates}
+{meta: composer Melba Montgomery and Billy Yates}
 
 {start_of_verse: Verse 1}
 [C]Hello heart well I'm glad you came a [F]knocking

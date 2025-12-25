@@ -1,6 +1,6 @@
 {meta: title It Happened Last Night}
 {meta: artist Connie Francis}
-{meta: writer Leonard Whitcup and Earl Wilson}
+{meta: composer Leonard Whitcup and Earl Wilson}
 
 {start_of_verse: Verse 1}
 [C]Oh it happened last night as we sat in the movies

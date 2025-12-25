@@ -1,6 +1,6 @@
 {meta: title Raining In My Heart}
 {meta: artist Wanda Jackson}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]The sun is out the sky is blue 

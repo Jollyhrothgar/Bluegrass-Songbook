@@ -1,6 +1,6 @@
 {meta: title The Blame}
 {meta: artist Highway 101}
-{meta: writer Cactus Moser and Gene Nelson}
+{meta: composer Cactus Moser and Gene Nelson}
 
 {start_of_verse: Verse 1}
 [G]I guess I could say you [C]never [D7]held me [G]close

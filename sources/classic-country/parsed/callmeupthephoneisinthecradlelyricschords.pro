@@ -1,6 +1,6 @@
 {meta: title Call Me Up (The Phone Is In The Cradle)}
 {meta: artist Kenny Rogers}
-{meta: writer Kim Carnes and Dave Ellingson}
+{meta: composer Kim Carnes and Dave Ellingson}
 
 {start_of_verse: Verse 1}
 [F]My friends they don't talk much bout the [A]legend

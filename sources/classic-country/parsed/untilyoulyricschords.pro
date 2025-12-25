@@ -1,6 +1,6 @@
 {meta: title Until You}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Jimbeau Hinson and Rusty Golden}
+{meta: composer Jimbeau Hinson and Rusty Golden}
 
 {start_of_verse: Verse 1}
 [C]Baby feel my [Em]heartbeat

@@ -1,6 +1,6 @@
 {meta: title After The Best}
 {meta: artist Crystal Gayle}
-{meta: writer Bernie Nelson and Thomas Eugene McHugh}
+{meta: composer Bernie Nelson and Thomas Eugene McHugh}
 
 {start_of_verse: Verse 1}
 [G]You were the one true [C]love for [G]me [C]

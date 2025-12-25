@@ -1,6 +1,6 @@
 {meta: title Love Is}
 {meta: artist Emmylou Harris}
-{meta: writer Kate McGarrigle, Anna McGarrigle}
+{meta: composer Kate McGarrigle, Anna McGarrigle}
 
 {start_of_verse: Verse 1}
 [F]Love is a [G7]shiny [C]car [F]love is a [G7]steel gui[C]tar

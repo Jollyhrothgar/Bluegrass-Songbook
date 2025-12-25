@@ -1,6 +1,6 @@
 {meta: title Open Up Your Heart}
 {meta: artist Wynn Stewart}
-{meta: writer Lance Guyness}
+{meta: composer Lance Guyness}
 
 {start_of_verse: Verse 1}
 [G]You are the key to my happiness lock out the [D7]loneliness

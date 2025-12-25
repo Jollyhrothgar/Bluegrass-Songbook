@@ -1,6 +1,6 @@
 {meta: title Wild In The Country}
 {meta: artist Elvis Presley}
-{meta: writer Luigi Creatore, Hugo Peretti, George David Weiss}
+{meta: composer Luigi Creatore, Hugo Peretti, George David Weiss}
 
 {start_of_verse: Verse 1}
 [C]A rose grows wild in the [F]country

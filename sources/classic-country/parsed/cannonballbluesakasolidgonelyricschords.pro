@@ -1,6 +1,6 @@
 {meta: title Cannonball Blues (aka Solid Gone)}
 {meta: artist Doc Watson}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I'm happy and sometimes I'm blue

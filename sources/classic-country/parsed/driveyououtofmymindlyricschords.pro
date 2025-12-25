@@ -1,6 +1,6 @@
 {meta: title Drive You Out Of My Mind}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Lorene Allen}
+{meta: composer Loretta Lynn and Lorene Allen}
 
 {start_of_verse: Verse 1}
 [G]I know I shouldn't bother you cause you asked me not to call

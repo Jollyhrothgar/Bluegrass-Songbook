@@ -1,6 +1,6 @@
 {meta: title Kid Stuff}
 {meta: artist Barbara Fairchild}
-{meta: writer Jerry Crutchfield and Don Earl}
+{meta: composer Jerry Crutchfield and Don Earl}
 
 {start_of_verse: Verse 1}
 [C]I often think of younger days a boy a girl and backyard play

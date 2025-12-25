@@ -1,6 +1,6 @@
 {meta: title My Old Hometown}
 {meta: artist Hank Locklin}
-{meta: writer Hoyt Johnson and Kermit Barrett}
+{meta: composer Hoyt Johnson and Kermit Barrett}
 
 {start_of_verse: Verse 1}
 [C]I've seen Big Ben in London town the lights of gay Pa[C7]ree 

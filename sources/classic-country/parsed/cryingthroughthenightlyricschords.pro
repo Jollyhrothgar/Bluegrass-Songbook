@@ -1,6 +1,6 @@
 {meta: title Crying Through The Night}
 {meta: artist Wanda Jackson}
-{meta: writer Morton Devand}
+{meta: composer Morton Devand}
 
 {start_of_verse: Verse 1}
 [C]The wind is cold and overhead the sky has lost it's [G7]light

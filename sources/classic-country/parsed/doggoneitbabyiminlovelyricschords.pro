@@ -1,6 +1,6 @@
 {meta: title Doggone It Baby I'm In Love}
 {meta: artist Carl Smith}
-{meta: writer Arrett Keefer and Jack Amway}
+{meta: composer Arrett Keefer and Jack Amway}
 
 {start_of_verse: Verse 1}
 [C]Love knocks once and never later

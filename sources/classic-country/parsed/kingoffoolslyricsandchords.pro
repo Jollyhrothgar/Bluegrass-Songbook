@@ -1,6 +1,6 @@
 {meta: title King Of Fools}
 {meta: artist Dwight Yoakam}
-{meta: writer Dwight Yoakam and Kostas}
+{meta: composer Dwight Yoakam and Kostas}
 
 {start_of_verse: Verse 1}
 [C]As you [G7]look into my eyes and tell those empty lies

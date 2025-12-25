@@ -1,6 +1,6 @@
 {meta: title Tonight The Heartache's On Me}
 {meta: artist Lacy J. Dalton}
-{meta: writer Mary Francis, Johnny MacRae, Bob Morrison}
+{meta: composer Mary Francis, Johnny MacRae, Bob Morrison}
 
 {start_of_verse: Verse 1}
 You could'a heard a [C]pin drop when [C7]they walked through the [F]door

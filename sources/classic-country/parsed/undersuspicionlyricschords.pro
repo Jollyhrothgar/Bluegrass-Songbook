@@ -1,6 +1,6 @@
 {meta: title Under Suspicion}
 {meta: artist Jean Shepard}
-{meta: writer Ben Raleigh and Ira Kosloff}
+{meta: composer Ben Raleigh and Ira Kosloff}
 
 {start_of_verse: Verse 1}
 [G]Every time you see me talkin' to a boy that I once [D7]knew

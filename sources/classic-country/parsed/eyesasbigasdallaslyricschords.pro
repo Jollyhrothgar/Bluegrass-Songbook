@@ -1,6 +1,6 @@
 {meta: title Eyes As Big As Dallas}
 {meta: artist Wynn Stewart}
-{meta: writer Gary McCray}
+{meta: composer Gary McCray}
 
 {start_of_verse: Verse 1}
 [C]She came on as strong as a south Texas wind

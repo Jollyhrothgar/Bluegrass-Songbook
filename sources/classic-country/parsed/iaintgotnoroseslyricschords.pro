@@ -1,6 +1,6 @@
 {meta: title I Ain't Got No Roses}
 {meta: artist Billy Walker}
-{meta: writer Jane Cozzo}
+{meta: composer Jane Cozzo}
 
 {start_of_verse: Verse 1}
 [C]I ain't got no [A7]roses [D7]everyone has roses but me

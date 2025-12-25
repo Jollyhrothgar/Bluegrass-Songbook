@@ -1,6 +1,6 @@
 {meta: title Sugarfoot Rag}
 {meta: artist Porter Wagoner}
-{meta: writer Hank Garland}
+{meta: composer Hank Garland}
 
 {start_of_verse: Verse 1}
 [G]Gonna get out my sycamore and shine up my [F]shoes 

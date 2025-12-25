@@ -1,6 +1,6 @@
 {meta: title What's Come Over My Baby}
 {meta: artist Dottie West}
-{meta: writer Dottie West and Bill West}
+{meta: composer Dottie West and Bill West}
 
 {start_of_verse: Verse 1}
 [C]What changed the look in his [F]eyes

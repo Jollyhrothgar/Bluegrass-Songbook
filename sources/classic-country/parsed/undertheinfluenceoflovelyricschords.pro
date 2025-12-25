@@ -1,6 +1,6 @@
 {meta: title Under The Influence Of Love}
 {meta: artist Buck Owens}
-{meta: writer Harlan Howard and Buck Owens}
+{meta: composer Harlan Howard and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]She knew I knew that she was out to get [C]me

@@ -1817,7 +1817,7 @@ function editorGenerateChordPro() {
 
     if (title) output += `{meta: title ${title}}\n`;
     if (artist) output += `{meta: artist ${artist}}\n`;
-    if (writer) output += `{meta: writer ${writer}}\n`;
+    if (writer) output += `{meta: composer ${writer}}\n`;
 
     if (output) output += '\n';
 

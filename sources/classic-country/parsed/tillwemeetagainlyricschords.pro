@@ -1,6 +1,6 @@
 {meta: title Till We Meet Again}
 {meta: artist Connie Francis}
-{meta: writer Raymond Egan and Richard Whiting}
+{meta: composer Raymond Egan and Richard Whiting}
 
 {start_of_verse: Verse 1}
 [D7](Till we [G7]meet a[C]gain)[G7]

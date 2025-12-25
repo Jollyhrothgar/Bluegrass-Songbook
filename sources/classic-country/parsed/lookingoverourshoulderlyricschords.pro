@@ -1,6 +1,6 @@
 {meta: title Looking Over Our Shoulder}
 {meta: artist Kitty Wells}
-{meta: writer Carol Johnson}
+{meta: composer Carol Johnson}
 
 {start_of_verse: Verse 1}
 [C]We have too many se[C7]crets you and [F]me

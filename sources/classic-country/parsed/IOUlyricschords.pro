@@ -1,6 +1,6 @@
 {meta: title I.O.U.}
 {meta: artist Lee Greenwood}
-{meta: writer Kerry Chater and Austin Roberts}
+{meta: composer Kerry Chater and Austin Roberts}
 
 {start_of_verse: Verse 1}
 [G]You believe that I've [Em]changed your life forever

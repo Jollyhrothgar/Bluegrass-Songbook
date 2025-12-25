@@ -1,6 +1,6 @@
 {meta: title Back To The Well}
 {meta: artist Kenny Rogers}
-{meta: writer Robert Byrne and Rick Bowles}
+{meta: composer Robert Byrne and Rick Bowles}
 
 {start_of_verse: Verse 1}
 [C]When my home is so far away

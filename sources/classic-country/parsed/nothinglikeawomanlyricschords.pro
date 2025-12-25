@@ -1,6 +1,6 @@
 {meta: title Nothing Like A Woman}
 {meta: artist Vince Gill}
-{meta: writer Reed Nielsen and Vince Gill}
+{meta: composer Reed Nielsen and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]Oh there's [G]nothing like a woman [C] when you're [G]all alone[C]

@@ -1,6 +1,6 @@
 {meta: title A New Way To Fly}
 {meta: artist Garth Brooks}
-{meta: writer Kim Williams and Garth Brooks}
+{meta: composer Kim Williams and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G]Like birds on a high line they line up at night time at the [D7]bar

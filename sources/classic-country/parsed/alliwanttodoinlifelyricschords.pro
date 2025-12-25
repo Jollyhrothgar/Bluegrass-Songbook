@@ -1,6 +1,6 @@
 {meta: title All I Want To Do In Life}
 {meta: artist George Jones}
-{meta: writer Jack Clements}
+{meta: composer Jack Clements}
 
 {start_of_verse: Verse 1}
 [C]You've been right and [F]I've been [F][C]wrong

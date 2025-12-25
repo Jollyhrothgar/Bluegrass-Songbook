@@ -1,6 +1,6 @@
 {meta: title Come On Home}
 {meta: artist Tammy Wynette}
-{meta: writer Jack Rhodes and George Richey}
+{meta: composer Jack Rhodes and George Richey}
 
 {start_of_verse: Verse 1}
 [C]Go on with your new love have a [F]good good [C]time

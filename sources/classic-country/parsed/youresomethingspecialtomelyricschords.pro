@@ -1,6 +1,6 @@
 {meta: title You're Something Special To Me}
 {meta: artist George Strait}
-{meta: writer David Anthony}
+{meta: composer David Anthony}
 
 {start_of_verse: Verse 1}
 [G7]As I hold you [C]close tonight [F]hear what I [C]say

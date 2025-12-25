@@ -1,6 +1,6 @@
 {meta: title The Three Bells}
 {meta: artist Jim Ed Brown}
-{meta: writer Bert Reinsford and Jean Villard}
+{meta: composer Bert Reinsford and Jean Villard}
 
 {start_of_verse: Verse 1}
 [C]There's a village hidden deep in the valley

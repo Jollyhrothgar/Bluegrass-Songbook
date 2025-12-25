@@ -1,6 +1,6 @@
 {meta: title Frosty The Snow Man}
 {meta: artist Brenda Lee}
-{meta: writer S. Nelson and J. Rollins}
+{meta: composer S. Nelson and J. Rollins}
 
 {start_of_verse: Verse 1}
 [C]Frosty the Snow Man

@@ -1,6 +1,6 @@
 {meta: title Good Leavin' Alone}
 {meta: artist Hank Williams Jr.}
-{meta: writer Ronnie Self}
+{meta: composer Ronnie Self}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna give her a good a leavin' [G7]alone

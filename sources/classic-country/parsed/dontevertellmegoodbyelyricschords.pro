@@ -1,6 +1,6 @@
 {meta: title Don't Ever Tell Me Goodbye}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Red Simpson}
+{meta: composer Buck Owens and Red Simpson}
 
 {start_of_verse: Verse 1}
 [G]Hurt me as much as you want [D7]to 

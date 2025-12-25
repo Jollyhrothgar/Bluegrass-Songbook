@@ -1,6 +1,6 @@
 {meta: title O'Leary's Cow}
 {meta: artist Johnny Horton}
-{meta: writer Ray Winkler, Leroy Morris, Dave Stone}
+{meta: composer Ray Winkler, Leroy Morris, Dave Stone}
 
 {start_of_verse: Verse 1}
 [C]October eighteen seventy one 

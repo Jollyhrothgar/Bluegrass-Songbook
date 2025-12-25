@@ -1,6 +1,6 @@
 {meta: title With Body And Soul}
 {meta: artist Bill Monroe}
-{meta: writer Virginia Stauffer}
+{meta: composer Virginia Stauffer}
 
 {start_of_verse: Verse 1}
 [G]See the [F]train comin’ [G]around the bend

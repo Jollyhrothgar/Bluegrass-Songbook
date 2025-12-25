@@ -1,6 +1,6 @@
 {meta: title Going Home To Do My Time}
 {meta: artist Cal Smith}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [G]The barroom crowd is thinning out it [C]must be getting [G]late

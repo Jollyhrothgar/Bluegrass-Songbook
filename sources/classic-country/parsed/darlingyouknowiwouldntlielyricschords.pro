@@ -1,6 +1,6 @@
 {meta: title Darling You Know I Wouldn't Lie}
 {meta: artist Cal Smith}
-{meta: writer Wayne Kemp and Red Lane [3/4 time]}
+{meta: composer Wayne Kemp and Red Lane [3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]Here I am late again [C7]for the last [F]time

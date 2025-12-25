@@ -1,6 +1,6 @@
 {meta: title Storybook Children}
 {meta: artist Don Williams}
-{meta: writer Chip Taylor and Billy Vera}
+{meta: composer Chip Taylor and Billy Vera}
 
 {start_of_verse: Verse 1}
 [C]You've got your world and I've got [G7]mine and it's a [C]shame

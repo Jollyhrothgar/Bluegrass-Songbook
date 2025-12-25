@@ -1,6 +1,6 @@
 {meta: title In And Out Of Every Heart In Town}
 {meta: artist Ernest Tubb}
-{meta: writer Hugh Ashley}
+{meta: composer Hugh Ashley}
 
 {start_of_verse: Verse 1}
 [C]You've been [G7]in and out of every heart in [C]town

@@ -1,6 +1,6 @@
 {meta: title It Costs Too Much To Die}
 {meta: artist Lefty Frizzell}
-{meta: writer J.A. Balthrop}
+{meta: composer J.A. Balthrop}
 
 {start_of_verse: Verse 1}
 [C]I saw you with him last night [G7]Cadillac and all

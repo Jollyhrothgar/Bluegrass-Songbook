@@ -1,6 +1,6 @@
 {meta: title Mental Revenge}
 {meta: artist Waylon Jennings}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [G]I hope that the friend you've thrown yourself with

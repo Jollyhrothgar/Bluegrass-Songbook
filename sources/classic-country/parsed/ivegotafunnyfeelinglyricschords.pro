@@ -1,6 +1,6 @@
 {meta: title I've Got A Funny Feeling}
 {meta: artist George Strait}
-{meta: writer Harlan Howard and Jackson Leap}
+{meta: composer Harlan Howard and Jackson Leap}
 
 {start_of_verse: Verse 1}
 [G]Well my baby's wearin' a permanent smile

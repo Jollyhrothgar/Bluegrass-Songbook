@@ -1,6 +1,6 @@
 {meta: title Crime Of Passion}
 {meta: artist Ricky Van Shelton}
-{meta: writer Walt Aldridge and Mac McAnally}
+{meta: composer Walt Aldridge and Mac McAnally}
 
 {start_of_verse: Verse 1}
 [C]She had a ragtop El Dorado [F]tuck and roll [C]pleat

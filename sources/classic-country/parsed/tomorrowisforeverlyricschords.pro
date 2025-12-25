@@ -1,6 +1,6 @@
 {meta: title Tomorrow Is Forever}
 {meta: artist Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [G]Take my hand and run with me out of the [D7]past of [G]yesterday 

@@ -1,6 +1,6 @@
 {meta: title Secret Love}
 {meta: artist Anne Murray}
-{meta: writer Sammy Fain and Paul-Francis Webster}
+{meta: composer Sammy Fain and Paul-Francis Webster}
 
 {start_of_verse: Verse 1}
 [G]Once I had a secret love [C]

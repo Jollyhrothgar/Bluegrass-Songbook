@@ -1,6 +1,6 @@
 {meta: title Jailhouse Rock}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Leiber and Mike Stoller}
+{meta: composer Jerry Leiber and Mike Stoller}
 
 {start_of_verse: Verse 1}
 [C]The warden threw a party in the county jail

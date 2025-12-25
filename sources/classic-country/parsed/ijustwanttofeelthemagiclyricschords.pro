@@ -1,6 +1,6 @@
 {meta: title I Just Want To Feel The Magic}
 {meta: artist Tommy Overstreet}
-{meta: writer Rory Bourke and Mel McDaniel}
+{meta: composer Rory Bourke and Mel McDaniel}
 
 {start_of_verse: Verse 1}
 [G]A miracle man of love [D7]found me yester[G]day

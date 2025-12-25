@@ -1,6 +1,6 @@
 {meta: title Just Walk A Little Closer}
 {meta: artist Johnny Horton}
-{meta: writer Jimmie Dallas}
+{meta: composer Jimmie Dallas}
 
 {start_of_verse: Verse 1}
 [C]Just walk a [G7]little [C]closer [F]closer to [C]me

@@ -1,6 +1,6 @@
 {meta: title Borrowed Love}
 {meta: artist Dwight Yoakam}
-{meta: writer Earl Scruggs and Randy Scruggs}
+{meta: composer Earl Scruggs and Randy Scruggs}
 
 {start_of_verse: Verse 1}
 [G]At every glance you steal from [C]me

@@ -1,6 +1,6 @@
 {meta: title Old Satan}
 {meta: artist Larry Sparks}
-{meta: writer Jim Eanes and Lora Lowry}
+{meta: composer Jim Eanes and Lora Lowry}
 
 {start_of_verse: Verse 1}
 [C]Living in the world of mass confusion

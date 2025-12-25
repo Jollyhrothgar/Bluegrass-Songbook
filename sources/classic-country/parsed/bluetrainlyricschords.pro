@@ -1,6 +1,6 @@
 {meta: title Blue Train}
 {meta: artist Johnny Cash}
-{meta: writer Billy Smith}
+{meta: composer Billy Smith}
 
 {start_of_verse: Verse 1}
 [C]There's an engine at the station and the whistle blows my name

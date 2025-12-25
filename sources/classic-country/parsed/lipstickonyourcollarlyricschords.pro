@@ -1,6 +1,6 @@
 {meta: title Lipstick On Your Collar}
 {meta: artist Connie Francis}
-{meta: writer George Goehring and Edna Lewis}
+{meta: composer George Goehring and Edna Lewis}
 
 {start_of_verse: Verse 1}
 [G]When you left me all [Em]alone at [C]the record [D7]hop

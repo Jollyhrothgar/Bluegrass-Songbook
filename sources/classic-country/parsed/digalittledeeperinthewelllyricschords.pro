@@ -1,6 +1,6 @@
 {meta: title Dig A Little Deeper In The Well}
 {meta: artist The Oak Ridge Boys}
-{meta: writer R. Bowling and Martha Jo Emerson}
+{meta: composer R. Bowling and Martha Jo Emerson}
 
 {start_of_verse: Verse 1}
 [G]Dig dig dig a little deeper in the well boys 

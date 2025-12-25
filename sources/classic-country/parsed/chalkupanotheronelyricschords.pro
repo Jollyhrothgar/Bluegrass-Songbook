@@ -1,6 +1,6 @@
 {meta: title Chalk Up Another One}
 {meta: artist Jimmy Martin}
-{meta: writer H. Winston, Wilmer Neal}
+{meta: composer H. Winston, Wilmer Neal}
 
 {start_of_verse: Verse 1}
 [C]You should get a medal dear for every broken [G7]heart

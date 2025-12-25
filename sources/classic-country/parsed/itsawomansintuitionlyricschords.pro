@@ -1,6 +1,6 @@
 {meta: title It's A Woman's Intuition}
 {meta: artist Wilburn Brothers}
-{meta: writer Madelyn Burroughs}
+{meta: composer Madelyn Burroughs}
 
 {start_of_verse: Verse 1}
 [C]It's a woman's intuition that [F]arouses her suspicion

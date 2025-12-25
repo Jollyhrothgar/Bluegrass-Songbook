@@ -1,6 +1,6 @@
 {meta: title You Once Lived Here}
 {meta: artist Johnny Paycheck}
-{meta: writer Autry Inman}
+{meta: composer Autry Inman}
 
 {start_of_verse: Verse 1}
 [C]The Mayor gave me the [F]key to the [C]city

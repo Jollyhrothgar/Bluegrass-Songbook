@@ -1,6 +1,6 @@
 {meta: title Better Word For Love}
 {meta: artist Alabama}
-{meta: writer Gary Nicholson and Al Anderson}
+{meta: composer Gary Nicholson and Al Anderson}
 
 {start_of_verse: Verse 1}
 [Am]Here's another [Dm]morning [G7]soon she'll be [C]waking up

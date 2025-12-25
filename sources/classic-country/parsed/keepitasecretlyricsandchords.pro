@@ -1,6 +1,6 @@
 {meta: title Keep It a Secret}
 {meta: artist Slim Whitman}
-{meta: writer Jessie Mae Robinson}
+{meta: composer Jessie Mae Robinson}
 
 {start_of_verse: Verse 1}
 [C]If you see my darling with somebody [F]new

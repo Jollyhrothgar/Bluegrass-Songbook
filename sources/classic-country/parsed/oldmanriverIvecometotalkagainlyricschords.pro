@@ -1,6 +1,6 @@
 {meta: title Old Man River (I've Come To Talk Again)}
 {meta: artist Reba McEntire}
-{meta: writer Ronny Scaife and Danny Hogan}
+{meta: composer Ronny Scaife and Danny Hogan}
 
 {start_of_verse: Verse 1}
 [F]Cool breeze on the [G7]river [C]ripples [G7]to the [Am]shore

@@ -1,6 +1,6 @@
 {meta: title I'd Rather Be An Old Time Christian}
 {meta: artist The Kingsmen}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [C]In this world I've tried most everything

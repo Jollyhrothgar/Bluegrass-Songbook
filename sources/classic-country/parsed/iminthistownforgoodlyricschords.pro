@@ -1,6 +1,6 @@
 {meta: title I'm In This Town For Good}
 {meta: artist Johnny Duncan}
-{meta: writer Paul Evans}
+{meta: composer Paul Evans}
 
 {start_of_verse: Verse 1}
 [C]Today you said goodbye [D7]tears fell from my blue eyes

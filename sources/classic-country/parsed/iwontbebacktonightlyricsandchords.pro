@@ -1,6 +1,6 @@
 {meta: title I Won't Be Back Tonight}
 {meta: artist Bob Wills}
-{meta: writer Artie Glenn}
+{meta: composer Artie Glenn}
 
 {start_of_verse: Verse 1}
 [C]I won’t be back tonight or [F]ever

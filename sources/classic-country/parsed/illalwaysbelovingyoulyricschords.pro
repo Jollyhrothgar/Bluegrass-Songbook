@@ -1,6 +1,6 @@
 {meta: title I'll Always Be Loving You}
 {meta: artist George Strait}
-{meta: writer Aaron Baker, Donny Kees, Sanger D. Shafer}
+{meta: composer Aaron Baker, Donny Kees, Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]You can turn me loose tear me [G7]up and run me [C]down

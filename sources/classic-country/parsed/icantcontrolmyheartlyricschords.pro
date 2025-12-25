@@ -1,6 +1,6 @@
 {meta: title I Can't Control My Heart}
 {meta: artist Hank Snow}
-{meta: writer Mario DiNapoli and Lee Morris}
+{meta: composer Mario DiNapoli and Lee Morris}
 
 {start_of_verse: Verse 1}
 [G]Though I should say goodbye to you 

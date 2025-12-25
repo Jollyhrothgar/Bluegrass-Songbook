@@ -1,6 +1,6 @@
 {meta: title Canadian Pacific}
 {meta: artist Hank Snow}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]I rode your ocean liner to [Dm]Newfoundland

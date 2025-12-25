@@ -1,6 +1,6 @@
 {meta: title Bartender Blues}
 {meta: artist George Jones}
-{meta: writer James Taylor}
+{meta: composer James Taylor}
 
 {start_of_verse: Verse 1}
 [G]Well I'm just a [G7]bartender

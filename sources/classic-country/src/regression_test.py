@@ -24,8 +24,16 @@ import subprocess
 import sys
 import argparse
 import json
+import os
 from pathlib import Path
 from datetime import datetime
+
+# Paths relative to repo root (script is called from repo root by test runner)
+SOURCE_DIR = Path("sources/classic-country")
+SRC_DIR = SOURCE_DIR / "src"
+VALIDATOR_SCRIPT = SRC_DIR / "validator_cli.py"
+BATCH_SCRIPT = SRC_DIR / "batch_process.py"
+ANALYZE_SCRIPT = SRC_DIR / "analyze_changes.py"
 
 
 def check_git_status():
@@ -146,8 +154,9 @@ Examples:
     args = parser.parse_args()
 
     name = args.name
-    before_dir = f"analysis_before_{name}"
-    after_dir = f"analysis_after_{name}"
+    # Put analysis dirs in source directory
+    before_dir = SOURCE_DIR / f"analysis_before_{name}"
+    after_dir = SOURCE_DIR / f"analysis_after_{name}"
 
     print(f"\n{'#'*70}")
     print(f"# REGRESSION TESTING: {name}")
@@ -181,12 +190,12 @@ Examples:
                 print("Using existing baseline analysis")
             else:
                 run_command(
-                    f"rm -rf {before_dir} && uv run python3 scripts/validator.py --analysis-dir {before_dir}",
+                    f"rm -rf {before_dir} && uv run python3 {VALIDATOR_SCRIPT} --analysis-dir {before_dir}",
                     "Step 1: Creating baseline analysis from current output"
                 )
         else:
             run_command(
-                f"uv run python3 scripts/validator.py --analysis-dir {before_dir}",
+                f"uv run python3 {VALIDATOR_SCRIPT} --analysis-dir {before_dir}",
                 "Step 1: Creating baseline analysis from current output"
             )
     else:
@@ -199,7 +208,7 @@ Examples:
     # Step 2: Run batch process (unless skipped)
     if not args.skip_batch:
         run_command(
-            "uv run python3 batch_process.py",
+            f"uv run python3 {BATCH_SCRIPT}",
             "Step 2: Running batch process with changes"
         )
     else:
@@ -208,7 +217,7 @@ Examples:
     # Step 3: Create post-change analysis
     if not args.skip_batch:
         run_command(
-            f"uv run python3 scripts/validator.py --analysis-dir {after_dir}",
+            f"uv run python3 {VALIDATOR_SCRIPT} --analysis-dir {after_dir}",
             "Step 3: Creating post-change analysis"
         )
     else:
@@ -220,7 +229,7 @@ Examples:
 
     # Step 4: Compare results
     comparison_output = run_command(
-        f"uv run python3 scripts/analyze_changes.py --before {before_dir} --after {after_dir}",
+        f"uv run python3 {ANALYZE_SCRIPT} --before {before_dir} --after {after_dir}",
         "Step 4: Comparing results and detecting regressions",
         capture=True
     )

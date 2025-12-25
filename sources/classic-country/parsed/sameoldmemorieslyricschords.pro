@@ -1,6 +1,6 @@
 {meta: title Same Old Memories}
 {meta: artist Ray Price}
-{meta: writer Tompall Glaser}
+{meta: composer Tompall Glaser}
 
 {start_of_verse: Verse 1}
 [G]You said that you'd come back and start [C]all over

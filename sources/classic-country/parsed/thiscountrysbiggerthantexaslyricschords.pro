@@ -1,6 +1,6 @@
 {meta: title This Country's Bigger Than Texas}
 {meta: artist Gene Watson}
-{meta: writer Hugh Prestwood}
+{meta: composer Hugh Prestwood}
 
 {start_of_verse: Verse 1}
 [G]Standing on a corner in [D7]Manhattan 

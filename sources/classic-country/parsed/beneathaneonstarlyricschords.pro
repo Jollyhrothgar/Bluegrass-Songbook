@@ -1,6 +1,6 @@
 {meta: title Beneath a Neon Star}
 {meta: artist Johnny Bush}
-{meta: writer Red Rowe}
+{meta: composer Red Rowe}
 
 {start_of_verse: Verse 1}
 [C]Beneath a neon star in a honky tonk I fell in love with [F]you

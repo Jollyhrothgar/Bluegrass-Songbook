@@ -1,6 +1,6 @@
 {meta: title Sharecropper’s Son}
 {meta: artist Ralph Stanley}
-{meta: writer Carter and Ralph Stanley}
+{meta: composer Carter and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]We moved here from Summers [C]when I was [G]fourteen

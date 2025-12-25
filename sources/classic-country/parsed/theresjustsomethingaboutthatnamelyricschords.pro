@@ -1,6 +1,6 @@
 {meta: title There's Just Something About That Name}
 {meta: artist The Isaacs}
-{meta: writer William J. and Gloria Gaither}
+{meta: composer William J. and Gloria Gaither}
 
 {start_of_verse: Verse 1}
 [C]Jesus [G7]Jesus [C]Jesus[C7] 

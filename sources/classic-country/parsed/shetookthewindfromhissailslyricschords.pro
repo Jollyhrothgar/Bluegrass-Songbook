@@ -1,6 +1,6 @@
 {meta: title She Took The Wind From His Sails}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Donny Kees}
+{meta: composer Dean Dillon and Donny Kees}
 
 {start_of_verse: Verse 1}
 [C]Outer banks of North Carolina 

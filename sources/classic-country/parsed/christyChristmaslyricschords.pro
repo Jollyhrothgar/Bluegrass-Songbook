@@ -1,6 +1,6 @@
 {meta: title Christy Christmas}
 {meta: artist Brenda Lee}
-{meta: writer Marty Symes and Tony Starr}
+{meta: composer Marty Symes and Tony Starr}
 
 {start_of_verse: Verse 1}
 [C]Santa's got a brand new [G7]helper you're the [C]first one [G7]to be [C]told

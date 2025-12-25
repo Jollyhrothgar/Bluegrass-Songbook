@@ -1,6 +1,6 @@
 {meta: title Apartment # 9}
 {meta: artist Tammy Wynette}
-{meta: writer Johnny Paycheck - Bobby Austin}
+{meta: composer Johnny Paycheck - Bobby Austin}
 
 {start_of_verse: Verse 1}
 [C]Just follow the [F]stairway

@@ -1,6 +1,6 @@
 {meta: title I'm Fallin' In Love With You}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis and Wayne P. Walker}
+{meta: composer Mel Tillis and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]Just as long as there's a moon up [C]above

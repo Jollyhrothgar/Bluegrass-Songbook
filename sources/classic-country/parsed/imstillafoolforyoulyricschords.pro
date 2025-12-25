@@ -1,6 +1,6 @@
 {meta: title I'm Still A Fool For You}
 {meta: artist Moe Bandy}
-{meta: writer recorded by Moe Bandy}
+{meta: composer recorded by Moe Bandy}
 
 {start_of_verse: Verse 1}
 [C]They say that you love another

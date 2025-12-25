@@ -1,6 +1,6 @@
 {meta: title Hard Candy Christmas}
 {meta: artist Dolly Parton}
-{meta: writer Carol Hall}
+{meta: composer Carol Hall}
 
 {start_of_verse: Verse 1}
 [C]Hey maybe I'll [F]dye my [C]hair

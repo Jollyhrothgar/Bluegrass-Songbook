@@ -1,6 +1,6 @@
 {meta: title Donald And June}
 {meta: artist Don Williams}
-{meta: writer Craig Bickhardt}
+{meta: composer Craig Bickhardt}
 
 {start_of_verse: Verse 1}
 [C]Donald and June enjoyed their [Dm]brief honey[G7]moon

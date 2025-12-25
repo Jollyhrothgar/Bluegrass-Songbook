@@ -1,6 +1,6 @@
 {meta: title I Still Can't Leave Your Memory Alone}
 {meta: artist Charley Pride}
-{meta: writer Kent M. Robbins and Geoff Morgan}
+{meta: composer Kent M. Robbins and Geoff Morgan}
 
 {start_of_verse: Verse 1}
 [C]Last night it came [F]around again and went walking through my [C]mind

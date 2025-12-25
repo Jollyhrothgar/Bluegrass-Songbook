@@ -1,6 +1,6 @@
 {meta: title Green Door}
 {meta: artist Cal Smith}
-{meta: writer Marvin Moore and Bob Davie}
+{meta: composer Marvin Moore and Bob Davie}
 
 {start_of_verse: Verse 1}
 [G]Midnight [C]one more night without [G]sleeping

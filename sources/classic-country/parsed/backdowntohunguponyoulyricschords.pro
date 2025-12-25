@@ -1,6 +1,6 @@
 {meta: title Back Down To Hung Up On You}
 {meta: artist George Jones}
-{meta: writer Larry Butler and Dean Dillon}
+{meta: composer Larry Butler and Dean Dillon}
 
 {start_of_verse: Verse 1}
 [C]Oh I`ve come to the point where I`ve [F]had one too many

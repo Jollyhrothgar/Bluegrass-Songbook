@@ -1,6 +1,6 @@
 {meta: title One More Summer In Virginia}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]There's things I've never done 

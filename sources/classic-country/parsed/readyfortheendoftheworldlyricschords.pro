@@ -1,6 +1,6 @@
 {meta: title Ready For The End Of The World}
 {meta: artist George Strait}
-{meta: writer Tony Martin and Clint Daniels}
+{meta: composer Tony Martin and Clint Daniels}
 
 {start_of_verse: Verse 1}
 [C]I know the [G7]end is [C]near I've seen the warning [F]signs

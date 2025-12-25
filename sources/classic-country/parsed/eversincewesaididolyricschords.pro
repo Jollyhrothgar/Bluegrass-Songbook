@@ -1,6 +1,6 @@
 {meta: title Ever Since We Said I Do}
 {meta: artist Norma Jean}
-{meta: writer Red Lane and Johnny Slate}
+{meta: composer Red Lane and Johnny Slate}
 
 {start_of_verse: Verse 1}
 [C]You spent a small fortune [F]trying to win my [C]hand

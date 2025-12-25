@@ -1,6 +1,6 @@
 {meta: title My Jesus Has Broad Shoulders}
 {meta: artist Wilburn Brothers}
-{meta: writer Teddy O'Neal}
+{meta: composer Teddy O'Neal}
 
 {start_of_verse: Verse 1}
 [C]I took a long long walk [G7]by the [C]river 

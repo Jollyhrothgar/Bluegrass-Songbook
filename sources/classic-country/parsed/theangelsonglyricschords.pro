@@ -1,6 +1,6 @@
 {meta: title The Angel Song}
 {meta: artist Slim Whitman}
-{meta: writer Gene Autry and Cliff Massey}
+{meta: composer Gene Autry and Cliff Massey}
 
 {start_of_verse: Verse 1}
 [G]When the angels turn the lights on in [C]heaven tonight

@@ -1,6 +1,6 @@
 {meta: title Women Make A Fool Out Of Me}
 {meta: artist Ernest Tubb}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]I love the women and I love 'em all the [C7]same

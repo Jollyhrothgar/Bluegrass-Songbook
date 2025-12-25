@@ -1,6 +1,6 @@
 {meta: title In No Time at All}
 {meta: artist Ronnie Milsap}
-{meta: writer Archie Jordan and Richard C Leigh}
+{meta: composer Archie Jordan and Richard C Leigh}
 
 {start_of_verse: Verse 1}
 [C]The moment that you smile [F]is when it all began

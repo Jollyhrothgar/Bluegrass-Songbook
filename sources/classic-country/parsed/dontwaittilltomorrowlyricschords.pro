@@ -1,6 +1,6 @@
 {meta: title Don't Wait Till Tomorrow}
 {meta: artist Darrell McCall}
-{meta: writer Lister}
+{meta: composer Lister}
 
 {start_of_verse: Verse 1}
 [G]Don't wait till [D7]tomorrow be sure let her [G]know

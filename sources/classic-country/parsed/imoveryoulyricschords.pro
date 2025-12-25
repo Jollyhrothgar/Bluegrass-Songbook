@@ -1,6 +1,6 @@
 {meta: title I'm Over You}
 {meta: artist George Jones}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]My arms are not [G7]reaching to hold [C]you

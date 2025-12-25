@@ -1,6 +1,6 @@
 {meta: title These Chains}
 {meta: artist Kenny Rogers}
-{meta: writer Kim Carnes and Dave Ellington}
+{meta: composer Kim Carnes and Dave Ellington}
 
 {start_of_verse: Verse 1}
 [G]These [C]chains won't keep me from [D7]bein' a [G]free man

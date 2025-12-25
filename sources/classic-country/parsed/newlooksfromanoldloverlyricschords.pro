@@ -1,6 +1,6 @@
 {meta: title New Looks From An Old Lover}
 {meta: artist B J Thomas}
-{meta: writer Hudson Lathan, Gloria, Jean Thomas,Red Lane}
+{meta: composer Hudson Lathan, Gloria, Jean Thomas,Red Lane}
 
 {start_of_verse: Verse 1}
 [C]Early this morning I opened my eyes

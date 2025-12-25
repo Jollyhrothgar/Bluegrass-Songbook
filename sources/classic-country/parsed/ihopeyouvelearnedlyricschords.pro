@@ -1,6 +1,6 @@
 {meta: title I Hope You've Learned}
 {meta: artist Ricky Skaggs}
-{meta: writer Bill Carrigan and Eugene Butler}
+{meta: composer Bill Carrigan and Eugene Butler}
 
 {start_of_verse: Verse 1}
 [G]I've been away for just a year 

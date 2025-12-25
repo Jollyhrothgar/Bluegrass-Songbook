@@ -1,6 +1,6 @@
 {meta: title Do You Know My Jesus}
 {meta: artist The Blackwood Brothers}
-{meta: writer Dave Weston}
+{meta: composer Dave Weston}
 
 {start_of_verse: Verse 1}
 [G]Have you a heart that's [C]weary

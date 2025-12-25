@@ -1,6 +1,6 @@
 {meta: title I Hate Myself For Falling In Love With You Lyrics and chords}
 {meta: artist Faron Young}
-{meta: writer Cliff Crawford}
+{meta: composer Cliff Crawford}
 
 {start_of_verse: Verse 1}
 [C]Well the next time I see you I'm really gonna show [F]you

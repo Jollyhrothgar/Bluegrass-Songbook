@@ -1,6 +1,6 @@
 {meta: title When She Touches Me}
 {meta: artist Gene Watson}
-{meta: writer Charles Quillen and Michael McGuire}
+{meta: composer Charles Quillen and Michael McGuire}
 
 {start_of_verse: Verse 1}
 [G]I'm late again forgot [C]their names when nights were [D7]though

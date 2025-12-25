@@ -1,6 +1,6 @@
 {meta: title It's A Wonderful World}
 {meta: artist Elvis Presley}
-{meta: writer Sid Tepper and Roy C. Bennett}
+{meta: composer Sid Tepper and Roy C. Bennett}
 
 {start_of_verse: Verse 1}
 [C]Young as a circus parade it's a wonderful [G7]world

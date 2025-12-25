@@ -1,6 +1,6 @@
 {meta: title White Line}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley and Emmylou Harris}
+{meta: composer Paul Kennerley and Emmylou Harris}
 
 {start_of_verse: Verse 1}
 [C]Seems like I was [F]there from the [G7]start 

@@ -1,6 +1,6 @@
 {meta: title Till Then}
 {meta: artist Cal Smith}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [G]You ask how much [D7]you mean to [G]me

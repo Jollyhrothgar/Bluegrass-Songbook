@@ -1,6 +1,6 @@
 {meta: title It's Cold In California}
 {meta: artist Merle Haggard}
-{meta: writer Freddy D. Powers and Nate Green}
+{meta: composer Freddy D. Powers and Nate Green}
 
 {start_of_verse: Verse 1}
 [G]There's a boy here in [D7]old Cali[G]fornia

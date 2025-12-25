@@ -1,6 +1,6 @@
 {meta: title Brotherly Love}
 {meta: artist Keith Whitley and Earl Thomas Conley}
-{meta: writer Jimmy Stewart and Tim Nichols}
+{meta: composer Jimmy Stewart and Tim Nichols}
 
 {start_of_verse: Verse 1}
 [C]We shared the same last name and the same color [F]eyes

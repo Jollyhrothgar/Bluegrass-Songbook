@@ -1,6 +1,6 @@
 {meta: title Everytime I Think About You}
 {meta: artist Ricky Nelson}
-{meta: writer Claude Demetrius and Joe Levy}
+{meta: composer Claude Demetrius and Joe Levy}
 
 {start_of_verse: Verse 1}
 [C]Everytime I think about you  I get so [C7]mad

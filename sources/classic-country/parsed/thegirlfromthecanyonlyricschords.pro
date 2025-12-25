@@ -1,6 +1,6 @@
 {meta: title The Girl From The Canyon}
 {meta: artist Keith Whitley}
-{meta: writer Jonathan Edwards}
+{meta: composer Jonathan Edwards}
 
 {start_of_verse: Verse 1}
 [C]The girl from the canyon smiled a smile that brought me home

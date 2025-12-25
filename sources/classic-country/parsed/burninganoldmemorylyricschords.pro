@@ -1,6 +1,6 @@
 {meta: title Burning an Old Memory}
 {meta: artist Jeannie Seely}
-{meta: writer Larry Boone, Gene Nelson, Paul Nelson}
+{meta: composer Larry Boone, Gene Nelson, Paul Nelson}
 
 {start_of_verse: Verse 1}
 [C]I used to [G]love him [C]that ain't no [G]lie

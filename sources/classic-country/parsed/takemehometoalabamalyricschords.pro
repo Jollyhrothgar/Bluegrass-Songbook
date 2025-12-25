@@ -1,6 +1,6 @@
 {meta: title Take Me Home To Alabama}
 {meta: artist Vern Gosdin}
-{meta: writer Hank Cochran, Mack Vickery, Vern Gosdin}
+{meta: composer Hank Cochran, Mack Vickery, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]Take me home to Ala[G7]bama

@@ -1,6 +1,6 @@
 {meta: title Before It Begins}
 {meta: artist Mickey Gilley}
-{meta: writer Jerry Chesnut, David Wilkins, Tommy Myracle}
+{meta: composer Jerry Chesnut, David Wilkins, Tommy Myracle}
 
 {start_of_verse: Verse 1}
 [G]You walked right in big as sin 

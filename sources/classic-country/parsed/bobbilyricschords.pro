@@ -1,6 +1,6 @@
 {meta: title Bobbi}
 {meta: artist Mel Tillis}
-{meta: writer John D. Souther}
+{meta: composer John D. Souther}
 
 {start_of_verse: Verse 1}
 [C]Every word on [G]my mind [Em]Bobbi [D7]is your [G]goodbye

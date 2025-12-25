@@ -1,6 +1,6 @@
 {meta: title I'm A Rattlesnakin' Daddy}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Marvin Taylor}
+{meta: composer Marvin Taylor}
 
 {start_of_verse: Verse 1}
 [C]I'm a rattlesnakin' daddy I rattle where ever I please

@@ -1,6 +1,6 @@
 {meta: title If You Want To Wear A Crown}
 {meta: artist George Jones}
-{meta: writer Eddie Noack and Marvin Rumley}
+{meta: composer Eddie Noack and Marvin Rumley}
 
 {start_of_verse: Verse 1}
 [C]You've got to run to [F]win the [C]race

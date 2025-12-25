@@ -1,6 +1,6 @@
 {meta: title The Letter That Johnny Walker Read}
 {meta: artist Asleep at the Wheel}
-{meta: writer Ray Benson, Leroy Preston, Chris Frayne}
+{meta: composer Ray Benson, Leroy Preston, Chris Frayne}
 
 {start_of_verse: Verse 1}
 [G]Johnny Walker sat at a table in a bar

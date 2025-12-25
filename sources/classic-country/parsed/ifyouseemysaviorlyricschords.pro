@@ -1,6 +1,6 @@
 {meta: title If You See My Savior}
 {meta: artist Anne Murray}
-{meta: writer Rev. Thomas A. Dorsey}
+{meta: composer Rev. Thomas A. Dorsey}
 
 {start_of_verse: Verse 1}
 [C]I was standing by the bedside of a [F]neighbor

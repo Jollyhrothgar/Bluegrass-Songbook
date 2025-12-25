@@ -1,6 +1,6 @@
 {meta: title A Friend To Me}
 {meta: artist Garth Brooks}
-{meta: writer Victoria Shaw and Garth Brooks}
+{meta: composer Victoria Shaw and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]Well you and [G7]I  [Am]we're buddies[Em] 

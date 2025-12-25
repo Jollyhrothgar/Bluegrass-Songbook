@@ -1,6 +1,6 @@
 {meta: title Lord I'm Coming Home}
 {meta: artist Don Gibson}
-{meta: writer William Kirkpatrick}
+{meta: composer William Kirkpatrick}
 
 {start_of_verse: Verse 1}
 [G]I've wandered far [C]away from [G]God

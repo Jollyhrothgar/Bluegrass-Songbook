@@ -1,6 +1,6 @@
 {meta: title Do I Like It}
 {meta: artist Carl Smith}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]Baby when you hold me tight just the way you did last night

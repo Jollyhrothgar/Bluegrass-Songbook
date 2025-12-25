@@ -1,6 +1,6 @@
 {meta: title All of Me}
 {meta: artist Willie Nelson}
-{meta: writer Seymore Simons and Gerald Marks}
+{meta: composer Seymore Simons and Gerald Marks}
 
 {start_of_verse: Verse 1}
 [C]All of me  why not take all of [E7]me

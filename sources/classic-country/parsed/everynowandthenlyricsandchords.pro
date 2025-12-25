@@ -1,6 +1,6 @@
 {meta: title Every Now And Then}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Shayne Dolan and Rock Killough}
+{meta: composer Shayne Dolan and Rock Killough}
 
 {start_of_verse: Verse 1}
 [C]When we needed help the [G7]most we found each [C]other

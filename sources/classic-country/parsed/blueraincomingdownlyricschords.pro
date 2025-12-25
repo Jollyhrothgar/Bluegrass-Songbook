@@ -1,6 +1,6 @@
 {meta: title Blue Rain Coming Down}
 {meta: artist Roy Orbison}
-{meta: writer Joe Melson and Roy K. Orbison}
+{meta: composer Joe Melson and Roy K. Orbison}
 
 {start_of_verse: Verse 1}
 [C]Silently I hear the [F]sound of the [G7]blue rain come [C]down

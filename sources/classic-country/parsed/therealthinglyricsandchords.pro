@@ -1,6 +1,6 @@
 {meta: title The Real Thing}
 {meta: artist George Strait}
-{meta: writer Chip Taylor}
+{meta: composer Chip Taylor}
 
 {start_of_verse: Verse 1}
 [C]I was on a bus comin' back to us from [F]Atlanta in '53[C]

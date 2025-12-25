@@ -1,6 +1,6 @@
 {meta: title Drinkin' Songs And Other Logic}
 {meta: artist Clint Black}
-{meta: writer Clint Black, Hayden Nicholas, Steve Wariner}
+{meta: composer Clint Black, Hayden Nicholas, Steve Wariner}
 
 {start_of_verse: Verse 1}
 [C]I'm lookin' at a busy bartender 

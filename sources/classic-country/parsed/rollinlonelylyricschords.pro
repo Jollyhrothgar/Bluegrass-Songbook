@@ -1,6 +1,6 @@
 {meta: title Rollin' Lonely}
 {meta: artist Johnny Lee}
-{meta: writer Gary Harrison and J.D. Martin}
+{meta: composer Gary Harrison and J.D. Martin}
 
 {start_of_verse: Verse 1}
 [C]The diesels racin’ I passed a waystation [Dm]way back down the road

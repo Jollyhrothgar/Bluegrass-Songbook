@@ -1,6 +1,6 @@
 {meta: title Traveling On}
 {meta: artist Faron Young}
-{meta: writer Audrey Grisman}
+{meta: composer Audrey Grisman}
 
 {start_of_verse: Verse 1}
 [C]Traveling on in the good ol way

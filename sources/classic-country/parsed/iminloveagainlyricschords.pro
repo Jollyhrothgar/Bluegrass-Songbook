@@ -1,6 +1,6 @@
 {meta: title I’m In Love Again}
 {meta: artist George Morgan}
-{meta: writer Vic McAlpin and George Morgan}
+{meta: composer Vic McAlpin and George Morgan}
 
 {start_of_verse: Verse 1}
 [C]Not so long ago I had my poor heart [F]broken

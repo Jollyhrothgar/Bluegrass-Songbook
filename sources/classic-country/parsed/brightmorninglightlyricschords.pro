@@ -1,6 +1,6 @@
 {meta: title Bright Morning Light}
 {meta: artist David Allan Coe}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [C]She was a waitress in a west Texas dance [F]hall

@@ -1,6 +1,6 @@
 {meta: title Let Me Be The First To Know}
 {meta: artist the Wilburn Brothers}
-{meta: writer Doyle Wilburn and Teddy Wilburn}
+{meta: composer Doyle Wilburn and Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [F]Darling [G7]let me be the first to [C]know

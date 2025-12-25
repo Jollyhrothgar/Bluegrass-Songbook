@@ -1,6 +1,6 @@
 {meta: title Circle Of Friends}
 {meta: artist Leona Williams}
-{meta: writer Naomi Martin}
+{meta: composer Naomi Martin}
 
 {start_of_verse: Verse 1}
 [G]Did you hear the story of [D7]Jean and John [G]Jones

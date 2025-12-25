@@ -1,6 +1,6 @@
 {meta: title A Woman's Gotta Make A Stand}
 {meta: artist Norma Jean}
-{meta: writer Curly Putman and Don Wayne}
+{meta: composer Curly Putman and Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]Oh [F]a [C]woman's gotta make a stand somewhere

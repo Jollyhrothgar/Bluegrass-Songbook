@@ -1,6 +1,6 @@
 {meta: title Great Society Lyrics Chords}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Bill Penix}
+{meta: composer Hank Thompson and Bill Penix}
 
 {start_of_verse: Verse 1}
 [G]There [C]ain't no place for me in your great [G]society

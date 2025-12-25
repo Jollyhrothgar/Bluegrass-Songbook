@@ -1,6 +1,6 @@
 {meta: title Every Time I Think It's Over}
 {meta: artist Conway Twitty}
-{meta: writer Danny Steagall, Red Steagall, Wood Newton}
+{meta: composer Danny Steagall, Red Steagall, Wood Newton}
 
 {start_of_verse: Verse 1}
 [C]When we run into problems

@@ -1,6 +1,6 @@
 {meta: title Evil Tempt Me Not}
 {meta: artist Eddy Arnold}
-{meta: writer Dale Parker}
+{meta: composer Dale Parker}
 
 {start_of_verse: Verse 1}
 [C]Though the tears at times may start

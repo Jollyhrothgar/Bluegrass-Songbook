@@ -1,6 +1,6 @@
 {meta: title Rockin’ Chair Daddy}
 {meta: artist Hank Williams}
-{meta: writer Gordon B. Schuffert and Hank Williams}
+{meta: composer Gordon B. Schuffert and Hank Williams}
 
 {start_of_verse: Verse 1}
 [C]Well I'm not lazy I'm just tired

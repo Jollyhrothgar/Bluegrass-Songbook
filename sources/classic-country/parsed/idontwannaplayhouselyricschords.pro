@@ -1,6 +1,6 @@
 {meta: title I Don't Wanna Play House}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]To-day I sat [G7]a-lone at the [C]window

@@ -1,6 +1,6 @@
 {meta: title Blue Clear Sky}
 {meta: artist George Strait}
-{meta: writer Bob DiPiero, Mark D. Sanders, John Jarrard}
+{meta: composer Bob DiPiero, Mark D. Sanders, John Jarrard}
 
 {start_of_verse: Verse 1}
 [C]You swear you've had [F]enough 

@@ -1,6 +1,6 @@
 {meta: title All By Myself}
 {meta: artist Jimmy Dean}
-{meta: writer Irving Berlin}
+{meta: composer Irving Berlin}
 
 {start_of_verse: Verse 1}
 [G]All by myself in the [A7]morning

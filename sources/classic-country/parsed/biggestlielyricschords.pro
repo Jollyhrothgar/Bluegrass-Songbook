@@ -1,6 +1,6 @@
 {meta: title Biggest Lie}
 {meta: artist Ronnie Milsap}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]I told your best friend when she phoned [F]that you were [C]sleeping

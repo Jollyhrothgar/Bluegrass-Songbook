@@ -1,6 +1,6 @@
 {meta: title I Don't Need The Booze To Get A Buzz On}
 {meta: artist Alan Jackson}
-{meta: writer Toni Dae and Joy Swinea}
+{meta: composer Toni Dae and Joy Swinea}
 
 {start_of_verse: Verse 1}
 [G]Well I've been known to tie one on 

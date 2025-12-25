@@ -1,6 +1,6 @@
 {meta: title I'm Alone}
 {meta: artist Jean Shepard}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]Staring through my window pane

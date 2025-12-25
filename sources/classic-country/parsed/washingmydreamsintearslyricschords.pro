@@ -1,6 +1,6 @@
 {meta: title Washing My Dreams In Tears}
 {meta: artist Carl Smith}
-{meta: writer Speedy Krise}
+{meta: composer Speedy Krise}
 
 {start_of_verse: Verse 1}
 [C]Oh once my heart was light and gay and [F]didn’t [C]realize

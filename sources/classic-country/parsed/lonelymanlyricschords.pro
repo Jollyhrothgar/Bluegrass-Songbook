@@ -1,6 +1,6 @@
 {meta: title Lonely Man}
 {meta: artist Elvis Presley}
-{meta: writer Bennie Benjamin and Sol Marcus}
+{meta: composer Bennie Benjamin and Sol Marcus}
 
 {start_of_verse: Verse 1}
 [C]It's a lonely man [F]who wanders [G7]all a[C]round

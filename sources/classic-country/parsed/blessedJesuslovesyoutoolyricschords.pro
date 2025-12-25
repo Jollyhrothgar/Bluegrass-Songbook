@@ -1,6 +1,6 @@
 {meta: title Blessed Jesus Loves You Too}
 {meta: artist The Blackwood Brothers}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [C]On the rugged cross of [F]Calvary

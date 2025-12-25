@@ -1,6 +1,6 @@
 {meta: title Everyday Will Be Sunday After While}
 {meta: artist Webb Pierce}
-{meta: writer Sylvia Fisher and Leon Miller}
+{meta: composer Sylvia Fisher and Leon Miller}
 
 {start_of_verse: Verse 1}
 [G]Everyday will be Sunday [D7]after [G][C][G]while

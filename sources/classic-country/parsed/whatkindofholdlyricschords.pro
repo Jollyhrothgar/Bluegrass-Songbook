@@ -1,6 +1,6 @@
 {meta: title What Kind Of Hold}
 {meta: artist David Ball}
-{meta: writer Tommy Polk and David Ball}
+{meta: composer Tommy Polk and David Ball}
 
 {start_of_verse: Verse 1}
 [C]I try to run but stumbled 

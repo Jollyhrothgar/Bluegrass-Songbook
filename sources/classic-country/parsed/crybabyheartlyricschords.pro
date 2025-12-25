@@ -1,6 +1,6 @@
 {meta: title Cry Baby Heart}
 {meta: artist George Morgan}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [C]I say that I don't worry and our parting brought no [F]pain

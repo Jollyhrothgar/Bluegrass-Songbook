@@ -1,6 +1,6 @@
 {meta: title Adam's Side}
 {meta: artist Billy Walker}
-{meta: writer Jesse Wilson}
+{meta: composer Jesse Wilson}
 
 {start_of_verse: Verse 1}
 [C]From Adam's side God formed his bride [F]beautiful as could [C]be

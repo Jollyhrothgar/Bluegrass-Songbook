@@ -1,6 +1,6 @@
 {meta: title For Love Of Yesterday}
 {meta: artist Billy Crash Craddock}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]I wake up every [Dm]morning [G7]  I miss you by my [C]side[E7]   [Am]

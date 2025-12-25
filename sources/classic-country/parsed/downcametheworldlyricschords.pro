@@ -1,6 +1,6 @@
 {meta: title Down Came The World}
 {meta: artist Waylon Jennings}
-{meta: writer Waylon Jennings and Bozo Darnell}
+{meta: composer Waylon Jennings and Bozo Darnell}
 
 {start_of_verse: Verse 1}
 [C]Down down down came the [F]world

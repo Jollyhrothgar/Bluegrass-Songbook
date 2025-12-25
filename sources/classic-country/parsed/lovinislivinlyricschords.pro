@@ -1,6 +1,6 @@
 {meta: title Lovin' Is Livin'}
 {meta: artist Carl Smith}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]I like kiss every mornin' and a kiss every night

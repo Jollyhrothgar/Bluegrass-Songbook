@@ -1,6 +1,6 @@
 {meta: title In God I Trust}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Bob Morris}
+{meta: composer Buck Owens and Bob Morris}
 
 {start_of_verse: Verse 1}
 [C]In God I trust  to always [G7]give me faith

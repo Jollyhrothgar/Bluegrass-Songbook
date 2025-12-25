@@ -1,6 +1,6 @@
 {meta: title If I Didn't Love You}
 {meta: artist Hank Williams}
-{meta: writer Fred Rose & Hank Williams}
+{meta: composer Fred Rose & Hank Williams}
 
 {start_of_verse: Verse 1}
 [C]If I didn't love you  [A7]I wouldn't be so [D7]lonesome

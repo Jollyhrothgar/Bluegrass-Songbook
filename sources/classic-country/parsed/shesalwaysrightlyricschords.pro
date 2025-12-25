@@ -1,6 +1,6 @@
 {meta: title She's Always Right}
 {meta: artist Clay Walker}
-{meta: writer Phil Barnhart, Ed Hill, Richie McDonald}
+{meta: composer Phil Barnhart, Ed Hill, Richie McDonald}
 
 {start_of_verse: Verse 1}
 [G]She's perfect for a cotton dress 

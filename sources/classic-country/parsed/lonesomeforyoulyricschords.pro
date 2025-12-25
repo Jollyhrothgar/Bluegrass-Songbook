@@ -1,6 +1,6 @@
 {meta: title Lonesome For You}
 {meta: artist Ricky Skaggs}
-{meta: writer Larry Cordle and Larry Shell}
+{meta: composer Larry Cordle and Larry Shell}
 
 {start_of_verse: Verse 1}
 [C]I can't say a train whistle makes me lonesome

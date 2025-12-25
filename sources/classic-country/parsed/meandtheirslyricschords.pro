@@ -1,6 +1,6 @@
 {meta: title Me and the I.R.S.}
 {meta: artist Johnny Paycheck}
-{meta: writer Don J. Scaife, Gladys Johns Scaife}
+{meta: composer Don J. Scaife, Gladys Johns Scaife}
 
 {start_of_verse: Verse 1}
 [G]I’m gonna tell the man at the IRS this old boy [C]hell I’ve had [G]enough

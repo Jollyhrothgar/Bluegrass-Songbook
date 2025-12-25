@@ -1,6 +1,6 @@
 {meta: title I'm Happy To Be Unhappy}
 {meta: artist Leroy Van Dyke}
-{meta: writer Bobby Bare}
+{meta: composer Bobby Bare}
 
 {start_of_verse: Verse 1}
 [D7]I'm glad to be your [G]fool

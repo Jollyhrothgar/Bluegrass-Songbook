@@ -1,6 +1,6 @@
 {meta: title Helplessly Hoping}
 {meta: artist J.D. Crowe}
-{meta: writer Stephen Stills}
+{meta: composer Stephen Stills}
 
 {start_of_verse: Verse 1}
 [Am]Helplessly hoping her [C]harlequin hovers near[G]by awaiting a [D7]word 

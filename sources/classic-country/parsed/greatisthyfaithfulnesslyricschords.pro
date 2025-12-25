@@ -1,6 +1,6 @@
 {meta: title Great Is Thy Faithfulness}
 {meta: artist Gary Morris}
-{meta: writer Thomas O. Chisholm and William M. Runyan}
+{meta: composer Thomas O. Chisholm and William M. Runyan}
 
 {start_of_verse: Verse 1}
 [C]Great is thy [F]faithfulness [G7]O God my [C]Father

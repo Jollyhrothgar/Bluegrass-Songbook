@@ -1,6 +1,6 @@
 {meta: title Walk To The Dance}
 {meta: artist Sonny James}
-{meta: writer Carrol Bobbie}
+{meta: composer Carrol Bobbie}
 
 {start_of_verse: Verse 1}
 [C]Walk to the [Em]dance [F]without the [C]car

@@ -1,6 +1,6 @@
 {meta: title Christmas Without Daddy}
 {meta: artist Loretta Lynn}
-{meta: writer Jay Lee Webb}
+{meta: composer Jay Lee Webb}
 
 {start_of_verse: Verse 1}
 [C]Christmas Day is getting closer but there's sadness mixed with [F]joy

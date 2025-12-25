@@ -1,6 +1,6 @@
 {meta: title Devil Gets His Dues}
 {meta: artist Loretta Lynn}
-{meta: writer Darrell Statler}
+{meta: composer Darrell Statler}
 
 {start_of_verse: Verse 1}
 [C]Well a you think you're the [F]hottest thing a [C]going

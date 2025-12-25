@@ -1,6 +1,6 @@
 {meta: title Ashamed Of Myself}
 {meta: artist Cowboy Copas}
-{meta: writer Charles Singleton and Rose Marie McCoy}
+{meta: composer Charles Singleton and Rose Marie McCoy}
 
 {start_of_verse: Verse 1}
 [G]I feel so [C]ashamed of [G]myself I feel so [C]ashamed of [G]myself

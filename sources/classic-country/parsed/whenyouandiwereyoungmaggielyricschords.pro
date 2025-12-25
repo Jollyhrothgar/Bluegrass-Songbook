@@ -1,6 +1,6 @@
 {meta: title When You And I Were Young Maggie}
 {meta: artist Statler Brothers}
-{meta: writer George W. Johnson and James Austin Butterfield}
+{meta: composer George W. Johnson and James Austin Butterfield}
 
 {start_of_verse: Verse 1}
 [C]I wondered today to [C7]the hill  [F]Maggie

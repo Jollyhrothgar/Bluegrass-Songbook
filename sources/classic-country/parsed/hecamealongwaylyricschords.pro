@@ -1,6 +1,6 @@
 {meta: title He Came A Long Way}
 {meta: artist Carl and Pearl Butler}
-{meta: writer Jimmy Campbell}
+{meta: composer Jimmy Campbell}
 
 {start_of_verse: Verse 1}
 [C]I owed a debt I could not pay

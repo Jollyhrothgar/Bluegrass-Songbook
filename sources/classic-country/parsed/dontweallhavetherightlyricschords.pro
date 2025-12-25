@@ -1,6 +1,6 @@
 {meta: title Don’t We All Have The Right}
 {meta: artist Ricky Van Shelton}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]I laughed it off when she left I thought she'd [F]come back [C]again 

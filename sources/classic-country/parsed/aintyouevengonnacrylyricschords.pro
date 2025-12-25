@@ -1,6 +1,6 @@
 {meta: title Ain't You Even Gonna Cry}
 {meta: artist Charlie Louvin}
-{meta: writer Johnny Russell}
+{meta: composer Johnny Russell}
 
 {start_of_verse: Verse 1}
 [G]Ain't you even gonna [C]cry

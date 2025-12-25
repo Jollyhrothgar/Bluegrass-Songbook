@@ -1,6 +1,6 @@
 {meta: title It Hurts As Much In Texas}
 {meta: artist George Jones}
-{meta: writer Dennis Knutson and A. L. Owens}
+{meta: composer Dennis Knutson and A. L. Owens}
 
 {start_of_verse: Verse 1}
 [G]Hey we broke up in Nashville on a cold and rainy [D7]night

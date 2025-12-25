@@ -1,6 +1,6 @@
 {meta: title High Heaven}
 {meta: artist Wynn Stewart}
-{meta: writer Dale Noe}
+{meta: composer Dale Noe}
 
 {start_of_verse: Verse 1}
 [C]We fell in love and now we live in high [G7][F]heaven

@@ -1,6 +1,6 @@
 {meta: title It's Only A Matter Of Wine}
 {meta: artist Johnny Paycheck}
-{meta: writer Larry Kingston and Frank Dycus}
+{meta: composer Larry Kingston and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [G]They're stackin' the chairs [D7]on the table a[G]gain

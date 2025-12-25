@@ -1,6 +1,6 @@
 {meta: title I Wonder Why You Said Goodbye}
 {meta: artist Wilburn Brothers}
-{meta: writer Ernest Tubb}
+{meta: composer Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]Your letter came this very [F]day 

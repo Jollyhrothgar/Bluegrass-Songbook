@@ -1,6 +1,6 @@
 {meta: title You Were Only Fooling}
 {meta: artist Connie Francis}
-{meta: writer Larry Fotine, Billy Faber, Fred Meadows}
+{meta: composer Larry Fotine, Billy Faber, Fred Meadows}
 
 {start_of_verse: Verse 1}
 [C]You were only [E7]fooling

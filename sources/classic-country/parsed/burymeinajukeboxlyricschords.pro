@@ -1,6 +1,6 @@
 {meta: title Bury Me In A Jukebox}
 {meta: artist Vern Gosdin}
-{meta: writer John Northrup, Buddy Cannon, Vern Gosdin}
+{meta: composer John Northrup, Buddy Cannon, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [G]I've been hanging in here every night since you've been [C]gone

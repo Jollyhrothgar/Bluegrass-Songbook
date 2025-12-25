@@ -1,6 +1,6 @@
 {meta: title Deep Blue Sea}
 {meta: artist Jimmy Dean}
-{meta: writer Steven Harvey and Martin Seligson}
+{meta: composer Steven Harvey and Martin Seligson}
 
 {start_of_verse: Verse 1}
 [C]Deep [F]blue [C]sea [G7]Willie [C]deep [F]blue [C]sea

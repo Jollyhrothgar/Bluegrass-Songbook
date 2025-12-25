@@ -1,6 +1,6 @@
 {meta: title It Won't Be Long}
 {meta: artist Elvis Presley}
-{meta: writer Ben Weisman and Sid Wayne}
+{meta: composer Ben Weisman and Sid Wayne}
 
 {start_of_verse: Verse 1}
 [G]The shooting stars are coming out [C]of your [G]eyes

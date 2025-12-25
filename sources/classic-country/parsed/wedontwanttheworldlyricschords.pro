@@ -1,6 +1,6 @@
 {meta: title We Don't Want The World}
 {meta: artist Jack Greene}
-{meta: writer James Arthur Coleman and Moe Lytle}
+{meta: composer James Arthur Coleman and Moe Lytle}
 
 {start_of_verse: Verse 1}
 [C]We don’t won’t the [G]world just [C]room enough for [G]two

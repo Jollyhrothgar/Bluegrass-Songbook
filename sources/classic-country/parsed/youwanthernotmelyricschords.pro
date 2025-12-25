@@ -1,6 +1,6 @@
 {meta: title You Want Her Not Me}
 {meta: artist Kitty Wells}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [C]Your touch tells me [F]all I need to [C]know

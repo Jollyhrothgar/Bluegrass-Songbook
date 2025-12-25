@@ -1,6 +1,6 @@
 {meta: title One Step Away}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo and James House}
+{meta: composer Raul Malo and James House}
 
 {start_of_verse: Verse 1}
 [C]My baby [F]loves the [G7]things I [C]say[F]  [G7]

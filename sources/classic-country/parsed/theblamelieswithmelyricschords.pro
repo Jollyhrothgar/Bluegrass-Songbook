@@ -1,6 +1,6 @@
 {meta: title The Blame Lies With Me}
 {meta: artist Mickey Gilley}
-{meta: writer Sterling Whipple}
+{meta: composer Sterling Whipple}
 
 {start_of_verse: Verse 1}
 [G]Now you've forgiven me my mistakes  it [C]wasn't all my fault

@@ -1,6 +1,6 @@
 {meta: title Time Changed Everything}
 {meta: artist Roy Orbison}
-{meta: writer Buddy Buie and John Adkins}
+{meta: composer Buddy Buie and John Adkins}
 
 {start_of_verse: Verse 1}
 [C]The town is not the [F]same

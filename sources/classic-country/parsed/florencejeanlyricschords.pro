@@ -1,6 +1,6 @@
 {meta: title Florence Jean}
 {meta: artist Johnny Paycheck}
-{meta: writer Johnny Mathis}
+{meta: composer Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [G]This is the kiss that I [C]knew would come [G]al-[F]o-[E7]n-g

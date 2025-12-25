@@ -1,6 +1,6 @@
 {meta: title Follow Me}
 {meta: artist Barbara Fairchild}
-{meta: writer Ira F. Stanphill}
+{meta: composer Ira F. Stanphill}
 
 {start_of_verse: Verse 1}
 [G]I traveled down a lonely [G7]road and [C]no one seemed to [G]care

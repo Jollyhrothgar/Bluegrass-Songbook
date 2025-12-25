@@ -1,6 +1,6 @@
 {meta: title Everywhere We Go}
 {meta: artist Randy Travis}
-{meta: writer Michael Curtis and Randy Travis}
+{meta: composer Michael Curtis and Randy Travis}
 
 {start_of_verse: Verse 1}
 [C]They took Your commandments off the schoolhouse walls

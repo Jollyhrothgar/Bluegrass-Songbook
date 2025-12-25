@@ -1,6 +1,6 @@
 {meta: title What Is It}
 {meta: artist Mickey Gilley}
-{meta: writer Wayne Kemp, Billy Arr, James Marshall}
+{meta: composer Wayne Kemp, Billy Arr, James Marshall}
 
 {start_of_verse: Verse 1}
 [C]If I walk out today would you stand in my [F]way

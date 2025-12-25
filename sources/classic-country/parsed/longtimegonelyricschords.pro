@@ -1,6 +1,6 @@
 {meta: title Long Time Gone}
 {meta: artist the Everly Brothers}
-{meta: writer Tex Ritter and Frank Hartford}
+{meta: composer Tex Ritter and Frank Hartford}
 
 {start_of_verse: Verse 1}
 [C]You cheated me and made me lonely

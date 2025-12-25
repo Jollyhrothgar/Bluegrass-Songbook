@@ -1,6 +1,6 @@
 {meta: title Ain't It Amazing Gracie}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Glen Garrison}
+{meta: composer Buck Owens and Glen Garrison}
 
 {start_of_verse: Verse 1}
 [G]I've been all over the world but no other [C]girl

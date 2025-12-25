@@ -1,6 +1,6 @@
 {meta: title Eileen}
 {meta: artist Slim Whitman}
-{meta: writer Sylvia Fine and Max Liebman}
+{meta: composer Sylvia Fine and Max Liebman}
 
 {start_of_verse: Verse 1}
 [G]In a town on the sea by the [C]Castle Doonee

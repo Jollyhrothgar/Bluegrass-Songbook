@@ -1,6 +1,6 @@
 {meta: title Love Has A Mind Of Its Own}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]I'd love to forget every [F]time that you kissed [C]me

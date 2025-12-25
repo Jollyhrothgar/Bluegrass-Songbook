@@ -1,6 +1,6 @@
 {meta: title They Tore The Old Country Church Down}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
-{meta: writer J.C. Fralix}
+{meta: composer J.C. Fralix}
 
 {start_of_verse: Verse 1}
 [G]Oh they tore the old [C]country church [G]down

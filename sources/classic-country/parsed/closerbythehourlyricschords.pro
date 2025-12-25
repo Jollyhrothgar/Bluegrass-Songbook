@@ -1,6 +1,6 @@
 {meta: title Closer By The Hour}
 {meta: artist Porter Wagoner}
-{meta: writer Al Gore}
+{meta: composer Al Gore}
 
 {start_of_verse: Verse 1}
 [C]You're the sweetest one I know

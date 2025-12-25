@@ -1,6 +1,6 @@
 {meta: title Keep On Holding To Those Nail Scarred Hands}
 {meta: artist Connie Smith}
-{meta: writer Henry Slaughter}
+{meta: composer Henry Slaughter}
 
 {start_of_verse: Verse 1}
 [C]Look up look [Em]up  God [Dm]is still on his [C]throne

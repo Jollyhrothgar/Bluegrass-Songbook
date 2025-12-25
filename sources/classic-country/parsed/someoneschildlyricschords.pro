@@ -1,6 +1,6 @@
 {meta: title Someone's Child}
 {meta: artist Gene Watson}
-{meta: writer Billy Troy and Lee Bach}
+{meta: composer Billy Troy and Lee Bach}
 
 {start_of_verse: Verse 1}
 [G]He stands in the rain begging for change as people pass him [D7]by

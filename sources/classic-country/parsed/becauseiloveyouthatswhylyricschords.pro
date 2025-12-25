@@ -1,6 +1,6 @@
 {meta: title Because I Love You That's Why}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]I can't believe this blessing sent down from up [E7]above

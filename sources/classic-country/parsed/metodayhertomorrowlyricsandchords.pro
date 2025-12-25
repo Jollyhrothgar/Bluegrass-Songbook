@@ -1,6 +1,6 @@
 {meta: title Me Today Her Tomorrow}
 {meta: artist Dottie West}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]Ever since the day that we first met

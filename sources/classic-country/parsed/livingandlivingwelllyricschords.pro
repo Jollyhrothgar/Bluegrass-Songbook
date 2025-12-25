@@ -1,6 +1,6 @@
 {meta: title Living And Living Well}
 {meta: artist George Strait}
-{meta: writer Tony Martin, Mark Nesler, Tom Shapiro}
+{meta: composer Tony Martin, Mark Nesler, Tom Shapiro}
 
 {start_of_verse: Verse 1}
 [C]Had a nice little [Am]life  [C]a little boat a little [Am]beach

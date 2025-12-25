@@ -1,6 +1,6 @@
 {meta: title Maiden's Prayer}
 {meta: artist Ray Price}
-{meta: writer Bob Wills}
+{meta: composer Bob Wills}
 
 {start_of_verse: Verse 1}
 [G]When the evening falls

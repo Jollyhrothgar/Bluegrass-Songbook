@@ -1,6 +1,6 @@
 {meta: title Sweet Mother Texas}
 {meta: artist Eddy Raven}
-{meta: writer Eddy Raven and Sanger D. Shafer}
+{meta: composer Eddy Raven and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]You reared me and raised me I'm [F]your native [C]son

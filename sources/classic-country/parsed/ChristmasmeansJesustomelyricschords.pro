@@ -1,6 +1,6 @@
 {meta: title Christmas Means Jesus To Me}
 {meta: artist The Isaacs}
-{meta: writer Joe Isaacs}
+{meta: composer Joe Isaacs}
 
 {start_of_verse: Verse 1}
 [C]Mary and [Em]Joseph were [F]traveling one [Dm]night

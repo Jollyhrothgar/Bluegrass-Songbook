@@ -1,6 +1,6 @@
 {meta: title Hitch Hiking Girl}
 {meta: artist Red Sovine}
-{meta: writer Ray King}
+{meta: composer Ray King}
 
 {start_of_verse: Verse 1}
 [C]I was rolling along minding my [F]business

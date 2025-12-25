@@ -1,6 +1,6 @@
 {meta: title Whole Lot Of Lonesome}
 {meta: artist David Allan Coe}
-{meta: writer David Allan Coe and George Jones}
+{meta: composer David Allan Coe and George Jones}
 
 {start_of_verse: Verse 1}
 [C]You put a whole lot of lonesome in me can't you see

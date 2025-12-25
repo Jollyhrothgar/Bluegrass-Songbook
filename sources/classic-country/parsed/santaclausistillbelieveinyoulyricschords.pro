@@ -1,6 +1,6 @@
 {meta: title Santa Claus I Still Believe In You}
 {meta: artist Alabama}
-{meta: writer Randy Owen, Teddy Gantry, John Jarrard}
+{meta: composer Randy Owen, Teddy Gantry, John Jarrard}
 
 {start_of_verse: Verse 1}
 [C]You always come [F]around this time of [C]year

@@ -1,6 +1,6 @@
 {meta: title Four in the Morning}
 {meta: artist Faron Young}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [G]It's four in the [Em]mornin' and once [G]more the [Em]dawnin'

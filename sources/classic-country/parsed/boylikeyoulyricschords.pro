@@ -1,6 +1,6 @@
 {meta: title Boy Like You}
 {meta: artist Ernest Tubb}
-{meta: writer Tompall Glaser}
+{meta: composer Tompall Glaser}
 
 {start_of_verse: Verse 1}
 [G]There's a jukebox [D7]in my [G]ear playin' so loud I can [C]hardly [G]hear

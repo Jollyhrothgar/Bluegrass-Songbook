@@ -1,6 +1,6 @@
 {meta: title Get Up Off Your Good Intentions}
 {meta: artist Charlie Pride}
-{meta: writer Bobby David and June Dussia}
+{meta: composer Bobby David and June Dussia}
 
 {start_of_verse: Verse 1}
 [G]Harness that team and hitch it to the plow

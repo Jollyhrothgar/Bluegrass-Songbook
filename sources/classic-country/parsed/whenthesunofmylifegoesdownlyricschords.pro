@@ -1,6 +1,6 @@
 {meta: title When The Sun Of My Life Goes Down}
 {meta: artist Doyle Lawson}
-{meta: writer William McKinney}
+{meta: composer William McKinney}
 
 {start_of_verse: Verse 1}
 [G]When my labor here is over at last and I lay these burdens down

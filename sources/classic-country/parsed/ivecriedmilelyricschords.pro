@@ -1,6 +1,6 @@
 {meta: title I've Cried A Mile}
 {meta: artist Hank Snow}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Oh the road of love is rocky  and it's [G7]lonely and so blue

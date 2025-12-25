@@ -1,6 +1,6 @@
 {meta: title Somethin's Got A Hold On Me}
 {meta: artist Sonny James}
-{meta: writer Michael Kirkland and Sonny James}
+{meta: composer Michael Kirkland and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]Oh somethin's got a hold on me (oh it must [F]be [C]love)

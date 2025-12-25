@@ -1,6 +1,6 @@
 {meta: title Don’t Go Out Tonight}
 {meta: artist Lonesome River Band}
-{meta: writer William York}
+{meta: composer William York}
 
 {start_of_verse: Verse 1}
 [G]Now don’t go out tonight little darling

@@ -1,6 +1,6 @@
 {meta: title I'd Like To Make That Same Mistake Again}
 {meta: artist Porter Wagoner}
-{meta: writer Damon Black}
+{meta: composer Damon Black}
 
 {start_of_verse: Verse 1}
 [C]My old friends say you were [F]my big [C]mistake

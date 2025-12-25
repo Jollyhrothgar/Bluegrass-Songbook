@@ -1,6 +1,6 @@
 {meta: title Nobody In His Right Mind Your Mind}
 {meta: artist George Strait}
-{meta: writer Dean Dillon}
+{meta: composer Dean Dillon}
 
 {start_of_verse: Verse 1}
 [C]I burn with de[G7]sire each time my [Am]heart fans the [C]fire

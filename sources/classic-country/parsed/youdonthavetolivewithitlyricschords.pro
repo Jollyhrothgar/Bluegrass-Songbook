@@ -1,6 +1,6 @@
 {meta: title You Don't Have To Live With It}
 {meta: artist Ed Bruce}
-{meta: writer Earl T. Conley, Rick Farrell, Steve Clark}
+{meta: composer Earl T. Conley, Rick Farrell, Steve Clark}
 
 {start_of_verse: Verse 1}
 [G]I didn't come in here for free advice

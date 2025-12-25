@@ -1,6 +1,6 @@
 {meta: title I Still Feel The Same About You}
 {meta: artist Connie Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]The leaves have changed from green to golden

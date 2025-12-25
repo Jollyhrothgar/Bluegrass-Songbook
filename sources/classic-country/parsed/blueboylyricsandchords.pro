@@ -1,6 +1,6 @@
 {meta: title Blue Boy Lyrics and Chords}
 {meta: artist Jim Reeves}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]Blue boy [F]that's what they call [C]me 

@@ -1,6 +1,6 @@
 {meta: title Little Eyes That Look At Me}
 {meta: artist the Wilburn Brothers}
-{meta: writer Glen Johnson}
+{meta: composer Glen Johnson}
 
 {start_of_verse: Verse 1}
 [C]I've got a woman full of trouble tied to [G7]me

@@ -1,6 +1,6 @@
 {meta: title This Is Texas Land}
 {meta: artist Boxcar Willie}
-{meta: writer Lecil Travis Martin}
+{meta: composer Lecil Travis Martin}
 
 {start_of_verse: Verse 1}
 [C]In eighteen hundred thirty six out[F]side of San [C]Antone 

@@ -1,6 +1,6 @@
 {meta: title Ten Thousand Tears}
 {meta: artist Bobby Helms}
-{meta: writer Allan Roberts}
+{meta: composer Allan Roberts}
 
 {start_of_verse: Verse 1}
 [D7]Ten thousand [G]tears [C]I cry for [G]you

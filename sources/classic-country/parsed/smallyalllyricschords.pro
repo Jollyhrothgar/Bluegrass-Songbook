@@ -1,6 +1,6 @@
 {meta: title Small Y'all}
 {meta: artist Randy Travis}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]Honey you think he's got an attitude

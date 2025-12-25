@@ -1,6 +1,6 @@
 {meta: title On The Jericho Road}
 {meta: artist Merle Haggard}
-{meta: writer Don S. McCrossan}
+{meta: composer Don S. McCrossan}
 
 {start_of_verse: Verse 1}
 [C]As we travel along (as we travel along)

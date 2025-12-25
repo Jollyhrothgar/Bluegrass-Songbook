@@ -1,6 +1,6 @@
 {meta: title Just Married}
 {meta: artist Faron Young}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]Well if I seem a little daffy it's because I'm so happy

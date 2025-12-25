@@ -1,6 +1,6 @@
 {meta: title Car Hoppin’ Mama}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Hank Thompson, Billy Gray, Amos Hedrick}
+{meta: composer Hank Thompson, Billy Gray, Amos Hedrick}
 
 {start_of_verse: Verse 1}
 [C]I wanna [A7]be a poppa to a [D7]car hoppin’ mama

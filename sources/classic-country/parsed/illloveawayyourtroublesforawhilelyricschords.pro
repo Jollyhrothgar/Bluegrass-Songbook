@@ -1,6 +1,6 @@
 {meta: title I'll Love Away Your Troubles For Awhile}
 {meta: artist Charly McClain}
-{meta: writer Bob Morrison and Johnny McRae}
+{meta: composer Bob Morrison and Johnny McRae}
 
 {start_of_verse: Verse 1}
 [G]I can tell your day ain't [C]been no bed of [G]roses

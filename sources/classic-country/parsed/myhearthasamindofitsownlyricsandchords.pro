@@ -1,6 +1,6 @@
 {meta: title My Heart Has A Mind Of Its Own}
 {meta: artist Reba McEntire}
-{meta: writer Howard Greenfield and Jack Keller}
+{meta: composer Howard Greenfield and Jack Keller}
 
 {start_of_verse: Verse 1}
 [C]I told this [G7]heart of mine our love would [F]never be

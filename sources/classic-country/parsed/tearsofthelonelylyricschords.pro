@@ -1,6 +1,6 @@
 {meta: title Tears Of The Lonely}
 {meta: artist Don Williams}
-{meta: writer Wayland Holyfield}
+{meta: composer Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]Faded [Am]pictures [F]yellow from [G7]time 

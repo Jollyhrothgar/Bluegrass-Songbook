@@ -1,6 +1,6 @@
 {meta: title Patanio The Pride Of The Plains}
 {meta: artist Billy Walker}
-{meta: writer Harry C. McAuliffe and Bobby Gregory}
+{meta: composer Harry C. McAuliffe and Bobby Gregory}
 
 {start_of_verse: Verse 1}
 [C]You look at the picture with a [G7]wondering [C]eye

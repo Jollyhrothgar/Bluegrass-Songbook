@@ -1,6 +1,6 @@
 {meta: title Sometimes I Cry In My Sleep}
 {meta: artist Ricky Van Shelton}
-{meta: writer R.V. Shelton and R.M. Bourke}
+{meta: composer R.V. Shelton and R.M. Bourke}
 
 {start_of_verse: Verse 1}
 [C]It's been about a [G7]year now since [C]you said goodbye

@@ -1,6 +1,6 @@
 {meta: title You Should Be Layin' In Her Arms}
 {meta: artist Charly McClain}
-{meta: writer Bob Morrison and Johnny McRae}
+{meta: composer Bob Morrison and Johnny McRae}
 
 {start_of_verse: Verse 1}
 [C]Lord knows I need to [F]hear the things 

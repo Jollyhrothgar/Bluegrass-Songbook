@@ -1,6 +1,6 @@
 {meta: title All I Need Is Not To Need You}
 {meta: artist Patty Loveless}
-{meta: writer William Robinson, Tim Nichols, Randy Scruggs}
+{meta: composer William Robinson, Tim Nichols, Randy Scruggs}
 
 {start_of_verse: Verse 1}
 [C]I don't need to go crazy [F]runnin' round [G7]town till [C]dawn

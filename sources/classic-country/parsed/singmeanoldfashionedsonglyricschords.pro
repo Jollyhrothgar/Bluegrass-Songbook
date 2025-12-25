@@ -1,6 +1,6 @@
 {meta: title Sing Me An Old Fashioned Song}
 {meta: artist Jean Shepard}
-{meta: writer Larry Henley and Johnny Slate}
+{meta: composer Larry Henley and Johnny Slate}
 
 {start_of_verse: Verse 1}
 [C]Sing me  sing me an old fashioned song

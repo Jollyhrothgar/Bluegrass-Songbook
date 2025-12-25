@@ -1,6 +1,6 @@
 {meta: title Ring The Bell}
 {meta: artist The Gibson Brothers}
-{meta: writer Chester Pickering O’Keefe}
+{meta: composer Chester Pickering O’Keefe}
 
 {start_of_verse: Verse 1}
 [C]In the road was a bell in the bell was a [C7]sound

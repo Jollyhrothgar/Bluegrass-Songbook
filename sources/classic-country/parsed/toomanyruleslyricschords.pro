@@ -1,6 +1,6 @@
 {meta: title Too Many Rules}
 {meta: artist Connie Francis}
-{meta: writer Don Stirling and Gary Temkin}
+{meta: composer Don Stirling and Gary Temkin}
 
 {start_of_verse: Verse 1}
 [C]I got home last night at [G7]ten past two

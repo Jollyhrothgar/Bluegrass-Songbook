@@ -1,6 +1,6 @@
 {meta: title Just A Rose Will Do}
 {meta: artist Porter Wagoner}
-{meta: writer J. A. McClung}
+{meta: composer J. A. McClung}
 
 {start_of_verse: Verse 1}
 [C]When time shall come for my leaving

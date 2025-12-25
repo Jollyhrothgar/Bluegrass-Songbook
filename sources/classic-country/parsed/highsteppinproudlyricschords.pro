@@ -1,6 +1,6 @@
 {meta: title High Steppin’ Proud}
 {meta: artist Tom T. Hall}
-{meta: writer Hillman Hall}
+{meta: composer Hillman Hall}
 
 {start_of_verse: Verse 1}
 [C]I was a high [F]steppin' proud man one [C]time

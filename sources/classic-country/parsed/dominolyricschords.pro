@@ -1,6 +1,6 @@
 {meta: title Domino}
 {meta: artist Roy Orbison}
-{meta: writer Johnny Rzeznik, Robbie Takac, George Tutuska}
+{meta: composer Johnny Rzeznik, Robbie Takac, George Tutuska}
 
 {start_of_verse: Verse 1}
 [C]There’s a cat in town that you might know

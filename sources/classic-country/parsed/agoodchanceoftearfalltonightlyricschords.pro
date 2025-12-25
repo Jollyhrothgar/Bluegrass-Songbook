@@ -1,6 +1,6 @@
 {meta: title A Good Chance Of Tear Fall Tonight}
 {meta: artist Charley Pride}
-{meta: writer L.E. White and Carolyn Stringer}
+{meta: composer L.E. White and Carolyn Stringer}
 
 {start_of_verse: Verse 1}
 [C]When we met you [F]brought the [C]sunshine 

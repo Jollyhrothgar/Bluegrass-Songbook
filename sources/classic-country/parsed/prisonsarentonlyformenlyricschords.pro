@@ -1,6 +1,6 @@
 {meta: title Prisons Aren't Only For Men}
 {meta: artist Leona Williams}
-{meta: writer Merle Haggard and Leona Williams}
+{meta: composer Merle Haggard and Leona Williams}
 
 {start_of_verse: Verse 1}
 [G]My momma and my [C]daddy they're [G]all that I have

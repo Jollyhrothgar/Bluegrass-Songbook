@@ -1,6 +1,6 @@
 {meta: title Cattle Call}
 {meta: artist Eddy Arnold}
-{meta: writer Tex Owens}
+{meta: composer Tex Owens}
 
 {start_of_verse: Verse 1}
 [C]W-oo  h-oo  w-oo  o-oo  ti  de

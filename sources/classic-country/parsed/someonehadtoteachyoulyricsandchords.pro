@@ -1,6 +1,6 @@
 {meta: title Someone Had to Teach You}
 {meta: artist George Strait}
-{meta: writer Harlan Howard and Bill Harvey}
+{meta: composer Harlan Howard and Bill Harvey}
 
 {start_of_verse: Verse 1}
 [G]Yes I'll take you back again you [C]knew I would

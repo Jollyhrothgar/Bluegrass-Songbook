@@ -1,6 +1,6 @@
 {meta: title I Ain't Got Nobody}
 {meta: artist Bob Wills}
-{meta: writer Dave Peyton, Roger Graham, Spencer Williams}
+{meta: composer Dave Peyton, Roger Graham, Spencer Williams}
 
 {start_of_verse: Verse 1}
 [C]There’s a sayin’ goin’ round

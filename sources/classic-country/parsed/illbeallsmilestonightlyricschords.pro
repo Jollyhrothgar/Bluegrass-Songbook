@@ -1,6 +1,6 @@
 {meta: title I'll Be All Smiles Tonight}
 {meta: artist The Cox Family}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]I'll deck my brow with roses the [C]loved ones may be [G]there

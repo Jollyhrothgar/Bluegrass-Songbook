@@ -1,6 +1,6 @@
 {meta: title You're The Devil In Disguise}
 {meta: artist Elvis Presley}
-{meta: writer Bill Giant, Bernie Baum, Florence Kaye}
+{meta: composer Bill Giant, Bernie Baum, Florence Kaye}
 
 {start_of_verse: Verse 1}
 [C]You look like an angel walk like an angel

@@ -1,6 +1,6 @@
 {meta: title When It's Over}
 {meta: artist Carl Smith}
-{meta: writer Carl Belew and Clyde Pitts}
+{meta: composer Carl Belew and Clyde Pitts}
 
 {start_of_verse: Verse 1}
 I don't mean [C]to cheat on you 

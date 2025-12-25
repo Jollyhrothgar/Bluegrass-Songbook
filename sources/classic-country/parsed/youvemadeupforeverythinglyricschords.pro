@@ -1,6 +1,6 @@
 {meta: title You've Made Up For Everything}
 {meta: artist Jerry Wallace}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]You are the trip to the [E7]land that [F]was too far [Dm]away[G7]

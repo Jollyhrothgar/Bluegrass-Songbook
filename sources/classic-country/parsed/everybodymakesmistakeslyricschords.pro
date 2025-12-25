@@ -1,6 +1,6 @@
 {meta: title Everybody Makes Mistakes}
 {meta: artist Lacy J. Dalton}
-{meta: writer Billy Sherrill and Lacy J. Dalton}
+{meta: composer Billy Sherrill and Lacy J. Dalton}
 
 {start_of_verse: Verse 1}
 [C]Break [G7]my [D7]heart  hearts get [C][G7]broken

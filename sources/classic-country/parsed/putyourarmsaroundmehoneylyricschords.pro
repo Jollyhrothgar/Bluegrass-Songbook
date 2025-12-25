@@ -1,6 +1,6 @@
 {meta: title Put Your Arms Around Me Honey}
 {meta: artist Fats Domino}
-{meta: writer Albert Von Tilzer and Junie McCree}
+{meta: composer Albert Von Tilzer and Junie McCree}
 
 {start_of_verse: Verse 1}
 [C]Put your arms around me honey and hold me tight

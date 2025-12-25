@@ -1,6 +1,6 @@
 {meta: title Building Memories}
 {meta: artist Hank Williams Jr.}
-{meta: writer Robert Jenkins and Larry Jenkins}
+{meta: composer Robert Jenkins and Larry Jenkins}
 
 {start_of_verse: Verse 1}
 [G]I don't have to tell you what I've got on my [C]mind 

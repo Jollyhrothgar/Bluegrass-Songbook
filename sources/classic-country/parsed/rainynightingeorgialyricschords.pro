@@ -1,6 +1,6 @@
 {meta: title Rainy Night In Georgia}
 {meta: artist Conway Twitty}
-{meta: writer Tony Joe White}
+{meta: composer Tony Joe White}
 
 {start_of_verse: Verse 1}
 [C]Hovering by my suitcase

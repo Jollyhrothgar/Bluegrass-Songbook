@@ -1,6 +1,6 @@
 {meta: title Moon River}
 {meta: artist Jim Reeves}
-{meta: writer Johnny Mercer and Henry Mancini}
+{meta: composer Johnny Mercer and Henry Mancini}
 
 {start_of_verse: Verse 1}
 [C]Moon [Am]River [F]wider than a [C]mile

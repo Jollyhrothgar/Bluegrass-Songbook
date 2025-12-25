@@ -1,6 +1,6 @@
 {meta: title Prisoner On The Run}
 {meta: artist Wynn Stewart}
-{meta: writer Buddy Long}
+{meta: composer Buddy Long}
 
 {start_of_verse: Verse 1}
 [G]There's no telling [C]what might [G]happen if they catch [C]me [G]tonight

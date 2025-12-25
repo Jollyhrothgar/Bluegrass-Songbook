@@ -1,6 +1,6 @@
 {meta: title Driving My Life Away}
 {meta: artist Eddie Rabbitt}
-{meta: writer David Malloy, Eddie Rabbitt, Even Stevens}
+{meta: composer David Malloy, Eddie Rabbitt, Even Stevens}
 
 {start_of_verse: Verse 1}
 [C]Well the midnight headlight find you on a rainy night

@@ -1,6 +1,6 @@
 {meta: title Jukebox Man}
 {meta: artist Mel Tillis}
-{meta: writer Mel Tillis and Buck Peddy}
+{meta: composer Mel Tillis and Buck Peddy}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna get a bunch of nickels gonna buy em by the roll

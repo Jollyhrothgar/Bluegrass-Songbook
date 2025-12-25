@@ -1,6 +1,6 @@
 {meta: title I Can't Sing A Love Song}
 {meta: artist Stonewall Jackson}
-{meta: writer Elbert Myers}
+{meta: composer Elbert Myers}
 
 {start_of_verse: Verse 1}
 [C]I can't sing a love song

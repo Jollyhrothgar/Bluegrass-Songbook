@@ -1,6 +1,6 @@
 {meta: title Sweet Little Country Girl}
 {meta: artist Carl Smith}
-{meta: writer Dave Burgess}
+{meta: composer Dave Burgess}
 
 {start_of_verse: Verse 1}
 [G]Well you used to be my sweet little country girl

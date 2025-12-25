@@ -1,6 +1,6 @@
 {meta: title Over The Hill}
 {meta: artist Mel Tills}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [C]Once I was a young man with the [F]world in my [C]hand

@@ -1,6 +1,6 @@
 {meta: title Broken Candy Heart}
 {meta: artist George Morgan}
-{meta: writer Cliff Rodgers and Mary Jean Shurtz}
+{meta: composer Cliff Rodgers and Mary Jean Shurtz}
 
 {start_of_verse: Verse 1}
 [C]When I last saw my darling we kissed [F]and said [C]goodbye

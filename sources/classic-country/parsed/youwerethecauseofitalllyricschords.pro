@@ -1,6 +1,6 @@
 {meta: title You Were The Cause Of It All}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Billy Gray}
+{meta: composer Hank Thompson and Billy Gray}
 
 {start_of_verse: Verse 1}
 [G]My heart you're resigning with [C]someone else you're [A7]wining

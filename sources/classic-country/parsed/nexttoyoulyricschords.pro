@@ -1,6 +1,6 @@
 {meta: title Next To You}
 {meta: artist Tammy Wynette}
-{meta: writer Alan Estes and Chris Hill}
+{meta: composer Alan Estes and Chris Hill}
 
 {start_of_verse: Verse 1}
 [D7]Next to [G]you  was the [D7]only place I thought I'd ever [G]be

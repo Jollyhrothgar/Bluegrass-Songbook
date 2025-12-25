@@ -1,6 +1,6 @@
 {meta: title What A Crying Shame}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo and Kostas Lazarides}
+{meta: composer Raul Malo and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [G]Wasn't I [D7]good to [C]you [G]  didn't I [D7]show [C]it

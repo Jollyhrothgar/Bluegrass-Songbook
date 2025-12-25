@@ -1,6 +1,6 @@
 {meta: title Anyplace You Want To Go}
 {meta: artist Porter Wagoner}
-{meta: writer Porter Wagoner}
+{meta: composer Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]Crushed velvet drapes the walls of the [G7]room

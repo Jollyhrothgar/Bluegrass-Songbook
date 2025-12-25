@@ -1,6 +1,6 @@
 {meta: title I Bowed on My Knees and Cried Holy}
 {meta: artist Ricky Van Shelton}
-{meta: writer Nettie Dudley Washington and E.M. Dudley Cantwell}
+{meta: composer Nettie Dudley Washington and E.M. Dudley Cantwell}
 
 {start_of_verse: Verse 1}
 [D7]I dreamed I [G]went to that [D7]city called [G]Glory 

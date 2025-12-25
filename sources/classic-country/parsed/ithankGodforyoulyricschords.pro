@@ -1,6 +1,6 @@
 {meta: title I Thank God For You}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson and Mike Cloer}
+{meta: composer Bill Anderson and Mike Cloer}
 
 {start_of_verse: Verse 1}
 [C](Every [F]morning when [C]I wake up) I thank [G7]God for [C]you

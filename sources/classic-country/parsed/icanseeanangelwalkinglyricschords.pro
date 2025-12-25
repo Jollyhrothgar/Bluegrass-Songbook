@@ -1,6 +1,6 @@
 {meta: title I Can See an Angel Walking}
 {meta: artist Patsy Cline}
-{meta: writer Kay Adelman}
+{meta: composer Kay Adelman}
 
 {start_of_verse: Verse 1}
 [G]I can see an angel walking someone else is by his [Am]side

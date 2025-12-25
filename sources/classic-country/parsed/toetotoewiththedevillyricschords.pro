@@ -1,6 +1,6 @@
 {meta: title Toe To Toe With The Devil}
 {meta: artist Vern Gosdin}
-{meta: writer Vern Gosdin and Max D. Barnes}
+{meta: composer Vern Gosdin and Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]Oh the river of temptation is flowing deep and wide

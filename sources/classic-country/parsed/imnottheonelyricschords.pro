@@ -1,6 +1,6 @@
 {meta: title I'm Not The One}
 {meta: artist Tony Booth}
-{meta: writer Craig Wiseman and Kent Blazy}
+{meta: composer Craig Wiseman and Kent Blazy}
 
 {start_of_verse: Verse 1}
 [C]You say that he's the one you love

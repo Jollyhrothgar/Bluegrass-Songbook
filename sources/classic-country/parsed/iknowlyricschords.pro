@@ -1,6 +1,6 @@
 {meta: title I Know}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Barbara George}
+{meta: composer Barbara George}
 
 {start_of_verse: Verse 1}
 [C]Some people say that this ole time religion

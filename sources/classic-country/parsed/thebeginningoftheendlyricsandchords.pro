@@ -1,6 +1,6 @@
 {meta: title The Beginning Of The End}
 {meta: artist Loretta Lynn}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [C](I [G]know we've reached the [C]beginning of the [G]end)

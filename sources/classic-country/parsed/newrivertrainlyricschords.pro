@@ -1,6 +1,6 @@
 {meta: title New River Train}
 {meta: artist Bill Monroe}
-{meta: writer Maggie Andrews}
+{meta: composer Maggie Andrews}
 
 {start_of_verse: Verse 1}
 [C]Darling you can't love one

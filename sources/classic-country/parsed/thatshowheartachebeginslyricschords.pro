@@ -1,6 +1,6 @@
 {meta: title That's How Heartache Begins}
 {meta: artist Patsy Cline}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Tell a little white lie and [Am]then multiply by [G]ten

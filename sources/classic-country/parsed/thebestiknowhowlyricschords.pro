@@ -1,6 +1,6 @@
 {meta: title The Best I Know How}
 {meta: artist Statler Brothers}
-{meta: writer Kim Reid}
+{meta: composer Kim Reid}
 
 {start_of_verse: Verse 1}
 [C]There's rumors going around [F]about you and me

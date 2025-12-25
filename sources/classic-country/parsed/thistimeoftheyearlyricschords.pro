@@ -1,6 +1,6 @@
 {meta: title This Time Of The Year}
 {meta: artist Brenda Lee}
-{meta: writer Clyde Otis and Brook Benton}
+{meta: composer Clyde Otis and Brook Benton}
 
 {start_of_verse: Verse 1}
 [F]Little girls and [Fm]little boys

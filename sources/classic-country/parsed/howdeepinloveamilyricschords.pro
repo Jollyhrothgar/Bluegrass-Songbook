@@ -1,6 +1,6 @@
 {meta: title How Deep In Love Am I}
 {meta: artist Johnny Lee}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [Am]I say that I'll be all right [C]in a day or two

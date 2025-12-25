@@ -1,6 +1,6 @@
 {meta: title Daddy's Honky Tonk}
 {meta: artist Moe Bandy}
-{meta: writer Bobby Keel, Buck Moore, Gordon Evans}
+{meta: composer Bobby Keel, Buck Moore, Gordon Evans}
 
 {start_of_verse: Verse 1}
 [C]Momma is a God fearin' [D7]woman

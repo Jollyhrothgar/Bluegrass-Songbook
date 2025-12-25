@@ -1,6 +1,6 @@
 {meta: title Old Bridges Burn Slow}
 {meta: artist Billy Joe Royal}
-{meta: writer Jerry Meaders}
+{meta: composer Jerry Meaders}
 
 {start_of_verse: Verse 1}
 [G]Here we go round again

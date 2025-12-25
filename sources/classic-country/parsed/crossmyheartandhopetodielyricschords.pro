@@ -1,6 +1,6 @@
 {meta: title Cross My Heart And Hope To Die}
 {meta: artist Elvis Presley}
-{meta: writer Ben Weisman and Sid Wayne}
+{meta: composer Ben Weisman and Sid Wayne}
 
 {start_of_verse: Verse 1}
 [C]I can explain about [F]last [C]night 

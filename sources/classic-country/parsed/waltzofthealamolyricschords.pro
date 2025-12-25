@@ -1,6 +1,6 @@
 {meta: title Waltz Of The Alamo}
 {meta: artist Pee Wee King}
-{meta: writer Erwin King}
+{meta: composer Erwin King}
 
 {start_of_verse: Verse 1}
 Waltz Of The Alamo

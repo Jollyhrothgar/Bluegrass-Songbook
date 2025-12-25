@@ -1,6 +1,6 @@
 {meta: title Trying to Outrun the Wind}
 {meta: artist Waylon Jennings}
-{meta: writer Eddie Setser, Tom Davey, Troy Seals}
+{meta: composer Eddie Setser, Tom Davey, Troy Seals}
 
 {start_of_verse: Verse 1}
 [C]He's a sad song singer [F]he plays a gut-stringer

@@ -1,6 +1,6 @@
 {meta: title I Should Have Watched That First Step}
 {meta: artist George Strait}
-{meta: writer Wayne Kemp}
+{meta: composer Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [G]I once had a love a true and [C]lasting love

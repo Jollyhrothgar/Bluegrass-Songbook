@@ -1,6 +1,6 @@
 {meta: title Mule Skinner Blues (Blue Yodel No. 8)}
 {meta: artist Dolly Parton}
-{meta: writer Jimmie Rodgers and George Vaughn}
+{meta: composer Jimmie Rodgers and George Vaughn}
 
 {start_of_verse: Verse 1}
 [G]Well good morning Captain 

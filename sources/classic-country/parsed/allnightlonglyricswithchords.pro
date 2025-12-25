@@ -1,6 +1,6 @@
 {meta: title All Night Long}
 {meta: artist Dottie West}
-{meta: writer Richard Mainegra and Milton Blackford}
+{meta: composer Richard Mainegra and Milton Blackford}
 
 {start_of_verse: Verse 1}
 [G]It's gonna be a beautiful evenin'

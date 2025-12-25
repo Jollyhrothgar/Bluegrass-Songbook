@@ -1,6 +1,6 @@
 {meta: title I Get So Mad At Me}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [G]I get so [C]mad at [G]me  ever time I see you out with [D7]him

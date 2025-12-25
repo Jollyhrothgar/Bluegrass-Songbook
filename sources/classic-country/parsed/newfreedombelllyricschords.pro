@@ -1,6 +1,6 @@
 {meta: title New Freedom Bell}
 {meta: artist The Country Gentleman}
-{meta: writer Lou Osborne}
+{meta: composer Lou Osborne}
 
 {start_of_verse: Verse 1}
 [C]Now have you found that freedom [G7]soul

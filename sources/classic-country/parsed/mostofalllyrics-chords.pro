@@ -1,6 +1,6 @@
 {meta: title Most Of All}
 {meta: artist Anne Murray}
-{meta: writer James Cobb and Buddy Buie}
+{meta: composer James Cobb and Buddy Buie}
 
 {start_of_verse: Verse 1}
 [G]Hello darlin' my it's good to [Am]hear you

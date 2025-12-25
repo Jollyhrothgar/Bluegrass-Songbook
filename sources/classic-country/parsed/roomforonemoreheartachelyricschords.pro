@@ -1,6 +1,6 @@
 {meta: title Room For One More Heartache}
 {meta: artist Jack Greene}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]They say I'm a fool to [F]forgive you

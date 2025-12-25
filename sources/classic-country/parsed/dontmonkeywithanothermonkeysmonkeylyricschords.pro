@@ -1,6 +1,6 @@
 {meta: title Don’t Monkey With Another Monkey’s Monkey}
 {meta: artist Johnny Paycheck}
-{meta: writer Dale Morris}
+{meta: composer Dale Morris}
 
 {start_of_verse: Verse 1}
 [C]I was up in Virginia at a [F]place called Pappa [C]Joe's

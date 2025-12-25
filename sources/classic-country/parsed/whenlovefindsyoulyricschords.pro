@@ -1,6 +1,6 @@
 {meta: title When Love Finds You}
 {meta: artist Vince Gill}
-{meta: writer Michael Omartian and Vince Gill}
+{meta: composer Michael Omartian and Vince Gill}
 
 {start_of_verse: Verse 1}
 [G]Love sure is [C]something no [Am]one can [G]explain

@@ -1,6 +1,6 @@
 {meta: title Wisdom Of A Fool}
 {meta: artist Barbara Mandrell}
-{meta: writer Abner Silver and Roy Alfred}
+{meta: composer Abner Silver and Roy Alfred}
 
 {start_of_verse: Verse 1}
 [D7]If you're [G]lucky enough [D7]to have [Am]someone who [E7]loves you

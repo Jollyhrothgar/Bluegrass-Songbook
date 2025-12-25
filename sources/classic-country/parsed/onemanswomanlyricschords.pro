@@ -1,6 +1,6 @@
 {meta: title One Man's Woman}
 {meta: artist Kenny Rogers}
-{meta: writer Steve Glassmeyer}
+{meta: composer Steve Glassmeyer}
 
 {start_of_verse: Verse 1}
 [C]She's got [Em]dinner on the [D7]table at [C]seven

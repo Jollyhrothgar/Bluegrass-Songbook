@@ -1,6 +1,6 @@
 {meta: title If I Knew Then What I Know Now}
 {meta: artist Charlie Rich}
-{meta: writer Wayne P. Walker and Benny Joy}
+{meta: composer Wayne P. Walker and Benny Joy}
 
 {start_of_verse: Verse 1}
 [C]If I knew then what [Am]I know now

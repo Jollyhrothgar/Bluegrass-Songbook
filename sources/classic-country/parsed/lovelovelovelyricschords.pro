@@ -1,6 +1,6 @@
 {meta: title Love Love Love}
 {meta: artist Webb Pierce}
-{meta: writer Ted Jarrett}
+{meta: composer Ted Jarrett}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I cry when you don't call

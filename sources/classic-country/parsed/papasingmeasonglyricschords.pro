@@ -1,6 +1,6 @@
 {meta: title Papa Sing Me A Song}
 {meta: artist Conway Twitty}
-{meta: writer L.E. White and Charles Haney}
+{meta: composer L.E. White and Charles Haney}
 
 {start_of_verse: Verse 1}
 [G]Every son wants to follow in the [C]footsteps of his [G]dad

@@ -1,6 +1,6 @@
 {meta: title Fool's Paradise}
 {meta: artist Jim Reeves}
-{meta: writer Johnny Bond}
+{meta: composer Johnny Bond}
 
 {start_of_verse: Verse 1}
 [C]As I write this letter to you [G7]darlin'

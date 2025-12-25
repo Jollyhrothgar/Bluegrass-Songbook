@@ -1,6 +1,6 @@
 {meta: title Christmas In The Country}
 {meta: artist Joni Harms}
-{meta: writer Carl Jackson and Thomas Kuenster}
+{meta: composer Carl Jackson and Thomas Kuenster}
 
 {start_of_verse: Verse 1}
 [G]Out here in the country when De[C]cember rolls [G]around

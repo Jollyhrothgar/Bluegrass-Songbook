@@ -1,6 +1,6 @@
 {meta: title Take Me Home}
 {meta: artist Crystal Gayle}
-{meta: writer Tom Waits}
+{meta: composer Tom Waits}
 
 {start_of_verse: Verse 1}
 [G]Take me home you [C]silly [G]boy

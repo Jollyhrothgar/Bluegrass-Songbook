@@ -1,6 +1,6 @@
 {meta: title Have You Ever Been Lonely}
 {meta: artist Jim Reeves}
-{meta: writer George Brown, Peter DeRose, Billy Hill}
+{meta: composer George Brown, Peter DeRose, Billy Hill}
 
 {start_of_verse: Verse 1}
 [G]Have you ever been [G][C]l-onely 

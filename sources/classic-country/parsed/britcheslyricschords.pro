@@ -1,6 +1,6 @@
 {meta: title Britches}
 {meta: artist Elvis Presley}
-{meta: writer Sherman Edwards, Donald Meyer, Sid Wayne}
+{meta: composer Sherman Edwards, Donald Meyer, Sid Wayne}
 
 {start_of_verse: Verse 1}
 [C]Beware of a gal in britches yo-di-o-di-o

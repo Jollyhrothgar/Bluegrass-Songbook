@@ -1,6 +1,6 @@
 {meta: title Jealous Loving Heart}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb and Talmadge Tubb}
+{meta: composer Ernest Tubb and Talmadge Tubb}
 
 {start_of_verse: Verse 1}
 [G]Don't ever kiss no one but me

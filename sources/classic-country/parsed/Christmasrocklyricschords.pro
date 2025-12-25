@@ -1,6 +1,6 @@
 {meta: title Christmas Rock}
 {meta: artist Toby Keith}
-{meta: writer Lewis Anderson}
+{meta: composer Lewis Anderson}
 
 {start_of_verse: Verse 1}
 [C]My billfold doesn't have a [G7]prayer

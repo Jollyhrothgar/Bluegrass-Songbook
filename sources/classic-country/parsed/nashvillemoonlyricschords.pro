@@ -1,6 +1,6 @@
 {meta: title Nashville Moon}
 {meta: artist Ronnie Milsap}
-{meta: writer John Schweers and Roger Murrah}
+{meta: composer John Schweers and Roger Murrah}
 
 {start_of_verse: Verse 1}
 [C]Music City U.S.A. [F]some dreams broken and some [Fm]dreams made

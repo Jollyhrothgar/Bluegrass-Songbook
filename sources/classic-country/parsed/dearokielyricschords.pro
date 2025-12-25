@@ -1,6 +1,6 @@
 {meta: title Dear Okie}
 {meta: artist Hank Thompson}
-{meta: writer Doye O'Dell and Rudy Sooter}
+{meta: composer Doye O'Dell and Rudy Sooter}
 
 {start_of_verse: Verse 1}
 [G]Dear Okie if [E7]you see Arkie tell him 

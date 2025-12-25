@@ -1,6 +1,6 @@
 {meta: title Thank You Teardrop}
 {meta: artist David Houston}
-{meta: writer Don Thompson}
+{meta: composer Don Thompson}
 
 {start_of_verse: Verse 1}
 [D7]Thank you [G]teardrop for [D7]falling from her [G]eyes

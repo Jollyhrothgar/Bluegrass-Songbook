@@ -1,6 +1,6 @@
 {meta: title What Am I Gonna Do Now}
 {meta: artist Ferlin Husky}
-{meta: writer Lois Mann, Henry Bernard, Murray Burns}
+{meta: composer Lois Mann, Henry Bernard, Murray Burns}
 
 {start_of_verse: Verse 1}
 [C]What am I gonna do [G7]now 

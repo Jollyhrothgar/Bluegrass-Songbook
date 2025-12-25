@@ -1,6 +1,6 @@
 {meta: title Forsaken Love}
 {meta: artist Lester Flatt and Earl Scruggs}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]I’ve loved you always yes I’ve been [F]true

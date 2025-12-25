@@ -1,6 +1,6 @@
 {meta: title At The Foot Of The Cross}
 {meta: artist Connie Smith}
-{meta: writer Larry Lee}
+{meta: composer Larry Lee}
 
 {start_of_verse: Verse 1}
 [C]Lord on bended knee I'm begging you

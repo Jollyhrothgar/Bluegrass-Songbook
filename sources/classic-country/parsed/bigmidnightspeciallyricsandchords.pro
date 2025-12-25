@@ -1,6 +1,6 @@
 {meta: title Big Midnight Special}
 {meta: artist Carl Smith}
-{meta: writer Wilma Lee Cooper}
+{meta: composer Wilma Lee Cooper}
 
 {start_of_verse: Verse 1}
 [G]Big midnight [C]special shine your light on [G]me

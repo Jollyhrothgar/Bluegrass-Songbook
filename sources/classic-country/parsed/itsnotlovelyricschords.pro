@@ -1,6 +1,6 @@
 {meta: title It's Not Love}
 {meta: artist Merle Haggard}
-{meta: writer Hank Cochran and Glenn Martin}
+{meta: composer Hank Cochran and Glenn Martin}
 
 {start_of_verse: Verse 1}
 [G]She was always there each [G7]time I needed [C]you 

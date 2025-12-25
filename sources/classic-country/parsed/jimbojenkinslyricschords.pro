@@ -1,6 +1,6 @@
 {meta: title Jimbo Jenkins}
 {meta: artist Jim Reeves}
-{meta: writer Jim Reeves and Bobby Garrett}
+{meta: composer Jim Reeves and Bobby Garrett}
 
 {start_of_verse: Verse 1}
 [G]There's a funny little man in my hometown 

@@ -1,6 +1,6 @@
 {meta: title Needed}
 {meta: artist Tracy Byrd}
-{meta: writer Neil Thrasher and Wendell Mobley}
+{meta: composer Neil Thrasher and Wendell Mobley}
 
 {start_of_verse: Verse 1}
 [C]You say you hate to bother me [Dm]baby I'll be right there[F]

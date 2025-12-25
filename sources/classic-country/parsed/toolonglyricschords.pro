@@ -1,6 +1,6 @@
 {meta: title Too Long}
 {meta: artist Webb Pierce}
-{meta: writer Charlie McCoy}
+{meta: composer Charlie McCoy}
 
 {start_of_verse: Verse 1}
 [G7]Too [C]long you waited too [A7]long to come home 

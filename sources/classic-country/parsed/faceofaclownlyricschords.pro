@@ -1,6 +1,6 @@
 {meta: title Face Of A Clown}
 {meta: artist Ferlin Husky}
-{meta: writer Carolyn Penick}
+{meta: composer Carolyn Penick}
 
 {start_of_verse: Verse 1}
 [C]It's hard for me to smile I feel like crying [F]yet I always manage to [C]grin

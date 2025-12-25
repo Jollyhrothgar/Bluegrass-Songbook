@@ -1,6 +1,6 @@
 {meta: title California Cotton Fields}
 {meta: artist The Seldom Scene}
-{meta: writer Dallas Frazier and Earl Montgomery}
+{meta: composer Dallas Frazier and Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [G]My drifting memory goes [D7]back to the [F]spring of '4[C]3

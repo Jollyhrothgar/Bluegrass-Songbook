@@ -1,6 +1,6 @@
 {meta: title Real Thing (More Than A Memory)}
 {meta: artist Bobby Bare}
-{meta: writer Roy Baham}
+{meta: composer Roy Baham}
 
 {start_of_verse: Verse 1}
 [G](It's gonna take a lot more [G7]than a [C]memory

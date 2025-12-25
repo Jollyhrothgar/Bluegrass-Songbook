@@ -1,6 +1,6 @@
 {meta: title A Cold Day In December}
 {meta: artist George Jones}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]We tried hard to [F]hold on[C]to 

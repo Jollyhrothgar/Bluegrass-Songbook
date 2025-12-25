@@ -1,6 +1,6 @@
 {meta: title Ain't Nothin' Like A Woman}
 {meta: artist Dottie West}
-{meta: writer Marvin Thomas and Mark Leggett}
+{meta: composer Marvin Thomas and Mark Leggett}
 
 {start_of_verse: Verse 1}
 [C]Look at you sitting all alone tonight

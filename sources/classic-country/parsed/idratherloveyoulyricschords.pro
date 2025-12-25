@@ -1,6 +1,6 @@
 {meta: title I'd Rather Love You}
 {meta: artist Charlie Pride}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [G]If tonight could be our last [C]night [G]together

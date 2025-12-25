@@ -1,6 +1,6 @@
 {meta: title Dealing With the Devil}
 {meta: artist Merle Haggard}
-{meta: writer Eddy Raven and Sanger D. Shafer}
+{meta: composer Eddy Raven and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G]Don't ask me where she came from

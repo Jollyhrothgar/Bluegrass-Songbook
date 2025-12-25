@@ -1,6 +1,6 @@
 {meta: title Kids Get Lonely}
 {meta: artist Merle Haggard}
-{meta: writer Lou Bradley and Merle Haggard}
+{meta: composer Lou Bradley and Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]Kids get lonesome too

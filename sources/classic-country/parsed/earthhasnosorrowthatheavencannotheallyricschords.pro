@@ -1,6 +1,6 @@
 {meta: title Earth Has No Sorrow (That Heaven Cannot Heal)}
 {meta: artist Webb Pierce}
-{meta: writer Sylvia Fisher and Leon Miller}
+{meta: composer Sylvia Fisher and Leon Miller}
 
 {start_of_verse: Verse 1}
 [G]Earth has no sorrow that [C]heaven cannot [G]heal

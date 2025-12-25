@@ -1,6 +1,6 @@
 {meta: title Beg Your Pardon}
 {meta: artist Sonny James}
-{meta: writer Beasley Smith and Francis Craig}
+{meta: composer Beasley Smith and Francis Craig}
 
 {start_of_verse: Verse 1}
 [C]If I lose my pay beg your [G7]pardon

@@ -1,6 +1,6 @@
 {meta: title It's Gotta Be Love}
 {meta: artist Reba McEntire}
-{meta: writer Jerry Wallace and Terry Skinner}
+{meta: composer Jerry Wallace and Terry Skinner}
 
 {start_of_verse: Verse 1}
 [G7]It's gotta be [C]lov[G7]e that [Am]keeps us to[C]gether[F]

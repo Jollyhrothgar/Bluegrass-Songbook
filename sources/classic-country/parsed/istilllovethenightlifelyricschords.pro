@@ -1,6 +1,6 @@
 {meta: title I Still Love The Night Life}
 {meta: artist Tracy Byrd}
-{meta: writer Kelley Lovelace and Brad Paisley}
+{meta: composer Kelley Lovelace and Brad Paisley}
 
 {start_of_verse: Verse 1}
 [C]How dare you accuse me of [F]being on a leash

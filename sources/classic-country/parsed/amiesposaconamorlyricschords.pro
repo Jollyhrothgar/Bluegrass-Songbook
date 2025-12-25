@@ -1,6 +1,6 @@
 {meta: title A Mi Esposa Con Amor (To My Wife With Love)}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Carole F. Smith}
+{meta: composer Sonny James and Carole F. Smith}
 
 {start_of_verse: Verse 1}
 [G]On our wedding day we knelt by candle light

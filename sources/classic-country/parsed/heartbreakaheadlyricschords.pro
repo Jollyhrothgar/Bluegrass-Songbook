@@ -1,6 +1,6 @@
 {meta: title Heartbreak Ahead}
 {meta: artist Wanda Jackson}
-{meta: writer Dorothy Brown}
+{meta: composer Dorothy Brown}
 
 {start_of_verse: Verse 1}
 [C]A gypsy fortune teller in a gay [F]market [C]place

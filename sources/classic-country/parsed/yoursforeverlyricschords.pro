@@ -1,6 +1,6 @@
 {meta: title Yours Forever}
 {meta: artist Wynn Stewart}
-{meta: writer Red Simpson}
+{meta: composer Red Simpson}
 
 {start_of_verse: Verse 1}
 [C]Yours [F]forever as long as I [C]live

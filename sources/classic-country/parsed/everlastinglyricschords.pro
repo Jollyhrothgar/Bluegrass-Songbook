@@ -1,6 +1,6 @@
 {meta: title Everlasting}
 {meta: artist Jim Ed Brown}
-{meta: writer Barry Mann and Larry Kolber}
+{meta: composer Barry Mann and Larry Kolber}
 
 {start_of_verse: Verse 1}
 [G]As long as the rivers [Em]flow to the sea

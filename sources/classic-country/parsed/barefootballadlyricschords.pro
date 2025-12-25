@@ -1,6 +1,6 @@
 {meta: title Barefoot Ballad}
 {meta: artist Elvis Presley}
-{meta: writer Dolores Fuller and Larry Morris}
+{meta: composer Dolores Fuller and Larry Morris}
 
 {start_of_verse: Verse 1}
 [C]I want a barefoot ballad yes a [F]barefoot ballad

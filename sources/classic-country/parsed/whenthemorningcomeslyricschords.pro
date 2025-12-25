@@ -1,6 +1,6 @@
 {meta: title When The Morning Comes Lyrics and Chords}
 {meta: artist Hoyt Axton and Linda Ronstadt}
-{meta: writer Hoyt Axton}
+{meta: composer Hoyt Axton}
 
 {start_of_verse: Verse 1}
 [C]When the morning comes and you gotta get [G7]up

@@ -1,6 +1,6 @@
 {meta: title An Old Memory’s Arms}
 {meta: artist Darrell McCall}
-{meta: writer Diane McCall}
+{meta: composer Diane McCall}
 
 {start_of_verse: Verse 1}
 [C]I loved somebody a [F]long time [C]ago

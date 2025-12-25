@@ -1,6 +1,6 @@
 {meta: title Why Did You Wander}
 {meta: artist Ricky Skaggs}
-{meta: writer Lester Flatt and Bill Monroe}
+{meta: composer Lester Flatt and Bill Monroe}
 
 {start_of_verse: Verse 1}
 [G]Oh why oh why did you [C]wander

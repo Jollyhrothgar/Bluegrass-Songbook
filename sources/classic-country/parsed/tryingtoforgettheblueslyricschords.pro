@@ -1,6 +1,6 @@
 {meta: title Trying To Forget The Blues}
 {meta: artist Porter Wagoner}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]I'm having a [G7]hard time trying to forget the [C]blues

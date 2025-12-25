@@ -1,6 +1,6 @@
 {meta: title If I Ever Get Rich Mom}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Raleigh Keith and Frank Rhoades}
+{meta: composer Raleigh Keith and Frank Rhoades}
 
 {start_of_verse: Verse 1}
 [C]If I ever get [A7]rich mom the [D7]first thing I'll do

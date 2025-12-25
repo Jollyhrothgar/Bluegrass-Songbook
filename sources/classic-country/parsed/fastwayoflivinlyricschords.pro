@@ -1,6 +1,6 @@
 {meta: title Fast Way Of Livin’}
 {meta: artist Charlie Walker}
-{meta: writer Dixie Davis and Larry Davis}
+{meta: composer Dixie Davis and Larry Davis}
 
 {start_of_verse: Verse 1}
 [C]Every night you'll find me on a barstool somewhere

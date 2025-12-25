@@ -1,6 +1,6 @@
 {meta: title Goodbye Comes Hard For Me}
 {meta: artist Merle Haggard}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]I just remembered something that [C7]I forgot to [F]do

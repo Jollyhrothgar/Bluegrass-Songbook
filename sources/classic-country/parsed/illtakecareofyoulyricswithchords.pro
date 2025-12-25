@@ -1,6 +1,6 @@
 {meta: title I'll Take Care Of You}
 {meta: artist Kenny Rogers}
-{meta: writer John D. Souther}
+{meta: composer John D. Souther}
 
 {start_of_verse: Verse 1}
 [C]Times are [F]hard and [C]rents are [F]high

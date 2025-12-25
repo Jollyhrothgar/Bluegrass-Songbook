@@ -1,6 +1,6 @@
 {meta: title She’s Not Really Cheating}
 {meta: artist Moe Bandy}
-{meta: writer Randy Shaffer}
+{meta: composer Randy Shaffer}
 
 {start_of_verse: Verse 1}
 [G]Not a hair out of place she makes up her face 

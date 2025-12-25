@@ -1,6 +1,6 @@
 {meta: title How Do You Start Over}
 {meta: artist Roy Orbison}
-{meta: writer William Dees and Roy Orbison}
+{meta: composer William Dees and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [C]How do you start over [F]again

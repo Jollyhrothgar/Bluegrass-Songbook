@@ -1,6 +1,6 @@
 {meta: title I Can't Keep My Hands Off Of You}
 {meta: artist Waylon Jennings}
-{meta: writer Bobby Borchers and Mack Vickery}
+{meta: composer Bobby Borchers and Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]You know I can't [G7]stand to be [C]around you

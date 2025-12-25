@@ -1,6 +1,6 @@
 {meta: title Hung Up On Loving You}
 {meta: artist Carl Belew}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [G]I'm restless when I'm not with you

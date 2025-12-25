@@ -1,6 +1,6 @@
 {meta: title Why Why Why}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton and Bill Owens}
+{meta: composer Dolly Parton and Bill Owens}
 
 {start_of_verse: Verse 1}
 [C]Why why why did you say goodbye

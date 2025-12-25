@@ -1,6 +1,6 @@
 {meta: title Dusty Road}
 {meta: artist Norma Jean}
-{meta: writer Dave Kirby and Vic McAlpin}
+{meta: composer Dave Kirby and Vic McAlpin}
 
 {start_of_verse: Verse 1}
 [G]Life gets so lonely when you live down on dusty road

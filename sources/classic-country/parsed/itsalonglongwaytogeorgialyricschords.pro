@@ -1,6 +1,6 @@
 {meta: title It's A Long Long Way To Georgia}
 {meta: artist Don Gibson}
-{meta: writer Dub Murray and Ralph Siegel}
+{meta: composer Dub Murray and Ralph Siegel}
 
 {start_of_verse: Verse 1}
 [C]They've opened the [F]door to my [C]cell

@@ -1,6 +1,6 @@
 {meta: title Puttin' In Overtime At Home}
 {meta: artist Kenny Rogers}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]If they call for me and wonder where I [F]am

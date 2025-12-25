@@ -1,6 +1,6 @@
 {meta: title I'm Bound For The Kingdom}
 {meta: artist Webb Pierce}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [D7]You may [G]ask me where I'm headed you may [C]ask me where I'm [G]bound

@@ -1,6 +1,6 @@
 {meta: title Forever's A Long Long Time}
 {meta: artist Jimmie Davis}
-{meta: writer Hank Williams and Jimmie Davis}
+{meta: composer Hank Williams and Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [C]You swear your love will last for[F]ever 

@@ -1,6 +1,6 @@
 {meta: title I Can Still Make Cheyenne}
 {meta: artist George Strait}
-{meta: writer Aaron Baker and Erv Woolsey}
+{meta: composer Aaron Baker and Erv Woolsey}
 
 {start_of_verse: Verse 1}
 [C]Her telephone rang bout a [F]quarter till nine

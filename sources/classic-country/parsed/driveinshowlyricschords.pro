@@ -1,6 +1,6 @@
 {meta: title Drive In Show}
 {meta: artist Eddie Cochran}
-{meta: writer Fred Dexter}
+{meta: composer Fred Dexter}
 
 {start_of_verse: Verse 1}
 [G]Come on baby to a drive-in [C]show

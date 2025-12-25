@@ -1,6 +1,6 @@
 {meta: title Sometimes I Forget}
 {meta: artist Doug Stone}
-{meta: writer Bob Regan and Billy Kirsch}
+{meta: composer Bob Regan and Billy Kirsch}
 
 {start_of_verse: Verse 1}
 [G7]Sometimes I for[C]get [F]        

@@ -1,6 +1,6 @@
 {meta: title She's 21}
 {meta: artist Webb Pierce}
-{meta: writer Max Powell and Webb Pierce}
+{meta: composer Max Powell and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]There was a wedding and [F]church bells were [C]ringing

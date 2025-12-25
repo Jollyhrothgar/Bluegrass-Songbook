@@ -1,6 +1,6 @@
 {meta: title Lion In The Winter Lyrics and Chords}
 {meta: artist Hoyt Axton and Linda Ronstadt}
-{meta: writer Hoyt Axton}
+{meta: composer Hoyt Axton}
 
 {start_of_verse: Verse 1}
 [G]Like a lion in the winter I can [C]hear the summer [G]call

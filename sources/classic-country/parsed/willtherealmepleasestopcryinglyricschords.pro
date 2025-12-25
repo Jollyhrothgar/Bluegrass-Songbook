@@ -1,6 +1,6 @@
 {meta: title Will The Real Me Please Stop Crying}
 {meta: artist Connie Smith}
-{meta: writer Bob Tubert}
+{meta: composer Bob Tubert}
 
 {start_of_verse: Verse 1}
 [C]Will the [F]real me [G7]please stop [C]cryin'

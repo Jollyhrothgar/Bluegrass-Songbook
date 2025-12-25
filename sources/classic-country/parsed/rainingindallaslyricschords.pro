@@ -1,6 +1,6 @@
 {meta: title Raining In Dallas}
 {meta: artist Gene Watson}
-{meta: writer John Gostick and Richard Moreland}
+{meta: composer John Gostick and Richard Moreland}
 
 {start_of_verse: Verse 1}
 [G]I'll bet you it's [D7]raining in [Em]Dallas 

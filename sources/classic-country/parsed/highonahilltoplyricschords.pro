@@ -1,6 +1,6 @@
 {meta: title High On A Hilltop}
 {meta: artist The Louvin Brothers}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]High on a hilltop [F]overlooking the [C]city

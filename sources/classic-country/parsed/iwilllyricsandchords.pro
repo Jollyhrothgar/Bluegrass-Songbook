@@ -1,6 +1,6 @@
 {meta: title I Will}
 {meta: artist Connie Smith}
-{meta: writer Dick Glasser}
+{meta: composer Dick Glasser}
 
 {start_of_verse: Verse 1}
 [C]I don't wanna be the one [Am]to say I'm gonna miss [C]you

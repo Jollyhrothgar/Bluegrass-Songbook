@@ -1,6 +1,6 @@
 {meta: title Clean Your Own Tables}
 {meta: artist Stonewall Jackson}
-{meta: writer Chip Taylor}
+{meta: composer Chip Taylor}
 
 {start_of_verse: Verse 1}
 [C]Now clean your own tables boys pour your own beer

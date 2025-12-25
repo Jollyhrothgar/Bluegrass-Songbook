@@ -1,6 +1,6 @@
 {meta: title Joy Bells Ringing In My Soul}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Gladys Stacey, Louise Certain, James Organ}
+{meta: composer Gladys Stacey, Louise Certain, James Organ}
 
 {start_of_verse: Verse 1}
 [G]Joy bells joy bells [C]everlasting [G]joy bells

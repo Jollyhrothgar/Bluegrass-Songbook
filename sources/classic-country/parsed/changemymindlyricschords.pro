@@ -1,6 +1,6 @@
 {meta: title Change My Mind}
 {meta: artist Waylon Jennings}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]If I should get a look of [A#7]leavin' in my [G7]eyes

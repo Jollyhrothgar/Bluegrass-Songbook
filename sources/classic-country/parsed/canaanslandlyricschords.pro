@@ -1,6 +1,6 @@
 {meta: title Canaan's Land}
 {meta: artist Don Gibson}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G](I'm on my way I'm on my way)

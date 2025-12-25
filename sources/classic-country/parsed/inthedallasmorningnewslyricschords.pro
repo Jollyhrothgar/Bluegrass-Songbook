@@ -1,6 +1,6 @@
 {meta: title In The Dallas Morning News}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]I heard a nasty rumor you were seeing someone new

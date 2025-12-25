@@ -1,6 +1,6 @@
 {meta: title It Still Takes A Wise Man To Pray}
 {meta: artist Jeff and Sheri Easter}
-{meta: writer Steve Moss}
+{meta: composer Steve Moss}
 
 {start_of_verse: Verse 1}
 [G]Lord the first time you came here there was [C]no one to receive You 

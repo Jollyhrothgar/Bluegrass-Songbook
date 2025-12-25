@@ -1,6 +1,6 @@
 {meta: title Thank You Old Flag Of Mine}
 {meta: artist Boxcar Willie}
-{meta: writer Bill Mack}
+{meta: composer Bill Mack}
 
 {start_of_verse: Verse 1}
 [C]I wanna thank you old flag of mine [F]for letting me [C]defend

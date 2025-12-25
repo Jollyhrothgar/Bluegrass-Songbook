@@ -1,6 +1,6 @@
 {meta: title Back Up Against The Wall}
 {meta: artist Travis Tritt}
-{meta: writer James Cobb and Buddy Buie}
+{meta: composer James Cobb and Buddy Buie}
 
 {start_of_verse: Verse 1}
 [G]I was dealin' up and down the highway 

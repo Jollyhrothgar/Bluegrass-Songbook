@@ -1,6 +1,6 @@
 {meta: title Our House Is A Home}
 {meta: artist Daniel O'Donnell}
-{meta: writer Soye Maurice Edward}
+{meta: composer Soye Maurice Edward}
 
 {start_of_verse: Verse 1}
 [C]There's always a fire in the [F]kitchen

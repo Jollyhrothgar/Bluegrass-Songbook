@@ -1,6 +1,6 @@
 {meta: title Willie The Weeper}
 {meta: artist Billy Walker}
-{meta: writer Freddie Hart and Billy Walker}
+{meta: composer Freddie Hart and Billy Walker}
 
 {start_of_verse: Verse 1}
 [C]Yonder comes [G7]Willie the [C]weeper 

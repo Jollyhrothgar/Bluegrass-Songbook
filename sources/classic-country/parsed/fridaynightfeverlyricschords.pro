@@ -1,6 +1,6 @@
 {meta: title Friday Night Fever}
 {meta: artist George Strait}
-{meta: writer Dean Dillon, Blake Mevis, Frank Dycus}
+{meta: composer Dean Dillon, Blake Mevis, Frank Dycus}
 
 {start_of_verse: Verse 1}
 [G]I love the sound of a jukebox playing

@@ -1,6 +1,6 @@
 {meta: title After Being Your Lover}
 {meta: artist Tommy Overstreet}
-{meta: writer Freddie Hart}
+{meta: composer Freddie Hart}
 
 {start_of_verse: Verse 1}
 [C]Loving you so much all this [G7]time

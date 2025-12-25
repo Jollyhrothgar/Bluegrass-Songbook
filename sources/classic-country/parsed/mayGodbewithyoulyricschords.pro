@@ -1,6 +1,6 @@
 {meta: title May God Be With You}
 {meta: artist Sonny James}
-{meta: writer Rex Maupin and Myron Oury}
+{meta: composer Rex Maupin and Myron Oury}
 
 {start_of_verse: Verse 1}
 [C]May God be with you (be with you)

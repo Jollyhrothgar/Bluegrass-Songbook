@@ -1,6 +1,6 @@
 {meta: title Brand New Heartache}
 {meta: artist Emmylou Harris and Gram Parsons}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]A guy moved into town I ain't seen you [C7]around

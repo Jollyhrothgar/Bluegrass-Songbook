@@ -1,6 +1,6 @@
 {meta: title Victory In Jesus}
 {meta: artist Merle Haggard}
-{meta: writer Eugene M. Bartlett}
+{meta: composer Eugene M. Bartlett}
 
 {start_of_verse: Verse 1}
 [C]I heard an old old story how a [F]Savior came from [C]glory

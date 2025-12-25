@@ -1,6 +1,6 @@
 {meta: title Fairest Lord Jesus}
 {meta: artist Pat Boone}
-{meta: writer Paul Johnson}
+{meta: composer Paul Johnson}
 
 {start_of_verse: Verse 1}
 [G]Fairest Lord [C]Je[D]su[G]s!

@@ -1,6 +1,6 @@
 {meta: title Room To Run}
 {meta: artist Eddy Raven}
-{meta: writer Eddy Raven and David Powelson}
+{meta: composer Eddy Raven and David Powelson}
 
 {start_of_verse: Verse 1}
 [C]I sit on the side of the [G7]bed with my [F]head in my [C]hands

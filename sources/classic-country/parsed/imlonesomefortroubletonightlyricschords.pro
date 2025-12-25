@@ -1,6 +1,6 @@
 {meta: title I'm Lonesome For Trouble Tonight}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Doyle Wilburn}
+{meta: composer Loretta Lynn and Doyle Wilburn}
 
 {start_of_verse: Verse 1}
 [G]He's nothin' but trouble but he's always on my [D7]mind

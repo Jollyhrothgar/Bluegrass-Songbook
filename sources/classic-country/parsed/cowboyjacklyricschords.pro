@@ -1,6 +1,6 @@
 {meta: title Cowboy Jack}
 {meta: artist Don Edwards}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]He was just a lonely [C]cowboy

@@ -1,6 +1,6 @@
 {meta: title Song of the Whispering Leaves}
 {meta: artist Hank Locklin}
-{meta: writer Scot Livingston and Hank Locklin}
+{meta: composer Scot Livingston and Hank Locklin}
 
 {start_of_verse: Verse 1}
 [C]I can see you my [G7]dear standing [C]there

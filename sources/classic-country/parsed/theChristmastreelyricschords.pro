@@ -1,6 +1,6 @@
 {meta: title The Christmas Tree}
 {meta: artist Bobby Vinton}
-{meta: writer Ronald Goodwin}
+{meta: composer Ronald Goodwin}
 
 {start_of_verse: Verse 1}
 [G]There once was a tree a beautiful tree

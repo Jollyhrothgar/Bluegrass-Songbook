@@ -1,6 +1,6 @@
 {meta: title I'll Never Close My Heart to You}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Floyd Wilson}
+{meta: composer Floyd Wilson}
 
 {start_of_verse: Verse 1}
 [C]If I could close my [A7]heart the [D7]way I close my eyes

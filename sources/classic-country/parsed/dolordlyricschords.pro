@@ -1,6 +1,6 @@
 {meta: title Do Lord}
 {meta: artist Johnny Cash}
-{meta: writer Verne O. Fossett}
+{meta: composer Verne O. Fossett}
 
 {start_of_verse: Verse 1}
 [C]I’ve got a home in Glory Land

@@ -1,6 +1,6 @@
 {meta: title Overnight Sensation}
 {meta: artist Mickey Gilley}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]I've seen the way men turn their heads  [F]every time that she walks by

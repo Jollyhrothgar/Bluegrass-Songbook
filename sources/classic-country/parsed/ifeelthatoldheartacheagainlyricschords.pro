@@ -1,6 +1,6 @@
 {meta: title I Feel That Old Heartache Again}
 {meta: artist Ferlin Husky}
-{meta: writer Wayne P. Walker and Bill Morgan}
+{meta: composer Wayne P. Walker and Bill Morgan}
 
 {start_of_verse: Verse 1}
 [C]Oh oh oh oh oh oh oh [F]oh

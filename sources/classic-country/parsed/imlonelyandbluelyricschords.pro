@@ -1,6 +1,6 @@
 {meta: title I'm Lonely And Blue}
 {meta: artist Lefty Frizzell}
-{meta: writer Jimmie Rodgers and Elsie McWilliams}
+{meta: composer Jimmie Rodgers and Elsie McWilliams}
 
 {start_of_verse: Verse 1}
 [C]I'm lonely and blue and downhearted [F]too

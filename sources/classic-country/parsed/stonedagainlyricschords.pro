@@ -1,6 +1,6 @@
 {meta: title Stoned Again}
 {meta: artist Norma Jean}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [G7]Momma he came home [C]stoned again last [F]night

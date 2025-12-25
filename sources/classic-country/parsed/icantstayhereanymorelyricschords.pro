@@ -1,6 +1,6 @@
 {meta: title I Can't Stay Here Anymore}
 {meta: artist Russell Moore and IIIrd Tyme Out}
-{meta: writer Billy Smith}
+{meta: composer Billy Smith}
 
 {start_of_verse: Verse 1}
 [G]You know I can't stay here any[C]more

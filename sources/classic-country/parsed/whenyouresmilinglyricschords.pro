@@ -1,6 +1,6 @@
 {meta: title When You're Smiling}
 {meta: artist Dean Martin}
-{meta: writer Joe Goodwin, Larry Shay, Mark Fisher}
+{meta: composer Joe Goodwin, Larry Shay, Mark Fisher}
 
 {start_of_verse: Verse 1}
 [G]When you're smiling when you're smiling

@@ -1,6 +1,6 @@
 {meta: title Don't Laugh At My Love}
 {meta: artist Eddy Arnold}
-{meta: writer Kenneth Ray Rogers}
+{meta: composer Kenneth Ray Rogers}
 
 {start_of_verse: Verse 1}
 [G]Don't laugh at my [D7]love 

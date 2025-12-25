@@ -1,6 +1,6 @@
 {meta: title Southern Comfort}
 {meta: artist Conway Twitty}
-{meta: writer Jamie O'Hara}
+{meta: composer Jamie O'Hara}
 
 {start_of_verse: Verse 1}
 [G]Well I know a lady in [C]Alabam

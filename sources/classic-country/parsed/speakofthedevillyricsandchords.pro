@@ -1,6 +1,6 @@
 {meta: title Speak Of The Devil}
 {meta: artist Pirates Of The Mississippi}
-{meta: writer Richard Alves, Danny Bear Mayo, Bill McCorvey}
+{meta: composer Richard Alves, Danny Bear Mayo, Bill McCorvey}
 
 {start_of_verse: Verse 1}
 [G7]You think there’s someone else

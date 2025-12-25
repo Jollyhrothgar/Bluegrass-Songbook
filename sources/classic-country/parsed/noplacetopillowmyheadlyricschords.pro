@@ -1,6 +1,6 @@
 {meta: title No Place To Pillow My Head}
 {meta: artist Lester Flatt}
-{meta: writer Lester Flatt and Bill Monroe}
+{meta: composer Lester Flatt and Bill Monroe}
 
 {start_of_verse: Verse 1}
 [G]Once I was happy with a [C]heartbeat no [G]care

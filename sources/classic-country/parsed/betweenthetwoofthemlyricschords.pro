@@ -1,6 +1,6 @@
 {meta: title Between The Two Of Them}
 {meta: artist Tanya Tucker}
-{meta: writer Mickey Cates}
+{meta: composer Mickey Cates}
 
 {start_of_verse: Verse 1}
 [G]They married back in [C]forty-two  [D7]they were young and [G]love was new

@@ -1,6 +1,6 @@
 {meta: title The Sound Of Your Footsteps}
 {meta: artist The Wilburn Brothers}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]I hear footsteps  [Am]walking [D7]out on [G]me

@@ -1,6 +1,6 @@
 {meta: title Where Do You Go To Lose A Heartache}
 {meta: artist Mickey Gilley}
-{meta: writer Eddie Kilroy}
+{meta: composer Eddie Kilroy}
 
 {start_of_verse: Verse 1}
 [C]Somewhere tonight lov[G7]ers have a [C]party [C7]

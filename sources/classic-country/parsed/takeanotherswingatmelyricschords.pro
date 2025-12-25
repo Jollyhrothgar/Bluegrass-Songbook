@@ -1,6 +1,6 @@
 {meta: title Take Another Swing At Me}
 {meta: artist Randy Travis}
-{meta: writer Paul Craft}
+{meta: composer Paul Craft}
 
 {start_of_verse: Verse 1}
 [G7]I know I sent you [C]packin' but now I want you [A7]back again

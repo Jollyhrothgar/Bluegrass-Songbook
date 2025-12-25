@@ -1,6 +1,6 @@
 {meta: title Fighting Fire With Fire}
 {meta: artist Gene Watson}
-{meta: writer Bobby Harden}
+{meta: composer Bobby Harden}
 
 {start_of_verse: Verse 1}
 [C]You came here on purpose in front of me Diana

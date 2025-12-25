@@ -1,6 +1,6 @@
 {meta: title Yesterday's Child}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Bill Dees}
+{meta: composer Roy Orbison and Bill Dees}
 
 {start_of_verse: Verse 1}
 [G]I see the [Bm]face of [Em]yesterday's child

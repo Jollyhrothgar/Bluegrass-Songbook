@@ -1,6 +1,6 @@
 {meta: title Read Between The Lines}
 {meta: artist Stonewall Jackson}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [C]I can never seem to [F]tell you how much I [C]love you

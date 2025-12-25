@@ -1,6 +1,6 @@
 {meta: title Forever}
 {meta: artist Johnny Duncan}
-{meta: writer Buddy Killen}
+{meta: composer Buddy Killen}
 
 {start_of_verse: Verse 1}
 [G]Hold me [C]kiss me [G]whisper [C]sweetly

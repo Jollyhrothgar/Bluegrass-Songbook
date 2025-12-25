@@ -1,6 +1,6 @@
 {meta: title You'll Be All Right}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash and June Carter Cash}
+{meta: composer Johnny Cash and June Carter Cash}
 
 {start_of_verse: Verse 1}
 [C]Well I see you've lost your [G7]honey bee

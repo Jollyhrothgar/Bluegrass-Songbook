@@ -1,6 +1,6 @@
 {meta: title Memory That Bad}
 {meta: artist The Malpass Brothers}
-{meta: writer Chris Malpass}
+{meta: composer Chris Malpass}
 
 {start_of_verse: Verse 1}
 [C]I'm surprised [Em]you'd even call

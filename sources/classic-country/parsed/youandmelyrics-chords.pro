@@ -1,6 +1,6 @@
 {meta: title You And Me}
 {meta: artist Johnny Cash}
-{meta: writer Roger Bowling and Larry Butler}
+{meta: composer Roger Bowling and Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]Ain't it [G]good babe [C]you and [G]me

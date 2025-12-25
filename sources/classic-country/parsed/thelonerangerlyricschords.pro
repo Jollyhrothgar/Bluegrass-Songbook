@@ -1,6 +1,6 @@
 {meta: title The Lone Ranger}
 {meta: artist George Jones}
-{meta: writer Gerald Smith, Billy Yates, John Northrup}
+{meta: composer Gerald Smith, Billy Yates, John Northrup}
 
 {start_of_verse: Verse 1}
 [G]I'm tired of sitting home sick of being all alone

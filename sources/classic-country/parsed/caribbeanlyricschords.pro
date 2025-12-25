@@ -1,6 +1,6 @@
 {meta: title Caribbean}
 {meta: artist Hank Snow}
-{meta: writer Mitchell Torok}
+{meta: composer Mitchell Torok}
 
 {start_of_verse: Verse 1}
 [G]Have you ever been down to Haiti 

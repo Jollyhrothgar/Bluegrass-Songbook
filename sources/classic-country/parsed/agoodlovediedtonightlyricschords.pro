@@ -1,6 +1,6 @@
 {meta: title A Good Love Died Tonight}
 {meta: artist Conway Twitty}
-{meta: writer Roger Marrah}
+{meta: composer Roger Marrah}
 
 {start_of_verse: Verse 1}
 [C]To him it may be over but for [F]her it'll be one day at a [C]time

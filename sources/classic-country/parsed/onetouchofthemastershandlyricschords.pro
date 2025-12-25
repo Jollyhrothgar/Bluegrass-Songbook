@@ -1,6 +1,6 @@
 {meta: title One Touch Of The Master's Hand}
 {meta: artist Jimmie Davis}
-{meta: writer Jim McCartney}
+{meta: composer Jim McCartney}
 
 {start_of_verse: Verse 1}
 [C]If for some reason you're in doubt just [F]try my Savior out

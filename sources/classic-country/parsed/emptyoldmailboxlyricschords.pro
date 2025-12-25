@@ -1,6 +1,6 @@
 {meta: title Empty Old Mailbox}
 {meta: artist Don Rigsby}
-{meta: writer Tom T. Hall and Dixie Hall}
+{meta: composer Tom T. Hall and Dixie Hall}
 
 {start_of_verse: Verse 1}
 [G]Empty old mailbox down [D7]there by the [G]road

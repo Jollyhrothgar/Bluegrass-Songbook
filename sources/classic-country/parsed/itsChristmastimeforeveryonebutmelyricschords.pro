@@ -1,6 +1,6 @@
 {meta: title It's Christmas Time For Everyone But Me}
 {meta: artist Buck Owens}
-{meta: writer Dixie Deen and Ray King}
+{meta: composer Dixie Deen and Ray King}
 
 {start_of_verse: Verse 1}
 [G]It must be that time again the snow is [D7]falling

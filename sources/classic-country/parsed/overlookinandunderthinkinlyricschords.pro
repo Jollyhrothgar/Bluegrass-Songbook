@@ -1,6 +1,6 @@
 {meta: title Overlookin' And Underthinkin'}
 {meta: artist Don Williams}
-{meta: writer Don Williams, Joe Allen, Deon Lay}
+{meta: composer Don Williams, Joe Allen, Deon Lay}
 
 {start_of_verse: Verse 1}
 [C]You turned your head at [F]things that I was [C]doin'

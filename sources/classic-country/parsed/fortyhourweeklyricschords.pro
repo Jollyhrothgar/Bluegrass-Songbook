@@ -1,6 +1,6 @@
 {meta: title Forty Hour Week}
 {meta: artist Alabama}
-{meta: writer Don Schlitz, Dave Loggins, Lisa Silver}
+{meta: composer Don Schlitz, Dave Loggins, Lisa Silver}
 
 {start_of_verse: Verse 1}
 [C]There are people in this country

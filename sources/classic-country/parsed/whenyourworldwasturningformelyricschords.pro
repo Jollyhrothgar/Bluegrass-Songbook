@@ -1,6 +1,6 @@
 {meta: title When Your World Was Turning For Me}
 {meta: artist Randy Travis}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G7]When [C]we found our mountain we [F]named it [C]forever

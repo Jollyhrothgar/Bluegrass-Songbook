@@ -1,6 +1,6 @@
 {meta: title I Ain't Never Seen No One Like You}
 {meta: artist George Strait}
-{meta: writer Roger Springer, Bruce Bouton, Mark Chesnutt}
+{meta: composer Roger Springer, Bruce Bouton, Mark Chesnutt}
 
 {start_of_verse: Verse 1}
 [G]I've traveled through [Am]lots of [D7]places 

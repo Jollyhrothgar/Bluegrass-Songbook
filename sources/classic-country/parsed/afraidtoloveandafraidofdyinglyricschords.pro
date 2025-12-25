@@ -1,6 +1,6 @@
 {meta: title Afraid To Love And Afraid Of Dying}
 {meta: artist Dolly Parton}
-{meta: writer Porter Wagoner}
+{meta: composer Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]They say most anything you eat could hurt your [F]health

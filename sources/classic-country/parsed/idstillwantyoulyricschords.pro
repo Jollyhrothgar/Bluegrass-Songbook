@@ -1,6 +1,6 @@
 {meta: title I'd Still Want You}
 {meta: artist Hank Williams}
-{meta: writer Hank Williams}
+{meta: composer Hank Williams}
 
 {start_of_verse: Verse 1}
 [G]I could shame you till you hide your face

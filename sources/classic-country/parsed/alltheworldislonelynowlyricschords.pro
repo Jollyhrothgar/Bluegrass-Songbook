@@ -1,6 +1,6 @@
 {meta: title All the World is Lonely Now}
 {meta: artist Hank Locklin}
-{meta: writer Mel Foree}
+{meta: composer Mel Foree}
 
 {start_of_verse: Verse 1}
 [G]Yesterday you said you loved [C]me

@@ -1,6 +1,6 @@
 {meta: title Tiny Broken Heart}
 {meta: artist Alison Krauss with Dan Tyminski}
-{meta: writer Eddie Hill, Charlie Louvin, Ira Louvin}
+{meta: composer Eddie Hill, Charlie Louvin, Ira Louvin}
 
 {start_of_verse: Verse 1}
 [G]He was just a little farm lad so busy at [C]play

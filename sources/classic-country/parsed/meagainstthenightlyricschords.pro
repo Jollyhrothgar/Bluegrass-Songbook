@@ -1,6 +1,6 @@
 {meta: title Me Against The Night}
 {meta: artist Crystal Gayle}
-{meta: writer Mary Ann Kennedy, Pamela Rose, Pat Bunch}
+{meta: composer Mary Ann Kennedy, Pamela Rose, Pat Bunch}
 
 {start_of_verse: Verse 1}
 [G]Moon [C]please don't shine on [G]me  [F]help me [C]hide his [G]memory

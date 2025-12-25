@@ -1,6 +1,6 @@
 {meta: title Last Night Every Night}
 {meta: artist Reba McEntire}
-{meta: writer Bob Morrison, Jim Zerface, Bill Zerface}
+{meta: composer Bob Morrison, Jim Zerface, Bill Zerface}
 
 {start_of_verse: Verse 1}
 [G]I watch you as you wake and rub your eyes

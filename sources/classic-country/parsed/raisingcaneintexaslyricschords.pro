@@ -1,6 +1,6 @@
 {meta: title Raising Cane In Texas}
 {meta: artist Gene Watson}
-{meta: writer Deion Lay and Joseph Allen}
+{meta: composer Deion Lay and Joseph Allen}
 
 {start_of_verse: Verse 1}
 [C]Her plane will land in Dallas

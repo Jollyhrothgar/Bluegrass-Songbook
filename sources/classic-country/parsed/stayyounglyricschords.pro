@@ -1,6 +1,6 @@
 {meta: title Stay Young}
 {meta: artist Don Williams}
-{meta: writer Graham Lyle and Benny Gallagher}
+{meta: composer Graham Lyle and Benny Gallagher}
 
 {start_of_verse: Verse 1}
 [C]Oh don’t you lose that [F]light in your [C]eyes

@@ -1,6 +1,6 @@
 {meta: title Forever Blue}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo}
+{meta: composer Raul Malo}
 
 {start_of_verse: Verse 1}
 [C]Why was I so wrong when [G7]everything was right

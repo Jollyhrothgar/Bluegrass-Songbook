@@ -1,6 +1,6 @@
 {meta: title Wake Me Up In Oklahoma}
 {meta: artist Jim Ed Brown}
-{meta: writer Tony Lindauer}
+{meta: composer Tony Lindauer}
 
 {start_of_verse: Verse 1}
 [C]Wake me up in [F]Okla[G7]homa

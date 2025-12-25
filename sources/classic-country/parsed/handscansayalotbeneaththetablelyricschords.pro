@@ -1,6 +1,6 @@
 {meta: title Hands Can Say A Lot Beneath The Table}
 {meta: artist Johnny Bush}
-{meta: writer Arthur Leo Owens}
+{meta: composer Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]The man who sits [C7]across from me don't [F]know it

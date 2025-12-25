@@ -1,6 +1,6 @@
 {meta: title When Your House Is Not A Home}
 {meta: artist Jean Shepard}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]I walk up to my door and [D7]hate to turn the [G]key

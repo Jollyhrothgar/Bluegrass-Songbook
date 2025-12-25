@@ -1,6 +1,6 @@
 {meta: title Your Name's Become A Household Word}
 {meta: artist Jean Shepard}
-{meta: writer Neal Merritt}
+{meta: composer Neal Merritt}
 
 {start_of_verse: Verse 1}
 [G]I just [D7]turned out the [G]light upstairs

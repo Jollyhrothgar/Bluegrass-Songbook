@@ -1,6 +1,6 @@
 {meta: title He Set Me Free}
 {meta: artist Connie Smith}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [G]Once like a bird in prison I dwelt

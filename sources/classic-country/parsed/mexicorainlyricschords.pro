@@ -1,6 +1,6 @@
 {meta: title Mexico Rain}
 {meta: artist Johnny Rodriguez}
-{meta: writer Michael Hearne}
+{meta: composer Michael Hearne}
 
 {start_of_verse: Verse 1}
 [C]Well the smoke cuts the [G7]lights [F]in this honky tonk [C]bar

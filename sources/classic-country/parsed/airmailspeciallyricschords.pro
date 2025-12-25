@@ -1,6 +1,6 @@
 {meta: title Air Mail Special}
 {meta: artist Jim and Jesse}
-{meta: writer Charlie Christian, Ossie J. Godson}
+{meta: composer Charlie Christian, Ossie J. Godson}
 
 {start_of_verse: Verse 1}
 [G]Left New York this morning [C]early

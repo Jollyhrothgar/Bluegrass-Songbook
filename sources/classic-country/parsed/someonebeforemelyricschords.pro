@@ -1,6 +1,6 @@
 {meta: title Someone Before Me}
 {meta: artist Loretta Lynn}
-{meta: writer Bobby Hicks}
+{meta: composer Bobby Hicks}
 
 {start_of_verse: Verse 1}
 [C]Someone before me still turns you inside [G7]out

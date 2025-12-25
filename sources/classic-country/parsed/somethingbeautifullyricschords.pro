@@ -1,6 +1,6 @@
 {meta: title Something Beautiful}
 {meta: artist Slim Whitman}
-{meta: writer Moneen Carpenter}
+{meta: composer Moneen Carpenter}
 
 {start_of_verse: Verse 1}
 [C]You were good to me you were warm with [G7]me

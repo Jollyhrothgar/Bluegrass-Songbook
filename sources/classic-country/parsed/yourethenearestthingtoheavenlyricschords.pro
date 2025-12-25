@@ -1,6 +1,6 @@
 {meta: title You're The Nearest Thing To Heaven}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash, Hoyt Johnson, Jimmy Atkins}
+{meta: composer Johnny Cash, Hoyt Johnson, Jimmy Atkins}
 
 {start_of_verse: Verse 1}
 [C]I have sailed the peaceful waters of the ocean deep and blue

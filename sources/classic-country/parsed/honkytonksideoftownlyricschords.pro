@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Side Of Town}
 {meta: artist Randy Travis}
-{meta: writer Troy Seals, Eddie Setser, Jerry Phillips}
+{meta: composer Troy Seals, Eddie Setser, Jerry Phillips}
 
 {start_of_verse: Verse 1}
 [G7]Don't you cry [C]don't you moan [G7]hang your [C]head down all night [F]long

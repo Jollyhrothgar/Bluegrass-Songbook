@@ -1,6 +1,6 @@
 {meta: title Anita You're Dreaming}
 {meta: artist Waylon Jennings}
-{meta: writer Waylon Jennings and Don Bowman}
+{meta: composer Waylon Jennings and Don Bowman}
 
 {start_of_verse: Verse 1}
 [G]Anita come closer stop crying and listen to [D7]me

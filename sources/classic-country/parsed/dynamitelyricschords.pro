@@ -1,6 +1,6 @@
 {meta: title Dynamite}
 {meta: artist Brenda Lee}
-{meta: writer Mort Garson and Tom Glazer}
+{meta: composer Mort Garson and Tom Glazer}
 
 {start_of_verse: Verse 1}
 [C](Ooo baba doo baba doo baba doo baba dynamite)

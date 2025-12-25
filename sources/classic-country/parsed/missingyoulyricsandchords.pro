@@ -1,6 +1,6 @@
 {meta: title Missing You}
 {meta: artist Charlie Pride}
-{meta: writer Kye Fleming and Dennis Morgan}
+{meta: composer Kye Fleming and Dennis Morgan}
 
 {start_of_verse: Verse 1}
 [Am]Well I wake up [C]every [F]morning

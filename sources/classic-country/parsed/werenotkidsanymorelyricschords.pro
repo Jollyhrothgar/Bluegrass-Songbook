@@ -1,6 +1,6 @@
 {meta: title We're Not Kids Anymore}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn}
+{meta: composer Loretta Lynn}
 
 {start_of_verse: Verse 1}
 [G]We're not kids anymore not a [C]little girl and [G]boy

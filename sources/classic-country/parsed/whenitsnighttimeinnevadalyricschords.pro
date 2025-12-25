@@ -1,6 +1,6 @@
 {meta: title When It's Night Time In Nevada}
 {meta: artist Sons of the Pioneers}
-{meta: writer Richard W. Pascoe, Will Dulmage, H. O. Reilly Clint}
+{meta: composer Richard W. Pascoe, Will Dulmage, H. O. Reilly Clint}
 
 {start_of_verse: Verse 1}
 [C]When it's nighttime in [F]Nevada I'm [C]dreaming

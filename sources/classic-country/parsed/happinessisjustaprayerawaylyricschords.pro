@@ -1,6 +1,6 @@
 {meta: title Happiness Is Just A Prayer Away}
 {meta: artist Jimmie Davis}
-{meta: writer Albert Williams}
+{meta: composer Albert Williams}
 
 {start_of_verse: Verse 1}
 [C]When you're sad and alone far [F]away from home

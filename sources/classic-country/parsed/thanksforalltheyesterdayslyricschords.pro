@@ -1,6 +1,6 @@
 {meta: title Thanks For All The Yesterdays}
 {meta: artist Mac Wiseman}
-{meta: writer Bobby Osborne}
+{meta: composer Bobby Osborne}
 
 {start_of_verse: Verse 1}
 [C]Thanks for [D7]all the [C]yester[G]days

@@ -1,6 +1,6 @@
 {meta: title Always Just A Memory Away}
 {meta: artist Mel Tillis}
-{meta: writer Lonnie M. Tillis}
+{meta: composer Lonnie M. Tillis}
 
 {start_of_verse: Verse 1}
 [C]Where the music's playin' loud [F]you'll find me in the [Dm]crowd

@@ -1,6 +1,6 @@
 {meta: title Turn Me To Love}
 {meta: artist Keith Whitley}
-{meta: writer Norro Wilson and Wayland Holyfield}
+{meta: composer Norro Wilson and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 Turn Me To Love

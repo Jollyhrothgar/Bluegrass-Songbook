@@ -1,6 +1,6 @@
 {meta: title Truck Driving Son Of A Gun}
 {meta: artist Ferlin Husky}
-{meta: writer Dixie Dean and Robert A. King}
+{meta: composer Dixie Dean and Robert A. King}
 
 {start_of_verse: Verse 1}
 [C]I got a cute little gal in every eastern town from Boston to St Lou’

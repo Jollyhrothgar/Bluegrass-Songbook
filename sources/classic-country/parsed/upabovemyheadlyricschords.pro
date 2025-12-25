@@ -1,6 +1,6 @@
 {meta: title Up Above My Head}
 {meta: artist Randy Travis}
-{meta: writer Sister Rosetta Tharpe}
+{meta: composer Sister Rosetta Tharpe}
 
 {start_of_verse: Verse 1}
 [C]Up above my head (up above my head) 

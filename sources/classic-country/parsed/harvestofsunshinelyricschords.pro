@@ -1,6 +1,6 @@
 {meta: title Harvest Of Sunshine}
 {meta: artist Jimmy Dean}
-{meta: writer Bruce Katz and Jimmy Dean}
+{meta: composer Bruce Katz and Jimmy Dean}
 
 {start_of_verse: Verse 1}
 [C]A harvest of sunshine a sky full of [D7]blue

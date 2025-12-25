@@ -1,6 +1,6 @@
 {meta: title A Better Life Is Waiting}
 {meta: artist Melba Montgomery}
-{meta: writer Melba Montgomery and Carl Montgomery}
+{meta: composer Melba Montgomery and Carl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]I'm ready to leave this sinful world

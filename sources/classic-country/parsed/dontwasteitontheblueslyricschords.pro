@@ -1,6 +1,6 @@
 {meta: title Don't Waste It On The Blues}
 {meta: artist Gene Watson}
-{meta: writer Sandy Ramos and Jerry Vandiver}
+{meta: composer Sandy Ramos and Jerry Vandiver}
 
 {start_of_verse: Verse 1}
 [C]I know there's nothing [A7]worse than a [Dm]bad [G7]goodbye

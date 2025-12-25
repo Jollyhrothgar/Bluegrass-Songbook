@@ -1,6 +1,6 @@
 {meta: title Heartbeat In The Darkness}
 {meta: artist Don Williams}
-{meta: writer Dave Loggins and Russell Smith}
+{meta: composer Dave Loggins and Russell Smith}
 
 {start_of_verse: Verse 1}
 [C]Cadillac smiles in the ladies styles 

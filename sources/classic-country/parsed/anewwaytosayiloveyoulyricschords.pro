@@ -1,6 +1,6 @@
 {meta: title A New Way to Say I Love You}
 {meta: artist Crystal Gayle}
-{meta: writer Michael Masser and Gerald Goffin}
+{meta: composer Michael Masser and Gerald Goffin}
 
 {start_of_verse: Verse 1}
 [G]It would be [F]easy to [Em]call you an an[Dm]gel

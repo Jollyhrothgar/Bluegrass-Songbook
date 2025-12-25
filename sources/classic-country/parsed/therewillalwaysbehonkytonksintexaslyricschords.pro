@@ -1,6 +1,6 @@
 {meta: title There Will Always Be Honky Tonks In Texas}
 {meta: artist Darrell McCall}
-{meta: writer Bobby Bond and Conrad Pierce}
+{meta: composer Bobby Bond and Conrad Pierce}
 
 {start_of_verse: Verse 1}
 [C]Oh there’ll always be [C7]honk tonks in [F]Texas

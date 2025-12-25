@@ -1,6 +1,6 @@
 {meta: title I'm Down to My Last I Love You}
 {meta: artist David Houston}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]Tonight I'll go and [C]find her one more [G]time

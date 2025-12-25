@@ -1,6 +1,6 @@
 {meta: title Can I See You Tonight}
 {meta: artist Tanya Tucker}
-{meta: writer Rafe VanHoy and Deborah Allen}
+{meta: composer Rafe VanHoy and Deborah Allen}
 
 {start_of_verse: Verse 1}
 [C]I don't know where to s[F]tart  [G7]now that we're fallen [C]apart

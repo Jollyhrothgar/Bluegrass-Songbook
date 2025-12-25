@@ -1,6 +1,6 @@
 {meta: title Somebody Always Paints The Wall}
 {meta: artist George Jones}
-{meta: writer John Dennis Knutson and Arthur Leo Owens}
+{meta: composer John Dennis Knutson and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]If my old truck was a horse I'd have to shoot it

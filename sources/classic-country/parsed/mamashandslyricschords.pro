@@ -1,6 +1,6 @@
 {meta: title Mama's Hands}
 {meta: artist George Jones}
-{meta: writer Larry Kingston and Frank Dycus}
+{meta: composer Larry Kingston and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [C]My daddy's hands held [F]tens and two's [G7]while mom's were holding [C]me

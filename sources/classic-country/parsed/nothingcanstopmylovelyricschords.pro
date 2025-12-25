@@ -1,6 +1,6 @@
 {meta: title Nothing Can Stop My Love}
 {meta: artist Roger Miller}
-{meta: writer Roger Miller and George Jones}
+{meta: composer Roger Miller and George Jones}
 
 {start_of_verse: Verse 1}
 [C]I gotta get up I gotta keep [F]goin' 

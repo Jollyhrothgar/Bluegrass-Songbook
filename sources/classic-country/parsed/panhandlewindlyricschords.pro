@@ -1,6 +1,6 @@
 {meta: title Panhandle Wind}
 {meta: artist Red Steagall}
-{meta: writer Billy Joe Foster, Luke Houston Reed, Russell Steagall}
+{meta: composer Billy Joe Foster, Luke Houston Reed, Russell Steagall}
 
 {start_of_verse: Verse 1}
 [C]My grandparents came here [F]from Yell Arkan[C]sas

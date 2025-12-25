@@ -1,6 +1,6 @@
 {meta: title Will You Walk With Me}
 {meta: artist Mary Duff}
-{meta: writer Isla Grant}
+{meta: composer Isla Grant}
 
 {start_of_verse: Verse 1}
 [C]Will you walk with me

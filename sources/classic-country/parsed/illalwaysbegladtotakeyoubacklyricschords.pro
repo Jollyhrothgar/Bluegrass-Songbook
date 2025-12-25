@@ -1,6 +1,6 @@
 {meta: title I'll Always Be Glad To Take You Back}
 {meta: artist Merle Haggard}
-{meta: writer Ernest Tubb}
+{meta: composer Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]After you have finished all your running [D7]round

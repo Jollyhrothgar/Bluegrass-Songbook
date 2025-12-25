@@ -1,6 +1,6 @@
 {meta: title I'm Sorry We Said Goodbye}
 {meta: artist Bob Wills}
-{meta: writer Harley Huggins}
+{meta: composer Harley Huggins}
 
 {start_of_verse: Verse 1}
 [C]I’m sorry [G7]that we said good[C]bye 

@@ -1,6 +1,6 @@
 {meta: title For Christmas}
 {meta: artist Ray Price}
-{meta: writer Jo Logan}
+{meta: composer Jo Logan}
 
 {start_of_verse: Verse 1}
 [C]For Christmas  I want a stocking filled with memories

@@ -1,6 +1,6 @@
 {meta: title The Man In Love With You}
 {meta: artist George Strait}
-{meta: writer Steve Dorff and Gary Hurju}
+{meta: composer Steve Dorff and Gary Hurju}
 
 {start_of_verse: Verse 1}
 [C]I'm not the [Em]hero who will [Gm]always save the [C]day[C7]

@@ -1,6 +1,6 @@
 {meta: title Chained to a Memory}
 {meta: artist Eddy Arnold}
-{meta: writer Jenny Lou Carson}
+{meta: composer Jenny Lou Carson}
 
 {start_of_verse: Verse 1}
 [G7]Makes no [C]difference if we two [C7]are far apart [F]dear

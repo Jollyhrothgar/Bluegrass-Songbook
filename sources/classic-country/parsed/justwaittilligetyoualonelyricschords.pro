@@ -1,6 +1,6 @@
 {meta: title Just Wait Till I Get You Alone}
 {meta: artist Carl Smith}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]You tell me I'm too shy a bashful sort of guy

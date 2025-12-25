@@ -1,6 +1,6 @@
 {meta: title Waltzing With Sin}
 {meta: artist Red Sovine}
-{meta: writer Red Hayes}
+{meta: composer Red Hayes}
 
 {start_of_verse: Verse 1}
 [F](Each time you're [C]dancing you're [G7]waltzing with [C]sin)

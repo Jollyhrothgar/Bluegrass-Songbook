@@ -1,6 +1,6 @@
 {meta: title Rose Colored Glasses}
 {meta: artist Ray Price}
-{meta: writer Fred Carter}
+{meta: composer Fred Carter}
 
 {start_of_verse: Verse 1}
 [G]A perfect kind of love is what you want from [D7]me

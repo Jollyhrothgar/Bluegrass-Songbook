@@ -1,6 +1,6 @@
 {meta: title I Take It On Home}
 {meta: artist Charlie Rich}
-{meta: writer Kenny O'Dell}
+{meta: composer Kenny O'Dell}
 
 {start_of_verse: Verse 1}
 [C]Sometimes at the end of the [C7]day

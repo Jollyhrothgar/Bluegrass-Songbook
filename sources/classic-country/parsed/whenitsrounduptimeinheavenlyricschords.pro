@@ -1,6 +1,6 @@
 {meta: title When It's Roundup Time In Heaven}
 {meta: artist Cliff Carlisle}
-{meta: writer Jimmie Davis}
+{meta: composer Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [C]Oh they tell me of a place and they [F]tell me of a [C]day

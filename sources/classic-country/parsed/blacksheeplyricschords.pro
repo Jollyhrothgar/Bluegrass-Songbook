@@ -1,6 +1,6 @@
 {meta: title Black Sheep}
 {meta: artist Johnny Paycheck}
-{meta: writer Country Johnny Mathis}
+{meta: composer Country Johnny Mathis}
 
 {start_of_verse: Verse 1}
 [G]My friends all say that I am just a black [C]sheep

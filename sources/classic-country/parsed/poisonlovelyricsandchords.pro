@@ -1,6 +1,6 @@
 {meta: title Poison Love}
 {meta: artist Hank Snow}
-{meta: writer Elmer Laird}
+{meta: composer Elmer Laird}
 
 {start_of_verse: Verse 1}
 [C]All your poison love has stained the life blood in my heart and soul [G7]dear

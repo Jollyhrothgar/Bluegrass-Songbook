@@ -1,6 +1,6 @@
 {meta: title On the Wings of a Snow White Dove}
 {meta: artist Ferlin Husky}
-{meta: writer Bob Ferguson}
+{meta: composer Bob Ferguson}
 
 {start_of_verse: Verse 1}
 [G]On the wings of a snow white dove

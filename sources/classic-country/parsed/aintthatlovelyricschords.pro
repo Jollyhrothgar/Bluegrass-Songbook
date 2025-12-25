@@ -1,6 +1,6 @@
 {meta: title Ain't That Love}
 {meta: artist Rhonda Vincent}
-{meta: writer Kostas}
+{meta: composer Kostas}
 
 {start_of_verse: Verse 1}
 [C]I will always remember the [G7]first time that we [C]met

@@ -1,6 +1,6 @@
 {meta: title Just A Plain Old Country Boy}
 {meta: artist Bob Wills}
-{meta: writer Tommy Duncan}
+{meta: composer Tommy Duncan}
 
 {start_of_verse: Verse 1}
 [C]Ain't got much learnin' I ain't a yearnin'

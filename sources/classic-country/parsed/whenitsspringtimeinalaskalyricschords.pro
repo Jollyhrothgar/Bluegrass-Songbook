@@ -1,6 +1,6 @@
 {meta: title When it's Spring Time in Alaska}
 {meta: artist Johnny Horton}
-{meta: writer Tillman Franks}
+{meta: composer Tillman Franks}
 
 {start_of_verse: Verse 1}
 [G]I mushed from Point Barrow through a [D7]blizzard of [G]snow

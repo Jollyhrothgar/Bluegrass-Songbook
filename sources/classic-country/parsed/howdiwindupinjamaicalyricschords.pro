@@ -1,6 +1,6 @@
 {meta: title How'd I Wind Up In Jamaica}
 {meta: artist Tracy Byrd}
-{meta: writer Michael Heeney and Casey Beathard}
+{meta: composer Michael Heeney and Casey Beathard}
 
 {start_of_verse: Verse 1}
 [G]Sign said [D7]cold beer I pulled in [G]there 

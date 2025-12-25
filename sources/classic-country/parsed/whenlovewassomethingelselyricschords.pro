@@ -1,6 +1,6 @@
 {meta: title When Love Was Something Else}
 {meta: artist Conway Twitty}
-{meta: writer Scott Anders and Roger Alan Murrah}
+{meta: composer Scott Anders and Roger Alan Murrah}
 
 {start_of_verse: Verse 1}
 [C]While she stands there [F]staring in a [C]mirror

@@ -1,6 +1,6 @@
 {meta: title Don't Make Me Go To Bed}
 {meta: artist Hank Snow}
-{meta: writer Hugh Cross}
+{meta: composer Hugh Cross}
 
 {start_of_verse: Verse 1}
 [C]A laughing baby boy one [F]evening in his [D7]play

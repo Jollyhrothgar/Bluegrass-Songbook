@@ -1,6 +1,6 @@
 {meta: title But For The Grace Of God}
 {meta: artist Pat Boone}
-{meta: writer Jack Lebsock}
+{meta: composer Jack Lebsock}
 
 {start_of_verse: Verse 1}
 [G]A tramp on the street homeless and weak

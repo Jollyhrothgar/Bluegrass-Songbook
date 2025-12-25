@@ -1,6 +1,6 @@
 {meta: title What You Gonna Do About Me}
 {meta: artist Reba McEntire}
-{meta: writer Michael Heeney and David Scarlett}
+{meta: composer Michael Heeney and David Scarlett}
 
 {start_of_verse: Verse 1}
 [C]You take the records [Am]I'll take the stereo 

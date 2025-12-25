@@ -1,6 +1,6 @@
 {meta: title To God To Be The Glory}
 {meta: artist The Jordanaires}
-{meta: writer James F. Hammerly, Fanny Crosby, William Doane}
+{meta: composer James F. Hammerly, Fanny Crosby, William Doane}
 
 {start_of_verse: Verse 1}
 [C]To God be the glory great [G7]things He hath [C]done

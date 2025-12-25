@@ -1,6 +1,6 @@
 {meta: title I'll Be True To The One That I Love}
 {meta: artist Stanley Brothers}
-{meta: writer Ike Cargill and E. Settlemyer}
+{meta: composer Ike Cargill and E. Settlemyer}
 
 {start_of_verse: Verse 1}
 [G]Come and kiss me goodbye ere you leave [D7]me

@@ -1,6 +1,6 @@
 {meta: title As Long As We Can}
 {meta: artist George Jones}
-{meta: writer Roni Rivers and Agnes Wilson}
+{meta: composer Roni Rivers and Agnes Wilson}
 
 {start_of_verse: Verse 1}
 [C]I never fail to count my blessing [F]when each day is [C]done

@@ -1,6 +1,6 @@
 {meta: title Love At First Sight}
 {meta: artist Freddie Hart}
-{meta: writer Freddie Hart, Wynn Stewart, Eddie Steele}
+{meta: composer Freddie Hart, Wynn Stewart, Eddie Steele}
 
 {start_of_verse: Verse 1}
 [G]Happy go lucky foot loose fancy [D7]free

@@ -1,6 +1,6 @@
 {meta: title Let The Light Shine On You}
 {meta: artist Doug Stone}
-{meta: writer Blake Melvis and Randy Boudreaux}
+{meta: composer Blake Melvis and Randy Boudreaux}
 
 {start_of_verse: Verse 1}
 [G]Darling have [Bm]I ever [C]told you

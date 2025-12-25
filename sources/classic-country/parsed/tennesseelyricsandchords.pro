@@ -1,6 +1,6 @@
 {meta: title Tennessee}
 {meta: artist Mel Tillis}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [G]How I love to hear your old guitar 

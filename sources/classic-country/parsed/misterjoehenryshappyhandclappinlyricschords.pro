@@ -1,6 +1,6 @@
 {meta: title Mister Joe Henry's Happy Hand Clappin'}
 {meta: artist Charlie Pride}
-{meta: writer Larry Lee and Glenn D. Tubb}
+{meta: composer Larry Lee and Glenn D. Tubb}
 
 {start_of_verse: Verse 1}
 [C]Now Mister Joe Henry was a happy little man

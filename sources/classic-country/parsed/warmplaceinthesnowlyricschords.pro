@@ -1,6 +1,6 @@
 {meta: title Warm Place In The Snow}
 {meta: artist John Anderson}
-{meta: writer Bill Rice, Sharon Vaughn, John W. Ryles}
+{meta: composer Bill Rice, Sharon Vaughn, John W. Ryles}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]chilling wind [D7]right outside my [G7]window

@@ -1,6 +1,6 @@
 {meta: title Where We'll Never Say Farewell}
 {meta: artist Rhonda Vincent}
-{meta: writer Larry Sparks and Eva Sparks}
+{meta: composer Larry Sparks and Eva Sparks}
 
 {start_of_verse: Verse 1}
 [G]I am going [C]in the [G]morning

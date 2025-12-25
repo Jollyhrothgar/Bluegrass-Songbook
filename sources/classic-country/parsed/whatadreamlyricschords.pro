@@ -1,6 +1,6 @@
 {meta: title What A Dream}
 {meta: artist Conway Twitty}
-{meta: writer Chuck Willis}
+{meta: composer Chuck Willis}
 
 {start_of_verse: Verse 1}
 [C]Woke up this morning and I looked around

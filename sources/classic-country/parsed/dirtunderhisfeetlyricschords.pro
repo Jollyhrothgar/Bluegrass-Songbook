@@ -1,6 +1,6 @@
 {meta: title Dirt Under His Feet}
 {meta: artist Jean Shepard}
-{meta: writer Jimmy Gateley}
+{meta: composer Jimmy Gateley}
 
 {start_of_verse: Verse 1}
 [C]Once he loved me now I'm [F]dirt [G7]under his [C]feet

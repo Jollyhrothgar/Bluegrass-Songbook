@@ -1,6 +1,6 @@
 {meta: title Let Me Go You're Hurtin' Me}
 {meta: artist Loretta Lynn}
-{meta: writer Loretta Lynn and Lorene Allen}
+{meta: composer Loretta Lynn and Lorene Allen}
 
 {start_of_verse: Verse 1}
 [C]Let me [F]go please let me [G7]go you're hurtin' [C]me

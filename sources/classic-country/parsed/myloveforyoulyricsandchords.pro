@@ -1,6 +1,6 @@
 {meta: title My Love For You}
 {meta: artist Webb Pierce}
-{meta: writer Warner McPherson}
+{meta: composer Warner McPherson}
 
 {start_of_verse: Verse 1}
 [C]Castles are [F]made high and [C]mighty

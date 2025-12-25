@@ -1,6 +1,6 @@
 {meta: title While You're Dancing}
 {meta: artist Marty Robbins}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]While you're dancing I'll just sit here at this lonely [G7]table

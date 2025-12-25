@@ -1,6 +1,6 @@
 {meta: title Cozy Inn}
 {meta: artist Hank Thompson}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Well there's a place I know

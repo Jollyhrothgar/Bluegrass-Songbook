@@ -1,6 +1,6 @@
 {meta: title Old Records}
 {meta: artist Kitty Wells/Red Foley}
-{meta: writer Merle Kilgore and Arthur Thomas}
+{meta: composer Merle Kilgore and Arthur Thomas}
 
 {start_of_verse: Verse 1}
 [G]Old records bring back [Am]memories [D7]pictures bring back [G]tears

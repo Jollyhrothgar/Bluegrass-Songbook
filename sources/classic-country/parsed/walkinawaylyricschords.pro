@@ -1,6 +1,6 @@
 {meta: title Walkin' Away}
 {meta: artist Clint Black}
-{meta: writer Clint Black, Hayden Nicholas, Dick Day}
+{meta: composer Clint Black, Hayden Nicholas, Dick Day}
 
 {start_of_verse: Verse 1}
 [C]Walkin' away [F]I saw a [G7]side of you 

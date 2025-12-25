@@ -1,6 +1,6 @@
 {meta: title Two Good People With A Love Gone Bad}
 {meta: artist Vern Gosdin}
-{meta: writer Dean Dillon, Buddy Cannon, Vern Gosdin}
+{meta: composer Dean Dillon, Buddy Cannon, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [G7]A custom made [C]house  [G7]a his and her [C]garage

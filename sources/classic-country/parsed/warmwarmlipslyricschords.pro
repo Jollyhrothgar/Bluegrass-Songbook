@@ -1,6 +1,6 @@
 {meta: title Warm Warm Lips}
 {meta: artist Slim Whitman}
-{meta: writer Erwin King}
+{meta: composer Erwin King}
 
 {start_of_verse: Verse 1}
 [C]You've got warm warm lips but a [F]c-old [D7]heart

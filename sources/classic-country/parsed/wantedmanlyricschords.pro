@@ -1,6 +1,6 @@
 {meta: title Wanted Man}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash and Bob Dylan}
+{meta: composer Johnny Cash and Bob Dylan}
 
 {start_of_verse: Verse 1}
 [G]Wanted man in California wanted man in [Am]Buffalo

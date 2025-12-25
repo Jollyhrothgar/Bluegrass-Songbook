@@ -1,6 +1,6 @@
 {meta: title He Thinks I Still Care}
 {meta: artist Connie Francis}
-{meta: writer Dickey Lee and Steve Duffy}
+{meta: composer Dickey Lee and Steve Duffy}
 
 {start_of_verse: Verse 1}
 [C]He thinks I [G7]still [C]care

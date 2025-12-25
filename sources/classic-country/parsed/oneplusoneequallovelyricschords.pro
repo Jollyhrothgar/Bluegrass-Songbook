@@ -1,6 +1,6 @@
 {meta: title 1+1 = Love}
 {meta: artist Charly McClain}
-{meta: writer L. Rogers, R. Scaife, D. Hogan}
+{meta: composer L. Rogers, R. Scaife, D. Hogan}
 
 {start_of_verse: Verse 1}
 [C]I can remember all my [F]early days of [Dm]school

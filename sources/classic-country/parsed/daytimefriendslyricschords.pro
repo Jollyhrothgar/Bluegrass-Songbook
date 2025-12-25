@@ -1,6 +1,6 @@
 {meta: title Daytime Friends}
 {meta: artist Kenny Rogers}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]And he'll tell her  [F]he's [C]working late [F]again

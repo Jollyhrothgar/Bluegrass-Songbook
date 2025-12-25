@@ -1,6 +1,6 @@
 {meta: title He Made Me Free}
 {meta: artist George Jones}
-{meta: writer Darrell Edwards}
+{meta: composer Darrell Edwards}
 
 {start_of_verse: Verse 1}
 [C]I had drifted for so [G7]long with my [C]life so full of [F]wrong

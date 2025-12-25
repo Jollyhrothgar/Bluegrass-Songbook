@@ -1,6 +1,6 @@
 {meta: title The Fool}
 {meta: artist Bobby Bare}
-{meta: writer Lee Hazlewood and Naomi Ford}
+{meta: composer Lee Hazlewood and Naomi Ford}
 
 {start_of_verse: Verse 1}
 [G]Gather round me buddies 

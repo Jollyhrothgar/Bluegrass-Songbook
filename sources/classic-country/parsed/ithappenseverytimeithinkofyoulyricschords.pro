@@ -1,6 +1,6 @@
 {meta: title It Happens Every Time (I Think Of You)}
 {meta: artist Ronnie Milsap}
-{meta: writer Archie Jordan}
+{meta: composer Archie Jordan}
 
 {start_of_verse: Verse 1}
 [C]Just let me [Dm]say [C]I'm over [Dm]you

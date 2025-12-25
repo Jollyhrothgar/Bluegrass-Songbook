@@ -1,6 +1,6 @@
 {meta: title Bed By The Window}
 {meta: artist James King}
-{meta: writer Rob Crosby and Marni Wilson}
+{meta: composer Rob Crosby and Marni Wilson}
 
 {start_of_verse: Verse 1}
 [C]Two old friends shared a room in a [F]home for the el[C]derly

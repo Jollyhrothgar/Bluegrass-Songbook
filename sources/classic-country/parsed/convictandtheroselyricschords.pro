@@ -1,6 +1,6 @@
 {meta: title Convict And The Rose}
 {meta: artist Hank Snow}
-{meta: writer Betty Chapin and Robert King}
+{meta: composer Betty Chapin and Robert King}
 
 {start_of_verse: Verse 1}
 [G]Within my prison cell so [D7]dreary

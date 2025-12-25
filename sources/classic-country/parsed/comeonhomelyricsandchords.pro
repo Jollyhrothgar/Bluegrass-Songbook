@@ -1,6 +1,6 @@
 {meta: title Come On Home}
 {meta: artist Mel Tillis}
-{meta: writer Jeff Lopez}
+{meta: composer Jeff Lopez}
 
 {start_of_verse: Verse 1}
 [G]There's an empty pillow [C]in the bed [G]beside me

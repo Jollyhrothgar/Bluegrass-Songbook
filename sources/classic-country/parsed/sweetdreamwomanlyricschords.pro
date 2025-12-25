@@ -1,6 +1,6 @@
 {meta: title Sweet Dream Woman}
 {meta: artist Waylon Jennings}
-{meta: writer Chip Taylor and Al Gordoni}
+{meta: composer Chip Taylor and Al Gordoni}
 
 {start_of_verse: Verse 1}
 [C]She's the one that you left and she's the pride that you [G7]kept

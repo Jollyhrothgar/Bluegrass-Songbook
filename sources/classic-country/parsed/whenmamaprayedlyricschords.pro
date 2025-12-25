@@ -1,6 +1,6 @@
 {meta: title When Mama Prayed}
 {meta: artist Randy Travis}
-{meta: writer Paul Overstreet and Rory Lee}
+{meta: composer Paul Overstreet and Rory Lee}
 
 {start_of_verse: Verse 1}
 [C]Daddy never [F]went to church on [C]Sunday

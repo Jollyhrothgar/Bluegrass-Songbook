@@ -1,6 +1,6 @@
 {meta: title Fighting A Memory}
 {meta: artist Wilburn Brothers}
-{meta: writer Danny Walls}
+{meta: composer Danny Walls}
 
 {start_of_verse: Verse 1}
 [G]Here I [C]sit fighting a [G]memory 

@@ -1,6 +1,6 @@
 {meta: title Let Me Stay Awhile}
 {meta: artist Waylon Jennings}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [G]Can I stay with you [C]awhile hide awhile [D7]behind your [G]smile

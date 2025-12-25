@@ -1,6 +1,6 @@
 {meta: title Wrong}
 {meta: artist Ferlin Husky}
-{meta: writer Pee Wee Maddux and Mario Carpenter}
+{meta: composer Pee Wee Maddux and Mario Carpenter}
 
 {start_of_verse: Verse 1}
 [C]Would it be [Em]wrong to [Dm]love you [G7]you know how much I [C]care

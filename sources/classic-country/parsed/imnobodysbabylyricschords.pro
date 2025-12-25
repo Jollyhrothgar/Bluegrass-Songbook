@@ -1,6 +1,6 @@
 {meta: title I'm Nobody's Baby}
 {meta: artist Connie Francis}
-{meta: writer Benny Davis, Milton Ager, Lester Santly}
+{meta: composer Benny Davis, Milton Ager, Lester Santly}
 
 {start_of_verse: Verse 1}
 [C]I'm nobody's [D7]ba-[G7]by I wonder [C]why

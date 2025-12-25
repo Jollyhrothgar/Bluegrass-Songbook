@@ -1,6 +1,6 @@
 {meta: title She's Been Doing That For Years}
 {meta: artist Mel Tillis}
-{meta: writer Carlton Day}
+{meta: composer Carlton Day}
 
 {start_of_verse: Verse 1}
 [G]She cries a lot she's alone 

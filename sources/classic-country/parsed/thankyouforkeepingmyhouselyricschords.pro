@@ -1,6 +1,6 @@
 {meta: title Thank You For Keeping My House}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Debbie Parret}
+{meta: composer Merle Haggard and Debbie Parret}
 
 {start_of_verse: Verse 1}
 [G]Thank you for [C]keeping my [G]house

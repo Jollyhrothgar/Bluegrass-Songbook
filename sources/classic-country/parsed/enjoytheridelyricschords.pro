@@ -1,6 +1,6 @@
 {meta: title Enjoy The Ride}
 {meta: artist Ricky Skaggs}
-{meta: writer Don Rollins, Tommy Conners, Vincent Williams}
+{meta: composer Don Rollins, Tommy Conners, Vincent Williams}
 
 {start_of_verse: Verse 1}
 [C]Another day another chance

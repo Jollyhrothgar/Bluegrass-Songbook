@@ -1,6 +1,6 @@
 {meta: title Your Memory Is Killing Me}
 {meta: artist The Survivors}
-{meta: writer Guyanne McCall}
+{meta: composer Guyanne McCall}
 
 {start_of_verse: Verse 1}
 [C]I went to the doctor yesterday

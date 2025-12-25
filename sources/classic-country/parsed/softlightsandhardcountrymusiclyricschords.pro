@@ -1,6 +1,6 @@
 {meta: title Soft Lights And Hard Country Music}
 {meta: artist Moe Bandy}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Well it really tears me up when I hear a [F]hurtin' song

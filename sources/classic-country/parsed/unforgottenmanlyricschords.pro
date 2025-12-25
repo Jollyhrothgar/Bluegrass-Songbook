@@ -1,6 +1,6 @@
 {meta: title Unforgotten Man}
 {meta: artist Wynn Stewart}
-{meta: writer Cliff Massey and Tommy Crelila}
+{meta: composer Cliff Massey and Tommy Crelila}
 
 {start_of_verse: Verse 1}
 [G]She remembers his first kiss  [G7]the night of the [C]dance

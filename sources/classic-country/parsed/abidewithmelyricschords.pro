@@ -1,6 +1,6 @@
 {meta: title Abide With Me}
 {meta: artist Jimmy Dean}
-{meta: writer H.F. Lyte and W.H. Monk}
+{meta: composer H.F. Lyte and W.H. Monk}
 
 {start_of_verse: Verse 1}
 [C]A-[G7]bide with [C]me fast [F]falls the [G7]even[C]tide

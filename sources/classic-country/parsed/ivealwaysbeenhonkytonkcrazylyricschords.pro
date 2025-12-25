@@ -1,6 +1,6 @@
 {meta: title I've Always Been Honky Tonk Crazy}
 {meta: artist Keith Whitley}
-{meta: writer Dean Dillon and Frank Dycus}
+{meta: composer Dean Dillon and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [G7]Woman [C]you better get up and [F]run while you [D7]can

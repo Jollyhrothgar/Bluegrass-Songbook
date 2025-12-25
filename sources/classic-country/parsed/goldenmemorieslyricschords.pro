@@ -1,6 +1,6 @@
 {meta: title Golden Memories}
 {meta: artist Bobby Bare}
-{meta: writer Lacy J. Dalton and John Fitzgerald}
+{meta: composer Lacy J. Dalton and John Fitzgerald}
 
 {start_of_verse: Verse 1}
 [G7]I've got [C]golden [G7]memories

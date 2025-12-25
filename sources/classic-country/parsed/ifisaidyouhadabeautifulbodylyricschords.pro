@@ -1,6 +1,6 @@
 {meta: title If I Said You Had A Beautiful Body}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]If I [G7]said you had a beautiful body

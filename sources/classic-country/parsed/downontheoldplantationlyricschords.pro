@@ -1,6 +1,6 @@
 {meta: title Down On The Old Plantation}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
-{meta: writer Carson J. Robison}
+{meta: composer Carson J. Robison}
 
 {start_of_verse: Verse 1}
 [C]I hear the ban[F]jos [C]ringing

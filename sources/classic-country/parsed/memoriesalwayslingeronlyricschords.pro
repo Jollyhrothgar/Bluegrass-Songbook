@@ -1,6 +1,6 @@
 {meta: title Memories Always Linger On}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Zeb Turner and Carl Anderson}
+{meta: composer Zeb Turner and Carl Anderson}
 
 {start_of_verse: Verse 1}
 [C]I thought my life would [F]start a[C]new

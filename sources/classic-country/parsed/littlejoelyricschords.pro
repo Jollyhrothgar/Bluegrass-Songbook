@@ -1,6 +1,6 @@
 {meta: title Little Joe}
 {meta: artist Hank Snow}
-{meta: writer A.P. Carter, Maybelle Carter, Sara Carter}
+{meta: composer A.P. Carter, Maybelle Carter, Sara Carter}
 
 {start_of_verse: Verse 1}
 [C]What will the birds do [F]mother in the [C]spring

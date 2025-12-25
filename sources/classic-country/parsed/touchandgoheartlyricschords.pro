@@ -1,6 +1,6 @@
 {meta: title Touch And Go Heart}
 {meta: artist Kitty Wells}
-{meta: writer Rusty Gabbard}
+{meta: composer Rusty Gabbard}
 
 {start_of_verse: Verse 1}
 [G]Touch and go that's how your love [C]is

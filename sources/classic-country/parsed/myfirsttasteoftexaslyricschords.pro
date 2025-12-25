@@ -1,6 +1,6 @@
 {meta: title My First Taste Of Texas}
 {meta: artist Ed Bruce}
-{meta: writer Ed Bruce and Ronnie Rogers}
+{meta: composer Ed Bruce and Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [C]My first taste of Texas had blue-eyes and golden [G]hair

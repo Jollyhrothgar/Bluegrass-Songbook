@@ -1,6 +1,6 @@
 {meta: title Divided By Two}
 {meta: artist Kitty Wells}
-{meta: writer Red Wortham}
+{meta: composer Red Wortham}
 
 {start_of_verse: Verse 1}
 [C]You slipped around [F]you played a [C]game 

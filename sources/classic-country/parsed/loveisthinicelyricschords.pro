@@ -1,6 +1,6 @@
 {meta: title Love Is Thin Ice}
 {meta: artist Barbara Mandrell}
-{meta: writer Geoff Morgan}
+{meta: composer Geoff Morgan}
 
 {start_of_verse: Verse 1}
 [C]Love is thin [G7]ice it's so [F]easy to fall right [C]in

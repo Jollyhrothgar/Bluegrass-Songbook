@@ -1,6 +1,6 @@
 {meta: title Julie}
 {meta: artist Johnny Paycheck}
-{meta: writer Bob Morris}
+{meta: composer Bob Morris}
 
 {start_of_verse: Verse 1}
 [C]The boys are wanting me to go out [F]drinking 

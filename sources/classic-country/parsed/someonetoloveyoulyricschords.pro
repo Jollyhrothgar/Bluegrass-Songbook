@@ -1,6 +1,6 @@
 {meta: title Someone to love you}
 {meta: artist Martin Delray}
-{meta: writer Ted Chalfant}
+{meta: composer Ted Chalfant}
 
 {start_of_verse: Verse 1}
 [C]She was sortin’ through some letters he'd kept beneath their [F]bed

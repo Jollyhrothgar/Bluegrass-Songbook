@@ -1,6 +1,6 @@
 {meta: title On The Other Hand}
 {meta: artist Randy Travis}
-{meta: writer Don Schlitz and Paul Overstreet}
+{meta: composer Don Schlitz and Paul Overstreet}
 
 {start_of_verse: Verse 1}
 [C]On one hand I count the reasons I could [F]stay with you

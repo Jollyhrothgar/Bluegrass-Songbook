@@ -1,6 +1,6 @@
 {meta: title Walking Shadow Talking Memory}
 {meta: artist Carl Belew}
-{meta: writer Jean Chapel}
+{meta: composer Jean Chapel}
 
 {start_of_verse: Verse 1}
 [D7]Walking [G]shadows talking [C]memories 

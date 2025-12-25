@@ -1,6 +1,6 @@
 {meta: title God Ain't No Stained Glass Window}
 {meta: artist Johnny Cash}
-{meta: writer Mark Germino}
+{meta: composer Mark Germino}
 
 {start_of_verse: Verse 1}
 [F]There's so [G7]much I don't [C]know

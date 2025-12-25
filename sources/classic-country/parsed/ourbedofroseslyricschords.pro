@@ -1,6 +1,6 @@
 {meta: title Our Bed Of Roses}
 {meta: artist George Jones}
-{meta: writer Keith Steagall and Zack Turner}
+{meta: composer Keith Steagall and Zack Turner}
 
 {start_of_verse: Verse 1}
 [G]The morning we moved in this house [C]you said let's make a bed [G]of [G][C]roses

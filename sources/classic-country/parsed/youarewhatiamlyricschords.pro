@@ -1,6 +1,6 @@
 {meta: title You Are What I Am}
 {meta: artist J.D. Crowe}
-{meta: writer Gordon Lightfoot}
+{meta: composer Gordon Lightfoot}
 
 {start_of_verse: Verse 1}
 [C]You make  time stand [D7]still

@@ -1,6 +1,6 @@
 {meta: title Anywhere On Earth You Are}
 {meta: artist Alan Jackson}
-{meta: writer Danny O'Keefe and Tim Krekel}
+{meta: composer Danny O'Keefe and Tim Krekel}
 
 {start_of_verse: Verse 1}
 [F]I've been ridin' [C]these blue highways

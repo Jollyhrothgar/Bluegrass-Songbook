@@ -1,6 +1,6 @@
 {meta: title This Is The Part Where I Cry}
 {meta: artist Faron Young}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]Life is a [C7]picture and I [F]play the [Fm]lead

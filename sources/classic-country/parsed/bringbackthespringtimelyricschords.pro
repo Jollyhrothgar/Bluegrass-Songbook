@@ -1,6 +1,6 @@
 {meta: title Bring Back The Springtime}
 {meta: artist Ray Price}
-{meta: writer Kurt Kaiser}
+{meta: composer Kurt Kaiser}
 
 {start_of_verse: Verse 1}
 [C]When in the spring 

@@ -1,6 +1,6 @@
 {meta: title Put Back My Ring On Your Hand}
 {meta: artist Charley Pride}
-{meta: writer Glenn Ash}
+{meta: composer Glenn Ash}
 
 {start_of_verse: Verse 1}
 [C]I had the world in my [G7]hands

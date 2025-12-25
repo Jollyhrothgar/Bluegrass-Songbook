@@ -1,6 +1,6 @@
 {meta: title It's A Long Long Way To The Top Of The World}
 {meta: artist Jim and Jesse}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]It's a long long [C7]way to the top [F]of the [C]world

@@ -1,6 +1,6 @@
 {meta: title Wrap Me In Your Love}
 {meta: artist Joe Diffie}
-{meta: writer Wyatt Easterling and Stacey Easterling}
+{meta: composer Wyatt Easterling and Stacey Easterling}
 
 {start_of_verse: Verse 1}
 [G]Turn out the [D7]lights [C]we just need the [D7]lights from the [G]tree

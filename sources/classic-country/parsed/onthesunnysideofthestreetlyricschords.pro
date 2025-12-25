@@ -1,6 +1,6 @@
 {meta: title On The Sunny Side Of The Street}
 {meta: artist Brenda Lee}
-{meta: writer Dorothy Fields and Jimmy McHugh}
+{meta: composer Dorothy Fields and Jimmy McHugh}
 
 {start_of_verse: Verse 1}
 [G7]Grab your [C]coat and get your [E7]hat

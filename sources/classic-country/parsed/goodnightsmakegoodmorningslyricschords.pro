@@ -1,6 +1,6 @@
 {meta: title Good Nights Make Good Mornings}
 {meta: artist Jean Shepard}
-{meta: writer Naomi Martin}
+{meta: composer Naomi Martin}
 
 {start_of_verse: Verse 1}
 [G]He wakes me with a soft [C]kiss on my [G]shoulder

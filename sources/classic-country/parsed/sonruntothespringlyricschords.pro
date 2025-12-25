@@ -1,6 +1,6 @@
 {meta: title Son Run To The Spring}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [G]Daddy was working on the pipeline [C]up in [G]Pittsburg

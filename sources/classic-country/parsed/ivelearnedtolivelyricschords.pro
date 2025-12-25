@@ -1,6 +1,6 @@
 {meta: title I've Learned To Live}
 {meta: artist Tanya Tucker}
-{meta: writer Dean Dillon and Frank Dycus}
+{meta: composer Dean Dillon and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [G]Like a [D7]child lost in the [G]wilderness [D7]I knew not where to go

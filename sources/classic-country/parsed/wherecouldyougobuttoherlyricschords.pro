@@ -1,6 +1,6 @@
 {meta: title Where Could You Go But To Her}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Why will a [G7]man go out and [C]cheat

@@ -1,6 +1,6 @@
 {meta: title Don't Start Counting On Me}
 {meta: artist Johnny Paycheck}
-{meta: writer Donny Young}
+{meta: composer Donny Young}
 
 {start_of_verse: Verse 1}
 [G]Don’t start counting on me to smile and take you back again

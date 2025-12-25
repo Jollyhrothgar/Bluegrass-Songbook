@@ -1,6 +1,6 @@
 {meta: title Georgia Rag}
 {meta: artist Webb Pierce}
-{meta: writer Reggie Ward and Michael Webb Pierce}
+{meta: composer Reggie Ward and Michael Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]Now it was in a little Georgia town I spent a week or [G7]two

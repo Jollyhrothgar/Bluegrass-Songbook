@@ -1,6 +1,6 @@
 {meta: title Stranger Shake Hands with a Fool}
 {meta: artist Bill Carter}
-{meta: writer Cal Veale}
+{meta: composer Cal Veale}
 
 {start_of_verse: Verse 1}
 [C]Friends all tried to warm me that she’d [G7]let me down

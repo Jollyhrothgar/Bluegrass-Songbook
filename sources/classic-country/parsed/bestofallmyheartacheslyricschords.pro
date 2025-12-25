@@ -1,6 +1,6 @@
 {meta: title Best Of All My Heartaches Lyrics Chords}
 {meta: artist Kitty Wells}
-{meta: writer Tom Tall}
+{meta: composer Tom Tall}
 
 {start_of_verse: Verse 1}
 [C]The best of all my heartaches is [G7]you

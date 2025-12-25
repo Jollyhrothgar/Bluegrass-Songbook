@@ -1,6 +1,6 @@
 {meta: title When The Master Speak}
 {meta: artist Jimmie Davis}
-{meta: writer John Mathews}
+{meta: composer John Mathews}
 
 {start_of_verse: Verse 1}
 [C]When the Master [C7]speaks the heavens [F]open wide

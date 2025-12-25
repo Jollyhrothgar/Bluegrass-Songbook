@@ -1,6 +1,6 @@
 {meta: title No Tears Tonight}
 {meta: artist Webb Pierce}
-{meta: writer Max Powell and Don Carter}
+{meta: composer Max Powell and Don Carter}
 
 {start_of_verse: Verse 1}
 [C]There'll be no [F]tears tonight [C]for I've found [G7]somebody [C]new

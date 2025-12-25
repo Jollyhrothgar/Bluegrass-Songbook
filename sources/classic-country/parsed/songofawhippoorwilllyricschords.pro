@@ -1,6 +1,6 @@
 {meta: title Song Of A Whippoorwill}
 {meta: artist Rhonda Vincent}
-{meta: writer Tracy Starling and Rhonda Vincent}
+{meta: composer Tracy Starling and Rhonda Vincent}
 
 {start_of_verse: Verse 1}
 [G]I heard the whippoorwill a singin' he sang so [C]high and [G]lonesome

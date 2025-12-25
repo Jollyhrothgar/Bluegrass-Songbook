@@ -1,6 +1,6 @@
 {meta: title Goodbye Love}
 {meta: artist Brenda Lee}
-{meta: writer Jim Stafford and Deborah Allen}
+{meta: composer Jim Stafford and Deborah Allen}
 
 {start_of_verse: Verse 1}
 [C]Goodbye [A7]love I guess your really [D7]gone

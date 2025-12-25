@@ -1,6 +1,6 @@
 {meta: title Goin' Away}
 {meta: artist Ray Price}
-{meta: writer George Tomsco and Barbara Tomsco}
+{meta: composer George Tomsco and Barbara Tomsco}
 
 {start_of_verse: Verse 1}
 [C]I'm goin' away without you [Dm]babe

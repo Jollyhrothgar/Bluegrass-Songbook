@@ -1,6 +1,6 @@
 {meta: title Don't Let Her}
 {meta: artist Carl Smith}
-{meta: writer Max Powell, Eddie Crandell, Jo Armstrong}
+{meta: composer Max Powell, Eddie Crandell, Jo Armstrong}
 
 {start_of_verse: Verse 1}
 [G]Lips don't speak another word eyes don't even look at [C]her

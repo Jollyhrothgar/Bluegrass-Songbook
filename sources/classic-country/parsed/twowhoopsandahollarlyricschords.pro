@@ -1,6 +1,6 @@
 {meta: title Two Whoops And A Hollar}
 {meta: artist Jean Shepard}
-{meta: writer Joe Franklin}
+{meta: composer Joe Franklin}
 
 {start_of_verse: Verse 1}
 [G]How come a man can fight and cuss and [C]smoke and drink and [G]chew

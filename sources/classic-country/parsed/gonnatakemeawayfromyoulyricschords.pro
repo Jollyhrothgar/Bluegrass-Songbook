@@ -1,6 +1,6 @@
 {meta: title Gonna Take Me Away From You}
 {meta: artist George Jones}
-{meta: writer George Jones and Darrell Edwards}
+{meta: composer George Jones and Darrell Edwards}
 
 {start_of_verse: Verse 1}
 [C]For so long I have waited while your heart hesitated

@@ -1,6 +1,6 @@
 {meta: title Woman in the Back of My Mind}
 {meta: artist Mel Tillis}
-{meta: writer Ronal McCown and Roger Jauden}
+{meta: composer Ronal McCown and Roger Jauden}
 
 {start_of_verse: Verse 1}
 [C]I see my wife working ironing my shirts

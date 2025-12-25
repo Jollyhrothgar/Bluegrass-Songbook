@@ -1,6 +1,6 @@
 {meta: title Somethin' About A Jukebox}
 {meta: artist Johnny Rodriguez}
-{meta: writer Ralph Mooney and Gordon Payne}
+{meta: composer Ralph Mooney and Gordon Payne}
 
 {start_of_verse: Verse 1}
 [G]Something about a jukebox [D7]turns me [G]on

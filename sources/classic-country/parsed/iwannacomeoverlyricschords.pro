@@ -1,6 +1,6 @@
 {meta: title I Wanna Come Over}
 {meta: artist Alabama}
-{meta: writer Richard Beraldi and Michael Beraldi}
+{meta: composer Richard Beraldi and Michael Beraldi}
 
 {start_of_verse: Verse 1}
 [C]Is that what time it is 

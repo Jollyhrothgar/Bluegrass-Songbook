@@ -1,6 +1,6 @@
 {meta: title I Really Don't Want to Know}
 {meta: artist Eddy Arnold}
-{meta: writer Don Robertson and Howard Barnes}
+{meta: composer Don Robertson and Howard Barnes}
 
 {start_of_verse: Verse 1}
 [C]How many arms [F]have held [C]you

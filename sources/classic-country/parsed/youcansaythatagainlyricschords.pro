@@ -1,6 +1,6 @@
 {meta: title You Can Say That Again}
 {meta: artist Johnny Rodriguez}
-{meta: writer Sam Gay and Lance Strode}
+{meta: composer Sam Gay and Lance Strode}
 
 {start_of_verse: Verse 1}
 [G]Shadows of candle lit lover’s dance slowly [D7]against the wall

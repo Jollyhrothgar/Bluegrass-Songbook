@@ -1,6 +1,6 @@
 {meta: title I'm Just A Country Boy}
 {meta: artist Don Williams}
-{meta: writer Marshall Barer and Fred Hellerman}
+{meta: composer Marshall Barer and Fred Hellerman}
 
 {start_of_verse: Verse 1}
 [G]I ain't gonna marry in the fall

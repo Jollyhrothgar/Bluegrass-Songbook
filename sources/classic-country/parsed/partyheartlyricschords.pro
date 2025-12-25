@@ -1,6 +1,6 @@
 {meta: title Party Heart}
 {meta: artist Roy Orbison}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]Party heart  [G7]party heart

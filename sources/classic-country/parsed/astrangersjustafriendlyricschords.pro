@@ -1,6 +1,6 @@
 {meta: title A Stranger's Just A Friend}
 {meta: artist Jim Reeves}
-{meta: writer Gilbert Gibson}
+{meta: composer Gilbert Gibson}
 
 {start_of_verse: Verse 1}
 [C]If ever your life is [G7]lonely

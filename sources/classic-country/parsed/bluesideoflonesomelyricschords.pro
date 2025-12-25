@@ -1,6 +1,6 @@
 {meta: title Blue Side of Lonesome}
 {meta: artist George Jones}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [G]I'm calling to tell you it's [D7]over

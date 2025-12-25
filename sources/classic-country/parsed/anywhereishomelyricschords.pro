@@ -1,6 +1,6 @@
 {meta: title Anywhere is Home}
 {meta: artist Hank Locklin}
-{meta: writer Bill Walker}
+{meta: composer Bill Walker}
 
 {start_of_verse: Verse 1}
 [G]Earthly wealth  and fame  may [C]never come to [G]me

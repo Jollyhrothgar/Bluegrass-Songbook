@@ -1,6 +1,6 @@
 {meta: title Easy As You Go}
 {meta: artist George Strait}
-{meta: writer Steve Bogard and Rick Giles}
+{meta: composer Steve Bogard and Rick Giles}
 
 {start_of_verse: Verse 1}
 [C]He saw her after school sippin' on a [Am]coke

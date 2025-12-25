@@ -1,6 +1,6 @@
 {meta: title I Made A Fool Of Myself}
 {meta: artist Faron Young}
-{meta: writer Faron Young and Johnny Paycheck}
+{meta: composer Faron Young and Johnny Paycheck}
 
 {start_of_verse: Verse 1}
 [C]I made a fool of myself last night

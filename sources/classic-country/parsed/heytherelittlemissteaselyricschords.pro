@@ -1,6 +1,6 @@
 {meta: title Hey There Little Miss Tease}
 {meta: artist Ricky Nelson}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [G]Hey there little miss [Em]tease you [G]got me weak in the [Em]knees

@@ -1,6 +1,6 @@
 {meta: title Harbor Of Love}
 {meta: artist Stanley Brothers}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [G]There's coming a time on the great [C]judgment [G]morning

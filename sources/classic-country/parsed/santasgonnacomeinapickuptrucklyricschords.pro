@@ -1,6 +1,6 @@
 {meta: title Santa's Gonna Come In A Pickup Truck}
 {meta: artist Alan Jackson}
-{meta: writer Red Simpson and Don Rich}
+{meta: composer Red Simpson and Don Rich}
 
 {start_of_verse: Verse 1}
 [C]Well I've been sorta worried about [F]Santa Claus this [C]year

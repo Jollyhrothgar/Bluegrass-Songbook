@@ -1,6 +1,6 @@
 {meta: title First Day Of Loneliness Lyrics and Chords}
 {meta: artist Faron Young}
-{meta: writer R. Parkhurst}
+{meta: composer R. Parkhurst}
 
 {start_of_verse: Verse 1}
 [C]Oh whata time I must'a had last night

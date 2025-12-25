@@ -1,6 +1,6 @@
 {meta: title Somebody's Words}
 {meta: artist Lefty Frizzell}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]I sat there with a shocked look on my [D7]face

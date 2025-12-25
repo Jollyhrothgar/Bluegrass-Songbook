@@ -1,6 +1,6 @@
 {meta: title You're Driving You Out Of My Mind}
 {meta: artist Jerry Wallace}
-{meta: writer Jerry Fuller and Carl Belew}
+{meta: composer Jerry Fuller and Carl Belew}
 
 {start_of_verse: Verse 1}
 [G7]You’re driving you out of my [C]mind

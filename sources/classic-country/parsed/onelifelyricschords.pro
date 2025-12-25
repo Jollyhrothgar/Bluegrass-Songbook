@@ -1,6 +1,6 @@
 {meta: title One Life}
 {meta: artist Kenny Rogers}
-{meta: writer Marc Beeson and Tim Johnson}
+{meta: composer Marc Beeson and Tim Johnson}
 
 {start_of_verse: Verse 1}
 [C]If there's a [F]way of makin' time stand [C]still [F]for [C]good

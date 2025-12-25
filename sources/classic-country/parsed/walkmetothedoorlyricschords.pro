@@ -1,6 +1,6 @@
 {meta: title Walk Me to the Door}
 {meta: artist Ray Price}
-{meta: writer Conway Twitty}
+{meta: composer Conway Twitty}
 
 {start_of_verse: Verse 1}
 [F]Walk me to the door and hold me close just one more [C]time

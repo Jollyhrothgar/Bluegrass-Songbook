@@ -1,6 +1,6 @@
 {meta: title Marina Del Rey}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Frank Dycus}
+{meta: composer Dean Dillon and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [C]We said goodbye in [F]Marina Del Rey

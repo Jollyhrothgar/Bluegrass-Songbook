@@ -1,6 +1,6 @@
 {meta: title Getting Over You}
 {meta: artist Alabama}
-{meta: writer Cary Lynn Rutledge}
+{meta: composer Cary Lynn Rutledge}
 
 {start_of_verse: Verse 1}
 [G]Wish I had just [Am]one more chance 

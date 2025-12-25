@@ -1,6 +1,6 @@
 {meta: title Moffet Oklahoma}
 {meta: artist Charlie Walker}
-{meta: writer Curtis Leach and Claude McBride}
+{meta: composer Curtis Leach and Claude McBride}
 
 {start_of_verse: Verse 1}
 [C]I rolled into Moffet Okla[F]homa 

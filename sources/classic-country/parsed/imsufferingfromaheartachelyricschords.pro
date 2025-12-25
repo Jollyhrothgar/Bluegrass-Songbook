@@ -1,6 +1,6 @@
 {meta: title I'm Suffering From A Heartache}
 {meta: artist Johnny Tillotson}
-{meta: writer Johnny Tillotson and Paul Tannen}
+{meta: composer Johnny Tillotson and Paul Tannen}
 
 {start_of_verse: Verse 1}
 [C]I never thought that I could care the way I cared for [F]you

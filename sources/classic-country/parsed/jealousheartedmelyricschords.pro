@@ -1,6 +1,6 @@
 {meta: title Jealous Hearted Me}
 {meta: artist Bob Wills}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]It takes a rocking chair to rock a rubber ball to roll

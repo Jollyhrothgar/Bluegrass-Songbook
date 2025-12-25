@@ -1,6 +1,6 @@
 {meta: title Last Best Place}
 {meta: artist Rhonda Vincent}
-{meta: writer Christi Baker, Shari Baker, Steve Leslie}
+{meta: composer Christi Baker, Shari Baker, Steve Leslie}
 
 {start_of_verse: Verse 1}
 [C]I am a pilgrim passing [G7]through

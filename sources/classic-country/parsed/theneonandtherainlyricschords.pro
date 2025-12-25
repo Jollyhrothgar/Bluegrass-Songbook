@@ -1,6 +1,6 @@
 {meta: title The Neon And The Rain}
 {meta: artist Freddie Hart}
-{meta: writer Gene Crysler}
+{meta: composer Gene Crysler}
 
 {start_of_verse: Verse 1}
 [C]As I sit beneath the steerin' wheel a gun [G7]in my right [C]hand

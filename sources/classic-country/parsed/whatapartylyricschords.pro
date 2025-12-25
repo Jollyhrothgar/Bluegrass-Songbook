@@ -1,6 +1,6 @@
 {meta: title What A Party}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Pearl King}
+{meta: composer Dave Bartholomew and Pearl King}
 
 {start_of_verse: Verse 1}
 [C]Where was Jody when the lights went out

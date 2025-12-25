@@ -1,6 +1,6 @@
 {meta: title Unwound}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Frank Dycus}
+{meta: composer Dean Dillon and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [G]Give me a bottle [D7]of your very [G]best

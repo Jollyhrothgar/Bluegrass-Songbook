@@ -1,6 +1,6 @@
 {meta: title Hawaiian Wedding Song}
 {meta: artist Jim Reeves}
-{meta: writer Al Hoffman, Dick Manning, Charles King}
+{meta: composer Al Hoffman, Dick Manning, Charles King}
 
 {start_of_verse: Verse 1}
 [G]This is the moment  [C]I've waited [G]for

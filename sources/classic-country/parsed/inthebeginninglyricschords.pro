@@ -1,6 +1,6 @@
 {meta: title In The Beginning}
 {meta: artist The Statler Brothers}
-{meta: writer Fred Wise, Kay Twomey, Dorcas Cochran}
+{meta: composer Fred Wise, Kay Twomey, Dorcas Cochran}
 
 {start_of_verse: Verse 1}
 [C]In the [Am]beginning the [Em]Lord made the [C]earth

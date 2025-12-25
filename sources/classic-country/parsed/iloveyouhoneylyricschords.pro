@@ -1,6 +1,6 @@
 {meta: title I Love You Honey}
 {meta: artist Patsy Cline}
-{meta: writer Eddie Miller & W.S. Stevenson}
+{meta: composer Eddie Miller & W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [G]Down in Dallas near the Palace

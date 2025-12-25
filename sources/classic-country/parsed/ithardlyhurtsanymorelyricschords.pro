@@ -1,6 +1,6 @@
 {meta: title It Hardly Hurts Anymore}
 {meta: artist Hank Locklin}
-{meta: writer Ben Raleigh and Dolores Fuller}
+{meta: composer Ben Raleigh and Dolores Fuller}
 
 {start_of_verse: Verse 1}
 [C]It [C7]hardly [F]hurts anymore the heartache's almost gone [C]away

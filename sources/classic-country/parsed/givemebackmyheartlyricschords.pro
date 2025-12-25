@@ -1,6 +1,6 @@
 {meta: title Give Me Back My Heart}
 {meta: artist Jimmy Dean}
-{meta: writer Paul Anka}
+{meta: composer Paul Anka}
 
 {start_of_verse: Verse 1}
 [C]Oh give me back my heart my love it's the only one I [F]own

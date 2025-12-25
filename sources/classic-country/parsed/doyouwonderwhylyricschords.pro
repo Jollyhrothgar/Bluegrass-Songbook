@@ -1,6 +1,6 @@
 {meta: title Do You Wonder Why}
 {meta: artist Larry Sparks}
-{meta: writer Roy Acuff}
+{meta: composer Roy Acuff}
 
 {start_of_verse: Verse 1}
 [C]Last night I heard those night-birds calling

@@ -1,6 +1,6 @@
 {meta: title Like Children I Have Known}
 {meta: artist Ronnie Milsap}
-{meta: writer Don Pfrimmer and John Daddario}
+{meta: composer Don Pfrimmer and John Daddario}
 
 {start_of_verse: Verse 1}
 [C]They're dividing up their playthings

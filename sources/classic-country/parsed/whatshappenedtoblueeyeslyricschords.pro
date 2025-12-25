@@ -1,6 +1,6 @@
 {meta: title What's Happened To Blue Eyes}
 {meta: artist Waylon Jennings}
-{meta: writer Jessi Colter}
+{meta: composer Jessi Colter}
 
 {start_of_verse: Verse 1}
 [G]What's happened to [F]blue [C]eyes has anybody [G]seen her

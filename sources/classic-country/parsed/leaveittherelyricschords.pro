@@ -1,6 +1,6 @@
 {meta: title Leave It There}
 {meta: artist Joey and Rory}
-{meta: writer Charles A. Tindley}
+{meta: composer Charles A. Tindley}
 
 {start_of_verse: Verse 1}
 [G]If the world from you withholds 

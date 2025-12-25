@@ -1,6 +1,6 @@
 {meta: title Aching Breaking Heart}
 {meta: artist George Jones}
-{meta: writer Rick Hall}
+{meta: composer Rick Hall}
 
 {start_of_verse: Verse 1}
 [G]Well I have lived a lot and done my [D7]part of [G]running [D7]round

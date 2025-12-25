@@ -1,6 +1,6 @@
 {meta: title Watching The River Run}
 {meta: artist Anne Murray}
-{meta: writer Kenny Loggins and Jim Messina}
+{meta: composer Kenny Loggins and Jim Messina}
 
 {start_of_verse: Verse 1}
 [G]If you've been thinking you're [C]all that you've got

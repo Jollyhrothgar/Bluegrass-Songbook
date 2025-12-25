@@ -1,6 +1,6 @@
 {meta: title Shall We Gather at the River}
 {meta: artist Hee Haw Gospel Quartet}
-{meta: writer Robert Lowry}
+{meta: composer Robert Lowry}
 
 {start_of_verse: Verse 1}
 [G]Shall we gather at the river

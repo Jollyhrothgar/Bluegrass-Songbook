@@ -1,6 +1,6 @@
 {meta: title When Two Worlds Collide}
 {meta: artist Jim Reeves}
-{meta: writer Bill Anderson and Roger Miller}
+{meta: composer Bill Anderson and Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]Your world was so different from [Em]mine don't you [A7]see

@@ -1,6 +1,6 @@
 {meta: title Dumas Walker}
 {meta: artist The Kentucky Headhunters}
-{meta: writer Doug Phelps, Gregory Martin, Richard Young, Fred Young}
+{meta: composer Doug Phelps, Gregory Martin, Richard Young, Fred Young}
 
 {start_of_verse: Verse 1}
 [C]Let's all go down to Dumas Walker

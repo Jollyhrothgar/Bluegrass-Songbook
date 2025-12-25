@@ -1,6 +1,6 @@
 {meta: title Back To Schooldays}
 {meta: artist Ricky Nelson}
-{meta: writer Graham Parker}
+{meta: composer Graham Parker}
 
 {start_of_verse: Verse 1}
 [C]Don't seem to be no break in the line

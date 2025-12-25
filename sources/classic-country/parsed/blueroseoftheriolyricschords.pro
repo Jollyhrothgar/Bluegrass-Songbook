@@ -1,6 +1,6 @@
 {meta: title Blue Rose Of The Rio Lyrics and Chords}
 {meta: artist Hank Snow}
-{meta: writer Rusty Keefer and Ruth Keefer}
+{meta: composer Rusty Keefer and Ruth Keefer}
 
 {start_of_verse: Verse 1}
 [G]Blue rose of the Rio I can see her [D7]now

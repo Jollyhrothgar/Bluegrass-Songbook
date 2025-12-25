@@ -1,5 +1,5 @@
 {meta: artist Bobby Bare}
-{meta: writer Paul Craft}
+{meta: composer Paul Craft}
 
 {start_of_verse: Verse 1}
 [C]Dropkick me Jesus through the goalposts of [G7]life

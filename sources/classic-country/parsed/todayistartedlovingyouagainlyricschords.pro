@@ -1,6 +1,6 @@
 {meta: title Today I Started Loving You Again}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Bonnie Owens}
+{meta: composer Merle Haggard and Bonnie Owens}
 
 {start_of_verse: Verse 1}
 [C]Today I Started [F]Loving You [C]Again 

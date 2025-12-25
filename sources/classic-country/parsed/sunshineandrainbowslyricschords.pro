@@ -1,6 +1,6 @@
 {meta: title Sunshine And Rainbows}
 {meta: artist Roy Drusky}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]When I remember Rose I [D7]remember neon lights

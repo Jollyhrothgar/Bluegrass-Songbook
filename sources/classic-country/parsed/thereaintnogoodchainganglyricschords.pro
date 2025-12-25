@@ -1,6 +1,6 @@
 {meta: title There Ain’t No Good Chain Gang}
 {meta: artist Waylon Jennings}
-{meta: writer Hal Bynum and Dave Kirby}
+{meta: composer Hal Bynum and Dave Kirby}
 
 {start_of_verse: Verse 1}
 [G]Bet it ain't raining back home

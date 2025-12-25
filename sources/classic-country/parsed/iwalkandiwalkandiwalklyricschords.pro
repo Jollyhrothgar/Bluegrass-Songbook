@@ -1,6 +1,6 @@
 {meta: title I Walk And I Walk And I Walk}
 {meta: artist David Houston}
-{meta: writer Charles Justice and George D'Artois}
+{meta: composer Charles Justice and George D'Artois}
 
 {start_of_verse: Verse 1}
 [C]Yes I walk and I walk and I walk and I think about [G7]you

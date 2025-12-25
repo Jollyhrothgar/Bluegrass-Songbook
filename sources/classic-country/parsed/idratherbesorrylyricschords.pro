@@ -1,6 +1,6 @@
 {meta: title I'd Rather Be Sorry}
 {meta: artist Ray Price}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [G]If you hurt me you won't be [G7]the first or the [C]last 

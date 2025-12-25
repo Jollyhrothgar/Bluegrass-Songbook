@@ -1,6 +1,6 @@
 {meta: title Ebony Eyes}
 {meta: artist The Everly Brothers}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [C]On a weekend pass I wouldn't have had time

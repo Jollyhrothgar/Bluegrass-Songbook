@@ -1,6 +1,6 @@
 {meta: title Easy Come Easy Go}
 {meta: artist Johnny Rodriguez}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [G]The highway she's hotter than [C]nine kinds of hell

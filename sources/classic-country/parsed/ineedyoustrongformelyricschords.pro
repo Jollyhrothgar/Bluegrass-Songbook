@@ -1,6 +1,6 @@
 {meta: title I Need You Strong for Me}
 {meta: artist Kristy McNichol}
-{meta: writer David Shire and Carol Connors}
+{meta: composer David Shire and Carol Connors}
 
 {start_of_verse: Verse 1}
 [C]Don't go changing your life  [G7]now

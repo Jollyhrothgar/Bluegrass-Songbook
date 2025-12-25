@@ -1,6 +1,6 @@
 {meta: title It's Hard To Be A Cowboy These Days}
 {meta: artist Johnny Rodriguez}
-{meta: writer Conrad Pierce}
+{meta: composer Conrad Pierce}
 
 {start_of_verse: Verse 1}
 [C]Today I act like a kid in my pickup truck

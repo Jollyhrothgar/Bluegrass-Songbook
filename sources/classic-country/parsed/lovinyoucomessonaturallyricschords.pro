@@ -1,6 +1,6 @@
 {meta: title Lovin' You Comes So Natural}
 {meta: artist David Allan Coe}
-{meta: writer David A. Coe, Curtis Buck, Jimmy Lancaster}
+{meta: composer David A. Coe, Curtis Buck, Jimmy Lancaster}
 
 {start_of_verse: Verse 1}
 [G]I know that the hardest thing I [Am]ever had to do

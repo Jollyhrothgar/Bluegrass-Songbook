@@ -1,6 +1,6 @@
 {meta: title The Good Lord Knows I Tried}
 {meta: artist Johnny Rodriguez}
-{meta: writer Billy Joe Shaver}
+{meta: composer Billy Joe Shaver}
 
 {start_of_verse: Verse 1}
 [G]From the very first hello until the [C]very last goodbye

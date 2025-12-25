@@ -1,6 +1,6 @@
 {meta: title Be Good To My Little Baby Girl}
 {meta: artist The Bluegrass Cardinals}
-{meta: writer Randall Hylton}
+{meta: composer Randall Hylton}
 
 {start_of_verse: Verse 1}
 [G]Be good to my [D7]little baby [G]girl

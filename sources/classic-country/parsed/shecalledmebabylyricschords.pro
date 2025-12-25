@@ -1,6 +1,6 @@
 {meta: title She Called Me Baby}
 {meta: artist Carl Smith}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]She called me baby baby all night [F]long

@@ -1,6 +1,6 @@
 {meta: title Mama Don’t Allow}
 {meta: artist Hank Thompson}
-{meta: writer Charles Edward "Cow Cow" Davenport}
+{meta: composer Charles Edward "Cow Cow" Davenport}
 
 {start_of_verse: Verse 1}
 [C]Mama don't allow no [G7]guitar playin’ around [C]here

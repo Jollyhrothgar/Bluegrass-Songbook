@@ -1,6 +1,6 @@
 {meta: title I'd Give Anything To Be Your Everything Again}
 {meta: artist Tracy Lawrence}
-{meta: writer Jerry Lester and Mark Springer}
+{meta: composer Jerry Lester and Mark Springer}
 
 {start_of_verse: Verse 1}
 [G]There's a little house I drive by every[C]day going in [G]town

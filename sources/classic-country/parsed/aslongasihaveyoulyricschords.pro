@@ -1,6 +1,6 @@
 {meta: title As Long As I Have You}
 {meta: artist Elvis Presley}
-{meta: writer Ben Weisman and Fred Wise}
+{meta: composer Ben Weisman and Fred Wise}
 
 {start_of_verse: Verse 1}
 [C]Let the stars fade [Am]and fall

@@ -1,6 +1,6 @@
 {meta: title Streets Of Dodge}
 {meta: artist Johnny Horton}
-{meta: writer Fred B. Horton and Bryan Westfield Mintz}
+{meta: composer Fred B. Horton and Bryan Westfield Mintz}
 
 {start_of_verse: Verse 1}
 [C]Only a saddle [Am]for my bed [C]heaven as my [Am]lodge

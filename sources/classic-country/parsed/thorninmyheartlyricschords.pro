@@ -1,6 +1,6 @@
 {meta: title Thorn in My Heart}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills and Sam Martin}
+{meta: composer Bob Wills and Sam Martin}
 
 {start_of_verse: Verse 1}
 [F]A thorn was left in my heart by a [G7]rose

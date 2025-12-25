@@ -1,6 +1,6 @@
 {meta: title Down At The Corner Bar}
 {meta: artist Tony Booth}
-{meta: writer Carl Barney and Tony Booth}
+{meta: composer Carl Barney and Tony Booth}
 
 {start_of_verse: Verse 1}
 [C]Down at the corner bar you'll [D7]find me

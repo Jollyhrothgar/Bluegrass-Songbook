@@ -1,6 +1,6 @@
 {meta: title Who I Came Here To Forget}
 {meta: artist Vern Gosdin}
-{meta: writer Dennis Knutson and Vern Gosdin}
+{meta: composer Dennis Knutson and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]She was cold in California she was [F]cruel in Tennessee

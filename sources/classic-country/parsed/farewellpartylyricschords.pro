@@ -1,6 +1,6 @@
 {meta: title Farewell Party}
 {meta: artist Gene Watson}
-{meta: writer Lawton Williams}
+{meta: composer Lawton Williams}
 
 {start_of_verse: Verse 1}
 [C]When the last breath of life

@@ -1,6 +1,6 @@
 {meta: title I Knew We Could Never Love For Long}
 {meta: artist Gene Watson}
-{meta: writer David Barnes}
+{meta: composer David Barnes}
 
 {start_of_verse: Verse 1}
 [G]Since the day I met you I've been [C]living in a [G]dream

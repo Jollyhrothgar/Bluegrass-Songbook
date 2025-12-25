@@ -1,6 +1,6 @@
 {meta: title What's Come Over My Baby}
 {meta: artist Ray Price}
-{meta: writer Dottie West and Bill West}
+{meta: composer Dottie West and Bill West}
 
 {start_of_verse: Verse 1}
 [G]Oh what's come [G7]over my [C]baby 

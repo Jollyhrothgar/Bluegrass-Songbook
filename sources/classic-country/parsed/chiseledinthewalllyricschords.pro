@@ -1,6 +1,6 @@
 {meta: title Chiseled In The Wall}
 {meta: artist Moe Bandy}
-{meta: writer Thomas Ward Snyder}
+{meta: composer Thomas Ward Snyder}
 
 {start_of_verse: Verse 1}
 [C]The year was 1965 and I [F]was just [C]eighteen

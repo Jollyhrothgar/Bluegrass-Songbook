@@ -1,6 +1,6 @@
 {meta: title You're My One And Only Love}
 {meta: artist Ricky Nelson}
-{meta: writer Barney Kessel and Jack Wilton Marshall}
+{meta: composer Barney Kessel and Jack Wilton Marshall}
 
 {start_of_verse: Verse 1}
 [C]You're my one and only love 

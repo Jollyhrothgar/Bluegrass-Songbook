@@ -1,6 +1,6 @@
 {meta: title To See My Angel Cry}
 {meta: artist Conway Twitty}
-{meta: writer L.E. White and Conway Twitty}
+{meta: composer L.E. White and Conway Twitty}
 
 {start_of_verse: Verse 1}
 [G]See her there see her crying she [C]thinks she loves him [G]so

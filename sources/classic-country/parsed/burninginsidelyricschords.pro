@@ -1,6 +1,6 @@
 {meta: title Burning Inside}
 {meta: artist Hank Locklin}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [G]You got that please don't [C]touch me [D7]air a[G]bout you

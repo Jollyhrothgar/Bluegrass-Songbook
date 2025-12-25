@@ -1,6 +1,6 @@
 {meta: title Twelve Bar Blues}
 {meta: artist John Anderson}
-{meta: writer Mac McAnally}
+{meta: composer Mac McAnally}
 
 {start_of_verse: Verse 1}
 [C]Well I'm lookin' for my woman 

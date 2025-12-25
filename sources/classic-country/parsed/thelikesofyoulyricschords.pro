@@ -1,6 +1,6 @@
 {meta: title The Likes Of You}
 {meta: artist George Jones}
-{meta: writer Randall Hylton}
+{meta: composer Randall Hylton}
 
 {start_of_verse: Verse 1}
 [C]The last time we parted I was broken [F]hearted

@@ -1,6 +1,6 @@
 {meta: title Maybe Baby}
 {meta: artist Buddy Holly}
-{meta: writer Buddy Holly, Norman Petty, Jerry Allison}
+{meta: composer Buddy Holly, Norman Petty, Jerry Allison}
 
 {start_of_verse: Verse 1}
 [G]Maybe baby I'll have [Em]you

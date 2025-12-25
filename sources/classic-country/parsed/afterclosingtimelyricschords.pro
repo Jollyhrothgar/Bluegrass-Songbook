@@ -1,6 +1,6 @@
 {meta: title After Closing Time}
 {meta: artist George Jones}
-{meta: writer Billy Sherrill, Norro Wilson, Danny Walls}
+{meta: composer Billy Sherrill, Norro Wilson, Danny Walls}
 
 {start_of_verse: Verse 1}
 [G]Well you can find me serving drinks [C]inside a honky [G]tonk

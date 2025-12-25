@@ -1,6 +1,6 @@
 {meta: title The Girl I Never Loved}
 {meta: artist Elvis Presley}
-{meta: writer Randy Starr}
+{meta: composer Randy Starr}
 
 {start_of_verse: Verse 1}
 [C]The girl I never loved will [Dm]never know I [G7]cared

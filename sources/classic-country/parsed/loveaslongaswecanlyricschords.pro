@@ -1,6 +1,6 @@
 {meta: title Love As Long As We Can}
 {meta: artist Dottie West}
-{meta: writer Dottie West, Bill Davis, Byron Metcalf}
+{meta: composer Dottie West, Bill Davis, Byron Metcalf}
 
 {start_of_verse: Verse 1}
 [G]I won't ask you to [Bm]say you'll [Dm]stay with me for[G]ever

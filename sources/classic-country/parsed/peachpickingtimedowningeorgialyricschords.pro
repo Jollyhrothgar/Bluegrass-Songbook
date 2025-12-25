@@ -1,6 +1,6 @@
 {meta: title Peach Picking Time Down In Georgia}
 {meta: artist Hank Snow}
-{meta: writer Jimmie Rodgers and Clayton McMichen}
+{meta: composer Jimmie Rodgers and Clayton McMichen}
 
 {start_of_verse: Verse 1}
 [G]When it's peach picking time down in Georgia

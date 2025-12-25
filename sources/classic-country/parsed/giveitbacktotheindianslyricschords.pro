@@ -1,6 +1,6 @@
 {meta: title Give It Back To The Indians}
 {meta: artist Stonewall Jackson}
-{meta: writer David Wilkins}
+{meta: composer David Wilkins}
 
 {start_of_verse: Verse 1}
 [G]I was riding down the river in a real old Indian canoe

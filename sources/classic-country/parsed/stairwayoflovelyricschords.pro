@@ -1,6 +1,6 @@
 {meta: title Stairway of Love}
 {meta: artist Mary Robbins}
-{meta: writer Roy C. Bennett and Sid Tepper}
+{meta: composer Roy C. Bennett and Sid Tepper}
 
 {start_of_verse: Verse 1}
 [C]Come my love with me  take me by the [G7]hand

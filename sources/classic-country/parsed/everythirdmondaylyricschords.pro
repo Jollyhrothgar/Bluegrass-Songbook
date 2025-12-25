@@ -1,6 +1,6 @@
 {meta: title Every Third Monday}
 {meta: artist Sammy Kershaw}
-{meta: writer Larry Cordle, Larry Shell, Billy Henderson}
+{meta: composer Larry Cordle, Larry Shell, Billy Henderson}
 
 {start_of_verse: Verse 1}
 [C]He drives to Charlotte every third Monday

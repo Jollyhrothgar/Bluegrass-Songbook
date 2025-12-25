@@ -1,6 +1,6 @@
 {meta: title Some Call Him Jesus}
 {meta: artist Wanda Jackson}
-{meta: writer Yvonne Devaney}
+{meta: composer Yvonne Devaney}
 
 {start_of_verse: Verse 1}
 [C]Let me tell you people [G7]about a Man I [C]know

@@ -1,6 +1,6 @@
 {meta: title Stand Beside Me Behind Me}
 {meta: artist Mel Tillis}
-{meta: writer Paul Craft}
+{meta: composer Paul Craft}
 
 {start_of_verse: Verse 1}
 [C]Stand beside me be[F]hind me so [G7]loneliness can't [C]find me

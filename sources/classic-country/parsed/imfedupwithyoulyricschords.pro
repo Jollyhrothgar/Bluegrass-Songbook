@@ -1,6 +1,6 @@
 {meta: title I'm Fed Up With You}
 {meta: artist Dolly Parton}
-{meta: writer Bill Owens}
+{meta: composer Bill Owens}
 
 {start_of_verse: Verse 1}
 [F]I'm fed up with [C]you [G7]feedin' me a [C]line

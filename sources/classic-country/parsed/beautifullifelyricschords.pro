@@ -1,6 +1,6 @@
 {meta: title Beautiful Life}
 {meta: artist Jim Reeves}
-{meta: writer William M. Golden}
+{meta: composer William M. Golden}
 
 {start_of_verse: Verse 1}
 [C]Each day I'll do a [F]golden [C]deed

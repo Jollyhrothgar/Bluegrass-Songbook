@@ -1,6 +1,6 @@
 {meta: title Back To Back (We're Strangers)}
 {meta: artist Johnny Duncan}
-{meta: writer Marian Francis}
+{meta: composer Marian Francis}
 
 {start_of_verse: Verse 1}
 [F]Back to back we're [C]strangers turn [G7]around and let's be [C]friends

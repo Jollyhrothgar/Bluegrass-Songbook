@@ -1,6 +1,6 @@
 {meta: title It's Not Over Yet}
 {meta: artist Vern Gosdin}
-{meta: writer Hank Cochran and Vern Gosdin}
+{meta: composer Hank Cochran and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]On the bed lies your pillow

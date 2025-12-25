@@ -1,6 +1,6 @@
 {meta: title His Hands}
 {meta: artist Eddy Arnold}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [G]His [D7]hands paint the flowers 

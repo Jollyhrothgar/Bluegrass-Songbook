@@ -1,6 +1,6 @@
 {meta: title I Can't Feel You Anymore}
 {meta: artist Loretta Lynn}
-{meta: writer Theresa Beaty and Meredith Stewart}
+{meta: composer Theresa Beaty and Meredith Stewart}
 
 {start_of_verse: Verse 1}
 [C]There's no reason to [F]look at me that [C]way

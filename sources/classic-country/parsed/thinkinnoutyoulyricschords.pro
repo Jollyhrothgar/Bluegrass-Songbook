@@ -1,6 +1,6 @@
 {meta: title Thinkin' Bout You}
 {meta: artist Everly Brothers}
-{meta: writer Larry Henley and Billy Burnette}
+{meta: composer Larry Henley and Billy Burnette}
 
 {start_of_verse: Verse 1}
 [G]This whole thing is out of hand

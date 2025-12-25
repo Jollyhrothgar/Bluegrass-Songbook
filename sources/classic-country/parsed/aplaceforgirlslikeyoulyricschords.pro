@@ -1,6 +1,6 @@
 {meta: title A Place For Girls Like You}
 {meta: artist Faron Young}
-{meta: writer Red Hayes and Sonny Burns}
+{meta: composer Red Hayes and Sonny Burns}
 
 {start_of_verse: Verse 1}
 [C]Fate has planned a place for girls [G7]like you 

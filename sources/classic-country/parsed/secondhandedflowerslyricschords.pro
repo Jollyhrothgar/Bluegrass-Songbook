@@ -1,6 +1,6 @@
 {meta: title Second Handed Flowers}
 {meta: artist George Jones}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]I was working in Miami [F]for a day or [C]two

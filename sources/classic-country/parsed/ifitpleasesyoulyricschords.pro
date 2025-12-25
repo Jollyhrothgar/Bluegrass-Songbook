@@ -1,6 +1,6 @@
 {meta: title If It Pleases You}
 {meta: artist Billy Walker}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]If it pleases you to break my [C]heart

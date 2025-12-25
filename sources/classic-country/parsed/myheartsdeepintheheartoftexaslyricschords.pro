@@ -1,6 +1,6 @@
 {meta: title My Heart’s Deep In The Heart Of Texas}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin}
+{meta: composer Lloene S. Martin}
 
 {start_of_verse: Verse 1}
 [G]My heart is deep in the heart of [C]Texas

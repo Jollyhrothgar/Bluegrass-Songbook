@@ -1,6 +1,6 @@
 {meta: title I Want To Carry Your Sweet Memories}
 {meta: artist Statler Brothers}
-{meta: writer Lew DeWitt}
+{meta: composer Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [G]I wanna [C]carry your sweet [D7]memories to my [G]grave

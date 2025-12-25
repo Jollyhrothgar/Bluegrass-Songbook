@@ -1,6 +1,6 @@
 {meta: title Ashes In The Wind}
 {meta: artist Moe Bandy}
-{meta: writer Hank Cockran}
+{meta: composer Hank Cockran}
 
 {start_of_verse: Verse 1}
 [C]There's a fire still burning in my memory

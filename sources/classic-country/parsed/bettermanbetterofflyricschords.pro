@@ -1,6 +1,6 @@
 {meta: title Better Man Better Off}
 {meta: artist Tracy Lawrence}
-{meta: writer Brett Jones and Stan Davis}
+{meta: composer Brett Jones and Stan Davis}
 
 {start_of_verse: Verse 1}
 [C]The hardest thing I'll ever do 

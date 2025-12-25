@@ -1,6 +1,6 @@
 {meta: title When the Snow is on the Roses}
 {meta: artist Sonny James}
-{meta: writer Curry Kusic, Eddie Snyder, James Last}
+{meta: composer Curry Kusic, Eddie Snyder, James Last}
 
 {start_of_verse: Verse 1}
 [C]Now the Golden [F]sun can see us [C]kiss

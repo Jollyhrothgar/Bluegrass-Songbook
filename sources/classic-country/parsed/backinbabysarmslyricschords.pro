@@ -1,6 +1,6 @@
 {meta: title Back in Baby's Arms}
 {meta: artist Patsy Cline}
-{meta: writer Bob Montgomery and Allen Toussaint}
+{meta: composer Bob Montgomery and Allen Toussaint}
 
 {start_of_verse: Verse 1}
 [C]I'm back in baby's [G7]arms

@@ -1,6 +1,6 @@
 {meta: title I love No One But You}
 {meta: artist Don Gibson}
-{meta: writer Charlie and Ira Louvin}
+{meta: composer Charlie and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [C]I dream of [G7]eyes that make me [C]happy

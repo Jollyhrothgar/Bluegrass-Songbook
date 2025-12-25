@@ -1,6 +1,6 @@
 {meta: title Good Morning Country Rain}
 {meta: artist Rhonda Vincent}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]Good morning country [G7]rain

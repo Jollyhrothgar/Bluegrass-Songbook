@@ -1,6 +1,6 @@
 {meta: title It's My Party}
 {meta: artist Lesley Gore}
-{meta: writer Elof Loelv, Herbert Weiner,}
+{meta: composer Elof Loelv, Herbert Weiner,}
 
 {start_of_verse: Verse 1}
 John Gluck, Marcus Sepehrmanesh, 

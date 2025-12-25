@@ -1,5 +1,5 @@
 {meta: artist Bobby Barewritten by}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]I'll be dropping out of sight for [F]awhile

@@ -1,6 +1,6 @@
 {meta: title Left Over Feelings}
 {meta: artist George Morgan}
-{meta: writer William Rainsford}
+{meta: composer William Rainsford}
 
 {start_of_verse: Verse 1}
 [C]Slowly very slowly you're fading away

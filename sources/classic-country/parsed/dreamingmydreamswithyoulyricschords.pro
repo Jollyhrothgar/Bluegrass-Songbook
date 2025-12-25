@@ -1,6 +1,6 @@
 {meta: title Dreaming My Dreams With You}
 {meta: artist Waylon Jennings}
-{meta: writer Allen Reynolds}
+{meta: composer Allen Reynolds}
 
 {start_of_verse: Verse 1}
 [C]I hope that I won't be that wrong anymore 

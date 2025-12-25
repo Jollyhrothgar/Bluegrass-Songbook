@@ -1,6 +1,6 @@
 {meta: title A Room Without A View}
 {meta: artist Doug Stone}
-{meta: writer Gary Burr and Doug Stone}
+{meta: composer Gary Burr and Doug Stone}
 
 {start_of_verse: Verse 1}
 [F]I need a [C]room without a [G7]view

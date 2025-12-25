@@ -1,6 +1,6 @@
 {meta: title Who's Cheating Who}
 {meta: artist Charly McClain}
-{meta: writer Jerry Hayes}
+{meta: composer Jerry Hayes}
 
 {start_of_verse: Verse 1}
 Who's Cheating Who

@@ -1,6 +1,6 @@
 {meta: title Don't Tell My Wife}
 {meta: artist Johnny Paycheck}
-{meta: writer Dick Overby}
+{meta: composer Dick Overby}
 
 {start_of_verse: Verse 1}
 [C]Don’t tell my wife who wrote this song cause she might leave [G7]me

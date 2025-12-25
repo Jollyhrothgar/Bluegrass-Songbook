@@ -1,6 +1,6 @@
 {meta: title There Ain't No Queen (In My King Size Bed)}
 {meta: artist Mickey Gilley}
-{meta: writer Bobby Borchers}
+{meta: composer Bobby Borchers}
 
 {start_of_verse: Verse 1}
 [C]I've had a lotta good women the [F]best one she just [C]left

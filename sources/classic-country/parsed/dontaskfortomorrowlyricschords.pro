@@ -1,6 +1,6 @@
 {meta: title Don't Ask For Tomorrow}
 {meta: artist Sonny James}
-{meta: writer Bob Tubert and Sonny James}
+{meta: composer Bob Tubert and Sonny James}
 
 {start_of_verse: Verse 1}
 [D7]Take [G]today and [D7]hold it [G]fast

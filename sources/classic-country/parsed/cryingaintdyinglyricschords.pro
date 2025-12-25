@@ -1,6 +1,6 @@
 {meta: title Crying Ain't Dying}
 {meta: artist Tracy Lawrence}
-{meta: writer Don Schlitz and Mark Irwin}
+{meta: composer Don Schlitz and Mark Irwin}
 
 {start_of_verse: Verse 1}
 [C]First he said he loved you [F]he promised he'd be [C]true

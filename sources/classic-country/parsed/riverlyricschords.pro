@@ -1,6 +1,6 @@
 {meta: title River}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Bill Dees}
+{meta: composer Roy Orbison and Bill Dees}
 
 {start_of_verse: Verse 1}
 [C]Roly-oly on now [F]river [C]roly-oly on your [F]way

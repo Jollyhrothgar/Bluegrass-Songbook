@@ -1,6 +1,6 @@
 {meta: title It Only Hurts For A Little While}
 {meta: artist Connie Smith}
-{meta: writer Mack David and Fred Spielman}
+{meta: composer Mack David and Fred Spielman}
 
 {start_of_verse: Verse 1}
 [C]It only [F]hurts for a little [C]while 

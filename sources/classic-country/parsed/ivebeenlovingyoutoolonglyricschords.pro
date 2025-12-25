@@ -1,6 +1,6 @@
 {meta: title I've Been Loving You Too Long}
 {meta: artist Barbara Mandrell}
-{meta: writer Jerry Butler and Otis Redding}
+{meta: composer Jerry Butler and Otis Redding}
 
 {start_of_verse: Verse 1}
 [D7]I've been [G]loving you too [D7]long to [G]stop now[C]  [G]

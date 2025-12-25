@@ -1,6 +1,6 @@
 {meta: title After Losing You}
 {meta: artist Jim Ed Brown}
-{meta: writer Lee McAlpin}
+{meta: composer Lee McAlpin}
 
 {start_of_verse: Verse 1}
 [G]All the places we [C]used to go [D7]all the things we used to [G][C]d--o

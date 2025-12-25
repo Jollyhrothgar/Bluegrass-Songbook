@@ -1,6 +1,6 @@
 {meta: title Little Band Of Gold}
 {meta: artist Sonny James}
-{meta: writer Jimmy Gilreath}
+{meta: composer Jimmy Gilreath}
 
 {start_of_verse: Verse 1}
 [C]There you were standing there smiling as you made your [G7]plans

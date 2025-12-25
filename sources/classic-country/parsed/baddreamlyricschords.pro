@@ -1,6 +1,6 @@
 {meta: title Bad Dream}
 {meta: artist Billy Walker}
-{meta: writer Dan Hoffman and Chuck Woolery}
+{meta: composer Dan Hoffman and Chuck Woolery}
 
 {start_of_verse: Verse 1}
 [G]There keeps recurring a dream [C]that she left [G]me

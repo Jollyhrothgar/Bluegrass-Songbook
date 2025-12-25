@@ -1,6 +1,6 @@
 {meta: title Together}
 {meta: artist Anne Murray}
-{meta: writer Buddy DeSylva, Ray Henderson, Lew Brown}
+{meta: composer Buddy DeSylva, Ray Henderson, Lew Brown}
 
 {start_of_verse: Verse 1}
 [G]We strolled the lane to[D7]gether

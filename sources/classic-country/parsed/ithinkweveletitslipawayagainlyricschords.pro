@@ -1,6 +1,6 @@
 {meta: title I Think We've Let It Slip Away Again}
 {meta: artist Johnny Rodriguez}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]Lately we don't talk much

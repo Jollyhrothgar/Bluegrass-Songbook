@@ -1,6 +1,6 @@
 {meta: title She's Close Enough To Perfect For Me}
 {meta: artist Alabama}
-{meta: writer Carl E. Chambers}
+{meta: composer Carl E. Chambers}
 
 {start_of_verse: Verse 1}
 [G]Sometimes her morning [D7]coffee's way too [Am]strong

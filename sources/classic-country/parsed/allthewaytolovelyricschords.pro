@@ -1,6 +1,6 @@
 {meta: title All The Way To Love}
 {meta: artist Tommy Overstreet}
-{meta: writer Dale Vest and Tommy Overstreet}
+{meta: composer Dale Vest and Tommy Overstreet}
 
 {start_of_verse: Verse 1}
 [C]Tell me girl [F]before you dress and [G7]go

@@ -1,6 +1,6 @@
 {meta: title I Can't Love You Any Less}
 {meta: artist Alabama}
-{meta: writer Ronnie Rogers, Teddy Gentry, Greg Flower, Randy Owen}
+{meta: composer Ronnie Rogers, Teddy Gentry, Greg Flower, Randy Owen}
 
 {start_of_verse: Verse 1}
 [C]My heart fell [G7]to the floor[Am] 

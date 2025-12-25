@@ -1,6 +1,6 @@
 {meta: title Don't Let Our Love Start Slippin' Away}
 {meta: artist Vince Gill}
-{meta: writer Pete Wasner and Vince Gill}
+{meta: composer Pete Wasner and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]We've been up all night [F]long

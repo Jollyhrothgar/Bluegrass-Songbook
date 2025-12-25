@@ -1,6 +1,6 @@
 {meta: title I'll Never Stand In Your Way}
 {meta: artist Wilburn Brothers}
-{meta: writer Clint Horner}
+{meta: composer Clint Horner}
 
 {start_of_verse: Verse 1}
 [G7]If you [C]found someone new who means [F]more than me to you

@@ -1,6 +1,6 @@
 {meta: title Highway to the Sky}
 {meta: artist Jack Greene}
-{meta: writer Ron Liverett}
+{meta: composer Ron Liverett}
 
 {start_of_verse: Verse 1}
 [C]There's a highway [F]straight up to the [C]sky

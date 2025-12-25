@@ -1,6 +1,6 @@
 {meta: title Jesus I Need To Talk To You}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin}
+{meta: composer Lloene S. Martin}
 
 {start_of_verse: Verse 1}
 [C]Last night my little boy knelt [F]down beside his [C]bed 

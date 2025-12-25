@@ -1,6 +1,6 @@
 {meta: title California Road}
 {meta: artist Mel Tillis}
-{meta: writer Sam Weedman}
+{meta: composer Sam Weedman}
 
 {start_of_verse: Verse 1}
 [G]She left a light on in the [C]window

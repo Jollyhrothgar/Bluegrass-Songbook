@@ -1,6 +1,6 @@
 {meta: title Ruby Ann}
 {meta: artist Marty Robbins}
-{meta: writer Lee Emerson}
+{meta: composer Lee Emerson}
 
 {start_of_verse: Verse 1}
 Ruby Ann

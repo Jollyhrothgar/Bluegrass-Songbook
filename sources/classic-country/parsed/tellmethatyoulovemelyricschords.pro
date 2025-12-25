@@ -1,6 +1,6 @@
 {meta: title Tell Me That You Love Me}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Fats Domino}
+{meta: composer Dave Bartholomew and Fats Domino}
 
 {start_of_verse: Verse 1}
 [G]When I was only twelve years old

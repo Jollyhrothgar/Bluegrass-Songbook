@@ -1,6 +1,6 @@
 {meta: title Kansas City Stockyards}
 {meta: artist George Morgan}
-{meta: writer Johnny Adcock}
+{meta: composer Johnny Adcock}
 
 {start_of_verse: Verse 1}
 [D7]I quit my job out in the [G]wheat fields

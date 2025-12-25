@@ -1,6 +1,6 @@
 {meta: title Echoes From The Burning Bush}
 {meta: artist Chuck Wagon Gang}
-{meta: writer Bryon Foust and V.O. Summar}
+{meta: composer Bryon Foust and V.O. Summar}
 
 {start_of_verse: Verse 1}
 [G]Moses stood on holy ground

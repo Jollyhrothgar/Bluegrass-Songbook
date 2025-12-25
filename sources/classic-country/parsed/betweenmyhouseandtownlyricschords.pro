@@ -1,6 +1,6 @@
 {meta: title Between My House And Town}
 {meta: artist George Jones}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G]You finally got the [E7]nerve to [A7]tell me

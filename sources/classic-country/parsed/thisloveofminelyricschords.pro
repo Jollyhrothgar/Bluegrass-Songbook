@@ -1,6 +1,6 @@
 {meta: title This Love Of Mine}
 {meta: artist Sonny James}
-{meta: writer Sol Parker, Frank Sinatra and Hank Sanicola}
+{meta: composer Sol Parker, Frank Sinatra and Hank Sanicola}
 
 {start_of_verse: Verse 1}
 [C]This love of [F]mine [G7]goes on and [C]on

@@ -1,6 +1,6 @@
 {meta: title Paniolo Country}
 {meta: artist Randy Travis}
-{meta: writer Marcus Shutte}
+{meta: composer Marcus Shutte}
 
 {start_of_verse: Verse 1}
 [C]Places I [F]have been [G7]cities I have [C]seen

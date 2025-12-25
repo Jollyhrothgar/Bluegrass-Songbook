@@ -1,6 +1,6 @@
 {meta: title Little Angels}
 {meta: artist Rhonda Vincent}
-{meta: writer Ronny Light, Janice Clare, Lina Richard}
+{meta: composer Ronny Light, Janice Clare, Lina Richard}
 
 {start_of_verse: Verse 1}
 [C]One summer day a [F]stranger walked up to [C]me and said

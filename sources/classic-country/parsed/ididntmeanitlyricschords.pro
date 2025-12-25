@@ -1,6 +1,6 @@
 {meta: title I Didn't Mean It}
 {meta: artist Norma Jean}
-{meta: writer Marvin Rainwater}
+{meta: composer Marvin Rainwater}
 
 {start_of_verse: Verse 1}
 [G]I didn't mean to be untrue didn't mean to cheat on you

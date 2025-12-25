@@ -1,6 +1,6 @@
 {meta: title You Turn Me On}
 {meta: artist Alabama}
-{meta: writer Randy Owen and Theodore Gentry}
+{meta: composer Randy Owen and Theodore Gentry}
 
 {start_of_verse: Verse 1}
 [C]You know how to [Am]turn me [G7]on

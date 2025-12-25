@@ -1,6 +1,6 @@
 {meta: title He Can Be An Angel}
 {meta: artist Charley Pride}
-{meta: writer Donny Lowery}
+{meta: composer Donny Lowery}
 
 {start_of_verse: Verse 1}
 [C]He'll grow up too fast his mother [G7]said

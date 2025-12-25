@@ -1,6 +1,6 @@
 {meta: title She's Got A Single Thing In Mind}
 {meta: artist Conway Twitty}
-{meta: writer Walt Aldridge}
+{meta: composer Walt Aldridge}
 
 {start_of_verse: Verse 1}
 [C]She can't find the words to break [Am]it to me

@@ -1,6 +1,6 @@
 {meta: title I Love The Sound Of A Whistle}
 {meta: artist Boxcar Willie}
-{meta: writer Michael S. Breid}
+{meta: composer Michael S. Breid}
 
 {start_of_verse: Verse 1}
 I Love The Sound Of A Whistle

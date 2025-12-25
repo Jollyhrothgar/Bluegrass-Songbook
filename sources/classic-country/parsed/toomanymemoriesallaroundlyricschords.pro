@@ -1,6 +1,6 @@
 {meta: title Too Many Memories All Around}
 {meta: artist Jean Shepard}
-{meta: writer Carol Johnson}
+{meta: composer Carol Johnson}
 
 {start_of_verse: Verse 1}
 [G]Well there's the chair in which you sat 

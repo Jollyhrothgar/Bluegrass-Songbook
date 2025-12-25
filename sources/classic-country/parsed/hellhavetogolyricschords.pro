@@ -1,6 +1,6 @@
 {meta: title He'll Have to Go}
 {meta: artist Jim Reeves}
-{meta: writer Joe Allison and Audrey Allison}
+{meta: composer Joe Allison and Audrey Allison}
 
 {start_of_verse: Verse 1}
 [G]Put your sweet lips a little [C]closer to the [G]phone

@@ -1,6 +1,6 @@
 {meta: title So Let's Rock}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]When I was a baby momma rocked me in my cradle

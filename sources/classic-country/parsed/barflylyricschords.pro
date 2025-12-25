@@ -1,6 +1,6 @@
 {meta: title Bar Fly}
 {meta: artist Wynn Stewart}
-{meta: writer Bob Wesley}
+{meta: composer Bob Wesley}
 
 {start_of_verse: Verse 1}
 [G]I wonder little bar fly [D7]if I crushed you in the dirt

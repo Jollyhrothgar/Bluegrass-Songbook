@@ -1,6 +1,6 @@
 {meta: title Ain't No California}
 {meta: artist Mel Tillis}
-{meta: writer Sterling Whipple}
+{meta: composer Sterling Whipple}
 
 {start_of_verse: Verse 1}
 [G]Well I live my life on [C]highways from sea to shining [G]sea

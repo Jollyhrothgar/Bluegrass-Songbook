@@ -1,6 +1,6 @@
 {meta: title I'll Warm By The Flame}
 {meta: artist Johnny Bush}
-{meta: writer Buzz Rabin and James Johnson}
+{meta: composer Buzz Rabin and James Johnson}
 
 {start_of_verse: Verse 1}
 [C]Just as long [F]as the [C]fire [F]burns I'll [G7]warm by the [C]flame

@@ -1,6 +1,6 @@
 {meta: title Just To Hold Her}
 {meta: artist Gene Watson}
-{meta: writer Carson Chamberlain and Tim Mensy}
+{meta: composer Carson Chamberlain and Tim Mensy}
 
 {start_of_verse: Verse 1}
 [C]She called me up right out of the [E7]blue

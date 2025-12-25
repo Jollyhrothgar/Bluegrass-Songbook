@@ -1,6 +1,6 @@
 {meta: title Too Much Of You}
 {meta: artist Jack Greene}
-{meta: writer Gene Hood}
+{meta: composer Gene Hood}
 
 {start_of_verse: Verse 1}
 [G]I've got [C]too much of [D7]you still on my [G]mind

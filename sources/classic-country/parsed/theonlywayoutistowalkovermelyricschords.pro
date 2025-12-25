@@ -1,6 +1,6 @@
 {meta: title The Only Way Out (Is To Walk Over Me)}
 {meta: artist Dolly Parton}
-{meta: writer Neal Merritt}
+{meta: composer Neal Merritt}
 
 {start_of_verse: Verse 1}
 [G7]The only way [C]out is to [F]walk [G7]over [C]me

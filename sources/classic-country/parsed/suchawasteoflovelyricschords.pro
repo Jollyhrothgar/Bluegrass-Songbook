@@ -1,6 +1,6 @@
 {meta: title Such A Waste Of Love}
 {meta: artist Waylon Jennings}
-{meta: writer Waylon Jennings}
+{meta: composer Waylon Jennings}
 
 {start_of_verse: Verse 1}
 [G]O---[F]h such a [G]waste of love 

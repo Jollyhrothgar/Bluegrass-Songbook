@@ -1,6 +1,6 @@
 {meta: title Whenever You Come Back To Me}
 {meta: artist David Ball}
-{meta: writer Allen Shamblin and David Ball}
+{meta: composer Allen Shamblin and David Ball}
 
 {start_of_verse: Verse 1}
 [C]You disappear a day or so 

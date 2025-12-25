@@ -1,6 +1,6 @@
 {meta: title Foolish Pride}
 {meta: artist Faron Young}
-{meta: writer Harold L. Smith}
+{meta: composer Harold L. Smith}
 
 {start_of_verse: Verse 1}
 [C]Foolish pride you drove her love from [G7]me

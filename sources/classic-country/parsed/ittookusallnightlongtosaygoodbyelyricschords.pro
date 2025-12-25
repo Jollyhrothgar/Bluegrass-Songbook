@@ -1,6 +1,6 @@
 {meta: title It Took Us All Night Long To Say Goodbye}
 {meta: artist Johnny Rodriguez}
-{meta: writer Bob McDill and Wayland Holyfield}
+{meta: composer Bob McDill and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [C]It only took a minute  for [F]us to finally end [C]it

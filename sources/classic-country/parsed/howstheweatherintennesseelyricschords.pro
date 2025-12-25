@@ -1,6 +1,6 @@
 {meta: title How's The Weather In Tennessee}
 {meta: artist Eddy Arnold}
-{meta: writer Jim Weatherly and John Durrill}
+{meta: composer Jim Weatherly and John Durrill}
 
 {start_of_verse: Verse 1}
 [G]How's the weather back in [C]Tennessee

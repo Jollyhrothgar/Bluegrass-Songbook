@@ -1,6 +1,6 @@
 {meta: title Remember You’re Mine}
 {meta: artist Pat Boone}
-{meta: writer Bernie Lowe and Kal Mann}
+{meta: composer Bernie Lowe and Kal Mann}
 
 {start_of_verse: Verse 1}
 [G]Be faithful darling while you're away

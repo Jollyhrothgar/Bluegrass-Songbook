@@ -1,6 +1,6 @@
 {meta: title Afraid I'll Want To Love Her One More Time}
 {meta: artist Billy Crash Craddock}
-{meta: writer David Wilkins}
+{meta: composer David Wilkins}
 
 {start_of_verse: Verse 1}
 [C]Don't let my eyes [F]look upon her [C]body

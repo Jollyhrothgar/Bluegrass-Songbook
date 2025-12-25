@@ -1,6 +1,6 @@
 {meta: title Hello Out There}
 {meta: artist Carl Belew}
-{meta: writer Kent Westberry and Wayne P. Walker}
+{meta: composer Kent Westberry and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C](Hello out there hello out [F]there) [G7]

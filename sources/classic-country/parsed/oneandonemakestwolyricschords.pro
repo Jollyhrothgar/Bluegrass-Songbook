@@ -1,6 +1,6 @@
 {meta: title One And One Makes Two}
 {meta: artist Johnny Cash}
-{meta: writer Jerry Moss}
+{meta: composer Jerry Moss}
 
 {start_of_verse: Verse 1}
 [C]Oh the number one is not my favorite [F]number

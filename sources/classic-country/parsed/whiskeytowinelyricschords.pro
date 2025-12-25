@@ -1,6 +1,6 @@
 {meta: title Whiskey To Wine}
 {meta: artist Garth Brooks}
-{meta: writer Garth Brooks, Bryan Kennedy, Wynn Varble}
+{meta: composer Garth Brooks, Bryan Kennedy, Wynn Varble}
 
 {start_of_verse: Verse 1}
 [G]Yes she's nice yeah she's [D7]pretty

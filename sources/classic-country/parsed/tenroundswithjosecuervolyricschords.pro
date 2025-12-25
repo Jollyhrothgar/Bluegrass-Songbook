@@ -1,6 +1,6 @@
 {meta: title Ten Rounds With Jose Cuervo}
 {meta: artist Tracy Byrd}
-{meta: writer Michael Heeney, Casey Beathard, Marla Cannon}
+{meta: composer Michael Heeney, Casey Beathard, Marla Cannon}
 
 {start_of_verse: Verse 1}
 [C]I walked in and the [F]band just started

@@ -1,6 +1,6 @@
 {meta: title I Never Spend A Christmas That I Don't Think Of You}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]The year you were [Bm]Snow Queen at the [C]high school Christmas [G]ball

@@ -1,6 +1,6 @@
 {meta: title I've Got A Happy Heart}
 {meta: artist Susan Raye}
-{meta: writer Buck Owens and Pat Levely}
+{meta: composer Buck Owens and Pat Levely}
 
 {start_of_verse: Verse 1}
 [C]Happiness is something that we all need plenty [G7]of

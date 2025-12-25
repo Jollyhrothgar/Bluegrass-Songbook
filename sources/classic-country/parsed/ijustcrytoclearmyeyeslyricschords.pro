@@ -1,6 +1,6 @@
 {meta: title I Just Cry To Clear My Eyes}
 {meta: artist Freddie Hart}
-{meta: writer Becki Bluefield, Finley Duncan, Chuck Reed}
+{meta: composer Becki Bluefield, Finley Duncan, Chuck Reed}
 
 {start_of_verse: Verse 1}
 [C]When my two lips touch the glass

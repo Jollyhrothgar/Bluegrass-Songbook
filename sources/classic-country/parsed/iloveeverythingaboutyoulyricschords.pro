@@ -1,6 +1,6 @@
 {meta: title I Love Everything About You}
 {meta: artist George Morgan}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]I love the dimple in your dimpled cheek

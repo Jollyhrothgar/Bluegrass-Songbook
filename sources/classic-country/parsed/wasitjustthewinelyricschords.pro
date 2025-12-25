@@ -1,6 +1,6 @@
 {meta: title Was It Just The Wine}
 {meta: artist Vern Gosdin}
-{meta: writer Billy Cannon and Vern Gosdin}
+{meta: composer Billy Cannon and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]Did we laugh  and talk  and joke [G7]awhile  did we drink a [C]few

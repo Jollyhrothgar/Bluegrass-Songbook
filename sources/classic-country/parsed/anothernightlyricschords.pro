@@ -1,6 +1,6 @@
 {meta: title Another Night}
 {meta: artist Ricky Skaggs}
-{meta: writer Jack Adkins}
+{meta: composer Jack Adkins}
 
 {start_of_verse: Verse 1}
 [G]The wind is blowin' around my cabin 

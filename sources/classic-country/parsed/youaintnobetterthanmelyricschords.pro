@@ -1,6 +1,6 @@
 {meta: title You Ain't No Better Than Me}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Max Powell}
+{meta: composer Wayne P. Walker and Max Powell}
 
 {start_of_verse: Verse 1}
 [C]Why do you strut around town just a-puttin’ me down

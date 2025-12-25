@@ -1,6 +1,6 @@
 {meta: title Across The Borderline}
 {meta: artist Willie Nelson}
-{meta: writer John Hiatt, Ry Cooder, James Dickinson}
+{meta: composer John Hiatt, Ry Cooder, James Dickinson}
 
 {start_of_verse: Verse 1}
 [C]There's a place where [G7]I've been [C]told

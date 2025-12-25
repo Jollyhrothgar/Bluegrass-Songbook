@@ -1,6 +1,6 @@
 {meta: title Cheating's a Sin Lyrics and Chords}
 {meta: artist Kitty Wells}
-{meta: writer Billy Wallace}
+{meta: composer Billy Wallace}
 
 {start_of_verse: Verse 1}
 [C]You're in the arms of [G7]another where you've no right to [C]be

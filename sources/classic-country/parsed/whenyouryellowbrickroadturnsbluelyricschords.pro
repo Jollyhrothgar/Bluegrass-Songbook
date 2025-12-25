@@ -1,6 +1,6 @@
 {meta: title When Your Yellow Brick Road Turns Blue}
 {meta: artist John Anderson}
-{meta: writer Bernie Nelson and Gary Vincent}
+{meta: composer Bernie Nelson and Gary Vincent}
 
 {start_of_verse: Verse 1}
 [F]You say that [C]somewhere over the rain[F]bow

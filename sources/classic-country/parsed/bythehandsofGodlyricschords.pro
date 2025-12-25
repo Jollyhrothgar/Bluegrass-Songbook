@@ -1,6 +1,6 @@
 {meta: title By The Hands Of God}
 {meta: artist Carl Story}
-{meta: writer E.C. McCarty}
+{meta: composer E.C. McCarty}
 
 {start_of_verse: Verse 1}
 [G]Every tree upon the mountain

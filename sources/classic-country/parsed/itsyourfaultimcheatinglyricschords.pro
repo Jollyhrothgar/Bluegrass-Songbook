@@ -1,6 +1,6 @@
 {meta: title It's Your Fault I'm Cheating}
 {meta: artist Billy Walker}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [G]You're trying to make me feel guilty [G7]and [C]ashamed

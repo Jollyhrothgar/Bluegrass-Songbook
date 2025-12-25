@@ -1,6 +1,6 @@
 {meta: title Santa Looks A Lot Like Daddy Lyrics with Chords}
 {meta: artist Buck Owens}
-{meta: writer Don Rich and Buck Owens}
+{meta: composer Don Rich and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]Santa looked a lot like daddy or [G7]daddy looked a lot like [C]him

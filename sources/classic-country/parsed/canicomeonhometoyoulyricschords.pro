@@ -1,6 +1,6 @@
 {meta: title Can I Come On Home To You}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]Well I could apologize [F]but it might be too late for [C]that

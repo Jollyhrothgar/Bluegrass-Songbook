@@ -1,6 +1,6 @@
 {meta: title Dear Hearts And Gentle People}
 {meta: artist Jim Reeves}
-{meta: writer Bob Hillard and Sammy Fain}
+{meta: composer Bob Hillard and Sammy Fain}
 
 {start_of_verse: Verse 1}
 [C]I love those dear hearts and gentle [C][F]people 

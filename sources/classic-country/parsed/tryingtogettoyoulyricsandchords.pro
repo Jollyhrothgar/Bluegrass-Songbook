@@ -1,6 +1,6 @@
 {meta: title Trying To Get To You}
 {meta: artist Ricky Nelson}
-{meta: writer Rose Marie McCoy and Charles Singleton}
+{meta: composer Rose Marie McCoy and Charles Singleton}
 
 {start_of_verse: Verse 1}
 [G]I've been traveling over mountains

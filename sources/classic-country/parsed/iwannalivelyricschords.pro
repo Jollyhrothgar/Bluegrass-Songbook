@@ -1,6 +1,6 @@
 {meta: title I Wanna Live}
 {meta: artist Glen Campbell}
-{meta: writer John Loudermilk}
+{meta: composer John Loudermilk}
 
 {start_of_verse: Verse 1}
 [C]Flowers have blooms the ocean has [Dm]waves

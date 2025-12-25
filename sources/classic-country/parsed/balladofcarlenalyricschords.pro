@@ -1,6 +1,6 @@
 {meta: title Ballad Of Carlena}
 {meta: artist Billy Walker}
-{meta: writer Bobby Damron and Jay Johnson}
+{meta: composer Bobby Damron and Jay Johnson}
 
 {start_of_verse: Verse 1}
 [C]Flashing dark eyes has [G7]Carlena laughter so pleasant to [C]hear

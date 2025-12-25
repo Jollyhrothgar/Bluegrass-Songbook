@@ -1,6 +1,6 @@
 {meta: title Love Me Back To Heaven}
 {meta: artist Billy Walker}
-{meta: writer Sylvia Walker and Darrell Glenn}
+{meta: composer Sylvia Walker and Darrell Glenn}
 
 {start_of_verse: Verse 1}
 [C]Love me back to heaven one more [F]time

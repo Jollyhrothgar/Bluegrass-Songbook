@@ -1,6 +1,6 @@
 {meta: title Looking In The Eyes Of Love}
 {meta: artist Patty Loveless}
-{meta: writer Tricia Walker and Kostas Lazarides}
+{meta: composer Tricia Walker and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [G]I wonder should I tell you bout 

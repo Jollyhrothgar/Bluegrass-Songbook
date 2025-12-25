@@ -1,6 +1,6 @@
 {meta: title From The Inside Out}
 {meta: artist Tracy Lawrence}
-{meta: writer Thomas Miller and Rick Huckaby}
+{meta: composer Thomas Miller and Rick Huckaby}
 
 {start_of_verse: Verse 1}
 [C]She was always there [Em]takin' care of me

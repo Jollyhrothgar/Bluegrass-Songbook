@@ -1,6 +1,6 @@
 {meta: title My Better Years}
 {meta: artist The Seldom Scene}
-{meta: writer Hazel Dickens}
+{meta: composer Hazel Dickens}
 
 {start_of_verse: Verse 1}
 [G]Now you’re back on my doorstep a’ [C]crying

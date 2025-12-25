@@ -1,6 +1,6 @@
 {meta: title It's Such A Pretty World Today}
 {meta: artist Wynn Stewart}
-{meta: writer Dale Noe}
+{meta: composer Dale Noe}
 
 {start_of_verse: Verse 1}
 [G]It's such a pretty [C]world to[G]day look at the [D7]sunshine

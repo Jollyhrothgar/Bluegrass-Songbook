@@ -1,6 +1,6 @@
 {meta: title Holding My Own}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Pamela Belford}
+{meta: composer Dean Dillon and Pamela Belford}
 
 {start_of_verse: Verse 1}
 [C]There are people who don't know me who must [F]think I've got it [C]made [G7]

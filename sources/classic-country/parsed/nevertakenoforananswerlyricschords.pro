@@ -1,6 +1,6 @@
 {meta: title Never Take No For An Answer}
 {meta: artist Jim Reeves}
-{meta: writer Jim Reeves and Tommy Cutrer}
+{meta: composer Jim Reeves and Tommy Cutrer}
 
 {start_of_verse: Verse 1}
 [C]If you're sittin' with your baby in the moonlight

@@ -1,6 +1,6 @@
 {meta: title Holdin' Heaven}
 {meta: artist Tracy Byrd}
-{meta: writer Thom McHugh and Bill Kenner}
+{meta: composer Thom McHugh and Bill Kenner}
 
 {start_of_verse: Verse 1}
 [F]I'm face to face with an [C]angel 

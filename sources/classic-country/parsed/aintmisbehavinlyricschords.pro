@@ -1,6 +1,6 @@
 {meta: title Ain't Misbehavin'}
 {meta: artist Hank Williams Jr.}
-{meta: writer Fats Waller, Harry Brooks. Amdu Razaf}
+{meta: composer Fats Waller, Harry Brooks. Amdu Razaf}
 
 {start_of_verse: Verse 1}
 [C]No one to talk with [Dm]all by [G7]myself

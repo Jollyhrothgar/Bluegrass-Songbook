@@ -1,6 +1,6 @@
 {meta: title Let Me Fly Low}
 {meta: artist Charlie Waller}
-{meta: writer Iris Hall}
+{meta: composer Iris Hall}
 
 {start_of_verse: Verse 1}
 [G]Sad is the feeling [C]dreadful the [G]grieving

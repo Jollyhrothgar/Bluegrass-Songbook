@@ -1,6 +1,6 @@
 {meta: title It's Good To See You}
 {meta: artist Don Williams}
-{meta: writer Alan Taylor}
+{meta: composer Alan Taylor}
 
 {start_of_verse: Verse 1}
 [C]It's good to see you so [F]good to see [C]you

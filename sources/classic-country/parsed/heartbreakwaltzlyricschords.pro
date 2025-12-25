@@ -1,6 +1,6 @@
 {meta: title Heartbreak Waltz}
 {meta: artist Kitty Wells}
-{meta: writer Rusty Gabbard and Johnny Wright}
+{meta: composer Rusty Gabbard and Johnny Wright}
 
 {start_of_verse: Verse 1}
 [C]Pardon me Mister I [G]see you're alone

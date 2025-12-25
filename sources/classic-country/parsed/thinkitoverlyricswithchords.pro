@@ -1,6 +1,6 @@
 {meta: title Think It Over}
 {meta: artist Steve Earl}
-{meta: writer Steve Earle and Richard Rodney Bennett}
+{meta: composer Steve Earle and Richard Rodney Bennett}
 
 {start_of_verse: Verse 1}
 [C]You're here you're [G7]gone I'm [F]still hangin' [G7]on

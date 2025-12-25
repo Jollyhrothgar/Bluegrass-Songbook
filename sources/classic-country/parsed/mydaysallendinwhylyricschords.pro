@@ -1,6 +1,6 @@
 {meta: title My Days All End In Why}
 {meta: artist Charley Pride}
-{meta: writer Kevin Bloody Wilson}
+{meta: composer Kevin Bloody Wilson}
 
 {start_of_verse: Verse 1}
 [C]Thought you would be the last one [C7]I run into to[F]night

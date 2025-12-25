@@ -1,6 +1,6 @@
 {meta: title Too Many Daddies}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill, Glenn Sutton, Curly Putman}
+{meta: composer Billy Sherrill, Glenn Sutton, Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]This morning my little girl came up to my bed

@@ -1,6 +1,6 @@
 {meta: title Mama's Table}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Jamey Van Johnson and George G. Teren III}
+{meta: composer Jamey Van Johnson and George G. Teren III}
 
 {start_of_verse: Verse 1}
 [G]We pull a chair up every night and eat and [C]talk and joke and fight

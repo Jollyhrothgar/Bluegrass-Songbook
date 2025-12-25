@@ -1,6 +1,6 @@
 {meta: title A Woman Like You}
 {meta: artist Billy Walker}
-{meta: writer Jimmy Dallas}
+{meta: composer Jimmy Dallas}
 
 {start_of_verse: Verse 1}
 [C]What makes a man like me [G7]love a woman like you

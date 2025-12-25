@@ -1,6 +1,6 @@
 {meta: title Hobo Bill's Last Ride}
 {meta: artist Hank Snow}
-{meta: writer Waldo LaFayette O'Neal}
+{meta: composer Waldo LaFayette O'Neal}
 
 {start_of_verse: Verse 1}
 [G]Riding on an eastbound freight train [C]speeding through the [G]night

@@ -1,6 +1,6 @@
 {meta: title Coming Or Going}
 {meta: artist Jean Shepard}
-{meta: writer Shirley Wood}
+{meta: composer Shirley Wood}
 
 {start_of_verse: Verse 1}
 [G]From this day on I ain't a gonna love nobody

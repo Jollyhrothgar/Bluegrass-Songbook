@@ -1,6 +1,6 @@
 {meta: title Don't You Go Loving Nobody Else}
 {meta: artist Ray Price}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Don’t you go loving nobody [D7]else

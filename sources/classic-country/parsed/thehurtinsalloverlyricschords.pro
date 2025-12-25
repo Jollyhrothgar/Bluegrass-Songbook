@@ -1,6 +1,6 @@
 {meta: title The Hurtin's All Over}
 {meta: artist Connie Smith}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Now the hurtin's all [F]over  [G7]all over [C]me

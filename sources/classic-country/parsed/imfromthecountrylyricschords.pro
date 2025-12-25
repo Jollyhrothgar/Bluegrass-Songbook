@@ -1,6 +1,6 @@
 {meta: title I'm From The Country}
 {meta: artist Tracy Byrd}
-{meta: writer Marty Brown, Richard Young, Stan Webb}
+{meta: composer Marty Brown, Richard Young, Stan Webb}
 
 {start_of_verse: Verse 1}
 [C]Way back up in the country back in the hills

@@ -1,6 +1,6 @@
 {meta: title Artificial Rose}
 {meta: artist Dave Dudley}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]The little waitress wore an artificial rose

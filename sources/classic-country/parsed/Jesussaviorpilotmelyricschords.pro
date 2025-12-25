@@ -1,6 +1,6 @@
 {meta: title Jesus Savior Pilot Me}
 {meta: artist Lester Flatt}
-{meta: writer Edward Hopper and John E. Gould}
+{meta: composer Edward Hopper and John E. Gould}
 
 {start_of_verse: Verse 1}
 [G]Jesus Savior [C]pilot [G]me

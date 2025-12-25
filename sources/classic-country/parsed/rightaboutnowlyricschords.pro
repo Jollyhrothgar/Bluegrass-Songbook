@@ -1,6 +1,6 @@
 {meta: title Right About Now}
 {meta: artist Tracy Byrd}
-{meta: writer Joy Swinea and Toni Dae}
+{meta: composer Joy Swinea and Toni Dae}
 
 {start_of_verse: Verse 1}
 [C]Right about now she's brushin' her hair 

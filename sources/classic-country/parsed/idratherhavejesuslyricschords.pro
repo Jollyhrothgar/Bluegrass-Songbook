@@ -1,6 +1,6 @@
 {meta: title I'd Rather Have Jesus}
 {meta: artist Jim Reeves}
-{meta: writer Rhea F. Miller - George B. Shea}
+{meta: composer Rhea F. Miller - George B. Shea}
 
 {start_of_verse: Verse 1}
 [G]I'd rather have Jesus than [C]silver or [G]gold

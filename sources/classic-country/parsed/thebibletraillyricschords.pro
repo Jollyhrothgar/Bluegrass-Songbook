@@ -1,6 +1,6 @@
 {meta: title The Bible Trail}
 {meta: artist Jimmie Davis}
-{meta: writer Jimmie Davis and Ruby Moody}
+{meta: composer Jimmie Davis and Ruby Moody}
 
 {start_of_verse: Verse 1}
 [C]There's a bible trail [F]with e[C]ternal life

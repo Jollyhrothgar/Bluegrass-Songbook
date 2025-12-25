@@ -1,6 +1,6 @@
 {meta: title Crazy Wild Desire}
 {meta: artist Webb Pierce}
-{meta: writer Mel Tillis and Webb Pierce}
+{meta: composer Mel Tillis and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]I'm married to an angel  who's [G7]love is warm and [C]true

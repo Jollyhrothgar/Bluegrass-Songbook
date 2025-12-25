@@ -1,6 +1,6 @@
 {meta: title Accidentally on Purpose}
 {meta: artist Johnny Cash}
-{meta: writer Darrell Edwards and George Jones}
+{meta: composer Darrell Edwards and George Jones}
 
 {start_of_verse: Verse 1}
 [G]Accidentally I [C]saw you this [G]morning

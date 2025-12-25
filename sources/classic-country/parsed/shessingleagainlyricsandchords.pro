@@ -1,6 +1,6 @@
 {meta: title She's Single Again}
 {meta: artist Reba McEntire}
-{meta: writer Charlie Craig and Peter McCann}
+{meta: composer Charlie Craig and Peter McCann}
 
 {start_of_verse: Verse 1}
 [G]I've just got to tell you what I saw last night

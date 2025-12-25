@@ -1,6 +1,6 @@
 {meta: title I've Come To Say Goodbye}
 {meta: artist Faron Young}
-{meta: writer Don Robertson and Hal Blair}
+{meta: composer Don Robertson and Hal Blair}
 
 {start_of_verse: Verse 1}
 [C]I [G7]haven't come to [C]plead [F]like all the times [C]before

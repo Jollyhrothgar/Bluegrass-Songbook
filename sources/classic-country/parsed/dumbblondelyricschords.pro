@@ -1,6 +1,6 @@
 {meta: title Dumb Blonde}
 {meta: artist Dolly Parton}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]Don't try to fly [G7]your way out of [C]this

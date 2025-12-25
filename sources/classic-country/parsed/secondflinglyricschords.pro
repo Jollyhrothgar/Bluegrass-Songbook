@@ -1,6 +1,6 @@
 {meta: title Second Fling}
 {meta: artist Eddy Arnold}
-{meta: writer Steve Nelson and Joan Ellen Javits}
+{meta: composer Steve Nelson and Joan Ellen Javits}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna fill the jukebox up with nickels

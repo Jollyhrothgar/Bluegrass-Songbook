@@ -1,6 +1,6 @@
 {meta: title Somebody Loves You}
 {meta: artist Ernest Tubb}
-{meta: writer Charles Tobias and Peter DeRose}
+{meta: composer Charles Tobias and Peter DeRose}
 
 {start_of_verse: Verse 1}
 [G]Somebody loves you I want you to [D7]know

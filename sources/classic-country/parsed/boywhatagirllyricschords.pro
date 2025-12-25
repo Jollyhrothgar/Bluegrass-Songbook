@@ -1,6 +1,6 @@
 {meta: title Boy What A Girl}
 {meta: artist Hawkshaw Hawkins Jr.}
-{meta: writer Ronnie Aaron Boswell and Harold F. Hawkins II}
+{meta: composer Ronnie Aaron Boswell and Harold F. Hawkins II}
 
 {start_of_verse: Verse 1}
 [G7]Well I [C]guess they can [F]just call me one [G7]lucky guy

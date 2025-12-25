@@ -1,6 +1,6 @@
 {meta: title Jesus Is Calling}
 {meta: artist Hank Williams}
-{meta: writer Hank Williams and Charlie Monroe}
+{meta: composer Hank Williams and Charlie Monroe}
 
 {start_of_verse: Verse 1}
 [C]Jesus is calling calling calling night and [G]day

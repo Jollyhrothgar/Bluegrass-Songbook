@@ -1,6 +1,6 @@
 {meta: title I'll Pick Pretty Flowers}
 {meta: artist Wendy Lewis}
-{meta: writer Judith Elaine Pagter}
+{meta: composer Judith Elaine Pagter}
 
 {start_of_verse: Verse 1}
 [G]As I sit here recalling [C]the days of my [G]youth

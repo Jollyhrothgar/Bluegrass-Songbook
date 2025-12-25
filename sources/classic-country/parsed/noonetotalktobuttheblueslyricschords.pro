@@ -1,6 +1,6 @@
 {meta: title No One To Talk To But The Blues}
 {meta: artist Lefty Frizzell}
-{meta: writer Wayne P. Walker and George Cherry}
+{meta: composer Wayne P. Walker and George Cherry}
 
 {start_of_verse: Verse 1}
 [C]Last night I came home but you weren't there

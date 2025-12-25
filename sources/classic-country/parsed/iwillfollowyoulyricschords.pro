@@ -1,6 +1,6 @@
 {meta: title I Will Follow You}
 {meta: artist Ricky Nelson}
-{meta: writer Arthur Altman and Norman Gimbel}
+{meta: composer Arthur Altman and Norman Gimbel}
 
 {start_of_verse: Verse 1}
 [C]I will follow you  follow you wherever [Em]you may go

@@ -1,6 +1,6 @@
 {meta: title Sally Jo}
 {meta: artist Ricky Skaggs}
-{meta: writer Doug Kershaw and Rusty Kershaw}
+{meta: composer Doug Kershaw and Rusty Kershaw}
 
 {start_of_verse: Verse 1}
 [G]I got me in bed and covered up my head

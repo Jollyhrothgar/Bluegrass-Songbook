@@ -1,6 +1,6 @@
 {meta: title My Baby No Esta Aqui}
 {meta: artist Garth Brooks}
-{meta: writer David Stephenson and Shane Stockton}
+{meta: composer David Stephenson and Shane Stockton}
 
 {start_of_verse: Verse 1}
 [G]She used to be my Rosa Ama[C]rilla

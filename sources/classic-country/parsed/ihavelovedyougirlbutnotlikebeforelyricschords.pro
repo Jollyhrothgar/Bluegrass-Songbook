@@ -1,6 +1,6 @@
 {meta: title I Have Loved You Girl (But Not Like Before)}
 {meta: artist Ed Bruce}
-{meta: writer Earl Thomas Conley}
+{meta: composer Earl Thomas Conley}
 
 {start_of_verse: Verse 1}
 [C]I have held you girl

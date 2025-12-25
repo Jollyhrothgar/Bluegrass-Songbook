@@ -1,6 +1,6 @@
 {meta: title Bonnie B}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Charles Underwood}
+{meta: composer Charles Underwood}
 
 {start_of_verse: Verse 1}
 [C]Well Bonnie Bonnie B she's like a real queen [F]bee

@@ -1,6 +1,6 @@
 {meta: title Put a Little Love in Your Heart}
 {meta: artist Dolly Parton}
-{meta: writer Jackie De Shannon}
+{meta: composer Jackie De Shannon}
 
 {start_of_verse: Verse 1}
 [C]Think of your fellow man lend him a helping hand 

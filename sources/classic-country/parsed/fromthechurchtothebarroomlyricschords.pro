@@ -1,6 +1,6 @@
 {meta: title From The Church To The Barroom}
 {meta: artist Norma Jean}
-{meta: writer Rochelle Frazier}
+{meta: composer Rochelle Frazier}
 
 {start_of_verse: Verse 1}
 [G]No cursin' no smokin' no drinkin' for me

@@ -1,6 +1,6 @@
 {meta: title Just A Dream}
 {meta: artist Connie Francis}
-{meta: writer Jimmy Clanton and Cosimo Matassa}
+{meta: composer Jimmy Clanton and Cosimo Matassa}
 
 {start_of_verse: Verse 1}
 [C]Just a dream just a dream 

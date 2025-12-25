@@ -1,6 +1,6 @@
 {meta: title Real Good Place To Start}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Gary Nicholson}
+{meta: composer Dean Dillon and Gary Nicholson}
 
 {start_of_verse: Verse 1}
 [C]Still reeling from a relationship that [F]left me torn in two

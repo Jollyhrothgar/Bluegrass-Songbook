@@ -1,6 +1,6 @@
 {meta: title Hello We're Lonely}
 {meta: artist Tom T. Hall and Patti Page}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]Hello we're [F]lonely there's [C]no one around

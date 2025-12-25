@@ -1,6 +1,6 @@
 {meta: title Still Got A Couple Of Good Years Left}
 {meta: artist Ricky Van Shelton}
-{meta: writer Gary Burr}
+{meta: composer Gary Burr}
 
 {start_of_verse: Verse 1}
 [G]She's been on the road since [D7]'74

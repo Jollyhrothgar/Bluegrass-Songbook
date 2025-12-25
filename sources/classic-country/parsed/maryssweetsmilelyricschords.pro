@@ -1,6 +1,6 @@
 {meta: title Mary's Sweet Smile}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid, Harold Reid, Jimmy Fortune}
+{meta: composer Don Reid, Harold Reid, Jimmy Fortune}
 
 {start_of_verse: Verse 1}
 [G]Shepherds in fear of a [C]light that [Am]shone [G]near 

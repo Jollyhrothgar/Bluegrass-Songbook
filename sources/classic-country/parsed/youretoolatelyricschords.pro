@@ -1,6 +1,6 @@
 {meta: title You're Too Late}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Herman Willis}
+{meta: composer Lefty Frizzell and Herman Willis}
 
 {start_of_verse: Verse 1}
 [G]If I had some[C]one that's [G]true

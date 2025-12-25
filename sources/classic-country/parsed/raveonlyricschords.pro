@@ -1,6 +1,6 @@
 {meta: title Rave On}
 {meta: artist Buddy Holly}
-{meta: writer Sonny West, Bill Tilghman and Norman Petty}
+{meta: composer Sonny West, Bill Tilghman and Norman Petty}
 
 {start_of_verse: Verse 1}
 [G]Well the little things you say and do

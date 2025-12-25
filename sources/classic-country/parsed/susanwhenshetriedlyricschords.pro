@@ -1,6 +1,6 @@
 {meta: title Susan When She Tried}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]I got over  Charlotte [G7]Thompson

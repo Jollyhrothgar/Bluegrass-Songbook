@@ -1,6 +1,6 @@
 {meta: title Wear My Ring Around Your Neck}
 {meta: artist Elvis Presley}
-{meta: writer Bert Carroll and Russell Moody}
+{meta: composer Bert Carroll and Russell Moody}
 
 {start_of_verse: Verse 1}
 [C]Won't you wear my ring around your neck

@@ -1,6 +1,6 @@
 {meta: title Let's Think About Living}
 {meta: artist Bob Luman}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]In every other song that I've heard lately [G7]some fellow gets [C]shot

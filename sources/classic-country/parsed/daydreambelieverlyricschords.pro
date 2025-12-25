@@ -1,6 +1,6 @@
 {meta: title Daydream Believer}
 {meta: artist Anne Murray}
-{meta: writer John Stewart}
+{meta: composer John Stewart}
 
 {start_of_verse: Verse 1}
 [G]Oh I could hide beneath the [C]wings of the [G]bluebird as she [C]sings

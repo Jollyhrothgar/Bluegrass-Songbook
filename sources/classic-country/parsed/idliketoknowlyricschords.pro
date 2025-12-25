@@ -1,6 +1,6 @@
 {meta: title I'd Like To Know}
 {meta: artist Jean Shepard}
-{meta: writer Vic McAlpin and Roy Drusky}
+{meta: composer Vic McAlpin and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [G]The lights are low the teardrops flow misery [D7]is [G]complete

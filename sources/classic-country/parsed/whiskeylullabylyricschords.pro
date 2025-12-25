@@ -1,6 +1,6 @@
 {meta: title Whiskey Lullaby}
 {meta: artist Brad Paisley}
-{meta: writer Bill Anderson and Jon Randall}
+{meta: composer Bill Anderson and Jon Randall}
 
 {start_of_verse: Verse 1}
 [C]She put him [G7]out like the [C]burning end of a midnight ciga[Em]rette

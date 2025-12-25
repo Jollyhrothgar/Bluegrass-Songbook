@@ -1,6 +1,6 @@
 {meta: title You're Still Mine}
 {meta: artist Faron Young}
-{meta: writer Eddie Thorpe and Faron Young}
+{meta: composer Eddie Thorpe and Faron Young}
 
 {start_of_verse: Verse 1}
 You're still [G7]mine  don't forget it for a [C]day

@@ -1,6 +1,6 @@
 {meta: title Love Is On A Roll}
 {meta: artist Don Williams}
-{meta: writer Roger Prine and Roger Cook}
+{meta: composer Roger Prine and Roger Cook}
 
 {start_of_verse: Verse 1}
 [G]I can't work late although I need the money

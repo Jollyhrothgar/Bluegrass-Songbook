@@ -1,6 +1,6 @@
 {meta: title I’m Gonna Tie One On Tonight}
 {meta: artist Wilburn Brothers}
-{meta: writer Lee Nichols}
+{meta: composer Lee Nichols}
 
 {start_of_verse: Verse 1}
 [C]Things down at my house just ain't going [G7]right 

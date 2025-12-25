@@ -1,6 +1,6 @@
 {meta: title I'll Never Find Another You}
 {meta: artist Sonny James}
-{meta: writer Tom Springfield}
+{meta: composer Tom Springfield}
 
 {start_of_verse: Verse 1}
 [C]There's a new [Em]world [F]somewhere they [D7]call the Promised [G7]Land

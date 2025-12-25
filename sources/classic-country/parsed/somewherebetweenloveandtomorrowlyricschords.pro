@@ -1,6 +1,6 @@
 {meta: title Somewhere Between Love And Tomorrow}
 {meta: artist Roy Clark}
-{meta: writer Bud Reneau and Thomas Lazaros}
+{meta: composer Bud Reneau and Thomas Lazaros}
 
 {start_of_verse: Verse 1}
 [C]You gave your love [C][G7]completely 

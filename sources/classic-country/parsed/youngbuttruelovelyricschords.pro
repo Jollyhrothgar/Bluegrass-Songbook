@@ -1,6 +1,6 @@
 {meta: title Young But True Love}
 {meta: artist The Wilburn Brothers}
-{meta: writer Betty Sue Perry and Teddy Wilburn}
+{meta: composer Betty Sue Perry and Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]Young but [G7]true [C]love my love for [F]you [C]love

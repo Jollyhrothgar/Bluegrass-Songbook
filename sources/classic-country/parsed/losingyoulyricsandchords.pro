@@ -1,6 +1,6 @@
 {meta: title Losing You}
 {meta: artist Jimmy Martin}
-{meta: writer Edria A. Humphrey and Jimmy Martin}
+{meta: composer Edria A. Humphrey and Jimmy Martin}
 
 {start_of_verse: Verse 1}
 [G]There's no such thing as sleep for a jealous [C]fool

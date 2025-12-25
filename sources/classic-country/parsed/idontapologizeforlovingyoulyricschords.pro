@@ -1,6 +1,6 @@
 {meta: title I Don't Apologize For Loving You}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Velma Burns}
+{meta: composer Velma Burns}
 
 {start_of_verse: Verse 1}
 [C]We're the past time of the gossip and it hurts me through and [F]through

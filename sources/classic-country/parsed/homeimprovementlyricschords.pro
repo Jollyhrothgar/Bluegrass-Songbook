@@ -1,6 +1,6 @@
 {meta: title Home Improvement}
 {meta: artist George Strait}
-{meta: writer Dana Hunt and Tim Rouillier}
+{meta: composer Dana Hunt and Tim Rouillier}
 
 {start_of_verse: Verse 1}
 [C]The walls that surround us are slowly crumbling down

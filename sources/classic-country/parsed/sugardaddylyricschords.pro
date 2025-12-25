@@ -1,6 +1,6 @@
 {meta: title Sugar Daddy}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]What you need's a sugar daddy  

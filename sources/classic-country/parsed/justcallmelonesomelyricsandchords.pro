@@ -1,6 +1,6 @@
 {meta: title Just Call Me Lonesome}
 {meta: artist Radney Foster}
-{meta: writer George Ducas and Radney Foster}
+{meta: composer George Ducas and Radney Foster}
 
 {start_of_verse: Verse 1}
 [C]Just call me [F]lonesome  heart broke and then [C]some

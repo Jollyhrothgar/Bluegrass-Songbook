@@ -1,6 +1,6 @@
 {meta: title You Can Count Me Missing}
 {meta: artist Mickey Gilley}
-{meta: writer John W. Gostick Jr. and Richard E. Westmoreland}
+{meta: composer John W. Gostick Jr. and Richard E. Westmoreland}
 
 {start_of_verse: Verse 1}
 [G]I guess from now on you can count me [C]missing

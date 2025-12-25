@@ -1,6 +1,6 @@
 {meta: title Down Louisiana Way}
 {meta: artist George Strait}
-{meta: writer Aaron Baker, Donny Kees, Sanger D. Shafer}
+{meta: composer Aaron Baker, Donny Kees, Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]I am going down Louisiana way

@@ -1,6 +1,6 @@
 {meta: title Good Ole Boys Like Me}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]When I was a [D7]kid Uncle [C]Remus would [G]put me [C]to [D7]bed

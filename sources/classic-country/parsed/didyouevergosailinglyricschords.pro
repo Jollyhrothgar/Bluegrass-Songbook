@@ -1,6 +1,6 @@
 {meta: title Did You Ever Go Sailing}
 {meta: artist T. Texas Tyler}
-{meta: writer Albert Brumley}
+{meta: composer Albert Brumley}
 
 {start_of_verse: Verse 1}
 Did You Ever Go Sailing 

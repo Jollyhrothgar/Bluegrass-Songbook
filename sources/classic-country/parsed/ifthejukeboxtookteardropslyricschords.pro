@@ -1,6 +1,6 @@
 {meta: title If The Jukebox Took Teardrops}
 {meta: artist Billy Joe Royal}
-{meta: writer Wyatt Easterling, Don Goodman,}
+{meta: composer Wyatt Easterling, Don Goodman,}
 
 {start_of_verse: Verse 1}
 [G]If the jukebox took teardrops I'd [C]dance all night long

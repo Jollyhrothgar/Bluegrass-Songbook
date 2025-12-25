@@ -1,6 +1,6 @@
 {meta: title Take Good Care of Him}
 {meta: artist Anita Carter}
-{meta: writer Arthur Kent and Ed Warren}
+{meta: composer Arthur Kent and Ed Warren}
 
 {start_of_verse: Verse 1}
 [G]I suppose I ought to [C]say congratu[G]lations

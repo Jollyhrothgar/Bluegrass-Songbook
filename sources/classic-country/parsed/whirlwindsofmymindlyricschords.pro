@@ -1,6 +1,6 @@
 {meta: title Whirlwinds Of My Mind and Chords}
 {meta: artist Faron Young}
-{meta: writer Samuel Manning}
+{meta: composer Samuel Manning}
 
 {start_of_verse: Verse 1}
 [C]The tenderness of spring took [F]my hand and walked with [C]me

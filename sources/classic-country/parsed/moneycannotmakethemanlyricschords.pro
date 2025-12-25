@@ -1,6 +1,6 @@
 {meta: title Money Cannot Make The Man}
 {meta: artist Waylon Jennings}
-{meta: writer Jay Glaser}
+{meta: composer Jay Glaser}
 
 {start_of_verse: Verse 1}
 [C]So long I've been trying to give you 

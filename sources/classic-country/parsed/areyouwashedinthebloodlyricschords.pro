@@ -1,6 +1,6 @@
 {meta: title Are You Washed In The Blood}
 {meta: artist Statler Brother}
-{meta: writer Elisha A. Hoffman}
+{meta: composer Elisha A. Hoffman}
 
 {start_of_verse: Verse 1}
 [C]Have you been to Jesus for the [F]cleansing power

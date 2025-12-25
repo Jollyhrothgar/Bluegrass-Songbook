@@ -1,6 +1,6 @@
 {meta: title That Old Texas Two Step}
 {meta: artist Charlie Walker}
-{meta: writer Harlan Howard and Ronald R. Peterson}
+{meta: composer Harlan Howard and Ronald R. Peterson}
 
 {start_of_verse: Verse 1}
 [C]Sign said country music and the [D7]parking lot was full

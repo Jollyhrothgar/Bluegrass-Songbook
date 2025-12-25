@@ -1,6 +1,6 @@
 {meta: title Carolina Mountain Home}
 {meta: artist Ricky Skaggs}
-{meta: writer Len Wright and Elmer Scarborough}
+{meta: composer Len Wright and Elmer Scarborough}
 
 {start_of_verse: Verse 1}
 [C]I left my old home [F]back in the [C]mountains

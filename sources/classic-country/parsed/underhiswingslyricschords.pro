@@ -1,6 +1,6 @@
 {meta: title Under His Wings}
 {meta: artist Slim Whitman}
-{meta: writer William O. Cushing music by Ira D. Sankey}
+{meta: composer William O. Cushing music by Ira D. Sankey}
 {meta: music Ira D. Sankey}
 
 {start_of_verse: Verse 1}

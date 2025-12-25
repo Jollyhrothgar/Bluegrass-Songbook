@@ -1,6 +1,6 @@
 {meta: title Big City}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Dean Holloway}
+{meta: composer Merle Haggard and Dean Holloway}
 
 {start_of_verse: Verse 1}
 [C]I'm tired of this dirty old [F]city

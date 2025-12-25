@@ -1,6 +1,6 @@
 {meta: title Luckiest Heartache In Town}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Billy Gray}
+{meta: composer Hank Thompson and Billy Gray}
 
 {start_of_verse: Verse 1}
 [G]I've got the [C]luckiest [D7]heartache in [G]town

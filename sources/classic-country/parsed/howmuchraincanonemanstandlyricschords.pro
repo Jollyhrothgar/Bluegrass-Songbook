@@ -1,6 +1,6 @@
 {meta: title How Much Rain Can One Man Stand}
 {meta: artist Waylon Jennings}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Like a raging flood that [F]ruins a poor man's [C]land

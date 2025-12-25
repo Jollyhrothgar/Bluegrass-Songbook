@@ -1,6 +1,6 @@
 {meta: title This Thing Of Ours}
 {meta: artist Ray Price}
-{meta: writer Larry B. Bastian and Craig Morris}
+{meta: composer Larry B. Bastian and Craig Morris}
 
 {start_of_verse: Verse 1}
 [D7]Just [G]look at you lying [C]there

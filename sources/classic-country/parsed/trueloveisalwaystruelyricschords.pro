@@ -1,6 +1,6 @@
 {meta: title True Love Is Always True}
 {meta: artist Hank Locklin}
-{meta: writer Wayne P. Walker and Hank Locklin}
+{meta: composer Wayne P. Walker and Hank Locklin}
 
 {start_of_verse: Verse 1}
 [G]True love is [C]mighty hard to [G]find

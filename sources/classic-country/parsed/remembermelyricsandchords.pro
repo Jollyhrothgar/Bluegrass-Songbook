@@ -1,6 +1,6 @@
 {meta: title Remember Me}
 {meta: artist Johnny Cash}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [G]When you're all [D7]alone and [G]blue

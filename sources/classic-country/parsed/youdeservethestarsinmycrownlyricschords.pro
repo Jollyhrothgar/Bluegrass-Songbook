@@ -1,6 +1,6 @@
 {meta: title You Deserve The Stars In My Crown}
 {meta: artist Waylon Jennings}
-{meta: writer Roger Murrah and Waylon Jennings}
+{meta: composer Roger Murrah and Waylon Jennings}
 
 {start_of_verse: Verse 1}
 You Deserve The Stars In My Crown

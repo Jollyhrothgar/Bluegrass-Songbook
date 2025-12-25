@@ -1,6 +1,6 @@
 {meta: title Good Enough For Nothing}
 {meta: artist Red Sovine}
-{meta: writer Tommy Hill and Red Sovine}
+{meta: composer Tommy Hill and Red Sovine}
 
 {start_of_verse: Verse 1}
 [C]You put me down to all our friends

@@ -1,6 +1,6 @@
 {meta: title Home Is Where The Hurt Is}
 {meta: artist Moe Bandy}
-{meta: writer Arthur Leo Owens}
+{meta: composer Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G]My glass is empty and so are my [D7]arms

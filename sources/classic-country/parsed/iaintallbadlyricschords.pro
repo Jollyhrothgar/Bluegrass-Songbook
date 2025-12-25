@@ -1,6 +1,6 @@
 {meta: title I Ain't All Bad}
 {meta: artist Charley Pride}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [G]I picked last night in Tucson I [C]sang 'em a country [G]song

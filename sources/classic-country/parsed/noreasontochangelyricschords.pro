@@ -1,6 +1,6 @@
 {meta: title No Reason To Change}
 {meta: artist Randy Travis}
-{meta: writer Troy Seals and Mentor Williams}
+{meta: composer Troy Seals and Mentor Williams}
 
 {start_of_verse: Verse 1}
 [G]I know a man we call him poor boy Jones

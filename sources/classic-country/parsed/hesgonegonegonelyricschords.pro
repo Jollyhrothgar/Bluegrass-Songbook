@@ -1,6 +1,6 @@
 {meta: title He's Gone Gone Gone}
 {meta: artist Norma Jean}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]He said if I ever de[F]ceived him

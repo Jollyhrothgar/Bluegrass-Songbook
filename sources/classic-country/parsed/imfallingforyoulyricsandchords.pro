@@ -1,6 +1,6 @@
 {meta: title I'm Falling For You}
 {meta: artist Merle Haggard}
-{meta: writer Bonnie Owens, Buck Owens, Don Rich}
+{meta: composer Bonnie Owens, Buck Owens, Don Rich}
 
 {start_of_verse: Verse 1}
 [C]You bring me happiness and leave me [G7]loneliness

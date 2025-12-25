@@ -1,6 +1,6 @@
 {meta: title I Hope Heaven Has A Honky Tonk}
 {meta: artist Tracy Lawrence}
-{meta: writer Jim Carter and Sherri Stapleton}
+{meta: composer Jim Carter and Sherri Stapleton}
 
 {start_of_verse: Verse 1}
 [C]I was raised in a Christian home 

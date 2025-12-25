@@ -1,6 +1,6 @@
 {meta: title Journey’s End}
 {meta: artist J.D. Crowe}
-{meta: writer Pete Roberts}
+{meta: composer Pete Roberts}
 
 {start_of_verse: Verse 1}
 Journey’s End

@@ -1,6 +1,6 @@
 {meta: title I'd Rather Stay Home}
 {meta: artist Kitty Wells}
-{meta: writer Felice Byrant and Boudleaux Byrant}
+{meta: composer Felice Byrant and Boudleaux Byrant}
 
 {start_of_verse: Verse 1}
 [G]I'd rather stay home and [C]cry over [G]you

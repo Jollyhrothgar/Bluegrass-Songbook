@@ -1,6 +1,6 @@
 {meta: title Help Me to Be More Like Him}
 {meta: artist Rhonda Vincent}
-{meta: writer Linda Grimes and Rex Wiseman}
+{meta: composer Linda Grimes and Rex Wiseman}
 
 {start_of_verse: Verse 1}
 [G7]God [C]grant me the courage to walk [F]in your [C]footsteps

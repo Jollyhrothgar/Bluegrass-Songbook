@@ -1,6 +1,6 @@
 {meta: title That's What I'm Like Without You}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens, Red Simpson, Don Rich}
+{meta: composer Buck Owens, Red Simpson, Don Rich}
 
 {start_of_verse: Verse 1}
 [C]Like a man [G7]without a [C]future

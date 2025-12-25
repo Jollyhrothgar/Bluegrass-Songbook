@@ -1,6 +1,6 @@
 {meta: title The Sounds Of Goodbye}
 {meta: artist George Morgan}
-{meta: writer Eddie Rabbit and Dick Heard}
+{meta: composer Eddie Rabbit and Dick Heard}
 
 {start_of_verse: Verse 1}
 [C]Restless footsteps [G7]walking down the [F]hallway in the [G7]middle of the [C]night [G7]   [F]  [G7]

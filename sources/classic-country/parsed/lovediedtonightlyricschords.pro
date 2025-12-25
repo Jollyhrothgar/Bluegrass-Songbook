@@ -1,6 +1,6 @@
 {meta: title Love Died Tonight}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Hang a wreath on my door [G7]make a funeral [C]arrangement 

@@ -1,6 +1,6 @@
 {meta: title Preservation Of The Wild Life}
 {meta: artist Earl Thomas Conley}
-{meta: writer Jim Allison and Linda Young}
+{meta: composer Jim Allison and Linda Young}
 
 {start_of_verse: Verse 1}
 [C]Seems everybody's got a [F]cause

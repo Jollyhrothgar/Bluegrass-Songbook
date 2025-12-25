@@ -1,6 +1,6 @@
 {meta: title It's All Over}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Arms wouldn't you like to [G7]hold her

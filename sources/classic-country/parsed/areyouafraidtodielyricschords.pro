@@ -1,6 +1,6 @@
 {meta: title Are You Afraid To Die}
 {meta: artist Ricky Skaggs}
-{meta: writer Charlie Louvin, Ira Louvin, Eddie Hill}
+{meta: composer Charlie Louvin, Ira Louvin, Eddie Hill}
 
 {start_of_verse: Verse 1}
 [C]Are you a [G7]stranger to [C]God  

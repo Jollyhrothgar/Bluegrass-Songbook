@@ -1,6 +1,6 @@
 {meta: title Just An Old Love}
 {meta: artist Crystal Gayle}
-{meta: writer Pete Wasner and Charles Quatro}
+{meta: composer Pete Wasner and Charles Quatro}
 
 {start_of_verse: Verse 1}
 [G]Don't mind me  if I should [C]stare [D7]across the [G]room

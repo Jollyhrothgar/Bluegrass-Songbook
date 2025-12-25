@@ -1,6 +1,6 @@
 {meta: title Mighty Day}
 {meta: artist Carl Smith}
-{meta: writer Johnny Russell}
+{meta: composer Johnny Russell}
 
 {start_of_verse: Verse 1}
 [C]Well you left town and the [F]sun went down

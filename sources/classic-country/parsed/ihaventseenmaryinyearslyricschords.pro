@@ -1,6 +1,6 @@
 {meta: title I Haven't Seen Mary In Years}
 {meta: artist Mel Tillis}
-{meta: writer Damon Black [3/4 time]}
+{meta: composer Damon Black [3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]While walking one day in the country I [F]saw a gathering [C]crowd

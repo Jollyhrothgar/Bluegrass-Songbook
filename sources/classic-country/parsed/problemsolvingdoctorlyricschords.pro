@@ -1,6 +1,6 @@
 {meta: title Problem Solving Doctor}
 {meta: artist Johnny Paycheck}
-{meta: writer Johnny Paycheck, Aubrey Mayhew, Sam Perrin}
+{meta: composer Johnny Paycheck, Aubrey Mayhew, Sam Perrin}
 
 {start_of_verse: Verse 1}
 [G]I'd like to invite you to my [C]psychiatric office

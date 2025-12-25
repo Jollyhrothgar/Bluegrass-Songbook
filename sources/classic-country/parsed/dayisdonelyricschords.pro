@@ -1,6 +1,6 @@
 {meta: title Day is Done}
 {meta: artist Peter, Paul and Mary}
-{meta: writer Peter Yarrow}
+{meta: composer Peter Yarrow}
 
 {start_of_verse: Verse 1}
 [G]Tell me why you're crying my [Am]son

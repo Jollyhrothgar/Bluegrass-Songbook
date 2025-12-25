@@ -1,6 +1,6 @@
 {meta: title Throwin' Kisses}
 {meta: artist Bob Luman}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G]I got a gripe [D7]about last [G]night

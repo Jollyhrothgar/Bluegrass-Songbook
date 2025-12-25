@@ -1,6 +1,6 @@
 {meta: title Lucky Ladies}
 {meta: artist Jeannie Seely}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]Come listen all you lucky ladies

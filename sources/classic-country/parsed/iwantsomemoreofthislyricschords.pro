@@ -1,6 +1,6 @@
 {meta: title I Want Some More Of This}
 {meta: artist Leona Williams}
-{meta: writer Glenn Barber}
+{meta: composer Glenn Barber}
 
 {start_of_verse: Verse 1}
 [G]A proper lady that’s exactly what I [D7]was

@@ -1,6 +1,6 @@
 {meta: title Sting In This Old Bee}
 {meta: artist Hank Thompson}
-{meta: writer Joe Nelson and Hank Thompson}
+{meta: composer Joe Nelson and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]I might wear horn-rimmed glasses

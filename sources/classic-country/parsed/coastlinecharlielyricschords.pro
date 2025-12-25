@@ -1,6 +1,6 @@
 {meta: title Coastline Charlie}
 {meta: artist Dick Curless}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [C]It's hard for me to remember back 

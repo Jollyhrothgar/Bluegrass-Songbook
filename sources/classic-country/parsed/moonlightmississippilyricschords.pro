@@ -1,6 +1,6 @@
 {meta: title Moonlight Mississippi}
 {meta: artist Jimmy Dean}
-{meta: writer Willard Robison}
+{meta: composer Willard Robison}
 
 {start_of_verse: Verse 1}
 [C]Moonlight Mississippi [Am]is a [D7]whistle stop [G7]town

@@ -1,6 +1,6 @@
 {meta: title If Not For Love}
 {meta: artist Johnny Cash}
-{meta: writer Larry Lee and Glenn D. Tubb}
+{meta: composer Larry Lee and Glenn D. Tubb}
 
 {start_of_verse: Verse 1}
 [G]A broken man moves [D7]slowly down the [G]sidewalk

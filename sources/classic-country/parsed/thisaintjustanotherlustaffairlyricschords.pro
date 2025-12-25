@@ -1,6 +1,6 @@
 {meta: title This Ain't Just Another Lust Affair}
 {meta: artist Mel Street}
-{meta: writer Earl Thomas Conley}
+{meta: composer Earl Thomas Conley}
 
 {start_of_verse: Verse 1}
 [C]This motel room may [F]make you feel [C]uneasy

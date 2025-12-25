@@ -1,6 +1,6 @@
 {meta: title Bethlehem In Birmingham}
 {meta: artist Toby Keith}
-{meta: writer Weston Harvey and Scott Lynch}
+{meta: composer Weston Harvey and Scott Lynch}
 
 {start_of_verse: Verse 1}
 [C]Christmas Eve in Birmingham

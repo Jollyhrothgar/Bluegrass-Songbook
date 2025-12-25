@@ -1,6 +1,6 @@
 {meta: title Highway Of Heartache}
 {meta: artist Darin And Brooke Aldridge}
-{meta: writer Carl Jackson and Jim Rushing}
+{meta: composer Carl Jackson and Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]The other side my heart was breaking

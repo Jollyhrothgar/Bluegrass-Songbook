@@ -1,6 +1,6 @@
 {meta: title Come On Home And Have Your Next Affair With Me}
 {meta: artist Stonewall Jackson}
-{meta: writer Hugh X. Lewis and Billy Cole}
+{meta: composer Hugh X. Lewis and Billy Cole}
 
 {start_of_verse: Verse 1}
 [C]So your last affair turned out to be a [F]loser

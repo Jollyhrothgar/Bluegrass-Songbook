@@ -1,6 +1,6 @@
 {meta: title Home Away From Home}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [G]It all began the [C]day my conscience [G]died

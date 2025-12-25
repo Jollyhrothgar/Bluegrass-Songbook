@@ -1,6 +1,6 @@
 {meta: title It's Raining Here This Morning}
 {meta: artist The Osborne Brothers}
-{meta: writer Grandpa Jones}
+{meta: composer Grandpa Jones}
 
 {start_of_verse: Verse 1}
 [G]Oh it's raining raining raining here this [C]morning

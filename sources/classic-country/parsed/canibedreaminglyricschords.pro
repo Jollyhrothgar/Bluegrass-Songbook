@@ -1,6 +1,6 @@
 {meta: title Can I Be Dreaming}
 {meta: artist George Morgan}
-{meta: writer J.D. Miller}
+{meta: composer J.D. Miller}
 
 {start_of_verse: Verse 1}
 [C]Can I be [F]dreaming when I feel you near [C]me

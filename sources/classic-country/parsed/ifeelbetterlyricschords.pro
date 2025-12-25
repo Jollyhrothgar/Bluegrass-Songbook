@@ -1,6 +1,6 @@
 {meta: title I Feel Better}
 {meta: artist Cowboy Copas}
-{meta: writer Charlie Louvin and Ira Louvin}
+{meta: composer Charlie Louvin and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [G]Like many times before when [C]I awoke this [G]morning

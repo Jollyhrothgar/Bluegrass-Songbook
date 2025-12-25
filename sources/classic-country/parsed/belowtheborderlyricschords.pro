@@ -1,6 +1,6 @@
 {meta: title Below The Border}
 {meta: artist Johnny Rodriguez}
-{meta: writer Bobby Keel, Buck Moore, Jerry Taylor}
+{meta: composer Bobby Keel, Buck Moore, Jerry Taylor}
 
 {start_of_verse: Verse 1}
 [C]I know you still got memories of [F]Dallas

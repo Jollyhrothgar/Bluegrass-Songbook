@@ -1,6 +1,6 @@
 {meta: title A Bridge I Didn’t Burn}
 {meta: artist Ricky Van Shelton}
-{meta: writer Tracy Byrd, Frank Dycus, Billy Yates}
+{meta: composer Tracy Byrd, Frank Dycus, Billy Yates}
 
 {start_of_verse: Verse 1}
 [C]I can feel the need and know it won't be [F]long

@@ -1,6 +1,6 @@
 {meta: title Gently Rock His Cradle}
 {meta: artist Jimmie Davis}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [G]No pillow of [B7]satin to [C]cushion His [G]head 

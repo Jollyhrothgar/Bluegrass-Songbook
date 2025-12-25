@@ -1,6 +1,6 @@
 {meta: title Far Away Heart}
 {meta: artist Bobby Helms}
-{meta: writer Lee Emerson}
+{meta: composer Lee Emerson}
 
 {start_of_verse: Verse 1}
 [G]Don't let it happen don't find somebody [C]new

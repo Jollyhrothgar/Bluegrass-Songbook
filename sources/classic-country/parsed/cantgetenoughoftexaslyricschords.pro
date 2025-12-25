@@ -1,6 +1,6 @@
 {meta: title Can't Get Enough of Texas}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills and Thomas Dilbeck}
+{meta: composer Bob Wills and Thomas Dilbeck}
 
 {start_of_verse: Verse 1}
 [C]Can’t get enough of [F]Texas its [C]range I love to [G7]ride

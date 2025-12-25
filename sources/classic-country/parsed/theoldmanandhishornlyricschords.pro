@@ -1,6 +1,6 @@
 {meta: title The Old Man And His Horn}
 {meta: artist Gene Watson}
-{meta: writer Dallas Harms}
+{meta: composer Dallas Harms}
 
 {start_of_verse: Verse 1}
 [C]The old man [G7]told his [C]story about the [G7]years gone [C]by

@@ -1,6 +1,6 @@
 {meta: title Yearning}
 {meta: artist Bob Wills}
-{meta: writer Benny Davis and Joe Burke}
+{meta: composer Benny Davis and Joe Burke}
 
 {start_of_verse: Verse 1}
 [C]The song bird yearns to sing a love [G7]song

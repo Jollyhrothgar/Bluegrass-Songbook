@@ -1,6 +1,6 @@
 {meta: title I Can Tell}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Abe Mulkey}
+{meta: composer Lefty Frizzell and Abe Mulkey}
 
 {start_of_verse: Verse 1}
 [G]I can't tell by the sun the [D7]time of the day

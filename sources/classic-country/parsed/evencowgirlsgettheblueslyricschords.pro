@@ -1,6 +1,6 @@
 {meta: title Even Cowgirls Get The Blues}
 {meta: artist Emmylou Harris}
-{meta: writer Rodney Crowell}
+{meta: composer Rodney Crowell}
 
 {start_of_verse: Verse 1}
 [C]She's a rounder I can tell you [F]that

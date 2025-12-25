@@ -1,6 +1,6 @@
 {meta: title Better Things Than These}
 {meta: artist Faron Young}
-{meta: writer Red Hayes and Iris Franks}
+{meta: composer Red Hayes and Iris Franks}
 
 {start_of_verse: Verse 1}
 [G]You thought you'd set the world on fire that life was just a [C]song

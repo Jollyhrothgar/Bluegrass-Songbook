@@ -1,6 +1,6 @@
 {meta: title Not On The Bottom Yet}
 {meta: artist Boxcar Willie}
-{meta: writer Bobby Dwight Caraway and Llone Martin}
+{meta: composer Bobby Dwight Caraway and Llone Martin}
 
 {start_of_verse: Verse 1}
 [C]There you stand with your [F]pretty made up [C]face

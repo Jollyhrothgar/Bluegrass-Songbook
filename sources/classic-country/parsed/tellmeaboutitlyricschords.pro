@@ -1,6 +1,6 @@
 {meta: title Tell Me About It}
 {meta: artist Tanya Tucker}
-{meta: writer Bill LaBounty and Pat McLaughlin}
+{meta: composer Bill LaBounty and Pat McLaughlin}
 
 {start_of_verse: Verse 1}
 [G]They say that [A7]there's a hole in the [D7]atmosphere

@@ -1,6 +1,6 @@
 {meta: title Fever}
 {meta: artist Garth Brooks}
-{meta: writer Bryan Kennedy, Steven Tyler, Joe Perry, Bruce Roberts}
+{meta: composer Bryan Kennedy, Steven Tyler, Joe Perry, Bruce Roberts}
 
 {start_of_verse: Verse 1}
 [G]He's got a split finger wrap and his rope's pulled way too tight

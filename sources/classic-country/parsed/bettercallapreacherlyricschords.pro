@@ -1,6 +1,6 @@
 {meta: title Better Call A Preacher}
 {meta: artist Sammy Kershaw}
-{meta: writer Steven Cohen, Rick Lagneaux, Sammy Kershaw}
+{meta: composer Steven Cohen, Rick Lagneaux, Sammy Kershaw}
 
 {start_of_verse: Verse 1}
 [G]I thought I saw an angel just the other night

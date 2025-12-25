@@ -1,6 +1,6 @@
 {meta: title Honkytonkville}
 {meta: artist George Strait}
-{meta: writer Dean Dillon, Kim Williams, William Brock}
+{meta: composer Dean Dillon, Kim Williams, William Brock}
 
 {start_of_verse: Verse 1}
 [G]Thought I'd go crazy [D7]when you said goodbye [Am]

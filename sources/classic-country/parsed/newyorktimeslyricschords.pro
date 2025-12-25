@@ -1,6 +1,6 @@
 {meta: title New York Times}
 {meta: artist Gene Watson}
-{meta: writer O.B. McClinton and Sara Young}
+{meta: composer O.B. McClinton and Sara Young}
 
 {start_of_verse: Verse 1}
 [C]My woman always talked about the [F]New York City life

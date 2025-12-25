@@ -1,6 +1,6 @@
 {meta: title I'm Set Free}
 {meta: artist Melba Montgomery}
-{meta: writer Paul Wayne}
+{meta: composer Paul Wayne}
 
 {start_of_verse: Verse 1}
 [G]A wonderful world [D7]He's given [G]to me

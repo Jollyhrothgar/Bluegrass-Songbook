@@ -1,6 +1,6 @@
 {meta: title Hold Me}
 {meta: artist Jeannie Seely}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]You've gotta take me in your arms honey and [D7]hold me

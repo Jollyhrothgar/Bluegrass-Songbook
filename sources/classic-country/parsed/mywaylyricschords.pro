@@ -1,6 +1,6 @@
 {meta: title My Way}
 {meta: artist Elvis Presley}
-{meta: writer J. Revaux and C. Francois, Paul Anka}
+{meta: composer J. Revaux and C. Francois, Paul Anka}
 
 {start_of_verse: Verse 1}
 [C]And now the end is [Em]near

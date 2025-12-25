@@ -1,6 +1,6 @@
 {meta: title If You Want It I've Got It}
 {meta: artist Carl Smith}
-{meta: writer Woody Hill and Ina Hill}
+{meta: composer Woody Hill and Ina Hill}
 
 {start_of_verse: Verse 1}
 [C]If you want it baby hmm I've got [F]it 

@@ -1,6 +1,6 @@
 {meta: title Darkest Hour Just Before Dawn}
 {meta: artist Emmylou Harris}
-{meta: writer Ralph Stanley}
+{meta: composer Ralph Stanley}
 
 {start_of_verse: Verse 1}
 Darkest Hour Just Before Dawn

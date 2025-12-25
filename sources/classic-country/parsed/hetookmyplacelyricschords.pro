@@ -1,6 +1,6 @@
 {meta: title He Took My Place}
 {meta: artist Charley Pride}
-{meta: writer Ruth Hukill}
+{meta: composer Ruth Hukill}
 
 {start_of_verse: Verse 1}
 [C]There was a man more than a man

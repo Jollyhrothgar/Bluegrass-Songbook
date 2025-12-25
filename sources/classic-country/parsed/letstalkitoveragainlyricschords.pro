@@ -1,6 +1,6 @@
 {meta: title Let's Talk It Over Again}
 {meta: artist Hank Williams Jr.}
-{meta: writer Lamar Morris, Warren Keith, Hank Williams Jr.}
+{meta: composer Lamar Morris, Warren Keith, Hank Williams Jr.}
 
 {start_of_verse: Verse 1}
 [C]In our home there were never the [G7]angry words said

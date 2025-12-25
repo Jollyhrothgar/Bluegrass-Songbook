@@ -1,6 +1,6 @@
 {meta: title Lessons Learned}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [C]I was ten years [G7]old the day [C]I got caught

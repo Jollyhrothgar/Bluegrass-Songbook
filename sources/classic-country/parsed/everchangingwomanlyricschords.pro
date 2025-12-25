@@ -1,6 +1,6 @@
 {meta: title Ever Changing Woman}
 {meta: artist J.D. Crowe}
-{meta: writer Dave Kirby}
+{meta: composer Dave Kirby}
 
 {start_of_verse: Verse 1}
 [C]She sparkles like the [G7]moonlight on the [C]river

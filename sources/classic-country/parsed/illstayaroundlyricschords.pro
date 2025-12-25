@@ -1,6 +1,6 @@
 {meta: title I'll Stay Around}
 {meta: artist Willie Nelson}
-{meta: writer Hank Cochran and Willie Nelson}
+{meta: composer Hank Cochran and Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]I'll stay [G7]around until it's [C]over

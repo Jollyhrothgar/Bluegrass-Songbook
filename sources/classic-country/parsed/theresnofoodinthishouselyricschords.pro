@@ -1,6 +1,6 @@
 {meta: title There's No Food In This House}
 {meta: artist Lefty Frizzell}
-{meta: writer Merle Kilgore}
+{meta: composer Merle Kilgore}
 
 {start_of_verse: Verse 1}
 [C]Sister says she's [G7]hungry 

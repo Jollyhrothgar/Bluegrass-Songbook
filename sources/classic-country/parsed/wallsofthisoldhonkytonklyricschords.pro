@@ -1,6 +1,6 @@
 {meta: title Walls Of This Old Honky Tonk}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton and Red Steagall}
+{meta: composer Glenn Sutton and Red Steagall}
 
 {start_of_verse: Verse 1}
 [C]If everything that goes on in this [F]place was ever known

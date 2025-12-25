@@ -1,6 +1,6 @@
 {meta: title You Should Do The Calling}
 {meta: artist Faron Young}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [G]You refer to her as just the other [D7]woman

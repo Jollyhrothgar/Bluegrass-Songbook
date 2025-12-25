@@ -1,6 +1,6 @@
 {meta: title My Stolen Love}
 {meta: artist Sonny James}
-{meta: writer Billy Vaughn}
+{meta: composer Billy Vaughn}
 
 {start_of_verse: Verse 1}
 [C]Will I regret my stolen [G7]love  

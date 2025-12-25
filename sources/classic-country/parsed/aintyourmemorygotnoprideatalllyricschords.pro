@@ -1,6 +1,6 @@
 {meta: title Ain't Your Memory Got No Pride At All}
 {meta: artist Merle Haggard}
-{meta: writer Red Lane, Boyce Porter, Bucky Jones}
+{meta: composer Red Lane, Boyce Porter, Bucky Jones}
 
 {start_of_verse: Verse 1}
 [C]I woke up with her [F]in my arms this [C]morning

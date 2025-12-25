@@ -1,6 +1,6 @@
 {meta: title Watermelon Time In Georgia}
 {meta: artist Lefty Frizzell}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Thank you Detroit you treated me good

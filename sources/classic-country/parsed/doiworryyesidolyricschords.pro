@@ -1,6 +1,6 @@
 {meta: title Do I Worry Yes I Do}
 {meta: artist Brenda Lee}
-{meta: writer Jerry Lordan}
+{meta: composer Jerry Lordan}
 
 {start_of_verse: Verse 1}
 [C]Oh when you come home late with hardest [Am]reason

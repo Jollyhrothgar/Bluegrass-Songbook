@@ -1,6 +1,6 @@
 {meta: title Handful Of Stars}
 {meta: artist Cal Smith}
-{meta: writer Ted Harris and Frank Robinson}
+{meta: composer Ted Harris and Frank Robinson}
 
 {start_of_verse: Verse 1}
 [G]There's only a handful of stars where heaven used to [A7]be

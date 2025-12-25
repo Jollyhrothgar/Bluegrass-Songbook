@@ -1,6 +1,6 @@
 {meta: title The Footsteps of My Lord}
 {meta: artist Kitty Wells}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G]Hear the thunder in the night 

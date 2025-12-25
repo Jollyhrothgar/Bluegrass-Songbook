@@ -1,6 +1,6 @@
 {meta: title In Person}
 {meta: artist George Jones}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [G]You gave the heart you gave to me in [D7]person

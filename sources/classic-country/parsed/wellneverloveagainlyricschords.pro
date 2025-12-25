@@ -1,6 +1,6 @@
 {meta: title We’ll Never Love Again}
 {meta: artist Wynn Stewart}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Oh the nights I've cried how I'd die [F]inside

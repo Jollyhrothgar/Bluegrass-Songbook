@@ -1,6 +1,6 @@
 {meta: title On My Mind Again}
 {meta: artist Billy Walker}
-{meta: writer Slim Willett, Dean Beard, Elmer Ray}
+{meta: composer Slim Willett, Dean Beard, Elmer Ray}
 
 {start_of_verse: Verse 1}
 [G7]I got you on my mind [C]again

@@ -1,6 +1,6 @@
 {meta: title If We Put Our Heads Together}
 {meta: artist Ernest Tubb}
-{meta: writer Loretta Lynn and Lorene Allen}
+{meta: composer Loretta Lynn and Lorene Allen}
 
 {start_of_verse: Verse 1}
 [G]We're not tryin' just cryin' over [D7]what we've be[G]come

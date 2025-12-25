@@ -1,6 +1,6 @@
 {meta: title Here I Am}
 {meta: artist Chad Morgan}
-{meta: writer Jerry Reed}
+{meta: composer Jerry Reed}
 
 {start_of_verse: Verse 1}
 [C]They tell me you've been looking for someone to hold you tight

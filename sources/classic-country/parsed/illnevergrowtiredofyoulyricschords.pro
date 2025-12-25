@@ -1,6 +1,6 @@
 {meta: title I'll Never Grow Tired Of You}
 {meta: artist Patty Loveless}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]It's been a long time since you [F]drifted [C]away

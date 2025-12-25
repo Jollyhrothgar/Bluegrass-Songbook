@@ -1,6 +1,6 @@
 {meta: title Password}
 {meta: artist Kitty Wells}
-{meta: writer James Herman Phillips}
+{meta: composer James Herman Phillips}
 
 {start_of_verse: Verse 1}
 [C]Password please use [D7]the [G]password

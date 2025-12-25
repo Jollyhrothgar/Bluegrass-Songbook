@@ -1,6 +1,6 @@
 {meta: title Itsy Bitsy Teenie Weenie Yellow Polka Dot Bikini}
 {meta: artist Connie Francis}
-{meta: writer Paul Vance and Lee Pockriss}
+{meta: composer Paul Vance and Lee Pockriss}
 
 {start_of_verse: Verse 1}
 [G]It was an [D7]Itsy Bitsy Teenie Weenie [G]Yellow Polka Dot Bikini

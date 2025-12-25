@@ -1,6 +1,6 @@
 {meta: title The Holy Hills Of Heaven Call Me}
 {meta: artist Johnny Mathis}
-{meta: writer Joyce Reba (Dottie) Rambo}
+{meta: composer Joyce Reba (Dottie) Rambo}
 
 {start_of_verse: Verse 1}
 [G]The holy hills of Heaven [D7]call [G]me

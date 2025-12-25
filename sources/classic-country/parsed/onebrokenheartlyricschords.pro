@@ -1,6 +1,6 @@
 {meta: title One Broken Heart}
 {meta: artist Ray Price}
-{meta: writer Buddy Killen}
+{meta: composer Buddy Killen}
 
 {start_of_verse: Verse 1}
 [C]One [A7]fallen leaf don’t mean it’s [D7]autumn 

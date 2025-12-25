@@ -1,6 +1,6 @@
 {meta: title Any Bar In Birmingham}
 {meta: artist Don Rigsby}
-{meta: writer Larry Shell, Tim Stafford, Kim E. Williams}
+{meta: composer Larry Shell, Tim Stafford, Kim E. Williams}
 
 {start_of_verse: Verse 1}
 [C]Righteous reverend Ronnie [G7]Shaw 

@@ -1,6 +1,6 @@
 {meta: title Open Up Your Heart}
 {meta: artist Roger Miller}
-{meta: writer Buddy Killen and Roger Miller}
+{meta: composer Buddy Killen and Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]Open up your [C]heart 

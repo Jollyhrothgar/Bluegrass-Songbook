@@ -1,6 +1,6 @@
 {meta: title Baby Take A Picture}
 {meta: artist Ricky Van Shelton}
-{meta: writer Russell Smith, Carol Chase, Kathy Louvin}
+{meta: composer Russell Smith, Carol Chase, Kathy Louvin}
 
 {start_of_verse: Verse 1}
 [C]Baby take a picture it'll last a lot [F]longer

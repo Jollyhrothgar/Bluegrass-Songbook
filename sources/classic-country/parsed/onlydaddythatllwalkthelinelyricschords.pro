@@ -1,6 +1,6 @@
 {meta: title Only Daddy That'll Walk The Line}
 {meta: artist Waylon Jennings}
-{meta: writer Ivy J. Bryant}
+{meta: composer Ivy J. Bryant}
 
 {start_of_verse: Verse 1}
 [C]Everybody knows you've been stepping on my toes

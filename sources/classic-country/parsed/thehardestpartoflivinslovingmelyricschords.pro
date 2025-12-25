@@ -1,6 +1,6 @@
 {meta: title The Hardest Part Of Livin's Loving Me}
 {meta: artist Charley Pride}
-{meta: writer Don Feagin}
+{meta: composer Don Feagin}
 
 {start_of_verse: Verse 1}
 [C]Yes your hardest part of [F]living's lovin'[G7] me

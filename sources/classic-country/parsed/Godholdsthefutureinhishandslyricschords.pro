@@ -1,6 +1,6 @@
 {meta: title God Holds the Future in His Hands}
 {meta: artist Ricky Skaggs}
-{meta: writer William S. Monroe}
+{meta: composer William S. Monroe}
 
 {start_of_verse: Verse 1}
 [C]Dread not the things that are ahead

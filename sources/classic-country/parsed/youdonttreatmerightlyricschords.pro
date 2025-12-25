@@ -1,6 +1,6 @@
 {meta: title You Don't Treat Me Right}
 {meta: artist Faron Young}
-{meta: writer Kent Westberry and Benny Joy}
+{meta: composer Kent Westberry and Benny Joy}
 
 {start_of_verse: Verse 1}
 [C]I'm the [G7]abused and [C]you're the [G7]abuser

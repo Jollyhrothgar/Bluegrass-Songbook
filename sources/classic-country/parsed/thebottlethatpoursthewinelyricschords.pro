@@ -1,6 +1,6 @@
 {meta: title The Bottle That Pours The Wine}
 {meta: artist David Ball}
-{meta: writer Allen Shamblin and David Ball}
+{meta: composer Allen Shamblin and David Ball}
 
 {start_of_verse: Verse 1}
 [C]I was heading for the bus and [F]another one night stand

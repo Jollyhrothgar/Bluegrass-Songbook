@@ -1,6 +1,6 @@
 {meta: title You Can't Fool Love}
 {meta: artist Lacy J. Dalton}
-{meta: writer Steve Davis and Mark Sherrill}
+{meta: composer Steve Davis and Mark Sherrill}
 
 {start_of_verse: Verse 1}
 [C]Wide as a [Am]river [G7]deep as the [F]sea

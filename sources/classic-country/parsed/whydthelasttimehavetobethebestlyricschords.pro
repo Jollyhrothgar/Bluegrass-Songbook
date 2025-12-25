@@ -1,6 +1,6 @@
 {meta: title Why'd The Last Time Have To Be The Best}
 {meta: artist Bill Anderson}
-{meta: writer Red Williams}
+{meta: composer Red Williams}
 
 {start_of_verse: Verse 1}
 [C]As I lay here by my [F]woman 

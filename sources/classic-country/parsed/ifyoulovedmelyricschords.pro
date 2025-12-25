@@ -1,6 +1,6 @@
 {meta: title If You Loved Me}
 {meta: artist Tracy Lawrence}
-{meta: writer Paul Nelson and Tom Shapiro}
+{meta: composer Paul Nelson and Tom Shapiro}
 
 {start_of_verse: Verse 1}
 [C]I see the way [F] he [G7]doesn't treat you right 

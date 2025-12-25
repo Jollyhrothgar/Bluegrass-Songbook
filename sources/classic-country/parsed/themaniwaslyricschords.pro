@@ -1,6 +1,6 @@
 {meta: title The Man I Was}
 {meta: artist Tracy Lawrence}
-{meta: writer Paul Nelson, Tony Martin, Mark Nesler}
+{meta: composer Paul Nelson, Tony Martin, Mark Nesler}
 
 {start_of_verse: Verse 1}
 [C]Look at me in that photograph 

@@ -1,6 +1,6 @@
 {meta: title Hobo's Lullaby}
 {meta: artist Emmylou Harris}
-{meta: writer Goebel Reeves}
+{meta: composer Goebel Reeves}
 
 {start_of_verse: Verse 1}
 [C]Go to sleep you weary [F]hobo

@@ -1,6 +1,6 @@
 {meta: title Would You Settle For Roses}
 {meta: artist Freddie Hart}
-{meta: writer Bob Morris and Larry Farmer}
+{meta: composer Bob Morris and Larry Farmer}
 
 {start_of_verse: Verse 1}
 [G]I'd like to give you fancy [C]things  like [G]diamond rings

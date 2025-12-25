@@ -1,6 +1,6 @@
 {meta: title Did She Mention My Name}
 {meta: artist Bill Anderson}
-{meta: writer Gordon Lightfoot}
+{meta: composer Gordon Lightfoot}
 
 {start_of_verse: Verse 1}
 [G]It's so nice to meet an old friend and [C]pass the time of day

@@ -1,6 +1,6 @@
 {meta: title Freight Train Blues}
 {meta: artist Jimmy Dean}
-{meta: writer John Lair}
+{meta: composer John Lair}
 
 {start_of_verse: Verse 1}
 [C]I was born in Dixie in a boomer's shack

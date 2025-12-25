@@ -1,6 +1,6 @@
 {meta: title That's When It Hurts The Most}
 {meta: artist Johnny Tillotson}
-{meta: writer Paul Evans and Larry Kusik}
+{meta: composer Paul Evans and Larry Kusik}
 
 {start_of_verse: Verse 1}
 [C]That's when it [G7]hurts the [C]most

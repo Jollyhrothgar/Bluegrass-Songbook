@@ -1,6 +1,6 @@
 {meta: title Don't Our Love Look Natural}
 {meta: artist Keith Whitley}
-{meta: writer Harlan Howard and Don Cook}
+{meta: composer Harlan Howard and Don Cook}
 
 {start_of_verse: Verse 1}
 [G]We're gathered in this [C]room today to [D7]say our last good[G]byes

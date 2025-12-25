@@ -1,6 +1,6 @@
 {meta: title I Live Just To Love You}
 {meta: artist Faron Young}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Can't you tell by the [G7]look in these eyes of [C]mine

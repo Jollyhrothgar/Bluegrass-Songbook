@@ -1,6 +1,6 @@
 {meta: title Haven't You Heard}
 {meta: artist Jeannie C. Riley}
-{meta: writer Red Lane and Wayne Kemp}
+{meta: composer Red Lane and Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [C]Haven't you hea[F]rd daddy's gone [C]crazy

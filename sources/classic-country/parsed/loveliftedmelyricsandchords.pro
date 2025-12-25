@@ -1,6 +1,6 @@
 {meta: title Love Lifted Me}
 {meta: artist Kenny Rogers}
-{meta: writer James Rowe and Howard Smith}
+{meta: composer James Rowe and Howard Smith}
 
 {start_of_verse: Verse 1}
 [C]I'll write myself a simple song 

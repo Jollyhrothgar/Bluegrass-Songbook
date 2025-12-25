@@ -1,6 +1,6 @@
 {meta: title If You Were Losing Him To Me}
 {meta: artist Jean Shepard}
-{meta: writer Helen Carter}
+{meta: composer Helen Carter}
 
 {start_of_verse: Verse 1}
 [G]You say I'm being selfish cause I won't set him [C]free

@@ -1,6 +1,6 @@
 {meta: title Down On The Farm}
 {meta: artist Charley Pride}
-{meta: writer Eddie Setser, John Greenebaum, Troy Seals}
+{meta: composer Eddie Setser, John Greenebaum, Troy Seals}
 
 {start_of_verse: Verse 1}
 [G]Looking back a hundred years

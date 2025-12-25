@@ -1,6 +1,6 @@
 {meta: title It’s All Your Fault}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Oh it's all your fault that I ain’t sleepin'

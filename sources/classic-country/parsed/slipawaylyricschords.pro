@@ -1,6 +1,6 @@
 {meta: title Slip Away}
 {meta: artist Mel Street}
-{meta: writer Wilbur Terrell, Marcus Daniel, Bill Armstrong}
+{meta: composer Wilbur Terrell, Marcus Daniel, Bill Armstrong}
 
 {start_of_verse: Verse 1}
 [G]While the tiny drops of [C]rain

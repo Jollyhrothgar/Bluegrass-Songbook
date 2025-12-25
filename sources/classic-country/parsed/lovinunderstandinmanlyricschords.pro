@@ -1,6 +1,6 @@
 {meta: title Lovin' Understandin' Man}
 {meta: artist Don Williams}
-{meta: writer Jim Rushing}
+{meta: composer Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]My baby [F]changes like the [C]weather

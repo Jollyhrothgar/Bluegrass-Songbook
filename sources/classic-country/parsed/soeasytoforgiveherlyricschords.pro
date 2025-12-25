@@ -1,6 +1,6 @@
 {meta: title So Easy To Forgive Her}
 {meta: artist Lee Harmon}
-{meta: writer Dick Overbey}
+{meta: composer Dick Overbey}
 
 {start_of_verse: Verse 1}
 [C]I [F]lay in darkness in our room and [C]shed an unseen tear

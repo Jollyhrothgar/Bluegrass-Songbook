@@ -1,5 +1,5 @@
 {meta: artist Faron YoungWritten by David Hall and Louis Redding}
-{meta: writer David Hall and Louis Redding}
+{meta: composer David Hall and Louis Redding}
 
 {start_of_verse: Verse 1}
 [C]On a night coach out of [Em]Dallas [F]headin' for the [Em]bright lights of [G7]LA

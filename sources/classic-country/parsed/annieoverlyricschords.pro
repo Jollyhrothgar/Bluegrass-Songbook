@@ -1,6 +1,6 @@
 {meta: title Annie Over}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray, Hank Thompson, Don Clay}
+{meta: composer Billy Gray, Hank Thompson, Don Clay}
 
 {start_of_verse: Verse 1}
 Annie Over 

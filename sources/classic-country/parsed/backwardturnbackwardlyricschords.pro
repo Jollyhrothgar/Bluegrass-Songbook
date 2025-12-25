@@ -1,6 +1,6 @@
 {meta: title Backward Turn Backward}
 {meta: artist Slim Whitman}
-{meta: writer Dave Coleman}
+{meta: composer Dave Coleman}
 
 {start_of_verse: Verse 1}
 [C]Backward turn [E7]backward oh [F]tired in your [Fm]plight

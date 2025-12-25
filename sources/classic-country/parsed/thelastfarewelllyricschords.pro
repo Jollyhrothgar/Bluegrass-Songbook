@@ -1,6 +1,6 @@
 {meta: title The Last Farewell}
 {meta: artist Roy Drusky}
-{meta: writer Ronald Arthur Webster and Roger Whittaker}
+{meta: composer Ronald Arthur Webster and Roger Whittaker}
 
 {start_of_verse: Verse 1}
 [C]There's a ship lies rigged and [G7]ready in the [C]harbor

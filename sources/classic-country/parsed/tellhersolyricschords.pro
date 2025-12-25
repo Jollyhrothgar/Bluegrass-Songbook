@@ -1,6 +1,6 @@
 {meta: title Tell Her So}
 {meta: artist Wilburn Brothers}
-{meta: writer Glenn D. Tubb}
+{meta: composer Glenn D. Tubb}
 
 {start_of_verse: Verse 1}
 [C]If you  have a love that's [G7]true 

@@ -1,6 +1,6 @@
 {meta: title Another Song Another Drink}
 {meta: artist Ralph Stanley II}
-{meta: writer Joyce Morris}
+{meta: composer Joyce Morris}
 
 {start_of_verse: Verse 1}
 [C]Another song [G7]another [C]drink

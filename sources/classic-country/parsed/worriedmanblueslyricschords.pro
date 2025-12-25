@@ -1,6 +1,6 @@
 {meta: title Worried Man Blues}
 {meta: artist Mel Tillis}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]It takes a worried man to sing a worried song

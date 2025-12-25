@@ -1,6 +1,6 @@
 {meta: title King Of The Mountain}
 {meta: artist George Jones}
-{meta: writer Larry Boone and Paul Nelson}
+{meta: composer Larry Boone and Paul Nelson}
 
 {start_of_verse: Verse 1}
 [C]I gave her that diamond [G7]she dreamed [C]of

@@ -1,6 +1,6 @@
 {meta: title I Knew The Moment I Lost You}
 {meta: artist Bob Wills}
-{meta: writer Bob Wills and Tommy Duncan}
+{meta: composer Bob Wills and Tommy Duncan}
 
 {start_of_verse: Verse 1}
 [C]A man may have his trials and [F]tribulations 

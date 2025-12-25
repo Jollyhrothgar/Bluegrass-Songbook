@@ -1,6 +1,6 @@
 {meta: title Can I Count on You}
 {meta: artist McBride and the Ride}
-{meta: writer Bill Carter, Ruth Ellsworth, Terry McBride}
+{meta: composer Bill Carter, Ruth Ellsworth, Terry McBride}
 
 {start_of_verse: Verse 1}
 [C]YOU WERE THERE THE FIRST [F]TIME I [C]STUMBLED

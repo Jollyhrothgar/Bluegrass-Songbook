@@ -1,6 +1,6 @@
 {meta: title Bring Me Back My Heart}
 {meta: artist Wilburn Brothers}
-{meta: writer Richard D. Staedtler}
+{meta: composer Richard D. Staedtler}
 
 {start_of_verse: Verse 1}
 [C]Oh bring me back my heart so I can love again

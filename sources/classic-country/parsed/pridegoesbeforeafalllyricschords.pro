@@ -1,6 +1,6 @@
 {meta: title Pride Goes Before A Fall}
 {meta: artist Jim Reeves}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [G]Might as well admit it you [D7]don't really love [G]me

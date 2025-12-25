@@ -1,6 +1,6 @@
 {meta: title Melody Of Love}
 {meta: artist Connie Francis}
-{meta: writer Tom Glazer and Hans Engelmann}
+{meta: composer Tom Glazer and Hans Engelmann}
 
 {start_of_verse: Verse 1}
 [G]Hold me in your [E7]arms dear [A7]dream with me

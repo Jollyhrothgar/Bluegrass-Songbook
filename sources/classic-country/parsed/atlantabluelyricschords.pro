@@ -1,6 +1,6 @@
 {meta: title Atlanta Blue}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 Intro: 

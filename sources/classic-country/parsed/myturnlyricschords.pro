@@ -1,6 +1,6 @@
 {meta: title My Turn}
 {meta: artist Reba McEntire}
-{meta: writer Jay Huguely and Len Chiriacka}
+{meta: composer Jay Huguely and Len Chiriacka}
 
 {start_of_verse: Verse 1}
 [C]Turn out the light [F]turn yourself over to [C]me

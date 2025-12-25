@@ -1,6 +1,6 @@
 {meta: title Don't Walk Away From Me}
 {meta: artist Ferlin Husky}
-{meta: writer Johnny Otis}
+{meta: composer Johnny Otis}
 
 {start_of_verse: Verse 1}
 [G](Don't walk don't [Em]walk don't [C]walk away from [D7]me)

@@ -1,6 +1,6 @@
 {meta: title I'd Surrender All}
 {meta: artist Randy Travis}
-{meta: writer Randy Travis and Alan Jackson}
+{meta: composer Randy Travis and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]I wake up [G7]to the silence in a [C]room

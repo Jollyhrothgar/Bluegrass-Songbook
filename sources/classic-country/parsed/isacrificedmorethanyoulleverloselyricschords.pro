@@ -1,6 +1,6 @@
 {meta: title I Sacrificed More Than You'll Ever Lose}
 {meta: artist Reba McEntire}
-{meta: writer Beverly Carlton and James Benton}
+{meta: composer Beverly Carlton and James Benton}
 
 {start_of_verse: Verse 1}
 [C]I fed the children and I [F]kissed them good[C]night

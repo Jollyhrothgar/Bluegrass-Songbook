@@ -1,6 +1,6 @@
 {meta: title First Step}
 {meta: artist Tracy Byrd}
-{meta: writer Doug Crider and Verlon Thompson}
+{meta: composer Doug Crider and Verlon Thompson}
 
 {start_of_verse: Verse 1}
 [C]The [G7]lights were hot and the beer was not 

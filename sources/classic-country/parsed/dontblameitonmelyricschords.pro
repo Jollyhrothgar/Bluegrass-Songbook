@@ -1,6 +1,6 @@
 {meta: title Don't Blame It On Me}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino and Dave Bartholomew}
+{meta: composer Antonio Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [C]You said your arms are empty and your eyes full of tears

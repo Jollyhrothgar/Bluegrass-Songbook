@@ -1,6 +1,6 @@
 {meta: title Little Delta Church}
 {meta: artist Charley Pride}
-{meta: writer George Knight}
+{meta: composer George Knight}
 
 {start_of_verse: Verse 1}
 Intro: 

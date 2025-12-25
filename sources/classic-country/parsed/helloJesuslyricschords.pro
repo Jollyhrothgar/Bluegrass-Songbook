@@ -1,6 +1,6 @@
 {meta: title Hello Jesus}
 {meta: artist The Reno Brothers}
-{meta: writer Ronnie Reno}
+{meta: composer Ronnie Reno}
 
 {start_of_verse: Verse 1}
 [G]Hello Jesus I love Your Momma

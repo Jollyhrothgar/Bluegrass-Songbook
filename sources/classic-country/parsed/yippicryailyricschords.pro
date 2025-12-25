@@ -1,6 +1,6 @@
 {meta: title Yippi Cry Ai}
 {meta: artist Moe Bandy}
-{meta: writer Joe Allen and Buck Lindsey}
+{meta: composer Joe Allen and Buck Lindsey}
 
 {start_of_verse: Verse 1}
 [C]I'm a [G]cowboy who knows just how far you can [C]go

@@ -1,6 +1,6 @@
 {meta: title I Heard From A Memory Last Night}
 {meta: artist Jim Ed Brown}
-{meta: writer Ralph Freed and Jerry Livingston}
+{meta: composer Ralph Freed and Jerry Livingston}
 
 {start_of_verse: Verse 1}
 [G]I heard from a memory last night

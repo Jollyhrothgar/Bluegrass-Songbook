@@ -1,6 +1,6 @@
 {meta: title Don't Send Me No Angels}
 {meta: artist George Jones}
-{meta: writer Wayne Kemp}
+{meta: composer Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [C]When the storm clouds gather [F]and I'm losing my [C]way

@@ -1,6 +1,6 @@
 {meta: title 20 20 Vision}
 {meta: artist Ronnie Milsap}
-{meta: writer Geoff Morgan}
+{meta: composer Geoff Morgan}
 
 {start_of_verse: Verse 1}
 [C]My life was right in front of me [F]but now she's gone

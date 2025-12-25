@@ -1,6 +1,6 @@
 {meta: title An Hour And A Six Pack}
 {meta: artist Cal Smith}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]I just got home and found a [D7]note 

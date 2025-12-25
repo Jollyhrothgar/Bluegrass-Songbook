@@ -1,6 +1,6 @@
 {meta: title I'll Never Stop Loving You}
 {meta: artist Barbara Mandrell and Lee Greenwood}
-{meta: writer Steve Dean and Mack David}
+{meta: composer Steve Dean and Mack David}
 
 {start_of_verse: Verse 1}
 [G]Goodbye isn't [C]easy to [Am]say

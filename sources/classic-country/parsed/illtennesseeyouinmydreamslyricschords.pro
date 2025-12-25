@@ -1,6 +1,6 @@
 {meta: title I'll Tennessee You In My Dreams}
 {meta: artist Tanya Tucker}
-{meta: writer Don Schlitz and Paul Overstreet}
+{meta: composer Don Schlitz and Paul Overstreet}
 
 {start_of_verse: Verse 1}
 [C]Hours on the [F]telephone it's [G7]time to hang it [C]up

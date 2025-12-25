@@ -1,6 +1,6 @@
 {meta: title He Has Walked This Way Before}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Carole Smith}
+{meta: composer Sonny James and Carole Smith}
 
 {start_of_verse: Verse 1}
 [C]He has [F]walked this way [C][G7]before

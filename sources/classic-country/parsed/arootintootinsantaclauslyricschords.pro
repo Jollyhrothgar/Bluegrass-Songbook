@@ -1,6 +1,6 @@
 {meta: title A Rootin’ Tootin’ Santa Claus}
 {meta: artist Tennessee Ernie Ford}
-{meta: writer Oakley Haldeman and Peter Tinturin}
+{meta: composer Oakley Haldeman and Peter Tinturin}
 
 {start_of_verse: Verse 1}
 [G]He’s a rootin’ tootin’ Santa Claus

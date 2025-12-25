@@ -1,6 +1,6 @@
 {meta: title By The River Of The Roses}
 {meta: artist George Morgan}
-{meta: writer Joe Burke and Marty Symes}
+{meta: composer Joe Burke and Marty Symes}
 
 {start_of_verse: Verse 1}
 [C]I met her by the river [F]of the [C]roses

@@ -1,6 +1,6 @@
 {meta: title She's Always In Love}
 {meta: artist Ronnie Milsap}
-{meta: writer Mike Reid and Dan Williams}
+{meta: composer Mike Reid and Dan Williams}
 
 {start_of_verse: Verse 1}
 [C]She keeps regular hours with a different [F]man

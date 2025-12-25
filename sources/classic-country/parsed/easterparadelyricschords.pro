@@ -1,6 +1,6 @@
 {meta: title Easter Parade}
 {meta: artist Hank Snow}
-{meta: writer Irving Berlin}
+{meta: composer Irving Berlin}
 
 {start_of_verse: Verse 1}
 [C]In your Easter [G7]bonnet with [C]all the frills upon [F]it

@@ -1,6 +1,6 @@
 {meta: title It Makes You Happy}
 {meta: artist Lynn Anderson}
-{meta: writer Gene Hood}
+{meta: composer Gene Hood}
 
 {start_of_verse: Verse 1}
 [C]Somehow it seems you [F]always keep me [C]cryin'

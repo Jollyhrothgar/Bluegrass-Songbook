@@ -1,6 +1,6 @@
 {meta: title Very Special Love}
 {meta: artist Alabama}
-{meta: writer Randy Owen, Teddy Gentry, Jeff Cook}
+{meta: composer Randy Owen, Teddy Gentry, Jeff Cook}
 
 {start_of_verse: Verse 1}
 [C]She said I spent eight [F]years in Cali[C]fornia[F]

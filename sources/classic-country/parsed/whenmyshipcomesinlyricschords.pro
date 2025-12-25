@@ -1,6 +1,6 @@
 {meta: title When My Ship Comes In}
 {meta: artist Ferlin Husky}
-{meta: writer Phil Earhart and Harlan Sanders}
+{meta: composer Phil Earhart and Harlan Sanders}
 
 {start_of_verse: Verse 1}
 [C]I don't know why you stayed with me so long

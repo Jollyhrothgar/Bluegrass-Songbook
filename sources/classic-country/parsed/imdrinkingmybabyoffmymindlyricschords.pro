@@ -1,6 +1,6 @@
 {meta: title I'm Drinking My Baby Off My Mind}
 {meta: artist Eddie Rabbitt}
-{meta: writer Eddie Rabbitt and Even Stevens}
+{meta: composer Eddie Rabbitt and Even Stevens}
 
 {start_of_verse: Verse 1}
 [C]Hey bartender [G7]pop the top on another [C]can

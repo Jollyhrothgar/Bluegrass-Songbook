@@ -1,6 +1,6 @@
 {meta: title Don't Go Away Senor}
 {meta: artist Marty Robbins}
-{meta: writer Jimmy Sweeney}
+{meta: composer Jimmy Sweeney}
 
 {start_of_verse: Verse 1}
 [C]In my wandering days [F]I wandered south of the [C]border

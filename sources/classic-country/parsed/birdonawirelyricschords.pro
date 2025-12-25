@@ -1,6 +1,6 @@
 {meta: title Bird On A Wire}
 {meta: artist Johnny Cash}
-{meta: writer Leonard Cohen}
+{meta: composer Leonard Cohen}
 
 {start_of_verse: Verse 1}
 [C]Like a bird  [G7]on a wire  [C]like a drunk in a midnight [F]choir 

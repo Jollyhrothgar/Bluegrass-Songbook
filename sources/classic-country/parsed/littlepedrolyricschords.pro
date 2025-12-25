@@ -1,6 +1,6 @@
 {meta: title Little Pedro}
 {meta: artist David Houston}
-{meta: writer Cecil Null}
+{meta: composer Cecil Null}
 
 {start_of_verse: Verse 1}
 [C]I was standing on the other side of [G7]Texas

@@ -1,6 +1,6 @@
 {meta: title I Can't Help Wondering}
 {meta: artist Kitty Wells}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]I can't help wondering [G]who's [D7]holding you [G]tight

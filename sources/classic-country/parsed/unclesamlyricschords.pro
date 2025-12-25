@@ -1,6 +1,6 @@
 {meta: title Uncle Sam}
 {meta: artist Bob Luman}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]I've been mighty lucky 

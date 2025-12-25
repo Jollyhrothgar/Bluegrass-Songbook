@@ -1,6 +1,6 @@
 {meta: title It Doesn't Hurt To Ask}
 {meta: artist Jean Shepard}
-{meta: writer Jerry Galen Foster and Wilburn S. Rice}
+{meta: composer Jerry Galen Foster and Wilburn S. Rice}
 
 {start_of_verse: Verse 1}
 [C]I wonder if he’s better [G7]off without [C]me

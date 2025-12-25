@@ -1,6 +1,6 @@
 {meta: title The Greatest Friend Of All}
 {meta: artist Melba Montgomery}
-{meta: writer Melba Montgomery and Earl Montgomery}
+{meta: composer Melba Montgomery and Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [G7]Last [C]night I tried to [F]take my life [C]from me

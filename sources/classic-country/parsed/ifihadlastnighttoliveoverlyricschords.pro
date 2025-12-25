@@ -1,6 +1,6 @@
 {meta: title If I Had Last Night To Live Over}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Max Powell}
+{meta: composer Webb Pierce and Max Powell}
 
 {start_of_verse: Verse 1}
 [C]If I had last [C7]night to live [F]over

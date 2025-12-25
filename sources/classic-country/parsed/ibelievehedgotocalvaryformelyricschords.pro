@@ -1,6 +1,6 @@
 {meta: title I Believe He'd Go To Calvary For Me}
 {meta: artist Jimmie Davis}
-{meta: writer David Ingles}
+{meta: composer David Ingles}
 
 {start_of_verse: Verse 1}
 [G]Try if you [D7]can to [G]imagine

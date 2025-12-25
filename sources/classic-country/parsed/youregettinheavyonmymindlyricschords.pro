@@ -1,6 +1,6 @@
 {meta: title You're Gettin' Heavy On My Mind}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]You're gettin' heavy on my [C]mind

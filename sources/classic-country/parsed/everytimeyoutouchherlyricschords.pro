@@ -1,6 +1,6 @@
 {meta: title Every Time You Touch Her}
 {meta: artist Reba McEntire}
-{meta: writer Mary Ann Kennedy, Pat Bunch, Pam Rose}
+{meta: composer Mary Ann Kennedy, Pat Bunch, Pam Rose}
 
 {start_of_verse: Verse 1}
 [C]Do you hold her all night long do you sing her our love song

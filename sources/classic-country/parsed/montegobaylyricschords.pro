@@ -1,6 +1,6 @@
 {meta: title Montego Bay}
 {meta: artist Jack Greene}
-{meta: writer Hank Cochran &amp; Glenn Martin}
+{meta: composer Hank Cochran &amp; Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]I showed her most of Tennessee that's [F]all I could afford

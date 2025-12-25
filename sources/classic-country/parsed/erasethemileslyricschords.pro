@@ -1,6 +1,6 @@
 {meta: title Erase the Miles}
 {meta: artist Russell Moore and IIIrd Tyme Out}
-{meta: writer Carl E. Jackson}
+{meta: composer Carl E. Jackson}
 
 {start_of_verse: Verse 1}
 [C]Do you miss me in Caro[F]lina

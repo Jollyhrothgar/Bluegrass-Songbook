@@ -1,6 +1,6 @@
 {meta: title Sal's Got A Sugar Lip}
 {meta: artist Johnny Horton}
-{meta: writer Jimmie Driftwood}
+{meta: composer Jimmie Driftwood}
 
 {start_of_verse: Verse 1}
 [C]Lasses in the cane and [F]syrup in the corn

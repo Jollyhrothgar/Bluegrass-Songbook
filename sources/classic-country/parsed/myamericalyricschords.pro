@@ -1,6 +1,6 @@
 {meta: title My America}
 {meta: artist Red Steagall}
-{meta: writer Danny Steagall and Red Steagall}
+{meta: composer Danny Steagall and Red Steagall}
 
 {start_of_verse: Verse 1}
 [C]She lies asleep in the snow capped peaks [C7]of the Tetons and Yellow[F]stone

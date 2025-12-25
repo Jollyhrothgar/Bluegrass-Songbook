@@ -1,6 +1,6 @@
 {meta: title I'm Wearing My Heart Away For You}
 {meta: artist George Jones}
-{meta: writer Darrell Edwards and George Jones}
+{meta: composer Darrell Edwards and George Jones}
 
 {start_of_verse: Verse 1}
 [D7]I'm wearing my heart away for [G]you

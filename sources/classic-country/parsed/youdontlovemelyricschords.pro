@@ -1,6 +1,6 @@
 {meta: title You Don't Love Me}
 {meta: artist Kitty Wells}
-{meta: writer Glenn D. Tubb and Bob Gallion}
+{meta: composer Glenn D. Tubb and Bob Gallion}
 
 {start_of_verse: Verse 1}
 [G]You've always had your way with [C]me

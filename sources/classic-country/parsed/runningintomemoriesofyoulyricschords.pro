@@ -1,6 +1,6 @@
 {meta: title Running Into Memories Of You}
 {meta: artist Lefty Frizzell}
-{meta: writer Mel Tillis, Wayne P. Walker, Benny Joy}
+{meta: composer Mel Tillis, Wayne P. Walker, Benny Joy}
 
 {start_of_verse: Verse 1}
 [G7]Funny I keep [F]runnin' [G7]funny I keep [F]runnin'

@@ -1,6 +1,6 @@
 {meta: title In My Own Backyard}
 {meta: artist Joe Diffie}
-{meta: writer Kerry Phillips, Andy Spooner, Joe Diffie}
+{meta: composer Kerry Phillips, Andy Spooner, Joe Diffie}
 
 {start_of_verse: Verse 1}
 [C]I thought that life was runnin' off [F]leavin' me [C]behind

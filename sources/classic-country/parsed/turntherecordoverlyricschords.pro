@@ -1,6 +1,6 @@
 {meta: title Turn The Record Over}
 {meta: artist Vernon Oxford}
-{meta: writer Everett Corbin}
+{meta: composer Everett Corbin}
 
 {start_of_verse: Verse 1}
 [F]Turn the record over let me [C]hear the other side

@@ -1,6 +1,6 @@
 {meta: title Come Live With Me}
 {meta: artist Roy Clark}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [G]Come live with me and be my love share my bread and [C]wine

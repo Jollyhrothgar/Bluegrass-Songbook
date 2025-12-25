@@ -1,6 +1,6 @@
 {meta: title Bring It On Back To Me}
 {meta: artist Jan Howard}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G7]Bring it on back bring it on back 

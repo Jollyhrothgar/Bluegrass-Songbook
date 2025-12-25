@@ -1,6 +1,6 @@
 {meta: title While You Sleep}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [C]I don't say I [E7]love you quite [Am]enough I know[C]

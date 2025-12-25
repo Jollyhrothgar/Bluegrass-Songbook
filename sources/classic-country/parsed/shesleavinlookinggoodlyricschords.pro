@@ -1,6 +1,6 @@
 {meta: title She's Leavin' Looking Good}
 {meta: artist Gene Watson}
-{meta: writer Louis J. Anderson}
+{meta: composer Louis J. Anderson}
 
 {start_of_verse: Verse 1}
 [G]As her soft hand signs the papers

@@ -1,6 +1,6 @@
 {meta: title The Devil Ain’t Lazy}
 {meta: artist Bob Wills}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]The devil ain’t lazy  (no [F]sirree)

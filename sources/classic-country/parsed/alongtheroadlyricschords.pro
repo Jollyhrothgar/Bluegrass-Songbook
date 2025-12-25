@@ -1,6 +1,6 @@
 {meta: title Along the Road}
 {meta: artist Doc Watson}
-{meta: writer Dan Fogelberg}
+{meta: composer Dan Fogelberg}
 
 {start_of_verse: Verse 1}
 [C]Joy at the [Am]start [Dm]fear in the journey

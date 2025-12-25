@@ -1,6 +1,6 @@
 {meta: title The First Hello The Last Goodbye}
 {meta: artist Roger Whittaker}
-{meta: writer Cardew Robison and Roger Whittaker}
+{meta: composer Cardew Robison and Roger Whittaker}
 
 {start_of_verse: Verse 1}
 [C]They say when you gain a lover you [F]begin to lose a [D7]friend

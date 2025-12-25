@@ -1,6 +1,6 @@
 {meta: title Everyday}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Dave Loggins and J.D. Martin}
+{meta: composer Dave Loggins and J.D. Martin}
 
 {start_of_verse: Verse 1}
 [C]You know a smile never goes out of [F]style

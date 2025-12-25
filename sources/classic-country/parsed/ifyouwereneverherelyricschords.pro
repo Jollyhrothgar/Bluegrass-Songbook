@@ -1,6 +1,6 @@
 {meta: title If You Were Never Here}
 {meta: artist David Houston}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G7]I burned the [C]pictures I hocked the rings

@@ -1,6 +1,6 @@
 {meta: title Useless}
 {meta: artist Ferlin Husky}
-{meta: writer Bill Carlisle}
+{meta: composer Bill Carlisle}
 
 {start_of_verse: Verse 1}
 [G]Useless to worry [C]useless to [G]care

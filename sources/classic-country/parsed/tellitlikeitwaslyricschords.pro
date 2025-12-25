@@ -1,6 +1,6 @@
 {meta: title Tell It Like It Was}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]I come home every night and she [G7]meets me with a [C]great big kiss

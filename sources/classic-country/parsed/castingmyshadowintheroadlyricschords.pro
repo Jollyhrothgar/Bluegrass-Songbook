@@ -1,6 +1,6 @@
 {meta: title Casting My Shadow In The Road}
 {meta: artist Ricky Skaggs}
-{meta: writer Jimmy Rushing and Randy Scruggs}
+{meta: composer Jimmy Rushing and Randy Scruggs}
 
 {start_of_verse: Verse 1}
 [C]There was a warm wind [G7]weaving [C]through the trees

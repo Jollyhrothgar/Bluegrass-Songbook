@@ -1,6 +1,6 @@
 {meta: title Even Now}
 {meta: artist Conway Twitty}
-{meta: writer Glenn Warren and Worley Max McKinney}
+{meta: composer Glenn Warren and Worley Max McKinney}
 
 {start_of_verse: Verse 1}
 [C]Even now  your memory takes my breath [F]away

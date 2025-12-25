@@ -1,6 +1,6 @@
 {meta: title Sometime Sunshine}
 {meta: artist Jim Ed Brown}
-{meta: writer Jim Coleman and Johnny Wilson}
+{meta: composer Jim Coleman and Johnny Wilson}
 
 {start_of_verse: Verse 1}
 [C]She opens [F]my door and crosses [C]the floor

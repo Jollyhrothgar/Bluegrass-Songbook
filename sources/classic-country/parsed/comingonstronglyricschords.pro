@@ -1,6 +1,6 @@
 {meta: title Coming On Strong}
 {meta: artist Brenda Lee}
-{meta: writer David Wilkins}
+{meta: composer David Wilkins}
 
 {start_of_verse: Verse 1}
 [F]Coming on [C]strong coming on [Am]strong

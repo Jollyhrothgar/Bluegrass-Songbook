@@ -1,6 +1,6 @@
 {meta: title Reflex Reaction}
 {meta: artist Red Sovine}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [C]If you'll just keep busy you won't wonder if he

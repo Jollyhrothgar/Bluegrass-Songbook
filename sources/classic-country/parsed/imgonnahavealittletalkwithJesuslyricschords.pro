@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Have A Little Talk With Jesus}
 {meta: artist Randy Travis}
-{meta: writer Alan Donald Schlitz and Randy Bruce Traywick}
+{meta: composer Alan Donald Schlitz and Randy Bruce Traywick}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna have a little talk with Jesus when [F]I get home to[C]night

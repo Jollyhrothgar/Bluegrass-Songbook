@@ -1,6 +1,6 @@
 {meta: title I Make It Hard To Lose}
 {meta: artist John Anderson}
-{meta: writer Mark Geronimo}
+{meta: composer Mark Geronimo}
 
 {start_of_verse: Verse 1}
 [C]I got my rockin' [F]down [G7]got my headaches [F]too

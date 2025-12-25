@@ -1,6 +1,6 @@
 {meta: title A Big Hunk O' Love}
 {meta: artist Elvis Presley}
-{meta: writer Aaron Schroeder and Sid Wayne}
+{meta: composer Aaron Schroeder and Sid Wayne}
 
 {start_of_verse: Verse 1}
 [G]Hey baby I ain't asking much of you

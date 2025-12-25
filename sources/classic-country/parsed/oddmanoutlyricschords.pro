@@ -1,6 +1,6 @@
 {meta: title Odd Man Out}
 {meta: artist Carl Belew}
-{meta: writer Carl Belew and W.S. Stevenson}
+{meta: composer Carl Belew and W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [G7](Odd man [C]out odd man out)

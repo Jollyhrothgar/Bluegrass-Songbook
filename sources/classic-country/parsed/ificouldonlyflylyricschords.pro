@@ -1,6 +1,6 @@
 {meta: title If I Could Only Fly}
 {meta: artist Merle Haggard}
-{meta: writer Michael David Fuller}
+{meta: composer Michael David Fuller}
 
 {start_of_verse: Verse 1}
 [C]Almost felt you touching [F]me just now

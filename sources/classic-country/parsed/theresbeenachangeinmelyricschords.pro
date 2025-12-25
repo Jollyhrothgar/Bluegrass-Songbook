@@ -1,6 +1,6 @@
 {meta: title There's Been A Change In Me}
 {meta: artist Eddy Arnold}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [G]When I was very young my mother often [G7]said

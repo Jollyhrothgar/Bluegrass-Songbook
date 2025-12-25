@@ -1,6 +1,6 @@
 {meta: title Second Thoughts Lyrics with Chords}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [G]It was in the high school yearbook [C]dated May of [G]'55

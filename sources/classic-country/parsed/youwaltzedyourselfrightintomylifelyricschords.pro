@@ -1,6 +1,6 @@
 {meta: title You Waltzed Yourself Right Into My Life}
 {meta: artist Gene Watson}
-{meta: writer Ron Moore}
+{meta: composer Ron Moore}
 
 {start_of_verse: Verse 1}
 [C]The first time I touched you as we danced [F]together

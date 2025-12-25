@@ -1,6 +1,6 @@
 {meta: title She Don't Love Me All The Time}
 {meta: artist Johnny Paycheck}
-{meta: writer Tommy Dodson and Glen Perkins}
+{meta: composer Tommy Dodson and Glen Perkins}
 
 {start_of_verse: Verse 1}
 [C]She stands at the [G7]kitchen sink 

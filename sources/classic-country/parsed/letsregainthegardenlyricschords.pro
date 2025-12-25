@@ -1,6 +1,6 @@
 {meta: title Let's Regain The Garden}
 {meta: artist Kitty Wells}
-{meta: writer Herman Phillips}
+{meta: composer Herman Phillips}
 
 {start_of_verse: Verse 1}
 [C]Let's regain the garden the [F]beautiful [C]garden

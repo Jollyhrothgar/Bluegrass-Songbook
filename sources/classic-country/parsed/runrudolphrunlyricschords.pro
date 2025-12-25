@@ -1,6 +1,6 @@
 {meta: title Run Rudolph Run}
 {meta: artist Chuck Berry}
-{meta: writer Johnny Marks and Marvin Brodie}
+{meta: composer Johnny Marks and Marvin Brodie}
 
 {start_of_verse: Verse 1}
 [F]Out of all the reindeer you know you're the [C]mastermind

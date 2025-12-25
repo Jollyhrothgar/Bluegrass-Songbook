@@ -1,6 +1,6 @@
 {meta: title Pink Flamingos}
 {meta: artist Tracy Byrd}
-{meta: writer Wood Newton and Micki Furhman}
+{meta: composer Wood Newton and Micki Furhman}
 
 {start_of_verse: Verse 1}
 [G]I was a rebel in my younger years

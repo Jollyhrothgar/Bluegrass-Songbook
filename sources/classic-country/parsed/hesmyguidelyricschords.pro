@@ -1,6 +1,6 @@
 {meta: title He’s My Guide}
 {meta: artist Doyle Lawson}
-{meta: writer George Shuffler}
+{meta: composer George Shuffler}
 
 {start_of_verse: Verse 1}
 [G]When I'm down and so in [C]strife 

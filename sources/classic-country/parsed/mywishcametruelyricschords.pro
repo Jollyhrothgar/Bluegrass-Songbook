@@ -1,6 +1,6 @@
 {meta: title My Wish Came True}
 {meta: artist Elvis Presley}
-{meta: writer Ivory Joe Hunter}
+{meta: composer Ivory Joe Hunter}
 
 {start_of_verse: Verse 1}
 [C]My wish came true

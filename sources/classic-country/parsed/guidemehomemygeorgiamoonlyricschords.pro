@@ -1,6 +1,6 @@
 {meta: title Guide Me Home My Georgia Moon}
 {meta: artist Mel Tillis}
-{meta: writer Joe Babcock}
+{meta: composer Joe Babcock}
 
 {start_of_verse: Verse 1}
 [G]Guide me [D7]home my Georgia [G]moon

@@ -1,6 +1,6 @@
 {meta: title He Gives Us All His Love}
 {meta: artist Wanda Jackson}
-{meta: writer Randy Newman}
+{meta: composer Randy Newman}
 
 {start_of_verse: Verse 1}
 [C]He gives us [G]all His love 

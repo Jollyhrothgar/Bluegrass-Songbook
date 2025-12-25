@@ -1,6 +1,6 @@
 {meta: title How To Make A Man Lonesome}
 {meta: artist Clay Walker}
-{meta: writer Kim Williams and Randy Boudreaux}
+{meta: composer Kim Williams and Randy Boudreaux}
 
 {start_of_verse: Verse 1}
 [G]Three [Am]weeks in Phoenix with [Bm]one night to go

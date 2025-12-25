@@ -1,6 +1,6 @@
 {meta: title Before The Hammers Could Ring}
 {meta: artist Gene Watson}
-{meta: writer Bobbie Bost}
+{meta: composer Bobbie Bost}
 
 {start_of_verse: Verse 1}
 [F]Before the hammers could ring His [C]Blood touched the [G7]cross for [F]me

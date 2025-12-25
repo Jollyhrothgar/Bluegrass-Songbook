@@ -1,6 +1,6 @@
 {meta: title I Overlooked An Orchid}
 {meta: artist Carl Smith}
-{meta: writer Carl Story, Shirl Lyn, Carl Smith}
+{meta: composer Carl Story, Shirl Lyn, Carl Smith}
 
 {start_of_verse: Verse 1}
 [C]The orchid is a flower that [F]blooms so tende[C]rly

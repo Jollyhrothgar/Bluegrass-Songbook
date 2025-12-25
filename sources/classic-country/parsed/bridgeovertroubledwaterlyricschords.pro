@@ -1,6 +1,6 @@
 {meta: title Bridge Over Troubled Water}
 {meta: artist Buck Owens}
-{meta: writer Paul Simon}
+{meta: composer Paul Simon}
 
 {start_of_verse: Verse 1}
 [G7]When you're [C]weary  [F]feeling [C]small 

@@ -1,6 +1,6 @@
 {meta: title Angel With A Broken Wing}
 {meta: artist Mel Street}
-{meta: writer Dick Heard and Jimmy Hinson}
+{meta: composer Dick Heard and Jimmy Hinson}
 
 {start_of_verse: Verse 1}
 [G]See the [D7]angel in the [G]corner 

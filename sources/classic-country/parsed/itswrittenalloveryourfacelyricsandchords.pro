@@ -1,6 +1,6 @@
 {meta: title It's Written All Over Your Face}
 {meta: artist Hank Williams Jr.}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]You came in with the sun this mornin' 

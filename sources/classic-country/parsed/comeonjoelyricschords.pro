@@ -1,6 +1,6 @@
 {meta: title Come On Joe}
 {meta: artist George Strait}
-{meta: writer Tony Romeo}
+{meta: composer Tony Romeo}
 
 {start_of_verse: Verse 1}
 [C]Well it's a long hot night

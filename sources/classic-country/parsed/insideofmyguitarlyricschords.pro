@@ -1,6 +1,6 @@
 {meta: title Inside of my Guitar}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy and Jim Stafford}
+{meta: composer David Bellamy and Jim Stafford}
 
 {start_of_verse: Verse 1}
 Inside of my Guitar

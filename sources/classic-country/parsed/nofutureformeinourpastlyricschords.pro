@@ -1,6 +1,6 @@
 {meta: title No Future For Me In Our Past}
 {meta: artist George Jones}
-{meta: writer Leigh Dillard and Glenn Martin}
+{meta: composer Leigh Dillard and Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]Word is around he walked out on [F]you 

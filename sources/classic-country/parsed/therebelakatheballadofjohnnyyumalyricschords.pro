@@ -1,6 +1,6 @@
 {meta: title The Rebel (Aka The Ballad Of Johnny Yuma)}
 {meta: artist Johnny Cash}
-{meta: writer Richard Markowitz and Andrew Fenady}
+{meta: composer Richard Markowitz and Andrew Fenady}
 
 {start_of_verse: Verse 1}
 Intro:

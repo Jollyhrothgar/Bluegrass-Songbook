@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Listen To Me}
 {meta: artist Gene Pitney}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]When I loved you I was foolish and I knew [C]it

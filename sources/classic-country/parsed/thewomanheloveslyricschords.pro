@@ -1,6 +1,6 @@
 {meta: title The Woman He Loves}
 {meta: artist Alabama}
-{meta: writer Troy Seals and Eddie Setser}
+{meta: composer Troy Seals and Eddie Setser}
 
 {start_of_verse: Verse 1}
 [C]You can tell a lot about a man by the woman he [F]loves

@@ -1,6 +1,6 @@
 {meta: title Dark And Stormy Weather}
 {meta: artist The Price Sisters}
-{meta: writer Alvin Pleasant Carter}
+{meta: composer Alvin Pleasant Carter}
 
 {start_of_verse: Verse 1}
 [G]We met loved and parted

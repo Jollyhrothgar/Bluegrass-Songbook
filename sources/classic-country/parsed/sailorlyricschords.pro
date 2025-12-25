@@ -1,6 +1,6 @@
 {meta: title Sailor (Your Home Is The Sea)}
 {meta: artist Bobby Helms}
-{meta: writer David Kapp and Toni Martl}
+{meta: composer David Kapp and Toni Martl}
 
 {start_of_verse: Verse 1}
 [C]Sailor stop your [F]wandering 

@@ -1,6 +1,6 @@
 {meta: title Fort Worth Texas}
 {meta: artist Ray Price}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]They sing songs [Em]about Chicago [Am]all the time[C]

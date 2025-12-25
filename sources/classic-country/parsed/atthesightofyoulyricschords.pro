@@ -1,6 +1,6 @@
 {meta: title At The Sight Of You}
 {meta: artist Cal Smith}
-{meta: writer Bozo Darnell and Dave Pittman}
+{meta: composer Bozo Darnell and Dave Pittman}
 
 {start_of_verse: Verse 1}
 [G]I go [C]all to pieces [D7]at the sight of [G]you

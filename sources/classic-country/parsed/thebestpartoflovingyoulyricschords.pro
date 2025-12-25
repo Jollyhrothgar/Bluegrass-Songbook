@@ -1,6 +1,6 @@
 {meta: title The Best Part Of Loving You}
 {meta: artist Hank Locklin}
-{meta: writer Ann Price}
+{meta: composer Ann Price}
 
 {start_of_verse: Verse 1}
 [G]The [C]best part of loving you is [G]over and done

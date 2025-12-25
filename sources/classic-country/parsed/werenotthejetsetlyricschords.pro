@@ -1,6 +1,6 @@
 {meta: title We’re Not The Jet Set}
 {meta: artist George Jones and Tammy Wynette}
-{meta: writer Bobby Bradock}
+{meta: composer Bobby Bradock}
 
 {start_of_verse: Verse 1}
 [C]By a fountain back in Rome I fell in[Am] love with [G7]you

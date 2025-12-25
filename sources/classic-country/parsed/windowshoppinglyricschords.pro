@@ -1,6 +1,6 @@
 {meta: title Window Shopping}
 {meta: artist Hank Williams}
-{meta: writer Marcel Joseph}
+{meta: composer Marcel Joseph}
 
 {start_of_verse: Verse 1}
 [C]You're window shopping

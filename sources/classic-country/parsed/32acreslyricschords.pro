@@ -1,6 +1,6 @@
 {meta: title 32 Acres}
 {meta: artist The Bluegrass Cardinals}
-{meta: writer Randall Hylton}
+{meta: composer Randall Hylton}
 
 {start_of_verse: Verse 1}
 [C]I sawed the timber for the cabin floor

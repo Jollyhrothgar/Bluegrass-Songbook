@@ -1,6 +1,6 @@
 {meta: title Once Before I Die}
 {meta: artist Mickey Gilley}
-{meta: writer Bobby Borchers and Mack Vickery}
+{meta: composer Bobby Borchers and Mack Vickery}
 
 {start_of_verse: Verse 1}
 [C]Once before I die  [G7]I wanna see a honky tonk angel [C]fly

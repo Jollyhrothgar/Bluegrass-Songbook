@@ -1,6 +1,6 @@
 {meta: title I Saw The Time}
 {meta: artist Alabama}
-{meta: writer Randy Owen}
+{meta: composer Randy Owen}
 
 {start_of_verse: Verse 1}
 [C]I saw the time when every baby that was born

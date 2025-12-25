@@ -1,6 +1,6 @@
 {meta: title Back To Back}
 {meta: artist Jeanne Pruett}
-{meta: writer Jerry McBee and Jeanne Pruett}
+{meta: composer Jerry McBee and Jeanne Pruett}
 
 {start_of_verse: Verse 1}
 [C]We should be happy [F]just the way we [C]are

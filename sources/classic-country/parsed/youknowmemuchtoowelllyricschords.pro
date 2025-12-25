@@ -1,6 +1,6 @@
 {meta: title You Know Me Much Too Well}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]When I see you and you don't speak 

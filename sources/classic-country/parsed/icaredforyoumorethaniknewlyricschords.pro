@@ -1,6 +1,6 @@
 {meta: title I Cared For You More Than I Knew}
 {meta: artist Ernest Tubb}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]You say it’s better if we drift [G7]apart

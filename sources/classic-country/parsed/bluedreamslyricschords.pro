@@ -1,6 +1,6 @@
 {meta: title Blue Dreams}
 {meta: artist Hank Snow}
-{meta: writer Cliff Carlisle}
+{meta: composer Cliff Carlisle}
 
 {start_of_verse: Verse 1}
 [C]When the moonbeams are shining and for love I am [F]pining

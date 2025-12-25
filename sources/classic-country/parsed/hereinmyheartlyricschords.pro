@@ -1,6 +1,6 @@
 {meta: title Here In My Heart}
 {meta: artist Randy Travis}
-{meta: writer David Jones}
+{meta: composer David Jones}
 
 {start_of_verse: Verse 1}
 [G7]If [C]I'd have been all [A7]you ever [D7]wanted

@@ -1,6 +1,6 @@
 {meta: title Another (Just Like Me)}
 {meta: artist Jean Shepard}
-{meta: writer Vic McAlpin and Roy Drusky}
+{meta: composer Vic McAlpin and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [G]You didn't love me long [C]until the thrill was gone

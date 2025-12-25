@@ -1,6 +1,6 @@
 {meta: title Easy Rocking Chair}
 {meta: artist Eddy Arnold}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]Rock away my troubles rock away my [F]cares

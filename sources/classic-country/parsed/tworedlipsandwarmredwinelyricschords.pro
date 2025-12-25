@@ -1,6 +1,6 @@
 {meta: title Two Red Lips And Warm Red Wine}
 {meta: artist Johnny Horton}
-{meta: writer Thomas E. Bearden}
+{meta: composer Thomas E. Bearden}
 
 {start_of_verse: Verse 1}
 [G]Oh the two red lips and the warm red wine

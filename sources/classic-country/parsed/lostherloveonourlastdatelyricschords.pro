@@ -1,6 +1,6 @@
 {meta: title Lost Her Love On Our Last Date}
 {meta: artist Conway Twitty}
-{meta: writer Conway Twitty and Floyd Cramer}
+{meta: composer Conway Twitty and Floyd Cramer}
 
 {start_of_verse: Verse 1}
 [C]It's over our [F]love affair too late [C]now I find I [F]care

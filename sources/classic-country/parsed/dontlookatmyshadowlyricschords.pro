@@ -1,6 +1,6 @@
 {meta: title Don't Look At My Shadow}
 {meta: artist Manassa}
-{meta: writer Stephen Stills}
+{meta: composer Stephen Stills}
 
 {start_of_verse: Verse 1}
 [G]New York City years ago [A7]tourist in the rain

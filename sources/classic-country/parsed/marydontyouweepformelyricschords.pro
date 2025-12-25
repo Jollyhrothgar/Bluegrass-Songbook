@@ -1,6 +1,6 @@
 {meta: title Mary Don't You Weep For Me}
 {meta: artist Stonewall Jackson}
-{meta: writer Mel Tillis and Marijohn Wilkin}
+{meta: composer Mel Tillis and Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [C]Oh Mary don't you weep for [G7]me 

@@ -1,6 +1,6 @@
 {meta: title I Can’t Go On}
 {meta: artist Fats Domino}
-{meta: writer Antoine Domino and Dave Bartholomew}
+{meta: composer Antoine Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [G]Rosalie come back to me

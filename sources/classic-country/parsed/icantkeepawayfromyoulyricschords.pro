@@ -1,6 +1,6 @@
 {meta: title I Can't Keep Away From You}
 {meta: artist Wilburn Brothers}
-{meta: writer Darrell Statler}
+{meta: composer Darrell Statler}
 
 {start_of_verse: Verse 1}
 [C]By your side each [F]minute's where I [C]wanna be

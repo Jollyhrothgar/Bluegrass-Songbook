@@ -1,6 +1,6 @@
 {meta: title South Of The Border}
 {meta: artist Patsy Cline}
-{meta: writer Michael Carr and Jimmy Kennedy}
+{meta: composer Michael Carr and Jimmy Kennedy}
 
 {start_of_verse: Verse 1}
 [G]Ay ay ay [D7]ay  ay ay ay [G]ay

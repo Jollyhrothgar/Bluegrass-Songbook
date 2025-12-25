@@ -1,6 +1,6 @@
 {meta: title Sweethearts Or Strangers}
 {meta: artist Faron Young}
-{meta: writer Jimmie Davis and Lou Wayne}
+{meta: composer Jimmie Davis and Lou Wayne}
 
 {start_of_verse: Verse 1}
 [C]Sweethearts or strangers [F]it makes no difference now 

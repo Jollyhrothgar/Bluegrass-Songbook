@@ -1,6 +1,6 @@
 {meta: title You'll Always Be In My Heart}
 {meta: artist Maxine, Bonnie and Jim Ed Brown}
-{meta: writer Billy Barton and Fabor Robinson}
+{meta: composer Billy Barton and Fabor Robinson}
 
 {start_of_verse: Verse 1}
 [G]Always [C]always [G]you'll always be in my [D7]heart

@@ -1,6 +1,6 @@
 {meta: title Dark As The Night Blue As The Day}
 {meta: artist Michael Cleveland, Dan Tymiski, Vince Gill}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [C]Dark as the night and blue as the day

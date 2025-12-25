@@ -1,6 +1,6 @@
 {meta: title I've Just Told Mama Goodbye}
 {meta: artist Hank Williams}
-{meta: writer Curley Kinsey and Slim Sweet}
+{meta: composer Curley Kinsey and Slim Sweet}
 
 {start_of_verse: Verse 1}
 [C]Each year on [G7]mother's [C]day

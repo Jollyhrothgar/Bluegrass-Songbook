@@ -1,6 +1,6 @@
 {meta: title And Then You Came Along}
 {meta: artist Gene Watson}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]I have spent a tender night or [C]two

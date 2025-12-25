@@ -1,6 +1,6 @@
 {meta: title First Fool In Line}
 {meta: artist Don Williams}
-{meta: writer Byron Hill and Tammi Kidd}
+{meta: composer Byron Hill and Tammi Kidd}
 
 {start_of_verse: Verse 1}
 [C]I know I shouldn't love you from the way we said good[Am]bye

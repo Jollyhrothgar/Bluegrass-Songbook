@@ -1,6 +1,6 @@
 {meta: title That Beautiful Picture}
 {meta: artist The Bailes Brothers}
-{meta: writer Roy Acuff}
+{meta: composer Roy Acuff}
 
 {start_of_verse: Verse 1}
 [C]Last night by the fireside dreaming

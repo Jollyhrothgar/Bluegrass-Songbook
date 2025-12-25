@@ -1,6 +1,6 @@
 {meta: title Flat Top Gibson Guitar}
 {meta: artist Lloyd Snow}
-{meta: writer Pat Maher}
+{meta: composer Pat Maher}
 
 {start_of_verse: Verse 1}
 [G]The first day I saw him I'll never [D7]forget

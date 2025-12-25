@@ -1,6 +1,6 @@
 {meta: title Somewhere My Love}
 {meta: artist Kenny Rogers}
-{meta: writer Paul Webster and Maurice Jarre}
+{meta: composer Paul Webster and Maurice Jarre}
 
 {start_of_verse: Verse 1}
 [G]Somewhere my love there will be songs to [D7]sing

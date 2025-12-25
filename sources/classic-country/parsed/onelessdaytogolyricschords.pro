@@ -1,6 +1,6 @@
 {meta: title One Less Day To Go}
 {meta: artist The Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [C]I’ve enjoyed being here with you 

@@ -1,6 +1,6 @@
 {meta: title One Bright Star}
 {meta: artist Vince Gill}
-{meta: writer John Jarvis}
+{meta: composer John Jarvis}
 
 {start_of_verse: Verse 1}
 [G]Long long ago in a [Em]world [C]dark and [G]cold

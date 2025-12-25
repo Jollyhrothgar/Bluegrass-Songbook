@@ -1,6 +1,6 @@
 {meta: title What Does A Poor Girl Do}
 {meta: artist Norma Jean}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]I've stood at wedding and [C]watched the [G]best man smile

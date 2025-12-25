@@ -1,6 +1,6 @@
 {meta: title From Strangers To Lovers To Friends}
 {meta: artist George Jones}
-{meta: writer Hillman Hall and Glenn Ray}
+{meta: composer Hillman Hall and Glenn Ray}
 
 {start_of_verse: Verse 1}
 [C]I'm really glad [G7]that you called [C]me

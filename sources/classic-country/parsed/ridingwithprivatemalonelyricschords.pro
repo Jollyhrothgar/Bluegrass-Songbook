@@ -1,6 +1,6 @@
 {meta: title Riding With Private Malone}
 {meta: artist David Ball}
-{meta: writer Wood Newton and Thom Shepherd}
+{meta: composer Wood Newton and Thom Shepherd}
 
 {start_of_verse: Verse 1}
 [C]I was just out of the service thumbing through the classifieds

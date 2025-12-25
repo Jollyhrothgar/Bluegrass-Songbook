@@ -1,6 +1,6 @@
 {meta: title The Girl I Used To Run Around On}
 {meta: artist Gene Watson}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [C]Nobody has to tell her that [G7]I've changed

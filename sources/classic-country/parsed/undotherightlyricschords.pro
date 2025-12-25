@@ -1,6 +1,6 @@
 {meta: title Undo The Right}
 {meta: artist Johnny Bush}
-{meta: writer Willie Nelson and Hank Cochran}
+{meta: composer Willie Nelson and Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]If you can't say you love me say you [D7]hate [C]me

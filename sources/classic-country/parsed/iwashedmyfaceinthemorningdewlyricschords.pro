@@ -1,6 +1,6 @@
 {meta: title I Washed My Face In The Morning Dew}
 {meta: artist Don Gibson}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]The first strange town I [F]was ever [C]in 

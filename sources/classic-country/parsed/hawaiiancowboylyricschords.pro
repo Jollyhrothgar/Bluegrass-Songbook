@@ -1,6 +1,6 @@
 {meta: title Hawaiian Cowboy}
 {meta: artist Hank Snow}
-{meta: writer Rex Allen, Emma Johnson, Sol Bright}
+{meta: composer Rex Allen, Emma Johnson, Sol Bright}
 
 {start_of_verse: Verse 1}
 [G]A cowboy took a trip to [G][C]Hawaii

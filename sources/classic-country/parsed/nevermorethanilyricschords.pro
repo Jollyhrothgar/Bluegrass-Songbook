@@ -1,6 +1,6 @@
 {meta: title Never More Than I}
 {meta: artist Charley Pride}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [C]He'll buy you lots of [F]pretty things [G7]fancy clothes and [C]fancy rings

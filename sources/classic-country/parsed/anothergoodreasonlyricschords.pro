@@ -1,6 +1,6 @@
 {meta: title Another Good Reason}
 {meta: artist Alan Jackson}
-{meta: writer Harley Allen and Carson Chamberlain}
+{meta: composer Harley Allen and Carson Chamberlain}
 
 {start_of_verse: Verse 1}
 [C]I woke up the other night [G7]lyin' on the floor

@@ -1,6 +1,6 @@
 {meta: title I Love You More Today}
 {meta: artist Cal Smith}
-{meta: writer L.E. White}
+{meta: composer L.E. White}
 
 {start_of_verse: Verse 1}
 [G]I love you more [C]today than he can from now [G]on

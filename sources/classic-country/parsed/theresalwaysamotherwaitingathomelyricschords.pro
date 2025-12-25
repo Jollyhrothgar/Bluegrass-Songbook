@@ -1,6 +1,6 @@
 {meta: title There's Always A Mother Waiting At Home}
 {meta: artist Johnny Cash}
-{meta: writer J. Thornton}
+{meta: composer J. Thornton}
 
 {start_of_verse: Verse 1}
 [C]So you're going to leave the old home Jim

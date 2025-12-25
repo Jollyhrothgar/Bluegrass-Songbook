@@ -1,6 +1,6 @@
 {meta: title Still Water Runs The Deepest}
 {meta: artist Bob Wills}
-{meta: writer Jesse Ashlock}
+{meta: composer Jesse Ashlock}
 
 {start_of_verse: Verse 1}
 [C]Still water runs the deepest

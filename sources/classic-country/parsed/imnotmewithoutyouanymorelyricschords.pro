@@ -1,6 +1,6 @@
 {meta: title I'm Not Me Without You Anymore}
 {meta: artist Ferlin Husky}
-{meta: writer Red Simpson}
+{meta: composer Red Simpson}
 
 {start_of_verse: Verse 1}
 [C]When you walked out a part of me went with [F]you

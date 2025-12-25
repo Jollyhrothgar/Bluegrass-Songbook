@@ -1,6 +1,6 @@
 {meta: title Old Fashioned Love}
 {meta: artist John Conlee}
-{meta: writer Jerry Crutchfield}
+{meta: composer Jerry Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]Is staying in love really as hard as it [G7]seems

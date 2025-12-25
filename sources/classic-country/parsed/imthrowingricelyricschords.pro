@@ -1,6 +1,6 @@
 {meta: title I'm Throwing Rice}
 {meta: artist Eddy Arnold}
-{meta: writer Steve Nelson, Ed Nelson, Jr., Eddy Arnold}
+{meta: composer Steve Nelson, Ed Nelson, Jr., Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [G]I'm throwing rice  at the [C]girl that I [A7]love

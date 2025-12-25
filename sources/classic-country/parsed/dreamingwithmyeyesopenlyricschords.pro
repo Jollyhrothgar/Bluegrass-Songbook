@@ -1,6 +1,6 @@
 {meta: title Dreaming With My Eyes Open}
 {meta: artist Clay Walker}
-{meta: writer Tony Arata}
+{meta: composer Tony Arata}
 
 {start_of_verse: Verse 1}
 [C]I spent half my life on bended knee beggin' somebody to change

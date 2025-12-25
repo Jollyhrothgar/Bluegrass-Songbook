@@ -1,6 +1,6 @@
 {meta: title The Image of Me}
 {meta: artist Jim Reeves}
-{meta: writer Harlan Howard and Wayne Kemp}
+{meta: composer Harlan Howard and Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [G]Does he kiss you like I [C]used to kiss [G]you

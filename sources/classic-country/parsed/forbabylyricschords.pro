@@ -1,6 +1,6 @@
 {meta: title For Baby}
 {meta: artist Anne Murray}
-{meta: writer John Denver}
+{meta: composer John Denver}
 
 {start_of_verse: Verse 1}
 [G]I'll walk in the [C]rain by your [G]side

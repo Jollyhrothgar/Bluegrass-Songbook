@@ -1,6 +1,6 @@
 {meta: title Settlin' For What They Get}
 {meta: artist Mark Chesnutt}
-{meta: writer Willard Mack Vickery}
+{meta: composer Willard Mack Vickery}
 
 {start_of_verse: Verse 1}
 [C]From the table to the jukebox is just a few short [F]steps

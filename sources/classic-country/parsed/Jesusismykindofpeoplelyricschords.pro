@@ -1,6 +1,6 @@
 {meta: title Jesus Is My Kind Of People}
 {meta: artist Ray Price}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [C]Once I felt like a lonely sailor [F]lost on a raging [C]sea 

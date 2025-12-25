@@ -1,6 +1,6 @@
 {meta: title Wheels Of Love}
 {meta: artist Emmylou Harris}
-{meta: writer Marjy Plant}
+{meta: composer Marjy Plant}
 
 {start_of_verse: Verse 1}
 [C]The wheels of love turn around and around

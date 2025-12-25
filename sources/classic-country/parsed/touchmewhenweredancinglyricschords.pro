@@ -1,6 +1,6 @@
 {meta: title Touch Me When We're Dancing}
 {meta: artist Alabama}
-{meta: writer Jerry Wallace, Terry Skinner, Ken Bell}
+{meta: composer Jerry Wallace, Terry Skinner, Ken Bell}
 
 {start_of_verse: Verse 1}
 [C]Play us a song we can [Am]slow dance on

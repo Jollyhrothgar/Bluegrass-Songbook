@@ -1,6 +1,6 @@
 {meta: title I Truly Do}
 {meta: artist Sonny James}
-{meta: writer Diane Lampert and Jimmie Haskell}
+{meta: composer Diane Lampert and Jimmie Haskell}
 
 {start_of_verse: Verse 1}
 [C]I do love you I truly do (truly [D7]do)

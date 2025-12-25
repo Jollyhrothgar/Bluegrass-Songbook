@@ -1,6 +1,6 @@
 {meta: title Tell Me More}
 {meta: artist Cowboy Copas}
-{meta: writer Adrian McDowell and Walter Remseur}
+{meta: composer Adrian McDowell and Walter Remseur}
 
 {start_of_verse: Verse 1}
 [G7](Tell me more tell me more tell me [C]more)

@@ -1,6 +1,6 @@
 {meta: title Always Be Kind To Your Mother}
 {meta: artist The Coon Ridge Ramblers}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [C]Always be [F]kind to your [C]mother

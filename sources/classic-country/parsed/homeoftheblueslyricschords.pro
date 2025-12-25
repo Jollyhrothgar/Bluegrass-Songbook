@@ -1,6 +1,6 @@
 {meta: title Home Of The Blues}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash, Lily McAlpin, Glenn D. Tubb}
+{meta: composer Johnny Cash, Lily McAlpin, Glenn D. Tubb}
 
 {start_of_verse: Verse 1}
 [F]Just around the corner [G7]there's [C]heartache

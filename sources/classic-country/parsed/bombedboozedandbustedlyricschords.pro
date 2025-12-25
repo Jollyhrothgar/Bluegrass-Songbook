@@ -1,6 +1,6 @@
 {meta: title Bombed Boozed And Busted}
 {meta: artist Joe Sun}
-{meta: writer Dennis Knutson and Joe Sun}
+{meta: composer Dennis Knutson and Joe Sun}
 
 {start_of_verse: Verse 1}
 [C]I get bombed [G7]boozed and [C]busted [F]a-living on a honky tonk [C]time

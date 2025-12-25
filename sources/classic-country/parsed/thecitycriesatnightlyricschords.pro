@@ -1,6 +1,6 @@
 {meta: title The City Cries at Night}
 {meta: artist Jim Ed Brown}
-{meta: writer Eddie Miller}
+{meta: composer Eddie Miller}
 
 {start_of_verse: Verse 1}
 [G]Have you ever stopped and listened at the way that a city sheds its [C]tears

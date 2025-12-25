@@ -1,6 +1,6 @@
 {meta: title Please Daddy (Don't Get Drunk This Christmas)}
 {meta: artist Alan Jackson}
-{meta: writer Bill Danoff and Taffy Nivert}
+{meta: composer Bill Danoff and Taffy Nivert}
 
 {start_of_verse: Verse 1}
 [G]Please daddy don't get [C]drunk this Christmas

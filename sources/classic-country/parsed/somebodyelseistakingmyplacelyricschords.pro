@@ -1,6 +1,6 @@
 {meta: title Somebody Else Is Taking My Place}
 {meta: artist Connie Francis}
-{meta: writer Dick Howard, Bob Ellsworth, Russ Morgan}
+{meta: composer Dick Howard, Bob Ellsworth, Russ Morgan}
 
 {start_of_verse: Verse 1}
 [C]Somebody [A7]else  [D7]is taking my place

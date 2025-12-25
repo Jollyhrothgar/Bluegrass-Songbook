@@ -1,6 +1,6 @@
 {meta: title Hard Luck Ace}
 {meta: artist Lacy J. Dalton}
-{meta: writer Aaron Anderson and Lacy J. Dalton}
+{meta: composer Aaron Anderson and Lacy J. Dalton}
 
 {start_of_verse: Verse 1}
 [C]On a cold and foggy evening in [C][F]1959

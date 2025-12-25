@@ -1,6 +1,6 @@
 {meta: title What'll I Tell Virginia}
 {meta: artist Johnny Rodriguez}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]It’s an awful surprise to [F]open your [C]eyes 

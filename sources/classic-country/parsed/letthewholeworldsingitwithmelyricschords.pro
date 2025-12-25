@@ -1,6 +1,6 @@
 {meta: title Let The Whole World Sing It With Me}
 {meta: artist Wynn Stewart}
-{meta: writer Dale Noe}
+{meta: composer Dale Noe}
 
 {start_of_verse: Verse 1}
 [G]Fill my life with a song a happy [C]happy [G]song

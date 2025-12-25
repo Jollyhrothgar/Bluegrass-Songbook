@@ -1,6 +1,6 @@
 {meta: title I Know}
 {meta: artist Sonny James}
-{meta: writer Sonny James and John Skye}
+{meta: composer Sonny James and John Skye}
 
 {start_of_verse: Verse 1}
 [C]I know two eyes that just [Dm]adore you

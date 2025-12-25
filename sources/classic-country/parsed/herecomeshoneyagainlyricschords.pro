@@ -1,6 +1,6 @@
 {meta: title Here Comes Honey Again}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Carole Smith}
+{meta: composer Sonny James and Carole Smith}
 
 {start_of_verse: Verse 1}
 [C]Just about the time I pull [F]myself [C]together

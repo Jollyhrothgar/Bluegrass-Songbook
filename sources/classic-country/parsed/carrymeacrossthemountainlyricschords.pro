@@ -1,6 +1,6 @@
 {meta: title Carry Me Across The Mountain}
 {meta: artist Dan Tyminski}
-{meta: writer John Pennell, William P. Smith, Jeffery White}
+{meta: composer John Pennell, William P. Smith, Jeffery White}
 
 {start_of_verse: Verse 1}
 [G]Every day is a [C]gamble if [G]you really want to make it [F]through

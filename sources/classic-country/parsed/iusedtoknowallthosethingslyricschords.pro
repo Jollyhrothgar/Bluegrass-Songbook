@@ -1,6 +1,6 @@
 {meta: title I Used To Know All Those Things}
 {meta: artist Lynn Anderson}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]I used to know all those things 

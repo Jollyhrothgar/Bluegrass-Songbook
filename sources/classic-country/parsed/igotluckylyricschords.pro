@@ -1,6 +1,6 @@
 {meta: title I Got Lucky}
 {meta: artist Elvis Presley}
-{meta: writer By Ben Weisman, Fred Wise, Dolores Fuller}
+{meta: composer By Ben Weisman, Fred Wise, Dolores Fuller}
 
 {start_of_verse: Verse 1}
 [C]Never found a four leaf [Em]clover to [F]bring good luck to [Dm]me

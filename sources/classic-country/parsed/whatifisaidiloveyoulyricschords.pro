@@ -1,6 +1,6 @@
 {meta: title What If I Said I Love You}
 {meta: artist Marty Robbins}
-{meta: writer Charlie Black and Tommy Rocco}
+{meta: composer Charlie Black and Tommy Rocco}
 
 {start_of_verse: Verse 1}
 [G]Do you mean what you say you're still leaving today

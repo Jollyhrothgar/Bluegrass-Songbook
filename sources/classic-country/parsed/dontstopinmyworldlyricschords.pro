@@ -1,6 +1,6 @@
 {meta: title Don’t Stop In My World}
 {meta: artist Billy Walker}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]What are you [G7]doing here you never wanted [C]me before 

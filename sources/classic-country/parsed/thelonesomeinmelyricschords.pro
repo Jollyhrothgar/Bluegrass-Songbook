@@ -1,6 +1,6 @@
 {meta: title The Lonesome In Me}
 {meta: artist Stonewall Jackson}
-{meta: writer Dave Kirby}
+{meta: composer Dave Kirby}
 
 {start_of_verse: Verse 1}
 [C]I go home to a [Am]home [F]where love is all [C]gone

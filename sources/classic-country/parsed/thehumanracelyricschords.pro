@@ -1,6 +1,6 @@
 {meta: title The Human Race}
 {meta: artist Doyle Lawson}
-{meta: writer James Dawson Phillips, Eugene Dobbins, Timothy Ray Menzies}
+{meta: composer James Dawson Phillips, Eugene Dobbins, Timothy Ray Menzies}
 
 {start_of_verse: Verse 1}
 [C]We've flown to the moon

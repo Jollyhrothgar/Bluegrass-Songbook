@@ -1,6 +1,6 @@
 {meta: title One Piece At A Time}
 {meta: artist Johnny Cash}
-{meta: writer Wayne Kemp}
+{meta: composer Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [C]Well I left Kentucky back in '49

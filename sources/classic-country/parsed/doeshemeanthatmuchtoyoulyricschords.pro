@@ -1,6 +1,6 @@
 {meta: title Does He Mean That Much To You}
 {meta: artist Eddy Arnold}
-{meta: writer Don Robertson and Jack Rollins}
+{meta: composer Don Robertson and Jack Rollins}
 
 {start_of_verse: Verse 1}
 [C]Before he takes you from [F]me

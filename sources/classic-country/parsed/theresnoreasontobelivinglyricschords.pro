@@ -1,6 +1,6 @@
 {meta: title There's No Reason To Be Living}
 {meta: artist Stonewall Jackson}
-{meta: writer Joe Walsh and Edison Youngblood}
+{meta: composer Joe Walsh and Edison Youngblood}
 
 {start_of_verse: Verse 1}
 [G]Drinkin' [C]beer talkin' [D7]loud hangin' [G]round with a no good [Em]crowd

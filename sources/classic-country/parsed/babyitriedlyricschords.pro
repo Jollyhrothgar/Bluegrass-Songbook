@@ -1,6 +1,6 @@
 {meta: title Baby I Tried}
 {meta: artist Jim Ed Brown}
-{meta: writer Skip Gibbs}
+{meta: composer Skip Gibbs}
 
 {start_of_verse: Verse 1}
 [C]You gave me just enough of [C7]you  to [F]make me want you [C]more

@@ -1,6 +1,6 @@
 {meta: title East Virginia}
 {meta: artist George Hamilton IV}
-{meta: writer Eric Darling, Bob Carey, Alan Arkin}
+{meta: composer Eric Darling, Bob Carey, Alan Arkin}
 
 {start_of_verse: Verse 1}
 [C]I was born in East Virginia 

@@ -1,6 +1,6 @@
 {meta: title When I Sing For Him}
 {meta: artist Dolly Parton}
-{meta: writer Porter Wagoner}
+{meta: composer Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [G]When I sing [C]for him oh praise God's holy [G]name 

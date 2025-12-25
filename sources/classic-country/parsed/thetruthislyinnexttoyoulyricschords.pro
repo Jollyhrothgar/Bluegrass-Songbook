@@ -1,6 +1,6 @@
 {meta: title The Truth Is Lyin' Next To You}
 {meta: artist Randy Travis}
-{meta: writer Kent M. Robbins and Susan Longacre}
+{meta: composer Kent M. Robbins and Susan Longacre}
 
 {start_of_verse: Verse 1}
 [C]Everybody said I'd leave you 

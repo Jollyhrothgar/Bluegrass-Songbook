@@ -1,6 +1,6 @@
 {meta: title I Wish You Were More Like Your Memory}
 {meta: artist Ricky Van Shelton}
-{meta: writer Joe Chambers}
+{meta: composer Joe Chambers}
 
 {start_of_verse: Verse 1}
 [C]She's here every morning she's [A]here every [F]night

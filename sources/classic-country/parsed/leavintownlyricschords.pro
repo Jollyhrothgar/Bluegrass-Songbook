@@ -1,6 +1,6 @@
 {meta: title Leavin' Town}
 {meta: artist Waylon Jennings}
-{meta: writer Bobby Bare}
+{meta: composer Bobby Bare}
 
 {start_of_verse: Verse 1}
 [C]There she goes [F]again see her [C]smilin'

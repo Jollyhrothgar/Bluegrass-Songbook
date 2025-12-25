@@ -1,6 +1,6 @@
 {meta: title My Home Sweet Home}
 {meta: artist Faron Young}
-{meta: writer N.B. Vandall}
+{meta: composer N.B. Vandall}
 
 {start_of_verse: Verse 1}
 [G]Walking along life's [D7]road one day

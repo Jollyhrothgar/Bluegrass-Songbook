@@ -1,6 +1,6 @@
 {meta: title Four Walls}
 {meta: artist Randy Travis}
-{meta: writer Don Rollins, Harry Stinson, Vincent Williams}
+{meta: composer Don Rollins, Harry Stinson, Vincent Williams}
 
 {start_of_verse: Verse 1}
 [G]My grandpa farmed for a livin' [C]content to live the simpler kind of [G]life

@@ -1,6 +1,6 @@
 {meta: title Twice The Speed Of Love}
 {meta: artist Buck Owens}
-{meta: writer Marty Stuart and Kostas}
+{meta: composer Marty Stuart and Kostas}
 
 {start_of_verse: Verse 1}
 [G]Your eyes are always filled with sweet temp[C]tation 

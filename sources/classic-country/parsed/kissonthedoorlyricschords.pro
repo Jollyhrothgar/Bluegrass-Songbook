@@ -1,6 +1,6 @@
 {meta: title Kiss on the Door}
 {meta: artist Hank Locklin}
-{meta: writer Lawton Williams}
+{meta: composer Lawton Williams}
 
 {start_of_verse: Verse 1}
 [C]I sat there alone on your door [G7]step

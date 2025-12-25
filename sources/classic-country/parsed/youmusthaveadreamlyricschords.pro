@@ -1,6 +1,6 @@
 {meta: title You Must Have A Dream}
 {meta: artist Rhonda Vincent}
-{meta: writer James Hipskind}
+{meta: composer James Hipskind}
 
 {start_of_verse: Verse 1}
 [C]Troubles gather around you and [F]life seems so [Dm]unfair

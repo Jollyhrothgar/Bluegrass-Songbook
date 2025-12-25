@@ -1,6 +1,6 @@
 {meta: title Now And Then}
 {meta: artist Don Williams}
-{meta: writer Wayland Holyfield}
+{meta: composer Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [G]Now and then a loser [Am]wins

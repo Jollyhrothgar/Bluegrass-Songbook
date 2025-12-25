@@ -1,6 +1,6 @@
 {meta: title Rocking Chair Money}
 {meta: artist Hank Williams}
-{meta: writer Lonnie Glosson & Bill Carlisle}
+{meta: composer Lonnie Glosson & Bill Carlisle}
 
 {start_of_verse: Verse 1}
 [C]Now I got rocking chair money 

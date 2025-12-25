@@ -1,6 +1,6 @@
 {meta: title When Liking Turns To Loving}
 {meta: artist Bill Anderson}
-{meta: writer Kenny Young}
+{meta: composer Kenny Young}
 
 {start_of_verse: Verse 1}
 [G]I hold her hand much [C]tighter now 

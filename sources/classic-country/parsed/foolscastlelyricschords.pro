@@ -1,6 +1,6 @@
 {meta: title Fool's Castle}
 {meta: artist Merle Haggard}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]It's a big house on a hilltop

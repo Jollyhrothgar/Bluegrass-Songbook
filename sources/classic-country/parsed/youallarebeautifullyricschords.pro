@@ -1,6 +1,6 @@
 {meta: title You All Are Beautiful}
 {meta: artist John Anderson}
-{meta: writer John Anderson and James Hicks}
+{meta: composer John Anderson and James Hicks}
 
 {start_of_verse: Verse 1}
 [G]I've been down in the sunshine state

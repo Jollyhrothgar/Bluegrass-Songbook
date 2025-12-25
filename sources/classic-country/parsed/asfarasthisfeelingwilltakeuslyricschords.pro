@@ -1,6 +1,6 @@
 {meta: title As Far As This Feeling Will Take Us}
 {meta: artist David Allan Coe}
-{meta: writer Buzz Rabin and Flash Gordon}
+{meta: composer Buzz Rabin and Flash Gordon}
 
 {start_of_verse: Verse 1}
 [C]You're layin' here with me we're [F]holding each other

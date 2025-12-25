@@ -1,6 +1,6 @@
 {meta: title River Of Tears}
 {meta: artist Slim Whitman}
-{meta: writer Valencia Dawson}
+{meta: composer Valencia Dawson}
 
 {start_of_verse: Verse 1}
 [C]If it takes a million tears to start a [F]river

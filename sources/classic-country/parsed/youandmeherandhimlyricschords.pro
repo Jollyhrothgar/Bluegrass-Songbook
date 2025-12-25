@@ -1,6 +1,6 @@
 {meta: title You And Me Her And Him}
 {meta: artist Porter Wagoner}
-{meta: writer Porter Wagoner}
+{meta: composer Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]You and me and her and him must get [F]together

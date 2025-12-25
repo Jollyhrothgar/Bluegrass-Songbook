@@ -1,6 +1,6 @@
 {meta: title Where Is The Christ In Christmas}
 {meta: artist Slim Whitman}
-{meta: writer Dallas Daughtry, Pete Drake, Jody Lavender}
+{meta: composer Dallas Daughtry, Pete Drake, Jody Lavender}
 
 {start_of_verse: Verse 1}
 [G]Streets full of shoppers [C]bright window [Am]displays

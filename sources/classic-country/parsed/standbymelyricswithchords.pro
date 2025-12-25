@@ -1,6 +1,6 @@
 {meta: title Stand by Me}
 {meta: artist Elvis Presley}
-{meta: writer Charles A. Tindley}
+{meta: composer Charles A. Tindley}
 
 {start_of_verse: Verse 1}
 [C]When the storms of life are [F]raging

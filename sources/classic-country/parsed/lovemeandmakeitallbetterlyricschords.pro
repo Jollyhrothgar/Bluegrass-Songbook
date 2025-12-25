@@ -1,6 +1,6 @@
 {meta: title Love Me And Make It All Better}
 {meta: artist Jack Greene}
-{meta: writer Eddie Rabbitt}
+{meta: composer Eddie Rabbitt}
 
 {start_of_verse: Verse 1}
 [C]Love me and make it all [Dm]better 

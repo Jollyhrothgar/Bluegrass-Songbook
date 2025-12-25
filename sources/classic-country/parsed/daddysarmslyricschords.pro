@@ -1,6 +1,6 @@
 {meta: title Daddy's Arms}
 {meta: artist Cal Smith}
-{meta: writer Rusty Thornhill}
+{meta: composer Rusty Thornhill}
 
 {start_of_verse: Verse 1}
 [G]I stepped inside the doorway

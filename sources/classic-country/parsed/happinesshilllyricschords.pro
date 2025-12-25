@@ -1,6 +1,6 @@
 {meta: title Happiness Hill}
 {meta: artist Kitty Wells}
-{meta: writer Roy Botkin}
+{meta: composer Roy Botkin}
 
 {start_of_verse: Verse 1}
 [G]I found a place called [D7]Happiness [G]Hill

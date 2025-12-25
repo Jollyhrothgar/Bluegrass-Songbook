@@ -1,6 +1,6 @@
 {meta: title Waiting At The Gate}
 {meta: artist Ricky Skaggs}
-{meta: writer Paul Brewster}
+{meta: composer Paul Brewster}
 
 {start_of_verse: Verse 1}
 [G]I'm waitin’ at the gate (I’m waitin’ at the gate)

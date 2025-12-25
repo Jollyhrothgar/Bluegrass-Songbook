@@ -1,6 +1,6 @@
 {meta: title Hello Old Broken Heart}
 {meta: artist Jean Shepard}
-{meta: writer Joe Allison and Audrey Allison}
+{meta: composer Joe Allison and Audrey Allison}
 
 {start_of_verse: Verse 1}
 [C]Hello old broken heart I see [F]you're back once [C]more

@@ -1,6 +1,6 @@
 {meta: title The Lord's Last Supper}
 {meta: artist Reno and Smiley}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [G]The Lord's last supper served in [C]honor of our King

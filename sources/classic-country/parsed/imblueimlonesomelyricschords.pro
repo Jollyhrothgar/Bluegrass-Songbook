@@ -1,6 +1,6 @@
 {meta: title I'm Blue I'm Lonesome}
 {meta: artist Bill Monroe}
-{meta: writer Bill Monroe and Hank Williams, Sr.}
+{meta: composer Bill Monroe and Hank Williams, Sr.}
 
 {start_of_verse: Verse 1}
 [C]The lonesome sigh of a [F]train going [C]by 

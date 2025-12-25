@@ -1,6 +1,6 @@
 {meta: title I Can't Believe That You've Stopped Loving Me}
 {meta: artist Charley Pride}
-{meta: writer Dallas Frazier - Arthur Leo Owens}
+{meta: composer Dallas Frazier - Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]Tomorrow I'll say Happy [F]Birthday [C]darling

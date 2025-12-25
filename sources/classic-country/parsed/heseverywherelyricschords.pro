@@ -1,6 +1,6 @@
 {meta: title He's Everywhere}
 {meta: artist Sonny James}
-{meta: writer Arthur Smith}
+{meta: composer Arthur Smith}
 
 {start_of_verse: Verse 1}
 [C]I see Him in a [F]baby's smile I hear Him in the [C]wind that sighs

@@ -1,6 +1,6 @@
 {meta: title Me and My Baby Doin' the Bunny Hop}
 {meta: artist Bob Wills}
-{meta: writer Fewell}
+{meta: composer Fewell}
 
 {start_of_verse: Verse 1}
 [C]Now when I love my baby I never wanna stop

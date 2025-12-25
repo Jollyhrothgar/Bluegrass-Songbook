@@ -1,6 +1,6 @@
 {meta: title It’s Like We Never Said Goodbye}
 {meta: artist Crystal Gayle}
-{meta: writer Roger Greenaway and Geoff Stephens}
+{meta: composer Roger Greenaway and Geoff Stephens}
 
 {start_of_verse: Verse 1}
 [C]I was sure I'd lost my chance for for[G7]ever 

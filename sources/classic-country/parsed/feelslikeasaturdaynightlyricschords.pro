@@ -1,6 +1,6 @@
 {meta: title Feels Like A Saturday Night}
 {meta: artist Earl Thomas Conley}
-{meta: writer Earl T. Conley and Randy Scruggs}
+{meta: composer Earl T. Conley and Randy Scruggs}
 
 {start_of_verse: Verse 1}
 [C]Well I traveled all over looking for sweet paradise

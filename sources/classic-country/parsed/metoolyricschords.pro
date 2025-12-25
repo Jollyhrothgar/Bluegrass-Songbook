@@ -1,6 +1,6 @@
 {meta: title Me Too}
 {meta: artist Eddy Arnold}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]You write and say you're broken hearted  [C]me too

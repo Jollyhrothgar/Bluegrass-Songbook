@@ -1,6 +1,6 @@
 {meta: title A World So Full Of Love}
 {meta: artist Faron Young}
-{meta: writer Roger Miller and Faron Young}
+{meta: composer Roger Miller and Faron Young}
 
 {start_of_verse: Verse 1}
 [C]I know how it feels to be alive with no desire to live

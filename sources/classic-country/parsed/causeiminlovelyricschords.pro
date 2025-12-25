@@ -1,6 +1,6 @@
 {meta: title Cause I'm In Love}
 {meta: artist Bob Wills}
-{meta: writer Stan Jones}
+{meta: composer Stan Jones}
 
 {start_of_verse: Verse 1}
 [G]I have spots [D7]before my eyes an [G]ailment that I [D7]can't describe

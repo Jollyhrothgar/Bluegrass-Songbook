@@ -1,6 +1,6 @@
 {meta: title Rustin' Down}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]A lotta miles [F]behind me [C]too far gone to [F]find me

@@ -1,6 +1,6 @@
 {meta: title Hello Little Rock}
 {meta: artist Wynn Stewart}
-{meta: writer Ronnie Mack}
+{meta: composer Ronnie Mack}
 
 {start_of_verse: Verse 1}
 [C]When I pulled into [F]Little Rock the dawn was [C]breaking

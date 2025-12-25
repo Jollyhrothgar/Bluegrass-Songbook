@@ -1,6 +1,6 @@
 {meta: title You've Lost That Loving Feeling}
 {meta: artist Elvis Presley}
-{meta: writer Barry Mann, Cynthia Weil, Phil Spector}
+{meta: composer Barry Mann, Cynthia Weil, Phil Spector}
 
 {start_of_verse: Verse 1}
 [C]You never [A]close your eyes anymore when I kiss your [C]lips

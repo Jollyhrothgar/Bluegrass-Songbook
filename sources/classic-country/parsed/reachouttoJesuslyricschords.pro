@@ -1,6 +1,6 @@
 {meta: title Reach Out To Jesus}
 {meta: artist Elvis Presley}
-{meta: writer Ralph Carmichael}
+{meta: composer Ralph Carmichael}
 
 {start_of_verse: Verse 1}
 [C]Is your burden [F]heavy as you [E7]bear it all [Am]alone

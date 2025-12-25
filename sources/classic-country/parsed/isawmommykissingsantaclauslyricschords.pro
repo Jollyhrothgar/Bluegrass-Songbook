@@ -1,6 +1,6 @@
 {meta: title I Saw Mommy Kissing Santa Claus}
 {meta: artist Brenda Lee}
-{meta: writer Tommie Connor}
+{meta: composer Tommie Connor}
 
 {start_of_verse: Verse 1}
 [G]I saw [Em]mommy kissing [Bm]Santa [Em]Claus

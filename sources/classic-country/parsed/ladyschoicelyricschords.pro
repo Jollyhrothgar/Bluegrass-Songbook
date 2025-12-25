@@ -1,6 +1,6 @@
 {meta: title Lady's Choice}
 {meta: artist Keith Whitley}
-{meta: writer Sharon Vaughn and Bill Rice}
+{meta: composer Sharon Vaughn and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]It's the lady's choice 

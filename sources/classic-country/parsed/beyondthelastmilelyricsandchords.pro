@@ -1,6 +1,6 @@
 {meta: title Beyond The Last Mile}
 {meta: artist Ray Price}
-{meta: writer Rex Griffin}
+{meta: composer Rex Griffin}
 
 {start_of_verse: Verse 1}
 [C]I'm watching the clock tick the [C7]hours [F]away

@@ -1,6 +1,6 @@
 {meta: title It's Hard To Tell The Married From The Free}
 {meta: artist Jean Shepard}
-{meta: writer Don Helms and Gene Jackson}
+{meta: composer Don Helms and Gene Jackson}
 
 {start_of_verse: Verse 1}
 [C]Today so many men are so [G7]unfaithful

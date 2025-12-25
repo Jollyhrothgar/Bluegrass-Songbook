@@ -1,6 +1,6 @@
 {meta: title Darlin' Don't Cry}
 {meta: artist Slim Whitman}
-{meta: writer Jerry Christ}
+{meta: composer Jerry Christ}
 
 {start_of_verse: Verse 1}
 [C]Darlin’ you know [F]I love you so

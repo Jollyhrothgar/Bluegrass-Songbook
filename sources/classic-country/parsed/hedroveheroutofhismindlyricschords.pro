@@ -1,6 +1,6 @@
 {meta: title He Drove Her Out Of His Mind}
 {meta: artist Mel Tillis}
-{meta: writer Bob Corbin, Murray Cannon, Robert Paxton}
+{meta: composer Bob Corbin, Murray Cannon, Robert Paxton}
 
 {start_of_verse: Verse 1}
 [C]For years she tried to [F]make it all [C]work

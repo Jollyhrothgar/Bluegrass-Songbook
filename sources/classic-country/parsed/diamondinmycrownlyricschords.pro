@@ -1,6 +1,6 @@
 {meta: title Diamond In My Crown}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley and Emmylou Harris}
+{meta: composer Paul Kennerley and Emmylou Harris}
 
 {start_of_verse: Verse 1}
 [C]As each long day rolls by [F]and falls behind [C]me

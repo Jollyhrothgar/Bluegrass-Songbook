@@ -1,6 +1,6 @@
 {meta: title She's A Lady At Home}
 {meta: artist Red Steagall}
-{meta: writer Red Steagall and Waylon Jennings}
+{meta: composer Red Steagall and Waylon Jennings}
 
 {start_of_verse: Verse 1}
 [C]No one at home knows her [F]hair is that [C]long

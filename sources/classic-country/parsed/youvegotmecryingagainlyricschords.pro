@@ -1,6 +1,6 @@
 {meta: title You've Got Me Crying Again}
 {meta: artist Brenda Lee}
-{meta: writer Isham Jones and Charles Newman}
+{meta: composer Isham Jones and Charles Newman}
 
 {start_of_verse: Verse 1}
 [C]You've got me crying [F]again [G7]you've got me sighing [C]again

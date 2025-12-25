@@ -1,6 +1,6 @@
 {meta: title You Fool You}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Joe Melson}
+{meta: composer Roy Orbison and Joe Melson}
 
 {start_of_verse: Verse 1}
 [C]You [G]fool you that's what my friends all [Am]say

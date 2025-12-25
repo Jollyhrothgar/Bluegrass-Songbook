@@ -1,6 +1,6 @@
 {meta: title It Might Be Jesus}
 {meta: artist Statler Brother}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]One was standing on the corner with a [G7]tin cup in his hand

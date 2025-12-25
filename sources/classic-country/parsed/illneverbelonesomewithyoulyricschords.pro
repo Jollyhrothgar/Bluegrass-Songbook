@@ -1,6 +1,6 @@
 {meta: title I'll Never Be Lonesome With You}
 {meta: artist Cal Smith}
-{meta: writer John Dillingham}
+{meta: composer John Dillingham}
 
 {start_of_verse: Verse 1}
 [G]Sweetheart I love [D7]you I need [G]you I want [C]you

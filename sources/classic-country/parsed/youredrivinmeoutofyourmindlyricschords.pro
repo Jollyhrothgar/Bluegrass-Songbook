@@ -1,6 +1,6 @@
 {meta: title You're Drivin' Me Out Of Your Mind}
 {meta: artist Ronnie Milsap}
-{meta: writer Dougal Treneer}
+{meta: composer Dougal Treneer}
 
 {start_of_verse: Verse 1}
 [G]The eyes I'm lookin' in [C]ain't lookin' back at [G]me

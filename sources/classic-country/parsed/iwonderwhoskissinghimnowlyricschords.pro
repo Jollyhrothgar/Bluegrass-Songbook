@@ -1,6 +1,6 @@
 {meta: title I Wonder Who’s Kissing Him Now}
 {meta: artist Anne Murray}
-{meta: writer Frank Adams and Will M. Hough}
+{meta: composer Frank Adams and Will M. Hough}
 
 {start_of_verse: Verse 1}
 [G]I wonder who's [D7]kissing him [G]now 

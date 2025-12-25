@@ -1,6 +1,6 @@
 {meta: title I Just Fall In Love Again}
 {meta: artist Anne Murray}
-{meta: writer Steve Dorff, Larry Herbstritt, Harry Lloyd, Gloria Skelerov}
+{meta: composer Steve Dorff, Larry Herbstritt, Harry Lloyd, Gloria Skelerov}
 
 {start_of_verse: Verse 1}
 [C]Dreaming I must be [D7]dreaming 

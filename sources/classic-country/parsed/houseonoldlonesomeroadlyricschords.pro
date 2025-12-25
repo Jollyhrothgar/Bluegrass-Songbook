@@ -1,6 +1,6 @@
 {meta: title House On Old Lonesome Road}
 {meta: artist Conway Twitty}
-{meta: writer Dave Gibson and Bernard Nelson}
+{meta: composer Dave Gibson and Bernard Nelson}
 
 {start_of_verse: Verse 1}
 [C]Every night it's the same old grind

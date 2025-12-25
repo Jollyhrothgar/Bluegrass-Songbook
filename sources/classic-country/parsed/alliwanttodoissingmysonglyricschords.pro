@@ -1,6 +1,6 @@
 {meta: title All I Want To Do Is Sing My Song}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Freddy Powers}
+{meta: composer Merle Haggard and Freddy Powers}
 
 {start_of_verse: Verse 1}
 [G]All I wanna do is sing my [Am]song [D7]

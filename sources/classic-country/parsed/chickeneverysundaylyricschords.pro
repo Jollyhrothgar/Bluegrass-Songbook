@@ -1,6 +1,6 @@
 {meta: title Chicken Every Sunday}
 {meta: artist Norma Jean}
-{meta: writer Charlie Craig and Betty Craig}
+{meta: composer Charlie Craig and Betty Craig}
 
 {start_of_verse: Verse 1}
 [G]Just because all my dresses are cotton hand-me-downs

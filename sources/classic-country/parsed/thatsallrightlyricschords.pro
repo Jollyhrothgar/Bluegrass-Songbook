@@ -1,6 +1,6 @@
 {meta: title That's All Right}
 {meta: artist Elvis Presley}
-{meta: writer Arthur Crudup}
+{meta: composer Arthur Crudup}
 
 {start_of_verse: Verse 1}
 [C]Well that's all right mama that's all right for you

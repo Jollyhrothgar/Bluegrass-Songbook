@@ -1,6 +1,6 @@
 {meta: title Shadows On The Wall}
 {meta: artist Jean Shepard}
-{meta: writer Tommy Reiff and Ronnie Badger}
+{meta: composer Tommy Reiff and Ronnie Badger}
 
 {start_of_verse: Verse 1}
 [C]Though the door was open wide not a sound came from [F]inside

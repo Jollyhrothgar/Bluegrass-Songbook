@@ -1,6 +1,6 @@
 {meta: title Stairway To Heaven}
 {meta: artist The Stanley Brothers}
-{meta: writer Bill J. Grant and Ralph Stanley}
+{meta: composer Bill J. Grant and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]Have you dreamed of a stairway to [C]heaven

@@ -1,6 +1,6 @@
 {meta: title The Rock I’m Leaning On}
 {meta: artist Vern Gosdin}
-{meta: writer Christopher C Rider, V.L.Haywood}
+{meta: composer Christopher C Rider, V.L.Haywood}
 
 {start_of_verse: Verse 1}
 [G]When I wake up in the morning 

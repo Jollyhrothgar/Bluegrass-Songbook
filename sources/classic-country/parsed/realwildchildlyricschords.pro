@@ -1,6 +1,6 @@
 {meta: title Real Wild Child}
 {meta: artist Buddy Holly}
-{meta: writer John Vincent Greenan, Johnny O'Keefe}
+{meta: composer John Vincent Greenan, Johnny O'Keefe}
 
 {start_of_verse: Verse 1}
 [G]Well I'm just out of school

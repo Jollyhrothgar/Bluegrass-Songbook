@@ -1,6 +1,6 @@
 {meta: title After The Fact}
 {meta: artist Kris Kristofferson}
-{meta: writer Stephen Bruton}
+{meta: composer Stephen Bruton}
 
 {start_of_verse: Verse 1}
 [C]The rad[G7]io says more [C]rain today 

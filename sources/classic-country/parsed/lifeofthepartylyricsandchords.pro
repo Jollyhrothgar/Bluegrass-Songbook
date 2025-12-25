@@ -1,6 +1,6 @@
 {meta: title Life Of The Party}
 {meta: artist Randy Travis}
-{meta: writer Allen Shamblin and Billy Kirsch}
+{meta: composer Allen Shamblin and Billy Kirsch}
 
 {start_of_verse: Verse 1}
 [C]I'm the life of the party[G7]

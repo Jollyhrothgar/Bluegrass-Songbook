@@ -1,6 +1,6 @@
 {meta: title Conscience Keep An Eye On Me}
 {meta: artist Norma Jean}
-{meta: writer Jack Rhodes and Glen Goza}
+{meta: composer Jack Rhodes and Glen Goza}
 
 {start_of_verse: Verse 1}
 [C]Tonight’s his night to work late and I just can't stay [F]home

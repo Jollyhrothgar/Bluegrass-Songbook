@@ -1,6 +1,6 @@
 {meta: title Can Angels Fly Over The Rockies}
 {meta: artist Burl Ives}
-{meta: writer Lyle Moraine}
+{meta: composer Lyle Moraine}
 
 {start_of_verse: Verse 1}
 [G]While they camped for the [G7]night 

@@ -1,6 +1,6 @@
 {meta: title We'll Stick Together}
 {meta: artist Kitty Wells}
-{meta: writer Bill Phillips}
+{meta: composer Bill Phillips}
 
 {start_of_verse: Verse 1}
 [C]Cause we stuck together through the [F]lean lean years

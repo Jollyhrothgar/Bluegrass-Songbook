@@ -1,6 +1,6 @@
 {meta: title A Time And Place For Everything}
 {meta: artist Marty Robbins}
-{meta: writer Benny Joy}
+{meta: composer Benny Joy}
 
 {start_of_verse: Verse 1}
 [G]There's a time and a place for everything

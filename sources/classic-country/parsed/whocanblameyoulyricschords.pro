@@ -1,6 +1,6 @@
 {meta: title Who Can Blame You}
 {meta: artist Alison Krauss}
-{meta: writer Ron Block}
+{meta: composer Ron Block}
 
 {start_of_verse: Verse 1}
 [C]Who can blame you though your [G7]heart's untrue

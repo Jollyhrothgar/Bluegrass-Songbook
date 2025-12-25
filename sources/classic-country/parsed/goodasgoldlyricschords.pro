@@ -1,6 +1,6 @@
 {meta: title Good As Gold}
 {meta: artist Porter Wagoner}
-{meta: writer Paul Martin}
+{meta: composer Paul Martin}
 
 {start_of_verse: Verse 1}
 [C]I'll agree that we may [F]never own a [C]mansion

@@ -1,6 +1,6 @@
 {meta: title Mr. Christmas}
 {meta: artist Joe Diffie}
-{meta: writer Lee Bogan and Joe Diffie}
+{meta: composer Lee Bogan and Joe Diffie}
 
 {start_of_verse: Verse 1}
 [G]Hey look comin' [Am]down the [D7]way

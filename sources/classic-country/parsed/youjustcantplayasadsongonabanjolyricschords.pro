@@ -1,6 +1,6 @@
 {meta: title You Just Can't Play A Sad Song On A Banjo}
 {meta: artist Willie Nelson}
-{meta: writer Paul Buskirk and Russell Jackson}
+{meta: composer Paul Buskirk and Russell Jackson}
 
 {start_of_verse: Verse 1}
 [C]Now we all know the [G7]violin plays [D7]sweetly

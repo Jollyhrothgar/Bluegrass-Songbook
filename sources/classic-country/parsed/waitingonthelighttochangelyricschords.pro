@@ -1,6 +1,6 @@
 {meta: title Waiting On The Light To Change}
 {meta: artist Randy Travis}
-{meta: writer Richard C. Leigh and Gary Tolbert Nicholson}
+{meta: composer Richard C. Leigh and Gary Tolbert Nicholson}
 
 {start_of_verse: Verse 1}
 [C]This old road has [F]taken it's toll

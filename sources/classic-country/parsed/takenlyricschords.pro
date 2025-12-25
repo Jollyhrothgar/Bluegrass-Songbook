@@ -1,6 +1,6 @@
 {meta: title Taken}
 {meta: artist Rhonda Vincent}
-{meta: writer Mike Geiger and Anna Owens}
+{meta: composer Mike Geiger and Anna Owens}
 
 {start_of_verse: Verse 1}
 [C]Taken when I [F]look into your [G7]eyes I see my [F]life

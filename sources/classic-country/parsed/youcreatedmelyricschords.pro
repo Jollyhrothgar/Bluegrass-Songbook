@@ -1,6 +1,6 @@
 {meta: title You Created Me}
 {meta: artist Wanda Jackson}
-{meta: writer Curtis Wayne}
+{meta: composer Curtis Wayne}
 
 {start_of_verse: Verse 1}
 [G]Stand back now take a good look tell me do [G7]you like what you [C]see

@@ -1,6 +1,6 @@
 {meta: title The Bottle The Glass And Me}
 {meta: artist Jerry Wallace}
-{meta: writer Gloria McMurtry}
+{meta: composer Gloria McMurtry}
 
 {start_of_verse: Verse 1}
 [C]Hello bottle hello [F]glass nice to see [C]you once again

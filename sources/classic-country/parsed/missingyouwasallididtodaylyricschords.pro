@@ -1,6 +1,6 @@
 {meta: title Missing You Was All I Did Today Lyrics chords}
 {meta: artist Faron Young}
-{meta: writer Al Matson and Don Hosea}
+{meta: composer Al Matson and Don Hosea}
 
 {start_of_verse: Verse 1}
 [C]I thought if I really [G7]tried I'd get [C]over you

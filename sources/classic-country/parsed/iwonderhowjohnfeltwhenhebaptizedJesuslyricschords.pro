@@ -1,6 +1,6 @@
 {meta: title I Wonder How John Felt (When He Baptized Jesus)}
 {meta: artist George Jones}
-{meta: writer Billy Sherrill, Norro Wilson, Carmol Taylor}
+{meta: composer Billy Sherrill, Norro Wilson, Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [C]Do you remember how you felt [F]when you kissed your brand new [C]bride

@@ -1,6 +1,6 @@
 {meta: title I've Got A New Road Under My Wheels}
 {meta: artist Bob Wills}
-{meta: writer Dude Rancher and Thomas E Wilson}
+{meta: composer Dude Rancher and Thomas E Wilson}
 
 {start_of_verse: Verse 1}
 [C]I've got a new road under my wheels

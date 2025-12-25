@@ -1,6 +1,6 @@
 {meta: title Get Some Loving Done}
 {meta: artist Conway Twitty}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [G]I gotta get up and get some [C]loving [G]done 

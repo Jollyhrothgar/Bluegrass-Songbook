@@ -1,6 +1,6 @@
 {meta: title I'm The Only Sane Man Left Alive}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]I'm as crazy [G7]as the [C]days are [G7]long and [C]everybody [C][G7]knows

@@ -1,6 +1,6 @@
 {meta: title Dixie Highway}
 {meta: artist Alan Jackson}
-{meta: writer Alan Jackson}
+{meta: composer Alan Jackson}
 
 {start_of_verse: Verse 1}
 [G]I was [C]born on the Dixie [G]Highway

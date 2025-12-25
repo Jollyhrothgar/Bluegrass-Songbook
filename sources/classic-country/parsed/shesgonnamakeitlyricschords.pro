@@ -1,6 +1,6 @@
 {meta: title She's Gonna Make It}
 {meta: artist Garth Brooks}
-{meta: writer Kent Blazy, Kim Willaims, Garth Brooks}
+{meta: composer Kent Blazy, Kim Willaims, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [Am]He followed her to [F]work this morning[Dm] 

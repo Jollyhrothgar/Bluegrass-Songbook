@@ -1,6 +1,6 @@
 {meta: title Timberline}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley and Emmylou Harris}
+{meta: composer Paul Kennerley and Emmylou Harris}
 
 {start_of_verse: Verse 1}
 [G]Oh the stars they did shine the night you [C]swore you'd be[G] mine

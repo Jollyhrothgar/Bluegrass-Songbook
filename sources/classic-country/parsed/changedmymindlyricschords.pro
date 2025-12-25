@@ -1,6 +1,6 @@
 {meta: title Changed My Mind}
 {meta: artist Billy Walker}
-{meta: writer Kent Westberry}
+{meta: composer Kent Westberry}
 
 {start_of_verse: Verse 1}
 [C]What am I supposed to do now that we are through

@@ -1,6 +1,6 @@
 {meta: title Take Me Home And Love Me}
 {meta: artist Tammy Wynette}
-{meta: writer Norro Wilson, Carmol Taylor, Tammy Wynette}
+{meta: composer Norro Wilson, Carmol Taylor, Tammy Wynette}
 
 {start_of_verse: Verse 1}
 [G]Take me home [C]again tonight and [G]love me

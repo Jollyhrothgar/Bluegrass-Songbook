@@ -1,6 +1,6 @@
 {meta: title If I Had You}
 {meta: artist Alan Jackson}
-{meta: writer Jim McBride and Alan Jackson}
+{meta: composer Jim McBride and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]If I could have you I [F]know what [G7]I'd do

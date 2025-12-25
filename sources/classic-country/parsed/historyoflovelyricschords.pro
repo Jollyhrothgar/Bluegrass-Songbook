@@ -1,6 +1,6 @@
 {meta: title History Of Love}
 {meta: artist Ricky Nelson}
-{meta: writer Dave Burgess and Jerry Fuller}
+{meta: composer Dave Burgess and Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]One day I read in a history book of [F]love [G7]so long [C]ago

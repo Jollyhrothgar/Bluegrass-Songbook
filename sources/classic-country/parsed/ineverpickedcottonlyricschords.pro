@@ -1,6 +1,6 @@
 {meta: title I Never Picked Cotton}
 {meta: artist Roy Clark}
-{meta: writer Charlie Williams and Bobby George}
+{meta: composer Charlie Williams and Bobby George}
 
 {start_of_verse: Verse 1}
 [G]I never picked cotton

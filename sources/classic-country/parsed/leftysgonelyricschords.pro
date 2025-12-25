@@ -1,6 +1,6 @@
 {meta: title Lefty's Gone}
 {meta: artist George Strait}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [Am]A jukebox introduced us 

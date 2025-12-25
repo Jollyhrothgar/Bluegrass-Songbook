@@ -1,6 +1,6 @@
 {meta: title I Wouldn’t Take Nothing For My Journey Now}
 {meta: artist Jimmy Davis}
-{meta: writer Jimmie Davis and Charles R. Goodman}
+{meta: composer Jimmie Davis and Charles R. Goodman}
 
 {start_of_verse: Verse 1}
 [C]I wouldn't take nothing for my journey now

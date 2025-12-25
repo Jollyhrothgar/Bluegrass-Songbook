@@ -1,6 +1,6 @@
 {meta: title God Is Love}
 {meta: artist Doyle Lawson}
-{meta: writer Bill Castle and Dee Gaskin}
+{meta: composer Bill Castle and Dee Gaskin}
 
 {start_of_verse: Verse 1}
 [C]Those folks who say that God is dead [C7]must see through vision [F]dim

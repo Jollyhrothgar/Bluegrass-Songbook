@@ -1,6 +1,6 @@
 {meta: title My Big Truck Drivin' Man}
 {meta: artist Kitty Wells}
-{meta: writer Hank Mills}
+{meta: composer Hank Mills}
 
 {start_of_verse: Verse 1}
 [C]I'm just a waitress at this truck [F]stop

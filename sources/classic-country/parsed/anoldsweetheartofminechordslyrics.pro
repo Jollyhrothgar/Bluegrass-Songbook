@@ -1,6 +1,6 @@
 {meta: title An Old Sweetheart Of Mine chords and}
 {meta: artist Sonny James}
-{meta: writer Richard Hollingsworth and Sonny James}
+{meta: composer Richard Hollingsworth and Sonny James}
 
 {start_of_verse: Verse 1}
 [C]Walking down the streets of my [Dm]hometown 

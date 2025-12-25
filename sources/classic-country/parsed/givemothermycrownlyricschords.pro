@@ -1,6 +1,6 @@
 {meta: title Give Mother My Crown}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Walter Bailes}
+{meta: composer Walter Bailes}
 
 {start_of_verse: Verse 1}
 [C]She labored so hard in [F]this world [C]below 

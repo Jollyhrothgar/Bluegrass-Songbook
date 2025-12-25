@@ -1,6 +1,6 @@
 {meta: title Never Say Yes}
 {meta: artist Elvis Presley}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [C]Look out now I'm [G7]running [C]wild 

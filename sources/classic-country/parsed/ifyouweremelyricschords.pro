@@ -1,6 +1,6 @@
 {meta: title If You Were Me}
 {meta: artist Rhonda Vincent}
-{meta: writer Troy Seals and Graham Hamilton Lyle}
+{meta: composer Troy Seals and Graham Hamilton Lyle}
 
 {start_of_verse: Verse 1}
 [G]I met someone I need to talk about

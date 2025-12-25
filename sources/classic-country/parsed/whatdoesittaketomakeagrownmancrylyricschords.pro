@@ -1,6 +1,6 @@
 {meta: title What Does It Take To Make A Grown Man Cry}
 {meta: artist Faron Young}
-{meta: writer Ernest Reed and Jade Mangino}
+{meta: composer Ernest Reed and Jade Mangino}
 
 {start_of_verse: Verse 1}
 [G]Well what does it [C]take to make a [G]grown man want to cry

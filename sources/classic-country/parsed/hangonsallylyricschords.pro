@@ -1,6 +1,6 @@
 {meta: title Hang On Sally}
 {meta: artist Johnny Paycheck}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [G]In the mountains there's a valley of love named Sally

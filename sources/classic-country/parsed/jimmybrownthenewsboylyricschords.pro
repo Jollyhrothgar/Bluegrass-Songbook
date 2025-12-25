@@ -1,6 +1,6 @@
 {meta: title Jimmy Brown The News Boy}
 {meta: artist Lester Flatt and Earl Scuggs}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]I sell the morning paper sir

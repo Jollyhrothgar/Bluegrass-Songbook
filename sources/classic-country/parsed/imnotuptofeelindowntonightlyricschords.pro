@@ -1,6 +1,6 @@
 {meta: title I'm Not Up to Feelin' Down Tonight}
 {meta: artist Johnny Rodriguez}
-{meta: writer David Anthony, Johnny Rodriguez, Jim Wix}
+{meta: composer David Anthony, Johnny Rodriguez, Jim Wix}
 
 {start_of_verse: Verse 1}
 [C]I’m not up to feelin’ down to[F]night

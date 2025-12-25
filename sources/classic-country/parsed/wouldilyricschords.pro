@@ -1,6 +1,6 @@
 {meta: title Would I}
 {meta: artist Randy Travis}
-{meta: writer Mark Winchester}
+{meta: composer Mark Winchester}
 
 {start_of_verse: Verse 1}
 [C]Would I would I would I

@@ -1,6 +1,6 @@
 {meta: title Fool And The Angel}
 {meta: artist Bobby Helms}
-{meta: writer Jimmy Duncan}
+{meta: composer Jimmy Duncan}
 
 {start_of_verse: Verse 1}
 [C](Here is the [Am]story of the [Dm]fool and the [G7]angel)

@@ -1,6 +1,6 @@
 {meta: title There's No Need To Try}
 {meta: artist Webb Pierce}
-{meta: writer Audrey Grisham and Sylvia Fisher}
+{meta: composer Audrey Grisham and Sylvia Fisher}
 
 {start_of_verse: Verse 1}
 [C]You can't tell the stars not to [G7]shine anymore

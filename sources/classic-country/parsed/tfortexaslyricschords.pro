@@ -1,6 +1,6 @@
 {meta: title T for Texas}
 {meta: artist Waylon Jennings}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]Well T for Texas T for Tennessee

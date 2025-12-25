@@ -1,6 +1,6 @@
 {meta: title How Can I Tell Him}
 {meta: artist Tanya Tucker}
-{meta: writer Kent LaVoie}
+{meta: composer Kent LaVoie}
 
 {start_of_verse: Verse 1}
 [C]He knows when I'm [G7]lonesome  [F]he's there when I'm [C]sad

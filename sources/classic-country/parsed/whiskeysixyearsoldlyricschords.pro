@@ -1,6 +1,6 @@
 {meta: title Whiskey Six Years Old}
 {meta: artist Norma Jean}
-{meta: writer Glenn Martin and Johnny Slate}
+{meta: composer Glenn Martin and Johnny Slate}
 
 {start_of_verse: Verse 1}
 [G]I noticed that your socks don't match this [D7]morning

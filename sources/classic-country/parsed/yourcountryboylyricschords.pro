@@ -1,6 +1,6 @@
 {meta: title Your Country Boy}
 {meta: artist Jimmy Dean}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]You called me Country Jimmy [F]the night you walked [D7]away

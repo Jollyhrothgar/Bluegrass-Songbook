@@ -1,6 +1,6 @@
 {meta: title Fast Movin' Train}
 {meta: artist Jeannie Seely}
-{meta: writer Billy Troy and Bennie Boling}
+{meta: composer Billy Troy and Bennie Boling}
 
 {start_of_verse: Verse 1}
 [G]Well [Em]ever since I met you seems like [B7]everything's a blur

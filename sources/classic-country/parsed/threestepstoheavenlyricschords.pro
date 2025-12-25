@@ -1,6 +1,6 @@
 {meta: title Three Steps To Heaven}
 {meta: artist Eddie Cochran}
-{meta: writer Bob Cochran and Eddie Cochran}
+{meta: composer Bob Cochran and Eddie Cochran}
 
 {start_of_verse: Verse 1}
 [G]Now there are [C]three steps to [G]heaven

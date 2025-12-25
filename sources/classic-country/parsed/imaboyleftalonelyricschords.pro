@@ -1,6 +1,6 @@
 {meta: title I'm A Boy Left Alone}
 {meta: artist Lefty Frizzell}
-{meta: writer Peshoff and G. Miller}
+{meta: composer Peshoff and G. Miller}
 
 {start_of_verse: Verse 1}
 [C]The sun has stopped shinning there's no silver [G7]lining

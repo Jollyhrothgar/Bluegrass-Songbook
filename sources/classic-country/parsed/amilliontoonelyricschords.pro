@@ -1,6 +1,6 @@
 {meta: title A Million To One}
 {meta: artist Red Sovine}
-{meta: writer Pat Patterson}
+{meta: composer Pat Patterson}
 
 {start_of_verse: Verse 1}
 [C]He's holdin' you close now and [C7]tellin' you [F]lies

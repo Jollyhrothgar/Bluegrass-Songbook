@@ -1,6 +1,6 @@
 {meta: title Sin And Silver}
 {meta: artist George Morgan}
-{meta: writer Scott Holtzman and Vivian Holtzman}
+{meta: composer Scott Holtzman and Vivian Holtzman}
 
 {start_of_verse: Verse 1}
 [C]We lived a beautiful [F]life together [G7]not so very long [C]ago

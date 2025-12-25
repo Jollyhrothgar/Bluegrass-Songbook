@@ -1,6 +1,6 @@
 {meta: title You Could Know as Much About a Stranger}
 {meta: artist Gene Watson}
-{meta: writer Nadine Bryant}
+{meta: composer Nadine Bryant}
 
 {start_of_verse: Verse 1}
 [G]Our bodies lay here side by side

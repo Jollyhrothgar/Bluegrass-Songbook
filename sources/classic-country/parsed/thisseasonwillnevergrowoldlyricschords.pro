@@ -1,6 +1,6 @@
 {meta: title This Season Will Never Grow Old}
 {meta: artist Anne Murray}
-{meta: writer Rita MacNeil}
+{meta: composer Rita MacNeil}
 
 {start_of_verse: Verse 1}
 [G]Christmas is coming I can tell [C]by the [G]smiles

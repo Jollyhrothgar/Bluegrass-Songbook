@@ -1,6 +1,6 @@
 {meta: title Five Minutes In The Arms Of The Right Woman}
 {meta: artist Cal Smith}
-{meta: writer Bob Montgomery and John Talley}
+{meta: composer Bob Montgomery and John Talley}
 
 {start_of_verse: Verse 1}
 [G]I really don't know [D7]what [G]happened

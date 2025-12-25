@@ -1,6 +1,6 @@
 {meta: title Gotta Travel On}
 {meta: artist Jimmy Dean}
-{meta: writer Paul Clayton}
+{meta: composer Paul Clayton}
 
 {start_of_verse: Verse 1}
 [C]I've laid around and played around this old town too long

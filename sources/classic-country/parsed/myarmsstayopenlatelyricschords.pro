@@ -1,6 +1,6 @@
 {meta: title My Arms Stay Open Late}
 {meta: artist Tammy Wynette}
-{meta: writer Curly Putman and Dan Lomax}
+{meta: composer Curly Putman and Dan Lomax}
 
 {start_of_verse: Verse 1}
 [C]The baby cries I could almost die from [G7]lonesome

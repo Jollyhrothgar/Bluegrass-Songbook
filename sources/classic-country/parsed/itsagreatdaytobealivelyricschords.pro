@@ -1,6 +1,6 @@
 {meta: title It's A Great Day To Be Alive}
 {meta: artist Travis Tritt}
-{meta: writer Darrell Scott}
+{meta: composer Darrell Scott}
 
 {start_of_verse: Verse 1}
 [G]I got rice cooking in the [C]micro[G]wave 

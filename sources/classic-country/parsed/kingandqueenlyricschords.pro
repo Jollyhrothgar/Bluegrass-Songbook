@@ -1,6 +1,6 @@
 {meta: title King And Queen}
 {meta: artist Gene Pitney}
-{meta: writer Earl Montgomery}
+{meta: composer Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]When they count all the [G7]tears that we [C]cried

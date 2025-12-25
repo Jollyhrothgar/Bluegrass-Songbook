@@ -1,6 +1,6 @@
 {meta: title Falling Falling Falling}
 {meta: artist Ray Price}
-{meta: writer Bud Deckelman, Joe Guillot, J.D. Miller}
+{meta: composer Bud Deckelman, Joe Guillot, J.D. Miller}
 
 {start_of_verse: Verse 1}
 [C]My heart is breaking darling and many tears are falling

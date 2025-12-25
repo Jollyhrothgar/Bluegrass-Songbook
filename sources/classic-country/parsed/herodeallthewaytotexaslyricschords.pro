@@ -1,6 +1,6 @@
 {meta: title He Rode All The Way To Texas}
 {meta: artist Dolly Parton}
-{meta: writer John Starling}
+{meta: composer John Starling}
 
 {start_of_verse: Verse 1}
 [C]A light shines from my window

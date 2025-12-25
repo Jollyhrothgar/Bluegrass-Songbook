@@ -1,6 +1,6 @@
 {meta: title Bitter They Are Harder They Fall}
 {meta: artist Gene Watson}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 [C]I told her to [C7]leave me [F]alone 

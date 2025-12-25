@@ -1,6 +1,6 @@
 {meta: title This One Gets My Vote}
 {meta: artist Stonewall Jackson}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [G]I just found out [C]where you go [G]each and every night

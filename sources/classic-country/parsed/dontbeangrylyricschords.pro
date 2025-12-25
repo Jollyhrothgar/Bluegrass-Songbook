@@ -1,6 +1,6 @@
 {meta: title Don't Be Angry}
 {meta: artist Stonewall Jackson}
-{meta: writer Wade Jackson}
+{meta: composer Wade Jackson}
 
 {start_of_verse: Verse 1}
 [C]Don't be angry with me darling if [F]I fail to [C]understand

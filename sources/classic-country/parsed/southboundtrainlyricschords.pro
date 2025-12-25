@@ -1,6 +1,6 @@
 {meta: title Southbound Train}
 {meta: artist Travis Tritt}
-{meta: writer Travis Tritt and Charlie Daniels}
+{meta: composer Travis Tritt and Charlie Daniels}
 
 {start_of_verse: Verse 1}
 [G]Well she was born in a north woods town 

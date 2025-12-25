@@ -1,6 +1,6 @@
 {meta: title The Same Old Tale The Crow Told Me}
 {meta: artist Johnny Horton}
-{meta: writer Bill Carlisle}
+{meta: composer Bill Carlisle}
 
 {start_of_verse: Verse 1}
 [C]Well a tom cat sittin’ on a [F]bale of [C]hay

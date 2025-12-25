@@ -1,6 +1,6 @@
 {meta: title Appalachian Blue}
 {meta: artist John Anderson}
-{meta: writer Donna Anderson and Michael Anderson}
+{meta: composer Donna Anderson and Michael Anderson}
 
 {start_of_verse: Verse 1}
 [C]No matter [F]where I [C]go or [F]what I [C]do 

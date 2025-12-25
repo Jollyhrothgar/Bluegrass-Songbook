@@ -1,6 +1,6 @@
 {meta: title Golden River}
 {meta: artist Hank Snow}
-{meta: writer Stuart Hamblen}
+{meta: composer Stuart Hamblen}
 
 {start_of_verse: Verse 1}
 [C]I hate to see night shadows fall I [F]hate to see a moon [C]above

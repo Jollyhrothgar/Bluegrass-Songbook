@@ -1,6 +1,6 @@
 {meta: title Let It Go}
 {meta: artist George Strait}
-{meta: writer George Strait, Bubba Strait and Keith Gattis}
+{meta: composer George Strait, Bubba Strait and Keith Gattis}
 
 {start_of_verse: Verse 1}
 [C]Life's tough and [Am]then you die

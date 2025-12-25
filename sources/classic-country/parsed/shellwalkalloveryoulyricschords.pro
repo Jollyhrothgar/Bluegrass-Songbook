@@ -1,6 +1,6 @@
 {meta: title She'll Walk All Over You}
 {meta: artist Wilburn Brothers}
-{meta: writer Darrell Statler}
+{meta: composer Darrell Statler}
 
 {start_of_verse: Verse 1}
 [C]The tracks you see on me she left behind

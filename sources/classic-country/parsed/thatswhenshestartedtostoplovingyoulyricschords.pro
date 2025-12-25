@@ -1,6 +1,6 @@
 {meta: title That's When She Started To Stop Loving You}
 {meta: artist Conway Twitty}
-{meta: writer Wayne Kemp}
+{meta: composer Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [C]Does she seem a little [F]cold when you [C]love her

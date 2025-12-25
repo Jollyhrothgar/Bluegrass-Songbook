@@ -1,6 +1,6 @@
 {meta: title Rhinestone Cowboy}
 {meta: artist Glen Campbell}
-{meta: writer Larry Wiess}
+{meta: composer Larry Wiess}
 
 {start_of_verse: Verse 1}
 [C]I've been walking these streets so long singing the same old song

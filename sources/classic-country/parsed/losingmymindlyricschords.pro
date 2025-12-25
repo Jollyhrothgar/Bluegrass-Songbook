@@ -1,6 +1,6 @@
 {meta: title Losing My Mind}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin}
+{meta: composer Lloene S. Martin}
 
 {start_of_verse: Verse 1}
 [G]I’m [D7]losing my mind slowly [C]losing my [G]mind

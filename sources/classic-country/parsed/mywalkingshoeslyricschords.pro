@@ -1,6 +1,6 @@
 {meta: title My Walking Shoes}
 {meta: artist Doyle Lawson}
-{meta: writer Jimmy Martin and Paul M. Williams}
+{meta: composer Jimmy Martin and Paul M. Williams}
 
 {start_of_verse: Verse 1}
 [C]My walking shoes [G7]don't fit me [C]anymore

@@ -1,6 +1,6 @@
 {meta: title Laugh The Years Away}
 {meta: artist Dolly Parton and Porter Wagoner}
-{meta: writer Howard Tuck}
+{meta: composer Howard Tuck}
 
 {start_of_verse: Verse 1}
 [C]A corporation owns the [F]factory I [C]work in

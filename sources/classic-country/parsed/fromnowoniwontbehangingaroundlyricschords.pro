@@ -1,6 +1,6 @@
 {meta: title From Now On I Won't Be Hanging Around}
 {meta: artist The Earls Of Leicester}
-{meta: writer Gladys Stacey, Wayne Walker,}
+{meta: composer Gladys Stacey, Wayne Walker,}
 
 {start_of_verse: Verse 1}
 [C]From now on I won't be hanging [G7]around

@@ -1,6 +1,6 @@
 {meta: title Wife Of The Party}
 {meta: artist Norma Jean}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [G]We both know a certain party I won't [D7]mention any names

@@ -1,6 +1,6 @@
 {meta: title Five Sleepy Heads}
 {meta: artist Elvis Presley}
-{meta: writer Sid Tepper and Roy C. Bennett}
+{meta: composer Sid Tepper and Roy C. Bennett}
 
 {start_of_verse: Verse 1}
 [C]There were five sleepyheads 

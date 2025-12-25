@@ -1,6 +1,6 @@
 {meta: title I'll Take Any Chance I Can With You}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson and Clark}
+{meta: composer Kris Kristofferson and Clark}
 
 {start_of_verse: Verse 1}
 [Am]We know [F]better it was [C]bitter [Am]baby

@@ -1,6 +1,6 @@
 {meta: title All Kinds Of Everything}
 {meta: artist Slim Whitman}
-{meta: writer Derry Lindsay and Jack Smith}
+{meta: composer Derry Lindsay and Jack Smith}
 
 {start_of_verse: Verse 1}
 [C]Snowdrops and [G7]daffodils [D7]butterflies and [G7]bees

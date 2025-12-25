@@ -1,6 +1,6 @@
 {meta: title Here Comes My Baby Back Again}
 {meta: artist Dottie West}
-{meta: writer Bill West and Dottie West}
+{meta: composer Bill West and Dottie West}
 
 {start_of_verse: Verse 1}
 [C]Here comes more tears to cry 

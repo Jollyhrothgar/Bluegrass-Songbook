@@ -1,6 +1,6 @@
 {meta: title Along The Mississippi}
 {meta: artist Charley Pride}
-{meta: writer Donn Tankersley and Bob Robison}
+{meta: composer Donn Tankersley and Bob Robison}
 
 {start_of_verse: Verse 1}
 [G7]When we were young [F]along the Missi[C]ssippi 

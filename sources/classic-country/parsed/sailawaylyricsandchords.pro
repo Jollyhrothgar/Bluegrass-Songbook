@@ -1,6 +1,6 @@
 {meta: title Sail Away}
 {meta: artist Charlie Pride}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [C]Come lay down beside me love and [F]close your troubled [C]eyes

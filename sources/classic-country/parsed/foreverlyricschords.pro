@@ -1,6 +1,6 @@
 {meta: title Forever}
 {meta: artist Billy Walker}
-{meta: writer Buddy Killen}
+{meta: composer Buddy Killen}
 
 {start_of_verse: Verse 1}
 [C]Hold me  [F]kiss me  [C]whisper  to [F]me 

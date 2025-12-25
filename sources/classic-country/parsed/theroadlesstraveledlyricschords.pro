@@ -1,6 +1,6 @@
 {meta: title The Road Less Traveled}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Buddy Brock}
+{meta: composer Dean Dillon and Buddy Brock}
 
 {start_of_verse: Verse 1}
 [C]There's a road a winding road that never ends

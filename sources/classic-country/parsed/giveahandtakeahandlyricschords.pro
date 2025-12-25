@@ -1,6 +1,6 @@
 {meta: title Give A Hand Take A Hand}
 {meta: artist Brenda Lee}
-{meta: writer Barry Gibb and Maurice Gibb}
+{meta: composer Barry Gibb and Maurice Gibb}
 
 {start_of_verse: Verse 1}
 [G]Wish the world was run by all [C]little [G]children

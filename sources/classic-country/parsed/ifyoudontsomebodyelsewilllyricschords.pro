@@ -1,6 +1,6 @@
 {meta: title If You Don’t Somebody Else Will}
 {meta: artist Carl Smith}
-{meta: writer Johnny Mathis, Jimmy Fautheree, Geraldine Hamilton}
+{meta: composer Johnny Mathis, Jimmy Fautheree, Geraldine Hamilton}
 
 {start_of_verse: Verse 1}
 [G]Well I ain't gonna beg you for your love [D7]anymore

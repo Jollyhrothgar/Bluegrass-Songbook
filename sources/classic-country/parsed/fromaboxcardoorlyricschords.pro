@@ -1,6 +1,6 @@
 {meta: title From A Boxcar Door}
 {meta: artist Boxcar Willie}
-{meta: writer Lecil Travis Martin}
+{meta: composer Lecil Travis Martin}
 
 {start_of_verse: Verse 1}
 [G]I've seen the 'gators and the skeeters

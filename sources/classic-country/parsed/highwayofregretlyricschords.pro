@@ -1,6 +1,6 @@
 {meta: title Highway Of Regret}
 {meta: artist Stanley Brothers}
-{meta: writer Don Anthony and Ralph Stanley}
+{meta: composer Don Anthony and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]Ain't talking just [C]walking

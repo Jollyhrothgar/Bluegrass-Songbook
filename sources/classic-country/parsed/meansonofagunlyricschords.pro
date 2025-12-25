@@ -1,6 +1,6 @@
 {meta: title Mean Son Of A Gun}
 {meta: artist Johnny Horton}
-{meta: writer Barry Bentley}
+{meta: composer Barry Bentley}
 
 {start_of_verse: Verse 1}
 [G]I'm a guy that likes his fun

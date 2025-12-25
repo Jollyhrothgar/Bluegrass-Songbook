@@ -1,6 +1,6 @@
 {meta: title Losing Your Love}
 {meta: artist Vince Gill}
-{meta: writer Kye Fleming and Vince Gill}
+{meta: composer Kye Fleming and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]Stars are falling [Am]from your eyes 

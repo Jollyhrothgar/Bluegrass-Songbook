@@ -1,6 +1,6 @@
 {meta: title Give Us One More Chance}
 {meta: artist George Morgan}
-{meta: writer Mac Curtis}
+{meta: composer Mac Curtis}
 
 {start_of_verse: Verse 1}
 [C]Put away your suitcase 

@@ -1,6 +1,6 @@
 {meta: title Dance With Me}
 {meta: artist Bobby Helms}
-{meta: writer John Hall and Johanna Hall}
+{meta: composer John Hall and Johanna Hall}
 
 {start_of_verse: Verse 1}
 [C]Dance with me like it [D7]used to be

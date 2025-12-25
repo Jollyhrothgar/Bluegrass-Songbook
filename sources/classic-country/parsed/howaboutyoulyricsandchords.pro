@@ -1,6 +1,6 @@
 {meta: title How About You}
 {meta: artist Patty Loveless}
-{meta: writer Chris Waters and Chuck Jones}
+{meta: composer Chris Waters and Chuck Jones}
 
 {start_of_verse: Verse 1}
 [C]When it comes to lovin' has it always let you down

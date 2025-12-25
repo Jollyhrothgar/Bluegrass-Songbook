@@ -1,6 +1,6 @@
 {meta: title In Your Eyes}
 {meta: artist George Morgan}
-{meta: writer Jimmy Fox}
+{meta: composer Jimmy Fox}
 
 {start_of_verse: Verse 1}
 [C]You love [G7]another there's [C]no use [F]pretendin'

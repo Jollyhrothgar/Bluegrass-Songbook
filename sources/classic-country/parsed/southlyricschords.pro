@@ -1,6 +1,6 @@
 {meta: title South}
 {meta: artist Roger Miller}
-{meta: writer Bobby Russell}
+{meta: composer Bobby Russell}
 
 {start_of_verse: Verse 1}
 [C]Hot afternoon sometime in June

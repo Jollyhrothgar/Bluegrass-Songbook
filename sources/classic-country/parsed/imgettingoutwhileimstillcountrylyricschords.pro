@@ -1,6 +1,6 @@
 {meta: title I'm Getting Out While I'm Still Country}
 {meta: artist Boxcar Willie}
-{meta: writer Travis Martin}
+{meta: composer Travis Martin}
 
 {start_of_verse: Verse 1}
 [C]Here’s your diamond ring and the fancy cloths 

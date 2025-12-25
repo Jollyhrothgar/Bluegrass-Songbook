@@ -1,6 +1,6 @@
 {meta: title Whine Whistle Whine}
 {meta: artist John Anderson}
-{meta: writer Don Goodman and Mark Sherrill}
+{meta: composer Don Goodman and Mark Sherrill}
 
 {start_of_verse: Verse 1}
 [G]I hopped aboard a southbound freight

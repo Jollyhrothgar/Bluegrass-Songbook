@@ -1,6 +1,6 @@
 {meta: title What If I Say Goodbye}
 {meta: artist Ray Price}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]What if I say I [F]love you

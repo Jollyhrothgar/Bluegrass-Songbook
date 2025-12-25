@@ -1,6 +1,6 @@
 {meta: title She Can Put Her Shoes Under My Bed}
 {meta: artist Johnny Duncan}
-{meta: writer Aaron Schroeder}
+{meta: composer Aaron Schroeder}
 
 {start_of_verse: Verse 1}
 [C]She can put her shoes under my bed [F]anytime

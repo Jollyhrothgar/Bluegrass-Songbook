@@ -1,6 +1,6 @@
 {meta: title Somewhere Between Your Heart And Mine}
 {meta: artist Johnny Rodriguez}
-{meta: writer Bonnie Owens and Merle Haggard}
+{meta: composer Bonnie Owens and Merle Haggard}
 
 {start_of_verse: Verse 1}
 [G]Somewhere between [C]your heart and [G]mine 

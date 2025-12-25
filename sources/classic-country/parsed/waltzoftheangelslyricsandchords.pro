@@ -1,6 +1,6 @@
 {meta: title Waltz of the Angels}
 {meta: artist George Jones}
-{meta: writer Jack Rhodes and Dick Reynolds}
+{meta: composer Jack Rhodes and Dick Reynolds}
 
 {start_of_verse: Verse 1}
 [G]The Waltz Of The Angels I hear each [C]time

@@ -1,6 +1,6 @@
 {meta: title Milk Cow Blues}
 {meta: artist Bob Wills}
-{meta: writer Kokomo Arnold}
+{meta: composer Kokomo Arnold}
 
 {start_of_verse: Verse 1}
 [G]Well I woke up this mornin' and I looked out doors

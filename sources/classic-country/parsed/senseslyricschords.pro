@@ -1,6 +1,6 @@
 {meta: title Senses}
 {meta: artist Connie Smith}
-{meta: writer Glen Campbell and Jeannie Seely}
+{meta: composer Glen Campbell and Jeannie Seely}
 
 {start_of_verse: Verse 1}
 [G]The sense to see and I [C]saw you walk [G]away

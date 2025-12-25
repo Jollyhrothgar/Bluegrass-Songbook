@@ -1,6 +1,6 @@
 {meta: title Heartache Killer}
 {meta: artist Jim Ed Brown}
-{meta: writer Swany Cornette}
+{meta: composer Swany Cornette}
 
 {start_of_verse: Verse 1}
 [C]Just bring me one more round of heartache killer

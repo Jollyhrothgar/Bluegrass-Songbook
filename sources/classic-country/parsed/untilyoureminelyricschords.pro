@@ -1,6 +1,6 @@
 {meta: title Until You're Mine}
 {meta: artist Tanya Tucker}
-{meta: writer Thom Schuyler, David Malloy, Billy Walker}
+{meta: composer Thom Schuyler, David Malloy, Billy Walker}
 
 {start_of_verse: Verse 1}
 [C]There's something baby you don't know

@@ -1,6 +1,6 @@
 {meta: title Would You Like To Have A Broken Heart}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Rusty Gabbard}
+{meta: composer Rusty Gabbard}
 
 {start_of_verse: Verse 1}
 [C]Would you like to [G7]have a broken [C]heart

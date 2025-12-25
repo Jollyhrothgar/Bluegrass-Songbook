@@ -1,6 +1,6 @@
 {meta: title Making Excuses}
 {meta: artist Marty Robbins}
-{meta: writer Phoebe Binkley and Bob Binkley}
+{meta: composer Phoebe Binkley and Bob Binkley}
 
 {start_of_verse: Verse 1}
 [G]I've been making excuses ever [D7]since you went [G]away

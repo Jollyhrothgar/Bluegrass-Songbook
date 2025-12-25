@@ -1,6 +1,6 @@
 {meta: title Shahdaroba}
 {meta: artist Roy Orbison}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [Am]Where the Nile flows [Dm]and the [Am]moon glows

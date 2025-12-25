@@ -1,6 +1,6 @@
 {meta: title Come The Morning I Must Fly}
 {meta: artist Johnny Lee}
-{meta: writer Danny Epps and Bettye Holman}
+{meta: composer Danny Epps and Bettye Holman}
 
 {start_of_verse: Verse 1}
 [C]I'll be leaving in the [Dm]morning 

@@ -1,6 +1,6 @@
 {meta: title Lord I've Tried Everything But You}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Carl Knight}
+{meta: composer Carl Knight}
 
 {start_of_verse: Verse 1}
 [C]I guess I've tried about everything

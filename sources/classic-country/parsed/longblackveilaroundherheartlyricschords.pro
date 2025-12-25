@@ -1,6 +1,6 @@
 {meta: title Long Black Veil Around Her Heart}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene Martin}
+{meta: composer Lloene Martin}
 
 {start_of_verse: Verse 1}
 [C]She wears a long black veil around her heart

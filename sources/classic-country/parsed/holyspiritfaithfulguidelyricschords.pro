@@ -1,6 +1,6 @@
 {meta: title Holy Spirit Faithful Guide}
 {meta: artist Tennessee Ernie Ford}
-{meta: writer Jesse Baxter and Marcus Wells}
+{meta: composer Jesse Baxter and Marcus Wells}
 
 {start_of_verse: Verse 1}
 [C]Holy Spirit faithful [G7]Guide 

@@ -1,6 +1,6 @@
 {meta: title Bring On The Night}
 {meta: artist Alan Jackson}
-{meta: writer Charlie Craig, Keith Stegall, Alan Jackson}
+{meta: composer Charlie Craig, Keith Stegall, Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]It's twilight and the street lights are comin' [F]on

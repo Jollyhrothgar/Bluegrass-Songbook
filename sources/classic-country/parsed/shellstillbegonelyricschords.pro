@@ -1,6 +1,6 @@
 {meta: title She'll Still Be Gone}
 {meta: artist Stonewall Jackson}
-{meta: writer Harlan Howard and Don Bowman}
+{meta: composer Harlan Howard and Don Bowman}
 
 {start_of_verse: Verse 1}
 [C]That face in the mirror [G7]across the bar from me

@@ -1,6 +1,6 @@
 {meta: title Shepherd Of My Heart}
 {meta: artist Johnny Cash}
-{meta: writer Jenny Lou Carson}
+{meta: composer Jenny Lou Carson}
 
 {start_of_verse: Verse 1}
 [C]You're the shepherd of my heart so treat it [F]tenderly

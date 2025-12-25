@@ -1,6 +1,6 @@
 {meta: title Because We Are Young}
 {meta: artist Mac Wiseman}
-{meta: writer Howard Johnson}
+{meta: composer Howard Johnson}
 
 {start_of_verse: Verse 1}
 [C]Because we are young they say I’ll [G7]forget you

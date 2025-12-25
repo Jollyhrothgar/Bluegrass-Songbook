@@ -1,6 +1,6 @@
 {meta: title Candy Man}
 {meta: artist Roy Orbison}
-{meta: writer Beverly Ross and Fred Neil}
+{meta: composer Beverly Ross and Fred Neil}
 
 {start_of_verse: Verse 1}
 [G]Come on baby let me take you by the hand

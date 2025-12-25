@@ -1,6 +1,6 @@
 {meta: title I Don't Wanna Talk It Over Anymore}
 {meta: artist Connie Smith}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]I don't wanna talk it over any[F]more

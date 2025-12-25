@@ -1,6 +1,6 @@
 {meta: title I Got You}
 {meta: artist Waylon Jennings}
-{meta: writer Ricci Mareno and Gordon Galbraith}
+{meta: composer Ricci Mareno and Gordon Galbraith}
 
 {start_of_verse: Verse 1}
 [G]Don't get no attention from the people on street

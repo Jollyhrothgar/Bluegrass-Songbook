@@ -1,6 +1,6 @@
 {meta: title I Gave My Wedding Dress Away}
 {meta: artist Kitty Wells}
-{meta: writer Fred Rose and Hy Heath}
+{meta: composer Fred Rose and Hy Heath}
 
 {start_of_verse: Verse 1}
 [G]Tomorrow was to [G7]be my wedding [C]day

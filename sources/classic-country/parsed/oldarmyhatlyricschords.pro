@@ -1,6 +1,6 @@
 {meta: title Old Army Hat}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson and Walt Aldridge}
+{meta: composer Bill Anderson and Walt Aldridge}
 
 {start_of_verse: Verse 1}
 [C]He came home to Tennessee a young man at the end of forty-[Dm]five

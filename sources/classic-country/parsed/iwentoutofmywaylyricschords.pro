@@ -1,6 +1,6 @@
 {meta: title I Went Out Of My Way}
 {meta: artist Porter Wagoner}
-{meta: writer Vic McAlpin, Roy Drusky, Jean Elroad}
+{meta: composer Vic McAlpin, Roy Drusky, Jean Elroad}
 
 {start_of_verse: Verse 1}
 [G]I went out of my way to make you [C]happy

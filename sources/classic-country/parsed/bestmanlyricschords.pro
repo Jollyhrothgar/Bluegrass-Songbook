@@ -1,6 +1,6 @@
 {meta: title Best Man}
 {meta: artist Bobby Helms}
-{meta: writer Jerry Fuller}
+{meta: composer Jerry Fuller}
 
 {start_of_verse: Verse 1}
 [C]I am gathered [Em]here to[Am]gether[G7]   [C]

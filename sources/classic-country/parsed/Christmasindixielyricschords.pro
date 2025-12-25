@@ -1,6 +1,6 @@
 {meta: title Christmas in Dixie}
 {meta: artist Alabama}
-{meta: writer Teddy Gentry, Randy Owen, Jeff Cook, and Mark Herndon}
+{meta: composer Teddy Gentry, Randy Owen, Jeff Cook, and Mark Herndon}
 
 {start_of_verse: Verse 1}
 [C]By now in New York [Dm]City  [G7]there's snow on the [C]ground

@@ -1,6 +1,6 @@
 {meta: title Out Of My Head And Back In My Bed Lyrics Chords}
 {meta: artist Loretta Lynn}
-{meta: writer Peggy Forman}
+{meta: composer Peggy Forman}
 
 {start_of_verse: Verse 1}
 [C]Lying alone in this big old bed I got you on my mind

@@ -1,6 +1,6 @@
 {meta: title Yukatan Cafe}
 {meta: artist Anne Murray}
-{meta: writer Adam Mitchell}
+{meta: composer Adam Mitchell}
 
 {start_of_verse: Verse 1}
 [D7]There's a [Am]big fan that's slowly [D7]turnin' in a [Am]Yucatan [D7]Cafe 

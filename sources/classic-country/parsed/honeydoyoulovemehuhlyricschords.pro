@@ -1,6 +1,6 @@
 {meta: title Honey Do You Love Me Huh}
 {meta: artist Hank Williams}
-{meta: writer Hank Williams and Curly Williams}
+{meta: composer Hank Williams and Curly Williams}
 
 {start_of_verse: Verse 1}
 [C]Honey do you love me huh honey do you love me huh 

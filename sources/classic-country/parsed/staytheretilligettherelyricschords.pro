@@ -1,6 +1,6 @@
 {meta: title Stay There Till I Get There}
 {meta: artist Lynn Anderson}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]The telephone's ringin' and it's [C]three a.m. 

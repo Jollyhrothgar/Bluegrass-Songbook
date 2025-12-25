@@ -1,6 +1,6 @@
 {meta: title Only Alive}
 {meta: artist Roy Orbison}
-{meta: writer Dewayne Blackwell and Ronald Blackwell}
+{meta: composer Dewayne Blackwell and Ronald Blackwell}
 
 {start_of_verse: Verse 1}
 [G]When you happened by my open [A7]eyes could see

@@ -1,6 +1,6 @@
 {meta: title Mister Can You Spare A Dime}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin and Lorry G. Martin}
+{meta: composer Lloene S. Martin and Lorry G. Martin}
 
 {start_of_verse: Verse 1}
 [C]Trains pull in [G7]trains pull out [C]always there on [G7]time

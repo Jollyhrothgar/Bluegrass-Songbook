@@ -1,6 +1,6 @@
 {meta: title Move Down The Line}
 {meta: artist Johnny Horton}
-{meta: writer Billy Wallace}
+{meta: composer Billy Wallace}
 
 {start_of_verse: Verse 1}
 [C]Move down the line now you can’t be true

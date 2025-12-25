@@ -1,6 +1,6 @@
 {meta: title No One Cared So Much For Me}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Jim Hill}
+{meta: composer Jim Hill}
 
 {start_of_verse: Verse 1}
 [G]There's no other name so sweet as Jes[D7]us 

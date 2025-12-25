@@ -1,6 +1,6 @@
 {meta: title God Only Knows Who'll Take Her Home}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton and Red Steagall}
+{meta: composer Glenn Sutton and Red Steagall}
 
 {start_of_verse: Verse 1}
 [C]I know you've seen her kind before

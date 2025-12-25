@@ -1,6 +1,6 @@
 {meta: title It's Only Love}
 {meta: artist Ray Price}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]If I don't act my[C]self [F]when I'm [D7]around you

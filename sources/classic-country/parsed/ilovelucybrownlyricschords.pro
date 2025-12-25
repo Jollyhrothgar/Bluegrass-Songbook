@@ -1,6 +1,6 @@
 {meta: title I Love Lucy Brown}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]They tell me Homer [C7]Jones was huntin' [F]bears

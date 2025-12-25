@@ -1,6 +1,6 @@
 {meta: title I Did}
 {meta: artist Patty Loveless}
-{meta: writer Patty Ramey}
+{meta: composer Patty Ramey}
 
 {start_of_verse: Verse 1}
 [C]Whoever needed you well [G7]I did

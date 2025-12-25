@@ -1,6 +1,6 @@
 {meta: title Confused}
 {meta: artist Lefty Frizzell}
-{meta: writer Merle Kilgore, Lefty Frizzell, Abe Mulkey}
+{meta: composer Merle Kilgore, Lefty Frizzell, Abe Mulkey}
 
 {start_of_verse: Verse 1}
 [C]You used me then [F]refused [C]me

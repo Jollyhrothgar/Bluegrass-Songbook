@@ -1,6 +1,6 @@
 {meta: title Side by Side}
 {meta: artist Patsy Cline}
-{meta: writer Harry Woods}
+{meta: composer Harry Woods}
 
 {start_of_verse: Verse 1}
 [C]Oh  we ain't got a barrel of [C][F]mon-ey

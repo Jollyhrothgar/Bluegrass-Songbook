@@ -1,6 +1,6 @@
 {meta: title Charlotte's in North Carolina}
 {meta: artist Keith Whitley Conley}
-{meta: writer Dean Dillon, Blake Mevis}
+{meta: composer Dean Dillon, Blake Mevis}
 
 {start_of_verse: Verse 1}
 [C]I watched the taxi take her [F]away

@@ -1,6 +1,6 @@
 {meta: title Time Has Treated You Well}
 {meta: artist Mel Tillis}
-{meta: writer Dave Hanner}
+{meta: composer Dave Hanner}
 
 {start_of_verse: Verse 1}
 [C]Is that you  [F]I can't believe my [C]eyes

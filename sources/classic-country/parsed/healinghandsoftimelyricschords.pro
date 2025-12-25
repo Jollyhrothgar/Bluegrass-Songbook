@@ -1,6 +1,6 @@
 {meta: title Healing Hands of Time}
 {meta: artist Ray Price}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]They're working while I'm missing you 

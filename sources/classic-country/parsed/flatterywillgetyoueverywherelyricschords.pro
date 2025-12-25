@@ -1,6 +1,6 @@
 {meta: title Flattery Will Get You Everywhere}
 {meta: artist Lynn Anderson}
-{meta: writer Liz Anderson}
+{meta: composer Liz Anderson}
 
 {start_of_verse: Verse 1}
 [C]I noticed how you smiled just now surprised at [F]having [C]seen

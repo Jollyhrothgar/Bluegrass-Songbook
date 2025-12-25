@@ -1,6 +1,6 @@
 {meta: title Sweet Dreams Of You}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley and John David}
+{meta: composer Paul Kennerley and John David}
 
 {start_of_verse: Verse 1}
 [C]Lonely [F]tears roll [C]down

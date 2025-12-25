@@ -1,6 +1,6 @@
 {meta: title I'd Like To Be}
 {meta: artist Jim Reeves}
-{meta: writer Hugh Ashley}
+{meta: composer Hugh Ashley}
 
 {start_of_verse: Verse 1}
 [C]I'd like to be the picture on your mantel 

@@ -1,6 +1,6 @@
 {meta: title If I Want To}
 {meta: artist Marty Robbins}
-{meta: writer Buddy Mize}
+{meta: composer Buddy Mize}
 
 {start_of_verse: Verse 1}
 [F]Uh hum la da la [G7]da if I [C]want to

@@ -1,6 +1,6 @@
 {meta: title A Lifetime isn't Long Enough}
 {meta: artist Faron Young}
-{meta: writer Virginia Midgett and Arthur Korb}
+{meta: composer Virginia Midgett and Arthur Korb}
 
 {start_of_verse: Verse 1}
 [C]A lifetime isn't long enough [F]to be in love with [C]you

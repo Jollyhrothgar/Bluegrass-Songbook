@@ -1,6 +1,6 @@
 {meta: title Wheels}
 {meta: artist Emmylou Harris}
-{meta: writer Chris Hillman and Gram Parsons}
+{meta: composer Chris Hillman and Gram Parsons}
 
 {start_of_verse: Verse 1}
 [G7]We've all got [C]whe[C7]els to [F]take ourselves [C]away

@@ -1,6 +1,6 @@
 {meta: title Tomorrow's Gonna Be Better Than Today}
 {meta: artist Bob Luman}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]All day long it's been [G7]rainin' at my [C]place

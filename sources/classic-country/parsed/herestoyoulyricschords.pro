@@ -1,6 +1,6 @@
 {meta: title Here's To You}
 {meta: artist Ray Price}
-{meta: writer Ray Holt}
+{meta: composer Ray Holt}
 
 {start_of_verse: Verse 1}
 [C]For all the times when I wonder [F]why you love me

@@ -1,6 +1,6 @@
 {meta: title No One Could Ever Take Me From You}
 {meta: artist Charley Pride}
-{meta: writer Hal Bynum}
+{meta: composer Hal Bynum}
 
 {start_of_verse: Verse 1}
 [C]Darlin' no one could ever [G7]take me from [C]you

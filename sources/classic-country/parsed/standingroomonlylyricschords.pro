@@ -1,6 +1,6 @@
 {meta: title Standing Room Only}
 {meta: artist Kitty Wells}
-{meta: writer Billy Wallace and Bill Carlisle}
+{meta: composer Billy Wallace and Bill Carlisle}
 
 {start_of_verse: Verse 1}
 [G]In your heart there's just standing room [C]only

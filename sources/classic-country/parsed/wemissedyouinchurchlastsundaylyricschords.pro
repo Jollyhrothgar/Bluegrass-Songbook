@@ -1,6 +1,6 @@
 {meta: title We Missed You In Church Last Sunday}
 {meta: artist Joe Mullins}
-{meta: writer Aubrey Holt}
+{meta: composer Aubrey Holt}
 
 {start_of_verse: Verse 1}
 [C]We missed you in church last [F]Sunday 

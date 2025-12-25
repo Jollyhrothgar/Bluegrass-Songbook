@@ -1,6 +1,6 @@
 {meta: title Rose Of Love}
 {meta: artist Red Sovine}
-{meta: writer Jack Rhodes and John Fitzmorris}
+{meta: composer Jack Rhodes and John Fitzmorris}
 
 {start_of_verse: Verse 1}
 [G]There's a rose vine clinging [D7]tightly by my [G]window

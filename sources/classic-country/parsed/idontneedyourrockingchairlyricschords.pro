@@ -1,6 +1,6 @@
 {meta: title I Don't Need Your Rocking Chair}
 {meta: artist George Jones}
-{meta: writer Frank Dycus, Billy Yates, Kerry Kurt Phillips}
+{meta: composer Frank Dycus, Billy Yates, Kerry Kurt Phillips}
 
 {start_of_verse: Verse 1}
 [G]I don't need your rocking [C]chair

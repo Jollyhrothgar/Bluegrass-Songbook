@@ -1,6 +1,6 @@
 {meta: title He Can't Fill My Shoes}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Larry Kingston and Frank Dycus}
+{meta: composer Larry Kingston and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [C]There they go and there goes my satis[G7]faction on his face

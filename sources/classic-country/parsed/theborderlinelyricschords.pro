@@ -1,6 +1,6 @@
 {meta: title The Borderline}
 {meta: artist Alabama}
-{meta: writer Gus Kahn and Walter Donaldson}
+{meta: composer Gus Kahn and Walter Donaldson}
 
 {start_of_verse: Verse 1}
 [Dm]In a cloud of dust cross Texas [C]south of San Antone

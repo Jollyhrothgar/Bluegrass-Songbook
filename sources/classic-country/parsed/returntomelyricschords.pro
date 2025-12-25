@@ -1,6 +1,6 @@
 {meta: title Return To Me}
 {meta: artist Marty Robbins}
-{meta: writer Carmen Lombardo and Denny DiMinno}
+{meta: composer Carmen Lombardo and Denny DiMinno}
 
 {start_of_verse: Verse 1}
 [G7]Return to [C]me oh my dear I'm so [Dm]lonely

@@ -1,6 +1,6 @@
 {meta: title Dog Gone Shame}
 {meta: artist Lonesome River Band}
-{meta: writer Ray Cline and Ralph Stanley}
+{meta: composer Ray Cline and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]You've been steppin' out on me 

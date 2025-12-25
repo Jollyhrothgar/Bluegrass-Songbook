@@ -1,6 +1,6 @@
 {meta: title Real Old Fashioned Broken Heart}
 {meta: artist Sammy Kershaw}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]I played at love I thought I was a [C]sophisticated [Am]kind

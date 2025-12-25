@@ -1,6 +1,6 @@
 {meta: title Can't Control The Wind}
 {meta: artist Ricky Skaggs}
-{meta: writer Bill Anderson, Roger Pirtle, Pat Lovely}
+{meta: composer Bill Anderson, Roger Pirtle, Pat Lovely}
 
 {start_of_verse: Verse 1}
 [C]When I was [G7]a boy [Am]daddy was [C]my guiding [F]light

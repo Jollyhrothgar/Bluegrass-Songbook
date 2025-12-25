@@ -1,6 +1,6 @@
 {meta: title Acting Like My Old Self Again}
 {meta: artist Wanda Jackson}
-{meta: writer Red Simpson}
+{meta: composer Red Simpson}
 
 {start_of_verse: Verse 1}
 [G]Yes I'm [D7]acting like my old self [G]again

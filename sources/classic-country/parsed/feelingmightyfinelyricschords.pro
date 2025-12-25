@@ -1,6 +1,6 @@
 {meta: title Feeling Mighty Fine}
 {meta: artist Statler Brother}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [C]I woke up this morning feeling fine 

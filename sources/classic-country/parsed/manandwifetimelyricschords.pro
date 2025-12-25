@@ -1,6 +1,6 @@
 {meta: title Man And Wife Time}
 {meta: artist Jim Ed Brown}
-{meta: writer Buzz Rabin and Dave Pittman}
+{meta: composer Buzz Rabin and Dave Pittman}
 
 {start_of_verse: Verse 1}
 [C]Another day is over hard work and play comes to an [D7]end

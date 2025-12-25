@@ -1,6 +1,6 @@
 {meta: title Leaning To Lean}
 {meta: artist Wanda Jackson}
-{meta: writer John Stallings}
+{meta: composer John Stallings}
 
 {start_of_verse: Verse 1}
 [C]I'm learning to lean learning to [F]lean

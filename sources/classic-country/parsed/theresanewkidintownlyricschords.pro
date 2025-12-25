@@ -1,6 +1,6 @@
 {meta: title There's A New Kid In Town}
 {meta: artist Alan Jackson with Keith Whitley}
-{meta: writer Curly Putman, Don Cook, Keith Whitley}
+{meta: composer Curly Putman, Don Cook, Keith Whitley}
 
 {start_of_verse: Verse 1}
 [C]We're looking for the King the new Me[F]ssi[C]ah

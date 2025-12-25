@@ -1,6 +1,6 @@
 {meta: title Shenandoah Waltz}
 {meta: artist Hank Thompson}
-{meta: writer Chubby Wise [3/4 time]}
+{meta: composer Chubby Wise [3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]In the Shenandoah Valley of [G7]Virginia 

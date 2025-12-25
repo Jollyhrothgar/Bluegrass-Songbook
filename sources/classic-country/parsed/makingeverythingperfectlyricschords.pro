@@ -1,6 +1,6 @@
 {meta: title Making Everything Perfect}
 {meta: artist Gene Watson}
-{meta: writer Rhonda Vincent}
+{meta: composer Rhonda Vincent}
 
 {start_of_verse: Verse 1}
 [C]I've been sitting here thinking that [F]I oughta be drinking [C]tonight

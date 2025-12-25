@@ -1,6 +1,6 @@
 {meta: title Nancy Jane}
 {meta: artist Bob Wills}
-{meta: writer Tommy Duncan and Bob Wills}
+{meta: composer Tommy Duncan and Bob Wills}
 
 {start_of_verse: Verse 1}
 [C]I gotta gal long and tall sweet as she can be

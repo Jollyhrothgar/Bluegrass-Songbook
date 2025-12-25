@@ -1,6 +1,6 @@
 {meta: title Beautiful Lies}
 {meta: artist Jean Sheppard}
-{meta: writer Jack Rhodes}
+{meta: composer Jack Rhodes}
 
 {start_of_verse: Verse 1}
 [G]Beautiful lies beautiful [C]lies 

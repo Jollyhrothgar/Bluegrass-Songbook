@@ -1,6 +1,6 @@
 {meta: title Give Me One More Kiss}
 {meta: artist Jim Reeves}
-{meta: writer Bob Center}
+{meta: composer Bob Center}
 
 {start_of_verse: Verse 1}
 [G]Give me one more kiss

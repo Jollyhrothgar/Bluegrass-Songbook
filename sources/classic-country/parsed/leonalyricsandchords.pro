@@ -1,6 +1,6 @@
 {meta: title Leona}
 {meta: artist Stonewall Jackson}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Leona Leona you tell [F]him you're [C]through

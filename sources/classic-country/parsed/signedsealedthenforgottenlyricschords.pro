@@ -1,6 +1,6 @@
 {meta: title Signed Sealed Then Forgotten}
 {meta: artist Cowboy Copas}
-{meta: writer Marcel Joseph}
+{meta: composer Marcel Joseph}
 
 {start_of_verse: Verse 1}
 [G]It was signed it was [D7]sealed then [G]forgotten

@@ -1,6 +1,6 @@
 {meta: title Brave Apostles Twelve}
 {meta: artist Statler Brother}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]But the ministry has begun things were starting to build

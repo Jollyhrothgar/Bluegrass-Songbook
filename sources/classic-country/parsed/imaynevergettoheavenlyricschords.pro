@@ -1,6 +1,6 @@
 {meta: title I May Never Get to Heaven}
 {meta: artist Wanda Jackson}
-{meta: writer Buddy Killen and Bill Anderson}
+{meta: composer Buddy Killen and Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]I walked with you and talked with [G7]you 

@@ -1,6 +1,6 @@
 {meta: title An Old Memory Got In My Eye}
 {meta: artist Ferlin Husky}
-{meta: writer Jerry Foster}
+{meta: composer Jerry Foster}
 
 {start_of_verse: Verse 1}
 [G]I was doing fine until I saw her [D7]yesterday

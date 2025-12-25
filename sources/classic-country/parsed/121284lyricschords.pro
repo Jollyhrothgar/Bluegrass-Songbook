@@ -1,6 +1,6 @@
 {meta: title 12-12-84}
 {meta: artist David Ball}
-{meta: writer Billy Spencer, David Ball, Tommy Polk}
+{meta: composer Billy Spencer, David Ball, Tommy Polk}
 
 {start_of_verse: Verse 1}
 [Em]12-12-8—4   [C][G][C]ten o'clock [D7]at [G]night

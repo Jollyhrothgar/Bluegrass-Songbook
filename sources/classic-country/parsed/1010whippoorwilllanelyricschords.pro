@@ -1,6 +1,6 @@
 {meta: title 1010 Whippoorwill Lane}
 {meta: artist Tanya Tucker}
-{meta: writer Kerry Phillips and Jerry Leseter}
+{meta: composer Kerry Phillips and Jerry Leseter}
 
 {start_of_verse: Verse 1}
 [G7]Right now all that [C]you can see is a [F]wall that stands [G7]between us

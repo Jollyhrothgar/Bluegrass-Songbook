@@ -1,6 +1,6 @@
 {meta: title As Long As I Live}
 {meta: artist George Jones}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [C]As long as I [F]live  [G7]I’ll be here be[C]side you

@@ -1,6 +1,6 @@
 {meta: title That's Too Good To Be True}
 {meta: artist the Everly Brothers}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [G]The girl I loved most [C]all my [G]life

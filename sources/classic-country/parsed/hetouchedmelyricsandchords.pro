@@ -1,6 +1,6 @@
 {meta: title He Touched Me}
 {meta: artist Connie Smith}
-{meta: writer Bill Gaither}
+{meta: composer Bill Gaither}
 
 {start_of_verse: Verse 1}
 [Dm]Shackled by a heavy [C][G7]burden

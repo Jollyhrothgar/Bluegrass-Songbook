@@ -1,6 +1,6 @@
 {meta: title Just Like That}
 {meta: artist Tracy Lawrence}
-{meta: writer Cleo Anderson and Michael Brown}
+{meta: composer Cleo Anderson and Michael Brown}
 
 {start_of_verse: Verse 1}
 [G]Last night I had a real good [D7]time just my buddies and [G]me

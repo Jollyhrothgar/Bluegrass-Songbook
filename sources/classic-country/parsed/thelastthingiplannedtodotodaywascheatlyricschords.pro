@@ -1,6 +1,6 @@
 {meta: title The Last Thing I Planned To Do Today Was Cheat}
 {meta: artist Gene Watson}
-{meta: writer Lola Jean Dillon and Bobby Harden}
+{meta: composer Lola Jean Dillon and Bobby Harden}
 
 {start_of_verse: Verse 1}
 [G]I fed an old stray dog this morning cause [C]he looked hungry

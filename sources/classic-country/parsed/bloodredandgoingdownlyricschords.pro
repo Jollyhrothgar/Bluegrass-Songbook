@@ -1,6 +1,6 @@
 {meta: title Blood Red and Going Down}
 {meta: artist Tanya Tucker}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]That Georgia sun was blood red and going down

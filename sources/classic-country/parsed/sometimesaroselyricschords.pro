@@ -1,6 +1,6 @@
 {meta: title Sometimes A Rose}
 {meta: artist Ray Price}
-{meta: writer Roger Brown}
+{meta: composer Roger Brown}
 
 {start_of_verse: Verse 1}
 [C]Our love has had its share of ups and [F]downs

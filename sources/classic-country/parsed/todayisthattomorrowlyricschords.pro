@@ -1,6 +1,6 @@
 {meta: title Today Is That Tomorrow}
 {meta: artist Charley Pride}
-{meta: writer Eugene Strasser and George Winters}
+{meta: composer Eugene Strasser and George Winters}
 
 {start_of_verse: Verse 1}
 [C]You took her wrong so many times [G7]always had your way

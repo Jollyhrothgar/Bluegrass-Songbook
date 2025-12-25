@@ -1,6 +1,6 @@
 {meta: title Around Here}
 {meta: artist George Jones}
-{meta: writer Richard Fagan and Jeff Moore}
+{meta: composer Richard Fagan and Jeff Moore}
 
 {start_of_verse: Verse 1}
 [G]Well I couldn't help but overhear you talkin' to Mary Lou

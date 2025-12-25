@@ -1,6 +1,6 @@
 {meta: title Dawn}
 {meta: artist Sonny James}
-{meta: writer Sonny James and Richard Hollingsworth}
+{meta: composer Sonny James and Richard Hollingsworth}
 
 {start_of_verse: Verse 1}
 [G]These are the [C]lonely hours [D7]from dusk till [G]dawn [C]    [G](Dawn)

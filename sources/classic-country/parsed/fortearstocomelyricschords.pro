@@ -1,6 +1,6 @@
 {meta: title For Tears To Come}
 {meta: artist Moe Bandy}
-{meta: writer Steve Collom}
+{meta: composer Steve Collom}
 
 {start_of_verse: Verse 1}
 [G]Step by [C]step you been [G]leaving

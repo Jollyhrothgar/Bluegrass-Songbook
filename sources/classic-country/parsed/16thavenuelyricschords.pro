@@ -1,6 +1,6 @@
 {meta: title 16th Avenue}
 {meta: artist Lacy J. Dalton}
-{meta: writer Thom Schuyler}
+{meta: composer Thom Schuyler}
 
 {start_of_verse: Verse 1}
 [G]From the corners of the country from the [D7]cities and the [G]farms

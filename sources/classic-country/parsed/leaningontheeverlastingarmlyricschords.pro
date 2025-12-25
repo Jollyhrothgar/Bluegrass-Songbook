@@ -1,6 +1,6 @@
 {meta: title Leaning On The Everlasting Arm}
 {meta: artist George Jones}
-{meta: writer Elisha A. Hoffman, Anthony J. Showalter, Wilbur Jones}
+{meta: composer Elisha A. Hoffman, Anthony J. Showalter, Wilbur Jones}
 
 {start_of_verse: Verse 1}
 [G]What a fellowship what a joy [C]divine

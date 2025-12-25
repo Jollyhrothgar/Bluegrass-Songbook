@@ -1,6 +1,6 @@
 {meta: title It's The Last Time I'll Ever Cheat On You}
 {meta: artist Justin Trevino}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [C]I woke up in a [F]strange place this [C]morning

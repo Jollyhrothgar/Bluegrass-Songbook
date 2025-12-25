@@ -1,6 +1,6 @@
 {meta: title I Love Thy Kingdom Lord}
 {meta: artist Tennessee Ernie Ford}
-{meta: writer Ernie Ford and Jack Fascinato}
+{meta: composer Ernie Ford and Jack Fascinato}
 
 {start_of_verse: Verse 1}
 [C]I love Thy kingdom [G7]Lord

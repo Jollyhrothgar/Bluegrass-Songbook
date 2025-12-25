@@ -1,6 +1,6 @@
 {meta: title Barbara Don't Let Me Be the Last to Know}
 {meta: artist Mel Street}
-{meta: writer Bob McDill and Wayland Holyfield}
+{meta: composer Bob McDill and Wayland Holyfield}
 
 {start_of_verse: Verse 1}
 [G]Barbara put your coffee down I need to [G7]talk to [C]you

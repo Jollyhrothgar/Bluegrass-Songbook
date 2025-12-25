@@ -1,6 +1,6 @@
 {meta: title You and Me with chords}
 {meta: artist Kitty Wells/Red Foley}
-{meta: writer Johnny Wright and Jack Anglin}
+{meta: composer Johnny Wright and Jack Anglin}
 
 {start_of_verse: Verse 1}
 [C]You and me together [F]life's a [C]pleasure 

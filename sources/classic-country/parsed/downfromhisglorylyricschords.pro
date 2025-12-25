@@ -1,6 +1,6 @@
 {meta: title Down From His Glory}
 {meta: artist The Blackwood Brothers}
-{meta: writer William E. Booth-Clibborn}
+{meta: composer William E. Booth-Clibborn}
 
 {start_of_verse: Verse 1}
 [G]Down from His glory

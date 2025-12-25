@@ -1,6 +1,6 @@
 {meta: title Trouble With Girls}
 {meta: artist Jean Shepard}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [C]Life ain't fun [F]until you get you [C]one

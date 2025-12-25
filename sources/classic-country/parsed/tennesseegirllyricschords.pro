@@ -1,6 +1,6 @@
 {meta: title Tennessee Girl}
 {meta: artist Charlie Pride}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]Well I left home at a [F]crack of dawn [G7]just about a year [C]ago

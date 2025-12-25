@@ -1,6 +1,6 @@
 {meta: title My Fate Is In Your Hands}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Dave Rich and Billy Harlan}
+{meta: composer Dave Rich and Billy Harlan}
 
 {start_of_verse: Verse 1}
 [G]Here's my heart now [C]see if you can [G]love me

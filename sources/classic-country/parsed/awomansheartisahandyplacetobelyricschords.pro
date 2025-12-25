@@ -1,6 +1,6 @@
 {meta: title A Woman's Heart (Is A Handy Place To Be)}
 {meta: artist Crystal Gayle}
-{meta: writer Marshall Chapman and Cort B. Casady}
+{meta: composer Marshall Chapman and Cort B. Casady}
 
 {start_of_verse: Verse 1}
 [G]He’s a charmer 

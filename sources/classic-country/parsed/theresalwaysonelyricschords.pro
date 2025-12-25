@@ -1,6 +1,6 @@
 {meta: title There's Always One}
 {meta: artist Red Sovine}
-{meta: writer Mary Biggs, Floyd Biggs, Hargus Robbins}
+{meta: composer Mary Biggs, Floyd Biggs, Hargus Robbins}
 
 {start_of_verse: Verse 1}
 [D7]There's [G]always one who [D7]loves a [C]lot

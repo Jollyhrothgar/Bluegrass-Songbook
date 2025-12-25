@@ -1,6 +1,6 @@
 {meta: title I Can't Get You Out Of My Mind}
 {meta: artist Carl Smith}
-{meta: writer Dallas Frazier and Sanger D. Shafer}
+{meta: composer Dallas Frazier and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]My heart still breaks with every thought of [F]you

@@ -1,6 +1,6 @@
 {meta: title We Won't Be Home Until Then}
 {meta: artist The Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G]The many [G7]years have [C]come and [G]gone

@@ -1,6 +1,6 @@
 {meta: title Breaking In Another Heart}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray, B. Auge, Hank Thompson}
+{meta: composer Billy Gray, B. Auge, Hank Thompson}
 
 {start_of_verse: Verse 1}
 [C]You’re breaking in another heart to take the place of [D7]mine

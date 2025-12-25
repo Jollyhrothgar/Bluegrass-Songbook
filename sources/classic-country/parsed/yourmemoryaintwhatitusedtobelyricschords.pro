@@ -1,6 +1,6 @@
 {meta: title Your Memory Ain't What It Used To Be}
 {meta: artist Mickey Gilley}
-{meta: writer Mary Fielder, Kim Morrison and Dickey Betts}
+{meta: composer Mary Fielder, Kim Morrison and Dickey Betts}
 
 {start_of_verse: Verse 1}
 [C]I got through the whole day [F]without once thinking of [C]you  yes I did

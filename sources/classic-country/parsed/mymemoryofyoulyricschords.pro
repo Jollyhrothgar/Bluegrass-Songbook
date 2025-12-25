@@ -1,6 +1,6 @@
 {meta: title My Memory Of You}
 {meta: artist Don Gibson}
-{meta: writer Lamar Morris and Warren Keith}
+{meta: composer Lamar Morris and Warren Keith}
 
 {start_of_verse: Verse 1}
 [C]You said I'd for[F]get that [G7]we'd ever [C]met

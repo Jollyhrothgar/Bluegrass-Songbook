@@ -1,6 +1,6 @@
 {meta: title Take Me Back To Texas}
 {meta: artist Red Steagall}
-{meta: writer David Price}
+{meta: composer David Price}
 
 {start_of_verse: Verse 1}
 [C]Take me [F]back to Texas 

@@ -1,6 +1,6 @@
 {meta: title Who Are You Who Am I}
 {meta: artist Elvis Presley}
-{meta: writer Sid Wayne and Ben Weisman}
+{meta: composer Sid Wayne and Ben Weisman}
 
 {start_of_verse: Verse 1}
 [E7]Who are [Em]you  [Dm]who am [C]I

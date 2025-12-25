@@ -1,6 +1,6 @@
 {meta: title Rock Around With Ollie Vee}
 {meta: artist Buddy Holly}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [G]Well we're gonna rock

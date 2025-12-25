@@ -1,6 +1,6 @@
 {meta: title Barrooms And Pop A Tops}
 {meta: artist Jim Ed Brown}
-{meta: writer Jim Hayner}
+{meta: composer Jim Hayner}
 
 {start_of_verse: Verse 1}
 [C]Soda shop children to five o'clock [F]bars

@@ -1,6 +1,6 @@
 {meta: title Sally Let Your Bangs Hang Down}
 {meta: artist Leona Williams}
-{meta: writer Billy Cox and Clarke Van Ness}
+{meta: composer Billy Cox and Clarke Van Ness}
 
 {start_of_verse: Verse 1}
 [C]Well I met a gal from Old Kentucky 

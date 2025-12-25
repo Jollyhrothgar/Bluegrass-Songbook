@@ -1,6 +1,6 @@
 {meta: title Name Dropper}
 {meta: artist Jean Shepard}
-{meta: writer Glenn Martin and Jeannie Seely}
+{meta: composer Glenn Martin and Jeannie Seely}
 
 {start_of_verse: Verse 1}
 [G]I've never been the [C]kind of girl [G]known for droppin' names

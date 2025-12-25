@@ -1,6 +1,6 @@
 {meta: title Time Is The Only Thing I’m After}
 {meta: artist Faron Young}
-{meta: writer Gene Nash}
+{meta: composer Gene Nash}
 
 {start_of_verse: Verse 1}
 [G]You’ve broken my heart in a million tiny pieces

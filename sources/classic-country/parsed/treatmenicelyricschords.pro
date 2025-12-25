@@ -1,6 +1,6 @@
 {meta: title Treat Me Nice}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Leiber and Mike Stoller}
+{meta: composer Jerry Leiber and Mike Stoller}
 
 {start_of_verse: Verse 1}
 [C]When I walk through that door baby be polite

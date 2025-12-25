@@ -1,6 +1,6 @@
 {meta: title I’m So In Love With You}
 {meta: artist Faron Young}
-{meta: writer Danny Dill}
+{meta: composer Danny Dill}
 
 {start_of_verse: Verse 1}
 [C]I always tried to tell myself 

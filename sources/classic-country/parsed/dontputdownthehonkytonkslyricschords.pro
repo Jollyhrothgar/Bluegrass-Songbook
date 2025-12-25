@@ -1,6 +1,6 @@
 {meta: title Don't Put Down The Honky Tonks}
 {meta: artist Charlie Walker}
-{meta: writer Sanger D. Shafer and William Ellis}
+{meta: composer Sanger D. Shafer and William Ellis}
 
 {start_of_verse: Verse 1}
 [G]Don't put down the honky tonks [C]until you been inside

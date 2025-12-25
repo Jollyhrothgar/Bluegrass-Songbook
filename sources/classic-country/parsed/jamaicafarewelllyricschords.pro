@@ -1,6 +1,6 @@
 {meta: title Jamaica Farewell}
 {meta: artist Don Williams}
-{meta: writer Lord Burgess}
+{meta: composer Lord Burgess}
 
 {start_of_verse: Verse 1}
 [C]Down the way where the nights are [F]gay 

@@ -1,6 +1,6 @@
 {meta: title I Can Live Forever}
 {meta: artist George Jones}
-{meta: writer Tony Stampley, Johnny Christopher, Harvey Hoy Lindsey}
+{meta: composer Tony Stampley, Johnny Christopher, Harvey Hoy Lindsey}
 
 {start_of_verse: Verse 1}
 [C]When you're born you [G7]enter in

@@ -1,6 +1,6 @@
 {meta: title I Want To Hear It From You}
 {meta: artist Ray Price}
-{meta: writer Fred Carter Jr.}
+{meta: composer Fred Carter Jr.}
 
 {start_of_verse: Verse 1}
 [C]If all our love is through if you've found someone [G7]new

@@ -1,6 +1,6 @@
 {meta: title What She's Doing Now}
 {meta: artist Garth Brooks}
-{meta: writer Pat Alger and Garth Brooks}
+{meta: composer Pat Alger and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]Last time I [G7]saw her it was turnin' col[Am]der 

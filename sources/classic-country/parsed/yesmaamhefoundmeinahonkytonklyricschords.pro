@@ -1,6 +1,6 @@
 {meta: title Yes Ma'am He Found Me In A Honky Tonk}
 {meta: artist Leona Williams}
-{meta: writer Glenn Barber}
+{meta: composer Glenn Barber}
 
 {start_of_verse: Verse 1}
 [C]Yes ma'am  he found me in a [F]honky-tonk

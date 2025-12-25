@@ -1,6 +1,6 @@
 {meta: title Be Not Afraid}
 {meta: artist Doyle Lawson}
-{meta: writer Jeannie C. Riley}
+{meta: composer Jeannie C. Riley}
 
 {start_of_verse: Verse 1}
 [C]Tossed to and fro the [F]disciples were fearing

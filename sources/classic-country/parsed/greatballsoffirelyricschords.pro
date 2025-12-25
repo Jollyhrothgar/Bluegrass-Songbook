@@ -1,6 +1,6 @@
 {meta: title Great Balls Of Fire}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Otis Blackwell and Jack Hammer}
+{meta: composer Otis Blackwell and Jack Hammer}
 
 {start_of_verse: Verse 1}
 [G]You shake my nerves and you rattle my brain

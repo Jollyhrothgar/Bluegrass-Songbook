@@ -1,6 +1,6 @@
 {meta: title Howdy Neighbor Howdy}
 {meta: artist Porter Wagoner}
-{meta: writer James Morris}
+{meta: composer James Morris}
 
 {start_of_verse: Verse 1}
 [G]Howdy neighbor howdy get [C]out and come right [G]in

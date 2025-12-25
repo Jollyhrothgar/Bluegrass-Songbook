@@ -1,6 +1,6 @@
 {meta: title Long Long Train}
 {meta: artist Boxcar Willie}
-{meta: writer Lloene S. Martin}
+{meta: composer Lloene S. Martin}
 
 {start_of_verse: Verse 1}
 [C]I’m on a long long journey on a [F]long long [C]train

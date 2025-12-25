@@ -1,6 +1,6 @@
 {meta: title Let There Be Peace}
 {meta: artist Daniel O'Donnell}
-{meta: writer Jimmy Kennedy}
+{meta: composer Jimmy Kennedy}
 
 {start_of_verse: Verse 1}
 [G]Let there be peace for [C]today and for[G]ever

@@ -1,6 +1,6 @@
 {meta: title Missing You}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo and Al Anderson}
+{meta: composer Raul Malo and Al Anderson}
 
 {start_of_verse: Verse 1}
 [C]It hurts to [D7]be alone [E7]every day that [F]you've been gone

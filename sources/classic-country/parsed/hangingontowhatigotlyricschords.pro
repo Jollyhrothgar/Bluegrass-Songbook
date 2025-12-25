@@ -1,6 +1,6 @@
 {meta: title Hanging On To What I Got}
 {meta: artist Buck Owens}
-{meta: writer Tom Brumley, Dusty Rhodes, Billye Spears}
+{meta: composer Tom Brumley, Dusty Rhodes, Billye Spears}
 
 {start_of_verse: Verse 1}
 [C]Well everybody got something on their mind

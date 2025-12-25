@@ -1,6 +1,6 @@
 {meta: title Room Across The Hall}
 {meta: artist The Willis Brothers}
-{meta: writer Jack Rhodes and Porter Jordan}
+{meta: composer Jack Rhodes and Porter Jordan}
 
 {start_of_verse: Verse 1}
 [C]Each night I stare in darkness at shadows on the [F]wall

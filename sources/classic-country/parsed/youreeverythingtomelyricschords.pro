@@ -1,6 +1,6 @@
 {meta: title You're Everything To Me}
 {meta: artist Wynn Stewart}
-{meta: writer Tommy Collins and Ray Rush}
+{meta: composer Tommy Collins and Ray Rush}
 
 {start_of_verse: Verse 1}
 [C]Like the picture to an artist that's [G7]painted just [C]right

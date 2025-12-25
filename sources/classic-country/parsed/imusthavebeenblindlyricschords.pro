@@ -1,6 +1,6 @@
 {meta: title I Must Have Been Blind Lyrics Chords}
 {meta: artist Slim Whitman}
-{meta: writer Jerry Crist and Claude Taylor}
+{meta: composer Jerry Crist and Claude Taylor}
 
 {start_of_verse: Verse 1}
 [C]I saw you last night with a [G7]friend

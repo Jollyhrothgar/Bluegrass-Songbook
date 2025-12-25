@@ -1,6 +1,6 @@
 {meta: title Tarnished Angel}
 {meta: artist George Jones}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]Your halo is the [G7]neon

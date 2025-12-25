@@ -1,6 +1,6 @@
 {meta: title My Special Angel}
 {meta: artist Bobby Helms}
-{meta: writer Jimmy Duncan}
+{meta: composer Jimmy Duncan}
 
 {start_of_verse: Verse 1}
 [C]Angel  angel  [Am]whoa-oh-oh-oh [G7]whoa

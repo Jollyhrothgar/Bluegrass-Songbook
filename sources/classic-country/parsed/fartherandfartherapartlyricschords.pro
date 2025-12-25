@@ -1,6 +1,6 @@
 {meta: title Farther And Farther Apart}
 {meta: artist Ferlin Husky}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]We're getting [G7]farther and farther [C]apart dear

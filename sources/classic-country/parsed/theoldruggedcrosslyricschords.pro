@@ -1,6 +1,6 @@
 {meta: title The Old Rugged Cross}
 {meta: artist Anne Murray}
-{meta: writer George Bernard}
+{meta: composer George Bernard}
 
 {start_of_verse: Verse 1}
 [G]On a hill far away stood an old rugged [C]cross

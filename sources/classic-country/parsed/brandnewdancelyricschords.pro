@@ -1,6 +1,6 @@
 {meta: title Brand New Dance}
 {meta: artist Emmylou Harris}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [C]Darlin' you're tired I can see in your eyes

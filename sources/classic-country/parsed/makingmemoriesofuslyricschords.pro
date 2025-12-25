@@ -1,6 +1,6 @@
 {meta: title Making Memories Of Us}
 {meta: artist Tracy Byrd}
-{meta: writer Rodney Crowell}
+{meta: composer Rodney Crowell}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna be here for you [G7]baby [C]I'll be a man of my [F]word

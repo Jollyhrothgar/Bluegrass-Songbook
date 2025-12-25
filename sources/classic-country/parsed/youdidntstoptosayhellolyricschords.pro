@@ -1,6 +1,6 @@
 {meta: title You Didn't Stop To Say Hello}
 {meta: artist Dottie West}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [G]It's a middle of the night what's on your mind I'd like to [D7]know

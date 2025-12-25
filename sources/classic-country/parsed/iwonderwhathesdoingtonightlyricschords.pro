@@ -1,6 +1,6 @@
 {meta: title I Wonder What He's Doing Tonight}
 {meta: artist Tanya Tucker}
-{meta: writer Gary Nicholson and John Jarrard}
+{meta: composer Gary Nicholson and John Jarrard}
 
 {start_of_verse: Verse 1}
 [C]It was [G]raining like it's raining tonight when I [D7]left him

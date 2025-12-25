@@ -1,6 +1,6 @@
 {meta: title Baby}
 {meta: artist Ferlin Husky}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]Baby  [G7]sweet sweet [C]baby

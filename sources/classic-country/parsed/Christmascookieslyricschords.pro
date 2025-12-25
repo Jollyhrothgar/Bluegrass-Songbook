@@ -1,6 +1,6 @@
 {meta: title Christmas Cookies}
 {meta: artist George Strait}
-{meta: writer Aaron Barker}
+{meta: composer Aaron Barker}
 
 {start_of_verse: Verse 1}
 [C]I sure do like those Christmas cookies sugar

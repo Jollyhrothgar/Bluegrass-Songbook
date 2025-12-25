@@ -1,6 +1,6 @@
 {meta: title Love Is What Life's All About}
 {meta: artist Moe Bandy}
-{meta: writer Carl Belew, Van Givens, Moe Bandy}
+{meta: composer Carl Belew, Van Givens, Moe Bandy}
 
 {start_of_verse: Verse 1}
 [G7](Love is what life's all [C]about)

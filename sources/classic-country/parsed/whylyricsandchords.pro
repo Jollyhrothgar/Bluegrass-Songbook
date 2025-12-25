@@ -1,6 +1,6 @@
 {meta: title Why}
 {meta: artist Tracy Byrd}
-{meta: writer Larry Bastian, Dewayne Blackwell, Bud Lee}
+{meta: composer Larry Bastian, Dewayne Blackwell, Bud Lee}
 
 {start_of_verse: Verse 1}
 [C]Where in a barroom [G7]when last night

@@ -1,6 +1,6 @@
 {meta: title Your Memory Comes Along}
 {meta: artist Connie Smith}
-{meta: writer Johnny Tillotson and Paul Tannen}
+{meta: composer Johnny Tillotson and Paul Tannen}
 
 {start_of_verse: Verse 1}
 [F](Then your memory comes [C]along)

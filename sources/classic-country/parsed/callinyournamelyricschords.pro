@@ -1,6 +1,6 @@
 {meta: title Callin' Your Name}
 {meta: artist Ricky Skaggs}
-{meta: writer Larry Cordle and Chris Austin}
+{meta: composer Larry Cordle and Chris Austin}
 
 {start_of_verse: Verse 1}
 [C]Well I'm callin' callin' callin' your name

@@ -1,6 +1,6 @@
 {meta: title You Have My Heart}
 {meta: artist Slim Whitman}
-{meta: writer Jerry Crist}
+{meta: composer Jerry Crist}
 
 {start_of_verse: Verse 1}
 [G7]You have my [C]heart although we’re [F]far apart

@@ -1,6 +1,6 @@
 {meta: title Love's Endless War}
 {meta: artist Don Williams}
-{meta: writer Roger Cook}
+{meta: composer Roger Cook}
 
 {start_of_verse: Verse 1}
 [F]Hearts have been [Em]broken in the [F]game of true [Em]love

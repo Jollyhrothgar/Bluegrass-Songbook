@@ -1,6 +1,6 @@
 {meta: title Color Song}
 {meta: artist Jean Shepard}
-{meta: writer Fred Wise, Dewey Bergman, Milton Leeds}
+{meta: composer Fred Wise, Dewey Bergman, Milton Leeds}
 
 {start_of_verse: Verse 1}
 [C]White's for the wedding that [F]I'll never [C]see

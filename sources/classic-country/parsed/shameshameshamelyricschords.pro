@@ -1,6 +1,6 @@
 {meta: title Shame Shame Shame}
 {meta: artist Webb Pierce}
-{meta: writer Arnie Powell and Trey Ackerman}
+{meta: composer Arnie Powell and Trey Ackerman}
 
 {start_of_verse: Verse 1}
 [C]I went out down to Baton Rouge and I [F]met up with a [G7]gal

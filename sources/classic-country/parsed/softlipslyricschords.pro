@@ -1,6 +1,6 @@
 {meta: title Soft Lips}
 {meta: artist Hank Thompson}
-{meta: writer Walt McCoy}
+{meta: composer Walt McCoy}
 
 {start_of_verse: Verse 1}
 [G7]Soft lips that feel so [C]divine 

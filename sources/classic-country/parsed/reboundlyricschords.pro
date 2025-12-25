@@ -1,6 +1,6 @@
 {meta: title Rebound}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Jim Leisy and Ray Male}
+{meta: composer Jim Leisy and Ray Male}
 
 {start_of_verse: Verse 1}
 [C]I fell in love with a pretty little gal I had it bad but [F]good

@@ -1,6 +1,6 @@
 {meta: title I'm My Own Grandpa}
 {meta: artist Willie Nelson}
-{meta: writer Moe Jaffe and Dwight Latham}
+{meta: composer Moe Jaffe and Dwight Latham}
 
 {start_of_verse: Verse 1}
 [G]Now many many years ago [D7]when I was twenty three

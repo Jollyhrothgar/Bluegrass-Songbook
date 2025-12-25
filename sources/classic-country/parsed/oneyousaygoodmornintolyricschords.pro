@@ -1,6 +1,6 @@
 {meta: title One You Say Good Mornin' To}
 {meta: artist Jimmy Dean}
-{meta: writer Ted Harris}
+{meta: composer Ted Harris}
 
 {start_of_verse: Verse 1}
 [C]Mhm I'd like to be the one you say good [D7]mornin' to

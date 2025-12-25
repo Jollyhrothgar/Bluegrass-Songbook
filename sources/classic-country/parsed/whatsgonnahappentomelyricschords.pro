@@ -1,6 +1,6 @@
 {meta: title What's Gonna Happen To Me}
 {meta: artist Gene Autry}
-{meta: writer Fred Rose and Gene Autry}
+{meta: composer Fred Rose and Gene Autry}
 
 {start_of_verse: Verse 1}
 [C]The flower of love came to wither and [G7]die

@@ -1,6 +1,6 @@
 {meta: title Faded Love and Winter Roses}
 {meta: artist Hank Williams}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]Faded love and winter roses  [G7]always bloom in [C]memory

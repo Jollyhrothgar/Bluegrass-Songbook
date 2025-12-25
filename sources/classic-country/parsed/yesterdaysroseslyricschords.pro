@@ -1,6 +1,6 @@
 {meta: title Yesterday's Roses}
 {meta: artist Marty Robbins}
-{meta: writer Fred Rose and Gene Autry}
+{meta: composer Fred Rose and Gene Autry}
 
 {start_of_verse: Verse 1}
 [C]Roses  [C7]pressed in a [F]bible

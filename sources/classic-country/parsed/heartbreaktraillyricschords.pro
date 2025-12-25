@@ -1,6 +1,6 @@
 {meta: title Heartbreak Trail}
 {meta: artist Hank Snow}
-{meta: writer Vaughn Horton and Denver Darling}
+{meta: composer Vaughn Horton and Denver Darling}
 
 {start_of_verse: Verse 1}
 [G]A cowboy [D7]returns to the scene [G]of his [D7]childhood

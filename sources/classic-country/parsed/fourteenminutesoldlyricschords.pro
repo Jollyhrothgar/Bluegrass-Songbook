@@ -1,6 +1,6 @@
 {meta: title Fourteen Minutes Old}
 {meta: artist Doug Stone}
-{meta: writer Dennis Knutson and A.L.(Doodle) Owens}
+{meta: composer Dennis Knutson and A.L.(Doodle) Owens}
 
 {start_of_verse: Verse 1}
 [C]Well I've had all the time I need to [G7]wonder

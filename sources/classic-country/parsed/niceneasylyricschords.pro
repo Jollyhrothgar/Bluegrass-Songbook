@@ -1,6 +1,6 @@
 {meta: title Nice'n Easy}
 {meta: artist Johnny Duncan and Janie Fricke}
-{meta: writer Alan Bergman, Marilyn Keith Bergman, Lew Spence}
+{meta: composer Alan Bergman, Marilyn Keith Bergman, Lew Spence}
 
 {start_of_verse: Verse 1}
 [G]Let's take it nice and easy it's gonna be so easy[Am]

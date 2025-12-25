@@ -1,6 +1,6 @@
 {meta: title Love On Arrival (LOA}
 {meta: artist Doyle Lawson}
-{meta: writer Dan Seals}
+{meta: composer Dan Seals}
 
 {start_of_verse: Verse 1}
 [G]I just had to call you babe I got your letter

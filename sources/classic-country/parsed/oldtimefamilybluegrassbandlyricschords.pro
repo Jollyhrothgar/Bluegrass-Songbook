@@ -1,6 +1,6 @@
 {meta: title Old Time Family Bluegrass Band}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Mike Hufman}
+{meta: composer Mike Hufman}
 
 {start_of_verse: Verse 1}
 [C]We catch our memories wandering through the past from time to time

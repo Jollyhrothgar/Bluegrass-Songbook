@@ -1,6 +1,6 @@
 {meta: title Does Your Heart Beat For Me}
 {meta: artist Patsy Cline}
-{meta: writer Russ Morgan, Arnold Johnson, Mitchell Parish}
+{meta: composer Russ Morgan, Arnold Johnson, Mitchell Parish}
 
 {start_of_verse: Verse 1}
 [Am]Though we [D7]said goodbye [Am]when [D7]the moon was [Am]high

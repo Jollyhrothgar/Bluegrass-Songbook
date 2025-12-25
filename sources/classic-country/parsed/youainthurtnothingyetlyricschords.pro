@@ -1,6 +1,6 @@
 {meta: title You Ain’t Hurt Nothing Yet}
 {meta: artist John Anderson}
-{meta: writer Al Anderson and Billy Lawson}
+{meta: composer Al Anderson and Billy Lawson}
 
 {start_of_verse: Verse 1}
 [C]You think your hurtin’ [F]don’t make me [C]laugh 

@@ -1,6 +1,6 @@
 {meta: title Long Distance Memory}
 {meta: artist Ronnie Milsap}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [C]To her I'm just some time she spent in '[F]74

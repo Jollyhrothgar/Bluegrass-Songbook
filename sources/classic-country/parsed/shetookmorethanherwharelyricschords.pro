@@ -1,6 +1,6 @@
 {meta: title She Took More Than Her Share}
 {meta: artist Moe Bandy}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]All she said she wanted [F]was a piece of [C]me

@@ -1,6 +1,6 @@
 {meta: title Green Snakes}
 {meta: artist Johnny Bush}
-{meta: writer Elton Williams and Jimmie Peters}
+{meta: composer Elton Williams and Jimmie Peters}
 
 {start_of_verse: Verse 1}
 [G]One fool on a stool is what I [C]heard the bartender [G]say

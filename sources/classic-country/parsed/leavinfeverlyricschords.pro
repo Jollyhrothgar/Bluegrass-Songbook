@@ -1,6 +1,6 @@
 {meta: title Leavin' Fever}
 {meta: artist Jean Shepard}
-{meta: writer Tommy Cash and Lorrie Morgan}
+{meta: composer Tommy Cash and Lorrie Morgan}
 
 {start_of_verse: Verse 1}
 [C]I’ve got leavin’ fever guess I [C7]caught it from you [F]baby

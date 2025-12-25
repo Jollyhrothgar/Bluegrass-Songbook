@@ -1,6 +1,6 @@
 {meta: title Just Give Me What You Think Is Fair}
 {meta: artist Vern Gosdin}
-{meta: writer Christopher Rider and B.L. Haywood}
+{meta: composer Christopher Rider and B.L. Haywood}
 
 {start_of_verse: Verse 1}
 [G]I love it when you’re with me

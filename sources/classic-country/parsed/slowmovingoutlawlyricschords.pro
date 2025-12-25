@@ -1,6 +1,6 @@
 {meta: title Slow Moving Outlaw}
 {meta: artist Waylon Jennings}
-{meta: writer Dee Moeller}
+{meta: composer Dee Moeller}
 
 {start_of_verse: Verse 1}
 [C]All the old [Am]stations are [C]being torn [Em]down

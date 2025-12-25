@@ -1,6 +1,6 @@
 {meta: title These Shoes}
 {meta: artist The Everly Brothers}
-{meta: writer Jon Goin and Larry Michael Lee}
+{meta: composer Jon Goin and Larry Michael Lee}
 
 {start_of_verse: Verse 1}
 [C]I need to buy me some new [F]shoes

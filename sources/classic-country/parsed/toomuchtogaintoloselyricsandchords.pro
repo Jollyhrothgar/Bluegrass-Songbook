@@ -1,6 +1,6 @@
 {meta: title Too Much To Gain To Lose}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Dottie Rambo}
+{meta: composer Dottie Rambo}
 
 {start_of_verse: Verse 1}
 [C]Too many [G7]miles be[C]hind me[C7]

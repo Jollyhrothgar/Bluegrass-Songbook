@@ -1,6 +1,6 @@
 {meta: title Together We Stand}
 {meta: artist Anne Murray}
-{meta: writer Tony Hiller and Peter Simons}
+{meta: composer Tony Hiller and Peter Simons}
 
 {start_of_verse: Verse 1}
 [C]There's nowhere in the world that I would [E7]rather be

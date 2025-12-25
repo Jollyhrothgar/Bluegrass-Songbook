@@ -1,6 +1,6 @@
 {meta: title We Haven't Tried}
 {meta: artist Gene Pitney}
-{meta: writer Melba Montgomery and Earl Montgomery}
+{meta: composer Melba Montgomery and Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [G](And the [C]reason we're not in [G]love today is [D7]because we haven't [G]tried)

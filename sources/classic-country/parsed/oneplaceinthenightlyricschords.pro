@@ -1,6 +1,6 @@
 {meta: title One Place In The Night}
 {meta: artist Kenny Rogers}
-{meta: writer Kim Carnes and Dave Ellingson}
+{meta: composer Kim Carnes and Dave Ellingson}
 
 {start_of_verse: Verse 1}
 [Am]Girl don't wait up [G7]tonight

@@ -1,6 +1,6 @@
 {meta: title Cry Myself to Sleep}
 {meta: artist Louving Brothers}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [C]I just kissed the one I love [G7]for the last [C]time

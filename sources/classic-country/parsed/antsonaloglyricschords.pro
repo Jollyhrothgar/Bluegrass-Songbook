@@ -1,6 +1,6 @@
 {meta: title Ants On A Log}
 {meta: artist Randy Travis}
-{meta: writer Donny Kees and Skip Ewing}
+{meta: composer Donny Kees and Skip Ewing}
 
 {start_of_verse: Verse 1}
 [G7]Ants on a [C]log floatin' down a [G7]river

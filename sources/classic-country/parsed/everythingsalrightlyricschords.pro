@@ -1,6 +1,6 @@
 {meta: title Everything's Alright}
 {meta: artist Larry Sparks}
-{meta: writer Emma Smith}
+{meta: composer Emma Smith}
 
 {start_of_verse: Verse 1}
 [G]If you want to know [C]what happiness [G]is

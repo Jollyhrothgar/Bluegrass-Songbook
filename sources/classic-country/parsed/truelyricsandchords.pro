@@ -1,6 +1,6 @@
 {meta: title True}
 {meta: artist George Strait}
-{meta: writer Jeff Stevens and Marv Green}
+{meta: composer Jeff Stevens and Marv Green}
 
 {start_of_verse: Verse 1}
 [G]True in this modern world when two lovers get together

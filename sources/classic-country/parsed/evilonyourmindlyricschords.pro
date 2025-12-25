@@ -1,6 +1,6 @@
 {meta: title Evil On Your Mind}
 {meta: artist Jean Shepard}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]You say I need the rest why don't I go 

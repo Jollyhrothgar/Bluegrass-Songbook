@@ -1,6 +1,6 @@
 {meta: title Paper Chains}
 {meta: artist Moe Bandy}
-{meta: writer Steve Collom}
+{meta: composer Steve Collom}
 
 {start_of_verse: Verse 1}
 [C]We're man and wife on paper 

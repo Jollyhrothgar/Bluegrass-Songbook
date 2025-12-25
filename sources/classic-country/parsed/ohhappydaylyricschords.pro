@@ -1,6 +1,6 @@
 {meta: title Oh Happy Day}
 {meta: artist Jack Greene}
-{meta: writer Edwin Hawkins}
+{meta: composer Edwin Hawkins}
 
 {start_of_verse: Verse 1}
 [C]Oh happy day (oh happy [F]day)

@@ -1,6 +1,6 @@
 {meta: title I Don't See How I Can Make It}
 {meta: artist Jean Shepard}
-{meta: writer George Richey}
+{meta: composer George Richey}
 
 {start_of_verse: Verse 1}
 [C]I don't [G]see how I can [D7]make it with you [G]gone

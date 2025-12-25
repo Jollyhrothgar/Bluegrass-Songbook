@@ -1,6 +1,6 @@
 {meta: title Woman Without Love}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [G]Her eyes tell the story so well she tries hard to [D7]hide

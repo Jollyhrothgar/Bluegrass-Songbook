@@ -1,6 +1,6 @@
 {meta: title For Momma}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid and Harold Reid}
+{meta: composer Don Reid and Harold Reid}
 
 {start_of_verse: Verse 1}
 [G]There's a Christmas [D7]memory [G]I recall so [G7]well

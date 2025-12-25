@@ -1,6 +1,6 @@
 {meta: title Okie From Muskogee}
 {meta: artist Merle Haggard}
-{meta: writer Roy Burris and Merle Haggard}
+{meta: composer Roy Burris and Merle Haggard}
 
 {start_of_verse: Verse 1}
 [G]We don't smoke marijuana in Muskogee

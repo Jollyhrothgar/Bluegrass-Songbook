@@ -1,6 +1,6 @@
 {meta: title He Must Have Loved Me A Lot}
 {meta: artist Doyle Lawson}
-{meta: writer Ida D. Gaskin}
+{meta: composer Ida D. Gaskin}
 
 {start_of_verse: Verse 1}
 [G]He left the [D7]splendors of [G]heaven for me

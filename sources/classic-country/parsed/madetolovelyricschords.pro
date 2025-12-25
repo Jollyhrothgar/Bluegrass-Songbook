@@ -1,6 +1,6 @@
 {meta: title Made To Love}
 {meta: artist The Everly Brothers}
-{meta: writer Phil Everly}
+{meta: composer Phil Everly}
 
 {start_of_verse: Verse 1}
 [G]My father looked at [Em]me one day said [Am]son it's plain to [D7]see

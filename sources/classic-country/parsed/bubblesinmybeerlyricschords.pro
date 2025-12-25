@@ -1,6 +1,6 @@
 {meta: title Bubbles in my Beer}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker, Bob Wills, Tommy Duncan}
+{meta: composer Cindy Walker, Bob Wills, Tommy Duncan}
 
 {start_of_verse: Verse 1}
 Bubbles in My Beer

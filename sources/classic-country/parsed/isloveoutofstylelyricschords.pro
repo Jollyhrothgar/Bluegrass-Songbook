@@ -1,6 +1,6 @@
 {meta: title Is Love Out Of Style}
 {meta: artist Wynn Stewart}
-{meta: writer Bobby Bare, Harlan Howard, Wynn Stewart}
+{meta: composer Bobby Bare, Harlan Howard, Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [C]Is love out of style is the passion to love [C7]and to [F]leave

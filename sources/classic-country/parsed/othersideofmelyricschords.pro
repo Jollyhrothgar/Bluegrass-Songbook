@@ -1,6 +1,6 @@
 {meta: title Other Side Of Me}
 {meta: artist Crystal Gayle}
-{meta: writer Howard Greenfield and Neil Sedaka}
+{meta: composer Howard Greenfield and Neil Sedaka}
 
 {start_of_verse: Verse 1}
 [C]You think you know me pretty [Em]well but [Am]how can you tell

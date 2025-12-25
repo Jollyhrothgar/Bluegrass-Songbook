@@ -1,6 +1,6 @@
 {meta: title Beautiful Way To Live}
 {meta: artist Dottie West}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]When I wake up every [Dm]morning

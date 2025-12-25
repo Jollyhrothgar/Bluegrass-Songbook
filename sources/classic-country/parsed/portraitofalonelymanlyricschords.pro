@@ -1,6 +1,6 @@
 {meta: title Portrait Of A Lonely Man}
 {meta: artist Freddie Hart}
-{meta: writer Lynn Phillips}
+{meta: composer Lynn Phillips}
 
 {start_of_verse: Verse 1}
 [C]Paint two eyes filled with tears

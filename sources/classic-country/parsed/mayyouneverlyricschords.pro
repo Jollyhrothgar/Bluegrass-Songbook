@@ -1,6 +1,6 @@
 {meta: title May You Never}
 {meta: artist The Bellamy Brothers}
-{meta: writer John Martyn}
+{meta: composer John Martyn}
 
 {start_of_verse: Verse 1}
 [D7]May you [G]never lay your head down [D7]without a hat to [G]hold

@@ -1,6 +1,6 @@
 {meta: title I Wonder Where We'd Be Tonight}
 {meta: artist Vern Gosdin}
-{meta: writer Jim Sales and Vern Gosdin}
+{meta: composer Jim Sales and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]Time is sure passing slow  [F]Lord it's only half past [C]ten 

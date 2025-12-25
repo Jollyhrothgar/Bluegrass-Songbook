@@ -1,6 +1,6 @@
 {meta: title Remember To Remind Me I'm Leaving}
 {meta: artist Ronnie Milsap}
-{meta: writer Charles Quillen and John Russell}
+{meta: composer Charles Quillen and John Russell}
 
 {start_of_verse: Verse 1}
 [C]You seem to know all the [G7]ways to [C]hurt me

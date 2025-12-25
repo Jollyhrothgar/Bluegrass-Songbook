@@ -1,6 +1,6 @@
 {meta: title If You See My Heart Today}
 {meta: artist Marty Robbins}
-{meta: writer Joe Babcock}
+{meta: composer Joe Babcock}
 
 {start_of_verse: Verse 1}
 [D7](If you see my heart [G]today)

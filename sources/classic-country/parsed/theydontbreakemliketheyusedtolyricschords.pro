@@ -1,6 +1,6 @@
 {meta: title They Don't Break 'Em Like They Used To}
 {meta: artist Pam Tillis}
-{meta: writer Roger Brown and Jason Sellers}
+{meta: composer Roger Brown and Jason Sellers}
 
 {start_of_verse: Verse 1}
 [C]You're here in my arms right where you say you [F]wanna be

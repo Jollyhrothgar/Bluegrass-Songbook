@@ -1,6 +1,6 @@
 {meta: title That's A Lie}
 {meta: artist Eddy Arnold}
-{meta: writer Charlie Williams and Scott Turner}
+{meta: composer Charlie Williams and Scott Turner}
 
 {start_of_verse: Verse 1}
 [C]Well I said if you're happy then I'm [F]glad[A7]   [Dm]

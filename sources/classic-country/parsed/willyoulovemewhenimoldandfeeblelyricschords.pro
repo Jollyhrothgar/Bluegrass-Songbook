@@ -1,6 +1,6 @@
 {meta: title Will You Love Me When I'm Old And Feeble}
 {meta: artist Wendell Roach}
-{meta: writer Smiley Bates}
+{meta: composer Smiley Bates}
 
 {start_of_verse: Verse 1}
 [G]Will you love me when I'm old and [C]feeble

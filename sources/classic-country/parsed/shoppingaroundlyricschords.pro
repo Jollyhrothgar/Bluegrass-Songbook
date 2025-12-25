@@ -1,6 +1,6 @@
 {meta: title Shopping Around}
 {meta: artist Elvis Presley}
-{meta: writer Sid Tepper, Roy Bennett, Aaron Schroeder}
+{meta: composer Sid Tepper, Roy Bennett, Aaron Schroeder}
 
 {start_of_verse: Verse 1}
 [C]You got the huggin'est arms the thrillin'est eyes

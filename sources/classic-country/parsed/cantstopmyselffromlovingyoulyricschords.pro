@@ -1,6 +1,6 @@
 {meta: title Can't Stop Myself From Loving You Lyrics and Chords}
 {meta: artist Patty Loveless}
-{meta: writer Kostas and Dean Folkword}
+{meta: composer Kostas and Dean Folkword}
 
 {start_of_verse: Verse 1}
 [G]Raindrops fall [D7]from the sky [C]teardrops fall [G]from my [E7]eyes

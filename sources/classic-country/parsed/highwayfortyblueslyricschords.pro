@@ -1,6 +1,6 @@
 {meta: title Highway Forty Blues}
 {meta: artist Ricky Skaggs}
-{meta: writer Larry Cordle}
+{meta: composer Larry Cordle}
 
 {start_of_verse: Verse 1}
 [G]Well these Highway Forty [Am]blues

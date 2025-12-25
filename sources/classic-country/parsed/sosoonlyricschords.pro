@@ -1,6 +1,6 @@
 {meta: title So Soon}
 {meta: artist Wanda Jackson}
-{meta: writer Mel Tillis and Wayne P. Walker}
+{meta: composer Mel Tillis and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]You promised love [D7]that never would [G]end

@@ -1,6 +1,6 @@
 {meta: title You're the Reason}
 {meta: artist Johnny Tillotson}
-{meta: writer Terry Fell, Bobby Edwards, Fred Henley}
+{meta: composer Terry Fell, Bobby Edwards, Fred Henley}
 
 {start_of_verse: Verse 1}
 [C]I just lay here at night I toss and I turn

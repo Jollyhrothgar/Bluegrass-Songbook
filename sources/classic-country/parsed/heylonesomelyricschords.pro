@@ -1,6 +1,6 @@
 {meta: title Hey Lonesome}
 {meta: artist The Bluegrass Album Band}
-{meta: writer Jimmy Martin and Sam Humphrey}
+{meta: composer Jimmy Martin and Sam Humphrey}
 
 {start_of_verse: Verse 1}
 [C]Hey lonesome who [F]broke your heart in[C]to

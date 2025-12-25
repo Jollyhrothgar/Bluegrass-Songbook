@@ -1,6 +1,6 @@
 {meta: title If You Can Lie A Little Bit}
 {meta: artist Kenny Rogers}
-{meta: writer Bob Stone}
+{meta: composer Bob Stone}
 
 {start_of_verse: Verse 1}
 [G7]If you can lie a [C]little bit

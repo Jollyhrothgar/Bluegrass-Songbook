@@ -1,6 +1,6 @@
 {meta: title Over You}
 {meta: artist Ferlin Husky}
-{meta: writer Bob Montgomery}
+{meta: composer Bob Montgomery}
 
 {start_of_verse: Verse 1}
 [G]Over you [D7]    [G]I'm hurtin' [C]over you 

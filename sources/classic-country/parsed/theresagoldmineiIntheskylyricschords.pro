@@ -1,6 +1,6 @@
 {meta: title There's A Gold Mine In The Sky}
 {meta: artist Gene Autry}
-{meta: writer Nick Kenny and Charles Kenny}
+{meta: composer Nick Kenny and Charles Kenny}
 
 {start_of_verse: Verse 1}
 [C]There's a Gold mine in the sky [C7]far a[F]way

@@ -1,6 +1,6 @@
 {meta: title Hands Of Yesterday}
 {meta: artist Loretta Lynn}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]I won't get too close to you cause I [G7]remember

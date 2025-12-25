@@ -1,6 +1,6 @@
 {meta: title Belles Of Southern Bell}
 {meta: artist Del Reeves}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [C]There's a Southern Bell Telephone Company in our [G7]town

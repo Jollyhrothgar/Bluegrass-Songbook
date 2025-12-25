@@ -1,6 +1,6 @@
 {meta: title Cracker Jack Diamond}
 {meta: artist Don Williams}
-{meta: writer Ronny Scaife and Neil Trasher}
+{meta: composer Ronny Scaife and Neil Trasher}
 
 {start_of_verse: Verse 1}
 [C]Well he spent that summer going door to door

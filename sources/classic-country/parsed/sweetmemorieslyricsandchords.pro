@@ -1,6 +1,6 @@
 {meta: title Sweet Memories}
 {meta: artist Webb Pierce}
-{meta: writer L.E. White}
+{meta: composer L.E. White}
 
 {start_of_verse: Verse 1}
 [F]I still [Em]have [C]memories [G7]sweet memories of [C]you

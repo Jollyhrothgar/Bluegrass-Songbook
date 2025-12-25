@@ -1,6 +1,6 @@
 {meta: title Do You Believe Me Now}
 {meta: artist Vern Gosdin}
-{meta: writer Vern Gosdin and Max D. Barnes}
+{meta: composer Vern Gosdin and Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [G]Don't you think you should've called

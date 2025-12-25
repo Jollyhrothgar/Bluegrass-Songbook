@@ -1,6 +1,6 @@
 {meta: title Need I Say More}
 {meta: artist George Strait}
-{meta: writer Roger Brown and Clay Blaker}
+{meta: composer Roger Brown and Clay Blaker}
 
 {start_of_verse: Verse 1}
 [C]You're the [Em]only [C]one and only my [Em]heart's beating [A7]for

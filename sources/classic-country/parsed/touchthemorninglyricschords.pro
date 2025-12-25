@@ -1,6 +1,6 @@
 {meta: title Touch The Morning}
 {meta: artist Don Gibson}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]Take the time to touch the [F]morning

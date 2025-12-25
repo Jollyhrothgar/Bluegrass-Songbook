@@ -1,6 +1,6 @@
 {meta: title You're Still On My Mind}
 {meta: artist Johnny Paycheck}
-{meta: writer Luke McDaniel}
+{meta: composer Luke McDaniel}
 
 {start_of_verse: Verse 1}
 [G]The jukebox is playing a honky tonk [C]song

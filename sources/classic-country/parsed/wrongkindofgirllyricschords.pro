@@ -1,6 +1,6 @@
 {meta: title Wrong Kind Of Girl}
 {meta: artist Wanda Jackson}
-{meta: writer Bobbie Carroll}
+{meta: composer Bobbie Carroll}
 
 {start_of_verse: Verse 1}
 [G]I grew up [C]fast I’ve [G]acted too [D7]wild

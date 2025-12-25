@@ -1,6 +1,6 @@
 {meta: title You Got It}
 {meta: artist Roy Orbison}
-{meta: writer Tom Petty, Roy Orbison and Jeff Lynne}
+{meta: composer Tom Petty, Roy Orbison and Jeff Lynne}
 
 {start_of_verse: Verse 1}
 [C]Every time I look into [A]your loving [C][F]eyes       

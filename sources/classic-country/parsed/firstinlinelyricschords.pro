@@ -1,6 +1,6 @@
 {meta: title First In Line}
 {meta: artist Elvis Presley}
-{meta: writer Aaron Schroeder and Ben Weisman}
+{meta: composer Aaron Schroeder and Ben Weisman}
 
 {start_of_verse: Verse 1}
 [C]When they gave out eyes like [Em]diamonds

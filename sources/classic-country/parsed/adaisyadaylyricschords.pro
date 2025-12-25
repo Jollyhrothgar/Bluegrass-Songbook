@@ -1,6 +1,6 @@
 {meta: title A Daisy a Day}
 {meta: artist Hank Snow}
-{meta: writer Jud Strunk}
+{meta: composer Jud Strunk}
 
 {start_of_verse: Verse 1}
 [G]He remembers the first [D7]time he met [G]her

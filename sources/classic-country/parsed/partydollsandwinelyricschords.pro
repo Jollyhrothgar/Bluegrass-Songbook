@@ -1,6 +1,6 @@
 {meta: title Party Dolls And Wine}
 {meta: artist Red Steagall}
-{meta: writer J.B. Barnhill}
+{meta: composer J.B. Barnhill}
 
 {start_of_verse: Verse 1}
 [C]Neon lights barroom bands [F]hotel rooms one night stands

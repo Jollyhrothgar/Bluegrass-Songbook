@@ -1,6 +1,6 @@
 {meta: title Where Have All The Average People Gone}
 {meta: artist Roger Miller}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [C]The people in this city call me [F]country

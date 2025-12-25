@@ -1,6 +1,6 @@
 {meta: title My Home's Across The Blue Ridge Mountains}
 {meta: artist Doc Watson}
-{meta: writer Clarence Ashley, Tom Ashley, A.P. Carter}
+{meta: composer Clarence Ashley, Tom Ashley, A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]I'm a gonna leave here Monday morning

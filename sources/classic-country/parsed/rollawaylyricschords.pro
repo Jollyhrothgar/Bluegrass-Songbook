@@ -1,6 +1,6 @@
 {meta: title Roll Away}
 {meta: artist Roger Miller}
-{meta: writer Roger Miller and Michael Smotherman}
+{meta: composer Roger Miller and Michael Smotherman}
 
 {start_of_verse: Verse 1}
 [C]Roll away roll [F]away

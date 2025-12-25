@@ -1,6 +1,6 @@
 {meta: title Between the Window and the Phone}
 {meta: artist Wanda Jackson}
-{meta: writer Wanda Jackson}
+{meta: composer Wanda Jackson}
 
 {start_of_verse: Verse 1}
 [C]Today is a far cry from [G7]yesterday

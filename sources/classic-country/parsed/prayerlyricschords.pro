@@ -1,6 +1,6 @@
 {meta: title Prayer}
 {meta: artist Eddy Arnold}
-{meta: writer Alfred Bryan and Edward Lisbona}
+{meta: composer Alfred Bryan and Edward Lisbona}
 
 {start_of_verse: Verse 1}
 [G]Prayer is a song we [Em]all can sing 

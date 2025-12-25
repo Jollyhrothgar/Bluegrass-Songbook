@@ -1,6 +1,6 @@
 {meta: title Break My Mind}
 {meta: artist Roy Orbison}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G]Baby oh baby

@@ -1,6 +1,6 @@
 {meta: title Not Enough Indians}
 {meta: artist Dean Martin}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [C]Wagon train of [F]love is moving [C]slow

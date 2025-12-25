@@ -1,6 +1,6 @@
 {meta: title Desperately}
 {meta: artist George Strait}
-{meta: writer Bruce Robison and Monte Warden}
+{meta: composer Bruce Robison and Monte Warden}
 
 {start_of_verse: Verse 1}
 [C]Every [G7]night it's the [C]same

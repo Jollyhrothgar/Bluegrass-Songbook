@@ -1,6 +1,6 @@
 {meta: title What'll You Do About Me}
 {meta: artist Randy Travis}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [C]All you wanted was a [G7]one night stand

@@ -1,6 +1,6 @@
 {meta: title Everybody Comes Aboard}
 {meta: artist Elvis Presley}
-{meta: writer Bill Giant, Bernie Baum, Florenece Kaye}
+{meta: composer Bill Giant, Bernie Baum, Florenece Kaye}
 
 {start_of_verse: Verse 1}
 [F]Everybody come [C]aboard the Showboat tonight

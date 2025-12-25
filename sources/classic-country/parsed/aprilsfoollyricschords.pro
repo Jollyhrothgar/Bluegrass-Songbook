@@ -1,6 +1,6 @@
 {meta: title April's Fool}
 {meta: artist Ray Price}
-{meta: writer Dave Kirby and Glenn Martin}
+{meta: composer Dave Kirby and Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]April doesn't [D7]shower  [F]her sweet love on [G7]me

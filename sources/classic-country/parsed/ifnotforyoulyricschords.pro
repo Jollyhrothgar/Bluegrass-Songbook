@@ -1,6 +1,6 @@
 {meta: title If Not For You}
 {meta: artist Jack Greene}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]If anything [F]I am or hope to [C]be

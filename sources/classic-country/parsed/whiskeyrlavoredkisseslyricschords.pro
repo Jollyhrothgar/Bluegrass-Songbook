@@ -1,6 +1,6 @@
 {meta: title Whiskey Flavored Kisses}
 {meta: artist Red Sovine}
-{meta: writer Jim Single}
+{meta: composer Jim Single}
 
 {start_of_verse: Verse 1}
 [G]Whiskey flavored kisses on my lips [C]tonight

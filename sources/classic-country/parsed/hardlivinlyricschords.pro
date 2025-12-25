@@ -1,6 +1,6 @@
 {meta: title Hard Livin'}
 {meta: artist Keith Whitley}
-{meta: writer David Halley}
+{meta: composer David Halley}
 
 {start_of_verse: Verse 1}
 [C]Well you can call out the sheriff and the highway patrol

@@ -1,6 +1,6 @@
 {meta: title I Reached For The Wine}
 {meta: artist Ernest Tubb and Loretta Lynn}
-{meta: writer Joyce Allsup}
+{meta: composer Joyce Allsup}
 
 {start_of_verse: Verse 1}
 [C]My eyes are perfect but [G7]now I see I'm blind

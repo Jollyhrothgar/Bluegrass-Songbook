@@ -1,6 +1,6 @@
 {meta: title The Devil Ain't a Lonely Woman's Friend}
 {meta: artist Red Steagall}
-{meta: writer Dallas Frazier and Sanger D. Shafer}
+{meta: composer Dallas Frazier and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]Barely past f[Am]ourteen Ginger M[C]ae met up with S[Am]hane

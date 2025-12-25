@@ -1,6 +1,6 @@
 {meta: title Take Me To Heaven}
 {meta: artist Tanya Tucker}
-{meta: writer Richard Mainegra and Susan Taylor}
+{meta: composer Richard Mainegra and Susan Taylor}
 
 {start_of_verse: Verse 1}
 [C]I know you love to make love like I love it 

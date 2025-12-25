@@ -1,6 +1,6 @@
 {meta: title Sometimes I Talk In My Sleep}
 {meta: artist Tony Booth}
-{meta: writer Eddy Raven}
+{meta: composer Eddy Raven}
 
 {start_of_verse: Verse 1}
 [C]I can't say for certain how much you do or don't [Dm]know [A#7]    [Dm]   [G7]

@@ -1,6 +1,6 @@
 {meta: title You'd Make An Angel Want To Cheat}
 {meta: artist The Kendalls}
-{meta: writer Bob Morrison, Bill Zerface, Jim Zerface}
+{meta: composer Bob Morrison, Bill Zerface, Jim Zerface}
 
 {start_of_verse: Verse 1}
 [C]Do do do do do do do do do [F]do

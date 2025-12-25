@@ -1,6 +1,6 @@
 {meta: title You’ve Got Something On Your Mind}
 {meta: artist Mickey Gilley}
-{meta: writer Dave Gibson, Norro Wilson, Roger Murrah}
+{meta: composer Dave Gibson, Norro Wilson, Roger Murrah}
 
 {start_of_verse: Verse 1}
 [C]Is there something on your [F]m-i[C]-n-[F]d

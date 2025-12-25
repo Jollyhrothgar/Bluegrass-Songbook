@@ -1,6 +1,6 @@
 {meta: title If You Were Mine Mary}
 {meta: artist Eddy Arnold}
-{meta: writer Chip Taylor}
+{meta: composer Chip Taylor}
 
 {start_of_verse: Verse 1}
 [C]If you were mine Mary know what I'd do

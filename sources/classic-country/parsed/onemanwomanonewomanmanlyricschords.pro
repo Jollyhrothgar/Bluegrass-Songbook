@@ -1,6 +1,6 @@
 {meta: title One Man Woman One Woman Man}
 {meta: artist Jim Ed Brown}
-{meta: writer Paul Anka}
+{meta: composer Paul Anka}
 
 {start_of_verse: Verse 1}
 [G7]You [C]caught me fooling [G7]around with somebody [C]new

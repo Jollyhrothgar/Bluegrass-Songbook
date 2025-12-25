@@ -1,6 +1,6 @@
 {meta: title Asleep}
 {meta: artist the Everly Brothers}
-{meta: writer Don Everly}
+{meta: composer Don Everly}
 
 {start_of_verse: Verse 1}
 [G7]Asleep oh please let me fall [Gm]asleep

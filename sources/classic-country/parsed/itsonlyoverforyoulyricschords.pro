@@ -1,6 +1,6 @@
 {meta: title It's Only Over For You}
 {meta: artist Tanya Tucker}
-{meta: writer Mike Reid and Rory Burke}
+{meta: composer Mike Reid and Rory Burke}
 
 {start_of_verse: Verse 1}
 [C]Somehow I knew I'd see you tonight 

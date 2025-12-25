@@ -1,6 +1,6 @@
 {meta: title He Will Never Let Me Down}
 {meta: artist The Oak Ridge Boys}
-{meta: writer James S. Wetherington}
+{meta: composer James S. Wetherington}
 
 {start_of_verse: Verse 1}
 [C]He will never let me down (no [C7]never)

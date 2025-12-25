@@ -1,6 +1,6 @@
 {meta: title Daddy And The Wine}
 {meta: artist Porter Wagoner}
-{meta: writer Gene Crysler}
+{meta: composer Gene Crysler}
 
 {start_of_verse: Verse 1}
 [C]A child walked in a candy store in [F]faded [C]overalls

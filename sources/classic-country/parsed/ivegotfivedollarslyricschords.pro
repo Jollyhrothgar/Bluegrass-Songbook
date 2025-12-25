@@ -1,6 +1,6 @@
 {meta: title I've Got Five Dollars}
 {meta: artist Faron Young}
-{meta: writer Ted Daffan}
+{meta: composer Ted Daffan}
 
 {start_of_verse: Verse 1}
 [C]Well I've been working hard the whole week [F]long

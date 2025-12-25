@@ -1,6 +1,6 @@
 {meta: title Joey's Back In Town}
 {meta: artist Billy Walker}
-{meta: writer Bobby Bare and Lance Guynes}
+{meta: composer Bobby Bare and Lance Guynes}
 
 {start_of_verse: Verse 1}
 [C]When I woke up this [Am]morning [C]everything seemed [Am]wrong

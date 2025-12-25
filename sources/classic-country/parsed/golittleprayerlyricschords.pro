@@ -1,6 +1,6 @@
 {meta: title Go Little Prayer}
 {meta: artist Eddy Arnold}
-{meta: writer Harry Wilson and Harold Wetherell}
+{meta: composer Harry Wilson and Harold Wetherell}
 
 {start_of_verse: Verse 1}
 [G]Go little prayer [C]go every[G]where

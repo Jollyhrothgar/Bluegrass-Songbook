@@ -1,6 +1,6 @@
 {meta: title Where I Find God}
 {meta: artist Larry Fleet}
-{meta: writer John Larry Fleet Jr. and Connie Rae Harrington}
+{meta: composer John Larry Fleet Jr. and Connie Rae Harrington}
 
 {start_of_verse: Verse 1}
 [G]That night I hit rock bottom  sittin’ [C]on an old [G]barstool

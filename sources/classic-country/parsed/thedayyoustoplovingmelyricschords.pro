@@ -1,6 +1,6 @@
 {meta: title The Day You Stop Loving Me}
 {meta: artist Charley Pride}
-{meta: writer Ray Buzzeo}
+{meta: composer Ray Buzzeo}
 
 {start_of_verse: Verse 1}
 [C]The world will tumble from its[A#7] axe[F]s 

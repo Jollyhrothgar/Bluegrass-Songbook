@@ -1,6 +1,6 @@
 {meta: title Matterhorn}
 {meta: artist Charlie Waller and The Country Gentlemen}
-{meta: writer Mel Tillis and Fred B. Burch}
+{meta: composer Mel Tillis and Fred B. Burch}
 
 {start_of_verse: Verse 1}
 [C]We started out from Bern one [Am]sunny August morn

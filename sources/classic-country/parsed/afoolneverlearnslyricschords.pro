@@ -1,6 +1,6 @@
 {meta: title A Fool Never Learns}
 {meta: artist Wilburn Brothers}
-{meta: writer Sonny Curtis}
+{meta: composer Sonny Curtis}
 
 {start_of_verse: Verse 1}
 [C]A fool never learns to get away just run away 

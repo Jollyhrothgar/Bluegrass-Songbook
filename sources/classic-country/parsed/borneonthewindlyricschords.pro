@@ -1,6 +1,6 @@
 {meta: title Borne On The Wind}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Bill Dees}
+{meta: composer Roy Orbison and Bill Dees}
 
 {start_of_verse: Verse 1}
 [C]Borne on the [Am]wind [C]borne on the [Am]wind

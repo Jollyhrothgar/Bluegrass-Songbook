@@ -1,6 +1,6 @@
 {meta: title Heartaches}
 {meta: artist Patsy Cline}
-{meta: writer Al Hoffman & John Klenner}
+{meta: composer Al Hoffman & John Klenner}
 
 {start_of_verse: Verse 1}
 [G]Heartaches  [F]heartaches

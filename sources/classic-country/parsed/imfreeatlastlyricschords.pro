@@ -1,6 +1,6 @@
 {meta: title I'm Free At Last}
 {meta: artist Hank Williams}
-{meta: writer Ernest Tubb}
+{meta: composer Ernest Tubb}
 
 {start_of_verse: Verse 1}
 [C]I'm free at last from [F]love and all its [C]worries

@@ -1,6 +1,6 @@
 {meta: title Here Today Here Tomorrow}
 {meta: artist Leroy Van Dyke}
-{meta: writer Kent Blazy and Jim Dowell}
+{meta: composer Kent Blazy and Jim Dowell}
 
 {start_of_verse: Verse 1}
 [G]You say your [Bm]love [C]has been the leaving kind[Bm]

@@ -1,6 +1,6 @@
 {meta: title I Want To Live Again}
 {meta: artist Norma Jean}
-{meta: writer Fuzzy Owen}
+{meta: composer Fuzzy Owen}
 
 {start_of_verse: Verse 1}
 [F]We stopped living when our [C]love died and [G7]I wanna live [C]again

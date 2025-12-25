@@ -1,6 +1,6 @@
 {meta: title Love Rolled Away The Stone}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes and Vern Gosdin}
+{meta: composer Max D. Barnes and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]He lay there in the darkness [F]all alone and [C]lost

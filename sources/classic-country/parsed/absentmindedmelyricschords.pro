@@ -1,6 +1,6 @@
 {meta: title Absent Minded Me}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson, Wes Stuart, Clifton Massey}
+{meta: composer Hank Thompson, Wes Stuart, Clifton Massey}
 
 {start_of_verse: Verse 1}
 [G]I keep forgetting that it's over that we've [C]really said [A7]goodbye

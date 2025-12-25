@@ -1,6 +1,6 @@
 {meta: title Branded Wherever I Go}
 {meta: artist Roy Acuff}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]Please don't wait for me darling 

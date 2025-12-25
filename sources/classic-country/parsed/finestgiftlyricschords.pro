@@ -1,6 +1,6 @@
 {meta: title Finest Gift}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [C]She can shop all over [F]town turn the gift [Am]shops upside [D7]down

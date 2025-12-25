@@ -1,6 +1,6 @@
 {meta: title Sweet Hour Of Prayer}
 {meta: artist Hank Snow}
-{meta: writer William B. Bradbury and William Walford}
+{meta: composer William B. Bradbury and William Walford}
 
 {start_of_verse: Verse 1}
 [G]Sweet hour of prayer sweet hour of [C]prayer

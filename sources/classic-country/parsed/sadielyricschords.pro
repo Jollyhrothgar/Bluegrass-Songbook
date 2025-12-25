@@ -1,6 +1,6 @@
 {meta: title Sadie}
 {meta: artist Doc Watson}
-{meta: writer T. Michael Coleman and Bob Hilliard}
+{meta: composer T. Michael Coleman and Bob Hilliard}
 
 {start_of_verse: Verse 1}
 [C]High on the hill sits a [F]whippoor[C]will

@@ -1,6 +1,6 @@
 {meta: title The Bedroom}
 {meta: artist Jim Ed Brown and Helen Cornelius}
-{meta: writer Ron Muir}
+{meta: composer Ron Muir}
 
 {start_of_verse: Verse 1}
 [C]Two soft pillows and tangled sheets

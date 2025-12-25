@@ -1,6 +1,6 @@
 {meta: title Where the Soul of Man Never Dies}
 {meta: artist Hank Williams}
-{meta: writer Wayne}
+{meta: composer Wayne}
 
 {start_of_verse: Verse 1}
 [C]To Canaan's land I'm on my way

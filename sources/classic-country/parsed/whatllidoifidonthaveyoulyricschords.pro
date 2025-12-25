@@ -1,6 +1,6 @@
 {meta: title What'll I Do If I Don't Have You}
 {meta: artist David Ball}
-{meta: writer Russell Brown and David Ball}
+{meta: composer Russell Brown and David Ball}
 
 {start_of_verse: Verse 1}
 [C]What’ll I do if I don’t have [Am]you

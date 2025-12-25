@@ -1,6 +1,6 @@
 {meta: title Before I Found The Wine}
 {meta: artist Tommy Cash}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [C]Yesterday I had a future and I was [F]happy

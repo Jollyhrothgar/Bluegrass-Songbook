@@ -1,6 +1,6 @@
 {meta: title Native Girl}
 {meta: artist Marty Robbins}
-{meta: writer Jeanne Pruett}
+{meta: composer Jeanne Pruett}
 
 {start_of_verse: Verse 1}
 [C]On an island [Dm]far away 

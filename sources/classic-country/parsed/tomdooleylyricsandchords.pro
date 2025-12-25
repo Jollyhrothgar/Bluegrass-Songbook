@@ -1,6 +1,6 @@
 {meta: title Tom Dooley}
 {meta: artist Doc Watson}
-{meta: writer Dave Guard}
+{meta: composer Dave Guard}
 
 {start_of_verse: Verse 1}
 [G]Hang your head Tom [C]Dooley

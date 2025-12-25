@@ -1,6 +1,6 @@
 {meta: title Family Tree}
 {meta: artist Keith Whitley}
-{meta: writer F. Dycus and Max Barnes}
+{meta: composer F. Dycus and Max Barnes}
 
 {start_of_verse: Verse 1}
 [C]Papa lays [F]in a county [C]rest home

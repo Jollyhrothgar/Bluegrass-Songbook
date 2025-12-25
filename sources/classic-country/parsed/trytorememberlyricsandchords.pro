@@ -1,6 +1,6 @@
 {meta: title Try To Remember}
 {meta: artist Roy Orbison}
-{meta: writer Tom Jones and Harvey Schmidt}
+{meta: composer Tom Jones and Harvey Schmidt}
 
 {start_of_verse: Verse 1}
 [C]Try to [Em]remember the [Dm]kind of Sep[G7]tember

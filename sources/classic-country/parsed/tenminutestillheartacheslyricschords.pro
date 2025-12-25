@@ -1,6 +1,6 @@
 {meta: title Ten Minutes Till Heartaches}
 {meta: artist Leona Williams}
-{meta: writer Redd Stewart}
+{meta: composer Redd Stewart}
 
 {start_of_verse: Verse 1}
 [C]Ten minutes till [G7]heartaches for [C]me

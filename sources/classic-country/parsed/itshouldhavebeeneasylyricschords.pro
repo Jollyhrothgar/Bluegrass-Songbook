@@ -1,6 +1,6 @@
 {meta: title It Should Have Been Easy}
 {meta: artist Anne Murray}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]Every morning when I get up

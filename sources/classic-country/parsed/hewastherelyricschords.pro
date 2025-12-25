@@ -1,6 +1,6 @@
 {meta: title He Was There}
 {meta: artist Faron Young}
-{meta: writer Jimmie Dodd}
+{meta: composer Jimmie Dodd}
 
 {start_of_verse: Verse 1}
 [C]I looked for [Em]Him in a [E7]soft summer [A7]rain and [D7]He was there

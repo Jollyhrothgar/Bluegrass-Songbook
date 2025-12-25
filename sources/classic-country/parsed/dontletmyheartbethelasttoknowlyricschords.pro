@@ -1,6 +1,6 @@
 {meta: title Don't Let My Heart Be The Last To Know}
 {meta: artist Tanya Tucker}
-{meta: writer Dennis Morgan and Billy Burnette}
+{meta: composer Dennis Morgan and Billy Burnette}
 
 {start_of_verse: Verse 1}
 [G]I see the [B7]future slipping [C]by [Am]

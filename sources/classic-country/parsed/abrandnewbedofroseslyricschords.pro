@@ -1,6 +1,6 @@
 {meta: title A Brand New Bed Of Roses}
 {meta: artist Charley Pride}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [C]I'm looking for a [F]brand new bed of [C]roses

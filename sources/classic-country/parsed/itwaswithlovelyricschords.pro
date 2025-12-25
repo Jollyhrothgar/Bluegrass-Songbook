@@ -1,6 +1,6 @@
 {meta: title It Was With Love}
 {meta: artist Buck Owens}
-{meta: writer Don Rich and Loudilla Johnson}
+{meta: composer Don Rich and Loudilla Johnson}
 
 {start_of_verse: Verse 1}
 [C]It was with love my Savior drew me [G7]to Him 

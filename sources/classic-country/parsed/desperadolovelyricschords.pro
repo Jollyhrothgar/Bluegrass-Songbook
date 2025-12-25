@@ -1,6 +1,6 @@
 {meta: title Desperado Love}
 {meta: artist Conway Twitty}
-{meta: writer Michael Garvin and Sammy Johns}
+{meta: composer Michael Garvin and Sammy Johns}
 
 {start_of_verse: Verse 1}
 [G]Should have just run in and steal you away

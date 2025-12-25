@@ -1,6 +1,6 @@
 {meta: title Have You Ever Been Untrue}
 {meta: artist Lefty Frizzel}
-{meta: writer Vic McAlpin and Roy Drusky}
+{meta: composer Vic McAlpin and Roy Drusky}
 
 {start_of_verse: Verse 1}
 [G]You ask me if I've ever been untrue

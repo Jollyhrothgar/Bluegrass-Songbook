@@ -1,6 +1,6 @@
 {meta: title My Heart Is Broken In Three}
 {meta: artist Slim Whitman}
-{meta: writer Ray Glasser}
+{meta: composer Ray Glasser}
 
 {start_of_verse: Verse 1}
 [C]My heart is [G7]broken in [C]three

@@ -1,6 +1,6 @@
 {meta: title I Dreamed of an Old Love Affair}
 {meta: artist Hank Snow}
-{meta: writer Jimmie Davis, Bonnie Dodd, Charles Mitchell}
+{meta: composer Jimmie Davis, Bonnie Dodd, Charles Mitchell}
 
 {start_of_verse: Verse 1}
 [C]Just like old times you were here last [G7]night

@@ -1,6 +1,6 @@
 {meta: title If It's All The Same To You}
 {meta: artist Ray Price}
-{meta: writer Arthur Hancock}
+{meta: composer Arthur Hancock}
 
 {start_of_verse: Verse 1}
 [G]If it's [C]all the same to [D7]you I'll be [G]leaving in the [C]morning

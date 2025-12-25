@@ -1,6 +1,6 @@
 {meta: title I'm A Stranger In My Home}
 {meta: artist Red Foley}
-{meta: writer Pee Wee King and Redd Stewart}
+{meta: composer Pee Wee King and Redd Stewart}
 
 {start_of_verse: Verse 1}
 [C]There's a stranger in my home that I've [G7]never known before

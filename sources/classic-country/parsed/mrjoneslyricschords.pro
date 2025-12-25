@@ -1,6 +1,6 @@
 {meta: title Mr. Jones}
 {meta: artist Conway Twitty}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G]Mr. Jones I'd [C]like to speak to you

@@ -1,6 +1,6 @@
 {meta: title I’m Not Through Loving You Yet}
 {meta: artist Conway Twitty}
-{meta: writer Conway Twitty and L.E. White}
+{meta: composer Conway Twitty and L.E. White}
 
 {start_of_verse: Verse 1}
 [G]You came to me  and you threw me  with a simple [C]goodbye

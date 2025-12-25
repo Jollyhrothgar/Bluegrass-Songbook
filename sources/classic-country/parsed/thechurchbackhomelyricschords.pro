@@ -1,6 +1,6 @@
 {meta: title The Church Back Home}
 {meta: artist The Country Gentlemen}
-{meta: writer John Duffey and Cindy Davis}
+{meta: composer John Duffey and Cindy Davis}
 
 {start_of_verse: Verse 1}
 [G]What memories come [D7]back to [G]me

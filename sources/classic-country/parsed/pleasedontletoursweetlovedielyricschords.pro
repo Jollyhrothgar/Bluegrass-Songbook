@@ -1,6 +1,6 @@
 {meta: title Please Don't Let Our Sweet Love Die}
 {meta: artist Jamie Dailey and Darrin Vincent}
-{meta: writer Ron Spears}
+{meta: composer Ron Spears}
 
 {start_of_verse: Verse 1}
 [C]Now you say that I no [F]longer make you [G7]happy

@@ -1,6 +1,6 @@
 {meta: title Jinx In Love}
 {meta: artist Webb Pierce}
-{meta: writer Don Davis and Webb Pierce}
+{meta: composer Don Davis and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [G]All my life I’ve always wanted [C]things that could never [G]be

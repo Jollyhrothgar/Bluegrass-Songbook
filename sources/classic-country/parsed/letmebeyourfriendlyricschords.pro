@@ -1,6 +1,6 @@
 {meta: title Let Me Be Your Friend}
 {meta: artist The Stanley Brothers}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [G]Many times I've thought about you

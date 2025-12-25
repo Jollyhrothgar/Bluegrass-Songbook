@@ -1,6 +1,6 @@
 {meta: title Lady In A Blue Mercedes}
 {meta: artist Johnny Duncan and Janie Fricke}
-{meta: writer Daniel Darst and Gary Gentry}
+{meta: composer Daniel Darst and Gary Gentry}
 
 {start_of_verse: Verse 1}
 [G]It was a windy day down Malibu way 

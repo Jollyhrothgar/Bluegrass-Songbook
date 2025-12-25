@@ -1,6 +1,6 @@
 {meta: title I Don't Have To Wonder}
 {meta: artist Garth Brooks}
-{meta: writer Shawn Camp and Taylor Dunn}
+{meta: composer Shawn Camp and Taylor Dunn}
 
 {start_of_verse: Verse 1}
 [C]Drove to the [F]church [C]in my suit and [F]tie 

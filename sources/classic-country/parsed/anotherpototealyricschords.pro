@@ -1,6 +1,6 @@
 {meta: title Another Pot O' Tea}
 {meta: artist Anne Murray}
-{meta: writer Paul Grady}
+{meta: composer Paul Grady}
 
 {start_of_verse: Verse 1}
 [G]Put on [D7]another pot o' [G]tea

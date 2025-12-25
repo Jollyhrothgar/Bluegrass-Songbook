@@ -1,6 +1,6 @@
 {meta: title That's All Over}
 {meta: artist Johnny Cash}
-{meta: writer Jim Glaser}
+{meta: composer Jim Glaser}
 
 {start_of_verse: Verse 1}
 [F]Mmm [G7]mmm [C]mmm [F]mmm [G7]mmm [C]mmm 

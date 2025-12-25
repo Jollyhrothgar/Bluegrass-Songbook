@@ -1,6 +1,6 @@
 {meta: title Don't Lie}
 {meta: artist Rhonda Vincent}
-{meta: writer Chet Biggers and Frank Mandeville}
+{meta: composer Chet Biggers and Frank Mandeville}
 
 {start_of_verse: Verse 1}
 [C]That old photograph of ours sure [F]looks out of [C]place

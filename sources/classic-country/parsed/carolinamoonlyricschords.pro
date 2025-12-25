@@ -1,6 +1,6 @@
 {meta: title Carolina Moon}
 {meta: artist Jimmy Dean}
-{meta: writer Benny Davis and Joe Bruke}
+{meta: composer Benny Davis and Joe Bruke}
 
 {start_of_verse: Verse 1}
 [C]The moon was shining bright in [F]Carolina

@@ -1,6 +1,6 @@
 {meta: title Big Ben Colson}
 {meta: artist Bobby Bare}
-{meta: writer Tompall Glaser}
+{meta: composer Tompall Glaser}
 
 {start_of_verse: Verse 1}
 [C]She was young [G7]and she was [C]pretty 

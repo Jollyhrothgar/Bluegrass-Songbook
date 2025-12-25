@@ -1,6 +1,6 @@
 {meta: title It Keeps Slipping My Mind}
 {meta: artist Tammy Wynette}
-{meta: writer Hank Mills}
+{meta: composer Hank Mills}
 
 {start_of_verse: Verse 1}
 [G]I keep intending to [Em]tell [G]you 

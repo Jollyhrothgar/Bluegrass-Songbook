@@ -1,6 +1,6 @@
 {meta: title The Note}
 {meta: artist Gene Watson}
-{meta: writer Buck Moore and Michelle Ray}
+{meta: composer Buck Moore and Michelle Ray}
 
 {start_of_verse: Verse 1}
 [G]The note was short but oh so strong 

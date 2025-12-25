@@ -1,6 +1,6 @@
 {meta: title Woman You Won't Break Mine}
 {meta: artist Ricky Skaggs}
-{meta: writer Jim Rushing and Hunter Moore}
+{meta: composer Jim Rushing and Hunter Moore}
 
 {start_of_verse: Verse 1}
 [G]Your momma dressed you in petticoats 

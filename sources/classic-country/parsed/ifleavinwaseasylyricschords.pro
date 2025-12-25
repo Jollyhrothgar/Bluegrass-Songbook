@@ -1,6 +1,6 @@
 {meta: title If Leavin' Was Easy}
 {meta: artist Earl Thomas Conley}
-{meta: writer Earl Thomas Conley and Randy Scruggs}
+{meta: composer Earl Thomas Conley and Randy Scruggs}
 
 {start_of_verse: Verse 1}
 [C]Between [Em]morning and evening [G]working and sleeping

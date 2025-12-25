@@ -1,6 +1,6 @@
 {meta: title Heaven's Jubilee}
 {meta: artist Chuck Wagon Gang}
-{meta: writer Adger M. Pace and G.T. Speer}
+{meta: composer Adger M. Pace and G.T. Speer}
 
 {start_of_verse: Verse 1}
 [C]Some glad morning we shall see Jesus in the air

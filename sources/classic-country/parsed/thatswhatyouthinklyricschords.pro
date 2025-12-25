@@ -1,6 +1,6 @@
 {meta: title That's What You Think}
 {meta: artist Carl Smith}
-{meta: writer Roland Johnson and Earl Nunn}
+{meta: composer Roland Johnson and Earl Nunn}
 
 {start_of_verse: Verse 1}
 [C]Every time I go away my [F]baby feels so [C]blue

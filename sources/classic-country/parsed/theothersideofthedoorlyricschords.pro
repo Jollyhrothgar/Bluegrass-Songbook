@@ -1,6 +1,6 @@
 {meta: title The Other Side Of The Door}
 {meta: artist Hank Locklin}
-{meta: writer Fred Tobias and Leon Carr}
+{meta: composer Fred Tobias and Leon Carr}
 
 {start_of_verse: Verse 1}
 [C]When we say goodnight I leave my [G7]hope

@@ -1,6 +1,6 @@
 {meta: title If You Ain't Got Nothing}
 {meta: artist Bobby Bare}
-{meta: writer Red Lane and Dan Wilson}
+{meta: composer Red Lane and Dan Wilson}
 
 {start_of_verse: Verse 1}
 [C]Well if you ain’t got nothing you ain’t got nothing to lose

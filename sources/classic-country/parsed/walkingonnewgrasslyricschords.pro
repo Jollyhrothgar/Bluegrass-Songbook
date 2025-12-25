@@ -1,6 +1,6 @@
 {meta: title Walking On New Grass}
 {meta: artist Jack Greene}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]I'm like a cloud drifting from town to [F]town 

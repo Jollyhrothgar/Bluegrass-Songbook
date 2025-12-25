@@ -1,6 +1,6 @@
 {meta: title Old Time Christmas}
 {meta: artist Randy Travis}
-{meta: writer Steve Harris}
+{meta: composer Steve Harris}
 
 {start_of_verse: Verse 1}
 [C]The old log is burnin' [F]yellow and [Fm]red

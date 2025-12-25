@@ -1,6 +1,6 @@
 {meta: title Sigh Cry Almost Die}
 {meta: artist The Everly Brothers}
-{meta: writer Don Everly and Phil Everly}
+{meta: composer Don Everly and Phil Everly}
 
 {start_of_verse: Verse 1}
 [G7]Sigh cry almost die [C]I can’t kiss you [G7]again

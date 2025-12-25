@@ -1,6 +1,6 @@
 {meta: title The Wreck Of The Old 97}
 {meta: artist Johnny Cash}
-{meta: writer Bob Johnson and Johnny Cash}
+{meta: composer Bob Johnson and Johnny Cash}
 
 {start_of_verse: Verse 1}
 [G]They give him his orders at Monroe [C]Virginia

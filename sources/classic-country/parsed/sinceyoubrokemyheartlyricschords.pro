@@ -1,6 +1,6 @@
 {meta: title Since You Broke My Heart}
 {meta: artist Everly Brothers}
-{meta: writer written by Don Everly}
+{meta: composer written by Don Everly}
 
 {start_of_verse: Verse 1}
 [C]They say the [F]blues went out of [C]style

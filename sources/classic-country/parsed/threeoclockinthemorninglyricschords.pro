@@ -1,6 +1,6 @@
 {meta: title Three O'Clock In The Morning}
 {meta: artist Connie Francis}
-{meta: writer Dorothy Terris and Julian Robledo}
+{meta: composer Dorothy Terris and Julian Robledo}
 
 {start_of_verse: Verse 1}
 [D7]It's three o'clock in the [G]morning

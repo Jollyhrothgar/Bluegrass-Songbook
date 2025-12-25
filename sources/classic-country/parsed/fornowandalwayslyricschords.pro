@@ -1,6 +1,6 @@
 {meta: title For Now and Always}
 {meta: artist Hank Snow}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [G]For now and always

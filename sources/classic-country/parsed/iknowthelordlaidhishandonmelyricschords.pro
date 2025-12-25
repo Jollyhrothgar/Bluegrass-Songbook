@@ -1,6 +1,6 @@
 {meta: title I Know The Lord Laid His Hand On Me}
 {meta: artist Tennessee Ernie Ford}
-{meta: writer Ernie Ford and Jack Fascinato}
+{meta: composer Ernie Ford and Jack Fascinato}
 
 {start_of_verse: Verse 1}
 [C]Amazing Grace [F]how sweet the [C]sound

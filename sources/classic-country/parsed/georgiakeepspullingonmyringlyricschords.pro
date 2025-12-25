@@ -1,6 +1,6 @@
 {meta: title Georgia Keeps Pulling On My Ring}
 {meta: artist Conway Twitty}
-{meta: writer David Wilkins and Tim Marshall}
+{meta: composer David Wilkins and Tim Marshall}
 
 {start_of_verse: Verse 1}
 [G]Sweet sweet Georgia keeps [D7]pulling on my [G]ring

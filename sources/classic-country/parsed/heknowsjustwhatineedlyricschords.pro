@@ -1,6 +1,6 @@
 {meta: title He Knows Just What I Need}
 {meta: artist Elvis Presley}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [C]My Jesus knows when I am lonely

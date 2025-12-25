@@ -1,6 +1,6 @@
 {meta: title Wherever You Are Tonight}
 {meta: artist Keith Whitley}
-{meta: writer Don Cook, Gary Nicholson, Keith Whitley}
+{meta: composer Don Cook, Gary Nicholson, Keith Whitley}
 
 {start_of_verse: Verse 1}
 [C]I play the [Em]hits [C]on the [Am]late night [C]show

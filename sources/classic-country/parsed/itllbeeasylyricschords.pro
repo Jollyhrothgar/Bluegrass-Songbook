@@ -1,6 +1,6 @@
 {meta: title It'll Be Easy}
 {meta: artist Jimmy Dean}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [C](Break my heart) it'll be easy (tear it apart) it'll be [G]easy

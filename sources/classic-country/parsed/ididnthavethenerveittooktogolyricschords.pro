@@ -1,6 +1,6 @@
 {meta: title I Didn't Have The Nerve It Took To Go}
 {meta: artist Billy Walker}
-{meta: writer Billy Walker and Mitchell Torok}
+{meta: composer Billy Walker and Mitchell Torok}
 
 {start_of_verse: Verse 1}
 [C]I’ve always tried to tell you that someday I’d [G7]change

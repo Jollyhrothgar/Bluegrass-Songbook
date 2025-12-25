@@ -1,6 +1,6 @@
 {meta: title Then Maybe I Can Get Some Sleep}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens}
+{meta: composer Buck Owens}
 
 {start_of_verse: Verse 1}
 [C]Gotta find out who's a [G7]callin'

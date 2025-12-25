@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Toys}
 {meta: artist John Conlee}
-{meta: writer Arthur Leo Owens and Gene Vowell}
+{meta: composer Arthur Leo Owens and Gene Vowell}
 
 {start_of_verse: Verse 1}
 [C]Annie May Johnson gave [F]birth to a [C]child

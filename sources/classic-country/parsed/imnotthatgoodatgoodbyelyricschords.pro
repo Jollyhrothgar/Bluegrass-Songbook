@@ -1,6 +1,6 @@
 {meta: title I'm Not That Good At Goodbye}
 {meta: artist Jean Shepard}
-{meta: writer Bob McDill and Don Williams}
+{meta: composer Bob McDill and Don Williams}
 
 {start_of_verse: Verse 1}
 [G]I don't want to talk it [C]over one more [G]time

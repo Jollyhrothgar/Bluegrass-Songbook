@@ -1,6 +1,6 @@
 {meta: title To My Sorrow}
 {meta: artist Eddy Arnold}
-{meta: writer Vernice J. McAlpin}
+{meta: composer Vernice J. McAlpin}
 
 {start_of_verse: Verse 1}
 [G7]To my [C]sorrow I [C7]loved you [F]only 

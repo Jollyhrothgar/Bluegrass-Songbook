@@ -1,6 +1,6 @@
 {meta: title Save The Last Dance For Me}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [C]You can dance every dance with the guy

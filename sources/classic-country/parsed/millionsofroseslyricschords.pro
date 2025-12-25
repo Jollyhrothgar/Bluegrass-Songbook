@@ -1,6 +1,6 @@
 {meta: title Millions Of Roses}
 {meta: artist Eddy Arnold}
-{meta: writer Sylvia Dee and Arthur Kent}
+{meta: composer Sylvia Dee and Arthur Kent}
 
 {start_of_verse: Verse 1}
 [G7](Millions of roses) every single [C]day[F]  [Em]   [Dm]   [G7]

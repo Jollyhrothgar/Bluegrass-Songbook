@@ -1,6 +1,6 @@
 {meta: title Taking A Chance On Love}
 {meta: artist Eddy Arnold}
-{meta: writer John Latouche, Ted Fetter, Vernon Duke}
+{meta: composer John Latouche, Ted Fetter, Vernon Duke}
 
 {start_of_verse: Verse 1}
 [G]Here I go [D7]again I [Am]hear those trumpets [D7]blow [G]again

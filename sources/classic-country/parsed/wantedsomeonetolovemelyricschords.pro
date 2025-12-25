@@ -1,6 +1,6 @@
 {meta: title Wanted Someone To Love Me}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Fowler/Crowe}
+{meta: composer Fowler/Crowe}
 
 {start_of_verse: Verse 1}
 [C]If you should read the [F]paper [C]be sure to look on page [G7]two

@@ -1,6 +1,6 @@
 {meta: title Just How Bad Do You Wanna Be Good}
 {meta: artist Mel Tillis}
-{meta: writer Judy Tillis}
+{meta: composer Judy Tillis}
 
 {start_of_verse: Verse 1}
 [G]Just how bad just how [D7]bad do you wanna be [G]good

@@ -1,6 +1,6 @@
 {meta: title Jesus Is Living In Me}
 {meta: artist The Easter Brothers}
-{meta: writer Franklin, James, Jeff, Russell and Sheri Easter}
+{meta: composer Franklin, James, Jeff, Russell and Sheri Easter}
 
 {start_of_verse: Verse 1}
 [G]Lonely years I had nothing 

@@ -1,6 +1,6 @@
 {meta: title She's Playing Hell (Trying To Get Me To Heaven)}
 {meta: artist George Strait}
-{meta: writer Dean Dillon, David Wills, Charles Quillen}
+{meta: composer Dean Dillon, David Wills, Charles Quillen}
 
 {start_of_verse: Verse 1}
 [C]I let it all hang out last night come [F]in hung over this [C]mornin'

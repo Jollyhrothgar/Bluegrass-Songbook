@@ -1,6 +1,6 @@
 {meta: title Lift Ring Pull Open}
 {meta: artist Jim Ed Brown}
-{meta: writer Joe Cooper and John Gallie}
+{meta: composer Joe Cooper and John Gallie}
 
 {start_of_verse: Verse 1}
 [C]There are four words that are printed on most every can of [D7]beer

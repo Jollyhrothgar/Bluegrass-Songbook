@@ -1,6 +1,6 @@
 {meta: title A Vision Of Mother}
 {meta: artist Ricky Skaggs}
-{meta: writer Ralph Stanley and Carter Stanley}
+{meta: composer Ralph Stanley and Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]Oft' my thoughts drift back to childhood

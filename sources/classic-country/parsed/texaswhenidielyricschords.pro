@@ -1,6 +1,6 @@
 {meta: title Texas When I Die}
 {meta: artist Tanya Tucker}
-{meta: writer Ed Bruce, Bobby Borchers and Patsy Bruce}
+{meta: composer Ed Bruce, Bobby Borchers and Patsy Bruce}
 
 {start_of_verse: Verse 1}
 [G]When I die I may not go [C]to heaven

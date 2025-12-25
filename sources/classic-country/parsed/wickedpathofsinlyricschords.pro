@@ -1,6 +1,6 @@
 {meta: title Wicked Path Of Sin}
 {meta: artist The Stanley Brothers}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [G]In this awful world of sorrow

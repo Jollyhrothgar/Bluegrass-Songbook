@@ -1,6 +1,6 @@
 {meta: title If I Lose You Tomorrow}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Mary Lou Butler}
+{meta: composer Hank Thompson and Mary Lou Butler}
 
 {start_of_verse: Verse 1}
 [G]If I lose you tomorrow[G7] 

@@ -1,6 +1,6 @@
 {meta: title High On A Hilltop}
 {meta: artist Merle Haggard}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [C]High on a hilltop over [F]looking the [C]city

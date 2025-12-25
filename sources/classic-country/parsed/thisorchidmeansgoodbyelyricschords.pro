@@ -1,6 +1,6 @@
 {meta: title This Orchid Means Goodbye}
 {meta: artist Carl Smith}
-{meta: writer B Bryant and M Webb}
+{meta: composer B Bryant and M Webb}
 
 {start_of_verse: Verse 1}
 [C]Tonight I send [G7]an [C]orchid

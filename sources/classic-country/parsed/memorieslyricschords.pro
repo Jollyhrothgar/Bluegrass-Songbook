@@ -1,6 +1,6 @@
 {meta: title Memories}
 {meta: artist Emmylou Harris}
-{meta: writer William M. Dees, Bill Dees, Roy Orbison}
+{meta: composer William M. Dees, Bill Dees, Roy Orbison}
 
 {start_of_verse: Verse 1}
 [C]In a cold December memories can melt your [Dm]heart away 

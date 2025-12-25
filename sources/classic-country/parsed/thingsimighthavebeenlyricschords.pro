@@ -1,6 +1,6 @@
 {meta: title Things I Might Have Been}
 {meta: artist Kitty Wells}
-{meta: writer Robert Sherman and Richard Sherman}
+{meta: composer Robert Sherman and Richard Sherman}
 
 {start_of_verse: Verse 1}
 [G]I might have been a helpless soul with [G7]nothing much in [C]store

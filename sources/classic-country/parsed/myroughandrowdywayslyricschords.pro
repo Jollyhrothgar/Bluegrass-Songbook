@@ -1,6 +1,6 @@
 {meta: title My Rough And Rowdy Ways}
 {meta: artist Merle Haggard}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]For years and years I rambled I drank [F]my wine and [C]gambled

@@ -1,6 +1,6 @@
 {meta: title No One To Cry To}
 {meta: artist Jim Reeves}
-{meta: writer Foy Willing and Sid Robin}
+{meta: composer Foy Willing and Sid Robin}
 
 {start_of_verse: Verse 1}
 [G]No one to [B7]cry to  no [C]one to say [G]goodnight

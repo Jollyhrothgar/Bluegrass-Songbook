@@ -1,6 +1,6 @@
 {meta: title The Comancheros}
 {meta: artist Claude King}
-{meta: writer Tillman Franks}
+{meta: composer Tillman Franks}
 
 {start_of_verse: Verse 1}
 [C]The Comancheros are [F]takin' this [C]land

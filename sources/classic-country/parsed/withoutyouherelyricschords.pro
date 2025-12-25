@@ -1,6 +1,6 @@
 {meta: title Without You Here}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Royce Porter}
+{meta: composer Dean Dillon and Royce Porter}
 
 {start_of_verse: Verse 1}
 [C]Her ship set sail from the docks of Miami

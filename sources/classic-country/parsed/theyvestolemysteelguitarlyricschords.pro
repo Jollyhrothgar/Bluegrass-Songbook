@@ -1,6 +1,6 @@
 {meta: title They've Stole My Steel Guitar}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [C]Now I'm a guitar picker [G7]musician is my [C]trade

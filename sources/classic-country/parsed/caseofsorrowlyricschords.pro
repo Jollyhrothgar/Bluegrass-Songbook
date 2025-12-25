@@ -1,6 +1,6 @@
 {meta: title Case of Sorrow}
 {meta: artist The Survivors}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]I've got to [G7]get together with my heart in [C]mind

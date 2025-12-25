@@ -1,6 +1,6 @@
 {meta: title Born A Woman}
 {meta: artist Jean Shepard}
-{meta: writer Martha Sharp}
+{meta: composer Martha Sharp}
 
 {start_of_verse: Verse 1}
 [G]I was born a [D7]woman I'm glad it happened that [G]way

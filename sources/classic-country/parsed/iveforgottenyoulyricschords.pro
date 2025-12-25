@@ -1,6 +1,6 @@
 {meta: title I've Forgotten You}
 {meta: artist Hank Snow}
-{meta: writer Jim Reeves}
+{meta: composer Jim Reeves}
 
 {start_of_verse: Verse 1}
 [C]I've forgotten [F]you I know that's [C]true

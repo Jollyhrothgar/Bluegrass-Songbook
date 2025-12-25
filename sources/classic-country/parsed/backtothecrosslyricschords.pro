@@ -1,6 +1,6 @@
 {meta: title Back To The Cross}
 {meta: artist Lester Flatt}
-{meta: writer Jessie Mae Martin}
+{meta: composer Jessie Mae Martin}
 
 {start_of_verse: Verse 1}
 [G]I'm out on the sea filled with [C]sorrows

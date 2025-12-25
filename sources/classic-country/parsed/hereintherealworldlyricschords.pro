@@ -1,6 +1,6 @@
 {meta: title Here In The Real World}
 {meta: artist George Jones}
-{meta: writer Alan Jackson and Mark Irwin}
+{meta: composer Alan Jackson and Mark Irwin}
 
 {start_of_verse: Verse 1}
 [C]Cowboys don't [F]cry  [G7]and heroes don't [C]die

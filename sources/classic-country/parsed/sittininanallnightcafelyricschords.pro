@@ -1,6 +1,6 @@
 {meta: title Sittin' In An All Night Cafe}
 {meta: artist Faron Young}
-{meta: writer Jim Glaser}
+{meta: composer Jim Glaser}
 
 {start_of_verse: Verse 1}
 [C]Sittin' in an all night cafe in a [F]booth back in the corner

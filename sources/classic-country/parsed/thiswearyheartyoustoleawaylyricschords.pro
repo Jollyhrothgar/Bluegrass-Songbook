@@ -1,6 +1,6 @@
 {meta: title This Weary Heart You Stole Away}
 {meta: artist Ricky Skaggs}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [G]I wait for you dear all night [C]long

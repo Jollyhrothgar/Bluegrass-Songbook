@@ -1,6 +1,6 @@
 {meta: title True Love Lasts Forever}
 {meta: artist Sonny James}
-{meta: writer Carole Smith and Edgar Clayton}
+{meta: composer Carole Smith and Edgar Clayton}
 
 {start_of_verse: Verse 1}
 [C]True [Em]love [C]lasts [Dm]forever  

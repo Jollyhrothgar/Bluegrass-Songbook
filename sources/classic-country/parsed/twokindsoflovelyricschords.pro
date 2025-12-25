@@ -1,6 +1,6 @@
 {meta: title Two Kinds Of Love}
 {meta: artist Eddy Arnold}
-{meta: writer Steve Nelson, Ed G. Nelson, Eddie Thorpe}
+{meta: composer Steve Nelson, Ed G. Nelson, Eddie Thorpe}
 
 {start_of_verse: Verse 1}
 [C]There are two [C7]kinds of [F]love 

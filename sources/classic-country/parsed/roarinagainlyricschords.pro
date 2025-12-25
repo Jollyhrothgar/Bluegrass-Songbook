@@ -1,6 +1,6 @@
 {meta: title Roarin' Again}
 {meta: artist Wilburn Brothers}
-{meta: writer Don Ellis, Gene Reed, Freda Reed}
+{meta: composer Don Ellis, Gene Reed, Freda Reed}
 
 {start_of_verse: Verse 1}
 [C]Spent all last night in a [F]honky tonk 

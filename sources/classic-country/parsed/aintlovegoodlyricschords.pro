@@ -1,6 +1,6 @@
 {meta: title Ain't Love Good}
 {meta: artist Jean Shepard}
-{meta: writer Ben Peters and Larry Butler}
+{meta: composer Ben Peters and Larry Butler}
 
 {start_of_verse: Verse 1}
 [C]Ain't love good ain't love so good for you

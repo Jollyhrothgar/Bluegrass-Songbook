@@ -1,6 +1,6 @@
 {meta: title No Deal}
 {meta: artist Moe Bandy}
-{meta: writer Larry Gatlin}
+{meta: composer Larry Gatlin}
 
 {start_of_verse: Verse 1}
 [G7](No [C]dea[G7]l no [C]deal[G7])

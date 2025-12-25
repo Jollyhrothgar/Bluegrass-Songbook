@@ -1,6 +1,6 @@
 {meta: title Oh Me Oh My Sweet Baby}
 {meta: artist George Strait}
-{meta: writer Michael Garvin and Tom Shapiro}
+{meta: composer Michael Garvin and Tom Shapiro}
 
 {start_of_verse: Verse 1}
 [G]Oh me oh my sweet baby [D7]said goodbye

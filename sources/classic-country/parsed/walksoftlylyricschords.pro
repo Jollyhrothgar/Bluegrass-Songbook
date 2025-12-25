@@ -1,6 +1,6 @@
 {meta: title Walk Softly}
 {meta: artist Billy Crash Craddock}
-{meta: writer Van McCoy}
+{meta: composer Van McCoy}
 
 {start_of_verse: Verse 1}
 [D7]Walk softly [G7]when you walk by [C]me  

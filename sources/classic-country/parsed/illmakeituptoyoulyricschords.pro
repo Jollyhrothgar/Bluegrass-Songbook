@@ -1,6 +1,6 @@
 {meta: title I'll Make It Up To You}
 {meta: artist Leroy Van Dyke}
-{meta: writer Gene Nash}
+{meta: composer Gene Nash}
 
 {start_of_verse: Verse 1}
 [G]I'll [G7]make it [Am]up to [D7]you 

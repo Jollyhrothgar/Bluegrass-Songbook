@@ -1,6 +1,6 @@
 {meta: title Hard To Be Friends}
 {meta: artist Kris Kristofferson}
-{meta: writer Larry Murray}
+{meta: composer Larry Murray}
 
 {start_of_verse: Verse 1}
 [C]It's so hard to be friends

@@ -1,6 +1,6 @@
 {meta: title How Do You Hold A Memory}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Lyle Gaston}
+{meta: composer Hank Thompson and Lyle Gaston}
 
 {start_of_verse: Verse 1}
 [C]How do you hold a memory in your arms 

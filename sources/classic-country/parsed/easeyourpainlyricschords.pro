@@ -1,6 +1,6 @@
 {meta: title Ease Your Pain}
 {meta: artist Anne Murray}
-{meta: writer Hoyt Axton}
+{meta: composer Hoyt Axton}
 
 {start_of_verse: Verse 1}
 [C]If I could ease your pain if I could [F]lighten your [C]load

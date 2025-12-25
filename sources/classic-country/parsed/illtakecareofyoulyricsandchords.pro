@@ -1,6 +1,6 @@
 {meta: title I'll Take Care Of You}
 {meta: artist Ronnie Milsap}
-{meta: writer Royce Glenn Sutton and Archie Jordan}
+{meta: composer Royce Glenn Sutton and Archie Jordan}
 
 {start_of_verse: Verse 1}
 [C]I'll [Am]take [Dm]care of [G7]you

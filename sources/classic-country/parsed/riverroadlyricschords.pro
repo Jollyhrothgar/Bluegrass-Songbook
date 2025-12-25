@@ -1,6 +1,6 @@
 {meta: title River Road}
 {meta: artist Crystal Gayle}
-{meta: writer Sylvia Fricker Tyson}
+{meta: composer Sylvia Fricker Tyson}
 
 {start_of_verse: Verse 1}
 [C]Here I go once again with my suitcase in my [F]hand

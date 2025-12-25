@@ -1,6 +1,6 @@
 {meta: title Sam's Place}
 {meta: artist Buck Owens}
-{meta: writer Red Simpson and Buck Owens}
+{meta: composer Red Simpson and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]There's a place down the street we call Sam's [D7]Place

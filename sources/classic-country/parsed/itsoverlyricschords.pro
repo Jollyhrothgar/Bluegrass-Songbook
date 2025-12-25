@@ -1,6 +1,6 @@
 {meta: title It's Over}
 {meta: artist Sonny James}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]If time were not a moving thing and I could make it stay this [Em]hour

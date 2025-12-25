@@ -1,6 +1,6 @@
 {meta: title Only If There Is Another You}
 {meta: artist Moe Bandy}
-{meta: writer Dan Mitchell}
+{meta: composer Dan Mitchell}
 
 {start_of_verse: Verse 1}
 [C]Don’t ask me if I’d [F]ever love [C]another

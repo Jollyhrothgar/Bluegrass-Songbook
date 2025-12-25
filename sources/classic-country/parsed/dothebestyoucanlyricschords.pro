@@ -1,6 +1,6 @@
 {meta: title Do The Best You Can}
 {meta: artist Ricky Nelson}
-{meta: writer Ry Cooder and Russ Titelman}
+{meta: composer Ry Cooder and Russ Titelman}
 
 {start_of_verse: Verse 1}
 [C]Whenever you find a [Am]man who [F]loves every woman he [C]sees

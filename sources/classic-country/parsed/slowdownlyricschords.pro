@@ -1,6 +1,6 @@
 {meta: title Slow Down}
 {meta: artist Lacy J. Dalton}
-{meta: writer Billy Sherrill, Mark Sherrill, Lacy J. Dalton}
+{meta: composer Billy Sherrill, Mark Sherrill, Lacy J. Dalton}
 
 {start_of_verse: Verse 1}
 [C]Slow down we don't have to fight it

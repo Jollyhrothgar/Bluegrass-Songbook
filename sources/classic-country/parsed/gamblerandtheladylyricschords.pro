@@ -1,6 +1,6 @@
 {meta: title Gambler And The Lady}
 {meta: artist Norma Jean}
-{meta: writer Marijohn Wilkin}
+{meta: composer Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [G]They met by chance on a riverboat on the way to New [D7]Orleans

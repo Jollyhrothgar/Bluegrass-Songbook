@@ -1,6 +1,6 @@
 {meta: title Put On An Old Pair Of Shoes}
 {meta: artist Jim Ed Brown}
-{meta: writer Billy Hill}
+{meta: composer Billy Hill}
 
 {start_of_verse: Verse 1}
 [C]Put [F]on an [C]old pair of shoes 

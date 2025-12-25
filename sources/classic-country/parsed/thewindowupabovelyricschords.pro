@@ -1,6 +1,6 @@
 {meta: title The Window Up Above}
 {meta: artist Loretta Lynn}
-{meta: writer George Jones}
+{meta: composer George Jones}
 
 {start_of_verse: Verse 1}
 [C]I've been living a new way of [G7]life that I love [C]so

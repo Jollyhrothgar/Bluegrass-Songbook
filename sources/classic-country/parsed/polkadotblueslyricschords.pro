@@ -1,6 +1,6 @@
 {meta: title Polka Dot Blues}
 {meta: artist Hank Snow}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [G7]I  [C]thought I was a [G7]gambler [C]broke every [G7]shark in [C]town 

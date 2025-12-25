@@ -1,6 +1,6 @@
 {meta: title Cool Water}
 {meta: artist Eddy Arnold}
-{meta: writer Bob Nolan}
+{meta: composer Bob Nolan}
 
 {start_of_verse: Verse 1}
 [G]All day I've faced a barren [D7]waste

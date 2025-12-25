@@ -1,6 +1,6 @@
 {meta: title Thanks For Nothing}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Gene Dobbins and Rayburn Anthony}
+{meta: composer Gene Dobbins and Rayburn Anthony}
 
 {start_of_verse: Verse 1}
 [E7]I thank you from the [A7]bottom of my [D7]broken heart

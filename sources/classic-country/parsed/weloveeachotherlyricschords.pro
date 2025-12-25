@@ -1,6 +1,6 @@
 {meta: title We Love Each Other}
 {meta: artist Charlie Rich}
-{meta: writer Buddy Killen}
+{meta: composer Buddy Killen}
 
 {start_of_verse: Verse 1}
 [G]They ask me how we do it and I [Am]tell them we [D7]love each other

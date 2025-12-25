@@ -1,6 +1,6 @@
 {meta: title My Old Kentucky Home}
 {meta: artist Boxcar Willie}
-{meta: writer Stephen C. Foster}
+{meta: composer Stephen C. Foster}
 
 {start_of_verse: Verse 1}
 [C]Oh the sun shines bright on my [F]old Kentucky [C]home

@@ -1,6 +1,6 @@
 {meta: title Breathless}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Otis Blackwell}
+{meta: composer Otis Blackwell}
 
 {start_of_verse: Verse 1}
 [C]Now if you love me please don't [G7]tease

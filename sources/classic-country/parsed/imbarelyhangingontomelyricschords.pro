@@ -1,6 +1,6 @@
 {meta: title I'm Barely Hanging On To Me}
 {meta: artist Johnny Paycheck}
-{meta: writer Joe Poovey}
+{meta: composer Joe Poovey}
 
 {start_of_verse: Verse 1}
 [G]It’s just my luck that I’ll have to exist 

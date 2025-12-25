@@ -1,6 +1,6 @@
 {meta: title Lucky in Love}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson, Stephen Bruton, Mike Utley}
+{meta: composer Kris Kristofferson, Stephen Bruton, Mike Utley}
 
 {start_of_verse: Verse 1}
 [G]You look so good to me  [C]you never change

@@ -1,6 +1,6 @@
 {meta: title The Arms Of My Love}
 {meta: artist Riders In The Sky}
-{meta: writer Woody Paul}
+{meta: composer Woody Paul}
 
 {start_of_verse: Verse 1}
 [C]Silver moon sailing [Em]high cross the [C]wide prairie [Em]sky

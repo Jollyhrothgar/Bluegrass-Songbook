@@ -1,6 +1,6 @@
 {meta: title I Went To Your Wedding}
 {meta: artist Hank Snow}
-{meta: writer Jessie Mae Robinson}
+{meta: composer Jessie Mae Robinson}
 
 {start_of_verse: Verse 1}
 [C]I went to your [G7]wedding

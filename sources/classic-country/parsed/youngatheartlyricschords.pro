@@ -1,6 +1,6 @@
 {meta: title Young At Heart}
 {meta: artist Connie Francis}
-{meta: writer Carolyn Leigh and Johnny Richards}
+{meta: composer Carolyn Leigh and Johnny Richards}
 
 {start_of_verse: Verse 1}
 [G7]Fairy [C]tales can come true it can happen to you

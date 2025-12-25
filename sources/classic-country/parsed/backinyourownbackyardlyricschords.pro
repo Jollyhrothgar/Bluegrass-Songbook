@@ -1,6 +1,6 @@
 {meta: title Back In Your Own Backyard}
 {meta: artist Brenda Lee}
-{meta: writer Al Johnson, Billy Rose, Dave Dreyer}
+{meta: composer Al Johnson, Billy Rose, Dave Dreyer}
 
 {start_of_verse: Verse 1}
 [C](You can go to the east you can go to the [F]west

@@ -1,6 +1,6 @@
 {meta: title A Robin Built A Nest On Daddy’s Grave}
 {meta: artist Ralph Stanley}
-{meta: writer Earl Sykes}
+{meta: composer Earl Sykes}
 
 {start_of_verse: Verse 1}
 [G]Springtime is coming in the mountains

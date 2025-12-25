@@ -1,6 +1,6 @@
 {meta: title Lingering Memories}
 {meta: artist Mel Tillis}
-{meta: writer Damon Black}
+{meta: composer Damon Black}
 
 {start_of_verse: Verse 1}
 [G]If memories were gathered [D7]like [G]flowers

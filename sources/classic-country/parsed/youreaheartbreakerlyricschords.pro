@@ -1,6 +1,6 @@
 {meta: title You're A Heartbreaker}
 {meta: artist Elvis Presley}
-{meta: writer Jack Sallee}
+{meta: composer Jack Sallee}
 
 {start_of_verse: Verse 1}
 [C]You're a heartbreaker you're a [F]love faker

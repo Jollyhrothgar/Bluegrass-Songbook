@@ -1,6 +1,6 @@
 {meta: title The Creek Will Still Be Running}
 {meta: artist Johnny Paycheck}
-{meta: writer Aubrey L. Mayhew}
+{meta: composer Aubrey L. Mayhew}
 
 {start_of_verse: Verse 1}
 [G]Well the creek will still be running seven days a week

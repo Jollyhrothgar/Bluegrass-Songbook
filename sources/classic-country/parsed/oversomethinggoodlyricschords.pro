@@ -1,6 +1,6 @@
 {meta: title Over Something Good}
 {meta: artist George Jones}
-{meta: writer Jodie Emerson}
+{meta: composer Jodie Emerson}
 
 {start_of_verse: Verse 1}
 [C]Your eyes could light the world tonight that's just how much they [F]glow

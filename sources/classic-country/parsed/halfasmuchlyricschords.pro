@@ -1,6 +1,6 @@
 {meta: title Half as Much}
 {meta: artist Hank Williams}
-{meta: writer Curley Williams}
+{meta: composer Curley Williams}
 
 {start_of_verse: Verse 1}
 [G]If you love me half as much as I love you

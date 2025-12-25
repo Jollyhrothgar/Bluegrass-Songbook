@@ -1,6 +1,6 @@
 {meta: title Saginaw Michigan}
 {meta: artist Lefty Frizzell}
-{meta: writer Bill Anderson and Don Wayne}
+{meta: composer Bill Anderson and Don Wayne}
 
 {start_of_verse: Verse 1}
 [G]I was born   [D7]in Saginaw [G]Michigan  

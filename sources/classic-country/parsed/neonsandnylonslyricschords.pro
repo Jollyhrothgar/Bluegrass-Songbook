@@ -1,6 +1,6 @@
 {meta: title Neons And Nylons}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton and Red Steagall}
+{meta: composer Glenn Sutton and Red Steagall}
 
 {start_of_verse: Verse 1}
 [C]All day long I work a job I [F]hate just to survive

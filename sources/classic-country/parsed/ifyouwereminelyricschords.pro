@@ -1,6 +1,6 @@
 {meta: title If You Were Mine}
 {meta: artist Jim Reeves}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [G]Count the raindrops in a rainstorm 

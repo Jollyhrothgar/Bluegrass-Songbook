@@ -1,6 +1,6 @@
 {meta: title Boogie Till The Cows Come Home}
 {meta: artist Clay Walker}
-{meta: writer Clay Blaker and Roger Brown}
+{meta: composer Clay Blaker and Roger Brown}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna polish my best boots 

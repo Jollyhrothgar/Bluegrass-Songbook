@@ -1,6 +1,6 @@
 {meta: title Rollin' Home}
 {meta: artist Gene Watson}
-{meta: writer Keith Stegall and Brent Mason}
+{meta: composer Keith Stegall and Brent Mason}
 
 {start_of_verse: Verse 1}
 [C]The sun wasn't even up yet when I [Bb7]left Pittsburgh Pa

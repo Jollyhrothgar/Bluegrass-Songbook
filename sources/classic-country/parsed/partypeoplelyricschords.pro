@@ -1,6 +1,6 @@
 {meta: title Party People}
 {meta: artist Hank Williams Jr.}
-{meta: writer Kent Westberry and Hal Harbour}
+{meta: composer Kent Westberry and Hal Harbour}
 
 {start_of_verse: Verse 1}
 [G]You and I are party people

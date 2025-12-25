@@ -1,6 +1,6 @@
 {meta: title Mad Mad World}
 {meta: artist Ricky Nelson}
-{meta: writer Dorsey Burnette and Joe Osborn}
+{meta: composer Dorsey Burnette and Joe Osborn}
 
 {start_of_verse: Verse 1}
 [C]Everybody's runnin' in a mad [F]mad [C]world

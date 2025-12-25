@@ -1,6 +1,6 @@
 {meta: title Song Of The Wind}
 {meta: artist Jean Shepard}
-{meta: writer Bob Milsap}
+{meta: composer Bob Milsap}
 
 {start_of_verse: Verse 1}
 [G]I see the shadows as they come to welcome the [Am]night

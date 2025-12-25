@@ -1,6 +1,6 @@
 {meta: title As The Day Wears On}
 {meta: artist Wanda Jackson}
-{meta: writer Vincent Matthews}
+{meta: composer Vincent Matthews}
 
 {start_of_verse: Verse 1}
 [G]Right now he's looking [C]for his pants and [G]socks

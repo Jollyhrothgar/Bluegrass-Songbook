@@ -1,6 +1,6 @@
 {meta: title Inside The Gate}
 {meta: artist The Wilburns}
-{meta: writer J.D. Sumner}
+{meta: composer J.D. Sumner}
 
 {start_of_verse: Verse 1}
 [G]Oh how happy I will be when life's [C]journey here is [G]run

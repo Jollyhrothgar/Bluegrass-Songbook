@@ -1,6 +1,6 @@
 {meta: title Would You Hold it Against Me}
 {meta: artist Dottie West}
-{meta: writer Bill and Dottie West}
+{meta: composer Bill and Dottie West}
 
 {start_of_verse: Verse 1}
 [G]Would you hold it [D7]against me  if I just see him one more [G]time

@@ -1,6 +1,6 @@
 {meta: title I Just Don't Give A Damn}
 {meta: artist George Jones}
-{meta: writer George Jones and Jimmy Peppers}
+{meta: composer George Jones and Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [C]Now I know whose got to change the way I'm [F]living

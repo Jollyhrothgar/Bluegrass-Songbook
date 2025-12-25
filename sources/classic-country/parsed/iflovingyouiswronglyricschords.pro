@@ -1,6 +1,6 @@
 {meta: title If Loving You Is Wrong}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray and Hank Thompson}
+{meta: composer Billy Gray and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]If loving you is wrong then there’s nothing [C]right

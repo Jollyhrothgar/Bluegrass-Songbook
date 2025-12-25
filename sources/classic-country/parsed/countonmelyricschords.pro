@@ -1,6 +1,6 @@
 {meta: title Count On Me}
 {meta: artist Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]I can tell by looking you got feelings in your [F]heart

@@ -1,6 +1,6 @@
 {meta: title Singing Shouting Praises}
 {meta: artist The Osborne Brothers}
-{meta: writer Jake Landers}
+{meta: composer Jake Landers}
 
 {start_of_verse: Verse 1}
 [G]What a blessed day awaits us on that [C]hallelujah [G]shore

@@ -1,6 +1,6 @@
 {meta: title Petal From A Faded Rose Lyrics and Chords}
 {meta: artist Hank Snow}
-{meta: writer Merle Travis and Leon Rusk}
+{meta: composer Merle Travis and Leon Rusk}
 
 {start_of_verse: Verse 1}
 [C]Here's a rose from my [G7]garden

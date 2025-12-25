@@ -1,6 +1,6 @@
 {meta: title Down In The Willow Garden}
 {meta: artist The Osborne Brothers}
-{meta: writer Charlie Monroe}
+{meta: composer Charlie Monroe}
 
 {start_of_verse: Verse 1}
 [G]Down in the willow [Em]garden

@@ -1,6 +1,6 @@
 {meta: title As Close As We'll Ever Be}
 {meta: artist Ferlin Husky}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]Once those two lips were [D7]true lips 

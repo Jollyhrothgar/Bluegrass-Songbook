@@ -1,6 +1,6 @@
 {meta: title Somebody's Rocking My Broken Heart}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Horton and Johnny Grimes}
+{meta: composer Johnny Horton and Johnny Grimes}
 
 {start_of_verse: Verse 1}
 [C]Somebody’s rocking my [F]broken [C]heart

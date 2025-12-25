@@ -1,6 +1,6 @@
 {meta: title I Love You Jesus}
 {meta: artist Wanda Jackson}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]While there's time there's something I [C7]must say

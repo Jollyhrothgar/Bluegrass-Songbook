@@ -1,6 +1,6 @@
 {meta: title Turn Around Look At Me}
 {meta: artist Ray Price}
-{meta: writer Jerry Capehart}
+{meta: composer Jerry Capehart}
 
 {start_of_verse: Verse 1}
 [G]There is someone [C]walking be[G]hind you turn a[Am]round look at [D7]me

@@ -1,6 +1,6 @@
 {meta: title Do Me A Favor}
 {meta: artist Vern Gosdin}
-{meta: writer Hank Cochran, Buddy Cannon, Vern Gosdin}
+{meta: composer Hank Cochran, Buddy Cannon, Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]All those favors you say you are [G7]doing

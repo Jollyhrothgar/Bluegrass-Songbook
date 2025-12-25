@@ -1,6 +1,6 @@
 {meta: title Ain't Life Sweet}
 {meta: artist Jim Ed Brown}
-{meta: writer Ronnie Hughes and Tommy Vernon}
+{meta: composer Ronnie Hughes and Tommy Vernon}
 
 {start_of_verse: Verse 1}
 [G]Gonna tell the world I love [Am]you can't keep it [Dm]quiet

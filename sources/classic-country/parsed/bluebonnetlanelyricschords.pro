@@ -1,6 +1,6 @@
 {meta: title Bluebonnet Lane}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker and Charles Drury}
+{meta: composer Cindy Walker and Charles Drury}
 
 {start_of_verse: Verse 1}
 [C]In my lonely heart there [F]lingers

@@ -1,6 +1,6 @@
 {meta: title Angels Get Lonesome Sometimes}
 {meta: artist Hank Williams Jr.}
-{meta: writer Terry Skinner, Albert Lowe, John Vinson}
+{meta: composer Terry Skinner, Albert Lowe, John Vinson}
 
 {start_of_verse: Verse 1}
 [G]Billy there's [F]something I wanna [C]tell you

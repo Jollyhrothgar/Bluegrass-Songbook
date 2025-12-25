@@ -1,6 +1,6 @@
 {meta: title Troubles Wall To Wall}
 {meta: artist Bobby Helms}
-{meta: writer Bobby Helms and Bob Hall}
+{meta: composer Bobby Helms and Bob Hall}
 
 {start_of_verse: Verse 1}
 [G]I climb the stairs up to my [C]lonely room

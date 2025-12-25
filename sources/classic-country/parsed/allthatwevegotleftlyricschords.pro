@@ -1,6 +1,6 @@
 {meta: title All That We've Got Left}
 {meta: artist Vern Gosdin}
-{meta: writer Buddy Cannon, Rex Gosdin, Steve Smith}
+{meta: composer Buddy Cannon, Rex Gosdin, Steve Smith}
 
 {start_of_verse: Verse 1}
 [C]I once held that someone special [F]didn't have to let her [C]go

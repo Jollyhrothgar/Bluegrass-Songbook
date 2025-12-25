@@ -1,6 +1,6 @@
 {meta: title You Still Get To Me In My Dreams}
 {meta: artist Tammy Wynette}
-{meta: writer Arthur Leo Owens and Bill Shore}
+{meta: composer Arthur Leo Owens and Bill Shore}
 
 {start_of_verse: Verse 1}
 [C]From our first kiss in the mornin' to our [F]last kiss at [C]night

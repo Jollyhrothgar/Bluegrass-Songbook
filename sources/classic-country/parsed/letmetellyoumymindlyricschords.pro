@@ -1,6 +1,6 @@
 {meta: title Let Me Tell You My Mind}
 {meta: artist Waylon Jennings}
-{meta: writer Harold Gay and Walt Rogers}
+{meta: composer Harold Gay and Walt Rogers}
 
 {start_of_verse: Verse 1}
 [G]Some quiet morning with me [F]let me [G]tell you [D7]my [G]mind

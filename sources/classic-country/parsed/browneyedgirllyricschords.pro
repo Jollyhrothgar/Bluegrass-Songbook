@@ -1,6 +1,6 @@
 {meta: title Brown Eyed Girl}
 {meta: artist John Anderson}
-{meta: writer Van Morrison}
+{meta: composer Van Morrison}
 
 {start_of_verse: Verse 1}
 [C]Hey where did we [F]go [C]days when the [G7]rains came

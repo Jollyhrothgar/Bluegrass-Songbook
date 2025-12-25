@@ -1,6 +1,6 @@
 {meta: title How Great Thou Art}
 {meta: artist Tammy Wynette}
-{meta: writer Stuart K. Hine}
+{meta: composer Stuart K. Hine}
 
 {start_of_verse: Verse 1}
 [C]Oh [G7]Lord my God [C]when I in awesome [F]wonder

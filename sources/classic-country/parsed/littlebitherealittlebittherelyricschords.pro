@@ -1,6 +1,6 @@
 {meta: title Little Bit Here (A Little Bit There)}
 {meta: artist Charlie Rich}
-{meta: writer Margaret A. Rich}
+{meta: composer Margaret A. Rich}
 
 {start_of_verse: Verse 1}
 [G]A little bit here (a little bit here)

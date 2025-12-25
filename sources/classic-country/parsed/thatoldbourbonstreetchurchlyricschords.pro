@@ -1,6 +1,6 @@
 {meta: title That old Bourbon Street Church}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]That old Bourbon Street Church 

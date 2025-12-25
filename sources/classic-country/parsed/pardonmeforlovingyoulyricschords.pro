@@ -1,6 +1,6 @@
 {meta: title Pardon Me For Loving You}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer William Mershon}
+{meta: composer William Mershon}
 
 {start_of_verse: Verse 1}
 [C]You tell me when you hear my name [D7]that it won’t make you blue

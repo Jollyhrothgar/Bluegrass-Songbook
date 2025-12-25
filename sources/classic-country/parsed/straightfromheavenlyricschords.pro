@@ -1,6 +1,6 @@
 {meta: title Straight From Heaven}
 {meta: artist Slim Whitman}
-{meta: writer Jim Glaser}
+{meta: composer Jim Glaser}
 
 {start_of_verse: Verse 1}
 [G7]Straight from [C]heaven   [F]taking your [C]love

@@ -1,6 +1,6 @@
 {meta: title The Old Blind Fiddler}
 {meta: artist Johnny Paycheck}
-{meta: writer Billy Sherrill, Carmol Taylor, Shirley Tackitt}
+{meta: composer Billy Sherrill, Carmol Taylor, Shirley Tackitt}
 
 {start_of_verse: Verse 1}
 [C]When I was just a kid I'd go to [F]town on Satur[C]day

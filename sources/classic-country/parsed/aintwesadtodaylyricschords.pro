@@ -1,6 +1,6 @@
 {meta: title Ain't We Sad Today}
 {meta: artist Jeanne Pruett}
-{meta: writer Joe Christian}
+{meta: composer Joe Christian}
 
 {start_of_verse: Verse 1}
 [G]Lord [C]ain't we [G]sad [D7]tod[G]ay

@@ -1,6 +1,6 @@
 {meta: title A Baby And A Sewing Machine}
 {meta: artist Moe Bandy}
-{meta: writer Ken McDuffie}
+{meta: composer Ken McDuffie}
 
 {start_of_verse: Verse 1}
 [C]A long time of [Em]loving [F]her good timing [C]man

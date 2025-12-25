@@ -1,6 +1,6 @@
 {meta: title The Wind Beneath My Wings}
 {meta: artist Gary Morris}
-{meta: writer Larry Henley and Jeff Silbar}
+{meta: composer Larry Henley and Jeff Silbar}
 
 {start_of_verse: Verse 1}
 [G]It must have been cold there in my [C]shadow

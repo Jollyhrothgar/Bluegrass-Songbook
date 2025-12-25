@@ -1,6 +1,6 @@
 {meta: title If You Love Me Let Me Know}
 {meta: artist Olivia Newton John}
-{meta: writer John Rostill}
+{meta: composer John Rostill}
 
 {start_of_verse: Verse 1}
 [G]You came when I was happy in your sunshine

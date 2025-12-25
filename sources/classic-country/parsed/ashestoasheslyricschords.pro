@@ -1,6 +1,6 @@
 {meta: title Ashes To Ashes}
 {meta: artist Gene Watson}
-{meta: writer Joe Chambers and Larry Jenkins}
+{meta: composer Joe Chambers and Larry Jenkins}
 
 {start_of_verse: Verse 1}
 [C]Your memory is something that I never [C7]could seem to [F]lose

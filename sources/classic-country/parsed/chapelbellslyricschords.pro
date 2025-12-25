@@ -1,6 +1,6 @@
 {meta: title Chapel Bells}
 {meta: artist Norma Jean}
-{meta: writer Chickie King}
+{meta: composer Chickie King}
 
 {start_of_verse: Verse 1}
 [C]Chapel bells were ringing [G7]as we walk down the isle

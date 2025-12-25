@@ -1,6 +1,6 @@
 {meta: title Mary Of The Wild Moor}
 {meta: artist Mac Wiseman}
-{meta: writer David Turner}
+{meta: composer David Turner}
 
 {start_of_verse: Verse 1}
 [C]Was on a [G7]cold winter's [C]night

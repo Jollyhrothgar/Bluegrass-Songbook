@@ -1,6 +1,6 @@
 {meta: title I've Been Wrong Before}
 {meta: artist Everly Brothers}
-{meta: writer L. Ransford}
+{meta: composer L. Ransford}
 
 {start_of_verse: Verse 1}
 [G]I  [D7]I've been wrong [G]before[D7]

@@ -1,6 +1,6 @@
 {meta: title Ballad Of Davy Crockett}
 {meta: artist Burl Ives}
-{meta: writer Tom Blackburn and George Burns}
+{meta: composer Tom Blackburn and George Burns}
 
 {start_of_verse: Verse 1}
 [G]Born on a mountain top in [C]Tennes[G]see

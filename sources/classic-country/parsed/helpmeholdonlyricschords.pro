@@ -1,6 +1,6 @@
 {meta: title Help Me Hold On}
 {meta: artist Travis Tritt}
-{meta: writer Travis Tritt and Pat Terry}
+{meta: composer Travis Tritt and Pat Terry}
 
 {start_of_verse: Verse 1}
 [G]Baby close that suitcase you been [C]packin'

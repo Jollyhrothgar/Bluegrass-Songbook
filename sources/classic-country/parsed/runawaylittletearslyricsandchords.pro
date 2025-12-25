@@ -1,6 +1,6 @@
 {meta: title Run Away Little Tears}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Run away little [C]tears   [D7]you've been locked up too [G]long

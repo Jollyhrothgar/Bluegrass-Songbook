@@ -1,6 +1,6 @@
 {meta: title Your Uncharted Mind}
 {meta: artist Gene Watson}
-{meta: writer Mel Holt}
+{meta: composer Mel Holt}
 
 {start_of_verse: Verse 1}
 [C]I wish I had the combination

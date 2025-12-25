@@ -1,6 +1,6 @@
 {meta: title Go Away Stranger}
 {meta: artist Connie Smith}
-{meta: writer June Carter}
+{meta: composer June Carter}
 
 {start_of_verse: Verse 1}
 [C]My love is not within my [F]reach

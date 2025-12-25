@@ -1,6 +1,6 @@
 {meta: title Any Old Time}
 {meta: artist Webb Pierce}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]Any old time you wanna come back home

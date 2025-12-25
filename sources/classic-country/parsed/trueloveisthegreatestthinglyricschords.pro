@@ -1,6 +1,6 @@
 {meta: title True Love Is The Greatest Thing}
 {meta: artist George Morgan}
-{meta: writer Lloyd Copas}
+{meta: composer Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [C]True love is the greatest [C7]thing [F]without it life doesn't [C]mean a thing

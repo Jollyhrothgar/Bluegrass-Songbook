@@ -1,6 +1,6 @@
 {meta: title We Got Love}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]You you got [D7]me we got [C]somethin' [D7]everybody else can [G]see [D7]

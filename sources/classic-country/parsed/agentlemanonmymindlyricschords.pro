@@ -1,6 +1,6 @@
 {meta: title A Gentleman On My Mind}
 {meta: artist Leona Williams}
-{meta: writer Jim Mundy}
+{meta: composer Jim Mundy}
 
 {start_of_verse: Verse 1}
 [G]I've worked at slingin' drinks at this bar 

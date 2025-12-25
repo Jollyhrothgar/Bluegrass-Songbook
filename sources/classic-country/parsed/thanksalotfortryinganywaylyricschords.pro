@@ -1,6 +1,6 @@
 {meta: title Thanks A Lot For Trying Anyway}
 {meta: artist Cal Smith}
-{meta: writer James W. Glaser}
+{meta: composer James W. Glaser}
 
 {start_of_verse: Verse 1}
 [G]Oh what a shock to hear you [D7]say you're gonna [G]leave me

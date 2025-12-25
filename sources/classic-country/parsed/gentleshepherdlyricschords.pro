@@ -1,6 +1,6 @@
 {meta: title Gentle Shepherd}
 {meta: artist Tammy Wynette}
-{meta: writer Bickley Reichner}
+{meta: composer Bickley Reichner}
 
 {start_of_verse: Verse 1}
 [G]Shepherd [D7]shepherd gentle [C][G]shepherd

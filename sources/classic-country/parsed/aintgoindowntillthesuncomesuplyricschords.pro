@@ -1,6 +1,6 @@
 {meta: title Ain't Goin' Down (Till The Sun Comes Up)}
 {meta: artist Garth Brooks}
-{meta: writer Kent Blazy, Kim Williams, Garth Brooks}
+{meta: composer Kent Blazy, Kim Williams, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]Six o'clock on Friday evenin' mama doesn't know she's leavin'

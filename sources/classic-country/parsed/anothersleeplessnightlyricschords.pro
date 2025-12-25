@@ -1,6 +1,6 @@
 {meta: title Another Sleepless Night}
 {meta: artist Anne Murray}
-{meta: writer Rory Bourke and Charlie Black [3/4 time]}
+{meta: composer Rory Bourke and Charlie Black [3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]The nights have been so lonely  [Dm]since you went away

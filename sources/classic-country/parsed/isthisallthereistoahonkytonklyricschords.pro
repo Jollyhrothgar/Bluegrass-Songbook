@@ -1,6 +1,6 @@
 {meta: title Is This All There Is To A Honky Tonk}
 {meta: artist Tony Booth}
-{meta: writer Robert Duncan and Donald Tunison}
+{meta: composer Robert Duncan and Donald Tunison}
 
 {start_of_verse: Verse 1}
 [C]Each and every night she sits [F]waiting

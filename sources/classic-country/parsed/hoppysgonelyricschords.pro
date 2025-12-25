@@ -1,6 +1,6 @@
 {meta: title Hoppy's Gone}
 {meta: artist Roger Miller}
-{meta: writer John T.Slate, Larry J. Henley}
+{meta: composer John T.Slate, Larry J. Henley}
 
 {start_of_verse: Verse 1}
 [G]Hang it up boys

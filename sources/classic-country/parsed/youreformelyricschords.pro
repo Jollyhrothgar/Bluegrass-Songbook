@@ -1,6 +1,6 @@
 {meta: title You're For Me}
 {meta: artist Buck Owens}
-{meta: writer Tommy Collins and Buck Owens}
+{meta: composer Tommy Collins and Buck Owens}
 
 {start_of_verse: Verse 1}
 [G]When I saw you walking the [C]avenue

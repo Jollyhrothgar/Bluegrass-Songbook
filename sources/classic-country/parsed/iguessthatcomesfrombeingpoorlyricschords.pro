@@ -1,6 +1,6 @@
 {meta: title I Guess That Comes From Being Poor}
 {meta: artist Norma Jean}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]I still get a tear in my [C]eye

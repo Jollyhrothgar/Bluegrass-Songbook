@@ -1,6 +1,6 @@
 {meta: title No Thanks I Just Had One}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]Come closer let me [D7]give you a [G]kiss just for [C]fun

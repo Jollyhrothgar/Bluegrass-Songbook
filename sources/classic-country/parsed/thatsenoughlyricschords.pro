@@ -1,6 +1,6 @@
 {meta: title That's Enough}
 {meta: artist Johnny Cash}
-{meta: writer Dorothy Coates}
+{meta: composer Dorothy Coates}
 
 {start_of_verse: Verse 1}
 [C]Well now I heard that you been talking bout me [G7]really I don't [C]mind

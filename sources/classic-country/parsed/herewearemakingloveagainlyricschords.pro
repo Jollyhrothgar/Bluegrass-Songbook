@@ -1,6 +1,6 @@
 {meta: title Here We Are Making Love Again}
 {meta: artist Bob Luman}
-{meta: writer Ronald Saucer and Mike Schrimpf}
+{meta: composer Ronald Saucer and Mike Schrimpf}
 
 {start_of_verse: Verse 1}
 [G]Here we are makin' [F]love again

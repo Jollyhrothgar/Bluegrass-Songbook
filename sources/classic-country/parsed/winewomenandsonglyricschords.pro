@@ -1,6 +1,6 @@
 {meta: title Wine Women And Song}
 {meta: artist Loretta Lynn}
-{meta: writer Betty Sue Perry}
+{meta: composer Betty Sue Perry}
 
 {start_of_verse: Verse 1}
 [C]While I'm at home a working and a slaving this way

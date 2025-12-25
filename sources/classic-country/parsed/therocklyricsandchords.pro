@@ -1,6 +1,6 @@
 {meta: title The Rock}
 {meta: artist Doug Stone}
-{meta: writer Chet Hinesley and Doug Stone}
+{meta: composer Chet Hinesley and Doug Stone}
 
 {start_of_verse: Verse 1}
 [G7]She used to [C]stand at the [Em]jukebox 

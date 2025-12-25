@@ -1,6 +1,6 @@
 {meta: title Thanks To Calvary}
 {meta: artist Jamie Dailey and Darrin Vincent}
-{meta: writer Gloria Gaither and William J. Gaither}
+{meta: composer Gloria Gaither and William J. Gaither}
 
 {start_of_verse: Verse 1}
 [D7]Today I [G]went back to the place where I [C]used to go

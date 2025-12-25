@@ -1,6 +1,6 @@
 {meta: title The Eastern Gate}
 {meta: artist Jimmie Davis}
-{meta: writer Isaiah G. Martin}
+{meta: composer Isaiah G. Martin}
 
 {start_of_verse: Verse 1}
 [C]I will meet you in the morning 

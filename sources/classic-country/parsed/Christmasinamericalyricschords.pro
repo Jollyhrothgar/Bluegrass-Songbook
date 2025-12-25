@@ -1,6 +1,6 @@
 {meta: title Christmas in America}
 {meta: artist Kenny Rogers}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]Merry Christmas Merry Christmas [C][G7]America

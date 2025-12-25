@@ -1,6 +1,6 @@
 {meta: title A Pretty Woman Is A Deadly Weapon}
 {meta: artist Ferlin Husky}
-{meta: writer George H. Campbell Jr. and Marvin J. Moore}
+{meta: composer George H. Campbell Jr. and Marvin J. Moore}
 
 {start_of_verse: Verse 1}
 [G]I wouldn't kick a cactus cactus plants have [D7]thorns

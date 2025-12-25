@@ -1,6 +1,6 @@
 {meta: title Let Me Whisper Darling One More Time}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson and Buddy Killen}
+{meta: composer Bill Anderson and Buddy Killen}
 
 {start_of_verse: Verse 1}
 [C]Let me whisper [F]darling one more [C]time

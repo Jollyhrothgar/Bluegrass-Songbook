@@ -1,6 +1,6 @@
 {meta: title My Heart Has Finally Said Goodbye}
 {meta: artist Leona Williams}
-{meta: writer David C. Kirby and Leona Williams}
+{meta: composer David C. Kirby and Leona Williams}
 
 {start_of_verse: Verse 1}
 [G]I’ve been going over all my [C]memories

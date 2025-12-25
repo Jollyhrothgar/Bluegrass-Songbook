@@ -1,6 +1,6 @@
 {meta: title I'll Be a Hero When I Strike}
 {meta: artist Merle Haggard}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]All because I walk a different street

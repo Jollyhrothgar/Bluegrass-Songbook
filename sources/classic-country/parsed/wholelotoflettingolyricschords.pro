@@ -1,6 +1,6 @@
 {meta: title Whole Lot Of Lettin' Go}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [G]I felt the tug of the [D7]ties that bind 

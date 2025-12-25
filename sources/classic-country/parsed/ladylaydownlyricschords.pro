@@ -1,6 +1,6 @@
 {meta: title Lady Lay Down}
 {meta: artist John Conlee}
-{meta: writer Rafe Vanhoy and Don Cook [3/4 time]}
+{meta: composer Rafe Vanhoy and Don Cook [3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]Too many times I [Em]didn't try to hold [F]you 

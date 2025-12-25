@@ -1,6 +1,6 @@
 {meta: title I Only Exist}
 {meta: artist The Stanley Brothers}
-{meta: writer Jimmie Stanley and Joyce Morris}
+{meta: composer Jimmie Stanley and Joyce Morris}
 
 {start_of_verse: Verse 1}
 [G]No I'm not [C]living  I only [G]exist

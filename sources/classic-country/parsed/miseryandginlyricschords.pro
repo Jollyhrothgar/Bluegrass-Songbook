@@ -1,6 +1,6 @@
 {meta: title Misery and Gin}
 {meta: artist Merle Haggard}
-{meta: writer John Durrill and Snuff Garrett}
+{meta: composer John Durrill and Snuff Garrett}
 
 {start_of_verse: Verse 1}
 [C]Memories and drinks don't mix too well

@@ -1,6 +1,6 @@
 {meta: title Fool In Me}
 {meta: artist Jack Greene}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [C]Your memory always [D7]brings out the [C]fool in [G]me

@@ -1,6 +1,6 @@
 {meta: title Cuddle Bugging Baby}
 {meta: artist Eddy Arnold}
-{meta: writer Ralph Red Rowe}
+{meta: composer Ralph Red Rowe}
 
 {start_of_verse: Verse 1}
 [C]When the weather's kinda chilly and we start to kiss and hug

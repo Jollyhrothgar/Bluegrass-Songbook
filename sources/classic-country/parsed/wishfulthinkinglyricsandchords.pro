@@ -1,6 +1,6 @@
 {meta: title Wishful Thinking}
 {meta: artist Jim Reeves}
-{meta: writer Martin Greene and Rayford Greene}
+{meta: composer Martin Greene and Rayford Greene}
 
 {start_of_verse: Verse 1}
 [C]Wishful thinking daydreams [G7]fly happy visions fill the [C]night

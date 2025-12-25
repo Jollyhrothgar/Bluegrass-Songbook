@@ -1,6 +1,6 @@
 {meta: title Burning Love}
 {meta: artist Elvis Presley}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [G]Lord Almighty [C]feel my [D7]temperature [G]rising 

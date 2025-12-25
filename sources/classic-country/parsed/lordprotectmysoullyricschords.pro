@@ -1,6 +1,6 @@
 {meta: title Lord Protect My Soul}
 {meta: artist The Country Gentlemen}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [C]Down life's highway alone I trod

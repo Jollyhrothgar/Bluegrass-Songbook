@@ -1,6 +1,6 @@
 {meta: title Second Honeymoon}
 {meta: artist Johnny Cash}
-{meta: writer Autry Inman}
+{meta: composer Autry Inman}
 
 {start_of_verse: Verse 1}
 [C]I walked up to the desk and asked the [F]man about a [C]room

@@ -1,6 +1,6 @@
 {meta: title 18 Wheels Humming Home Sweet Home}
 {meta: artist Mac Wiseman}
-{meta: writer Jim Fagan}
+{meta: composer Jim Fagan}
 
 {start_of_verse: Verse 1}
 [C]With raindrops on my [G7]windshield and [F]teardrops on my [C]steering wheel

@@ -1,6 +1,6 @@
 {meta: title Oklahoma Twister}
 {meta: artist Cal Smith}
-{meta: writer written by Max Barnes}
+{meta: composer written by Max Barnes}
 
 {start_of_verse: Verse 1}
 [G]I could see it in your [D7]eyes  when he blew in from [G]Tulsa

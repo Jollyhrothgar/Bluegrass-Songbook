@@ -1,6 +1,6 @@
 {meta: title Never Alone}
 {meta: artist Vince Gill}
-{meta: writer Rosanne Cash and Vince Gill}
+{meta: composer Rosanne Cash and Vince Gill}
 
 {start_of_verse: Verse 1}
 [C]You were like a lost kid looking for [Am]home

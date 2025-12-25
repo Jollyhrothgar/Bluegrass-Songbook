@@ -1,6 +1,6 @@
 {meta: title Judy}
 {meta: artist Elvis Presley}
-{meta: writer Teddy Redell}
+{meta: composer Teddy Redell}
 
 {start_of_verse: Verse 1}
 [G]They say you found somebody new

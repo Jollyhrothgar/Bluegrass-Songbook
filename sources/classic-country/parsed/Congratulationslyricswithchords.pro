@@ -1,6 +1,6 @@
 {meta: title Congratulations}
 {meta: artist Reba McEntire}
-{meta: writer Dave Gibson and Patti Stephens}
+{meta: composer Dave Gibson and Patti Stephens}
 
 {start_of_verse: Verse 1}
 [G7]Congratu[C]lations [G7]you made a [C]fool out of [F]me

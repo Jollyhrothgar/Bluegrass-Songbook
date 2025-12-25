@@ -1,6 +1,6 @@
 {meta: title Don't Be A Stranger}
 {meta: artist David Allan Coe}
-{meta: writer David A. Coe and Karen Brooks}
+{meta: composer David A. Coe and Karen Brooks}
 
 {start_of_verse: Verse 1}
 [C]It's [G7]five in the [C]morning [F]and I've been [G7]waiting up all [C]night

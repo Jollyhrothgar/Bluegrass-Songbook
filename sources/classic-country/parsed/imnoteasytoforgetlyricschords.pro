@@ -1,6 +1,6 @@
 {meta: title I'm Not Easy To Forget}
 {meta: artist Keith Whitley}
-{meta: writer Curly Putman and Keith Whitley}
+{meta: composer Curly Putman and Keith Whitley}
 
 {start_of_verse: Verse 1}
 [G]It hurts to hear me say 

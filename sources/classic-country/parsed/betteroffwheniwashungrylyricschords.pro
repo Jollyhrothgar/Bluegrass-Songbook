@@ -1,6 +1,6 @@
 {meta: title Better Off When I Was Hungry}
 {meta: artist Merle Haggard}
-{meta: writer Dave Kirby}
+{meta: composer Dave Kirby}
 
 {start_of_verse: Verse 1}
 [G]I read they're havin' [C]rain in Cali[G]fornia

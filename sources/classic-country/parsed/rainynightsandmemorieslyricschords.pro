@@ -1,6 +1,6 @@
 {meta: title Rainy Nights And Memories}
 {meta: artist Don Williams}
-{meta: writer Wayland Holyfield and Jim Rushing}
+{meta: composer Wayland Holyfield and Jim Rushing}
 
 {start_of_verse: Verse 1}
 [C]It's hard to hide a lingering [C][F]disappointment

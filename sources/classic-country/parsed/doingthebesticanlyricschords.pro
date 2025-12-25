@@ -1,6 +1,6 @@
 {meta: title Doing The Best I Can}
 {meta: artist Elvis Presley}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [G]I gave my heart I gave my [G7]love

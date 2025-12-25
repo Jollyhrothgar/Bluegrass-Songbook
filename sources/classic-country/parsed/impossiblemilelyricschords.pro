@@ -1,6 +1,6 @@
 {meta: title Impossible Mile}
 {meta: artist Vern Gosdin}
-{meta: writer Max D. Barnes and Vern Gosdin}
+{meta: composer Max D. Barnes and Vern Gosdin}
 
 {start_of_verse: Verse 1}
 [C]Jesus was His name and love was His game

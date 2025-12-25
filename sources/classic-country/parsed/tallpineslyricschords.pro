@@ -1,6 +1,6 @@
 {meta: title Tall Pines}
 {meta: artist Bill Monroe}
-{meta: writer Damon Black}
+{meta: composer Damon Black}
 
 {start_of_verse: Verse 1}
 [G]Once in my youth I stood [C]on this [G]mountain

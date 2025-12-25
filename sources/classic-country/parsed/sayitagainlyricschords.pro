@@ -1,6 +1,6 @@
 {meta: title Say It Again}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]Oh all I needed was one [C]look

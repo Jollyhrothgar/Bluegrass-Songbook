@@ -1,6 +1,6 @@
 {meta: title A Way to Survive}
 {meta: artist Gene Watson}
-{meta: writer Hank Cochran and Moneen Carpenter}
+{meta: composer Hank Cochran and Moneen Carpenter}
 
 {start_of_verse: Verse 1}
 [C]I look at your picture too [D7]often 

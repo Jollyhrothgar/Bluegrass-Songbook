@@ -1,6 +1,6 @@
 {meta: title When You Fall In Love Every Thing's A Waltz chords}
 {meta: artist Ed Bruce}
-{meta: writer Patsy Bruce, Ron Peterson and Ed Bruce}
+{meta: composer Patsy Bruce, Ron Peterson and Ed Bruce}
 
 {start_of_verse: Verse 1}
 [G]We don't dance the [C]two-step [D7]anymore

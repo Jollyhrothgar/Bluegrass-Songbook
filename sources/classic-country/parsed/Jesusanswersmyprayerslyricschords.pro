@@ -1,6 +1,6 @@
 {meta: title Jesus Answers My Prayers}
 {meta: artist Reno and Smiley}
-{meta: writer Don Reno}
+{meta: composer Don Reno}
 
 {start_of_verse: Verse 1}
 [C]When my life is in despair

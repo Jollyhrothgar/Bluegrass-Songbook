@@ -1,6 +1,6 @@
 {meta: title Play Me The Truth}
 {meta: artist Tony Booth}
-{meta: writer Guyanne McCall and Justin Trevino}
+{meta: composer Guyanne McCall and Justin Trevino}
 
 {start_of_verse: Verse 1}
 [G]It amazes me the [C]wisdom you [G]posses

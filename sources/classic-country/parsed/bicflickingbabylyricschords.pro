@@ -1,6 +1,6 @@
 {meta: title Bic Flicking Baby}
 {meta: artist Moe Bandy}
-{meta: writer Carl Belew, Van Givens, Ramsey Kearney}
+{meta: composer Carl Belew, Van Givens, Ramsey Kearney}
 
 {start_of_verse: Verse 1}
 [G]Like old Dr. Pepper sometimes she's [C]misunderstood

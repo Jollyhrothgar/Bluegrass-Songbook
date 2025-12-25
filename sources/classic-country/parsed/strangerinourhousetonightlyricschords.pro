@@ -1,6 +1,6 @@
 {meta: title Stranger in Our House Tonight}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby}
+{meta: composer Dave Kirby}
 
 {start_of_verse: Verse 1}
 [G]Last night I laid down with [C]someone I [G]love

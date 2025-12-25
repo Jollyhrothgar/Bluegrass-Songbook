@@ -1,6 +1,6 @@
 {meta: title Lonely Avenue}
 {meta: artist Everly Brothers}
-{meta: writer Doc Pomus}
+{meta: composer Doc Pomus}
 
 {start_of_verse: Verse 1}
 [C]My room has [F]got two [C]windows

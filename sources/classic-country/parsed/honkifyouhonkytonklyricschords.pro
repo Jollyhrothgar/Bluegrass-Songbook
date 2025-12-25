@@ -1,6 +1,6 @@
 {meta: title Honk If You Honky Tonk}
 {meta: artist George Strait}
-{meta: writer Dean Dillon, Ken Mellons, John Northrup}
+{meta: composer Dean Dillon, Ken Mellons, John Northrup}
 
 {start_of_verse: Verse 1}
 [G]Well I got a bumper sticker on the back of my truck

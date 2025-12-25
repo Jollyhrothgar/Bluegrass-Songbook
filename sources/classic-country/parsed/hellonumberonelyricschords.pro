@@ -1,6 +1,6 @@
 {meta: title Hello Number One}
 {meta: artist Kitty Wells}
-{meta: writer Jim Anglin}
+{meta: composer Jim Anglin}
 
 {start_of_verse: Verse 1}
 [F]Hello number one [C]goodbye lonesome time

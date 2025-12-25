@@ -1,6 +1,6 @@
 {meta: title Will You Travel Down This Road With Me}
 {meta: artist George Jones}
-{meta: writer Jamie O'Hara and Kieran Kane}
+{meta: composer Jamie O'Hara and Kieran Kane}
 
 {start_of_verse: Verse 1}
 [C]Will you travel down this road with me

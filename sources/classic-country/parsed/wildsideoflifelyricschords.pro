@@ -1,6 +1,6 @@
 {meta: title Wild Side of Life Lyrics Chords}
 {meta: artist Hank Thompson}
-{meta: writer Arlie A. Carter and William Warren}
+{meta: composer Arlie A. Carter and William Warren}
 
 {start_of_verse: Verse 1}
 [C]You wouldn't read my letter if [F]I wrote you

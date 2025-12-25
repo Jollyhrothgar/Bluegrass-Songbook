@@ -1,6 +1,6 @@
 {meta: title You're the Reason I'm Living}
 {meta: artist Wanda Jackson}
-{meta: writer Bobby Darin}
+{meta: composer Bobby Darin}
 
 {start_of_verse: Verse 1}
 [C]You're the reason I'm [F]living 

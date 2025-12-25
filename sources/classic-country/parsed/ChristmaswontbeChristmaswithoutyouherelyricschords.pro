@@ -1,6 +1,6 @@
 {meta: title Christmas Won't Be Christmas (Without You Here)}
 {meta: artist Sammy Kershaw}
-{meta: writer Steven Cohen and Rick Lagneaux}
+{meta: composer Steven Cohen and Rick Lagneaux}
 
 {start_of_verse: Verse 1}
 [G7]It's a [C]silent night [F]snow is falling

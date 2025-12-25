@@ -1,6 +1,6 @@
 {meta: title Midnight Oil}
 {meta: artist Barbara Mandrell}
-{meta: writer Joe Allen}
+{meta: composer Joe Allen}
 
 {start_of_verse: Verse 1}
 [C]That call was from the office 

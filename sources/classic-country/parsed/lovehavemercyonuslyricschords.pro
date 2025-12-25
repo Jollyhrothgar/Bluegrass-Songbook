@@ -1,6 +1,6 @@
 {meta: title Love Have Mercy On Us}
 {meta: artist Dolly Parton and Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [G]I wasn't [D7]looking for [G]you when I [C]found you

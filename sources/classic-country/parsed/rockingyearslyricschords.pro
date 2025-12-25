@@ -1,6 +1,6 @@
 {meta: title Rocking Years}
 {meta: artist Dolly Parton}
-{meta: writer Floyd Estel Parton}
+{meta: composer Floyd Estel Parton}
 
 {start_of_verse: Verse 1}
 [G]I'll do everything I can to make [C]you proud to be my [G]man

@@ -1,6 +1,6 @@
 {meta: title Where Is She}
 {meta: artist Johnny Tillotson}
-{meta: writer Cynthia Weil and Barry Mann}
+{meta: composer Cynthia Weil and Barry Mann}
 
 {start_of_verse: Verse 1}
 [C]Where is [Em]she [F]that sweet little [G7]child

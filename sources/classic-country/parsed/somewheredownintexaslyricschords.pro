@@ -1,6 +1,6 @@
 {meta: title Somewhere Down in Texas}
 {meta: artist George Strait}
-{meta: writer Charlie Black, Tim Rouillier, Dana Hunt}
+{meta: composer Charlie Black, Tim Rouillier, Dana Hunt}
 
 {start_of_verse: Verse 1}
 [F]I been on the road now [C]dang near all my life[Dm]

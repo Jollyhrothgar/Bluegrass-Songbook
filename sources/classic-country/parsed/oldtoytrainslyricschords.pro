@@ -1,6 +1,6 @@
 {meta: title Old Toy Trains (aka Little Toy Trains)}
 {meta: artist Statler Brothers}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]Old toy trains little toy [G7]tracks 

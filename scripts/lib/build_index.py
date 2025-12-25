@@ -272,6 +272,9 @@ def parse_chordpro_metadata(content: str) -> dict:
     for match in re.finditer(r'\{meta:\s*(\w+)\s+([^}]+)\}', content):
         key = match.group(1).lower()
         value = match.group(2).strip()
+        # Map 'writer' to 'composer' for backwards compatibility
+        if key == 'writer':
+            key = 'composer'
         if key in metadata:
             metadata[key] = value
 

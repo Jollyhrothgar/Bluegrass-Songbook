@@ -1,6 +1,6 @@
 {meta: title How Good A Bad Woman Feels}
 {meta: artist Gene Watson}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]I thought I wanted an angel and what I got was just [G7]that

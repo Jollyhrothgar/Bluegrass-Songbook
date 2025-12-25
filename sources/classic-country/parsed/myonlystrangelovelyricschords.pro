@@ -1,6 +1,6 @@
 {meta: title My Only Strange Love}
 {meta: artist Mel Tillis}
-{meta: writer Jerry House}
+{meta: composer Jerry House}
 
 {start_of_verse: Verse 1}
 [C]You accuse me of runnin' [F]all over town

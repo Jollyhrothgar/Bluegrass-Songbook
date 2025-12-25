@@ -1,6 +1,6 @@
 {meta: title I've Got a New Heartache}
 {meta: artist Ray Price}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]You're back in town again  spreadin' talk [D7]around

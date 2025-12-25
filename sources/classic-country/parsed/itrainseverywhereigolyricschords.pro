@@ -1,6 +1,6 @@
 {meta: title It Rains Everywhere I Go}
 {meta: artist The Osborne Brothers}
-{meta: writer Don Cusic}
+{meta: composer Don Cusic}
 
 {start_of_verse: Verse 1}
 [G]The sun used to [C]always [G]shine

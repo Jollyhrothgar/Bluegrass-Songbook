@@ -1,6 +1,6 @@
 {meta: title I'm With A Crowd But So Alone}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb and Carl Story}
+{meta: composer Ernest Tubb and Carl Story}
 
 {start_of_verse: Verse 1}
 [G]Tonight with another I'm [C]dancing 

@@ -1,6 +1,6 @@
 {meta: title I Want You Free}
 {meta: artist Jean Shepard}
-{meta: writer Martha Sharp}
+{meta: composer Martha Sharp}
 
 {start_of_verse: Verse 1}
 [C]If my words should ever strike [F]you

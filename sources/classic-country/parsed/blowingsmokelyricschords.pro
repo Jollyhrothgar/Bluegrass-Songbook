@@ -1,6 +1,6 @@
 {meta: title Blowing Smoke}
 {meta: artist David Ball}
-{meta: writer Billy Spencer, David Ball, Tommy Polk}
+{meta: composer Billy Spencer, David Ball, Tommy Polk}
 
 {start_of_verse: Verse 1}
 [G]Beneath this neon haze [D7]here in this honky [G]tonk

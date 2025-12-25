@@ -1,6 +1,6 @@
 {meta: title Remember The Cross}
 {meta: artist Ricky Skaggs}
-{meta: writer Bill Monroe and Howard Watts}
+{meta: composer Bill Monroe and Howard Watts}
 
 {start_of_verse: Verse 1}
 [G]Do you think of the cross on [C]which Jesus [G]died 

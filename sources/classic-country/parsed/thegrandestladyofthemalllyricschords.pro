@@ -1,6 +1,6 @@
 {meta: title The Grandest Lady Of Them All}
 {meta: artist Conway Twitty}
-{meta: writer Bob Morrison and Mel McDaniel}
+{meta: composer Bob Morrison and Mel McDaniel}
 
 {start_of_verse: Verse 1}
 [C]She's never in the spotlight but [F]everybody knows that she's the [C]star

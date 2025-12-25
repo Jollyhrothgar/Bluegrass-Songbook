@@ -1,6 +1,6 @@
 {meta: title Dusty Skies}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Dusty skies I can't see nothing in sight

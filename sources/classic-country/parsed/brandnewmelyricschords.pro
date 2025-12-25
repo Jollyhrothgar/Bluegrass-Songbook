@@ -1,6 +1,6 @@
 {meta: title Brand New Me}
 {meta: artist Ricky Skaggs}
-{meta: writer Carl Chambers}
+{meta: composer Carl Chambers}
 
 {start_of_verse: Verse 1}
 [C]You took my broken [F]heart put the [C]pieces back in [F]place

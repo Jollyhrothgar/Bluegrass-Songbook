@@ -1,6 +1,6 @@
 {meta: title Cowboys Holiday (Jingle Bells)}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy, Norbert, Perter Match – traditional}
+{meta: composer David Bellamy, Norbert, Perter Match – traditional}
 
 {start_of_verse: Verse 1}
 [C]Jingle bells shotgun shells boots and hats and hay

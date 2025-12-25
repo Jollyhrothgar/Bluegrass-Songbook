@@ -1,6 +1,6 @@
 {meta: title You're The Cloud I'm On (When I'm High)}
 {meta: artist George Strait}
-{meta: writer Ronnie Rogers}
+{meta: composer Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I like a drink cause I'm [D7]happy

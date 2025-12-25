@@ -1,6 +1,6 @@
 {meta: title Happy Birthday To Me}
 {meta: artist Hank Locklin}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [G]Today has been my birthday and [C]tonight I should be [G]glad

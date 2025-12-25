@@ -1,6 +1,6 @@
 {meta: title Don't Let Him Make A Memory Out Of Me}
 {meta: artist Billy Walker}
-{meta: writer Arthur Leo Owens and Jerry McBee}
+{meta: composer Arthur Leo Owens and Jerry McBee}
 
 {start_of_verse: Verse 1}
 [G]You say you only want to [Am]see him [D7]

@@ -1,6 +1,6 @@
 {meta: title I Ain't Got Nothing But Time}
 {meta: artist Hank Williams}
-{meta: writer and recorded by Hank Williams}
+{meta: composer and recorded by Hank Williams}
 
 {start_of_verse: Verse 1}
 [C]Little girl if you're feeling low

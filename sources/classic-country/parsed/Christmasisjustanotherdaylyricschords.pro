@@ -1,6 +1,6 @@
 {meta: title Christmas Is Just Another Day}
 {meta: artist Ernest Tubb}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Christmas is just another [D7]day for me

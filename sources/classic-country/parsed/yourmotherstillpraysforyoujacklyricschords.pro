@@ -1,6 +1,6 @@
 {meta: title Your Mother Still Prays For You Jack}
 {meta: artist Lester Flatt and Earl Scruggs}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [G]The night was dark and [C]stormy

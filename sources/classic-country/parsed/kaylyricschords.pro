@@ -1,6 +1,6 @@
 {meta: title Kay}
 {meta: artist John Wesley Ryles}
-{meta: writer Hank Mills}
+{meta: composer Hank Mills}
 
 {start_of_verse: Verse 1}
 [C]Kay with all your singing talent back in [F]Houston 

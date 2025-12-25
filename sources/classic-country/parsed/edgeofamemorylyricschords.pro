@@ -1,6 +1,6 @@
 {meta: title Edge Of A Memory}
 {meta: artist Tracy Byrd}
-{meta: writer Gene Nelson and Tom Shapiro}
+{meta: composer Gene Nelson and Tom Shapiro}
 
 {start_of_verse: Verse 1}
 [G]All at once here I [D7]am in this [G]barroom 

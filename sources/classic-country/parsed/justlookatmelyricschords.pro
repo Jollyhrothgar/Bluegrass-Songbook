@@ -1,6 +1,6 @@
 {meta: title Just Look At Me}
 {meta: artist George Strait}
-{meta: writer Curtis Wayne and Gerald Smith}
+{meta: composer Curtis Wayne and Gerald Smith}
 
 {start_of_verse: Verse 1}
 [C]One [G7]look at [C]you  [C7]and just look at [F]me

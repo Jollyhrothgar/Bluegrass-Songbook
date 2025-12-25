@@ -1,6 +1,6 @@
 {meta: title Letter Edged In Black}
 {meta: artist Stonewall Jackson}
-{meta: writer Roy Carter}
+{meta: composer Roy Carter}
 
 {start_of_verse: Verse 1}
 [C]I was standing by my window yesterday [G7]morning

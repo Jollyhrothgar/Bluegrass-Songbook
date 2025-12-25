@@ -1,6 +1,6 @@
 {meta: title Two Pina Coladas}
 {meta: artist Garth Brooks}
-{meta: writer Shawn Camp, Sandy Mason, Benita Hill}
+{meta: composer Shawn Camp, Sandy Mason, Benita Hill}
 
 {start_of_verse: Verse 1}
 [C]I was feeling the blues I was watching the news 

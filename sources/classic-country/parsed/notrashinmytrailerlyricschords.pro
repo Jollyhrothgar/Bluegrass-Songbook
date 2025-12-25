@@ -1,6 +1,6 @@
 {meta: title No Trash In My Trailer}
 {meta: artist Gene Watson}
-{meta: writer Byron Hill & Mike Dekle}
+{meta: composer Byron Hill & Mike Dekle}
 
 {start_of_verse: Verse 1}
 [C]Yes I live in a single wide

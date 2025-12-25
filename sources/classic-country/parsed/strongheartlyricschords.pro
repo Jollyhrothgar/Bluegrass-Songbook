@@ -1,6 +1,6 @@
 {meta: title Strong Heart}
 {meta: artist Patty Loveless}
-{meta: writer Emory Gordy and Kris Tyler}
+{meta: composer Emory Gordy and Kris Tyler}
 
 {start_of_verse: Verse 1}
 [C]Everybody's had the blues days [Am] when it comes undone

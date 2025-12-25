@@ -1,6 +1,6 @@
 {meta: title The Crow Flying Backwards}
 {meta: artist Chad Morgan}
-{meta: writer Brian Brennan}
+{meta: composer Brian Brennan}
 
 {start_of_verse: Verse 1}
 [G]Out where the bushman sings and those dingos howl

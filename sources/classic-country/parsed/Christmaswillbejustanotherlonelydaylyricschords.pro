@@ -1,6 +1,6 @@
 {meta: title Christmas Will Be Just Another Lonely Day}
 {meta: artist Brenda Lee}
-{meta: writer Lee Jackson and Patti Seymour}
+{meta: composer Lee Jackson and Patti Seymour}
 
 {start_of_verse: Verse 1}
 [C]It's Christmas Eve and snow is on the ground

@@ -1,6 +1,6 @@
 {meta: title Blue For You}
 {meta: artist Sonny James}
-{meta: writer John Skye}
+{meta: composer John Skye}
 
 {start_of_verse: Verse 1}
 [D7]Lonesome for you through the day (lonesome for you through the [G]day)

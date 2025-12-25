@@ -1,6 +1,6 @@
 {meta: title I'm Never Gonna Let You Go}
 {meta: artist George Strait}
-{meta: writer Clay Blacker}
+{meta: composer Clay Blacker}
 
 {start_of_verse: Verse 1}
 [C]Let's turn the [Am]lights down [F]soft and [G7]low [F]

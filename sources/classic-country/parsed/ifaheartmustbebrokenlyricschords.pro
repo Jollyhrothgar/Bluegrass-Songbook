@@ -1,6 +1,6 @@
 {meta: title If A Heart Must Be Broken}
 {meta: artist Anne Murray}
-{meta: writer Craig Bickhardt}
+{meta: composer Craig Bickhardt}
 
 {start_of_verse: Verse 1}
 [G]For y-ou [G7]my heart was always [C]open

@@ -1,6 +1,6 @@
 {meta: title Dim Dark Corner}
 {meta: artist Leroy Van Dyke}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]Love can’t live in a dim dark [F]corner

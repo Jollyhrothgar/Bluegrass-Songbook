@@ -1,6 +1,6 @@
 {meta: title Blue Ridge Mountains Turning Green}
 {meta: artist Ronnie Milsap}
-{meta: writer James Lunsford}
+{meta: composer James Lunsford}
 
 {start_of_verse: Verse 1}
 [C]B-lue [F]R-idge [G7]Mountains turning [C]green

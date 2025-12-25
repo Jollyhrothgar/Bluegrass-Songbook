@@ -1,6 +1,6 @@
 {meta: title Hangover Heart}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Pat J. Hagan}
+{meta: composer Hank Thompson and Pat J. Hagan}
 
 {start_of_verse: Verse 1}
 [G]I've got a hangover heart from your kisses last [C]night

@@ -1,6 +1,6 @@
 {meta: title You're That Someone Else}
 {meta: artist Wynn Stewart}
-{meta: writer Tommy Collins and Wynn Stewart}
+{meta: composer Tommy Collins and Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [G]If you ever change your mind [C]and want me back [G]again

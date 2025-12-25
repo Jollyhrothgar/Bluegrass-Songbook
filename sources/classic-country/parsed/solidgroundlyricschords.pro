@@ -1,6 +1,6 @@
 {meta: title Solid Ground}
 {meta: artist Ricky Skaggs}
-{meta: writer Gary Owens}
+{meta: composer Gary Owens}
 
 {start_of_verse: Verse 1}
 [C]One man built his house in the sand

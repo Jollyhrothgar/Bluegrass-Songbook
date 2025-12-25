@@ -1,6 +1,6 @@
 {meta: title All The Good Things Are Gone}
 {meta: artist Ray Price}
-{meta: writer Bob Morrison and Armendia Barton}
+{meta: composer Bob Morrison and Armendia Barton}
 
 {start_of_verse: Verse 1}
 [C]No I can't [Em]remember when [F]times were ever [G7]bad

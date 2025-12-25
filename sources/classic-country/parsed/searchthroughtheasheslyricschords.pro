@@ -1,6 +1,6 @@
 {meta: title Search Through The Ashes}
 {meta: artist Wynn Stewart}
-{meta: writer Robert Bozo Darnell and Jack Gunter}
+{meta: composer Robert Bozo Darnell and Jack Gunter}
 
 {start_of_verse: Verse 1}
 [C]I see in your [G7]eyes a [C]bit of sur[F]prise

@@ -1,6 +1,6 @@
 {meta: title I Need Jesus}
 {meta: artist Rhonda Vincent}
-{meta: writer Willie Henderson and Willie Henderson Jr.}
+{meta: composer Willie Henderson and Willie Henderson Jr.}
 
 {start_of_verse: Verse 1}
 [C]Well I need [G7]Jesus  [F]you need Him [C]too

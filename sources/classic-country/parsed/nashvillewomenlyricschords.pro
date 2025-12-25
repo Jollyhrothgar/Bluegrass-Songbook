@@ -1,6 +1,6 @@
 {meta: title Nashville Women}
 {meta: artist Waylon Jennings}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]If it wasn't for the powder and the fine tooth comb

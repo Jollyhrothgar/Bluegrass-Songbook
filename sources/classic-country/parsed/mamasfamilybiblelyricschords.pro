@@ -1,6 +1,6 @@
 {meta: title Mama's Family Bible}
 {meta: artist George Jones}
-{meta: writer Larry Kingston}
+{meta: composer Larry Kingston}
 
 {start_of_verse: Verse 1}
 [C]The estate is [G7]being [C]settled 

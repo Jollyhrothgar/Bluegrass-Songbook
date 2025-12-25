@@ -1,6 +1,6 @@
 {meta: title Victim Of The Game}
 {meta: artist Garth Brooks}
-{meta: writer Mark D. Sanders and Garth Brooks}
+{meta: composer Mark D. Sanders and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G]Well it took a little time 

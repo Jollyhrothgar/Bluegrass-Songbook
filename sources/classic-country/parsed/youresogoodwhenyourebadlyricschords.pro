@@ -1,6 +1,6 @@
 {meta: title You’re So Good When You’re Bad}
 {meta: artist Charlie Pride}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]You're a lady you're an angel

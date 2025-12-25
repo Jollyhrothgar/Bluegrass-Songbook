@@ -1,6 +1,6 @@
 {meta: title What Am I Doing There}
 {meta: artist George Jones}
-{meta: writer Buddy Brock and Zack Turner}
+{meta: composer Buddy Brock and Zack Turner}
 
 {start_of_verse: Verse 1}
 [C]I no longer know what's real [F]anymore

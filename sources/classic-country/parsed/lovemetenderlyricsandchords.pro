@@ -1,6 +1,6 @@
 {meta: title Love Me Tender}
 {meta: artist Marty Robbins}
-{meta: writer Vera Matson and Elvis Presley}
+{meta: composer Vera Matson and Elvis Presley}
 
 {start_of_verse: Verse 1}
 [C]Love me tender [D7]love me sweet [G7]never let me [C]go

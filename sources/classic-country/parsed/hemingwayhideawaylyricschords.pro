@@ -1,6 +1,6 @@
 {meta: title Hemingway Hideaway}
 {meta: artist The Bellamy Brothers}
-{meta: writer Ralph Siegel and T.T. Kermit}
+{meta: composer Ralph Siegel and T.T. Kermit}
 
 {start_of_verse: Verse 1}
 [C]I was driving out of town after [Am]she had turned me down

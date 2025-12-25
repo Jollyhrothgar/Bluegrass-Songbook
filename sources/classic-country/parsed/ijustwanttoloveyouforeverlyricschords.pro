@@ -1,6 +1,6 @@
 {meta: title I Just Want To Love You Forever}
 {meta: artist Johnny Lee}
-{meta: writer Donald Hare}
+{meta: composer Donald Hare}
 
 {start_of_verse: Verse 1}
 [C]I remember the night she [Dm]walked out again

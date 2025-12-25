@@ -1,6 +1,6 @@
 {meta: title Senor Santa Claus}
 {meta: artist Jim Reeves}
-{meta: writer Lawton Williams}
+{meta: composer Lawton Williams}
 
 {start_of_verse: Verse 1}
 [C]Dear Senor Santa Claus I [F]think I tell you [C]what

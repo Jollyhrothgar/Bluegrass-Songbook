@@ -1,6 +1,6 @@
 {meta: title Don't Stop Loving Me Now}
 {meta: artist Don Williams}
-{meta: writer Sam Hogin, Charles Cochran, Mark True}
+{meta: composer Sam Hogin, Charles Cochran, Mark True}
 
 {start_of_verse: Verse 1}
 [C]I [G]know I'm [D7]ready [Em]now to [C]love you like [D7]you want [G]me [C]to

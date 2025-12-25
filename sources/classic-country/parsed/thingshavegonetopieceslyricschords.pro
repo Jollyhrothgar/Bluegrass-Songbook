@@ -1,6 +1,6 @@
 {meta: title Things Have Gone To Pieces}
 {meta: artist George Jones}
-{meta: writer Leon PayneC}
+{meta: composer Leon PayneC}
 
 {start_of_verse: Verse 1}
 And last night your picture [G7]fell down from the [C]wall

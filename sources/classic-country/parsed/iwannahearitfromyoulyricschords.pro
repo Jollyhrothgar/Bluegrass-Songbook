@@ -1,6 +1,6 @@
 {meta: title I Wanna Hear It From You}
 {meta: artist Eddy Raven}
-{meta: writer Rick Giles and Nancy Montgomery}
+{meta: composer Rick Giles and Nancy Montgomery}
 
 {start_of_verse: Verse 1}
 [C]I believe there's [A#7]something [F]you ain't [C]told me[A#7]

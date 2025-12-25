@@ -1,6 +1,6 @@
 {meta: title My Memories of You}
 {meta: artist Gene Watson}
-{meta: writer Daniel T. Rainwater & Larry Booth}
+{meta: composer Daniel T. Rainwater & Larry Booth}
 
 {start_of_verse: Verse 1}
 [G]I feel so sorry for my friends now that you've left [C]me

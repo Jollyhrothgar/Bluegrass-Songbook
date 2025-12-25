@@ -1,6 +1,6 @@
 {meta: title Flower Of Love}
 {meta: artist David Houston}
-{meta: writer Margie Singleton and Leon Ashley}
+{meta: composer Margie Singleton and Leon Ashley}
 
 {start_of_verse: Verse 1}
 [G]Well it ain't gonna be as long now as it has [C]been

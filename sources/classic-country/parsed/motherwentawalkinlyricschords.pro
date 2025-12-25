@@ -1,6 +1,6 @@
 {meta: title Mother Went A Walkin'}
 {meta: artist Jim Reeves}
-{meta: writer Tom Bearden and Bob Lowery}
+{meta: composer Tom Bearden and Bob Lowery}
 
 {start_of_verse: Verse 1}
 [C](Shall we gather at the river that [G7]flows by the throne of [C]God)

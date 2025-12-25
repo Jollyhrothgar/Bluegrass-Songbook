@@ -1,6 +1,6 @@
 {meta: title You're The One I Dream About}
 {meta: artist Reba McEntire}
-{meta: writer Pamela Brown and Teresa Jackson}
+{meta: composer Pamela Brown and Teresa Jackson}
 
 {start_of_verse: Verse 1}
 [G]I caught you smiling at me again out of the [C]corner of my eye

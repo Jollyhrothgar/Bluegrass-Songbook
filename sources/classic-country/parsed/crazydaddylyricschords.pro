@@ -1,6 +1,6 @@
 {meta: title Crazy Daddy}
 {meta: artist David Allan Coe}
-{meta: writer Johnny Darrell}
+{meta: composer Johnny Darrell}
 
 {start_of_verse: Verse 1}
 [C]Just close your [E7]eyes and dream those [A7]lonely nights away

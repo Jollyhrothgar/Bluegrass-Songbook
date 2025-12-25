@@ -1,6 +1,6 @@
 {meta: title I'm Walking Slow (And Thinking About Her)}
 {meta: artist Ray Price}
-{meta: writer Bobby Bare and Lance Guyness}
+{meta: composer Bobby Bare and Lance Guyness}
 
 {start_of_verse: Verse 1}
 [C]When shadows fall I'm twice as lonely

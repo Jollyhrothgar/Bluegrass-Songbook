@@ -1,6 +1,6 @@
 {meta: title If You Ain't Lovin' (You Ain't Livin')}
 {meta: artist George Strait}
-{meta: writer Tommy Collins}
+{meta: composer Tommy Collins}
 
 {start_of_verse: Verse 1}
 [G]If you got a Cadi[D7]llac boy and a forty room [G]shack boy

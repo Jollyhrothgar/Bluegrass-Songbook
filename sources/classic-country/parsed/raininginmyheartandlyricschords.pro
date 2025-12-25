@@ -1,6 +1,6 @@
 {meta: title Raining In My Heart}
 {meta: artist Hank Williams Jr.}
-{meta: writer Jerry West and James Moore}
+{meta: composer Jerry West and James Moore}
 
 {start_of_verse: Verse 1}
 [C]Raining In My [F]Heart

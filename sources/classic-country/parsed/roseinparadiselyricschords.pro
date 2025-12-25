@@ -1,6 +1,6 @@
 {meta: title Rose in Paradise}
 {meta: artist Waylon Jennings}
-{meta: writer Jim McBride and Stewart Harris}
+{meta: composer Jim McBride and Stewart Harris}
 
 {start_of_verse: Verse 1}
 [C]She was a flower for the [F]taking 

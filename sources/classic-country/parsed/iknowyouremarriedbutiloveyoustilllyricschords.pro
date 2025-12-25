@@ -1,6 +1,6 @@
 {meta: title I Know You're Married (But I Love You Still)}
 {meta: artist Reno and Smiley}
-{meta: writer Mack Magaha and Don Reno}
+{meta: composer Mack Magaha and Don Reno}
 
 {start_of_verse: Verse 1}
 [G]The day I met you my heart spoke to me

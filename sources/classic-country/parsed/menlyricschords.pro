@@ -1,6 +1,6 @@
 {meta: title Men}
 {meta: artist Charly McClain}
-{meta: writer Ronny Scaife and Jerry Hayes}
+{meta: composer Ronny Scaife and Jerry Hayes}
 
 {start_of_verse: Verse 1}
 [G]Some men treat you just like a [C]lady 

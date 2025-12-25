@@ -1,6 +1,6 @@
 {meta: title Hurry Back Home}
 {meta: artist Charlie Walker}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [G]Don't write me no [C]letter [D7]don't call on the [G]phone

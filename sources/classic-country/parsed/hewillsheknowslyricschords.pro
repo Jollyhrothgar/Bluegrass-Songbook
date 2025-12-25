@@ -1,6 +1,6 @@
 {meta: title He Will She Knows}
 {meta: artist Kenny Rogers}
-{meta: writer Frank Rogers and Steve Leslie}
+{meta: composer Frank Rogers and Steve Leslie}
 
 {start_of_verse: Verse 1}
 [C]Two room house on an acre lot 

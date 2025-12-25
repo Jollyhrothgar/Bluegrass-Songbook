@@ -1,6 +1,6 @@
 {meta: title Take This Job And Shove It}
 {meta: artist Johnny Paycheck}
-{meta: writer David Allen Coe}
+{meta: composer David Allen Coe}
 
 {start_of_verse: Verse 1}
 [C]Take this job and shove it

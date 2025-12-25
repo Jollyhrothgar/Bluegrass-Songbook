@@ -1,6 +1,6 @@
 {meta: title Love Letters}
 {meta: artist Elvis Presley}
-{meta: writer Edward Heyman and Victor Young}
+{meta: composer Edward Heyman and Victor Young}
 
 {start_of_verse: Verse 1}
 [C]Love letters straight from your [Am]heart

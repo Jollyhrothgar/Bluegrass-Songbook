@@ -1,6 +1,6 @@
 {meta: title Something They Can't Take Away}
 {meta: artist Roy Orbison}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [G7]All too [Dm]soon we were [F]blown upon our [G7]separate ways [C]again

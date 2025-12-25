@@ -1,6 +1,6 @@
 {meta: title Oklahoma Hills}
 {meta: artist Hank Thompson}
-{meta: writer Woody and Jack Guthrie}
+{meta: composer Woody and Jack Guthrie}
 
 {start_of_verse: Verse 1}
 [C]Many months have come and gone

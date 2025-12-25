@@ -1,6 +1,6 @@
 {meta: title Guitar Man}
 {meta: artist Elvis Presley}
-{meta: writer Jerry Reed}
+{meta: composer Jerry Reed}
 
 {start_of_verse: Verse 1}
 [C]Well I quit my job down at the car wash 

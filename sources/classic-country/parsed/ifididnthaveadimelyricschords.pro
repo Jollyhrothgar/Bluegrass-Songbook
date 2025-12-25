@@ -1,6 +1,6 @@
 {meta: title If I Didn't Have A Dime}
 {meta: artist Mickey Gilley}
-{meta: writer Bert Russell and Phil Medley}
+{meta: composer Bert Russell and Phil Medley}
 
 {start_of_verse: Verse 1}
 [G]If I didn't have a dime and I didn't take the time

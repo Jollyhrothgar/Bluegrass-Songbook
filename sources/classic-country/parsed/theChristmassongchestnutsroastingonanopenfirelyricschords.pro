@@ -1,6 +1,6 @@
 {meta: title The Christmas Song (Chestnuts Roasting On An Open Fire) chords}
 {meta: artist John Anderson}
-{meta: writer Mel Torme and Robert Wells}
+{meta: composer Mel Torme and Robert Wells}
 
 {start_of_verse: Verse 1}
 The Christmas Song

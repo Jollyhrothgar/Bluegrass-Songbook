@@ -1,6 +1,6 @@
 {meta: title Back In My Younger Days}
 {meta: artist Don Williams}
-{meta: writer Danny Flowers}
+{meta: composer Danny Flowers}
 
 {start_of_verse: Verse 1}
 [G7]Back in my [C]younger days  I [F]used to go [G7]all [C]night

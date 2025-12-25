@@ -1,6 +1,6 @@
 {meta: title I See Jesus}
 {meta: artist Cristy Lane}
-{meta: writer Hiram Howard Yates}
+{meta: composer Hiram Howard Yates}
 
 {start_of_verse: Verse 1}
 [C]I didn’t see the teardrops fall [G7]in the garden where He cried

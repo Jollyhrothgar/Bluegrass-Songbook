@@ -1,6 +1,6 @@
 {meta: title The Fields Have Turned Brown}
 {meta: artist The Stanley Brothers}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]I left my old home to ramble this country

@@ -1,6 +1,6 @@
 {meta: title My Heart Is in Your Hands}
 {meta: artist Fats Domino}
-{meta: writer Dave Bartholomew and Antoine Domino}
+{meta: composer Dave Bartholomew and Antoine Domino}
 
 {start_of_verse: Verse 1}
 [G]I had it all planed just for [C]you

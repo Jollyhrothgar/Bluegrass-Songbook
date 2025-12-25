@@ -1,6 +1,6 @@
 {meta: title Wrong End Of The Rainbow}
 {meta: artist Don Williams}
-{meta: writer Richard C. Leigh and Milton Blackford}
+{meta: composer Richard C. Leigh and Milton Blackford}
 
 {start_of_verse: Verse 1}
 [C]I know this feelin' from [G7]somewhere 

@@ -1,6 +1,6 @@
 {meta: title Help Is On The Way}
 {meta: artist Doyle Lawson}
-{meta: writer Michael E. Reed Jr.}
+{meta: composer Michael E. Reed Jr.}
 
 {start_of_verse: Verse 1}
 [G]A woman in the [G7]Bible days her [C]last meal was almost gone    

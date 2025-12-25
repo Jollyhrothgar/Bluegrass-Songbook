@@ -1,6 +1,6 @@
 {meta: title A Long And Lasting Love}
 {meta: artist Crystal Gayle}
-{meta: writer Gerry Goffin and Michael H. Masser}
+{meta: composer Gerry Goffin and Michael H. Masser}
 
 {start_of_verse: Verse 1}
 [C]A long and lasting [F]love

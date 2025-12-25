@@ -1,6 +1,6 @@
 {meta: title Little Is Much}
 {meta: artist The Oak Ridge Boys}
-{meta: writer F.W. Suffield and Kittie L. Suffield}
+{meta: composer F.W. Suffield and Kittie L. Suffield}
 
 {start_of_verse: Verse 1}
 [C]In the harvest field now ripened

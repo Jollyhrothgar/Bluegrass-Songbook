@@ -1,6 +1,6 @@
 {meta: title Hello Josephine}
 {meta: artist Fats Domino}
-{meta: writer Fats Domino and}
+{meta: composer Fats Domino and}
 
 {start_of_verse: Verse 1}
 [G]Hello Josephine how do you do

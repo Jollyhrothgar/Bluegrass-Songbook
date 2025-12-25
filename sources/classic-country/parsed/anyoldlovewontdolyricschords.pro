@@ -1,6 +1,6 @@
 {meta: title Any Old Love Won’t Do}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Frank Dycus}
+{meta: composer Dean Dillon and Frank Dycus}
 
 {start_of_verse: Verse 1}
 [C]I've seen ladies look at me

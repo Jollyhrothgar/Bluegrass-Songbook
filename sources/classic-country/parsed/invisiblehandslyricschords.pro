@@ -1,6 +1,6 @@
 {meta: title Invisible Hands Me}
 {meta: artist Hank Snow}
-{meta: writer Bill Harrington, Fred Patrick, Frank Stanton}
+{meta: composer Bill Harrington, Fred Patrick, Frank Stanton}
 
 {start_of_verse: Verse 1}
 [G]Invisible hands [D7](invisible hands) [G]are waiting to guide [D7]you

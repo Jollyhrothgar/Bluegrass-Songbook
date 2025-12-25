@@ -1,6 +1,6 @@
 {meta: title You Don't Knock}
 {meta: artist Don Gibson}
-{meta: writer Wesley Westbrook and Cedar Walton}
+{meta: composer Wesley Westbrook and Cedar Walton}
 
 {start_of_verse: Verse 1}
 [G]You don't knock you just walk on in the door to heaven's [C]inn

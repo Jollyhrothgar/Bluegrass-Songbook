@@ -1,6 +1,6 @@
 {meta: title If I Had Half The Sense}
 {meta: artist Lefty Frizzell}
-{meta: writer Don Pearce}
+{meta: composer Don Pearce}
 
 {start_of_verse: Verse 1}
 [C]If I had half the sense a fool was [F]born with

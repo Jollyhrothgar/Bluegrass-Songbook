@@ -1,6 +1,6 @@
 {meta: title A Few Steps Away}
 {meta: artist Lefty Frizzell}
-{meta: writer Eddie Miller}
+{meta: composer Eddie Miller}
 
 {start_of_verse: Verse 1}
 [C]I’m here in a [C7]cold cold [F]prison 

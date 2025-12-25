@@ -1,6 +1,6 @@
 {meta: title I Just Came Home to Count the Memories}
 {meta: artist Cal Smith}
-{meta: writer Glenn Ray}
+{meta: composer Glenn Ray}
 
 {start_of_verse: Verse 1}
 [C]I saw roses choking in the grass

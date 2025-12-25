@@ -1,6 +1,6 @@
 {meta: title Remember M Remember E Remember Me}
 {meta: artist George Hamilton IV}
-{meta: writer Wayne P. Walker and Danny Dill}
+{meta: composer Wayne P. Walker and Danny Dill}
 
 {start_of_verse: Verse 1}
 [C]A boy loved a little girl a [F]long time [G7]ago

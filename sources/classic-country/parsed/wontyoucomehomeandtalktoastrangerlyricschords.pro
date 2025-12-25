@@ -1,6 +1,6 @@
 {meta: title Won't You Come Home And Talk To A Stranger}
 {meta: artist Ernest Tubb and Loretta Lynn}
-{meta: writer Wayne Kemp}
+{meta: composer Wayne Kemp}
 
 {start_of_verse: Verse 1}
 [C]Well I was out a drinking 

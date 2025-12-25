@@ -1,6 +1,6 @@
 {meta: title Take A Look At This Broken Heart Of Mine}
 {meta: artist Ferlin Husky}
-{meta: writer Hank Thompson}
+{meta: composer Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]I didn't have to open [D7]up the [G]bottle 

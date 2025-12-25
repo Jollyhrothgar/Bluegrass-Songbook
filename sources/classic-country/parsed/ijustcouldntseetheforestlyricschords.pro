@@ -1,6 +1,6 @@
 {meta: title I Just Couldn't See The Forest}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Bruce Delaney}
+{meta: composer Lefty Frizzell and Bruce Delaney}
 
 {start_of_verse: Verse 1}
 [D7]I just couldn’t see the forest for [G]the [D7]trees

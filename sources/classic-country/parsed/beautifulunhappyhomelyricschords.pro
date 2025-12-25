@@ -1,6 +1,6 @@
 {meta: title Beautiful Unhappy Home Lyrics Chords}
 {meta: artist Loretta Lynn}
-{meta: writer Johnny Russell and Teddy Wilburn}
+{meta: composer Johnny Russell and Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [G]We were proud of this [C]house that we [G]found

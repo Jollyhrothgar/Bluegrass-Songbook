@@ -1,6 +1,6 @@
 {meta: title Monday Morning Church}
 {meta: artist Alan Jackson}
-{meta: writer Brent Baxter and Erin Enderlin}
+{meta: composer Brent Baxter and Erin Enderlin}
 
 {start_of_verse: Verse 1}
 [G7]You left your [C]bible on the dresser so I [F]put it in the drawer[C]

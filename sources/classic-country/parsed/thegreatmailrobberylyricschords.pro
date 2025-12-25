@@ -1,6 +1,6 @@
 {meta: title The Great Mail Robbery}
 {meta: artist Rex Allen Jr.}
-{meta: writer Joseph Paul Allen}
+{meta: composer Joseph Paul Allen}
 
 {start_of_verse: Verse 1}
 [G]He met me at the corner with his hand above his hip

@@ -1,6 +1,6 @@
 {meta: title Lily Marlene}
 {meta: artist Hank Snow}
-{meta: writer Hans Leip and Norbert Schulze}
+{meta: composer Hans Leip and Norbert Schulze}
 
 {start_of_verse: Verse 1}
 [G]Would you like to hear the [C]story

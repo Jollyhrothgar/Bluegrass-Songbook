@@ -1,6 +1,6 @@
 {meta: title Recipe For Marriage On The Rocks}
 {meta: artist Norma Jean}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [G]Take a husband who enjoys other [D7]women

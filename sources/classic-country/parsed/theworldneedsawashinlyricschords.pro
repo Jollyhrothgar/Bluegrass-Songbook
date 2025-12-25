@@ -1,6 +1,6 @@
 {meta: title The World Needs A Washin'}
 {meta: artist Porter Wagoner}
-{meta: writer Hank Cochran and Buck Trent}
+{meta: composer Hank Cochran and Buck Trent}
 
 {start_of_verse: Verse 1}
 [C]Oh the world needs a washin' so why shouldn't it rain

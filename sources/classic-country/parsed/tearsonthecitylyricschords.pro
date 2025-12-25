@@ -1,6 +1,6 @@
 {meta: title Tears On The City}
 {meta: artist Billy Walker}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]Tears of the [Dm]city [G7]now fill poor [C]Liza's eyes

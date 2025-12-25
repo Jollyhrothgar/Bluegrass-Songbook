@@ -1,6 +1,6 @@
 {meta: title Don't You Be Fooling With A Fool}
 {meta: artist Mickey Gilley}
-{meta: writer Lewis Anderson}
+{meta: composer Lewis Anderson}
 
 {start_of_verse: Verse 1}
 [C]The band is softly playing

@@ -1,6 +1,6 @@
 {meta: title The Call}
 {meta: artist John Anderson}
-{meta: writer Michael White and Eric Heatherly}
+{meta: composer Michael White and Eric Heatherly}
 
 {start_of_verse: Verse 1}
 [C]I remember that old rotary phone

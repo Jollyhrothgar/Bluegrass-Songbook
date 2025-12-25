@@ -1,6 +1,6 @@
 {meta: title It's Another Silent Night}
 {meta: artist Reba McEntire}
-{meta: writer Terry Skinner and Ken Bell}
+{meta: composer Terry Skinner and Ken Bell}
 
 {start_of_verse: Verse 1}
 [G]Silence is [Bm]golden when the [C]one that you're [G]holdin'

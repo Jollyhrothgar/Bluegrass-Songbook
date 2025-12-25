@@ -1,6 +1,6 @@
 {meta: title What Money Can't Buy}
 {meta: artist Charlie Pride}
-{meta: writer Howard White, Carl Knight, Clayton Ford}
+{meta: composer Howard White, Carl Knight, Clayton Ford}
 
 {start_of_verse: Verse 1}
 [G]To watch the rain fall o’er [C]the fields and the [G]valleys

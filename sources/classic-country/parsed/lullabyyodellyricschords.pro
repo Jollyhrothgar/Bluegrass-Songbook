@@ -1,6 +1,6 @@
 {meta: title Lullaby Yodel}
 {meta: artist Lefty Frizzell}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]My baby I know [F]that you want [C]me 

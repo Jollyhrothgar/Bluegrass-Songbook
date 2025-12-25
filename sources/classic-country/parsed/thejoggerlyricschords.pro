@@ -1,6 +1,6 @@
 {meta: title The Jogger}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]Well I've been a trucker now for twenty years

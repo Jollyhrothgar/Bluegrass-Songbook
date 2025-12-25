@@ -1,6 +1,6 @@
 {meta: title You Make Me Feel More Like A Man}
 {meta: artist Mel Street}
-{meta: writer John Riggs}
+{meta: composer John Riggs}
 
 {start_of_verse: Verse 1}
 [G]There's a ring on my finger 

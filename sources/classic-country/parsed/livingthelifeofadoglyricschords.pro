@@ -1,5 +1,5 @@
 {meta: artist Johnny Paycheck}
-{meta: writer Aubrey Mayhew and Billy Eldridge}
+{meta: composer Aubrey Mayhew and Billy Eldridge}
 
 {start_of_verse: Verse 1}
 [C]I came home last night just a little [F]late

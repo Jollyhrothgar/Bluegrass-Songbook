@@ -1,6 +1,6 @@
 {meta: title Back To Hers}
 {meta: artist Norma Jean}
-{meta: writer Hank Cochran and Dave Kirby}
+{meta: composer Hank Cochran and Dave Kirby}
 
 {start_of_verse: Verse 1}
 [C]How can something so right be so [D7]wrong

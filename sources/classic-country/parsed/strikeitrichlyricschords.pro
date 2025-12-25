@@ -1,6 +1,6 @@
 {meta: title Strike It Rich}
 {meta: artist Jim Reeves}
-{meta: writer Anton De Waal and Nico Carstens}
+{meta: composer Anton De Waal and Nico Carstens}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna strike it rich I'm [F]gonna get my lucky [G7]break

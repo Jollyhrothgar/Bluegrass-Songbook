@@ -1,6 +1,6 @@
 {meta: title Make That One For The Road A Cup Of Coffee}
 {meta: artist Lefty Frizzell}
-{meta: writer Freddie Hart and Eddie Steele}
+{meta: composer Freddie Hart and Eddie Steele}
 
 {start_of_verse: Verse 1}
 [C]I hung around the honky tonks and [F]taverns

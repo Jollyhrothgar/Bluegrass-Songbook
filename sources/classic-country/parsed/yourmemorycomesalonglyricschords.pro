@@ -1,6 +1,6 @@
 {meta: title Your Memory Comes Along}
 {meta: artist Johnny Tillotson}
-{meta: writer Johnny Tillotson and Paul Tannen}
+{meta: composer Johnny Tillotson and Paul Tannen}
 
 {start_of_verse: Verse 1}
 [G]Tears start falling [C]I can hardly see

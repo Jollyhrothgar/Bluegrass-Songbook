@@ -1,6 +1,6 @@
 {meta: title Where Do I Go From Here (A Trucker's Song)}
 {meta: artist Alan Jackson}
-{meta: writer Robert Castleman and Stephen Foster}
+{meta: composer Robert Castleman and Stephen Foster}
 
 {start_of_verse: Verse 1}
 [D7]Well I [G]came from [G7]Alabama [C]with a [G]banjo on my [D7]knee

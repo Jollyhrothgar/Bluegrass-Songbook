@@ -1,6 +1,6 @@
 {meta: title When I Stop Dreaming}
 {meta: artist Louvin Brothers}
-{meta: writer Ira and Charles Louvin}
+{meta: composer Ira and Charles Louvin}
 
 {start_of_verse: Verse 1}
 When [C]I stop [F]dreaming

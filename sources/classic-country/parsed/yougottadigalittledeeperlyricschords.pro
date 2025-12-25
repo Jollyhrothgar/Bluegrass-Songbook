@@ -1,6 +1,6 @@
 {meta: title You Gotta Dig A Little Deeper}
 {meta: artist Doyle Lawson}
-{meta: writer Carl H. Caldwell and Barry M. Scott}
+{meta: composer Carl H. Caldwell and Barry M. Scott}
 
 {start_of_verse: Verse 1}
 [G]Weeeeeeeeeeell 

@@ -1,6 +1,6 @@
 {meta: title Where Am I Going To Live When I Get Home}
 {meta: artist Billy Ray Cyrus}
-{meta: writer Billy Ray Cyrus and Cindy Cyrus}
+{meta: composer Billy Ray Cyrus and Cindy Cyrus}
 
 {start_of_verse: Verse 1}
 [G]Where am I gonna live when I get [D7]home 

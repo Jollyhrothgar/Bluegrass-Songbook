@@ -1,6 +1,6 @@
 {meta: title Endless Sleep}
 {meta: artist Hank Williams Jr.}
-{meta: writer Judy Reynolds and Dolores Nance}
+{meta: composer Judy Reynolds and Dolores Nance}
 
 {start_of_verse: Verse 1}
 [C]The night was black rain falling down 

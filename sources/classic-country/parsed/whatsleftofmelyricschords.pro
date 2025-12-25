@@ -1,6 +1,6 @@
 {meta: title What's Left Of Me}
 {meta: artist Dwight Yoakam}
-{meta: writer Dwight Yoakam and Mick Jagger}
+{meta: composer Dwight Yoakam and Mick Jagger}
 
 {start_of_verse: Verse 1}
 [G]What's left of me [C]is not worth [G]much

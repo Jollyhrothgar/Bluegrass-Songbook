@@ -1,6 +1,6 @@
 {meta: title Young Dallas Cowboy}
 {meta: artist David Allan Coe}
-{meta: writer David A. Coe and Deborah Coe}
+{meta: composer David A. Coe and Deborah Coe}
 
 {start_of_verse: Verse 1}
 [C]I've hiked through the sage brush I [F]ran up some [C]rails

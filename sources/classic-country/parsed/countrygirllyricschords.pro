@@ -1,6 +1,6 @@
 {meta: title Country Girl Lyrics chords}
 {meta: artist Faron Young}
-{meta: writer Roy Drusky}
+{meta: composer Roy Drusky}
 
 {start_of_verse: Verse 1}
 [C]I met you my country girl you didn't have a [G7]thing

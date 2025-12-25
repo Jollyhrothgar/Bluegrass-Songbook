@@ -1,6 +1,6 @@
 {meta: title Unfaithful Fools}
 {meta: artist Leroy Van Dyke}
-{meta: writer Bobby Fischer}
+{meta: composer Bobby Fischer}
 
 {start_of_verse: Verse 1}
 [G]I guess we feel the [D7]same about each [G]other

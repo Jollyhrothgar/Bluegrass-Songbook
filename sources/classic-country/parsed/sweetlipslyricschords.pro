@@ -1,6 +1,6 @@
 {meta: title Sweet Lips}
 {meta: artist Webb Pierce}
-{meta: writer Wayne Walker, Doug Tubb and Webb Pierce}
+{meta: composer Wayne Walker, Doug Tubb and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]Sweet sweet lips that kiss so [G7]sweetly

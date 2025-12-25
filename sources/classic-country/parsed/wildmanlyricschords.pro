@@ -1,6 +1,6 @@
 {meta: title Wild Man}
 {meta: artist Ricky Van Shelton}
-{meta: writer Richard C. Giles and Susan Longacre}
+{meta: composer Richard C. Giles and Susan Longacre}
 
 {start_of_verse: Verse 1}
 [C]Running down the road same old same old

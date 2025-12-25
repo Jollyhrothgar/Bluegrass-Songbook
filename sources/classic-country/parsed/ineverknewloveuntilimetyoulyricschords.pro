@@ -1,6 +1,6 @@
 {meta: title I Never Knew Love (Until I Met You)}
 {meta: artist George Morgan}
-{meta: writer Betty Jean Robinson}
+{meta: composer Betty Jean Robinson}
 
 {start_of_verse: Verse 1}
 [C]Come over here darling [F]lay your head on my [C]shoulder

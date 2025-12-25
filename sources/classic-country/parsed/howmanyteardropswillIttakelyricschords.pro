@@ -1,6 +1,6 @@
 {meta: title How Many Teardrops Will It Take}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray and Hank Thompson}
+{meta: composer Billy Gray and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [C]How many teardrops have fallen over you

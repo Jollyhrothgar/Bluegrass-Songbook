@@ -1,6 +1,6 @@
 {meta: title Goodbye (Kelly's Song)}
 {meta: artist Alabama}
-{meta: writer Randy Owen}
+{meta: composer Randy Owen}
 
 {start_of_verse: Verse 1}
 [G]Before I fly and [Bm]wave goodbye [C] I say to [G]you

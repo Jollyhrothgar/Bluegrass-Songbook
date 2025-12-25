@@ -1,6 +1,6 @@
 {meta: title The Flame}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [G]I find myself remembering [D7]things I thought I'd [G]forgot

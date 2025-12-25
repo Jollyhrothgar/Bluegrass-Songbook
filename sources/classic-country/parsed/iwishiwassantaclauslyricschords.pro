@@ -1,6 +1,6 @@
 {meta: title I Wish I Was Santa Claus}
 {meta: artist Merle Haggard}
-{meta: writer Raymond McDonald}
+{meta: composer Raymond McDonald}
 
 {start_of_verse: Verse 1}
 [C]I wish I was [F]Santa [G7]Claus

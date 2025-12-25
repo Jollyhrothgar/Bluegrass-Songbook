@@ -1,6 +1,6 @@
 {meta: title I'm Comin' Home Momma}
 {meta: artist Wilburn Brothers}
-{meta: writer Johnny Russell and Voni Morrison}
+{meta: composer Johnny Russell and Voni Morrison}
 
 {start_of_verse: Verse 1}
 [F]I'm comin' home [C]momma  it [G7]won't be [C]long

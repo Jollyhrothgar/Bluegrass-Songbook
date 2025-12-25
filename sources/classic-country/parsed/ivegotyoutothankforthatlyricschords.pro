@@ -1,6 +1,6 @@
 {meta: title I've Got You To Thank For That}
 {meta: artist Don Williams}
-{meta: writer Don Pfrimmer and Blake Mevis}
+{meta: composer Don Pfrimmer and Blake Mevis}
 
 {start_of_verse: Verse 1}
 [G]I've got Sunday school to thank for Jesus

@@ -1,6 +1,6 @@
 {meta: title Tacoma}
 {meta: artist Garth Brooks}
-{meta: writer Bob DiPiero and Caitlyn Smith}
+{meta: composer Bob DiPiero and Caitlyn Smith}
 
 {start_of_verse: Verse 1}
 [C]I'm leaving  words fall [G7]out of my mouth and onto the floor

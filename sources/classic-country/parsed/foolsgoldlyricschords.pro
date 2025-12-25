@@ -1,6 +1,6 @@
 {meta: title Fool's Gold}
 {meta: artist Lee Greenwood}
-{meta: writer Russ Freeman}
+{meta: composer Russ Freeman}
 
 {start_of_verse: Verse 1}
 [F]If I [C]only knew then [F]what I know [C]now

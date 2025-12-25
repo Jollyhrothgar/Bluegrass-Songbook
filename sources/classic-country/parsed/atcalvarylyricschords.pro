@@ -1,6 +1,6 @@
 {meta: title At Calvary}
 {meta: artist Doyle Lawson}
-{meta: writer William R. Newell}
+{meta: composer William R. Newell}
 
 {start_of_verse: Verse 1}
 [G]Years I’ve spent in vanity and pride

@@ -1,6 +1,6 @@
 {meta: title All the Time}
 {meta: artist Jack Greene}
-{meta: writer Mel Tillis - Wayne P. Walker}
+{meta: composer Mel Tillis - Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]All the time [G]yes darling all the [D7]time

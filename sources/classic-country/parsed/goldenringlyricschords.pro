@@ -1,6 +1,6 @@
 {meta: title Golden Ring}
 {meta: artist George Jones}
-{meta: writer Bobby Braddock and Rafe VanHoy}
+{meta: composer Bobby Braddock and Rafe VanHoy}
 
 {start_of_verse: Verse 1}
 [C]In a pawn shop in Chicago on a sunny summer day

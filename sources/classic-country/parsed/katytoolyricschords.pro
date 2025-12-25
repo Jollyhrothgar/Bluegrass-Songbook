@@ -1,6 +1,6 @@
 {meta: title Katy Too}
 {meta: artist Johnny Cash}
-{meta: writer Jack Clement and Johnny R. Cash}
+{meta: composer Jack Clement and Johnny R. Cash}
 
 {start_of_verse: Verse 1}
 [G]I'm not the goin' steady [C]kind

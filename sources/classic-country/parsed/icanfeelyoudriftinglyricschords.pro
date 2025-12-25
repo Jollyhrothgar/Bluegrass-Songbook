@@ -1,6 +1,6 @@
 {meta: title I Can Feel You Drifting}
 {meta: artist Kenny Rogers}
-{meta: writer Bat McGrath and Billy Kirsch}
+{meta: composer Bat McGrath and Billy Kirsch}
 
 {start_of_verse: Verse 1}
 [G]You took me out so far and I can't swim to [C]shore

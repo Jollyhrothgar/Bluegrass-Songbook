@@ -1,6 +1,6 @@
 {meta: title Noah's Ark}
 {meta: artist Bobby Bare}
-{meta: writer Dorsey Burnette and Barry DeVorzon}
+{meta: composer Dorsey Burnette and Barry DeVorzon}
 
 {start_of_verse: Verse 1}
 [C]The Lord looked down 

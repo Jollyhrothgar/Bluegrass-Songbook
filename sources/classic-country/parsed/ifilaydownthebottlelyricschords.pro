@@ -1,6 +1,6 @@
 {meta: title If I Lay Down The Bottle Today}
 {meta: artist Moe Bandy}
-{meta: writer Dave Kirby and Warren Robb}
+{meta: composer Dave Kirby and Warren Robb}
 
 {start_of_verse: Verse 1}
 [C]Me and that ole sunshine [F]is sinking mighty low

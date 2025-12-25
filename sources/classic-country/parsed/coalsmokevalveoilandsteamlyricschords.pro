@@ -1,6 +1,6 @@
 {meta: title Coal Smoke Valve Oil And Steam}
 {meta: artist Johnny Horton}
-{meta: writer Fabor Robinson, Dick Martin, Vic Tannet}
+{meta: composer Fabor Robinson, Dick Martin, Vic Tannet}
 
 {start_of_verse: Verse 1}
 [G]Coal smoke [D7]valve oil and [G]steam

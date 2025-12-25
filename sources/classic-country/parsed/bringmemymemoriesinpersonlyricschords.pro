@@ -1,6 +1,6 @@
 {meta: title Bring Me My Memories In Person}
 {meta: artist Cal Smith}
-{meta: writer Barbara Day and Jimmy Day}
+{meta: composer Barbara Day and Jimmy Day}
 
 {start_of_verse: Verse 1}
 [G]Look me in the eye when you tell me [D7]

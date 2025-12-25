@@ -1,6 +1,6 @@
 {meta: title What A Change One Day Can Make}
 {meta: artist The Louvin Brothers}
-{meta: writer Grady Cole}
+{meta: composer Grady Cole}
 
 {start_of_verse: Verse 1}
 [G]Just yesterday dear [D7]you said you [G]loved me

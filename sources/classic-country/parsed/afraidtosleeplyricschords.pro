@@ -1,6 +1,6 @@
 {meta: title Afraid To Sleep}
 {meta: artist Roy Orbison}
-{meta: writer Jack Adkins, Buddy Blue, William E. Gilmore}
+{meta: composer Jack Adkins, Buddy Blue, William E. Gilmore}
 
 {start_of_verse: Verse 1}
 [G]The night is still the wind is [Am]chilled

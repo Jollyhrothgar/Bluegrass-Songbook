@@ -1,6 +1,6 @@
 {meta: title Fourteen Carat Mind}
 {meta: artist Gene Watson}
-{meta: writer Nat Stuckey}
+{meta: composer Nat Stuckey}
 
 {start_of_verse: Verse 1}
 [C]I still recall the [G7]morning that I met [C]you

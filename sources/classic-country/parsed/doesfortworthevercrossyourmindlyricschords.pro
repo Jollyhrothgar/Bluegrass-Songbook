@@ -1,6 +1,6 @@
 {meta: title Does Fort Worth Ever Cross Your Mind}
 {meta: artist George Strait}
-{meta: writer Sanger D. Shafer and Darlene Shafer}
+{meta: composer Sanger D. Shafer and Darlene Shafer}
 
 {start_of_verse: Verse 1}
 [C]Cold Fort Worth beer just ain't no [G7]good for jealous

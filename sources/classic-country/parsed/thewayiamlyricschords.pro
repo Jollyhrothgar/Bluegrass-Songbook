@@ -1,6 +1,6 @@
 {meta: title The Way I Am}
 {meta: artist Merle Haggard}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]Wish I was down on some blue [F]bayou

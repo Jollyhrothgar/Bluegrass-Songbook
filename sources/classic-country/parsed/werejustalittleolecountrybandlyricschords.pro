@@ -1,6 +1,6 @@
 {meta: title We're Just A Little Ole Country Band}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]We got a farm out in the [G7]countryside 

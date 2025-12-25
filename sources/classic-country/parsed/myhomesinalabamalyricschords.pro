@@ -1,6 +1,6 @@
 {meta: title My Home’s In Alabama}
 {meta: artist Alabama}
-{meta: writer Randy Owen and Teddy Gentry}
+{meta: composer Randy Owen and Teddy Gentry}
 
 {start_of_verse: Verse 1}
 [C]Drinking was forbidden in my Christian country home

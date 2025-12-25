@@ -1,6 +1,6 @@
 {meta: title Let's Just Be Lovers And Leave Love Alone}
 {meta: artist Billy Walker}
-{meta: writer Chuck Howard}
+{meta: composer Chuck Howard}
 
 {start_of_verse: Verse 1}
 [G]We can’t [C]say  [D7]that love will [G]work

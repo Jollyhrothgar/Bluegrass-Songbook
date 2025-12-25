@@ -1,6 +1,6 @@
 {meta: title Ain't Love A Lot Like That}
 {meta: artist George Jones}
-{meta: writer Dean Miller and Mark Collie}
+{meta: composer Dean Miller and Mark Collie}
 
 {start_of_verse: Verse 1}
 [C]Well a twister tore the roof off a grocery [F]store

@@ -1,6 +1,6 @@
 {meta: title Route 65 To Nashville Lyrics and Chords}
 {meta: artist Dottie West}
-{meta: writer Bill Backer and Rod McBrien}
+{meta: composer Bill Backer and Rod McBrien}
 
 {start_of_verse: Verse 1}
 [G7]Thanks for the ride hey [C]mister

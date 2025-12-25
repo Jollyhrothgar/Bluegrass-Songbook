@@ -1,6 +1,6 @@
 {meta: title I'll Never Take You Back Again}
 {meta: artist Slim Whitman}
-{meta: writer Harry Peterson and Jane Wood}
+{meta: composer Harry Peterson and Jane Wood}
 
 {start_of_verse: Verse 1}
 [G]You’re asking me to take you back if I still care for [C]you

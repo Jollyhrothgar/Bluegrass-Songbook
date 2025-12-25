@@ -1,6 +1,6 @@
 {meta: title Gonna Walk That Line}
 {meta: artist Randy Travis}
-{meta: writer Jamie O'Hara and Kieran Kane}
+{meta: composer Jamie O'Hara and Kieran Kane}
 
 {start_of_verse: Verse 1}
 [C]I never been too good at doing [F]right

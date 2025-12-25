@@ -1,6 +1,6 @@
 {meta: title Hand In The Fire}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [G]I haven't been there I [Em]haven't done that 

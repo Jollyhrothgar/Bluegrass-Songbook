@@ -1,6 +1,6 @@
 {meta: title Daddy's Girl}
 {meta: artist Red Sovine}
-{meta: writer Glenn Martin}
+{meta: composer Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]I recall the night that you came [F]into this [C]world

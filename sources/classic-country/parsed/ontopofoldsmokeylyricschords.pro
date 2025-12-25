@@ -1,6 +1,6 @@
 {meta: title On Top of Old Smokey}
 {meta: artist Eddy Arnold}
-{meta: writer Charles Grean}
+{meta: composer Charles Grean}
 
 {start_of_verse: Verse 1}
 [C]On top of old [F]Smokey all covered [C]in snow

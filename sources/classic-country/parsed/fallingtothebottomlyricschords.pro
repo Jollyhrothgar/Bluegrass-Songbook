@@ -1,6 +1,6 @@
 {meta: title Falling To The Bottom}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Carmon Holland and Faye Linard}
+{meta: composer Carmon Holland and Faye Linard}
 
 {start_of_verse: Verse 1}
 [C]Yes old father time [Dm]done took its [G7]toll at reducing the Killer to n[C]othing

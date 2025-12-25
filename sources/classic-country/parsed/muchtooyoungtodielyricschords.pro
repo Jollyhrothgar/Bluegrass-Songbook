@@ -1,6 +1,6 @@
 {meta: title Much Too Young To Die}
 {meta: artist Ray Price}
-{meta: writer Rusty Gabbard}
+{meta: composer Rusty Gabbard}
 
 {start_of_verse: Verse 1}
 [C]Oh love me now will you honey time won’t wait for love nor money

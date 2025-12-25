@@ -1,6 +1,6 @@
 {meta: title Forever Was The Name Of Our Sunshine}
 {meta: artist Faron Young}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G]Happy was the feelin' that you [D7]gave me when we met

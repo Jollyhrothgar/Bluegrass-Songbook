@@ -1,6 +1,6 @@
 {meta: title The Tender Side Of Me}
 {meta: artist Hank Locklin}
-{meta: writer Becki Bluefield and Ron Criss}
+{meta: composer Becki Bluefield and Ron Criss}
 
 {start_of_verse: Verse 1}
 [G]You'll always have the tender side of [C]me

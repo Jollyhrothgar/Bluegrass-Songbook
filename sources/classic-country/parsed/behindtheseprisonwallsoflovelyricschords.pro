@@ -1,6 +1,6 @@
 {meta: title Behind These Prison Walls Of Love}
 {meta: artist The Country Gentlemen}
-{meta: writer William Bolick}
+{meta: composer William Bolick}
 
 {start_of_verse: Verse 1}
 [C]Behind these prison walls of [F]love dear

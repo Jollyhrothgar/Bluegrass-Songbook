@@ -1,6 +1,6 @@
 {meta: title Dear Love}
 {meta: artist Sonny James}
-{meta: writer Dub Dickerson}
+{meta: composer Dub Dickerson}
 
 {start_of_verse: Verse 1}
 [G]Dear lo-v-e in this [G7]message I am sending

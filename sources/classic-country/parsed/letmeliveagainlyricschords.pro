@@ -1,6 +1,6 @@
 {meta: title Let Me Live Again}
 {meta: artist Charley Pride}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [G]Let me live again let me [C]live again 

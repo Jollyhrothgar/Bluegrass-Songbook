@@ -1,6 +1,6 @@
 {meta: title This White Circle On My Finger Lyrics Chords}
 {meta: artist Kitty Wells}
-{meta: writer Margie Elizabeth Bainbridge and Dorothy Wylene Lewis}
+{meta: composer Margie Elizabeth Bainbridge and Dorothy Wylene Lewis}
 
 {start_of_verse: Verse 1}
 [C]This white circle on my [C7]finger means we're [F]through

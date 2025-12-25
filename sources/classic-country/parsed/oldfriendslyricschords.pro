@@ -1,6 +1,6 @@
 {meta: title Old Friends}
 {meta: artist Willie Nelson}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [G]Old friends  pitching pennies in the park

@@ -1,6 +1,6 @@
 {meta: title I'm Not Quite Through Crying}
 {meta: artist Statler Brothers}
-{meta: writer Lew DeWitt}
+{meta: composer Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [G]Perhaps I outta m[D7]ingle with the c[G]rowd just a little bit more

@@ -1,6 +1,6 @@
 {meta: title Some Blue Moons Ago}
 {meta: artist Patty Loveless}
-{meta: writer Steve Earle and Richard Bennett}
+{meta: composer Steve Earle and Richard Bennett}
 
 {start_of_verse: Verse 1}
 [C]Sensitivity ain't your style

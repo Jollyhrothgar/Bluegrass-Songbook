@@ -1,6 +1,6 @@
 {meta: title I'm Feeling Sorry}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]I told a little lie [F]baby I made you cry 

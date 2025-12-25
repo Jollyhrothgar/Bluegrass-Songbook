@@ -1,6 +1,6 @@
 {meta: title Love Me}
 {meta: artist Marty Robbins}
-{meta: writer Jeannie Pruett}
+{meta: composer Jeannie Pruett}
 
 {start_of_verse: Verse 1}
 [G]Love me oh love [C]me

@@ -1,6 +1,6 @@
 {meta: title She Never Knew Me}
 {meta: artist Don Williams}
-{meta: writer Bob McDill and Wayland Holyfield [3/4 time]}
+{meta: composer Bob McDill and Wayland Holyfield [3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]She packed up her [Em]suitcase [Am]and walked to the [C]door

@@ -1,6 +1,6 @@
 {meta: title A Dog's Life}
 {meta: artist Elvis Presley}
-{meta: writer Ben Weisman and Sid Wayne}
+{meta: composer Ben Weisman and Sid Wayne}
 
 {start_of_verse: Verse 1}
 [C]If I had my [F]life to live [C]over 

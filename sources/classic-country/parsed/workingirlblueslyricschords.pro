@@ -1,6 +1,6 @@
 {meta: title Workin' Girl Blues}
 {meta: artist Leona Williams}
-{meta: writer Merle Haggard}
+{meta: composer Merle Haggard}
 
 {start_of_verse: Verse 1}
 [C]It's a big job gettin' by tryin' to be a wife

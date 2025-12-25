@@ -1,6 +1,6 @@
 {meta: title You Feel Good}
 {meta: artist Tracy Byrd}
-{meta: writer Bob DiPiero}
+{meta: composer Bob DiPiero}
 
 {start_of_verse: Verse 1}
 [Em]I like [G]sleeping in the nude 

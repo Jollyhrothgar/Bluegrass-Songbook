@@ -1,6 +1,6 @@
 {meta: title Story Of A Broken Heart}
 {meta: artist Johnny Cash}
-{meta: writer Sam Phillips}
+{meta: composer Sam Phillips}
 
 {start_of_verse: Verse 1}
 [G]Hmm the story of a [D7]broken [G]heart

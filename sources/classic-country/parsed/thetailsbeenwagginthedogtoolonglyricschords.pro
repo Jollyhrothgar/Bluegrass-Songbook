@@ -1,6 +1,6 @@
 {meta: title The Tail's Been Waggin' The Dog Too Long}
 {meta: artist Charlie Walker}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [D7]Well the [G]tail's been waggin' the [C]dog too long

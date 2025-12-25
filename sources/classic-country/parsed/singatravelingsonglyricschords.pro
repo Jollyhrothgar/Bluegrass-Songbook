@@ -1,6 +1,6 @@
 {meta: title Sing A Traveling Song}
 {meta: artist Johnny Cash}
-{meta: writer Bucky Jones}
+{meta: composer Bucky Jones}
 
 {start_of_verse: Verse 1}
 [C]Hey little girl with [E7]tears in your eyes

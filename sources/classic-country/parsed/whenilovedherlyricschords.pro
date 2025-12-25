@@ -1,6 +1,6 @@
 {meta: title When I Loved Her}
 {meta: artist Ray Price}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [C]Well she didn't look as pretty as some [F]others I have [C]known

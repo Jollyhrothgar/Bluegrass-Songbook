@@ -1,6 +1,6 @@
 {meta: title My Father's House}
 {meta: artist Emmylou Harris}
-{meta: writer Bruce Springsteen}
+{meta: composer Bruce Springsteen}
 
 {start_of_verse: Verse 1}
 [C]Last night I dreamed that I [F]was a [C]child

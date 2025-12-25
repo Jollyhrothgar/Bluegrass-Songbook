@@ -1,6 +1,6 @@
 {meta: title Throwing Memories On The Fire}
 {meta: artist Cal Smith}
-{meta: writer Bobby Bond}
+{meta: composer Bobby Bond}
 
 {start_of_verse: Verse 1}
 [G]Bone tired [G][C]uninspired [C]a-hellava way to [G]feel

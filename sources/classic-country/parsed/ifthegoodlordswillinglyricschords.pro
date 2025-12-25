@@ -1,6 +1,6 @@
 {meta: title If The Good Lord's Willing}
 {meta: artist Johnny Cash}
-{meta: writer Jerry Reed Hubbard}
+{meta: composer Jerry Reed Hubbard}
 
 {start_of_verse: Verse 1}
 [C]If the good Lord's [G7]willin' and the creek stays down

@@ -1,6 +1,6 @@
 {meta: title Make No Mistake She's Mine}
 {meta: artist Ronnie Milsap}
-{meta: writer Kim Carnes}
+{meta: composer Kim Carnes}
 
 {start_of_verse: Verse 1}
 [G]Don’t call her [D7]up any[G]more [D7]

@@ -1,6 +1,6 @@
 {meta: title How Do You Ask}
 {meta: artist Billy Walker}
-{meta: writer Fred Foster and Dale Ward}
+{meta: composer Fred Foster and Dale Ward}
 
 {start_of_verse: Verse 1}
 [G]How do you ask someone to [C]love you

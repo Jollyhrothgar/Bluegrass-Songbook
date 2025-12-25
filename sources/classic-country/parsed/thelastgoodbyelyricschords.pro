@@ -1,6 +1,6 @@
 {meta: title The Last Goodbye}
 {meta: artist Ernest Tubb}
-{meta: writer Ernest Tubb and Sammy Farsmark}
+{meta: composer Ernest Tubb and Sammy Farsmark}
 
 {start_of_verse: Verse 1}
 [C]We had promised to be [C7]wed when we [F]said goodbye that [D7]night

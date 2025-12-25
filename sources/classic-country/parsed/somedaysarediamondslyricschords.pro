@@ -1,6 +1,6 @@
 {meta: title Some Days Are Diamonds}
 {meta: artist John Denver}
-{meta: writer Dick Feller}
+{meta: composer Dick Feller}
 
 {start_of_verse: Verse 1}
 [G]When you ask  how I’ve [D7]been here without [Em]you

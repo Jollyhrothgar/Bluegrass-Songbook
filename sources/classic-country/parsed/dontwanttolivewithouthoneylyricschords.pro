@@ -1,6 +1,6 @@
 {meta: title Don't Want To Live Without Honey}
 {meta: artist Jimmy Dean}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [G]First time I saw her my [C]heart felt a little bit [G]funny

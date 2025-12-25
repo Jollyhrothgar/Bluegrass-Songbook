@@ -1,6 +1,6 @@
 {meta: title Love Me To Pieces}
 {meta: artist Kitty Wells}
-{meta: writer Melvin Endsley}
+{meta: composer Melvin Endsley}
 
 {start_of_verse: Verse 1}
 [G]Why don't you [C]love me to pieces baby

@@ -1,6 +1,6 @@
 {meta: title If You Can Spare The Time}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Guidry Tassin}
+{meta: composer Lefty Frizzell and Guidry Tassin}
 
 {start_of_verse: Verse 1}
 [C]Well if you've got the time honey [F]I've got lots of folding money

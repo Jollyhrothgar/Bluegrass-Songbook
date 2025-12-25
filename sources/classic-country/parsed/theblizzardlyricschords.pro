@@ -1,6 +1,6 @@
 {meta: title The Blizzard}
 {meta: artist Jim Reeves}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]There's a blizzard coming on  how I'm [C]wishing I was [G]home

@@ -1,6 +1,6 @@
 {meta: title Let Go Of The Stone}
 {meta: artist John Anderson}
-{meta: writer Max D Barnes and Max Troy Barnes}
+{meta: composer Max D Barnes and Max Troy Barnes}
 
 {start_of_verse: Verse 1}
 [C]You shouldn't wade out in deep water when you [G7]don't know how to swim

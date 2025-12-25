@@ -1,6 +1,6 @@
 {meta: title If You’ll Be A Baby To Me}
 {meta: artist Hank Williams}
-{meta: writer Hank Williams}
+{meta: composer Hank Williams}
 
 {start_of_verse: Verse 1}
 [C]I'll be your baby and I don't mean [F]maybe

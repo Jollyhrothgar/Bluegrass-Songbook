@@ -1,6 +1,6 @@
 {meta: title She Reminded Me Of You}
 {meta: artist Mickey Gilley}
-{meta: writer Wayland D. Holyfield and Peter James McCann}
+{meta: composer Wayland D. Holyfield and Peter James McCann}
 
 {start_of_verse: Verse 1}
 [C]I almost hung up when you [F]answered 

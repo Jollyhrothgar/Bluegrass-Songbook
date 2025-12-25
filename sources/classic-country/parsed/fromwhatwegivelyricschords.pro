@@ -1,6 +1,6 @@
 {meta: title From What We Give}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [G]Johnny Baker [C]works down at the [D7]mill

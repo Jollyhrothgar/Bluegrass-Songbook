@@ -1,6 +1,6 @@
 {meta: title Bridge Of Love}
 {meta: artist Tammy Wynette}
-{meta: writer Jae Kay}
+{meta: composer Jae Kay}
 
 {start_of_verse: Verse 1}
 [G]Hmm hmm hmm hmm hmm hmm hmm hmm [D7]hmm hmm hmm [G]hmm

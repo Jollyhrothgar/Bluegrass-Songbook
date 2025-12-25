@@ -1,6 +1,6 @@
 {meta: title Whenever You're Ready}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Cecil Harrelson}
+{meta: composer Cecil Harrelson}
 
 {start_of_verse: Verse 1}
 [C]Whenever you're ready just let me [A7]know

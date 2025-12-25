@@ -1,6 +1,6 @@
 {meta: title The Only Thing I Have Left}
 {meta: artist George Strait}
-{meta: writer Clay Blaker}
+{meta: composer Clay Blaker}
 
 {start_of_verse: Verse 1}
 [C]Some people say I'm [G7]one of those guys 

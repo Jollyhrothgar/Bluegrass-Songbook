@@ -1,6 +1,6 @@
 {meta: title All The Beer And All My Friends Are Gone}
 {meta: artist Moe Bandy}
-{meta: writer Bill Anderson and Mary Lou Turner}
+{meta: composer Bill Anderson and Mary Lou Turner}
 
 {start_of_verse: Verse 1}
 [C](When all the beer and [G7]all my friends are [C]gone)

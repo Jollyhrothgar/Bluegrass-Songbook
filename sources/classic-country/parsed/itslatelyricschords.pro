@@ -1,6 +1,6 @@
 {meta: title It's Late}
 {meta: artist Ricky Nelson}
-{meta: writer Dorsey Burnette}
+{meta: composer Dorsey Burnette}
 
 {start_of_verse: Verse 1}
 [G]It's Late [it's late] we gotta [C]get on [G]home

@@ -1,6 +1,6 @@
 {meta: title One Step Ahead Of The Storm}
 {meta: artist Tracy Lawrence}
-{meta: writer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
 
 {start_of_verse: Verse 1}
 [G]Broke down on the [Em]interstate [C]just outside of [G]Wichita

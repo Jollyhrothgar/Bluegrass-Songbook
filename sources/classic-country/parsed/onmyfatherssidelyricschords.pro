@@ -1,6 +1,6 @@
 {meta: title On My Father's Side}
 {meta: artist The Village Singers}
-{meta: writer Felecia Shiflett}
+{meta: composer Felecia Shiflett}
 
 {start_of_verse: Verse 1}
 [G]Just a young boy in the temple one [C]day

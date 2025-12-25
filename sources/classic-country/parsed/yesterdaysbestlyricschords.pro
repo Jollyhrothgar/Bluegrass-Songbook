@@ -1,6 +1,6 @@
 {meta: title Yesterday's Best}
 {meta: artist Jean Shepard}
-{meta: writer Jimmie Day}
+{meta: composer Jimmie Day}
 
 {start_of_verse: Verse 1}
 [G]I keep building a new world while you keep tearing it [D7]down

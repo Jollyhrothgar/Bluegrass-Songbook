@@ -1,6 +1,6 @@
 {meta: title Just a Little Loving}
 {meta: artist Eddy Arnold}
-{meta: writer Zeke Clements and Eddy Arnold}
+{meta: composer Zeke Clements and Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [G]Just a little [E7]lovin' will go a long [A7]way

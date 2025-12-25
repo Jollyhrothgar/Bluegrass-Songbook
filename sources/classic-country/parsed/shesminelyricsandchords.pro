@@ -1,6 +1,6 @@
 {meta: title She's Mine}
 {meta: artist Conway Twitty}
-{meta: writer Jack Nance and Conway Twitty}
+{meta: composer Jack Nance and Conway Twitty}
 
 {start_of_verse: Verse 1}
 [G]I've got a gal who treats me right

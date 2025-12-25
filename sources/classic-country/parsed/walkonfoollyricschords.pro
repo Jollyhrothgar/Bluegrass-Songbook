@@ -1,6 +1,6 @@
 {meta: title Walk On Fool}
 {meta: artist Porter Wagoner}
-{meta: writer George McCormick}
+{meta: composer George McCormick}
 
 {start_of_verse: Verse 1}
 [G]Here I am where I [D7]know I shouldn't [G]be

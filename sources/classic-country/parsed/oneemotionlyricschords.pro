@@ -1,6 +1,6 @@
 {meta: title One Emotion}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [G]Looking for the feelings that [C]used to tell me something's [G]wrong

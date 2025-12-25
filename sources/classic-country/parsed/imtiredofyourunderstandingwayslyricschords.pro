@@ -1,6 +1,6 @@
 {meta: title I'm Tired of Your Understanding Ways}
 {meta: artist Merle Haggard}
-{meta: writer David J. Warner}
+{meta: composer David J. Warner}
 
 {start_of_verse: Verse 1}
 [C]You say that it’s alright if I go out at night

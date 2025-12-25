@@ -1,6 +1,6 @@
 {meta: title I'll Give You Something To Drink About}
 {meta: artist George Jones}
-{meta: writer Hank Cochran, Mack Vickery, Jerry Leseter}
+{meta: composer Hank Cochran, Mack Vickery, Jerry Leseter}
 
 {start_of_verse: Verse 1}
 [G]I stumbled in this morning

@@ -1,6 +1,6 @@
 {meta: title I've Got A Right To Cry}
 {meta: artist Hank Williams Jr.}
-{meta: writer Joe Liggins}
+{meta: composer Joe Liggins}
 
 {start_of_verse: Verse 1}
 [D7]I've got a right to [G]cry 

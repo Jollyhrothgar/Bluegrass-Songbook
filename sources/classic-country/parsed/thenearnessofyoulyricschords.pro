@@ -1,6 +1,6 @@
 {meta: title The Nearness Of You}
 {meta: artist Faron Young}
-{meta: writer Ned Washington and Hoagy Carmichael}
+{meta: composer Ned Washington and Hoagy Carmichael}
 
 {start_of_verse: Verse 1}
 [G7]It's not the [C]pale moon that [A#7]excites [C]me that [F]thrills and [Dm]delights me

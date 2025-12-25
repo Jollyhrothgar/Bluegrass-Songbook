@@ -1,6 +1,6 @@
 {meta: title Long Lonesome Journey}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino and Ted Jarrett}
+{meta: composer Antonio Domino and Ted Jarrett}
 
 {start_of_verse: Verse 1}
 [C]This is a long lonesome [F]journey

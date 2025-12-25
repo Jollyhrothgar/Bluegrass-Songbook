@@ -1,6 +1,6 @@
 {meta: title My Life's Been Grand}
 {meta: artist George Strait}
-{meta: writer Merle Haggard and Terry Gordon}
+{meta: composer Merle Haggard and Terry Gordon}
 
 {start_of_verse: Verse 1}
 [G]My [D7]life's been [G]grand

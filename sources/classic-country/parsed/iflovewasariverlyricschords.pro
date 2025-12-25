@@ -1,6 +1,6 @@
 {meta: title If Love Was A River}
 {meta: artist Alan Jackson}
-{meta: writer Adam Wright and Shannon Wright}
+{meta: composer Adam Wright and Shannon Wright}
 
 {start_of_verse: Verse 1}
 [C]If love was a river and I was a drowning [G7]man

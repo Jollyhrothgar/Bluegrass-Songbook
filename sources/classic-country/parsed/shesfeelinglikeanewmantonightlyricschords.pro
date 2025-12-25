@@ -1,6 +1,6 @@
 {meta: title She's Feeling Like A New Man Tonight}
 {meta: artist Billy Walker}
-{meta: writer Gene Dobbins, Rayburn Anthony, Tony Austin}
+{meta: composer Gene Dobbins, Rayburn Anthony, Tony Austin}
 
 {start_of_verse: Verse 1}
 [C]She's [G7]feeling like a new man tonight

@@ -1,6 +1,6 @@
 {meta: title War Paint}
 {meta: artist Lorrie Morgan}
-{meta: writer Tom Shapiro and Lorrie Morgan}
+{meta: composer Tom Shapiro and Lorrie Morgan}
 
 {start_of_verse: Verse 1}
 [Am]You come in while I'm sittin' at the [Dm]mirror

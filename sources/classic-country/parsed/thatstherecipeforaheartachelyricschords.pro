@@ -1,6 +1,6 @@
 {meta: title That’s The Recipe For A Heartache}
 {meta: artist Hank Thompson}
-{meta: writer Billy Gray and Hank Thompson}
+{meta: composer Billy Gray and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]Take a little cheatin’ here and a little cheatin’ there

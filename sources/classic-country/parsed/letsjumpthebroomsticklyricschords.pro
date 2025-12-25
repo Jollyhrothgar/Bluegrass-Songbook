@@ -1,6 +1,6 @@
 {meta: title Let's Jump The Broomstick}
 {meta: artist Brenda Lee}
-{meta: writer Charles Robbins}
+{meta: composer Charles Robbins}
 
 {start_of_verse: Verse 1}
 [C]Well come a little baby lets jump the broomstick 

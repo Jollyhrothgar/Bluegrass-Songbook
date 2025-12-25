@@ -1,6 +1,6 @@
 {meta: title Chairman Of The Board}
 {meta: artist Red Sovine}
-{meta: writer Jerry Crutchfield and Buck Maxwell}
+{meta: composer Jerry Crutchfield and Buck Maxwell}
 
 {start_of_verse: Verse 1}
 [C]Last night I dreamed this heart of mine was [G7]chairman of the [C]board

@@ -1,6 +1,6 @@
 {meta: title Follow Me Back to Louisville}
 {meta: artist Don Williams}
-{meta: writer Bill Davidson}
+{meta: composer Bill Davidson}
 
 {start_of_verse: Verse 1}
 [G7]Follow me [C]back to Louis[G7]ville [C]  [G7]

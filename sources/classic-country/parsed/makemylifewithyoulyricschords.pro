@@ -1,6 +1,6 @@
 {meta: title Make My Life With You}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Gary Burr}
+{meta: composer Gary Burr}
 
 {start_of_verse: Verse 1}
 [C]Here in the day here in the light

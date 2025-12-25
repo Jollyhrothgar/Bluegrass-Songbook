@@ -1,6 +1,6 @@
 {meta: title Running Blind}
 {meta: artist Randy Travis}
-{meta: writer Roger Ferris}
+{meta: composer Roger Ferris}
 
 {start_of_verse: Verse 1}
 [C]At a quick shop somewhere west of [F]Albuquer[C]que

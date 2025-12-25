@@ -1,6 +1,6 @@
 {meta: title The Court Of Love}
 {meta: artist Rhonda Vincent}
-{meta: writer Mike O'Reilly}
+{meta: composer Mike O'Reilly}
 
 {start_of_verse: Verse 1}
 [C]Don't tell me you love me [F]when you know it ain't [C]true

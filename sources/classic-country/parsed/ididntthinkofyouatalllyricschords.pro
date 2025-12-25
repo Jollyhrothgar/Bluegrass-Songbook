@@ -1,6 +1,6 @@
 {meta: title I Didn't Think Of You At All}
 {meta: artist Gene Watson}
-{meta: writer Roger Brown}
+{meta: composer Roger Brown}
 
 {start_of_verse: Verse 1}
 [C]I wouldn't say you're [C7]always on my [F]mind

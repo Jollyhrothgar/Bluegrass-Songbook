@@ -1,6 +1,6 @@
 {meta: title Diggin' Up Bones}
 {meta: artist Randy Travis}
-{meta: writer Al Gore and Paul Overstreet}
+{meta: composer Al Gore and Paul Overstreet}
 
 {start_of_verse: Verse 1}
 [C]Last night I dug your picture out from our old dresser drawer 

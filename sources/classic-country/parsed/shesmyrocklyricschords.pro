@@ -1,6 +1,6 @@
 {meta: title She’s My Rock}
 {meta: artist George Jones}
-{meta: writer Sharon Dobbins}
+{meta: composer Sharon Dobbins}
 
 {start_of_verse: Verse 1}
 [G]You tell me how she was when you once knew her

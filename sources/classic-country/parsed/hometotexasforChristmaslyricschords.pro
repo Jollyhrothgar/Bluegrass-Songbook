@@ -1,6 +1,6 @@
 {meta: title Home To Texas For Christmas}
 {meta: artist Mickey Gilley}
-{meta: writer Gary Nicholson, Sandy Pinkard, Edward Atchley}
+{meta: composer Gary Nicholson, Sandy Pinkard, Edward Atchley}
 
 {start_of_verse: Verse 1}
 [G]Going back to Texas for [C]Christmas

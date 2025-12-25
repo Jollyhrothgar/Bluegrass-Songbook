@@ -1,6 +1,6 @@
 {meta: title Take My Word}
 {meta: artist Cal Smith}
-{meta: writer Gene Davis}
+{meta: composer Gene Davis}
 
 {start_of_verse: Verse 1}
 [C]You haven't started missing her but [G]take my [D7]word you [G]will

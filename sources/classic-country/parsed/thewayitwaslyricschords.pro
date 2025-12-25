@@ -1,6 +1,6 @@
 {meta: title The Way It Was}
 {meta: artist Ferlin Husky}
-{meta: writer Leona Williams}
+{meta: composer Leona Williams}
 
 {start_of_verse: Verse 1}
 [G]You should know by now I love you [C]baby

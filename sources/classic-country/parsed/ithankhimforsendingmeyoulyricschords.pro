@@ -1,6 +1,6 @@
 {meta: title I Thank Him For Sending Me You}
 {meta: artist Buck Owens}
-{meta: writer Ike Cargill}
+{meta: composer Ike Cargill}
 
 {start_of_verse: Verse 1}
 [G]They say that all [G7]good things come [C]down from [G]above

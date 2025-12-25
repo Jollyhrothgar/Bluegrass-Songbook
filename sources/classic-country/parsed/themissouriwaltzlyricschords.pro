@@ -1,6 +1,6 @@
 {meta: title The Missouri Waltz}
 {meta: artist Eddy Arnold}
-{meta: writer J.R.Shannon and John V. Eppel}
+{meta: composer J.R.Shannon and John V. Eppel}
 
 {start_of_verse: Verse 1}
 [C]Hush a bye my [G7]baby slumber [C]time is coming soon

@@ -1,6 +1,6 @@
 {meta: title Blue Suede Shoes}
 {meta: artist Elvis Presley}
-{meta: writer Carl Perkins}
+{meta: composer Carl Perkins}
 
 {start_of_verse: Verse 1}
 [C]Well it's one for the money two for the show

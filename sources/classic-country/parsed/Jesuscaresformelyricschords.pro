@@ -1,6 +1,6 @@
 {meta: title Jesus Cares For Me}
 {meta: artist Wanda Jackson}
-{meta: writer Aaron Brown and Larry Lee}
+{meta: composer Aaron Brown and Larry Lee}
 
 {start_of_verse: Verse 1}
 [C]I was living down in the valley [F]couldn't handle my own [C]affairs

@@ -1,6 +1,6 @@
 {meta: title I Believe He Died For Me}
 {meta: artist The Cathedrals}
-{meta: writer Colbert Croft and Joyce Croft}
+{meta: composer Colbert Croft and Joyce Croft}
 
 {start_of_verse: Verse 1}
 [C]I never saw the cross He carried [F]up to [Fm]Calvary’s [C]Hill 

@@ -1,6 +1,6 @@
 {meta: title Sweet Little Jesus Boy}
 {meta: artist Anne Murray}
-{meta: writer Robert MacGimsey}
+{meta: composer Robert MacGimsey}
 
 {start_of_verse: Verse 1}
 [G]Sweet little Jesus Boy

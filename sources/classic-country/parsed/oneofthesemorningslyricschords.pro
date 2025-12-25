@@ -1,6 +1,6 @@
 {meta: title One Of These Mornings}
 {meta: artist Ricky Nelson}
-{meta: writer Richard Melville Hall}
+{meta: composer Richard Melville Hall}
 
 {start_of_verse: Verse 1}
 [G]Well one of these mornings I'm gonna rise and shine

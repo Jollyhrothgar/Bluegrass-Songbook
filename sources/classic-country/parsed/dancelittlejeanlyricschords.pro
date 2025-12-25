@@ -1,6 +1,6 @@
 {meta: title Dance Little Jean}
 {meta: artist John Denver}
-{meta: writer Jimmy Ibbotson}
+{meta: composer Jimmy Ibbotson}
 
 {start_of_verse: Verse 1}
 [G]Played a wedding for the money 

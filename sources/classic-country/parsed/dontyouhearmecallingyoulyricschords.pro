@@ -1,6 +1,6 @@
 {meta: title Don't You Hear Me Calling You}
 {meta: artist Fats Domino}
-{meta: writer Fats Domino and Dave Bartholomew}
+{meta: composer Fats Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [C]Well don't you hear me callin' you

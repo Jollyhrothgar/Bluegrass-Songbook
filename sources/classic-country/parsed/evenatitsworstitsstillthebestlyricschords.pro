@@ -1,6 +1,6 @@
 {meta: title Even At Its Worst It's Still The Best}
 {meta: artist Gene Watson}
-{meta: writer Buzz Rabin}
+{meta: composer Buzz Rabin}
 
 {start_of_verse: Verse 1}
 [C]Love is seldom perfect it [F]has its ups and [D7]downs

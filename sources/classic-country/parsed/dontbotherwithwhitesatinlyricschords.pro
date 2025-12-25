@@ -1,6 +1,6 @@
 {meta: title Don't Bother With White Satin}
 {meta: artist The Seldom Scene}
-{meta: writer John Duffey and Ann Hill}
+{meta: composer John Duffey and Ann Hill}
 
 {start_of_verse: Verse 1}
 [C]I've [G7]walked a starlit mountain road

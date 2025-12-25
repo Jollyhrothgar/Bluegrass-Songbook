@@ -1,6 +1,6 @@
 {meta: title Lovable You}
 {meta: artist George Morgan}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]Susie is likeable and [G7]Jane's pretty lovable [D7]too

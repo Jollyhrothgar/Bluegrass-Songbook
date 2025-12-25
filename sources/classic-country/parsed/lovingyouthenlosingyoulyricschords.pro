@@ -1,6 +1,6 @@
 {meta: title Loving You Then Losing You}
 {meta: artist Webb Pierce}
-{meta: writer Wayne P. Walker and Max Powell}
+{meta: composer Wayne P. Walker and Max Powell}
 
 {start_of_verse: Verse 1}
 [C]Loving you then [G]losing you is more [D7]than I can [G]stand

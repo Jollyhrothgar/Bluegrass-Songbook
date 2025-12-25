@@ -1,6 +1,6 @@
 {meta: title The Touch Of God's Hand}
 {meta: artist Eddy Arnold}
-{meta: writer Bob Nolan}
+{meta: composer Bob Nolan}
 
 {start_of_verse: Verse 1}
 [C]The prairie sun [G7]sends down its [C]ray 

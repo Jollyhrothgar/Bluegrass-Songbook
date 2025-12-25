@@ -1,6 +1,6 @@
 {meta: title Freckles}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Sterling Whipple}
+{meta: composer Sterling Whipple}
 
 {start_of_verse: Verse 1}
 [G]They'd all called her Freckles when summer was coming [C]around

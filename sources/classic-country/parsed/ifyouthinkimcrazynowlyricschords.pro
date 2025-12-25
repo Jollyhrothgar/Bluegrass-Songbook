@@ -1,6 +1,6 @@
 {meta: title If You Think I’m Crazy Now}
 {meta: artist Keith Whitley}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]I been wired since I [F]can't remember [C]when 

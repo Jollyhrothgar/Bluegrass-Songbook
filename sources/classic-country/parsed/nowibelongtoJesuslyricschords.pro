@@ -1,6 +1,6 @@
 {meta: title Now I Belong To Jesus}
 {meta: artist Faron Young}
-{meta: writer Norman Clayton}
+{meta: composer Norman Clayton}
 
 {start_of_verse: Verse 1}
 [C]Jesus my [E7]Lord will [F]love me [G7]forever

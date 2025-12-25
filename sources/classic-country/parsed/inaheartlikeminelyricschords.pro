@@ -1,6 +1,6 @@
 {meta: title In A Heart Like Mine}
 {meta: artist Randy Travis}
-{meta: writer Donny Kees and Skip Ewing}
+{meta: composer Donny Kees and Skip Ewing}
 
 {start_of_verse: Verse 1}
 [F]In a heart like mine with a steady [G]beat

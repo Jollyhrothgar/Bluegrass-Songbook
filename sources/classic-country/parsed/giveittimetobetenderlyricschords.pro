@@ -1,6 +1,6 @@
 {meta: title Give It Time To Be Tender}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson and Donnie Fritts}
+{meta: composer Kris Kristofferson and Donnie Fritts}
 
 {start_of_verse: Verse 1}
 [C]I feel the hunger [F]you feel in your [C]touch

@@ -1,6 +1,6 @@
 {meta: title Jesus On The Mainline}
 {meta: artist Randy Travis}
-{meta: writer Alan Silvestri}
+{meta: composer Alan Silvestri}
 
 {start_of_verse: Verse 1}
 [C]Jesus on the mainline tell Him what you want

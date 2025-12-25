@@ -1,6 +1,6 @@
 {meta: title Have Thine Own Way Lord}
 {meta: artist Jim Reeves}
-{meta: writer George Stebbins and Adelaide Pollard}
+{meta: composer George Stebbins and Adelaide Pollard}
 
 {start_of_verse: Verse 1}
 [G]Have Thine own [C]way  [G]Lord have Thine own [D7]way

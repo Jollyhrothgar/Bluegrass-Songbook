@@ -1,6 +1,6 @@
 {meta: title Heavenly Bodies}
 {meta: artist Earl Thomas Conley}
-{meta: writer Elaine Lifton, Glorida Nissenson, Lee Ritenour}
+{meta: composer Elaine Lifton, Glorida Nissenson, Lee Ritenour}
 
 {start_of_verse: Verse 1}
 [G]Way up in the sky [Am]moon and planets fly

@@ -1,6 +1,6 @@
 {meta: title God Will}
 {meta: artist Patty Loveless}
-{meta: writer Lyle Lovett}
+{meta: composer Lyle Lovett}
 
 {start_of_verse: Verse 1}
 [C]Who keeps on trusting you [F]when you been [C]cheatin'

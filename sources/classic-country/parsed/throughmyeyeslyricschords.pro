@@ -1,6 +1,6 @@
 {meta: title Through My Eyes}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Doc James}
+{meta: composer Doc James}
 
 {start_of_verse: Verse 1}
 [D7]I've heard you [G]talking   [D7]on the [G][Em]telephone

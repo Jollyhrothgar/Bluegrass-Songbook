@@ -1,6 +1,6 @@
 {meta: title Don't Touch Me Lyrics and Chords}
 {meta: artist Dottie West}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]Your hand is like a torch each time you touch [D7]me

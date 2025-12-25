@@ -1,6 +1,6 @@
 {meta: title When My Blue Moon Turns to Gold}
 {meta: artist The Statler Brothers}
-{meta: writer Wiley Walker and Gene Sullivan}
+{meta: composer Wiley Walker and Gene Sullivan}
 
 {start_of_verse: Verse 1}
 [C]Memories that linger in my [G7]heart 

@@ -1,6 +1,6 @@
 {meta: title Brand New Mr. Me}
 {meta: artist Mel Tillis}
-{meta: writer Ronal McCown}
+{meta: composer Ronal McCown}
 
 {start_of_verse: Verse 1}
 [C]Do my children call you daddy is my darling good to [F]you

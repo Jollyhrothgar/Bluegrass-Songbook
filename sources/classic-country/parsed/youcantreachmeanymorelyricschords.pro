@@ -1,6 +1,6 @@
 {meta: title You Can't Reach Me Anymore}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton and Dorothy Jo Hope}
+{meta: composer Dolly Parton and Dorothy Jo Hope}
 
 {start_of_verse: Verse 1}
 [C]You [F]can't [C]reach me [G7]any[C]more

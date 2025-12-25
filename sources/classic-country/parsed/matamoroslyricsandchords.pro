@@ -1,6 +1,6 @@
 {meta: title Matamoros}
 {meta: artist Billy Walker}
-{meta: writer Kay Arnold}
+{meta: composer Kay Arnold}
 
 {start_of_verse: Verse 1}
 [G]In old Mexico I stand on the square in Mata[C]moros

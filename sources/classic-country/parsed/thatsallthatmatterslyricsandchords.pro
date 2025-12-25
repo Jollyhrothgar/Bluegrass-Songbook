@@ -1,6 +1,6 @@
 {meta: title That's All That Matters}
 {meta: artist Ray Price}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I know I'm not your first love 

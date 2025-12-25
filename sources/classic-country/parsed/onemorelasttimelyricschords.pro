@@ -1,6 +1,6 @@
 {meta: title One More Last Time}
 {meta: artist Billy Parker}
-{meta: writer James H. Forst}
+{meta: composer James H. Forst}
 
 {start_of_verse: Verse 1}
 One More Last Time

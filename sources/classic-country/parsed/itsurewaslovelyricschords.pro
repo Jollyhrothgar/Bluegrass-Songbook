@@ -1,6 +1,6 @@
 {meta: title It Sure Was Love}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [C]They said what do you [G7]think you would [C]do

@@ -1,6 +1,6 @@
 {meta: title Just Someone I Used to Know}
 {meta: artist Dolly Parton}
-{meta: writer Jack Clement}
+{meta: composer Jack Clement}
 
 {start_of_verse: Verse 1}
 [C]There's a [F]picture that I [C]carry

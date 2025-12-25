@@ -1,6 +1,6 @@
 {meta: title Texas Blues}
 {meta: artist Bob Wills}
-{meta: writer Helen G. Phillips}
+{meta: composer Helen G. Phillips}
 
 {start_of_verse: Verse 1}
 [C]I heard a lonely coyotee a howling for his mate

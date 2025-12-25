@@ -1,6 +1,6 @@
 {meta: title I'll See Him Through}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Norro Wilson}
+{meta: composer Billy Sherrill and Norro Wilson}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I wonder if he [C]loves me like he [D7]used to

@@ -1,6 +1,6 @@
 {meta: title She Wakes Me Every Morning With A Kiss}
 {meta: artist Jack Greene}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]How lucky I am to have [F]searched for and [C]found

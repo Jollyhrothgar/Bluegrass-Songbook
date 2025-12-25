@@ -1,6 +1,6 @@
 {meta: title Woman Woman}
 {meta: artist Glen Campbell}
-{meta: writer Jim Glaser and Jimmy Payne}
+{meta: composer Jim Glaser and Jimmy Payne}
 
 {start_of_verse: Verse 1}
 [C]Wo-[Em]man oooh [F]wo--[Em]man

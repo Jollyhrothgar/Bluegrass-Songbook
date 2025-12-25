@@ -1,6 +1,6 @@
 {meta: title I'm Beginning To Know About Me}
 {meta: artist Wilburn Brothers}
-{meta: writer Jimmy Dickens and Larry Kirby}
+{meta: composer Jimmy Dickens and Larry Kirby}
 
 {start_of_verse: Verse 1}
 [C]I'm beginning to [G7]know (beginning to know) know about [C]me

@@ -1,6 +1,6 @@
 {meta: title From Here To Kingdom Come}
 {meta: artist Tracy Lawrence}
-{meta: writer John D. Souther}
+{meta: composer John D. Souther}
 
 {start_of_verse: Verse 1}
 [G]You can move to another town 

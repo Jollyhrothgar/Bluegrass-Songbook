@@ -1,6 +1,6 @@
 {meta: title She Loves Me The Way That I Love You}
 {meta: artist Charley Pride}
-{meta: writer Bobby Barker}
+{meta: composer Bobby Barker}
 
 {start_of_verse: Verse 1}
 [G]She's the closest thing to [C]happiness I [G]found since [D7]losing [G]you

@@ -1,6 +1,6 @@
 {meta: title Sweet Temptation}
 {meta: artist Jean Shepard}
-{meta: writer Merle Travis and Cliffie Stone}
+{meta: composer Merle Travis and Cliffie Stone}
 
 {start_of_verse: Verse 1}
 [C]Sweet temptation that's what you are to [F]me

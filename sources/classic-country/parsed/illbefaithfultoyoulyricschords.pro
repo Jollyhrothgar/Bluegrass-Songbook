@@ -1,6 +1,6 @@
 {meta: title I'll Be Faithful To You}
 {meta: artist Don Williams}
-{meta: writer Paul Kennerley}
+{meta: composer Paul Kennerley}
 
 {start_of_verse: Verse 1}
 [C]I can see your heart is [F]aching

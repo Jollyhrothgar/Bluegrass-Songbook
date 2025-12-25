@@ -1,6 +1,6 @@
 {meta: title Something Pretty}
 {meta: artist Wynn Stewart}
-{meta: writer Charlie Williams and Bobby Wayne}
+{meta: composer Charlie Williams and Bobby Wayne}
 
 {start_of_verse: Verse 1}
 [G]There's something [D7]pretty in a summer [D7][G]rainbow

@@ -1,6 +1,6 @@
 {meta: title Living As Strangers}
 {meta: artist Kitty Wells}
-{meta: writer Bill C. Phillips and Jean Stromatt}
+{meta: composer Bill C. Phillips and Jean Stromatt}
 
 {start_of_verse: Verse 1}
 [C]We're [F]living as strangers [C]strangers in our home

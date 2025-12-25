@@ -1,6 +1,6 @@
 {meta: title We Go Good Together}
 {meta: artist Jean Shepard}
-{meta: writer Gene Dobbins and Rayburn Anthony}
+{meta: composer Gene Dobbins and Rayburn Anthony}
 
 {start_of_verse: Verse 1}
 [C]When I'm standin' [F]by your side the [G7]fire of love is [C]burnin'

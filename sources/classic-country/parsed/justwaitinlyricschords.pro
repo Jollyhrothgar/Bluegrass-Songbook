@@ -1,6 +1,6 @@
 {meta: title Just Waitin'}
 {meta: artist Hank Williams}
-{meta: writer Hank Williams, Sr. and Bob Gazzaway}
+{meta: composer Hank Williams, Sr. and Bob Gazzaway}
 
 {start_of_verse: Verse 1}
 [G]The old maid's waitin' for leap year to come

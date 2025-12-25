@@ -1,6 +1,6 @@
 {meta: title The Bobba Wobba Wedding}
 {meta: artist Chad Morgan}
-{meta: writer John Ashe}
+{meta: composer John Ashe}
 
 {start_of_verse: Verse 1}
 [C]At the Bobba Wobba wedding oh they [G7]came from far and wide

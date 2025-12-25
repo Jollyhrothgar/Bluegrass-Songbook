@@ -1,6 +1,6 @@
 {meta: title Who Knows Right From Wrong}
 {meta: artist Porter Wagoner}
-{meta: writer Pearl Butler}
+{meta: composer Pearl Butler}
 
 {start_of_verse: Verse 1}
 [C]Nothing is [F]colder than a heart that's gone [C]wrong

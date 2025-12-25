@@ -1,6 +1,6 @@
 {meta: title Class Of '49}
 {meta: artist Red Sovine}
-{meta: writer Red Sovine and Benny Whitehead}
+{meta: composer Red Sovine and Benny Whitehead}
 
 {start_of_verse: Verse 1}
 [C]Well it feels so good to be comin' [D7]home [F]after all these [C]years

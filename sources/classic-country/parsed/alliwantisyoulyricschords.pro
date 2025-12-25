@@ -1,6 +1,6 @@
 {meta: title All I Want is You}
 {meta: artist Big Country Bluegrass}
-{meta: writer Lance Guynes}
+{meta: composer Lance Guynes}
 
 {start_of_verse: Verse 1}
 [C]I don’t need a [G7]lot of [C]money 

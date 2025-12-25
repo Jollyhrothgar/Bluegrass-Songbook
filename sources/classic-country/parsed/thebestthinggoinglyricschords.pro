@@ -1,6 +1,6 @@
 {meta: title The Best Thing Going}
 {meta: artist Johnny Rodriguez}
-{meta: writer Mike Geiger}
+{meta: composer Mike Geiger}
 
 {start_of_verse: Verse 1}
 [G]The day I knew that my love couldn’t hold [C]you

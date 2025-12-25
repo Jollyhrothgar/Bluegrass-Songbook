@@ -1,6 +1,6 @@
 {meta: title I'll See You In My Dreams}
 {meta: artist Curtis Potter, Tony Booth, Darrell McCall}
-{meta: writer Weldon E. Lister}
+{meta: composer Weldon E. Lister}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'll dream of candle lights [C7]roses and the [F]wine

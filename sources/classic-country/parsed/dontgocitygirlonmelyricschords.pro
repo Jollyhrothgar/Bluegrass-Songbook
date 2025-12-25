@@ -1,6 +1,6 @@
 {meta: title Don't Go City Girl On Me}
 {meta: artist Tommy Overstreet}
-{meta: writer Mike Kosser and Rafe VanHoy}
+{meta: composer Mike Kosser and Rafe VanHoy}
 
 {start_of_verse: Verse 1}
 [C]With your blouse halfway open 

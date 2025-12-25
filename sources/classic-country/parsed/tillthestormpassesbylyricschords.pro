@@ -1,6 +1,6 @@
 {meta: title Till The Storm Passes By}
 {meta: artist Statler Brothers}
-{meta: writer Mosie Lister}
+{meta: composer Mosie Lister}
 
 {start_of_verse: Verse 1}
 [G]In the dark of the midnight have I oft hid my [D7]face

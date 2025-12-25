@@ -1,6 +1,6 @@
 {meta: title Let's Fall To Pieces Together}
 {meta: artist George Strait}
-{meta: writer Tommy Rocco, Dickey Lee, Johnny Russell}
+{meta: composer Tommy Rocco, Dickey Lee, Johnny Russell}
 
 {start_of_verse: Verse 1}
 [G]Pardon me you left your [C]tears on the [G]jukebox

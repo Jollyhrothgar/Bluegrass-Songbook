@@ -1,6 +1,6 @@
 {meta: title Hell Stays Open All Night}
 {meta: artist George Jones}
-{meta: writer Bobby L. Harden}
+{meta: composer Bobby L. Harden}
 
 {start_of_verse: Verse 1}
 [C]She said hello and I said Hon it's [F]me

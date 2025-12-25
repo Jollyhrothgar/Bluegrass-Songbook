@@ -1,6 +1,6 @@
 {meta: title I'll Take The Blame}
 {meta: artist Ricky Skaggs}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [C]You say I've done you wrong  I've wrecked the happy [G7]home

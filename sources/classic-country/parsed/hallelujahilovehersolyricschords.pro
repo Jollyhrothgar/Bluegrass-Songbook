@@ -1,6 +1,6 @@
 {meta: title Hallelujah I Love Her So}
 {meta: artist Conway Twitty}
-{meta: writer Ray Charles}
+{meta: composer Ray Charles}
 
 {start_of_verse: Verse 1}
 [G]Let me tell you bout a [C]girl I [D7]know

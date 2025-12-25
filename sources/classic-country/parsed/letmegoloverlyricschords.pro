@@ -1,6 +1,6 @@
 {meta: title Let Me Go Lover}
 {meta: artist Hank Snow}
-{meta: writer Jenny Lou Carson and Al Hill}
+{meta: composer Jenny Lou Carson and Al Hill}
 
 {start_of_verse: Verse 1}
 [G]Oh let me go let me go let me go [D7]woman

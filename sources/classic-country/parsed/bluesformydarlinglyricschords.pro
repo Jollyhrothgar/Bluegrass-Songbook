@@ -1,6 +1,6 @@
 {meta: title Blues For My Darling}
 {meta: artist Doyle Lawson}
-{meta: writer Thomas Glenn Fletcher}
+{meta: composer Thomas Glenn Fletcher}
 
 {start_of_verse: Verse 1}
 [C]Hellion don’t leave me [F]don’t say good[C]bye

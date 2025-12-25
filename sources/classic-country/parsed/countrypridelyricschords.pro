@@ -1,6 +1,6 @@
 {meta: title Country Pride}
 {meta: artist Mel Street}
-{meta: writer Betty Carol}
+{meta: composer Betty Carol}
 
 {start_of_verse: Verse 1}
 [C]Well go ahead and call me a country boy

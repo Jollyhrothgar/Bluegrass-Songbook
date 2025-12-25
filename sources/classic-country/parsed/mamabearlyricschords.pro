@@ -1,6 +1,6 @@
 {meta: title Mama Bear}
 {meta: artist Carl Smith}
-{meta: writer Wiley J. Smith}
+{meta: composer Wiley J. Smith}
 
 {start_of_verse: Verse 1}
 [C]I know Goldilocks is just a children's [F]story

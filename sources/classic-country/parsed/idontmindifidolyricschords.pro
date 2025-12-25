@@ -1,6 +1,6 @@
 {meta: title I Don't Mind If I Do}
 {meta: artist George Strait}
-{meta: writer Don Sampson and Skip Ewing}
+{meta: composer Don Sampson and Skip Ewing}
 
 {start_of_verse: Verse 1}
 [C]Weather man says it's [C7]rainin' again

@@ -1,6 +1,6 @@
 {meta: title I Don't Know How To Tell Him}
 {meta: artist Wanda Jackson}
-{meta: writer Glenn Martin}
+{meta: composer Glenn Martin}
 
 {start_of_verse: Verse 1}
 [G]I can tell him his toy [C]gun won't kill [G]Indians

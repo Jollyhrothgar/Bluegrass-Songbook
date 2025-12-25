@@ -1,6 +1,6 @@
 {meta: title Ages And Ages Ago}
 {meta: artist Darrell McCall}
-{meta: writer Roy Drusky}
+{meta: composer Roy Drusky}
 
 {start_of_verse: Verse 1}
 [G]Long long ago we fell in love [G7]that's how it [C]started

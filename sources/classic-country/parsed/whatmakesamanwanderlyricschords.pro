@@ -1,6 +1,6 @@
 {meta: title What Makes A Man Wander}
 {meta: artist Waylon Jennings}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]What makes me wanna roam 

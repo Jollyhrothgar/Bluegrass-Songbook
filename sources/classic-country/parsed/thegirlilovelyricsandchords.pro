@@ -1,6 +1,6 @@
 {meta: title The Girl I Love}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino and Dave Bartholomew}
+{meta: composer Antonio Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [G7]Woke up this morning I was all [C]alone

@@ -1,6 +1,6 @@
 {meta: title Hey Doll Baby}
 {meta: artist The Everly Brothers}
-{meta: writer Titus Turner}
+{meta: composer Titus Turner}
 
 {start_of_verse: Verse 1}
 [C]Hey doll baby can we have a little talk together

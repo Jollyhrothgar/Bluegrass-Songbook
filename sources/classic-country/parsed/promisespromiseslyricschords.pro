@@ -1,6 +1,6 @@
 {meta: title Promises Promises}
 {meta: artist Norma Jean}
-{meta: writer Wiley Smith and Carlyle Hughey}
+{meta: composer Wiley Smith and Carlyle Hughey}
 
 {start_of_verse: Verse 1}
 [G]You've promised you would be true to me

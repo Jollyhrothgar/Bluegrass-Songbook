@@ -1,6 +1,6 @@
 {meta: title Gospel Changes}
 {meta: artist John Denver}
-{meta: writer Jack Williams}
+{meta: composer Jack Williams}
 
 {start_of_verse: Verse 1}
 [C]The Prodigal Son He'd [G7]been away a [Am]while

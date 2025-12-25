@@ -1,6 +1,6 @@
 {meta: title Where Have I Been All My Life}
 {meta: artist George Strait}
-{meta: writer Steve Williams, Will Nance, Sherrie Austin}
+{meta: composer Steve Williams, Will Nance, Sherrie Austin}
 
 {start_of_verse: Verse 1}
 [C]Been down the road [Dm]to work and back

@@ -1,6 +1,6 @@
 {meta: title Always Alone}
 {meta: artist Johnny Cash}
-{meta: writer Ted Daffan}
+{meta: composer Ted Daffan}
 
 {start_of_verse: Verse 1}
 [G]Always alone [G7]alone and [C]blue

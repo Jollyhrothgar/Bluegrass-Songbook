@@ -1,6 +1,6 @@
 {meta: title Bluegrass and White Snow}
 {meta: artist Patty Loveless}
-{meta: writer Emory Gordy and Patty Loveless}
+{meta: composer Emory Gordy and Patty Loveless}
 
 {start_of_verse: Verse 1}
 [C]Back up in the hills there's a Christmas long [F]ago

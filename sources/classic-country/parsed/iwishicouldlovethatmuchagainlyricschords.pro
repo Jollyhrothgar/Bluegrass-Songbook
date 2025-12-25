@@ -1,6 +1,6 @@
 {meta: title I Wish I Could Love That Much Again}
 {meta: artist Billy Walker}
-{meta: writer Vic McAlpin and Glenn D. Tubb}
+{meta: composer Vic McAlpin and Glenn D. Tubb}
 
 {start_of_verse: Verse 1}
 [C]Oh I [F]wish I could [G7]love that much [C]again

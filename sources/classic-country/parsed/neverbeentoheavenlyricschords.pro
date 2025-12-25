@@ -1,6 +1,6 @@
 {meta: title Never Been To Heaven}
 {meta: artist Mel Street}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]She walks into the room and every [F]head turns [C]

@@ -1,6 +1,6 @@
 {meta: title A Woman In Love}
 {meta: artist Ronnie Milsap}
-{meta: writer Curtis Wright and Doug Millett}
+{meta: composer Curtis Wright and Doug Millett}
 
 {start_of_verse: Verse 1}
 [G]No matter [C]what you [D7]do or [G]say

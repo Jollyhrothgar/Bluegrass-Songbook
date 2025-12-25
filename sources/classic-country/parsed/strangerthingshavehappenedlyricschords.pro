@@ -1,6 +1,6 @@
 {meta: title Stranger Things Have Happened}
 {meta: artist Ronnie Milsap}
-{meta: writer Roger Murrah and Keith Stegall}
+{meta: composer Roger Murrah and Keith Stegall}
 
 {start_of_verse: Verse 1}
 [C]I keep talking to your picture

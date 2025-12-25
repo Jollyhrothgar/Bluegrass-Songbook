@@ -1,6 +1,6 @@
 {meta: title It's The Messiah}
 {meta: artist Kenny Rogers}
-{meta: writer Don Potter}
+{meta: composer Don Potter}
 
 {start_of_verse: Verse 1}
 [C]It must have been [Am][F]something

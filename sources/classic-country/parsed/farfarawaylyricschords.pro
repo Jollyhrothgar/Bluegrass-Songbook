@@ -1,6 +1,6 @@
 {meta: title Far Far Away}
 {meta: artist Roy Orbison}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [C]Far far away is my love of [F]yesterday 

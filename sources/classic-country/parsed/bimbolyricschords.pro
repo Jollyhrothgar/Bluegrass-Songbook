@@ -1,6 +1,6 @@
 {meta: title Bimbo}
 {meta: artist Jim Reeves}
-{meta: writer Rod Morris}
+{meta: composer Rod Morris}
 
 {start_of_verse: Verse 1}
 [G]Bimbo Bimbo where you gonna go-i-o

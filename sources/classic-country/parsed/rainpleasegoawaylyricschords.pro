@@ -1,6 +1,6 @@
 {meta: title Rain Please Go Away}
 {meta: artist Dan Tyminski}
-{meta: writer Del McCoury}
+{meta: composer Del McCoury}
 
 {start_of_verse: Verse 1}
 [G]Rain please go away

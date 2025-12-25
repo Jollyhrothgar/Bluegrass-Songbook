@@ -1,6 +1,6 @@
 {meta: title What A Way To Live}
 {meta: artist Johnny Bush}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]Each night I make the rounds

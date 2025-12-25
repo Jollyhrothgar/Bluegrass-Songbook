@@ -1,6 +1,6 @@
 {meta: title Praise Him Praise Him}
 {meta: artist Jimmy Dean}
-{meta: writer Fanny Crosby and Chester Allen}
+{meta: composer Fanny Crosby and Chester Allen}
 
 {start_of_verse: Verse 1}
 [C]Praise Him praise Him [F]praise my blessed [C]Redeemer

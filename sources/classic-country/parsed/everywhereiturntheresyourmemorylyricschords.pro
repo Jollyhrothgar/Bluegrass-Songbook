@@ -1,6 +1,6 @@
 {meta: title Everywhere I Turn (There's Your Memory)}
 {meta: artist Ronnie Milsap}
-{meta: writer Naomi Martin and Archie Jordan}
+{meta: composer Naomi Martin and Archie Jordan}
 
 {start_of_verse: Verse 1}
 [C]I turn [Dm]on the radi[A7]o and [Dm]hear your favorite [G7]song

@@ -1,6 +1,6 @@
 {meta: title Lord Is It I}
 {meta: artist Dottie West}
-{meta: writer Austin Miles}
+{meta: composer Austin Miles}
 
 {start_of_verse: Verse 1}
 [C]Lord I come to [E7]Thee on [F]bended [C]knees

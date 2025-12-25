@@ -1,6 +1,6 @@
 {meta: title Twice The Loving}
 {meta: artist Jean Shepard}
-{meta: writer Floyd Huffman}
+{meta: composer Floyd Huffman}
 
 {start_of_verse: Verse 1}
 [G]Now you thought you had me hooked

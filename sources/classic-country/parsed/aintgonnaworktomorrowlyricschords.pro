@@ -1,6 +1,6 @@
 {meta: title Ain't Gonna Work Tomorrow}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Lester Flatt, Earl Scruggs, A.P. Carter}
+{meta: composer Lester Flatt, Earl Scruggs, A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]Oh I’m gonna leave this country

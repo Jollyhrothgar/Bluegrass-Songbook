@@ -1,6 +1,6 @@
 {meta: title Snow In His Hair}
 {meta: artist Johnny Cash}
-{meta: writer Marshall Pack}
+{meta: composer Marshall Pack}
 
 {start_of_verse: Verse 1}
 [G]The years have been many the [D7]years have been [G]long

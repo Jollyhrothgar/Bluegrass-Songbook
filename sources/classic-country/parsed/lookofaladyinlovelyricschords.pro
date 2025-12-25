@@ -1,6 +1,6 @@
 {meta: title Look Of A Lady In Love}
 {meta: artist Johnny Duncan}
-{meta: writer Lewis Anderson and Brent Mason}
+{meta: composer Lewis Anderson and Brent Mason}
 
 {start_of_verse: Verse 1}
 [C]I saw her walkin' down the [F]street[G7]

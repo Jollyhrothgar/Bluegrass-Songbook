@@ -1,6 +1,6 @@
 {meta: title Mr. Midnight}
 {meta: artist Garth Brooks}
-{meta: writer James Cobb, Buddy Buie, Tom Douglas}
+{meta: composer James Cobb, Buddy Buie, Tom Douglas}
 
 {start_of_verse: Verse 1}
 [C]Rain on the roof [B7]and time on my hands

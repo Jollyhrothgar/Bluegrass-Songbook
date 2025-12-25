@@ -1,6 +1,6 @@
 {meta: title If You Ever Change Your Mind}
 {meta: artist Crystal Gayle}
-{meta: writer Bob Gundry and McGee Parker}
+{meta: composer Bob Gundry and McGee Parker}
 
 {start_of_verse: Verse 1}
 [Cm]Sure I under[G]stand

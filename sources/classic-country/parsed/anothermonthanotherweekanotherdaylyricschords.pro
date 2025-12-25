@@ -1,6 +1,6 @@
 {meta: title Another Month Another Week Another Day}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Sylvia Fisher}
+{meta: composer Webb Pierce and Sylvia Fisher}
 
 {start_of_verse: Verse 1}
 [G]You’re gonna love me less tomorrow

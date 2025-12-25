@@ -1,6 +1,6 @@
 {meta: title Omaha}
 {meta: artist Waylon Jennings}
-{meta: writer Billy Joe Shaver and Hillman Hall}
+{meta: composer Billy Joe Shaver and Hillman Hall}
 
 {start_of_verse: Verse 1}
 [F]Omaha [G7]you've been weighing [C]heavy on my [F]mind

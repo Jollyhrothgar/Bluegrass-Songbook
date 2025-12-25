@@ -1,6 +1,6 @@
 {meta: title Good Old Country Music}
 {meta: artist Porter Wagoner}
-{meta: writer Joe Babcock}
+{meta: composer Joe Babcock}
 
 {start_of_verse: Verse 1}
 [C]I remember daddy playing the Wildwood Flower

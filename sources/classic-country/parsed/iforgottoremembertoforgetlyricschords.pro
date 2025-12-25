@@ -1,6 +1,6 @@
 {meta: title I Forgot To Remember To Forget}
 {meta: artist Johnny Cash}
-{meta: writer Stan Kesler and Carl Feathers}
+{meta: composer Stan Kesler and Carl Feathers}
 
 {start_of_verse: Verse 1}
 [G]I forgot to remember to forget [D7]her

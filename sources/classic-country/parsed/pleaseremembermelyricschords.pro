@@ -1,6 +1,6 @@
 {meta: title Please Remember Me}
 {meta: artist Johnny Duncan}
-{meta: writer Hank Mills}
+{meta: composer Hank Mills}
 
 {start_of_verse: Verse 1}
 [G]I was so surprised [D7]when you said hello

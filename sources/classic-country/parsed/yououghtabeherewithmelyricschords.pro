@@ -1,6 +1,6 @@
 {meta: title You Oughta Be Here With Me}
 {meta: artist George Jones}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]If you think it's lonesome where [F]you are [C]tonight

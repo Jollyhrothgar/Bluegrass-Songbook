@@ -1,6 +1,6 @@
 {meta: title Come Back To Me My Love}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Joe Melson}
+{meta: composer Roy Orbison and Joe Melson}
 
 {start_of_verse: Verse 1}
 [G]Bum bum bum da de da oh oh oh [Em]yeah yeah

@@ -1,6 +1,6 @@
 {meta: title Long Time To Forget}
 {meta: artist George Jones}
-{meta: writer Carl Belew and W.S. Stevenson}
+{meta: composer Carl Belew and W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [G]It will take a long time to forget you my [D7]dear

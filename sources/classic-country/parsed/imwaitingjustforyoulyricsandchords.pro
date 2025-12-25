@@ -1,6 +1,6 @@
 {meta: title I'm Waiting Just For You}
 {meta: artist Wanda Jackson}
-{meta: writer Henry Glover, Carolyn Leigh, Lucky Millinder}
+{meta: composer Henry Glover, Carolyn Leigh, Lucky Millinder}
 
 {start_of_verse: Verse 1}
 [C]You have to leave me all by myself [C7]dear

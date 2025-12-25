@@ -1,6 +1,6 @@
 {meta: title I Can See Arkansas}
 {meta: artist Anne Murray}
-{meta: writer Wood Arnold Newton and James Nihan}
+{meta: composer Wood Arnold Newton and James Nihan}
 
 {start_of_verse: Verse 1}
 [C]There's a natural wonder between us

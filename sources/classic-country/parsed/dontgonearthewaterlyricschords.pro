@@ -1,6 +1,6 @@
 {meta: title Don't Go Near The Water}
 {meta: artist Sammy Kershaw}
-{meta: writer Chapin Hartford and Jim Foster}
+{meta: composer Chapin Hartford and Jim Foster}
 
 {start_of_verse: Verse 1}
 [G]Your momma used to worry bout that big muddy river

@@ -1,6 +1,6 @@
 {meta: title Cruising Down The River}
 {meta: artist Connie Francis}
-{meta: writer Nellie Tollerton and Eily Bendell}
+{meta: composer Nellie Tollerton and Eily Bendell}
 
 {start_of_verse: Verse 1}
 [C]Cruising down the river on a Sunday [D7]afternoon

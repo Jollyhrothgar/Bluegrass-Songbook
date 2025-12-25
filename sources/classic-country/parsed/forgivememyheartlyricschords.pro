@@ -1,6 +1,6 @@
 {meta: title Forgive Me My Heart}
 {meta: artist Ray Price}
-{meta: writer Dan Hoffman and Chuck Woolery}
+{meta: composer Dan Hoffman and Chuck Woolery}
 
 {start_of_verse: Verse 1}
 [C]Hello heart it's me again do you [G7]remember

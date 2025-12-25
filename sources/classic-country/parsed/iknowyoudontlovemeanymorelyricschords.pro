@@ -1,6 +1,6 @@
 {meta: title I Know You Don’t Love Me Anymore}
 {meta: artist Wilburn Brothers}
-{meta: writer Doyle Wilburn and Teddy Wilburn}
+{meta: composer Doyle Wilburn and Teddy Wilburn}
 
 {start_of_verse: Verse 1}
 [C]I know you don't [G7]love me any[C]more 

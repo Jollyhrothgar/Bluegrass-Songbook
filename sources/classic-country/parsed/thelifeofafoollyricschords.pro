@@ -1,6 +1,6 @@
 {meta: title The Life Of A Fool}
 {meta: artist Bobby Bare}
-{meta: writer recorded by Bobby Bare}
+{meta: composer recorded by Bobby Bare}
 
 {start_of_verse: Verse 1}
 [C]She was so innocent I stole her [G7]heart

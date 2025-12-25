@@ -1,6 +1,6 @@
 {meta: title Why In Heaven's Name}
 {meta: artist George Morgan}
-{meta: writer Steve Nelson, Ed Nelson, Jr., Ed Nelson}
+{meta: composer Steve Nelson, Ed Nelson, Jr., Ed Nelson}
 
 {start_of_verse: Verse 1}
 [C]You treat me so shamefully you always make me [D7]blue

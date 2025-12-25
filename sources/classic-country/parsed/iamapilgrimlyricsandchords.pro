@@ -1,6 +1,6 @@
 {meta: title I Am A Pilgrim}
 {meta: artist Slim Whitman}
-{meta: writer Merle Travis}
+{meta: composer Merle Travis}
 
 {start_of_verse: Verse 1}
 [G]I’m a [D7]pilgrim and I’m a [G]stranger

@@ -1,6 +1,6 @@
 {meta: title Bedtime}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Charlie Black and Austin Roberts}
+{meta: composer Charlie Black and Austin Roberts}
 
 {start_of_verse: Verse 1}
 [C]When she [G]walks in the room

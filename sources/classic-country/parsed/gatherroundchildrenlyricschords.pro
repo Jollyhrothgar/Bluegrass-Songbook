@@ -1,6 +1,6 @@
 {meta: title Gather Round Children}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Cecil Harrelson and Linda G. Lewis}
+{meta: composer Cecil Harrelson and Linda G. Lewis}
 
 {start_of_verse: Verse 1}
 Gather Round Children

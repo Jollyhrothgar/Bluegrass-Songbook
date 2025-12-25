@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Love You Too}
 {meta: artist Buddy Holly}
-{meta: writer Joe Mauldin, Norman Petty, Niki Sullivan}
+{meta: composer Joe Mauldin, Norman Petty, Niki Sullivan}
 
 {start_of_verse: Verse 1}
 Intro:

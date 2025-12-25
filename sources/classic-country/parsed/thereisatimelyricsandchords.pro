@@ -1,6 +1,6 @@
 {meta: title There Is A Time}
 {meta: artist Alan Jackson}
-{meta: writer Rodney Dillard and Mitchell Jayne}
+{meta: composer Rodney Dillard and Mitchell Jayne}
 
 {start_of_verse: Verse 1}
 [Am]There is a time for love and laughter

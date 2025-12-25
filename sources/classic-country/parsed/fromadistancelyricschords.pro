@@ -1,6 +1,6 @@
 {meta: title From A Distance}
 {meta: artist Alan Jackson}
-{meta: writer Randy Travis and Alan Jackson}
+{meta: composer Randy Travis and Alan Jackson}
 
 {start_of_verse: Verse 1}
 [C]Just another [G7]bar with [F]loud gui[G7]tars 

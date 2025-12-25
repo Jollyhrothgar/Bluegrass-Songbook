@@ -1,6 +1,6 @@
 {meta: title It's Mighty Dark To Travel}
 {meta: artist Ricky Skaggs}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [G]It's mighty dark for me to travel

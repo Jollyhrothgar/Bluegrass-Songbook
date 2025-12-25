@@ -1,6 +1,6 @@
 {meta: title A Million And One}
 {meta: artist Billy Walker}
-{meta: writer Yvonne Devaney}
+{meta: composer Yvonne Devaney}
 
 {start_of_verse: Verse 1}
 [C]How many [F][C7]teardrops

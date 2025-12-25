@@ -1,6 +1,6 @@
 {meta: title A Drunk Can't Be A Man}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery and George Jones}
+{meta: composer Earl Montgomery and George Jones}
 
 {start_of_verse: Verse 1}
 [G]He embarrasses his child and wife Lord he leads a miserable [C]life

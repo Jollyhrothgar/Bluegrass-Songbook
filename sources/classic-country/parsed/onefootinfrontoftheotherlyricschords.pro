@@ -1,6 +1,6 @@
 {meta: title One Foot In Front Of The Other}
 {meta: artist George Strait}
-{meta: writer Cris Moore and Lee Roy Parnell}
+{meta: composer Cris Moore and Lee Roy Parnell}
 
 {start_of_verse: Verse 1}
 [G]Well love can be an uphill climb

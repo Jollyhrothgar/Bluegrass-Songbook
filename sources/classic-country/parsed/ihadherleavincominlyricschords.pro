@@ -1,6 +1,6 @@
 {meta: title I Had Her Leavin' Comin'}
 {meta: artist Charley Pride}
-{meta: writer David Wayne Chamberlain and Mark Sherrill}
+{meta: composer David Wayne Chamberlain and Mark Sherrill}
 
 {start_of_verse: Verse 1}
 [C]My baby's gone and it's a shame 

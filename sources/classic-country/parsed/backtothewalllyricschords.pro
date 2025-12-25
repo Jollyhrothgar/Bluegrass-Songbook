@@ -1,6 +1,6 @@
 {meta: title Back To The Wall}
 {meta: artist Tammy Wynette}
-{meta: writer Larry Bastian}
+{meta: composer Larry Bastian}
 
 {start_of_verse: Verse 1}
 [C]I've heard all your answers but there's one thing I wish you'd [F]explain[C]  [F]

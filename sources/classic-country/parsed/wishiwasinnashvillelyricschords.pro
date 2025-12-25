@@ -1,6 +1,6 @@
 {meta: title Wish I Was In Nashville Leaves Oklahoma}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]I went to see my honeydew she [F]lived just down the way

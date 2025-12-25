@@ -1,6 +1,6 @@
 {meta: title Everyday Of My Life}
 {meta: artist George Morgan}
-{meta: writer Bill Morgan}
+{meta: composer Bill Morgan}
 
 {start_of_verse: Verse 1}
 [C]Everyday of my [F]life  will be [C]lonely without [G7]you

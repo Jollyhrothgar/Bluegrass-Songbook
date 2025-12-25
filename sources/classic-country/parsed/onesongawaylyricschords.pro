@@ -1,6 +1,6 @@
 {meta: title One Song Away}
 {meta: artist Tommy Cash}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]I'm just one song away from being [F]home

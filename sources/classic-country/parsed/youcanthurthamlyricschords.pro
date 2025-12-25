@@ -1,6 +1,6 @@
 {meta: title You Can't Hurt Ham}
 {meta: artist Ricky Skaggs}
-{meta: writer Gordon Kennedy and Ricky Skaggs}
+{meta: composer Gordon Kennedy and Ricky Skaggs}
 
 {start_of_verse: Verse 1}
 [G]Bill Monroe out on the road

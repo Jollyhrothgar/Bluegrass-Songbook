@@ -1,6 +1,6 @@
 {meta: title Why Am I Chained to a Memory}
 {meta: artist Everly Brothers}
-{meta: writer Eddie Snyder, Kay Rogers, Richard Ahlert}
+{meta: composer Eddie Snyder, Kay Rogers, Richard Ahlert}
 
 {start_of_verse: Verse 1}
 [C]Why am I chained to a [E7]memory

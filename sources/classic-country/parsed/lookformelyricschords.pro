@@ -1,6 +1,6 @@
 {meta: title Look For Me}
 {meta: artist Marty Raybon}
-{meta: writer Charles F. Goodman}
+{meta: composer Charles F. Goodman}
 
 {start_of_verse: Verse 1}
 [D7]When you [G]finally make your entrance to that [C]city

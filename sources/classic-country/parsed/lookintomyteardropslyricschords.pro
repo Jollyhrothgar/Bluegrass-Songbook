@@ -1,6 +1,6 @@
 {meta: title Look into my Teardrops}
 {meta: artist Conway Twitty}
-{meta: writer Harlan Howard and Don Bowman}
+{meta: composer Harlan Howard and Don Bowman}
 
 {start_of_verse: Verse 1}
 [G]Look into my [C]teardrops and darling you will [G]see

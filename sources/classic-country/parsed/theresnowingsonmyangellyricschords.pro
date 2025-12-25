@@ -1,6 +1,6 @@
 {meta: title There's No Wings On My Angel}
 {meta: artist Eddy Arnold}
-{meta: writer Cy Coben, Irving Melsher, Eddy Arnold}
+{meta: composer Cy Coben, Irving Melsher, Eddy Arnold}
 
 {start_of_verse: Verse 1}
 [C]There's no [C7]wings [F]on my angel cause [C]she's not from [G7]heaven [G7][C]above

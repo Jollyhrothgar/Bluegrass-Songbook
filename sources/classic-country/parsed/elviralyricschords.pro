@@ -1,6 +1,6 @@
 {meta: title Elvira}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]Elvira  Elvira  my heart's on fire [G7]for [C]Elvira

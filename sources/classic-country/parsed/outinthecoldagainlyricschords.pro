@@ -1,6 +1,6 @@
 {meta: title Out In The Cold Again}
 {meta: artist Ferlin Husky}
-{meta: writer Ted Koehler and Rube Bloom}
+{meta: composer Ted Koehler and Rube Bloom}
 
 {start_of_verse: Verse 1}
 [C]The song that [G7]you sang so [C]sweetly 

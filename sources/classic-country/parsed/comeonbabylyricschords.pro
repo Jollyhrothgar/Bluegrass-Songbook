@@ -1,6 +1,6 @@
 {meta: title Come On Baby}
 {meta: artist Mickey Gilley}
-{meta: writer Mickey Gilley and Sam Hopkins}
+{meta: composer Mickey Gilley and Sam Hopkins}
 
 {start_of_verse: Verse 1}
 [C]Well come on baby let’s have a little party tonight

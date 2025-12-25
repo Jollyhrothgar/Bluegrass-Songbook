@@ -1,6 +1,6 @@
 {meta: title Staying Together}
 {meta: artist Gene Watson}
-{meta: writer Jerry Salley and Monty Holmes}
+{meta: composer Jerry Salley and Monty Holmes}
 
 {start_of_verse: Verse 1}
 [C]We do it for the children down the hall

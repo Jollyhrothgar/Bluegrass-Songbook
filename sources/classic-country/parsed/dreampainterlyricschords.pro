@@ -1,6 +1,6 @@
 {meta: title Dream Painter}
 {meta: artist Connie Smith}
-{meta: writer Dallas Frazier &amp; Sanger D. Shafer}
+{meta: composer Dallas Frazier &amp; Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [C]He's my dream painter [F]my weather chan[G7]ger

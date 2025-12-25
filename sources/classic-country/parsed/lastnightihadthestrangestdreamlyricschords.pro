@@ -1,6 +1,6 @@
 {meta: title Last Night I Had The Strangest Dream}
 {meta: artist Garth Brooks}
-{meta: writer Ed McCurdy}
+{meta: composer Ed McCurdy}
 
 {start_of_verse: Verse 1}
 [C]Last night I had the strangest dream

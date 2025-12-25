@@ -1,6 +1,6 @@
 {meta: title Heaven's Just A Sin Away}
 {meta: artist The Kendalls}
-{meta: writer Jerry Gillespie}
+{meta: composer Jerry Gillespie}
 
 {start_of_verse: Verse 1}
 [G]Heaven's just a sin away oh oh just a sin [C]away

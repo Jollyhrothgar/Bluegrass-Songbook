@@ -1,6 +1,6 @@
 {meta: title Tennessee Sunshine}
 {meta: artist Gene Watson}
-{meta: writer Porter Wagoner}
+{meta: composer Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [C]Well just before the [F]sunrise in the [C]morning

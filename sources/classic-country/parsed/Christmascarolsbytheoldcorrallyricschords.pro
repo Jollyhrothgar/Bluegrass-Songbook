@@ -1,6 +1,6 @@
 {meta: title Christmas Carols By The Old Corral}
 {meta: artist Tex Ritter}
-{meta: writer John Lange}
+{meta: composer John Lange}
 
 {start_of_verse: Verse 1}
 [C]They'll be singing gonna be [D7]singing

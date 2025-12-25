@@ -1,6 +1,6 @@
 {meta: title Magic Isles}
 {meta: artist Fats Domino}
-{meta: writer Antoine Domino and Dave Bartholomew}
+{meta: composer Antoine Domino and Dave Bartholomew}
 
 {start_of_verse: Verse 1}
 [G7]To spend one [C]night on the magic [G7]isles

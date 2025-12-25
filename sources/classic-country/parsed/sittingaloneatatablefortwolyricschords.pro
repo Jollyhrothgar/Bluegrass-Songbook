@@ -1,6 +1,6 @@
 {meta: title Sitting Alone At A Table For Two}
 {meta: artist Hank Locklin}
-{meta: writer Lawton Williams}
+{meta: composer Lawton Williams}
 
 {start_of_verse: Verse 1}
 [C]Last night I stopped at [F]the old [C]Cabaret

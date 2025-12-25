@@ -1,6 +1,6 @@
 {meta: title The Closest Thing To Heaven}
 {meta: artist Bob Luman}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]You came when I was lost and caught me [F]lonely

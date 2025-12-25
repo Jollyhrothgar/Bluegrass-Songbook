@@ -1,6 +1,6 @@
 {meta: title Warm Love}
 {meta: artist Don Gibson}
-{meta: writer Don Gibson}
+{meta: composer Don Gibson}
 
 {start_of_verse: Verse 1}
 [G]Well at first I didn’t [C]think that you’re [G]leaving 

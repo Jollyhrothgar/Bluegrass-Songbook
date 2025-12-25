@@ -1,6 +1,6 @@
 {meta: title Leavin' As Fast As I Can Crawl}
 {meta: artist Johnny Rodriguez}
-{meta: writer Linda Hargrove}
+{meta: composer Linda Hargrove}
 
 {start_of_verse: Verse 1}
 [G]Would you like to take a picture of me [C]leavin'

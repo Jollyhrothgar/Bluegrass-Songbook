@@ -1,6 +1,6 @@
 {meta: title You Should See Tennessee Mam'selle}
 {meta: artist Jimmy Dean}
-{meta: writer Dave Coleman}
+{meta: composer Dave Coleman}
 
 {start_of_verse: Verse 1}
 [C]You should see [F]Tennessee [C]Mam'selle

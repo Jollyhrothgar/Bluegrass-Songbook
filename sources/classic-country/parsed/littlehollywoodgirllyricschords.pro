@@ -1,6 +1,6 @@
 {meta: title Little Hollywood Girl}
 {meta: artist The Everly Brothers}
-{meta: writer Gerry Goffin and Jack Keller}
+{meta: composer Gerry Goffin and Jack Keller}
 
 {start_of_verse: Verse 1}
 [G]Each day you [Em]think a producer will [G]give you your [Em]start

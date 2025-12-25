@@ -1,6 +1,6 @@
 {meta: title I'm Sorry We Met}
 {meta: artist Hank Snow}
-{meta: writer Jimmie Rodgers and Elsie McWilliams}
+{meta: composer Jimmie Rodgers and Elsie McWilliams}
 
 {start_of_verse: Verse 1}
 [C]Though you have refused to [F]see me my [G7]dear

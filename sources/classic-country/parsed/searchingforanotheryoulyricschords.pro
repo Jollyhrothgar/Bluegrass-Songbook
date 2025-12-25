@@ -1,6 +1,6 @@
 {meta: title Searching For Another You}
 {meta: artist Wynn Stewart}
-{meta: writer Wynn Stewart and Lee Ross}
+{meta: composer Wynn Stewart and Lee Ross}
 
 {start_of_verse: Verse 1}
 [C]I have searched a sea of faces but not one [F]of them [C]replaces

@@ -1,6 +1,6 @@
 {meta: title I'd Fight The World}
 {meta: artist Ray Price}
-{meta: writer Hank Cochran and Joe Allison}
+{meta: composer Hank Cochran and Joe Allison}
 
 {start_of_verse: Verse 1}
 [G7]I don't care what anybody thinks of [C]me

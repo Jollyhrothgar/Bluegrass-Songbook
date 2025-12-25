@@ -1,6 +1,6 @@
 {meta: title Alive And Well}
 {meta: artist Tammy Wynette}
-{meta: writer Michael Garvin and Bucky Jones}
+{meta: composer Michael Garvin and Bucky Jones}
 
 {start_of_verse: Verse 1}
 [C]I wish my love for you could die the way that your love did for [F]me

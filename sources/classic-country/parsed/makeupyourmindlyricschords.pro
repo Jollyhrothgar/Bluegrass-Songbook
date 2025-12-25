@@ -1,6 +1,6 @@
 {meta: title Make Up Your Mind}
 {meta: artist Kitty Wells}
-{meta: writer Jack Anglin, Eddie Hill, Johnnie Wright}
+{meta: composer Jack Anglin, Eddie Hill, Johnnie Wright}
 
 {start_of_verse: Verse 1}
 [G]If you'd make up your mind quit [C]trifling all the [G]time 

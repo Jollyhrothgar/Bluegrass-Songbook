@@ -1,6 +1,6 @@
 {meta: title Everyone Needs Someone}
 {meta: artist Mel Tillis}
-{meta: writer Buddy Cannon and Gene Dunlap}
+{meta: composer Buddy Cannon and Gene Dunlap}
 
 {start_of_verse: Verse 1}
 [C]Everyone needs someone to [F]talk to

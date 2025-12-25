@@ -1,6 +1,6 @@
 {meta: title The Rider}
 {meta: artist Lefty Frizzell}
-{meta: writer Wanda Tubb}
+{meta: composer Wanda Tubb}
 
 {start_of_verse: Verse 1}
 [G]Riding riding fast at midnight

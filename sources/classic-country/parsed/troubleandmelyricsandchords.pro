@@ -1,6 +1,6 @@
 {meta: title Trouble And Me Lyrics chords}
 {meta: artist Stonewall Jackson}
-{meta: writer Jimmy Rule}
+{meta: composer Jimmy Rule}
 
 {start_of_verse: Verse 1}
 [C]Trouble and me must be half [F]brothers 

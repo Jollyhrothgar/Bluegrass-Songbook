@@ -1,6 +1,6 @@
 {meta: title Educated Mama}
 {meta: artist Ernest Tubb}
-{meta: writer Hal Willis and Ginger Willis}
+{meta: composer Hal Willis and Ginger Willis}
 
 {start_of_verse: Verse 1}
 [C]You're an educated mama ain't that a heck of a note

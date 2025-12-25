@@ -1,6 +1,6 @@
 {meta: title Come On Over}
 {meta: artist Doyle Lawson}
-{meta: writer Barry Gibb}
+{meta: composer Barry Gibb}
 
 {start_of_verse: Verse 1}
 [C]If my life gets like a jigsaw

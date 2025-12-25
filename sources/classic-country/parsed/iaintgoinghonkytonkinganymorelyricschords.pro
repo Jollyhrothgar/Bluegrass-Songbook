@@ -1,6 +1,6 @@
 {meta: title I Ain't Going Honky Tonking Anymore}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [G]I ain't going honky tonking anymore

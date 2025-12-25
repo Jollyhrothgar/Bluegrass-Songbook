@@ -1,6 +1,6 @@
 {meta: title A Nice Place To Visit}
 {meta: artist George Hamilton IV}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [G]I've seen the way you handle other [C]guys

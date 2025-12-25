@@ -1,6 +1,6 @@
 {meta: title If You've Got the Money}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Jim Beck}
+{meta: composer Lefty Frizzell and Jim Beck}
 
 {start_of_verse: Verse 1}
 [G]If you've got the money I've got the time 

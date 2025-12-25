@@ -1,6 +1,6 @@
 {meta: title You Are The Only One}
 {meta: artist Ricky Nelson}
-{meta: writer B. Knight}
+{meta: composer B. Knight}
 
 {start_of_verse: Verse 1}
 [C]You are the [G7]only one my one and only [C]one

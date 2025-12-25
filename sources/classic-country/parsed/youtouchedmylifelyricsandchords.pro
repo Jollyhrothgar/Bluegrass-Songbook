@@ -1,6 +1,6 @@
 {meta: title You Touched My Life}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]Somewhere in the darkened corners of my mind

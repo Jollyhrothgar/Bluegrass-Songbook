@@ -1,6 +1,6 @@
 {meta: title There Lies The Difference}
 {meta: artist Kenny Rogers}
-{meta: writer Steve Dorff and Pat Bunch}
+{meta: composer Steve Dorff and Pat Bunch}
 
 {start_of_verse: Verse 1}
 [G]I don't have to go out tonight

@@ -1,6 +1,6 @@
 {meta: title Baby Ride Easy}
 {meta: artist Johnny Cash}
-{meta: writer Richard Dobson}
+{meta: composer Richard Dobson}
 
 {start_of_verse: Verse 1}
 [G]If I drove a truck and [C]I were a waitress

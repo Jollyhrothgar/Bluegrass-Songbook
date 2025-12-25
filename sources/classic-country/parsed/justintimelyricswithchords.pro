@@ -1,6 +1,6 @@
 {meta: title Just In Time}
 {meta: artist Statler Brothers}
-{meta: writer Lew DeWitt}
+{meta: composer Lew DeWitt}
 
 {start_of_verse: Verse 1}
 [C]When I was low and needed help God took my [G7]burden

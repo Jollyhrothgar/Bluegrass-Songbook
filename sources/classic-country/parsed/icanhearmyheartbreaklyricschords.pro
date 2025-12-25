@@ -1,6 +1,6 @@
 {meta: title I Can Hear My Heart Break}
 {meta: artist Conway Twitty}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]I'm [C]surrounded by [G]silence [D7]tormented by [G]dreams

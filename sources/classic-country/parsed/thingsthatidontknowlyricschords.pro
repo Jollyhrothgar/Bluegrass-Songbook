@@ -1,6 +1,6 @@
 {meta: title Things That I Don't Know}
 {meta: artist Marty Robbins}
-{meta: writer Jack Pruett}
+{meta: composer Jack Pruett}
 
 {start_of_verse: Verse 1}
 [G]I've heard it said what you don't know won't make you [D7]blue

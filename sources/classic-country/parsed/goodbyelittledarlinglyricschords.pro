@@ -1,6 +1,6 @@
 {meta: title Goodbye Little Darling}
 {meta: artist Johnny Cash}
-{meta: writer Gene Autry and Johnny Marvin}
+{meta: composer Gene Autry and Johnny Marvin}
 
 {start_of_verse: Verse 1}
 [G]Goodbye little [C]darling we're [G]parting

@@ -1,6 +1,6 @@
 {meta: title I'm Not The Man I Used To Be}
 {meta: artist Wynn Stewart}
-{meta: writer Bob Morris}
+{meta: composer Bob Morris}
 
 {start_of_verse: Verse 1}
 [F]I guess I’m not the [G7]man I used to [C]be

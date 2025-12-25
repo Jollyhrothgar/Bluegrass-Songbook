@@ -1,6 +1,6 @@
 {meta: title Too Much Of Too Little}
 {meta: artist George Strait}
-{meta: writer Curtis Wayne}
+{meta: composer Curtis Wayne}
 
 {start_of_verse: Verse 1}
 [G]Well here we sit at a [G7]table for [C]two[F]  [C]

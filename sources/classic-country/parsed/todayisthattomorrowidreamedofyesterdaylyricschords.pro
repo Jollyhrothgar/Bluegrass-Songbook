@@ -1,6 +1,6 @@
 {meta: title Today Is That Tomorrow (I Dreamed Of Yesterday)}
 {meta: artist Lefty Frizzell}
-{meta: writer Joe Johnson}
+{meta: composer Joe Johnson}
 
 {start_of_verse: Verse 1}
 [C]Now [G7]today is that tomorrow that I dreamed of yester[C]day

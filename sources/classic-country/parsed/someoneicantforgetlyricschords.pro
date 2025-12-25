@@ -1,6 +1,6 @@
 {meta: title Someone I Can't Forget}
 {meta: artist Charley Pride}
-{meta: writer Johnny Duncan}
+{meta: composer Johnny Duncan}
 
 {start_of_verse: Verse 1}
 [G]If I hurt [D7]long enough then I won't [G]hurt no more

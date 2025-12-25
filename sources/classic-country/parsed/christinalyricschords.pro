@@ -1,6 +1,6 @@
 {meta: title Christina}
 {meta: artist Waylon Jennings}
-{meta: writer Steve Karliski}
+{meta: composer Steve Karliski}
 
 {start_of_verse: Verse 1}
 [C]Their eyes are upon you as they sat there drinking

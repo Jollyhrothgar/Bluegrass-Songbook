@@ -1,6 +1,6 @@
 {meta: title A Long Way From Montana}
 {meta: artist Red Steagall}
-{meta: writer R.W. Hampton, Phil Martin, Red Steagall}
+{meta: composer R.W. Hampton, Phil Martin, Red Steagall}
 
 {start_of_verse: Verse 1}
 [C]A long [Em]way it [F]is from Montana

@@ -1,6 +1,6 @@
 {meta: title That Over Thirty Look}
 {meta: artist Faron Young}
-{meta: writer Billy Arr and Rick Klang}
+{meta: composer Billy Arr and Rick Klang}
 
 {start_of_verse: Verse 1}
 [C]That over thirty look sure looks good on [F]you

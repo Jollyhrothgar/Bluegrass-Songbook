@@ -1,6 +1,6 @@
 {meta: title Till You Come Back Again Lyrics and Chords}
 {meta: artist Eddy Arnold}
-{meta: writer Buddy Killen}
+{meta: composer Buddy Killen}
 
 {start_of_verse: Verse 1}
 [G]A lonely room  a window [G7]pane

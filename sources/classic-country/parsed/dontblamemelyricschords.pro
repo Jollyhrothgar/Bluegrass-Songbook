@@ -1,6 +1,6 @@
 {meta: title Don't Blame Me}
 {meta: artist Everly Brothers}
-{meta: writer Dorothy Fields and Jimmy McHugh}
+{meta: composer Dorothy Fields and Jimmy McHugh}
 
 {start_of_verse: Verse 1}
 [C]Don't [A#7]blame [A7]me for [F]falling in [G7]love with [C]you

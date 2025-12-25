@@ -1,6 +1,6 @@
 {meta: title Cheap Thrills}
 {meta: artist David Allan Coe}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]They judge a boy by his friends and all of mine are [F]trash

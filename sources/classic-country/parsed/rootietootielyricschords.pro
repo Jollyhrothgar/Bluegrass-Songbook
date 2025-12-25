@@ -1,6 +1,6 @@
 {meta: title Rootie Tootie}
 {meta: artist Hank Williams}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [C]Met my future wife today

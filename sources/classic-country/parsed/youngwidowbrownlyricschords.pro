@@ -1,6 +1,6 @@
 {meta: title Young Widow Brown}
 {meta: artist Waylon Jennings}
-{meta: writer Waylon Jennings and Sky Corbin}
+{meta: composer Waylon Jennings and Sky Corbin}
 
 {start_of_verse: Verse 1}
 [G]That Jimmy Brown died just twenty-five

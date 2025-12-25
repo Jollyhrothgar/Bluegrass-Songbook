@@ -1,6 +1,6 @@
 {meta: title Little Shirt My Mother Made For Me}
 {meta: artist Marty Robbins}
-{meta: writer Harry Wincott}
+{meta: composer Harry Wincott}
 
 {start_of_verse: Verse 1}
 [C]I can't forget the day that I was [G7]born

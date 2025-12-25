@@ -1,6 +1,6 @@
 {meta: title With Pen In Hand}
 {meta: artist Ferlin Husky}
-{meta: writer Bobby Goldsboro}
+{meta: composer Bobby Goldsboro}
 
 {start_of_verse: Verse 1}
 [G]With pen in [G7]hand you [Dm]signed your [G7]name 

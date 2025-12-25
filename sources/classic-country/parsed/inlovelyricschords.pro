@@ -1,6 +1,6 @@
 {meta: title In Love}
 {meta: artist Wynn Stewart}
-{meta: writer Bobby George}
+{meta: composer Bobby George}
 
 {start_of_verse: Verse 1}
 [C]Little girl [Em]blue [D7]come say you're [G7]mine

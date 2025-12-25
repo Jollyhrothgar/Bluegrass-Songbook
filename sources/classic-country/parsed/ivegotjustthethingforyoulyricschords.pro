@@ -1,6 +1,6 @@
 {meta: title I've Got Just The Thing For You}
 {meta: artist Jim Reeves}
-{meta: writer Nancy White}
+{meta: composer Nancy White}
 
 {start_of_verse: Verse 1}
 [G]I ain’t got a great big car [C]I ain’t got no [G]caviar  

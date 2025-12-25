@@ -1,6 +1,6 @@
 {meta: title Desperately}
 {meta: artist Don Williams}
-{meta: writer Jamie O'Hara and Kevin Welch}
+{meta: composer Jamie O'Hara and Kevin Welch}
 
 {start_of_verse: Verse 1}
 [C]My heart is out of control

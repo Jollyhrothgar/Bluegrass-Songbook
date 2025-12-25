@@ -1,6 +1,6 @@
 {meta: title I'm Gettin' Lonely}
 {meta: artist Bobby Bare}
-{meta: writer Clyde Pitts}
+{meta: composer Clyde Pitts}
 
 {start_of_verse: Verse 1}
 [C]My baby's [Am]gone and I'm [Em]all [C]alone

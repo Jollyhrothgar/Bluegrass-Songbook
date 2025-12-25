@@ -1,6 +1,6 @@
 {meta: title If Crying Would Make You Here}
 {meta: artist Webb Pierce}
-{meta: writer Wayne Walker and Tillman Franks}
+{meta: composer Wayne Walker and Tillman Franks}
 
 {start_of_verse: Verse 1}
 [C]If cry-ing [E7]would [F]make you [C]here

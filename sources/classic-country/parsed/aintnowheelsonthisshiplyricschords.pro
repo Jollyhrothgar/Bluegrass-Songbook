@@ -1,6 +1,6 @@
 {meta: title Ain't No Wheels On This Ship}
 {meta: artist Patsy Cline}
-{meta: writer W.D. Chandler and W.S. Stevenson}
+{meta: composer W.D. Chandler and W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [G]I use to have big money

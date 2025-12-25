@@ -1,6 +1,6 @@
 {meta: title I've Got To Stop Lovin' You}
 {meta: artist Leona Williams}
-{meta: writer Dave Kirby and Leona Williams}
+{meta: composer Dave Kirby and Leona Williams}
 
 {start_of_verse: Verse 1}
 [G7]I've got to [C]stop [G7]loving [Am]you [C]like I [F]do [Am]   [Dm]

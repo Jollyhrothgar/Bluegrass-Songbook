@@ -1,6 +1,6 @@
 {meta: title Miss Marcy}
 {meta: artist Johnny Horton}
-{meta: writer Leon Payne}
+{meta: composer Leon Payne}
 
 {start_of_verse: Verse 1}
 [C]Billy boy Billy [Am]boy [F]sit on the [C]porch   

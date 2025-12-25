@@ -1,6 +1,6 @@
 {meta: title Let Me Live In Your World}
 {meta: artist Marty Robbins}
-{meta: writer Karen Russell}
+{meta: composer Karen Russell}
 
 {start_of_verse: Verse 1}
 [G]Let me live in [C]your world for a [G]day

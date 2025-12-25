@@ -1,6 +1,6 @@
 {meta: title Almost Like You Never Went Away}
 {meta: artist Tony Booth}
-{meta: writer Dave Lindsey and Edwin Rowell}
+{meta: composer Dave Lindsey and Edwin Rowell}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I think I hear you all my [C]day

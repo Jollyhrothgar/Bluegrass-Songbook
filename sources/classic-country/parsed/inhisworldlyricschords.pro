@@ -1,6 +1,6 @@
 {meta: title In His World}
 {meta: artist Emmylou Harris}
-{meta: writer Leigh Reynolds and Kostas Lazarides}
+{meta: composer Leigh Reynolds and Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [F]Every [C]night I [G7]dream [C]about [F]him

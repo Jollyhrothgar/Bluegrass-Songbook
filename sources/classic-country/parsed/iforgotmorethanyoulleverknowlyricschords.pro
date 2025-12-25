@@ -1,6 +1,6 @@
 {meta: title I Forgot More Than You'll Ever Know}
 {meta: artist Wanda Jackson}
-{meta: writer Cecil Allen Null}
+{meta: composer Cecil Allen Null}
 
 {start_of_verse: Verse 1}
 [C7]I forgot [F]more than [C]you'll ever [G7]know about [C]him

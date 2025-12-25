@@ -1,6 +1,6 @@
 {meta: title He Broke Your Memory Last Night}
 {meta: artist Reba McEntire}
-{meta: writer Dickey Lee and Bucky Jones}
+{meta: composer Dickey Lee and Bucky Jones}
 
 {start_of_verse: Verse 1}
 [G]Like a rare piece of [B7]crystal like a [C]fine china [Am]cup

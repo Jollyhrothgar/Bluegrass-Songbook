@@ -1,6 +1,6 @@
 {meta: title Behind Every Good Man There's A Woman}
 {meta: artist Vernon Oxford}
-{meta: writer Don Reed and Vernon Oxford}
+{meta: composer Don Reed and Vernon Oxford}
 
 {start_of_verse: Verse 1}
 [C]I’ve got a [F]story to [C]tell 

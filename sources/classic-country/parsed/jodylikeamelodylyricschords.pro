@@ -1,6 +1,6 @@
 {meta: title Jody Like A Melody}
 {meta: artist David Allan Coe}
-{meta: writer David A. Coe and Jimmy Howard}
+{meta: composer David A. Coe and Jimmy Howard}
 
 {start_of_verse: Verse 1}
 [C]Jody like a [G7]melody you [C]play inside my [G7]head

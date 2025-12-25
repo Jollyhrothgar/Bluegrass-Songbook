@@ -1,6 +1,6 @@
 {meta: title It's Gotta Be Magic}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]I'm back on the road [D7]sometimes I don't [G]know

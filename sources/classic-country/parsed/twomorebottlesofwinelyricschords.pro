@@ -1,6 +1,6 @@
 {meta: title Two More Bottles Of Wine}
 {meta: artist Emmylou Harris}
-{meta: writer Delbert McClinton}
+{meta: composer Delbert McClinton}
 
 {start_of_verse: Verse 1}
 [C]We came out west [F]together with a common [C]desire

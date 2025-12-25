@@ -1,6 +1,6 @@
 {meta: title Dream Of Me}
 {meta: artist Vern Gosdin}
-{meta: writer Buddy Cannon, Jimmy Darrell, Raleigh Squires}
+{meta: composer Buddy Cannon, Jimmy Darrell, Raleigh Squires}
 
 {start_of_verse: Verse 1}
 [G]My life on the road girl [C]it’s been hard on me and [G]you

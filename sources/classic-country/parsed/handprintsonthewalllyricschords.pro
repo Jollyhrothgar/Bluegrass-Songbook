@@ -1,6 +1,6 @@
 {meta: title Hand Prints On The Wall}
 {meta: artist Kenny Rogers}
-{meta: writer Nelson Blanchard, Scott Innes, Claude Parish}
+{meta: composer Nelson Blanchard, Scott Innes, Claude Parish}
 
 {start_of_verse: Verse 1}
 [C]The wait turned into hours [F]before you came my [C]way

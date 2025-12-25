@@ -1,6 +1,6 @@
 {meta: title My Heart's Bouquet}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Jimmy Dickens and Gordon Hall}
+{meta: composer Jimmy Dickens and Gordon Hall}
 
 {start_of_verse: Verse 1}
 [G]I was just a very young fellow 

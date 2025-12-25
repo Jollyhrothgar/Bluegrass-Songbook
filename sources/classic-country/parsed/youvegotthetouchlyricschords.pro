@@ -1,6 +1,6 @@
 {meta: title You've Got The Touch}
 {meta: artist Alabama}
-{meta: writer Lisa Palas, Will Robinson, John Jarrard}
+{meta: composer Lisa Palas, Will Robinson, John Jarrard}
 
 {start_of_verse: Verse 1}
 [Am]Lying be[F]side you watching you [C]sleeping

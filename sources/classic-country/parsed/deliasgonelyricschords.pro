@@ -1,6 +1,6 @@
 {meta: title Delia’s Gone}
 {meta: artist Johnny Cash}
-{meta: writer Karl Silbersdorf and Dick Toops}
+{meta: composer Karl Silbersdorf and Dick Toops}
 
 {start_of_verse: Verse 1}
 [G]Delia oh [C]Delia [G]Delia all my life

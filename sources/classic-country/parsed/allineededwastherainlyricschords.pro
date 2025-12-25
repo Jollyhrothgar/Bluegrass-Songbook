@@ -1,6 +1,6 @@
 {meta: title All I Needed Was The Rain}
 {meta: artist Elvis Presley}
-{meta: writer Ben Weisman and Sid Wayne}
+{meta: composer Ben Weisman and Sid Wayne}
 
 {start_of_verse: Verse 1}
 [C]Hello misfortune how's my old friend Mr. [C7]Misery

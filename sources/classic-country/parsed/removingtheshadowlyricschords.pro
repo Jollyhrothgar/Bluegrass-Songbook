@@ -1,6 +1,6 @@
 {meta: title Removing The Shadow}
 {meta: artist Hank Williams Jr.}
-{meta: writer Eddie Pleasant and Hank Williams Jr}
+{meta: composer Eddie Pleasant and Hank Williams Jr}
 
 {start_of_verse: Verse 1}
 [C]I'm slowly re[F]moving the [C]shadow

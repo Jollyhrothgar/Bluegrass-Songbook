@@ -1,6 +1,6 @@
 {meta: title Blues in Advance}
 {meta: artist Hank Locklin}
-{meta: writer Nell Drummond}
+{meta: composer Nell Drummond}
 
 {start_of_verse: Verse 1}
 [C]I get the [G7]blues as we [C]dance

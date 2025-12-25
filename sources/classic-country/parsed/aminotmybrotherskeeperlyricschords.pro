@@ -1,6 +1,6 @@
 {meta: title Am I Not My Brother's Keeper}
 {meta: artist Wanda Jackson}
-{meta: writer Kenny O'Dell and Larry Henley}
+{meta: composer Kenny O'Dell and Larry Henley}
 
 {start_of_verse: Verse 1}
 [G]If he comes to me [F]stumbling [C]from the weight of his [G]load

@@ -1,6 +1,6 @@
 {meta: title Summer Love}
 {meta: artist Roy Orbison}
-{meta: writer Bill Dees}
+{meta: composer Bill Dees}
 
 {start_of_verse: Verse 1}
 [C]Autumn leaves [Am]when they fall [F]whisper to the [G7]wind

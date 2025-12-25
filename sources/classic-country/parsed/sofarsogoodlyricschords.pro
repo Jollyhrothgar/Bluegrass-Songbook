@@ -1,6 +1,6 @@
 {meta: title So Far So Good}
 {meta: artist Don Williams}
-{meta: writer Troy Seals, Eddie Setser, Dobie Gray}
+{meta: composer Troy Seals, Eddie Setser, Dobie Gray}
 
 {start_of_verse: Verse 1}
 [G]I think I'm in a world of [Em]trouble [C]talk about a worried [D7]man

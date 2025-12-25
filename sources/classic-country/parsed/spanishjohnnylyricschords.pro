@@ -1,6 +1,6 @@
 {meta: title Spanish Johnny}
 {meta: artist Emmylou Harris}
-{meta: writer David Bromberg and Paul Siebel}
+{meta: composer David Bromberg and Paul Siebel}
 
 {start_of_verse: Verse 1}
 [C]Those other years the dusty years we drove the big herds [D]through

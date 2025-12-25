@@ -1,6 +1,6 @@
 {meta: title Indelibly Blue}
 {meta: artist Reba McEntire}
-{meta: writer Jim Peterik}
+{meta: composer Jim Peterik}
 
 {start_of_verse: Verse 1}
 [F]Lost in the [C]city [F]deserted and [C]cold 

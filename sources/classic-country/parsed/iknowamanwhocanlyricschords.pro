@@ -1,6 +1,6 @@
 {meta: title I Know A Man Who Can}
 {meta: artist George Jones}
-{meta: writer Jack Campbell and Jimmie Davis}
+{meta: composer Jack Campbell and Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [G7]I can't take a heart that's [C]broken 

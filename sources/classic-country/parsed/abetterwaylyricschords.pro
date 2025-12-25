@@ -1,6 +1,6 @@
 {meta: title A Better Way}
 {meta: artist The Mavericks}
-{meta: writer Raul Malo}
+{meta: composer Raul Malo}
 
 {start_of_verse: Verse 1}
 [G]We spent the night in a [C]hobo town like a [G]pair of run[C]aways

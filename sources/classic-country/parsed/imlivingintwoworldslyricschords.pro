@@ -1,6 +1,6 @@
 {meta: title I'm Living In Two Worlds}
 {meta: artist Loretta Lynn}
-{meta: writer Jan Crutchfield}
+{meta: composer Jan Crutchfield}
 
 {start_of_verse: Verse 1}
 [C]I'm living in [F]two worlds dividing my [C]time

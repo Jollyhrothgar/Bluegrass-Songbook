@@ -1,6 +1,6 @@
 {meta: title You Had A Call}
 {meta: artist Faron Young}
-{meta: writer Danny Overby}
+{meta: composer Danny Overby}
 
 {start_of_verse: Verse 1}
 [G]Did you find a box of [C]your [D7]favorite [G]flowers

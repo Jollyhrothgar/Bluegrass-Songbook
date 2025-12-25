@@ -1,6 +1,6 @@
 {meta: title Crazy Love}
 {meta: artist Doug Stone}
-{meta: writer Van Morrison}
+{meta: composer Van Morrison}
 
 {start_of_verse: Verse 1}
 [C]I can hear her [Em]heart beat from a [F]thousand [C]miles

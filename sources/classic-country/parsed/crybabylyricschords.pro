@@ -1,6 +1,6 @@
 {meta: title Cry Baby}
 {meta: artist Wynn Stewart}
-{meta: writer Bobby George and Vern Stovall}
+{meta: composer Bobby George and Vern Stovall}
 
 {start_of_verse: Verse 1}
 [C]Cry baby [F]cry baby

@@ -1,6 +1,6 @@
 {meta: title Alabama Jubilee}
 {meta: artist Ferlin Husky}
-{meta: writer Jack Yellen and Georg Cobb}
+{meta: composer Jack Yellen and Georg Cobb}
 
 {start_of_verse: Verse 1}
 [G]You oughta [E7]see deacon Jones when he rattles his bones

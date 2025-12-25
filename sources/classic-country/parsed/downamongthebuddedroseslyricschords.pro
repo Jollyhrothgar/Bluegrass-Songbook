@@ -1,6 +1,6 @@
 {meta: title Down Among The Budded Roses}
 {meta: artist Vern Williams}
-{meta: writer Lou Erck and William York}
+{meta: composer Lou Erck and William York}
 
 {start_of_verse: Verse 1}
 [G]Little sweetheart we have [D7]parted from each other we must [G]go

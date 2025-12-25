@@ -1,6 +1,6 @@
 {meta: title Close By}
 {meta: artist Patty Loveless}
-{meta: writer Bill Monroe and Winkle Van}
+{meta: composer Bill Monroe and Winkle Van}
 
 {start_of_verse: Verse 1}
 [G]You've gone so [D7]far away my [G]darling

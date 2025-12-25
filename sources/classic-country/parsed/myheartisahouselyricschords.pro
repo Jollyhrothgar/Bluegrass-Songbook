@@ -1,6 +1,6 @@
 {meta: title My Heart Is A House}
 {meta: artist Charley Pride}
-{meta: writer Ray Winkler, Billy Deaton, John Hathcock}
+{meta: composer Ray Winkler, Billy Deaton, John Hathcock}
 
 {start_of_verse: Verse 1}
 [G]My heart is a house and [C]love lives inside  

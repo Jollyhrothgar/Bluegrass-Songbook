@@ -1,6 +1,6 @@
 {meta: title She'll Keep Bringin' All Her Love to Me}
 {meta: artist Darrell McCall}
-{meta: writer Lou Rochelle}
+{meta: composer Lou Rochelle}
 
 {start_of_verse: Verse 1}
 [G]Hold her the same way you’ve been [C]holding her

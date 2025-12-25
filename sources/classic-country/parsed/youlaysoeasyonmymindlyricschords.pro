@@ -1,6 +1,6 @@
 {meta: title You Lay So Easy On My Mind}
 {meta: artist Conway Twitty}
-{meta: writer Bobby G. Rice, Charles Fields, Donald L. Riis}
+{meta: composer Bobby G. Rice, Charles Fields, Donald L. Riis}
 
 {start_of_verse: Verse 1}
 [F]You lay so easy on my mind oh so [C]easy on my mind

@@ -1,6 +1,6 @@
 {meta: title Gloryland March}
 {meta: artist The Masters Family}
-{meta: writer Johnny Marks and Johnnie Masters}
+{meta: composer Johnny Marks and Johnnie Masters}
 
 {start_of_verse: Verse 1}
 [C]There is an army that is marching onto victory

@@ -1,6 +1,6 @@
 {meta: title I Heard The Jukebox Playing}
 {meta: artist Kitty Wells}
-{meta: writer Linda Baggett, Web Pierce, Kitty Wells}
+{meta: composer Linda Baggett, Web Pierce, Kitty Wells}
 
 {start_of_verse: Verse 1}
 [G]You said that you'd be happy 

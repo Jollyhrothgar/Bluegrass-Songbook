@@ -1,6 +1,6 @@
 {meta: title I'm Going On With Everything Gone}
 {meta: artist Tammy Wynette}
-{meta: writer Agnes Wilson}
+{meta: composer Agnes Wilson}
 
 {start_of_verse: Verse 1}
 [G]The sun comes up to [C]bring another [G]lonely day

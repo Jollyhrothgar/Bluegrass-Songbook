@@ -1,6 +1,6 @@
 {meta: title Tulsa Queen}
 {meta: artist Emmylou Harris}
-{meta: writer Rodney Crowell and Emmylou Harris}
+{meta: composer Rodney Crowell and Emmylou Harris}
 
 {start_of_verse: Verse 1}
 [G]I heard the train in the Tulsa [C]night

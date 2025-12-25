@@ -1,6 +1,6 @@
 {meta: title Lost In The Fifties Tonight}
 {meta: artist Ronnie Milsap}
-{meta: writer Mike Reid, Troy Seals, Fred Parris}
+{meta: composer Mike Reid, Troy Seals, Fred Parris}
 
 {start_of_verse: Verse 1}
 [C]Close your eyes baby [C7] follow my heart

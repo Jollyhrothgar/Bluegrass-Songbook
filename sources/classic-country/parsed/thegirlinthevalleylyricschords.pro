@@ -1,6 +1,6 @@
 {meta: title The Girl In The Valley}
 {meta: artist Doyle Lawson}
-{meta: writer Jamie Dailey}
+{meta: composer Jamie Dailey}
 
 {start_of_verse: Verse 1}
 [G]Just across the mountains in a valley [C]down below

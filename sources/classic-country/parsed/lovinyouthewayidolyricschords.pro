@@ -1,6 +1,6 @@
 {meta: title Lovin' You The Way I Do}
 {meta: artist Hank Locklin}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [G]Everyday darling [C]come what may

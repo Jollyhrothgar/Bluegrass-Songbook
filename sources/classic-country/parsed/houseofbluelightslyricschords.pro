@@ -1,6 +1,6 @@
 {meta: title House of Blue Lights}
 {meta: artist Asleep at the Wheel}
-{meta: writer Don Raye and Freddy Slack}
+{meta: composer Don Raye and Freddy Slack}
 
 {start_of_verse: Verse 1}
 [C]Lace up your boots and we'll truck on down

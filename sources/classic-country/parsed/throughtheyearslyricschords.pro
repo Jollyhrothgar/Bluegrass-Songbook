@@ -1,6 +1,6 @@
 {meta: title Through The Years}
 {meta: artist Kenny Rogers}
-{meta: writer Marty Panzer and Stephen Dorff}
+{meta: composer Marty Panzer and Stephen Dorff}
 
 {start_of_verse: Verse 1}
 [C]I can't remember [Em]when you weren't [Am]there

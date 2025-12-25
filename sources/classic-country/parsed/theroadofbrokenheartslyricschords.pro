@@ -1,6 +1,6 @@
 {meta: title The Road Of Broken Hearts}
 {meta: artist Cowboy Copas}
-{meta: writer Jack Kingston}
+{meta: composer Jack Kingston}
 
 {start_of_verse: Verse 1}
 [C]The rain is slowly [F]falling

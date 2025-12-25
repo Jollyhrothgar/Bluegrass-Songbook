@@ -1,6 +1,6 @@
 {meta: title He Knows All The Ways To Love}
 {meta: artist Tammy Wynette}
-{meta: writer Carmol Taylor}
+{meta: composer Carmol Taylor}
 
 {start_of_verse: Verse 1}
 [G]He gives me love I thought I'd never find

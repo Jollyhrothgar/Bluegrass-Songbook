@@ -1,6 +1,6 @@
 {meta: title I Shall Not Be Moved}
 {meta: artist Johnny Cash}
-{meta: writer Larry Stallings}
+{meta: composer Larry Stallings}
 
 {start_of_verse: Verse 1}
 [G]Glo-ry hal-le-lu-jah  [Am]I shall not be [D7]moved

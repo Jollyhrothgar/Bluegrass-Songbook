@@ -1,6 +1,6 @@
 {meta: title Smokey On Your Front Door}
 {meta: artist Waylon Jennings}
-{meta: writer Troy Seals, Max D. Barnes, Waylon Jennings}
+{meta: composer Troy Seals, Max D. Barnes, Waylon Jennings}
 
 {start_of_verse: Verse 1}
 [C]You got a Smokey on your front door a [G7]Smokey on your back door [C]too

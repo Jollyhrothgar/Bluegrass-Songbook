@@ -1,6 +1,6 @@
 {meta: title Your Love Shines Through}
 {meta: artist Mickey Gilley}
-{meta: writer Wayland D. Holyfield and Gary Tolbert Nicholson}
+{meta: composer Wayland D. Holyfield and Gary Tolbert Nicholson}
 
 {start_of_verse: Verse 1}
 [G]Sometimes it’s more than [C]amazing to me

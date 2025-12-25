@@ -1,6 +1,6 @@
 {meta: title Texas Dance Hall Girl with chords}
 {meta: artist Ernest Tubb}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [C]She's the first one on the dance floor 

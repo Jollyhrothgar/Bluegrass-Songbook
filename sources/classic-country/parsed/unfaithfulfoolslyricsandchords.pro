@@ -1,6 +1,6 @@
 {meta: title Unfaithful Fools}
 {meta: artist Tommy Overstreet}
-{meta: writer Bobby Fisher}
+{meta: composer Bobby Fisher}
 
 {start_of_verse: Verse 1}
 [C]I guess we feel the [G7]same about each [C]other

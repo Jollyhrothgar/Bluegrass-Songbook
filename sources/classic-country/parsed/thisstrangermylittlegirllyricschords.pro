@@ -1,6 +1,6 @@
 {meta: title This Stranger (My Little Girl)}
 {meta: artist Loretta Lynn}
-{meta: writer Ruby VanNoy, Ann Burns, Barbara Fairchild}
+{meta: composer Ruby VanNoy, Ann Burns, Barbara Fairchild}
 
 {start_of_verse: Verse 1}
 [C]Today for her it's [F]only been [G7]thirteen years of [C]livin'

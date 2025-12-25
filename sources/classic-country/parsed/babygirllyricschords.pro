@@ -1,6 +1,6 @@
 {meta: title Baby Girl}
 {meta: artist Ricky Skaggs}
-{meta: writer Carter Stanley}
+{meta: composer Carter Stanley}
 
 {start_of_verse: Verse 1}
 [G]Little [C]girl (little girl) baby [G]girl

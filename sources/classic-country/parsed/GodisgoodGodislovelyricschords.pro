@@ -1,6 +1,6 @@
 {meta: title God Is Good God Is Love}
 {meta: artist Brush Arbor}
-{meta: writer James Rice}
+{meta: composer James Rice}
 
 {start_of_verse: Verse 1}
 [G]God is [C]good [G]God is [C]love

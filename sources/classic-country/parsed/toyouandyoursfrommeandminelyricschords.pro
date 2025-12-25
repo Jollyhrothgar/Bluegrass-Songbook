@@ -1,6 +1,6 @@
 {meta: title To You and Yours from Me and Mine}
 {meta: artist George Hamilton IV}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]Wedding bells are ringing [G7]on two sides of [C]town tonight

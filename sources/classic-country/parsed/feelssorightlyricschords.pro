@@ -1,6 +1,6 @@
 {meta: title Feels So Right}
 {meta: artist Alabama}
-{meta: writer Randy Owen}
+{meta: composer Randy Owen}
 
 {start_of_verse: Verse 1}
 [C]Whisper to me [F]softly breathe [C]words upon my [F]skin

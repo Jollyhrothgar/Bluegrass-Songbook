@@ -1,6 +1,6 @@
 {meta: title Michael}
 {meta: artist Carl Story}
-{meta: writer Merv Griffin}
+{meta: composer Merv Griffin}
 
 {start_of_verse: Verse 1}
 [C]Lord You heard me crying saw me [G7]dying all a[C]lone

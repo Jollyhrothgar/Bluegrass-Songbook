@@ -1,6 +1,6 @@
 {meta: title After Yesterday}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer John Gluck and Diane Lampert}
+{meta: composer John Gluck and Diane Lampert}
 
 {start_of_verse: Verse 1}
 [C]After yesterday you broke this heart of [F]mine

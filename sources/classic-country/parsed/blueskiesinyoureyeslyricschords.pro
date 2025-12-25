@@ -1,6 +1,6 @@
 {meta: title Blue Skies In Your Eyes}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Ruth Blankenship and Ed Butner}
+{meta: composer Ruth Blankenship and Ed Butner}
 
 {start_of_verse: Verse 1}
 [C]I’m longing tonight for those [G7]blues eyes so bright

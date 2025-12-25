@@ -1,6 +1,6 @@
 {meta: title The Lonesome River}
 {meta: artist Ralph Stanley}
-{meta: writer Carter Stanley and Ralph Stanley}
+{meta: composer Carter Stanley and Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [C]I sit here alone on the banks of the river

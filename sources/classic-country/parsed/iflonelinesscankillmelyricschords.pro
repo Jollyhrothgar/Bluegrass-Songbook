@@ -1,6 +1,6 @@
 {meta: title If Loneliness Can Kill Me Lyrics Chords}
 {meta: artist Loretta Lynn}
-{meta: writer Billy Henson}
+{meta: composer Billy Henson}
 
 {start_of_verse: Verse 1}
 [C]I walk the floor [F]here in my lonely [C]room

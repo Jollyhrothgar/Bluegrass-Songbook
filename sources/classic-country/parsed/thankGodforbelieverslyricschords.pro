@@ -1,6 +1,6 @@
 {meta: title Thank God For Believers}
 {meta: artist Mark Chesnutt}
-{meta: writer Roger Springer, Mark Springer, Tim Johnson}
+{meta: composer Roger Springer, Mark Springer, Tim Johnson}
 
 {start_of_verse: Verse 1}
 [C]Last night I came home again [Am]three sheets to the [G7]wind

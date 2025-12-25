@@ -1,6 +1,6 @@
 {meta: title My Wandering Boy}
 {meta: artist Ralph Stanley}
-{meta: writer Lester Flatt and Earl Scruggs}
+{meta: composer Lester Flatt and Earl Scruggs}
 
 {start_of_verse: Verse 1}
 [G]Out in the cold world and [C]far away [G]home

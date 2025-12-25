@@ -1,6 +1,6 @@
 {meta: title I Know What It's Like In Her Arms}
 {meta: artist Gene Watson}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [G]Oh this time I won’t listen 

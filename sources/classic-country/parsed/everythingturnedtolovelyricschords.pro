@@ -1,6 +1,6 @@
 {meta: title Everything Turned To Love}
 {meta: artist Mickey Gilley}
-{meta: writer William T. Allen III and Mickey Gilley}
+{meta: composer William T. Allen III and Mickey Gilley}
 
 {start_of_verse: Verse 1}
 [C]Down down by the [F]river 

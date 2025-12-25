@@ -1,6 +1,6 @@
 {meta: title How I Love Them Old Songs}
 {meta: artist Carl Smith}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [G]Doggone my soul how I love them old [D7]songs

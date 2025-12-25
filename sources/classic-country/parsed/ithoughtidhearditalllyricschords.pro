@@ -1,6 +1,6 @@
 {meta: title I Thought I'd Heard It All}
 {meta: artist Ricky Van Shelton}
-{meta: writer Don Pfrimmer, Philip Douglas, Deryl Dodd}
+{meta: composer Don Pfrimmer, Philip Douglas, Deryl Dodd}
 
 {start_of_verse: Verse 1}
 [G]I heard you cry [C]yourself to sleep 

@@ -1,6 +1,6 @@
 {meta: title Two Candles One Dinner And A Bottle}
 {meta: artist Johnny Paycheck}
-{meta: writer Aubrey Mayhew}
+{meta: composer Aubrey Mayhew}
 
 {start_of_verse: Verse 1}
 [C]Every [Dm]time my wife goes shopping you [F]always keep the [C]kids

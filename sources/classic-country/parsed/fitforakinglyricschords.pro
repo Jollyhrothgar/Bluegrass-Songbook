@@ -1,6 +1,6 @@
 {meta: title Fit For A King}
 {meta: artist Garth Brooks}
-{meta: writer Jim Rushing and Carl Jackson}
+{meta: composer Jim Rushing and Carl Jackson}
 
 {start_of_verse: Verse 1}
 [C]His pulpit's a corner on [G7]Nineteenth and [C]Main

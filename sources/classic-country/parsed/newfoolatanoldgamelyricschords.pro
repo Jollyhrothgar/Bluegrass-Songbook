@@ -1,6 +1,6 @@
 {meta: title New Fool At An Old Game}
 {meta: artist Reba McEntire}
-{meta: writer Steve Bogard, Rick Giles, Sheila Stephen}
+{meta: composer Steve Bogard, Rick Giles, Sheila Stephen}
 
 {start_of_verse: Verse 1}
 [F]You sure know what you're [C]doing [F] holding me [C]this way[F]

@@ -1,6 +1,6 @@
 {meta: title Eye Of The Storm}
 {meta: artist Kris Kristofferson}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [C]Maybe you bought all the lines that she told you

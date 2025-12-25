@@ -1,6 +1,6 @@
 {meta: title Sundown Mary}
 {meta: artist Billy Walker}
-{meta: writer Chris Gantry and Larry Baunach}
+{meta: composer Chris Gantry and Larry Baunach}
 
 {start_of_verse: Verse 1}
 [C]I first met Sundown [G7]Mary  a year [F]ago [C]today

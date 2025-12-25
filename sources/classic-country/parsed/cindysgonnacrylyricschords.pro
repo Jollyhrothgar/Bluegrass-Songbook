@@ -1,6 +1,6 @@
 {meta: title Cindy’s Gonna Cry}
 {meta: artist Johnny Crawford}
-{meta: writer Barry Mann and Cynthia Weil}
+{meta: composer Barry Mann and Cynthia Weil}
 
 {start_of_verse: Verse 1}
 [Am](Cindy's gonna cry [F]Cindy's gonna [G7]cry)

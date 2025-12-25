@@ -1,6 +1,6 @@
 {meta: title Such An Easy Question}
 {meta: artist Elvis Presley}
-{meta: writer Otis Blackwell and Winfield Scott}
+{meta: composer Otis Blackwell and Winfield Scott}
 
 {start_of_verse: Verse 1}
 [C]Do you or [F]don't you love [C]me

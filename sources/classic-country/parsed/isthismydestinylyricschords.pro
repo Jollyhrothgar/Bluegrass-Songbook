@@ -1,6 +1,6 @@
 {meta: title Is This My Destiny}
 {meta: artist Wanda Jackson}
-{meta: writer Helen Carter}
+{meta: composer Helen Carter}
 
 {start_of_verse: Verse 1}
 [C]Cursed with sorrow [G7]pain and woe

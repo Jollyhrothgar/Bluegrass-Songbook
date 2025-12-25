@@ -1,6 +1,6 @@
 {meta: title After You've Gone}
 {meta: artist Anne Murray}
-{meta: writer Henry Creamer and Turner Layton}
+{meta: composer Henry Creamer and Turner Layton}
 
 {start_of_verse: Verse 1}
 [F]After you've gone [A]and left me cryin'

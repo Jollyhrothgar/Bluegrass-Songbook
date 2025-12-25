@@ -1,6 +1,6 @@
 {meta: title Fool Fool Fool Lyrics and Chords}
 {meta: artist Webb Pierce}
-{meta: writer Max Powell and Webb Pierce}
+{meta: composer Max Powell and Webb Pierce}
 
 {start_of_verse: Verse 1}
 [C]F-ool [G7]f-ool [C]f-ool you know that it's wrong 

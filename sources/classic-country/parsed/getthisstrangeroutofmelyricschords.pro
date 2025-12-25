@@ -1,6 +1,6 @@
 {meta: title Get This Stranger Out Of Me}
 {meta: artist Lefty Frizzell}
-{meta: writer Arthur Leo Owens}
+{meta: composer Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [G]Something is trying to push you  [D7]out of my [G]heart

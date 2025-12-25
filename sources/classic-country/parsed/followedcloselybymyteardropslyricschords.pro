@@ -1,6 +1,6 @@
 {meta: title Followed Closely By My Teardrops}
 {meta: artist Hank Locklin}
-{meta: writer Fred Tobias and Paul Evans}
+{meta: composer Fred Tobias and Paul Evans}
 
 {start_of_verse: Verse 1}
 [G]First came the [C]preacher  [D7]then came the [G]guest

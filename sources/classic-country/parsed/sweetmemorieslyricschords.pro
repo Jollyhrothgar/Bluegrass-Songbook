@@ -1,6 +1,6 @@
 {meta: title Sweet Memories}
 {meta: artist Hank Locklin}
-{meta: writer Mickey Newbury}
+{meta: composer Mickey Newbury}
 
 {start_of_verse: Verse 1}
 [G]My world is like a river 

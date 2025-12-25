@@ -1,6 +1,6 @@
 {meta: title Drop Me Gently}
 {meta: artist Hank Thompson}
-{meta: writer Hank Thompson and Dorothy Thompson}
+{meta: composer Hank Thompson and Dorothy Thompson}
 
 {start_of_verse: Verse 1}
 [C]Don’t say we’re [F]through all at once [G7]do it [C]gradually

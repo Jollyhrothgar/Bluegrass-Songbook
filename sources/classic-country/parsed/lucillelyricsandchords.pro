@@ -1,6 +1,6 @@
 {meta: title Lucille}
 {meta: artist Everly Brothers}
-{meta: writer Albert Collins and Richard Penniman}
+{meta: composer Albert Collins and Richard Penniman}
 
 {start_of_verse: Verse 1}
 [G]Lucille you don't do your daddy's will

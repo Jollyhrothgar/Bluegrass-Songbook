@@ -1,6 +1,6 @@
 {meta: title I Only See You}
 {meta: artist Ray Tombs}
-{meta: writer Ginny Peters and Clifford G. Snyder}
+{meta: composer Ginny Peters and Clifford G. Snyder}
 
 {start_of_verse: Verse 1}
 [G]In a room full of people I only see [D7]you

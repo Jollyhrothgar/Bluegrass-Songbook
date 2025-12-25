@@ -1,6 +1,6 @@
 {meta: title I Wish I Could Write You A Song}
 {meta: artist John Anderson}
-{meta: writer John Anderson and Lionel Delmore}
+{meta: composer John Anderson and Lionel Delmore}
 
 {start_of_verse: Verse 1}
 [C]I wish I could sit down and write you a song

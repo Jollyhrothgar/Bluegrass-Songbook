@@ -1,6 +1,6 @@
 {meta: title Way To Free Myself}
 {meta: artist Ray Price}
-{meta: writer Red Hayes and Charlie Walker}
+{meta: composer Red Hayes and Charlie Walker}
 
 {start_of_verse: Verse 1}
 [C]What strange power do you have that rules this [F]heart of mine

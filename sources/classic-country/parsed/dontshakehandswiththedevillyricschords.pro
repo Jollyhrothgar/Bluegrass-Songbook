@@ -1,6 +1,6 @@
 {meta: title Don't Shake Hands With The Devil}
 {meta: artist Cowboy Copas}
-{meta: writer Dottie Swan and Lloyd Copas}
+{meta: composer Dottie Swan and Lloyd Copas}
 
 {start_of_verse: Verse 1}
 [G]Don't shake hands with the devil don't shake [C]hands with the [G]devil

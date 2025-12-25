@@ -1,6 +1,6 @@
 {meta: title I Don't Mind The Thorns (If You're The Rose)}
 {meta: artist Lee Greenwood}
-{meta: writer Jan Buckingham and Linda Young}
+{meta: composer Jan Buckingham and Linda Young}
 
 {start_of_verse: Verse 1}
 [G]Come let me hold you for a [C]while

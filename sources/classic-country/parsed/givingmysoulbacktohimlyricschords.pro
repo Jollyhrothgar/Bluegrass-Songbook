@@ -1,6 +1,6 @@
 {meta: title Giving My Soul Back To Him}
 {meta: artist Russell Moore and IIIrd Tyme Out}
-{meta: writer Billy Smith and Hazel Smith}
+{meta: composer Billy Smith and Hazel Smith}
 
 {start_of_verse: Verse 1}
 [C]There's love there's love in His sweet word

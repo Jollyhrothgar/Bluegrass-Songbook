@@ -1,6 +1,6 @@
 {meta: title Kids Say The Darnedest Things}
 {meta: artist Tammy Wynette}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]Kids say the darnedest [Dm]things

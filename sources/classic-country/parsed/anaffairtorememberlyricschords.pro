@@ -1,6 +1,6 @@
 {meta: title An Affair To Remember}
 {meta: artist Ray Price}
-{meta: writer Harold Adamson, Leo McCarey, Harry Warren}
+{meta: composer Harold Adamson, Leo McCarey, Harry Warren}
 
 {start_of_verse: Verse 1}
 [C]Our love [D#m]affair is a [G7]wondrous [A#7]thing

@@ -1,6 +1,6 @@
 {meta: title Weeds Outlived The Roses}
 {meta: artist Darrell McCall}
-{meta: writer Earl Thomas Conley}
+{meta: composer Earl Thomas Conley}
 
 {start_of_verse: Verse 1}
 [C]We moved on the second floor of a [F]grocery [C]store [F]garage

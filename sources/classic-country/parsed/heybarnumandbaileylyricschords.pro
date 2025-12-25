@@ -1,6 +1,6 @@
 {meta: title Hey Barnum And Bailey}
 {meta: artist Gene Watson}
-{meta: writer Jerry Abbott, Charles Stewart, Kenneth Hagler}
+{meta: composer Jerry Abbott, Charles Stewart, Kenneth Hagler}
 
 {start_of_verse: Verse 1}
 [G7]I been [C]livin' on beer and peanuts since my [F]baby kicked me out

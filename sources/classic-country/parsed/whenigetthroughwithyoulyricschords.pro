@@ -1,6 +1,6 @@
 {meta: title When I Get Through With You}
 {meta: artist Patsy Cline}
-{meta: writer Harland Howard}
+{meta: composer Harland Howard}
 
 {start_of_verse: Verse 1}
 [D7]You won't ever [G7]look at Sue [C]again

@@ -1,6 +1,6 @@
 {meta: title Baby What About You}
 {meta: artist Crystal Gayle}
-{meta: writer Wendy Waldman and Josh Leo}
+{meta: composer Wendy Waldman and Josh Leo}
 
 {start_of_verse: Verse 1}
 [F]Everybody thinks I'm [C]crazy it's going a[F]round

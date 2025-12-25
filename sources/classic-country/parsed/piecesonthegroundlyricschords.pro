@@ -1,6 +1,6 @@
 {meta: title Pieces On The Ground}
 {meta: artist Patty Loveless}
-{meta: writer John Bunzow}
+{meta: composer John Bunzow}
 
 {start_of_verse: Verse 1}
 [C]Mend this [Em]broken [Am]body in [F]pieces on the [C]ground[G7]

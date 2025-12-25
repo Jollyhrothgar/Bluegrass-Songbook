@@ -1,6 +1,6 @@
 {meta: title Do You Think Of Me}
 {meta: artist Anne Murray}
-{meta: writer Sandy Ross}
+{meta: composer Sandy Ross}
 
 {start_of_verse: Verse 1}
 [G]When you close your eyes to kiss her do you think of me

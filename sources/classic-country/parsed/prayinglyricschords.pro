@@ -1,6 +1,6 @@
 {meta: title Praying}
 {meta: artist Vern Gosdin}
-{meta: writer Hazel Houser}
+{meta: composer Hazel Houser}
 
 {start_of_verse: Verse 1}
 [C]They were [G7]pray---ing

@@ -1,6 +1,6 @@
 {meta: title Foolish Pride}
 {meta: artist Ricky Van Shelton}
-{meta: writer Ernie Rowell and Mel Tillis}
+{meta: composer Ernie Rowell and Mel Tillis}
 
 {start_of_verse: Verse 1}
 [C]You always try to stop me from telling her I'm [F]sorry

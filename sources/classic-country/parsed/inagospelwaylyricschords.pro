@@ -1,6 +1,6 @@
 {meta: title In A Gospel Way}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery and George Jones}
+{meta: composer Earl Montgomery and George Jones}
 
 {start_of_verse: Verse 1}
 [C]We all got together on a sawdust floor

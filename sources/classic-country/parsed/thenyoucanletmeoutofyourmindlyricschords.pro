@@ -1,6 +1,6 @@
 {meta: title Then You Can Let Me (Out Of Your Mind)}
 {meta: artist Moe Bandy}
-{meta: writer Steve Collom}
+{meta: composer Steve Collom}
 
 {start_of_verse: Verse 1}
 [C]Every time you touch me [F]you're touching someone else

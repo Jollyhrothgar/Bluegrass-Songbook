@@ -1,6 +1,6 @@
 {meta: title She'll Be Hanging Around Somewhere}
 {meta: artist Mel Tillis}
-{meta: writer Damon Black}
+{meta: composer Damon Black}
 
 {start_of_verse: Verse 1}
 [G]Pour me hard [G7]liquor over [C]s-oft [G]music

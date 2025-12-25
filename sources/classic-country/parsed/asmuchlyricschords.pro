@@ -1,6 +1,6 @@
 {meta: title As Much}
 {meta: artist Don Gibson}
-{meta: writer Mel Tillis}
+{meta: composer Mel Tillis}
 
 {start_of_verse: Verse 1}
 [G7]As much as the stars need the [Am]heaven

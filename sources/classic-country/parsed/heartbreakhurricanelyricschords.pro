@@ -1,6 +1,6 @@
 {meta: title Heartbreak Hurricane}
 {meta: artist Ricky Skaggs}
-{meta: writer Jim Rushing and Larry Cordle}
+{meta: composer Jim Rushing and Larry Cordle}
 
 {start_of_verse: Verse 1}
 [G]A mighty clap of thunder

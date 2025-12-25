@@ -1,6 +1,6 @@
 {meta: title Devil In Disguise}
 {meta: artist Emmylou Harris}
-{meta: writer Gram Parsons}
+{meta: composer Gram Parsons}
 
 {start_of_verse: Verse 1}
 [C]She's a [A]devil in [C]disguise you can see [A]it in her [F]eyes

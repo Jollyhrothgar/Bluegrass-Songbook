@@ -1,6 +1,6 @@
 {meta: title We'll Meet Again}
 {meta: artist David Houston}
-{meta: writer Ross Parker and Hugh Charles}
+{meta: composer Ross Parker and Hugh Charles}
 
 {start_of_verse: Verse 1}
 [G]We'll meet [B7]again don't know [E7]where

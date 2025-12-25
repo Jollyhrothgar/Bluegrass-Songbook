@@ -1,6 +1,6 @@
 {meta: title She Burnt The Little Roadside Tavern Down}
 {meta: artist Johnny Russell}
-{meta: writer Bill Howard}
+{meta: composer Bill Howard}
 
 {start_of_verse: Verse 1}
 [G7]Oh  she [C]burnt the little roadside tavern [G7]down

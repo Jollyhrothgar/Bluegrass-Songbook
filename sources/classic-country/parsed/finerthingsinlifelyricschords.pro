@@ -1,6 +1,6 @@
 {meta: title Finer Things In Life}
 {meta: artist Red Steagall}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [C]She was born and raised in [G7]Natchez 

@@ -1,6 +1,6 @@
 {meta: title We Can Make It}
 {meta: artist George Jones}
-{meta: writer Billy Sherrill and Glenn Sutton}
+{meta: composer Billy Sherrill and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]We can [F]make it 

@@ -1,6 +1,6 @@
 {meta: title I Love You Mostly}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and}
+{meta: composer Lefty Frizzell and}
 
 {start_of_verse: Verse 1}
 [C]I [C7]love you [F]mostly 

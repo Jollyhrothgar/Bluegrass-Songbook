@@ -1,6 +1,6 @@
 {meta: title My Mind Is On You}
 {meta: artist Reba McEntire}
-{meta: writer Don Schlitz and Dave Loggins}
+{meta: composer Don Schlitz and Dave Loggins}
 
 {start_of_verse: Verse 1}
 [F]We had a [C]fight a lovers' [F]quarrel [C]

@@ -1,6 +1,6 @@
 {meta: title I Hope My Lord Will Let Me In}
 {meta: artist Ralph Stanley}
-{meta: writer Randall Hylton}
+{meta: composer Randall Hylton}
 
 {start_of_verse: Verse 1}
 [C]Oh they tell me there's a land called [F]Heaven

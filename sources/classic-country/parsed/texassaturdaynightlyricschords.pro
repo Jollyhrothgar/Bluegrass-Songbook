@@ -1,6 +1,6 @@
 {meta: title Texas Saturday Night}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby and Warren Robb}
+{meta: composer Dave Kirby and Warren Robb}
 
 {start_of_verse: Verse 1}
 [C]Tennessee whiskey California [Dm]wine

@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Fall Out of Love With You}
 {meta: artist Webb Pierce}
-{meta: writer Martha E. Taylor and Randy Hughes}
+{meta: composer Martha E. Taylor and Randy Hughes}
 
 {start_of_verse: Verse 1}
 [C]When I fell in love with [G7]you well that's what I wanted to [C]do

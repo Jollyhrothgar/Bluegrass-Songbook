@@ -1,6 +1,6 @@
 {meta: title When A Fool Learns}
 {meta: artist Gene Watson}
-{meta: writer Steve Clark and Rick Peoples}
+{meta: composer Steve Clark and Rick Peoples}
 
 {start_of_verse: Verse 1}
 [C]Wish I was in your shoes

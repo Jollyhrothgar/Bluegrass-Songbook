@@ -1,6 +1,6 @@
 {meta: title You Must Have Walked Across My Mind Again}
 {meta: artist George Jones}
-{meta: writer W. Kemp and W. Robb}
+{meta: composer W. Kemp and W. Robb}
 
 {start_of_verse: Verse 1}
 [C]I woke-up down town in [F]jail again this [C]morning

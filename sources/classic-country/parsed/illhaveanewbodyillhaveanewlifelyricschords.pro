@@ -1,6 +1,6 @@
 {meta: title I'll Have a New Body I'll Have a New Life}
 {meta: artist Hank Williams}
-{meta: writer Luther G. Presley}
+{meta: composer Luther G. Presley}
 
 {start_of_verse: Verse 1}
 [G]On the resurrection morning when all dead in Christ shall rise

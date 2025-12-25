@@ -1,6 +1,6 @@
 {meta: title I Laugh When I Think How I Cried Over You}
 {meta: artist Bob Wills}
-{meta: writer Maxine Fowler and James Robert Wills}
+{meta: composer Maxine Fowler and James Robert Wills}
 
 {start_of_verse: Verse 1}
 [G]I laugh when I think how I cried over [D7]you

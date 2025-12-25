@@ -1,6 +1,6 @@
 {meta: title I Don't Need You}
 {meta: artist Kenny Rogers}
-{meta: writer Rick Christian}
+{meta: composer Rick Christian}
 
 {start_of_verse: Verse 1}
 [C]I don't need you I don't need [Em]friendship

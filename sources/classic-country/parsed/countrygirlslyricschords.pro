@@ -1,6 +1,6 @@
 {meta: title Country Girls}
 {meta: artist John Schneider}
-{meta: writer Troy Seals and Eddie Setser}
+{meta: composer Troy Seals and Eddie Setser}
 
 {start_of_verse: Verse 1}
 [C]I've been to [Am]California

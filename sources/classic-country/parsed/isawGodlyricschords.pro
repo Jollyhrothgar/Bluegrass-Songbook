@@ -1,6 +1,6 @@
 {meta: title I Saw God}
 {meta: artist Ferlin Husky}
-{meta: writer Bobbie Carroll and Wilson Faye}
+{meta: composer Bobbie Carroll and Wilson Faye}
 
 {start_of_verse: Verse 1}
 [G]I saw [Em]God on the [C]moun[D7]tain 

@@ -1,6 +1,6 @@
 {meta: title Kimberley Jim}
 {meta: artist Jim Reeves}
-{meta: writer Gilbert Gibson}
+{meta: composer Gilbert Gibson}
 
 {start_of_verse: Verse 1}
 [C]I was always a [F]rollin' stone I would tread any [C]road

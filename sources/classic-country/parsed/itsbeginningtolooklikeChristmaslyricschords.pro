@@ -1,5 +1,5 @@
 {meta: artist Johnny Mathis}
-{meta: writer Meredith Wilson}
+{meta: composer Meredith Wilson}
 
 {start_of_verse: Verse 1}
 [G]It's beginning to look a [C]lot like [G]Christmas everywhere you [C]go

@@ -1,6 +1,6 @@
 {meta: title Keep A Knockin'}
 {meta: artist The Everly Brothers}
-{meta: writer Little Richard Penniman}
+{meta: composer Little Richard Penniman}
 
 {start_of_verse: Verse 1}
 [C]Keep a-knockin' but you can't come in

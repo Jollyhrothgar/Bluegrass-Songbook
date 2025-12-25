@@ -1,6 +1,6 @@
 {meta: title Cherokee Fiddle}
 {meta: artist Mickey Gilley}
-{meta: writer Michael Martin Murphey}
+{meta: composer Michael Martin Murphey}
 
 {start_of_verse: Verse 1}
 [C]When the train pulled into the [F]station

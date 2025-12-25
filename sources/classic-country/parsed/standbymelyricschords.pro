@@ -1,6 +1,6 @@
 {meta: title Stand By Me}
 {meta: artist Mickey Gilley}
-{meta: writer Ben E. King,}
+{meta: composer Ben E. King,}
 
 {start_of_verse: Verse 1}
 [G7]When the night [C]has come  and the land is [Am]dark 

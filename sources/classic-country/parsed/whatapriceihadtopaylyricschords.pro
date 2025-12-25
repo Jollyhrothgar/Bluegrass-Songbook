@@ -1,6 +1,6 @@
 {meta: title What A Price I Had To Pay}
 {meta: artist Fats Domino}
-{meta: writer Antonio Domino, Murphy Maddux, Jack Jessup}
+{meta: composer Antonio Domino, Murphy Maddux, Jack Jessup}
 
 {start_of_verse: Verse 1}
 [G]Oh what a price I had to [C]pay  [D7]for loving [G]you

@@ -1,6 +1,6 @@
 {meta: title Don't Use The Word Lightly}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
-{meta: writer Dave Coleman}
+{meta: composer Dave Coleman}
 
 {start_of_verse: Verse 1}
 [F]Love [C]love that [G7]little word called [C]love[G7]

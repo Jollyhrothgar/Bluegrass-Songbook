@@ -1,6 +1,6 @@
 {meta: title If You Do Dear}
 {meta: artist Carl Smith}
-{meta: writer B. Miller}
+{meta: composer B. Miller}
 
 {start_of_verse: Verse 1}
 [C]Do you miss me wanna [G7]kiss me 

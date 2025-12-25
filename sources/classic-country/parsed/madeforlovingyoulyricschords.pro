@@ -1,6 +1,6 @@
 {meta: title Made For Loving You}
 {meta: artist Doug Stone}
-{meta: writer Claude "Curly" Putman Jr., Curly Putman}
+{meta: composer Claude "Curly" Putman Jr., Curly Putman}
 
 {start_of_verse: Verse 1}
 [G]Every[C]body sings a [D7]different kind of [G]song

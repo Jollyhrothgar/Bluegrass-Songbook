@@ -1,6 +1,6 @@
 {meta: title South Moon Under}
 {meta: artist John Anderson}
-{meta: writer John Anderson and George Anderson}
+{meta: composer John Anderson and George Anderson}
 
 {start_of_verse: Verse 1}
 [C]I've got a feeling coming [F]over me [G7]being here close to [C]you

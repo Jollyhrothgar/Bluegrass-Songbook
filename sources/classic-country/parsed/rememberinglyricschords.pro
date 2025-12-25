@@ -1,6 +1,6 @@
 {meta: title Remembering}
 {meta: artist Charlie Walker}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [C]Re[F]membering rememberin’ alone and so [C]blue

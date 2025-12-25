@@ -1,6 +1,6 @@
 {meta: title Talk About Jesus}
 {meta: artist Ray Price}
-{meta: writer Arthur Smith}
+{meta: composer Arthur Smith}
 
 {start_of_verse: Verse 1}
 [C]Whenever I'm lost [D7]I tumble and toss

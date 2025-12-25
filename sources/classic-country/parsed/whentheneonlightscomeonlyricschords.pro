@@ -1,6 +1,6 @@
 {meta: title When the Neon Lights Come On}
 {meta: artist Curtis Potter}
-{meta: writer Buddy Mize}
+{meta: composer Buddy Mize}
 
 {start_of_verse: Verse 1}
 [C]I barely make it through the day from the [Dm]swinging all night long

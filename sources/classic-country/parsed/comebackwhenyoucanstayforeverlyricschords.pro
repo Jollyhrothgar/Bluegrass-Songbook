@@ -1,6 +1,6 @@
 {meta: title Come Back (When You Can Stay Forever)}
 {meta: artist Crystal Gayle}
-{meta: writer Chris Waters, Tom Shapiro, Bucky Jones}
+{meta: composer Chris Waters, Tom Shapiro, Bucky Jones}
 
 {start_of_verse: Verse 1}
 [C]I'm an open door [Am]you keep walking [F]through

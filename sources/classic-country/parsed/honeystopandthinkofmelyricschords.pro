@@ -1,6 +1,6 @@
 {meta: title Honey Stop and Think Of Me}
 {meta: artist Faron Young}
-{meta: writer Bob Belyeu and Charles Wright}
+{meta: composer Bob Belyeu and Charles Wright}
 
 {start_of_verse: Verse 1}
 [C]When that ol' moon is a-shinin' bright

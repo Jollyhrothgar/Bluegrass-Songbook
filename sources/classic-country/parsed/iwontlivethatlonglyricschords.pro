@@ -1,6 +1,6 @@
 {meta: title I Won't Live That Long}
 {meta: artist Wynn Stewart}
-{meta: writer Tommy Collins and Wynn Stewart}
+{meta: composer Tommy Collins and Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [G]I can't show all the love I feel within my [D7]heart

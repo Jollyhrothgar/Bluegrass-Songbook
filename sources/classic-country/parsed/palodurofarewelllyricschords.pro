@@ -1,6 +1,6 @@
 {meta: title Palo Duro Farewell}
 {meta: artist Red Steagall}
-{meta: writer David Andy Wilkinson}
+{meta: composer David Andy Wilkinson}
 
 {start_of_verse: Verse 1}
 [C]I sold out and it’s time for [F]leavin’

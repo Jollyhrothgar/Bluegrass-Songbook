@@ -1,6 +1,6 @@
 {meta: title Loving Arms}
 {meta: artist Johnny Duncan and Janie Fricke}
-{meta: writer Tom Jans}
+{meta: composer Tom Jans}
 
 {start_of_verse: Verse 1}
 [G]If you could see me now 

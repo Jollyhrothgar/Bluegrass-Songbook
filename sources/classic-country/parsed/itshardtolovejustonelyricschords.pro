@@ -1,6 +1,6 @@
 {meta: title It's Hard To Love Just One}
 {meta: artist Jim Reeves}
-{meta: writer Fabor Robinson and Slim Willet}
+{meta: composer Fabor Robinson and Slim Willet}
 
 {start_of_verse: Verse 1}
 [C]It's hard to love just [G7]one 

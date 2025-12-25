@@ -1,6 +1,6 @@
 {meta: title It Should've Been Me}
 {meta: artist Mel Street}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]You passed me [F]on the street

@@ -1,6 +1,6 @@
 {meta: title Ocean Of Diamonds}
 {meta: artist Jimmy Martin}
-{meta: writer Clifford Carnahan}
+{meta: composer Clifford Carnahan}
 
 {start_of_verse: Verse 1}
 [C]Some people drink champagne out under the [F]stars

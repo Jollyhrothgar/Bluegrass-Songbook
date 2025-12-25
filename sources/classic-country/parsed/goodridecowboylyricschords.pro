@@ -1,6 +1,6 @@
 {meta: title Good Ride Cowboy}
 {meta: artist Garth Brooks}
-{meta: writer Richie Brown, Jerrod Niemann,}
+{meta: composer Richie Brown, Jerrod Niemann,}
 
 {start_of_verse: Verse 1}
 [C]From the hills to Kaycee Wyoming 

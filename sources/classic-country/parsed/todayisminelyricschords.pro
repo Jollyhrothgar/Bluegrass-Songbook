@@ -1,6 +1,6 @@
 {meta: title Today Is Mine}
 {meta: artist Slim Whitman}
-{meta: writer Blanche Kerr Brock and Virgil P. Brock}
+{meta: composer Blanche Kerr Brock and Virgil P. Brock}
 
 {start_of_verse: Verse 1}
 [C]Today is mine tomorrow may not [G7]come

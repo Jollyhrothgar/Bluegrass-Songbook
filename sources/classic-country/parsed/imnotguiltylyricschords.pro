@@ -1,6 +1,6 @@
 {meta: title I'm Not Guilty}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Abe Mulkey}
+{meta: composer Lefty Frizzell and Abe Mulkey}
 
 {start_of_verse: Verse 1}
 [C]You know how to hurt me

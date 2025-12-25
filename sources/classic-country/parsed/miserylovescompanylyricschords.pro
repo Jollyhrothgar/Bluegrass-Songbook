@@ -1,6 +1,6 @@
 {meta: title Misery Loves Company}
 {meta: artist Porter Wagoner}
-{meta: writer Jerry Reed Hubbard}
+{meta: composer Jerry Reed Hubbard}
 
 {start_of_verse: Verse 1}
 [C]Break out the bottle bring on the [F]crowd

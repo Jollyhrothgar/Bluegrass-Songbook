@@ -1,6 +1,6 @@
 {meta: title Beautiful Moon Of Kentucky}
 {meta: artist Jim and Jesse}
-{meta: writer Jim McReynolds}
+{meta: composer Jim McReynolds}
 
 {start_of_verse: Verse 1}
 [G]There’s a beautiful moon shining [C]down on Kentucky

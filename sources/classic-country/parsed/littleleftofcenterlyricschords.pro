@@ -1,6 +1,6 @@
 {meta: title Little Left Of Center}
 {meta: artist Randy Travis}
-{meta: writer Billy Henderson and Steven Jones}
+{meta: composer Billy Henderson and Steven Jones}
 
 {start_of_verse: Verse 1}
 [C]I walk in the [Am]rain and I [F]whistle a [G7]tune

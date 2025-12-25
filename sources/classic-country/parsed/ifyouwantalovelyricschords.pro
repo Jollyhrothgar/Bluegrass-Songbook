@@ -1,6 +1,6 @@
 {meta: title If You Want A Love}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens, Don Rich, Bonnie Owens}
+{meta: composer Buck Owens, Don Rich, Bonnie Owens}
 
 {start_of_verse: Verse 1}
 [G]If you want a love that never will die

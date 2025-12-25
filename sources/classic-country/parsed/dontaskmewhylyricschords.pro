@@ -1,6 +1,6 @@
 {meta: title Don't Ask Me Why}
 {meta: artist Wanda Jackson}
-{meta: writer Ben Weisman and Fred Wise}
+{meta: composer Ben Weisman and Fred Wise}
 
 {start_of_verse: Verse 1}
 [C]I'll go on [G7]loving you don't ask me [C]why 

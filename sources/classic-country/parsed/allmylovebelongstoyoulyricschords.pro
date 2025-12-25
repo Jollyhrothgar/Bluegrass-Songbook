@@ -1,6 +1,6 @@
 {meta: title All My Love Belongs To You}
 {meta: artist Jerry Wallace}
-{meta: writer Henry Glover and Sally Nix}
+{meta: composer Henry Glover and Sally Nix}
 
 {start_of_verse: Verse 1}
 [G]You [F]know I [Dm]love you so (I love you [G]so)

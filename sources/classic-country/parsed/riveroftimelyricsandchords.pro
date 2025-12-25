@@ -1,6 +1,6 @@
 {meta: title River Of Time}
 {meta: artist John Conlee}
-{meta: writer Jim Rushing and Larry Cordle}
+{meta: composer Jim Rushing and Larry Cordle}
 
 {start_of_verse: Verse 1}
 [G]Early one morning a new day was [C]dawning

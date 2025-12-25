@@ -1,6 +1,6 @@
 {meta: title Song And Dance Man}
 {meta: artist Johnny Paycheck}
-{meta: writer Jerry Foster and Bill Rice}
+{meta: composer Jerry Foster and Bill Rice}
 
 {start_of_verse: Verse 1}
 [G]Well I'm a song and dance man [C]come on gather round me and [G]clap your hands

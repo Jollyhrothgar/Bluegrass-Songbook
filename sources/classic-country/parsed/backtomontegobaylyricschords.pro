@@ -1,6 +1,6 @@
 {meta: title Back To Montego Bay}
 {meta: artist Marty Robbins}
-{meta: writer Joyce Winters}
+{meta: composer Joyce Winters}
 
 {start_of_verse: Verse 1}
 [C]Over blue mountain [F]I must go 

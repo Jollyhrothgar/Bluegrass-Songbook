@@ -1,6 +1,6 @@
 {meta: title It's Different Now}
 {meta: artist The Oak Ridge Boys}
-{meta: writer David Beatty}
+{meta: composer David Beatty}
 
 {start_of_verse: Verse 1}
 [C]Once I was lost in sin I [F]had no peace within

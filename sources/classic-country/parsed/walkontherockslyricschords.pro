@@ -1,6 +1,6 @@
 {meta: title Walk On The Rocks}
 {meta: artist Alan Jackson}
-{meta: writer John Swaim}
+{meta: composer John Swaim}
 
 {start_of_verse: Verse 1}
 [F]After [C]seventeen years behind [F]bars

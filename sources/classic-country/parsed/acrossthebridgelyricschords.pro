@@ -1,6 +1,6 @@
 {meta: title Across the Bridge}
 {meta: artist Jim Reeves}
-{meta: writer Walter Scott}
+{meta: composer Walter Scott}
 
 {start_of_verse: Verse 1}
 [C]I have lived a life of sin

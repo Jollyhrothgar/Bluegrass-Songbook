@@ -1,6 +1,6 @@
 {meta: title Nobody Wants to Be Alone}
 {meta: artist Crystal Gayle}
-{meta: writer Michael Masser and Rhonda Kye Fleming}
+{meta: composer Michael Masser and Rhonda Kye Fleming}
 
 {start_of_verse: Verse 1}
 [C]I've spent my life trying to [B7]tell everyone

@@ -1,6 +1,6 @@
 {meta: title Let Me Love You One More Time}
 {meta: artist Charlie Sizemore}
-{meta: writer Ralph Stanley}
+{meta: composer Ralph Stanley}
 
 {start_of_verse: Verse 1}
 [G]Lay your head on my [C]shoulder

@@ -1,6 +1,6 @@
 {meta: title Good Woman's Love}
 {meta: artist Hank Locklin}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]I was a rover on land and on [Am]sea

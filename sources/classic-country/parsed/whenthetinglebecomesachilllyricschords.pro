@@ -1,6 +1,6 @@
 {meta: title When The Tingle Becomes A Chill}
 {meta: artist Loretta Lynn}
-{meta: writer Lola Jean Dillon}
+{meta: composer Lola Jean Dillon}
 
 {start_of_verse: Verse 1}
 [C]Sometimes at night while you're fast [D7]asleep

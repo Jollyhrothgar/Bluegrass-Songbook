@@ -1,6 +1,6 @@
 {meta: title The Easy Way}
 {meta: artist Eddy Arnold}
-{meta: writer Glenn Sutton and Merle Kilgore}
+{meta: composer Glenn Sutton and Merle Kilgore}
 
 {start_of_verse: Verse 1}
 [G]I've always been a lover the [C]easy going kind

@@ -1,6 +1,6 @@
 {meta: title Walk On Boy}
 {meta: artist Jimmy Dean}
-{meta: writer Wayne P. Walker and Mel Tillis}
+{meta: composer Wayne P. Walker and Mel Tillis}
 
 {start_of_verse: Verse 1}
 NC

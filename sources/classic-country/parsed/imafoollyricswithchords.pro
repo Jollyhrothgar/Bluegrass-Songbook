@@ -1,6 +1,6 @@
 {meta: title I'm A Fool}
 {meta: artist Billy Walker}
-{meta: writer Tommy Smith}
+{meta: composer Tommy Smith}
 
 {start_of_verse: Verse 1}
 [C]Fool I'm a [F]fool 

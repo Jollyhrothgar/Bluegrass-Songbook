@@ -1,6 +1,6 @@
 {meta: title We're Supposed To Do That Now And Then}
 {meta: artist George Strait}
-{meta: writer Dean Dillon, David Anthony, Joe Royer}
+{meta: composer Dean Dillon, David Anthony, Joe Royer}
 
 {start_of_verse: Verse 1}
 [C]We had a silly quarrel over [G7]nothin'

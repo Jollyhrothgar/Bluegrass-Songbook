@@ -1,6 +1,6 @@
 {meta: title Gonna Get Back Home Somehow}
 {meta: artist Elvis Presley}
-{meta: writer Doc Pomus and Mort Shuman}
+{meta: composer Doc Pomus and Mort Shuman}
 
 {start_of_verse: Verse 1}
 [C]Hear that old train whistle howling in the night

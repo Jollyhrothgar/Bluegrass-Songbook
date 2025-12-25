@@ -1,6 +1,6 @@
 {meta: title You Set My Dreams To Music}
 {meta: artist Anne Murray}
-{meta: writer Molly Ann Leikin and Steve Dorff}
+{meta: composer Molly Ann Leikin and Steve Dorff}
 
 {start_of_verse: Verse 1}
 [G]Oh I'm lovin' what I [C]see each time you smile at [G]me

@@ -1,6 +1,6 @@
 {meta: title You Are My One Desire}
 {meta: artist Buddy Holly}
-{meta: writer Don Guess}
+{meta: composer Don Guess}
 
 {start_of_verse: Verse 1}
 [C]You are my [Am]one de[E7]sire

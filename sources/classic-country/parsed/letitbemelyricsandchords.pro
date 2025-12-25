@@ -1,6 +1,6 @@
 {meta: title Let It Be Me}
 {meta: artist The Everly Brothers}
-{meta: writer Pierre Delance and Gilbert Becaud}
+{meta: composer Pierre Delance and Gilbert Becaud}
 
 {start_of_verse: Verse 1}
 [C]I bless the day I found [G7]you  

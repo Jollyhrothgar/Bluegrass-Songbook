@@ -1,6 +1,6 @@
 {meta: title Separate Ways}
 {meta: artist Elvis Presley}
-{meta: writer Bobby West and Richard Mainegra}
+{meta: composer Bobby West and Richard Mainegra}
 
 {start_of_verse: Verse 1}
 [C]I see a change has come into our lives

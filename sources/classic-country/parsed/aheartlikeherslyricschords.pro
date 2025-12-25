@@ -1,6 +1,6 @@
 {meta: title A Heart Like Hers}
 {meta: artist George Strait}
-{meta: writer Mark Nesler and Tony Martin}
+{meta: composer Mark Nesler and Tony Martin}
 
 {start_of_verse: Verse 1}
 [C]Every time that [Am]someone walks [Em]in  [G7]

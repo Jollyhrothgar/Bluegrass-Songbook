@@ -1,6 +1,6 @@
 {meta: title I'll Never Love Another}
 {meta: artist Earl Scruggs and Lester Flatt}
-{meta: writer Lester Flatt}
+{meta: composer Lester Flatt}
 
 {start_of_verse: Verse 1}
 [G]I'll never love another [C]now that you've gone [G]away

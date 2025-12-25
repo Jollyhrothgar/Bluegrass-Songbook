@@ -1,6 +1,6 @@
 {meta: title She Told Me So}
 {meta: artist George Strait}
-{meta: writer Bobby Braddock}
+{meta: composer Bobby Braddock}
 
 {start_of_verse: Verse 1}
 [C]I'm her world and [F]she revolves [C]around me

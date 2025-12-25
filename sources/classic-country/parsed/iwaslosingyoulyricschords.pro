@@ -1,6 +1,6 @@
 {meta: title I Was Losing You}
 {meta: artist Ricky Van Shelton}
-{meta: writer Bruce Burch}
+{meta: composer Bruce Burch}
 
 {start_of_verse: Verse 1}
 [C]I should have noticed this when

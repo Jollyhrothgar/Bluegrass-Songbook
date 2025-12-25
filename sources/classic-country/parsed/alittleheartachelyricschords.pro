@@ -1,6 +1,6 @@
 {meta: title A Little Heartache}
 {meta: artist Eddy Arnold}
-{meta: writer Wayne P. Walker}
+{meta: composer Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [C]You slipped a little heartache in on me

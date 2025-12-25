@@ -1,6 +1,6 @@
 {meta: title Happy Happy Birthday Baby}
 {meta: artist Ronnie Milsap}
-{meta: writer Gilbert J. Lopez and Margo Sylvia}
+{meta: composer Gilbert J. Lopez and Margo Sylvia}
 
 {start_of_verse: Verse 1}
 [C]Happy Happy Birthday Baby although you're with somebody [D7]new

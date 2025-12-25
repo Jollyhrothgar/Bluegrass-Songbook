@@ -1,6 +1,6 @@
 {meta: title Back To Texas}
 {meta: artist Tracy Byrd}
-{meta: writer Thomas Damphier and Stacy Beyer}
+{meta: composer Thomas Damphier and Stacy Beyer}
 
 {start_of_verse: Verse 1}
 [G]I left Houston round [D7]two a.m. 

@@ -1,6 +1,6 @@
 {meta: title Alpha And Omega}
 {meta: artist Jim Ed Brown}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]Into my [G7]arms walked [C]an angel 

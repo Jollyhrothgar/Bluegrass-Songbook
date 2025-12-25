@@ -1,6 +1,6 @@
 {meta: title Too Much Love Is Spoiling You}
 {meta: artist Ray Price}
-{meta: writer Fred Carter}
+{meta: composer Fred Carter}
 
 {start_of_verse: Verse 1}
 [C]I gave you everything that you asked [F]for

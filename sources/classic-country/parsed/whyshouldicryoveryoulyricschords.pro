@@ -1,6 +1,6 @@
 {meta: title Why Should I Cry Over You}
 {meta: artist Eddy Arnold}
-{meta: writer Zeke Clements}
+{meta: composer Zeke Clements}
 
 {start_of_verse: Verse 1}
 [C]Why should I cry over you [D7]dear

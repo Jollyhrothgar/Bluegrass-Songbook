@@ -1,6 +1,6 @@
 {meta: title Half Way Up}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [G]I've seen it going around when you get bad news

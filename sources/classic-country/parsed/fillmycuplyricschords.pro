@@ -1,6 +1,6 @@
 {meta: title Fill My Cup}
 {meta: artist Wanda Jackson}
-{meta: writer Richard Blanchard}
+{meta: composer Richard Blanchard}
 
 {start_of_verse: Verse 1}
 [C]Like the woman at the well I was [G7]seeking

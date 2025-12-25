@@ -1,6 +1,6 @@
 {meta: title Blackboard of My Heart}
 {meta: artist Hank Thompson}
-{meta: writer Lyle Gaston and Hank Thompson}
+{meta: composer Lyle Gaston and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [G]When I was young and I went to school they taught me how to [D7]write

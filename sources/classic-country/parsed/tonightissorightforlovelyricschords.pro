@@ -1,6 +1,6 @@
 {meta: title Tonight Is So Right For Love}
 {meta: artist Elvis Presley}
-{meta: writer Sid Wayne and Abner Silver}
+{meta: composer Sid Wayne and Abner Silver}
 
 {start_of_verse: Verse 1}
 [C]Hold me tight the [G7]moon's so bright 

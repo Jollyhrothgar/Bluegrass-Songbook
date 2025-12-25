@@ -1,6 +1,6 @@
 {meta: title Christmas Clock}
 {meta: artist Del Reeves}
-{meta: writer Clarence Selman and Dean Manuel}
+{meta: composer Clarence Selman and Dean Manuel}
 
 {start_of_verse: Verse 1}
 [C]Tick tock [Am]Christmas [C]clock

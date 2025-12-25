@@ -1,6 +1,6 @@
 {meta: title Stop Sneakin' Around}
 {meta: artist Ricky Nelson}
-{meta: writer Baker Knight}
+{meta: composer Baker Knight}
 
 {start_of_verse: Verse 1}
 [G]Well I hear that you've been [C]sneakin' around on [G]me

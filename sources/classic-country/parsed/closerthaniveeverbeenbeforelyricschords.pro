@@ -1,6 +1,6 @@
 {meta: title Closer Than I've Ever Been Before}
 {meta: artist Johnny Paycheck}
-{meta: writer Robert Duncan and Porter Jordan}
+{meta: composer Robert Duncan and Porter Jordan}
 
 {start_of_verse: Verse 1}
 [C]I can't explain this sen[F]sation  [D7]cause this [F]feelin's all brand [C]new

@@ -1,6 +1,6 @@
 {meta: title Family Bible Lyrics and Chords}
 {meta: artist Ernest Tubb}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]There's a family [C]Bible on the [G]table 

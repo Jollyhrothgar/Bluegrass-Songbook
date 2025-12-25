@@ -1,6 +1,6 @@
 {meta: title A Fire I Can't Put Out}
 {meta: artist George Strait}
-{meta: writer Darrel Staedtler}
+{meta: composer Darrel Staedtler}
 
 {start_of_verse: Verse 1}
 [C]I'm finding out how hot an [F]old flame can burn

@@ -1,6 +1,6 @@
 {meta: title On A Snowy Christmas Night}
 {meta: artist Elvis Presley}
-{meta: writer Stanley Gelber}
+{meta: composer Stanley Gelber}
 
 {start_of_verse: Verse 1}
 [G7]Midnights [C]prayers [C7]so softly [F]whispered in [G7]

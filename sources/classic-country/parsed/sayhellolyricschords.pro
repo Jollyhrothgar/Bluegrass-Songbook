@@ -1,6 +1,6 @@
 {meta: title Say Hello}
 {meta: artist Vince Gill}
-{meta: writer Pete Wasner and Vince Gill}
+{meta: composer Pete Wasner and Vince Gill}
 
 {start_of_verse: Verse 1}
 [G]I walk down these lonely [C]streets and try to [D7]find you

@@ -1,6 +1,6 @@
 {meta: title It Sure Seemed Right}
 {meta: artist Dottie West}
-{meta: writer Johnny Russell and Michael Russell}
+{meta: composer Johnny Russell and Michael Russell}
 
 {start_of_verse: Verse 1}
 [C]We woke up this [G7]morning in [C]each other's [C7]arms

@@ -1,6 +1,6 @@
 {meta: title I Miss Who I Was With You}
 {meta: artist Patty Loveless}
-{meta: writer Jim Lauderdale and John Leventhal}
+{meta: composer Jim Lauderdale and John Leventhal}
 
 {start_of_verse: Verse 1}
 [G]They say I seem different now 

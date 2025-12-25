@@ -1,6 +1,6 @@
 {meta: title The Waitress At Main Street Cafe}
 {meta: artist Bobby Bare}
-{meta: writer Tom T. Hall}
+{meta: composer Tom T. Hall}
 
 {start_of_verse: Verse 1}
 [C]I know they all [G7]know that I [C]love her 

@@ -1,6 +1,6 @@
 {meta: title If You're Goin' Girl}
 {meta: artist Don Gibson}
-{meta: writer Bobby Bond}
+{meta: composer Bobby Bond}
 
 {start_of_verse: Verse 1}
 [C]If you're goin' girl  in the [F]summertime

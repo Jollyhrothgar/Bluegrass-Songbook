@@ -1,6 +1,6 @@
 {meta: title Big City}
 {meta: artist Wynn Stewart}
-{meta: writer C. Shamley}
+{meta: composer C. Shamley}
 
 {start_of_verse: Verse 1}
 [D7]Big city you mean more to her than [G]me

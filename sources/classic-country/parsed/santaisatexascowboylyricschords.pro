@@ -1,6 +1,6 @@
 {meta: title Santa Is A Texas Cowboy}
 {meta: artist Red Sovine}
-{meta: writer Roy Hall}
+{meta: composer Roy Hall}
 
 {start_of_verse: Verse 1}
 [G7]Did you [C]know that Santa Clause is a Texas [G7]cowboy

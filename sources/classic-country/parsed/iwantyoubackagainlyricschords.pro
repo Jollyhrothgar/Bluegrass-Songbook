@@ -1,6 +1,6 @@
 {meta: title I Want You Back Again}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]Well I don't know how it happened

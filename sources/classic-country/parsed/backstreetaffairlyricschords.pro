@@ -1,6 +1,6 @@
 {meta: title Back Street Affair}
 {meta: artist Webb Pierce}
-{meta: writer Billy Wallace and Jimmy Rule}
+{meta: composer Billy Wallace and Jimmy Rule}
 
 {start_of_verse: Verse 1}
 [G]You didn't know I wasn't free when you [C]fell in love with [G]me

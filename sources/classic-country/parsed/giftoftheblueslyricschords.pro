@@ -1,6 +1,6 @@
 {meta: title Gift Of The Blues}
 {meta: artist Loretta Lynn}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [C]I hope you had [Em]a very very [A7][F]merry

@@ -1,6 +1,6 @@
 {meta: title One Broken Heart For Sale}
 {meta: artist Elvis Presley}
-{meta: writer Otis Blackwell and Winfield Scott}
+{meta: composer Otis Blackwell and Winfield Scott}
 
 {start_of_verse: Verse 1}
 [C]Who wants to buy a [Am]heart

@@ -1,6 +1,6 @@
 {meta: title Big Fool Of The Year}
 {meta: artist Hank Williams Jr.}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [G]All the big fools in town [C]got to[G]gether 

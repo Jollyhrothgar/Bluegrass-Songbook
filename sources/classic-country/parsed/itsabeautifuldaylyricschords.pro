@@ -1,6 +1,6 @@
 {meta: title It's A Beautiful Day}
 {meta: artist Wynn Stewart}
-{meta: writer Tracy Pandervis}
+{meta: composer Tracy Pandervis}
 
 {start_of_verse: Verse 1}
 [C]It's a beautiful day even though [C7]it's [F]raining

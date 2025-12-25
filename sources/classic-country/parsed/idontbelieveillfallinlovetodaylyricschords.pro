@@ -1,6 +1,6 @@
 {meta: title I Don't Believe I'll Fall in Love Today}
 {meta: artist Buck Owens}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]I don't believe I'll fall in love [C]today

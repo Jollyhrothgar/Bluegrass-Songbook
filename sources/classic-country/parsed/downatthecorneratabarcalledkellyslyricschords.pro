@@ -1,6 +1,6 @@
 {meta: title Down At The Corner At A Bar Called Kelly's}
 {meta: artist Johnny Paycheck}
-{meta: writer Aubrey Mayhew, Mickey McGivern and Johnny Paycheck}
+{meta: composer Aubrey Mayhew, Mickey McGivern and Johnny Paycheck}
 
 {start_of_verse: Verse 1}
 [C]I used to work all week in a factory [F]nine to [C]four

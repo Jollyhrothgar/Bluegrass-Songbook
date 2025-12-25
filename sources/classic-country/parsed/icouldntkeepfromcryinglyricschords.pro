@@ -1,6 +1,6 @@
 {meta: title I Couldn't Keep From Crying}
 {meta: artist Marty Robbins}
-{meta: writer Roy Turk and Fred Ahlert}
+{meta: composer Roy Turk and Fred Ahlert}
 
 {start_of_verse: Verse 1}
 [C]I saw you walking by his side

@@ -1,6 +1,6 @@
 {meta: title Stuck Right In The Middle Of Your Love}
 {meta: artist Charly McClain}
-{meta: writer Bob Morrison and Johnny McRae}
+{meta: composer Bob Morrison and Johnny McRae}
 
 {start_of_verse: Verse 1}
 [C]Saw the fire flashin' [Am]in your eyes

@@ -1,6 +1,6 @@
 {meta: title Midnight Love}
 {meta: artist Tammy Wynette}
-{meta: writer Buck Moore}
+{meta: composer Buck Moore}
 
 {start_of_verse: Verse 1}
 [G]He calls about 5:30 and [C]tells me [D7]he'll be [G]late

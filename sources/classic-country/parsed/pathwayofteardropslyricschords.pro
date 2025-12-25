@@ -1,6 +1,6 @@
 {meta: title Pathway Of Teardrops}
 {meta: artist Rhonda Vincent}
-{meta: writer Wayne P. Walker and Webb Pierce, June Hazlewood}
+{meta: composer Wayne P. Walker and Webb Pierce, June Hazlewood}
 
 {start_of_verse: Verse 1}
 [C]The pathway of [E7]teardrops will [F]show you the [D7]way

@@ -1,6 +1,6 @@
 {meta: title Be Grateful}
 {meta: artist Charley Pride}
-{meta: writer Don Hosea}
+{meta: composer Don Hosea}
 
 {start_of_verse: Verse 1}
 [C]Blind man can't see [F]flowers growing in the [C]garden

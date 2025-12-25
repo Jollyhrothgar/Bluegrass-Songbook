@@ -1,6 +1,6 @@
 {meta: title Happy Journey}
 {meta: artist Hank Locklin}
-{meta: writer Fred Jay, Nicola Wilke, Charles Nowa}
+{meta: composer Fred Jay, Nicola Wilke, Charles Nowa}
 
 {start_of_verse: Verse 1}
 [C]Happy journey and auf [G7]wiederseh'n

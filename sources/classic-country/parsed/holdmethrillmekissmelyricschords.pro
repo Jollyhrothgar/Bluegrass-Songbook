@@ -1,6 +1,6 @@
 {meta: title Hold Me Thrill Me Kiss Me}
 {meta: artist Jim Ed Brown}
-{meta: writer Harry Noble}
+{meta: composer Harry Noble}
 
 {start_of_verse: Verse 1}
 [G]Hold me hold me [C]never let me [D7]go

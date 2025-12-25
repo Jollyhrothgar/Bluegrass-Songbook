@@ -1,6 +1,6 @@
 {meta: title Keeper Of The Stars}
 {meta: artist Tracy Byrd}
-{meta: writer Danny Mayo, Karen Staley, Dickey Lee}
+{meta: composer Danny Mayo, Karen Staley, Dickey Lee}
 
 {start_of_verse: Verse 1}
 [C]It was no [G7]accident  [Am]me finding [F]you

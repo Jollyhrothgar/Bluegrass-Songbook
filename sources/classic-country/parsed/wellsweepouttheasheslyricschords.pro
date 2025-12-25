@@ -1,6 +1,6 @@
 {meta: title We'll Sweep Out The Ashes}
 {meta: artist Emmylou Harris}
-{meta: writer Joyce Allsup}
+{meta: composer Joyce Allsup}
 
 {start_of_verse: Verse 1}
 [C]We know it's wrong  to let this fire burn be[F]tween us

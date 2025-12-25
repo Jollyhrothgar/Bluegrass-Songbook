@@ -1,6 +1,6 @@
 {meta: title I'm Getting Gray From Being Blue}
 {meta: artist Sonny James}
-{meta: writer David Wilkins}
+{meta: composer David Wilkins}
 
 {start_of_verse: Verse 1}
 [D7]Ever since you went [G7]away it seems I [C]age a year each [Am]day

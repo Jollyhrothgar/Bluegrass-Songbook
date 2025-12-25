@@ -1,6 +1,6 @@
 {meta: title Leavin's Been Comin' (For A Long Long Time)}
 {meta: artist Gene Watson}
-{meta: writer Dave Kirby, Joe Allen, Sonny Throckmorton}
+{meta: composer Dave Kirby, Joe Allen, Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]It's never [G7]over till [F]it's really [C]over

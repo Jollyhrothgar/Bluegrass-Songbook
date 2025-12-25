@@ -1,6 +1,6 @@
 {meta: title Happyville}
 {meta: artist Mel Tillis}
-{meta: writer Joyce McCord}
+{meta: composer Joyce McCord}
 
 {start_of_verse: Verse 1}
 [C]I caught a glimpse of heaven the [G7]day that I met you

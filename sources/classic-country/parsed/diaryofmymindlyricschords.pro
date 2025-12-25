@@ -1,6 +1,6 @@
 {meta: title Diary Of My Mind}
 {meta: artist George Jones}
-{meta: writer John Starks and Sadie Starks}
+{meta: composer John Starks and Sadie Starks}
 
 {start_of_verse: Verse 1}
 [G]I can bring you [C]back anytime I [G]want to

@@ -1,6 +1,6 @@
 {meta: title Take Me Down}
 {meta: artist Alabama}
-{meta: writer James P. Pennington and Mark Eugene Gray}
+{meta: composer James P. Pennington and Mark Eugene Gray}
 
 {start_of_verse: Verse 1}
 [C]Fly away with me tonight  take me on a one-way flight

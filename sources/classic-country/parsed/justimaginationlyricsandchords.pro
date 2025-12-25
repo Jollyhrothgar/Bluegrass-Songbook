@@ -1,6 +1,6 @@
 {meta: title Just Imagination}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Linda Baggett}
+{meta: composer Webb Pierce and Linda Baggett}
 
 {start_of_verse: Verse 1}
 [C]I guess you just imagine that you love me

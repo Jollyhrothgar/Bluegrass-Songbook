@@ -1,6 +1,6 @@
 {meta: title An Empty Mansion}
 {meta: artist Wilburn Brothers}
-{meta: writer C.A. Luttrell and Mrs. J.B. Karnes}
+{meta: composer C.A. Luttrell and Mrs. J.B. Karnes}
 
 {start_of_verse: Verse 1}
 [C]Here I labor and toil as I [F]look for a [C]home

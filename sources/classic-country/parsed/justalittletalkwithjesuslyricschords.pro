@@ -1,6 +1,6 @@
 {meta: title Just a Little Talk With Jesus}
 {meta: artist Statler Brothers}
-{meta: writer Cleavant Derricks}
+{meta: composer Cleavant Derricks}
 
 {start_of_verse: Verse 1}
 [G]I once was lost in sin but [C]Jesus took me [G]in

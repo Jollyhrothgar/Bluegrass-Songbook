@@ -1,6 +1,6 @@
 {meta: title Little Things}
 {meta: artist Willie Nelson}
-{meta: writer Willie and Shirley Nelson}
+{meta: composer Willie and Shirley Nelson}
 
 {start_of_verse: Verse 1}
 [G]I hope I won't dis[E7]turb you with this [Am]call 

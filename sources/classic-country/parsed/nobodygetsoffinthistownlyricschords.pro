@@ -1,6 +1,6 @@
 {meta: title Nobody Gets Off In This Town}
 {meta: artist Garth Brooks}
-{meta: writer Dewayne Blackwell and Larry Bastian}
+{meta: composer Dewayne Blackwell and Larry Bastian}
 
 {start_of_verse: Verse 1}
 [C]Nobody gets off in this town

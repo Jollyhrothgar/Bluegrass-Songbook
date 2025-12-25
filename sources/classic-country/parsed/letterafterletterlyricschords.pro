@@ -1,6 +1,6 @@
 {meta: title Letter After Letter}
 {meta: artist Mel Tillis}
-{meta: writer Glen Campbell and Jerry Goldis}
+{meta: composer Glen Campbell and Jerry Goldis}
 
 {start_of_verse: Verse 1}
 [G]Words put down on paper just don't seem to [D7]say

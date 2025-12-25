@@ -1,6 +1,6 @@
 {meta: title All My Roads Lead Back To You}
 {meta: artist Ronnie Milsap}
-{meta: writer Donald Tolle}
+{meta: composer Donald Tolle}
 
 {start_of_verse: Verse 1}
 [G]I walked down some dusty [C]highways  I've [G]loved more than just a [D7]few

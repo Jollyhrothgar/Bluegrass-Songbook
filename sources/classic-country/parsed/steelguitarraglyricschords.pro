@@ -1,6 +1,6 @@
 {meta: title Steel Guitar Rag}
 {meta: artist Merle Travis}
-{meta: writer Cliffie Stone, Leon McAuliffe, Merle Travis}
+{meta: composer Cliffie Stone, Leon McAuliffe, Merle Travis}
 
 {start_of_verse: Verse 1}
 [G]Been runnin' around seen many a town

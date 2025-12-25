@@ -1,6 +1,6 @@
 {meta: title Fool}
 {meta: artist Roger Miller}
-{meta: writer Lee Hazlewood and Naomi Ford}
+{meta: composer Lee Hazlewood and Naomi Ford}
 
 {start_of_verse: Verse 1}
 [C]Gather round me buddies

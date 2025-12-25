@@ -1,6 +1,6 @@
 {meta: title Day After Forever}
 {meta: artist George Jones}
-{meta: writer Max D. Barnes}
+{meta: composer Max D. Barnes}
 
 {start_of_verse: Verse 1}
 [C]If you think you can depend on me you’re right you [F]can

@@ -1,6 +1,6 @@
 {meta: title The Warm Red Wine}
 {meta: artist George Jones}
-{meta: writer Cindy Walker [3/4 time]}
+{meta: composer Cindy Walker [3/4 time]}
 
 {start_of_verse: Verse 1}
 [C]Put a nickel in the jukebox and [F]let it [C]play 

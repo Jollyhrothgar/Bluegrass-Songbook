@@ -1,6 +1,6 @@
 {meta: title Every Heart Should Have One}
 {meta: artist Charley Pride}
-{meta: writer Bill Shore and Byron Gallimore}
+{meta: composer Bill Shore and Byron Gallimore}
 
 {start_of_verse: Verse 1}
 [C]The night is filled with lonely souls

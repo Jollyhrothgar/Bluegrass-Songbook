@@ -1,6 +1,6 @@
 {meta: title I'd Be The First To Fall In Love Again}
 {meta: artist Johnny Rodriguez}
-{meta: writer Jim Hurt and Bill Boling}
+{meta: composer Jim Hurt and Bill Boling}
 
 {start_of_verse: Verse 1}
 [C]Love you used to [E7]burn like [Fm]fire

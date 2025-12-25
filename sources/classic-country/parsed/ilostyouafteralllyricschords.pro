@@ -1,6 +1,6 @@
 {meta: title I Lost You After All}
 {meta: artist Jean Shepard}
-{meta: writer Ira Louvin and Helen Carter}
+{meta: composer Ira Louvin and Helen Carter}
 
 {start_of_verse: Verse 1}
 [G]I should have known you'd never change that you were having [C]fun

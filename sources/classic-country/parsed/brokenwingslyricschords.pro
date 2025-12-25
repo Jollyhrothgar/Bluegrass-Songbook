@@ -1,6 +1,6 @@
 {meta: title Broken Wings}
 {meta: artist Sonny James}
-{meta: writer Bernard Crum and John Jerome}
+{meta: composer Bernard Crum and John Jerome}
 
 {start_of_verse: Verse 1}
 [C](With broken wings) with broken wings

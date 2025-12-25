@@ -1,6 +1,6 @@
 {meta: title Cheated Out Of Love}
 {meta: artist Kitty Wells}
-{meta: writer Johnnie Masters}
+{meta: composer Johnnie Masters}
 
 {start_of_verse: Verse 1}
 [G]Cheated out of living cheated out of [C]love

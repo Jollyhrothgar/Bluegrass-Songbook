@@ -1,6 +1,6 @@
 {meta: title All Wrapped Up in Christmas}
 {meta: artist Tracy Lawrence}
-{meta: writer Flip Anderson and Kenny Beard}
+{meta: composer Flip Anderson and Kenny Beard}
 
 {start_of_verse: Verse 1}
 [G7]Her mother called and wondered [C]where we were

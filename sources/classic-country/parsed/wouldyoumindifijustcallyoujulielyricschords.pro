@@ -1,6 +1,6 @@
 {meta: title Would You Mind If I Just Call You Julie}
 {meta: artist Moe Bandy}
-{meta: writer Shirl Milete and Warren Robb}
+{meta: composer Shirl Milete and Warren Robb}
 
 {start_of_verse: Verse 1}
 [C]You sure are a lonely lookin' [F]lady

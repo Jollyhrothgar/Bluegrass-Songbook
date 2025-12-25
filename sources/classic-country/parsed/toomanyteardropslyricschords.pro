@@ -1,6 +1,6 @@
 {meta: title Too Many Teardrops}
 {meta: artist Charlie Rich}
-{meta: writer Freddie Hart}
+{meta: composer Freddie Hart}
 
 {start_of_verse: Verse 1}
 [C]The closest friend I ever had I [G7]lost today

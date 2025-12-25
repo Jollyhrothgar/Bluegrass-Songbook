@@ -1,6 +1,6 @@
 {meta: title Billy Billy Bayou}
 {meta: artist Jim Reeves}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]Back about eighteen hundred and some 

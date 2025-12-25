@@ -1,6 +1,6 @@
 {meta: title When It's Roundup Time In Heaven}
 {meta: artist Eddy Arnold}
-{meta: writer Jimmie Davis}
+{meta: composer Jimmie Davis}
 
 {start_of_verse: Verse 1}
 [G]Oh they tell me of a place and they [C]tell me of a day

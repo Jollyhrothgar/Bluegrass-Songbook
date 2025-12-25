@@ -1,6 +1,6 @@
 {meta: title No Wedding Bells For Joe}
 {meta: artist Wanda Jackson}
-{meta: writer Marijohn Wilkin and James Coleman}
+{meta: composer Marijohn Wilkin and James Coleman}
 
 {start_of_verse: Verse 1}
 [C]Next Tuesday was to be the seasons [F]big event by far

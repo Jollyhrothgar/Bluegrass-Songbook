@@ -1,6 +1,6 @@
 {meta: title We're All In Your Corner}
 {meta: artist The Highwaymen}
-{meta: writer Bobby Gene Emmons and Troy Seals}
+{meta: composer Bobby Gene Emmons and Troy Seals}
 
 {start_of_verse: Verse 1}
 [G]There's a [C]young man in [G]town

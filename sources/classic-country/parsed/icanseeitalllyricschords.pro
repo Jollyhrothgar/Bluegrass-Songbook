@@ -1,6 +1,6 @@
 {meta: title I Can See It All}
 {meta: artist Bobby Helms}
-{meta: writer Bobby Helms and Doris Helms}
+{meta: composer Bobby Helms and Doris Helms}
 
 {start_of_verse: Verse 1}
 [C]A year ago you left me 

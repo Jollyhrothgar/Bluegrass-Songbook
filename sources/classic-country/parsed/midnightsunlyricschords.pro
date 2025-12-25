@@ -1,6 +1,6 @@
 {meta: title Midnight Sun}
 {meta: artist Garth Brooks}
-{meta: writer Garth Brooks, Richie Brown, Jerrod Niemann}
+{meta: composer Garth Brooks, Richie Brown, Jerrod Niemann}
 
 {start_of_verse: Verse 1}
 [G]Ain't no hay left on the ground

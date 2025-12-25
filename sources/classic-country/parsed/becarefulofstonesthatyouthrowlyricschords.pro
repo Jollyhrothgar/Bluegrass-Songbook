@@ -1,6 +1,6 @@
 {meta: title Be Careful Of Stones That You Throw}
 {meta: artist Hank Williams}
-{meta: writer Bonnie Dodd}
+{meta: composer Bonnie Dodd}
 
 {start_of_verse: Verse 1}
 [F]A tongue can accuse and carry bad [C]news

@@ -1,6 +1,6 @@
 {meta: title Chattin' With A Chick In Chattanooga}
 {meta: artist Hank Snow}
-{meta: writer Hank Snow, Edna Farnworth, Neil Campbell}
+{meta: composer Hank Snow, Edna Farnworth, Neil Campbell}
 
 {start_of_verse: Verse 1}
 [C]Chattin' with a chick in Chattanooga

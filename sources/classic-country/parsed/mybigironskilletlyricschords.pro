@@ -1,6 +1,6 @@
 {meta: title My Big Iron Skillet}
 {meta: artist Wanda Jackson}
-{meta: writer Bryan Creswell and Wilda Creswell}
+{meta: composer Bryan Creswell and Wilda Creswell}
 
 {start_of_verse: Verse 1}
 [G]You’re out doing wrong again it's [C]plain for all to [Am]see

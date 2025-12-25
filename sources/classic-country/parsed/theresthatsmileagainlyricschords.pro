@@ -1,6 +1,6 @@
 {meta: title There's That Smile Again}
 {meta: artist Jim Reeves}
-{meta: writer Jim Reeves and Otto Davis}
+{meta: composer Jim Reeves and Otto Davis}
 
 {start_of_verse: Verse 1}
 [C]There's that smile again the one I always [F]see

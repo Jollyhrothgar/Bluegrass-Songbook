@@ -1,6 +1,6 @@
 {meta: title Couldn't Do Nothin' Right}
 {meta: artist David Allan Coe}
-{meta: writer Karen Brooks and Gary Nunn}
+{meta: composer Karen Brooks and Gary Nunn}
 
 {start_of_verse: Verse 1}
 [C]The lamp is broken on the [G7]mantle

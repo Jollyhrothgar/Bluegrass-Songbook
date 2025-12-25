@@ -1,6 +1,6 @@
 {meta: title Don't You Believe Him}
 {meta: artist Reba McEntire}
-{meta: writer Nat Stuckey}
+{meta: composer Nat Stuckey}
 
 {start_of_verse: Verse 1}
 [G]He can give you a reason to live if he [D7]wants to

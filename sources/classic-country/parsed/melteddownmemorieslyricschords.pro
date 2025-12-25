@@ -1,6 +1,6 @@
 {meta: title Melted Down Memories}
 {meta: artist Leona Williams}
-{meta: writer A.L. Owens and Buck Moore}
+{meta: composer A.L. Owens and Buck Moore}
 
 {start_of_verse: Verse 1}
 [G]I went through all my jewelry [C]took out all the golden [G]rings [C]   [G]

@@ -1,6 +1,6 @@
 {meta: title Loving You Loving Me}
 {meta: artist Connie Smith}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]I'm loving you babe loving [G7]me

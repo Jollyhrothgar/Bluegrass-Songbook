@@ -1,6 +1,6 @@
 {meta: title Little Baby}
 {meta: artist Buddy Holly}
-{meta: writer Buddy Holly, C.W. Kendall, Norman Petty}
+{meta: composer Buddy Holly, C.W. Kendall, Norman Petty}
 
 {start_of_verse: Verse 1}
 [C]Little baby baby [F]me

@@ -1,6 +1,6 @@
 {meta: title Just The Two Of Us}
 {meta: artist Porter Wagoner}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [C]No we can't control the evil that [G7]surround us

@@ -1,6 +1,6 @@
 {meta: title Withered Roses}
 {meta: artist George Morgan}
-{meta: writer Paul Koy}
+{meta: composer Paul Koy}
 
 {start_of_verse: Verse 1}
 [G]I found some withered [D7]roses 

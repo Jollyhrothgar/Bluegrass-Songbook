@@ -1,6 +1,6 @@
 {meta: title A Thousand Wonders}
 {meta: artist Wynn Stewart}
-{meta: writer Dale Noe and Wynn Stewart}
+{meta: composer Dale Noe and Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [G]You don't hate me you still love [D7]me

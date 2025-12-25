@@ -1,6 +1,6 @@
 {meta: title We Bury The Hatchet}
 {meta: artist Garth Brooks}
-{meta: writer Wade Kimes and Garth Brooks}
+{meta: composer Wade Kimes and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [D7]Hey all the [G]neighbor’s lights came on last [C]night

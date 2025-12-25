@@ -1,6 +1,6 @@
 {meta: title Carolina Morning}
 {meta: artist The Paul Roberts Band}
-{meta: writer Don Jackson}
+{meta: composer Don Jackson}
 
 {start_of_verse: Verse 1}
 [C]It’s a Carolina [Am]Morning

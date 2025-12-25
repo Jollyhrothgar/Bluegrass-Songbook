@@ -1,6 +1,6 @@
 {meta: title Restless}
 {meta: artist Bill Anderson}
-{meta: writer Bill Anderson and Skeeter Davis}
+{meta: composer Bill Anderson and Skeeter Davis}
 
 {start_of_verse: Verse 1}
 [C](Restless [Am]restless)

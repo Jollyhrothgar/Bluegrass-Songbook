@@ -1,6 +1,6 @@
 {meta: title Milwaukee Here I Come}
 {meta: artist George Jones}
-{meta: writer Lee Fykes}
+{meta: composer Lee Fykes}
 
 {start_of_verse: Verse 1}
 [C]Well I'm gonna get on that old turpike and [F]I'm gonna [C]ride

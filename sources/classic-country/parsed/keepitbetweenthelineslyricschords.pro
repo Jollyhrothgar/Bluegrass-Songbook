@@ -1,6 +1,6 @@
 {meta: title Keep It Between The Lines}
 {meta: artist Ricky Van Shelton}
-{meta: writer Russell Smith and Kathy Louvin}
+{meta: composer Russell Smith and Kathy Louvin}
 
 {start_of_verse: Verse 1}
 [C]He was sittin' beside me in the [F]passenger seat

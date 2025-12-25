@@ -1,6 +1,6 @@
 {meta: title Sally Trash}
 {meta: artist Tammy Wynette}
-{meta: writer Curly Putman and Chet Atkins}
+{meta: composer Curly Putman and Chet Atkins}
 
 {start_of_verse: Verse 1}
 [C]The whole big town of Knoxville 

@@ -1,6 +1,6 @@
 {meta: title She’s Leaving}
 {meta: artist Jim Ed Brown}
-{meta: writer Kevin Johnson}
+{meta: composer Kevin Johnson}
 
 {start_of_verse: Verse 1}
 [C]She's leaving she's [G7]leaving [C]she's on the ship now and [F]leaving

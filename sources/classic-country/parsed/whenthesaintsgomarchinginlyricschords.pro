@@ -1,6 +1,6 @@
 {meta: title When The Saints Go Marching In}
 {meta: artist Fats Domino}
-{meta: writer James McParkland}
+{meta: composer James McParkland}
 
 {start_of_verse: Verse 1}
 [C]Oh when the saints  go marching in

@@ -1,6 +1,6 @@
 {meta: title Like You}
 {meta: artist Tommy Overstreet}
-{meta: writer Blake Mevis}
+{meta: composer Blake Mevis}
 
 {start_of_verse: Verse 1}
 [C]There ain't no feeling that I have found

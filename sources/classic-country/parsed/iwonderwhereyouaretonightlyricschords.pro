@@ -1,6 +1,6 @@
 {meta: title I Wonder Where You Are Tonight}
 {meta: artist Porter Wagoner}
-{meta: writer Johnny Bond}
+{meta: composer Johnny Bond}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm sad my heart is [F]weary  

@@ -1,6 +1,6 @@
 {meta: title Apples Raisins And Roses}
 {meta: artist Eddy Arnold}
-{meta: writer Earl Shuman and Leon Carr}
+{meta: composer Earl Shuman and Leon Carr}
 
 {start_of_verse: Verse 1}
 [G]I'll bring some [C]apples [D7]   for [G]Jenny

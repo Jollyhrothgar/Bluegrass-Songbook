@@ -1,6 +1,6 @@
 {meta: title Cuba Rhumba}
 {meta: artist Hank Snow}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [G]Now if you're gonna cruise be sure that you'll choose [D7]Havana

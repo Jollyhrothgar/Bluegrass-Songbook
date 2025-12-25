@@ -1,6 +1,6 @@
 {meta: title Dixieland Rock}
 {meta: artist Elvis Presley}
-{meta: writer Aaron Schroeder and Rachel Frank}
+{meta: composer Aaron Schroeder and Rachel Frank}
 
 {start_of_verse: Verse 1}
 [C]Well down in New Orleans at the Golden Goose

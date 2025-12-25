@@ -1,6 +1,6 @@
 {meta: title This Little Girl Of Mine}
 {meta: artist Everly Brothers}
-{meta: writer Ray Charles}
+{meta: composer Ray Charles}
 
 {start_of_verse: Verse 1}
 [G]This little girl of mine

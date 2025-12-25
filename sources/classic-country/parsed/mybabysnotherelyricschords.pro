@@ -1,6 +1,6 @@
 {meta: title My Baby's Not Here}
 {meta: artist Norma Jean}
-{meta: writer Clyde Beam, Charles Jiles, W.S. Stevenson}
+{meta: composer Clyde Beam, Charles Jiles, W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [D7]Well my baby's not [G]here in town tonight

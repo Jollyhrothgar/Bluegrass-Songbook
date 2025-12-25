@@ -1,6 +1,6 @@
 {meta: title Gone As A Girl Can Get}
 {meta: artist George Strait}
-{meta: writer Jerry Lane}
+{meta: composer Jerry Lane}
 
 {start_of_verse: Verse 1}
 [C]Well I haven't seen her lately and she never calls

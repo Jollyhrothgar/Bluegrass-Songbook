@@ -1,6 +1,6 @@
 {meta: title Someone Cares For You}
 {meta: artist Red Steagall}
-{meta: writer Glenn Sutton and Red Steagall}
+{meta: composer Glenn Sutton and Red Steagall}
 
 {start_of_verse: Verse 1}
 [G]When I leave home for work each day and [G7]face that same ol' [C]grind

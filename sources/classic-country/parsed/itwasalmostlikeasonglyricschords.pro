@@ -1,6 +1,6 @@
 {meta: title It Was Almost Like A Song}
 {meta: artist Ronnie Milsap}
-{meta: writer Hal David and Archie Jordan}
+{meta: composer Hal David and Archie Jordan}
 
 {start_of_verse: Verse 1}
 [C]Once in every [F]life  [Fm]someone comes [C]along

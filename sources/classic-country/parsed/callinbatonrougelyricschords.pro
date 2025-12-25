@@ -1,6 +1,6 @@
 {meta: title Callin' Baton Rouge}
 {meta: artist Garth Brooks}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [Am]I spent last [G7]night in the arms of a [F]girl in Louisi[C]ana

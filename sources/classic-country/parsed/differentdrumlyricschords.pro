@@ -1,6 +1,6 @@
 {meta: title Different Drum}
 {meta: artist Linda Ronstadt}
-{meta: writer Michael Nesmith}
+{meta: composer Michael Nesmith}
 
 {start_of_verse: Verse 1}
 [C]You and I [F]travel to the [G7]beat of a [C]different drum

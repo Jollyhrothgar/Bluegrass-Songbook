@@ -1,6 +1,6 @@
 {meta: title Hang On Feelin'}
 {meta: artist Red Steagall}
-{meta: writer Richard Mainegra and Mike Kosser}
+{meta: composer Richard Mainegra and Mike Kosser}
 
 {start_of_verse: Verse 1}
 [G]Hang on [B7]feelin' [C]I'm coming down with you [G]again

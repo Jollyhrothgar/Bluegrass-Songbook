@@ -1,6 +1,6 @@
 {meta: title Crazy At Christmas}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [C]Well there's a twenty pound [G7]turkey in the [C]oven

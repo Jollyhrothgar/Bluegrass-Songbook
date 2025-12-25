@@ -1,6 +1,6 @@
 {meta: title Lone Star Blues}
 {meta: artist George Strait}
-{meta: writer Delbert McClinton and Gary Nicholson}
+{meta: composer Delbert McClinton and Gary Nicholson}
 
 {start_of_verse: Verse 1}
 [C]At a truck stop in San Angelo

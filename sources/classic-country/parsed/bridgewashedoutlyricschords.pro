@@ -1,6 +1,6 @@
 {meta: title Bridge Washed Out}
 {meta: artist George Jones}
-{meta: writer Slim Williamson}
+{meta: composer Slim Williamson}
 
 {start_of_verse: Verse 1}
 [G]The bridge washed out and I can't [C]swim

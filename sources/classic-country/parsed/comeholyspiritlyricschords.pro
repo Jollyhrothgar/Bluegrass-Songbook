@@ -1,6 +1,6 @@
 {meta: title Come Holy Spirit}
 {meta: artist The Heritage Singers}
-{meta: writer Gloria Gaither and William Gaither}
+{meta: composer Gloria Gaither and William Gaither}
 
 {start_of_verse: Verse 1}
 [C]Come Holy Spirit I need [G7]Thee

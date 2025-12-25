@@ -1,6 +1,6 @@
 {meta: title Clinging To A Saving Hand}
 {meta: artist Connie Smith}
-{meta: writer Bill Mack}
+{meta: composer Bill Mack}
 
 {start_of_verse: Verse 1}
 [C]Sing me a [F]song of praise and [C]glory 

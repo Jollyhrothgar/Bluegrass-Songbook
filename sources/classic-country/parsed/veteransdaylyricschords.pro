@@ -1,6 +1,6 @@
 {meta: title Veterans Day}
 {meta: artist Johnny Cash}
-{meta: writer Tom Russell}
+{meta: composer Tom Russell}
 
 {start_of_verse: Verse 1}
 [G]Well I used to hang out down at the VFW [D7]hall

@@ -1,6 +1,6 @@
 {meta: title Unanswered Prayers}
 {meta: artist Garth Brooks}
-{meta: writer Pat Alger, Larry Bastian, Garth Brooks}
+{meta: composer Pat Alger, Larry Bastian, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [C]Just the other night at a [F]hometown football game

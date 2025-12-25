@@ -1,6 +1,6 @@
 {meta: title Nickel Piece Of Candy}
 {meta: artist Jim Reeves}
-{meta: writer Alex Zanetis}
+{meta: composer Alex Zanetis}
 
 {start_of_verse: Verse 1}
 [G]When you were a little girl and live across the [D7]street

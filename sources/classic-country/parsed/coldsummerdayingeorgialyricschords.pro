@@ -1,6 +1,6 @@
 {meta: title Cold Summer Day In Georgia}
 {meta: artist Gene Watson}
-{meta: writer Arthur Leo Owens and Dennis Knutson}
+{meta: composer Arthur Leo Owens and Dennis Knutson}
 
 {start_of_verse: Verse 1}
 [G]I thought I [C]had her wrapped around my [G]finger

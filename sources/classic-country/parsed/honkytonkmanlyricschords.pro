@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Man}
 {meta: artist Johnny Horton}
-{meta: writer Johnny Horton and Tillman Franks}
+{meta: composer Johnny Horton and Tillman Franks}
 
 {start_of_verse: Verse 1}
 [G]I'm a honkytonk man and I can't seem to stop

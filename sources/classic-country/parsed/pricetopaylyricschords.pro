@@ -1,6 +1,6 @@
 {meta: title Price To Pay}
 {meta: artist Randy Travis}
-{meta: writer Craig Wiseman and Trey Bruce}
+{meta: composer Craig Wiseman and Trey Bruce}
 
 {start_of_verse: Verse 1}
 [C]I wonder how we got like [G7]this your heart [Am]wasn't mine to take

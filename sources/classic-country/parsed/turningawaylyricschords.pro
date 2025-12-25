@@ -1,6 +1,6 @@
 {meta: title Turning Away}
 {meta: artist Crystal Gayle}
-{meta: writer Tim Krekel}
+{meta: composer Tim Krekel}
 
 {start_of_verse: Verse 1}
 [G]None of your friends come near you

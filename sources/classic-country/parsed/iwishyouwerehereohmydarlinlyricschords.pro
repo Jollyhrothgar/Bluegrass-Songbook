@@ -1,6 +1,6 @@
 {meta: title I Wish You Were Here (Oh My Darlin')}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Michael Foster}
+{meta: composer Michael Foster}
 
 {start_of_verse: Verse 1}
 [F]Wish you were here oh my [C]darlin'

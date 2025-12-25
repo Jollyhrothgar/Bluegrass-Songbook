@@ -1,6 +1,6 @@
 {meta: title Some Sweet Day}
 {meta: artist The Everly Brothers}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]Some sweet [G7]day [C]some sweet [G7]day

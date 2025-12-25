@@ -1,6 +1,6 @@
 {meta: title Drinking From The Bottle}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]Drinking from the bottle and [C7]singing from the [F]heart

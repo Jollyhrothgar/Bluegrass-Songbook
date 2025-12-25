@@ -1,6 +1,6 @@
 {meta: title Crazy Arms}
 {meta: artist Ray Price}
-{meta: writer Ralph Mooney and Chuck Seals}
+{meta: composer Ralph Mooney and Chuck Seals}
 
 {start_of_verse: Verse 1}
 [C]Now blue ain't the [C7]word for the way [F]that I [C]feel

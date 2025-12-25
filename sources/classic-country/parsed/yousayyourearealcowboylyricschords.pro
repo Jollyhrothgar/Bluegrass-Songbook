@@ -1,6 +1,6 @@
 {meta: title You Say You're A Real Cowboy}
 {meta: artist Billy Crash Craddock}
-{meta: writer David Heavener}
+{meta: composer David Heavener}
 
 {start_of_verse: Verse 1}
 [C]You got a [G7]nerve coming [C]into this barroom 

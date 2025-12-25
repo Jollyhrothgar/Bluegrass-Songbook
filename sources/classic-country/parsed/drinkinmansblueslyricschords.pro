@@ -1,6 +1,6 @@
 {meta: title Drinkin' Man's Blues}
 {meta: artist Johnny Rodriguez}
-{meta: writer R.C. Finnigan}
+{meta: composer R.C. Finnigan}
 
 {start_of_verse: Verse 1}
 [C]Well it’s out of the [C7]bottle [F]and into the glass

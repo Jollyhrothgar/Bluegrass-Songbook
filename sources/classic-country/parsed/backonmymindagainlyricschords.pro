@@ -1,6 +1,6 @@
 {meta: title Back On My Mind Again}
 {meta: artist Ronnie Milsap}
-{meta: writer Conrad Pierce and Charles Quillen}
+{meta: composer Conrad Pierce and Charles Quillen}
 
 {start_of_verse: Verse 1}
 [C]I took some time to clear my [Am]mind

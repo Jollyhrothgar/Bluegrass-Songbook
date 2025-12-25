@@ -1,6 +1,6 @@
 {meta: title The Key That Fits Her Door}
 {meta: artist Jack Greene}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [C]I can't seem to [F]lose a [C]key that [G7]fits her [C]door

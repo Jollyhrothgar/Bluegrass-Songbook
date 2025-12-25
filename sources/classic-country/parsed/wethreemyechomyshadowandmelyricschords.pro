@@ -1,6 +1,6 @@
 {meta: title We Three (My Echo My Shadow And Me)}
 {meta: artist Brenda Lee}
-{meta: writer Dick Robertson, Nelso Cogane, Sammy Mysels}
+{meta: composer Dick Robertson, Nelso Cogane, Sammy Mysels}
 
 {start_of_verse: Verse 1}
 [G7]We [C]three we're all [G]alone 

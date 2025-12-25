@@ -1,6 +1,6 @@
 {meta: title Give a Lonely Heart a Home}
 {meta: artist Faron Young}
-{meta: writer Cile Pitts and Janice Pitts}
+{meta: composer Cile Pitts and Janice Pitts}
 
 {start_of_verse: Verse 1}
 [C]Well could that look I see on you

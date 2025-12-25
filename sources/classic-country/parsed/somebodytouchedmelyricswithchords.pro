@@ -1,6 +1,6 @@
 {meta: title Somebody Touched Me}
 {meta: artist The Cathedrals}
-{meta: writer Savannah Foust}
+{meta: composer Savannah Foust}
 
 {start_of_verse: Verse 1}
 [C]Many years he walked in darkness

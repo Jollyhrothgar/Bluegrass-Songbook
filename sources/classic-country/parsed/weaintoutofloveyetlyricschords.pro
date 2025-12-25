@@ -1,6 +1,6 @@
 {meta: title We Ain't Out Of Love Yet}
 {meta: artist Randy Travis}
-{meta: writer Larry Henley and Gene Pistilli}
+{meta: composer Larry Henley and Gene Pistilli}
 
 {start_of_verse: Verse 1}
 [C]You can throw [A7]away my picture empty out my dresser [D7]drawer

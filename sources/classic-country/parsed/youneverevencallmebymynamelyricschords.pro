@@ -1,6 +1,6 @@
 {meta: title You Never Even Call Me By My Name}
 {meta: artist David Allan Coe}
-{meta: writer Steve Goodman}
+{meta: composer Steve Goodman}
 
 {start_of_verse: Verse 1}
 [C]Well it was all that I could [G7]do to keep from [C]cryin'

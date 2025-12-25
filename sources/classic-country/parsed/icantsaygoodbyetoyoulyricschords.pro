@@ -1,6 +1,6 @@
 {meta: title I Can’t Say Goodbye to You}
 {meta: artist The Everly Brothers}
-{meta: writer Carole King and Gerry Goffin}
+{meta: composer Carole King and Gerry Goffin}
 
 {start_of_verse: Verse 1}
 [C]I memorize the words I'm gonna say to [Am]you

@@ -1,6 +1,6 @@
 {meta: title You Can't Lose What You Never Had}
 {meta: artist Faron Young}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]You're standin' there accusin' me of breakin' up true love

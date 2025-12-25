@@ -1,6 +1,6 @@
 {meta: title Thank God For The Radio}
 {meta: artist The Kendalls}
-{meta: writer Max D. Barnes and Robert John Jones}
+{meta: composer Max D. Barnes and Robert John Jones}
 
 {start_of_verse: Verse 1}
 [C]At the wrong end of the highway

@@ -1,6 +1,6 @@
 {meta: title Star Studded Nights}
 {meta: artist Jeanne Pruett}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [C]Star studded nights [Dm]ooh flashin' lights

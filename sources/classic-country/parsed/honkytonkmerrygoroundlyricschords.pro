@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Merry Go Round}
 {meta: artist Patsy Cline}
-{meta: writer Frank Simon &amp; Stan Gardner}
+{meta: composer Frank Simon &amp; Stan Gardner}
 
 {start_of_verse: Verse 1}
 [G]I'm on a honky tonk [G][D7]merry-go-round

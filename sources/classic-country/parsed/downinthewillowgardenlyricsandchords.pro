@@ -1,6 +1,6 @@
 {meta: title Down In The Willow Garden}
 {meta: artist The Everly Brothers}
-{meta: writer Charlie Monroe}
+{meta: composer Charlie Monroe}
 
 {start_of_verse: Verse 1}
 [G]Down in the [C]willow [G]gar[Em]den where [G]me and my love did [Em]meet

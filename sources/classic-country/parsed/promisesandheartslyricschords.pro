@@ -1,6 +1,6 @@
 {meta: title Promises And Hearts}
 {meta: artist Stonewall Jackson}
-{meta: writer Larry Lee and Bobby Dyson}
+{meta: composer Larry Lee and Bobby Dyson}
 
 {start_of_verse: Verse 1}
 [C]I made myself a [F]promise I [C]knew I couldn't [F]keep

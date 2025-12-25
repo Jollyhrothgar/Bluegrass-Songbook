@@ -1,6 +1,6 @@
 {meta: title Ride Cowboy Ride}
 {meta: artist Rex Allen Jr.}
-{meta: writer Curtis Allen, Rex Allen Jr, Denny Demarco}
+{meta: composer Curtis Allen, Rex Allen Jr, Denny Demarco}
 
 {start_of_verse: Verse 1}
 [G]Up in the mornin' at the break of day

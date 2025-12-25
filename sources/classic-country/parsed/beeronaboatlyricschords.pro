@@ -1,6 +1,6 @@
 {meta: title Beer On A Boat}
 {meta: artist Ashton Shepherd}
-{meta: writer Marvin Green, Thomas Akins, Benjamin Hayslip}
+{meta: composer Marvin Green, Thomas Akins, Benjamin Hayslip}
 
 {start_of_verse: Verse 1}
 [C]It's [F]gonna be a scorcher of a [G7]day and the water is [C]callin'

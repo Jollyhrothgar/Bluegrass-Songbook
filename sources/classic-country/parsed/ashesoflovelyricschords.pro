@@ -1,6 +1,6 @@
 {meta: title Ashes Of Love}
 {meta: artist Buck Owens}
-{meta: writer Jack Anglin, Johnnie Wright & Jim Anglin}
+{meta: composer Jack Anglin, Johnnie Wright & Jim Anglin}
 
 {start_of_verse: Verse 1}
 [G]Ashes of love [C]cold  [G]as  [D7]ice

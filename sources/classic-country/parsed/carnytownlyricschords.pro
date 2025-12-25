@@ -1,6 +1,6 @@
 {meta: title Carny Town}
 {meta: artist Elvis Presley}
-{meta: writer Randy Starr and Fred Wise}
+{meta: composer Randy Starr and Fred Wise}
 
 {start_of_verse: Verse 1}
 [G]Aha ha hurry hurry [D7]step this [G]way

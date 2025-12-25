@@ -1,6 +1,6 @@
 {meta: title Keep Me From Blowing Away}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Paul Craft}
+{meta: composer Paul Craft}
 
 {start_of_verse: Verse 1}
 [C]Yes I've spent my whole [G7]lifetime

@@ -1,6 +1,6 @@
 {meta: title Midnight Turning Day Blues (Blue Yodel #6)}
 {meta: artist Merle Haggard}
-{meta: writer Jimmie Rodgers}
+{meta: composer Jimmie Rodgers}
 
 {start_of_verse: Verse 1}
 [C]One of these mornings I'm sure gonna leave this town [C7]

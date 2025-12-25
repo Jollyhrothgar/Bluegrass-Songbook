@@ -1,6 +1,6 @@
 {meta: title I'm Telling Me A Lie}
 {meta: artist Gene Watson}
-{meta: writer Joe Ed Gough and Curtis Winston}
+{meta: composer Joe Ed Gough and Curtis Winston}
 
 {start_of_verse: Verse 1}
 [C]Well these memories of mine don't seem to [G7]know you're gone

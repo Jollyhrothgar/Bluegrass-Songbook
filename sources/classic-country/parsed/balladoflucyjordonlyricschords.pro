@@ -1,6 +1,6 @@
 {meta: title Ballad Of Lucy Jordon}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [G]The mornin' sun touched lightly on the [C]eyes of Lucy [G]Jordan 

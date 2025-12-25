@@ -1,6 +1,6 @@
 {meta: title It's Over}
 {meta: artist Roy Orbison}
-{meta: writer Roy Orbison and Bill Dees}
+{meta: composer Roy Orbison and Bill Dees}
 
 {start_of_verse: Verse 1}
 [C]Your baby [G7]doesn't [F]love [C]you [C][F][C][F]anymore

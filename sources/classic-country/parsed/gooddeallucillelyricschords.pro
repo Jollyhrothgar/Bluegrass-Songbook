@@ -1,6 +1,6 @@
 {meta: title Good Deal Lucille}
 {meta: artist Carl Smith}
-{meta: writer Al Terry,}
+{meta: composer Al Terry,}
 
 {start_of_verse: Verse 1}
 [C]Goodbye Lou cherche vous another man

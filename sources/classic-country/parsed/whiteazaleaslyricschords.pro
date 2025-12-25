@@ -1,6 +1,6 @@
 {meta: title White Azaleas}
 {meta: artist George Morgan}
-{meta: writer Bob Miller}
+{meta: composer Bob Miller}
 
 {start_of_verse: Verse 1}
 [C]When the white azaleas start blooming

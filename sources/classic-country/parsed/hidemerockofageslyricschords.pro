@@ -1,6 +1,6 @@
 {meta: title Hide Me Rock Of Ages}
 {meta: artist Don Gibson}
-{meta: writer Brantley C. George}
+{meta: composer Brantley C. George}
 
 {start_of_verse: Verse 1}
 [C]Oh Thou blessed rock of ages 

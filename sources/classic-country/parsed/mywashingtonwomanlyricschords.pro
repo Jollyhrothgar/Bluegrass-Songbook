@@ -1,6 +1,6 @@
 {meta: title My Washington Woman}
 {meta: artist Kenny Rogers}
-{meta: writer Dallas Frazier and Arthur Leo Owens}
+{meta: composer Dallas Frazier and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]The wages of an unskilled [F]working man [G7]never paid enough

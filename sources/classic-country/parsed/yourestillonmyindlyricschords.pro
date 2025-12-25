@@ -1,6 +1,6 @@
 {meta: title You’re Still On My Mind}
 {meta: artist George Jones}
-{meta: writer Luke McDaniel}
+{meta: composer Luke McDaniel}
 
 {start_of_verse: Verse 1}
 [G]The jukebox is playing a [G7]honky tonk [C]song

@@ -1,6 +1,6 @@
 {meta: title Snowshoe Thompson}
 {meta: artist Johnny Horton}
-{meta: writer Paul Howard and Buddy Ebsen}
+{meta: composer Paul Howard and Buddy Ebsen}
 
 {start_of_verse: Verse 1}
 [C]In 1855 in old [G7]California

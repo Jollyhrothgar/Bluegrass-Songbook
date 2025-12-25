@@ -1,6 +1,6 @@
 {meta: title Another Heart For You To Break}
 {meta: artist Dottie West}
-{meta: writer Carl Belew, Clyde Pitts, Jeannie Seely}
+{meta: composer Carl Belew, Clyde Pitts, Jeannie Seely}
 
 {start_of_verse: Verse 1}
 [C]I [G7]wish I [C]had another heart for you [C7]to [F]break

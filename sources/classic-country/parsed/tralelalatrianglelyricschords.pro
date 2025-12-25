@@ -1,6 +1,6 @@
 {meta: title Tra Le La La Triangle}
 {meta: artist Patsy Cline}
-{meta: writer Marijohn Wilkin and Fred Burch}
+{meta: composer Marijohn Wilkin and Fred Burch}
 
 {start_of_verse: Verse 1}
 [G]I've got my life in such a mess and I don't know what to [D7]do

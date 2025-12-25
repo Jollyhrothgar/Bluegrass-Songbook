@@ -1,6 +1,6 @@
 {meta: title I Don’t Have Anymore Love Songs}
 {meta: artist Merle Haggard}
-{meta: writer Hank Williams Jr.}
+{meta: composer Hank Williams Jr.}
 
 {start_of_verse: Verse 1}
 [C]There's been some things that I've wanted to say a long [F]time

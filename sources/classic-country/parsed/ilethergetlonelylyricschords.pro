@@ -1,6 +1,6 @@
 {meta: title I Let Her Get Lonely}
 {meta: artist Don Gibson}
-{meta: writer Carl Belew, Art Bishop, W.S. Stevenson}
+{meta: composer Carl Belew, Art Bishop, W.S. Stevenson}
 
 {start_of_verse: Verse 1}
 [C]She'd still be here with me 

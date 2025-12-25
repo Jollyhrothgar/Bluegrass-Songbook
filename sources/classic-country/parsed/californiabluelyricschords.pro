@@ -1,6 +1,6 @@
 {meta: title California Blue}
 {meta: artist Roy Orbison}
-{meta: writer Tom Petty, Roy Orbison and Jeff Lynne}
+{meta: composer Tom Petty, Roy Orbison and Jeff Lynne}
 
 {start_of_verse: Verse 1}
 [C]Working all day and the sun don't [F]shine

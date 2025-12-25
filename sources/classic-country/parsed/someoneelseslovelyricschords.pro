@@ -1,6 +1,6 @@
 {meta: title Someone Else's Love}
 {meta: artist Wilburn Brothers}
-{meta: writer Jodi Bancino}
+{meta: composer Jodi Bancino}
 
 {start_of_verse: Verse 1}
 [C]Someone else's arms are [G7]holding her tight

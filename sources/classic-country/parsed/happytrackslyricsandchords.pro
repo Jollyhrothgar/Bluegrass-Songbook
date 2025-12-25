@@ -1,6 +1,6 @@
 {meta: title Happy Tracks}
 {meta: artist Wilburn Brothers}
-{meta: writer Ray Pennington}
+{meta: composer Ray Pennington}
 
 {start_of_verse: Verse 1}
 [C]I know that you've heard people say many many times

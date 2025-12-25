@@ -1,6 +1,6 @@
 {meta: title Just In Case}
 {meta: artist Gene Watson}
-{meta: writer Rick Tiger and Shawn Hammonds}
+{meta: composer Rick Tiger and Shawn Hammonds}
 
 {start_of_verse: Verse 1}
 [C]Well I saw the lights go down [F]with his car still in the [C]drive

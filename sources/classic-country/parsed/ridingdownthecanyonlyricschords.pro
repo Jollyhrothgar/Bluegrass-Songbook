@@ -1,6 +1,6 @@
 {meta: title Riding Down the Canyon}
 {meta: artist Gene Autry}
-{meta: writer Gene Autry and Smiley Burnette}
+{meta: composer Gene Autry and Smiley Burnette}
 
 {start_of_verse: Verse 1}
 [C]When evening chores are [E7]over at our [F]ranch house on the [C]plain

@@ -1,6 +1,6 @@
 {meta: title You Left The Door Wide Open}
 {meta: artist Bob Luman}
-{meta: writer Glenn Sutton and Arthur Leo Owens}
+{meta: composer Glenn Sutton and Arthur Leo Owens}
 
 {start_of_verse: Verse 1}
 [C]Think back on all those nights that you left [F]her all [C]alone

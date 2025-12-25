@@ -1,6 +1,6 @@
 {meta: title Pfft You Were Gone}
 {meta: artist Buck Owens}
-{meta: writer Susan Heather}
+{meta: composer Susan Heather}
 
 {start_of_verse: Verse 1}
 [C]Down here on the farm the [F]weather gets [C]messy

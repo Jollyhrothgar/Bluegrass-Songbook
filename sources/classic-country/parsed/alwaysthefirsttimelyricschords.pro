@@ -1,6 +1,6 @@
 {meta: title Always The First Time}
 {meta: artist Dolly Parton}
-{meta: writer Joyce McCord}
+{meta: composer Joyce McCord}
 
 {start_of_verse: Verse 1}
 Always The First Time

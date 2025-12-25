@@ -1,6 +1,6 @@
 {meta: title Think Of Me}
 {meta: artist Don Gibson}
-{meta: writer George McCormick}
+{meta: composer George McCormick}
 
 {start_of_verse: Verse 1}
 [C]When you [F]walk down your [G7]lonely street[F]  think of [C]me

@@ -1,6 +1,6 @@
 {meta: title Leave Him In The Longyard}
 {meta: artist Slim Dusty}
-{meta: writer Kelly Dixon}
+{meta: composer Kelly Dixon}
 
 {start_of_verse: Verse 1}
 [C]Yes he's looking kind of jaded

@@ -1,6 +1,6 @@
 {meta: title Green Pastures}
 {meta: artist Ricky Skaggs}
-{meta: writer Van Hoose}
+{meta: composer Van Hoose}
 
 {start_of_verse: Verse 1}
 [G]Trouble and trials often betray [C]those

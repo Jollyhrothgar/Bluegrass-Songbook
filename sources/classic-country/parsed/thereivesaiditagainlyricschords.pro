@@ -1,6 +1,6 @@
 {meta: title There I’ve Said It Again}
 {meta: artist Merle Haggard}
-{meta: writer Redd Evans and Dave Mann}
+{meta: composer Redd Evans and Dave Mann}
 
 {start_of_verse: Verse 1}
 [G]I love you there's [Dm]nothing to hide

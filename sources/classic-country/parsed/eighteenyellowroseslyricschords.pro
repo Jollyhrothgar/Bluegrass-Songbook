@@ -1,6 +1,6 @@
 {meta: title Eighteen Yellow Roses}
 {meta: artist Marty Robbins}
-{meta: writer Bobby Darin}
+{meta: composer Bobby Darin}
 
 {start_of_verse: Verse 1}
 [C]Eighteen yellow [G7]roses came [C]today

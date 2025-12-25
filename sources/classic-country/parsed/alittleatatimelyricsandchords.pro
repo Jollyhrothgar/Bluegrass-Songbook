@@ -1,6 +1,6 @@
 {meta: title A Little At A Time}
 {meta: artist Rhonda Vincent}
-{meta: writer Tony Martin, Amy Dalley, Tom Shapiro}
+{meta: composer Tony Martin, Amy Dalley, Tom Shapiro}
 
 {start_of_verse: Verse 1}
 [F]He doesn't [C]know that everything is [Am]changed

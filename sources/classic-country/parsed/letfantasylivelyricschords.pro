@@ -1,6 +1,6 @@
 {meta: title Let Fantasy Live}
 {meta: artist The Bellamy Brothers}
-{meta: writer David Bellamy}
+{meta: composer David Bellamy}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]cat in a hat [G7]that isn't there

@@ -1,6 +1,6 @@
 {meta: title Just At Dawn}
 {meta: artist John Anderson}
-{meta: writer Bill Emerson}
+{meta: composer Bill Emerson}
 
 {start_of_verse: Verse 1}
 [C]The heaven that we shared so long 

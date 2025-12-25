@@ -1,6 +1,6 @@
 {meta: title Warning Labels}
 {meta: artist Doug Stone}
-{meta: writer Kim Williams and Oscar Turman}
+{meta: composer Kim Williams and Oscar Turman}
 
 {start_of_verse: Verse 1}
 [C]I begged her to stay and [F]give it one more [C]try

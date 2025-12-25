@@ -1,6 +1,6 @@
 {meta: title You’re Never Out Of My Heart}
 {meta: artist Wynn Stewart}
-{meta: writer Buck Owens, Beverly Stewart, Wynn Stewart}
+{meta: composer Buck Owens, Beverly Stewart, Wynn Stewart}
 
 {start_of_verse: Verse 1}
 [C]Though you’re out of my [Am]reach [D7]you’re never out of my [G]heart

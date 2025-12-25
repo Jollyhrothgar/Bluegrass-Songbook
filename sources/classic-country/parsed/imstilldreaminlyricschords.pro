@@ -1,6 +1,6 @@
 {meta: title I'm Still Dreamin'}
 {meta: artist Alabama}
-{meta: writer John Dillon and Steve Cash}
+{meta: composer John Dillon and Steve Cash}
 
 {start_of_verse: Verse 1}
 [G]I know people who lose their lover

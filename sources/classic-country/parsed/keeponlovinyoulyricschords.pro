@@ -1,6 +1,6 @@
 {meta: title Keep On Lovin' You}
 {meta: artist Charly McClain}
-{meta: writer Don Singleton}
+{meta: composer Don Singleton}
 
 {start_of_verse: Verse 1}
 [C]You give me [F]lovin' so easy [D7]and sometimes that ain't [C]easy

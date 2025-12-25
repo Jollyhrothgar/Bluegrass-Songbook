@@ -1,6 +1,6 @@
 {meta: title If I Needed You}
 {meta: artist Don Williams}
-{meta: writer Townes Van Zandt}
+{meta: composer Townes Van Zandt}
 
 {start_of_verse: Verse 1}
 [G]If I needed you would you come to me 

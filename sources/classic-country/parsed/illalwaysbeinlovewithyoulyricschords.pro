@@ -1,6 +1,6 @@
 {meta: title I'll Always Be In Love With You}
 {meta: artist Bob Wills}
-{meta: writer Lew Walker}
+{meta: composer Lew Walker}
 
 {start_of_verse: Verse 1}
 [C]I'll always be in love with [G7]you

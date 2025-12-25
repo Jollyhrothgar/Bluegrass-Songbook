@@ -1,6 +1,6 @@
 {meta: title Meanwhile}
 {meta: artist George Strait}
-{meta: writer Wayland Holyfield and Fred Knobloch}
+{meta: composer Wayland Holyfield and Fred Knobloch}
 
 {start_of_verse: Verse 1}
 [C]She sparkles she dazzles she lights up the room

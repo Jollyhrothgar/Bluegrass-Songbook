@@ -1,6 +1,6 @@
 {meta: title Again}
 {meta: artist Ricky Nelson}
-{meta: writer Dorcas Cochran and Lionel Newman}
+{meta: composer Dorcas Cochran and Lionel Newman}
 
 {start_of_verse: Verse 1}
 [C]Again [D7]this [G7]couldn't happen [Em]again

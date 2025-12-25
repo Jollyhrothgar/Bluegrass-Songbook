@@ -1,6 +1,6 @@
 {meta: title See Ruby Fall}
 {meta: artist Johnny Cash}
-{meta: writer Johnny Cash and Roy Orbison}
+{meta: composer Johnny Cash and Roy Orbison}
 
 {start_of_verse: Verse 1}
 [C]Well I knew someday Ruby would be [F]leavin'

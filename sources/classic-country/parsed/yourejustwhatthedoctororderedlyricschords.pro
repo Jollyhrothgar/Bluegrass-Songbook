@@ -1,6 +1,6 @@
 {meta: title You're Just What The Doctor Ordered}
 {meta: artist Bud Hobbs}
-{meta: writer Ace Dinning and James Ray}
+{meta: composer Ace Dinning and James Ray}
 
 {start_of_verse: Verse 1}
 [C]You're just what the doctor told me I was needing  

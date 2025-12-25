@@ -1,6 +1,6 @@
 {meta: title There's A Friend In The Way}
 {meta: artist George Jones}
-{meta: writer Oney Wheeler}
+{meta: composer Oney Wheeler}
 
 {start_of_verse: Verse 1}
 [C]We can explain this one too clearly 

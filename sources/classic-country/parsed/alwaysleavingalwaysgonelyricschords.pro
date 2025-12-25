@@ -1,6 +1,6 @@
 {meta: title Always Leaving Always Gone}
 {meta: artist Kenny Rogers}
-{meta: writer Dick Monda}
+{meta: composer Dick Monda}
 
 {start_of_verse: Verse 1}
 [G]Dusty dreams of yesterday I [C]reminisce [G]alone

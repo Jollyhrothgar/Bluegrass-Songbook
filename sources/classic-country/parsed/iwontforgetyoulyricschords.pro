@@ -1,6 +1,6 @@
 {meta: title I Won't Forget You}
 {meta: artist Jim Reeves}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]I know that I [C]won't forget [G]you

@@ -1,6 +1,6 @@
 {meta: title Silence}
 {meta: artist Lefty Frizzell}
-{meta: writer B.Barton, Wranack}
+{meta: composer B.Barton, Wranack}
 
 {start_of_verse: Verse 1}
 [C]I get so lonely in the [E7]silence with [F]no one to cry [C]to

@@ -1,6 +1,6 @@
 {meta: title Wave Goodbye To Me}
 {meta: artist Jean Shepard}
-{meta: writer Waylon Jennings and Don Bowman}
+{meta: composer Waylon Jennings and Don Bowman}
 
 {start_of_verse: Verse 1}
 [C]I'm just here to get my [F]things then I'll be [C]leavin'

@@ -1,6 +1,6 @@
 {meta: title Come Take Care Of Me}
 {meta: artist Charly McClain}
-{meta: writer Danny Hogan, Larry Rogers, Henry Carter}
+{meta: composer Danny Hogan, Larry Rogers, Henry Carter}
 
 {start_of_verse: Verse 1}
 [G]I want you for my lover

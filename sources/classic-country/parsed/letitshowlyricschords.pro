@@ -1,6 +1,6 @@
 {meta: title Let It Show}
 {meta: artist The Statler Brothers}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [D7]If you [G]feel in your [F]heart that [G]love's a[F]bout to [E7]start

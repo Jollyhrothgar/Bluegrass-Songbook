@@ -1,6 +1,6 @@
 {meta: title Seven Spanish Angels}
 {meta: artist Willie Nelson}
-{meta: writer Eddie Setser and Troy Seals}
+{meta: composer Eddie Setser and Troy Seals}
 
 {start_of_verse: Verse 1}
 [G]He looked down into her brown eyes and said

@@ -1,6 +1,6 @@
 {meta: title I Can't Seem To Say Goodbye}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Don Robertson}
+{meta: composer Don Robertson}
 
 {start_of_verse: Verse 1}
 [C]Gone is the sunshine we [F]knew once [C]before

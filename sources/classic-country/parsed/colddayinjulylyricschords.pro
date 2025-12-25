@@ -1,6 +1,6 @@
 {meta: title Cold Day In July}
 {meta: artist Gene Watson}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]When I left the trees had no green [C]leaves

@@ -1,6 +1,6 @@
 {meta: title Destination Atlanta GA}
 {meta: artist Cal Smith}
-{meta: writer Bill Hayes and Bill Howard}
+{meta: composer Bill Hayes and Bill Howard}
 
 {start_of_verse: Verse 1}
 [G]One more day and I'll draw my [C]pay

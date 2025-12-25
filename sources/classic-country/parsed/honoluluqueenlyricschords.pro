@@ -1,6 +1,6 @@
 {meta: title Honolulu Queen}
 {meta: artist Norma Jean}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]As the steamer pulls away through ol’ [C]San Francisco Bay

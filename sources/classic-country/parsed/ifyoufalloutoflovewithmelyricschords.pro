@@ -1,6 +1,6 @@
 {meta: title If You Fall Out Of Love With Me}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Bonnie Owens}
+{meta: composer Buck Owens and Bonnie Owens}
 
 {start_of_verse: Verse 1}
 [G]If you fall out of love with me don't let me [D7]know

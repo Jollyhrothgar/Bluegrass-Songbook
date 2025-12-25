@@ -1,6 +1,6 @@
 {meta: title I Was Afraid Of That}
 {meta: artist Vern Gosdin}
-{meta: writer Gene Nelson}
+{meta: composer Gene Nelson}
 
 {start_of_verse: Verse 1}
 [G]You're everything that any [C]man could ever[G] want

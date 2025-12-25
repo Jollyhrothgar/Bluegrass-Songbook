@@ -1,6 +1,6 @@
 {meta: title You Sure Got This Ol' Redneck Feelin' Blue}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Buzz Rabin}
+{meta: composer Dean Dillon and Buzz Rabin}
 
 {start_of_verse: Verse 1}
 [G]Oh I recall some [D7]barroom brawls that I [C]got myself in [G]to

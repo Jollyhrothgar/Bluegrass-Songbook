@@ -1,6 +1,6 @@
 {meta: title Success Lyrics Chords}
 {meta: artist Loretta Lynn}
-{meta: writer Johnny Mullins}
+{meta: composer Johnny Mullins}
 
 {start_of_verse: Verse 1}
 [C]We used to go out walking hand-in-hand

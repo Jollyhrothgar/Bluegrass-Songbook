@@ -1,6 +1,6 @@
 {meta: title White Cross On Okinawa}
 {meta: artist Bob Wills}
-{meta: writer Cliff Johnsen, Cliff Sundin & James Wills}
+{meta: composer Cliff Johnsen, Cliff Sundin & James Wills}
 
 {start_of_verse: Verse 1}
 [C]There's a White Cross [F]Tonight on [C]Okinawa

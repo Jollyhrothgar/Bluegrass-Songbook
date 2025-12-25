@@ -1,6 +1,6 @@
 {meta: title Till Tomorrow}
 {meta: artist Jimmy Dean}
-{meta: writer Sheldon Harnick and Jerry Bock}
+{meta: composer Sheldon Harnick and Jerry Bock}
 
 {start_of_verse: Verse 1}
 [C]Twilight descends [E7]everything [A7]ends

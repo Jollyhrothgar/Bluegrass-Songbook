@@ -1,6 +1,6 @@
 {meta: title Side By Side}
 {meta: artist The Heritage Singers}
-{meta: writer Jeff Wood}
+{meta: composer Jeff Wood}
 
 {start_of_verse: Verse 1}
 [F]Side by side we [G7]stand [Em]waiting God’s [Am]command

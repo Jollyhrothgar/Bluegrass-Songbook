@@ -1,6 +1,6 @@
 {meta: title Make Memories With Me}
 {meta: artist Lee Ann Womack and Mark Chestnut}
-{meta: writer Leslie Winn Satcher and Danny Stegall}
+{meta: composer Leslie Winn Satcher and Danny Stegall}
 
 {start_of_verse: Verse 1}
 [C]Make memories with me make memories with [F]me

@@ -1,6 +1,6 @@
 {meta: title Jesus Saved Me}
 {meta: artist Buck Owens}
-{meta: writer Buck Owens and Red Simpson}
+{meta: composer Buck Owens and Red Simpson}
 
 {start_of_verse: Verse 1}
 [C]Once my heart was [F]heavy  [C]I was living in [G7]sin

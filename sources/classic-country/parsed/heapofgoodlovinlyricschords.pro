@@ -1,6 +1,6 @@
 {meta: title Heap Of Good Lovin'}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Steve Nelson and Jean Javitz}
+{meta: composer Steve Nelson and Jean Javitz}
 
 {start_of_verse: Verse 1}
 [C]It [G7]will [A7]take a heap of loving a heap of turtle dovin’

@@ -1,6 +1,6 @@
 {meta: title He's Only Everything}
 {meta: artist Reba McEntire}
-{meta: writer Billy Deaton and Faron Young}
+{meta: composer Billy Deaton and Faron Young}
 
 {start_of_verse: Verse 1}
 [C]In the eyes of the world he's [F]only an [G7]ordinary [C]man

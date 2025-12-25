@@ -1,6 +1,6 @@
 {meta: title Let's Pretend}
 {meta: artist Hank Snow}
-{meta: writer Bob Nolan}
+{meta: composer Bob Nolan}
 
 {start_of_verse: Verse 1}
 [G]On a quiet summer [C]day long [G]ago and far away

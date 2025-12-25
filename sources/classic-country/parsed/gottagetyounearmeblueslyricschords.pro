@@ -1,6 +1,6 @@
 {meta: title Gotta Get You Near Me Blues}
 {meta: artist Buddy Holly}
-{meta: writer Bob Montgomery}
+{meta: composer Bob Montgomery}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm so blue I’m [F]thinking of [D7]you

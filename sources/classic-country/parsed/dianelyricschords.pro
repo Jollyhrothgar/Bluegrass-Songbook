@@ -1,6 +1,6 @@
 {meta: title Diane}
 {meta: artist Ed Bruce}
-{meta: writer Ronnie Rogers}
+{meta: composer Ronnie Rogers}
 
 {start_of_verse: Verse 1}
 [G]Diane if you're gonna [C]do him wrong [G]again

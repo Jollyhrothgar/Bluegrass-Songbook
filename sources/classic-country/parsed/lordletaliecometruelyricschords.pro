@@ -1,6 +1,6 @@
 {meta: title Lord Let A Lie Come True}
 {meta: artist Johnny Bush}
-{meta: writer Dallas Frazier and Sanger D. Shafer}
+{meta: composer Dallas Frazier and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G7]When my [C]friends bring up your [G7]name

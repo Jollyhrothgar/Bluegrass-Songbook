@@ -1,6 +1,6 @@
 {meta: title Watching My World Walk Away}
 {meta: artist Barbara Mandrell}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]I never dreamed [D7]his footsteps 

@@ -1,6 +1,6 @@
 {meta: title Blue Jungle}
 {meta: artist Merle Haggard}
-{meta: writer Merle Haggard and Freddy Powers}
+{meta: composer Merle Haggard and Freddy Powers}
 
 {start_of_verse: Verse 1}
 [G]Daylight Monday morning turning off the Great White [D7]Way

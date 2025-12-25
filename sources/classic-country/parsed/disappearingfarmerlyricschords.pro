@@ -1,6 +1,6 @@
 {meta: title Disappearing Farmer}
 {meta: artist John Anderson}
-{meta: writer James Cowan and Sandy Pinkard}
+{meta: composer James Cowan and Sandy Pinkard}
 
 {start_of_verse: Verse 1}
 [C]I remember Grand[G7]pa standing [F]over by the [C]gate

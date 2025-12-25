@@ -1,6 +1,6 @@
 {meta: title When The Sun Says Hello To The Mountain}
 {meta: artist Jim Ed Brown}
-{meta: writer Harry Pease and Larry Vincent}
+{meta: composer Harry Pease and Larry Vincent}
 
 {start_of_verse: Verse 1}
 [C]When the sun says [F]hello to the [C]mountains

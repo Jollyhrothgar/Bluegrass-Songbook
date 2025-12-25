@@ -1,6 +1,6 @@
 {meta: title Rank Strangers}
 {meta: artist Ricky Skaggs}
-{meta: writer Alfred E. Brumley Sr.}
+{meta: composer Alfred E. Brumley Sr.}
 
 {start_of_verse: Verse 1}
 [C]I wandered again to my [G7]home in the [C]mountains

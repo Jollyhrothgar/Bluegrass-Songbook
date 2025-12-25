@@ -1,6 +1,6 @@
 {meta: title Took It Like A Man Cried Like A Baby}
 {meta: artist Vern Gosdin}
-{meta: writer Rory Bourke, Tommy Rocco, Charlie Black}
+{meta: composer Rory Bourke, Tommy Rocco, Charlie Black}
 
 {start_of_verse: Verse 1}
 [C]The woman was kind to re[G7]veal her deception

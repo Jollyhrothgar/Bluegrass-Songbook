@@ -1,6 +1,6 @@
 {meta: title Before Your Time}
 {meta: artist Conway Twitty}
-{meta: writer Conway Twitty and Tommy Markham}
+{meta: composer Conway Twitty and Tommy Markham}
 
 {start_of_verse: Verse 1}
 [C]Other arms [F]have held me [C]before your time

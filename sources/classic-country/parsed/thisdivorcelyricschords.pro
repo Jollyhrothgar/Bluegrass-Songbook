@@ -1,6 +1,6 @@
 {meta: title This Divorce Lyrics Chords}
 {meta: artist Kitty Wells}
-{meta: writer Roy Botkin}
+{meta: composer Roy Botkin}
 
 {start_of_verse: Verse 1}
 [G]This divorce you're asking [C]me to [D7]give [G]you

@@ -1,6 +1,6 @@
 {meta: title Lost His Love On Our Last Date}
 {meta: artist Emmylou Harris}
-{meta: writer Conway Twitty and Floyd Cramer}
+{meta: composer Conway Twitty and Floyd Cramer}
 
 {start_of_verse: Verse 1}
 [G]It's over [C]our love affair [G]too late now [C]I find I care

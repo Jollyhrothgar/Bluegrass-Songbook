@@ -1,6 +1,6 @@
 {meta: title An Old Bridge}
 {meta: artist Jean Shepard}
-{meta: writer Hank Mills}
+{meta: composer Hank Mills}
 
 {start_of_verse: Verse 1}
 [C]Just like some breeze you've drifted back [F]again

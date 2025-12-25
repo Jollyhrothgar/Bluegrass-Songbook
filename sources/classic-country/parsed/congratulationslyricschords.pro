@@ -1,6 +1,6 @@
 {meta: title Congratulations}
 {meta: artist Faron Young}
-{meta: writer Willie Nelson}
+{meta: composer Willie Nelson}
 
 {start_of_verse: Verse 1}
 [C]I can tell that you're already growing tired [F]of me

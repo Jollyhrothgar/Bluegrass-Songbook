@@ -1,6 +1,6 @@
 {meta: title Play Me A Song I Can Cry To}
 {meta: artist Jerry Lee Lewis}
-{meta: writer Jerry Chesnut}
+{meta: composer Jerry Chesnut}
 
 {start_of_verse: Verse 1}
 [G]I set in with a band [C]down in [G]Dallas

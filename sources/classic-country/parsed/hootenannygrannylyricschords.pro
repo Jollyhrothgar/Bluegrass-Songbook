@@ -1,6 +1,6 @@
 {meta: title Hootenanny Granny}
 {meta: artist Jim Lowe}
-{meta: writer Fred Hertz and Charles Grean}
+{meta: composer Fred Hertz and Charles Grean}
 
 {start_of_verse: Verse 1}
 [C]I took my [F]granny to a hoote[C]nanny

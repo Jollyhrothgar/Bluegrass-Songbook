@@ -1,6 +1,6 @@
 {meta: title Back Home In Heaven}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [C]There's a burnin' silver lining [F]lighting up the [C]sky

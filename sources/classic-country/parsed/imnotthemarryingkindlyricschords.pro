@@ -1,6 +1,6 @@
 {meta: title I'm Not The Marrying Kind}
 {meta: artist Elvis Presley}
-{meta: writer Sherman Edwards and Mack David}
+{meta: composer Sherman Edwards and Mack David}
 
 {start_of_verse: Verse 1}
 [C]Show me a girl with a dimple on her [G7]cheek

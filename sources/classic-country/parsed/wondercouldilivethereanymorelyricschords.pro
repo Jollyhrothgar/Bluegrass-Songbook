@@ -1,5 +1,5 @@
 {meta: artist Charlie Pride}
-{meta: writer Bill Rice}
+{meta: composer Bill Rice}
 
 {start_of_verse: Verse 1}
 [C]Have you ever been awaken by the crowing of a rooster

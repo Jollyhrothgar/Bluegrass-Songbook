@@ -1,6 +1,6 @@
 {meta: title Fourteen Carat Gold}
 {meta: artist Hank Locklin}
-{meta: writer Sy Sandler and Eddie Zack}
+{meta: composer Sy Sandler and Eddie Zack}
 
 {start_of_verse: Verse 1}
 [C]A chain of steel a wall of stone could not keep me from [G7]you

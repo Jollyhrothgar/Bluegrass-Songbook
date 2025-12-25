@@ -1,6 +1,6 @@
 {meta: title I've Enjoyed As Much Of This As I Can Stand}
 {meta: artist Jim Reeves}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]You look lovelier tonight [F]than I [C]remember 

@@ -1,6 +1,6 @@
 {meta: title The Man Worth Loving You}
 {meta: artist George Jones}
-{meta: writer Earl Montgomery}
+{meta: composer Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [G]If I hadn't quit my ways of wrong

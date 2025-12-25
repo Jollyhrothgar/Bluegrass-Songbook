@@ -1,6 +1,6 @@
 {meta: title When Are You Ever Gonna Learn}
 {meta: artist Faron Young}
-{meta: writer Kris Kristofferson}
+{meta: composer Kris Kristofferson}
 
 {start_of_verse: Verse 1}
 [G]Look in the mirror wipe the [C]guilt from your eyes

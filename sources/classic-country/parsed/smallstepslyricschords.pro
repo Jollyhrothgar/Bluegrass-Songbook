@@ -1,6 +1,6 @@
 {meta: title Small Steps}
 {meta: artist Doug Stone}
-{meta: writer Gary Burr and Kenny Edwards}
+{meta: composer Gary Burr and Kenny Edwards}
 
 {start_of_verse: Verse 1}
 [G]Last [Em]night was a [Bm]big su[D7]ccess [G]

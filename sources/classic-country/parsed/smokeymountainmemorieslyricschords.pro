@@ -1,6 +1,6 @@
 {meta: title Smokey Mountain Memories}
 {meta: artist Mel Street}
-{meta: writer Earl T. Conley and Dick Heard}
+{meta: composer Earl T. Conley and Dick Heard}
 
 {start_of_verse: Verse 1}
 [C]Smokey Mountain memories bout my home in [Am]Tennessee

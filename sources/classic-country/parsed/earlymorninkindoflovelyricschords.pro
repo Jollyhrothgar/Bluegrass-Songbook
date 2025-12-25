@@ -1,6 +1,6 @@
 {meta: title Early Mornin’ Kind Of Love}
 {meta: artist Red Steagall}
-{meta: writer William Hollis Young}
+{meta: composer William Hollis Young}
 
 {start_of_verse: Verse 1}
 [G]I wake to see the darkness dying

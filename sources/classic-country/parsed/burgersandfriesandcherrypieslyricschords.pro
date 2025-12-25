@@ -1,6 +1,6 @@
 {meta: title Burgers and Fries and Cherry Pies}
 {meta: artist Charley Pride}
-{meta: writer Ben Peters}
+{meta: composer Ben Peters}
 
 {start_of_verse: Verse 1}
 [C]Burgers and fries and [Em]cherry pies it was [F]simple and good back [C]then

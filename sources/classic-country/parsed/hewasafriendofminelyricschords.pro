@@ -1,6 +1,6 @@
 {meta: title He Was A Friend of Mine}
 {meta: artist Bobby Bare}
-{meta: writer Harlan Howard and Bobby Bare}
+{meta: composer Harlan Howard and Bobby Bare}
 
 {start_of_verse: Verse 1}
 [G]He  [D7]was a friend of [G]mine  [D7]he  was a friend of [G]mine

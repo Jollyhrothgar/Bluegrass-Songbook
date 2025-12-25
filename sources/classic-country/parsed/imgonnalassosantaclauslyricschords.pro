@@ -1,6 +1,6 @@
 {meta: title I'm Gonna Lasso Santa Claus}
 {meta: artist Brenda Lee}
-{meta: writer Frankie Adams and Wilbur Jones}
+{meta: composer Frankie Adams and Wilbur Jones}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna Lasso Santa [Am]Claus 

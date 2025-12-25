@@ -1,6 +1,6 @@
 {meta: title If Hollywood Don't Need You}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [G]Well you know I’m not much good [D7]at writing [Em]letters

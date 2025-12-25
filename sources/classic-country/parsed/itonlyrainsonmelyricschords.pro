@@ -1,6 +1,6 @@
 {meta: title It Only Rains On Me}
 {meta: artist Don Williams}
-{meta: writer Bob McDill}
+{meta: composer Bob McDill}
 
 {start_of_verse: Verse 1}
 [C]I know all [G7]about black [C]clouds

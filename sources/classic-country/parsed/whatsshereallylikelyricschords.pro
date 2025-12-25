@@ -1,6 +1,6 @@
 {meta: title What's She Really Like}
 {meta: artist Elvis Presley}
-{meta: writer Sid Wayne and Abner Silver}
+{meta: composer Sid Wayne and Abner Silver}
 
 {start_of_verse: Verse 1}
 [C]What's she really like the [F]girl that you [G7]see me with

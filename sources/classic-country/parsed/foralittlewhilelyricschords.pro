@@ -1,6 +1,6 @@
 {meta: title For a Little While}
 {meta: artist John Conlee}
-{meta: writer Don Henry}
+{meta: composer Don Henry}
 
 {start_of_verse: Verse 1}
 [C]When the tide comes up and the sun goes down

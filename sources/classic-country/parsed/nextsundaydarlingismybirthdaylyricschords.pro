@@ -1,6 +1,6 @@
 {meta: title Next Sunday Darling Is My Birthday}
 {meta: artist Hank Williams}
-{meta: writer Sydney Nathan and James Pritchett}
+{meta: composer Sydney Nathan and James Pritchett}
 
 {start_of_verse: Verse 1}
 [G]Next Sunday Darling is my [D7]birthday

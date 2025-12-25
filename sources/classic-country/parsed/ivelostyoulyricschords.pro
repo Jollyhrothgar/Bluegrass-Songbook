@@ -1,6 +1,6 @@
 {meta: title I've Lost You}
 {meta: artist Elvis Presley}
-{meta: writer Ken Howard and Alan Blaikley}
+{meta: composer Ken Howard and Alan Blaikley}
 
 {start_of_verse: Verse 1}
 [G]Lying by your [D7]side I watch you [Em]sleep[G]ing

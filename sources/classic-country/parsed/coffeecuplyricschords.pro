@@ -1,6 +1,6 @@
 {meta: title Coffee Cup}
 {meta: artist Jim Ed Brown}
-{meta: writer Tommy Williamson}
+{meta: composer Tommy Williamson}
 
 {start_of_verse: Verse 1}
 [G]Coffee cup coffee cup talk to me

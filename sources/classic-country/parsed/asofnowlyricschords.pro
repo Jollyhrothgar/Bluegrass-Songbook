@@ -1,6 +1,6 @@
 {meta: title As Of Now}
 {meta: artist Melba Montgomery}
-{meta: writer Earl Montgomery}
+{meta: composer Earl Montgomery}
 
 {start_of_verse: Verse 1}
 [C]As of now I'm startin' my life over

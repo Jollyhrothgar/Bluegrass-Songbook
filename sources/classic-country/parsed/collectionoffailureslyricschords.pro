@@ -1,6 +1,6 @@
 {meta: title Collection Of Failures}
 {meta: artist Little Jimmy Dickens}
-{meta: writer Gordon Terry and Curtis Maze}
+{meta: composer Gordon Terry and Curtis Maze}
 
 {start_of_verse: Verse 1}
 [C]Alone and rejected the multitude [C7]stands

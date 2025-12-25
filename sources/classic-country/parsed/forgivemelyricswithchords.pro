@@ -1,6 +1,6 @@
 {meta: title Forgive Me}
 {meta: artist Hank Thompson}
-{meta: writer Jack Yellen and Milton Ager}
+{meta: composer Jack Yellen and Milton Ager}
 
 {start_of_verse: Verse 1}
 Forgive Me

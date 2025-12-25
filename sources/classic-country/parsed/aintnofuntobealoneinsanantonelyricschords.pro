@@ -1,6 +1,6 @@
 {meta: title Ain't No Fun To Be Alone In San Antone}
 {meta: artist Gene Watson}
-{meta: writer Buddy Cannon and Luke Reed}
+{meta: composer Buddy Cannon and Luke Reed}
 
 {start_of_verse: Verse 1}
 [G]It's another Saturday night down in San [D7]Antonio

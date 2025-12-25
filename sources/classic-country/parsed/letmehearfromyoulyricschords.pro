@@ -1,6 +1,6 @@
 {meta: title Let Me Hear From You}
 {meta: artist Billy Walker}
-{meta: writer Marty Robbins}
+{meta: composer Marty Robbins}
 
 {start_of_verse: Verse 1}
 [C]We had a quarrel then [G7]we [C]parted

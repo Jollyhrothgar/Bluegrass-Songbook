@@ -1,6 +1,6 @@
 {meta: title She Talked A Lot About Texas}
 {meta: artist Cal Smith}
-{meta: writer Don Wayne}
+{meta: composer Don Wayne}
 
 {start_of_verse: Verse 1}
 [G]She always wanted me [C]to go to [G]Texas

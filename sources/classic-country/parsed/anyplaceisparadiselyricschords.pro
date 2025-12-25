@@ -1,6 +1,6 @@
 {meta: title Anyplace is Paradise}
 {meta: artist Elvis Presley}
-{meta: writer Joe Thomas}
+{meta: composer Joe Thomas}
 
 {start_of_verse: Verse 1}
 [C]Whether you're riding down a highway

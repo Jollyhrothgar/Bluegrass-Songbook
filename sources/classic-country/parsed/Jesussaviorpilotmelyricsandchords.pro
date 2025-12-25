@@ -1,6 +1,6 @@
 {meta: title Jesus Savior Pilot Me}
 {meta: artist George Morgan}
-{meta: writer William York}
+{meta: composer William York}
 
 {start_of_verse: Verse 1}
 [C]Jesus Savior [F]pilot [C]me 

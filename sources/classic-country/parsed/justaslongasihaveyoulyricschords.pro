@@ -1,6 +1,6 @@
 {meta: title Just As Long As I Have You}
 {meta: artist Don Williams}
-{meta: writer Dave Loggins and J.D. Martin}
+{meta: composer Dave Loggins and J.D. Martin}
 
 {start_of_verse: Verse 1}
 [C]Well I love to wander on a sandy shore

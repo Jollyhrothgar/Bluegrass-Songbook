@@ -1,6 +1,6 @@
 {meta: title He'll Have To Stay}
 {meta: artist Skeeter Davis}
-{meta: writer Joe Allison, Audrey Allison, Charles Grean}
+{meta: composer Joe Allison, Audrey Allison, Charles Grean}
 
 {start_of_verse: Verse 1}
 [C]I am glad you've finally [F]called me on the [C]phone 

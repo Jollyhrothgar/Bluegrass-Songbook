@@ -1,6 +1,6 @@
 {meta: title She's As Close As I Can Get To Loving You}
 {meta: artist Hank Locklin}
-{meta: writer Dallas Frazier and A.L. Owens}
+{meta: composer Dallas Frazier and A.L. Owens}
 
 {start_of_verse: Verse 1}
 [C]Her hair [G7]should be a little [C]darker 

@@ -1,6 +1,6 @@
 {meta: title In My Robe Of White}
 {meta: artist The Bass Mountain Boys}
-{meta: writer Andrea Geniece Ingold}
+{meta: composer Andrea Geniece Ingold}
 
 {start_of_verse: Verse 1}
 [G]In my robe of white I will fly away

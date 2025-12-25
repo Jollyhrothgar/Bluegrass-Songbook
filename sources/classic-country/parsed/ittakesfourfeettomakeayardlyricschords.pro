@@ -1,6 +1,6 @@
 {meta: title It Takes Four Feet To Make A Yard}
 {meta: artist Carl Smith}
-{meta: writer Larry Lee and Glenn D. Tubb}
+{meta: composer Larry Lee and Glenn D. Tubb}
 
 {start_of_verse: Verse 1}
 [G]Billy hand the shovel to me 

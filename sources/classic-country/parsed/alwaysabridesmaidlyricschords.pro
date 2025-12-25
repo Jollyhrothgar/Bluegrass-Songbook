@@ -1,6 +1,6 @@
 {meta: title Always a Bridesmaid}
 {meta: artist Norma Jean}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [G]One by one my friends are gettin' [D7]married

@@ -1,6 +1,6 @@
 {meta: title Jeannie Norman}
 {meta: artist Charley Pride}
-{meta: writer Dale Morris}
+{meta: composer Dale Morris}
 
 {start_of_verse: Verse 1}
 [C]It's been ten long and [F]lonely years since [C]I've been to my hometown

@@ -1,6 +1,6 @@
 {meta: title A Few Stars Short Of The Moon}
 {meta: artist Moe Bandy}
-{meta: writer Anthony Smith, Aaron Barker, Ron Harbin}
+{meta: composer Anthony Smith, Aaron Barker, Ron Harbin}
 
 {start_of_verse: Verse 1}
 [A#7]I'm not [F]pretending to be [C]something that I'm not

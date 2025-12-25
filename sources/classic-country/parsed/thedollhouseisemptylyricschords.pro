@@ -1,6 +1,6 @@
 {meta: title The Doll House Is Empty}
 {meta: artist the Everly Brothers}
-{meta: writer Howard Greenfield and Jack Keller}
+{meta: composer Howard Greenfield and Jack Keller}
 
 {start_of_verse: Verse 1}
 [G]Once you used to play a game called break a heart a day

@@ -1,6 +1,6 @@
 {meta: title Tonight I'm Coming Home To An Angel}
 {meta: artist Johnny Bush}
-{meta: writer Glenn Sutton}
+{meta: composer Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [G]I'd like to stay here [C]all night long and [G]drink with you

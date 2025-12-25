@@ -1,6 +1,6 @@
 {meta: title It's Not All Over}
 {meta: artist Marty Robbins}
-{meta: writer Randy Sharp}
+{meta: composer Randy Sharp}
 
 {start_of_verse: Verse 1}
 [C]It's not all over [G7]when you leave

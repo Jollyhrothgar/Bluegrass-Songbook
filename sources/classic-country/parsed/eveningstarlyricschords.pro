@@ -1,6 +1,6 @@
 {meta: title Evening Star}
 {meta: artist Kenny Rogers}
-{meta: writer Barry and Maurice Gibb}
+{meta: composer Barry and Maurice Gibb}
 
 {start_of_verse: Verse 1}
 [G]If you never rode west of the Arizona [D7]border

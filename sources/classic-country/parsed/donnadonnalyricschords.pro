@@ -1,6 +1,6 @@
 {meta: title Donna Donna}
 {meta: artist Everly Brothers}
-{meta: writer Boudleaux Bryant and Felice Bryant}
+{meta: composer Boudleaux Bryant and Felice Bryant}
 
 {start_of_verse: Verse 1}
 [C]Donna [Em]Donna [G7]why d’ya wanna do [C]that

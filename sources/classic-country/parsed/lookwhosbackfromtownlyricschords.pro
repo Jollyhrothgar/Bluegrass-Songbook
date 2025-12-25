@@ -1,6 +1,6 @@
 {meta: title Look Who's Back From Town}
 {meta: artist George Strait}
-{meta: writer Dale Dodson and Billy Lawson}
+{meta: composer Dale Dodson and Billy Lawson}
 
 {start_of_verse: Verse 1}
 [C]Those city lights [F]drew you like a [C]magnet

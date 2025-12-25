@@ -1,6 +1,6 @@
 {meta: title On The Back Row}
 {meta: artist George Jones}
-{meta: writer Jerry Chestnut and Norris Wilson}
+{meta: composer Jerry Chestnut and Norris Wilson}
 
 {start_of_verse: Verse 1}
 [C]Here I sit on the [F]back row in a [C]church down the street

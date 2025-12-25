@@ -1,6 +1,6 @@
 {meta: title Don't Turn Around}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Gary Burr}
+{meta: composer Gary Burr}
 
 {start_of_verse: Verse 1}
 [C]Don’t turn [F]around you could be [G7]tempted

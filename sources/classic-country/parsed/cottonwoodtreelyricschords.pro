@@ -1,6 +1,6 @@
 {meta: title Cottonwood Tree}
 {meta: artist Marty Robbins}
-{meta: writer Bobby Sykes}
+{meta: composer Bobby Sykes}
 
 {start_of_verse: Verse 1}
 [C]I rode into Tucson three hours [G7]ago

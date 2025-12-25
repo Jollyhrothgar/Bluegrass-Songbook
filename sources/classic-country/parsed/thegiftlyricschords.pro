@@ -1,6 +1,6 @@
 {meta: title The Gift}
 {meta: artist Garth Brooks}
-{meta: writer Stephanie Davis}
+{meta: composer Stephanie Davis}
 
 {start_of_verse: Verse 1}
 [C]A poor orphan girl named Maria

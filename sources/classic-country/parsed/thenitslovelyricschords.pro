@@ -1,6 +1,6 @@
 {meta: title Then It's Love}
 {meta: artist Don Williams}
-{meta: writer Dennis Linde}
+{meta: composer Dennis Linde}
 
 {start_of_verse: Verse 1}
 [C]Some people say that love is a [G7]rose

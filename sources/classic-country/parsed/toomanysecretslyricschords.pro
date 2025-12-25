@@ -1,6 +1,6 @@
 {meta: title Too Many Secrets}
 {meta: artist Patsy Cline}
-{meta: writer Bobbie Lyle}
+{meta: composer Bobbie Lyle}
 
 {start_of_verse: Verse 1}
 [G]Last night I met a woman you'll recognize her name

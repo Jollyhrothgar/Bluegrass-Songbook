@@ -1,6 +1,6 @@
 {meta: title Up All Night}
 {meta: artist Tracy Lawrence}
-{meta: writer Mark Nesler and Tony Martin}
+{meta: composer Mark Nesler and Tony Martin}
 
 {start_of_verse: Verse 1}
 [G]Yeah I'm a little tired I'm a little wired[F]   [C]

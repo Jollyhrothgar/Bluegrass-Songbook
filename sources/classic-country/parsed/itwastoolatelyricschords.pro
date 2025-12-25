@@ -1,6 +1,6 @@
 {meta: title It Was Too Late}
 {meta: artist Cal Smith}
-{meta: writer Shirley Collie}
+{meta: composer Shirley Collie}
 
 {start_of_verse: Verse 1}
 [G]It was too late for us a [D7]long long time [G]ago [G7]

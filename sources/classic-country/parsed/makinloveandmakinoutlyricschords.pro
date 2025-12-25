@@ -1,6 +1,6 @@
 {meta: title Makin' Love And Makin' Out}
 {meta: artist John Anderson}
-{meta: writer Charlie Craig}
+{meta: composer Charlie Craig}
 
 {start_of_verse: Verse 1}
 [G7]She had [C]all the looks it takes to [F]go with understanding ways

@@ -1,6 +1,6 @@
 {meta: title Daydreams About Night Things}
 {meta: artist Charlie Pride}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [D7]I'm having day dreams about night [G]things

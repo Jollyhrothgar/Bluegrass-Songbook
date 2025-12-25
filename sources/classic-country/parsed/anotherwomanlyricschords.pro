@@ -1,6 +1,6 @@
 {meta: title Another Woman}
 {meta: artist Billy Crash Craddock}
-{meta: writer Dan Penn and Buzz Cason}
+{meta: composer Dan Penn and Buzz Cason}
 
 {start_of_verse: Verse 1}
 [G]Only [C]one thing can make you get [D7]over a [G]woma[B7]n

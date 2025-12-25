@@ -1,6 +1,6 @@
 {meta: title Been There Done That}
 {meta: artist Ricky Van Shelton}
-{meta: writer Craig Wiseman and John Jarrard}
+{meta: composer Craig Wiseman and John Jarrard}
 
 {start_of_verse: Verse 1}
 [C]I was finally getting over all the [F]damage you had done

@@ -1,6 +1,6 @@
 {meta: title Heart Weary And Blue}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Charlene Gordon}
+{meta: composer Charlene Gordon}
 
 {start_of_verse: Verse 1}
 [C]Take back the memories you [G7]gave to me

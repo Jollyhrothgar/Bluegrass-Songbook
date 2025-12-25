@@ -1,6 +1,6 @@
 {meta: title Blue Mesa}
 {meta: artist Randy Travis}
-{meta: writer Roger Brown and Luke Reed}
+{meta: composer Roger Brown and Luke Reed}
 
 {start_of_verse: Verse 1}
 [C]Bl[B7]ue [C]Mesa land of the Sioux and [G]Crow

@@ -1,6 +1,6 @@
 {meta: title Frozen Heart}
 {meta: artist George Jones}
-{meta: writer George Jones and Rick Yancey}
+{meta: composer George Jones and Rick Yancey}
 
 {start_of_verse: Verse 1}
 [G]Frozen heart that's standing all [C]alone

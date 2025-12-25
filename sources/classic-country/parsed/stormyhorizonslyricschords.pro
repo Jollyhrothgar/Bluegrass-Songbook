@@ -1,6 +1,6 @@
 {meta: title Stormy Horizons}
 {meta: artist Jim and Jesse}
-{meta: writer Iris Franks and Ira Louvin}
+{meta: composer Iris Franks and Ira Louvin}
 
 {start_of_verse: Verse 1}
 [G]There's stormy [D7]horizons in my [G]heart

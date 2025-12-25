@@ -1,6 +1,6 @@
 {meta: title Get Out Of My Life}
 {meta: artist Ferlin Husky}
-{meta: writer Jimmy Peppers and Ferlin Husky}
+{meta: composer Jimmy Peppers and Ferlin Husky}
 
 {start_of_verse: Verse 1}
 [C]Get out of my life if you don't love [D7]me

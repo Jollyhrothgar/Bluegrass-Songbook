@@ -1,6 +1,6 @@
 {meta: title Judy}
 {meta: artist Wynn Stewart}
-{meta: writer Lucy Stokes}
+{meta: composer Lucy Stokes}
 
 {start_of_verse: Verse 1}
 [C]You came down out of heaven to make me happy [G7]dear

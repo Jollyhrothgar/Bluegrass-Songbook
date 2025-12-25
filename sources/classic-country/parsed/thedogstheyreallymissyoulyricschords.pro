@@ -1,6 +1,6 @@
 {meta: title The Dogs They Really Miss You}
 {meta: artist The Austin Lounge Lizards}
-{meta: writer Hank Card}
+{meta: composer Hank Card}
 
 {start_of_verse: Verse 1}
 [C]I know the day you left you said let's never talk [F]again 

@@ -1,6 +1,6 @@
 {meta: title Just As Soon As I Get Over Loving You}
 {meta: artist Jean Shepard}
-{meta: writer Ben Peters and George Richey}
+{meta: composer Ben Peters and George Richey}
 
 {start_of_verse: Verse 1}
 [G7]I'll go [C]out to[Em]night to [Dm]old [G7]familiar [C]places

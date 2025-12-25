@@ -1,6 +1,6 @@
 {meta: title Would You}
 {meta: artist Fats Domino}
-{meta: writer Pearl King and Victor A Augustine}
+{meta: composer Pearl King and Victor A Augustine}
 
 {start_of_verse: Verse 1}
 [C]If I love you darling [D7]would you love me too

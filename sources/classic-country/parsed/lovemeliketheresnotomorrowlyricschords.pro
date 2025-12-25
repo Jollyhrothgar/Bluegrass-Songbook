@@ -1,6 +1,6 @@
 {meta: title Love Me Like There's No Tomorrow}
 {meta: artist Sonny James}
-{meta: writer Arlie Duff}
+{meta: composer Arlie Duff}
 
 {start_of_verse: Verse 1}
 [G]Love me like there's no [G][C]tomorrow

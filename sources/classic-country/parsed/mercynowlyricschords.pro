@@ -1,6 +1,6 @@
 {meta: title Mercy Now}
 {meta: artist Bobby Bare}
-{meta: writer Mary Gauthier}
+{meta: composer Mary Gauthier}
 
 {start_of_verse: Verse 1}
 [C]My father could use a little mercy [F]now

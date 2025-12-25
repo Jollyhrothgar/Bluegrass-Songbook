@@ -1,6 +1,6 @@
 {meta: title Danville Girl}
 {meta: artist The Greenbriar Boys}
-{meta: writer Vince Martin}
+{meta: composer Vince Martin}
 
 {start_of_verse: Verse 1}
 [G]My pocket book was empty

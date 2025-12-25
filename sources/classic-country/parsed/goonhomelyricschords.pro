@@ -1,6 +1,6 @@
 {meta: title Go On Home}
 {meta: artist Ernest Tubb}
-{meta: writer Hank Cochran}
+{meta: composer Hank Cochran}
 
 {start_of_verse: Verse 1}
 [G]You’re watching your watch and I know what's on your [C]mind

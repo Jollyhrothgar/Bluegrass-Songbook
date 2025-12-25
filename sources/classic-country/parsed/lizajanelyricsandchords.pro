@@ -1,6 +1,6 @@
 {meta: title Liza Jane}
 {meta: artist Vince Gill}
-{meta: writer Reed Nielsen and Vince Gill}
+{meta: composer Reed Nielsen and Vince Gill}
 
 {start_of_verse: Verse 1}
 [G]You've got my number you've got my name

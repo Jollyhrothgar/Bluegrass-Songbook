@@ -1,6 +1,6 @@
 {meta: title I'll Meet You In The Morning}
 {meta: artist Webb Pierce}
-{meta: writer Albert E. Brumley}
+{meta: composer Albert E. Brumley}
 
 {start_of_verse: Verse 1}
 [G]I'll meet you in the morning by the [C]bright river[G]side

@@ -1,6 +1,6 @@
 {meta: title Cheatin' Kind Of Life}
 {meta: artist Rhonda Vincent}
-{meta: writer Joshua Williams and Rhonda Vincent}
+{meta: composer Joshua Williams and Rhonda Vincent}
 
 {start_of_verse: Verse 1}
 [G]You put me out you knocked me down

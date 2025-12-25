@@ -1,6 +1,6 @@
 {meta: title When You're Hot You're Hot}
 {meta: artist Porter Wagoner}
-{meta: writer Curly Putman}
+{meta: composer Curly Putman}
 
 {start_of_verse: Verse 1}
 [C]There is ice today on your lips as you [D7]kiss me

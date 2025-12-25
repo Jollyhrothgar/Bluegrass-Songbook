@@ -1,6 +1,6 @@
 {meta: title Stolen Love Is The Beginning Of The End}
 {meta: artist George Morgan}
-{meta: writer Ott Stephens}
+{meta: composer Ott Stephens}
 
 {start_of_verse: Verse 1}
 [D7]All that [G]remains of our affair is the shame if [C]we must [G]bare

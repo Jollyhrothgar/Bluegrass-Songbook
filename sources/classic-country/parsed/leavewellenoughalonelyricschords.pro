@@ -1,6 +1,6 @@
 {meta: title Leave Well Enough Alone}
 {meta: artist Keith Whitley}
-{meta: writer Bill Caswell and Keith Whitley}
+{meta: composer Bill Caswell and Keith Whitley}
 
 {start_of_verse: Verse 1}
 [G7]Let's [C]leave well [G7]enough a[C]lone

@@ -1,6 +1,6 @@
 {meta: title In The Hills Of Shiloh}
 {meta: artist Bobby Bare}
-{meta: writer Shel Silverstein}
+{meta: composer Shel Silverstein}
 
 {start_of_verse: Verse 1}
 [C]Have you seen [F]Amanda [C]Blaine

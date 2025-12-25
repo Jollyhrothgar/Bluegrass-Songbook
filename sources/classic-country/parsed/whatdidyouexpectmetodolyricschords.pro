@@ -1,6 +1,6 @@
 {meta: title What Did You Expect Me To Do}
 {meta: artist George Strait}
-{meta: writer Sanger D. Shafer}
+{meta: composer Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I smile when [C]you stayed home for a while

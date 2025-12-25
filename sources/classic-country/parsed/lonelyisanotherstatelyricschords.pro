@@ -1,6 +1,6 @@
 {meta: title Lonely Is Another State}
 {meta: artist John Anderson}
-{meta: writer Ervan James Parker and John David Anderson}
+{meta: composer Ervan James Parker and John David Anderson}
 
 {start_of_verse: Verse 1}
 [G]There’s nothing I feel stronger than the need to travel on

@@ -1,6 +1,6 @@
 {meta: title Cup Of Tea}
 {meta: artist Don Williams}
-{meta: writer Harlan S. White}
+{meta: composer Harlan S. White}
 
 {start_of_verse: Verse 1}
 [C]I don't want to be the fiery sun

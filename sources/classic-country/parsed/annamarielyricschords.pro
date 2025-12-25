@@ -1,6 +1,6 @@
 {meta: title Anna Marie}
 {meta: artist Jim Reeves}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Tonight while the snowflakes are [D7]falling

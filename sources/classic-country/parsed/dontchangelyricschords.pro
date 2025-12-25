@@ -1,6 +1,6 @@
 {meta: title Don't Change}
 {meta: artist Billy Walker}
-{meta: writer Bobby Sykes}
+{meta: composer Bobby Sykes}
 
 {start_of_verse: Verse 1}
 [G7]Don’t [C]change you have [G7]loved me so [C]long

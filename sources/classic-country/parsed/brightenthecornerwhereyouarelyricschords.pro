@@ -1,6 +1,6 @@
 {meta: title Brighten The Corner Where You Are}
 {meta: artist Jim Ed Brown}
-{meta: writer Charles Gabriel and Ina Ogden}
+{meta: composer Charles Gabriel and Ina Ogden}
 
 {start_of_verse: Verse 1}
 [G]Brighten the corner [D7]where you are

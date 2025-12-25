@@ -1,6 +1,6 @@
 {meta: title A Letter From Shirley Miller}
 {meta: artist Statler Brothers}
-{meta: writer Harold Reid, Philip E. Balsley, Don S. Reid}
+{meta: composer Harold Reid, Philip E. Balsley, Don S. Reid}
 
 {start_of_verse: Verse 1}
 [C]I got a letter to[F]day from [C]Shirley [D7]Miller

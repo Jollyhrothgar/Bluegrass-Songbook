@@ -1,6 +1,6 @@
 {meta: title Eternity Has Two}
 {meta: artist Doyle Lawson}
-{meta: writer Dee Gaskin and John Swain}
+{meta: composer Dee Gaskin and John Swain}
 
 {start_of_verse: Verse 1}
 [C]When the melody’s [G7]been [C]written

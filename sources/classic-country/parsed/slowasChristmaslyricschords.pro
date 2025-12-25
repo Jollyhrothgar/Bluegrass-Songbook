@@ -1,6 +1,6 @@
 {meta: title Slow As Christmas}
 {meta: artist Clint Black}
-{meta: writer Clint Black and Hayden Nicholas}
+{meta: composer Clint Black and Hayden Nicholas}
 
 {start_of_verse: Verse 1}
 [C]You're as slow as [G]Christmas I was [C]up be[D7]fore the [G]dawn

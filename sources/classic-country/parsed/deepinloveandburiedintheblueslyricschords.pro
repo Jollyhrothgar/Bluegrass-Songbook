@@ -1,6 +1,6 @@
 {meta: title Deep In Love And Buried In The Blues}
 {meta: artist Johnny Bush}
-{meta: writer Joe Gracey}
+{meta: composer Joe Gracey}
 
 {start_of_verse: Verse 1}
 [G]That first night we met I knew and you [C]probably felt it [G]too 

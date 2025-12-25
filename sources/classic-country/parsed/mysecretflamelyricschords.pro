@@ -1,6 +1,6 @@
 {meta: title My Secret Flame}
 {meta: artist The Mavericks}
-{meta: writer Rafe VanHoy}
+{meta: composer Rafe VanHoy}
 
 {start_of_verse: Verse 1}
 [G]You'll never [C]know  I'll never [G]tell[Em]

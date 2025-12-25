@@ -1,6 +1,6 @@
 {meta: title Fifteen Beers}
 {meta: artist Johnny Paycheck}
-{meta: writer Brenda W. Davis and Stephen A. Davis}
+{meta: composer Brenda W. Davis and Stephen A. Davis}
 
 {start_of_verse: Verse 1}
 [C]I drank fifteen beers that's a [F]whole lot of brew in one [C]night

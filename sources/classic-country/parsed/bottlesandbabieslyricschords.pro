@@ -1,6 +1,6 @@
 {meta: title Bottles And Babies}
 {meta: artist Webb Pierce}
-{meta: writer Webb Pierce and Max Powell}
+{meta: composer Webb Pierce and Max Powell}
 
 {start_of_verse: Verse 1}
 [C]Now the bottles are empty and the [G7]babies are [C]gone

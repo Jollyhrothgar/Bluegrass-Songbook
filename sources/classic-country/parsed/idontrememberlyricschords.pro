@@ -1,6 +1,6 @@
 {meta: title I Don't Remember}
 {meta: artist Jean Shepard}
-{meta: writer Marijohn Wilkin}
+{meta: composer Marijohn Wilkin}
 
 {start_of_verse: Verse 1}
 [G]I don't remember [D7]much about [G]him that's the lie [C]I tell my [G]heart

@@ -1,6 +1,6 @@
 {meta: title I'd Know You Anywhere}
 {meta: artist Justin Trevino}
-{meta: writer Justin Tubb}
+{meta: composer Justin Tubb}
 
 {start_of_verse: Verse 1}
 [G]Your lips look hard and cold now 

@@ -1,6 +1,6 @@
 {meta: title Bad News}
 {meta: artist Boxcar Willie}
-{meta: writer John D. Loudermilk}
+{meta: composer John D. Loudermilk}
 
 {start_of_verse: Verse 1}
 [C]Well bad news travels like wild fire

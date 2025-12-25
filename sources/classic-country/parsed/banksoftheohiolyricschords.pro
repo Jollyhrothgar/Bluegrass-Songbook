@@ -1,6 +1,6 @@
 {meta: title Banks Of The Ohio}
 {meta: artist Johnny Cash}
-{meta: writer Maybelle Carter}
+{meta: composer Maybelle Carter}
 
 {start_of_verse: Verse 1}
 [G]I asked my love to take a [D7]walk

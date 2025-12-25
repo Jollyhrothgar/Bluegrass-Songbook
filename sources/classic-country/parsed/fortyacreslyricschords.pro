@@ -1,6 +1,6 @@
 {meta: title Forty Acres}
 {meta: artist Boxcar Willie}
-{meta: writer Earl Green}
+{meta: composer Earl Green}
 
 {start_of_verse: Verse 1}
 [C]He was headin' into Beantown in a big long diesel [D7]truck

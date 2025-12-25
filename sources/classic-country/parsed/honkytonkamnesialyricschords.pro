@@ -1,6 +1,6 @@
 {meta: title Honky Tonk Amnesia}
 {meta: artist Moe Bandy}
-{meta: writer Arthur Leo Owens and Sanger D. Shafer}
+{meta: composer Arthur Leo Owens and Sanger D. Shafer}
 
 {start_of_verse: Verse 1}
 [G]She’d be hurt if she knew I was [C]drinking

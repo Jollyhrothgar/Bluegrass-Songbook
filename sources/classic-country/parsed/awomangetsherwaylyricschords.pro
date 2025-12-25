@@ -1,6 +1,6 @@
 {meta: title A Woman Gets Her Way}
 {meta: artist Marty Robbins}
-{meta: writer Joe Babcock}
+{meta: composer Joe Babcock}
 
 {start_of_verse: Verse 1}
 [G](Woman gets her way most [C]every time)

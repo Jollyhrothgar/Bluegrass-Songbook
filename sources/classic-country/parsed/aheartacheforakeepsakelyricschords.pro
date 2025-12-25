@@ -1,6 +1,6 @@
 {meta: title A Heartache for a Keepsake}
 {meta: artist Faron Young}
-{meta: writer Roger Miller}
+{meta: composer Roger Miller}
 
 {start_of_verse: Verse 1}
 [C]A heartache for a keepsake

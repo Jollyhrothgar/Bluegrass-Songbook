@@ -1,6 +1,6 @@
 {meta: title Answers}
 {meta: artist Carl Smith}
-{meta: writer Wiley Walker}
+{meta: composer Wiley Walker}
 
 {start_of_verse: Verse 1}
 [C]Listen my Lord to this plea of mine

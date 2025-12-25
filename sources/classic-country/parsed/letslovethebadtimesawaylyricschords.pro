@@ -1,6 +1,6 @@
 {meta: title Let's Love The Bad Times Away}
 {meta: artist Ricky Skaggs}
-{meta: writer Wayland Patton}
+{meta: composer Wayland Patton}
 
 {start_of_verse: Verse 1}
 [C]Oh [F]please [C]hold me one more [G7]time like [F]you used to [C]do

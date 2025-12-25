@@ -1,6 +1,6 @@
 {meta: title Always Have Always Will}
 {meta: artist Janie Frickie}
-{meta: writer Johnny Mears}
+{meta: composer Johnny Mears}
 
 {start_of_verse: Verse 1}
 [G7]It seems funny I remember your [C]number

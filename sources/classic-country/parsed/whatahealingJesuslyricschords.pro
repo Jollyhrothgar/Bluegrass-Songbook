@@ -1,6 +1,6 @@
 {meta: title What A Healing Jesus}
 {meta: artist The Nashville Singers}
-{meta: writer Mary Brown}
+{meta: composer Mary Brown}
 
 {start_of_verse: Verse 1}
 [G7]When [C]walking by the sea [Em]come and follow [Dm]me Jesus [G7]called

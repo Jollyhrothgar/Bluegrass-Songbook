@@ -1,6 +1,6 @@
 {meta: title Excuse Me Baby}
 {meta: artist Ricky Nelson}
-{meta: writer Dorsey Burnette and Joe Osborn}
+{meta: composer Dorsey Burnette and Joe Osborn}
 
 {start_of_verse: Verse 1}
 [G]Excuse me baby but you're looking mighty fine

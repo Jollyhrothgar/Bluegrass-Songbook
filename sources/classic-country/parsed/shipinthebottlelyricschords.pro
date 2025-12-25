@@ -1,6 +1,6 @@
 {meta: title Ship In The Bottle}
 {meta: artist Stonewall Jackson}
-{meta: writer Glenn Sutton and Hugh X. Lewis}
+{meta: composer Glenn Sutton and Hugh X. Lewis}
 
 {start_of_verse: Verse 1}
 [C]As I sit at this [G7]bar and drink it [C]over

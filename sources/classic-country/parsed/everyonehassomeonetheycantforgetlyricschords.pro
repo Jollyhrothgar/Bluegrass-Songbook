@@ -1,6 +1,6 @@
 {meta: title Everyone Has Someone They Can't Forget}
 {meta: artist Conway Twitty}
-{meta: writer Naomi Martin and Marty Yonts}
+{meta: composer Naomi Martin and Marty Yonts}
 
 {start_of_verse: Verse 1}
 [C]She gently opens up her [G7]scrapbook  [F][C]and a faded rose falls [C]out

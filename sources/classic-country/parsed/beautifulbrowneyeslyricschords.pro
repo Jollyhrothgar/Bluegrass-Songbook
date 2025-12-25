@@ -1,6 +1,6 @@
 {meta: title Beautiful Brown Eyes}
 {meta: artist Roy Acuff}
-{meta: writer Alton Delmore, Arthur Smith, Jerry Capehart}
+{meta: composer Alton Delmore, Arthur Smith, Jerry Capehart}
 
 {start_of_verse: Verse 1}
 [G]Beautiful [G7]beautiful brown [C]eyes

@@ -1,6 +1,6 @@
 {meta: title Talk To Me Texas}
 {meta: artist Keith Whitley}
-{meta: writer Curly Putman, Don Cook, Bucky Jones}
+{meta: composer Curly Putman, Don Cook, Bucky Jones}
 
 {start_of_verse: Verse 1}
 [C]It's lonely out tonight down here in [F]Georgia

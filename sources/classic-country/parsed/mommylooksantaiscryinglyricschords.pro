@@ -1,6 +1,6 @@
 {meta: title Mommy Look Santa Is Crying}
 {meta: artist Stonewall Jackson}
-{meta: writer Mack Vickery}
+{meta: composer Mack Vickery}
 
 {start_of_verse: Verse 1}
 [G]Mommy look old [C]Santa is [G]crying

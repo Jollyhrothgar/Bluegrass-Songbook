@@ -1,6 +1,6 @@
 {meta: title You're the Reason I'm in Love}
 {meta: artist Sonny James}
-{meta: writer Jack Morrow}
+{meta: composer Jack Morrow}
 
 {start_of_verse: Verse 1}
 [G]You're the reason I'm in [D7]love 

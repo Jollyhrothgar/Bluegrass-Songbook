@@ -1,6 +1,6 @@
 {meta: title My Father's Son}
 {meta: artist Ricky Skaggs}
-{meta: writer Ricky Skaggs and George Green}
+{meta: composer Ricky Skaggs and George Green}
 
 {start_of_verse: Verse 1}
 [G]My history is no secret it's [C]written in the [D7]stones

@@ -1,6 +1,6 @@
 {meta: title Shine On}
 {meta: artist George Jones}
-{meta: writer Bob Morrison and Johnny McRae}
+{meta: composer Bob Morrison and Johnny McRae}
 
 {start_of_verse: Verse 1}
 [G]She'll never grace the centerfold of Playboy [C]Magazine

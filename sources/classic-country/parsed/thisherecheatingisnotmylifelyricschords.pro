@@ -1,6 +1,6 @@
 {meta: title This Here Cheating Is Not My Life}
 {meta: artist Leonard Berg and Julie Leekley}
-{meta: writer Leonard Berg}
+{meta: composer Leonard Berg}
 
 {start_of_verse: Verse 1}
 [C]In a honky tonk in Dallas she was sitting all [G7]alone

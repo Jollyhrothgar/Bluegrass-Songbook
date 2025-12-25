@@ -1,5 +1,5 @@
 {meta: artist Garth Brooks}
-{meta: writer Stephanie Brown and Garth Brooks}
+{meta: composer Stephanie Brown and Garth Brooks}
 
 {start_of_verse: Verse 1}
 [Am]Yesterday she [C]thanked me for [F]oiling that front [C]door

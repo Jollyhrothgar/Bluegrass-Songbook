@@ -1,6 +1,6 @@
 {meta: title Lost In The Shuffle}
 {meta: artist Stonewall Jackson}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [G]I knew that you were popular with [C]all your pretty charms

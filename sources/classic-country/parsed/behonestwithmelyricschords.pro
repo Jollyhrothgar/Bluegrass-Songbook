@@ -1,6 +1,6 @@
 {meta: title Be Honest With Me}
 {meta: artist Gene Autry}
-{meta: writer Fred Rose and Gene Autry}
+{meta: composer Fred Rose and Gene Autry}
 
 {start_of_verse: Verse 1}
 [G]Be honest with me dear [G7]whatever [C]you [G]do

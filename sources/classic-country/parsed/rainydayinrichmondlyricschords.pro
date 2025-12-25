@@ -1,6 +1,6 @@
 {meta: title Rainy Day In Richmond}
 {meta: artist Bobby Bare}
-{meta: writer Jerry McBee, Dan Lomax, Billy Large}
+{meta: composer Jerry McBee, Dan Lomax, Billy Large}
 
 {start_of_verse: Verse 1}
 [C]It was a rainy day in [G7]Richmond

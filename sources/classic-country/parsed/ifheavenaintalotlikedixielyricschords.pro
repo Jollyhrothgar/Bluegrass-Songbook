@@ -1,6 +1,6 @@
 {meta: title If Heaven Ain’t A Lot Like Dixie}
 {meta: artist Hank Williams Jr.}
-{meta: writer William Maddox and David Leslie Moore}
+{meta: composer William Maddox and David Leslie Moore}
 
 {start_of_verse: Verse 1}
 [C]If heaven ain't a lot like Dixie [F]I don't [G7]wanna [C]go

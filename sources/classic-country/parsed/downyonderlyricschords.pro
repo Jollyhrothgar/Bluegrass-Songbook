@@ -1,6 +1,6 @@
 {meta: title Down Yonder}
 {meta: artist Red Foley}
-{meta: writer Wolfe Gilbert}
+{meta: composer Wolfe Gilbert}
 
 {start_of_verse: Verse 1}
 [C]Railroad train [D7]railroad train [G7]hurry up some [C]more

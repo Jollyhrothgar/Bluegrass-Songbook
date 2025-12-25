@@ -1,6 +1,6 @@
 {meta: title Something}
 {meta: artist Tanya Tucker}
-{meta: writer George Harrison}
+{meta: composer George Harrison}
 
 {start_of_verse: Verse 1}
 [C]Something in the way he moves [Em]me

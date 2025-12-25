@@ -1,6 +1,6 @@
 {meta: title Sunbonnet Sue}
 {meta: artist Bob Wills}
-{meta: writer Milton Brown}
+{meta: composer Milton Brown}
 
 {start_of_verse: Verse 1}
 [G]Sunbonnet Sue when I said [A7]goodbye to you

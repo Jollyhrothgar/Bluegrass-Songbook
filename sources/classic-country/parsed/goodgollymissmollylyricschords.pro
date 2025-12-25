@@ -1,6 +1,6 @@
 {meta: title Good Golly Miss Molly}
 {meta: artist Little Richard}
-{meta: writer Robert Blackwell and John Marascalco}
+{meta: composer Robert Blackwell and John Marascalco}
 
 {start_of_verse: Verse 1}
 [G]Good golly Miss Molly sure like to ball

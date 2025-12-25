@@ -1,6 +1,6 @@
 {meta: title The Thrill Is Back}
 {meta: artist Alan Jackson}
-{meta: writer Anne Graham and Dana Hunt}
+{meta: composer Anne Graham and Dana Hunt}
 
 {start_of_verse: Verse 1}
 [C]Well I'm ready to raise the [G7]blinds in this place

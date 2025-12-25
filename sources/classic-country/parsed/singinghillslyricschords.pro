@@ -1,6 +1,6 @@
 {meta: title Singing Hills}
 {meta: artist Slim Whitman}
-{meta: writer Mack David, Dick Sanford, Sammy Mysels}
+{meta: composer Mack David, Dick Sanford, Sammy Mysels}
 
 {start_of_verse: Verse 1}
 [C]The singing hills are singing [G7]tonight

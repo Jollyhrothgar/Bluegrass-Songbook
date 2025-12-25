@@ -1,6 +1,6 @@
 {meta: title The Red Strokes}
 {meta: artist Garth Brooks}
-{meta: writer Jenny Yates, James Garver, Garth Brooks}
+{meta: composer Jenny Yates, James Garver, Garth Brooks}
 
 {start_of_verse: Verse 1}
 [G]Moonlight on canvas midnight and wine

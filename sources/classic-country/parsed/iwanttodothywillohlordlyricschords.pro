@@ -1,6 +1,6 @@
 {meta: title I Want To Do Thy Will Oh Lord}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Hansel Vibbert and Ronnie Goss}
+{meta: composer Hansel Vibbert and Ronnie Goss}
 
 {start_of_verse: Verse 1}
 [C]The cross that you [G7]bear may be [C]hard to carry

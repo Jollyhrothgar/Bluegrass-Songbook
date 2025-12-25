@@ -1,6 +1,6 @@
 {meta: title You’ve Got To Righten That Wrong}
 {meta: artist The Johnson Mountain Boys}
-{meta: writer A.P. Carter}
+{meta: composer A.P. Carter}
 
 {start_of_verse: Verse 1}
 [C]You’ve got to righten that [G7]wrong some[C]day

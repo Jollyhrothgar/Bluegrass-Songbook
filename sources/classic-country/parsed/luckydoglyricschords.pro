@@ -1,6 +1,6 @@
 {meta: title Lucky Dog}
 {meta: artist Keith Whitley}
-{meta: writer Verlon Thompson and Bill Caswell}
+{meta: composer Verlon Thompson and Bill Caswell}
 
 {start_of_verse: Verse 1}
 [C]I can't stand a collar 

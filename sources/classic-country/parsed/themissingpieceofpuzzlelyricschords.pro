@@ -1,6 +1,6 @@
 {meta: title The Missing Piece Of Puzzle}
 {meta: artist Tanya Tucker}
-{meta: writer Mark Sherrill and Leon Sherrill}
+{meta: composer Mark Sherrill and Leon Sherrill}
 
 {start_of_verse: Verse 1}
 [G]You're the sunshine that [C]warms my heart each [G]day

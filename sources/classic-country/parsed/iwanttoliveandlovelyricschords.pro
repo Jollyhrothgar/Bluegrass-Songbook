@@ -1,6 +1,6 @@
 {meta: title I Want To Live And Love}
 {meta: artist Hank Williams}
-{meta: writer Gene Sullivan and Wayne P. Walker}
+{meta: composer Gene Sullivan and Wayne P. Walker}
 
 {start_of_verse: Verse 1}
 [G]I wanna live and love under the stars above

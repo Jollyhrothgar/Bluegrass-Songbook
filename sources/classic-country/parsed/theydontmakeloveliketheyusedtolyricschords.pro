@@ -1,6 +1,6 @@
 {meta: title They Don't Make Love Like They Used To}
 {meta: artist Eddy Arnold}
-{meta: writer Red Lane}
+{meta: composer Red Lane}
 
 {start_of_verse: Verse 1}
 [C]They just don't make [F]love like [G7]they used [C]to

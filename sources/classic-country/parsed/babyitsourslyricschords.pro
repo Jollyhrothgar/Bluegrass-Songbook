@@ -1,6 +1,6 @@
 {meta: title Baby It's Yours}
 {meta: artist Wynn Stewart}
-{meta: writer Cheryl Hickman}
+{meta: composer Cheryl Hickman}
 
 {start_of_verse: Verse 1}
 [C]If you want my kind of love [D7]baby it's [G7]yours

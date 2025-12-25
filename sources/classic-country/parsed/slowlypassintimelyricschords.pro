@@ -1,6 +1,6 @@
 {meta: title Slowly Passin' Time}
 {meta: artist John Conlee}
-{meta: writer Rory Bourke, Tommy Rocco, Charlie Black}
+{meta: composer Rory Bourke, Tommy Rocco, Charlie Black}
 
 {start_of_verse: Verse 1}
 [C]We both had our dreams when we [G7]left this sleepy little [C]town behind

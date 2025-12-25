@@ -1,6 +1,6 @@
 {meta: title Ready Teddy}
 {meta: artist Buddy Holly}
-{meta: writer Robert A. Blackwell and John S. Marascalco}
+{meta: composer Robert A. Blackwell and John S. Marascalco}
 
 {start_of_verse: Verse 1}
 [C]Ready set go man go I got a gal that I love [C7]so

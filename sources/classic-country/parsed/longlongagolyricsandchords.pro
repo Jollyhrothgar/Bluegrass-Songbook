@@ -1,6 +1,6 @@
 {meta: title Long Long Ago}
 {meta: artist Marty Robbins}
-{meta: writer Thomas Haynes Bayly}
+{meta: composer Thomas Haynes Bayly}
 
 {start_of_verse: Verse 1}
 [C]Tell me the tales that to me [F]were so [C]dear 

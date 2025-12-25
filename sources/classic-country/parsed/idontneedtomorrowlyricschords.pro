@@ -1,6 +1,6 @@
 {meta: title I Don't Need Tomorrow}
 {meta: artist Jack Greene}
-{meta: writer Jimmy Peppers}
+{meta: composer Jimmy Peppers}
 
 {start_of_verse: Verse 1}
 [C]I don't need [G]tomorrow [D7]I had yester[G]day

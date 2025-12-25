@@ -1,6 +1,6 @@
 {meta: title A Thing Called Love}
 {meta: artist Jimmy Dean}
-{meta: writer Jerry Reed Hubbard}
+{meta: composer Jerry Reed Hubbard}
 
 {start_of_verse: Verse 1}
 [C]Six foot six he stood on the ground

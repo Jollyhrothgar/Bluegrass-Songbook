@@ -1,6 +1,6 @@
 {meta: title Let The Rest Of The World Go By}
 {meta: artist Jimmy Dean}
-{meta: writer Jimmy Kern, J.K. Brennan, Ernest Ball}
+{meta: composer Jimmy Kern, J.K. Brennan, Ernest Ball}
 
 {start_of_verse: Verse 1}
 [C]With someone like you a pal so good and [G7]true

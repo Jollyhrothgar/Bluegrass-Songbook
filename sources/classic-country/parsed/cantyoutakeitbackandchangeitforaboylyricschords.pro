@@ -1,6 +1,6 @@
 {meta: title Can't You Take It Back And Change It For A Boy}
 {meta: artist Rex Allen}
-{meta: writer Thurland Chattaway}
+{meta: composer Thurland Chattaway}
 
 {start_of_verse: Verse 1}
 [C]From the nursery creepin' a little boy came peepin'

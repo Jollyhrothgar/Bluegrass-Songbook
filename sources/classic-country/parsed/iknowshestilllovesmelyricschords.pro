@@ -1,6 +1,6 @@
 {meta: title I Know She Still Loves Me}
 {meta: artist George Strait}
-{meta: writer Aaron Gayle Barker and Monty H. N Holmes}
+{meta: composer Aaron Gayle Barker and Monty H. N Holmes}
 
 {start_of_verse: Verse 1}
 [C]There's just a hint of indifference 

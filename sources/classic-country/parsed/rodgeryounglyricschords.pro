@@ -1,6 +1,6 @@
 {meta: title Rodger Young}
 {meta: artist Jim Reeves}
-{meta: writer Frank Loesser}
+{meta: composer Frank Loesser}
 
 {start_of_verse: Verse 1}
 [G]On July 31st 1943 a [Em]bloody round in the battle 

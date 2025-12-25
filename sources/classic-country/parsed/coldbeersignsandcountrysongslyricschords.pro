@@ -1,6 +1,6 @@
 {meta: title Cold Beer Signs And Country Songs}
 {meta: artist Darrell McCall}
-{meta: writer Red Stegall and Glenn Sutton}
+{meta: composer Red Stegall and Glenn Sutton}
 
 {start_of_verse: Verse 1}
 [C]You never did approve of the [F]things that I call [C]fun

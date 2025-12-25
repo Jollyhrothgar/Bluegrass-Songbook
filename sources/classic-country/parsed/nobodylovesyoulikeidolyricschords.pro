@@ -1,6 +1,6 @@
 {meta: title Nobody Loves You Like I Do}
 {meta: artist Patty Loveless}
-{meta: writer Kostas Lazarides}
+{meta: composer Kostas Lazarides}
 
 {start_of_verse: Verse 1}
 [C]Leave your heartaches [G7]just outside the [C]door 

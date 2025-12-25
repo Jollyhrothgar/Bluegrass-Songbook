@@ -1,6 +1,6 @@
 {meta: title At The Close Of A Long Long Day}
 {meta: artist Slim Whitman}
-{meta: writer Johnny Marvin and Billy Moll}
+{meta: composer Johnny Marvin and Billy Moll}
 
 {start_of_verse: Verse 1}
 [G]Wait for me at the [B7]close of a [C]long long [G]day

@@ -1,6 +1,6 @@
 {meta: title Now That The Feeling's Gone}
 {meta: artist Billy Crash Craddock}
-{meta: writer Michael Buckins and Randy McCormick}
+{meta: composer Michael Buckins and Randy McCormick}
 
 {start_of_verse: Verse 1}
 [C]I never [E7]thought I needed [Am]love[C]

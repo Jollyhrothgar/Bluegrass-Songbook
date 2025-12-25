@@ -1,6 +1,6 @@
 {meta: title Keep Your Promise Willie Thomas}
 {meta: artist Hank Snow}
-{meta: writer Jack Fulton and Louis Steele}
+{meta: composer Jack Fulton and Louis Steele}
 
 {start_of_verse: Verse 1}
 [C]Keep your promise Willie [G]Thomas

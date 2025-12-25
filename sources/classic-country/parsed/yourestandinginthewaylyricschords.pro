@@ -1,6 +1,6 @@
 {meta: title You're Standing In The Way}
 {meta: artist The Wilburn Brothers}
-{meta: writer Ron Hastings}
+{meta: composer Ron Hastings}
 
 {start_of_verse: Verse 1}
 [C]The tie that binds me to you time never can [G7]erase

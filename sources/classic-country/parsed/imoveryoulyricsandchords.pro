@@ -1,6 +1,6 @@
 {meta: title I'm Over You}
 {meta: artist Keith Whitley}
-{meta: writer Tim Nichols and Zack Turner}
+{meta: composer Tim Nichols and Zack Turner}
 
 {start_of_verse: Verse 1}
 [C]Where there’s a cloud don't mean there’s rain

@@ -1,6 +1,6 @@
 {meta: title Nevada}
 {meta: artist Jim Ed Brown}
-{meta: writer Walter Donaldson and Mort Green}
+{meta: composer Walter Donaldson and Mort Green}
 
 {start_of_verse: Verse 1}
 [C](O[F]ut[C] w[F]here the sunset is silver and gold

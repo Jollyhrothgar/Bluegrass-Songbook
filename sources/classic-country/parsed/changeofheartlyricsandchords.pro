@@ -1,6 +1,6 @@
 {meta: title Change Of Heart}
 {meta: artist Boxcar Willie}
-{meta: writer Lecil Travis Martin}
+{meta: composer Lecil Travis Martin}
 
 {start_of_verse: Verse 1}
 [G]Darling have you had a change of heart

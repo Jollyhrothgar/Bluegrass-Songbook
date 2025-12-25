@@ -1,6 +1,6 @@
 {meta: title Maureen}
 {meta: artist Jim Reeves}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]All alone tonight I dream in [C]my land 

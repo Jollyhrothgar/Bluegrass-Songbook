@@ -1,6 +1,6 @@
 {meta: title I Betcha Didn’t Know}
 {meta: artist Buck Owens}
-{meta: writer Lamar Morris}
+{meta: composer Lamar Morris}
 
 {start_of_verse: Verse 1}
 [G]Well I betcha didn't know I betcha didn't [C]know 

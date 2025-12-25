@@ -1,6 +1,6 @@
 {meta: title The World I Used To Know}
 {meta: artist Jimmie Rodgers}
-{meta: writer Rod McKuen}
+{meta: composer Rod McKuen}
 
 {start_of_verse: Verse 1}
 [C]Some day some old [G7]familiar [C]rain  

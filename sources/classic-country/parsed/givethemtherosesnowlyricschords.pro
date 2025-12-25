@@ -1,6 +1,6 @@
 {meta: title Give Them The Roses Now}
 {meta: artist Wilburn Brothers}
-{meta: writer James Rowe}
+{meta: composer James Rowe}
 
 {start_of_verse: Verse 1}
 [C]Wonderful things of folks are said 

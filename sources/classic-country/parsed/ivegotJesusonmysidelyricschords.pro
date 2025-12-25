@@ -1,6 +1,6 @@
 {meta: title I've Got Jesus On My Side}
 {meta: artist Statler Brother}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [C]I [G7]have [C]been (I have been) a weary [F]pilgrim (weary pilgrim)

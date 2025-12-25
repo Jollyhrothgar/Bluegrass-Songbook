@@ -1,6 +1,6 @@
 {meta: title Handful Of Dreams}
 {meta: artist Faron Young}
-{meta: writer Ray Griff}
+{meta: composer Ray Griff}
 
 {start_of_verse: Verse 1}
 [C]I'm not [G7]too [Am]concerned if I'm [F]no [Em]big [Dm]success

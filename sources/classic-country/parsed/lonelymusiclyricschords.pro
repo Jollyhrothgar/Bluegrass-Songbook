@@ -1,6 +1,6 @@
 {meta: title Lonely Music}
 {meta: artist Jim Reeves}
-{meta: writer Johnny Elgin}
+{meta: composer Johnny Elgin}
 
 {start_of_verse: Verse 1}
 [G]An empty glass another coin [C]in the [G]jukebox

@@ -1,6 +1,6 @@
 {meta: title Ice Cold Heart}
 {meta: artist Ray Price}
-{meta: writer Benny E. Martin}
+{meta: composer Benny E. Martin}
 
 {start_of_verse: Verse 1}
 [C]Ice cold [Dm]love your love is [G7]cold as the north [C]pole

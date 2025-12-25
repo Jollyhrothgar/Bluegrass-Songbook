@@ -1,6 +1,6 @@
 {meta: title A Bottle Of Wine And Patsy Cline}
 {meta: artist Marsha Thornton}
-{meta: writer Melinda Anne Gravelle and Tommy Rocco}
+{meta: composer Melinda Anne Gravelle and Tommy Rocco}
 
 {start_of_verse: Verse 1}
 [C]A bottle of [G7]wine and [C]Patsy Cline and [F]every thing's all [Dm]right

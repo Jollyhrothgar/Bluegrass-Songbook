@@ -1,6 +1,6 @@
 {meta: title Ancient History}
 {meta: artist Johnny Cash}
-{meta: writer Wayne P. Walker and Irene Stanton}
+{meta: composer Wayne P. Walker and Irene Stanton}
 
 {start_of_verse: Verse 1}
 [G]Just walk on out the door it's all [D7]over

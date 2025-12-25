@@ -1,6 +1,6 @@
 {meta: title Does My Ring Hurt Your Finger}
 {meta: artist Charlie Pride}
-{meta: writer Jack Clement, Jan Crutchfield, Don Robertson}
+{meta: composer Jack Clement, Jan Crutchfield, Don Robertson}
 
 {start_of_verse: Verse 1}
 [G]Does my ring hurt your finger

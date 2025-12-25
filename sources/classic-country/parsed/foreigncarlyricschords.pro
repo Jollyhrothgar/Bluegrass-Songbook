@@ -1,6 +1,6 @@
 {meta: title Foreign Car}
 {meta: artist Hank Locklin}
-{meta: writer Lawton Williams}
+{meta: composer Lawton Williams}
 
 {start_of_verse: Verse 1}
 [G]There's nothing in the world that pleases me

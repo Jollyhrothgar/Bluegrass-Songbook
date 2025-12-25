@@ -1,6 +1,6 @@
 {meta: title She Can't Give It Away}
 {meta: artist Barbara Fairchild}
-{meta: writer Curly Putman and Sonny Throckmorton}
+{meta: composer Curly Putman and Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [G]She stands there in the doorway

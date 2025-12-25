@@ -1,6 +1,6 @@
 {meta: title Jukebox Cinderella}
 {meta: artist Johnny Duncan}
-{meta: writer Jim Zerface and Bill Zerface}
+{meta: composer Jim Zerface and Bill Zerface}
 
 {start_of_verse: Verse 1}
 [C]I met her in a ballroom in a northwest Texas town

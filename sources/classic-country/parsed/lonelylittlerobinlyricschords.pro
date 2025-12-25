@@ -1,6 +1,6 @@
 {meta: title Lonely Little Robin}
 {meta: artist Jim Ed Brown}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]There's a lonely little robin in a tree by my [G7]door

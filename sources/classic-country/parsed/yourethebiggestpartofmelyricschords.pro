@@ -1,6 +1,6 @@
 {meta: title You're The Biggest Part Of Me}
 {meta: artist Faron Young}
-{meta: writer Merle Kilgore and Chuck Deal}
+{meta: composer Merle Kilgore and Chuck Deal}
 
 {start_of_verse: Verse 1}
 [G]I tasted love the first time that you [C]kissed me

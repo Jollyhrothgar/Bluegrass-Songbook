@@ -1,6 +1,6 @@
 {meta: title No Reason To Hurry Home}
 {meta: artist Dolly Parton and Porter Wagoner}
-{meta: writer Dolly Parton}
+{meta: composer Dolly Parton}
 
 {start_of_verse: Verse 1}
 [C]There is no love and [F]there is no [C]hate

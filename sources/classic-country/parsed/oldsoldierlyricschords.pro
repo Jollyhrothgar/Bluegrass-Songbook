@@ -1,6 +1,6 @@
 {meta: title Old Soldier}
 {meta: artist Lacy J. Dalton}
-{meta: writer Mary McFadden and Lacy J. Dalton}
+{meta: composer Mary McFadden and Lacy J. Dalton}
 
 {start_of_verse: Verse 1}
 [G]I saw him last Friday on a big [C]concert [G]stage

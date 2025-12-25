@@ -1,6 +1,6 @@
 {meta: title Nothing But The Blood}
 {meta: artist Randy Travis}
-{meta: writer Robert Lowry}
+{meta: composer Robert Lowry}
 
 {start_of_verse: Verse 1}
 [C]What can wash [G7]away my [C]sins

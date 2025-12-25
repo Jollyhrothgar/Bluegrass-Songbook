@@ -1,6 +1,6 @@
 {meta: title Fare Thee Well}
 {meta: artist Tony Rice}
-{meta: writer Bob Dylan}
+{meta: composer Bob Dylan}
 
 {start_of_verse: Verse 1}
 [G]Oh it's fare thee well my [C]darlin' [G]true

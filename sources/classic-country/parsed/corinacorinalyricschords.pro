@@ -1,6 +1,6 @@
 {meta: title Corina Corina}
 {meta: artist Brooks and Dunn}
-{meta: writer Shelby Darnell}
+{meta: composer Shelby Darnell}
 
 {start_of_verse: Verse 1}
 [G]Corina Corina where you been so long

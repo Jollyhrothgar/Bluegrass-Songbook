@@ -1,6 +1,6 @@
 {meta: title His Eye Is On The Sparrow}
 {meta: artist Statler Brothers}
-{meta: writer Civilla Durfee Martin and Charles Hutchinson Gabriel}
+{meta: composer Civilla Durfee Martin and Charles Hutchinson Gabriel}
 
 {start_of_verse: Verse 1}
 [G]Why should I feel discouraged [C]why should the shadows [G]come

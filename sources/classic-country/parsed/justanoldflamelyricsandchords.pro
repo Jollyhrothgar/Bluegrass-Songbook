@@ -1,6 +1,6 @@
 {meta: title Just an Old Flame}
 {meta: artist Hank Thompson}
-{meta: writer Bob Robinson and Hank Thompson}
+{meta: composer Bob Robinson and Hank Thompson}
 
 {start_of_verse: Verse 1}
 [C]She just an old [C7]flame I don't [F]recall her name she just [G7]happened [G7][C]along

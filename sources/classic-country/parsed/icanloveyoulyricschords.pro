@@ -1,6 +1,6 @@
 {meta: title I Can Love You}
 {meta: artist The Oak Ridge Boys}
-{meta: writer Stanley Garland}
+{meta: composer Stanley Garland}
 
 {start_of_verse: Verse 1}
 [G]I know you like to be caressed

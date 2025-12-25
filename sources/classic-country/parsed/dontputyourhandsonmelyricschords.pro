@@ -1,6 +1,6 @@
 {meta: title Don't Put Your Hands On Me}
 {meta: artist Norma Jean}
-{meta: writer Lorene Mann}
+{meta: composer Lorene Mann}
 
 {start_of_verse: Verse 1}
 [G]Don't look me in the eyes and say you [C]love me

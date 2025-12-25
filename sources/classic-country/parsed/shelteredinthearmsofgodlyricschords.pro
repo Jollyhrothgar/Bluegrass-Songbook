@@ -1,6 +1,6 @@
 {meta: title Sheltered in the Arms of God}
 {meta: artist Rhonda Vincent}
-{meta: writer Dottie Rambo and Jimmy Davis}
+{meta: composer Dottie Rambo and Jimmy Davis}
 
 {start_of_verse: Verse 1}
 [G]I feel the touch of [C]hands so kind and [G]tender

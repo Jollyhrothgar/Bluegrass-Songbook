@@ -1,6 +1,6 @@
 {meta: title Memory Lane}
 {meta: artist The Statler Brothers}
-{meta: writer Jimmy Fortune}
+{meta: composer Jimmy Fortune}
 
 {start_of_verse: Verse 1}
 [C]Let's take a [F]ride ride down [C]memory lane

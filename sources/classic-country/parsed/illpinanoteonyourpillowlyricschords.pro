@@ -1,6 +1,6 @@
 {meta: title I'll Pin A Note On Your Pillow}
 {meta: artist Billy Joe Royal}
-{meta: writer Carol W. Berzas, Don Goodman, Nelson Larkin}
+{meta: composer Carol W. Berzas, Don Goodman, Nelson Larkin}
 
 {start_of_verse: Verse 1}
 [G]It's just not working we've both known for sometime 

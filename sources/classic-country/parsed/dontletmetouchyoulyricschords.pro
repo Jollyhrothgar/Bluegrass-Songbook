@@ -1,6 +1,6 @@
 {meta: title Don't Let Me Touch You}
 {meta: artist Marty Robbins}
-{meta: writer Marty Robbins and Billy Sherrill}
+{meta: composer Marty Robbins and Billy Sherrill}
 
 {start_of_verse: Verse 1}
 [C]Guess who I saw [Dm]today  and I [G7]asked him about [C]you 

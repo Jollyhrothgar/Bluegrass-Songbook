@@ -1,6 +1,6 @@
 {meta: title I Really Want To Know}
 {meta: artist Faron Young}
-{meta: writer Wanda Alley}
+{meta: composer Wanda Alley}
 
 {start_of_verse: Verse 1}
 [C]Once your love was [F]mine and that was [G7]not too long [C]ago

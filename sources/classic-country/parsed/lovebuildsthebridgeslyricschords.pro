@@ -1,6 +1,6 @@
 {meta: title Love Builds The Bridges}
 {meta: artist Patty Loveless}
-{meta: writer Jim McBride and Jerry Salley}
+{meta: composer Jim McBride and Jerry Salley}
 
 {start_of_verse: Verse 1}
 [C]She's twistin' the ring on her finger

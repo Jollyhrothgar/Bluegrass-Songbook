@@ -1,6 +1,6 @@
 {meta: title Beat The Devil}
 {meta: artist The Statler Brother}
-{meta: writer Don Reid}
+{meta: composer Don Reid}
 
 {start_of_verse: Verse 1}
 [G7]Then Jesus was led by the Spirit into the wilderness 

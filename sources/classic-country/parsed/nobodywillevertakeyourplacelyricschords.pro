@@ -1,6 +1,6 @@
 {meta: title Nobody Will Ever Take Your Place}
 {meta: artist Cal Smith}
-{meta: writer Mel Holt}
+{meta: composer Mel Holt}
 
 {start_of_verse: Verse 1}
 [C]The place that you hold in my [F]heart

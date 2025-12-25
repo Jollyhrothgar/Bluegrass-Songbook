@@ -1,6 +1,6 @@
 {meta: title Forever And Always}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Leslie Lyle}
+{meta: composer Lefty Frizzell and Leslie Lyle}
 
 {start_of_verse: Verse 1}
 [G]Forever and [G][C]al-ways my love will be [D7]true

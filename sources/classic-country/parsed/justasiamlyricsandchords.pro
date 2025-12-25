@@ -1,6 +1,6 @@
 {meta: title Just As I Am}
 {meta: artist Jan Howard}
-{meta: writer Charlotte Elliott and William Bradbury}
+{meta: composer Charlotte Elliott and William Bradbury}
 
 {start_of_verse: Verse 1}
 [C]Just as I am [G7]without one [C]plea

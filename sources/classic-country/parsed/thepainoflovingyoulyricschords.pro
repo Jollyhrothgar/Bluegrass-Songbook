@@ -1,6 +1,6 @@
 {meta: title The Pain Of Loving You}
 {meta: artist Emmylou Harris}
-{meta: writer Dolly Parton/Porter Wagoner}
+{meta: composer Dolly Parton/Porter Wagoner}
 
 {start_of_verse: Verse 1}
 [G]Oh the pain of [D7]loving [G]you

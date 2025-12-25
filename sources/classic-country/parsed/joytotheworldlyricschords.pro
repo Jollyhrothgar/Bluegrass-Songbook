@@ -1,6 +1,6 @@
 {meta: title Joy To The World}
 {meta: artist George Strait}
-{meta: writer Isaac Watts and George F. Handel}
+{meta: composer Isaac Watts and George F. Handel}
 
 {start_of_verse: Verse 1}
 [C]Joy to the world the [G7]Lord is [C]come

@@ -1,6 +1,6 @@
 {meta: title Why Should We Try Anymore}
 {meta: artist Hank Williams}
-{meta: writer Marcel Joseph}
+{meta: composer Marcel Joseph}
 
 {start_of_verse: Verse 1}
 [C]What's the use to deny we've been [F]living [C]a lie

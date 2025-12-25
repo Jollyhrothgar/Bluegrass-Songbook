@@ -1,6 +1,6 @@
 {meta: title Are You The One}
 {meta: artist Jim Reeves}
-{meta: writer Don Crashey and Buddy DeVal}
+{meta: composer Don Crashey and Buddy DeVal}
 
 {start_of_verse: Verse 1}
 [C]Are you the one who promised me a love forever true

@@ -1,6 +1,6 @@
 {meta: title Hey Joe}
 {meta: artist Carl Smith}
-{meta: writer Boudleaux Bryant}
+{meta: composer Boudleaux Bryant}
 
 {start_of_verse: Verse 1}
 [C]Hey Joe where'd you find that pearly-girly

@@ -1,6 +1,6 @@
 {meta: title Loaded With Love}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Henry Glover and Lucky Millinder}
+{meta: composer Henry Glover and Lucky Millinder}
 
 {start_of_verse: Verse 1}
 [C]I stay so loaded with love when you're not around

@@ -1,6 +1,6 @@
 {meta: title Don't Leave The Leaving Up To Me}
 {meta: artist Leona Williams}
-{meta: writer Justin Trevino and Levi Mullen}
+{meta: composer Justin Trevino and Levi Mullen}
 
 {start_of_verse: Verse 1}
 [C]You’re telling me it’s over and there’s nothing left to [C7]say

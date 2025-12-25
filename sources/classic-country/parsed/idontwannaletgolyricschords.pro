@@ -1,6 +1,6 @@
 {meta: title I Don't Wanna Let Go}
 {meta: artist Don Williams}
-{meta: writer Jim Rushing}
+{meta: composer Jim Rushing}
 
 {start_of_verse: Verse 1}
 [G7]Road signs all [C]show

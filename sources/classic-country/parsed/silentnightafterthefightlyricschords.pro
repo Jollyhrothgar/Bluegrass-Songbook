@@ -1,6 +1,6 @@
 {meta: title Silent Night After The Fight}
 {meta: artist Ronnie Milsap}
-{meta: writer John Schweers}
+{meta: composer John Schweers}
 
 {start_of_verse: Verse 1}
 [G]Hear the rain on the window I [C]never noticed it so [G]loud

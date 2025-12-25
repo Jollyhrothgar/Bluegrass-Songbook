@@ -1,6 +1,6 @@
 {meta: title First Christmas Morn}
 {meta: artist Charley Pride}
-{meta: writer Sue Lane}
+{meta: composer Sue Lane}
 
 {start_of_verse: Verse 1}
 [C]A star in the East leading [F]Wise Men to [Fm]Him

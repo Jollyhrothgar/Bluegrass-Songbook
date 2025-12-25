@@ -1,6 +1,6 @@
 {meta: title Pride And Sorrow}
 {meta: artist Charly McClain}
-{meta: writer Ronny Scaife}
+{meta: composer Ronny Scaife}
 
 {start_of_verse: Verse 1}
 [C]Lover [F]I feel your body trembling [C]close to mine

@@ -1,6 +1,6 @@
 {meta: title Roses And Love Songs}
 {meta: artist Ray Price}
-{meta: writer Jim Weatherly}
+{meta: composer Jim Weatherly}
 
 {start_of_verse: Verse 1}
 [G]I seen the way her head turns

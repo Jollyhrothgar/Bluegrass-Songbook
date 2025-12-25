@@ -1,6 +1,6 @@
 {meta: title Fool Fool Heart}
 {meta: artist Don Williams}
-{meta: writer Jennifer Kimball}
+{meta: composer Jennifer Kimball}
 
 {start_of_verse: Verse 1}
 [G]Fool [D7]fool [C]heart [D]   [G]what [D7]have you [C]done[D7]  

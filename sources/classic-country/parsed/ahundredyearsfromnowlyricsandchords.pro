@@ -1,6 +1,6 @@
 {meta: title A Hundred Years From Now}
 {meta: artist Elvis Presley}
-{meta: writer Lester Flatt and Earl Scruggs}
+{meta: composer Lester Flatt and Earl Scruggs}
 
 {start_of_verse: Verse 1}
 [G]Well a hundred years from now I won't be [D7]crying

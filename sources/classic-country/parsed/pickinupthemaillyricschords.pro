@@ -1,6 +1,6 @@
 {meta: title Pickin' Up The Mail}
 {meta: artist Wilburn Brothers}
-{meta: writer Ron Kitson}
+{meta: composer Ron Kitson}
 
 {start_of_verse: Verse 1}
 [C]Pickin' up the mail is no more [F]fun

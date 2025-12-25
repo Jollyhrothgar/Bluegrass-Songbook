@@ -1,6 +1,6 @@
 {meta: title I Don't Want To Be Alone For Christmas}
 {meta: artist Bill Haley}
-{meta: writer Al Russell}
+{meta: composer Al Russell}
 
 {start_of_verse: Verse 1}
 [C]I can [G7]hear those church bells ringing

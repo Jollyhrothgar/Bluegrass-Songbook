@@ -1,6 +1,6 @@
 {meta: title Love Overdue}
 {meta: artist Tammy Wynette}
-{meta: writer John Virgin and Jamey Ryan}
+{meta: composer John Virgin and Jamey Ryan}
 
 {start_of_verse: Verse 1}
 [G]It seems I'm always settin' myself [C]up for a [G]fall

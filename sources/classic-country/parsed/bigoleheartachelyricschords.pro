@@ -1,6 +1,6 @@
 {meta: title Big Ole Heartache}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Harlan Howard}
+{meta: composer Harlan Howard}
 
 {start_of_verse: Verse 1}
 [C]I wake up with a big ole [F]heartache I [G7]hate to face a new born [C]day

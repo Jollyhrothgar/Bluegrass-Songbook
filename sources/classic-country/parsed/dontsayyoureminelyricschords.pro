@@ -1,6 +1,6 @@
 {meta: title Don't Say You're Mine}
 {meta: artist Carl Smith}
-{meta: writer Cameron L. Mullins}
+{meta: composer Cameron L. Mullins}
 
 {start_of_verse: Verse 1}
 [C]Don't say you're mine if you can't [Dm]belong to [G7]me

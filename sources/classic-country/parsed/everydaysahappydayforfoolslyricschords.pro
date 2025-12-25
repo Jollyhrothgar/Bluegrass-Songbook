@@ -1,6 +1,6 @@
 {meta: title Everyday's A Happy Day For Fools}
 {meta: artist Jean Shepard}
-{meta: writer Dallas Frazier}
+{meta: composer Dallas Frazier}
 
 {start_of_verse: Verse 1}
 [G]Last night I found some [C]lipstick on your [G]collar

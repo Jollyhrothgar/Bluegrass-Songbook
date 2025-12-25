@@ -1,6 +1,6 @@
 {meta: title My Wild Irish Rose}
 {meta: artist Connie Francis}
-{meta: writer Chauncey Olcott}
+{meta: composer Chauncey Olcott}
 
 {start_of_verse: Verse 1}
 [C]My wild [F]Irish [C]Rose 

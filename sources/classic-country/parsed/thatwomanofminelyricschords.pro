@@ -1,6 +1,6 @@
 {meta: title That Woman Of Mine}
 {meta: artist Mel Tillis}
-{meta: writer Ken McDuffie}
+{meta: composer Ken McDuffie}
 
 {start_of_verse: Verse 1}
 [C]She walks through the kitchen

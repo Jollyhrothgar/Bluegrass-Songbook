@@ -1,6 +1,6 @@
 {meta: title I'll Meet You In Church Sunday Morning}
 {meta: artist Porter Wagoner}
-{meta: writer Bill Monroe}
+{meta: composer Bill Monroe}
 
 {start_of_verse: Verse 1}
 [C]On Sunday when the church bells start [F]ringing

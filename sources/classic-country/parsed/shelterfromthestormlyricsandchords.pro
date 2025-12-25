@@ -1,6 +1,6 @@
 {meta: title Shelter From The Storm}
 {meta: artist Glen Campbell}
-{meta: writer Becky Thurman and Geoff Thurman}
+{meta: composer Becky Thurman and Geoff Thurman}
 
 {start_of_verse: Verse 1}
 [G7]Lord in the [C]silence I [D7]kneel down at your [G7]feet

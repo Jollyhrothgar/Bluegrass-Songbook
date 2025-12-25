@@ -1,6 +1,6 @@
 {meta: title Nothing I Can Do About It Now}
 {meta: artist Willie Nelson}
-{meta: writer Beth Nielsen Chapman}
+{meta: composer Beth Nielsen Chapman}
 
 {start_of_verse: Verse 1}
 [G]I've got a long list of real good reasons  

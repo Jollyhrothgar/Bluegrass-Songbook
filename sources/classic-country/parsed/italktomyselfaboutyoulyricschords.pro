@@ -1,6 +1,6 @@
 {meta: title I Talk To Myself About You}
 {meta: artist Eddy Arnold}
-{meta: writer Fred Rose}
+{meta: composer Fred Rose}
 
 {start_of_verse: Verse 1}
 [G]I talk to myself about you [C]dear

@@ -1,6 +1,6 @@
 {meta: title The Call}
 {meta: artist Connie Smith}
-{meta: writer Cy Coben}
+{meta: composer Cy Coben}
 
 {start_of_verse: Verse 1}
 [C]How does a homing pigeon know his way back home along the route

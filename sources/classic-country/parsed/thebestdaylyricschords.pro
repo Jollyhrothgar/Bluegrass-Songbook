@@ -1,6 +1,6 @@
 {meta: title The Best Day}
 {meta: artist George Strait}
-{meta: writer Dean Dillon and Carson Chamberlain}
+{meta: composer Dean Dillon and Carson Chamberlain}
 
 {start_of_verse: Verse 1}
 [G]We loaded up my old [D7]station wagon

@@ -1,6 +1,6 @@
 {meta: title Different Kind Of Flower}
 {meta: artist Ray Price}
-{meta: writer Gary Sefton}
+{meta: composer Gary Sefton}
 
 {start_of_verse: Verse 1}
 [C]She came down from Boston to be closer to her mother 

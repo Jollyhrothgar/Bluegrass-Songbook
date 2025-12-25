@@ -1,6 +1,6 @@
 {meta: title She Can't Say That Anymore}
 {meta: artist John Conlee}
-{meta: writer Sonny Throckmorton}
+{meta: composer Sonny Throckmorton}
 
 {start_of_verse: Verse 1}
 [Em]I never thought I'd live to see the day 

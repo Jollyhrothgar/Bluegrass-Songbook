@@ -1,6 +1,6 @@
 {meta: title Tater Pie}
 {meta: artist Bob Wills}
-{meta: writer Cindy Walker}
+{meta: composer Cindy Walker}
 
 {start_of_verse: Verse 1}
 [G]Ever since I've been so high

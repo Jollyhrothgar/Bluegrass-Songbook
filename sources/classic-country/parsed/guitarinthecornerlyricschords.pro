@@ -1,6 +1,6 @@
 {meta: title Guitar In The Corner}
 {meta: artist Willie Nelson}
-{meta: writer Buddy Cannon and Willie Nelson}
+{meta: composer Buddy Cannon and Willie Nelson}
 
 {start_of_verse: Verse 1}
 [G]There's a guitar in the corner

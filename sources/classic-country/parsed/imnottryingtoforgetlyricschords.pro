@@ -1,6 +1,6 @@
 {meta: title I'm Not Trying To Forget}
 {meta: artist Ronnie Milsap}
-{meta: writer Kent M. Robbins}
+{meta: composer Kent M. Robbins}
 
 {start_of_verse: Verse 1}
 [C]Don't go where you think she'll be

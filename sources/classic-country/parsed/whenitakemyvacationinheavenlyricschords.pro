@@ -1,6 +1,6 @@
 {meta: title When I Take My Vacation In Heaven}
 {meta: artist Johnny Cash}
-{meta: writer Herbert Buffum and R.E. Winsett}
+{meta: composer Herbert Buffum and R.E. Winsett}
 
 {start_of_verse: Verse 1}
 [C]There are those who are taking vacations

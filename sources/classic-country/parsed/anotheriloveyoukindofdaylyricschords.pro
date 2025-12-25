@@ -1,6 +1,6 @@
 {meta: title Another I Love You Kind Of Day}
 {meta: artist Charley Pride}
-{meta: writer John Schweers and Dennis Morgan}
+{meta: composer John Schweers and Dennis Morgan}
 
 {start_of_verse: Verse 1}
 [C]Wake up time to [F]open your [C]eyes

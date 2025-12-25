@@ -1,6 +1,6 @@
 {meta: title I Showed Her}
 {meta: artist Alabama}
-{meta: writer Teddy Gentry, Greg Fowler, Walt Aldridge}
+{meta: composer Teddy Gentry, Greg Fowler, Walt Aldridge}
 
 {start_of_verse: Verse 1}
 [C]She told me I should straighten up my [F]ways or [G7]she'd be walkin' [C]out [G]  [F]  [C]  [G]

@@ -1,6 +1,6 @@
 {meta: title Blue Eyed Love}
 {meta: artist Tommy Overstreet}
-{meta: writer Sam Cooke}
+{meta: composer Sam Cooke}
 
 {start_of_verse: Verse 1}
 [G]When I wake up in the morning

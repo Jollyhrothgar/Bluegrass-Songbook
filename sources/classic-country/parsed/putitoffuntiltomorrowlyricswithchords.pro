@@ -1,6 +1,6 @@
 {meta: title Put It Off Until Tomorrow}
 {meta: artist Dolly Parton}
-{meta: writer Dolly Parton and Bill Owens}
+{meta: composer Dolly Parton and Bill Owens}
 
 {start_of_verse: Verse 1}
 [G](Put it [C]off un[D7]til to[G]morrow oh [C]oh)

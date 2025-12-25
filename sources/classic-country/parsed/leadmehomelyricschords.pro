@@ -1,6 +1,6 @@
 {meta: title Lead Me Home}
 {meta: artist Jamey Johnson}
-{meta: writer Randy Houser and Craig Monday}
+{meta: composer Randy Houser and Craig Monday}
 
 {start_of_verse: Verse 1}
 [C]I have seen my last tomorrow

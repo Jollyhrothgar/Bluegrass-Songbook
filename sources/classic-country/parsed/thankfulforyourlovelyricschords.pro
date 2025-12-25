@@ -1,6 +1,6 @@
 {meta: title Thankful For Your Love}
 {meta: artist Stonewall Jackson}
-{meta: writer Webb Pierce and Max Powell}
+{meta: composer Webb Pierce and Max Powell}
 
 {start_of_verse: Verse 1}
 [G]After all I've [C]done you still love [G]me

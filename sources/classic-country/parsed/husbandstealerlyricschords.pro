@@ -1,6 +1,6 @@
 {meta: title Husband Stealer}
 {meta: artist Barbara Mandrell}
-{meta: writer Gary S. Paxton and Steve Paxton}
+{meta: composer Gary S. Paxton and Steve Paxton}
 
 {start_of_verse: Verse 1}
 [G7]Husband [Dm]stea[C]ler I sure do [F]need him

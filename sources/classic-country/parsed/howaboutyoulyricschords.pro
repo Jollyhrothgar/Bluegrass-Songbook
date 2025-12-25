@@ -1,6 +1,6 @@
 {meta: title How About You}
 {meta: artist Carl Smith}
-{meta: writer Thomas A. Dorsey}
+{meta: composer Thomas A. Dorsey}
 
 {start_of_verse: Verse 1}
 [C]How well do I remember how [F]Jesus brought me [C]through

@@ -1,6 +1,6 @@
 {meta: title Ling-Ting-Tong}
 {meta: artist Hawkshaw Hawkins}
-{meta: writer Mabel Godwin}
+{meta: composer Mabel Godwin}
 
 {start_of_verse: Verse 1}
 [G]I went to Chinatown

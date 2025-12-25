@@ -1,6 +1,6 @@
 {meta: title Somebody's Knocking}
 {meta: artist Terri Gibbs}
-{meta: writer Ed Penney and Jerry Gillespie}
+{meta: composer Ed Penney and Jerry Gillespie}
 
 {start_of_verse: Verse 1}
 [Am]Somebody's knocking should I let him in

@@ -1,6 +1,6 @@
 {meta: title It's Still There}
 {meta: artist Charlie Walker}
-{meta: writer Bill Anderson}
+{meta: composer Bill Anderson}
 
 {start_of_verse: Verse 1}
 [C]It's still there it's still [F]there

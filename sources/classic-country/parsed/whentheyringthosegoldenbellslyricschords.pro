@@ -1,6 +1,6 @@
 {meta: title When They Ring Those Golden Bells}
 {meta: artist Sonny James}
-{meta: writer Dion DeMarbelle and Archie Campbell}
+{meta: composer Dion DeMarbelle and Archie Campbell}
 
 {start_of_verse: Verse 1}
 [C]There's a land beyond the river 

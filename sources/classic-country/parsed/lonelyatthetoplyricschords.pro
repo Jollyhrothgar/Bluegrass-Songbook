@@ -1,6 +1,6 @@
 {meta: title Lonely at the Top}
 {meta: artist Keith Whitley}
-{meta: writer Jamey Johnson}
+{meta: composer Jamey Johnson}
 
 {start_of_verse: Verse 1}
 [G]I was pourin' out my troubles

@@ -1,6 +1,6 @@
 {meta: title West Texas Waltz}
 {meta: artist Joni Harms}
-{meta: writer Jim Varsos and Joni Harms}
+{meta: composer Jim Varsos and Joni Harms}
 
 {start_of_verse: Verse 1}
 [C]He said hello how are [G7]you may [C]I have this [F]dance

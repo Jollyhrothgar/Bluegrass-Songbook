@@ -1,6 +1,6 @@
 {meta: title Emotion}
 {meta: artist Brenda Lee}
-{meta: writer Mel Tillis and Ramsey Kearney}
+{meta: composer Mel Tillis and Ramsey Kearney}
 
 {start_of_verse: Verse 1}
 [C]Emotion what are you [E7]doing

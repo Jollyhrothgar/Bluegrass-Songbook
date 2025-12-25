@@ -1,6 +1,6 @@
 {meta: title I'm In The Mood For Love}
 {meta: artist Fats Domino}
-{meta: writer Dorothy Fields and Jimmy McHugh}
+{meta: composer Dorothy Fields and Jimmy McHugh}
 
 {start_of_verse: Verse 1}
 [C]Well I'm in the [Am]mood for [Dm]love

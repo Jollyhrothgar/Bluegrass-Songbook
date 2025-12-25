@@ -1,6 +1,6 @@
 {meta: title Lonely Is Everything}
 {meta: artist Bill Anderson}
-{meta: writer Jimmy Gateley}
+{meta: composer Jimmy Gateley}
 
 {start_of_verse: Verse 1}
 [F]Lonely is every[G7]thing you said it would [C]be

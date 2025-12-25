@@ -1,6 +1,6 @@
 {meta: title Birds And Children Fly Away}
 {meta: artist Cal Smith}
-{meta: writer Daniel Hoffman and Ray Pennington}
+{meta: composer Daniel Hoffman and Ray Pennington}
 
 {start_of_verse: Verse 1}
 [G]I stood with mom and [C]poppa [D7]as the bus pulled in that [G]day

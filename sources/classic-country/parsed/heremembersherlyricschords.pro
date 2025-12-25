@@ -1,6 +1,6 @@
 {meta: title He Remembers Her}
 {meta: artist Doug Stone}
-{meta: writer Chet Hinesley and Doug Stone}
+{meta: composer Chet Hinesley and Doug Stone}
 
 {start_of_verse: Verse 1}
 [C]The calls are made at night he [Dm]longs to hold her tight

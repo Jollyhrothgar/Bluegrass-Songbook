@@ -1,6 +1,6 @@
 {meta: title Here I Am}
 {meta: artist Ricky Nelson}
-{meta: writer George Campbell and Marc Douglas}
+{meta: composer George Campbell and Marc Douglas}
 
 {start_of_verse: Verse 1}
 [G]If you're looking for a [C]new love

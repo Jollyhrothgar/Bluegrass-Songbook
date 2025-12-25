@@ -1,6 +1,6 @@
 {meta: title I Love You a Thousand Ways}
 {meta: artist Lefty Frizzell}
-{meta: writer Lefty Frizzell and Jim Beck}
+{meta: composer Lefty Frizzell and Jim Beck}
 
 {start_of_verse: Verse 1}
 [G]I love you I'll prove it in days to [D7]come

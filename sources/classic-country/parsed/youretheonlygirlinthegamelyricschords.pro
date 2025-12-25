@@ -1,6 +1,6 @@
 {meta: title You're The Only Girl In The Game}
 {meta: artist Merle Haggard}
-{meta: writer Hank Cochran and Glenn Martin}
+{meta: composer Hank Cochran and Glenn Martin}
 
 {start_of_verse: Verse 1}
 [C]What a twisted game you're playin' with the [F]highest stakes of [C]all

@@ -1,6 +1,6 @@
 {meta: title Coming To The Dance}
 {meta: artist Crystal Gayle}
-{meta: writer Allen Reynolds and Chuck Cochran}
+{meta: composer Allen Reynolds and Chuck Cochran}
 
 {start_of_verse: Verse 1}
 [G]Turn your back to the [D7]wind 
