@@ -1859,3 +1859,24 @@ mark {
     font-weight: 600;
     color: var(--text-secondary);
 }
+
+/* See versions button in song view */
+.see-versions-btn {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--accent);
+    background: rgba(79, 70, 229, 0.1);
+    border: 1px solid var(--accent);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-left: 0.75rem;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: all 0.2s;
+}
+
+.see-versions-btn:hover {
+    background: var(--accent);
+    color: white;
+}

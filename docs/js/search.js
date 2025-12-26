@@ -1861,6 +1861,14 @@ function renderSong(song, chordpro, isInitialRender = false) {
         return `<option value="${k}" ${selected}>${label}</option>`;
     }).join('');
 
+    // Check for multiple versions
+    const groupId = song?.group_id;
+    const versions = groupId ? (songGroups[groupId] || []) : [];
+    const otherVersionCount = versions.length - 1;
+    const versionHtml = otherVersionCount > 0
+        ? `<button class="see-versions-btn" data-group-id="${groupId}">See ${otherVersionCount} other version${otherVersionCount > 1 ? 's' : ''}</button>`
+        : '';
+
     let metaHtml = '';
     if (artist) {
         metaHtml += `<div class="meta-item"><span class="meta-label">Artist:</span> ${escapeHtml(artist)}</div>`;
@@ -1874,7 +1882,7 @@ function renderSong(song, chordpro, isInitialRender = false) {
 
     songContent.innerHTML = `
         <div class="song-header">
-            <div class="song-title">${escapeHtml(title)}</div>
+            <div class="song-title">${escapeHtml(title)}${versionHtml}</div>
             <div class="song-meta">${metaHtml}</div>
         </div>
         <div class="render-options">
@@ -1932,6 +1940,15 @@ function renderSong(song, chordpro, isInitialRender = false) {
         keySelect.addEventListener('change', (e) => {
             currentDetectedKey = e.target.value;
             renderSong(song, chordpro);
+        });
+    }
+
+    // Version picker button
+    const seeVersionsBtn = songContent.querySelector('.see-versions-btn');
+    if (seeVersionsBtn) {
+        seeVersionsBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            showVersionPicker(seeVersionsBtn.dataset.groupId);
         });
     }
 
