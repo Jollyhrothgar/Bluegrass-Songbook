@@ -1899,3 +1899,12 @@ mark {
     margin-left: 0.5rem;
     vertical-align: middle;
 }
+
+/* First line preview in version picker */
+.version-first-line {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-top: 0.35rem;
+    opacity: 0.85;
+}

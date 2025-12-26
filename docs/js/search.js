@@ -1153,14 +1153,19 @@ async function showVersionPicker(groupId) {
         const versionMeta = [
             song.arrangement_by ? `by ${song.arrangement_by}` : '',
             song.key ? `Key: ${song.key}` : '',
-            song.version_type ? song.version_type : ''
+            song.version_type ? song.version_type : '',
+            song.nashville ? `${song.nashville.length} chords` : ''
         ].filter(Boolean).join(' • ');
+
+        // Show first line to help distinguish versions
+        const firstLine = song.first_line ? song.first_line.substring(0, 60) + (song.first_line.length > 60 ? '...' : '') : '';
 
         return `
             <div class="version-item ${isCurrent ? 'current' : ''}" data-song-id="${song.id}" data-group-id="${groupId}">
                 <div class="version-info">
                     <div class="version-label">${escapeHtml(versionLabel)}${isCurrent ? '<span class="current-badge">viewing</span>' : ''}</div>
                     <div class="version-meta">${escapeHtml(versionMeta)}</div>
+                    ${firstLine ? `<div class="version-first-line">"${escapeHtml(firstLine)}"</div>` : ''}
                     ${song.version_notes ? `<div class="version-notes">${escapeHtml(song.version_notes)}</div>` : ''}
                 </div>
                 <div class="version-votes">
