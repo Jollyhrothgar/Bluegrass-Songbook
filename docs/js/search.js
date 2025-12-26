@@ -2381,6 +2381,12 @@ const editorComment = document.getElementById('editor-comment');
 const editCommentRow = document.getElementById('edit-comment-row');
 const editSongBtn = document.getElementById('edit-song-btn');
 
+// ChordPro hints elements
+const hintsBtn = document.getElementById('chordpro-hints-btn');
+const hintsPanel = document.getElementById('chordpro-hints-panel');
+const hintsBackdrop = document.getElementById('chordpro-hints-backdrop');
+const hintsClose = document.getElementById('chordpro-hints-close');
+
 let editorNashvilleMode = false;
 let editorDetectedKey = null;
 let editMode = false;        // true when editing existing song, false for new song
@@ -2869,6 +2875,34 @@ if (editorNashville) {
         editorNashvilleMode = e.target.checked;
         updateEditorPreview();
     });
+}
+
+// ChordPro hints toggle
+function toggleHints() {
+    const isHidden = hintsPanel.classList.contains('hidden');
+    if (isHidden) {
+        hintsPanel.classList.remove('hidden');
+        hintsBackdrop.classList.remove('hidden');
+    } else {
+        closeHints();
+    }
+}
+
+function closeHints() {
+    hintsPanel.classList.add('hidden');
+    hintsBackdrop.classList.add('hidden');
+}
+
+if (hintsBtn) {
+    hintsBtn.addEventListener('click', toggleHints);
+}
+
+if (hintsClose) {
+    hintsClose.addEventListener('click', closeHints);
+}
+
+if (hintsBackdrop) {
+    hintsBackdrop.addEventListener('click', closeHints);
 }
 
 if (editorCopyBtn) {

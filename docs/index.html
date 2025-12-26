@@ -129,8 +129,8 @@ Or use inline chords:
 Blank lines separate verses."></textarea>
                     </div>
 
-                    <div class="format-help">
-                        <details>
+                    <div class="editor-help-row">
+                        <details class="format-help">
                             <summary>Format Help</summary>
                             <ul>
                                 <li><strong>Paste chord sheets</strong> - Chords above lyrics are auto-converted</li>
@@ -139,6 +139,7 @@ Blank lines separate verses."></textarea>
                                 <li>Blank line = new verse/section</li>
                             </ul>
                         </details>
+                        <button id="chordpro-hints-btn" class="hints-btn" type="button">? ChordPro</button>
                     </div>
 
                     <div class="editor-actions">
@@ -160,6 +161,41 @@ Blank lines separate verses."></textarea>
                     <div id="editor-preview-content" class="preview-content">
                         <p class="preview-placeholder">Enter a song to see preview...</p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ChordPro Hints Panel -->
+        <div id="chordpro-hints-backdrop" class="hints-backdrop hidden"></div>
+        <div id="chordpro-hints-panel" class="hints-panel hidden">
+            <div class="hints-header">
+                <span>ChordPro Quick Reference</span>
+                <button id="chordpro-hints-close" class="hints-close">&times;</button>
+            </div>
+            <div class="hints-content">
+                <div class="hint-section">
+                    <div class="hint-label">Title & Artist</div>
+                    <pre class="hint-code">{meta: title Your Song Title}
+{meta: artist Artist Name}
+{key: G}</pre>
+                </div>
+                <div class="hint-section">
+                    <div class="hint-label">Verse</div>
+                    <pre class="hint-code">{start_of_verse: Verse 1}
+Your [G]lyrics with [C]chords
+Right be[D]fore each syl[G]lable
+{end_of_verse}</pre>
+                </div>
+                <div class="hint-section">
+                    <div class="hint-label">Chorus</div>
+                    <pre class="hint-code">{start_of_chorus}
+This is the [G]chorus [D]part
+{end_of_chorus}</pre>
+                </div>
+                <div class="hint-section">
+                    <div class="hint-label">Chord Formats</div>
+                    <pre class="hint-code">[G] [Am] [C/B] [F#m7] [Bb]</pre>
+                    <div class="hint-note">Place chord before the syllable</div>
                 </div>
             </div>
         </div>

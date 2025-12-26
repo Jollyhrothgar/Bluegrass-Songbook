@@ -1008,6 +1008,144 @@ mark {
     border-radius: 3px;
 }
 
+.editor-help-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.hints-btn {
+    padding: 0.4rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg-secondary);
+    color: var(--accent);
+    font-size: 0.85rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.hints-btn:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+/* ChordPro Hints Panel */
+.hints-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.hints-panel {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1001;
+}
+
+.hints-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-secondary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.hints-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--text-secondary);
+    padding: 0;
+}
+
+.hints-close:hover {
+    color: var(--text);
+}
+
+.hints-content {
+    padding: 0.75rem 1rem;
+}
+
+.hint-section {
+    margin-bottom: 1rem;
+}
+
+.hint-section:last-child {
+    margin-bottom: 0;
+}
+
+.hint-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.hint-code {
+    background: var(--bg-secondary);
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    margin: 0;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.hint-note {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
+/* Hints panel - narrow screens (overlay) */
+@media (max-width: 1199px) {
+    .hints-panel:not(.hidden) {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Hints panel - wide screens (docked right) */
+@media (min-width: 1200px) {
+    .hints-panel:not(.hidden) {
+        position: fixed;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .hints-close {
+        display: none;
+    }
+
+    .hints-backdrop {
+        display: none !important;
+    }
+}
+
 .editor-actions {
     display: flex;
     gap: 0.75rem;
