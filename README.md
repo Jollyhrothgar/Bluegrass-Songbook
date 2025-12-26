@@ -6,12 +6,15 @@ A searchable collection of 17,000+ bluegrass and country songs with chords.
 
 ## Features
 
-- **17,122 songs** in ChordPro format
+- **17,053 songs** in ChordPro format
 - **Keyword search** - title, artist, lyrics
 - **Chord search** - find songs by Nashville numbers (`chord:VII`)
 - **Progression search** - find songs by chord patterns (`prog:I-IV-V`)
 - **Key detection** - automatic with transposition
-- **Favorites** - save songs locally
+- **User accounts** - Google sign-in via Supabase
+- **Song lists** - create and manage multiple lists (synced to cloud)
+- **Multiple versions** - support for alternate arrangements with voting
+- **Favorites** - save songs locally or sync with account
 - **Song editor** - create and submit new songs
 - **Dark/light theme**
 
@@ -72,10 +75,12 @@ uv run pytest                       # Run tests
 ```
 ├── docs/                           # Frontend (GitHub Pages)
 │   ├── js/search.js               # All frontend logic
+│   ├── js/supabase-auth.js        # Auth & cloud sync
 │   └── data/index.json            # Search index
 ├── sources/
-│   ├── classic-country/parsed/    # 17,122 parsed songs
+│   ├── classic-country/parsed/    # ~17,000 parsed songs
 │   └── manual/parsed/             # User-contributed songs
+├── supabase/migrations/            # Database migrations
 ├── scripts/                        # CLI tools
 └── ROADMAP.md                      # Product vision
 ```

@@ -1,13 +1,14 @@
 # Frontend (docs/js)
 
-Single-page search application for the Bluegrass Songbook. All logic is in `search.js`.
+Single-page search application for the Bluegrass Songbook. Main logic is in `search.js`, auth/sync in `supabase-auth.js`.
 
 ## Files
 
 ```
 docs/
 ├── index.html          # Page structure, sidebar, modals
-├── js/search.js        # All application logic (~2000 lines)
+├── js/search.js        # Main application logic
+├── js/supabase-auth.js # Auth, user lists, voting
 ├── css/style.css       # Dark/light themes, responsive layout
 └── data/index.json     # Song index (built by scripts/lib/build_index.py)
 ```
@@ -23,30 +24,38 @@ docs/
 ### State Variables
 
 ```javascript
+// Core state
 let songIndex = null;           // Full index from data/index.json
 let allSongs = [];              // Array of song objects
+let songGroups = {};            // Map of group_id → [songs] for versions
 let currentSong = null;         // Currently viewed song
 let currentChordpro = null;     // Raw ChordPro content
+
+// Display modes
 let showingFavorites = false;   // Favorites filter active
 let nashvilleMode = false;      // Show Nashville numbers
 let currentDetectedKey = null;  // Current key (for transposition)
 let showChords = true;          // Toggle chord display
-let favorites = new Set();      // Song IDs in localStorage
+
+// User data
+let favorites = new Set();      // Song IDs (localStorage or synced)
+let userLists = [];             // Custom user lists (via supabase-auth.js)
 ```
 
 ### Key Functions
 
 | Function | Purpose |
 |----------|---------|
-| `loadIndex()` | Fetch and parse `data/index.json` |
+| `loadIndex()` | Fetch and parse `data/index.json`, build songGroups |
 | `search(query)` | Filter songs by query, chords, progression |
-| `renderResults(songs)` | Display search results list |
+| `renderResults(songs)` | Display search results list (with version badges) |
 | `openSong(songId)` | Load and display a song |
 | `parseChordPro(content)` | Parse ChordPro → structured sections |
 | `renderSong(song, chordpro)` | Render song with chord highlighting |
 | `transposeChord(chord, semitones)` | Transpose individual chord |
 | `toNashville(chord, key)` | Convert chord to Nashville number |
 | `detectKey(chords)` | Auto-detect key from chord list |
+| `showVersionPicker(groupId)` | Display version picker modal with voting |
 
 ### Search Features
 
@@ -150,12 +159,42 @@ Songs in `index.json`:
   "key": "G",
   "mode": "major",
   "nashville": ["I", "IV", "V", "V7"],
-  "progression": ["I", "IV", "V", "I", "V7", "I"]
+  "progression": ["I", "IV", "V", "I", "V7", "I"],
+  "group_id": "abc123def456_12345678",
+  "chord_count": 4,
+  "version_label": "Simplified",
+  "version_type": "simplified",
+  "arrangement_by": "John Smith"
 }
 ```
 
+**Version fields** (for alternate arrangements):
+- `group_id`: Links songs that are versions of each other
+- `version_label`: Display name ("Simplified", "Original", etc.)
+- `version_type`: Category (alternate, cover, simplified, live)
+- `arrangement_by`: Who created this arrangement
+
 ## Dependencies
 
-- **None** - Vanilla JavaScript, no build step
+- **Supabase JS** - CDN loaded for auth and database
 - Fetches `data/index.json` at startup
 - Uses GitHub API for issue submission (no auth required)
+
+## supabase-auth.js
+
+Handles authentication and cloud sync. Key exports:
+
+| Function | Purpose |
+|----------|---------|
+| `initSupabase()` | Initialize Supabase client |
+| `signInWithGoogle()` | OAuth sign-in flow |
+| `signOut()` | Sign out current user |
+| `getCurrentUser()` | Get current authenticated user |
+| `fetchUserLists()` | Get user's song lists from cloud |
+| `createList(name)` | Create a new list |
+| `deleteList(id)` | Delete a list |
+| `addSongToList(listId, songId)` | Add song to a list |
+| `removeSongFromList(listId, songId)` | Remove song from list |
+| `fetchGroupVotes(groupId)` | Get vote counts for versions |
+| `castVote(songId, groupId)` | Vote for a song version |
+| `removeVote(songId)` | Remove user's vote |

@@ -53,7 +53,7 @@ Bluegrass-Songbook/
 │   └── data/index.json      # Song index (built from .pro files)
 │
 ├── sources/                 # Song collections (each self-contained)
-│   ├── classic-country/     # 17,122 parsed songs
+│   ├── classic-country/     # ~17,000 parsed songs
 │   │   ├── raw/             # Original HTML files
 │   │   ├── parsed/          # Generated .pro files
 │   │   ├── src/             # Parser code (CLAUDE.md inside)
@@ -66,6 +66,9 @@ Bluegrass-Songbook/
 │   ├── server               # Start dev server
 │   ├── utility              # add-song, count-chords
 │   └── lib/                 # Python implementations
+│
+├── supabase/                # Supabase backend configuration
+│   └── migrations/          # SQL migrations (version-controlled)
 │
 ├── .claude/skills/          # Claude Code skills
 │   └── chordpro/SKILL.md    # ChordPro syntax reference
@@ -82,6 +85,7 @@ Bluegrass-Songbook/
 | **Parser** | `sources/classic-country/src/` | `sources/classic-country/src/CLAUDE.md` |
 | **Build pipeline** | `scripts/lib/` | `scripts/lib/CLAUDE.md` |
 | **ChordPro syntax** | `.claude/skills/chordpro/` | `SKILL.md` (auto-invoked) |
+| **Backend (Supabase)** | `supabase/`, `docs/js/supabase-auth.js` | - |
 
 ## Development Workflows
 
@@ -128,6 +132,14 @@ Your cheatin' [G]heart will make you [C]weep
 {end_of_verse}
 ```
 
+**Version metadata** (for alternate arrangements):
+```chordpro
+{meta: x_version_label Simplified}
+{meta: x_version_type simplified}      # alternate | cover | simplified | live
+{meta: x_arrangement_by John Smith}
+{meta: x_version_notes Easier chord voicings for beginners}
+```
+
 **Key conventions:**
 - `{meta: key value}` for all metadata (consistent pattern)
 - `{meta: x_*}` for custom fields (ChordPro spec allows this)
@@ -148,10 +160,13 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 ## Current State
 
-- **17,122 songs** from classic-country-song-lyrics.com
+- **17,053 songs** from classic-country-song-lyrics.com (exact duplicates removed)
 - **Search**: keyword, chord (Nashville numbers), progression
 - **Features**: transposition, favorites, song editor, dark mode
-- **Next**: library management, playback engine (see ROADMAP.md)
+- **Authentication**: Google OAuth via Supabase
+- **User lists**: Create/manage multiple song lists (synced to cloud)
+- **Song versions**: Infrastructure for multiple versions with voting (UI ready, awaiting content)
+- **Next**: playback engine, fiddle tunes (see ROADMAP.md)
 
 ## File Navigation
 
@@ -160,6 +175,8 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 | Add a UI feature | `docs/js/search.js` + `docs/js/CLAUDE.md` |
 | Fix a parser bug | `sources/classic-country/src/parser.py` + its CLAUDE.md |
 | Understand ChordPro syntax | `.claude/skills/chordpro/SKILL.md` |
+| Work with auth/user data | `docs/js/supabase-auth.js` |
+| Add a database migration | `supabase/migrations/` |
 | See product roadmap | `ROADMAP.md` |
 | Run tests | `uv run pytest` |
 | Debug parser output | `./sources/classic-country/scripts/server debug_viewer` |

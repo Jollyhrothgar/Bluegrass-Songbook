@@ -33,17 +33,20 @@ Generates `docs/data/index.json` from all `.pro` files.
 ### What It Does
 
 1. Scans `sources/*/parsed/*.pro` for all songs
-2. Parses ChordPro metadata (title, artist, composer)
+2. Parses ChordPro metadata (title, artist, composer, version fields)
 3. Extracts lyrics (without chords) for search
 4. **Detects key** using diatonic heuristics
 5. **Converts chords to Nashville numbers** for chord search
-6. Outputs unified JSON index
+6. **Computes group_id** for song version grouping
+7. **Deduplicates** exact duplicates (same content hash)
+8. Outputs unified JSON index
 
 ### Key Functions
 
 ```python
 def parse_chordpro_metadata(content) -> dict:
-    """Extract {meta: key value} and {key: value} directives."""
+    """Extract {meta: key value} and {key: value} directives.
+    Includes version fields: x_version_label, x_version_type, etc."""
 
 def detect_key(chords: list[str]) -> tuple[str, str]:
     """Detect key from chord list. Returns (key, mode)."""
@@ -53,6 +56,17 @@ def to_nashville(chord: str, key_name: str) -> str:
 
 def extract_lyrics(content: str) -> str:
     """Extract plain lyrics without chord markers."""
+
+def normalize_for_grouping(text: str) -> str:
+    """Normalize text for grouping comparison.
+    Lowercases, removes accents, strips common suffixes."""
+
+def compute_group_id(title: str, artist: str) -> str:
+    """Compute base group ID from normalized title + artist."""
+
+def compute_lyrics_hash(lyrics: str) -> str:
+    """Hash first 200 chars of normalized lyrics.
+    Used to distinguish different songs with same title."""
 ```
 
 ### Output Format
@@ -71,11 +85,28 @@ def extract_lyrics(content: str) -> str:
       "key": "G",
       "mode": "major",
       "nashville": ["I", "IV", "V"],
-      "progression": ["I", "I", "IV", "V", "I"]
+      "progression": ["I", "I", "IV", "V", "I"],
+      "group_id": "abc123def456_12345678",
+      "chord_count": 3,
+      "version_label": "Simplified",
+      "version_type": "simplified",
+      "arrangement_by": "John Smith"
     }
   ]
 }
 ```
+
+### Version Grouping
+
+Songs are grouped by `group_id`, which combines:
+1. **Base hash**: MD5 of normalized title + artist
+2. **Lyrics hash**: MD5 of first 200 chars of normalized lyrics
+
+This ensures songs with the same title but different lyrics (different songs) get different group_ids, while true versions (same lyrics, different arrangements) share a group_id.
+
+### Deduplication
+
+Exact duplicates (identical content) are removed at build time. The first occurrence is kept.
 
 ### Key Detection Algorithm
 

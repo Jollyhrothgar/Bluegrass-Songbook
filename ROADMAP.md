@@ -57,10 +57,11 @@ K:A
 ## Current State (v1.0) ✅
 
 **Parser & Content**
-- 17,122 songs from classic-country-song-lyrics.com (98.5% success)
+- 17,053 songs from classic-country-song-lyrics.com (exact duplicates removed)
 - Three HTML structure parsers (pre_plain, pre_tag, span_br)
 - Manual song submission workflow via GitHub Issues
 - Protected files for human-corrected songs
+- Content-based deduplication at build time
 
 **Search & Discovery**
 - Keyword search (title, artist, lyrics)
@@ -74,10 +75,17 @@ K:A
 - Toggle chords on/off (lyrics-only view)
 - Song editor with smart paste (chord-above-lyrics → ChordPro)
 - Dark/light theme
+- Version picker for songs with multiple arrangements
 
-**Library (Basic)**
-- Favorites stored in localStorage
-- Favorites count badge in sidebar
+**Library**
+- User lists (create, rename, delete)
+- Favorites synced to cloud (with account)
+- localStorage fallback for anonymous users
+
+**Authentication & Backend**
+- Google OAuth via Supabase
+- User lists synced to cloud
+- Song version voting (infrastructure ready)
 
 ---
 
@@ -86,14 +94,14 @@ K:A
 **Goal:** Personal collections, setlists, and sharing
 
 ### 2.1 Personal Lists
-- [ ] Create custom lists beyond favorites
-- [ ] Rename/delete lists
+- [x] Create custom lists beyond favorites
+- [x] Rename/delete lists
 - [ ] Drag-and-drop ordering (setlists)
-- [ ] List metadata (name, description, created date)
+- [x] List metadata (name, description, created date)
 
 ### 2.2 Persistence
-- [ ] localStorage for offline/anonymous use
-- [ ] Optional cloud sync (future - requires accounts)
+- [x] localStorage for offline/anonymous use
+- [x] Cloud sync via Supabase (requires Google sign-in)
 - [ ] Export/import lists as JSON
 
 ### 2.3 Sharing (v2.x)
@@ -203,7 +211,7 @@ K:A
 
 ### 6.2 Quality Improvements
 - [ ] AI-assisted chord correction
-- [ ] Community voting on quality
+- [x] Community voting on song versions
 - [ ] Professional transcriptions for key songs
 
 ### 6.3 Rich Metadata
@@ -218,9 +226,9 @@ K:A
 **Goal:** Build the bluegrass community hub
 
 ### 7.1 User Accounts
-- [ ] Sign in (Google, email, etc.)
+- [x] Sign in (Google OAuth via Supabase)
 - [ ] Profile with instrument, skill level
-- [ ] Sync favorites/lists across devices
+- [x] Sync favorites/lists across devices
 
 ### 7.2 Contributions
 - [ ] Submit new songs
