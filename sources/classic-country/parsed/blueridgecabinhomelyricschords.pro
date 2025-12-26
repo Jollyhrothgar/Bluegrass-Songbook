@@ -9,12 +9,12 @@
 [D7]In those Blue Ridge hills far [G]away
 {end_of_verse}
 
-{start_of_verse: Verse 2}
+{start_of_chorus}
 [C]Oh I love those hills of old Virginia
 [D7]From those Blue Ridge hills I did [G]roam
 [C]When I die won't you bury me on the mountain
 [D7]Far away near my Blue Ridge mountain [G]home
-{end_of_verse}
+{end_of_chorus}
 
 {start_of_verse: Verse 3}
 [C]Now my thoughts wander back to that ramshackle shack
@@ -23,12 +23,12 @@
 [D7]They are sleeping in peace together [G]there
 {end_of_verse}
 
-{start_of_verse: Verse 2}
+{start_of_chorus}
 [C]Oh I love those hills of old Virginia
 [D7]From those Blue Ridge hills I did [G]roam
 [C]When I die won't you bury me on the mountain
 [D7]Far away near my Blue Ridge mountain [G]home
-{end_of_verse}
+{end_of_chorus}
 
 {start_of_verse: Verse 4}
 [C]I return to that old cabin home with the sigh
@@ -37,16 +37,16 @@
 [D7]Make my resting place upon the hills so [G]high
 {end_of_verse}
 
-{start_of_verse: Verse 2}
+{start_of_chorus}
 [C]Oh I love those hills of old Virginia
 [D7]From those Blue Ridge hills I did [G]roam
 [C]When I die won't you bury me on the mountain
 [D7]Far away near my Blue Ridge mountain [G]home
-{end_of_verse}
+{end_of_chorus}
 
-{start_of_verse: Verse 2}
+{start_of_chorus}
 [C]Oh I love those hills of old Virginia
 [D7]From those Blue Ridge hills I did [G]roam
 [C]When I die won't you bury me on the mountain
 [D7]Far away near my Blue Ridge mountain [G]home
-{end_of_verse}
+{end_of_chorus}
