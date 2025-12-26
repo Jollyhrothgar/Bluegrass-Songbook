@@ -10,6 +10,16 @@ A searchable collection of 17,000+ bluegrass and country songs with chords, buil
 ./scripts/utility add-song FILE.pro  # Add a song to the collection
 ```
 
+## Development Practices
+
+- **Test-driven development** - write tests, especially for parser changes
+- **Best practices**: DRY, KISS - avoid over-engineering
+- **Python**: Always use `uv run` (e.g., `uv run pytest`, `uv run python script.py`)
+- **Branching**:
+  - Features: `feature/<name>` (e.g., `feature/chord-display-mode`)
+  - Bug fixes: `bug/<name-or-issue-id>` (e.g., `bug/parser-missing-chord`)
+- **Worktrees**: Use `.bare` worktree setup for parallel work on multiple features (see below)
+
 ## Repository Structure (Git Worktrees)
 
 This repo uses a bare git repository with worktrees for parallel feature development:
