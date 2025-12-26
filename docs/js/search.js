@@ -102,6 +102,14 @@ function showView(mode) {
     if (navAddSong) navAddSong.classList.remove('active');
     if (navFavorites) navFavorites.classList.remove('active');
 
+    // Clear list view state when navigating away
+    viewingListId = null;
+    if (navListsContainer) {
+        navListsContainer.querySelectorAll('.nav-item').forEach(btn => {
+            btn.classList.remove('active');
+        });
+    }
+
     switch (mode) {
         case 'search':
             if (navSearch) navSearch.classList.add('active');
@@ -153,6 +161,7 @@ async function openSongFromHistory(songId) {
 
     renderSong(song, song.content, true);
     updateFavoriteButton();
+    updateListPickerButton();
 }
 
 // Handle deep links on page load
@@ -192,6 +201,10 @@ window.addEventListener('popstate', (event) => {
 // Favorites stored in localStorage
 let favorites = new Set(JSON.parse(localStorage.getItem('songbook-favorites') || '[]'));
 
+// User lists stored in localStorage (synced to cloud when logged in)
+let userLists = JSON.parse(localStorage.getItem('songbook-lists') || '[]');
+let viewingListId = null;  // ID of list being viewed (null = not viewing a list)
+
 // DOM elements
 const searchInput = document.getElementById('search-input');
 const resultsDiv = document.getElementById('results');
@@ -212,6 +225,22 @@ const navAddSong = document.getElementById('nav-add-song');
 const navFavorites = document.getElementById('nav-favorites');
 const navFavoritesCount = document.getElementById('nav-favorites-count');
 const navContact = document.getElementById('nav-contact');
+const navListsContainer = document.getElementById('nav-lists-container');
+const navManageLists = document.getElementById('nav-manage-lists');
+
+// List picker elements
+const listPickerBtn = document.getElementById('list-picker-btn');
+const listPickerDropdown = document.getElementById('list-picker-dropdown');
+const favoritesCheckbox = document.getElementById('favorites-checkbox');
+const customListsContainer = document.getElementById('custom-lists-container');
+const createListBtn = document.getElementById('create-list-btn');
+
+// Manage lists modal elements
+const listsModal = document.getElementById('lists-modal');
+const listsModalClose = document.getElementById('lists-modal-close');
+const newListNameInput = document.getElementById('new-list-name');
+const createListSubmit = document.getElementById('create-list-submit');
+const listsContainer = document.getElementById('lists-container');
 
 // Theme management
 function initTheme() {
@@ -342,7 +371,13 @@ function updateSyncUI(status) {
             break;
         case 'synced':
             indicator.className = 'sync-indicator synced';
-            text.textContent = `${favorites.size} favorites synced`;
+            const listCount = userLists.length;
+            const totalSongs = userLists.reduce((sum, l) => sum + l.songs.length, 0);
+            let syncText = `${favorites.size} favorites`;
+            if (listCount > 0) {
+                syncText += `, ${listCount} list${listCount !== 1 ? 's' : ''} (${totalSongs} songs)`;
+            }
+            text.textContent = syncText + ' synced';
             break;
         case 'error':
             indicator.className = 'sync-indicator error';
@@ -356,9 +391,8 @@ function updateSyncUI(status) {
 }
 
 function updateFavoriteButton() {
-    if (currentSong && favoriteBtn) {
-        favoriteBtn.classList.toggle('is-favorite', isFavorite(currentSong.id));
-    }
+    // Legacy function - favoriteBtn no longer exists
+    // Favorites checkbox in list picker is updated by renderListPickerDropdown()
 }
 
 function showFavorites() {
@@ -376,6 +410,442 @@ function hideFavorites() {
     if (navFavorites) navFavorites.classList.remove('active');
     if (navSearch) navSearch.classList.add('active');
     showRandomSongs();
+}
+
+// ============================================
+// USER LISTS MANAGEMENT
+// ============================================
+
+function saveLists() {
+    localStorage.setItem('songbook-lists', JSON.stringify(userLists));
+    renderSidebarLists();
+}
+
+function generateLocalId() {
+    return 'local-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
+}
+
+function createList(name) {
+    const trimmed = name.trim();
+    if (!trimmed) return null;
+
+    // Check for duplicate names
+    if (userLists.some(l => l.name.toLowerCase() === trimmed.toLowerCase())) {
+        return null;
+    }
+
+    const newList = {
+        id: generateLocalId(),
+        name: trimmed,
+        songs: [],
+        cloudId: null
+    };
+
+    userLists.push(newList);
+    saveLists();
+
+    // Sync to cloud if logged in
+    syncListToCloud(newList, 'create');
+
+    return newList;
+}
+
+function renameList(listId, newName) {
+    const trimmed = newName.trim();
+    if (!trimmed) return false;
+
+    const list = userLists.find(l => l.id === listId);
+    if (!list) return false;
+
+    // Check for duplicate names
+    if (userLists.some(l => l.id !== listId && l.name.toLowerCase() === trimmed.toLowerCase())) {
+        return false;
+    }
+
+    list.name = trimmed;
+    saveLists();
+
+    // Sync to cloud
+    if (list.cloudId) {
+        syncListToCloud(list, 'rename');
+    }
+
+    return true;
+}
+
+function deleteList(listId) {
+    const index = userLists.findIndex(l => l.id === listId);
+    if (index === -1) return false;
+
+    const list = userLists[index];
+    userLists.splice(index, 1);
+    saveLists();
+
+    // Sync to cloud
+    if (list.cloudId) {
+        syncListToCloud(list, 'delete');
+    }
+
+    return true;
+}
+
+function addSongToList(listId, songId) {
+    const list = userLists.find(l => l.id === listId);
+    if (!list) return false;
+
+    if (!list.songs.includes(songId)) {
+        list.songs.push(songId);
+        saveLists();
+
+        // Sync to cloud
+        if (list.cloudId && isCloudSyncEnabled) {
+            SupabaseAuth.addToCloudList(list.cloudId, songId).catch(console.error);
+        }
+    }
+
+    return true;
+}
+
+function removeSongFromList(listId, songId) {
+    const list = userLists.find(l => l.id === listId);
+    if (!list) return false;
+
+    const index = list.songs.indexOf(songId);
+    if (index !== -1) {
+        list.songs.splice(index, 1);
+        saveLists();
+
+        // Sync to cloud
+        if (list.cloudId && isCloudSyncEnabled) {
+            SupabaseAuth.removeFromCloudList(list.cloudId, songId).catch(console.error);
+        }
+    }
+
+    return true;
+}
+
+function isSongInList(listId, songId) {
+    const list = userLists.find(l => l.id === listId);
+    return list ? list.songs.includes(songId) : false;
+}
+
+function isSongInAnyList(songId) {
+    return userLists.some(l => l.songs.includes(songId));
+}
+
+// Sync a single list change to cloud
+async function syncListToCloud(list, action) {
+    if (!isCloudSyncEnabled || typeof SupabaseAuth === 'undefined') return;
+
+    try {
+        switch (action) {
+            case 'create':
+                const { data } = await SupabaseAuth.createCloudList(list.name);
+                if (data) {
+                    list.cloudId = data.id;
+                    // Add songs to the new cloud list
+                    for (const songId of list.songs) {
+                        await SupabaseAuth.addToCloudList(data.id, songId);
+                    }
+                    saveLists();
+                }
+                break;
+            case 'rename':
+                if (list.cloudId) {
+                    await SupabaseAuth.renameCloudList(list.cloudId, list.name);
+                }
+                break;
+            case 'delete':
+                if (list.cloudId) {
+                    await SupabaseAuth.deleteCloudList(list.cloudId);
+                }
+                break;
+        }
+    } catch (err) {
+        console.error('List sync error:', err);
+    }
+}
+
+// Full sync: merge localStorage lists with cloud
+async function performFullListsSync() {
+    if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+        return;
+    }
+
+    try {
+        const { data: merged, error } = await SupabaseAuth.syncListsToCloud(userLists);
+        if (error) throw error;
+
+        // Update local lists with merged data
+        userLists = merged.map(cloudList => ({
+            id: cloudList.id,
+            name: cloudList.name,
+            songs: cloudList.songs || [],
+            cloudId: cloudList.id
+        }));
+        saveLists();
+
+        // Update sync UI to show lists count
+        if (isCloudSyncEnabled) {
+            updateSyncUI('synced');
+        }
+    } catch (err) {
+        console.error('Lists sync failed:', err);
+    }
+}
+
+// Render lists in sidebar
+function renderSidebarLists() {
+    if (!navListsContainer) return;
+
+    navListsContainer.innerHTML = '';
+
+    userLists.forEach(list => {
+        const btn = document.createElement('button');
+        btn.className = 'nav-item' + (viewingListId === list.id ? ' active' : '');
+        btn.dataset.listId = list.id;
+        btn.innerHTML = `
+            <span class="nav-icon">&#9776;</span>
+            <span class="nav-label">${escapeHtml(list.name)}</span>
+            ${list.songs.length > 0 ? `<span class="nav-badge">${list.songs.length}</span>` : ''}
+        `;
+        btn.addEventListener('click', () => showListView(list.id));
+        navListsContainer.appendChild(btn);
+    });
+}
+
+// Show songs in a specific list
+function showListView(listId) {
+    const list = userLists.find(l => l.id === listId);
+    if (!list) return;
+
+    viewingListId = listId;
+    showingFavorites = false;
+    closeSidebar();
+
+    // Update nav active states
+    if (navSearch) navSearch.classList.remove('active');
+    if (navFavorites) navFavorites.classList.remove('active');
+    if (navAddSong) navAddSong.classList.remove('active');
+
+    // Update sidebar list buttons
+    navListsContainer.querySelectorAll('.nav-item').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.listId === listId);
+    });
+
+    // Show the list songs
+    const listSongs = allSongs.filter(s => list.songs.includes(s.id));
+    searchStats.textContent = `${list.name}: ${listSongs.length} song${listSongs.length !== 1 ? 's' : ''}`;
+    searchInput.value = '';
+    renderResults(listSongs, '');
+
+    // Show search container/results
+    const searchContainer = document.querySelector('.search-container');
+    const editorPanel = document.getElementById('editor-panel');
+    searchContainer.classList.remove('hidden');
+    resultsDiv.classList.remove('hidden');
+    if (editorPanel) editorPanel.classList.add('hidden');
+    songView.classList.add('hidden');
+}
+
+// Clear list view state
+function clearListView() {
+    viewingListId = null;
+    navListsContainer.querySelectorAll('.nav-item').forEach(btn => {
+        btn.classList.remove('active');
+    });
+}
+
+// Render list picker dropdown
+function renderListPickerDropdown() {
+    if (!customListsContainer || !currentSong) return;
+
+    customListsContainer.innerHTML = '';
+
+    userLists.forEach(list => {
+        const label = document.createElement('label');
+        label.className = 'list-option';
+        const isInList = list.songs.includes(currentSong.id);
+        label.innerHTML = `
+            <input type="checkbox" data-list-id="${list.id}" ${isInList ? 'checked' : ''}>
+            <span>&#9776;</span>
+            <span>${escapeHtml(list.name)}</span>
+        `;
+        customListsContainer.appendChild(label);
+    });
+
+    // Update favorites checkbox
+    if (favoritesCheckbox) {
+        favoritesCheckbox.checked = isFavorite(currentSong.id);
+    }
+
+    // Update picker button state
+    updateListPickerButton();
+}
+
+function updateListPickerButton() {
+    if (!listPickerBtn || !currentSong) return;
+
+    const inFavorites = isFavorite(currentSong.id);
+    const inAnyList = isSongInAnyList(currentSong.id);
+
+    listPickerBtn.classList.toggle('has-lists', inFavorites || inAnyList);
+}
+
+// Floating list picker for search results
+let activeResultPicker = null;
+
+function showResultListPicker(btn, songId) {
+    // Close any existing picker
+    closeResultListPicker();
+
+    const song = allSongs.find(s => s.id === songId);
+    if (!song) return;
+
+    // Create floating picker
+    const picker = document.createElement('div');
+    picker.className = 'result-list-picker';
+    picker.innerHTML = `
+        <label class="list-option favorites-option">
+            <input type="checkbox" data-type="favorites" ${isFavorite(songId) ? 'checked' : ''}>
+            <span class="heart-icon">&#9829;</span>
+            <span>Favorites</span>
+        </label>
+        <div class="list-divider"></div>
+        <div class="result-picker-lists">
+            ${userLists.map(list => `
+                <label class="list-option">
+                    <input type="checkbox" data-type="list" data-list-id="${list.id}" ${list.songs.includes(songId) ? 'checked' : ''}>
+                    <span>&#9776;</span>
+                    <span>${escapeHtml(list.name)}</span>
+                </label>
+            `).join('')}
+        </div>
+        <button class="create-list-btn" data-type="create">+ New List</button>
+    `;
+
+    // Position the picker
+    const rect = btn.getBoundingClientRect();
+    picker.style.position = 'fixed';
+    picker.style.top = `${rect.bottom + 4}px`;
+    picker.style.right = `${window.innerWidth - rect.right}px`;
+
+    document.body.appendChild(picker);
+    activeResultPicker = { element: picker, songId, btn };
+
+    // Handle checkbox changes
+    picker.addEventListener('change', (e) => {
+        if (e.target.type !== 'checkbox') return;
+
+        if (e.target.dataset.type === 'favorites') {
+            toggleFavorite(songId);
+        } else if (e.target.dataset.type === 'list') {
+            const listId = e.target.dataset.listId;
+            if (e.target.checked) {
+                addSongToList(listId, songId);
+            } else {
+                removeSongFromList(listId, songId);
+            }
+        }
+
+        // Update the button appearance
+        updateResultListButton(btn, songId);
+    });
+
+    // Handle create new list
+    picker.querySelector('[data-type="create"]').addEventListener('click', () => {
+        const name = prompt('Enter list name:');
+        if (name) {
+            const newList = createList(name);
+            if (newList) {
+                addSongToList(newList.id, songId);
+                closeResultListPicker();
+                updateResultListButton(btn, songId);
+            } else {
+                alert('A list with that name already exists.');
+            }
+        }
+    });
+}
+
+function closeResultListPicker() {
+    if (activeResultPicker) {
+        activeResultPicker.element.remove();
+        activeResultPicker = null;
+    }
+}
+
+function updateResultListButton(btn, songId) {
+    const inFavorites = isFavorite(songId);
+    const inAnyList = isSongInAnyList(songId);
+    btn.classList.toggle('has-lists', inFavorites || inAnyList);
+
+    // Also update the result item's favorite class
+    const resultItem = btn.closest('.result-item');
+    if (resultItem) {
+        resultItem.classList.toggle('is-favorite', inFavorites);
+    }
+}
+
+// Close result picker when clicking outside
+document.addEventListener('click', (e) => {
+    if (activeResultPicker) {
+        if (!activeResultPicker.element.contains(e.target) && e.target !== activeResultPicker.btn) {
+            closeResultListPicker();
+        }
+    }
+});
+
+// Render manage lists modal
+function renderListsModal() {
+    if (!listsContainer) return;
+
+    if (userLists.length === 0) {
+        listsContainer.innerHTML = '<p class="lists-empty">No lists yet. Create one above!</p>';
+        return;
+    }
+
+    listsContainer.innerHTML = '';
+
+    userLists.forEach(list => {
+        const div = document.createElement('div');
+        div.className = 'list-item';
+        div.innerHTML = `
+            <span class="list-item-icon">&#9776;</span>
+            <span class="list-item-name">${escapeHtml(list.name)}</span>
+            <span class="list-item-count">${list.songs.length} songs</span>
+            <div class="list-item-actions">
+                <button class="list-item-btn rename-list-btn" data-list-id="${list.id}">Rename</button>
+                <button class="list-item-btn danger delete-list-btn" data-list-id="${list.id}">Delete</button>
+            </div>
+        `;
+        listsContainer.appendChild(div);
+    });
+
+    // Add event listeners
+    listsContainer.querySelectorAll('.rename-list-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const listId = btn.dataset.listId;
+            const list = userLists.find(l => l.id === listId);
+            if (list) {
+                const newName = prompt('Enter new name:', list.name);
+                if (newName && renameList(listId, newName)) {
+                    renderListsModal();
+                }
+            }
+        });
+    });
+
+    listsContainer.querySelectorAll('.delete-list-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const listId = btn.dataset.listId;
+            const list = userLists.find(l => l.id === listId);
+            if (list && confirm(`Delete "${list.name}"? Songs won't be deleted from the songbook.`)) {
+                deleteList(listId);
+                renderListsModal();
+            }
+        });
+    });
 }
 
 // Load the song index
@@ -560,17 +1030,35 @@ function renderResults(songs, query) {
 
     resultsDiv.innerHTML = songs.map(song => {
         const favClass = isFavorite(song.id) ? 'is-favorite' : '';
+        const inList = isSongInAnyList(song.id);
+        const btnClass = (isFavorite(song.id) || inList) ? 'has-lists' : '';
         return `
             <div class="result-item ${favClass}" data-id="${song.id}">
-                <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}</div>
-                <div class="result-artist">${highlightMatch(song.artist || 'Unknown artist', query)}</div>
-                <div class="result-preview">${song.first_line || ''}</div>
+                <div class="result-main">
+                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}</div>
+                    <div class="result-artist">${highlightMatch(song.artist || 'Unknown artist', query)}</div>
+                    <div class="result-preview">${song.first_line || ''}</div>
+                </div>
+                <button class="result-list-btn ${btnClass}" data-song-id="${song.id}" title="Add to list">+</button>
             </div>
         `;
     }).join('');
 
+    // Click on result item opens song
     resultsDiv.querySelectorAll('.result-item').forEach(item => {
-        item.addEventListener('click', () => openSong(item.dataset.id));
+        item.addEventListener('click', (e) => {
+            // Don't open song if clicking the list button
+            if (e.target.classList.contains('result-list-btn')) return;
+            openSong(item.dataset.id);
+        });
+    });
+
+    // Click on list button shows picker
+    resultsDiv.querySelectorAll('.result-list-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showResultListPicker(btn, btn.dataset.songId);
+        });
     });
 }
 
@@ -608,6 +1096,7 @@ async function openSong(songId) {
     const song = allSongs.find(s => s.id === songId);
     currentSong = song;
     updateFavoriteButton();
+    updateListPickerButton();
 
     if (song && song.content) {
         currentChordpro = song.content;
@@ -1363,6 +1852,9 @@ function renderSong(song, chordpro, isInitialRender = false) {
 
 // Go back to results
 function goBack() {
+    // Close list picker dropdown when navigating away
+    if (listPickerDropdown) listPickerDropdown.classList.add('hidden');
+
     if (historyInitialized && history.state) {
         history.back();
     } else {
@@ -1403,11 +1895,7 @@ backBtn.addEventListener('click', goBack);
 
 themeToggle.addEventListener('click', toggleTheme);
 
-favoriteBtn.addEventListener('click', () => {
-    if (currentSong) {
-        toggleFavorite(currentSong.id);
-    }
-});
+// Note: favoriteBtn removed - favorites now handled via list picker checkbox
 
 // ============================================
 // SIDEBAR NAVIGATION
@@ -1731,6 +2219,7 @@ if (accountModal) {
 if (forceSyncBtn) {
     forceSyncBtn.addEventListener('click', () => {
         performFullSync();
+        performFullListsSync();
     });
 }
 
@@ -1751,6 +2240,7 @@ if (typeof SupabaseAuth !== 'undefined') {
         if (event === 'SIGNED_IN' || (event === 'INITIAL' && user)) {
             // User just signed in or page loaded with active session
             performFullSync();
+            performFullListsSync();
         } else if (event === 'SIGNED_OUT') {
             isCloudSyncEnabled = false;
             updateSyncUI('offline');
@@ -1760,6 +2250,116 @@ if (typeof SupabaseAuth !== 'undefined') {
     // Supabase not available, hide auth UI
     if (signInBtn) signInBtn.classList.add('hidden');
 }
+
+// ============================================
+// LIST PICKER & MANAGE LISTS EVENT HANDLERS
+// ============================================
+
+// Toggle list picker dropdown
+if (listPickerBtn) {
+    listPickerBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        renderListPickerDropdown();
+        listPickerDropdown.classList.toggle('hidden');
+    });
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+    if (listPickerDropdown && !listPickerDropdown.contains(e.target) && e.target !== listPickerBtn) {
+        listPickerDropdown.classList.add('hidden');
+    }
+});
+
+// Handle favorites checkbox change
+if (favoritesCheckbox) {
+    favoritesCheckbox.addEventListener('change', (e) => {
+        if (currentSong) {
+            toggleFavorite(currentSong.id);
+            updateListPickerButton();
+        }
+    });
+}
+
+// Handle custom list checkbox changes
+if (customListsContainer) {
+    customListsContainer.addEventListener('change', (e) => {
+        if (e.target.type === 'checkbox' && currentSong) {
+            const listId = e.target.dataset.listId;
+            if (e.target.checked) {
+                addSongToList(listId, currentSong.id);
+            } else {
+                removeSongFromList(listId, currentSong.id);
+            }
+            updateListPickerButton();
+        }
+    });
+}
+
+// Create new list from dropdown
+if (createListBtn) {
+    createListBtn.addEventListener('click', () => {
+        const name = prompt('Enter list name:');
+        if (name) {
+            const newList = createList(name);
+            if (newList && currentSong) {
+                addSongToList(newList.id, currentSong.id);
+                renderListPickerDropdown();
+            } else if (!newList) {
+                alert('A list with that name already exists.');
+            }
+        }
+    });
+}
+
+// Open manage lists modal
+if (navManageLists) {
+    navManageLists.addEventListener('click', () => {
+        closeSidebar();
+        renderListsModal();
+        if (listsModal) listsModal.classList.remove('hidden');
+    });
+}
+
+// Close manage lists modal
+if (listsModalClose) {
+    listsModalClose.addEventListener('click', () => {
+        if (listsModal) listsModal.classList.add('hidden');
+    });
+}
+
+if (listsModal) {
+    listsModal.addEventListener('click', (e) => {
+        if (e.target === listsModal) {
+            listsModal.classList.add('hidden');
+        }
+    });
+}
+
+// Create list from modal
+if (createListSubmit && newListNameInput) {
+    createListSubmit.addEventListener('click', () => {
+        const name = newListNameInput.value;
+        if (name) {
+            const newList = createList(name);
+            if (newList) {
+                newListNameInput.value = '';
+                renderListsModal();
+            } else {
+                alert('A list with that name already exists.');
+            }
+        }
+    });
+
+    newListNameInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            createListSubmit.click();
+        }
+    });
+}
+
+// Initialize sidebar lists on load
+renderSidebarLists();
 
 // ============================================
 // EDITOR FUNCTIONALITY

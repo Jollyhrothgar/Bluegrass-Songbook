@@ -1322,3 +1322,275 @@ mark {
         display: none;
     }
 }
+
+/* ============================================
+   LIST PICKER STYLES
+   ============================================ */
+
+.list-picker-wrapper {
+    position: relative;
+}
+
+.list-picker-btn {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.list-picker-btn.has-lists {
+    color: var(--accent);
+}
+
+.list-picker-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    min-width: 200px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    overflow: hidden;
+}
+
+.list-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 0.9rem;
+}
+
+.list-option:hover {
+    background: var(--bg-secondary);
+}
+
+.list-option input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--accent);
+}
+
+.list-option.favorites-option {
+    background: var(--bg-secondary);
+}
+
+.list-option.favorites-option .heart-icon {
+    color: var(--heart);
+}
+
+.list-divider {
+    height: 1px;
+    background: var(--border);
+}
+
+#custom-lists-container {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.create-list-btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    border-top: 1px solid var(--border);
+    color: var(--accent);
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.2s;
+}
+
+.create-list-btn:hover {
+    background: var(--bg-secondary);
+}
+
+/* ============================================
+   SIDEBAR LISTS STYLES
+   ============================================ */
+
+.nav-lists {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.nav-lists:empty {
+    display: none;
+}
+
+.nav-lists .nav-item {
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.nav-lists .nav-item .nav-icon {
+    font-size: 1rem;
+}
+
+.nav-secondary {
+    margin-top: auto;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.nav-secondary:hover {
+    color: var(--text);
+}
+
+/* ============================================
+   MANAGE LISTS MODAL STYLES
+   ============================================ */
+
+.create-list-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.create-list-form input {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.create-list-form input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.lists-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.list-item-icon {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.list-item-name {
+    flex: 1;
+    font-size: 0.95rem;
+}
+
+.list-item-count {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    background: var(--bg);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.list-item-actions {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.list-item-btn {
+    padding: 0.375rem 0.5rem;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.list-item-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.list-item-btn.danger:hover {
+    border-color: var(--danger);
+    color: var(--danger);
+}
+
+.lists-empty {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   RESULT LIST PICKER STYLES
+   ============================================ */
+
+.result-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.result-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.result-list-btn {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--bg);
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.result-list-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--bg-secondary);
+}
+
+.result-list-btn.has-lists {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.result-list-picker {
+    min-width: 200px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.result-picker-lists {
+    max-height: 200px;
+    overflow-y: auto;
+}

@@ -31,6 +31,13 @@
                 <span class="nav-label">Favorites</span>
                 <span id="nav-favorites-count" class="nav-badge hidden">0</span>
             </button>
+            <div id="nav-lists-container" class="nav-lists">
+                <!-- Dynamic: custom list nav items -->
+            </div>
+            <button id="nav-manage-lists" class="nav-item nav-secondary">
+                <span class="nav-icon">&#9881;</span>
+                <span class="nav-label">Manage Lists</span>
+            </button>
         </nav>
         <div class="sidebar-footer">
             <a href="https://buymeacoffee.com/michaelbeav" target="_blank" rel="noopener" class="sidebar-link">
@@ -161,10 +168,23 @@ Blank lines separate verses."></textarea>
             <div class="song-view-header">
                 <button id="back-btn" class="back-btn">&larr; Back</button>
                 <div class="song-actions">
-                    <button id="favorite-btn" class="icon-btn favorite-btn" title="Add to favorites">
-                        <span class="heart-empty">&#9825;</span>
-                        <span class="heart-full">&#9829;</span>
-                    </button>
+                    <div class="list-picker-wrapper">
+                        <button id="list-picker-btn" class="icon-btn list-picker-btn" title="Add to list">
+                            <span class="list-icon">&#43;</span>
+                        </button>
+                        <div id="list-picker-dropdown" class="list-picker-dropdown hidden">
+                            <label class="list-option favorites-option">
+                                <input type="checkbox" id="favorites-checkbox">
+                                <span class="heart-icon">&#9829;</span>
+                                <span>Favorites</span>
+                            </label>
+                            <div class="list-divider"></div>
+                            <div id="custom-lists-container">
+                                <!-- Dynamic list checkboxes -->
+                            </div>
+                            <button id="create-list-btn" class="create-list-btn">+ New List</button>
+                        </div>
+                    </div>
                     <button id="edit-song-btn" class="action-btn">Edit</button>
                     <button id="bug-btn" class="bug-btn">Report Bug</button>
                 </div>
@@ -231,6 +251,25 @@ Blank lines separate verses."></textarea>
                 <div class="modal-footer">
                     <button id="force-sync-btn" class="action-btn">Sync Now</button>
                     <button id="account-sign-out-btn" class="action-btn danger">Sign Out</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manage Lists Modal -->
+        <div id="lists-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Manage Lists</h2>
+                    <button id="lists-modal-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="create-list-form">
+                        <input type="text" id="new-list-name" placeholder="New list name">
+                        <button id="create-list-submit" class="action-btn primary">Create</button>
+                    </div>
+                    <div id="lists-container" class="lists-container">
+                        <!-- Dynamic list items -->
+                    </div>
                 </div>
             </div>
         </div>
