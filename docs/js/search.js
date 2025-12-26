@@ -2,6 +2,7 @@
 
 let songIndex = null;
 let allSongs = [];
+let songGroups = {};  // Map of group_id -> array of songs
 let currentSong = null;
 let currentChordpro = null;
 let compactMode = false;
@@ -857,6 +858,18 @@ async function loadIndex() {
         songIndex = await response.json();
         allSongs = songIndex.songs;
 
+        // Build song groups for version detection
+        songGroups = {};
+        allSongs.forEach(song => {
+            const groupId = song.group_id;
+            if (groupId) {
+                if (!songGroups[groupId]) {
+                    songGroups[groupId] = [];
+                }
+                songGroups[groupId].push(song);
+            }
+        });
+
         resultsDiv.innerHTML = '';
         searchStats.textContent = `${allSongs.length.toLocaleString()} songs loaded`;
 
@@ -1028,14 +1041,38 @@ function renderResults(songs, query) {
         return;
     }
 
-    resultsDiv.innerHTML = songs.map(song => {
+    // Group songs and dedupe by group_id (show one representative per group)
+    const seenGroups = new Set();
+    const dedupedSongs = [];
+
+    for (const song of songs) {
+        const groupId = song.group_id;
+        if (groupId && seenGroups.has(groupId)) {
+            continue;  // Skip, we already have a song from this group
+        }
+        if (groupId) {
+            seenGroups.add(groupId);
+        }
+        dedupedSongs.push(song);
+    }
+
+    resultsDiv.innerHTML = dedupedSongs.map(song => {
         const favClass = isFavorite(song.id) ? 'is-favorite' : '';
         const inList = isSongInAnyList(song.id);
         const btnClass = (isFavorite(song.id) || inList) ? 'has-lists' : '';
+
+        // Check for multiple versions
+        const groupId = song.group_id;
+        const versions = groupId ? (songGroups[groupId] || []) : [];
+        const versionCount = versions.length;
+        const versionBadge = versionCount > 1
+            ? `<span class="version-badge" data-group-id="${groupId}">${versionCount} versions</span>`
+            : '';
+
         return `
-            <div class="result-item ${favClass}" data-id="${song.id}">
+            <div class="result-item ${favClass}" data-id="${song.id}" data-group-id="${groupId || ''}">
                 <div class="result-main">
-                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}</div>
+                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}</div>
                     <div class="result-artist">${highlightMatch(song.artist || 'Unknown artist', query)}</div>
                     <div class="result-preview">${song.first_line || ''}</div>
                 </div>
@@ -1044,12 +1081,22 @@ function renderResults(songs, query) {
         `;
     }).join('');
 
-    // Click on result item opens song
+    // Click on result item opens song (or version picker if multiple versions)
     resultsDiv.querySelectorAll('.result-item').forEach(item => {
         item.addEventListener('click', (e) => {
             // Don't open song if clicking the list button
             if (e.target.classList.contains('result-list-btn')) return;
-            openSong(item.dataset.id);
+
+            const groupId = item.dataset.groupId;
+            const versions = groupId ? (songGroups[groupId] || []) : [];
+
+            if (versions.length > 1) {
+                // Show version picker
+                showVersionPicker(groupId);
+            } else {
+                // Open song directly
+                openSong(item.dataset.id);
+            }
         });
     });
 
@@ -1059,6 +1106,126 @@ function renderResults(songs, query) {
             e.stopPropagation();
             showResultListPicker(btn, btn.dataset.songId);
         });
+    });
+}
+
+// Version picker modal
+const versionModal = document.getElementById('version-modal');
+const versionModalClose = document.getElementById('version-modal-close');
+const versionModalTitle = document.getElementById('version-modal-title');
+const versionList = document.getElementById('version-list');
+
+// Show version picker for a song group
+async function showVersionPicker(groupId) {
+    const versions = songGroups[groupId] || [];
+    if (versions.length === 0) return;
+
+    // Get vote counts for this group
+    let voteCounts = {};
+    let userVotes = {};
+
+    if (typeof SupabaseAuth !== 'undefined') {
+        const { data } = await SupabaseAuth.fetchGroupVotes(groupId);
+        voteCounts = data || {};
+
+        if (SupabaseAuth.isLoggedIn()) {
+            const songIds = versions.map(v => v.id);
+            const { data: uv } = await SupabaseAuth.fetchUserVotes(songIds);
+            userVotes = uv || {};
+        }
+    }
+
+    // Sort versions by vote count (highest first)
+    const sortedVersions = [...versions].sort((a, b) => {
+        return (voteCounts[b.id] || 0) - (voteCounts[a.id] || 0);
+    });
+
+    // Update modal title
+    versionModalTitle.textContent = versions[0].title || 'Select Version';
+
+    // Render version list
+    versionList.innerHTML = sortedVersions.map(song => {
+        const voteCount = voteCounts[song.id] || 0;
+        const hasVoted = userVotes[song.id] ? 'voted' : '';
+        const versionLabel = song.version_label || (song.key ? `Key of ${song.key}` : 'Original');
+        const versionMeta = [
+            song.arrangement_by ? `by ${song.arrangement_by}` : '',
+            song.key ? `Key: ${song.key}` : '',
+            song.version_type ? song.version_type : ''
+        ].filter(Boolean).join(' • ');
+
+        return `
+            <div class="version-item" data-song-id="${song.id}" data-group-id="${groupId}">
+                <div class="version-info">
+                    <div class="version-label">${escapeHtml(versionLabel)}</div>
+                    <div class="version-meta">${escapeHtml(versionMeta)}</div>
+                    ${song.version_notes ? `<div class="version-notes">${escapeHtml(song.version_notes)}</div>` : ''}
+                </div>
+                <div class="version-votes">
+                    <button class="vote-btn ${hasVoted}" data-song-id="${song.id}" data-group-id="${groupId}" title="Vote for this version">
+                        <span class="vote-arrow">▲</span>
+                    </button>
+                    <span class="vote-count">${voteCount}</span>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    // Add click handlers for version items
+    versionList.querySelectorAll('.version-item').forEach(item => {
+        item.addEventListener('click', (e) => {
+            // Don't open song if clicking vote button
+            if (e.target.closest('.vote-btn')) return;
+            closeVersionPicker();
+            openSong(item.dataset.songId);
+        });
+    });
+
+    // Add click handlers for vote buttons
+    versionList.querySelectorAll('.vote-btn').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            e.stopPropagation();
+
+            if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+                alert('Please sign in to vote');
+                return;
+            }
+
+            const songId = btn.dataset.songId;
+            const groupId = btn.dataset.groupId;
+            const hasVoted = btn.classList.contains('voted');
+
+            if (hasVoted) {
+                // Remove vote
+                await SupabaseAuth.removeVote(songId);
+                btn.classList.remove('voted');
+                const countEl = btn.nextElementSibling;
+                countEl.textContent = Math.max(0, parseInt(countEl.textContent) - 1);
+            } else {
+                // Cast vote
+                await SupabaseAuth.castVote(songId, groupId);
+                btn.classList.add('voted');
+                const countEl = btn.nextElementSibling;
+                countEl.textContent = parseInt(countEl.textContent) + 1;
+            }
+        });
+    });
+
+    // Show modal
+    versionModal.classList.remove('hidden');
+}
+
+function closeVersionPicker() {
+    versionModal.classList.add('hidden');
+}
+
+// Version modal close handlers
+if (versionModalClose) {
+    versionModalClose.addEventListener('click', closeVersionPicker);
+}
+if (versionModal) {
+    versionModal.addEventListener('click', (e) => {
+        if (e.target === versionModal) closeVersionPicker();
     });
 }
 

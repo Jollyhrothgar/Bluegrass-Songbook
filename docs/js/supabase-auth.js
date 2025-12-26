@@ -408,6 +408,96 @@ async function syncListsToCloud(localLists) {
     return { data: mergedLists, error: null };
 }
 
+// ============================================
+// SONG VOTES API
+// ============================================
+
+// Fetch vote counts for all songs in a group
+async function fetchGroupVotes(groupId) {
+    if (!supabaseClient) {
+        return { data: [], error: null };
+    }
+
+    const { data, error } = await supabaseClient
+        .from('song_vote_counts')
+        .select('song_id, vote_count')
+        .eq('group_id', groupId);
+
+    if (error) {
+        console.error('Error fetching group votes:', error);
+        return { data: [], error };
+    }
+
+    // Convert to a map for easy lookup
+    const voteMap = {};
+    data.forEach(row => {
+        voteMap[row.song_id] = row.vote_count;
+    });
+
+    return { data: voteMap, error: null };
+}
+
+// Fetch user's votes for a list of songs
+async function fetchUserVotes(songIds) {
+    if (!supabaseClient || !currentUser || songIds.length === 0) {
+        return { data: {}, error: null };
+    }
+
+    const { data, error } = await supabaseClient
+        .from('song_votes')
+        .select('song_id, vote_value')
+        .eq('user_id', currentUser.id)
+        .in('song_id', songIds);
+
+    if (error) {
+        console.error('Error fetching user votes:', error);
+        return { data: {}, error };
+    }
+
+    // Convert to a map
+    const voteMap = {};
+    data.forEach(row => {
+        voteMap[row.song_id] = row.vote_value;
+    });
+
+    return { data: voteMap, error: null };
+}
+
+// Cast or update a vote on a song
+async function castVote(songId, groupId, value = 1) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    const { error } = await supabaseClient
+        .from('song_votes')
+        .upsert({
+            user_id: currentUser.id,
+            song_id: songId,
+            group_id: groupId,
+            vote_value: value
+        }, {
+            onConflict: 'user_id,song_id'
+        });
+
+    return { error };
+}
+
+// Remove a vote from a song
+async function removeVote(songId) {
+    if (!supabaseClient || !currentUser) {
+        return { error: { message: 'Not logged in' } };
+    }
+
+    const { error } = await supabaseClient
+        .from('song_votes')
+        .delete()
+        .eq('user_id', currentUser.id)
+        .eq('song_id', songId);
+
+    return { error };
+}
+
 // Export functions for use in search.js
 window.SupabaseAuth = {
     init: initSupabase,
@@ -428,5 +518,10 @@ window.SupabaseAuth = {
     deleteCloudList,
     addToCloudList,
     removeFromCloudList,
-    syncListsToCloud
+    syncListsToCloud,
+    // Votes
+    fetchGroupVotes,
+    fetchUserVotes,
+    castVote,
+    removeVote
 };

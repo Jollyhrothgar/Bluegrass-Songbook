@@ -81,6 +81,23 @@ Lyrics with [C]inline [G]chords
 {meta: x_difficulty intermediate}
 ```
 
+**Version metadata** (for multiple versions of the same song):
+```chordpro
+{meta: x_version_label Alternate Arrangement}
+{meta: x_version_type alternate}        # alternate | cover | simplified | live
+{meta: x_arrangement_by John Smith}     # Who created this arrangement
+{meta: x_version_notes Different key, simplified chord voicings}
+{meta: x_canonical_id originalsongid}   # Links to primary version (optional)
+```
+
+| Field | Purpose | Values |
+|-------|---------|--------|
+| `x_version_label` | Display name for this version | Any descriptive text |
+| `x_version_type` | Category of version | `alternate`, `cover`, `simplified`, `live` |
+| `x_arrangement_by` | Person who created this arrangement | Name |
+| `x_version_notes` | Free-form notes about differences | Any text |
+| `x_canonical_id` | Links to the original/primary version | Song ID (filename stem) |
+
 ## Environment Directives (Sections)
 
 | Long Form | Short | Purpose |

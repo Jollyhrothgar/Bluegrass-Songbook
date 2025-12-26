@@ -6,8 +6,10 @@ Generates docs/data/index.json with song metadata and lyrics for search.
 Precomputes key detection and Nashville numbers for fast chord search.
 """
 
+import hashlib
 import json
 import re
+import unicodedata
 from pathlib import Path
 from typing import Optional
 
@@ -266,6 +268,12 @@ def parse_chordpro_metadata(content: str) -> dict:
         'title': None,
         'artist': None,
         'composer': None,
+        # Version metadata (x_version_* fields)
+        'version_label': None,
+        'version_type': None,
+        'arrangement_by': None,
+        'version_notes': None,
+        'canonical_id': None,
     }
 
     # Match {meta: key value} directives (our format)
@@ -275,7 +283,18 @@ def parse_chordpro_metadata(content: str) -> dict:
         # Map 'writer' to 'composer' for backwards compatibility
         if key == 'writer':
             key = 'composer'
-        if key in metadata:
+        # Map x_version_* fields to version_* keys
+        if key == 'x_version_label':
+            metadata['version_label'] = value
+        elif key == 'x_version_type':
+            metadata['version_type'] = value
+        elif key == 'x_arrangement_by':
+            metadata['arrangement_by'] = value
+        elif key == 'x_version_notes':
+            metadata['version_notes'] = value
+        elif key == 'x_canonical_id':
+            metadata['canonical_id'] = value
+        elif key in metadata:
             metadata[key] = value
 
     # Also match standard {key: value} directives
@@ -286,6 +305,69 @@ def parse_chordpro_metadata(content: str) -> dict:
             metadata[key] = value
 
     return metadata
+
+
+def normalize_for_grouping(text: str) -> str:
+    """Normalize text for grouping comparison.
+
+    - Lowercase
+    - Remove accents/diacritics
+    - Remove punctuation
+    - Collapse whitespace
+    - Remove common suffixes like "lyrics", "chords", "tab"
+    """
+    if not text:
+        return ''
+
+    # Lowercase
+    text = text.lower()
+
+    # Remove accents (é → e, ñ → n, etc.)
+    text = unicodedata.normalize('NFD', text)
+    text = ''.join(c for c in text if unicodedata.category(c) != 'Mn')
+
+    # Remove common suffixes that don't affect song identity
+    suffixes = ['lyrics', 'chords', 'tab', 'tablature', 'acoustic', 'version']
+    for suffix in suffixes:
+        text = re.sub(rf'\b{suffix}\b', '', text)
+
+    # Remove punctuation and special characters
+    text = re.sub(r'[^\w\s]', '', text)
+
+    # Collapse whitespace
+    text = ' '.join(text.split())
+
+    return text.strip()
+
+
+def compute_group_id(title: str, artist: str) -> str:
+    """Compute a stable group ID for song grouping.
+
+    Songs with the same normalized title + artist get the same group_id.
+    This allows multiple versions of the same song to be grouped together.
+    """
+    normalized_title = normalize_for_grouping(title)
+    normalized_artist = normalize_for_grouping(artist or '')
+
+    # Create a stable hash from normalized title + artist
+    group_key = f"{normalized_title}|{normalized_artist}"
+    return hashlib.md5(group_key.encode()).hexdigest()[:12]
+
+
+def compute_lyrics_hash(lyrics: str) -> str:
+    """Compute a hash of normalized lyrics for similarity detection."""
+    if not lyrics:
+        return ''
+
+    # Normalize: lowercase, remove punctuation, collapse whitespace
+    normalized = lyrics.lower()
+    normalized = re.sub(r'[^\w\s]', '', normalized)
+    normalized = ' '.join(normalized.split())
+
+    # Use first 200 chars for comparison (enough to detect same song)
+    normalized = normalized[:200]
+
+    return hashlib.md5(normalized.encode()).hexdigest()[:8]
 
 
 def extract_lyrics(content: str) -> str:
@@ -362,7 +444,11 @@ def build_index(parsed_dirs: list[Path], output_file: Path):
         # Compute Nashville data for chord search
         nashville_data = compute_nashville_data(content)
 
-        songs.append({
+        # Compute group_id for version grouping
+        group_id = compute_group_id(metadata['title'], metadata['artist'])
+        lyrics_hash = compute_lyrics_hash(lyrics)
+
+        song = {
             'id': pro_file.stem,
             'title': metadata['title'],
             'artist': metadata['artist'],
@@ -374,7 +460,23 @@ def build_index(parsed_dirs: list[Path], output_file: Path):
             'mode': nashville_data['mode'],
             'nashville': nashville_data['nashville'],  # Unique Nashville chords
             'progression': nashville_data['progression'],  # Full chord sequence
-        })
+            'group_id': group_id,  # For version grouping
+            'lyrics_hash': lyrics_hash,  # For similarity detection
+        }
+
+        # Add version metadata if present (omit null fields to save space)
+        if metadata['version_label']:
+            song['version_label'] = metadata['version_label']
+        if metadata['version_type']:
+            song['version_type'] = metadata['version_type']
+        if metadata['arrangement_by']:
+            song['arrangement_by'] = metadata['arrangement_by']
+        if metadata['version_notes']:
+            song['version_notes'] = metadata['version_notes']
+        if metadata['canonical_id']:
+            song['canonical_id'] = metadata['canonical_id']
+
+        songs.append(song)
 
     print(f"Indexed {len(songs)} songs")
 
