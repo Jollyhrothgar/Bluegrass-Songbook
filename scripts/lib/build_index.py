@@ -445,8 +445,11 @@ def build_index(parsed_dirs: list[Path], output_file: Path):
         nashville_data = compute_nashville_data(content)
 
         # Compute group_id for version grouping
-        group_id = compute_group_id(metadata['title'], metadata['artist'])
+        # Include lyrics_hash to split groups with different lyrics
+        base_group_id = compute_group_id(metadata['title'], metadata['artist'])
         lyrics_hash = compute_lyrics_hash(lyrics)
+        # Combine base group with lyrics hash - same lyrics = same group
+        group_id = f"{base_group_id}_{lyrics_hash}" if lyrics_hash else base_group_id
 
         song = {
             'id': pro_file.stem,
