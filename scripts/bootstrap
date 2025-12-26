@@ -3,8 +3,9 @@
 # bootstrap - First-time setup and build
 #
 # Usage:
-#   ./scripts/bootstrap           # Full setup: install deps + build index
-#   ./scripts/bootstrap --quick   # Skip dependency install, just build index
+#   ./scripts/bootstrap              # Full setup: install deps + enrich + build index
+#   ./scripts/bootstrap --quick      # Skip dependency install, just enrich + build
+#   ./scripts/bootstrap --skip-enrich  # Skip enrichment step (for faster builds)
 #
 
 set -e
@@ -13,10 +14,15 @@ REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_ROOT"
 
 QUICK=false
+SKIP_ENRICH=false
 for arg in "$@"; do
     case $arg in
         --quick)
             QUICK=true
+            shift
+            ;;
+        --skip-enrich)
+            SKIP_ENRICH=true
             shift
             ;;
     esac
@@ -29,6 +35,13 @@ echo ""
 if [ "$QUICK" = false ]; then
     echo "Installing dependencies..."
     uv sync
+    echo ""
+fi
+
+# Enrich songs (add provenance, normalize chords)
+if [ "$SKIP_ENRICH" = false ]; then
+    echo "Enriching songs..."
+    uv run python3 scripts/lib/enrich_songs.py
     echo ""
 fi
 

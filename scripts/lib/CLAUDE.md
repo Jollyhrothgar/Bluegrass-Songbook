@@ -2,10 +2,21 @@
 
 Python utilities for building the search index and managing songs.
 
+## Pipeline Overview
+
+```
+Stage 1: Parse       Stage 2: Enrich         Stage 3: Index
+─────────────────────────────────────────────────────────────
+HTML → raw .pro  →  enriched .pro       →   index.json
+                    - Add provenance
+                    - Normalize chords
+```
+
 ## Files
 
 ```
 scripts/lib/
+├── enrich_songs.py       # Enrich .pro files (provenance, chord normalization)
 ├── build_index.py        # Build docs/data/index.json from .pro files
 ├── add_song.py           # Add a song to manual/parsed/
 ├── process_submission.py # GitHub Action: process song-submission issues
@@ -16,8 +27,14 @@ scripts/lib/
 ## Quick Commands
 
 ```bash
-# Build/rebuild search index
-python scripts/lib/build_index.py
+# Full pipeline: enrich + build index
+./scripts/bootstrap --quick
+
+# Enrich songs only
+uv run python scripts/lib/enrich_songs.py
+
+# Build index only (skip enrichment)
+./scripts/bootstrap --quick --skip-enrich
 
 # Add a song manually
 ./scripts/utility add-song /path/to/song.pro
@@ -25,6 +42,54 @@ python scripts/lib/build_index.py
 # Count chord usage across all songs
 ./scripts/utility count-chords
 ```
+
+## enrich_songs.py
+
+Enriches `.pro` files with provenance metadata and normalized chord patterns.
+
+### What It Does
+
+1. **Adds provenance metadata** (`x_source`, `x_source_file`, `x_enriched`)
+2. **Normalizes chord patterns** within sections of the same type
+3. **Skips protected files** (human corrections are authoritative)
+
+### Chord Pattern Normalization
+
+Ensures consistent chord counts across verses/choruses of the same type:
+
+```
+Before:                          After:
+Verse 1: [G]Your cheating...     Verse 1: [G]Your cheating...
+Verse 2: When tears come...      Verse 2: [G]When tears come...
+                                          ↑ Added from canonical
+```
+
+Algorithm:
+1. Group sections by type (verse, chorus, etc.)
+2. Find canonical section (most chords, starts with chord)
+3. For sections missing first chord, add canonical's first chord
+
+### Usage
+
+```bash
+# Enrich all sources
+uv run python scripts/lib/enrich_songs.py
+
+# Dry run (show what would change)
+uv run python scripts/lib/enrich_songs.py --dry-run
+
+# Single source only
+uv run python scripts/lib/enrich_songs.py --source classic-country
+
+# Single file (for testing)
+uv run python scripts/lib/enrich_songs.py --file path/to/song.pro
+```
+
+### Protected Files
+
+Files listed in `sources/{source}/protected.txt` are skipped. These are human-corrected files that should not be auto-modified.
+
+---
 
 ## build_index.py
 
