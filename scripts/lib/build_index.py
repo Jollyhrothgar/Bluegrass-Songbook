@@ -481,7 +481,22 @@ def build_index(parsed_dirs: list[Path], output_file: Path):
 
         songs.append(song)
 
-    print(f"Indexed {len(songs)} songs")
+    # Deduplicate truly identical songs (exact same content)
+    # Keep versions with same lyrics but different chords
+    seen_content = {}
+    unique_songs = []
+    duplicates_removed = 0
+    for song in songs:
+        # Hash the full content to detect exact duplicates
+        content_hash = hashlib.md5(song.get('content', '').encode()).hexdigest()
+        if content_hash in seen_content:
+            duplicates_removed += 1
+            continue
+        seen_content[content_hash] = True
+        unique_songs.append(song)
+
+    songs = unique_songs
+    print(f"Indexed {len(songs)} songs ({duplicates_removed} exact duplicates removed)")
 
     # Write index
     output_file.parent.mkdir(parents=True, exist_ok=True)
