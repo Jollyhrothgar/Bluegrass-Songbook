@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" href="images/banjo.png">
     <link rel="apple-touch-icon" href="images/banjo.png">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
     <!-- Sidebar Navigation -->
@@ -48,6 +50,17 @@
                     <span class="hamburger-icon">&#9776;</span>
                 </button>
                 <div class="header-spacer"></div>
+                <!-- Auth section -->
+                <div id="auth-section" class="auth-section">
+                    <button id="sign-in-btn" class="auth-btn" title="Sign in with Google">
+                        <span class="auth-icon">&#128100;</span>
+                        <span class="auth-text">Sign in</span>
+                    </button>
+                    <div id="user-info" class="user-info hidden">
+                        <img id="user-avatar" class="user-avatar" alt="User" referrerpolicy="no-referrer">
+                        <span id="user-name" class="user-name"></span>
+                    </div>
+                </div>
                 <button id="theme-toggle" class="icon-btn" title="Toggle theme">
                     <span class="icon-sun">&#9728;</span>
                     <span class="icon-moon">&#9790;</span>
@@ -194,8 +207,36 @@ Blank lines separate verses."></textarea>
                 </div>
             </div>
         </div>
+
+        <!-- Account Modal -->
+        <div id="account-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Account</h2>
+                    <button id="account-modal-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="account-user-info" class="account-user-info">
+                        <img id="account-avatar" class="account-avatar" alt="" referrerpolicy="no-referrer">
+                        <div class="account-details">
+                            <div id="account-name" class="account-name"></div>
+                            <div id="account-email" class="account-email"></div>
+                        </div>
+                    </div>
+                    <div id="sync-status" class="sync-status">
+                        <span id="sync-indicator" class="sync-indicator"></span>
+                        <span id="sync-text">Favorites synced</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="force-sync-btn" class="action-btn">Sync Now</button>
+                    <button id="account-sign-out-btn" class="action-btn danger">Sign Out</button>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <script src="js/supabase-auth.js"></script>
     <script src="js/search.js"></script>
 </body>
 </html>

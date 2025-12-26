@@ -16,6 +16,10 @@ let currentDetectedKey = null;      // User's chosen key (or detected if not cha
 let originalDetectedKey = null;     // The auto-detected key for current song
 let originalDetectedMode = null;    // The auto-detected mode for current song
 
+// Auth state
+let isCloudSyncEnabled = false;
+let syncInProgress = false;
+
 // Font size multipliers for each level
 const FONT_SIZES = {
     '-2': 0.7,
@@ -250,19 +254,104 @@ function isFavorite(songId) {
 }
 
 function toggleFavorite(songId) {
-    if (favorites.has(songId)) {
-        favorites.delete(songId);
-    } else {
+    const isAdding = !favorites.has(songId);
+
+    if (isAdding) {
         favorites.add(songId);
+    } else {
+        favorites.delete(songId);
     }
+
+    // Save locally immediately
     saveFavorites();
     updateFavoriteButton();
+
+    // Sync to cloud in background (optimistic UI)
+    syncFavoriteToCloud(songId, isAdding);
+
     // Update result list if visible
     if (!resultsDiv.classList.contains('hidden')) {
         const item = resultsDiv.querySelector(`[data-id="${songId}"]`);
         if (item) {
             item.classList.toggle('is-favorite', favorites.has(songId));
         }
+    }
+}
+
+// Sync a single favorite change to cloud (non-blocking)
+async function syncFavoriteToCloud(songId, isAdding) {
+    if (!isCloudSyncEnabled || typeof SupabaseAuth === 'undefined') return;
+
+    try {
+        if (isAdding) {
+            await SupabaseAuth.addCloudFavorite(songId);
+        } else {
+            await SupabaseAuth.removeCloudFavorite(songId);
+        }
+    } catch (err) {
+        console.error('Cloud sync error:', err);
+        // Favorites are safe in localStorage, cloud will catch up on next full sync
+    }
+}
+
+// Full sync: merge localStorage with cloud
+async function performFullSync() {
+    if (typeof SupabaseAuth === 'undefined' || !SupabaseAuth.isLoggedIn()) {
+        isCloudSyncEnabled = false;
+        return;
+    }
+
+    syncInProgress = true;
+    updateSyncUI('syncing');
+
+    try {
+        const localFavs = [...favorites];
+        const { data: merged, error } = await SupabaseAuth.syncFavoritesToCloud(localFavs);
+
+        if (error) {
+            throw error;
+        }
+
+        // Update local favorites with merged set
+        favorites = new Set(merged);
+        saveFavorites();
+
+        isCloudSyncEnabled = true;
+        updateSyncUI('synced');
+
+    } catch (err) {
+        console.error('Full sync failed:', err);
+        updateSyncUI('error');
+        // Keep using local favorites
+    } finally {
+        syncInProgress = false;
+    }
+}
+
+// Update sync indicator in UI
+function updateSyncUI(status) {
+    const indicator = document.getElementById('sync-indicator');
+    const text = document.getElementById('sync-text');
+
+    if (!indicator || !text) return;
+
+    switch (status) {
+        case 'syncing':
+            indicator.className = 'sync-indicator syncing';
+            text.textContent = 'Syncing...';
+            break;
+        case 'synced':
+            indicator.className = 'sync-indicator synced';
+            text.textContent = `${favorites.size} favorites synced`;
+            break;
+        case 'error':
+            indicator.className = 'sync-indicator error';
+            text.textContent = 'Sync error (using local)';
+            break;
+        case 'offline':
+            indicator.className = 'sync-indicator offline';
+            text.textContent = 'Sign in to sync';
+            break;
     }
 }
 
@@ -1544,6 +1633,8 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         if (sidebar && sidebar.classList.contains('open')) {
             closeSidebar();
+        } else if (accountModal && !accountModal.classList.contains('hidden')) {
+            closeAccountModal();
         } else if (!contactModal.classList.contains('hidden')) {
             closeContactModal();
         } else if (!bugModal.classList.contains('hidden')) {
@@ -1558,6 +1649,117 @@ document.addEventListener('keydown', (e) => {
 initTheme();
 updateFavoritesCount();
 loadIndex();
+
+// ============================================
+// AUTH UI HANDLERS
+// ============================================
+
+const signInBtn = document.getElementById('sign-in-btn');
+const userInfo = document.getElementById('user-info');
+const userAvatar = document.getElementById('user-avatar');
+const userName = document.getElementById('user-name');
+const accountModal = document.getElementById('account-modal');
+const accountModalClose = document.getElementById('account-modal-close');
+const forceSyncBtn = document.getElementById('force-sync-btn');
+const accountSignOutBtn = document.getElementById('account-sign-out-btn');
+
+function updateAuthUI(user) {
+    if (user) {
+        // Show logged-in state
+        if (signInBtn) signInBtn.classList.add('hidden');
+        if (userInfo) userInfo.classList.remove('hidden');
+        if (userAvatar) {
+            userAvatar.src = user.user_metadata?.avatar_url || user.user_metadata?.picture || '';
+            userAvatar.alt = user.user_metadata?.full_name || 'User';
+            userAvatar.onerror = () => { userAvatar.style.visibility = 'hidden'; };
+        }
+        if (userName) {
+            userName.textContent = user.user_metadata?.full_name || '';
+        }
+
+        // Update account modal
+        const accountAvatar = document.getElementById('account-avatar');
+        const accountName = document.getElementById('account-name');
+        const accountEmail = document.getElementById('account-email');
+
+        if (accountAvatar) {
+            accountAvatar.src = user.user_metadata?.avatar_url || user.user_metadata?.picture || '';
+            accountAvatar.onerror = () => { accountAvatar.style.display = 'none'; };
+        }
+        if (accountName) accountName.textContent = user.user_metadata?.full_name || 'User';
+        if (accountEmail) accountEmail.textContent = user.email || '';
+
+    } else {
+        // Show logged-out state
+        if (signInBtn) signInBtn.classList.remove('hidden');
+        if (userInfo) userInfo.classList.add('hidden');
+        isCloudSyncEnabled = false;
+        updateSyncUI('offline');
+    }
+}
+
+function closeAccountModal() {
+    if (accountModal) accountModal.classList.add('hidden');
+}
+
+// Auth event handlers
+if (signInBtn) {
+    signInBtn.addEventListener('click', async () => {
+        const { error } = await SupabaseAuth.signInWithGoogle();
+        if (error) {
+            console.error('Sign in error:', error);
+        }
+    });
+}
+
+if (userInfo) {
+    userInfo.addEventListener('click', () => {
+        if (accountModal) accountModal.classList.remove('hidden');
+    });
+}
+
+if (accountModalClose) {
+    accountModalClose.addEventListener('click', closeAccountModal);
+}
+
+if (accountModal) {
+    accountModal.addEventListener('click', (e) => {
+        if (e.target === accountModal) closeAccountModal();
+    });
+}
+
+if (forceSyncBtn) {
+    forceSyncBtn.addEventListener('click', () => {
+        performFullSync();
+    });
+}
+
+if (accountSignOutBtn) {
+    accountSignOutBtn.addEventListener('click', async () => {
+        await SupabaseAuth.signOut();
+        closeAccountModal();
+    });
+}
+
+// Initialize Supabase auth
+if (typeof SupabaseAuth !== 'undefined') {
+    SupabaseAuth.init();
+
+    SupabaseAuth.onAuthChange((event, user) => {
+        updateAuthUI(user);
+
+        if (event === 'SIGNED_IN' || (event === 'INITIAL' && user)) {
+            // User just signed in or page loaded with active session
+            performFullSync();
+        } else if (event === 'SIGNED_OUT') {
+            isCloudSyncEnabled = false;
+            updateSyncUI('offline');
+        }
+    });
+} else {
+    // Supabase not available, hide auth UI
+    if (signInBtn) signInBtn.classList.add('hidden');
+}
 
 // ============================================
 // EDITOR FUNCTIONALITY
