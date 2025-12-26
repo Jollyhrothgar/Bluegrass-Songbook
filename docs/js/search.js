@@ -9,7 +9,8 @@ let compactMode = false;
 let showingFavorites = false;
 let nashvilleMode = false;
 let twoColumnMode = false;
-let showChords = true;
+let chordDisplayMode = 'all';  // 'all' | 'first' | 'none'
+let seenChordPatterns = new Set();  // Track section chord patterns in 'first' mode
 let showSectionLabels = true;
 let showChordProSource = false;
 let fontSizeLevel = 0;              // -2 to +2, 0 is default
@@ -1728,10 +1729,12 @@ function parseLineWithChords(line) {
 }
 
 // Render a single line with chords above lyrics
-function renderLine(line) {
+// hideChords: force hide chords for this line (used in 'first' mode for repeated sections)
+function renderLine(line, hideChords = false) {
     const { chords, lyrics } = parseLineWithChords(line);
 
-    if (chords.length === 0 || !showChords) {
+    // No chords mode or hideChords flag - just show lyrics
+    if (chords.length === 0 || chordDisplayMode === 'none' || hideChords) {
         return `<div class="song-line"><div class="lyrics-line">${escapeHtml(lyrics)}</div></div>`;
     }
 
@@ -1763,9 +1766,22 @@ function renderLine(line) {
     `;
 }
 
+// Extract chord pattern from a section (sequence of all chords)
+function getSectionChordPattern(section) {
+    const chords = [];
+    for (const line of section.lines) {
+        const { chords: lineChords } = parseLineWithChords(line);
+        for (const { chord } of lineChords) {
+            chords.push(chord);
+        }
+    }
+    return chords.join('-');
+}
+
 // Render a section (verse, chorus, etc.)
-function renderSection(section, isRepeatedSection = false) {
-    const lines = section.lines.map(line => renderLine(line)).join('');
+// hideChords: if true, render without chord lines (for repeated patterns in 'first' mode)
+function renderSection(section, isRepeatedSection = false, hideChords = false) {
+    const lines = section.lines.map(line => renderLine(line, hideChords)).join('');
     const shouldIndent = section.type === 'chorus' || isRepeatedSection;
     const indentClass = shouldIndent ? 'section-indent' : '';
     const labelHtml = showSectionLabels ? `<div class="section-label">${escapeHtml(section.label)}</div>` : '';
@@ -1787,6 +1803,9 @@ function renderRepeatIndicator(label, count, shouldIndent) {
 
 // Render song with chords above lyrics
 function renderSong(song, chordpro, isInitialRender = false) {
+    // Reset seen chord patterns for 'first' mode
+    seenChordPatterns.clear();
+
     const { metadata, sections } = parseChordPro(chordpro);
 
     // Use precomputed key from index if available, otherwise detect
@@ -1838,9 +1857,22 @@ function renderSong(song, chordpro, isInitialRender = false) {
         const isRepeatedSection = totalCounts[sectionKey] > 1;
         const shouldIndent = section.type === 'chorus' || isRepeatedSection;
 
+        // In 'first' mode, check if we've seen this chord pattern before
+        let hideChords = false;
+        if (chordDisplayMode === 'first') {
+            const chordPattern = getSectionChordPattern(section);
+            if (chordPattern) {  // Only track non-empty patterns
+                if (seenChordPatterns.has(chordPattern)) {
+                    hideChords = true;
+                } else {
+                    seenChordPatterns.add(chordPattern);
+                }
+            }
+        }
+
         if (!seenSections.has(sectionKey)) {
             seenSections.add(sectionKey);
-            sectionsHtml += renderSection(section, isRepeatedSection);
+            sectionsHtml += renderSection(section, isRepeatedSection, hideChords);
             i++;
         } else if (compactMode) {
             let consecutiveCount = 0;
@@ -1850,7 +1882,7 @@ function renderSong(song, chordpro, isInitialRender = false) {
             }
             sectionsHtml += renderRepeatIndicator(sectionKey, consecutiveCount, shouldIndent);
         } else {
-            sectionsHtml += renderSection(section, isRepeatedSection);
+            sectionsHtml += renderSection(section, isRepeatedSection, hideChords);
             i++;
         }
     }
@@ -1901,10 +1933,14 @@ function renderSong(song, chordpro, isInitialRender = false) {
                 <button id="font-decrease" class="font-btn" ${fontSizeLevel <= -2 ? 'disabled' : ''}>−</button>
                 <button id="font-increase" class="font-btn" ${fontSizeLevel >= 2 ? 'disabled' : ''}>+</button>
             </div>
-            <label class="compact-toggle">
-                <input type="checkbox" id="chords-checkbox" ${showChords ? 'checked' : ''}>
-                <span>Chords</span>
-            </label>
+            <div class="chord-mode-selector">
+                <label for="chord-mode-select">Chords:</label>
+                <select id="chord-mode-select" class="chord-mode-select">
+                    <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All</option>
+                    <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First</option>
+                    <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>None</option>
+                </select>
+            </div>
             <label class="compact-toggle">
                 <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
                 <span>Compact</span>
@@ -1959,11 +1995,11 @@ function renderSong(song, chordpro, isInitialRender = false) {
         });
     }
 
-    const chordsCheckbox = document.getElementById('chords-checkbox');
-    if (chordsCheckbox) {
-        chordsCheckbox.addEventListener('change', (e) => {
-            showChords = e.target.checked;
-            if (!showChords) showChordProSource = false;  // Mutually exclusive with Source
+    const chordModeSelect = document.getElementById('chord-mode-select');
+    if (chordModeSelect) {
+        chordModeSelect.addEventListener('change', (e) => {
+            chordDisplayMode = e.target.value;
+            if (chordDisplayMode === 'none') showChordProSource = false;  // Mutually exclusive with Source
             renderSong(song, chordpro);
         });
     }
@@ -2010,7 +2046,7 @@ function renderSong(song, chordpro, isInitialRender = false) {
             showChordProSource = e.target.checked;
             // Source view shows pure render - reset all view options to defaults
             if (showChordProSource) {
-                showChords = true;
+                chordDisplayMode = 'all';
                 showSectionLabels = true;
                 compactMode = false;
                 nashvilleMode = false;
