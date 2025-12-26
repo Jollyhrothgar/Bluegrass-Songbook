@@ -1144,9 +1144,11 @@ async function showVersionPicker(groupId) {
     versionModalTitle.textContent = versions[0].title || 'Select Version';
 
     // Render version list
+    const currentSongId = currentSong?.id;
     versionList.innerHTML = sortedVersions.map(song => {
         const voteCount = voteCounts[song.id] || 0;
         const hasVoted = userVotes[song.id] ? 'voted' : '';
+        const isCurrent = song.id === currentSongId;
         const versionLabel = song.version_label || (song.key ? `Key of ${song.key}` : 'Original');
         const versionMeta = [
             song.arrangement_by ? `by ${song.arrangement_by}` : '',
@@ -1155,9 +1157,9 @@ async function showVersionPicker(groupId) {
         ].filter(Boolean).join(' • ');
 
         return `
-            <div class="version-item" data-song-id="${song.id}" data-group-id="${groupId}">
+            <div class="version-item ${isCurrent ? 'current' : ''}" data-song-id="${song.id}" data-group-id="${groupId}">
                 <div class="version-info">
-                    <div class="version-label">${escapeHtml(versionLabel)}</div>
+                    <div class="version-label">${escapeHtml(versionLabel)}${isCurrent ? '<span class="current-badge">viewing</span>' : ''}</div>
                     <div class="version-meta">${escapeHtml(versionMeta)}</div>
                     ${song.version_notes ? `<div class="version-notes">${escapeHtml(song.version_notes)}</div>` : ''}
                 </div>
