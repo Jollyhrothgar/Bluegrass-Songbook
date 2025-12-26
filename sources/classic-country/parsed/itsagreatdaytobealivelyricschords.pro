@@ -16,55 +16,55 @@ Yeah I think I'll make me some [C]homemade [G]soup
 [D7]No I'm just [C]doing al[G]right
 {end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Chorus}
 And it's a [D7]great day to [Em]be alive 
 I know the [Am]sun's still [G]shinin' when I [C]close my [D7]eyes
 There's some hard times in the [Em]neighborhood 
 But [Am]why can't every [G]day be [C]just this [D7]good[G]
 {end_of_verse}
 
-{start_of_verse: Verse 4}
+{start_of_verse: Verse 3}
 It's been fifteen years since [C]I left [G]home 
 [D7]Said good luck to every [Em]seed I'd [C]sown
 [G]Give it my [D7]best and then I [Em]left it [C]alone 
 [D7]Oh I hope they're [C]doin' al[G]right
 {end_of_verse}
 
-{start_of_verse: Verse 5}
+{start_of_verse: Verse 4}
 Now I look in the mirror and [C]what do I [G]see 
 A [D7]lone wolf there starin' [Em]back at [C]me
 [G]Long in the tooth but [Em]harmless as can [C]be 
 [D7]Lord I guess he's [C]doing al[G]right
 {end_of_verse}
 
-{start_of_verse: Verse 6}
+{start_of_verse: Chorus}
 And it's a [D7]great day to [Em]be alive 
 I know the [Am]sun's still [G]shinin' when I [C]close my [D7]eyes
 There's some hard times in the [Em]neighborhood 
 But [Am]why can't every [G]day be [C]just this [D7]good [Em]
 {end_of_verse}
 
-{start_of_verse: Verse 7}
+{start_of_verse: Verse 5}
 Sometimes it's [G]lonely sometimes it's [C]only  
 Me [G]and the [Am]shadows that [C]fill this [D7]room[Em]
 Sometimes I'm [D7]falling desperately call[C]ing
 [G]Howling at the [A7]moon ooh ooh
 {end_of_verse}
 
-{start_of_verse: Verse 8}
+{start_of_verse: Verse 6}
 [G]Well I might go get me a [C]new ta[G]ttoo 
 Or [D7]take my old Harley for a [Em]three day [C]cruise
 [G]Might even [D7]grow me a [Em]fu man [C]chu oh[G]
 {end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Chorus}
 And it's a [D7]great day to [Em]be alive 
 I know the [Am]sun's still [G]shinin' when I [C]close my [D7]eyes
 There's some hard times in the [Em]neighborhood 
 But [Am]why can't every [G]day be [C]just this [D7]good[G]
 {end_of_verse}
 
-{start_of_verse: Verse 3}
+{start_of_verse: Chorus}
 And it's a [D7]great day to [Em]be alive 
 I know the [Am]sun's still [G]shinin' when I [C]close my [D7]eyes
 There's some hard times in the [Em]neighborhood 
