@@ -10,6 +10,38 @@ A searchable collection of 17,000+ bluegrass and country songs with chords, buil
 ./scripts/utility add-song FILE.pro  # Add a song to the collection
 ```
 
+## Repository Structure (Git Worktrees)
+
+This repo uses a bare git repository with worktrees for parallel feature development:
+
+```
+bluegrassbook.com/
+├── .bare/              # Bare git repo (shared git data)
+├── main/               # Worktree: main branch (you are here)
+└── feature-xyz/        # Worktree: feature branches as needed
+```
+
+**Setup from scratch:**
+```bash
+mkdir bluegrassbook.com && cd bluegrassbook.com
+git clone --bare git@github.com:Jollyhrothgar/Bluegrass-Songbook.git .bare
+echo "gitdir: ./.bare" > .git
+cd .bare && git worktree add ../main main
+cd ../main && git branch --set-upstream-to=origin/main main
+```
+
+**Common worktree commands:**
+```bash
+# Create a new feature worktree
+cd .bare && git worktree add ../feature-xyz -b feature-xyz
+
+# List worktrees
+git worktree list
+
+# Remove a worktree (after merging)
+git worktree remove ../feature-xyz
+```
+
 ## Project Structure
 
 ```
