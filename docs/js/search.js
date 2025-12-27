@@ -238,8 +238,11 @@ const customListsContainer = document.getElementById('custom-lists-container');
 const createListBtn = document.getElementById('create-list-btn');
 
 // Export elements
-const exportBtn = document.getElementById('export-btn');
-const exportDropdown = document.getElementById('export-dropdown');
+const printBtn = document.getElementById('print-btn');
+const copyBtn = document.getElementById('copy-btn');
+const copyDropdown = document.getElementById('copy-dropdown');
+const downloadBtn = document.getElementById('download-btn');
+const downloadDropdown = document.getElementById('download-dropdown');
 
 // Manage lists modal elements
 const listsModal = document.getElementById('lists-modal');
@@ -1938,42 +1941,45 @@ function renderSong(song, chordpro, isInitialRender = false) {
             <div class="song-meta">${metaHtml}</div>
         </div>
         <div class="render-options">
-            <div class="key-selector">
-                <label for="key-select">Key:</label>
+            <div class="control-group">
+                <span class="control-label">Key:</span>
                 <select id="key-select" class="key-select">${keyOptions}</select>
             </div>
-            <div class="font-size-controls">
+            <div class="font-size-control">
+                <span class="control-label">Size:</span>
                 <button id="font-decrease" class="font-btn" ${fontSizeLevel <= -2 ? 'disabled' : ''}>−</button>
                 <button id="font-increase" class="font-btn" ${fontSizeLevel >= 2 ? 'disabled' : ''}>+</button>
             </div>
-            <div class="chord-mode-selector">
-                <label for="chord-mode-select">Chords:</label>
-                <select id="chord-mode-select" class="chord-mode-select">
-                    <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All</option>
-                    <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First</option>
-                    <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>None</option>
-                </select>
+            <div class="checkbox-group">
+                <span class="control-label">Show:</span>
+                <label>
+                    <select id="chord-mode-select" class="chord-mode-select">
+                        <option value="all" ${chordDisplayMode === 'all' ? 'selected' : ''}>All Chords</option>
+                        <option value="first" ${chordDisplayMode === 'first' ? 'selected' : ''}>First Only</option>
+                        <option value="none" ${chordDisplayMode === 'none' ? 'selected' : ''}>No Chords</option>
+                    </select>
+                </label>
+                <label>
+                    <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
+                    <span>Compact</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="nashville-checkbox" ${nashvilleMode ? 'checked' : ''}>
+                    <span>Nashville</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="twocol-checkbox" ${twoColumnMode ? 'checked' : ''}>
+                    <span>2-Col</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="labels-checkbox" ${showSectionLabels ? 'checked' : ''}>
+                    <span>Labels</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="source-checkbox" ${showChordProSource ? 'checked' : ''}>
+                    <span>Source</span>
+                </label>
             </div>
-            <label class="compact-toggle">
-                <input type="checkbox" id="compact-checkbox" ${compactMode ? 'checked' : ''}>
-                <span>Compact</span>
-            </label>
-            <label class="compact-toggle">
-                <input type="checkbox" id="nashville-checkbox" ${nashvilleMode ? 'checked' : ''}>
-                <span>Nashville</span>
-            </label>
-            <label class="compact-toggle">
-                <input type="checkbox" id="twocol-checkbox" ${twoColumnMode ? 'checked' : ''}>
-                <span>2-Col</span>
-            </label>
-            <label class="compact-toggle">
-                <input type="checkbox" id="labels-checkbox" ${showSectionLabels ? 'checked' : ''}>
-                <span>Labels</span>
-            </label>
-            <label class="compact-toggle">
-                <input type="checkbox" id="source-checkbox" ${showChordProSource ? 'checked' : ''}>
-                <span>Source</span>
-            </label>
         </div>
         ${showChordProSource ? `
         <div class="source-view">
@@ -2521,16 +2527,36 @@ document.addEventListener('click', (e) => {
     if (listPickerDropdown && !listPickerDropdown.contains(e.target) && e.target !== listPickerBtn) {
         listPickerDropdown.classList.add('hidden');
     }
-    if (exportDropdown && !exportDropdown.contains(e.target) && e.target !== exportBtn) {
-        exportDropdown.classList.add('hidden');
+    if (copyDropdown && !copyDropdown.contains(e.target) && e.target !== copyBtn) {
+        copyDropdown.classList.add('hidden');
+    }
+    if (downloadDropdown && !downloadDropdown.contains(e.target) && e.target !== downloadBtn) {
+        downloadDropdown.classList.add('hidden');
     }
 });
 
-// Toggle export dropdown
-if (exportBtn) {
-    exportBtn.addEventListener('click', (e) => {
+// Print button - opens print view directly
+if (printBtn) {
+    printBtn.addEventListener('click', () => {
+        openPrintView();
+    });
+}
+
+// Toggle copy dropdown
+if (copyBtn) {
+    copyBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        exportDropdown.classList.toggle('hidden');
+        copyDropdown.classList.toggle('hidden');
+        downloadDropdown.classList.add('hidden');
+    });
+}
+
+// Toggle download dropdown
+if (downloadBtn) {
+    downloadBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        downloadDropdown.classList.toggle('hidden');
+        copyDropdown.classList.add('hidden');
     });
 }
 
@@ -2640,7 +2666,578 @@ function handleExport(action) {
             downloadFile(`${safeTitle}.txt`, asciiContent, 'text/plain');
             break;
     }
-    exportDropdown.classList.add('hidden');
+    copyDropdown.classList.add('hidden');
+    downloadDropdown.classList.add('hidden');
+}
+
+// Open printable view in new tab
+function openPrintView() {
+    if (!currentChordpro || !currentSong) return;
+
+    const title = currentSong.title || 'Song';
+    const artist = currentSong.artist || '';
+    const key = currentDetectedKey || currentSong.key || 'C';
+
+    // Generate the print page HTML
+    const printHtml = generatePrintPage(title, artist, key, currentChordpro);
+
+    // Open in new tab
+    const printWindow = window.open('', '_blank');
+    printWindow.document.write(printHtml);
+    printWindow.document.close();
+}
+
+function generatePrintPage(title, artist, key, chordpro) {
+    // Get current transposition state
+    const originalKey = originalDetectedKey || currentSong.key || 'C';
+    const semitones = getSemitonesBetweenKeys(originalKey, currentDetectedKey || originalKey);
+
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${escapeHtml(title)} - Bluegrass Book</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: white;
+            color: black;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+            padding: 1rem;
+            background: #f5f5f5;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        @media print {
+            .controls { display: none; }
+            body { padding: 0; max-width: none; }
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        select, button {
+            padding: 0.4rem 0.6rem;
+            font-size: 0.85rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+        }
+
+        button:hover { background: #eee; }
+
+        .control-label {
+            font-size: 0.9rem;
+            font-family: system-ui, sans-serif;
+            font-weight: 600;
+            color: #444;
+            white-space: nowrap;
+        }
+
+        .font-size-control {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: #f0f0f0;
+            border-radius: 4px;
+            padding: 4px 8px;
+            margin-left: 12px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-left: 16px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 6px 12px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.85rem;
+            font-family: system-ui, sans-serif;
+            cursor: pointer;
+        }
+
+        .size-btn {
+            width: 28px;
+            height: 28px;
+            padding: 0;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            background: white;
+            border-radius: 3px;
+        }
+
+        #font-size-input {
+            width: 45px;
+            height: 24px;
+            text-align: center;
+            border: none;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            -moz-appearance: textfield;
+        }
+
+        #font-size-input::-webkit-outer-spin-button,
+        #font-size-input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .print-btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            margin-left: auto;
+        }
+        .print-btn:hover { background: #1d4ed8; }
+
+        .header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid black;
+        }
+
+        .two-columns .header {
+            column-span: all;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: system-ui, sans-serif;
+        }
+
+        .artist {
+            font-size: 1.1rem;
+            color: #444;
+            font-family: system-ui, sans-serif;
+        }
+
+        .key-info {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.25rem;
+            font-family: system-ui, sans-serif;
+        }
+
+        #song-content {
+            /* Default single column */
+        }
+
+        .two-columns #song-content {
+            column-count: 2;
+            column-gap: 2rem;
+        }
+
+        .section {
+            margin-bottom: 1rem;
+            break-inside: avoid;
+        }
+
+        .section-label {
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+            font-family: system-ui, sans-serif;
+        }
+
+        .hide-labels .section-label {
+            display: none;
+        }
+
+        .line-group {
+            margin-bottom: 0.25rem;
+        }
+
+        .chord-line {
+            font-weight: bold;
+            color: black;
+            white-space: pre;
+            line-height: 1.2;
+        }
+
+        .chord-line.nashville {
+            color: #444;
+        }
+
+        .lyric-line {
+            white-space: pre;
+            line-height: 1.3;
+        }
+
+        .hide-chords .chord-line { display: none; }
+
+        .repeat-instruction {
+            font-style: italic;
+            color: #666;
+            margin: 0.5rem 0;
+            font-family: system-ui, sans-serif;
+        }
+
+        #song-content {
+            font-size: var(--font-size, 14px);
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <div class="control-group">
+            <span class="control-label">Key:</span>
+            <select id="key-select">
+                ${generateKeyOptions(key)}
+            </select>
+        </div>
+        <div class="font-size-control">
+            <span class="control-label">Size:</span>
+            <button id="font-decrease" class="size-btn">−</button>
+            <input type="number" id="font-size-input" value="14" min="8" max="32">
+            <button id="font-increase" class="size-btn">+</button>
+        </div>
+        <div class="checkbox-group">
+            <span class="control-label">Show:</span>
+            <label>
+                <select id="chord-mode-select">
+                    <option value="all" selected>All Chords</option>
+                    <option value="first">First Only</option>
+                    <option value="none">No Chords</option>
+                </select>
+            </label>
+            <label><input type="checkbox" id="compact-toggle"> Compact</label>
+            <label><input type="checkbox" id="nashville-toggle"> Nashville</label>
+            <label><input type="checkbox" id="columns-toggle"> 2 Columns</label>
+            <label><input type="checkbox" id="labels-toggle" checked> Labels</label>
+        </div>
+        <button class="print-btn" onclick="window.print()">Print</button>
+    </div>
+
+    <div class="header">
+        <div class="title">${escapeHtml(title)}</div>
+        ${artist ? `<div class="artist">${escapeHtml(artist)}</div>` : ''}
+        <div class="key-info">Key: <span id="current-key">${escapeHtml(key)}</span></div>
+    </div>
+
+    <div id="song-content"></div>
+
+    <script>
+        const KEYS = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
+        const originalChordpro = ${JSON.stringify(chordpro)};
+        const originalKey = ${JSON.stringify(key)};
+        let currentKey = originalKey;
+        let nashvilleMode = false;
+        let compactMode = false;
+        let chordMode = 'all'; // 'all', 'first', 'none'
+
+        function normalizeKey(key) {
+            const map = { 'Db': 'C#', 'D#': 'Eb', 'Gb': 'F#', 'G#': 'Ab', 'A#': 'Bb' };
+            return map[key] || key;
+        }
+
+        function getSemitones(from, to) {
+            const fromIdx = KEYS.indexOf(normalizeKey(from));
+            const toIdx = KEYS.indexOf(normalizeKey(to));
+            if (fromIdx === -1 || toIdx === -1) return 0;
+            return (toIdx - fromIdx + 12) % 12;
+        }
+
+        function transposeChord(chord, semitones) {
+            if (semitones === 0) return chord;
+            const match = chord.match(/^([A-G][#b]?)(.*)$/);
+            if (!match) return chord;
+            const [, root, suffix] = match;
+            const idx = KEYS.indexOf(normalizeKey(root));
+            if (idx === -1) return chord;
+            const newIdx = (idx + semitones + 12) % 12;
+            return KEYS[newIdx] + suffix;
+        }
+
+        function toNashville(chord, key) {
+            const degrees = { 0: 'I', 1: '#I', 2: 'II', 3: 'bIII', 4: 'III', 5: 'IV',
+                            6: '#IV', 7: 'V', 8: 'bVI', 9: 'VI', 10: 'bVII', 11: 'VII' };
+            const match = chord.match(/^([A-G][#b]?)(.*)$/);
+            if (!match) return chord;
+            const [, root, suffix] = match;
+            const keyIdx = KEYS.indexOf(normalizeKey(key));
+            const chordIdx = KEYS.indexOf(normalizeKey(root));
+            if (keyIdx === -1 || chordIdx === -1) return chord;
+            const interval = (chordIdx - keyIdx + 12) % 12;
+            let degree = degrees[interval] || interval.toString();
+            if (suffix.startsWith('m') && !suffix.startsWith('maj')) {
+                degree = degree.toLowerCase();
+            }
+            return degree + suffix.replace(/^m(?!aj)/, '');
+        }
+
+        // Convert a ChordPro line to chords-above-lyrics format
+        function lineToAscii(line, semitones) {
+            const chordRegex = new RegExp('\\\\[([^\\\\]]+)\\\\]', 'g');
+            const chords = [];
+            let match;
+            let lastIndex = 0;
+            let lyricsOnly = '';
+
+            while ((match = chordRegex.exec(line)) !== null) {
+                lyricsOnly += line.substring(lastIndex, match.index);
+                let chord = transposeChord(match[1], semitones);
+                if (nashvilleMode) {
+                    chord = toNashville(chord, currentKey);
+                }
+                chords.push({ chord, position: lyricsOnly.length });
+                lastIndex = match.index + match[0].length;
+            }
+            lyricsOnly += line.substring(lastIndex);
+
+            // Build chord line with proper spacing
+            let chordLine = '';
+            for (const { chord, position } of chords) {
+                // Ensure minimum spacing between chords
+                const minPos = chordLine.length > 0 ? chordLine.length + 1 : 0;
+                const targetPos = Math.max(position, minPos);
+                while (chordLine.length < targetPos) {
+                    chordLine += ' ';
+                }
+                chordLine += chord;
+            }
+
+            return { chordLine: chordLine.trimEnd(), lyricLine: lyricsOnly };
+        }
+
+        function renderContent() {
+            const semitones = getSemitones(originalKey, currentKey);
+            const NL = String.fromCharCode(10);
+            const lines = originalChordpro.split(NL);
+            console.log('Number of lines:', lines.length);
+            console.log('First 3 lines:', lines.slice(0, 3));
+            let html = '';
+            let inSection = false;
+            let currentSectionType = '';
+            let currentSectionLabel = '';
+            let currentSectionLines = [];
+            const seenSections = {}; // Track section content by type
+
+            function renderSection(sectionLines, hideChords) {
+                let sectionHtml = '';
+                for (const line of sectionLines) {
+                    if (!line.trim()) {
+                        sectionHtml += '<div class="line-group"><div class="lyric-line">&nbsp;</div></div>';
+                        continue;
+                    }
+                    const { chordLine, lyricLine } = lineToAscii(line, semitones);
+                    sectionHtml += '<div class="line-group">';
+                    if (chordLine && !hideChords) {
+                        sectionHtml += '<div class="chord-line' + (nashvilleMode ? ' nashville' : '') + '">' +
+                                escapeHtmlInline(chordLine) + '</div>';
+                    }
+                    sectionHtml += '<div class="lyric-line">' + escapeHtmlInline(lyricLine || ' ') + '</div>';
+                    sectionHtml += '</div>';
+                }
+                return sectionHtml;
+            }
+
+            function flushSection() {
+                if (!currentSectionType) return;
+
+                const contentKey = currentSectionLines.join(NL).trim();
+                const label = currentSectionLabel || currentSectionType.charAt(0).toUpperCase() + currentSectionType.slice(1);
+
+                // Check if we've seen this exact content before (regardless of label)
+                let foundMatch = null;
+                if (compactMode || chordMode === 'first') {
+                    for (const key in seenSections) {
+                        if (seenSections[key].content === contentKey) {
+                            foundMatch = seenSections[key];
+                            break;
+                        }
+                    }
+                }
+
+                // Determine whether to hide chords for this section
+                const hideChords = chordMode === 'none' || (chordMode === 'first' && foundMatch);
+
+                if (compactMode && foundMatch) {
+                    // Show repeat instruction
+                    html += '<div class="repeat-instruction">[Repeat ' + foundMatch.label + ']</div>';
+                } else {
+                    // Render full section
+                    html += '<div class="section"><div class="section-label">' + label + '</div>';
+                    html += renderSection(currentSectionLines, hideChords);
+                    html += '</div>';
+
+                    // Store for future reference using unique key
+                    if (!foundMatch) {
+                        const uniqueKey = currentSectionType + '_' + Object.keys(seenSections).length;
+                        seenSections[uniqueKey] = { content: contentKey, label: label };
+                    }
+                }
+
+                currentSectionType = '';
+                currentSectionLabel = '';
+                currentSectionLines = [];
+            }
+
+            for (const line of lines) {
+                // Skip metadata
+                if (line.indexOf('{meta:') === 0) continue;
+
+                // Section start - check for {start_of_verse}, {start_of_chorus}, {start_of_bridge}
+                if (line.indexOf('{start_of_') === 0) {
+                    flushSection();
+                    const typeMatch = line.match(/start_of_(verse|chorus|bridge)/);
+                    if (typeMatch) {
+                        currentSectionType = typeMatch[1];
+                        // Extract label after colon if present
+                        const colonIdx = line.indexOf(':');
+                        if (colonIdx > 0) {
+                            currentSectionLabel = line.substring(colonIdx + 1, line.length - 1).trim();
+                        } else {
+                            currentSectionLabel = '';
+                        }
+                        inSection = true;
+                        continue;
+                    }
+                }
+
+                // Section end
+                if (line.indexOf('{end_of_') === 0) {
+                    flushSection();
+                    inSection = false;
+                    continue;
+                }
+
+                // Skip other directives
+                if (line.charAt(0) === '{' && line.charAt(line.length - 1) === '}') continue;
+
+                // Collect lines
+                if (inSection) {
+                    currentSectionLines.push(line);
+                } else {
+                    // Lines outside sections
+                    if (!line.trim()) {
+                        html += '<div class="line-group"><div class="lyric-line">&nbsp;</div></div>';
+                        continue;
+                    }
+                    const { chordLine, lyricLine } = lineToAscii(line, semitones);
+                    html += '<div class="line-group">';
+                    if (chordLine) {
+                        html += '<div class="chord-line' + (nashvilleMode ? ' nashville' : '') + '">' +
+                                escapeHtmlInline(chordLine) + '</div>';
+                    }
+                    html += '<div class="lyric-line">' + escapeHtmlInline(lyricLine || ' ') + '</div>';
+                    html += '</div>';
+                }
+            }
+
+            flushSection();
+            document.getElementById('song-content').innerHTML = html;
+            document.getElementById('current-key').textContent = currentKey;
+        }
+
+        function escapeHtmlInline(text) {
+            return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        document.getElementById('key-select').addEventListener('change', (e) => {
+            currentKey = e.target.value;
+            renderContent();
+        });
+
+        let currentFontSize = 14;
+        const minFontSize = 8;
+        const maxFontSize = 32;
+        const fontSizeInput = document.getElementById('font-size-input');
+
+        function updateFontSize() {
+            currentFontSize = Math.max(minFontSize, Math.min(maxFontSize, currentFontSize));
+            document.documentElement.style.setProperty('--font-size', currentFontSize + 'px');
+            fontSizeInput.value = currentFontSize;
+        }
+
+        document.getElementById('font-decrease').addEventListener('click', () => {
+            currentFontSize -= 2;
+            updateFontSize();
+        });
+
+        document.getElementById('font-increase').addEventListener('click', () => {
+            currentFontSize += 2;
+            updateFontSize();
+        });
+
+        fontSizeInput.addEventListener('change', (e) => {
+            currentFontSize = parseInt(e.target.value, 10) || 14;
+            updateFontSize();
+        });
+
+        document.getElementById('nashville-toggle').addEventListener('change', (e) => {
+            nashvilleMode = e.target.checked;
+            renderContent();
+        });
+
+        document.getElementById('chord-mode-select').addEventListener('change', (e) => {
+            chordMode = e.target.value;
+            renderContent();
+        });
+
+        document.getElementById('labels-toggle').addEventListener('change', (e) => {
+            document.body.classList.toggle('hide-labels', !e.target.checked);
+        });
+
+        document.getElementById('columns-toggle').addEventListener('change', (e) => {
+            document.body.classList.toggle('two-columns', e.target.checked);
+        });
+
+        document.getElementById('compact-toggle').addEventListener('change', (e) => {
+            compactMode = e.target.checked;
+            renderContent();
+        });
+
+        // Initial render
+        try {
+            console.log('ChordPro length:', originalChordpro.length);
+            console.log('First 200 chars:', originalChordpro.substring(0, 200));
+            renderContent();
+        } catch (e) {
+            console.error('Render error:', e);
+            document.getElementById('song-content').innerHTML = '<pre style="color:red">' + e.message + '</pre>';
+        }
+    </script>
+</body>
+</html>`;
+}
+
+function generateKeyOptions(currentKey) {
+    const keys = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
+    return keys.map(k =>
+        `<option value="${k}"${k === currentKey ? ' selected' : ''}>${k}</option>`
+    ).join('');
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
 }
 
 function downloadFile(filename, content, mimeType) {
@@ -2666,8 +3263,16 @@ function showExportFeedback(message) {
 }
 
 // Handle export option clicks
-if (exportDropdown) {
-    exportDropdown.addEventListener('click', (e) => {
+if (copyDropdown) {
+    copyDropdown.addEventListener('click', (e) => {
+        const option = e.target.closest('.export-option');
+        if (option) {
+            handleExport(option.dataset.action);
+        }
+    });
+}
+if (downloadDropdown) {
+    downloadDropdown.addEventListener('click', (e) => {
         const option = e.target.closest('.export-option');
         if (option) {
             handleExport(option.dataset.action);
