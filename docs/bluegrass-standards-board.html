@@ -198,6 +198,32 @@
             background-color: #333;
         }
 
+        .footer-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .file-complaint-btn {
+            display: inline-block;
+            color: #721c24;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #721c24;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s;
+        }
+
+        .file-complaint-btn:hover {
+            color: #fff;
+            background-color: #721c24;
+        }
+
         .stamp {
             position: absolute;
             transform: rotate(-15deg);
@@ -372,7 +398,10 @@
         <div class="footer">
             <p>All complaints are taken extremely seriously and will be addressed in due time.</p>
             <p>The Board meets quarterly, or whenever someone plays Wagon Wheel at a jam.</p>
-            <a href="index.html" class="back-link">&larr; Return to the Scene of the Crime</a>
+            <div class="footer-actions">
+                <a href="https://github.com/Jollyhrothgar/Bluegrass-Songbook/issues/new?title=Official%20Complaint%20to%20the%20Bluegrass%20Standards%20Board&body=%2A%2AComplainant%3A%2A%2A%20%5BYour%20Name%2FHandle%5D%0A%0A%2A%2ANature%20of%20Complaint%3A%2A%2A%0A%5BDescribe%20your%20grievance%20regarding%20genre%20classification%2C%20song%20selection%2C%20or%20other%20matters%20of%20bluegrass%20purity%5D%0A%0A%2A%2AEvidence%3A%2A%2A%0A%5BOptional%3A%20Link%20to%20offending%20song%20or%20screenshot%5D%0A%0A---%0A%2AThis%20complaint%20will%20be%20reviewed%20by%20the%20Board%20in%20due%20time.%2A&labels=standards-board-complaint" class="file-complaint-btn" target="_blank" rel="noopener">File an Official Complaint</a>
+                <a href="index.html" class="back-link">&larr; Return to the Scene of the Crime</a>
+            </div>
         </div>
     </div>
 </body>
